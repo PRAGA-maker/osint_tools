@@ -1,0 +1,250 @@
+[
+  {
+    "name": "Establish a source of truth before pivoting",
+    "type": "pattern",
+    "summary": "Trace Labs' TOFM stresses that the thin set of selectors you START with (a name, a photo, a physical description, a known social profile, hobbies/interests) is your 'source of truth' against which every later discovery must be validated. Good investigators anchor on this seed data first, write it down, and treat any newly found account as a hypothesis to confirm against the seed rather than as fact. This prevents you from chasing a same-named stranger and corrupting the whole investigation.",
+    "missingPersonsRelevance": "high",
+    "phase": "intake",
+    "pivotFrom": ["name", "image", "physical-description", "social-profile"],
+    "pivotTo": ["any"],
+    "whenToUse": "At the very start of any case, before doing a single search, and as the reference point each time you find a candidate account.",
+    "steps": [
+      "Inventory every confirmed selector you were handed: name, photos, physical description, existing profiles, hobbies/interests, background context.",
+      "Record these as the immutable 'source of truth'.",
+      "For every later find, ask: does it corroborate the seed (same face, same interests, same circle)?",
+      "Only promote a find to 'confirmed' once it matches the seed on multiple independent points."
+    ],
+    "signals": ["A candidate account shares the same photos, the same like/dislikes, and the same circle of friends as the seed data"],
+    "pitfalls": ["Treating a name match as identity confirmation", "Letting an unvalidated find become the new (wrong) anchor for further pivots"],
+    "tags": ["intake", "validation", "seed-data", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM: 'The information you begin your investigation with will be the source of truth you'll use to validate everything else you find.'"}]
+  },
+  {
+    "name": "Enumerate a known handle across many platforms",
+    "type": "technique",
+    "summary": "When you know the subject's preferred online handle/username, enumerate it across as many sites as possible to map their digital footprint. A single reused username often unlocks profiles on platforms the person never publicly linked, each of which can carry fresh photos, location hints, and an associate network. TOFM names whatsmyname.app as the go-to enumeration tool.",
+    "missingPersonsRelevance": "high",
+    "phase": "pivot",
+    "pivotFrom": ["username"],
+    "pivotTo": ["social-profile", "username", "image", "associate"],
+    "platforms": ["instagram", "tiktok", "twitter", "reddit", "facebook"],
+    "whenToUse": "As soon as you have a candidate handle, especially a distinctive one the person reuses.",
+    "steps": [
+      "Take the known handle.",
+      "Run it through whatsmyname.app to surface accounts on hundreds of sites.",
+      "Open each hit and capture profile photos, bios, linked accounts, and follower circles.",
+      "Feed any new handles/links discovered back into enumeration (iterate)."
+    ],
+    "signals": ["The same handle appears on multiple platforms with consistent photos or bios"],
+    "pitfalls": ["Assuming every hit belongs to your subject — a username can be shared by unrelated people", "Stopping after one platform instead of mapping the full footprint"],
+    "toolsUsed": ["whatsmyname.app"],
+    "tags": ["enumeration", "username-pivot", "footprint", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM: 'If you know a person's preferred online handle, you will want to enumerate that handle across as many sites as possible.'"}]
+  },
+  {
+    "name": "Enumeration is not validation",
+    "type": "antipattern",
+    "summary": "A tempting but wrong move: finding a username on a site and treating that as proof the account belongs to your subject. TOFM is explicit that 'Enumeration ≠ Validation.' Counting hits is easy; confirming identity is the real work. The fix is to cross-reference each hit against the source-of-truth seed data — same photos, same interests, same mutual connections — before relying on it.",
+    "missingPersonsRelevance": "high",
+    "phase": "verification",
+    "pivotFrom": ["username", "social-profile"],
+    "pivotTo": ["any"],
+    "whenToUse": "Every time an enumeration tool returns a match you are tempted to act on.",
+    "steps": [
+      "Treat each enumeration hit as unverified.",
+      "Check for the same pictures used on other confirmed accounts.",
+      "Check for the same likes/dislikes/interests as your subject.",
+      "Check whether a confirmed account of the subject follows/friends this one.",
+      "Check for the same surrounding circle of people interacting across accounts.",
+      "Only then mark the account as belonging to the subject."
+    ],
+    "signals": ["Multiple independent corroborations (face + interests + circle) all point to the same person"],
+    "pitfalls": ["Building a whole theory on a single coincidental username match", "Reporting an account as the subject's with zero corroborating signal"],
+    "toolsUsed": ["whatsmyname.app"],
+    "tags": ["validation", "false-positive", "identity-confirmation", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM: 'Enumeration ≠ Validation. Just because you've found a person's preferred handle on a website does not explicitly prove it belongs to them.'"}]
+  },
+  {
+    "name": "Go wide before you go deep",
+    "type": "pattern",
+    "summary": "TOFM's pivoting guidance warns against diving into the first interesting thread. Map breadth first — surface all the accounts, links, and connections you can — before drilling deep into any one of them. This prevents premature rabbit-holing on a detail that turns out to be a dead end or the wrong person, and it gives you cross-corroboration material before you commit time.",
+    "missingPersonsRelevance": "high",
+    "phase": "triage",
+    "pivotFrom": ["social-profile", "username", "name"],
+    "pivotTo": ["any"],
+    "whenToUse": "Right after intake, whenever you have several candidate leads and feel the pull to chase the most exciting one.",
+    "steps": [
+      "Enumerate broadly and list every account/link/connection you find.",
+      "Do a shallow pass on each to gauge relevance and identity confidence.",
+      "Only after the landscape is mapped, pick the highest-confidence thread to investigate in depth."
+    ],
+    "signals": ["You can see how multiple leads corroborate or contradict each other before committing time"],
+    "pitfalls": ["Sinking hours into a single profile that later proves to be the wrong person", "Missing an obvious high-value account because you tunneled on a minor one"],
+    "tags": ["pivoting", "breadth-first", "triage", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM pivoting guidance: 'Go wide before you go deep' to avoid premature rabbit holes."}]
+  },
+  {
+    "name": "Pivot through profile links, friend/follower lists, and comments",
+    "type": "technique",
+    "summary": "Pivoting means using one discovered fact to reach the next. TOFM highlights three concrete pivot surfaces on social media: (1) linked accounts shown on a profile page, (2) friend/follower networks, and (3) mentions and tags inside comments. For missing-persons work this is the highest-yield move: a subject's own profiles may be sparse, but the people around them (friends, who they comment with, who tags them) leak location, recent activity, and additional handles.",
+    "missingPersonsRelevance": "high",
+    "phase": "pivot",
+    "pivotFrom": ["social-profile", "username", "associate"],
+    "pivotTo": ["social-profile", "associate", "username", "image", "geolocation"],
+    "platforms": ["instagram", "facebook", "tiktok", "twitter"],
+    "whenToUse": "Once you have at least one confirmed or strong-candidate profile and need to expand the network or find fresher activity.",
+    "steps": [
+      "Open the confirmed profile and harvest any linked/cross-posted accounts (link-in-bio, linktree, cross-platform handles).",
+      "Walk the friend/follower list for accounts belonging to the subject or close associates.",
+      "Read the comments on the subject's and associates' posts for mentions, tags, and replies that reveal new handles or whereabouts.",
+      "Validate each new account against the source of truth before pivoting further."
+    ],
+    "signals": ["A friend's or associate's public post tags or references the subject with recent date/location info"],
+    "pitfalls": ["Forgetting that you must not interact (no friend requests, likes, or comments) while doing this", "Trusting a tagged identity without validating it"],
+    "tags": ["pivoting", "social-network", "associates", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM lists pivot sources: linked accounts on profile pages, friend/follower networks, and mentions in comments."}]
+  },
+  {
+    "name": "Mine photos and videos for context and embedded clues",
+    "type": "technique",
+    "summary": "TOFM frames media analysis around two questions: contextual knowledge (when was it created, who posted it, when was it shared, does the timing align with the content?) and information extraction (does the media reveal location, emotional state, associates, habits, or identifiable objects like license plates or badges?). In missing-persons cases the subject's and associates' photos/videos are often the single richest source of a recent timeline and a place.",
+    "missingPersonsRelevance": "high",
+    "phase": "enrichment",
+    "pivotFrom": ["image", "social-profile"],
+    "pivotTo": ["geolocation", "associate", "vehicle-plate", "employer-org", "metadata-exif"],
+    "platforms": ["instagram", "tiktok", "facebook"],
+    "whenToUse": "Whenever you have access to photos or videos posted by or featuring the subject.",
+    "steps": [
+      "Establish the temporal frame: creation time vs. post time, and whether the content matches that timing.",
+      "Identify who posted it and who appears in it (associates).",
+      "Scan for location indicators (signage, landmarks, architecture, weather/season).",
+      "Scan for identifiable objects: license plates, ID/badges, uniforms, logos, store names.",
+      "Note behavioral/emotional cues that hint at state of mind or routine."
+    ],
+    "signals": ["A photo yields a readable sign, plate, badge, or landmark that ties to a place or organization"],
+    "pitfalls": ["Conflating post date with the date the photo was actually taken", "Overlooking small background objects that carry the real clue"],
+    "tags": ["media-analysis", "image-pivot", "timeline", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM media-analysis questions on temporal context and information extraction (location, associates, plates, badges)."}]
+  },
+  {
+    "name": "Geolocate from visual media using landmarks and cross-referenced travel patterns",
+    "type": "technique",
+    "summary": "Geolocation in TOFM means determining a specific place from imagery using landmarks, architectural features, geography, and seasonal/time indicators, then cross-referencing against what you already know about the subject's movements. The decisive step is corroboration: a candidate location is far stronger when it lines up with travel patterns and locations you found through other selectors.",
+    "missingPersonsRelevance": "high",
+    "phase": "enrichment",
+    "pivotFrom": ["image", "geolocation"],
+    "pivotTo": ["geolocation", "address"],
+    "platforms": ["instagram", "tiktok", "facebook"],
+    "whenToUse": "When a photo/video may reveal where the subject was, especially the most recent imagery.",
+    "steps": [
+      "Identify fixed landmarks, distinctive architecture, and geography in the frame.",
+      "Read seasonal/time-of-day indicators (foliage, snow, sun angle, shadows).",
+      "Cross-reference candidate locations against the subject's known travel patterns from other sources.",
+      "Tighten to a specific place when multiple independent indicators converge."
+    ],
+    "signals": ["A landmark plus a known travel pattern both point to the same location"],
+    "pitfalls": ["Locking onto a generic-looking location without corroboration", "Ignoring season/time cues that contradict the assumed date"],
+    "tags": ["geolocation", "image-pivot", "corroboration", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM geolocation guidance: landmarks, architecture, seasonal indicators, cross-referenced with known travel patterns."}]
+  },
+  {
+    "name": "Plan the mission and define red lines before you start",
+    "type": "playbook",
+    "summary": "TOFM requires answering a structured set of questions before any searching: define the mission (what question, what specific info, what connection, what is out of scope), define success criteria (when does it end), set red lines that trigger stopping, and build a threat model. For missing-persons work this keeps the investigation focused on the find, prevents scope creep, and pre-commits you to stop and escalate if you stumble onto serious crime or it spills into the real world.",
+    "missingPersonsRelevance": "medium",
+    "phase": "intake",
+    "pivotFrom": ["any"],
+    "pivotTo": [],
+    "whenToUse": "Before the first search of every case.",
+    "steps": [
+      "Define the mission: What question am I answering? What specific info do I need? What connection am I making? What is out of scope?",
+      "Define success criteria: the investigation ends when the planned requirements are satisfied.",
+      "Set red lines that trigger stopping: discovering evidence of a serious crime; encountering personally triggering material; the online investigation spilling into the real world; obsessing/spending too much time.",
+      "Build a threat model: Who/what am I hiding from? Will the subject be monitoring? What might they do if they detect me? What are the consequences if my real identity is revealed?"
+    ],
+    "signals": ["You can state in one sentence what would conclude the case and what would make you stop"],
+    "pitfalls": ["Endless scope creep with no defined end", "Continuing past a red line (e.g., evidence of a serious crime) instead of stopping and escalating"],
+    "tags": ["planning", "scope", "red-lines", "threat-model", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM Planning and Preparation: mission definition, success criteria, red lines, and threat-model questions."}]
+  },
+  {
+    "name": "Passive reconnaissance only — never interact",
+    "type": "pattern",
+    "summary": "The single most important safety rule in TOFM: do passive reconnaissance exclusively and have NO interaction with anyone during an investigation. This explicitly bans DMs, emails, friend requests, and any interaction with social-media posts — not only the subject's, but anyone adjacent to the investigation. It also bans discussing the investigation outside safe channels. For live missing-persons cases this protects the subject, avoids tipping off bad actors, and keeps evidence admissible/ethical.",
+    "missingPersonsRelevance": "high",
+    "phase": "opsec",
+    "pivotFrom": ["any"],
+    "pivotTo": [],
+    "whenToUse": "Continuously, for the entire duration of every investigation.",
+    "steps": [
+      "View, screenshot, and document — but never like, comment, follow, friend, or message.",
+      "Apply the no-contact rule to associates and adjacent accounts, not just the subject.",
+      "Discuss findings only in designated safe channels.",
+      "If a step would require contact to proceed, stop and hand off rather than interact."
+    ],
+    "signals": ["You complete the entire investigation with zero outbound interactions"],
+    "pitfalls": ["Accidentally liking/following while browsing logged in", "Reaching out to a friend or family account 'just to confirm'", "Talking about the case in public channels"],
+    "tags": ["safety", "passive-recon", "no-contact", "opsec", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM: 'No interaction with ANYONE during an investigation. This includes all DMs, emails, friend requests and any interactions with social media posts of... the subject... [and] anyone adjacent to your investigation.'"}]
+  },
+  {
+    "name": "Build clean sock-puppet accounts that look normal",
+    "type": "technique",
+    "summary": "TOFM's sock-puppet guidance is counterintuitive: blend in rather than over-engineer. Create accounts via the mobile app (more forgiving signup), from your residential IP without a VPN on a vanilla Chrome browser so you look like an ordinary user, and don't put in more effort than needed. Never reuse other people's headshots/profile photos from around the internet — that will get you flagged. The cleanest method is a disposable phone set up over your home internet.",
+    "missingPersonsRelevance": "medium",
+    "phase": "opsec",
+    "pivotFrom": ["any"],
+    "pivotTo": [],
+    "whenToUse": "When you need research accounts to view platforms that require login (e.g., Instagram, Facebook, TikTok).",
+    "steps": [
+      "Prefer the platform's mobile app for signup (more forgiving than web).",
+      "Sign up from your residential IP, no VPN, vanilla Chrome — appear 'normal'.",
+      "Keep the persona minimal; don't over-build it.",
+      "Never use other people's headshots/profile pics scraped from the internet.",
+      "For the cleanest setup, use a disposable mobile phone provisioned over your home connection."
+    ],
+    "signals": ["The account survives signup and routine use without verification challenges or bans"],
+    "pitfalls": ["Using a VPN/exotic browser that makes the new account look suspicious and gets it flagged", "Reusing someone's real photo as the profile pic (gets you 'in trouble')", "Over-investing effort that increases exposure"],
+    "tags": ["sock-puppet", "opsec", "account-creation", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM sock-puppet advice: mobile signup, residential IP without VPN, vanilla Chrome, no scraped headshots, disposable phone is cleanest."}]
+  },
+  {
+    "name": "Isolate the investigation in a disposable VM",
+    "type": "technique",
+    "summary": "TOFM recommends running investigations inside a virtual machine to isolate them from your normal computer use and to keep all notes and screenshots organized in one place. Because VMs are disposable, you can delete the whole environment when the case is done. This compartmentalizes operational risk and keeps case evidence from leaking into personal systems.",
+    "missingPersonsRelevance": "low",
+    "phase": "opsec",
+    "pivotFrom": ["any"],
+    "pivotTo": [],
+    "whenToUse": "Set up before substantive collection begins, especially for cases touching adversarial infrastructure.",
+    "steps": [
+      "Spin up a dedicated VM for the investigation.",
+      "Keep all notes, screenshots, and case materials inside the VM.",
+      "Use a VPN if the investigation reaches infrastructure run by actors you want to stay concealed from.",
+      "Delete the VM when the investigation concludes."
+    ],
+    "signals": ["No case data resides on your personal/host system"],
+    "pitfalls": ["Storing case evidence on your personal machine", "Reusing the same VM across unrelated cases, cross-contaminating context"],
+    "tags": ["vm", "compartmentalization", "opsec", "vpn", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM: VMs isolate investigations, hold notes/screenshots, and are disposable; use a VPN for adversary-managed infrastructure."}]
+  },
+  {
+    "name": "Ethics: legal does not equal right",
+    "type": "pattern",
+    "summary": "TOFM's ethical frame is that 'just because something is not illegal doesn't make it right.' Investigators bear moral responsibility for the impact of their work on the subject and on third parties. In missing-persons OSINT this directly shapes restraint: do not expose third-party bystanders, do not publish unvalidated identity claims, and weigh harm before acting on a finding.",
+    "missingPersonsRelevance": "medium",
+    "phase": "reporting",
+    "pivotFrom": ["any"],
+    "pivotTo": [],
+    "whenToUse": "Throughout, and especially before reporting or escalating any finding.",
+    "steps": [
+      "Before acting on a finding, weigh its impact on the subject and on uninvolved third parties.",
+      "Avoid collecting or exposing data on bystanders beyond what the mission requires.",
+      "Do not report unvalidated identity claims that could harm an innocent person."
+    ],
+    "signals": ["Your report contains only validated, mission-relevant findings with minimized third-party exposure"],
+    "pitfalls": ["Justifying harmful collection because it is technically legal", "Dragging uninvolved third parties into the report"],
+    "tags": ["ethics", "harm-minimization", "reporting", "tracelabs"],
+    "evidence": [{"type": "doc", "url": "https://raw.githubusercontent.com/tracelabs/tofm/main/tofm.md", "note": "TOFM ethics: 'Just because something is not illegal doesn't make it right'; investigators bear moral responsibility for impacts."}]
+  }
+]

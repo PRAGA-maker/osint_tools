@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Case classification triage: missing vs. suspicious-death vs. murdered",
+    "type": "technique",
+    "summary": "Uncovered's database organizes 49,955 cold cases by case status (Missing, Suspicious Death, Murdered) plus victim race, gender, and orientation/identity, with location and date attached to every entry. For a thin-selector missing-persons case, classify the disappearance type first (voluntary/runaway vs. endangered vs. foul-play-suspected) because it dictates which pivot lanes pay off: runaways and voluntary disappearances are most often solved through active social-media footprints and friend networks, while suspicious-death cases lean on last-known-location, surveillance, and records. The location+date stamp on each case is the anchor for all geographic and temporal pivots.",
+    "missingPersonsRelevance": "high",
+    "phase": "triage",
+    "pivotFrom": ["name", "any"],
+    "pivotTo": ["geolocation", "social-profile", "associate"],
+    "platforms": [],
+    "whenToUse": "At intake, before choosing pivot lanes, when you have a name, an approximate last-seen location, and a date.",
+    "steps": [
+      "Establish disappearance classification: voluntary/runaway, endangered, or foul-play-suspected.",
+      "Anchor the case to a last-known location and date (city/state + day).",
+      "Record demographic facets (gender, approx age, race) as image/face and physical-description pivot seeds.",
+      "Route classification to pivot strategy: voluntary/runaway -> social-media + friend networks first; foul-play -> last-location, surveillance, records first."
+    ],
+    "signals": ["A clean classification lets you discard whole pivot lanes early", "Location+date anchor produces overlapping geographic and temporal leads"],
+    "pitfalls": ["Treating every missing case as foul-play and skipping the social-media-first lane that solves most runaway/voluntary cases", "Ignoring the date anchor, which is needed to scope archived social posts and tower/location data"],
+    "toolsUsed": ["Uncovered case database"],
+    "evidence": [{"type": "case-db", "url": "https://uncovered.com/cases?classification=missing", "note": "Filterable by Case Status (Missing/Suspicious Death/Murdered), race, gender, orientation/identity; every case carries location + date."}],
+    "tags": ["intake", "classification", "missing-persons", "triage"]
+  },
+  {
+    "name": "Family-first rapid action before official report filing",
+    "type": "pattern",
+    "summary": "In the Brandon Lawson case study, the family began independent ground searches and pursued records within 24 hours because police delayed filing the missing-person report. The transferable pattern: do not wait for an official case number to begin collecting and preserving leads. The earliest hours are when social-media posts, geolocation pings, and witness memories are freshest and least likely to be deleted. For a hackathon investigator this means immediately snapshotting the subject's public profiles, last posts, and tagged content before they can be taken down.",
+    "missingPersonsRelevance": "high",
+    "phase": "intake",
+    "pivotFrom": ["name", "social-profile"],
+    "pivotTo": ["social-profile", "geolocation", "associate"],
+    "platforms": ["facebook", "instagram", "tiktok"],
+    "whenToUse": "Immediately upon receiving a fresh missing-persons case, before official channels are confirmed.",
+    "steps": [
+      "Snapshot/archive the subject's public social profiles and their most recent posts before deletion.",
+      "Capture tagged photos, check-ins, and comments that establish last-known activity and associates.",
+      "Begin a records/public-info request track in parallel with the digital capture.",
+      "Build a timeline from the freshest digital traces while memories and posts are still live."
+    ],
+    "signals": ["You preserved posts/profiles that later get deleted or locked", "Last-activity timestamp narrows the search window"],
+    "pitfalls": ["Waiting for an official case to start collecting, losing volatile social evidence", "Failing to archive, so a privacy lockdown erases your leads"],
+    "toolsUsed": [],
+    "evidence": [{"type": "case-study", "url": "https://uncovered.com/the-power-of-collective-impact-brandon-lawson-case-study/", "note": "Family initiated independent searches and records pursuit within 24 hours when police delayed the report."}],
+    "tags": ["speed", "preservation", "early-hours", "missing-persons"]
+  },
+  {
+    "name": "Structured cell-records reconstruction to narrow search geography",
+    "type": "technique",
+    "summary": "In the Brandon Lawson case a volunteer transcribed jumbled cellular records into structured spreadsheets with tabs for process notes, calls, texts, and raw data, attaching tower location coordinates to each event. This converted unusable raw documents into a geo-temporal map that let searchers narrow the physical search area to tower-ping locations. The transferable method: whenever you obtain call/location logs or any noisy raw dataset, normalize it into a structured, geocoded timeline so the last-ping cluster becomes a defined search box.",
+    "missingPersonsRelevance": "medium",
+    "phase": "enrichment",
+    "pivotFrom": ["phone", "metadata-exif", "geolocation"],
+    "pivotTo": ["geolocation", "address"],
+    "platforms": [],
+    "whenToUse": "When you have call/text logs, EXIF, or any raw activity dataset and need to convert it into a search area.",
+    "steps": [
+      "Transcribe raw, jumbled records into a normalized table (one row per event).",
+      "Separate tabs/views for process notes, calls, texts, and raw source data for auditability.",
+      "Attach tower/location coordinates to each event to geocode the timeline.",
+      "Cluster the final-hours pings to define a bounded physical search area."
+    ],
+    "signals": ["A cluster of final pings collapses a wide area into a defined box", "Timeline gaps reveal where the subject went dark"],
+    "pitfalls": ["Working from raw jumbled records without normalizing, producing errors", "Losing chain-of-custody by not separating raw data from interpretation"],
+    "toolsUsed": ["spreadsheet (Excel)"],
+    "evidence": [{"type": "case-study", "url": "https://uncovered.com/the-power-of-collective-impact-brandon-lawson-case-study/", "note": "Volunteer built an Excel report with tabs for process notes, calls, texts and raw data plus tower coordinates to narrow the search area; evidence recovered ~9 years later."}],
+    "tags": ["geolocation", "data-normalization", "timeline", "tower-ping"]
+  },
+  {
+    "name": "911-call and audio release as viral social amplification",
+    "type": "case-study",
+    "summary": "Releasing Brandon Lawson's 911 call publicly sparked viral social-media spread, was picked up by a major YouTube creator (LordanARTS) and sustained over years by true-crime podcasts (True Crime Garage, Crawlspace, 2013-2021), with follow-up episodes used to correct media misconceptions. The transferable lesson: a single emotionally compelling primary artifact (audio, last video, distinctive photo) can be the engine that recruits a crowd of analysts and witnesses. Identify the one shareable artifact in your case and route it to the platforms where the relevant audience already gathers.",
+    "missingPersonsRelevance": "high",
+    "phase": "reporting",
+    "pivotFrom": ["metadata-exif", "any"],
+    "pivotTo": ["associate", "social-profile"],
+    "platforms": ["youtube", "facebook", "tiktok"],
+    "whenToUse": "When a case has stalled and you need to recruit witnesses or crowd analysts via a compelling primary artifact.",
+    "steps": [
+      "Identify the single most emotionally compelling, shareable primary artifact (audio, last post, photo).",
+      "Release it to creators/communities whose audience overlaps with potential witnesses.",
+      "Sustain visibility through serialized coverage rather than a one-time post.",
+      "Publish follow-ups to correct misconceptions and keep the lead funnel clean."
+    ],
+    "signals": ["Organic shares and new tips spike after release", "Creators pick up and re-amplify the artifact"],
+    "pitfalls": ["Releasing artifacts that compromise an active investigation", "One-and-done posting that fades instead of serialized, sustained coverage"],
+    "toolsUsed": ["YouTube", "podcast distribution"],
+    "evidence": [{"type": "case-study", "url": "https://uncovered.com/the-power-of-collective-impact-brandon-lawson-case-study/", "note": "Public 911 release went viral; YouTube (LordanARTS) and podcasts maintained visibility 2013-2021; follow-ups corrected misconceptions."}],
+    "tags": ["amplification", "crowdsourcing", "audio", "stalled-case"]
+  },
+  {
+    "name": "Behaviorally-targeted authentic content over threat-framing",
+    "type": "technique",
+    "summary": "FBI profiler Tim Pappa's framework for driving cold-case attention: content must align with investigative goals and target the people closest to a suspect. He warns of psychological reactance - when authorities describe a suspect with threatening labels ('serial killer', 'narcissistic'), people close to that person reject the characterization and withhold information because it contradicts their experience. Instead, use authentic, vulnerable, unscripted content. Audiences judge authenticity from behavioral samples under five minutes and reject 'surface acting'. The transferable OSINT-adjacent lesson: frame appeals to invite the one person who knows something to come forward, not to vilify.",
+    "missingPersonsRelevance": "high",
+    "phase": "reporting",
+    "pivotFrom": ["associate", "name"],
+    "pivotTo": ["associate", "social-profile"],
+    "platforms": ["youtube", "tiktok", "facebook"],
+    "whenToUse": "When crafting public appeals or content meant to elicit tips from people close to a subject or suspect.",
+    "steps": [
+      "Define the specific audience you want to act (those closest to the subject/suspect).",
+      "Avoid threat-based or pathologizing language that triggers reactance and withholding.",
+      "Use authentic, vulnerable, unscripted delivery instead of scripted statements.",
+      "Keep key emotional/authentic moments concise (under ~5 minutes) since authenticity is judged fast."
+    ],
+    "signals": ["Tips arrive from people who personally knew the subject", "Comments show emotional resonance rather than defensiveness"],
+    "pitfalls": ["Vilifying language that causes the very people with information to shut down", "Over-produced 'surface acting' that audiences read as inauthentic"],
+    "toolsUsed": [],
+    "evidence": [{"type": "expert-insight", "url": "https://uncovered.com/authentic-content-can-drive-cold-case-attention-fbi-profiler/", "note": "Tim Pappa (former FBI profiler) on psychological reactance, authenticity judged in <5 min, and behaviorally-based content."}],
+    "tags": ["messaging", "reactance", "authenticity", "tip-elicitation"]
+  },
+  {
+    "name": "Persuasive geography: film/post from meaningful locations",
+    "type": "technique",
+    "summary": "Pappa's 'persuasive geography' principle: recording content at locations significant to a case (where the person was last seen, where a crime occurred) triggers authentic cognitive and emotional responses that audiences perceive as genuine and share organically. For an investigator this doubles as a method to surface witnesses: posting geotagged content from the last-known location prompts locals and people familiar with the area to engage, comment, and supply place-specific knowledge that becomes new leads.",
+    "missingPersonsRelevance": "medium",
+    "phase": "reporting",
+    "pivotFrom": ["geolocation", "address"],
+    "pivotTo": ["associate", "geolocation"],
+    "platforms": ["youtube", "tiktok", "facebook", "instagram"],
+    "whenToUse": "When you have a defined last-known location and want both authentic appeal content and location-specific witness tips.",
+    "steps": [
+      "Identify the location significant to the case (last-seen point, found site, route).",
+      "Create or solicit content anchored to that location for authentic emotional response.",
+      "Geotag/name the location so locals and familiar parties surface in engagement.",
+      "Mine the resulting comments and shares for place-specific witness leads."
+    ],
+    "signals": ["Locals comment with area-specific knowledge", "Engagement clusters geographically around the last-known location"],
+    "pitfalls": ["Posting from a location while an active scene is being processed", "Treating location content only as appeal and ignoring the witness leads it generates"],
+    "toolsUsed": [],
+    "evidence": [{"type": "expert-insight", "url": "https://uncovered.com/authentic-content-can-drive-cold-case-attention-fbi-profiler/", "note": "Pappa: recording in significant locations triggers authentic emotional/cognitive response and organic sharing."}],
+    "tags": ["geolocation", "witness-elicitation", "content-strategy"]
+  },
+  {
+    "name": "Searchable optimization: put the subject's name in titles and cross-post",
+    "type": "technique",
+    "summary": "Pappa documents that using the victim's name directly in video titles drove discovery via search, and that the Rachel Morin videos grew substantially with no established subscriber base because audiences found them through search and organic Facebook sharing across platforms (YouTube, TikTok, Facebook). The transferable, search-first lesson for OSINT pivots: a missing person's name is the highest-value search token; ensure case content is named and cross-posted so that anyone searching the name - including witnesses and the subject's own network - lands on your appeal, and so that your monitoring catches new name-keyed content others post.",
+    "missingPersonsRelevance": "high",
+    "phase": "pivot",
+    "pivotFrom": ["name"],
+    "pivotTo": ["social-profile", "associate"],
+    "platforms": ["youtube", "tiktok", "facebook"],
+    "whenToUse": "When optimizing case content for discovery and when setting up name-keyed monitoring across platforms.",
+    "steps": [
+      "Use the subject's full name as the primary search token in titles and captions.",
+      "Cross-post the same content to YouTube, TikTok, and Facebook to maximize organic discovery.",
+      "Rely on organic name-based search and sharing rather than paid promotion.",
+      "Monitor the name across platforms to catch new third-party content and tips."
+    ],
+    "signals": ["Content grows from search/organic sharing without an existing audience", "Name search surfaces both your appeal and others' related posts"],
+    "pitfalls": ["Burying the name in generic titles, killing searchability", "Single-platform posting that misses where the relevant audience actually is"],
+    "toolsUsed": ["YouTube", "Facebook", "TikTok"],
+    "evidence": [{"type": "expert-insight", "url": "https://uncovered.com/authentic-content-can-drive-cold-case-attention-fbi-profiler/", "note": "Victim names in video titles aided search discovery; Rachel Morin videos grew via search and organic Facebook sharing without a subscriber base."}],
+    "tags": ["search-optimization", "name-pivot", "cross-platform", "monitoring"]
+  },
+  {
+    "name": "Convergence model: stack independent contributor lanes",
+    "type": "playbook",
+    "summary": "The Brandon Lawson resolution is attributed to the convergence of five independent contributor lanes: family persistence, volunteer data management (structured cell records), media/social amplification, professional investigation experience (PI liaison + drone imagery yielding 1000+ high-res photos), and coordinated systematic ground searches (10-member lane-pattern teams). The transferable playbook for a crowdsourced/hackathon case: do not rely on a single pivot - run parallel lanes (digital footprint, geospatial, amplification, expert/records, physical/ground) and look for the point where two lanes corroborate, which is what produced evidence recovery ~9 years later.",
+    "missingPersonsRelevance": "high",
+    "phase": "enrichment",
+    "pivotFrom": ["any"],
+    "pivotTo": ["geolocation", "associate", "address", "metadata-exif"],
+    "platforms": ["youtube", "facebook"],
+    "whenToUse": "On a stalled or thin-selector case where no single lead is conclusive and you can parallelize effort.",
+    "steps": [
+      "Open parallel lanes: digital footprint, geospatial/records, amplification, expert/PI/records liaison, and physical/ground search.",
+      "Assign structured data ownership so raw leads become an auditable, geocoded record.",
+      "Use amplification to recruit more analysts and witnesses into the lanes.",
+      "Watch for cross-lane corroboration (e.g., tower cluster + drone imagery + ground search converging on one area)."
+    ],
+    "signals": ["Two independent lanes point at the same location or associate", "Aerial/imagery analysis confirms a geospatial hypothesis"],
+    "pitfalls": ["Betting everything on one pivot and stalling when it dead-ends", "Running lanes in isolation without a shared structured record to spot corroboration"],
+    "toolsUsed": ["spreadsheet (Excel)", "drone imagery", "YouTube"],
+    "evidence": [{"type": "case-study", "url": "https://uncovered.com/the-power-of-collective-impact-brandon-lawson-case-study/", "note": "Convergence of family persistence, volunteer data management, media coverage, PI experience (drone, 1000+ photos), and coordinated ground searches led to evidence recovery ~9 years later."}],
+    "tags": ["multi-lane", "corroboration", "collective-impact", "playbook"]
+  },
+  {
+    "name": "Desktop-research and public-records foundation",
+    "type": "pattern",
+    "summary": "Uncovered's Citizen Detective Guide frames the core skillset as diverse desktop research methods combined with knowing the components of requesting public information and records, and evaluating data-collection processes - blending publicly available information with crowdsourced insights to map a case before acting. The transferable baseline: before chasing social pivots, ground the case in systematic open-source desktop research and identify which public records (police reports, FOIA-style requests, court/property records) can be requested, so social-media leads are corroborated against authoritative records rather than standing alone.",
+    "missingPersonsRelevance": "medium",
+    "phase": "enrichment",
+    "pivotFrom": ["name", "address", "employer-org"],
+    "pivotTo": ["document-id", "address", "associate"],
+    "platforms": [],
+    "whenToUse": "When building the corroborating records layer beneath social-media leads.",
+    "steps": [
+      "Map what public records exist for the case and how to request each.",
+      "Run systematic desktop/open-source research on the subject and associates.",
+      "Combine publicly available info with crowdsourced insights into one case map.",
+      "Cross-check social-media findings against authoritative records before trusting them."
+    ],
+    "signals": ["A social-media lead is confirmed (or refuted) by a public record", "Records reveal addresses/associates that open new pivots"],
+    "pitfalls": ["Treating uncorroborated social posts as fact", "Not knowing the request pathway for records, leaving authoritative leads untapped"],
+    "toolsUsed": ["Uncovered Citizen Detective Guide", "public records requests"],
+    "evidence": [{"type": "guide", "url": "https://uncovered.com/citizen-detective-guide-download/", "note": "Guide teaches public-records request components, desktop research methods, data-collection evaluation, and combining public info with crowdsourced insights."}],
+    "tags": ["public-records", "desktop-research", "corroboration", "foundation"]
+  },
+  {
+    "name": "Verification by independent cross-referencing",
+    "type": "pattern",
+    "summary": "A core OSINT principle reinforced across volunteer missing-persons programs: verify any lead by gathering the same fact through other means and from independent sources before acting on it. For social-media-first missing-persons work this is the guardrail against acting on a misidentified profile, a stale post, or a coincidental name match - confirm an identity or location through at least two unrelated signals (e.g., a tagged photo plus a check-in plus a mutual associate) before treating it as the subject.",
+    "missingPersonsRelevance": "high",
+    "phase": "verification",
+    "pivotFrom": ["social-profile", "name", "image"],
+    "pivotTo": ["social-profile", "associate", "geolocation"],
+    "platforms": ["instagram", "facebook", "tiktok"],
+    "whenToUse": "Before reporting any identity, location, or association as confirmed.",
+    "steps": [
+      "Restate the claim you want to confirm (this profile is the subject; the subject was here on this date).",
+      "Find a second, independent signal for the same fact (different platform, different source).",
+      "Reconcile contradictions before accepting, discarding coincidental name/face matches.",
+      "Record which independent sources support the confirmed fact."
+    ],
+    "signals": ["Two unrelated signals agree on the same identity/location", "A tempting match fails the second-source test and is correctly dropped"],
+    "pitfalls": ["Acting on a single coincidental name or face match", "Mistaking a stale or recycled post for current activity"],
+    "toolsUsed": [],
+    "evidence": [{"type": "methodology", "url": "https://uncovered.com/cases?classification=missing", "note": "Uncovered emphasizes combining publicly available information with crowdsourced insights; cross-referencing/verification is standard OSINT practice corroborated by volunteer missing-persons programs."}],
+    "tags": ["verification", "cross-reference", "false-positive-guard"]
+  }
+]

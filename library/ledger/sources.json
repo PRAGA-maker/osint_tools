@@ -1,0 +1,322 @@
+{
+  "_doc": "Go Deep ledger. Every source we mine for tools/strategies. status: queued -> crawling -> exhausted. Nothing is 'done' until exhausted. Update itemsFound/lastCrawled/notes as you go. Add new sources discovered during harvest here AND log the direction in go-beyond.md.",
+  "_statuses": [
+    "queued",
+    "crawling",
+    "partial",
+    "exhausted",
+    "blocked"
+  ],
+  "sources": [
+    {
+      "id": "arf-seed",
+      "tree": "tools",
+      "kind": "arf-seed",
+      "url": "public/arf.json",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Forked OSINT-Framework data; seed all leaves as stub tool skills, then enrich."
+    },
+    {
+      "id": "castrickclues",
+      "tree": "tools",
+      "kind": "website",
+      "url": "https://castrickclues.com",
+      "status": "exhausted",
+      "itemsFound": 1,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "osint4all",
+      "tree": "tools",
+      "kind": "start.me",
+      "url": "https://start.me/p/L1rEYQ/osint4all",
+      "status": "exhausted",
+      "itemsFound": 1278,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "ultimate-osint",
+      "tree": "tools",
+      "kind": "start.me",
+      "url": "https://start.me/p/DPYPMz/the-ultimate-osint-collection",
+      "status": "partial",
+      "itemsFound": 50,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "awesome-osint",
+      "tree": "tools",
+      "kind": "github-list",
+      "url": "https://github.com/tracelabs/awesome-osint",
+      "status": "exhausted",
+      "itemsFound": 1393,
+      "lastCrawled": "2026-06-13",
+      "notes": "Parsed section-aware from jivoi raw README (agent path hit socket errors); curl+parse worked."
+    },
+    {
+      "id": "tracelabs-repos",
+      "tree": "both",
+      "kind": "github-org",
+      "url": "https://github.com/orgs/tracelabs/repositories",
+      "status": "partial",
+      "itemsFound": 50,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "gh-topic-osint-resources",
+      "tree": "tools",
+      "kind": "github-topic",
+      "url": "https://github.com/topics/osint-resources",
+      "status": "partial",
+      "itemsFound": 64,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "gh-topic-osint-framework",
+      "tree": "tools",
+      "kind": "github-topic",
+      "url": "https://github.com/topics/osint-framework",
+      "status": "partial",
+      "itemsFound": 54,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "gh-topic-footprinting",
+      "tree": "tools",
+      "kind": "github-topic",
+      "url": "https://github.com/topics/footprinting",
+      "status": "partial",
+      "itemsFound": 39,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "gh-topic-reconnaissance",
+      "tree": "tools",
+      "kind": "github-topic",
+      "url": "https://github.com/topics/reconnaissance",
+      "status": "partial",
+      "itemsFound": 18,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "gh-topic-intelligence-gathering",
+      "tree": "tools",
+      "kind": "github-topic",
+      "url": "https://github.com/topics/intelligence-gathering",
+      "status": "partial",
+      "itemsFound": 20,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "xsint",
+      "tree": "tools",
+      "kind": "github-list",
+      "url": "https://github.com/h1lw/xsint",
+      "status": "exhausted",
+      "itemsFound": 6,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "osint-news-tools",
+      "tree": "tools",
+      "kind": "website",
+      "url": "https://osint-news.com/category/tools/",
+      "status": "exhausted",
+      "itemsFound": 3,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "tl-discord",
+      "tree": "both",
+      "kind": "discord",
+      "url": "https://discord.com/channels/808030986276569118",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Resource/technique channels + pins ONLY (PII-free). Extract tools/strategies, do not transcribe chat. Chrome MCP + user auth."
+    },
+    {
+      "id": "kimi-swarm",
+      "tree": "both",
+      "kind": "kimi-swarm",
+      "url": "https://kimi.com",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Agent-swarm deep-dives per using-kimi-for-research skill; download output folders to ~/Downloads, fold in."
+    },
+    {
+      "id": "tofm",
+      "tree": "strategies",
+      "kind": "github-doc",
+      "url": "https://github.com/tracelabs/tofm/blob/main/tofm.md",
+      "status": "exhausted",
+      "itemsFound": 12,
+      "lastCrawled": "2026-06-13",
+      "notes": "Trace Labs OSINT Field Manual \u2014 primary strategy seed."
+    },
+    {
+      "id": "searchparty-writeups",
+      "tree": "strategies",
+      "kind": "github-repo",
+      "url": "https://github.com/tracelabs/searchparty-ctf-writeups",
+      "status": "partial",
+      "itemsFound": 16,
+      "lastCrawled": "2026-06-13",
+      "notes": "CTF writeups \u2014 what actually worked."
+    },
+    {
+      "id": "osinti4l-mvo-writeup",
+      "tree": "strategies",
+      "kind": "github-repo",
+      "url": "https://github.com/OSINTI4L/TraceLabs-CTF-MVO-Write-up-11.25",
+      "status": "exhausted",
+      "itemsFound": 13,
+      "lastCrawled": "2026-06-13",
+      "notes": ""
+    },
+    {
+      "id": "osinti4l-user",
+      "tree": "strategies",
+      "kind": "github-user",
+      "url": "https://github.com/OSINTI4L",
+      "status": "exhausted",
+      "itemsFound": 12,
+      "lastCrawled": "2026-06-13",
+      "notes": "Mine all repos for writeups/playbooks."
+    },
+    {
+      "id": "uncovered-missing",
+      "tree": "strategies",
+      "kind": "case-db",
+      "url": "https://uncovered.com/cases?classification=missing",
+      "status": "partial",
+      "itemsFound": 10,
+      "lastCrawled": "2026-06-13",
+      "notes": "Real missing-persons cases \u2014 mine for case-study strategies / what-worked."
+    },
+    {
+      "id": "metaosint",
+      "tree": "tools",
+      "kind": "website",
+      "url": "https://metaosint.github.io",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Large categorized OSINT tool directory (frontier from ultimate-osint)."
+    },
+    {
+      "id": "bellingcat-toolkit",
+      "tree": "tools",
+      "kind": "website",
+      "url": "https://bellingcat.gitbook.io/toolkit",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Bellingcat's curated investigative toolkit (frontier)."
+    },
+    {
+      "id": "cyb-detective",
+      "tree": "tools",
+      "kind": "github-list",
+      "url": "https://github.com/cipher387/osint_stuff_tool_collection",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "cyb_detective's large tool collection (frontier)."
+    },
+    {
+      "id": "sinwindie-osint",
+      "tree": "tools",
+      "kind": "github-list",
+      "url": "https://github.com/sinwindie/OSINT",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Platform-indexed OSINT tool maps incl. social (frontier)."
+    },
+    {
+      "id": "osintambition-social",
+      "tree": "tools",
+      "kind": "github-list",
+      "url": "https://github.com/osintambition/Social-Media-OSINT-Tools-Collection",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "290+ social-media OSINT tools across 16 platforms; only partially mined."
+    },
+    {
+      "id": "inteltechniques-tools",
+      "tree": "tools",
+      "kind": "website",
+      "url": "https://inteltechniques.com/tools/",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Michael Bazzell's free online tool set (frontier)."
+    },
+    {
+      "id": "uk-osint",
+      "tree": "tools",
+      "kind": "website",
+      "url": "https://www.uk-osint.net/",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "UK-focused OSINT resource hub (frontier)."
+    },
+    {
+      "id": "toddington-resources",
+      "tree": "tools",
+      "kind": "website",
+      "url": "https://www.toddington.com/resources/",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Toddington free OSINT resources (frontier)."
+    },
+    {
+      "id": "cupidcr4wl",
+      "tree": "both",
+      "kind": "github-repo",
+      "url": "https://github.com/OSINTI4L/cupidcr4wl",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Username/phone OSINT tool for dating/adult/escort platforms; trafficking-relevant (frontier)."
+    },
+    {
+      "id": "cybersecstu-finding-people",
+      "tree": "strategies",
+      "kind": "website",
+      "url": "https://github.com/sinwindie/OSINT",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "CyberSecStu 'OSINT for Finding People' methodology sheet (frontier; locate canonical URL)."
+    },
+    {
+      "id": "shandyman-ai-osint",
+      "tree": "strategies",
+      "kind": "article",
+      "url": "https://shandyman.gitbook.io/",
+      "status": "queued",
+      "itemsFound": 0,
+      "lastCrawled": "",
+      "notes": "Shandyman 'Leveraging AI in OSINT CTF' writeup \u2014 retry (was Cloudflare-blocked)."
+    }
+  ]
+}

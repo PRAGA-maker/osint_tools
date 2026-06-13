@@ -1,0 +1,45 @@
+---
+id: clustermaps
+name: Clustermaps
+description: 'OSINT tool: Clustermaps.'
+url: https://clustrmaps.com/
+category: people-search
+path:
+- people-search
+bestFor: ''
+selectorsIn: []
+selectorsOut: []
+status: unknown
+pricing: free
+opsec: unknown
+opsecNote: ''
+humanInLoop: false
+humanInLoopReason: []
+bestInteractionPattern: web-manual
+trust: community
+trustNote: ''
+missingPersonsRelevance: high
+coverage: []
+auth: none
+api: false
+localInstall: false
+registration: false
+aliases: []
+tags:
+- people-investigations
+source: awesome-osint
+lastVerified: ''
+enrichment: stub
+---
+
+# Clustermaps
+
+> OSINT tool: Clustermaps.
+
+- **URL:** https://clustrmaps.com/
+- **Best for:** —
+- **Source:** harvested from `awesome-osint`
+
+
+
+_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._

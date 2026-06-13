@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Email to Address",
+    "url": "https://www.melissa.com/",
+    "path": "email/email-search"
+  },
+  {
+    "name": "MailboxValidator",
+    "url": "https://www.mailboxvalidator.com/demo",
+    "path": "email/email-verification"
+  },
+  {
+    "name": "DomainTools Whois",
+    "url": "https://whois.domaintools.com/",
+    "path": "domains-ip-infrastructure/whois-records"
+  },
+  {
+    "name": "Domaincrawler.com",
+    "url": "https://domaincrawler.com/",
+    "path": "domains-ip-infrastructure/whois-records"
+  },
+  {
+    "name": "MarkMonitor Whois Search",
+    "url": "https://domains.markmonitor.com/whois/",
+    "path": "domains-ip-infrastructure/whois-records"
+  },
+  {
+    "name": "SEMrush",
+    "url": "https://www.semrush.com/",
+    "path": "domains-ip-infrastructure/analytics"
+  },
+  {
+    "name": "BinaryEdge",
+    "url": "https://www.binaryedge.io/",
+    "path": "domains-ip-infrastructure/host-port-discovery"
+  },
+  {
+    "name": "OSINT Industries",
+    "url": "https://www.osint.industries/",
+    "path": "messaging/signal-phone-lookup"
+  },
+  {
+    "name": "Melissa Data - People Finder",
+    "url": "https://www.melissa.com/",
+    "path": "people-search/general-people-search"
+  },
+  {
+    "name": "findmypast.com",
+    "url": "https://www.findmypast.com/discover",
+    "path": "people-search/general-people-search"
+  },
+  {
+    "name": "usa-people-search.com",
+    "url": "https://www.usa-people-search.com/",
+    "path": "people-search/general-people-search"
+  },
+  {
+    "name": "eHarmony",
+    "url": "https://www.eharmony.com/",
+    "path": "dating-classifieds"
+  },
+  {
+    "name": "Twilio Lookup",
+    "url": "https://www.twilio.com/lookup",
+    "path": "phone"
+  },
+  {
+    "name": "Mr. Number",
+    "url": "https://www.hiya.com/products/apps/hiya-spam-blocker",
+    "path": "phone"
+  },
+  {
+    "name": "Next Caller",
+    "url": "https://nextcaller.com/",
+    "path": "phone"
+  },
+  {
+    "name": "Data24-7",
+    "url": "https://www.data24-7.com/signup.php",
+    "path": "phone"
+  },
+  {
+    "name": "HLR Lookup Portal",
+    "url": "https://www.hlr-lookups.com/en/start",
+    "path": "phone"
+  },
+  {
+    "name": "OpenCNAM API",
+    "url": "https://api.opencnam.com/v2/phone/+19073372323",
+    "path": "phone"
+  },
+  {
+    "name": "Melissa Data - Property Viewer",
+    "url": "https://melissa-data.com",
+    "path": "public-records/property-records"
+  },
+  {
+    "name": "Emporis",
+    "url": "https://www.emporis.com/",
+    "path": "public-records/property-records"
+  },
+  {
+    "name": "PACER",
+    "url": "https://pacer.uscourts.gov/",
+    "path": "public-records/court-criminal-records"
+  },
+  {
+    "name": "MelissaData - Campaign Contributions",
+    "url": "https://melissa-data.com",
+    "path": "public-records/us-political-records"
+  },
+  {
+    "name": "Orbis Directory",
+    "url": "https://orbisdirectory.bvdinfo.com/version-2016121/OrbisDirectory/Companies",
+    "path": "public-records/company-profiles"
+  },
+  {
+    "name": "carVertical VIN Decoder",
+    "url": "https://www.carvertical.com/vin-decoder",
+    "path": "transportation/vehicle-records"
+  },
+  {
+    "name": "Vessel Tracker",
+    "url": "https://www.vesseltracker.com/",
+    "path": "transportation/marine-records"
+  },
+  {
+    "name": "Charles Proxy",
+    "url": "https://www.charlesproxy.com/",
+    "path": "documents-metadata/ios"
+  },
+  {
+    "name": "ZeeMaps",
+    "url": "https://www.zeemaps.com/",
+    "path": "evidence-capture/map-locations"
+  },
+  {
+    "name": "Open Source Intelligence Techniques",
+    "url": "https://inteltechniques.com/",
+    "path": "training-ctf"
+  },
+  {
+    "name": "Plessas",
+    "url": "https://plessas.net/online-training",
+    "path": "training-ctf"
+  },
+  {
+    "name": "The OSINTion",
+    "url": "https://www.theosintion.com/courses",
+    "path": "training-ctf"
+  }
+]

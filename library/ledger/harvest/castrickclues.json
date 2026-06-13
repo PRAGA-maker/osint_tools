@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Castrick Clues",
+    "url": "https://castrickclues.com",
+    "description": "SaaS OSINT search tool that enumerates account existence across many platforms (Google, Flickr, Gravatar, Github, Facebook, etc.) from an email, username, or phone number.",
+    "category": "people-search",
+    "bestFor": "Pivoting from a single email, username, or phone number to discover which online platforms a person has accounts on (account/profile enumeration).",
+    "pricing": "freemium",
+    "selectorsIn": ["email", "username", "phone"],
+    "selectorsOut": ["social-profile", "username", "email"],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "unverified",
+    "trustNote": "Commercial SaaS platform with a 'no-trace / no-log' privacy claim that cannot be independently verified. Site posted a closure notice stating the service would shut down on 2026-02-07, so it may now be defunct (today is 2026-06-13). Verify availability before relying on it.",
+    "missingPersonsRelevance": "high",
+    "coverage": ["global"],
+    "api": true,
+    "localInstall": false,
+    "registration": true,
+    "aliases": ["Castrick"],
+    "tags": ["account-enumeration", "username-search", "email-lookup", "phone-lookup", "people-search", "saas"],
+    "notes": "Single hosted search tool, not a directory of tools. Free Basic tier (unlimited credits) covers a small module set (Google, Flickr, Gravatar) plus API access and no captcha; the paid Recon tier ($12, 30 credits) adds ~20 more platform modules including Notion, Trello, Github, Fitbit, Chess.com, Foursquare, Runtastic, Poshmark, Garmin, Goodreads, Yelp, Dropbox, Duolingo, Facebook, Microsoft, Quora, and Adobe. The underlying technique is account-existence checking across consumer platforms (similar to Holehe / WhatsMyName / Maigret). Registration/sign-in required. IMPORTANT: the site announced a shutdown for 2026-02-07 and credits being refunded by email, so the live service may no longer be reachable."
+  }
+]

@@ -1,0 +1,44 @@
+---
+id: metagoofil
+name: metagoofil
+description: 'OSINT tool: metagoofil.'
+url: https://github.com/opsdisk/metagoofil
+category: search-engines
+path:
+- search-engines
+bestFor: ''
+selectorsIn: []
+selectorsOut: []
+status: unknown
+pricing: freemium
+opsec: passive
+opsecNote: ''
+humanInLoop: false
+humanInLoopReason: []
+bestInteractionPattern: cli
+trust: community
+trustNote: ''
+missingPersonsRelevance: medium
+coverage: []
+auth: none
+api: false
+localInstall: true
+registration: false
+aliases: []
+tags: []
+source: osint4all
+lastVerified: ''
+enrichment: stub
+---
+
+# metagoofil
+
+> OSINT tool: metagoofil.
+
+- **URL:** https://github.com/opsdisk/metagoofil
+- **Best for:** —
+- **Source:** harvested from `osint4all`
+
+
+
+_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._

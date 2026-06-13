@@ -1,0 +1,45 @@
+---
+id: logpasta
+name: Logpasta
+description: 'OSINT tool: Logpasta.'
+url: https://logpasta.com/
+category: communities-forums
+path:
+- communities-forums
+bestFor: ''
+selectorsIn: []
+selectorsOut: []
+status: unknown
+pricing: free
+opsec: unknown
+opsecNote: ''
+humanInLoop: false
+humanInLoopReason: []
+bestInteractionPattern: web-manual
+trust: community
+trustNote: ''
+missingPersonsRelevance: medium
+coverage: []
+auth: none
+api: false
+localInstall: false
+registration: false
+aliases: []
+tags:
+- pastebins
+source: awesome-osint
+lastVerified: ''
+enrichment: stub
+---
+
+# Logpasta
+
+> OSINT tool: Logpasta.
+
+- **URL:** https://logpasta.com/
+- **Best for:** —
+- **Source:** harvested from `awesome-osint`
+
+
+
+_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._

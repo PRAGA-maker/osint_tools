@@ -1,0 +1,401 @@
+[
+  {
+    "name": "Prioritize subjects by likely digital footprint before investigating",
+    "type": "pattern",
+    "summary": "When handed a batch of missing-person subjects in a time-boxed search, do not investigate them in list order. First do a quick triage pass to estimate which subjects have the richest online presence, and front-load effort there. Multiple winning teams note that people under ~40 are far more likely to have meaningful social media, and that subjects who have been missing for years or who are very young/elderly often have thin or stale footprints. Deprioritizing low-footprint subjects early concentrates effort where flags are actually findable.",
+    "missingPersonsRelevance": "high",
+    "phase": "triage",
+    "pivotFrom": ["name", "dob", "physical-description"],
+    "pivotTo": ["social-profile", "username"],
+    "platforms": ["facebook", "instagram", "twitter", "tiktok"],
+    "whenToUse": "At the start of a multi-subject investigation when time is limited and you must allocate effort across several people.",
+    "steps": [
+      "Skim each subject's intake packet (age, last-seen date, location, photos).",
+      "Estimate digital footprint: younger subjects and recent disappearances tend to have active accounts; long-missing or very young/elderly subjects often do not.",
+      "Rank subjects by expected payoff and assign the richest ones to your strongest researchers first.",
+      "Revisit deprioritized subjects later if higher-value subjects dry up."
+    ],
+    "signals": ["Early subjects yield quick, easy flags", "Found an active profile within minutes confirms a high-footprint subject"],
+    "pitfalls": ["Spending equal time on a decades-old cold case with no online presence as on a recently-missing active teen", "Treating the subject list as a fixed order rather than a priority queue"],
+    "tags": ["triage", "prioritization", "time-management", "tracelabs"],
+    "evidence": [
+      {"type": "writeup", "url": "https://www.aaroncti.com/trace-labs-august-2020/", "note": "AaronCTI: people younger than 40 more likely to be on social media; demographic-based prioritization accelerates early flags"},
+      {"type": "writeup", "url": "https://www.intelligencewithsteve.com/post/a-guide-to-participating-in-a-trace-labs-global-osint-search-party-ctf", "note": "Deprioritize historically-missing individuals with minimal digital footprints"}
+    ]
+  },
+  {
+    "name": "Name + location Google dorking to seed the investigation",
+    "type": "technique",
+    "summary": "The most reliable opening move is targeted search-engine dorking on the subject's name combined with their city/region and disappearance-related terms. This surfaces news articles (which give additional photos for facial recognition, plus usernames, relatives, and employers), missing-persons posters, and social posts. A key refinement is to subtract the noise term 'missing' once you have located the person, so news clutter does not drown out their actual social presence, and to add discriminating terms like 'arrest', 'married', or a sports club to pull new identifiers.",
+    "missingPersonsRelevance": "high",
+    "phase": "intake",
+    "pivotFrom": ["name", "address", "geolocation"],
+    "pivotTo": ["social-profile", "username", "associate", "employer-org", "image"],
+    "platforms": ["facebook", "twitter", "tiktok", "youtube", "instagram"],
+    "whenToUse": "First step for almost any subject, before reaching for specialized tools.",
+    "steps": [
+      "Search the subject's first + last name plus their city.",
+      "Add disappearance terms: inurl:missing \"MP Name\", intext:missing \"MP Name\".",
+      "Once the person is identified, subtract 'missing' to eliminate news clutter and reveal everyday social presence.",
+      "Add discriminating terms (arrest, married, school, team name) to pull additional accounts and relatives.",
+      "Run the same dorks through Bing and Yandex for results Google buries.",
+      "Harvest every photo, username, relative name, and employer mentioned for later pivots."
+    ],
+    "signals": ["News articles yield multiple face photos and named relatives", "A username or handle appears that can be enumerated across platforms"],
+    "pitfalls": ["Stopping at news results and never pivoting to the person's own social presence", "Only using Google and missing results that surface on Bing/Yandex"],
+    "toolsUsed": ["Google", "Bing", "Yandex", "OSINTCurious Dorks page"],
+    "tags": ["dorking", "search-engines", "intake", "seeding"],
+    "evidence": [
+      {"type": "writeup", "url": "https://medium.com/@cyberbychase/osint-methodology-and-tradecraft-tips-for-winning-the-trace-labs-black-badge-from-team-federal-ebe737d70c6a", "note": "Chase: inurl:/intext: missing dorks; subtract 'missing'; add arrest/married; use Bing and Yandex"},
+      {"type": "writeup", "url": "https://github.com/OSINTI4L/TraceLabs-CTF-MVO-Write-up-11.25", "note": "Opening move was a Google dork of the MP by name to find news + social, yielding photos and pivot points"}
+    ]
+  },
+  {
+    "name": "Facebook-first canvass for missing persons",
+    "type": "pattern",
+    "summary": "Across many writeups, Facebook is repeatedly called 'a goldmine' and the single highest-yield platform for missing-persons OSINT, with other platforms (Twitter, Instagram, Snapchat, TikTok, Strava) acting as support. Investigators extract usernames, location data, images and videos, event attendance, group membership, and comment/reaction patterns. Recent posts and the friends list (especially Facebook's 'Recently Added', which exposes roughly a 3-week window) are the richest pivot surfaces because they reveal current associates and recent geolocation.",
+    "missingPersonsRelevance": "high",
+    "phase": "pivot",
+    "pivotFrom": ["name", "username", "image"],
+    "pivotTo": ["associate", "geolocation", "username", "employer-org", "image", "social-profile"],
+    "platforms": ["facebook"],
+    "whenToUse": "As the primary platform once you have a candidate profile, before spreading to secondary networks.",
+    "steps": [
+      "Locate the subject's Facebook profile by name/handle and confirm via face comparison.",
+      "Read the visible timeline for recent posts and life events.",
+      "Walk the friends list, prioritizing 'Recently Added' for current associates.",
+      "Open tagged photos and check-ins for location and lifestyle data.",
+      "Note groups joined and events attended as community/interest pivots.",
+      "Identify recurring commenters/reactors as close relationships to investigate next."
+    ],
+    "signals": ["A post dated shortly before or after the disappearance", "Recurring commenters who are clearly close family/friends", "Tagged location data on recent photos"],
+    "pitfalls": ["Treating Twitter/Instagram as primary when Facebook usually carries most points", "Missing the 'Recently Added' friends window that reveals current contacts"],
+    "tags": ["facebook", "network-analysis", "platform-priority", "pivot"],
+    "evidence": [
+      {"type": "writeup", "url": "https://shandyman.online/blog/on-a-mission-a-tracelabs-ctf-missing-persons-writeup/", "note": "Facebook is a goldmine; majority of points came through Facebook with other platforms picking up the slack"},
+      {"type": "writeup", "url": "https://www.aaroncti.com/trace-labs-august-2020/", "note": "Extract usernames, location, images, events, groups, comment patterns from Facebook"},
+      {"type": "writeup", "url": "https://jack.bio/blog/tracelabs", "note": "Facebook 'Recently Added' friends exposes ~3-week window of current associates"}
+    ]
+  },
+  {
+    "name": "Friend-and-tag enumeration to find a low-footprint subject",
+    "type": "playbook",
+    "summary": "When the subject (often a runaway teen) has a locked, sparse, or absent profile, you find them through their social graph rather than directly. Start from one confirmed account, follow links to spam/backup accounts, scan the friends/follower list for similar names and shared faces, locate the best friend's account, and harvest cross-tagged images and co-appearances. Teens commonly run 4+ accounts on a single platform under name variations, and their location/lifestyle leaks through friends who tag them. This indirect graph pivot is the canonical way solved cases are cracked when the subject themselves is quiet.",
+    "missingPersonsRelevance": "high",
+    "phase": "pivot",
+    "pivotFrom": ["username", "social-profile", "associate"],
+    "pivotTo": ["associate", "image", "geolocation", "social-profile", "physical-description"],
+    "platforms": ["instagram", "snapchat", "tiktok", "facebook"],
+    "whenToUse": "When the subject's own profile is private, deleted, inactive, or non-existent but they are young/socially active.",
+    "steps": [
+      "Find any one confirmed account belonging to the subject.",
+      "Follow the bio/linktree to spam, finsta, or backup accounts (people reuse handle variants).",
+      "Scan the friends/follower list for similar names and recurring faces.",
+      "Identify the best friend(s) and pivot into their public account.",
+      "Harvest photos where the subject is tagged or appears, even if their own account is locked.",
+      "Read comments and tagged check-ins on friends' posts for location and recent activity.",
+      "Note physical descriptors (tattoos, piercings, hair) and lifestyle signals visible in friends' photos."
+    ],
+    "signals": ["Subject appears in a friend's recent tagged photo", "A backup/finsta account surfaces from a linktree or bio", "Several accounts share the same best-friend follower set"],
+    "pitfalls": ["Giving up when the subject's main profile is private instead of going through friends", "Assuming one account is the only account when teens run several", "Ignoring photos because they are on someone else's profile"],
+    "tags": ["instagram", "snapchat", "teens", "runaway", "graph-pivot", "tagged-photos"],
+    "evidence": [
+      {"type": "writeup", "url": "https://medium.com/@cyberbychase/osint-methodology-and-tradecraft-tips-for-winning-the-trace-labs-black-badge-from-team-federal-ebe737d70c6a", "note": "Rae's Instagram enumeration: backup accounts, friends-of-friends, best friend cross-tagged images, 4+ accounts per platform"},
+      {"type": "writeup", "url": "https://wondersmithrae.medium.com/finding-missing-people-with-tracelabs-ctf-d5617c7cd659", "note": "Learning to pivot is key; when the subject has zero social media, branch through related contacts (family -> email -> location)"}
+    ]
+  },
+  {
+    "name": "Username persistence across platforms",
+    "type": "technique",
+    "summary": "People reuse the same handle, nickname, avatar, or profile photo across many platforms. Once you recover any one username, enumerate it everywhere with a username checker to discover accounts on platforms you would not have thought to check. The first analytic question is whether the subject uses a consistent identifier across platforms; if so, a single handle unlocks a cluster of profiles. Treat the checker output as leads to verify, not confirmed hits.",
+    "missingPersonsRelevance": "high",
+    "phase": "pivot",
+    "pivotFrom": ["username"],
+    "pivotTo": ["social-profile", "username", "email"],
+    "platforms": ["instagram", "twitter", "reddit", "tiktok", "telegram"],
+    "whenToUse": "Immediately after recovering any username or handle for the subject or a close associate.",
+    "steps": [
+      "Extract the candidate username/handle.",
+      "Run it through a username enumeration tool (Sherlock, WhatsMyName, Namecheckr) across many platforms.",
+      "Also test obvious variants (added numbers, underscores, name initials).",
+      "Manually verify each hit by matching avatar/photo/bio to the subject before treating it as the same person.",
+      "Pivot newly found profiles back into friend and tag enumeration."
+    ],
+    "signals": ["Same avatar/photo appears under the handle on multiple sites", "Bio details (city, school) match across accounts"],
+    "pitfalls": ["Trusting checker hits without verifying they are the same person", "Spending 20 minutes feeding data into a tool when a manual check would be faster", "Forgetting handle variants"],
+    "toolsUsed": ["Sherlock", "WhatsMyName", "Namecheckr", "Namechk"],
+    "tags": ["username", "enumeration", "pivot", "cross-platform"],
+    "evidence": [
+      {"type": "writeup", "url": "https://medium.com/@cyberbychase/osint-methodology-and-tradecraft-tips-for-winning-the-trace-labs-black-badge-from-team-federal-ebe737d70c6a", "note": "Sherlock and WhatsMyName; people reuse handles across sites"},
+      {"type": "writeup", "url": "https://www.osintme.com/index.php/2021/11/14/a-noobs-guide-to-trace-labs-search-party-ctf/", "note": "Establish whether subject uses same nickname/handle/avatar/photo across platforms as the best research angle"},
+      {"type": "writeup", "url": "https://shandyman.online/blog/on-a-mission-a-tracelabs-ctf-missing-persons-writeup/", "note": "Namecheckr and WhatsMyName for initial cross-platform profile discovery"}
+    ]
+  },
+  {
+    "name": "Facial recognition to confirm a candidate profile is the subject",
+    "type": "technique",
+    "summary": "When a name search returns a candidate social profile, confirm identity by comparing the profile's photos against the official missing-person photo using a face-comparison/recognition tool that returns a similarity score. This converts an uncertain 'maybe this is them' into a defensible match, which matters because everything you pivot to downstream depends on the profile actually belonging to the subject. Multiple teams used this to validate profiles in seconds and avoid wasting time on the wrong person.",
+    "missingPersonsRelevance": "high",
+    "phase": "verification",
+    "pivotFrom": ["image", "face", "social-profile"],
+    "pivotTo": ["social-profile"],
+    "platforms": ["facebook", "instagram"],
+    "whenToUse": "After locating a candidate profile, before investing time pivoting through it.",
+    "steps": [
+      "Collect the official missing-person photo(s) from the intake packet.",
+      "Collect photos from the candidate profile.",
+      "Run a face-comparison tool to get a same/different similarity score.",
+      "If confident, treat the profile as confirmed and begin friend/tag enumeration; if not, keep searching."
+    ],
+    "signals": ["High similarity score between official photo and profile photo", "Consistent secondary details (location, age, name) reinforce the match"],
+    "pitfalls": ["Relying on the score alone for low-quality or angled photos", "Confirming on a single ambiguous image instead of corroborating with non-photo facts"],
+    "toolsUsed": ["FaceComparison", "Microsoft Azure Face API", "facial recognition tools"],
+    "tags": ["face", "verification", "identity-confirmation"],
+    "evidence": [
+      {"type": "writeup", "url": "https://www.aaroncti.com/trace-labs-august-2020/", "note": "Microsoft Azure facial recognition to compare social images against law-enforcement photos and score likely-same"},
+      {"type": "writeup", "url": "https://github.com/OSINTI4L/TraceLabs-CTF-MVO-Write-up-11.25", "note": "Confirmed Facebook identity using FaceComparison before pivoting"}
+    ]
+  },
+  {
+    "name": "Geolocate a photo or video from in-frame environmental detail",
+    "type": "playbook",
+    "summary": "High-value location flags often come from a single subject photo or video. The workflow: try reverse image search and AI geo tools first; when those fail, switch to manual chaining. Read text on signs/billboards (and its language), identify named businesses or landmarks (a casino sign, a Chevron station, a distinctive light pole), and triangulate them with Google Maps and Street View. When even named features fail, fall back to demographic/environmental inference: billboard language hints at neighborhood demographics, absence of graffiti suggests a safer area, and un-sun-bleached paint implies tall shading buildings nearby. This MVO-winning approach turns ambient scene detail into a narrowed search area.",
+    "missingPersonsRelevance": "high",
+    "phase": "enrichment",
+    "pivotFrom": ["image", "metadata-exif", "geolocation"],
+    "pivotTo": ["geolocation", "address"],
+    "platforms": ["facebook", "instagram", "tiktok"],
+    "whenToUse": "When a subject's photo or video shows enough background to place it, and you want a high-value Day-Last-Seen or location flag.",
+    "steps": [
+      "Check EXIF/metadata first in case coordinates survived upload (rare on social).",
+      "Run reverse image search and AI geolocation tools (e.g. GeoSpy/FindPickLocation) as a fast first pass.",
+      "If those fail, extract named features: business signs, landmarks, license-plate region, language of signage.",
+      "Triangulate named features with Google Maps and Street View to confirm a location.",
+      "Cross-check nearby fixed infrastructure (gas station, distinctive pole) visible in the same frame to nail the exact spot.",
+      "If still unresolved, infer demographics/region from environmental cues (signage language, graffiti, paint weathering, building height) to narrow the area."
+    ],
+    "signals": ["A named business + nearby landmark both line up on Street View", "Signage language and storefronts match a specific neighborhood"],
+    "pitfalls": ["Assuming social-media uploads retain EXIF GPS (platforms usually strip it)", "Giving up when AI geo tools fail instead of manual feature chaining", "Over-claiming an exact address from weak environmental inference"],
+    "toolsUsed": ["Google Maps", "Google Street View", "reverse image search", "GeoSpy", "FindPickLocation"],
+    "tags": ["geolocation", "image-analysis", "street-view", "mvo", "day-last-seen"],
+    "evidence": [
+      {"type": "writeup", "url": "https://github.com/OSINTI4L/TraceLabs-CTF-MVO-Write-up-11.25", "note": "Casino sign + Chevron + light pole triangulated via Maps/Street View; demographic inference from billboard language, graffiti, sun-bleaching when AI geo tools failed"},
+      {"type": "writeup", "url": "https://jack.bio/blog/tracelabs", "note": "Pre-disappearance posts with specific geolocation clues earned +700-point timeline flags"}
+    ]
+  },
+  {
+    "name": "Cluster correlation: confirm multiple accounts belong to one person via shared friends",
+    "type": "technique",
+    "summary": "A single person typically has several accounts across platforms. To prove a set of accounts all belong to the same subject (rather than namesakes), look for the same two or more mutual friends/associates appearing across each account. Shared close connections are a far stronger correlation signal than a matching display name, and they let you confidently merge accounts into one identity and advance the timeline. A winning team explicitly used 'two common friends across every account' as their verification rule.",
+    "missingPersonsRelevance": "high",
+    "phase": "verification",
+    "pivotFrom": ["social-profile", "associate", "username"],
+    "pivotTo": ["social-profile", "associate"],
+    "platforms": ["facebook", "instagram", "twitter"],
+    "whenToUse": "When you have several candidate accounts and need to confirm they are the same individual before submitting linked flags.",
+    "steps": [
+      "List all candidate accounts plausibly belonging to the subject.",
+      "Enumerate each account's visible friends/followers/frequent interactors.",
+      "Look for the same individuals (ideally 2+) appearing across the accounts.",
+      "If a consistent core of mutual connections is present, merge the accounts into one identity.",
+      "Use TruePeopleSearch or similar to corroborate the relationship of those mutual connections (family/close friend)."
+    ],
+    "signals": ["The same 2+ named people appear as friends on every candidate account", "Cross-account photos feature the same associates"],
+    "pitfalls": ["Merging accounts on display-name match alone (namesakes)", "Ignoring that platform privacy may hide the friend overlap that exists"],
+    "toolsUsed": ["TruePeopleSearch"],
+    "tags": ["correlation", "verification", "network-analysis", "identity-resolution"],
+    "evidence": [
+      {"type": "writeup", "url": "https://jack.bio/blog/tracelabs", "note": "Finding two common friends across every account provided concrete verification that accounts were the same person"}
+    ]
+  },
+  {
+    "name": "Corroborate relatives and connections with people-search before submitting",
+    "type": "technique",
+    "summary": "Social-media inferences about who is a relative or associate should be confirmed against people-search/public-records databases rather than relying on news articles or assumption. People-search engines validate family relationships, surface additional phone numbers and addresses, and confirm a connection is real. Because record availability is jurisdiction-specific, tool choice must adapt to the subject's country/region. SignalHire-style extensions can also pull phone/email and linked profiles directly off a LinkedIn or social profile.",
+    "missingPersonsRelevance": "high",
+    "phase": "enrichment",
+    "pivotFrom": ["name", "associate", "social-profile"],
+    "pivotTo": ["phone", "address", "associate", "email"],
+    "platforms": ["facebook", "linkedin"],
+    "whenToUse": "After identifying candidate relatives/associates from social media, to confirm relationships and pull contact identifiers for flags.",
+    "steps": [
+      "Take a candidate relative/associate name from the social graph.",
+      "Query a people-search engine appropriate to the subject's country.",
+      "Confirm the relationship and harvest associated phones/addresses.",
+      "On LinkedIn/social profiles, use an extension like SignalHire to extract phone, email, and linked accounts.",
+      "Record the discovery method and source for each fact so it survives judge/LE review."
+    ],
+    "signals": ["People-search confirms the same household/relationship inferred from social media", "Extracted phone/email links back to another known account"],
+    "pitfalls": ["Trusting a news article's relationship claim without record confirmation", "Using a US-only people-search for an international subject", "Submitting a relative flag without explaining how the relationship was established"],
+    "toolsUsed": ["TruePeopleSearch", "SignalHire", "US Phone Book", "country-specific people-search engines"],
+    "tags": ["people-search", "public-records", "corroboration", "relatives", "enrichment"],
+    "evidence": [
+      {"type": "writeup", "url": "https://jack.bio/blog/tracelabs", "note": "TruePeopleSearch used to verify family connections rather than relying solely on news"},
+      {"type": "writeup", "url": "https://medium.com/@cyberbychase/osint-methodology-and-tradecraft-tips-for-winning-the-trace-labs-black-badge-from-team-federal-ebe737d70c6a", "note": "SignalHire extension to extract phone/email/linked profiles; TruePeopleSearch and US Phone Book"},
+      {"type": "writeup", "url": "https://wondersmithrae.medium.com/finding-missing-people-with-tracelabs-ctf-d5617c7cd659", "note": "Country-specific people-search tools needed for international subjects"}
+    ]
+  },
+  {
+    "name": "Prioritize high-value evidence categories once foundations are mapped",
+    "type": "pattern",
+    "summary": "Not all findings are worth the same. Day-Last-Seen photos/CCTV, recent location/geolocation, and phone history carry far more value than basic friend/employment facts. The winning move is to build the foundational network map quickly (friends, family, accounts) and then deliberately pivot toward high-value lifestyle, location, and last-seen evidence rather than continuing to grind low-value connection flags. Quality and recency beat raw volume of trivial facts once the basics are covered.",
+    "missingPersonsRelevance": "high",
+    "phase": "triage",
+    "pivotFrom": ["social-profile", "associate"],
+    "pivotTo": ["geolocation", "image", "phone", "physical-description"],
+    "platforms": ["facebook", "instagram", "tiktok"],
+    "whenToUse": "After you have the basic network mapped and need to decide where to spend remaining time.",
+    "steps": [
+      "Quickly capture foundational flags: close friends, family, known accounts.",
+      "Once network value diminishes, deliberately pivot to high-value categories.",
+      "Hunt Day-Last-Seen photos/CCTV and recent geolocation (highest points).",
+      "Document phone models/numbers and recent activity.",
+      "Extract lifestyle/physical descriptors (tattoos, vehicles, substance-use indicators) from photos."
+    ],
+    "signals": ["You are still finding new flags but each is low value", "A recent post or photo carries location or last-seen significance"],
+    "pitfalls": ["Grinding low-point friend flags after the network is mapped", "Skipping CCTV/official photos assuming law enforcement already has them"],
+    "tags": ["scoring", "prioritization", "day-last-seen", "high-value"],
+    "evidence": [
+      {"type": "writeup", "url": "https://shandyman.online/blog/on-a-mission-a-tracelabs-ctf-missing-persons-writeup/", "note": "Day-Last-Seen photos/CCTV 500 pts, phone history 450 pts; prioritize quality over quantity; do not assume LE already has public evidence"},
+      {"type": "writeup", "url": "https://jack.bio/blog/tracelabs", "note": "Timeline advancement +700 points per pre-disappearance geolocated post"}
+    ]
+  },
+  {
+    "name": "Submit steadily and pivot on a timer to avoid rabbit holes",
+    "type": "pattern",
+    "summary": "Investigators waste enormous time over-analyzing a single thread. The discipline that wins is a cadence rule: if you have not submitted a flag in ~10 minutes, stop and take a new direction. Pepper the board with valid small flags (tattoos, piercings, vehicles, substance-use indicators, Day-Last-Seen facts) without overthinking each one's significance, while respecting agreed quality standards. Consistent submission maintains momentum and forces you out of dead-end rabbit holes you would otherwise sink an hour into.",
+    "missingPersonsRelevance": "high",
+    "phase": "reporting",
+    "whenToUse": "Throughout a time-boxed investigation to maintain throughput and avoid getting stuck.",
+    "steps": [
+      "Set a personal timer; if 10 minutes pass with no submission, pivot to a new angle or subject.",
+      "Submit small valid flags as you find them rather than hoarding for a big find.",
+      "Capture Day-Last-Seen facts about final photos/locations without overanalyzing.",
+      "When a thread stalls, switch subjects or platforms instead of forcing it."
+    ],
+    "signals": ["Submissions are flowing every few minutes", "You catch yourself 15+ minutes into one thread with nothing to submit"],
+    "pitfalls": ["Sinking an hour into one rabbit hole", "Withholding small flags waiting for a perfect big one", "Monitoring the scoreboard instead of working"],
+    "tags": ["cadence", "time-management", "submissions", "discipline"],
+    "evidence": [
+      {"type": "writeup", "url": "https://medium.com/@cyberbychase/osint-methodology-and-tradecraft-tips-for-winning-the-trace-labs-black-badge-from-team-federal-ebe737d70c6a", "note": "Stop and take a new direction after 10 minutes with no findings; submit something every ~10 minutes or pivot"},
+      {"type": "writeup", "url": "https://www.intelligencewithsteve.com/post/a-guide-to-participating-in-a-trace-labs-global-osint-search-party-ctf", "note": "Pepper the submissions page with flags and do not overthink validity within agreed quality standards"}
+    ]
+  },
+  {
+    "name": "Capture full-page screenshots of every finding for the LE handoff",
+    "type": "technique",
+    "summary": "Web pages and social posts change or get deleted between when you find them and when law enforcement reviews the report. Preserve every submission with a full-page screenshot so the evidence survives. Equally important: each submission must include the discovery method and why it matters, because 'information without context is not intelligence' and judges/LE reject findings that lack explanation. Build a living flow chart of intel points (e.g. in draw.io) so connections are legible to a downstream reader.",
+    "missingPersonsRelevance": "high",
+    "phase": "reporting",
+    "pivotFrom": ["any"],
+    "pivotTo": ["document-id"],
+    "whenToUse": "For every flag you submit, throughout the investigation.",
+    "steps": [
+      "When you find a fact, take a full-page screenshot before the page can change.",
+      "Write a short note: how you found it and why it is relevant to the case.",
+      "Add the intel point to a shared flow chart / link map.",
+      "Submit with that context attached so a judge or detective can follow the chain."
+    ],
+    "signals": ["Submissions are accepted on first review", "A later-deleted post is still documented in your evidence"],
+    "pitfalls": ["Submitting a bare link with no explanation (gets rejected)", "Relying on a live URL that may 404 by review time", "Treating raw data as intelligence without context"],
+    "toolsUsed": ["Nimbus Screenshot & Screen Video Recorder", "draw.io"],
+    "tags": ["evidence-preservation", "reporting", "documentation", "context"],
+    "evidence": [
+      {"type": "writeup", "url": "https://shandyman.online/blog/on-a-mission-a-tracelabs-ctf-missing-persons-writeup/", "note": "Nimbus full-page capture because a webpage can change before LE review; judges reject submissions lacking explanation"},
+      {"type": "writeup", "url": "https://github.com/OSINTI4L/TraceLabs-CTF-MVO-Write-up-11.25", "note": "draw.io flow chart of intel points; 'information without context is not intelligence' won the MVO award"}
+    ]
+  },
+  {
+    "name": "Passive-only reconnaissance with sock puppets and no subject contact",
+    "type": "pattern",
+    "summary": "Missing-persons OSINT is strictly passive: never contact the subject or their family, never attempt password resets or account-recovery probes, and never take any action that tips off the subject or alters the situation. Conduct all research from sock-puppet accounts (pre-logged-in before you start), behind a VPN, ideally geolocated to the subject's region so local search engines and content surface correctly. Your investigation must leave no trace and create no traceable activity. This protects the family, the investigation, and you.",
+    "missingPersonsRelevance": "high",
+    "phase": "opsec",
+    "whenToUse": "Always, as the standing rules of engagement for any missing-persons investigation.",
+    "steps": [
+      "Pre-create and pre-login sock-puppet accounts on the relevant platforms before the event starts.",
+      "Connect through a VPN, positioned in the subject's region when local content matters.",
+      "Use local/regional search engines for geographically-specific subjects.",
+      "Never message, friend, or attempt recovery flows on the subject or associates.",
+      "Keep investigation activity invisible and non-traceable; know what is allowed during and after."
+    ],
+    "signals": ["No interaction with any real person tied to the case", "Local-region content surfaces correctly through a regionally-placed VPN"],
+    "pitfalls": ["Attempting a password reset to confirm an email (active, forbidden)", "Contacting family for clarification", "Logging in from a personal account and leaving a footprint", "Searching only from your own country for an overseas subject"],
+    "toolsUsed": ["VPN", "sock-puppet accounts"],
+    "tags": ["opsec", "passive-recon", "sock-puppet", "ethics", "no-contact"],
+    "evidence": [
+      {"type": "writeup", "url": "https://www.osintme.com/index.php/2021/11/14/a-noobs-guide-to-trace-labs-search-party-ctf/", "note": "Passive recon only; never password-reset or contact family; investigation must be invisible; use regional VPN/search engines"},
+      {"type": "writeup", "url": "https://shandyman.online/blog/on-a-mission-a-tracelabs-ctf-missing-persons-writeup/", "note": "Pre-login sock-puppet accounts; VPN standard; VMs unnecessary for typical CTF activity"}
+    ]
+  },
+  {
+    "name": "Tool minimalism: manual investigation over tool-feeding",
+    "type": "antipattern",
+    "summary": "A tempting wrong move is to reach for heavyweight automation (scrapers, aggregators) for every step. Experienced winners warn that if you spend 20 minutes getting data into a tool, that is 20 minutes wasted, and that custom search-engine dorks are often faster than generic username tools. Lean on a small set of high-leverage tools (username checkers, people-search, face comparison) and do the bulk of pivoting manually. Reserve automation like Spiderfoot for breadth scans, not as a substitute for reading profiles.",
+    "missingPersonsRelevance": "medium",
+    "phase": "triage",
+    "whenToUse": "When deciding whether to invest in setting up a tool versus pivoting manually.",
+    "steps": [
+      "Default to manual dorking and profile reading for the core investigation.",
+      "Use lightweight tools (username checker, people-search, face comparison) only where they clearly save time.",
+      "Reserve broad automation (e.g. Spiderfoot across many APIs) for a one-shot breadth scan, not per-step.",
+      "If a tool needs more setup time than it saves, drop it and continue manually."
+    ],
+    "signals": ["You are finding flags faster by reading profiles than configuring tools", "A quick dork beats waiting on a scraper"],
+    "pitfalls": ["Burning 20 minutes loading data into a tool for a result a manual check gives instantly", "Over-engineering the workflow with multiple tracking systems (one team abandoned Trello after an hour)"],
+    "toolsUsed": ["Spiderfoot", "username checkers", "Twint"],
+    "tags": ["tooling", "antipattern", "efficiency", "manual-osint"],
+    "evidence": [
+      {"type": "writeup", "url": "https://medium.com/@cyberbychase/osint-methodology-and-tradecraft-tips-for-winning-the-trace-labs-black-badge-from-team-federal-ebe737d70c6a", "note": "Chase barely uses tools beyond username checkers; Rae: 20 minutes feeding a tool is wasted; custom dorks faster than generic username tools"},
+      {"type": "writeup", "url": "https://www.aaroncti.com/trace-labs-august-2020/", "note": "Spiderfoot used as shared breadth-scan instance (names/usernames/emails/phones, 50+ APIs); Twint for full Twitter history"}
+    ]
+  },
+  {
+    "name": "Team workflow: divide by subject, huddle on a timer, submit individually",
+    "type": "playbook",
+    "summary": "The highest-performing teams split the subjects across members and let each person investigate deeply until they hit a wall, rather than swarming one subject or hopping around. Roles align to specialties (social media, breach data, web recon, geolocation). The team regroups in short huddles roughly every 60 minutes to share theories and redirect, but each member submits their own findings rather than funneling everything through one bottleneck person. Keep one shared comms/coordination surface (Discord/Slack) but avoid over-engineered tracking systems that slow people down.",
+    "missingPersonsRelevance": "high",
+    "phase": "intake",
+    "whenToUse": "Any multi-person investigation with several subjects and a fixed time window.",
+    "steps": [
+      "Split subjects among members; assign roles by specialty (social, breach, web, geo).",
+      "Have each member investigate their subject deeply until hitting a wall.",
+      "Run a short team huddle roughly hourly to share theories and reallocate effort.",
+      "Let each member submit their own discoveries (no single submission bottleneck).",
+      "Use one shared comms channel; avoid heavyweight tracking tools that bottleneck flow.",
+      "Take periodic breaks to stay sharp across long events."
+    ],
+    "signals": ["Members are productive in parallel with little duplicated work", "Hourly huddles redirect a stuck member to a fresh angle"],
+    "pitfalls": ["Everyone piling onto one subject", "Centralizing all submissions through one person (bottleneck)", "Over-engineering with Trello/Sheets that slow people down", "Skipping huddles so the team drifts onto dead ends"],
+    "toolsUsed": ["Discord", "Slack"],
+    "tags": ["teamwork", "coordination", "workflow", "division-of-labor"],
+    "evidence": [
+      {"type": "writeup", "url": "https://shandyman.online/blog/on-a-mission-a-tracelabs-ctf-missing-persons-writeup/", "note": "Divide 8 MPs; team huddles every 60 minutes; individual submission beats central bottleneck; abandoned Trello after an hour"},
+      {"type": "writeup", "url": "https://www.aaroncti.com/trace-labs-august-2020/", "note": "Discord voice + link/image sharing for collaborative decisions"},
+      {"type": "writeup", "url": "https://jack.bio/blog/tracelabs", "note": "Division of labor by missing person with central cross-verification"}
+    ]
+  },
+  {
+    "name": "Use OSINT frameworks and flowcharts to know your next pivot",
+    "type": "technique",
+    "summary": "When you have a data point and are unsure what to do with it next, structured pivot maps tell you the available next moves. Beginners and experienced analysts alike use the OSINT Framework site and Michael Bazzell's OSINT flowcharts to see, for a given selector (email, username, phone, image), which tools and pivots apply. This prevents tunnel vision and surfaces pivot paths you would not have remembered under time pressure.",
+    "missingPersonsRelevance": "medium",
+    "phase": "pivot",
+    "pivotFrom": ["any"],
+    "pivotTo": ["any"],
+    "whenToUse": "When you hold a selector and are unsure which pivot or tool applies next.",
+    "steps": [
+      "Identify the selector you currently hold (email, username, phone, image, name).",
+      "Open the OSINT Framework or a Bazzell flowchart for that selector type.",
+      "Pick the next pivot/tool indicated and execute it.",
+      "Repeat as each pivot yields a new selector."
+    ],
+    "signals": ["The framework reveals a pivot path you had not considered", "A flowchart turns a dead-end selector into a new lead"],
+    "pitfalls": ["Tunnel vision on one pivot and missing obvious alternatives", "Treating the framework as exhaustive rather than a prompt"],
+    "toolsUsed": ["OSINT Framework (osintframework.com)", "Michael Bazzell OSINT flowcharts"],
+    "tags": ["frameworks", "pivot-map", "methodology"],
+    "evidence": [
+      {"type": "writeup", "url": "https://wondersmithrae.medium.com/finding-missing-people-with-tracelabs-ctf-d5617c7cd659", "note": "OSINT Framework illustrates how to pivot from gathered info; Bazzell flowcharts give systematic pathways"}
+    ]
+  }
+]

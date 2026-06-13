@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://osint-tools/library/schema/tool.schema.json",
+  "title": "OSINT Tool Skill",
+  "description": "Frontmatter schema for a single tool skill (.md). See schema/taxonomy.md for enum meanings.",
+  "type": "object",
+  "required": ["id", "name", "url", "category", "description", "trust", "pricing", "missingPersonsRelevance", "bestInteractionPattern"],
+  "additionalProperties": true,
+  "definitions": {
+    "selector": {
+      "type": "string",
+      "enum": ["name", "username", "email", "phone", "image", "face", "geolocation", "address", "ip-address", "mac-address", "domain", "social-profile", "vehicle-plate", "vin", "employer-org", "associate", "dob", "physical-description", "document-id", "crypto-wallet", "device-id", "metadata-exif"]
+    }
+  },
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$", "description": "kebab-case unique slug; filename is <id>.md" },
+    "name": { "type": "string", "description": "human-readable tool name; also the skill name" },
+    "description": { "type": "string", "description": "skill description: 'Use when ...' style, one line" },
+    "url": { "type": "string", "format": "uri" },
+    "category": { "type": "string", "description": "top-level category id from taxonomy.md" },
+    "path": { "type": "array", "items": { "type": "string" }, "description": "full breadcrumb of folder ids from category to leaf" },
+    "bestFor": { "type": "string" },
+    "input": { "type": "string", "description": "free-text input description (legacy/human)" },
+    "output": { "type": "string" },
+    "selectorsIn": { "type": "array", "items": { "$ref": "#/definitions/selector" } },
+    "selectorsOut": { "type": "array", "items": { "$ref": "#/definitions/selector" } },
+    "status": { "type": "string", "enum": ["live", "degraded", "down", "deprecated", "unknown"], "default": "unknown" },
+    "pricing": { "type": "string", "enum": ["free", "freemium"], "description": "paid-only is excluded from the library" },
+    "costNote": { "type": "string", "description": "what is free vs gated for freemium tools" },
+    "opsec": { "type": "string", "enum": ["passive", "active", "unknown"], "description": "passive = no contact with target infra; active = touches target" },
+    "opsecNote": { "type": "string" },
+    "humanInLoop": { "type": "boolean", "default": false },
+    "humanInLoopReason": { "type": "array", "items": { "type": "string", "enum": ["captcha", "account-login", "manual-review", "api-key", "payment-wall-partial", "rate-limit", "legal-gate"] } },
+    "bestInteractionPattern": { "type": "string", "enum": ["cli", "chrome-mcp", "web-manual", "api", "python-lib", "desktop-app", "docker", "mobile-app", "browser-extension"] },
+    "trust": { "type": "string", "enum": ["trusted", "community", "personal", "unverified", "untrustworthy"] },
+    "trustNote": { "type": "string" },
+    "missingPersonsRelevance": { "type": "string", "enum": ["high", "medium", "low"] },
+    "coverage": { "type": "array", "items": { "type": "string" }, "description": "geographic scope; see taxonomy.md" },
+    "auth": { "type": "string", "enum": ["none", "account", "api-key", "invite"], "default": "none" },
+    "api": { "type": "boolean", "default": false },
+    "localInstall": { "type": "boolean", "default": false },
+    "registration": { "type": "boolean", "default": false },
+    "invitationOnly": { "type": "boolean", "default": false },
+    "deprecated": { "type": "boolean", "default": false },
+    "relatedTools": { "type": "array", "items": { "type": "string" }, "description": "tool ids that overlap or pair well (the 'do both' set)" },
+    "aliases": { "type": "array", "items": { "type": "string" }, "description": "alternate names, for dedup" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "source": { "type": "string", "description": "sources.json id where this was found (provenance)" },
+    "lastVerified": { "type": "string", "description": "ISO date the URL/behavior was last confirmed" },
+    "enrichment": { "type": "string", "enum": ["stub", "full"], "default": "stub", "description": "stub = seeded from arf, body not yet authored; full = authored skill" }
+  }
+}

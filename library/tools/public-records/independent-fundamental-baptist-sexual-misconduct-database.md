@@ -1,0 +1,44 @@
+---
+id: independent-fundamental-baptist-sexual-misconduct-database
+name: Independent fundamental Baptist sexual misconduct database
+description: 'OSINT tool: Independent fundamental Baptist sexual misconduct database.'
+url: https://datawrapper.dwcdn.net/UyECh/20/
+category: public-records
+path:
+- public-records
+bestFor: ''
+selectorsIn: []
+selectorsOut: []
+status: unknown
+pricing: freemium
+opsec: passive
+opsecNote: ''
+humanInLoop: false
+humanInLoopReason: []
+bestInteractionPattern: web-manual
+trust: community
+trustNote: ''
+missingPersonsRelevance: high
+coverage: []
+auth: none
+api: false
+localInstall: false
+registration: false
+aliases: []
+tags: []
+source: osint4all
+lastVerified: ''
+enrichment: stub
+---
+
+# Independent fundamental Baptist sexual misconduct database
+
+> OSINT tool: Independent fundamental Baptist sexual misconduct database.
+
+- **URL:** https://datawrapper.dwcdn.net/UyECh/20/
+- **Best for:** —
+- **Source:** harvested from `osint4all`
+
+
+
+_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._

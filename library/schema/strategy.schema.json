@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://osint-tools/library/schema/strategy.schema.json",
+  "title": "OSINT Strategy Skill",
+  "description": "Frontmatter schema for a single strategy skill (.md). See schema/taxonomy.md for enum meanings.",
+  "type": "object",
+  "required": ["id", "name", "type", "description", "summary", "missingPersonsRelevance"],
+  "additionalProperties": true,
+  "definitions": {
+    "selector": {
+      "type": "string",
+      "enum": ["name", "username", "email", "phone", "image", "face", "geolocation", "address", "ip-address", "mac-address", "domain", "social-profile", "vehicle-plate", "vin", "employer-org", "associate", "dob", "physical-description", "document-id", "crypto-wallet", "device-id", "metadata-exif", "any"]
+    }
+  },
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "name": { "type": "string" },
+    "description": { "type": "string", "description": "skill description: 'Use when ...' style, one line" },
+    "type": { "type": "string", "enum": ["pattern", "antipattern", "technique", "case-study", "playbook", "pivot"] },
+    "phase": { "type": "string", "enum": ["intake", "triage", "pivot", "enrichment", "verification", "reporting", "opsec"] },
+    "pivotFrom": { "type": "array", "items": { "$ref": "#/definitions/selector" } },
+    "pivotTo": { "type": "array", "items": { "$ref": "#/definitions/selector" } },
+    "platforms": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string", "description": "one-paragraph what-and-why" },
+    "whenToUse": { "type": "string" },
+    "steps": { "type": "array", "items": { "type": "string" } },
+    "signals": { "type": "array", "items": { "type": "string" }, "description": "indicators the move is working / what to look for" },
+    "pitfalls": { "type": "array", "items": { "type": "string" } },
+    "toolsUsed": { "type": "array", "items": { "type": "string" }, "description": "tool ids referenced (cross-link to Tools tree)" },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string", "enum": ["ctf-writeup", "case", "article", "thread", "video", "other"] },
+          "url": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      },
+      "description": "citations: CTF writeups, solved cases, articles"
+    },
+    "trust": { "type": "string", "enum": ["trusted", "community", "personal", "unverified", "untrustworthy"] },
+    "missingPersonsRelevance": { "type": "string", "enum": ["high", "medium", "low"] },
+    "relatedStrategies": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "source": { "type": "string" }
+  }
+}
