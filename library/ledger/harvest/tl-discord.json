@@ -1,0 +1,4 @@
+[
+ {"name":"DEFCON Database","url":"https://defcondatabase.com","category":"training-ctf","description":"Searchable database of DEFCON talks/resources (shared in TL #library-submissions).","missingPersonsRelevance":"low","trust":"community","pricing":"free","tags":["tl-discord"]},
+ {"name":"Gralhix OSINT Exercises","url":"https://gralhix.com/list-of-osint-exercises","category":"training-ctf","description":"Sofia Santos' curated list of hands-on OSINT exercises incl. geolocation/verification drills (shared in TL #library-submissions).","missingPersonsRelevance":"medium","trust":"community","pricing":"free","tags":["tl-discord","strategy"]}
+]

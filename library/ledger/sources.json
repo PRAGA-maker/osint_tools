@@ -143,10 +143,10 @@
       "tree": "both",
       "kind": "discord",
       "url": "https://discord.com/channels/808030986276569118",
-      "status": "partial",
-      "itemsFound": 0,
+      "status": "blocked",
+      "itemsFound": 2,
       "lastCrawled": "2026-06-13",
-      "notes": "Channel map captured (tools-and-websites, tools-n-tech, tl-writeups, learning-osint, general-osint, library-submissions). Message scrape blocked by Discord SPA freezing CDP eval \u2014 retry per-channel in a fresh tab."
+      "notes": "Channel map captured (tools-and-websites, tools-n-tech, tl-writeups, learning-osint, general-osint, library-submissions, training, IDs in transcript). Visible-message reads work but yield little; DEEP scrape blocked: DOM scroll freezes Discord's CDP eval, and the authenticated-API approach TRIGGERED A FORCED LOGOUT (anti-self-bot). Do NOT retry API automation \u2014 account-ban risk. Net: 2 resources (defcondatabase, gralhix exercises). A ToS-safe full export needs Discord's official Data Request or an admin-run export."
     },
     {
       "id": "kimi-swarm",
@@ -233,9 +233,9 @@
       "tree": "tools",
       "kind": "github-list",
       "url": "https://github.com/cipher387/osint_stuff_tool_collection",
-      "status": "queued",
-      "itemsFound": 0,
-      "lastCrawled": "",
+      "status": "exhausted",
+      "itemsFound": 1115,
+      "lastCrawled": "2026-06-13",
       "notes": "cyb_detective's large tool collection (frontier)."
     },
     {
@@ -264,7 +264,7 @@
       "kind": "website",
       "url": "https://inteltechniques.com/tools/",
       "status": "partial",
-      "itemsFound": 0,
+      "itemsFound": 57,
       "lastCrawled": "2026-06-13",
       "notes": "Michael Bazzell's free online tool set (frontier)."
     },
@@ -273,8 +273,8 @@
       "tree": "tools",
       "kind": "website",
       "url": "https://www.uk-osint.net/",
-      "status": "partial",
-      "itemsFound": 0,
+      "status": "exhausted",
+      "itemsFound": 1362,
       "lastCrawled": "2026-06-13",
       "notes": "UK-focused OSINT resource hub (frontier)."
     },
