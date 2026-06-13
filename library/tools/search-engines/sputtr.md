@@ -1,0 +1,47 @@
+---
+id: sputtr
+name: Sputtr
+description: 'OSINT tool: Sputtr.'
+url: https://www.sputtr.com
+category: search-engines
+path:
+- search-engines
+bestFor: ''
+selectorsIn:
+- name
+selectorsOut:
+- social-profile
+status: unknown
+pricing: free
+opsec: unknown
+opsecNote: ''
+humanInLoop: false
+humanInLoopReason: []
+bestInteractionPattern: web-manual
+trust: unverified
+trustNote: ''
+missingPersonsRelevance: medium
+coverage: []
+auth: none
+api: false
+localInstall: false
+registration: false
+aliases: []
+tags:
+- meta-search
+source: metaosint
+lastVerified: ''
+enrichment: stub
+---
+
+# Sputtr
+
+> OSINT tool: Sputtr.
+
+- **URL:** https://www.sputtr.com
+- **Best for:** —
+- **Source:** harvested from `metaosint`
+
+MetaOSINT category: Web Search Engines / Meta Search Engines; recommended by 5 curated OSINT source list(s).
+
+_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._

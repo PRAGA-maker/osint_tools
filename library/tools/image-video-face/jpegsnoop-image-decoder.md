@@ -1,0 +1,52 @@
+---
+id: jpegsnoop-image-decoder
+name: JPEGsnoop Image Decoder
+description: Exif tool designed to extract data from images in almost any format
+url: http://download.cnet.com/JPEGsnoop/3000-12511_4-10920311.html
+category: image-video-face
+path:
+- image-video-face
+bestFor: ''
+selectorsIn:
+- image
+- face
+selectorsOut:
+- image
+- social-profile
+status: unknown
+pricing: free
+opsec: passive
+opsecNote: ''
+humanInLoop: false
+humanInLoopReason: []
+bestInteractionPattern: web-manual
+trust: unverified
+trustNote: ''
+missingPersonsRelevance: high
+coverage:
+- global
+auth: none
+api: false
+localInstall: false
+registration: false
+aliases: []
+tags:
+- toddington
+- curated-directory
+- image-video-multimedia-search
+source: toddington-resources
+lastVerified: ''
+enrichment: full
+---
+
+# JPEGsnoop Image Decoder
+
+> Exif tool designed to extract data from images in almost any format
+
+- **URL:** http://download.cnet.com/JPEGsnoop/3000-12511_4-10920311.html
+- **Best for:** —
+- **Source:** harvested from `toddington-resources`
+
+Harvested from Toddington International free OSINT resources directory (category: Image, Video & Multimedia Search). Curated third-party tool reviewed by TII; availability and pricing not independently verified.
+
+_Enrichment: full. If stub, complete per `schema/templates/tool.template.md`._

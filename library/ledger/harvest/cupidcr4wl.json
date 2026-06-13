@@ -1,0 +1,32 @@
+[
+  {
+    "name": "cupidcr4wl",
+    "url": "https://github.com/OSINTI4L/cupidcr4wl",
+    "description": "Open-source CLI tool that searches for a username or phone number across ~170 adult-content platforms (payment/gifting, social link-aggregators, dating/hook-up, fetish, adult video/photo, camming, and escort directories). Built explicitly to assist missing-persons investigations and human-trafficking concerns. Supports single and batch inputs (comma-separated), HTML export of results, a debug mode for validating false positives/negatives, and listing of available sites by type.",
+    "category": "username",
+    "bestFor": "Resolving a known username or phone number to profiles on adult/sex-work platforms during missing-persons and trafficking investigations; surfacing link-aggregator pages that pivot to further accounts.",
+    "pricing": "free",
+    "selectorsIn": ["username", "phone"],
+    "selectorsOut": ["social-profile", "username", "phone"],
+    "opsec": "Runs locally; rotates user agents (user_agents.txt) to reduce blocking. Queries adult/escort sites directly, so use a controlled/attributable-only environment and be mindful of jurisdictional and ethical constraints. No central server collects queries. Direct connections to target sites are made from the investigator's host unless proxied.",
+    "bestInteractionPattern": "cli",
+    "trust": "Open-source on GitHub (v2.1, ~74 commits), single maintainer (OSINTI4L), purpose-built for LE/missing-persons use with documented LE reporting resources and contributing guidelines.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "Cash App", "Venmo", "Buy Me A Coffee", "Linktree", "Milkshake", "Get All My Links", "All My Links", "Bybio",
+      "Snapchat", "Telegram", "Tumblr", "DeviantArt", "Wattpad", "Fur Affinity", "Fancentro", "Clapper App",
+      "Tinder", "Fab Swingers", "Swapfinder", "Date-Fans", "Tagged", "FriendFinder-X", "BDSM Singles", "Find A Femdom", "Inmate Classified", "Women Behind Bars", "Inmate Passions",
+      "Tasty Slips", "SoMyMy", "UBIUSB", "Fetish Finder", "Feet Finder", "Sinful Feet", "Foot Fetish Beauties",
+      "Fapello", "Leaked Zone", "XXXfollow", "WatchMyGF", "VR PORN", "BaDoink VR", "Wankz VR", "SexLikeReal", "Babepedia", "Tranny Videosx", "Pornzog", "Tube Galore", "Shesfreaky", "Playboy App", "RealGfPorn", "BabesDirectory", "Boobpedia", "Fansify", "Pornhub", "XVIDEOS", "XVIDEOS Red", "Redtube", "XNXX", "XHAMSTER", "Motherless", "RedGIFs", "Sheer", "JustFor.Fans", "YouPorn", "FrolicMe", "Fanvue", "AdmireMe.VIP", "Tube8", "Raw White Meat", "My POV Fam", "Pervert POV", "Sluts Around Town", "Passions Only", "MiLFUCKD", "Clip Page", "Faphouse", "TNAFlix", "Virtual Taboo", "Tik.Porn", "PornMD", "Yuvutu", "Adultism",
+      "Cams Reviews", "Kink Live", "Chaturbate", "Webcam-Archiver", "Masturbate and Chill", "Jerkmate", "Camlust", "Xpanded", "MyFreeCams", "Babestation Cams", "ChatMate", "CamSoda", "CamWithHer", "Xcams", "Xlovecam", "Soul Cams", "XV Cams", "CamSextacy",
+      "Rent.Love", "ts4rent", "Mynt Models", "TS-Dating", "Mccoys Guide", "Naughty Ads", "Cowboys4Angels", "Models-World", "Eros Escorts", "Grazia", "Perla Di Mare", "Ava Escorts", "Private Delights", "The Erotic Review", "Rent.Men", "HOT", "Eros.com", "tryst.link", "5escorts", "Sweet Passion Escort", "Open Adult Directory", "International Fetish Escort", "Exotic RW", "Exotic Mali", "Exotic Malawi", "Exotic Ethiopia", "Exotic Botswana", "Blue Label Escort", "Felines Escort", "Aphrodite Agency", "Society Service", "SouthernGFE", "1Baiser", "Figgmi", "Telaviv-Escort", "Austin Escort Models", "Dallas Escort State", "What Happens In Vegas Stays", "Party Girls LV", "Vegas Girls Gone Wild", "Florida Escort Models", "EscortHub", "Dior Escorts", "Cheshire Companions", "Candy Shop Escorts", "Scarlet Blue", "New Zealand Girls", "Adult Look", "KittyAds", "Exotic-Africa",
+      "Escort Babylon", "Escort Directory", "The Other Board"
+    ],
+    "api": false,
+    "localInstall": true,
+    "registration": false,
+    "aliases": ["cupidcrawl", "OSINTI4L/cupidcr4wl"],
+    "tags": ["adult-platforms", "sex-work", "human-trafficking", "missing-persons", "username-search", "phone-search", "python", "cli", "open-source", "link-aggregator-pivot"],
+    "notes": "Requires Python 3.6+ with `requests` and `rich`. CLI flags: -h help, -p phone search, -u username search, --export-results (HTML), --debug, --username-sites, --phone-number-sites. Coverage list derived from the repo's usernames.json (~166 sites across 7 categories) and phonenumbers.json (6 escort sites). The ~170 individual platforms are search TARGETS, not standalone OSINT tools, so they are recorded here as coverage rather than as separate candidates. Several coverage entries are notable OSINT pivots in their own right: Linktree, AllMyLinks, Get All My Links, Bybio, Milkshake (bio link aggregators) and Babepedia/Boobpedia (searchable performer wikis). Repo includes .github/LEReportingResources.md and CONTRIBUTING.md."
+  }
+]

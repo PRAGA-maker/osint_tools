@@ -24,3 +24,9 @@ Format per entry: `- [STATUS] direction — why it's promising — where noticed
 - [NEW] Many start.me boards 403 WebFetch but have an official GitHub mirror whose raw README is a complete dump (osint4all.github.io). Pattern: look for a repo mirror before giving up on a board. — osint4all
 - [NEW] Google CSE (cse.google.com) links rot over time; flag for periodic re-validation. — osint4all
 - [RETRY] cybertraining.uk/finding-the-lost (404) and Shandyman 'Leveraging AI in OSINT' (Cloudflare 526) were unreachable; retry later. — searchparty-writeups
+
+## Wave 2 + Kimi + Discord (2026-06-13)
+- [DONE] Kimi swarm (4 angles: face-search, TikTok/Snap, Telegram, geo/chronolocation) surfaced 12 net-new CURRENT tools (geospy.ai, picarta.ai, lenso.ai, reversely.ai, epieos, telemetr.io, lyzem, geogramint, telepathy, telerecon, snapintel, whereisthisplace). Kimi free-tier facts captured in skill metadata.
+- [PARTIAL] TL Discord: channel map captured; richest channels to scrape next = #tools-n-tech (901641655466197034), #general-osint (896091275097427968), #tl-writeups (1402014518111899688), #library-submissions. Discord SPA froze CDP eval — do per-channel in a fresh tab with scroll-to-load.
+- [NEW] Toddington & MetaOSINT are huge directories (1899 + 719 new) — many low-MP long-tail entries; flag for an MP-relevance re-scoring pass.
+- [RETRY] cupidcr4wl harvest returned 0 (blocked) — re-fetch raw repo.

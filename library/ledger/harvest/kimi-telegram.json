@@ -1,0 +1,221 @@
+[
+ {
+  "name": "Telegram Finder (telegram-finder.io)",
+  "url": "https://telegram-finder.io",
+  "category": "messaging",
+  "description": "Resolve usernames/phones to Telegram presence and find related groups.",
+  "selectorsIn": [
+   "username",
+   "phone"
+  ],
+  "selectorsOut": [
+   "social-profile",
+   "associate"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": true,
+  "humanInLoopReason": [
+   "payment-wall-partial"
+  ],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Epieos",
+  "url": "https://epieos.com",
+  "category": "email",
+  "description": "Reverse email/phone lookup revealing linked Google/Telegram and other accounts.",
+  "selectorsIn": [
+   "email",
+   "phone"
+  ],
+  "selectorsOut": [
+   "social-profile",
+   "name"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "TGStat",
+  "url": "https://tgstat.com",
+  "category": "messaging",
+  "description": "Telegram channel/group search and analytics directory.",
+  "selectorsIn": [
+   "username"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Telemetr.io",
+  "url": "https://telemetr.io",
+  "category": "messaging",
+  "description": "Telegram channel analytics & search.",
+  "selectorsIn": [
+   "username"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": true,
+  "humanInLoopReason": [
+   "payment-wall-partial"
+  ],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Lyzem",
+  "url": "https://lyzem.com",
+  "category": "messaging",
+  "description": "Search engine for public Telegram messages, channels and groups.",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Geogramint",
+  "url": "https://github.com/Alb-310/Geogramint",
+  "category": "messaging",
+  "description": "Telegram geo-OSINT: finds nearby users/groups via the People Nearby feature.",
+  "selectorsIn": [
+   "geolocation"
+  ],
+  "selectorsOut": [
+   "social-profile",
+   "associate"
+  ],
+  "bestInteractionPattern": "cli",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Telepathy",
+  "url": "https://github.com/jordanwildon/Telepathy",
+  "category": "messaging",
+  "description": "Telegram CLI toolkit for archiving/analyzing channels & members.",
+  "selectorsIn": [
+   "social-profile"
+  ],
+  "selectorsOut": [
+   "associate"
+  ],
+  "bestInteractionPattern": "cli",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Telerecon",
+  "url": "https://github.com/sockysec/Telerecon",
+  "category": "messaging",
+  "description": "Recon framework to scrape/analyze a Telegram user's footprint and network.",
+  "selectorsIn": [
+   "username"
+  ],
+  "selectorsOut": [
+   "associate",
+   "social-profile"
+  ],
+  "bestInteractionPattern": "cli",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ }
+]

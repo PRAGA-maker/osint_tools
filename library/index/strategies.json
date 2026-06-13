@@ -55,6 +55,64 @@
     "_file": "library/strategies/case-studies/911-call-and-audio-release-as-viral-social-amplification.md"
   },
   {
+    "id": "automation-without-verification",
+    "name": "antipattern-automation-without-verification",
+    "description": "Use as a guardrail whenever you act on tool output — a username checker, scraper, or aggregator returns LEADS, and trusting them without opening the actual source imports the tool's false positives into your case.",
+    "type": "antipattern",
+    "phase": "verification",
+    "pivotFrom": [
+      "any"
+    ],
+    "pivotTo": [
+      "any"
+    ],
+    "summary": "Automation-without-verification is treating a tool's output as a finding instead of a lead. Username checkers, scrapers, breach-lookups, and aggregators produce hits fast — and a meaningful fraction of them are false positives, stale, or about a different person. If you pipe that output straight into the report or the next pivot without eyeballing the actual source, you inherit every error the tool made, at machine speed. In missing-persons work this is how a coincidental handle match, a same-name aggregator card, or a dead profile becomes a \"confirmed account\" — automation amplifies the mistake instead of catching it.",
+    "missingPersonsRelevance": "high",
+    "whenToUse": "Every time a tool returns a result you're about to report, link, or pivot from — before you act on it.",
+    "steps": [
+      "Treat every tool hit as UNVERIFIED — enumeration and lookup produce leads, not confirmations.",
+      "Open the actual source — load the profile/page the tool pointed to and read it yourself.",
+      "Match it to the source of truth — same face, same interests, same circle as your seed data — before attributing it to the subject.",
+      "Discard false positives explicitly — a hit that doesn't corroborate is noise, not a quiet maybe.",
+      "Record the manual verification (what you checked) so a reviewer sees the hit was eyeballed, not trusted blindly."
+    ],
+    "signals": [
+      "Every tool hit in your report was opened and matched to the subject by hand before you trusted it.",
+      "You dropped checker hits that turned out to be a different person on inspection."
+    ],
+    "pitfalls": [
+      "Reporting a username checker's hits as the subject's accounts without opening any of them.",
+      "Trusting an aggregator card or breach result because the tool returned it (see over-trusting people-search).",
+      "Acting on a face-comparison score alone for a low-quality/angled photo with no human sanity check.",
+      "Confusing a long list of hits with progress — volume of leads is not validated identity."
+    ],
+    "toolsUsed": [
+      "Sherlock",
+      "WhatsMyName",
+      "Spiderfoot"
+    ],
+    "evidence": [],
+    "trust": "trusted",
+    "relatedStrategies": [
+      "enumeration-is-not-validation",
+      {
+        "Tool minimalism": "manual investigation over tool-feeding"
+      },
+      "antipattern-over-trusting-people-search-aggregators",
+      "antipattern-forcing-the-match",
+      "phase-verification"
+    ],
+    "tags": [
+      "automation",
+      "tooling",
+      "verification",
+      "false-positive",
+      "cognitive"
+    ],
+    "source": "",
+    "_file": "library/strategies/antipatterns/automation-without-verification.md"
+  },
+  {
     "id": "behaviorally-targeted-authentic-content-over-threat-framing",
     "name": "Behaviorally-targeted authentic content over threat-framing",
     "description": "Use when When crafting public appeals or content meant to elicit tips from people close to a subject or suspect.",
@@ -105,6 +163,78 @@
     "trust": "community",
     "source": "uncovered-missing",
     "_file": "library/strategies/pivots/associate/associate/behaviorally-targeted-authentic-content-over-threat-framing.md"
+  },
+  {
+    "id": "brandon-lawson-convergence-of-independent-lanes",
+    "name": "Convergence case: stacking five independent lanes to break a stalled disappearance",
+    "description": "Use on a stalled or thin-selector case where no single lead is conclusive and you can run parallel lanes, looking for the point where two independent lanes corroborate.",
+    "type": "case-study",
+    "summary": "In the Brandon Lawson case, resolution is attributed not to one clever pivot but to the convergence of five independent contributor lanes: family persistence (independent ground searches and records pursuit begun within 24 hours, ahead of the official report), volunteer data management (a noisy raw cellular-records dump normalized into a structured, geocoded spreadsheet with tower coordinates that collapsed a wide area into a bounded search box), social/media amplification (a public 911-call release that went viral and was sustained for years by a YouTube creator and true-crime podcasts), professional investigation experience (a PI liaison plus drone imagery yielding 1000+ high-resolution photos), and coordinated systematic ground searches (lane-pattern teams). Evidence was recovered roughly nine years later at the convergence of these lanes. The transferable playbook: do not bet the case on a single pivot - run parallel lanes (digital footprint, geospatial/records, amplification, expert/records, physical/ground) against one shared structured record, and act where two independent lanes point at the same place.",
+    "missingPersonsRelevance": "high",
+    "phase": "enrichment",
+    "pivotFrom": [
+      "any"
+    ],
+    "pivotTo": [
+      "geolocation",
+      "associate",
+      "address",
+      "metadata-exif"
+    ],
+    "platforms": [
+      "youtube",
+      "facebook"
+    ],
+    "steps": [
+      "Begin preserving leads immediately - do not wait for an official case number; snapshot volatile social posts and start a records track in the first hours.",
+      "Open parallel lanes - digital footprint, geospatial/records, amplification, expert/PI/records liaison, and physical/ground search.",
+      "Assign structured data ownership so raw, jumbled leads (e.g. cellular records) become a normalized, geocoded, auditable record.",
+      "Use a compelling primary artifact (here, the 911 call) to amplify and recruit more analysts/witnesses into the lanes.",
+      "Watch for cross-lane corroboration - the point where two independent lanes (e.g. tower-ping cluster + drone imagery + ground search) converge on one area.",
+      "Act on the convergence, not on any single lane in isolation."
+    ],
+    "signals": [
+      "Two independent lanes point at the same location or associate.",
+      "Normalizing a noisy dataset collapses a wide area into a defined search box that overlaps another lane's lead."
+    ],
+    "pitfalls": [
+      "Betting everything on one pivot and stalling when it dead-ends.",
+      "Running lanes in isolation without a shared structured record, so corroboration is never spotted.",
+      "Working from raw jumbled records without normalizing, producing errors and losing chain-of-custody.",
+      "Waiting for official channels and losing volatile social evidence in the earliest hours."
+    ],
+    "toolsUsed": [
+      "spreadsheet (Excel)",
+      "drone imagery",
+      "YouTube",
+      "podcast distribution"
+    ],
+    "tags": [
+      "convergence",
+      "multi-lane",
+      "corroboration",
+      "stalled-case",
+      "collective-impact"
+    ],
+    "evidence": [
+      {
+        "type": "case",
+        "url": "https://uncovered.com/the-power-of-collective-impact-brandon-lawson-case-study/",
+        "note": "Convergence of family persistence, volunteer data management (structured cell records + tower coordinates), media/social amplification (viral 911 release, YouTube, podcasts), PI experience (drone, 1000+ photos), and coordinated ground searches led to evidence recovery ~9 years later."
+      }
+    ],
+    "trust": "community",
+    "source": "uncovered-missing",
+    "relatedStrategies": [
+      {
+        "Convergence model": "stack independent contributor lanes"
+      },
+      "Structured cell-records reconstruction to narrow search geography",
+      "Family-first rapid action before official report filing",
+      "911-call-and-audio-release-as-viral-social-amplification",
+      "antipattern-tunnel-vision"
+    ],
+    "_file": "library/strategies/case-studies/brandon-lawson-convergence-of-independent-lanes.md"
   },
   {
     "id": "build-clean-sock-puppet-accounts-that-look-normal",
@@ -770,6 +900,75 @@
     "_file": "library/strategies/patterns/cross-reference-multiple-media-against-each-other-and-known-locations-to-bound-the-search.md"
   },
   {
+    "id": "cupidcr4wl-trafficking-platform-sweep",
+    "name": "Trafficking-risk case: sweep username and phone across adult/dating/escort platforms with a stop-and-report tripwire",
+    "description": "Use when an adult or older-teen subject's mainstream profiles are stale and there are trafficking/exploitation indicators, and you need the live footprint mainstream username tools never check.",
+    "type": "case-study",
+    "summary": "cupidcr4wl is a username/phone enumeration tool built specifically for missing-persons cases touching dating, adult video/photo, and human-trafficking concerns, on the premise that people in trafficking situations or who have run often keep ACTIVE accounts on these platforms even after their mainstream profiles go dark. The worked method: take confirmed usernames and phone numbers, sweep them (with spelling variations, since platforms structure handles differently) across seven categories mainstream tools skip - payment/gifting, social, dating/hookup, fetish, adult video/photo, camming, and escort directories - and export hits to a self-contained HTML report for documentation. A hit on these platforms can be the only live digital footprint and a fresh geolocation source. The tool ships an explicit safety tripwire: if you find suspected illegal content (CSAM/trafficking), STOP investigating and use the bundled law-enforcement reporting resources, operating within your jurisdiction. The lesson: do not skip these platforms out of discomfort, run username AND phone with variants, preserve every hit, and pre-commit to halt-and-report on illegal content.",
+    "missingPersonsRelevance": "high",
+    "phase": "pivot",
+    "pivotFrom": [
+      "username",
+      "phone"
+    ],
+    "pivotTo": [
+      "social-profile",
+      "image",
+      "geolocation"
+    ],
+    "platforms": [
+      "dating-sites",
+      "escort-directories",
+      "camming-sites",
+      "adult-platforms"
+    ],
+    "steps": [
+      "Gather confirmed usernames and phone numbers for the subject (validated against the source of truth, not raw tool hits).",
+      "Sweep them - with spelling variations, because platforms structure handles differently - across the seven cupidcr4wl categories mainstream username tools skip.",
+      "Export hits to a self-contained HTML report (--export-results) so the live finding survives takedown.",
+      "If a hit shows recent activity or imagery, treat it as a live lead and a potential geolocation source, and verify it against the subject before trusting it.",
+      "If you encounter suspected illegal content (CSAM/trafficking), STOP active investigation, record only what is needed to report, and escalate via the law-enforcement reporting resources within your jurisdiction."
+    ],
+    "signals": [
+      "A username or phone returns an active account on a dating/adult/escort platform.",
+      "Recent photos or location hints appear on a platform the mainstream profiles did not show."
+    ],
+    "pitfalls": [
+      "Skipping these platforms out of discomfort and missing the only live footprint.",
+      "Running only the canonical handle spelling and missing variant forms.",
+      "Continuing to dig on illegal content instead of stopping and reporting it.",
+      "Treating a checker hit as the subject without verifying, or ignoring jurisdictional/legal limits."
+    ],
+    "toolsUsed": [
+      "cupidcr4wl"
+    ],
+    "tags": [
+      "trafficking",
+      "adult-platforms",
+      "phone-pivot",
+      "username-pivot",
+      "safety",
+      "evidence-preservation"
+    ],
+    "evidence": [
+      {
+        "type": "other",
+        "url": "https://github.com/OSINTI4L/cupidcr4wl",
+        "note": "Built for missing-persons cases involving dating/adult platforms and trafficking concerns; 7 platform categories; run usernames in variations; --export-results writes hits to cc_results.html; bundled law-enforcement reporting resources for suspected illegal content."
+      }
+    ],
+    "trust": "community",
+    "source": "osinti4l-user",
+    "relatedStrategies": [
+      "Check adult/dating/escort platforms in trafficking-risk missing-persons cases",
+      "Username variation sweep across platforms to catch non-canonical handles",
+      "Stop and report, do not investigate, when you find illegal content",
+      "Export and preserve findings as you go for documentation and handoff",
+      "antipattern-automation-without-verification"
+    ],
+    "_file": "library/strategies/case-studies/cupidcr4wl-trafficking-platform-sweep.md"
+  },
+  {
     "id": "desktop-research-and-public-records-foundation",
     "name": "Desktop-research and public-records foundation",
     "description": "Use when When building the corroborating records layer beneath social-media leads.",
@@ -962,6 +1161,59 @@
     "_file": "library/strategies/patterns/document-the-workflow-as-a-flowchart-information-without-context-is-not-intelligence.md"
   },
   {
+    "id": "doxxing-collateral-people",
+    "name": "antipattern-doxxing-collateral-people",
+    "description": "Use as a guardrail before you collect or report on anyone who isn't the subject — exposing uninvolved family, friends, and associates causes real harm, and \"legal\" does not make it right.",
+    "type": "antipattern",
+    "phase": "reporting",
+    "pivotFrom": [
+      "associate",
+      "any"
+    ],
+    "pivotTo": [],
+    "summary": "Doxxing collateral people is over-collecting and exposing the bystanders around a subject — relatives, friends, exes, neighbors, the person whose name appeared on a piece of mail — beyond what the case actually needs. It happens naturally because the network IS the pivot surface, so associates' details pile up; but publishing or reporting their addresses, identities, and private facts harms uninvolved people, can endanger them, and corrupts the credibility of the whole report. In missing-persons work the mission is to find the subject, not to compile dossiers on everyone adjacent; legal does not equal right.",
+    "missingPersonsRelevance": "high",
+    "whenToUse": "Whenever associate/bystander data accumulates, and especially before any finding about a non-subject enters the report or gets shared.",
+    "steps": [
+      "Apply a need-to-collect test — does this associate's detail advance finding the SUBJECT, or is it just adjacent and interesting?",
+      "Minimize collection on bystanders to what the mission requires; don't build dossiers on uninvolved people.",
+      "Before reporting any non-subject fact, weigh the harm to that person against the case value.",
+      "Redact or omit identifying details of uninvolved third parties in the report.",
+      "Use associates as a PIVOT (to reach the subject) without EXPOSING them as a target."
+    ],
+    "signals": [
+      "Every non-subject detail in your file is there because it actually helps locate the subject.",
+      "Your report exposes no addresses, identities, or private facts of uninvolved people."
+    ],
+    "pitfalls": [
+      "Compiling a full profile on a relative or friend who is not relevant to locating the subject.",
+      "Publishing a bystander's identity because their name surfaced incidentally (e.g. on in-frame mail).",
+      "Reporting an unvalidated identity guess about an associate, harming an innocent person.",
+      "Justifying exposure because the data is public/legal, ignoring the harm it causes."
+    ],
+    "toolsUsed": [],
+    "evidence": [],
+    "trust": "trusted",
+    "relatedStrategies": [
+      {
+        "Ethics": "legal does not equal right"
+      },
+      "antipattern-contaminating-the-subject",
+      "antipattern-scope-creep-beyond-the-ask",
+      "phase-reporting",
+      "antipattern-forcing-the-match"
+    ],
+    "tags": [
+      "ethics",
+      "safety",
+      "harm-minimization",
+      "reporting",
+      "sensitive"
+    ],
+    "source": "",
+    "_file": "library/strategies/antipatterns/doxxing-collateral-people.md"
+  },
+  {
     "id": "email-to-accounts",
     "name": "pivot-email-to-accounts",
     "description": "Use when you have an email — discover which accounts it registered, mine breach/leak data for linked selectors, and treat the local-part as a username candidate.",
@@ -1023,6 +1275,66 @@
     ],
     "source": "",
     "_file": "library/strategies/pivots/email/social-profile/email-to-accounts.md"
+  },
+  {
+    "id": "english-only-bias",
+    "name": "antipattern-english-only-bias",
+    "description": "Use as a guardrail when a subject has ties to a non-English-speaking community — searching only in English (and only your own scripts/transliterations) misses the half of their footprint that lives in another language.",
+    "type": "antipattern",
+    "phase": "pivot",
+    "pivotFrom": [
+      "name",
+      "username",
+      "any"
+    ],
+    "pivotTo": [
+      "social-profile",
+      "associate",
+      "geolocation",
+      "image"
+    ],
+    "summary": "English-only bias is conducting the whole investigation in English — English search terms, English-script name spellings, English-language platforms — when the subject's footprint partly or wholly lives in another language. Names transliterate multiple ways, communities gather on regional platforms, signage and posts are in the local language, and a single canonical English spelling misses the variants the person actually uses. In missing-persons work this silently shrinks the searchable footprint, drops associates and locations entirely, and is especially damaging for immigrant, international, and multilingual subjects.",
+    "missingPersonsRelevance": "high",
+    "whenToUse": "Any time the subject, their family, or their last-known location ties to a non-English-speaking community or country.",
+    "steps": [
+      "Generate name variants across scripts and transliterations — a name romanizes several ways; search each.",
+      "Translate your search terms into the relevant language(s) and re-run the dorks and queries.",
+      "Go to the regional platforms — the community may gather where your default platform list doesn't reach.",
+      "Read non-English content with translation/transliteration tools rather than skipping it as noise.",
+      "Account for locale in dates, signage language, and place names when building the timeline and geolocating."
+    ],
+    "signals": [
+      "You searched the subject's name in its native script and common transliterations, not just one English spelling.",
+      "You found associates, posts, or locations on a non-English platform you'd have otherwise missed."
+    ],
+    "pitfalls": [
+      "Searching only the anglicized name spelling and missing every other transliteration.",
+      "Limiting to English-language platforms and skipping regional ones the community actually uses.",
+      "Discarding non-English posts/signage as unreadable instead of translating them.",
+      "Treating a thin English footprint as a thin footprint overall."
+    ],
+    "toolsUsed": [
+      "Google Translate",
+      "Yandex"
+    ],
+    "evidence": [],
+    "trust": "trusted",
+    "relatedStrategies": [
+      "Name + location Google dorking to seed the investigation",
+      "Username variation sweep across platforms to catch non-canonical handles",
+      "Passive-only reconnaissance with sock puppets and no subject contact",
+      "antipattern-misreading-timestamps-and-locale",
+      "phase-pivot"
+    ],
+    "tags": [
+      "language",
+      "transliteration",
+      "international",
+      "pivot",
+      "footprint"
+    ],
+    "source": "",
+    "_file": "library/strategies/antipatterns/english-only-bias.md"
   },
   {
     "id": "enrichment",
@@ -2331,6 +2643,205 @@
     "_file": "library/strategies/pivots/image/geolocation/mine-photos-and-videos-for-context-and-embedded-clues.md"
   },
   {
+    "id": "misreading-timestamps-and-locale",
+    "name": "antipattern-misreading-timestamps-and-locale",
+    "description": "Use as a guardrail when building a timeline from post times and dates — timezone, locale (DD/MM vs MM/DD), and \"X hours ago\" relative stamps silently shift events and can break or invert a sequence.",
+    "type": "antipattern",
+    "phase": "verification",
+    "pivotFrom": [
+      "any"
+    ],
+    "pivotTo": [
+      "any"
+    ],
+    "summary": "Timestamps look like hard facts and are anything but. A post time renders in YOUR timezone or the platform's, not the subject's; a date written 03/04 means March 4 or April 3 depending on locale; \"5 hours ago\" is relative to when YOU loaded the page; and device clocks, \"last seen\", and metadata times can be set wrong. Read any of these naively and your timeline shifts, compresses, or inverts — putting the subject somewhere at the wrong hour, or making a \"most recent\" post look fresh when it isn't. In missing-persons work the timeline IS the case, so a locale or timezone slip can send a search to the wrong window.",
+    "missingPersonsRelevance": "high",
+    "whenToUse": "Any time a date or time enters your timeline — post times, \"last active\", check-in times, EXIF/metadata times, screenshots of relative timestamps.",
+    "steps": [
+      "Pin the timezone explicitly — convert every event to ONE reference zone (ideally the subject's local time) and label it.",
+      "Resolve ambiguous dates — for DD/MM vs MM/DD, find a disambiguating value (a day > 12) or the locale of the platform/poster before trusting the order.",
+      "Freeze relative stamps — \"X hours/days ago\" is only meaningful with the capture moment; record the absolute time, not the relative phrase.",
+      "Distinguish capture time from post time from share time — a reshare's timestamp is not when the content was made.",
+      "Cross-check the time against an independent anchor (shadows/season in the image, an event's known date) before promoting it."
+    ],
+    "signals": [
+      "Two events in your timeline are impossible together once you realize they were in different timezones.",
+      "A date \"made sense\" only because you assumed your own locale's order.",
+      "You logged \"2 hours ago\" as a time instead of converting it to an absolute timestamp."
+    ],
+    "pitfalls": [
+      "Reading 03/04 as your locale's order when the poster uses the other.",
+      "Treating a reshare's time as the original capture time (see also stripped-metadata).",
+      "Letting your browser/timezone render a post time and then citing it as the subject's local time.",
+      "Building \"currently active\" off a relative stamp without anchoring when you loaded the page."
+    ],
+    "toolsUsed": [
+      "exiftool",
+      "suncalc"
+    ],
+    "evidence": [],
+    "trust": "trusted",
+    "relatedStrategies": [
+      "pattern-timeline-anchoring",
+      "antipattern-trusting-stripped-metadata",
+      "Check most-recent post timestamp to confirm the MP is digitally active and on which platform",
+      "phase-verification",
+      "antipattern-english-only-bias"
+    ],
+    "tags": [
+      "timeline",
+      "verification",
+      "cognitive",
+      "locale",
+      "metadata"
+    ],
+    "source": "",
+    "_file": "library/strategies/antipatterns/misreading-timestamps-and-locale.md"
+  },
+  {
+    "id": "mvo-dual-media-geolocation-chain",
+    "name": "MVO case: geolocating two media from one subject by frame-scrubbing, micro-feature stacking, and demographic fallback",
+    "description": "Use when you must geolocate the subject's photos/videos and want a worked example of frame-by-frame landmark extraction, multi-feature Street View confirmation, and what to do when automated geo tools return nothing.",
+    "type": "case-study",
+    "summary": "In the Trace Labs Nov 2025 MVO-winning case the two highest-value location flags came from media that originated on a friend's (MPF) account and was shared onto the MP profile. For a VIDEO, the team scrubbed frame-by-frame and caught a ~1-second fade-out frame showing a building with a \"casino\" sign; Google search + Maps identified the building, and Street View locked the exact spot by stacking multiple independent micro-features (a matching padlock and storage area, lighting structure, and a Chevron gas-station sign). For a car-wash PHOTO, reverse image search and an AI geolocator (FindPickLocation) both returned nothing — so the team switched methods, reasoning from environmental/demographic cues (billboard language, absence of graffiti, un-sun-bleached tiles implying no tall shading buildings, a self-service format uncommon downtown) to narrow the area, then confirmed the address in Street View via a cleaning station, satellite-dish/window positions, and a fence-line. They bounded the second search to areas near the already-confirmed video location and the BOLO. The transferable lesson: never declare a location on one match, treat tool failure as a signal to change method, and use solved media to bound the search for unsolved media.",
+    "missingPersonsRelevance": "high",
+    "phase": "enrichment",
+    "pivotFrom": [
+      "image",
+      "metadata-exif"
+    ],
+    "pivotTo": [
+      "geolocation",
+      "address"
+    ],
+    "platforms": [
+      "facebook",
+      "google"
+    ],
+    "steps": [
+      "Source the media - note that the richest location-bearing content originated on a friend's (MPF) account and was shared onto the MP profile.",
+      "For video, scrub frame-by-frame (including fade/transition frames) for any readable sign or fixed landmark; here a ~1-second frame revealed a casino sign.",
+      "Identify the named landmark with Google search + Maps, then open Street View to find the exact recording spot.",
+      "Confirm by stacking 3+ independent fixed micro-features (padlock/storage, lighting structure, Chevron sign) - never declare on one match.",
+      "For the photo, when reverse image search and the AI geolocator return nothing, switch to environmental/demographic reasoning (signage language, graffiti presence, material weathering, business format) to narrow the region.",
+      "Bound the search to areas near the already-confirmed location and the BOLO, enumerate candidate businesses, and confirm the exact spot with another micro-feature stack (cleaning station, dish/window positions, fence-line)."
+    ],
+    "signals": [
+      "A single brief frame yields a named, searchable landmark.",
+      "Three or more unrelated fixed features line up at one coordinate in Street View.",
+      "Environmental cues each rule out broad areas, and the narrowed region overlaps a confirmed/BOLO location."
+    ],
+    "pitfalls": [
+      "Declaring a location on one matching feature (a single sign), inviting confirmation bias.",
+      "Looping on the same failed AI/reverse-image tools instead of switching to manual reasoning.",
+      "Over-claiming an exact address from weak demographic inference, or letting that inference encode bias.",
+      "Confusing the friend's location/identity with the subject's when media originates on the friend's account."
+    ],
+    "toolsUsed": [
+      "Google Search",
+      "Google Maps",
+      "Google Street View",
+      "reverse image search",
+      "FindPickLocation"
+    ],
+    "tags": [
+      "tracelabs",
+      "mvo",
+      "geolocation",
+      "video-analysis",
+      "street-view",
+      "environmental-reasoning"
+    ],
+    "evidence": [
+      {
+        "type": "ctf-writeup",
+        "url": "https://github.com/OSINTI4L/TraceLabs-CTF-MVO-Write-up-11.25",
+        "note": "Video geolocated from a ~1-second casino-sign frame, confirmed via matching padlock/storage, lighting, and Chevron sign; car-wash photo located by demographic reasoning after reverse-image/FindPickLocation failed, confirmed via cleaning station, dish/window positions, and fence-line; second search bounded to areas near the confirmed video location and BOLO."
+      }
+    ],
+    "trust": "community",
+    "source": "osinti4l-mvo-writeup",
+    "relatedStrategies": [
+      "Frame-by-frame video geolocation off a one-second background sign",
+      "Confirm geolocation with a stack of independent micro-features, not one match",
+      "When reverse image search and AI geolocators fail, switch to human demographic reasoning",
+      "Cross-reference multiple media against each other and known locations to bound the search",
+      "Pivot through the MP's friends' (MPF) posts and shares to find fresh photos and locations",
+      "antipattern-trusting-stripped-metadata"
+    ],
+    "_file": "library/strategies/case-studies/mvo-dual-media-geolocation-chain.md"
+  },
+  {
+    "id": "mvo-name-to-verified-hub-enumeration",
+    "name": "MVO case: name dork to face-verified Facebook hub, then enumerate the selector graph",
+    "description": "Use when you have only a name and a BOLO photo and need a disciplined identity-first chain that turns one confirmed profile into a wide, verified selector graph.",
+    "type": "case-study",
+    "summary": "In the Trace Labs Nov 2025 Most-Valuable-OSINT-winning case, the team opened on the missing person's name with a Google dork, which surfaced news and family posts yielding multiple reference photos plus loose selectors. They located a candidate Facebook profile by name and — critically — face-verified it against the BOLO with a face-comparison tool BEFORE enumerating it, avoiding the same-name-stranger trap. The confirmed profile was then treated as a hub, not an endpoint: it expanded into roughly 24 linked accounts/directories, 14 usernames, 4 emails (which pivoted into ~10 further email-linked accounts), 2 addresses, and 2 relatives. The transferable chain is name -> reference photos -> candidate profile -> FACE VERIFY -> enumerate hub -> email/friend second wave, with verification gating enumeration at the start so no downstream pivot inherits a misidentification.",
+    "missingPersonsRelevance": "high",
+    "phase": "verification",
+    "pivotFrom": [
+      "name"
+    ],
+    "pivotTo": [
+      "social-profile",
+      "username",
+      "email",
+      "address",
+      "associate"
+    ],
+    "platforms": [
+      "google",
+      "facebook"
+    ],
+    "steps": [
+      "Google-dork the missing person by name to surface news/family posts; harvest every reference photo and loose selector (usernames, handles, associates).",
+      "Locate a candidate profile (here, Facebook) by searching the name directly.",
+      "Face-verify the candidate's profile photo against the BOLO with a face-comparison tool BEFORE investing time enumerating it.",
+      "Only after a match, treat the profile as a hub and enumerate every linked account, username, email, address, and relative it exposes.",
+      "Run a second wave from the extracted emails (email-to-account / registration lookups) to surface accounts the username sweep alone would miss.",
+      "Tie each new selector back to the verified subject before trusting it; keep a sourced inventory for the report."
+    ],
+    "signals": [
+      "The face-comparison returns a high-confidence match to the BOLO, locking identity before enumeration.",
+      "A single confirmed hub yields dozens of new selectors, and extracted emails resolve to additional accounts."
+    ],
+    "pitfalls": [
+      "Enumerating a same-name profile without face-verifying first, building the whole case on a stranger.",
+      "Selector sprawl - collecting dozens of accounts without tying each back to the verified subject.",
+      "Trusting an automated face score alone on a low-quality or filtered photo without a context sanity check."
+    ],
+    "toolsUsed": [
+      "Google",
+      "Facebook",
+      "FaceComparison",
+      "people-search sites"
+    ],
+    "tags": [
+      "tracelabs",
+      "mvo",
+      "identity-verification",
+      "enumeration",
+      "selector-graph"
+    ],
+    "evidence": [
+      {
+        "type": "ctf-writeup",
+        "url": "https://github.com/OSINTI4L/TraceLabs-CTF-MVO-Write-up-11.25",
+        "note": "Nov 2025 MVO-winning writeup: name dork -> candidate Facebook profile -> FaceComparison vs BOLO match -> enumeration yielded ~24 accounts/directories, 14 usernames, 4 emails, ~10 email-linked accounts, 2 addresses, 2 relatives."
+      }
+    ],
+    "trust": "community",
+    "source": "osinti4l-mvo-writeup",
+    "relatedStrategies": [
+      "Find the Facebook profile by name, then face-verify against the BOLO before trusting it",
+      "Enumerate one confirmed profile into a wide selector graph via people-search and linked profiles",
+      "Pivot through verified-profile emails into a second wave of linked accounts",
+      "antipattern-forcing-the-match",
+      "antipattern-automation-without-verification"
+    ],
+    "_file": "library/strategies/case-studies/mvo-name-to-verified-hub-enumeration.md"
+  },
+  {
     "id": "name-plus-location-google-dorking-to-seed-the-investigation",
     "name": "Name + location Google dorking to seed the investigation",
     "description": "Use when First step for almost any subject, before reaching for specialized tools.",
@@ -3333,6 +3844,115 @@
     "_file": "library/strategies/patterns/reverse-image-everything.md"
   },
   {
+    "id": "scope-creep-beyond-the-ask",
+    "name": "antipattern-scope-creep-beyond-the-ask",
+    "description": "Use as a guardrail when an interesting-but-irrelevant thread pulls you off the mission — chasing curiosity instead of the defined question burns the clock and dilutes the report.",
+    "type": "antipattern",
+    "phase": "triage",
+    "pivotFrom": [
+      "any"
+    ],
+    "pivotTo": [
+      "any"
+    ],
+    "summary": "Scope creep is following threads because they're interesting rather than because they advance the defined question. A juicy sub-plot — a feud in the comments, an associate's unrelated drama, a tangential mystery — pulls your attention away from locating the subject. It feels like investigating, but it spends a finite time budget on findings the case doesn't need, and it pads the report with noise that buries the signal. In missing-persons work, where time is the scarcest resource and the mission is narrow (find this person), scope creep is one of the quietest ways a search underperforms.",
+    "missingPersonsRelevance": "high",
+    "whenToUse": "Any time a thread is pulling you in and you haven't checked it against the case's defined question and success criteria.",
+    "steps": [
+      "State the mission in one sentence — what question am I answering, and what is explicitly OUT of scope?",
+      "Test the thread against it — does this advance LOCATING the subject, or is it just interesting?",
+      "If out of scope, note it and drop it — park a one-line breadcrumb in case it matters later, then return to the mission.",
+      "Re-check success criteria — am I past the point where the case is \"answered enough\"?",
+      "Keep the report tight — exclude tangents that don't bear on the defined question."
+    ],
+    "signals": [
+      "You can restate why the current thread advances finding the subject, in one sentence.",
+      "Your time is going to threads that map to the mission, not to interesting tangents."
+    ],
+    "pitfalls": [
+      "Following an associate's unrelated drama because it's compelling.",
+      "Endless expansion with no defined end (no success criteria, so nothing ever closes).",
+      "Padding the report with tangential findings that bury the relevant ones.",
+      "Confusing legitimate breadth (cheap pivots off your selectors) with chasing irrelevant rabbit holes."
+    ],
+    "toolsUsed": [],
+    "evidence": [],
+    "trust": "trusted",
+    "relatedStrategies": [
+      "Plan the mission and define red lines before you start",
+      "antipattern-tunnel-vision",
+      "Submit steadily and pivot on a timer to avoid rabbit holes",
+      "phase-triage",
+      "antipattern-doxxing-collateral-people"
+    ],
+    "tags": [
+      "scope",
+      "time-management",
+      "triage",
+      "discipline",
+      "cognitive"
+    ],
+    "source": "",
+    "_file": "library/strategies/antipatterns/scope-creep-beyond-the-ask.md"
+  },
+  {
+    "id": "screenshot-without-provenance",
+    "name": "antipattern-screenshot-without-provenance",
+    "description": "Use as a guardrail at the moment of capture — a screenshot with no source URL, no capture date, and no integrity check is a picture, not evidence, and it can be worthless for the law-enforcement handoff.",
+    "type": "antipattern",
+    "phase": "reporting",
+    "pivotFrom": [
+      "any"
+    ],
+    "pivotTo": [
+      "document-id"
+    ],
+    "summary": "A bare screenshot feels like proof, but a cropped image with no URL, no timestamp, and no integrity hash is unverifiable — a reviewer can't confirm where it came from, when it was true, or that it wasn't altered. Worse, the live source can change or be deleted before law enforcement reviews it, leaving you with an unsupported claim. In missing-persons work the whole point of capture is the handoff; evidence that a judge or detective can't authenticate gets discarded, and you lose the finding even though you \"had\" it.",
+    "missingPersonsRelevance": "high",
+    "whenToUse": "Every time you capture a finding you might submit, cite, or hand to law enforcement — get the provenance at the moment of capture, not later.",
+    "steps": [
+      "Capture the FULL context, not a crop — include the visible URL/address bar, the platform chrome, and the timestamp on the page.",
+      "Record the source URL and the exact capture date/time alongside the image, in the subject's reference timezone.",
+      "Prefer full-page capture (and an archival copy, e.g. Wayback \"Save Page Now\") over a phone-screen crop.",
+      "Add an integrity anchor — a file hash, an archive URL, or a tool that timestamps the capture — so alteration is detectable.",
+      {
+        "Write the one-line context": "how you found it and why it matters, because raw data without context is not intelligence."
+      }
+    ],
+    "signals": [
+      "Your capture shows the URL, a readable timestamp, and you logged the date/time and a hash or archive link.",
+      "A later-deleted post is still fully documented and authenticatable from your evidence file."
+    ],
+    "pitfalls": [
+      "Cropping to just the post and losing the URL/timestamp that prove origin and date.",
+      "Relying on a live link that may 404 by the time it's reviewed.",
+      "No hash/archive, so there's no way to show the image wasn't edited.",
+      "Submitting a bare image with no note on how it was found or why it matters (gets rejected)."
+    ],
+    "toolsUsed": [
+      "Nimbus Screenshot & Screen Video Recorder",
+      "Wayback Machine"
+    ],
+    "evidence": [],
+    "trust": "trusted",
+    "relatedStrategies": [
+      "Capture full-page screenshots of every finding for the LE handoff",
+      "Export and preserve findings as you go for documentation and handoff",
+      "Document the workflow as a flowchart - context turns data into intelligence",
+      "phase-reporting",
+      "antipattern-misreading-timestamps-and-locale"
+    ],
+    "tags": [
+      "reporting",
+      "evidence",
+      "chain-of-custody",
+      "documentation",
+      "safety"
+    ],
+    "source": "",
+    "_file": "library/strategies/antipatterns/screenshot-without-provenance.md"
+  },
+  {
     "id": "searchable-optimization-put-the-subject-s-name-in-titles-and-cross-post",
     "name": "Searchable optimization: put the subject's name in titles and cross-post",
     "description": "Use when When optimizing case content for discovery and when setting up name-keyed monitoring across platforms.",
@@ -3432,6 +4052,60 @@
     ],
     "source": "",
     "_file": "library/strategies/patterns/selector-discipline.md"
+  },
+  {
+    "id": "single-source-confirmation",
+    "name": "antipattern-single-source-confirmation",
+    "description": "Use as a guardrail whenever a \"second source\" turns out to echo the first — corroboration requires INDEPENDENT signals, and a fact circulating between sources that all copied each other is still one source.",
+    "type": "antipattern",
+    "phase": "verification",
+    "pivotFrom": [
+      "any"
+    ],
+    "pivotTo": [
+      "any"
+    ],
+    "summary": "Single-source confirmation is the illusion of corroboration produced when several sources all trace back to the same origin. A news article, three aggregator cards, and a Reddit thread can all \"agree\" on a fact simply because they all copied it from one place — or because one profile's bio, photo, and pinned post all say the same thing. Counting echoes as independent confirmations gives you false confidence and lets a single original error harden into \"verified.\" In missing-persons work this is how a wrong age, a wrong city, or a misidentified profile becomes treated as settled fact across the whole case.",
+    "missingPersonsRelevance": "high",
+    "whenToUse": "Any time you're about to call a fact \"confirmed\" because more than one source says it — check whether those sources are actually independent.",
+    "steps": [
+      "For each supporting source, trace it to its origin — who first asserted this, and did the others copy it?",
+      "Collapse the echoes — sources that share one origin count as ONE source, not many.",
+      "Require a genuinely independent second signal — a different origin, a different modality (face, geo, records), not a restatement.",
+      "If every \"confirmation\" traces to one origin, downgrade the fact to candidate and keep verifying.",
+      "Record WHICH independent sources support a confirmed fact, so the independence is auditable later."
+    ],
+    "signals": [
+      "Your \"three sources\" all phrase the fact identically — a sign they share one origin.",
+      "One profile corroborating itself (bio + photo + post all say the same thing) is being counted as multiple signals.",
+      "The fact is everywhere but you can't name two origins that arrived at it separately."
+    ],
+    "pitfalls": [
+      "Treating aggregator cards as independent when they all ingest the same upstream dataset.",
+      "Counting a news article and the social posts the article was based on as two sources.",
+      "Mistaking volume of mentions for weight of evidence — a viral wrong fact is still wrong.",
+      {
+        "Self-corroboration": "one profile's own fields are not multiple witnesses."
+      }
+    ],
+    "toolsUsed": [],
+    "evidence": [],
+    "trust": "trusted",
+    "relatedStrategies": [
+      "Verification by independent cross-referencing",
+      "antipattern-forcing-the-match",
+      "antipattern-over-trusting-people-search-aggregators",
+      "phase-verification",
+      "Establish a source of truth before pivoting"
+    ],
+    "tags": [
+      "verification",
+      "cognitive",
+      "corroboration",
+      "false-positive"
+    ],
+    "source": "",
+    "_file": "library/strategies/antipatterns/single-source-confirmation.md"
   },
   {
     "id": "stop-and-report-do-not-investigate-when-you-find-illegal-content",
@@ -3735,6 +4409,84 @@
     "trust": "community",
     "source": "searchparty-writeups",
     "_file": "library/strategies/antipatterns/tool-minimalism-manual-investigation-over-tool-feeding.md"
+  },
+  {
+    "id": "tracelabs-cluster-correlation-shared-friends",
+    "name": "Trace Labs case: confirm multiple accounts are one person via two shared friends",
+    "description": "Use when you have several candidate accounts plausibly belonging to one subject and need a concrete, defensible rule to merge them into a single identity before submitting linked flags.",
+    "type": "case-study",
+    "summary": "Across winning Trace Labs Search Party teams, the highest-yield chain ran: triage subjects by likely digital footprint, canvass Facebook first (repeatedly called \"a goldmine\"), sweep any recovered username across platforms, face-verify candidate profiles against the BOLO, and then — the decisive verification — confirm that a set of candidate accounts all belong to the same person by finding the same two-or-more mutual friends/associates appearing across every account. A winning team used \"two common friends across every account\" as an explicit rule, because shared close connections are a far stronger correlation signal than a matching display name (which only catches namesakes). People-search was then used to corroborate that those mutual connections were genuinely family/close friends. The transferable lesson: enumeration and name-matches produce candidate clusters; a stable core of shared associates is what proves the cluster is one identity.",
+    "missingPersonsRelevance": "high",
+    "phase": "verification",
+    "pivotFrom": [
+      "social-profile",
+      "username",
+      "associate"
+    ],
+    "pivotTo": [
+      "social-profile",
+      "associate"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram",
+      "twitter"
+    ],
+    "steps": [
+      "Triage which subjects have a rich enough footprint to be worth deep work; front-load effort there.",
+      "Canvass Facebook first; locate a candidate profile and face-verify it against the BOLO before investing time.",
+      "Sweep any recovered username/handle (and variants) across platforms to surface a cluster of candidate accounts.",
+      "For each candidate account, enumerate its visible friends/followers/frequent interactors.",
+      "Look for the SAME individuals (ideally 2+) appearing across the accounts; a consistent core of mutual connections merges the accounts into one identity.",
+      "Corroborate that those mutual connections are genuinely family/close friends with a people-search tool before submitting linked flags."
+    ],
+    "signals": [
+      "The same 2+ named people appear as friends/interactors on every candidate account.",
+      "Cross-account photos feature the same associates, reinforcing the merge."
+    ],
+    "pitfalls": [
+      "Merging accounts on display-name match alone, sweeping in namesakes.",
+      "Assuming no friend overlap exists when platform privacy is simply hiding it.",
+      "Submitting a linked-identity flag without explaining how the merge was established."
+    ],
+    "toolsUsed": [
+      "WhatsMyName",
+      "Sherlock",
+      "Namecheckr",
+      "FaceComparison",
+      "TruePeopleSearch"
+    ],
+    "tags": [
+      "tracelabs",
+      "identity-resolution",
+      "correlation",
+      "network-analysis",
+      "verification"
+    ],
+    "evidence": [
+      {
+        "type": "ctf-writeup",
+        "url": "https://jack.bio/blog/tracelabs",
+        "note": "Finding two common friends across every account provided concrete verification that the accounts were the same person; TruePeopleSearch used to confirm the relationships."
+      },
+      {
+        "type": "ctf-writeup",
+        "url": "https://shandyman.online/blog/on-a-mission-a-tracelabs-ctf-missing-persons-writeup/",
+        "note": "Facebook called a goldmine and primary platform; Namecheckr/WhatsMyName for cross-platform discovery before correlation."
+      }
+    ],
+    "trust": "community",
+    "source": "searchparty-writeups",
+    "relatedStrategies": [
+      {
+        "Cluster correlation": "confirm multiple accounts belong to one person via shared friends"
+      },
+      "Username persistence across platforms",
+      "Facial recognition to confirm a candidate profile is the subject",
+      "antipattern-single-source-confirmation",
+      "enumeration-is-not-validation"
+    ],
+    "_file": "library/strategies/case-studies/tracelabs-cluster-correlation-shared-friends.md"
   },
   {
     "id": "tunnel-vision",

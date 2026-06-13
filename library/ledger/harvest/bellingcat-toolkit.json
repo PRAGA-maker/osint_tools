@@ -1,0 +1,6171 @@
+[
+ {
+  "name": "Archive.today",
+  "url": "https://archive.today",
+  "description": "Archive any webpage, including Facebook and search for archived pages.",
+  "category": "archives-cache",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "archiving"
+  ],
+  "notes": "Source category: Archiving. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/archive.today"
+ },
+ {
+  "name": "Auto Archiver",
+  "url": "https://github.com/bellingcat/auto-archiver",
+  "description": "Bellingcat's tool to automatically archive social media posts, videos, and images. Free and Open-Source.",
+  "category": "archives-cache",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "vendor",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "archiving"
+  ],
+  "notes": "Source category: Archiving. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/auto-archiver"
+ },
+ {
+  "name": "Bellingcat TikTok Hashtag Analysis",
+  "url": "https://github.com/bellingcat/tiktok-hashtag-analysis",
+  "description": "Archive content and metadata from TikTok posts that contain one or more specified hashtags",
+  "category": "archives-cache",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "vendor",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "archiving"
+  ],
+  "notes": "Source category: Archiving"
+ },
+ {
+  "name": "Distill.io",
+  "url": "https://distill.io/",
+  "description": "Distill.io is a website change monitoring tool that allows users to track changes on web pages.",
+  "category": "archives-cache",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "archiving"
+  ],
+  "notes": "Source category: Archiving. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/distill"
+ },
+ {
+  "name": "Wayback Machine",
+  "url": "https://web.archive.org/",
+  "description": "The Internet Archive's Wayback Machine lets users view and archive web pages, aiding in historical research and digital preservation.",
+  "category": "archives-cache",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "archiving"
+  ],
+  "notes": "Source category: Archiving. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/internet-archive"
+ },
+ {
+  "name": "Lumen",
+  "url": "https://lumendatabase.org/",
+  "description": "A research project collecting and publishing legal takedown notices for online content transparency",
+  "category": "archives-cache",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "archiving"
+  ],
+  "notes": "Source category: Archiving. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/lumen"
+ },
+ {
+  "name": "Web Archives",
+  "url": "https://github.com/dessant/web-archives",
+  "description": "A browser extension to view archived and cached versions of a website on multiple archiving sites.",
+  "category": "archives-cache",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "archiving"
+  ],
+  "notes": "Source category: Archiving. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/web-archives"
+ },
+ {
+  "name": "527 Explorer",
+  "url": "https://projects.propublica.org/527-explorer/",
+  "description": "ProPublica's 527 Explorer is a database that allows users to examine the finances of organizations known as 527s in the United States, which can raise unlimited sums for political purposes.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/527-explorer"
+ },
+ {
+  "name": "BlockExplorer",
+  "url": "https://blockexplorer.com/",
+  "description": "Following a bitcoin trail or following a bitcoin account?",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name",
+   "crypto-wallet"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate",
+   "crypto-wallet"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: Crypto"
+ },
+ {
+  "name": "China-related resources",
+  "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/china-related-resources",
+  "description": "Resources for research on companies in China.,",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/china-related-resources"
+ },
+ {
+  "name": "Companies House",
+  "url": "https://find-and-update.company-information.service.gov.uk/",
+  "description": "Search companies and individuals in the United Kingdom and Gibraltar.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/companies-house"
+ },
+ {
+  "name": "EDGAR",
+  "url": "https://www.sec.gov/edgar/search/",
+  "description": "Database of corporate filings for the US",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/edgar"
+ },
+ {
+  "name": "EDGAR Command Line Interface (edgar-tool)",
+  "url": "https://pypi.org/project/edgar-tool/",
+  "description": "Tool for the retrieval of corporate and financial data from SEC's EDGAR (Electronic Data Gathering, Analysis, and Retrieval) database.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/edgar-suite"
+ },
+ {
+  "name": "Etherscan",
+  "url": "https://etherscan.io/",
+  "description": "An explorer that allows researchers to track wallets, transactions and more on the Ethereum blockchain.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name",
+   "crypto-wallet"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate",
+   "crypto-wallet"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/etherscan"
+ },
+ {
+  "name": "EU consolidated corporate registers",
+  "url": "https://e-justice.europa.eu/content_find_a_company-489-en.do",
+  "description": "Consolidated company registers covering most of the EU, Iceland, Liechtenstein and Norway.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/eu-consolidated-corporate-registers"
+ },
+ {
+  "name": "EU Sanctions Map",
+  "url": "https://www.sanctionsmap.eu/",
+  "description": "Database of sanctions imposed by the European Union and the United Nations",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/eu-sanctions-map"
+ },
+ {
+  "name": "Global Suppliers Online",
+  "url": "https://www.globalsuppliersonline.com/",
+  "description": "A site dedicated to connect suppliers and buyers of goods from all over the world.",
+  "category": "financial-crypto",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/global-suppliers-online"
+ },
+ {
+  "name": "ICIJ Offshore Leaks Database",
+  "url": "http://offshoreleaks.icij.org/",
+  "description": "Find out who’s behind more than 810k offshore companies, foundations and trusts from the Panama Papers, the Offshore Leaks, the Bahamas Leaks and the Paradise Papers investigations.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/icij-offshore-leaks-database"
+ },
+ {
+  "name": "ImportYeti",
+  "url": "https://www.importyeti.com/",
+  "description": "Search 60 million US customs sea shipment records, find company suppliers.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/importyeti"
+ },
+ {
+  "name": "LittleSis",
+  "url": "https://littlesis.org/database",
+  "description": "Connects the dots between influential / wealthy individuals in (mostly US) politics and business.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/littlesis"
+ },
+ {
+  "name": "Lumen",
+  "url": "https://lumendatabase.org/",
+  "description": "A research project collecting and publishing legal takedown notices for online content transparency",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/lumen"
+ },
+ {
+  "name": "North Data",
+  "url": "https://northdata.com",
+  "description": "Search for people and companies in EU corporate and trade registers + visualize relationships",
+  "category": "financial-crypto",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/north-data"
+ },
+ {
+  "name": "OCCRP Aleph",
+  "url": "https://aleph.occrp.org/",
+  "description": "Aleph offers a way to research sanctions lists, corporate registries, leaks, and more",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/occrp-aleph"
+ },
+ {
+  "name": "Open Ownership",
+  "url": "https://www.openownership.org/en/",
+  "description": "Links to beneficial ownership registers.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/open-ownership"
+ },
+ {
+  "name": "OpenCorporates",
+  "url": "https://opencorporates.com/",
+  "description": "Comprehensive repository of company registries around the world",
+  "category": "financial-crypto",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/opencorporates"
+ },
+ {
+  "name": "OpenSanctions",
+  "url": "https://www.opensanctions.org/",
+  "description": "Open-source international database of sanctions data, persons of interest and politically exposed persons.",
+  "category": "financial-crypto",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/opensanctions"
+ },
+ {
+  "name": "OpenSecrets",
+  "url": "https://www.opensecrets.org/",
+  "description": "Data on campaign finance, lobbying, and spending in U.S. politics",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/opensecrets"
+ },
+ {
+  "name": "OSINT Tools Map",
+  "url": "https://cybdetective.com/osintmap/",
+  "description": "An interactive worldwide map, showcasing business registries, court records, and other publicly available information to aid OSINT investigations and research.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/osint-tools-map"
+ },
+ {
+  "name": "RuPEP",
+  "url": "https://rupep.org/en/",
+  "description": "Online database of politically exposed persons in Russia, Belarus, Kyrgyzstan and Kazakhstan.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/rupep"
+ },
+ {
+  "name": "SanctionsExplorer",
+  "url": "https://sanctionsexplorer.org/",
+  "description": "A comprehensive database of current and historical OFAC/UN/EU sanctions",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/sanctionsexplorer"
+ },
+ {
+  "name": "UN Comtrade Database",
+  "url": "https://comtradeplus.un.org/",
+  "description": "United Nations free database of global trade.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/un-comtrade-database"
+ },
+ {
+  "name": "Wikipedia list of registers",
+  "url": "https://en.wikipedia.org/wiki/List_of_official_business_registers",
+  "description": "Wikipedia list of official business registers around the world.",
+  "category": "financial-crypto",
+  "pricing": "free",
+  "selectorsIn": [
+   "employer-org",
+   "name"
+  ],
+  "selectorsOut": [
+   "employer-org",
+   "associate"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "companies-finance"
+  ],
+  "notes": "Source category: Companies & Finance. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/wikipedia-list-of-registers"
+ },
+ {
+  "name": "ACLED (Armed Conflict Location & Event Data Project)",
+  "url": "https://acleddata.com/",
+  "description": "ACLED provides data and analysis on political violence and protest around the world, facilitating research, policy making, and journalistic reporting.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "conflict"
+  ],
+  "notes": "Source category: Conflict. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/acled"
+ },
+ {
+  "name": "Bulletpicker.com",
+  "url": "https://www.bulletpicker.com/index.html",
+  "description": "Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "conflict"
+  ],
+  "notes": "Source category: Conflict. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/bulletpicker.com"
+ },
+ {
+  "name": "CAT-UXO",
+  "url": "https://cat-uxo.com/",
+  "description": "A repository for professionals working in the explosive ordnance disposal (EOD) space.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "conflict"
+  ],
+  "notes": "Source category: Conflict. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/cat-uxo"
+ },
+ {
+  "name": "LiveUAMap",
+  "url": "https://liveuamap.com/",
+  "description": "LiveUAMap is a mapping tool that provides up-to-date information on global geopolitical events, conflicts, and crises.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "conflict"
+  ],
+  "notes": "Source category: Conflict. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/liveuamap"
+ },
+ {
+  "name": "Open Source Munitions Portal",
+  "url": "https://osmp.ngo/",
+  "description": "A searchable library of verified images for researchers, journalists, and practitioners trying to learn more about munitions and their use and impact in conflict.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "conflict"
+  ],
+  "notes": "Source category: Conflict. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/open-source-munitions-portal"
+ },
+ {
+  "name": "Police Records Access Project",
+  "url": "https://clean.calmatters.org/",
+  "description": "A database providing searchable access to California law enforcement records including police use-of-force incidents, shootings, and misconduct cases.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "conflict"
+  ],
+  "notes": "Source category: Conflict. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/police-records-access-project"
+ },
+ {
+  "name": "Atlos",
+  "url": "https://www.atlos.org/",
+  "description": "ATLOS is a platform for collaborative and large-scale open source investigations.",
+  "category": "ai-analysis-automation",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/atlos"
+ },
+ {
+  "name": "Blender",
+  "url": "https://www.blender.org/",
+  "description": "Blender is an open-source 3D creation suite supporting the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing, and motion tracking, even video editing.",
+  "category": "ai-analysis-automation",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/blender"
+ },
+ {
+  "name": "Datawrapper",
+  "url": "https://www.datawrapper.de/",
+  "description": "A tool for creating interactive charts, maps, and tables from your data, offering a user-friendly interface for visualizing information.",
+  "category": "ai-analysis-automation",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/datawrapper"
+ },
+ {
+  "name": "Gephi",
+  "url": "https://gephi.org",
+  "description": "Open-source network analysis and visualization software",
+  "category": "ai-analysis-automation",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/gephi"
+ },
+ {
+  "name": "Logseq",
+  "url": "https://logseq.com/",
+  "description": "Logseq is an open-source knowledge management tool that enables users to organize their notes, tasks, and projects.",
+  "category": "ai-analysis-automation",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/logseq"
+ },
+ {
+  "name": "Maltego Graph",
+  "url": "https://www.maltego.com/",
+  "description": "Maltego Graph is an investigation platform that combines two things at once: (1) It acts as a search tool, and (2) It creates a graph establishing links between data you uncover from your search.",
+  "category": "ai-analysis-automation",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/maltego"
+ },
+ {
+  "name": "Obsidian",
+  "url": "https://obsidian.md/",
+  "description": "A knowledge management and note-taking app with extensive customization options.",
+  "category": "ai-analysis-automation",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/obsidian"
+ },
+ {
+  "name": "Pinpoint",
+  "url": "https://journaliststudio.google.com/pinpoint/about",
+  "description": "A tool by Google to catalogue uploaded documents and files, providing OCR, indexing, and other services. Full access only granted to journalists, academic researchers and university students.",
+  "category": "ai-analysis-automation",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/pinpoint"
+ },
+ {
+  "name": "QGIS:",
+  "url": "https://www.qgis.org",
+  "description": "QGIS is a free Open Source Geographic Information System (GIS).",
+  "category": "ai-analysis-automation",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/qgis"
+ },
+ {
+  "name": "RAWGraphs",
+  "url": "https://app.rawgraphs.io/",
+  "description": "RAWGraphs is an open-source data visualization tool designed for non-technical users, enabling the creation of customizable, editable charts without coding skills.",
+  "category": "ai-analysis-automation",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/rawgraphs"
+ },
+ {
+  "name": "Time.Graphics",
+  "url": "https://time.graphics",
+  "description": "A tool for creating, visualizing, and managing timelines online.",
+  "category": "ai-analysis-automation",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "data-organization-analysis"
+  ],
+  "notes": "Source category: Data Organization & Analysis. Bellingcat toolkit page: Create up to two timelines for free"
+ },
+ {
+  "name": "AllTrails",
+  "url": "https://www.alltrails.com/",
+  "description": "AllTrails.com is a tool for discovering hiking, biking, and running trails worldwide, providing detailed trail maps, user reviews, and navigation support for outdoor enthusiasts.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/alltrails"
+ },
+ {
+  "name": "Amazonia Socio Ambiental (RAISG)",
+  "url": "https://www.amazoniasocioambiental.org/en/",
+  "description": "Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestation in bolivia, brazil, colombia, ecuador, guyanas and suriname, peru, venezuela",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: 🌳"
+ },
+ {
+  "name": "Aqueduct Water Risk Atlas",
+  "url": "https://www.wri.org/applications/aqueduct/water-risk-atlas/",
+  "description": "The Aqueduct water Risk Atlas, developed by the World Resources Institute (WRI), is an interactive platform for assessing water-related risks globally.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/aqueduct-water-risk-atlas"
+ },
+ {
+  "name": "BirdNet",
+  "url": "https://birdnet.cornell.edu/map",
+  "description": "Identify bird sounds - find bird sounds on a global map.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/birdnet"
+ },
+ {
+  "name": "CITES Trade Database",
+  "url": "https://trade.cites.org/",
+  "description": "Around 23 million records of trade in wildlife since 1975.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/cites-trade-database"
+ },
+ {
+  "name": "CryO Tools",
+  "url": "https://cryo-tools.org/",
+  "description": "Scientific tools for investigating the cryosphere (areas with snow & ice)",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: 🧊"
+ },
+ {
+  "name": "EIA Global Environmental Crime Tracker",
+  "url": "https://eia-international.org/global-environmental-crime-tracker/",
+  "description": "Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/eia-global-environmental-crime-tracker"
+ },
+ {
+  "name": "Environmental Justice Atlas",
+  "url": "https://ejatlas.org/",
+  "description": "Map of environmental-related conflict globally",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/environmental-justice-atlas"
+ },
+ {
+  "name": "Global Fishing Watch",
+  "url": "https://globalfishingwatch.org/map",
+  "description": "A digital platform for investigating fishing activities and vessel movements worldwide by utilising satellite and AIS data.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/global-fishing-watch-map"
+ },
+ {
+  "name": "Global Forest Watch",
+  "url": "https://www.globalforestwatch.org/map/",
+  "description": "Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics and more.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/global-forest-watch"
+ },
+ {
+  "name": "Global Monitoring System - ECOSOLVE",
+  "url": "https://www.ecosolve.eco/dashboard",
+  "description": "Illicit online wildlife markets data from Brazil, South Africa and Thailand.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/global-monitoring-system"
+ },
+ {
+  "name": "Google Flood Hub",
+  "url": "https://sites.research.google/floods/",
+  "description": "A visual tool to monitor river levels and forecast floods based on AI models developed by Google Research.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/google-flood-hub"
+ },
+ {
+  "name": "Locust Hub",
+  "url": "https://locust-hub-hqfao.hub.arcgis.com/",
+  "description": "A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interventions.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/locust-hub"
+ },
+ {
+  "name": "Merlin",
+  "url": "https://merlin.allaboutbirds.org/",
+  "description": "Identify birds (visually), through an app.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/merlin"
+ },
+ {
+  "name": "Movebank",
+  "url": "https://www.movebank.org/",
+  "description": "Platform for animal tracking data.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife"
+ },
+ {
+  "name": "Nullschool Earth Map",
+  "url": "https://earth.nullschool.net/#current",
+  "description": "View current and historic wind, weather, ocean and pollution conditions on an interactive animated map.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife"
+ },
+ {
+  "name": "Resource Watch",
+  "url": "https://resourcewatch.org/",
+  "description": "A free open-data platform that hosts 300+ datasets on different topics relating to the environment and human well-being, including real-time datasets.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/resource-watch"
+ },
+ {
+  "name": "River Runner Global",
+  "url": "https://river-runner-global.samlearner.com/",
+  "description": "Calculate which water stream a drop of rain will follow",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: 💧"
+ },
+ {
+  "name": "Species+",
+  "url": "https://www.speciesplus.net/species",
+  "description": "Centralized website with vulnerable species information.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife"
+ },
+ {
+  "name": "UNOSAT Analyses",
+  "url": "https://unosat.org/products",
+  "description": "UNOSAT Analyses is a tool that maps humanitarian emergencies across the globe utilising United Nations Satellite Centre data.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/unosat-analyses"
+ },
+ {
+  "name": "WildEye",
+  "url": "https://global.wildeye.oxpeckers.org/",
+  "description": "Tracking tool for data on environmental and wildlife crime cases, including court cases and convictions, across the globe.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/wildeye"
+ },
+ {
+  "name": "Wildlife Trade Portal",
+  "url": "https://www.wildlifetradeportal.org/",
+  "description": "An open-source tool to search wildlife seizure data worldwide.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/wildlife-trade-portal"
+ },
+ {
+  "name": "WildMe & WildBook",
+  "url": "https://wildme.org/#/platforms/bass",
+  "description": "Open source pattern recognition software to identify unique whales, sharks, zebras, jaguars, skunks, fish and much more.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: 🐳"
+ },
+ {
+  "name": "World Database on Protected and Conserved Areas",
+  "url": "https://www.protectedplanet.net/en/search-areas?geo_type=site",
+  "description": "A comprehensive global database on terrestrial and marine protected areas.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "environment-wildlife"
+  ],
+  "notes": "Source category: Environment & Wildlife. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/world-database-protected-areas"
+ },
+ {
+  "name": "GeoHints",
+  "url": "https://geohints.com/",
+  "description": "GeoHints is a website that provides information about things like traffic lights, utility poles, bollards etc. for different regions of the world to help geolocate a location.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/geohints"
+ },
+ {
+  "name": "GeoNames",
+  "url": "http://www.geonames.org/",
+  "description": "The GeoNames geographical database covers all countries and contains over eleven million place names that are available for download free of charge Extremely useful in Geo Tagging, documentation, and data collection.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation"
+ },
+ {
+  "name": "Bellingcat OpenStreetMap Search",
+  "url": "https://osm-search.bellingcat.com/",
+  "description": "A user interface to search OpenStreetMap data for features in proximity to each other.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/openstreetmap-search-tool"
+ },
+ {
+  "name": "Photo-Map.RU",
+  "url": "http://photo-map.ru/",
+  "description": "Geotagged VK posts.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation"
+ },
+ {
+  "name": "ShadeMap",
+  "url": "https://shademap.app",
+  "description": "ShadeMap is a global simulation of mountain, building & tree shadows for a given date & time. Base data is free, but users can buy 30cm accurate data per sq km for areas of special focus.",
+  "category": "geolocation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/shademap"
+ },
+ {
+  "name": "Shadow Finder",
+  "url": "https://github.com/bellingcat/ShadowFinder",
+  "description": "To analyse shadows in source imagery, Shadow Finder maps all points on the earth where a shadow of given length could occur at a given date & time, IF the height of the object casting it is known.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "vendor",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/shadow-finder"
+ },
+ {
+  "name": "ShadowMap",
+  "url": "https://app.shadowmap.org/",
+  "description": "Global map of 3D buildlings and the shadows they cast at a specific time a day",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/shadowmap"
+ },
+ {
+  "name": "Spot",
+  "url": "https://www.findthatspot.io/",
+  "description": "A natural language interface for querying the OpenStreetMap database to find locations which meet the search criteria described by the user.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/spot"
+ },
+ {
+  "name": "SunCalc",
+  "url": "https://www.suncalc.org/",
+  "description": "Suncalc models the relationship between the date, time of day, the geographic location of a place, and the position of the sun in the sky, together with the length & direction of the shadows it casts.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "geolocation"
+  ],
+  "notes": "Source category: Geolocation. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/suncalc"
+ },
+ {
+  "name": "Amazon Rekognition",
+  "url": "https://aws.amazon.com/rekognition/",
+  "description": "Check how similar two faces are",
+  "category": "image-video-face",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "face"
+  ],
+  "selectorsOut": [
+   "face",
+   "social-profile",
+   "image"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "facial-recognition"
+  ],
+  "notes": "Source category: Facial Recognition"
+ },
+ {
+  "name": "Face Comparison by ToolPie",
+  "url": "https://facecomparison.toolpie.com/",
+  "description": "Compares two human face photos to determine similarity.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "face"
+  ],
+  "selectorsOut": [
+   "face",
+   "social-profile",
+   "image"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "facial-recognition"
+  ],
+  "notes": "Source category: Facial Recognition. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/face-comparison-toolpie"
+ },
+ {
+  "name": "Search4Faces",
+  "url": "https://search4faces.com",
+  "description": "Upload the picture of a face and find pictures of similar looking people on VKontakte, Odnoklassniki, TikTok and Clubhouse.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "face"
+  ],
+  "selectorsOut": [
+   "face",
+   "social-profile",
+   "image"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "facial-recognition"
+  ],
+  "notes": "Source category: Facial Recognition. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/search4faces"
+ },
+ {
+  "name": "AmIReal",
+  "url": "https://seintpl.github.io/AmIReal/",
+  "description": "Github - GAN detector detects if faces were generated by ThisPersonDoesNotExist",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc"
+ },
+ {
+  "name": "AutoStitch",
+  "url": "https://mattabrown.github.io/autostitch.html",
+  "description": "Autostitch is a free tool for seamlessly combining multiple photos into a single panoramic image, making it ideal for creating wide-angle photography without needing specialized equipment.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/autostitch"
+ },
+ {
+  "name": "Cleanup.Pictures",
+  "url": "https://cleanup.pictures/",
+  "description": "Web tool for quickly removing objects from an image.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc"
+ },
+ {
+  "name": "fdupes",
+  "url": "https://github.com/adrianlopezroche/fdupes",
+  "description": "Github - Locating exact matches of duplicate files.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc"
+ },
+ {
+  "name": "Forensically",
+  "url": "https://29a.ch/photo-forensics/#forensic-magnifier",
+  "description": "A collection of web-based image forensics tools. Can identify fake or doctored images.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/forensically"
+ },
+ {
+  "name": "Hugin",
+  "url": "https://hugin.sourceforge.io/",
+  "description": "Hugin is a free and open-source panorama photo stitching and HDR (High Dynamic Range imaging) merging software that helps users create seamless panoramic images from multiple photographs.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/hugin"
+ },
+ {
+  "name": "InVID Verification Plugin",
+  "url": "https://weverify.eu/verification-plugin/",
+  "description": "A toolkit that supports the verification of videos and images.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/invid"
+ },
+ {
+  "name": "IPVM Calculator",
+  "url": "https://calculator.ipvm.com/",
+  "description": "Tool for simulating camera views (for geolocations).",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc"
+ },
+ {
+  "name": "PixPlot",
+  "url": "https://github.com/YaleDHLab/pix-plot",
+  "description": "PixPlot is a tool that utilizes machine learning and WebGL to provide an interactive visualization of large image collections, allowing users to explore patterns and outliers within image datasets.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/pixplot"
+ },
+ {
+  "name": "PureRef",
+  "url": "https://www.pureref.com/index.php",
+  "description": "Image workspace; lets you arrange images in groups, organize them, etc.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "misc"
+  ],
+  "notes": "Source category: Misc"
+ },
+ {
+  "name": "ExifPurge",
+  "url": "http://www.exifpurge.com/",
+  "description": "EXIF Purge is a small portable application to remove EXIF metadata from multiple images at once. With the click of a button you can remove the camera, location and other technical information from a batch of photos which is embedded by the camera or the photo editing software.",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata"
+ },
+ {
+  "name": "Forensically",
+  "url": "https://29a.ch/photo-forensics/#forensic-magnifier",
+  "description": "A collection of web-based image forensics tools. Can identify fake or doctored images.",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/forensically"
+ },
+ {
+  "name": "FotoForensics",
+  "url": "http://fotoforensics.com/",
+  "description": "Image forensics tool.",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata"
+ },
+ {
+  "name": "InVID Verification Plugin",
+  "url": "https://weverify.eu/verification-plugin/",
+  "description": "A toolkit that supports the verification of videos and images.",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/invid"
+ },
+ {
+  "name": "Irfanview",
+  "url": "http://irfanview.com/",
+  "description": "Windows-based software to extract metadata.",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata"
+ },
+ {
+  "name": "Jimpl",
+  "url": "https://jimpl.com/",
+  "description": "Online EXIF data viewer",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata"
+ },
+ {
+  "name": "metadata2go",
+  "url": "https://www.metadata2go.com/",
+  "description": "Check metadata for both photos and videos online.",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata"
+ },
+ {
+  "name": "Reveal Image Verification Assistant",
+  "url": "https://www.rand.org/research/projects/truth-decay/fighting-disinformation/search/items/reveal-image-verification-assistant.html",
+  "description": "Forensic providing eight filters to detect still images alterations. Web-based image tool. Also available within InVID verification plugin.",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata"
+ },
+ {
+  "name": "xIFr",
+  "url": "https://github.com/StigNygaard/xIFr",
+  "description": "A Firefox add-on for extracting EXIF metadata by right-clicking an image.",
+  "category": "documents-metadata",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "metadata"
+  ],
+  "notes": "Source category: Metadata. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/xifr"
+ },
+ {
+  "name": "Google Lens",
+  "url": "https://lens.google/",
+  "description": "Google Lens is an image recognition tool which can be used to identify locations or objects in photographs.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "selectorsIn": [
+   "image"
+  ],
+  "selectorsOut": [
+   "image",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "reverse-image-search"
+  ],
+  "notes": "Source category: Reverse Image Search. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/google-lens"
+ },
+ {
+  "name": "InVID Verification Plugin",
+  "url": "https://weverify.eu/verification-plugin/",
+  "description": "A toolkit that supports the verification of videos and images.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "selectorsIn": [
+   "image"
+  ],
+  "selectorsOut": [
+   "image",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "reverse-image-search"
+  ],
+  "notes": "Source category: Reverse Image Search. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/invid"
+ },
+ {
+  "name": "RootAbout",
+  "url": "http://rootabout.com/",
+  "description": "Reverse search images on the Internet Archive",
+  "category": "image-video-face",
+  "pricing": "free",
+  "selectorsIn": [
+   "image"
+  ],
+  "selectorsOut": [
+   "image",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "reverse-image-search"
+  ],
+  "notes": "Source category: Reverse Image Search. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/rootabout"
+ },
+ {
+  "name": "Search by Image",
+  "url": "https://addons.opera.com/extensions/details/search-by-image/",
+  "description": "A browser extension to reverse search an image on multiple search engines.",
+  "category": "image-video-face",
+  "pricing": "free",
+  "selectorsIn": [
+   "image"
+  ],
+  "selectorsOut": [
+   "image",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "reverse-image-search"
+  ],
+  "notes": "Source category: Reverse Image Search. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/search-by-image"
+ },
+ {
+  "name": "TinEye",
+  "url": "https://tineye.com/",
+  "description": "TinEye is a search engine that allows the user to search using images (reverse image search).",
+  "category": "image-video-face",
+  "pricing": "free",
+  "selectorsIn": [
+   "image"
+  ],
+  "selectorsOut": [
+   "image",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "reverse-image-search"
+  ],
+  "notes": "Source category: Reverse Image Search. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/tineye"
+ },
+ {
+  "name": "About Maps and Satellites",
+  "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/about-maps-and-satellites",
+  "description": "A guide to using map and satellite tools.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/about-maps-and-satellites"
+ },
+ {
+  "name": "Apple Maps",
+  "url": "https://www.apple.com/maps/",
+  "description": "Apple Maps is a digital mapping service with detailed, interactive maps, satellite imagery, and location-based information.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/apple-maps"
+ },
+ {
+  "name": "Baidu Maps",
+  "url": "http://map.baidu.com/",
+  "description": "Baidu’s mapping service offering satellite imagery, street maps, and streetview (“Panorama” - zh:百度全景).",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/baidu-maps"
+ },
+ {
+  "name": "Bing Maps",
+  "url": "https://www.bing.com/maps/",
+  "description": "Bing Maps is a web mapping service provided by Microsoft that offers detailed geographical information and tools for route planning, location search, and satellite imagery.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/bing-maps"
+ },
+ {
+  "name": "Convert Geographic Units",
+  "url": "http://rcn.montana.edu/resources/Converter.aspx",
+  "description": "A tool that converts various geographic coordinates to support diverse mapping and spatial analysis needs.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/convert-geographic-units"
+ },
+ {
+  "name": "F4Map",
+  "url": "https://demo.f4map.com",
+  "description": "F4Map is an interactive 3D map visualization tool that provides detailed rendering of urban landscapes and geographical features.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/f4map"
+ },
+ {
+  "name": "Gaode Maps",
+  "url": "https://gaode.com",
+  "description": "Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/gaode-maps"
+ },
+ {
+  "name": "Gjirafa",
+  "url": "https://gjirafa.biz/",
+  "description": "Mapping service for Albania (specially Kosovo)",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "Global Forest Watch",
+  "url": "https://www.globalforestwatch.org/map/",
+  "description": "Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics and more.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/global-forest-watch"
+ },
+ {
+  "name": "Google Maps",
+  "url": "https://www.google.com/maps",
+  "description": "Google Maps provides mapping information, satellite imagery and Google Street View imagery including historical Street View images.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/google-maps"
+ },
+ {
+  "name": "GovMap",
+  "url": "https://www.govmap.gov.il/",
+  "description": "GovMap provides an interactive map of Israel, offering users a wide range of data including property boundaries, planning information, and infrastructure details.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/govmap"
+ },
+ {
+  "name": "HERE WeGo",
+  "url": "https://wego.here.com/",
+  "description": "Mapping service that can serve as an alternative to Google Maps or Apple Maps.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "Hitta.se",
+  "url": "https://www.hitta.se/",
+  "description": "Mapping service for Sweden",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/hitta.se"
+ },
+ {
+  "name": "Kakao Map",
+  "url": "https://map.kakao.com",
+  "description": "A mapping application provided by South Korean technology company Kakao Corp.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "MapChecking",
+  "url": "https://www.mapchecking.com/",
+  "description": "This tool helps you estimate and fact-check the maximum number of people standing in a given area.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/mapchecking"
+ },
+ {
+  "name": "Mapillary",
+  "url": "https://www.mapillary.com/",
+  "description": "Mapillary is a crowdsourced street-level imagery platform.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/mapillary"
+ },
+ {
+  "name": "MapSwitcher",
+  "url": "https://github.com/david-r-edgar/MapSwitcher",
+  "description": "Chrome extension switches  between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source map.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/mapswitcher"
+ },
+ {
+  "name": "mapy.cz",
+  "url": "http://mapy.cz",
+  "description": "Mapping service for Czechia",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "Maritime Awareness Project",
+  "url": "https://map.nbr.org/interactivemap/",
+  "description": "South China Sea maps with oil and gas fields, fishing areas, air defense zones and administrative, claimed, disputed zones, submarine data cables.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "NASA FIRMS",
+  "url": "https://firms2.modaps.eosdis.nasa.gov/map/",
+  "description": "Displays a world map overlaid with infra-red data from one or more satellites, some, but not all of which may represent heat from fires and explosions.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/nasa-firms"
+ },
+ {
+  "name": "OpenInfraMap",
+  "url": "https://openinframap.org/#2/26/12",
+  "description": "Power lines, telecoms, solar, oil, gas & water infrastructure mapped globally.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "OpenSeaMap",
+  "url": "https://map.openseamap.org/",
+  "description": "Sea map of borders, special zones, shipping lanes, with overlays of MarineTraffic and other sources",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "OpenStreetMap",
+  "url": "http://openstreetmap.org/",
+  "description": "OpenStreetMap is a collaborative project to create a free editable map of the world.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: [How Schoolchildren Became Pawns in Cameroon’s Anglophone Crisis](https://www.bellingcat.com/news/africa/2021/07/16/how-schoolchildren-became-pawns-in-cameroons-anglophone-crisis/)"
+ },
+ {
+  "name": "Bellingcat OpenStreetMap Search",
+  "url": "https://osm-search.bellingcat.com/",
+  "description": "A user interface to search OpenStreetMap data for features in proximity to each other.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/openstreetmap-search-tool"
+ },
+ {
+  "name": "Overpass Turbo",
+  "url": "https://overpass-turbo.eu/",
+  "description": "Overpass Turbo is a web-based tool for querying and visualizing OpenStreetMap crowd sourced data, aiding in extracting specific information like locations of amenities e.g.hospitals.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/overpass-turbo"
+ },
+ {
+  "name": "PeakVisor",
+  "url": "https://peakvisor.com/",
+  "description": "Dual window views for any global location: (1) a 2-D map & (2) a 3-D rendered terrain model, with photo fitting, shade/slope mapping, sun trails & weather data. In active development for OS research.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/peakvisor"
+ },
+ {
+  "name": "QGIS:",
+  "url": "https://www.qgis.org",
+  "description": "QGIS is a free Open Source Geographic Information System (GIS).",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/qgis"
+ },
+ {
+  "name": "Quick geolocation search",
+  "url": "https://cybdetective.com/quickgeolocationsearch.html",
+  "description": "A tool that brings several maps into one place for easy location search.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/quick-geolocation-search"
+ },
+ {
+  "name": "Satellites.pro",
+  "url": "https://satellites.pro/",
+  "description": "Satellites.pro allows open source researchers to quickly switch between several free satellite imagery and mapping services.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/satellites.pro"
+ },
+ {
+  "name": "ShadeMap",
+  "url": "https://shademap.app",
+  "description": "ShadeMap is a global simulation of mountain, building & tree shadows for a given date & time. Base data is free, but users can buy 30cm accurate data per sq km for areas of special focus.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/shademap"
+ },
+ {
+  "name": "ShadowMap",
+  "url": "https://app.shadowmap.org/",
+  "description": "Global map of 3D buildlings and the shadows they cast at a specific time a day",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/shadowmap"
+ },
+ {
+  "name": "Strava",
+  "url": "https://www.strava.com",
+  "description": "Social media fitness app with exercise map based on users' GPS data.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/strava"
+ },
+ {
+  "name": "Tencent Maps",
+  "url": "http://map.qq.com/",
+  "description": "Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offering satellite imagery, street maps, street view (coverage) and historical view perspectives.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/tencent-maps"
+ },
+ {
+  "name": "Topotijdreis.nl",
+  "url": "http://topotijdreis.nl",
+  "description": "Over 200 years of maps and topography from the Netherlands.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "UTM grid zones",
+  "url": "http://dmap.co.uk/utmworld.htm",
+  "description": "An overview of the Universal Transverse Mercator coordinate system.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps"
+ },
+ {
+  "name": "what3words",
+  "url": "http://what3words.com/",
+  "description": "A proprietary geocode system which identifies any location on the surface of the earth to a resolution of 3 metres. The identifier is a unique combination of three words, available in 60 languagues.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/what3words"
+ },
+ {
+  "name": "Wikimapia",
+  "url": "https://wikimapia.org/",
+  "description": "Wikimapia was a long-running collaborative mapping project that remains partially accessible, providing open source researchers with a unique database of historical, user-generated content.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/wikimapia"
+ },
+ {
+  "name": "Yandex Maps",
+  "url": "https://yandex.com/maps/",
+  "description": "A platform offering detailed maps, satellite imagery, street views (static & sometimes dynamic imagery, including aerial views). Often the best available data on Russia & surrounding regions.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "maps"
+  ],
+  "notes": "Source category: Maps. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/yandex-maps"
+ },
+ {
+  "name": "About Maps and Satellites",
+  "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/about-maps-and-satellites",
+  "description": "A guide to using map and satellite tools.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/about-maps-and-satellites"
+ },
+ {
+  "name": "Baidu Maps",
+  "url": "http://map.baidu.com/",
+  "description": "Baidu’s mapping service offering satellite imagery, street maps, and streetview (“Panorama” - zh:百度全景).",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/baidu-maps"
+ },
+ {
+  "name": "Bing Maps",
+  "url": "https://www.bing.com/maps/",
+  "description": "Bing Maps is a web mapping service provided by Microsoft that offers detailed geographical information and tools for route planning, location search, and satellite imagery.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/bing-maps"
+ },
+ {
+  "name": "Earth Explorer",
+  "url": "https://earthexplorer.usgs.gov/",
+  "description": "Query and order satellite images, aerial photographs, and cartographic products",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/earth-explorer"
+ },
+ {
+  "name": "The European Space Agency (ESA) - Earth Online",
+  "url": "https://earth.esa.int/eogateway/tools",
+  "description": "The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications from climate monitoring to natural disaster assessment.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/earth-online"
+ },
+ {
+  "name": "Google Earth Engine",
+  "url": "https://code.earthengine.google.com/",
+  "description": "Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/google-earth-engine"
+ },
+ {
+  "name": "Google Earth Pro",
+  "url": "https://www.google.com/earth/about/versions/",
+  "description": "Google Earth is a geospatial tool that provides detailed, global satellite imagery, maps, 3D terrain models, and the ability to explore geographic data interactively.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/google-earth-pro"
+ },
+ {
+  "name": "Google Maps",
+  "url": "https://www.google.com/maps",
+  "description": "Google Maps provides mapping information, satellite imagery and Google Street View imagery including historical Street View images.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/google-maps"
+ },
+ {
+  "name": "GovMap",
+  "url": "https://www.govmap.gov.il/",
+  "description": "GovMap provides an interactive map of Israel, offering users a wide range of data including property boundaries, planning information, and infrastructure details.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/govmap"
+ },
+ {
+  "name": "HERE WeGo",
+  "url": "https://wego.here.com/",
+  "description": "Mapping service that can serve as an alternative to Google Maps or Apple Maps.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery"
+ },
+ {
+  "name": "Index Database",
+  "url": "https://www.indexdatabase.de/",
+  "description": "A database of remote sensing indices and satellite imaging sensors",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/index-database"
+ },
+ {
+  "name": "Mapa.sk",
+  "url": "http://mapa.sk/",
+  "description": "Mapping service for Slovakia",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery"
+ },
+ {
+  "name": "Mappy",
+  "url": "http://en.mappy.com/",
+  "description": "Mapping service (and streetview in a couple of French cities \\[double check this!])",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery"
+ },
+ {
+  "name": "MapSwitcher",
+  "url": "https://github.com/david-r-edgar/MapSwitcher",
+  "description": "Chrome extension switches  between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source map.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/mapswitcher"
+ },
+ {
+  "name": "NASA Worldview",
+  "url": "https://worldview.earthdata.nasa.gov/",
+  "description": "NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere, land, and oceans.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/nasa-worldview"
+ },
+ {
+  "name": "OpenAerialMap",
+  "url": "https://openaerialmap.org/",
+  "description": "Platform for accessing open-licensed satellite and unmanned aerial vehicle (UAV) imagery",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/openaerialmap"
+ },
+ {
+  "name": "OrbTrack",
+  "url": "https://www.orbtrack.org",
+  "description": "Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for 5 days ahead, + International Space Station video feed.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/orbtrack"
+ },
+ {
+  "name": "Planet Labs",
+  "url": "https://www.planet.com/",
+  "description": "Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/planet-labs"
+ },
+ {
+  "name": "QGIS:",
+  "url": "https://www.qgis.org",
+  "description": "QGIS is a free Open Source Geographic Information System (GIS).",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/qgis"
+ },
+ {
+  "name": "Radar Interference Tracker (RIT)",
+  "url": "https://ollielballinger.users.earthengine.app/view/bellingcat-radar-interference-tracker#lon=49.9507;lat=26.6056;zoom=4;",
+  "description": "Bellingcat's radar interference tracker can be used to locate and monitor active military radar systems.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/radar-interference-tracker"
+ },
+ {
+  "name": "RAMMB SLIDER",
+  "url": "https://rammb-slider.cira.colostate.edu/",
+  "description": "Real-time weather satellites of the entire globe",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/rammb-slider"
+ },
+ {
+  "name": "Satellites.pro",
+  "url": "https://satellites.pro/",
+  "description": "Satellites.pro allows open source researchers to quickly switch between several free satellite imagery and mapping services.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/satellites.pro"
+ },
+ {
+  "name": "Copernicus Browser (formerly Sentinel Hub Playground, EO Browser)",
+  "url": "https://browser.dataspace.copernicus.eu/",
+  "description": "A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with data updated every 5-10 days.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/sentinal-hub-playground"
+ },
+ {
+  "name": "Tencent Maps",
+  "url": "http://map.qq.com/",
+  "description": "Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offering satellite imagery, street maps, street view (coverage) and historical view perspectives.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/tencent-maps"
+ },
+ {
+  "name": "what3words",
+  "url": "http://what3words.com/",
+  "description": "A proprietary geocode system which identifies any location on the surface of the earth to a resolution of 3 metres. The identifier is a unique combination of three words, available in 60 languagues.",
+  "category": "maps-geospatial-data",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/what3words"
+ },
+ {
+  "name": "Yandex Maps",
+  "url": "https://yandex.com/maps/",
+  "description": "A platform offering detailed maps, satellite imagery, street views (static & sometimes dynamic imagery, including aerial views). Often the best available data on Russia & surrounding regions.",
+  "category": "maps-geospatial-data",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "satellite-imagery"
+  ],
+  "notes": "Source category: Satellite Imagery. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/yandex-maps"
+ },
+ {
+  "name": "About Maps and Satellites",
+  "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/about-maps-and-satellites",
+  "description": "A guide to using map and satellite tools.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/about-maps-and-satellites"
+ },
+ {
+  "name": "Baidu Maps",
+  "url": "http://map.baidu.com/",
+  "description": "Baidu’s mapping service offering satellite imagery, street maps, and streetview (“Panorama” - zh:百度全景).",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/baidu-maps"
+ },
+ {
+  "name": "Bing Maps",
+  "url": "https://www.bing.com/maps/",
+  "description": "Bing Maps is a web mapping service provided by Microsoft that offers detailed geographical information and tools for route planning, location search, and satellite imagery.",
+  "category": "geolocation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/bing-maps"
+ },
+ {
+  "name": "Carte.ma",
+  "url": "http://carte.ma/",
+  "description": "Mapping/streetview service for Morocco",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View"
+ },
+ {
+  "name": "GeoHints",
+  "url": "https://geohints.com/",
+  "description": "GeoHints is a website that provides information about things like traffic lights, utility poles, bollards etc. for different regions of the world to help geolocate a location.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/geohints"
+ },
+ {
+  "name": "Google Earth Pro",
+  "url": "https://www.google.com/earth/about/versions/",
+  "description": "Google Earth is a geospatial tool that provides detailed, global satellite imagery, maps, 3D terrain models, and the ability to explore geographic data interactively.",
+  "category": "geolocation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/google-earth-pro"
+ },
+ {
+  "name": "Google Maps",
+  "url": "https://www.google.com/maps",
+  "description": "Google Maps provides mapping information, satellite imagery and Google Street View imagery including historical Street View images.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/google-maps"
+ },
+ {
+  "name": "KartaView",
+  "url": "https://kartaview.org/map",
+  "description": "KartaView is a crowdsourced platform for street view imagery.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/kartaview"
+ },
+ {
+  "name": "Mapillary",
+  "url": "https://www.mapillary.com/",
+  "description": "Mapillary is a crowdsourced street-level imagery platform.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/mapillary"
+ },
+ {
+  "name": "MapSwitcher",
+  "url": "https://github.com/david-r-edgar/MapSwitcher",
+  "description": "Chrome extension switches  between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source map.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/mapswitcher"
+ },
+ {
+  "name": "Photo-Map.RU",
+  "url": "http://photo-map.ru/",
+  "description": "Geotagged VK posts.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View"
+ },
+ {
+  "name": "Tencent Maps",
+  "url": "http://map.qq.com/",
+  "description": "Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offering satellite imagery, street maps, street view (coverage) and historical view perspectives.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/tencent-maps"
+ },
+ {
+  "name": "what3words",
+  "url": "http://what3words.com/",
+  "description": "A proprietary geocode system which identifies any location on the surface of the earth to a resolution of 3 metres. The identifier is a unique combination of three words, available in 60 languagues.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/what3words"
+ },
+ {
+  "name": "Wikimapia",
+  "url": "https://wikimapia.org/",
+  "description": "Wikimapia was a long-running collaborative mapping project that remains partially accessible, providing open source researchers with a unique database of historical, user-generated content.",
+  "category": "geolocation",
+  "pricing": "free",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/wikimapia"
+ },
+ {
+  "name": "Yandex Maps",
+  "url": "https://yandex.com/maps/",
+  "description": "A platform offering detailed maps, satellite imagery, street views (static & sometimes dynamic imagery, including aerial views). Often the best available data on Russia & surrounding regions.",
+  "category": "geolocation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "geolocation",
+   "address"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "street-view"
+  ],
+  "notes": "Source category: Street View. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/yandex-maps"
+ },
+ {
+  "name": "192.com",
+  "url": "http://www.192.com/",
+  "description": "Searching for someone's address in the UK, phone number and who they live with according to electoral rolls.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "phone"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "phone"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞 United Kingdom"
+ },
+ {
+  "name": "Blackbird",
+  "url": "https://github.com/p1ngul1n0/blackbird",
+  "description": "Check usernames and email addresses on websites and social networks",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "username",
+   "email"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "username",
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/blackbird"
+ },
+ {
+  "name": "DiscordLeaks",
+  "url": "https://discordleaks.unicornriot.ninja/",
+  "description": "Search hundreds of thousands of messages leaked from 290+ white-supremacist / nazi discord servers.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/discordleaks"
+ },
+ {
+  "name": "Eniro",
+  "url": "https://www.eniro.se/",
+  "description": "Yellow Pages (Swedish Edition)",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞 Sweden"
+ },
+ {
+  "name": "FastPeopleSearch",
+  "url": "http://fastpeoplesearch.com/",
+  "description": "Mostly good for US.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞🗣️ mostly United States"
+ },
+ {
+  "name": "GetContact",
+  "url": "https://www.getcontact.com/en/",
+  "description": "Phonenumber ID app - draws from crowdsourced contactbooks",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "phone"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "phone"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞 Do not give permission to your actual contact lists."
+ },
+ {
+  "name": "Ghunt",
+  "url": "https://github.com/mxrch/GHunt",
+  "description": "A command line tool for obtaining information about Google accounts.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/ghunt"
+ },
+ {
+  "name": "Have I Been Pwned?",
+  "url": "https://haveibeenpwned.com/",
+  "description": "Does an email address appear in data breaches?",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "email",
+   "username"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/have-i-been-pwned"
+ },
+ {
+  "name": "Hitta.se",
+  "url": "https://www.hitta.se/",
+  "description": "Mapping service for Sweden",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/hitta.se"
+ },
+ {
+  "name": "Intelx.io",
+  "url": "http://intelx.io/",
+  "description": "Find user details in data breaches",
+  "category": "people-search",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "name",
+   "email",
+   "username"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/intelx.io"
+ },
+ {
+  "name": "Leak-Lookup",
+  "url": "https://leak-lookup.com/",
+  "description": "An online tool that allows you to search across public data breaches to surface credentials that may have been compromised.",
+  "category": "people-search",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "name",
+   "email",
+   "username"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/leak-lookup"
+ },
+ {
+  "name": "Maigret",
+  "url": "https://github.com/soxoj/maigret",
+  "description": "Maigret is a Python script that retrieves user information by searching for usernames across various websites and social media platforms.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "username"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "username"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/maigret"
+ },
+ {
+  "name": "Bellingcat Name Variant Search",
+  "url": "https://bellingcat.github.io/name-variant-search/",
+  "description": "Quickly search many variants of a person's name on Google",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/name-variant-search"
+ },
+ {
+  "name": "Namechk",
+  "url": "https://namechk.com/",
+  "description": "A username and domain search tool that checks on which platforms or domain a given username is registered.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "username"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "username"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/namechk"
+ },
+ {
+  "name": "NeutrOSINT",
+  "url": "https://github.com/Kr0wZ/NeutrOSINT",
+  "description": "A tool for investigating Proton Mail addresses.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/neutrosint"
+ },
+ {
+  "name": "NigeriaPhonebook",
+  "url": "https://nigeriaphonebook.com/",
+  "description": "Look up by name, state, and phone number. Last names are partially censored for free accounts.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "phone"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "phone"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞🗣️ Nigeria"
+ },
+ {
+  "name": "Person Lookup",
+  "url": "https://personlookup.co.za/",
+  "description": "find individuals, phonenumbers, and adresses",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "phone"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "phone"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞🗣️ South Africa"
+ },
+ {
+  "name": "Ratsit",
+  "url": "https://www.ratsit.se/",
+  "description": "Look up phone numbers/names (Sweden)",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "phone"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "phone"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞🗣️ Sweden"
+ },
+ {
+  "name": "Search Systems",
+  "url": "https://publicrecords.searchsystems.net/",
+  "description": "Finding public record information online in over 70,000 databases organized by type and location to help you find property, criminal, court, birth, death, marriage, divorce records, licenses, deeds, mortgages, corporate records, business registration, and many other public record resources.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞🗣️ US"
+ },
+ {
+  "name": "Sherlock",
+  "url": "./#url",
+  "description": "Allows a user to search for the presence of specific usernames across more than 400 websites and social networks.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "username"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "username"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/sherlock"
+ },
+ {
+  "name": "Swedish Name Register",
+  "url": "https://scb.se/hitta-statistik/sverige-i-siffror/namnsok/",
+  "description": "Find out how common a name is in Sweden based on census data",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 🗣️ Sweden"
+ },
+ {
+  "name": "The Law Pages",
+  "url": "https://www.thelawpages.com/court-cases/court-case-search.php?mode=1",
+  "description": "Search criminal court case details in the UK, such as sentence, hearing, defendant, etc.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 🗣️ United Kingdom"
+ },
+ {
+  "name": "ThisNumber",
+  "url": "https://sur.ly/o/numberway.com/AA000014",
+  "description": "An international directory of white pages and yellow pages phone books, and online directory enquiries. It's a free, independent and up-to-date guide to telephone directories on the web.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "phone"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "phone"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞"
+ },
+ {
+  "name": "TrueCaller",
+  "url": "https://www.truecaller.com/",
+  "description": "Truecaller is a caller ID app that identifies incoming calls, blocks unwanted numbers, and gathers phone numbers and names from contact lists. It also performs a reverse phone number search.",
+  "category": "people-search",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "name",
+   "phone"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "phone"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/truecaller"
+ },
+ {
+  "name": "TruffleHog",
+  "url": "https://trufflesecurity.com/trufflehog",
+  "description": "Find leaked credentials.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/trufflehog"
+ },
+ {
+  "name": "USA court case databases",
+  "url": "./#case-databases-by-state",
+  "description": "State-by-state guide for researching criminal and civil court cases",
+  "category": "people-search",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/us-court-case-databases"
+ },
+ {
+  "name": "WhatsMyName",
+  "url": "https://whatsmyname.app/",
+  "description": "Search for usernames on several hundred platforms",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name",
+   "username"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile",
+   "username"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/whats-my-name"
+ },
+ {
+  "name": "Worldwide Osint Tools map",
+  "url": "https://cipher387.github.io/osintmap/",
+  "description": "Global overview of yellow/white pages, court cases, business registries etc.",
+  "category": "people-search",
+  "pricing": "free",
+  "selectorsIn": [
+   "name"
+  ],
+  "selectorsOut": [
+   "name",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "people"
+  ],
+  "notes": "Source category: People. Bellingcat toolkit page: 📞🗣️"
+ },
+ {
+  "name": "Facebook Video Downloader",
+  "url": "http://fdown.net/",
+  "description": "Handy website to download public Facebook videos. Copy paste the URL of the video and download it in the available definition formats.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "facebook"
+  ],
+  "notes": "Source category: Facebook"
+ },
+ {
+  "name": "HaveIBeenZuckered",
+  "url": "https://haveibeenzuckered.com/",
+  "description": "Check if a telephone number is present within the Facebook data breach.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "phone",
+   "email",
+   "username"
+  ],
+  "selectorsOut": [
+   "phone",
+   "name",
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "facebook"
+  ],
+  "notes": "Source category: Facebook"
+ },
+ {
+  "name": "Meta Content Library",
+  "url": "https://transparency.meta.com/researchtools/meta-content-library",
+  "description": "Meta Content Library is a controlled-access tool that lets approved academic and non-profit researchers search the full public archive of Facebook, Instagram, and Threads posts, in near-real-time.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "facebook"
+  ],
+  "notes": "Source category: Facebook. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/meta-content-library"
+ },
+ {
+  "name": "Who posted what?",
+  "url": "https://whopostedwhat.com/",
+  "description": "A tool that allows a keyword search on Facebook on a specific date or within a specific time frame.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "facebook"
+  ],
+  "notes": "Source category: Facebook. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/who-posted-what"
+ },
+ {
+  "name": "Instagram Location Search",
+  "url": "https://github.com/bellingcat/instagram-location-search/tree/main",
+  "description": "A command line tool that allows users to find location tags near a specified latitude and longitude.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "vendor",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "instagram"
+  ],
+  "notes": "Source category: Instagram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/instagram-location-search"
+ },
+ {
+  "name": "InstaLoader",
+  "url": "https://instaloader.github.io",
+  "description": "Download pictures or videos (with metadata) from Instagram.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "instagram"
+  ],
+  "notes": "Source category: Instagram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/instaloader"
+ },
+ {
+  "name": "Story Saver",
+  "url": "https://storysaver.net",
+  "description": "Download public Instagram Stories, Highlights and Videos.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "instagram"
+  ],
+  "notes": "Source category: Instagram"
+ },
+ {
+  "name": "Blackbird",
+  "url": "https://github.com/p1ngul1n0/blackbird",
+  "description": "Check usernames and email addresses on websites and social networks",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "username",
+   "name",
+   "email"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile",
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/blackbird"
+ },
+ {
+  "name": "Have I Been Pwned?",
+  "url": "https://haveibeenpwned.com/",
+  "description": "Does an email address appear in data breaches?",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "email",
+   "username"
+  ],
+  "selectorsOut": [
+   "email",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/have-i-been-pwned"
+ },
+ {
+  "name": "holehe",
+  "url": "https://github.com/megadose/holehe",
+  "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "email",
+   "username"
+  ],
+  "selectorsOut": [
+   "email"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms"
+ },
+ {
+  "name": "Intelx.io",
+  "url": "http://intelx.io/",
+  "description": "Find user details in data breaches",
+  "category": "social-networks",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "email",
+   "username"
+  ],
+  "selectorsOut": [
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/intelx.io"
+ },
+ {
+  "name": "Namechk",
+  "url": "https://namechk.com/",
+  "description": "A username and domain search tool that checks on which platforms or domain a given username is registered.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/namechk"
+ },
+ {
+  "name": "Open Measures",
+  "url": "https://public.openmeasures.io",
+  "description": "Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.",
+  "category": "social-networks",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/open-measures"
+ },
+ {
+  "name": "Sherlock",
+  "url": "./#url",
+  "description": "Allows a user to search for the presence of specific usernames across more than 400 websites and social networks.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/sherlock"
+ },
+ {
+  "name": "Social-searcher",
+  "url": "https://www.social-searcher.com/",
+  "description": "Search hashtags and usernames across various platforms.",
+  "category": "social-networks",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms"
+ },
+ {
+  "name": "WhatsMyName",
+  "url": "https://whatsmyname.app/",
+  "description": "Search for usernames on several hundred platforms",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/whats-my-name"
+ },
+ {
+  "name": "Zeeschuimer",
+  "url": "\\",
+  "description": "Zeeschuimer is a browser extension for collecting social media posts that are visible in your web browser, enabling systematic analysis of content from platforms that are hard to scrape via APIs.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "multiple-platforms"
+  ],
+  "notes": "Source category: Multiple Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/zeeschuimer"
+ },
+ {
+  "name": "4plebs",
+  "url": "https://4plebs.org/",
+  "description": "Searchable archive of specific 4chan boards. Makes it possible to read threads after they are purged from 4chan.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/4plebs"
+ },
+ {
+  "name": "Blackbird",
+  "url": "https://github.com/p1ngul1n0/blackbird",
+  "description": "Check usernames and email addresses on websites and social networks",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "username",
+   "name",
+   "email"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile",
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/blackbird"
+ },
+ {
+  "name": "BskyFollowFinder",
+  "url": "https://bsky-follow-finder.theo.io/",
+  "description": "A tool that identifies which Bluesky accounts are followed by a profile’s contacts but not by that profile. Can be used for expanding networks and social graph analysis.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/bluesky-network-analyzer"
+ },
+ {
+  "name": "BskyThreadReader",
+  "url": "https://bskythreadreader.glitch.me/",
+  "description": "BskyThreadReader is a web-based Bluesky thread viewer that allows anyone to read and share Bluesky threads without logging in.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/bskythreadreader"
+ },
+ {
+  "name": "Disboard",
+  "url": "https://disboard.org/servers",
+  "description": "Search for public discord servers",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "Discord Chat Exporter",
+  "url": "https://github.com/Tyrrrz/DiscordChatExporter",
+  "description": "A tool for exporting Discord chat logs in multiple formats.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/discord-chat-exporter"
+ },
+ {
+  "name": "DiscordLeaks",
+  "url": "https://discordleaks.unicornriot.ninja/",
+  "description": "Search hundreds of thousands of messages leaked from 290+ white-supremacist / nazi discord servers.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/discordleaks"
+ },
+ {
+  "name": "F5Bot",
+  "url": "https://f5bot.com/",
+  "description": "Sends you an email when a keyword is mentioned on Reddit.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "email"
+  ],
+  "selectorsOut": [
+   "email",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "FindClone",
+  "url": "https://findclone.ru/",
+  "description": "Searches images from VK profiles (within certain limits)",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "Google Account Finder (EPIEOS)",
+  "url": "https://tools.epieos.com/google-account.php",
+  "description": "Find the profile picture and public Google Map Reviews + Photos associated with a G-mail adress. Also checks for phone numbers, and checks for email addresses on social networks",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "email",
+   "phone"
+  ],
+  "selectorsOut": [
+   "email",
+   "social-profile",
+   "phone",
+   "name"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "Gravatar Email Checker",
+  "url": "https://en.gravatar.com/site/check/",
+  "description": "Check if an email address has been used to comment on blogs and whether there is a profile image attached.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "email"
+  ],
+  "selectorsOut": [
+   "email",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "LinkdTime",
+  "url": "https://github.com/Lucksi/LinkdTime",
+  "description": "Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/linkdtime"
+ },
+ {
+  "name": "NameMC",
+  "url": "https://namemc.com/",
+  "description": "Find usernames, track username changes on minecraft",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "Open Measures",
+  "url": "https://public.openmeasures.io",
+  "description": "Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.",
+  "category": "social-networks",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/open-measures"
+ },
+ {
+  "name": "Photo-Map.RU",
+  "url": "http://photo-map.ru/",
+  "description": "Geotagged VK posts.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "PSNprofiles",
+  "url": "https://psnprofiles.com/",
+  "description": "Search PlayStation username, see daily activity, games played, country, and profile pic",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "Sherlock",
+  "url": "./#url",
+  "description": "Allows a user to search for the presence of specific usernames across more than 400 websites and social networks.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "username",
+   "social-profile"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/sherlock"
+ },
+ {
+  "name": "Snap Map",
+  "url": "https://map.snapchat.com",
+  "description": "Searchable map of geotagged snaps.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/snap-map"
+ },
+ {
+  "name": "SteamId.uk",
+  "url": "http://steamid.uk/",
+  "description": "Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) seach based on previously used names (paid).",
+  "category": "social-networks",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "Strava",
+  "url": "https://www.strava.com",
+  "description": "Social media fitness app with exercise map based on users' GPS data.",
+  "category": "social-networks",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/strava"
+ },
+ {
+  "name": "Vk.watch",
+  "url": "http://vk.watch/",
+  "description": "See public comments left by an account, profile photos used, and very basic facial recognition",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "face"
+  ],
+  "selectorsOut": [
+   "face",
+   "social-profile",
+   "image"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "XboxGamertag",
+  "url": "https://xboxgamertag.com/",
+  "description": "Search gamertags, see games played and recorded game clips",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "other-platforms"
+  ],
+  "notes": "Source category: Other Platforms"
+ },
+ {
+  "name": "Intelligence X Telegram Search",
+  "url": "https://intelx.io/tools?tab=telegram",
+  "description": "Google-based search engine for Telegram (includes Telegago)",
+  "category": "messaging",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram"
+ },
+ {
+  "name": "Open Measures",
+  "url": "https://public.openmeasures.io",
+  "description": "Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.",
+  "category": "messaging",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/open-measures"
+ },
+ {
+  "name": "Telegago",
+  "url": "https://cse.google.com/cse?cx=006368593537057042503:efxu7xprihg",
+  "description": "Telegago is a Google Custom Search Engine tailored for searching public Telegram content for OSINT purposes.",
+  "category": "messaging",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/telegago"
+ },
+ {
+  "name": "Telegram Group Joiner",
+  "url": "https://bellingcat.github.io/telegram-group-joiner/",
+  "description": "Automate joining multiple Telegram groups and channels, ideal for researchers monitoring specific topics.",
+  "category": "messaging",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/telegram-group-joiner"
+ },
+ {
+  "name": "Telegram Phone Number Checker",
+  "url": "https://colab.research.google.com/github/bellingcat/open-source-research-notebooks/blob/main/notebooks/bellingcat/telegram-phone-number-checker.ipynb",
+  "description": "Command line tool for checking if phone numbers are connected to Telegram accounts and retrieving related information where available.",
+  "category": "messaging",
+  "pricing": "free",
+  "selectorsIn": [
+   "phone"
+  ],
+  "selectorsOut": [
+   "phone",
+   "name"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/telegram-phone-number-checker"
+ },
+ {
+  "name": "TelegramDB",
+  "url": "https://www.telegramdb.org/",
+  "description": "TelegramDB is a searchable database service that allows users to explore public Telegram groups and channels via a dedicated bot.",
+  "category": "messaging",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/telegramdb"
+ },
+ {
+  "name": "Telemetrio",
+  "url": "https://telemetr.io/",
+  "description": "Telemetr.io offers a range of Telegram-related services based on a catalog of Telegram channels: country and category-specific rankings, curated collections, real-time event tracking, and an API.",
+  "category": "messaging",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/telemetrio"
+ },
+ {
+  "name": "Telemetry",
+  "url": "https://www.telemetryapp.io/",
+  "description": "An analytical search tool for Telegram groups and channels.",
+  "category": "messaging",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/telemetry"
+ },
+ {
+  "name": "Telepathy",
+  "url": "https://github.com/proseltd/Telepathy-Community?utm_source=chatgpt.com",
+  "description": "Telepathy is a versatile Telegram toolkit for OSINT analysts, enabling chat archiving, memberlist gathering, user location lookup, top poster analysis, message mapping, and more.",
+  "category": "messaging",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/telepathy"
+ },
+ {
+  "name": "TGStat",
+  "url": "https://tgstat.com/",
+  "description": "TGStat is a web-based analytics tool for Telegram that monitors active channels and provides profile analytics and statistics. It tracks channel subscribers’ growth rate, reach, and citation index.",
+  "category": "messaging",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/tgstat"
+ },
+ {
+  "name": "tlgrm.eu channels",
+  "url": "http://tlgrm.eu/channels",
+  "description": "Search Telegram channels.",
+  "category": "messaging",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "telegram"
+  ],
+  "notes": "Source category: Telegram"
+ },
+ {
+  "name": "Bellingcat TikTok Date Extract",
+  "url": "https://bellingcat.github.io/tiktok-timestamp",
+  "description": "Get the exact upload date + time for tiktok video urls",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "tiktok"
+  ],
+  "notes": "Source category: Tiktok. Bellingcat toolkit page: Guide: [How to Investigate TikTok Like a Pro - Part II: Using TikTok for Ukraine Research](https://www.bellingcat.com/resources/how-tos/2022/11/02/how-to-investigate-tiktok-using-tiktok-ukraine-research/)"
+ },
+ {
+  "name": "Bellingcat TikTok Hashtag Analysis",
+  "url": "https://github.com/bellingcat/tiktok-hashtag-analysis",
+  "description": "Archive content and metadata from TikTok posts that contain one or more specified hashtags",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "vendor",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "tiktok"
+  ],
+  "notes": "Source category: Tiktok"
+ },
+ {
+  "name": "Open Measures",
+  "url": "https://public.openmeasures.io",
+  "description": "Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.",
+  "category": "social-networks",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "tiktok"
+  ],
+  "notes": "Source category: Tiktok. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/open-measures"
+ },
+ {
+  "name": "TikTokApi",
+  "url": "https://pypi.org/project/TikTokApi",
+  "description": "Python - This is an unofficial api wrapper for TikTok.com in python. With this api you are able to call most trending and fetch specific user information as well as much more.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "tiktok"
+  ],
+  "notes": "Source category: Tiktok"
+ },
+ {
+  "name": "Hoaxy",
+  "url": "https://hoaxy.osome.iu.edu/",
+  "description": "Hoaxy is a web-based search and visualization tool. It helps visualize the spread of information on Bluesky and X (Twitter).",
+  "category": "social-networks",
+  "pricing": "freemium",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "twitter-x"
+  ],
+  "notes": "Source category: Twitter/X. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/hoaxy"
+ },
+ {
+  "name": "Twitter/X Advanced Search",
+  "url": "https://x.com/search-advanced",
+  "description": "Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criteria such as location, user, date or popularity.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "twitter-x"
+  ],
+  "notes": "Source category: Twitter/X. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/twitter-advanced-search"
+ },
+ {
+  "name": "Twitter/X Location Search",
+  "url": "https://twitter.com/explore",
+  "description": "Search for geocoded tweets by their distance from some coordinates.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "twitter-x"
+  ],
+  "notes": "Source category: Twitter/X. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/twitter-location-search"
+ },
+ {
+  "name": "Twitter Video Downloader",
+  "url": "https://twittervideodownloader.com/",
+  "description": "Download videos from X (formerly Twitter) by converting tweet URLs into downloadable video links.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "twitter-x"
+  ],
+  "notes": "Source category: Twitter/X. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/twitter-video-downloader"
+ },
+ {
+  "name": "Ghunt",
+  "url": "https://github.com/mxrch/GHunt",
+  "description": "A command line tool for obtaining information about Google accounts.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "youtube"
+  ],
+  "notes": "Source category: Youtube. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/ghunt"
+ },
+ {
+  "name": "MW Geofind",
+  "url": "https://mattw.io/youtube-geofind/location",
+  "description": "MW Geofind is a tool designed to help users identify the filming location of YouTube videos, facilitating the exploration of global content from a geographical perspective.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "youtube"
+  ],
+  "notes": "Source category: Youtube. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/mw-geofind"
+ },
+ {
+  "name": "RadiTube",
+  "url": "https://tool.raditube.com/",
+  "description": "A search engine that searches the subtitles of about 380 (right/left) radical YouTube channels. You query for example for q says\" of \"voter fraud\" in 170,000 videos, and the search results will link you to the specific time-code in the video.",
+  "category": "social-networks",
+  "pricing": "free",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "youtube"
+  ],
+  "notes": "Source category: Youtube"
+ },
+ {
+  "name": "YouTube Metadata",
+  "url": "https://mattw.io/youtube-metadata/",
+  "description": "An alternative to Amnesty's YT viewer, with slightly more information.",
+  "category": "social-networks",
+  "pricing": "free",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "youtube"
+  ],
+  "notes": "Source category: Youtube"
+ },
+ {
+  "name": "ADS-B Exchange",
+  "url": "https://globe.adsbexchange.com/",
+  "description": "Live flight tracker (including many miltiary aircraft). Live data available for the past month. Historical data available for purchase by request.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️ [A Beginner's Guide To Flight Tracking](https://www.bellingcat.com/resources/how-tos/2019/10/15/a-beginners-guide-to-flight-tracking/)"
+ },
+ {
+  "name": "Airfleets",
+  "url": "http://airfleets.net/home",
+  "description": "Database for aircraft details.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️"
+ },
+ {
+  "name": "Airframes",
+  "url": "http://www.airframes.org/",
+  "description": "A database of aircraft details",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️"
+ },
+ {
+  "name": "AirNav RadarBox",
+  "url": "http://radarbox24.com/",
+  "description": "Live flight tracker.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️"
+ },
+ {
+  "name": "Aviation Safety Network",
+  "url": "https://aviation-safety.net/",
+  "description": "Aircraft incident database; can be searched by country, registration, year, etc.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️"
+ },
+ {
+  "name": "Carnet.AI",
+  "url": "http://carnet.ai/",
+  "description": "API which is capable of recognizing the Make, Model and Generation of most cars built since 1995, with 97+% accuracy.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: 🚗"
+ },
+ {
+  "name": "Chronotrains",
+  "url": "https://www.chronotrains.com/en",
+  "description": "Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel time to see reachable destinations by train.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/chronotrains"
+ },
+ {
+  "name": "Equasis",
+  "url": "https://www.equasis.org/",
+  "description": "Equasis provides vessel ownership and safety records, as well as shipping company fleet information.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/equasis"
+ },
+ {
+  "name": "Federal Aviation Administration",
+  "url": "http://registry.faa.gov/aircraftinquiry/NNum\\_inquiry.aspx",
+  "description": "Nationwide Plane Registry. Search by N-Number (a.k.a. callsign). Comprehensive list of privately owned planes in the US.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️"
+ },
+ {
+  "name": "FlightAware",
+  "url": "https://www.flightaware.com/live/",
+  "description": "FlightAware is a global flight-tracking platform that provides real-time data on aircraft movements. It offers live tracking, historical data, and predictive analytics via its website and apps.",
+  "category": "transportation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/flightaware"
+ },
+ {
+  "name": "Flightradar24",
+  "url": "https://www.flightradar24.com",
+  "description": "Flightradar24, a real-time flight tracking service, that provides comprehensive information about aircraft positions, flight numbers, routes, historical data, detailed aircraft specifications.",
+  "category": "transportation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/flightradar24"
+ },
+ {
+  "name": "GPSJam",
+  "url": "https://gpsjam.org/",
+  "description": "GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing areas experiencing interference.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/gpsjam"
+ },
+ {
+  "name": "Illegal, unreported, unregular fishing Vessels List",
+  "url": "https://iuu-vessels.org/Home/Search",
+  "description": "A combined list of known illegal, unreported, unregular fishing vessels",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ⛵"
+ },
+ {
+  "name": "IMO Registry",
+  "url": "http://webaccounts.imo.org/",
+  "description": "Ship/shipping-related information from the IMO",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ⛵"
+ },
+ {
+  "name": "License Plate Maps",
+  "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/license-plate-maps",
+  "description": "Collection of tools and maps for discerning license plates by country",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "vendor",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/license-plate-maps"
+ },
+ {
+  "name": "Live ATC",
+  "url": "http://liveatc.net/",
+  "description": "Audio from air traffic control towers in the United States. Aircraft have to identify themselves to ATC towers, so in cases where aircraft are trying to obscure their information from other sites, it might be another way to grab tail numbers or just generally track flights. More complicated to use than e.g. Flightradar24.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️"
+ },
+ {
+  "name": "MarineTraffic",
+  "url": "https://www.marinetraffic.com/en/ais/home/centerx:25.0/centery:-34.5/zoom:8",
+  "description": "An open, community-based project, providing (near) real-time information on the movements of ships and their locations in harbours and ports.",
+  "category": "transportation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/marinetraffic"
+ },
+ {
+  "name": "OpenRailwayMap",
+  "url": "https://wiki.openstreetmap.org/wiki/OpenRailwayMap",
+  "description": "a detailed online map of the world's railway infrastructure",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: 🚂"
+ },
+ {
+  "name": "OpenSky-Network",
+  "url": "http://opensky-network.org/",
+  "description": "Community, open source flight tracking network.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️"
+ },
+ {
+  "name": "PlaneFinder",
+  "url": "http://planefinder.net/",
+  "description": "Live flight tracker.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ✈️"
+ },
+ {
+  "name": "ShipFinder",
+  "url": "https://shipfinder.co/",
+  "description": "ShipFinder is an application designed to track vessels in near real-time across the globe, available on iPhone and Android platforms (but no longer PC)",
+  "category": "transportation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "phone",
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "phone",
+   "name",
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/shipfinder"
+ },
+ {
+  "name": "ShipSpotting.com",
+  "url": "http://shipspotting.com/",
+  "description": "Community website for uploading pictures & details of vessels spotted around the world.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ⛵"
+ },
+ {
+  "name": "Tokyo MOU",
+  "url": "http://www.tokyo-mou.org/",
+  "description": "Ship inspection/history database (PSC Database)",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: ⛵"
+ },
+ {
+  "name": "Transit Visualisation",
+  "url": "https://mobility.portal.geops.io/?baselayers=geops.travic",
+  "description": "ch.sbb.netzkarte,ch.sbb.netzkarte.dark\\&lang=en\\&layers=strassennamen,haltekanten,haltestellen,pois,p%C3%A4rke,geops.travic.live\\&x=810000\\&y=5900000\\&z=5.5,(public) transit routes visualized - near global",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: 🚂"
+ },
+ {
+  "name": "VesselFinder",
+  "url": "https://www.vesselfinder.com/",
+  "description": "Live marine vessel tracker",
+  "category": "transportation",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "vehicle-plate"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/vesselfinder"
+ },
+ {
+  "name": "WikiRoutes",
+  "url": "http://wikiroutes.info/",
+  "description": "Public transport database.",
+  "category": "transportation",
+  "pricing": "free",
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "transport"
+  ],
+  "notes": "Source category: Transport. Bellingcat toolkit page: 🚂"
+ },
+ {
+  "name": "Distill.io",
+  "url": "https://distill.io/",
+  "description": "Distill.io is a website change monitoring tool that allows users to track changes on web pages.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/distill"
+ },
+ {
+  "name": "DNS History",
+  "url": "http://completedns.com/",
+  "description": "Collection of historical DNS information.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites"
+ },
+ {
+  "name": "DomainTools Whois Lookup",
+  "url": "https://whois.domaintools.com/",
+  "description": "DomainTools Whois provides detailed domain name registration information, and can be used to investigate details about domains or IP addresses.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/domaintools-whois-lookup"
+ },
+ {
+  "name": "Geo Data Tool",
+  "url": "https://www.geodatatool.com/",
+  "description": "IP geolocation service to identify the location and other technical information associated to IP addresses.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/geo-data-tool"
+ },
+ {
+  "name": "Grep.app",
+  "url": "https://grep.app/",
+  "description": "grep.app is a free web-based search engine that allows users to search the contents of public GitHub repositories.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/grep.app"
+ },
+ {
+  "name": "ICANN Lookup",
+  "url": "https://lookup.icann.org/",
+  "description": "This tool allows you to search for the current registration data of internet domain names.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/icann-lookup"
+ },
+ {
+  "name": "IDN Checker",
+  "url": "https://holdintegrity.com/checker",
+  "description": "IDN Checker detects visually similar versions of a domain.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/idn-checker"
+ },
+ {
+  "name": "Intelx.io",
+  "url": "http://intelx.io/",
+  "description": "Find user details in data breaches",
+  "category": "domains-ip-infrastructure",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "domain",
+   "ip-address",
+   "email",
+   "username"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address",
+   "email"
+  ],
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/intelx.io"
+ },
+ {
+  "name": "Wayback Machine",
+  "url": "https://web.archive.org/",
+  "description": "The Internet Archive's Wayback Machine lets users view and archive web pages, aiding in historical research and digital preservation.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/internet-archive"
+ },
+ {
+  "name": "Moz Link Explorer",
+  "url": "http://moz.com/link-explorer",
+  "description": "Analyse the links of any website.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites"
+ },
+ {
+  "name": "PublicWWW",
+  "url": "https://publicwww.com/",
+  "description": "PublicWWW is a source code search engine that allows you to search for any alphanumeric snippet, signature, or keyword within the HTML, JavaScript, and CSS code of millions of web pages.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/publicwww"
+ },
+ {
+  "name": "Shodan",
+  "url": "https://www.shodan.io/",
+  "description": "A search engine for internet-connected devices, from webcams to databases.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/shodan"
+ },
+ {
+  "name": "The Information Laundromat",
+  "url": "https://informationlaundromat.com",
+  "description": "A tool for analyzing content replication and site architecture to detect information laundering.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/the-information-laundromat"
+ },
+ {
+  "name": "Urlscan.io",
+  "url": "https://urlscan.io/",
+  "description": "urlscan.io is an online tool that allows investigators to analyse, monitor, and document websites in real time.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/urlscan.io"
+ },
+ {
+  "name": "Web Archives",
+  "url": "https://github.com/dessant/web-archives",
+  "description": "A browser extension to view archived and cached versions of a website on multiple archiving sites.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "free",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "localInstall": true,
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/web-archives"
+ },
+ {
+  "name": "What CMS",
+  "url": "https://whatcms.org/",
+  "description": "A tool that you can use to identify the technologies used to power a website.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/what-cms"
+ },
+ {
+  "name": "Whoxy",
+  "url": "https://www.whoxy.com/",
+  "description": "Whoxy is a domain search engine or whois lookup\" tool to find (the history of) registration information on a domain, such as the registrar, the status of the domain and the date of registration.",
+  "category": "domains-ip-infrastructure",
+  "pricing": "freemium",
+  "selectorsIn": [
+   "domain",
+   "ip-address"
+  ],
+  "selectorsOut": [
+   "domain",
+   "ip-address"
+  ],
+  "missingPersonsRelevance": "low",
+  "trust": "community",
+  "tags": [
+   "bellingcat-toolkit",
+   "websites"
+  ],
+  "notes": "Source category: Websites. Bellingcat toolkit page: https://bellingcat.gitbook.io/toolkit/more/all-tools/whoxy"
+ }
+]

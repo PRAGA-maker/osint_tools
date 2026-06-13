@@ -1,0 +1,216 @@
+[
+ {
+  "name": "OSINT Combine TikTok Quick Search",
+  "url": "https://www.osintcombine.com/tiktok-quick-search",
+  "category": "social-networks",
+  "description": "Browser tool to search TikTok by username, hashtag, or keyword; returns direct profile/result links.",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "trusted",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "FootprintIQ",
+  "url": "https://footprintiq.app",
+  "category": "username",
+  "description": "Free cross-platform username sweep across 500+ sites incl. TikTok/Telegram with confidence scoring.",
+  "selectorsIn": [
+   "username"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Exolyt",
+  "url": "https://exolyt.com",
+  "category": "social-networks",
+  "description": "TikTok analytics/profile insight tool; useful for profile activity and posting patterns.",
+  "selectorsIn": [
+   "social-profile"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": true,
+  "humanInLoopReason": [
+   "payment-wall-partial"
+  ],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Tokkit",
+  "url": "https://github.com/sr-tream/tokkit",
+  "category": "social-networks",
+  "description": "TikTok bulk content/data scraper (CLI).",
+  "selectorsIn": [
+   "username"
+  ],
+  "selectorsOut": [
+   "image",
+   "social-profile"
+  ],
+  "bestInteractionPattern": "cli",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "SnapIntel",
+  "url": "https://github.com/kr0wz/snapintel",
+  "category": "social-networks",
+  "description": "Snapchat OSINT tool: pulls public Snap Map/story and account data for a username.",
+  "selectorsIn": [
+   "username"
+  ],
+  "selectorsOut": [
+   "geolocation",
+   "image"
+  ],
+  "bestInteractionPattern": "cli",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "StoryLooker",
+  "url": "https://storylooker.com",
+  "category": "social-networks",
+  "description": "View public Snapchat/Instagram stories anonymously.",
+  "selectorsIn": [
+   "username"
+  ],
+  "selectorsOut": [
+   "image"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "GhostCodes/AddMeSnaps directories",
+  "url": "https://www.addmesnaps.com",
+  "category": "social-networks",
+  "description": "Public Snapchat username directories; pivot from interests/handles to accounts.",
+  "selectorsIn": [
+   "username",
+   "name"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "SaveTTok",
+  "url": "https://savettok.org",
+  "category": "social-networks",
+  "description": "Download TikTok videos (incl. without watermark) for evidence/frame analysis.",
+  "selectorsIn": [
+   "social-profile"
+  ],
+  "selectorsOut": [
+   "image"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ }
+]

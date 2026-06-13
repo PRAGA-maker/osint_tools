@@ -1,0 +1,49 @@
+---
+id: melissadata
+name: MelissaData
+description: 'OSINT tool: MelissaData.'
+url: https://www.melissa.com
+category: people-search
+path:
+- people-search
+bestFor: ''
+selectorsIn:
+- address
+selectorsOut:
+- name
+- phone
+- associate
+status: unknown
+pricing: free
+opsec: unknown
+opsecNote: ''
+humanInLoop: false
+humanInLoopReason: []
+bestInteractionPattern: web-manual
+trust: unverified
+trustNote: ''
+missingPersonsRelevance: high
+coverage: []
+auth: none
+api: false
+localInstall: false
+registration: false
+aliases: []
+tags:
+- address
+source: metaosint
+lastVerified: ''
+enrichment: stub
+---
+
+# MelissaData
+
+> OSINT tool: MelissaData.
+
+- **URL:** https://www.melissa.com
+- **Best for:** —
+- **Source:** harvested from `metaosint`
+
+MetaOSINT category: Identity / Person Search / Address; recommended by 1 curated OSINT source list(s).
+
+_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._

@@ -1,0 +1,145 @@
+[
+ {
+  "name": "FaceCheck.ID",
+  "url": "https://facecheck.id",
+  "category": "image-video-face",
+  "description": "Reverse face search across the web/social/news; returns thumbnail matches with source links. Strong for OSINT identity confirmation.",
+  "selectorsIn": [
+   "face",
+   "image"
+  ],
+  "selectorsOut": [
+   "social-profile",
+   "name"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": true,
+  "humanInLoopReason": [
+   "payment-wall-partial"
+  ],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "Free tier shows blurred/limited results; credits unlock full source links.",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Lenso.ai",
+  "url": "https://lenso.ai",
+  "category": "image-video-face",
+  "description": "AI reverse-image & face search; clusters matches by person/place. Good free tier for OSINT.",
+  "selectorsIn": [
+   "face",
+   "image"
+  ],
+  "selectorsOut": [
+   "social-profile",
+   "geolocation"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Search4faces",
+  "url": "https://search4faces.com",
+  "category": "image-video-face",
+  "description": "Face search across VK, Odnoklassniki, TikTok and other (esp. RU/CIS) platforms.",
+  "selectorsIn": [
+   "face",
+   "image"
+  ],
+  "selectorsOut": [
+   "social-profile",
+   "name"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": true,
+  "humanInLoopReason": [
+   "account-login"
+  ],
+  "registration": true,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "ru",
+   "global"
+  ]
+ },
+ {
+  "name": "Reversely",
+  "url": "https://reversely.ai",
+  "category": "image-video-face",
+  "description": "Free AI reverse-image and face-search tool; web-based, no install.",
+  "selectorsIn": [
+   "face",
+   "image"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "FaceSearch (facesearch.ai)",
+  "url": "https://facesearch.ai",
+  "category": "image-video-face",
+  "description": "AI face-search engine indexing public web images.",
+  "selectorsIn": [
+   "face",
+   "image"
+  ],
+  "selectorsOut": [
+   "social-profile"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ }
+]

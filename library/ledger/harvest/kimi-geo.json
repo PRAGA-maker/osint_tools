@@ -1,0 +1,192 @@
+[
+ {
+  "name": "GeoSpy",
+  "url": "https://geospy.ai",
+  "category": "geolocation",
+  "description": "AI image geolocation: estimates where a photo was taken from visual features.",
+  "selectorsIn": [
+   "image"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": true,
+  "humanInLoopReason": [
+   "account-login"
+  ],
+  "registration": true,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Picarta",
+  "url": "https://picarta.ai",
+  "category": "geolocation",
+  "description": "AI photo geolocation predicting capture location with confidence map.",
+  "selectorsIn": [
+   "image"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": true,
+  "humanInLoopReason": [
+   "payment-wall-partial"
+  ],
+  "registration": false,
+  "pricing": "freemium",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "WhereIsThisPlace",
+  "url": "https://whereisthisplace.org",
+  "category": "geolocation",
+  "description": "Free AI guess-the-location from a photo.",
+  "selectorsIn": [
+   "image"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "SunCalc",
+  "url": "https://www.suncalc.org",
+  "category": "geolocation",
+  "description": "Sun position/shadow length by date & location; verify time-of-day/season from shadows (chronolocation).",
+  "selectorsIn": [
+   "geolocation",
+   "image"
+  ],
+  "selectorsOut": [
+   "metadata-exif"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "trusted",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Mapillary",
+  "url": "https://www.mapillary.com",
+  "category": "geolocation",
+  "description": "Crowdsourced street-level imagery; street-view comparison where Google lacks coverage.",
+  "selectorsIn": [
+   "geolocation"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "trusted",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Pic2Map",
+  "url": "https://www.pic2map.com",
+  "category": "image-video-face",
+  "description": "Online EXIF viewer that maps embedded GPS coordinates from a photo.",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "geolocation"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "high",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ },
+ {
+  "name": "Metadata2Go",
+  "url": "https://www.metadata2go.com",
+  "category": "documents-metadata",
+  "description": "Free online metadata/EXIF viewer for images and documents.",
+  "selectorsIn": [
+   "image",
+   "metadata-exif"
+  ],
+  "selectorsOut": [
+   "metadata-exif",
+   "geolocation"
+  ],
+  "bestInteractionPattern": "web-manual",
+  "missingPersonsRelevance": "medium",
+  "trust": "community",
+  "humanInLoop": false,
+  "humanInLoopReason": [],
+  "registration": false,
+  "pricing": "free",
+  "notes": "",
+  "tags": [
+   "kimi-2026"
+  ],
+  "coverage": [
+   "global"
+  ]
+ }
+]

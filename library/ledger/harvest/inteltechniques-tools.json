@@ -1,0 +1,5943 @@
+[
+  {
+    "name": "TruePeopleSearch",
+    "url": "https://www.truepeoplesearch.com/",
+    "description": "Free US people-search aggregator (no signup) that pulls current/past addresses, phone numbers, relatives and associates.",
+    "category": "people-search",
+    "bestFor": "Free US people search returning addresses, phones, relatives, and associates from a name, phone, or address.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate",
+      "dob"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "TPS"
+    ],
+    "tags": [
+      "people-search",
+      "us-records",
+      "relatives",
+      "address",
+      "phone"
+    ],
+    "notes": "Frequently the highest-yield free US people-search for missing persons; surfaces relatives/associates to expand a network."
+  },
+  {
+    "name": "FastPeopleSearch",
+    "url": "https://www.fastpeoplesearch.com/",
+    "description": "Free US people-search aggregator similar to TruePeopleSearch with relatives and address history.",
+    "category": "people-search",
+    "bestFor": "Free US people search by name, phone or address; lists relatives and prior addresses.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "FPS"
+    ],
+    "tags": [
+      "people-search",
+      "us-records",
+      "relatives",
+      "address",
+      "phone"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "FamilyTreeNow",
+    "url": "https://www.familytreenow.com/",
+    "description": "Free genealogy-oriented people search that maps relatives, associates and historical addresses.",
+    "category": "people-search",
+    "bestFor": "Free genealogy/people search exposing relatives, associates, possible family tree and address history.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "dob",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "genealogy",
+      "relatives",
+      "family-tree"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Nuwber",
+    "url": "https://nuwber.com/",
+    "description": "People-search aggregator with relatives and contact info; free preview, paid full report.",
+    "category": "people-search",
+    "bestFor": "People search by name, phone, or address with relatives and contact details (free preview).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "us-records",
+      "relatives"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Radaris",
+    "url": "https://radaris.com/",
+    "description": "People-search aggregator with relatives, contact and background data; free results, paid reports.",
+    "category": "people-search",
+    "bestFor": "People search aggregating addresses, phones, relatives, and work/education from a name.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate",
+      "employer-org"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "us-records",
+      "background"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "SearchPeopleFree",
+    "url": "https://www.searchpeoplefree.com/",
+    "description": "Free people-search aggregator returning contact info, addresses and relatives.",
+    "category": "people-search",
+    "bestFor": "Free US people search by name, phone, or address with relatives and addresses.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "SPF"
+    ],
+    "tags": [
+      "people-search",
+      "us-records",
+      "relatives"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "ThatsThem",
+    "url": "https://thatsthem.com/",
+    "description": "Free reverse-lookup people-search supporting name, phone, email, address and even IP as inputs.",
+    "category": "people-search",
+    "bestFor": "Reverse search by name, phone, email, address, or IP returning linked personal records.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email",
+      "address",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "email",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "reverse-lookup",
+      "email",
+      "phone",
+      "ip"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Spokeo",
+    "url": "https://www.spokeo.com/",
+    "description": "Commercial people-search aggregator with social-profile linkage; free preview, paid full report.",
+    "category": "people-search",
+    "bestFor": "People search aggregating contact info, social profiles, and records from name/phone/email.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "email",
+      "address",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "social-linkage",
+      "background"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Intelius",
+    "url": "https://www.intelius.com/",
+    "description": "Commercial background/people-search service; free preview, paid full reports.",
+    "category": "people-search",
+    "bestFor": "Background and people search by name, phone or address (paid full reports).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "background"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "CyberBackgroundChecks",
+    "url": "https://www.cyberbackgroundchecks.com/",
+    "description": "Free people-search aggregator with relatives and contact history.",
+    "category": "people-search",
+    "bestFor": "Free people/background search with addresses, phones and relatives.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "CBC",
+      "CyberBackground"
+    ],
+    "tags": [
+      "people-search",
+      "us-records",
+      "relatives"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "AdvancedBackgroundChecks",
+    "url": "https://www.advancedbackgroundchecks.com/",
+    "description": "Free people-search aggregator with relatives, phones and addresses.",
+    "category": "people-search",
+    "bestFor": "Free people search by name, phone, or address with relatives and address history.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "ABC",
+      "AdvBackground"
+    ],
+    "tags": [
+      "people-search",
+      "us-records",
+      "relatives"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Zabasearch",
+    "url": "https://www.zabasearch.com/",
+    "description": "People-search aggregator with addresses and phone numbers.",
+    "category": "people-search",
+    "bestFor": "People search by name or phone returning addresses and phone numbers.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "ZabaSearch"
+    ],
+    "tags": [
+      "people-search",
+      "us-records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "PeopleSearchNow",
+    "url": "https://www.peoplesearchnow.com/",
+    "description": "Free people-search aggregator with relatives and addresses.",
+    "category": "people-search",
+    "bestFor": "Free people search returning addresses, phones, and relatives.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "PSN"
+    ],
+    "tags": [
+      "people-search",
+      "us-records",
+      "relatives"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Whitepages",
+    "url": "https://www.whitepages.com/",
+    "description": "Established people-search and reverse-phone directory; free preview, paid premium.",
+    "category": "people-search",
+    "bestFor": "People and reverse-phone search returning contact info and addresses.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "WP",
+      "White Pages"
+    ],
+    "tags": [
+      "people-search",
+      "reverse-phone",
+      "directory"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "OfficialUSA / USA-Official",
+    "url": "https://www.officialusa.com/",
+    "description": "Free directory-style people lookup aggregator.",
+    "category": "people-search",
+    "bestFor": "Free directory-style people lookup by name returning basic address/phone records.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "OfficialUSA",
+      "USA-Official"
+    ],
+    "tags": [
+      "people-search",
+      "directory"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Spytox",
+    "url": "https://www.spytox.com/",
+    "description": "Free people-search and reverse-phone aggregator.",
+    "category": "people-search",
+    "bestFor": "Free people/reverse-phone search returning addresses and contact info.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "SpyTox"
+    ],
+    "tags": [
+      "people-search",
+      "reverse-phone"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "TruthFinder",
+    "url": "https://www.truthfinder.com/",
+    "description": "Commercial background-report people-search; free search, paid reports.",
+    "category": "people-search",
+    "bestFor": "Background/people search by name (paid reports; free search preview).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "background"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Addresses.com",
+    "url": "https://www.addresses.com/",
+    "description": "Free people/address directory lookup.",
+    "category": "people-search",
+    "bestFor": "Free people and reverse-address lookup directory.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Addresses"
+    ],
+    "tags": [
+      "people-search",
+      "reverse-address",
+      "directory"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "PeopleByName",
+    "url": "http://www.peoplebyname.com/",
+    "description": "Free name-to-phone directory lookup.",
+    "category": "people-search",
+    "bestFor": "Free phone-directory style lookup by name.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "directory"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "ClustrMaps",
+    "url": "https://clustrmaps.com/",
+    "description": "Free people-and-address mapping site showing residents and prior occupants of an address.",
+    "category": "people-search",
+    "bestFor": "Free address/residents lookup mapping people to addresses and neighbors.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "address",
+      "residents"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Yasni",
+    "url": "http://www.yasni.com/",
+    "description": "People-search engine aggregating public web mentions for a name.",
+    "category": "people-search",
+    "bestFor": "Name-based people search aggregating web mentions and profiles.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile",
+      "employer-org"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "name-search",
+      "web-mentions"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "WebMii",
+    "url": "http://webmii.com/",
+    "description": "People-search that aggregates a person's web/social footprint by name.",
+    "category": "people-search",
+    "bestFor": "Name search engine aggregating social profiles and web presence with a visibility score.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search",
+      "name-search",
+      "web-presence"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "IDCrawl",
+    "url": "https://www.idcrawl.com/",
+    "description": "Free people-search engine strong at finding social-media profiles and usernames for a name.",
+    "category": "people-search",
+    "bestFor": "Free people search that pivots a name/username/email/phone into social profiles and records.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "username",
+      "social-profile",
+      "email",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us",
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "ID Crawl"
+    ],
+    "tags": [
+      "people-search",
+      "username",
+      "social-linkage"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "PeopleFinders",
+    "url": "https://www.peoplefinders.com/",
+    "description": "Commercial people-search service.",
+    "category": "people-search",
+    "bestFor": "Background/people search by name or address (paid reports).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "PF"
+    ],
+    "tags": [
+      "people-search",
+      "background"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "USA-People-Search",
+    "url": "https://www.usa-people-search.com/",
+    "description": "Commercial people-search aggregator.",
+    "category": "people-search",
+    "bestFor": "People search by name returning contact and address records.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "people-search"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "SmartBackgroundChecks",
+    "url": "https://www.smartbackgroundchecks.com/",
+    "description": "Free people-search aggregator with relatives and contact history.",
+    "category": "people-search",
+    "bestFor": "Free people/background search with relatives, phones, and addresses.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "SBC"
+    ],
+    "tags": [
+      "people-search",
+      "us-records",
+      "relatives"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Social Searcher",
+    "url": "https://www.social-searcher.com/",
+    "description": "Free real-time social-media mention/monitoring search across multiple networks.",
+    "category": "social-networks",
+    "bestFor": "Real-time social-media search for mentions of a name, username, or keyword across networks.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "social-search",
+      "mentions",
+      "monitoring"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Classmates",
+    "url": "https://www.classmates.com/",
+    "description": "Yearbook and alumni directory search; useful for historical photos and school affiliations.",
+    "category": "people-search",
+    "bestFor": "School yearbook/alumni search useful for historical photos and identity confirmation.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile",
+      "employer-org"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "yearbook",
+      "alumni",
+      "historical",
+      "photos"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "InstantUsername",
+    "url": "https://instantusername.com/",
+    "description": "Free fast username-availability checker across many platforms.",
+    "category": "username",
+    "bestFor": "Free real-time check of a username's availability/existence across 100+ sites.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "username",
+      "account-enumeration"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "NameChecker.org",
+    "url": "https://www.namechecker.org/",
+    "description": "Free username availability checker.",
+    "category": "username",
+    "bestFor": "Free username availability checker across social and domain platforms.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "NameChecker"
+    ],
+    "tags": [
+      "username",
+      "account-enumeration"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Namechk",
+    "url": "https://namechk.com/",
+    "description": "Username and domain availability checker across many platforms.",
+    "category": "username",
+    "bestFor": "Check username/domain availability across hundreds of social networks and domains.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "NameChck"
+    ],
+    "tags": [
+      "username",
+      "account-enumeration",
+      "domain"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "NameVine",
+    "url": "https://namevine.com/",
+    "description": "Real-time username availability checker.",
+    "category": "username",
+    "bestFor": "Type-ahead username availability checker across major social networks.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "username",
+      "account-enumeration"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "ProfileDiscover",
+    "url": "https://profilediscover.com/",
+    "description": "Username-to-profile discovery search.",
+    "category": "username",
+    "bestFor": "Search a username across platforms to discover profiles.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "username",
+      "account-enumeration"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "UsernameChecker (Checkistan)",
+    "url": "https://usernamechecker.checkistan.com/",
+    "description": "Free username availability checker.",
+    "category": "username",
+    "bestFor": "Free username availability/existence checker across platforms.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Checkistan"
+    ],
+    "tags": [
+      "username",
+      "account-enumeration"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "UserSearch.org",
+    "url": "https://usersearch.org/",
+    "description": "Username and email reverse-search engine across many platforms including dating sites.",
+    "category": "username",
+    "bestFor": "Reverse username/email search across social networks, forums and dating sites.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "UserSearch"
+    ],
+    "tags": [
+      "username",
+      "email",
+      "account-enumeration",
+      "dating"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Gravatar",
+    "url": "https://en.gravatar.com/",
+    "description": "Globally-recognized avatar service; email or hash resolves to a profile photo and linked accounts.",
+    "category": "username",
+    "bestFor": "Resolve an email/username to a public Gravatar profile, avatar and linked accounts.",
+    "pricing": "free",
+    "selectorsIn": [
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "email",
+      "avatar",
+      "profile",
+      "image"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Linktree",
+    "url": "https://linktr.ee/",
+    "description": "Link-in-bio aggregator; a handle reveals a person's linked profiles and sites.",
+    "category": "username",
+    "bestFor": "Resolve a Linktree handle to a person's aggregated links and social profiles.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "username",
+      "link-in-bio",
+      "social-linkage"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "EmailRep",
+    "url": "https://emailrep.io/",
+    "description": "Email reputation and footprint API/web tool indicating where an address has been seen online.",
+    "category": "email",
+    "bestFor": "Reputation/footprint lookup for an email address: where it appears, profiles, and risk.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "email",
+      "reputation",
+      "footprint"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Have I Been Pwned",
+    "url": "https://haveibeenpwned.com/",
+    "description": "Authoritative breach-notification service; confirms an email's presence in known breaches.",
+    "category": "email",
+    "bestFor": "Check whether an email appears in known data breaches.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "HIBP"
+    ],
+    "tags": [
+      "email",
+      "breach",
+      "breaches"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Hunter.io",
+    "url": "https://hunter.io/",
+    "description": "Email finder/verifier for company domains; free limited searches.",
+    "category": "email",
+    "bestFor": "Find and verify professional email addresses associated with a domain or person.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "name",
+      "employer-org"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "HunterVerify"
+    ],
+    "tags": [
+      "email",
+      "verify",
+      "domain",
+      "corporate"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Cybernews Personal Data Leak Check",
+    "url": "https://check.cybernews.com/",
+    "description": "Free leak-checker for emails against aggregated breach datasets.",
+    "category": "email",
+    "bestFor": "Free check of whether an email appears in aggregated leaked datasets.",
+    "pricing": "free",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Cybernews"
+    ],
+    "tags": [
+      "email",
+      "breach",
+      "leak"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Hudson Rock Cavalier",
+    "url": "https://cavalier.hudsonrock.com/",
+    "description": "Free infostealer-infection lookup for emails and domains.",
+    "category": "email",
+    "bestFor": "Free check of whether an email/domain appears in infostealer (info-stealer malware) infections.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "device-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "HudsonRock"
+    ],
+    "tags": [
+      "email",
+      "infostealer",
+      "breach"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "LeakIX",
+    "url": "https://leakix.net/",
+    "description": "Search engine for exposed/leaked services indexed by IP, domain and email.",
+    "category": "email",
+    "bestFor": "Search exposed services and leak data by email, domain, or IP.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email",
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "email"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "email",
+      "domain",
+      "ip",
+      "leak",
+      "exposure"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Intelligence X",
+    "url": "https://intelx.io/",
+    "description": "Search engine indexing leaks, pastes, darkweb and whois data; powerful selector search (free preview).",
+    "category": "email",
+    "bestFor": "Search engine over leaks, pastes, darkweb and historical data by email/selector.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email",
+      "domain",
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "email",
+      "document-id",
+      "domain"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "IntelX"
+    ],
+    "tags": [
+      "email",
+      "leaks",
+      "pastes",
+      "darkweb",
+      "search-engine"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "CleanTalk Email/IP Check",
+    "url": "https://cleantalk.org/",
+    "description": "Free email/IP spam-blacklist reputation check.",
+    "category": "email",
+    "bestFor": "Check an email/IP against spam blacklists.",
+    "pricing": "free",
+    "selectorsIn": [
+      "email",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "CleanTalk"
+    ],
+    "tags": [
+      "email",
+      "spam",
+      "blacklist"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Skymem",
+    "url": "https://www.skymem.info/",
+    "description": "Free email-finder by domain/company.",
+    "category": "email",
+    "bestFor": "Find email addresses associated with a domain or company.",
+    "pricing": "free",
+    "selectorsIn": [
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "SkyMem"
+    ],
+    "tags": [
+      "email",
+      "domain",
+      "corporate"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "ScamSearch",
+    "url": "https://scamsearch.io/",
+    "description": "Database of reported scammer identifiers searchable by email/phone/wallet.",
+    "category": "email",
+    "bestFor": "Search scammer reports by email, phone, or crypto wallet.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email",
+      "phone",
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "email",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "email",
+      "phone",
+      "scam",
+      "fraud"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Sync.me",
+    "url": "https://sync.me/",
+    "description": "Crowdsourced caller-ID / reverse-phone lookup returning a likely name.",
+    "category": "phone",
+    "bestFor": "Reverse phone lookup with caller-ID name and possible social linkage.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "reverse-phone",
+      "caller-id"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "CallerSmart",
+    "url": "https://www.callersmart.com/",
+    "description": "Reverse-phone lookup with community caller reports.",
+    "category": "phone",
+    "bestFor": "Reverse phone lookup and caller reputation.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "reverse-phone",
+      "caller-id"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "OKCaller",
+    "url": "https://www.okcaller.com/",
+    "description": "Free reverse-phone lookup.",
+    "category": "phone",
+    "bestFor": "Free reverse phone lookup with caller information.",
+    "pricing": "free",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "reverse-phone"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "PhoneOwner",
+    "url": "https://phoneowner.com/",
+    "description": "Reverse-phone lookup with owner identity.",
+    "category": "phone",
+    "bestFor": "Reverse phone lookup returning owner name and address.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "reverse-phone"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "USPhonebook",
+    "url": "https://www.usphonebook.com/",
+    "description": "Free reverse-phone/name directory with addresses and relatives.",
+    "category": "phone",
+    "bestFor": "Free reverse phone and name lookup with addresses and relatives.",
+    "pricing": "free",
+    "selectorsIn": [
+      "phone",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "reverse-phone",
+      "us-records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "WhoseNo",
+    "url": "https://www.whoseno.com/",
+    "description": "Crowd-reported reverse-phone lookup.",
+    "category": "phone",
+    "bestFor": "Community reverse-phone lookup and caller reports.",
+    "pricing": "free",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "reverse-phone"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "800notes",
+    "url": "https://800notes.com/",
+    "description": "Community phone-complaint directory; useful for identifying spam/scam callers.",
+    "category": "phone",
+    "bestFor": "Crowdsourced directory of phone-number complaints and caller reports.",
+    "pricing": "free",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "800 Notes"
+    ],
+    "tags": [
+      "phone",
+      "caller-reports"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Numpi",
+    "url": "https://numpi.com/",
+    "description": "Reverse-phone people lookup.",
+    "category": "phone",
+    "bestFor": "Reverse phone lookup with owner details (free preview).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "reverse-phone"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "InfoTracer",
+    "url": "https://infotracer.com/",
+    "description": "Commercial records aggregator covering phone, people and vehicle lookups.",
+    "category": "phone",
+    "bestFor": "Reverse phone, people and vehicle records lookup (paid reports).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "phone",
+      "name",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "vehicle-plate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "people-search",
+      "vehicle",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "YellowPages People",
+    "url": "https://people.yellowpages.com/",
+    "description": "Free people and reverse-phone directory.",
+    "category": "phone",
+    "bestFor": "Free people/reverse-phone directory lookup.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "YellowPages"
+    ],
+    "tags": [
+      "phone",
+      "directory",
+      "people-search"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "411.com",
+    "url": "https://www.411.com/",
+    "description": "Free white-pages directory for people and phone lookups.",
+    "category": "phone",
+    "bestFor": "Free white-pages style people and reverse-phone lookup.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "411"
+    ],
+    "tags": [
+      "phone",
+      "directory",
+      "people-search"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "AmericaPhonebook",
+    "url": "http://www.americaphonebook.com/",
+    "description": "Free phone directory lookup.",
+    "category": "phone",
+    "bestFor": "Free phone/people directory lookup.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "AmericaPhone"
+    ],
+    "tags": [
+      "phone",
+      "directory"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "OldPhoneBook",
+    "url": "http://www.oldphonebook.com/",
+    "description": "Archive of historical phone-book listings; useful for past addresses/numbers.",
+    "category": "phone",
+    "bestFor": "Historical phone-directory archive useful for past addresses and numbers.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Historical"
+    ],
+    "tags": [
+      "phone",
+      "historical",
+      "archive"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "WhatsApp OSINT (CheckLeaked)",
+    "url": "https://whatsapp.checkleaked.cc/",
+    "description": "Free tool to check whether a phone number has WhatsApp and view its public profile photo.",
+    "category": "phone",
+    "bestFor": "Check a phone number's WhatsApp presence and profile photo.",
+    "pricing": "free",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
+    "opsec": "semi-active",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "phone",
+      "whatsapp",
+      "messaging"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Zillow",
+    "url": "https://www.zillow.com/",
+    "description": "Real-estate listing site; confirms an address exists, shows property photos and history.",
+    "category": "public-records",
+    "bestFor": "Property listing/value lookup that confirms an address and shows photos.",
+    "pricing": "free",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "address",
+      "property",
+      "real-estate"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Rehold",
+    "url": "https://rehold.com/",
+    "description": "Reverse-address directory listing residents and contact info for an address.",
+    "category": "public-records",
+    "bestFor": "Reverse address lookup showing current and past residents.",
+    "pricing": "free",
+    "selectorsIn": [
+      "address",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "address",
+      "residents",
+      "reverse-address"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Gisgraphy GPS Convert",
+    "url": "https://services.gisgraphy.com/",
+    "description": "Geocoding/reverse-geocoding service to convert addresses to coordinates.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Geocode an address to coordinates (and reverse) for mapping workflows.",
+    "pricing": "free",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "GPS",
+      "Convert"
+    ],
+    "tags": [
+      "geocoding",
+      "address",
+      "coordinates"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "AcreValue",
+    "url": "https://www.acrevalue.com/",
+    "description": "Land-parcel value and ownership mapping tool.",
+    "category": "public-records",
+    "bestFor": "Parcel/land ownership and value mapping for rural/agricultural land.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "address",
+      "parcel",
+      "land",
+      "property"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Google Maps / Street View",
+    "url": "https://www.google.com/maps",
+    "description": "Primary mapping/satellite/Street View tool for verifying and visualizing locations.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Map, satellite and Street View imagery for an address or coordinates.",
+    "pricing": "free",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Google Map",
+      "Google Street"
+    ],
+    "tags": [
+      "maps",
+      "satellite",
+      "street-view"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Bing Maps",
+    "url": "https://www.bing.com/maps",
+    "description": "Mapping/satellite tool with directional bird's-eye imagery.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Map, satellite and bird's-eye imagery with multi-directional satellite views.",
+    "pricing": "free",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Bing Map",
+      "Bing Sat"
+    ],
+    "tags": [
+      "maps",
+      "satellite",
+      "birds-eye"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Zoom Earth",
+    "url": "https://zoom.earth/",
+    "description": "Satellite imagery viewer with recent/near-live imagery and weather.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Recent and near-real-time satellite imagery and weather overlays.",
+    "pricing": "free",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "maps",
+      "satellite",
+      "weather",
+      "imagery"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "HERE WeGo",
+    "url": "https://wego.here.com/",
+    "description": "Map and satellite imagery provider.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Alternative map/satellite provider for cross-referencing locations.",
+    "pricing": "free",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Here Sat"
+    ],
+    "tags": [
+      "maps",
+      "satellite"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Yandex Maps",
+    "url": "https://yandex.com/maps",
+    "description": "Mapping/satellite/panorama tool with strong non-Western coverage.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Map/satellite/panorama imagery with strong coverage of Eastern Europe and Russia.",
+    "pricing": "free",
+    "selectorsIn": [
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Yandex Sat"
+    ],
+    "tags": [
+      "maps",
+      "satellite",
+      "panorama"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Wikimapia",
+    "url": "http://wikimapia.org/",
+    "description": "Crowd-annotated map identifying named places and structures.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Crowdsourced map annotations identifying buildings and places.",
+    "pricing": "free",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "maps",
+      "crowdsourced",
+      "places"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Snapchat Map",
+    "url": "https://map.snapchat.com/",
+    "description": "Snap Map showing public geotagged Snapchat content; useful to find activity at a location.",
+    "category": "geolocation",
+    "bestFor": "View public Snapchat snaps posted at a location; can place a person at a place/time.",
+    "pricing": "free",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "geolocation",
+      "social-media",
+      "snapchat",
+      "live"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Mapillary",
+    "url": "https://www.mapillary.com/",
+    "description": "Crowdsourced street-level photo coverage for ground-truthing locations.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Crowdsourced street-level imagery as an alternative to Street View.",
+    "pricing": "free",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "maps",
+      "street-level",
+      "crowdsourced",
+      "imagery"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "KartaView",
+    "url": "http://kartaview.org/",
+    "description": "Open street-level imagery platform.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Open crowdsourced street-level imagery platform.",
+    "pricing": "free",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Karta"
+    ],
+    "tags": [
+      "maps",
+      "street-level",
+      "crowdsourced"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Apple Maps (satellites.pro)",
+    "url": "https://satellites.pro/",
+    "description": "Web viewer exposing Apple Maps satellite imagery.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Web access to Apple Maps satellite imagery for cross-referencing.",
+    "pricing": "free",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Apple Maps"
+    ],
+    "tags": [
+      "maps",
+      "satellite",
+      "apple"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "EOS LandViewer",
+    "url": "https://eos.com/landviewer/",
+    "description": "Satellite-imagery analytics viewer with historical and multispectral layers.",
+    "category": "maps-geospatial-data",
+    "bestFor": "Multispectral/historical satellite imagery viewer.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "Land Viewer"
+    ],
+    "tags": [
+      "maps",
+      "satellite",
+      "historical",
+      "imagery"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "WiGLE",
+    "url": "https://wigle.net/",
+    "description": "Wardriving database mapping Wi-Fi/Bluetooth networks to coordinates; geolocate devices/SSIDs.",
+    "category": "geolocation",
+    "bestFor": "Map Wi-Fi networks (SSID/BSSID) to physical locations; geolocate by SSID or postal area.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "mac-address",
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "mac-address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "Wigle"
+    ],
+    "tags": [
+      "geolocation",
+      "wifi",
+      "ssid",
+      "mac",
+      "wardriving"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Google Lens / Images",
+    "url": "https://lens.google.com/",
+    "description": "Reverse-image search engine; locates matching/similar images across the web.",
+    "category": "image-video-face",
+    "bestFor": "Reverse image search to find where a photo appears and identify subjects/objects.",
+    "pricing": "free",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "name",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Google Image",
+      "Google Images"
+    ],
+    "tags": [
+      "reverse-image",
+      "image",
+      "face"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Bing Visual Search",
+    "url": "https://www.bing.com/images",
+    "description": "Reverse-image/visual search engine.",
+    "category": "image-video-face",
+    "bestFor": "Reverse image search and visual matching.",
+    "pricing": "free",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Bing Images"
+    ],
+    "tags": [
+      "reverse-image",
+      "image"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Yandex Images",
+    "url": "https://yandex.com/images/",
+    "description": "Reverse-image search widely regarded as the strongest free option for face matching.",
+    "category": "image-video-face",
+    "bestFor": "Reverse image search with strong face-matching, especially for non-Western subjects.",
+    "pricing": "free",
+    "selectorsIn": [
+      "image",
+      "face"
+    ],
+    "selectorsOut": [
+      "image",
+      "face",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "reverse-image",
+      "face",
+      "image"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "TinEye",
+    "url": "http://www.tineye.com/",
+    "description": "Reverse-image search engine best for tracking an image's origin and modifications over time.",
+    "category": "image-video-face",
+    "bestFor": "Reverse image search specializing in finding exact copies and the earliest appearance of an image.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "reverse-image",
+      "image",
+      "provenance"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "FaceCheck.ID",
+    "url": "https://facecheck.id/",
+    "description": "Face-recognition search engine matching an uploaded face to images across the web/social media.",
+    "category": "image-video-face",
+    "bestFor": "Facial-recognition search that matches a face photo to online appearances.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "face",
+      "image"
+    ],
+    "selectorsOut": [
+      "face",
+      "social-profile",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "face",
+      "facial-recognition",
+      "image"
+    ],
+    "notes": "Powerful for identifying unknown persons from a photo; results may be partially gated behind credits/registration. Treat matches as leads, not confirmation."
+  },
+  {
+    "name": "RepostSleuth",
+    "url": "https://www.repostsleuth.com/",
+    "description": "Reverse-image search across Reddit; finds original posters of an image.",
+    "category": "image-video-face",
+    "bestFor": "Reverse-image search focused on Reddit to find where an image was posted.",
+    "pricing": "free",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Repost Sleuth"
+    ],
+    "tags": [
+      "reverse-image",
+      "reddit"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Flickr",
+    "url": "https://www.flickr.com/",
+    "description": "Photo platform with searchable geotagged images and EXIF data; pivot from a username/email.",
+    "category": "image-video-face",
+    "bestFor": "Photo-sharing platform searchable by user, with geotagged photos and EXIF metadata.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "email",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif",
+      "geolocation",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "photos",
+      "geotag",
+      "exif",
+      "metadata"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Facebook Search (IntelTechniques method)",
+    "url": "https://inteltechniques.com/tools/Facebook.html",
+    "description": "A set of structured Facebook search queries that pivot a profile into friends, photos, places, check-ins, employment and more.",
+    "category": "social-networks",
+    "bestFor": "Structured Facebook graph-search queries (friends, photos, check-ins, employment, etc.) built from a profile ID.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username",
+      "social-profile",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image",
+      "associate",
+      "geolocation"
+    ],
+    "opsec": "semi-active",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "facebook",
+      "social-graph",
+      "friends",
+      "photos",
+      "check-ins"
+    ],
+    "notes": "Generates dozens of targeted queries (Timeline, Friends, Photos, Check-ins, Employment, Relationships, etc.) against facebook.com from a numeric profile ID. Highly valuable for mapping a missing person's network and last-known locations. Requires a logged-in session for many queries."
+  },
+  {
+    "name": "X (Twitter) Search (IntelTechniques method)",
+    "url": "https://inteltechniques.com/tools/Twitter.html",
+    "description": "Structured X/Twitter search queries and mirror access (XCancel, memory.lol, Wayback) to recover a user's tweets, media and connections.",
+    "category": "social-networks",
+    "bestFor": "Advanced X/Twitter search queries (outgoing/incoming tweets, media, followers, by-year) plus Nitter/XCancel and archive mirrors.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "geolocation",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "twitter",
+      "x",
+      "tweets",
+      "followers",
+      "archive"
+    ],
+    "notes": "Includes XCancel/Nitter mirror, memory.lol historical handle history, and Wayback archives for deleted content."
+  },
+  {
+    "name": "Instagram Search (IntelTechniques method)",
+    "url": "https://inteltechniques.com/tools/Instagram.html",
+    "description": "Structured Instagram queries (profile, tagged photos, followers, hashtags) and third-party viewers.",
+    "category": "social-networks",
+    "bestFor": "Instagram profile, tagged, followers/following and hashtag query workflow plus viewer mirrors.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "associate",
+      "geolocation"
+    ],
+    "opsec": "semi-active",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "instagram",
+      "photos",
+      "tagged",
+      "followers"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "LinkedIn Search (IntelTechniques method)",
+    "url": "https://inteltechniques.com/tools/Linkedin.html",
+    "description": "Structured LinkedIn search (profiles, employment) including search-engine dorks to bypass login walls.",
+    "category": "social-networks",
+    "bestFor": "LinkedIn profile and employment search via direct queries and Google/Bing/Yandex dorks.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "linkedin",
+      "employment",
+      "professional"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Threads Search",
+    "url": "https://www.threads.net/",
+    "description": "Meta's Threads platform search for profiles and posts.",
+    "category": "social-networks",
+    "bestFor": "Search Threads (Meta) profiles and posts by username/keyword.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Threads"
+    ],
+    "tags": [
+      "threads",
+      "meta",
+      "social"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Dumpor",
+    "url": "https://dumpor.com/",
+    "description": "Anonymous Instagram viewer for profiles, stories and tags.",
+    "category": "social-networks",
+    "bestFor": "Anonymous Instagram profile/story viewer.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Dumpor Profile"
+    ],
+    "tags": [
+      "instagram",
+      "viewer",
+      "anonymous"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Toolzu",
+    "url": "https://toolzu.com/",
+    "description": "Instagram viewer and analytics tool.",
+    "category": "social-networks",
+    "bestFor": "Instagram profile/analytics viewer.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Toolzu Profile"
+    ],
+    "tags": [
+      "instagram",
+      "viewer",
+      "analytics"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "XCancel (Nitter mirror)",
+    "url": "https://xcancel.com/",
+    "description": "Nitter-based X/Twitter front-end allowing tweet viewing without an account.",
+    "category": "social-networks",
+    "bestFor": "Login-free X/Twitter mirror to view a user's tweets, media and replies.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "XCancel"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "nitter",
+      "mirror",
+      "no-login"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "memory.lol",
+    "url": "https://api.memory.lol/",
+    "description": "Service that maps a Twitter account's username history.",
+    "category": "social-networks",
+    "bestFor": "Historical record of past X/Twitter usernames tied to an account ID.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "memory.lol"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "username-history",
+      "historical"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Twitter Audit",
+    "url": "https://www.twitteraudit.com/",
+    "description": "Follower-authenticity auditing for X/Twitter accounts.",
+    "category": "social-networks",
+    "bestFor": "Estimate the proportion of fake/real followers for an X account.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Twitter Audit"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "followers",
+      "analytics"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Reddit (old.reddit search)",
+    "url": "https://old.reddit.com/",
+    "description": "Structured Reddit search across user profiles, submissions, comments and keyword/domain mentions.",
+    "category": "communities-forums",
+    "bestFor": "Search Reddit users, their submissions/comments and keyword/domain mentions.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "old.reddit"
+    ],
+    "tags": [
+      "reddit",
+      "forum",
+      "user-history"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "PullPush (Reddit archive API)",
+    "url": "https://api.pullpush.io/",
+    "description": "Reddit archive API (Pushshift successor) returning historical/deleted user posts and comments.",
+    "category": "communities-forums",
+    "bestFor": "Recover deleted/removed Reddit posts and comments for a user (Pushshift successor).",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "PullPush"
+    ],
+    "tags": [
+      "reddit",
+      "archive",
+      "deleted-content",
+      "pushshift"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Hacker News (Algolia search)",
+    "url": "https://hn.algolia.com/",
+    "description": "Full-text Hacker News search and user-activity lookup.",
+    "category": "communities-forums",
+    "bestFor": "Search Hacker News by keyword and view a user's posts/comments.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "HN"
+    ],
+    "tags": [
+      "hackernews",
+      "forum",
+      "search"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "4plebs (4chan archive)",
+    "url": "https://archive.4plebs.org/",
+    "description": "Archive search across 4chan boards via 4plebs.",
+    "category": "communities-forums",
+    "bestFor": "Search archived 4chan posts via 4plebs and 4chansearch.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "4chansearch",
+      "4plebs"
+    ],
+    "tags": [
+      "4chan",
+      "forum",
+      "archive"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Imgur Search",
+    "url": "https://imgur.com/",
+    "description": "Image-host search for a user's uploads.",
+    "category": "communities-forums",
+    "bestFor": "Search Imgur for a user's uploaded images and posts.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "imgur",
+      "images",
+      "forum"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "TikTok Search (IntelTechniques method)",
+    "url": "https://www.tiktok.com/",
+    "description": "Structured TikTok profile/tag/video search plus analytics services.",
+    "category": "communities-forums",
+    "bestFor": "Search TikTok profiles, tags, videos and run engagement analytics.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "tiktok",
+      "video",
+      "social"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Pinterest Search",
+    "url": "https://www.pinterest.com/",
+    "description": "Structured Pinterest user, pin and board search.",
+    "category": "communities-forums",
+    "bestFor": "Search Pinterest users, their created/saved pins and boards.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "pinterest",
+      "images",
+      "social"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "eBay User Search",
+    "url": "https://www.ebay.com/",
+    "description": "Structured eBay search for users, listings and feedback (can reveal location/activity).",
+    "category": "dating-classifieds",
+    "bestFor": "Search eBay users, their items, sold/completed listings and feedback.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "ebay",
+      "marketplace",
+      "classifieds"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Discord Server Search (Disboard etc.)",
+    "url": "https://disboard.org/",
+    "description": "Discord server discovery and invite-resolution directories.",
+    "category": "communities-forums",
+    "bestFor": "Find Discord servers and check invites via Disboard, Discord.me and similar directories.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Disboard",
+      "Discord.me"
+    ],
+    "tags": [
+      "discord",
+      "servers",
+      "invite",
+      "forum"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Parler Search",
+    "url": "https://app.parler.com/",
+    "description": "Structured Parler user/hashtag search.",
+    "category": "communities-forums",
+    "bestFor": "Search Parler user profiles, posts and hashtags.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "parler",
+      "social",
+      "forum"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Gab Search",
+    "url": "https://gab.com/",
+    "description": "Structured Gab user/group/hashtag search.",
+    "category": "communities-forums",
+    "bestFor": "Search Gab user profiles, groups and hashtags.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "gab",
+      "social",
+      "forum"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Gettr Search",
+    "url": "https://www.gettr.com/",
+    "description": "Structured Gettr user search.",
+    "category": "communities-forums",
+    "bestFor": "Search Gettr user profiles, comments, media and likes.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "gettr",
+      "social",
+      "forum"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Mastodon Search",
+    "url": "https://mastodon.social/",
+    "description": "Mastodon username/hashtag search.",
+    "category": "communities-forums",
+    "bestFor": "Search Mastodon usernames and hashtags across the fediverse.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "mastodon",
+      "fediverse",
+      "social"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Telegram Search (channels/groups)",
+    "url": "https://t.me/",
+    "description": "Structured Telegram discovery across profiles, channels, groups and directory services.",
+    "category": "messaging",
+    "bestFor": "Find Telegram users, channels and groups via t.me, telesco.pe and group directories.",
+    "pricing": "free",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Telegram",
+      "telesco.pe"
+    ],
+    "tags": [
+      "telegram",
+      "messaging",
+      "channels",
+      "groups"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Google Document Dorks (IntelTechniques method)",
+    "url": "https://inteltechniques.com/tools/Documents.html",
+    "description": "A set of Google filetype/site dorks to surface documents, spreadsheets and cloud files mentioning a subject.",
+    "category": "documents-metadata",
+    "bestFor": "Filetype-targeted Google dorks (PDF/DOC/XLS/PPT, cloud buckets, SlideShare/Scribd) to find documents naming a person.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "dorks",
+      "documents",
+      "filetype",
+      "cloud-buckets"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "GrayHatWarfare",
+    "url": "https://buckets.grayhatwarfare.com/",
+    "description": "Search engine for publicly exposed cloud-storage buckets and files.",
+    "category": "documents-metadata",
+    "bestFor": "Search open/public cloud storage buckets (S3, Azure) for exposed files.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "domain",
+      "email"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "cloud-buckets",
+      "s3",
+      "exposure",
+      "documents"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Scribd",
+    "url": "https://www.scribd.com/",
+    "description": "Document-sharing platform surfaced via dorks in the IntelTechniques documents tool.",
+    "category": "documents-metadata",
+    "bestFor": "Document-hosting platform searchable for uploads mentioning a person.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Scribd"
+    ],
+    "tags": [
+      "documents",
+      "scribd"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Wikileaks Search",
+    "url": "https://search.wikileaks.org/",
+    "description": "Full-text search across Wikileaks document releases.",
+    "category": "documents-metadata",
+    "bestFor": "Search Wikileaks document collections for names/emails.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "documents",
+      "leaks",
+      "wikileaks"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "RefSeek",
+    "url": "https://www.refseek.com/",
+    "description": "Academic-focused search engine.",
+    "category": "search-engines",
+    "bestFor": "Academic/reference search engine for documents and scholarly material.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "academic",
+      "documents",
+      "search-engine"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "CORE",
+    "url": "https://core.ac.uk/",
+    "description": "Open-access research-paper aggregator.",
+    "category": "documents-metadata",
+    "bestFor": "Aggregator of open-access research papers searchable by author.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "academic",
+      "research",
+      "open-access"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "PDFDrive",
+    "url": "https://www.pdfdrive.net/",
+    "description": "PDF/book search index.",
+    "category": "documents-metadata",
+    "bestFor": "Search a large index of PDF documents and books.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "documents",
+      "pdf",
+      "books"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "CourtListener / RECAP",
+    "url": "https://www.courtlistener.com/",
+    "description": "Free legal-records search over court opinions and PACER dockets via RECAP.",
+    "category": "public-records",
+    "bestFor": "Free search of US federal/state court opinions and PACER dockets (RECAP).",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id",
+      "employer-org"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Recap",
+      "CourtListener"
+    ],
+    "tags": [
+      "court",
+      "legal",
+      "records",
+      "pacer"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "PACER",
+    "url": "https://search.uscourts.gov/",
+    "description": "Official US federal court electronic records; per-page fees apply.",
+    "category": "public-records",
+    "bestFor": "Official US federal court records and dockets (paid per page; free search).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "Pacer"
+    ],
+    "tags": [
+      "court",
+      "federal",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "JudyRecords",
+    "url": "https://www.judyrecords.com/",
+    "description": "Free search engine over hundreds of millions of US court cases.",
+    "category": "public-records",
+    "bestFor": "Free nationwide US court-case search engine.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "court",
+      "legal",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Trellis",
+    "url": "https://trellis.law/",
+    "description": "State-court records and analytics search.",
+    "category": "public-records",
+    "bestFor": "State trial-court records search.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "court",
+      "state",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "UniCourt",
+    "url": "https://unicourt.com/",
+    "description": "Court-records aggregator with legal analytics.",
+    "category": "public-records",
+    "bestFor": "Court records and legal analytics search.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "UniCourt"
+    ],
+    "tags": [
+      "court",
+      "legal",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "FOIA.gov Search",
+    "url": "https://search.foia.gov/",
+    "description": "US federal FOIA records search/request portal.",
+    "category": "public-records",
+    "bestFor": "Search and request US federal records via FOIA.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "foia",
+      "government",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "MuckRock",
+    "url": "https://www.muckrock.com/",
+    "description": "FOIA filing platform and document archive.",
+    "category": "public-records",
+    "bestFor": "FOIA request platform and archive of released government documents.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "foia",
+      "government",
+      "documents"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "OpenCorporates",
+    "url": "https://opencorporates.com/",
+    "description": "Open corporate registry aggregator linking people to companies they control.",
+    "category": "public-records",
+    "bestFor": "Largest open database of companies and their officers/directors worldwide.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "corporate",
+      "business",
+      "officers",
+      "registry"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "AIHitData",
+    "url": "https://www.aihitdata.com/",
+    "description": "Company data aggregator.",
+    "category": "public-records",
+    "bestFor": "Company information database linking people and organizations.",
+    "pricing": "free",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "AIHIT"
+    ],
+    "tags": [
+      "corporate",
+      "business"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "LittleSis",
+    "url": "https://littlesis.org/",
+    "description": "Relationship-mapping database for influential people and entities.",
+    "category": "public-records",
+    "bestFor": "Crowdsourced database mapping relationships among powerful people and organizations.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us",
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "relationships",
+      "power-mapping",
+      "corporate"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "OpenSecrets",
+    "url": "https://www.opensecrets.org/",
+    "description": "Campaign-finance and lobbying records search.",
+    "category": "public-records",
+    "bestFor": "US political donations and lobbying records by donor name.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "donations",
+      "political",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "PoliticalMoneyLine",
+    "url": "http://politicalmoneyline.com/",
+    "description": "Campaign-finance/lobbying records.",
+    "category": "public-records",
+    "bestFor": "Federal campaign-finance and lobbying disclosure records.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "MoneyLine"
+    ],
+    "tags": [
+      "donations",
+      "political",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "OpenPayrolls",
+    "url": "https://openpayrolls.com/",
+    "description": "Public-sector payroll records search; can confirm employment and location.",
+    "category": "public-records",
+    "bestFor": "Search public-employee salary/payroll records by name or employer.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "payroll",
+      "public-employee",
+      "records",
+      "employment"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "VoterRecords",
+    "url": "https://voterrecords.com/",
+    "description": "Free voter-registration records search; confirms a person's address, age and household.",
+    "category": "public-records",
+    "bestFor": "Free search of US voter-registration records (name, address, party, age).",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "dob",
+      "associate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "voter",
+      "records",
+      "address",
+      "us-records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "GenealogyBank SSDI",
+    "url": "https://www.genealogybank.com/",
+    "description": "SSDI and historical newspaper/obituary search; helps determine if a person is deceased.",
+    "category": "public-records",
+    "bestFor": "Social Security Death Index and obituary/genealogy records search.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "name",
+      "dob"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "SSDI"
+    ],
+    "tags": [
+      "ssdi",
+      "genealogy",
+      "death-records",
+      "obituaries"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "VINDecoderz",
+    "url": "https://www.vindecoderz.com/",
+    "description": "Free VIN decoder for vehicle make/model/spec details.",
+    "category": "transportation",
+    "bestFor": "Free VIN decoder returning vehicle specs and history hints.",
+    "pricing": "free",
+    "selectorsIn": [
+      "vin"
+    ],
+    "selectorsOut": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "vin",
+      "vehicle",
+      "decoder"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "FaxVIN",
+    "url": "https://www.faxvin.com/",
+    "description": "VIN and plate lookup with history reports.",
+    "category": "transportation",
+    "bestFor": "VIN/license-plate lookup with vehicle history (paid full report).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "vin"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "vin",
+      "plate",
+      "vehicle",
+      "history"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "CheckThatVIN",
+    "url": "https://checkthatvin.com/",
+    "description": "Free VIN history check.",
+    "category": "transportation",
+    "bestFor": "Free VIN check returning basic vehicle history.",
+    "pricing": "free",
+    "selectorsIn": [
+      "vin"
+    ],
+    "selectorsOut": [
+      "vin"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "vin",
+      "vehicle"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "VINCheck (NICB)",
+    "url": "https://vincheck.info/",
+    "description": "Free VIN lookup for theft and salvage records.",
+    "category": "transportation",
+    "bestFor": "Free VIN check for theft/total-loss records.",
+    "pricing": "free",
+    "selectorsIn": [
+      "vin"
+    ],
+    "selectorsOut": [
+      "vin"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "VINCheck"
+    ],
+    "tags": [
+      "vin",
+      "vehicle",
+      "theft"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "SearchQuarry",
+    "url": "https://www.searchquarry.com/",
+    "description": "Plate/VIN and public-records lookup service.",
+    "category": "transportation",
+    "bestFor": "License-plate, VIN and public-records lookup.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "vehicle-plate",
+      "vin",
+      "name"
+    ],
+    "selectorsOut": [
+      "vehicle-plate",
+      "vin",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "plate",
+      "vin",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "RecordsFinder",
+    "url": "https://recordsfinder.com/",
+    "description": "Records aggregator covering people, phones and vehicles.",
+    "category": "transportation",
+    "bestFor": "People, phone and vehicle records lookup.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "vehicle-plate",
+      "vin",
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "vehicle-plate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "RecordFinder"
+    ],
+    "tags": [
+      "plate",
+      "vin",
+      "people-search",
+      "records"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "CycleVIN",
+    "url": "https://www.cyclevin.com/",
+    "description": "Motorcycle-specific VIN history.",
+    "category": "transportation",
+    "bestFor": "Motorcycle VIN history lookup.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "vin"
+    ],
+    "selectorsOut": [
+      "vin"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "vin",
+      "motorcycle"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Illicit Services Vehicle Search",
+    "url": "https://search.illicit.services/",
+    "description": "Free search engine over leaked datasets; can pivot plates, names and phones to personal records.",
+    "category": "transportation",
+    "bestFor": "Free leaked-data search engine that can resolve plates/names to records.",
+    "pricing": "free",
+    "selectorsIn": [
+      "vehicle-plate",
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone",
+      "vehicle-plate"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Illicit Services"
+    ],
+    "tags": [
+      "plate",
+      "leaked-data",
+      "records",
+      "people-search"
+    ],
+    "notes": "Aggregates leaked/breached data; coverage and legality vary by jurisdiction. Treat as lead-generation only."
+  },
+  {
+    "name": "ViewDNS.info",
+    "url": "http://viewdns.info/",
+    "description": "Multi-tool DNS/whois/reverse-IP/traceroute toolkit.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Suite of DNS/whois/reverse-IP/port-scan tools for a domain or IP.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "ViewDNS"
+    ],
+    "tags": [
+      "dns",
+      "whois",
+      "reverse-ip",
+      "infrastructure"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Who.is",
+    "url": "http://who.is/",
+    "description": "Whois and DNS lookup with history.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Whois, DNS and registration-history lookup for a domain.",
+    "pricing": "free",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "whois",
+      "dns",
+      "domain"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "URLScan.io",
+    "url": "https://urlscan.io/",
+    "description": "Website scanner capturing requests, screenshots and infrastructure of a URL.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Scan and screenshot a URL, exposing its requests, domains and infrastructure.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "URLScan"
+    ],
+    "tags": [
+      "url-scan",
+      "website",
+      "screenshot",
+      "infrastructure"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Whoisology",
+    "url": "https://whoisology.com/",
+    "description": "Historical/reverse-whois database; pivot from registrant name/email to domains.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Historical whois database for reverse-lookups by registrant email/name.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "domain",
+      "email",
+      "name"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "whois",
+      "reverse-whois",
+      "historical"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Whoxy",
+    "url": "https://www.whoxy.com/",
+    "description": "Whois-history and reverse-whois API/web tool.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Whois history and reverse-whois lookup by registrant.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "domain",
+      "email",
+      "name"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "whois",
+      "reverse-whois",
+      "historical"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Shodan",
+    "url": "https://www.shodan.io/",
+    "description": "Device/service search engine across the internet; can geolocate cameras and devices.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Search engine for internet-connected devices and services by IP/domain.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "device-id",
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "shodan",
+      "devices",
+      "iot",
+      "ip",
+      "infrastructure"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Censys",
+    "url": "https://search.censys.io/",
+    "description": "Internet-scan search engine for hosts and certificates.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Internet-wide scan data for hosts, certificates and services.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [],
+    "tags": [
+      "censys",
+      "hosts",
+      "certificates",
+      "infrastructure"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "crt.sh",
+    "url": "https://crt.sh/",
+    "description": "Free certificate-transparency search for subdomain enumeration.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Certificate-transparency log search to enumerate subdomains for a domain.",
+    "pricing": "free",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "CRT.sh"
+    ],
+    "tags": [
+      "certificates",
+      "subdomains",
+      "domain"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "DNSDumpster",
+    "url": "https://dnsdumpster.com/",
+    "description": "Free DNS-recon and subdomain-mapping tool.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Free DNS recon mapping a domain's hosts and infrastructure.",
+    "pricing": "free",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "DNSDump"
+    ],
+    "tags": [
+      "dns",
+      "recon",
+      "subdomains"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "IKnowWhatYouDownload",
+    "url": "http://iknowwhatyoudownload.com/",
+    "description": "Tracks BitTorrent activity by IP; can suggest a device's downloads/location.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Show torrent download activity associated with an IP address.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Torrents"
+    ],
+    "tags": [
+      "ip",
+      "torrent",
+      "activity"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "IPLocation.net",
+    "url": "https://www.iplocation.net/",
+    "description": "Free multi-source IP-geolocation lookup.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "Free IP geolocation across multiple providers.",
+    "pricing": "free",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "IPLocation"
+    ],
+    "tags": [
+      "ip",
+      "geolocation"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "IPAddress.com",
+    "url": "https://www.ipaddress.com/",
+    "description": "IP/DNS lookup with geolocation.",
+    "category": "domains-ip-infrastructure",
+    "bestFor": "IP and DNS lookup with geolocation.",
+    "pricing": "free",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "geolocation"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "ip",
+      "dns",
+      "geolocation"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Blockchain.com Explorer",
+    "url": "https://www.blockchain.com/explorer",
+    "description": "Bitcoin blockchain explorer for address/transaction analysis.",
+    "category": "financial-crypto",
+    "bestFor": "Explore Bitcoin addresses, balances and transactions.",
+    "pricing": "free",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Blockchain"
+    ],
+    "tags": [
+      "bitcoin",
+      "blockchain",
+      "wallet"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Blockchair",
+    "url": "https://blockchair.com/",
+    "description": "Multi-blockchain explorer and analytics.",
+    "category": "financial-crypto",
+    "bestFor": "Multi-chain blockchain explorer (BTC, ETH, LTC, BCH, DOGE, DASH).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Blockchair"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain",
+      "multi-chain",
+      "wallet"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "WalletExplorer",
+    "url": "https://www.walletexplorer.com/",
+    "description": "Bitcoin wallet-clustering explorer for attribution.",
+    "category": "financial-crypto",
+    "bestFor": "Cluster Bitcoin addresses into wallets for attribution.",
+    "pricing": "free",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "bitcoin",
+      "clustering",
+      "wallet",
+      "attribution"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Bitcoin Who's Who",
+    "url": "https://bitcoinwhoswho.com/",
+    "description": "Crowdsourced identity/scam database for Bitcoin addresses.",
+    "category": "financial-crypto",
+    "bestFor": "Look up reported identities/scam reports for a Bitcoin address.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "WhosWho"
+    ],
+    "tags": [
+      "bitcoin",
+      "attribution",
+      "scam",
+      "wallet"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Chainabuse",
+    "url": "https://www.chainabuse.com/",
+    "description": "Cross-chain crypto scam/abuse report database.",
+    "category": "financial-crypto",
+    "bestFor": "Community reports of scam/abuse crypto addresses across chains.",
+    "pricing": "free",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "BitcoinAbuse"
+    ],
+    "tags": [
+      "crypto",
+      "scam",
+      "abuse",
+      "wallet"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "OXT",
+    "url": "https://oxt.me/",
+    "description": "Bitcoin analytics/graph explorer.",
+    "category": "financial-crypto",
+    "bestFor": "Bitcoin transaction-graph analytics explorer.",
+    "pricing": "free",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "bitcoin",
+      "analytics",
+      "graph"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Dehashed",
+    "url": "https://dehashed.com/",
+    "description": "Breach-data search engine supporting many selector types; can return passwords, names and addresses tied to a person.",
+    "category": "email",
+    "bestFor": "Search breached/leaked credential datasets by email, username, name, phone or IP.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email",
+      "username",
+      "name",
+      "phone",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "email",
+      "username",
+      "name",
+      "phone",
+      "address"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "Dehashed"
+    ],
+    "tags": [
+      "breach",
+      "leaks",
+      "credentials",
+      "email",
+      "phone"
+    ],
+    "notes": "Highly relevant: pivoting a known email/username/phone for a missing person can surface alternate accounts, old addresses and phone numbers. Free search shows hits; full data requires paid/subscription."
+  },
+  {
+    "name": "PSBDMP",
+    "url": "https://psbdmp.ws/",
+    "description": "Paste-dump search engine indexing leaked Pastebin content.",
+    "category": "email",
+    "bestFor": "Search a database of public pastes (Pastebin dumps) for an email/keyword.",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "PSBDMP"
+    ],
+    "tags": [
+      "pastes",
+      "leaks",
+      "email"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "ProxyNova COMB",
+    "url": "https://api.proxynova.com/comb/",
+    "description": "Free lookup against the COMB aggregated-breach dataset.",
+    "category": "email",
+    "bestFor": "Search the COMB (Compilation of Many Breaches) credential dataset by email.",
+    "pricing": "free",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": true,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "COMB"
+    ],
+    "tags": [
+      "breach",
+      "comb",
+      "credentials",
+      "email"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "SpyCloud",
+    "url": "https://portal.spycloud.com/",
+    "description": "Breach/infostealer exposure check.",
+    "category": "email",
+    "bestFor": "Check exposure of an email in breach/infostealer data (free check, paid platform).",
+    "pricing": "freemium",
+    "selectorsIn": [
+      "email",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": true,
+    "aliases": [
+      "Spycloud"
+    ],
+    "tags": [
+      "breach",
+      "infostealer",
+      "email"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "BTDigg",
+    "url": "https://btdig.com/",
+    "description": "BitTorrent DHT search engine.",
+    "category": "dark-web",
+    "bestFor": "DHT-based BitTorrent search engine for files/keywords.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "BTDigg"
+    ],
+    "tags": [
+      "torrent",
+      "search",
+      "files"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Google",
+    "url": "https://www.google.com/",
+    "description": "General web search; the backbone of most OSINT pivots via advanced operators (dorks).",
+    "category": "search-engines",
+    "bestFor": "Primary web search engine; foundation for dorking a person's name, handle, email or phone.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone",
+      "domain"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile",
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "search-engine",
+      "dorks",
+      "web"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Bing",
+    "url": "https://www.bing.com/",
+    "description": "General web search with a different index; complements Google for OSINT.",
+    "category": "search-engines",
+    "bestFor": "Web search engine with distinct index and operators useful for cross-checking Google.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "search-engine",
+      "dorks",
+      "web"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Yandex",
+    "url": "https://yandex.com/",
+    "description": "General/image search engine; best free face-matching and strong Eastern-European coverage.",
+    "category": "search-engines",
+    "bestFor": "Search engine with superior reverse-image/face matching and non-Western coverage.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username",
+      "image",
+      "face"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile",
+      "image"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "search-engine",
+      "image",
+      "face",
+      "reverse-image"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "DuckDuckGo",
+    "url": "https://duckduckgo.com/",
+    "description": "Privacy-preserving metasearch engine.",
+    "category": "search-engines",
+    "bestFor": "Privacy-focused search engine for OPSEC-conscious querying.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "search-engine",
+      "privacy"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Startpage",
+    "url": "https://startpage.com/",
+    "description": "Privacy proxy for Google results.",
+    "category": "search-engines",
+    "bestFor": "Privacy-front-end that returns Google results without tracking.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "StartPage"
+    ],
+    "tags": [
+      "search-engine",
+      "privacy"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Brave Search",
+    "url": "https://search.brave.com/",
+    "description": "Independent privacy search engine.",
+    "category": "search-engines",
+    "bestFor": "Independent-index privacy search engine.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Brave"
+    ],
+    "tags": [
+      "search-engine",
+      "privacy"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "SearXNG (baresearch.org)",
+    "url": "https://baresearch.org/",
+    "description": "Privacy metasearch aggregator (SearXNG instance).",
+    "category": "search-engines",
+    "bestFor": "Open-source metasearch aggregating many engines without tracking.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": true,
+    "registration": false,
+    "aliases": [
+      "Searx",
+      "SearXNG"
+    ],
+    "tags": [
+      "search-engine",
+      "metasearch",
+      "privacy"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Google Scholar",
+    "url": "https://scholar.google.com/",
+    "description": "Scholarly literature search.",
+    "category": "search-engines",
+    "bestFor": "Academic-publication search; can locate a person's papers/affiliations.",
+    "pricing": "free",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [],
+    "tags": [
+      "academic",
+      "scholar",
+      "search-engine"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Wayback Machine",
+    "url": "https://web.archive.org/",
+    "description": "Internet Archive's web-archive; recovers deleted pages, profiles and content.",
+    "category": "archives-cache",
+    "bestFor": "Browse archived snapshots of web pages and deleted social profiles.",
+    "pricing": "free",
+    "selectorsIn": [
+      "domain",
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "social-profile"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "verified",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Wayback",
+      "Archive.org"
+    ],
+    "tags": [
+      "archive",
+      "cache",
+      "historical",
+      "wayback"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Archive.today",
+    "url": "http://archive.md/",
+    "description": "On-demand web-page archiving/retrieval service.",
+    "category": "archives-cache",
+    "bestFor": "On-demand snapshot service for archiving and retrieving web pages.",
+    "pricing": "free",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Archive.md",
+      "Archive.today"
+    ],
+    "tags": [
+      "archive",
+      "cache",
+      "snapshot"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Arquivo.pt",
+    "url": "https://arquivo.pt/",
+    "description": "Web archive (Portugal) useful as an alternate to Wayback.",
+    "category": "archives-cache",
+    "bestFor": "Portuguese web archive with broad international crawls.",
+    "pricing": "free",
+    "selectorsIn": [
+      "domain",
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Arquivo"
+    ],
+    "tags": [
+      "archive",
+      "historical"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "Memento TimeTravel",
+    "url": "http://timetravel.mementoweb.org/",
+    "description": "Meta-archive search across multiple web-archive providers.",
+    "category": "archives-cache",
+    "bestFor": "Aggregator that finds archived copies of a URL across many web archives.",
+    "pricing": "free",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "opsec": "passive",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "api": false,
+    "localInstall": false,
+    "registration": false,
+    "aliases": [
+      "Mementoweb"
+    ],
+    "tags": [
+      "archive",
+      "aggregator",
+      "historical"
+    ],
+    "notes": ""
+  }
+]

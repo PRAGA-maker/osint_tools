@@ -143,19 +143,19 @@
       "tree": "both",
       "kind": "discord",
       "url": "https://discord.com/channels/808030986276569118",
-      "status": "queued",
+      "status": "partial",
       "itemsFound": 0,
-      "lastCrawled": "",
-      "notes": "Resource/technique channels + pins ONLY (PII-free). Extract tools/strategies, do not transcribe chat. Chrome MCP + user auth."
+      "lastCrawled": "2026-06-13",
+      "notes": "Channel map captured (tools-and-websites, tools-n-tech, tl-writeups, learning-osint, general-osint, library-submissions). Message scrape blocked by Discord SPA freezing CDP eval \u2014 retry per-channel in a fresh tab."
     },
     {
       "id": "kimi-swarm",
       "tree": "both",
       "kind": "kimi-swarm",
       "url": "https://kimi.com",
-      "status": "queued",
-      "itemsFound": 0,
-      "lastCrawled": "",
+      "status": "partial",
+      "itemsFound": 12,
+      "lastCrawled": "2026-06-13",
       "notes": "Agent-swarm deep-dives per using-kimi-for-research skill; download output folders to ~/Downloads, fold in."
     },
     {
@@ -213,9 +213,9 @@
       "tree": "tools",
       "kind": "website",
       "url": "https://metaosint.github.io",
-      "status": "queued",
-      "itemsFound": 0,
-      "lastCrawled": "",
+      "status": "exhausted",
+      "itemsFound": 719,
+      "lastCrawled": "2026-06-13",
       "notes": "Large categorized OSINT tool directory (frontier from ultimate-osint)."
     },
     {
@@ -223,9 +223,9 @@
       "tree": "tools",
       "kind": "website",
       "url": "https://bellingcat.gitbook.io/toolkit",
-      "status": "queued",
-      "itemsFound": 0,
-      "lastCrawled": "",
+      "status": "exhausted",
+      "itemsFound": 183,
+      "lastCrawled": "2026-06-13",
       "notes": "Bellingcat's curated investigative toolkit (frontier)."
     },
     {
@@ -243,9 +243,9 @@
       "tree": "tools",
       "kind": "github-list",
       "url": "https://github.com/sinwindie/OSINT",
-      "status": "queued",
-      "itemsFound": 0,
-      "lastCrawled": "",
+      "status": "partial",
+      "itemsFound": 8,
+      "lastCrawled": "2026-06-13",
       "notes": "Platform-indexed OSINT tool maps incl. social (frontier)."
     },
     {
@@ -253,9 +253,9 @@
       "tree": "tools",
       "kind": "github-list",
       "url": "https://github.com/osintambition/Social-Media-OSINT-Tools-Collection",
-      "status": "queued",
-      "itemsFound": 0,
-      "lastCrawled": "",
+      "status": "partial",
+      "itemsFound": 102,
+      "lastCrawled": "2026-06-13",
       "notes": "290+ social-media OSINT tools across 16 platforms; only partially mined."
     },
     {
@@ -263,9 +263,9 @@
       "tree": "tools",
       "kind": "website",
       "url": "https://inteltechniques.com/tools/",
-      "status": "queued",
+      "status": "partial",
       "itemsFound": 0,
-      "lastCrawled": "",
+      "lastCrawled": "2026-06-13",
       "notes": "Michael Bazzell's free online tool set (frontier)."
     },
     {
@@ -273,9 +273,9 @@
       "tree": "tools",
       "kind": "website",
       "url": "https://www.uk-osint.net/",
-      "status": "queued",
+      "status": "partial",
       "itemsFound": 0,
-      "lastCrawled": "",
+      "lastCrawled": "2026-06-13",
       "notes": "UK-focused OSINT resource hub (frontier)."
     },
     {
@@ -283,9 +283,9 @@
       "tree": "tools",
       "kind": "website",
       "url": "https://www.toddington.com/resources/",
-      "status": "queued",
-      "itemsFound": 0,
-      "lastCrawled": "",
+      "status": "exhausted",
+      "itemsFound": 1899,
+      "lastCrawled": "2026-06-13",
       "notes": "Toddington free OSINT resources (frontier)."
     },
     {
@@ -293,9 +293,9 @@
       "tree": "both",
       "kind": "github-repo",
       "url": "https://github.com/OSINTI4L/cupidcr4wl",
-      "status": "queued",
+      "status": "blocked",
       "itemsFound": 0,
-      "lastCrawled": "",
+      "lastCrawled": "2026-06-13",
       "notes": "Username/phone OSINT tool for dating/adult/escort platforms; trafficking-relevant (frontier)."
     },
     {
@@ -317,6 +317,46 @@
       "itemsFound": 0,
       "lastCrawled": "",
       "notes": "Shandyman 'Leveraging AI in OSINT CTF' writeup \u2014 retry (was Cloudflare-blocked)."
+    },
+    {
+      "id": "kimi-faces",
+      "tree": "tools",
+      "kind": "kimi-swarm",
+      "url": "https://kimi.com",
+      "status": "exhausted",
+      "itemsFound": 0,
+      "lastCrawled": "2026-06-13",
+      "notes": "Kimi 2026 face-search sweep"
+    },
+    {
+      "id": "kimi-tiktok-snap",
+      "tree": "tools",
+      "kind": "kimi-swarm",
+      "url": "https://kimi.com",
+      "status": "exhausted",
+      "itemsFound": 0,
+      "lastCrawled": "2026-06-13",
+      "notes": "Kimi 2026 TikTok/Snapchat sweep"
+    },
+    {
+      "id": "kimi-telegram",
+      "tree": "tools",
+      "kind": "kimi-swarm",
+      "url": "https://kimi.com",
+      "status": "exhausted",
+      "itemsFound": 0,
+      "lastCrawled": "2026-06-13",
+      "notes": "Kimi 2026 Telegram sweep"
+    },
+    {
+      "id": "kimi-geo",
+      "tree": "tools",
+      "kind": "kimi-swarm",
+      "url": "https://kimi.com",
+      "status": "exhausted",
+      "itemsFound": 0,
+      "lastCrawled": "2026-06-13",
+      "notes": "Kimi 2026 image-geo/chronolocation sweep"
     }
   ]
 }
