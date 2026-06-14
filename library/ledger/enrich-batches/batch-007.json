@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/infostealers.md",
+  "id": "infostealers",
+  "name": "InfoStealers",
+  "url": "https://infostealers.info/en/info",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/infostealers-info.md",
+  "id": "infostealers-info",
+  "name": "infostealers.info",
+  "url": "https://infostealers.info/en/search",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/intelbase.md",
+  "id": "intelbase",
+  "name": "IntelBase",
+  "url": "https://intelbase.is/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/intelligence-x-2.md",
+  "id": "intelligence-x-2",
+  "name": "Intelligence X",
+  "url": "https://intelx.io/tools?tab=email",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/intelligencesecurity-io.md",
+  "id": "intelligencesecurity-io",
+  "name": "intelligencesecurity.io",
+  "url": "https://intelligencesecurity.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/ipqualityscore-com.md",
+  "id": "ipqualityscore-com",
+  "name": "ipqualityscore.com",
+  "url": "https://www.ipqualityscore.com/free-email-verifier",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/ipvoid-com.md",
+  "id": "ipvoid-com",
+  "name": "ipvoid.com",
+  "url": "https://www.ipvoid.com/email-tracer/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/leakcheck.md",
+  "id": "leakcheck",
+  "name": "LeakCheck",
+  "url": "https://leakcheck.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/leaked-domains.md",
+  "id": "leaked-domains",
+  "name": "leaked.domains",
+  "url": "https://leaked.domains/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/leaked-site.md",
+  "id": "leaked-site",
+  "name": "Leaked.site",
+  "url": "https://www.leaked.site/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/leakedpassword-com.md",
+  "id": "leakedpassword-com",
+  "name": "Leakedpassword.com",
+  "url": "https://leakedpassword.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/leaker.md",
+  "id": "leaker",
+  "name": "Leaker",
+  "url": "https://github.com/vflame6/leaker",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/leakpeek-com.md",
+  "id": "leakpeek-com",
+  "name": "Leakpeek.com",
+  "url": "https://leakpeek.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/leakradar.md",
+  "id": "leakradar",
+  "name": "LeakRadar",
+  "url": "https://leakradar.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/ledger.md",
+  "id": "ledger",
+  "name": "Ledger",
+  "url": "https://bloopbase.keybase.pub/POPPY/LEDGER/index.html",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/liker.md",
+  "id": "liker",
+  "name": "Liker",
+  "url": "https://bloopbase.keybase.pub/POPPY/LIKER/index.html",
+  "category": "email",
+  "mp": "high"
+ }
+]

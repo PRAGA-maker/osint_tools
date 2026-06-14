@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/sanctions-screening/opensanctions.md",
+  "id": "opensanctions",
+  "name": "OpenSanctions",
+  "url": "https://www.opensanctions.org/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/opensanctions-org.md",
+  "id": "opensanctions-org",
+  "name": "Opensanctions.org",
+  "url": "https://opensanctions.org/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/kyc-aml-tools/openscreening.md",
+  "id": "openscreening",
+  "name": "OpenScreening",
+  "url": "https://resources.linkurious.com/openscreening",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/parler-archive-search.md",
+  "id": "parler-archive-search",
+  "name": "Parler Archive Search",
+  "url": "https://parler.adatascienti.st/research",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/parler-capitol-videos.md",
+  "id": "parler-capitol-videos",
+  "name": "Parler Capitol Videos",
+  "url": "https://projects.propublica.org/parler-capitol-videos/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/paul-hensel-s-general-informational-data-page.md",
+  "id": "paul-hensel-s-general-informational-data-page",
+  "name": "Paul Hensel\u2019s General Informational Data Page",
+  "url": "http://www.paulhensel.org/dataintl.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/penn-world-table.md",
+  "id": "penn-world-table",
+  "name": "Penn World Table",
+  "url": "http://www.rug.nl/research/ggdc/data/pwt/pwt-8.1",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sanctions-pep/pepchecker.md",
+  "id": "pepchecker",
+  "name": "PepChecker",
+  "url": "https://pepchecker.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/pew-research-center.md",
+  "id": "pew-research-center",
+  "name": "Pew Research Center",
+  "url": "http://www.pewinternet.org/datasets",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/population-reference-bureau-data-finder.md",
+  "id": "population-reference-bureau-data-finder",
+  "name": "Population Reference Bureau Data Finder",
+  "url": "http://www.prb.org/DataFinder.aspx",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/project-whispers.md",
+  "id": "project-whispers",
+  "name": "Project Whispers",
+  "url": "https://whispers.ddosecrets.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/prs-risk-indicators.md",
+  "id": "prs-risk-indicators",
+  "name": "PRS Risk Indicators",
+  "url": "http://www.prsgroup.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/public-records-2.md",
+  "id": "public-records-2",
+  "name": "Public Records?",
+  "url": "https://publicrecords.searchsystems.net/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/rechercher-par-entreprise.md",
+  "id": "rechercher-par-entreprise",
+  "name": "Rechercher par entreprise",
+  "url": "https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche?mode=Entreprise",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/rechercher-par-r-gion-ou-type-de-travaux.md",
+  "id": "rechercher-par-r-gion-ou-type-de-travaux",
+  "name": "Rechercher par r\u00e9gion ou type de travaux",
+  "url": "https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche?mode=RegionTypeTravaux",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/rechercher-par-r-pondant.md",
+  "id": "rechercher-par-r-pondant",
+  "name": "Rechercher par r\u00e9pondant",
+  "url": "https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche?mode=Repondant",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/digitaltrends-com.md",
+  "id": "digitaltrends-com",
+  "name": "DigitalTrends.com",
+  "url": "http://www.digitaltrends.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/disboards.md",
+  "id": "disboards",
+  "name": "Disboards",
+  "url": "http://disboards.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/discord-servers/discord-bot-list.md",
+  "id": "discord-bot-list",
+  "name": "Discord Bot List",
+  "url": "https://discord.bots.gg/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/discovery-channel-television-canada.md",
+  "id": "discovery-channel-television-canada",
+  "name": "Discovery Channel Television (Canada)",
+  "url": "http://www.discovery.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/disqus.md",
+  "id": "disqus",
+  "name": "Disqus",
+  "url": "https://disqus.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/dogster.md",
+  "id": "dogster",
+  "name": "Dogster",
+  "url": "http://www.dogster.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/doxbin.md",
+  "id": "doxbin",
+  "name": "doxbin",
+  "url": "https://doxbin.net/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/dpaste.md",
+  "id": "dpaste",
+  "name": "dpaste",
+  "url": "https://Dpaste.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/eharmony-2.md",
+  "id": "eharmony-2",
+  "name": "eHarmony",
+  "url": "http://www.eharmony.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/engadget-com.md",
+  "id": "engadget-com",
+  "name": "EnGadget.com",
+  "url": "http://www.engadget.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/etusivu.md",
+  "id": "etusivu",
+  "name": "Etusivu",
+  "url": "https://pastebin.fi/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/eumom-ie.md",
+  "id": "eumom-ie",
+  "name": "eumom.ie",
+  "url": "https://www.eumom.ie/forums/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/eveonline-forum.md",
+  "id": "eveonline-forum",
+  "name": "EveOnline Forum",
+  "url": "https://forums.eveonline.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/everplaces.md",
+  "id": "everplaces",
+  "name": "Everplaces",
+  "url": "https://everplaces.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/eweek-technology-news.md",
+  "id": "eweek-technology-news",
+  "name": "Eweek Technology News",
+  "url": "http://www.eweek.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/expedia.md",
+  "id": "expedia",
+  "name": "Expedia",
+  "url": "https://www.expedia.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

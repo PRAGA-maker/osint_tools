@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dark-web/github-danaxscully.md",
+  "id": "github-danaxscully",
+  "name": "Github - DanaXScully",
+  "url": "https://gitlab.com/DanaXScully/onion_links",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/hidden-guns.md",
+  "id": "hidden-guns",
+  "name": "Hidden Guns",
+  "url": "http://hgunsxfupqwrf3nrr64tzmbhopaxqjfzofplkzs2nn24xlxptlxmadqd.onion/home",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/honor-guns.md",
+  "id": "honor-guns",
+  "name": "Honor Guns",
+  "url": "http://x4fcceh6bfwxr4b54i6tgufhmut43jqqi4oeapg3oubjlrkzzm5bw5qd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/i2p-invisible-internet-project.md",
+  "id": "i2p-invisible-internet-project",
+  "name": "I2P - Invisible Internet Project",
+  "url": "https://i2p.net/en/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/kilos-darknet-search-engine.md",
+  "id": "kilos-darknet-search-engine",
+  "name": "KILOS Darknet Search Engine",
+  "url": "http://dnmugu4755642434.onion.pet/captcha",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/linkbaseorg.md",
+  "id": "linkbaseorg",
+  "name": "LinkBaseORG",
+  "url": "https://link-base.org/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/mail2tor.md",
+  "id": "mail2tor",
+  "name": "Mail2Tor",
+  "url": "http://mail2torjgmxgexntbrmhvgluavhj7ouul5yar6ylbvjkxwqf6ixkwyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/money-center.md",
+  "id": "money-center",
+  "name": "Money Center",
+  "url": "http://l5keufi2jvz34eva7znc4we2e743kqn33o2qjxme2l7r6ylozpwsi2yd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/mullvad-vpn.md",
+  "id": "mullvad-vpn",
+  "name": "Mullvad VPN",
+  "url": "http://o54hon2e2vj6c7m3aqqu6uyece65by3vgoxxhlqlsvkmacw6a7m7kiad.onion/en",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/onion-engine.md",
+  "id": "onion-engine",
+  "name": "Onion Engine",
+  "url": "https://onionengine.com/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/onion-land.md",
+  "id": "onion-land",
+  "name": "Onion Land",
+  "url": "https://onionland.io/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/onion-search.md",
+  "id": "onion-search",
+  "name": "Onion Search",
+  "url": "https://github.com/megadose/OnionSearch",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/onion-search-engine.md",
+  "id": "onion-search-engine",
+  "name": "Onion search engine",
+  "url": "https://onionsearchengine.com/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/onions-darknetlive.md",
+  "id": "onions-darknetlive",
+  "name": "Onions - Darknetlive",
+  "url": "https://darknetlive.com/onions/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/onionsearch.md",
+  "id": "onionsearch",
+  "name": "onionsearch",
+  "url": "https://pypi.org/project/onionsearch/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/osint-me-1.md",
+  "id": "osint-me-1",
+  "name": "osint.me 1",
+  "url": "https://www.osintme.com/index.php/2023/06/30/darkweb-osint-links-and-new-2023-resources/",
+  "category": "dark-web",
+  "mp": "low"
+ }
+]

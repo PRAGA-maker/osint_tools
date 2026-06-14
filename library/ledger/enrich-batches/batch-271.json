@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/us-government-printing-office.md",
+  "id": "us-government-printing-office",
+  "name": "US Government Printing Office",
+  "url": "http://www.gpo.gov/fdsys/search/advanced/advsearchpage.action?totalMetadataFields=2&dispatch=advancedsearch&selectedPublicationDate=All+Dates&newAvailableList=GPO&newAvailableList=BUDGET&newAvailableList=CZIC&newAvailableList=CPD&newAvailableList=BILLS&newAvailableList=CCAL&newAvailableList=CPRT&newAvailableList=CDIR&newAvailableList=CDOC&newAvailableList=CHRG&newAvailableList=CREC&newAvailableList=CRECB&newAvailableList=CRI&newAvailableList=CRPT&newAvailableList=ECONI&newAvailableList=ERP&newAvailableList=ERIC&newAvailableList=FR&newAvailableList=GAOREPORTS&newAvailableList=GOVMAN&newAvailableList=HOB&newAvailableList=HJOURNAL&newAvailableList=HMAN&newAvailableList=LSA&newAvailableList=PAI&newAvailableList=PPP&newAvailableList=PLAW&newAvailableList=SMAN&newAvailableList=STATUTE&newAvailableList=USCODE&newAvailableList=USCOURTS&newSelectedList=&newSelectedList=CFR&ycord=0&selectedMetadataField1=content&selectedTextBoxValue1=&link=#page1",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/us-location-information.md",
+  "id": "us-location-information",
+  "name": "US Location Information",
+  "url": "http://www.usa.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/us-securities-and-exchange-commission.md",
+  "id": "us-securities-and-exchange-commission",
+  "name": "US Securities & Exchange Commission",
+  "url": "http://www.sec.gov/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/usa-gov.md",
+  "id": "usa-gov",
+  "name": "USA.gov",
+  "url": "http://www.usa.gov/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/usarmy-occupation-codes-united-states.md",
+  "id": "usarmy-occupation-codes-united-states",
+  "name": "USArmy Occupation Codes (United States)",
+  "url": "https://en.wikipedia.org/wiki/List_of_United_States_Army_careers",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/usps-zip-code-look-up.md",
+  "id": "usps-zip-code-look-up",
+  "name": "USPS Zip Code Look Up",
+  "url": "https://tools.usps.com/go/ZipLookupAction!input.action",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/vancouver-sun-opinions.md",
+  "id": "vancouver-sun-opinions",
+  "name": "Vancouver Sun Opinions",
+  "url": "https://vancouversun.com/category/opinion",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/vinden-meta-search-netherlands.md",
+  "id": "vinden-meta-search-netherlands",
+  "name": "Vinden Meta Search (Netherlands)",
+  "url": "http://www.vinden.nl",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/virgilio-search-portal-italy.md",
+  "id": "virgilio-search-portal-italy",
+  "name": "Virgilio Search Portal (Italy)",
+  "url": "http://www.virgilio.it",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/visto-search-engine-greece.md",
+  "id": "visto-search-engine-greece",
+  "name": "Visto Search Engine (Greece)",
+  "url": "http://www.visto.gr",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/vulnerability-and-exploit-database.md",
+  "id": "vulnerability-and-exploit-database",
+  "name": "Vulnerability & Exploit Database",
+  "url": "https://www.rapid7.com/db/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/warcraft-character-search.md",
+  "id": "warcraft-character-search",
+  "name": "Warcraft Character Search",
+  "url": "http://www.warcraftrealms.com/charhistory.php",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/washington-office-of-financial-management.md",
+  "id": "washington-office-of-financial-management",
+  "name": "Washington Office of Financial Management",
+  "url": "http://www.ofm.wa.gov/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/watch-out-investors.md",
+  "id": "watch-out-investors",
+  "name": "Watch Out Investors",
+  "url": "http://www.watchoutinvestors.com/default2a.asp",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-tools/wayparam.md",
+  "id": "wayparam",
+  "name": "wayparam",
+  "url": "https://github.com/aleff-github/wayparam",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wazap-video-and-game-search-japan.md",
+  "id": "wazap-video-and-game-search-japan",
+  "name": "Wazap Video and Game Search (Japan)",
+  "url": "http://jp.wazap.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

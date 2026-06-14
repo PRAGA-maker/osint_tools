@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/buzz-sumo.md",
+  "id": "buzz-sumo",
+  "name": "Buzz sumo",
+  "url": "http://buzzsumo.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/castrick.md",
+  "id": "castrick",
+  "name": "Castrick",
+  "url": "https://castrickclues.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/chartloop.md",
+  "id": "chartloop",
+  "name": "Chartloop",
+  "url": "https://buildorgchart.herokuapp.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/chatter.md",
+  "id": "chatter",
+  "name": "chatter",
+  "url": "https://github.com/visualbasic6/chatter",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/clearsky-app.md",
+  "id": "clearsky-app",
+  "name": "clearsky.app",
+  "url": "https://clearsky.app/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/cobalt-tools.md",
+  "id": "cobalt-tools",
+  "name": "cobalt.tools",
+  "url": "https://cobalt.tools/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/codeofaninja-com.md",
+  "id": "codeofaninja-com",
+  "name": "codeofaninja.com",
+  "url": "https://www.codeofaninja.com/tools/find-tiktok-id/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/com-hemiola-com.md",
+  "id": "com-hemiola-com",
+  "name": "com.hemiola.com",
+  "url": "http://com.hemiola.com/bookmarklet/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/commentpicker-com.md",
+  "id": "commentpicker-com",
+  "name": "commentpicker.com",
+  "url": "https://commentpicker.com/instagram-username.php",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/commentpicker-com-2.md",
+  "id": "commentpicker-com-2",
+  "name": "commentpicker.com",
+  "url": "https://commentpicker.com/tiktok-id.php",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/company-or-organisation.md",
+  "id": "company-or-organisation",
+  "name": "Company or Organisation",
+  "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Afacebook.com+%22works+at%22+%22Search+Term%22+",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/copainsdavant-linternaute-com.md",
+  "id": "copainsdavant-linternaute-com",
+  "name": "copainsdavant.linternaute.com",
+  "url": "https://copainsdavant.linternaute.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/location-mapping/creepy-2.md",
+  "id": "creepy-2",
+  "name": "Creepy",
+  "url": "https://github.com/ilektrojohn/creepy",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/datanyze-com.md",
+  "id": "datanyze-com",
+  "name": "datanyze.com",
+  "url": "https://www.datanyze.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/ddlvid-com.md",
+  "id": "ddlvid-com",
+  "name": "ddlvid.com",
+  "url": "https://ddlvid.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/deck-blue.md",
+  "id": "deck-blue",
+  "name": "deck.blue",
+  "url": "https://deck.blue/",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

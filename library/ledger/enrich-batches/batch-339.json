@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dark-web/dargle.md",
+  "id": "dargle",
+  "name": "Dargle",
+  "url": "http://www.dargle.net/search",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/dark-tracer.md",
+  "id": "dark-tracer",
+  "name": "Dark Tracer",
+  "url": "https://darktracer.io/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/darknet-market-list.md",
+  "id": "darknet-market-list",
+  "name": "Darknet Market List",
+  "url": "https://darknetlive.com/markets/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/darkweb-archive.md",
+  "id": "darkweb-archive",
+  "name": "Darkweb archive",
+  "url": "https://darkweb-archive.activetk.jp/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/darkweb-forums.md",
+  "id": "darkweb-forums",
+  "name": "Darkweb Forums",
+  "url": "https://darknetlive.com/forums/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/darkwebdaily.md",
+  "id": "darkwebdaily",
+  "name": "DarkWebDaily",
+  "url": "https://darkwebdaily.live/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/daunt-link.md",
+  "id": "daunt-link",
+  "name": "daunt.link",
+  "url": "https://daunt.link/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/dcdutchconnectionuk.md",
+  "id": "dcdutchconnectionuk",
+  "name": "DCdutchconnectionUK",
+  "url": "http://wbz2lrxhw4dd7h5t2wnoczmcz5snjpym4pr7dzjmah4vi6yywn37bdyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/dedope.md",
+  "id": "dedope",
+  "name": "DeDope",
+  "url": "http://sga5n7zx6qjty7uwvkxpwstyoh73shst6mx3okouv53uks7ks47msayd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/deep-money-transfer.md",
+  "id": "deep-money-transfer",
+  "name": "Deep Money Transfer",
+  "url": "http://fgkat66twl7s7eshw32dqcjneqaxre2gtbq2omen332pg6n4fr5464ad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/deep-search.md",
+  "id": "deep-search",
+  "name": "Deep Search",
+  "url": "http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/discounted-apple-products.md",
+  "id": "discounted-apple-products",
+  "name": "Discounted Apple Products",
+  "url": "http://ceyt3r2jnxzufrtaqcbizjqkjte6cvxlsgxa3k2oxlzd27q7fi2r7qad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/duckduckgo-2.md",
+  "id": "duckduckgo-2",
+  "name": "DuckDuckGo",
+  "url": "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/eucanna.md",
+  "id": "eucanna",
+  "name": "EuCanna",
+  "url": "http://n6qisfgjauj365pxccpr5vizmtb5iavqaug7m7e4ewkxuygk5iim6yyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/facebook-2.md",
+  "id": "facebook-2",
+  "name": "Facebook",
+  "url": "https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/github-apurv-singh-gautam.md",
+  "id": "github-apurv-singh-gautam",
+  "name": "Github - Apurv Singh Gautam",
+  "url": "https://github.com/apurvsinghgautam/dark-web-osint-tools",
+  "category": "dark-web",
+  "mp": "low"
+ }
+]

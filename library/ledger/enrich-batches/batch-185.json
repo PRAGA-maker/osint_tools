@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/search-dnslytics-com.md",
+  "id": "search-dnslytics-com",
+  "name": "search.dnslytics.com",
+  "url": "https://search.dnslytics.com/tools",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/weare-ie.md",
+  "id": "weare-ie",
+  "name": "weare.ie",
+  "url": "https://www.weare.ie/privacy-policy/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/well-known-dev.md",
+  "id": "well-known-dev",
+  "name": "well-known.dev",
+  "url": "https://well-known.dev/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whoisdatacenter-com.md",
+  "id": "whoisdatacenter-com",
+  "name": "whoisdatacenter.com",
+  "url": "https://whoisdatacenter.com/domain-lookup/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/wintelguy-com.md",
+  "id": "wintelguy-com",
+  "name": "wintelguy.com",
+  "url": "https://wintelguy.com/index.pl",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/yougetsignal-com.md",
+  "id": "yougetsignal-com",
+  "name": "yougetsignal.com",
+  "url": "https://www.yougetsignal.com/tools/web-sites-on-web-server/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/archive-is-2.md",
+  "id": "archive-is-2",
+  "name": "Archive.is",
+  "url": "https://archive.is/",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/burp-suite-2.md",
+  "id": "burp-suite-2",
+  "name": "Burp Suite",
+  "url": "https://portswigger.net/burp/download.html",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/ezr-osint-sidebar.md",
+  "id": "ezr-osint-sidebar",
+  "name": "EZR OSINT Sidebar",
+  "url": "https://chromewebstore.google.com/detail/ezr-osint-sidebar/joagbbgciboooipadijeaoidjjigdmof",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/fiddler.md",
+  "id": "fiddler",
+  "name": "Fiddler",
+  "url": "https://www.telerik.com/download/fiddler",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/forensic-osint.md",
+  "id": "forensic-osint",
+  "name": "Forensic OSINT",
+  "url": "https://www.forensicosint.com/",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/screen-capture/fraps.md",
+  "id": "fraps",
+  "name": "FRAPS",
+  "url": "https://fraps.com/",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/full-page-screen-capture-chrome-extension.md",
+  "id": "full-page-screen-capture-chrome-extension",
+  "name": "Full Page Screen Capture Chrome Extension",
+  "url": "https://github.com/mrcoles/full-page-screen-capture-chrome-extension",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/map-locations/google-street-view-hyperlapse.md",
+  "id": "google-street-view-hyperlapse",
+  "name": "Google Street View - Hyperlapse",
+  "url": "https://github.com/TeehanLax/Hyperlapse.js",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/screen-capture/greenshot.md",
+  "id": "greenshot",
+  "name": "Greenshot",
+  "url": "https://getgreenshot.org/",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/page2images.md",
+  "id": "page2images",
+  "name": "Page2Images",
+  "url": "https://www.page2images.com/URL-Live-Website-Screenshot-Generator",
+  "category": "evidence-capture",
+  "mp": "medium"
+ }
+]

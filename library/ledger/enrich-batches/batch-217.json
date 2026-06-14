@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/brazillian-address-cep-search-and-report.md",
+  "id": "brazillian-address-cep-search-and-report",
+  "name": "Brazillian Address CEP Search and Report",
+  "url": "https://c2abn462.caspio.com/dp/6c2d80006c6adb825b3b45079cb8",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/brb-public-records.md",
+  "id": "brb-public-records",
+  "name": "BRB Public Records",
+  "url": "https://www.brbpublications.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/brownbook.md",
+  "id": "brownbook",
+  "name": "BrownBook",
+  "url": "https://www.brownbook.net/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/buffalo-police.md",
+  "id": "buffalo-police",
+  "name": "Buffalo Police",
+  "url": "https://airtable.com/embed/shra4F3cAE7H2PV5m?backgroundColor=gray&amp;viewControls=on",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/bureau-van-dijk.md",
+  "id": "bureau-van-dijk",
+  "name": "Bureau Van Dijk",
+  "url": "http://www.bvdinfo.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/business-source.md",
+  "id": "business-source",
+  "name": "Business Source",
+  "url": "https://www.ebscohost.com/academic/business-source-complete",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/buzzfile.md",
+  "id": "buzzfile",
+  "name": "Buzzfile",
+  "url": "https://www.buzzfile.com/Home/Basic",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/government-records/ca-salary-db.md",
+  "id": "ca-salary-db",
+  "name": "CA Salary DB",
+  "url": "https://transparentcalifornia.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/cal-poly-email-search.md",
+  "id": "cal-poly-email-search",
+  "name": "Cal Poly Email Search",
+  "url": "https://c0acw966.caspio.com/dp/5dbe60009c7190a3b0bb407eaea0",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/canada-gazette.md",
+  "id": "canada-gazette",
+  "name": "Canada Gazette",
+  "url": "https://www.gazette.gc.ca/accueil-home-eng.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/canadian-business-research.md",
+  "id": "canadian-business-research",
+  "name": "Canadian Business Research",
+  "url": "https://www.canada.ca/en/services/business/research.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/canadian-copyrights-database.md",
+  "id": "canadian-copyrights-database",
+  "name": "Canadian Copyrights Database",
+  "url": "https://www.ic.gc.ca/app/opic-cipo/cpyrghts/dsplysrch.do",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/canadian-importers-database.md",
+  "id": "canadian-importers-database",
+  "name": "Canadian Importers Database",
+  "url": "https://strategis.ic.gc.ca/eic/site/cid-dic.nsf/eng/home",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/canadian-industrial-designs-database.md",
+  "id": "canadian-industrial-designs-database",
+  "name": "Canadian Industrial Designs Database",
+  "url": "https://www.ic.gc.ca/app/opic-cipo/id/bscsrch.do",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/canadian-institute-for-health-information.md",
+  "id": "canadian-institute-for-health-information",
+  "name": "Canadian Institute for Health Information",
+  "url": "https://www.cihi.ca/en",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/canadian-intellectual-property-office.md",
+  "id": "canadian-intellectual-property-office",
+  "name": "Canadian Intellectual Property Office",
+  "url": "https://www.ic.gc.ca/eic/site/cipointernet-internetopic.nsf/eng/Home",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

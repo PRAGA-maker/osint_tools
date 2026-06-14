@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/arrest-bookings-search-and-report.md",
+  "id": "arrest-bookings-search-and-report",
+  "name": "Arrest Bookings Search and Report",
+  "url": "https://b2.caspio.com/dp/a1a3100009b7083c53a9405f8c6b",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/arrest-warrants.md",
+  "id": "arrest-warrants",
+  "name": "Arrest Warrants",
+  "url": "https://www.blackbookonline.info/usa-arrest-warrants.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/arrests.md",
+  "id": "arrests",
+  "name": "Arrests",
+  "url": "http://www.arrests.org",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ascap-com.md",
+  "id": "ascap-com",
+  "name": "ascap.com",
+  "url": "https://www.ascap.com/ace-title-search/restored-works",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/asic-gov-au.md",
+  "id": "asic-gov-au",
+  "name": "asic.gov.au",
+  "url": "https://asic.gov.au/online-services/search-asics-registers/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/austcemindex-com.md",
+  "id": "austcemindex-com",
+  "name": "austcemindex.com",
+  "url": "https://www.austcemindex.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/austria.md",
+  "id": "austria",
+  "name": "Austria",
+  "url": "https://wieregms.bmf.gv.at/at.gv.bmf.wiereg-p/wiereg?execution=e1s1",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/b2bhint-com.md",
+  "id": "b2bhint-com",
+  "name": "b2bhint.com",
+  "url": "https://b2bhint.com/en",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/backgroundchecks-org.md",
+  "id": "backgroundchecks-org",
+  "name": "backgroundchecks.org",
+  "url": "https://backgroundchecks.org/public-records/the-genealogy-resource-guide",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bahrainbourse-com.md",
+  "id": "bahrainbourse-com",
+  "name": "bahrainbourse.com",
+  "url": "https://bahrainbourse.com/en/pages/companies.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/belgium.md",
+  "id": "belgium",
+  "name": "Belgium",
+  "url": "https://financien.belgium.be/nl/E-services/Ubo-register",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bellingcat-com.md",
+  "id": "bellingcat-com",
+  "name": "bellingcat.com",
+  "url": "https://council-search.bellingcat.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bgafd-co-uk.md",
+  "id": "bgafd-co-uk",
+  "name": "bgafd.co.uk",
+  "url": "http://www.bgafd.co.uk",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/billiongraves-com.md",
+  "id": "billiongraves-com",
+  "name": "billiongraves.com",
+  "url": "https://billiongraves.com/search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/birth-database.md",
+  "id": "birth-database",
+  "name": "Birth Database",
+  "url": "http://www.birthdatabase.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bizportal-gov-za.md",
+  "id": "bizportal-gov-za",
+  "name": "bizportal.gov.za",
+  "url": "https://bizportal.gov.za/default.aspx",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

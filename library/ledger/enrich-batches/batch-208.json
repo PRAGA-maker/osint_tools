@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/messaging/telemetrio.md",
+  "id": "telemetrio",
+  "name": "Telemetrio",
+  "url": "https://telemetr.io/",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/telemetry.md",
+  "id": "telemetry",
+  "name": "Telemetry",
+  "url": "https://www.telemetryapp.io/",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/telepathy.md",
+  "id": "telepathy",
+  "name": "Telepathy",
+  "url": "https://github.com/proseltd/Telepathy-Community?utm_source=chatgpt.com",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/tgscanrobot.md",
+  "id": "tgscanrobot",
+  "name": "@tgscanrobot",
+  "url": "https://t.me/tgscanrobot",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/tlgrm-eu-channels.md",
+  "id": "tlgrm-eu-channels",
+  "name": "tlgrm.eu channels",
+  "url": "http://tlgrm.eu/channels",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/transcriber-bot.md",
+  "id": "transcriber-bot",
+  "name": "@transcriber_bot",
+  "url": "https://t.me/transcriber_bot",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/trunk.md",
+  "id": "trunk",
+  "name": "Trunk",
+  "url": "https://communitywiki.org/trunk/",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/voicemsgbot.md",
+  "id": "voicemsgbot",
+  "name": "@VoiceMsgBot",
+  "url": "https://t.me/VoiceMsgBot",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/watools-io.md",
+  "id": "watools-io",
+  "name": "Watools.io",
+  "url": "https://watools.io/download-profile-picture",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/what-goes-on-mastodon.md",
+  "id": "what-goes-on-mastodon",
+  "name": "What goes on Mastodon",
+  "url": "https://observablehq.com/@mauforonda/what-goes-on-in-mastodon",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/whatsanalyze-com.md",
+  "id": "whatsanalyze-com",
+  "name": "whatsanalyze.com",
+  "url": "https://Whatsanalyze.com",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/whatsapp-tools-of-all-kind.md",
+  "id": "whatsapp-tools-of-all-kind",
+  "name": "WhatsApp tools of all kind",
+  "url": "http://wassame.com/tools",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/messaging/ytranslatebot.md",
+  "id": "ytranslatebot",
+  "name": "@YTranslateBot",
+  "url": "https://t.me/YTranslateBot",
+  "category": "messaging",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/metadata-style/anonymouth-document-anonymization.md",
+  "id": "anonymouth-document-anonymization",
+  "name": "Anonymouth - Document Anonymization",
+  "url": "https://github.com/psal/anonymouth",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/awesome-browser-extensions-for-osint.md",
+  "id": "awesome-browser-extensions-for-osint",
+  "name": "Awesome Browser Extensions for OSINT",
+  "url": "https://github.com/osintambition/Awesome-Browser-Extensions-for-OSINT",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/awesome-opt-out-guide-2026.md",
+  "id": "awesome-opt-out-guide-2026",
+  "name": "Awesome Opt-Out Guide 2026",
+  "url": "https://github.com/thumpersecure/opt-out-manual-2026",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ }
+]

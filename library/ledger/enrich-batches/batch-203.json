@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/lonny-com.md",
+  "id": "lonny-com",
+  "name": "lonny.com",
+  "url": "https://www.lonny.com/archive-1/can-you-guess-the-place-by-a-picture-of-it?rq=guess",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/manhole-co-il.md",
+  "id": "manhole-co-il",
+  "name": "manhole.co.il",
+  "url": "https://manhole.co.il/default.asp",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/map-of-syrian-civil-war.md",
+  "id": "map-of-syrian-civil-war",
+  "name": "Map of Syrian Civil War",
+  "url": "https://syria.liveuamap.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/maploco-com.md",
+  "id": "maploco-com",
+  "name": "maploco.com",
+  "url": "https://map1.maploco.com/visited-countries/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/mapme-com.md",
+  "id": "mapme-com",
+  "name": "mapme.com",
+  "url": "https://mapme.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/maps-descarteslabs-com.md",
+  "id": "maps-descarteslabs-com",
+  "name": "Maps.descarteslabs.com",
+  "url": "https://maps.descarteslabs.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/military-bases-around-the-world-umap.md",
+  "id": "military-bases-around-the-world-umap",
+  "name": "Military bases around the world. - uMap",
+  "url": "https://umap.openstreetmap.fr/en/map/military-bases-around-the-world_510207",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/modis-wildfire.md",
+  "id": "modis-wildfire",
+  "name": "MODIS Wildfire",
+  "url": "https://www.arcgis.com/apps/dashboards/bf5df3a49a624521844a2e5e1ec7df05",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/neshan-org.md",
+  "id": "neshan-org",
+  "name": "neshan.org",
+  "url": "https://neshan.org/maps#",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/nls-uk.md",
+  "id": "nls-uk",
+  "name": "nls.uk",
+  "url": "https://maps.nls.uk/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/oalley.md",
+  "id": "oalley",
+  "name": "OALLEY",
+  "url": "https://www.oalley.net/app/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/one-network.md",
+  "id": "one-network",
+  "name": "one.network",
+  "url": "https://one.network/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/ontario-givesendgo-donors.md",
+  "id": "ontario-givesendgo-donors",
+  "name": "Ontario GiveSendGo Donors",
+  "url": "https://www.google.com/maps/d/viewer?mid=1heAgrb9bDuk287yqseyvhZ7-U_kz64hM",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/openguessr-com.md",
+  "id": "openguessr-com",
+  "name": "openguessr.com",
+  "url": "https://openguessr.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/overturemaps-org.md",
+  "id": "overturemaps-org",
+  "name": "overturemaps.org",
+  "url": "https://explore.overturemaps.org/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/peakvisor-com.md",
+  "id": "peakvisor-com",
+  "name": "peakvisor.com",
+  "url": "https://peakvisor.com/panorama.html",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ }
+]

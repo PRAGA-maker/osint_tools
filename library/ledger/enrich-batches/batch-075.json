@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/florida-residents-directory.md",
+  "id": "florida-residents-directory",
+  "name": "Florida Residents Directory",
+  "url": "https://www.floridaresidentsdirectory.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/flvoters-com.md",
+  "id": "flvoters-com",
+  "name": "Flvoters.com",
+  "url": "https://flvoters.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/forceswarrecords-com.md",
+  "id": "forceswarrecords-com",
+  "name": "forceswarrecords.com",
+  "url": "https://uk.forceswarrecords.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/france.md",
+  "id": "france",
+  "name": "France",
+  "url": "https://www.infogreffe.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/freebmd-org-uk.md",
+  "id": "freebmd-org-uk",
+  "name": "freebmd.org.uk",
+  "url": "https://www.freebmd.org.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/freecen-org-uk.md",
+  "id": "freecen-org-uk",
+  "name": "freecen.org.uk",
+  "url": "https://www.freecen.org.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/freeones-com.md",
+  "id": "freeones-com",
+  "name": "freeones.com",
+  "url": "https://www.freeones.com/forums/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/fscmauritius-org.md",
+  "id": "fscmauritius-org",
+  "name": "fscmauritius.org",
+  "url": "https://www.fscmauritius.org/en",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/funeral-notices-co-uk.md",
+  "id": "funeral-notices-co-uk",
+  "name": "funeral-notices.co.uk",
+  "url": "https://funeral-notices.co.uk/national",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/funeralguide-co-uk.md",
+  "id": "funeralguide-co-uk",
+  "name": "funeralguide.co.uk",
+  "url": "https://www.funeralguide.co.uk/obituaries",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/funeraltimes-com.md",
+  "id": "funeraltimes-com",
+  "name": "funeraltimes.com",
+  "url": "https://www.funeraltimes.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gassaferegister-co-uk.md",
+  "id": "gassaferegister-co-uk",
+  "name": "gassaferegister.co.uk",
+  "url": "https://www.gassaferegister.co.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gazettes-africa.md",
+  "id": "gazettes-africa",
+  "name": "gazettes.africa",
+  "url": "https://gazettes.africa/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gdc-uk-org.md",
+  "id": "gdc-uk-org",
+  "name": "gdc-uk.org",
+  "url": "https://olr.gdc-uk.org/searchregister",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gendatabase-com.md",
+  "id": "gendatabase-com",
+  "name": "gendatabase.com",
+  "url": "https://www.gendatabase.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/genealogy.md",
+  "id": "genealogy",
+  "name": "Genealogy",
+  "url": "https://www.genealogy.com/lp/death-records",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

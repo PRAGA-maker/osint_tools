@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/amazon-mechanical-turk.md",
+  "id": "amazon-mechanical-turk",
+  "name": "Amazon Mechanical Turk",
+  "url": "https://www.mturk.com/mturk/welcome",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/amazon-pay.md",
+  "id": "amazon-pay",
+  "name": "Amazon Pay",
+  "url": "https://payments.amazon.com/home",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/analyze-file-format-online.md",
+  "id": "analyze-file-format-online",
+  "name": "Analyze file format online",
+  "url": "https://www.aconvert.com/analyze.html",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/angellist.md",
+  "id": "angellist",
+  "name": "AngelList",
+  "url": "https://angel.co",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/any-run.md",
+  "id": "any-run",
+  "name": "Any Run",
+  "url": "https://app.any.run/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/apple-icloud-usa.md",
+  "id": "apple-icloud-usa",
+  "name": "Apple iCloud (USA)",
+  "url": "https://www.icloud.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/apple-magazine.md",
+  "id": "apple-magazine",
+  "name": "Apple Magazine",
+  "url": "http://applemagazine.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/association-of-certified-fraud-examiners.md",
+  "id": "association-of-certified-fraud-examiners",
+  "name": "Association of Certified Fraud Examiners",
+  "url": "http://www.acfe.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/audacity.md",
+  "id": "audacity",
+  "name": "Audacity",
+  "url": "http://audacityteam.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/aware-online.md",
+  "id": "aware-online",
+  "name": "Aware Online",
+  "url": "https://www.aware-online.com/osint-tools/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/awesome-indexed.md",
+  "id": "awesome-indexed",
+  "name": "Awesome-indexed",
+  "url": "http://awesome-indexed.mathew-davies.co.uk/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/awesome-open-source.md",
+  "id": "awesome-open-source",
+  "name": "Awesome Open Source",
+  "url": "https://awesomeopensource.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/awesomelists-top.md",
+  "id": "awesomelists-top",
+  "name": "Awesomelists.top",
+  "url": "http://dev.awesomelists.top/#/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/bazaarvoice-north-america.md",
+  "id": "bazaarvoice-north-america",
+  "name": "Bazaarvoice (North America)",
+  "url": "http://www.bazaarvoice.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/binvis.md",
+  "id": "binvis",
+  "name": "Binvis",
+  "url": "https://binvis.io/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/bitbucket-repo-search.md",
+  "id": "bitbucket-repo-search",
+  "name": "Bitbucket Repo Search",
+  "url": "https://bitbucket.org/repo/all/",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

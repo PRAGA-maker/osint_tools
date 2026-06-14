@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/profile-engine.md",
+  "id": "profile-engine",
+  "name": "Profile Engine",
+  "url": "http://profileengine.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/public-info-directory-us.md",
+  "id": "public-info-directory-us",
+  "name": "Public Info Directory (US)",
+  "url": "https://publicrecords.directory",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/ratsit.md",
+  "id": "ratsit",
+  "name": "Ratsit",
+  "url": "https://www.ratsit.se/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/recordsfinder-people-search-ca.md",
+  "id": "recordsfinder-people-search-ca",
+  "name": "RecordsFinder - People Search (CA)",
+  "url": "https://recordsfinder.com/canada",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/registries/registry-finder.md",
+  "id": "registry-finder",
+  "name": "Registry Finder",
+  "url": "https://registryfinder.com:443/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/reunion.md",
+  "id": "reunion",
+  "name": "Reunion",
+  "url": "http://reunion.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/rootsweb.md",
+  "id": "rootsweb",
+  "name": "Rootsweb",
+  "url": "http://home.rootsweb.ancestry.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/scotland-landlord-search.md",
+  "id": "scotland-landlord-search",
+  "name": "Scotland Landlord Search",
+  "url": "https://www.landlordregistrationscotland.gov.uk/search/start",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/scylla.md",
+  "id": "scylla",
+  "name": "Scylla",
+  "url": "https://github.com/josh0xa/scylla searchyellowdirectory",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/searchbug.md",
+  "id": "searchbug",
+  "name": "SearchBug",
+  "url": "http://www.searchbug.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/skip-ease.md",
+  "id": "skip-ease",
+  "name": "Skip Ease",
+  "url": "https://www.skipease.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/skopenow-com.md",
+  "id": "skopenow-com",
+  "name": "skopenow.com",
+  "url": "https://www.skopenow.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/general-people-search/snitch-name.md",
+  "id": "snitch-name",
+  "name": "Snitch.name",
+  "url": "https://snitch.name/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/snoopstation.md",
+  "id": "snoopstation",
+  "name": "SnoopStation",
+  "url": "http://snoopstation.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/social-recon.md",
+  "id": "social-recon",
+  "name": "Social Recon",
+  "url": "https://github.com/famavott/osint-scraper",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/socialcatfish.md",
+  "id": "socialcatfish",
+  "name": "Socialcatfish",
+  "url": "https://socialcatfish.com/",
+  "category": "people-search",
+  "mp": "high"
+ }
+]

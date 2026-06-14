@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/itar-tass.md",
+  "id": "itar-tass",
+  "name": "Itar-Tass",
+  "url": "http://www.itar-tass.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/ivyjoy-list-of-kids-related-websites.md",
+  "id": "ivyjoy-list-of-kids-related-websites",
+  "name": "IvyJoy List of Kids-related Websites",
+  "url": "http://ivyjoy.com/rayne/kidssearch.html",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/journal-guide.md",
+  "id": "journal-guide",
+  "name": "Journal Guide",
+  "url": "https://www.journalguide.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/journal-seek.md",
+  "id": "journal-seek",
+  "name": "Journal Seek",
+  "url": "http://journalseek.net",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/jstor.md",
+  "id": "jstor",
+  "name": "JSTOR",
+  "url": "http://www.jstor.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kagi-search.md",
+  "id": "kagi-search",
+  "name": "Kagi Search",
+  "url": "https://kagi.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/keyword-discovery.md",
+  "id": "keyword-discovery",
+  "name": "Keyword Discovery",
+  "url": "http://www.keyworddiscovery.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/keyword-spy.md",
+  "id": "keyword-spy",
+  "name": "Keyword Spy",
+  "url": "http://www.keywordspy.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/keywordpeopleuse.md",
+  "id": "keywordpeopleuse",
+  "name": "KeyWordPeopleUse",
+  "url": "https://keywordspeopleuse.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/keywordtool.md",
+  "id": "keywordtool",
+  "name": "KeywordTool",
+  "url": "http://keywordtool.io",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/keywordtool-io.md",
+  "id": "keywordtool-io",
+  "name": "Keywordtool.io",
+  "url": "https://keywordtool.io/search/keywords/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kiddle.md",
+  "id": "kiddle",
+  "name": "Kiddle",
+  "url": "https://www.kiddle.co",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kidoz-mobile-network-for-kids.md",
+  "id": "kidoz-mobile-network-for-kids",
+  "name": "Kidoz Mobile Network for Kids",
+  "url": "https://kidoz.net",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kidrex.md",
+  "id": "kidrex",
+  "name": "KidRex",
+  "url": "http://www.kidrex.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kids-search.md",
+  "id": "kids-search",
+  "name": "Kids Search",
+  "url": "https://kidssearch.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kidshealth.md",
+  "id": "kidshealth",
+  "name": "KidsHealth",
+  "url": "http://kidshealth.org/kid",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

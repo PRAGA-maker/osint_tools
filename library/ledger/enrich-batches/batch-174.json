@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dark-web/north-american-sic-structure-united-states.md",
+  "id": "north-american-sic-structure-united-states",
+  "name": "North American SIC Structure (United States)",
+  "url": "https://www.osha.gov/pls/imis/sic_manual.html",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/discovery/onioff.md",
+  "id": "onioff",
+  "name": "Onioff",
+  "url": "https://github.com/k4m4/onioff",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/tor-search/onion-cab.md",
+  "id": "onion-cab",
+  "name": "Onion Cab",
+  "url": "https://onion.cab/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/discovery/onion-investigator.md",
+  "id": "onion-investigator",
+  "name": "Onion Investigator",
+  "url": "https://oint.ctrlbox.com/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/discovery/onionscan.md",
+  "id": "onionscan",
+  "name": "OnionScan",
+  "url": "https://github.com/s-rah/onionscan",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/general-info/reddit-darknet.md",
+  "id": "reddit-darknet",
+  "name": "Reddit Darknet",
+  "url": "https://www.reddit.com/r/darknet/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/general-info/reddit-deep-web.md",
+  "id": "reddit-deep-web",
+  "name": "Reddit Deep Web",
+  "url": "https://www.reddit.com/r/deepweb/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/general-info/reddit-onions.md",
+  "id": "reddit-onions",
+  "name": "Reddit Onions",
+  "url": "https://www.reddit.com/r/onions/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/social-security-number-validator.md",
+  "id": "social-security-number-validator",
+  "name": "Social Security Number Validator",
+  "url": "http://www.ssnvalidator.com/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/stark-county-auditor.md",
+  "id": "stark-county-auditor",
+  "name": "Stark County Auditor",
+  "url": "http://www.starkcountyohio.gov/auditor",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/state-of-delaware-professional-license-validator.md",
+  "id": "state-of-delaware-professional-license-validator",
+  "name": "State of Delaware Professional License Validator",
+  "url": "https://dpronline.delaware.gov/mylicense%20weblookup/Search.aspx",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/clients/tor-download.md",
+  "id": "tor-download",
+  "name": "Tor Download",
+  "url": "https://www.torproject.org/download/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/discovery/tor-scan.md",
+  "id": "tor-scan",
+  "name": "Tor Scan",
+  "url": "https://www.torscan.io/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/discovery/torbot.md",
+  "id": "torbot",
+  "name": "TorBot",
+  "url": "https://github.com/DedSecInside/TorBot",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/tweepi.md",
+  "id": "tweepi",
+  "name": "Tweepi",
+  "url": "http://tweepi.com",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/ukons-standard-industrial-classifications-united-kingdom.md",
+  "id": "ukons-standard-industrial-classifications-united-kingdom",
+  "name": "UKONS Standard Industrial Classifications (United Kingdom)",
+  "url": "https://webarchive.nationalarchives.gov.uk/20160105230903/http://www.ons.gov.uk/ons/guide-method/classifications/current-standard-classifications/standard-industrial-classification/index.html",
+  "category": "dark-web",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/bellingcat-online-researcher-survey-tool-wishes.md",
+  "id": "bellingcat-online-researcher-survey-tool-wishes",
+  "name": "Bellingcat Online Researcher Survey: Tool Wishes",
+  "url": "https://docs.google.com/spreadsheets/d/1vNJRMrlwI7i06diBJtRJWrvt4YuPOqlbUV5o00P_YmE/edit#gid=1378107220",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/bellingcat-s-online-investigation-toolkit.md",
+  "id": "bellingcat-s-online-investigation-toolkit",
+  "name": "Bellingcat's Online Investigation Toolkit",
+  "url": "http://bit.ly/bcattools",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/bendobrown.md",
+  "id": "bendobrown",
+  "name": "Bendobrown",
+  "url": "https://www.youtube.com/c/Bendobrown",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/bevigil-cli.md",
+  "id": "bevigil-cli",
+  "name": "BeVigil-CLI",
+  "url": "https://github.com/Bevigil/BeVigil-OSINT-CLI",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/big-number-calculator.md",
+  "id": "big-number-calculator",
+  "name": "Big Number Calculator",
+  "url": "https://defuse.ca/big-number-calculator.htm",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/bitwarden.md",
+  "id": "bitwarden",
+  "name": "Bitwarden",
+  "url": "https://bitwarden.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/bizint.md",
+  "id": "bizint",
+  "name": "Bizint",
+  "url": "http://www.bizint.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/blender.md",
+  "id": "blender",
+  "name": "Blender",
+  "url": "https://www.blender.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/botster.md",
+  "id": "botster",
+  "name": "BOTSTER",
+  "url": "https://botster.io/bots",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/boxcryptor.md",
+  "id": "boxcryptor",
+  "name": "boxcryptor",
+  "url": "https://www.boxcryptor.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/buscador-os.md",
+  "id": "buscador-os",
+  "name": "Buscador OS",
+  "url": "https://inteltechniques.com/buscador/index.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/cacoo.md",
+  "id": "cacoo",
+  "name": "Cacoo",
+  "url": "https://cacoo.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/canary-tokens.md",
+  "id": "canary-tokens",
+  "name": "Canary Tokens",
+  "url": "http://canarytokens.org/generate",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/canva.md",
+  "id": "canva",
+  "name": "Canva",
+  "url": "https://www.canva.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/cc-license.md",
+  "id": "cc-license",
+  "name": "cc license",
+  "url": "http://i.creativecommons.org/l/by-sa/4.0/88x31.png",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/ccleaner.md",
+  "id": "ccleaner",
+  "name": "CCleaner",
+  "url": "https://www.piriform.com/ccleaner",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

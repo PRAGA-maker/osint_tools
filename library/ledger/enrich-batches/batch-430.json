@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/vpn-for-beginners.md",
+  "id": "vpn-for-beginners",
+  "name": "VPN for Beginners",
+  "url": "https://bestvpn.org/beginners-guide-to-vpn-terms/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/walmart-shopping-app-mobile-android.md",
+  "id": "walmart-shopping-app-mobile-android",
+  "name": "Walmart Shopping App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.walmart.android&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/walmart-shopping-app-mobile-ios.md",
+  "id": "walmart-shopping-app-mobile-ios",
+  "name": "Walmart Shopping App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/walmart-app-savings-catcher/id338137227?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/washington-state-driver-s-license-generator.md",
+  "id": "washington-state-driver-s-license-generator",
+  "name": "Washington State Driver's License Generator",
+  "url": "https://mmarvick.github.io/wa-drivers-license/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/waterfox.md",
+  "id": "waterfox",
+  "name": "Waterfox",
+  "url": "https://www.waterfox.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/web-history-stat.md",
+  "id": "web-history-stat",
+  "name": "Web history stat",
+  "url": "https://chrome.google.com/webstore/detail/web-history-stat/fccaimiahhpljpnlnheimldcfhdhjgdl/related",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/web-of-trust.md",
+  "id": "web-of-trust",
+  "name": "Web of Trust",
+  "url": "http://www.mywot.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/web-proxy.md",
+  "id": "web-proxy",
+  "name": "Web--proxy",
+  "url": "https://web--proxy.herokuapp.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/webdext.md",
+  "id": "webdext",
+  "name": "Webdext",
+  "url": "https://chrome.google.com/webstore/detail/webdext/jkgddhdaaejpmlmddpbedgnkdgiacblk/related",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/webmapper.md",
+  "id": "webmapper",
+  "name": "Webmapper",
+  "url": "https://chrome.google.com/webstore/detail/webmapper/foachceonkmkeiigdbkjcihnaabppicf/related",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/webmd-health-and-wellness-app-mobile-ios.md",
+  "id": "webmd-health-and-wellness-app-mobile-ios",
+  "name": "WebMD Health and Wellness App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/webmd/id295076329?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/wechat-messaging-app-mobile-android-china.md",
+  "id": "wechat-messaging-app-mobile-android-china",
+  "name": "Wechat Messaging App (Mobile \u2013 Android) (China)",
+  "url": "https://play.google.com/store/apps/details?id=com.tencent.mm",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/wechat-messaging-app-mobile-ios-china.md",
+  "id": "wechat-messaging-app-mobile-ios-china",
+  "name": "Wechat Messaging App (Mobile \u2013 iOS) (China)",
+  "url": "https://itunes.apple.com/ca/app/wechat/id414478124?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/wevideo-video-editor-app-mobile-android.md",
+  "id": "wevideo-video-editor-app-mobile-android",
+  "name": "WEVideo Video Editor App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.wevideo.mobile.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/whatsapp-messaging-app-mobile-android.md",
+  "id": "whatsapp-messaging-app-mobile-android",
+  "name": "Whatsapp Messaging App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/whatsapp-messaging-app-mobile-ios.md",
+  "id": "whatsapp-messaging-app-mobile-ios",
+  "name": "Whatsapp Messaging App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

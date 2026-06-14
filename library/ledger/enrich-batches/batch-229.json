@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/padmapper.md",
+  "id": "padmapper",
+  "name": "Padmapper",
+  "url": "https://www.padmapper.com people looker (us)",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/panjiva-com.md",
+  "id": "panjiva-com",
+  "name": "Panjiva.com",
+  "url": "https://panjiva.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/paperpanda.md",
+  "id": "paperpanda",
+  "name": "PaperPanda",
+  "url": "https://chrome.google.com/webstore/detail/paperpanda-%E2%80%94-get-millions/ggjlkinaanncojaippgbndimlhcdlohf/related?utm_source=web",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/peoplefinder-com-reverse-address.md",
+  "id": "peoplefinder-com-reverse-address",
+  "name": "PeopleFinder.com - Reverse Address",
+  "url": "https://www.peoplefinder.com/reverse-address-lookup",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/plain-view-project.md",
+  "id": "plain-view-project",
+  "name": "Plain View Project",
+  "url": "https://www.plainviewproject.org/data",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/plonked.md",
+  "id": "plonked",
+  "name": "Plonked",
+  "url": "https://www.plonked.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/plunkett-research.md",
+  "id": "plunkett-research",
+  "name": "Plunkett Research",
+  "url": "http://www.plunkettresearchonline.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/police-body-worn-camera-footage-access-map.md",
+  "id": "police-body-worn-camera-footage-access-map",
+  "name": "Police Body-Worn Camera Footage Access Map",
+  "url": "https://www.rcfp.org/resources/bodycams/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/police-complaint-lookup.md",
+  "id": "police-complaint-lookup",
+  "name": "Police Complaint Lookup",
+  "url": "http://complaints.cuapb.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/police-decertifcations-search-and-report.md",
+  "id": "police-decertifcations-search-and-report",
+  "name": "Police Decertifcations Search and Report",
+  "url": "https://c0acu882.caspio.com/dp/07da6000e467ebc2a444430c9c1d",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/police-protest-videos.md",
+  "id": "police-protest-videos",
+  "name": "Police Protest Videos",
+  "url": "https://projects.propublica.org/protest-police-videos/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/police-surveillance-in-chicago.md",
+  "id": "police-surveillance-in-chicago",
+  "name": "Police Surveillance in Chicago",
+  "url": "https://redshiftzero.github.io/policesurveillance/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/police1.md",
+  "id": "police1",
+  "name": "Police1",
+  "url": "https://bloopbase.keybase.pub/ACAB/POLICEONE/index.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/policebrutalitydatabase-org.md",
+  "id": "policebrutalitydatabase-org",
+  "name": "Policebrutalitydatabase.org",
+  "url": "https://www.policebrutalitydatabase.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/policecrime-bgsu-edu.md",
+  "id": "policecrime-bgsu-edu",
+  "name": "Policecrime.bgsu.edu",
+  "url": "https://policecrime.bgsu.edu/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/us-political-records/political-moneyline.md",
+  "id": "political-moneyline",
+  "name": "Political MoneyLine",
+  "url": "https://www.opensecrets.org/",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

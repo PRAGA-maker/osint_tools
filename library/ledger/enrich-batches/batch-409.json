@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/fedora-security-lab.md",
+  "id": "fedora-security-lab",
+  "name": "Fedora Security Lab",
+  "url": "https://labs.fedoraproject.org/security/download/index.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fetching-title.md",
+  "id": "fetching-title",
+  "name": "Fetching title...",
+  "url": "https://docs.google.com/spreadsheet/ccc",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/filevault2-open-source-disk-encryption-for-mac.md",
+  "id": "filevault2-open-source-disk-encryption-for-mac",
+  "name": "FileVault2 Open Source Disk Encryption (for Mac)",
+  "url": "https://support.apple.com/en-ca/HT204837",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/findemails.md",
+  "id": "findemails",
+  "name": "FindEmails",
+  "url": "https://toofr.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fireball-search-engine-germany.md",
+  "id": "fireball-search-engine-germany",
+  "name": "Fireball Search Engine (Germany)",
+  "url": "http://www.fireball.de",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/firefox.md",
+  "id": "firefox",
+  "name": "Firefox",
+  "url": "https://www.mozilla.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/firefox-browser-add-ons.md",
+  "id": "firefox-browser-add-ons",
+  "name": "Firefox Browser Add-Ons",
+  "url": "https://addons.mozilla.org/en-US/firefox/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/firefox-stealth.md",
+  "id": "firefox-stealth",
+  "name": "firefox-stealth",
+  "url": "https://github.com/feder-cr/firefox-stealth",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fireshot.md",
+  "id": "fireshot",
+  "name": "FireShot",
+  "url": "https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/forager.md",
+  "id": "forager",
+  "name": "Forager",
+  "url": "https://chrome.google.com/webstore/detail/foragear-quicksearch-%20too/cldhjjcfiadipgdiiklpdhdkkakacdbm",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/foursquare-swarm-social-networking-app-mobile-android.md",
+  "id": "foursquare-swarm-social-networking-app-mobile-android",
+  "name": "Foursquare Swarm Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.foursquare.robin&hl=en_CA",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/foursquare-swarm-social-networking-app-mobile-ios.md",
+  "id": "foursquare-swarm-social-networking-app-mobile-ios",
+  "name": "Foursquare Swarm Social Networking App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/ca/app/foursquare-swarm-check-in-app/id870161082",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/free-fax.md",
+  "id": "free-fax",
+  "name": "Free Fax",
+  "url": "https://faxzero.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/free-proxy-list.md",
+  "id": "free-proxy-list",
+  "name": "Free Proxy List",
+  "url": "https://free-proxy-list.net",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/free-proxy-world.md",
+  "id": "free-proxy-world",
+  "name": "Free Proxy World",
+  "url": "https://www.freeproxy.world",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/freenet.md",
+  "id": "freenet",
+  "name": "Freenet",
+  "url": "https://freenetproject.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

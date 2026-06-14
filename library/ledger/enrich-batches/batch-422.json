@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/runkeeper.md",
+  "id": "runkeeper",
+  "name": "Runkeeper",
+  "url": "https://runkeeper.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/safari.md",
+  "id": "safari",
+  "name": "Safari",
+  "url": "http://www.apple.com/safari",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/safari-for-macos.md",
+  "id": "safari-for-macos",
+  "name": "Safari (for MacOS)",
+  "url": "https://support.apple.com/en-ca/HT204416",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/safari-for-windows.md",
+  "id": "safari-for-windows",
+  "name": "Safari (for Windows)",
+  "url": "https://support.apple.com/downloads/safari",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/safetydetective-security-tools.md",
+  "id": "safetydetective-security-tools",
+  "name": "SafetyDetective Security Tools",
+  "url": "https://www.safetydetectives.com/blog/free-security-tools-that-you-need-to-start-using-now/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/sales-navigator-for-gmail.md",
+  "id": "sales-navigator-for-gmail",
+  "name": "Sales Navigator for Gmail",
+  "url": "https://rapportive.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/samy-kamkar.md",
+  "id": "samy-kamkar",
+  "name": "Samy Kamkar",
+  "url": "https://samy.pl/peepmail",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/scamwatch.md",
+  "id": "scamwatch",
+  "name": "Scamwatch",
+  "url": "https://www.scamwatch.gov.au",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/screenshot-full-page-screen-capture.md",
+  "id": "screenshot-full-page-screen-capture",
+  "name": "Screenshot - Full Page Screen Capture",
+  "url": "https://chrome.google.com/webstore/detail/screen-recorder/jgmmgiojkjopgnanopiamhbhnpaednfg/related",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/scrim-email-protector.md",
+  "id": "scrim-email-protector",
+  "name": "Scrim Email Protector",
+  "url": "http://scr.im",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/seamonkey.md",
+  "id": "seamonkey",
+  "name": "Seamonkey",
+  "url": "http://www.seamonkey-project.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/search-by-image-2.md",
+  "id": "search-by-image-2",
+  "name": "Search by Image",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/search_by_image",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/search-incognito-extension-chrome.md",
+  "id": "search-incognito-extension-chrome",
+  "name": "Search Incognito Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/search-incognito/hlcgjkbdmlnfmelambncafejbemlfodl",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/search-that-hash.md",
+  "id": "search-that-hash",
+  "name": "Search-That-Hash",
+  "url": "https://github.com/HashPals/Search-That-Hash",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/searchonymous.md",
+  "id": "searchonymous",
+  "name": "Searchonymous",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/searchonymous",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/security-first-umbrella.md",
+  "id": "security-first-umbrella",
+  "name": "Security First - Umbrella",
+  "url": "https://secfirst.org/umbrella/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

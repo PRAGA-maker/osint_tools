@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/location-search.md",
+  "id": "location-search",
+  "name": "Location Search",
+  "url": "https://mattw.io/youtube-geofind/location",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/map-of-github.md",
+  "id": "map-of-github",
+  "name": "Map of Github",
+  "url": "https://anvaka.github.io/map-of-github/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/map-of-reddit.md",
+  "id": "map-of-reddit",
+  "name": "Map of Reddit",
+  "url": "https://anvaka.github.io/map-of-reddit/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/meta-content-library.md",
+  "id": "meta-content-library",
+  "name": "Meta Content Library",
+  "url": "https://transparency.meta.com/researchtools/meta-content-library",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/nitter.md",
+  "id": "nitter",
+  "name": "Nitter",
+  "url": "https://nitter.net",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/noxinluencer.md",
+  "id": "noxinluencer",
+  "name": "Noxinluencer",
+  "url": "https://noxinfluencer.com/youtube/channel-compare",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/ny-dolls-org.md",
+  "id": "ny-dolls-org",
+  "name": "NY Dolls.org",
+  "url": "https://nydolls.org/author",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/nzbfriends.md",
+  "id": "nzbfriends",
+  "name": "NZBFRIENDS",
+  "url": "http://nzbfriends.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/o365chk.md",
+  "id": "o365chk",
+  "name": "o365chk",
+  "url": "https://github.com/nixintel/o365chk",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/open-measures.md",
+  "id": "open-measures",
+  "name": "Open Measures",
+  "url": "https://public.openmeasures.io",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/open-source.md",
+  "id": "open-source",
+  "name": "open-source",
+  "url": "https://github.com/Berchez/OSINT-steam",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/open-source-software-insight.md",
+  "id": "open-source-software-insight",
+  "name": "Open Source Software Insight",
+  "url": "https://ossinsight.io/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/orbit-livasch.md",
+  "id": "orbit-livasch",
+  "name": "Orbit livasch",
+  "url": "https://orbit.livasch.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/osint-steam.md",
+  "id": "osint-steam",
+  "name": "OSINT-Steam",
+  "url": "https://osint-steam.vercel.app/en",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/parler-archive.md",
+  "id": "parler-archive",
+  "name": "Parler archive",
+  "url": "https://parler.adatascienti.st/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/pholder.md",
+  "id": "pholder",
+  "name": "Pholder",
+  "url": "https://pholder.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ }
+]

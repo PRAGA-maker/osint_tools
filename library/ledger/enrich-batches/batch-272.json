@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/we-feel.md",
+  "id": "we-feel",
+  "name": "We Feel",
+  "url": "http://wefeel.csiro.au",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/webcam-hopper.md",
+  "id": "webcam-hopper",
+  "name": "Webcam Hopper",
+  "url": "https://www.webcamhopper.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/webcrawler-meta-search.md",
+  "id": "webcrawler-meta-search",
+  "name": "WebCrawler Meta Search",
+  "url": "http://www.webcrawler.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/webdork.md",
+  "id": "webdork",
+  "name": "webdork",
+  "url": "https://github.com/HACKE-RC/webdork",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/webkams.md",
+  "id": "webkams",
+  "name": "WebKams",
+  "url": "https://www.webkams.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/webwombat-search-engine-australia.md",
+  "id": "webwombat-search-engine-australia",
+  "name": "WebWombat Search Engine (Australia)",
+  "url": "http://www.webwombat.com.au",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/white-house-disclosures.md",
+  "id": "white-house-disclosures",
+  "name": "White House Disclosures",
+  "url": "https://www.whitehouse.gov/disclosures/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wiby.md",
+  "id": "wiby",
+  "name": "Wiby",
+  "url": "https://wiby.me",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wiki-search-engine.md",
+  "id": "wiki-search-engine",
+  "name": "Wiki Search Engine",
+  "url": "http://www.wiki.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikiaentertainment.md",
+  "id": "wikiaentertainment",
+  "name": "WikiaEntertainment",
+  "url": "https://entertainment.fandom.com/wiki/Entertainment_Wiki",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikiawikis.md",
+  "id": "wikiawikis",
+  "name": "WikiaWikis",
+  "url": "http://wikis.wikia.com/wiki/List_of_Wikia_wikis",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikibooks.md",
+  "id": "wikibooks",
+  "name": "Wikibooks",
+  "url": "https://en.wikibooks.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikichristian.md",
+  "id": "wikichristian",
+  "name": "WikiChristian",
+  "url": "http://www.wikichristian.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikicrimes.md",
+  "id": "wikicrimes",
+  "name": "WikiCrimes",
+  "url": "http://wikicrimes.org/main.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikidot.md",
+  "id": "wikidot",
+  "name": "Wikidot",
+  "url": "http://www.wikidot.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikihow.md",
+  "id": "wikihow",
+  "name": "Wikihow",
+  "url": "http://www.wikihow.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

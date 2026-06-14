@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/removetweets.md",
+  "id": "removetweets",
+  "name": "removeTweets",
+  "url": "https://twitter-tools.rootonline.de/removeTweets",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/report-tree.md",
+  "id": "report-tree",
+  "name": "Report Tree",
+  "url": "http://dcpu.ru/vk_repost_tree.php",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/repostsleuth.md",
+  "id": "repostsleuth",
+  "name": "Repostsleuth",
+  "url": "https://repostsleuth.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/resavr.md",
+  "id": "resavr",
+  "name": "ReSavr",
+  "url": "https://www.resavr.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/return-youtube-comment-username.md",
+  "id": "return-youtube-comment-username",
+  "name": "Return YouTube Comment Username",
+  "url": "https://chrome.google.com/webstore/detail/return-youtube-comment-us/kamibelompadnaekbellinmgbphoidmj",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/ruby.md",
+  "id": "ruby",
+  "name": "RUBY",
+  "url": "https://github.com/jakecreps/ruby",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/scoutzen.md",
+  "id": "scoutzen",
+  "name": "Scoutzen",
+  "url": "https://www.scoutzen.com/twitter-lists/search",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/search-reddit.md",
+  "id": "search-reddit",
+  "name": "Search Reddit",
+  "url": "https://bmai.dev/reddit/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/search-reddit-comments-by-user.md",
+  "id": "search-reddit-comments-by-user",
+  "name": "Search Reddit Comments by User",
+  "url": "https://www.redditcommentsearch.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/searcheddit.md",
+  "id": "searcheddit",
+  "name": "Searcheddit",
+  "url": "http://searcheddit.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/seart-github-search.md",
+  "id": "seart-github-search",
+  "name": "SEART Github Search",
+  "url": "https://seart-ghs.si.usi.ch/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/shotstars.md",
+  "id": "shotstars",
+  "name": "Shotstars",
+  "url": "https://github.com/snooppr/shotstars",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/slash-tags.md",
+  "id": "slash-tags",
+  "name": "Slash Tags",
+  "url": "https://github.com/huhmit/slashtags",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without.md",
+  "id": "small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without",
+  "name": "small tool to retreive vk.com (vkontakte) users hidden metadata (state, access, dates, counts, etc) anonymously (without",
+  "url": "https://gist.github.com/cryptolok/8a023875b47e20bc5e64ba8e27294261",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/sn0int-framework-module-for-pornhub.md",
+  "id": "sn0int-framework-module-for-pornhub",
+  "name": "Sn0int framework module for Pornhub",
+  "url": "https://sn0int.com/r/kpcyrd/pornhub",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/snap-map.md",
+  "id": "snap-map",
+  "name": "Snap Map",
+  "url": "https://map.snapchat.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ }
+]

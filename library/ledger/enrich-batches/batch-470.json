@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/translation-language/reddit-r-translator.md",
+  "id": "reddit-r-translator",
+  "name": "Reddit/r/translator",
+  "url": "https://www.reddit.com/r/translator",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/resources-saferschoolstogether-com.md",
+  "id": "resources-saferschoolstogether-com",
+  "name": "resources.saferschoolstogether.com",
+  "url": "https://resources.saferschoolstogether.com/view/294238754/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/reverso-free-online-translator.md",
+  "id": "reverso-free-online-translator",
+  "name": "Reverso Free Online Translator",
+  "url": "http://www.reverso.net/text_translation.aspx?lang=EN",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/riverside-com.md",
+  "id": "riverside-com",
+  "name": "riverside.com",
+  "url": "https://riverside.com/transcription",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/scphillips-morse-code-translator.md",
+  "id": "scphillips-morse-code-translator",
+  "name": "SCPhillips Morse Code Translator",
+  "url": "http://morsecode.scphillips.com/translator.html",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/signing-savvy-sign-language-translator.md",
+  "id": "signing-savvy-sign-language-translator",
+  "name": "Signing Savvy Sign Language Translator",
+  "url": "https://www.signingsavvy.com/sign/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/slangit.md",
+  "id": "slangit",
+  "name": "Slangit",
+  "url": "https://slangit.com/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/smallseotools-plagiarism-checker.md",
+  "id": "smallseotools-plagiarism-checker",
+  "name": "SmallSEOTools Plagiarism Checker",
+  "url": "http://smallseotools.com/plagiarism-checker",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/smart-words-org.md",
+  "id": "smart-words-org",
+  "name": "smart-words.org",
+  "url": "https://www.smart-words.org/abbreviations/text.html",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/stars21-com.md",
+  "id": "stars21-com",
+  "name": "stars21.com",
+  "url": "http://www.stars21.com/translator/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/superemojitranslator-com.md",
+  "id": "superemojitranslator-com",
+  "name": "superemojitranslator.com",
+  "url": "http://superemojitranslator.com/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/symbols-com.md",
+  "id": "symbols-com",
+  "name": "Symbols.com",
+  "url": "http://www.symbols.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/synonyms-net.md",
+  "id": "synonyms-net",
+  "name": "Synonyms.net",
+  "url": "http://www.synonyms.net",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/systran-translate.md",
+  "id": "systran-translate",
+  "name": "Systran Translate",
+  "url": "https://translate.systran.net/translationTools/text",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/trans8it.md",
+  "id": "trans8it",
+  "name": "Trans8it",
+  "url": "http://transl8it.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/translate-by-babylon-free-online-translation.md",
+  "id": "translate-by-babylon-free-online-translation",
+  "name": "Translate by Babylon - Free Online Translation",
+  "url": "http://translation.babylon-software.com",
+  "category": "translation-language",
+  "mp": "low"
+ }
+]

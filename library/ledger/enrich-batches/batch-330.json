@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/xor/unix/unxor.md",
+  "id": "unxor",
+  "name": "unxor",
+  "url": "https://github.com/tomchop/unxor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/url-decoder-encoder.md",
+  "id": "url-decoder-encoder",
+  "name": "URL Decoder/Encoder",
+  "url": "https://meyerweb.com/eric/tools/dencoder/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/vector.md",
+  "id": "vector",
+  "name": "Vector",
+  "url": "https://github.com/thesaderror/vector",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/vedbex-com.md",
+  "id": "vedbex-com",
+  "name": "Vedbex.com",
+  "url": "https://www.vedbex.com/tools/home",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/vega-editor.md",
+  "id": "vega-editor",
+  "name": "Vega Editor",
+  "url": "https://vega.github.io/editor/#/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/venngage.md",
+  "id": "venngage",
+  "name": "Venngage",
+  "url": "https://venngage.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/virtualbox.md",
+  "id": "virtualbox",
+  "name": "VirtualBox",
+  "url": "https://www.virtualbox.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/vis-js.md",
+  "id": "vis-js",
+  "name": "Vis.js",
+  "url": "http://visjs.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/visme.md",
+  "id": "visme",
+  "name": "Visme",
+  "url": "http://www.visme.co",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/visual-investigative-scenarios.md",
+  "id": "visual-investigative-scenarios",
+  "name": "Visual Investigative Scenarios",
+  "url": "https://vis.occrp.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/visualize-free.md",
+  "id": "visualize-free",
+  "name": "Visualize Free",
+  "url": "http://visualizefree.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/visualize-me.md",
+  "id": "visualize-me",
+  "name": "Visualize.me",
+  "url": "http://vizualize.me",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/visually.md",
+  "id": "visually",
+  "name": "visually",
+  "url": "http://create.visual.ly",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/vmware-workstation-player.md",
+  "id": "vmware-workstation-player",
+  "name": "VMware Workstation Player",
+  "url": "https://www.vmware.com/products/player/playerpro-evaluation.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/vocal-remover.md",
+  "id": "vocal-remover",
+  "name": "Vocal Remover",
+  "url": "https://vocalremover.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/voice-stress-test.md",
+  "id": "voice-stress-test",
+  "name": "Voice Stress Test",
+  "url": "https://www.cignaglobal.com/stress-care/individuals/voice-tool",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

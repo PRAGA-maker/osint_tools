@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/slink-url-shortener.md",
+  "id": "slink-url-shortener",
+  "name": "Slink URL Shortener",
+  "url": "http://slink.co",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/snagit.md",
+  "id": "snagit",
+  "name": "Snagit",
+  "url": "http://www.techsmith.com/download/snagit",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/socialmediarestaurant.md",
+  "id": "socialmediarestaurant",
+  "name": "Socialmediarestaurant",
+  "url": "http://socialmediarestaurant.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/socialoomph.md",
+  "id": "socialoomph",
+  "name": "Socialoomph",
+  "url": "https://www.socialoomph.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/sourcebot.md",
+  "id": "sourcebot",
+  "name": "Sourcebot",
+  "url": "https://www.sourcebot.dev/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/sourcegraph.md",
+  "id": "sourcegraph",
+  "name": "SourceGraph",
+  "url": "https://sourcegraph.com/search",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/sourcegraph-2.md",
+  "id": "sourcegraph-2",
+  "name": "Sourcegraph",
+  "url": "https://about.sourcegraph.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/squareup.md",
+  "id": "squareup",
+  "name": "SquareUp",
+  "url": "https://squareup.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/statwing.md",
+  "id": "statwing",
+  "name": "Statwing",
+  "url": "https://www.statwing.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/street-drug-slang.md",
+  "id": "street-drug-slang",
+  "name": "Street Drug Slang",
+  "url": "https://ndews.umd.edu/sites/ndews.umd.edu/files/dea-drug-slang-terms-and-code-words-july2018.pdf",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/studyblue.md",
+  "id": "studyblue",
+  "name": "StudyBlue",
+  "url": "http://www.studyblue.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/taskrabbit.md",
+  "id": "taskrabbit",
+  "name": "TaskRabbit",
+  "url": "https://api.taskrabbit.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/tastedive-current-multimedia-trends.md",
+  "id": "tastedive-current-multimedia-trends",
+  "name": "TasteDive Current Multimedia Trends",
+  "url": "https://tastedive.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/techuk.md",
+  "id": "techuk",
+  "name": "TechUK",
+  "url": "http://www.techuk.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/telcodata-us.md",
+  "id": "telcodata-us",
+  "name": "TelcoData.US",
+  "url": "https://www.telcodata.us/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/textise-net.md",
+  "id": "textise-net",
+  "name": "Textise.net",
+  "url": "https://www.textise.net/",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

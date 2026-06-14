@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/goo-japan.md",
+  "id": "goo-japan",
+  "name": "Goo (Japan)",
+  "url": "http://www.goo.ne.jp",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/goodgopher-com.md",
+  "id": "goodgopher-com",
+  "name": "GoodGopher.com",
+  "url": "https://goodgopher.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/goodsearch.md",
+  "id": "goodsearch",
+  "name": "Goodsearch",
+  "url": "https://www.goodsearch.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/goofram.md",
+  "id": "goofram",
+  "name": "Goofram",
+  "url": "http://www.goofram.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-advanced-search-operators-guide.md",
+  "id": "google-advanced-search-operators-guide",
+  "name": "Google Advanced Search Operators (guide)",
+  "url": "https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-adwords.md",
+  "id": "google-adwords",
+  "name": "Google Adwords",
+  "url": "http://adwords.google.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-autocomplete-scraper.md",
+  "id": "google-autocomplete-scraper",
+  "name": "Google Autocomplete Scraper",
+  "url": "https://tools.digitalmethods.net/beta/scrapeGoogle/autocomplete.php",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-books-ngram-viewer.md",
+  "id": "google-books-ngram-viewer",
+  "name": "Google Books Ngram Viewer",
+  "url": "https://books.google.com/ngrams/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-docs-cse.md",
+  "id": "google-docs-cse",
+  "name": "Google Docs CSE",
+  "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:rse-4irjrn8#gsc.tab=0",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-news.md",
+  "id": "google-news",
+  "name": "Google News",
+  "url": "https://news.google.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-news-print-archive.md",
+  "id": "google-news-print-archive",
+  "name": "Google News Print Archive",
+  "url": "http://news.google.com/newspapers",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-safesearch-filter.md",
+  "id": "google-safesearch-filter",
+  "name": "Google Safesearch Filter",
+  "url": "https://www.google.com/preferences",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-search.md",
+  "id": "google-search",
+  "name": "Google Search",
+  "url": "https://www.google.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-unlocked.md",
+  "id": "google-unlocked",
+  "name": "Google Unlocked",
+  "url": "https://github.com/Ibit-to/google-unlocked",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/google-word-sniper.md",
+  "id": "google-word-sniper",
+  "name": "Google Word Sniper",
+  "url": "https://googlewordsniper.eu/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/googledrive-search-engine.md",
+  "id": "googledrive-search-engine",
+  "name": "GoogleDrive Search Engine",
+  "url": "https://cse.google.com/cse?cx=c64ba311eb8c31896",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

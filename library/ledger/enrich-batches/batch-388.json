@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/xboxresolver-com.md",
+  "id": "xboxresolver-com",
+  "name": "Xboxresolver.com",
+  "url": "https://xboxresolver.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/xray.md",
+  "id": "xray",
+  "name": "XRay",
+  "url": "https://github.com/evilsocket/xray",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/you-get-signal.md",
+  "id": "you-get-signal",
+  "name": "You Get Signal",
+  "url": "http://www.yougetsignal.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/zeus-c2-tracker.md",
+  "id": "zeus-c2-tracker",
+  "name": "Zeus C2 Tracker",
+  "url": "https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/zeus-tracker.md",
+  "id": "zeus-tracker",
+  "name": "ZeuS Tracker",
+  "url": "https://zeustracker.abuse.ch/blocklist.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/vulnerabilities/disclosure-sites/zone-h-org.md",
+  "id": "zone-h-org",
+  "name": "Zone-H.org",
+  "url": "https://zone-h.org/archive",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/zoomeye-ai.md",
+  "id": "zoomeye-ai",
+  "name": "ZoomEye.ai",
+  "url": "https://www.zoomeye.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/zscaler-global-threat-map-dashboard.md",
+  "id": "zscaler-global-threat-map-dashboard",
+  "name": "Zscaler Global Threat Map Dashboard",
+  "url": "https://threatlabz.zscaler.com/cloud-insights/threat-map-dashboard",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/zscaler-zulu-url-risk-analyzer.md",
+  "id": "zscaler-zulu-url-risk-analyzer",
+  "name": "Zscaler Zulu URL Risk Analyzer",
+  "url": "https://zulu.zscaler.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/commentexporter-com.md",
+  "id": "commentexporter-com",
+  "name": "Commentexporter.com",
+  "url": "https://www.commentexporter.com/",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/download-sorter.md",
+  "id": "download-sorter",
+  "name": "Download Sorter",
+  "url": "https://chrome.google.com/webstore/detail/download-sorter/mebfblkahpknogabckmdjcmjbnpfdpcj/related",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/export-comments.md",
+  "id": "export-comments",
+  "name": "Export Comments",
+  "url": "https://exportcomments.com/",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/gdown.md",
+  "id": "gdown",
+  "name": "Gdown",
+  "url": "https://github.com/wkentaro/gdown",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/image-extractor.md",
+  "id": "image-extractor",
+  "name": "Image Extractor",
+  "url": "https://extract.pics/",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/imgur-album-downloader.md",
+  "id": "imgur-album-downloader",
+  "name": "Imgur Album Downloader",
+  "url": "https://dschep.github.io/imgur-album-downloader/#/",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/link-gopher.md",
+  "id": "link-gopher",
+  "name": "Link Gopher",
+  "url": "https://sites.google.com/site/linkgopher/",
+  "category": "evidence-capture",
+  "mp": "low"
+ }
+]

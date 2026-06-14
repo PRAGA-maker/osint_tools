@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/xor/unix/xorsearch-and-xorstrings.md",
+  "id": "xorsearch-and-xorstrings",
+  "name": "XORSearch & XORStrings",
+  "url": "https://blog.didierstevens.com/programs/xorsearch/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/xor/unix/xortool.md",
+  "id": "xortool",
+  "name": "xortool",
+  "url": "https://github.com/hellman/xortool",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/you-com.md",
+  "id": "you-com",
+  "name": "You.com",
+  "url": "https://you.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/youcode.md",
+  "id": "youcode",
+  "name": "YouCode",
+  "url": "https://you.com/code",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/zen.md",
+  "id": "zen",
+  "name": "Zen",
+  "url": "https://github.com/s0md3v/Zen",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/zingchart.md",
+  "id": "zingchart",
+  "name": "ZingChart",
+  "url": "http://www.zingchart.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/zmail.md",
+  "id": "zmail",
+  "name": "ZMail",
+  "url": "http://zmail.sourceforge.net",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/alltop.md",
+  "id": "alltop",
+  "name": "Alltop",
+  "url": "http://alltop.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/archive-it.md",
+  "id": "archive-it",
+  "name": "Archive-It",
+  "url": "https://archive-it.org/explore?show=Collections",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/archive-today.md",
+  "id": "archive-today",
+  "name": "Archive.today",
+  "url": "https://archive.today",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/auto-archiver.md",
+  "id": "auto-archiver",
+  "name": "Auto Archiver",
+  "url": "https://github.com/bellingcat/auto-archiver",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/awasu.md",
+  "id": "awasu",
+  "name": "Awasu",
+  "url": "http://www.awasu.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/bellingcat-tiktok-hashtag-analysis.md",
+  "id": "bellingcat-tiktok-hashtag-analysis",
+  "name": "Bellingcat TikTok Hashtag Analysis",
+  "url": "https://github.com/bellingcat/tiktok-hashtag-analysis",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/bridge-leslibres.md",
+  "id": "bridge-leslibres",
+  "name": "Bridge.Leslibres",
+  "url": "https://bridge.leslibres.org",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/bridge-suumitsu.md",
+  "id": "bridge-suumitsu",
+  "name": "Bridge.Suumitsu",
+  "url": "https://bridge.suumitsu.eu",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/changedetect-2.md",
+  "id": "changedetect-2",
+  "name": "ChangeDetect",
+  "url": "http://www.changedetect.com",
+  "category": "archives-cache",
+  "mp": "low"
+ }
+]

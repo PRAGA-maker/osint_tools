@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/archivarix-com.md",
+  "id": "archivarix-com",
+  "name": "archivarix.com",
+  "url": "https://archivarix.com/en/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/archive-is.md",
+  "id": "archive-is",
+  "name": "Archive.is",
+  "url": "https://archive.is/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/archive-md.md",
+  "id": "archive-md",
+  "name": "Archive.md",
+  "url": "https://archive.md/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/archive-org.md",
+  "id": "archive-org",
+  "name": "archive.org",
+  "url": "https://www.archive.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/archive-page-addons-mozilla-org.md",
+  "id": "archive-page-addons-mozilla-org",
+  "name": "archive page (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/archive-page/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/archive-page-chrome-google-com.md",
+  "id": "archive-page-chrome-google-com",
+  "name": "archive page (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/archive-page/gcaimhkfmliahedmeklebabdgagipbia",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/archive-vn.md",
+  "id": "archive-vn",
+  "name": "Archive.vn",
+  "url": "https://archive.vn/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/archivebox.md",
+  "id": "archivebox",
+  "name": "Archivebox",
+  "url": "https://archivebox.io",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/arquivo-pt.md",
+  "id": "arquivo-pt",
+  "name": "Arquivo.pt",
+  "url": "https://arquivo.pt/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/blackwidow.md",
+  "id": "blackwidow",
+  "name": "BlackWidow",
+  "url": "http://softbytelabs.com/wp/blackwidow/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/browsershots.md",
+  "id": "browsershots",
+  "name": "Browsershots",
+  "url": "https://browsershots.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/cached-pages.md",
+  "id": "cached-pages",
+  "name": "Cached Pages",
+  "url": "https://www.cachedpages.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/cached-view.md",
+  "id": "cached-view",
+  "name": "Cached View",
+  "url": "https://cachedview.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/cachedview.md",
+  "id": "cachedview",
+  "name": "CachedView",
+  "url": "http://cachedview.com",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/cachedview-b4your-com.md",
+  "id": "cachedview-b4your-com",
+  "name": "cachedview.b4your.com",
+  "url": "https://cachedview.b4your.com/en/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/carbon-dating-the-web.md",
+  "id": "carbon-dating-the-web",
+  "name": "Carbon Dating The Web",
+  "url": "http://carbondate.cs.odu.edu/",
+  "category": "archives-cache",
+  "mp": "medium"
+ }
+]

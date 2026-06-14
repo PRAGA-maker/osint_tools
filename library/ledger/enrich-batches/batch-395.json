@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/rfsearch-com.md",
+  "id": "rfsearch-com",
+  "name": "Rfsearch.com",
+  "url": "http://rfsearch.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/scanmap.md",
+  "id": "scanmap",
+  "name": "Scanmap",
+  "url": "https://scanmap.mobi/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/surveillance-under-surveillance.md",
+  "id": "surveillance-under-surveillance",
+  "name": "Surveillance under Surveillance",
+  "url": "https://sunders.uber.space/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/the-webcam-network.md",
+  "id": "the-webcam-network",
+  "name": "The Webcam Network",
+  "url": "http://www.the-webcam-network.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/thingful.md",
+  "id": "thingful",
+  "name": "thingful",
+  "url": "http://www.thingful.net/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/toronto-area-live-traffic-cams.md",
+  "id": "toronto-area-live-traffic-cams",
+  "name": "Toronto area Live Traffic Cams",
+  "url": "https://gtaupdate.com/traffic/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/tpscalls-live.md",
+  "id": "tpscalls-live",
+  "name": "tpscalls.live",
+  "url": "https://www.tpscalls.live/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/ukraine-live-cams.md",
+  "id": "ukraine-live-cams",
+  "name": "Ukraine Live Cams",
+  "url": "https://nagix.github.io/ukraine-livecams/#5.5/47.774/31.685/0/45",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/vdot-traffic-cams.md",
+  "id": "vdot-traffic-cams",
+  "name": "VDOT Traffic Cams",
+  "url": "https://www.arcgis.com/apps/dashboards/a0d3fb34cda44f5b8b10be1b245f24a3",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/webcam-live.md",
+  "id": "webcam-live",
+  "name": "WEBCAM LIVE",
+  "url": "https://www.whatsupcams.com/en/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/webcam-search-engine.md",
+  "id": "webcam-search-engine",
+  "name": "Webcam Search Engine",
+  "url": "https://cse.google.com/cse?cx=013991603413798772546:gjcdtyiytey#gsc.tab=0",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/webcams-abroad-live-images.md",
+  "id": "webcams-abroad-live-images",
+  "name": "Webcams Abroad live images",
+  "url": "https://www.webcamsabroad.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/webcamtaxi.md",
+  "id": "webcamtaxi",
+  "name": "Webcamtaxi",
+  "url": "https://www.webcamtaxi.com/en/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/wifispc-com.md",
+  "id": "wifispc-com",
+  "name": "Wifispc.com",
+  "url": "https://wifispc.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/wiman.md",
+  "id": "wiman",
+  "name": "Wiman",
+  "url": "https://www.wiman.me/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/worldcam.md",
+  "id": "worldcam",
+  "name": "WorldCam",
+  "url": "https://worldcam.eu/",
+  "category": "geolocation",
+  "mp": "low"
+ }
+]

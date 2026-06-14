@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/susper.md",
+  "id": "susper",
+  "name": "Susper",
+  "url": "https://susper.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/swisscows.md",
+  "id": "swisscows",
+  "name": "Swisscows",
+  "url": "https://swisscows.com/en",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/tabnine.md",
+  "id": "tabnine",
+  "name": "tabnine",
+  "url": "https://www.tabnine.com/code",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/termwiki.md",
+  "id": "termwiki",
+  "name": "Termwiki",
+  "url": "http://www.termwiki.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/terrorism-reports.md",
+  "id": "terrorism-reports",
+  "name": "Terrorism Reports",
+  "url": "http://www.state.gov/j/ct/rls/crt/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/the-best-document-search-engine.md",
+  "id": "the-best-document-search-engine",
+  "name": "The best document search engine",
+  "url": "http://www.doc-txt.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/the-book-seer-recommendation-website.md",
+  "id": "the-book-seer-recommendation-website",
+  "name": "The Book Seer Recommendation Website",
+  "url": "http://bookseer.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/the-guantanamo-docket.md",
+  "id": "the-guantanamo-docket",
+  "name": "The Guantanamo Docket",
+  "url": "https://www.nytimes.com/interactive/projects/guantanamo",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/the-open-syllabus-project.md",
+  "id": "the-open-syllabus-project",
+  "name": "The Open Syllabus Project",
+  "url": "https://www.opensyllabus.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/the-osint-rack-mario-santella.md",
+  "id": "the-osint-rack-mario-santella",
+  "name": "The OSINT Rack (Mario Santella)",
+  "url": "https://www.mariosantella.com/the-osint-rack/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/the-osintion-wiki.md",
+  "id": "the-osintion-wiki",
+  "name": "The OSINTion Wiki",
+  "url": "https://wiki.theosintion.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/thefaceoff-ice-hockey-wiki.md",
+  "id": "thefaceoff-ice-hockey-wiki",
+  "name": "TheFaceOff Ice Hockey Wiki",
+  "url": "http://icehockey.wikia.com/wiki/The_Face_Off",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/thelookup.md",
+  "id": "thelookup",
+  "name": "TheLookup",
+  "url": "http://the-lookup.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/thepiratebay.md",
+  "id": "thepiratebay",
+  "name": "ThePirateBay",
+  "url": "https://www.thepiratebay.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/think-tank-search.md",
+  "id": "think-tank-search",
+  "name": "Think Tank Search",
+  "url": "https://guides.library.harvard.edu/hks/think_tank_search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/toddington-online-research-cheat-sheets.md",
+  "id": "toddington-online-research-cheat-sheets",
+  "name": "Toddington Online Research Cheat Sheets",
+  "url": "https://www.toddington.com/resources/cheat-sheets/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

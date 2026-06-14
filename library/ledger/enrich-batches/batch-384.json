@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/unshorten-me.md",
+  "id": "unshorten-me",
+  "name": "Unshorten.me",
+  "url": "https://unshorten.me/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/change-detection/upcheck.md",
+  "id": "upcheck",
+  "name": "UPcheck",
+  "url": "https://upcheck.online/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/url-expanders/url-expander.md",
+  "id": "url-expander",
+  "name": "URL Expander",
+  "url": "https://urlex.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/url-void.md",
+  "id": "url-void",
+  "name": "URL Void",
+  "url": "https://www.urlvoid.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/typosquatting/urlcrazy.md",
+  "id": "urlcrazy",
+  "name": "URLCrazy",
+  "url": "https://www.morningstarsecurity.com/research/urlcrazy",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/urldna.md",
+  "id": "urldna",
+  "name": "urlDNA",
+  "url": "https://urldna.io",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/urlhaus.md",
+  "id": "urlhaus",
+  "name": "URLhaus",
+  "url": "https://urlhaus.abuse.ch",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/urlquery.md",
+  "id": "urlquery",
+  "name": "urlQuery",
+  "url": "http://urlquery.net",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/urlquery-net.md",
+  "id": "urlquery-net",
+  "name": "UrlQuery.net",
+  "url": "https://urlquery.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/urlscan.md",
+  "id": "urlscan",
+  "name": "urlscan",
+  "url": "https://urlscan.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/urlscan-io.md",
+  "id": "urlscan-io",
+  "name": "urlscan.io",
+  "url": "https://urlscan.io/search/#*",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/urlscan-io-2.md",
+  "id": "urlscan-io-2",
+  "name": "urlscan.io",
+  "url": "https://urlscan.io/search/#*",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/urlvoid.md",
+  "id": "urlvoid",
+  "name": "URLVoid",
+  "url": "http://www.urlvoid.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/change-detection/urlwatch.md",
+  "id": "urlwatch",
+  "name": "Urlwatch",
+  "url": "https://github.com/thp/urlwatch",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/urlxray.md",
+  "id": "urlxray",
+  "name": "Urlxray",
+  "url": "http://urlxray.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/geolocation/utrace.md",
+  "id": "utrace",
+  "name": "utrace",
+  "url": "https://en.utrace.de/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

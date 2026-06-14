@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/searching-state-courts.md",
+  "id": "searching-state-courts",
+  "name": "Searching state courts",
+  "url": "https://docs.google.com/document/d/1dhhv7gs6mycat97rtzlzdkokpzcm3qpojgq0w_qqaiy/edit",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/searchsystems-birth-records.md",
+  "id": "searchsystems-birth-records",
+  "name": "SearchSystems Birth Records",
+  "url": "https://publicrecords.searchsystems.net/free_public_records_by_type_of_record/birth_records",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/searchsystems-death-records.md",
+  "id": "searchsystems-death-records",
+  "name": "SearchSystems Death Records",
+  "url": "https://publicrecords.searchsystems.net/free_public_records_by_type_of_record/death_records",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sec-gov.md",
+  "id": "sec-gov",
+  "name": "sec.gov",
+  "url": "http://www.sec.gov/edgar/searchedgar/companysearch.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/seco-verification-of-course-attendance-2018.md",
+  "id": "seco-verification-of-course-attendance-2018",
+  "name": "SECO Verification of Course Attendance 2018",
+  "url": "https://c0esh132.caspio.com/dp/9040200005c29c35a74342e2b357",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/securities-administrators-ca.md",
+  "id": "securities-administrators-ca",
+  "name": "securities-administrators.ca",
+  "url": "https://info.securities-administrators.ca/nrsmobile/nrssearch.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/service-gov-uk.md",
+  "id": "service-gov-uk",
+  "name": "service.gov.uk",
+  "url": "https://probatesearch.service.gov.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sesac-com.md",
+  "id": "sesac-com",
+  "name": "sesac.com",
+  "url": "https://www.sesac.com/repertory/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/setlist-fm.md",
+  "id": "setlist-fm",
+  "name": "setlist.fm",
+  "url": "https://www.setlist.fm/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sex-offender-korea.md",
+  "id": "sex-offender-korea",
+  "name": "Sex Offender Korea",
+  "url": "https://www.sexoffender.go.kr/indexN.nsc",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sex-offender-registry-websites.md",
+  "id": "sex-offender-registry-websites",
+  "name": "Sex Offender Registry Websites",
+  "url": "https://www.fbi.gov/scams-and-safety/sex-offender-registry",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sex-offender-search.md",
+  "id": "sex-offender-search",
+  "name": "Sex Offender Search",
+  "url": "https://www.blackbookonline.info/usa-sex-offenders.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sex-offender-us.md",
+  "id": "sex-offender-us",
+  "name": "Sex Offender (US)",
+  "url": "https://publicrecords.onlinesearches.com/sex-offender-registration.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sherpaintelligence-substack-com.md",
+  "id": "sherpaintelligence-substack-com",
+  "name": "sherpaintelligence.substack.com",
+  "url": "https://sherpaintelligence.substack.com/p/osint-basecamp-investigating-charities",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sijilat-bh.md",
+  "id": "sijilat-bh",
+  "name": "sijilat.bh",
+  "url": "https://www.sijilat.bh/public-search-cr/search-cr-2.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sijilat-bh-2.md",
+  "id": "sijilat-bh-2",
+  "name": "sijilat.bh",
+  "url": "https://www.sijilat.bh/agency-registration/ARSearch/ar-search-1.aspx",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

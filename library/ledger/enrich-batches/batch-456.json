@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/overload-search.md",
+  "id": "overload-search",
+  "name": "Overload Search",
+  "url": "https://chrome.google.com/webstore/detail/overload-search-advanced/knihkdaajdhpjgeiadaefmjmpbnlojbg/related",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/oxford-journals.md",
+  "id": "oxford-journals",
+  "name": "Oxford Journals",
+  "url": "http://www.oxfordjournals.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/packettotal.md",
+  "id": "packettotal",
+  "name": "PacketTotal",
+  "url": "https://packettotal.com/app/search",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/paperball-news.md",
+  "id": "paperball-news",
+  "name": "Paperball.news",
+  "url": "https://paperball.news/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/paperboy.md",
+  "id": "paperboy",
+  "name": "Paperboy",
+  "url": "http://www.thepaperboy.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/parseek-iran.md",
+  "id": "parseek-iran",
+  "name": "Parseek (Iran)",
+  "url": "http://www.parseek.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/pbs-kids.md",
+  "id": "pbs-kids",
+  "name": "PBS Kids",
+  "url": "http://pbskids.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/pdfsearch-io.md",
+  "id": "pdfsearch-io",
+  "name": "Pdfsearch.io",
+  "url": "https://www.pdfsearch.io/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/perplexity.md",
+  "id": "perplexity",
+  "name": "Perplexity",
+  "url": "https://www.perplexity.ai",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/peteyvid.md",
+  "id": "peteyvid",
+  "name": "Peteyvid",
+  "url": "https://peteyvid.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/phind.md",
+  "id": "phind",
+  "name": "Phind",
+  "url": "https://www.phind.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/pinterest-trends.md",
+  "id": "pinterest-trends",
+  "name": "Pinterest Trends",
+  "url": "https://trends.pinterest.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/pr-newswire.md",
+  "id": "pr-newswire",
+  "name": "PR Newswire",
+  "url": "http://www.prnewswire.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/presearch.md",
+  "id": "presearch",
+  "name": "Presearch",
+  "url": "https://presearch.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/press-reader.md",
+  "id": "press-reader",
+  "name": "Press Reader",
+  "url": "http://www.pressreader.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/pubmed.md",
+  "id": "pubmed",
+  "name": "PubMed",
+  "url": "http://www.ncbi.nlm.nih.gov/pubmed",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/evidence-capture/screen-capture/sharex.md",
+  "id": "sharex",
+  "name": "ShareX",
+  "url": "https://getsharex.com/",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/snapper.md",
+  "id": "snapper",
+  "name": "Snapper",
+  "url": "https://github.com/dxa4481/Snapper",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/timeline-js3.md",
+  "id": "timeline-js3",
+  "name": "Timeline JS3",
+  "url": "https://timeline.knightlab.com/",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/evidence-capture/web-browsing/web-page-saver.md",
+  "id": "web-page-saver",
+  "name": "Web Page Saver",
+  "url": "https://www.magnetforensics.com/resources/web-page-saver/",
+  "category": "evidence-capture",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/acfcs-org.md",
+  "id": "acfcs-org",
+  "name": "acfcs.org",
+  "url": "https://www.acfcs.org/acfcs-contributor-report-bitcoin-tracking-for-law-enforcement",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/afd-co-uk.md",
+  "id": "afd-co-uk",
+  "name": "afd.co.uk",
+  "url": "https://www.afd.co.uk/try-it/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/afd-co-uk-2.md",
+  "id": "afd-co-uk-2",
+  "name": "afd.co.uk",
+  "url": "https://www.afd.co.uk/solutions/bank-verification/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/aib-gov-uk.md",
+  "id": "aib-gov-uk",
+  "name": "aib.gov.uk",
+  "url": "https://roi.aib.gov.uk/roi/Security/Home/Landing",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/aib-gov-uk-2.md",
+  "id": "aib-gov-uk-2",
+  "name": "aib.gov.uk",
+  "url": "https://roi.aib.gov.uk/roi/PublicSearches/PublicSearch",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/aib-gov-uk-3.md",
+  "id": "aib-gov-uk-3",
+  "name": "aib.gov.uk",
+  "url": "https://roi.aib.gov.uk/roi/PublicSearches/PublicSearch/InsolventCompany",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/mixer-tracking/arkham-intelligence.md",
+  "id": "arkham-intelligence",
+  "name": "Arkham Intelligence",
+  "url": "https://intel.arkm.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/binbase-com.md",
+  "id": "binbase-com",
+  "name": "binbase.com",
+  "url": "https://www.binbase.com/search.html",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bincodes-com.md",
+  "id": "bincodes-com",
+  "name": "bincodes.com",
+  "url": "https://www.bincodes.com/creditcard-checker/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bindb-com.md",
+  "id": "bindb-com",
+  "name": "bindb.com",
+  "url": "https://www.bindb.com/sort-codes",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/chain-analysis-platforms/bitcoin-abuse-database.md",
+  "id": "bitcoin-abuse-database",
+  "name": "Bitcoin Abuse Database",
+  "url": "https://bitcoinabuse.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoin-org.md",
+  "id": "bitcoin-org",
+  "name": "bitcoin.org",
+  "url": "https://bitcoin.org/en/resources",
+  "category": "financial-crypto",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/atscan.md",
+  "id": "atscan",
+  "name": "ATSCAN",
+  "url": "https://github.com/AlisamTechnology/ATSCAN",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/australian-bureau-of-statistics.md",
+  "id": "australian-bureau-of-statistics",
+  "name": "Australian Bureau of Statistics",
+  "url": "http://www.abs.gov.au/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/australian-government.md",
+  "id": "australian-government",
+  "name": "Australian Government",
+  "url": "http://australia.gov.au/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/avvo-north-america.md",
+  "id": "avvo-north-america",
+  "name": "Avvo (North America)",
+  "url": "http://www.avvo.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/baidu.md",
+  "id": "baidu",
+  "name": "Baidu",
+  "url": "https://www.baidu.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/baiduknows-search-engine-china.md",
+  "id": "baiduknows-search-engine-china",
+  "name": "BaiduKnows Search Engine (China)",
+  "url": "http://zhidao.baidu.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/baike-baidu-chinese-language.md",
+  "id": "baike-baidu-chinese-language",
+  "name": "Baike Baidu (Chinese language)",
+  "url": "http://baike.baidu.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ballotpedia-united-states.md",
+  "id": "ballotpedia-united-states",
+  "name": "Ballotpedia (United States)",
+  "url": "https://ballotpedia.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bank-of-canada.md",
+  "id": "bank-of-canada",
+  "name": "Bank of Canada",
+  "url": "http://www.bank-banque-canada.ca/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bank-of-canada-unclaimed-balances.md",
+  "id": "bank-of-canada-unclaimed-balances",
+  "name": "Bank of Canada Unclaimed Balances",
+  "url": "http://www.bankofcanada.ca/unclaimed-balances/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/base-de-datos-spanish-language.md",
+  "id": "base-de-datos-spanish-language",
+  "name": "Base De Datos (Spanish language)",
+  "url": "http://www.basededatos.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bazel.md",
+  "id": "bazel",
+  "name": "Bazel",
+  "url": "https://cs.opensource.google/bazel",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/beso-shopping-search-engine.md",
+  "id": "beso-shopping-search-engine",
+  "name": "Beso Shopping Search Engine",
+  "url": "http://www.beso.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bespacific.md",
+  "id": "bespacific",
+  "name": "beSpacific",
+  "url": "http://www.bespacific.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/better-chrome-web-store-search-engine.md",
+  "id": "better-chrome-web-store-search-engine",
+  "name": "Better Chrome Web Store Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=006205189065513216365:pn3lumi80ne",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bevigil.md",
+  "id": "bevigil",
+  "name": "BeVigil",
+  "url": "https://bevigil.com/search",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

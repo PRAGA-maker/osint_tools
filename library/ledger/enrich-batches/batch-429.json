@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/upload-files-to-ipfs-from-browser.md",
+  "id": "upload-files-to-ipfs-from-browser",
+  "name": "Upload files to IPFS from Browser",
+  "url": "https://anarkrypto.github.io/upload-files-to-ipfs-from-browser-panel/public/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/urban-legends-online.md",
+  "id": "urban-legends-online",
+  "name": "Urban Legends Online",
+  "url": "http://urbanlegendsonline.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/us-cop-reference-guide-app-mobile-android.md",
+  "id": "us-cop-reference-guide-app-mobile-android",
+  "name": "US Cop Reference Guide App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.qbiki.UScop&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5xYmlraS5VU2NvcCJd",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/us-ssn-driver-license-state-id-passport-tax-id-generator.md",
+  "id": "us-ssn-driver-license-state-id-passport-tax-id-generator",
+  "name": "US SSN / Driver License / State ID / Passport / Tax ID Generator",
+  "url": "https://www.elfqrin.com/usssndriverlicenseidgen.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/username-generator.md",
+  "id": "username-generator",
+  "name": "Username Generator",
+  "url": "https://www.lastpass.com/features/username-generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/vcc-generator.md",
+  "id": "vcc-generator",
+  "name": "VCC Generator",
+  "url": "http://vccgenerator.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/venmo-mobile-payment-app-mobile-android.md",
+  "id": "venmo-mobile-payment-app-mobile-android",
+  "name": "Venmo Mobile Payment App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.venmo",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/venmo-mobile-payment-app-mobile-ios.md",
+  "id": "venmo-mobile-payment-app-mobile-ios",
+  "name": "Venmo Mobile Payment App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/venmo/id351727428?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/video-downloadhelper.md",
+  "id": "video-downloadhelper",
+  "name": "Video DownloadHelper",
+  "url": "https://www.downloadhelper.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/view-exif-data-online-remove-exif-online.md",
+  "id": "view-exif-data-online-remove-exif-online",
+  "name": "View Exif data online, remove Exif online",
+  "url": "http://www.verexif.com/en/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/vin-generator.md",
+  "id": "vin-generator",
+  "name": "VIN Generator",
+  "url": "https://www.fakenamegenerator.com/vehicle-identification-number.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/visual-ping-extension-chrome.md",
+  "id": "visual-ping-extension-chrome",
+  "name": "Visual Ping Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/visualping/fbhjaehnpccniaiedddkbdhgicmcmgng",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/vivaldi.md",
+  "id": "vivaldi",
+  "name": "Vivaldi",
+  "url": "https://vivaldi.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/vkontakte-social-networking-app-mobile-android.md",
+  "id": "vkontakte-social-networking-app-mobile-android",
+  "name": "Vkontakte Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.vkontakte.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/voicebooking.md",
+  "id": "voicebooking",
+  "name": "VoiceBooking",
+  "url": "https://www.voicebooking.com/en/free-voice-over-generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/vpn.md",
+  "id": "vpn",
+  "name": "VPN",
+  "url": "https://www.vpn.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

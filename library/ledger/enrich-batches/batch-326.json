@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/shanti-interactive.md",
+  "id": "shanti-interactive",
+  "name": "Shanti Interactive",
+  "url": "http://www.viseyes.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/shellcheck-net.md",
+  "id": "shellcheck-net",
+  "name": "shellcheck.net",
+  "url": "https://www.shellcheck.net/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/shrewdeye.md",
+  "id": "shrewdeye",
+  "name": "ShrewdEye",
+  "url": "https://shrewdeye.app/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/silent-circle.md",
+  "id": "silent-circle",
+  "name": "Silent circle",
+  "url": "https://www.silentcircle.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sintelix.md",
+  "id": "sintelix",
+  "name": "Sintelix",
+  "url": "https://sintelix.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sitesucker.md",
+  "id": "sitesucker",
+  "name": "SiteSucker",
+  "url": "http://ricks-apps.com/osx/sitesucker/index.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/skopenow.md",
+  "id": "skopenow",
+  "name": "Skopenow",
+  "url": "https://www.skopenow.com/news",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/slash.md",
+  "id": "slash",
+  "name": "Slash",
+  "url": "https://github.com/redc86/slash",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sleuth-for-the-truth.md",
+  "id": "sleuth-for-the-truth",
+  "name": "Sleuth For The Truth",
+  "url": "http://sleuthforthetruth.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sn0int.md",
+  "id": "sn0int",
+  "name": "sn0int",
+  "url": "https://github.com/kpcyrd/sn0int",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/snappa.md",
+  "id": "snappa",
+  "name": "Snappa",
+  "url": "https://snappa.io",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/snort.md",
+  "id": "snort",
+  "name": "Snort",
+  "url": "https://www.snort.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/social-links.md",
+  "id": "social-links",
+  "name": "Social Links",
+  "url": "https://blog.sociallinks.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/soundeffectssearch-com.md",
+  "id": "soundeffectssearch-com",
+  "name": "soundeffectssearch.com",
+  "url": "https://www.soundeffectssearch.com/find-a-sound-library/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/spiderfoot-2.md",
+  "id": "spiderfoot-2",
+  "name": "SpiderFoot",
+  "url": "https://www.spiderfoot.net",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/javascript/spidermonkey.md",
+  "id": "spidermonkey",
+  "name": "SpiderMonkey",
+  "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

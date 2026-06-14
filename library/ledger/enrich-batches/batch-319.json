@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/nixory.md",
+  "id": "nixory",
+  "name": "Nixory",
+  "url": "http://nixory.sourceforge.net",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/nodebox.md",
+  "id": "nodebox",
+  "name": "Nodebox",
+  "url": "https://www.nodebox.net",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/xor/python/nomorexor-py.md",
+  "id": "nomorexor-py",
+  "name": "NoMoreXOR.py",
+  "url": "https://github.com/hiddenillusion/NoMoreXOR",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/observable.md",
+  "id": "observable",
+  "name": "Observable",
+  "url": "https://observablehq.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/obsidian.md",
+  "id": "obsidian",
+  "name": "Obsidian",
+  "url": "https://obsidian.md",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/oda-the-online-disassembler.md",
+  "id": "oda-the-online-disassembler",
+  "name": "ODA - The Online Disassembler",
+  "url": "https://onlinedisassembler.com/odaweb/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/offliberty.md",
+  "id": "offliberty",
+  "name": "Offliberty",
+  "url": "http://offliberty.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/offshore-cat.md",
+  "id": "offshore-cat",
+  "name": "OffShore.cat",
+  "url": "https://offshore.cat/vpn",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/ollama.md",
+  "id": "ollama",
+  "name": "Ollama",
+  "url": "https://ollama.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/omnibus.md",
+  "id": "omnibus",
+  "name": "Omnibus",
+  "url": "https://github.com/InQuest/omnibus",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/onion-lookup.md",
+  "id": "onion-lookup",
+  "name": "onion-lookup",
+  "url": "https://onion.ail-project.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/online-color-picker.md",
+  "id": "online-color-picker",
+  "name": "Online Color Picker",
+  "url": "https://colorpicker.me/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/online-loudness-meter.md",
+  "id": "online-loudness-meter",
+  "name": "Online Loudness Meter",
+  "url": "https://youlean.co/online-loudness-meter/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/online-nikto-scanner-4.md",
+  "id": "online-nikto-scanner-4",
+  "name": "Online Nikto scanner",
+  "url": "https://nikto.online/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/online-tools.md",
+  "id": "online-tools",
+  "name": "Online Tools",
+  "url": "https://emn178.github.io/online-tools/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/open-dns.md",
+  "id": "open-dns",
+  "name": "Open DNS",
+  "url": "https://www.opendns.com/home-internet-security",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

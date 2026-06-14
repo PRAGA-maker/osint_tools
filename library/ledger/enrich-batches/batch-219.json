@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/company-search-tool.md",
+  "id": "company-search-tool",
+  "name": "Company search tool",
+  "url": "https://www.aware-online.com/en/osint-tools/company-search-tool/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/competeshark.md",
+  "id": "competeshark",
+  "name": "CompeteShark",
+  "url": "http://competeshark.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/completed-access-to-information-requests.md",
+  "id": "completed-access-to-information-requests",
+  "name": "Completed Access to Information Requests",
+  "url": "https://open.canada.ca/en/search/ati",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/connectedpapers.md",
+  "id": "connectedpapers",
+  "name": "ConnectedPapers",
+  "url": "https://www.connectedpapers.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/cop26-registered-attendees.md",
+  "id": "cop26-registered-attendees",
+  "name": "COP26 registered attendees",
+  "url": "https://datawrapper.dwcdn.net/UCUWs/3/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/coplookup-com.md",
+  "id": "coplookup-com",
+  "name": "Coplookup.com",
+  "url": "https://coplookup.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k.md",
+  "id": "coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k",
+  "name": "Coronavirus Bailouts: Search Every Company Approved for Federal Loans Over $150k",
+  "url": "https://projects.propublica.org/coronavirus/bailouts/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/corporate-information.md",
+  "id": "corporate-information",
+  "name": "Corporate Information",
+  "url": "http://www.corporateinformation.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/corporationwiki.md",
+  "id": "corporationwiki",
+  "name": "CorporationWiki",
+  "url": "https://www.corporationwiki.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/corporative-registry-catalog.md",
+  "id": "corporative-registry-catalog",
+  "name": "Corporative Registry Catalog",
+  "url": "https://cipher387.github.io/corporative_registry_worldwide_catalog/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/courtlistener.md",
+  "id": "courtlistener",
+  "name": "CourtListener",
+  "url": "https://courtlistener.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/covidbailouttracker-com.md",
+  "id": "covidbailouttracker-com",
+  "name": "Covidbailouttracker.com",
+  "url": "https://covidbailouttracker.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/crimereports-com.md",
+  "id": "crimereports-com",
+  "name": "CrimeReports.com",
+  "url": "https://crimereports.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/criminal-cop-database-lookup.md",
+  "id": "criminal-cop-database-lookup",
+  "name": "Criminal Cop Database Lookup",
+  "url": "https://extras.mercurynews.com/criminalcops/database/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/cronodump.md",
+  "id": "cronodump",
+  "name": "Cronodump",
+  "url": "https://github.com/alephdata/cronodump",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/crunchbase.md",
+  "id": "crunchbase",
+  "name": "Crunchbase",
+  "url": "https://www.crunchbase.com/#/home/index",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

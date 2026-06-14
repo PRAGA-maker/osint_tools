@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/translation-language/linguee-english-french-dictionary.md",
+  "id": "linguee-english-french-dictionary",
+  "name": "Linguee English-French Dictionary",
+  "url": "http://www.linguee.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/localingual-com.md",
+  "id": "localingual-com",
+  "name": "localingual.com",
+  "url": "https://localingual.com/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/meowni-ca.md",
+  "id": "meowni-ca",
+  "name": "meowni.ca",
+  "url": "https://meowni.ca/emoji-translate/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/microsoft-translator.md",
+  "id": "microsoft-translator",
+  "name": "Microsoft Translator",
+  "url": "http://www.microsoft.com/en-us/translator",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/netlingo-listing-of-chat-acronyms.md",
+  "id": "netlingo-listing-of-chat-acronyms",
+  "name": "NetLingo Listing of Chat Acronyms",
+  "url": "http://www.netlingo.com/acronyms.php",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/noslang-dictionary.md",
+  "id": "noslang-dictionary",
+  "name": "NoSlang Dictionary",
+  "url": "http://www.noslang.com/dictionary",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/odysseytranslator.md",
+  "id": "odysseytranslator",
+  "name": "OdysseyTranslator",
+  "url": "http://odysseytranslator.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/online-slang-dictionary.md",
+  "id": "online-slang-dictionary",
+  "name": "Online Slang Dictionary",
+  "url": "http://onlineslangdictionary.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/online-translator.md",
+  "id": "online-translator",
+  "name": "Online Translator",
+  "url": "https://www.online-translator.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/paralink-translation-tool.md",
+  "id": "paralink-translation-tool",
+  "name": "Paralink Translation Tool",
+  "url": "http://translation2.paralink.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/paulschou-binary-translator.md",
+  "id": "paulschou-binary-translator",
+  "name": "Paulschou Binary Translator",
+  "url": "https://paulschou.com/tools/xlate",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/phrases-net.md",
+  "id": "phrases-net",
+  "name": "Phrases.net",
+  "url": "http://www.phrases.net",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/plagiarsim-checker.md",
+  "id": "plagiarsim-checker",
+  "name": "Plagiarsim Checker",
+  "url": "https://www.plagiarismchecker.net",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/poetry-net.md",
+  "id": "poetry-net",
+  "name": "Poetry.net",
+  "url": "http://www.poetry.net",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/promt-free-online-translator.md",
+  "id": "promt-free-online-translator",
+  "name": "PROMT Free Online Translator",
+  "url": "http://www.online-translator.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/quotes-net.md",
+  "id": "quotes-net",
+  "name": "Quotes.net",
+  "url": "http://www.quotes.net",
+  "category": "translation-language",
+  "mp": "low"
+ }
+]

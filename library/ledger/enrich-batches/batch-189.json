@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/financial-crypto/etherscan-io.md",
+  "id": "etherscan-io",
+  "name": "etherscan.io",
+  "url": "https://etherscan.io/balancecheck-tool",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/nft-provenance/etherscan-nft-tracker.md",
+  "id": "etherscan-nft-tracker",
+  "name": "Etherscan NFT Tracker",
+  "url": "https://etherscan.io/nft",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/ethplorer-io.md",
+  "id": "ethplorer-io",
+  "name": "ethplorer.io",
+  "url": "https://ethplorer.io/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/ethtective-com.md",
+  "id": "ethtective-com",
+  "name": "ethtective.com",
+  "url": "https://www.ethtective.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/europa-eu.md",
+  "id": "europa-eu",
+  "name": "europa.eu",
+  "url": "https://www.europol.europa.eu/cms/sites/default/files/documents/Europol%20Spotlight%20-%20Cryptocurrencies%20-%20Tracing%20the%20evolution%20of%20criminal%20finances.pdf",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/experian-co-uk.md",
+  "id": "experian-co-uk",
+  "name": "experian.co.uk",
+  "url": "https://www.experian.co.uk/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/freeformatter-com.md",
+  "id": "freeformatter-com",
+  "name": "freeformatter.com",
+  "url": "https://www.freeformatter.com/credit-card-number-generator-validator.html#howToValidate",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/gijn-org-2.md",
+  "id": "gijn-org-2",
+  "name": "gijn.org",
+  "url": "https://gijn.org/resource/introduction-investigative-journalism-following-money",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/gov-uk-2.md",
+  "id": "gov-uk-2",
+  "name": "gov.uk",
+  "url": "https://www.gov.uk/government/publications/publishing-details-of-deliberate-tax-defaulters-pddd/current-list-of-deliberate-tax-defaulters",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/ibancalculator-com.md",
+  "id": "ibancalculator-com",
+  "name": "ibancalculator.com",
+  "url": "https://www.ibancalculator.com/blz.html",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/ibancalculator-com-2.md",
+  "id": "ibancalculator-com-2",
+  "name": "ibancalculator.com",
+  "url": "https://www.ibancalculator.com/bic_und_iban.html",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/insolvency-govt-nz.md",
+  "id": "insolvency-govt-nz",
+  "name": "insolvency.govt.nz",
+  "url": "https://www.insolvency.govt.nz/oasis3-web/oasis3/page/-oasis/domain/communications/SearchInsolvencyRegister.wdk",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/insolvencydirect-bis-gov-uk.md",
+  "id": "insolvencydirect-bis-gov-uk",
+  "name": "insolvencydirect.bis.gov.uk",
+  "url": "https://www.insolvencydirect.bis.gov.uk/eiir/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/investing-com-2.md",
+  "id": "investing-com-2",
+  "name": "investing.com",
+  "url": "https://uk.investing.com/crypto/currencies?currency=gbp",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/jahs-ie.md",
+  "id": "jahs-ie",
+  "name": "jahs.ie",
+  "url": "https://isi.jahs.ie/public/cases",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/learnmeabitcoin-com.md",
+  "id": "learnmeabitcoin-com",
+  "name": "learnmeabitcoin.com",
+  "url": "https://learnmeabitcoin.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ }
+]

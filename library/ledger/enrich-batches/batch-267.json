@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/shadowserver.md",
+  "id": "shadowserver",
+  "name": "Shadowserver",
+  "url": "https://dashboard.shadowserver.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sharkscope.md",
+  "id": "sharkscope",
+  "name": "Sharkscope",
+  "url": "http://www.sharkscope.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/shazam.md",
+  "id": "shazam",
+  "name": "Shazam",
+  "url": "http://www.shazam.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/shopperapproved.md",
+  "id": "shopperapproved",
+  "name": "Shopperapproved",
+  "url": "http://www.shopperapproved.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/shopzilla.md",
+  "id": "shopzilla",
+  "name": "Shopzilla",
+  "url": "http://www.shopzilla.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/short-url-search-engine.md",
+  "id": "short-url-search-engine",
+  "name": "Short URL Search Engine",
+  "url": "https://cse.google.com/cse?cx=017261104271573007538:magh-vr6t6g#gsc.tab=0",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sikkerapi.md",
+  "id": "sikkerapi",
+  "name": "SikkerAPI",
+  "url": "https://www.sikkerapi.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/similar-site-search.md",
+  "id": "similar-site-search",
+  "name": "Similar Site Search",
+  "url": "http://www.similarsitesearch.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/similarsites-com.md",
+  "id": "similarsites-com",
+  "name": "SimilarSites.com",
+  "url": "https://www.similarsites.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sitejabber.md",
+  "id": "sitejabber",
+  "name": "Sitejabber",
+  "url": "http://www.sitejabber.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sitelike.md",
+  "id": "sitelike",
+  "name": "SiteLike",
+  "url": "https://www.sitelike.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/slack-discord-zoom-invites-search.md",
+  "id": "slack-discord-zoom-invites-search",
+  "name": "Slack/Discord/Zoom Invites Search",
+  "url": "https://cse.google.com/cse?cx=8e26eca532ec2cba3",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/snipplr.md",
+  "id": "snipplr",
+  "name": "Snipplr",
+  "url": "https://snipplr.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/somalia-conflict.md",
+  "id": "somalia-conflict",
+  "name": "Somalia Conflict",
+  "url": "http://familylinks.icrc.org/somalia/en/Pages/Home.aspx",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sonicrun.md",
+  "id": "sonicrun",
+  "name": "SonicRun",
+  "url": "https://www.sonicrun.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/soso.md",
+  "id": "soso",
+  "name": "Soso",
+  "url": "http://soso.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

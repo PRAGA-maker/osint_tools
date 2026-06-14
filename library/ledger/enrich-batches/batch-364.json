@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/cisco-talos.md",
+  "id": "cisco-talos",
+  "name": "Cisco Talos",
+  "url": "https://talosintelligence.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/cisco-talos-intelligence-2.md",
+  "id": "cisco-talos-intelligence-2",
+  "name": "Cisco Talos Intelligence",
+  "url": "https://talosintelligence.com/ebc_spam",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/cisco-umbrella-popularity-list.md",
+  "id": "cisco-umbrella-popularity-list",
+  "name": "Cisco Umbrella Popularity List",
+  "url": "https://s3-us-west-1.amazonaws.com/umbrella-static/index.html",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/clearwebstats-com.md",
+  "id": "clearwebstats-com",
+  "name": "ClearWebStats.com",
+  "url": "https://www.clearwebstats.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/cloud-configuration-analysis/cloud-custodian.md",
+  "id": "cloud-custodian",
+  "name": "Cloud Custodian",
+  "url": "https://github.com/cloud-custodian/cloud-custodian",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/aws-enumeration/cloud-enum.md",
+  "id": "cloud-enum",
+  "name": "cloud_enum",
+  "url": "https://github.com/initstring/cloud_enum",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/protected-by-cloud-services/cloudfail.md",
+  "id": "cloudfail",
+  "name": "CloudFail",
+  "url": "https://github.com/m0rtem/CloudFail",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/cloudflare-resolver.md",
+  "id": "cloudflare-resolver",
+  "name": "Cloudflare Resolver",
+  "url": "http://www.skypeipresolver.net/cloudflare.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/cloudflare-resolver-tool.md",
+  "id": "cloudflare-resolver-tool",
+  "name": "Cloudflare Resolver Tool",
+  "url": "https://shadowcrypt.net/tools/cloudflare",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/protected-by-cloud-services/cloudflare-watch.md",
+  "id": "cloudflare-watch",
+  "name": "CloudFlare Watch",
+  "url": "https://www.crimeflare.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/cmlabs-tools.md",
+  "id": "cmlabs-tools",
+  "name": "CMLabs Tools",
+  "url": "https://tools.cmlabs.co/en/technology-lookup",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/criminal-ip-search.md",
+  "id": "criminal-ip-search",
+  "name": "Criminal IP Search",
+  "url": "https://www.criminalip.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/criminal-ip-search-2.md",
+  "id": "criminal-ip-search-2",
+  "name": "Criminal IP Search",
+  "url": "https://www.criminalip.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/critical-stack-intel.md",
+  "id": "critical-stack-intel",
+  "name": "Critical Stack Intel",
+  "url": "https://intel.criticalstack.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/certificate-search/crt-sh-certificate-search.md",
+  "id": "crt-sh-certificate-search",
+  "name": "crt.sh - Certificate Search",
+  "url": "https://crt.sh/?",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/crypto-scam-and-crypto-phishing-url-threat-intel-feed.md",
+  "id": "crypto-scam-and-crypto-phishing-url-threat-intel-feed",
+  "name": "Crypto Scam & Crypto Phishing URL Threat Intel Feed",
+  "url": "https://github.com/spmedia/Crypto-Scam-and-Crypto-Phishing-Threat-Intel-Feed",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

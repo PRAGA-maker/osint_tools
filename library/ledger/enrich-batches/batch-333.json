@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/changedetection.md",
+  "id": "changedetection",
+  "name": "ChangeDetection",
+  "url": "http://www.changedetection.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/changedetection-io-open-source.md",
+  "id": "changedetection-io-open-source",
+  "name": "ChangeDetection.io Open Source",
+  "url": "https://github.com/dgtlmoon/changedetection.io",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/deltafeed.md",
+  "id": "deltafeed",
+  "name": "Deltafeed",
+  "url": "http://bitreading.com/deltafeed",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/diggreader.md",
+  "id": "diggreader",
+  "name": "DiggReader",
+  "url": "http://digg.com/login?next=%2Freader",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/distill-io.md",
+  "id": "distill-io",
+  "name": "Distill.io",
+  "url": "https://distill.io/",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/feed-exileed.md",
+  "id": "feed-exileed",
+  "name": "Feed Exileed",
+  "url": "http://feed.exileed.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/feed-filter-maker.md",
+  "id": "feed-filter-maker",
+  "name": "Feed Filter Maker",
+  "url": "http://feed.janicek.co",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/feedbooster.md",
+  "id": "feedbooster",
+  "name": "FeedBooster",
+  "url": "http://www.qsensei.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/feederator.md",
+  "id": "feederator",
+  "name": "Feederator",
+  "url": "http://www.feederator.org",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/feedly.md",
+  "id": "feedly",
+  "name": "Feedly",
+  "url": "http://www.feedly.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/feedreader.md",
+  "id": "feedreader",
+  "name": "FeedReader",
+  "url": "http://www.feedreader.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/fetchrss.md",
+  "id": "fetchrss",
+  "name": "FetchRSS",
+  "url": "http://fetchrss.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/followthatpage.md",
+  "id": "followthatpage",
+  "name": "FollowThatPage",
+  "url": "http://www.followthatpage.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/infominder.md",
+  "id": "infominder",
+  "name": "InfoMinder",
+  "url": "http://www.infominder.com/webminder",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/lumen.md",
+  "id": "lumen",
+  "name": "Lumen",
+  "url": "https://lumendatabase.org/",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/mention.md",
+  "id": "mention",
+  "name": "Mention",
+  "url": "https://en.mention.com",
+  "category": "archives-cache",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/shodan-3.md",
+  "id": "shodan-3",
+  "name": "Shodan",
+  "url": "https://www.shodan.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/similarweb.md",
+  "id": "similarweb",
+  "name": "SimilarWeb",
+  "url": "https://www.similarweb.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/sitediff.md",
+  "id": "sitediff",
+  "name": "Sitediff",
+  "url": "https://github.com/digininja/sitediff",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/sitedossier.md",
+  "id": "sitedossier",
+  "name": "Sitedossier",
+  "url": "https://www.sitedossier.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/siteliner.md",
+  "id": "siteliner",
+  "name": "Siteliner",
+  "url": "https://www.siteliner.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/sitesleuth.md",
+  "id": "sitesleuth",
+  "name": "SiteSleuth",
+  "url": "https://www.sitesleuth.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/skype-resolver.md",
+  "id": "skype-resolver",
+  "name": "Skype Resolver",
+  "url": "http://www.skypeipresolver.net/index.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/smallseotools.md",
+  "id": "smallseotools",
+  "name": "SmallSEOTools",
+  "url": "http://smallseotools.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/vulnerabilities/scanners/sn1per.md",
+  "id": "sn1per",
+  "name": "Sn1per",
+  "url": "https://github.com/1N3/Sn1per",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/socradar-labs.md",
+  "id": "socradar-labs",
+  "name": "SOCRadar LABS",
+  "url": "https://socradar.io/labs/threat-actor/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/saas-footprinting/spiderfoot.md",
+  "id": "spiderfoot",
+  "name": "SpiderFoot",
+  "url": "https://github.com/smicallef/spiderfoot",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/spyonweb.md",
+  "id": "spyonweb",
+  "name": "SpyOnWeb",
+  "url": "https://www.spyonweb.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/certificate-search/spyse.md",
+  "id": "spyse",
+  "name": "Spyse",
+  "url": "https://spyse.com/search/certificate",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/spyse-2.md",
+  "id": "spyse-2",
+  "name": "Spyse",
+  "url": "https://spyse.com/search/ip",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/squatm3gator.md",
+  "id": "squatm3gator",
+  "name": "Squatm3gator",
+  "url": "https://github.com/david3107/squatm3gator",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/academic-research/start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism.md",
+  "id": "start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism",
+  "name": "START Consortium for the Study of Terrorism and Responses to Terrorism",
+  "url": "https://www.start.umd.edu/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

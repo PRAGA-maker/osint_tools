@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/minipaint.md",
+  "id": "minipaint",
+  "name": "miniPaint",
+  "url": "https://viliusle.github.io/miniPaint/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/museo.md",
+  "id": "museo",
+  "name": "Museo",
+  "url": "https://museo.app/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/mxface-ai.md",
+  "id": "mxface-ai",
+  "name": "mxface.ai",
+  "url": "https://mxface.ai/facecomparing#Face_Detection_demo_section",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/flickr/my-pics-map.md",
+  "id": "my-pics-map",
+  "name": "My Pics Map",
+  "url": "https://www.mypicsmap.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/myheritage-photo-enhancer.md",
+  "id": "myheritage-photo-enhancer",
+  "name": "MyHeritage Photo Enhancer",
+  "url": "https://www.myheritage.com/photo-enhancer",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/neural-network-image-super-resolution-and-enhancement.md",
+  "id": "neural-network-image-super-resolution-and-enhancement",
+  "name": "Neural network image super-resolution and enhancement",
+  "url": "https://letsenhance.io/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/ocr/new-ocr.md",
+  "id": "new-ocr",
+  "name": "New OCR",
+  "url": "https://www.newocr.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/metadata/oletools.md",
+  "id": "oletools",
+  "name": "oletools",
+  "url": "https://github.com/decalage2/oletools",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/documents/search/common-googledorks/onedrive.md",
+  "id": "onedrive",
+  "name": "OneDrive",
+  "url": "https://www.google.com/search?safe=off&q=site:onedrive.live.com+%3Csearchterm%3E",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/online-image-editor-com.md",
+  "id": "online-image-editor-com",
+  "name": "online-image-editor.com",
+  "url": "https://www.online-image-editor.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/ocr/online-ocr.md",
+  "id": "online-ocr",
+  "name": "Online OCR",
+  "url": "https://www.onlineocr.net/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/originality-ai.md",
+  "id": "originality-ai",
+  "name": "originality.ai",
+  "url": "https://originality.ai/youtube-script-generator",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/osint-os-surveillance-io.md",
+  "id": "osint-os-surveillance-io",
+  "name": "osint.os-surveillance.io",
+  "url": "https://osint.os-surveillance.io/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/documents/paste-sites/pastebin-osint-harvester.md",
+  "id": "pastebin-osint-harvester",
+  "name": "Pastebin OSINT Harvester",
+  "url": "https://github.com/needmorecowbell/sniff-paste",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/peteyvid-com.md",
+  "id": "peteyvid-com",
+  "name": "Peteyvid.com",
+  "url": "https://www.peteyvid.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/photo-album-finder.md",
+  "id": "photo-album-finder",
+  "name": "Photo Album Finder",
+  "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:bldnx392j6u",
+  "category": "image-video-face",
+  "mp": "high"
+ }
+]

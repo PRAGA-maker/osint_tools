@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/california-justice-watch.md",
+  "id": "california-justice-watch",
+  "name": "California Justice Watch",
+  "url": "https://cajusticewatch.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/canada-post-find-a-postal-code.md",
+  "id": "canada-post-find-a-postal-code",
+  "name": "Canada Post - Find a Postal Code",
+  "url": "https://www.canadapost-postescanada.ca/info/mc/personal/postalcode/fpc.jsf",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/canada411.md",
+  "id": "canada411",
+  "name": "Canada411",
+  "url": "http://www.canada411.ca",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/canada411-advanced-search-whitepages-ca.md",
+  "id": "canada411-advanced-search-whitepages-ca",
+  "name": "Canada411 Advanced Search - WhitePages (CA)",
+  "url": "https://www.canada411.ca/search/advanced.html",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/cedar.md",
+  "id": "cedar",
+  "name": "Cedar",
+  "url": "http://www.cedar.buffalo.edu/adserv/person-search.html",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/certificated-bailiff-register-justice-uk.md",
+  "id": "certificated-bailiff-register-justice-uk",
+  "name": "Certificated Bailiff Register \u2013 Justice UK",
+  "url": "https://certificatedbailiffs.justice.gov.uk",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/classmates.md",
+  "id": "classmates",
+  "name": "Classmates",
+  "url": "http://www.classmates.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/classmates-canada-alumni-lookup.md",
+  "id": "classmates-canada-alumni-lookup",
+  "name": "Classmates (Canada) - Alumni Lookup",
+  "url": "https://www.classmates.com/registration/state.jsp",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/clustermaps.md",
+  "id": "clustermaps",
+  "name": "Clustermaps",
+  "url": "https://clustrmaps.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/contactout.md",
+  "id": "contactout",
+  "name": "ContactOut",
+  "url": "https://contactout.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/cyber-background-checks-us.md",
+  "id": "cyber-background-checks-us",
+  "name": "Cyber Background Checks (US)",
+  "url": "https://www.cyberbackgroundchecks.com datascrape",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/dating-sites-search-engine.md",
+  "id": "dating-sites-search-engine",
+  "name": "Dating Sites Search Engine",
+  "url": "https://cse.google.com/cse?cx=c7b340447e1e12653",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/deadtrap.md",
+  "id": "deadtrap",
+  "name": "DeadTrap",
+  "url": "https://github.com/chr0m0s0m3s/deadtrap",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/deepfind-me.md",
+  "id": "deepfind-me",
+  "name": "deepfind.me",
+  "url": "https://www.deepfind.me/tools/social-media/username-search",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/discordleaks.md",
+  "id": "discordleaks",
+  "name": "DiscordLeaks",
+  "url": "https://discordleaks.unicornriot.ninja/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/effect-group.md",
+  "id": "effect-group",
+  "name": "Effect Group",
+  "url": "https://effectgroup.io/",
+  "category": "people-search",
+  "mp": "high"
+ }
+]

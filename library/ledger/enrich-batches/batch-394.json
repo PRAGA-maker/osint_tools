@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/lake-county-fire-cameras.md",
+  "id": "lake-county-fire-cameras",
+  "name": "Lake County Fire Cameras",
+  "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=0f7aa08cc4b74fc6a0c4308d4eace6b3",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/live-bar-and-pub-webcams.md",
+  "id": "live-bar-and-pub-webcams",
+  "name": "Live Bar and Pub Webcams",
+  "url": "http://gobefore.me/cams/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/live-cams-iplivecams.md",
+  "id": "live-cams-iplivecams",
+  "name": "Live Cams \\| Iplivecams",
+  "url": "https://www.iplivecams.com/live-cams/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/live-world-webcam.md",
+  "id": "live-world-webcam",
+  "name": "Live World Webcam",
+  "url": "http://liveworldwebcam.net/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/lubbock-live-traffic-cameras.md",
+  "id": "lubbock-live-traffic-cameras",
+  "name": "Lubbock Live Traffic Cameras",
+  "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=affe50ac55824c7a8c757d3980787e31",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/mozilla-location-service.md",
+  "id": "mozilla-location-service",
+  "name": "Mozilla Location Service",
+  "url": "https://location.services.mozilla.com/map#0.7/0/0",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/murph-live.md",
+  "id": "murph-live",
+  "name": "@murph\\_live",
+  "url": "https://twitter.com/murph_live",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/nest-cam-directory.md",
+  "id": "nest-cam-directory",
+  "name": "Nest Cam Directory",
+  "url": "https://www.nestcamdirectory.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/opentopia.md",
+  "id": "opentopia",
+  "name": "Opentopia",
+  "url": "http://www.opentopia.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/outage-map.md",
+  "id": "outage-map",
+  "name": "Outage map",
+  "url": "https://www.torontohydro.com/outage-map",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/plowto.md",
+  "id": "plowto",
+  "name": "PlowTO",
+  "url": "https://www.toronto.ca/services-payments/streets-parking-transportation/road-maintenance/winter-maintenance/plowto/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/radio-locator.md",
+  "id": "radio-locator",
+  "name": "Radio-Locator",
+  "url": "https://radio-locator.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/radio-sherlock.md",
+  "id": "radio-sherlock",
+  "name": "Radio-Sherlock",
+  "url": "http://dxmaps.com/search.html",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/radiocells-org.md",
+  "id": "radiocells-org",
+  "name": "Radiocells.org",
+  "url": "https://radiocells.org/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/radioid-database.md",
+  "id": "radioid-database",
+  "name": "RadioID Database",
+  "url": "https://database.radioid.net/database/search#!",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/radioreference.md",
+  "id": "radioreference",
+  "name": "RadioReference",
+  "url": "https://www.radioreference.com/apps/db/",
+  "category": "geolocation",
+  "mp": "low"
+ }
+]

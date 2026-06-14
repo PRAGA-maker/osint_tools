@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/tciputils-com-email-test.md",
+  "id": "tciputils-com-email-test",
+  "name": "TCIPUTILS.com Email Test",
+  "url": "http://www.tcpiputils.com/email-test",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/thatsthem.md",
+  "id": "thatsthem",
+  "name": "ThatsThem",
+  "url": "https://thatsthem.com/reverse-email-lookup",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/theharvester.md",
+  "id": "theharvester",
+  "name": "theHarvester",
+  "url": "https://github.com/laramies/theHarvester",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/toofr.md",
+  "id": "toofr",
+  "name": "Toofr",
+  "url": "https://www.toofr.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/tracefind-info.md",
+  "id": "tracefind-info",
+  "name": "tracefind.info",
+  "url": "https://tracefind.info/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/trocker-chrome-google-com.md",
+  "id": "trocker-chrome-google-com",
+  "name": "trocker (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/trocker/bjojfeillmmoeadgobbcknkgdkngbcdb?authuser=1",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/trockerapp-addons-mozilla-org.md",
+  "id": "trockerapp-addons-mozilla-org",
+  "name": "trockerapp (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/trockerapp/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/trumail.md",
+  "id": "trumail",
+  "name": "Trumail",
+  "url": "https://trumail.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/tuta-com.md",
+  "id": "tuta-com",
+  "name": "tuta.com",
+  "url": "https://tuta.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/tutanota.md",
+  "id": "tutanota",
+  "name": "Tutanota",
+  "url": "https://tutanota.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/usersearch-ai.md",
+  "id": "usersearch-ai",
+  "name": "usersearch.ai",
+  "url": "https://usersearch.ai/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/validateemailaddress-org.md",
+  "id": "validateemailaddress-org",
+  "name": "validateemailaddress.org",
+  "url": "https://validateemailaddress.org/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/venacus.md",
+  "id": "venacus",
+  "name": "Venacus",
+  "url": "https://venacus.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/verify-an-email-address-mailtester.md",
+  "id": "verify-an-email-address-mailtester",
+  "name": "Verify an email address - Mailtester",
+  "url": "http://www.mailtester.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/verify-email.md",
+  "id": "verify-email",
+  "name": "Verify Email",
+  "url": "http://verify-email.org",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/verify-email-2.md",
+  "id": "verify-email-2",
+  "name": "Verify Email",
+  "url": "https://verify-email.org/",
+  "category": "email",
+  "mp": "high"
+ }
+]

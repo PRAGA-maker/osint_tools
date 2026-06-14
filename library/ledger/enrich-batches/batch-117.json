@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/insfo-ig-follower-export-chrome-google-com.md",
+  "id": "insfo-ig-follower-export-chrome-google-com",
+  "name": "insfo ig follower export (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/insfo-ig-follower-export/bckleejkdhlponanidmjfjdigpahlado/related",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin/inspy.md",
+  "id": "inspy",
+  "name": "InSpy",
+  "url": "https://github.com/jobroche/InSpy",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/insta-timestamp-github-com.md",
+  "id": "insta-timestamp-github-com",
+  "name": "insta timestamp (github.com)",
+  "url": "https://github.com/stegers/insta-timestamp",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instadp-instagram-downloader.md",
+  "id": "instadp-instagram-downloader",
+  "name": "Instadp: Instagram downloader",
+  "url": "https://instadp.org",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instadp-search-profile-pictures.md",
+  "id": "instadp-search-profile-pictures",
+  "name": "Instadp search profile pictures",
+  "url": "https://www.instadp.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-analyzer-and-viewer.md",
+  "id": "instagram-analyzer-and-viewer",
+  "name": "Instagram analyzer and viewer",
+  "url": "https://gramho.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-crawler-gitgub.md",
+  "id": "instagram-crawler-gitgub",
+  "name": "Instagram Crawler - Gitgub",
+  "url": "https://github.com/hehpollon/instagram-crawler",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-deep-photo-search-engine.md",
+  "id": "instagram-deep-photo-search-engine",
+  "name": "Instagram Deep Photo Search Engine",
+  "url": "https://cse.google.com/cse?cx=017261104271573007538:ffk_jpt64gy",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-location.md",
+  "id": "instagram-location",
+  "name": "Instagram location",
+  "url": "https://www.instagram.com/explore/locations",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-monitor.md",
+  "id": "instagram-monitor",
+  "name": "instagram_monitor",
+  "url": "https://github.com/misiektoja/instagram_monitor",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-online-viewer-picbear.md",
+  "id": "instagram-online-viewer-picbear",
+  "name": "Instagram Online Viewer | Picbear",
+  "url": "http://picbear.club",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-reddit-and-snapchat.md",
+  "id": "instagram-reddit-and-snapchat",
+  "name": "Instagram, Reddit & Snapchat",
+  "url": "https://one-plus.github.io/Instagram",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-search.md",
+  "id": "instagram-search",
+  "name": "Instagram Search",
+  "url": "http://www.gramfeed.com/instagram/search",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-search-engine.md",
+  "id": "instagram-search-engine",
+  "name": "Instagram Search Engine",
+  "url": "https://mulpix.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-tool-inteltechniques-com.md",
+  "id": "instagram-tool-inteltechniques-com",
+  "name": "Instagram Tool - IntelTechniques.com",
+  "url": "https://inteltechniques.com/osint/instagram.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-user-id.md",
+  "id": "instagram-user-id",
+  "name": "Instagram User ID",
+  "url": "https://commentpicker.com/instagram-user-id.php",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

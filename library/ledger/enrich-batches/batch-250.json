@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/google-code.md",
+  "id": "google-code",
+  "name": "Google Code",
+  "url": "https://code.google.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-hack-attack.md",
+  "id": "google-com-hack-attack",
+  "name": "\\*.Google.com Hack Attack",
+  "url": "https://cse.google.com/cse/publicurl?cx=017648920863780530960:lddgpbzqgoi",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-cse-instances-search-engine.md",
+  "id": "google-cse-instances-search-engine",
+  "name": "Google CSE instances Search Engine",
+  "url": "https://cse.google.com/cse?cx=009462381166450434430:vggeu3dhhgg#gsc.tab=0",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-custom-search.md",
+  "id": "google-custom-search",
+  "name": "Google Custom Search",
+  "url": "http://www.google.com/cse",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-tools/google-custom-search-engine.md",
+  "id": "google-custom-search-engine",
+  "name": "Google Custom Search Engine",
+  "url": "https://cse.google.com/cse/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-domain-hacker.md",
+  "id": "google-domain-hacker",
+  "name": "Google Domain Hacker",
+  "url": "https://cse.google.com/cse/publicurl?cx=005797772976587943970:ca2hiy6hmri",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-dork-cheatsheet.md",
+  "id": "google-dork-cheatsheet",
+  "name": "Google Dork Cheatsheet",
+  "url": "https://github.com/robyfirnandoyusuf/Google-Dork-Cheatsheet",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-drive-folder-search-engine.md",
+  "id": "google-drive-folder-search-engine",
+  "name": "Google Drive Folder Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:nwzqlcysx_w",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-ftp-search.md",
+  "id": "google-ftp-search",
+  "name": "Google FTP Search",
+  "url": "https://cse.google.com/cse/home?cx=014863114814409449623:jc-vjhl_c5g",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-engine-guides/google-guide-cheat-sheet.md",
+  "id": "google-guide-cheat-sheet",
+  "name": "Google Guide Cheat Sheet",
+  "url": "https://www.googleguide.com/help/calculator.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-engine-guides/google-hacking-database.md",
+  "id": "google-hacking-database",
+  "name": "Google Hacking Database",
+  "url": "https://www.exploit-db.com/google-hacking-database",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-minus-google-search-engine.md",
+  "id": "google-minus-google-search-engine",
+  "name": "Google Minus Google Search Engine",
+  "url": "http://www.startupbin.com/google-google",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/google-news-search.md",
+  "id": "google-news-search",
+  "name": "Google News Search",
+  "url": "https://news.google.com/news/advanced_news_search?",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/google-scholar.md",
+  "id": "google-scholar",
+  "name": "Google Scholar",
+  "url": "https://scholar.google.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-engine-guides/google-search-operators-guide.md",
+  "id": "google-search-operators-guide",
+  "name": "Google Search Operators Guide",
+  "url": "https://www.googleguide.com/advanced_operators_reference.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-shopping-search-engine.md",
+  "id": "google-shopping-search-engine",
+  "name": "Google Shopping Search Engine",
+  "url": "https://www.google.com/shopping",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

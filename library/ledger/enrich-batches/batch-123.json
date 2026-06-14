@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/onli-vk-ru.md",
+  "id": "onli-vk-ru",
+  "name": "onli-vk.ru",
+  "url": "https://onli-vk.ru/pivatfriends.php?id=12345",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/opinioncrawl.md",
+  "id": "opinioncrawl",
+  "name": "OpinionCrawl",
+  "url": "http://www.opinioncrawl.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/other-social-networks/orkut-brazil.md",
+  "id": "orkut-brazil",
+  "name": "Orkut (Brazil)",
+  "url": "https://orkut.google.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osi-ig.md",
+  "id": "osi-ig",
+  "name": "osi.ig",
+  "url": "https://github.com/th3unkn0n/osi.ig",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osint-and-socmint-tooling.md",
+  "id": "osint-and-socmint-tooling",
+  "name": "OSINT & SOCMINT Tooling",
+  "url": "https://osint.support/chrome-extensions/2019/09/29/osint-socmint-tooling.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osint-github-com-2.md",
+  "id": "osint-github-com-2",
+  "name": "osint (github.com)",
+  "url": "https://github.com/eenblam/osint",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osint-tactical.md",
+  "id": "osint-tactical",
+  "name": "OSINT Tactical",
+  "url": "https://github.com/C3n7ral051nt4g3ncy",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osintcombine-com.md",
+  "id": "osintcombine-com",
+  "name": "osintcombine.com",
+  "url": "https://www.osintcombine.com/post/bluesky-osint-guide",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osintcombine-com-2.md",
+  "id": "osintcombine-com-2",
+  "name": "osintcombine.com",
+  "url": "https://www.osintcombine.com/post/let-s-get-on-with-mastodon",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osintdojo-com.md",
+  "id": "osintdojo-com",
+  "name": "osintdojo.com",
+  "url": "https://www.osintdojo.com/diagrams/pinterest",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/instagram/osintgram.md",
+  "id": "osintgram",
+  "name": "Osintgram",
+  "url": "https://github.com/Datalux/Osintgram",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osintgraph.md",
+  "id": "osintgraph",
+  "name": "Osintgraph",
+  "url": "https://github.com/XD-MHLOO/Osintgraph",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osintnova.md",
+  "id": "osintnova",
+  "name": "OSINTNova",
+  "url": "https://app.osintnova.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osintteam-blog.md",
+  "id": "osintteam-blog",
+  "name": "osintteam.blog",
+  "url": "https://osintteam.blog/using-instagram-for-open-source-intelligence-18760c27c32a",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osintteam-blog-2.md",
+  "id": "osintteam-blog-2",
+  "name": "osintteam.blog",
+  "url": "https://osintteam.blog/linkedin-osint-tools-for-osint-investigators-55e91e7c3d43",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/osome-iu-edu.md",
+  "id": "osome-iu-edu",
+  "name": "osome.iu.edu",
+  "url": "https://osome.iu.edu/tools/mastodon/#",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

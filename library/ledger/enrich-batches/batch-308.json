@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/wordlist/cewl.md",
+  "id": "cewl",
+  "name": "CeWL",
+  "url": "https://github.com/digininja/CeWL",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/chart-js.md",
+  "id": "chart-js",
+  "name": "Chart.js",
+  "url": "http://www.chartjs.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/chartblocks.md",
+  "id": "chartblocks",
+  "name": "chartblocks",
+  "url": "http://www.chartblocks.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/chatsecure.md",
+  "id": "chatsecure",
+  "name": "Chatsecure",
+  "url": "https://chatsecure.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/cheat-sh.md",
+  "id": "cheat-sh",
+  "name": "Cheat\u2024sh",
+  "url": "https://github.com/chubin/cheat.sh",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/checkphish-ai.md",
+  "id": "checkphish-ai",
+  "name": "Checkphish.ai",
+  "url": "https://checkphish.ai/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/cipherstick.md",
+  "id": "cipherstick",
+  "name": "Cipherstick",
+  "url": "https://cipherstick.tech",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/circos.md",
+  "id": "circos",
+  "name": "Circos",
+  "url": "http://circos.ca",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/barcodes-qr/clearimage-barcode-reader.md",
+  "id": "clearimage-barcode-reader",
+  "name": "ClearImage Barcode Reader",
+  "url": "https://online-barcode-reader.inliteresearch.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/code-repository-google-cse.md",
+  "id": "code-repository-google-cse",
+  "name": "Code Repository Google CSE",
+  "url": "https://cipher387.github.io/code_repository_google_custom_search_engines/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/code-understanding-tools-list.md",
+  "id": "code-understanding-tools-list",
+  "name": "Code understanding tools list",
+  "url": "https://github.com/cipher387/code-understanding-tools",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/codepen.md",
+  "id": "codepen",
+  "name": "CodePen",
+  "url": "https://codepen.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/codesandbox.md",
+  "id": "codesandbox",
+  "name": "Codesandbox",
+  "url": "https://codesandbox.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/columbus-project.md",
+  "id": "columbus-project",
+  "name": "Columbus Project",
+  "url": "https://github.com/elmasy-com/columbus",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/compiler-explorer.md",
+  "id": "compiler-explorer",
+  "name": "Compiler Explorer",
+  "url": "https://godbolt.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/convert-text-to-image-file.md",
+  "id": "convert-text-to-image-file",
+  "name": "Convert text to image file",
+  "url": "https://text2image.com/en/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

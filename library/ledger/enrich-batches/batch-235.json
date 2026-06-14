@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/company-profiles/vault.md",
+  "id": "vault",
+  "name": "Vault",
+  "url": "https://vault.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/viking-rifle-series-shooter-live-results.md",
+  "id": "viking-rifle-series-shooter-live-results",
+  "name": "Viking Rifle Series Shooter Live Results",
+  "url": "https://vikingrifleseries.caspio.com/dp/c8ac5000f29041f935cf42b6a641",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/virtualglobetrotting-com.md",
+  "id": "virtualglobetrotting-com",
+  "name": "Virtualglobetrotting.com",
+  "url": "http://virtualglobetrotting.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/us-voter-records/voter-registration-data.md",
+  "id": "voter-registration-data",
+  "name": "Voter Registration Data",
+  "url": "https://www.sos.secretary.state.gov/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/whaleslide.md",
+  "id": "whaleslide",
+  "name": "WhaleSlide",
+  "url": "https://whaleslide.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/whitepages-reverse-address-search.md",
+  "id": "whitepages-reverse-address-search",
+  "name": "Whitepages - Reverse Address Search",
+  "url": "https://www.411.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/worcester-ma-employee-gross-pay.md",
+  "id": "worcester-ma-employee-gross-pay",
+  "name": "Worcester MA Employee Gross Pay",
+  "url": "https://c0acu481.caspio.com/dp/e0536000108787410ed749fdb240",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/world-legal-information-institute.md",
+  "id": "world-legal-information-institute",
+  "name": "World Legal Information Institute",
+  "url": "https://worldlii.org",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/www-infogo-gov-on-ca-infogo-home-html.md",
+  "id": "www-infogo-gov-on-ca-infogo-home-html",
+  "name": "www.infogo.gov.on.ca/infogo/home.html",
+  "url": "https://www.infogo.gov.on.ca/infogo/home.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/employee-profiles-and-resumes/xing.md",
+  "id": "xing",
+  "name": "XING",
+  "url": "https://www.xing.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/xrefer.md",
+  "id": "xrefer",
+  "name": "XRefer",
+  "url": "https://www.xrefer.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/york-city-pa-compensation.md",
+  "id": "york-city-pa-compensation",
+  "name": "York City PA Compensation",
+  "url": "https://b2.caspio.com/dp/0a92100001903125816c4d34a37a",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/york-county-va-2017-public-salaries.md",
+  "id": "york-county-va-2017-public-salaries",
+  "name": "York County VA 2017 Public Salaries",
+  "url": "https://b2.caspio.com/dp/0a921000b12e238357df42e7affc",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/youcontrol.md",
+  "id": "youcontrol",
+  "name": "YouControl",
+  "url": "https://youcontrol.com.ua/en/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/zendy-io.md",
+  "id": "zendy-io",
+  "name": "Zendy.io",
+  "url": "https://zendy.io",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/zillow.md",
+  "id": "zillow",
+  "name": "Zillow",
+  "url": "https://www.zillow.com/",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

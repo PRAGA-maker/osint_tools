@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/wheredoesthislinkgo-modified-url-expander.md",
+  "id": "wheredoesthislinkgo-modified-url-expander",
+  "name": "Wheredoesthislinkgo Modified URL Expander",
+  "url": "http://www.wheredoesthislinkgo.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/wolfram-alpha-personal-analytics.md",
+  "id": "wolfram-alpha-personal-analytics",
+  "name": "Wolfram Alpha Personal Analytics",
+  "url": "http://www.wolframalpha.com/facebook/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/xifr-addons-mozilla-org.md",
+  "id": "xifr-addons-mozilla-org",
+  "name": "xifr (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/xifr/?src=search",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/yotpo.md",
+  "id": "yotpo",
+  "name": "Yotpo",
+  "url": "https://www.yotpo.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/zamzar-online-file-converter.md",
+  "id": "zamzar-online-file-converter",
+  "name": "Zamzar Online File Converter",
+  "url": "https://www.zamzar.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/aa419-fake-sites-database.md",
+  "id": "aa419-fake-sites-database",
+  "name": "aa419 Fake Sites Database",
+  "url": "https://db.aa419.org/fakebankslist.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/azure-gcp-discovery/aadinternals.md",
+  "id": "aadinternals",
+  "name": "AADInternals",
+  "url": "https://github.com/Gerenios/AADInternals",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/accuranker.md",
+  "id": "accuranker",
+  "name": "Accuranker",
+  "url": "https://www.accuranker.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ahrefs.md",
+  "id": "ahrefs",
+  "name": "ahrefs",
+  "url": "https://ahrefs.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/alexa.md",
+  "id": "alexa",
+  "name": "Alexa",
+  "url": "https://www.alexa.com/siteinfo",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/alexa-site-statistics.md",
+  "id": "alexa-site-statistics",
+  "name": "Alexa Site Statistics",
+  "url": "https://alexa.amazon.com/about",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/alexa-top-500-global-sites.md",
+  "id": "alexa-top-500-global-sites",
+  "name": "Alexa Top 500 Global Sites",
+  "url": "https://alexa.amazon.com/about",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/alienvault-open-threat-exchange.md",
+  "id": "alienvault-open-threat-exchange",
+  "name": "AlienVault Open Threat Exchange",
+  "url": "https://otx.alienvault.com/browse/pulses/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/alienvault-otx.md",
+  "id": "alienvault-otx",
+  "name": "AlienVault OTX",
+  "url": "https://otx.alienvault.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/altdns.md",
+  "id": "altdns",
+  "name": "AltDNS",
+  "url": "https://github.com/infosec-au/altdns",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/saas-footprinting/amass.md",
+  "id": "amass",
+  "name": "Amass",
+  "url": "https://github.com/owasp-amass/amass",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

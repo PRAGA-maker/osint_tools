@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/placespotter-com.md",
+  "id": "placespotter-com",
+  "name": "placespotter.com",
+  "url": "https://www.placespotter.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/playboard-co.md",
+  "id": "playboard-co",
+  "name": "playboard.co",
+  "url": "https://playboard.co/en/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/playlists-at.md",
+  "id": "playlists-at",
+  "name": "playlists.at",
+  "url": "https://playlists.at/youtube/search/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/positive-security.md",
+  "id": "positive-security",
+  "name": "positive.security",
+  "url": "https://positive.security/blog/video-depixelation",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/preservetube-com.md",
+  "id": "preservetube-com",
+  "name": "preservetube.com",
+  "url": "https://preservetube.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/videos/analyze-record/print-youtube-storyboard-instructions.md",
+  "id": "print-youtube-storyboard-instructions",
+  "name": "Print YouTube StoryBoard Instructions",
+  "url": "https://www.labnol.org/internet/print-youtube-video/28217",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/profileimageintel.md",
+  "id": "profileimageintel",
+  "name": "ProfileImageIntel",
+  "url": "https://profileimageintel.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/quiteaplaylist-com.md",
+  "id": "quiteaplaylist-com",
+  "name": "quiteaplaylist.com",
+  "url": "https://quiteaplaylist.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/documents/search/recap-court-doc-repo.md",
+  "id": "recap-court-doc-repo",
+  "name": "RECAP Court Doc Repo",
+  "url": "https://archive.recapthelaw.org/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/remove-background.md",
+  "id": "remove-background",
+  "name": "Remove Background",
+  "url": "https://www.remove.bg",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/remove-photos.md",
+  "id": "remove-photos",
+  "name": "remove.photos",
+  "url": "https://remove.photos/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/replicate-com.md",
+  "id": "replicate-com",
+  "name": "replicate.com",
+  "url": "https://replicate.com/microsoft/bringing-old-photos-back-to-life",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/reverse-image-search.md",
+  "id": "reverse-image-search",
+  "name": "Reverse Image Search",
+  "url": "https://www.reverse-image-search.org",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/reverse-image-search-chrome-google-com.md",
+  "id": "reverse-image-search-chrome-google-com",
+  "name": "reverse image search (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/reverse-image-search/clijmpalajoikbhdhgmpanldenogllaj",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/reverse-image-search-dmtr-addons-mozilla-org.md",
+  "id": "reverse-image-search-dmtr-addons-mozilla-org",
+  "name": "reverse image search dmtr (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-GB/firefox/addon/reverse-image-search-dmtr/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/reveye-reverse-image-sear-chrome-google-com.md",
+  "id": "reveye-reverse-image-sear-chrome-google-com",
+  "name": "reveye reverse image sear (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/reveye-reverse-image-sear/keaaclcjhehbbapnphnmpiklalfhelgf?hl=en",
+  "category": "image-video-face",
+  "mp": "high"
+ }
+]

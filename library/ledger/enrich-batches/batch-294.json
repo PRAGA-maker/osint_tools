@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/yt-dlp-2.md",
+  "id": "yt-dlp-2",
+  "name": "yt-dlp",
+  "url": "https://pypi.org/project/yt-dlp/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/ytcs.md",
+  "id": "ytcs",
+  "name": "Ytcs",
+  "url": "https://github.com/lettapp/ytcs",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/ytgrep.md",
+  "id": "ytgrep",
+  "name": "YtGrep",
+  "url": "https://pypi.org/project/ytgrep/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/zspotify.md",
+  "id": "zspotify",
+  "name": "Zspotify",
+  "url": "https://github.com/Footsiefat/zspotify",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/training-ctf/cyber-intelligence-toolkit-oryon.md",
+  "id": "cyber-intelligence-toolkit-oryon",
+  "name": "Cyber Intelligence Toolkit (oryon)",
+  "url": "https://github.com/oryon-osint/cyber-intelligence-toolkit",
+  "category": "training-ctf",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/training-ctf/gralhix-osint-exercises.md",
+  "id": "gralhix-osint-exercises",
+  "name": "Gralhix OSINT Exercises",
+  "url": "https://gralhix.com/list-of-osint-exercises",
+  "category": "training-ctf",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/training-ctf/non-typical-osint-guide.md",
+  "id": "non-typical-osint-guide",
+  "name": "Non-typical OSINT Guide",
+  "url": "https://github.com/OffcierCia/non-typical-OSINT-guide",
+  "category": "training-ctf",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/training-ctf/the-osint-field-manual-tofm.md",
+  "id": "the-osint-field-manual-tofm",
+  "name": "The OSINT Field Manual (TOFM)",
+  "url": "https://github.com/tracelabs/tofm",
+  "category": "training-ctf",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/awesome-translations-list.md",
+  "id": "awesome-translations-list",
+  "name": "Awesome Translations list",
+  "url": "https://github.com/mbiesiad/awesome-translations#tools",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/bing-translate.md",
+  "id": "bing-translate",
+  "name": "Bing Translate",
+  "url": "https://translator.bing.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/cambridge-dictionary.md",
+  "id": "cambridge-dictionary",
+  "name": "Cambridge Dictionary",
+  "url": "https://dictionary.cambridge.org/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/deepl-2.md",
+  "id": "deepl-2",
+  "name": "DeepL",
+  "url": "https://www.deepl.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/deepl-translator.md",
+  "id": "deepl-translator",
+  "name": "DeepL Translator",
+  "url": "https://www.deepl.com/en/translator",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/free-translation.md",
+  "id": "free-translation",
+  "name": "Free Translation",
+  "url": "https://translation2.paralink.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/google-input-tools.md",
+  "id": "google-input-tools",
+  "name": "Google Input Tools",
+  "url": "https://www.google.com/inputtools/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/google-translate.md",
+  "id": "google-translate",
+  "name": "Google Translate",
+  "url": "https://translate.google.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ }
+]

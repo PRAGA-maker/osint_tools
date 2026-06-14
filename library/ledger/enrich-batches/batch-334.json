@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/newsblur.md",
+  "id": "newsblur",
+  "name": "Newsblur",
+  "url": "http://newsblur.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/omeareader.md",
+  "id": "omeareader",
+  "name": "OmeaReader",
+  "url": "http://www.jetbrains.com/omea/reader",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/onwebchange.md",
+  "id": "onwebchange",
+  "name": "OnWebChange",
+  "url": "http://onwebchange.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/rss-feed-reader.md",
+  "id": "rss-feed-reader",
+  "name": "RSS Feed Reader",
+  "url": "https://chrome.google.com/webstore/detail/rss-feed-reader/pnjaodmkngahhkoihejjehlcdlnohgmp",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/rss-micro.md",
+  "id": "rss-micro",
+  "name": "RSS Micro",
+  "url": "http://www.rssmicro.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/rss-search-engine.md",
+  "id": "rss-search-engine",
+  "name": "RSS Search Engine",
+  "url": "http://ctrlq.org/rss",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/rss-search-hub.md",
+  "id": "rss-search-hub",
+  "name": "RSS Search Hub",
+  "url": "http://www.rsssearchhub.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/rssowl.md",
+  "id": "rssowl",
+  "name": "RSSOwl",
+  "url": "http://www.rssowl.org",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/selfoss.md",
+  "id": "selfoss",
+  "name": "Selfoss",
+  "url": "http://selfoss.aditu.de",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/talkwalker.md",
+  "id": "talkwalker",
+  "name": "Talkwalker",
+  "url": "http://www.talkwalker.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/the-old-reader.md",
+  "id": "the-old-reader",
+  "name": "The Old Reader",
+  "url": "http://theoldreader.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/versionista.md",
+  "id": "versionista",
+  "name": "versionista",
+  "url": "http://versionista.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/waybackpy-2.md",
+  "id": "waybackpy-2",
+  "name": "waybackpy",
+  "url": "https://pypi.org/project/waybackpy/",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/web-archives.md",
+  "id": "web-archives",
+  "name": "Web Archives",
+  "url": "https://github.com/dessant/web-archives",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/webreader.md",
+  "id": "webreader",
+  "name": "WebReader",
+  "url": "http://www.getwebreader.com",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/website-diff.md",
+  "id": "website-diff",
+  "name": "Website-Diff",
+  "url": "https://github.com/GeiserX/Website-Diff",
+  "category": "archives-cache",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/posteo-de.md",
+  "id": "posteo-de",
+  "name": "posteo.de",
+  "url": "https://posteo.de/en",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/privnote-com.md",
+  "id": "privnote-com",
+  "name": "privnote.com",
+  "url": "https://privnote.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/proofy.md",
+  "id": "proofy",
+  "name": "Proofy",
+  "url": "https://proofy.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/proton-me.md",
+  "id": "proton-me",
+  "name": "proton.me",
+  "url": "https://proton.me/mail",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/public-email-records.md",
+  "id": "public-email-records",
+  "name": "Public Email Records",
+  "url": "http://publicemailrecords.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-verification/reacher-demo.md",
+  "id": "reacher-demo",
+  "name": "Reacher Demo",
+  "url": "https://reacher.email",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-verification/reacher-github.md",
+  "id": "reacher-github",
+  "name": "Reacher Github",
+  "url": "https://github.com/reacherhq/check-if-email-exists",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-verification/read-notify.md",
+  "id": "read-notify",
+  "name": "Read Notify",
+  "url": "https://www.readnotify.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/readnotify.md",
+  "id": "readnotify",
+  "name": "ReadNotify",
+  "url": "http://www.readnotify.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/readnotify-com.md",
+  "id": "readnotify-com",
+  "name": "readnotify.com",
+  "url": "https://www.readnotify.com/readnotify/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/readnotify-com-2.md",
+  "id": "readnotify-com-2",
+  "name": "readnotify.com",
+  "url": "https://www.readnotify.com/readnotify/pmdoctrack.asp",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/reverse-whois.md",
+  "id": "reverse-whois",
+  "name": "Reverse Whois",
+  "url": "https://osint.sh/reversewhois/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/reversegenie.md",
+  "id": "reversegenie",
+  "name": "ReverseGenie",
+  "url": "http://www.reversegenie.com/email.php",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/robtex-com.md",
+  "id": "robtex-com",
+  "name": "Robtex.com",
+  "url": "https://www.robtex.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/scatteredsecrets-com.md",
+  "id": "scatteredsecrets-com",
+  "name": "scatteredsecrets.com",
+  "url": "https://scatteredsecrets.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/scylla-so.md",
+  "id": "scylla-so",
+  "name": "Scylla.so",
+  "url": "https://scylla.so/",
+  "category": "email",
+  "mp": "high"
+ }
+]

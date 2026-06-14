@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/evite.md",
+  "id": "evite",
+  "name": "Evite",
+  "url": "http://www.evite.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/evuln.md",
+  "id": "evuln",
+  "name": "Evuln",
+  "url": "http://evuln.com/#",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/exif-remove-chrome-google-com.md",
+  "id": "exif-remove-chrome-google-com",
+  "name": "exif remove (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/exif-remove/eamoopmkknodiipphhmfckacmigfngda",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/exif-viewer-addons-mozilla-org.md",
+  "id": "exif-viewer-addons-mozilla-org",
+  "name": "exif viewer (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/exif-viewer/?src=search",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/exif-viewer-classic-chrome-google-com.md",
+  "id": "exif-viewer-classic-chrome-google-com",
+  "name": "exif viewer classic (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/exif-viewer-classic/nafpfdcmppffipmhcpkbplhkoiekndck",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/exif-viewer-pro-chrome-google-com.md",
+  "id": "exif-viewer-pro-chrome-google-com",
+  "name": "exif viewer pro (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/exif-viewer-pro/mmbhfeiddhndihdjeganjggkmjapkffm?hl=en",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/exiftool-lucasgelfond-online.md",
+  "id": "exiftool-lucasgelfond-online",
+  "name": "exiftool.lucasgelfond.online",
+  "url": "https://exiftool.lucasgelfond.online/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/expatica.md",
+  "id": "expatica",
+  "name": "Expatica",
+  "url": "http://www.expatica.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/eyedex.md",
+  "id": "eyedex",
+  "name": "eyedex",
+  "url": "https://www.eyedex.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/fbi-information-technology-united-states.md",
+  "id": "fbi-information-technology-united-states",
+  "name": "FBI Information Technology (United States)",
+  "url": "https://www.fbi.gov/about/leadership-and-structure/information-technology",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/federal-it-dashboard-united-states.md",
+  "id": "federal-it-dashboard-united-states",
+  "name": "Federal IT Dashboard (United States)",
+  "url": "https://itdashboard.gov",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/fide.md",
+  "id": "fide",
+  "name": "FIDE",
+  "url": "https://ratings.fide.com/toplist.phtml",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/fifa.md",
+  "id": "fifa",
+  "name": "FIFA",
+  "url": "http://www.fifa.com/fifa-world-ranking",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/filesec-io.md",
+  "id": "filesec-io",
+  "name": "Filesec.io",
+  "url": "https://filesec.io/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/find-pdf-doc.md",
+  "id": "find-pdf-doc",
+  "name": "Find-pdf-doc",
+  "url": "http://www.findpdfdoc.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/fitbit.md",
+  "id": "fitbit",
+  "name": "Fitbit",
+  "url": "https://www.fitbit.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

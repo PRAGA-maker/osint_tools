@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/riskmap.md",
+  "id": "riskmap",
+  "name": "RiskMap",
+  "url": "https://www.riskmap.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/shademap.md",
+  "id": "shademap",
+  "name": "ShadeMap",
+  "url": "https://shademap.app",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/shadow-finder.md",
+  "id": "shadow-finder",
+  "name": "Shadow Finder",
+  "url": "https://github.com/bellingcat/ShadowFinder",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/shadowmap.md",
+  "id": "shadowmap",
+  "name": "ShadowMap",
+  "url": "https://app.shadowmap.org/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/site24x7-com.md",
+  "id": "site24x7-com",
+  "name": "site24x7.com",
+  "url": "https://www.site24x7.com/tools/time-stamp-converter.html",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/spot.md",
+  "id": "spot",
+  "name": "Spot",
+  "url": "https://www.findthatspot.io/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/sun-rise-noon-and-set-time-and-direction.md",
+  "id": "sun-rise-noon-and-set-time-and-direction",
+  "name": "Sun rise, noon, and set time and direction.",
+  "url": "https://sollumis.com",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/sunearthtools-com.md",
+  "id": "sunearthtools-com",
+  "name": "SunEarthTools.com",
+  "url": "https://www.sunearthtools.com",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/time-is.md",
+  "id": "time-is",
+  "name": "time.is",
+  "url": "https://time.is/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/timeanddate-com.md",
+  "id": "timeanddate-com",
+  "name": "timeanddate.com",
+  "url": "https://www.timeanddate.com/time/map/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/timeanddate-com-2.md",
+  "id": "timeanddate-com-2",
+  "name": "timeanddate.com",
+  "url": "https://www.timeanddate.com/worldclock/converter.html",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/timeanddate-com-3.md",
+  "id": "timeanddate-com-3",
+  "name": "timeanddate.com",
+  "url": "https://www.timeanddate.com/library/abbreviations/timezones/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/timejones-com.md",
+  "id": "timejones-com",
+  "name": "timejones.com",
+  "url": "https://www.timejones.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/timestamp-converter-com.md",
+  "id": "timestamp-converter-com",
+  "name": "timestamp-converter.com",
+  "url": "https://www.timestamp-converter.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/toronto-live.md",
+  "id": "toronto-live",
+  "name": "Toronto Live",
+  "url": "https://apps.esri.ca/torontolive/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/unixtime-org.md",
+  "id": "unixtime-org",
+  "name": "unixtime.org",
+  "url": "https://unixtime.org/",
+  "category": "geolocation",
+  "mp": "medium"
+ }
+]

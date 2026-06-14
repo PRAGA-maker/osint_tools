@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/unicorn-riot-discord-leaks.md",
+  "id": "unicorn-riot-discord-leaks",
+  "name": "Unicorn Riot: Discord Leaks",
+  "url": "https://discordleaks.unicornriot.ninja/discord/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/unido-statistical-databases.md",
+  "id": "unido-statistical-databases",
+  "name": "UNIDO Statistical Databases",
+  "url": "http://www.unido.org/resources/statistics/statistical-databases.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/unstats-social-indicators.md",
+  "id": "unstats-social-indicators",
+  "name": "UNStats Social Indicators",
+  "url": "http://unstats.un.org/unsd/demographic/products/socind",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/upsala-conflict-data-program.md",
+  "id": "upsala-conflict-data-program",
+  "name": "Upsala Conflict Data Program",
+  "url": "http://www.pcr.uu.se/research/UCDP",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/us-data-and-statistics.md",
+  "id": "us-data-and-statistics",
+  "name": "US Data and Statistics",
+  "url": "https://www.usa.gov/statistics",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/utah-gun-exchange.md",
+  "id": "utah-gun-exchange",
+  "name": "Utah Gun Exchange",
+  "url": "https://bloopbase.keybase.pub/LEFTHOOK/UtahGunExchanges/index.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/vizala.md",
+  "id": "vizala",
+  "name": "Vizala",
+  "url": "https://vizala.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/who-data.md",
+  "id": "who-data",
+  "name": "WHO Data",
+  "url": "http://www.who.int/gho/en",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/whosarat-com.md",
+  "id": "whosarat-com",
+  "name": "WhosaRat.com",
+  "url": "https://whosarat.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/world-bank-data.md",
+  "id": "world-bank-data",
+  "name": "World Bank Data",
+  "url": "http://data.worldbank.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/world-bank-data-2.md",
+  "id": "world-bank-data-2",
+  "name": "World Bank Data",
+  "url": "http://datatopics.worldbank.org/consumption/home",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/world-bank-doing-business.md",
+  "id": "world-bank-doing-business",
+  "name": "World Bank Doing Business",
+  "url": "http://www.doingbusiness.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/world-bank-enterprise-surveys.md",
+  "id": "world-bank-enterprise-surveys",
+  "name": "World Bank Enterprise Surveys",
+  "url": "http://www.enterprisesurveys.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/world-bank-investing-across-borders.md",
+  "id": "world-bank-investing-across-borders",
+  "name": "World Bank Investing Across Borders",
+  "url": "http://iab.worldbank.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/world-integrated-trade-solution.md",
+  "id": "world-integrated-trade-solution",
+  "name": "World Integrated Trade Solution",
+  "url": "http://wits.worldbank.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/wto-statistics.md",
+  "id": "wto-statistics",
+  "name": "WTO Statistics",
+  "url": "https://www.wto.org/english/res_e/statis_e/statis_e.htm",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

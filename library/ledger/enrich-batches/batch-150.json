@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/bloomberg-business-news.md",
+  "id": "bloomberg-business-news",
+  "name": "Bloomberg Business News",
+  "url": "http://www.bloomberg.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forum-search-engines/boardreader.md",
+  "id": "boardreader",
+  "name": "BoardReader",
+  "url": "https://boardreader.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/boards-ie.md",
+  "id": "boards-ie",
+  "name": "boards.ie",
+  "url": "https://www.boards.ie/b/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bodybuilding-com.md",
+  "id": "bodybuilding-com",
+  "name": "Bodybuilding.com",
+  "url": "https://forum.bodybuilding.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/boingboing-bbs.md",
+  "id": "boingboing-bbs",
+  "name": "BoingBoing BBS",
+  "url": "https://bbs.boingboing.net",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bootsnall.md",
+  "id": "bootsnall",
+  "name": "Bootsnall",
+  "url": "http://www.bootsnall.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bpaste.md",
+  "id": "bpaste",
+  "name": "bpaste",
+  "url": "https://bpa.st/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/brijj.md",
+  "id": "brijj",
+  "name": "Brijj",
+  "url": "http://www.brijj.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/budgettravel.md",
+  "id": "budgettravel",
+  "name": "Budgettravel",
+  "url": "http://www.budgettravel.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/built-with-flarum.md",
+  "id": "built-with-flarum",
+  "name": "Built With Flarum",
+  "url": "https://builtwithflarum.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/business-com.md",
+  "id": "business-com",
+  "name": "Business.com",
+  "url": "http://www.business.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/buzzfeed.md",
+  "id": "buzzfeed",
+  "name": "Buzzfeed",
+  "url": "http://www.buzzfeed.com/?country=us",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/buzzsumo.md",
+  "id": "buzzsumo",
+  "name": "BuzzSumo",
+  "url": "https://app.buzzsumo.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/cafemom.md",
+  "id": "cafemom",
+  "name": "CafeMom",
+  "url": "http://www.cafemom.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/reddit-communities/cama-s-reddit-search.md",
+  "id": "cama-s-reddit-search",
+  "name": "Cama's Reddit Search",
+  "url": "https://camas.github.io/reddit-search/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/care2.md",
+  "id": "care2",
+  "name": "Care2",
+  "url": "http://www.care2.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

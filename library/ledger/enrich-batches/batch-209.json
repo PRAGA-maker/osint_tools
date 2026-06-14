@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/brave-browser.md",
+  "id": "brave-browser",
+  "name": "Brave Browser",
+  "url": "https://brave.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browser-leaks.md",
+  "id": "browser-leaks",
+  "name": "Browser Leaks",
+  "url": "https://browserleaks.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browser-tests/browser-statistics.md",
+  "id": "browser-statistics",
+  "name": "Browser Statistics",
+  "url": "https://www.w3schools.com/browsers/default.asp",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browserspy-dk.md",
+  "id": "browserspy-dk",
+  "name": "BrowserSpy.dk",
+  "url": "https://browserspy.dk/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/credit-freeze.md",
+  "id": "credit-freeze",
+  "name": "Credit Freeze",
+  "url": "https://inteltechniques.com/blog/2018/09/28/complete-credit-freeze-tutorial-update/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/csi-linux.md",
+  "id": "csi-linux",
+  "name": "CSI Linux",
+  "url": "https://csilinux.com/csi-linux-downloads/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/dns-leak-test.md",
+  "id": "dns-leak-test",
+  "name": "DNS leak test",
+  "url": "https://www.dnsleaktest.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/dns-leak-tests.md",
+  "id": "dns-leak-tests",
+  "name": "DNS Leak Tests",
+  "url": "https://dnsleak.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/email-leak-tests.md",
+  "id": "email-leak-tests",
+  "name": "Email Leak Tests",
+  "url": "https://emailipleak.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/persona-creation/fake-identity-generator.md",
+  "id": "fake-identity-generator",
+  "name": "Fake Identity Generator",
+  "url": "https://backgroundchecks.org/justdeleteme/fake-identity-generator/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/persona-creation/fake-name-generator.md",
+  "id": "fake-name-generator",
+  "name": "Fake Name Generator",
+  "url": "https://www.fakenamegenerator.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/fake-us-identities.md",
+  "id": "fake-us-identities",
+  "name": "Fake US Identities",
+  "url": "https://xdd2.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/persona-creation/faker-js.md",
+  "id": "faker-js",
+  "name": "Faker.js",
+  "url": "https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/firefox-debloat.md",
+  "id": "firefox-debloat",
+  "name": "Firefox-debloat",
+  "url": "https://github.com/amq/firefox-debloat",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/tor/freenet-project-2.md",
+  "id": "freenet-project-2",
+  "name": "Freenet Project",
+  "url": "https://freenetproject.org/pages/download.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/tor/i2p-anonymous-network-2.md",
+  "id": "i2p-anonymous-network-2",
+  "name": "I2P Anonymous Network",
+  "url": "https://geti2p.net/en/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ }
+]

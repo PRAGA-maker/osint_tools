@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/antso-search-engine-china.md",
+  "id": "antso-search-engine-china",
+  "name": "Antso Search Engine (China)",
+  "url": "http://www.antso.cn",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/aol-search-databse.md",
+  "id": "aol-search-databse",
+  "name": "AOL Search Databse",
+  "url": "https://search-id.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/app-store-and-itunes-search-engine.md",
+  "id": "app-store-and-itunes-search-engine",
+  "name": "App Store and iTunes search engine",
+  "url": "https://fnd.io/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/app-store-custom-search-engine.md",
+  "id": "app-store-custom-search-engine",
+  "name": "App Store Custom Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=006205189065513216365:aqogom-kfne",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/appropedia.md",
+  "id": "appropedia",
+  "name": "Appropedia",
+  "url": "http://www.appropedia.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/arabo-com.md",
+  "id": "arabo-com",
+  "name": "Arabo.com",
+  "url": "http://arabo.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/archiplanet.md",
+  "id": "archiplanet",
+  "name": "Archiplanet",
+  "url": "http://archiplanet.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/argumentsearch-com.md",
+  "id": "argumentsearch-com",
+  "name": "Argumentsearch.com",
+  "url": "http://argumentsearch.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/aristotele-search-engine-italy.md",
+  "id": "aristotele-search-engine-italy",
+  "name": "Aristotele Search Engine (Italy)",
+  "url": "https://www.aristotele.net/altri-motori-di-ricerca/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/arkansas-medical-license-search.md",
+  "id": "arkansas-medical-license-search",
+  "name": "Arkansas Medical License Search",
+  "url": "http://www.armedicalboard.org/public/verify/default.aspx",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/arxiv-org.md",
+  "id": "arxiv-org",
+  "name": "arXiv.org",
+  "url": "https://arxiv.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/asian-development-bank.md",
+  "id": "asian-development-bank",
+  "name": "Asian Development Bank",
+  "url": "https://www.adb.org/what-we-do/data/main",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/asic-business-name-search.md",
+  "id": "asic-business-name-search",
+  "name": "ASIC Business Name Search",
+  "url": "https://connectonline.asic.gov.au/RegistrySearch",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ask-3.md",
+  "id": "ask-3",
+  "name": "Ask",
+  "url": "https://www.search.ask.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ask-metafilter.md",
+  "id": "ask-metafilter",
+  "name": "Ask Metafilter",
+  "url": "http://ask.metafilter.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/athlinks.md",
+  "id": "athlinks",
+  "name": "Athlinks",
+  "url": "https://www.athlinks.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

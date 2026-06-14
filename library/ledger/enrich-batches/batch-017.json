@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/modest-maps.md",
+  "id": "modest-maps",
+  "name": "Modest Maps",
+  "url": "http://modestmaps.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mooncalc.md",
+  "id": "mooncalc",
+  "name": "MoonCalc",
+  "url": "https://www.mooncalc.org nasa's heasarc tools",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/naver-korean.md",
+  "id": "naver-korean",
+  "name": "Naver (Korean)",
+  "url": "https://map.naver.com/p/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/nexrad-data-inventory-search.md",
+  "id": "nexrad-data-inventory-search",
+  "name": "NEXRAD Data Inventory Search",
+  "url": "https://www.ncdc.noaa.gov/nexradinv/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/nga-geoint.md",
+  "id": "nga-geoint",
+  "name": "NGA GEOINT",
+  "url": "https://github.com/ngageoint",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/open-street-map.md",
+  "id": "open-street-map",
+  "name": "Open Street Map",
+  "url": "http://www.openstreetmap.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mobile-coverage/opencellid.md",
+  "id": "opencellid",
+  "name": "OpenCelliD",
+  "url": "https://opencellid.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/openinfrastructuremap.md",
+  "id": "openinfrastructuremap",
+  "name": "OpenInfrastructureMap",
+  "url": "https://openinframap.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/openlayers.md",
+  "id": "openlayers",
+  "name": "OpenLayers",
+  "url": "http://openlayers.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/openrailwaymap-2.md",
+  "id": "openrailwaymap-2",
+  "name": "OpenRailwayMap",
+  "url": "https://www.openrailwaymap.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mobile-coverage/opensignal.md",
+  "id": "opensignal",
+  "name": "OpenSignal",
+  "url": "https://www.opensignal.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/openstreetcam.md",
+  "id": "openstreetcam",
+  "name": "OpenStreetCam",
+  "url": "https://kartaview.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/openstreetmap.md",
+  "id": "openstreetmap",
+  "name": "OpenStreetMap",
+  "url": "https://www.openstreetmap.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/openstreetmap-2.md",
+  "id": "openstreetmap-2",
+  "name": "OpenStreetMap",
+  "url": "https://www.openstreetmap.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/overpass-turbo.md",
+  "id": "overpass-turbo",
+  "name": "Overpass Turbo",
+  "url": "https://overpass-turbo.eu/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/peakfinder.md",
+  "id": "peakfinder",
+  "name": "Peakfinder",
+  "url": "https://www.peakfinder.org",
+  "category": "geolocation",
+  "mp": "high"
+ }
+]

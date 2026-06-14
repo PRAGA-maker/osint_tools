@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/topuniversities.md",
+  "id": "topuniversities",
+  "name": "Topuniversities",
+  "url": "http://www.topuniversities.com/university-rankings",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/totalbeauty.md",
+  "id": "totalbeauty",
+  "name": "Totalbeauty",
+  "url": "http://www.totalbeauty.com/reviews",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/trademarkia.md",
+  "id": "trademarkia",
+  "name": "Trademarkia",
+  "url": "http://www.trademarkia.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/trulia-united-states.md",
+  "id": "trulia-united-states",
+  "name": "Trulia (United States)",
+  "url": "http://www.trulia.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/tviv.md",
+  "id": "tviv",
+  "name": "Tviv",
+  "url": "http://tviv.org/Main_Page",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/twellow.md",
+  "id": "twellow",
+  "name": "Twellow",
+  "url": "http://www.twellow.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/uk-law-society.md",
+  "id": "uk-law-society",
+  "name": "UK Law Society",
+  "url": "http://solicitors.lawsociety.org.uk",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/uk-national-archives.md",
+  "id": "uk-national-archives",
+  "name": "UK National Archives",
+  "url": "https://discovery.nationalarchives.gov.uk/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/uk-patent-search.md",
+  "id": "uk-patent-search",
+  "name": "UK Patent Search",
+  "url": "https://www.gov.uk/search-for-patent",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ukons-standard-occupational-classifications-united-kingdom.md",
+  "id": "ukons-standard-occupational-classifications-united-kingdom",
+  "name": "UKONS Standard Occupational Classifications (United Kingdom)",
+  "url": "https://webarchive.nationalarchives.gov.uk/20160106024159/http://www.ons.gov.uk/ons/guide-method/classifications/current-standard-classifications/soc2010/index.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/united-states-marine-corps-occupation-codes.md",
+  "id": "united-states-marine-corps-occupation-codes",
+  "name": "United States Marine Corps \u2013 Occupation Codes",
+  "url": "https://en.wikipedia.org/wiki/List_of_United_States_Marine_Corps_MOS",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/url-shorteners-search.md",
+  "id": "url-shorteners-search",
+  "name": "URL Shorteners Search",
+  "url": "https://shorteners.grayhatwarfare.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/us-census-bureau.md",
+  "id": "us-census-bureau",
+  "name": "US Census Bureau",
+  "url": "http://www.census.gov/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/us-department-of-housing-and-urban-development.md",
+  "id": "us-department-of-housing-and-urban-development",
+  "name": "US Department of Housing and Urban Development",
+  "url": "https://www.huduser.gov/portal/home.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/us-dod-function-codes-united-states.md",
+  "id": "us-dod-function-codes-united-states",
+  "name": "US DOD Function Codes (United States)",
+  "url": "http://prhome.defense.gov/Portals/52/Documents/RFM/TFPRQ/Docs/DoD%20Function%20Codes%20-%202009.pdf",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/us-gov-publishing-office-fdsys.md",
+  "id": "us-gov-publishing-office-fdsys",
+  "name": "US Gov Publishing Office - FDsys",
+  "url": "https://www.gpo.gov/fdsys/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

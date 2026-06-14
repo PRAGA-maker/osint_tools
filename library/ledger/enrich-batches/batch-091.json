@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/quicksold-co-uk.md",
+  "id": "quicksold-co-uk",
+  "name": "quicksold.co.uk",
+  "url": "https://quicksold.co.uk/area-information",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ratemyteachers-com.md",
+  "id": "ratemyteachers-com",
+  "name": "ratemyteachers.com",
+  "url": "http://uk.ratemyteachers.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rbo-gov-ie.md",
+  "id": "rbo-gov-ie",
+  "name": "rbo.gov.ie",
+  "url": "https://rbo.gov.ie/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rcvs-org-uk.md",
+  "id": "rcvs-org-uk",
+  "name": "rcvs.org.uk",
+  "url": "https://findavet.rcvs.org.uk/home/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rejestr-sprawc-w-przest-pstw-na-tle-seksualnym.md",
+  "id": "rejestr-sprawc-w-przest-pstw-na-tle-seksualnym",
+  "name": "Rejestr Sprawc\u00f3w Przest\u0119pstw na Tle Seksualnym",
+  "url": "https://rps.ms.gov.pl/pl-PL/Public#/home",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/residential.md",
+  "id": "residential",
+  "name": "Residential",
+  "url": "http://www.voa.gov.uk/cti/InitS.asp?lcn=0",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/residential-rental-properties.md",
+  "id": "residential-rental-properties",
+  "name": "Residential Rental Properties",
+  "url": "https://www.gov.uk/check-register-rents",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/responsesource-com.md",
+  "id": "responsesource-com",
+  "name": "responsesource.com",
+  "url": "https://profiles.responsesource.com/search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rhode-island.md",
+  "id": "rhode-island",
+  "name": "Rhode Island",
+  "url": "https://doc.ri.gov/family-visitors/inmate-search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rias-org-uk.md",
+  "id": "rias-org-uk",
+  "name": "rias.org.uk",
+  "url": "https://www.rias.org.uk/for-the-public/practices",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rics-org.md",
+  "id": "rics-org",
+  "name": "rics.org",
+  "url": "https://www.rics.org/networking/find-a-member",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rightmove-co-uk.md",
+  "id": "rightmove-co-uk",
+  "name": "rightmove.co.uk",
+  "url": "https://www.rightmove.co.uk/house-prices.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rip-ie.md",
+  "id": "rip-ie",
+  "name": "rip.ie",
+  "url": "https://rip.ie/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rivoters-com.md",
+  "id": "rivoters-com",
+  "name": "Rivoters.com",
+  "url": "https://rivoters.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/romania.md",
+  "id": "romania",
+  "name": "Romania",
+  "url": "https://portal.onrc.ro/ONRCPortalWeb/ONRCPortal.portal",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/rootsweb-2.md",
+  "id": "rootsweb-2",
+  "name": "RootsWeb",
+  "url": "https://home.rootsweb.com",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

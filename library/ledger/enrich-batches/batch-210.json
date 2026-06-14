@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/intel-techniques-hiding-from-the-internet.md",
+  "id": "intel-techniques-hiding-from-the-internet",
+  "name": "Intel Techniques - Hiding from the Internet",
+  "url": "https://inteltechniques.com/data/workbook.pdf",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/ip-dns-leak-detection.md",
+  "id": "ip-dns-leak-detection",
+  "name": "IP / DNS Leak Detection",
+  "url": "https://ipleak.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/proxy-tests/ip2proxy.md",
+  "id": "ip2proxy",
+  "name": "IP2Proxy",
+  "url": "https://www.ip2proxy.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/ipv6-leak-tests.md",
+  "id": "ipv6-leak-tests",
+  "name": "IPv6 Leak Tests",
+  "url": "https://ipv6leak.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/jondonym.md",
+  "id": "jondonym",
+  "name": "JonDonym",
+  "url": "https://ip-check.info/?lang=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/just-delete-me.md",
+  "id": "just-delete-me",
+  "name": "Just Delete Me",
+  "url": "https://backgroundchecks.org/justdeleteme/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/letmecheck-it.md",
+  "id": "letmecheck-it",
+  "name": "LetMeCheck.it",
+  "url": "https://letmecheck.it/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/locabrowser-com.md",
+  "id": "locabrowser-com",
+  "name": "LocaBrowser.com",
+  "url": "https://www.locabrowser.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/metadata-style/mat2.md",
+  "id": "mat2",
+  "name": "MAT2",
+  "url": "https://0xacab.org/jvoisin/mat2",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/noscript.md",
+  "id": "noscript",
+  "name": "NoScript",
+  "url": "https://noscript.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/optout-credit-prescreen.md",
+  "id": "optout-credit-prescreen",
+  "name": "OptOut Credit Prescreen",
+  "url": "https://www.optoutprescreen.com/?rf=t",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/panopticlick.md",
+  "id": "panopticlick",
+  "name": "Panopticlick",
+  "url": "https://panopticlick.eff.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/perfect-privacy.md",
+  "id": "perfect-privacy",
+  "name": "Perfect Privacy",
+  "url": "https://www.perfect-privacy.com/check-ip/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/privacy-guides.md",
+  "id": "privacy-guides",
+  "name": "Privacy Guides",
+  "url": "https://www.privacyguides.org/en/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/privacy-tools.md",
+  "id": "privacy-tools",
+  "name": "Privacy Tools",
+  "url": "https://www.privacytools.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/persona-creation/random-user-generator.md",
+  "id": "random-user-generator",
+  "name": "Random User Generator",
+  "url": "https://randomuser.me/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ }
+]

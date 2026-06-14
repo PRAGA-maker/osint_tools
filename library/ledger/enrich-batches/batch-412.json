@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-search-app-mobile-ios.md",
+  "id": "google-search-app-mobile-ios",
+  "name": "Google Search App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/google-app-search-made-just/id284815942?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-search-results-scraper.md",
+  "id": "google-search-results-scraper",
+  "name": "Google Search Results Scraper",
+  "url": "https://chromewebstore.google.com/detail/google-search-results-scr/cmdkhofenchpdlkbpkheddfgfdmmobcc",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-translate-extension-chrome.md",
+  "id": "google-translate-extension-chrome",
+  "name": "Google Translate Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/grammarly-lite-extension-chrome.md",
+  "id": "grammarly-lite-extension-chrome",
+  "name": "Grammarly Lite Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/grammarly-spell-checker-g/kbfnbcaeplbcioakkpcpgfkobkghlhen",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/grindr-social-networking-app-mobile-android.md",
+  "id": "grindr-social-networking-app-mobile-android",
+  "name": "Grindr Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.grindrapp.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/grindr-social-networking-app-mobile-ios.md",
+  "id": "grindr-social-networking-app-mobile-ios",
+  "name": "Grindr Social Networking App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/US/app/id319881193",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/grok-knowledge-base-for-phishing-scams.md",
+  "id": "grok-knowledge-base-for-phishing-scams",
+  "name": "GROK Knowledge Base For Phishing Scams",
+  "url": "https://grok.lsu.edu/article.aspx?articleid=16680",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/guid-uuid-and-short-guid-generator.md",
+  "id": "guid-uuid-and-short-guid-generator",
+  "name": "GUID/UUID and short GUID generator",
+  "url": "https://richardkundl.github.io/shortguid/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/hack-this-page.md",
+  "id": "hack-this-page",
+  "name": "Hack This Page",
+  "url": "https://chrome.google.com/webstore/detail/hack-this-page/nbfegodimhenhkghjeppighcbpdinhdp/related",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/hacker-vision-extension-chrome.md",
+  "id": "hacker-vision-extension-chrome",
+  "name": "Hacker Vision Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/hacker-vision/fommidcneendjonelhhhkmoekeicedej",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/hide-my-ass-proxy-website.md",
+  "id": "hide-my-ass-proxy-website",
+  "name": "Hide My Ass Proxy Website",
+  "url": "https://www.hidemyass.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/hipstamatic-camera-app-mobile-ios.md",
+  "id": "hipstamatic-camera-app-mobile-ios",
+  "name": "Hipstamatic Camera App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/hipstamatic-camera/id342115564?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/hola-better-internet-extension-chrome.md",
+  "id": "hola-better-internet-extension-chrome",
+  "name": "Hola Better Internet Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/unlimited-free-vpn-hola/gkojfkhlekighikafcpjkiklfbnlmeio?hl=en-US",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/hola-vpn.md",
+  "id": "hola-vpn",
+  "name": "Hola VPN",
+  "url": "https://hola.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/hotspot-shield-proxy-tool-us-access.md",
+  "id": "hotspot-shield-proxy-tool-us-access",
+  "name": "Hotspot Shield Proxy Tool (US access)",
+  "url": "http://www.hotspotshield.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/https-github-com-spyboy-productions-valid8proxy.md",
+  "id": "https-github-com-spyboy-productions-valid8proxy",
+  "name": "https://github.com/spyboy-productions/Valid8Proxy",
+  "url": "https://github.com/spyboy-productions/Valid8Proxy",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

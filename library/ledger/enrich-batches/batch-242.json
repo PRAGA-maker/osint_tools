@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/chegg-search-engine.md",
+  "id": "chegg-search-engine",
+  "name": "Chegg Search Engine",
+  "url": "http://www.chegg.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/chrome-extension-archive-search-engine.md",
+  "id": "chrome-extension-archive-search-engine",
+  "name": "Chrome Extension Archive Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=000501358716561852263:h-5uyshsclq",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/chromium-code-search.md",
+  "id": "chromium-code-search",
+  "name": "Chromium Code Search",
+  "url": "https://source.chromium.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/cisco-talos-intelligence.md",
+  "id": "cisco-talos-intelligence",
+  "name": "Cisco Talos Intelligence",
+  "url": "https://talosintelligence.com/reputation_center",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/citeseerx.md",
+  "id": "citeseerx",
+  "name": "CiteSeerX",
+  "url": "http://citeseer.ist.psu.edu",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/citizen-audit.md",
+  "id": "citizen-audit",
+  "name": "Citizen Audit",
+  "url": "http://www.citizenaudit.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/citizendium.md",
+  "id": "citizendium",
+  "name": "Citizendium",
+  "url": "http://en.citizendium.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/city-of-brampton.md",
+  "id": "city-of-brampton",
+  "name": "City of Brampton",
+  "url": "http://www.brampton.ca/en/residents/Parking/Pages/poa-payment.aspx",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/citysearch.md",
+  "id": "citysearch",
+  "name": "Citysearch",
+  "url": "http://www.citysearch.com/world",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/clear-regulatory-directory-unitd-states.md",
+  "id": "clear-regulatory-directory-unitd-states",
+  "name": "CLEAR Regulatory Directory (Unitd States)",
+  "url": "https://www.clearhq.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/clearing-and-depository-services.md",
+  "id": "clearing-and-depository-services",
+  "name": "Clearing and Depository Services",
+  "url": "https://www.cds.ca",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/clicklaw.md",
+  "id": "clicklaw",
+  "name": "Clicklaw",
+  "url": "http://wiki.clicklaw.bc.ca",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/cloud-bucket-search-engine.md",
+  "id": "cloud-bucket-search-engine",
+  "name": "Cloud Bucket Search Engine",
+  "url": "https://cse.google.com/cse?cx=d80f8518b11b1438e",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/cloudflare-radar.md",
+  "id": "cloudflare-radar",
+  "name": "Cloudflare Radar",
+  "url": "https://radar.cloudflare.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/cloudscraper.md",
+  "id": "cloudscraper",
+  "name": "CloudScraper",
+  "url": "https://github.com/jordanpotti/CloudScraper",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/coalition-against-insurance-fraud.md",
+  "id": "coalition-against-insurance-fraud",
+  "name": "Coalition Against Insurance Fraud",
+  "url": "https://insurancefraud.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

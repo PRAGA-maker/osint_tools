@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/undiddit.md",
+  "id": "undiddit",
+  "name": "Undiddit",
+  "url": "https://www.unddit.com",
+  "category": "documents-metadata",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/blog-mystrika-com.md",
+  "id": "blog-mystrika-com",
+  "name": "blog.mystrika.com",
+  "url": "https://blog.mystrika.com/email-tracking/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/breachdirectory-org.md",
+  "id": "breachdirectory-org",
+  "name": "breachdirectory.org",
+  "url": "https://breachdirectory.org/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/briteverify-email-verification.md",
+  "id": "briteverify-email-verification",
+  "name": "BriteVerify Email Verification",
+  "url": "http://www.briteverify.co.uk",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-verification/burner-email-providers.md",
+  "id": "burner-email-providers",
+  "name": "Burner Email Providers",
+  "url": "https://github.com/wesbos/burner-email-providers",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/checkleaked-cc.md",
+  "id": "checkleaked-cc",
+  "name": "checkleaked.cc",
+  "url": "https://checkleaked.cc/check",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/contacthelp-com.md",
+  "id": "contacthelp-com",
+  "name": "contacthelp.com",
+  "url": "http://www.contacthelp.com/index.php",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/credenshow.md",
+  "id": "credenshow",
+  "name": "CredenShow",
+  "url": "https://credenshow.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/databreach-com.md",
+  "id": "databreach-com",
+  "name": "databreach.com",
+  "url": "https://databreach.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/ddosecrets.md",
+  "id": "ddosecrets",
+  "name": "DDoSecrets",
+  "url": "https://ddosecrets.com/wiki/Special:AllPages",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/deepsearch.md",
+  "id": "deepsearch",
+  "name": "DeepSearch",
+  "url": "http://xjypo5vzgmo7jca6b322dnqbsdnp3amd24ybx26x5nxbusccjkm4pwid.onion.pet/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/breach-data/dehashed.md",
+  "id": "dehashed",
+  "name": "DeHashed",
+  "url": "https://dehashed.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/didtheyreadit-com.md",
+  "id": "didtheyreadit-com",
+  "name": "didtheyreadit.com",
+  "url": "http://www.didtheyreadit.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/digify-com.md",
+  "id": "digify-com",
+  "name": "digify.com",
+  "url": "https://digify.com/blog/pdf-document-tracking/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/disposable-email-address-dea-detector.md",
+  "id": "disposable-email-address-dea-detector",
+  "name": "Disposable Email Address (DEA) Detector",
+  "url": "https://tools.verifyemailaddress.io/apps/disposable_email_address_detector",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-verification/disposable-email-domains.md",
+  "id": "disposable-email-domains",
+  "name": "Disposable Email Domains",
+  "url": "https://github.com/disposable-email-domains/disposable-email-domains",
+  "category": "email",
+  "mp": "high"
+ }
+]

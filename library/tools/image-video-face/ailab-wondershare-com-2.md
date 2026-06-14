@@ -1,50 +1,83 @@
 ---
 id: ailab-wondershare-com-2
 name: ailab.wondershare.com
-description: 'OSINT tool: ailab.wondershare.com.'
+description: Use when you need to strip the background off a subject photo so the face/clothing is isolated before running reverse-image search or comparison.
 url: https://ailab.wondershare.com/tools/remove-background.html
 category: image-video-face
 path:
 - image-video-face
-bestFor: ''
+bestFor: One-click background removal to isolate a person/face from a busy scene.
 selectorsIn:
 - image
-- face
 selectorsOut:
-- face
-- social-profile
+- image
 status: unknown
-pricing: free
-opsec: unknown
-opsecNote: ''
-humanInLoop: false
-humanInLoopReason: []
+pricing: freemium
+costNote: Free in-browser previews; full-res / batch export gated behind Wondershare account or paid plan.
+opsec: passive
+opsecNote: Image is uploaded to Wondershare's cloud for processing; assume retention. Avoid uploading sensitive case imagery you cannot share with a third party.
+humanInLoop: true
+humanInLoopReason:
+- payment-wall-partial
 bestInteractionPattern: web-manual
 trust: unverified
-trustNote: ''
-missingPersonsRelevance: high
-coverage: []
+trustNote: Commercial Wondershare AI Lab background remover; a preprocessing utility, not an analytic OSINT tool. No identification claims.
+missingPersonsRelevance: low
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-aliases: []
+aliases:
+- Wondershare AI Lab Background Remover
 tags:
 - photosites
 - Photo Related Sites
 source: uk-osint
 lastVerified: ''
-enrichment: stub
+enrichment: full
 ---
 
-# ailab.wondershare.com
+# ailab.wondershare.com — Remove Background
 
-> OSINT tool: ailab.wondershare.com.
+> A consumer AI background remover; a preprocessing step, not an investigative source.
 
-- **URL:** https://ailab.wondershare.com/tools/remove-background.html
-- **Best for:** —
-- **Source:** harvested from `uk-osint`
+## When to use
+You have an `image` where the subject is cluttered by background and you want to isolate the person/face/clothing before reverse-image search or face comparison. It returns a cleaned image only — no names, no matches.
 
-Listed on uk-osint.net under 'Photo Related Sites'.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Open https://ailab.wondershare.com/tools/remove-background.html.
+2. Upload the `image`.
+3. Let the AI cut out the subject; download the result.
+4. Pivot: feed the isolated subject into `[[bing-images]]`, `[[baidu-images]]`, or a face-comparison tool — a clean cutout can improve match quality.
 
-_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._
+## Inputs → Outputs
+- **In:** `image`
+- **Out:** `image` (subject with background removed)
+- **Empty/negative result looks like:** ragged edges, removed hair, or a watermarked/low-res preview (free tier) — re-crop or use an alternative remover.
+
+## Gotchas & OpSec
+- Human-in-the-loop: clean full-res export typically requires sign-up or payment.
+- OpSec: passive toward the target, but the image transits Wondershare's cloud. This only edits pixels; it adds no intelligence on its own.
+
+## Overlaps ("do both")
+- Functionally equivalent to `[[anieraser-media-io]]`, `[[background-removal-tool]]`, and `[[befunky-com]]`; pick whichever produces the cleanest cutout for your image.
+
+## Trust & verifiability
+`trust: unverified` — Wondershare consumer utility; purely an image-prep step.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | ailab-wondershare-com-2 |
+| category | image-video-face |
+| selectorsIn → selectorsOut | image → image |
+| pricing / cost | freemium |
+| trust | unverified |
+| MP relevance | low |
+| interaction | web-manual |
+| opsec | passive |
+| human-in-loop | yes |

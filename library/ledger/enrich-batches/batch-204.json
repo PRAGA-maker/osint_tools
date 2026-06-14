@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/policy-map.md",
+  "id": "policy-map",
+  "name": "Policy Map",
+  "url": "http://www.policymap.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/power-plants-in-the-united-states.md",
+  "id": "power-plants-in-the-united-states",
+  "name": "Power Plants in the United States",
+  "url": "https://www.arcgis.com/apps/dashboards/201fc98c0d74482d8b3acb0c4cc47f16",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/radio-garden.md",
+  "id": "radio-garden",
+  "name": "Radio Garden",
+  "url": "http://radio.garden/search",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/somerandomstuff1-wordpress-com.md",
+  "id": "somerandomstuff1-wordpress-com",
+  "name": "somerandomstuff1.wordpress.com",
+  "url": "https://somerandomstuff1.wordpress.com/2019/02/08/geoguessr-the-top-tips-tricks-and-techniques/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/terra-server.md",
+  "id": "terra-server",
+  "name": "Terra server",
+  "url": "https://www.terraserver.com",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/tfl-jamcams.md",
+  "id": "tfl-jamcams",
+  "name": "TfL JamCams",
+  "url": "https://www.tfljamcams.net",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/the-perry-casta-eda-library-map-collection.md",
+  "id": "the-perry-casta-eda-library-map-collection",
+  "name": "The Perry-Casta\u00c3\u00b1eda Library Map Collection",
+  "url": "http://www.lib.utexas.edu/maps/index.html",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/travic-tracker-geops.md",
+  "id": "travic-tracker-geops",
+  "name": "TRAVIC TRACKER GEOPS",
+  "url": "https://tracker.geops.ch",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/uk-onshore-oil-and-gas-activity.md",
+  "id": "uk-onshore-oil-and-gas-activity",
+  "name": "UK Onshore Oil and Gas Activity",
+  "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=29c31fa4b00248418e545d222e57ddaa",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/ukraine-war-map-heatmap.md",
+  "id": "ukraine-war-map-heatmap",
+  "name": "Ukraine War Map/Heatmap",
+  "url": "https://ruarq.github.io/ukraine-war-heatmap",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/us-labor-strike-map.md",
+  "id": "us-labor-strike-map",
+  "name": "US Labor Strike Map",
+  "url": "https://www.google.com/maps/d/viewer?mid=1hE1nDR-Ff_sVgOS67IteJSxGZlvqIP3k",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/using-world-imagery-wayback.md",
+  "id": "using-world-imagery-wayback",
+  "name": "Using World Imagery Wayback",
+  "url": "https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/using-world-imagery-wayback",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/virtualvacation-us.md",
+  "id": "virtualvacation-us",
+  "name": "virtualvacation.us",
+  "url": "https://virtualvacation.us/guess",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/visionofbritain-org-uk.md",
+  "id": "visionofbritain-org-uk",
+  "name": "visionofbritain.org.uk",
+  "url": "https://www.visionofbritain.org.uk/maps/#",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/visitedplaces-com.md",
+  "id": "visitedplaces-com",
+  "name": "visitedplaces.com",
+  "url": "https://visitedplaces.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/walmart-store-status.md",
+  "id": "walmart-store-status",
+  "name": "Walmart Store Status",
+  "url": "https://www.arcgis.com/apps/dashboards/4e573c79e1224081805165d25b4f33c7",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ }
+]

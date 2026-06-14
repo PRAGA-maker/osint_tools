@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/self-destructing-cookies.md",
+  "id": "self-destructing-cookies",
+  "name": "Self-Destructing Cookies",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/social-media-fingerprint.md",
+  "id": "social-media-fingerprint",
+  "name": "Social Media Fingerprint",
+  "url": "https://robinlinus.github.io/socialmedia-leak/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/the-hitchhiker-s-guide-to-online-anonymity.md",
+  "id": "the-hitchhiker-s-guide-to-online-anonymity",
+  "name": "The Hitchhiker\u2019s Guide to Online Anonymity",
+  "url": "https://anonymousplanet.org/guide/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/the-many-hats-club-privacy-resources.md",
+  "id": "the-many-hats-club-privacy-resources",
+  "name": "The Many Hats Club - Privacy Resources",
+  "url": "https://themanyhats.club/centralised-place-for-privacy-resources/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/persona-creation/this-person-does-not-exist.md",
+  "id": "this-person-does-not-exist",
+  "name": "This Person Does Not Exist",
+  "url": "https://thispersondoesnotexist.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/tor/tor-download-2.md",
+  "id": "tor-download-2",
+  "name": "Tor Download",
+  "url": "https://www.torproject.org/download/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/trace-my-ip.md",
+  "id": "trace-my-ip",
+  "name": "Trace My IP",
+  "url": "https://www.tracemyip.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/spoof-user-agent/user-agent-string-decoder.md",
+  "id": "user-agent-string-decoder",
+  "name": "User Agent String Decoder",
+  "url": "https://tools.tracemyip.org/user-agent-string-decoder/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/spoof-user-agent/useragentstring-com.md",
+  "id": "useragentstring-com",
+  "name": "UserAgentString.com",
+  "url": "https://www.useragentstring.com/pages/useragentstring.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/anonymous-vpns/vpn-comparisons-that-one-privacy-site.md",
+  "id": "vpn-comparisons-that-one-privacy-site",
+  "name": "VPN Comparisons - That One Privacy Site",
+  "url": "https://thatoneprivacysite.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/webrtc-leak-test.md",
+  "id": "webrtc-leak-test",
+  "name": "WebRTC Leak Test",
+  "url": "https://www.perfect-privacy.com/webrtc-leaktest/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browser-tests/what-browser.md",
+  "id": "what-browser",
+  "name": "What Browser?",
+  "url": "https://whatbrowser.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browser-tests/what-browser-am-i-using-co.md",
+  "id": "what-browser-am-i-using-co",
+  "name": "What browser am I using.co",
+  "url": "https://www.whatbrowseramiusing.co/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/spoof-user-agent/whatismybrowser-com.md",
+  "id": "whatismybrowser-com",
+  "name": "WhatIsMyBrowser.com",
+  "url": "https://www.whatismybrowser.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browser-tests/whatsmybrowser-org.md",
+  "id": "whatsmybrowser-org",
+  "name": "WhatsMyBrowser.org",
+  "url": "https://www.whatsmybrowser.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/academia.md",
+  "id": "academia",
+  "name": "Academia",
+  "url": "http://academia.edu",
+  "category": "people-search",
+  "mp": "medium"
+ }
+]

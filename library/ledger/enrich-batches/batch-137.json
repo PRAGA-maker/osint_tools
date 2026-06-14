@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/wolfram-alpha-facebook-report.md",
+  "id": "wolfram-alpha-facebook-report",
+  "name": "Wolfram Alpha Facebook Report",
+  "url": "http://www.wolframalpha.com/input/?i=facebook+report",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/worldcam-search-instagram-by-location.md",
+  "id": "worldcam-search-instagram-by-location",
+  "name": "Worldcam - Search Instagram by location",
+  "url": "http://worldc.am",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/www-linkedin-com-pub-dir-people-search.md",
+  "id": "www-linkedin-com-pub-dir-people-search",
+  "name": "www.linkedin.com/pub/dir/People/Search",
+  "url": "http://www.linkedin.com/pub/dir/people/search",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/x-com-2.md",
+  "id": "x-com-2",
+  "name": "x.com",
+  "url": "https://x.com/collin_intel/status/1892248986586599865",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/x-com-3.md",
+  "id": "x-com-3",
+  "name": "x.com",
+  "url": "https://x.com/cyb_detective/status/1891600542872297622",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/x-com-4.md",
+  "id": "x-com-4",
+  "name": "x.com",
+  "url": "https://www.x.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/x-com-5.md",
+  "id": "x-com-5",
+  "name": "x.com",
+  "url": "https://x.com/1ZRR4H/status/1877037044263800882",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/x-com-6.md",
+  "id": "x-com-6",
+  "name": "x.com",
+  "url": "https://x.com/account/begin_password_reset",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/analytics/profile/x0rz-tweets-analyzer.md",
+  "id": "x0rz-tweets-analyzer",
+  "name": "X0rz Tweets_analyzer",
+  "url": "https://github.com/x0rz/tweets_analyzer",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/xiaohongshu-com.md",
+  "id": "xiaohongshu-com",
+  "name": "xiaohongshu.com",
+  "url": "https://www.xiaohongshu.com/explore",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/xplore-x-vercel-app.md",
+  "id": "xplore-x-vercel-app",
+  "name": "xplore-x.vercel.app",
+  "url": "https://xplore-x.vercel.app/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/xquik.md",
+  "id": "xquik",
+  "name": "Xquik",
+  "url": "https://xquik.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/yesitsme.md",
+  "id": "yesitsme",
+  "name": "yesitsme",
+  "url": "https://github.com/blackeko/yesitsme",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/yoodownload-com.md",
+  "id": "yoodownload-com",
+  "name": "yoodownload.com",
+  "url": "http://yoodownload.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tiktok/yt-dlp.md",
+  "id": "yt-dlp",
+  "name": "yt-dlp",
+  "url": "https://github.com/yt-dlp/yt-dlp",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/zalo-me.md",
+  "id": "zalo-me",
+  "name": "zalo.me",
+  "url": "https://zalo.me/pc#",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

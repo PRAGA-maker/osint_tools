@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/adblock-extension-chrome.md",
+  "id": "adblock-extension-chrome",
+  "name": "Adblock Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom?hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/adblockplus-extension.md",
+  "id": "adblockplus-extension",
+  "name": "AdBlockPlus Extension",
+  "url": "https://adblockplus.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/adobe-acrobat-reader-app-mobile-ios.md",
+  "id": "adobe-acrobat-reader-app-mobile-ios",
+  "name": "Adobe Acrobat Reader App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/adobe-acrobat-reader/id469337564?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/adobe-photoshop-express-app-mobile-android.md",
+  "id": "adobe-photoshop-express-app-mobile-android",
+  "name": "Adobe Photoshop Express App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.adobe.psmobile",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/adobe-photoshop-express-app-mobile-ios.md",
+  "id": "adobe-photoshop-express-app-mobile-ios",
+  "name": "Adobe Photoshop Express App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/adobe-photoshop-express/id331975235?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/adobe-photoshop-mix-app-mobile-android.md",
+  "id": "adobe-photoshop-mix-app-mobile-android",
+  "name": "Adobe Photoshop Mix App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.adobe.photoshopmix",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ai-video-generator.md",
+  "id": "ai-video-generator",
+  "name": "AI video generator",
+  "url": "https://www.synthesia.io/free-ai-video-demo",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/airbnb-travel-app-mobile-android.md",
+  "id": "airbnb-travel-app-mobile-android",
+  "name": "AirBNB Travel App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.airbnb.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/airwatch-secure-content-locker-app-mobile-ios.md",
+  "id": "airwatch-secure-content-locker-app-mobile-ios",
+  "name": "Airwatch Secure Content Locker App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/airwatch-secure-content-locker/id525890839?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/am-i-unique.md",
+  "id": "am-i-unique",
+  "name": "Am I unique?",
+  "url": "https://amiunique.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/amazon-mobile-app-mobile-android.md",
+  "id": "amazon-mobile-app-mobile-android",
+  "name": "Amazon Mobile App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/amazon-mobile-app-mobile-ios.md",
+  "id": "amazon-mobile-app-mobile-ios",
+  "name": "Amazon Mobile App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/app/amazon-mobile/id297606951?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/amazon-sns.md",
+  "id": "amazon-sns",
+  "name": "Amazon SNS",
+  "url": "https://aws.amazon.com/sns/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/android-studio-and-sdk-tools.md",
+  "id": "android-studio-and-sdk-tools",
+  "name": "Android Studio & SDK Tools",
+  "url": "https://developer.android.com/studio",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/annotely.md",
+  "id": "annotely",
+  "name": "Annotely",
+  "url": "https://annotely.com/editor",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonaddy.md",
+  "id": "anonaddy",
+  "name": "AnonAddy",
+  "url": "https://anonaddy.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

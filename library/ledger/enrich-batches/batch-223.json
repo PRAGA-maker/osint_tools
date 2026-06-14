@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/patent-records/google-patent-search.md",
+  "id": "google-patent-search",
+  "name": "Google Patent Search",
+  "url": "https://patents.google.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/google-scholar-case-law.md",
+  "id": "google-scholar-case-law",
+  "name": "Google Scholar Case Law",
+  "url": "https://scholar.google.com/scholar_courts",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/gouvernement-du-qu-bec.md",
+  "id": "gouvernement-du-qu-bec",
+  "name": "Gouvernement du Qu\u00e9bec",
+  "url": "https://www.donneesquebec.ca/organisation/gouvernement-du-quebec/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/government-records/gov-data-canada.md",
+  "id": "gov-data-canada",
+  "name": "Gov Data Canada",
+  "url": "https://open.canada.ca/data/en/dataset",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/govdata-das-datenportal-f-r-deutschland-german.md",
+  "id": "govdata-das-datenportal-f-r-deutschland-german",
+  "name": "GOVDATA - Das Datenportal f\u00fcr Deutschland (German)",
+  "url": "https://www.govdata.de/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/government-staff-directory.md",
+  "id": "government-staff-directory",
+  "name": "Government staff directory",
+  "url": "https://www.alberta.ca/staff-directory.cfm",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/govsalaries.md",
+  "id": "govsalaries",
+  "name": "GovSalaries",
+  "url": "https://govsalaries.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/death-records/graveinfo.md",
+  "id": "graveinfo",
+  "name": "GraveInfo",
+  "url": "https://billiongraves.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/greater-sacramento-area-public-salaries.md",
+  "id": "greater-sacramento-area-public-salaries",
+  "name": "Greater Sacramento Area Public Salaries",
+  "url": "https://b2.caspio.com/dp/c48210000605c38aa22f4080a1be",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/guidestar.md",
+  "id": "guidestar",
+  "name": "GuideStar",
+  "url": "http://www.guidestar.org",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/gun-dealer-inspections-the-trace.md",
+  "id": "gun-dealer-inspections-the-trace",
+  "name": "Gun Dealer Inspections \\| The Trace",
+  "url": "https://projects.thetrace.org/inspections/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/healthcare-education-providers.md",
+  "id": "healthcare-education-providers",
+  "name": "HEALTHCARE EDUCATION PROVIDERS",
+  "url": "https://c3dug085.caspio.com/dp/1fec4000740ace75fdb94ec5bca5",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/home-comptroller-texas-gov.md",
+  "id": "home-comptroller-texas-gov",
+  "name": "Home Comptroller.Texas.Gov",
+  "url": "https://comptroller.texas.gov/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/homefacts-us.md",
+  "id": "homefacts-us",
+  "name": "HomeFacts (US)",
+  "url": "https://www.homefacts.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/hoovers.md",
+  "id": "hoovers",
+  "name": "Hoovers",
+  "url": "http://www.hoovers.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have.md",
+  "id": "how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have",
+  "name": "How many untested rape kits does your city police department or county sheriff's office have?",
+  "url": "https://datawrapper.dwcdn.net/uOdaT/4/",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

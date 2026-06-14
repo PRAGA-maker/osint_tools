@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/avg-antivirus-for-pc.md",
+  "id": "avg-antivirus-for-pc",
+  "name": "AVG Antivirus (for PC)",
+  "url": "http://free.avg.com/ca-en/homepage",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/avira-free-antivirus.md",
+  "id": "avira-free-antivirus",
+  "name": "Avira Free Antivirus",
+  "url": "https://www.avira.com/en/avira-free-antivirus",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/awesome-screenshot-extension-chrome.md",
+  "id": "awesome-screenshot-extension-chrome",
+  "name": "Awesome Screenshot Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/backbox.md",
+  "id": "backbox",
+  "name": "BackBox",
+  "url": "https://www.backbox.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/badoo-dating-app-mobile-android.md",
+  "id": "badoo-dating-app-mobile-android",
+  "name": "Badoo Dating App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.badoo.mobile",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/badoo-dating-app-mobile-ios.md",
+  "id": "badoo-dating-app-mobile-ios",
+  "name": "Badoo Dating App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/us/app/badoo-dating-meet-new-people/id351331194",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/berobo-police-scanner-app-mobile-android.md",
+  "id": "berobo-police-scanner-app-mobile-android",
+  "name": "Berobo Police Scanner App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.berobo.police.scanner.x&hl=en_CA",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/bitcoinprivacy-guide.md",
+  "id": "bitcoinprivacy-guide",
+  "name": "Bitcoinprivacy.guide",
+  "url": "https://bitcoinprivacy.guide/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/bitdefender-antivirus.md",
+  "id": "bitdefender-antivirus",
+  "name": "Bitdefender Antivirus",
+  "url": "https://www.bitdefender.com/solutions/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/bitonic.md",
+  "id": "bitonic",
+  "name": "Bitonic",
+  "url": "https://bitonic.nl/en/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/blackarch-linux.md",
+  "id": "blackarch-linux",
+  "name": "BlackArch Linux",
+  "url": "https://www.blackarch.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/blackhole.md",
+  "id": "blackhole",
+  "name": "BlackHole",
+  "url": "https://blackhole.run/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/blinklist.md",
+  "id": "blinklist",
+  "name": "Blinklist",
+  "url": "https://blinklist.com/category/apps/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/blogger-social-networking-app-mobile-android.md",
+  "id": "blogger-social-networking-app-mobile-android",
+  "name": "Blogger Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.blogger",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/blokt-privacy-guides.md",
+  "id": "blokt-privacy-guides",
+  "name": "Blokt Privacy Guides",
+  "url": "https://blokt.com/guides",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/bool.md",
+  "id": "bool",
+  "name": "Bool",
+  "url": "https://chromewebstore.google.com/detail/bool-boolean-search-assis/cfpmoigmhcehoegokjllchipdiindpkc",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/kidsites-com.md",
+  "id": "kidsites-com",
+  "name": "Kidsites.com",
+  "url": "http://www.kidsites.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kidsnet-search-engine-australia.md",
+  "id": "kidsnet-search-engine-australia",
+  "name": "Kidsnet Search Engine (Australia)",
+  "url": "http://www.kids.net.au",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kidtopia.md",
+  "id": "kidtopia",
+  "name": "Kidtopia",
+  "url": "http://www.kidtopia.info",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/kidzsearch.md",
+  "id": "kidzsearch",
+  "name": "KidzSearch",
+  "url": "https://www.kidzsearch.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/lawforkids.md",
+  "id": "lawforkids",
+  "name": "LawForKids",
+  "url": "https://lawforkids.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/leibniz-information-centre-for-science-and-technology-university-library.md",
+  "id": "leibniz-information-centre-for-science-and-technology-university-library",
+  "name": "Leibniz Information Centre For Science and Technology University Library",
+  "url": "https://www.tib.eu/en/search-discover/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/lendx.md",
+  "id": "lendx",
+  "name": "LENDX",
+  "url": "http://lendx.org/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/library-genesis.md",
+  "id": "library-genesis",
+  "name": "Library Genesis",
+  "url": "https://libgen.fun",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/linkosaurus-news-blog.md",
+  "id": "linkosaurus-news-blog",
+  "name": "Linkosaurus News Blog",
+  "url": "http://www.linkasaurus.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/list-of-newspapers-com.md",
+  "id": "list-of-newspapers-com",
+  "name": "List of Newspapers.com",
+  "url": "http://www.listofnewspapers.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/lycos.md",
+  "id": "lycos",
+  "name": "Lycos",
+  "url": "https://www.lycos.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/mac-address-search-tool.md",
+  "id": "mac-address-search-tool",
+  "name": "Mac Address Search Tool",
+  "url": "http://mac.lc",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/magportal.md",
+  "id": "magportal",
+  "name": "MagPortal",
+  "url": "http://www.magportal.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/mailing-list-archives-search-engine.md",
+  "id": "mailing-list-archives-search-engine",
+  "name": "Mailing List Archives Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:sipriovnbxq",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/maldevel-osint.md",
+  "id": "maldevel-osint",
+  "name": "maldevel/osint",
+  "url": "https://github.com/maldevel/osint",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/mamont-s-open-ftp-index.md",
+  "id": "mamont-s-open-ftp-index",
+  "name": "Mamont's open FTP Index",
+  "url": "https://www.mmnt.net/",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

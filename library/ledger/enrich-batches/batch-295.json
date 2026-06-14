@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/translation-language/pictures/i2ocr-2.md",
+  "id": "i2ocr-2",
+  "name": "i2OCR",
+  "url": "https://www.i2ocr.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/pictures/new-ocr-2.md",
+  "id": "new-ocr-2",
+  "name": "New OCR",
+  "url": "https://www.newocr.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/pictures/online-ocr-onlineocr-net.md",
+  "id": "online-ocr-onlineocr-net",
+  "name": "Online OCR (onlineocr.net)",
+  "url": "https://www.onlineocr.net/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/pictures/online-ocr-sodapdf.md",
+  "id": "online-ocr-sodapdf",
+  "name": "Online OCR (SodaPDF)",
+  "url": "https://www.sodapdf.com/pdf-tools/ocr-pdf/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/slang-dictionary-and-translator.md",
+  "id": "slang-dictionary-and-translator",
+  "name": "Slang Dictionary & Translator",
+  "url": "https://www.noslang.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/slangit-the-slang-dictionary.md",
+  "id": "slangit-the-slang-dictionary",
+  "name": "Slangit - The Slang Dictionary",
+  "url": "https://slang.net/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/translate-shell.md",
+  "id": "translate-shell",
+  "name": "Translate Shell",
+  "url": "https://github.com/soimort/translate-shell",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/urban-dictionary.md",
+  "id": "urban-dictionary",
+  "name": "Urban Dictionary",
+  "url": "https://www.urbandictionary.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/analysis/whatthefont.md",
+  "id": "whatthefont",
+  "name": "WhatTheFont",
+  "url": "https://www.myfonts.com/pages/whatthefont/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/wiktionary.md",
+  "id": "wiktionary",
+  "name": "Wiktionary",
+  "url": "https://en.wiktionary.org/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/translation-language/text/word-reference.md",
+  "id": "word-reference",
+  "name": "Word Reference",
+  "url": "https://www.wordreference.com/",
+  "category": "translation-language",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/air-traffic-records/ads-b-exchange.md",
+  "id": "ads-b-exchange",
+  "name": "ADS-B Exchange",
+  "url": "https://www.adsbexchange.com/",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/air-traffic-records/ads-b-nl.md",
+  "id": "ads-b-nl",
+  "name": "ADS-B.NL",
+  "url": "https://www.ads-b.nl/index.php?pageno=9999",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/alamo-rental-receipts.md",
+  "id": "alamo-rental-receipts",
+  "name": "Alamo Rental Receipts",
+  "url": "https://legacy.alamo.com/en_us/car-rental/receipts.html",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/all-vehicle-data.md",
+  "id": "all-vehicle-data",
+  "name": "All Vehicle Data",
+  "url": "http://www.allvehicledata.com",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/american-association-of-motor-vehicle-administrators.md",
+  "id": "american-association-of-motor-vehicle-administrators",
+  "name": "American Association of Motor Vehicle Administrators",
+  "url": "https://www.aamva.org",
+  "category": "transportation",
+  "mp": "medium"
+ }
+]

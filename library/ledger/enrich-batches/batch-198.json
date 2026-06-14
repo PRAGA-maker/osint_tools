@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/fact-checking-tools/hoaxy.md",
+  "id": "hoaxy",
+  "name": "Hoaxy",
+  "url": "https://hoaxy.osome.iu.edu/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/identifont-com.md",
+  "id": "identifont-com",
+  "name": "Identifont.com",
+  "url": "http://www.identifont.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/image-forensic-ghiro-online.md",
+  "id": "image-forensic-ghiro-online",
+  "name": "Image Forensic (Ghiro Online)",
+  "url": "http://www.imageforensic.org/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/reverse-media-search/imgops.md",
+  "id": "imgops",
+  "name": "ImgOps",
+  "url": "https://imgops.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/internet-archive-open-source-videos.md",
+  "id": "internet-archive-open-source-videos",
+  "name": "Internet Archive: Open Source Videos",
+  "url": "https://archive.org/details/opensource_movies",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfake-detection/invid-weverify-verification-plugin.md",
+  "id": "invid-weverify-verification-plugin",
+  "name": "InVID-WeVerify Verification Plugin",
+  "url": "https://www.invid-project.eu/tools-and-services/invid-verification-plugin/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/keep-save-it.md",
+  "id": "keep-save-it",
+  "name": "Keep Save It",
+  "url": "http://keepsaveit.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/likefont-com.md",
+  "id": "likefont-com",
+  "name": "LikeFont.com",
+  "url": "https://en.likefont.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/mangolinkworld.md",
+  "id": "mangolinkworld",
+  "name": "MangolinkWorld",
+  "url": "https://www.mangolinkworld.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/metacafe.md",
+  "id": "metacafe",
+  "name": "Metacafe",
+  "url": "http://www.metacafe.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/metatube-2.md",
+  "id": "metatube-2",
+  "name": "Metatube",
+  "url": "http://www.metatube.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/fact-checking-tools/politifact.md",
+  "id": "politifact",
+  "name": "PolitiFact",
+  "url": "https://www.politifact.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/savevideo.md",
+  "id": "savevideo",
+  "name": "SaveVideo",
+  "url": "https://savevideo.me",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/fact-checking-tools/scicheck.md",
+  "id": "scicheck",
+  "name": "SciCheck",
+  "url": "https://factcheck.org/scicheck/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/skyline-webcams.md",
+  "id": "skyline-webcams",
+  "name": "Skyline Webcams",
+  "url": "https://www.skylinewebcams.com/webcam.html",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/sn-radar-vk-photo-search.md",
+  "id": "sn-radar-vk-photo-search",
+  "name": "SN Radar VK Photo Search",
+  "url": "https://snradar.azurewebsites.net/",
+  "category": "image-video-face",
+  "mp": "medium"
+ }
+]

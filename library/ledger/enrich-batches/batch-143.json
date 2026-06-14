@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/cashedpages.md",
+  "id": "cashedpages",
+  "name": "CashedPages",
+  "url": "http://www.cachedpages.com",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/common-crawl.md",
+  "id": "common-crawl",
+  "name": "Common Crawl",
+  "url": "https://commoncrawl.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/commoncrawl-org.md",
+  "id": "commoncrawl-org",
+  "name": "commoncrawl.org",
+  "url": "https://commoncrawl.org/overview",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/data-leaks/cryptome-2.md",
+  "id": "cryptome-2",
+  "name": "Cryptome",
+  "url": "https://cryptome.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/cybdetective-com.md",
+  "id": "cybdetective-com",
+  "name": "cybdetective.com",
+  "url": "https://cybdetective.com/webarchiveviewer/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/data-leaks/databases-today.md",
+  "id": "databases-today",
+  "name": "Databases.Today",
+  "url": "https://databases.today/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/directory-of-open-access-journals.md",
+  "id": "directory-of-open-access-journals",
+  "name": "Directory of Open Access Journals",
+  "url": "https://doaj.org/search/journals",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/easycache.md",
+  "id": "easycache",
+  "name": "EasyCache",
+  "url": "https://gaetanlhf.github.io/EasyCache/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/factinsect.md",
+  "id": "factinsect",
+  "name": "FACTINSECT",
+  "url": "https://factinsect.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/firecrawl-dev.md",
+  "id": "firecrawl-dev",
+  "name": "firecrawl.dev",
+  "url": "https://www.firecrawl.dev/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/gau.md",
+  "id": "gau",
+  "name": "GAU",
+  "url": "https://github.com/lc/gau",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/grab-site.md",
+  "id": "grab-site",
+  "name": "GRAB SITE",
+  "url": "https://github.com/ArchiveTeam/grab-site",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/har2warc.md",
+  "id": "har2warc",
+  "name": "har2warc",
+  "url": "https://github.com/webrecorder/har2warc",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/index-commoncrawl-org.md",
+  "id": "index-commoncrawl-org",
+  "name": "index.commoncrawl.org",
+  "url": "https://index.commoncrawl.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/industrydocuments-ucsf-edu.md",
+  "id": "industrydocuments-ucsf-edu",
+  "name": "industrydocuments.ucsf.edu",
+  "url": "http://industrydocuments.ucsf.edu/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/internet-archive-wayback-machine.md",
+  "id": "internet-archive-wayback-machine",
+  "name": "Internet Archive: Wayback Machine",
+  "url": "https://web.archive.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ }
+]

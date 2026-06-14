@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/webcleaner-com.md",
+  "id": "webcleaner-com",
+  "name": "webcleaner.com",
+  "url": "https://www.webcleaner.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/webcrawler-com.md",
+  "id": "webcrawler-com",
+  "name": "webcrawler.com",
+  "url": "https://www.webcrawler.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/xen00rw-me.md",
+  "id": "xen00rw-me",
+  "name": "xen00rw.me",
+  "url": "https://dorks.xen00rw.me/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/yahoo-com.md",
+  "id": "yahoo-com",
+  "name": "yahoo.com",
+  "url": "https://search.yahoo.com/web?",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/yahoo-com-2.md",
+  "id": "yahoo-com-2",
+  "name": "yahoo.com",
+  "url": "https://search.yahoo.com//web/advanced",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/yogsec.md",
+  "id": "yogsec",
+  "name": "Yogsec",
+  "url": "https://github.com/yogsec/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/17-imginn.md",
+  "id": "17-imginn",
+  "name": "17- Imginn",
+  "url": "https://imginn.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/6-izuum-com.md",
+  "id": "6-izuum-com",
+  "name": "6- Izuum.com",
+  "url": "https://izuum.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/a-tremendously-valuable-osint-tip-for-pinterest.md",
+  "id": "a-tremendously-valuable-osint-tip-for-pinterest",
+  "name": "A Tremendously Valuable OSINT Tip For Pinterest",
+  "url": "https://hatless1der.com/author/hatless1der/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/about-fb-com.md",
+  "id": "about-fb-com",
+  "name": "about.fb.com",
+  "url": "https://about.fb.com/news/2025/08/new-instagram-features-help-you-connect/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/accountkiller-com.md",
+  "id": "accountkiller-com",
+  "name": "accountkiller.com",
+  "url": "http://www.accountkiller.com/en/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/advanced-downloader-for-tiktok-addons-mozilla-org.md",
+  "id": "advanced-downloader-for-tiktok-addons-mozilla-org",
+  "name": "advanced downloader for tiktok (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-GB/firefox/addon/advanced-downloader-for-tiktok/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/agora-pulse.md",
+  "id": "agora-pulse",
+  "name": "Agora Pulse",
+  "url": "https://barometer.agorapulse.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/archive-deleted-tweets/all-my-tweets.md",
+  "id": "all-my-tweets",
+  "name": "All My Tweets",
+  "url": "https://www.allmytweets.net/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/app-fanpagekarma-com.md",
+  "id": "app-fanpagekarma-com",
+  "name": "app.fanpagekarma.com",
+  "url": "https://app.fanpagekarma.com/facebook-catalogue",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/arctic-shift-2.md",
+  "id": "arctic-shift-2",
+  "name": "Arctic Shift",
+  "url": "https://github.com/ArthurHeitmann/arctic_shift",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

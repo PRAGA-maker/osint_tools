@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/translation-language/translate-com.md",
+  "id": "translate-com",
+  "name": "Translate.com",
+  "url": "https://www.translate.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/tv-tropes.md",
+  "id": "tv-tropes",
+  "name": "TV Tropes",
+  "url": "http://tvtropes.org",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/urbandictionary-com.md",
+  "id": "urbandictionary-com",
+  "name": "urbandictionary.com",
+  "url": "http://www.urbandictionary.com/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/vizard-ai.md",
+  "id": "vizard-ai",
+  "name": "vizard.ai",
+  "url": "https://vizard.ai/tools/video-to-text",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/webopedia-com.md",
+  "id": "webopedia-com",
+  "name": "webopedia.com",
+  "url": "https://www.webopedia.com/quick_ref/textmessageabbreviations.asp",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/wordreference-translator.md",
+  "id": "wordreference-translator",
+  "name": "WordReference Translator",
+  "url": "http://www.wordreference.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/yamii.md",
+  "id": "yamii",
+  "name": "Yamii",
+  "url": "https://www.yamli.com/arabic-keyboard",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/yandex-translate.md",
+  "id": "yandex-translate",
+  "name": "Yandex.Translate",
+  "url": "https://translate.yandex.com/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/yandex-translate-2.md",
+  "id": "yandex-translate-2",
+  "name": "Yandex Translate",
+  "url": "https://translate.yandex.ru",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/yourdictionary-online-links.md",
+  "id": "yourdictionary-online-links",
+  "name": "YourDictionary Online Links",
+  "url": "http://reference.yourdictionary.com/languages.html",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/ads-b-exchange-radar-view.md",
+  "id": "ads-b-exchange-radar-view",
+  "name": "ADS-B Exchange Radar View",
+  "url": "https://globe.adsbexchange.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/ads-b-historical-flight-viewer.md",
+  "id": "ads-b-historical-flight-viewer",
+  "name": "ADS-B Historical Flight Viewer",
+  "url": "https://flight-data.adsbexchange.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/aircraft-registry.md",
+  "id": "aircraft-registry",
+  "name": "Aircraft Registry",
+  "url": "https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/airfleets.md",
+  "id": "airfleets",
+  "name": "Airfleets",
+  "url": "http://airfleets.net/home",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/airframes.md",
+  "id": "airframes",
+  "name": "Airframes",
+  "url": "http://www.airframes.org/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/airlinecodes.md",
+  "id": "airlinecodes",
+  "name": "Airlinecodes",
+  "url": "http://www.airlinecodes.co.uk/aptcodesearch.asp",
+  "category": "transportation",
+  "mp": "low"
+ }
+]

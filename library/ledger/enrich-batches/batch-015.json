@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/google-maps-update-alerts.md",
+  "id": "google-maps-update-alerts",
+  "name": "Google Maps Update Alerts",
+  "url": "https://followyourworld.appspot.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/google-my-maps.md",
+  "id": "google-my-maps",
+  "name": "Google My Maps",
+  "url": "https://www.google.com/maps/about/mymaps",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/coordinates/gpsvisualizer.md",
+  "id": "gpsvisualizer",
+  "name": "GPSVisualizer",
+  "url": "https://www.gpsvisualizer.com/geocode",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/grassgis.md",
+  "id": "grassgis",
+  "name": "GrassGIS",
+  "url": "http://grass.osgeo.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/here-2.md",
+  "id": "here-2",
+  "name": "Here",
+  "url": "http://here.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/here-maps.md",
+  "id": "here-maps",
+  "name": "HERE Maps",
+  "url": "https://maps.here.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/hiking-and-biking-map.md",
+  "id": "hiking-and-biking-map",
+  "name": "Hiking & Biking Map",
+  "url": "https://hikebikemap.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/historic-aerials.md",
+  "id": "historic-aerials",
+  "name": "Historic Aerials",
+  "url": "https://www.historicaerials.com/?javascript=&",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/hivemapper.md",
+  "id": "hivemapper",
+  "name": "Hivemapper",
+  "url": "https://hivemapper.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/map-reporting-tools/hyperlapse.md",
+  "id": "hyperlapse",
+  "name": "Hyperlapse",
+  "url": "https://github.com/TeehanLax/Hyperlapse.js",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/inspire-geoportal.md",
+  "id": "inspire-geoportal",
+  "name": "Inspire Geoportal",
+  "url": "http://inspire-geoportal.ec.europa.eu",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/instant-google-street-view.md",
+  "id": "instant-google-street-view",
+  "name": "Instant Google Street View",
+  "url": "https://www.instantstreetview.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/instantatlas.md",
+  "id": "instantatlas",
+  "name": "InstantAtlas",
+  "url": "http://www.instantatlas.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/kartaview.md",
+  "id": "kartaview",
+  "name": "KartaView",
+  "url": "https://kartaview.org/map/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/kartograph.md",
+  "id": "kartograph",
+  "name": "Kartograph",
+  "url": "http://kartograph.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/land-viewer.md",
+  "id": "land-viewer",
+  "name": "Land Viewer",
+  "url": "https://eos.com/landviewer",
+  "category": "geolocation",
+  "mp": "high"
+ }
+]

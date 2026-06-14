@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/maestrolabs-com.md",
+  "id": "maestrolabs-com",
+  "name": "maestrolabs.com",
+  "url": "https://www.maestrolabs.com/how-to/how-to-know-if-someone-read-your-email",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/mail-com-free-email-creations.md",
+  "id": "mail-com-free-email-creations",
+  "name": "Mail.com - free email creations",
+  "url": "https://mail.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/mailaccess.md",
+  "id": "mailaccess",
+  "name": "MailAccess",
+  "url": "https://github.com/KatrielMoses/MailAccess",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/mailinator.md",
+  "id": "mailinator",
+  "name": "Mailinator",
+  "url": "https://www.mailinator.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-verification/mailscrap.md",
+  "id": "mailscrap",
+  "name": "MailScrap",
+  "url": "https://mailscrap.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/mailtester.md",
+  "id": "mailtester",
+  "name": "MailTester",
+  "url": "http://mailtester.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/manycontacts-sn-results.md",
+  "id": "manycontacts-sn-results",
+  "name": "ManyContacts (SN Results)",
+  "url": "https://www.manycontacts.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/metric-sparrow-email-permulator.md",
+  "id": "metric-sparrow-email-permulator",
+  "name": "Metric Sparrow email permulator",
+  "url": "http://metricsparrow.com/toolkit/email-permutator/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/minerva-osint.md",
+  "id": "minerva-osint",
+  "name": "Minerva OSINT",
+  "url": "https://minervaosint.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/monitor-firefox-com.md",
+  "id": "monitor-firefox-com",
+  "name": "monitor.firefox.com",
+  "url": "https://monitor.firefox.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/multirbl.md",
+  "id": "multirbl",
+  "name": "Multirbl",
+  "url": "https://multirbl.valli.org/dnsbl-lookup",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/mail-blacklists/mxtoolbox.md",
+  "id": "mxtoolbox",
+  "name": "MxToolbox",
+  "url": "https://mxtoolbox.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/mxtoolbox-blacklists.md",
+  "id": "mxtoolbox-blacklists",
+  "name": "MXToolbox: Blacklists",
+  "url": "https://mxtoolbox.com/blacklists.aspx",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/mxtoolbox-com-2.md",
+  "id": "mxtoolbox-com-2",
+  "name": "mxtoolbox.com",
+  "url": "http://www.mxtoolbox.com/emailheaders.aspx",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/name2email-by-reply-chrome-google-com.md",
+  "id": "name2email-by-reply-chrome-google-com",
+  "name": "name2email by reply (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/name2email-by-reply/mnbdclgaeiapdnhfpbfalfjfcjddfaii?hl=en",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/noimosiny-com.md",
+  "id": "noimosiny-com",
+  "name": "noimosiny.com",
+  "url": "https://noimosiny.com/",
+  "category": "email",
+  "mp": "high"
+ }
+]

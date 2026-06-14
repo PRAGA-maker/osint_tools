@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/newsinshorts.md",
+  "id": "newsinshorts",
+  "name": "Newsinshorts",
+  "url": "http://newsinshorts.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newslink.md",
+  "id": "newslink",
+  "name": "Newslink",
+  "url": "http://www.newslink.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newslookup.md",
+  "id": "newslookup",
+  "name": "NewsLookup",
+  "url": "http://www.newslookup.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newslookup-com.md",
+  "id": "newslookup-com",
+  "name": "Newslookup.com",
+  "url": "http://newslookup.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newsnow.md",
+  "id": "newsnow",
+  "name": "Newsnow",
+  "url": "https://www.newsnow.co.uk/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newspaper-archive.md",
+  "id": "newspaper-archive",
+  "name": "Newspaper Archive",
+  "url": "https://www.gastearsivi.com/en/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newspaperindex.md",
+  "id": "newspaperindex",
+  "name": "Newspaperindex",
+  "url": "http://www.newspaperindex.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newspapers-com.md",
+  "id": "newspapers-com",
+  "name": "Newspapers.com",
+  "url": "http://www.newspapers.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newspapers-com-2.md",
+  "id": "newspapers-com-2",
+  "name": "Newspapers.com",
+  "url": "https://www.newspapers.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newswhip.md",
+  "id": "newswhip",
+  "name": "NewsWhip",
+  "url": "http://www.newswhip.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/nod.md",
+  "id": "nod",
+  "name": "Nod",
+  "url": "http://get-nod.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/notey.md",
+  "id": "notey",
+  "name": "Notey",
+  "url": "http://www.notey.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/nrc-research-press.md",
+  "id": "nrc-research-press",
+  "name": "NRC Research Press",
+  "url": "http://www.nrcresearchpress.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/oa-mg.md",
+  "id": "oa-mg",
+  "name": "OA.mg",
+  "url": "http://oa.mg",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/one-look-reverse-dictionary.md",
+  "id": "one-look-reverse-dictionary",
+  "name": "One Look Reverse Dictionary",
+  "url": "http://www.onelook.com/reverse-dictionary.shtml",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/onet-pl-poland.md",
+  "id": "onet-pl-poland",
+  "name": "Onet.pl (Poland)",
+  "url": "http://www.onet.pl",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

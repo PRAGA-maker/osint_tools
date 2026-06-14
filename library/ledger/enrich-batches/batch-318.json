@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/mailbox.md",
+  "id": "mailbox",
+  "name": "Mailbox",
+  "url": "https://mailbox.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/mailvelope.md",
+  "id": "mailvelope",
+  "name": "Mailvelope",
+  "url": "https://www.mailvelope.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/maltego-transforms-list.md",
+  "id": "maltego-transforms-list",
+  "name": "Maltego transforms list",
+  "url": "https://github.com/cipher387/maltego-transforms-list",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/master-password.md",
+  "id": "master-password",
+  "name": "Master Password",
+  "url": "http://masterpasswordapp.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/merklemap.md",
+  "id": "merklemap",
+  "name": "Merklemap",
+  "url": "https://www.merklemap.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/microsoft-copilot.md",
+  "id": "microsoft-copilot",
+  "name": "Microsoft Copilot",
+  "url": "https://copilot.microsoft.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/microsoft-edge-development-os-vms.md",
+  "id": "microsoft-edge-development-os-vms",
+  "name": "Microsoft Edge Development OS VMs",
+  "url": "https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/microsoft-flow.md",
+  "id": "microsoft-flow",
+  "name": "Microsoft Flow",
+  "url": "https://flow.microsoft.com/en-us/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/graph-visualization/midins-titan.md",
+  "id": "midins-titan",
+  "name": "MIDINS TITAN",
+  "url": "https://github.com/Med0-n/Midins_Titan-Osint_Tool",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/mihari.md",
+  "id": "mihari",
+  "name": "Mihari",
+  "url": "https://github.com/ninoseki/mihari",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/mitaka.md",
+  "id": "mitaka",
+  "name": "mitaka",
+  "url": "https://github.com/ninoseki/mitaka",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/mozilla-http-observatory.md",
+  "id": "mozilla-http-observatory",
+  "name": "Mozilla HTTP Observatory",
+  "url": "https://developer.mozilla.org/en-US/observatory",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/mp3-spectrum-analyzer.md",
+  "id": "mp3-spectrum-analyzer",
+  "name": "MP3 Spectrum Analyzer",
+  "url": "https://academo.org/demos/spectrum-analyzer/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/nazar.md",
+  "id": "nazar",
+  "name": "NAZAR",
+  "url": "https://github.com/MR-NULL666/NAZAR",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/nginxconfig.md",
+  "id": "nginxconfig",
+  "name": "NGINXconfig",
+  "url": "https://www.digitalocean.com/community/tools/nginx",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/nixintel.md",
+  "id": "nixintel",
+  "name": "NixIntel",
+  "url": "https://nixintel.info/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

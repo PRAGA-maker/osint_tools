@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/vulnerabilities/scanners/web-data-exposure-scanner.md",
+  "id": "web-data-exposure-scanner",
+  "name": "Web Data Exposure Scanner",
+  "url": "https://github.com/eduardoit/web-data-exposure-scanner",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/web-inspector-online-scan.md",
+  "id": "web-inspector-online-scan",
+  "name": "Web Inspector Online Scan",
+  "url": "https://www.webinspector.com/website-malware-scanner/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/web-tech-survey.md",
+  "id": "web-tech-survey",
+  "name": "Web Tech Survey",
+  "url": "https://webtechsurvey.com/website/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/webmeup.md",
+  "id": "webmeup",
+  "name": "WebMeUp",
+  "url": "http://webmeup.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/webroot-brightcloud-url-ip-lookup.md",
+  "id": "webroot-brightcloud-url-ip-lookup",
+  "name": "Webroot BrightCloud URL/IP Lookup",
+  "url": "https://www.brightcloud.com/tools/url-ip-lookup.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/webscore.md",
+  "id": "webscore",
+  "name": "Webscore",
+  "url": "https://garvit835.github.io/WebScore/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/webscout.md",
+  "id": "webscout",
+  "name": "Webscout",
+  "url": "https://webscout.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/website-information.md",
+  "id": "website-information",
+  "name": "Website Information",
+  "url": "https://one-plus.github.io/WebsiteInformation",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/website-informer.md",
+  "id": "website-informer",
+  "name": "Website Informer",
+  "url": "https://website.informer.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/website-search-tool.md",
+  "id": "website-search-tool",
+  "name": "Website search tool",
+  "url": "https://www.aware-online.com/en/osint-tools/website-search-tool/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/websitetechminer-py.md",
+  "id": "websitetechminer-py",
+  "name": "WebsiteTechMiner.py",
+  "url": "https://github.com/cybersader/WebsiteTechMiner-py",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/what-cms.md",
+  "id": "what-cms",
+  "name": "What CMS",
+  "url": "https://whatcms.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whatismyipaddress.md",
+  "id": "whatismyipaddress",
+  "name": "WhatIsMyIPAddress",
+  "url": "http://whatismyipaddress.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/whatweb.md",
+  "id": "whatweb",
+  "name": "WhatWeb",
+  "url": "https://github.com/urbanadventurer/WhatWeb",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/url-expanders/where-does-this-link-go.md",
+  "id": "where-does-this-link-go",
+  "name": "Where Does This Link Go?",
+  "url": "https://wheregoes.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/who-is.md",
+  "id": "who-is",
+  "name": "Who.is",
+  "url": "https://who.is/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

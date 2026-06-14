@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/trendhero.md",
+  "id": "trendhero",
+  "name": "TrendHero",
+  "url": "https://trendhero.io/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/trendsmap.md",
+  "id": "trendsmap",
+  "name": "TrendsMap",
+  "url": "https://trendsmap.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tumblr-search.md",
+  "id": "tumblr-search",
+  "name": "Tumblr Search",
+  "url": "http://www.tumblr.com/search",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tumblr-tool.md",
+  "id": "tumblr-tool",
+  "name": "Tumblr Tool",
+  "url": "http://labs.polsys.net/tools/tumblr/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/twazzup.md",
+  "id": "twazzup",
+  "name": "Twazzup",
+  "url": "http://www.twazzup.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweeplers.md",
+  "id": "tweeplers",
+  "name": "Tweeplers",
+  "url": "https://www.tweeplers.com/map",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweepsmap-unfollows.md",
+  "id": "tweepsmap-unfollows",
+  "name": "Tweepsmap Unfollows",
+  "url": "https://tweepsmap.com/dash/unfollows",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-beaver-friends-following.md",
+  "id": "tweet-beaver-friends-following",
+  "name": "Tweet Beaver Friends Following",
+  "url": "https://tweetbeaver.com/friendsfollowing.php",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-machine.md",
+  "id": "tweet-machine",
+  "name": "Tweet Machine",
+  "url": "https://github.com/0xcyberpj/tweet-machine",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-mapper.md",
+  "id": "tweet-mapper",
+  "name": "Tweet Mapper",
+  "url": "https://keitharm.me/projects/tweet",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-sentiment-visualization.md",
+  "id": "tweet-sentiment-visualization",
+  "name": "Tweet Sentiment Visualization",
+  "url": "https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-topic.md",
+  "id": "tweet-topic",
+  "name": "Tweet Topic",
+  "url": "https://tweettopicexplorer.neoformix.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-tunnel.md",
+  "id": "tweet-tunnel",
+  "name": "Tweet Tunnel",
+  "url": "https://tweettunnel.com/reverse.php",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweetdeck.md",
+  "id": "tweetdeck",
+  "name": "Tweetdeck",
+  "url": "https://tweetdeck.twitter.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweetfeed.md",
+  "id": "tweetfeed",
+  "name": "TweetFeed",
+  "url": "https://tweetfeed.live/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tweetmap-4.md",
+  "id": "tweetmap-4",
+  "name": "TweetMap",
+  "url": "https://www.mapd.com/demos/tweetmap",
+  "category": "social-networks",
+  "mp": "medium"
+ }
+]

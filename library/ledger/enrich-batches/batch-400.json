@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/topotijdreis-nl.md",
+  "id": "topotijdreis-nl",
+  "name": "Topotijdreis.nl",
+  "url": "http://topotijdreis.nl",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/unosat-analyses.md",
+  "id": "unosat-analyses",
+  "name": "UNOSAT Analyses",
+  "url": "https://unosat.org/products",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/utm-grid-zones.md",
+  "id": "utm-grid-zones",
+  "name": "UTM grid zones",
+  "url": "http://dmap.co.uk/utmworld.htm",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/what3words.md",
+  "id": "what3words",
+  "name": "what3words",
+  "url": "http://what3words.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/wildeye.md",
+  "id": "wildeye",
+  "name": "WildEye",
+  "url": "https://global.wildeye.oxpeckers.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/wildlife-trade-portal.md",
+  "id": "wildlife-trade-portal",
+  "name": "Wildlife Trade Portal",
+  "url": "https://www.wildlifetradeportal.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/wildme-and-wildbook.md",
+  "id": "wildme-and-wildbook",
+  "name": "WildMe & WildBook",
+  "url": "https://wildme.org/#/platforms/bass",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/world-database-on-protected-and-conserved-areas.md",
+  "id": "world-database-on-protected-and-conserved-areas",
+  "name": "World Database on Protected and Conserved Areas",
+  "url": "https://www.protectedplanet.net/en/search-areas?geo_type=site",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/messaging/telegram-osint-2022.md",
+  "id": "telegram-osint-2022",
+  "name": "Telegram-OSINT-2022",
+  "url": "https://github.com/arcx1/Telegram-OSINT-2022",
+  "category": "messaging",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/10minutemail-com.md",
+  "id": "10minutemail-com",
+  "name": "10minutemail.com",
+  "url": "https://10minutemail.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/2-682-783-free-ai-generated-photos.md",
+  "id": "2-682-783-free-ai-generated-photos",
+  "name": "2,682,783 free AI generated photos",
+  "url": "https://generated.photos/faces",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/5-0-radio-police-scanner-app-mobile-ios.md",
+  "id": "5-0-radio-police-scanner-app-mobile-ios",
+  "name": "5-0 Radio Police Scanner App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/us/app/police-scanner/id498408628",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/9-steps-to-security-in-the-digital-age.md",
+  "id": "9-steps-to-security-in-the-digital-age",
+  "name": "9 Steps to Security in the Digital Age",
+  "url": "https://www.wizcase.com/blog/online-privacy-guide-steps-to-security-in-the-digital-age/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/aba-generator.md",
+  "id": "aba-generator",
+  "name": "ABA Generator",
+  "url": "https://www.fakenamegenerator.com/aba-validator.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/abine-blur-app.md",
+  "id": "abine-blur-app",
+  "name": "Abine Blur App",
+  "url": "http://www.abine.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/account-killer.md",
+  "id": "account-killer",
+  "name": "Account Killer",
+  "url": "https://www.accountkiller.com/en/home",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

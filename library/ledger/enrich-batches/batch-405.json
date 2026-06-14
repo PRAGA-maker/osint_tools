@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/chrome.md",
+  "id": "chrome",
+  "name": "Chrome",
+  "url": "https://www.google.com/chrome",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/chrome-web-store.md",
+  "id": "chrome-web-store",
+  "name": "Chrome Web Store",
+  "url": "https://chromewebstore.google.com/category/extensions",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/citymapper-mapping-app-mobile-android.md",
+  "id": "citymapper-mapping-app-mobile-android",
+  "name": "Citymapper Mapping App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.citymapper.app.release",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/citymapper-mapping-app-mobile-ios.md",
+  "id": "citymapper-mapping-app-mobile-ios",
+  "name": "Citymapper Mapping App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/us/app/citymapper-all-live-transit/id469463298",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/clamxav-anti-virus-for-mac-osx.md",
+  "id": "clamxav-anti-virus-for-mac-osx",
+  "name": "ClamXAV Anti-Virus for Mac OSX",
+  "url": "https://www.clamxav.com/store",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/click-and-clean-extension-chrome.md",
+  "id": "click-and-clean-extension-chrome",
+  "name": "Click&Clean Extension (Chrome)",
+  "url": "https://chromewebstore.google.com/detail/clickclean/ghgabhipcejejjmhhchfonmamedcbeod",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/cligpt.md",
+  "id": "cligpt",
+  "name": "CLIGPT",
+  "url": "https://github.com/paij0se/cligpt",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/cloudwards.md",
+  "id": "cloudwards",
+  "name": "Cloudwards",
+  "url": "https://www.cloudwards.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/codegent-chinese-mandarin-phrases-app-mobile-android.md",
+  "id": "codegent-chinese-mandarin-phrases-app-mobile-android",
+  "name": "Codegent Chinese Mandarin Phrases App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.codegent.apps.learn.chinese&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/comodo-dragon.md",
+  "id": "comodo-dragon",
+  "name": "Comodo Dragon",
+  "url": "https://www.comodo.com/home/browsers-toolbars/browser.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/comodo-free-antivirus.md",
+  "id": "comodo-free-antivirus",
+  "name": "Comodo Free Antivirus",
+  "url": "https://antivirus.comodo.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/consumer-reports-security-planner.md",
+  "id": "consumer-reports-security-planner",
+  "name": "Consumer Reports Security Planner",
+  "url": "https://securityplanner.consumerreports.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/coowon.md",
+  "id": "coowon",
+  "name": "Coowon",
+  "url": "http://coowon.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/counter-osint-guide-for-russians.md",
+  "id": "counter-osint-guide-for-russians",
+  "name": "Counter-OSINT guide for Russians",
+  "url": "https://github.com/soxoj/counter-osint-guide-ru",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/coveryourtracks-eff-org.md",
+  "id": "coveryourtracks-eff-org",
+  "name": "coveryourtracks.eff.org",
+  "url": "https://coveryourtracks.eff.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/crackstation-net.md",
+  "id": "crackstation-net",
+  "name": "CrackStation.net",
+  "url": "https://crackstation.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/magicplan-floor-plans-and-estimates-app-mobile-ios.md",
+  "id": "magicplan-floor-plans-and-estimates-app-mobile-ios",
+  "name": "MagicPlan Floor Plans and Estimates App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/magicplan/id427424432?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/magnifying-glass-tool-app-mobile-ios.md",
+  "id": "magnifying-glass-tool-app-mobile-ios",
+  "name": "Magnifying Glass Tool App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/magnifying-glass-light-digital/id406048120?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/maildrop.md",
+  "id": "maildrop",
+  "name": "MailDrop",
+  "url": "https://maildrop.cc/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/malwarebytes-anti-malware.md",
+  "id": "malwarebytes-anti-malware",
+  "name": "Malwarebytes Anti-Malware",
+  "url": "https://www.malwarebytes.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/malwoverview.md",
+  "id": "malwoverview",
+  "name": "MALWOVERVIEW",
+  "url": "https://github.com/alexandreborges/malwoverview",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/many-passwords.md",
+  "id": "many-passwords",
+  "name": "Many Passwords",
+  "url": "https://many-passwords.github.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/manytools.md",
+  "id": "manytools",
+  "name": "Manytools",
+  "url": "https://manytools.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/markmap.md",
+  "id": "markmap",
+  "name": "MARKMAP",
+  "url": "https://markmap.js.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/markwhen.md",
+  "id": "markwhen",
+  "name": "MarkWhen",
+  "url": "https://markwhen.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/match-social-networking-app-mobile-android.md",
+  "id": "match-social-networking-app-mobile-android",
+  "name": "Match Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.match.android.matchmobile",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/matweb-info.md",
+  "id": "matweb-info",
+  "name": "Matweb.info",
+  "url": "https://matweb.info/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/maxthon.md",
+  "id": "maxthon",
+  "name": "Maxthon",
+  "url": "http://www.maxthon.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/mcafee-anti-virus-for-pc.md",
+  "id": "mcafee-anti-virus-for-pc",
+  "name": "McAfee Anti-Virus (for PC)",
+  "url": "http://www.mcafee.com/us",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/mcafee-internet-security-for-mac.md",
+  "id": "mcafee-internet-security-for-mac",
+  "name": "McAfee Internet Security (for Mac)",
+  "url": "http://home.mcafee.com/store/mac-internet-security",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/meetup-social-networking-app-mobile-android.md",
+  "id": "meetup-social-networking-app-mobile-android",
+  "name": "MeetUp Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.meetup",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/mega.md",
+  "id": "mega",
+  "name": "MEGA",
+  "url": "https://mega.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

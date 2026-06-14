@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/niosh-chemical-hazards-pocket-guide-app-mobile-ios.md",
+  "id": "niosh-chemical-hazards-pocket-guide-app-mobile-ios",
+  "name": "NIOSH Chemical Hazards Pocket Guide App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/chemical-hazards-pocket-guide/id337472634?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/norton-safeweb-rating-search.md",
+  "id": "norton-safeweb-rating-search",
+  "name": "Norton Safeweb Rating Search",
+  "url": "http://safeweb.norton.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/note-board-management-extension-chrome.md",
+  "id": "note-board-management-extension-chrome",
+  "name": "Note Board Management Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/note-board/goficmpcgcnombioohjcgdhbaloknabb",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/off-the-record-instant-messaging-plug-in.md",
+  "id": "off-the-record-instant-messaging-plug-in",
+  "name": "Off-The-Record Instant Messaging Plug-In",
+  "url": "https://otr.cypherpunks.ca/index.php#faqs",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/offen-osint.md",
+  "id": "offen-osint",
+  "name": "Offen Osint",
+  "url": "https://github.com/Double2Sky/OffenOsint",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/offensive-security-cheatsheet-haax-fr.md",
+  "id": "offensive-security-cheatsheet-haax-fr",
+  "name": "Offensive Security Cheatsheet (haax.fr)",
+  "url": "https://cheatsheet.haax.fr/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/okcupid-social-networking-app-mobile-android.md",
+  "id": "okcupid-social-networking-app-mobile-android",
+  "name": "OKCupid Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.okcupid.okcupid",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/one-time-mobile-by-osintstash.md",
+  "id": "one-time-mobile-by-osintstash",
+  "name": "One-time Mobile by @OsintStash",
+  "url": "https://threader.app/thread/1199785692274077696",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/onionshare-file-sharing-tool.md",
+  "id": "onionshare-file-sharing-tool",
+  "name": "OnionShare File-Sharing Tool",
+  "url": "https://onionshare.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/online-link-scan.md",
+  "id": "online-link-scan",
+  "name": "Online Link Scan",
+  "url": "http://onlinelinkscan.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/openmedia.md",
+  "id": "openmedia",
+  "name": "OpenMedia",
+  "url": "https://openmedia.org/en/ca",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/opera.md",
+  "id": "opera",
+  "name": "Opera",
+  "url": "http://www.opera.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/osint-vm-inforensics.md",
+  "id": "osint-vm-inforensics",
+  "name": "osint-vm (Inforensics)",
+  "url": "https://github.com/Inforensics/osint-vm",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/osintbox.md",
+  "id": "osintbox",
+  "name": "osintBOX",
+  "url": "https://github.com/Dimaslg/osintBOX",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/osintlab.md",
+  "id": "osintlab",
+  "name": "OSINTLAB",
+  "url": "https://github.com/Purpl3-Dev/OSINTLAB",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/osintux.md",
+  "id": "osintux",
+  "name": "Osintux",
+  "url": "http://www.osintux.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

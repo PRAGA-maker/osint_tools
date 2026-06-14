@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/plotly.md",
+  "id": "plotly",
+  "name": "Plotly",
+  "url": "https://plot.ly",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/preceden.md",
+  "id": "preceden",
+  "name": "Preceden",
+  "url": "https://www.preceden.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/prism.md",
+  "id": "prism",
+  "name": "PRISM",
+  "url": "https://github.com/NovaCode37/Prism-platform",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/privacy-badger.md",
+  "id": "privacy-badger",
+  "name": "Privacy Badger",
+  "url": "https://www.eff.org/privacybadger",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/privacy-com.md",
+  "id": "privacy-com",
+  "name": "Privacy.com",
+  "url": "https://privacy.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/privazer.md",
+  "id": "privazer",
+  "name": "Privazer",
+  "url": "http://privazer.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/proton-mail.md",
+  "id": "proton-mail",
+  "name": "Proton Mail",
+  "url": "https://protonmail.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/psn-monitor.md",
+  "id": "psn-monitor",
+  "name": "psn_monitor",
+  "url": "https://github.com/misiektoja/psn_monitor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pyba.md",
+  "id": "pyba",
+  "name": "Pyba",
+  "url": "https://github.com/fauvidoTechnologies/PyBrowserAutomation/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pygreynoise.md",
+  "id": "pygreynoise",
+  "name": "pygreynoise",
+  "url": "https://github.com/GreyNoise-Intelligence/pygreynoise",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/python-code-checker.md",
+  "id": "python-code-checker",
+  "name": "Python Code Checker",
+  "url": "https://extendsclass.com/python-tester.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/python-osint-automation-examples.md",
+  "id": "python-osint-automation-examples",
+  "name": "Python OSINT automation examples",
+  "url": "https://github.com/cipher387/Python-osint-automation-examples",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pywhat.md",
+  "id": "pywhat",
+  "name": "pywhat",
+  "url": "https://pypi.org/project/pywhat/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/qlikview.md",
+  "id": "qlikview",
+  "name": "QlikView",
+  "url": "https://www.visualintelligence.co.nz/qlikview",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/quadrigram.md",
+  "id": "quadrigram",
+  "name": "Quadrigram",
+  "url": "http://www.quadrigram.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/qubes.md",
+  "id": "qubes",
+  "name": "Qubes",
+  "url": "https://www.qubes-os.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

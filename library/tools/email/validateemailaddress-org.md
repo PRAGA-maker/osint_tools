@@ -1,50 +1,88 @@
 ---
 id: validateemailaddress-org
 name: validateemailaddress.org
-description: 'OSINT tool: validateemailaddress.org.'
+description: Use when you have an email and want a quick web check of its syntax, MX records, and likely deliverability — returns validity/deliverability metadata, not identity.
 url: https://validateemailaddress.org/
 category: email
 path:
 - email
-bestFor: ''
+bestFor: Free single-address email validity check (syntax, MX, SMTP/deliverability).
 selectorsIn:
 - email
 selectorsOut:
-- name
-- social-profile
-- username
+- metadata
+- domain
 status: unknown
 pricing: free
-opsec: unknown
-opsecNote: ''
+costNote: Free single-lookup web utility; capacity and availability of such sites vary.
+opsec: passive
+opsecNote: Performs MX/SMTP checks against the address's mail server from the site's infrastructure, not yours; the subject is not notified.
 humanInLoop: false
 humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: unverified
-trustNote: ''
-missingPersonsRelevance: high
-coverage: []
+trustNote: Generic email-validation site from a third-party link list; operator and method are unconfirmed and its verdicts (like all SMTP checks) are unreliable against catch-all servers.
+missingPersonsRelevance: low
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-aliases: []
+relatedTools:
+- verify-email
+- verify-an-email-address-mailtester
+aliases:
+- validateemailaddress.org
 tags:
 - email
 - Email Related Sites
+- email-validation
 source: uk-osint
 lastVerified: ''
-enrichment: stub
+enrichment: full
 ---
 
 # validateemailaddress.org
 
-> OSINT tool: validateemailaddress.org.
+> A free web utility that checks a single email's syntax, MX records, and likely deliverability — a validity gate, not a person finder.
 
-- **URL:** https://validateemailaddress.org/
-- **Best for:** —
-- **Source:** harvested from `uk-osint`
+## When to use
+You have an `email` from another source and want a fast yes/no on whether it is well-formed and the domain can receive mail, before investing effort pivoting on it. It returns deliverability `metadata` and `domain` (MX) info — not a `name`, `phone`, or `social-profile`.
 
-Listed on uk-osint.net under 'Email Related Sites'.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Open `https://validateemailaddress.org/`.
+2. Enter the email and submit.
+3. Read the verdict: format valid?, MX present?, SMTP accepts the mailbox?
+4. Pivot: a valid/deliverable address is worth running through reverse-lookup/breach tools ([[venacus]], [[thatsthem]]); a dead domain is a dead end.
 
-_Enrichment: stub. If stub, complete per `schema/templates/tool.template.md`._
+## Inputs → Outputs
+- **In:** `email`
+- **Out:** `metadata` (validity/deliverability), `domain` (MX)
+- **Empty/negative result looks like:** "invalid"/"no MX", or an ambiguous "accept-all" verdict that does not confirm the specific mailbox.
+
+## Gotchas & OpSec
+- SMTP verdicts are unreliable against catch-all and greylisting servers.
+- Operator and freshness are unverified — use as a sanity check, not proof.
+- OpSec: passive; the probe originates from the site, not you.
+
+## Overlaps ("do both")
+- Same job as [[verify-email]] and [[verify-an-email-address-mailtester]]; cross-check with one of those if the verdict matters.
+
+## Trust & verifiability
+`trust: unverified` — a generic validation site pulled from a third-party list; method and reliability are unconfirmed.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | validateemailaddress-org |
+| category | email |
+| selectorsIn → selectorsOut | email → metadata, domain |
+| pricing / cost | free |
+| trust | unverified |
+| MP relevance | low |
+| interaction | web-manual |
+| opsec | passive |
+| human-in-loop | no |

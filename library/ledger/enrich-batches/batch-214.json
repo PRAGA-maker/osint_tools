@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/maven.md",
+  "id": "maven",
+  "name": "Maven",
+  "url": "http://www.maven.co",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/monster.md",
+  "id": "monster",
+  "name": "Monster",
+  "url": "http://www.monster.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/muckrack.md",
+  "id": "muckrack",
+  "name": "MuckRack",
+  "url": "http://muckrack.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/national-speakers-association.md",
+  "id": "national-speakers-association",
+  "name": "National Speakers Association",
+  "url": "http://www.nsaspeaker.org",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/naukri-india.md",
+  "id": "naukri-india",
+  "name": "Naukri (India)",
+  "url": "http://www.naukri.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/newswise.md",
+  "id": "newswise",
+  "name": "Newswise",
+  "url": "http://www.newswise.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/patent-attorneys-agent-search.md",
+  "id": "patent-attorneys-agent-search",
+  "name": "Patent Attorneys/Agent Search",
+  "url": "https://oedci.uspto.gov/OEDCI/",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/people-search-results-vk.md",
+  "id": "people-search-results-vk",
+  "name": "People search results | VK",
+  "url": "https://vk.com/people",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/prnewswire.md",
+  "id": "prnewswire",
+  "name": "PRNewswire",
+  "url": "https://prnmedia.prnewswire.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/reed-uk.md",
+  "id": "reed-uk",
+  "name": "Reed (UK)",
+  "url": "http://www.reed.co.uk",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/reseacherid.md",
+  "id": "reseacherid",
+  "name": "ReseacherID",
+  "url": "http://www.researcherid.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/rss-vk-to-rss.md",
+  "id": "rss-vk-to-rss",
+  "name": "\u0412\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 RSS VK to RSS",
+  "url": "https://vk-to-rss.appspot.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/seek-australia.md",
+  "id": "seek-australia",
+  "name": "Seek (Australia)",
+  "url": "http://www.seek.com.au",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/seekout.md",
+  "id": "seekout",
+  "name": "Seekout",
+  "url": "https://www.seekout.io |",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/shesource.md",
+  "id": "shesource",
+  "name": "SheSource",
+  "url": "http://www.shesource.org",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/simplyhired.md",
+  "id": "simplyhired",
+  "name": "SimplyHired",
+  "url": "http://www.simplyhired.com",
+  "category": "people-search",
+  "mp": "medium"
+ }
+]

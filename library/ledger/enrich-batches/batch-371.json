@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/geolocation/info-sniper.md",
+  "id": "info-sniper",
+  "name": "Info Sniper",
+  "url": "https://www.infosniper.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/infosniper.md",
+  "id": "infosniper",
+  "name": "Infosniper",
+  "url": "http://www.infosniper.net",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/research-centers/institute-for-strategic-dialogue.md",
+  "id": "institute-for-strategic-dialogue",
+  "name": "Institute for Strategic Dialogue",
+  "url": "https://www.isdglobal.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/tools/international-domain-name-conversion-tool.md",
+  "id": "international-domain-name-conversion-tool",
+  "name": "International Domain Name Conversion Tool",
+  "url": "https://mct.verisign-grs.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/internet-census-2012.md",
+  "id": "internet-census-2012",
+  "name": "Internet Census 2012",
+  "url": "http://census2012.sourceforge.net/paper.html",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/internet-census-search.md",
+  "id": "internet-census-search",
+  "name": "Internet Census Search",
+  "url": "https://www.exfiltrated.com/querystart.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/internetdb-shodan-io.md",
+  "id": "internetdb-shodan-io",
+  "name": "Internetdb.shodan.io",
+  "url": "https://internetdb.shodan.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/intodns-ai.md",
+  "id": "intodns-ai",
+  "name": "IntoDNS.ai",
+  "url": "https://intodns.ai",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ioc-tools/ioc-parser.md",
+  "id": "ioc-parser",
+  "name": "IOC Parser",
+  "url": "https://github.com/armbues/ioc_parser",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ioc-tools/iocextract.md",
+  "id": "iocextract",
+  "name": "iocextract",
+  "url": "https://github.com/InQuest/iocextract",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip-2-geolocation.md",
+  "id": "ip-2-geolocation",
+  "name": "IP 2 Geolocation",
+  "url": "http://ip2geolocation.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip-checking.md",
+  "id": "ip-checking",
+  "name": "IP Checking",
+  "url": "http://www.ipchecking.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/geolocation/ip-fingerprints.md",
+  "id": "ip-fingerprints",
+  "name": "IP Fingerprints",
+  "url": "https://ipfingerprints.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/neighbor-domains/ip-fingerprints-reverse-ip-lookup.md",
+  "id": "ip-fingerprints-reverse-ip-lookup",
+  "name": "IP Fingerprints - Reverse IP Lookup",
+  "url": "https://ipfingerprints.com/reverseip.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip-geo-location-lookup.md",
+  "id": "ip-geo-location-lookup",
+  "name": "IP GEO Location Lookup",
+  "url": "https://osint.sh/ip/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/geolocation/ip-location-finder.md",
+  "id": "ip-location-finder",
+  "name": "IP Location Finder",
+  "url": "https://www.iplocation.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

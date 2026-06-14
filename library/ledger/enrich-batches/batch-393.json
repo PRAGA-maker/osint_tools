@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/automated-transcription-for-radio-stations.md",
+  "id": "automated-transcription-for-radio-stations",
+  "name": "Automated transcription for radio stations",
+  "url": "https://sonix.ai/radio-stations",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/baton-rouge-traffic-cams.md",
+  "id": "baton-rouge-traffic-cams",
+  "name": "Baton Rouge Traffic Cams",
+  "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=0ec05ffb0d2d4735a969e8f31f820a7b",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/broadcastify.md",
+  "id": "broadcastify",
+  "name": "Broadcastify",
+  "url": "https://www.broadcastify.com/listen/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/c4-cams.md",
+  "id": "c4-cams",
+  "name": "C4-cams",
+  "url": "http://c4-cams.qwazwsx.xyz/c4-cams/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/calls-node-status.md",
+  "id": "calls-node-status",
+  "name": "Calls Node Status",
+  "url": "https://www.broadcastify.com/calls/status/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/camhacker-com.md",
+  "id": "camhacker-com",
+  "name": "Camhacker.com",
+  "url": "https://www.camhacker.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/city-webcams-com.md",
+  "id": "city-webcams-com",
+  "name": "city-webcams.com",
+  "url": "https://city-webcams.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/default-router-login.md",
+  "id": "default-router-login",
+  "name": "Default Router Login",
+  "url": "https://www.cleancss.com/router-default/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/explorecams-com.md",
+  "id": "explorecams-com",
+  "name": "Explorecams.com",
+  "url": "https://explorecams.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/feeds-talonvoice-com.md",
+  "id": "feeds-talonvoice-com",
+  "name": "Feeds.talonvoice.com",
+  "url": "https://feeds.talonvoice.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/fisgonia.md",
+  "id": "fisgonia",
+  "name": "Fisgonia",
+  "url": "http://www.fisgonia.com/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/free-wifi-search-engine.md",
+  "id": "free-wifi-search-engine",
+  "name": "Free WiFi Search Engine",
+  "url": "http://instabridge.com/free-wifi/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/ham-radio-qrz-callsign-database-search.md",
+  "id": "ham-radio-qrz-callsign-database-search",
+  "name": "Ham Radio QRZ Callsign Database Search",
+  "url": "https://www.qrz.com/lookup",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/hawaii-traffic-cameras.md",
+  "id": "hawaii-traffic-cameras",
+  "name": "Hawaii Traffic Cameras",
+  "url": "http://goakamai.org/home",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/hong-kong-traffic-data-and-cams.md",
+  "id": "hong-kong-traffic-data-and-cams",
+  "name": "Hong Kong Traffic Data & Cams",
+  "url": "https://www.arcgis.com/apps/dashboards/47be6372a0434beaba99ae9c9f1d598d",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/honolulu-traffic-cams.md",
+  "id": "honolulu-traffic-cams",
+  "name": "Honolulu Traffic Cams",
+  "url": "http://www2.honolulu.gov/honolulumyway/?trafficcam",
+  "category": "geolocation",
+  "mp": "low"
+ }
+]

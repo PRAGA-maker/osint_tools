@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/coloradovoters-info.md",
+  "id": "coloradovoters-info",
+  "name": "Coloradovoters.info",
+  "url": "https://coloradovoters.info/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/commonlawcourt-com.md",
+  "id": "commonlawcourt-com",
+  "name": "commonlawcourt.com",
+  "url": "https://www.commonlawcourt.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/companieshouse-gi.md",
+  "id": "companieshouse-gi",
+  "name": "companieshouse.gi",
+  "url": "https://www.companieshouse.gi/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/companieshouse-im.md",
+  "id": "companieshouse-im",
+  "name": "companieshouse.im",
+  "url": "https://companieshouse.im/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/company-information-service-gov-uk.md",
+  "id": "company-information-service-gov-uk",
+  "name": "company-information.service.gov.uk",
+  "url": "https://find-and-update.company-information.service.gov.uk/advanced-search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/company-information-service-gov-uk-2.md",
+  "id": "company-information-service-gov-uk-2",
+  "name": "company-information.service.gov.uk",
+  "url": "https://find-and-update.company-information.service.gov.uk/dissolved-search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/company-information-service-gov-uk-3.md",
+  "id": "company-information-service-gov-uk-3",
+  "name": "company-information.service.gov.uk",
+  "url": "https://beta.companieshouse.gov.uk/search/disqualified-officers",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/companycheck-co-uk.md",
+  "id": "companycheck-co-uk",
+  "name": "companycheck.co.uk",
+  "url": "https://www.companycheck.co.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/connecticut.md",
+  "id": "connecticut",
+  "name": "Connecticut",
+  "url": "http://www.ctinmateinfo.state.ct.us",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/connvoters-com.md",
+  "id": "connvoters-com",
+  "name": "Connvoters.com",
+  "url": "https://connvoters.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/convicted-alberta-sex-offender.md",
+  "id": "convicted-alberta-sex-offender",
+  "name": "Convicted Alberta Sex Offender",
+  "url": "http://stoppedophiles.ca/convicted-AB.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/convicted-sex-offenders-list.md",
+  "id": "convicted-sex-offenders-list",
+  "name": "Convicted Sex Offenders List",
+  "url": "https://www.ibbclaims.co.uk/site/services/child-abuse-and-trafficking/convicted-offenders/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/corrections-books-approval-search.md",
+  "id": "corrections-books-approval-search",
+  "name": "Corrections Books Approval Search",
+  "url": "https://b2.caspio.com/dp/0a921000cae47f9702f44d2bb94b",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/corrections-com-inmate-locaton-links.md",
+  "id": "corrections-com-inmate-locaton-links",
+  "name": "Corrections.com - Inmate Locaton Links",
+  "url": "https://www.corrections.com/links/20",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/counciltaxrates-info.md",
+  "id": "counciltaxrates-info",
+  "name": "counciltaxrates.info",
+  "url": "https://counciltaxrates.info/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/county-clerks-recorded-doc-s-by-state.md",
+  "id": "county-clerks-recorded-doc-s-by-state",
+  "name": "County Clerks - Recorded Doc's - By State",
+  "url": "http://publicrecords.searchsystems.net/free_public_records_by_type_of_record/recorded_documents",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/openlinkprofiler.md",
+  "id": "openlinkprofiler",
+  "name": "OpenLinkProfiler",
+  "url": "http://www.openlinkprofiler.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/sanctions-and-watchlists/opensanctions-2.md",
+  "id": "opensanctions-2",
+  "name": "OpenSanctions",
+  "url": "https://www.opensanctions.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/advisories/osv-vulnerability-library.md",
+  "id": "osv-vulnerability-library",
+  "name": "OSV Vulnerability Library",
+  "url": "https://osv.dev/list",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/advisories/owasp.md",
+  "id": "owasp",
+  "name": "OWASP",
+  "url": "https://www.owasp.org/index.php/Main_Page",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/owasp-maryam.md",
+  "id": "owasp-maryam",
+  "name": "OWASP Maryam",
+  "url": "https://github.com/saeeddhqan/Maryam",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/exploits/packet-storm.md",
+  "id": "packet-storm",
+  "name": "Packet Storm",
+  "url": "https://packetstormsecurity.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/network-analysis-tools/packet-total.md",
+  "id": "packet-total",
+  "name": "Packet Total",
+  "url": "https://www.packettotal.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/pageglimpse.md",
+  "id": "pageglimpse",
+  "name": "PageGlimpse",
+  "url": "http://www.pageglimpse.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/bgp/peeringdb.md",
+  "id": "peeringdb",
+  "name": "PeeringDB",
+  "url": "https://www.peeringdb.com/advanced_search",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/pentest-tools-com.md",
+  "id": "pentest-tools-com",
+  "name": "Pentest-Tools.com",
+  "url": "https://pentest-tools.com/information-gathering/google-hacking",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/pentest-tools-com-subdomains.md",
+  "id": "pentest-tools-com-subdomains",
+  "name": "Pentest-tools.com Subdomains",
+  "url": "https://pentest-tools.com/information-gathering/find-subdomains-of-domain",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/default-passwords/phenoelit-default-password-list.md",
+  "id": "phenoelit-default-password-list",
+  "name": "Phenoelit Default Password List",
+  "url": "https://phenoelit.org/dpl/dpl.html",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/phishing/phishstats.md",
+  "id": "phishstats",
+  "name": "PhishStats",
+  "url": "https://phishstats.info/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/phishing/phishtank.md",
+  "id": "phishtank",
+  "name": "PhishTank",
+  "url": "https://www.phishtank.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/photon-2.md",
+  "id": "photon-2",
+  "name": "photon",
+  "url": "https://pypi.org/project/photon/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/poodle-check.md",
+  "id": "poodle-check",
+  "name": "Poodle Check",
+  "url": "https://osint.sh/poodle/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

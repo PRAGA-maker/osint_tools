@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/domain-dossier.md",
+  "id": "domain-dossier",
+  "name": "Domain Dossier",
+  "url": "https://centralops.net/co/DomainDossier.aspx",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-intelligence.md",
+  "id": "domain-intelligence",
+  "name": "Domain Intelligence",
+  "url": "https://oti-labs.com/domain-intelligence-api",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-tools.md",
+  "id": "domain-tools",
+  "name": "Domain Tools",
+  "url": "http://whois.domaintools.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domainbigdata.md",
+  "id": "domainbigdata",
+  "name": "domainbigdata",
+  "url": "https://domainbigdata.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/domainiq.md",
+  "id": "domainiq",
+  "name": "domainIQ",
+  "url": "https://www.domainiq.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domainrecon.md",
+  "id": "domainrecon",
+  "name": "DomainRecon",
+  "url": "https://kriztalz.sh/domain-recon/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domaintools-whois-lookup.md",
+  "id": "domaintools-whois-lookup",
+  "name": "DomainTools Whois Lookup",
+  "url": "https://whois.domaintools.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domainwatch.md",
+  "id": "domainwatch",
+  "name": "DomainWatch",
+  "url": "https://domainwat.ch/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/blacklists/dshield-api.md",
+  "id": "dshield-api",
+  "name": "DShield API",
+  "url": "https://isc.sans.edu/api/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/easywhois.md",
+  "id": "easywhois",
+  "name": "easyWhois",
+  "url": "https://www.easywhois.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/email-domain-validation.md",
+  "id": "email-domain-validation",
+  "name": "Email Domain Validation",
+  "url": "https://www.mailboxvalidator.com/domain",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/etda.md",
+  "id": "etda",
+  "name": "ETDA",
+  "url": "https://apt.etda.or.th/cgi-bin/listgroups.cgi",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/ewhois.md",
+  "id": "ewhois",
+  "name": "Ewhois",
+  "url": "https://www.ewhois.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/exonerator.md",
+  "id": "exonerator",
+  "name": "ExoneraTor",
+  "url": "https://exonerator.torproject.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/exploits/exploit-db.md",
+  "id": "exploit-db",
+  "name": "Exploit DB",
+  "url": "https://www.exploit-db.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/tools/eyewitness.md",
+  "id": "eyewitness",
+  "name": "EyeWitness",
+  "url": "https://github.com/ChrisTruncer/EyeWitness",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/extremetech.md",
+  "id": "extremetech",
+  "name": "Extremetech",
+  "url": "http://www.extremetech.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/fark-com.md",
+  "id": "fark-com",
+  "name": "Fark.com",
+  "url": "http://www.fark.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/feedburner.md",
+  "id": "feedburner",
+  "name": "Feedburner",
+  "url": "http://feedburner.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/feeddemon-rss-reader.md",
+  "id": "feeddemon-rss-reader",
+  "name": "Feeddemon RSS Reader",
+  "url": "http://www.feeddemon.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/feedly-rss-reader.md",
+  "id": "feedly-rss-reader",
+  "name": "Feedly RSS Reader",
+  "url": "http://feedly.com/i/welcome",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/financial-post.md",
+  "id": "financial-post",
+  "name": "Financial Post",
+  "url": "http://www.financialpost.com/index.html",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/flipkey.md",
+  "id": "flipkey",
+  "name": "FlipKey",
+  "url": "https://www.flipkey.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/fohboh.md",
+  "id": "fohboh",
+  "name": "Fohboh",
+  "url": "http://fohboh.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/food-network-canada.md",
+  "id": "food-network-canada",
+  "name": "Food Network (Canada)",
+  "url": "http://www.foodnetwork.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/footballforums-net.md",
+  "id": "footballforums-net",
+  "name": "footballforums.net",
+  "url": "http://www.footballforums.net/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forbes-magazine.md",
+  "id": "forbes-magazine",
+  "name": "Forbes Magazine",
+  "url": "https://www.forbes.com/#6f293ee82254",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/fortune-magazine.md",
+  "id": "fortune-magazine",
+  "name": "Fortune Magazine",
+  "url": "http://fortune.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forum-cyclinguk-org.md",
+  "id": "forum-cyclinguk-org",
+  "name": "forum.cyclinguk.org",
+  "url": "https://forum.cyclinguk.org/index.php?sid=57457d819c3cfd3c4bd95753664061ef",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forum-irishmilitaryonline-com.md",
+  "id": "forum-irishmilitaryonline-com",
+  "name": "forum.irishmilitaryonline.com",
+  "url": "http://forum.irishmilitaryonline.com/forum.php?s=52cb61ecc40d31ed3a74680567d6ce04",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forum-officer-com.md",
+  "id": "forum-officer-com",
+  "name": "forum.officer.com",
+  "url": "https://forum.officer.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forums-digitalspy-com.md",
+  "id": "forums-digitalspy-com",
+  "name": "forums.digitalspy.com",
+  "url": "https://forums.digitalspy.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

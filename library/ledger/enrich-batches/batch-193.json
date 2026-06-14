@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/astronomy-sun-moon-eclipses.md",
+  "id": "astronomy-sun-moon-eclipses",
+  "name": "Astronomy - Sun - Moon - Eclipses",
+  "url": "https://www.timeanddate.com/astronomy",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/bellingcat-openstreetmap-search.md",
+  "id": "bellingcat-openstreetmap-search",
+  "name": "Bellingcat OpenStreetMap Search",
+  "url": "https://osm-search.bellingcat.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/camvista.md",
+  "id": "camvista",
+  "name": "CamVista",
+  "url": "http://www.camvista.com",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/carte-ma.md",
+  "id": "carte-ma",
+  "name": "Carte.ma",
+  "url": "http://carte.ma/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/crisisgroup.md",
+  "id": "crisisgroup",
+  "name": "Crisisgroup",
+  "url": "https://www.crisisgroup.org/crisiswatch",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/currentmillis-com.md",
+  "id": "currentmillis-com",
+  "name": "currentmillis.com",
+  "url": "https://currentmillis.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/datacore-gn-unepgrid-ch.md",
+  "id": "datacore-gn-unepgrid-ch",
+  "name": "Datacore-gn.unepgrid.ch",
+  "url": "https://datacore-gn.unepgrid.ch/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/earth-engine-dataset.md",
+  "id": "earth-engine-dataset",
+  "name": "Earth Engine Dataset",
+  "url": "https://developers.google.com/earth-engine/datasets/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/emmeline-carto-com.md",
+  "id": "emmeline-carto-com",
+  "name": "emmeline.carto.com",
+  "url": "https://emmeline.carto.com/me",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/epoch101-com.md",
+  "id": "epoch101-com",
+  "name": "epoch101.com",
+  "url": "https://www.epoch101.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/epochconverter-com.md",
+  "id": "epochconverter-com",
+  "name": "epochconverter.com",
+  "url": "https://www.epochconverter.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/epochconverter-io.md",
+  "id": "epochconverter-io",
+  "name": "epochconverter.io",
+  "url": "https://www.epochconverter.io/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/fao-map-catalog.md",
+  "id": "fao-map-catalog",
+  "name": "FAO Map Catalog",
+  "url": "https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/home",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/forensicosint-com-4.md",
+  "id": "forensicosint-com-4",
+  "name": "forensicosint.com",
+  "url": "https://www.forensicosint.com/free-tools/osint-timestamp-decoder",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/geohints.md",
+  "id": "geohints",
+  "name": "GeoHints",
+  "url": "https://geohints.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/geoint.md",
+  "id": "geoint",
+  "name": "GEOINT",
+  "url": "https://start.me/p/W1kDAj/geoint",
+  "category": "geolocation",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/research-centers/csis-warfare-irregular-threats-and-terrorism-program.md",
+  "id": "csis-warfare-irregular-threats-and-terrorism-program",
+  "name": "CSIS Warfare, Irregular Threats, and Terrorism Program",
+  "url": "https://www.csis.org/programs/warfare-irregular-threats-and-terrorism-program",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/advisories/cve-details.md",
+  "id": "cve-details",
+  "name": "CVE Details",
+  "url": "https://www.cvedetails.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/advisories/cve-mitre.md",
+  "id": "cve-mitre",
+  "name": "CVE - MITRE",
+  "url": "https://www.cve.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/cymon-open-threat-intelligence.md",
+  "id": "cymon-open-threat-intelligence",
+  "name": "Cymon Open Threat Intelligence",
+  "url": "https://cymon.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/daily-dns-changes.md",
+  "id": "daily-dns-changes",
+  "name": "Daily DNS Changes",
+  "url": "https://dailychanges.domaintools.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/daily-dns-changes-2.md",
+  "id": "daily-dns-changes-2",
+  "name": "Daily DNS Changes",
+  "url": "https://dailychanges.domaintools.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/dark-web-informer.md",
+  "id": "dark-web-informer",
+  "name": "Dark Web Informer",
+  "url": "https://darkwebinformer.com/threat-actor-database/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/geolocation/db-ip.md",
+  "id": "db-ip",
+  "name": "DB-IP",
+  "url": "https://db-ip.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/dedicated-or-not.md",
+  "id": "dedicated-or-not",
+  "name": "Dedicated or Not",
+  "url": "http://dedicatedornot.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/deepviz-domain-search.md",
+  "id": "deepviz-domain-search",
+  "name": "Deepviz Domain Search",
+  "url": "https://search.deepviz.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/default-passwords/default-password-lookup-utility.md",
+  "id": "default-password-lookup-utility",
+  "name": "Default Password Lookup Utility",
+  "url": "https://fortypoundhead.com/tools_dpw.asp",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/default-passwords/default-passwords-db.md",
+  "id": "default-passwords-db",
+  "name": "Default Passwords DB",
+  "url": "https://cirt.net/passwords/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/default-passwords/default-passwords-list.md",
+  "id": "default-passwords-list",
+  "name": "Default passwords list",
+  "url": "https://default-password.info/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/default-passwords/default-router-passwords.md",
+  "id": "default-router-passwords",
+  "name": "Default Router Passwords",
+  "url": "https://www.routerpasswords.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/passivedns/deteque.md",
+  "id": "deteque",
+  "name": "Deteque",
+  "url": "https://www.deteque.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before.md",
+  "id": "determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before",
+  "name": "Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before",
+  "url": "https://www.cookiemetrix.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

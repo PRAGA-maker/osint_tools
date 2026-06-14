@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/hong-kong-securities-and-futures-commission.md",
+  "id": "hong-kong-securities-and-futures-commission",
+  "name": "Hong Kong Securities & Futures Commission",
+  "url": "http://www.sfc.hk/web/EN/index.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/hotbot-meta-search-engine.md",
+  "id": "hotbot-meta-search-engine",
+  "name": "Hotbot Meta Search Engine",
+  "url": "http://www.hotbot.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/hotpads-real-estate-search-engine.md",
+  "id": "hotpads-real-estate-search-engine",
+  "name": "HotPads Real Estate Search Engine",
+  "url": "https://hotpads.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/https-vulmon-com.md",
+  "id": "https-vulmon-com",
+  "name": "https://vulmon.com/",
+  "url": "https://vulmon.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/hubii.md",
+  "id": "hubii",
+  "name": "Hubii",
+  "url": "https://hubii.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/hulbee.md",
+  "id": "hulbee",
+  "name": "Hulbee",
+  "url": "https://hulbee.com/de",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/hunter-search-engine.md",
+  "id": "hunter-search-engine",
+  "name": "Hunter Search Engine",
+  "url": "https://hunter.how/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/i-intelligence-osint-handbook-2025.md",
+  "id": "i-intelligence-osint-handbook-2025",
+  "name": "i-intelligence OSINT Handbook (2025)",
+  "url": "https://www.osinthandbook.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ialeia.md",
+  "id": "ialeia",
+  "name": "IALEIA",
+  "url": "http://www.ialeia.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ibj-criminal-defense-wiki.md",
+  "id": "ibj-criminal-defense-wiki",
+  "name": "IBJ Criminal Defense Wiki",
+  "url": "http://defensewiki.ibj.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/incruit-job-search-engine-south-korea.md",
+  "id": "incruit-job-search-engine-south-korea",
+  "name": "Incruit Job Search Engine (South Korea)",
+  "url": "http://www.incruit.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/indeed-job-search-engine-canada.md",
+  "id": "indeed-job-search-engine-canada",
+  "name": "Indeed Job Search Engine (Canada)",
+  "url": "http://ca.indeed.com/?r=us",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/indeed-job-search-engine-worldwide.md",
+  "id": "indeed-job-search-engine-worldwide",
+  "name": "Indeed Job Search Engine Worldwide",
+  "url": "http://www.indeed.com/advanced_search?q=Usa",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/info-com-meta-search-engine-united-kingdom.md",
+  "id": "info-com-meta-search-engine-united-kingdom",
+  "name": "Info.com Meta Search Engine (United Kingdom)",
+  "url": "http://info.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/infospace-2.md",
+  "id": "infospace-2",
+  "name": "Infospace",
+  "url": "https://www.infospace.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/infotrail.md",
+  "id": "infotrail",
+  "name": "InfoTrail",
+  "url": "https://infotrail.io",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

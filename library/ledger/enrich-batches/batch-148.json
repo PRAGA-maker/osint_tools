@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/world-cat.md",
+  "id": "world-cat",
+  "name": "World Cat",
+  "url": "https://worldcat.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/yahoo.md",
+  "id": "yahoo",
+  "name": "Yahoo",
+  "url": "https://yahoo.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/4chan.md",
+  "id": "4chan",
+  "name": "4Chan",
+  "url": "http://www.4chan.org",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/4chan-search.md",
+  "id": "4chan-search",
+  "name": "4chan Search",
+  "url": "https://4chansearch.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/51-com-china.md",
+  "id": "51-com-china",
+  "name": "51.com (China)",
+  "url": "http://51.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/a-small-world.md",
+  "id": "a-small-world",
+  "name": "A Small World",
+  "url": "https://www.asmallworld.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/abc-news-united-states.md",
+  "id": "abc-news-united-states",
+  "name": "ABC News (United States)",
+  "url": "http://abcnews.go.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/abc-television-australia.md",
+  "id": "abc-television-australia",
+  "name": "ABC Television (Australia)",
+  "url": "http://www.abc.net.au/tv",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/actualidad-world-newspapers-online.md",
+  "id": "actualidad-world-newspapers-online",
+  "name": "Actualidad World Newspapers Online",
+  "url": "http://www.actualidad.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/adult-friendfinder.md",
+  "id": "adult-friendfinder",
+  "name": "Adult Friendfinder",
+  "url": "http://adultfriendfinder.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/airbnb.md",
+  "id": "airbnb",
+  "name": "Airbnb",
+  "url": "https://www.airbnb.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/alltop-micronews-website.md",
+  "id": "alltop-micronews-website",
+  "name": "Alltop Micronews Website",
+  "url": "https://alltop.com/news",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/alt-com.md",
+  "id": "alt-com",
+  "name": "Alt.com",
+  "url": "http://alt.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/alumni-net.md",
+  "id": "alumni-net",
+  "name": "Alumni.net",
+  "url": "https://www.alumni.net",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/analystforum-com.md",
+  "id": "analystforum-com",
+  "name": "analystforum.com",
+  "url": "https://www.analystforum.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/aol-travel.md",
+  "id": "aol-travel",
+  "name": "AOL Travel",
+  "url": "https://www.aol.com/travel/",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

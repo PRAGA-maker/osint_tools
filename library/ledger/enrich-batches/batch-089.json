@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/os-divorce-records.md",
+  "id": "os-divorce-records",
+  "name": "OS Divorce Records",
+  "url": "http://publicrecords.onlinesearches.com/divorce-records.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/osint-for-countries-wddadk.md",
+  "id": "osint-for-countries-wddadk",
+  "name": "OSINT for Countries (wddadk)",
+  "url": "https://github.com/wddadk/OSINT-for-countries",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/osint-list-of-public-sex-offenders-registers-osintme-com.md",
+  "id": "osint-list-of-public-sex-offenders-registers-osintme-com",
+  "name": "OSINT list of public sex offenders registers \u2013 osintme.com",
+  "url": "https://www.osintme.com/index.php/2021/08/31/osint-list-of-public-sex-offenders-registers/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/pa-teacher-salary-average.md",
+  "id": "pa-teacher-salary-average",
+  "name": "PA teacher salary average",
+  "url": "https://b2.caspio.com/dp/0a921000a059622d4771466aab79",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/pacer.md",
+  "id": "pacer",
+  "name": "PACER",
+  "url": "https://www.pacer.gov",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/pacer-case-locator.md",
+  "id": "pacer-case-locator",
+  "name": "PACER Case Locator",
+  "url": "https://pcl.uscourts.gov/pcl/index.jsf",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/pappers-fr.md",
+  "id": "pappers-fr",
+  "name": "pappers.fr",
+  "url": "https://www.pappers.fr/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/parallelsearch-case-law.md",
+  "id": "parallelsearch-case-law",
+  "name": "Parallelsearch case law",
+  "url": "https://parallelsearch.casetext.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/pennsylvania.md",
+  "id": "pennsylvania",
+  "name": "Pennsylvania",
+  "url": "http://inmatelocator.cor.pa.gov",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/people-search-4.md",
+  "id": "people-search-4",
+  "name": "People Search",
+  "url": "https://www.peoplesearch.ph",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/permits-and-inspections-search-by-state.md",
+  "id": "permits-and-inspections-search-by-state",
+  "name": "Permits and Inspections Search (by State)",
+  "url": "https://publicrecords.onlinesearches.com/permits-and-inspections.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/pharmacyregulation-org.md",
+  "id": "pharmacyregulation-org",
+  "name": "pharmacyregulation.org",
+  "url": "https://www.pharmacyregulation.org/registers",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/pipl-us-warning-slow.md",
+  "id": "pipl-us-warning-slow",
+  "name": "Pipl US (warning: slow)",
+  "url": "https://bloopbase.keybase.pub/POPPY/PIPL/index.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/planning-org-uk.md",
+  "id": "planning-org-uk",
+  "name": "planning.org.uk",
+  "url": "https://planning.org.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/planningalerts-org-au.md",
+  "id": "planningalerts-org-au",
+  "name": "planningalerts.org.au",
+  "url": "https://www.planningalerts.org.au/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/planningportal-nsw-gov-au.md",
+  "id": "planningportal-nsw-gov-au",
+  "name": "planningportal.nsw.gov.au",
+  "url": "https://www.planningportal.nsw.gov.au/spatialviewer/#/find-a-property/address",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

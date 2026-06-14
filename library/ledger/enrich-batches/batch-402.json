@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymouse-premium-59-y.md",
+  "id": "anonymouse-premium-59-y",
+  "name": "Anonymouse (Premium 59 $/Y)",
+  "url": "https://anonymousemail.me",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymouse-web-proxy.md",
+  "id": "anonymouse-web-proxy",
+  "name": "Anonymouse Web Proxy",
+  "url": "http://anonymouse.org/anonwww.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anonymox.md",
+  "id": "anonymox",
+  "name": "AnonymoX",
+  "url": "https://www.anonymox.net/en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/anydo-management-app-mobile-android.md",
+  "id": "anydo-management-app-mobile-android",
+  "name": "Anydo Management App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.anydo",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/aol-explorer-for-windows-systems.md",
+  "id": "aol-explorer-for-windows-systems",
+  "name": "AOL Explorer (for Windows systems)",
+  "url": "http://discover.aol.com/products-and-services/aol-desktop-for-windows",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/apple-app-store.md",
+  "id": "apple-app-store",
+  "name": "Apple App Store",
+  "url": "https://apps.apple.com/ca/charts/iphone",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/apple-maps-app-mobile-ios.md",
+  "id": "apple-maps-app-mobile-ios",
+  "name": "Apple Maps App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/ca/app/maps/id915056765",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/apple-music-app-mobile-android.md",
+  "id": "apple-music-app-mobile-android",
+  "name": "Apple Music App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.apple.android.music",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/appyparking.md",
+  "id": "appyparking",
+  "name": "AppyParking",
+  "url": "https://appyparking.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/archstrike.md",
+  "id": "archstrike",
+  "name": "ArchStrike",
+  "url": "https://archstrike.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/argos-osint-workstation.md",
+  "id": "argos-osint-workstation",
+  "name": "Argos OSINT Workstation",
+  "url": "https://github.com/SOsintOps/Argos",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/atom.md",
+  "id": "atom",
+  "name": "Atom",
+  "url": "https://browser.ru/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/attifyos.md",
+  "id": "attifyos",
+  "name": "AttifyOS",
+  "url": "https://github.com/adi0x90/attifyos",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/australian-local-government-association-alga.md",
+  "id": "australian-local-government-association-alga",
+  "name": "Australian Local Government Association (ALGA)",
+  "url": "http://alga.asn.au/?ID=134",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/avast-free-antivirus-for-pc-or-mac.md",
+  "id": "avast-free-antivirus-for-pc-or-mac",
+  "name": "Avast! Free Antivirus (for PC or Mac)",
+  "url": "https://www.avast.com/en-ca/index",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/avg-antivirus-for-mac.md",
+  "id": "avg-antivirus-for-mac",
+  "name": "AVG Antivirus (for Mac)",
+  "url": "https://www.avg.com/en-ca/homepage#mac",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

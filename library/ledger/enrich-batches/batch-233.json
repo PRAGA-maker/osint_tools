@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/tendersinfo.md",
+  "id": "tendersinfo",
+  "name": "TendersInfo",
+  "url": "https://www.tendersinfo.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/tess.md",
+  "id": "tess",
+  "name": "TESS",
+  "url": "https://tmsearch.uspto.gov/bin/gate.exe?f=login&p_lang=english&p_d=trmk",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/texas-local-superintendent-salaries-search-and-report.md",
+  "id": "texas-local-superintendent-salaries-search-and-report",
+  "name": "Texas Local Superintendent Salaries Search and Report",
+  "url": "https://b3.caspio.com/dp/5a5b1000b41b35162a3844b4b7ec",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/tgcg-members-page.md",
+  "id": "tgcg-members-page",
+  "name": "TGCG Members Page",
+  "url": "https://c2ffn114.caspio.com/dp/e6a74000833e44e23c324a10987c",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/the-inmate-locator.md",
+  "id": "the-inmate-locator",
+  "name": "The Inmate Locator",
+  "url": "https://www.bop.gov/inmateloc/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/the-nypd-files.md",
+  "id": "the-nypd-files",
+  "name": "The NYPD Files",
+  "url": "https://projects.propublica.org/nypd-ccrb/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/the-pegasus-project-occrp.md",
+  "id": "the-pegasus-project-occrp",
+  "name": "The Pegasus Project \\| OCCRP",
+  "url": "https://cdn.occrp.org/projects/project-p/#/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/the-philadelphia-police-misconduct-database.md",
+  "id": "the-philadelphia-police-misconduct-database",
+  "name": "The Philadelphia Police Misconduct Database",
+  "url": "https://datawrapper.dwcdn.net/3GbVI/1/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/the-world-bank-open-data-catalog.md",
+  "id": "the-world-bank-open-data-catalog",
+  "name": "The World Bank Open Data Catalog",
+  "url": "https://datacatalog.worldbank.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/thewebco.md",
+  "id": "thewebco",
+  "name": "TheWebCo",
+  "url": "https://thewebco.ai",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/tmdn-design-view.md",
+  "id": "tmdn-design-view",
+  "name": "TMDN Design View",
+  "url": "https://www.tmdn.org/tmdsview-web/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/toronto-police-service.md",
+  "id": "toronto-police-service",
+  "name": "Toronto Police Service",
+  "url": "https://bloopbase.keybase.pub/ACAB/TPS/index.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/tracxn.md",
+  "id": "tracxn",
+  "name": "Tracxn",
+  "url": "https://tracxn.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/trinka.md",
+  "id": "trinka",
+  "name": "Trinka",
+  "url": "http://trinka.ai",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/trouver-une-d-cision.md",
+  "id": "trouver-une-d-cision",
+  "name": "Trouver une d\u00e9cision",
+  "url": "http://citoyens.soquij.qc.ca/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/trulia-real-estate-listings-homes-for-sale-housing-data.md",
+  "id": "trulia-real-estate-listings-homes-for-sale-housing-data",
+  "name": "Trulia: Real Estate Listings, Homes For Sale, Housing Data",
+  "url": "https://www.trulia.com",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

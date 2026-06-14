@@ -1,50 +1,88 @@
 ---
 id: gpsvisualizer
 name: GPSVisualizer
-description: Converting and visualizing GPS/coordinate inputs
+description: Use when you have raw `geolocation` coordinates, a list of `address`es, or a GPX/KML/CSV track and need to geocode, convert, and plot them on a map.
 url: https://www.gpsvisualizer.com/geocode
 category: geolocation
 path:
 - geolocation
 - coordinates
-bestFor: Converting and visualizing GPS/coordinate inputs
-input: Coordinates, GPX/KML/CSV, or addresses
-output: Mapped tracks, converted coordinates, and geocode results
-selectorsIn: []
-selectorsOut: []
+bestFor: Batch-geocoding addresses and converting/plotting coordinate and track files.
+selectorsIn:
+- geolocation
+- address
+selectorsOut:
+- geolocation
 status: live
 pricing: free
+costNote: Free web tool; no account required for core use.
 opsec: passive
-opsecNote: Uses open-source mapping/geospatial data and does not directly interact with the target.
+opsecNote: Data is processed server-side at gpsvisualizer.com, so do not paste case-sensitive raw data you would not want on a third-party server. The target is never contacted.
 humanInLoop: false
 humanInLoopReason: []
 bestInteractionPattern: web-manual
-trust: unverified
-trustNote: ''
+trust: community
+trustNote: Long-running, well-regarded free utility by Adam Schneider; widely used in GIS/OSINT communities.
 missingPersonsRelevance: high
-coverage: []
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- google-my-maps
+- here-maps
 aliases: []
-tags: []
+tags:
+- geospatial-research-and-mapping-tools
+- coordinates
 source: arf-seed
 lastVerified: ''
-enrichment: stub
+enrichment: full
 ---
 
 # GPSVisualizer
 
-> **Stub** — seeded from OSINT-Framework (`arf-seed`). Body not yet authored.
-> Enrich per `schema/templates/tool.template.md`, then set `enrichment: full`.
+> A free web utility for batch-geocoding addresses and converting, cleaning, and plotting GPS coordinate and track files (GPX/KML/CSV).
 
-- **URL:** https://www.gpsvisualizer.com/geocode
-- **Best for:** Converting and visualizing GPS/coordinate inputs
-- **Input → Output:** Coordinates, GPX/KML/CSV, or addresses → Mapped tracks, converted coordinates, and geocode results
-- **OpSec:** passive. Uses open-source mapping/geospatial data and does not directly interact with the target.
+## When to use
+You have messy location data — a column of `address`es from records, raw lat/long in an unfamiliar format, or a GPX/KML track from a device — and you need to normalize it into clean `geolocation` coordinates and see it on a map. Especially useful for turning a batch of addresses (associates, last-known stops) into mappable points.
 
-_To enrich:_ verify `trust` & `missingPersonsRelevance`, set `selectorsIn/Out` and `bestInteractionPattern`, write the How-to and Gotchas, link overlaps in `relatedTools`.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Open the geocode page; paste up to a few thousand `address` lines into the input box.
+2. Choose output (Google/Bing geocoder, format) and run — it returns coordinates per address.
+3. For tracks, use the "Map a GPX/KML/CSV file" tools to convert formats and render a map or elevation profile.
+4. Export the resulting `geolocation` data and import it into [[google-my-maps]] for case annotation.
+
+## Inputs → Outputs
+- **In:** `address` list, raw `geolocation` coordinates, or GPX/KML/CSV file
+- **Out:** clean `geolocation` coordinates, converted track files, and a rendered map
+- **Empty/negative result looks like:** "no results" / 0,0 coordinates for an address the geocoder can't resolve — verify spelling/format and try a different geocoder backend.
+
+## Gotchas & OpSec
+- No login or captcha for normal use; very large batches may be rate-limited.
+- OpSec: passive, but data is processed on a third-party server — avoid pasting sensitive raw case data; the target is not contacted.
+
+## Overlaps ("do both")
+- Pairs with [[google-my-maps]] — GPSVisualizer cleans and converts the coordinates; My Maps is the annotated case canvas. Use [[here-maps]] for routing context.
+
+## Trust & verifiability
+`trust: community` — a long-established, independently maintained free tool with a strong reputation in the GIS/OSINT community.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | gpsvisualizer |
+| category | geolocation |
+| selectorsIn → selectorsOut | geolocation, address → geolocation |
+| pricing / cost | free |
+| trust | community |
+| MP relevance | high |
+| interaction | web-manual |
+| opsec | passive |
+| human-in-loop | no |

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/the-internet-clipboard-url-tool.md",
+  "id": "the-internet-clipboard-url-tool",
+  "name": "The Internet Clipboard URL Tool",
+  "url": "http://cl1p.net",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/the-time-now.md",
+  "id": "the-time-now",
+  "name": "The Time Now",
+  "url": "http://www.thetimenow.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/the-time-zone-converter.md",
+  "id": "the-time-zone-converter",
+  "name": "The Time Zone Converter",
+  "url": "http://www.thetimezoneconverter.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/thedorkbox.md",
+  "id": "thedorkbox",
+  "name": "thedorkbox",
+  "url": "https://github.com/cybersafeblr/thedorkbox",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/thexifer-net.md",
+  "id": "thexifer-net",
+  "name": "thexifer.net",
+  "url": "https://www.thexifer.net/index.php",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/toolsley-analyze-file-format-online.md",
+  "id": "toolsley-analyze-file-format-online",
+  "name": "ToolSley: analyze file format online",
+  "url": "https://www.toolsley.com/file.html",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/topsite.md",
+  "id": "topsite",
+  "name": "TopSite",
+  "url": "http://www.topsite.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/search/totalhash.md",
+  "id": "totalhash",
+  "name": "#totalhash",
+  "url": "https://totalhash.cymru.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/transferwise.md",
+  "id": "transferwise",
+  "name": "TransferWise",
+  "url": "https://transferwise.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/transitions-abroad.md",
+  "id": "transitions-abroad",
+  "name": "Transitions Abroad",
+  "url": "http://www.transitionsabroad.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/true-random-number-service.md",
+  "id": "true-random-number-service",
+  "name": "True Random Number Service",
+  "url": "http://www.random.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/truth-or-fiction-search.md",
+  "id": "truth-or-fiction-search",
+  "name": "Truth Or Fiction Search",
+  "url": "http://www.truthorfiction.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/twitter-analytics.md",
+  "id": "twitter-analytics",
+  "name": "Twitter Analytics",
+  "url": "https://analytics.twitter.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/office-files/tylabs-quicksand-framework.md",
+  "id": "tylabs-quicksand-framework",
+  "name": "TYLabs QuickSand Framework",
+  "url": "https://scan.tylabs.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/pdfs/tylabs-quicksand-framework-2.md",
+  "id": "tylabs-quicksand-framework-2",
+  "name": "TYLabs QuickSand Framework",
+  "url": "https://scan.tylabs.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/uk-government-information-technology.md",
+  "id": "uk-government-information-technology",
+  "name": "UK Government Information Technology",
+  "url": "https://www.gov.uk/government/collections/ict-strategy-resources",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

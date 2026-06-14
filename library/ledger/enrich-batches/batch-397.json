@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/birdnet.md",
+  "id": "birdnet",
+  "name": "BirdNet",
+  "url": "https://birdnet.cornell.edu/map",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/bulletpicker-com.md",
+  "id": "bulletpicker-com",
+  "name": "Bulletpicker.com",
+  "url": "https://www.bulletpicker.com/index.html",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/cat-uxo.md",
+  "id": "cat-uxo",
+  "name": "CAT-UXO",
+  "url": "https://cat-uxo.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/cites-trade-database.md",
+  "id": "cites-trade-database",
+  "name": "CITES Trade Database",
+  "url": "https://trade.cites.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/convert-geographic-units.md",
+  "id": "convert-geographic-units",
+  "name": "Convert Geographic Units",
+  "url": "http://rcn.montana.edu/resources/Converter.aspx",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/copernicus-browser-formerly-sentinel-hub-playground-eo-browser.md",
+  "id": "copernicus-browser-formerly-sentinel-hub-playground-eo-browser",
+  "name": "Copernicus Browser (formerly Sentinel Hub Playground, EO Browser)",
+  "url": "https://browser.dataspace.copernicus.eu/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/cryo-tools.md",
+  "id": "cryo-tools",
+  "name": "CryO Tools",
+  "url": "https://cryo-tools.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/eia-global-environmental-crime-tracker.md",
+  "id": "eia-global-environmental-crime-tracker",
+  "name": "EIA Global Environmental Crime Tracker",
+  "url": "https://eia-international.org/global-environmental-crime-tracker/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/environmental-justice-atlas.md",
+  "id": "environmental-justice-atlas",
+  "name": "Environmental Justice Atlas",
+  "url": "https://ejatlas.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/f4map.md",
+  "id": "f4map",
+  "name": "F4Map",
+  "url": "https://demo.f4map.com",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/gaode-maps.md",
+  "id": "gaode-maps",
+  "name": "Gaode Maps",
+  "url": "https://gaode.com",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/gjirafa.md",
+  "id": "gjirafa",
+  "name": "Gjirafa",
+  "url": "https://gjirafa.biz/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/global-forest-watch.md",
+  "id": "global-forest-watch",
+  "name": "Global Forest Watch",
+  "url": "https://www.globalforestwatch.org/map/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/global-monitoring-system-ecosolve.md",
+  "id": "global-monitoring-system-ecosolve",
+  "name": "Global Monitoring System - ECOSOLVE",
+  "url": "https://www.ecosolve.eco/dashboard",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/google-earth-engine.md",
+  "id": "google-earth-engine",
+  "name": "Google Earth Engine",
+  "url": "https://code.earthengine.google.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/google-flood-hub.md",
+  "id": "google-flood-hub",
+  "name": "Google Flood Hub",
+  "url": "https://sites.research.google/floods/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ }
+]

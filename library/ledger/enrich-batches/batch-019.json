@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/geolocation-tools/suncalc-2.md",
+  "id": "suncalc-2",
+  "name": "SunCalc",
+  "url": "https://suncalc.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/tableau.md",
+  "id": "tableau",
+  "name": "Tableau",
+  "url": "http://www.tableausoftware.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/timeanddate.md",
+  "id": "timeanddate",
+  "name": "Timeanddate",
+  "url": "https://www.timeanddate.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/travel-by-drone.md",
+  "id": "travel-by-drone",
+  "name": "Travel by Drone",
+  "url": "https://travelbydrone.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/us-nav-guide-zip-code-data.md",
+  "id": "us-nav-guide-zip-code-data",
+  "name": "US Nav Guide Zip Code Data",
+  "url": "https://www.usnaviguide.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/viamichelin.md",
+  "id": "viamichelin",
+  "name": "ViaMichelin",
+  "url": "http://www.viamichelin.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/view-in-google-earth.md",
+  "id": "view-in-google-earth",
+  "name": "View in Google Earth",
+  "url": "http://www.mgmaps.com/kml/#view",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/wayback-imagery.md",
+  "id": "wayback-imagery",
+  "name": "Wayback Imagery",
+  "url": "https://livingatlas.arcgis.com/wayback/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/wikimapia.md",
+  "id": "wikimapia",
+  "name": "Wikimapia",
+  "url": "https://wikimapia.org/#lang=en&lat=40.078071&lon=-100.458984&z=5&m=b",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/windy.md",
+  "id": "windy",
+  "name": "Windy",
+  "url": "https://www.windy.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/worldmap-harvard.md",
+  "id": "worldmap-harvard",
+  "name": "WorldMap Harvard",
+  "url": "http://worldmap.harvard.edu",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/worldwide-osint-tools-map.md",
+  "id": "worldwide-osint-tools-map",
+  "name": "Worldwide OSINT Tools Map",
+  "url": "https://cipher387.github.io/osintmap/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/yahoo-maps.md",
+  "id": "yahoo-maps",
+  "name": "Yahoo Maps",
+  "url": "https://maps.yahoo.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/yandex-maps.md",
+  "id": "yandex-maps",
+  "name": "Yandex.Maps",
+  "url": "https://yandex.com/maps/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/zeemaps.md",
+  "id": "zeemaps",
+  "name": "Zeemaps",
+  "url": "https://www.zeemaps.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/6mzld2-csb-app.md",
+  "id": "6mzld2-csb-app",
+  "name": "6mzld2.csb.app",
+  "url": "https://6mzld2.csb.app/",
+  "category": "image-video-face",
+  "mp": "high"
+ }
+]

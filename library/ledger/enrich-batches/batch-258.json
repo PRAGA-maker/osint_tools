@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/metager-meta-search-engine.md",
+  "id": "metager-meta-search-engine",
+  "name": "MetaGer Meta Search Engine",
+  "url": "https://metager.de",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/metager-privacy-protected-search.md",
+  "id": "metager-privacy-protected-search",
+  "name": "MetaGer: Privacy Protected Search",
+  "url": "https://metager3.de/en/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/metagoofil.md",
+  "id": "metagoofil",
+  "name": "metagoofil",
+  "url": "https://github.com/opsdisk/metagoofil",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/microsoft-academic.md",
+  "id": "microsoft-academic",
+  "name": "Microsoft Academic",
+  "url": "https://academic.microsoft.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/military-occupation-codes-canada.md",
+  "id": "military-occupation-codes-canada",
+  "name": "Military Occupation Codes (Canada)",
+  "url": "http://www.forces.gc.ca/en/about-policies-standards-medical-occupations/officer-ncm-minimum-medical-standards.page",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/milled.md",
+  "id": "milled",
+  "name": "Milled",
+  "url": "https://milled.com/search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/million-short.md",
+  "id": "million-short",
+  "name": "Million Short",
+  "url": "https://millionshort.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/mindmap-search-engine.md",
+  "id": "mindmap-search-engine",
+  "name": "Mindmap Search Engine",
+  "url": "http://cse.google.com/cse?cx=013991603413798772546:gj6rx9spox8#gsc.tab=0",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/mojeek.md",
+  "id": "mojeek",
+  "name": "Mojeek",
+  "url": "https://mojeek.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/mojeek-search-engine-united-kingdom.md",
+  "id": "mojeek-search-engine-united-kingdom",
+  "name": "Mojeek Search Engine (United Kingdom)",
+  "url": "https://www.mojeek.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/monster-crawler-search.md",
+  "id": "monster-crawler-search",
+  "name": "Monster Crawler Search",
+  "url": "http://monstercrawler.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/monstercrawler-meta-search-engine.md",
+  "id": "monstercrawler-meta-search-engine",
+  "name": "Monstercrawler Meta Search Engine",
+  "url": "http://www.monstercrawler.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/moody-s.md",
+  "id": "moody-s",
+  "name": "Moody\u2019s",
+  "url": "https://www.moodys.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/moreofit.md",
+  "id": "moreofit",
+  "name": "Moreofit",
+  "url": "http://www.moreofit.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/mouthshut-north-america.md",
+  "id": "mouthshut-north-america",
+  "name": "Mouthshut (North America)",
+  "url": "http://www.mouthshut.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/mybuilder-north-america.md",
+  "id": "mybuilder-north-america",
+  "name": "MyBuilder (North America)",
+  "url": "https://www.mybuilder.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/imcdb.md",
+  "id": "imcdb",
+  "name": "IMCDB",
+  "url": "http://imcdb.org",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/iptv-org.md",
+  "id": "iptv-org",
+  "name": "IPTV org",
+  "url": "https://iptv-org.github.io/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/item-3.md",
+  "id": "item-3",
+  "name": "\u041e\u0442\u0432\u0435\u0442\u044b",
+  "url": "https://otvet.mail.ru/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/joomla.md",
+  "id": "joomla",
+  "name": "Joomla",
+  "url": "https://www.joomla.org",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/karmadecay.md",
+  "id": "karmadecay",
+  "name": "Karmadecay",
+  "url": "https://karmadecay.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/livejournal.md",
+  "id": "livejournal",
+  "name": "LiveJournal",
+  "url": "https://www.livejournal.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/medium.md",
+  "id": "medium",
+  "name": "Medium",
+  "url": "https://medium.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/netflix-codes-com.md",
+  "id": "netflix-codes-com",
+  "name": "netflix-codes.com",
+  "url": "http://netflix-codes.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/omgili-2.md",
+  "id": "omgili-2",
+  "name": "Omgili",
+  "url": "http://omgili.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/osint-communities-practitioners.md",
+  "id": "osint-communities-practitioners",
+  "name": "OSINT-Communities-Practitioners",
+  "url": "https://github.com/The-Osint-Toolbox/OSINT-Communities-Practitioners",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/playphrase.md",
+  "id": "playphrase",
+  "name": "PlayPhrase",
+  "url": "https://playphrase.me/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/proboards.md",
+  "id": "proboards",
+  "name": "ProBoards",
+  "url": "https://www.proboards.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/quora.md",
+  "id": "quora",
+  "name": "Quora",
+  "url": "http://www.quora.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/reddit-insight.md",
+  "id": "reddit-insight",
+  "name": "Reddit Insight",
+  "url": "https://www.redditinsight.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/reddit-metrics.md",
+  "id": "reddit-metrics",
+  "name": "Reddit Metrics",
+  "url": "http://redditmetrics.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/redditlist.md",
+  "id": "redditlist",
+  "name": "Redditlist",
+  "url": "http://redditlist.com",
+  "category": "communities-forums",
+  "mp": "low"
+ }
+]

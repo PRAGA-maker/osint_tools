@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/disneysearch.md",
+  "id": "disneysearch",
+  "name": "DisneySearch",
+  "url": "http://search.disney.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/document-search.md",
+  "id": "document-search",
+  "name": "Document Search",
+  "url": "https://one-plus.github.io/DocumentSearch",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/documents-search-engine.md",
+  "id": "documents-search-engine",
+  "name": "Documents Search Engine",
+  "url": "https://cse.google.com/cse?cx=e6756edc507bcfa91",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/dorkeye.md",
+  "id": "dorkeye",
+  "name": "DorkEye",
+  "url": "https://github.com/xPloits3c/DorkEye",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/dorkgenius.md",
+  "id": "dorkgenius",
+  "name": "DorkGenius",
+  "url": "https://dorkgenius.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/dorkgpt.md",
+  "id": "dorkgpt",
+  "name": "DorkGPT",
+  "url": "https://www.dorkgpt.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/dpa-international.md",
+  "id": "dpa-international",
+  "name": "DPA International",
+  "url": "http://www.dpa-international.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/drivesearch-kwebpia-net.md",
+  "id": "drivesearch-kwebpia-net",
+  "name": "Drivesearch.kwebpia.net",
+  "url": "http://drivesearch.kwebpia.net/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/duckduckgo-bangs.md",
+  "id": "duckduckgo-bangs",
+  "name": "DuckDuckGo !bangs",
+  "url": "https://chrome.google.com/webstore/detail/duckduckgo-bangs/hdjfebkndhmegijlghjcdghdbealibeb/related",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/eddy-the-eco-dog-kidswebtv.md",
+  "id": "eddy-the-eco-dog-kidswebtv",
+  "name": "Eddy the Eco-dog KidsWebTV",
+  "url": "http://www.eddytheeco-dog.com/corporate/index_corp.html",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/elsevier.md",
+  "id": "elsevier",
+  "name": "Elsevier",
+  "url": "https://www.elsevier.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/eniro-sweden.md",
+  "id": "eniro-sweden",
+  "name": "Eniro (Sweden)",
+  "url": "http://www.eniro.se",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/etools.md",
+  "id": "etools",
+  "name": "Etools",
+  "url": "http://www.etools.ch",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/euronews.md",
+  "id": "euronews",
+  "name": "Euronews",
+  "url": "http://www.euronews.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/exploitalert.md",
+  "id": "exploitalert",
+  "name": "ExploitAlert",
+  "url": "https://exploitalert.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/fact-checking.md",
+  "id": "fact-checking",
+  "name": "Fact-Checking",
+  "url": "https://reporterslab.org/fact-checking/",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

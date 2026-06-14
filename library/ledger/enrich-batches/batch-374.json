@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/maltiverse.md",
+  "id": "maltiverse",
+  "name": "Maltiverse",
+  "url": "https://maltiverse.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/malware-domain-list.md",
+  "id": "malware-domain-list",
+  "name": "Malware Domain List",
+  "url": "https://www.malwaredomainlist.com/mdl.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/malware-domain-list-2.md",
+  "id": "malware-domain-list-2",
+  "name": "Malware Domain List",
+  "url": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/malware-domains-blacklist.md",
+  "id": "malware-domains-blacklist",
+  "name": "Malware Domains Blacklist",
+  "url": "https://mirror1.malwaredomains.com/files/domains.txt",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ttps/malware-exploit-ttp-database.md",
+  "id": "malware-exploit-ttp-database",
+  "name": "Malware Exploit TTP Database",
+  "url": "https://www.pwnmalw.re/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/malware-information-sharing-platform.md",
+  "id": "malware-information-sharing-platform",
+  "name": "Malware Information Sharing Platform",
+  "url": "https://www.misp-project.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/malware-patrol.md",
+  "id": "malware-patrol",
+  "name": "Malware Patrol",
+  "url": "https://www.malwarepatrol.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/malwareurl.md",
+  "id": "malwareurl",
+  "name": "MalwareURL",
+  "url": "https://www.malwareurl.com/index.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/mark-monitor-whois.md",
+  "id": "mark-monitor-whois",
+  "name": "Mark Monitor WHOIS",
+  "url": "https://whois-webform.markmonitor.com/whois/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/masscan.md",
+  "id": "masscan",
+  "name": "Masscan",
+  "url": "https://github.com/robertdavidgraham/masscan",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/massive-octo-spice-csirtgadgets-github.md",
+  "id": "massive-octo-spice-csirtgadgets-github",
+  "name": "massive-octo-spice - csirtgadgets Github",
+  "url": "https://github.com/csirtgadgets/massive-octo-spice",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/maxmind.md",
+  "id": "maxmind",
+  "name": "MaxMind",
+  "url": "https://www.maxmind.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/geolocation/maxmind-demo.md",
+  "id": "maxmind-demo",
+  "name": "MaxMind Demo",
+  "url": "https://www.maxmind.com/en/home",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/metadefender-2.md",
+  "id": "metadefender-2",
+  "name": "MetaDefender",
+  "url": "https://metadefender.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/azure-gcp-discovery/microburst.md",
+  "id": "microburst",
+  "name": "MicroBurst",
+  "url": "https://github.com/NetSPI/MicroBurst",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ioc-tools/mimir.md",
+  "id": "mimir",
+  "name": "Mimir",
+  "url": "https://github.com/NullArray/Mimir",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

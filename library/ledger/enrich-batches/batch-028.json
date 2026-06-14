@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/images/search/imgur-search.md",
+  "id": "imgur-search",
+  "name": "Imgur Search",
+  "url": "https://imgur.com/search",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/impulseadventure.md",
+  "id": "impulseadventure",
+  "name": "ImpulseAdventure",
+  "url": "http://www.impulseadventure.com/photo/jpeg-snoop.html",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/in20years-co.md",
+  "id": "in20years-co",
+  "name": "in20years.co",
+  "url": "http://in20years.co/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/webcams/insecam.md",
+  "id": "insecam",
+  "name": "Insecam",
+  "url": "https://insecam.org/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/instagram/instagram.md",
+  "id": "instagram",
+  "name": "Instagram",
+  "url": "https://www.instagram.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/videos/search/internet-archive-videos.md",
+  "id": "internet-archive-videos",
+  "name": "Internet Archive Videos",
+  "url": "https://archive.org/details/movies",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/ios-gadgethacks-com.md",
+  "id": "ios-gadgethacks-com",
+  "name": "ios.gadgethacks.com",
+  "url": "https://ios.gadgethacks.com/how-to/warning-sensitive-info-you-black-out-images-can-be-revealed-with-few-quick-edits-your-iphone-0333975/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/isgen-ai.md",
+  "id": "isgen-ai",
+  "name": "isgen.ai",
+  "url": "https://isgen.ai/ai-image-detector",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/izitru.md",
+  "id": "izitru",
+  "name": "Izitru",
+  "url": "https://www.izitru.com",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/metadata/jeffrey-s-exif-viewer.md",
+  "id": "jeffrey-s-exif-viewer",
+  "name": "Jeffrey's Exif Viewer",
+  "url": "https://regex.info/blog/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/jeffreys-image-metadata-viewer.md",
+  "id": "jeffreys-image-metadata-viewer",
+  "name": "Jeffreys Image Metadata Viewer",
+  "url": "http://exif.regex.info/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/jimpl.md",
+  "id": "jimpl",
+  "name": "JIMPL",
+  "url": "https://jimpl.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/joelle-steele.md",
+  "id": "joelle-steele",
+  "name": "Joelle Steele",
+  "url": "https://joellesteele.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/jpegcompress-com.md",
+  "id": "jpegcompress-com",
+  "name": "jpegcompress.com",
+  "url": "https://jpegcompress.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/metadata/jpegsnoop.md",
+  "id": "jpegsnoop",
+  "name": "JPEGsnoop",
+  "url": "https://www.impulseadventure.com/photo/jpeg-snoop.html",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/jpegsnoop-2.md",
+  "id": "jpegsnoop-2",
+  "name": "JPEGsnoop",
+  "url": "https://sourceforge.net/projects/jpegsnoop",
+  "category": "image-video-face",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/ncptf-national-child-protection-task-force.md",
+  "id": "ncptf-national-child-protection-task-force",
+  "name": "NCPTF (National Child Protection Task Force)",
+  "url": "https://ncptf.org/",
+  "category": "ai-analysis-automation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/trace-labs-osint-vm.md",
+  "id": "trace-labs-osint-vm",
+  "name": "Trace Labs OSINT VM",
+  "url": "https://www.tracelabs.org/initiatives/osint-vm",
+  "category": "ai-analysis-automation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/communities-forums/open-diary.md",
+  "id": "open-diary",
+  "name": "Open Diary",
+  "url": "https://www.opendiary.com",
+  "category": "communities-forums",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dark-web/search-systems-public-records-us.md",
+  "id": "search-systems-public-records-us",
+  "name": "Search Systems Public Records (US)",
+  "url": "http://publicrecords.searchsystems.net/",
+  "category": "dark-web",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/adultfriendfinder.md",
+  "id": "adultfriendfinder",
+  "name": "AdultFriendFinder",
+  "url": "https://www.adultfriendfinder.com",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/ayi-com.md",
+  "id": "ayi-com",
+  "name": "AYI.com",
+  "url": "https://www.ayichat.com",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/badoo.md",
+  "id": "badoo",
+  "name": "Badoo",
+  "url": "https://badoo.com",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/beautifulpeople-com.md",
+  "id": "beautifulpeople-com",
+  "name": "BeautifulPeople.com",
+  "url": "https://www.beautifulpeople.com/en-US",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/bumble.md",
+  "id": "bumble",
+  "name": "Bumble",
+  "url": "https://bumble.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/craigslist.md",
+  "id": "craigslist",
+  "name": "Craigslist",
+  "url": "https://charlotte.craigslist.org/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/ebay.md",
+  "id": "ebay",
+  "name": "eBay",
+  "url": "https://www.ebay.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/farmers-only.md",
+  "id": "farmers-only",
+  "name": "Farmers Only",
+  "url": "https://www.farmersonly.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/francais-a-londres-org-french-classifieds.md",
+  "id": "francais-a-londres-org-french-classifieds",
+  "name": "francais-a-londres.org - French Classifieds",
+  "url": "https://francaisalondres.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/goofbid.md",
+  "id": "goofbid",
+  "name": "Goofbid",
+  "url": "https://www.goofbid.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/hinge.md",
+  "id": "hinge",
+  "name": "Hinge",
+  "url": "https://hinge.co/en-gb",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/kijiji-canada-classifieds.md",
+  "id": "kijiji-canada-classifieds",
+  "name": "Kijiji - Canada Classifieds",
+  "url": "https://www.kijiji.ca:443/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ }
+]

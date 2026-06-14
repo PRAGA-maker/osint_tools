@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/globaledge-database-of-international-business-statistics.md",
+  "id": "globaledge-database-of-international-business-statistics",
+  "name": "globalEDGE Database of International Business Statistics",
+  "url": "http://globaledge.msu.edu/tools-and-data/dibs",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/gogettr.md",
+  "id": "gogettr",
+  "name": "gogettr",
+  "url": "https://pypi.org/project/gogettr/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/goldensnitches.md",
+  "id": "goldensnitches",
+  "name": "Goldensnitches",
+  "url": "https://goldensnitches.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/google-public-data-explorer.md",
+  "id": "google-public-data-explorer",
+  "name": "Google Public Data Explorer",
+  "url": "http://www.google.com/publicdata/directory",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/govdata-das-datenportal-f-r-deutschland-german-2.md",
+  "id": "govdata-das-datenportal-f-r-deutschland-german-2",
+  "name": "GOVDATA - Das Datenportal f\u00fcr Deutschland (German)",
+  "url": "https://www.govdata.de/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/government-of-canada-open-data.md",
+  "id": "government-of-canada-open-data",
+  "name": "Government of Canada Open Data",
+  "url": "http://open.canada.ca/en",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/guttr.md",
+  "id": "guttr",
+  "name": "GUTTR",
+  "url": "https://github.com/VVX7/GUTTR",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/his-piers.md",
+  "id": "his-piers",
+  "name": "HIS Piers",
+  "url": "https://www.ihs.com/products/piers.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/human-development-reports.md",
+  "id": "human-development-reports",
+  "name": "Human Development Reports",
+  "url": "http://hdr.undp.org/en/global-reports",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/beneficial-ownership-lookup/icij-offshore-leaks-database.md",
+  "id": "icij-offshore-leaks-database",
+  "name": "ICIJ Offshore Leaks Database",
+  "url": "https://offshoreleaks.icij.org/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/ilo-world-employment-and-social-outlook-trends.md",
+  "id": "ilo-world-employment-and-social-outlook-trends",
+  "name": "ILO World Employment and Social Outlook Trends",
+  "url": "http://www.ilo.org/global/research/global-reports/weso/2015/lang--en/index.htm",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/ilostat.md",
+  "id": "ilostat",
+  "name": "ILOSTAT",
+  "url": "http://www.ilo.org/ilostat/faces/oracle/webcenter/portalapp/pagehierarchy/Page137.jspx?_afrLoop=443508925711569&clean=true#%40%3F_afrLoop%3D443508925711569%26clean%3Dtrue%26_adf.ctrl-state%3Dl4dwldaf3_9",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/imf-world-economic-outlook-database.md",
+  "id": "imf-world-economic-outlook-database",
+  "name": "IMF World Economic Outlook Database",
+  "url": "http://www.imf.org/external/ns/cs.aspx?id=28",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/index-mundi.md",
+  "id": "index-mundi",
+  "name": "Index Mundi",
+  "url": "http://www.indexmundi.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/informnapalm.md",
+  "id": "informnapalm",
+  "name": "INFORMNAPALM",
+  "url": "https://informnapalm.org/db/russian-aggression/#lang=en&page=m_unit",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/international-energy-agency-statistics.md",
+  "id": "international-energy-agency-statistics",
+  "name": "International Energy Agency Statistics",
+  "url": "http://www.iea.org/statistics",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

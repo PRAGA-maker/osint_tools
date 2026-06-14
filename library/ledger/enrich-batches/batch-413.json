@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/hulu-tv-app-mobile-android.md",
+  "id": "hulu-tv-app-mobile-android",
+  "name": "Hulu TV App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.hulu.plus&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/hulu-tv-app-mobile-ios.md",
+  "id": "hulu-tv-app-mobile-ios",
+  "name": "Hulu TV App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/hulu/id376510438?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/huron-osint.md",
+  "id": "huron-osint",
+  "name": "Huron Osint",
+  "url": "https://github.com/HuronOsint/OsintDistro",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/icloud-app-mobile-ios.md",
+  "id": "icloud-app-mobile-ios",
+  "name": "iCloud App (Mobile \u2013 iOS)",
+  "url": "http://www.apple.com/ca/icloud",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ifax-communications-app-mobile-ios.md",
+  "id": "ifax-communications-app-mobile-ios",
+  "name": "iFax Communications App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/ca/app/ifax-fax-from-phone-ad-free/id331514859",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/iid-generator-by-georgy-bunin.md",
+  "id": "iid-generator-by-georgy-bunin",
+  "name": "IID Generator by Georgy Bunin",
+  "url": "https://georgybu.github.io/IID_Generator/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/image-scrubber.md",
+  "id": "image-scrubber",
+  "name": "Image Scrubber",
+  "url": "https://everestpipkin.github.io/image-scrubber/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/imei-number-generator.md",
+  "id": "imei-number-generator",
+  "name": "IMEI Number Generator",
+  "url": "https://dyrk.org/tools/imei/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/instagram-social-networking-app.md",
+  "id": "instagram-social-networking-app",
+  "name": "Instagram Social Networking App",
+  "url": "https://itunes.apple.com/ca/app/instagram/id389801252?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/instagram-social-networking-app-mobile-android.md",
+  "id": "instagram-social-networking-app-mobile-android",
+  "name": "Instagram Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/instant-preview.md",
+  "id": "instant-preview",
+  "name": "Instant Preview",
+  "url": "https://chrome.google.com/webstore/detail/instant-preview/majhgbekihmliceijipbdccgicepmmei",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/intelbox-malwaredojo.md",
+  "id": "intelbox-malwaredojo",
+  "name": "IntelBox (malwaredojo)",
+  "url": "https://github.com/malwaredojo/IntelBox",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/international-name-generator.md",
+  "id": "international-name-generator",
+  "name": "International Name Generator",
+  "url": "https://www.behindthename.com/random/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ipcheck.md",
+  "id": "ipcheck",
+  "name": "IPCheck",
+  "url": "http://ip-check.info",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ipvanish-proxy-website.md",
+  "id": "ipvanish-proxy-website",
+  "name": "IPVanish Proxy Website",
+  "url": "https://www.ipvanish.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/iron-vest.md",
+  "id": "iron-vest",
+  "name": "Iron Vest",
+  "url": "https://ironvest.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/slack-business-app-mobile-android.md",
+  "id": "slack-business-app-mobile-android",
+  "name": "Slack Business App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.Slack",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/slack-business-communication-app-mobile-ios.md",
+  "id": "slack-business-communication-app-mobile-ios",
+  "name": "Slack Business Communication App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/slack-team-communication/id618783545?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/sleepcycle.md",
+  "id": "sleepcycle",
+  "name": "Sleepcycle",
+  "url": "http://www.sleepcycle.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/sleipnir.md",
+  "id": "sleipnir",
+  "name": "Sleipnir",
+  "url": "http://www.fenrir-inc.com/jp/sleipnir",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/slimjet.md",
+  "id": "slimjet",
+  "name": "Slimjet",
+  "url": "http://www.slimjet.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/slydial-ringless-voicemail-messaging.md",
+  "id": "slydial-ringless-voicemail-messaging",
+  "name": "Slydial Ringless Voicemail Messaging",
+  "url": "http://www.slydial.com/index.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/smstome-com.md",
+  "id": "smstome-com",
+  "name": "Smstome.com",
+  "url": "https://smstome.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/snapchat-messaging-app-mobile-ios.md",
+  "id": "snapchat-messaging-app-mobile-ios",
+  "name": "Snapchat Messaging App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/snapchat/id447188370?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/snapchat-social-networking-app-mobile-android.md",
+  "id": "snapchat-social-networking-app-mobile-android",
+  "name": "Snapchat Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.snapchat.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/snopes-fact-checker.md",
+  "id": "snopes-fact-checker",
+  "name": "Snopes Fact Checker",
+  "url": "http://www.snopes.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/snow.md",
+  "id": "snow",
+  "name": "Snow",
+  "url": "https://workspace.google.com/u/0/marketplace/app/show/82177279234?hl=ru&pann=docs_addon_widget",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/sophos-mac-antivirus.md",
+  "id": "sophos-mac-antivirus",
+  "name": "Sophos Mac Antivirus",
+  "url": "https://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/soundcloud-music-app-mobile-android.md",
+  "id": "soundcloud-music-app-mobile-android",
+  "name": "Soundcloud Music App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.soundcloud.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/soundcloud-music-app-mobile-ios.md",
+  "id": "soundcloud-music-app-mobile-ios",
+  "name": "Soundcloud Music App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/soundcloud-music-audio/id336353151?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/soundhound-music-app-mobile-android.md",
+  "id": "soundhound-music-app-mobile-android",
+  "name": "Soundhound Music App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.melodis.midomiMusicIdentifier.freemium",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/soundhound-music-app-mobile-ios.md",
+  "id": "soundhound-music-app-mobile-ios",
+  "name": "Soundhound Music App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/soundhound-+-livelyrics-search/id355554941?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

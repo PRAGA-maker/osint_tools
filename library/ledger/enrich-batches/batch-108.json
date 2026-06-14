@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/facebook-friend-list-scraper.md",
+  "id": "facebook-friend-list-scraper",
+  "name": "Facebook Friend List Scraper",
+  "url": "https://github.com/narkopolo/fb_friend_list_scraper",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-friends-list-generator.md",
+  "id": "facebook-friends-list-generator",
+  "name": "Facebook Friends List Generator",
+  "url": "https://osint.support/chrome-extensions/2019/10/20/facebook-friends-list-generator.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-geo.md",
+  "id": "facebook-geo",
+  "name": "Facebook Geo",
+  "url": "https://www.osintcombine.com/facebook-geo-pages",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-matrix.md",
+  "id": "facebook-matrix",
+  "name": "Facebook Matrix",
+  "url": "https://plessas.net/facebookmatrix",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-matrix-2.md",
+  "id": "facebook-matrix-2",
+  "name": "Facebook Matrix",
+  "url": "https://docs.google.com/spreadsheets/d/15dd0qscdydwvtwkc9zfzk1j8rzmvzarxtu9hrm34dnu/edit",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-photo-search-engine.md",
+  "id": "facebook-photo-search-engine",
+  "name": "Facebook Photo Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:jyvyp2ppxma",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook/search/facebook-photos-by-id.md",
+  "id": "facebook-photos-by-id",
+  "name": "Facebook Photos by ID",
+  "url": "https://www.facebook.com/photo.php?fbid=PHOTO-ID-HERE",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-profile-directory.md",
+  "id": "facebook-profile-directory",
+  "name": "Facebook Profile Directory",
+  "url": "https://www.facebook.com/directory/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-profile-id-grabber.md",
+  "id": "facebook-profile-id-grabber",
+  "name": "Facebook Profile Id Grabber",
+  "url": "https://osint.support/chrome-extensions/2019/09/01/facebook-profile-id-grabber.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-scanner.md",
+  "id": "facebook-scanner",
+  "name": "\ud83d\udd0d Facebook Scanner",
+  "url": "https://stalkscan.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-scraped-data-search.md",
+  "id": "facebook-scraped-data-search",
+  "name": "Facebook Scraped Data search",
+  "url": "http://4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion.pet/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-search.md",
+  "id": "facebook-search",
+  "name": "Facebook Search",
+  "url": "http://search.fb.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-search-2.md",
+  "id": "facebook-search-2",
+  "name": "Facebook Search",
+  "url": "https://www.sowsearch.info/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-search-3.md",
+  "id": "facebook-search-3",
+  "name": "Facebook Search",
+  "url": "https://www.social-searcher.com/facebook-search/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-search-4.md",
+  "id": "facebook-search-4",
+  "name": "Facebook Search",
+  "url": "https://inteltechniques.com/osint/facebook.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-search-engine.md",
+  "id": "facebook-search-engine",
+  "name": "Facebook Search Engine",
+  "url": "https://cse.google.com/cse?cx=95ae46262a5f2958e",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

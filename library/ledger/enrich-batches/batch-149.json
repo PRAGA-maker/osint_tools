@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/arabian-business-news-middle-east-english-language.md",
+  "id": "arabian-business-news-middle-east-english-language",
+  "name": "Arabian Business News (Middle East, English language)",
+  "url": "http://www.arabianbusiness.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/reddit-communities/arctic-shift.md",
+  "id": "arctic-shift",
+  "name": "Arctic Shift",
+  "url": "https://arctic-shift.photon-reddit.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/arrse-co-uk.md",
+  "id": "arrse-co-uk",
+  "name": "arrse.co.uk",
+  "url": "https://www.arrse.co.uk/community/forums/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/athlinks-2.md",
+  "id": "athlinks-2",
+  "name": "Athlinks",
+  "url": "http://www.athlinks.com/Search/Events",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/babycenter.md",
+  "id": "babycenter",
+  "name": "Babycenter",
+  "url": "http://www.babycenter.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bbc-news-2.md",
+  "id": "bbc-news-2",
+  "name": "BBC News",
+  "url": "https://www.bbc.com/news",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bbc-news-iplayer-united-kingdom.md",
+  "id": "bbc-news-iplayer-united-kingdom",
+  "name": "BBC News iPlayer (United Kingdom)",
+  "url": "https://www.bbc.co.uk/iplayer",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bbc-news-united-kingdom.md",
+  "id": "bbc-news-united-kingdom",
+  "name": "BBC News (United Kingdom)",
+  "url": "http://www.bbc.com/news/world",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/beanpaste.md",
+  "id": "beanpaste",
+  "name": "BeanPaste",
+  "url": "https://beanpaste.fun/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/biggerpockets.md",
+  "id": "biggerpockets",
+  "name": "BiggerPockets",
+  "url": "https://www.biggerpockets.com/meet",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bigsoccer-com.md",
+  "id": "bigsoccer-com",
+  "name": "bigsoccer.com",
+  "url": "http://www.bigsoccer.com/forums/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bing-creations.md",
+  "id": "bing-creations",
+  "name": "Bing Creations",
+  "url": "http://www.bing.com/creations",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/blackplanet.md",
+  "id": "blackplanet",
+  "name": "Blackplanet",
+  "url": "http://www.blackplanet.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/blog-search-engines/blog-search-engine.md",
+  "id": "blog-search-engine",
+  "name": "Blog Search Engine",
+  "url": "https://www.blogsearchengine.org/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/blogger.md",
+  "id": "blogger",
+  "name": "Blogger",
+  "url": "https://www.blogger.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/bloglovin.md",
+  "id": "bloglovin",
+  "name": "Bloglovin",
+  "url": "https://www.bloglovin.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

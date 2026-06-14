@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/genealogy-links-us-and-other-countries.md",
+  "id": "genealogy-links-us-and-other-countries",
+  "name": "Genealogy Links us and other Countries",
+  "url": "http://www.genealogylinks.net/index.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/genealogyintime.md",
+  "id": "genealogyintime",
+  "name": "GenealogyInTime",
+  "url": "http://www.genealogyintime.com/tools/genealogy-search-engine.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/geneanet-org.md",
+  "id": "geneanet-org",
+  "name": "geneanet.org",
+  "url": "https://en.geneanet.org/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/genesreunited-co-uk.md",
+  "id": "genesreunited-co-uk",
+  "name": "genesreunited.co.uk",
+  "url": "https://www.genesreunited.co.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/georgia.md",
+  "id": "georgia",
+  "name": "Georgia",
+  "url": "http://www.dcor.state.ga.us/gdc/offender/query",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/georgia-voters-com.md",
+  "id": "georgia-voters-com",
+  "name": "Georgia-voters.com",
+  "url": "https://georgia-voters.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/germany.md",
+  "id": "germany",
+  "name": "Germany",
+  "url": "https://www.transparenzregister.de/treg/de/start;jsessionid=70446A1E6E977FEDA187BC388AE0B5B7.app11?0",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gibraltar.md",
+  "id": "gibraltar",
+  "name": "Gibraltar",
+  "url": "https://ubosearch.egov.gi/Login?ReturnUrl=%2f",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gijn-org.md",
+  "id": "gijn-org",
+  "name": "gijn.org",
+  "url": "https://gijn.org/resource/asia-focus-open-source-guide-investigating-chinese-companies/?utm_campaign=website&utm_medium=email&utm_source=sendgrid.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gijn-org-3.md",
+  "id": "gijn-org-3",
+  "name": "gijn.org",
+  "url": "https://gijn.org/resource/land-ownership-records-so-useful-but-challenging-to-find/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/github-io.md",
+  "id": "github-io",
+  "name": "github.io",
+  "url": "https://cipher387.github.io/osint_stuff_tool_collection/graves_search.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gla-gov-uk.md",
+  "id": "gla-gov-uk",
+  "name": "gla.gov.uk",
+  "url": "https://glass.gla.gov.uk/public/s/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gmc-uk-org.md",
+  "id": "gmc-uk-org",
+  "name": "gmc-uk.org",
+  "url": "https://www.gmc-uk.org",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gov-cy.md",
+  "id": "gov-cy",
+  "name": "gov.cy",
+  "url": "https://efiling.drcor.mcit.gov.cy/DrcorPublic/SearchForm.aspx?sc=0",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gov-hk.md",
+  "id": "gov-hk",
+  "name": "gov.hk",
+  "url": "https://www.gov.hk/en/business/registration/deregistration/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/gov-im.md",
+  "id": "gov-im",
+  "name": "gov.im",
+  "url": "https://services.gov.im/companies-registry/",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/validin.md",
+  "id": "validin",
+  "name": "Validin",
+  "url": "https://app.validin.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/verisign.md",
+  "id": "verisign",
+  "name": "Verisign",
+  "url": "http://dnssec-debugger.verisignlabs.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/very-quick-and-simple-metadata-online-editor-and-remover.md",
+  "id": "very-quick-and-simple-metadata-online-editor-and-remover",
+  "name": "VERY QUICK and SIMPLE metadata online editor and remover",
+  "url": "https://products.groupdocs.app/metadata/total",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/viewdns-info.md",
+  "id": "viewdns-info",
+  "name": "ViewDNS.info",
+  "url": "https://viewdns.info/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/virus-total.md",
+  "id": "virus-total",
+  "name": "Virus Total",
+  "url": "https://www.virustotal.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/visual-site-mapper.md",
+  "id": "visual-site-mapper",
+  "name": "Visual Site Mapper",
+  "url": "https://github.com/alentum/sitemapper-nodejs",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/change-detection/visualping.md",
+  "id": "visualping",
+  "name": "VisualPing",
+  "url": "https://visualping.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/advisories/vulert-updated-open-source-vulnerability-database.md",
+  "id": "vulert-updated-open-source-vulnerability-database",
+  "name": "Vulert: Updated Open Source Vulnerability Database",
+  "url": "https://vulert.com/vuln-db",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/vurl-online.md",
+  "id": "vurl-online",
+  "name": "vURL Online",
+  "url": "https://vurldissect.co.uk/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/w3snoop.md",
+  "id": "w3snoop",
+  "name": "w3snoop",
+  "url": "http://webboar.com.w3snoop.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/w3techs.md",
+  "id": "w3techs",
+  "name": "w3techs",
+  "url": "https://w3techs.com/sites",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/wappalyzer.md",
+  "id": "wappalyzer",
+  "name": "Wappalyzer",
+  "url": "https://www.wappalyzer.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/wappalyzer-2.md",
+  "id": "wappalyzer-2",
+  "name": "Wappalyzer",
+  "url": "https://www.wappalyzer.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/watchguard-reputationauthority.md",
+  "id": "watchguard-reputationauthority",
+  "name": "WatchGuard ReputationAuthority",
+  "url": "https://www.reputationauthority.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/change-detection/watchthatpage.md",
+  "id": "watchthatpage",
+  "name": "WatchThatPage",
+  "url": "https://watchthatpage.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/web-check.md",
+  "id": "web-check",
+  "name": "Web-Check",
+  "url": "https://web-check.as93.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

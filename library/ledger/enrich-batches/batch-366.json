@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/discord-resolver.md",
+  "id": "discord-resolver",
+  "name": "Discord Resolver",
+  "url": "https://www.leaked.site/index.php?resolver/discord.0/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/dns-bh-malware-domain-blocklist.md",
+  "id": "dns-bh-malware-domain-blocklist",
+  "name": "DNS-BH Malware Domain Blocklist",
+  "url": "https://www.malwaredomains.com/wordpress/?page_id=66",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/passivedns/dns-dumpster.md",
+  "id": "dns-dumpster",
+  "name": "DNS Dumpster",
+  "url": "https://dnsdumpster.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/dns-history.md",
+  "id": "dns-history",
+  "name": "DNS History",
+  "url": "https://completedns.com/dns-history/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/dns-history-lookup.md",
+  "id": "dns-history-lookup",
+  "name": "DNS History Lookup",
+  "url": "https://osint.sh/dnshistory/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/dns-recon.md",
+  "id": "dns-recon",
+  "name": "DNS Recon",
+  "url": "https://github.com/darkoperator/dnsrecon",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/dns-sinkhole.md",
+  "id": "dns-sinkhole",
+  "name": "DNS Sinkhole",
+  "url": "https://malc0de.com/bl/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/typosquatting/dns-twist.md",
+  "id": "dns-twist",
+  "name": "DNS Twist",
+  "url": "https://github.com/elceef/dnstwist",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/dnspop.md",
+  "id": "dnspop",
+  "name": "dnspop",
+  "url": "https://github.com/bitquark/dnspop",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/saas-footprinting/dnsrecon.md",
+  "id": "dnsrecon",
+  "name": "dnsrecon",
+  "url": "https://github.com/darkoperator/dnsrecon",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/dnssec/dnssec-analyzer.md",
+  "id": "dnssec-analyzer",
+  "name": "DNSSEC Analyzer",
+  "url": "https://dnssec-analyzer.verisignlabs.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/dnsstuff.md",
+  "id": "dnsstuff",
+  "name": "DNSstuff",
+  "url": "https://www.dnsstuff.com/freetools",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/typosquatting/dnstwister.md",
+  "id": "dnstwister",
+  "name": "dnstwister",
+  "url": "https://dnstwister.report/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/dnssec/dnsviz.md",
+  "id": "dnsviz",
+  "name": "DNSViz",
+  "url": "https://dnsviz.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-codex.md",
+  "id": "domain-codex",
+  "name": "Domain Codex",
+  "url": "https://www.domaincodex.com/search.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-crawler.md",
+  "id": "domain-crawler",
+  "name": "Domain Crawler",
+  "url": "http://www.domaincrawler.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

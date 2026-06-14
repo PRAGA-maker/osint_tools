@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/exifpurge.md",
+  "id": "exifpurge",
+  "name": "ExifPurge",
+  "url": "http://www.exifpurge.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/social-networking/facebook.md",
+  "id": "facebook",
+  "name": "Facebook",
+  "url": "https://www.facebook.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/pictures/flickr-2.md",
+  "id": "flickr-2",
+  "name": "Flickr",
+  "url": "https://www.flickr.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/foca-2.md",
+  "id": "foca-2",
+  "name": "FOCA",
+  "url": "https://www.elevenpaths.com/labstools/foca/index.html",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/forensic-analyzer.md",
+  "id": "forensic-analyzer",
+  "name": "Forensic Analyzer",
+  "url": "https://www.imageforensic.org",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/device-forensics/frida.md",
+  "id": "frida",
+  "name": "Frida",
+  "url": "https://frida.re/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/emulation-tools/genymotion.md",
+  "id": "genymotion",
+  "name": "Genymotion",
+  "url": "https://www.genymotion.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/pictures/instagram-2.md",
+  "id": "instagram-2",
+  "name": "Instagram",
+  "url": "https://www.instagram.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/irfanview.md",
+  "id": "irfanview",
+  "name": "Irfanview",
+  "url": "http://irfanview.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/app-analysis/jadx.md",
+  "id": "jadx",
+  "name": "JADX",
+  "url": "https://github.com/skylot/jadx",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/jeffrey-friedl-s-image-metadata-viewer.md",
+  "id": "jeffrey-friedl-s-image-metadata-viewer",
+  "name": "Jeffrey Friedl's Image Metadata Viewer",
+  "url": "http://exif.regex.info/exif.cgi",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/instant-messaging/kik.md",
+  "id": "kik",
+  "name": "Kik",
+  "url": "https://www.kik.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/instant-messaging/line.md",
+  "id": "line",
+  "name": "LINE",
+  "url": "https://line.me/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/social-networking/linkedin-2.md",
+  "id": "linkedin-2",
+  "name": "LinkedIn",
+  "url": "https://www.linkedin.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/ios/lynxio-osint.md",
+  "id": "lynxio-osint",
+  "name": "Lynxio OSINT",
+  "url": "https://lynxio.io/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/streaming-video/meerkat.md",
+  "id": "meerkat",
+  "name": "Meerkat",
+  "url": "https://meerkatapp.co/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dark-web/osint-me-2.md",
+  "id": "osint-me-2",
+  "name": "osint.me 2",
+  "url": "https://www.osintme.com/index.php/2022/11/10/dark-web-osint-new-working-links-and-resources/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/osint-me-3.md",
+  "id": "osint-me-3",
+  "name": "osint.me 3",
+  "url": "https://www.osintme.com/index.php/2022/02/12/darkweb-osint-investigations-resources-for-2022/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/pasta.md",
+  "id": "pasta",
+  "name": "Pasta",
+  "url": "https://github.com/Kr0ff/Pasta",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/pastebin-bisque.md",
+  "id": "pastebin-bisque",
+  "name": "Pastebin-Bisque",
+  "url": "https://github.com/bbbbbrie/pastebin-bisque",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/pathfinder.md",
+  "id": "pathfinder",
+  "name": "Pathfinder",
+  "url": "http://euqrjceb3fa3o2rxjuqqkx76qjreqjlvtidfpgfyv6cd4z22hybnccyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/peoples-drug-store.md",
+  "id": "peoples-drug-store",
+  "name": "Peoples Drug Store",
+  "url": "http://xf2gry25d3tyxkiu2xlvczd3q7jl6yyhtpodevjugnxia2u665asozad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/pirate-bay.md",
+  "id": "pirate-bay",
+  "name": "Pirate Bay",
+  "url": "http://piratebayo3klnzokct3wt5yyxb2vpebbuyjl7m623iaxmqhsd52coid.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/pitch.md",
+  "id": "pitch",
+  "name": "Pitch",
+  "url": "https://pitchprash4aqilfr7sbmuwve3pnkpylqwxjbj2q5o4szcfeea6d27yd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/pro-for-bro.md",
+  "id": "pro-for-bro",
+  "name": "Pro For Bro",
+  "url": "http://probrozjd647vobxeepr4e4yhrz47pf6ng6dxje5gjalnpv6dh7mbhad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/proton-mail-2.md",
+  "id": "proton-mail-2",
+  "name": "Proton Mail",
+  "url": "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/raklet.md",
+  "id": "raklet",
+  "name": "Raklet",
+  "url": "http://iwr4usy33opfclmbyemzbmnwwnmmqpqltezpac7fyqqkdv3mabtm6kqd.onion.pet/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/ransomware-darknet-websites.md",
+  "id": "ransomware-darknet-websites",
+  "name": "Ransomware Darknet websites",
+  "url": "https://sizeof.cat/post/ransomware-darknet-websites/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/ransomware-group-sites.md",
+  "id": "ransomware-group-sites",
+  "name": "Ransomware Group Sites",
+  "url": "http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion.pet",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/ransomwatch.md",
+  "id": "ransomwatch",
+  "name": "ransomwatch \ud83d\udc40 \ud83e\udd85",
+  "url": "https://ransomwatch.telemetry.ltd/#/INDEX",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/riseup.md",
+  "id": "riseup",
+  "name": "RiseUp",
+  "url": "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/rooted.md",
+  "id": "rooted",
+  "name": "Rooted",
+  "url": "https://rooted.wtf/",
+  "category": "dark-web",
+  "mp": "low"
+ }
+]

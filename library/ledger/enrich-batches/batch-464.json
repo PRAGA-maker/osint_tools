@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/network-tool.md",
+  "id": "network-tool",
+  "name": "Network Tool",
+  "url": "https://osome.iu.edu/tools/networks/#/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/rooms-of-clubhouse.md",
+  "id": "rooms-of-clubhouse",
+  "name": "Rooms of Clubhouse",
+  "url": "https://roomsofclubhouse.com/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/search-for-a-twitch-channel.md",
+  "id": "search-for-a-twitch-channel",
+  "name": "Search for a Twitch channel",
+  "url": "https://sullygnome.com/channelsearch",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/search-noc-social.md",
+  "id": "search-noc-social",
+  "name": "Search.noc.social",
+  "url": "https://search.noc.social/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/searchstream-live.md",
+  "id": "searchstream-live",
+  "name": "Searchstream.live",
+  "url": "https://searchstream.live/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/seo-resources-search-engine.md",
+  "id": "seo-resources-search-engine",
+  "name": "SEO Resources Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=005797772976587943970:i7q6z1kjm1w",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/social-mentions.md",
+  "id": "social-mentions",
+  "name": "Social Mentions",
+  "url": "https://www.social-searcher.com/media-monitoring/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/social-trends.md",
+  "id": "social-trends",
+  "name": "Social Trends",
+  "url": "https://www.social-searcher.com/social-trends/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/steam-community-search.md",
+  "id": "steam-community-search",
+  "name": "Steam Community :: Search",
+  "url": "https://steamcommunity.com/search/users/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/steam-id-finder.md",
+  "id": "steam-id-finder",
+  "name": "Steam ID Finder",
+  "url": "https://steamidfinder.com/lookup/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/steamdb-info-calculator.md",
+  "id": "steamdb-info-calculator",
+  "name": "steamdb.info/calculator",
+  "url": "https://steamdb.info/calculator/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/trends-tool.md",
+  "id": "trends-tool",
+  "name": "Trends Tool",
+  "url": "https://osome.iu.edu/tools/trends/#/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/twitch-fckdmca-com.md",
+  "id": "twitch-fckdmca-com",
+  "name": "Twitch.fckdmca.com",
+  "url": "https://twitch.fckdmca.com/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/twitch-following.md",
+  "id": "twitch-following",
+  "name": "Twitch Following",
+  "url": "https://cactus.tools/twitch/following",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/twitch-payout-search.md",
+  "id": "twitch-payout-search",
+  "name": "Twitch Payout Search",
+  "url": "https://sizeof.cat/project/twitch-payout-search/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/twitch-tools.md",
+  "id": "twitch-tools",
+  "name": "Twitch Tools",
+  "url": "https://twitch-tools.rootonline.de/",
+  "category": "social-networks",
+  "mp": "low"
+ }
+]

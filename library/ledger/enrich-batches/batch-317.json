@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/keyfinder.md",
+  "id": "keyfinder",
+  "name": "keyFinder",
+  "url": "https://github.com/momenbasel/keyFinder",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/krebs-on-security.md",
+  "id": "krebs-on-security",
+  "name": "Krebs on Security",
+  "url": "https://krebsonsecurity.com/feed/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/lastfm-monitor.md",
+  "id": "lastfm-monitor",
+  "name": "lastfm_monitor",
+  "url": "https://github.com/misiektoja/lastfm_monitor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/lastpass.md",
+  "id": "lastpass",
+  "name": "Lastpass",
+  "url": "https://lastpass.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/leakcop.md",
+  "id": "leakcop",
+  "name": "Leakcop",
+  "url": "https://leakcop.info/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/linkscope.md",
+  "id": "linkscope",
+  "name": "LinkScope",
+  "url": "https://accentusoft.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/linkscope-client.md",
+  "id": "linkscope-client",
+  "name": "LinkScope Client",
+  "url": "https://github.com/AccentuSoft/LinkScope_Client",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/linkuroius.md",
+  "id": "linkuroius",
+  "name": "Linkuroius",
+  "url": "http://linkurio.us",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/listify.md",
+  "id": "listify",
+  "name": "Listify",
+  "url": "http://listify.okfnlabs.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/live-demo.md",
+  "id": "live-demo",
+  "name": "Live demo",
+  "url": "https://getprism.su",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/localfocus.md",
+  "id": "localfocus",
+  "name": "LocalFocus",
+  "url": "https://www.localfocus.nl",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/lockbin.md",
+  "id": "lockbin",
+  "name": "Lockbin",
+  "url": "https://lockbin.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/logseq.md",
+  "id": "logseq",
+  "name": "Logseq",
+  "url": "https://logseq.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/lol-monitor.md",
+  "id": "lol-monitor",
+  "name": "lol_monitor",
+  "url": "https://github.com/misiektoja/lol_monitor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pentesting-recon/low-hanging-fruit.md",
+  "id": "low-hanging-fruit",
+  "name": "Low Hanging Fruit",
+  "url": "https://github.com/blindfuzzy/LHF",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/lucidchart.md",
+  "id": "lucidchart",
+  "name": "Lucidchart",
+  "url": "https://www.lucidchart.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

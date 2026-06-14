@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/govmap.md",
+  "id": "govmap",
+  "name": "GovMap",
+  "url": "https://www.govmap.gov.il/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/here-wego.md",
+  "id": "here-wego",
+  "name": "HERE WeGo",
+  "url": "https://wego.here.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/hitta-se.md",
+  "id": "hitta-se",
+  "name": "Hitta.se",
+  "url": "https://www.hitta.se/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/index-database.md",
+  "id": "index-database",
+  "name": "Index Database",
+  "url": "https://www.indexdatabase.de/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/kakao-map.md",
+  "id": "kakao-map",
+  "name": "Kakao Map",
+  "url": "https://map.kakao.com",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/locust-hub.md",
+  "id": "locust-hub",
+  "name": "Locust Hub",
+  "url": "https://locust-hub-hqfao.hub.arcgis.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/mapa-sk.md",
+  "id": "mapa-sk",
+  "name": "Mapa.sk",
+  "url": "http://mapa.sk/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/mapmyfitness.md",
+  "id": "mapmyfitness",
+  "name": "Mapmyfitness",
+  "url": "http://www.mapmyfitness.com",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/mappy.md",
+  "id": "mappy",
+  "name": "Mappy",
+  "url": "http://en.mappy.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/mapswitcher.md",
+  "id": "mapswitcher",
+  "name": "MapSwitcher",
+  "url": "https://github.com/david-r-edgar/MapSwitcher",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/mapy-cz.md",
+  "id": "mapy-cz",
+  "name": "mapy.cz",
+  "url": "http://mapy.cz",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/merlin.md",
+  "id": "merlin",
+  "name": "Merlin",
+  "url": "https://merlin.allaboutbirds.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/movebank.md",
+  "id": "movebank",
+  "name": "Movebank",
+  "url": "https://www.movebank.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/nasa-firms.md",
+  "id": "nasa-firms",
+  "name": "NASA FIRMS",
+  "url": "https://firms2.modaps.eosdis.nasa.gov/map/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/nasa-worldview.md",
+  "id": "nasa-worldview",
+  "name": "NASA Worldview",
+  "url": "https://worldview.earthdata.nasa.gov/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/open-source-munitions-portal.md",
+  "id": "open-source-munitions-portal",
+  "name": "Open Source Munitions Portal",
+  "url": "https://osmp.ngo/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ }
+]

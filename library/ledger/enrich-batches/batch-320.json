@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/open-pgp.md",
+  "id": "open-pgp",
+  "name": "Open PGP",
+  "url": "https://www.enigmail.net/index.php/en",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/opengraph-intel-ogi.md",
+  "id": "opengraph-intel-ogi",
+  "name": "OpenGraph Intel (OGI)",
+  "url": "https://github.com/khashashin/ogi",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/openrefine.md",
+  "id": "openrefine",
+  "name": "OpenRefine",
+  "url": "https://github.com/OpenRefine",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/ora.md",
+  "id": "ora",
+  "name": "ORA",
+  "url": "http://www.casos.cs.cmu.edu/projects/ora/software.php",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/oryon-osint-query-tool.md",
+  "id": "oryon-osint-query-tool",
+  "name": "Oryon OSINT query tool",
+  "url": "https://docs.google.com/spreadsheets/d/1_x3PXGOahhKT3-ePaWhb3hM1dVxjmBvsVlw6D6lilTQ/edit#gid=1116439221",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/oscobo-search-engine.md",
+  "id": "oscobo-search-engine",
+  "name": "Oscobo Search Engine",
+  "url": "https://oscobo.co.uk",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-ambition-publication.md",
+  "id": "osint-ambition-publication",
+  "name": "OSINT Ambition Publication",
+  "url": "https://publication.osintambition.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-analyser.md",
+  "id": "osint-analyser",
+  "name": "OSINT Analyser",
+  "url": "https://github.com/joestanding/osint-analyser",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-belarus.md",
+  "id": "osint-belarus",
+  "name": "OSINT Belarus",
+  "url": "https://t.me/s/osintby",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-cli-tool-skeleton.md",
+  "id": "osint-cli-tool-skeleton",
+  "name": "osint-cli-tool-skeleton",
+  "url": "https://pypi.org/project/osint-cli-tool-skeleton/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-combine-blog.md",
+  "id": "osint-combine-blog",
+  "name": "OSINT Combine Blog",
+  "url": "https://www.osintcombine.com/blog-feed.xml",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-dojo.md",
+  "id": "osint-dojo",
+  "name": "OSINT Dojo",
+  "url": "https://www.osintdojo.com/resources/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-framework.md",
+  "id": "osint-framework",
+  "name": "OSINT Framework",
+  "url": "http://osintframework.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-search-tools.md",
+  "id": "osint-search-tools",
+  "name": "Osint Search Tools",
+  "url": "https://osint.hopain.cyou/index.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-sh.md",
+  "id": "osint-sh",
+  "name": "OSINT.SH",
+  "url": "https://osint.sh/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/osint-spy.md",
+  "id": "osint-spy",
+  "name": "OSINT-SPY",
+  "url": "https://github.com/SharadKumar97/OSINT-SPY",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

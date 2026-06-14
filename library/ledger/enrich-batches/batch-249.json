@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/code-search/github-dorks.md",
+  "id": "github-dorks",
+  "name": "Github-Dorks",
+  "url": "https://github.com/techgaun/github-dorks",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/github-with-awesome-list-search-engine.md",
+  "id": "github-with-awesome-list-search-engine",
+  "name": "Github with Awesome-List Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=017261104271573007538:fqn_jyftcdq",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/code-search/gitleaks.md",
+  "id": "gitleaks",
+  "name": "GitLeaks",
+  "url": "https://github.com/gitleaks/gitleaks",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/code-search/gitrob.md",
+  "id": "gitrob",
+  "name": "Gitrob",
+  "url": "https://github.com/michenriksen/gitrob",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/givewater.md",
+  "id": "givewater",
+  "name": "giveWater",
+  "url": "https://www.givewater.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ftp-search/globalfile.md",
+  "id": "globalfile",
+  "name": "GlobalFile",
+  "url": "https://globalfilesearch.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/globalleaks.md",
+  "id": "globalleaks",
+  "name": "GlobalLeaks",
+  "url": "https://www.globaleaks.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/goo.md",
+  "id": "goo",
+  "name": "Goo",
+  "url": "https://www.goo.ne.jp",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/goodhousekeeping.md",
+  "id": "goodhousekeeping",
+  "name": "GoodHousekeeping",
+  "url": "http://www.goodhousekeeping.com/product-reviews",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/goodsearch-2.md",
+  "id": "goodsearch-2",
+  "name": "Goodsearch",
+  "url": "https://www.goodshop.com/search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/goofile.md",
+  "id": "goofile",
+  "name": "Goofile",
+  "url": "https://www.kali.org/tools/goofile/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/google.md",
+  "id": "google",
+  "name": "Google",
+  "url": "https://www.google.com/?gws_rd=ssl",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/google-advanced-search.md",
+  "id": "google-advanced-search",
+  "name": "Google Advanced Search",
+  "url": "https://www.google.com/advanced_search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-tools/google-alerts.md",
+  "id": "google-alerts",
+  "name": "Google Alerts",
+  "url": "https://www.google.com/alerts",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-and-bing.md",
+  "id": "google-and-bing",
+  "name": "Google & Bing",
+  "url": "https://one-plus.github.io/GoogleBing",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/google-blog-directory.md",
+  "id": "google-blog-directory",
+  "name": "Google Blog Directory",
+  "url": "http://www.google.com/press/blog-directory.html",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

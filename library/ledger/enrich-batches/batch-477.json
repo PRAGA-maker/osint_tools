@@ -1,0 +1,98 @@
+[
+ {
+  "file": "library/tools/transportation/ukraine-liveuamap-com.md",
+  "id": "ukraine-liveuamap-com",
+  "name": "Ukraine liveuamap.com",
+  "url": "https://liveuamap.com/ru",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/understanding-war-map-room.md",
+  "id": "understanding-war-map-room",
+  "name": "Understanding War Map Room",
+  "url": "https://www.understandingwar.org/map-room",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/us-military-bases-interactive-worldwide-map.md",
+  "id": "us-military-bases-interactive-worldwide-map",
+  "name": "US Military Bases Interactive Worldwide Map",
+  "url": "https://worldbeyondwar.org/no-bases/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/venicle-number-search-toolbox.md",
+  "id": "venicle-number-search-toolbox",
+  "name": "Venicle Number Search Toolbox",
+  "url": "https://cipher387.github.io/venicle_number_search_toolbox/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/vessel-tracker.md",
+  "id": "vessel-tracker",
+  "name": "Vessel Tracker",
+  "url": "https://www.vesseltracker.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/wandermap.md",
+  "id": "wandermap",
+  "name": "Wandermap",
+  "url": "http://www.wandermap.net/en/#/z15/55.7522011,37.6156006/terrain",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/websdr.md",
+  "id": "websdr",
+  "name": "WEBSDR",
+  "url": "http://websdr.ewi.utwente.nl:8901",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/wikiroutes.md",
+  "id": "wikiroutes",
+  "name": "WikiRoutes",
+  "url": "http://wikiroutes.info/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/world-aviation-accident-database-1962-2007.md",
+  "id": "world-aviation-accident-database-1962-2007",
+  "name": "World Aviation Accident Database 1962-2007",
+  "url": "https://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/world-aviation-accident-database-2008-2021.md",
+  "id": "world-aviation-accident-database-2008-2021",
+  "name": "World Aviation Accident Database 2008-2021",
+  "url": "https://data.ntsb.gov/carol-main-public/basic-search",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/xblog-bellingcat-a-beginner-s-guide-to-flight-tracking-bellingcat.md",
+  "id": "xblog-bellingcat-a-beginner-s-guide-to-flight-tracking-bellingcat",
+  "name": "xBlog: bellingcat - A Beginner's Guide To Flight Tracking - bellingcat",
+  "url": "https://www.bellingcat.com/resources/how-tos/2019/10/15/a-beginners-guide-to-flight-tracking",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/zugfinder.md",
+  "id": "zugfinder",
+  "name": "ZugFinder",
+  "url": "https://www.zugfinder.net/en/start",
+  "category": "transportation",
+  "mp": "low"
+ }
+]

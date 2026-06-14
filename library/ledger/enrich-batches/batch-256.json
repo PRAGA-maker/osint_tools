@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/lawyers-com.md",
+  "id": "lawyers-com",
+  "name": "Lawyers.com",
+  "url": "http://www.lawyers.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/lazy-scholar.md",
+  "id": "lazy-scholar",
+  "name": "Lazy Scholar",
+  "url": "https://lazyscholar.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/leaklooker.md",
+  "id": "leaklooker",
+  "name": "LeakLooker",
+  "url": "https://github.com/woj-ciech/LeakLooker",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/leet.md",
+  "id": "leet",
+  "name": "Leet",
+  "url": "https://sites.google.com/view/l33tech/tools/ods",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/legistorm.md",
+  "id": "legistorm",
+  "name": "LegiStorm",
+  "url": "http://www.legistorm.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/leit-search-engine-iceland.md",
+  "id": "leit-search-engine-iceland",
+  "name": "Leit Search Engine (Iceland)",
+  "url": "http://leit.is",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/lexcraft-cornell-university-legal-wiki-canada.md",
+  "id": "lexcraft-cornell-university-legal-wiki-canada",
+  "name": "Lexcraft Cornell University Legal Wiki (Canada)",
+  "url": "https://www.law.cornell.edu/wiki/lexcraft",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/libgen-rs.md",
+  "id": "libgen-rs",
+  "name": "Libgen.rs",
+  "url": "http://libgen.rs/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/libraries-io.md",
+  "id": "libraries-io",
+  "name": "Libraries.io",
+  "url": "https://libraries.io/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/library-databases.md",
+  "id": "library-databases",
+  "name": "Library Databases",
+  "url": "https://guides.uflib.ufl.edu/az.php",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/lilo.md",
+  "id": "lilo",
+  "name": "Lilo",
+  "url": "https://www.lilo.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/limetorrents.md",
+  "id": "limetorrents",
+  "name": "LimeTorrents",
+  "url": "https://www.limetorrents.cc",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/live-traffic-cameras-in-europe.md",
+  "id": "live-traffic-cameras-in-europe",
+  "name": "Live Traffic Cameras in Europe",
+  "url": "https://livetraffic.eu",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ljseek-livejournal-blog-search.md",
+  "id": "ljseek-livejournal-blog-search",
+  "name": "LjSeek LiveJournal Blog Search",
+  "url": "http://www.ljseek.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/looksmart-search-engine-united-kingdom.md",
+  "id": "looksmart-search-engine-united-kingdom",
+  "name": "LookSmart Search Engine (United Kingdom)",
+  "url": "http://www.looksmart.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/loopnet.md",
+  "id": "loopnet",
+  "name": "LoopNet",
+  "url": "http://www.loopnet.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

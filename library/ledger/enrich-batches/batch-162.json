@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/montreal-gazette.md",
+  "id": "montreal-gazette",
+  "name": "Montreal Gazette",
+  "url": "http://montrealgazette.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/movabletype.md",
+  "id": "movabletype",
+  "name": "MovableType",
+  "url": "http://www.moveabletype.org",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/mumsnet-com.md",
+  "id": "mumsnet-com",
+  "name": "mumsnet.com",
+  "url": "https://www.mumsnet.com/Talk",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/myfitnesspal.md",
+  "id": "myfitnesspal",
+  "name": "Myfitnesspal",
+  "url": "https://www.myfitnesspal.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/mynetworktv-united-states.md",
+  "id": "mynetworktv-united-states",
+  "name": "MyNetworkTV (United States)",
+  "url": "http://www.mynetworktv.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/mytwinplace.md",
+  "id": "mytwinplace",
+  "name": "Mytwinplace",
+  "url": "https://www.mytwinplace.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/n0paste.md",
+  "id": "n0paste",
+  "name": "n0paste",
+  "url": "https://n0paste.eu/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nachricht.md",
+  "id": "nachricht",
+  "name": "Nachricht",
+  "url": "https://nachricht.co/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/national-geographic-magazine.md",
+  "id": "national-geographic-magazine",
+  "name": "National Geographic Magazine",
+  "url": "http://ngm.nationalgeographic.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nationaltradesmen-co-uk.md",
+  "id": "nationaltradesmen-co-uk",
+  "name": "nationaltradesmen.co.uk",
+  "url": "https://nationaltradesmen.co.uk/forums/forum/national-tradesmens-forum/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nbc-united-states.md",
+  "id": "nbc-united-states",
+  "name": "NBC (United States)",
+  "url": "http://www.nbcnews.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ndtv-s-gadgets-360.md",
+  "id": "ndtv-s-gadgets-360",
+  "name": "NDTV\u2019s Gadgets 360",
+  "url": "http://gadgets.ndtv.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nekobin.md",
+  "id": "nekobin",
+  "name": "nekobin",
+  "url": "https://nekobin.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/irc-search/netsplit-de.md",
+  "id": "netsplit-de",
+  "name": "netsplit.de",
+  "url": "https://netsplit.de/channels/search.php",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/network-nine-television-australia.md",
+  "id": "network-nine-television-australia",
+  "name": "Network Nine Television (Australia)",
+  "url": "https://www.nine.com.au",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/network-ten-television-australia.md",
+  "id": "network-ten-television-australia",
+  "name": "Network Ten Television (Australia)",
+  "url": "https://10play.com.au",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

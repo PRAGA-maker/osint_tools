@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/spideroak.md",
+  "id": "spideroak",
+  "name": "Spideroak",
+  "url": "https://spideroak.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/spidersuite.md",
+  "id": "spidersuite",
+  "name": "SpiderSuite",
+  "url": "https://github.com/3nock/SpiderSuite",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/spotify-monitor.md",
+  "id": "spotify-monitor",
+  "name": "spotify_monitor",
+  "url": "https://github.com/misiektoja/spotify_monitor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/spotify-profile-monitor.md",
+  "id": "spotify-profile-monitor",
+  "name": "spotify_profile_monitor",
+  "url": "https://github.com/misiektoja/spotify_profile_monitor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/steam-monitor.md",
+  "id": "steam-monitor",
+  "name": "steam_monitor",
+  "url": "https://github.com/misiektoja/steam_monitor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/steganography-online.md",
+  "id": "steganography-online",
+  "name": "Steganography Online",
+  "url": "https://stylesuxx.github.io/steganography/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/steganography-online-codec.md",
+  "id": "steganography-online-codec",
+  "name": "Steganography Online Codec",
+  "url": "https://www.pelock.com/products/steganography-online-codec",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/stix-viewer.md",
+  "id": "stix-viewer",
+  "name": "STIX Viewer",
+  "url": "https://stix-viewer.threatlandscape.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/storymap.md",
+  "id": "storymap",
+  "name": "StoryMap",
+  "url": "https://storymap.knightlab.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/stringify.md",
+  "id": "stringify",
+  "name": "Stringify",
+  "url": "https://www.stringify.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sub3-suite.md",
+  "id": "sub3-suite",
+  "name": "Sub3 Suite",
+  "url": "https://github.com/3nock/sub3suite",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/subgraph-os.md",
+  "id": "subgraph-os",
+  "name": "Subgraph OS",
+  "url": "https://subgraph.com/index.en.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/surveilliance-self-defense.md",
+  "id": "surveilliance-self-defense",
+  "name": "Surveilliance Self Defense",
+  "url": "https://ssd.eff.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/tableau-2.md",
+  "id": "tableau-2",
+  "name": "Tableau",
+  "url": "http://www.tableau.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/tableau-public.md",
+  "id": "tableau-public",
+  "name": "Tableau Public",
+  "url": "https://public.tableau.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/tagul.md",
+  "id": "tagul",
+  "name": "Tagul",
+  "url": "https://tagul.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/google-com-78.md",
+  "id": "google-com-78",
+  "name": "google.com",
+  "url": "https://support.google.com/websearch/answer/134479",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-79.md",
+  "id": "google-com-79",
+  "name": "google.com",
+  "url": "https://support.google.com/websearch/answer/2466433",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-80.md",
+  "id": "google-com-80",
+  "name": "google.com",
+  "url": "https://support.google.com/websearch/answer/142143",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-81.md",
+  "id": "google-com-81",
+  "name": "google.com",
+  "url": "https://support.google.com/websearch/answer/35890",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-82.md",
+  "id": "google-com-82",
+  "name": "google.com",
+  "url": "https://toolbox.google.com/datasetsearch",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-83.md",
+  "id": "google-com-83",
+  "name": "google.com",
+  "url": "https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit?fbclid=IwAR25ZP_8_eh_kN6_Ruyupo42RlYWGo9r-8XN7BnPHTL7w716PJFW-N-JiRM",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-84.md",
+  "id": "google-com-84",
+  "name": "google.com",
+  "url": "https://www.google.com/advanced_image_search",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-85.md",
+  "id": "google-com-85",
+  "name": "google.com",
+  "url": "https://www.google.com/advanced_video_search",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/impersonal-me.md",
+  "id": "impersonal-me",
+  "name": "impersonal.me",
+  "url": "https://impersonal.me/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/info-com.md",
+  "id": "info-com",
+  "name": "info.com",
+  "url": "https://info.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/isearchfrom-com.md",
+  "id": "isearchfrom-com",
+  "name": "isearchfrom.com",
+  "url": "https://isearchfrom.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/lifewire-com.md",
+  "id": "lifewire-com",
+  "name": "lifewire.com",
+  "url": "https://www.lifewire.com/bing-advanced-search-3482817",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/lukol-com.md",
+  "id": "lukol-com",
+  "name": "lukol.com",
+  "url": "https://www.lukol.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/malfrat-s-osint-map.md",
+  "id": "malfrat-s-osint-map",
+  "name": "Malfrat's OSINT Map",
+  "url": "https://map.malfrats.industries/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/metaosint-intelscott.md",
+  "id": "metaosint-intelscott",
+  "name": "MetaOSINT (IntelScott)",
+  "url": "https://metaosint.github.io/table",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/monstercrawler-com.md",
+  "id": "monstercrawler-com",
+  "name": "monstercrawler.com",
+  "url": "https://monstercrawler.com/",
+  "category": "search-engines",
+  "mp": "high"
+ }
+]

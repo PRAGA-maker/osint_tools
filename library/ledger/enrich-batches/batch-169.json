@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/textbin-code.md",
+  "id": "textbin-code",
+  "name": "Textbin-Code",
+  "url": "https://textbin.online/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-comedy-network-television-canada.md",
+  "id": "the-comedy-network-television-canada",
+  "name": "The Comedy Network Television (Canada)",
+  "url": "https://www.ctvcomedy.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-cw-network-television-united-states.md",
+  "id": "the-cw-network-television-united-states",
+  "name": "The CW Network Television (United States)",
+  "url": "http://www.cwtv.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-economist-world-news-united-kingdom.md",
+  "id": "the-economist-world-news-united-kingdom",
+  "name": "The Economist World News (United Kingdom)",
+  "url": "http://www.economist.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-globe-and-mail.md",
+  "id": "the-globe-and-mail",
+  "name": "The Globe & Mail",
+  "url": "http://www.theglobeandmail.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-guardian-united-kingdom.md",
+  "id": "the-guardian-united-kingdom",
+  "name": "The Guardian (United Kingdom)",
+  "url": "http://www.theguardian.com/politics/government-data",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-guardian-world.md",
+  "id": "the-guardian-world",
+  "name": "The Guardian (World)",
+  "url": "http://www.theguardian.com/world",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-independent-news-united-kingdom.md",
+  "id": "the-independent-news-united-kingdom",
+  "name": "The Independent News (United Kingdom)",
+  "url": "http://www.independent.co.uk",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-province-news.md",
+  "id": "the-province-news",
+  "name": "The Province News",
+  "url": "http://www.theprovince.com/index.html",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/the-wall-street-journal.md",
+  "id": "the-wall-street-journal",
+  "name": "The Wall Street Journal",
+  "url": "http://www.wsj.com/news/world",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/theaustralian-national-news.md",
+  "id": "theaustralian-national-news",
+  "name": "TheAustralian National News",
+  "url": "http://www.theaustralian.com.au",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/thebigproject.md",
+  "id": "thebigproject",
+  "name": "TheBigProject",
+  "url": "http://www.thebigproject.co.uk/news",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/thenextweb.md",
+  "id": "thenextweb",
+  "name": "TheNextWeb",
+  "url": "http://thenextweb.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/thepaperboy.md",
+  "id": "thepaperboy",
+  "name": "ThePaperboy",
+  "url": "https://www.thepaperboy.com/newspapers-by-country.cfm",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/thestudentroom-co-uk.md",
+  "id": "thestudentroom-co-uk",
+  "name": "thestudentroom.co.uk",
+  "url": "https://www.thestudentroom.co.uk/forum.php",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/theverge-tech-news.md",
+  "id": "theverge-tech-news",
+  "name": "TheVerge Tech News",
+  "url": "http://www.theverge.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

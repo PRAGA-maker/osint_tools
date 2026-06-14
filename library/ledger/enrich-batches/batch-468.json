@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/translation-language/google-translate-2.md",
+  "id": "google-translate-2",
+  "name": "Google Translate",
+  "url": "https://translate.google.co.uk",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/grammar-and-spelling-search-engine.md",
+  "id": "grammar-and-spelling-search-engine",
+  "name": "Grammar and Spelling Search Engine",
+  "url": "http://www.grammar.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/handspeak-english-sign-language.md",
+  "id": "handspeak-english-sign-language",
+  "name": "HandSpeak English Sign Language",
+  "url": "http://www.handspeak.com/translate",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/happyscribe-com.md",
+  "id": "happyscribe-com",
+  "name": "happyscribe.com",
+  "url": "https://www.happyscribe.com/video-to-text",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/idiomax-translation.md",
+  "id": "idiomax-translation",
+  "name": "IdiomaX Translation",
+  "url": "http://www.idiomax.com/online-translator.aspx",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/imtranslator.md",
+  "id": "imtranslator",
+  "name": "imTranslator",
+  "url": "http://imtranslator.net/translation",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/imtranslator-comparison-tool.md",
+  "id": "imtranslator-comparison-tool",
+  "name": "IMTranslator Comparison Tool",
+  "url": "http://imtranslator.net/compare",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/itranslate.md",
+  "id": "itranslate",
+  "name": "iTranslate",
+  "url": "http://www.itranslateapp.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/itranslate-voice.md",
+  "id": "itranslate-voice",
+  "name": "iTranslate Voice",
+  "url": "http://itranslatevoice.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/know-your-meme.md",
+  "id": "know-your-meme",
+  "name": "Know Your Meme",
+  "url": "https://knowyourmeme.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/learn-languages.md",
+  "id": "learn-languages",
+  "name": "Learn Languages",
+  "url": "http://mylanguages.org",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/lexicool-translation.md",
+  "id": "lexicool-translation",
+  "name": "Lexicool Translation",
+  "url": "http://www.lexicool.com/translate.asp",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/lexilogos.md",
+  "id": "lexilogos",
+  "name": "Lexilogos",
+  "url": "https://www.lexilogos.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/lexilogos-com.md",
+  "id": "lexilogos-com",
+  "name": "lexilogos.com",
+  "url": "http://www.lexilogos.com/keyboard/russian_conversion.htm",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/lingojam-com.md",
+  "id": "lingojam-com",
+  "name": "lingojam.com",
+  "url": "https://lingojam.com/%F0%9F%90%8CEmojiTranslator%F0%9F%8E%B2",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/lingojam-com-2.md",
+  "id": "lingojam-com-2",
+  "name": "lingojam.com",
+  "url": "https://lingojam.com/SMSandTextMessageTranslator",
+  "category": "translation-language",
+  "mp": "low"
+ }
+]

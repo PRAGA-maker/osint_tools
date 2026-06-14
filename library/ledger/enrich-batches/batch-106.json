@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/other-social-networks/delicious.md",
+  "id": "delicious",
+  "name": "Delicious",
+  "url": "https://del.icio.us/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/dev-to.md",
+  "id": "dev-to",
+  "name": "dev.to",
+  "url": "https://dev.to/khenhey/how-to-find-your-mastodon-account-id-489d?comments_sort=oldest",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/analytics/dmi-tcat.md",
+  "id": "dmi-tcat",
+  "name": "DMI-TCAT",
+  "url": "https://github.com/digitalmethodsinitiative/dmi-tcat",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/doesfollow.md",
+  "id": "doesfollow",
+  "name": "DoesFollow",
+  "url": "https://doesfollow.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/dolphin-radar.md",
+  "id": "dolphin-radar",
+  "name": "Dolphin Radar",
+  "url": "https://www.dolphinradar.com/web-viewer-for-instagram",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/download-and-export-twitter-followers-into-excel-for-free.md",
+  "id": "download-and-export-twitter-followers-into-excel-for-free",
+  "name": "Download and Export Twitter Followers into Excel for Free",
+  "url": "https://www.vicinitas.io/free-tools/download-twitter-followers",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/downloader-instagram-addons-mozilla-org.md",
+  "id": "downloader-instagram-addons-mozilla-org",
+  "name": "downloader instagram (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-GB/firefox/addon/downloader-instagram/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/downloadgram-app.md",
+  "id": "downloadgram-app",
+  "name": "downloadgram.app",
+  "url": "https://downloadgram.app/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/downloadgram-instagram-photo-and-video-downloader-online.md",
+  "id": "downloadgram-instagram-photo-and-video-downloader-online",
+  "name": "DownloadGram - Instagram photo and video downloader online",
+  "url": "https://downloadgram.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/draugiem-latvia.md",
+  "id": "draugiem-latvia",
+  "name": "Draugiem (Latvia)",
+  "url": "https://www.draugiem.lv",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/dumpitblue-chromewebstore-google-com.md",
+  "id": "dumpitblue-chromewebstore-google-com",
+  "name": "dumpitblue (chromewebstore.google.com)",
+  "url": "https://chromewebstore.google.com/detail/dumpitblue+/igmgknoioooacbcpcfgjigbaajpelbfe",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/dumpor-instagram-search.md",
+  "id": "dumpor-instagram-search",
+  "name": "Dumpor: Instagram search",
+  "url": "https://dumpor.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/dumpor-io.md",
+  "id": "dumpor-io",
+  "name": "dumpor.io",
+  "url": "https://dumpor.io/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org.md",
+  "id": "en-wikipedia-org",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/List_of_social_networking_websites",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org-2.md",
+  "id": "en-wikipedia-org-2",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/Far-right_usage_of_the_internet",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org-3.md",
+  "id": "en-wikipedia-org-3",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/BitChute",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

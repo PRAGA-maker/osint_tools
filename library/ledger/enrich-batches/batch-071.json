@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/court-cases-results.md",
+  "id": "court-cases-results",
+  "name": "Court Cases Results",
+  "url": "https://www.thelawpages.com/court-cases/court-case-search.php",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/court-electronic-records-pacer.md",
+  "id": "court-electronic-records-pacer",
+  "name": "Court Electronic Records PACER",
+  "url": "https://www.pacer.gov/psco/cgi-bin/links.pl",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/court-locator-united-states-courts.md",
+  "id": "court-locator-united-states-courts",
+  "name": "Court Locator | United States Courts",
+  "url": "http://www.uscourts.gov/court-locator",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/court-records-directory.md",
+  "id": "court-records-directory",
+  "name": "Court Records Directory",
+  "url": "http://publicrecords.searchsystems.net/free_public_records_by_type_of_record/court_records",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/court-records-directory-2.md",
+  "id": "court-records-directory-2",
+  "name": "Court Records Directory",
+  "url": "https://www.courtreference.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/court-records-search-directory.md",
+  "id": "court-records-search-directory",
+  "name": "Court Records Search Directory",
+  "url": "http://publicrecords.onlinesearches.com/courts.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/court-records-united-states-courts.md",
+  "id": "court-records-united-states-courts",
+  "name": "Court Records | United States Courts",
+  "url": "https://www.uscourts.gov/court-records",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/courthousedirect-com.md",
+  "id": "courthousedirect-com",
+  "name": "courthousedirect.com/",
+  "url": "http://www.courthousedirect.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/courts-and-tribunals-judiciary.md",
+  "id": "courts-and-tribunals-judiciary",
+  "name": "Courts and Tribunals Judiciary",
+  "url": "https://www.judiciary.uk/judgments",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/cpaverify-org.md",
+  "id": "cpaverify-org",
+  "name": "cpaverify.org",
+  "url": "https://cpaverify.org/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/credibly-accused.md",
+  "id": "credibly-accused",
+  "name": "Credibly Accused",
+  "url": "https://projects.propublica.org/credibly-accused/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/creditsafe-com.md",
+  "id": "creditsafe-com",
+  "name": "creditsafe.com",
+  "url": "https://www.creditsafe.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/crimereports.md",
+  "id": "crimereports",
+  "name": "CrimeReports",
+  "url": "https://www.crimereports.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/criminal-search-criminal-records-by-state-and.md",
+  "id": "criminal-search-criminal-records-by-state-and",
+  "name": "Criminal Search (Criminal Records by State &",
+  "url": "https://www.blackbookonline.info/criminalsearch.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/cro-ie.md",
+  "id": "cro-ie",
+  "name": "cro.ie",
+  "url": "https://core.cro.ie/search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/cro-ie-2.md",
+  "id": "cro-ie-2",
+  "name": "cro.ie",
+  "url": "https://core.cro.ie/search?__cf_chl_jschl_tk__=SpGJVcG9n8RPzw3wvMXsJyg8lf7OrD94Kd_rO84.xSc-1637240167-0-gaNycGzNBj0",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

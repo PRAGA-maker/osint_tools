@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/sociallist-io.md",
+  "id": "sociallist-io",
+  "name": "SocialList.io",
+  "url": "https://sociallist.io",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/socialpath.md",
+  "id": "socialpath",
+  "name": "SocialPath",
+  "url": "https://github.com/woj-ciech/socialpath",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/spokeo.md",
+  "id": "spokeo",
+  "name": "Spokeo",
+  "url": "http://www.spokeo.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/spokeo-com.md",
+  "id": "spokeo-com",
+  "name": "spokeo.com",
+  "url": "https://www.spokeo.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/spytox.md",
+  "id": "spytox",
+  "name": "SpyTox",
+  "url": "https://www.spytox.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/ssn-validator.md",
+  "id": "ssn-validator",
+  "name": "SSN Validator",
+  "url": "https://www.ssnvalidator.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/starving-farmer.md",
+  "id": "starving-farmer",
+  "name": "Starving Farmer",
+  "url": "https://www.starvingfarmer.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/superpages-com.md",
+  "id": "superpages-com",
+  "name": "Superpages.com",
+  "url": "http://wp.superpages.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/swedish-name-register.md",
+  "id": "swedish-name-register",
+  "name": "Swedish Name Register",
+  "url": "https://scb.se/hitta-statistik/sverige-i-siffror/namnsok/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/switchboard.md",
+  "id": "switchboard",
+  "name": "Switchboard",
+  "url": "http://www.switchboard.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/textmagic-free-carrier-lookup.md",
+  "id": "textmagic-free-carrier-lookup",
+  "name": "TextMagic Free Carrier Lookup",
+  "url": "https://www.textmagic.com/free-tools/carrier-lookup",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/general-people-search/thatsthem-2.md",
+  "id": "thatsthem-2",
+  "name": "ThatsThem",
+  "url": "https://thatsthem.com/name-address-search",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/thatsthem-people-search.md",
+  "id": "thatsthem-people-search",
+  "name": "ThatsThem People Search",
+  "url": "https://thatsthem.com/people-search",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/registries/the-bump.md",
+  "id": "the-bump",
+  "name": "The Bump",
+  "url": "https://registry.thebump.com/babyregistrysearch",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/registries/the-knot.md",
+  "id": "the-knot",
+  "name": "The Knot",
+  "url": "https://www.theknot.com/registry/couplesearch",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/the-law-pages.md",
+  "id": "the-law-pages",
+  "name": "The Law Pages",
+  "url": "https://www.thelawpages.com/court-cases/court-case-search.php?mode=1",
+  "category": "people-search",
+  "mp": "high"
+ }
+]

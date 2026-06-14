@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/urvx.md",
+  "id": "urvx",
+  "name": "URVX",
+  "url": "https://uvrx.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/urvx-com.md",
+  "id": "urvx-com",
+  "name": "URVX.com",
+  "url": "http://www.uvrx.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/verification-handbook-2.md",
+  "id": "verification-handbook-2",
+  "name": "Verification Handbook",
+  "url": "https://datajournalism.com/read/handbook/verification-1",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/wackysafe.md",
+  "id": "wackysafe",
+  "name": "WackySafe",
+  "url": "https://wackysafe.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/walla-israel.md",
+  "id": "walla-israel",
+  "name": "Walla (Israel)",
+  "url": "http://www.walla.co.il",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/web-archive-search-tool.md",
+  "id": "web-archive-search-tool",
+  "name": "Web archive search tool",
+  "url": "https://www.aware-online.com/osint-tools/web-archive-search-tool/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/web-directories.md",
+  "id": "web-directories",
+  "name": "Web Directories",
+  "url": "http://www.web-directories.ws/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/web-search-navigator.md",
+  "id": "web-search-navigator",
+  "name": "Web Search Navigator",
+  "url": "https://github.com/infokiller/web-search-navigator",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/welcome-to-dealstrap.md",
+  "id": "welcome-to-dealstrap",
+  "name": "Welcome to Dealstrap!",
+  "url": "http://correctsearch.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/wiki-for-kids.md",
+  "id": "wiki-for-kids",
+  "name": "Wiki For Kids",
+  "url": "https://www.safesearchkids.com/wikipedia-for-kids/#.Xg5LbS3Mxp8",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/wiley.md",
+  "id": "wiley",
+  "name": "Wiley",
+  "url": "https://www.wiley.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/wintria.md",
+  "id": "wintria",
+  "name": "Wintria",
+  "url": "http://www.wintria.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/wolfram-alpha.md",
+  "id": "wolfram-alpha",
+  "name": "Wolfram Alpha",
+  "url": "https://www.wolframalpha.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/word-tracker.md",
+  "id": "word-tracker",
+  "name": "Word Tracker",
+  "url": "https://www.wordtracker.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/wordpress-content-snatcher.md",
+  "id": "wordpress-content-snatcher",
+  "name": "WordPress Content Snatcher",
+  "url": "https://cse.google.com/cse/publicurl?cx=011081986282915606282:w8bndhohpi0",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/wordpress-custom-search.md",
+  "id": "wordpress-custom-search",
+  "name": "WordPress Custom Search",
+  "url": "https://cse.google.com/cse?cx=011081986282915606282:w8bndhohpi0",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

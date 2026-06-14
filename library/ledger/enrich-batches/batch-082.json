@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/justice-gov-uk.md",
+  "id": "justice-gov-uk",
+  "name": "justice.gov.uk",
+  "url": "http://certificatedbailiffs.justice.gov.uk/CertificatedBailiffs/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/kansas.md",
+  "id": "kansas",
+  "name": "Kansas",
+  "url": "https://kdocrepository.doc.ks.gov/kasper",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/katrina-spending-search.md",
+  "id": "katrina-spending-search",
+  "name": "Katrina Spending Search",
+  "url": "https://b2.caspio.com/dp/a4321000cb4905373d1946e5b33f",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/koreabr-com.md",
+  "id": "koreabr-com",
+  "name": "koreabr.com",
+  "url": "http://www.koreabr.com/mk/MKBRD01R0.do",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/labcfrontdoor-co-uk.md",
+  "id": "labcfrontdoor-co-uk",
+  "name": "labcfrontdoor.co.uk",
+  "url": "https://labcfrontdoor.co.uk/find-a-competent-person",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/landlordregistrationscotland-gov-uk.md",
+  "id": "landlordregistrationscotland-gov-uk",
+  "name": "landlordregistrationscotland.gov.uk",
+  "url": "https://www.landlordregistrationscotland.gov.uk/search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/landregistryireland-com.md",
+  "id": "landregistryireland-com",
+  "name": "landregistryireland.com",
+  "url": "https://www.landregistryireland.com/home",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/landregistryservices-com.md",
+  "id": "landregistryservices-com",
+  "name": "landregistryservices.com",
+  "url": "https://www.landregistryservices.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/latvia.md",
+  "id": "latvia",
+  "name": "Latvia",
+  "url": "https://www.ur.gov.lv/en/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/lawlink-co-uk.md",
+  "id": "lawlink-co-uk",
+  "name": "lawlink.co.uk",
+  "url": "http://www.lawlink.co.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/laws-and-codes-search-directory-by-state.md",
+  "id": "laws-and-codes-search-directory-by-state",
+  "name": "Laws and Codes Search Directory (By State)",
+  "url": "http://publicrecords.onlinesearches.com/laws-and-codes.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/lawscot-org-uk.md",
+  "id": "lawscot-org-uk",
+  "name": "lawscot.org.uk",
+  "url": "https://www.lawscot.org.uk/find-a-solicitor/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/lawsoc-ni-org.md",
+  "id": "lawsoc-ni-org",
+  "name": "lawsoc-ni.org",
+  "url": "https://lawsoc-ni.org/using-a-solicitor/find-a-solicitor",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/lawsociety-org-uk.md",
+  "id": "lawsociety-org-uk",
+  "name": "lawsociety.org.uk",
+  "url": "http://solicitors.lawsociety.org.uk/?Pro=True",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/lefigaro-fr.md",
+  "id": "lefigaro-fr",
+  "name": "lefigaro.fr",
+  "url": "https://entreprises.lefigaro.fr/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/legacy.md",
+  "id": "legacy",
+  "name": "Legacy",
+  "url": "https://www.legacy.com",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

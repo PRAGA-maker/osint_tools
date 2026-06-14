@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/google-plus-photo-custom-search.md",
+  "id": "google-plus-photo-custom-search",
+  "name": "Google+ Photo Custom Search",
+  "url": "https://cse.google.com/cse/publicurl?cx=006205189065513216365:uo99tr1fxjq",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/hadzy-com.md",
+  "id": "hadzy-com",
+  "name": "Hadzy.com",
+  "url": "https://hadzy.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/hashtagify.md",
+  "id": "hashtagify",
+  "name": "Hashtagify",
+  "url": "https://hashtagify.me",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/inflact-instagram-search.md",
+  "id": "inflact-instagram-search",
+  "name": "Inflact Instagram Search",
+  "url": "https://inflact.com/tools/instagram-search/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/insfo.md",
+  "id": "insfo",
+  "name": "InsFo",
+  "url": "https://chrome.google.com/webstore/detail/insfo-export-instagram-fo/bckleejkdhlponanidmjfjdigpahlado/related",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-location-search.md",
+  "id": "instagram-location-search",
+  "name": "Instagram Location Search",
+  "url": "https://github.com/bellingcat/instagram-location-search/tree/main",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/instagram-scraper.md",
+  "id": "instagram-scraper",
+  "name": "Instagram Scraper",
+  "url": "https://apify.com/jaroslavhejlek/instagram-scraper",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/invidious-instances.md",
+  "id": "invidious-instances",
+  "name": "Invidious Instances",
+  "url": "https://docs.invidious.io/instances/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/jump-cutter.md",
+  "id": "jump-cutter",
+  "name": "Jump Cutter",
+  "url": "https://chrome.google.com/webstore/detail/jump-cutter/lmppdpldfpfdlipofacekcfleacbbncp/related",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/karma-decay.md",
+  "id": "karma-decay",
+  "name": "Karma Decay",
+  "url": "http://karmadecay.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/keyhole.md",
+  "id": "keyhole",
+  "name": "Keyhole",
+  "url": "https://keyhole.co",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/kribrum-io.md",
+  "id": "kribrum-io",
+  "name": "Kribrum.io",
+  "url": "https://kribrum.io/search",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/kworb.md",
+  "id": "kworb",
+  "name": "Kworb",
+  "url": "https://kworb.net/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/libredd-it.md",
+  "id": "libredd-it",
+  "name": "Libredd.it",
+  "url": "https://libredd.it/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/linkdtime.md",
+  "id": "linkdtime",
+  "name": "LinkdTime",
+  "url": "https://github.com/Lucksi/LinkdTime",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-datahub.md",
+  "id": "linkedin-datahub",
+  "name": "Linkedin Datahub",
+  "url": "https://github.com/linkedin/datahub/blob/master/docs/faq.md",
+  "category": "social-networks",
+  "mp": "medium"
+ }
+]

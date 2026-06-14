@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/pdfmyurl.md",
+  "id": "pdfmyurl",
+  "name": "PDFmyURL",
+  "url": "http://pdfmyurl.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pdfx.md",
+  "id": "pdfx",
+  "name": "PDFX",
+  "url": "https://github.com/metachris/pdfx",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pearltrees.md",
+  "id": "pearltrees",
+  "name": "Pearltrees",
+  "url": "http://www.pearltrees.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/photosint-chrome-google-com.md",
+  "id": "photosint-chrome-google-com",
+  "name": "photosint (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/photosint/gonhdjmkgfkokhkflfhkbiagbmoolhcd",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/picture-exif-cleaner-addons-mozilla-org.md",
+  "id": "picture-exif-cleaner-addons-mozilla-org",
+  "name": "picture exif cleaner (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/picture-exif-cleaner/?src=search",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/pikker-ee-cuckoo-sandbox.md",
+  "id": "pikker-ee-cuckoo-sandbox",
+  "name": "Pikker.ee Cuckoo Sandbox",
+  "url": "https://sandbox.pikker.ee/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pixelprivacy.md",
+  "id": "pixelprivacy",
+  "name": "PixelPrivacy",
+  "url": "https://pixelprivacy.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/popurls.md",
+  "id": "popurls",
+  "name": "Popurls",
+  "url": "http://popurls.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/powtoon-animation-program.md",
+  "id": "powtoon-animation-program",
+  "name": "PowToon Animation Program",
+  "url": "http://www.powtoon.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/prezi.md",
+  "id": "prezi",
+  "name": "Prezi",
+  "url": "https://prezi.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/printwhatyoulike.md",
+  "id": "printwhatyoulike",
+  "name": "PrintWhatYouLike",
+  "url": "http://www.printwhatyoulike.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/punchbowl.md",
+  "id": "punchbowl",
+  "name": "Punchbowl",
+  "url": "http://www.punchbowl.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pymeta.md",
+  "id": "pymeta",
+  "name": "PYMETA",
+  "url": "https://github.com/m8sec/pymeta",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/rebelmouse.md",
+  "id": "rebelmouse",
+  "name": "Rebelmouse",
+  "url": "https://www.rebelmouse.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/reposearch.md",
+  "id": "reposearch",
+  "name": "Reposearch",
+  "url": "http://codefinder.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/restaurant-and-catering-industry-website-australia.md",
+  "id": "restaurant-and-catering-industry-website-australia",
+  "name": "Restaurant and Catering Industry Website (Australia)",
+  "url": "http://rca.asn.au/rca",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

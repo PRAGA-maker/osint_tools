@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/whois-amped.md",
+  "id": "whois-amped",
+  "name": "Whois AMPed",
+  "url": "https://whoisamped.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/whois-arin.md",
+  "id": "whois-arin",
+  "name": "Whois ARIN",
+  "url": "https://whois.arin.net/ui/advanced.jsp",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-arin-online.md",
+  "id": "whois-arin-online",
+  "name": "Whois Arin Online",
+  "url": "https://whois.arin.net",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-history.md",
+  "id": "whois-history",
+  "name": "Whois History",
+  "url": "https://osint.sh/whoishistory/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-search.md",
+  "id": "whois-search",
+  "name": "Whois Search",
+  "url": "https://webwhois.verisign.com/webwhois-ui/index.jsp?language=en_US",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-service.md",
+  "id": "whois-service",
+  "name": "WHOIS Service",
+  "url": "https://whoismind.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-xml-api-whois-history-database.md",
+  "id": "whois-xml-api-whois-history-database",
+  "name": "Whois XML API Whois history database",
+  "url": "https://whois.whoisxmlapi.com/database/pricing",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whoishostingthis.md",
+  "id": "whoishostingthis",
+  "name": "WhoIsHostingThis",
+  "url": "http://www.whoishostingthis.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whoismind.md",
+  "id": "whoismind",
+  "name": "WhoisMind",
+  "url": "http://www.whoismind.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/whoisology.md",
+  "id": "whoisology",
+  "name": "Whoisology",
+  "url": "https://whoisology.com/#advanced",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whoisrequest.md",
+  "id": "whoisrequest",
+  "name": "WhoIsRequest",
+  "url": "http://whoisrequest.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whoxy.md",
+  "id": "whoxy",
+  "name": "Whoxy",
+  "url": "https://www.whoxy.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/wireless-network-info/wigle-wireless-network-mapping.md",
+  "id": "wigle-wireless-network-mapping",
+  "name": "WiGLE: Wireless Network Mapping",
+  "url": "https://wigle.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/report-malicious-sites/windows-defender-security-intelligence-wdsi.md",
+  "id": "windows-defender-security-intelligence-wdsi",
+  "name": "Windows Defender Security Intelligence (WDSI)",
+  "url": "https://www.microsoft.com/en-us/wdsi",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/network-analysis-tools/wireshark.md",
+  "id": "wireshark",
+  "name": "Wireshark",
+  "url": "https://www.wireshark.org/download.html",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/world-monitor-tech.md",
+  "id": "world-monitor-tech",
+  "name": "World Monitor Tech",
+  "url": "https://tech.worldmonitor.app",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

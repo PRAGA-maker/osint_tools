@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/twitter/analytics/birdwatcher.md",
+  "id": "birdwatcher",
+  "name": "Birdwatcher",
+  "url": "https://github.com/michenriksen/birdwatcher",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bitchute-com.md",
+  "id": "bitchute-com",
+  "name": "bitchute.com",
+  "url": "https://www.bitchute.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bitdownloader-io.md",
+  "id": "bitdownloader-io",
+  "name": "bitdownloader.io",
+  "url": "https://bitdownloader.io/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/blackplanet-com.md",
+  "id": "blackplanet-com",
+  "name": "blackplanet.com",
+  "url": "https://www.blackplanet.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/other-social-networks/blackplanet-com-member-find.md",
+  "id": "blackplanet-com-member-find",
+  "name": "BlackPlanet.com - Member Find",
+  "url": "https://www.blackplanet.com/user_search/index.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/blog-compass-security-com.md",
+  "id": "blog-compass-security-com",
+  "name": "blog.compass-security.com",
+  "url": "https://blog.compass-security.com/2025/06/linkedin-for-osint-tips-and-tricks/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bluesky.md",
+  "id": "bluesky",
+  "name": "Bluesky",
+  "url": "https://bsky.app",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bluesky-insights-dwagentai-com.md",
+  "id": "bluesky-insights-dwagentai-com",
+  "name": "bluesky-insights.dwagentai.com",
+  "url": "https://bluesky-insights.dwagentai.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/blueskydirectory-com.md",
+  "id": "blueskydirectory-com",
+  "name": "blueskydirectory.com",
+  "url": "https://blueskydirectory.com/profiles",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/blueskymeter-com.md",
+  "id": "blueskymeter-com",
+  "name": "blueskymeter.com",
+  "url": "https://blueskymeter.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bottlenose.md",
+  "id": "bottlenose",
+  "name": "Bottlenose",
+  "url": "http://bottlenose.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/brandwatch.md",
+  "id": "brandwatch",
+  "name": "Brandwatch",
+  "url": "https://www.brandwatch.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bsky-social.md",
+  "id": "bsky-social",
+  "name": "bsky.social",
+  "url": "https://bsky.social/about/blog/05-31-2024-search",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bsky-social-2.md",
+  "id": "bsky-social-2",
+  "name": "bsky.social",
+  "url": "https://bsky.social/about/support",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bskyviewer-github-io.md",
+  "id": "bskyviewer-github-io",
+  "name": "bskyviewer.github.io",
+  "url": "https://bskyviewer.github.io/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/buffer.md",
+  "id": "buffer",
+  "name": "Buffer",
+  "url": "https://buffer.com",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

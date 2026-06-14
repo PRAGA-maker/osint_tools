@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/quick-cache-and-archive-search-2.md",
+  "id": "quick-cache-and-archive-search-2",
+  "name": "Quick Cache and Archive search",
+  "url": "https://cipher387.github.io/quickcacheandarchivesearch/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/quick-geolocation-search-2.md",
+  "id": "quick-geolocation-search-2",
+  "name": "Quick geolocation search",
+  "url": "https://cipher387.github.io/quickgeolocationsearch/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/quick-hashtags-and-keywords-search.md",
+  "id": "quick-hashtags-and-keywords-search",
+  "name": "Quick hashtags and keywords search",
+  "url": "https://cipher387.github.io/hashtags_and_keywords_social_media_quick_search/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/quickcode.md",
+  "id": "quickcode",
+  "name": "QuickCode",
+  "url": "https://quickcode.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/raphael.md",
+  "id": "raphael",
+  "name": "Raphael",
+  "url": "http://dmitrybaranovskiy.github.io/raphael",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/raw.md",
+  "id": "raw",
+  "name": "RAW",
+  "url": "http://raw.densitydesign.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/rawgraphs.md",
+  "id": "rawgraphs",
+  "name": "RAWGraphs",
+  "url": "https://app.rawgraphs.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/recondog.md",
+  "id": "recondog",
+  "name": "ReconDog",
+  "url": "https://github.com/s0md3v/ReconDog",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/reconftw.md",
+  "id": "reconftw",
+  "name": "ReconFTW",
+  "url": "https://github.com/six2dez/reconftw",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/regular-expression-analyzer.md",
+  "id": "regular-expression-analyzer",
+  "name": "Regular Expression Analyzer",
+  "url": "https://xenon.stanford.edu/~xusch/regexp/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/relational-algebra-calculator.md",
+  "id": "relational-algebra-calculator",
+  "name": "relational algebra calculator",
+  "url": "https://dbis-uibk.github.io/relax/calc/local/uibk/local/0",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/rescure-threat-intel-feed.md",
+  "id": "rescure-threat-intel-feed",
+  "name": "REScure Threat Intel Feed",
+  "url": "https://rescure.fruxlabs.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/researchbuzz.md",
+  "id": "researchbuzz",
+  "name": "ResearchBuzz",
+  "url": "https://researchbuzz.github.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/resolver.md",
+  "id": "resolver",
+  "name": "Resolver",
+  "url": "https://metaproductsrevolver.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/rsa-encryption-decryption-and-prime-calculator.md",
+  "id": "rsa-encryption-decryption-and-prime-calculator",
+  "name": "RSA encryption, decryption and prime calculator",
+  "url": "https://canihavesomecoffee.github.io/js-rsa-tool/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/s-i-g-i-t.md",
+  "id": "s-i-g-i-t",
+  "name": "S.I.G.I.T.",
+  "url": "https://github.com/termuxhackers-id/SIGIT",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

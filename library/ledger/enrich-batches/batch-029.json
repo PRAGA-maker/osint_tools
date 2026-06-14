@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/kairos-com.md",
+  "id": "kairos-com",
+  "name": "kairos.com",
+  "url": "https://www.kairos.com/demos",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/kartavision.md",
+  "id": "kartavision",
+  "name": "KartaVision",
+  "url": "https://kartavision.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/labnol-org.md",
+  "id": "labnol-org",
+  "name": "Labnol.org",
+  "url": "http://img.labnol.org/files/images.html",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/documents/search/leaked-cables.md",
+  "id": "leaked-cables",
+  "name": "Leaked Cables",
+  "url": "https://search.wikileaks.org/plusd/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/search/lenso-ai.md",
+  "id": "lenso-ai",
+  "name": "Lenso.ai",
+  "url": "https://lenso.ai/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/liftapp-ai.md",
+  "id": "liftapp-ai",
+  "name": "liftapp.ai",
+  "url": "https://liftapp.ai/editor/main",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/listen-notes.md",
+  "id": "listen-notes",
+  "name": "Listen Notes",
+  "url": "https://www.listennotes.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/videos/search/liveleak.md",
+  "id": "liveleak",
+  "name": "LiveLeak",
+  "url": "https://www.liveleak.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/lycos-image-search.md",
+  "id": "lycos-image-search",
+  "name": "Lycos Image Search",
+  "url": "https://search.lycos.com",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/metadata/mediainfo.md",
+  "id": "mediainfo",
+  "name": "MediaInfo",
+  "url": "https://mediaarea.net/en/MediaInfo",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/metadata-viewer.md",
+  "id": "metadata-viewer",
+  "name": "Metadata Viewer",
+  "url": "https://kriztalz.sh/metadata-viewer/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/metadata/metadata2go.md",
+  "id": "metadata2go",
+  "name": "Metadata2Go",
+  "url": "https://www.metadata2go.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/metadata/metapicz.md",
+  "id": "metapicz",
+  "name": "Metapicz",
+  "url": "https://metapicz.com/#landing",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/videos/search/metatube.md",
+  "id": "metatube",
+  "name": "Metatube",
+  "url": "https://github.com/JVT038/MetaTube",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/metatube-com.md",
+  "id": "metatube-com",
+  "name": "metatube.com",
+  "url": "https://www.metatube.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/instagram/mini-instagram.md",
+  "id": "mini-instagram",
+  "name": "Mini Instagram",
+  "url": "https://mini-for-instagram.en.softonic.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ }
+]

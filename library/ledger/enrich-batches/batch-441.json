@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/the-investigator-s-handbook-a-guide-to-using-opencorporates.md",
+  "id": "the-investigator-s-handbook-a-guide-to-using-opencorporates",
+  "name": "The Investigator\u2019s Handbook: A Guide to Using OpenCorporates",
+  "url": "https://blog.opencorporates.com/2017/10/31/the-investigators-handbook-a-guide-to-using-opencorporates",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/the-world-bank-open-data-catalog-2.md",
+  "id": "the-world-bank-open-data-catalog-2",
+  "name": "The World Bank Open Data Catalog",
+  "url": "https://datacatalog.worldbank.org/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/toronto-star.md",
+  "id": "toronto-star",
+  "name": "Toronto Star",
+  "url": "https://misc.thestar.com/interactivegraphic/2019/07-july/25-housing-complaints-database/index.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/trading-economics.md",
+  "id": "trading-economics",
+  "name": "Trading Economics",
+  "url": "http://www.tradingeconomics.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/transparency-org-corruption-perception-index.md",
+  "id": "transparency-org-corruption-perception-index",
+  "name": "Transparency.org Corruption Perception Index",
+  "url": "http://www.transparency.org/cpi2015",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/trump-twitter-archive.md",
+  "id": "trump-twitter-archive",
+  "name": "Trump Twitter Archive",
+  "url": "https://www.thetrumparchive.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/tsa-no-fly-list.md",
+  "id": "tsa-no-fly-list",
+  "name": "TSA No-Fly List",
+  "url": "https://www.no-fly-list.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sanctions-pep/ukraine-pep-register.md",
+  "id": "ukraine-pep-register",
+  "name": "Ukraine PEP Register",
+  "url": "https://pep.org.ua/en/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/un-comtrade-database.md",
+  "id": "un-comtrade-database",
+  "name": "UN COMTRADE Database",
+  "url": "http://comtrade.un.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/un-data.md",
+  "id": "un-data",
+  "name": "UN Data",
+  "url": "http://data.un.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/unctad-country-fact-sheets.md",
+  "id": "unctad-country-fact-sheets",
+  "name": "UNCTAD Country Fact Sheets",
+  "url": "http://unctad.org/en/Pages/DIAE/World%20Investment%20Report/Country-Fact-Sheets.aspx",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/unctad-investment-country-profiles.md",
+  "id": "unctad-investment-country-profiles",
+  "name": "UNCTAD Investment Country Profiles",
+  "url": "http://unctad.org/en/Pages/Publications/Investment-country-profiles.aspx",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/unctad-stat.md",
+  "id": "unctad-stat",
+  "name": "UNCTAD STAT",
+  "url": "http://unctadstat.unctad.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/undps-human-development-index.md",
+  "id": "undps-human-development-index",
+  "name": "UNDPs Human Development Index",
+  "url": "http://hdr.undp.org/en/data",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/unece.md",
+  "id": "unece",
+  "name": "UNECE",
+  "url": "http://w3.unece.org/PXWeb/en",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/unesco-institute-for-statistics.md",
+  "id": "unesco-institute-for-statistics",
+  "name": "UNESCO Institute for Statistics",
+  "url": "http://uis.unesco.org",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

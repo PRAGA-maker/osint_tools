@@ -1,51 +1,90 @@
 ---
 id: mediainfo
 name: MediaInfo
-description: Media codec and container metadata profiling
+description: Use when you have a video or audio file and want its technical metadata — returns codec, container, duration, encoder tags and any embedded creation/device fields.
 url: https://mediaarea.net/en/MediaInfo
 category: image-video-face
 path:
 - image-video-face
 - images
 - metadata
-bestFor: Media codec and container metadata profiling
+bestFor: Reading codec/container/encoder metadata and embedded tags from media files, locally and offline.
 input: Video and audio files
 output: Codec, bitrate, duration, stream, and tag metadata
-selectorsIn: []
-selectorsOut: []
+selectorsIn:
+- metadata-exif
+- device-id
+selectorsOut:
+- metadata-exif
+- device-id
 status: live
 pricing: free
+costNote: Free and open source (BSD-style license); GUI, CLI and library all free.
 opsec: passive
-opsecNote: Local analysis utility with no required outbound collection.
+opsecNote: Runs entirely locally on your machine — nothing is uploaded. Ideal when handling sensitive case media you cannot send to a web service.
 humanInLoop: false
 humanInLoopReason: []
 bestInteractionPattern: cli
-trust: unverified
-trustNote: ''
-missingPersonsRelevance: high
-coverage: []
+trust: trusted
+trustNote: MediaInfo is a mature, open-source, widely-used media metadata tool from MediaArea; source is public and it is packaged in major Linux distros. Highly reliable for what it reports.
+missingPersonsRelevance: medium
+coverage: [global]
 auth: none
 api: false
 localInstall: true
 registration: false
-invitationOnly: false
-deprecated: false
 relatedTools: []
-aliases: []
-tags: []
+aliases:
+- mediainfo CLI
+tags:
+- metadata
+- video
+- audio
 source: arf-seed
 lastVerified: ''
-enrichment: stub
+enrichment: full
 ---
 
 # MediaInfo
 
-> **Stub** — seeded from OSINT-Framework (`arf-seed`). Body not yet authored.
-> Enrich per `schema/templates/tool.template.md`, then set `enrichment: full`.
+> Free, open-source local tool that dumps the technical metadata of media files — codec, container, duration, bitrate, encoder strings and embedded tags.
 
-- **URL:** https://mediaarea.net/en/MediaInfo
-- **Best for:** Media codec and container metadata profiling
-- **Input → Output:** Video and audio files → Codec, bitrate, duration, stream, and tag metadata
-- **OpSec:** passive. Local analysis utility with no required outbound collection.
+## When to use
+You have a video or audio file tied to a case (a clip from a phone, CCTV export, a social download) and want its `metadata-exif`-style technical fields: container/codec, duration, frame rate, encoder string, and any embedded creation date or device/software tags. These can hint at the recording `device-id`/software, confirm whether a file was re-encoded, and time-anchor footage. Run it locally so sensitive media never leaves your machine.
 
-_To enrich:_ verify `trust` & `missingPersonsRelevance`, set `selectorsIn/Out` and `bestInteractionPattern`, write the How-to and Gotchas, link overlaps in `relatedTools`.
+## How to use it (`bestInteractionPattern`: cli)
+1. Install MediaInfo from https://mediaarea.net/en/MediaInfo (GUI, CLI, or library; available in most package managers).
+2. Run the CLI: `mediainfo path/to/file.mp4` for a full report, or `mediainfo --Output=JSON file.mp4` for parseable output.
+3. Read the General/Video/Audio sections (`selectorsOut`: metadata-exif tags, encoder/`device-id` strings, dates).
+4. Pivot: an encoder/device string narrows the source device; a creation date supports a timeline; corroborate against the original file's filesystem timestamps.
+
+## Inputs → Outputs
+- **In:** a media file; `metadata-exif`/`device-id` you want to read.
+- **Out:** `metadata-exif` (codec, container, duration, bitrate, tags, dates), `device-id`/software hints from encoder fields.
+- **Empty/negative result looks like:** sparse tags / no creation date — common after re-encoding or platform upload, which strips metadata.
+
+## Gotchas & OpSec
+- Social platforms re-encode and strip most metadata; analyse the original file, not a downloaded copy, where possible.
+- Reports what is embedded only — absence of a device tag isn't proof of anything.
+- OpSec: passive — fully local, nothing uploaded; the right choice for sensitive media.
+
+## Overlaps ("do both")
+- Pair with an EXIF-focused image tool (e.g. `[[metadata2go]]`) for stills; MediaInfo is the stronger choice for video/audio containers.
+
+## Trust & verifiability
+`trust: trusted` — mature open-source project with public source and wide distribution; reliable for the technical metadata it reports.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | mediainfo |
+| category | image-video-face |
+| selectorsIn → selectorsOut | metadata-exif, device-id → metadata-exif, device-id |
+| pricing / cost | free |
+| trust | trusted |
+| MP relevance | medium |
+| interaction | cli |
+| opsec | passive |
+| human-in-loop | no |

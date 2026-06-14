@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/search-craigslist.md",
+  "id": "search-craigslist",
+  "name": "Search craigslist",
+  "url": "http://searchcraigslist.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-encrypt.md",
+  "id": "search-encrypt",
+  "name": "Search Encrypt",
+  "url": "https://www.searchencrypt.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-engine-finder.md",
+  "id": "search-engine-finder",
+  "name": "Search Engine Finder",
+  "url": "https://cse.google.com/cse?cx=016621447308871563343:nyvaorurd5l",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-engines-index.md",
+  "id": "search-engines-index",
+  "name": "Search Engines Index",
+  "url": "https://www.searchenginesindex.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-it.md",
+  "id": "search-it",
+  "name": "Search-It",
+  "url": "https://search-it.netlify.app/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-shared.md",
+  "id": "search-shared",
+  "name": "Search Shared",
+  "url": "https://www.searchshared.info",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/searchall.md",
+  "id": "searchall",
+  "name": "SearchAll",
+  "url": "https://www.searchall.net/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/searchboth.md",
+  "id": "searchboth",
+  "name": "SearchBoth",
+  "url": "http://us.searchboth.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/code-search/searchcode.md",
+  "id": "searchcode",
+  "name": "Searchcode",
+  "url": "https://searchcode.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-tools/searchdiggity.md",
+  "id": "searchdiggity",
+  "name": "SearchDiggity",
+  "url": "https://bishopfox.com/resources",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/searx.md",
+  "id": "searx",
+  "name": "Searx",
+  "url": "https://searx.info/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/searx-2.md",
+  "id": "searx-2",
+  "name": "Searx",
+  "url": "https://searx.me",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/secret-search-engine-labs.md",
+  "id": "secret-search-engine-labs",
+  "name": "Secret Search Engine Labs",
+  "url": "http://www.secretsearchenginelabs.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/seek-job-search-engine-new-zealand.md",
+  "id": "seek-job-search-engine-new-zealand",
+  "name": "Seek Job Search Engine (New Zealand)",
+  "url": "http://www.seek.co.nz",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sensebot.md",
+  "id": "sensebot",
+  "name": "Sensebot",
+  "url": "http://sensebot.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/seqe-search-engines-query-engine.md",
+  "id": "seqe-search-engines-query-engine",
+  "name": "SEQE - Search Engines Query Engine",
+  "url": "https://seqe.me/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

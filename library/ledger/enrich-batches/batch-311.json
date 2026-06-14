@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/discover.md",
+  "id": "discover",
+  "name": "Discover",
+  "url": "https://github.com/leebaird/discover",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/dnsx.md",
+  "id": "dnsx",
+  "name": "dnsx",
+  "url": "https://github.com/projectdiscovery/dnsx",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/do-not-track.md",
+  "id": "do-not-track",
+  "name": "Do Not Track",
+  "url": "http://donottrack.us",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/docmind-ai.md",
+  "id": "docmind-ai",
+  "name": "DocMind AI",
+  "url": "https://github.com/BjornMelin/docmind-ai-llm",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/domain-investigation-toolbox-2.md",
+  "id": "domain-investigation-toolbox-2",
+  "name": "Domain Investigation Toolbox",
+  "url": "https://cipher387.github.io/domain_investigation_toolbox/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/dorks-collections-list.md",
+  "id": "dorks-collections-list",
+  "name": "Dorks collections list",
+  "url": "https://github.com/cipher387/Dorks-collections-list",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/dropbase.md",
+  "id": "dropbase",
+  "name": "Dropbase",
+  "url": "https://dropbase.fun",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/dropmark.md",
+  "id": "dropmark",
+  "name": "Dropmark",
+  "url": "http://www.dropmark.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/duckduckgo-ai-chat.md",
+  "id": "duckduckgo-ai-chat",
+  "name": "DuckDuckGo AI Chat",
+  "url": "https://duckduckgo.com/aichat",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/duckduckgo-url-scraper.md",
+  "id": "duckduckgo-url-scraper",
+  "name": "DuckDuckGo URL scraper",
+  "url": "https://github.com/its0x08/duckduckgo",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/dygraphs.md",
+  "id": "dygraphs",
+  "name": "dygraphs",
+  "url": "http://dygraphs.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/e4gl30s1nt.md",
+  "id": "e4gl30s1nt",
+  "name": "E4GL30S1NT",
+  "url": "https://github.com/C0MPL3XDEV/E4GL30S1NT",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/easely.md",
+  "id": "easely",
+  "name": "easely",
+  "url": "http://www.easel.ly",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/einvestigator.md",
+  "id": "einvestigator",
+  "name": "eInvestigator",
+  "url": "https://www.einvestigator.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/encsf-mp.md",
+  "id": "encsf-mp",
+  "name": "EncSF MP",
+  "url": "http://encfsmp.sourceforge.net",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/epic-privacy-browser.md",
+  "id": "epic-privacy-browser",
+  "name": "Epic Privacy Browser",
+  "url": "https://www.epicbrowser.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

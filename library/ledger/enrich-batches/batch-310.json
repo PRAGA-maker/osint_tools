@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/datawrapper.md",
+  "id": "datawrapper",
+  "name": "Datawrapper",
+  "url": "https://datawrapper.de",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/php/ddecode-php-decoder.md",
+  "id": "ddecode-php-decoder",
+  "name": "DDecode - PHP Decoder",
+  "url": "https://ddecode.com/phpdecoder/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/de4js.md",
+  "id": "de4js",
+  "name": "De4js",
+  "url": "https://lelinhtinh.github.io/de4js/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/decompiler-com.md",
+  "id": "decompiler-com",
+  "name": "Decompiler.com",
+  "url": "http://www.decompiler.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/decopy-ai-image-detector.md",
+  "id": "decopy-ai-image-detector",
+  "name": "Decopy AI Image Detector",
+  "url": "https://decopy.ai/ai-image-detector/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/deepai-ai-image-detector.md",
+  "id": "deepai-ai-image-detector",
+  "name": "DeepAI AI Image Detector",
+  "url": "https://deepai.org/ai-image-detector",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/deepseek.md",
+  "id": "deepseek",
+  "name": "DeepSeek",
+  "url": "https://www.deepseek.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/defend-network.md",
+  "id": "defend-network",
+  "name": "defend.network",
+  "url": "https://defend.network",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/dehashed-cli.md",
+  "id": "dehashed-cli",
+  "name": "Dehashed CLI",
+  "url": "https://github.com/hmaverickadams/DeHashed-API-Tool",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/developer-search-tool.md",
+  "id": "developer-search-tool",
+  "name": "Developer search tool",
+  "url": "https://chrome.google.com/webstore/detail/developer-search-tool/bkolnanfonknnhpeakommihhllojnecf/related",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/dfir-platform.md",
+  "id": "dfir-platform",
+  "name": "DFIR Platform",
+  "url": "https://platform.dfir-lab.ch",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/diceware-generator.md",
+  "id": "diceware-generator",
+  "name": "Diceware Generator",
+  "url": "https://www.rempe.us/diceware/#eff",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/disa-code-template-generator.md",
+  "id": "disa-code-template-generator",
+  "name": "DISA Code Template Generator",
+  "url": "https://duncanford.github.io/disa-code-generator",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/disasm-pro.md",
+  "id": "disasm-pro",
+  "name": "Disasm.pro",
+  "url": "https://disasm.pro/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/disconnect.md",
+  "id": "disconnect",
+  "name": "Disconnect",
+  "url": "https://disconnect.me",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/discoshell.md",
+  "id": "discoshell",
+  "name": "Discoshell",
+  "url": "https://github.com/foozzi/discoshell",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

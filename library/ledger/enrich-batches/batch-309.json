@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/copyleaks.md",
+  "id": "copyleaks",
+  "name": "Copyleaks",
+  "url": "https://copyleaks.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/creately.md",
+  "id": "creately",
+  "name": "creately",
+  "url": "http://creately.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/creative-commons-attribution-sharealike-4-0-international.md",
+  "id": "creative-commons-attribution-sharealike-4-0-international",
+  "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "url": "http://creativecommons.org/licenses/by-sa/4.0/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/crossfilter.md",
+  "id": "crossfilter",
+  "name": "Crossfilter",
+  "url": "http://square.github.io/crossfilter",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/crowdsec.md",
+  "id": "crowdsec",
+  "name": "CrowdSec",
+  "url": "https://github.com/crowdsecurity/crowdsec",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/csvkit.md",
+  "id": "csvkit",
+  "name": "csvkit",
+  "url": "https://github.com/wireservice/csvkit",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/wordlist/cupp.md",
+  "id": "cupp",
+  "name": "Cupp",
+  "url": "https://github.com/Mebus/cupp",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/cyberbro.md",
+  "id": "cyberbro",
+  "name": "Cyberbro",
+  "url": "https://github.com/stanfrbd/cyberbro",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/cyberchef.md",
+  "id": "cyberchef",
+  "name": "CyberChef",
+  "url": "https://gchq.github.io/CyberChef/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/cybergordon.md",
+  "id": "cybergordon",
+  "name": "CyberGordon",
+  "url": "https://cybergordon.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/cyotek-webcopy.md",
+  "id": "cyotek-webcopy",
+  "name": "Cyotek WebCopy",
+  "url": "http://www.cyotek.com/cyotek-webcopy",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/d3js.md",
+  "id": "d3js",
+  "name": "D3js",
+  "url": "https://d3js.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/data-structure-infix-postfix-prefix-converter-and-evaluator.md",
+  "id": "data-structure-infix-postfix-prefix-converter-and-evaluator",
+  "name": "Data Structure : Infix Postfix Prefix - Converter & Evaluator",
+  "url": "https://raj457036.github.io/Simple-Tools/prefixAndPostfixConvertor.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/data-to-go.md",
+  "id": "data-to-go",
+  "name": "Data to Go",
+  "url": "https://www.youtube.com/watch?v=_YRs28yBYuI",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/data-visualization-catalogue.md",
+  "id": "data-visualization-catalogue",
+  "name": "Data Visualization Catalogue",
+  "url": "http://datavizcatalogue.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/datasploit.md",
+  "id": "datasploit",
+  "name": "DataSploit",
+  "url": "https://github.com/datasploit/datasploit/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

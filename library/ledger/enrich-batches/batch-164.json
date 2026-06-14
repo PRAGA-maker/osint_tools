@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/onefinestay.md",
+  "id": "onefinestay",
+  "name": "Onefinestay",
+  "url": "http://www.onefinestay.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/onefootballforum-co-uk.md",
+  "id": "onefootballforum-co-uk",
+  "name": "onefootballforum.co.uk",
+  "url": "https://www.onefootballforum.co.uk/index.php",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/organized-crime-and-corruption-reporting-project.md",
+  "id": "organized-crime-and-corruption-reporting-project",
+  "name": "Organized Crime and Corruption Reporting Project",
+  "url": "https://www.occrp.org/en",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ownerdirect-united-states.md",
+  "id": "ownerdirect-united-states",
+  "name": "Ownerdirect (United States)",
+  "url": "http://www.ownerdirect.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paaster.md",
+  "id": "paaster",
+  "name": "paaster",
+  "url": "https://paaster.io/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/parship-com-europe.md",
+  "id": "parship-com-europe",
+  "name": "Parship.com (Europe)",
+  "url": "https://www.parship.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/passion-com.md",
+  "id": "passion-com",
+  "name": "Passion.com",
+  "url": "http://passion.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paste-cash.md",
+  "id": "paste-cash",
+  "name": "Paste.Cash",
+  "url": "https://www.paste.cash/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paste-debian.md",
+  "id": "paste-debian",
+  "name": "paste.debian",
+  "url": "https://Paste.debian.net",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paste-in-ua.md",
+  "id": "paste-in-ua",
+  "name": "paste.in.ua",
+  "url": "https://paste.in.ua/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paste-kde.md",
+  "id": "paste-kde",
+  "name": "paste.kde",
+  "url": "https://Paste.kde.org",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paste-monster.md",
+  "id": "paste-monster",
+  "name": "Paste.Monster",
+  "url": "https://paste.monster/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paste-quest.md",
+  "id": "paste-quest",
+  "name": "Paste.Quest",
+  "url": "https://pastequest.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paste-sh.md",
+  "id": "paste-sh",
+  "name": "paste.sh",
+  "url": "https://paste.sh/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/paste-ubuntu.md",
+  "id": "paste-ubuntu",
+  "name": "paste.ubuntu",
+  "url": "https://paste.ubuntu.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/pastebin-cz.md",
+  "id": "pastebin-cz",
+  "name": "Pastebin.cz",
+  "url": "https://www.pastebin.cz/en/",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

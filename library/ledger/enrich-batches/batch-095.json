@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/sssc-uk-com.md",
+  "id": "sssc-uk-com",
+  "name": "sssc.uk.com",
+  "url": "https://www.sssc.uk.com/search-the-register/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/state-adoption-resources.md",
+  "id": "state-adoption-resources",
+  "name": "State Adoption Resources",
+  "url": "https://www.childwelfare.gov",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/state-and-county-jail-inmate-locators.md",
+  "id": "state-and-county-jail-inmate-locators",
+  "name": "State and County Jail Inmate Locators",
+  "url": "https://inmatesplus.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/state-appellate-and-supreme-courts.md",
+  "id": "state-appellate-and-supreme-courts",
+  "name": "State Appellate & Supreme Courts",
+  "url": "http://www.brbpub.com/freeresources/pubrecsitessearch.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/state-corrections-links.md",
+  "id": "state-corrections-links",
+  "name": "State Corrections Links",
+  "url": "https://corrections.com/links/30",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/state-local-tribal-gov-page-search.md",
+  "id": "state-local-tribal-gov-page-search",
+  "name": "State, Local, Tribal Gov Page Search",
+  "url": "https://www.usa.gov/state-tribal-governments",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/state-public-records-laws.md",
+  "id": "state-public-records-laws",
+  "name": "State Public Records Laws",
+  "url": "https://www.muckrock.com/place",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/statistics-and-data.md",
+  "id": "statistics-and-data",
+  "name": "Statistics and Data",
+  "url": "https://dataunodc.un.org",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/street-name-changes.md",
+  "id": "street-name-changes",
+  "name": "Street Name Changes",
+  "url": "https://stevemorse.org/census/changes.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/strongabogados-com.md",
+  "id": "strongabogados-com",
+  "name": "strongabogados.com",
+  "url": "https://www.strongabogados.com/company-search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/supreme-court.md",
+  "id": "supreme-court",
+  "name": "Supreme Court",
+  "url": "https://scc-csc.lexum.com/scc-csc/fr/nav.do",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/supreme-court-of-canada-cases.md",
+  "id": "supreme-court-of-canada-cases",
+  "name": "Supreme Court of Canada - Cases",
+  "url": "https://www.scc-csc.ca/case-dossier/index-eng.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/supremecourt-uk.md",
+  "id": "supremecourt-uk",
+  "name": "supremecourt.uk",
+  "url": "https://www.supremecourt.uk/current-cases/index.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sweden.md",
+  "id": "sweden",
+  "name": "Sweden",
+  "url": "https://foretagsfakta.bolagsverket.se/fpl-dft-ext-web/home.xhtml",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/switzerland.md",
+  "id": "switzerland",
+  "name": "Switzerland",
+  "url": "https://www.zefix.ch/en/search/entity/welcome",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/systemday-com.md",
+  "id": "systemday-com",
+  "name": "systemday.com",
+  "url": "https://www.systemday.com/mauritius-company-search/",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

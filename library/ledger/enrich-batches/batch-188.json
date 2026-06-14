@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/financial-crypto/bpfi-ie.md",
+  "id": "bpfi-ie",
+  "name": "bpfi.ie",
+  "url": "https://bpfi.ie/customer-assist/account-validation/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/mixer-tracking/breadcrumbs-app.md",
+  "id": "breadcrumbs-app",
+  "name": "Breadcrumbs.app",
+  "url": "https://www.breadcrumbs.app/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/btcbook-guarda-com.md",
+  "id": "btcbook-guarda-com",
+  "name": "btcbook.guarda.com",
+  "url": "https://btcbook.guarda.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/business-hsbc-co-uk.md",
+  "id": "business-hsbc-co-uk",
+  "name": "business.hsbc.co.uk",
+  "url": "https://www.business.hsbc.uk/en-gb/solutions/iban-and-bic",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/checkmyfile-com.md",
+  "id": "checkmyfile-com",
+  "name": "checkmyfile.com",
+  "url": "https://www.checkmyfile.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/coinatmradar-com.md",
+  "id": "coinatmradar-com",
+  "name": "coinatmradar.com",
+  "url": "https://coinatmradar.com/country/225/bitcoin-atm-united-kingdom/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/coinchoose-com.md",
+  "id": "coinchoose-com",
+  "name": "coinchoose.com",
+  "url": "https://www.coinchoose.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/cryptocompare-com.md",
+  "id": "cryptocompare-com",
+  "name": "cryptocompare.com",
+  "url": "https://www.cryptocompare.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/cryptocurrencyalerting-com.md",
+  "id": "cryptocurrencyalerting-com",
+  "name": "cryptocurrencyalerting.com",
+  "url": "https://cryptocurrencyalerting.com/wallet-watch.html",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/csol-ie.md",
+  "id": "csol-ie",
+  "name": "csol.ie",
+  "url": "https://www.csol.ie/ccms/bankruptcy.html#/search",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/defi-and-dex-tracing/defillama.md",
+  "id": "defillama",
+  "name": "DefiLlama",
+  "url": "https://defillama.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/defi-and-dex-tracing/dune-analytics.md",
+  "id": "dune-analytics",
+  "name": "Dune Analytics",
+  "url": "https://dune.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/economy-ni-gov-uk.md",
+  "id": "economy-ni-gov-uk",
+  "name": "economy-ni.gov.uk",
+  "url": "https://www.economy-ni.gov.uk/services/dro-bro-and-iva-register-search",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/economy-ni-gov-uk-2.md",
+  "id": "economy-ni-gov-uk-2",
+  "name": "economy-ni.gov.uk",
+  "url": "https://www.economy-ni.gov.uk/services/individual-voluntary-arrangement-register",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/chain-analysis-platforms/etherscan.md",
+  "id": "etherscan",
+  "name": "Etherscan",
+  "url": "https://etherscan.io/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/ethereum/etherscan-2.md",
+  "id": "etherscan-2",
+  "name": "Etherscan",
+  "url": "https://etherscan.io/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ }
+]

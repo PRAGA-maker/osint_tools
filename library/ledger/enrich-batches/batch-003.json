@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/email-verification/disposable-emails-registry.md",
+  "id": "disposable-emails-registry",
+  "name": "Disposable Emails Registry",
+  "url": "https://disposable-emails.github.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/dnschecker-org.md",
+  "id": "dnschecker-org",
+  "name": "dnschecker.org",
+  "url": "https://dnschecker.org/email-header-analyzer.php",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/e-mail-search-tool.md",
+  "id": "e-mail-search-tool",
+  "name": "E-mail search tool",
+  "url": "https://www.aware-online.com/osint-tools/e-mail-search-tool/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-address-validator.md",
+  "id": "email-address-validator",
+  "name": "Email Address Validator",
+  "url": "http://www.email-validator.net",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-address-verifier.md",
+  "id": "email-address-verifier",
+  "name": "Email Address Verifier",
+  "url": "https://tools.emailhippo.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-assumptions.md",
+  "id": "email-assumptions",
+  "name": "Email Assumptions",
+  "url": "https://inteltechniques.com/osint/email.html",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-breach-analysis.md",
+  "id": "email-breach-analysis",
+  "name": "Email Breach Analysis",
+  "url": "https://www.hotsheet.com/inoitsu/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-checker-searches-email-via-social-networks.md",
+  "id": "email-checker-searches-email-via-social-networks",
+  "name": "Email checker: Searches email via Social Networks",
+  "url": "https://www.manycontacts.com/en/mail-check",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-dossier.md",
+  "id": "email-dossier",
+  "name": "Email Dossier",
+  "url": "https://centralops.net/co/emaildossier.aspx",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-extractor.md",
+  "id": "email-extractor",
+  "name": "Email Extractor",
+  "url": "https://99tools.net/email-extractor/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-finder.md",
+  "id": "email-finder",
+  "name": "Email Finder",
+  "url": "https://osint.sh/email/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/common-email-formats/email-format.md",
+  "id": "email-format",
+  "name": "Email Format",
+  "url": "https://www.email-format.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-header-analyzer.md",
+  "id": "email-header-analyzer",
+  "name": "Email Header Analyzer",
+  "url": "https://mxtoolbox.com/EmailHeaders.aspx",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-hunter.md",
+  "id": "email-hunter",
+  "name": "Email Hunter",
+  "url": "https://emailhunter.co",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/common-email-formats/email-permutator.md",
+  "id": "email-permutator",
+  "name": "Email Permutator",
+  "url": "https://metricsparrow.com/toolkit/email-permutator/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-permutator-2.md",
+  "id": "email-permutator-2",
+  "name": "Email Permutator",
+  "url": "https://www.polished.app/email-permutator/",
+  "category": "email",
+  "mp": "high"
+ }
+]

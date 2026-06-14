@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/misp-galaxy.md",
+  "id": "misp-galaxy",
+  "name": "MISP Galaxy",
+  "url": "https://www.misp-galaxy.org/360net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ttps/mitre-att-and-ck.md",
+  "id": "mitre-att-and-ck",
+  "name": "MITRE ATT&CK",
+  "url": "https://attack.mitre.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ttps/mitre-ttps.md",
+  "id": "mitre-ttps",
+  "name": "Mitre TTPs",
+  "url": "https://attack.mitre.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/mlsecproject-combine.md",
+  "id": "mlsecproject-combine",
+  "name": "mlsecproject / combine",
+  "url": "https://github.com/mlsecproject/combine",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/passivedns/mnemonic.md",
+  "id": "mnemonic",
+  "name": "Mnemonic",
+  "url": "https://passivedns.mnemonic.no/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/moonsearch.md",
+  "id": "moonsearch",
+  "name": "Moonsearch",
+  "url": "https://moonsearch.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/moz-link-explorer.md",
+  "id": "moz-link-explorer",
+  "name": "Moz Link Explorer",
+  "url": "http://moz.com/link-explorer",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/mr-looquer-ioc-feed-1st-dual-stack-threat-feed.md",
+  "id": "mr-looquer-ioc-feed-1st-dual-stack-threat-feed",
+  "name": "Mr.Looquer IOC Feed - 1st Dual Stack Threat Feed",
+  "url": "https://iocfeed.mrlooquer.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/neighbor-domains/myipneighbors.md",
+  "id": "myipneighbors",
+  "name": "MyIPNeighbors",
+  "url": "https://www.my-ip-neighbors.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/netcraft-site-report.md",
+  "id": "netcraft-site-report",
+  "name": "Netcraft Site Report",
+  "url": "http://toolbar.netcraft.com/site_report?url=undefined#last_reboot",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/netlas-io.md",
+  "id": "netlas-io",
+  "name": "Netlas.io",
+  "url": "https://app.netlas.io/whois_domains/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/netlas-io-2.md",
+  "id": "netlas-io-2",
+  "name": "Netlas.io",
+  "url": "https://app.netlas.io/domains/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/netlas-io-3.md",
+  "id": "netlas-io-3",
+  "name": "Netlas.io",
+  "url": "https://app.netlas.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/certificate-search/netlas-io-4.md",
+  "id": "netlas-io-4",
+  "name": "Netlas.io",
+  "url": "https://app.netlas.io/certs/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/netlas-io-5.md",
+  "id": "netlas-io-5",
+  "name": "Netlas.io",
+  "url": "https://netlas.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/netscout-cyber-threat-map.md",
+  "id": "netscout-cyber-threat-map",
+  "name": "NETSCOUT Cyber Threat Map",
+  "url": "https://horizon.netscout.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

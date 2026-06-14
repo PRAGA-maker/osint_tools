@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/intelligencex.md",
+  "id": "intelligencex",
+  "name": "IntelligenceX",
+  "url": "https://intelx.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/intellyweave.md",
+  "id": "intellyweave",
+  "name": "IntellyWeave",
+  "url": "https://github.com/vericle/intellyweave",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/inteltechniques.md",
+  "id": "inteltechniques",
+  "name": "IntelTechniques",
+  "url": "https://inteltechniques.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/intrec-pack.md",
+  "id": "intrec-pack",
+  "name": "IntRec-Pack",
+  "url": "https://github.com/NullArray/IntRec-Pack",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/ivre.md",
+  "id": "ivre",
+  "name": "IVRE",
+  "url": "https://github.com/ivre/ivre",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/java-infovis-toolkit.md",
+  "id": "java-infovis-toolkit",
+  "name": "Java Infovis Toolkit",
+  "url": "http://philogb.github.io/jit",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/javascript/javascript-deobfuscator.md",
+  "id": "javascript-deobfuscator",
+  "name": "JavaScript Deobfuscator",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/javascript-deobfuscator/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/jpgraph.md",
+  "id": "jpgraph",
+  "name": "JpGraph",
+  "url": "http://jpgraph.net",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/jqplot.md",
+  "id": "jqplot",
+  "name": "jqPlot",
+  "url": "http://www.jqplot.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/javascript/js-beautifier.md",
+  "id": "js-beautifier",
+  "name": "JS Beautifier",
+  "url": "https://beautifier.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/javascript/js-nice.md",
+  "id": "js-nice",
+  "name": "JS NICE",
+  "url": "https://jsnice.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/justdeleteme.md",
+  "id": "justdeleteme",
+  "name": "justdeleteme",
+  "url": "http://justdelete.me",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/xor/windows/kahu-converter-utilities.md",
+  "id": "kahu-converter-utilities",
+  "name": "Kahu Converter Utilities",
+  "url": "https://www.kahusecurity.com/tools/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/javascript/kahu-revelo.md",
+  "id": "kahu-revelo",
+  "name": "Kahu Revelo",
+  "url": "https://www.kahusecurity.com/tools/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/kali-linux-os.md",
+  "id": "kali-linux-os",
+  "name": "Kali Linux OS",
+  "url": "https://www.kali.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/keepass-password-safe.md",
+  "id": "keepass-password-safe",
+  "name": "KeePass Password Safe",
+  "url": "http://keepass.info",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

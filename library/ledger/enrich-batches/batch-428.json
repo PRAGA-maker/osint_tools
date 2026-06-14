@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/tunnelbear.md",
+  "id": "tunnelbear",
+  "name": "TunnelBear",
+  "url": "https://www.tunnelbear.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/turn-off-the-lights-extension-chrome.md",
+  "id": "turn-off-the-lights-extension-chrome",
+  "name": "Turn Off The Lights Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/turn-off-the-lights/bfbmjmiodbnnpllbbbfblcplfjjepjdn",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/twilio-2.md",
+  "id": "twilio-2",
+  "name": "Twilio",
+  "url": "https://www.twilio.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/twitter-profile-generator.md",
+  "id": "twitter-profile-generator",
+  "name": "Twitter Profile Generator",
+  "url": "https://fakeinfo.net/fake-twitter-profile-generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/twitter-social-networking-mobile-android.md",
+  "id": "twitter-social-networking-mobile-android",
+  "name": "Twitter Social Networking (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.twitter.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/twitter-social-networking-mobile-ios.md",
+  "id": "twitter-social-networking-mobile-ios",
+  "name": "Twitter Social Networking (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/twitter/id333903271?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/two-factor-authentication-list.md",
+  "id": "two-factor-authentication-list",
+  "name": "Two Factor Authentication List",
+  "url": "http://twofactorauth.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/typeit.md",
+  "id": "typeit",
+  "name": "Typeit",
+  "url": "https://www.typeit.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/uber-private-driver-app-mobile-android.md",
+  "id": "uber-private-driver-app-mobile-android",
+  "name": "Uber Private Driver App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.ubercab",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/uber-private-driver-app-mobile-ios.md",
+  "id": "uber-private-driver-app-mobile-ios",
+  "name": "Uber Private Driver App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/uber/id368677368?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ucbrowser.md",
+  "id": "ucbrowser",
+  "name": "UCBrowser",
+  "url": "http://www.ucweb.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/uk-government-internet-scams-webpage.md",
+  "id": "uk-government-internet-scams-webpage",
+  "name": "UK Government Internet Scams Webpage",
+  "url": "https://www.gov.uk/report-suspicious-emails-websites-phishing",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ultrasurf-proxy-website.md",
+  "id": "ultrasurf-proxy-website",
+  "name": "Ultrasurf Proxy Website",
+  "url": "http://ultrasurf.us",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/unpaywall.md",
+  "id": "unpaywall",
+  "name": "Unpaywall",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/unpaywall",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/update-scanner-add-on.md",
+  "id": "update-scanner-add-on",
+  "name": "Update Scanner Add-on",
+  "url": "https://addons.mozilla.org/en-us/firefox/addon/update-scanner/?src=search",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/upload-disroot.md",
+  "id": "upload-disroot",
+  "name": "Upload \\| Disroot",
+  "url": "https://disroot.org/en/services/upload",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

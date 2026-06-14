@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/cyber-alert.md",
+  "id": "cyber-alert",
+  "name": "Cyber Alert",
+  "url": "http://www.cyberalert.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/cybersec-documents-search-engine.md",
+  "id": "cybersec-documents-search-engine",
+  "name": "Cybersec Documents Search Engine",
+  "url": "https://cse.google.com/cse?cx=013991603413798772546:ekjmizm8vus#gsc.tab=0",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/cybersecurity-osint-paulveillard.md",
+  "id": "cybersecurity-osint-paulveillard",
+  "name": "cybersecurity-osint (paulveillard)",
+  "url": "https://github.com/paulveillard/cybersecurity-osint",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/cybersleuth-kids-search-engine-north-america.md",
+  "id": "cybersleuth-kids-search-engine-north-america",
+  "name": "Cybersleuth-kids Search Engine (North America)",
+  "url": "http://cybersleuth-kids.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/dailyearth.md",
+  "id": "dailyearth",
+  "name": "DailyEarth",
+  "url": "http://dailyearth.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/daum-south-korea.md",
+  "id": "daum-south-korea",
+  "name": "Daum (South Korea)",
+  "url": "https://www.daum.net/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/ddl-search.md",
+  "id": "ddl-search",
+  "name": "DDL Search",
+  "url": "http://ddlsearch.free.fr",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/debunking-false-stories-archives.md",
+  "id": "debunking-false-stories-archives",
+  "name": "Debunking False Stories Archives",
+  "url": "https://www.factcheck.org/fake-news/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/densephrase.md",
+  "id": "densephrase",
+  "name": "DensePhrase",
+  "url": "http://densephrases.korea.ac.kr/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/dib-dab-doo-and-dilly-too-kids-search-engine.md",
+  "id": "dib-dab-doo-and-dilly-too-kids-search-engine",
+  "name": "Dib Dab Doo and Dilly Too Kids Search Engine",
+  "url": "http://www.dibdabdoo.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/digle.md",
+  "id": "digle",
+  "name": "Digle",
+  "url": "https://www.digle.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/direct-download-almost-anything.md",
+  "id": "direct-download-almost-anything",
+  "name": "Direct Download Almost Anything",
+  "url": "https://ewasion.github.io/opendirectory-finder/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/dirjournal.md",
+  "id": "dirjournal",
+  "name": "DirJournal",
+  "url": "https://www.dirjournal.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/disconnect-search.md",
+  "id": "disconnect-search",
+  "name": "Disconnect Search",
+  "url": "https://search.disconnect.me/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/discovery-family-channel.md",
+  "id": "discovery-family-channel",
+  "name": "Discovery Family Channel",
+  "url": "https://www.discovery.com/discovery-family-channel",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/disneybooks.md",
+  "id": "disneybooks",
+  "name": "DisneyBooks",
+  "url": "http://books.disney.com/?cmp=dpw_disneybooks_vanity",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

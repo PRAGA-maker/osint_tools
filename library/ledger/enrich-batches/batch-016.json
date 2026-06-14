@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/landsatlook-viewer.md",
+  "id": "landsatlook-viewer",
+  "name": "LandsatLook Viewer",
+  "url": "https://landsatlook.usgs.gov/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/latlong.md",
+  "id": "latlong",
+  "name": "Latlong",
+  "url": "https://www.latlong.net",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/leaflet.md",
+  "id": "leaflet",
+  "name": "Leaflet",
+  "url": "http://leafletjs.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/map-reporting-tools/liveuamap.md",
+  "id": "liveuamap",
+  "name": "LiveUaMap",
+  "url": "https://liveuamap.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/map-maker.md",
+  "id": "map-maker",
+  "name": "Map Maker",
+  "url": "https://maps.co",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mapalist.md",
+  "id": "mapalist",
+  "name": "MapAList",
+  "url": "http://mapalist.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mapbox.md",
+  "id": "mapbox",
+  "name": "MapBox",
+  "url": "https://www.mapbox.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mapchart-net.md",
+  "id": "mapchart-net",
+  "name": "Mapchart.net",
+  "url": "https://mapchart.net",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mapchecking.md",
+  "id": "mapchecking",
+  "name": "MapChecking",
+  "url": "https://www.mapchecking.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/maperitive.md",
+  "id": "maperitive",
+  "name": "Maperitive",
+  "url": "http://maperitive.net",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/maphub.md",
+  "id": "maphub",
+  "name": "MapHub",
+  "url": "https://maphub.net",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mapillary.md",
+  "id": "mapillary",
+  "name": "Mapillary",
+  "url": "https://www.mapillary.com/app/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mapjam.md",
+  "id": "mapjam",
+  "name": "MapJam",
+  "url": "http://mapjam.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mapline.md",
+  "id": "mapline",
+  "name": "Mapline",
+  "url": "https://mapline.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/mapquest.md",
+  "id": "mapquest",
+  "name": "MapQuest",
+  "url": "https://www.mapquest.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/coordinates/military-grid-reference-system-coordinates.md",
+  "id": "military-grid-reference-system-coordinates",
+  "name": "Military Grid Reference System Coordinates",
+  "url": "https://dominoc925-pages.appspot.com/mapplets/cs_mgrs.html",
+  "category": "geolocation",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/messaging/discadia-com.md",
+  "id": "discadia-com",
+  "name": "discadia.com",
+  "url": "https://discadia.com/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/discord-com.md",
+  "id": "discord-com",
+  "name": "discord.com",
+  "url": "https://discord.com/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/discord-com-2.md",
+  "id": "discord-com-2",
+  "name": "discord.com",
+  "url": "https://discord.com/safety/360043712132-how-we-investigate",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/discord-com-3.md",
+  "id": "discord-com-3",
+  "name": "discord.com",
+  "url": "https://discord.com/servers",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/discord-sensor.md",
+  "id": "discord-sensor",
+  "name": "Discord Sensor",
+  "url": "https://telegram.me/discordsensorbot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/discordbee-com.md",
+  "id": "discordbee-com",
+  "name": "discordbee.com",
+  "url": "https://discordbee.com/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/discordbotlist-com.md",
+  "id": "discordbotlist-com",
+  "name": "discordbotlist.com",
+  "url": "https://discordbotlist.com/servers",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/discordleaks-unicornriot-ninja.md",
+  "id": "discordleaks-unicornriot-ninja",
+  "name": "discordleaks.unicornriot.ninja",
+  "url": "https://discordleaks.unicornriot.ninja/discord/server/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/discord/discordosint.md",
+  "id": "discordosint",
+  "name": "DiscordOSINT",
+  "url": "https://github.com/husseinmuhaisen/DiscordOSINT",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/doxbin-com.md",
+  "id": "doxbin-com",
+  "name": "doxbin.com",
+  "url": "https://doxbin.com/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/easyvin.md",
+  "id": "easyvin",
+  "name": "EasyVIN",
+  "url": "https://t.me/EasyVINbot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/egrul-bot.md",
+  "id": "egrul-bot",
+  "name": "egrul_bot",
+  "url": "https://t.me/egrul_bot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/whatsapp/email2whatsapp.md",
+  "id": "email2whatsapp",
+  "name": "Email2WhatsApp",
+  "url": "https://github.com/dsonbaker/email2whatsapp",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/eyeton.md",
+  "id": "eyeton",
+  "name": "EyeTON",
+  "url": "https://telegram.me/istoneyebot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/fakedetail-com-2.md",
+  "id": "fakedetail-com-2",
+  "name": "fakedetail.com",
+  "url": "https://fakedetail.com/fake-whatsapp-chat-generator",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/findstickercreator.md",
+  "id": "findstickercreator",
+  "name": "FindStickerCreator",
+  "url": "https://t.me/SPOwnerBot",
+  "category": "messaging",
+  "mp": "high"
+ }
+]

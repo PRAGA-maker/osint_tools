@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/tails-live-os.md",
+  "id": "tails-live-os",
+  "name": "Tails Live OS",
+  "url": "https://tails.boum.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/taranis-ai.md",
+  "id": "taranis-ai",
+  "name": "Taranis AI",
+  "url": "https://github.com/taranis-ai/taranis-ai",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/telegram-howtofindbot.md",
+  "id": "telegram-howtofindbot",
+  "name": "Telegram HowToFindBot",
+  "url": "https://t.me/HowToFindBot",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/tenssens.md",
+  "id": "tenssens",
+  "name": "Tenssens",
+  "url": "https://github.com/thenurhabib/tenssens",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/text-and-file-hash-calculator.md",
+  "id": "text-and-file-hash-calculator",
+  "name": "Text and File Hash Calculator",
+  "url": "https://defuse.ca/checksums.htm",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/textures-js.md",
+  "id": "textures-js",
+  "name": "Textures.js",
+  "url": "https://riccardoscalco.github.io/textures",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/thanks.md",
+  "id": "thanks",
+  "name": "Thanks",
+  "url": "https://github.com/feross/thanks",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/the-citizen-lab.md",
+  "id": "the-citizen-lab",
+  "name": "The Citizen Lab",
+  "url": "https://citizenlab.ca/feed/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/the-fuck.md",
+  "id": "the-fuck",
+  "name": "The Fuck",
+  "url": "https://github.com/nvbn/thefuck",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/the-missing-package-manager-for-macos-or-linux.md",
+  "id": "the-missing-package-manager-for-macos-or-linux",
+  "name": "The Missing Package Manager for macOS (or Linux)",
+  "url": "https://brew.sh/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/theharvester-4.md",
+  "id": "theharvester-4",
+  "name": "theHarvester",
+  "url": "https://pypi.org/project/theHarvester/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/these-are-the-tools-open-source-researchers-say-they-need.md",
+  "id": "these-are-the-tools-open-source-researchers-say-they-need",
+  "name": "These Are the Tools Open Source Researchers Say They Need",
+  "url": "https://www.bellingcat.com/resources/2022/08/12/these-are-the-tools-open-source-researchers-say-they-need/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/threat-actor-usernames.md",
+  "id": "threat-actor-usernames",
+  "name": "Threat Actor Usernames",
+  "url": "https://threatactorusernames.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/threatpinch-lookup-2.md",
+  "id": "threatpinch-lookup-2",
+  "name": "ThreatPinch Lookup",
+  "url": "https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke/related",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/thunderbird.md",
+  "id": "thunderbird",
+  "name": "Thunderbird",
+  "url": "https://www.thunderbird.net/en-US/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/tik-tok.md",
+  "id": "tik-tok",
+  "name": "Tik-tok",
+  "url": "https://datanews.github.io/tik-tok",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

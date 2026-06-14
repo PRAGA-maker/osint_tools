@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/skilledtradesontario-ca.md",
+  "id": "skilledtradesontario-ca",
+  "name": "skilledtradesontario.ca",
+  "url": "https://www.skilledtradesontario.ca/public-register/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/slovakia.md",
+  "id": "slovakia",
+  "name": "Slovakia",
+  "url": "https://rpvs.gov.sk/rpvs/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/slovenia.md",
+  "id": "slovenia",
+  "name": "Slovenia",
+  "url": "https://www.ajpes.si/prs/Default.asp?language=english",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/smallbusinesspro-co-uk.md",
+  "id": "smallbusinesspro-co-uk",
+  "name": "smallbusinesspro.co.uk",
+  "url": "https://www.smallbusinesspro.co.uk/tax/vat-numbers.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/social-security-death-index.md",
+  "id": "social-security-death-index",
+  "name": "Social Security Death Index",
+  "url": "https://stevemorse.org/ssdi/ssdi.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/social-security-death-master-file.md",
+  "id": "social-security-death-master-file",
+  "name": "Social Security Death Master File",
+  "url": "https://ssdmf.info/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/socialworkengland-org-uk.md",
+  "id": "socialworkengland-org-uk",
+  "name": "socialworkengland.org.uk",
+  "url": "https://www.socialworkengland.org.uk/umbraco/surface/searchregister/results",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/societe-ninja.md",
+  "id": "societe-ninja",
+  "name": "societe.ninja",
+  "url": "https://www.societe.ninja/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/solicitorstribunal-org-uk.md",
+  "id": "solicitorstribunal-org-uk",
+  "name": "solicitorstribunal.org.uk",
+  "url": "https://www.solicitorstribunal.org.uk/judgment-search-results#search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/solocheck-ie.md",
+  "id": "solocheck-ie",
+  "name": "solocheck.ie",
+  "url": "https://www.solocheck.ie/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sortedbybirthdate.md",
+  "id": "sortedbybirthdate",
+  "name": "Sortedbybirthdate",
+  "url": "https://sortedbybirthdate.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sortedbyname-com.md",
+  "id": "sortedbyname-com",
+  "name": "SortedByName.com",
+  "url": "https://sortedbyname.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/south-dakota.md",
+  "id": "south-dakota",
+  "name": "South Dakota",
+  "url": "https://doc.sd.gov/adult/lookup",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/spain.md",
+  "id": "spain",
+  "name": "Spain",
+  "url": "https://sede.registradores.org/site/mercantil",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/spotlight-com.md",
+  "id": "spotlight-com",
+  "name": "spotlight.com",
+  "url": "https://www.spotlight.com/contacts",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sra-org-uk.md",
+  "id": "sra-org-uk",
+  "name": "sra.org.uk",
+  "url": "https://www.sra.org.uk/consumers/register/",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

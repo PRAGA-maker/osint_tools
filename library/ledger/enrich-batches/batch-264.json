@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/rateyourlecturer-united-kingdom.md",
+  "id": "rateyourlecturer-united-kingdom",
+  "name": "RateYourLecturer (United Kingdom)",
+  "url": "http://rateyourlecturer.co.uk",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/realtor-com-united-states.md",
+  "id": "realtor-com-united-states",
+  "name": "Realtor.com (United States)",
+  "url": "http://www.realtor.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/recon.md",
+  "id": "recon",
+  "name": "Recon",
+  "url": "http://recon222tttn4ob7ujdhbn3s4gjre7netvzybuvbq2bcqwltkiqinhad.onion.pet/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/recruit-net.md",
+  "id": "recruit-net",
+  "name": "Recruit.net",
+  "url": "http://usa.recruit.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/reference-source-microsoft.md",
+  "id": "reference-source-microsoft",
+  "name": "Reference Source (Microsoft)",
+  "url": "https://referencesource.microsoft.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/religion-wiki.md",
+  "id": "religion-wiki",
+  "name": "Religion Wiki",
+  "url": "http://religion.wikia.com/wiki/Portal",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/remax-house-listing-search-canada.md",
+  "id": "remax-house-listing-search-canada",
+  "name": "Remax House Listing Search (Canada)",
+  "url": "http://www.remax.ca",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/resellerratings-north-america.md",
+  "id": "resellerratings-north-america",
+  "name": "Resellerratings (North America)",
+  "url": "http://www.resellerratings.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/restaurant-business-online-united-states.md",
+  "id": "restaurant-business-online-united-states",
+  "name": "Restaurant Business Online (United States)",
+  "url": "http://www.restaurantbusinessonline.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/reuser-s-repertorium.md",
+  "id": "reuser-s-repertorium",
+  "name": "Reuser's Repertorium",
+  "url": "http://rr.reuser.biz/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/reverse-genie-lookup.md",
+  "id": "reverse-genie-lookup",
+  "name": "Reverse Genie Lookup",
+  "url": "http://www.reversegenie.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/rightmove-united-kingdom.md",
+  "id": "rightmove-united-kingdom",
+  "name": "Rightmove (United Kingdom)",
+  "url": "http://www.rightmove.co.uk/svr/3124",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/robots-txt-search-engine.md",
+  "id": "robots-txt-search-engine",
+  "name": "Robots.txt Search Engine",
+  "url": "https://cse.google.com/cse?cx=013991603413798772546:zu7epjqvunu",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/rocketlawyer.md",
+  "id": "rocketlawyer",
+  "name": "Rocketlawyer",
+  "url": "https://www.rocketlawyer.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/rockstargames-socialclub-player-search.md",
+  "id": "rockstargames-socialclub-player-search",
+  "name": "RockStarGames Socialclub Player Search",
+  "url": "http://socialclub.rockstargames.com/crews/search/alltypes",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/roger-ebert.md",
+  "id": "roger-ebert",
+  "name": "Roger Ebert",
+  "url": "http://www.rogerebert.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

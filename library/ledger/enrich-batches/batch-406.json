@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/credit-card-generator.md",
+  "id": "credit-card-generator",
+  "name": "Credit Card Generator",
+  "url": "https://www.fakenamegenerator.com/credit-card-validator.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/crontab-guru.md",
+  "id": "crontab-guru",
+  "name": "Crontab guru",
+  "url": "https://crontab.guru/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/cyberghost-vpn-proxy-website.md",
+  "id": "cyberghost-vpn-proxy-website",
+  "name": "CyberGhost VPN Proxy Website",
+  "url": "http://www.cyberghostvpn.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/dating-profile-generator.md",
+  "id": "dating-profile-generator",
+  "name": "Dating Profile Generator",
+  "url": "https://www.dating-profile-generator.org.uk/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/decoding-social-security-numbers.md",
+  "id": "decoding-social-security-numbers",
+  "name": "Decoding Social Security Numbers",
+  "url": "https://stevemorse.org/ssn/ssn.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/deepfakesweb.md",
+  "id": "deepfakesweb",
+  "name": "Deepfakesweb",
+  "url": "https://deepfakesweb.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/deft-linux.md",
+  "id": "deft-linux",
+  "name": "Deft Linux",
+  "url": "https://deftlinux.net",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/delete-me-free-opt-out-guide.md",
+  "id": "delete-me-free-opt-out-guide",
+  "name": "Delete Me Free Opt-Out Guide",
+  "url": "https://joindeleteme.com/help/diy-free-opt-out-guide/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/distill-web-monitor-firefox-add-on.md",
+  "id": "distill-web-monitor-firefox-add-on",
+  "name": "Distill Web Monitor Firefox Add-on",
+  "url": "https://addons.mozilla.org/en-CA/firefox/addon/distill-web-monitor-ff/?src=search",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/distraction-free-youtube-extension-chrome.md",
+  "id": "distraction-free-youtube-extension-chrome",
+  "name": "Distraction Free Youtube Extension (Chrome)",
+  "url": "https://chromewebstore.google.com/detail/df-tube-distraction-free/mjdepdfccjgcndkmemponafgioodelna",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/download-all-images.md",
+  "id": "download-all-images",
+  "name": "Download All Images",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/save-all-images-webextension/?src=search",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/dr-web-anti-virus-link-checker-extension-chrome.md",
+  "id": "dr-web-anti-virus-link-checker-extension-chrome",
+  "name": "Dr Web Anti-Virus Link Checker Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/dracos-linux.md",
+  "id": "dracos-linux",
+  "name": "Dracos Linux",
+  "url": "https://dracos-linux.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/duolingo-learn-languages-app-mobile-ios.md",
+  "id": "duolingo-learn-languages-app-mobile-ios",
+  "name": "Duolingo Learn Languages App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/duolingo-learn-languages-for/id570060128?mt=8&ign-mpt=uo%3D4",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/easy-disposable-email-address-extension-chrome.md",
+  "id": "easy-disposable-email-address-extension-chrome",
+  "name": "Easy Disposable Email Address Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/easy-disposable-email-add/mkpfodpjhekjdhkchalfflggeoamfajh",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ebay-auctionsniper-app-mobile-android.md",
+  "id": "ebay-auctionsniper-app-mobile-android",
+  "name": "Ebay AuctionSniper App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.auctiva.auctionsniper",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/consumeraffairs-north-america.md",
+  "id": "consumeraffairs-north-america",
+  "name": "Consumeraffairs (North America)",
+  "url": "http://www.consumeraffairs.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/consumerreports-north-america.md",
+  "id": "consumerreports-north-america",
+  "name": "Consumerreports (North America)",
+  "url": "http://www.consumerreports.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/consumersearch.md",
+  "id": "consumersearch",
+  "name": "Consumersearch",
+  "url": "http://www.consumersearch.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/convert-net.md",
+  "id": "convert-net",
+  "name": "Convert.net",
+  "url": "http://www.convert.net",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/copernic-desktop-search-tool.md",
+  "id": "copernic-desktop-search-tool",
+  "name": "Copernic Desktop Search Tool",
+  "url": "http://www.copernic.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/copypastecharacter.md",
+  "id": "copypastecharacter",
+  "name": "CopyPasteCharacter",
+  "url": "http://copypastecharacter.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/crowdriff.md",
+  "id": "crowdriff",
+  "name": "Crowdriff",
+  "url": "https://crowdriff.com/platform/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/crowdspring.md",
+  "id": "crowdspring",
+  "name": "CrowdSpring",
+  "url": "https://www.crowdspring.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/cute-pdf-writer-program.md",
+  "id": "cute-pdf-writer-program",
+  "name": "Cute PDF Writer Program",
+  "url": "http://www.cutepdf.com/Products/CutePDF/writer.asp",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/cylect-io.md",
+  "id": "cylect-io",
+  "name": "Cylect.io",
+  "url": "https://cylect.io",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/de-digger.md",
+  "id": "de-digger",
+  "name": "de digger",
+  "url": "https://www.dedigger.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/search/decalage-malware-search.md",
+  "id": "decalage-malware-search",
+  "name": "Decalage Malware Search",
+  "url": "https://decalage.info/en/mwsearch",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/designcrowd.md",
+  "id": "designcrowd",
+  "name": "DesignCrowd",
+  "url": "http://www.designcrowd.ca",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/detux-linux-sandbox.md",
+  "id": "detux-linux-sandbox",
+  "name": "detux Linux Sandbox",
+  "url": "https://detux.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/dictation-online-dictation-tool.md",
+  "id": "dictation-online-dictation-tool",
+  "name": "Dictation Online Dictation Tool",
+  "url": "https://dictation.io",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/diffnow-com.md",
+  "id": "diffnow-com",
+  "name": "Diffnow.com",
+  "url": "http://diffnow.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

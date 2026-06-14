@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/fierce-domain-scanner.md",
+  "id": "fierce-domain-scanner",
+  "name": "Fierce Domain Scanner",
+  "url": "https://github.com/davidpepper/fierce-domain-scanner",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/findsubdomains.md",
+  "id": "findsubdomains",
+  "name": "FindSubDomains",
+  "url": "https://findsubdomains.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/blacklists/firehol-ip-lists.md",
+  "id": "firehol-ip-lists",
+  "name": "FireHOL IP Lists",
+  "url": "https://iplists.firehol.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/firehol-ip-lists-2.md",
+  "id": "firehol-ip-lists-2",
+  "name": "FireHOL IP Lists",
+  "url": "https://iplists.firehol.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/focsec.md",
+  "id": "focsec",
+  "name": "Focsec",
+  "url": "https://focsec.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/fofa-2.md",
+  "id": "fofa-2",
+  "name": "FOFA",
+  "url": "https://fofa.so/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/follow-net.md",
+  "id": "follow-net",
+  "name": "Follow.net",
+  "url": "http://follow.net",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/change-detection/follow-that-page.md",
+  "id": "follow-that-page",
+  "name": "Follow That Page",
+  "url": "https://www.followthatpage.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/fortiguard-labs.md",
+  "id": "fortiguard-labs",
+  "name": "FortiGuard Labs",
+  "url": "https://www.fortiguard.com/threat-actor",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/fortiguard-labs-2.md",
+  "id": "fortiguard-labs-2",
+  "name": "Fortiguard Labs",
+  "url": "https://fortiguard.fortinet.com/threat-map",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/fortiguard-reputation-service.md",
+  "id": "fortiguard-reputation-service",
+  "name": "FortiGuard Reputation Service",
+  "url": "https://fortiguard.com/iprep",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/free-online-network-tools.md",
+  "id": "free-online-network-tools",
+  "name": "Free online network tools",
+  "url": "https://centralops.net/co/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/azure-gcp-discovery/gcpbucketbrute.md",
+  "id": "gcpbucketbrute",
+  "name": "GCPBucketBrute",
+  "url": "https://github.com/RhinoSecurityLabs/GCPBucketBrute",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/gdns.md",
+  "id": "gdns",
+  "name": "gdns",
+  "url": "https://github.com/hrbrmstr/gdns",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/geo-data-tool.md",
+  "id": "geo-data-tool",
+  "name": "Geo Data Tool",
+  "url": "https://www.geodatatool.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/get-link-info.md",
+  "id": "get-link-info",
+  "name": "Get Link Info",
+  "url": "https://www.getlinkinfo.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

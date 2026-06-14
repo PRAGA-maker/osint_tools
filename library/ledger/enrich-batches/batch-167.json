@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/sagadating-co-uk.md",
+  "id": "sagadating-co-uk",
+  "name": "Sagadating.co.uk",
+  "url": "http://www.sagadating.co.uk/s",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/sansar.md",
+  "id": "sansar",
+  "name": "Sansar",
+  "url": "https://www.sansar.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/sbs-television-australia.md",
+  "id": "sbs-television-australia",
+  "name": "SBS Television (Australia)",
+  "url": "http://www.sbs.com.au",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/sciencedaily-com.md",
+  "id": "sciencedaily-com",
+  "name": "Sciencedaily.com",
+  "url": "http://www.sciencedaily.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/scrt-link.md",
+  "id": "scrt-link",
+  "name": "scrt.link",
+  "url": "https://scrt.link/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/search-engine-watch.md",
+  "id": "search-engine-watch",
+  "name": "Search Engine Watch",
+  "url": "http://searchenginewatch.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/seattle-times-news.md",
+  "id": "seattle-times-news",
+  "name": "Seattle Times News",
+  "url": "http://www.seattletimes.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/seeking-arrangement.md",
+  "id": "seeking-arrangement",
+  "name": "Seeking Arrangement",
+  "url": "https://www.seekingarrangement.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/seniorfriendfinder.md",
+  "id": "seniorfriendfinder",
+  "name": "Seniorfriendfinder",
+  "url": "http://seniorfriendfinder.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/seniorpeoplemeet.md",
+  "id": "seniorpeoplemeet",
+  "name": "SeniorpeopleMeet",
+  "url": "http://www.seniorpeoplemeet.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/shaadi-com.md",
+  "id": "shaadi-com",
+  "name": "Shaadi.com",
+  "url": "http://www.shaadi.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/showcase-television-canada.md",
+  "id": "showcase-television-canada",
+  "name": "Showcase Television (Canada)",
+  "url": "http://www.showcase.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/sina-weibo-chinese.md",
+  "id": "sina-weibo-chinese",
+  "name": "Sina Weibo (Chinese)",
+  "url": "http://weibo.com/login.php",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/skout.md",
+  "id": "skout",
+  "name": "Skout",
+  "url": "http://www.skout.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/slashdot.md",
+  "id": "slashdot",
+  "name": "Slashdot",
+  "url": "http://slashdot.org",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/snippet-host.md",
+  "id": "snippet-host",
+  "name": "snippet.host",
+  "url": "https://snippet.host/",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

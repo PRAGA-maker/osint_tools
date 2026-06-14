@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/allareacodes.md",
+  "id": "allareacodes",
+  "name": "AllAreaCodes",
+  "url": "https://www.allareacodes.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/amazon-co-uk-3.md",
+  "id": "amazon-co-uk-3",
+  "name": "amazon.co.uk",
+  "url": "https://www.amazon.co.uk/registries",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/general-people-search/anywho.md",
+  "id": "anywho",
+  "name": "AnyWho",
+  "url": "https://www.anywho.com/whitepages",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/apollo-io.md",
+  "id": "apollo-io",
+  "name": "Apollo.io",
+  "url": "https://www.apollo.io/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/arabic-name-structure-wikipedia.md",
+  "id": "arabic-name-structure-wikipedia",
+  "name": "Arabic name structure - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/arabic_name",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/arachnys-com.md",
+  "id": "arachnys-com",
+  "name": "Arachnys.com",
+  "url": "https://compass.arachnys.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/australia-lookup.md",
+  "id": "australia-lookup",
+  "name": "Australia Lookup",
+  "url": "http://www.australialookup.com aware online: people search",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/bc-assessment.md",
+  "id": "bc-assessment",
+  "name": "BC Assessment",
+  "url": "https://www.bcassessment.ca",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/beenverified.md",
+  "id": "beenverified",
+  "name": "BeenVerified",
+  "url": "https://www.backgroundchecks.com/solutions/beenverified",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/beenverified-com.md",
+  "id": "beenverified-com",
+  "name": "beenverified.com",
+  "url": "https://www.beenverified.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/behind-the-name-arabic-names.md",
+  "id": "behind-the-name-arabic-names",
+  "name": "Behind the Name: Arabic Names",
+  "url": "https://www.behindthename.com/names/usage/arabic",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/bellingcat-name-variant-search.md",
+  "id": "bellingcat-name-variant-search",
+  "name": "Bellingcat Name Variant Search",
+  "url": "https://bellingcat.github.io/name-variant-search/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/biz-yellow-pages-usa-business-and-people-dire.md",
+  "id": "biz-yellow-pages-usa-business-and-people-dire",
+  "name": "Biz Yellow Pages, USA Business & People Dire",
+  "url": "http://www.bizyellowpages.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/british-phone-book.md",
+  "id": "british-phone-book",
+  "name": "British Phone Book",
+  "url": "http://www.britishphonebook.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/bt-uk.md",
+  "id": "bt-uk",
+  "name": "BT (UK)",
+  "url": "https://www.btexchanges.com canada411(canada)",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/buscapaginasblancas.md",
+  "id": "buscapaginasblancas",
+  "name": "BuscaPaginasBlancas",
+  "url": "https://github.com/GeiserX/BuscaPaginasBlancas",
+  "category": "people-search",
+  "mp": "high"
+ }
+]

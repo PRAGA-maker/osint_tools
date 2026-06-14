@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/professionalmatch.md",
+  "id": "professionalmatch",
+  "name": "ProfessionalMatch",
+  "url": "http://professionalmatch.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/protopage-website.md",
+  "id": "protopage-website",
+  "name": "Protopage Website",
+  "url": "http://www.protopage.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/r-opendirectories.md",
+  "id": "r-opendirectories",
+  "name": "/r/opendirectories",
+  "url": "https://www.reddit.com/r/opendirectories",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/radio-free-europe.md",
+  "id": "radio-free-europe",
+  "name": "Radio Free Europe",
+  "url": "http://www.rferl.org",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ravelry.md",
+  "id": "ravelry",
+  "name": "Ravelry",
+  "url": "https://www.ravelry.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/rebel-news.md",
+  "id": "rebel-news",
+  "name": "Rebel News",
+  "url": "https://www.rebelnews.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/discord-servers/reconxplorer.md",
+  "id": "reconxplorer",
+  "name": "ReconXplorer",
+  "url": "https://github.com/root7am/ReconXplorer",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/reddit-askmeanything.md",
+  "id": "reddit-askmeanything",
+  "name": "Reddit AskMeAnything",
+  "url": "https://www.reddit.com/r/AMA",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/rediff-web-portal-india.md",
+  "id": "rediff-web-portal-india",
+  "name": "Rediff Web Portal (India)",
+  "url": "http://www.rediff.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/refdesk-newspaper-search.md",
+  "id": "refdesk-newspaper-search",
+  "name": "RefDesk Newspaper Search",
+  "url": "http://www.refdesk.com/paper.html",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/rentry.md",
+  "id": "rentry",
+  "name": "Rentry",
+  "url": "https://rentry.co/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/restaurant-news-united-states.md",
+  "id": "restaurant-news-united-states",
+  "name": "Restaurant News (United States)",
+  "url": "http://www.restaurantnews.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/reddit-communities/reveddit.md",
+  "id": "reveddit",
+  "name": "Reveddit",
+  "url": "https://www.reveddit.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/rss-tools-website.md",
+  "id": "rss-tools-website",
+  "name": "RSS Tools Website",
+  "url": "http://www.rss-tools.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/saafe-info.md",
+  "id": "saafe-info",
+  "name": "saafe.info",
+  "url": "https://saafe.info/main/index.php?PHPSESSID=ba234d7a95aebaefddbac2910b91c17d",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/safenote.md",
+  "id": "safenote",
+  "name": "SafeNote",
+  "url": "https://safenote.co/",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

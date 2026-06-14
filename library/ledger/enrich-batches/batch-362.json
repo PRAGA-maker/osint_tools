@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/neighbor-domains/bing-ip-search.md",
+  "id": "bing-ip-search",
+  "name": "Bing IP Search",
+  "url": "https://www.bing.com/search?q=ip%3A8.8.8.8",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/bing-webmaster-tools.md",
+  "id": "bing-webmaster-tools",
+  "name": "Bing Webmaster Tools",
+  "url": "http://www.bing.com/toolbox/webmaster",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/bitdefender-threat-map.md",
+  "id": "bitdefender-threat-map",
+  "name": "Bitdefender Threat Map",
+  "url": "https://threatmap.bitdefender.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/blackweb.md",
+  "id": "blackweb",
+  "name": "Blackweb",
+  "url": "https://github.com/maravento/blackweb",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/blacklists/blocklist-de.md",
+  "id": "blocklist-de",
+  "name": "Blocklist.de",
+  "url": "https://www.blocklist.de/en/index.html",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/bluecoat-webpulse.md",
+  "id": "bluecoat-webpulse",
+  "name": "BlueCoat WebPulse",
+  "url": "https://sitereview.bluecoat.com/sitereview.jsp",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/bluto.md",
+  "id": "bluto",
+  "name": "Bluto",
+  "url": "https://github.com/darryllane/Bluto",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/bot-scout.md",
+  "id": "bot-scout",
+  "name": "Bot Scout",
+  "url": "https://botscout.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/breachhq.md",
+  "id": "breachhq",
+  "name": "BreachHQ",
+  "url": "https://breach-hq.com/threat-actors",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/browserling.md",
+  "id": "browserling",
+  "name": "Browserling",
+  "url": "https://www.browserling.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/s3-blob-storage/bucketloot.md",
+  "id": "bucketloot",
+  "name": "BucketLoot",
+  "url": "https://github.com/redhuntlabs/BucketLoot",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/builtwith.md",
+  "id": "builtwith",
+  "name": "BuiltWith",
+  "url": "https://builtwith.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/builtwith-2.md",
+  "id": "builtwith-2",
+  "name": "BuiltWith",
+  "url": "https://builtwith.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/bunkerweb-live-cyber-attack-threat-map.md",
+  "id": "bunkerweb-live-cyber-attack-threat-map",
+  "name": "BunkerWeb Live Cyber Attack Threat Map",
+  "url": "https://threatmap.bunkerweb.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/tools/burp-suite.md",
+  "id": "burp-suite",
+  "name": "Burp Suite",
+  "url": "https://portswigger.net/burp",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ioc-tools/cacador.md",
+  "id": "cacador",
+  "name": "Cacador",
+  "url": "https://github.com/sroberts/cacador",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

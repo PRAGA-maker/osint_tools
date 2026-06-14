@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/media-smarts-digital-and-media-literacy.md",
+  "id": "media-smarts-digital-and-media-literacy",
+  "name": "Media Smarts Digital and Media Literacy",
+  "url": "http://mediasmarts.ca/digital-media-literacy",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/mediainforobot.md",
+  "id": "mediainforobot",
+  "name": "@mediainforobot",
+  "url": "https://t.me/mediainforobot",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/meltwater-blog-search.md",
+  "id": "meltwater-blog-search",
+  "name": "Meltwater Blog Search",
+  "url": "https://www.meltwater.com/#",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/mendeley-academic-research-manager.md",
+  "id": "mendeley-academic-research-manager",
+  "name": "Mendeley Academic Research Manager",
+  "url": "https://www.mendeley.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/metadefender.md",
+  "id": "metadefender",
+  "name": "MetaDefender",
+  "url": "https://metadefender.opswat.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/mever-gr.md",
+  "id": "mever-gr",
+  "name": "mever.gr",
+  "url": "https://mever.gr/forensics/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/microsoft-office-online.md",
+  "id": "microsoft-office-online",
+  "name": "Microsoft Office Online",
+  "url": "https://www.office.com/start/default.aspx",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/minexp-gumroad-com.md",
+  "id": "minexp-gumroad-com",
+  "name": "minexp.gumroad.com",
+  "url": "https://minexp.gumroad.com/l/EXIFHound",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/mp3juices.md",
+  "id": "mp3juices",
+  "name": "MP3Juices",
+  "url": "http://www.mp3juices.cc",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/mutagen.md",
+  "id": "mutagen",
+  "name": "Mutagen",
+  "url": "https://github.com/quodlibet/mutagen",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/national-restaurant-association-united-states.md",
+  "id": "national-restaurant-association-united-states",
+  "name": "National Restaurant Association (United States)",
+  "url": "http://www.restaurant.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/search/national-software-reference-library.md",
+  "id": "national-software-reference-library",
+  "name": "National Software Reference Library",
+  "url": "https://nsrl.hashsets.com/national_software_reference_library1_search.php",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/new-zealand-government-it-jobs.md",
+  "id": "new-zealand-government-it-jobs",
+  "name": "New Zealand Government IT Jobs",
+  "url": "https://www.newzealandnow.govt.nz/work-in-nz/nz-jobs-industries/information-technology-jobs",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/new-zealand-technology-industry-association.md",
+  "id": "new-zealand-technology-industry-association",
+  "name": "New Zealand Technology Industry Association",
+  "url": "http://www.nztech.org.nz",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/occupational-outlook-handbook-it-united-states.md",
+  "id": "occupational-outlook-handbook-it-united-states",
+  "name": "Occupational Outlook Handbook \u2013 IT (United States)",
+  "url": "http://www.bls.gov/ooh/computer-and-information-technology/home.htm",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/odcrawler.md",
+  "id": "odcrawler",
+  "name": "ODCrawler",
+  "url": "https://odcrawler.xyz/",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

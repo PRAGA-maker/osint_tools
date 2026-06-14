@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/hcl-threat-map.md",
+  "id": "hcl-threat-map",
+  "name": "HCL Threat Map",
+  "url": "https://www.hcltech.com/hcl-threat-map",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/heartbleed-check.md",
+  "id": "heartbleed-check",
+  "name": "Heartbleed Check",
+  "url": "https://osint.sh/heartbleed/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/hexometer-stack-checker.md",
+  "id": "hexometer-stack-checker",
+  "name": "Hexometer stack checker",
+  "url": "https://hexometer.com/stack-checker",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/honeydb.md",
+  "id": "honeydb",
+  "name": "HoneyDB",
+  "url": "https://honeydb.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/hostintel-keithjjones-github.md",
+  "id": "hostintel-keithjjones-github",
+  "name": "hostintel - keithjjones Github",
+  "url": "https://github.com/keithjjones/hostintel",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/phishing/https-openphish-com-feed-txt.md",
+  "id": "https-openphish-com-feed-txt",
+  "name": "https://openphish.com/feed.txt",
+  "url": "https://openphish.com/feed.txt",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/tools/hunting-new-registered-domains.md",
+  "id": "hunting-new-registered-domains",
+  "name": "Hunting-New-Registered-Domains",
+  "url": "https://github.com/gfek/Hunting-New-Registered-Domains",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/bgp/hurricane-electric-bgp-toolkit.md",
+  "id": "hurricane-electric-bgp-toolkit",
+  "name": "Hurricane Electric BGP Toolkit",
+  "url": "https://bgp.he.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/hypestat.md",
+  "id": "hypestat",
+  "name": "HypeStat",
+  "url": "https://www.hypestat.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/iana-root-zone-database.md",
+  "id": "iana-root-zone-database",
+  "name": "IANA \u2014 Root Zone Database",
+  "url": "https://www.iana.org/domains/root/db",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/ibm-x-force-exchange.md",
+  "id": "ibm-x-force-exchange",
+  "name": "IBM X-Force Exchange",
+  "url": "https://exchange.xforce.ibmcloud.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ibm-x-force-exchange-current-malicious-activity.md",
+  "id": "ibm-x-force-exchange-current-malicious-activity",
+  "name": "IBM X-Force Exchange Current Malicious Activity",
+  "url": "https://exchange.xforce.ibmcloud.com/activity/map",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/icann-lookup.md",
+  "id": "icann-lookup",
+  "name": "Icann Lookup",
+  "url": "https://lookup.icann.org/en/lookup",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/idn-checker.md",
+  "id": "idn-checker",
+  "name": "IDN Checker",
+  "url": "https://holdintegrity.com/checker",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/attack-surface-security-testing/immuniweb.md",
+  "id": "immuniweb",
+  "name": "ImmuniWeb",
+  "url": "https://www.immuniweb.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/imperva-live-threat-map.md",
+  "id": "imperva-live-threat-map",
+  "name": "Imperva Live Threat Map",
+  "url": "https://www.imperva.com/cyber-threat-attack-map/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/legacy-com.md",
+  "id": "legacy-com",
+  "name": "legacy.com",
+  "url": "https://www.legacy.com/search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/legalmondo-com.md",
+  "id": "legalmondo-com",
+  "name": "legalmondo.com",
+  "url": "https://www.legalmondo.com/product/how-find-company-information-spain/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/list-of-all-criminal-offences-a-to-z.md",
+  "id": "list-of-all-criminal-offences-a-to-z",
+  "name": "List of All Criminal Offences - A to Z",
+  "url": "https://www.criminal-lawyers.com.au/offences",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/list-of-criminal-charges-findlaw.md",
+  "id": "list-of-criminal-charges-findlaw",
+  "name": "List of Criminal Charges - FindLaw",
+  "url": "https://www.findlaw.com/criminal/criminal-charges/view-all-criminal-charges.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/lists-of-united-states-state-prisons-wikipedia.md",
+  "id": "lists-of-united-states-state-prisons-wikipedia",
+  "name": "Lists of United States state prisons - Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/lists_of_united_states_state_prisons",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/lithuania.md",
+  "id": "lithuania",
+  "name": "Lithuania",
+  "url": "https://www.registrucentras.lt/jar/p_en/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/little-rock-ar-crime-search.md",
+  "id": "little-rock-ar-crime-search",
+  "name": "Little Rock AR Crime Search",
+  "url": "https://b2.caspio.com/dp.asp?AppKey=88321000961d92fc4ed343f38a0e",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/locate-family.md",
+  "id": "locate-family",
+  "name": "Locate Family",
+  "url": "https://www.locatefamily.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/londonstockexchange-com.md",
+  "id": "londonstockexchange-com",
+  "name": "londonstockexchange.com",
+  "url": "https://www.londonstockexchange.com/home/homepage.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/louisiana.md",
+  "id": "louisiana",
+  "name": "Louisiana",
+  "url": "https://doc.louisiana.gov/imprisoned-person-programs-resources/offender-information",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/luxembourg.md",
+  "id": "luxembourg",
+  "name": "Luxembourg",
+  "url": "https://www.lbr.lu/mjrcs-lbr/jsp/IndexActionNotSecured.action?time=1631033938069&loop=1",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/maine.md",
+  "id": "maine",
+  "name": "Maine",
+  "url": "https://www1.maine.gov/online/mdoc/search-and-deposit/index.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/maldives-sex-offender.md",
+  "id": "maldives-sex-offender",
+  "name": "Maldives Sex Offender",
+  "url": "http://www.offenders.mv/offenders/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/malta.md",
+  "id": "malta",
+  "name": "Malta",
+  "url": "https://registry.mbr.mt/ROC/index.jsp#companySearch.do?action=companyDetails",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/manitoba-court-records.md",
+  "id": "manitoba-court-records",
+  "name": "Manitoba Court Records",
+  "url": "https://web43.gov.mb.ca/registry/namesearch",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/manitoba-sex-offender.md",
+  "id": "manitoba-sex-offender",
+  "name": "Manitoba Sex Offender",
+  "url": "https://www.gov.mb.ca/justice/commsafe/notification/index.html",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

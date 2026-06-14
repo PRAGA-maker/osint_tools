@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/sciencedomain.md",
+  "id": "sciencedomain",
+  "name": "ScienceDomain",
+  "url": "http://www.sciencedomain.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/scirp.md",
+  "id": "scirp",
+  "name": "SCIRP",
+  "url": "http://www.scirp.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/sdorker.md",
+  "id": "sdorker",
+  "name": "SDorker",
+  "url": "https://github.com/TheSpeedX/SDorker",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/search-22.md",
+  "id": "search-22",
+  "name": "Search 22",
+  "url": "https://search-22.com/ftp-search-tools",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/search-ch-switzerland.md",
+  "id": "search-ch-switzerland",
+  "name": "Search.ch (Switzerland)",
+  "url": "http://www.search.ch",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/search-com.md",
+  "id": "search-com",
+  "name": "Search.com",
+  "url": "https://www.search.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/search-commands.md",
+  "id": "search-commands",
+  "name": "Search Commands",
+  "url": "https://chrome.google.com/webstore/detail/search-commands/ggjakfijchdkbmmhbfemjciidhnipgoe/related",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/search-engine-colossus.md",
+  "id": "search-engine-colossus",
+  "name": "Search Engine Colossus",
+  "url": "http://www.searchenginecolossus.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/search-engines-scraper.md",
+  "id": "search-engines-scraper",
+  "name": "Search Engines Scraper",
+  "url": "https://github.com/tasos-py/Search-Engines-Scraper",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/search-patterns.md",
+  "id": "search-patterns",
+  "name": "Search Patterns",
+  "url": "https://chrome.google.com/webstore/detail/search-patterns/hjlahhonnlceifaecpjejlhhgjkipnbj/related?hl=zh-CN&gl=001",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/search3.md",
+  "id": "search3",
+  "name": "search3",
+  "url": "https://search3.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/searchall-net.md",
+  "id": "searchall-net",
+  "name": "searchall.net",
+  "url": "https://searchall.net",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/searchdorks.md",
+  "id": "searchdorks",
+  "name": "SearchDorks",
+  "url": "https://kriztalz.sh/search-dorks/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/searcher.md",
+  "id": "searcher",
+  "name": "Searcher",
+  "url": "https://github.com/davemolk/searcher",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/searxng.md",
+  "id": "searxng",
+  "name": "SearXNG",
+  "url": "https://searxng.org/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/searxng-2.md",
+  "id": "searxng-2",
+  "name": "SearXNG",
+  "url": "https://github.com/searxng/searxng",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

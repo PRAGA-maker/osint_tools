@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/translation-language/dictionary-com.md",
+  "id": "dictionary-com",
+  "name": "Dictionary.com",
+  "url": "https://www.dictionary.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/dictionary-com-translation.md",
+  "id": "dictionary-com-translation",
+  "name": "Dictionary.com: Translation",
+  "url": "http://translate.reference.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/dragon-speech-recognition-solutions.md",
+  "id": "dragon-speech-recognition-solutions",
+  "name": "Dragon Speech Recognition Solutions",
+  "url": "http://www.nuance.com/dragon/index.htm",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/emojipedia-org.md",
+  "id": "emojipedia-org",
+  "name": "emojipedia.org",
+  "url": "https://emojipedia.org/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/emojitranslate-com.md",
+  "id": "emojitranslate-com",
+  "name": "emojitranslate.com",
+  "url": "https://emojitranslate.com/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/ethnologue.md",
+  "id": "ethnologue",
+  "name": "Ethnologue",
+  "url": "https://www.ethnologue.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/evernote-com.md",
+  "id": "evernote-com",
+  "name": "evernote.com",
+  "url": "https://evernote.com/ai-transcribe/video-to-text",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/flockwatch.md",
+  "id": "flockwatch",
+  "name": "FlockWatch",
+  "url": "https://github.com/sjacks26/flockwatch",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/free-translator.md",
+  "id": "free-translator",
+  "name": "Free translator",
+  "url": "http://www.free-translator.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/free-website-translation.md",
+  "id": "free-website-translation",
+  "name": "Free Website Translation",
+  "url": "http://free-website-translation.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/freetranslation.md",
+  "id": "freetranslation",
+  "name": "FreeTranslation",
+  "url": "https://www.freetranslation.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/frengly-free-online-translator.md",
+  "id": "frengly-free-online-translator",
+  "name": "Frengly Free Online Translator",
+  "url": "http://www.frengly.com/#!/translate",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/get-otter-ai.md",
+  "id": "get-otter-ai",
+  "name": "get.otter.ai",
+  "url": "https://get.otter.ai/interview-transcription/",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/gizoogle-textilizer.md",
+  "id": "gizoogle-textilizer",
+  "name": "Gizoogle Textilizer",
+  "url": "http://www.gizoogle.net/textilizer.php",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/global-language-monitor.md",
+  "id": "global-language-monitor",
+  "name": "Global Language Monitor",
+  "url": "https://www.languagemonitor.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/google-quest-visual-wordlens.md",
+  "id": "google-quest-visual-wordlens",
+  "name": "Google Quest Visual WordLens",
+  "url": "http://questvisual.com",
+  "category": "translation-language",
+  "mp": "low"
+ }
+]

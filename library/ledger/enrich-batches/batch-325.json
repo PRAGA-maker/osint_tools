@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/sans-internet-storm-center-diary-full-text.md",
+  "id": "sans-internet-storm-center-diary-full-text",
+  "name": "SANS Internet Storm Center Diary (Full Text)",
+  "url": "https://isc.sans.edu/rssfeed_full.xml",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sans-osint-summit-2021-playlist.md",
+  "id": "sans-osint-summit-2021-playlist",
+  "name": "SANS OSINT Summit 2021 (Playlist)",
+  "url": "https://www.youtube.com/playlist?list=PLs4eo9Tja8bj3jJvv42LxOkhc2_ylpS9y",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sarenka.md",
+  "id": "sarenka",
+  "name": "Sarenka",
+  "url": "https://github.com/pawlaczyk/sarenka",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sayhello.md",
+  "id": "sayhello",
+  "name": "SayHello",
+  "url": "https://beta.sayhello.so/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/script-safe.md",
+  "id": "script-safe",
+  "name": "Script Safe",
+  "url": "https://chrome.google.com/webstore/detail/scriptsafe/oiigbmnaadbkfbmpbfijlflahbdbdgdf?hl=en",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/scrummage.md",
+  "id": "scrummage",
+  "name": "Scrummage",
+  "url": "https://github.com/matamorphosis/Scrummage",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/search-investigative-and-forensic-toolbar.md",
+  "id": "search-investigative-and-forensic-toolbar",
+  "name": "SEARCH Investigative and Forensic Toolbar",
+  "url": "https://chrome.google.com/webstore/detail/search-investigative-and/idgjbdfnngdcenpahfalcamfmcjdfbcj/related",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/seclists.md",
+  "id": "seclists",
+  "name": "SecLists",
+  "url": "https://github.com/danielmiessler/SecLists",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sector035.md",
+  "id": "sector035",
+  "name": "Sector035",
+  "url": "https://sector035.nl/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/securesha.md",
+  "id": "securesha",
+  "name": "Securesha",
+  "url": "https://securesha.re",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/security-list.md",
+  "id": "security-list",
+  "name": "security-list",
+  "url": "https://github.com/zbetcheckin/Security_list",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/see-how-easily-freaks-can-take-over-your-life.md",
+  "id": "see-how-easily-freaks-can-take-over-your-life",
+  "name": "See how easily freaks can take over your life",
+  "url": "https://www.youtube.com/watch?v=Rn4Rupla11M",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/semid-osint-framework.md",
+  "id": "semid-osint-framework",
+  "name": "SEMID osint framework",
+  "url": "https://github.com/Himatric/SEMID",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/sentinel-visualizer.md",
+  "id": "sentinel-visualizer",
+  "name": "Sentinel Visualizer",
+  "url": "http://www.fmsasg.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/serpapi.md",
+  "id": "serpapi",
+  "name": "SerpApi",
+  "url": "https://serpapi.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/serpscan.md",
+  "id": "serpscan",
+  "name": "SerpScan",
+  "url": "https://github.com/Alaa-abdulridha/SerpScan",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

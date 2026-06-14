@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/postcert.md",
+  "id": "postcert",
+  "name": "postcert",
+  "url": "https://post.coag.gov/s/?tabset-1eada=4b5ff",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/pricepaid.md",
+  "id": "pricepaid",
+  "name": "PricePaid",
+  "url": "https://landregistry.data.gov.uk/app/ppd",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/primelocation.md",
+  "id": "primelocation",
+  "name": "PrimeLocation",
+  "url": "https://www.primelocation.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/property-records-public-records-by-state.md",
+  "id": "property-records-public-records-by-state",
+  "name": "Property Records - Public Records by State",
+  "url": "http://publicrecords.searchsystems.net/free_public_records_by_type_of_record/property_records",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/property-search-public-records-by-state.md",
+  "id": "property-search-public-records-by-state",
+  "name": "Property Search - Public Records by State",
+  "url": "https://www.blackbookonline.info/usa-property.aspx",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/public-records.md",
+  "id": "public-records",
+  "name": "Public Records?",
+  "url": "https://www.brbpublications.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/annual-reports/public-register-online.md",
+  "id": "public-register-online",
+  "name": "Public Register Online",
+  "url": "https://www.annualreportservice.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/annual-reports/public-register-s-annual-report-service.md",
+  "id": "public-register-s-annual-report-service",
+  "name": "Public Register's Annual Report Service",
+  "url": "https://www.prars.com/search/alpha/A",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/additional-resources/rba-business-information-resources.md",
+  "id": "rba-business-information-resources",
+  "name": "RBA - Business Information Resources",
+  "url": "https://www.rba.co.uk/sources/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/rcmp-death-search.md",
+  "id": "rcmp-death-search",
+  "name": "RCMP Death Search",
+  "url": "https://c0cqk108.caspio.com/dp/9156100036f195cdf0934662917c",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/rcmp-death-search-2.md",
+  "id": "rcmp-death-search-2",
+  "name": "RCMP Death Search 2",
+  "url": "https://c0cqk108.caspio.com/dp/915610007f161cceda514e33a0b7",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/rcmp-death-search-3.md",
+  "id": "rcmp-death-search-3",
+  "name": "RCMP Death Search 3",
+  "url": "https://b2.caspio.com/dp/91561000c38ca49de99e4ecf9619",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/realtor.md",
+  "id": "realtor",
+  "name": "Realtor",
+  "url": "https://www.realtor.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/employee-profiles-and-resumes/recruitem.md",
+  "id": "recruitem",
+  "name": "RecruitEm",
+  "url": "https://recruitin.net/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/property-records/redfin.md",
+  "id": "redfin",
+  "name": "Redfin",
+  "url": "https://redfin.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/regional-municipality-of-durham.md",
+  "id": "regional-municipality-of-durham",
+  "name": "Regional Municipality of Durham",
+  "url": "https://opendata.durham.ca/",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

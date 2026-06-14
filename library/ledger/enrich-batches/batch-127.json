@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/school-or-university.md",
+  "id": "school-or-university",
+  "name": "School or University",
+  "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Afacebook.com+%22went+to%22+%22Search+Term%22",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin/scrapedin.md",
+  "id": "scrapedin",
+  "name": "ScrapedIn",
+  "url": "https://github.com/dchrastil/ScrapedIn",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/search-linkedin-intelligence-recruitment-software.md",
+  "id": "search-linkedin-intelligence-recruitment-software",
+  "name": "Search LinkedIn - Intelligence Recruitment Software",
+  "url": "http://www.intel-sw.com/blog/search-linkedin",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/search-twitter-bios-and-profiles.md",
+  "id": "search-twitter-bios-and-profiles",
+  "name": "Search Twitter Bios and Profiles",
+  "url": "https://followerwonk.com/bio",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/search-twitter-users.md",
+  "id": "search-twitter-users",
+  "name": "Search Twitter Users",
+  "url": "https://pushshift.io/twitter-user-search/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/searchisback.md",
+  "id": "searchisback",
+  "name": "SearchIsBack",
+  "url": "https://searchisback.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/searchmy-bio.md",
+  "id": "searchmy-bio",
+  "name": "Searchmy.bio",
+  "url": "https://www.searchmy.bio/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/secjuice-com-3.md",
+  "id": "secjuice-com-3",
+  "name": "secjuice.com",
+  "url": "https://www.secjuice.com/linkedin-osint-part-1/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/secjuice-com-4.md",
+  "id": "secjuice-com-4",
+  "name": "secjuice.com",
+  "url": "https://www.secjuice.com/mastodon-osint-a-comprehensive-introduction/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/seemutualfriendsonfacebook-com.md",
+  "id": "seemutualfriendsonfacebook-com",
+  "name": "seemutualfriendsonfacebook.com",
+  "url": "https://seemutualfriendsonfacebook.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/sentiment140.md",
+  "id": "sentiment140",
+  "name": "Sentiment140",
+  "url": "http://www.twittersentiment.appspot.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/other-social-networks/share-secret-feedback.md",
+  "id": "share-secret-feedback",
+  "name": "Share Secret Feedback",
+  "url": "https://secreto.site/en/%3Cuser_id%3E",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/skircle-me.md",
+  "id": "skircle-me",
+  "name": "skircle.me",
+  "url": "https://skircle.me/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/skype-search-engine.md",
+  "id": "skype-search-engine",
+  "name": "Skype Search Engine",
+  "url": "https://www.skypli.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/skyzoo-blue.md",
+  "id": "skyzoo-blue",
+  "name": "skyzoo.blue",
+  "url": "https://skyzoo.blue/stats",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/sleeping-time.md",
+  "id": "sleeping-time",
+  "name": "Sleeping Time",
+  "url": "http://sleepingtime.org/",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

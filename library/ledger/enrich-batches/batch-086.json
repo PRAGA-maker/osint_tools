@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/ncra-sourcebook.md",
+  "id": "ncra-sourcebook",
+  "name": "NCRA Sourcebook",
+  "url": "https://portal.ncra.org/sourcebook",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nebraska.md",
+  "id": "nebraska",
+  "name": "Nebraska",
+  "url": "https://dcs-inmatesearch.ne.gov/corrections/cor_input.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/netherlands.md",
+  "id": "netherlands",
+  "name": "Netherlands",
+  "url": "https://www.kvk.nl/bestellen/#/?productfilter=ubo",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nethouseprices-com.md",
+  "id": "nethouseprices-com",
+  "name": "nethouseprices.com",
+  "url": "https://nethouseprices.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nettrace.md",
+  "id": "nettrace",
+  "name": "NetTrace",
+  "url": "https://www.nettrace.com.au/resource/search/people",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/new-england-facts.md",
+  "id": "new-england-facts",
+  "name": "New England Facts",
+  "url": "https://newenglandfacts.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/new-hampshire.md",
+  "id": "new-hampshire",
+  "name": "New Hampshire",
+  "url": "https://business.nh.gov/inmate_locator",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/new-jersey.md",
+  "id": "new-jersey",
+  "name": "New Jersey",
+  "url": "https://www20.state.nj.us/doc_inmate/inmatefinder",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/new-jersey-voter-records.md",
+  "id": "new-jersey-voter-records",
+  "name": "New Jersey Voter Records",
+  "url": "https://stevemorse.org/njvoters/njvoters.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/new-mexico.md",
+  "id": "new-mexico",
+  "name": "New Mexico",
+  "url": "https://search.cd.nm.gov",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/new-york-state.md",
+  "id": "new-york-state",
+  "name": "New York State",
+  "url": "http://nysdoccslookup.doccs.ny.gov",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/new-york-state-prison-records.md",
+  "id": "new-york-state-prison-records",
+  "name": "New York State Prison Records",
+  "url": "https://stevemorse.org/prison/prison.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/new-york-state-voter-records.md",
+  "id": "new-york-state-voter-records",
+  "name": "New York State Voter Records",
+  "url": "https://stevemorse.org/nysvoters/nysvoters.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nexok-co-uk.md",
+  "id": "nexok-co-uk",
+  "name": "nexok.co.uk",
+  "url": "https://www.nexok.co.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nibusinessinfo-co-uk.md",
+  "id": "nibusinessinfo-co-uk",
+  "name": "nibusinessinfo.co.uk",
+  "url": "https://www.nibusinessinfo.co.uk/content/business-rates",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nidirect-gov-uk.md",
+  "id": "nidirect-gov-uk",
+  "name": "nidirect.gov.uk",
+  "url": "https://www.nidirect.gov.uk/contacts/driver-vehicle-agency-dva-northern-ireland",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

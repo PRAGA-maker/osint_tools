@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/tweet-archive-search.md",
+  "id": "tweet-archive-search",
+  "name": "Tweet Archive Search",
+  "url": "https://cse.google.com/cse/publicurl?cx=005797772976587943970:kffjgylvzwu",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-binder.md",
+  "id": "tweet-binder",
+  "name": "Tweet Binder",
+  "url": "https://www.tweetbinder.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-finder.md",
+  "id": "tweet-finder",
+  "name": "Tweet Finder",
+  "url": "https://cse.google.com/cse/publicurl?cx=016621447308871563343:u4r_fupvs-e",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/analytics/tweet-metadata.md",
+  "id": "tweet-metadata",
+  "name": "Tweet Metadata",
+  "url": "https://www.wsj.com/public/resources/documents/TweetMetadata.pdf",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweet-topic-explorer.md",
+  "id": "tweet-topic-explorer",
+  "name": "Tweet Topic Explorer",
+  "url": "http://tweettopicexplorer.neoformix.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweetbeaver.md",
+  "id": "tweetbeaver",
+  "name": "TweetBeaver",
+  "url": "https://tweetbeaver.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweetdelete-net.md",
+  "id": "tweetdelete-net",
+  "name": "tweetdelete.net",
+  "url": "https://www.tweetdelete.net/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/search/tweeterid.md",
+  "id": "tweeterid",
+  "name": "TweeterID",
+  "url": "https://tweeterid.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweetmap.md",
+  "id": "tweetmap",
+  "name": "TweetMap",
+  "url": "http://mapd.csail.mit.edu/tweetmap",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweetmap-2.md",
+  "id": "tweetmap-2",
+  "name": "TweetMap",
+  "url": "http://worldmap.harvard.edu/tweetmap",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweetmap-3.md",
+  "id": "tweetmap-3",
+  "name": "tweetmap",
+  "url": "https://www.omnisci.com/demos/tweetmap",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/tweettioc-com.md",
+  "id": "tweettioc-com",
+  "name": "Tweettioc.com",
+  "url": "http://tweettioc.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/archive-deleted-tweets/tweetvacuum.md",
+  "id": "tweetvacuum",
+  "name": "TweetVacuum",
+  "url": "https://github.com/UberKitten/TweetVacuum",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twiangulate-analyzing-the-connections-between-friends-and-followers.md",
+  "id": "twiangulate-analyzing-the-connections-between-friends-and-followers",
+  "name": "Twiangulate: analyzing the connections between friends and followers",
+  "url": "http://twiangulate.com/search/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/analytics/twint.md",
+  "id": "twint",
+  "name": "Twint",
+  "url": "https://github.com/twintproject/twint",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twint-2.md",
+  "id": "twint-2",
+  "name": "twint",
+  "url": "https://pypi.org/project/twint/",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

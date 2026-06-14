@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/financial-crypto/bitcoin-forums-search-engine.md",
+  "id": "bitcoin-forums-search-engine",
+  "name": "Bitcoin Forums Search Engine",
+  "url": "https://cse.google.com/cse?cx=f49f9d5e679b15787",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoinwhoswho.md",
+  "id": "bitcoinwhoswho",
+  "name": "Bitcoinwhoswho",
+  "url": "https://bitcoinwhoswho.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/blockchain-com.md",
+  "id": "blockchain-com",
+  "name": "Blockchain.com",
+  "url": "https://www.blockchain.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/blockchain-explorer.md",
+  "id": "blockchain-explorer",
+  "name": "Blockchain Explorer",
+  "url": "https://www.blockchain.com/explorer",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/blockchain-info.md",
+  "id": "blockchain-info",
+  "name": "Blockchain.info",
+  "url": "https://blockchain.info",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/blockcypher.md",
+  "id": "blockcypher",
+  "name": "Blockcypher",
+  "url": "https://live.blockcypher.com/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/blockexplorer.md",
+  "id": "blockexplorer",
+  "name": "BlockExplorer",
+  "url": "https://blockexplorer.com/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/btc-com.md",
+  "id": "btc-com",
+  "name": "BTC.com",
+  "url": "https://btc.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/chainalysis.md",
+  "id": "chainalysis",
+  "name": "Chainalysis",
+  "url": "https://www.chainalysis.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/china-related-resources.md",
+  "id": "china-related-resources",
+  "name": "China-related resources",
+  "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/china-related-resources",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/coinbase-com.md",
+  "id": "coinbase-com",
+  "name": "Coinbase.com",
+  "url": "https://www.coinbase.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/coinmap.md",
+  "id": "coinmap",
+  "name": "CoinMap",
+  "url": "https://coinmap.org",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/coinmarketcap.md",
+  "id": "coinmarketcap",
+  "name": "CoinMarketCap",
+  "url": "https://coinmarketcap.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/coinwink-com.md",
+  "id": "coinwink-com",
+  "name": "Coinwink.com",
+  "url": "https://coinwink.com/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/covi-analytics.md",
+  "id": "covi-analytics",
+  "name": "CoVi Analytics",
+  "url": "https://www.covianalytics.com/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/cryptocurrency-alerting.md",
+  "id": "cryptocurrency-alerting",
+  "name": "Cryptocurrency Alerting",
+  "url": "https://cryptocurrencyalerting.com/",
+  "category": "financial-crypto",
+  "mp": "low"
+ }
+]

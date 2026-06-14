@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/whenx.md",
+  "id": "whenx",
+  "name": "WhenX",
+  "url": "https://chrome.google.com/webstore/detail/whenx-mark-linkedin-profi/dgafcidlgmbcehokgdeghmfnbpbfhihh",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/windows-10-online-emulator.md",
+  "id": "windows-10-online-emulator",
+  "name": "Windows 10 Online Emulator",
+  "url": "https://www.onworks.net/runos/create-os.html?os=win10_emulator&home=init",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/windows-event-collection.md",
+  "id": "windows-event-collection",
+  "name": "Windows Event Collection",
+  "url": "https://www.ultimatewindowssecurity.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/windows-phone-imei-generator.md",
+  "id": "windows-phone-imei-generator",
+  "name": "Windows Phone IMEI Generator",
+  "url": "https://wpimeigenerator.github.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/winpatrol-monitor-and-alert-program-windows.md",
+  "id": "winpatrol-monitor-and-alert-program-windows",
+  "name": "WinPatrol Monitor & Alert Program (Windows)",
+  "url": "http://www.winpatrol.com/download.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/winpatrol-os-monitoring-system.md",
+  "id": "winpatrol-os-monitoring-system",
+  "name": "Winpatrol OS Monitoring System",
+  "url": "https://www.winpatrol.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/wordpress-social-networking-app-mobile-android.md",
+  "id": "wordpress-social-networking-app-mobile-android",
+  "name": "WordPress Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=org.wordpress.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/workflow-task-automation-app-mobile-ios.md",
+  "id": "workflow-task-automation-app-mobile-ios",
+  "name": "Workflow Task Automation App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/workflow-powerful-automation/id915249334?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/xmind-works.md",
+  "id": "xmind-works",
+  "name": "Xmind Works",
+  "url": "https://xmind.works/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/yahoo-finance-app-mobile-android.md",
+  "id": "yahoo-finance-app-mobile-android",
+  "name": "Yahoo Finance App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.finance",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/yahoo-finance-app-mobile-ios.md",
+  "id": "yahoo-finance-app-mobile-ios",
+  "name": "Yahoo Finance App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/yahoo-finance-real-time-stocks/id328412701?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/yahoo-mail-app-mobile-android.md",
+  "id": "yahoo-mail-app-mobile-android",
+  "name": "Yahoo Mail App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.mail",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/yahoo-mail-app-mobile-ios.md",
+  "id": "yahoo-mail-app-mobile-ios",
+  "name": "Yahoo Mail App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/yahoo-mail-free-email-and-news/id577586159?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/yandex-browser.md",
+  "id": "yandex-browser",
+  "name": "Yandex Browser",
+  "url": "https://browser.yandex.com/desktop/main",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/yelp-business-search-app-mobile-ios.md",
+  "id": "yelp-business-search-app-mobile-ios",
+  "name": "Yelp Business Search App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/us/app/yelp-food-services-around-me/id284910350",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/yelp-social-reviews-app-mobile-android.md",
+  "id": "yelp-social-reviews-app-mobile-android",
+  "name": "Yelp Social Reviews App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.yelp.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/website-watcher.md",
+  "id": "website-watcher",
+  "name": "WebSite Watcher",
+  "url": "http://www.aignes.com/index.htm",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/archives-cache/winds.md",
+  "id": "winds",
+  "name": "Winds",
+  "url": "http://winds.getstream.io",
+  "category": "archives-cache",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/american-archive-of-public-broadcasting.md",
+  "id": "american-archive-of-public-broadcasting",
+  "name": "American Archive of Public Broadcasting",
+  "url": "https://americanarchive.org",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/answers-com.md",
+  "id": "answers-com",
+  "name": "Answers.com",
+  "url": "http://www.answers.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/ask-2.md",
+  "id": "ask-2",
+  "name": "Ask",
+  "url": "http://www.ask.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/before-reddit-optimize-a-post.md",
+  "id": "before-reddit-optimize-a-post",
+  "name": "before reddit | optimize a post",
+  "url": "https://beforereddit.herokuapp.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/deck-for-reddit.md",
+  "id": "deck-for-reddit",
+  "name": "Deck for Reddit",
+  "url": "https://rdddeck.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/doesthedogdie.md",
+  "id": "doesthedogdie",
+  "name": "Doesthedogdie",
+  "url": "https://www.doesthedogdie.com/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/ehow.md",
+  "id": "ehow",
+  "name": "eHow",
+  "url": "http://www.ehow.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/files-pushshift-io-reddit.md",
+  "id": "files-pushshift-io-reddit",
+  "name": "Files.pushshift.io/reddit",
+  "url": "https://files.pushshift.io/reddit",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/flickmetrix-com.md",
+  "id": "flickmetrix-com",
+  "name": "flickmetrix.com",
+  "url": "http://flickmetrix.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/flicksurfer-com.md",
+  "id": "flicksurfer-com",
+  "name": "flicksurfer.com",
+  "url": "http://flicksurfer.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/flixable-com.md",
+  "id": "flixable-com",
+  "name": "flixable.com",
+  "url": "http://flixable.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/flixboss-com.md",
+  "id": "flixboss-com",
+  "name": "flixboss.com",
+  "url": "http://flixboss.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/flixwatch-co.md",
+  "id": "flixwatch-co",
+  "name": "flixwatch.co",
+  "url": "http://flixwatch.co",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/ghost.md",
+  "id": "ghost",
+  "name": "Ghost",
+  "url": "https://ghost.org",
+  "category": "communities-forums",
+  "mp": "low"
+ }
+]

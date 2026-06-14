@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/geekflare-tools.md",
+  "id": "geekflare-tools",
+  "name": "Geekflare Tools",
+  "url": "https://gf.dev/toolbox",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/gephi.md",
+  "id": "gephi",
+  "name": "Gephi",
+  "url": "https://gephi.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/ghostery.md",
+  "id": "ghostery",
+  "name": "Ghostery",
+  "url": "https://www.ghostery.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/gitguardian-public-github-monitoring.md",
+  "id": "gitguardian-public-github-monitoring",
+  "name": "GitGuardian - Public GitHub Monitoring",
+  "url": "https://www.gitguardian.com/monitor-public-github-for-secrets",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/github-artifact-exporter.md",
+  "id": "github-artifact-exporter",
+  "name": "Github Artifact Exporter",
+  "url": "https://github.com/github/github-artifact-exporter",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/github-search.md",
+  "id": "github-search",
+  "name": "Github Search",
+  "url": "https://github.com/gwen001/github-search",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/gitpod-io.md",
+  "id": "gitpod-io",
+  "name": "Gitpod.io",
+  "url": "https://gitpod.io/workspaces",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/glit.md",
+  "id": "glit",
+  "name": "Glit",
+  "url": "https://github.com/shadawck/glit",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/gmapcatcher.md",
+  "id": "gmapcatcher",
+  "name": "gmapcatcher",
+  "url": "https://github.com/heldersepu/gmapcatcher",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/gnu-pg.md",
+  "id": "gnu-pg",
+  "name": "GNU PG",
+  "url": "https://www.gnupg.org/download/index.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/google-colaboratory.md",
+  "id": "google-colaboratory",
+  "name": "Google Colaboratory",
+  "url": "https://colab.research.google.com/notebooks/intro.ipynb",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/google-colaboratory-2.md",
+  "id": "google-colaboratory-2",
+  "name": "Google Colaboratory",
+  "url": "https://colab.research.google.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/google-developers-charts.md",
+  "id": "google-developers-charts",
+  "name": "Google Developers: Charts",
+  "url": "https://developers.google.com/chart",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/google-play-scraper.md",
+  "id": "google-play-scraper",
+  "name": "Google Play Scraper",
+  "url": "https://github.com/facundoolano/google-play-scraper",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/gpg-tools.md",
+  "id": "gpg-tools",
+  "name": "GPG Tools",
+  "url": "https://gpgtools.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/gptzero.md",
+  "id": "gptzero",
+  "name": "GPTZero",
+  "url": "https://gptzero.me/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

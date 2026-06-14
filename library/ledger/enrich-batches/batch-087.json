@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/nidirect-gov-uk-2.md",
+  "id": "nidirect-gov-uk-2",
+  "name": "nidirect.gov.uk",
+  "url": "https://www.nidirect.gov.uk/information-and-services/buying-your-home/land-and-property-registers",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nidirect-gov-uk-3.md",
+  "id": "nidirect-gov-uk-3",
+  "name": "nidirect.gov.uk",
+  "url": "https://www.communities-ni.gov.uk/articles/landlord-registration-scheme",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nigeria-sexual-offenders-registers.md",
+  "id": "nigeria-sexual-offenders-registers",
+  "name": "Nigeria Sexual Offenders Registers",
+  "url": "https://nsod.naptip.gov.ng/view_cases.php",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/niscc-org.md",
+  "id": "niscc-org",
+  "name": "niscc.org",
+  "url": "https://portal.niscc.org/Public-Facing-Register",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/njparcels-com.md",
+  "id": "njparcels-com",
+  "name": "NJParcels.com",
+  "url": "http://njparcels.com/property/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nmbi-ie.md",
+  "id": "nmbi-ie",
+  "name": "nmbi.ie",
+  "url": "https://my.nmbi.ie/search-the-register/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nmc-org-in.md",
+  "id": "nmc-org-in",
+  "name": "nmc.org.in",
+  "url": "https://www.nmc.org.in/information-desk/indian-medical-register/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nmc-uk-org.md",
+  "id": "nmc-uk-org",
+  "name": "nmc-uk.org",
+  "url": "https://www.nmc.org.uk/search-the-register/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/north-carolina.md",
+  "id": "north-carolina",
+  "name": "North Carolina",
+  "url": "https://www.ncdps.gov/dps-services/crime-data/offender-search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/north-carolina-resident-database.md",
+  "id": "north-carolina-resident-database",
+  "name": "North Carolina Resident Database",
+  "url": "https://northcarolinaresidentdatabase.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/northdata-com.md",
+  "id": "northdata-com",
+  "name": "northdata.com",
+  "url": "https://www.northdata.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ny-rent-regulated-building-search.md",
+  "id": "ny-rent-regulated-building-search",
+  "name": "NY Rent Regulated Building Search",
+  "url": "https://apps.hcr.ny.gov/BuildingSearch/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/nzbn-govt-nz.md",
+  "id": "nzbn-govt-nz",
+  "name": "nzbn.govt.nz",
+  "url": "https://www.nzbn.govt.nz/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/offender-tracking-information-system-otis.md",
+  "id": "offender-tracking-information-system-otis",
+  "name": "Offender Tracking Information System (OTIS)",
+  "url": "https://mdocweb.state.mi.us/OTIS2/otis2.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/offshorealert-com.md",
+  "id": "offshorealert-com",
+  "name": "offshorealert.com",
+  "url": "https://www.offshorealert.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/oh-marijuana-docs.md",
+  "id": "oh-marijuana-docs",
+  "name": "OH marijuana docs",
+  "url": "https://c0eru132.caspio.com/dp/95d310003d6c2e38182a48ef9bb2",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/monnett-social.md",
+  "id": "monnett-social",
+  "name": "monnett.social",
+  "url": "https://monnett.social/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mostly-harmless.md",
+  "id": "mostly-harmless",
+  "name": "Mostly Harmless",
+  "url": "http://kerrick.github.io/Mostly-Harmless/#features",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mundimago-com.md",
+  "id": "mundimago-com",
+  "name": "Mundimago.com",
+  "url": "http://www.mundimago.com/profile/search",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mustbepresent.md",
+  "id": "mustbepresent",
+  "name": "MustBePresent",
+  "url": "http://mustbepresent.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mymfb-com.md",
+  "id": "mymfb-com",
+  "name": "mymfb.com",
+  "url": "http://mymfb.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/myosint-training.md",
+  "id": "myosint-training",
+  "name": "MyOSINT.Training",
+  "url": "https://myosint.training/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/myosint-training-2.md",
+  "id": "myosint-training-2",
+  "name": "myosint.training",
+  "url": "https://www.myosint.training/courses/snapchat-essentials",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/other-social-networks/myspace.md",
+  "id": "myspace",
+  "name": "Myspace",
+  "url": "https://myspace.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/myspace-com.md",
+  "id": "myspace-com",
+  "name": "myspace.com",
+  "url": "http://www.myspace.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mytweetalerts.md",
+  "id": "mytweetalerts",
+  "name": "MyTweetAlerts",
+  "url": "https://www.mytweetalerts.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/naijapals-com.md",
+  "id": "naijapals-com",
+  "name": "naijapals.com",
+  "url": "http://www.naijapals.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/naijapals-com-2.md",
+  "id": "naijapals-com-2",
+  "name": "naijapals.com",
+  "url": "http://www.naijapals.com/?L=search.users",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/nairaland-com.md",
+  "id": "nairaland-com",
+  "name": "nairaland.com",
+  "url": "http://www.nairaland.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/nairaland-com-2.md",
+  "id": "nairaland-com-2",
+  "name": "nairaland.com",
+  "url": "https://www.nairaland.com/search?q=&search=Search",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/namemc.md",
+  "id": "namemc",
+  "name": "NameMC",
+  "url": "https://namemc.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/natcen-ac-uk.md",
+  "id": "natcen-ac-uk",
+  "name": "natcen.ac.uk",
+  "url": "https://natcen.ac.uk/ripples-across-pond",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/search-tools/dorkgenerator-pages-dev.md",
+  "id": "dorkgenerator-pages-dev",
+  "name": "dorkgenerator.pages.dev",
+  "url": "https://dorkgenerator.pages.dev/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-tools/dorksearch-com.md",
+  "id": "dorksearch-com",
+  "name": "dorksearch.com",
+  "url": "https://www.dorksearch.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-tools/dorksearch-netlify-app.md",
+  "id": "dorksearch-netlify-app",
+  "name": "dorksearch.netlify.app",
+  "url": "https://dorksearch.netlify.app/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/duckduckgo.md",
+  "id": "duckduckgo",
+  "name": "DuckDuckGo",
+  "url": "https://duckduckgo.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ecosia.md",
+  "id": "ecosia",
+  "name": "Ecosia",
+  "url": "https://www.ecosia.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ecosia-search-engine.md",
+  "id": "ecosia-search-engine",
+  "name": "Ecosia Search Engine",
+  "url": "https://www.ecosia.org/?c=en",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ecured-cuba.md",
+  "id": "ecured-cuba",
+  "name": "EcuRed (Cuba)",
+  "url": "http://www.ecured.cu/index.php/P%C3%A1gina_Principal",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/egerin-search-engine-kurdish.md",
+  "id": "egerin-search-engine-kurdish",
+  "name": "Egerin Search Engine (Kurdish)",
+  "url": "http://egerin.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ekoru.md",
+  "id": "ekoru",
+  "name": "Ekoru",
+  "url": "https://ekoru.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/elocalfinder-hybrid-meta-search.md",
+  "id": "elocalfinder-hybrid-meta-search",
+  "name": "eLocalFinder Hybrid Meta Search",
+  "url": "http://www.elocalfinder.com/HSearch.aspx",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/emporis-world-buildings.md",
+  "id": "emporis-world-buildings",
+  "name": "EMPORIS World Buildings",
+  "url": "http://www.emporis.com/buildings",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/encyclopedia-of-math.md",
+  "id": "encyclopedia-of-math",
+  "name": "Encyclopedia of Math",
+  "url": "https://www.encyclopediaofmath.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/engine-presearch-org.md",
+  "id": "engine-presearch-org",
+  "name": "Engine.presearch.org",
+  "url": "https://engine.presearch.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/entireweb-text-based-search-engine.md",
+  "id": "entireweb-text-based-search-engine",
+  "name": "Entireweb Text-based Search Engine",
+  "url": "http://www.entireweb.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/other-search/entitycube.md",
+  "id": "entitycube",
+  "name": "EntityCube",
+  "url": "https://entitycube.research.microsoft.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/meta-search/etools-ch.md",
+  "id": "etools-ch",
+  "name": "eTools.ch",
+  "url": "https://www.etools.ch/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

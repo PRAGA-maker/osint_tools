@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/socialgrep.md",
+  "id": "socialgrep",
+  "name": "SocialGrep",
+  "url": "https://www.socialgrep.com/search",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/spaces-down.md",
+  "id": "spaces-down",
+  "name": "Spaces Down",
+  "url": "https://spacesdown.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/speak-subtitles-to-youtube.md",
+  "id": "speak-subtitles-to-youtube",
+  "name": "Speak subtitles to YouTube",
+  "url": "https://chrome.google.com/webstore/detail/speak-subtitles-for-youtu/fjoiihoancoimepbgfcmopaciegpigpa/related",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/spotify-downloader.md",
+  "id": "spotify-downloader",
+  "name": "Spotify downloader",
+  "url": "https://github.com/spotDL/spotify-downloader",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/spotlight.md",
+  "id": "spotlight",
+  "name": "Spotlight",
+  "url": "http://spotlight.svezet.ru",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/star-history.md",
+  "id": "star-history",
+  "name": "Star History",
+  "url": "https://star-history.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/steam-osint.md",
+  "id": "steam-osint",
+  "name": "Steam-OSINT",
+  "url": "https://github.com/matiash26/steam-osint",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/steam-osint-tool.md",
+  "id": "steam-osint-tool",
+  "name": "Steam Osint Tool",
+  "url": "https://github.com/matiash26/Steam-OSINT-TOOL",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/steamid-uk.md",
+  "id": "steamid-uk",
+  "name": "SteamId.uk",
+  "url": "http://steamid.uk/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/story-saver.md",
+  "id": "story-saver",
+  "name": "Story Saver",
+  "url": "https://storysaver.net",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/stweet.md",
+  "id": "stweet",
+  "name": "Stweet",
+  "url": "https://github.com/markowanga/stweet",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/subreddit-stats-user-overlap.md",
+  "id": "subreddit-stats-user-overlap",
+  "name": "Subreddit Stats User-Overlap",
+  "url": "https://subredditstats.com/subreddit-user-overlaps/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/sully-gnome.md",
+  "id": "sully-gnome",
+  "name": "Sully Gnome",
+  "url": "https://sullygnome.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/target-log.md",
+  "id": "target-log",
+  "name": "Target Log",
+  "url": "https://targetolog.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/teddit.md",
+  "id": "teddit",
+  "name": "teddit",
+  "url": "https://teddit.net/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/tenai.md",
+  "id": "tenai",
+  "name": "Tenai",
+  "url": "https://github.com/novitae/Tenai",
+  "category": "social-networks",
+  "mp": "medium"
+ }
+]

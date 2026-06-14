@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/wikiindex.md",
+  "id": "wikiindex",
+  "name": "WikiIndex",
+  "url": "http://wikiindex.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikimatrix.md",
+  "id": "wikimatrix",
+  "name": "Wikimatrix",
+  "url": "http://www.wikimatrix.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikimedia-meta-wiki.md",
+  "id": "wikimedia-meta-wiki",
+  "name": "Wikimedia Meta-Wiki",
+  "url": "https://meta.wikimedia.org/wiki/Main_Page",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikipedia.md",
+  "id": "wikipedia",
+  "name": "Wikipedia",
+  "url": "https://en.wikipedia.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikiquote.md",
+  "id": "wikiquote",
+  "name": "Wikiquote",
+  "url": "https://en.wikiquote.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikirecipes.md",
+  "id": "wikirecipes",
+  "name": "Wikirecipes",
+  "url": "http://recipes.wikia.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikishire-united-kingdom.md",
+  "id": "wikishire-united-kingdom",
+  "name": "Wikishire (United Kingdom)",
+  "url": "http://wikishire.co.uk/wiki/Main_Page",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikisource.md",
+  "id": "wikisource",
+  "name": "Wikisource",
+  "url": "https://wikisource.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikispaces-search-engine.md",
+  "id": "wikispaces-search-engine",
+  "name": "Wikispaces Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=005797772976587943970:afbre9pr2ly",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikispecies.md",
+  "id": "wikispecies",
+  "name": "Wikispecies",
+  "url": "https://species.wikimedia.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikisummaries.md",
+  "id": "wikisummaries",
+  "name": "Wikisummaries",
+  "url": "http://www.wikisummaries.org/Main_Page",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikitravel.md",
+  "id": "wikitravel",
+  "name": "Wikitravel",
+  "url": "http://wikitravel.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wikivoyage.md",
+  "id": "wikivoyage",
+  "name": "Wikivoyage",
+  "url": "https://www.wikivoyage.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wipo.md",
+  "id": "wipo",
+  "name": "WIPO",
+  "url": "https://www3.wipo.int/branddb/en/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wiredmagazine-electronic-device-reviews.md",
+  "id": "wiredmagazine-electronic-device-reviews",
+  "name": "WiredMagazine Electronic Device Reviews",
+  "url": "http://www.wired.com/category/gear/reviews",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/woboq-code-browser.md",
+  "id": "woboq-code-browser",
+  "name": "Woboq Code Browser",
+  "url": "https://code.woboq.org",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

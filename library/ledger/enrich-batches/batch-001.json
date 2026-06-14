@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dating-classifieds/kleinanzeigen-de.md",
+  "id": "kleinanzeigen-de",
+  "name": "Kleinanzeigen.de",
+  "url": "https://www.kleinanzeigen.de/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/meetup.md",
+  "id": "meetup",
+  "name": "Meetup",
+  "url": "https://www.meetup.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/offerup.md",
+  "id": "offerup",
+  "name": "OfferUp",
+  "url": "https://offerup.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/plenty-of-fish-com.md",
+  "id": "plenty-of-fish-com",
+  "name": "Plenty Of Fish.com",
+  "url": "https://www.pof.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/quikr-india-classifieds.md",
+  "id": "quikr-india-classifieds",
+  "name": "Quikr - India Classifieds",
+  "url": "https://www.quikr.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/search-tempest.md",
+  "id": "search-tempest",
+  "name": "Search Tempest",
+  "url": "https://www.searchtempest.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/searchalljunk.md",
+  "id": "searchalljunk",
+  "name": "SearchAllJunk",
+  "url": "https://www.searchalljunk.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/spark-com.md",
+  "id": "spark-com",
+  "name": "Spark.com",
+  "url": "https://spark.com",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/tantan.md",
+  "id": "tantan",
+  "name": "Tantan",
+  "url": "https://int.tantanapp.com",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/tinder.md",
+  "id": "tinder",
+  "name": "Tinder",
+  "url": "https://tinder.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/dating-classifieds/totalcraigsearch.md",
+  "id": "totalcraigsearch",
+  "name": "TotalCraigSearch",
+  "url": "https://www.totalcraigsearch.com/",
+  "category": "dating-classifieds",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/documents-metadata/checking-mi-account.md",
+  "id": "checking-mi-account",
+  "name": "Checking MI account",
+  "url": "https://www.checkmi.info/",
+  "category": "documents-metadata",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/documents-metadata/contex-condoms-serial-number-lookup.md",
+  "id": "contex-condoms-serial-number-lookup",
+  "name": "Contex condoms serial number lookup",
+  "url": "https://contex.com/serial-number-lookup/",
+  "category": "documents-metadata",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/documents-metadata/inflact-downloader.md",
+  "id": "inflact-downloader",
+  "name": "Inflact Downloader",
+  "url": "https://inflact.com/downloader/",
+  "category": "documents-metadata",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/documents-metadata/quackr-io.md",
+  "id": "quackr-io",
+  "name": "quackr.io",
+  "url": "https://quackr.io",
+  "category": "documents-metadata",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/documents-metadata/sndeepinfo.md",
+  "id": "sndeepinfo",
+  "name": "SNDeepInfo",
+  "url": "https://sndeep.info/en",
+  "category": "documents-metadata",
+  "mp": "high"
+ }
+]

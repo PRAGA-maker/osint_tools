@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/emporis.md",
+  "id": "emporis",
+  "name": "EMPORIS",
+  "url": "https://www.emporis.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/en-52wmb-com.md",
+  "id": "en-52wmb-com",
+  "name": "en.52wmb.com",
+  "url": "https://en.52wmb.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/epstein-exposed.md",
+  "id": "epstein-exposed",
+  "name": "Epstein Exposed",
+  "url": "https://epsteinexposed.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/europages.md",
+  "id": "europages",
+  "name": "Europages",
+  "url": "https://www.europages.co.uk:443/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/european-business-register.md",
+  "id": "european-business-register",
+  "name": "European Business Register",
+  "url": "http://www.ebr.org",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/us-political-records/every-politician.md",
+  "id": "every-politician",
+  "name": "Every Politician",
+  "url": "https://everypolitician.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/explainpaper.md",
+  "id": "explainpaper",
+  "name": "ExplainPaper",
+  "url": "https://www.explainpaper.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/explore-canada-s-real-estate-market.md",
+  "id": "explore-canada-s-real-estate-market",
+  "name": "Explore Canada's Real Estate Market",
+  "url": "https://www.remax.ca/find-real-estate",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/ezilon.md",
+  "id": "ezilon",
+  "name": "Ezilon",
+  "url": "http://www.ezilon.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/factiva.md",
+  "id": "factiva",
+  "name": "Factiva",
+  "url": "https://global.factiva.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/familywatchdog-sex-offender-search.md",
+  "id": "familywatchdog-sex-offender-search",
+  "name": "Familywatchdog - Sex Offender Search",
+  "url": "https://www.familywatchdog.us/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/fastpeoplesearch-com-reverse-address.md",
+  "id": "fastpeoplesearch-com-reverse-address",
+  "name": "FastPeopleSearch.com - Reverse Address",
+  "url": "https://www.fastpeoplesearch.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/fatal-encounters.md",
+  "id": "fatal-encounters",
+  "name": "Fatal Encounters",
+  "url": "https://fatalencounters.org/people-search/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/federal-inmate-locator.md",
+  "id": "federal-inmate-locator",
+  "name": "Federal Inmate Locator",
+  "url": "https://www.bop.gov/inmateloc/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/death-records/find-a-grave.md",
+  "id": "find-a-grave",
+  "name": "Find A Grave",
+  "url": "https://www.findagrave.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/find-a-teacher.md",
+  "id": "find-a-teacher",
+  "name": "Find a Teacher",
+  "url": "https://www.oct.ca/Home/FindATeacher",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

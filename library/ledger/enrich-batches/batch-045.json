@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/messaging/shtrafkzbot.md",
+  "id": "shtrafkzbot",
+  "name": "ShtrafKZBot",
+  "url": "https://t.me/ShtrafKZBot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/signal-org.md",
+  "id": "signal-org",
+  "name": "signal.org",
+  "url": "https://signal.org/bigbrother/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/slack/slack-intelbot.md",
+  "id": "slack-intelbot",
+  "name": "slack-intelbot",
+  "url": "https://github.com/pun1sh3r/slack-intelbot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/slack/slack-web-scraper.md",
+  "id": "slack-web-scraper",
+  "name": "slack-web-scraper",
+  "url": "https://github.com/iulspop/slack-web-scraper",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/slack/slackpirate.md",
+  "id": "slackpirate",
+  "name": "SlackPirate",
+  "url": "https://github.com/emtunc/SlackPirate",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/sms-activate.md",
+  "id": "sms-activate",
+  "name": "SMS Activate",
+  "url": "https://t.me/PrivatePhoneBot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/wechat-line/sogou-wechat-search.md",
+  "id": "sogou-wechat-search",
+  "name": "Sogou WeChat Search",
+  "url": "https://weixin.sogou.com/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/spoofwave-com.md",
+  "id": "spoofwave-com",
+  "name": "spoofwave.com",
+  "url": "https://www.spoofwave.com/whatsapp",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/spyggbot.md",
+  "id": "spyggbot",
+  "name": "SpyGGbot",
+  "url": "https://telegram.me/SpyGGbot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/support-discord-com.md",
+  "id": "support-discord-com",
+  "name": "support.discord.com",
+  "url": "https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/support-discord-com-2.md",
+  "id": "support-discord-com-2",
+  "name": "support.discord.com",
+  "url": "https://support.discord.com/hc/en-us/community/topics",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/surftg-bot.md",
+  "id": "surftg-bot",
+  "name": "Surftg_bot",
+  "url": "https://t.me/surftg_bot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/telegram/telegago.md",
+  "id": "telegago",
+  "name": "Telegago",
+  "url": "https://tools.osintnewsletter.com/osint-tools/telegago-telegram",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/telegago-2.md",
+  "id": "telegago-2",
+  "name": "Telegago",
+  "url": "https://cse.google.com/cse?q=+&cx=006368593537057042503:efxu7xprihg#gsc.tab=0&gsc.q=%20&gsc.page=1",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/telegram-channel-joiner.md",
+  "id": "telegram-channel-joiner",
+  "name": "Telegram Channel Joiner",
+  "url": "https://github.com/spmedia/Telegram-Channel-Joiner",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/telegram-channels-scraper-telegraphite.md",
+  "id": "telegram-channels-scraper-telegraphite",
+  "name": "Telegram channels scraper TeleGraphite",
+  "url": "https://github.com/hamodywe/telegram-scraper-TeleGraphite",
+  "category": "messaging",
+  "mp": "high"
+ }
+]

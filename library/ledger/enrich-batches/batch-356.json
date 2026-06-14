@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/restaurant-association-of-new-zealand.md",
+  "id": "restaurant-association-of-new-zealand",
+  "name": "Restaurant Association of New Zealand",
+  "url": "http://www.restaurantnz.co.nz",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/restaurant-report-website-united-states.md",
+  "id": "restaurant-report-website-united-states",
+  "name": "Restaurant Report Website (United States)",
+  "url": "http://www.restaurantreport.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/restaurants-canada-website-canada.md",
+  "id": "restaurants-canada-website-canada",
+  "name": "Restaurants Canada Website (Canada)",
+  "url": "https://restaurantscanada.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/savefrom-net.md",
+  "id": "savefrom-net",
+  "name": "Savefrom.net",
+  "url": "http://en.savefrom.net",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/savevideo-me.md",
+  "id": "savevideo-me",
+  "name": "Savevideo.me",
+  "url": "http://savevideo.me",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/scoop-it.md",
+  "id": "scoop-it",
+  "name": "Scoop.it",
+  "url": "http://www.scoop.it",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/screencast-o-matic.md",
+  "id": "screencast-o-matic",
+  "name": "Screencast-o-matic",
+  "url": "https://screencast-o-matic.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/screenshot-guru.md",
+  "id": "screenshot-guru",
+  "name": "Screenshot Guru",
+  "url": "https://screenshot.guru",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/search-the-current-site.md",
+  "id": "search-the-current-site",
+  "name": "Search the current site",
+  "url": "https://chrome.google.com/webstore/detail/search-the-current-site/jliolpcnkmolaaecncdfeofombdekjcp",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/searchfiles-de.md",
+  "id": "searchfiles-de",
+  "name": "SearchFiles.de",
+  "url": "https://searchfiles.de/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/shared-count.md",
+  "id": "shared-count",
+  "name": "Shared Count",
+  "url": "http://www.sharedcount.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/shhgit.md",
+  "id": "shhgit",
+  "name": "Shhgit",
+  "url": "https://github.com/eth0izzle/shhgit",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/siftrss-com.md",
+  "id": "siftrss-com",
+  "name": "Siftrss.com",
+  "url": "https://siftrss.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/site-dorks.md",
+  "id": "site-dorks",
+  "name": "Site Dorks",
+  "url": "https://github.com/Zarcolio/sitedorks",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/slide-share.md",
+  "id": "slide-share",
+  "name": "Slide Share",
+  "url": "https://www.slideshare.net/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/slideshare.md",
+  "id": "slideshare",
+  "name": "SlideShare",
+  "url": "http://www.slideshare.net",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

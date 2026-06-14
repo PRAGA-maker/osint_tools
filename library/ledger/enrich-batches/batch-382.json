@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/statscrop.md",
+  "id": "statscrop",
+  "name": "StatsCrop",
+  "url": "https://www.statscrop.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/cloud-configuration-analysis/steampipe.md",
+  "id": "steampipe",
+  "name": "Steampipe",
+  "url": "https://github.com/turbot/steampipe",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/azure-gcp-discovery/stormspotter.md",
+  "id": "stormspotter",
+  "name": "Stormspotter",
+  "url": "https://github.com/Azure/Stormspotter",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomain-finder.md",
+  "id": "subdomain-finder",
+  "name": "Subdomain Finder",
+  "url": "https://osint.sh/subdomain/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomainradar-io.md",
+  "id": "subdomainradar-io",
+  "name": "SubDomainRadar.io",
+  "url": "https://subdomainradar.io",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/aws-enumeration/subfinder.md",
+  "id": "subfinder",
+  "name": "Subfinder",
+  "url": "https://github.com/projectdiscovery/subfinder",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/sublist3r.md",
+  "id": "sublist3r",
+  "name": "Sublist3r",
+  "url": "https://github.com/aboul3la/Sublist3r",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/saas-footprinting/sublist3r-2.md",
+  "id": "sublist3r-2",
+  "name": "Sublist3r",
+  "url": "https://github.com/aboul3la/Sublist3r",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/sucuri-sitecheck.md",
+  "id": "sucuri-sitecheck",
+  "name": "Sucuri SiteCheck",
+  "url": "https://sitecheck.sucuri.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/switch-internet-domains-whois-ch.md",
+  "id": "switch-internet-domains-whois-ch",
+  "name": "SWITCH Internet Domains Whois (.ch)",
+  "url": "https://www.nic.ch/whois/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/synapsint.md",
+  "id": "synapsint",
+  "name": "SynapsInt",
+  "url": "https://synapsint.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/neighbor-domains/tcp-ip-utils-domain-neighbors.md",
+  "id": "tcp-ip-utils-domain-neighbors",
+  "name": "TCP/IP Utils - Domain Neighbors",
+  "url": "https://dnslytics.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipv4/team-cymru-ip-to-asn.md",
+  "id": "team-cymru-ip-to-asn",
+  "name": "Team Cymru IP to ASN",
+  "url": "https://asn.cymru.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/technology-lookup.md",
+  "id": "technology-lookup",
+  "name": "Technology Lookup",
+  "url": "https://osint.sh/stack/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/terrorist-financing/terrorist-finance-tracking-program.md",
+  "id": "terrorist-finance-tracking-program",
+  "name": "Terrorist Finance Tracking Program",
+  "url": "https://home.treasury.gov/policy-issues/terrorism-and-illicit-finance/terrorist-finance-tracking-program-tftp",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/thale-s-cyberthreat-map.md",
+  "id": "thale-s-cyberthreat-map",
+  "name": "Thale's Cyberthreat Map",
+  "url": "https://cds.thalesgroup.com/en/cyberthreat/hitmap",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

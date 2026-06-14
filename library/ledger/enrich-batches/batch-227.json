@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/court-criminal-records/nationwide-county-court-records.md",
+  "id": "nationwide-county-court-records",
+  "name": "Nationwide County Court Records",
+  "url": "https://www.publicrecordcenter.com/onlinecourtrecords.htm",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/government-records/nc-salary-db.md",
+  "id": "nc-salary-db",
+  "name": "NC Salary DB",
+  "url": "https://www.ncosc.gov/public-information/state-employee-salary-database",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/nc-state-employee-overtime-2018-search-and-report.md",
+  "id": "nc-state-employee-overtime-2018-search-and-report",
+  "name": "NC State Employee Overtime 2018 Search and Report",
+  "url": "https://c0eib112.caspio.com/dp/6ee01000325ae85bbfe24ade9bea",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/nc-state-government-salaries-search-and-report.md",
+  "id": "nc-state-government-salaries-search-and-report",
+  "name": "NC State Government Salaries Search and Report",
+  "url": "https://b2.caspio.com/dp/96073000345d59bc5b1744109afe",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/property-records/neighbor-report.md",
+  "id": "neighbor-report",
+  "name": "Neighbor Report",
+  "url": "https://neighbor.report/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/financial-tax-resources/netr-online.md",
+  "id": "netr-online",
+  "name": "NETR Online",
+  "url": "https://publicrecords.netronline.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/nj-police-and-fire-fy-2011-pension-contribution.md",
+  "id": "nj-police-and-fire-fy-2011-pension-contribution",
+  "name": "NJ Police and Fire FY 2011 Pension contribution",
+  "url": "https://b2.caspio.com/dp.asp?AppKey=c43d100007eedbb0f0e740188660",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/nonprofit-explorer.md",
+  "id": "nonprofit-explorer",
+  "name": "Nonprofit Explorer",
+  "url": "https://projects.propublica.org/nonprofits/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/nursing-home-inspect.md",
+  "id": "nursing-home-inspect",
+  "name": "Nursing Home Inspect",
+  "url": "https://projects.propublica.org/nursing-homes/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/nypd-misconduct-complaint-database.md",
+  "id": "nypd-misconduct-complaint-database",
+  "name": "NYPD Misconduct Complaint Database",
+  "url": "https://nyclu.shinyapps.io/CCRB_combo/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/nypd-officer-profile.md",
+  "id": "nypd-officer-profile",
+  "name": "NYPD Officer Profile",
+  "url": "https://nypdonline.org/link/2",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/obsidian-cli.md",
+  "id": "obsidian-cli",
+  "name": "OBSIDIAN CLI",
+  "url": "https://github.com/Yakitrak/obsidian-cli",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/oec-world.md",
+  "id": "oec-world",
+  "name": "Oec World",
+  "url": "https://oec.world/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/oh-court-costs.md",
+  "id": "oh-court-costs",
+  "name": "OH Court Costs",
+  "url": "https://b2.caspio.com/dp/95d31000da9841d5980644c98761",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/onondaga-county-home-sales.md",
+  "id": "onondaga-county-home-sales",
+  "name": "Onondaga County Home Sales",
+  "url": "https://b2.caspio.com/dp.asp?AppKey=18321000d7j6h9j6c1i4e8f0i5a9",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/ontario-provincial-police.md",
+  "id": "ontario-provincial-police",
+  "name": "Ontario Provincial Police",
+  "url": "https://bloopbase.keybase.pub/ACAB/OPP/index.html",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

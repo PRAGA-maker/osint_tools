@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/employee-profiles-and-resumes/cvgadget.md",
+  "id": "cvgadget",
+  "name": "CVGadget",
+  "url": "https://cvgadget.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/darpan-ngo-search.md",
+  "id": "darpan-ngo-search",
+  "name": "Darpan NGO Search",
+  "url": "https://c7ect427.caspio.com/dp/c45e900062d54a7f263942979465",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/data-com-connect.md",
+  "id": "data-com-connect",
+  "name": "Data.com Connect",
+  "url": "https://connect.data.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/data-occrp-org.md",
+  "id": "data-occrp-org",
+  "name": "data.occrp.org",
+  "url": "https://data.occrp.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/dataset-domainsproject-org.md",
+  "id": "dataset-domainsproject-org",
+  "name": "dataset.domainsproject.org",
+  "url": "https://dataset.domainsproject.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/dauphin-county-pa-2017-compensation.md",
+  "id": "dauphin-county-pa-2017-compensation",
+  "name": "Dauphin County PA 2017 Compensation",
+  "url": "https://b2.caspio.com/dp/0a921000a2f20d556db84221a92c",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/death-records/death-check.md",
+  "id": "death-check",
+  "name": "Death Check",
+  "url": "https://www.deathindexes.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/diagramify.md",
+  "id": "diagramify",
+  "name": "DIAGRAMIFY",
+  "url": "https://diagramify.agiliq.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/dnc-email-database.md",
+  "id": "dnc-email-database",
+  "name": "DNC email database",
+  "url": "https://wikileaks.org//dnc-emails/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/docket-alarm.md",
+  "id": "docket-alarm",
+  "name": "Docket Alarm",
+  "url": "https://docketalarm.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/dutchess-and-ulster-bridge-safety-ratings-2015.md",
+  "id": "dutchess-and-ulster-bridge-safety-ratings-2015",
+  "name": "Dutchess and Ulster bridge safety ratings 2015",
+  "url": "https://b2.caspio.com/dp.asp?AppKey=996f1000109b0cd3b24b408daf60",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/easystreet.md",
+  "id": "easystreet",
+  "name": "EasyStreet",
+  "url": "https://streeteasy.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/edgar-u-s-securities-and-exchange-commission-filings.md",
+  "id": "edgar-u-s-securities-and-exchange-commission-filings",
+  "name": "EDGAR U.S. Securities and Exchange Commission Filings",
+  "url": "http://www.edgar-online.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/eff-atlas-of-surveillance.md",
+  "id": "eff-atlas-of-surveillance",
+  "name": "EFF Atlas of Surveillance",
+  "url": "https://atlasofsurveillance.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/elicit.md",
+  "id": "elicit",
+  "name": "Elicit",
+  "url": "https://elicit.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/employee-contact-directory-search-novascotia-ca.md",
+  "id": "employee-contact-directory-search-novascotia-ca",
+  "name": "Employee Contact Directory Search \\| novascotia.ca",
+  "url": "https://novascotia.ca/psc/geds/",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/openaerialmap.md",
+  "id": "openaerialmap",
+  "name": "OpenAerialMap",
+  "url": "https://openaerialmap.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/openseamap.md",
+  "id": "openseamap",
+  "name": "OpenSeaMap",
+  "url": "https://map.openseamap.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/orbtrack.md",
+  "id": "orbtrack",
+  "name": "OrbTrack",
+  "url": "https://www.orbtrack.org",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/peakvisor.md",
+  "id": "peakvisor",
+  "name": "PeakVisor",
+  "url": "https://peakvisor.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/planet-labs.md",
+  "id": "planet-labs",
+  "name": "Planet Labs",
+  "url": "https://www.planet.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/police-records-access-project.md",
+  "id": "police-records-access-project",
+  "name": "Police Records Access Project",
+  "url": "https://clean.calmatters.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/qlock-world-clock.md",
+  "id": "qlock-world-clock",
+  "name": "Qlock World Clock",
+  "url": "http://www.qlock.com/time/gmaps.php?map=1&city=0",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/quick-geolocation-search.md",
+  "id": "quick-geolocation-search",
+  "name": "Quick geolocation search",
+  "url": "https://cybdetective.com/quickgeolocationsearch.html",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/radar-interference-tracker-rit.md",
+  "id": "radar-interference-tracker-rit",
+  "name": "Radar Interference Tracker (RIT)",
+  "url": "https://ollielballinger.users.earthengine.app/view/bellingcat-radar-interference-tracker#lon=49.9507;lat=26.6056;zoom=4;",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/rammb-slider.md",
+  "id": "rammb-slider",
+  "name": "RAMMB SLIDER",
+  "url": "https://rammb-slider.cira.colostate.edu/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/resource-watch.md",
+  "id": "resource-watch",
+  "name": "Resource Watch",
+  "url": "https://resourcewatch.org/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/river-runner-global.md",
+  "id": "river-runner-global",
+  "name": "River Runner Global",
+  "url": "https://river-runner-global.samlearner.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/species-plus.md",
+  "id": "species-plus",
+  "name": "Species+",
+  "url": "https://www.speciesplus.net/species",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/strava.md",
+  "id": "strava",
+  "name": "Strava",
+  "url": "https://www.strava.com",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/tencent-maps.md",
+  "id": "tencent-maps",
+  "name": "Tencent Maps",
+  "url": "http://map.qq.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/the-european-space-agency-esa-earth-online.md",
+  "id": "the-european-space-agency-esa-earth-online",
+  "name": "The European Space Agency (ESA) - Earth Online",
+  "url": "https://earth.esa.int/eogateway/tools",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ }
+]

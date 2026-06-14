@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/bevigil-2.md",
+  "id": "bevigil-2",
+  "name": "BeVigil",
+  "url": "https://bevigil.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bgp-tools-2.md",
+  "id": "bgp-tools-2",
+  "name": "BGP.tools",
+  "url": "https://bgp.tools",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bibleserver.md",
+  "id": "bibleserver",
+  "name": "Bibleserver",
+  "url": "http://www.bibleserver.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/biblio.md",
+  "id": "biblio",
+  "name": "Biblio",
+  "url": "http://www.biblio.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/bielefeld-academic-search-engine.md",
+  "id": "bielefeld-academic-search-engine",
+  "name": "Bielefeld Academic Search Engine",
+  "url": "https://www.base-search.net/Search/Advanced",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/bing.md",
+  "id": "bing",
+  "name": "Bing",
+  "url": "https://www.bing.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bing-advanced-search-options.md",
+  "id": "bing-advanced-search-options",
+  "name": "Bing Advanced Search Options",
+  "url": "http://help.bing.microsoft.com/#apex/18/en-us/10002/0",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/binparcel-com.md",
+  "id": "binparcel-com",
+  "name": "Binparcel.com",
+  "url": "https://binparcel.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bizjournals-business-news-search.md",
+  "id": "bizjournals-business-news-search",
+  "name": "Bizjournals Business News Search",
+  "url": "http://www.bizjournals.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/biznar.md",
+  "id": "biznar",
+  "name": "Biznar",
+  "url": "http://biznar.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bizrate-shopping-search-engine.md",
+  "id": "bizrate-shopping-search-engine",
+  "name": "Bizrate Shopping Search Engine",
+  "url": "http://www.bizrate.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/blogpond-blogging.md",
+  "id": "blogpond-blogging",
+  "name": "Blogpond Blogging",
+  "url": "http://blogpond.com.au",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/blue-search.md",
+  "id": "blue-search",
+  "name": "Blue Search",
+  "url": "https://blue-search.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/blurtit.md",
+  "id": "blurtit",
+  "name": "Blurtit",
+  "url": "http://www.blurtit.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bookfinder-search-engine.md",
+  "id": "bookfinder-search-engine",
+  "name": "Bookfinder Search Engine",
+  "url": "http://www.bookfinder.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bookmarks.md",
+  "id": "bookmarks",
+  "name": "Bookmarks",
+  "url": "https://one-plus.github.io/Bookmarks",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/crime-brasil.md",
+  "id": "crime-brasil",
+  "name": "Crime Brasil",
+  "url": "https://crimebrasil.com.br",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/d-and-b-company-search.md",
+  "id": "d-and-b-company-search",
+  "name": "D&B Company Search",
+  "url": "https://www.dnb.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/data-ddosecrets-search.md",
+  "id": "data-ddosecrets-search",
+  "name": "Data \\| DDoSecrets Search",
+  "url": "https://search.ddosecrets.com/data/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/data-gov.md",
+  "id": "data-gov",
+  "name": "Data.gov",
+  "url": "https://www.data.gov/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/data-gov-uk.md",
+  "id": "data-gov-uk",
+  "name": "Data.gov.uk",
+  "url": "https://data.gov.uk",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/data-sets-oh-shint.md",
+  "id": "data-sets-oh-shint",
+  "name": "Data Sets - OH SHINT",
+  "url": "https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/data-sets",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/data-world.md",
+  "id": "data-world",
+  "name": "data.world",
+  "url": "https://data.world/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/databasd.md",
+  "id": "databasd",
+  "name": "Databasd",
+  "url": "https://databasd.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/database-of-suspected-terrorists.md",
+  "id": "database-of-suspected-terrorists",
+  "name": "Database of suspected terrorists",
+  "url": "https://www.nsatt.org/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/datasetlist-com.md",
+  "id": "datasetlist-com",
+  "name": "Datasetlist.com",
+  "url": "https://www.datasetlist.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/datasetsearch-research-google-com.md",
+  "id": "datasetsearch-research-google-com",
+  "name": "Datasetsearch.research.google.com",
+  "url": "https://datasetsearch.research.google.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/dbpedia.md",
+  "id": "dbpedia",
+  "name": "DBPedia",
+  "url": "http://wiki.dbpedia.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sanctions-screening/dilisense.md",
+  "id": "dilisense",
+  "name": "dilisense",
+  "url": "https://dilisense.com/en",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/dsc-data-science-search-engine.md",
+  "id": "dsc-data-science-search-engine",
+  "name": "DSC Data Science Search Engine",
+  "url": "https://www.datasciencecentral.com/page/search",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sanctions-screening/eu-sanctions-tool.md",
+  "id": "eu-sanctions-tool",
+  "name": "EU Sanctions Tool",
+  "url": "https://sanctions-tool.ec.europa.eu",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/european-union-open-data-portal.md",
+  "id": "european-union-open-data-portal",
+  "name": "European Union Open Data Portal",
+  "url": "http://open-data.europa.eu/en/data",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

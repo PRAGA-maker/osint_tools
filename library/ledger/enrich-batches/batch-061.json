@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/phone/inmobprefix.md",
+  "id": "inmobprefix",
+  "name": "InMobPrefix",
+  "url": "https://github.com/hstsethi/in-mob-prefix",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/inteltechniques-telephone.md",
+  "id": "inteltechniques-telephone",
+  "name": "IntelTechniques Telephone",
+  "url": "https://inteltechniques.com/tools/Telephone.html",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/ipqualityscore-com-2.md",
+  "id": "ipqualityscore-com-2",
+  "name": "ipqualityscore.com",
+  "url": "https://www.ipqualityscore.com/phone-number-validator",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/jtdirectory-com.md",
+  "id": "jtdirectory-com",
+  "name": "jtdirectory.com",
+  "url": "http://www.jtdirectory.com/?mode=people",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/makelia-public-records-repository.md",
+  "id": "makelia-public-records-repository",
+  "name": "Makelia - Public Records Repository",
+  "url": "https://makelia.com",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/mastdata-com.md",
+  "id": "mastdata-com",
+  "name": "mastdata.com",
+  "url": "https://www.mastdata.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/mytrashmobile-com.md",
+  "id": "mytrashmobile-com",
+  "name": "mytrashmobile.com",
+  "url": "https://www.mytrashmobile.com/numbers",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/nanpa-area-code-map.md",
+  "id": "nanpa-area-code-map",
+  "name": "NANPA : Area Code Map",
+  "url": "https://www.nationalnanpa.com/area_code_maps/ac_map_static.html",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/nanpa-area-code-query.md",
+  "id": "nanpa-area-code-query",
+  "name": "NANPA Area Code Query",
+  "url": "https://www.nationalnanpa.com/enas/npa_query.do",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/next-caller.md",
+  "id": "next-caller",
+  "name": "Next Caller",
+  "url": "https://nextcaller.com",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/no-nonsense-intel.md",
+  "id": "no-nonsense-intel",
+  "name": "No Nonsense Intel",
+  "url": "https://www.no-nonsense-intel.com/phone-variant-search",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/international/numbering-plans.md",
+  "id": "numbering-plans",
+  "name": "Numbering Plans",
+  "url": "https://www.numberingplans.com/?page=analysis&sub=phonenr",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/numberingplans-com.md",
+  "id": "numberingplans-com",
+  "name": "numberingplans.com",
+  "url": "https://www.numberingplans.com/?page=home",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/international/numberway.md",
+  "id": "numberway",
+  "name": "Numberway",
+  "url": "https://www.numberway.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/numspy.md",
+  "id": "numspy",
+  "name": "Numspy",
+  "url": "https://bhattsameer.github.io/numspy/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/numspy-api.md",
+  "id": "numspy-api",
+  "name": "Numspy-Api",
+  "url": "https://numspy.pythonanywhere.com/",
+  "category": "phone",
+  "mp": "high"
+ }
+]

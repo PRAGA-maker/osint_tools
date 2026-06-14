@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/httpie-io.md",
+  "id": "httpie-io",
+  "name": "HTTPIE.IO",
+  "url": "https://httpie.io/run",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/https-everywhere.md",
+  "id": "https-everywhere",
+  "name": "HTTPs Everywhere",
+  "url": "https://www.eff.org/https-everywhere/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/httrack.md",
+  "id": "httrack",
+  "name": "HTTrack",
+  "url": "http://www.httrack.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/hugging-face-ai-detector.md",
+  "id": "hugging-face-ai-detector",
+  "name": "Hugging Face AI Detector",
+  "url": "https://huggingface.co/spaces/umm-maybe/AI_Detector",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/hunchly.md",
+  "id": "hunchly",
+  "name": "Hunchly",
+  "url": "https://www.hunch.ly/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/hunt-osint-framework.md",
+  "id": "hunt-osint-framework",
+  "name": "Hunt Osint Framework",
+  "url": "https://nitinpandey.in/ihunt/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/i2p.md",
+  "id": "i2p",
+  "name": "I2P",
+  "url": "https://geti2p.net",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/ifttt.md",
+  "id": "ifttt",
+  "name": "IFTTT",
+  "url": "https://ifttt.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/xor/python/iheartxor-py.md",
+  "id": "iheartxor-py",
+  "name": "iheartxor.py",
+  "url": "https://hooked-on-mnemonics.blogspot.com/p/iheartxor.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/illuminarty.md",
+  "id": "illuminarty",
+  "name": "Illuminarty",
+  "url": "https://app.illuminarty.ai/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/infogr-am.md",
+  "id": "infogr-am",
+  "name": "Infogr.am",
+  "url": "https://infogr.am",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/infooze.md",
+  "id": "infooze",
+  "name": "Infooze",
+  "url": "https://github.com/devXprite/infoooze",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/infosec-reference.md",
+  "id": "infosec-reference",
+  "name": "infosec reference",
+  "url": "https://github.com/rmusser01/Infosec_Reference",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/inkscape.md",
+  "id": "inkscape",
+  "name": "Inkscape",
+  "url": "https://inkscape.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/inquisitor.md",
+  "id": "inquisitor",
+  "name": "Inquisitor",
+  "url": "https://github.com/penafieljlm/inquisitor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/intelhub.md",
+  "id": "intelhub",
+  "name": "IntelHub",
+  "url": "https://github.com/tomsec8/IntelHub",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

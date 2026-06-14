@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/transportation/military-ship-tracker.md",
+  "id": "military-ship-tracker",
+  "name": "Military Ship Tracker",
+  "url": "https://www.marinevesseltraffic.com/2013/02/military-ship-track.html",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/my-ship-tracking.md",
+  "id": "my-ship-tracking",
+  "name": "My Ship Tracking",
+  "url": "https://www.myshiptracking.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/nato-int.md",
+  "id": "nato-int",
+  "name": "NATO.int",
+  "url": "https://www.nato.int/nato-on-the-map/#lat=54.6871555&lon=25.2796514&zoom=2&layer-1",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/openrailwaymap-3.md",
+  "id": "openrailwaymap-3",
+  "name": "OpenRailwayMap",
+  "url": "https://wiki.openstreetmap.org/wiki/OpenRailwayMap",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/opensky-network.md",
+  "id": "opensky-network",
+  "name": "OpenSky-Network",
+  "url": "http://opensky-network.org/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/osint-on-the-ocean.md",
+  "id": "osint-on-the-ocean",
+  "name": "OSINT on the Ocean",
+  "url": "https://wondersmithrae.medium.com/osint-on-the-ocean-maritime-intelligence-gathering-techniques-2ee39e554fe1",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/panjiva-cargo.md",
+  "id": "panjiva-cargo",
+  "name": "Panjiva (Cargo)",
+  "url": "https://panjiva.com/search",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/passenger-airlines-wiki.md",
+  "id": "passenger-airlines-wiki",
+  "name": "Passenger Airlines Wiki",
+  "url": "https://en.wikipedia.org/wiki/list_of_passenger_airlines",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/plane-finder.md",
+  "id": "plane-finder",
+  "name": "Plane Finder",
+  "url": "https://planefinder.net",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/planefinder.md",
+  "id": "planefinder",
+  "name": "PlaneFinder",
+  "url": "http://planefinder.net/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/planefinder-army-live-flight-tracker.md",
+  "id": "planefinder-army-live-flight-tracker",
+  "name": "Planefinder Army Live Flight Tracker",
+  "url": "https://planefinder.net/flight/ARMY",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/ports.md",
+  "id": "ports",
+  "name": "Ports",
+  "url": "http://ports.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/ports-com.md",
+  "id": "ports-com",
+  "name": "Ports.com",
+  "url": "https://ports.com/sea-route/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/radarbox24-pro.md",
+  "id": "radarbox24-pro",
+  "name": "radarbox24-pro",
+  "url": "https://www.radarbox24.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/rasp-yandex-ru-map-trains.md",
+  "id": "rasp-yandex-ru-map-trains",
+  "name": "Rasp.yandex.ru/map/trains",
+  "url": "https://rasp.yandex.ru/map/trains",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/ride-with-gps.md",
+  "id": "ride-with-gps",
+  "name": "Ride With GPS",
+  "url": "https://ridewithgps.com/users",
+  "category": "transportation",
+  "mp": "low"
+ }
+]

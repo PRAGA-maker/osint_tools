@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/h8mail.md",
+  "id": "h8mail",
+  "name": "h8mail",
+  "url": "https://github.com/khast3x/h8mail",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/breach-data/have-i-been-pwned.md",
+  "id": "have-i-been-pwned",
+  "name": "Have I been pwned?",
+  "url": "https://haveibeenpwned.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/help-x-com.md",
+  "id": "help-x-com",
+  "name": "help.x.com",
+  "url": "https://help.x.com/en/safety-and-security/x-account-compromised",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/help-yahoo-com.md",
+  "id": "help-yahoo-com",
+  "name": "help.yahoo.com",
+  "url": "http://help.yahoo.com/l/uk/yahoo/edit/general.html",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/here-6.md",
+  "id": "here-6",
+  "name": "Here",
+  "url": "https://www.comparitech.com/blog/vpn-privacy/how-to-encrypt-email/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/heroic-now.md",
+  "id": "heroic-now",
+  "name": "HEROIC.NOW",
+  "url": "https://heroic.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/hib-ransomed.md",
+  "id": "hib-ransomed",
+  "name": "HIB Ransomed",
+  "url": "https://haveibeenransom.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/holehe.md",
+  "id": "holehe",
+  "name": "Holehe",
+  "url": "https://github.com/megadose/holehe",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/breach-data/hudson-rock.md",
+  "id": "hudson-rock",
+  "name": "Hudson Rock",
+  "url": "https://www.hudsonrock.com/threat-intelligence-cybercrime-tools",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/hunter.md",
+  "id": "hunter",
+  "name": "Hunter",
+  "url": "https://hunter.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/hunter-io.md",
+  "id": "hunter-io",
+  "name": "hunter.io",
+  "url": "https://hunter.io/domain-search",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/hushmail.md",
+  "id": "hushmail",
+  "name": "Hushmail",
+  "url": "http://hushmail.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/hushmail-com.md",
+  "id": "hushmail-com",
+  "name": "hushmail.com",
+  "url": "https://www.hushmail.com/start",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/iknowyour-dad.md",
+  "id": "iknowyour-dad",
+  "name": "IKnowYour.Dad",
+  "url": "https://iknowyour.dad/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/inboxbear-passwordless-email-addresses.md",
+  "id": "inboxbear-passwordless-email-addresses",
+  "name": "Inboxbear - Passwordless email addresses",
+  "url": "https://inboxbear.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/infoga.md",
+  "id": "infoga",
+  "name": "Infoga",
+  "url": "https://github.com/m4ll0k/infoga",
+  "category": "email",
+  "mp": "high"
+ }
+]

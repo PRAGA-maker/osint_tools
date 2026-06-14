@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/my-osint-training-tools.md",
+  "id": "my-osint-training-tools",
+  "name": "My OSINT Training Tools",
+  "url": "https://tools.myosint.training/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/myallsearch-com.md",
+  "id": "myallsearch-com",
+  "name": "myallsearch.com",
+  "url": "https://www.myallsearch.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/naver-com.md",
+  "id": "naver-com",
+  "name": "naver.com",
+  "url": "https://www.naver.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/one-liner-osint-github-com.md",
+  "id": "one-liner-osint-github-com",
+  "name": "One Liner OSINT (github.com)",
+  "url": "https://github.com/yogsec/One-Liner-OSINT?tab=readme-ov-file#-osint-dorks-for-finding-personal-information",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/osint-framework-3.md",
+  "id": "osint-framework-3",
+  "name": "OSINT Framework",
+  "url": "https://osintframework.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/osint-stash.md",
+  "id": "osint-stash",
+  "name": "OSINT STASH",
+  "url": "https://osint.best/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/searchenginejournal-com.md",
+  "id": "searchenginejournal-com",
+  "name": "searchenginejournal.com",
+  "url": "https://www.searchenginejournal.com/google-search-operators-commands/215331/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/searchenginemap-com.md",
+  "id": "searchenginemap-com",
+  "name": "searchenginemap.com",
+  "url": "https://www.searchenginemap.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/seosly-com.md",
+  "id": "seosly-com",
+  "name": "seosly.com",
+  "url": "https://seosly.com/google-search-operators/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/seosly-com-2.md",
+  "id": "seosly-com-2",
+  "name": "seosly.com",
+  "url": "https://seosly.com/bing-search-operators/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/seosly-com-3.md",
+  "id": "seosly-com-3",
+  "name": "seosly.com",
+  "url": "https://seosly.com/yandex-search-operators/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/seznam-cz.md",
+  "id": "seznam-cz",
+  "name": "seznam.cz",
+  "url": "https://www.seznam.cz/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/stumpedia-com.md",
+  "id": "stumpedia-com",
+  "name": "stumpedia.com",
+  "url": "http://www.stumpedia.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/swisscows-com.md",
+  "id": "swisscows-com",
+  "name": "swisscows.com",
+  "url": "https://swisscows.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/trace-labs-awesome-osint.md",
+  "id": "trace-labs-awesome-osint",
+  "name": "Trace Labs awesome-osint",
+  "url": "https://github.com/tracelabs/awesome-osint",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/usearchfrom-com.md",
+  "id": "usearchfrom-com",
+  "name": "usearchfrom.com",
+  "url": "https://usearchfrom.com/",
+  "category": "search-engines",
+  "mp": "high"
+ }
+]

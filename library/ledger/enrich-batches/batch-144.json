@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/internet-archive-wayback-machine-link-ripper.md",
+  "id": "internet-archive-wayback-machine-link-ripper",
+  "name": "Internet Archive Wayback Machine Link Ripper",
+  "url": "https://tools.digitalmethods.net/beta/internetArchiveWaybackMachineLinkRipper/#",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/kiwix-org.md",
+  "id": "kiwix-org",
+  "name": "kiwix.org",
+  "url": "https://www.kiwix.org/en/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/public-datasets/labeled-faces-in-the-wild-db.md",
+  "id": "labeled-faces-in-the-wild-db",
+  "name": "Labeled Faces in the Wild DB",
+  "url": "https://vis-www.cs.umass.edu/lfw/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/linctas-ent-sirsidynix-net-au.md",
+  "id": "linctas-ent-sirsidynix-net-au",
+  "name": "linctas.ent.sirsidynix.net.au",
+  "url": "https://linctas.ent.sirsidynix.net.au/client/en_AU/library/search/results?qf=LOCAL_FORMAT%09Format+(Specific)%09archived+website%09archived+website",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/linkedin-com.md",
+  "id": "linkedin-com",
+  "name": "linkedin.com",
+  "url": "https://www.linkedin.com/pulse/download-web-history-from-common-crawl-another-wayback-albert-hui-2yfbe/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/lux-leaks.md",
+  "id": "lux-leaks",
+  "name": "Lux Leaks",
+  "url": "https://projects.icij.org/luxembourg-leaks/viz/industries/index.html",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/metawarc.md",
+  "id": "metawarc",
+  "name": "Metawarc",
+  "url": "https://github.com/datacoon/metawarc",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/microsystools-com.md",
+  "id": "microsystools-com",
+  "name": "microsystools.com",
+  "url": "https://www.microsystools.com/products/website-download/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/national-center-for-biotechnology.md",
+  "id": "national-center-for-biotechnology",
+  "name": "National Center for Biotechnology",
+  "url": "https://www.ncbi.nlm.nih.gov/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/nationalarchives-gov-uk.md",
+  "id": "nationalarchives-gov-uk",
+  "name": "nationalarchives.gov.uk",
+  "url": "https://www.nationalarchives.gov.uk/webarchive/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/osint2h22v-substack-com.md",
+  "id": "osint2h22v-substack-com",
+  "name": "osint2h22v.substack.com",
+  "url": "https://osint2h22v.substack.com/p/new-osint-source-discovery-internet",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/pagecached-com.md",
+  "id": "pagecached-com",
+  "name": "pagecached.com",
+  "url": "https://pagecached.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/pdf-my-url.md",
+  "id": "pdf-my-url",
+  "name": "PDF My URL",
+  "url": "https://pdfmyurl.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/perma-cc.md",
+  "id": "perma-cc",
+  "name": "perma.cc",
+  "url": "https://perma.cc/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/quick-cache-and-archive-search.md",
+  "id": "quick-cache-and-archive-search",
+  "name": "Quick Cache and Archive search",
+  "url": "https://quickcacheandarchivesearch.onrender.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/replayweb.md",
+  "id": "replayweb",
+  "name": "Replayweb",
+  "url": "https://github.com/webrecorder/replayweb.page",
+  "category": "archives-cache",
+  "mp": "medium"
+ }
+]

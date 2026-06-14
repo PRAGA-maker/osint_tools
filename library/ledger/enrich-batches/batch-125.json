@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/prankshit-com.md",
+  "id": "prankshit-com",
+  "name": "prankshit.com",
+  "url": "https://prankshit.com/fake-story-snapchat.php",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/predicta-search.md",
+  "id": "predicta-search",
+  "name": "Predicta Search",
+  "url": "https://predictasearch.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/proxycurl.md",
+  "id": "proxycurl",
+  "name": "Proxycurl",
+  "url": "https://nubela.co/proxycurl/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/psnprofiles.md",
+  "id": "psnprofiles",
+  "name": "PSNprofiles",
+  "url": "https://psnprofiles.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/publer-io.md",
+  "id": "publer-io",
+  "name": "publer.io",
+  "url": "https://publer.io/tools/instagram-reel-downloader",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/publer-io-2.md",
+  "id": "publer-io-2",
+  "name": "publer.io",
+  "url": "https://publer.io/tools/threads-photo-downloader",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/publer-io-3.md",
+  "id": "publer-io-3",
+  "name": "publer.io",
+  "url": "https://publer.io/tools/threads-video-downloader",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/pullpush.md",
+  "id": "pullpush",
+  "name": "Pullpush",
+  "url": "https://pullpush.io/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/pushshift-api.md",
+  "id": "pushshift-api",
+  "name": "Pushshift API",
+  "url": "https://pushshift.io/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/quickvid-net.md",
+  "id": "quickvid-net",
+  "name": "quickvid.net",
+  "url": "https://quickvid.net/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/qzone-china.md",
+  "id": "qzone-china",
+  "name": "Qzone (China)",
+  "url": "http://qzone.qq.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/r00m101-com.md",
+  "id": "r00m101-com",
+  "name": "r00m101.com",
+  "url": "https://r00m101.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin/raven.md",
+  "id": "raven",
+  "name": "raven",
+  "url": "https://github.com/0x09AL/raven",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook/search/recover-fb-account.md",
+  "id": "recover-fb-account",
+  "name": "Recover FB Account",
+  "url": "https://www.facebook.com/login/identify?ctx=recover",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/recruitryte-com.md",
+  "id": "recruitryte-com",
+  "name": "recruitryte.com",
+  "url": "https://recruitryte.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/redarcs.md",
+  "id": "redarcs",
+  "name": "REDARCS",
+  "url": "https://the-eye.eu/redarcs/",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/ricks-apps-com.md",
+  "id": "ricks-apps-com",
+  "name": "ricks-apps.com",
+  "url": "https://ricks-apps.com/osx/sitesucker/index.html",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/rootssearch.md",
+  "id": "rootssearch",
+  "name": "RootsSearch",
+  "url": "https://rootssearch.io/search",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/scrapestorm-com.md",
+  "id": "scrapestorm-com",
+  "name": "scrapestorm.com",
+  "url": "https://www.scrapestorm.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/screenshots-com.md",
+  "id": "screenshots-com",
+  "name": "Screenshots.com",
+  "url": "https://www.screenshots.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/send-to-internet-archive-addons-mozilla-org.md",
+  "id": "send-to-internet-archive-addons-mozilla-org",
+  "name": "send to internet archive (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/send-to-internet-archive/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/send-to-internet-archive-chrome-google-com.md",
+  "id": "send-to-internet-archive-chrome-google-com",
+  "name": "send to internet archive (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/send-to-internet-archive/bahemchapiecnbbljjmnjkpneaphcncl",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/sourceforge-net.md",
+  "id": "sourceforge-net",
+  "name": "sourceforge.net",
+  "url": "https://sourceforge.net/projects/getleftdown/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/public-datasets/stanford-large-network-dataset-collection.md",
+  "id": "stanford-large-network-dataset-collection",
+  "name": "Stanford Large Network Dataset Collection",
+  "url": "https://snap.stanford.edu/data/#amazon",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/stored-website.md",
+  "id": "stored-website",
+  "name": "stored.website",
+  "url": "https://stored.website",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/swap-stanford-edu.md",
+  "id": "swap-stanford-edu",
+  "name": "Swap.stanford.edu",
+  "url": "https://swap.stanford.edu/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/textfiles-com.md",
+  "id": "textfiles-com",
+  "name": "Textfiles.com",
+  "url": "https://textfiles.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/the-time-machine.md",
+  "id": "the-time-machine",
+  "name": "The Time Machine",
+  "url": "https://github.com/anmolksachan/TheTimeMachine",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/theoldnet-com.md",
+  "id": "theoldnet-com",
+  "name": "TheOldNet.com",
+  "url": "https://theoldnet.com/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/time-travel-for-web-chromewebstore-google-com.md",
+  "id": "time-travel-for-web-chromewebstore-google-com",
+  "name": "time travel for web (chromewebstore.google.com)",
+  "url": "https://chromewebstore.google.com/detail/time-travel-for-web/ogckpcboinbcohhilmofkalobpkolkib",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/trove.md",
+  "id": "trove",
+  "name": "Trove",
+  "url": "http://trove.nla.gov.au/search/category/websites",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/other-media/tv-closed-caption-search.md",
+  "id": "tv-closed-caption-search",
+  "name": "TV Closed Caption Search",
+  "url": "https://archive.org/details/tv",
+  "category": "archives-cache",
+  "mp": "medium"
+ }
+]

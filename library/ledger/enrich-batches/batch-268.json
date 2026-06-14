@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/sougou-com.md",
+  "id": "sougou-com",
+  "name": "Sougou.com",
+  "url": "https://www.sogou.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sploitus.md",
+  "id": "sploitus",
+  "name": "sploitus",
+  "url": "https://sploitus.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sputtr.md",
+  "id": "sputtr",
+  "name": "Sputtr",
+  "url": "https://www.sputtr.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/stackoverflow.md",
+  "id": "stackoverflow",
+  "name": "Stackoverflow",
+  "url": "http://stackoverflow.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/stacksearch.md",
+  "id": "stacksearch",
+  "name": "Stacksearch",
+  "url": "https://stacksear.ch/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/startpage.md",
+  "id": "startpage",
+  "name": "StartPage",
+  "url": "https://www.startpage.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/startpage-2.md",
+  "id": "startpage-2",
+  "name": "Startpage",
+  "url": "https://www.ixquick.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/startpagina-search-netherlands.md",
+  "id": "startpagina-search-netherlands",
+  "name": "Startpagina Search (Netherlands)",
+  "url": "https://www.startpagina.nl/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/state-of-connecticut-licensing.md",
+  "id": "state-of-connecticut-licensing",
+  "name": "State of Connecticut Licensing",
+  "url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/stilltasty.md",
+  "id": "stilltasty",
+  "name": "StillTasty",
+  "url": "http://www.stilltasty.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/stract.md",
+  "id": "stract",
+  "name": "Stract",
+  "url": "https://stract.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/studentreviews-north-america.md",
+  "id": "studentreviews-north-america",
+  "name": "Studentreviews (North America)",
+  "url": "http://www.studentsreview.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/suchmaschinen-datenbank.md",
+  "id": "suchmaschinen-datenbank",
+  "name": "Suchmaschinen Datenbank",
+  "url": "http://www.suchmaschinen-datenbank.de",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/summit-county-fiscal-office.md",
+  "id": "summit-county-fiscal-office",
+  "name": "Summit County Fiscal Office",
+  "url": "http://fiscaloffice.summitoh.net/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/superuser.md",
+  "id": "superuser",
+  "name": "Superuser",
+  "url": "http://superuser.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/surf-canyon-ebay-search.md",
+  "id": "surf-canyon-ebay-search",
+  "name": "Surf Canyon eBay Search",
+  "url": "http://www.surfcanyon.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

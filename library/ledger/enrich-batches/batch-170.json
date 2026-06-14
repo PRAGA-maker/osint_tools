@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/tilersforums-co-uk.md",
+  "id": "tilersforums-co-uk",
+  "name": "tilersforums.co.uk",
+  "url": "https://www.tilersforums.co.uk/forums/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/time-news.md",
+  "id": "time-news",
+  "name": "Time News",
+  "url": "http://www.time.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tinychat.md",
+  "id": "tinychat",
+  "name": "Tinychat",
+  "url": "http://tinychat.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tom-s-hardware.md",
+  "id": "tom-s-hardware",
+  "name": "Tom\u2019s Hardware",
+  "url": "http://www.tomshardware.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/discord-servers/top-gg.md",
+  "id": "top-gg",
+  "name": "Top.gg",
+  "url": "https://top.gg/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tripadvisor.md",
+  "id": "tripadvisor",
+  "name": "TripAdvisor",
+  "url": "https://www.tripadvisor.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tripit.md",
+  "id": "tripit",
+  "name": "Tripit",
+  "url": "https://www.tripit.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/trucknetuk-com.md",
+  "id": "trucknetuk-com",
+  "name": "trucknetuk.com",
+  "url": "http://www.trucknetuk.com/phpBB/viewforum.php?f=49&sid=422fddbe890b9f8237d0508ca947f96d",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tsn-sports-television-canada.md",
+  "id": "tsn-sports-television-canada",
+  "name": "TSN Sports Television (Canada)",
+  "url": "http://www.tsn.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tutpaste.md",
+  "id": "tutpaste",
+  "name": "TutPaste",
+  "url": "https://tutpaste.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tvnz-television-new-zealand.md",
+  "id": "tvnz-television-new-zealand",
+  "name": "TVNZ Television (New Zealand)",
+  "url": "https://www.tvnz.co.nz",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/typepad.md",
+  "id": "typepad",
+  "name": "Typepad",
+  "url": "http://www.typepad.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/uberpeople-net.md",
+  "id": "uberpeople-net",
+  "name": "uberpeople.net",
+  "url": "https://uberpeople.net/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ukbusinessforums-co-uk.md",
+  "id": "ukbusinessforums-co-uk",
+  "name": "ukbusinessforums.co.uk",
+  "url": "https://www.ukbusinessforums.co.uk/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/uksexforum-co-uk.md",
+  "id": "uksexforum-co-uk",
+  "name": "uksexforum.co.uk",
+  "url": "http://www.uksexforum.co.uk/community/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/univision-television-united-states.md",
+  "id": "univision-television-united-states",
+  "name": "Univision Television (United States)",
+  "url": "http://www.univision.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

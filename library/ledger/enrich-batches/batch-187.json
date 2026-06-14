@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/financial-crypto/bitcoin/bitcoin-who-s-who.md",
+  "id": "bitcoin-who-s-who",
+  "name": "Bitcoin Who's Who",
+  "url": "https://www.bitcoinwhoswho.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/chain-analysis-platforms/bitcoin-who-s-who-2.md",
+  "id": "bitcoin-who-s-who-2",
+  "name": "Bitcoin Who's Who",
+  "url": "https://www.bitcoinwhoswho.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoinpaths-com.md",
+  "id": "bitcoinpaths-com",
+  "name": "bitcoinpaths.com",
+  "url": "https://bitcoinpaths.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitinfocharts-com.md",
+  "id": "bitinfocharts-com",
+  "name": "bitinfocharts.com",
+  "url": "https://bitinfocharts.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/multi-chain-explorers/bitquery-explorer.md",
+  "id": "bitquery-explorer",
+  "name": "Bitquery Explorer",
+  "url": "https://explorer.bitquery.io/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoin/bitref.md",
+  "id": "bitref",
+  "name": "BitRef",
+  "url": "https://bitref.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/chain-analysis-platforms/bitref-2.md",
+  "id": "bitref-2",
+  "name": "BitRef",
+  "url": "https://bitref.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/blockchain-info-2.md",
+  "id": "blockchain-info-2",
+  "name": "blockchain.info",
+  "url": "https://www.blockchain.com/explorer/mempool/btc",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/chain-analysis-platforms/blockchair.md",
+  "id": "blockchair",
+  "name": "Blockchair",
+  "url": "https://blockchair.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/multi-chain-explorers/blockchair-2.md",
+  "id": "blockchair-2",
+  "name": "Blockchair",
+  "url": "https://blockchair.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/wallet-clustering-and-address-analysis/blockchair-3.md",
+  "id": "blockchair-3",
+  "name": "Blockchair",
+  "url": "https://blockchair.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/blockchair-com.md",
+  "id": "blockchair-com",
+  "name": "blockchair.com",
+  "url": "https://blockchair.com/ethereum",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoin/blockonomics.md",
+  "id": "blockonomics",
+  "name": "Blockonomics",
+  "url": "https://www.blockonomics.co/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoin/blockr-io.md",
+  "id": "blockr-io",
+  "name": "Blockr.io",
+  "url": "https://blockr.io/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/chain-analysis-platforms/blockscan.md",
+  "id": "blockscan",
+  "name": "Blockscan",
+  "url": "https://blockscan.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoin/blocktrail.md",
+  "id": "blocktrail",
+  "name": "Blocktrail",
+  "url": "https://www.blocktrail.com/BTC",
+  "category": "financial-crypto",
+  "mp": "medium"
+ }
+]

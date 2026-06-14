@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/dobsearch.md",
+  "id": "dobsearch",
+  "name": "DOBSearch",
+  "url": "https://www.dobsearch.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/docinfo-org.md",
+  "id": "docinfo-org",
+  "name": "docinfo.org",
+  "url": "https://www.docinfo.org/#/search/query",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/e-gov-kw.md",
+  "id": "e-gov-kw",
+  "name": "e.gov.kw",
+  "url": "https://e.gov.kw/sites/kgoenglish/Pages/HomePage.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/e-justice-europa-eu.md",
+  "id": "e-justice-europa-eu",
+  "name": "e-justice.europa.eu",
+  "url": "https://e-justice.europa.eu/109/EN/land_registers_in_eu_countries",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ebra-be.md",
+  "id": "ebra-be",
+  "name": "ebra.be",
+  "url": "https://ebra.be/worldwide-registers/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/eca-co-uk.md",
+  "id": "eca-co-uk",
+  "name": "eca.co.uk",
+  "url": "https://www.eca.co.uk/find-a-member",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/egafd-com.md",
+  "id": "egafd-com",
+  "name": "egafd.com",
+  "url": "https://www.egafd.com/fora/viewforum.php?f=4",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/egafd-com-2.md",
+  "id": "egafd-com-2",
+  "name": "egafd.com",
+  "url": "https://www.egafd.com/fora/viewforum.php?f=2",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/eircode-ie.md",
+  "id": "eircode-ie",
+  "name": "eircode.ie",
+  "url": "https://finder.eircode.ie/#/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/electricalcompetentperson-co-uk.md",
+  "id": "electricalcompetentperson-co-uk",
+  "name": "electricalcompetentperson.co.uk",
+  "url": "https://electricalcompetentperson.co.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/estonia.md",
+  "id": "estonia",
+  "name": "Estonia",
+  "url": "https://ariregister.rik.ee/eng",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/exa-ai.md",
+  "id": "exa-ai",
+  "name": "exa.ai",
+  "url": "https://companyresearcher.exa.ai/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/explee-com.md",
+  "id": "explee-com",
+  "name": "explee.com",
+  "url": "https://explee.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/fafsa-search-and-report.md",
+  "id": "fafsa-search-and-report",
+  "name": "FAFSA Search and Report",
+  "url": "https://c0dcb948.caspio.com/dp/726780004ccd83a96316450caead",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/familyecho-com.md",
+  "id": "familyecho-com",
+  "name": "familyecho.com",
+  "url": "https://www.familyecho.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/familysearch.md",
+  "id": "familysearch",
+  "name": "FamilySearch",
+  "url": "https://www.familysearch.org/search/collection/1202535",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

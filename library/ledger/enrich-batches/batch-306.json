@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-honeypots.md",
+  "id": "awesome-honeypots",
+  "name": "awesome-honeypots",
+  "url": "https://github.com/paralax/awesome-honeypots",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-incident-response.md",
+  "id": "awesome-incident-response",
+  "name": "awesome-incident-response",
+  "url": "https://github.com/meirwah/awesome-incident-response",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-lockpicking.md",
+  "id": "awesome-lockpicking",
+  "name": "awesome-lockpicking",
+  "url": "https://github.com/fabacab/awesome-lockpicking",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-malware-analysis.md",
+  "id": "awesome-malware-analysis",
+  "name": "awesome-malware-analysis",
+  "url": "https://github.com/rshipp/awesome-malware-analysis",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-pentest.md",
+  "id": "awesome-pentest",
+  "name": "awesome-pentest",
+  "url": "https://github.com/enaqx/awesome-pentest",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-privacy.md",
+  "id": "awesome-privacy",
+  "name": "awesome-privacy",
+  "url": "https://github.com/Lissy93/awesome-privacy/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-sec-talks.md",
+  "id": "awesome-sec-talks",
+  "name": "awesome-sec-talks",
+  "url": "https://github.com/PaulSec/awesome-sec-talks",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-security.md",
+  "id": "awesome-security",
+  "name": "awesome-security",
+  "url": "https://github.com/sbilly/awesome-security",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-threat-intelligence.md",
+  "id": "awesome-threat-intelligence",
+  "name": "awesome-threat-intelligence",
+  "url": "https://github.com/hslatman/awesome-threat-intelligence",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awk-js.md",
+  "id": "awk-js",
+  "name": "AWK JS",
+  "url": "https://awk.js.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/xor/python/balbuzard.md",
+  "id": "balbuzard",
+  "name": "Balbuzard",
+  "url": "https://github.com/decalage2/balbuzard",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/barcode-reader.md",
+  "id": "barcode-reader",
+  "name": "Barcode Reader",
+  "url": "http://online-barcode-reader.inliteresearch.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/bazzellpy.md",
+  "id": "bazzellpy",
+  "name": "BazzellPy",
+  "url": "https://github.com/dmw94/bazzellpy",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/beaker.md",
+  "id": "beaker",
+  "name": "Beaker",
+  "url": "http://beakernotebook.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/befunky.md",
+  "id": "befunky",
+  "name": "Befunky",
+  "url": "https://www.befunky.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/bellingcat.md",
+  "id": "bellingcat",
+  "name": "Bellingcat",
+  "url": "https://www.bellingcat.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

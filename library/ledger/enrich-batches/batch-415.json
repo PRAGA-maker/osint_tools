@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/kindle-reading-app-mobile-android.md",
+  "id": "kindle-reading-app-mobile-android",
+  "name": "Kindle Reading App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.kindle&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kindle-reading-app-mobile-ios.md",
+  "id": "kindle-reading-app-mobile-ios",
+  "name": "Kindle Reading App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/kindle-read-books-ebooks-magazines/id302584613?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ladder.md",
+  "id": "ladder",
+  "name": "LADDER",
+  "url": "https://github.com/everywall/ladder",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/lavasoft-ad-aware-free-anti-virus.md",
+  "id": "lavasoft-ad-aware-free-anti-virus",
+  "name": "Lavasoft Ad-Aware Free Anti-Virus",
+  "url": "http://www.lavasoft.com/products/ad_aware_free.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ldplayer-net.md",
+  "id": "ldplayer-net",
+  "name": "Ldplayer.net",
+  "url": "https://www.ldplayer.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/lexisnexis-accurint-investigation-support-app-mobile-android.md",
+  "id": "lexisnexis-accurint-investigation-support-app-mobile-android",
+  "name": "LexisNexis Accurint Investigation Support App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.lexisnexis.accurint&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/lexisnexis-accurint-investigation-support-app-mobile-ios.md",
+  "id": "lexisnexis-accurint-investigation-support-app-mobile-ios",
+  "name": "LexisNexis Accurint Investigation Support App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/lexisnexis-accurint-mobile/id437590816?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/librewolf.md",
+  "id": "librewolf",
+  "name": "LibreWolf",
+  "url": "https://librewolf.net",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/lightshot-screen-capture-add-on.md",
+  "id": "lightshot-screen-capture-add-on",
+  "name": "Lightshot Screen Capture Add-on",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/lightshot",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/link-cash-locator-app.md",
+  "id": "link-cash-locator-app",
+  "name": "LINK Cash Locator App",
+  "url": "https://play.google.com/store/apps/details?id=com.linkschemeltd.atmlocator&hl=en_CA",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/linkedin-network-and-job-finder-mobile-ios.md",
+  "id": "linkedin-network-and-job-finder-mobile-ios",
+  "name": "LinkedIn Network and Job Finder (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/us/app/linkedin-network-job-finder/id288429040",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/linkedin-social-networking-app-mobile-android.md",
+  "id": "linkedin-social-networking-app-mobile-android",
+  "name": "LinkedIn Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.linkedin.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/localbitcoins.md",
+  "id": "localbitcoins",
+  "name": "LocalBitcoins",
+  "url": "https://localbitcoins.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/localmonero-co.md",
+  "id": "localmonero-co",
+  "name": "Localmonero.co",
+  "url": "https://localmonero.co/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/macchanger.md",
+  "id": "macchanger",
+  "name": "macchanger",
+  "url": "https://github.com/alobbs/macchanger",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/magicplan-floor-plans-and-estimates-app-mobile-android.md",
+  "id": "magicplan-floor-plans-and-estimates-app-mobile-android",
+  "name": "MagicPlan Floor Plans and Estimates App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.sensopia.magicplan&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

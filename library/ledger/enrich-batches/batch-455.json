@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/onlinenewspapers.md",
+  "id": "onlinenewspapers",
+  "name": "OnlineNewspapers",
+  "url": "http://www.onlinenewspapers.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/open-access-scientific-journals.md",
+  "id": "open-access-scientific-journals",
+  "name": "Open Access Scientific Journals",
+  "url": "http://www.pagepress.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/open-directory-finder.md",
+  "id": "open-directory-finder",
+  "name": "Open Directory Finder",
+  "url": "https://odfinder.github.io/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/open-directory-search.md",
+  "id": "open-directory-search",
+  "name": "Open Directory Search",
+  "url": "http://eyeofjustice.com/od/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/open-grey.md",
+  "id": "open-grey",
+  "name": "Open Grey",
+  "url": "http://www.opengrey.eu",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/open-source-intelligence-txuswashere.md",
+  "id": "open-source-intelligence-txuswashere",
+  "name": "Open-Source-INTelligence (txuswashere)",
+  "url": "https://github.com/txuswashere/Open-Source-INTelligence",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/opendirsearch-abifog-com.md",
+  "id": "opendirsearch-abifog-com",
+  "name": "Opendirsearch.abifog.com",
+  "url": "https://opendirsearch.abifog.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/orange-france.md",
+  "id": "orange-france",
+  "name": "Orange (France)",
+  "url": "http://www.orange.fr",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/orion.md",
+  "id": "orion",
+  "name": "Orion",
+  "url": "https://github.com/Araekiel/orion",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/orion-media-indexer.md",
+  "id": "orion-media-indexer",
+  "name": "Orion Media Indexer",
+  "url": "https://orionoid.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/osint-blogs-search-engine.md",
+  "id": "osint-blogs-search-engine",
+  "name": "OSINT Blogs Search Engine",
+  "url": "https://cse.google.com/cse?cx=fd4729049350a76d0",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/osint-investigation-coldvisionz.md",
+  "id": "osint-investigation-coldvisionz",
+  "name": "osint-investigation (coldvisionz)",
+  "url": "https://github.com/coldvisionz/osint-investigation",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/osint-sh-buckets.md",
+  "id": "osint-sh-buckets",
+  "name": "osint.sh/buckets",
+  "url": "http://osint.sh/buckets",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/osint-tools-howtofind-bot.md",
+  "id": "osint-tools-howtofind-bot",
+  "name": "osint-tools (HowToFind-bot)",
+  "url": "https://github.com/HowToFind-bot/osint-tools",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/osint-tools-yogsec.md",
+  "id": "osint-tools-yogsec",
+  "name": "OSINT-Tools (yogsec)",
+  "url": "https://github.com/yogsec/OSINT-Tools",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/osintbookmarks.md",
+  "id": "osintbookmarks",
+  "name": "OSINTBookmarks",
+  "url": "https://github.com/5nacks/OSINTBookmarks",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/facebook-search-tool.md",
+  "id": "facebook-search-tool",
+  "name": "Facebook Search Tool",
+  "url": "https://www.aware-online.com/osint-tools/facebook-search-tool/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-search-tool-2.md",
+  "id": "facebook-search-tool-2",
+  "name": "Facebook Search Tool",
+  "url": "https://netbootcamp.org/facebook.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-video-downloader.md",
+  "id": "facebook-video-downloader",
+  "name": "Facebook Video Downloader",
+  "url": "https://fbdown.github.io/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-video-downloader-online.md",
+  "id": "facebook-video-downloader-online",
+  "name": "Facebook Video Downloader Online",
+  "url": "https://www.fbdown.net/index.php",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fakedetail-com.md",
+  "id": "fakedetail-com",
+  "name": "fakedetail.com",
+  "url": "https://fakedetail.com/fake-snapchat-chat-generator",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fakeinfo-net.md",
+  "id": "fakeinfo-net",
+  "name": "fakeinfo.net",
+  "url": "https://fakeinfo.net/fake-snapchat-chat-generator",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fanpage-karma.md",
+  "id": "fanpage-karma",
+  "name": "Fanpage Karma",
+  "url": "http://www.fanpagekarma.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fastdl-app.md",
+  "id": "fastdl-app",
+  "name": "fastdl.app",
+  "url": "https://fastdl.app/instagram-reels-download",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fastvideosave-net.md",
+  "id": "fastvideosave-net",
+  "name": "fastvideosave.net",
+  "url": "https://fastvideosave.net/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook/search/fb-email-search.md",
+  "id": "fb-email-search",
+  "name": "FB Email Search",
+  "url": "https://www.facebook.com/public?query=email@gmail.com&nomc=0",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook/search/fb-identify-requires-logout.md",
+  "id": "fb-identify-requires-logout",
+  "name": "FB Identify (Requires Logout)",
+  "url": "https://www.facebook.com/login/identify",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook/search/fb-lookup-id.md",
+  "id": "fb-lookup-id",
+  "name": "FB Lookup ID",
+  "url": "https://lookup-id.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fb-sleep-stats.md",
+  "id": "fb-sleep-stats",
+  "name": "Fb-sleep-stats",
+  "url": "https://github.com/sqren/fb-sleep-stats",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/location-mapping/fedica.md",
+  "id": "fedica",
+  "name": "Fedica",
+  "url": "https://fedica.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fediverse-mastodon/fedifinder.md",
+  "id": "fedifinder",
+  "name": "Fedifinder",
+  "url": "https://fedifinder.glitch.me/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fediverse-mastodon/fediverse-observer.md",
+  "id": "fediverse-observer",
+  "name": "Fediverse Observer",
+  "url": "https://fediverse.observer/",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

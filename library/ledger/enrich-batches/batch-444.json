@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/anon-scraper.md",
+  "id": "anon-scraper",
+  "name": "Anon Scraper",
+  "url": "https://github.com/370rokas/anonscraper",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/aol.md",
+  "id": "aol",
+  "name": "Aol",
+  "url": "https://search.aol.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/ap.md",
+  "id": "ap",
+  "name": "AP",
+  "url": "http://hosted.ap.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/archive-it-org.md",
+  "id": "archive-it-org",
+  "name": "Archive-it.org",
+  "url": "https://archive-it.org/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/ary-recon.md",
+  "id": "ary-recon",
+  "name": "Ary-Recon",
+  "url": "https://github.com/giriaryan694-a11y/Ary-Recon",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/ask.md",
+  "id": "ask",
+  "name": "Ask",
+  "url": "https://www.ask.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/auto-searcher.md",
+  "id": "auto-searcher",
+  "name": "Auto Searcher",
+  "url": "https://chrome.google.com/webstore/detail/auto-searcher/hhggekcjcdgenbgejmkhineppclnkbkn/related",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/awesome-public-datasets.md",
+  "id": "awesome-public-datasets",
+  "name": "awesome-public-datasets",
+  "url": "https://github.com/awesomedata/awesome-public-datasets",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/awesome-recon-tools.md",
+  "id": "awesome-recon-tools",
+  "name": "awesome-recon-tools",
+  "url": "https://github.com/nateahess/awesome-recon-tools",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/baidu-china.md",
+  "id": "baidu-china",
+  "name": "Baidu (China)",
+  "url": "http://www.baidu.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/base.md",
+  "id": "base",
+  "name": "Base",
+  "url": "http://www.base-search.net",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/bbc-news.md",
+  "id": "bbc-news",
+  "name": "BBC News",
+  "url": "http://www.bbc.co.uk/news",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/beautiful-news.md",
+  "id": "beautiful-news",
+  "name": "Beautiful News",
+  "url": "https://informationisbeautiful.net/beautifulnews/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/best-of-the-web-directory.md",
+  "id": "best-of-the-web-directory",
+  "name": "Best of the Web Directory",
+  "url": "https://botw.org/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/bibsonomy.md",
+  "id": "bibsonomy",
+  "name": "Bibsonomy",
+  "url": "http://www.bibsonomy.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/bigsearch.md",
+  "id": "bigsearch",
+  "name": "BigSearch",
+  "url": "https://github.com/garywill/BigSearch",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

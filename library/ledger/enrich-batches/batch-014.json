@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/dualmaps.md",
+  "id": "dualmaps",
+  "name": "DualMaps",
+  "url": "https://www.mapchannels.com/dualmaps7/map.htm",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/earthexplorer.md",
+  "id": "earthexplorer",
+  "name": "EarthExplorer",
+  "url": "https://earthexplorer.usgs.gov/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/environmental-investigation-agency.md",
+  "id": "environmental-investigation-agency",
+  "name": "Environmental Investigation Agency",
+  "url": "https://eia-international.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/esri.md",
+  "id": "esri",
+  "name": "Esri",
+  "url": "http://www.esri.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/flash-earth.md",
+  "id": "flash-earth",
+  "name": "Flash Earth",
+  "url": "https://zoom.earth/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/flash-earth-2.md",
+  "id": "flash-earth-2",
+  "name": "Flash Earth",
+  "url": "http://www.flashearth.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/geogig.md",
+  "id": "geogig",
+  "name": "GeoGig",
+  "url": "http://geogig.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/geoinfer.md",
+  "id": "geoinfer",
+  "name": "GeoInfer",
+  "url": "https://geoinfer.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/geonames.md",
+  "id": "geonames",
+  "name": "GeoNames",
+  "url": "http://www.geonames.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/geolocation-tools/geospy.md",
+  "id": "geospy",
+  "name": "GeoSpy",
+  "url": "https://geospy.ai/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/geovisual-search.md",
+  "id": "geovisual-search",
+  "name": "GeoVisual Search",
+  "url": "https://search.descarteslabs.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/google-earth.md",
+  "id": "google-earth",
+  "name": "Google Earth",
+  "url": "https://earth.google.com/web/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/google-earth-overlays.md",
+  "id": "google-earth-overlays",
+  "name": "Google Earth Overlays",
+  "url": "https://www.mgmaps.com/kml/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/google-earth-pro.md",
+  "id": "google-earth-pro",
+  "name": "Google Earth Pro",
+  "url": "https://www.google.com/intl/en/earth/versions/#earth-pro",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/google-maps.md",
+  "id": "google-maps",
+  "name": "Google Maps",
+  "url": "https://www.google.com/maps/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/map-reporting-tools/google-maps-streetview-player.md",
+  "id": "google-maps-streetview-player",
+  "name": "Google Maps Streetview Player",
+  "url": "https://brianfolts.com/driver/",
+  "category": "geolocation",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/pastery.md",
+  "id": "pastery",
+  "name": "Pastery",
+  "url": "https://www.pastery.net/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/pasteshr.md",
+  "id": "pasteshr",
+  "name": "PasteShr",
+  "url": "https://www.pasteshr.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/pastesite-net.md",
+  "id": "pastesite-net",
+  "name": "PasteSite.Net",
+  "url": "https://pastesite.net/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/pbs-television-united-states.md",
+  "id": "pbs-television-united-states",
+  "name": "PBS Television (United States)",
+  "url": "http://www.pbs.org",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/pc-magazine.md",
+  "id": "pc-magazine",
+  "name": "PC Magazine",
+  "url": "http://www.pcmag.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/penzu.md",
+  "id": "penzu",
+  "name": "Penzu",
+  "url": "https://penzu.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/pinkbike.md",
+  "id": "pinkbike",
+  "name": "Pinkbike",
+  "url": "http://www.pinkbike.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/pistonheads-com.md",
+  "id": "pistonheads-com",
+  "name": "pistonheads.com",
+  "url": "https://www.pistonheads.com/gassing/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/plazoo-rss-feed-search-engine.md",
+  "id": "plazoo-rss-feed-search-engine",
+  "name": "Plazoo RSS Feed Search Engine",
+  "url": "http://www.plazoo.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/plentyoffish.md",
+  "id": "plentyoffish",
+  "name": "PlentyOfFish",
+  "url": "http://www.pof.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/plurk.md",
+  "id": "plurk",
+  "name": "Plurk",
+  "url": "http://www.plurk.com/top",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/police-community.md",
+  "id": "police-community",
+  "name": "police.community",
+  "url": "https://police.community/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/polymeta-news.md",
+  "id": "polymeta-news",
+  "name": "Polymeta News",
+  "url": "http://www.polymeta.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/popsugar-australia.md",
+  "id": "popsugar-australia",
+  "name": "Popsugar (Australia)",
+  "url": "http://www.popsugar.com.au",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/postach-io.md",
+  "id": "postach-io",
+  "name": "Postach.io",
+  "url": "http://postach.io/site",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/posthaven.md",
+  "id": "posthaven",
+  "name": "Posthaven",
+  "url": "https://posthaven.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

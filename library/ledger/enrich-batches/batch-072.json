@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/croatia.md",
+  "id": "croatia",
+  "name": "Croatia",
+  "url": "https://rsv.fina.hr/RSV-javnost/login",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/cso.md",
+  "id": "cso",
+  "name": "CSO",
+  "url": "https://justice.gov.bc.ca/cso/index.do",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/cyndi-s-list.md",
+  "id": "cyndi-s-list",
+  "name": "Cyndi's List",
+  "url": "https://www.cyndislist.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/cyprus.md",
+  "id": "cyprus",
+  "name": "Cyprus",
+  "url": "https://www.companies.gov.cy/en/company-lifecycle/search-for-company-information",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/cyprusregistry-com.md",
+  "id": "cyprusregistry-com",
+  "name": "cyprusregistry.com",
+  "url": "https://cyprusregistry.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/czech-republic.md",
+  "id": "czech-republic",
+  "name": "Czech Republic",
+  "url": "https://esm.justice.cz/ias/issm/rejstrik",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/databasesets-com.md",
+  "id": "databasesets-com",
+  "name": "databasesets.com",
+  "url": "https://user.databasesets.com/index/index/intro.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/deceasedonline-com.md",
+  "id": "deceasedonline-com",
+  "name": "deceasedonline.com",
+  "url": "https://www.deceasedonline.com/servlet/GSDOSearch",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/delaware.md",
+  "id": "delaware",
+  "name": "Delaware",
+  "url": "https://doc.delaware.gov/views/inmate_locator.blade.shtml",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/delawarevoters-info.md",
+  "id": "delawarevoters-info",
+  "name": "Delawarevoters.info",
+  "url": "http://delawarevoters.info/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/denmark.md",
+  "id": "denmark",
+  "name": "Denmark",
+  "url": "https://datacvr.virk.dk/data/index.php?q=forside&language=en-gb",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/diligenciagroup-com.md",
+  "id": "diligenciagroup-com",
+  "name": "diligenciagroup.com",
+  "url": "https://clarifiedby.diligenciagroup.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/directaccessportal-co-uk.md",
+  "id": "directaccessportal-co-uk",
+  "name": "directaccessportal.co.uk",
+  "url": "https://www.directaccessportal.co.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/directorwho-co-uk.md",
+  "id": "directorwho-co-uk",
+  "name": "directorwho.co.uk",
+  "url": "https://www.directorwho.co.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/disputesregister-org.md",
+  "id": "disputesregister-org",
+  "name": "disputesregister.org",
+  "url": "https://www.disputesregister.org/advice/company-registries-by-country",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/dnb-co-uk.md",
+  "id": "dnb-co-uk",
+  "name": "dnb.co.uk",
+  "url": "https://www.dnb.co.uk/duns-number/lookup.html",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

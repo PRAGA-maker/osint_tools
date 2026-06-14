@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/amireal.md",
+  "id": "amireal",
+  "name": "AmIReal",
+  "url": "https://seintpl.github.io/AmIReal/",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/autostitch.md",
+  "id": "autostitch",
+  "name": "AutoStitch",
+  "url": "https://mattabrown.github.io/autostitch.html",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/cleanup-pictures.md",
+  "id": "cleanup-pictures",
+  "name": "Cleanup.Pictures",
+  "url": "https://cleanup.pictures/",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/fdupes.md",
+  "id": "fdupes",
+  "name": "fdupes",
+  "url": "https://github.com/adrianlopezroche/fdupes",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/hugin.md",
+  "id": "hugin",
+  "name": "Hugin",
+  "url": "https://hugin.sourceforge.io/",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/invid-verification-plugin.md",
+  "id": "invid-verification-plugin",
+  "name": "InVID Verification Plugin",
+  "url": "https://weverify.eu/verification-plugin/",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/ipvm-calculator.md",
+  "id": "ipvm-calculator",
+  "name": "IPVM Calculator",
+  "url": "https://calculator.ipvm.com/",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/pixplot.md",
+  "id": "pixplot",
+  "name": "PixPlot",
+  "url": "https://github.com/YaleDHLab/pix-plot",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/pocket.md",
+  "id": "pocket",
+  "name": "Pocket",
+  "url": "https://www.getpocket.com",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/image-video-face/pureref.md",
+  "id": "pureref",
+  "name": "PureRef",
+  "url": "https://www.pureref.com/index.php",
+  "category": "image-video-face",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/about-maps-and-satellites.md",
+  "id": "about-maps-and-satellites",
+  "name": "About Maps and Satellites",
+  "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/about-maps-and-satellites",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/acled-armed-conflict-location-and-event-data-project.md",
+  "id": "acled-armed-conflict-location-and-event-data-project",
+  "name": "ACLED (Armed Conflict Location & Event Data Project)",
+  "url": "https://acleddata.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/alltrails.md",
+  "id": "alltrails",
+  "name": "AllTrails",
+  "url": "https://www.alltrails.com/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/amazonia-socio-ambiental-raisg.md",
+  "id": "amazonia-socio-ambiental-raisg",
+  "name": "Amazonia Socio Ambiental (RAISG)",
+  "url": "https://www.amazoniasocioambiental.org/en/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/apple-maps.md",
+  "id": "apple-maps",
+  "name": "Apple Maps",
+  "url": "https://www.apple.com/maps/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/aqueduct-water-risk-atlas.md",
+  "id": "aqueduct-water-risk-atlas",
+  "name": "Aqueduct Water Risk Atlas",
+  "url": "https://www.wri.org/applications/aqueduct/water-risk-atlas/",
+  "category": "maps-geospatial-data",
+  "mp": "low"
+ }
+]

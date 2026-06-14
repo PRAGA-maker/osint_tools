@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/new-paste.md",
+  "id": "new-paste",
+  "name": "New Paste",
+  "url": "https://paste1.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/new-york-post.md",
+  "id": "new-york-post",
+  "name": "New York Post",
+  "url": "http://nypost.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/new-york-times.md",
+  "id": "new-york-times",
+  "name": "New York Times",
+  "url": "http://www.nytimes.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/newsblur-rss-feeder.md",
+  "id": "newsblur-rss-feeder",
+  "name": "Newsblur RSS Feeder",
+  "url": "http://www.newsblur.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/newsnow-united-kingdom.md",
+  "id": "newsnow-united-kingdom",
+  "name": "NewsNow (United Kingdom)",
+  "url": "http://www.newsnow.co.uk/h",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/newspaper-archive-2.md",
+  "id": "newspaper-archive-2",
+  "name": "Newspaper Archive",
+  "url": "http://newspaperarchive.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/newspapermap.md",
+  "id": "newspapermap",
+  "name": "NewspaperMap",
+  "url": "http://newspapermap.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ning.md",
+  "id": "ning",
+  "name": "Ning",
+  "url": "http://www.ning.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nitv-television-australia.md",
+  "id": "nitv-television-australia",
+  "name": "NITV Television (Australia)",
+  "url": "http://www.sbs.com.au/nitv",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nopaste.md",
+  "id": "nopaste",
+  "name": "NoPaste",
+  "url": "https://nopaste.boris.sh/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nopaste-net.md",
+  "id": "nopaste-net",
+  "name": "nopaste.net",
+  "url": "https://nopaste.net/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/notes.md",
+  "id": "notes",
+  "name": "Notes",
+  "url": "https://notes.io/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nova-czech-republick.md",
+  "id": "nova-czech-republick",
+  "name": "Nova (Czech Republick)",
+  "url": "http://tn.nova.cz",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/nursingforum-co-uk.md",
+  "id": "nursingforum-co-uk",
+  "name": "nursingforum.co.uk",
+  "url": "http://www.nursingforum.co.uk/default.aspx",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ohsint-gitbook.md",
+  "id": "ohsint-gitbook",
+  "name": "OhSINT GitBook",
+  "url": "https://github.com/OhShINT/ohshint.gitbook.io",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forum-search-engines/omgili.md",
+  "id": "omgili",
+  "name": "Omgili",
+  "url": "https://webz.io/",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

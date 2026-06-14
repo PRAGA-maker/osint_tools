@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/bank-for-international-settlements-statistics.md",
+  "id": "bank-for-international-settlements-statistics",
+  "name": "Bank for International Settlements Statistics",
+  "url": "http://www.bis.org/statistics/index.htm",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/banq-num-rique.md",
+  "id": "banq-num-rique",
+  "name": "BAnQ num\u00e9rique",
+  "url": "https://numerique.banq.qc.ca/resultats",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/berkely-library-data-lab.md",
+  "id": "berkely-library-data-lab",
+  "name": "Berkely Library: Data Lab",
+  "url": "http://www.lib.berkeley.edu/libraries/data-lab",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/bigquery-public-datasets.md",
+  "id": "bigquery-public-datasets",
+  "name": "BigQuery public datasets",
+  "url": "https://cloud.google.com/bigquery/public-data/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/binlist.md",
+  "id": "binlist",
+  "name": "Binlist",
+  "url": "https://binlist.net",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/bp-statistical-review-of-world-energy.md",
+  "id": "bp-statistical-review-of-world-energy",
+  "name": "BP Statistical Review of World Energy",
+  "url": "http://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/brb-public-records-2.md",
+  "id": "brb-public-records-2",
+  "name": "BRB Public Records",
+  "url": "https://www.brbpub.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/business-directory-occ.md",
+  "id": "business-directory-occ",
+  "name": "Business Directory \\| OCC",
+  "url": "https://occ.ca/business-directory/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/catalogue-of-research-databases-occrp-id.md",
+  "id": "catalogue-of-research-databases-occrp-id",
+  "name": "Catalogue of Research Databases | OCCRP ID",
+  "url": "https://investigativedashboard.org/databases",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/center-for-international-earth-science-information-network.md",
+  "id": "center-for-international-earth-science-information-network",
+  "name": "Center for International Earth Science Information Network",
+  "url": "http://www.ciesin.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/cepii.md",
+  "id": "cepii",
+  "name": "CEPII",
+  "url": "http://www.cepii.fr/CEPII/en/welcome.asp",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/cia-world-factbook.md",
+  "id": "cia-world-factbook",
+  "name": "CIA World Factbook",
+  "url": "https://www.cia.gov/the-world-factbook/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/kyc-aml-tools/companies-house.md",
+  "id": "companies-house",
+  "name": "Companies House",
+  "url": "https://find-and-update.company-information.service.gov.uk/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/company-check.md",
+  "id": "company-check",
+  "name": "Company Check",
+  "url": "https://companycheck.co.uk",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/company-check-zauba.md",
+  "id": "company-check-zauba",
+  "name": "Company Check Zauba",
+  "url": "https://www.zaubacorp.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/corporate-affairs-registry-database.md",
+  "id": "corporate-affairs-registry-database",
+  "name": "Corporate Affairs Registry Database",
+  "url": "https://www.pxw2.snb.ca/card_online/cardsearch.aspx",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

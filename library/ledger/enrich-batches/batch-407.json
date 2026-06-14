@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/echofon.md",
+  "id": "echofon",
+  "name": "Echofon",
+  "url": "http://www.echofon.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/edge.md",
+  "id": "edge",
+  "name": "Edge",
+  "url": "https://www.microsoft.com/en-us/windows/microsoft-edge/microsoft-edge",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/electronic-frontier-foundation-eff-tools.md",
+  "id": "electronic-frontier-foundation-eff-tools",
+  "name": "Electronic Frontier Foundation (EFF) Tools",
+  "url": "https://www.eff.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/emailformat-de.md",
+  "id": "emailformat-de",
+  "name": "Emailformat.de",
+  "url": "https://emailformat.de",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/encoding-and-decoding-driver-s-license-numbers.md",
+  "id": "encoding-and-decoding-driver-s-license-numbers",
+  "name": "Encoding and Decoding Driver's License Numbers",
+  "url": "https://stevemorse.org/dl/dl.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/epic-online-guide-to-practical-privacy-tools.md",
+  "id": "epic-online-guide-to-practical-privacy-tools",
+  "name": "EPIC Online Guide to Practical Privacy Tools",
+  "url": "https://epic.org/privacy/tools.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/eset-cybersecurity-for-mac.md",
+  "id": "eset-cybersecurity-for-mac",
+  "name": "ESET Cybersecurity For Mac",
+  "url": "http://www.eset.com/us/store/mac",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/eset-smart-security.md",
+  "id": "eset-smart-security",
+  "name": "ESET Smart Security",
+  "url": "http://www.eset.com/us/home/products/smart-security",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/exif-viewer-add-on-for-chrome.md",
+  "id": "exif-viewer-add-on-for-chrome",
+  "name": "EXIF Viewer Add-on for Chrome",
+  "url": "https://chrome.google.com/webstore/detail/exif-viewer/mmbhfeiddhndihdjeganjggkmjapkffm",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/exif-viewer-firefox-add-on.md",
+  "id": "exif-viewer-firefox-add-on",
+  "name": "EXIF Viewer Firefox Add-on",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/exif-viewer",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/exonerator-ip-address-checker.md",
+  "id": "exonerator-ip-address-checker",
+  "name": "ExoneraTor Ip Address Checker",
+  "url": "https://metrics.torproject.org/exonerator.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/expedia-travel-app-mobile-android.md",
+  "id": "expedia-travel-app-mobile-android",
+  "name": "Expedia Travel App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.expedia.bookings",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/export-chrome-history.md",
+  "id": "export-chrome-history",
+  "name": "Export Chrome History",
+  "url": "https://chrome.google.com/webstore/detail/export-historybookmarks-t/dcoegfodcnjofhjfbhegcgjgapeichlf",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/extremetech-virutal-box.md",
+  "id": "extremetech-virutal-box",
+  "name": "ExtremeTech Virutal Box",
+  "url": "http://www.extremetech.com/tag/virtualbox",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/f-secure-anti-virus-for-mac.md",
+  "id": "f-secure-anti-virus-for-mac",
+  "name": "F-Secure Anti-Virus For Mac",
+  "url": "https://www.f-secure.com/us-en/internet-security",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/facebook-messenger-app-mobile-android.md",
+  "id": "facebook-messenger-app-mobile-android",
+  "name": "Facebook Messenger App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

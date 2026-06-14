@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/macleans-magazine-canada.md",
+  "id": "macleans-magazine-canada",
+  "name": "Macleans Magazine (Canada)",
+  "url": "http://www.macleans.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/magportal-north-america.md",
+  "id": "magportal-north-america",
+  "name": "MagPortal (North America)",
+  "url": "http://magportal.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/mamba-ru.md",
+  "id": "mamba-ru",
+  "name": "Mamba.ru",
+  "url": "http://www.mamba.ru",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/mashable.md",
+  "id": "mashable",
+  "name": "Mashable",
+  "url": "https://mashable.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/match.md",
+  "id": "match",
+  "name": "Match",
+  "url": "http://www.match.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/mate1-com-website.md",
+  "id": "mate1-com-website",
+  "name": "Mate1.com Website",
+  "url": "http://www.mate1.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/meetic-com-europe.md",
+  "id": "meetic-com-europe",
+  "name": "Meetic.com (Europe)",
+  "url": "http://www.meetic.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/memeorandum-political-web.md",
+  "id": "memeorandum-political-web",
+  "name": "Memeorandum Political Web",
+  "url": "http://www.memeorandum.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/metafilter.md",
+  "id": "metafilter",
+  "name": "Metafilter",
+  "url": "http://www.metafilter.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/metv-united-states.md",
+  "id": "metv-united-states",
+  "name": "METV (United States)",
+  "url": "http://www.metv.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/mghurston-list-of-fake-news-satire-and-hoax-websites.md",
+  "id": "mghurston-list-of-fake-news-satire-and-hoax-websites",
+  "name": "MGHurston List of Fake News, Satire, and Hoax Websites",
+  "url": "http://michaelghurston.com/2014/10/list-of-fake-news-sites-satire-and-hoaxes",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/irc-search/mibbit.md",
+  "id": "mibbit",
+  "name": "Mibbit",
+  "url": "https://search.mibbit.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/mibbit-irc-network-search.md",
+  "id": "mibbit-irc-network-search",
+  "name": "Mibbit IRC Network Search",
+  "url": "http://search.mibbit.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/militaryforums-co-uk.md",
+  "id": "militaryforums-co-uk",
+  "name": "militaryforums.co.uk",
+  "url": "https://www.militaryforums.co.uk/forums/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/money-talk-org.md",
+  "id": "money-talk-org",
+  "name": "money-talk.org",
+  "url": "http://www.money-talk.org/board.html",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/moneyforums-citywire-co-uk.md",
+  "id": "moneyforums-citywire-co-uk",
+  "name": "moneyforums.citywire.co.uk",
+  "url": "http://moneyforums.citywire.co.uk/",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

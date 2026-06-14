@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/financial-crypto/monero-blocks-2.md",
+  "id": "monero-blocks-2",
+  "name": "Monero Blocks",
+  "url": "https://moneroblocks.info",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/north-data.md",
+  "id": "north-data",
+  "name": "North Data",
+  "url": "https://northdata.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/osint-cryptocurrencies.md",
+  "id": "osint-cryptocurrencies",
+  "name": "OSINT cryptocurrencies",
+  "url": "https://www.aware-online.com/en/osint-tools/cryptocurrency-tools/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/osint-tools-map.md",
+  "id": "osint-tools-map",
+  "name": "OSINT Tools Map",
+  "url": "https://cybdetective.com/osintmap/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/ppp-adatascienti-st.md",
+  "id": "ppp-adatascienti-st",
+  "name": "Ppp.adatascienti.st",
+  "url": "https://ppp.adatascienti.st/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/rupep.md",
+  "id": "rupep",
+  "name": "RuPEP",
+  "url": "https://rupep.org/en/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/sanctionsexplorer.md",
+  "id": "sanctionsexplorer",
+  "name": "SanctionsExplorer",
+  "url": "https://sanctionsexplorer.org/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/search-for-investment-fund-documents.md",
+  "id": "search-for-investment-fund-documents",
+  "name": "Search for Investment Fund Documents",
+  "url": "https://www.sedar.com/search/search_form_mf_en.htm",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/search-our-ppp-loan-database.md",
+  "id": "search-our-ppp-loan-database",
+  "name": "Search Our PPP Loan Database",
+  "url": "https://ppp.directory/search",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/tmx.md",
+  "id": "tmx",
+  "name": "TMX",
+  "url": "https://www.m-x.ca/en/trading/data/quotes?symbol=",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/tmx-tsx.md",
+  "id": "tmx-tsx",
+  "name": "TMX TSX",
+  "url": "https://www.tsx.com/listings/listing-with-us/listed-company-directory",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/token-view.md",
+  "id": "token-view",
+  "name": "Token View",
+  "url": "https://tokenview.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/tradint-research-tool.md",
+  "id": "tradint-research-tool",
+  "name": "Tradint Research Tool",
+  "url": "https://tradint.io/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/wikipedia-list-of-registers.md",
+  "id": "wikipedia-list-of-registers",
+  "name": "Wikipedia list of registers",
+  "url": "https://en.wikipedia.org/wiki/List_of_official_business_registers",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/511on-ca.md",
+  "id": "511on-ca",
+  "name": "511on.ca",
+  "url": "https://511on.ca/",
+  "category": "geolocation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/geolocation/airport-webcams.md",
+  "id": "airport-webcams",
+  "name": "Airport Webcams",
+  "url": "https://airportwebcams.net/",
+  "category": "geolocation",
+  "mp": "low"
+ }
+]

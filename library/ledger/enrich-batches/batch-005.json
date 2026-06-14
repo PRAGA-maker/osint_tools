@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/findemail-io.md",
+  "id": "findemail-io",
+  "name": "findemail.io",
+  "url": "https://findemail.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/foodora.md",
+  "id": "foodora",
+  "name": "Foodora",
+  "url": "https://bloopbase.keybase.pub/POPPY/FOODORA/index.html",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/forensicosint-com.md",
+  "id": "forensicosint-com",
+  "name": "forensicosint.com",
+  "url": "https://www.forensicosint.com/free-tools/email-header-analyzer",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/free-email-address-validator.md",
+  "id": "free-email-address-validator",
+  "name": "Free email address validator",
+  "url": "https://verifalia.com/validate-email",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/free-email-search.md",
+  "id": "free-email-search",
+  "name": "FREE Email Search",
+  "url": "https://www.spytox.com/email-search",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/gaijin-at.md",
+  "id": "gaijin-at",
+  "name": "gaijin.at",
+  "url": "https://www.gaijin.at/de/tools/e-mail-header-analyzer",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/geeksforgeeks-org.md",
+  "id": "geeksforgeeks-org",
+  "name": "geeksforgeeks.org",
+  "url": "https://www.geeksforgeeks.org/techtips/how-to-track-an-ip-address-from-an-email/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/getmailbird-com.md",
+  "id": "getmailbird-com",
+  "name": "getmailbird.com",
+  "url": "https://www.getmailbird.com/how-email-tracking-works-block-privacy/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/getnotify-com.md",
+  "id": "getnotify-com",
+  "name": "Getnotify.com",
+  "url": "https://getnotify.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/ghintel-secrets-ninja.md",
+  "id": "ghintel-secrets-ninja",
+  "name": "ghintel.secrets.ninja",
+  "url": "https://ghintel.secrets.ninja/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/ghunt.md",
+  "id": "ghunt",
+  "name": "GHunt",
+  "url": "https://github.com/mxrch/GHunt",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/gist-github-com.md",
+  "id": "gist-github-com",
+  "name": "gist.github.com",
+  "url": "https://gist.github.com/ammarshah/f5c2624d767f91a7cbdc4e54db8dd0bf",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/gitrecon.md",
+  "id": "gitrecon",
+  "name": "Gitrecon",
+  "url": "https://github.com/atiilla/gitrecon",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/gmail.md",
+  "id": "gmail",
+  "name": "Gmail",
+  "url": "https://gmail.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/google-analyzeheader.md",
+  "id": "google-analyzeheader",
+  "name": "Google AnalyzeHeader",
+  "url": "https://toolbox.googleapps.com/apps/messageheader/analyzeheader",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/google-com-51.md",
+  "id": "google-com-51",
+  "name": "google.com",
+  "url": "https://www.google.com/support/accounts/bin/request.py?contact_type=contact_policy",
+  "category": "email",
+  "mp": "high"
+ }
+]

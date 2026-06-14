@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/translation-language/abbreviations-com.md",
+  "id": "abbreviations-com",
+  "name": "Abbreviations.com",
+  "url": "http://www.abbreviations.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/acronym-finder.md",
+  "id": "acronym-finder",
+  "name": "Acronym Finder",
+  "url": "http://www.acronymfinder.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/acronym-server.md",
+  "id": "acronym-server",
+  "name": "Acronym Server",
+  "url": "http://acronyms.silmaril.ie/index.html#0",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/after-the-deadline-language-tool.md",
+  "id": "after-the-deadline-language-tool",
+  "name": "After the Deadline Language Tool",
+  "url": "http://www.polishmywriting.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/alphadictionary-com.md",
+  "id": "alphadictionary-com",
+  "name": "AlphaDictionary.com",
+  "url": "http://www.alphadictionary.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/apertium-org.md",
+  "id": "apertium-org",
+  "name": "apertium.org",
+  "url": "https://www.apertium.org/index.eng.html#?dir=eng-epo&q=",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/babelfish-language-translations.md",
+  "id": "babelfish-language-translations",
+  "name": "Babelfish Language Translations",
+  "url": "https://www.babelfish.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/baidu-translate.md",
+  "id": "baidu-translate",
+  "name": "Baidu Translate",
+  "url": "https://fanyi.baidu.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/binary-translator.md",
+  "id": "binary-translator",
+  "name": "Binary Translator",
+  "url": "http://binarytranslator.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/bing-microsoft-translator.md",
+  "id": "bing-microsoft-translator",
+  "name": "Bing Microsoft Translator",
+  "url": "https://www.bing.com/translator",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/clipto-com.md",
+  "id": "clipto-com",
+  "name": "clipto.com",
+  "url": "https://www.clipto.com/transcribe-audio-video-to-text-free",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/cockney-rhyming-slang-converter.md",
+  "id": "cockney-rhyming-slang-converter",
+  "name": "Cockney Rhyming Slang Converter",
+  "url": "http://www.cockneyrhymingslang.co.uk/cockney_translator",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/collinsdictionary.md",
+  "id": "collinsdictionary",
+  "name": "CollinsDictionary",
+  "url": "http://www.collinsdictionary.com/translator",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/conveythis-free-translation.md",
+  "id": "conveythis-free-translation",
+  "name": "ConveyThis Free Translation",
+  "url": "http://www.conveythis.com",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/deepl.md",
+  "id": "deepl",
+  "name": "DeepL",
+  "url": "https://www.deepl.com/translator",
+  "category": "translation-language",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/translation-language/definitions-net.md",
+  "id": "definitions-net",
+  "name": "Definitions.net",
+  "url": "http://www.definitions.net",
+  "category": "translation-language",
+  "mp": "low"
+ }
+]

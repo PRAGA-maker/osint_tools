@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/diigo.md",
+  "id": "diigo",
+  "name": "Diigo",
+  "url": "https://www.diigo.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/documentcloud.md",
+  "id": "documentcloud",
+  "name": "DocumentCloud",
+  "url": "https://www.documentcloud.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/doingbusiness-north-america.md",
+  "id": "doingbusiness-north-america",
+  "name": "Doingbusiness (North America)",
+  "url": "http://www.doingbusiness.org/rankings",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/doppelme.md",
+  "id": "doppelme",
+  "name": "Doppelme",
+  "url": "http://doppelme.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/dropbox-2.md",
+  "id": "dropbox-2",
+  "name": "Dropbox",
+  "url": "https://www.dropbox.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/e-gg-timer-alarm-tool.md",
+  "id": "e-gg-timer-alarm-tool",
+  "name": "E.gg Timer Alarm Tool",
+  "url": "http://e.ggtimer.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/earthcam-net.md",
+  "id": "earthcam-net",
+  "name": "EarthCam.net",
+  "url": "https://www.earthcam.net/about/aboutus.php",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/easybib.md",
+  "id": "easybib",
+  "name": "EasyBib",
+  "url": "http://www.easybib.com/guides/citation-guides/apa-format/tweet/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/edocr.md",
+  "id": "edocr",
+  "name": "Edocr",
+  "url": "http://www.edocr.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/encrytped-zip-file-creator.md",
+  "id": "encrytped-zip-file-creator",
+  "name": "Encrytped ZIP file creator",
+  "url": "https://www.protectedzip.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/engadget.md",
+  "id": "engadget",
+  "name": "Engadget",
+  "url": "http://www.engadget.com/reviews",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/engage121.md",
+  "id": "engage121",
+  "name": "Engage121",
+  "url": "http://www.engage121.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/ether.md",
+  "id": "ether",
+  "name": "Ether",
+  "url": "https://ether.gtisc.gatech.edu/web_unpack/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/etherpad-collaborative-editing.md",
+  "id": "etherpad-collaborative-editing",
+  "name": "Etherpad Collaborative Editing",
+  "url": "http://etherpad.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/eventbrite-canada.md",
+  "id": "eventbrite-canada",
+  "name": "Eventbrite (Canada)",
+  "url": "https://www.eventbrite.ca",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/eventbrite-united-states.md",
+  "id": "eventbrite-united-states",
+  "name": "Eventbrite (United States)",
+  "url": "https://www.eventbrite.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

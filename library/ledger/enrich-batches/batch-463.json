@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/all-twitch-streamers-search.md",
+  "id": "all-twitch-streamers-search",
+  "name": "All Twitch Streamers Search",
+  "url": "https://twitchstats.net/allstreamers",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/anonymous-ad-preview-tool.md",
+  "id": "anonymous-ad-preview-tool",
+  "name": "Anonymous Ad Preview Tool",
+  "url": "https://ads.google.com/anon/AdPreview",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/bot-sentinel-dashboard-bot-sentinel.md",
+  "id": "bot-sentinel-dashboard-bot-sentinel",
+  "name": "Bot Sentinel Dashboard \u2039 Bot Sentinel",
+  "url": "https://botsentinel.com",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/botometer-by-osome.md",
+  "id": "botometer-by-osome",
+  "name": "Botometer by OSoMe",
+  "url": "https://botometer.osome.iu.edu/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/botslayer.md",
+  "id": "botslayer",
+  "name": "BotSlayer",
+  "url": "https://osome.iu.edu/tools/botslayer",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/channel-crawler.md",
+  "id": "channel-crawler",
+  "name": "Channel Crawler",
+  "url": "https://channelcrawler.com",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/check-channel-badges.md",
+  "id": "check-channel-badges",
+  "name": "Check channel badges",
+  "url": "https://cactus.tools/twitch/badges",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/check-twitch-follow-length.md",
+  "id": "check-twitch-follow-length",
+  "name": "Check Twitch follow length",
+  "url": "https://cactus.tools/twitch/followage",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/clubhouse-database.md",
+  "id": "clubhouse-database",
+  "name": "Clubhouse Database",
+  "url": "https://clubhousedb.com/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/clubsearch-search-clubhouse-rooms.md",
+  "id": "clubsearch-search-clubhouse-rooms",
+  "name": "ClubSearch -- search Clubhouse rooms",
+  "url": "https://clubsearch.io/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/covaxxy.md",
+  "id": "covaxxy",
+  "name": "CoVaxxy",
+  "url": "https://osome.iu.edu/tools/covaxxy",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/followeraudit.md",
+  "id": "followeraudit",
+  "name": "FollowerAudit",
+  "url": "https://www.followeraudit.com/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/hashatit.md",
+  "id": "hashatit",
+  "name": "Hashatit",
+  "url": "https://www.hashatit.com/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/keepvid.md",
+  "id": "keepvid",
+  "name": "KeepVid",
+  "url": "https://keepvid.com",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/mastodon-search-engine.md",
+  "id": "mastodon-search-engine",
+  "name": "Mastodon Search Engine",
+  "url": "https://cse.google.com/cse?cx=334aec4c3c73ed945",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/mentionmapp-analytics.md",
+  "id": "mentionmapp-analytics",
+  "name": "Mentionmapp Analytics",
+  "url": "https://mentionmapp.com/",
+  "category": "social-networks",
+  "mp": "low"
+ }
+]

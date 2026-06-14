@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/wix.md",
+  "id": "wix",
+  "name": "Wix",
+  "url": "https://wix.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/yahoo-answers.md",
+  "id": "yahoo-answers",
+  "name": "Yahoo Answers",
+  "url": "http://answers.yahoo.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/200-plus-dark-web-links.md",
+  "id": "200-plus-dark-web-links",
+  "name": "200+ Dark Web Links",
+  "url": "https://getonthedarkweb.com/dark-web-links/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/4-ever-proxy.md",
+  "id": "4-ever-proxy",
+  "name": "4 Ever Proxy",
+  "url": "https://www.4everproxy.com/tor-proxy",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/activetk.md",
+  "id": "activetk",
+  "name": "ActiveTK",
+  "url": "https://tor2web.activetk.jp/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/ahmia-link-graph.md",
+  "id": "ahmia-link-graph",
+  "name": "Ahmia Link Graph",
+  "url": "https://ahmia.fi/stats/link_graph/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/alpha-card-seller.md",
+  "id": "alpha-card-seller",
+  "name": "Alpha Card Seller",
+  "url": "http://ap3pxwidty2zfhpnxkiubmkdr5oysbhxigpt64lqkb7wdmlzuxwdc2id.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/astra-guns.md",
+  "id": "astra-guns",
+  "name": "Astra Guns",
+  "url": "http://s53txpmxln2657wz6kbueokpg3kbu4k4whunczeeotfpgb77l2tcwaad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/bitpharma.md",
+  "id": "bitpharma",
+  "name": "BitPharma",
+  "url": "http://guzjgkpodzshso2nohspxijzk5jgoaxzqioa7vzy6qdmwpz3hq4mwfid.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/black-market.md",
+  "id": "black-market",
+  "name": "Black Market",
+  "url": "http://bmarketjfejd7xrvfvisx22i2w7tjhbr3fbh4ggv4ycaijodcda6aqyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/blockpath-com.md",
+  "id": "blockpath-com",
+  "name": "Blockpath.com",
+  "url": "https://blockpath.com/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/browseriling.md",
+  "id": "browseriling",
+  "name": "Browseriling",
+  "url": "https://www.browserling.com/tor-testing",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/cannabisuk.md",
+  "id": "cannabisuk",
+  "name": "CannabisUK",
+  "url": "http://7mejofwihleuugda5kfnr7tupvfbaqntjqnfxc4hwmozlcmj2cey3hqd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/charlieuk.md",
+  "id": "charlieuk",
+  "name": "CharlieUK",
+  "url": "http://charlyuklqm45jjwxwichotzub2ua4uflixvbioleyfuixz57q5lahqd.onion/charlieUK.html",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/credit-card-center.md",
+  "id": "credit-card-center",
+  "name": "Credit Card Center",
+  "url": "http://6bdg5y5ab55p6jdojtl2llv4rm5gvykbz5isdlwkcq7kxy6l22jb2aad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/crypto-storm.md",
+  "id": "crypto-storm",
+  "name": "Crypto Storm",
+  "url": "http://stormwayszuh4juycoy4kwoww5gvcu2c4tdtpkup667pdwe4qenzwayd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ }
+]

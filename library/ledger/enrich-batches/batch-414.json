@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/itranslate-language-translation-app-mobile-android.md",
+  "id": "itranslate-language-translation-app-mobile-android",
+  "name": "iTranslate Language Translation App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=at.nk.tools.iTranslate",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/itranslate-language-translation-app-mobile-ios.md",
+  "id": "itranslate-language-translation-app-mobile-ios",
+  "name": "iTranslate Language Translation App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/itranslate-free-translator/id288113403?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/jottis-malware-scan.md",
+  "id": "jottis-malware-scan",
+  "name": "Jottis Malware Scan",
+  "url": "http://virusscan.jotti.org/en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/jsoncrack.md",
+  "id": "jsoncrack",
+  "name": "Jsoncrack",
+  "url": "https://jsoncrack.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/jsonhero.md",
+  "id": "jsonhero",
+  "name": "JSONHero",
+  "url": "https://jsonhero.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/jsonvisio.md",
+  "id": "jsonvisio",
+  "name": "Jsonvisio",
+  "url": "https://jsonvisio.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kakao-talk-messaging-app-mobile-ios.md",
+  "id": "kakao-talk-messaging-app-mobile-ios",
+  "name": "Kakao Talk Messaging App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/kakaotalk/id869223134?mt=12",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kali-anonsurf.md",
+  "id": "kali-anonsurf",
+  "name": "Kali Anonsurf",
+  "url": "https://github.com/Und3rf10w/kali-anonsurf",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kali-linux.md",
+  "id": "kali-linux",
+  "name": "Kali Linux",
+  "url": "https://www.kali.org/get-kali/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kasm.md",
+  "id": "kasm",
+  "name": "Kasm",
+  "url": "https://kasmweb.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kaspersky-internet-security.md",
+  "id": "kaspersky-internet-security",
+  "name": "Kaspersky Internet Security",
+  "url": "https://www.kaspersky.ca",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kaspersky-tdsskiller-anti-rootkit-tool.md",
+  "id": "kaspersky-tdsskiller-anti-rootkit-tool",
+  "name": "Kaspersky TDSSKiller Anti-Rootkit Tool",
+  "url": "http://usa.kaspersky.com/downloads/TDSSKiller",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/khan-academy-education-app-mobile-android.md",
+  "id": "khan-academy-education-app-mobile-android",
+  "name": "Khan Academy Education App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=org.khanacademy.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/khan-academy-education-app-mobile-ios.md",
+  "id": "khan-academy-education-app-mobile-ios",
+  "name": "Khan Academy Education App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/khan-academy-you-can-learn/id469863705?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kik-messaging-app-mobile-android.md",
+  "id": "kik-messaging-app-mobile-android",
+  "name": "Kik Messaging App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=kik.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/kik-messaging-app-mobile-ios.md",
+  "id": "kik-messaging-app-mobile-ios",
+  "name": "Kik Messaging App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/kik/id357218860?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

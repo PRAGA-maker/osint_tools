@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/xhibit.md",
+  "id": "xhibit",
+  "name": "Xhibit",
+  "url": "http://xhibit.justice.gov.uk/court_lists.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/xlamma-com.md",
+  "id": "xlamma-com",
+  "name": "xlamma.com",
+  "url": "https://xlamma.com/uk",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/yearbooks.md",
+  "id": "yearbooks",
+  "name": "Yearbooks",
+  "url": "https://www.e-yearbook.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/yearbooks-high-school-yearbooks-ancestry.md",
+  "id": "yearbooks-high-school-yearbooks-ancestry",
+  "name": "Yearbooks \\| High School Yearbooks \\| Ancestry",
+  "url": "https://www.ancestry.com/search/collections/1265/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/yearbooks-myheritage.md",
+  "id": "yearbooks-myheritage",
+  "name": "Yearbooks - MyHeritage",
+  "url": "https://www.myheritage.com/research/category-10010/yearbooks",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/york-county-pa-2017-write-in-report.md",
+  "id": "york-county-pa-2017-write-in-report",
+  "name": "York County PA 2017 Write in Report",
+  "url": "https://b2.caspio.com/dp/0a9210000bece9f2f50642ff9cac",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/zoopla-co-uk.md",
+  "id": "zoopla-co-uk",
+  "name": "zoopla.co.uk",
+  "url": "https://www.zoopla.co.uk/house-prices/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/all-io-net.md",
+  "id": "all-io-net",
+  "name": "all-io.net",
+  "url": "https://all-io.net/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/alltheinternet-com.md",
+  "id": "alltheinternet-com",
+  "name": "alltheinternet.com",
+  "url": "https://www.alltheinternet.com/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/bellingcat-s-online-investigation-toolkit-2.md",
+  "id": "bellingcat-s-online-investigation-toolkit-2",
+  "name": "Bellingcat's Online Investigation Toolkit",
+  "url": "https://bellingcat.gitbook.io/toolkit",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/cyb-detective-osint-stuff-tool-collection.md",
+  "id": "cyb-detective-osint-stuff-tool-collection",
+  "name": "cyb_detective OSINT stuff tool collection",
+  "url": "https://cipher387.github.io/osint_stuff_tool_collection/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/duckduckgo-com.md",
+  "id": "duckduckgo-com",
+  "name": "duckduckgo.com",
+  "url": "https://duckduckgo.com/?t=hc",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/github-io-2.md",
+  "id": "github-io-2",
+  "name": "github.io",
+  "url": "https://greylensresearch.github.io/filephish/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/goldenowl-ai.md",
+  "id": "goldenowl-ai",
+  "name": "goldenowl.ai",
+  "url": "https://syntax.goldenowl.ai/",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-76.md",
+  "id": "google-com-76",
+  "name": "google.com",
+  "url": "https://www.google.com/?gfe_rd=cr&ei=MRNwVtLQLYLAaMrYoqAK&gws_rd=cr&fg=1",
+  "category": "search-engines",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/search-engines/google-com-77.md",
+  "id": "google-com-77",
+  "name": "google.com",
+  "url": "https://www.google.com/advanced_search?q",
+  "category": "search-engines",
+  "mp": "high"
+ }
+]

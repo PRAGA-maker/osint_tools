@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/grammarly-ai-detector.md",
+  "id": "grammarly-ai-detector",
+  "name": "Grammarly AI Detector",
+  "url": "https://www.grammarly.com/ai-detector",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/graphviz-online.md",
+  "id": "graphviz-online",
+  "name": "Graphviz Online",
+  "url": "https://dreampuf.github.io/GraphvizOnline/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/graphx.md",
+  "id": "graphx",
+  "name": "GraphX",
+  "url": "http://spark.apache.org/graphx",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/greynoise.md",
+  "id": "greynoise",
+  "name": "Greynoise",
+  "url": "https://greynoise.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/guardian-project.md",
+  "id": "guardian-project",
+  "name": "Guardian Project",
+  "url": "https://guardianproject.info",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/guerrilla-mail.md",
+  "id": "guerrilla-mail",
+  "name": "Guerrilla Mail",
+  "url": "https://www.guerrillamail.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/hackers-toolkit.md",
+  "id": "hackers-toolkit",
+  "name": "Hackers toolkit",
+  "url": "https://chrome.google.com/webstore/detail/hackers-toolkit/iebkeiopbbfnmieadmojmocohdmaghmb/related",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/highcharts.md",
+  "id": "highcharts",
+  "name": "Highcharts",
+  "url": "http://www.highcharts.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/hive-ai-generated-content-detection.md",
+  "id": "hive-ai-generated-content-detection",
+  "name": "Hive AI Generated Content Detection",
+  "url": "https://hivemoderation.com/ai-generated-content-detection",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/hohli.md",
+  "id": "hohli",
+  "name": "Hohli",
+  "url": "http://charts.hohli.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/hooey-webprint.md",
+  "id": "hooey-webprint",
+  "name": "Hooey webprint",
+  "url": "http://www.hooeeywebprint.com.s3-website-us-east-1.amazonaws.com/download.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/hotspot-shield.md",
+  "id": "hotspot-shield",
+  "name": "Hotspot Shield",
+  "url": "https://www.hotspotshield.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/how-to-verify.md",
+  "id": "how-to-verify",
+  "name": "How to verify?",
+  "url": "https://www.howtoverify.info/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/html-editor.md",
+  "id": "html-editor",
+  "name": "HTML editor",
+  "url": "https://onlinehtmleditor.dev/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/html-sanitizer-tool.md",
+  "id": "html-sanitizer-tool",
+  "name": "HTML Sanitizer Tool",
+  "url": "https://defuse.ca/html-sanitize.htm",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/http-cat.md",
+  "id": "http-cat",
+  "name": "HTTP Cat",
+  "url": "https://github.com/httpcats/http.cat",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

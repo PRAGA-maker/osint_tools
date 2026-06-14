@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/youtube-social-networking-app-mobile-android.md",
+  "id": "youtube-social-networking-app-mobile-android",
+  "name": "Youtube Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/youtube-social-networking-app-mobile-ios.md",
+  "id": "youtube-social-networking-app-mobile-ios",
+  "name": "Youtube Social Networking App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/youtube/id544007664?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/youtube-transcript-search.md",
+  "id": "youtube-transcript-search",
+  "name": "YouTube Transcript Search",
+  "url": "https://chromewebstore.google.com/detail/eeebipnojmgobognppffkenhdoidendi",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/zotero.md",
+  "id": "zotero",
+  "name": "Zotero",
+  "url": "https://www.zotero.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/zxing-barcode-scanner-app-mobile-android.md",
+  "id": "zxing-barcode-scanner-app-mobile-android",
+  "name": "Zxing Barcode Scanner App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.google.zxing.client.android&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/zz-fo.md",
+  "id": "zz-fo",
+  "name": "Zz.fo",
+  "url": "https://zz.fo/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/4chansearch-org.md",
+  "id": "4chansearch-org",
+  "name": "4chansearch.org",
+  "url": "https://4chansearch.org/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/8chan.md",
+  "id": "8chan",
+  "name": "8chan",
+  "url": "https://bloopbase.keybase.pub/LEFTHOOK/8chan/index.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/8chan-8kun-qresearch-board-search.md",
+  "id": "8chan-8kun-qresearch-board-search",
+  "name": "8chan/8kun QResearch Board Search",
+  "url": "https://qresear.ch/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/agoa-data-center.md",
+  "id": "agoa-data-center",
+  "name": "AGOA Data Center",
+  "url": "http://agoa.info",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/aiddata.md",
+  "id": "aiddata",
+  "name": "AidData",
+  "url": "http://aiddata.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/alberta-business-search.md",
+  "id": "alberta-business-search",
+  "name": "Alberta Business Search",
+  "url": "https://albertacorporations.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj.md",
+  "id": "alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj",
+  "name": "Alcool - R\u00e9gie des alcools, des courses et des jeux (RACJ)",
+  "url": "https://www.racj.gouv.qc.ca/en/registres-publics/alcool.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/archived-moe.md",
+  "id": "archived-moe",
+  "name": "archived.moe",
+  "url": "https://archived.moe/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/ariadne2-isti-cnr-it.md",
+  "id": "ariadne2-isti-cnr-it",
+  "name": "Ariadne2.isti.cnr.it",
+  "url": "http://ariadne2.isti.cnr.it/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/aws-public-datasets.md",
+  "id": "aws-public-datasets",
+  "name": "AWS Public Datasets",
+  "url": "http://aws.amazon.com/datasets",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/justia-blawgsearch.md",
+  "id": "justia-blawgsearch",
+  "name": "Justia BlawgSearch",
+  "url": "http://blawgsearch.justia.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/justice-directory.md",
+  "id": "justice-directory",
+  "name": "Justice Directory",
+  "url": "http://www.copnet.org/justice.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/kartoo-visual-meta-search-engine.md",
+  "id": "kartoo-visual-meta-search-engine",
+  "name": "Kartoo Visual Meta Search Engine",
+  "url": "http://www.kartoo.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/kelkoo-shopping-search-engine-europe.md",
+  "id": "kelkoo-shopping-search-engine-europe",
+  "name": "Kelkoo Shopping Search Engine (Europe)",
+  "url": "http://www.kelkoo.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/keys-openpgp-org.md",
+  "id": "keys-openpgp-org",
+  "name": "keys.openpgp.org",
+  "url": "https://keys.openpgp.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/kickasstorrents.md",
+  "id": "kickasstorrents",
+  "name": "KickassTorrents",
+  "url": "https://kickasstorrents.to",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/kiwireviews-new-zealand.md",
+  "id": "kiwireviews-new-zealand",
+  "name": "Kiwireviews (New Zealand)",
+  "url": "http://www.kiwireviews.co.nz",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/klug-suchen.md",
+  "id": "klug-suchen",
+  "name": "Klug Suchen",
+  "url": "https://www.klug-suchen.de/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/komo.md",
+  "id": "komo",
+  "name": "Komo",
+  "url": "https://komo.ai/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/krugle.md",
+  "id": "krugle",
+  "name": "Krugle",
+  "url": "https://opensearch.krugle.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/kvasir-search-engine-norway.md",
+  "id": "kvasir-search-engine-norway",
+  "name": "Kvasir Search Engine (Norway)",
+  "url": "http://www.kvasir.no",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/laiesken-search-engine-spain.md",
+  "id": "laiesken-search-engine-spain",
+  "name": "Laiesken Search Engine (Spain)",
+  "url": "http://www.laiesken.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/lapozz-search-engine-hungary.md",
+  "id": "lapozz-search-engine-hungary",
+  "name": "Lapozz Search Engine (Hungary)",
+  "url": "http://lapozz.hu",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/law-enforcement-resource-portal.md",
+  "id": "law-enforcement-resource-portal",
+  "name": "Law Enforcement Resource Portal",
+  "url": "http://www.officer.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/law-net-united-states.md",
+  "id": "law-net-united-states",
+  "name": "Law.net (United States)",
+  "url": "http://www.law.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/lawyerratingz-north-america.md",
+  "id": "lawyerratingz-north-america",
+  "name": "Lawyerratingz (North America)",
+  "url": "http://www.lawyerratingz.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

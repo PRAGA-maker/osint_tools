@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/ultimatecoupons.md",
+  "id": "ultimatecoupons",
+  "name": "Ultimatecoupons",
+  "url": "http://www.ultimatecoupons.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/uncover-it.md",
+  "id": "uncover-it",
+  "name": "Uncover It",
+  "url": "https://www.uncoverit.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/upwork.md",
+  "id": "upwork",
+  "name": "Upwork",
+  "url": "https://www.upwork.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/urlex-modified-url-expander.md",
+  "id": "urlex-modified-url-expander",
+  "name": "Urlex Modified URL Expander",
+  "url": "http://urlex.org",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/valkyrie-file-analysis.md",
+  "id": "valkyrie-file-analysis",
+  "name": "Valkyrie File Analysis",
+  "url": "https://consumer.valkyrie.comodo.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/violation-tracker.md",
+  "id": "violation-tracker",
+  "name": "Violation Tracker",
+  "url": "https://www.goodjobsfirst.org/violation-tracker",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/search/virusshare-com.md",
+  "id": "virusshare-com",
+  "name": "VirusShare.com",
+  "url": "https://virusshare.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/virustotal.md",
+  "id": "virustotal",
+  "name": "VirusTotal",
+  "url": "https://www.virustotal.com/gui/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/virustotal-2.md",
+  "id": "virustotal-2",
+  "name": "virustotal",
+  "url": "https://www.virustotal.com/gui/home/upload",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/visualorigins-digitaldigging-org.md",
+  "id": "visualorigins-digitaldigging-org",
+  "name": "visualorigins.digitaldigging.org",
+  "url": "https://visualorigins.digitaldigging.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/voyant-tools-org.md",
+  "id": "voyant-tools-org",
+  "name": "voyant-tools.org",
+  "url": "https://voyant-tools.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/search/vx-vault.md",
+  "id": "vx-vault",
+  "name": "VX Vault",
+  "url": "https://vxvault.net/ViriList.php",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/warble-alerts.md",
+  "id": "warble-alerts",
+  "name": "Warble Alerts",
+  "url": "https://warble.co",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/webfinery-source-code-search.md",
+  "id": "webfinery-source-code-search",
+  "name": "Webfinery \\| Source Code Search",
+  "url": "https://webfinery.com/search",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/webpreserver.md",
+  "id": "webpreserver",
+  "name": "WebPreserver",
+  "url": "https://www.pagefreezer.com/webpreserver/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/wetransfer.md",
+  "id": "wetransfer",
+  "name": "WeTransfer",
+  "url": "https://www.wetransfer.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

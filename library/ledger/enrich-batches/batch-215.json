@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/sources.md",
+  "id": "sources",
+  "name": "Sources",
+  "url": "http://www.sources.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/trexpertwitness.md",
+  "id": "trexpertwitness",
+  "name": "TRExpertWitness",
+  "url": "https://trexpertwitness.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/zintro.md",
+  "id": "zintro",
+  "name": "Zintro",
+  "url": "https://www.zintro.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/ziprecruiter.md",
+  "id": "ziprecruiter",
+  "name": "ZipRecruiter",
+  "url": "https://www.ziprecruiter.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/1c-database-converter.md",
+  "id": "1c-database-converter",
+  "name": "1C Database Converter",
+  "url": "https://github.com/soxoj/1c-database-converter",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/990-finder.md",
+  "id": "990-finder",
+  "name": "990 finder",
+  "url": "https://candid.org/research-and-verify-nonprofits/990-finder",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/academictree.md",
+  "id": "academictree",
+  "name": "AcademicTree",
+  "url": "https://academictree.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/advanced-registry-search.md",
+  "id": "advanced-registry-search",
+  "name": "Advanced Registry Search",
+  "url": "https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/advSrch?lang=eng",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/afrobarometer.md",
+  "id": "afrobarometer",
+  "name": "Afrobarometer",
+  "url": "https://afrobarometer.org/online-data-analysis/analyse-online",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/aihit.md",
+  "id": "aihit",
+  "name": "AIHIT",
+  "url": "https://www.aihitdata.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/akp-email-database.md",
+  "id": "akp-email-database",
+  "name": "AKP email database",
+  "url": "https://wikileaks.org//akp-emails/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/alberta-police-misconduct-database.md",
+  "id": "alberta-police-misconduct-database",
+  "name": "Alberta Police Misconduct Database",
+  "url": "https://www.policemisconductdatabase.ca/database/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/allpeople.md",
+  "id": "allpeople",
+  "name": "AllPeople",
+  "url": "https://allpeople.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/allstockslinks.md",
+  "id": "allstockslinks",
+  "name": "AllStocksLinks",
+  "url": "http://www.allstocks.com/links",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/amazon-asin-finder.md",
+  "id": "amazon-asin-finder",
+  "name": "Amazon ASIN Finder",
+  "url": "https://amazon-asin.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/amazon-com.md",
+  "id": "amazon-com",
+  "name": "Amazon.com",
+  "url": "https://www.amazon.com/gp/registry/search",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org-4.md",
+  "id": "en-wikipedia-org-4",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/Gab_(social_network)",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org-5.md",
+  "id": "en-wikipedia-org-5",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/Gettr",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org-6.md",
+  "id": "en-wikipedia-org-6",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/Mewe_(social_media)",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org-7.md",
+  "id": "en-wikipedia-org-7",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/Parler",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org-8.md",
+  "id": "en-wikipedia-org-8",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/Rumble_(company)",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/en-wikipedia-org-9.md",
+  "id": "en-wikipedia-org-9",
+  "name": "en.wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/Truth_Social",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/epieos.md",
+  "id": "epieos",
+  "name": "Epieos",
+  "url": "https://epieos.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/eu-usatoday-com.md",
+  "id": "eu-usatoday-com",
+  "name": "eu.usatoday.com",
+  "url": "https://eu.usatoday.com/story/tech/2025/08/07/how-to-turn-on-off-instagram-location-map/85557279007/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/expand-all-facebook-comments-bookmarklet.md",
+  "id": "expand-all-facebook-comments-bookmarklet",
+  "name": "Expand All Facebook Comments \u2013 Bookmarklet",
+  "url": "http://com.hemiola.com/2015/08/29/expand-all",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/exportdata.md",
+  "id": "exportdata",
+  "name": "ExportData",
+  "url": "https://www.exportdata.io/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-ad-s-link.md",
+  "id": "facebook-ad-s-link",
+  "name": "Facebook Ad's Link",
+  "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=political_and_issue_ads&country=GB&impression_search_field=has_impressions_lifetime&view_all_page_id=AddFacebookAccountIDNumberHere",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-bulk-id-usernames-to-s.md",
+  "id": "facebook-bulk-id-usernames-to-s",
+  "name": "Facebook Bulk ID (Usernames to #s)",
+  "url": "https://seotoolstation.com/bulk-facebook-id-finder",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-com.md",
+  "id": "facebook-com",
+  "name": "facebook.com",
+  "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=political_and_issue_ads&country=GB",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-directory-users-by-name.md",
+  "id": "facebook-directory-users-by-name",
+  "name": "Facebook Directory (Users by Name)",
+  "url": "https://www.facebook.com/directory/people",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-email-reverse-lookup.md",
+  "id": "facebook-email-reverse-lookup",
+  "name": "Facebook Email Reverse Lookup",
+  "url": "https://osint.support/chrome-extensions/2019/09/01/facebook-email-reverse-lookup.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/facebook-entity-id-parser.md",
+  "id": "facebook-entity-id-parser",
+  "name": "Facebook Entity Id Parser",
+  "url": "https://osint.support/chrome-extensions/2019/09/08/facebook-entity-id-parser.html",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/online-books-page-united-states.md",
+  "id": "online-books-page-united-states",
+  "name": "Online Books Page (United States)",
+  "url": "http://digital.library.upenn.edu/books/search.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/open-access-scholarly-journals.md",
+  "id": "open-access-scholarly-journals",
+  "name": "Open Access Scholarly Journals",
+  "url": "https://www.pagepress.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/open-hub.md",
+  "id": "open-hub",
+  "name": "Open Hub",
+  "url": "https://www.openhub.net/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/open-library.md",
+  "id": "open-library",
+  "name": "Open Library",
+  "url": "https://openlibrary.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/open-secrets.md",
+  "id": "open-secrets",
+  "name": "Open Secrets",
+  "url": "http://www.opensecrets.org/pfds/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/opendoar.md",
+  "id": "opendoar",
+  "name": "OpenDOAR",
+  "url": "https://www.opendoar.org/search.php",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/opengrey-eu-papers.md",
+  "id": "opengrey-eu-papers",
+  "name": "OpenGrey EU Papers",
+  "url": "https://opengrey.eu/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/opentable.md",
+  "id": "opentable",
+  "name": "Opentable",
+  "url": "http://www.opentable.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/oscobo.md",
+  "id": "oscobo",
+  "name": "Oscobo",
+  "url": "https://www.oscobo.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/osint-cheat-sheet.md",
+  "id": "osint-cheat-sheet",
+  "name": "OSINT-Cheat-sheet",
+  "url": "https://github.com/Jieyab89/OSINT-Cheat-sheet",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/osint-combine-tools.md",
+  "id": "osint-combine-tools",
+  "name": "OSINT Combine Tools",
+  "url": "https://www.osintcombine.com/tools",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/osint-encyclopedia-optiv-cham423.md",
+  "id": "osint-encyclopedia-optiv-cham423",
+  "name": "OSINT Encyclopedia (optiv / cham423)",
+  "url": "https://github.com/optiv/OSINT_Encyclopedia",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/osint-investigation-assistant-lambda-black.md",
+  "id": "osint-investigation-assistant-lambda-black",
+  "name": "OSINT Investigation Assistant (lambda.black)",
+  "url": "https://lambda.black/osint.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/osint-link.md",
+  "id": "osint-link",
+  "name": "Osint.link",
+  "url": "https://osint.link/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/osint-open-source-projects.md",
+  "id": "osint-open-source-projects",
+  "name": "Osint Open Source Projects",
+  "url": "https://awesomeopensource.com/projects/osint",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/osintgeek-tools.md",
+  "id": "osintgeek-tools",
+  "name": "OSINTgeek Tools",
+  "url": "https://osintgeek.de/tools",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

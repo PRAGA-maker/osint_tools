@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/beyond.md",
+  "id": "beyond",
+  "name": "Beyond",
+  "url": "http://www.beyond.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/campuscareercenter.md",
+  "id": "campuscareercenter",
+  "name": "CampusCareerCenter",
+  "url": "http://www.campuscareercenter.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/careerbuilder.md",
+  "id": "careerbuilder",
+  "name": "CareerBuilder",
+  "url": "http://www.careerbuilder.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/college-recruiter.md",
+  "id": "college-recruiter",
+  "name": "College Recruiter",
+  "url": "https://www.collegerecruiter.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/community-search.md",
+  "id": "community-search",
+  "name": "\u041f\u043e\u0438\u0441\u043a \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432 (Community Search)",
+  "url": "https://vk.com/communities",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/craiglist.md",
+  "id": "craiglist",
+  "name": "Craiglist",
+  "url": "http://losangeles.craigslist.org",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/cvfox.md",
+  "id": "cvfox",
+  "name": "CVFox",
+  "url": "http://www.cvfox.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/dice.md",
+  "id": "dice",
+  "name": "Dice",
+  "url": "http://www.dice.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/dob-search-death-records.md",
+  "id": "dob-search-death-records",
+  "name": "DOB Search - Death records",
+  "url": "http://www.dobsearch.com/death-records",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/eluta-canada.md",
+  "id": "eluta-canada",
+  "name": "Eluta (Canada)",
+  "url": "http://www.eluta.ca",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/eurojobs.md",
+  "id": "eurojobs",
+  "name": "Eurojobs",
+  "url": "https://www.eurojobs.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/expertisefinder.md",
+  "id": "expertisefinder",
+  "name": "ExpertiseFinder",
+  "url": "http://www.expertisefinder.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/expertpages.md",
+  "id": "expertpages",
+  "name": "ExpertPages",
+  "url": "http://expertpages.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/experts-com.md",
+  "id": "experts-com",
+  "name": "Experts.com",
+  "url": "http://www.experts.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/fish4jobs.md",
+  "id": "fish4jobs",
+  "name": "Fish4Jobs",
+  "url": "http://www.fish4.co.uk",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/globalexperts.md",
+  "id": "globalexperts",
+  "name": "GlobalExperts",
+  "url": "http://www.theglobalexperts.org",
+  "category": "people-search",
+  "mp": "medium"
+ }
+]

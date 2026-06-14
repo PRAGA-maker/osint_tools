@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/googler.md",
+  "id": "googler",
+  "name": "Googler",
+  "url": "https://github.com/jarun/googler",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/goosh-org.md",
+  "id": "goosh-org",
+  "name": "goosh.org",
+  "url": "https://goosh.org/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/grey-guide.md",
+  "id": "grey-guide",
+  "name": "Grey Guide",
+  "url": "http://greyguide.isti.cnr.it",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/grey-literature-list-of-gateways.md",
+  "id": "grey-literature-list-of-gateways",
+  "name": "Grey Literature \u2013 List of Gateways",
+  "url": "http://csulb.libguides.com/graylit",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/grey-literature-strategies.md",
+  "id": "grey-literature-strategies",
+  "name": "Grey Literature Strategies",
+  "url": "http://greylitstrategies.info",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/greynet-international.md",
+  "id": "greynet-international",
+  "name": "GreyNet International",
+  "url": "http://www.greynet.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/greynoise-io.md",
+  "id": "greynoise-io",
+  "name": "Greynoise.io",
+  "url": "https://www.greynoise.io/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/hacker-news-algolia.md",
+  "id": "hacker-news-algolia",
+  "name": "Hacker News Algolia",
+  "url": "https://hn.algolia.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/hacking-the-cloud.md",
+  "id": "hacking-the-cloud",
+  "name": "Hacking the Cloud",
+  "url": "https://hackingthe.cloud/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/headlinespot.md",
+  "id": "headlinespot",
+  "name": "HeadlineSpot",
+  "url": "http://www.headlinespot.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/heystack.md",
+  "id": "heystack",
+  "name": "Heystack",
+  "url": "https://heystacks.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/highwire-free-online-full-text-articles.md",
+  "id": "highwire-free-online-full-text-articles",
+  "name": "HighWire: Free Online Full-text Articles",
+  "url": "http://highwire.stanford.edu/lists/freeart.dtl",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/i-search-from.md",
+  "id": "i-search-from",
+  "name": "I search from",
+  "url": "http://isearchfrom.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/iconfinder-com.md",
+  "id": "iconfinder-com",
+  "name": "Iconfinder.com",
+  "url": "https://www.iconfinder.com/search",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/inside.md",
+  "id": "inside",
+  "name": "Inside",
+  "url": "https://inside.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/inventory-raw-pm.md",
+  "id": "inventory-raw-pm",
+  "name": "Inventory Raw Pm",
+  "url": "https://inventory.raw.pm/",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

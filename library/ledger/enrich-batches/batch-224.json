@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/ice-patrol.md",
+  "id": "ice-patrol",
+  "name": "ICE Patrol",
+  "url": "https://ice.wikileaks.org/search",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/illinois-public-salaries.md",
+  "id": "illinois-public-salaries",
+  "name": "Illinois Public Salaries",
+  "url": "https://c0ctb111.caspio.com/dp/1a7210001e4dbabdb7204962bc03",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/inc-5000.md",
+  "id": "inc-5000",
+  "name": "Inc. 5000",
+  "url": "http://www.inc.com/inc5000",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/inciteful.md",
+  "id": "inciteful",
+  "name": "INCITEFUL",
+  "url": "https://inciteful.xyz/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/us-political-records/influence-explorer.md",
+  "id": "influence-explorer",
+  "name": "Influence Explorer",
+  "url": "https://influenceexplorer.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/insight-jini.md",
+  "id": "insight-jini",
+  "name": "Insight Jini",
+  "url": "https://insightjini.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/annual-reports/international-registries.md",
+  "id": "international-registries",
+  "name": "International Registries",
+  "url": "https://www.gov.uk/government/publications/overseas-registries/overseas-registries",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/general-info-and-news/international-white-pages.md",
+  "id": "international-white-pages",
+  "name": "International White Pages",
+  "url": "https://www.wayp.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/investing-com.md",
+  "id": "investing-com",
+  "name": "Investing.com",
+  "url": "https://www.investing.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/iowa-cities-police-budgets.md",
+  "id": "iowa-cities-police-budgets",
+  "name": "Iowa Cities police budgets",
+  "url": "https://public.flourish.studio/visualisation/3168834/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/ipums-variable-search.md",
+  "id": "ipums-variable-search",
+  "name": "IPUMS Variable Search",
+  "url": "https://variable-search.ipums.org/#/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/employee-profiles-and-resumes/jobster.md",
+  "id": "jobster",
+  "name": "Jobster",
+  "url": "https://jobster.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/judyrecords.md",
+  "id": "judyrecords",
+  "name": "judyrecords",
+  "url": "https://www.judyrecords.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/kansas-restaurant-inspections.md",
+  "id": "kansas-restaurant-inspections",
+  "name": "Kansas Restaurant Inspections",
+  "url": "https://b2.caspio.com/dp/a1a31000af3bac4c5e434987a857",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/knowledge-guide-to-international-company-registration.md",
+  "id": "knowledge-guide-to-international-company-registration",
+  "name": "Knowledge guide to international company registration",
+  "url": "http://www.icaew.com/en/library/subject-gateways/business-management/company-administration/knowledge-guide-international-company-registration",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/ky-state-salary-2019.md",
+  "id": "ky-state-salary-2019",
+  "name": "KY State Salary 2019",
+  "url": "https://c0ect130.caspio.com/dp/c8521000065e102da08c40e696ad",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

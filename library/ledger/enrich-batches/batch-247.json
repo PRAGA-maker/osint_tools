@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/felo.md",
+  "id": "felo",
+  "name": "Felo",
+  "url": "https://felo.ai/search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/filesearch-ru.md",
+  "id": "filesearch-ru",
+  "name": "FileSearch.ru",
+  "url": "http://www.filesearching.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/filmaffinity-canada.md",
+  "id": "filmaffinity-canada",
+  "name": "FilmAffinity (Canada)",
+  "url": "http://www.filmaffinity.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/finaid-mail-drop-search.md",
+  "id": "finaid-mail-drop-search",
+  "name": "FinAid Mail Drop Search",
+  "url": "http://www.finaid.org/scholarships/maildropsearch.phtml",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/find-similar-sites.md",
+  "id": "find-similar-sites",
+  "name": "Find Similar Sites",
+  "url": "https://www.findsimilarsites.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/find-sort-codes.md",
+  "id": "find-sort-codes",
+  "name": "Find Sort Codes",
+  "url": "http://findsortcodes.co.uk/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/findhow.md",
+  "id": "findhow",
+  "name": "FindHow",
+  "url": "http://www.findhow.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/findlaw.md",
+  "id": "findlaw",
+  "name": "FindLaw",
+  "url": "http://lawyers.findlaw.com/lawyer/state.jsp",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/findsounds-2.md",
+  "id": "findsounds-2",
+  "name": "FindSounds",
+  "url": "https://findsounds.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/other-search/findthedata-a-research-engine.md",
+  "id": "findthedata-a-research-engine",
+  "name": "FindTheData A Research Engine",
+  "url": "https://www.findthedata.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/fixya.md",
+  "id": "fixya",
+  "name": "Fixya",
+  "url": "http://www.fixya.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/flipboard.md",
+  "id": "flipboard",
+  "name": "Flipboard",
+  "url": "https://flipboard.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/flippity.md",
+  "id": "flippity",
+  "name": "Flippity",
+  "url": "https://www.flippity.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/flixster.md",
+  "id": "flixster",
+  "name": "Flixster",
+  "url": "http://www.flixster.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/fluther.md",
+  "id": "fluther",
+  "name": "Fluther",
+  "url": "http://www.fluther.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/fofa.md",
+  "id": "fofa",
+  "name": "FOFA",
+  "url": "https://en.fofa.info/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

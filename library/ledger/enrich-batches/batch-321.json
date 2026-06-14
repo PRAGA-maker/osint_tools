@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/osint-team.md",
+  "id": "osint-team",
+  "name": "OSINT Team",
+  "url": "https://www.osintteam.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-techniques.md",
+  "id": "osint-techniques",
+  "name": "OSINT Techniques",
+  "url": "https://www.osinttechniques.com/blog",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-tool.md",
+  "id": "osint-tool",
+  "name": "OSINT-Tool",
+  "url": "https://www.osint-tool.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-updates-a-free-weekly-newsletter-for-osinters.md",
+  "id": "osint-updates-a-free-weekly-newsletter-for-osinters",
+  "name": "OSINT Updates - a free weekly newsletter for OSINTers",
+  "url": "https://osintupdates.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osintcombine-tools.md",
+  "id": "osintcombine-tools",
+  "name": "Osintcombine Tools",
+  "url": "https://osintcombine.tools/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osintcurious.md",
+  "id": "osintcurious",
+  "name": "OSINTCurious",
+  "url": "https://osintcurio.us/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osintstalker.md",
+  "id": "osintstalker",
+  "name": "OsintStalker",
+  "url": "https://github.com/milo2012/osintstalker",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/osrframework.md",
+  "id": "osrframework",
+  "name": "OSRFramework",
+  "url": "https://github.com/i3visio/osrframework",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/ossec.md",
+  "id": "ossec",
+  "name": "OSSEC",
+  "url": "https://ossec.github.io",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/outwit.md",
+  "id": "outwit",
+  "name": "Outwit",
+  "url": "http://www.outwit.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/overview.md",
+  "id": "overview",
+  "name": "Overview",
+  "url": "https://www.overviewdocs.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/wordlist/owasp-d4n155.md",
+  "id": "owasp-d4n155",
+  "name": "OWASP D4N155",
+  "url": "https://github.com/OWASP/D4N155",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/palladio.md",
+  "id": "palladio",
+  "name": "Palladio",
+  "url": "http://hdlab.stanford.edu/palladio",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/parrotsec-os.md",
+  "id": "parrotsec-os",
+  "name": "ParrotSec OS",
+  "url": "https://www.parrotsec.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/passiverecon.md",
+  "id": "passiverecon",
+  "name": "PassiveRecon",
+  "url": "https://github.com/rudra496/PassiveRecon-Aggregator",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/paterva-maltego.md",
+  "id": "paterva-maltego",
+  "name": "Paterva / Maltego",
+  "url": "https://www.maltego.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

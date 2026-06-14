@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/security-in-a-box.md",
+  "id": "security-in-a-box",
+  "name": "Security in a Box",
+  "url": "https://securityinabox.org/en/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/send.md",
+  "id": "send",
+  "name": "Send",
+  "url": "https://send.actionsack.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/send-text-free.md",
+  "id": "send-text-free",
+  "name": "Send text free",
+  "url": "https://globfone.com/send-text/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/sendatext.md",
+  "id": "sendatext",
+  "name": "SendaText",
+  "url": "https://www.sendatext.co/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/septor-linux.md",
+  "id": "septor-linux",
+  "name": "Septor Linux",
+  "url": "https://septor.sourceforge.io",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/sessionbox.md",
+  "id": "sessionbox",
+  "name": "SessionBox",
+  "url": "https://chrome.google.com/webstore/detail/sessionbox-multi-login-to/megbklhjamjbcafknkgmokldgolkdfig?hl=ru",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/shadowcrypt-messaging.md",
+  "id": "shadowcrypt-messaging",
+  "name": "ShadowCrypt Messaging",
+  "url": "http://shadowcrypt-release.weebly.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/shadowcrypt-tools.md",
+  "id": "shadowcrypt-tools",
+  "name": "Shadowcrypt Tools",
+  "url": "https://shadowcrypt.net/tools/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/shazam-music-entertainment-app-mobile-android.md",
+  "id": "shazam-music-entertainment-app-mobile-android",
+  "name": "Shazam Music Entertainment App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.shazam.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/shazam-music-entertainment-app-mobile-ios.md",
+  "id": "shazam-music-entertainment-app-mobile-ios",
+  "name": "Shazam Music Entertainment App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/shazam-discover-music-artists/id284993459?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/shiftyjelly-pocketcasts-networking-app-mobile-android.md",
+  "id": "shiftyjelly-pocketcasts-networking-app-mobile-android",
+  "name": "Shiftyjelly Pocketcasts Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/similarsites-firefox.md",
+  "id": "similarsites-firefox",
+  "name": "SimilarSites \u2013 Firefox",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/similarsites",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/simplelogin.md",
+  "id": "simplelogin",
+  "name": "SimpleLogin",
+  "url": "https://simplelogin.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/sin-generator.md",
+  "id": "sin-generator",
+  "name": "SIN Generator",
+  "url": "https://www.fakenamegenerator.com/social-insurance-number.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/skype-voip-communications-app-mobile-android.md",
+  "id": "skype-voip-communications-app-mobile-android",
+  "name": "Skype VOIP Communications App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.skype.raider",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/skype-voip-communications-app-mobile-ios.md",
+  "id": "skype-voip-communications-app-mobile-ios",
+  "name": "Skype VOIP Communications App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/skype-for-iphone/id304878510?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

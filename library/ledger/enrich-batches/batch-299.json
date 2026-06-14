@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/transportation/free-car-license-plate-lookup.md",
+  "id": "free-car-license-plate-lookup",
+  "name": "Free Car License Plate Lookup",
+  "url": "https://vincheck.info/free-license-plate-lookup",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/free-license-plate-search-check-any-license-plate-free.md",
+  "id": "free-license-plate-search-check-any-license-plate-free",
+  "name": "FREE License Plate Search | Check Any License Plate FREE",
+  "url": "https://www.vehiclehistory.com/license-plate-search.php",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/free-vin-decoder-vindecoderz.md",
+  "id": "free-vin-decoder-vindecoderz",
+  "name": "Free VIN decoder - Vindecoderz",
+  "url": "https://www.vindecoderz.com",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/freecarcheck-co-uk.md",
+  "id": "freecarcheck-co-uk",
+  "name": "Freecarcheck.co.uk",
+  "url": "https://www.freecarcheck.co.uk",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/ginfo-civil-aviation-authority-aircraft-search-united-kingdom.md",
+  "id": "ginfo-civil-aviation-authority-aircraft-search-united-kingdom",
+  "name": "GINFO Civil Aviation Authority Aircraft Search (United Kingdom)",
+  "url": "https://siteapps.caa.co.uk/g-info/",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/marine-records/global-fishing-watch.md",
+  "id": "global-fishing-watch",
+  "name": "Global Fishing Watch",
+  "url": "https://globalfishingwatch.org",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/hertz-rent-receipt.md",
+  "id": "hertz-rent-receipt",
+  "name": "Hertz Rent Receipt",
+  "url": "https://www.hertz.com/rentacar/receipts/request-receipts.do",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/how-s-my-driving-ny.md",
+  "id": "how-s-my-driving-ny",
+  "name": "How's My Driving NY",
+  "url": "https://www.howsmydrivingny.nyc/",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/icao-civil-and-military-airspace-suashp.md",
+  "id": "icao-civil-and-military-airspace-suashp",
+  "name": "ICAO Civil and Military airspace SUASHP",
+  "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=5db021bcb221498f81be055b3e238bf8",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/icarus-flights.md",
+  "id": "icarus-flights",
+  "name": "Icarus.flights",
+  "url": "https://icarus.flights/",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/inmarsat-ships-directory.md",
+  "id": "inmarsat-ships-directory",
+  "name": "Inmarsat Ships Directory",
+  "url": "http://www.inmarsat.com/ships-directory",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/international-aircraft-search-by-manufacturer.md",
+  "id": "international-aircraft-search-by-manufacturer",
+  "name": "International Aircraft Search by Manufacturer",
+  "url": "https://www.regosearch.com",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/international-registry-of-mobile-assets.md",
+  "id": "international-registry-of-mobile-assets",
+  "name": "International Registry of Mobile Assets",
+  "url": "https://www.internationalregistry.aero/ir-web",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/investigative-dashboard.md",
+  "id": "investigative-dashboard",
+  "name": "Investigative Dashboard",
+  "url": "http://www.investigativedashboard.org/",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/itu-ship-station-database.md",
+  "id": "itu-ship-station-database",
+  "name": "ITU Ship Station Database",
+  "url": "https://www.itu.int/en/ITU-R/terrestrial/mars/Pages/default.aspx",
+  "category": "transportation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/transportation/jane-s-defence-land-platforms-yearbook.md",
+  "id": "jane-s-defence-land-platforms-yearbook",
+  "name": "Jane\u2019s Defence Land Platforms Yearbook",
+  "url": "https://www.ihs.com/products/janes-defence-land-platforms.html",
+  "category": "transportation",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/eraser.md",
+  "id": "eraser",
+  "name": "Eraser",
+  "url": "http://eraser.heidi.ie",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/euvsdisinfo.md",
+  "id": "euvsdisinfo",
+  "name": "EUvsDisinfo",
+  "url": "https://euvsdisinfo.eu/category/blog/feed/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/exhibit.md",
+  "id": "exhibit",
+  "name": "Exhibit",
+  "url": "http://www.simile-widgets.org/exhibit",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/explainshell-com.md",
+  "id": "explainshell-com",
+  "name": "explainshell.com",
+  "url": "https://explainshell.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/extendclass.md",
+  "id": "extendclass",
+  "name": "ExtendClass",
+  "url": "https://extendsclass.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/fake-news-inforrm-s-blog.md",
+  "id": "fake-news-inforrm-s-blog",
+  "name": "Fake News \u2013 Inforrm's Blog",
+  "url": "https://inforrm.org/tag/fake-news/feed/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/faviconhash.md",
+  "id": "faviconhash",
+  "name": "FaviconHash",
+  "url": "https://kriztalz.sh/favicon-hash/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/filevault.md",
+  "id": "filevault",
+  "name": "FileVault",
+  "url": "https://support.apple.com/en-us/HT204837",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/find-osint-tool.md",
+  "id": "find-osint-tool",
+  "name": "Find osint tool",
+  "url": "https://find.osint-tool.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/javascript/firebug.md",
+  "id": "firebug",
+  "name": "Firebug",
+  "url": "https://getfirebug.com/downloads/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/flot.md",
+  "id": "flot",
+  "name": "Flot",
+  "url": "http://www.flotcharts.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/fotor.md",
+  "id": "fotor",
+  "name": "Fotor",
+  "url": "https://www.fotor.com/photo-editor-app/editor/basic",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/foxyrecon.md",
+  "id": "foxyrecon",
+  "name": "FoxyRecon",
+  "url": "https://addons.mozilla.org/ru/firefox/addon/foxyrecon/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/frack.md",
+  "id": "frack",
+  "name": "Frack",
+  "url": "https://github.com/sensepost/Frack",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/functions-online.md",
+  "id": "functions-online",
+  "name": "Functions Online",
+  "url": "https://www.functions-online.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/fusioncharts.md",
+  "id": "fusioncharts",
+  "name": "FusionCharts",
+  "url": "http://www.fusioncharts.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

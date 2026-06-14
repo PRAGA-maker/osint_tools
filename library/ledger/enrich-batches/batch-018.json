@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/perry-castaneda-library.md",
+  "id": "perry-castaneda-library",
+  "name": "Perry Castaneda Library",
+  "url": "https://www.lib.utexas.edu/maps",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/pic2map.md",
+  "id": "pic2map",
+  "name": "Pic2Map",
+  "url": "https://www.pic2map.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/polymaps.md",
+  "id": "polymaps",
+  "name": "Polymaps",
+  "url": "http://polymaps.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/qgis.md",
+  "id": "qgis",
+  "name": "QGIS",
+  "url": "http://qgis.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/quickmaps.md",
+  "id": "quickmaps",
+  "name": "QuickMaps",
+  "url": "https://chrome.google.com/webstore/detail/quick-maps/bgbojmobaekecckmomemopckmeipecij",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/reverseimagelocation.md",
+  "id": "reverseimagelocation",
+  "name": "ReverseImageLocation",
+  "url": "https://reverseimagelocation.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/sas-planet.md",
+  "id": "sas-planet",
+  "name": "SAS Planet",
+  "url": "http://www.sasgis.org/sasplaneta/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/satellites-pro.md",
+  "id": "satellites-pro",
+  "name": "Satellites Pro",
+  "url": "https://satellites.pro/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/satintel.md",
+  "id": "satintel",
+  "name": "SatIntel",
+  "url": "https://github.com/ANG13T/SatIntel",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/scribble-maps.md",
+  "id": "scribble-maps",
+  "name": "Scribble Maps",
+  "url": "http://scribblemaps.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/map-reporting-tools/scribblemaps.md",
+  "id": "scribblemaps",
+  "name": "ScribbleMaps",
+  "url": "https://www.scribblemaps.com/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/sentinel-hub.md",
+  "id": "sentinel-hub",
+  "name": "Sentinel Hub",
+  "url": "https://www.sentinel-hub.com/explore/sentinelplayground/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/skyfi-com-satellite-open-data.md",
+  "id": "skyfi-com-satellite-open-data",
+  "name": "SkyFi.com - Satellite Open Data",
+  "url": "https://app.skyfi.com/explore/open",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/soar.md",
+  "id": "soar",
+  "name": "SOAR",
+  "url": "https://soar.earth/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/storymaps.md",
+  "id": "storymaps",
+  "name": "StoryMaps",
+  "url": "http://storymaps.arcgis.com/en",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/geolocation-tools/suncalc.md",
+  "id": "suncalc",
+  "name": "SunCalc",
+  "url": "https://suncalc.net/",
+  "category": "geolocation",
+  "mp": "high"
+ }
+]

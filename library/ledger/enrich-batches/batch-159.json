@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/homestay.md",
+  "id": "homestay",
+  "name": "Homestay",
+  "url": "https://www.homestay.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/hot-or-not.md",
+  "id": "hot-or-not",
+  "name": "Hot Or Not",
+  "url": "https://hotornot.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/hot-sheet-news.md",
+  "id": "hot-sheet-news",
+  "name": "Hot Sheet News",
+  "url": "http://www.hotsheet.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/huffington-post-online-news.md",
+  "id": "huffington-post-online-news",
+  "name": "Huffington Post Online News",
+  "url": "http://www.huffingtonpost.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ideone.md",
+  "id": "ideone",
+  "name": "ideone",
+  "url": "https://Ideone.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/information-week-news.md",
+  "id": "information-week-news",
+  "name": "Information Week News",
+  "url": "http://www.informationweek.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/inkdrop-international-newspapers.md",
+  "id": "inkdrop-international-newspapers",
+  "name": "Inkdrop International Newspapers",
+  "url": "http://www.inkdrop.net/news",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/irc-search/ircp.md",
+  "id": "ircp",
+  "name": "IRCP",
+  "url": "https://github.com/internet-relay-chat/IRCP",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/irc-search/ircsnapshot.md",
+  "id": "ircsnapshot",
+  "name": "ircsnapshot",
+  "url": "https://github.com/bwall/ircsnapshot",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/itpro.md",
+  "id": "itpro",
+  "name": "ITPro",
+  "url": "http://www.itpro.co.uk",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/itv-television-united-kingdom.md",
+  "id": "itv-television-united-kingdom",
+  "name": "ITV Television (United Kingdom)",
+  "url": "http://www.itv.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/itworldcanada.md",
+  "id": "itworldcanada",
+  "name": "ITWorldCanada",
+  "url": "http://www.itworldcanada.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ivpaste.md",
+  "id": "ivpaste",
+  "name": "ivpaste",
+  "url": "https://Ivpaste.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/jsbin.md",
+  "id": "jsbin",
+  "name": "jsbin",
+  "url": "https://Jsbin.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/justfornurses-co-uk.md",
+  "id": "justfornurses-co-uk",
+  "name": "justfornurses.co.uk",
+  "url": "http://www.justfornurses.co.uk/forum/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/justpaste.md",
+  "id": "justpaste",
+  "name": "justpaste",
+  "url": "https://Justpaste.it",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

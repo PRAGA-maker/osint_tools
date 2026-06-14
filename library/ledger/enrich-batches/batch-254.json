@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/itlaw.md",
+  "id": "itlaw",
+  "name": "ITLaw",
+  "url": "http://itlaw.wikia.com/wiki/The_IT_Law_Wiki",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ivmachiavelli-osint-team-links.md",
+  "id": "ivmachiavelli-osint-team-links",
+  "name": "IVMachiavelli OSINT Team Links",
+  "url": "https://github.com/IVMachiavelli/OSINT_Team_Links",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ixigo.md",
+  "id": "ixigo",
+  "name": "Ixigo",
+  "url": "http://www.ixigo.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/izito.md",
+  "id": "izito",
+  "name": "iZito",
+  "url": "https://www.izito.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jayde-b2b-business-search.md",
+  "id": "jayde-b2b-business-search",
+  "name": "Jayde B2B Business Search",
+  "url": "http://www.jayde.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jersey-financial-services-commission.md",
+  "id": "jersey-financial-services-commission",
+  "name": "Jersey Financial Services Commission",
+  "url": "http://www.jerseyfsc.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jewish-virtual-library-online.md",
+  "id": "jewish-virtual-library-online",
+  "name": "Jewish Virtual Library Online",
+  "url": "https://www.jewishvirtuallibrary.org/jsource/Bible/jpstoc.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jobactive-job-search-engine-australia.md",
+  "id": "jobactive-job-search-engine-australia",
+  "name": "JobActive Job Search Engine (Australia)",
+  "url": "https://jobsearch.gov.au/job/search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jobrapido-job-search-engine-worldwide.md",
+  "id": "jobrapido-job-search-engine-worldwide",
+  "name": "Jobrapido Job Search Engine Worldwide",
+  "url": "http://ca.jobrapido.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jobs-united-kingdom.md",
+  "id": "jobs-united-kingdom",
+  "name": "Jobs (United Kingdom)",
+  "url": "http://www.jobs.ac.uk",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jobsdb-asia.md",
+  "id": "jobsdb-asia",
+  "name": "JobsDB (Asia)",
+  "url": "http://www.jobsdb.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jora-job-search-engine-new-zealand.md",
+  "id": "jora-job-search-engine-new-zealand",
+  "name": "Jora Job Search Engine (New Zealand)",
+  "url": "https://nz.jora.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/journalist-s-toolbox-investigative.md",
+  "id": "journalist-s-toolbox-investigative",
+  "name": "Journalist's Toolbox - Investigative",
+  "url": "https://www.journaliststoolbox.org/category/investigative/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jubii-search-engine-denmark.md",
+  "id": "jubii-search-engine-denmark",
+  "name": "Jubii Search Engine (Denmark)",
+  "url": "http://www.jubii.dk",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/jurispro-expert-witness-listings-united-states.md",
+  "id": "jurispro-expert-witness-listings-united-states",
+  "name": "JurisPro Expert Witness Listings (United States)",
+  "url": "http://www.jurispro.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/jurn.md",
+  "id": "jurn",
+  "name": "JURN",
+  "url": "https://www.jurn.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

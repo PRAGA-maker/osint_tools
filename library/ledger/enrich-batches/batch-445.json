@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/bing-news.md",
+  "id": "bing-news",
+  "name": "Bing News",
+  "url": "http://www.bing.com/news",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/bing-vs-google.md",
+  "id": "bing-vs-google",
+  "name": "Bing vs. Google",
+  "url": "http://bvsg.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/blinde-kuh-childrens-search-engine-germany.md",
+  "id": "blinde-kuh-childrens-search-engine-germany",
+  "name": "Blinde-Kuh Childrens Search Engine (Germany)",
+  "url": "http://www.blinde-kuh.de",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/blogs-search-engine.md",
+  "id": "blogs-search-engine",
+  "name": "Blogs Search Engine",
+  "url": "https://cse.google.com/cse?cx=013991603413798772546:8c1g6f0frp8#gsc.tab=0",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/blogsearchengine.md",
+  "id": "blogsearchengine",
+  "name": "BlogSearchEngine",
+  "url": "http://www.blogsearchengine.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/boolean-builder-thebalazs.md",
+  "id": "boolean-builder-thebalazs",
+  "name": "Boolean Builder theBalazs",
+  "url": "https://docs.google.com/spreadsheets/d/1v27Oybrv9H5sn3MMD76clLp2B4mwhA7OtUkfQzlNu8w/edit#gid=940516593",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/booleanstringbank.md",
+  "id": "booleanstringbank",
+  "name": "BooleanStringBank",
+  "url": "https://www.scoperac.com/booleanstringbank/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/boolify-boolean-search-teaching-tool-for-kids.md",
+  "id": "boolify-boolean-search-teaching-tool-for-kids",
+  "name": "Boolify Boolean Search Teaching Tool For Kids",
+  "url": "http://www.kidzsearch.com/boolify",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/bright-local-search-result-checker.md",
+  "id": "bright-local-search-result-checker",
+  "name": "Bright Local Search Result Checker",
+  "url": "https://www.brightlocal.com/local-search-results-checker/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/buckets-grayhatwarfare-com.md",
+  "id": "buckets-grayhatwarfare-com",
+  "name": "buckets.grayhatwarfare.com",
+  "url": "http://buckets.grayhatwarfare.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/bugbountyhunting.md",
+  "id": "bugbountyhunting",
+  "name": "BugBountyHunting",
+  "url": "https://www.bugbountyhunting.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/cellufun.md",
+  "id": "cellufun",
+  "name": "Cellufun",
+  "url": "http://www.cellufun.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/cloud-file-search-engine.md",
+  "id": "cloud-file-search-engine",
+  "name": "Cloud File Search Engine",
+  "url": "http://filesearch.link",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/cnn.md",
+  "id": "cnn",
+  "name": "CNN",
+  "url": "http://edition.cnn.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/control-validation-compass.md",
+  "id": "control-validation-compass",
+  "name": "Control Validation Compass",
+  "url": "https://controlcompass.github.io/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/core.md",
+  "id": "core",
+  "name": "Core",
+  "url": "https://core.ac.uk/search",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/phone/nuwber.md",
+  "id": "nuwber",
+  "name": "Nuwber",
+  "url": "https://nuwber.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/ofcom-org-uk.md",
+  "id": "ofcom-org-uk",
+  "name": "ofcom.org.uk",
+  "url": "https://checker.ofcom.org.uk/mobile-coverage",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/oldphonebook-com.md",
+  "id": "oldphonebook-com",
+  "name": "Oldphonebook.com",
+  "url": "http://www.oldphonebook.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/open-cnam.md",
+  "id": "open-cnam",
+  "name": "Open Cnam",
+  "url": "https://www.opencnam.com",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/opsimathy.md",
+  "id": "opsimathy",
+  "name": "Opsimathy",
+  "url": "https://www.opsimathy.co.uk/phone-format-search-tool/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/personlookup-co-nz.md",
+  "id": "personlookup-co-nz",
+  "name": "personlookup.co.nz",
+  "url": "https://personlookup.co.nz/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/phone-number-lookup-tool.md",
+  "id": "phone-number-lookup-tool",
+  "name": "Phone Number Lookup Tool",
+  "url": "https://shadowcrypt.net/tools/phone",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/phone-number-search-tool.md",
+  "id": "phone-number-search-tool",
+  "name": "Phone number search Tool",
+  "url": "https://www.aware-online.com/en/osint-tools/phone-number-search-tool/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/phone-scoop.md",
+  "id": "phone-scoop",
+  "name": "Phone Scoop",
+  "url": "https://www.phonescoop.com/phones/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/phone-validator.md",
+  "id": "phone-validator",
+  "name": "Phone Validator",
+  "url": "https://www.phonevalidator.com/index.aspx",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/phone-validator-us.md",
+  "id": "phone-validator-us",
+  "name": "Phone Validator (US)",
+  "url": "https://www.phonevalidator.com",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/phonebooks-com.md",
+  "id": "phonebooks-com",
+  "name": "phonebooks.com",
+  "url": "https://www.phonebooks.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/phonenumbers-store.md",
+  "id": "phonenumbers-store",
+  "name": "phonenumbers.store",
+  "url": "https://www.phonenumbers.store/ukpayphone/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/phonerator.md",
+  "id": "phonerator",
+  "name": "Phonerator",
+  "url": "https://www.martinvigo.com/phonerator/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/pleasepress1-com.md",
+  "id": "pleasepress1-com",
+  "name": "pleasepress1.com",
+  "url": "https://www.pleasepress1.com",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/receive-sms-free.md",
+  "id": "receive-sms-free",
+  "name": "Receive SMS (free)",
+  "url": "http://sms.sellaite.com",
+  "category": "phone",
+  "mp": "high"
+ }
+]

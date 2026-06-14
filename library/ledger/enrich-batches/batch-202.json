@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/google-co-uk.md",
+  "id": "google-co-uk",
+  "name": "google.co.uk",
+  "url": "https://www.google.co.uk/maps",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/google-com-65.md",
+  "id": "google-com-65",
+  "name": "google.com",
+  "url": "https://support.google.com/mymaps/answer/3024454?co=GENIE.Platform%3DDesktop&hl=en",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/google-map-search-engine.md",
+  "id": "google-map-search-engine",
+  "name": "Google Map Search Engine",
+  "url": "https://cse.google.com/cse?cx=013991603413798772546:mofb1uoaebi",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/gosur-map.md",
+  "id": "gosur-map",
+  "name": "Gosur Map",
+  "url": "http://www.gosur.com/map",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/gps-latitude-longitude-com.md",
+  "id": "gps-latitude-longitude-com",
+  "name": "gps-latitude-longitude.com",
+  "url": "https://www.gps-latitude-longitude.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/gpx-file-editor.md",
+  "id": "gpx-file-editor",
+  "name": "Gpx File Editor",
+  "url": "https://gpx.studio/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/gridreferencefinder-com.md",
+  "id": "gridreferencefinder-com",
+  "name": "gridreferencefinder.com",
+  "url": "https://gridreferencefinder.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/heavy-ai-tweetmap.md",
+  "id": "heavy-ai-tweetmap",
+  "name": "Heavy.ai Tweetmap",
+  "url": "https://www.heavy.ai/demos/tweetmap",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/howtogeek-com.md",
+  "id": "howtogeek-com",
+  "name": "howtogeek.com",
+  "url": "https://www.howtogeek.com/664890/how-to-create-a-custom-map-in-google-maps/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/inciweb.md",
+  "id": "inciweb",
+  "name": "InciWeb",
+  "url": "https://inciweb.nwcg.gov/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/item-4.md",
+  "id": "item-4",
+  "name": "\u0414\u043e\u043f\u043e\u043c\u043e\u0433\u0430",
+  "url": "https://dopomoha.pl",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/kayak-airlines-search-engine.md",
+  "id": "kayak-airlines-search-engine",
+  "name": "Kayak Airlines Search Engine",
+  "url": "http://www.kayak.com/airlines",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/landmark-toolpie-com.md",
+  "id": "landmark-toolpie-com",
+  "name": "landmark.toolpie.com",
+  "url": "https://landmark.toolpie.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/live-action-map-com.md",
+  "id": "live-action-map-com",
+  "name": "Live-action-map.com",
+  "url": "https://www.live-action-map.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/live-map-of-london-underground-trains.md",
+  "id": "live-map-of-london-underground-trains",
+  "name": "Live map of London Underground trains",
+  "url": "https://traintimes.org.uk/map/tube/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/livecorona-co-kr.md",
+  "id": "livecorona-co-kr",
+  "name": "Livecorona.co.kr",
+  "url": "https://livecorona.co.kr",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ }
+]

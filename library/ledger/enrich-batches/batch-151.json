@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/catster.md",
+  "id": "catster",
+  "name": "Catster",
+  "url": "http://www.catster.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/cbc-news-worldwide-canada.md",
+  "id": "cbc-news-worldwide-canada",
+  "name": "CBC News Worldwide (Canada)",
+  "url": "http://www.cbc.ca/news/world",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/centos-pastebin-service.md",
+  "id": "centos-pastebin-service",
+  "name": "CentOS Pastebin Service",
+  "url": "https://paste.centos.org/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/charitable-impact.md",
+  "id": "charitable-impact",
+  "name": "Charitable Impact",
+  "url": "https://www.charitableimpact.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/chemistry-com.md",
+  "id": "chemistry-com",
+  "name": "Chemistry.com",
+  "url": "http://chemistry.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/christian-mingle.md",
+  "id": "christian-mingle",
+  "name": "Christian Mingle",
+  "url": "https://www.christianmingle.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/city-data-com.md",
+  "id": "city-data-com",
+  "name": "city-data.com",
+  "url": "http://www.city-data.com/forum/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/citytv-television-canada.md",
+  "id": "citytv-television-canada",
+  "name": "CityTV Television (Canada)",
+  "url": "http://www.citytv.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/cl1p.md",
+  "id": "cl1p",
+  "name": "cl1p",
+  "url": "https://Cl1p.net",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/cnet.md",
+  "id": "cnet",
+  "name": "CNET",
+  "url": "https://www.cnet.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/cnn-news-united-states.md",
+  "id": "cnn-news-united-states",
+  "name": "CNN News (United States)",
+  "url": "http://www.cnn.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/coffeemetsbagel.md",
+  "id": "coffeemetsbagel",
+  "name": "CoffeeMetsBagel",
+  "url": "https://coffeemeetsbagel.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/collegeblender.md",
+  "id": "collegeblender",
+  "name": "Collegeblender",
+  "url": "http://www.collegeblender.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/commie.md",
+  "id": "commie",
+  "name": "commie",
+  "url": "https://commie.io/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/community-screwfix-com.md",
+  "id": "community-screwfix-com",
+  "name": "community.screwfix.com",
+  "url": "https://community.screwfix.com/forums/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/computerworld.md",
+  "id": "computerworld",
+  "name": "ComputerWorld",
+  "url": "http://www.computerworld.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

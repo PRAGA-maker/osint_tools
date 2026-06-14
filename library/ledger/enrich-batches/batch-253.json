@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/insecac.md",
+  "id": "insecac",
+  "name": "Insecac",
+  "url": "http://www.insecam.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/inshorts.md",
+  "id": "inshorts",
+  "name": "Inshorts",
+  "url": "https://inshorts.com/en/read",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/instya.md",
+  "id": "instya",
+  "name": "Instya",
+  "url": "https://www.instya.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/intelligence-x.md",
+  "id": "intelligence-x",
+  "name": "Intelligence X",
+  "url": "https://intelx.io/tools",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/inteltechniques-search-engine.md",
+  "id": "inteltechniques-search-engine",
+  "name": "IntelTechniques Search Engine",
+  "url": "https://inteltechniques.com/tools/Search.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/international-association-of-chiefs-of-police.md",
+  "id": "international-association-of-chiefs-of-police",
+  "name": "International Association of Chiefs of Police",
+  "url": "http://www.theiacp.org/research",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/international-standard-classification-of-occupations.md",
+  "id": "international-standard-classification-of-occupations",
+  "name": "International Standard Classification of Occupations",
+  "url": "http://www.ilo.org/public/english/bureau/stat/isco/index.htm",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/international-trademark-search.md",
+  "id": "international-trademark-search",
+  "name": "International Trademark Search",
+  "url": "http://www.trademarkia.com/international-trademark-search/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/internet-archive.md",
+  "id": "internet-archive",
+  "name": "Internet Archive",
+  "url": "https://archive.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/internet-movie-database.md",
+  "id": "internet-movie-database",
+  "name": "Internet Movie Database",
+  "url": "http://www.imdb.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ipfs-search-com.md",
+  "id": "ipfs-search-com",
+  "name": "Ipfs-search.com",
+  "url": "https://ipfs-search.com/#/search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ipse-io.md",
+  "id": "ipse-io",
+  "name": "Ipse.io",
+  "url": "https://www.ipse.io/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/irbis-by-espy.md",
+  "id": "irbis-by-espy",
+  "name": "IRBIS by Espy",
+  "url": "https://espysys.com/irbis/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/meta-search/iseek.md",
+  "id": "iseek",
+  "name": "iSEEK",
+  "url": "https://iseek.com/iseek/home.page",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/islegitsite.md",
+  "id": "islegitsite",
+  "name": "Islegitsite",
+  "url": "https://www.islegitsite.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/issuu.md",
+  "id": "issuu",
+  "name": "Issuu",
+  "url": "http://issuu.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

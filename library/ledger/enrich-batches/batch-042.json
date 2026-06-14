@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/messaging/itp-infotrack.md",
+  "id": "itp-infotrack",
+  "name": "ITP Infotrack",
+  "url": "https://infotrackpeople.org/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/kalilinuxtutorials-com.md",
+  "id": "kalilinuxtutorials-com",
+  "name": "kalilinuxtutorials.com",
+  "url": "https://kalilinuxtutorials.com/whatsapp-osint-tool-2/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/knowlesys-com-2.md",
+  "id": "knowlesys-com-2",
+  "name": "knowlesys.com",
+  "url": "https://knowlesys.com/en/articles/social_websites/telegram/how_to_find_a_user_id_in_telegram.html",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/knowlesys-com-3.md",
+  "id": "knowlesys-com-3",
+  "name": "knowlesys.com",
+  "url": "https://knowlesys.com/osint/whatsapp_open_source_intelligence_investigation_method1.html",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/knowlesys-com-4.md",
+  "id": "knowlesys-com-4",
+  "name": "knowlesys.com",
+  "url": "https://knowlesys.com/en/articles/social_websites/hide/whatsapp_open_source_intelligence_investigation_methods2.html",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/leak-osint.md",
+  "id": "leak-osint",
+  "name": "Leak OSINT",
+  "url": "https://telegram.me/Leak_SSINTbot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/leapdroid-en-softonic-com.md",
+  "id": "leapdroid-en-softonic-com",
+  "name": "leapdroid.en.softonic.com",
+  "url": "https://leapdroid.en.softonic.com/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/letsview-com.md",
+  "id": "letsview-com",
+  "name": "letsview.com",
+  "url": "https://letsview.com/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/line-me.md",
+  "id": "line-me",
+  "name": "line.me",
+  "url": "https://line.me/en/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/wechat-line/line-message-analyzer.md",
+  "id": "line-message-analyzer",
+  "name": "line-message-analyzer",
+  "url": "https://github.com/chonyy/line-message-analyzer",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/linecorp-com.md",
+  "id": "linecorp-com",
+  "name": "linecorp.com",
+  "url": "https://linecorp.com/en/security/article/35",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/wechat-line/linelog2py.md",
+  "id": "linelog2py",
+  "name": "linelog2py",
+  "url": "https://github.com/jyu0414/linelog2py",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/linkedin-com-4.md",
+  "id": "linkedin-com-4",
+  "name": "linkedin.com",
+  "url": "https://www.linkedin.com/posts/devaidan_osint-activity-7250565850837999616-Di3V/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/linkedin-com-8.md",
+  "id": "linkedin-com-8",
+  "name": "linkedin.com",
+  "url": "https://www.linkedin.com/pulse/deleting-your-telegram-account-does-remove-identity-just-yehor-selin-vp6kf/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/linkedin-com-9.md",
+  "id": "linkedin-com-9",
+  "name": "linkedin.com",
+  "url": "https://www.linkedin.com/pulse/whatsapp-osint-tools-investigators-vijay-kumar-gupta--3poac/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/maigret-osint-bot.md",
+  "id": "maigret-osint-bot",
+  "name": "Maigret OSINT bot",
+  "url": "https://t.me/osint_maigret_bot",
+  "category": "messaging",
+  "mp": "high"
+ }
+]

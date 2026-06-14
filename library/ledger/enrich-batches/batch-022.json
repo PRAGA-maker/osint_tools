@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/clipsnap-com-4.md",
+  "id": "clipsnap-com-4",
+  "name": "clipsnap.com",
+  "url": "https://www.clipsnap.com/unblur-image/editor/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/codeofaninja-com-2.md",
+  "id": "codeofaninja-com-2",
+  "name": "codeofaninja.com",
+  "url": "https://www.codeofaninja.com/tools/find-youtube-channel-id/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/codeofaninja-com-3.md",
+  "id": "codeofaninja-com-3",
+  "name": "codeofaninja.com",
+  "url": "https://www.codeofaninja.com/tools/download-youtube-thumbnail-hd/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/copyseeker-net.md",
+  "id": "copyseeker-net",
+  "name": "copyseeker.net",
+  "url": "https://copyseeker.net/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/tools/creepy.md",
+  "id": "creepy",
+  "name": "Creepy",
+  "url": "https://github.com/ilektrojohn/creepy",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/documents/search/common-googledorks/cryptome.md",
+  "id": "cryptome",
+  "name": "Cryptome",
+  "url": "https://www.google.com/search?q=site:cryptome.org+%3Csearchterm%3E",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/search/current-location.md",
+  "id": "current-location",
+  "name": "Current Location",
+  "url": "https://current-location.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/dailymotion-com.md",
+  "id": "dailymotion-com",
+  "name": "dailymotion.com",
+  "url": "https://www.dailymotion.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/deep-image-ai.md",
+  "id": "deep-image-ai",
+  "name": "deep-image.ai",
+  "url": "https://deep-image.ai/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfaceui-github-com.md",
+  "id": "deepfaceui-github-com",
+  "name": "deepfaceui (github.com)",
+  "url": "https://github.com/GONZOsint/deepfaceui",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfind-me-2.md",
+  "id": "deepfind-me-2",
+  "name": "deepfind.me",
+  "url": "https://www.deepfind.me/tools/geo-location/satelite-street-view-search",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/deturl-com.md",
+  "id": "deturl-com",
+  "name": "deturl.com",
+  "url": "https://deturl.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/diffchecker.md",
+  "id": "diffchecker",
+  "name": "DiffChecker",
+  "url": "https://www.diffchecker.com/image-diff/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/digitaldigging-org-2.md",
+  "id": "digitaldigging-org-2",
+  "name": "digitaldigging.org",
+  "url": "https://www.digitaldigging.org/p/exposing-ai-manipulation-in-fast",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/discover-podcasts-here.md",
+  "id": "discover-podcasts-here",
+  "name": "Discover Podcasts Here!",
+  "url": "https://podsearch.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/videos/search/dogpile.md",
+  "id": "dogpile",
+  "name": "Dogpile",
+  "url": "https://www.dogpile.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ }
+]

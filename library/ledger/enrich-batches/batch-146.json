@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/public-datasets/uci-spambase-data-set.md",
+  "id": "uci-spambase-data-set",
+  "name": "UCI Spambase Data Set",
+  "url": "https://archive.ics.uci.edu/dataset/94/spambase",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/uk-web-archive.md",
+  "id": "uk-web-archive",
+  "name": "UK Web Archive",
+  "url": "https://www.webarchive.org.uk/ukwa/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/ukwa.md",
+  "id": "ukwa",
+  "name": "UKWA",
+  "url": "https://www.webarchive.org.uk/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/vandal.md",
+  "id": "vandal",
+  "name": "Vandal",
+  "url": "https://chrome.google.com/webstore/detail/vandal/knoccgahmcfhngbjhdbcodajdioedgdo/related",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/vault-fbi-gov.md",
+  "id": "vault-fbi-gov",
+  "name": "Vault.fbi.gov",
+  "url": "https://vault.fbi.gov/search",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/vefsafn-is.md",
+  "id": "vefsafn-is",
+  "name": "Vefsafn.is",
+  "url": "https://vefsafn.is/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/view-page-archive-addons-mozilla-org.md",
+  "id": "view-page-archive-addons-mozilla-org",
+  "name": "view page archive (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/vislibri.md",
+  "id": "vislibri",
+  "name": "visLibri",
+  "url": "https://www.vialibri.net/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/public-datasets/visual-genome.md",
+  "id": "visual-genome",
+  "name": "Visual Genome",
+  "url": "https://visualgenome.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/warcat.md",
+  "id": "warcat",
+  "name": "Warcat",
+  "url": "https://github.com/chfoo/warcat",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/wayback-archive.md",
+  "id": "wayback-archive",
+  "name": "Wayback-Archive",
+  "url": "https://github.com/GeiserX/Wayback-Archive",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/wayback-archive-it-org.md",
+  "id": "wayback-archive-it-org",
+  "name": "Wayback.archive-it.org",
+  "url": "http://wayback.archive-it.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/wayback-google-analytics.md",
+  "id": "wayback-google-analytics",
+  "name": "WAYBACK GOOGLE ANALYTICS",
+  "url": "https://github.com/bellingcat/wayback-google-analytics",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/wayback-keywords-search.md",
+  "id": "wayback-keywords-search",
+  "name": "Wayback Keywords Search",
+  "url": "https://github.com/lorenzoromani1983/wayback-keyword-search",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/wayback-machine.md",
+  "id": "wayback-machine",
+  "name": "Wayback Machine",
+  "url": "http://archive.org/web/web.php",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/wayback-machine-chrome-extension.md",
+  "id": "wayback-machine-chrome-extension",
+  "name": "Wayback Machine Chrome Extension",
+  "url": "https://chrome.google.com/webstore/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak",
+  "category": "archives-cache",
+  "mp": "medium"
+ }
+]

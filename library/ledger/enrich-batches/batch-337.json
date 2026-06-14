@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/redditsearch.md",
+  "id": "redditsearch",
+  "name": "RedditSearch",
+  "url": "https://reddysearchgo.herokuapp.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/reelgood-com.md",
+  "id": "reelgood-com",
+  "name": "Reelgood.com",
+  "url": "https://reelgood.com/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/rick-and-morty-screencaps-search.md",
+  "id": "rick-and-morty-screencaps-search",
+  "name": "Rick and Morty screencaps search",
+  "url": "https://masterofallscience.com/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/search-futuruma-screencaps.md",
+  "id": "search-futuruma-screencaps",
+  "name": "Search Futuruma screencaps",
+  "url": "https://morbotron.com/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/smat.md",
+  "id": "smat",
+  "name": "smat",
+  "url": "https://www.smat-app.com/timeline",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/snoopsnoo.md",
+  "id": "snoopsnoo",
+  "name": "SnoopSnoo",
+  "url": "https://snoopsnoo.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/squarespace.md",
+  "id": "squarespace",
+  "name": "SquareSpace",
+  "url": "https://www.squarespace.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/stackexchange.md",
+  "id": "stackexchange",
+  "name": "StackExchange",
+  "url": "http://stackexchange.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/strava-2.md",
+  "id": "strava-2",
+  "name": "Strava",
+  "url": "https://labs.strava.com/heatmap",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/subzin-com.md",
+  "id": "subzin-com",
+  "name": "Subzin.com",
+  "url": "http://www.subzin.com/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/sympsons-screencaps-search.md",
+  "id": "sympsons-screencaps-search",
+  "name": "Sympsons screencaps search",
+  "url": "https://frinkiac.com/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/trending-words-of-reddit.md",
+  "id": "trending-words-of-reddit",
+  "name": "Trending Words of Reddit",
+  "url": "https://trendingwordsofreddit.herokuapp.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/unogs-com.md",
+  "id": "unogs-com",
+  "name": "Unogs.com",
+  "url": "http://unogs.com/",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/vizit-visual-reddit-browse-the-front-page-of-the-internet.md",
+  "id": "vizit-visual-reddit-browse-the-front-page-of-the-internet",
+  "name": "Vizit | Visual Reddit | browse the front page of the internet",
+  "url": "https://redditstuff.github.io/sna/vizit",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/whatthehellshouldiwatchonnetflix-com.md",
+  "id": "whatthehellshouldiwatchonnetflix-com",
+  "name": "whatthehellshouldiwatchonnetflix.com",
+  "url": "http://whatthehellshouldiwatchonnetflix.com",
+  "category": "communities-forums",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/communities-forums/wideband-shortware-radio-receiver-map.md",
+  "id": "wideband-shortware-radio-receiver-map",
+  "name": "Wideband shortware radio receiver map",
+  "url": "http://rx.linkfanel.net/",
+  "category": "communities-forums",
+  "mp": "low"
+ }
+]

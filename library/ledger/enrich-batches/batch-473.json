@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/transportation/direkht-ban-guru.md",
+  "id": "direkht-ban-guru",
+  "name": "Direkht Ban Guru",
+  "url": "https://direkt.bahn.guru/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/equasis.md",
+  "id": "equasis",
+  "name": "Equasis",
+  "url": "https://www.equasis.org/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/equasis-2.md",
+  "id": "equasis-2",
+  "name": "Equasis",
+  "url": "http://www.equasis.org/equasisweb/public/homepage",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/eships-net.md",
+  "id": "eships-net",
+  "name": "eships.net",
+  "url": "http://eships.net",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/europe-station-maps-floor-plan.md",
+  "id": "europe-station-maps-floor-plan",
+  "name": "Europe station maps floor plan",
+  "url": "https://www.nsinternational.com/en/stations/station-maps-floor-plan",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/faa-registry.md",
+  "id": "faa-registry",
+  "name": "FAA Registry",
+  "url": "https://registry.faa.gov/aircraftinquiry/nnum_inquiry.aspx",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/federal-aviation-administration.md",
+  "id": "federal-aviation-administration",
+  "name": "Federal Aviation Administration",
+  "url": "http://registry.faa.gov/aircraftinquiry/NNum\\_inquiry.aspx",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/fleetmon.md",
+  "id": "fleetmon",
+  "name": "FleetMon",
+  "url": "https://www.fleetmon.com/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/flight-radar-24.md",
+  "id": "flight-radar-24",
+  "name": "Flight Radar 24",
+  "url": "https://flightradar24.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/flight-status-info.md",
+  "id": "flight-status-info",
+  "name": "Flight Status Info",
+  "url": "https://flight-status.info/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/flight-tracker.md",
+  "id": "flight-tracker",
+  "name": "Flight Tracker",
+  "url": "https://global.adsbexchange.com/virtualradar/desktop.html",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/flightconnections.md",
+  "id": "flightconnections",
+  "name": "FlightConnections",
+  "url": "https://www.flightconnections.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/flightwise.md",
+  "id": "flightwise",
+  "name": "Flightwise",
+  "url": "http://flightwise.com",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/free-aviation-records-black-book-online.md",
+  "id": "free-aviation-records-black-book-online",
+  "name": "Free Aviation Records | Black Book Online",
+  "url": "https://www.blackbookonline.info/aviation-public-records.aspx",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/freedar.md",
+  "id": "freedar",
+  "name": "Freedar",
+  "url": "https://radar.freedar.uk/virtualradar/desktop.html",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/gpsjam.md",
+  "id": "gpsjam",
+  "name": "GPSJam",
+  "url": "https://gpsjam.org/",
+  "category": "transportation",
+  "mp": "low"
+ }
+]

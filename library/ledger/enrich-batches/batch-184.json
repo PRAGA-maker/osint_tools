@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/here-4.md",
+  "id": "here-4",
+  "name": "Here",
+  "url": "https://nominet.uk/privacy-notice/releasing-your-personal-data-to-third-parties/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/here-5.md",
+  "id": "here-5",
+  "name": "Here",
+  "url": "https://www.bigdomaindata.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/icann-org.md",
+  "id": "icann-org",
+  "name": "icann.org",
+  "url": "https://www.icann.org/en/contracted-parties/registry-operators/resources/registration-data-access-protocol",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/infosniper-net.md",
+  "id": "infosniper-net",
+  "name": "infosniper.net",
+  "url": "https://www.infosniper.net/index.php?lang=1",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipnet-tools.md",
+  "id": "ipnet-tools",
+  "name": "ipnet.tools",
+  "url": "https://ipnet.tools/ip-lookup-tool",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/lacnic.md",
+  "id": "lacnic",
+  "name": "LACNIC",
+  "url": "https://www.lacnic.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/lookup-icann-org.md",
+  "id": "lookup-icann-org",
+  "name": "lookup.icann.org",
+  "url": "https://lookup.icann.org/en",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/mxtoolbox-com.md",
+  "id": "mxtoolbox-com",
+  "name": "mxtoolbox.com",
+  "url": "https://mxtoolbox.com/SOALookup.aspx",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/nominet-uk.md",
+  "id": "nominet-uk",
+  "name": "nominet.uk",
+  "url": "https://www.nominet.uk/lookup/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/nominet-uk-2.md",
+  "id": "nominet-uk-2",
+  "name": "nominet.uk",
+  "url": "https://nominet.uk/wp-content/uploads/2025/03/DataReleaseForm.pdf",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/rdrs-icann-org.md",
+  "id": "rdrs-icann-org",
+  "name": "rdrs.icann.org",
+  "url": "https://rdrs.icann.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reversewhois-io.md",
+  "id": "reversewhois-io",
+  "name": "reversewhois.io",
+  "url": "https://www.reversewhois.io/?",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ripe.md",
+  "id": "ripe",
+  "name": "RIPE",
+  "url": "https://www.ripe.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/samy-pl.md",
+  "id": "samy-pl",
+  "name": "samy.pl",
+  "url": "http://samy.pl/androidmap/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/search-arin-net.md",
+  "id": "search-arin-net",
+  "name": "search.arin.net",
+  "url": "https://search.arin.net/rdap/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/search-censys-io.md",
+  "id": "search-censys-io",
+  "name": "search.censys.io",
+  "url": "https://search.censys.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "medium"
+ }
+]

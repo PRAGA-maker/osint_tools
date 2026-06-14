@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/canadian-patents-database.md",
+  "id": "canadian-patents-database",
+  "name": "Canadian Patents Database",
+  "url": "https://www.ic.gc.ca/opic-cipo/cpd/eng/search/basic.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/canadian-trademarks-database.md",
+  "id": "canadian-trademarks-database",
+  "name": "Canadian Trademarks Database",
+  "url": "https://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/home",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/capstat-nyc.md",
+  "id": "capstat-nyc",
+  "name": "CAPstat.nyc",
+  "url": "https://www.capstat.nyc/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/caselaw-access-project.md",
+  "id": "caselaw-access-project",
+  "name": "Caselaw Access Project",
+  "url": "https://case.law/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/chicago-police-department-demographics.md",
+  "id": "chicago-police-department-demographics",
+  "name": "Chicago Police Department Demographics",
+  "url": "https://public.flourish.studio/visualisation/1089756/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/citizens-police-data-project.md",
+  "id": "citizens-police-data-project",
+  "name": "Citizens Police Data Project",
+  "url": "https://beta.cpdp.co/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/civilian-office-of-police-accountability.md",
+  "id": "civilian-office-of-police-accountability",
+  "name": "Civilian Office of Police Accountability",
+  "url": "https://www.chicagocopa.org/data-cases/case-portal/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/clearview-ai-us-taxpayer-funded-entities.md",
+  "id": "clearview-ai-us-taxpayer-funded-entities",
+  "name": "Clearview AI US taxpayer-funded entities",
+  "url": "https://datawrapper.dwcdn.net/VOOIE/16/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/clinicaltrials-gov.md",
+  "id": "clinicaltrials-gov",
+  "name": "clinicaltrials.gov",
+  "url": "https://clinicaltrials.gov/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/general-info-and-news/commercial-register-worldwide.md",
+  "id": "commercial-register-worldwide",
+  "name": "Commercial Register - Worldwide",
+  "url": "https://www.sg.ch/recht/handelsregister-notariate.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/companies-and-orgs-search-engine.md",
+  "id": "companies-and-orgs-search-engine",
+  "name": "Companies & Orgs Search Engine",
+  "url": "https://cse.google.com/cse?cx=72ea9d8cfefc142d3",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/companies-house-2.md",
+  "id": "companies-house-2",
+  "name": "Companies House",
+  "url": "https://beta.companieshouse.gov.uk/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/companies-in-the-uk.md",
+  "id": "companies-in-the-uk",
+  "name": "Companies In The UK",
+  "url": "https://www.companiesintheuk.co.uk/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/company-data-rex-eu.md",
+  "id": "company-data-rex-eu",
+  "name": "Company Data Rex (EU)",
+  "url": "https://www.cdrex.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-registration-round-the-world.md",
+  "id": "company-registration-round-the-world",
+  "name": "Company Registration Round the World",
+  "url": "http://www.commercial-register.sg.ch/home/worldwide.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-research-resources-by-country-comparably.md",
+  "id": "company-research-resources-by-country-comparably",
+  "name": "Company Research Resources by Country Comparably",
+  "url": "https://www.comparably.com",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

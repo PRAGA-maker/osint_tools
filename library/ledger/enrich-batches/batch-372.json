@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip-location-io.md",
+  "id": "ip-location-io",
+  "name": "IP Location.io",
+  "url": "https://iplocation.io",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip-loggers/ip-logger.md",
+  "id": "ip-logger",
+  "name": "IP Logger",
+  "url": "https://iplogger.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip-search-network-entity-reputation-database.md",
+  "id": "ip-search-network-entity-reputation-database",
+  "name": "IP search - Network Entity Reputation Database",
+  "url": "https://nerd.cesnet.cz/nerd/ips/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipv4/ip-to-asn-db.md",
+  "id": "ip-to-asn-db",
+  "name": "IP to ASN DB",
+  "url": "https://iptoasn.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/ip-void.md",
+  "id": "ip-void",
+  "name": "IP Void",
+  "url": "https://www.ipvoid.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip2geo-dev.md",
+  "id": "ip2geo-dev",
+  "name": "ip2geo.dev",
+  "url": "https://ip2geo.dev",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/geolocation/ip2location-com.md",
+  "id": "ip2location-com",
+  "name": "IP2Location.com",
+  "url": "https://www.ip2location.com/demo",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/ip2whois.md",
+  "id": "ip2whois",
+  "name": "IP2WHOIS",
+  "url": "https://www.ip2whois.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipfingerprints.md",
+  "id": "ipfingerprints",
+  "name": "IPFingerprints",
+  "url": "http://www.ipfingerprints.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipv4/ipv4-cidr-report.md",
+  "id": "ipv4-cidr-report",
+  "name": "IPv4 CIDR Report",
+  "url": "https://www.cidr-report.org/as2.0/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/geolocation/ipv4-ipv6-lists-by-country-code.md",
+  "id": "ipv4-ipv6-lists-by-country-code",
+  "name": "IPv4/IPv6 lists by country code",
+  "url": "https://github.com/ipverse/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipv6/ipv6-cidr-report.md",
+  "id": "ipv6-cidr-report",
+  "name": "IPv6 CIDR Report",
+  "url": "https://www.cidr-report.org/v6/as2.0/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipvoid.md",
+  "id": "ipvoid",
+  "name": "IPVoid",
+  "url": "http://www.ipvoid.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ismalicious.md",
+  "id": "ismalicious",
+  "name": "isMalicious",
+  "url": "https://ismalicious.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/isp-tools.md",
+  "id": "isp-tools",
+  "name": "ISP.Tools",
+  "url": "https://www.isp.tools",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ioc-tools/jager.md",
+  "id": "jager",
+  "name": "Jager",
+  "url": "https://github.com/sroberts/jager",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

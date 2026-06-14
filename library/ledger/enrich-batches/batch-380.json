@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/scanless.md",
+  "id": "scanless",
+  "name": "Scanless",
+  "url": "https://github.com/vesche/scanless",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/scans-io.md",
+  "id": "scans-io",
+  "name": "Scans.io",
+  "url": "https://scans.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/cloud-configuration-analysis/scoutsuite.md",
+  "id": "scoutsuite",
+  "name": "ScoutSuite",
+  "url": "https://github.com/nccgroup/ScoutSuite",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/scumware-org.md",
+  "id": "scumware-org",
+  "name": "scumware.org",
+  "url": "https://www.scumware.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/phishing/secai-ai.md",
+  "id": "secai-ai",
+  "name": "SecAI.ai",
+  "url": "https://secai.ai/research",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/seclists-dns-subdomains.md",
+  "id": "seclists-dns-subdomains",
+  "name": "SecLists DNS Subdomains",
+  "url": "https://github.com/danielmiessler/SecLists/tree/master/Discovery/DNS",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/advisories/secunia.md",
+  "id": "secunia",
+  "name": "Secunia",
+  "url": "https://secuniaresearch.flexerasoftware.com/community/research/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/secure-gateway-live-cyber-threat-map.md",
+  "id": "secure-gateway-live-cyber-threat-map",
+  "name": "Secure Gateway Live Cyber Threat Map",
+  "url": "https://securegateway.com/map/v5/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/advisories/securityfocus.md",
+  "id": "securityfocus",
+  "name": "SecurityFocus",
+  "url": "https://www.securityfocus.com/bid",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/securitytrails.md",
+  "id": "securitytrails",
+  "name": "SecurityTrails",
+  "url": "https://securitytrails.com/dns-trails",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/securitytrails-2.md",
+  "id": "securitytrails-2",
+  "name": "SecurityTrails",
+  "url": "https://securitytrails.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/seo-chat-tools.md",
+  "id": "seo-chat-tools",
+  "name": "SEO Chat Tools",
+  "url": "http://tools.seochat.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/seotools-for-excel.md",
+  "id": "seotools-for-excel",
+  "name": "SEOTools for Excel",
+  "url": "http://seotoolsforexcel.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/domain-blacklists/shadowserver-foundation.md",
+  "id": "shadowserver-foundation",
+  "name": "Shadowserver Foundation",
+  "url": "https://www.shadowserver.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/shodan.md",
+  "id": "shodan",
+  "name": "Shodan",
+  "url": "https://www.shodan.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/certificate-search/shodan-2.md",
+  "id": "shodan-2",
+  "name": "Shodan",
+  "url": "https://www.shodan.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

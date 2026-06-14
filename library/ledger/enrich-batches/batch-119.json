@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/klear.md",
+  "id": "klear",
+  "name": "Klear",
+  "url": "http://klear.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/knowlesys-com.md",
+  "id": "knowlesys-com",
+  "name": "knowlesys.com",
+  "url": "https://knowlesys.com/en/articles/social_websites/others/open_source_intelligence_investigation_of_pinterest.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/kribrum.md",
+  "id": "kribrum",
+  "name": "Kribrum",
+  "url": "https://kribrum.io/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/kuaishou-com.md",
+  "id": "kuaishou-com",
+  "name": "kuaishou.com",
+  "url": "https://www.kuaishou.com/new-reco",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/lampyre-io-medium-com.md",
+  "id": "lampyre-io-medium-com",
+  "name": "lampyre-io.medium.com",
+  "url": "https://lampyre-io.medium.com/pinterest-tools-for-osint-purposes-3762c9794355",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-com-5.md",
+  "id": "linkedin-com-5",
+  "name": "linkedin.com",
+  "url": "https://www.linkedin.com/posts/ritugill-osinttechniques_instagram-just-launched-a-map-feature-that-activity-7359406477821833217-WTgH/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-com-6.md",
+  "id": "linkedin-com-6",
+  "name": "linkedin.com",
+  "url": "https://www.linkedin.com/posts/osint-switzerland_having-recently-learned-the-technique-activity-7296041731815362560-rsk0/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-com-7.md",
+  "id": "linkedin-com-7",
+  "name": "linkedin.com",
+  "url": "https://www.linkedin.com/posts/osint-switzerland_sometimes-being-able-to-pinpoint-the-activity-7294960901445541890-_-ZF/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-email-reverse-lookup.md",
+  "id": "linkedin-email-reverse-lookup",
+  "name": "LinkedIn Email Reverse Lookup",
+  "url": "https://osint.support/chrome-extensions/2019/09/03/linkedin-email-reverse-lookup.html",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-profiles-by-email-michael-bazzell-blog.md",
+  "id": "linkedin-profiles-by-email-michael-bazzell-blog",
+  "name": "LinkedIn Profiles by Email (Michael Bazzell Blog)",
+  "url": "https://inteltechniques.com/blog/2018/04/25/linkedin-profiles-by-email",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-search-engine.md",
+  "id": "linkedin-search-engine",
+  "name": "LinkedIn Search Engine",
+  "url": "https://cse.google.com/cse?cx=daaf18e804f81bed0",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-search-engine-with-images.md",
+  "id": "linkedin-search-engine-with-images",
+  "name": "LinkedIn Search Engine (with Images)",
+  "url": "https://cse.google.com/cse?cx=40126f0af1aff84f8",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-x-ray-search.md",
+  "id": "linkedin-x-ray-search",
+  "name": "LinkedIn X-Ray Search",
+  "url": "https://de.linkedin.com/pub/dir/bruno/mortier",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedin-x-ray-search-tool.md",
+  "id": "linkedin-x-ray-search-tool",
+  "name": "LinkedIn X-Ray Search Tool",
+  "url": "https://www.lisearcher.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedindumper.md",
+  "id": "linkedindumper",
+  "name": "LinkedInDumper",
+  "url": "https://github.com/l4rm4nd/LinkedInDumper",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedinsider-deutschland-blog-von-stephan-ko.md",
+  "id": "linkedinsider-deutschland-blog-von-stephan-ko",
+  "name": "LinkedInsider Deutschland Blog von Stephan Ko\u00df",
+  "url": "https://linkedinsiders.wordpress.com",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

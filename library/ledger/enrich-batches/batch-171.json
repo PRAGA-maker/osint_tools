@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/upforit-com.md",
+  "id": "upforit-com",
+  "name": "UpForIt.com",
+  "url": "http://www.upforit.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/usa-today-news.md",
+  "id": "usa-today-news",
+  "name": "USA Today News",
+  "url": "http://www.usatoday.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/vancouver-sun-news.md",
+  "id": "vancouver-sun-news",
+  "name": "Vancouver Sun News",
+  "url": "http://www.vancouversun.com/index.html",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/vaultbin.md",
+  "id": "vaultbin",
+  "name": "vaultbin",
+  "url": "https://vaultb.in/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/verybin.md",
+  "id": "verybin",
+  "name": "Verybin",
+  "url": "https://www.verybin.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/vrbo.md",
+  "id": "vrbo",
+  "name": "VRBO",
+  "url": "https://www.vrbo.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/w3newspapers.md",
+  "id": "w3newspapers",
+  "name": "W3Newspapers",
+  "url": "http://www.w3newspapers.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/washington-post-news.md",
+  "id": "washington-post-news",
+  "name": "Washington Post News",
+  "url": "https://www.washingtonpost.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/washington-times-news.md",
+  "id": "washington-times-news",
+  "name": "Washington Times News",
+  "url": "http://www.washingtontimes.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/wikipedia-list-of-world-newspapers.md",
+  "id": "wikipedia-list-of-world-newspapers",
+  "name": "Wikipedia List of World Newspapers",
+  "url": "https://en.wikipedia.org/wiki/Lists_of_newspapers",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/wimdu.md",
+  "id": "wimdu",
+  "name": "Wimdu",
+  "url": "http://www.wimdu.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/win-television-australia.md",
+  "id": "win-television-australia",
+  "name": "WIN Television (Australia)",
+  "url": "http://www.wintv.com.au",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/wired-tech-news-and-trends.md",
+  "id": "wired-tech-news-and-trends",
+  "name": "Wired Tech News & Trends",
+  "url": "http://www.wired.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/world-channel-television-united-states.md",
+  "id": "world-channel-television-united-states",
+  "name": "World Channel Television (United States)",
+  "url": "http://worldchannel.org",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/write-as.md",
+  "id": "write-as",
+  "name": "Write.as",
+  "url": "https://write.as/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/wsj-technology-news.md",
+  "id": "wsj-technology-news",
+  "name": "WSJ Technology News",
+  "url": "http://www.wsj.com/news/technology",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

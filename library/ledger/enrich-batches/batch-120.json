@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/linkedin/linkedint-linkedin-recon-tool.md",
+  "id": "linkedint-linkedin-recon-tool",
+  "name": "LinkedInt - LinkedIn Recon Tool",
+  "url": "https://github.com/vysecurity/LinkedInt",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/linkedprospect.md",
+  "id": "linkedprospect",
+  "name": "LinkedProspect",
+  "url": "https://linkedprospect.com/linkedin-boolean-search-tool/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/lotus-vn.md",
+  "id": "lotus-vn",
+  "name": "lotus.vn",
+  "url": "https://lotus.vn/w",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mail-ru-social-network-search.md",
+  "id": "mail-ru-social-network-search",
+  "name": "Mail.Ru Social Network Search",
+  "url": "https://go.mail.ru/search_social",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/fediverse-mastodon/masto.md",
+  "id": "masto",
+  "name": "Masto",
+  "url": "https://github.com/C3n7ral051nt4g3ncy/Masto",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mastodon-github-com.md",
+  "id": "mastodon-github-com",
+  "name": "mastodon (github.com)",
+  "url": "https://github.com/mastodon/mastodon/discussions/21156",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mastodon-social.md",
+  "id": "mastodon-social",
+  "name": "mastodon.social",
+  "url": "https://mastodon.social/about",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mastogizmos-com.md",
+  "id": "mastogizmos-com",
+  "name": "mastogizmos.com",
+  "url": "https://mastogizmos.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/matthewcassinelli-com.md",
+  "id": "matthewcassinelli-com",
+  "name": "matthewcassinelli.com",
+  "url": "https://matthewcassinelli.com/shortcuts-mastodon-lookup-account-id/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mediamister-com.md",
+  "id": "mediamister-com",
+  "name": "mediamister.com",
+  "url": "https://www.mediamister.com/find-instagram-user-id",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mediamister-com-2.md",
+  "id": "mediamister-com-2",
+  "name": "mediamister.com",
+  "url": "https://www.mediamister.com/find-tiktok-user-id",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/medium-com-2.md",
+  "id": "medium-com-2",
+  "name": "medium.com",
+  "url": "https://medium.com/ax1al/the-unconventional-guide-to-conducting-osint-on-linkedin-c9631b27935d",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/medium-com-4.md",
+  "id": "medium-com-4",
+  "name": "medium.com",
+  "url": "https://medium.com/@loyalonlytoday/7c494fcfe0bc",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/memory-lol-github-com.md",
+  "id": "memory-lol-github-com",
+  "name": "memory.lol (github.com)",
+  "url": "https://github.com/travisbrown/memory.lol/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/other-social-networks/migente-latino.md",
+  "id": "migente-latino",
+  "name": "MiGente (Latino)",
+  "url": "https://migente.com/wp-login.php?redirect_to=https%3A%2F%2Fmigente.com%2Fuser_search%2Findex.html&bp-auth=1&action=bpnoaccess",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/mixi-japan.md",
+  "id": "mixi-japan",
+  "name": "Mixi (Japan)",
+  "url": "https://mixi.jp",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

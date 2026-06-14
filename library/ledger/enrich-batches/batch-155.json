@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/forums-golf-monthly-co-uk.md",
+  "id": "forums-golf-monthly-co-uk",
+  "name": "forums.golf-monthly.co.uk",
+  "url": "https://forums.golf-monthly.co.uk/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forums-moneysavingexpert-com.md",
+  "id": "forums-moneysavingexpert-com",
+  "name": "forums.moneysavingexpert.com",
+  "url": "https://forums.moneysavingexpert.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forums-overclockers-co-uk.md",
+  "id": "forums-overclockers-co-uk",
+  "name": "forums.overclockers.co.uk",
+  "url": "https://forums.overclockers.co.uk/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forums-plentyoffish-com.md",
+  "id": "forums-plentyoffish-com",
+  "name": "forums.plentyoffish.com",
+  "url": "https://forums.plentyoffish.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/fox-news-united-states.md",
+  "id": "fox-news-united-states",
+  "name": "Fox News (United States)",
+  "url": "http://www.foxnews.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/freeview-television-new-zealand.md",
+  "id": "freeview-television-new-zealand",
+  "name": "Freeview Television (New Zealand)",
+  "url": "http://www.freeviewnz.tv",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/freeview-television-united-kingdom.md",
+  "id": "freeview-television-united-kingdom",
+  "name": "Freeview Television (United Kingdom)",
+  "url": "http://www.freeview.co.uk",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/frg-org-uk.md",
+  "id": "frg-org-uk",
+  "name": "frg.org.uk",
+  "url": "https://www.frg.org.uk/ParentsForum/viewforum.php?f=13",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/friendfinder.md",
+  "id": "friendfinder",
+  "name": "Friendfinder",
+  "url": "http://friendfinder.com/browse",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/friendpaste.md",
+  "id": "friendpaste",
+  "name": "Friendpaste",
+  "url": "https://friendpaste.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/geek-com.md",
+  "id": "geek-com",
+  "name": "Geek.com",
+  "url": "http://www.geek.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/get-pocket-news-saving-app.md",
+  "id": "get-pocket-news-saving-app",
+  "name": "Get Pocket News Saving App",
+  "url": "https://getpocket.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/gettechmedia.md",
+  "id": "gettechmedia",
+  "name": "GetTechMedia",
+  "url": "https://gettechmedia.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/github-gist.md",
+  "id": "github-gist",
+  "name": "GitHub gist",
+  "url": "https://gist.github.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/gizmag-technology-news.md",
+  "id": "gizmag-technology-news",
+  "name": "GizMag Technology News",
+  "url": "http://www.gizmag.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/gizmodo-com.md",
+  "id": "gizmodo-com",
+  "name": "Gizmodo.com",
+  "url": "http://gizmodo.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

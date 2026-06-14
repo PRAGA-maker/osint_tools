@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dark-web/discovery/docker-onion-nmap.md",
+  "id": "docker-onion-nmap",
+  "name": "docker-onion-nmap",
+  "url": "https://github.com/milesrichardson/docker-onion-nmap",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/federal-bureau-of-investigations-value.md",
+  "id": "federal-bureau-of-investigations-value",
+  "name": "Federal Bureau of Investigations Value",
+  "url": "https://vault.fbi.gov/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/clients/freenet-project.md",
+  "id": "freenet-project",
+  "name": "Freenet Project",
+  "url": "https://www.hyphanet.org/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/ftse-industry-classification-benchmark-united-states.md",
+  "id": "ftse-industry-classification-benchmark-united-states",
+  "name": "FTSE Industry Classification Benchmark (United States)",
+  "url": "https://www.ftserussell.com/data/industry-classification-benchmark-icb",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/global-security.md",
+  "id": "global-security",
+  "name": "Global Security",
+  "url": "https://www.globalsecurity.org",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/tor-directories/hidden-wiki.md",
+  "id": "hidden-wiki",
+  "name": "Hidden Wiki",
+  "url": "https://thehiddenwiki.org/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/human-trafficking-search.md",
+  "id": "human-trafficking-search",
+  "name": "Human Trafficking Search",
+  "url": "https://humantraffickingsearch.org/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/discovery/hunchly-hidden-services-report.md",
+  "id": "hunchly-hidden-services-report",
+  "name": "Hunchly Hidden Services Report",
+  "url": "https://darkweb.hunch.ly/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/clients/i2p-anonymous-network.md",
+  "id": "i2p-anonymous-network",
+  "name": "I2P Anonymous Network",
+  "url": "https://i2p.net/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/iaca-dark-web-investigation-support.md",
+  "id": "iaca-dark-web-investigation-support",
+  "name": "IACA Dark Web Investigation Support",
+  "url": "https://iaca-darkweb-tools.com/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/inmates-plus.md",
+  "id": "inmates-plus",
+  "name": "Inmates Plus",
+  "url": "http://www.inmatesplus.com/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/international-organization-for-standardization-catalogue.md",
+  "id": "international-organization-for-standardization-catalogue",
+  "name": "International Organization For Standardization Catalogue",
+  "url": "http://www.iso.org/iso/home.html",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/medina-county-auditor.md",
+  "id": "medina-county-auditor",
+  "name": "Medina County Auditor",
+  "url": "http://www.medinacountyauditor.org/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/naval-open-source-intelligence.md",
+  "id": "naval-open-source-intelligence",
+  "name": "Naval Open Source Intelligence",
+  "url": "https://nosi.org/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/newsworld-usa.md",
+  "id": "newsworld-usa",
+  "name": "NewsWorld (USA)",
+  "url": "https://www.newsnow.com/us/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/north-american-industry-classification-system-naics-canada.md",
+  "id": "north-american-industry-classification-system-naics-canada",
+  "name": "North American Industry Classification System (NAICS) Canada",
+  "url": "http://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVDPage1&db=imdb&dis=2&adm=8&TVD=118464",
+  "category": "dark-web",
+  "mp": "medium"
+ }
+]

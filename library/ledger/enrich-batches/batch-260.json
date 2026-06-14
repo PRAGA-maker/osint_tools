@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/news-search/newspaper-map.md",
+  "id": "newspaper-map",
+  "name": "Newspaper Map",
+  "url": "https://newspapermap.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/newspaperarchive-com.md",
+  "id": "newspaperarchive-com",
+  "name": "NewspaperARCHIVE.com",
+  "url": "https://newspaperarchive.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/niche.md",
+  "id": "niche",
+  "name": "Niche",
+  "url": "https://www.niche.com/colleges/search/best-colleges/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/nielsen-s-north-america.md",
+  "id": "nielsen-s-north-america",
+  "name": "Nielsen\u2019s (North America)",
+  "url": "https://www.nielsen.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/nmhdds-open-directory.md",
+  "id": "nmhdds-open-directory",
+  "name": "NMHDDS Open Directory",
+  "url": "https://doyou.needmorehdd.space",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/numbeo.md",
+  "id": "numbeo",
+  "name": "Numbeo",
+  "url": "http://www.numbeo.com/common/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/occrp-org.md",
+  "id": "occrp-org",
+  "name": "OCCRP.org",
+  "url": "https://id.occrp.org/databases/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/oceanhero.md",
+  "id": "oceanhero",
+  "name": "OceanHero",
+  "url": "https://oceanhero.today",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ocg.md",
+  "id": "ocg",
+  "name": "OCG",
+  "url": "https://ocg.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/octosearch-dootech-com.md",
+  "id": "octosearch-dootech-com",
+  "name": "Octosearch.dootech.com",
+  "url": "https://octosearch.dootech.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/od-search-tool.md",
+  "id": "od-search-tool",
+  "name": "OD Search Tool",
+  "url": "https://open-directories.reecemercer.dev",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/odbparser.md",
+  "id": "odbparser",
+  "name": "ODBParser",
+  "url": "https://github.com/citcheese/ODBParser",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/odin.md",
+  "id": "odin",
+  "name": "ODIN",
+  "url": "https://search.odin.io/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/office-of-government-ethics.md",
+  "id": "office-of-government-ethics",
+  "name": "Office of Government Ethics",
+  "url": "http://www.oge.gov/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/oh-shint-osint-web-resources.md",
+  "id": "oh-shint-osint-web-resources",
+  "name": "OH SHINT! OSINT Web Resources",
+  "url": "https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/introduction-to-osint-web-resources",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/onet.md",
+  "id": "onet",
+  "name": "Onet",
+  "url": "https://www.onet.pl",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

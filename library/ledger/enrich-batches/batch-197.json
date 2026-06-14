@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/deepfake-detection/deepsafe.md",
+  "id": "deepsafe",
+  "name": "DeepSafe",
+  "url": "https://github.com/siddharthksah/DeepSafe",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/deturl.md",
+  "id": "deturl",
+  "name": "Deturl",
+  "url": "http://deturl.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/downloadhelper.md",
+  "id": "downloadhelper",
+  "name": "DownloadHelper",
+  "url": "http://www.downloadhelper.net",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/fact-checking-tools/duke-reporters-lab.md",
+  "id": "duke-reporters-lab",
+  "name": "Duke Reporters' Lab",
+  "url": "https://reporterslab.org/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/emergent.md",
+  "id": "emergent",
+  "name": "Emergent",
+  "url": "http://www.emergent.info",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfake-detection/faceforensics-plus-plus.md",
+  "id": "faceforensics-plus-plus",
+  "name": "FaceForensics++",
+  "url": "https://www.faceforensics.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/fact-check.md",
+  "id": "fact-check",
+  "name": "Fact Check",
+  "url": "http://www.factcheck.org",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/filmot.md",
+  "id": "filmot",
+  "name": "Filmot",
+  "url": "https://filmot.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/find-and-set-scale-from-image.md",
+  "id": "find-and-set-scale-from-image",
+  "name": "Find and Set Scale From Image",
+  "url": "https://www.blocklayer.com/scale-fixereng.aspx",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/find-youtube-video.md",
+  "id": "find-youtube-video",
+  "name": "Find YouTube Video",
+  "url": "https://findyoutubevideo.thetechrobo.ca/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/font-spring.md",
+  "id": "font-spring",
+  "name": "Font Spring",
+  "url": "https://www.fontspring.com/matcherator",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/source-verification/fotoforensics.md",
+  "id": "fotoforensics",
+  "name": "FotoForensics",
+  "url": "https://fotoforensics.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/foxmonitor.md",
+  "id": "foxmonitor",
+  "name": "FoxMonitor",
+  "url": "https://www.foxmonitor.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/frame-by-frame.md",
+  "id": "frame-by-frame",
+  "name": "Frame by Frame",
+  "url": "https://chrome.google.com/webstore/detail/frame-by-frame/cclnaabdfgnehogonpeddbgejclcjneh/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/full-fact.md",
+  "id": "full-fact",
+  "name": "Full Fact",
+  "url": "https://fullfact.org",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/geosearch.md",
+  "id": "geosearch",
+  "name": "Geosearch",
+  "url": "http://www.geosearchtool.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ }
+]

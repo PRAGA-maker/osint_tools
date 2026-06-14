@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/twitch-username-search.md",
+  "id": "twitch-username-search",
+  "name": "Twitch Username Search",
+  "url": "https://twitchusernames.com/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/twitchmetrics-net.md",
+  "id": "twitchmetrics-net",
+  "name": "Twitchmetrics.net",
+  "url": "https://www.twitchmetrics.net/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/twitchtracker.md",
+  "id": "twitchtracker",
+  "name": "TwitchTracker",
+  "url": "https://twitchtracker.com/",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/twitter-bot-checker.md",
+  "id": "twitter-bot-checker",
+  "name": "Twitter Bot Checker",
+  "url": "https://circleboom.com/twitter-management-tool/twitter-circle-tool/twitter-bot-checker",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/username-availability.md",
+  "id": "username-availability",
+  "name": "Username Availability",
+  "url": "https://cactus.tools/twitch/username",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/watch-frame-by-frame.md",
+  "id": "watch-frame-by-frame",
+  "name": "watch frame by frame",
+  "url": "http://www.watchframebyframe.com",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/youtube-dl-2.md",
+  "id": "youtube-dl-2",
+  "name": "Youtube-dl",
+  "url": "https://rg3.github.io/youtube-dl",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/social-networks/ytcomments-klostermann-ca.md",
+  "id": "ytcomments-klostermann-ca",
+  "name": "Ytcomments.klostermann.ca",
+  "url": "http://ytcomments.klostermann.ca",
+  "category": "social-networks",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/training-ctf/defcon-database.md",
+  "id": "defcon-database",
+  "name": "DEFCON Database",
+  "url": "https://defcondatabase.com",
+  "category": "training-ctf",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/training-ctf/forensic-osint-kb-guides.md",
+  "id": "forensic-osint-kb-guides",
+  "name": "Forensic OSINT KB Guides",
+  "url": "https://www.forensicosint.com/osint-guide",
+  "category": "training-ctf",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/training-ctf/games/geoguesser.md",
+  "id": "geoguesser",
+  "name": "GeoGuesser",
+  "url": "https://www.geoguessr.com/",
+  "category": "training-ctf",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/training-ctf/gosint-ruyynn.md",
+  "id": "gosint-ruyynn",
+  "name": "GOSINT (ruyynn)",
+  "url": "https://github.com/ruyynn/GOSINT",
+  "category": "training-ctf",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/training-ctf/intel-codex.md",
+  "id": "intel-codex",
+  "name": "intel-codex",
+  "url": "https://github.com/gl0bal01/intel-codex",
+  "category": "training-ctf",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/training-ctf/pentestingeverything.md",
+  "id": "pentestingeverything",
+  "name": "PentestingEverything",
+  "url": "https://github.com/m14r41/PentestingEverything",
+  "category": "training-ctf",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/training-ctf/smart-questions.md",
+  "id": "smart-questions",
+  "name": "Smart Questions",
+  "url": "https://www.catb.org/esr/faqs/smart-questions.html",
+  "category": "training-ctf",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/training-ctf/games/verif-cation-quiz-bot.md",
+  "id": "verif-cation-quiz-bot",
+  "name": "Verif!cation Quiz Bot",
+  "url": "https://x.com/quiztime",
+  "category": "training-ctf",
+  "mp": "low"
+ }
+]

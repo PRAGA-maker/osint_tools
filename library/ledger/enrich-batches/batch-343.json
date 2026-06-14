@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dating-classifieds/findr-fans.md",
+  "id": "findr-fans",
+  "name": "Findr.fans",
+  "url": "https://findr.fans/",
+  "category": "dating-classifieds",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dating-classifieds/onlyfinder.md",
+  "id": "onlyfinder",
+  "name": "OnlyFinder",
+  "url": "https://onlyfinder.com/",
+  "category": "dating-classifieds",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dating-classifieds/onlysearch-co.md",
+  "id": "onlysearch-co",
+  "name": "Onlysearch.co",
+  "url": "https://onlysearch.co/",
+  "category": "dating-classifieds",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dating-classifieds/search-onlyfans-profiles.md",
+  "id": "search-onlyfans-profiles",
+  "name": "Search OnlyFans profiles",
+  "url": "https://hubite.com/onlyfans-search/",
+  "category": "dating-classifieds",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dating-classifieds/similarfans.md",
+  "id": "similarfans",
+  "name": "SimilarFans",
+  "url": "https://similarfans.com/",
+  "category": "dating-classifieds",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/1-free-online-ocr.md",
+  "id": "1-free-online-ocr",
+  "name": "1- Free Online OCR",
+  "url": "https://www.sodapdf.com/ocr-pdf",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/2023-world-report.md",
+  "id": "2023-world-report",
+  "name": "2023 World Report",
+  "url": "https://www.hrw.org/world-report/2023",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/99designs.md",
+  "id": "99designs",
+  "name": "99Designs",
+  "url": "http://99designs.ca",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/act-on.md",
+  "id": "act-on",
+  "name": "Act-on",
+  "url": "https://www.act-on.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/acuris-risk-intelligence.md",
+  "id": "acuris-risk-intelligence",
+  "name": "Acuris Risk Intelligence",
+  "url": "https://www.acurisriskintelligence.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/adobe-acrobat-program.md",
+  "id": "adobe-acrobat-program",
+  "name": "Adobe Acrobat Program",
+  "url": "https://acrobat.adobe.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/adobe-acrobat-reader-program.md",
+  "id": "adobe-acrobat-reader-program",
+  "name": "Adobe Acrobat Reader Program",
+  "url": "https://get.adobe.com/reader",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/adobe-photoshop-program.md",
+  "id": "adobe-photoshop-program",
+  "name": "Adobe Photoshop Program",
+  "url": "http://www.adobe.com/products/photoshop.html",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/advertise-com.md",
+  "id": "advertise-com",
+  "name": "Advertise.com",
+  "url": "https://www.advertise.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/agent-ransack.md",
+  "id": "agent-ransack",
+  "name": "Agent Ransack",
+  "url": "http://www.mythicsoft.com/agentransack",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/android/akana-android-malware.md",
+  "id": "akana-android-malware",
+  "name": "Akana Android Malware",
+  "url": "https://akana.mobiseclab.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/general-search/brave.md",
+  "id": "brave",
+  "name": "Brave",
+  "url": "https://search.brave.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/brightcloud.md",
+  "id": "brightcloud",
+  "name": "BrightCloud",
+  "url": "https://brightcloud.com/tools/url-ip-lookup.php",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/british-and-irish-legal-information-institute.md",
+  "id": "british-and-irish-legal-information-institute",
+  "name": "British and Irish Legal Information Institute",
+  "url": "http://www.bailii.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/btdig.md",
+  "id": "btdig",
+  "name": "btdig",
+  "url": "https://btdig.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/bureau-of-justice-statistics.md",
+  "id": "bureau-of-justice-statistics",
+  "name": "Bureau of Justice Statistics",
+  "url": "http://www.bjs.gov/index.cfm?ty=daa",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/cachedviews-com.md",
+  "id": "cachedviews-com",
+  "name": "CachedViews.com",
+  "url": "https://cachedviews.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/campaign-finance-reports-and-data.md",
+  "id": "campaign-finance-reports-and-data",
+  "name": "Campaign Finance Reports and Data",
+  "url": "https://www.fec.gov/data/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/canadian-charity-search.md",
+  "id": "canadian-charity-search",
+  "name": "Canadian Charity Search",
+  "url": "http://www.cra-arc.gc.ca/charitylists/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/canadian-department-of-finance.md",
+  "id": "canadian-department-of-finance",
+  "name": "Canadian Department of Finance",
+  "url": "https://www.canada.ca/en/department-finance.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/canadian-law-list-lawyer-search-engine-canada.md",
+  "id": "canadian-law-list-lawyer-search-engine-canada",
+  "name": "Canadian Law List Lawyer Search Engine (Canada)",
+  "url": "http://www.canadianlawlist.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/careerbuilder-canada.md",
+  "id": "careerbuilder-canada",
+  "name": "CareerBuilder (Canada)",
+  "url": "http://www.careerbuilder.ca",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/careerone-australia.md",
+  "id": "careerone-australia",
+  "name": "CareerOne (Australia)",
+  "url": "http://www.careerone.com.au",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/carrier-route.md",
+  "id": "carrier-route",
+  "name": "Carrier Route",
+  "url": "http://www.melissadata.com/lookups/cartradius.asp",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/carrot2-meta-search.md",
+  "id": "carrot2-meta-search",
+  "name": "Carrot2 Meta Search",
+  "url": "http://search.carrot2.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/catawiki.md",
+  "id": "catawiki",
+  "name": "Catawiki",
+  "url": "http://www.catawiki.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ceek-meta-search-japan.md",
+  "id": "ceek-meta-search-japan",
+  "name": "Ceek Meta Search (Japan)",
+  "url": "http://www.ceek.jp",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

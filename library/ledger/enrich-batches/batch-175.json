@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dark-web/us-inmate-locator.md",
+  "id": "us-inmate-locator",
+  "name": "US Inmate Locator",
+  "url": "http://www.theinmatelocator.com/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/vocalink.md",
+  "id": "vocalink",
+  "name": "VocaLink",
+  "url": "http://www.vocalink.com/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/web-o-proxy.md",
+  "id": "web-o-proxy",
+  "name": "Web O Proxy",
+  "url": "https://weboproxy.com/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/western-union-agent-locator.md",
+  "id": "western-union-agent-locator",
+  "name": "Western Union Agent Locator",
+  "url": "https://www.westernunion.co.uk/WUCOMWEB/staticMid.do?method=load&pagename=agentLocator",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/wikieducator.md",
+  "id": "wikieducator",
+  "name": "Wikieducator",
+  "url": "https://wikieducator.org",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/witchdoctor-new-zealand.md",
+  "id": "witchdoctor-new-zealand",
+  "name": "WitchDoctor (New Zealand)",
+  "url": "http://www.witchdoctor.co.nz",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/world-real-time-air-quality-index.md",
+  "id": "world-real-time-air-quality-index",
+  "name": "World Real-Time Air Quality Index",
+  "url": "http://waqi.info",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/ycombinator.md",
+  "id": "ycombinator",
+  "name": "Ycombinator",
+  "url": "https://news.ycombinator.com/ask",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dating-classifieds/ad-mart-classified-ads-united-kingdom.md",
+  "id": "ad-mart-classified-ads-united-kingdom",
+  "name": "Ad-Mart Classified Ads (United Kingdom)",
+  "url": "http://ad-mart.co.uk",
+  "category": "dating-classifieds",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dating-classifieds/admireme-vip.md",
+  "id": "admireme-vip",
+  "name": "admireme.vip",
+  "url": "https://admireme.vip/",
+  "category": "dating-classifieds",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dating-classifieds/adpost-com-worldwide.md",
+  "id": "adpost-com-worldwide",
+  "name": "Adpost.com (Worldwide)",
+  "url": "http://www.adpost.com",
+  "category": "dating-classifieds",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dating-classifieds/anonib-to.md",
+  "id": "anonib-to",
+  "name": "anonib.to",
+  "url": "https://anonib.to/",
+  "category": "dating-classifieds",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dating-classifieds/ashley-madison.md",
+  "id": "ashley-madison",
+  "name": "Ashley Madison",
+  "url": "https://www.ashleymadison.com",
+  "category": "dating-classifieds",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dating-classifieds/autotrader-classified-ads-united-kingdom.md",
+  "id": "autotrader-classified-ads-united-kingdom",
+  "name": "Autotrader Classified Ads (United Kingdom)",
+  "url": "http://www.autotrader.co.uk",
+  "category": "dating-classifieds",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dating-classifieds/backpage-craigslist-alternative.md",
+  "id": "backpage-craigslist-alternative",
+  "name": "Backpage (Craigslist Alternative)",
+  "url": "http://backpage.com",
+  "category": "dating-classifieds",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dating-classifieds/bargaincity-classified-ads-canada.md",
+  "id": "bargaincity-classified-ads-canada",
+  "name": "Bargaincity Classified Ads (Canada)",
+  "url": "https://www.bargaincity.ca",
+  "category": "dating-classifieds",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/fact-checking-tools/snopes.md",
+  "id": "snopes",
+  "name": "Snopes",
+  "url": "https://www.snopes.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/fact-checking-tools/stop-fake-tools.md",
+  "id": "stop-fake-tools",
+  "name": "Stop Fake Tools",
+  "url": "http://www.stopfake.org/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/reverse-media-search/tineye-reverse-image-search.md",
+  "id": "tineye-reverse-image-search",
+  "name": "TinEye Reverse Image Search",
+  "url": "https://tineye.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfake-detection/truthscan-deepfake-detector.md",
+  "id": "truthscan-deepfake-detector",
+  "name": "TruthScan Deepfake Detector",
+  "url": "https://truthscan.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/tubuep.md",
+  "id": "tubuep",
+  "name": "Tubuep",
+  "url": "https://github.com/bibanon/tubeup",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/veoh.md",
+  "id": "veoh",
+  "name": "Veoh",
+  "url": "http://www.veoh.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/source-verification/verification-handbook.md",
+  "id": "verification-handbook",
+  "name": "Verification Handbook",
+  "url": "https://verificationhandbook.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/source-verification/verification-junkie.md",
+  "id": "verification-junkie",
+  "name": "Verification Junkie",
+  "url": "https://verificationjunkie.com/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/video-stabilization-methods.md",
+  "id": "video-stabilization-methods",
+  "name": "Video Stabilization Methods",
+  "url": "https://github.com/yaochih/awesome-video-stabilization",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/vimeo.md",
+  "id": "vimeo",
+  "name": "Vimeo",
+  "url": "https://vimeo.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/youtube.md",
+  "id": "youtube",
+  "name": "YouTube",
+  "url": "https://www.youtube.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/youtube-captions-alternate-extractor.md",
+  "id": "youtube-captions-alternate-extractor",
+  "name": "YouTube Captions (Alternate Extractor)",
+  "url": "https://downsub.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/youtube-metadata.md",
+  "id": "youtube-metadata",
+  "name": "YouTube Metadata",
+  "url": "https://mattw.io/youtube-metadata/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/youtube-metadata-2.md",
+  "id": "youtube-metadata-2",
+  "name": "YouTube Metadata",
+  "url": "https://www.amnestyusa.org/citizenevidence",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/active-agency-map.md",
+  "id": "active-agency-map",
+  "name": "Active Agency Map",
+  "url": "https://www.google.com/maps/d/viewer?mid=1eYVDPh5itXq5acDT9b0BVeQwmESBa4cB",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/apple-com.md",
+  "id": "apple-com",
+  "name": "apple.com",
+  "url": "https://beta.maps.apple.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ }
+]

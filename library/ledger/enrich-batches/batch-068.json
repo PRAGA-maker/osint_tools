@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/blockint-nl.md",
+  "id": "blockint-nl",
+  "name": "blockint.nl",
+  "url": "https://www.blockint.nl/kyc/ubo-registers-in-the-eu/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bloomberg-com.md",
+  "id": "bloomberg-com",
+  "name": "bloomberg.com",
+  "url": "https://www.bloomberg.com/markets/stocks?cic_redirect=fallback",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bmi-com.md",
+  "id": "bmi-com",
+  "name": "bmi.com",
+  "url": "https://repertoire.bmi.com/StartPage.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/boatinfoworld.md",
+  "id": "boatinfoworld",
+  "name": "BoatInfoWorld",
+  "url": "https://www.boatinfoworld.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bookkeepers-org-uk.md",
+  "id": "bookkeepers-org-uk",
+  "name": "bookkeepers.org.uk",
+  "url": "https://www.bookkeepers.org.uk/Find-a-Bookkeeper/Browse-Directory/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/boursakuwait-com-kw.md",
+  "id": "boursakuwait-com-kw",
+  "name": "boursakuwait.com.kw",
+  "url": "https://www.boursakuwait.com.kw/en/participants/participants/listed-companies",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bps-org-uk.md",
+  "id": "bps-org-uk",
+  "name": "bps.org.uk",
+  "url": "https://www.bps.org.uk/lists/DIR",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/brooklyn-genealogy.md",
+  "id": "brooklyn-genealogy",
+  "name": "Brooklyn Genealogy",
+  "url": "http://bklyn-genealogy-info.stevemorse.org/index.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/bulgaria.md",
+  "id": "bulgaria",
+  "name": "Bulgaria",
+  "url": "https://portal.registryagency.bg/CR/Reports/VerificationPersonOrg",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/burial-records-uk.md",
+  "id": "burial-records-uk",
+  "name": "Burial Records (UK)",
+  "url": "http://www.asedonline.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/business.md",
+  "id": "business",
+  "name": "Business",
+  "url": "http://www.2010.voa.gov.uk/rli/en/basic/find",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/business-gov-au.md",
+  "id": "business-gov-au",
+  "name": "business.gov.au",
+  "url": "https://abr.business.gov.au/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/business-govt-nz.md",
+  "id": "business-govt-nz",
+  "name": "business.govt.nz",
+  "url": "https://www.business.govt.nz/onecheck",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/california.md",
+  "id": "california",
+  "name": "California",
+  "url": "https://inmatelocator.cdcr.ca.gov",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/canadian-legal-information-institute.md",
+  "id": "canadian-legal-information-institute",
+  "name": "Canadian Legal Information Institute",
+  "url": "https://www.canlii.org/en/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/canadian-resident-database-warning-slow.md",
+  "id": "canadian-resident-database-warning-slow",
+  "name": "Canadian Resident Database (warning: slow)",
+  "url": "https://bloopbase.keybase.pub/POPPY/CANRES/index.html",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

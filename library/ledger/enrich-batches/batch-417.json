@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/memuplay-com.md",
+  "id": "memuplay-com",
+  "name": "Memuplay.com",
+  "url": "https://www.memuplay.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/metacleaner-com.md",
+  "id": "metacleaner-com",
+  "name": "Metacleaner.com",
+  "url": "https://metacleaner.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/microsoft-safety-and-security-center.md",
+  "id": "microsoft-safety-and-security-center",
+  "name": "Microsoft Safety and Security Center",
+  "url": "http://www.microsoft.com/security/default.aspx",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/mit-pgp-public-key-server.md",
+  "id": "mit-pgp-public-key-server",
+  "name": "MIT PGP Public Key Server",
+  "url": "http://pgp.mit.edu",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/mozilla-firefox.md",
+  "id": "mozilla-firefox",
+  "name": "Mozilla Firefox",
+  "url": "https://www.mozilla.org/en-US/firefox/new",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/mullvad-browser.md",
+  "id": "mullvad-browser",
+  "name": "Mullvad Browser",
+  "url": "https://mullvad.net/en/browser",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/multifind.md",
+  "id": "multifind",
+  "name": "MultiFind",
+  "url": "https://chrome.google.com/webstore/detail/multifind/amegoafkcikfmdbfeldmchinkjfdgoog",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/multilogin.md",
+  "id": "multilogin",
+  "name": "MultiLogin",
+  "url": "https://chrome.google.com/webstore/detail/multilogin/ijfgglilaeakmoilplpcjcgjaoleopfi?hl=ru",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/my-browser-info.md",
+  "id": "my-browser-info",
+  "name": "My Browser Info",
+  "url": "http://mybrowserinfo.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/nano-id-cc.md",
+  "id": "nano-id-cc",
+  "name": "Nano ID CC",
+  "url": "https://zelark.github.io/nano-id-cc/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/netflix-movie-app-mobile-android.md",
+  "id": "netflix-movie-app-mobile-android",
+  "name": "Netflix Movie App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/netflix-movie-app-mobile-ios.md",
+  "id": "netflix-movie-app-mobile-ios",
+  "name": "Netflix Movie App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/netflix/id363590051?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/netsurf.md",
+  "id": "netsurf",
+  "name": "Netsurf",
+  "url": "http://www.netsurf-browser.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/network-analyzer-investigation-tool-app-mobile-ios.md",
+  "id": "network-analyzer-investigation-tool-app-mobile-ios",
+  "name": "Network Analyzer Investigation Tool App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/network-analyzer-ping-traceroute/id557405467?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/new-ip-now-web-proxy.md",
+  "id": "new-ip-now-web-proxy",
+  "name": "New IP Now Web Proxy",
+  "url": "http://newipnow.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/nino-generator.md",
+  "id": "nino-generator",
+  "name": "NINO Generator",
+  "url": "https://www.fakenamegenerator.com/national-insurance-number.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

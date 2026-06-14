@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/haro.md",
+  "id": "haro",
+  "name": "HARO",
+  "url": "http://www.helpareporter.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/headhunter.md",
+  "id": "headhunter",
+  "name": "Headhunter",
+  "url": "http://www.headhunter.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/hiretual.md",
+  "id": "hiretual",
+  "name": "Hiretual",
+  "url": "https://hiretual.com | https://chrome.google.com/webstore/detail/hiretual-10x-faster- talen/jeablngoapekimaeoeclgcefdcpjhjcg",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/human-predictions.md",
+  "id": "human-predictions",
+  "name": "Human Predictions",
+  "url": "https://humanpredictions.io",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/idealist.md",
+  "id": "idealist",
+  "name": "Idealist",
+  "url": "http://www.idealist.org",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/indeed.md",
+  "id": "indeed",
+  "name": "Indeed",
+  "url": "http://www.indeed.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/innocentive.md",
+  "id": "innocentive",
+  "name": "Innocentive",
+  "url": "http://www.innocentive.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/internet-experts.md",
+  "id": "internet-experts",
+  "name": "Internet Experts",
+  "url": "http://www.internetexperts.info",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/jobs-poland.md",
+  "id": "jobs-poland",
+  "name": "Jobs (Poland)",
+  "url": "http://www.jobs.pl",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/jobsite-uk.md",
+  "id": "jobsite-uk",
+  "name": "Jobsite (UK)",
+  "url": "http://www.jobsite.co.uk",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/jobster-job-posts-resumes.md",
+  "id": "jobster-job-posts-resumes",
+  "name": "Jobster (Job Posts / Resumes)",
+  "url": "http://www.jobster.com",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/lead-ferret.md",
+  "id": "lead-ferret",
+  "name": "Lead Ferret",
+  "url": "https://leadferret.com/search",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/library-of-congress-ask-a-librarian.md",
+  "id": "library-of-congress-ask-a-librarian",
+  "name": "Library of Congress: Ask a Librarian",
+  "url": "http://www.loc.gov/rr/askalib",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/licenseplates.md",
+  "id": "licenseplates",
+  "name": "Licenseplates",
+  "url": "http://www.worldlicenseplates.com/",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/linkedin-advanced-search.md",
+  "id": "linkedin-advanced-search",
+  "name": "Linkedin Advanced Search",
+  "url": "https://www.linkedin.com/vsearch/f",
+  "category": "people-search",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/people-search/marketvisual.md",
+  "id": "marketvisual",
+  "name": "MarketVisual",
+  "url": "http://www.marketvisual.com",
+  "category": "people-search",
+  "mp": "medium"
+ }
+]

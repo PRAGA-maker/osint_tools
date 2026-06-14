@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/xbrl-voluntary-filing-program.md",
+  "id": "xbrl-voluntary-filing-program",
+  "name": "XBRL Voluntary Filing Program",
+  "url": "https://www.sedar.com/issuers/issuers_en.htm",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/1st-headlines.md",
+  "id": "1st-headlines",
+  "name": "1st Headlines",
+  "url": "http://www.1stheadlines.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/3dfindit.md",
+  "id": "3dfindit",
+  "name": "3DFindit",
+  "url": "https://3dfindit.com/textsearch",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/abilogic.md",
+  "id": "abilogic",
+  "name": "AbiLogic",
+  "url": "https://www.abilogic.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/abyznewslinks.md",
+  "id": "abyznewslinks",
+  "name": "ABYZNewsLinks",
+  "url": "http://www.abyznewslinks.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/academia-2.md",
+  "id": "academia-2",
+  "name": "Academia",
+  "url": "https://www.academia.edu",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/academic-journals.md",
+  "id": "academic-journals",
+  "name": "Academic Journals",
+  "url": "http://www.academicjournals.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/african-journal-online.md",
+  "id": "african-journal-online",
+  "name": "African Journal Online",
+  "url": "http://www.ajol.info",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/agence-france-presse-afp.md",
+  "id": "agence-france-presse-afp",
+  "name": "Agence France-Presse (AFP)",
+  "url": "http://www.afp.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/ai-search-whisper.md",
+  "id": "ai-search-whisper",
+  "name": "AI Search Whisper",
+  "url": "https://google.digitaldigging.org/index2.html",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/all-in-one.md",
+  "id": "all-in-one",
+  "name": "All-in-One",
+  "url": "http://all-io.net",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/alleba-philippines.md",
+  "id": "alleba-philippines",
+  "name": "Alleba (Philippines)",
+  "url": "http://www.alleba.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/alltheinternet.md",
+  "id": "alltheinternet",
+  "name": "AllTheInternet",
+  "url": "http://www.alltheinternet.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/allyoucanread.md",
+  "id": "allyoucanread",
+  "name": "AllYouCanRead",
+  "url": "http://www.allyoucanread.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/american-society-of-civil-engineers.md",
+  "id": "american-society-of-civil-engineers",
+  "name": "American Society of Civil Engineers",
+  "url": "http://ascelibrary.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/animalsearch.md",
+  "id": "animalsearch",
+  "name": "AnimalSearch",
+  "url": "http://animalsearch.net",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/mysimon-shopping-search-engine.md",
+  "id": "mysimon-shopping-search-engine",
+  "name": "mySimon Shopping Search Engine",
+  "url": "http://www.mysimon.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/mywoodle-com.md",
+  "id": "mywoodle-com",
+  "name": "Mywoodle.com",
+  "url": "https://mywoodle.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/najdsi-slovenia.md",
+  "id": "najdsi-slovenia",
+  "name": "Najdsi (Slovenia)",
+  "url": "https://www.najdi.si",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/napalm.md",
+  "id": "napalm",
+  "name": "Napalm",
+  "url": "http://www.searchftps.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ftp-search/napalm-ftp.md",
+  "id": "napalm-ftp",
+  "name": "Napalm FTP",
+  "url": "https://www.searchftps.net/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/nate-search-engine-south-korea.md",
+  "id": "nate-search-engine-south-korea",
+  "name": "Nate Search Engine (South Korea)",
+  "url": "http://www.nate.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/national-criminal-justice-service.md",
+  "id": "national-criminal-justice-service",
+  "name": "National Criminal Justice Service",
+  "url": "https://www.ncjrs.gov/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/code-search/nerdydata.md",
+  "id": "nerdydata",
+  "name": "NerdyData",
+  "url": "https://www.nerdydata.com/reports/new",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/nerdydata-source-code-search-engine.md",
+  "id": "nerdydata-source-code-search-engine",
+  "name": "NerdyData Source Code Search Engine",
+  "url": "https://search.nerdydata.com/code",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/neuskool.md",
+  "id": "neuskool",
+  "name": "Neuskool",
+  "url": "https://neuskool.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/new-zealand-law-society.md",
+  "id": "new-zealand-law-society",
+  "name": "New Zealand Law Society",
+  "url": "https://www.lawsociety.org.nz/for-the-community/search-register-of-lawyers",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-and-moods-search-australia.md",
+  "id": "news-and-moods-search-australia",
+  "name": "News & Moods Search (Australia)",
+  "url": "https://www.newsandmoods.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/newsbot.md",
+  "id": "newsbot",
+  "name": "NewsBot",
+  "url": "https://getnewsbot.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/newsbrief.md",
+  "id": "newsbrief",
+  "name": "NewsBrief",
+  "url": "https://emm.newsbrief.eu/NewsBrief/clusteredition/en/latest.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/newsnow-canada.md",
+  "id": "newsnow-canada",
+  "name": "NewsNow (Canada)",
+  "url": "https://www.newsnow.com/ca/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/newsnow-co-uk.md",
+  "id": "newsnow-co-uk",
+  "name": "NewsNow.co.uk",
+  "url": "https://www.newsnow.co.uk/h/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/memegine.md",
+  "id": "memegine",
+  "name": "Memegine",
+  "url": "https://memegine.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/mereku-com.md",
+  "id": "mereku-com",
+  "name": "Mereku.com",
+  "url": "https://mereku.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/metaphor-systems.md",
+  "id": "metaphor-systems",
+  "name": "metaphor systems",
+  "url": "https://metaphor.systems/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/myallsearch.md",
+  "id": "myallsearch",
+  "name": "Myallsearch",
+  "url": "http://www.myallsearch.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/mymunka-safe-search-engine-for-kids.md",
+  "id": "mymunka-safe-search-engine-for-kids",
+  "name": "Mymunka Safe Search Engine for Kids",
+  "url": "http://mymunka.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/najdi-slovenia.md",
+  "id": "najdi-slovenia",
+  "name": "Najdi (Slovenia)",
+  "url": "http://www.najdi.si",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/nasa-kids-club.md",
+  "id": "nasa-kids-club",
+  "name": "NASA Kids Club",
+  "url": "http://www.nasa.gov/audience/forkids/kidsclub/flash/index.html",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/national-geographic-kids.md",
+  "id": "national-geographic-kids",
+  "name": "National Geographic Kids",
+  "url": "http://kids.nationalgeographic.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/naver-south-korea.md",
+  "id": "naver-south-korea",
+  "name": "Naver (South Korea)",
+  "url": "http://www.naver.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/network-entity-reputation-database-nerd.md",
+  "id": "network-entity-reputation-database-nerd",
+  "name": "Network Entity Reputation Database (NERD)",
+  "url": "https://nerd.cesnet.cz/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/news-explorer-bluemix.md",
+  "id": "news-explorer-bluemix",
+  "name": "News Explorer BlueMix",
+  "url": "http://news-explorer.mybluemix.net/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/news-map.md",
+  "id": "news-map",
+  "name": "News Map",
+  "url": "http://newsmap.jp",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/news-now.md",
+  "id": "news-now",
+  "name": "News Now",
+  "url": "http://www.newsnow.co.uk",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/news-search.md",
+  "id": "news-search",
+  "name": "News Search",
+  "url": "https://upstract.com/search",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/news-search-engine.md",
+  "id": "news-search-engine",
+  "name": "News Search Engine",
+  "url": "https://cse.google.com/cse?cx=013991603413798772546:fvmtax6anhd",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/newseum-today-front-pages.md",
+  "id": "newseum-today-front-pages",
+  "name": "Newseum - Today Front Pages",
+  "url": "http://www.newseum.org/todaysfrontpages",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

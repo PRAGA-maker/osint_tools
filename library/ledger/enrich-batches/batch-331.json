@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/voidaccess.md",
+  "id": "voidaccess",
+  "name": "VoidAccess",
+  "url": "https://github.com/KatrielMoses/voidaccess",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/voidly-censorship-index.md",
+  "id": "voidly-censorship-index",
+  "name": "Voidly Censorship Index",
+  "url": "https://voidly.ai/censorship-index",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/vortex.md",
+  "id": "vortex",
+  "name": "Vortex",
+  "url": "http://www.dotmatics.com/products/vortex",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/wordlist/w-generator.md",
+  "id": "w-generator",
+  "name": "W Generator",
+  "url": "https://app.wgen.io/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/wasitai.md",
+  "id": "wasitai",
+  "name": "WasItAI",
+  "url": "https://wasitai.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/waybackurls.md",
+  "id": "waybackurls",
+  "name": "Waybackurls",
+  "url": "https://github.com/tomnomnom/waybackurls",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/webassistant.md",
+  "id": "webassistant",
+  "name": "WebAssistant",
+  "url": "http://www.proxy-offline-browser.com/download.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/website-ripper-copier.md",
+  "id": "website-ripper-copier",
+  "name": "Website Ripper Copier",
+  "url": "http://www.tensons.com/products/websiterippercopier",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/virtual-machines/whonix.md",
+  "id": "whonix",
+  "name": "Whonix",
+  "url": "https://www.whonix.org/wiki/Main_Page",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/wickr.md",
+  "id": "wickr",
+  "name": "Wickr",
+  "url": "https://wickr.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/world-monitor.md",
+  "id": "world-monitor",
+  "name": "World Monitor",
+  "url": "https://www.worldmonitor.app/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/wot.md",
+  "id": "wot",
+  "name": "WOT",
+  "url": "https://www.mywot.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/wynyard-group.md",
+  "id": "wynyard-group",
+  "name": "Wynyard Group",
+  "url": "https://wynyardgroup.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/x86-and-x64-intel-assembler.md",
+  "id": "x86-and-x64-intel-assembler",
+  "name": "x86 and x64 Intel Assembler",
+  "url": "https://defuse.ca/online-x86-assembler.htm",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/xbox-monitor.md",
+  "id": "xbox-monitor",
+  "name": "xbox_monitor",
+  "url": "https://github.com/misiektoja/xbox_monitor",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/xor/python/xorbruteforcer-py.md",
+  "id": "xorbruteforcer-py",
+  "name": "XORBruteForcer.py",
+  "url": "https://github.com/jesparza/scripts/blob/master/xorBruteForcer.py",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

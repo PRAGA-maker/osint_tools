@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/wordstat-yandex-ru.md",
+  "id": "wordstat-yandex-ru",
+  "name": "Wordstat.yandex.ru",
+  "url": "https://wordstat.yandex.ru/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/world-digital-library.md",
+  "id": "world-digital-library",
+  "name": "World Digital Library",
+  "url": "http://www.wdl.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/world-newspapers.md",
+  "id": "world-newspapers",
+  "name": "World-Newspapers",
+  "url": "http://www.world-newspapers.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/worldnews.md",
+  "id": "worldnews",
+  "name": "WorldNews",
+  "url": "http://wn.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/xdcc-eu.md",
+  "id": "xdcc-eu",
+  "name": "Xdcc.eu",
+  "url": "https://www.xdcc.eu",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/xgs.md",
+  "id": "xgs",
+  "name": "XGS",
+  "url": "https://github.com/XAMFRA/XGS",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/xtorx.md",
+  "id": "xtorx",
+  "name": "Xtorx",
+  "url": "https://www.xtorx.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/yagooglesearch.md",
+  "id": "yagooglesearch",
+  "name": "Yagooglesearch",
+  "url": "https://github.com/opsdisk/yagooglesearch",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/yahoo-news.md",
+  "id": "yahoo-news",
+  "name": "Yahoo News",
+  "url": "http://news.yahoo.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/yahoo-search.md",
+  "id": "yahoo-search",
+  "name": "Yahoo! Search",
+  "url": "https://www.yahoo.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/yandex-russia.md",
+  "id": "yandex-russia",
+  "name": "Yandex (Russia)",
+  "url": "http://www.yandex.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/yandex-wordstat.md",
+  "id": "yandex-wordstat",
+  "name": "Yandex Wordstat",
+  "url": "https://wordstat.yandex.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/yeggi.md",
+  "id": "yeggi",
+  "name": "Yeggi",
+  "url": "https://www.yeggi.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/zarebin-iran.md",
+  "id": "zarebin-iran",
+  "name": "Zarebin (Iran)",
+  "url": "http://zarebin.ir",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/zetoc.md",
+  "id": "zetoc",
+  "name": "Zetoc",
+  "url": "http://zetoc.jisc.ac.uk",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/zilladog-safe-email-and-games-for-kids.md",
+  "id": "zilladog-safe-email-and-games-for-kids",
+  "name": "Zilladog Safe Email & Games For Kids",
+  "url": "http://www.zilladog.com",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

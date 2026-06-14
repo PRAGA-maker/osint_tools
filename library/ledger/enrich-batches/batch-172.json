@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/xanga-2-0.md",
+  "id": "xanga-2-0",
+  "name": "Xanga 2.0",
+  "url": "http://xanga.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/yahoo-groups.md",
+  "id": "yahoo-groups",
+  "name": "Yahoo Groups",
+  "url": "https://groups.yahoo.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/yahootech-news-and-updates.md",
+  "id": "yahootech-news-and-updates",
+  "name": "YahooTech News & Updates",
+  "url": "https://www.yahoo.com/tech",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/yelp-find-friends.md",
+  "id": "yelp-find-friends",
+  "name": "Yelp Find Friends",
+  "url": "https://www.yelp.com/login?return_url=%2Ffind_friends",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/zbin.md",
+  "id": "zbin",
+  "name": "ZBin",
+  "url": "https://zbin.dev/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/zdnet-technology-news-and-reviews.md",
+  "id": "zdnet-technology-news-and-reviews",
+  "name": "ZDNet Technology News & Reviews",
+  "url": "http://www.zdnet.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/zerobin.md",
+  "id": "zerobin",
+  "name": "ZeroBin",
+  "url": "https://sebsauvage.net/paste/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/tor-search/ahmia.md",
+  "id": "ahmia",
+  "name": "Ahmia",
+  "url": "https://ahmia.fi/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/aleph-open-search.md",
+  "id": "aleph-open-search",
+  "name": "Aleph Open Search",
+  "url": "https://open-search.aleph-networks.eu",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/ancestor-search.md",
+  "id": "ancestor-search",
+  "name": "Ancestor Search",
+  "url": "http://www.searchforancestors.com",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/andi.md",
+  "id": "andi",
+  "name": "Andi",
+  "url": "https://andisearch.com/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/anz-standard-industrial-classification.md",
+  "id": "anz-standard-industrial-classification",
+  "name": "ANZ Standard Industrial Classification",
+  "url": "http://www.abs.gov.au/ausstats/abs@.nsf/2f762f95845417aeca25706c00834efa/7cd8aebba7225c4eca25697e0018faf3!OpenDocument",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/canadian-numbering-administrator.md",
+  "id": "canadian-numbering-administrator",
+  "name": "Canadian Numbering Administrator",
+  "url": "http://cnac.ca/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/centre-for-investigative-journalism.md",
+  "id": "centre-for-investigative-journalism",
+  "name": "Centre for Investigative Journalism",
+  "url": "https://tcij.org/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/charity-navigator.md",
+  "id": "charity-navigator",
+  "name": "Charity Navigator",
+  "url": "http://www.charitynavigator.org/",
+  "category": "dark-web",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/dark-web/cpic-stolen-property-search.md",
+  "id": "cpic-stolen-property-search",
+  "name": "CPIC Stolen Property Search",
+  "url": "http://www.cpic-cipc.ca/index-eng.htm",
+  "category": "dark-web",
+  "mp": "medium"
+ }
+]

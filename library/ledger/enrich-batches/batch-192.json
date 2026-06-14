@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/financial-crypto/trustonline-org-uk.md",
+  "id": "trustonline-org-uk",
+  "name": "trustonline.org.uk",
+  "url": "http://www.trustonline.org.uk/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/uk-equifax-com.md",
+  "id": "uk-equifax-com",
+  "name": "uk.equifax.com",
+  "url": "http://www.uk.equifax.com",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/unclaimedestates-com.md",
+  "id": "unclaimedestates-com",
+  "name": "unclaimedestates.com",
+  "url": "https://www.unclaimedestates.com/search",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/validate-creditcard.md",
+  "id": "validate-creditcard",
+  "name": "validate.creditcard",
+  "url": "http://validate.creditcard/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoin/wallet-explorer.md",
+  "id": "wallet-explorer",
+  "name": "Wallet Explorer",
+  "url": "https://www.walletexplorer.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/chain-analysis-platforms/wallet-explorer-2.md",
+  "id": "wallet-explorer-2",
+  "name": "Wallet Explorer",
+  "url": "https://www.walletexplorer.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/wallet-clustering-and-address-analysis/wallet-explorer-3.md",
+  "id": "wallet-explorer-3",
+  "name": "Wallet Explorer",
+  "url": "https://www.walletexplorer.com/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/wearepay-uk.md",
+  "id": "wearepay-uk",
+  "name": "wearepay.uk",
+  "url": "https://newseventsinsights.wearepay.uk/sort-code-checker/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/wikipedia-org.md",
+  "id": "wikipedia-org",
+  "name": "wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/International_Bank_Account_Number#IBAN_formats_by_country",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/x-com.md",
+  "id": "x-com",
+  "name": "x.com",
+  "url": "https://x.com/epieos/status/1904907899681604016",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/monero/xmrchain-net.md",
+  "id": "xmrchain-net",
+  "name": "XMRChain.net",
+  "url": "https://xmrchain.net/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/privacy-coin-analysis/xmrchain-net-monero.md",
+  "id": "xmrchain-net-monero",
+  "name": "XMRChain.net (Monero)",
+  "url": "https://xmrchain.net/",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/financial-crypto/privacy-coin-analysis/zcash-block-explorer.md",
+  "id": "zcash-block-explorer",
+  "name": "Zcash Block Explorer",
+  "url": "https://blockchair.com/zcash",
+  "category": "financial-crypto",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/123cam.md",
+  "id": "123cam",
+  "name": "123Cam",
+  "url": "http://123cam.com",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/24timezones-com.md",
+  "id": "24timezones-com",
+  "name": "24timezones.com",
+  "url": "https://24timezones.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/acled-data-crisis-map.md",
+  "id": "acled-data-crisis-map",
+  "name": "Acled data crisis map",
+  "url": "https://acleddata.com/dashboard/#/dashboard",
+  "category": "geolocation",
+  "mp": "medium"
+ }
+]

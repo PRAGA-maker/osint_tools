@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/ahpra-gov-au.md",
+  "id": "ahpra-gov-au",
+  "name": "ahpra.gov.au",
+  "url": "https://www.ahpra.gov.au/Registration/Registers-of-Practitioners.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/al-local-surety-association-directory.md",
+  "id": "al-local-surety-association-directory",
+  "name": "AL Local Surety Association Directory",
+  "url": "https://c0gaf106.caspio.com/dp/2d4e1000c7506b7686a540d3b10f",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/alabama-dept-of-corrections.md",
+  "id": "alabama-dept-of-corrections",
+  "name": "Alabama Dept of Corrections",
+  "url": "http://www.doc.state.al.us/inmatesearch",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/alaska-inmate-search.md",
+  "id": "alaska-inmate-search",
+  "name": "Alaska Inmate Search",
+  "url": "https://inmatesearchinfo.com/alaska-inmate-search-department-of-corrections-lookup",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ama-assn-org.md",
+  "id": "ama-assn-org",
+  "name": "ama-assn.org",
+  "url": "https://find-doctor.ama-assn.org/#",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/amazon-co-uk.md",
+  "id": "amazon-co-uk",
+  "name": "amazon.co.uk",
+  "url": "https://www.amazon.co.uk/wedding/search",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ancestor-hunt.md",
+  "id": "ancestor-hunt",
+  "name": "Ancestor Hunt",
+  "url": "http://ancestorhunt.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ar-college-university-2017-salaries.md",
+  "id": "ar-college-university-2017-salaries",
+  "name": "AR College University 2017 Salaries",
+  "url": "https://b2.caspio.com/dp.asp?AppKey=883210005c5e51279b424364aab2",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/arcgis-com-3.md",
+  "id": "arcgis-com-3",
+  "name": "arcgis.com",
+  "url": "https://housinggovie.maps.arcgis.com/apps/webappviewer/index.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/arcgis-com-4.md",
+  "id": "arcgis-com-4",
+  "name": "arcgis.com",
+  "url": "https://manngis.maps.arcgis.com/apps/webappviewer/index.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/architects-register-org-uk.md",
+  "id": "architects-register-org-uk",
+  "name": "architects-register.org.uk",
+  "url": "http://architects-register.org.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/architecture-com.md",
+  "id": "architecture-com",
+  "name": "architecture.com",
+  "url": "https://members.architecture.com/directory/default.asp?dir=3",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/archives.md",
+  "id": "archives",
+  "name": "Archives",
+  "url": "https://www.archives.com/search/death",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/arizona-inmate-datasearch.md",
+  "id": "arizona-inmate-datasearch",
+  "name": "Arizona Inmate Datasearch",
+  "url": "https://corrections.az.gov/public-resources/inmate-datasearch",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/arkansas-department-of-correction.md",
+  "id": "arkansas-department-of-correction",
+  "name": "Arkansas Department of Correction",
+  "url": "https://apps.ark.org/inmate_info/index.php",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/arkvoters-com.md",
+  "id": "arkvoters-com",
+  "name": "Arkvoters.com",
+  "url": "https://arkvoters.com/",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

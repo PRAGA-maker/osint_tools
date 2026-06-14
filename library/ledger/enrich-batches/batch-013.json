@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/verify-email-address.md",
+  "id": "verify-email-address",
+  "name": "Verify Email address",
+  "url": "https://email-checker.net",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-verification/verifyemail-r.md",
+  "id": "verifyemail-r",
+  "name": "VerifyEmail (R$)",
+  "url": "https://emailable.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/breach-data/vigilante-pw.md",
+  "id": "vigilante-pw",
+  "name": "Vigilante.pw",
+  "url": "https://www.vigilante.pw/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/voilanorbert.md",
+  "id": "voilanorbert",
+  "name": "VoilaNorbert",
+  "url": "https://www.voilanorbert.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/web-archive-org-2.md",
+  "id": "web-archive-org-2",
+  "name": "web.archive.org",
+  "url": "https://web.archive.org/web/20230604194745/https://www.haltabuse.org/help/headers/index.shtml",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/weedmaps.md",
+  "id": "weedmaps",
+  "name": "Weedmaps",
+  "url": "https://bloopbase.keybase.pub/POPPY/WEEDMAPS/index.html",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/whatismyipaddress-com.md",
+  "id": "whatismyipaddress-com",
+  "name": "Whatismyipaddress.com",
+  "url": "https://whatismyipaddress.com/trace-email",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/wonderoftech-com.md",
+  "id": "wonderoftech-com",
+  "name": "wonderoftech.com",
+  "url": "https://wonderoftech.com/ugly-mail/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/zen-github-com.md",
+  "id": "zen-github-com",
+  "name": "Zen (github.com)",
+  "url": "https://github.com/s0md3v/Zen?utm_source=substack&utm_medium=email",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/evidence-capture/forensic-osint-full-page-screen-capture.md",
+  "id": "forensic-osint-full-page-screen-capture",
+  "name": "Forensic OSINT Full Page Screen Capture",
+  "url": "https://chromewebstore.google.com/detail/forensic-osint-full-page/jojaomahhndmeienhjihojidkddkahcn",
+  "category": "evidence-capture",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/colorbrewer.md",
+  "id": "colorbrewer",
+  "name": "Colorbrewer",
+  "url": "http://colorbrewer2.org",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/corona.md",
+  "id": "corona",
+  "name": "Corona",
+  "url": "https://corona.cast.uark.edu/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/crowdmap.md",
+  "id": "crowdmap",
+  "name": "CrowdMap",
+  "url": "https://crowdmap.com",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/ctlrq-address-lookup.md",
+  "id": "ctlrq-address-lookup",
+  "name": "CTLRQ Address Lookup",
+  "url": "https://ctrlq.org/maps/address",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/digikam.md",
+  "id": "digikam",
+  "name": "digiKam",
+  "url": "https://www.digikam.org/",
+  "category": "geolocation",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/geolocation/dual-maps.md",
+  "id": "dual-maps",
+  "name": "Dual Maps",
+  "url": "https://data.mashedworld.com/dualmaps/map.htm",
+  "category": "geolocation",
+  "mp": "high"
+ }
+]

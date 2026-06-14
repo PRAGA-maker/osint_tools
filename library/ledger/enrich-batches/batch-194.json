@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/geoint-py.md",
+  "id": "geoint-py",
+  "name": "geoint-py",
+  "url": "https://github.com/gisfromscratch/geoint-py",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/geoint-search.md",
+  "id": "geoint-search",
+  "name": "GeoINT Search",
+  "url": "https://cse.google.com/cse?cx=015328649639895072395:sbv3zyxzmji#gsc.tab=0",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/geoip-tracker-tool.md",
+  "id": "geoip-tracker-tool",
+  "name": "GeoIP Tracker tool",
+  "url": "https://shadowcrypt.net/tools/geoip",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/geoplatform-portal.md",
+  "id": "geoplatform-portal",
+  "name": "GeoPlatform Portal",
+  "url": "https://www.geoplatform.gov/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/geoprotests-api.md",
+  "id": "geoprotests-api",
+  "name": "geoprotests API",
+  "url": "https://rapidapi.com/gisfromscratch/api/geoprotests/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/geoseer-net.md",
+  "id": "geoseer-net",
+  "name": "Geoseer.net",
+  "url": "https://www.geoseer.net/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/global-conflict-tracker.md",
+  "id": "global-conflict-tracker",
+  "name": "Global Conflict Tracker",
+  "url": "https://www.cfr.org/global-conflict-tracker/?category=us",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/hate-map.md",
+  "id": "hate-map",
+  "name": "Hate Map",
+  "url": "https://www.splcenter.org/hate-map",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/inspire-geoportal-eu.md",
+  "id": "inspire-geoportal-eu",
+  "name": "Inspire-geoportal.eu",
+  "url": "http://www.inspire-geoportal.eu/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/isric-data-hub.md",
+  "id": "isric-data-hub",
+  "name": "ISRIC Data Hub",
+  "url": "https://data.isric.org/geonetwork/srv/eng/catalog.search#/home",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/localtimes-info.md",
+  "id": "localtimes-info",
+  "name": "localtimes.info",
+  "url": "https://localtimes.info/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/lookr.md",
+  "id": "lookr",
+  "name": "Lookr",
+  "url": "https://www.lookr.com",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/openstreetcam-2.md",
+  "id": "openstreetcam-2",
+  "name": "Openstreetcam",
+  "url": "https://www.openstreetcam.org/map",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/photo-map-ru.md",
+  "id": "photo-map-ru",
+  "name": "Photo-Map.RU",
+  "url": "http://photo-map.ru/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/pictimo.md",
+  "id": "pictimo",
+  "name": "Pictimo",
+  "url": "https://www.pictimo.com",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/residential-fire-fatalities-in-indiana.md",
+  "id": "residential-fire-fatalities-in-indiana",
+  "name": "Residential Fire Fatalities in Indiana",
+  "url": "https://www.arcgis.com/apps/dashboards/4d1289ab105145a1b1f80c1ad3cf19fb",
+  "category": "geolocation",
+  "mp": "medium"
+ }
+]

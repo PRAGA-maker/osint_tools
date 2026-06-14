@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/hybrid-analysis.md",
+  "id": "hybrid-analysis",
+  "name": "Hybrid Analysis",
+  "url": "https://hybrid-analysis.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/search/id-ransomware.md",
+  "id": "id-ransomware",
+  "name": "ID Ransomware",
+  "url": "https://id-ransomware.malwarehunterteam.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/identify-plans.md",
+  "id": "identify-plans",
+  "name": "Identify plans",
+  "url": "https://identify.plantnet.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/imgonline-com-ua.md",
+  "id": "imgonline-com-ua",
+  "name": "imgonline.com.ua",
+  "url": "https://www.imgonline.com.ua/eng/exif-editor.php",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/indiegogo.md",
+  "id": "indiegogo",
+  "name": "Indiegogo",
+  "url": "https://www.indiegogo.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/information-and-communications-technology-council-canada.md",
+  "id": "information-and-communications-technology-council-canada",
+  "name": "Information and Communications Technology Council (Canada)",
+  "url": "http://www.ictc-ctic.ca",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/inmatrix-zoomplayer.md",
+  "id": "inmatrix-zoomplayer",
+  "name": "Inmatrix Zoomplayer",
+  "url": "http://www.inmatrix.com/files/zoomplayer_download.shtml",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/instapaper.md",
+  "id": "instapaper",
+  "name": "Instapaper",
+  "url": "https://www.instapaper.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/intensedebate.md",
+  "id": "intensedebate",
+  "name": "IntenseDebate",
+  "url": "https://intensedebate.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/jeff-sagarin-north-america.md",
+  "id": "jeff-sagarin-north-america",
+  "name": "Jeff Sagarin (North America)",
+  "url": "http://sagarin.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/android/joe-apk-analyzer.md",
+  "id": "joe-apk-analyzer",
+  "name": "Joe APK Analyzer",
+  "url": "https://www.apk-analyzer.net/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/joe-file-analyzer.md",
+  "id": "joe-file-analyzer",
+  "name": "Joe File Analyzer",
+  "url": "https://www.file-analyzer.net/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/office-files/joesandbox-document-analyzer.md",
+  "id": "joesandbox-document-analyzer",
+  "name": "JoeSandbox Document Analyzer",
+  "url": "https://www.joesandbox.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/joinme-screensharing-tool.md",
+  "id": "joinme-screensharing-tool",
+  "name": "JoinMe Screensharing Tool",
+  "url": "https://join.me",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/jotti-s-malware-scanner.md",
+  "id": "jotti-s-malware-scanner",
+  "name": "Jotti's Malware Scanner",
+  "url": "https://virusscan.jotti.org/en-US/scan-file",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/json-to-csv.md",
+  "id": "json-to-csv",
+  "name": "JSON to CSV",
+  "url": "https://json-csv.com/",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/office-files/office-mal-scanner.md",
+  "id": "office-mal-scanner",
+  "name": "Office Mal Scanner",
+  "url": "https://www.reconstructer.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/office-files/offvis.md",
+  "id": "offvis",
+  "name": "OffVis",
+  "url": "https://download.microsoft.com/download/1/2/7/127ba59a-4fe1-4acd-ba47-513ceef85a85/OffVis.zip",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/online-ide-and-paste-search-engine.md",
+  "id": "online-ide-and-paste-search-engine",
+  "name": "Online IDE and Paste Search Engine",
+  "url": "https://redhuntlabs.com/online-ide-search",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/online-metadata-viewer-and-editor.md",
+  "id": "online-metadata-viewer-and-editor",
+  "name": "Online metadata viewer and editor",
+  "url": "https://products.groupdocs.app/metadata/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/online-ocr-converter.md",
+  "id": "online-ocr-converter",
+  "name": "Online OCR Converter",
+  "url": "http://www.onlineocr.net",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/hosted-automated-analysis/opswat-meta-defender.md",
+  "id": "opswat-meta-defender",
+  "name": "OPSWAT Meta Defender",
+  "url": "https://metadefender.opswat.com/#!/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pdfs/origami-framework.md",
+  "id": "origami-framework",
+  "name": "Origami Framework",
+  "url": "https://code.google.com/archive/p/origami-pdf/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/osintdashboard-azurewebsites-net.md",
+  "id": "osintdashboard-azurewebsites-net",
+  "name": "osintdashboard.azurewebsites.net",
+  "url": "https://osintdashboard.azurewebsites.net/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/ow-ly-url-shortener.md",
+  "id": "ow-ly-url-shortener",
+  "name": "Ow.ly URL Shortener",
+  "url": "http://ow.ly/url/shorten-url",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pageinsider.md",
+  "id": "pageinsider",
+  "name": "PageInsider",
+  "url": "http://www.pageinsider.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pages2images.md",
+  "id": "pages2images",
+  "name": "Pages2Images",
+  "url": "http://www.page2images.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/paste-search.md",
+  "id": "paste-search",
+  "name": "Paste Search",
+  "url": "https://psbdmp.ws/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pastes-search-engine.md",
+  "id": "pastes-search-engine",
+  "name": "Pastes Search Engine",
+  "url": "https://cse.google.com/cse?cx=661713d0371832a02",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pastes-search-engine-2.md",
+  "id": "pastes-search-engine-2",
+  "name": "Pastes Search Engine 2",
+  "url": "https://cse.google.com/cse?cx=006896442834264595052:fawrl1rug9e",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/paypal.md",
+  "id": "paypal",
+  "name": "PayPal",
+  "url": "https://www.paypal.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/pdfs/pdf-tools.md",
+  "id": "pdf-tools",
+  "name": "PDF Tools",
+  "url": "https://blog.didierstevens.com/programs/pdf-tools/",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

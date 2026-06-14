@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/peerblock.md",
+  "id": "peerblock",
+  "name": "Peerblock",
+  "url": "http://forums.peerblock.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/personal-security-checklist.md",
+  "id": "personal-security-checklist",
+  "name": "personal-security-checklist",
+  "url": "https://github.com/Lissy93/personal-security-checklist",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/perspective.md",
+  "id": "perspective",
+  "name": "Perspective",
+  "url": "https://github.com/finos/perspective",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pgpkeyanalyser.md",
+  "id": "pgpkeyanalyser",
+  "name": "PGPKeyAnalyser",
+  "url": "https://kriztalz.sh/pgp-key-analyser/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/phantom-tide.md",
+  "id": "phantom-tide",
+  "name": "Phantom Tide",
+  "url": "https://github.com/tg12/phantomtide",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pharos-ai.md",
+  "id": "pharos-ai",
+  "name": "Pharos AI",
+  "url": "https://conflicts.app",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/phishingseclists.md",
+  "id": "phishingseclists",
+  "name": "PhishingSecLists",
+  "url": "https://github.com/spmedia/PhishingSecLists",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/phone-number-search-constructor.md",
+  "id": "phone-number-search-constructor",
+  "name": "Phone Number Search Constructor",
+  "url": "https://cipher387.github.io/phonenumberqueryconstructor/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/phoneinfoga.md",
+  "id": "phoneinfoga",
+  "name": "PhoneInfoga",
+  "url": "https://github.com/sundowndev/PhoneInfoga",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/photon.md",
+  "id": "photon",
+  "name": "Photon",
+  "url": "https://github.com/s0md3v/Photon",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pidgin.md",
+  "id": "pidgin",
+  "name": "Pidgin",
+  "url": "https://www.pidgin.im",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/piktochart.md",
+  "id": "piktochart",
+  "name": "Piktochart",
+  "url": "https://piktochart.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pinpoint.md",
+  "id": "pinpoint",
+  "name": "Pinpoint",
+  "url": "https://journaliststudio.google.com/pinpoint/about",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pixel-block.md",
+  "id": "pixel-block",
+  "name": "Pixel Block",
+  "url": "https://chrome.google.com/webstore/detail/pixelblock/jmpmfcjnflbcoidlgapblgpgbilinlem",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pixxa.md",
+  "id": "pixxa",
+  "name": "Pixxa",
+  "url": "http://www.pixxa.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/pldb.md",
+  "id": "pldb",
+  "name": "PLDB",
+  "url": "https://pldb.com/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

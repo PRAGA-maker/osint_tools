@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/people-search/mattiapasti-com.md",
+  "id": "mattiapasti-com",
+  "name": "mattiapasti.com",
+  "url": "https://sfinder.mattiapasti.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/melissa-com.md",
+  "id": "melissa-com",
+  "name": "melissa.com",
+  "url": "https://www.melissa.com/v2/lookups/personatorsearch/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/melissa-us.md",
+  "id": "melissa-us",
+  "name": "Melissa (US)",
+  "url": "http://melissadata.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/melissa-us-2.md",
+  "id": "melissa-us-2",
+  "name": "Melissa (US)",
+  "url": "http://www.melissadata.com/lookups/emails.asp",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/melissadata.md",
+  "id": "melissadata",
+  "name": "MelissaData",
+  "url": "https://www.melissa.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/my-cse-for-search-in-48-pastebin-sites.md",
+  "id": "my-cse-for-search-in-48-pastebin-sites",
+  "name": "My CSE for search in 48 pastebin sites",
+  "url": "https://cipher387.github.io/pastebinsearchengines/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/my-life-people-search.md",
+  "id": "my-life-people-search",
+  "name": "My Life People Search",
+  "url": "https://www.mylife.com/people-search",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/registries/my-registry.md",
+  "id": "my-registry",
+  "name": "My Registry",
+  "url": "https://www.myregistry.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/namecheckerr-com.md",
+  "id": "namecheckerr-com",
+  "name": "namecheckerr.com",
+  "url": "https://namecheckerr.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/netbootcamp-s-people-tool.md",
+  "id": "netbootcamp-s-people-tool",
+  "name": "NetBootCamp\u00ef\u00bf\u00bds People Tool",
+  "url": "https://netbootcamp.org/peoplesearch.html",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/neutrosint.md",
+  "id": "neutrosint",
+  "name": "NeutrOSINT",
+  "url": "https://github.com/Kr0wZ/NeutrOSINT",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/next-door.md",
+  "id": "next-door",
+  "name": "Next Door",
+  "url": "https://nextdoor.com",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/nigeriaphonebook.md",
+  "id": "nigeriaphonebook",
+  "name": "NigeriaPhonebook",
+  "url": "https://nigeriaphonebook.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/no-1-free-people-search.md",
+  "id": "no-1-free-people-search",
+  "name": "No.1 Free People Search",
+  "url": "http://www.yasni.com/",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/osint-search-engine.md",
+  "id": "osint-search-engine",
+  "name": "OSINT Search Engine",
+  "url": "https://cse.google.com/cse/publicurl?cx=006290531980334157382:qcaf4enph7i",
+  "category": "people-search",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/people-search/osrframework-2.md",
+  "id": "osrframework-2",
+  "name": "osrframework",
+  "url": "https://pypi.org/project/osrframework/",
+  "category": "people-search",
+  "mp": "high"
+ }
+]

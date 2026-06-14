@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/mras-business-registry-search.md",
+  "id": "mras-business-registry-search",
+  "name": "MRAS Business Registry Search",
+  "url": "https://beta.canadasbusinessregistries.ca/search",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/naics-code-search.md",
+  "id": "naics-code-search",
+  "name": "NAICS Code Search",
+  "url": "https://www.census.gov/cgi-bin/sssd/naics/naicsrch",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/kyc-aml-tools/namescan.md",
+  "id": "namescan",
+  "name": "NameScan",
+  "url": "https://namescan.io",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/nation-master.md",
+  "id": "nation-master",
+  "name": "Nation Master",
+  "url": "http://www.nationmaster.com/statistics",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/beneficial-ownership-lookup/occrp-aleph.md",
+  "id": "occrp-aleph",
+  "name": "OCCRP Aleph",
+  "url": "https://aleph.occrp.org/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/oecd-aid-database.md",
+  "id": "oecd-aid-database",
+  "name": "OECD Aid Database",
+  "url": "http://www.oecd.org/dac/stats/data.htm",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/oecd-data.md",
+  "id": "oecd-data",
+  "name": "OECD Data",
+  "url": "https://data.oecd.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/oecd-factbook.md",
+  "id": "oecd-factbook",
+  "name": "OECD Factbook",
+  "url": "http://www.oecd-ilibrary.org/economics/oecd-factbook_18147364",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/ofac-sanctioned-search-engine.md",
+  "id": "ofac-sanctioned-search-engine",
+  "name": "OFAC Sanctioned Search Engine",
+  "url": "https://cse.google.com/cse?cx=e96467889fb82b9b0",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sanctions-screening/ofac-sanctions-list-search.md",
+  "id": "ofac-sanctions-list-search",
+  "name": "OFAC Sanctions List Search",
+  "url": "https://sanctionssearch.ofac.treas.gov/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/online-services-pei-business-corporate-registry.md",
+  "id": "online-services-pei-business-corporate-registry",
+  "name": "Online Services PEI Business / Corporate Registry",
+  "url": "https://www.princeedwardisland.ca/en/feature/pei-business-corporate-registry-original#/service/LegacyBusiness/LegacyBusinessSearch",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/open-data-network.md",
+  "id": "open-data-network",
+  "name": "Open Data Network",
+  "url": "http://www.opendatanetwork.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/open-data-portal-m-nchen-german-2.md",
+  "id": "open-data-portal-m-nchen-german-2",
+  "name": "Open-Data-Portal M\u00fcnchen (German)",
+  "url": "https://www.opengov-muenchen.de/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/opendata-by-socrata.md",
+  "id": "opendata-by-socrata",
+  "name": "OpenData by Socrata",
+  "url": "https://opendata.socrata.com/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/opengazettes.md",
+  "id": "opengazettes",
+  "name": "OpenGazettes",
+  "url": "http://opengazettes.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/beneficial-ownership-lookup/openownership.md",
+  "id": "openownership",
+  "name": "OpenOwnership",
+  "url": "https://www.openownership.org/en/",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/joe-sandbox-url-analyzer.md",
+  "id": "joe-sandbox-url-analyzer",
+  "name": "Joe Sandbox Url Analyzer",
+  "url": "https://www.url-analyzer.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/kaspersky-cyberthreat-live-map.md",
+  "id": "kaspersky-cyberthreat-live-map",
+  "name": "Kaspersky Cyberthreat live Map",
+  "url": "https://cybermap.kaspersky.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/keyword-density.md",
+  "id": "keyword-density",
+  "name": "Keyword Density",
+  "url": "https://tools.seobook.com/general/keyword-density/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip-loggers/ki-tc.md",
+  "id": "ki-tc",
+  "name": "Ki.tc",
+  "url": "https://ki.tc",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/kloth.md",
+  "id": "kloth",
+  "name": "Kloth",
+  "url": "http://www.kloth.net/services",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/knowledgenow.md",
+  "id": "knowledgenow",
+  "name": "KNOWLEDGENOW",
+  "url": "https://know.netenrich.com/content/track/threat-actor",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/url-expanders/knowurl.md",
+  "id": "knowurl",
+  "name": "KnowURL",
+  "url": "https://www.knowurl.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/kraken.md",
+  "id": "kraken",
+  "name": "Kraken",
+  "url": "https://github.com/Sw4mpf0x/Kraken",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/larger-io.md",
+  "id": "larger-io",
+  "name": "Larger.io",
+  "url": "https://www.larger.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/lazarusholic.md",
+  "id": "lazarusholic",
+  "name": "lazarusholic",
+  "url": "https://lazarus.day/actors/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/s3-blob-storage/lazys3.md",
+  "id": "lazys3",
+  "name": "lazys3",
+  "url": "https://github.com/nahamsec/lazys3",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/leakix.md",
+  "id": "leakix",
+  "name": "LeakIX",
+  "url": "https://leakix.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/url-expanders/link-expander.md",
+  "id": "link-expander",
+  "name": "Link Expander",
+  "url": "https://www.linkexpander.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/lionic-cyber-threat-map.md",
+  "id": "lionic-cyber-threat-map",
+  "name": "LIONIC Cyber Threat Map",
+  "url": "https://www.lionic.com/monitoring/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/majestic.md",
+  "id": "majestic",
+  "name": "Majestic",
+  "url": "https://majestic.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/malpedia.md",
+  "id": "malpedia",
+  "name": "Malpedia",
+  "url": "https://malpedia.caad.fkie.fraunhofer.de/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

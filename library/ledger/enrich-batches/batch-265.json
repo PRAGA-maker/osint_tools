@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/rootdig.md",
+  "id": "rootdig",
+  "name": "RootDig",
+  "url": "http://rootdig.blogspot.ca/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/rotten-tomatoes.md",
+  "id": "rotten-tomatoes",
+  "name": "Rotten Tomatoes",
+  "url": "http://www.rottentomatoes.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/rpx-corp.md",
+  "id": "rpx-corp",
+  "name": "RPX Corp",
+  "url": "http://www.rpxcorp.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/salary-and-wage-occupation-codes-australia.md",
+  "id": "salary-and-wage-occupation-codes-australia",
+  "name": "Salary And Wage Occupation Codes (Australia)",
+  "url": "https://www.ato.gov.au/uploadedFiles/Content/MEI/downloads/Salary-and-wage-occupation-codes-2015.pdf",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/sapo.md",
+  "id": "sapo",
+  "name": "SAPO",
+  "url": "https://www.sapo.pt",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/savvysearch.md",
+  "id": "savvysearch",
+  "name": "SavvySearch",
+  "url": "http://www.savvysearch.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/scala.md",
+  "id": "scala",
+  "name": "Scala",
+  "url": "https://www.programcreek.com/scala/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-tools/scanner-inurlbr.md",
+  "id": "scanner-inurlbr",
+  "name": "Scanner-inurlbr",
+  "url": "https://github.com/googleinurl/SCANNER-INURLBR",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/scholarpedia.md",
+  "id": "scholarpedia",
+  "name": "Scholarpedia",
+  "url": "http://www.scholarpedia.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/science-direct.md",
+  "id": "science-direct",
+  "name": "Science Direct",
+  "url": "https://www.sciencedirect.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/science-publications.md",
+  "id": "science-publications",
+  "name": "Science Publications",
+  "url": "https://www.thescipub.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-abuseipdb.md",
+  "id": "search-abuseipdb",
+  "name": "Search Abuseipdb",
+  "url": "https://github.com/oseasfr/search-abuseipdb",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-all.md",
+  "id": "search-all",
+  "name": "Search All",
+  "url": "https://chrome.google.com/webstore/detail/search-all/kpdkbemdpepjjppbfgeapjienologapa",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-atlas.md",
+  "id": "search-atlas",
+  "name": "Search Atlas",
+  "url": "https://searchatlas.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-by-filetype.md",
+  "id": "search-by-filetype",
+  "name": "Search by FileType",
+  "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:mu-oio3a980",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/search-ch.md",
+  "id": "search-ch",
+  "name": "Search.ch",
+  "url": "https://www.search.ch",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

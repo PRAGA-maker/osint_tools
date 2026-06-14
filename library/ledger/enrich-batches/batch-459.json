@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/seznam-czech-republic.md",
+  "id": "seznam-czech-republic",
+  "name": "Seznam(Czech Republic)",
+  "url": "https://seznam.cz",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/sharedigger.md",
+  "id": "sharedigger",
+  "name": "Sharedigger",
+  "url": "http://www.sharedigger.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/silobreaker.md",
+  "id": "silobreaker",
+  "name": "Silobreaker",
+  "url": "http://www.silobreaker.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/similarsites.md",
+  "id": "similarsites",
+  "name": "SimilarSites",
+  "url": "http://www.similarsites.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/siteslike.md",
+  "id": "siteslike",
+  "name": "SitesLike",
+  "url": "http://www.siteslike.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/slideshare-search-engine.md",
+  "id": "slideshare-search-engine",
+  "name": "SlideShare Search Engine",
+  "url": "https://cse.google.com/cse?cx=465eeeb114c7f523f",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/snowfl-com.md",
+  "id": "snowfl-com",
+  "name": "Snowfl.com",
+  "url": "https://snowfl.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/sogou-china.md",
+  "id": "sogou-china",
+  "name": "SoGou (China)",
+  "url": "http://www.sogou.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/soovle.md",
+  "id": "soovle",
+  "name": "Soovle",
+  "url": "http://www.soovle.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/sports-illustrated-kids.md",
+  "id": "sports-illustrated-kids",
+  "name": "Sports Illustrated Kids",
+  "url": "http://www.sikids.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/springer.md",
+  "id": "springer",
+  "name": "Springer",
+  "url": "http://link.springer.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/startpage-parser.md",
+  "id": "startpage-parser",
+  "name": "Startpage Parser",
+  "url": "https://github.com/knassar702/startpage-parser",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/storyful.md",
+  "id": "storyful",
+  "name": "Storyful",
+  "url": "http://storyful.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/sunxdcc.md",
+  "id": "sunxdcc",
+  "name": "Sunxdcc",
+  "url": "http://sunxdcc.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/superdesk.md",
+  "id": "superdesk",
+  "name": "Superdesk",
+  "url": "https://www.superdesk.org",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/surfnetkids.md",
+  "id": "surfnetkids",
+  "name": "SurfNetKids",
+  "url": "http://www.surfnetkids.com/search-results",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/financial-crypto/cryptocurrency-search-tool.md",
+  "id": "cryptocurrency-search-tool",
+  "name": "Cryptocurrency search tool",
+  "url": "https://www.aware-online.com/en/osint-tools/cryptocurrency-search-tool/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/cryptocurrencyfacts-com.md",
+  "id": "cryptocurrencyfacts-com",
+  "name": "cryptocurrencyfacts.com/",
+  "url": "https://cryptocurrencyfacts.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/edgar.md",
+  "id": "edgar",
+  "name": "EDGAR",
+  "url": "https://www.sec.gov/edgar/search/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/edgar-command-line-interface-edgar-tool.md",
+  "id": "edgar-command-line-interface-edgar-tool",
+  "name": "EDGAR Command Line Interface (edgar-tool)",
+  "url": "https://pypi.org/project/edgar-tool/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/elliptic.md",
+  "id": "elliptic",
+  "name": "Elliptic",
+  "url": "https://www.elliptic.co",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/ether-chain.md",
+  "id": "ether-chain",
+  "name": "Ether Chain",
+  "url": "https://www.etherchain.org",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/eu-consolidated-corporate-registers.md",
+  "id": "eu-consolidated-corporate-registers",
+  "name": "EU consolidated corporate registers",
+  "url": "https://e-justice.europa.eu/content_find_a_company-489-en.do",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/eu-sanctions-map.md",
+  "id": "eu-sanctions-map",
+  "name": "EU Sanctions Map",
+  "url": "https://www.sanctionsmap.eu/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/flowscan-org.md",
+  "id": "flowscan-org",
+  "name": "Flowscan.org",
+  "url": "https://flowscan.org/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/follow-the-bitcoin-automating-osint-blogpost.md",
+  "id": "follow-the-bitcoin-automating-osint-blogpost",
+  "name": "Follow the Bitcoin | Automating OSINT BLOGPOST",
+  "url": "http://www.automatingosint.com/blog/2017/09/follow-the-bitcoin-with-python-blockexplorer-and-webhose-io",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/global-suppliers-online.md",
+  "id": "global-suppliers-online",
+  "name": "Global Suppliers Online",
+  "url": "https://www.globalsuppliersonline.com/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/greylist-trace.md",
+  "id": "greylist-trace",
+  "name": "Greylist Trace",
+  "url": "https://greylisttrace.com/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/importyeti.md",
+  "id": "importyeti",
+  "name": "ImportYeti",
+  "url": "https://www.importyeti.com/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/ip-logger-2.md",
+  "id": "ip-logger-2",
+  "name": "IP Logger",
+  "url": "https://osint-spy.com/ip-logger",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/live-coin-watch.md",
+  "id": "live-coin-watch",
+  "name": "Live Coin Watch",
+  "url": "https://www.livecoinwatch.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/matbea.md",
+  "id": "matbea",
+  "name": "Matbea",
+  "url": "https://matbea.net",
+  "category": "financial-crypto",
+  "mp": "low"
+ }
+]

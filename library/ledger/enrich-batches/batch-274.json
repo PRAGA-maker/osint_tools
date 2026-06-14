@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/wordpress-com.md",
+  "id": "wordpress-com",
+  "name": "WordPress.com",
+  "url": "https://en.search.wordpress.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/world-news.md",
+  "id": "world-news",
+  "name": "World News",
+  "url": "https://wn.com/#/search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/worldchambersnetwork-directory-search.md",
+  "id": "worldchambersnetwork-directory-search",
+  "name": "WorldChambersNetwork Directory Search",
+  "url": "http://chamberdirectory.worldchambers.com/chambers/template/default_WCN.asp?i=57&k=9873423452345234988",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/worldwidescience-org.md",
+  "id": "worldwidescience-org",
+  "name": "WorldWideScience.org",
+  "url": "http://worldwidescience.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wow-search-engine-united-kingdom.md",
+  "id": "wow-search-engine-united-kingdom",
+  "name": "Wow Search Engine (United Kingdom)",
+  "url": "http://www.wow.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wowjobs-canada.md",
+  "id": "wowjobs-canada",
+  "name": "WowJobs (Canada)",
+  "url": "http://www.wowjobs.ca",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wowwiki-world-of-warcraft-wiki.md",
+  "id": "wowwiki-world-of-warcraft-wiki",
+  "name": "WoWWiki World of Warcraft Wiki",
+  "url": "https://wowpedia.fandom.com/wiki/Wowpedia",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/wpscan.md",
+  "id": "wpscan",
+  "name": "Wpscan",
+  "url": "https://wpscan.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/yacy.md",
+  "id": "yacy",
+  "name": "Yacy",
+  "url": "https://yacy.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/yahoo-advanced-web-search.md",
+  "id": "yahoo-advanced-web-search",
+  "name": "Yahoo Advanced Web Search",
+  "url": "https://search.yahoo.com/web/advanced",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/yahoo-search-2.md",
+  "id": "yahoo-search-2",
+  "name": "Yahoo Search",
+  "url": "https://search.yahoo.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/yam-search-engine-taiwan.md",
+  "id": "yam-search-engine-taiwan",
+  "name": "Yam Search Engine (Taiwan)",
+  "url": "http://search.yam.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/yamli-arabic.md",
+  "id": "yamli-arabic",
+  "name": "Yamli (Arabic)",
+  "url": "https://www.yamli.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/general-search/yandex.md",
+  "id": "yandex",
+  "name": "Yandex",
+  "url": "https://yandex.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/yaraif.md",
+  "id": "yaraif",
+  "name": "YARAif",
+  "url": "https://yaraify.abuse.ch/scan/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/yassen-com.md",
+  "id": "yassen-com",
+  "name": "Yassen.com",
+  "url": "http://yassen.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

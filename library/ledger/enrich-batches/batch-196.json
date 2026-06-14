@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/geolocation/unixtimestamp-com.md",
+  "id": "unixtimestamp-com",
+  "name": "unixtimestamp.com",
+  "url": "https://www.unixtimestamp.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/us-crisis-monitor.md",
+  "id": "us-crisis-monitor",
+  "name": "US Crisis Monitor",
+  "url": "https://acleddata.com/special-projects/us-crisis-monitor/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/webcam-nl-nl.md",
+  "id": "webcam-nl-nl",
+  "name": "Webcam.nl (NL)",
+  "url": "https://webcam.nl/live_streaming",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/webcams-travel.md",
+  "id": "webcams-travel",
+  "name": "Webcams.travel",
+  "url": "https://www.webcams.travel",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/worldtimebuddy-com.md",
+  "id": "worldtimebuddy-com",
+  "name": "worldtimebuddy.com",
+  "url": "https://www.worldtimebuddy.com/",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/geolocation/worldwebcams.md",
+  "id": "worldwebcams",
+  "name": "WorldWebcams",
+  "url": "http://world-webcams.nsspot.net",
+  "category": "geolocation",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/camstreamer.md",
+  "id": "camstreamer",
+  "name": "Camstreamer",
+  "url": "https://camstreamer.com/live/map",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/captin-fact.md",
+  "id": "captin-fact",
+  "name": "Captin Fact",
+  "url": "https://captainfact.io/",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/check.md",
+  "id": "check",
+  "name": "Check",
+  "url": "https://meedan.com/check",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/clarify-2.md",
+  "id": "clarify-2",
+  "name": "Clarify",
+  "url": "http://clarify.io",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/clip-blast.md",
+  "id": "clip-blast",
+  "name": "Clip Blast",
+  "url": "http://www.clipblast.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/dailymotion.md",
+  "id": "dailymotion",
+  "name": "DailyMotion",
+  "url": "http://www.dailymotion.com",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfake-detection/deepfake-detect.md",
+  "id": "deepfake-detect",
+  "name": "DeepFake-Detect",
+  "url": "https://github.com/dessa-oss/DeepFake-Detection",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfake-detection/deepfake-image-detection.md",
+  "id": "deepfake-image-detection",
+  "name": "DeepFake-Image-Detection",
+  "url": "https://github.com/rmkemker/DeepFake-Image-Detection",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfake-detection/deepfakebench.md",
+  "id": "deepfakebench",
+  "name": "DeepfakeBench",
+  "url": "https://github.com/SCLBD/DeepfakeBench",
+  "category": "image-video-face",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/image-video-face/deepfake-detection/deepfakedetector.md",
+  "id": "deepfakedetector",
+  "name": "DeepfakeDetector",
+  "url": "https://github.com/TRahulsingh/DeepfakeDetector",
+  "category": "image-video-face",
+  "mp": "medium"
+ }
+]

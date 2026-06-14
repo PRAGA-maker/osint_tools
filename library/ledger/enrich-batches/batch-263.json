@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/publc-com.md",
+  "id": "publc-com",
+  "name": "Publc.com",
+  "url": "https://publc.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/public-buckets-2.md",
+  "id": "public-buckets-2",
+  "name": "Public Buckets",
+  "url": "https://osint.sh/buckets/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/code-search/publicwww.md",
+  "id": "publicwww",
+  "name": "PublicWWW",
+  "url": "https://publicwww.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/pubmed-national-center-for-biotechnology-information.md",
+  "id": "pubmed-national-center-for-biotechnology-information",
+  "name": "PubMed - National Center for Biotechnology Information",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/pubpeer.md",
+  "id": "pubpeer",
+  "name": "PubPeer",
+  "url": "https://pubpeer.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/qilt-university-australia.md",
+  "id": "qilt-university-australia",
+  "name": "QILT University (Australia)",
+  "url": "http://www.qilt.edu.au",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/qsearch.md",
+  "id": "qsearch",
+  "name": "Qsearch",
+  "url": "http://www.qsearch.cc",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/quickfound-subject-search-engine.md",
+  "id": "quickfound-subject-search-engine",
+  "name": "QuickFound Subject Search Engine",
+  "url": "http://quickfound.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/quranicarabiccorpus.md",
+  "id": "quranicarabiccorpus",
+  "name": "QuranicArabicCorpus",
+  "url": "http://corpus.quran.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/radioreference-communications-wiki.md",
+  "id": "radioreference-communications-wiki",
+  "name": "Radioreference Communications Wiki",
+  "url": "http://wiki.radioreference.com/index.php/Main_Page",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/rambler-search-engine-russia.md",
+  "id": "rambler-search-engine-russia",
+  "name": "Rambler Search Engine (Russia)",
+  "url": "http://www.rambler.ru",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/rapusia.md",
+  "id": "rapusia",
+  "name": "Rapusia",
+  "url": "https://rapusia.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ratedpeople-united-kingdom.md",
+  "id": "ratedpeople-united-kingdom",
+  "name": "RatedPeople (United Kingdom)",
+  "url": "http://www.ratedpeople.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ratemyemployer-canada.md",
+  "id": "ratemyemployer-canada",
+  "name": "RateMyEmployer (Canada)",
+  "url": "http://www.ratemyemployer.ca/Home",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ratemyprofessors-north-america.md",
+  "id": "ratemyprofessors-north-america",
+  "name": "RateMyProfessors (North America)",
+  "url": "http://www.ratemyprofessors.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ratemyteachers-north-america.md",
+  "id": "ratemyteachers-north-america",
+  "name": "RateMyTeachers (North America)",
+  "url": "http://ratemyteachers.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

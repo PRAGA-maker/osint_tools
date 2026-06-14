@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/geocreepy.md",
+  "id": "geocreepy",
+  "name": "Geocreepy",
+  "url": "http://www.geocreepy.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/twitter/location-mapping/geosocial-footprint.md",
+  "id": "geosocial-footprint",
+  "name": "GeoSocial Footprint",
+  "url": "https://geosocialfootprint.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/getdaytrends.md",
+  "id": "getdaytrends",
+  "name": "getdaytrends",
+  "url": "https://getdaytrends.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/getdewey-co.md",
+  "id": "getdewey-co",
+  "name": "Getdewey.co",
+  "url": "https://getdewey.co/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/gettr-com.md",
+  "id": "gettr-com",
+  "name": "gettr.com",
+  "url": "https://gettr.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-account-finder-epieos.md",
+  "id": "google-account-finder-epieos",
+  "name": "Google Account Finder (EPIEOS)",
+  "url": "https://tools.epieos.com/google-account.php",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com.md",
+  "id": "google-com",
+  "name": "google.com",
+  "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Absky.app",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-2.md",
+  "id": "google-com-2",
+  "name": "google.com",
+  "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Astayfriends.de",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-3.md",
+  "id": "google-com-3",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Atrombi.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-4.md",
+  "id": "google-com-4",
+  "name": "google.com",
+  "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Acopainsdavant.linternaute.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-42.md",
+  "id": "google-com-42",
+  "name": "google.com",
+  "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Anaijapals.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-43.md",
+  "id": "google-com-43",
+  "name": "google.com",
+  "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Anairaland.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-44.md",
+  "id": "google-com-44",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Adouban.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-45.md",
+  "id": "google-com-45",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Aqzone.qq.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-46.md",
+  "id": "google-com-46",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Arenren.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/google-com-47.md",
+  "id": "google-com-47",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Aameba.jp&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

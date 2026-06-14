@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/email-verification/email-reputation.md",
+  "id": "email-reputation",
+  "name": "Email Reputation",
+  "url": "https://emailrep.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search-tool-by-inteltechniques.md",
+  "id": "email-search-tool-by-inteltechniques",
+  "name": "Email Search Tool by IntelTechniques",
+  "url": "https://inteltechniques.com/osint/email.search.html",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-sherlock.md",
+  "id": "email-sherlock",
+  "name": "Email Sherlock",
+  "url": "https://www.emailsherlock.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-validator.md",
+  "id": "email-validator",
+  "name": "Email Validator",
+  "url": "https://chema.ga/emailvalidator/index.php",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-validator-tool.md",
+  "id": "email-validator-tool",
+  "name": "Email Validator Tool",
+  "url": "http://e-mailvalidator.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/emailaddress-github-io.md",
+  "id": "emailaddress-github-io",
+  "name": "emailaddress.github.io",
+  "url": "https://emailaddress.github.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/emailharvester.md",
+  "id": "emailharvester",
+  "name": "EmailHarvester",
+  "url": "https://pypi.org/project/EmailHarvester/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/emailhippo.md",
+  "id": "emailhippo",
+  "name": "EmailHippo",
+  "url": "https://tools.verifyemailaddress.io",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/emkei-s-fake-mailer.md",
+  "id": "emkei-s-fake-mailer",
+  "name": "Emkei's Fake Mailer",
+  "url": "https://emkei.cz",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/encrypt-gmail-ciphermail-addons-mozilla-org.md",
+  "id": "encrypt-gmail-ciphermail-addons-mozilla-org",
+  "name": "encrypt gmail ciphermail (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/encrypt-gmail-ciphermail/?src=search",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/epieos-email-tool.md",
+  "id": "epieos-email-tool",
+  "name": "Epieos Email Tool",
+  "url": "https://tools.epieos.com/email.php",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/epieos-tools.md",
+  "id": "epieos-tools",
+  "name": "Epieos Tools",
+  "url": "https://tools.epieos.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/espysys-com.md",
+  "id": "espysys-com",
+  "name": "espysys.com",
+  "url": "https://espysys.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/facebook-com-2.md",
+  "id": "facebook-com-2",
+  "name": "facebook.com",
+  "url": "http://www.facebook.com/hacked",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/fakemailgenerator-com.md",
+  "id": "fakemailgenerator-com",
+  "name": "fakemailgenerator.com",
+  "url": "http://www.fakemailgenerator.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/find-emails-addresses-and-social-profiles-in-seconds.md",
+  "id": "find-emails-addresses-and-social-profiles-in-seconds",
+  "name": "Find emails addresses and social profiles in seconds",
+  "url": "https://www.orbitly.io",
+  "category": "email",
+  "mp": "high"
+ }
+]

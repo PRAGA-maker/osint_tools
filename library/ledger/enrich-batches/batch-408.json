@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/facebook-messenger-app-mobile-ios.md",
+  "id": "facebook-messenger-app-mobile-ios",
+  "name": "Facebook Messenger App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/messenger/id454638411?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/facebook-pages-social-networking-app-mobile-ios.md",
+  "id": "facebook-pages-social-networking-app-mobile-ios",
+  "name": "Facebook Pages Social Networking App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/facebook-pages-manager/id514643583?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/facebook-social-networking-app-mobile-android.md",
+  "id": "facebook-social-networking-app-mobile-android",
+  "name": "Facebook Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/facebook-social-networking-app-mobile-ios.md",
+  "id": "facebook-social-networking-app-mobile-ios",
+  "name": "Facebook Social Networking App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/facebook/id284882215?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fake-company-name-generator.md",
+  "id": "fake-company-name-generator",
+  "name": "Fake Company Name Generator",
+  "url": "https://fakeinfo.net/company-name-generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fake-drivers-license-generator.md",
+  "id": "fake-drivers-license-generator",
+  "name": "Fake Drivers License Generator",
+  "url": "https://fakeinfo.net/drivers-license-generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fake-generator-tools.md",
+  "id": "fake-generator-tools",
+  "name": "Fake Generator Tools",
+  "url": "https://fauxid.com/tools",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fake-identity-id-random-name-generator.md",
+  "id": "fake-identity-id-random-name-generator",
+  "name": "Fake Identity ID Random Name Generator",
+  "url": "https://www.elfqrin.com/fakeid.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fake-name-generator-2.md",
+  "id": "fake-name-generator-2",
+  "name": "Fake Name Generator",
+  "url": "https://www.fakenamegenerator.com fake person generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fake-person-generator.md",
+  "id": "fake-person-generator",
+  "name": "Fake person generator",
+  "url": "https://www.fakepersongenerator.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fake-tiktok-profile-generator.md",
+  "id": "fake-tiktok-profile-generator",
+  "name": "Fake Tiktok Profile Generator",
+  "url": "https://fakeinfo.net/fake-tiktok-profile-gererator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fake-youtube-channel-generator.md",
+  "id": "fake-youtube-channel-generator",
+  "name": "Fake Youtube Channel Generator",
+  "url": "https://fakeinfo.net/fake-youtube-channel-generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/faker.md",
+  "id": "faker",
+  "name": "Faker",
+  "url": "https://github.com/joke2k/faker",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/falcon-arch-linux.md",
+  "id": "falcon-arch-linux",
+  "name": "Falcon Arch Linux",
+  "url": "https://sourceforge.net/projects/falcon-archlinux/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fastscanner-app-mobile-android.md",
+  "id": "fastscanner-app-mobile-android",
+  "name": "Fastscanner App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.coolmobilesolution.fastscannerfree",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/fbi-common-fraud-schemes-united-states.md",
+  "id": "fbi-common-fraud-schemes-united-states",
+  "name": "FBI Common Fraud Schemes (United States)",
+  "url": "https://www.fbi.gov/scams-safety/fraud",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

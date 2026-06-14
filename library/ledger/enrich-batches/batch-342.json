@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/dark-web/swp-cx.md",
+  "id": "swp-cx",
+  "name": "swp.cx",
+  "url": "http://uicrmrl3i4r66c4fx4l5gv5hdb6jrzy72bitrk25w5dhv5o6sxmajxqd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/tails-the-amnesic-incognito-live-system.md",
+  "id": "tails-the-amnesic-incognito-live-system",
+  "name": "TAILS - The Amnesic Incognito Live System",
+  "url": "https://tails.net/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/the-hidden-wiki.md",
+  "id": "the-hidden-wiki",
+  "name": "The Hidden Wiki",
+  "url": "http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php/Main_Page",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/thedevilseye.md",
+  "id": "thedevilseye",
+  "name": "TheDevilsEye",
+  "url": "https://github.com/rlyonheart/thedevilseye",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/tool-path.md",
+  "id": "tool-path",
+  "name": "Tool \\| path",
+  "url": "https://learnmeabitcoin.com/tools/path/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/top-guns.md",
+  "id": "top-guns",
+  "name": "Top Guns",
+  "url": "http://topguns3x4pkpfimodj4iqgfadnwncxg3l5lnui45jmjt2fiz5uwlxyd.onion/?page=index",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/tor-link.md",
+  "id": "tor-link",
+  "name": "tor.link",
+  "url": "https://tor.link/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/tor-mail.md",
+  "id": "tor-mail",
+  "name": "Tor Mail",
+  "url": "http://tormailt3jjpm7naq5nkuqqdpmaspzif4vnjjtmqbejsc7ahi4gj2wad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/tor-wiki.md",
+  "id": "tor-wiki",
+  "name": "Tor Wiki",
+  "url": "http://uquroyobsaquslaunwkz6bmc3wutpzvwe7mv62xeq64645a57bugnsyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/tor2web-tor-hidden-services-gateway.md",
+  "id": "tor2web-tor-hidden-services-gateway",
+  "name": "Tor2Web: Tor Hidden Services Gateway",
+  "url": "https://tor2web.onionsearchengine.com/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/torbox.md",
+  "id": "torbox",
+  "name": "TorBox",
+  "url": "http://torbox36ijlcevujx7mjb4oiusvwgvmue7jfn2cvutwa6kl6to3uyqad.onion/services-webmail",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/torch-3.md",
+  "id": "torch-3",
+  "name": "Torch",
+  "url": "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/torry-io.md",
+  "id": "torry-io",
+  "name": "torry.io",
+  "url": "https://www.torry.io/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/uk-guns-and-ammo.md",
+  "id": "uk-guns-and-ammo",
+  "name": "UK Guns & Ammo",
+  "url": "http://k6m3fagp4w4wspmdt23fldnwrmknse74gmxosswvaxf3ciasficpenad.onion/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dark-web/vorm-web.md",
+  "id": "vorm-web",
+  "name": "Vorm Web",
+  "url": "https://vormweb.de/en/",
+  "category": "dark-web",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/dating-classifieds/fansmetrics-com.md",
+  "id": "fansmetrics-com",
+  "name": "Fansmetrics.com",
+  "url": "https://fansmetrics.com/",
+  "category": "dating-classifieds",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/ros-gov-uk.md",
+  "id": "ros-gov-uk",
+  "name": "ros.gov.uk",
+  "url": "https://www.ros.gov.uk/services/order-a-will",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ros-gov-uk-2.md",
+  "id": "ros-gov-uk-2",
+  "name": "ros.gov.uk",
+  "url": "https://scotlis.ros.gov.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/royalmail-com.md",
+  "id": "royalmail-com",
+  "name": "royalmail.com",
+  "url": "https://www.royalmail.com/postcode-finder",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ryersonindex-org.md",
+  "id": "ryersonindex-org",
+  "name": "ryersonindex.org",
+  "url": "https://ryersonindex.org/search.php",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/saa-gov-uk.md",
+  "id": "saa-gov-uk",
+  "name": "saa.gov.uk",
+  "url": "https://www.saa.gov.uk",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sacompany-co-za.md",
+  "id": "sacompany-co-za",
+  "name": "sacompany.co.za",
+  "url": "https://www.sacompany.co.za/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/sadoctorsapp-co-za.md",
+  "id": "sadoctorsapp-co-za",
+  "name": "sadoctorsapp.co.za",
+  "url": "https://www.sadoctorsapp.co.za/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/scotlandspeople-gov-uk.md",
+  "id": "scotlandspeople-gov-uk",
+  "name": "scotlandspeople.gov.uk",
+  "url": "https://www.scotlandspeople.gov.uk/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/scotlandspeople-gov-uk-2.md",
+  "id": "scotlandspeople-gov-uk-2",
+  "name": "scotlandspeople.gov.uk",
+  "url": "https://www.scotlandspeople.gov.uk/order-certificate",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/scotlandspeople-gov-uk-3.md",
+  "id": "scotlandspeople-gov-uk-3",
+  "name": "scotlandspeople.gov.uk",
+  "url": "https://www.scotlandspeople.gov.uk/search-records/statutory-records/stat_divorces",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/scottishepcregister-org-uk.md",
+  "id": "scottishepcregister-org-uk",
+  "name": "scottishepcregister.org.uk",
+  "url": "https://www.scottishepcregister.org.uk/CustomerFacingPortal/TermsAndConditions",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/scottishindexes-com.md",
+  "id": "scottishindexes-com",
+  "name": "scottishindexes.com",
+  "url": "https://www.scottishindexes.com/cssearch.aspx",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/scwonline-wales.md",
+  "id": "scwonline-wales",
+  "name": "scwonline.wales",
+  "url": "https://www.scwonline.wales/en/search-the-register/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/search-for-us-voters-with-custom-search-engines-osint-boolean-strings.md",
+  "id": "search-for-us-voters-with-custom-search-engines-osint-boolean-strings",
+  "name": "Search for US Voters with Custom Search Engines #OSINT \\| Boolean Strings",
+  "url": "https://booleanstrings.com/2021/07/15/search-for-us-voters-with-custom-search-engines-osint/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/search-polk-county-ordinance.md",
+  "id": "search-polk-county-ordinance",
+  "name": "Search Polk County Ordinance",
+  "url": "https://apps.polk-county.net/ordinances",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/search-systems-criminal-records.md",
+  "id": "search-systems-criminal-records",
+  "name": "Search Systems Criminal Records",
+  "url": "https://www.searchsystems.net/springapp/funnel/newsearch.do",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/foreign-agents-registration-act.md",
+  "id": "foreign-agents-registration-act",
+  "name": "Foreign Agents Registration Act",
+  "url": "https://efile.fara.gov/ords/f?p=1235:10",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/foundation-finder.md",
+  "id": "foundation-finder",
+  "name": "Foundation Finder",
+  "url": "https://candid.org/find-funding",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/free-economic-data.md",
+  "id": "free-economic-data",
+  "name": "Free Economic Data",
+  "url": "http://www.economy.com/freelunch/default.asp",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/freewareweb.md",
+  "id": "freewareweb",
+  "name": "FreewareWeb",
+  "url": "https://www.freewareweb.com/ftpsearch.shtml",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/freight-world.md",
+  "id": "freight-world",
+  "name": "Freight World",
+  "url": "http://www.freightworld.com/ports.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/fresheye-search-japan.md",
+  "id": "fresheye-search-japan",
+  "name": "Fresheye Search (Japan)",
+  "url": "http://www.fresheye.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ftp-search/ftp-google-dork.md",
+  "id": "ftp-google-dork",
+  "name": "FTP Google Dork",
+  "url": "https://www.google.com/search?q=inurl%3Aftp+-inurl%3Ahttp+-inurl%3Ahttps+ftpsearchterm",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/full-text-reports.md",
+  "id": "full-text-reports",
+  "name": "Full Text Reports",
+  "url": "http://fulltextreports.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/fullhunt.md",
+  "id": "fullhunt",
+  "name": "FullHunt",
+  "url": "https://fullhunt.io/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/galaxy-search-directory.md",
+  "id": "galaxy-search-directory",
+  "name": "Galaxy Search Directory",
+  "url": "https://www.einet.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/game-convention-central-player-search.md",
+  "id": "game-convention-central-player-search",
+  "name": "Game Convention Central Player Search",
+  "url": "http://www.gameconventioncentral.com/p/player-game-search.html",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/gametracker-search.md",
+  "id": "gametracker-search",
+  "name": "Gametracker Search",
+  "url": "https://www.gametracker.com/profiles",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/gexsi.md",
+  "id": "gexsi",
+  "name": "Gexsi",
+  "url": "https://gexsi.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/gigablast.md",
+  "id": "gigablast",
+  "name": "Gigablast",
+  "url": "https://www.gigablast.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/gijn-online-research-tools.md",
+  "id": "gijn-online-research-tools",
+  "name": "GIJN Online Research Tools",
+  "url": "https://gijn.org/online-research-tools/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/girlsaskguys.md",
+  "id": "girlsaskguys",
+  "name": "GirlsAskGuys",
+  "url": "http://www.girlsaskguys.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

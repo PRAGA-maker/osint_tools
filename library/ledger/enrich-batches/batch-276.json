@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/anylizer-com.md",
+  "id": "anylizer-com",
+  "name": "Anylizer.com",
+  "url": "https://anilyzer.com/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/archive-4plebs-org.md",
+  "id": "archive-4plebs-org",
+  "name": "archive.4plebs.org",
+  "url": "https://archive.4plebs.org",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/auto-scroll-search.md",
+  "id": "auto-scroll-search",
+  "name": "Auto Scroll Search",
+  "url": "https://chrome.google.com/webstore/detail/auto-scroll-search/ieceeinfkigfaeoomfimmecebngempef/related",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/backtweets.md",
+  "id": "backtweets",
+  "name": "Backtweets",
+  "url": "http://backtweets.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/bellingcat-tiktok-date-extract.md",
+  "id": "bellingcat-tiktok-date-extract",
+  "name": "Bellingcat TikTok Date Extract",
+  "url": "https://bellingcat.github.io/tiktok-timestamp",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/best-tiktok-hashtags.md",
+  "id": "best-tiktok-hashtags",
+  "name": "Best tiktok hashtags",
+  "url": "https://tiktokhashtags.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/better-reddit-search.md",
+  "id": "better-reddit-search",
+  "name": "Better Reddit Search",
+  "url": "https://betterredditsearch.web.app/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/birdsql.md",
+  "id": "birdsql",
+  "name": "BirdSQL",
+  "url": "http://perplexity.ai/sql",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/bluesky-users-stats.md",
+  "id": "bluesky-users-stats",
+  "name": "BlueSky users stats",
+  "url": "https://vqv.app/stats/chart",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/botcheck-me.md",
+  "id": "botcheck-me",
+  "name": "Botcheck.me",
+  "url": "https://botcheck.me",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/botometer.md",
+  "id": "botometer",
+  "name": "Botometer",
+  "url": "https://botometer.iuni.iu.edu",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/bskyfollowfinder.md",
+  "id": "bskyfollowfinder",
+  "name": "BskyFollowFinder",
+  "url": "https://bsky-follow-finder.theo.io/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/bskythreadreader.md",
+  "id": "bskythreadreader",
+  "name": "BskyThreadReader",
+  "url": "https://bskythreadreader.glitch.me/",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/burrrd.md",
+  "id": "burrrd",
+  "name": "burrrd.",
+  "url": "https://burrrd.com",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/calialec-snap-map-private-api.md",
+  "id": "calialec-snap-map-private-api",
+  "name": "CaliAlec/snap-map-private-api",
+  "url": "https://github.com/calialec/snap-map-private-api",
+  "category": "social-networks",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/social-networks/chartmasters-org-spotify-streaming-numbers-tool.md",
+  "id": "chartmasters-org-spotify-streaming-numbers-tool",
+  "name": "chartmasters.org/spotify-streaming-numbers-tool/",
+  "url": "http://chartmasters.org/spotify-streaming-numbers-tool/",
+  "category": "social-networks",
+  "mp": "medium"
+ }
+]

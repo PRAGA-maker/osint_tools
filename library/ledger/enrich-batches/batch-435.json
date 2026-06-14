@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/europol-most-wanted-search-engine.md",
+  "id": "europol-most-wanted-search-engine",
+  "name": "Europol Most Wanted Search Engine",
+  "url": "https://cse.google.com/cse?cx=f08e8dc2172da1ba8",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/eurostat.md",
+  "id": "eurostat",
+  "name": "Eurostat",
+  "url": "http://ec.europa.eu/eurostat",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sanctions-pep/everypolitician.md",
+  "id": "everypolitician",
+  "name": "EveryPolitician",
+  "url": "https://everypolitician.org/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/extremist-groups.md",
+  "id": "extremist-groups",
+  "name": "Extremist Groups",
+  "url": "https://www.splcenter.org/fighting-hate/extremist-files/groups",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/extremist-profiles.md",
+  "id": "extremist-profiles",
+  "name": "Extremist Profiles",
+  "url": "https://www.splcenter.org/fighting-hate/extremist-files/individual",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/fbi-most-wanted-search-engine.md",
+  "id": "fbi-most-wanted-search-engine",
+  "name": "FBI Most Wanted Search Engine",
+  "url": "https://cse.google.com/cse?cx=1ee952e6584aa91f9",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/federalcorporation.md",
+  "id": "federalcorporation",
+  "name": "FederalCorporation",
+  "url": "https://federalcorporation.ca/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/financial-conduct-authority.md",
+  "id": "financial-conduct-authority",
+  "name": "Financial Conduct Authority",
+  "url": "https://register.fca.org.uk",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/fincen-msb-registrant-search.md",
+  "id": "fincen-msb-registrant-search",
+  "name": "FinCEN MSB Registrant Search",
+  "url": "https://www.fincen.gov/msb-registrant-search",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/fivethirtyeight.md",
+  "id": "fivethirtyeight",
+  "name": "FiveThirtyEight",
+  "url": "https://fivethirtyeight.com/?s=",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/fortune-500-list-of-companies-2020-fortune.md",
+  "id": "fortune-500-list-of-companies-2020-fortune",
+  "name": "Fortune 500 list of companies 2020 | Fortune",
+  "url": "https://fortune.com/fortune500",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/freebase.md",
+  "id": "freebase",
+  "name": "Freebase",
+  "url": "https://developers.google.com/freebase",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/gapminder-world.md",
+  "id": "gapminder-world",
+  "name": "Gapminder World",
+  "url": "http://www.gapminder.org/data",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/gettr.md",
+  "id": "gettr",
+  "name": "Gettr",
+  "url": "https://bloopbase.keybase.pub/LEFTHOOK/Gettr/index.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/givesendgo.md",
+  "id": "givesendgo",
+  "name": "GiveSendGo",
+  "url": "https://bloopbase.keybase.pub/LEFTHOOK/GiveSendGo/index.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool.md",
+  "id": "global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool",
+  "name": "GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL",
+  "url": "https://www.lowtax.net/g/jurisdictions",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

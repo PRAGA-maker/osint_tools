@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/ohio.md",
+  "id": "ohio",
+  "name": "Ohio",
+  "url": "https://appgateway.drc.ohio.gov/offendersearch",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ohio-obituaries-death-and-marriage-search.md",
+  "id": "ohio-obituaries-death-and-marriage-search",
+  "name": "Ohio obituaries, death & marriage Search",
+  "url": "https://c0abe732.caspio.com/dp/679e5000cbc8c6a587bb42efa9ef",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ohio-resident-database.md",
+  "id": "ohio-resident-database",
+  "name": "Ohio Resident Database",
+  "url": "https://www.ohioresidentdatabase.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/ohiovoters-us.md",
+  "id": "ohiovoters-us",
+  "name": "Ohiovoters.us",
+  "url": "http://ohiovoters.us/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/oklahoma-offender-search.md",
+  "id": "oklahoma-offender-search",
+  "name": "Oklahoma Offender Search",
+  "url": "https://okoffender.doc.ok.gov",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/oklahoma-voters-search.md",
+  "id": "oklahoma-voters-search",
+  "name": "Oklahoma Voters Search",
+  "url": "http://oklahomadata.com/voters.asp",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/oklavoters-com.md",
+  "id": "oklavoters-com",
+  "name": "Oklavoters.com",
+  "url": "http://oklavoters.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/on-demand-court-records.md",
+  "id": "on-demand-court-records",
+  "name": "On Demand Court Records",
+  "url": "http://www1.odcr.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/onlinesearch-mns-mu.md",
+  "id": "onlinesearch-mns-mu",
+  "name": "onlinesearch.mns.mu",
+  "url": "https://onlinesearch.mns.mu/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/onthehouse-com-au.md",
+  "id": "onthehouse-com-au",
+  "name": "onthehouse.com.au",
+  "url": "https://www.onthehouse.com.au/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/openleis-com.md",
+  "id": "openleis-com",
+  "name": "openleis.com",
+  "url": "https://openleis.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/opensupplyhub-org.md",
+  "id": "opensupplyhub-org",
+  "name": "opensupplyhub.org",
+  "url": "https://opensupplyhub.org/facilities/?sort_by=contributors_desc",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/optical-org.md",
+  "id": "optical-org",
+  "name": "optical.org",
+  "url": "https://www.optical.org/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/oregon-offender-search.md",
+  "id": "oregon-offender-search",
+  "name": "Oregon Offender Search",
+  "url": "https://docpub.state.or.us/oos/intro.jsf",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/os-birth-records.md",
+  "id": "os-birth-records",
+  "name": "OS Birth Records",
+  "url": "http://publicrecords.onlinesearches.com/birth-records.htm",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/os-death-records.md",
+  "id": "os-death-records",
+  "name": "OS Death Records",
+  "url": "http://publicrecords.onlinesearches.com/death-records.htm",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

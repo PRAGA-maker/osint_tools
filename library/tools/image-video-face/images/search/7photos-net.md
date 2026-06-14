@@ -1,28 +1,28 @@
 ---
 id: 7photos-net
 name: 7Photos.net
-description: Unknown; requires additional validation before operational use
+description: Use when an OSINT-framework listing points you at 7photos.net for an image task — but verify it loads before relying on it, as the destination behaves inconsistently.
 url: https://7photos.net/
 category: image-video-face
 path:
 - image-video-face
 - images
 - search
-bestFor: Unknown; requires additional validation before operational use
-input: Presumed image upload
-output: Unclear due to gated/redirected workflow
-selectorsIn: []
+bestFor: Unconfirmed image-related service seeded from a tool list; identity not established.
+selectorsIn:
+- image
 selectorsOut: []
 status: degraded
 pricing: free
+costNote: No confirmed pricing; treat as unknown until the site is observed working.
 opsec: unknown
-opsecNote: Observed authentication-style redirect behavior; service behavior is not fully observable.
+opsecNote: Observed authentication-style redirect behavior; what the destination does with an uploaded image is not observable, so do not upload case imagery here without verification.
 humanInLoop: true
 humanInLoopReason:
 - account-login
 bestInteractionPattern: web-manual
 trust: unverified
-trustNote: ''
+trustNote: Could not identify this service from name or URL; redirect/login behavior prevents confirming what it is. No fabricated capabilities asserted.
 missingPersonsRelevance: high
 coverage: []
 auth: account
@@ -36,17 +36,45 @@ aliases: []
 tags: []
 source: arf-seed
 lastVerified: ''
-enrichment: stub
+enrichment: full
 ---
 
 # 7Photos.net
 
-> **Stub** — seeded from OSINT-Framework (`arf-seed`). Body not yet authored.
-> Enrich per `schema/templates/tool.template.md`, then set `enrichment: full`.
+> A tool-list seed entry whose actual function could not be confirmed; included for completeness, not endorsed.
 
-- **URL:** https://7photos.net/
-- **Best for:** Unknown; requires additional validation before operational use
-- **Input → Output:** Presumed image upload → Unclear due to gated/redirected workflow
-- **OpSec:** unknown. Observed authentication-style redirect behavior; service behavior is not fully observable.
+## When to use
+Only if you arrive here from an external OSINT list and want to check whether it offers a usable `image` workflow. There is no confirmed selector output, so do not plan a pivot around it.
 
-_To enrich:_ verify `trust` & `missingPersonsRelevance`, set `selectorsIn/Out` and `bestInteractionPattern`, write the How-to and Gotchas, link overlaps in `relatedTools`.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Open https://7photos.net/ in a sandboxed/sock-puppet browser.
+2. Observe whether it loads a real tool or redirects to a login/parked page.
+3. If it presents an image upload, treat the result as unverified and corroborate elsewhere.
+4. If it redirects or demands an account, abandon it — there are known reverse-image and image-edit tools in this library to use instead.
+
+## Inputs → Outputs
+- **In:** `image` (presumed, not confirmed)
+- **Out:** unknown
+- **Empty/negative result looks like:** a login wall, a parked/redirect page, or a generic stock-photo gallery — any of which means this is not a usable OSINT tool.
+
+## Gotchas & OpSec
+- Human-in-the-loop: an authentication-style redirect was observed; do not enter real credentials.
+- OpSec: unknown handling of uploads. Do not upload missing-person imagery here; the destination is not transparent.
+
+## Trust & verifiability
+`trust: unverified` — the service could not be identified and its behavior is not observable. No capabilities have been invented.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | 7photos-net |
+| category | image-video-face |
+| selectorsIn → selectorsOut | image → (unknown) |
+| pricing / cost | free (unconfirmed) |
+| trust | unverified |
+| MP relevance | high |
+| interaction | web-manual |
+| opsec | unknown |
+| human-in-loop | yes |

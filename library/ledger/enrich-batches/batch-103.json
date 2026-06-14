@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/social-networks/arrse-co-uk-2.md",
+  "id": "arrse-co-uk-2",
+  "name": "arrse.co.uk",
+  "url": "https://www.arrse.co.uk/community/members/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/articles.md",
+  "id": "articles",
+  "name": "Articles",
+  "url": "https://techzillo.com/see-someones-recently-added-friends-facebook/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/other-social-networks/asian-avenue.md",
+  "id": "asian-avenue",
+  "name": "Asian Avenue",
+  "url": "https://blackplanet.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/other-social-networks/ask-fm.md",
+  "id": "ask-fm",
+  "name": "Ask FM",
+  "url": "https://ask.fm/%3Cusername%3E",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/audiense.md",
+  "id": "audiense",
+  "name": "Audiense",
+  "url": "https://www.audiense.com",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/authentic8-com.md",
+  "id": "authentic8-com",
+  "name": "authentic8.com",
+  "url": "https://www.authentic8.com/blog/osint-instagram-guide",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/authentic8-com-2.md",
+  "id": "authentic8-com-2",
+  "name": "authentic8.com",
+  "url": "https://www.authentic8.com/blog/introduction-mastodon-osint-practitioners",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/authentic8-com-4.md",
+  "id": "authentic8-com-4",
+  "name": "authentic8.com",
+  "url": "https://www.authentic8.com/blog/guide-how-to-investigate-on-tiktok",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/barkov-net.md",
+  "id": "barkov-net",
+  "name": "Barkov.net",
+  "url": "http://vk.barkov.net",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bayt-com.md",
+  "id": "bayt-com",
+  "name": "bayt.com",
+  "url": "https://www.bayt.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bearpanther-com.md",
+  "id": "bearpanther-com",
+  "name": "Bearpanther.com",
+  "url": "http://bearpanther.com/instamap",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/threads/bellingcat-meta-content-library.md",
+  "id": "bellingcat-meta-content-library",
+  "name": "Bellingcat Meta Content Library",
+  "url": "https://bellingcat.gitbook.io/toolkit/more/all-tools/meta-content-library",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bibliogram.md",
+  "id": "bibliogram",
+  "name": "Bibliogram",
+  "url": "https://bib.actionsack.com/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bibliogram-art.md",
+  "id": "bibliogram-art",
+  "name": "Bibliogram.art",
+  "url": "https://bibliogram.art/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/bikermatch-co-uk.md",
+  "id": "bikermatch-co-uk",
+  "name": "bikermatch.co.uk",
+  "url": "https://www.bikermatch.co.uk/",
+  "category": "social-networks",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/social-networks/birdhunt.md",
+  "id": "birdhunt",
+  "name": "BirdHunt",
+  "url": "https://birdhunt.co/",
+  "category": "social-networks",
+  "mp": "high"
+ }
+]

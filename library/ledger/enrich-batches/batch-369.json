@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/academic-research/global-terrorism-database.md",
+  "id": "global-terrorism-database",
+  "name": "Global Terrorism Database",
+  "url": "https://www.start.umd.edu/research-projects/global-terrorism-database-gtd",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/s3-blob-storage/goblob.md",
+  "id": "goblob",
+  "name": "goblob",
+  "url": "https://github.com/Macmod/goblob",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/gobuster.md",
+  "id": "gobuster",
+  "name": "Gobuster",
+  "url": "https://github.com/OJ/gobuster",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/google-chrome-webpage-regexp-search.md",
+  "id": "google-chrome-webpage-regexp-search",
+  "name": "Google Chrome webpage Regexp search",
+  "url": "https://chrome.google.com/webstore/detail/chrome-regex-search/bpelaihoicobbkgmhcbikncnpacdbknn",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/certificate-search/google-s-certificate-transparency.md",
+  "id": "google-s-certificate-transparency",
+  "name": "Google's Certificate Transparency",
+  "url": "https://www.certificate-transparency.org/known-logs",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/report-malicious-sites/google-safe-browsing.md",
+  "id": "google-safe-browsing",
+  "name": "Google Safe Browsing",
+  "url": "https://safebrowsing.google.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/google-safe-browsing-api.md",
+  "id": "google-safe-browsing-api",
+  "name": "Google Safe Browsing API",
+  "url": "https://developers.google.com/safe-browsing/?csw=1",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/subdomains/google-subdomains.md",
+  "id": "google-subdomains",
+  "name": "Google Subdomains",
+  "url": "https://www.google.com/?gws_rd=ssl#q=site:%3Cdomain.com%3E",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/google-transparency-report.md",
+  "id": "google-transparency-report",
+  "name": "Google Transparency Report",
+  "url": "https://transparencyreport.google.com/https/certificates",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/social-analysis/google-trends.md",
+  "id": "google-trends",
+  "name": "Google Trends",
+  "url": "https://trends.google.com/trends/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ip-loggers/grabify.md",
+  "id": "grabify",
+  "name": "Grabify",
+  "url": "https://grabify.link",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/graphystories.md",
+  "id": "graphystories",
+  "name": "GraphyStories",
+  "url": "http://app.graphystories.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reputation/grey-noise.md",
+  "id": "grey-noise",
+  "name": "Grey Noise",
+  "url": "https://viz.greynoise.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/greynoise-intelligence.md",
+  "id": "greynoise-intelligence",
+  "name": "GreyNoise Intelligence",
+  "url": "https://www.greynoise.io/viz/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipv4/hacker-target-reverse-dns.md",
+  "id": "hacker-target-reverse-dns",
+  "name": "Hacker Target - Reverse DNS",
+  "url": "https://hackertarget.com/reverse-dns-lookup/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/default-passwords/hashes-org.md",
+  "id": "hashes-org",
+  "name": "Hashes.org",
+  "url": "https://hashes.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

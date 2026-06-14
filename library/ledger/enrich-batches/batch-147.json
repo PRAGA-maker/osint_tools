@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/archives-cache/wayback-machine-downloader-github-com.md",
+  "id": "wayback-machine-downloader-github-com",
+  "name": "wayback machine downloader (github.com)",
+  "url": "https://github.com/hartator/wayback-machine-downloader",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/waybackpack.md",
+  "id": "waybackpack",
+  "name": "Waybackpack",
+  "url": "https://github.com/jsvine/waybackpack",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/waybackpdf.md",
+  "id": "waybackpdf",
+  "name": "WaybackPDF",
+  "url": "https://github.com/Haax9/WaybackPDF",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/waybackpy.md",
+  "id": "waybackpy",
+  "name": "waybackpy",
+  "url": "https://github.com/akamhy/waybackpy",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/waymore.md",
+  "id": "waymore",
+  "name": "WayMore",
+  "url": "https://github.com/xnl-h4ck3r/waymore",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web-archive-bibalex-org.md",
+  "id": "web-archive-bibalex-org",
+  "name": "web.archive.bibalex.org",
+  "url": "http://web.archive.bibalex.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web-archive-google-chrome-extension.md",
+  "id": "web-archive-google-chrome-extension",
+  "name": "Web Archive Google Chrome Extension",
+  "url": "https://github.com/husseinphp/web-archive",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web-archive-org.md",
+  "id": "web-archive-org",
+  "name": "web.archive.org",
+  "url": "https://web.archive.org/save",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/web-archive-ru.md",
+  "id": "web-archive-ru",
+  "name": "Web Archive-RU",
+  "url": "https://web-arhive.ru/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web-archives-2.md",
+  "id": "web-archives-2",
+  "name": "Web Archives",
+  "url": "https://chrome.google.com/webstore/detail/web-archives/hkligngkgcpcolhcnkgccglchdafcnao/related",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web-archives-chrome-google-com.md",
+  "id": "web-archives-chrome-google-com",
+  "name": "web archives (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/web-archives/hkligngkgcpcolhcnkgccglchdafcnao",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web-cache-viewer-chrome-google-com.md",
+  "id": "web-cache-viewer-chrome-google-com",
+  "name": "web cache viewer (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/web-cache-viewer/pbkloffickinnlnmefmjmjbacohecpbd",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/webarchive-loc-gov.md",
+  "id": "webarchive-loc-gov",
+  "name": "Webarchive.loc.gov",
+  "url": "http://webarchive.loc.gov/",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/web/webcite.md",
+  "id": "webcite",
+  "name": "WebCite",
+  "url": "https://www.webcitation.org:443/query",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/webrecorder-tools.md",
+  "id": "webrecorder-tools",
+  "name": "Webrecorder tools",
+  "url": "https://webrecorder.net/tools",
+  "category": "archives-cache",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/archives-cache/data-leaks/wikileaks.md",
+  "id": "wikileaks",
+  "name": "WikiLeaks",
+  "url": "https://wikileaks.org/",
+  "category": "archives-cache",
+  "mp": "medium"
+ }
+]

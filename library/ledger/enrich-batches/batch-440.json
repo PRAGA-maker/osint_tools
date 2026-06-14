@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/registrant-lookup.md",
+  "id": "registrant-lookup",
+  "name": "Registrant Lookup",
+  "url": "https://www.cdsbc.org/home/registrant-lookup#/lookup/dentists",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/rental-in-canada.md",
+  "id": "rental-in-canada",
+  "name": "Rental in Canada",
+  "url": "https://www.n49.com/search/rental/1/canada/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/rjsc-connect.md",
+  "id": "rjsc-connect",
+  "name": "RJSC Connect",
+  "url": "https://rjsc.novascotia.ca/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/search-datasets.md",
+  "id": "search-datasets",
+  "name": "Search Datasets",
+  "url": "https://datahub.io/search",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/search-for-a-federal-corporation.md",
+  "id": "search-for-a-federal-corporation",
+  "name": "Search for a Federal Corporation",
+  "url": "https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/fdrlCrpSrch.html?locale=en_CA",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/search-for-company-documents.md",
+  "id": "search-for-company-documents",
+  "name": "Search for Company Documents",
+  "url": "https://www.sedar.com/search/search_form_pc_en.htm",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/searchable-fcc-id-database-2.md",
+  "id": "searchable-fcc-id-database-2",
+  "name": "Searchable FCC ID Database",
+  "url": "https://fccid.io/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sec-company-search.md",
+  "id": "sec-company-search",
+  "name": "SEC Company Search",
+  "url": "https://www.sec.gov/edgar/searchedgar/companysearch.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/services-en-ligne.md",
+  "id": "services-en-ligne",
+  "name": "Services en ligne",
+  "url": "https://www.pes.ctq.gouv.qc.ca/pes/faces/dossierclient/recherche.jsp",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sesric-basic-social-and-economic-indicators.md",
+  "id": "sesric-basic-social-and-economic-indicators",
+  "name": "SESRIC Basic Social and Economic Indicators",
+  "url": "http://www.sesric.org/baseind.php",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/sesric-databases.md",
+  "id": "sesric-databases",
+  "name": "SESRIC Databases",
+  "url": "http://www.sesric.org/databases-index.php",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/snitch-list.md",
+  "id": "snitch-list",
+  "name": "Snitch List",
+  "url": "https://web.archive.org/web/20200115091633/http://sniitch.com/all/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/statista.md",
+  "id": "statista",
+  "name": "Statista",
+  "url": "http://www.statista.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/terrorism-incidents-database.md",
+  "id": "terrorism-incidents-database",
+  "name": "Terrorism Incidents Database",
+  "url": "http://smapp.rand.org/rwtid/search_form.php",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/the-atlas-of-economic-complexity.md",
+  "id": "the-atlas-of-economic-complexity",
+  "name": "The Atlas of Economic Complexity",
+  "url": "http://atlas.cid.harvard.edu",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/the-data-and-story-library.md",
+  "id": "the-data-and-story-library",
+  "name": "The Data and Story Library",
+  "url": "http://lib.stat.cmu.edu/DASL",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

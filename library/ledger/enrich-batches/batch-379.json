@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/redirect-detective.md",
+  "id": "redirect-detective",
+  "name": "Redirect Detective",
+  "url": "https://redirectdetective.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/redirectdetective.md",
+  "id": "redirectdetective",
+  "name": "RedirectDetective",
+  "url": "http://redirectdetective.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/remote-dns-lookup.md",
+  "id": "remote-dns-lookup",
+  "name": "Remote DNS Lookup",
+  "url": "https://remote.12dt.com",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/rescure-cyber-threat-intelligence-project.md",
+  "id": "rescure-cyber-threat-intelligence-project",
+  "name": "REScure Cyber Threat Intelligence Project",
+  "url": "https://rescure.me/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reverse-domain.md",
+  "id": "reverse-domain",
+  "name": "Reverse Domain",
+  "url": "https://osint.sh/domain/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reverse-google-adsense.md",
+  "id": "reverse-google-adsense",
+  "name": "Reverse Google Adsense",
+  "url": "https://osint.sh/adsense/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reverse-google-analytics.md",
+  "id": "reverse-google-analytics",
+  "name": "Reverse Google Analytics",
+  "url": "https://osint.sh/analytics/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reverse-ip-lookup.md",
+  "id": "reverse-ip-lookup",
+  "name": "Reverse IP Lookup",
+  "url": "https://osint.sh/reverseip/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/reverse-mx-record.md",
+  "id": "reverse-mx-record",
+  "name": "Reverse MX Record",
+  "url": "https://osint.sh/reversemx/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipv4/reverse-report.md",
+  "id": "reverse-report",
+  "name": "Reverse.report",
+  "url": "https://reverse.report/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/azure-gcp-discovery/roadtools.md",
+  "id": "roadtools",
+  "name": "ROADtools",
+  "url": "https://github.com/dirkjanm/roadtools",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/vulnerabilities/robotsdisallowed.md",
+  "id": "robotsdisallowed",
+  "name": "RobotsDisallowed",
+  "url": "https://github.com/danielmiessler/RobotsDisallowed",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/whois-records/robtex.md",
+  "id": "robtex",
+  "name": "Robtex",
+  "url": "https://robtex.com/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/s3-blob-storage/s3scanner.md",
+  "id": "s3scanner",
+  "name": "S3Scanner",
+  "url": "https://github.com/sa7mon/s3scanner",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/sameid.md",
+  "id": "sameid",
+  "name": "SameID",
+  "url": "http://sameid.net",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/scam-database.md",
+  "id": "scam-database",
+  "name": "Scam Database",
+  "url": "https://www.scamdb.net/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

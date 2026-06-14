@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/pinterest-social-bookmarking-app-mobile-android.md",
+  "id": "pinterest-social-bookmarking-app-mobile-android",
+  "name": "Pinterest Social Bookmarking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.pinterest",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pinterest-social-bookmarking-app-mobile-ios.md",
+  "id": "pinterest-social-bookmarking-app-mobile-ios",
+  "name": "Pinterest Social Bookmarking App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/pinterest/id429047995?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/plentyoffish-social-networking-app-mobile-android.md",
+  "id": "plentyoffish-social-networking-app-mobile-android",
+  "name": "PlentyOfFish Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.pof.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/plex-management-app-mobile-android.md",
+  "id": "plex-management-app-mobile-android",
+  "name": "Plex Management App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.plexapp.android",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/police-scanner-radio-app-mobile-android.md",
+  "id": "police-scanner-radio-app-mobile-android",
+  "name": "Police Scanner Radio App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.scannerradio",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/postmates-delivery-app-mobile-ios.md",
+  "id": "postmates-delivery-app-mobile-ios",
+  "name": "Postmates Delivery App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/us/app/postmates-food-delivery/id512393983",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pramp.md",
+  "id": "pramp",
+  "name": "Pramp",
+  "url": "https://www.pramp.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/premium-proxy-service.md",
+  "id": "premium-proxy-service",
+  "name": "Premium Proxy Service",
+  "url": "https://premproxy.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/primeos.md",
+  "id": "primeos",
+  "name": "PrimeOS",
+  "url": "https://www.primeos.in/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/prism-break.md",
+  "id": "prism-break",
+  "name": "PRISM Break",
+  "url": "https://prism-break.org/en/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-net.md",
+  "id": "privacy-net",
+  "name": "Privacy.net",
+  "url": "https://privacy.net/resources/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/privacy-services-by-michael-bazzell.md",
+  "id": "privacy-services-by-michael-bazzell",
+  "name": "Privacy Services by Michael Bazzell",
+  "url": "https://inteltechniques.com/workbook.html",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/prospectlinked.md",
+  "id": "prospectlinked",
+  "name": "ProspectLinked",
+  "url": "https://prospectlinked.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/proton-vpn.md",
+  "id": "proton-vpn",
+  "name": "Proton VPN",
+  "url": "https://protonvpn.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/proxy-org.md",
+  "id": "proxy-org",
+  "name": "Proxy.org",
+  "url": "http://proxy.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pushbullet-management-extension-chrome.md",
+  "id": "pushbullet-management-extension-chrome",
+  "name": "Pushbullet Management Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

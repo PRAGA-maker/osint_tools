@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/soundraw.md",
+  "id": "soundraw",
+  "name": "Soundraw",
+  "url": "https://soundraw.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/speech-jammer.md",
+  "id": "speech-jammer",
+  "name": "Speech Jammer",
+  "url": "https://mynoise.net/NoiseMachines/audioJammerNoiseGenerator.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/spotify-music-app-mobile-android.md",
+  "id": "spotify-music-app-mobile-android",
+  "name": "Spotify Music App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.spotify.music",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/spotify-music-app-mobile-ios.md",
+  "id": "spotify-music-app-mobile-ios",
+  "name": "Spotify Music App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/spotify-music/id324684580?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/spybot-search-and-destroy.md",
+  "id": "spybot-search-and-destroy",
+  "name": "Spybot Search & Destroy",
+  "url": "https://www.safer-networking.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/srware-iron.md",
+  "id": "srware-iron",
+  "name": "SRWare Iron",
+  "url": "http://www.srware.net/en/software_srware_iron.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ssn-generator.md",
+  "id": "ssn-generator",
+  "name": "SSN Generator",
+  "url": "https://www.fakenamegenerator.com/social-security-number.php",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/stayfocusd-management-extension-chrome.md",
+  "id": "stayfocusd-management-extension-chrome",
+  "name": "Stayfocusd Management Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji?hl=en-US",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/stealthy-proxy-server-extension-chrome.md",
+  "id": "stealthy-proxy-server-extension-chrome",
+  "name": "Stealthy Proxy Server Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/stealthy/ieaebnkibonmpbhdaanjkmedikadnoje",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/stegonline.md",
+  "id": "stegonline",
+  "name": "StegOnline",
+  "url": "https://stegonline.georgeom.net/upload",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/storyful-multisearch-chrome-add-on.md",
+  "id": "storyful-multisearch-chrome-add-on",
+  "name": "Storyful Multisearch Chrome Add-On",
+  "url": "https://chrome.google.com/webstore/detail/storyful-multisearch/hkglibabhninbjmaccpajiakojeacnaf?hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/stutterbox.md",
+  "id": "stutterbox",
+  "name": "Stutterbox",
+  "url": "https://www.stutterbox.co.uk/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/symantec-norton-anti-virus.md",
+  "id": "symantec-norton-anti-virus",
+  "name": "Symantec Norton Anti-Virus",
+  "url": "http://us.norton.com/antivirus",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/system-status-management-app-mobile-ios.md",
+  "id": "system-status-management-app-mobile-ios",
+  "name": "System Status Management App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/app/apple-store/id401457165?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/tagged-social-networking-app-mobile-android.md",
+  "id": "tagged-social-networking-app-mobile-android",
+  "name": "Tagged Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.taggedapp",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/tango-social-networking-app-mobile-android.md",
+  "id": "tango-social-networking-app-mobile-android",
+  "name": "Tango Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.sgiggle.production",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

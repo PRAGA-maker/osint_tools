@@ -1,50 +1,87 @@
 ---
 id: reacher-demo
 name: Reacher Demo
-description: Email verification testing, demonstration
+description: Use when you want to quickly check if a single email is real/deliverable in-browser — the hosted demo of the open-source Reacher SMTP verifier.
 url: https://reacher.email
 category: email
 path:
 - email
 - email-verification
-bestFor: Email verification testing, demonstration
-input: Email address
-output: Deliverability status, bounce information
-selectorsIn: []
-selectorsOut: []
+bestFor: One-off, no-install email deliverability checks via the hosted Reacher service.
+selectorsIn:
+- email
+selectorsOut:
+- metadata-exif
 status: live
-pricing: free
+pricing: freemium
+costNote: Hosted demo/free checks are rate-limited; the full Reacher SaaS/API is paid. Self-hosting is free (see reacher-github).
 opsec: passive
-opsecNote: Passive MTA-based verification without sending emails.
+opsecNote: Verifies via MX/SMTP probing without sending an email to the target, so the subject is not alerted.
 humanInLoop: false
-humanInLoopReason: []
+humanInLoopReason:
+- rate-limit
 bestInteractionPattern: web-manual
-trust: unverified
-trustNote: ''
-missingPersonsRelevance: high
-coverage: []
+trust: community
+trustNote: Front end for the well-known open-source reacherhq verifier; verdicts are SMTP-heuristic (Gmail/Yahoo greylisting and catch-all domains return "unknown"/"risky").
+missingPersonsRelevance: medium
+coverage:
+- global
 auth: none
-api: false
+api: true
 localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- reacher-github
 aliases: []
-tags: []
+tags:
+- email
+- email-verification
 source: arf-seed
 lastVerified: ''
-enrichment: stub
+enrichment: full
 ---
 
 # Reacher Demo
 
-> **Stub** — seeded from OSINT-Framework (`arf-seed`). Body not yet authored.
-> Enrich per `schema/templates/tool.template.md`, then set `enrichment: full`.
+> The hosted, click-and-go front end of Reacher — paste an email and get a deliverability verdict without sending mail or installing anything.
 
-- **URL:** https://reacher.email
-- **Best for:** Email verification testing, demonstration
-- **Input → Output:** Email address → Deliverability status, bounce information
-- **OpSec:** passive. Passive MTA-based verification without sending emails.
+## When to use
+You have a candidate `email` for a subject and want a fast, in-browser yes/no on whether the mailbox exists before enriching it. Best for single checks; for bulk or repeated use, self-host `[[reacher-github]]`.
 
-_To enrich:_ verify `trust` & `missingPersonsRelevance`, set `selectorsIn/Out` and `bestInteractionPattern`, write the How-to and Gotchas, link overlaps in `relatedTools`.
+## How to use it (`bestInteractionPattern`: web-manual)
+1. Go to reacher.email.
+2. Enter the target email and run the check.
+3. Read the verdict: `safe` (deliverable), `invalid`, `risky` (catch-all/disposable/full mailbox), or `unknown`.
+4. Pivot a confirmed-valid address to breach search and social-profile lookups.
+
+## Inputs → Outputs
+- **In:** `email`
+- **Out:** deliverability classification plus SMTP/MX signals, disposable & catch-all flags (`metadata-exif`-style technical metadata).
+- **Empty/negative result looks like:** `invalid` = mailbox does not exist; `unknown`/`risky` = inconclusive (common for Gmail/Yahoo), do not treat as proof.
+
+## Gotchas & OpSec
+- Human-in-the-loop: the public demo is rate-limited; heavy use needs the paid API or self-hosting.
+- OpSec: passive — probes the mail server, not the user; no email reaches the subject. Major providers greylist SMTP probes, yielding "unknown."
+
+## Overlaps ("do both")
+- Same engine as `[[reacher-github]]` (self-hostable) and overlaps `[[proofy]]` — cross-check "unknown"/"risky" verdicts between them.
+
+## Trust & verifiability
+`trust: community` — the open-source Reacher project is well regarded; the demo is the canonical hosted instance. Verdicts are heuristic and limited by SMTP server behavior.
+
+---
+## Metadata
+<!-- generated from frontmatter by scripts/build_index.py; do not edit by hand -->
+| field | value |
+|---|---|
+| id | reacher-demo |
+| category | email |
+| selectorsIn → selectorsOut | email → metadata-exif |
+| pricing / cost | freemium |
+| trust | community |
+| MP relevance | medium |
+| interaction | web-manual |
+| opsec | passive |
+| human-in-loop | no |

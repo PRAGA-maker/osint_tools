@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/app-analysis/mobsf.md",
+  "id": "mobsf",
+  "name": "MobSF",
+  "url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/emulation-tools/nox-app-player.md",
+  "id": "nox-app-player",
+  "name": "Nox App Player",
+  "url": "https://www.bignox.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/ios/osint-researcher.md",
+  "id": "osint-researcher",
+  "name": "OSINT Researcher",
+  "url": "https://apps.apple.com/us/app/osint-researcher/id6747302251",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/streaming-video/periscope.md",
+  "id": "periscope",
+  "name": "Periscope",
+  "url": "https://www.periscope.tv/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/social-networking/pinterest.md",
+  "id": "pinterest",
+  "name": "Pinterest",
+  "url": "https://www.pinterest.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/recap.md",
+  "id": "recap",
+  "name": "RECAP",
+  "url": "http://archive.recapthelaw.org",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/reveal-image-verification-assistant.md",
+  "id": "reveal-image-verification-assistant",
+  "name": "Reveal Image Verification Assistant",
+  "url": "https://www.rand.org/research/projects/truth-decay/fighting-disinformation/search/items/reveal-image-verification-assistant.html",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/instant-messaging/riot-im-communicate-your-way.md",
+  "id": "riot-im-communicate-your-way",
+  "name": "Riot.im - Communicate, your way",
+  "url": "https://riot.im/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/search4faces-com.md",
+  "id": "search4faces-com",
+  "name": "Search4Faces.com",
+  "url": "https://search4faces.com/en/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/instant-messaging/signal-private-messenger.md",
+  "id": "signal-private-messenger",
+  "name": "Signal Private Messenger",
+  "url": "https://signal.org/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/instant-messaging/snapchat.md",
+  "id": "snapchat",
+  "name": "Snapchat",
+  "url": "https://www.snapchat.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/instant-messaging/telegram.md",
+  "id": "telegram",
+  "name": "Telegram",
+  "url": "https://telegram.org/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/truecaller.md",
+  "id": "truecaller",
+  "name": "Truecaller",
+  "url": "https://www.truecaller.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/social-networking/twitter.md",
+  "id": "twitter",
+  "name": "Twitter",
+  "url": "https://www.twitter.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/streaming-video/vine.md",
+  "id": "vine",
+  "name": "Vine",
+  "url": "https://vine.co/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/documents-metadata/android/apps/instant-messaging/whatsapp-messenger.md",
+  "id": "whatsapp-messenger",
+  "name": "WhatsApp Messenger",
+  "url": "https://www.whatsapp.com/",
+  "category": "documents-metadata",
+  "mp": "medium"
+ }
+]

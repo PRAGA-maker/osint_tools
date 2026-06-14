@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/computing.md",
+  "id": "computing",
+  "name": "Computing",
+  "url": "http://www.computing.co.uk",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/context.md",
+  "id": "context",
+  "name": "Context",
+  "url": "https://ctxt.io/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/controlc-pastebin.md",
+  "id": "controlc-pastebin",
+  "name": "ControlC Pastebin",
+  "url": "https://Controlc.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/couchsurfing.md",
+  "id": "couchsurfing",
+  "name": "Couchsurfing",
+  "url": "https://www.couchsurfing.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/council-on-foreign-relations.md",
+  "id": "council-on-foreign-relations",
+  "name": "Council on Foreign Relations",
+  "url": "https://www.cfr.org/defense-and-security",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forum-search-engines/craigslist-forums.md",
+  "id": "craigslist-forums",
+  "name": "Craigslist Forums",
+  "url": "https://forums.craigslist.org/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/createtv-united-states.md",
+  "id": "createtv-united-states",
+  "name": "CreateTV (United States)",
+  "url": "http://createtv.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/crn-com-technology-news-for-solution-providers.md",
+  "id": "crn-com-technology-news-for-solution-providers",
+  "name": "CRN.com Technology News For Solution Providers",
+  "url": "http://www.crn.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ctv-news-worldwide-canada.md",
+  "id": "ctv-news-worldwide-canada",
+  "name": "CTV News Worldwide (Canada)",
+  "url": "http://www.ctvnews.ca/world",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/ctv-sci-fi-canada.md",
+  "id": "ctv-sci-fi-canada",
+  "name": "CTV Sci-fi (Canada)",
+  "url": "https://www.ctvscifi.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/cutapaste.md",
+  "id": "cutapaste",
+  "name": "Cutapaste",
+  "url": "https://cutapaste.net/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/defencetalk-com.md",
+  "id": "defencetalk-com",
+  "name": "defencetalk.com",
+  "url": "https://www.defencetalk.com/military/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/defuse.md",
+  "id": "defuse",
+  "name": "Defuse",
+  "url": "https://defuse.ca/pastebin.htm",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forum-search-engines/delphi-forum-search.md",
+  "id": "delphi-forum-search",
+  "name": "Delphi Forum Search",
+  "url": "https://www.delphiforums.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/deviantart.md",
+  "id": "deviantart",
+  "name": "DeviantArt",
+  "url": "http://www.deviantart.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/digg.md",
+  "id": "digg",
+  "name": "Digg",
+  "url": "http://digg.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/phone/usphonebook.md",
+  "id": "usphonebook",
+  "name": "USPhoneBook",
+  "url": "https://www.usphonebook.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/validnumber-com.md",
+  "id": "validnumber-com",
+  "name": "Validnumber.com",
+  "url": "https://validnumber.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/white-pages-people-finder-anywho.md",
+  "id": "white-pages-people-finder-anywho",
+  "name": "White Pages | People Finder - AnyWho",
+  "url": "https://www.anywho.com/reverse-lookup",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/whitepages-reverse-phone.md",
+  "id": "whitepages-reverse-phone",
+  "name": "Whitepages Reverse Phone",
+  "url": "https://www.whitepages.com/reverse-phone",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/who-called-me.md",
+  "id": "who-called-me",
+  "name": "Who Called Me",
+  "url": "https://www.whocalledme.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/whocalld.md",
+  "id": "whocalld",
+  "name": "WhoCalld",
+  "url": "https://whocalld.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/whocallsme-com.md",
+  "id": "whocallsme-com",
+  "name": "whocallsme.com",
+  "url": "http://whocallsme.com/Default.aspx",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/wikipedia-org-2.md",
+  "id": "wikipedia-org-2",
+  "name": "wikipedia.org",
+  "url": "https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/wikitravel-org.md",
+  "id": "wikitravel-org",
+  "name": "wikitravel.org",
+  "url": "https://wikitravel.org/en/Wikitravel:Phone_numbers",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/www-spydialer-com.md",
+  "id": "www-spydialer-com",
+  "name": "www.spydialer.com",
+  "url": "https://www.spydialer.com",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/yellow-co-nz.md",
+  "id": "yellow-co-nz",
+  "name": "yellow.co.nz",
+  "url": "https://yellow.co.nz/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/51-000-university-of-michigan-employee-salaries.md",
+  "id": "51-000-university-of-michigan-employee-salaries",
+  "name": "51,000 University of Michigan employee salaries",
+  "url": "https://www.mlive.com/news/ann-arbor/2020/12/see-the-2020-salaries-for-all-45000-university-of-michigan-employees.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/aat-org-uk.md",
+  "id": "aat-org-uk",
+  "name": "aat.org.uk",
+  "url": "https://www.aat.org.uk/licensed-members/directory",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/accaglobal-com.md",
+  "id": "accaglobal-com",
+  "name": "accaglobal.com",
+  "url": "https://www.accaglobal.com/uk/en/member/find-an-accountant/directory-of-member.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/access-state-records-online-staterecords-org.md",
+  "id": "access-state-records-online-staterecords-org",
+  "name": "Access State Records Online - StateRecords.org",
+  "url": "https://staterecords.org/criminal.php",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/adultwork-com.md",
+  "id": "adultwork-com",
+  "name": "adultwork.com",
+  "url": "http://www.adultwork.com/Home.asp",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

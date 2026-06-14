@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/nox.md",
+  "id": "nox",
+  "name": "NOX",
+  "url": "https://github.com/nox-project/nox-framework",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/nymeria-io.md",
+  "id": "nymeria-io",
+  "name": "nymeria.io",
+  "url": "https://www.nymeria.io/blog/how-to-manually-find-email-addresses-for-github-users",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/omail-io.md",
+  "id": "omail-io",
+  "name": "omail.io",
+  "url": "https://omail.io/leads",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/openpgp-org.md",
+  "id": "openpgp-org",
+  "name": "openpgp.org",
+  "url": "https://www.openpgp.org",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/osint-industries.md",
+  "id": "osint-industries",
+  "name": "OSINT Industries",
+  "url": "https://www.osint.industries/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/osint-lolarchiver-com.md",
+  "id": "osint-lolarchiver-com",
+  "name": "osint.lolarchiver.com",
+  "url": "https://osint.lolarchiver.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/osint-lolarchiver-com-2.md",
+  "id": "osint-lolarchiver-com-2",
+  "name": "osint.lolarchiver.com",
+  "url": "https://osint.lolarchiver.com/database_lookup",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/osint-rocks.md",
+  "id": "osint-rocks",
+  "name": "osint.rocks",
+  "url": "https://osint.rocks/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/osintcat.md",
+  "id": "osintcat",
+  "name": "OsintCat",
+  "url": "https://www.osintcat.net/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/osinteye.md",
+  "id": "osinteye",
+  "name": "OSINTEye",
+  "url": "https://github.com/atiilla/OsintEye",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/pages-ebay-co-uk.md",
+  "id": "pages-ebay-co-uk",
+  "name": "pages.ebay.co.uk",
+  "url": "http://pages.ebay.co.uk/help/account/securing-account.html",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/pastebin-com.md",
+  "id": "pastebin-com",
+  "name": "pastebin.com",
+  "url": "https://pastebin.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/peepmail.md",
+  "id": "peepmail",
+  "name": "Peepmail",
+  "url": "http://www.samy.pl/peepmail",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/pipl.md",
+  "id": "pipl",
+  "name": "Pipl",
+  "url": "https://pipl.com",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/pointofmail-com-email-tracking-addons-mozilla-org.md",
+  "id": "pointofmail-com-email-tracking-addons-mozilla-org",
+  "name": "pointofmail com email tracking (addons.mozilla.org)",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/pointofmail-com-email-tracking/?src=search",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/pointofmailcom-email-trac-chrome-google-com.md",
+  "id": "pointofmailcom-email-trac-chrome-google-com",
+  "name": "pointofmailcom email trac (chrome.google.com)",
+  "url": "https://chrome.google.com/webstore/detail/pointofmailcom-email-trac/fbfenljjbahpbnpffpepeiommncfckci?hl=en",
+  "category": "email",
+  "mp": "high"
+ }
+]

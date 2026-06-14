@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/freshstart.md",
+  "id": "freshstart",
+  "name": "FreshStart",
+  "url": "https://chrome.google.com/webstore/detail/freshstart-cross-browser/nmidkjogcjnnlfimjcedenagjfacpobb?hl=ru",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/generate-data.md",
+  "id": "generate-data",
+  "name": "Generate Data",
+  "url": "https://generatedata.com/generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/generate-sa-id-numbers.md",
+  "id": "generate-sa-id-numbers",
+  "name": "Generate SA ID Numbers",
+  "url": "https://chris927.github.io/generate-sa-idnumbers/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/genius-scan-tool-app-mobile-ios.md",
+  "id": "genius-scan-tool-app-mobile-ios",
+  "name": "Genius Scan Tool App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/genius-scan-pdf-scanner/id377672876?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/gephi-2.md",
+  "id": "gephi-2",
+  "name": "Gephi",
+  "url": "https://github.com/gephi/gephi",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/get-safe-online-database.md",
+  "id": "get-safe-online-database",
+  "name": "Get Safe Online Database",
+  "url": "https://www.getsafeonline.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/giphy-cam-gif-editor-app-mobile-android.md",
+  "id": "giphy-cam-gif-editor-app-mobile-android",
+  "name": "Giphy Cam GIF Editor App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.giphy.messenger",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/giphy-the-gif-search-engine-app-mobile-ios.md",
+  "id": "giphy-the-gif-search-engine-app-mobile-ios",
+  "name": "Giphy: The GIF Search Engine App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/ca/app/giphy-the-gif-search-engine/id974748812",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/glassdoor-business-app-mobile-ios.md",
+  "id": "glassdoor-business-app-mobile-ios",
+  "name": "Glassdoor Business App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/glassdoor-job-search-salaries/id589698942?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/gmail-messaging-app-mobile-android.md",
+  "id": "gmail-messaging-app-mobile-android",
+  "name": "Gmail Messaging App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.google.android.gm",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/gmail-messaging-app-mobile-ios.md",
+  "id": "gmail-messaging-app-mobile-ios",
+  "name": "Gmail Messaging App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/gmail-email-from-google/id422689480?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/gnu-icecat.md",
+  "id": "gnu-icecat",
+  "name": "Gnu Icecat",
+  "url": "https://icecatbrowser.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/gnunet.md",
+  "id": "gnunet",
+  "name": "GNUnet",
+  "url": "https://gnunet.org/en/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/gnupg-pgp-encryption.md",
+  "id": "gnupg-pgp-encryption",
+  "name": "GnuPG PGP Encryption",
+  "url": "http://www.gnupg.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/gofoss-net.md",
+  "id": "gofoss-net",
+  "name": "gofoss.net",
+  "url": "https://gofoss.net/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-analytics-app-mobile-ios.md",
+  "id": "google-analytics-app-mobile-ios",
+  "name": "Google Analytics App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/google-analytics/id881599038?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

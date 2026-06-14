@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/earthquake-watch.md",
+  "id": "earthquake-watch",
+  "name": "Earthquake Watch",
+  "url": "https://www.arcgis.com/apps/dashboards/c8af9c5411814584b460cc87cb7c3780",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/emily-bz.md",
+  "id": "emily-bz",
+  "name": "emily.bz",
+  "url": "https://pano-date.emily.bz/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/fgdc-gp-demos-s-public-fiddles.md",
+  "id": "fgdc-gp-demos-s-public-fiddles",
+  "name": "fgdc\\_gp\\_demos's public fiddles",
+  "url": "https://jsfiddle.net/user/fgdc_gp_demos/fiddles/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/findlatitudeandlongitude-com.md",
+  "id": "findlatitudeandlongitude-com",
+  "name": "findlatitudeandlongitude.com",
+  "url": "https://www.findlatitudeandlongitude.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/firms.md",
+  "id": "firms",
+  "name": "FIRMS",
+  "url": "https://firms.modaps.eosdis.nasa.gov/map/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/free-map-tools.md",
+  "id": "free-map-tools",
+  "name": "Free Map Tools",
+  "url": "https://www.freemaptools.com",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/freemaptools-com.md",
+  "id": "freemaptools-com",
+  "name": "freemaptools.com",
+  "url": "https://www.freemaptools.com/find-british-national-grid-reference-from-map.htm",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/freemaptools-com-2.md",
+  "id": "freemaptools-com-2",
+  "name": "freemaptools.com",
+  "url": "https://www.freemaptools.com/distance-between-uk-postcodes.htm",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/generate-a-panorama.md",
+  "id": "generate-a-panorama",
+  "name": "Generate a panorama",
+  "url": "https://www.udeuschle.de/panoramas/makepanoramas_en.htm",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/geocam-ru.md",
+  "id": "geocam-ru",
+  "name": "Geocam.ru",
+  "url": "https://www.geocam.ru/en/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/geolocatethis.md",
+  "id": "geolocatethis",
+  "name": "GeoLocateThis",
+  "url": "https://geolocatethis.site",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/geomastr-com.md",
+  "id": "geomastr-com",
+  "name": "geomastr.com",
+  "url": "https://geomastr.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/geonarra-com.md",
+  "id": "geonarra-com",
+  "name": "Geonarra.com",
+  "url": "https://www.geonarra.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/georgia-licensed-healthcare-provider-search.md",
+  "id": "georgia-licensed-healthcare-provider-search",
+  "name": "Georgia Licensed Healthcare Provider Search",
+  "url": "https://gcmb.mylicense.com/verification/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/getlostgame-app.md",
+  "id": "getlostgame-app",
+  "name": "getlostgame.app",
+  "url": "https://getlostgame.app/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/go-kml-maps.md",
+  "id": "go-kml-maps",
+  "name": "Go KML Maps",
+  "url": "http://gokml.net/maps",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ }
+]

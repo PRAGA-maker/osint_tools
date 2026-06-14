@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/crt-certificate-search.md",
+  "id": "crt-certificate-search",
+  "name": "CRT Certificate Search",
+  "url": "https://crt.sh",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/cse-utopia.md",
+  "id": "cse-utopia",
+  "name": "CSE Utopia",
+  "url": "https://start.me/p/EL84Km/cse-utopia",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/cyber-criminals-most-wanted.md",
+  "id": "cyber-criminals-most-wanted",
+  "name": "Cyber Criminals Most Wanted",
+  "url": "http://www.ccmostwanted.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/cybercemetery.md",
+  "id": "cybercemetery",
+  "name": "CyberCemetery",
+  "url": "http://govinfo.library.unt.edu/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/dadgogo.md",
+  "id": "dadgogo",
+  "name": "DADgogo",
+  "url": "https://dadgogo.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/dakkadakka-wargame-player-finder.md",
+  "id": "dakkadakka-wargame-player-finder",
+  "name": "DakkaDakka Wargame Player Finder",
+  "url": "http://www.dakkadakka.com/core/player_finder.jsp",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/daum-search-engine-south-korea.md",
+  "id": "daum-search-engine-south-korea",
+  "name": "Daum Search Engine (South Korea)",
+  "url": "http://www.daum.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/debate-cards.md",
+  "id": "debate-cards",
+  "name": "Debate.cards",
+  "url": "http://debate.cards/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/debian-code-search.md",
+  "id": "debian-code-search",
+  "name": "Debian Code Search",
+  "url": "http://codesearch.debian.net",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/defcad.md",
+  "id": "defcad",
+  "name": "DEFCAD",
+  "url": "http://defcad.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/department-of-energy-patents.md",
+  "id": "department-of-energy-patents",
+  "name": "Department of Energy Patents",
+  "url": "http://www.osti.gov/doepatents/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/deutscheseiten-search-engine-germany.md",
+  "id": "deutscheseiten-search-engine-germany",
+  "name": "DeutscheSeiten Search Engine (Germany)",
+  "url": "http://www.deutscheseiten.de",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/dirio-search-engine-bulgaria.md",
+  "id": "dirio-search-engine-bulgaria",
+  "name": "Dirio Search Engine (Bulgaria)",
+  "url": "http://search.dir.bg/indexwide.php",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ditto-fashion-search-engine.md",
+  "id": "ditto-fashion-search-engine",
+  "name": "Ditto Fashion Search Engine",
+  "url": "https://www.ditto.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/dog-bites-search-engine.md",
+  "id": "dog-bites-search-engine",
+  "name": "Dog Bites Search Engine",
+  "url": "https://cse.google.com/cse?cx=partner-pub-8216357153102971:3267723418",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/dogpile-meta-search.md",
+  "id": "dogpile-meta-search",
+  "name": "Dogpile Meta Search",
+  "url": "http://www.dogpile.com",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/imiregister-org-uk.md",
+  "id": "imiregister-org-uk",
+  "name": "imiregister.org.uk",
+  "url": "https://tide.theimi.org.uk/membership/professional-register",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/immo-data-fr.md",
+  "id": "immo-data-fr",
+  "name": "immo-data.fr",
+  "url": "https://www.immo-data.fr/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/independent-fundamental-baptist-sexual-misconduct-database.md",
+  "id": "independent-fundamental-baptist-sexual-misconduct-database",
+  "name": "Independent fundamental Baptist sexual misconduct database",
+  "url": "https://datawrapper.dwcdn.net/UyECh/20/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/indiana-offender-database-search.md",
+  "id": "indiana-offender-database-search",
+  "name": "Indiana Offender Database Search",
+  "url": "https://www.in.gov/apps/indcorrection/ofs/ofs",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/indiancompany-info.md",
+  "id": "indiancompany-info",
+  "name": "indiancompany.info",
+  "url": "https://www.indiancompany.info/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/info-clipper-com.md",
+  "id": "info-clipper-com",
+  "name": "info-clipper.com",
+  "url": "https://www.info-clipper.com/en/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/infocreditgroup-com.md",
+  "id": "infocreditgroup-com",
+  "name": "infocreditgroup.com",
+  "url": "https://www.infocreditgroup.com/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/infoempresa-com.md",
+  "id": "infoempresa-com",
+  "name": "infoempresa.com",
+  "url": "https://www.infoempresa.com/en-in/es/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/infogreffe-fr.md",
+  "id": "infogreffe-fr",
+  "name": "infogreffe.fr",
+  "url": "https://www.infogreffe.fr/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/infotrack-com-au.md",
+  "id": "infotrack-com-au",
+  "name": "infotrack.com.au",
+  "url": "https://www.infotrack.com.au/solutions/searches-certificates/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/inmate-locator-us.md",
+  "id": "inmate-locator-us",
+  "name": "Inmate Locator (US)",
+  "url": "https://www.theinmatelocator.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/inmateaid.md",
+  "id": "inmateaid",
+  "name": "InmateAid",
+  "url": "https://www.inmateaid.com",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/inpi-fr.md",
+  "id": "inpi-fr",
+  "name": "inpi.fr",
+  "url": "https://data.inpi.fr/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/insolvency-practitioners-org-uk.md",
+  "id": "insolvency-practitioners-org-uk",
+  "name": "insolvency-practitioners.org.uk",
+  "url": "https://insolvency-practitioners.org.uk/ipa-search-members/",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/inteltechniques-business-search-tool.md",
+  "id": "inteltechniques-business-search-tool",
+  "name": "IntelTechniques Business Search Tool",
+  "url": "https://inteltechniques.com/tools/business.html",
+  "category": "public-records",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/public-records/interment.md",
+  "id": "interment",
+  "name": "Interment",
+  "url": "http://www.interment.net/data/search.htm",
+  "category": "public-records",
+  "mp": "high"
+ }
+]

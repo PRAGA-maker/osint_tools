@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/international-labour-comparisons.md",
+  "id": "international-labour-comparisons",
+  "name": "International Labour Comparisons",
+  "url": "http://www.bls.gov/fls/chartbook.htm",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/international-trade-center.md",
+  "id": "international-trade-center",
+  "name": "International Trade Center",
+  "url": "http://www.intracen.org/ByCountry.aspx",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/interpol-most-wanted-search-engine.md",
+  "id": "interpol-most-wanted-search-engine",
+  "name": "Interpol Most Wanted Search Engine",
+  "url": "https://cse.google.com/cse?cx=b1746754c83012613",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/ioserv-com-en-jurisdictions-jurisdlist.md",
+  "id": "ioserv-com-en-jurisdictions-jurisdlist",
+  "name": "Ioserv.com/en/jurisdictions/jurisdlist/",
+  "url": "https://ioserv.com/en/jurisdictions/jurisdlist",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/iron-march.md",
+  "id": "iron-march",
+  "name": "Iron March",
+  "url": "https://bloopbase.keybase.pub/LEFTHOOK/IronMarch/index.html",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/ironmarch-exposed.md",
+  "id": "ironmarch-exposed",
+  "name": "Ironmarch.exposed",
+  "url": "https://www.ironmarch.exposed/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/junar.md",
+  "id": "junar",
+  "name": "Junar",
+  "url": "http://junar.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/kaggle.md",
+  "id": "kaggle",
+  "name": "Kaggle",
+  "url": "https://www.kaggle.com/search?q=",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/knoema.md",
+  "id": "knoema",
+  "name": "Knoema",
+  "url": "https://knoema.com",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/landmatrix.md",
+  "id": "landmatrix",
+  "name": "LandMatrix",
+  "url": "http://landmatrix.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/latinobarometro.md",
+  "id": "latinobarometro",
+  "name": "Latinobarometro",
+  "url": "http://www.latinobarometro.org",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/legal-entity-types-by-country.md",
+  "id": "legal-entity-types-by-country",
+  "name": "Legal Entity Types by Country",
+  "url": "https://en.wikipedia.org/wiki/list_of_legal_entity_types_by_country",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/leolist.md",
+  "id": "leolist",
+  "name": "LeoList",
+  "url": "https://www.leolist.cc/",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/library-university-of-michigan-statistics-and-datasets.md",
+  "id": "library-university-of-michigan-statistics-and-datasets",
+  "name": "Library, University of Michigan: Statistics and Datasets",
+  "url": "http://www.lib.umich.edu/browse/Statistics%20and%20Data%20Sets",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/manitoba-assessment-online.md",
+  "id": "manitoba-assessment-online",
+  "name": "Manitoba Assessment Online",
+  "url": "https://www.gov.mb.ca/mao/public/search_select.aspx",
+  "category": "public-records",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/public-records/manta.md",
+  "id": "manta",
+  "name": "Manta",
+  "url": "https://www.manta.com/business",
+  "category": "public-records",
+  "mp": "low"
+ }
+]

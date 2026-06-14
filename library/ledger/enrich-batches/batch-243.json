@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/code-finder-2.md",
+  "id": "code-finder-2",
+  "name": "Code Finder",
+  "url": "https://codefinder.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/colorado-licensed-professional-lookup.md",
+  "id": "colorado-licensed-professional-lookup",
+  "name": "Colorado Licensed Professional Lookup",
+  "url": "https://www.colorado.gov/dora/licensing/Lookup/LicenseLookup.aspx",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/colorado-unclaimed-property-search.md",
+  "id": "colorado-unclaimed-property-search",
+  "name": "Colorado Unclaimed Property Search",
+  "url": "https://colorado.findyourunclaimedproperty.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/other-search/colossus-international-engine-list.md",
+  "id": "colossus-international-engine-list",
+  "name": "Colossus International Engine List",
+  "url": "https://www.searchenginecolossus.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/comicvine.md",
+  "id": "comicvine",
+  "name": "Comicvine",
+  "url": "https://comicvine.gamespot.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/command-e.md",
+  "id": "command-e",
+  "name": "Command E",
+  "url": "https://getcommande.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/conservapedia.md",
+  "id": "conservapedia",
+  "name": "Conservapedia",
+  "url": "http://www.conservapedia.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/contenko-search-engine-united-kingdom.md",
+  "id": "contenko-search-engine-united-kingdom",
+  "name": "Contenko Search Engine (United Kingdom)",
+  "url": "http://www.contenko.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/context-menu-search.md",
+  "id": "context-menu-search",
+  "name": "Context Menu Search",
+  "url": "https://chrome.google.com/webstore/detail/context-menu-search/ocpcmghnefmdhljkoiapafejjohldoga?hl=en",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/copyright-search.md",
+  "id": "copyright-search",
+  "name": "Copyright Search",
+  "url": "https://www.lumendatabase.org/topics/22",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/academic-publication-search/copyscape-plagiarism-checker.md",
+  "id": "copyscape-plagiarism-checker",
+  "name": "Copyscape Plagiarism Checker",
+  "url": "https://www.copyscape.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/country-of-grey-canada.md",
+  "id": "country-of-grey-canada",
+  "name": "Country of Grey (Canada)",
+  "url": "https://www.grey.ca/traffic-tickets-provincial-offences",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/credit-guru.md",
+  "id": "credit-guru",
+  "name": "Credit Guru",
+  "url": "http://www.creditguru.com/worldagencies.htm",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/criminology-wiki.md",
+  "id": "criminology-wiki",
+  "name": "Criminology Wiki",
+  "url": "https://criminology.fandom.com/wiki/Main_Page",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/crossref.md",
+  "id": "crossref",
+  "name": "Crossref",
+  "url": "https://search.crossref.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/crown-prosecution-service-uk.md",
+  "id": "crown-prosecution-service-uk",
+  "name": "Crown Prosecution Service (UK)",
+  "url": "http://www.cps.gov.uk/",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/image-video-face/images/search/7photos-net.md",
+  "id": "7photos-net",
+  "name": "7Photos.net",
+  "url": "https://7photos.net/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/age-toolpie-com.md",
+  "id": "age-toolpie-com",
+  "name": "age.toolpie.com",
+  "url": "https://age.toolpie.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/ailab-wondershare-com.md",
+  "id": "ailab-wondershare-com",
+  "name": "ailab.wondershare.com",
+  "url": "https://ailab.wondershare.com/tools/aging-filter.html",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/ailab-wondershare-com-2.md",
+  "id": "ailab-wondershare-com-2",
+  "name": "ailab.wondershare.com",
+  "url": "https://ailab.wondershare.com/tools/remove-background.html",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/ailab-wondershare-com-3.md",
+  "id": "ailab-wondershare-com-3",
+  "name": "ailab.wondershare.com",
+  "url": "https://ailab.wondershare.com/tools/ai-image-upscaler.html",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/aiseesoft-com.md",
+  "id": "aiseesoft-com",
+  "name": "aiseesoft.com",
+  "url": "https://www.aiseesoft.com/watermark-remover-online/#",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/documents/search/common-googledorks/amazon-aws.md",
+  "id": "amazon-aws",
+  "name": "Amazon AWS",
+  "url": "https://www.google.com/search?q=site:s3.amazonaws.com+%3Csearchterm%3E",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/amazon-rekognition.md",
+  "id": "amazon-rekognition",
+  "name": "Amazon Rekognition",
+  "url": "https://aws.amazon.com/rekognition/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/anieraser-media-io.md",
+  "id": "anieraser-media-io",
+  "name": "anieraser.media.io",
+  "url": "https://anieraser.media.io/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/metadata/apache-tika.md",
+  "id": "apache-tika",
+  "name": "Apache Tika",
+  "url": "https://tika.apache.org/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/background-removal-tool.md",
+  "id": "background-removal-tool",
+  "name": "Background Removal Tool",
+  "url": "https://photoscissors.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/search/baidu-images.md",
+  "id": "baidu-images",
+  "name": "Baidu Images",
+  "url": "https://image.baidu.com/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/bbc-co-uk.md",
+  "id": "bbc-co-uk",
+  "name": "bbc.co.uk",
+  "url": "https://www.bbc.co.uk/bitesize/articles/z6s4239",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/befunky-com.md",
+  "id": "befunky-com",
+  "name": "befunky.com",
+  "url": "https://www.befunky.com/create/photo-editor/",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/betaface.md",
+  "id": "betaface",
+  "name": "Betaface",
+  "url": "https://www.betaface.com/demo.html",
+  "category": "image-video-face",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/image-video-face/images/search/bing-images.md",
+  "id": "bing-images",
+  "name": "Bing Images",
+  "url": "https://www.bing.com/images",
+  "category": "image-video-face",
+  "mp": "high"
+ }
+]

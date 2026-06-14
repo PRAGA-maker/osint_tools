@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/google-com-41.md",
+  "id": "google-com-41",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Athestudentroom.co.uk%2F&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/google-com-6.md",
+  "id": "google-com-6",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Acommunity.screwfix.com%2Fforums%2F+OR+site%3Acommunity.screwfix.com%2Fthreads%2F&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/google-com-7.md",
+  "id": "google-com-7",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Atilersforums.co.uk%2Fforums%2F+OR+site%3Atilersforums.co.uk%2Fthreads%2F&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/google-com-8.md",
+  "id": "google-com-8",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Anationaltradesmen.co.uk/forums/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/google-com-9.md",
+  "id": "google-com-9",
+  "name": "google.com",
+  "url": "https://www.google.com/search?q=site%3Aforums.moneysavingexpert.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/google-groups.md",
+  "id": "google-groups",
+  "name": "Google Groups",
+  "url": "https://groups.google.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/forum-search-engines/google-groups-search.md",
+  "id": "google-groups-search",
+  "name": "Google Groups Search",
+  "url": "https://groups.google.com/forum/#!overview",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/google-plus-directory.md",
+  "id": "google-plus-directory",
+  "name": "Google Plus Directory",
+  "url": "https://www.google.ca/press/google-directory.html",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/grasswire.md",
+  "id": "grasswire",
+  "name": "Grasswire",
+  "url": "http://grasswire.com/#",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/grindr.md",
+  "id": "grindr",
+  "name": "Grindr",
+  "url": "http://www.grindr.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/guesttoguest.md",
+  "id": "guesttoguest",
+  "name": "Guesttoguest",
+  "url": "https://www.guesttoguest.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/hashbin.md",
+  "id": "hashbin",
+  "name": "HashBin",
+  "url": "https://hashb.in/#Q===",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/hastebin.md",
+  "id": "hastebin",
+  "name": "hastebin",
+  "url": "https://www.toptal.com/developers/hastebin/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/hgtv-television-canada.md",
+  "id": "hgtv-television-canada",
+  "name": "HGTV Television (Canada)",
+  "url": "http://www.hgtv.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/history-channel-television-canada.md",
+  "id": "history-channel-television-canada",
+  "name": "History Channel Television (Canada)",
+  "url": "http://www.history.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/homeaway.md",
+  "id": "homeaway",
+  "name": "Homeaway",
+  "url": "https://www.homeaway.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

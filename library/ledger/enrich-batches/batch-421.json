@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/quickvoice-recorder-app-mobile-ios.md",
+  "id": "quickvoice-recorder-app-mobile-ios",
+  "name": "Quickvoice Recorder App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/quickvoice-recorder/id284675296?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/random-face-generator.md",
+  "id": "random-face-generator",
+  "name": "Random Face Generator",
+  "url": "https://fakeinfo.net/random-face-generator",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ray-so.md",
+  "id": "ray-so",
+  "name": "Ray So",
+  "url": "https://ray.so/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/receive-sms-now-com.md",
+  "id": "receive-sms-now-com",
+  "name": "Receive-sms-now.com",
+  "url": "http://receive-sms-now.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/receive-sms-online.md",
+  "id": "receive-sms-online",
+  "name": "Receive SMS Online",
+  "url": "http://receive-sms-online.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/receive-sms-online-2.md",
+  "id": "receive-sms-online-2",
+  "name": "Receive SMS Online",
+  "url": "https://hs3x.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/receive-sms-online-for-free.md",
+  "id": "receive-sms-online-for-free",
+  "name": "Receive SMS Online for FREE",
+  "url": "http://freesmsverification.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/redbooth-team-collaboration-app.md",
+  "id": "redbooth-team-collaboration-app",
+  "name": "Redbooth Team Collaboration App",
+  "url": "http://redbooth.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/resume-builder.md",
+  "id": "resume-builder",
+  "name": "Resume Builder",
+  "url": "https://vinaysomawat.github.io/Resume-Builder/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/resume-generator.md",
+  "id": "resume-generator",
+  "name": "Resume Generator",
+  "url": "https://thisresumedoesnotexist.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/resurrect-pages.md",
+  "id": "resurrect-pages",
+  "name": "Resurrect Pages",
+  "url": "https://addons.mozilla.org/en-US/firefox/addon/resurrect-pages",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ripoff-report.md",
+  "id": "ripoff-report",
+  "name": "Ripoff Report",
+  "url": "http://www.ripoffreport.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/rosetta-stone-learn-languages-app-mobile-android.md",
+  "id": "rosetta-stone-learn-languages-app-mobile-android",
+  "name": "Rosetta Stone Learn Languages App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=air.com.rosettastone.mobile.CoursePlayer&hl=en_GB",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/rosetta-stone-learn-languages-app-mobile-ios.md",
+  "id": "rosetta-stone-learn-languages-app-mobile-ios",
+  "name": "Rosetta Stone Learn Languages App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/gb/app/rosetta-course/id435588892?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/rss-subscription-extension-chrome.md",
+  "id": "rss-subscription-extension-chrome",
+  "name": "RSS Subscription Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/rug.md",
+  "id": "rug",
+  "name": "Rug",
+  "url": "https://github.com/rly0nheart/rug",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

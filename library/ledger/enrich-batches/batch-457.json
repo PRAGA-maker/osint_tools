@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/pytrends.md",
+  "id": "pytrends",
+  "name": "PyTrends",
+  "url": "https://github.com/GeneralMills/pytrends",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/query-server.md",
+  "id": "query-server",
+  "name": "Query-server",
+  "url": "https://query-server.herokuapp.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/quetzal-search.md",
+  "id": "quetzal-search",
+  "name": "Quetzal Search",
+  "url": "https://www.quetzal-search.info",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/qwant.md",
+  "id": "qwant",
+  "name": "Qwant",
+  "url": "http://www.qwant.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/qwant-2.md",
+  "id": "qwant-2",
+  "name": "Qwant",
+  "url": "https://www.qwant.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/r3mlab-datajournalism-resources.md",
+  "id": "r3mlab-datajournalism-resources",
+  "name": "r3mlab datajournalism-resources",
+  "url": "https://github.com/r3mlab/datajournalism-resources",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/reeder.md",
+  "id": "reeder",
+  "name": "Reeder",
+  "url": "http://reederapp.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/research-gate.md",
+  "id": "research-gate",
+  "name": "Research Gate",
+  "url": "http://www.researchgate.net",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/reuters.md",
+  "id": "reuters",
+  "name": "Reuters",
+  "url": "http://www.reuters.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/reviewmeta.md",
+  "id": "reviewmeta",
+  "name": "ReviewMeta",
+  "url": "https://reviewmeta.com/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/rfc-fyi.md",
+  "id": "rfc-fyi",
+  "name": "RFC.fyi",
+  "url": "https://rfc.fyi/",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/s.md",
+  "id": "s",
+  "name": "S",
+  "url": "https://github.com/zquestz/s",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/safesearchkids.md",
+  "id": "safesearchkids",
+  "name": "SafeSearchKids",
+  "url": "http://www.safesearchkids.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/sage-journals.md",
+  "id": "sage-journals",
+  "name": "SAGE Journals",
+  "url": "http://online.sagepub.com",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/sapo-portugal.md",
+  "id": "sapo-portugal",
+  "name": "SAPO (Portugal)",
+  "url": "http://www.sapo.pt",
+  "category": "search-engines",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/search-engines/sciencedirect.md",
+  "id": "sciencedirect",
+  "name": "ScienceDirect",
+  "url": "http://www.sciencedirect.com",
+  "category": "search-engines",
+  "mp": "low"
+ }
+]

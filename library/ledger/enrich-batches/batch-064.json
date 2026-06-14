@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/phone/spoofcard-com.md",
+  "id": "spoofcard-com",
+  "name": "spoofcard.com",
+  "url": "http://www.spoofcard.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/spy-dialer.md",
+  "id": "spy-dialer",
+  "name": "Spy Dialer",
+  "url": "http://spydialer.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/spydialer.md",
+  "id": "spydialer",
+  "name": "SpyDialer",
+  "url": "https://www.spydialer.com:443/default.aspx",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/superpages-online-yellow-pages-local-business-directory.md",
+  "id": "superpages-online-yellow-pages-local-business-directory",
+  "name": "Superpages Online Yellow Pages, Local Business Directory",
+  "url": "https://www.superpages.com",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/sync-me.md",
+  "id": "sync-me",
+  "name": "Sync.ME",
+  "url": "https://sync.me/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/telecom-tariffs-co-uk.md",
+  "id": "telecom-tariffs-co-uk",
+  "name": "telecom-tariffs.co.uk",
+  "url": "http://www.telecom-tariffs.co.uk/codelook.htm",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/thatsthem-phone-search.md",
+  "id": "thatsthem-phone-search",
+  "name": "ThatsThem Phone Search",
+  "url": "https://thatsthem.com/reverse-phone-lookup",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/thisnumber-com.md",
+  "id": "thisnumber-com",
+  "name": "thisnumber.com",
+  "url": "https://www.thisnumber.com/country",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/thisnumber-com-2.md",
+  "id": "thisnumber-com-2",
+  "name": "thisnumber.com",
+  "url": "https://www.thisnumber.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/tracefind-info-2.md",
+  "id": "tracefind-info-2",
+  "name": "tracefind.info",
+  "url": "https://tracefind.info/phone",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/true-caller.md",
+  "id": "true-caller",
+  "name": "True Caller",
+  "url": "https://www.truecaller.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/truecaller-com.md",
+  "id": "truecaller-com",
+  "name": "Truecaller.com",
+  "url": "https://truecaller.com",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/truecaller-search-engine.md",
+  "id": "truecaller-search-engine",
+  "name": "Truecaller Search Engine",
+  "url": "https://cse.google.com/cse?cx=c46b76bce1848d976",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/twilio.md",
+  "id": "twilio",
+  "name": "Twilio",
+  "url": "https://www.twilio.com/docs/lookup/v2-api",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/ukphonebook-com.md",
+  "id": "ukphonebook-com",
+  "name": "ukphonebook.com",
+  "url": "http://www.ukphonebook.com/",
+  "category": "phone",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/phone/us-phonebook.md",
+  "id": "us-phonebook",
+  "name": "US Phonebook",
+  "url": "https://www.usphonebook.com/515-419-8701/detailed",
+  "category": "phone",
+  "mp": "high"
+ }
+]

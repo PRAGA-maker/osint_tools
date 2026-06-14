@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/bromite.md",
+  "id": "bromite",
+  "name": "Bromite",
+  "url": "https://www.bromite.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/bugmenot.md",
+  "id": "bugmenot",
+  "name": "BugMenot",
+  "url": "http://bugmenot.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/bunker-is.md",
+  "id": "bunker-is",
+  "name": "Bunker.is",
+  "url": "https://bunker.is",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/call-recorder-management-app-mobile-ios.md",
+  "id": "call-recorder-management-app-mobile-ios",
+  "name": "Call Recorder Management App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/us/app/call-recorder-for-iphone/id1503665233",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/canadian-anti-fraud-centre.md",
+  "id": "canadian-anti-fraud-centre",
+  "name": "Canadian Anti-Fraud Centre",
+  "url": "https://www.antifraudcentre-centreantifraude.ca/index-eng.htm",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/capture-explain-and-send-screenshots-extension-chrome.md",
+  "id": "capture-explain-and-send-screenshots-extension-chrome",
+  "name": "Capture Explain and Send Screenshots Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/capture-explain-and-send/mdddabjhelpilpnpgondfmehhcplpiin",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/cardgenerator.md",
+  "id": "cardgenerator",
+  "name": "CardGenerator",
+  "url": "https://cardgenerator.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/cardgenerator-org.md",
+  "id": "cardgenerator-org",
+  "name": "Cardgenerator.org",
+  "url": "https://cardgenerator.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/cardguru.md",
+  "id": "cardguru",
+  "name": "CardGuru",
+  "url": "https://cardguru.io/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/ccleaner-pc.md",
+  "id": "ccleaner-pc",
+  "name": "Ccleaner (PC)",
+  "url": "http://www.piriform.com/ccleaner",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/centbrowser.md",
+  "id": "centbrowser",
+  "name": "CentBrowser",
+  "url": "http://www.centbrowser.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/chat-and-date-social-networking-app-mobile-android.md",
+  "id": "chat-and-date-social-networking-app-mobile-android",
+  "name": "Chat & Date Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.hotornot.app",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/cheat-sheet-maker.md",
+  "id": "cheat-sheet-maker",
+  "name": "Cheat sheet maker",
+  "url": "http://cheatsheet-maker.herokuapp.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/chepy.md",
+  "id": "chepy",
+  "name": "Chepy",
+  "url": "https://github.com/securisec/chepy",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/chibisafe-moe.md",
+  "id": "chibisafe-moe",
+  "name": "Chibisafe.moe",
+  "url": "https://chibisafe.moe/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/chmod-calculator.md",
+  "id": "chmod-calculator",
+  "name": "Chmod calculator",
+  "url": "https://chmod-calculator.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

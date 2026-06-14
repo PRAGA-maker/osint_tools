@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/overcast-podcast-app-mobile-ios.md",
+  "id": "overcast-podcast-app-mobile-ios",
+  "name": "Overcast Podcast App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/overcast-podcast-player/id888422857?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pagezipper.md",
+  "id": "pagezipper",
+  "name": "PageZipper",
+  "url": "http://www.printwhatyoulike.com/pagezipper",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pandasecurity-free-antivirus.md",
+  "id": "pandasecurity-free-antivirus",
+  "name": "PandaSecurity Free Antivirus",
+  "url": "http://www.pandasecurity.com/usa/homeusers/solutions/free-antivirus",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pandora-radio-app-mobile-android.md",
+  "id": "pandora-radio-app-mobile-android",
+  "name": "Pandora Radio App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.pandora.android&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pandora-radio-app-mobile-ios.md",
+  "id": "pandora-radio-app-mobile-ios",
+  "name": "Pandora Radio App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/pandora-free-music-radio/id284035177?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/paper-creativity-app-mobile-ios.md",
+  "id": "paper-creativity-app-mobile-ios",
+  "name": "Paper Creativity App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/paper-notes-photo-annotation/id506003812?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/parrot-security.md",
+  "id": "parrot-security",
+  "name": "Parrot Security",
+  "url": "https://twitter.com/ParrotSec",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/parrot-security-os-online-emulator.md",
+  "id": "parrot-security-os-online-emulator",
+  "name": "Parrot Security OS Online Emulator",
+  "url": "https://www.onworks.net/os-distributions/special-os/free-parrot-security-os-online",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/passhunt.md",
+  "id": "passhunt",
+  "name": "PassHunt",
+  "url": "https://github.com/Viralmaniar/Passhunt",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/password-generator.md",
+  "id": "password-generator",
+  "name": "Password Generator",
+  "url": "https://passgenerator.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/password-safe.md",
+  "id": "password-safe",
+  "name": "Password Safe",
+  "url": "https://pwsafe.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/paxful.md",
+  "id": "paxful",
+  "name": "Paxful",
+  "url": "https://paxful.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/paypal-mobile-payment-app-mobile-android.md",
+  "id": "paypal-mobile-payment-app-mobile-android",
+  "name": "Paypal Mobile Payment App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pentoo-linux.md",
+  "id": "pentoo-linux",
+  "name": "Pentoo Linux",
+  "url": "https://www.pentoo.ch",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pexels.md",
+  "id": "pexels",
+  "name": "Pexels",
+  "url": "https://www.pexels.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/pic-cic-code-database.md",
+  "id": "pic-cic-code-database",
+  "name": "PIC/CIC Code Database",
+  "url": "https://www.allredtech.com/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

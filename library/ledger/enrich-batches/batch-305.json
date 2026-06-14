@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/analyst-research-tools.md",
+  "id": "analyst-research-tools",
+  "name": "Analyst Research Tools",
+  "url": "https://analystresearchtools.com",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/anonymous-youtube-playlists.md",
+  "id": "anonymous-youtube-playlists",
+  "name": "Anonymous YouTube Playlists",
+  "url": "https://neverducky.github.io/anonymous-youtube-playlists/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/api-guesser.md",
+  "id": "api-guesser",
+  "name": "API Guesser",
+  "url": "https://api-guesser.netlify.app/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/app-store-scraper.md",
+  "id": "app-store-scraper",
+  "name": "App Store Scraper",
+  "url": "https://github.com/facundoolano/app-store-scraper",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/appsec-fyi-osint-resources.md",
+  "id": "appsec-fyi-osint-resources",
+  "name": "appsec.fyi OSINT Resources",
+  "url": "https://appsec.fyi/osint.html",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/arbor-js.md",
+  "id": "arbor-js",
+  "name": "Arbor.js",
+  "url": "http://arborjs.org",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/arkhammirror.md",
+  "id": "arkhammirror",
+  "name": "ArkhamMirror",
+  "url": "https://github.com/mantisfury/ArkhamMirror",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/ashok.md",
+  "id": "ashok",
+  "name": "Ashok",
+  "url": "https://github.com/ankitdobhal/Ashok",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/atlos.md",
+  "id": "atlos",
+  "name": "Atlos",
+  "url": "https://www.atlos.org/",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/osint-automation/autoosint.md",
+  "id": "autoosint",
+  "name": "AutoOSINT",
+  "url": "https://github.com/bharshbarger/AutOSINT",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/aware-online-com.md",
+  "id": "aware-online-com",
+  "name": "Aware-online.com",
+  "url": "https://www.aware-online.com/en/osint-tools",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-anti-forensic.md",
+  "id": "awesome-anti-forensic",
+  "name": "awesome-anti-forensic",
+  "url": "https://github.com/remiflavien1/awesome-anti-forensic",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-ctf.md",
+  "id": "awesome-ctf",
+  "name": "awesome-ctf",
+  "url": "https://github.com/apsdehal/awesome-ctf",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-forensics.md",
+  "id": "awesome-forensics",
+  "name": "awesome-forensics",
+  "url": "https://github.com/Cugu/awesome-forensics",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-grep.md",
+  "id": "awesome-grep",
+  "name": "Awesome grep",
+  "url": "https://github.com/cipher387/awesome-grep",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/ai-analysis-automation/awesome-hacking.md",
+  "id": "awesome-hacking",
+  "name": "awesome-hacking",
+  "url": "https://github.com/carpedm20/awesome-hacking",
+  "category": "ai-analysis-automation",
+  "mp": "low"
+ }
+]

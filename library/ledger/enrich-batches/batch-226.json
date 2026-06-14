@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/mappingpoliceviolence-org.md",
+  "id": "mappingpoliceviolence-org",
+  "name": "Mappingpoliceviolence.org",
+  "url": "https://mappingpoliceviolence.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/media-room-and-blue-book.md",
+  "id": "media-room-and-blue-book",
+  "name": "Media Room & Blue Book",
+  "url": "https://media.utoronto.ca/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/melissadata-campaign-contributions.md",
+  "id": "melissadata-campaign-contributions",
+  "name": "MelissaData (Campaign Contributions)",
+  "url": "http://www.melissadata.com/lookups/fec.asp",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/mellssa-data.md",
+  "id": "mellssa-data",
+  "name": "Mellssa Data",
+  "url": "http://melissadata.com/lookups/zipnumber.asp",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/mergent-intellect.md",
+  "id": "mergent-intellect",
+  "name": "Mergent Intellect",
+  "url": "http://www.mergentintellect.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/mergent-online.md",
+  "id": "mergent-online",
+  "name": "Mergent Online",
+  "url": "http://www.mergentonline.com/login.php",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/michigan-ppp-loans.md",
+  "id": "michigan-ppp-loans",
+  "name": "Michigan PPP loans",
+  "url": "https://c0eib122.caspio.com/dp/74321000d4c16abc2baf480b8934",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/milwaukee-wisconsin-city-employee-salaries-2019.md",
+  "id": "milwaukee-wisconsin-city-employee-salaries-2019",
+  "name": "Milwaukee Wisconsin City Employee Salaries 2019",
+  "url": "https://c0ebl104.caspio.com/dp/eab010008ed5ca97d7404269bf89",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/mobile-al-salaries-search-and-report.md",
+  "id": "mobile-al-salaries-search-and-report",
+  "name": "Mobile AL Salaries Search and Report",
+  "url": "https://b2.caspio.com/dp/362210004ae292fb5cf34f0fb079",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/montreal-council-of-social-agencies-database.md",
+  "id": "montreal-council-of-social-agencies-database",
+  "name": "Montreal Council of Social Agencies Database",
+  "url": "http://www.archives.mcgill.ca/resources/db/mcsasearch.htm",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/most-wanted-criminal-pages.md",
+  "id": "most-wanted-criminal-pages",
+  "name": "Most Wanted Criminal Pages",
+  "url": "https://www.fbi.gov/wanted/fugitives",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/muckrock.md",
+  "id": "muckrock",
+  "name": "MuckRock",
+  "url": "https://www.muckrock.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/mugshots-com.md",
+  "id": "mugshots-com",
+  "name": "Mugshots.com",
+  "url": "https://mugshots.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/us-county-data/naco-county-explorer.md",
+  "id": "naco-county-explorer",
+  "name": "NACo County Explorer",
+  "url": "https://explorer.naco.org/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/national-company-registers.md",
+  "id": "national-company-registers",
+  "name": "National Company Registers",
+  "url": "https://en.wikipedia.org/wiki/List_of_company_registers",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/national-sex-offender-search.md",
+  "id": "national-sex-offender-search",
+  "name": "National Sex Offender Search",
+  "url": "https://www.nsopw.gov/",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

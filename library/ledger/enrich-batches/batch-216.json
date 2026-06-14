@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/amazon-scraper.md",
+  "id": "amazon-scraper",
+  "name": "Amazon Scraper",
+  "url": "https://github.com/scrapehero-code/amazon-scraper",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/annual-reports/annualreports-com.md",
+  "id": "annualreports-com",
+  "name": "AnnualReports.com",
+  "url": "https://www.annualreports.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/arabbarometer.md",
+  "id": "arabbarometer",
+  "name": "Arabbarometer",
+  "url": "https://www.arabbarometer.org/survey-data/data-analysis-tool/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/argo-scholar.md",
+  "id": "argo-scholar",
+  "name": "Argo Scholar",
+  "url": "https://poloclub.github.io/argo-scholar/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/arivify.md",
+  "id": "arivify",
+  "name": "Arivify",
+  "url": "https://www.arivify.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/arizona-le-database-abc15.md",
+  "id": "arizona-le-database-abc15",
+  "name": "Arizona LE Database - ABC15",
+  "url": "https://datawrapper.dwcdn.net/kkg90/6/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/association-assq-qc-ca.md",
+  "id": "association-assq-qc-ca",
+  "name": "Association-assq.qc.ca",
+  "url": "https://www.association-assq.qc.ca/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/barcode-lookup.md",
+  "id": "barcode-lookup",
+  "name": "Barcode lookup",
+  "url": "https://www.barcodelookup.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/baytown-tx-employee-directory.md",
+  "id": "baytown-tx-employee-directory",
+  "name": "Baytown TX Employee Directory",
+  "url": "https://c0ctb134.caspio.com/dp/c5f5200097e7aef4edb54e09bd5e",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/better-business-bureau.md",
+  "id": "better-business-bureau",
+  "name": "Better Business Bureau",
+  "url": "http://www.bbb.org",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/financial-tax-resources/bin-base.md",
+  "id": "bin-base",
+  "name": "BIN Base",
+  "url": "https://www.buybindatabase.binbase.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/bizeurope.md",
+  "id": "bizeurope",
+  "name": "Bizeurope",
+  "url": "http://www.bizeurope.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/court-criminal-records/black-book-online-criminal-search.md",
+  "id": "black-book-online-criminal-search",
+  "name": "Black Book Online - Criminal Search",
+  "url": "https://www.blackbookonline.info/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/bloomberg.md",
+  "id": "bloomberg",
+  "name": "Bloomberg",
+  "url": "http://www.bloomberg.com/research/company/overview/overview.asp",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/blueleaks.md",
+  "id": "blueleaks",
+  "name": "BlueLeaks",
+  "url": "https://blueleaks.io/index.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/boston-police-internal-affairs-cases-2010-2020.md",
+  "id": "boston-police-internal-affairs-cases-2010-2020",
+  "name": "Boston Police Internal Affairs Cases, 2010-2020",
+  "url": "https://apps.bostonglobe.com/graphics/2020/law-enforcement/index.html?initialWidth=1029&childId=police-embed&parentTitle=Database%3A%20Search%2010%20years%27%20worth%20of%20Boston%20Police%20Department%20disciplinary%20action&parentUrl=https%3A%2F%2Fwww.bostonglobe.com%2F2020%2F11%2F24%2Fmetro%2Fheres-searchable-database-boston-police-department-internal-investigations-disciplinary-actions-more%2F",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

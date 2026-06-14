@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/searchable-fcc-id-database.md",
+  "id": "searchable-fcc-id-database",
+  "name": "Searchable FCC ID Database",
+  "url": "https://www.fcc.gov/oet/ea/fccid",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/general-info-and-news/sec-gov-edgar.md",
+  "id": "sec-gov-edgar",
+  "name": "SEC.gov - EDGAR",
+  "url": "https://www.sec.gov/submit-filings",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/secret-surveillance-catalogue.md",
+  "id": "secret-surveillance-catalogue",
+  "name": "Secret Surveillance Catalogue",
+  "url": "https://theintercept.com/surveillance-catalogue/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/section-16-deadline-calculator.md",
+  "id": "section-16-deadline-calculator",
+  "name": "Section 16 Deadline Calculator",
+  "url": "https://section-16-deadline-calculator.vercel.app/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/security-licence-status-verification.md",
+  "id": "security-licence-status-verification",
+  "name": "Security Licence Status Verification",
+  "url": "https://justice.gov.bc.ca/security/utilities/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/seethroughny-pensions.md",
+  "id": "seethroughny-pensions",
+  "name": "SeeThroughNY :: Pensions",
+  "url": "https://www.seethroughny.net/pensions",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/sellerapp-com-amazon-reverse-asin-search.md",
+  "id": "sellerapp-com-amazon-reverse-asin-search",
+  "name": "Sellerapp.com. Amazon Reverse ASIN search",
+  "url": "https://www.sellerapp.com/amazon-reverse-asin.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/semrush.md",
+  "id": "semrush",
+  "name": "SEMrush",
+  "url": "https://www.semrush.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/serpstat.md",
+  "id": "serpstat",
+  "name": "Serpstat",
+  "url": "https://serpstat.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/shopsearchengine-com.md",
+  "id": "shopsearchengine-com",
+  "name": "Shopsearchengine.com",
+  "url": "http://shopsearchengine.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/skyscraperpage.md",
+  "id": "skyscraperpage",
+  "name": "SkyscraperPage",
+  "url": "https://skyscraperpage.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/birth-records/sorted-by-birth-date.md",
+  "id": "sorted-by-birth-date",
+  "name": "Sorted by Birth Date",
+  "url": "https://www.bop.gov/inmateloc/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/spyfu.md",
+  "id": "spyfu",
+  "name": "SpyFu",
+  "url": "http://www.spyfu.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/st-louis-county-salaries-fiscal-2020.md",
+  "id": "st-louis-county-salaries-fiscal-2020",
+  "name": "St. Louis County salaries fiscal 2020",
+  "url": "https://c0bkr141.caspio.com/dp/936b1000d0c132c8cbbb4f0c8c1f",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/startup-tracker.md",
+  "id": "startup-tracker",
+  "name": "Startup Tracker",
+  "url": "https://startuptracker.io/home",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/statistics-canada.md",
+  "id": "statistics-canada",
+  "name": "Statistics Canada",
+  "url": "https://www150.statcan.gc.ca/n1/en/type/data?HPA=1",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

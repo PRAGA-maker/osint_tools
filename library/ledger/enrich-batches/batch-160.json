@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/katbin.md",
+  "id": "katbin",
+  "name": "Katbin",
+  "url": "https://katb.in",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/kinja-rss-news-feed.md",
+  "id": "kinja-rss-news-feed",
+  "name": "Kinja RSS News Feed",
+  "url": "https://kinja.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/knok.md",
+  "id": "knok",
+  "name": "Knok",
+  "url": "http://www.knok.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/knowledge-network-television-canada.md",
+  "id": "knowledge-network-television-canada",
+  "name": "Knowledge Network Television (Canada)",
+  "url": "https://www.knowledge.ca",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/kyc360.md",
+  "id": "kyc360",
+  "name": "KYC360",
+  "url": "http://www.kyc360.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/lavalife.md",
+  "id": "lavalife",
+  "name": "Lavalife",
+  "url": "https://www.lavalife.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/lesma-eu.md",
+  "id": "lesma-eu",
+  "name": "lesma.eu",
+  "url": "https://lesma.eu/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/liferea-linux-rss-news-reader.md",
+  "id": "liferea-linux-rss-news-reader",
+  "name": "Liferea Linux RSS News Reader",
+  "url": "http://lzone.de/liferea",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/linkedin-groups.md",
+  "id": "linkedin-groups",
+  "name": "Linkedin Groups",
+  "url": "http://www.linkedin.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/linkode-alpha.md",
+  "id": "linkode-alpha",
+  "name": "Linkode(alpha)",
+  "url": "https://linkode.org/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/blog-search-engines/live-journal-seek.md",
+  "id": "live-journal-seek",
+  "name": "Live Journal Seek",
+  "url": "https://ljseek.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/livejournal-2.md",
+  "id": "livejournal-2",
+  "name": "LiveJournal",
+  "url": "http://www.livejournal.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/logpasta.md",
+  "id": "logpasta",
+  "name": "Logpasta",
+  "url": "https://logpasta.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/london-free-press.md",
+  "id": "london-free-press",
+  "name": "London Free Press",
+  "url": "http://www.lfpress.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/lonely-planet.md",
+  "id": "lonely-planet",
+  "name": "Lonely Planet",
+  "url": "http://www.lonelyplanet.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/loveaholics.md",
+  "id": "loveaholics",
+  "name": "Loveaholics",
+  "url": "https://www.loveaholics.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

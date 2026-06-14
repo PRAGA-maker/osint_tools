@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/transportation/airnav-radarbox.md",
+  "id": "airnav-radarbox",
+  "name": "AirNav RadarBox",
+  "url": "http://radarbox24.com/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/airnav-radarbox-2.md",
+  "id": "airnav-radarbox-2",
+  "name": "AirNav RadarBox",
+  "url": "https://www.radarbox24.com/flight/aa2097",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/ais-boatnerd-com.md",
+  "id": "ais-boatnerd-com",
+  "name": "Ais.boatnerd.com",
+  "url": "https://ais.boatnerd.com/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/ais-ships-map.md",
+  "id": "ais-ships-map",
+  "name": "AIS Ships Map",
+  "url": "https://www.shipfinder.com/Monitor/Index",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/amtrak-status-maps-archive-database.md",
+  "id": "amtrak-status-maps-archive-database",
+  "name": "Amtrak Status Maps Archive Database",
+  "url": "https://juckins.net/amtrak_status/archive/html/history.php",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/aviation-safety-network.md",
+  "id": "aviation-safety-network",
+  "name": "Aviation Safety Network",
+  "url": "https://aviation-safety.net/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/bikemap.md",
+  "id": "bikemap",
+  "name": "Bikemap",
+  "url": "https://www.bikemap.net/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/chronotrains.md",
+  "id": "chronotrains",
+  "name": "Chronotrains",
+  "url": "https://www.chronotrains.com/en",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/chronotrains-2.md",
+  "id": "chronotrains-2",
+  "name": "Chronotrains",
+  "url": "https://chronotrains-eu.vercel.app/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/cma-voyage-finder.md",
+  "id": "cma-voyage-finder",
+  "name": "CMA Voyage Finder",
+  "url": "https://www.cma-cgm.com/ebusiness/schedules/voyage",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/collection-of-public-transport-maps.md",
+  "id": "collection-of-public-transport-maps",
+  "name": "Collection of public transport maps",
+  "url": "https://cipher387.github.io/public_transport_maps/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/container-tracking.md",
+  "id": "container-tracking",
+  "name": "Container Tracking",
+  "url": "http://container-tracking.org/",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/container-tracking-2.md",
+  "id": "container-tracking-2",
+  "name": "Container tracking",
+  "url": "https://www.track-trace.com/container",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/container-tracking-cargo.md",
+  "id": "container-tracking-cargo",
+  "name": "container-tracking (Cargo)",
+  "url": "https://container-tracking.org",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/crewlist-org-uk.md",
+  "id": "crewlist-org-uk",
+  "name": "Crewlist.org.uk",
+  "url": "https://www.crewlist.org.uk/#Data",
+  "category": "transportation",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/transportation/cruise-mapper.md",
+  "id": "cruise-mapper",
+  "name": "Cruise Mapper",
+  "url": "https://www.cruisemapper.com",
+  "category": "transportation",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/email/search-ashley-madison-leaked-data.md",
+  "id": "search-ashley-madison-leaked-data",
+  "name": "Search Ashley Madison Leaked Data",
+  "url": "http://checkashleymadison.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/sendanonymousemail-net.md",
+  "id": "sendanonymousemail-net",
+  "name": "sendanonymousemail.net",
+  "url": "http://www.sendanonymousemail.net/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/skymem.md",
+  "id": "skymem",
+  "name": "Skymem",
+  "url": "https://www.skymem.info/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/slack.md",
+  "id": "slack",
+  "name": "Slack",
+  "url": "https://bloopbase.keybase.pub/SLACK/index.html",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/snov-io.md",
+  "id": "snov-io",
+  "name": "Snov.io",
+  "url": "https://snov.io/email-finder",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/snov-io-2.md",
+  "id": "snov-io-2",
+  "name": "Snov.io",
+  "url": "https://snov.io | https://chrome.google.com/webstore/detail/email- finder/einnffiilpmgldkapbikhkeicohlaapj",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/sony-archives.md",
+  "id": "sony-archives",
+  "name": "Sony Archives",
+  "url": "https://wikileaks.org/sony/emails/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/sourcecon-com.md",
+  "id": "sourcecon-com",
+  "name": "sourcecon.com",
+  "url": "https://www.sourcecon.com/how-to-find-almost-any-github-users-email-address/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/spamgourmet-com.md",
+  "id": "spamgourmet-com",
+  "name": "spamgourmet.com",
+  "url": "http://spamgourmet.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/spamhaus.md",
+  "id": "spamhaus",
+  "name": "Spamhaus",
+  "url": "https://check.spamhaus.org/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/spotthem-com.md",
+  "id": "spotthem-com",
+  "name": "spotthem.com",
+  "url": "https://spotthem.com/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/stealseek.md",
+  "id": "stealseek",
+  "name": "StealSeek",
+  "url": "https://stealseek.io/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/support-cloudhq-net.md",
+  "id": "support-cloudhq-net",
+  "name": "support.cloudhq.net",
+  "url": "https://support.cloudhq.net/what-is-a-tracking-pixel-and-can-strangers-really-spy-on-me-through-email/",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/support-google-com.md",
+  "id": "support-google-com",
+  "name": "support.google.com",
+  "url": "https://support.google.com/mail/answer/29436?hl=en-GB#zippy=%2Cother-email-services%2Cgmail",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/support-rootsweb-com.md",
+  "id": "support-rootsweb-com",
+  "name": "support.rootsweb.com",
+  "url": "https://support.rootsweb.com/s/article/listadmins-headersfull",
+  "category": "email",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/email/email-search/sylva-identity-discovery-2.md",
+  "id": "sylva-identity-discovery-2",
+  "name": "Sylva Identity Discovery",
+  "url": "https://sylva.pfeister.dev/",
+  "category": "email",
+  "mp": "high"
+ }
+]

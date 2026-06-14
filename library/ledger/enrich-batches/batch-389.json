@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/evidence-capture/loader-to.md",
+  "id": "loader-to",
+  "name": "Loader.to",
+  "url": "https://loader.to/",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/media-downloader-net.md",
+  "id": "media-downloader-net",
+  "name": "Media-downloader.net",
+  "url": "https://media-downloader.net/",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/megatools.md",
+  "id": "megatools",
+  "name": "Megatools",
+  "url": "https://megous.com/git/megatools",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/online-tool-to-extract-links-from-any-web-page.md",
+  "id": "online-tool-to-extract-links-from-any-web-page",
+  "name": "Online Tool to Extract Links from any Web Page",
+  "url": "https://hackertarget.com/extract-links/",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/page-links-extractor-tool.md",
+  "id": "page-links-extractor-tool",
+  "name": "Page Links Extractor Tool",
+  "url": "https://shadowcrypt.net/tools/pagelinks",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/slideshare-downloader.md",
+  "id": "slideshare-downloader",
+  "name": "Slideshare Downloader",
+  "url": "https://github.com/mohan3d/slideshare-go",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/soundscrape.md",
+  "id": "soundscrape",
+  "name": "SoundScrape",
+  "url": "https://github.com/Miserlou/SoundScrape",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/stream-downloader.md",
+  "id": "stream-downloader",
+  "name": "Stream Downloader",
+  "url": "https://github.com/lunnlew/stream-downloader",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/wenku.md",
+  "id": "wenku",
+  "name": "Wenku",
+  "url": "https://pypi.org/project/wenku/",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/evidence-capture/z-history-dump.md",
+  "id": "z-history-dump",
+  "name": "Z History Dump",
+  "url": "https://chrome.google.com/webstore/detail/z-history-dump/ahpkicobhkchblogldpjchdhmdnblpkm/related",
+  "category": "evidence-capture",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/527-explorer.md",
+  "id": "527-explorer",
+  "name": "527 Explorer",
+  "url": "https://projects.propublica.org/527-explorer/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/addresschecker-eu.md",
+  "id": "addresschecker-eu",
+  "name": "Addresschecker.eu",
+  "url": "http://addresschecker.eu/",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/addresswatcher-com.md",
+  "id": "addresswatcher-com",
+  "name": "Addresswatcher.com",
+  "url": "https://addresswatcher.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/analytics-engine.md",
+  "id": "analytics-engine",
+  "name": "analytics-engine",
+  "url": "https://github.com/mashiox/analytics-engine",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoin-atm-map.md",
+  "id": "bitcoin-atm-map",
+  "name": "Bitcoin ATM map",
+  "url": "https://coinatmradar.com",
+  "category": "financial-crypto",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/financial-crypto/bitcoin-explorer.md",
+  "id": "bitcoin-explorer",
+  "name": "Bitcoin Explorer",
+  "url": "https://blockchair.com/bitcoin",
+  "category": "financial-crypto",
+  "mp": "low"
+ }
+]

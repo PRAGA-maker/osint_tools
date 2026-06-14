@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/domains-ip-infrastructure/network-analysis-tools/networkminer.md",
+  "id": "networkminer",
+  "name": "NetworkMiner",
+  "url": "https://www.netresec.com/?page=Networkminer",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/nmap.md",
+  "id": "nmap",
+  "name": "Nmap",
+  "url": "https://nmap.org/download.html",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/nmap-checker-tool.md",
+  "id": "nmap-checker-tool",
+  "name": "Nmap Checker Tool",
+  "url": "https://shadowcrypt.net/tools/nmap",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/nmap-online.md",
+  "id": "nmap-online",
+  "name": "NMAP Online",
+  "url": "https://osint.sh/nmap/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/advisories/nvd-nist.md",
+  "id": "nvd-nist",
+  "name": "NVD - NIST",
+  "url": "https://nvd.nist.gov/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/sanctions-and-watchlists/ofac-sanctions-list-search-3.md",
+  "id": "ofac-sanctions-list-search-3",
+  "name": "OFAC Sanctions List Search",
+  "url": "https://sanctionssearch.ofac.treas.gov/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/discovery/online-nikto-scanner.md",
+  "id": "online-nikto-scanner",
+  "name": "Online Nikto scanner",
+  "url": "https://nikto.online/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/vulnerabilities/scanners/online-nikto-scanner-2.md",
+  "id": "online-nikto-scanner-2",
+  "name": "Online Nikto scanner",
+  "url": "https://nikto.online/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/tools/online-nikto-scanner-3.md",
+  "id": "online-nikto-scanner-3",
+  "name": "Online Nikto scanner",
+  "url": "https://nikto.online/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/host-port-discovery/online-port-scanner.md",
+  "id": "online-port-scanner",
+  "name": "Online Port scanner",
+  "url": "https://portscanner.online/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/ipv4/onyphe.md",
+  "id": "onyphe",
+  "name": "Onyphe",
+  "url": "https://www.onyphe.io/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/open-multiple-links-one-click.md",
+  "id": "open-multiple-links-one-click",
+  "name": "Open Multiple Links \u2637 One Click",
+  "url": "https://www.scrapersnbots.com/webtools/open-multiple-links-one-click.php",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/default-passwords/open-sez-me-default-passwords.md",
+  "id": "open-sez-me-default-passwords",
+  "name": "Open Sez Me Default Passwords",
+  "url": "https://open-sez.me/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/analytics/open-site-explorer.md",
+  "id": "open-site-explorer",
+  "name": "Open Site Explorer",
+  "url": "https://moz.com/link-explorer",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/wireless-network-info/opencellid-database-of-cell-towers.md",
+  "id": "opencellid-database-of-cell-towers",
+  "name": "OpenCellid: Database of Cell Towers",
+  "url": "https://opencellid.org/",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/domains-ip-infrastructure/openhunting-io.md",
+  "id": "openhunting-io",
+  "name": "OPENHUNTING.IO",
+  "url": "https://openhunting.io/threat-library",
+  "category": "domains-ip-infrastructure",
+  "mp": "low"
+ }
+]

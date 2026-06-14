@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/documents-metadata/bitly-url-shortener-and-link-manager.md",
+  "id": "bitly-url-shortener-and-link-manager",
+  "name": "Bitly URL Shortener and Link Manager",
+  "url": "https://bitly.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/bookmarkee-bookmark-organizer.md",
+  "id": "bookmarkee-bookmark-organizer",
+  "name": "Bookmarkee Bookmark Organizer",
+  "url": "https://www.bookmarkee.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/bookmax-bookmark-organizer.md",
+  "id": "bookmax-bookmark-organizer",
+  "name": "Bookmax Bookmark Organizer",
+  "url": "http://www.bookmax.net",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/bubbl-us-online-flow-chart-tool.md",
+  "id": "bubbl-us-online-flow-chart-tool",
+  "name": "Bubbl.us Online Flow Chart Tool",
+  "url": "https://bubbl.us",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/bubbly.md",
+  "id": "bubbly",
+  "name": "Bubbly",
+  "url": "http://bubbly.net",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/canadavisa-it-salary-ranges.md",
+  "id": "canadavisa-it-salary-ranges",
+  "name": "CanadaVisa IT Salary Ranges",
+  "url": "http://www.canadavisa.com/canadian-salary-range-it.html",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/catchvideo.md",
+  "id": "catchvideo",
+  "name": "Catchvideo",
+  "url": "http://catchvideo.net/en",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/chief-information-officers-council-united-states.md",
+  "id": "chief-information-officers-council-united-states",
+  "name": "Chief Information Officers Council (United States)",
+  "url": "https://cio.gov",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/choice-consumer-australia.md",
+  "id": "choice-consumer-australia",
+  "name": "Choice Consumer (Australia)",
+  "url": "https://www.choice.com.au",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/cloudconvert.md",
+  "id": "cloudconvert",
+  "name": "CloudConvert",
+  "url": "https://cloudconvert.org/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/cnet-technology-products-reviews.md",
+  "id": "cnet-technology-products-reviews",
+  "name": "Cnet Technology Products Reviews",
+  "url": "http://www.cnet.com/reviews",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/code-finder.md",
+  "id": "code-finder",
+  "name": "Code Finder",
+  "url": "https://codefinder.dev/",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/compressedcrack.md",
+  "id": "compressedcrack",
+  "name": "CompressedCrack",
+  "url": "https://github.com/mnismt/CompressedCrack",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/computer-hope.md",
+  "id": "computer-hope",
+  "name": "Computer Hope",
+  "url": "http://www.computerhope.com/jargon.htm",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/computer-weekly.md",
+  "id": "computer-weekly",
+  "name": "Computer Weekly",
+  "url": "http://www.computerweekly.com",
+  "category": "documents-metadata",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/documents-metadata/consumer-information.md",
+  "id": "consumer-information",
+  "name": "Consumer Information",
+  "url": "http://www.consumer.ftc.gov/features/feature-0014-identity-theft",
+  "category": "documents-metadata",
+  "mp": "low"
+ }
+]

@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/messaging/makeuseof-com.md",
+  "id": "makeuseof-com",
+  "name": "makeuseof.com",
+  "url": "https://www.makeuseof.com/how-to-find-follow-whatsapp-channels/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/maltego-telegram.md",
+  "id": "maltego-telegram",
+  "name": "Maltego Telegram",
+  "url": "https://github.com/vognik/maltego-telegram",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/medium-com-3.md",
+  "id": "medium-com-3",
+  "name": "medium.com",
+  "url": "https://medium.com/@kamramehak445/how-botim-quietly-became-the-everyday-app-you-rely-on-e7837b45a765",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/mnp-bot.md",
+  "id": "mnp-bot",
+  "name": "mnp_bot",
+  "url": "https://t.me/mnp_bot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/mothersearchbot.md",
+  "id": "mothersearchbot",
+  "name": "MotherSearchBot",
+  "url": "https://t.me/MotherSearchBot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/neuroautosearch.md",
+  "id": "neuroautosearch",
+  "name": "NEUROAUTOSEARCH",
+  "url": "https://t.me/noblackAuto_bot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/now-gg.md",
+  "id": "now-gg",
+  "name": "now.gg",
+  "url": "https://now.gg/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/oksearch.md",
+  "id": "oksearch",
+  "name": "OkSearch",
+  "url": "https://telegram.me/OkSearchBot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/opendatauabot.md",
+  "id": "opendatauabot",
+  "name": "OpenDataUABot",
+  "url": "https://t.me/OpenDataUABot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/openload-bot.md",
+  "id": "openload-bot",
+  "name": "OPENLOAD Bot",
+  "url": "https://t.me/OPENLOADTOPBOT",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/osint-discord-resources-github-com.md",
+  "id": "osint-discord-resources-github-com",
+  "name": "OSINT Discord resources (github.com)",
+  "url": "https://github.com/Dutchosintguy/OSINT-Discord-resources",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/osint-github-com.md",
+  "id": "osint-github-com",
+  "name": "OSINT (github.com)",
+  "url": "https://github.com/sinwindie/OSINT/blob/master/Discord/Discord%20OSINT%20Attack%20Surface.pdf",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/osintkit.md",
+  "id": "osintkit",
+  "name": "Osintkit",
+  "url": "https://t.me/osintkit_check_bot",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/osintme-com.md",
+  "id": "osintme-com",
+  "name": "osintme.com",
+  "url": "https://www.osintme.com/index.php/2022/10/18/the-osint-me-ultimate-guide-to-telegram-osint-and-privacy/",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/osintteam-blog-3.md",
+  "id": "osintteam-blog-3",
+  "name": "osintteam.blog",
+  "url": "https://osintteam.blog/whatsapp-osint-tools-for-osint-investigators-c9050048193b",
+  "category": "messaging",
+  "mp": "high"
+ },
+ {
+  "file": "library/tools/messaging/osintteam-blog-4.md",
+  "id": "osintteam-blog-4",
+  "name": "osintteam.blog",
+  "url": "https://osintteam.blog/whatsapp-osint-the-hidden-intelligence-behind-online-status-a3d7591cda3b",
+  "category": "messaging",
+  "mp": "high"
+ }
+]

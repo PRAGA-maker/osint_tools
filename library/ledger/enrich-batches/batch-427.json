@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/tinywall-windows-firewall-enhancement.md",
+  "id": "tinywall-windows-firewall-enhancement",
+  "name": "TinyWall Windows Firewall Enhancement",
+  "url": "http://tinywall.pados.hu",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/tobloef-com.md",
+  "id": "tobloef-com",
+  "name": "Tobloef.com",
+  "url": "https://tobloef.com/text2mindmap/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/todoist-management-app-mobile-android.md",
+  "id": "todoist-management-app-mobile-android",
+  "name": "Todoist Management App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.todoist",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/tor.md",
+  "id": "tor",
+  "name": "Tor",
+  "url": "https://tor.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/tor-browser.md",
+  "id": "tor-browser",
+  "name": "Tor Browser",
+  "url": "https://www.torproject.org/projects/torbrowser.html.en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/torch.md",
+  "id": "torch",
+  "name": "Torch",
+  "url": "http://www.torchbrowser.com",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/torch-2.md",
+  "id": "torch-2",
+  "name": "TORCH",
+  "url": "https://xmh57jrzrnw6insl.onion.to",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/torch-flashlight-tool-app-mobile-ios.md",
+  "id": "torch-flashlight-tool-app-mobile-ios",
+  "name": "Torch Flashlight Tool App (Mobile \u2013 iOS)",
+  "url": "https://apps.apple.com/au/app/torch/id384365348",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/trancreative-converter-plus-app-mobile-ios.md",
+  "id": "trancreative-converter-plus-app-mobile-ios",
+  "name": "TranCreative Converter Plus App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/us/app/converter-plus-iphone-ipod/id370146222?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/transfer-sh.md",
+  "id": "transfer-sh",
+  "name": "transfer.sh",
+  "url": "https://transfer.sh/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/transform-tools.md",
+  "id": "transform-tools",
+  "name": "Transform Tools",
+  "url": "https://transform.tools/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/trello-networking-app-mobile-android.md",
+  "id": "trello-networking-app-mobile-android",
+  "name": "Trello Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.trello",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/truecrypt-encryption-software.md",
+  "id": "truecrypt-encryption-software",
+  "name": "TrueCrypt Encryption Software",
+  "url": "http://www.truecrypt.org",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/tsurugi-linux.md",
+  "id": "tsurugi-linux",
+  "name": "Tsurugi Linux",
+  "url": "https://tsurugi-linux.org/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/tumblr-social-networking-app-mobile-android.md",
+  "id": "tumblr-social-networking-app-mobile-android",
+  "name": "Tumblr Social Networking App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.tumblr",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/tumblr-social-networking-mobile-ios.md",
+  "id": "tumblr-social-networking-mobile-ios",
+  "name": "Tumblr Social Networking (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/tumblr/id305343404?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

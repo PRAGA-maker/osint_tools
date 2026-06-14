@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/maps-geospatial-data/arcgis-com-2.md",
+  "id": "arcgis-com-2",
+  "name": "arcgis.com",
+  "url": "https://livingatlas.arcgis.com/wayback/?fbclid=IwAR3fKmK4S4V-PP5DzqxK9fDyuX3C1BvFWDUMljHf0wkbtpnM_CdlAtnvx0Q",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/arcgis-online.md",
+  "id": "arcgis-online",
+  "name": "ArcGIS Online",
+  "url": "https://www.arcgis.com",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/arcgis-wildfire-map.md",
+  "id": "arcgis-wildfire-map",
+  "name": "ArcGIS Wildfire Map",
+  "url": "https://www.arcgis.com/home/webmap/viewer.html?webmap=df8bcc10430f48878b01c96e907a1fc3#!",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/archieinitiative-com.md",
+  "id": "archieinitiative-com",
+  "name": "archieinitiative.com",
+  "url": "https://app.archieinitiative.com/map?mode=oil",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/archieinitiative-com-2.md",
+  "id": "archieinitiative-com-2",
+  "name": "archieinitiative.com",
+  "url": "https://app.archieinitiative.com/map?mode=power",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/atlas-co.md",
+  "id": "atlas-co",
+  "name": "atlas.co",
+  "url": "https://app.atlas.co/login",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/awesome-maps-ukraine.md",
+  "id": "awesome-maps-ukraine",
+  "name": "awesome-maps-ukraine",
+  "url": "https://github.com/Symbian9/awesome-maps-ukraine",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/baidu-com.md",
+  "id": "baidu-com",
+  "name": "baidu.com",
+  "url": "https://map.baidu.com/search/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/cesium-stories.md",
+  "id": "cesium-stories",
+  "name": "Cesium Stories",
+  "url": "https://cesium.com/ion/stories/viewer/?id=8be6f99c-0d4c-46ce-91a3-313e3cac62fe",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/covid-19-map.md",
+  "id": "covid-19-map",
+  "name": "COVID-19 Map",
+  "url": "https://coronavirus.jhu.edu/map.html",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/demo-geoguess-games.md",
+  "id": "demo-geoguess-games",
+  "name": "demo.geoguess.games",
+  "url": "https://demo.geoguess.games/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/digitaldigging-org.md",
+  "id": "digitaldigging-org",
+  "name": "digitaldigging.org",
+  "url": "https://www.digitaldigging.org/p/the-dawn-of-ai-powered-geolocation",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/digitalglobe.md",
+  "id": "digitalglobe",
+  "name": "DigitalGlobe",
+  "url": "https://discover.digitalglobe.com/",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/disputed-territories.md",
+  "id": "disputed-territories",
+  "name": "Disputed Territories",
+  "url": "http://metrocosm.com/disputed-territories-map.html",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/douwe-com.md",
+  "id": "douwe-com",
+  "name": "douwe.com",
+  "url": "https://douwe.com/projects/visited?region=world",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/maps-geospatial-data/earth.md",
+  "id": "earth",
+  "name": "Earth",
+  "url": "https://earth.nullschool.net/#current",
+  "category": "maps-geospatial-data",
+  "mp": "medium"
+ }
+]

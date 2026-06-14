@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/public-records/registrant-directory.md",
+  "id": "registrant-directory",
+  "name": "Registrant directory",
+  "url": "https://www.cpsbc.ca/public/registrant-directory",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/property-records/regrid-us-only.md",
+  "id": "regrid-us-only",
+  "name": "Regrid (US Only)",
+  "url": "https://regrid.com",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/rehold.md",
+  "id": "rehold",
+  "name": "rehold",
+  "url": "https://rehold.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/related-list.md",
+  "id": "related-list",
+  "name": "Related List",
+  "url": "http://relateoak2hkvdty6ldp7x67hys7pzaeax3hwhidbqkjzva3223jpxqd.onion.pet/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/research-rabbit.md",
+  "id": "research-rabbit",
+  "name": "Research Rabbit",
+  "url": "https://researchrabbitapp.com/home",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/resources-library-ubc-ca.md",
+  "id": "resources-library-ubc-ca",
+  "name": "Resources.library.ubc.ca",
+  "url": "https://resources.library.ubc.ca/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/royal-canadian-mounted-police.md",
+  "id": "royal-canadian-mounted-police",
+  "name": "Royal Canadian Mounted Police",
+  "url": "https://bloopbase.keybase.pub/ACAB/RCMP/index.html",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/company-profiles/rusprofile.md",
+  "id": "rusprofile",
+  "name": "Rusprofile",
+  "url": "https://www.rusprofile.ru/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/san-francisco-copwatch-database.md",
+  "id": "san-francisco-copwatch-database",
+  "name": "San Francisco CopWatch Database",
+  "url": "https://airtable.com/embed/shreS9yA6eWiJAmHZ/tbl0A1AfPBOaPNBhH?backgroundColor=blue",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/scholarcy.md",
+  "id": "scholarcy",
+  "name": "Scholarcy",
+  "url": "https://article-summarizer.scholarcy.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/scinapse-io.md",
+  "id": "scinapse-io",
+  "name": "Scinapse.io",
+  "url": "https://scinapse.io",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/scite-ai.md",
+  "id": "scite-ai",
+  "name": "Scite.ai",
+  "url": "https://scite.ai/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/scoot.md",
+  "id": "scoot",
+  "name": "Scoot",
+  "url": "http://www.scoot.co.uk",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/scotussearch-com.md",
+  "id": "scotussearch-com",
+  "name": "Scotussearch.com",
+  "url": "https://www.scotussearch.com/",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/search-for-open-information-documents.md",
+  "id": "search-for-open-information-documents",
+  "name": "Search for Open Information Documents",
+  "url": "https://www2.gov.bc.ca/gov/search?id=0882CD53C45A4AE1A42D5E22D8712AD8",
+  "category": "public-records",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/public-records/search-the-open-information-catalogue.md",
+  "id": "search-the-open-information-catalogue",
+  "name": "Search the Open Information Catalogue",
+  "url": "https://www2.gov.bc.ca/gov/search?id=9199E7BC9682482EB9EA0B6D6B8D386C",
+  "category": "public-records",
+  "mp": "medium"
+ }
+]

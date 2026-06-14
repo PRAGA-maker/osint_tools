@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/communities-forums/socialbrite.md",
+  "id": "socialbrite",
+  "name": "Socialbrite",
+  "url": "http://www.socialbrite.org",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/south-asian-american-digital-archive.md",
+  "id": "south-asian-american-digital-archive",
+  "name": "South Asian American Digital Archive",
+  "url": "https://www.saada.org/resources",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/spacebin.md",
+  "id": "spacebin",
+  "name": "Spacebin",
+  "url": "https://spaceb.in/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/sqoop.md",
+  "id": "sqoop",
+  "name": "Sqoop",
+  "url": "https://sqoop.com/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/stratfor-global-intelligence.md",
+  "id": "stratfor-global-intelligence",
+  "name": "Stratfor Global Intelligence",
+  "url": "http://www.stratfor.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/svbtle.md",
+  "id": "svbtle",
+  "name": "Svbtle",
+  "url": "https://svbtle.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/taxi-driver-co-uk.md",
+  "id": "taxi-driver-co-uk",
+  "name": "taxi-driver.co.uk",
+  "url": "http://www.taxi-driver.co.uk/phpBB2/",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tech-advisor-uk.md",
+  "id": "tech-advisor-uk",
+  "name": "Tech Advisor (UK)",
+  "url": "https://www.techadvisor.co.uk",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tech2-com.md",
+  "id": "tech2-com",
+  "name": "Tech2.com",
+  "url": "http://tech.firstpost.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/techcrunch.md",
+  "id": "techcrunch",
+  "name": "TechCrunch",
+  "url": "http://techcrunch.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/technorati-news.md",
+  "id": "technorati-news",
+  "name": "Technorati News",
+  "url": "http://technorati.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/techradar.md",
+  "id": "techradar",
+  "name": "TechRadar",
+  "url": "http://www.techradar.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/techrepublic.md",
+  "id": "techrepublic",
+  "name": "TechRepublic",
+  "url": "http://www.techrepublic.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/telemundo-network-television-united-states.md",
+  "id": "telemundo-network-television-united-states",
+  "name": "Telemundo Network Television (United States)",
+  "url": "http://www.telemundo.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/tencent-com.md",
+  "id": "tencent-com",
+  "name": "Tencent.com",
+  "url": "https://www.qq.com",
+  "category": "communities-forums",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/communities-forums/textbin.md",
+  "id": "textbin",
+  "name": "TextBin",
+  "url": "https://textbin.net/",
+  "category": "communities-forums",
+  "mp": "medium"
+ }
+]

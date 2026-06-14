@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-analytics-opt-out-extension-chrome.md",
+  "id": "google-analytics-opt-out-extension-chrome",
+  "name": "Google Analytics Opt-Out Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-chrome.md",
+  "id": "google-chrome",
+  "name": "Google Chrome",
+  "url": "http://www.google.com/chrome",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-dashboard-privacy-control-tool.md",
+  "id": "google-dashboard-privacy-control-tool",
+  "name": "Google Dashboard Privacy Control Tool",
+  "url": "https://www.google.com/dashboard",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-docs-voice-comments.md",
+  "id": "google-docs-voice-comments",
+  "name": "Google Docs Voice Comments",
+  "url": "https://chrome.google.com/webstore/detail/record-voice-comments-in/lbfofpndjldbnhnhibhmggblcbpoomon",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-forum-search.md",
+  "id": "google-forum-search",
+  "name": "Google Forum Search",
+  "url": "https://addons.thunderbird.net/en-us/firefox/addon/google-forum-search/",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-guide-to-removing-content-from-google.md",
+  "id": "google-guide-to-removing-content-from-google",
+  "name": "Google Guide to Removing Content From Google",
+  "url": "https://support.google.com/legal/troubleshooter/1114905?hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-image-search-extension-chrome.md",
+  "id": "google-image-search-extension-chrome",
+  "name": "Google Image Search Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/google-image-search/dbebidibfabmempkkbhabeehoncoaphf?hl=en-GB",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-maps-app-mobile-android.md",
+  "id": "google-maps-app-mobile-android",
+  "name": "Google Maps App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-maps-app-mobile-ios.md",
+  "id": "google-maps-app-mobile-ios",
+  "name": "Google Maps App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/google-maps/id585027354?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-password-alert-extension-chrome.md",
+  "id": "google-password-alert-extension-chrome",
+  "name": "Google Password Alert Extension (Chrome)",
+  "url": "https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-photos-management-app-mobile-android.md",
+  "id": "google-photos-management-app-mobile-android",
+  "name": "Google Photos Management App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-photos-management-app-mobile-ios.md",
+  "id": "google-photos-management-app-mobile-ios",
+  "name": "Google Photos Management App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/google-photos-store-search/id962194608?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-play-movies-and-tv-app-mobile-android.md",
+  "id": "google-play-movies-and-tv-app-mobile-android",
+  "name": "Google Play Movies and TV App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.google.android.videos",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-play-movies-and-tv-app-mobile-ios.md",
+  "id": "google-play-movies-and-tv-app-mobile-ios",
+  "name": "Google Play Movies and TV App (Mobile \u2013 iOS)",
+  "url": "https://itunes.apple.com/ca/app/google-play-movies-tv/id746894884?mt=8",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-play-store.md",
+  "id": "google-play-store",
+  "name": "Google Play Store",
+  "url": "https://play.google.com/store/apps?hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ },
+ {
+  "file": "library/tools/opsec-investigator-tooling/google-search-app-mobile-android.md",
+  "id": "google-search-app-mobile-android",
+  "name": "Google Search App (Mobile \u2013 Android)",
+  "url": "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox&hl=en",
+  "category": "opsec-investigator-tooling",
+  "mp": "low"
+ }
+]

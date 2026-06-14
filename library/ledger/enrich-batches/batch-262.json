@@ -1,0 +1,130 @@
+[
+ {
+  "file": "library/tools/search-engines/search-tools/pagodo-passive-google-dork.md",
+  "id": "pagodo-passive-google-dork",
+  "name": "pagodo - Passive Google Dork",
+  "url": "https://github.com/opsdisk/pagodo",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/palined-search.md",
+  "id": "palined-search",
+  "name": "Palined Search",
+  "url": "http://palined.com/search",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/parseek.md",
+  "id": "parseek",
+  "name": "Parseek",
+  "url": "https://www.parseek.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/pay-toronto-tickets.md",
+  "id": "pay-toronto-tickets",
+  "name": "Pay Toronto Tickets",
+  "url": "http://www.toronto.ca/pay-toronto-tickets/poatickets/poa_offices.htm",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/ph055a-osint-collection.md",
+  "id": "ph055a-osint-collection",
+  "name": "Ph055a/OSINT_Collection",
+  "url": "https://github.com/Ph055a/OSINT_Collection",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/plessas-digital-knowledge-base.md",
+  "id": "plessas-digital-knowledge-base",
+  "name": "Plessas Digital Knowledge Base",
+  "url": "https://knowledgebase.plessas.net/Digital-Knowledge-Base-78d4cbf53357458785120698da59373f",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/population-reference-bureau.md",
+  "id": "population-reference-bureau",
+  "name": "Population Reference Bureau",
+  "url": "https://www.prb.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/presearch-2.md",
+  "id": "presearch-2",
+  "name": "Presearch",
+  "url": "https://presearch.org",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/news-search/pressreader-com.md",
+  "id": "pressreader-com",
+  "name": "PressReader.com",
+  "url": "https://www.pressreader.com/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/pricegrabber.md",
+  "id": "pricegrabber",
+  "name": "PriceGrabber",
+  "url": "http://www.pricegrabber.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/pricerunner-europe.md",
+  "id": "pricerunner-europe",
+  "name": "PriceRunner (Europe)",
+  "url": "https://www.pricerunner.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/productreviews-australia.md",
+  "id": "productreviews-australia",
+  "name": "Productreviews (Australia)",
+  "url": "http://www.productreview.com.au",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/project-vote-smart.md",
+  "id": "project-vote-smart",
+  "name": "Project Vote Smart",
+  "url": "http://votesmart.org/",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/pronto-shopping-search-engine.md",
+  "id": "pronto-shopping-search-engine",
+  "name": "Pronto Shopping Search Engine",
+  "url": "http://www.pronto.com",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/property-services-regulatory-authority.md",
+  "id": "property-services-regulatory-authority",
+  "name": "Property Services Regulatory Authority",
+  "url": "https://www.psr.ie",
+  "category": "search-engines",
+  "mp": "medium"
+ },
+ {
+  "file": "library/tools/search-engines/property-value.md",
+  "id": "property-value",
+  "name": "Property Value",
+  "url": "https://www.propertyvalue.com.au",
+  "category": "search-engines",
+  "mp": "medium"
+ }
+]
