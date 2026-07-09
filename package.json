@@ -14,7 +14,7 @@
     "url": "git+https://github.com/lockfale/OSINT-Framework.git"
   },
   "author": "Justin Nordine (s0lray)",
-  "license": "",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lockfale/OSINT-Framework/issues"
   },

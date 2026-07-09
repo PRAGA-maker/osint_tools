@@ -3,6 +3,11 @@
 agents/
 .agents/
 
+# python artifacts #
+######################
+__pycache__/
+*.py[cod]
+
 # vendor packages #
 ######################
 public/js/vendor
