@@ -153494,7 +153494,7 @@
   {
     "id": "pimeyes-face-search-engine",
     "name": "PimEyes Face Search Engine",
-    "description": "High-coverage reverse face search investigations",
+    "description": "Use when you have a `face`/`image` of someone and want to find other web pages showing that face — returns matched images and the source-page links (paid to unlock).",
     "url": "https://pimeyes.com/en",
     "category": "image-video-face",
     "path": [
@@ -153502,36 +153502,49 @@
       "images",
       "search"
     ],
-    "bestFor": "High-coverage reverse face search investigations",
-    "input": "Face photo upload",
-    "output": "Matched face thumbnails and source-page links",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "High-coverage reverse face search — locating other photos of the same person across the web and the pages hosting them.",
+    "selectorsIn": [
+      "face",
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier shows blurred thumbnails proving matches exist but WITHOUT source links; you must pay (from ~$29.99/mo) to see the URLs that make results actionable. Effectively paywalled for investigative use.",
     "opsec": "active",
-    "opsecNote": "Face image is uploaded and processed by a third-party biometric search provider.",
+    "opsecNote": "You upload a biometric face image to a third-party facial-recognition provider that indexes 3.5B+ images and logs searches. Do not upload images of yourself or non-targets; use a clean/sock-puppet account, and be aware some jurisdictions restrict biometric processing.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "account-login",
+      "payment-wall-partial"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely-used, high-recall commercial face search — its results are real and among the best in coverage, but it is a controversial biometric service; treat each match as a lead to confirm at the source page.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "PimEyes",
+      "reverse face search"
+    ],
+    "tags": [
+      "face-search",
+      "facial-recognition",
+      "reverse-image"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/search/pimeyes-face-search-engine.md"
   },
   {
@@ -249562,47 +249575,56 @@
   },
   {
     "id": "medicalcouncil-ie",
-    "name": "medicalcouncil.ie",
-    "description": "OSINT tool: medicalcouncil.ie.",
+    "name": "Irish Medical Council – Check the Register",
+    "description": "Use when you have a doctor's `name` and want to verify Irish medical registration — returns registration status, specialty/qualifications and registration number.",
     "url": "https://www.medicalcouncil.ie/Public-Information/Check-the-Register/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that a doctor is registered to practise in Ireland and confirming their specialty, qualifications and registration status.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official public register maintained by the statutory regulator; no account or payment to check a doctor.",
+    "opsec": "passive",
+    "opsecNote": "A public statutory-register lookup; the subject is not notified and no login is required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Medical Council is Ireland's statutory medical regulator; its register is the authoritative record of who may practise medicine in Ireland.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mpts-uk-org"
+    ],
+    "aliases": [
+      "Irish Medical Council register",
+      "medicalcouncil.ie"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "ireland",
+      "medical"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/medicalcouncil-ie.md"
   },
   {
@@ -250799,47 +250821,57 @@
   },
   {
     "id": "mpts-uk-org",
-    "name": "mpts-uk.org",
-    "description": "OSINT tool: mpts-uk.org.",
+    "name": "MPTS – Medical Practitioners Tribunals",
+    "description": "Use when you have a UK doctor's `name` and want fitness-to-practise tribunal records — returns hearing listings and decision documents naming the doctor and outcome.",
     "url": "https://www.mpts-uk.org/hearings-and-decisions/medical-practitioners-tribunals",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding whether a UK doctor has faced a fitness-to-practise tribunal and reading the hearing outcomes and decision documents.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "document-id",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public hearings-and-decisions listings from the tribunal service; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Public tribunal records; the subject is not notified. These name real doctors and disciplinary findings — handle the sensitive personal data responsibly and stick to legitimate investigative use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The MPTS is the statutory tribunal service (part of the UK GMC framework) that adjudicates doctors' fitness to practise; its published decisions are authoritative primary records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "medicalcouncil-ie"
+    ],
+    "aliases": [
+      "Medical Practitioners Tribunal Service",
+      "MPTS hearings"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk",
+      "medical",
+      "disciplinary"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/mpts-uk-org.md"
   },
   {
@@ -332122,13 +332154,13 @@
   {
     "id": "memory-lol",
     "name": "memory.lol",
-    "description": "Historical Twitter/X username and screen-name change history lookup.",
+    "description": "Use when you have a Twitter/X `username` and want that account's past handles/screen-name history — returns prior usernames and the dates they were observed.",
     "url": "https://memory.lol/app/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Resolving old Twitter handles and tracking handle changes for an account",
+    "bestFor": "Resolving old Twitter handles and mapping an account's screen-name change history so a renamed/abandoned account can still be traced.",
     "selectorsIn": [
       "username"
     ],
@@ -332136,15 +332168,16 @@
       "username",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free. Public access returns handle history observed in the last ~60 days of data; the full 12-year, ~half-billion-name dataset is reserved for a vetted group (researchers/journalists/activists) who authenticate via GitHub/Google.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query an archive derived from the Internet Archive's Twitter Stream Grab and Wayback Machine, not the live account, so the subject is not notified. No login needed for basic use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Well-known handle-history tool (in the Social-Media-OSINT collection).",
+    "trustNote": "Well-known handle-history service by Travis Brown, built from Internet Archive data. Authoritative for observed name changes, but coverage depends on what the archive captured.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -332153,13 +332186,19 @@
     "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "twitter-advanced-search"
+    ],
+    "aliases": [
+      "memory.lol",
+      "Twitter handle history"
+    ],
     "tags": [
       "twitter",
       "handle-history"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/memory-lol.md"
   },
@@ -349959,8 +349998,8 @@
   },
   {
     "id": "twitter-advanced-search",
-    "name": "Twitter Advanced Search",
-    "description": "Targeted discovery of public tweets with complex filters",
+    "name": "Twitter/X Advanced Search",
+    "description": "Use when you have a `username`, `name` or keywords and want precisely-filtered public posts — returns tweets narrowed by account, date, location and content.",
     "url": "https://twitter.com/search-advanced",
     "category": "social-networks",
     "path": [
@@ -349968,34 +350007,50 @@
       "twitter",
       "search"
     ],
-    "bestFor": "Targeted discovery of public tweets with complex filters",
-    "input": "Search operators and filter parameters (keywords, accounts, dates, media flags)",
-    "output": "Filtered tweet result set matching the applied criteria",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Pinpoint discovery of specific public tweets using native operators (from/to account, exact dates, phrases, media, location).",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free native feature. X now generally requires being logged in to run searches, so a (free) account is effectively needed.",
     "opsec": "passive",
-    "opsecNote": "Uses native search features without direct interaction with target accounts.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching does not interact with target accounts or notify them. Because X requires login, searches occur under whatever account you're signed into — use a sock-puppet account, not your real one, and never follow/like from it while investigating.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Twitter/X's own first-party search — the authoritative source for its public posts. Coverage of older tweets can be incomplete, and login is now required.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [
+      "memory-lol"
+    ],
+    "aliases": [
+      "X Advanced Search",
+      "Twitter search operators"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "advanced-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/search/twitter-advanced-search.md"
   },
   {
@@ -351419,45 +351474,55 @@
   },
   {
     "id": "twstalker-com",
-    "name": "twstalker.com",
-    "description": "OSINT tool: twstalker.com.",
+    "name": "TwStalker",
+    "description": "Use when you have a Twitter/X `username` and want to view its public profile and tweets without logging in — returns the public profile, tweets and media anonymously.",
     "url": "https://twstalker.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously browsing a public Twitter/X profile, its tweets, media and hashtags without an X account or login.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free anonymous viewer; no account or payment. Reliability varies as X changes API/data access, and it periodically migrates to mirror domains.",
+    "opsec": "passive",
+    "opsecNote": "You view public tweets through a third-party viewer, so no view is attributed to you and the subject is not notified — a passive alternative to browsing from your own (login-required) X account. Requests still pass through the third-party site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party Twitter/X mirror of unclear ownership. It mirrors public content only; treat what it shows as real but confirm against X for anything decisive, and expect intermittent downtime/mirror moves.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "twitter-advanced-search"
+    ],
+    "aliases": [
+      "twstalker",
+      "Twitter web viewer"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "anonymous-viewer"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twstalker-com.md"
   },
   {
@@ -373405,13 +373470,13 @@
   {
     "id": "socialscan",
     "name": "socialscan",
-    "description": "Checks email/username availability across online platforms.",
+    "description": "Use when you have a `username` or `email` and want to know which platforms it is registered on — returns per-platform available/taken/invalid status (a social-profile map).",
     "url": "https://pypi.org/project/socialscan/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, false-positive-free checking of whether a username/email is taken across many platforms by querying their registration endpoints directly.",
     "selectorsIn": [
       "username",
       "email"
@@ -373419,25 +373484,37 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (MPL 2.0). No account or API key; you run it locally via pip.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It queries platforms' registration/availability endpoints from your machine, not the target. Route through a proxy (supported) and a sock-puppet network context for sensitive work, since you are hitting many services in quick succession.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source tool by iojw (latest 2.0.1, Jan 2024). Because it checks registration endpoints rather than profile pages, it avoids the false positives common to name-scanners — but individual platform checks break when sites change.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "epieos"
+    ],
+    "aliases": [
+      "socialscan pip"
+    ],
+    "tags": [
+      "username",
+      "email",
+      "account-existence"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/socialscan.md"
   },
