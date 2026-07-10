@@ -151957,56 +151957,6 @@
     "_file": "library/tools/image-video-face/images/ocr/online-ocr.md"
   },
   {
-    "id": "open-intelligence",
-    "name": "open-intelligence",
-    "description": "Processes security camera footage with object detection, face detection, and license-plate recognition.",
-    "url": "https://github.com/norkator/open-intelligence",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "Extracting faces, objects, and vehicle plates from CCTV/security-camera imagery",
-    "selectorsIn": [
-      "image",
-      "face",
-      "vehicle-plate"
-    ],
-    "selectorsOut": [
-      "face",
-      "vehicle-plate",
-      "physical-description"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "docker",
-    "trust": "community",
-    "trustNote": "187 stars; self-hosted CCTV analysis stack.",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": true,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "face-detection",
-      "cctv",
-      "license-plate",
-      "object-detection",
-      "video-analysis"
-    ],
-    "source": "gh-topic-intelligence-gathering",
-    "lastVerified": "",
-    "enrichment": "full",
-    "_file": "library/tools/image-video-face/open-intelligence.md"
-  },
-  {
     "id": "openi-nlm-nih-gov",
     "name": "openi.nlm.nih.gov",
     "description": "Reverse image search engine for scientific and medical images",
@@ -171360,37 +171310,52 @@
   {
     "id": "instaanonym",
     "name": "InstaAnonym",
-    "description": "OSINT tool: InstaAnonym.",
+    "description": "Use when you have an Instagram `username` and want to view that account's stories/profile media anonymously (without your account appearing in their viewers) — returns `image`, `social-profile` content.",
     "url": "https://t.me/instaanonymbot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Viewing a public Instagram account's stories and posts anonymously via a Telegram bot, leaving no viewer trace on the target.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot (some such bots gate faster delivery or highlights behind a paid tier). Requires a Telegram account. These bots rotate/disappear frequently — verify it still responds before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "The point of the bot is anonymity — it fetches Instagram media on its own infrastructure and re-sends it to you, so the target never sees your name/IP in their story viewers. But you ARE trusting a third-party bot with your query; use a sock-puppet Telegram account, and assume the bot operator logs which usernames you look up.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "An anonymous-Instagram-viewer Telegram bot; the general mechanism is well-established, but this specific bot is not verified live and such bots are frequently replaced — treat identity/availability as unconfirmed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "InstaAnonym bot",
+      "instaanonymbot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "instagram",
+      "anonymous-viewer"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/instaanonym.md"
   },
   {
@@ -174745,37 +174710,52 @@
   {
     "id": "telegram-channel-joiner",
     "name": "Telegram Channel Joiner",
-    "description": "OSINT tool: Telegram Channel Joiner.",
+    "description": "Use when you have a list of Telegram channel `username`s/links and want to bulk-join them from a sock-puppet account for monitoring — returns membership/access to those channels' content.",
     "url": "https://github.com/spmedia/Telegram-Channel-Joiner",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Automating a sock-puppet Telegram account into many channels/groups (rate-limit-safe) to set up bulk monitoring.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (GitHub). Requires your own Telegram API credentials (free from my.telegram.org) and a Telegram account.",
+    "opsec": "active",
+    "opsecNote": "This joins channels using a real Telegram account, which becomes visible in each channel's member list and to admins. Use a dedicated sock-puppet account and number, never your own. The tool's built-in 300–600s random delay between joins is essential to avoid Telegram flood-bans — do not remove it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community OSINT/CTI utility by a known practitioner (spmedia); uses the official Pyrogram library, so risk is account-ban, not malware — but review the code before running.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "Telegram Channel Joiner",
+      "spmedia channel joiner"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "monitoring",
+      "sock-puppet"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-channel-joiner.md"
   },
   {
@@ -244754,46 +244734,51 @@
   {
     "id": "labcfrontdoor-co-uk",
     "name": "labcfrontdoor.co.uk",
-    "description": "OSINT tool: labcfrontdoor.co.uk.",
+    "description": "Use when you have a UK `address`/postcode or trade `employer-org` and want to find the registered \"competent person\" building tradespeople there — returns `employer-org` (business), `address`, and trade/registration status.",
     "url": "https://labcfrontdoor.co.uk/find-a-competent-person",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up UK building tradespeople registered under a Competent Person Scheme by postcode, business name, or trade.",
     "selectorsIn": [
-      "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register lookup; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public professional-register search — you query LABC's directory, nothing reaches the tradesperson/subject. No login; standard browser hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by LABC (Local Authority Building Control), the body coordinating council building-control services in England & Wales; the register reflects official Competent Person Scheme membership.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "LABC FrontDoor",
+      "Find a Competent Person"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk-trades-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/labcfrontdoor-co-uk.md"
   },
   {
@@ -245492,45 +245477,53 @@
   },
   {
     "id": "legacy",
-    "name": "Legacy",
-    "description": "OSINT tool: Legacy.",
+    "name": "Legacy.com",
+    "description": "Use when you have a `name` and want to find a published obituary/memorial to confirm a death and harvest family detail — returns death date, `dob`/age, `associate` (named survivors), and hometown/location.",
     "url": "https://www.legacy.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "The largest aggregator of US/international newspaper obituaries — confirming deaths and extracting family relationships.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "associate",
+      "name",
       "dob",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read obituaries and guest-book condolences; optional paid extras (flowers, permanent memorials) exist but are not needed for research.",
+    "opsec": "passive",
+    "opsecNote": "Reading obituaries is passive and touches only Legacy.com — nothing reaches any living relative. Avoid signing a guest book or leaving condolences from an attributable identity, as those are public and traceable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Aggregates obituaries hosted with thousands of real newspapers and funeral homes; the underlying notices are primary published sources, though family-submitted detail can contain errors.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Legacy.com",
+      "Legacy obituaries"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "obituary"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/legacy.md"
   },
   {
@@ -256111,47 +256104,52 @@
   },
   {
     "id": "planning-org-uk",
-    "name": "planning.org.uk",
-    "description": "OSINT tool: planning.org.uk.",
+    "name": "planning.org.uk (Planning Alerts)",
+    "description": "Use when you have a UK `address`/postcode and want planning-application activity there — returns `address` (application sites), `associate` (applicant/agent names), and `employer-org` (developers/architects).",
     "url": "https://planning.org.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Surfacing UK planning applications near a postcode to reveal property works, owners, applicants, and agents.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "associate",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free email alerts and searches for applications within a ¼-mile radius of a chosen postcode; larger alert areas carry a small monthly charge. Underlying application data is public.",
+    "opsec": "passive",
+    "opsecNote": "Searching planning applications is passive and touches only the alerts service / council data — nothing reaches the property owner. Signing up for alerts requires an email; use a research address, not a personal one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Aggregates official Local Planning Authority application data (241 UK authorities); the notices themselves are public-record council submissions.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Planning Alerts",
+      "planning.org.uk"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "planning-applications"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/planning-org-uk.md"
   },
   {
@@ -349055,35 +349053,49 @@
   {
     "id": "vimeo-search-tool",
     "name": "Vimeo search tool",
-    "description": "OSINT tool: Vimeo search tool.",
+    "description": "Use when you have a `username`, `name`, or keyword and want to build advanced Vimeo searches for people and videos — returns `social-profile`s (Vimeo channels) and matching videos.",
     "url": "https://www.aware-online.com/en/osint-tools/vimeo-search-tool/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A free guided query-builder for searching Vimeo users and videos by name, username, or keyword.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free tool from Aware Online Academy; no account. It constructs Vimeo searches — actual results and coverage come from Vimeo itself.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The builder is passive (it just assembles a query). Following results into Vimeo is ordinary browsing; a sock-puppet browser is prudent but no Vimeo login is required to view public content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Provided by Aware Online Academy, a reputable OSINT training company; it is a convenience query-builder, so result quality is Vimeo's, not theirs.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Aware Online Vimeo search tool"
+    ],
+    "tags": [
+      "vimeo",
+      "video-search",
+      "query-builder"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/vimeo-search-tool.md"
   },
   {
