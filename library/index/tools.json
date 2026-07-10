@@ -106930,28 +106930,29 @@
   {
     "id": "mailcat",
     "name": "Mailcat",
-    "description": "Finds existing email addresses for a username via API and SMTP verification across providers.",
+    "description": "Use when you have a `username` and want to find which email providers it has accounts on — returns existing email addresses via API and SMTP verification across providers.",
     "url": "https://github.com/sharsil/mailcat",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "Discovering which email providers a username has accounts on",
+    "bestFor": "Enumerating a username into likely existing email addresses across many providers at once.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GitHub); no account or payment. Run locally in Python.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "Mailcat verifies addresses by touching mail-provider APIs and SMTP servers — an ACTIVE probe. Providers may rate-limit, block, or log your IP, and SMTP checks are increasingly unreliable as providers harden against them. The mailbox owner is not notified, but your infrastructure is querying theirs — route through a sock-puppet IP and don't hammer.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Popular email-discovery tool (890+ stars).",
+    "trustNote": "A popular open-source email-discovery tool; effective but SMTP-based verification is inherently noisy (false positives/negatives) as major providers block or fake responses.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -106960,14 +106961,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "mailcat",
+      "sharsil/mailcat"
+    ],
     "tags": [
       "email-enumeration",
       "smtp",
-      "python"
+      "python",
+      "cli"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/mailcat.md"
   },
@@ -174143,41 +174148,53 @@
   {
     "id": "sogou-wechat-search",
     "name": "Sogou WeChat Search",
-    "description": "Discovering public WeChat posts and organization presence",
+    "description": "Use when you have a Chinese `name`, keyword or account and want public WeChat content — returns indexed WeChat official-account articles and account search results.",
     "url": "https://weixin.sogou.com/",
     "category": "messaging",
     "path": [
       "messaging",
       "wechat-line"
     ],
-    "bestFor": "Discovering public WeChat posts and organization presence",
-    "input": "Chinese keywords, account names, or article titles",
-    "output": "Indexed WeChat article pages and related account search results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching public WeChat official-account articles and accounts (the main window into otherwise-closed WeChat).",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free search interface operated by Sogou (a Tencent-affiliated search engine); no account needed to search public articles.",
     "opsec": "passive",
-    "opsecNote": "Queries Sogou index results and does not require direct access to target accounts.",
+    "opsecNote": "You query Sogou's index of public WeChat content, not WeChat itself — no WeChat account or contact is needed and the subject isn't notified. Searches hit a Chinese search engine that logs queries; use a sock-puppet browser, and consider that Chinese platforms may apply censorship to results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The de-facto public search for WeChat (Sogou has a partnership giving it WeChat indexing); coverage is limited to public official-account content, not private chats or personal moments, and is subject to Chinese censorship.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "cn"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Sogou Weixin",
+      "weixin.sogou.com",
+      "搜狗微信"
+    ],
+    "tags": [
+      "wechat",
+      "weixin",
+      "china",
+      "chinese-web"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/wechat-line/sogou-wechat-search.md"
   },
   {
@@ -212347,41 +212364,52 @@
   {
     "id": "webmii",
     "name": "Webmii",
-    "description": "Assessing online visibility and web footprint",
+    "description": "Use when you have a `name` and want a web-footprint overview — returns a visibility score plus social profiles, images, videos and news mentions tied to that name.",
     "url": "https://webmii.com/",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Assessing online visibility and web footprint",
-    "input": "First and last name",
-    "output": "Web visibility score, social profiles, images, videos, news mentions",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick web-visibility overview of a name — aggregating profiles, images and news into one footprint view.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to use, no registration; searches public web data only.",
     "opsec": "passive",
-    "opsecNote": "No registration required; searches public web data only.",
+    "opsecNote": "WebMii aggregates public search results — the subject is not contacted and nothing is posted. You disclose the searched name to WebMii; use a sock-puppet browser. Results are a convenience aggregation of the open web, not private data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A people-visibility aggregator that surfaces public web results by name; convenient for a first pass, but it's a third-party scraper of open sources with no verification of matches.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WebMii",
+      "webmii.com"
+    ],
+    "tags": [
+      "people-search",
+      "web-footprint",
+      "name-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/webmii.md"
   },
   {
@@ -213804,13 +213832,13 @@
   {
     "id": "checkwa",
     "name": "checkwa",
-    "description": "Check WhatsApp number status/availability and pull profile data.",
+    "description": "Use when you have a `phone` number and want to know if it is on WhatsApp — returns WhatsApp-registration status and, where public, the profile photo/handle.",
     "url": "https://checkwa.online",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Verifying if a phone number is on WhatsApp and viewing profile photo",
+    "bestFor": "Verifying whether a phone number has an active WhatsApp account (and viewing a public profile photo).",
     "selectorsIn": [
       "phone"
     ],
@@ -213818,31 +213846,35 @@
       "social-profile",
       "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free test lookups available; bulk validation and REST API access are paid (the service is pitched at marketing/lead validation).",
+    "opsec": "passive",
+    "opsecNote": "CheckWA performs the WhatsApp check on its own infrastructure (\"not made aware,\" per the site), so the query is not obviously tied to your personal WhatsApp account and the number's owner isn't directly notified by you. Still, you disclose the number to a third party and are probing a person's messaging presence — use a sock-puppet browser and check sparingly. Prefer this over adding the number to your own WhatsApp contacts, which IS attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party WhatsApp/number-validation service oriented at bulk marketing; results depend on WhatsApp exposure and the vendor's method, which can break as WhatsApp changes.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CheckWA",
+      "checkwa.online"
+    ],
     "tags": [
       "whatsapp",
       "phone-lookup",
       "number-check"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/phone/checkwa.md"
   },
@@ -218969,35 +219001,49 @@
   {
     "id": "who-called-me",
     "name": "Who Called Me",
-    "description": "OSINT tool: Who Called Me.",
+    "description": "Use when you have a `phone` number and want community reports about it — returns user comments/ratings flagging spam, scam or the likely caller identity.",
     "url": "https://www.whocalledme.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Crowd-sourced reputation and spam/scam reports for an unknown phone number.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search and read community reports; monetised by ads, with some deeper-lookup upsells to paid brokers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You read a public community database — no call/text reaches the number and the owner isn't notified. You disclose the number to the site; use a sock-puppet browser. Reports are user-submitted opinions, not verified facts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Crowd-sourced caller-reputation site; useful for spam/scam signal but comments are anonymous and unverified, so attribution is soft.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WhoCalledMe",
+      "whocalledme.com"
+    ],
+    "tags": [
+      "reverse-phone",
+      "caller-id",
+      "spam-reports"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/who-called-me.md"
   },
   {
@@ -235223,46 +235269,54 @@
   {
     "id": "funeral-notices-co-uk",
     "name": "funeral-notices.co.uk",
-    "description": "OSINT tool: funeral-notices.co.uk.",
+    "description": "Use when you have a `name` and want a UK death/funeral notice — returns date of death, location, funeral details and named family members.",
     "url": "https://funeral-notices.co.uk/national",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching UK funeral and death notices to confirm a death and harvest family/associate links.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "dob",
+      "associate",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search notices and leave tributes; placing a notice has paid options (public vs funeral-director rates).",
+    "opsec": "passive",
+    "opsecNote": "You search a public notices archive — no notification reaches anyone. Notices are published by families and funeral directors and are inherently public. Use a sock-puppet browser; the subject matter is bereavement, so handle surviving-relative details with discretion.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large UK funeral-notices aggregator (5M+ notices) fed by newspapers and funeral directors; the notices come from vetted publishers, though family-submitted detail can vary.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Funeral Notices",
+      "funeral-notices.co.uk"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "obituaries",
+      "death-records",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/funeral-notices-co-uk.md"
   },
   {
@@ -252189,35 +252243,50 @@
   {
     "id": "oklahoma-voters-search",
     "name": "Oklahoma Voters Search",
-    "description": "OSINT tool: Oklahoma Voters Search.",
+    "description": "Use when you have a `name` in Oklahoma and want voter-registration details — returns registration data (address/precinct) from Oklahoma voter records.",
     "url": "http://oklahomadata.com/voters.asp",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up an Oklahoma resident's voter registration by name to confirm an address.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "name"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free third-party site presenting Oklahoma voter data; hosted on GoDaddy and periodically under maintenance (noted maintenance in 2025).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public-records lookup — you query a voter database, not the subject, and nobody is notified. Voter registration is public record in Oklahoma. Use a sock-puppet browser; this is a third-party presentation of state data, not the official election board site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party/hobbyist site republishing Oklahoma voter-registration data, not the official State Election Board; data may lag the official rolls and the site's uptime is inconsistent.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Oklahoma voter lookup",
+      "oklahomadata.com voters"
+    ],
+    "tags": [
+      "voter-records",
+      "oklahoma",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/oklahoma-voters-search.md"
   },
   {
@@ -328342,37 +328411,54 @@
   {
     "id": "mixi-japan",
     "name": "Mixi (Japan)",
-    "description": "OSINT tool: Mixi (Japan).",
+    "description": "Use when you have a Japanese `name`/`username` and want a Mixi social-networking profile — returns profile, community memberships and diary/activity for this Japan-centric network.",
     "url": "https://mixi.jp",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Investigating a subject's presence on Mixi, a long-running Japan-focused social network.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; viewing most member content requires a (free) Mixi account, and Japanese phone/registration may be needed to sign up.",
+    "opsec": "active",
+    "opsecNote": "Mixi is a login-gated, relationship-oriented Japanese network — much content needs an account, and viewing profiles from a logged-in account can leave \"footprints\" (ashiato) visible to the member. Use a dedicated sock-puppet account, and be aware footprint-visibility can alert the subject. Never use a real/attributable account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A major, long-established Japanese social network (Mixi, Inc.); authentic platform, but access is gated and Japanese-language, and its user base has declined from its peak.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "jp"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Mixi",
+      "mixi.jp",
+      "ミクシィ"
+    ],
     "tags": [
-      "major-social-networks"
+      "major-social-networks",
+      "japan",
+      "japanese-web"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/mixi-japan.md"
   },
   {
@@ -340546,35 +340632,50 @@
   {
     "id": "thread-reader",
     "name": "Thread Reader",
-    "description": "OSINT tool: Thread Reader.",
+    "description": "Use when you have an X/Twitter thread `social-profile` URL and want it as one readable, preservable page — returns the full unrolled thread text and media in order.",
     "url": "https://threadreaderapp.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Unrolling and preserving multi-tweet X/Twitter threads into a single readable page.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to unroll and read threads; a paid tier adds saving/search/export and removes limits.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You submit a public tweet/thread URL; Thread Reader fetches and renders it. The author isn't notified by the unroll itself (though invoking the @threadreaderapp bot in a reply IS a public, visible action — prefer pasting the URL on the site). Use a sock-puppet browser and preserve a copy, since threads can be deleted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running, widely used thread-unroll service; reliable for reading/preserving public X threads, but a third party dependent on X's API access.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Thread Reader App",
+      "threadreaderapp.com"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "thread-unroll",
+      "preservation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/thread-reader.md"
   },
   {
@@ -366195,42 +366296,51 @@
   {
     "id": "instant-username",
     "name": "Instant Username",
-    "description": "OSINT tool: Instant Username.",
+    "description": "Use when you have a `username` and want a fast real-time check of where it exists — returns which of hundreds of sites have that handle registered.",
     "url": "https://instantusername.com",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, live username availability/existence checking across hundreds of sites as you type.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool, no signup; results appear live as it checks each site.",
+    "opsec": "passive",
+    "opsecNote": "Checks run from the service, presenting results quickly; the subject's platforms are queried by the tool, not obviously by you, and no one is notified. You disclose the handle to a third party; use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular fast username checker (recommended across many OSINT lists); optimised for speed, so it reports existence/availability but, like all such tools, can misclassify sites with soft responses.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "InstantUsername",
+      "instantusername.com",
+      "Instant Username Search"
+    ],
     "tags": [
-      "username"
+      "username",
+      "account-discovery",
+      "reverse-username"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/instant-username.md"
   },
   {
