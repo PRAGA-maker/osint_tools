@@ -36433,28 +36433,31 @@
   {
     "id": "pullpush-reddit-archive-api",
     "name": "PullPush (Reddit archive API)",
-    "description": "Reddit archive API (Pushshift successor) returning historical/deleted user posts and comments.",
-    "url": "https://api.pullpush.io/",
+    "description": "Use when you have a Reddit `username` (or keyword/subreddit) and want their full comment/post history including deleted/removed content — returns archived Reddit activity.",
+    "url": "https://pullpush.io/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "Recover deleted/removed Reddit posts and comments for a user (Pushshift successor).",
+    "bestFor": "Recovering a Reddit user's complete posting history — including deleted, removed or edited posts and comments — via the Pushshift-successor archive.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "metadata-exif",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public JSON API (rate-limited); no account or key required for normal use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query PullPush's archive, not Reddit or the user, so the subject is never notified. Requests go to a third-party archive host; use a clean session but there's no target-side footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "The widely-used successor to Pushshift for Reddit archival; broadly reliable, but coverage can have gaps/lag and archived copies are snapshots — cross-check against live Reddit where possible.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -36463,8 +36466,11 @@
     "api": true,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
-      "PullPush"
+      "PullPush",
+      "pullpush.io",
+      "Pushshift successor"
     ],
     "tags": [
       "reddit",
@@ -36473,7 +36479,7 @@
       "pushshift"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/pullpush-reddit-archive-api.md"
   },
@@ -152749,46 +152755,55 @@
   {
     "id": "phototracker-lite",
     "name": "PhotoTracker Lite",
-    "description": "Browser extension for tracking online usage of images",
+    "description": "Use when you have an `image` and want to reverse-search it across Google, Yandex, Bing and TinEye at once — returns matches from multiple engines via a browser right-click.",
     "url": "https://phototracker.ru/lite/en",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "One-click multi-engine reverse image search (Google, Yandex, Bing, TinEye) from a browser context menu.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
       "image",
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free browser extension (Chrome/Firefox); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It hands the image to Google/Yandex/Bing/TinEye, whose logging applies; the subject isn't contacted. As a browser extension it can see page content — install it in a dedicated/sock-puppet browser profile, and be aware the developer is Russian-hosted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A long-standing, widely-used reverse-image extension; it just fans your query out to established engines, so match quality is theirs — but as with any extension, mind its permissions.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-reverse-image-search",
+      "yahoo-image-search-2"
+    ],
+    "aliases": [
+      "PhotoTracker Lite",
+      "phototracker.ru"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
+      "reverse-image",
+      "browser-extension",
+      "multi-engine"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/phototracker-lite.md"
   },
@@ -207305,46 +207320,52 @@
   {
     "id": "manycontacts-mail-check",
     "name": "ManyContacts Mail Check",
-    "description": "OSINT tool: ManyContacts Mail Check.",
-    "url": "https://www.manycontacts.com/en/mail-check marketvisual",
+    "description": "Use when you have an `email` and want to know if it's valid/deliverable before pivoting on it — returns an existence/deliverability verdict, not a person profile.",
+    "url": "https://www.manycontacts.com/en/mail-check",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly validating whether an email address exists/is deliverable (syntax, domain, mailbox) to confirm a lead is worth pursuing.",
     "selectorsIn": [
-      "name"
+      "email"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single-email check in the browser; no account needed for a basic lookup.",
+    "opsec": "passive",
+    "opsecNote": "Validation is done server-side by ManyContacts against the mail domain (SMTP-level checks), not by you emailing the target, so the person isn't messaged. Still, you disclose the address to a third-party vendor — use a sock-puppet context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "A marketing/email tool, not a people-search despite the seed category; deliverability verdicts are heuristic (catch-all domains and greylisting cause false positives/unknowns), so treat \"valid\" as probabilistic.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com"
+    ],
+    "aliases": [
+      "ManyContacts Mail Check",
+      "manycontacts.com mail check"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "email-verification",
+      "deliverability"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/manycontacts-mail-check.md"
   },
   {
@@ -207928,48 +207949,59 @@
   },
   {
     "id": "mylife-compilation-and-search-engine",
-    "name": "MyLife Compilation & Search Engine",
-    "description": "Public reputation platform that allows anonymous people search",
-    "url": "http://www.mylife.com",
+    "name": "MyLife",
+    "description": "Use when you have a US `name` and want an aggregated profile with address, phone, age and relatives — returns contact and background leads, but treat its \"reputation\" data skeptically.",
+    "url": "https://www.mylife.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "US aggregated people-search — surfacing addresses, phones, age, relatives and a profile summary from public-records compilation.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
       "address",
       "phone",
-      "associate"
+      "associate",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search shows a teaser profile (name, age, city, relatives, a \"reputation score\"); full contact/background reports require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Queries hit MyLife's aggregated data, not the subject — but note MyLife also notifies people that someone searched them and markets \"reputation\" repair, so a subject monitoring their own MyLife page could infer interest. Use a sock-puppet context; don't create an account tied to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "MyLife has a poor consumer reputation (FTC settlement over deceptive practices); its \"reputation scores\" are marketing, not fact. The underlying public-records contact data can be useful, but verify everything.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "searchbug",
+      "411-us",
+      "nuwber"
+    ],
+    "aliases": [
+      "mylife.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "us"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/mylife-compilation-and-search-engine.md"
   },
@@ -217753,42 +217785,53 @@
   {
     "id": "phunter",
     "name": "Phunter",
-    "description": "Phone number #osint command line #python tool. Gather different info: operator, possible(s) location(s), line type, reputation, various scraped information, spammer or not, connect to amazon or not",
+    "description": "Use when you have a `phone` number and want a one-shot OSINT profile of it — returns country/operator, line type, location hints, reputation and linked-account signals.",
     "url": "https://github.com/N0rz3/Phunter",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Command-line phone-number reconnaissance — carrier/line-type/location plus spam reputation and checks for accounts linked to the number.",
     "selectorsIn": [
-      "geolocation",
       "phone"
     ],
     "selectorsOut": [
       "geolocation",
-      "phone"
+      "metadata-exif",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python CLI). Some enrichment relies on scraping public sources; no paid key required for core use.",
+    "opsec": "passive",
+    "opsecNote": "Most lookups are against reference/reputation data and public sources, not the number's owner, so it's largely passive. Some modules probe whether the number is registered on services (e.g. account-existence checks) — those can, in principle, be visible to the platform; run from a sock-puppet context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community Python tool (N0rz3) that wraps libphonenumber-style parsing plus scraped reputation/account signals; parsing is reliable, scraped signals vary in accuracy and can break as sources change.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "numberingplans-com",
+      "telegram-finder"
+    ],
+    "aliases": [
+      "N0rz3/Phunter"
+    ],
     "tags": [
-      "Phone numbers"
+      "Phone numbers",
+      "phone-osint",
+      "cli"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/phone/phunter.md"
   },
@@ -218006,44 +218049,53 @@
   {
     "id": "receive-sms-online-info",
     "name": "receive-sms-online.info",
-    "description": "OSINT tool: receive-sms-online.info.",
+    "description": "Use when you have a `phone` number and want to check if it's a public throwaway SMS line — or need a burner number for sock-puppet signups; returns disposable-number status.",
     "url": "https://www.receive-sms-online.info/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising a number as a public disposable/temporary SMS line, and sourcing burner numbers for account verification.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no registration; a rotating pool of public numbers (USA, UK, Germany, France, Spain, Romania, Russia and others) for receiving SMS in-browser.",
+    "opsec": "passive",
+    "opsecNote": "Checking whether a target's number appears in the public inbox list is passive — you never contact the target. If you USE one of these numbers, every SMS to it is public and readable by anyone; never route password resets, banking, or anything sensitive through it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A real, functioning public temp-SMS site; it holds no personal identity data, so its OSINT value is classification (throwaway?) and sock-puppet support, not lookup.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "freephonenum-com",
+      "numberingplans-com"
+    ],
+    "aliases": [
+      "receive-sms-online.info"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "disposable-number",
+      "temp-sms",
+      "sockpuppet"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/receive-sms-online-info.md"
   },
   {
@@ -243556,45 +243608,58 @@
   },
   {
     "id": "iowa-judicial-branch",
-    "name": "Iowa Judicial Branch",
-    "description": "OSINT tool: Iowa Judicial Branch.",
-    "url": "https://www.iowacourts.gov",
+    "name": "Iowa Courts Online Search",
+    "description": "Use when you have a `name` and want Iowa state court cases — returns civil, criminal, traffic and other case records with parties, charges and document IDs.",
+    "url": "https://www.iowacourts.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Iowa state trial-court records by party name to find a person's civil, criminal and traffic cases.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online case search via Iowa Courts Online; registration may be required for the full search portal, and some documents/details are access-controlled.",
+    "opsec": "passive",
+    "opsecNote": "You query an official public court system, not the subject, so nobody is alerted. Court data is sensitive personal information — use lawfully and avoid unnecessary re-publication.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Iowa Judicial Branch case-search system; authoritative for Iowa state courts, though it covers Iowa only (not federal cases or other states).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us-ia"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "court-electronic-records-pacer"
+    ],
+    "aliases": [
+      "Iowa Courts Online",
+      "iowacourts.gov",
+      "Iowa Judicial Branch"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "iowa",
+      "legal"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/iowa-judicial-branch.md"
   },
   {
@@ -263618,47 +263683,60 @@
   },
   {
     "id": "sra-org-uk",
-    "name": "sra.org.uk",
-    "description": "OSINT tool: sra.org.uk.",
+    "name": "SRA Solicitors Register",
+    "description": "Use when you have a `name` or firm and want to verify a solicitor in England & Wales — returns regulatory status, practising history and firm/employer details.",
     "url": "https://www.sra.org.uk/consumers/register/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether someone is (or was) a regulated solicitor in England & Wales and pulling their firm, roll number and regulatory history.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "name",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register operated by the Solicitors Regulation Authority; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Querying a public professional register is passive; the individual is not notified. Data is professional (firm, status), not home-life detail — use it to verify identity/employment, not for intrusive purposes.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The official regulator's register for solicitors in England & Wales; authoritative for whether a person is entitled to practise and their regulatory record.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gb-eng",
+      "gb-wls"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "192"
+    ],
+    "aliases": [
+      "Solicitors Regulation Authority",
+      "SRA register",
+      "sra.org.uk"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "profession-licensing",
+      "solicitors",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sra-org-uk.md"
   },
   {
@@ -316852,44 +316930,55 @@
   {
     "id": "exolyt",
     "name": "Exolyt",
-    "description": "TikTok analytics/profile insight tool; useful for profile activity and posting patterns.",
-    "url": "https://exolyt.com",
+    "description": "Use when you have a TikTok `social-profile`/`username` and want analytics on it — returns posting patterns, engagement, audience geography and growth history.",
+    "url": "https://exolyt.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "TikTok account/video analytics — activity timelines, engagement, audience demographics and geographic breakdown.",
     "selectorsIn": [
+      "username",
       "social-profile"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "metadata-exif",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Freemium — a free trial/limited view exists, but the useful depth (history, audience geography, comparisons) sits behind paid plans.",
+    "opsec": "passive",
+    "opsecNote": "Exolyt analyzes TikTok's public data on its own platform, so the target account isn't directly touched or notified. Your account/searches tie to Exolyt; use a work-appropriate account and note it's a third-party analytics vendor.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "payment-wall-partial"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trustNote": "An established TikTok analytics vendor; its metrics (engagement, growth) are derived estimates — good for patterns and relative comparison, not exact ground truth.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "osintgram"
+    ],
+    "aliases": [
+      "exolyt.com"
+    ],
     "tags": [
-      "kimi-2026"
+      "tiktok",
+      "analytics",
+      "social-media"
     ],
     "source": "kimi-tiktok-snap",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/exolyt.md"
   },
@@ -338002,35 +338091,54 @@
   {
     "id": "searchmy-bio",
     "name": "Searchmy.bio",
-    "description": "OSINT tool: Searchmy.bio.",
+    "description": "Use when you have a `name`, keyword, link or interest and want Instagram accounts whose bio contains it — returns matching Instagram profiles.",
     "url": "https://www.searchmy.bio/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword-searching Instagram bios (which Instagram's own search can't do) to find accounts by what people write about themselves.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search; some advanced filtering/volume may be gated.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a third-party index of Instagram bios, not Instagram directly, so no account is touched and no target is notified. Passive; just don't log into Instagram in the same session for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A useful niche index of Instagram bios; coverage is partial (not every account/bio is indexed) and can lag, so a miss doesn't rule an account out.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "instaloader-3",
+      "osintgram"
+    ],
+    "aliases": [
+      "searchmy.bio",
+      "search my bio"
+    ],
+    "tags": [
+      "instagram",
+      "bio-search",
+      "social-media"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/searchmy-bio.md"
   },
   {
@@ -368873,41 +368981,54 @@
   {
     "id": "marple",
     "name": "Marple",
-    "description": "It collect links contains nickname/name/surname in url from Google and DuckDuckGo search results.",
+    "description": "Use when you have a `username` or `name` and want search-engine results that contain it in profile URLs — returns candidate social profiles gathered from Google/DuckDuckGo.",
     "url": "https://github.com/soxoj/marple",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly collecting likely profile links for a nickname/name by mining Google and DuckDuckGo results, ranked by relevance.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (soxoj, author of Maigret); Python CLI, no account.",
+    "opsec": "passive",
+    "opsecNote": "It issues web searches from your machine to Google/DuckDuckGo, so those engines see your IP — but it does not touch the target's accounts. Use a VPN/sock-puppet context if attribution matters; heavy use may trigger search-engine CAPTCHAs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "By soxoj, a respected OSINT developer; a lightweight search-scraper — results are only as good as the search engines' indexes, so treat links as candidates to verify.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "go-sherlock"
+    ],
+    "aliases": [
+      "soxoj/marple"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username",
+      "cli",
+      "search-scraper"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/marple.md"
   },
@@ -368989,38 +369110,55 @@
   },
   {
     "id": "name-chk",
-    "name": "Name Chk",
-    "description": "OSINT tool: Name Chk.",
-    "url": "http://www.namechk.com",
+    "name": "Namechk (namechk.com)",
+    "description": "Use when you have a `username` and want a quick presence/availability sweep across many social sites and domains — returns which platforms the handle is taken on.",
+    "url": "https://namechk.com/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast web-based check of a username (and domain) across hundreds of social platforms to see where it's registered.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to check usernames and domains; it's a branding-availability service, but \"taken\" results double as account-existence signals for OSINT.",
+    "opsec": "passive",
+    "opsecNote": "Checks run on Namechk's servers, so target sites don't see your IP and the subject isn't notified. You disclose the handle of interest to Namechk; nothing else sensitive is required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known availability checker; results are branding-oriented (\"taken/available\") and can be cached or incomplete, so read \"taken\" as a lead to verify, not proof of your subject.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "namecheckerr-com"
+    ],
+    "aliases": [
+      "namechk.com",
+      "Name Chk"
+    ],
     "tags": [
-      "username-check"
+      "username-check",
+      "username-availability"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/name-chk.md"
   },
   {
