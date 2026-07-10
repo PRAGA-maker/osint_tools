@@ -58439,39 +58439,51 @@
   },
   {
     "id": "iphone-imei-checker",
-    "name": "iPhone IMEI Checker",
-    "description": "Get information about #iPhone by International Mobile Equipment Identity",
+    "name": "iPhone IMEI Checker (imeipro.info)",
+    "description": "Use when you have an iPhone's IMEI/serial (`device-id`) and want its model, specs and iCloud/blacklist status — returns device metadata and lock/theft indicators.",
     "url": "https://www.imeipro.info/check_imei_iphone.html",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding an iPhone IMEI/serial into model, colour, capacity, warranty status and Find My iPhone / blacklist state.",
     "selectorsIn": [
-      "phone"
+      "device-id"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Basic IMEI info (model/spec) is free; premium checks (carrier/SIM-lock, blacklist, full history) are paid per-lookup.",
+    "opsec": "passive",
+    "opsecNote": "You query a device identifier against Apple/GSMA reference data, not a person, so no one is alerted and no personal identity is revealed. The IMEI itself is sensitive device data — handle it lawfully and don't submit identifiers you aren't authorised to check.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A popular IMEI-decoding site; basic model/spec data is reliable (it derives from the IMEI structure), but paid \"blacklist/iCloud\" checks rely on third-party feeds of varying freshness.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "numberingplans-com"
+    ],
+    "aliases": [
+      "imeipro",
+      "IMEI checker"
+    ],
     "tags": [
-      "IMEI and serial numbers"
+      "IMEI and serial numbers",
+      "device-metadata"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/iphone-imei-checker.md"
   },
@@ -155787,7 +155799,7 @@
   {
     "id": "scribd",
     "name": "Scribd",
-    "description": "OSINT tool: Scribd.",
+    "description": "Use when you have a `name`, `email` or `employer-org` and want documents mentioning them — returns uploaded PDFs/spreadsheets/resumes that can leak addresses, IDs and associates.",
     "url": "https://www.scribd.com/",
     "category": "image-video-face",
     "path": [
@@ -155795,34 +155807,52 @@
       "documents",
       "search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Searching a huge library of user-uploaded documents (resumes, court filings, spreadsheets, manuals) for a subject's name or identifiers.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching and previewing is free; full document download/reading often requires a paid subscription or an upload-to-unlock, though many documents are fully public.",
+    "opsec": "passive",
+    "opsecNote": "Searching Scribd is passive and doesn't alert anyone. If you download, that ties to your account; use a sock-puppet account. Prefer viewing via Google cache/`site:scribd.com` to avoid logging in.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Scribd is a legitimate large document-hosting platform; documents are user-uploaded so authenticity varies — a leaked or scanned document must be verified, not taken at face value.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "scribd.com"
+    ],
+    "tags": [
+      "documents",
+      "document-search",
+      "pdf"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/documents/search/scribd.md"
   },
   {
@@ -156591,31 +156621,32 @@
   {
     "id": "shutterstock",
     "name": "Shutterstock",
-    "description": "Website related to social networking with photo and image galleries, posting and sharing services",
-    "url": "http://www.shutterstock.com",
+    "description": "Use when you have a profile `image` and want to check if it's actually a stock photo (catfish signal) — returns whether the picture is a licensed stock/model image.",
+    "url": "https://www.shutterstock.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Detecting that a profile/dating photo is a stock or model image (catfish/fake-account signal) and searching stock catalogs by keyword.",
     "selectorsIn": [
       "image",
-      "face"
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "metadata-exif",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching and previewing (watermarked) is free; licensing/downloading images is paid — but for OSINT you only need the free search to check whether a photo is stock.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching Shutterstock (or reverse-searching an image against it) is passive and doesn't touch the subject. Use a clean session; you never need to buy anything to get the catfish signal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Shutterstock is a legitimate major stock-media marketplace; a match confirms an image is commercial stock (strong \"not a real personal photo\" signal), which is exactly its OSINT value.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -156623,14 +156654,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "shutterstock.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "stock-photo",
+      "catfish-detection"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/shutterstock.md"
   },
@@ -200637,38 +200674,60 @@
   },
   {
     "id": "411-us",
-    "name": "411 (US)",
-    "description": "OSINT tool: 411 (US).",
-    "url": "http://www.411.com",
+    "name": "411.com (US)",
+    "description": "Use when you have a US `name`, `phone` or `address` and want contact and household details — returns addresses, phone numbers and associated relatives/neighbors.",
+    "url": "https://www.411.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "US white-pages people search — resolving a name to addresses, phones, age and relatives, or reverse phone/address lookup.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search shows partial results (name, city, age, some phones/addresses); full reports and contact details are gated behind Whitepages Premium.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit Whitepages' aggregated public-records data, not the subject, so no one is alerted. Searches and any premium purchases tie to your session/account — use a sock-puppet context.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by Whitepages Inc.; aggregates public records for 250M+ US people — broadly reliable for leads but records can be stale or conflate people with the same name.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "searchbug",
+      "reverse-phone-lookup-2"
+    ],
+    "aliases": [
+      "411.com",
+      "Whitepages 411"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "white-pages",
+      "us"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/411-us.md"
   },
   {
@@ -210615,37 +210674,61 @@
   {
     "id": "searchbug",
     "name": "SearchBug",
-    "description": "OSINT tool: SearchBug.",
-    "url": "http://www.searchbug.com",
+    "description": "Use when you have a US `name`, `phone`, `email` or `address` and want cross-linked contact and background data — returns addresses, phones, emails and associates.",
+    "url": "https://www.searchbug.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "US contact-data lookups (people, reverse phone, reverse email, reverse address) with batch/API options for higher-volume work.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "email",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Some basic lookups return limited free info (e.g. line type / carrier on a phone); detailed people reports, reverse email/address and bulk/API access are paid.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit SearchBug's aggregated data sources, not the subject, so no alert is sent. Paid reports and API calls tie to your account; use an appropriately attributed account and handle results lawfully (some data is FCRA-restricted for permissible-purpose use only).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing US data broker offering consumer lookups and business/API data services; reliable for leads, but like all aggregators it carries stale records and same-name collisions.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "411-us",
+      "reverse-phone-lookup-2"
+    ],
+    "aliases": [
+      "searchbug.com"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "reverse-phone",
+      "data-broker",
+      "us"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/searchbug.md"
   },
   {
@@ -218109,30 +218192,32 @@
   },
   {
     "id": "reverse-phone-lookup-2",
-    "name": "Reverse Phone Lookup",
-    "description": "IDCrawl reverse phone lookup.",
+    "name": "IDCrawl Reverse Phone Lookup",
+    "description": "Use when you have a US `phone` number and want the linked person and their online footprint — returns name, likely social profiles and address leads.",
     "url": "https://www.idcrawl.com/phone",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Reversing a US phone number to a name and associated social-media profiles via IDCrawl's people/aggregation index.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
+      "social-profile",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "IDCrawl's basic name/preview results are free; some detailed reports/contact data are gated or handed off to paid partner sources.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query IDCrawl's aggregated index, not the subject, so no alert is sent. IDCrawl links usernames/profiles across sites; treat the associations as leads and use a sock-puppet session for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "IDCrawl is a well-known people/username aggregator; useful for pivoting a number to social profiles, but its cross-site links are heuristic and can be wrong, so verify each match.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -218141,10 +218226,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "searchbug",
+      "411-us",
+      "telegram-finder"
+    ],
+    "aliases": [
+      "IDCrawl phone",
+      "idcrawl.com/phone"
+    ],
+    "tags": [
+      "reverse-phone",
+      "people-aggregator",
+      "us"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/phone/reverse-phone-lookup-2.md"
   },
@@ -222276,45 +222373,57 @@
   },
   {
     "id": "arizona-inmate-datasearch",
-    "name": "Arizona Inmate Datasearch",
-    "description": "OSINT tool: Arizona Inmate Datasearch.",
+    "name": "Arizona Inmate Datasearch (ADCRR)",
+    "description": "Use when you have a `name` and want to check Arizona state prison custody — returns inmate records with ADC number, DOB, status and facility location.",
     "url": "https://corrections.az.gov/public-resources/inmate-datasearch",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is or was in Arizona Department of Corrections custody and pulling their inmate record.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search operated by the Arizona Department of Corrections, Rehabilitation & Reentry (ADCRR); no account required.",
+    "opsec": "passive",
+    "opsecNote": "You query an official public corrections database, not the subject, so nobody is alerted. Records are public but sensitive — use them lawfully and avoid re-publishing personal data unnecessarily.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Arizona state corrections record system; authoritative for Arizona DOC custody, though it covers only Arizona state prisons (not county jails or federal/BOP custody).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us-az"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "court-electronic-records-pacer"
+    ],
+    "aliases": [
+      "ADCRR inmate search",
+      "Arizona DOC inmate datasearch"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections",
+      "arizona"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/arizona-inmate-datasearch.md"
   },
   {
@@ -320342,36 +320451,53 @@
   },
   {
     "id": "getdaytrends",
-    "name": "getdaytrends",
-    "description": "OSINT tool: getdaytrends.",
+    "name": "GetDayTrends",
+    "description": "Use when you have a place and time and want the historical Twitter/X trending topics there — returns trend/hashtag context to anchor an event or timeline.",
     "url": "https://getdaytrends.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up what was trending on Twitter/X in a specific country/city on a given day — historical trend context, not people search.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse historical and live trends by location; some deeper/older analytics may be gated.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You read public trend archives, not any individual's account, so nobody is contacted. Entirely passive contextual research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "A long-running Twitter/X trends archive; reliable for what was trending where/when, but it reports aggregate trends only — it says nothing about specific people.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "tweetmap"
+    ],
+    "aliases": [
+      "getdaytrends.com",
+      "day trends"
+    ],
+    "tags": [
+      "twitter",
+      "trends",
+      "context"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/getdaytrends.md"
   },
   {
@@ -338357,13 +338483,13 @@
   {
     "id": "skype",
     "name": "Skype",
-    "description": "VOIP communication program for making free calls across the country",
-    "url": "http://www.skype.com/en",
+    "description": "Use when an old lead references a Skype username/account — returns little live intelligence; Skype was retired in May 2025, so treat it as historical and pivot to Teams/other traces.",
+    "url": "https://www.skype.com/en/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising that a Skype handle is a legacy artifact and knowing where the identity may have migrated (Microsoft Teams) or what historical traces remain.",
     "selectorsIn": [
       "name",
       "username"
@@ -338371,16 +338497,17 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
+    "costNote": "The consumer service was retired 5 May 2025 (subscriptions end May 2026); there is no live directory to query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "There is no live Skype search to run. Historically, third-party \"Skype resolvers\" that mapped usernames to IPs were abusive and unreliable — do not use them. Any legitimate lookup now goes through Microsoft/Teams under normal account rules.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trustNote": "Microsoft retired consumer Skype on 5 May 2025, migrating users to Teams Free; the platform is no longer a live investigative surface, so this entry is a redirect and historical note.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -338388,14 +338515,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com"
+    ],
+    "aliases": [
+      "skype.com",
+      "Skype ID"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "defunct"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/skype.md"
   },
@@ -368977,45 +369111,55 @@
   },
   {
     "id": "namechk-2",
-    "name": "Namechk",
-    "description": "OSINT tool: Namechk.",
+    "name": "Namechk (ha71 CLI)",
+    "description": "Use when an old workflow references this bash username checker — returns little now; it's archived and broken, so use a maintained enumerator instead.",
     "url": "https://github.com/ha71/namechk",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Historical reference only — a bash CLI that once checked a username across 100+ sites; superseded by Sherlock/Maigret/WhatsMyName.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "username"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source, but archived (Nov 2022) and, per its own README, no longer working properly.",
+    "opsec": "passive",
+    "opsecNote": "When it worked, checks were made from your host against target sites (passive toward the subject). Not a live concern now — do not waste effort running it against current sites.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "The maintainer archived the repo on 29 Nov 2022 and the README explicitly recommends Sherlock, Maigret or WhatsMyName instead — treat this entry as a redirect, not a live tool.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-python",
+      "gosearch"
+    ],
+    "aliases": [
+      "ha71/namechk"
+    ],
     "tags": [
       "username",
       "open-source",
-      "cli"
+      "cli",
+      "deprecated"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/namechk-2.md"
   },
   {
