@@ -205781,36 +205781,59 @@
   },
   {
     "id": "inteltechniques-osint",
-    "name": "IntelTechniques OSINT",
-    "description": "OSINT tool: IntelTechniques OSINT.",
+    "name": "IntelTechniques OSINT Search Tools",
+    "description": "Use when you have a `name`, `username`, `email`, `phone` or `domain` and want automated multi-source pivots — a free toolset that fires one selector at dozens of search sources at once.",
     "url": "https://inteltechniques.com/tools/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Automating multi-engine OSINT searches for a single selector (person, username, email, phone, domain) from one page.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "address",
+      "phone",
+      "email"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The online search tools are free to use; they accompany Michael Bazzell & Jason Edison's paid \"OSINT Techniques\" book, but the web tools themselves cost nothing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tools are query-builders — they open searches on third-party engines (Google, social sites, brokers) in your browser. Each opened search reaches that destination with your fingerprint; run in a sock-puppet browser. IntelTechniques itself does not store your target or notify anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Michael Bazzell (IntelTechniques), a widely respected OSINT practitioner; the tools are actively updated (2024/2025 revisions) and are a de-facto standard reference in the field.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IntelTechniques",
+      "Bazzell OSINT tools",
+      "inteltechniques search tool"
+    ],
+    "tags": [
+      "osint-toolkit",
+      "query-builder",
+      "pivot",
+      "people-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/inteltechniques-osint.md"
   },
   {
@@ -210325,46 +210348,54 @@
   {
     "id": "skip-ease",
     "name": "Skip Ease",
-    "description": "OSINT tool: Skip Ease.",
+    "description": "Use when you have a `name`/`phone`/`address` and want a curated launchpad of people-search and public-record tools — a directory linking to many skip-tracing search engines at once.",
     "url": "https://www.skipease.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A directory/aggregator of the best free people-search, public-record and skip-tracing tools to run a subject through.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
       "address",
       "phone",
-      "email",
       "associate",
-      "social-profile",
-      "dob"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "SkipEase itself is free (a directory of embedded forms and links); some destination sites it links to charge for premium details.",
+    "opsec": "passive",
+    "opsecNote": "SkipEase just routes you to other tools — the OpSec that matters is each destination's. Some embedded forms submit to commercial brokers; treat every onward search as feeding a third party and use a sock-puppet browser throughout. No contact reaches the subject from SkipEase itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing curated directory of people/record search sites (not its own database); usefulness depends on the third-party destinations, whose quality and pricing vary.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SkipEase",
+      "skipease.com"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "skip-tracing",
+      "directory"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/skip-ease.md"
   },
   {
@@ -212067,46 +212098,53 @@
   {
     "id": "usersearch-org",
     "name": "Usersearch.org",
-    "description": "search people by nickname, phone or email",
+    "description": "Use when you have a `username`, `email`, `phone` or profile `image` and want to find matching accounts across social/dating/gaming/crypto sites — returns social profiles and linked accounts.",
     "url": "https://usersearch.org/index.php",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse username/email/phone/picture sweep across 3,000+ social, dating, gaming and crypto platforms.",
     "selectorsIn": [
+      "username",
       "email",
-      "name",
       "phone",
-      "username"
+      "image"
     ],
     "selectorsOut": [
-      "address",
-      "email",
+      "social-profile",
       "name",
-      "phone"
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Username searches are free with no signup on usersearch.org; email/phone and deeper \"20+ data type\" checks moved to usersearch.com / usersearch.ai with free basics and premium tiers.",
+    "opsec": "passive",
+    "opsecNote": "Searches run server-side against the platform's index, so the target's accounts are not directly probed by you and receive no notification. You disclose the selector to Usersearch; use a sock-puppet browser. Nothing is sent to the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established reverse-lookup aggregator (since 2012) with large claimed coverage; results are candidate matches from public data, so expect false positives on common handles.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UserSearch",
+      "usersearch.org"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "reverse-username",
+      "account-discovery"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/usersearch-org.md"
   },
@@ -214219,35 +214257,51 @@
   {
     "id": "find-gsm-base-stations-cell-id-coordinates",
     "name": "Find GSM base stations cell id coordinates",
-    "description": "OSINT tool: Find GSM base stations cell id coordinates.",
+    "description": "Use when you have GSM cell identifiers (MCC/MNC/LAC/CID) and want the tower's approximate location — returns base-station coordinates plotted on a map.",
     "url": "https://cellidfinder.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Converting GSM cell identifiers (MCC/MNC/LAC/CID) into approximate base-station GPS coordinates.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free nonprofit community project (CellIDFinder); results depend on crowd-sourced tower databases, so coverage varies by region.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You look up tower identifiers in a public database — no query touches the target's phone or network, and nobody is notified. The identifiers themselves must come from a device you legitimately control or from lawful data; obtaining another person's live cell data is a separate legal matter this tool does not address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A nonprofit crowd-sourced cell-tower locator; coordinates are approximate (tower location, not handset) and coverage/accuracy depend on community data density.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CellIDFinder",
+      "cellidfinder.com",
+      "GSM base station locator"
+    ],
+    "tags": [
+      "cell-id",
+      "gsm",
+      "geolocation",
+      "tower-lookup"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/find-gsm-base-stations-cell-id-coordinates.md"
   },
   {
@@ -230340,45 +230394,53 @@
   },
   {
     "id": "delaware",
-    "name": "Delaware",
-    "description": "OSINT tool: Delaware.",
+    "name": "Delaware Inmate Locator (via VINELink)",
+    "description": "Use when you have a `name` and want to check Delaware custody status — the Delaware DOC directs offender lookups to VINELink, returning custody status and change notifications.",
     "url": "https://doc.delaware.gov/views/inmate_locator.blade.shtml",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is in Delaware custody and registering for custody-status change alerts via VINELink.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public service; the Delaware DOC routes offender lookups to VINELink (VINE — Victim Information and Notification Everyday). No account needed to search; registration only for notifications.",
+    "opsec": "passive",
+    "opsecNote": "A government-directed public records lookup — you query VINELink, not the subject, and nobody is notified of your search. Registering for status alerts requires giving a contact point to VINE; use an appropriate address if you want the notifications. No contact reaches the offender.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Delaware Department of Correction officially points to VINELink for offender custody information; VINE is a widely used, authoritative national custody-notification network.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Delaware DOC inmate locator",
+      "Delaware VINELink"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections",
+      "delaware",
+      "vinelink"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/delaware.md"
   },
   {
@@ -254800,47 +254862,55 @@
   },
   {
     "id": "pharmacyregulation-org",
-    "name": "pharmacyregulation.org",
-    "description": "OSINT tool: pharmacyregulation.org.",
+    "name": "pharmacyregulation.org (GPhC register)",
+    "description": "Use when you have a `name` or registration number and want to verify a GB pharmacist/pharmacy technician — returns registration status, number, town and any fitness-to-practise decisions.",
     "url": "https://www.pharmacyregulation.org/registers",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether someone is a registered pharmacist/pharmacy technician in Great Britain and their standing.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "document-id"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official register search operated by the General Pharmaceutical Council (GPhC); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "An official professional-register lookup — you query the GPhC, not the subject, and nobody is notified. The register is public by statute. Routine sock-puppet browsing hygiene is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the General Pharmaceutical Council, the statutory regulator for pharmacists, pharmacy technicians and pharmacies in Great Britain — an authoritative first-party register.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GPhC register",
+      "General Pharmaceutical Council register",
+      "pharmacyregulation.org"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "pharmacist",
+      "gphc"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/pharmacyregulation-org.md"
   },
   {
@@ -256407,47 +256477,55 @@
   },
   {
     "id": "psa-gov-ie",
-    "name": "psa-gov.ie",
-    "description": "OSINT tool: psa-gov.ie.",
+    "name": "psa-gov.ie (PSA licence register)",
+    "description": "Use when you have a contractor/employee `name` or `employer-org` in Irish private security and want to verify their PSA licence — returns licence status, holder name and firm.",
     "url": "https://www.psa-gov.ie/psa-registered-contractors/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether an Irish private-security contractor or employee holds a valid PSA licence.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official register operated by Ireland's Private Security Authority (PSA); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "An official statutory register lookup — you query the PSA, not the subject, and nobody is notified. The licence register is public. Routine sock-puppet browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Private Security Authority, Ireland's statutory regulator for the private security industry — an authoritative first-party licence register.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Private Security Authority Ireland",
+      "PSA licence register",
+      "psa-gov.ie"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "security-licensing",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/psa-gov-ie.md"
   },
   {
@@ -291734,43 +291812,54 @@
   {
     "id": "naver-com",
     "name": "naver.com",
-    "description": "OSINT tool: naver.com.",
+    "description": "Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q&A and profiles from Korea's dominant portal.",
     "url": "https://www.naver.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Searching South Korean web content (blogs, cafés, Q&A, news, maps) that Western engines under-index.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
+      "social-profile",
       "name",
-      "social-profile"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; a Naver account (free) is needed to read some café/blog content and to use certain services.",
+    "opsec": "passive",
+    "opsecNote": "Standard search-engine queries against Naver's index — the subject is not contacted. Naver logs searches and may localise/personalise; use a sock-puppet browser, and a sock-puppet Naver account if you need to read gated café/blog posts. Consider a Korea-region context for best results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Naver Corporation, South Korea's largest search/portal company; authoritative as a search index, though (like any engine) results reflect its own ranking and Korea-centric coverage.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "kr"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Naver",
+      "naver.com",
+      "네이버"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "korea",
+      "korean-web"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/naver-com.md"
   },
   {
@@ -367557,35 +367646,51 @@
   {
     "id": "searchpof-com",
     "name": "SearchPOF.com",
-    "description": "OSINT tool: SearchPOF.com.",
+    "description": "Use when you have a `username`/`name` and want to find a Plenty of Fish (POF) dating profile — provides Google-CSE site searches and guidance to surface public POF profiles.",
     "url": "https://searchpof.com/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Locating public Plenty of Fish dating profiles via Google site-search techniques.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free informational tool built on Google Custom Search; not affiliated with POF. No account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search Google's index of POF, not POF's logged-in interface, so no visit is registered against your account and the subject is not alerted. Do not log into POF to view a profile from a real account; use a sock puppet if you must open the dating site itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party helper (not affiliated with POF/Plentyoffish) that wraps Google Custom Search; POF's own scraping/search has been restricted over time, so it is now largely a guided-search resource.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SearchPOF",
+      "POF profile search"
+    ],
+    "tags": [
+      "dating",
+      "plentyoffish",
+      "pof",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/searchpof-com.md"
   },
   {
@@ -368284,41 +368389,58 @@
   {
     "id": "thats-them",
     "name": "Thats Them",
-    "description": "People search by name, email, phone, or address",
+    "description": "Use when you have a `name`, `email`, `phone` or `address` and want free US contact and demographic data — returns addresses, phones, emails, IP, and household/demographic details.",
     "url": "https://thatsthem.com/",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "People search by name, email, phone, or address",
-    "input": "Name, email address, phone number, or physical address",
-    "output": "Contact info, residential details, demographics, and financial estimates",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free US people search that cross-links name, email, phone and address into a contact and demographics profile.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "email",
+      "associate",
+      "ip-address"
+    ],
     "status": "live",
-    "pricing": "freemium",
+    "pricing": "free",
+    "costNote": "Free for searches (no paywall on core results); aggregates data from 50+ sources updated monthly. Not FCRA-permissible (no employment/tenant/credit use).",
     "opsec": "passive",
-    "opsecNote": "Searches are routed through ThatsThem's servers; the target is not alerted.",
+    "opsecNote": "Searches route through ThatsThem's servers and the subject is not notified. You hand the selector to a data broker; use a sock-puppet browser. Note ThatsThem offers a record opt-out, so a missing person may be suppressed rather than absent.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial US data broker aggregating 50+ sources; broad and genuinely free, but accuracy varies and its financial/demographic estimates (net worth, income) are modelled, not factual.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ThatsThem",
+      "thatsthem.com"
+    ],
+    "tags": [
+      "people-search",
+      "data-broker",
+      "reverse-email",
+      "reverse-phone"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/thats-them.md"
   },
   {
