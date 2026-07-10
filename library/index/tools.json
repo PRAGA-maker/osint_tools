@@ -158994,45 +158994,51 @@
   },
   {
     "id": "undetectable-ai",
-    "name": "undetectable.ai",
-    "description": "OSINT tool: undetectable.ai.",
+    "name": "undetectable.ai (AI Image Detector)",
+    "description": "Use when you have an `image`/`face` and want to know if it is AI-generated — returns an AI-vs-human verdict with a confidence score, useful for spotting fake/catfish profile photos.",
     "url": "https://undetectable.ai/ai-image-detector",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Flagging whether a photo (e.g. a suspicious profile picture) is machine-generated rather than a real person.",
     "selectorsIn": [
       "image",
       "face"
     ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free for basic single-image checks with no signup; undetectable.ai monetises paid AI-writing/humanizer products, but the image detector's basic check is free.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to a third-party AI service that classifies it; the subject is not contacted. The site states images are deleted after processing, but you are still handing the photo to an external service — do not submit sensitive or evidentiary images you must keep private. Use a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial AI-content vendor's detector; AI-image detection is probabilistic and error-prone across all vendors, so treat the verdict as a signal, never proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "undetectable.ai image detector",
+      "AI Image Detector"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "Reverse Image Searching",
+      "ai-detection",
+      "deepfake",
+      "catfish"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/undetectable-ai.md"
   },
   {
@@ -169872,43 +169878,49 @@
   {
     "id": "discordbee-com",
     "name": "discordbee.com",
-    "description": "OSINT tool: discordbee.com.",
+    "description": "Use when you have a topic, interest or community `name` and want to find public Discord servers around it — returns server listings with descriptions, member stats and invite links.",
     "url": "https://discordbee.com/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering public Discord communities by keyword/interest to locate where a subject or topic congregates.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse and search the public server directory; server owners can pay for premium/featured placement.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and anonymous — you are reading a public listing, not contacting anyone. Actually joining a server (via an invite link) is an active step that exposes your account inside that community; use a sock-puppet Discord account and do not join with a real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party public Discord server directory (not affiliated with Discord); it indexes servers that opt in to listing, so it is far from a complete map of Discord.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DiscordBee",
+      "discordbee.com"
+    ],
     "tags": [
       "discord",
-      "Discord Related Sites"
+      "Discord Related Sites",
+      "server-directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/discordbee-com.md"
   },
   {
@@ -207307,41 +207319,53 @@
   {
     "id": "my-registry",
     "name": "My Registry",
-    "description": "Universal cross-store gift registry creation and search",
+    "description": "Use when you have a `name` and want to find their gift/wedding/baby registry — returns registrant name, event type/date, a partner or co-registrant and location/shipping hints.",
     "url": "https://www.myregistry.com/",
     "category": "people-search",
     "path": [
       "people-search",
       "registries"
     ],
-    "bestFor": "Universal cross-store gift registry creation and search",
-    "input": "Registrant name",
-    "output": "Unified gift registry with items from multiple stores",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding a person's universal gift registry to surface life events, a partner's name and location clues.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search (\"Find a Registry\") and to create registries; only cash-gift funds carry a small transaction fee. No account needed to search.",
     "opsec": "passive",
-    "opsecNote": "Free registry search; account needed to create registries.",
+    "opsecNote": "Searching the public registry directory is passive — you query MyRegistry, not the subject, and registrants who appear have opted to be findable. Do not contact a registry or buy items as a pretext; that is active and exposes you. Use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legitimate commercial universal-registry service; data is self-submitted by registrants and only appears if they made the registry publicly searchable, so coverage is partial and self-reported.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "MyRegistry",
+      "myregistry.com"
+    ],
+    "tags": [
+      "people-search",
+      "registries",
+      "gift-registry",
+      "life-events"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/registries/my-registry.md"
   },
   {
@@ -211254,46 +211278,50 @@
   {
     "id": "textmagic-free-carrier-lookup",
     "name": "TextMagic Free Carrier Lookup",
-    "description": "OSINT tool: TextMagic Free Carrier Lookup.",
+    "description": "Use when you have a `phone` number and want to know its carrier and line type — returns carrier name, mobile/landline/VoIP classification, country and network codes.",
     "url": "https://www.textmagic.com/free-tools/carrier-lookup",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Free HLR-style carrier and line-type lookup to classify a phone number before deeper reverse-phone work.",
     "selectorsIn": [
-      "name"
+      "phone"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tool with no signup (part of TextMagic's free-tools suite); TextMagic sells bulk SMS/lookup APIs, but the single web lookup is free.",
+    "opsec": "passive",
+    "opsecNote": "The lookup queries carrier/numbering databases, not the phone itself — the target's device is never contacted and receives no notification. You disclose the number to TextMagic; use a sock-puppet browser. This is a metadata/HLR-style check, not a call or SMS.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by TextMagic, an established commercial SMS provider; carrier/line-type data is reliable, though it identifies the number's carrier — not its owner.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TextMagic carrier lookup",
+      "textmagic phone checker"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "carrier-lookup",
+      "phone-metadata",
+      "hlr"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/textmagic-free-carrier-lookup.md"
   },
   {
@@ -237956,47 +237984,52 @@
   },
   {
     "id": "gov-uk-16",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "gov.uk (Check for Flooding)",
+    "description": "Use when you have an `address`/postcode in England and want its flood risk and live water levels — returns flood alerts, 5-day forecast, long-term risk and nearby river/sea gauge readings.",
     "url": "https://check-for-flooding.service.gov.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Adding environmental/geographic context (flood risk, live water levels) to an English address or area.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official UK government (Environment Agency) service; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public government mapping service — you query a location, not a person, and nothing is logged against any subject. No sock puppet strictly needed, though routine browser hygiene is sensible. It reveals nothing about who lives at an address; it is purely environmental.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the UK Environment Agency via gov.uk — an authoritative first-party source for England flood data (does not cover Scotland/Wales/NI, which have their own agencies).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Check for flooding",
+      "Environment Agency flood service"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "flood",
+      "environment-agency"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-16.md"
   },
   {
@@ -240893,44 +240926,53 @@
   {
     "id": "indiana-offender-database-search",
     "name": "Indiana Offender Database Search",
-    "description": "OSINT tool: Indiana Offender Database Search.",
+    "description": "Use when you have a `name` (or DOC number) and want to check Indiana incarceration status — returns offender ID, DOB, offense, facility and custody/release status.",
     "url": "https://www.in.gov/apps/indcorrection/ofs/ofs",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is or was in Indiana state custody and pulling their offender record.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Indiana Department of Correction public database; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "An official government records search — you query the IDOC database, not the subject, so nobody is notified. The site carries a disclaimer that republishers are responsible for accuracy. Use a sock-puppet browser as routine hygiene; the search itself is unremarkable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Indiana Department of Correction — a first-party, authoritative source for state incarceration records (subject to update lag for newly sentenced individuals).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "IDOC Offender Search",
+      "Indiana Department of Correction offender locator"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections",
+      "indiana"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/indiana-offender-database-search.md"
   },
   {
@@ -244484,46 +244526,53 @@
   {
     "id": "legacy-com",
     "name": "legacy.com",
-    "description": "OSINT tool: legacy.com.",
+    "description": "Use when you have a `name` and want to find a death notice or obituary — returns date of death, age, location, funeral home and surviving/predeceased family members.",
     "url": "https://www.legacy.com/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the largest US obituary database to confirm a death and harvest family/associate links.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "dob",
+      "associate",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read obituaries (40M+ records); optional paid extras (flowers, memorial products) are unrelated to the search.",
+    "opsec": "passive",
+    "opsecNote": "You search a public obituary aggregator, not the subject — no notification reaches anyone. Obituaries are published by families/funeral homes and are inherently public. Use a sock-puppet browser as routine hygiene; the content is sensitive (bereavement) so handle findings with care.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Legacy.com aggregates obituaries published by newspapers and funeral homes across the US and beyond; the death notices come from vetted publishers, though family-submitted detail can contain errors.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Legacy.com obituaries",
+      "legacy.com/search"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "obituaries",
+      "death-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/legacy-com.md"
   },
   {
@@ -247066,45 +247115,55 @@
   },
   {
     "id": "minnesota",
-    "name": "Minnesota",
-    "description": "OSINT tool: Minnesota.",
+    "name": "Minnesota DOC Offender Locator",
+    "description": "Use when you have a `name` (or MNDOC offender ID) and want to check Minnesota state custody — returns offender ID, offense, custody status, sentence dates, physical description and photo.",
     "url": "https://coms.doc.state.mn.us/publicviewer",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is under Minnesota DOC jurisdiction and retrieving their offender record and photo.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "physical-description",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Minnesota Department of Corrections Public Viewer; no account or registration.",
+    "opsec": "passive",
+    "opsecNote": "A first-party government records lookup — you search the MNDOC database, not the subject, and nobody is notified. Standard sock-puppet browsing hygiene is sufficient. Data covers only adults under DOC jurisdiction (incarcerated or on supervised release).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Minnesota Department of Corrections — an authoritative, first-party source for state offender records; newly sentenced adults may take several business days to appear.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MNDOC Offender Locator",
+      "Minnesota DOC Public Viewer",
+      "coms.doc.state.mn.us"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections",
+      "minnesota"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/minnesota.md"
   },
   {
@@ -323673,41 +323732,52 @@
   {
     "id": "inflact-instagram-viewer-anonymous",
     "name": "Inflact Instagram Viewer (Anonymous)",
-    "description": "Anonymous reconnaissance of public Instagram profiles",
+    "description": "Use when you have an Instagram `username` and want to view a public profile without logging in — returns profile details, posts, stories, reels and highlights via a proxy viewer.",
     "url": "https://inflact.com/instagram-viewer/profile/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "instagram"
     ],
-    "bestFor": "Anonymous reconnaissance of public Instagram profiles",
-    "input": "Instagram username or profile URL",
-    "output": "Profile details, posts, stories, and highlight content",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Anonymously viewing a public Instagram profile's posts and stories without touching it from your own account.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier is tightly capped (about 1 profile/day, ~7 total) before prompting an upgrade; premium (~$7.80/month) removes the limit.",
     "opsec": "passive",
-    "opsecNote": "Uses a third-party proxy viewer; avoid entering sensitive target identifiers outside approved workflow.",
+    "opsecNote": "Inflact fetches the profile through its own proxy accounts, so the view does NOT come from your Instagram account — the target sees no visitor from you and no story-view mark. You do disclose the target username to Inflact; use a sock-puppet browser. Only public accounts are accessible; it cannot (and you should not try to) reach private ones.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party proxy viewer run by Inflact (an Instagram-growth vendor), not affiliated with Instagram; convenient but it intermediates the data and its access can break when Instagram changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Inflact Instagram Viewer",
+      "inflact instagram profile viewer"
+    ],
+    "tags": [
+      "instagram",
+      "anonymous-viewer",
+      "social-recon"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram/inflact-instagram-viewer-anonymous.md"
   },
   {
@@ -344580,44 +344650,50 @@
   {
     "id": "twitch-tools-rootonline-de",
     "name": "twitch-tools.rootonline.de",
-    "description": "OSINT tool: twitch-tools.rootonline.de.",
+    "description": "Use when you have a Twitch `username` and want to enumerate its followers — returns the follower list with follow dates and account-age filters, exposing associated accounts.",
     "url": "https://twitch-tools.rootonline.de/followerlist_viewer.php",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling and filtering the follower list of any Twitch channel to find associated accounts and follow timing.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; an optional sign-up/verification adds benefits but the follower viewer is usable without it.",
+    "opsec": "passive",
+    "opsecNote": "The tool queries Twitch's public follower data server-side — you do not follow, message, or otherwise touch the target channel, so no notification reaches it. You disclose the channel name to a third-party site; use a sock-puppet browser. Large channels' follower lists may be truncated or rate-limited by Twitch.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A hobbyist third-party Twitch utility (rootonline.de), not affiliated with Twitch; depends on Twitch's public API and can break or truncate when Twitch changes access.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Twitch follower list viewer",
+      "twitch-tools rootonline"
+    ],
     "tags": [
       "twitch",
-      "Twitch Related Sites"
+      "Twitch Related Sites",
+      "follower-enumeration"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitch-tools-rootonline-de.md"
   },
   {
