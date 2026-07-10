@@ -143893,7 +143893,6 @@
   {
     "id": "flickr-map",
     "name": "Flickr Map",
-    "description": "Map-based discovery of geotagged Flickr images",
     "url": "https://www.flickr.com/map/",
     "category": "image-video-face",
     "path": [
@@ -143901,34 +143900,48 @@
       "images",
       "flickr"
     ],
-    "bestFor": "Map-based discovery of geotagged Flickr images",
-    "input": "Geographic area and map navigation",
-    "output": "Geotagged photos plotted on interactive map tiles",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "description": "Use when you have a `geolocation` (or a Flickr `username`) and want geotagged photos there — returns public `image`s plotted on a map with their coordinates and uploader.",
+    "bestFor": "Browsing geotagged Flickr photos on a map — to see imagery from a specific location or to map a user's tagged photos.",
+    "selectorsIn": [
+      "geolocation",
+      "username"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation",
+      "username"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse public geotagged photos; a free Flickr/SmugMug account is only needed to interact (fave/comment), not to view or search the map.",
     "opsec": "passive",
-    "opsecNote": "Uses public Flickr geotag data; activity remains normal web browsing.",
+    "opsecNote": "Browsing public geotagged imagery is passive normal web use; the uploader is not notified when you view. Faving/commenting requires login and is visible — stay logged out for read-only mapping.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Flickr is a genuine, long-established photo platform; geotags are user-supplied and can be approximate or wrong, so treat plotted locations as leads.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Flickr Map",
+      "flickr.com/map"
+    ],
+    "tags": [
+      "geolocation",
+      "flickr",
+      "geotagged-photos"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/flickr/flickr-map.md"
   },
   {
@@ -160622,41 +160635,51 @@
   {
     "id": "what-the-font",
     "name": "What The Font",
-    "description": "OSINT tool: What The Font.",
     "url": "https://www.myfonts.com/pages/whatthefont",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "fonts"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "description": "Use when you have an `image` of text and want to identify the typeface — returns matching font names to help attribute a document, logo, flyer or screenshot.",
+    "bestFor": "Identifying the font used in a photo/screenshot of text, to help attribute or compare documents, logos and printed material.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to identify fonts from an uploaded image (MyFonts, a Monotype service); it upsells the identified fonts for purchase, but identification itself is free.",
+    "opsec": "active",
+    "opsecNote": "You upload the image of the text to MyFonts' servers for analysis, a disclosure to a third party. Crop to just the text and avoid uploading sensitive documents wholesale; the target is never notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by MyFonts/Monotype, the industry-standard font marketplace; font-matching is reliable for common typefaces, weaker on distorted/handwritten text.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WhatTheFont",
+      "MyFonts WhatTheFont"
+    ],
+    "tags": [
+      "fonts",
+      "document-analysis",
+      "image-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fonts/what-the-font.md"
   },
   {
@@ -218605,45 +218628,6 @@
     "_file": "library/tools/phone/phoneowner.md"
   },
   {
-    "id": "phonerator",
-    "name": "Phonerator",
-    "description": "Generating test-number patterns for scripting and analysis",
-    "url": "https://www.martinvigo.com/phonerator/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "Generating test-number patterns for scripting and analysis",
-    "input": "Country/prefix pattern parameters",
-    "output": "Generated phone-number candidates and pattern outputs",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Local generation/reference behavior; does not query target subscribers directly.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/phonerator.md"
-  },
-  {
     "id": "phonumspy",
     "name": "PhoNumSpy",
     "description": "Phone number OSINT tool returning location, country code, city, carrier plus web and social-network footprint search.",
@@ -220410,43 +220394,53 @@
   {
     "id": "us-phonebook",
     "name": "US Phonebook",
-    "description": "OSINT tool: US Phonebook.",
-    "url": "https://www.usphonebook.com/515-419-8701/detailed",
+    "url": "https://www.usphonebook.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "description": "Use when you have a US `phone`, `name` or `address` and want the person behind it — returns owner `name`, `address`, relatives and phone type, free.",
+    "bestFor": "Free US reverse phone lookup (and name/address search) returning owner name, address, relatives and line type.",
     "selectorsIn": [
-      "phone"
+      "phone",
+      "name",
+      "address"
     ],
     "selectorsOut": [
       "name",
       "address",
-      "social-profile"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Advertised as 100% free reverse phone/name/address lookups; the site monetises via ads and upsell links to paid background-check partners, but core lookups need no payment.",
+    "opsec": "passive",
+    "opsecNote": "A passive query against a consumer data-broker index; the subject is not notified. The site is ad-heavy with \"is this you?\" upsell traps — use a clean/sock-puppet browser and avoid the partner background-check funnels.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular free US reverse-lookup aggregator; data is broker-sourced and can be stale or conflate same-name people, so treat results as leads to confirm.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "USPhonebook",
+      "usphonebook.com"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "reverse-phone",
+      "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/us-phonebook.md"
   },
   {
@@ -252144,46 +252138,49 @@
   {
     "id": "nethouseprices-com",
     "name": "nethouseprices.com",
-    "description": "OSINT tool: nethouseprices.com.",
     "url": "https://nethouseprices.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "description": "Use when you have a UK `address`/postcode and want its sale history — returns sold prices and dates (England & Wales, from HM Land Registry) for that property and street.",
+    "bestFor": "Looking up the sold-price history of a UK residential address (England & Wales) and comparable street/postcode sales.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search sold prices; a free account adds saved-postcode email alerts. Data is HM Land Registry Price Paid, England & Wales, 1995 onward.",
+    "opsec": "passive",
+    "opsecNote": "A passive property-records lookup; no occupant is contacted or notified and no login is required to search. It returns transaction data, not occupant identities, so it is low-risk corroboration.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Re-publishes official HM Land Registry Price Paid data; sale prices/dates are authoritative for England & Wales, though it holds no occupant/owner names.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Net House Prices",
+      "nethouseprices sold prices"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "land-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nethouseprices-com.md"
   },
   {
@@ -333564,37 +333561,54 @@
   {
     "id": "odnoklassniki-russia",
     "name": "Odnoklassniki (Russia)",
-    "description": "OSINT tool: Odnoklassniki (Russia).",
     "url": "http://ok.ru",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "description": "Use when you have a `name` or `username` of a Russian/CIS subject and want their social profile — returns a `social-profile` with photos, connections and life details.",
+    "bestFor": "Finding a Russian/CIS person's social presence — especially older users and reconnected classmates/family — on one of Russia's largest networks.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; much profile detail (and search) is gated behind a free account, and viewing others is easier when signed in.",
+    "opsec": "active",
+    "opsecNote": "Logged-out visibility is limited, so real use usually means signing in — which is active, ties activity to an account, and OK.ru (VK-group, Russian jurisdiction) logs it; profile visitors can sometimes be seen by the owner. Use a burner account, never your real one, and assume Russian data-law exposure.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A genuine, major Russian social network (part of the VK group); the platform is authentic, though individual accounts may be fake/impersonators and content is subject to heavy Russian moderation/surveillance.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OK.ru",
+      "Odnoklassniki",
+      "Одноклассники"
+    ],
     "tags": [
-      "major-social-networks"
+      "major-social-networks",
+      "russian-social"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/odnoklassniki-russia.md"
   },
   {
