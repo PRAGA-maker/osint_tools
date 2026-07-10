@@ -109443,13 +109443,13 @@
   {
     "id": "reversecontact",
     "name": "ReverseContact",
-    "description": "Finds a LinkedIn profile and enriched identity data from an email address.",
+    "description": "Use when you have an `email` (or domain) and want to resolve it to a real person and their LinkedIn/work identity — returns `name`, `social-profile`, `employer-org` and job details.",
     "url": "https://www.reversecontact.com/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "Email-to-LinkedIn/identity pivot",
+    "bestFor": "Email-to-LinkedIn/identity enrichment — turning a bare email address into a full name, LinkedIn profile, employer, and role.",
     "selectorsIn": [
       "email"
     ],
@@ -109458,31 +109458,37 @@
       "social-profile",
       "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Effectively a paid B2B enrichment API — pay-as-you-go, no real free trial (any free credits are minimal). Requires registration and an API key; pricing is via their portal/sales. Treat as paid.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "You submit the target's email to a third-party enrichment service, which stores/logs the query and matches it against its 800M-profile database. No signal reaches the target, but you are disclosing the selector to a commercial vendor — use an investigative account, not personal.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "Commercial enrichment service with limited free lookups (in the Social-Media-OSINT collection).",
+    "trustNote": "Commercial enrichment vendor (claims GDPR/CCPA compliance, ~80% match rate). Data is aggregated from public/third-party sources, so matches can be stale or wrong — verify before relying.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "aliases": [
+      "Reverse Contact",
+      "reversecontact.com"
+    ],
     "tags": [
       "email",
       "linkedin",
       "enrichment"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/reversecontact.md"
   },
@@ -222375,14 +222381,14 @@
   },
   {
     "id": "asic-gov-au",
-    "name": "asic.gov.au",
-    "description": "OSINT tool: asic.gov.au.",
+    "name": "ASIC Registers (Australia)",
+    "description": "Use when you have a person `name`, company `name`/ACN or `address` in Australia and want official corporate/registration records — returns companies (`employer-org`), registered `address`es and officeholder `name`s.",
     "url": "https://asic.gov.au/online-services/search-asics-registers/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Australia's official corporate registers to link a person to companies, business names, and registered addresses; some detailed extracts are paid.",
     "selectorsIn": [
       "name",
       "address",
@@ -222393,29 +222399,41 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic register searches (company/business-name existence, status, ABN/ACN) are free; full company extracts, historical/officeholder documents, and current-and-historical searches are paid per document. Note ASIC's business/company registers have been migrating to the ABRS/Business Registry Service.",
+    "opsec": "passive",
+    "opsecNote": "Public register search does not notify the subject. Paid extracts require an account/payment that ties the lookup to your billing identity — use an investigative account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Australian Securities and Investments Commission (and the Australian Business Registry Services), the official regulators — authoritative for company and business-name records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ASIC",
+      "asic.gov.au",
+      "Australia company search",
+      "ABN Lookup"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "company-related-sites",
+      "public-records",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/asic-gov-au.md"
   },
   {
@@ -227643,14 +227661,14 @@
   },
   {
     "id": "company-information-service-gov-uk",
-    "name": "company-information.service.gov.uk",
-    "description": "OSINT tool: company-information.service.gov.uk.",
+    "name": "UK Companies House (Find & Update Company Information)",
+    "description": "Use when you have a person `name`, company `name`/number or `address` in the UK and want official corporate records — returns directorships (`employer-org`), registered/service `address`es and officer `name`s.",
     "url": "https://find-and-update.company-information.service.gov.uk/advanced-search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the UK's official company register to link a person to their directorships, registered addresses, and co-officers via free advanced/officer search.",
     "selectorsIn": [
       "name",
       "address",
@@ -227661,29 +227679,38 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search companies, officers, and filings and to download most filed documents. No account or payment required. A bulk data API and product are also free.",
+    "opsec": "passive",
+    "opsecNote": "Public statutory register; neither company nor officer is notified. Queries hit a UK government service — use a puppet browser/IP if you don't want your address tied to the search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Companies House, the UK's official registrar of companies — authoritative for incorporation, directorship, and filing data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Companies House",
+      "find-and-update.company-information.service.gov.uk",
+      "UK company search"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "company-related-sites",
+      "public-records",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-information-service-gov-uk.md"
   },
   {
@@ -250107,14 +250134,14 @@
   },
   {
     "id": "nebraska",
-    "name": "Nebraska",
-    "description": "OSINT tool: Nebraska.",
+    "name": "Nebraska DCS Inmate Search",
+    "description": "Use when you have a `name` and want to check whether a person is or was incarcerated in Nebraska state prison — returns inmate record, ID (`document-id`), `dob` and custody status.",
     "url": "https://dcs-inmatesearch.ne.gov/corrections/cor_input.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person in the Nebraska Department of Correctional Services system by name — confirms incarceration, facility, and inmate ID.",
     "selectorsIn": [
       "name"
     ],
@@ -250123,29 +250150,39 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state government inmate lookup; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Public corrections record; the individual is not notified. It is a state government site — use a puppet browser/IP if you don't want the query tied to your address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Nebraska Department of Correctional Services — the authoritative source for state inmate custody records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Nebraska DCS inmate search",
+      "dcs-inmatesearch.ne.gov",
+      "Nebraska corrections"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records",
+      "nebraska",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nebraska.md"
   },
   {
@@ -273738,24 +273775,25 @@
   {
     "id": "bellingcat-s-online-investigation-toolkit-2",
     "name": "Bellingcat's Online Investigation Toolkit",
-    "description": "Bellingcat's continuously maintained GitBook of investigation tools across many categories.",
+    "description": "Use when you need a vetted, current directory of OSINT tools by category (geolocation, social media, maps, verification) — returns pointers to specific tools, not person data itself.",
     "url": "https://bellingcat.gitbook.io/toolkit",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Authoritative, current list of investigation tools by category",
+    "bestFor": "A continuously maintained, category-organised meta-directory of investigation tools curated by Bellingcat — the place to discover the right tool for a task.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public GitBook; no account. Some tools it links to are themselves paid, but the directory is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the toolkit is inert and reveals nothing about a target. OpSec depends entirely on which linked tool you then use — assess each tool on its own page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Maintained by Bellingcat, a leading open-source investigation organization.",
+    "trustNote": "Maintained by Bellingcat, a leading open-source investigation organisation; the toolkit is community-vetted and kept current, making it one of the most reliable meta-directories.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -273765,7 +273803,8 @@
     "localInstall": false,
     "registration": false,
     "aliases": [
-      "Bellingcat Toolkit"
+      "Bellingcat Toolkit",
+      "Bellingcat's Online Investigation Toolkit"
     ],
     "tags": [
       "tool-collection",
@@ -273774,8 +273813,8 @@
       "verification"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/bellingcat-s-online-investigation-toolkit-2.md"
   },
   {
@@ -322774,36 +322813,53 @@
   },
   {
     "id": "google-to-search-profiles-on-dribbble",
-    "name": "Google to search profiles on Dribbble",
-    "description": "OSINT tool: Google to search profiles on Dribbble.",
+    "name": "RecruitEm — Google X-ray for Dribbble",
+    "description": "Use when you have a skill/keyword (and optionally a `name` or `username`) and want to find Dribbble creative profiles via a Google site-search builder — returns `social-profile` links.",
     "url": "https://recruitin.net/dribbble.php",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Building a Google X-ray (site:dribbble.com) query to surface designer/creative profiles by skills, keywords, or a name, without searching Dribbble directly.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no registration. It just constructs a Google search URL and hands off to Google.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "RecruitEm only builds the query string; the actual search runs on Google from your browser. Neither Dribbble nor the target is contacted. Use a puppet browser/incognito to avoid tying searches to your Google account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "RecruitEm (recruitin.net) is a long-standing free recruiter X-ray tool; it produces standard Google site-search queries, so results are Google's, not RecruitEm's.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "RecruitEm Dribbble",
+      "recruitin.net dribbble",
+      "Dribbble X-ray search"
+    ],
+    "tags": [
+      "social-networks",
+      "dribbble",
+      "xray-search",
+      "google-dork"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-to-search-profiles-on-dribbble.md"
   },
   {
@@ -326689,36 +326745,53 @@
   },
   {
     "id": "inteltechniques-facebook",
-    "name": "IntelTechniques Facebook",
-    "description": "OSINT tool: IntelTechniques Facebook.",
+    "name": "IntelTechniques Facebook Tool",
+    "description": "Use when you have a Facebook `username`/`social-profile` or numeric ID and want to run structured Facebook lookups (ID resolution, friend/photo/post searches) from one query-builder — returns `social-profile` links and Facebook search URLs.",
     "url": "https://inteltechniques.com/tools/Facebook.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "A pre-built panel of Facebook search shortcuts (resolve profile↔numeric ID, then query friends, photos, posts, places, likes) that assembles the URLs Facebook no longer exposes.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free tool by Michael Bazzell / IntelTechniques. Note the online tools have been retired/moved before and are now distributed mainly as an offline HTML download; availability of the hosted page varies.",
+    "opsec": "active",
+    "opsecNote": "The generated links execute inside your logged-in Facebook session, so results and profile visits are tied to whatever account you use. Use a sock-puppet Facebook account and browser profile — never your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Built by Michael Bazzell (IntelTechniques), a well-known OSINT author. It is a query-builder — the data comes from Facebook, not IntelTechniques — and Facebook changes frequently break individual queries.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IntelTechniques Facebook search",
+      "Bazzell Facebook tool"
+    ],
+    "tags": [
+      "facebook",
+      "social-networks",
+      "xray-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inteltechniques-facebook.md"
   },
   {
@@ -333605,38 +333678,52 @@
   },
   {
     "id": "pullpush",
-    "name": "Pullpush",
-    "description": "OSINT tool: Pullpush.",
+    "name": "PullPush",
+    "description": "Use when you have a Reddit `username`, subreddit or keyword and want to search historical Reddit comments/submissions Reddit's own search buries — returns `social-profile` activity, content and `metadata-exif` timestamps via a free API.",
     "url": "https://pullpush.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching and retrieving historical Reddit comments and submissions by author, subreddit, keyword, or date via a free Pushshift-style API — including content deleted from Reddit's UI.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public API and web search; no account or key. You must accept the Terms of Service; heavy use is rate-limited.",
+    "opsec": "passive",
+    "opsecNote": "You query an archive, not Reddit, so the target gets no signal. Requests go through pullpush.io's servers, which can log them — use a puppet IP for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-run Pushshift successor built on Watchful1's Reddit torrent archives; widely used in Reddit research, though it is a third-party mirror, not Reddit itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "pullpush.io",
+      "Pushshift successor",
+      "PullPush API"
+    ],
     "tags": [
-      "reddit"
+      "reddit",
+      "social-networks",
+      "archive"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/pullpush.md"
   },
   {
@@ -336110,14 +336197,14 @@
   },
   {
     "id": "renren-com",
-    "name": "renren.com",
-    "description": "OSINT tool: renren.com.",
+    "name": "Renren (人人网)",
+    "description": "Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era accounts) — returns `social-profile` and `name`, if any survives.",
     "url": "http://www.renren.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding legacy Chinese social-network profiles — Renren was China's dominant student/\"Facebook-style\" network in the 2010s; useful for historical presence of a Chinese subject.",
     "selectorsIn": [
       "username",
       "name"
@@ -336126,29 +336213,40 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use, but registration and a working (often Chinese) phone-based login are effectively required to search or view profiles. The platform is in a prolonged \"upgrade\"/decline state.",
+    "opsec": "active",
+    "opsecNote": "Viewing profiles requires logging in, tying activity to whatever account you use — use a sock-puppet Chinese-registered account, not your own. The site is Chinese-jurisdiction and may log foreign access.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Renren is a genuine, once-major Chinese social network, now much diminished and repeatedly \"upgrading.\" Profile availability and search are unreliable; treat any find as a lead.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "renren.com",
+      "人人网",
+      "Chinese Facebook"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "general-social-media-sites",
+      "china",
+      "social-networks"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/renren-com.md"
   },
   {
