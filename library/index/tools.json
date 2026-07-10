@@ -126710,13 +126710,13 @@
   {
     "id": "here-com-geolocation-and-mapping-tool",
     "name": "Here.com Geolocation & Mapping Tool",
-    "description": "Geolocation and mapping program covering worldwide locations",
+    "description": "Use when you have an `address` or coordinates and want an alternative map view — returns `geolocation`, satellite/street imagery, and routing as a cross-check to Google/Bing maps.",
     "url": "https://www.here.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "A non-Google worldwide mapping platform for geocoding, satellite/terrain views, and routing — useful as an independent cross-check.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -126725,31 +126725,40 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "HERE WeGo maps are free to use in-browser; the HERE developer platform (geocoding/routing APIs) is freemium with a free tier and paid scaling. No account needed for basic map browsing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing maps is passive and reaches nothing about any subject. Standard sock-puppet browsing is sufficient; API use requires a HERE developer account tied to your details, so register with a sock puppet if needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "HERE Technologies is a major, established mapping provider (used by automotive and enterprise); its map/geocode data is authoritative-grade, though like any map it can be dated in fast-changing areas.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "freemaptools",
+      "gps-visualizer"
+    ],
+    "aliases": [
+      "HERE Maps",
+      "HERE WeGo",
+      "here.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/geolocation/here-com-geolocation-and-mapping-tool.md"
   },
@@ -157232,44 +157241,58 @@
   {
     "id": "social-catfish-reverse-image-search",
     "name": "Social Catfish Reverse Image Search",
-    "description": "OSINT tool: Social Catfish Reverse Image Search.",
+    "description": "Use when you have an `image`/`face` of an online persona and want to know where else it appears and whose identity it maps to — returns matching `social-profile`s, `name`, and contact leads.",
     "url": "https://socialcatfish.com/reverse-image-search",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying online-dating/persona photos — finding where an image appears and the identity behind it (romance-scam/catfish checks).",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
       "social-profile",
-      "geolocation",
-      "metadata-exif"
+      "name",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A free image search reveals whether matches exist; names, addresses, phones, and full profile links require a paid membership/report. Not a free-data tool beyond the match indicator.",
+    "opsec": "passive",
+    "opsecNote": "Uploading an image to Social Catfish sends it to a commercial third party that retains and processes it — never upload sensitive/victim imagery you can't share externally. The target is not notified. Use a sock-puppet account for any paid report.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial identity-verification service aggregating social/dating/public-record data; results can be strong for reused profile photos but are a paid aggregator's matches, not authoritative identity proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pimeyes",
+      "tineye",
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "Social Catfish",
+      "socialcatfish.com"
+    ],
     "tags": [
-      "reverse-image"
+      "reverse-image",
+      "catfish-check"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/social-catfish-reverse-image-search.md"
   },
   {
@@ -172634,37 +172657,55 @@
   {
     "id": "maigret-osint-bot",
     "name": "Maigret OSINT bot",
-    "description": "OSINT tool: Maigret OSINT bot.",
+    "description": "Use when you have a `username` and want to check thousands of sites for accounts without installing anything — a Telegram bot wrapper for Maigret that returns `social-profile` hits.",
     "url": "https://t.me/osint_maigret_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running Maigret's 3000+-site username search from a Telegram chat, no local install.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot; requires a Telegram account. Third-party bots like this are often rate-limited, intermittently offline, or unmaintained — verify it responds before relying on it.",
+    "opsec": "active",
+    "opsecNote": "You send the target's username to an unknown third party's Telegram bot, which sees your Telegram identity and your query, and runs the searches from its own infrastructure. Assume the operator logs everything. Use a sock-puppet Telegram account; for sensitive work run the open-source Maigret locally instead.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "An unofficial Telegram front end to the open-source Maigret tool, run by an unknown operator; the underlying Maigret is trusted, but this hosted bot is not verified and could log or alter results.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "whatsmyname-web",
+      "social-analyzer"
+    ],
+    "aliases": [
+      "Maigret bot",
+      "osint_maigret_bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "username-check"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/maigret-osint-bot.md"
   },
   {
@@ -202696,37 +202737,57 @@
   {
     "id": "canada411",
     "name": "Canada411",
-    "description": "OSINT tool: Canada411.",
+    "description": "Use when you have a Canadian `phone`, `name`, or `address` and want free white-pages data — returns listed `name`, `address`, and `phone` from Canada's national directory.",
     "url": "http://www.canada411.ca",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free Canadian white-pages people search, reverse phone lookup, and reverse address lookup.",
+    "selectorsIn": [
+      "phone",
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported national directory operated by Yellow Pages Canada; core people/phone/address searches need no account.",
+    "opsec": "passive",
+    "opsecNote": "A directory query is passive and does not notify the subject. You disclose the query to Yellow Pages/YP.ca and its ad network; use a sock-puppet browser. No interaction reaches the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Canada's established national telephone directory, operated by Yellow Pages Digital & Media Solutions with data from Canadian telecom providers; strong for listed landlines, thinner for mobiles.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "allareacodes",
+      "white-pages"
+    ],
+    "aliases": [
+      "Canada 411",
+      "canada411.ca"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "white-pages",
+      "canada"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/canada411.md"
   },
   {
@@ -213338,37 +213399,56 @@
   {
     "id": "voter-records",
     "name": "Voter Records",
-    "description": "OSINT tool: Voter Records.",
+    "description": "Use when you have a US `name` and want registered-voter data — returns `address`, approximate `dob`/age, and political-party affiliation from public voter rolls.",
     "url": "https://voterrecords.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free search of US public voter-registration records by name to get current address, age, and party.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported aggregator of public voter-registration rolls; no account needed. Some links push to paid people-search partners.",
+    "opsec": "passive",
+    "opsecNote": "Reading public voter data is passive and does not notify the subject. You disclose the query to the site and its ad/partner network; use a sock-puppet browser. Be mindful that voter data is sensitive PII — handle per your legal/ethical rules.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Aggregates official state voter rolls, but coverage and freshness vary by state (some states restrict or don't release voter data), and records can lag moves; it is a third-party compiler, not the state registrar.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "new-york-state-voter-records",
+      "thatsthem-phone-search",
+      "white-pages"
+    ],
+    "aliases": [
+      "VoterRecords.com",
+      "voter records"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "voter-records"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/voter-records.md"
   },
   {
@@ -223728,46 +223808,55 @@
   {
     "id": "backgroundchecks-org",
     "name": "backgroundchecks.org",
-    "description": "OSINT tool: backgroundchecks.org.",
+    "description": "Use when you have a US `name` and need to find which public-records/genealogy database to search — a curated directory of free record sources returning pointers to `address`, `associate`, and vital records.",
     "url": "https://backgroundchecks.org/public-records/the-genealogy-resource-guide",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A curated guide/directory of free US public-records and genealogy resources, used to find the right database to search next.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
+      "associate",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The resource guide/directory is free to read; the sites it links to vary (some free, some paid). The parent site also markets paid background-check services — stick to the free guide.",
+    "opsec": "passive",
+    "opsecNote": "Reading a directory/guide is passive and reaches nothing about the subject. OpSec exposure begins only when you follow a link into an actual records site — apply that site's precautions there.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A useful curated guide, but backgroundchecks.org is a commercial background-check company; the guide is a marketing-adjacent resource list, so evaluate each linked source on its own merits.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "cyndi-s-list",
+      "usgenweb-archives-united-states"
+    ],
+    "aliases": [
+      "BackgroundChecks.org genealogy resource guide",
+      "backgroundchecks.org"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/backgroundchecks-org.md"
   },
   {
@@ -228473,46 +228562,56 @@
   {
     "id": "companieshouse-im",
     "name": "companieshouse.im",
-    "description": "OSINT tool: companieshouse.im.",
+    "description": "Use when you have an Isle of Man company `name` or an `employer-org` link and want registry data — returns company status, registered `address`, and filing details.",
     "url": "https://companieshouse.im/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Isle of Man company records (status, registered office, filings) via an open-data aggregator.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search company records; ongoing monitoring/\"follow\" of companies is free for one company then ~£2.00-£2.50/month per company. Data is released under the Open Government Licence.",
+    "opsec": "passive",
+    "opsecNote": "Reading company records is passive and does not touch any individual. You disclose your query to the site; a monitoring account requires registration — use a sock-puppet identity if you subscribe.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A third-party aggregator republishing Isle of Man company data under the Open Government Licence — not the official Isle of Man Central Registry; cross-check critical facts against the official registry.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "companieshouse-gi",
+      "company-information-service-gov-uk"
+    ],
+    "aliases": [
+      "Companies House IM",
+      "companieshouse.im"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "isle-of-man"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/companieshouse-im.md"
   },
   {
@@ -251698,14 +251797,14 @@
   },
   {
     "id": "new-jersey",
-    "name": "New Jersey",
-    "description": "OSINT tool: New Jersey.",
+    "name": "New Jersey DOC Inmate Finder",
+    "description": "Use when you have a `name` and want to check New Jersey state prison custody — returns inmate status, `document-id` (SBI/ID number), `dob`/age, and facility location.",
     "url": "https://www20.state.nj.us/doc_inmate/inmatefinder",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a person is or was in New Jersey Department of Corrections custody by name.",
     "selectorsIn": [
       "name"
     ],
@@ -251714,29 +251813,40 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official New Jersey Department of Corrections inmate lookup; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Querying an official government inmate database is passive and does not notify the subject. Standard sock-puppet browsing hygiene applies; the search itself reaches only the state's public system.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party New Jersey Department of Corrections database — the custody data is authoritative for NJ state prisons (it does not cover county jails or federal custody).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "federal-bureau-of-prisons-inmate-locator-us",
+      "offender-tracking-information-system-otis"
+    ],
+    "aliases": [
+      "NJ DOC Inmate Finder",
+      "New Jersey inmate search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "new-jersey"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/new-jersey.md"
   },
   {
@@ -327898,36 +328008,55 @@
   },
   {
     "id": "instalooter",
-    "name": "instalooter",
-    "description": "OSINT tool: instalooter.",
+    "name": "InstaLooter",
+    "description": "Use when you have a public Instagram `username`, hashtag, or location and want to bulk-download its media without login or the API — returns saved `image`s/videos with `metadata-exif`.",
     "url": "https://pypi.org/project/instalooter/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Programmatic bulk download of a public Instagram profile/hashtag/location's media without an account or the official API.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free, open-source Python package/CLI. No cost, but Instagram's frequent front-end changes routinely break unauthenticated scrapers like this — expect breakage and check the project's issue tracker before relying on it.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "InstaLooter fetches public media from your own host/IP, so Instagram sees the request pattern (bursty scraping can trigger blocks). It does not log into or notify the target account when used unauthenticated. Run behind a proxy/VPN from a sock-puppet environment; never supply your real Instagram credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established open-source tool (PyPI/GitHub), but Instagram's anti-scraping changes mean it is frequently partially or fully broken; reliability depends on the current release matching Instagram's live behaviour.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "instaloader-2",
+      "toutatis-2"
+    ],
+    "aliases": [
+      "instalooter",
+      "InstaLooter"
+    ],
+    "tags": [
+      "instagram",
+      "downloader"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instalooter.md"
   },
   {
@@ -335061,45 +335190,57 @@
   },
   {
     "id": "psnprofiles",
-    "name": "PSNprofiles",
-    "description": "Search PlayStation username, see daily activity, games played, country, and profile pic",
+    "name": "PSNProfiles",
+    "description": "Use when you have a PlayStation Network `username` and want a public gaming profile — returns trophy/games activity, country, avatar `image`, and an activity timeline for pattern-of-life.",
     "url": "https://psnprofiles.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a PSN gamertag's public trophy/activity profile — games, country, avatar, and daily activity timing.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "username",
-      "social-profile"
+      "social-profile",
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view public PSN profiles; no account required (an optional account only adds tracking features).",
+    "opsec": "passive",
+    "opsecNote": "PSNProfiles scrapes public PSN trophy data; viewing a profile here does not touch the target's PSN account or notify them. Standard sock-puppet browsing is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running third-party PSN trophy tracker; data mirrors public PlayStation profiles but depends on the user having public trophies and on PSNProfiles' scraping being current.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "namechk-2"
+    ],
+    "aliases": [
+      "PSN Profiles",
+      "psnprofiles.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "other-platforms"
+      "other-platforms",
+      "gaming"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/psnprofiles.md"
   },
   {
