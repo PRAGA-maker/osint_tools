@@ -109796,45 +109796,51 @@
   {
     "id": "secmail",
     "name": "SecMail",
-    "description": "Service provider for sending anonymous email",
+    "description": "Use when you need a disposable, anonymous email address to register sock-puppet accounts without exposing a real inbox — provides throwaway/anonymous `email` accounts. (Operational infra, not a lookup.)",
     "url": "https://www.secure-email.org",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Creating anonymous/disposable email accounts to stand up sock-puppet identities for OSINT work.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email",
-      "social-profile"
+      "email"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free anonymous accounts with paid premium tiers (multiple domains, extra features). No real identity required to sign up.",
+    "opsec": "active",
+    "opsecNote": "This is operational tradecraft, not a passive lookup — you are creating an identity you will act from. Never link it to your real details, use it over a clean/VPN'd browser, and treat the provider as untrusted with anything you send/receive. NOTE the service also advertises SMS sender \"spoofing\"; using spoofing to impersonate a person or organisation is illegal in many jurisdictions — do not use it, keep to anonymous email for legitimate sock-puppet registration only.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trustNote": "A privacy/anonymous-email provider of unclear operatorship; fine as throwaway sock-puppet infrastructure, but do not trust it with anything sensitive and be aware its spoofing features invite misuse.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "SecMail",
+      "secure-email.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "email-addresses"
+      "email-addresses",
+      "sock-puppet"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/secmail.md"
   },
@@ -111954,40 +111960,50 @@
   {
     "id": "what-mail",
     "name": "What Mail?",
-    "description": "Simple #python tool for email headers analyze and visualize them in a table.",
+    "description": "Use when you have a raw `email` header / .eml and want to parse and visualize it to trace the message's origin and path — returns sending `ip-address`, relay `domain`s, and `metadata-exif`-style header fields.",
     "url": "https://github.com/z0m31en7/WhatMail",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Parsing email headers into a readable table to expose originating IP, mail servers, and authentication/routing details.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email"
+      "ip-address",
+      "domain",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python CLI); no account. Runs locally on header text you already have.",
+    "opsec": "passive",
+    "opsecNote": "Analysis is entirely local on a header you already possess — nothing is sent to the sender or any third party, so it's fully passive and leaves no trace. Handle the email content securely (it may contain sensitive data).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple community Python header parser; it presents header fields, so accuracy of any conclusion depends on the (spoofable) headers themselves.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WhatMail",
+      "What Mail"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "email-headers",
+      "header-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/what-mail.md"
   },
@@ -123627,52 +123643,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/geolocation/earthexplorer.md"
-  },
-  {
-    "id": "echosec",
-    "name": "Echosec",
-    "description": "Geo-location based social media, forum, and news monitoring by location, keyword, username, and more",
-    "url": "https://www.echosec.net/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "geo-location-mapping-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "full",
-    "_file": "library/tools/geolocation/echosec.md"
   },
   {
     "id": "emmeline-carto-com",
@@ -218272,44 +218242,50 @@
   {
     "id": "saynoto0870-com",
     "name": "saynoto0870.com",
-    "description": "OSINT tool: saynoto0870.com.",
+    "description": "Use when you have a UK non-geographic/premium `phone` number (084x/087x/03xx) and want the organisation behind it and its alternative geographic number — returns the `employer-org`/company and a normal landline equivalent.",
     "url": "http://www.saynoto0870.com/search.php",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-looking-up a UK non-geographic (0870/0845/0844 etc.) number to the organisation and a geographic landline alternative.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "employer-org",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free community database; no account needed to search.",
+    "opsec": "passive",
+    "opsecNote": "You search a community-maintained database, not the number's owner — passive, no notification. Standard browser hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A long-running crowd-sourced UK database of alternative numbers; entries are user-contributed, so the organisation mapping is usually reliable but not authoritative.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SayNoTo0870",
+      "saynoto0870"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "reverse-phone-lookup"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/saynoto0870-com.md"
   },
   {
@@ -223077,46 +223053,50 @@
   {
     "id": "bahrainbourse-com",
     "name": "bahrainbourse.com",
-    "description": "OSINT tool: bahrainbourse.com.",
+    "description": "Use when you have a Bahrain-listed `employer-org` and want official market data and corporate disclosures — returns company quotes, announcements, AGM/dividend actions, and disclosed officer/ownership detail.",
     "url": "https://bahrainbourse.com/en/pages/companies.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Bahrain Bourse listed-company data — quotes, corporate announcements, and disclosures for entities on the Bahrain stock exchange.",
     "selectorsIn": [
-      "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public market-data portal (prices delayed ~15 minutes); no account needed to view listings and announcements.",
+    "opsec": "passive",
+    "opsecNote": "A public stock-exchange information site — you view market/company data, nothing reaches any subject. No login; standard browser hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The official Bahrain Bourse (stock exchange) site; listing and disclosure data is authoritative for exchange-listed entities.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "bh"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bahrain Bourse",
+      "bahrainbourse"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "stock-exchange"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bahrainbourse-com.md"
   },
   {
@@ -227704,46 +227684,55 @@
   {
     "id": "companieshouse-gi",
     "name": "companieshouse.gi",
-    "description": "OSINT tool: companieshouse.gi.",
+    "description": "Use when you have a Gibraltar `employer-org` or director `name` and want official company registry data — returns company details, directors/officers (`name`), registered `address`, and filings.",
     "url": "https://www.companieshouse.gi/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Gibraltar company registry — company details, directors, and filings for Gibraltar-registered entities.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The registry is official; basic search may be free, but viewing/downloading company documents via the e-Registry typically requires registration and per-document fees.",
+    "opsec": "passive",
+    "opsecNote": "You query the official registry, not the subject — no notification. Buying documents via the e-Registry ties activity to a registered account/payment; use a research account and a lawful basis.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The official Gibraltar Companies House registry (statutory incorporations/dissolutions and filings); data is authoritative.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gi"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Companies House Gibraltar",
+      "Gibraltar company registry"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/companieshouse-gi.md"
   },
   {
@@ -234866,45 +234855,53 @@
   },
   {
     "id": "find-a-prisoner",
-    "name": "Find a prisoner",
-    "description": "OSINT tool: Find a prisoner.",
+    "name": "Find a prisoner (gov.uk)",
+    "description": "Use when you have a `name` and believe someone is in prison in England or Wales but don't know which one — a request service (not a public database) — returns which prison holds them, by post, with the prisoner's consent.",
     "url": "https://www.gov.uk/find-prisoner",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating which English/Welsh prison holds a named person via the official HMPPS request service.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free government service. Not instant and not public — you submit a request and HMPPS replies by post within ~4 weeks, and only shares the prison if the prisoner consents.",
+    "opsec": "active",
+    "opsecNote": "This is a request to a government body, not an anonymous database query. You must give your own details, and the prisoner is asked for permission before information is shared — so both you and your interest become known. Use only with a genuine, lawful reason.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official gov.uk / HMPPS service; authoritative, but access is gated (manual review + prisoner consent), so it is not an open OSINT lookup.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Find a prisoner",
+      "HMPPS prisoner location service"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/find-a-prisoner.md"
   },
   {
@@ -258960,35 +258957,53 @@
   {
     "id": "rejestr-sprawc-w-przest-pstw-na-tle-seksualnym",
     "name": "Rejestr Sprawców Przestępstw na Tle Seksualnym",
-    "description": "OSINT tool: Rejestr Sprawców Przestępstw na Tle Seksualnym.",
+    "description": "Use when you have a `name` of a person possibly convicted of a sexual offence in Poland and want the official public sex-offender register entry — returns `name`, `dob`, last-known locality (`address`), and photo/`physical-description`.",
     "url": "https://rps.ms.gov.pl/pl-PL/Public#/home",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking Poland's official public register of sexual-offence perpetrators for a named individual.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The public part of the register is free and open to everyone. A separate \"restricted access\" register (more detail, incl. exact address) is only available to authorized entities (employers of child-facing roles, institutions) with a justified request.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the official Ministry of Justice register, not the subject — no notification. The public part needs no login; the restricted register requires an authenticated, justified request that is logged. This is sensitive personal data — access and use lawfully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Polish Ministry of Justice (Ministerstwo Sprawiedliwości); entries are authoritative court-derived records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "pl"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Polish Sex Offender Register",
+      "RPS",
+      "Rejestr Sprawców Przestępstw na Tle Seksualnym"
+    ],
+    "tags": [
+      "court",
+      "sex-offender-register",
+      "poland"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rejestr-sprawc-w-przest-pstw-na-tle-seksualnym.md"
   },
   {
@@ -322106,49 +322121,6 @@
     "_file": "library/tools/social-networks/google-com-55.md"
   },
   {
-    "id": "google-com-56",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Arocketreach.co&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "linkedin",
-      "LinkedIn & Similar Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-56.md"
-  },
-  {
     "id": "google-com-57",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -350457,14 +350429,14 @@
   },
   {
     "id": "x-com-4",
-    "name": "x.com",
-    "description": "OSINT tool: x.com.",
+    "name": "x.com (X / Twitter native search)",
+    "description": "Use when you have a `username` or `name` and want the subject's X (Twitter) profile and posts via the platform's own search — returns `social-profile`, `name`, bio, posts, and connections.",
     "url": "https://www.x.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "The primary platform check — finding and reading a subject's X (Twitter) account, bio, posts, and network directly on X.",
     "selectorsIn": [
       "username",
       "name"
@@ -350473,29 +350445,38 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to view, but X now gates most search and profile browsing behind a logged-in account and rate-limits heavily; some data needs a paid Premium/API tier.",
+    "opsec": "active",
+    "opsecNote": "Browsing X while logged in exposes your account/session to X, and viewing profiles/following can leave traces (e.g. appearing in \"who viewed\"-style signals, follow notifications). Use a dedicated sock-puppet X account on a clean browser/IP; never a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The genuine first-party X platform; profiles and posts are authoritative, though user content is self-authored and can be false.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "X",
+      "Twitter",
+      "x.com"
+    ],
     "tags": [
       "xtwitter",
       "X / Twitter Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/x-com-4.md"
   },
   {
