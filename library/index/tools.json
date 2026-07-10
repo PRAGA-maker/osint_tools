@@ -8694,13 +8694,13 @@
   {
     "id": "maltego",
     "name": "Maltego",
-    "description": "OSINT and graphical link-analysis tool for gathering and connecting information.",
+    "description": "Use when you have any entity (`name`, `email`, `username`, `phone`, `domain`, `ip-address`) and want to build and expand a link-analysis graph via transforms — returns connected names, emails, social-profiles, associates, domains and IPs.",
     "url": "https://maltego.com",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Visual link analysis connecting people, emails, domains, social profiles via transforms",
+    "bestFor": "Visual link analysis — connecting people, emails, domains, social profiles, phones and infrastructure into an entity-relationship graph using transforms.",
     "selectorsIn": [
       "name",
       "email",
@@ -8718,24 +8718,30 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Community Edition (CE) is free but limited (registration required, ~12 results per transform, no commercial use). Maltego Pro/Enterprise and many premium transform hubs are paid subscriptions, sometimes with per-query API costs from data providers.",
+    "opsec": "active",
+    "opsecNote": "Transforms call out to external data providers and target infrastructure (DNS, WHOIS, social APIs), so queries leave your environment and some touch the target's assets. Run from a research environment/VPN, mind which transform hubs you enable (they send your selectors to third parties), and avoid transforms that actively probe a target you shouldn't touch.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "desktop-app",
     "trust": "trusted",
-    "trustNote": "Industry-standard link-analysis platform; free Community Edition with limits, paid for full transforms.",
+    "trustNote": "Industry-standard link-analysis platform used across OSINT, security and law-enforcement; the app is trusted, though the quality of any result depends on the specific transform/data provider behind it.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": true,
     "localInstall": true,
     "registration": true,
-    "aliases": [],
+    "aliases": [
+      "Maltego CE",
+      "Maltego Community Edition"
+    ],
     "tags": [
       "link-analysis",
       "graph",
@@ -8743,7 +8749,7 @@
       "entity-mapping"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/maltego.md"
   },
@@ -101144,40 +101150,53 @@
   },
   {
     "id": "buster",
-    "name": "buster",
-    "description": "OSINT tool to gather account/registration info from an email.",
+    "name": "Buster",
+    "description": "Use when you have an `email` and want linked accounts, breaches, pastes and reverse-WHOIS domains — returns social-profile, name and domain leads.",
     "url": "https://github.com/sham00n/buster",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Email reconnaissance from the CLI — mapping an address to social accounts, breach/paste appearances, registered domains and name/username guesses.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open-source (Python). Some data sources (e.g. hunter.io for work emails) benefit from a free API key added to api-keys.yaml; without keys, coverage is reduced.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Buster queries third-party services and public breach/paste indexes about the email — it does not contact the address owner, so it is passive toward the target. Your queries do hit those third parties, so run behind a VPN and use throwaway API keys.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular open-source email-OSINT tool (1.4k+ stars) by sham00n; effective, but several upstream sources it relies on change or die over time, so results are uneven and some modules may be broken.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "buster",
+      "sham00n/buster"
+    ],
+    "tags": [
+      "email-osint",
+      "breach-check",
+      "cli"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/buster.md"
   },
@@ -110757,29 +110776,30 @@
   {
     "id": "tencent-qq-mail",
     "name": "Tencent QQ Mail",
-    "description": "Email service provider",
+    "description": "Use when you have a Chinese `email` (especially number@qq.com) and want to pivot it to a QQ number and Tencent social identity — returns social-profile and the QQ username/number.",
     "url": "https://exmail.qq.com",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising and pivoting QQ/Tencent email addresses — a numeric @qq.com address is the person's QQ ID, linking to QQ IM and Qzone.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email",
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The mail service is free; the OSINT value is the pivot from a QQ email to a QQ number, not a paid lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Deriving a QQ number from a numeric @qq.com address and searching public Tencent profiles is passive. Attempting a password-recovery/existence check on the mailbox, or messaging the QQ account, is active and can alert the owner — stop at passive pivots and use a puppet if you must probe Tencent services.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Tencent is the legitimate operator of QQ/QQ Mail; \"unverified\" here reflects that this is an email provider being used as an OSINT pivot, not a vetted lookup tool, and that Tencent profile visibility varies.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -110788,14 +110808,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "QQ Mail",
+      "QQ Mailbox",
+      "exmail.qq.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "email-addresses"
+      "email-addresses",
+      "china",
+      "qq"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/tencent-qq-mail.md"
   },
@@ -173665,37 +173691,53 @@
   {
     "id": "sangmatainfo-bot",
     "name": "SangMataInfo_bot",
-    "description": "OSINT tool: SangMataInfo_bot.",
+    "description": "Use when you have a Telegram user (via a forwarded message or numeric ID) and want their history of past display names and usernames — returns name and username history.",
     "url": "https://t.me/SangMataInfo_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Revealing a Telegram account's previous display names and usernames — exposing rebrands, aliases and identity changes.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "name",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to query by an account's numeric ID or by forwarding one of their messages; querying directly by @username is a premium feature. You need a Telegram account to use the bot.",
+    "opsec": "active",
+    "opsecNote": "You interact with a third-party Telegram bot and hand it the target's message/ID, so the bot operator sees who you're researching and your Telegram account is the one asking. Use a sock-puppet Telegram account (burner number), and remember the bot only knows changes it witnessed in groups it shares with the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running, widely used Telegram name-history bot (SangMata family); effective but community-operated and opaque about data handling, so treat its history as observed-changes, not a complete record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SangMata",
+      "SangMataInfo",
+      "SangMata_bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "name-history",
+      "alias-tracking"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/sangmatainfo-bot.md"
   },
   {
@@ -196825,24 +196867,25 @@
   {
     "id": "trace-labs-osint-vm-tlosint-vm",
     "name": "Trace Labs OSINT VM (tlosint-vm)",
-    "description": "Kali-based OSINT Linux distribution pre-loaded with the Trace Labs-endorsed OSINT toolset for CTF and missing-persons investigations.",
+    "description": "Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for missing-persons and CTF work.",
     "url": "https://github.com/tracelabs/tlosint-vm",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "Ready-to-go investigator workstation with curated OSINT tools, Obsidian vault, Tor and OpSec hardening.",
+    "bestFor": "A ready-to-go, OpSec-hardened investigator workstation with a curated OSINT toolset, Obsidian case vault, Tor and anonymisation utilities.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; you build or download the image and run it in VirtualBox/VMware. The only cost is disk and the host virtualisation software.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The VM itself is an environment, not a query — its OpSec value is that it centralises anonymisation (Tor, anonsurf, macchanger, mat2 metadata scrubbing) so your investigative traffic and files don't leak your identity. OpSec still depends on the individual tools you run inside it and whether you route them through Tor/VPN; the VM enables good practice but doesn't guarantee it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
     "trust": "trusted",
-    "trustNote": "Official Trace Labs VM build; canonical list of endorsed tools is in scripts/tlosint-tools.sh.",
+    "trustNote": "Official Trace Labs build; Trace Labs is a well-known non-profit running missing-persons OSINT CTFs, and the endorsed toolset is defined in the repo's provisioning script.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -196864,8 +196907,8 @@
       "opsec"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/trace-labs-osint-vm-tlosint-vm.md"
   },
   {
@@ -250641,36 +250684,53 @@
   },
   {
     "id": "new-york-state-voter-records",
-    "name": "New York State Voter Records",
-    "description": "OSINT tool: New York State Voter Records.",
+    "name": "New York State Voter Records (Steve Morse)",
+    "description": "Use when you have a `name` in New York State and want their voter registration — returns address, dob, party and household associate voters.",
     "url": "https://stevemorse.org/nysvoters/nysvoters.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching New York State voter registration records (2002-2024) by name to get residential address, date of birth, party and voting history.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public search interface over the New York State voter file; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a static, publicly released voter dataset via Steve Morse's search page — you never contact the subject, and the data is already public record. Fully passive; standard web-server logging by the host applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Steve Morse's One-Step tools are long-established and respected in the genealogy/OSINT community; the underlying data is the official New York State voter registration file, so records are authoritative (within the covered years).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NYS Voter Records",
+      "Steve Morse voter search",
+      "One-Step voter records"
+    ],
+    "tags": [
+      "voter-records",
+      "new-york",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/new-york-state-voter-records.md"
   },
   {
@@ -325015,45 +325075,51 @@
   },
   {
     "id": "insta-timestamp-github-com",
-    "name": "insta timestamp (github.com)",
-    "description": "OSINT tool: insta timestamp (github.com).",
+    "name": "Insta Timestamp",
+    "description": "Use when you have an Instagram post/reel/story open and want its exact upload date and time — a bookmarklet that returns the post's timestamp (metadata).",
     "url": "https://github.com/stegers/insta-timestamp",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Revealing the precise upload date/time of an Instagram post, reel or story from the desktop site via a browser bookmarklet.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source bookmarklet (JavaScript on GitHub); nothing to buy or install beyond saving a bookmark.",
+    "opsec": "passive",
+    "opsecNote": "The bookmarklet runs locally in your browser against the page you are already viewing — it sends nothing to a third party. You do, however, have to load the Instagram post yourself; if you view it while logged in, Instagram sees your account, so browse from a sock-puppet or logged-out session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Small open-source bookmarklet (stegers on GitHub); source is short and inspectable, but it depends on Instagram's page structure and can break when Instagram changes its DOM.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "insta-timestamp",
+      "Instagram timestamp bookmarklet"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "timestamp",
+      "bookmarklet"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/insta-timestamp-github-com.md"
   },
   {
@@ -328257,13 +328323,13 @@
   {
     "id": "mastodon",
     "name": "Mastodon",
-    "description": "Decentralized social networking service that functions much like Twitter",
+    "description": "Use when you have a `name` or `username` and want to find a subject's profile on the decentralised Mastodon/fediverse network — returns a social-profile handle and their public posts.",
     "url": "https://mastodon.social",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person's Mastodon (fediverse) profile and reading their public posts across federated instances.",
     "selectorsIn": [
       "name",
       "username"
@@ -328271,31 +328337,37 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; searching public posts/profiles needs no account, though a (puppet) account improves full-text search on some instances.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public profiles and posts is passive. Mastodon is privacy-conscious and federated — following, boosting or replying from a real account exposes you to the target and their instance admins. Use a sock-puppet account on a large public instance if you need to interact or use logged-in search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Legitimate open-source federated network; there is no central authority verifying identities, and anyone can run an instance, so treat handles and claims as self-asserted.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mastodon",
+      "fediverse",
+      "mastodon.social"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "fediverse"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/mastodon.md"
   },
@@ -329291,37 +329363,49 @@
   {
     "id": "mostly-harmless",
     "name": "Mostly Harmless",
-    "description": "OSINT tool: Mostly Harmless.",
+    "description": "Use when you have a URL/`domain` or image and want to find where it's been posted on Reddit and who submitted it — a browser extension returning social-profile (Reddit) leads.",
     "url": "http://kerrick.github.io/Mostly-Harmless/#features",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "While browsing any page, instantly seeing every Reddit thread that submitted that URL and jumping to the submitters and discussions.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (MIT) browser extension; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The extension queries Reddit's public API about the URL you're viewing — it does not contact any Reddit user, so it's passive. Be aware it sends the URLs you browse to Reddit's API; use its domain-exclusion settings to avoid leaking sensitive/private URLs, and don't run it while browsing case material you want kept off Reddit's servers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing open-source extension (Kerrick Long, since 2011); reliable in concept, but old — it may lag behind Reddit API/Manifest V3 changes, so verify it still functions in your current browser.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mostly Harmless",
+      "Mostly Harmless Reddit extension"
+    ],
     "tags": [
-      "reddit"
+      "reddit",
+      "browser-extension",
+      "link-discovery"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/mostly-harmless.md"
   },
   {
@@ -370348,13 +370432,13 @@
   {
     "id": "whatsmyname-python",
     "name": "WhatsMyName-Python",
-    "description": "Python script that checks username availability/presence across hundreds of online platforms.",
+    "description": "Use when you have a `username` and want to enumerate which of 600+ sites have an account with that handle — returns matching social-profile links and confirmed usernames.",
     "url": "https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Enumerating where a given username exists across social and web platforms",
+    "bestFor": "Fast, wide username enumeration across hundreds of social/web platforms using the community WhatsMyName (wmn-data) dataset.",
     "selectorsIn": [
       "username"
     ],
@@ -370362,15 +370446,16 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Python); install locally, no account or API key.",
+    "opsec": "active",
+    "opsecNote": "The script sends a request to each target site to test whether the username exists, so your IP touches hundreds of platforms in a burst. It never contacts the target person, but the traffic pattern is distinctive — run it behind a VPN/proxy and avoid an attributable IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "135 stars; Python port of the well-known WhatsMyName project/wmn-data.json, by C3n7ral051nt4g3ncy.",
+    "trustNote": "Python port of the well-known WhatsMyName project by C3n7ral051nt4g3ncy; built on the community-maintained wmn-data.json used across many OSINT tools, so coverage is broad and widely trusted.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -370389,7 +370474,7 @@
       "social-discovery"
     ],
     "source": "gh-topic-intelligence-gathering",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/whatsmyname-python.md"
   },
