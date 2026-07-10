@@ -177514,41 +177514,51 @@
   {
     "id": "wechat-text-backup",
     "name": "wechat-text-backup",
-    "description": "Decrypting and backing up local WeChat message archives",
+    "description": "Use when you have local access to a subject's Windows WeChat data and want to decrypt and export their chat history — returns readable message archives (contacts, timestamps, message text).",
     "url": "https://github.com/zhaofeng-shu33/wechat-text-backup",
     "category": "messaging",
     "path": [
       "messaging",
       "wechat-line"
     ],
-    "bestFor": "Decrypting and backing up local WeChat message archives",
-    "input": "Local WeChat database files and decryption context",
-    "output": "Decrypted, readable WeChat chat history exports",
+    "bestFor": "Decrypting and exporting the local (Windows) WeChat SQLite message databases into readable chat history.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "selectorsOut": [
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (GitHub). Requires local Python/toolchain and a Windows debugger; no paid service.",
     "opsec": "active",
-    "opsecNote": "Performs direct decryption and extraction actions against local account data stores.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This is a forensic action against a device you must already lawfully control — it reads and decrypts local WeChat databases and requires extracting a 32-byte key from WeChat's process memory with a debugger. Only run on an image/device you are authorized to examine; never against an account or device you don't own or have legal authority over.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community GitHub forensics utility; works only for specific older WeChat Windows versions and is not a maintained commercial product — verify on a test dataset before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "wechat text backup"
+    ],
+    "tags": [
+      "wechat",
+      "forensics",
+      "chat-export"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/wechat-line/wechat-text-backup.md"
   },
   {
@@ -218426,44 +218436,49 @@
   {
     "id": "sms-receive-net",
     "name": "sms-receive.net",
-    "description": "OSINT tool: sms-receive.net.",
+    "description": "Use when you have a `phone` number and want to check whether it is a public throwaway SMS-receive number (or need a disposable number yourself) — returns whether the number is a shared/public line and its publicly displayed inbound SMS.",
     "url": "https://sms-receive.net/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying disposable/public SMS-receive numbers and reading their public inbound message logs.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free; no account. Numbers and their received messages are public — anyone can read them.",
+    "opsec": "passive",
+    "opsecNote": "Reading the public number pages is passive and touches only sms-receive.net. Do NOT use one of these numbers to register/verify an account tied to your investigation — messages are public and the number is shared, so any OTP or reset code you receive is visible to everyone and the number can be reclaimed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running free public-SMS service; useful and genuine, but numbers rotate and are shared, so treat any account tied to one as disposable/untrustworthy.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SMS Receive",
+      "receive SMS online"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "disposable-number"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/sms-receive-net.md"
   },
   {
@@ -218798,43 +218813,50 @@
   {
     "id": "thatsthem-phone-search",
     "name": "ThatsThem Phone Search",
-    "description": "OSINT tool: ThatsThem Phone Search.",
+    "description": "Use when you have a US `phone` number and want the owner's name, address, and linked details — returns `name`, `address`, `email`, `social-profile`, `associate`.",
     "url": "https://thatsthem.com/reverse-phone-lookup",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Free US reverse-phone lookup that resolves a number to a name, address, carrier, and linked email.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
       "address",
+      "email",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core reverse-phone results (name, city/state, carrier) are shown free with no login; fuller address/email/associate detail and bulk/API use are gated behind paid tiers.",
+    "opsec": "passive",
+    "opsecNote": "You query ThatsThem's own aggregated database, not the target's devices or accounts, so nothing reaches the subject. Still run from a clean/sock-puppet browser — ThatsThem logs searches and may profile your IP for ad/data purposes.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established free US data aggregator; data comes from marketing/public-record compilations that are often stale or partially wrong, so treat hits as leads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ThatsThem reverse phone"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "reverse-phone-lookup"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/thatsthem-phone-search.md"
   },
   {
@@ -240421,46 +240443,50 @@
   {
     "id": "hmcpl-obituary-index",
     "name": "HMCPL Obituary Index",
-    "description": "Huntsville-Madison County Public Library system obituary index",
+    "description": "Use when you have a `name` of someone likely connected to the Huntsville/Madison County, Alabama area and want to find their obituary — returns `dob`/death date, `associate` (surviving relatives), and `address`/place links.",
     "url": "http://obits.hmcpl.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a large local obituary index (Huntsville-Madison County, Alabama) to confirm a death and harvest family/relationship detail.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "dob",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search the index; photocopies of an individual obituary can be requested for $5 each.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public library records index — you search a database, nothing reaches any living relative. No login; a sock puppet is optional.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by the Huntsville-Madison County Public Library (Special Collections); an authoritative curated index of published obituaries for the area.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Huntsville-Madison County Public Library Obituary Index"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "obituary"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/hmcpl-obituary-index.md"
   },
@@ -241229,45 +241255,52 @@
   },
   {
     "id": "idaho",
-    "name": "Idaho",
-    "description": "OSINT tool: Idaho.",
+    "name": "Idaho (IDOC Offender Search)",
+    "description": "Use when you have a `name` and want to check Idaho Department of Correction custody/probation/parole status — returns `name`, `document-id` (IDOC number), custody status, location, and felony listing.",
     "url": "https://www.idoc.idaho.gov/content/prisons/offender_search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is currently incarcerated, on probation, or on parole under Idaho DOC jurisdiction.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public government database; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "An official public-records lookup — you query the state database, nothing reaches the subject. No login, so no attribution beyond your IP; a sock puppet is optional but tidy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Idaho Department of Correction system; authoritative for people currently under IDOC jurisdiction, updated daily.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Idaho Department of Correction offender search",
+      "IDOC offender search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/idaho.md"
   },
   {
@@ -317969,30 +318002,34 @@
   {
     "id": "faceparty",
     "name": "FaceParty",
-    "description": "A social networking website for ages 35 and under",
+    "description": "Use when you have a `name` or `username` possibly tied to an older UK internet user and want to check for a legacy FaceParty profile — returns `social-profile`, photos, and stated interests.",
     "url": "https://www.faceparty.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Checking one of the UK's oldest social/dating networks for a legacy profile under a name or handle.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to browse and register a basic profile; some contact/messaging features have historically been paid. It is a legacy niche network with a small, aging user base.",
+    "opsec": "active",
+    "opsecNote": "Viewing member profiles may require a logged-in account, and browsing/messaging can be visible to members. Register and browse only from a sock-puppet account with disposable email; never use an attributable identity on a live dating-style site.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trustNote": "A long-running but niche UK social/dating site with a controversial history; still resolving as live but low-traffic, so profile coverage is thin and identity claims are unverified.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -318000,14 +318037,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Faceparty"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/faceparty.md"
   },
@@ -329456,44 +329495,52 @@
   {
     "id": "memory-lol-github-com",
     "name": "memory.lol (github.com)",
-    "description": "OSINT tool: memory.lol (github.com).",
+    "description": "Use when you have a Twitter/X `username` or numeric account ID and want its historical screen-name changes — returns prior `username`s and account identity continuity.",
     "url": "https://github.com/travisbrown/memory.lol/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up the past screen-name history of a Twitter/X account to defeat username changes and confirm account identity over time.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "username",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free service and open-source. Unauthenticated access is limited to name changes observed in the last ~60 days; logging in with GitHub/Google unlocks more, and full multi-year histories are reserved for vetted researchers/journalists.",
+    "opsec": "passive",
+    "opsecNote": "You query memory.lol's archived dataset (built from the Internet Archive Twitter Stream Grab and Wayback Machine), not the target's live account, so nothing touches the subject. Optional GitHub/Google login ties queries to that identity — use a research account if you authenticate.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "Maintained by researcher Travis Brown; data derived from Internet Archive sources, widely cited in the OSINT community as reliable for Twitter username history.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "memory.lol",
+      "Twitter username history"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "username-history"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/memory-lol-github-com.md"
   },
   {
@@ -347571,35 +347618,50 @@
   {
     "id": "twitter-search-tool",
     "name": "Twitter search tool",
-    "description": "OSINT tool: Twitter search tool.",
+    "description": "Use when you have a `username`, `name`, keyword, or `geolocation` and want to build advanced Twitter/X search queries without a Twitter account — returns `social-profile`, tweets, and location-scoped posts.",
     "url": "https://www.aware-online.com/en/osint-tools/twitter-search-tool/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A free guided query-builder for advanced Twitter/X searches (users, tweets, phrases, dates, location) without logging into X.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free tool from Aware Online Academy; no account required. It constructs a Twitter/X search URL — results depend on X's own (increasingly login-gated) search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The builder itself is passive (it just assembles a query). Following the generated link into X may prompt a login and expose your session/IP to X — use a sock-puppet browser and, where possible, a research X account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Provided by Aware Online Academy, a reputable OSINT training company; the tool is a convenience query-builder, so result quality is really X's, not theirs.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Aware Online Twitter search tool"
+    ],
+    "tags": [
+      "twitter",
+      "x-com",
+      "query-builder"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-search-tool.md"
   },
   {
@@ -370004,13 +370066,13 @@
   {
     "id": "spy",
     "name": "Spy",
-    "description": "Just another very quick and simple account checker by username (210 sites in list).",
+    "description": "Use when you have a `username` and want a fast presence check across ~210 sites — returns the `social-profile`s where that handle is registered.",
     "url": "https://github.com/CYB3R-G0D/SPY",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "A lightweight Python CLI that checks a single username across ~210 social/web platforms.",
     "selectorsIn": [
       "username"
     ],
@@ -370018,27 +370080,34 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GitHub); no account or API key. Requires local Python install.",
+    "opsec": "active",
+    "opsecNote": "The tool requests each candidate profile URL directly from your machine, so all ~210 target sites see your IP. Run it through a VPN/proxy or from a sock-puppet VPS so the sweep isn't attributed to you; consider throttling threads to avoid rate-limit flags.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community GitHub username checker in the Sherlock/WhatsMyName family; simple and unmaintained-risk, with the usual false-positive/negative caveats of presence checkers.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SPY",
+      "CYB3R-G0D SPY"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username-enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/spy.md"
   },
