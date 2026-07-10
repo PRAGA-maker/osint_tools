@@ -12,7 +12,7 @@ selectorsIn:
 - username
 selectorsOut:
 - social-profile
-- metadata
+- username
 status: live
 pricing: free
 costNote: Free to browse and search; no account required.
@@ -78,7 +78,7 @@ You want to find video content connected to a subject and mainstream searches (Y
 |---|---|
 | id | metatube-com |
 | category | image-video-face |
-| selectorsIn → selectorsOut | name, username → social-profile, metadata |
+| selectorsIn → selectorsOut | name, username → social-profile, username |
 | pricing / cost | free |
 | trust | unverified |
 | MP relevance | high |

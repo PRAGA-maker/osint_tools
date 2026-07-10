@@ -12,7 +12,7 @@ selectorsIn:
 selectorsOut:
 - image
 - geolocation
-- metadata
+- metadata-exif
 - social-profile
 status: live
 pricing: free
@@ -84,7 +84,7 @@ You have a target Instagram `username` and need more than a browser tab: a durab
 |---|---|
 | id | instaloader-2 |
 | category | social-networks |
-| selectorsIn → selectorsOut | username → image, geolocation, metadata, social-profile |
+| selectorsIn → selectorsOut | username → image, geolocation, metadata-exif, social-profile |
 | pricing / cost | free |
 | trust | community |
 | MP relevance | high |

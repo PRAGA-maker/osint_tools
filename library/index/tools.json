@@ -143363,49 +143363,6 @@
     "_file": "library/tools/image-video-face/find-youtube-video.md"
   },
   {
-    "id": "findclone",
-    "name": "FindClone",
-    "description": "Russian facial-recognition search across VK photos.",
-    "url": "https://findclone.ru/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "face",
-      "image"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "ru"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "face-recognition"
-    ],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "full",
-    "_file": "library/tools/image-video-face/findclone.md"
-  },
-  {
     "id": "findpiclocation-com",
     "name": "findpiclocation.com",
     "description": "Use when you have a photo and need to estimate where it was taken (image geolocation) to localize a missing person or a sighting.",
@@ -150949,7 +150906,7 @@
     ],
     "selectorsOut": [
       "social-profile",
-      "metadata"
+      "username"
     ],
     "status": "live",
     "pricing": "free",
@@ -175804,7 +175761,7 @@
     ],
     "selectorsOut": [
       "social-profile",
-      "metadata"
+      "username"
     ],
     "status": "live",
     "pricing": "freemium",
@@ -223536,47 +223493,55 @@
   },
   {
     "id": "bizportal-gov-za",
-    "name": "bizportal.gov.za",
-    "description": "OSINT tool: bizportal.gov.za.",
+    "name": "BizPortal (CIPC South Africa)",
+    "description": "Use when you have a person's `name` or a company (`employer-org`) in South Africa and want to confirm company registration, status and directors — returns employer-org, name and co-director associate links.",
     "url": "https://bizportal.gov.za/default.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming South African company registration details, status (active/deregistered) and director listings via the official CIPC portal.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Company lookups (BizProfile) are free, but you must create/log in to a BizPortal account first (required under South Africa's POPIA privacy law). Registering a new company is a paid service (~R125–R175); searching existing records is free.",
+    "opsec": "passive",
+    "opsecNote": "You are querying the official CIPC registry, not the subject, so nothing is disclosed to the person of interest. However, BizPortal now requires a logged-in account to search, so your registered identity is recorded by CIPC — use a dedicated research account rather than a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official portal of the Companies and Intellectual Property Commission (CIPC), the South African government company registrar; data is authoritative first-party registry data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "za"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "BizPortal",
+      "CIPC BizProfile",
+      "CIPC company search"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bizportal-gov-za.md"
   },
   {
@@ -252165,36 +252130,54 @@
   },
   {
     "id": "offender-tracking-information-system-otis",
-    "name": "Offender Tracking Information System (OTIS)",
-    "description": "OSINT tool: Offender Tracking Information System (OTIS).",
+    "name": "Michigan OTIS (Offender Tracking Information System)",
+    "description": "Use when you have a `name` of someone possibly in the Michigan corrections system and want their status, photo, physical description and location — returns image, physical-description, address and dob.",
     "url": "https://mdocweb.state.mi.us/OTIS2/otis2.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up Michigan prisoners, parolees, probationers and absconders by name — status, mugshot, physical description, offense and current facility/supervision.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "image",
+      "physical-description",
+      "address",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public service of the Michigan Department of Corrections; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the state corrections database, not the subject, so nothing is disclosed to the person. Fully passive; standard state web-server logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Michigan Department of Corrections system; the offender status, location and identifying data are authoritative first-party government records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OTIS",
+      "Michigan OTIS",
+      "MDOC Offender Search"
+    ],
+    "tags": [
+      "court",
+      "inmate",
+      "corrections"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/offender-tracking-information-system-otis.md"
   },
   {
@@ -262075,36 +262058,53 @@
   },
   {
     "id": "social-security-death-master-file",
-    "name": "Social Security Death Master File",
-    "description": "OSINT tool: Social Security Death Master File.",
+    "name": "Social Security Death Master File (SSDI)",
+    "description": "Use when you have a `name` (or SSN) of a possibly-deceased US person and want death confirmation with birth/death dates and last residence — returns dob, address and document-id.",
     "url": "https://ssdmf.info/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming a US death and retrieving birth date, death date, SSN and last-residence details from the Social Security Death Index.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "dob",
+      "address",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browse-by-name access via the SSDI mirror (ssdmf.info redirects to sortedbyname.com). Full/most-current SSDMF data is a paid commercial dataset; the free public index lags and omits recent/state-only deaths.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a death index touches no living target and discloses nothing to anyone. Fully passive; standard web-server logging by the mirror applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free third-party mirror of the US Social Security Administration's Death Master File; underlying data is authoritative government data, but the free index is dated and incomplete versus the official/commercial feeds.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SSDI",
+      "Social Security Death Index",
+      "Death Master File",
+      "sortedbyname.com"
+    ],
+    "tags": [
+      "death-records",
+      "vital-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/social-security-death-master-file.md"
   },
   {
@@ -264265,45 +264265,52 @@
   },
   {
     "id": "the-courts-of-british-columbia-home",
-    "name": "The Courts of British Columbia - Home",
-    "description": "OSINT tool: The Courts of British Columbia - Home.",
+    "name": "Courts of British Columbia",
+    "description": "Use when you have a `name` involved in a BC (Canada) court matter and want published judgments, daily hearing lists and case references — returns name, document-id and associate/party links.",
     "url": "https://www.bccourts.ca/index.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding British Columbia court judgments, daily hearing/court lists and case file references naming a party.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Judgments (Court of Appeal, Supreme Court) and daily hearing/court lists are free to search and read on bccourts.ca. Full case-file search by party name is done via the separate Court Services Online (CSO) portal, which charges a per-search fee (a few dollars).",
+    "opsec": "passive",
+    "opsecNote": "Searching public judgments and court lists is passive and touches nothing the subject controls. If you use CSO party search you register/pay, so that activity is logged by the court service — use a research account for CSO.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official website of the Courts of British Columbia (Court of Appeal, Supreme Court, Provincial Court); judgments and lists are authoritative primary court records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BC Courts",
+      "bccourts.ca",
+      "Courts of British Columbia"
+    ],
     "tags": [
       "court",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/the-courts-of-british-columbia-home.md"
   },
   {
@@ -310908,14 +310915,14 @@
   },
   {
     "id": "authentic8-com",
-    "name": "authentic8.com",
-    "description": "OSINT tool: authentic8.com.",
+    "name": "Authentic8 — Instagram OSINT Guide",
+    "description": "Use when you're investigating an Instagram account (`username`/`name`) and want a structured methodology — profile, network, content and metadata techniques; a guide that returns social-profile and name leads.",
     "url": "https://www.authentic8.com/blog/osint-instagram-guide",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A practitioner reference for Instagram OSINT — bio mining, reverse-image search, network mapping, geolocation from posts, and anonymous viewing.",
     "selectorsIn": [
       "username",
       "name"
@@ -310924,29 +310931,37 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public blog article; no account needed to read. Authentic8 sells the Silo managed-attribution browser, but the guide is free content.",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. The techniques it teaches range from passive (reverse-image search, Google dorks, anonymous viewers) to active (logging in to view profiles, using emulators). Apply managed-attribution/sock-puppet practices — which the vendor itself sells — when you act on the methods, so you don't expose yourself to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Authentic8, an established OSINT/secure-browsing vendor (Silo); a credible, well-structured methodology article (a guide, not a data tool).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Authentic8 Instagram OSINT",
+      "Silo Instagram guide"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "reference",
+      "methodology"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/authentic8-com.md"
   },
   {
@@ -316586,14 +316601,14 @@
   },
   {
     "id": "facebook-matrix-2",
-    "name": "Facebook Matrix",
-    "description": "OSINT tool: Facebook Matrix.",
+    "name": "The Facebook Matrix",
+    "description": "Use when you have a Facebook numeric UID or profile (`username`/`name`) and want ready-made search-URL templates to pull photos, friends, places and check-ins — returns social-profile, image and associate links.",
     "url": "https://docs.google.com/spreadsheets/d/15dd0qscdydwvtwkc9zfzk1j8rzmvzarxtu9hrm34dnu/edit",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A copy-paste cheat-sheet of Facebook graph-search-style URL templates for enumerating a target's photos, friends, likes, places and activity.",
     "selectorsIn": [
       "username",
       "name"
@@ -316603,28 +316618,38 @@
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public Google Sheet; no account needed to view. You still need Facebook access (usually a logged-in account) to run most of the URLs.",
+    "opsec": "active",
+    "opsecNote": "The spreadsheet itself is passive to read, but the URL templates are executed against Facebook while logged in — Facebook logs those queries and can surface you in \"people you may know\" to the target. Run every template from a sock-puppet Facebook account on a clean browser/IP, never your real profile.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-maintained OSINT reference spreadsheet (widely shared in the OSINT community); techniques degrade as Facebook removes Graph Search endpoints, so some rows may be stale.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Facebook Matrix",
+      "Facebook search matrix"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "reference",
+      "cheat-sheet"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-matrix-2.md"
   },
   {
@@ -325880,7 +325905,7 @@
     "selectorsOut": [
       "image",
       "geolocation",
-      "metadata",
+      "metadata-exif",
       "social-profile"
     ],
     "status": "live",
@@ -342464,37 +342489,54 @@
   {
     "id": "tinder-2",
     "name": "Tinder",
-    "description": "OSINT tool: Tinder.",
+    "description": "Use when you have a subject's approximate location and rough identity and want to find their dating-app profile within a radius — returns social-profile, image, physical-description and approximate geolocation.",
     "url": "https://www.gotinder.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "Locating a subject's Tinder dating profile by browsing within their geographic area and age band; extracting photos, bio and approximate distance.",
+    "selectorsIn": [
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "physical-description",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to create an account and swipe within limits; paid tiers (Tinder+/Gold/Platinum, and \"Passport\") unlock changing your location to browse another city and remove daily swipe caps.",
+    "opsec": "active",
+    "opsecNote": "Tinder is fully interactive. You must create an account and appear in the local swiping pool yourself; \"liking\" or matching the subject notifies them and exposes your puppet profile. Use a convincing sock-puppet account with puppet photos and a burner number, browse (do not match) the target, and be aware your set location can leak your own approximate area.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Mainstream dating platform (Match Group); profiles are self-created, lightly verified at best, so identity and photos are not guaranteed genuine.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Tinder",
+      "gotinder.com"
+    ],
     "tags": [
-      "major-social-networks"
+      "major-social-networks",
+      "dating"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tinder-2.md"
   },
   {
@@ -348213,37 +348255,52 @@
   {
     "id": "vk-community-search",
     "name": "VK Community Search",
-    "description": "OSINT tool: VK Community Search.",
+    "description": "Use when you have a keyword, place or interest (`name`) and want to find VKontakte groups/communities a subject may belong to — returns social-profile communities and associate members.",
     "url": "http://vk.com/communities",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching VKontakte communities/groups by keyword to find the groups tied to a person, place, event or interest and their members.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; VK increasingly requires a logged-in account to search and view communities fully.",
+    "opsec": "active",
+    "opsecNote": "Browsing communities from a logged-in VK account can leave a footprint (VK logs activity, and joining a group is visible). Use a sock-puppet VK account with a burner number; do not join or interact with target communities from an attributable profile.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party VKontakte functionality (the platform's own community search); the community data is authoritative platform data, though members' identities are self-asserted.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ru"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VK groups search",
+      "VKontakte communities",
+      "vk.com/communities"
+    ],
     "tags": [
       "vkontakte"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/vk-community-search.md"
   },
   {
@@ -369115,29 +369172,37 @@
   {
     "id": "sylva-identity-discovery",
     "name": "Sylva Identity Discovery",
-    "description": "Username enumeration with identity branching",
+    "description": "Use when you have a `username` and want to enumerate accounts across platforms AND branch out to discover linked identities — returns social-profile and username leads.",
     "url": "https://sylva.pfeister.dev/",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Username enumeration with identity branching",
-    "input": "Username",
-    "output": "Linked accounts and identities across platforms",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "CLI username enumeration that \"branches\" — starting from one handle and recursively discovering connected identities across platforms.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (install via pip/Docker). Some enrichment features require third-party API keys you supply yourself, which may have their own costs/limits.",
     "opsec": "active",
-    "opsecNote": "Makes requests to target platforms to check username existence; external API keys may be used.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Sylva makes live requests to each target platform to test whether a username exists, so your IP touches those sites. Any configured API keys route through third-party services. Run it from a VPN/clean IP and use throwaway API keys; do not run it from an IP tied to your identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by Paul Pfeister, maintained on GitHub with a Python package and Docker image; community tool, not independently audited.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
@@ -369145,11 +369210,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Sylva",
+      "sylva.pfeister.dev"
+    ],
+    "tags": [
+      "username",
+      "enumeration",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/sylva-identity-discovery.md"
   },
   {

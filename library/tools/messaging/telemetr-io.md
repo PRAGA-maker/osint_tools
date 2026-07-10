@@ -12,7 +12,7 @@ selectorsIn:
 - name
 selectorsOut:
 - social-profile
-- metadata
+- username
 status: live
 pricing: freemium
 costNote: Free tier exists but is tightly capped (≈1,000 requests/month, 5 verified channels, 7-day history; post-search and "Spy" mention-tracking heavily limited). Paid tiers (S/M/L/XL, roughly $25–$499/month) unlock deep post search, longer history and more trackings.
@@ -80,7 +80,7 @@ You have a Telegram channel handle (`username`), a person/organisation name, or 
 |---|---|
 | id | telemetr-io |
 | category | messaging |
-| selectorsIn → selectorsOut | username, name → social-profile, metadata |
+| selectorsIn → selectorsOut | username, name → social-profile, username |
 | pricing / cost | freemium |
 | trust | community |
 | MP relevance | high |
