@@ -160819,30 +160819,31 @@
   {
     "id": "y8",
     "name": "Y8",
-    "description": "Website related to social networking and players of over 500 games on this website",
+    "description": "Use when you have a gaming `username` and suspect the subject uses Y8's browser-games portal — returns a public in-site `social-profile` with avatar `image` and activity.",
     "url": "http://www.y8.com/popular/games",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a username has a public profile on the Y8 browser-games community — a niche username/profile pivot.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free browser-games site; viewing public member profiles needs no account, though creating one to interact does.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public Y8 member profile is passive and does not notify the target. Only if you register and follow/message a user does it become active. Browse from a sock-puppet context and avoid logging in with a real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Y8 is a legitimate long-running browser-games portal with member profiles, but as an OSINT source it is niche and identity signal is weak (self-declared display data only).",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -160851,14 +160852,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "zynga",
+      "namechk-2",
+      "whatsmyname-web"
+    ],
+    "aliases": [
+      "Y8 Games",
+      "y8.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "gaming"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/y8.md"
   },
@@ -161951,46 +161960,56 @@
   {
     "id": "zynga",
     "name": "Zynga",
-    "description": "Website related to social networking and players of over 25 games on this website",
+    "description": "Use when you have a gaming `username` and suspect the subject plays a Zynga social game — returns whether that handle maps to an in-game `social-profile` and avatar `image`.",
     "url": "https://www.zynga.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Context on a subject who plays Zynga social games (Words With Friends, Zynga Poker, FarmVille) — a weak username/profile pivot, not a people-search engine.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Playing Zynga games is free (freemium in-game purchases); there is no public people-search — any lookup happens inside a game client.",
+    "opsec": "active",
+    "opsecNote": "Zynga offers no passive public search; to check a handle you must be inside a game (Words With Friends lets you search players by username), which is ACTIVE — searching for or adding a player can notify them. Use a sock-puppet game account, never your own.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Zynga is a legitimate social-gaming company, but as an OSINT resource it has no public search interface; utility is marginal and indirect (in-game handle matching only).",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "y8",
+      "namechk-2"
+    ],
+    "aliases": [
+      "Zynga games",
+      "Words With Friends"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "gaming"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/zynga.md"
   },
@@ -202193,13 +202212,13 @@
   {
     "id": "bellingcat-name-variant-search",
     "name": "Bellingcat Name Variant Search",
-    "description": "Quickly search many variants of a person's name on Google",
+    "description": "Use when you have a `name` and want every plausible spelling, transliteration, and nickname to search across — returns an expanded set of `name` variants with pre-built search links.",
     "url": "https://bellingcat.github.io/name-variant-search/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Generating alternate spellings, transliterations, and nicknames of a person's name so no variant is missed.",
     "selectorsIn": [
       "name"
     ],
@@ -202207,29 +202226,40 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Bellingcat tool; runs entirely in the browser, no account or key.",
+    "opsec": "passive",
+    "opsecNote": "Generating variants is passive and local — nothing is sent to the target. The pre-built DuckDuckGo/Facebook search links, however, are ordinary searches; run them from a sock-puppet browser if you don't want them tied to you, and remember that clicking through to a target's profile can be active.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by Bellingcat, a well-known open-source investigations organisation; source is public on GitHub.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "alternate-spelling-finder",
+      "forebears"
+    ],
+    "aliases": [
+      "Bellingcat name variant tool",
+      "name-variant-search"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "people"
+      "people",
+      "name-variants"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/bellingcat-name-variant-search.md"
   },
   {
@@ -231016,13 +231046,13 @@
   {
     "id": "cyndi-s-list",
     "name": "Cyndi's List",
-    "description": "OSINT tool: Cyndi's List.",
+    "description": "Use when you have a `name` and a research locale and want to find the right genealogy database or record collection to search next — returns pointers to sources that yield `associate`, `dob`, and death records.",
     "url": "https://www.cyndislist.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A categorised directory of 300,000+ genealogy websites and record collections, used to find which database to search for a given place or record type.",
     "selectorsIn": [
       "name"
     ],
@@ -231031,29 +231061,41 @@
       "dob",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory, funded by donations; some sites it links to are themselves paid or subscription (Ancestry, Findmypast, etc.).",
+    "opsec": "passive",
+    "opsecNote": "Browsing a link directory is passive and reaches nothing about the subject. OpSec exposure only begins when you follow a link into an actual records site — apply that site's precautions there, not here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A well-established, 25+ year genealogy directory (Cyndi Ingle) widely cited by researchers and libraries; it is a curated index of links, not a data source itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "rootsweb-2",
+      "usgenweb-archives-united-states",
+      "findmypast"
+    ],
+    "aliases": [
+      "Cyndi's List of Genealogy Sites",
+      "cyndislist.com"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "directory"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cyndi-s-list.md"
   },
   {
@@ -258076,46 +258118,59 @@
   {
     "id": "probaterecords-co-uk",
     "name": "probaterecords.co.uk",
-    "description": "OSINT tool: probaterecords.co.uk.",
+    "description": "Use when you have a deceased person's `name` and want an official sealed copy of their England & Wales will or grant of probate — returns `associate` (executors/beneficiaries), `address`, and death details.",
     "url": "https://probaterecords.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Ordering official sealed/certified copies of England & Wales wills and grants of probate via an expedited paid service.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
+      "associate",
       "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Paid document-ordering service (operated by \"UK Documents\") — you pay per sealed/certified copy of a will or grant. There is no free search; the free first-party equivalent is the GOV.UK probate search (probatesearch.service.gov.uk) which lists the calendar entry and lets you order copies for £1.50. Use probaterecords.co.uk only for expedited/overseas convenience.",
+    "opsec": "passive",
+    "opsecNote": "You are ordering a public record from an intermediary, not contacting the subject (who is deceased). Passive, but you disclose your interest and payment/contact details to the service; use a role-based email if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A commercial intermediary (UK Documents, London) that obtains genuine court-sealed probate documents from the Probate Registry; not a first-party government service. Service has at times shown as suspended/degraded.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gov-uk-6",
+      "gro-gov-uk"
+    ],
+    "aliases": [
+      "Probate Records",
+      "UK Documents probate"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "probate"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/probaterecords-co-uk.md"
   },
   {
@@ -265088,46 +265143,58 @@
   {
     "id": "systemday-com",
     "name": "systemday.com",
-    "description": "OSINT tool: systemday.com.",
+    "description": "Use when you have a company `name` or number in an offshore/hard-to-reach jurisdiction and want an official registry search report — returns `employer-org` status, incorporation date, and registered `address`.",
     "url": "https://www.systemday.com/mauritius-company-search/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Ordering official company-registry search reports for offshore jurisdictions (Mauritius, BVI, Seychelles, and others) where the registry has no free public search.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Paid, agent-mediated service — a Mauritius company search report is ~£188 (expedited option ~£75 extra), delivered in 3-4 business days. There is no free self-serve search; System Day is an incorporation agent that pulls and resells registry data. For jurisdictions with a free public registry, use that registry directly instead.",
+    "opsec": "passive",
+    "opsecNote": "You are ordering a report about a company from a third-party agent, not touching the target. Passive with respect to the subject, but you disclose your interest (and payment/contact details) to System Day. Use a role-based email if you don't want the enquiry tied to you personally.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "System Day Ltd is a UK-based corporate-services/incorporation agent; reports are sourced from the official Mauritius Registrar of Companies but are resold via a paid intermediary rather than a first-party registry.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "b2bhint-com"
+    ],
+    "aliases": [
+      "System Day",
+      "systemday Mauritius company search"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "offshore"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/systemday-com.md"
   },
   {
@@ -268830,46 +268897,57 @@
   {
     "id": "usgenweb-archives-united-states",
     "name": "USGenWeb Archives (United States)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name` and want transcribed US genealogical records — obituaries, wills, cemetery, census, and marriage records — returns `associate`, `address`, and `dob`/death dates from historical documents.",
     "url": "http://www.usgwarchives.net",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free county-by-county US genealogical records (wills, cemeteries, obituaries, census, marriages) transcribed by volunteers.",
     "selectorsIn": [
       "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "associate",
+      "address",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Entirely free and volunteer-run; no account, subscription, or payment. Funded by donations.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading of a public archive — the target is not notified and nothing is submitted. Standard sock-puppet browsing hygiene is enough; there is no login or query that reaches the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Volunteer-transcribed records under the long-running USGenWeb Project; transcriptions are generally reliable but can contain typos or gaps and should be confirmed against original documents where accuracy matters.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "rootsweb-2",
+      "cyndi-s-list",
+      "billiongraves-com"
+    ],
+    "aliases": [
+      "USGenWeb Archives",
+      "usgwarchives.net"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
+      "genealogy",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/usgenweb-archives-united-states.md"
   },
@@ -325456,44 +325534,59 @@
   {
     "id": "id-zalo-me",
     "name": "id.zalo.me",
-    "description": "OSINT tool: id.zalo.me.",
-    "url": "https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F#",
+    "description": "Use when you have a Vietnamese `phone` number and want to confirm it maps to a Zalo account — returns the linked `social-profile`, display `name`, and avatar `image`.",
+    "url": "https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a (usually Vietnamese) phone number belongs to a Zalo user and pulling the display name/avatar.",
     "selectorsIn": [
-      "username",
-      "name"
+      "phone",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Zalo and its account/lookup features are free; a Zalo account (and the mobile app for QR login) is required.",
+    "opsec": "active",
+    "opsecNote": "id.zalo.me itself is only the login gateway. The actual phone→account lookup happens inside Zalo (add-by-phone / find-friend), which is ACTIVE — adding or viewing a target can surface you to them and may send a contact/friend signal. Use a dedicated sock-puppet Zalo account and burner device/number, never your real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Zalo (VNG Corporation) endpoint; the account-existence and profile data come from the platform itself, not a scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "checkwa",
+      "telegram-phone-number-checker"
+    ],
+    "aliases": [
+      "Zalo account",
+      "Zalo login",
+      "chat.zalo.me"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "vietnam"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/id-zalo-me.md"
   },
   {
@@ -326072,45 +326165,59 @@
   },
   {
     "id": "inflact-com-4",
-    "name": "inflact.com",
-    "description": "OSINT tool: inflact.com.",
+    "name": "inflact.com (Instagram Reels Downloader)",
+    "description": "Use when you have an Instagram Reel `social-profile`/URL and want to save the video for offline analysis without logging in — returns the downloaded `image`/video and its `metadata`.",
     "url": "https://inflact.com/downloader/instagram/reels/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously downloading a public Instagram Reel video (no login) for preservation and frame-by-frame analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows ~2 downloads/day; Premium (~$7.80/month) removes the limit and adds bulk/profile downloading. No account needed for the free single-reel download.",
+    "opsec": "passive",
+    "opsecNote": "Inflact fetches the Reel through its own proxy servers, so the download does not come from your IP and the target account gets no viewer/download signal. You do, however, paste the target URL into a third-party site — assume Inflact logs it. Use a sock-puppet context; never log into your real Instagram here.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Inflact is a commercial Instagram growth/marketing service; its downloader works reliably for public content but is a third-party scraper, not affiliated with Instagram, and terms/limits can change.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "snapinsta-to",
+      "toutatis-2",
+      "insta-timestamp-github-com"
+    ],
+    "aliases": [
+      "Inflact Reels Downloader",
+      "Insta Reels Downloader"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inflact-com-4.md"
   },
   {
@@ -351668,45 +351775,61 @@
   },
   {
     "id": "x-com-6",
-    "name": "x.com",
-    "description": "OSINT tool: x.com.",
+    "name": "x.com (password reset oracle)",
+    "description": "Use when you have an `email`, `phone`, or `username` and want to confirm it belongs to an X/Twitter account — returns account existence plus masked recovery `email`/`phone` hints.",
     "url": "https://x.com/account/begin_password_reset",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether an email/phone/username is tied to a live X (Twitter) account and leaking masked recovery contact hints.",
     "selectorsIn": [
-      "username",
-      "name"
+      "email",
+      "phone",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "email",
+      "phone",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free; X's own password-reset flow. No account or payment needed to run the existence check.",
+    "opsec": "active",
+    "opsecNote": "This queries X's auth system about the target's identifier. Stop at the existence/hint step — do NOT request or enter a reset code, which would send a real security alert to the account owner. Run it logged out from a sock-puppet browser/IP; repeated attempts can trip rate limits and CAPTCHAs.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is X/Twitter's genuine first-party account-recovery endpoint, so the existence signal and masked hints are authoritative — not a third-party scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com",
+      "tweeterid",
+      "memory-lol-github-com"
+    ],
+    "aliases": [
+      "Twitter password reset",
+      "X account existence check"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "account-existence"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/x-com-6.md"
   },
   {
