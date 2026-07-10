@@ -150935,45 +150935,51 @@
   },
   {
     "id": "metatube-com",
-    "name": "metatube.com",
-    "description": "OSINT tool: metatube.com.",
+    "name": "MetaTube",
+    "description": "Use when you have a `name`/`username` or keyword and want to find videos about a subject aggregated from across platforms — returns social-profile links and video metadata.",
     "url": "https://www.metatube.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Keyword/name search across aggregated third-party video content to surface clips featuring or posted by a subject.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "metadata"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Read-only browsing of an aggregator; you never contact the subject or the original poster, so nothing is disclosed to them. Standard web-server logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent third-party video-aggregation site with no editorial vetting; it re-hosts/links content from other platforms, so provenance of any clip must be checked at the original source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "metatube",
+      "metatube.com"
+    ],
     "tags": [
       "videosites",
       "Video Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/metatube-com.md"
   },
   {
@@ -175784,44 +175790,54 @@
   },
   {
     "id": "telemetr-io",
-    "name": "telemetr.io",
-    "description": "OSINT tool: telemetr.io.",
+    "name": "Telemetrio (telemetr.io)",
+    "description": "Use when you have a Telegram channel/`username` or a keyword and want channel analytics, post search and mention monitoring across millions of channels — returns social-profile, associated channels and post metadata.",
     "url": "https://telemetr.io/en/channels",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Searching and analysing public Telegram channels at scale — rankings, subscriber/reach stats, ad-creative intel, keyword post search and real-time mention tracking.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "metadata"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier exists but is tightly capped (≈1,000 requests/month, 5 verified channels, 7-day history; post-search and \"Spy\" mention-tracking heavily limited). Paid tiers (S/M/L/XL, roughly $25–$499/month) unlock deep post search, longer history and more trackings.",
+    "opsec": "passive",
+    "opsecNote": "You query Telemetrio's own index, not Telegram directly, so the target's channel is not notified of your interest. Create an account with a research email; avoid tying searches to a personal Telegram login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Listed in Bellingcat's Online Investigation Toolkit and widely used by researchers; a reputable third-party Telegram analytics aggregator, though data is its own index rather than official Telegram output.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Telemetrio",
+      "telemetr.io"
+    ],
     "tags": [
       "telegram",
       "Telegram"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telemetr-io.md"
   },
   {
@@ -238660,47 +238676,53 @@
   },
   {
     "id": "gov-uk-6",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "gov.uk (Teaching Regulation Agency misconduct)",
+    "description": "Use when you have a teacher's `name` (or `employer-org` school) and want to find UK professional-misconduct panel outcomes — returns name, employer-org and document-id.",
     "url": "https://www.gov.uk/search/all?parent=&keywords=panel+outcome+misconduct&level_one_taxon=&manual=&organisations%5B%5D=teaching-regulation-agency&organisations%5B%5D=national-college-for-teaching-and-leadership&public_timestamp%5Bfrom%5D=&public_timestamp%5Bto%5D=&order=updated-newest",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding published teacher-misconduct / professional-conduct panel decisions for a named individual in England.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free UK-government service; no account, payment or API key required.",
+    "opsec": "passive",
+    "opsecNote": "You are searching the public GOV.UK website, not the subject's own accounts, so nothing is disclosed to the target. GOV.UK may log your IP like any web server; use a clean browser if you want to keep the query off your work profile, but there is no leakage to the person of interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the UK Government (GOV.UK) and the Teaching Regulation Agency; misconduct decisions are first-party official publications, not third-party aggregation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Teaching Regulation Agency search",
+      "TRA misconduct outcomes",
+      "GOV.UK teacher misconduct"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-6.md"
   },
   {
@@ -244629,47 +244651,53 @@
   },
   {
     "id": "lauderdale-county",
-    "name": "Lauderdale County",
-    "description": "Lauderdale County, Alabama records, includes historical court and land records, and obituaries",
+    "name": "Lauderdale County, Alabama (RootsWeb/ALGenWeb)",
+    "description": "Use when you have a `name` tied to Lauderdale County, Alabama and want historical court, land, cemetery and obituary records — returns associates, historic addresses and dob/death dates.",
     "url": "http://www.rootsweb.ancestry.com/~allauder/?cj=1&netid=cj&o_xid=0000584978&o_lid=0000584978&o_sch=Affiliate+External",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Genealogical/historical records for Lauderdale County, Alabama — court and land records, cemetery listings, obituaries and family histories.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "associate",
+      "address",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free volunteer-maintained genealogy pages (RootsWeb/USGenWeb). No account needed; some Ancestry affiliate links on the page lead to paid Ancestry.com content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Static public genealogy pages; browsing discloses nothing to any subject. Ignore the embedded Ancestry affiliate/tracking parameters in the URL — they route to a commercial upsell, not to the county records themselves.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Volunteer-run RootsWeb/ALGenWeb county page; RootsWeb has been largely frozen/read-only since a 2018 security incident, so content is static and unmaintained but the historical transcriptions remain useful.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Lauderdale County ALGenWeb",
+      "allauder RootsWeb",
+      "Lauderdale County Alabama genealogy"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/lauderdale-county.md"
   },
@@ -264791,47 +264819,57 @@
   },
   {
     "id": "thegenealogist-co-uk",
-    "name": "thegenealogist.co.uk",
-    "description": "OSINT tool: thegenealogist.co.uk.",
+    "name": "TheGenealogist",
+    "description": "Use when you have a `name` (plus rough `dob`/`address`) and want UK census, BMD, parish, will and 1939-register records — returns name, dob, address and associate links.",
     "url": "https://www.thegenealogist.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Deep UK family-history research — census 1841-1911, the 1939 Register, civil BMD, parish and non-conformist records, and wills for a named individual.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "dob",
+      "address"
     ],
     "selectorsOut": [
+      "name",
+      "dob",
       "address",
-      "employer-org",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Record images and most detailed results are behind paid subscription tiers (BMD index, Starter, Gold, Diamond). Basic keyword searching returns hit counts, but viewing transcriptions/images requires an account and payment; treat as a paid resource for anything beyond confirming a record exists.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive against a commercial genealogy site and does not touch the subject. If you register/subscribe, your own billing identity is stored by the provider (Genealogy Supplies (Jersey) Ltd / S&N Group); use a dedicated research account and payment method rather than a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established commercial UK genealogy provider (S&N Group); records are transcribed/imaged from official primary sources, but transcription errors exist and it is a third-party aggregator, not the record office itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "gb"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "The Genealogist",
+      "S&N Genealogy Supplies"
+    ],
     "tags": [
       "genealogybdmANDwills",
       "Genealogy Linked Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/thegenealogist-co-uk.md"
   },
   {
@@ -311901,45 +311939,53 @@
   },
   {
     "id": "blog-compass-security-com",
-    "name": "blog.compass-security.com",
-    "description": "OSINT tool: blog.compass-security.com.",
+    "name": "Compass Security — LinkedIn OSINT Tips & Tricks",
+    "description": "Use when you have a subject on LinkedIn (`name`/`username`) and want proven techniques to deanonymise surnames, detect language, and X-ray profiles — a methods guide, returns social-profile and name leads.",
     "url": "https://blog.compass-security.com/2025/06/linkedin-for-osint-tips-and-tricks/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A practitioner reference for investigating LinkedIn profiles and companies with good OpSec — surname deanonymisation, PDF language leaks, Google dorking, Wayback recovery.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public blog article; no account needed to read.",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. The *techniques* it teaches vary — private-mode browsing and Google dorking are passive, while creating sock-puppet LinkedIn accounts and viewing profiles are active steps that can expose you or notify the target. Apply its OpSec advice (private mode, puppet accounts) when you act on the methods.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Compass Security, an established professional penetration-testing firm; a reputable, technically credible source (a methods guide, not a data tool).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Compass Security LinkedIn OSINT",
+      "LinkedIn OSINT tips and tricks"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "reference",
+      "methodology"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/blog-compass-security-com.md"
   },
   {
@@ -314113,14 +314159,14 @@
   },
   {
     "id": "diaspora",
-    "name": "Diaspora",
-    "description": "A non-profit, user-owned social network existing on independently run servers (called pods)",
+    "name": "Diaspora*",
+    "description": "Use when you have a `name` or `username` and want to check for a presence on the decentralised Diaspora* social network — returns a social-profile handle if the person is active on a pod.",
     "url": "https://diasporafoundation.org/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person's profile on the decentralised, privacy-focused Diaspora* network (federated \"pods\").",
     "selectorsIn": [
       "name",
       "username"
@@ -314128,15 +314174,16 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; joining a pod is free. No cost to search public posts/profiles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public post/tag search is passive. Diaspora* is privacy-focused and federated, so many profiles are limited to followers; interacting (following, messaging) from a real account would expose you — use a sock-puppet pod account if you need to see more than public content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Legitimate non-profit, open-source federated network; no central authority vouches for individual pods or user identities, so treat any profile as self-asserted.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -314145,14 +314192,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "diaspora",
+      "diaspora foundation",
+      "diaspora pods"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/diaspora.md"
   },
@@ -325815,36 +325866,56 @@
   },
   {
     "id": "instaloader-2",
-    "name": "instaloader",
-    "description": "OSINT tool: instaloader.",
+    "name": "Instaloader",
+    "description": "Use when you have an Instagram `username` and want to bulk-download that profile's posts, captions, geotags and metadata for offline analysis — returns image, geolocation, metadata-exif and social-profile data.",
     "url": "https://pypi.org/project/instaloader/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Archiving an Instagram profile's public posts, stories, captions, comments and geotags locally via a Python CLI/library.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation",
+      "metadata",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (MIT); install via pip. No paid tier or API key.",
+    "opsec": "active",
+    "opsecNote": "Instaloader hits Instagram's servers from your IP. Anonymous scraping of public profiles is possible but rate-limited and can trip anti-bot blocks; logging in with an account (needed for private profiles/stories) ties the scraping to that account and risks temporary or permanent bans and, for private targets, notifying them via a follow. Use a dedicated sock-puppet Instagram account and a throwaway IP, and throttle requests.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular, actively maintained open-source project with a large user base and public source on GitHub; unofficial and not endorsed by Instagram/Meta.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "instaloader",
+      "instaloader python"
+    ],
+    "tags": [
+      "instagram",
+      "scraper",
+      "downloader"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instaloader-2.md"
   },
   {
@@ -328534,46 +328605,55 @@
   },
   {
     "id": "meetme",
-    "name": "Meetme",
-    "description": "Social networking site that helps you find people nearby; includes chat",
+    "name": "MeetMe",
+    "description": "Use when you have a `name` or `username` and want to check for a profile on the MeetMe social/dating \"people nearby\" network — returns a social-profile with photos and rough location.",
     "url": "https://www.meetme.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a subject has a MeetMe social-discovery/dating profile and pulling their photos, bio and approximate location.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to join and browse; some discovery/messaging features are gated behind MeetMe+ credits/subscription. An account is effectively required to search users.",
+    "opsec": "active",
+    "opsecNote": "MeetMe is an interactive social/dating app — viewing or liking profiles from a logged-in account can notify the other user and expose your identity. Always operate from a sock-puppet account with puppet photos; never use a personal profile.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running mainstream social/dating platform (part of The Meet Group / ParshipMeet), operating since 2005; profiles are self-created and unverified.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "meetme",
+      "meetme.com",
+      "myYearbook"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "dating"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/meetme.md"
   },
@@ -330620,7 +330700,7 @@
   {
     "id": "one-million-tweet-map",
     "name": "One Million Tweet Map",
-    "description": "Real-time geolocated tweet monitoring",
+    "description": "Use when you have a keyword/hashtag or `username` and want to see where recent geotagged tweets originate — returns geolocation of posts on a live world map.",
     "url": "https://onemilliontweetmap.com/",
     "category": "social-networks",
     "path": [
@@ -330628,22 +330708,29 @@
       "twitter",
       "location-mapping"
     ],
-    "bestFor": "Real-time geolocated tweet monitoring",
-    "input": "Keyword, map area, and time filters",
-    "output": "Mapped tweet locations with associated post content",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Visualising the last ~24 hours of geotagged tweets for a keyword, hashtag or handle on an interactive world map.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to use in-browser; no account required. Value is now limited by how little geolocation Twitter/X exposes, not by a paywall.",
     "opsec": "passive",
-    "opsecNote": "Read-only web usage with no direct target interaction required.",
+    "opsecNote": "Read-only browsing of a third-party map; you never contact the target's account, so nothing is disclosed to them. Standard web-server logging by the map operator applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent visualiser (Maptimize) built on Twitter's public streaming data; not affiliated with Twitter/X, and its completeness depends entirely on the shrinking pool of geotagged, API-visible tweets.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -330651,11 +330738,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OneMillionTweetMap",
+      "onemilliontweetmap.com"
+    ],
+    "tags": [
+      "twitter",
+      "geolocation",
+      "location-mapping"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/location-mapping/one-million-tweet-map.md"
   },
   {
