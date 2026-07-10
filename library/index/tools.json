@@ -136612,13 +136612,13 @@
   {
     "id": "yandexmaps",
     "name": "YandexMaps",
-    "description": "Mapping program covering worldwide locations, offered by Yandex",
+    "description": "Use when you have an `address` or coordinates (especially Russia/Eastern Europe/Central Asia) and want maps, satellite, and street panoramas — returns `geolocation` detail for verification.",
     "url": "https://maps.yandex.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Worldwide maps with strong street-panorama and satellite coverage in Russia, the ex-USSR, Turkey, and the Middle East — a key non-Google map.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -136627,31 +136627,40 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free in-browser maps and panoramas; the Yandex developer APIs are freemium. No account needed for map browsing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing maps is passive and touches no subject, but you are sending queries to a Russian company (Yandex) — assume logging under Russian jurisdiction. Use a sock-puppet browser/VPN and avoid signing in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Yandex is a major mapping provider with best-in-class coverage in the ex-USSR region; map/panorama data is high quality there, though (as with any map) imagery can be dated.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "here-com-geolocation-and-mapping-tool",
+      "geograph-worldwide"
+    ],
+    "aliases": [
+      "Yandex Maps",
+      "maps.yandex.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geolocation",
+      "panorama"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/geolocation/yandexmaps.md"
   },
@@ -145240,37 +145249,54 @@
   {
     "id": "geospy-2",
     "name": "GeoSpy",
-    "description": "OSINT tool: GeoSpy.",
+    "description": "Use when you have an outdoor `image` and no location metadata and want an AI location estimate — returns predicted `geolocation` (region/coordinates) to seed manual verification.",
     "url": "https://geospy.web.app/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "AI-based image geolocation — predicting where a photo was likely taken from visual features alone.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "A free web demo has existed, but access has tightened — GeoSpy has moved toward gated/pro and law-enforcement-oriented access, so the public tool's availability is inconsistent. No cost when the demo is up.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to GeoSpy's servers, which retain and process it — never upload sensitive/victim imagery you can't share with a third party. The subject isn't contacted. Use a sock-puppet account if registration is required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A capable AI geolocation model, but it outputs a probabilistic estimate, not a verified location — treat predictions as leads to confirm, never as ground truth.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "yandexmaps",
+      "geograph-worldwide",
+      "here-com-geolocation-and-mapping-tool"
+    ],
+    "aliases": [
+      "GeoSpy",
+      "geospy.web.app"
+    ],
     "tags": [
-      "image-analysis"
+      "image-analysis",
+      "geolocation",
+      "ai"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/geospy-2.md"
   },
   {
@@ -149139,7 +149165,7 @@
   {
     "id": "jpegsnoop",
     "name": "JPEGsnoop",
-    "description": "JPEG forensic analysis and tamper signal detection",
+    "description": "Use when you have a JPEG `image` and want deep forensic analysis — returns EXIF `metadata-exif`, camera signature (`device-id`), and tamper/edit indicators to judge authenticity.",
     "url": "https://www.impulseadventure.com/photo/jpeg-snoop.html",
     "category": "image-video-face",
     "path": [
@@ -149147,34 +149173,48 @@
       "images",
       "metadata"
     ],
-    "bestFor": "JPEG forensic analysis and tamper signal detection",
-    "input": "JPEG and supported media/document files",
-    "output": "Compression signatures, structure details, and edit indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Local JPEG forensics — extracting hidden metadata and detecting whether an image was edited/re-saved (e.g. in Photoshop).",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free Windows desktop tool (also runnable via Wine); open-source. No account.",
     "opsec": "passive",
-    "opsecNote": "Local forensic analysis with no inherent outbound activity.",
+    "opsecNote": "Analysis is entirely local — the image never leaves your machine, so nothing is disclosed to any third party or the subject. This makes it safer for sensitive imagery than online metadata viewers. Still handle the file within your legal/ethical rules.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "A long-standing, respected JPEG-forensics utility; its compression-signature database and structural analysis are well-regarded, though \"edited\" signals are indicators requiring interpretation, not proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "online-exif-viewer",
+      "ghiro"
+    ],
+    "aliases": [
+      "JPEGsnoop",
+      "JPEG Snoop"
+    ],
+    "tags": [
+      "metadata",
+      "forensics",
+      "exif"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/metadata/jpegsnoop.md"
   },
   {
@@ -155359,45 +155399,58 @@
   },
   {
     "id": "reveye-reverse-image-sear-chrome-google-com",
-    "name": "reveye reverse image sear (chrome.google.com)",
-    "description": "OSINT tool: reveye reverse image sear (chrome.google.com).",
+    "name": "RevEye Reverse Image Search",
+    "description": "Use when you have an `image`/`face` and want to reverse-search it across multiple engines at once — a browser extension that right-click queries Google, Bing, Yandex, TinEye, and Baidu.",
     "url": "https://chrome.google.com/webstore/detail/reveye-reverse-image-sear/keaaclcjhehbbapnphnmpiklalfhelgf?hl=en",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "One-click, right-click reverse image search of any web image across several engines simultaneously.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser extension (Chrome/Firefox); no account. Uses the underlying engines' free reverse-image search.",
+    "opsec": "passive",
+    "opsecNote": "RevEye hands the image URL to the chosen search engines, which see your query (and your IP if you follow through). It doesn't contact the image's subject. Run from a sock-puppet browser profile; the extension itself needs permission to read images on pages you invoke it on.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A popular, long-standing reverse-image extension; it's a convenience launcher over Google/Bing/Yandex/TinEye/Baidu, so result quality is theirs, not RevEye's.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-reverse-image-search",
+      "yandex-video-search",
+      "tineye",
+      "bing-images"
+    ],
+    "aliases": [
+      "RevEye",
+      "Reverse Image Search extension"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "Reverse Image Searching",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/reveye-reverse-image-sear-chrome-google-com.md"
   },
   {
@@ -204121,43 +204174,55 @@
   {
     "id": "ellis-island",
     "name": "Ellis Island",
-    "description": "online searchable database of 65 million arrivals to #NewYork between (late 19th and early 20th century).",
+    "description": "Use when you have a `name` of a US immigrant ancestor (1892-1957) and want their arrival record — returns arrival date, age (`dob`), origin/destination `address`, ship, and family traveling together (`associate`).",
     "url": "http://heritage.statueofliberty.org",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Ellis Island / Port of New York passenger arrival records (1892-1957) for immigrant ancestors.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
+      "dob",
       "address",
-      "email",
-      "name",
-      "phone"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the passenger database and view record details; membership/purchase is offered for high-resolution manifest images and keepsakes, but the core genealogical data is free.",
+    "opsec": "passive",
+    "opsecNote": "Searching a historical immigration archive is passive and does not notify anyone (subjects are long-deceased). Standard sock-puppet browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Statue of Liberty-Ellis Island Foundation from official Port of New York passenger manifests; records are authoritative primary sources (subject to manifest transcription/OCR quirks).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "family-search",
+      "familysearch-s-united-states-record-collections"
+    ],
+    "aliases": [
+      "Ellis Island records",
+      "Statue of Liberty passenger search",
+      "heritage.statueofliberty.org"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "genealogy",
+      "immigration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/ellis-island.md"
   },
@@ -242161,47 +242226,58 @@
   },
   {
     "id": "ic-gc-ca",
-    "name": "ic.gc.ca",
-    "description": "OSINT tool: ic.gc.ca.",
+    "name": "ic.gc.ca (Corporations Canada)",
+    "description": "Use when you have a Canadian federal company `name` or an `employer-org` link and want the official registry — returns corporate status, directors (`associate`), and registered `address`.",
     "url": "https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/fdrlCrpSrch.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Canada's federal corporations register for status, directors, and registered office.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Government of Canada (Corporations Canada / ISED) search; no account needed. Note the service now lives under ised-isde.canada.ca — the ic.gc.ca URL may redirect.",
+    "opsec": "passive",
+    "opsecNote": "Searching an official company register is passive and does not notify anyone. Standard sock-puppet browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Government of Canada corporate registry; status/director/address data is authoritative for federally-incorporated companies (provincial companies use provincial registries).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "business-govt-nz",
+      "companieshouse-im"
+    ],
+    "aliases": [
+      "Corporations Canada",
+      "ISED corporations search",
+      "ic.gc.ca"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "canada"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ic-gc-ca.md"
   },
   {
@@ -321379,29 +321455,33 @@
   {
     "id": "gab-social",
     "name": "Gab Social",
-    "description": "An alternative social media network, similar to Twitter in functionality",
+    "description": "Use when you have a `name`/`username` and suspect the subject uses the alt-tech network Gab — returns their `social-profile`, posts, and connections on a Twitter-like platform.",
     "url": "https://gab.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and reading a subject's presence on Gab, an alt-tech Twitter-style network popular with users deplatformed elsewhere.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; viewing some content and searching may prompt a login. No payment needed.",
+    "opsec": "active",
+    "opsecNote": "Gab runs on Mastodon-derived software and logs activity; viewing profiles may require an account, and interacting is visible. Use a sock-puppet account, never your real identity, and don't engage with the target. Be aware Gab hosts extremist content — handle accordingly.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party platform, so profiles/posts are genuine; content skews to fringe/extremist communities, which is context you should weigh, not a data-authenticity issue.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -321410,14 +321490,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mastodon",
+      "x-com-6"
+    ],
+    "aliases": [
+      "Gab",
+      "gab.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "alt-tech"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/gab-social.md"
   },
@@ -326020,37 +326108,57 @@
   {
     "id": "iconosquare",
     "name": "Iconosquare",
-    "description": "OSINT tool: Iconosquare.",
+    "description": "Use when you have an Instagram/TikTok `social-profile` and want analytics on it — returns follower trends, posting patterns, hashtags, and engagement for account profiling.",
     "url": "http://iconosquare.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Social-media analytics (Instagram, TikTok, and others) — follower growth, posting cadence, top hashtags, and engagement metrics.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Paid analytics platform (subscription) with a limited free audit/trial. Deep, historical analytics require a paid plan; it is marketed to marketers, not as a free OSINT tool.",
+    "opsec": "passive",
+    "opsecNote": "Analysing public account metrics is passive and does not notify the account. A trial/account requires your details — register with a sock-puppet identity; connecting your own accounts is unnecessary for analysing a third party's public metrics.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "An established commercial social-analytics vendor; metrics are derived from public data and generally reliable directionally, but it's a marketing tool, not an identity source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "socialblade",
+      "exolyt",
+      "playboard-co"
+    ],
+    "aliases": [
+      "Iconosquare",
+      "iconosquare.com"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "analytics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/iconosquare.md"
   },
   {
@@ -351116,41 +351224,60 @@
   {
     "id": "vk",
     "name": "VK",
-    "description": "Finding Russian and Eastern European users and profile investigation",
+    "description": "Use when you have a `name`/`username` for a Russian or Eastern-European subject and want a rich profile — returns photos, friends, wall posts, groups, and activity from VK.",
     "url": "https://vk.com/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Finding Russian and Eastern European users and profile investigation",
-    "input": "Username, profile URL, or search criteria",
-    "output": "User profiles, profile photos, friend lists, wall posts, groups, and activity data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Deep profile investigation of Russian and Eastern-European users — photos, friend graph, wall, groups, and activity.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; a VK account (login) is needed to search and to see most profile content. Its API is available but access has tightened.",
     "opsec": "active",
-    "opsecNote": "Queries VK servers directly; profile views and interactions are logged. Primarily Russian-language interface.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "VK is a Russian platform that logs activity extensively and operates under Russian jurisdiction. Searching/viewing requires a login and can leave footprints (VK shows some profile visitors and suggests you in \"people you may know\"). Use a warmed sock-puppet account on an isolated device; never your real identity, and don't friend/message the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party platform (one of the largest in the Russian-speaking world); profile data is genuine, though privacy settings and the Russian-language interface limit access.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [
+      "vk-community-search",
+      "barkov-net",
+      "qzone"
+    ],
+    "aliases": [
+      "VKontakte",
+      "vk.com"
+    ],
+    "tags": [
+      "vk",
+      "russia",
+      "social-media"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/vk.md"
   },
   {
