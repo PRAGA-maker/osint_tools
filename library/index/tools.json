@@ -159886,44 +159886,51 @@
   {
     "id": "verexif",
     "name": "VerEXIF",
-    "description": "OSINT tool: VerEXIF.",
     "url": "https://www.verexif.com/en",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "description": "Use when you have an `image` and want its EXIF metadata (or to strip it) — returns GPS `geolocation`, camera details and other `metadata-exif`, plotted on a map.",
+    "bestFor": "Viewing a photo's EXIF (camera, GPS, timestamp) online and optionally removing it — accepts uploads or a public image URL.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "social-profile",
       "geolocation",
+      "device-id",
       "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no login; 20 MB per image. The site states it stores no copy of the uploaded image.",
+    "opsec": "active",
+    "opsecNote": "Reading EXIF requires sending the image (or its URL) to VerEXIF's server, which is a disclosure of the file to a third party even though it claims not to retain copies. For sensitive/evidential media prefer a local tool (exiftool). The subject is never notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known free EXIF viewer/remover; it parses standard metadata reliably, but it is a hosted service you upload to and is not independently auditable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VerEXIF",
+      "verexif.com"
+    ],
     "tags": [
-      "reverse-image"
+      "reverse-image",
+      "exif",
+      "metadata"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/verexif.md"
   },
   {
@@ -206442,53 +206449,6 @@
     "_file": "library/tools/people-search/indeed.md"
   },
   {
-    "id": "infobel-international-people-search",
-    "name": "Infobel International People Search",
-    "description": "Search engine that searches people and businesses by country, company, name or location",
-    "url": "http://www.infobel.com/en/world/index.aspx",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "address",
-      "phone",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "people-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "full",
-    "_file": "library/tools/people-search/infobel-international-people-search.md"
-  },
-  {
     "id": "infoflow-public-people-search-in-chilean",
     "name": "InfoFlow Public People Search In Chilean",
     "description": "Chilean public records and identity verification",
@@ -212372,47 +212332,55 @@
   {
     "id": "spydialer-reverse-phone-lookup",
     "name": "SpyDialer Reverse Phone Lookup",
-    "description": "Website offering phone number, people, address, and email search",
     "url": "http://www.spydialer.com/default.aspx",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "description": "Use when you have a US `phone` and want the owner — returns owner `name`, carrier/line-type and location; also does reverse name/address/email lookups.",
+    "bestFor": "Free US reverse phone lookup that surfaces an owner name (and can play the number's voicemail greeting) plus reverse name/address/email search.",
     "selectorsIn": [
-      "name"
+      "phone",
+      "name",
+      "address",
+      "email"
     ],
     "selectorsOut": [
-      "social-profile",
+      "name",
       "address",
       "phone",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Completely free — no account or card; up to ~50 lookups/day. US numbers only.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The reverse lookup itself is passive and does not notify the owner. However, SpyDialer's historical \"spy dial\" feature dials the number silently to fetch the voicemail name — treat any call-based feature as potentially active and avoid it from an attributable line; use only the data lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running free US reverse-lookup service; data is broker-sourced and self-described as possibly inaccurate/out-of-date, so treat results as leads to confirm.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SpyDialer",
+      "spydialer.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "reverse-phone"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/spydialer-reverse-phone-lookup.md"
   },
@@ -216798,44 +216766,53 @@
   {
     "id": "ipqualityscore-com-2",
     "name": "ipqualityscore.com",
-    "description": "OSINT tool: ipqualityscore.com.",
     "url": "https://www.ipqualityscore.com/phone-number-validator",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `phone` and want to validate it — returns carrier, line type (mobile/VOIP/landline), active status, country/region and a fraud-risk score.",
+    "bestFor": "Vetting a phone number's nature — real vs VOIP/burner, active vs disconnected, carrier and fraud risk — before trusting it as a contact point.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
-      "address",
-      "social-profile"
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A free web validator and a free trial (~1,000 lookups) exist; sustained/bulk use and the reverse-name field require an account and paid API plans.",
+    "opsec": "passive",
+    "opsecNote": "Validation is a passive metadata/carrier lookup that does not contact or notify the subscriber. The reverse-name feature needs a login, which ties queries to your account — use a sock-puppet registration. No call is placed to the number.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A widely-used commercial fraud-prevention provider with direct carrier relationships in 75+ countries; line-type/carrier/active-status data is high-quality, though owner-name coverage is limited.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "IPQualityScore",
+      "IPQS phone validator"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "phone-validation"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/ipqualityscore-com-2.md"
   },
   {
@@ -262970,47 +262947,55 @@
   },
   {
     "id": "sec-gov",
-    "name": "sec.gov",
-    "description": "OSINT tool: sec.gov.",
+    "name": "sec.gov (EDGAR)",
     "url": "http://www.sec.gov/edgar/searchedgar/companysearch.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `name` or `employer-org` and want US securities filings — returns officer/director names, business `address`, company affiliations and `associate` links.",
+    "bestFor": "Tracing a person through US SEC filings — the companies they run, direct, or hold insider stakes in, plus their business address.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Fully free US government service; no account, no payment, no rate-limit for normal interactive use.",
+    "opsec": "passive",
+    "opsecNote": "Passive read of official public filings; the subject is not notified and no login is required. Queries are as anonymous as any web request — clean-browser hygiene is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The US Securities and Exchange Commission's own filing system; documents are legally-mandated primary-source disclosures, so data is authoritative.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SEC EDGAR",
+      "EDGAR full-text search"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "securities-filings"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sec-gov.md"
   },
   {
@@ -294342,43 +294327,51 @@
   {
     "id": "myallsearch-com",
     "name": "myallsearch.com",
-    "description": "OSINT tool: myallsearch.com.",
     "url": "https://www.myallsearch.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `name` and want a privacy-oriented web search that differs from Google — returns web results (and thus `social-profile`/mention links) without personalising to you.",
+    "bestFor": "A privacy-focused search engine to run name/handle queries that avoid Google's personalisation and give a different result mix.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "name",
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free search engine; no account. Positions itself as privacy-protecting (doesn't build a profile of your searches).",
+    "opsec": "passive",
+    "opsecNote": "A search query about the target is passive and does not notify them; the privacy framing reduces personalisation/tracking of *you*, which is helpful when you want un-personalised results. Still use a sock-puppet browser for sensitive traces.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A small privacy-branded search engine; useful as an alternative result source, but its index/back-end is opaque, so corroborate anything important on a primary source.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MyAllSearch",
+      "myallsearch privacy search"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "privacy-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/myallsearch-com.md"
   },
   {
@@ -328792,46 +328785,54 @@
   {
     "id": "instalooter-2",
     "name": "InstaLooter",
-    "description": "OSINT tool: InstaLooter.",
     "url": "https://github.com/althonos/instalooter",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "description": "Use when you have an Instagram `username` and want to bulk-download a profile's media — returns saved `image`s (with any EXIF/`geolocation`); NOTE the project is defunct.",
+    "bestFor": "Bulk-downloading an Instagram profile's or hashtag's photos/videos from the command line (historically) — now largely non-functional.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
       "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "costNote": "Free and open-source (GPL-3.0), but defunct — last release v2.0.0 in April 2018 and marked defunct by its author; Instagram's changes have likely broken it.",
+    "opsec": "active",
+    "opsecNote": "Scraping Instagram at volume — especially with login credentials — risks account action and is visible to Instagram. If you ever run it, use a burner account and expect blocks. Because it is defunct, prefer a maintained alternative rather than troubleshooting bans.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A once-popular (2.1k-star) open-source Instagram scraper, now abandoned; code is auditable but no longer maintained and generally non-working against current Instagram.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "instalooter",
+      "althonos/instalooter"
+    ],
     "tags": [
       "instagram",
       "open-source",
-      "cli"
+      "cli",
+      "defunct"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instalooter-2.md"
   },
   {
@@ -371708,36 +371709,51 @@
   },
   {
     "id": "osint-toolkit",
-    "name": "OSINT Toolkit",
-    "description": "OSINT tool: OSINT Toolkit.",
+    "name": "OSINT Toolkit (Email/Username)",
     "url": "https://one-plus.github.io/EmailUsername",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "description": "Use when you have a `username` or `email` and want a one-page dashboard of cross-platform search links — returns ready-made queries resolving to `social-profile`s.",
+    "bestFor": "A free client-side dashboard that turns one username/email into search links across many social and people-search platforms.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free static web page (GitHub Pages); it only builds links to third-party services, so no account or payment on the tool itself.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The page generates links in your browser and does not itself query the target; exposure comes from the third-party services you click through to. Follow the generated links from a sock-puppet browser to avoid attribution.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A simple community-built link-generator hosted on GitHub Pages; it does no matching itself, so reliability depends entirely on the destination services it points to.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "EmailUsername toolkit",
+      "one-plus OSINT Toolkit"
+    ],
+    "tags": [
+      "username-enumeration",
+      "osint-dashboard"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/osint-toolkit.md"
   },
   {
