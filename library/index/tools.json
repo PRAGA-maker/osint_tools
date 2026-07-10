@@ -139059,30 +139059,30 @@
   {
     "id": "camera-summary-exif-tool",
     "name": "Camera Summary EXIF Tool",
-    "description": "Exif tool designed to extract data from camera images, usually in JPG or JPEG format",
+    "description": "Use when you have an `image` (JPEG) and want its embedded camera metadata — returns EXIF details like camera make/model, timestamp and any GPS geolocation.",
     "url": "http://camerasummary.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly reading the EXIF metadata of a JPEG to recover the capturing camera, timestamp and (if present) GPS coordinates.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "metadata-exif",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free online EXIF viewer; no account or payment to inspect an image.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload the image to a third-party site to read its metadata, so the file leaves your control — do not submit sensitive originals. Prefer a local EXIF tool (exiftool) for restricted material; the subject is not contacted either way.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Simple third-party EXIF reader of unclear provenance. It only reports metadata already embedded in the file, so accuracy tracks the file itself; the risk is the upload, not the parsing.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -139091,14 +139091,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "camerasummary.com",
+      "Camera Summary"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "exif",
+      "metadata"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/camera-summary-exif-tool.md"
   },
@@ -157231,28 +157237,29 @@
   {
     "id": "snap-scraper",
     "name": "Snap-Scraper",
-    "description": "Downloads media from Snapchat's Snap Map using coordinates.",
+    "description": "Use when you have a `geolocation` (lat/long) and want the public Snapchat media posted there — returns downloaded images/video from Snap Map for that spot.",
     "url": "https://github.com/rhematt/Snap-Scraper",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Pulling geolocated public Snapchat media for a location",
+    "bestFor": "Pulling geolocated public Snapchat Snap Map media for a set of coordinates, e.g. a last-known location.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source tool. No account, API key, or payment; you supply the coordinates from map.snapchat.com.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Snapchat's public Snap Map endpoint, not the target directly, and posters are not notified. Run it from a research machine; downloaded media lands in your Downloads/Snapchat folder, so handle that evidence carefully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Snap Map scraper (112 stars).",
+    "trustNote": "Small open-source project (~100+ stars) by rhematt. It relies on Snapchat's public Map API, which can change without notice and break the tool.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -157261,7 +157268,11 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SnapScraper",
+      "Snapchat Snap Map scraper"
+    ],
     "tags": [
       "snapchat",
       "snapmap",
@@ -157269,7 +157280,7 @@
       "media"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/snap-scraper.md"
   },
@@ -159786,45 +159797,54 @@
   },
   {
     "id": "usespottr-com",
-    "name": "usespottr.com",
-    "description": "OSINT tool: usespottr.com.",
+    "name": "Spottr",
+    "description": "Use when you have a long `image`/video and want to find a person, vehicle plate or scene inside it — returns matched moments, incl. OCR'd plates and physical descriptions.",
     "url": "https://usespottr.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "\"Ctrl+F for video\" — natural-language search inside your own uploaded footage (CCTV, dashcam) for people, vehicles, plates and scenes.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "vehicle-plate",
+      "physical-description"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium SaaS; sign-up typically required and heavier processing/longer video is gated behind paid tiers. Check current limits on the site.",
+    "opsec": "passive",
+    "opsecNote": "You upload your footage to Spottr's servers for AI processing, so the video leaves your control — do not upload sensitive or legally-restricted evidence to a third party without authorization. The subject is not contacted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Early-stage commercial video-search SaaS. Capable AI (object detection, OCR, speech-to-text) but detections are probabilistic — treat hits as leads to eyeball, not confirmed identifications.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "usespottr",
+      "Spottr video search"
+    ],
     "tags": [
       "videosites",
-      "Video Related Sites"
+      "Video Related Sites",
+      "video-analysis"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/usespottr-com.md"
   },
   {
@@ -209052,31 +209072,35 @@
   },
   {
     "id": "new-canada-411",
-    "name": "New Canada 411",
-    "description": "Canadian phone and address directory.",
+    "name": "Canada 411",
+    "description": "Use when you have a Canadian `name`, `phone` or `address` and want the matching listing — returns name, address, phone and (via same-address) likely associates.",
     "url": "https://www.canada411.ca/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a Canadian person or number to an address and phone using the national residential/business directory, including reverse lookups.",
     "selectorsIn": [
       "name",
-      "phone"
+      "phone",
+      "address"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "phone"
+      "phone",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free people, reverse-phone and reverse-address search. Some enhanced/background features route to paid partners, but core directory lookups are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A directory lookup against published listings; the subject is not notified. No login needed for core searches, so activity is not tied to an account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by Yellow Pages Canada — an established directory publisher. Listings can be stale or ex-directory-suppressed; treat as a strong lead, not proof.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "ca"
@@ -209085,10 +209109,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "oldphonebook-com"
+    ],
+    "aliases": [
+      "Canada411",
+      "canada411.ca"
+    ],
+    "tags": [
+      "people-search",
+      "canada",
+      "reverse-lookup"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/new-canada-411.md"
   },
@@ -215835,37 +215869,49 @@
   {
     "id": "emobiletracker-com",
     "name": "EmobileTracker.com",
-    "description": "OSINT tool: EmobileTracker.com.",
+    "description": "Use when you have a `phone` and want its country, telecom operator and approximate region — returns coarse geolocation and carrier, not the owner's identity.",
     "url": "https://www.emobiletracker.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A quick, coarse reverse lookup of a mobile number's country, carrier and general area (strongest for Indian numbers).",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; ad-supported. No account needed to run a basic trace.",
+    "opsec": "passive",
+    "opsecNote": "You submit the number to a third-party ad-supported site; the subject is not notified, but assume the query and number are logged by the operator. Avoid pasting a sensitive live-case number into a low-trust free tool if a cleaner option exists.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Ad-supported consumer \"number tracker\" of unclear provenance. It returns carrier/region derived from numbering plans, not personal identity — and explicitly disclaims real-time or exact location.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "e-MobileTracker",
+      "India mobile number tracker"
+    ],
     "tags": [
-      "phone-number-research"
+      "phone-number-research",
+      "carrier-lookup"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/emobiletracker-com.md"
   },
   {
@@ -218004,35 +218050,55 @@
   {
     "id": "oldphonebook-com",
     "name": "Oldphonebook.com",
-    "description": "OSINT tool: Oldphonebook.com.",
+    "description": "Use when you have a `name` or `phone` and want a historical US listing (back to ~1994) — returns the archived name, address and phone from old telephone directories.",
     "url": "http://www.oldphonebook.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's historical US address/phone from archived white-pages directories going back roughly two decades.",
+    "selectorsIn": [
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Basic historical search is free; some full-detail/older records or bulk access are gated behind paid options.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A directory-archive lookup; the subject is not notified. Nothing you search leaves a trace with the target. Use normal browser hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party historical phonebook archive. Data is old by design and only covers listed (non-ex-directory) numbers, so treat hits as period-accurate, not current.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "new-canada-411"
+    ],
+    "aliases": [
+      "Old Phone Book",
+      "historical white pages"
+    ],
+    "tags": [
+      "phone",
+      "historical",
+      "reverse-lookup"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/oldphonebook-com.md"
   },
   {
@@ -221614,47 +221680,57 @@
   },
   {
     "id": "aat-org-uk",
-    "name": "aat.org.uk",
-    "description": "OSINT tool: aat.org.uk.",
+    "name": "AAT Licensed Members Directory",
+    "description": "Use when you have an accountant/bookkeeper `name` or a UK location and want to verify AAT-licensed status — returns member/firm name, business address and services.",
     "url": "https://www.aat.org.uk/licensed-members/directory",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a person or firm is an AAT-licensed accountant/bookkeeper and finding their business address and offered services.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public \"find a licensed member\" directory; no account or payment to search.",
+    "opsec": "passive",
+    "opsecNote": "A public professional-register lookup; the subject is not notified and no login is required, so activity is not tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "AAT (Association of Accounting Technicians) is an established UK professional body; its licensed-members register is the authoritative source for who it licenses.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ukas-com"
+    ],
+    "aliases": [
+      "Association of Accounting Technicians",
+      "AAT directory"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/aat-org-uk.md"
   },
   {
@@ -238387,44 +238463,54 @@
   {
     "id": "genealogyintime",
     "name": "GenealogyInTime",
-    "description": "OSINT tool: GenealogyInTime.",
+    "description": "Use when you have a `name` and want to sweep billions of free genealogy/ancestral records at once — returns matching records with dates, relatives and source sites.",
     "url": "http://www.genealogyintime.com/tools/genealogy-search-engine.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A single free meta-search across 2B+ ancestral records on 1,000+ genealogy sites to surface birth/death dates and family links for a name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "associate",
+      "name",
       "dob",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search billions of records; individual record images on the destination sites it links to may be paywalled by those providers.",
+    "opsec": "passive",
+    "opsecNote": "A record meta-search; the subject is not notified. No login required. Some linked destination sites may set their own cookies/logins — that is downstream of this tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running genealogy publication (GenealogyInTime Magazine). It aggregates/links other sites' records, so record quality varies by underlying source; confirm at the source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "familysearch"
+    ],
+    "aliases": [
+      "GenealogyInTime Magazine",
+      "Genealogy Search Engine"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "records-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/genealogyintime.md"
   },
   {
@@ -268659,47 +268745,57 @@
   },
   {
     "id": "ukas-com",
-    "name": "ukas.com",
-    "description": "OSINT tool: ukas.com.",
+    "name": "UKAS – Find an Organisation",
+    "description": "Use when you have an `employer-org` name (a lab, cert body or inspection firm) and want to verify its UK accreditation — returns the org's accredited status, scope and address.",
     "url": "https://www.ukas.com/find-an-organisation/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that a UK testing lab, certification body or inspection organisation is genuinely UKAS-accredited, with its scope and location.",
     "selectorsIn": [
+      "employer-org",
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory; no account or payment to search or view accreditation details.",
+    "opsec": "passive",
+    "opsecNote": "A public accreditation directory lookup; no target interaction and nothing is logged against you beyond a normal site visit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "UKAS is the UK's sole national accreditation body, recognised by government. Its directory is the authoritative source for whether a body is UKAS-accredited.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "aat-org-uk"
+    ],
+    "aliases": [
+      "United Kingdom Accreditation Service",
+      "UKAS directory"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ukas-com.md"
   },
   {
@@ -322440,7 +322536,7 @@
   {
     "id": "geosocial-footprint",
     "name": "GeoSocial Footprint",
-    "description": "Location and movement pattern analysis",
+    "description": "Use when you have a Twitter/X `username` and want a map of that account's geotagged tweets — returns plotted locations, a heatmap and a downloadable CSV.",
     "url": "https://geosocialfootprint.com/",
     "category": "social-networks",
     "path": [
@@ -322448,36 +322544,46 @@
       "twitter",
       "location-mapping"
     ],
-    "bestFor": "Location and movement pattern analysis",
-    "input": "Public social identifiers and geotagged content references",
-    "output": "Mapped points, movement timelines, and location summaries",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "active",
-    "opsecNote": "Use may be logged by the provider and linked to investigator activity.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
+    "bestFor": "Mapping a Twitter/X account's location footprint from geotagged tweets and check-ins to spot home/work/frequented areas.",
+    "selectorsIn": [
+      "username"
     ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free educational/awareness tool from USC. No account or payment; you enter a public Twitter username.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party site with the target's public username; the subject is not notified. It reads only already-public tweet data. Run from a research context.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Originated as a USC graduate privacy-awareness project. Its data depends on Twitter/X API access, which has been heavily restricted since 2023, so retrieval may be partial or broken.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": false,
+    "relatedTools": [
+      "snap-scraper"
+    ],
+    "aliases": [
+      "GeoSocial Footprint",
+      "geosocialfootprint.com"
+    ],
+    "tags": [
+      "twitter",
+      "geolocation",
+      "location-mapping"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/location-mapping/geosocial-footprint.md"
   },
   {
