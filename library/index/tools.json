@@ -126284,30 +126284,31 @@
   {
     "id": "gps-visualizer",
     "name": "GPS Visualizer",
-    "description": "Geocoder that converts an address into latitude and longitude coordinates",
+    "description": "Use when you have an `address` or `geolocation` and want to convert between them or plot points on a map — returns latitude/longitude, addresses and map visualisations.",
     "url": "http://www.gpsvisualizer.com/geocode",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Free geocoding (address ↔ lat/long) and mapping of coordinate/point data.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "address",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; bulk geocoding can require your own geocoding API key (Google/Bing/etc.) for large batches, but single lookups and mapping are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You geocode/plot data locally against mapping providers — the subject is not contacted. Addresses you submit are sent to the chosen geocoding backend (Google/Bing/etc.) and may be logged there; avoid pasting sensitive location lists you must keep private. Use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established free mapping/geocoding utility (Adam Schneider); reliable, but coordinates are only as accurate as the underlying geocoder and the input address.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -126316,14 +126317,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GPSVisualizer",
+      "gpsvisualizer.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "geocoding"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/geolocation/gps-visualizer.md"
   },
@@ -175194,43 +175199,54 @@
   {
     "id": "telegram-phone-number-checker",
     "name": "Telegram Phone Number Checker",
-    "description": "Command line tool for checking if phone numbers are connected to Telegram accounts and retrieving related information where available.",
+    "description": "Use when you have a `phone` number and want to check whether it has a Telegram account — returns account existence plus username/name/ID where the profile exposes them.",
     "url": "https://colab.research.google.com/github/bellingcat/open-source-research-notebooks/blob/main/notebooks/bellingcat/telegram-phone-number-checker.ipynb",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a phone number is registered on Telegram and pulling any exposed profile handle/name.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "phone",
-      "name"
+      "username",
+      "name",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free open-source Bellingcat notebook/CLI; you supply your own Telegram API credentials (free from my.telegram.org) and a Telegram account to run it.",
+    "opsec": "active",
+    "opsecNote": "This works by importing the number(s) as contacts into YOUR Telegram account and reading what Telegram returns. That is an ACTIVE step — Telegram associates the check with your account, the number's owner could in principle see you as a contact, and bulk/rapid checks risk rate-limits or a ban. Use a dedicated sock-puppet Telegram account and number, check sparingly, and never use your real account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "api-key"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "trusted",
+    "trustNote": "Published by Bellingcat (open-source research notebooks) — a reputable investigative organisation; the code is open and documented, though results depend on Telegram's privacy settings.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bellingcat Telegram phone checker",
+      "telegram-phone-number-checker"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "telegram"
+      "telegram",
+      "phone-to-account"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-phone-number-checker.md"
   },
   {
@@ -175704,43 +175720,50 @@
   {
     "id": "telemetr-me",
     "name": "telemetr.me",
-    "description": "OSINT tool: telemetr.me.",
+    "description": "Use when you have a Telegram channel `username` or keyword and want channel analytics — returns subscriber stats, post history, growth, ad tracking and channel discovery (Russian-focused).",
     "url": "https://telemetr.me/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering and analysing Telegram channels (especially Russian-language) — stats, post search, and ad history.",
     "selectorsIn": [
-      "phone",
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier lets you browse the channel catalog and view basic stats; detailed analytics, audience analysis and API access require a paid subscription.",
+    "opsec": "passive",
+    "opsecNote": "Telemetr indexes public Telegram channels — you query its database, not Telegram directly, so no join or view is registered against your account and channel admins aren't alerted by your search. Use a sock-puppet browser; a paid account ties queries to your subscription identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large commercial Telegram-analytics service (8.7M+ channels indexed), Russian-market oriented; coverage is strongest for Russian-language public channels and thinner elsewhere.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Telemetr",
+      "telemetr.me"
+    ],
     "tags": [
       "telegram",
-      "Telegram"
+      "Telegram",
+      "channel-analytics",
+      "russian"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telemetr-me.md"
   },
   {
@@ -208835,47 +208858,56 @@
   {
     "id": "peoplefinders-united-states",
     "name": "PeopleFinders (United States)",
-    "description": "People search engine, public record, and telephone information",
+    "description": "Use when you have a `name`, `phone` or `address` and want US contact and public-record data — returns addresses, phones, relatives and background details (report behind a low paywall).",
     "url": "https://www.peoplefinders.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "US people search that expands a name/phone/address into contacts, relatives and public-record background.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
-      "social-profile",
       "address",
       "phone",
-      "associate"
+      "associate",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free 4-step preview confirms whether a matching person exists; contact details and full reports are paid (from ~$1.95 per report, or ~$9.95–$29.95/mo plans).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "A commercial data-broker lookup — you query PeopleFinders, not the subject, and no notification reaches them. Buying a report ties the search to your payment identity; prefer the free preview for triage. Use a sock-puppet browser; PeopleFinders offers a record opt-out, so a missing person may be suppressed.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running US people-search broker aggregating public records; broad coverage but the usual data-broker caveats — outdated addresses and inferred relatives are common.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PeopleFinders",
+      "peoplefinders.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "data-broker"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/peoplefinders-united-states.md"
   },
@@ -216602,43 +216634,50 @@
   {
     "id": "phone-validator-us",
     "name": "Phone Validator (US)",
-    "description": "OSINT tool: Phone Validator (US).",
+    "description": "Use when you have a `phone` number and want to validate it and classify the line — returns line type (cell/landline/VoIP/invalid), carrier and geographic location.",
     "url": "https://www.phonevalidator.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Validating a phone number and classifying line type, carrier and location before deeper attribution.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web search on the homepage (deliberately throttled to deter bots); larger/bulk validation is a paid API service.",
+    "opsec": "passive",
+    "opsecNote": "A database/numbering lookup — the number's device is not called or texted and the subject isn't notified. You disclose the number to PhoneValidator; use a sock-puppet browser. Results are metadata (line type/carrier/location), not the owner's identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial phone-data service; line-type/carrier data is generally reliable for US/Canada, weaker internationally, and the site itself disclaims accuracy guarantees and FCRA/TCPA use.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PhoneValidator",
+      "phonevalidator.com"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "carrier-lookup",
+      "line-type",
+      "validation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/phone-validator-us.md"
   },
   {
@@ -249736,45 +249775,54 @@
   },
   {
     "id": "new-hampshire",
-    "name": "New Hampshire",
-    "description": "OSINT tool: New Hampshire.",
+    "name": "New Hampshire Inmate Locator",
+    "description": "Use when you have a `name` and want to check New Hampshire state custody — returns offender name, current location, charges/convictions, parole status, release date and photo.",
     "url": "https://business.nh.gov/inmate_locator",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is in New Hampshire state custody and pulling their offender record and photo.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "physical-description",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official New Hampshire Department of Corrections inmate locator; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "An official government records lookup — you query the NH DOC, not the subject, and nobody is notified. Standard sock-puppet browsing hygiene is sufficient. Data is drawn from the DOC Offender Records Office in Concord.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the New Hampshire Department of Corrections — an authoritative, first-party source for NH state offender records; covers state DOC custody, not county jails or federal.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NH DOC inmate locator",
+      "New Hampshire Department of Corrections locator"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections",
+      "new-hampshire"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/new-hampshire.md"
   },
   {
@@ -263633,49 +263681,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/the-atlas-of-economic-complexity.md"
-  },
-  {
-    "id": "the-courts-of-british-columbia",
-    "name": "The Courts of British Columbia",
-    "description": "OSINT tool: The Courts of British Columbia.",
-    "url": "https://www.bccourts.ca/search_judgments.aspx",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "court",
-      "inmate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/the-courts-of-british-columbia.md"
   },
   {
     "id": "the-courts-of-british-columbia-home",
@@ -312654,44 +312659,50 @@
   {
     "id": "cobalt-tools",
     "name": "cobalt.tools",
-    "description": "OSINT tool: cobalt.tools.",
+    "description": "Use when you have a `social-profile`/media URL and want to download the video, audio or image cleanly — returns the media file (with its metadata) for offline analysis and preservation.",
     "url": "https://cobalt.tools/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Clean, ad-free downloading of social-media videos/audio/images for evidence preservation and analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; no ads, no signup. A public instance runs at cobalt.tools and you can self-host the backend.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public media URL; cobalt's backend fetches and returns the file. The target platform sees cobalt's server (or your self-hosted instance), not necessarily you, but the public instance operator sees your requests — self-host for sensitive work. Downloading does not notify the subject. Preserve original files and hashes for evidence integrity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-regarded open-source media downloader (imput/cobalt); no tracking by design, but it is a third-party service unless self-hosted, and platform support shifts as sites change.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "cobalt",
+      "cobalt.tools"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-downloader",
+      "evidence-capture"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/cobalt-tools.md"
   },
   {
@@ -317049,7 +317060,7 @@
   {
     "id": "fb-lookup-id",
     "name": "FB Lookup ID",
-    "description": "Converting Facebook profile URLs into numeric IDs for pivoting",
+    "description": "Use when you have a Facebook profile/page/group `social-profile` URL and want its numeric ID — returns the stable numeric Facebook ID for pivoting and graph-style searches.",
     "url": "https://lookup-id.com/",
     "category": "social-networks",
     "path": [
@@ -317057,34 +317068,43 @@
       "facebook",
       "search"
     ],
-    "bestFor": "Converting Facebook profile URLs into numeric IDs for pivoting",
-    "input": "Facebook profile/page/group URL",
-    "output": "Resolved numeric Facebook ID",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Resolving a Facebook vanity/profile URL to its permanent numeric ID for reliable pivoting.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Processes public Facebook URLs through a third-party service.",
+    "opsecNote": "You paste a public Facebook URL into a third-party resolver; the subject is not contacted and nothing is posted. The site sees the URL you look up; use a sock-puppet browser. Do NOT log into Facebook through this site — it only needs the public URL.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A simple third-party utility that reads Facebook's public data to return the numeric ID; harmless in function, but unaffiliated with Facebook and dependent on Facebook's public exposure of IDs.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "lookup-id.com",
+      "Facebook ID lookup"
+    ],
+    "tags": [
+      "facebook",
+      "graph-search",
+      "id-resolution"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook/search/fb-lookup-id.md"
   },
   {
@@ -368527,13 +368547,13 @@
   {
     "id": "tookie-osint",
     "name": "Tookie-OSINT",
-    "description": "Advanced OSINT tool that finds social media accounts based on inputs.",
+    "description": "Use when you have a `username` and want to enumerate matching accounts across many sites from the command line — returns social-profile URLs where the handle exists.",
     "url": "https://github.com/Alfredredbird/tookie-osint",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Finding social media accounts from a username",
+    "bestFor": "CLI username enumeration across many social/web platforms (a Sherlock/Maigret-style account finder).",
     "selectorsIn": [
       "username"
     ],
@@ -368541,15 +368561,16 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GitHub); no account or payment. You run it locally in Python.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Tookie queries each target site directly from YOUR machine/IP as it checks the handle, so those sites can see your requests — route it through a sock-puppet IP/VPN. It does not contact the subject, and some checks use Selenium (a headless browser) which is heavier and more detectable than plain HTTP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Community username/account-finder (2.3k stars).",
+    "trustNote": "Community open-source project (Alfredredbird), actively maintained (v4 rewrite, v4.1 in 2026); like all account-finders it produces false positives, so hits need manual confirmation.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -368559,15 +368580,17 @@
     "localInstall": true,
     "registration": false,
     "aliases": [
-      "tookie"
+      "tookie",
+      "Tookie OSINT"
     ],
     "tags": [
       "username",
       "social-media",
-      "account-discovery"
+      "account-discovery",
+      "cli"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/tookie-osint.md"
   },
