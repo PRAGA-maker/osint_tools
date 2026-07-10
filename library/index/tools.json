@@ -157251,36 +157251,58 @@
   },
   {
     "id": "sogou",
-    "name": "Sogou",
-    "description": "OSINT tool: Sogou.",
+    "name": "Sogou Images",
+    "description": "Use when you have an `image`/`face` and want a Chinese-web reverse-image and image search that indexes content Google misses — returns matching images and social-profile sources.",
     "url": "https://pic.sogou.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Reverse/keyword image search across the Chinese web (Sogou/WeChat-linked index).",
+    "selectorsIn": [
+      "image",
+      "face"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web image search; no account needed for basic use.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Uploading an image to Sogou sends it to a Chinese search provider (Tencent-affiliated) that may retain it; the depicted person is not notified. Strip EXIF before upload and use images you are authorized to search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A major Chinese search engine (Tencent-owned) with a large China-focused image index; results skew to Chinese-language sources and its ranking/coverage are not independently audited.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "yandex-images",
+      "baidu-images",
+      "google-lens"
+    ],
+    "aliases": [
+      "pic.sogou.com",
+      "搜狗图片"
+    ],
+    "tags": [
+      "reverse-image",
+      "china"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/sogou.md"
   },
   {
@@ -204573,38 +204595,57 @@
   },
   {
     "id": "federal-bureau-of-prisons-inmate-locator-us",
-    "name": "Federal Bureau of Prisons - Inmate Locator (US)",
-    "description": "OSINT tool: Federal Bureau of Prisons - Inmate Locator (US).",
-    "url": "http://www.bop.gov/inmateloc",
+    "name": "Federal Bureau of Prisons — Inmate Locator (US)",
+    "description": "Use when you have a `name` or BOP register number and want to check US federal custody status — returns name, age/race, location, and release date.",
+    "url": "https://www.bop.gov/inmateloc/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming whether a person is (or was) in US federal prison custody and where.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "physical-description",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official US federal government service. No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Official public search; anonymous and does not notify anyone. This is a government record lookup — no sock puppet needed, though a clean session is good practice.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US Federal Bureau of Prisons — authoritative first-party custody record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vinelink",
+      "utah"
+    ],
+    "aliases": [
+      "BOP inmate locator",
+      "bop.gov/inmateloc"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "inmate",
+      "federal"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/federal-bureau-of-prisons-inmate-locator-us.md"
   },
   {
@@ -211794,37 +211835,63 @@
   {
     "id": "spokeo",
     "name": "Spokeo",
-    "description": "OSINT tool: Spokeo.",
-    "url": "http://www.spokeo.com",
+    "description": "Use when you have a `name`, `email`, `phone`, or `username` and want a consolidated US person report that also links social profiles — returns address, phone, email, associates, and social-profile.",
+    "url": "https://www.spokeo.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Consolidated US people search that ties an email/username/phone to a person and their social profiles.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "phone",
+      "username",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "email",
+      "social-profile",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search shows a teaser (locations, relatives count, partial data); full reports require a paid subscription (low intro price, then recurring — watch auto-renew).",
+    "opsec": "passive",
+    "opsecNote": "Commercial data-broker aggregation; the subject is not notified. You disclose the searched selector and your payment identity to Spokeo. Not FCRA-permissible for employment/tenant/credit use.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Aggregated public + social + marketing data; strong at email/username→identity but prone to record-mixing and stale entries, like all brokers.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "beenverified-com",
+      "truepeoplesearch",
+      "pipl"
+    ],
+    "aliases": [
+      "spokeo.com"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "people-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/spokeo.md"
   },
   {
@@ -296955,13 +297022,13 @@
   {
     "id": "osint-framework-2",
     "name": "OSINT Framework",
-    "description": "Web-based directory tree of OSINT tools and resources organized by data type.",
-    "url": "https://github.com/lockfale/OSINT-Framework",
+    "description": "Use when you have any selector and want to discover which tools exist for it — a navigable directory tree that maps a data type (username, email, phone, image, etc.) to relevant resources.",
+    "url": "https://osintframework.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Browsing categorized OSINT resources by selector type (username, email, phone, images, etc.) to pick the right tool",
+    "bestFor": "Discovering the right category of tool for a given selector by browsing a categorized resource tree.",
     "selectorsIn": [
       "name",
       "username",
@@ -296973,15 +297040,16 @@
       "social-profile"
     ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open web directory (also open-source on GitHub). No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory is passive and reveals nothing about a target — it only lists tools. OpSec depends entirely on which linked tool you then use; evaluate each leaf site separately.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "11.5k+ stars; the canonical OSINT resource tree, also hosted at osintframework.com.",
+    "trustNote": "The canonical, long-maintained OSINT resource tree (11k+ GitHub stars; osintframework.com). It is a curated index, not a data source; individual leaf links vary widely in quality.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -296990,8 +297058,13 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [
+      "start-me",
+      "osint-combine"
+    ],
     "aliases": [
-      "osintframework.com"
+      "osintframework.com",
+      "lockfale/OSINT-Framework"
     ],
     "tags": [
       "directory",
@@ -296999,7 +297072,7 @@
       "meta-resource"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/search-engines/osint-framework-2.md"
   },
@@ -330661,13 +330734,13 @@
   {
     "id": "mixi",
     "name": "mixi",
-    "description": "mixi is a social networking service that provides a place for communication, hobbies, news, events and games.",
-    "url": "https://sns.mixi.co.jp/",
+    "description": "Use when you have a Japanese `username` or `name` and want to check for a mixi social profile — returns a social-profile, but most content is login-gated and the platform has declined.",
+    "url": "https://mixi.jp/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Checking for a legacy/current mixi profile of a Japanese subject.",
     "selectorsIn": [
       "name",
       "username"
@@ -330675,32 +330748,42 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to join; viewing member content requires a registered (and historically Japan-phone-verified) account.",
+    "opsec": "active",
+    "opsecNote": "Most profiles are members-only, so you must log in to view them — that account is attributable, and mixi historically required a Japanese mobile number to register. Use a dedicated sock-puppet account; viewing a profile can be visible (\"ashiato\"/footprints feature historically logged visitors).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "mixi was Japan's dominant SNS in the late 2000s but has declined sharply (the company pivoted to mobile games); surviving profiles are self-asserted and often dormant.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "jp"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "whatsmyname-web",
+      "wayback-machine"
+    ],
+    "aliases": [
+      "mixi.jp",
+      "sns.mixi.co.jp"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "social-media",
-      "online-communities-blogs"
+      "japan"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/mixi.md"
   },
