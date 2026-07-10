@@ -101586,40 +101586,56 @@
   {
     "id": "defastra",
     "name": "Defastra",
-    "description": "Assesses the reliability of a phone or email on a number of different parameters. Displays social network profiles registered to the number or email. Partially free",
+    "description": "Use when you have an `email` or `phone` and want a fraud/risk score plus the social and digital profiles registered to it — returns linked `social-profile`s and enrichment signals via a paid API.",
     "url": "https://defastra.com/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Enriching an email/phone into linked social profiles and a risk/reliability score.",
     "selectorsIn": [
-      "email"
+      "email",
+      "phone"
     ],
     "selectorsOut": [
-      "email"
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Paid, prepaid-credit/wallet API (account + API key); a limited free trial is offered but there is no ongoing free tier. Each lookup consumes credit.",
+    "opsec": "passive",
+    "opsecNote": "Queries Defastra's databases about the email/phone; the subject is not notified. It is a commercial fraud-prevention vendor, so your queries and API key are logged by Defastra. Use a dedicated account; treat the returned linkages as leads, not proof.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "payment-wall-partial"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A commercial fraud-prevention/data-enrichment vendor; the social-profile linkages are a useful OSINT by-product but are inferred and can be wrong or stale.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "epieos-tools",
+      "ipqualityscore-com"
+    ],
+    "aliases": [
+      "Defastra fraud prevention"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "enrichment",
+      "fraud-scoring"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/defastra.md"
   },
@@ -150730,7 +150746,7 @@
   {
     "id": "metadata2go",
     "name": "Metadata2Go",
-    "description": "OSINT tool: Metadata2Go.",
+    "description": "Use when you have an `image` or file and want its embedded metadata — returns EXIF/IPTC data including camera, timestamps and any GPS `geolocation`, extracted in-browser.",
     "url": "https://www.metadata2go.com/",
     "category": "image-video-face",
     "path": [
@@ -150738,34 +150754,49 @@
       "images",
       "metadata"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Quickly reading EXIF/metadata (camera, dates, GPS) from an image or document online.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online metadata viewer; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You upload the file to a third-party server for parsing, so the operator receives your image — do not upload sensitive originals you can't share. Viewing metadata does not touch the subject. For maximum safety, use a local EXIF tool (e.g. exiftool) on sensitive files instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A convenient free online EXIF/metadata reader; results reflect whatever metadata the file actually contains. It's a third-party uploader, so treat it as convenience over confidentiality.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "online-exif-viewer",
+      "pic2map"
+    ],
+    "aliases": [
+      "Metadata2Go",
+      "metadata2go EXIF viewer"
+    ],
+    "tags": [
+      "metadata",
+      "exif",
+      "image-forensics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/metadata/metadata2go.md"
   },
   {
@@ -154585,46 +154616,54 @@
   {
     "id": "radioreference-station-search",
     "name": "RadioReference Station Search",
-    "description": "Multi-media search engine focusing on radio station call signs worldwide, including live feeds and audio files",
+    "description": "Use when you have a `geolocation`/agency or radio call sign and want radio-comms intelligence — returns scanner frequencies, trunked-system data, agency call signs and live audio feeds for an area.",
     "url": "http://www.radioreference.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding public-safety and other radio frequencies, call signs, and live scanner feeds for a location or agency.",
     "selectorsIn": [
-      "image",
-      "face"
+      "geolocation",
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse much of the database and access many live feeds; a paid Premium subscription unlocks the full frequency database and detailed trunked-system data.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only browsing/listening of a public radio-reference database and audio feeds; no individual is queried or notified. Listening to public-safety feeds is passive intelligence — mind local laws on scanner use and never act on comms in ways that interfere.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "RadioReference is the largest crowd-sourced radio-communications database (frequencies, trunked systems, live feeds); community-maintained, so freshness and accuracy vary by area.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "RadioReference",
+      "radioreference.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "radio-comms",
+      "scanner-feeds"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/radioreference-station-search.md"
   },
@@ -160764,30 +160803,32 @@
   {
     "id": "yandex-video-search",
     "name": "Yandex Video Search",
-    "description": "Video search feature of the multi-media search engine Yandex",
+    "description": "Use when you have a `name`, handle, or keyword and want to find videos featuring or mentioning a subject across the web — returns matching video results (thumbnails, source `social-profile`s).",
     "url": "http://www.yandex.com/video",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Keyword/name video search with strong indexing of Russian/CIS and non-Western sources that Google/Bing miss.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free; no account for basic video search.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "An ordinary keyword search; the subject is not notified. Note Yandex is Russian-operated, so your queries are processed on Russian infrastructure — use a VPN/sock-puppet if that matters for your investigation.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Yandex is a major search engine with genuinely broad video indexing, especially of Russian/CIS content; results are real but ranking/availability is opaque and operator is subject to Russian jurisdiction.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -160796,14 +160837,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "naver-com"
+    ],
+    "aliases": [
+      "Yandex Video"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "video-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/yandex-video-search.md"
   },
@@ -222943,46 +222991,53 @@
   {
     "id": "bgafd-co-uk",
     "name": "bgafd.co.uk",
-    "description": "OSINT tool: bgafd.co.uk.",
+    "description": "Use when you need to identify a British adult-film performer by stage name and resolve aliases/physical description — a niche performer database returning `name`, aliases and `physical-description`.",
     "url": "http://www.bgafd.co.uk",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying/disambiguating a British female adult-film performer and resolving stage-name aliases.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "physical-description",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference database; no account to search/browse.",
+    "opsec": "passive",
+    "opsecNote": "Read-only browsing of a public performer database; no individual is queried or notified. Handle results with discretion — this concerns adult-industry identities and sexual history, which are sensitive personal data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A long-standing, single-topic fan/reference database (the British Girls Adult Film Database); community-compiled, so aliases and details are unofficial and may be incomplete or dated.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "BGAFD",
+      "British Girls Adult Film Database"
+    ],
     "tags": [
-      "professionlicensing",
-      "Profession & Licensing Sites"
+      "performer-database",
+      "alias-resolution",
+      "adult-industry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bgafd-co-uk.md"
   },
   {
@@ -226282,46 +226337,55 @@
   {
     "id": "cilexgroup-org-uk",
     "name": "cilexgroup.org.uk",
-    "description": "OSINT tool: cilexgroup.org.uk.",
+    "description": "Use when you have a `name` claimed to be a UK chartered legal executive (CILEX) and want to verify membership — returns membership status, grade and practising details from the official CILEX directory.",
     "url": "https://cilexportal.cilexgroup.org.uk/CILEx-Directory",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a person is a CILEX member/legal executive and their grade/status.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official membership directory; no account to search.",
+    "opsec": "passive",
+    "opsecNote": "Read-only search of a professional-body directory; the member is not notified. Use a clean session for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by CILEX (Chartered Institute of Legal Executives), the professional body — the authoritative source for CILEX membership status.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "nmc-uk-org"
+    ],
+    "aliases": [
+      "CILEx Directory",
+      "Chartered Institute of Legal Executives"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "legal-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cilexgroup-org-uk.md"
   },
   {
@@ -236318,46 +236382,58 @@
   {
     "id": "genesreunited-co-uk",
     "name": "genesreunited.co.uk",
-    "description": "OSINT tool: genesreunited.co.uk.",
+    "description": "Use when you have a UK `name` and want genealogy/family-history records — returns census, birth/marriage/death and family-tree matches exposing relatives (`associate`), `dob` and historical `address`es.",
     "url": "https://www.genesreunited.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "UK family-history research — census, BMD, and member trees to map relatives and historical addresses.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "associate",
+      "dob",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and register and see match counts; viewing full records/trees requires a paid subscription or pay-per-view credits.",
+    "opsec": "passive",
+    "opsecNote": "Read-only genealogy search; the subject is not notified. Registration and payment expose your identity to the operator (a DC Thomson/Findmypast-family service) — use a sock-puppet account and billing hygiene.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established UK genealogy service (part of the Findmypast/DC Thomson family); official records (census, BMD) are authoritative, but user-submitted family trees are unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "sortedbyname-com",
+      "gro-gov-uk"
+    ],
+    "aliases": [
+      "Genes Reunited"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "family-history"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/genesreunited-co-uk.md"
   },
   {
@@ -242643,13 +242719,13 @@
   {
     "id": "iowa-offender-search",
     "name": "Iowa Offender Search",
-    "description": "OSINT tool: Iowa Offender Search.",
+    "description": "Use when you have a `name` and want to locate someone in Iowa state correctional custody or supervision — returns incarceration/supervision status, facility, DOB and offender ID.",
     "url": "https://doc.iowa.gov/offender/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a named person is in Iowa Department of Corrections custody or supervision, and where.",
     "selectorsIn": [
       "name"
     ],
@@ -242658,29 +242734,41 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state service; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Read-only search of Iowa's public offender database. The subject is not notified and the state does not tie the query to the searcher. Use a clean session for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Iowa Department of Corrections — the authoritative source for Iowa state custody/supervision status.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "ohio",
+      "california"
+    ],
+    "aliases": [
+      "Iowa DOC Offender Search",
+      "Iowa inmate search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/iowa-offender-search.md"
   },
   {
@@ -250885,46 +250973,56 @@
   {
     "id": "nmc-uk-org",
     "name": "nmc-uk.org",
-    "description": "OSINT tool: nmc-uk.org.",
+    "description": "Use when you have a `name` claimed to be a UK nurse or midwife and want to verify their registration — returns registration status, PIN, qualification and town from the official NMC register.",
     "url": "https://www.nmc.org.uk/search-the-register/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a person is a registered UK nurse/midwife and their registration status.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "document-id",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official register search; no account.",
+    "opsec": "passive",
+    "opsecNote": "Read-only search of the statutory public register; the registrant is not notified. Use a clean session for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Nursing and Midwifery Council (NMC), the statutory UK regulator — the authoritative source for nurse/midwife registration.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "cilexgroup-org-uk",
+      "ama-assn-org"
+    ],
+    "aliases": [
+      "NMC register",
+      "Nursing and Midwifery Council"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "healthcare-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nmc-uk-org.md"
   },
   {
@@ -251258,35 +251356,53 @@
   {
     "id": "ny-rent-regulated-building-search",
     "name": "NY Rent Regulated Building Search",
-    "description": "OSINT tool: NY Rent Regulated Building Search.",
+    "description": "Use when you have a New York `address` and want to know if the building is rent-regulated — returns the building's rent-stabilization status and registration context from NY HCR.",
     "url": "https://apps.hcr.ny.gov/BuildingSearch/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking whether a specific NY address is a rent-regulated/stabilized building.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official New York State (HCR) tool; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only search of a public NY State building database by address; no person is queried or notified. Building-level, not tenant-level, so it exposes no individual's data directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by New York State Homes and Community Renewal (HCR) — the authoritative source for NY rent-regulation status.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "royalmail-com"
+    ],
+    "aliases": [
+      "NY HCR Building Search",
+      "rent stabilized building lookup"
+    ],
+    "tags": [
+      "property",
+      "new-york",
+      "housing"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ny-rent-regulated-building-search.md"
   },
   {
@@ -263292,47 +263408,60 @@
   },
   {
     "id": "switzerland",
-    "name": "Switzerland",
-    "description": "OSINT tool: Switzerland.",
+    "name": "Switzerland (Zefix)",
+    "description": "Use when you have a company or director `name` in Switzerland and want official commercial-register detail — returns the company, registered `address`, and links to the cantonal register with officers.",
     "url": "https://www.zefix.ch/en/search/entity/welcome",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Swiss company-register lookups — confirm a company, its address, and route to officer/shareholder detail.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
+      "associate",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official central index (Zefix); the cantonal register extracts it links to may charge for certified documents.",
+    "opsec": "passive",
+    "opsecNote": "Read-only search of the official Swiss central business-name index; no person is notified. Certified extracts from cantonal registries may require payment. Use a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Zefix is the Central Business Name Index operated by the Swiss Federal Office of Justice — the authoritative gateway to Switzerland's cantonal commercial registers.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ch"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "infogreffe-fr",
+      "i-cyprus-com"
+    ],
+    "aliases": [
+      "Zefix",
+      "Swiss commercial register"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/switzerland.md"
   },
   {
@@ -265964,46 +266093,54 @@
   {
     "id": "uksocialhousing-com",
     "name": "uksocialhousing.com",
-    "description": "OSINT tool: uksocialhousing.com.",
+    "description": "Use when you have a UK location/`address` and want social-housing context — returns council/housing-association properties and providers in that area (an address/provider directory, not a person lookup).",
     "url": "https://uksocialhousing.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing UK social-housing properties and providers by location for address/tenure context.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; browse listings by location without an account.",
+    "opsec": "passive",
+    "opsecNote": "Read-only browsing of a property/provider directory by location; no individual is queried or notified. It surfaces buildings and housing providers, not named tenants.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A third-party UK social-housing directory (4M+ listings); useful for area/provider context but not an official register — corroborate against GOV.UK's registered-providers list.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "zoopla-co-uk",
+      "royalmail-com"
+    ],
+    "aliases": [
+      "UK Social Housing"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "social-housing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/uksocialhousing-com.md"
   },
   {
@@ -322603,45 +322740,56 @@
   },
   {
     "id": "hatless1der-com",
-    "name": "hatless1der.com",
-    "description": "OSINT tool: hatless1der.com.",
+    "name": "hatless1der.com (Pinterest username→email tip)",
+    "description": "Use when you have a Pinterest `username` and want to guess the account owner's `email` — an OSINT technique exploiting that Pinterest defaults the username to a Google email's local-part.",
     "url": "https://hatless1der.com/a-tremendously-valuable-osint-tip-for-pinterest-yes-seriously-pinterest/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Deriving a candidate email address from a Pinterest username (Google-signup accounts).",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free blog post/technique from OSINT practitioner Griffin Glynn (hatless1der); no tool to install.",
+    "opsec": "passive",
+    "opsecNote": "Reading the technique and viewing a public Pinterest profile is passive. The derived email is a GUESS — validating it (sending mail, account-existence checks) is a separate, potentially active step; do that passively and never email the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Published by a well-known OSINT practitioner; the technique is sound but heuristic — it produces candidate emails, not confirmed ones, and only for certain accounts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "peep-mail-search-tool",
+      "account-live-com"
+    ],
+    "aliases": [
+      "hatless1der Pinterest tip",
+      "Pinterest username to email"
+    ],
     "tags": [
       "pinterest",
-      "Pinterest Related Sites"
+      "Pinterest Related Sites",
+      "technique",
+      "email-discovery"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/hatless1der-com.md"
   },
   {
