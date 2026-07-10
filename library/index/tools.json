@@ -146425,45 +146425,56 @@
   },
   {
     "id": "huggingface-co",
-    "name": "huggingface.co",
-    "description": "OSINT tool: huggingface.co.",
+    "name": "Hugging Face (BRIA background removal Space)",
+    "description": "Use when you have an `image` of a subject and want to strip the background to isolate the face/person before reverse-image or face search — returns a cleaned image.",
     "url": "https://huggingface.co/spaces/briaai/BRIA-RMBG-2.0",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Free in-browser image preprocessing (background removal) to isolate a subject before running reverse-image or face-recognition search.",
     "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
       "image",
       "face"
     ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use in-browser; a Hugging Face account is optional. Heavy/automated use of the underlying model may hit rate limits or require running it locally.",
+    "opsec": "passive",
+    "opsecNote": "You upload the target image to a third-party ML host (Hugging Face / BRIA). Assume the upload is processed on their servers and may be transiently logged; use a sock-puppet account and avoid uploading the most sensitive imagery you cannot risk exposing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Hugging Face is a reputable ML platform; this specific Space is a vendor (BRIA) demo of a background-removal model — a legitimate utility, not an identity source, so it produces a processed image, nothing more.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-reverse-image-search",
+      "yahoo-image-search-2"
+    ],
+    "aliases": [
+      "BRIA RMBG",
+      "huggingface spaces",
+      "background removal"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "image-prep",
+      "background-removal"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/huggingface-co.md"
   },
   {
@@ -160707,35 +160718,55 @@
   {
     "id": "yahoo-image-search-2",
     "name": "Yahoo Image Search",
-    "description": "OSINT tool: Yahoo Image Search.",
+    "description": "Use when you have a `name`, `username` or keywords and want a keyword image search that indexes differently from Google — returns images and their source pages.",
     "url": "https://images.search.yahoo.com/images",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A second-opinion keyword image search (Bing-backed) that surfaces images and source pages Google may rank differently or miss.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Keyword image searches are passive queries to Yahoo/Bing and do not touch the subject. Yahoo logs searches; use a clean/sock-puppet session for sensitive queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Yahoo Image Search is a legitimate, long-running engine (results largely powered by Bing); it is a keyword image search, not a reverse-by-upload engine, so use it to find images by text, not to match a photo.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-reverse-image-search",
+      "huggingface-co"
+    ],
+    "aliases": [
+      "Yahoo Images",
+      "images.search.yahoo.com"
+    ],
+    "tags": [
+      "image-search",
+      "keyword-image"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/yahoo-image-search-2.md"
   },
   {
@@ -174916,37 +174947,56 @@
   {
     "id": "telegram-finder",
     "name": "Telegram Finder",
-    "description": "OSINT tool: Telegram Finder.",
+    "description": "Use when you have a `phone` number (or email) and want to find the linked Telegram account — returns the Telegram profile/username where the number is publicly visible.",
     "url": "https://www.telegram-finder.io/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Resolving a phone number to a Telegram user when that user has left their number publicly visible.",
+    "selectorsIn": [
+      "phone",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier allows ~2 Telegram lookups per day by phone; email/LinkedIn enrichment and higher volume require a paid plan (from ~€29.90/month).",
+    "opsec": "passive",
+    "opsecNote": "The service performs the Telegram lookup on its own infrastructure, so you are not adding the target as a contact yourself. Still, you disclose the target's number to a third-party enrichment vendor — use a sock-puppet account and treat the vendor as able to log your queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A contact-enrichment vendor; it can only surface users who left their phone number visible to everyone in Telegram, so a null result is common and not conclusive.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "numberingplans-com"
+    ],
+    "aliases": [
+      "telegram-finder.io"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "phone-to-social",
+      "messaging"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-finder.md"
   },
   {
@@ -200371,43 +200421,57 @@
   },
   {
     "id": "192",
-    "name": "192",
-    "description": "UK people, business and electoral-roll directory.",
+    "name": "192.com",
+    "description": "Use when you have a UK `name` and/or `address` and want current/historical occupancy, electoral-roll and household links — returns addresses, co-residents and directory data.",
     "url": "https://www.192.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "UK people/address lookup — electoral roll, current and previous occupants, household co-residents and business directory entries.",
     "selectorsIn": [
       "name",
       "address"
     ],
     "selectorsOut": [
       "address",
-      "associate"
+      "associate",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free search returns names, partial addresses and match counts; full addresses, historical electoral-roll years and detailed reports require paid credits/subscription.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching 192.com queries a commercial data aggregator, not the subject, so the person is not alerted. You disclose your query interest to 192; use a sock-puppet account and be mindful that purchased reports are logged to that account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established UK data aggregator drawing on the edited electoral register, directories and company data; broadly reliable but records can be stale or reflect opted-out/partial entries.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "uk"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "scottishepcregister-org-uk"
+    ],
+    "aliases": [
+      "192.com",
+      "192 directory"
+    ],
+    "tags": [
+      "people-search",
+      "uk",
+      "electoral-roll"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/192.md"
   },
@@ -215095,44 +215159,53 @@
   {
     "id": "freephonenum-com",
     "name": "freephonenum.com",
-    "description": "OSINT tool: freephonenum.com.",
+    "description": "Use when you have a `phone` number and want to check whether it is a public throwaway SMS number — or need a burner number for sock-puppet signups; returns disposable-number status.",
     "url": "https://freephonenum.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising a number as a public disposable/temporary SMS line, and sourcing burner numbers for sock-puppet account verification.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account; ~630 public numbers across ~18 countries for receiving SMS in-browser.",
+    "opsec": "passive",
+    "opsecNote": "Checking whether a target's number appears in the public inbox list is passive — you never contact the target. If you USE one of these numbers for signups, remember every SMS to it is public and readable by anyone, so never route password resets, banking, or anything sensitive through it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A genuine, widely-used temporary-number service; it holds no identity data about people, so its OSINT value is classification (is this number a throwaway?) and sock-puppet support, not lookup.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "numberingplans-com"
+    ],
+    "aliases": [
+      "freephonenum",
+      "receive SMS online"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "disposable-number",
+      "temp-sms",
+      "sockpuppet"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/freephonenum-com.md"
   },
   {
@@ -215343,43 +215416,58 @@
   },
   {
     "id": "hiya-r",
-    "name": "Hiya (R$)",
-    "description": "Spam classification and caller-ID enrichment on mobile workflows",
+    "name": "Hiya",
+    "description": "Use when you have a `phone` number and want caller-ID and spam/scam reputation on it — returns caller name/org and a spam classification, mainly via the mobile app.",
     "url": "https://www.hiya.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Spam classification and caller-ID enrichment on mobile workflows",
-    "input": "Phone number",
-    "output": "Caller identity signals, spam ratings, and reputation context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether a number is flagged spam/scam and what caller identity/organisation is associated with it.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "The consumer caller-ID app is free; richer identity/branded-calling data is an enterprise/network product. There is no simple free public web reverse-lookup — signals come through the app or carrier integration.",
     "opsec": "passive",
-    "opsecNote": "Most checks are service-mediated; advanced features may still be account-tracked.",
+    "opsecNote": "Reputation lookups are service-mediated against Hiya's database, so the number's owner is not contacted. Using the app requires an account and grants Hiya access to call metadata; use a dedicated device/account, not your primary identity.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "Hiya is a major, legitimate caller-ID/anti-spam provider (28B+ calls/month, 40+ countries); reputation signals are strong, but caller-name data is crowdsourced/derived and can be wrong or generic.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "numberingplans-com"
+    ],
+    "aliases": [
+      "Hiya Caller ID",
+      "hiya.com"
+    ],
+    "tags": [
+      "phone",
+      "caller-id",
+      "spam",
+      "reputation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/hiya-r.md"
   },
   {
@@ -229050,45 +229138,58 @@
   },
   {
     "id": "court-electronic-records-pacer",
-    "name": "Court Electronic Records PACER",
-    "description": "OSINT tool: Court Electronic Records PACER.",
-    "url": "https://www.pacer.gov/psco/cgi-bin/links.pl",
+    "name": "PACER (Public Access to Court Electronic Records)",
+    "description": "Use when you have a `name` and want US federal court records (civil, criminal, bankruptcy) — returns case filings, party names and document IDs across all federal courts.",
+    "url": "https://pacer.uscourts.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching US federal court cases nationwide by party name via the PACER Case Locator, then pulling docket/document detail.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Requires a free PACER account, but access is fee-based ($0.10/page, capped at $3.00/document; search results also billed per page). Fees are waived if you accrue under a low quarterly threshold (~$30), so light use is effectively free.",
+    "opsec": "passive",
+    "opsecNote": "Searching PACER queries the courts' own systems, not the subject, so no one is alerted. Your account and billing tie searches to your identity — use an appropriately attributed account for the engagement, and note that filing/sealed restrictions apply to some records.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official US federal judiciary system for electronic court records; data is authoritative and primary-source, though coverage is federal courts only (not state/county courts).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "PACER",
+      "PACER Case Locator",
+      "pacer.gov"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "federal-records",
+      "legal"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-electronic-records-pacer.md"
   },
   {
@@ -260616,47 +260717,53 @@
   },
   {
     "id": "scottishepcregister-org-uk",
-    "name": "scottishepcregister.org.uk",
-    "description": "OSINT tool: scottishepcregister.org.uk.",
+    "name": "Scottish EPC Register",
+    "description": "Use when you have a Scottish `address` or postcode and want the property's Energy Performance Certificate — returns property characteristics and confirmation the dwelling exists.",
     "url": "https://www.scottishepcregister.org.uk/CustomerFacingPortal/TermsAndConditions",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up the EPC for a property in Scotland by postcode/address to confirm a dwelling and read its physical characteristics.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register operated by Energy Saving Trust on behalf of Scottish Ministers; no account required to search by postcode.",
+    "opsec": "passive",
+    "opsecNote": "You query a public property register, not the occupant, so nobody is contacted or alerted. EPCs describe the building, not who lives there — treat it as property intelligence only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Official Scottish Government-mandated EPC register; the data is authoritative for property energy assessments, though it reflects the dwelling, not current occupancy.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gb-sct"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Scottish EPC Register",
+      "scottishepcregister.org.uk"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "property",
+      "scotland",
+      "energy-performance"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/scottishepcregister-org-uk.md"
   },
   {
@@ -371008,13 +371115,13 @@
   {
     "id": "username-availability-checker",
     "name": "Username Availability Checker",
-    "description": "Simple online tool that checks if a user with a certain nickname is present on popular social networks. Very far behind Maigret/WhatsMyName in terms of number of services, but suitable for a quick check.",
+    "description": "Use when you have a `username` and want a quick presence check across popular networks — returns which sites the handle exists on, but the hosted demo is likely offline.",
     "url": "https://username-check.herokuapp.com/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "A minimal, quick handle-presence check across a handful of popular networks — far smaller coverage than WhatsMyName/Maigret.",
     "selectorsIn": [
       "username"
     ],
@@ -371022,27 +371129,34 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open-source (manu-chroma on GitHub). The hosted demo runs on a Heroku free dyno, which Heroku discontinued in Nov 2022, so the public URL is frequently or permanently offline; self-host from the repo if needed.",
+    "opsec": "passive",
+    "opsecNote": "Checks are made server-side against target sites, so the subject is not contacted directly. If you self-host, your server's IP makes the requests. Nothing sensitive is submitted beyond the handle.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Small community project with limited site coverage; \"not found\" is weak evidence given how few networks it checks — corroborate with a comprehensive enumerator.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-python",
+      "instant-username"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username-availability"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/username-availability-checker.md"
   },
