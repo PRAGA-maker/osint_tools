@@ -159087,37 +159087,52 @@
   {
     "id": "tracepoint",
     "name": "TracePoint",
-    "description": "OSINT tool: TracePoint.",
+    "description": "Use when you have an `image` with visible directional features and want to triangulate where the camera stood — returns an estimated `geolocation`.",
     "url": "https://kluter.github.io/TracePoint/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Manually triangulating a photo's camera position by drawing rays from landmarks onto a map.",
+    "selectorsIn": [
+      "image",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open, static web app hosted on GitHub Pages; no account, no server-side upload.",
+    "opsec": "passive",
+    "opsecNote": "The tool runs entirely in your browser (GitHub Pages static site) — the image is not uploaded to a third-party server, so analysis leaks nothing about the target. It uses a web map tile provider, so the map areas you pan to are visible to that provider's servers; that reveals your area of interest, not the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source hobby/geolocation tool by an individual (kluter); the math is transparent, but accuracy depends entirely on the analyst's landmark identification.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "kluter TracePoint",
+      "photo triangulation tool"
+    ],
     "tags": [
-      "image-analysis"
+      "image-analysis",
+      "geolocation",
+      "geoint"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/tracepoint.md"
   },
   {
@@ -173353,43 +173368,52 @@
   {
     "id": "osint-github-com",
     "name": "OSINT (github.com)",
-    "description": "OSINT tool: OSINT (github.com).",
+    "description": "Use when you have a Discord `username` or user/server ID and want a reference map of every pivot point — returns a methodology guide, not live data (pivots toward `social-profile`).",
     "url": "https://github.com/sinwindie/OSINT/blob/master/Discord/Discord%20OSINT%20Attack%20Surface.pdf",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "A reference \"attack surface\" diagram of what can be enumerated from a Discord identity, used to plan a Discord investigation.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "username",
+      "phone"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source reference material on GitHub (sinwindie/OSINT); no account needed to view.",
+    "opsec": "passive",
+    "opsecNote": "This is documentation, not a query tool — reading it touches only GitHub and leaks nothing about the target. OpSec risk lives in the techniques it describes (joining servers, DMing, ID enumeration), which are active and can alert the subject; apply sock-puppet discipline when you execute them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "sinwindie's OSINT repo is a widely-referenced, well-starred community resource; it is a curated methodology guide, not a maintained data feed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sinwindie Discord OSINT Attack Surface",
+      "Discord OSINT Attack Surface PDF"
+    ],
     "tags": [
       "discord",
-      "Discord Related Sites"
+      "Discord Related Sites",
+      "methodology",
+      "reference"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/osint-github-com.md"
   },
   {
@@ -204772,30 +204796,36 @@
   {
     "id": "familytree",
     "name": "FamilyTree",
-    "description": "Free US records site exposing relatives, addresses, possible associates.",
+    "description": "Use when you have a `name` and want a free US map of relatives, past/current addresses and age — returns `associate`, `address`, `dob`, `phone`.",
     "url": "https://www.familytreenow.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Free, no-login US people search that surfaces relatives/associates and an address history from one name.",
     "selectorsIn": [
-      "name"
+      "name",
+      "address",
+      "phone"
     ],
     "selectorsOut": [
       "associate",
       "address",
-      "dob"
+      "dob",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Core people/relatives/address search is genuinely free with no account. It monetises via upsell links to paid background-check partners for deeper reports; you can ignore those and stay on the free tier.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searches run against FamilyTreeNow's own aggregated database — the subject is not notified and does not see you. Browsing is passive. If you plan repeated queries, use a clean browser/IP; the site sets tracking cookies. Never enter your own real details into the (CAPTCHA-gated) opt-out flow from an investigative session.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running US data aggregator that recompiles public records; coverage is broad but data is often stale or conflated across same-name individuals — corroborate before acting.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -204804,10 +204834,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FamilyTreeNow",
+      "familytreenow.com"
+    ],
+    "tags": [
+      "people-search",
+      "relatives",
+      "address-history"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/familytree.md"
   },
@@ -233815,46 +233852,55 @@
   {
     "id": "egafd-com",
     "name": "egafd.com",
-    "description": "OSINT tool: egafd.com.",
+    "description": "Use when you have a `name`/stage name or `image` of a European female adult-film performer and want to identify or cross-reference them — returns confirmed `name`, aliases and `associate` links.",
     "url": "https://www.egafd.com/fora/viewforum.php?f=4",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying continental-European female adult-film performers and their aliases via a specialist database/forum.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "image",
+      "physical-description"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to read; the forum has restricted posting (moderated/closed to new members), so treat it as read-only reference.",
+    "opsec": "passive",
+    "opsecNote": "Reading the database/forum is passive and does not notify anyone. It is an adult-industry site — access it from an isolated sock-puppet browser, expect adult content, and handle any identification with care given the sensitivity and potential exploitation context. Do not register or post from an attributable identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running niche community database (European Girls Adult Film Database) with dedicated identification threads; contributor-sourced, so entries are enthusiast-curated rather than authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "European Girls Adult Film Database",
+      "EGAFD"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "adult-industry",
+      "identification"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/egafd-com.md"
   },
   {
@@ -244512,44 +244558,54 @@
   {
     "id": "iowa-courts-online-search",
     "name": "Iowa Courts Online Search",
-    "description": "OSINT tool: Iowa Courts Online Search.",
+    "description": "Use when you have a `name` and want Iowa state court case history (civil, criminal, traffic) — returns `document-id` (case numbers), `dob`/age, and confirmed `name`/party links.",
     "url": "https://www.iowacourts.state.ia.us/esawebapp/defaultframe",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Statewide search of Iowa district, appellate and supreme court case records by party name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Basic case-index searching and viewing is free with no account across all 99 counties. Some detailed documents may require a clerk login or a per-document fee; the party/case search itself is free.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit the Iowa Judicial Branch's own public docket system — the subject is not notified. This is an official government portal; your search is logged server-side like any public-records lookup. Nothing is sent to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Iowa Judicial Branch; this is the authoritative primary source for Iowa court records, not a third-party reseller.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Iowa Courts Online",
+      "ICO",
+      "iowacourts.state.ia.us"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records",
+      "legal"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/iowa-courts-online-search.md"
   },
   {
@@ -245851,35 +245907,52 @@
   {
     "id": "katrina-spending-search",
     "name": "Katrina Spending Search",
-    "description": "OSINT tool: Katrina Spending Search.",
+    "description": "Use when you have a `name` or `employer-org` and want to check Hurricane Katrina federal-aid/contract recipients — returns recipient `name`, `employer-org` and award `address` details.",
     "url": "https://b2.caspio.com/dp/a4321000cb4905373d1946e5b33f",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching the NOLA.com/Times-Picayune database of federal Hurricane Katrina spending by recipient.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free public database (a Caspio-hosted datapage originally embedded on NOLA.com). No account needed; note it is a legacy 2005-era dataset and the embedded datapage may be intermittently offline.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A read-only search of a static historical dataset — no subject is notified and nothing is sent to any target. Queries hit Caspio's hosting; treat like any public-records lookup. Zero interaction risk.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Compiled by Louisiana's Governor's Office of Homeland Security and Emergency Preparedness and published by NOLA.com | The Times-Picayune (~11,532 records). Reputable journalistic source, but a fixed 2005 snapshot excluding Army Corps spending.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NOLA Katrina spending database",
+      "Hurricane Katrina federal spending search"
+    ],
+    "tags": [
+      "disaster-recovery",
+      "government-spending",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/katrina-spending-search.md"
   },
   {
@@ -324713,35 +324786,51 @@
   {
     "id": "google-to-search-profiles-on-twitter",
     "name": "Google to search profiles on Twitter",
-    "description": "OSINT tool: Google to search profiles on Twitter.",
+    "description": "Use when you have a `name`, keyword, or location and want to find matching X/Twitter profiles via a Google X-ray query — returns candidate `social-profile` links.",
     "url": "https://recruitin.net/twitter.php",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Building a Google site:x.com / site:twitter.com X-ray query to surface profiles by name, skill, or city.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Completely free, no registration; it is a query-builder front-end, the actual search runs on Google.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The page only assembles a Google search string — no data is sent to the target. The search itself runs on Google under your session/IP; use a sock-puppet browser if you don't want the query tied to you. You never touch X's own infrastructure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "RecruitEm (recruitin.net) is a long-running recruiter X-ray tool; it does not hold data itself, so trust reduces to trusting Google's index.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "RecruitEm Twitter X-ray",
+      "recruitin.net twitter"
+    ],
+    "tags": [
+      "twitter",
+      "x-ray-search",
+      "google-dork"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-to-search-profiles-on-twitter.md"
   },
   {
@@ -332140,29 +332229,33 @@
   {
     "id": "naijapals",
     "name": "Naijapals",
-    "description": "Nigerian music, movies & news website. App also available for Android",
+    "description": "Use when you have a `name` or `username` and want to find a member profile on this large Nigerian social network — returns a `social-profile`.",
     "url": "https://www.naijapals.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing/searching member profiles on a major Nigeria-focused social community.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search members; a free account is needed to view some profile details and to interact.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Public member browse/search is passive and does not notify the subject. Viewing full profiles or messaging requires a login — do that only from a sock-puppet account, never a real identity, since interaction can alert the member. Do not friend/message the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A real, long-running Nigerian social/entertainment site with a member directory, but a self-reported consumer platform — profile data is user-supplied and unverified.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -332171,15 +332264,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "naijapals.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "social-media",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "nigeria"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/naijapals.md"
   },
@@ -335612,35 +335708,54 @@
   {
     "id": "proxycurl",
     "name": "Proxycurl",
-    "description": "OSINT tool: Proxycurl.",
+    "description": "Use when you have a `name`/`social-profile` and want enriched professional data (employer, role, contact) via API — but note the service has been discontinued; returns `employer-org`, `email`, `phone`.",
     "url": "https://nubela.co/proxycurl/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "(Historically) programmatic enrichment of LinkedIn-style profiles into structured person/company data.",
+    "selectorsIn": [
+      "name",
+      "social-profile",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "email",
+      "phone"
+    ],
+    "status": "down",
     "pricing": "freemium",
+    "costNote": "Proxycurl is NO LONGER IN SERVICE (shut down; founder moved to a new venture, NinjaPear). It was formerly a paid API with limited free trial credits. Do not send new customers here — use it only to recognise legacy references and pivot to a live alternative.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Was a server-side API — you queried Proxycurl, which fetched from professional networks; the target was not directly contacted by you. Moot now that the service is offline. Any archived Proxycurl data in a report should be treated as stale.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Was a well-known commercial enrichment API (Nubela); data quality was decent but scraped from LinkedIn, raising ToS/accuracy caveats. Now defunct.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "Nubela Proxycurl",
+      "LinkDB"
+    ],
+    "tags": [
+      "linkedin",
+      "enrichment",
+      "api",
+      "defunct"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/proxycurl.md"
   },
   {
@@ -335787,44 +335902,50 @@
   {
     "id": "publer-io-3",
     "name": "publer.io",
-    "description": "OSINT tool: publer.io.",
+    "description": "Use when you have a `social-profile` (a Threads post/profile URL) and want to archive its video/media before it is deleted — returns the downloaded `image`/video and its `metadata-exif`.",
     "url": "https://publer.io/tools/threads-video-downloader",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a full-resolution copy of a Threads video/photo before the poster removes it.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no ads, no watermark, no registration; Publer offers it as a lead-in to its paid social-scheduling product but the downloader itself is unrestricted.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public Threads URL into Publer's server, which fetches the media on your behalf — the target is not notified and never sees your IP. Publer's servers do see the URL you submit; assume it is logged. Do not paste private/authenticated post URLs (they will not resolve anyway).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Publer is an established commercial social-media management company; the free downloader is a genuine utility, but it is a third-party proxy, not Meta, so verify the media against the live post when possible.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Publer Threads Video Downloader",
+      "publer.com threads downloader"
+    ],
     "tags": [
       "threads",
-      "Threads Related Sites"
+      "Threads Related Sites",
+      "media-archival"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/publer-io-3.md"
   },
   {
