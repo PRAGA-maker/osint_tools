@@ -170423,44 +170423,47 @@
   },
   {
     "id": "fakedetail-com-2",
-    "name": "fakedetail.com",
-    "description": "OSINT tool: fakedetail.com.",
+    "name": "fakedetail.com (Fake WhatsApp Chat Generator)",
+    "description": "Use when you need to understand or demonstrate how a WhatsApp chat screenshot can be fabricated — a counter-OSINT/evidence-verification reference, not a lookup — outputs realistic fake chat images.",
     "url": "https://fakedetail.com/fake-whatsapp-chat-generator",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Recognizing that WhatsApp/chat \"evidence\" can be trivially faked — an evidence-authentication awareness tool, not an investigative lookup.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free with unlimited generation and a watermark; paid plans ($15–$100) remove the watermark and ads.",
+    "opsec": "passive",
+    "opsecNote": "Generating a mock chat touches only fakedetail.com and reveals nothing about any real person. The real risk is ethical/legal — never use it to impersonate, deceive, or fabricate evidence; its OSINT value is defensive (spotting fakes), not offensive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A transparent novelty tool that states it is a mock generator not affiliated with WhatsApp/Meta; relevant to investigators only as proof of how easily chat screenshots are forged.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FakeDetail WhatsApp chat generator",
+      "fake chat generator"
+    ],
     "tags": [
       "whatsapp",
-      "WhatsApp"
+      "WhatsApp",
+      "counter-osint",
+      "evidence-verification"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/fakedetail-com-2.md"
   },
   {
@@ -216496,40 +216499,49 @@
   {
     "id": "numverify-api",
     "name": "Numverify API",
-    "description": "free api for global phone number lookup and validation",
+    "description": "Use when you have a `phone` number and want to validate it and learn its country, carrier, and line type — returns validity, country/region, carrier, and number format (not the owner's name).",
     "url": "https://numverify.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Programmatic global phone-number validation — confirming a number is real and identifying its country, carrier, and line type.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier (100 lookups/month) after signing up for an API key; paid plans raise the quota. No per-lookup name/owner data at any tier — it validates and enriches, it doesn't identify.",
+    "opsec": "passive",
+    "opsecNote": "The number is sent to numverify's (apilayer's) API for validation, not to the subject — the target is never contacted or notified. You do expose the queried number to a third-party API; use a dedicated API key and avoid logging sensitive numbers in shared code.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by apilayer, an established API provider; validation/carrier/line-type data is reliable, though carrier can be stale for ported numbers.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "numverify",
+      "apilayer phone validation"
+    ],
     "tags": [
-      "Phone numbers"
+      "Phone numbers",
+      "phone-validation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/phone/numverify-api.md"
   },
@@ -234071,35 +234083,54 @@
   {
     "id": "familysearch-s-united-states-record-collections",
     "name": "FamilySearch's United States Record Collections",
-    "description": "OSINT tool: FamilySearch's United States Record Collections.",
+    "description": "Use when you have a `name` and want a one-page portal into FamilySearch's US genealogy record collections (census, vital, immigration) via Steve Morse's One-Step tools — returns links/forms into `dob`, `address`, `associate` records.",
     "url": "https://stevemorse.org/fhl/websitesunitedstates.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A single indexed gateway (Steve Morse \"One-Step\") into FamilySearch's US record collections for genealogy/identity research.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The One-Step portal is free; it links into FamilySearch, which is also free but requires a free FamilySearch account to view many record images.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "A directory of search links plus the FamilySearch archive — you query records, nothing reaches any subject. A free FamilySearch login is needed for some images; use a research account, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Steve Morse's One-Step pages are a long-respected genealogy resource; they front FamilySearch (run by the LDS Church), whose record collections are authoritative primary sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Steve Morse One-Step FamilySearch US",
+      "One-Step US record collections"
+    ],
+    "tags": [
+      "genealogy",
+      "familysearch",
+      "one-step"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/familysearch-s-united-states-record-collections.md"
   },
   {
@@ -235341,13 +235372,13 @@
   {
     "id": "florida-probation-search",
     "name": "Florida Probation Search",
-    "description": "OSINT tool: Florida Probation Search.",
+    "description": "Use when you have a `name` and want to check Florida Department of Corrections inmate, probation, or supervision status — returns `name`, `dob`, `document-id` (DC number), custody/supervision status, and location.",
     "url": "http://www.dc.state.fl.us/offendersearch/search.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is a Florida DOC inmate, on probation, or under community supervision.",
     "selectorsIn": [
       "name"
     ],
@@ -235356,29 +235387,36 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public government database; no account or payment. (The old dc.state.fl.us host redirects to fdc.myflorida.com.)",
+    "opsec": "passive",
+    "opsecNote": "An official public-records lookup — you query the state database, nothing reaches the subject. No login; a sock puppet is optional but tidy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Florida Department of Corrections offender database; authoritative for people under FDC jurisdiction, updated regularly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Florida DOC offender search",
+      "FDC offender search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/florida-probation-search.md"
   },
   {
@@ -286688,43 +286726,50 @@
   {
     "id": "impersonal-me",
     "name": "impersonal.me",
-    "description": "OSINT tool: impersonal.me.",
+    "description": "Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns localized `social-profile`s and pages hidden by your own geo/language defaults.",
     "url": "https://impersonal.me/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing localized Google search results from 50+ countries and 30+ languages without changing your own location.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You search Google via impersonal.me rather than the target — passive toward the subject. The service states it doesn't store/track queries, but you are still routing searches through a third party; use a clean/sock-puppet browser for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A localized-Google front-end aimed at SEO/researchers; it surfaces Google's own results, so quality is Google's — the tool just changes the geo/language lens.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "impersonal.me",
+      "localized Google search"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "localized-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/impersonal-me.md"
   },
   {
@@ -314173,45 +314218,50 @@
   },
   {
     "id": "commentpicker-com-2",
-    "name": "commentpicker.com",
-    "description": "OSINT tool: commentpicker.com.",
+    "name": "commentpicker.com (TikTok ID Finder)",
+    "description": "Use when you have a TikTok `username` and want its permanent numeric user ID plus account stats — returns the numeric ID, account creation date, follower/video counts, and username-change date.",
     "url": "https://commentpicker.com/tiktok-id.php",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a TikTok @username into its stable numeric user ID and pulling account metadata (creation date, counts).",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tool; no account required for the TikTok ID lookup.",
+    "opsec": "passive",
+    "opsecNote": "The lookup runs server-side against TikTok's public data — the target is not notified and never sees you. No login needed; standard browser hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely used free giveaway/utility site; the TikTok ID/stat data it returns comes from TikTok's public endpoints and is generally accurate at time of query.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CommentPicker TikTok ID Finder",
+      "TikTok User ID Finder"
+    ],
     "tags": [
       "tiktok",
-      "TikTok Related Sites"
+      "TikTok Related Sites",
+      "user-id"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/commentpicker-com-2.md"
   },
   {
@@ -335057,41 +335107,51 @@
   {
     "id": "reddit-metis",
     "name": "Reddit Metis",
-    "description": "Reddit user behavior profiling",
+    "description": "Use when you have a Reddit `username` and want a behavioral profile of that account — returns activity stats, subreddit/topic distribution, active hours/timezone hints, and personality/interest summaries.",
     "url": "https://redditmetis.com/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "reddit"
     ],
-    "bestFor": "Reddit user behavior profiling",
-    "input": "Reddit username",
-    "output": "Account statistics, subreddit distribution, and content summaries",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Profiling a Reddit account's habits, interests, timezone, and likely location/personality from its public comment/post history.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account required. Rate-limited by Reddit's API, so heavy accounts can take a while or occasionally fail.",
     "opsec": "passive",
-    "opsecNote": "Reads public Reddit data without direct interaction with target users.",
+    "opsecNote": "Reads only public Reddit data via the API — the target is not notified and never sees you. No login. Standard browser hygiene; the request comes from Reddit Metis's servers, not your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community successor to snoopsnoo-style profilers; stats are computed directly from public history, but the inferred \"personality\"/attributes are heuristic guesses, not facts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Reddit Metis",
+      "redditmetis"
+    ],
+    "tags": [
+      "reddit",
+      "Reddit Related Sites",
+      "account-profiling"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit/reddit-metis.md"
   },
   {
@@ -347070,7 +347130,7 @@
   {
     "id": "twitter-date-search",
     "name": "Twitter Date Search",
-    "description": "Timeline reconstruction and historical tweet collection",
+    "description": "Use when you have a Twitter/X `username` or keyword and want tweets from a specific date window — using `since:`/`until:` search operators to reconstruct a timeline — returns tweets within the range.",
     "url": "https://twitter.com/search?q=SearchTerm%20since:2016-03-01%20until:2016-03-02",
     "category": "social-networks",
     "path": [
@@ -347078,34 +347138,45 @@
       "twitter",
       "search"
     ],
-    "bestFor": "Timeline reconstruction and historical tweet collection",
-    "input": "Keywords plus `since:` and `until:` date operators",
-    "output": "Tweets posted within the requested date range",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Isolating tweets from a precise date range to reconstruct what an account (or the wider platform) posted around a known event.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Relies on platform search indexing and public content availability.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free — it's just Twitter/X's own search with date operators. But X now gates most search behind a logged-in account and rate-limits heavily.",
+    "opsec": "active",
+    "opsecNote": "Running the search on X while logged in exposes your session/account to X; viewing a specific account's tweets can, in aggregate, be inferred by the platform. Use a sock-puppet X account and clean browser; prefer archived copies when you want to avoid touching X at all.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "These are native X search operators, so results are authoritative for what X's (now-limited) index returns; not a third-party scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Twitter advanced search by date",
+      "since until search"
+    ],
+    "tags": [
+      "twitter",
+      "x-com",
+      "date-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/search/twitter-date-search.md"
   },
   {
@@ -349177,45 +349248,54 @@
   },
   {
     "id": "vk-com-2",
-    "name": "vk.com",
-    "description": "OSINT tool: vk.com.",
+    "name": "vk.com (People Search)",
+    "description": "Use when you have a `name` or `username` (especially for a Russian/CIS-linked subject) and want to find their VKontakte profile — returns `social-profile`, `name`, photos, and stated location/education/associates.",
     "url": "https://vk.com/search/people?c%5Bname%5D=1",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and filtering VKontakte profiles by name, with rich filters (city, age, school, employer) — the primary social network for Russia/CIS.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search and view public profiles, but VK increasingly gates full profile/photo access and the people-search filters behind a logged-in account.",
+    "opsec": "active",
+    "opsecNote": "Meaningful searching/browsing on VK now generally requires a logged-in account, and VK (a Russian-jurisdiction platform) logs your activity and may record profile visits. Use a sock-puppet VK account created on a burner number over a clean IP; never use a personal or attributable account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "VKontakte is the genuine, dominant social network for Russia and the CIS; profiles are first-party, though user-entered detail is self-reported.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VKontakte",
+      "VK people search"
+    ],
     "tags": [
       "russiansocialmedia",
       "Russian Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/vk-com-2.md"
   },
   {
