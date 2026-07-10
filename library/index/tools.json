@@ -145093,47 +145093,56 @@
   },
   {
     "id": "geograph-worldwide",
-    "name": "Geograph Worldwide",
-    "description": "Open source collection of regional photographs",
+    "name": "Geograph",
+    "description": "Use when you have a `geolocation` (grid square / area) and want ground-level reference photos of it — returns geotagged `image`s to compare against a target photo for geolocation verification.",
     "url": "https://www.geograph.org/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding representative ground-level photographs of a specific geographic square/area (Britain & Ireland core; some worldwide) for geolocation comparison.",
     "selectorsIn": [
-      "image",
-      "face"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
       "image",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open/Creative-Commons collection built by volunteers; no account needed to browse.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing geotagged reference photos is passive and involves no target. Standard sock-puppet browsing hygiene is enough; nothing you do reaches any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Established volunteer project (Geograph Britain and Ireland, plus sister projects) with geotagged, licensed photos; imagery is genuine and grid-referenced, though coverage density and recency vary by square.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "here-com-geolocation-and-mapping-tool",
+      "gps-visualizer"
+    ],
+    "aliases": [
+      "Geograph Britain and Ireland",
+      "geograph.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "geolocation",
+      "reference-imagery"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/geograph-worldwide.md"
   },
@@ -159364,7 +159373,7 @@
   {
     "id": "twitter-image-search",
     "name": "Twitter Image Search",
-    "description": "Finding image-containing tweets by keyword or operator",
+    "description": "Use when you have a `username`, keyword, or place and want image/media tweets — an X/Twitter search URL with the images filter returns media-bearing tweets and the accounts posting them.",
     "url": "https://twitter.com/search?q=%3Csearchterm%3E&src=typd&vertical=default&f=images",
     "category": "image-video-face",
     "path": [
@@ -159372,34 +159381,53 @@
       "images",
       "search"
     ],
-    "bestFor": "Finding image-containing tweets by keyword or operator",
-    "input": "Edited URL query (keyword, account, and search operators)",
-    "output": "Tweets and accounts with matching image/media posts",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Surfacing image/media tweets by keyword, account, or operator using X/Twitter's native image-filtered search.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Searches public timeline content; no direct engagement with targets.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, but X now requires a logged-in account to run searches and view results reliably; the legacy twitter.com URL redirects to x.com.",
+    "opsec": "active",
+    "opsecNote": "X search now needs a login and X logs your logged-in activity; viewing a profile doesn't notify it, but interacting (like/follow/RT) does. Use a sock-puppet X account, never your real one, and don't engage with the target's content.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party X/Twitter search; results are genuine platform content. The technique (URL with f=images / filter:images) is reliable, but X's login-gating and search throttling degrade unauthenticated use.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [
+      "twitter-search-2",
+      "search-twitter-bios-and-profiles"
+    ],
+    "aliases": [
+      "X image search",
+      "Twitter media search",
+      "filter:images"
+    ],
+    "tags": [
+      "reverse-image",
+      "twitter",
+      "image-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/search/twitter-image-search.md"
   },
   {
@@ -223444,47 +223472,57 @@
   },
   {
     "id": "ascap-com",
-    "name": "ascap.com",
-    "description": "OSINT tool: ascap.com.",
+    "name": "ascap.com (ACE Repertory)",
+    "description": "Use when you have a `name` who may be a songwriter/composer/publisher and want to confirm it — ASCAP's ACE database returns registered works, co-writers (`associate`), and publisher (`employer-org`).",
     "url": "https://www.ascap.com/ace-title-search/restored-works",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a person is a registered songwriter/composer/publisher via ASCAP's ACE repertory and mapping their works and collaborators.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public ACE (ASCAP Clearance Express) title/writer search; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Querying a public music-rights database is passive and does not notify the person. Standard sock-puppet browsing is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "First-party database of ASCAP, a major US performing-rights organisation; registration data (writers, publishers, works) is authoritative for ASCAP-affiliated music.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "setlist-fm",
+      "companieshouse-im"
+    ],
+    "aliases": [
+      "ASCAP ACE",
+      "ACE Repertory",
+      "ascap.com"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "music-rights"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ascap-com.md"
   },
   {
@@ -228325,35 +228363,55 @@
   {
     "id": "coloradovoters-info",
     "name": "Coloradovoters.info",
-    "description": "OSINT tool: Coloradovoters.info.",
+    "description": "Use when you have a `name` in Colorado and want registered-voter data — returns `address`, approximate `dob`/age, party affiliation, and voting-status history from the public CO voter file.",
     "url": "https://coloradovoters.info/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free lookup of Colorado's public voter-registration file by name for address, age, and party.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search Colorado's public voter file; some sites in this niche add paid/enhanced features, but core CO voter lookups are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public voter data is passive and does not notify the subject. Voter data is sensitive PII — handle within your legal/ethical rules. Use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Republishes Colorado's official public voter-registration data; accurate to the source but can lag address changes, and it is a third-party site, not the Secretary of State.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "voter-records",
+      "familytreenow"
+    ],
+    "aliases": [
+      "Colorado Voters",
+      "coloradovoters.info"
+    ],
+    "tags": [
+      "voter-records",
+      "colorado"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/coloradovoters-info.md"
   },
   {
@@ -239676,47 +239734,57 @@
   },
   {
     "id": "gov-uk",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "gov.uk (Check a UK VAT number)",
+    "description": "Use when you have a UK VAT number (an `employer-org` identifier) and want to validate it — HMRC returns the registered business `name` and `address`.",
     "url": "https://www.tax.service.gov.uk/check-vat-number/enter-vat-details",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Validating a UK VAT registration number and revealing the registered business name and address (official HMRC service).",
     "selectorsIn": [
-      "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official HMRC service; no account needed to check a VAT number.",
+    "opsec": "passive",
+    "opsecNote": "Checking a VAT number queries HMRC's public validation service and does not notify the business. If you record proof of a check (HMRC provides a reference), that ties the check to you/your session — otherwise it is a clean passive lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "First-party HMRC (UK tax authority) service; the name/address returned for a valid VAT number is authoritative registration data.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "company-information-service-gov-uk",
+      "companieshouse-im"
+    ],
+    "aliases": [
+      "Check a UK VAT number",
+      "HMRC VAT checker",
+      "gov.uk VAT"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "vat"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk.md"
   },
   {
@@ -261156,46 +261224,56 @@
   {
     "id": "ryersonindex-org",
     "name": "ryersonindex.org",
-    "description": "OSINT tool: ryersonindex.org.",
+    "description": "Use when you have an Australian subject's `name` and suspect they've died — returns death-notice/obituary index entries (death date, age, sometimes place) pointing to the source newspaper.",
     "url": "https://ryersonindex.org/search.php",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free index of Australian death notices, obituaries, and funeral notices from newspapers — confirming a death and its date.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "dob",
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Entirely free, volunteer-run index; no account. It indexes notices (with source citations) rather than hosting the full text.",
+    "opsec": "passive",
+    "opsecNote": "Searching an index of published death notices is passive and touches no living subject. Standard sock-puppet browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running Australian volunteer index of newspaper death/funeral notices; entries are transcribed from published notices and are reliable pointers, though the full notice must be read at the source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "legacy-com",
+      "billiongraves-com"
+    ],
+    "aliases": [
+      "Ryerson Index",
+      "ryersonindex.org"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "death-notices",
+      "australia"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ryersonindex-org.md"
   },
   {
@@ -320006,41 +320084,55 @@
   {
     "id": "fediverse-observer",
     "name": "Fediverse Observer",
-    "description": "Discovering and mapping Fediverse instances by software, country, or size",
+    "description": "Use when you're hunting a subject across the Fediverse and need to map instances — returns a filterable list of Mastodon/Fediverse servers by software, country, size, and status.",
     "url": "https://fediverse.observer/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "fediverse-mastodon"
     ],
-    "bestFor": "Discovering and mapping Fediverse instances by software, country, or size",
-    "input": "Search filters (software type, country, language, instance name)",
-    "output": "Instance list with user counts, uptime, software version, registration status, and geographic location",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Discovering and filtering Fediverse/Mastodon instances (by software, country, language, size) to know where to look for a decentralized-network subject.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free directory/monitoring of Fediverse instances; a public API is available. No account needed to browse.",
     "opsec": "passive",
-    "opsecNote": "Queries the Fediverse Observer database, not individual instances; no contact with target servers.",
+    "opsecNote": "Querying the Observer's aggregated database is passive and does not touch individual instances or users. Actual profile hunting on a specific instance is a separate, potentially active step — apply precautions there, not here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A community monitoring service tracking Fediverse instance metadata (uptime, user counts, software); reliable for instance discovery, though it maps servers, not individual accounts.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "mastodon",
+      "blueskydirectory-com"
+    ],
+    "aliases": [
+      "Fediverse Observer",
+      "fediverse.observer"
+    ],
+    "tags": [
+      "fediverse",
+      "mastodon",
+      "instance-directory"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fediverse-mastodon/fediverse-observer.md"
   },
   {
@@ -335691,45 +335783,58 @@
   {
     "id": "qzone",
     "name": "QZone",
-    "description": "Qzone (Qzone) is a social network with hundreds of millions of users, the online home of QQ users, and one of the core platforms of Tencent Group. Play games, dress up, upload photos, write stories, and write diaries.",
+    "description": "Use when you have a QQ number/`username` or `name` for a Chinese subject and want their Tencent social profile — returns a `social-profile` with photos, diaries, and social connections.",
     "url": "https://qzone.qq.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a Chinese subject's Tencent QZone profile (tied to their QQ number) — photos, posts, and friend network.",
     "selectorsIn": [
-      "name",
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, but a QQ/Tencent account (and usually login) is required to view most QZone content; many profiles are friends-only.",
+    "opsec": "active",
+    "opsecNote": "QZone is a logged-in Tencent platform; viewing profiles can leave visitor footprints and Tencent logs activity extensively (and is subject to Chinese jurisdiction). Use a dedicated sock-puppet QQ account on an isolated device; never your real identity, and assume the platform is monitored.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Tencent platform (one of China's largest social networks, tied to QQ); profile data is authentic, though heavy privacy settings and the Chinese-language interface limit access.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "wechat-com",
+      "renren-com"
+    ],
+    "aliases": [
+      "Qzone",
+      "QQ空间",
+      "qzone.qq.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "china"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/qzone.md"
   },
@@ -339598,27 +339703,30 @@
   {
     "id": "sinwindie-osint",
     "name": "sinwindie/OSINT",
-    "description": "GitHub OSINT repo with workflows and platform-specific resources by Sinwindie.",
+    "description": "Use when you have a `username`/`social-profile` and need a platform-specific investigation playbook — a curated GitHub repo of per-platform OSINT workflows and resource lists.",
     "url": "https://github.com/sinwindie/osint",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Platform-specific (social media) investigation workflows",
+    "bestFor": "Platform-by-platform social-media investigation workflows and curated tool/resource lists for tracing people across networks.",
     "selectorsIn": [
       "username",
       "social-profile"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository; no account needed to read (a GitHub login only helps to star/clone).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a methodology repo is passive and touches no target. The techniques it lists vary in OpSec risk — assess each linked tool/workflow on its own before running it against a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Sinwindie is a respected community contributor on social-media OSINT.",
+    "trustNote": "Maintained by Sinwindie, a respected community contributor to social-media OSINT; it is curated guidance, so individual linked tools still need independent verification.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -339627,15 +339735,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "osint-framework-2",
+      "whatsmyname-web"
+    ],
+    "aliases": [
+      "Sinwindie OSINT",
+      "sinwindie/osint"
+    ],
     "tags": [
       "tool-collection",
       "social-networks",
       "username",
-      "github"
+      "github",
+      "methodology"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/sinwindie-osint.md"
   },
@@ -345608,37 +345724,52 @@
   {
     "id": "trends24",
     "name": "Trends24",
-    "description": "OSINT tool: Trends24.",
+    "description": "Use when you have a place and time and want to know what was trending on X/Twitter there — returns ranked trending topics by country/city with an historical archive for context.",
     "url": "http://trends24.in",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Live and historical X/Twitter trending-topic tracking by country and city, useful for event/context analysis.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported; no account needed to view current or archived trends.",
+    "opsec": "passive",
+    "opsecNote": "Reading aggregated trend data is passive and touches no individual or account. Standard sock-puppet browsing is more than sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "A long-running third-party tracker of X/Twitter trends; data mirrors Twitter's trend lists (subject to Twitter's own manipulation/algorithm quirks), archived by location.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "getdaytrends",
+      "one-million-tweet-map"
+    ],
+    "aliases": [
+      "Trends24",
+      "trends24.in"
+    ],
     "tags": [
-      "twitter"
+      "twitter",
+      "trends"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/trends24.md"
   },
   {
