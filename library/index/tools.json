@@ -150688,38 +150688,52 @@
   },
   {
     "id": "metadata-viewer",
-    "name": "Metadata Viewer",
-    "description": "OSINT tool: Metadata Viewer.",
+    "name": "Metadata Viewer (kriztalz)",
+    "description": "Use when you have an `image` (file or URL) and want its embedded EXIF — returns GPS `geolocation`, camera/device `metadata-exif` and creation timestamps.",
     "url": "https://kriztalz.sh/metadata-viewer/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Quickly extracting EXIF metadata (GPS coordinates, camera make/model, timestamps) from an image by upload or URL.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account. Accepts file upload, image URL, or base64.",
+    "opsec": "passive",
+    "opsecNote": "Processing is SERVER-SIDE (the site fetches/handles the image on its server to bypass browser cross-origin limits) and it logs operational data for ~24h, possibly including the base64 image. Do NOT upload sensitive case imagery here; for confidential images use an offline/local EXIF tool instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A small independent web tool. EXIF parsing is standard/reliable, but the server-side processing and 24h logging mean it's not for sensitive material.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "kriztalz metadata viewer",
+      "EXIF viewer"
+    ],
     "tags": [
-      "image-analysis"
+      "image-analysis",
+      "exif",
+      "metadata",
+      "geolocation"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/metadata-viewer.md"
   },
   {
@@ -156617,45 +156631,54 @@
   },
   {
     "id": "sightengine-com",
-    "name": "sightengine.com",
-    "description": "OSINT tool: sightengine.com.",
+    "name": "Sightengine",
+    "description": "Use when you have an `image` or video (e.g. a suspect profile photo) and want to test whether it is AI-generated/deepfaked or moderate its content — returns AI-likelihood and content-classification `metadata-exif` scores.",
     "url": "https://sightengine.com/detect-ai-generated-images",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Detecting AI-generated / deepfaked images and videos (and content moderation) — flagging sockpuppet/catfish profile photos that were machine-generated.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier with limited monthly detection credits (sign-up required); paid subscription and API tiers for higher volume. Not an unlimited anonymous tool.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to Sightengine's cloud for analysis, disclosing it to a third party that may retain it. It does not contact the person in the image. Don't upload case-sensitive imagery you can't share with a vendor; use a puppet account for signup.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established commercial content-moderation/AI-detection vendor. Detection is probabilistic (confidence scores), so treat \"likely AI-generated\" as a signal, not proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "sightengine.com",
+      "Sightengine AI detector"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "ai-detection",
+      "deepfake",
+      "image-analysis"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/sightengine-com.md"
   },
   {
@@ -205775,45 +205798,54 @@
   },
   {
     "id": "inmate-database-search",
-    "name": "Inmate Database Search",
-    "description": "OSINT tool: Inmate Database Search.",
+    "name": "Indianapolis (Marion County) Inmate Search",
+    "description": "Use when you have a `name` and want to check whether a person is held in the Indianapolis / Marion County jail — returns booking record, inmate ID (`document-id`), `dob` and charges.",
     "url": "http://inmateinfo.indy.gov/IML",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person in the Marion County (Indianapolis, Indiana) jail system by name — confirms current booking, charges, and facility.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "email",
       "name",
-      "phone"
+      "dob",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official county government inmate locator; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Public jail booking record; the individual is not notified. It's a government site — use a puppet browser/IP if you don't want the query tied to your address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the City of Indianapolis / Marion County (indy.gov) — the authoritative source for local jail booking records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Marion County inmate search",
+      "inmateinfo.indy.gov",
+      "Indianapolis jail lookup"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "inmate",
+      "jail",
+      "people-search",
+      "indiana"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/inmate-database-search.md"
   },
   {
@@ -220117,14 +220149,14 @@
   },
   {
     "id": "accaglobal-com",
-    "name": "accaglobal.com",
-    "description": "OSINT tool: accaglobal.com.",
+    "name": "ACCA Find-an-Accountant Directory",
+    "description": "Use when you have a `name`, firm or town and want to confirm someone is a chartered certified accountant (ACCA member) — returns membership confirmation, firm (`employer-org`) and town/`address`.",
     "url": "https://www.accaglobal.com/uk/en/member/find-an-accountant/directory-of-member.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying ACCA (chartered certified accountant) membership and finding a member's firm/location by name, firm, or town.",
     "selectorsIn": [
       "name",
       "address",
@@ -220135,29 +220167,38 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Public professional-directory lookup; the individual is not notified. It confirms professional status and links to a firm/town — treat as identity corroboration, not a home address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by ACCA, the global professional body for chartered certified accountants — authoritative for member status, and it links to the UK Register of Statutory Auditors for audit rights.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ACCA member directory",
+      "accaglobal.com",
+      "find an accountant"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "profession-licensing",
+      "public-records",
+      "accountants"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/accaglobal-com.md"
   },
   {
@@ -258927,14 +258968,14 @@
   },
   {
     "id": "rhode-island",
-    "name": "Rhode Island",
-    "description": "OSINT tool: Rhode Island.",
+    "name": "Rhode Island DOC Inmate Search",
+    "description": "Use when you have a `name` and want to check whether a person is incarcerated in Rhode Island state corrections — returns inmate record, ID (`document-id`), `dob` and custody status.",
     "url": "https://doc.ri.gov/family-visitors/inmate-search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person in the Rhode Island Department of Corrections system by name — confirms incarceration, facility, and inmate ID.",
     "selectorsIn": [
       "name"
     ],
@@ -258943,29 +258984,38 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state government inmate lookup; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Public corrections record; the individual is not notified. State government site — use a puppet browser/IP if you don't want the query tied to your address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Rhode Island Department of Corrections (doc.ri.gov) — the authoritative source for state inmate custody records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Rhode Island DOC inmate search",
+      "doc.ri.gov inmate search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records",
+      "rhode-island",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rhode-island.md"
   },
   {
@@ -268435,14 +268485,14 @@
   },
   {
     "id": "washington",
-    "name": "Washington",
-    "description": "OSINT tool: Washington.",
+    "name": "Washington DOC Inmate Search",
+    "description": "Use when you have a `name` and want to check whether a person is incarcerated in Washington State corrections — returns inmate record, DOC number (`document-id`), `dob` and custody status.",
     "url": "https://www.doc.wa.gov/information/inmate-search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person in the Washington State Department of Corrections system by name — confirms incarceration, facility, and DOC number.",
     "selectorsIn": [
       "name"
     ],
@@ -268451,29 +268501,38 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state government inmate lookup; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Public corrections record; the individual is not notified. State government site — use a puppet browser/IP if you don't want the query tied to your address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Washington State Department of Corrections (doc.wa.gov) — the authoritative source for state inmate custody records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Washington DOC inmate search",
+      "doc.wa.gov inmate search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records",
+      "washington",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/washington.md"
   },
   {
@@ -311487,38 +311546,55 @@
   },
   {
     "id": "barkov-net",
-    "name": "Barkov.net",
-    "description": "OSINT tool: Barkov.net.",
+    "name": "Barkov.net (VK Target Audience Tools)",
+    "description": "Use when you have a VKontakte/OK/Telegram community, user list or profile criteria and want to enumerate and filter users — returns `social-profile`s and `associate` links, filtered by age/location/interests.",
     "url": "http://vk.barkov.net",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Large-scale VKontakte (and OK/Telegram) audience analysis — finding users across communities, filtering by profile attributes, and cross-referencing linked accounts.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier covers small tasks; larger audience pulls and advanced scripts require a paid subscription. Requires a VK login to run most tools.",
+    "opsec": "active",
+    "opsecNote": "Running tools requires connecting a VK account, which ties activity to that identity and can trip VK's automation defenses. Use a sock-puppet VK account, never your own. It is a Russian-jurisdiction marketing service that processes VK data at scale.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established (since 2014) Russian VK-marketing toolkit with 1M+ users; repurposed for OSINT. Data comes from VK's own API, so it's as good as VK's data, but the interface is Russian and marketing-oriented.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "vk.barkov.net",
+      "Barkov target audience"
+    ],
     "tags": [
-      "vkontakte"
+      "vkontakte",
+      "vk",
+      "social-networks",
+      "russia"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/barkov-net.md"
   },
   {
@@ -326267,36 +326343,52 @@
   },
   {
     "id": "instahunt",
-    "name": "InstaHunt",
-    "description": "OSINT tool: InstaHunt.",
+    "name": "InstaHunt (HuntIntel)",
+    "description": "Use when you have a `geolocation`/place and want public Instagram posts tagged near it on a map — returns location-tagged `social-profile`s and posts for an area.",
     "url": "https://instahunt.co/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Map-based discovery of public Instagram posts by location — surfacing who posted from a specific place, useful for placing a subject at a scene.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Free to use as a map/location search. Its reliability depends on Instagram's location data, which Instagram has heavily restricted — expect coverage gaps.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search by place, not by touching a target account, so no notification reaches anyone. Queries run through HuntIntel's service; open any resulting profile in a puppet browser, not a logged-in Instagram account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of the HuntIntel toolset (instahunt.huntintel.io, redirected from instahunt.co). Depends on Instagram's location API, which Instagram has progressively locked down, so results can be sparse or broken.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "InstaHunt",
+      "HuntIntel InstaHunt",
+      "instahunt.huntintel.io"
+    ],
+    "tags": [
+      "instagram",
+      "geolocation",
+      "social-networks"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instahunt.md"
   },
   {
@@ -329331,13 +329423,13 @@
   {
     "id": "mewe",
     "name": "MeWe",
-    "description": "An alternative ad-free social networking site with a focus on data privacy",
+    "description": "Use when you have a `name` or `username` and want to check for a MeWe profile (a privacy-focused social network that draws communities pushed off mainstream platforms) — returns `social-profile`.",
     "url": "https://mewe.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a subject's presence on MeWe — an ad-free, privacy-branded network that attracted users (and groups) deplatformed elsewhere; useful when mainstream platforms come up empty.",
     "selectorsIn": [
       "name",
       "username"
@@ -329345,31 +329437,38 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to join. Meaningful search and profile/group viewing require a (free) account login; there is little useful anonymous public search.",
+    "opsec": "active",
+    "opsecNote": "Because you must log in to search/view, activity ties to your account and MeWe's privacy model limits what non-members see — use a sock-puppet MeWe account, not your own. Joining groups to view them can expose your puppet to group admins.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "MeWe is a real, operating social platform, but its privacy-by-design means limited public/OSINT visibility; presence is confirmable but content is often gated behind login and membership.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "mewe.com",
+      "MeWe social"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "social-media"
+      "social-media",
+      "social-networks",
+      "alt-platform"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/mewe.md"
   },
@@ -367758,42 +367857,53 @@
   },
   {
     "id": "lullar",
-    "name": "Lullar",
-    "description": "Social media profile discovery by username, email, or name",
+    "name": "Lullar Profile Search",
+    "description": "Use when you have a `username`, `email` or `name` and want to sweep many social platforms at once for matching profiles — returns `social-profile` links across 100+ sites.",
     "url": "https://com.lullar.com",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Social media profile discovery by username, email, or name",
-    "input": "Email address, full name, or username",
-    "output": "Social media profiles found across 148+ platforms",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-shot social-profile discovery across 100+ platforms from a single username, email, or name — a fast breadth-first \"where does this identity exist\" check.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free with no signup, per the site (\"100% Free, No Signup\"). Anonymous searches over HTTPS.",
     "opsec": "passive",
-    "opsecNote": "Searches are routed through Lullar's servers; no direct queries from the user to target platforms.",
+    "opsecNote": "Queries are routed through Lullar's servers rather than sent to each platform from you, so the target platforms don't see your IP. Lullar claims no logs/tracking, but you are still handing the selector to a third party — assume it could be logged; use a puppet identity for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running free profile-search aggregator. It generates/checks profile-URL guesses across many sites, so hits need manual confirmation — false positives (unclaimed handles, name collisions) are common.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Lullar",
+      "com.lullar.com"
+    ],
+    "tags": [
+      "username",
+      "profile-search",
+      "social-networks"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/lullar.md"
   },
   {
