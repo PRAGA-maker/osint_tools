@@ -122262,29 +122262,31 @@
   {
     "id": "birdhunt-2",
     "name": "BirdHunt",
-    "description": "Find Twitter/social media posts by geographic location.",
+    "description": "Use when you have a `geolocation`/`address` and want tweets posted from or tagged near that spot on a map — returns social-profile handles and their post locations.",
     "url": "https://birdhunt.huntintel.io/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "Surfacing Twitter posts tied to a specific location",
+    "bestFor": "Finding geotagged (or location-inferred) tweets around a specific point/radius and mapping them for location-based Twitter/X OSINT.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Free core location search; some advanced query options are paywalled. Practical usefulness is throttled by how little location data Twitter/X still exposes to external tools.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party front-end for public tweets around a location; you never contact any account, so it is passive. Standard operator logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Made by HuntIntel (Louis Tomos Evans, Cardiff), listed in OSINT tool directories; a legitimate community tool, but its data depends entirely on Twitter/X's increasingly restricted location search.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -122293,14 +122295,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BirdHunt",
+      "birdhunt.huntintel.io",
+      "birdhunt.info"
+    ],
     "tags": [
       "twitter",
       "geolocation",
       "location-search"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/geolocation/birdhunt-2.md"
   },
@@ -156047,8 +156053,8 @@
   },
   {
     "id": "search-youtube-by-location",
-    "name": "Search YouTube by Location",
-    "description": "OSINT tool: Search YouTube by Location.",
+    "name": "YouTube Geofind",
+    "description": "Use when you have a `geolocation`/place or a channel/keyword and want geotagged YouTube videos on a map — returns geolocation of videos and the posting social-profile.",
     "url": "https://mattw.io/youtube-geofind/",
     "category": "image-video-face",
     "path": [
@@ -156056,34 +156062,50 @@
       "videos",
       "search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding geotagged YouTube videos by location radius, topic keyword, or channel, and plotting them on a map for local/event OSINT.",
+    "selectorsIn": [
+      "geolocation",
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; the operator supplies YouTube Data API access, though heavy use can hit shared quota limits and you may need to supply your own API key.",
+    "opsec": "passive",
+    "opsecNote": "Read-only querying of the YouTube API via a third-party front-end; you never contact any uploader, so it is passive. If you supply your own API key, that key (tied to a Google project) is used — use a research Google account, not a personal one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-regarded OSINT utility by Matt Wright (mattw.io), widely referenced in the OSINT community (e.g. Bellingcat); front-end to the official YouTube Data API, so results are as reliable as YouTube's own metadata.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "YouTube Geofind",
+      "mattw.io geofind",
+      "Geo Search Tool"
+    ],
+    "tags": [
+      "youtube",
+      "geolocation",
+      "location-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/videos/search/search-youtube-by-location.md"
   },
   {
@@ -157172,46 +157194,54 @@
   {
     "id": "spiderpig",
     "name": "SpiderPig",
-    "description": "OSINT tool: SpiderPig.",
+    "description": "Use when you have a target `domain`/website and want to spider it, download its documents and extract embedded metadata — returns metadata-exif, geolocation (photo GPS), email and creator names.",
     "url": "https://github.com/hatlord/spiderpig",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Spidering a website, harvesting its documents/images, and mining them for author names, software, GPS geotags, emails and other leaked metadata.",
     "selectorsIn": [
-      "image",
-      "face"
+      "domain"
     ],
     "selectorsOut": [
-      "social-profile",
+      "metadata-exif",
       "geolocation",
-      "metadata-exif"
+      "email",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Ruby) on GitHub; no cost. You run it locally.",
+    "opsec": "active",
+    "opsecNote": "SpiderPig actively crawls the target website and downloads its files, so your IP hits the target's server (and optional subdomain brute-forcing generates noticeable DNS/HTTP traffic). This is active reconnaissance — use a VPN/proxy and only run it against domains you are authorised to test.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Open-source pentest utility by \"hatlord\" on GitHub; source is inspectable, but the project shows no recent releases, so expect to fix dependencies on a modern Ruby.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SpiderPig",
+      "hatlord/spiderpig"
+    ],
     "tags": [
-      "reverse-image",
-      "open-source",
-      "cli"
+      "metadata",
+      "document-harvester",
+      "exif",
+      "cli",
+      "open-source"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/spiderpig.md"
   },
   {
@@ -160853,8 +160883,8 @@
   },
   {
     "id": "yasiv-youtube",
-    "name": "yasiv-youtube",
-    "description": "OSINT tool: yasiv-youtube.",
+    "name": "YASIV YouTube",
+    "description": "Defunct — was a YouTube related-video graph visualiser; the underlying API was shut down in 2020, so it no longer functions.",
     "url": "https://yasiv.com/youtube/",
     "category": "image-video-face",
     "path": [
@@ -160862,34 +160892,46 @@
       "videos",
       "analyze-record"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "(Historic) visualising the graph of related YouTube videos around a seed video. No longer operational.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Was free; now non-functional, so there is nothing to pay for or use.",
+    "opsec": "passive",
+    "opsecNote": "Not applicable — the tool no longer works. If it did, it would have been passive (read-only visualisation of public YouTube relationships).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Defunct project; the visualiser stopped working when Google revoked its API access in July 2020. Source code remains on GitHub but the hosted tool is dead.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
+    "deprecated": true,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "YASIV",
+      "Youtube Related Videos Visualization"
+    ],
+    "tags": [
+      "youtube",
+      "defunct",
+      "deprecated"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/videos/analyze-record/yasiv-youtube.md"
   },
   {
@@ -201836,46 +201878,50 @@
   {
     "id": "british-phone-book",
     "name": "British Phone Book",
-    "description": "OSINT tool: British Phone Book.",
+    "description": "Use when you have a UK `name` and want a residential landline listing with address — returns address and phone (landline).",
     "url": "http://www.britishphonebook.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up UK residential landline listings by surname (plus city/postcode) to find an address and phone number.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search. Data is compiled from current and historic phone books, website signups and permissioned sources and is 1–10 years old, so it is dated.",
+    "opsec": "passive",
+    "opsecNote": "A directory lookup that does not contact the subject — fully passive. Standard web-server logging by the site applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party UK directory aggregator of unclear provenance; data is old (1–10 years), excludes mobiles, and coverage is partial, so treat listings as leads not confirmations.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "britishphonebook.com",
+      "British Phone Book"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "phone-lookup",
+      "uk"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/british-phone-book.md"
   },
   {
@@ -202351,37 +202397,53 @@
   {
     "id": "classmates",
     "name": "Classmates",
-    "description": "OSINT tool: Classmates.",
+    "description": "Use when you have a `name` and a US school (`employer-org`) and want yearbook photos and alumni profiles — returns image, social-profile and associate links.",
     "url": "http://www.classmates.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Finding a US person's high-school yearbook photo, era and classmates via a large digitised yearbook and alumni directory.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free registration lets you search schools, alumni directories and view yearbooks. A paid Classmates+ membership unlocks full messaging, \"who viewed you\", and hardcover reprints; yearbook reprints are sold separately.",
+    "opsec": "passive",
+    "opsecNote": "Searching and browsing yearbooks is passive toward the subject. However, Classmates requires a registered account and a paid membership can reveal profile visitors, so operate from a sock-puppet account — never a personal one that could surface you to the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established US alumni/yearbook platform with 480k+ digitised yearbooks; yearbook scans are authoritative, but user-created alumni profiles are self-asserted.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Classmates.com"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "yearbook",
+      "alumni"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/classmates.md"
   },
   {
@@ -212563,36 +212625,57 @@
   },
   {
     "id": "white-pages",
-    "name": "White Pages",
-    "description": "OSINT tool: White Pages.",
+    "name": "Whitepages",
+    "description": "Use when you have a US `name`, `phone` or `address` and want current address, phone and relatives — returns address, phone, associate and approximate dob/age.",
     "url": "https://www.whitepages.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "US people/phone/address lookup — resolving a name to a current address, landline/mobile, age range and relatives.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free searches show partial results (city/state, age range, some relatives, partial numbers). Full contact details, reverse-phone owner data and background reports require a paid Whitepages Premium subscription (payment wall).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Querying Whitepages does not contact the subject, so it is passive. Note that free results are deliberately teasered to push you to pay; use a research payment method if you subscribe, and remember Whitepages also lets people opt out, so records may be missing by choice.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Large, long-established US data aggregator; data is compiled from public and commercial sources, so it is broad but can be stale or conflate people with similar names.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WhitePages",
+      "whitepages.com"
+    ],
+    "tags": [
+      "people-search",
+      "phone-lookup",
+      "reverse-phone"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/white-pages.md"
   },
   {
@@ -229511,47 +229594,56 @@
   },
   {
     "id": "cro-ie",
-    "name": "cro.ie",
-    "description": "OSINT tool: cro.ie.",
+    "name": "CRO Ireland (CORE)",
+    "description": "Use when you have a `name` or company (`employer-org`) in Ireland and want registration, status and directors — returns employer-org, name, address and co-director associate links.",
     "url": "https://core.cro.ie/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the Irish Companies Registration Office (CRO) for company/business-name registration, status, registered address and director/officer details.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching the register and viewing basic company details (name, number, status, registered address) is free. Downloading filed documents (annual returns, director lists, accounts) is pay-per-document (typically a few euro each) via a CORE account.",
+    "opsec": "passive",
+    "opsecNote": "You query the official Irish registry, not the subject, so nothing is disclosed to the person. Purchasing documents requires a CORE account/payment, which ties that activity to your registered identity — use a research account for any paid downloads.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Irish government company registrar (Companies Registration Office); registration, status and officer data are authoritative first-party records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CRO Ireland",
+      "CORE",
+      "Companies Registration Office Ireland"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cro-ie.md"
   },
   {
@@ -332313,13 +332405,13 @@
   {
     "id": "pictame",
     "name": "Pictame",
-    "description": "OSINT tool: Pictame.",
+    "description": "Use when you have an Instagram `username` (or hashtag/`name`) and want to view a public profile's posts, photos and tags without logging in — returns social-profile, image and geolocation.",
     "url": "https://www.pictame.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing and downloading a public Instagram profile's posts, photos, tags and location tags in a browser without an Instagram account.",
     "selectorsIn": [
       "username",
       "name"
@@ -332329,28 +332421,36 @@
       "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web viewer; no account or payment. Monetised by ads.",
+    "opsec": "passive",
+    "opsecNote": "Pictame proxies public Instagram content, so you view a profile without logging in and without the target seeing a viewer — much safer than browsing from your own Instagram account. You are trusting a third-party proxy site, so don't enter any credentials and treat downloaded media as coming through an intermediary.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party anonymous Instagram viewer of unclear ownership; these proxy sites break, rebrand or go offline frequently as Instagram changes its defences.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Pictame",
+      "pictame.com"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "viewer",
+      "anonymous"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/pictame.md"
   },
   {
