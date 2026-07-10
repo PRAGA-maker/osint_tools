@@ -9,6 +9,7 @@ Usage:
     python library/scripts/enrich_worklist.py [N]   # print first N (default 60) + REMAINING count
 """
 import os
+import random
 import re
 import sys
 
@@ -30,6 +31,10 @@ def main():
             mp = m.group(1) if m else "low"
             bucket = hi if mp == "high" else med if mp == "medium" else lo
             bucket.append(p.replace("\\", "/"))
+    # Shuffle within each priority tier so concurrent/overlapping runs pick
+    # different files (avoids two agents authoring the same file -> rebase conflicts).
+    for bucket in (hi, med, lo):
+        random.shuffle(bucket)
     queue = hi + med + lo
     for p in queue[:N]:
         print(p)
