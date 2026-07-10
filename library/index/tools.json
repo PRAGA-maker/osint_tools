@@ -102455,42 +102455,54 @@
   },
   {
     "id": "email-finder-3",
-    "name": "Email Finder",
-    "description": "Enter a person's first and last name, domain name of a company or email service, and then get a list of possible email addresses with their status (free).",
+    "name": "Email Finder (Experte)",
+    "description": "Use when you have a person's `name` and their company `domain` and want their real work `email` — returns a list of likely address permutations each SMTP-validated as valid/invalid/unknown.",
     "url": "https://www.experte.com/email-finder",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a name + company domain into a validated best-guess work email address.",
     "selectorsIn": [
-      "email"
+      "name",
+      "domain"
     ],
     "selectorsOut": [
-      "address",
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free, no signup; Experte states it does not store requested data.",
+    "opsec": "active",
+    "opsecNote": "Experte generates permutations and validates each by connecting to the target's mail server — an SMTP probe reaches the subject's mail provider (from Experte's infrastructure, not yours, so it is not directly attributable to you). It never emails the person. Stop at the validated address; don't send test mail yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Experte.com is an established German tools site; the finder does real SMTP validation, but \"catch-all\" mail servers return \"unknown\", so results are high-quality guesses, not guarantees.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "peep-mail-search-tool",
+      "mailcat"
+    ],
+    "aliases": [
+      "Experte Email Finder"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "email-permutation",
+      "email-validation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/email-finder-3.md"
   },
@@ -127317,30 +127329,32 @@
   {
     "id": "instahunt-2",
     "name": "Instahunt",
-    "description": "Find Instagram/social media posts by geographic location.",
+    "description": "Use when you have a `geolocation` (a map point/area) and want Instagram posts tagged there — returns location-tagged posts, the `username`/`social-profile` behind them and their `image`s.",
     "url": "https://instahunt.huntintel.io/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "Surfacing Instagram posts tied to a specific location",
+    "bestFor": "Surfacing Instagram posts tagged to a specific place on a map to find who was there.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
       "social-profile",
-      "image"
+      "image",
+      "username"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tool from HuntIntel; no account required, but reliability depends on Instagram's location endpoints, which change/break frequently.",
+    "opsec": "passive",
+    "opsecNote": "You query Instagram location data via a third-party front end, not the subject. Posters are not notified that their public location-tagged posts surfaced. Do not then log into Instagram from an attributable account to view results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A useful community/vendor tool, but it depends on Instagram's unofficial location endpoints; coverage is partial and it breaks when Instagram changes its platform.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -127349,14 +127363,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "osintcombine-com"
+    ],
+    "aliases": [
+      "InstaHunt",
+      "HuntIntel Instahunt"
+    ],
     "tags": [
       "instagram",
       "geolocation",
       "location-search"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/geolocation/instahunt-2.md"
   },
@@ -175358,13 +175379,13 @@
   {
     "id": "telegram-search-channels-groups",
     "name": "Telegram Search (channels/groups)",
-    "description": "Structured Telegram discovery across profiles, channels, groups and directory services.",
+    "description": "Use when you have a `username` or `name` and want to find the associated Telegram user, channel, or group — returns public `social-profile` previews via t.me and directory services.",
     "url": "https://t.me/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Find Telegram users, channels and groups via t.me, telesco.pe and group directories.",
+    "bestFor": "Discovering a subject's Telegram user/channel/group presence and previewing it without joining.",
     "selectorsIn": [
       "username",
       "name"
@@ -175372,15 +175393,16 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free; t.me public previews need no account. Joining private/closed groups or seeing full membership does require a Telegram account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a t.me public preview (e.g. https://t.me/<handle>) does not join anything and does not notify the owner. The moment you open Telegram and join a group or message the subject, it becomes active and attributable — use a sock-puppet account/number for that.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "t.me is Telegram's own public preview surface (trusted); the third-party directories (telesco.pe, group-listing sites) that extend discovery are community-run and vary in freshness.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -175389,9 +175411,15 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "invitationOnly": false,
+    "relatedTools": [
+      "telegram-phone-number-checker",
+      "telemetr-me"
+    ],
     "aliases": [
       "Telegram",
-      "telesco.pe"
+      "telesco.pe",
+      "t.me search"
     ],
     "tags": [
       "telegram",
@@ -175400,7 +175428,7 @@
       "groups"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/messaging/telegram-search-channels-groups.md"
   },
@@ -201863,37 +201891,55 @@
   {
     "id": "california-justice-watch",
     "name": "California Justice Watch",
-    "description": "OSINT tool: California Justice Watch.",
+    "description": "Use when you have a `name` for a California DA, judge, or police officer and want documented misconduct/accountability records — returns case histories, disciplinary/decertification data and associated parties.",
     "url": "https://cajusticewatch.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Vetting a named California prosecutor, judge, or law-enforcement officer for documented misconduct, or pulling accountability data on a case.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public-interest project; nothing to sign up for, no payment.",
+    "opsec": "passive",
+    "opsecNote": "Read-only browsing of an aggregated public-records accountability database. You are not contacting anyone; nothing about your subject is transmitted. Use a clean session for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A nonpartisan accountability project aggregating public records (POST decertification, Brady lists, court filings); source data is public but the grading/commentary is the project's editorial judgment.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "california"
+    ],
+    "aliases": [
+      "CA Justice Watch",
+      "cajusticewatch"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "accountability",
+      "police-misconduct"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/california-justice-watch.md"
   },
   {
@@ -208813,46 +208859,54 @@
   {
     "id": "peoplebyname-us",
     "name": "Peoplebyname (US)",
-    "description": "OSINT tool: Peoplebyname (US).",
+    "description": "Use when you have a US `name` and want a free first-pass on their address, landline phone and likely relatives — returns directory-style `address`/`phone`/`associate` leads to verify elsewhere.",
     "url": "http://www.peoplebyname.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A quick, free US name-to-address/phone/relatives lookup as a starting point before paid people-search.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "address",
       "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory-style lookup; results are limited and often act as a teaser toward paid people-search partners.",
+    "opsec": "passive",
+    "opsecNote": "Read-only directory search; the subject is not notified. As with any aggregator, the site logs your queries — use a clean/sock-puppet browser session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A free people-directory aggregator built on public phone/address listings; data is often stale and incomplete, so treat every hit as a lead to corroborate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "thats-them",
+      "peekyou"
+    ],
+    "aliases": [
+      "peoplebyname.com",
+      "People By Name"
+    ],
     "tags": [
       "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/peoplebyname-us.md"
   },
   {
@@ -226027,46 +226081,57 @@
   {
     "id": "childminding-ie",
     "name": "childminding.ie",
-    "description": "OSINT tool: childminding.ie.",
+    "description": "Use when you have an Irish county/`address` (or a childminder's `name`) and want to find registered childminders in that area — returns childminder listings with area and contact via Childminding Ireland's directory.",
     "url": "http://www.childminding.ie/childminders/find-a-childminder/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating registered childminders by county in Ireland, or checking whether a named person is listed as one.",
     "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
       "name",
       "address",
       "employer-org"
     ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free directory from Childminding Ireland (a support/membership body); access requires verifying an email address first.",
+    "opsec": "passive",
+    "opsecNote": "A directory lookup that doesn't contact the childminder directly. However, access is gated behind email verification, so use a sock-puppet email — the operator can associate the account with your searches.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Childminding Ireland is the national childminding membership/support organisation; the directory reflects its members, not a statutory register, so it is not an exhaustive record of all childminders.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ie"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "ama-assn-org"
+    ],
+    "aliases": [
+      "Childminding Ireland",
+      "Find a Childminder Ireland"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/childminding-ie.md"
   },
   {
@@ -251979,13 +252044,13 @@
   {
     "id": "ohio",
     "name": "Ohio",
-    "description": "OSINT tool: Ohio.",
+    "description": "Use when you have a `name` and want to locate someone in Ohio state prison custody — returns incarceration status, facility, age/DOB and offender ID from the Ohio DRC offender search.",
     "url": "https://appgateway.drc.ohio.gov/offendersearch",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a named person is (or was) in Ohio state prison custody and where they are held.",
     "selectorsIn": [
       "name"
     ],
@@ -251994,29 +252059,41 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state service; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Read-only search of Ohio's public offender database. The subject is not notified and the state does not tie the query to the searcher. Use a clean session for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Ohio Department of Rehabilitation and Correction (DRC) — the authoritative source for Ohio state-prison custody status.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "california",
+      "indiana-offender-database-search"
+    ],
+    "aliases": [
+      "Ohio DRC Offender Search",
+      "Ohio inmate search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ohio.md"
   },
   {
@@ -286565,13 +286642,13 @@
   {
     "id": "isearchfrom-com",
     "name": "isearchfrom.com",
-    "description": "OSINT tool: isearchfrom.com.",
+    "description": "Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/locale-targeted `social-profile` and `name` mentions.",
     "url": "https://isearchfrom.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Simulating a Google search from any location, language, or device to surface geo-specific results.",
     "selectorsIn": [
       "name"
     ],
@@ -286579,29 +286656,40 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tool; no account. It builds a Google search URL with your chosen locale/device parameters.",
+    "opsec": "passive",
+    "opsecNote": "It just constructs a localized Google query; the actual search runs against Google as normal. Reveals nothing to your subject. For true origin control pair it with a matching VPN exit, since your real IP still reaches Google.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple, well-known utility that emulates Google's country/language/device parameters; results are genuine Google results, so quality mirrors Google.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "lukol-com"
+    ],
+    "aliases": [
+      "I Search From",
+      "isearchfrom"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "geo-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/isearchfrom-com.md"
   },
   {
@@ -289699,13 +289787,13 @@
   {
     "id": "lukol-com",
     "name": "lukol.com",
-    "description": "OSINT tool: lukol.com.",
+    "description": "Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results, including `social-profile` and `name` mentions.",
     "url": "https://www.lukol.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Running a name/query through Google's index with a privacy proxy in front, so the search isn't tied to your profile.",
     "selectorsIn": [
       "name"
     ],
@@ -289713,29 +289801,39 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported metasearch; no account.",
+    "opsec": "passive",
+    "opsecNote": "Lukol proxies your query to Google, so Google doesn't see your IP/identity directly and results aren't personalized to your account — reducing profiling and filter-bubble bias. Still an ordinary web search; it reveals nothing to your subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing privacy-oriented metasearch front end over Google custom search; results quality mirrors Google, but it is a third party that sees your queries.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "isearchfrom-com"
+    ],
+    "aliases": [
+      "Lukol"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "privacy-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/lukol-com.md"
   },
   {
@@ -324416,51 +324514,6 @@
     "_file": "library/tools/social-networks/insta-timestamp-github-com.md"
   },
   {
-    "id": "instadp",
-    "name": "InstaDP",
-    "description": "Download Instagram profile pictures, photos, videos, reels, and stories.",
-    "url": "https://instadp.io",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "social-media"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "full",
-    "_file": "library/tools/social-networks/instadp.md"
-  },
-  {
     "id": "instadp-instagram-downloader",
     "name": "Instadp: Instagram downloader",
     "description": "OSINT tool: Instadp: Instagram downloader.",
@@ -340519,29 +340572,32 @@
   {
     "id": "the-dots",
     "name": "The Dots",
-    "description": "Professional social networking site",
+    "description": "Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `social-profile` with work history, portfolio and current employer.",
     "url": "https://the-dots.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a creative-industry professional's portfolio, work history and current employer — a \"LinkedIn for creatives\".",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "employer-org",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse many public profiles; some features and full network access require a free account/login.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public profiles are viewable without login and browsing does not notify the subject. If you create an account to see more, use a sock-puppet and avoid connecting/messaging, which would alert them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A legitimate professional network for creative industries; profile content is self-reported, so treat employment/portfolio claims as user-supplied.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -340550,14 +340606,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "peekyou"
+    ],
+    "aliases": [
+      "The-Dots",
+      "thedots"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "professional-network"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/the-dots.md"
   },
