@@ -200954,37 +200954,54 @@
   {
     "id": "192-uk",
     "name": "192 (UK)",
-    "description": "OSINT tool: 192 (UK).",
+    "description": "Use when you have a UK `name` (or `address`/`phone`) and want the electoral-roll listing, household members and directorships — returns `address`, `phone`, `associate`.",
     "url": "http://www.192.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "UK people/business lookups combining the edited electoral roll, directors, property and phone directory.",
+    "selectorsIn": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and preview matches (name, rough location, age band, household size); full electoral-roll detail, current occupants and reports require credits/registration.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query 192's aggregated UK records; the subject is not notified. Buying full detail requires an account and payment, which is a trail on your side — use a sock-puppet account and appropriate billing hygiene. Only the edited (opt-in) electoral register is shown, not the full register.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established UK data aggregator drawing on the edited electoral roll, Companies House, BT phone book and property data; coverage is broad but the edited roll excludes opt-outs and data can be dated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "192.com"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "uk",
+      "electoral-roll"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/192-uk.md"
   },
   {
@@ -202248,56 +202265,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/people-search/beenverified.md"
-  },
-  {
-    "id": "beenverified-2",
-    "name": "BeenVerified",
-    "description": "Background-check service aggregating public records (addresses, relatives, phone, etc.).",
-    "url": "https://beenverified.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "US background checks combining addresses, relatives, phones and records",
-    "selectorsIn": [
-      "name",
-      "phone",
-      "email",
-      "address"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "associate",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "Commercial US data broker; full reports are paid (subscription).",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "us"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "background-check",
-      "public-records",
-      "people-search"
-    ],
-    "source": "gh-topic-footprinting",
-    "lastVerified": "",
-    "enrichment": "full",
-    "_file": "library/tools/people-search/beenverified-2.md"
   },
   {
     "id": "beenverified-com",
@@ -209526,15 +209493,16 @@
   {
     "id": "peekyou-people-search",
     "name": "PeekYou People Search",
-    "description": "People search engine that locates information on individuals from social sites, news sources, blogs, and more",
+    "description": "Use when you have a `name` or `username` and want a free aggregation of someone's social profiles, photos and contact leads — returns `social-profile`, `address`, `phone`, `associate`.",
     "url": "https://peekyou.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Free people-search that stitches together social profiles, usernames, photos and work history from across the web.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
@@ -209542,15 +209510,16 @@
       "phone",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search 300M+ profiles by name or username; some contact detail links out to paid data-broker partners, which you can ignore.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — PeekYou aggregates public web content; the subject is not notified. Its own servers log your queries. It only surfaces public content and is not a consumer reporting agency (FCRA), so it must not be used for employment/tenant/credit decisions.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running people aggregator; results are compiled from scattered public sources and are often conflated across same-name individuals — treat as leads, not confirmations.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -209559,14 +209528,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PeekYou",
+      "peekyou.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "people-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/peekyou-people-search.md"
   },
@@ -230331,44 +230303,51 @@
   {
     "id": "court-locator-united-states-courts",
     "name": "Court Locator | United States Courts",
-    "description": "OSINT tool: Court Locator | United States Courts.",
+    "description": "Use when you have a location (`address`/state) and need to find the right US federal court and its records system — returns the court and a route to case records (`document-id` via PACER).",
     "url": "http://www.uscourts.gov/court-locator",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying which US federal district/bankruptcy/appellate court serves a place, and linking to its website and PACER records.",
     "selectorsIn": [
-      "name"
+      "address"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The locator/directory itself is free (official uscourts.gov). Note it routes you to PACER for actual case documents, and PACER charges per page/search beyond a modest fee-waiver threshold.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you are browsing an official court directory; no subject is involved. The onward PACER case search requires a registered PACER account (a trail), and querying a specific person's cases there is logged; use appropriate account hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official directory published by the Administrative Office of the U.S. Courts; authoritative for which federal court has jurisdiction and how to reach its records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "US Courts Court Locator",
+      "uscourts.gov court locator"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "legal",
+      "federal"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-locator-united-states-courts.md"
   },
   {
@@ -233109,46 +233088,55 @@
   {
     "id": "dnb-co-uk",
     "name": "dnb.co.uk",
-    "description": "OSINT tool: dnb.co.uk.",
+    "description": "Use when you have a company `name` (or `employer-org`/`address`) and want to confirm the entity and its D-U-N-S number — returns `employer-org`, `address` and the D-U-N-S `document-id`.",
     "url": "https://www.dnb.co.uk/duns-number/lookup.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free D-U-N-S Number lookup to confirm a business identity and pull its registered name and address.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The D-U-N-S Number lookup is free (search by company name + country → D-U-N-S, name, address). Full D&B business/credit reports and monitoring are paid.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query Dun & Bradstreet's business database; the company is not notified. The free lookup needs no account; full reports require registration/payment (a trail on your side). Use billing hygiene if buying reports.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Dun & Bradstreet is a major, long-established global business-data provider; the D-U-N-S identifier and core entity data are widely relied upon, though entries can lag corporate changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Dun & Bradstreet UK",
+      "DUNS lookup"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "duns"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/dnb-co-uk.md"
   },
   {
@@ -253631,46 +253619,54 @@
   {
     "id": "nzbn-govt-nz",
     "name": "nzbn.govt.nz",
-    "description": "OSINT tool: nzbn.govt.nz.",
+    "description": "Use when you have a New Zealand business `name` or `employer-org` and want its official registry details — returns `employer-org`, `address`, and linked `associate` (directors/contacts).",
     "url": "https://www.nzbn.govt.nz/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official New Zealand Business Number register — verified trading names, addresses and business details.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official government register operated by MBIE; searching NZBN records costs nothing and needs no account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it is a public government register; the business is not notified of a lookup. No login is required to search, so there is minimal trail on your side beyond normal server logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official register run by the New Zealand Ministry of Business, Innovation and Employment (MBIE); the data is authoritative for NZBN/entity details, though optional business-provided fields vary.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "nz"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "New Zealand Business Number",
+      "NZBN register"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "new-zealand",
+      "government"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nzbn-govt-nz.md"
   },
   {
@@ -262036,46 +262032,54 @@
   {
     "id": "scotlandspeople-gov-uk-3",
     "name": "scotlandspeople.gov.uk",
-    "description": "OSINT tool: scotlandspeople.gov.uk.",
+    "description": "Use when you have a `name` and want official Scottish vital records — births, marriages, deaths, divorces, censuses — returns `dob`/life dates, `associate` (family) and place/`address`.",
     "url": "https://www.scotlandspeople.gov.uk/search-records/statutory-records/stat_divorces",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Scottish statutory and historical records (BMD, divorces, censuses, wills) for genealogy and identity confirmation.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and search the record indexes; viewing a record image or ordering a certificate is pay-per-view (credits) or a per-certificate fee.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you search an official government archive; no living subject is notified, and recent statutory records are restricted by closure periods to protect the living. An account is required; register with a sock-puppet identity for sensitive work. Purchases leave a billing trail.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official National Records of Scotland genealogy service; record data is authoritative (transcribed from statutory registers and censuses).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "ScotlandsPeople",
+      "National Records of Scotland"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "scotland",
+      "vital-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/scotlandspeople-gov-uk-3.md"
   },
   {
@@ -264399,46 +264403,54 @@
   {
     "id": "solocheck-ie",
     "name": "solocheck.ie",
-    "description": "OSINT tool: solocheck.ie.",
+    "description": "Use when you have an Irish company `name` or a director's `name` and want company profiles, directors and addresses — returns `employer-org`, `address`, `associate` (directors).",
     "url": "https://www.solocheck.ie/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Irish company and director research — profiles, directorships, addresses and credit reports.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to start searching every Irish company and its directors (basic profile); full credit reports, financials and individual screening are paid.",
+    "opsec": "passive",
+    "opsecNote": "Passive — data derives from the Irish companies register (CRO) and consumer registries; the company/directors are not notified. Paid reports need an account and payment (a trail on your side) — use a sock-puppet account if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An established Irish business-information reseller sourcing from official CRO filings; registry data is authoritative, the credit/analytics layer is SoloCheck's own.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SoloCheck",
+      "solocheck.ie"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/solocheck-ie.md"
   },
   {
@@ -316344,13 +316356,13 @@
   {
     "id": "deck-blue",
     "name": "deck.blue",
-    "description": "OSINT tool: deck.blue.",
+    "description": "Use when you have a Bluesky `username` and want to monitor their posts, searches and lists in real time across columns — returns live `social-profile` activity.",
     "url": "https://deck.blue/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "TweetDeck-style multi-column monitoring of Bluesky accounts, searches, feeds and lists.",
     "selectorsIn": [
       "username",
       "name"
@@ -316359,29 +316371,38 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free third-party Bluesky client; you connect with your own Bluesky handle and an app password. No paid tier required for core columns.",
+    "opsec": "passive",
+    "opsecNote": "Viewing public Bluesky posts is passive and does not notify the subject. However, you must log in with a Bluesky account — always use a sock-puppet handle and a Bluesky app password (never your main password), since deck.blue is a third party receiving that credential. Following/liking/replying from the tool is active and attributable.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A popular third-party Bluesky deck client, not an official Bluesky product; you trust it with an app-password credential, so scope it narrowly with a puppet account.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "deck.blue",
+      "Bluesky deck"
+    ],
     "tags": [
       "bluesky",
-      "BlueSky / BSky Related Sites"
+      "BlueSky / BSky Related Sites",
+      "monitoring"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/deck-blue.md"
   },
   {
@@ -321515,13 +321536,13 @@
   {
     "id": "gab-com",
     "name": "gab.com",
-    "description": "OSINT tool: gab.com.",
+    "description": "Use when you have a `username` or `name` and want to find/monitor a subject on the Gab social network — returns their `social-profile` and posts.",
     "url": "https://gab.com/auth/sign_in",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Locating and reading a subject's presence on Gab, a Mastodon-based platform popular with the far right.",
     "selectorsIn": [
       "username",
       "name"
@@ -321530,29 +321551,37 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; some browsing works logged-out but a free account is needed for full access, follower lists, and search depth.",
+    "opsec": "passive",
+    "opsecNote": "Reading public Gab posts is passive. To see more you must register — use a sock-puppet account, never a real identity, since Gab is a closed-community platform where accounts and interactions are visible. Do not follow/interact with the target. Assume Gab logs account activity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A real, active social platform (Mastodon-based), but all profile/post content is user-generated and unverified; treat it as primary-source social media, not vetted data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Gab",
+      "gab.com"
+    ],
     "tags": [
       "rightwingsocialmediasites",
       "Right Wing Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/gab-com.md"
   },
   {
