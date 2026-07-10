@@ -103394,41 +103394,48 @@
   {
     "id": "emailhippo-2",
     "name": "EmailHippo",
-    "description": "Simple free online tool for check the existence of a particular email address and evaluate its reliability on a 10-point scale.",
+    "description": "Use when you have an `email` and want to check whether it is real/deliverable and how trustworthy it looks — returns a validity verdict, a reliability score, and mailbox/domain diagnostics.",
     "url": "https://tools.emailhippo.com/email/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that an email address exists and is deliverable, with a reliability score, before investing in it.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "address",
-      "email"
+      "email",
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The web \"More\" free tool verifies single addresses at no cost; bulk verification and the API require a paid Email Hippo plan/key.",
+    "opsec": "passive",
+    "opsecNote": "Passive but not zero-touch — verification typically performs SMTP/MX checks against the address's mail server, which can register a probe in that server's logs (it does NOT email or alert the person). Use a sock-puppet context if you want to avoid your own IP appearing; Email Hippo runs the checks server-side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Email Hippo is an established commercial email-verification vendor; the deliverability verdict is technically sound, though \"valid\" means the mailbox accepts mail, not who owns it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Email Hippo",
+      "tools.emailhippo.com"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "email-verification"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/emailhippo-2.md"
   },
@@ -112426,13 +112433,13 @@
   {
     "id": "zehef",
     "name": "ZEHEF",
-    "description": "A simple #Python tool that collects information about an email. It checks its reputation in different sources and finds possible accounts in different social networks (some functions may not work properly, the tool is in development).",
+    "description": "Use when you have an `email` and want an automated passive OSINT sweep on it — returns paste-site and breach hits, discovered social accounts, and generated address variations, all from a local CLI.",
     "url": "https://github.com/N0rz3/Zehef",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "One-command local email recon — breaches, paste mentions, and social-account discovery for an address.",
     "selectorsIn": [
       "email"
     ],
@@ -112440,27 +112447,35 @@
       "email",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (GPL-3.0); local Python install, no account or API key required for core checks.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it queries public sources (paste sites, HudsonRock, platform signup checks) about the address, not the subject. Checks originate from YOUR IP, so run behind a VPN/proxy for a clean footprint; nothing is sent to the address owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community open-source tool (~1k GitHub stars) by N0rz3; the author notes it is in development and some checks may break as upstream sites change.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Zehef",
+      "N0rz3/Zehef"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "email-osint",
+      "cli"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/zehef.md"
   },
@@ -177261,31 +177276,38 @@
   {
     "id": "tgstat",
     "name": "TGStat",
-    "description": "Telegram channel trend analysis and engagement benchmarking",
+    "description": "Use when you have a Telegram channel/`username` or keyword and want audience and activity analytics or to discover related channels — returns subscriber trends, post stats, rankings, and channel search.",
     "url": "https://tgstat.com/",
     "category": "messaging",
     "path": [
       "messaging",
       "telegram"
     ],
-    "bestFor": "Telegram channel trend analysis and engagement benchmarking",
-    "input": "Channel names, keywords, and Telegram entity identifiers",
-    "output": "Audience metrics, posting statistics, and channel ranking insights",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Analysing a Telegram channel's audience/activity and discovering channels by keyword or category.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Public channel stats and search are free to browse; deeper analytics, mentions/keyword monitoring, and the API require an account and/or paid plan.",
     "opsec": "passive",
-    "opsecNote": "Reads TGStat indexed analytics data; no direct contact with targets for normal lookups.",
+    "opsecNote": "Passive — TGStat reads its own index of public Telegram channels; a normal lookup never joins a channel or touches a target. Some features require an account (login is via Telegram, which ties activity to a Telegram identity) — use a sock-puppet Telegram account for those.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "TGStat is the best-known Telegram analytics service (Russian-origin, large index); data covers public channels only and its ranking/metrics are its own estimates.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -177293,11 +177315,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "TGStat",
+      "tgstat.com"
+    ],
+    "tags": [
+      "telegram",
+      "analytics",
+      "messaging-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram/tgstat.md"
   },
   {
@@ -204377,31 +204406,32 @@
   {
     "id": "ellis-island-new-york-passenger-search",
     "name": "Ellis Island New York Passenger Search",
-    "description": "People-related search for passenger records at Ellis Island, New York",
-    "url": "http://www.libertyellisfoundation.org",
+    "description": "Use when you have a historical immigrant's `name` and want their Port of New York / Ellis Island arrival record — returns arrival date, ship, port of origin, age, and fellow passengers.",
+    "url": "https://www.libertyellisfoundation.org",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Finding an immigrant ancestor's Ellis Island arrival manifest (1892–1957) by name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
-      "address",
-      "phone",
-      "associate"
+      "name",
+      "dob",
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The Statue of Liberty-Ellis Island Foundation's Arrival Records search is free to use; a free account lets you save records, and physical/framed copies are sold, but searching costs nothing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive and historical — you search a genealogical archive of century-old arrival manifests, not any living person's data. No target is contactable or notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Statue of Liberty-Ellis Island Foundation database, digitised from the Port of New York passenger manifests; authoritative for what the original manifest recorded (subject to transcription errors).",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -204410,14 +204440,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Ellis Island records",
+      "Statue of Liberty-Ellis Island Foundation passenger search",
+      "libertyellisfoundation.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "genealogy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/ellis-island-new-york-passenger-search.md"
   },
@@ -206076,46 +206111,52 @@
   {
     "id": "gravatar",
     "name": "Gravatar",
-    "description": "OSINT tool: Gravatar.",
-    "url": "http://en.gravatar.com",
+    "description": "Use when you have an `email` (or its MD5 hash) or a Gravatar `username` and want the linked public avatar and profile — returns a profile photo, display name, and any linked social/websites the person published.",
+    "url": "https://en.gravatar.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Turning an email into a public avatar photo, display name, and self-listed links via its Gravatar profile.",
     "selectorsIn": [
-      "name"
+      "email",
+      "username"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
+      "image",
       "social-profile",
-      "dob"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public service (owned by Automattic/WordPress.com); no account needed to view a profile.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you look up a hash/handle against Gravatar's public API, never contacting the subject. Querying the profile URL or `/avatar/<md5>` leaks nothing to the account owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Automattic; the avatar/profile is authentic Gravatar data, though profile fields (links, name) are self-published by the user and only as complete as they chose.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Globally Recognized Avatar",
+      "gravatar.com"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "avatar",
+      "email-osint"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/gravatar.md"
   },
   {
@@ -212434,46 +212475,59 @@
   {
     "id": "spokeo-com",
     "name": "spokeo.com",
-    "description": "OSINT tool: spokeo.com.",
+    "description": "Use when you have a `name`, `phone`, `email`, or `address` and want an aggregated US people profile — returns address history, phone/email, relatives/associates, and linked social profiles (full report is paid).",
     "url": "https://www.spokeo.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregating US contact, address history, and relatives/associates from a name, phone, email, or address.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "email",
+      "address"
     ],
     "selectorsOut": [
       "address",
       "phone",
       "email",
-      "social-profile",
-      "associate"
+      "associate",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search shows a teaser (existence + partial data); the full report requires a paid one-time purchase or subscription. Criminal-records add-on costs extra. Effectively pay-to-view for anything substantive.",
+    "opsec": "active",
+    "opsecNote": "Semi-active — you must create an account and pay, tying lookups to your billing identity. The subject is not contacted, but Spokeo (a data broker) logs who searched whom. Use a dedicated investigative account, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A major consumer data broker; coverage is broad but records are aggregated and frequently stale or conflated across same-named people. Explicitly not an FCRA consumer-reporting agency.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Spokeo",
+      "spokeo.com"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "People Search Sites",
+      "data-broker"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/spokeo-com.md"
   },
   {
@@ -232807,47 +232861,56 @@
   },
   {
     "id": "denmark",
-    "name": "Denmark",
-    "description": "OSINT tool: Denmark.",
+    "name": "Denmark (CVR Business Register)",
+    "description": "Use when you have a Danish company `name`, `address`, or CVR number (or a person's name as an owner/director) and want the official business record — returns registered company, address, and associated people.",
     "url": "https://datacvr.virk.dk/data/index.php?q=forside&language=en-gb",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up Danish companies and their registered owners/officers in the official CVR register.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official service — CVR is Denmark's public Central Business Register, operated by the Danish Business Authority (Erhvervsstyrelsen). No account for standard lookups.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query an official government business register, not the individual. Company officers are public by Danish law and are not notified. Standard government-site logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "CVR (datacvr.virk.dk) is the authoritative Danish state business register; company and officer data is official primary-source record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CVR",
+      "Det Centrale Virksomhedsregister",
+      "Virk datacvr"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "business-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/denmark.md"
   },
   {
@@ -249999,45 +250062,53 @@
   },
   {
     "id": "missouri",
-    "name": "Missouri",
-    "description": "OSINT tool: Missouri.",
+    "name": "Missouri (DOC Offender Search)",
+    "description": "Use when you have a `name` and want to check whether a subject is in Missouri Department of Corrections custody or supervision — returns offender record with DOC ID, status, and location.",
     "url": "https://web.mo.gov/doc/offsearchweb",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming Missouri DOC incarceration/supervision status and DOC number for a named person.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "physical-description",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official public offender search operated by the Missouri Department of Corrections; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a state corrections public-records system, not the subject. The offender is not notified. Standard government-site logging applies; use a clean browser if you want to avoid attributing the query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Missouri Department of Corrections — authoritative for offenders in MODOC custody/supervision; scope is MODOC only, not county jails or full criminal history.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Missouri DOC offender search",
+      "MODOC offender web search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/missouri.md"
   },
   {
@@ -315170,37 +315241,53 @@
   {
     "id": "brandwatch",
     "name": "Brandwatch",
-    "description": "OSINT tool: Brandwatch.",
+    "description": "Use when you have a `name`, handle, or keyword and want enterprise-scale social listening across platforms — returns aggregated mentions, sentiment, and trend/audience analytics (not individual-profile lookup).",
     "url": "https://www.brandwatch.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Large-scale monitoring of mentions/sentiment for a name, brand, or keyword across social and web.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Enterprise SaaS — effectively paid-only. There is no self-serve free tier; access is via a sales demo/trial and paid contract. Author-accurate pricing is \"gated behind enterprise sales,\" so treat as inaccessible without a paid account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it analyses publicly posted content at aggregate scale, not by contacting targets. But it requires a corporate account tied to your organisation, so usage is fully attributable to you; it is not a covert individual-lookup tool.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Brandwatch is a major, legitimate enterprise social-listening/analytics vendor; strong for aggregate trends, weak/ill-suited for pinpointing a single individual.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Brandwatch Consumer Intelligence",
+      "brandwatch.com"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "real-time-search-social-media-search-and-general-social-media-tools",
+      "social-listening",
+      "analytics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/brandwatch.md"
   },
   {
