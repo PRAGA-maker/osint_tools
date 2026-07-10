@@ -175635,43 +175635,50 @@
   {
     "id": "telegram-tools",
     "name": "telegram.tools",
-    "description": "OSINT tool: telegram.tools.",
+    "description": "Use when you have a Telegram user/account `device-id` (numeric ID) or bot file ID and want to decode it — returns approximate account-creation date and file `metadata-exif`, not a name/phone lookup.",
     "url": "https://telegram.tools/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Estimating a Telegram account's creation date from its numeric user ID, and decoding Bot API / TDLib file IDs — developer utilities with narrow OSINT use.",
     "selectorsIn": [
-      "phone",
+      "device-id",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (maintained by the grammY / grammyjs project). No account or key required.",
+    "opsec": "passive",
+    "opsecNote": "Everything is computed client-side or against public Telegram infrastructure from an identifier you already have; the target account is not contacted or notified. It does not resolve phone numbers or reveal private profile data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source utilities by the grammY Telegram-bot framework project; these are developer tools, so the OSINT-relevant output (approximate account age from user ID) is an inference, not an official Telegram field.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "grammY tools",
+      "Telegram account creation date"
+    ],
     "tags": [
       "telegram",
-      "Telegram"
+      "messaging",
+      "developer-utility"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-tools.md"
   },
   {
@@ -203128,35 +203135,51 @@
   {
     "id": "dating-sites-search-engine",
     "name": "Dating Sites Search Engine",
-    "description": "OSINT tool: Dating Sites Search Engine.",
+    "description": "Use when you have a `name`, `username` or `email` and want to sweep multiple dating platforms at once via a curated Google Custom Search Engine — returns `social-profile` links on dating sites.",
     "url": "https://cse.google.com/cse?cx=c7b340447e1e12653",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running one query across a pre-selected list of dating/hookup sites (Google CSE) to find a subject's dating-profile presence.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free — it's a hosted Google Custom Search Engine. No account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Google's index, not the dating sites, so no target profile is touched or notified. Clicking through to a dating profile may register a view on some platforms — open results in a puppet browser/incognito, not while logged into any dating account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A community-built Google Custom Search Engine; its site list and freshness are opaque and can drift or break silently, since it depends entirely on Google's index and the (unknown) creator's config.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "dating CSE",
+      "dating sites search"
+    ],
+    "tags": [
+      "people-search",
+      "dating",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/dating-sites-search-engine.md"
   },
   {
@@ -229108,45 +229131,57 @@
   },
   {
     "id": "courthousedirect-com",
-    "name": "courthousedirect.com/",
-    "description": "OSINT tool: courthousedirect.com/.",
+    "name": "CourthouseDirect.com",
+    "description": "Use when you have a `name` or property identifier and want deeds, liens, real-property and grantor/grantee records (mainly TX/NM, links nationwide) — returns `address`, `document-id` and ownership links.",
     "url": "http://www.courthousedirect.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling real-property/deed records and grantor-grantee indexes (deeds, mortgages, liens, judgments) to tie a person to property and addresses, strongest in Texas and New Mexico.",
     "selectorsIn": [
-      "name"
+      "name",
+      "address"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
+      "address",
+      "document-id",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Registration is free and some index links/searches are free, but full property-record images and \"Legal Search\" queries are paid per-document or subscription. Treat it as paid-for-documents.",
+    "opsec": "passive",
+    "opsecNote": "Property-record search does not alert the subject. Buying documents requires an account and payment, which ties the lookup to your billing identity — use a dedicated investigative account, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial title/records vendor. Data is sourced from county recorders (authoritative underneath) but repackaged and paywalled; confirm critical facts at the county recorder of record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "courthousedirect",
+      "courthousedirect.com"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "property",
+      "deeds",
+      "public-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/courthousedirect-com.md"
   },
   {
@@ -229192,13 +229227,13 @@
   {
     "id": "courtlistener-recap",
     "name": "CourtListener / RECAP",
-    "description": "Free legal-records search over court opinions and PACER dockets via RECAP.",
+    "description": "Use when you have a `name` and want free US court opinions and PACER federal dockets — returns matching case parties (`name`), docket/case numbers (`document-id`) and employer/organisation litigants.",
     "url": "https://www.courtlistener.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "Free search of US federal/state court opinions and PACER dockets (RECAP).",
+    "bestFor": "Free search of US federal and state court opinions plus PACER dockets liberated via the RECAP archive — finds a person's litigation history without PACER fees.",
     "selectorsIn": [
       "name"
     ],
@@ -229207,26 +229242,28 @@
       "document-id",
       "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read opinions and RECAP-archived dockets. Run by the non-profit Free Law Project. Fetching a PACER document not yet in RECAP may incur PACER's own per-page fee.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching CourtListener does not touch the subject or the courts directly; it queries an archive. No login needed for search. Using the RECAP browser extension while logged into PACER ties fetches to your PACER account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Free Law Project, a respected US legal-transparency non-profit; opinions and dockets are court-sourced, and RECAP mirrors real PACER filings.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "aliases": [
       "Recap",
-      "CourtListener"
+      "CourtListener",
+      "Free Law Project"
     ],
     "tags": [
       "court",
@@ -229235,7 +229272,7 @@
       "pacer"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/courtlistener-recap.md"
   },
@@ -230078,14 +230115,14 @@
   },
   {
     "id": "cyprus",
-    "name": "Cyprus",
-    "description": "OSINT tool: Cyprus.",
+    "name": "Cyprus Company Registry (Companies Section)",
+    "description": "Use when you have a company `name`, officer `name` or registration number tied to Cyprus and want official corporate records — returns `employer-org`, registered `address`, and director/officer `name`s.",
     "url": "https://www.companies.gov.cy/en/company-lifecycle/search-for-company-information",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the official Cyprus government business registry to link a person to Cypriot companies, directorships, and registered addresses.",
     "selectorsIn": [
       "name",
       "address",
@@ -230096,29 +230133,38 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search basic company information (name, number, status, registered office, officers). Certified copies or full filed documents may carry a government fee.",
+    "opsec": "passive",
+    "opsecNote": "Public registry search; neither the company nor its officers are notified. Queries hit a Cyprus government site — use a puppet browser/IP if you don't want your address tied to the search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Department of Registrar of Companies and Intellectual Property, Republic of Cyprus — the authoritative source for Cypriot corporate records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Cyprus Registrar of Companies",
+      "companies.gov.cy",
+      "Cyprus company search"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "company-related-sites",
+      "public-records",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cyprus.md"
   },
   {
@@ -248817,47 +248863,54 @@
   },
   {
     "id": "myewc-wales",
-    "name": "myewc.wales",
-    "description": "OSINT tool: myewc.wales.",
+    "name": "EWC Wales Register of Education Practitioners",
+    "description": "Use when you have a `name` and want to confirm a Welsh teacher/education worker's professional registration — returns registration status, `employer-org` (school) and any disciplinary orders.",
     "url": "https://www.myewc.wales/en/member-of-public/qualified-teacher/list",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether someone is a registered education practitioner in Wales, their registration status, and any current disciplinary orders against them.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search; no account required. Only schools/local-authority users need credentials.",
+    "opsec": "passive",
+    "opsecNote": "Checking a public professional register does not notify the individual. It confirms occupation/status and can surface disciplinary history — treat that sensitively and lawfully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Education Workforce Council, the statutory regulator for the education workforce in Wales — authoritative for registration status and disciplinary orders.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Education Workforce Council Wales",
+      "myewc.wales",
+      "EWC register"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "profession-licensing",
+      "public-records",
+      "teachers"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/myewc-wales.md"
   },
   {
@@ -252961,14 +253014,14 @@
   },
   {
     "id": "on-demand-court-records",
-    "name": "On Demand Court Records",
-    "description": "OSINT tool: On Demand Court Records.",
+    "name": "On Demand Court Records (ODCR)",
+    "description": "Use when you have a `name` and want Oklahoma district/tribal court case records — returns matching parties, case numbers (`document-id`), filing dates and case types.",
     "url": "http://www1.odcr.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Oklahoma court cases (all 77 district courts plus tribal courts) by party name to surface criminal, civil, family, and probate filings.",
     "selectorsIn": [
       "name"
     ],
@@ -252977,29 +253030,38 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Name/case search and docket viewing are free; downloading or paying court fees/documents for many case types costs money via the \"Pay Online\" flow.",
+    "opsec": "passive",
+    "opsecNote": "Public court-record search; the subject is not notified. Queries hit a state-adjacent court portal — use a puppet browser if you don't want your IP tied to the search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "ODCR is a long-running portal aggregating participating Oklahoma court dockets; data is court-sourced but presentation/coverage varies by county, so confirm against OSCN for legal use.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ODCR",
+      "odcr.com",
+      "Oklahoma court records"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records",
+      "oklahoma"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/on-demand-court-records.md"
   },
   {
@@ -254268,14 +254330,14 @@
   },
   {
     "id": "os-birth-records",
-    "name": "OS Birth Records",
-    "description": "OSINT tool: OS Birth Records.",
+    "name": "OnlineSearches Birth Records",
+    "description": "Use when you have a `name` and want a state-by-state directory of official birth/vital-record sources — returns links to `dob`, `name` and `associate` (parent/family) record lookups.",
     "url": "http://publicrecords.onlinesearches.com/birth-records.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A free directory that routes you to the correct county/state government birth and vital-records office for a jurisdiction, rather than searching records itself.",
     "selectorsIn": [
       "name"
     ],
@@ -254284,29 +254346,38 @@
       "dob",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The directory itself is free. It links to government offices (some free) and, for personal-detail lookups, may route to Intelius.com, which is paid. The specific /birth-records.htm deep link may 404 — navigate from the site root instead.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a directory of record sources is passive and untied to the subject. Following a link to Intelius or a paid people-search is where you'd start leaving an account/payment trail — stop before that if you want to stay anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "OnlineSearches is an Intelius-affiliated directory of public-record links; useful as a jurisdiction router, but it monetizes by funneling to paid people-search, so it is not a neutral authority.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlineSearches",
+      "publicrecords.onlinesearches.com",
+      "birth records directory"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "vital-records",
+      "public-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/os-birth-records.md"
   },
   {
@@ -310910,37 +310981,51 @@
   {
     "id": "arctic-shift-2",
     "name": "Arctic Shift",
-    "description": "OSINT tool: Arctic Shift.",
+    "description": "Use when you have a Reddit `username` (or subreddit/keyword) and want historical Reddit posts and comments Reddit's own search hides — returns `social-profile` activity, timestamps and content as a Pushshift successor.",
     "url": "https://github.com/ArthurHeitmann/arctic_shift",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Retrieving a Reddit user's full post/comment history (including deleted-from-UI items) via an archive API or bulk dumps — the leading Pushshift replacement.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source. Web search UI and API are free; bulk data dumps are free downloads (large, .zst-compressed).",
+    "opsec": "passive",
+    "opsecNote": "You query an archive, not Reddit, so the target gets no signal. The web API is hosted by the maintainer — assume they can log queries; use the offline dumps or a puppet setup for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project by ArthurHeitmann; well-regarded in the Reddit-research community as the maintained successor to Pushshift after Pushshift lost broad access.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "arctic_shift",
+      "Pushshift successor",
+      "arctic-shift.photon-reddit.com"
+    ],
     "tags": [
-      "reddit"
+      "reddit",
+      "social-networks",
+      "archive"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/arctic-shift-2.md"
   },
   {
@@ -311689,35 +311774,51 @@
   {
     "id": "bibliogram",
     "name": "Bibliogram",
-    "description": "OSINT tool: Bibliogram.",
+    "description": "Use when you have an Instagram `username` and want to view a profile/posts without an Instagram login — but note this front-end is defunct; returns `social-profile` content only on rare surviving instances.",
     "url": "https://bib.actionsack.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Historically, viewing public Instagram profiles and posts anonymously (no login, no JS) via a privacy front-end — now largely non-functional.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "down",
+    "pricing": "free",
+    "costNote": "Free and open-source when it worked; no account required. Value today is near zero because the project is discontinued.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The design intent was passive/anonymous Instagram viewing (no account, no JS, no Instagram cookies). If you find a live mirror, it still proxies through a third party you do not control — assume the operator can log your queries; use a puppet IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project by cadence (sr.ht/~cadence/bibliogram). Officially discontinued in September 2022; most public instances, including bib.actionsack.com, are down or block profile views.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "deprecated": true,
+    "aliases": [
+      "Bibliogram Instagram frontend",
+      "bib.actionsack.com"
+    ],
+    "tags": [
+      "instagram",
+      "social-networks",
+      "alternative-frontend"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bibliogram.md"
   },
   {
@@ -316768,41 +316869,53 @@
   },
   {
     "id": "facebook-latest-posts-scraper",
-    "name": "Facebook Latest Posts Scraper",
-    "description": "Scrape #Facebook posts with comments from one or multiple page URLs. Get post and comment texts, timestamps, post URLs, likes, shares, comments count, author ID.",
+    "name": "Facebook Latest Posts Scraper (Apify)",
+    "description": "Use when you have a public Facebook page/profile URL (`social-profile`) and want its recent posts and comments in bulk — returns post/comment text, timestamps, URLs, engagement counts and author IDs as `metadata-exif`.",
     "url": "https://console.apify.com/actors/EtZ9lsiipPgKrQIi6",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-extracting recent public Facebook posts and their comments (text, timestamps, likes/shares, author IDs) from one or many page URLs into structured JSON/CSV.",
     "selectorsIn": [
-      "face",
-      "image"
+      "social-profile"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Runs on Apify. Requires a free Apify account; usage consumes platform credits — the free tier includes a monthly credit allowance, heavy scraping is paid. It is not a no-signup web tool.",
+    "opsec": "active",
+    "opsecNote": "Scraping runs from Apify's cloud IPs, not yours, which shields your address — but it is still automated collection against Facebook and may violate Facebook's ToS. Only target PUBLIC pages; the actor cannot and must not touch private/login-gated content. Your Apify account ties the job to your identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A third-party actor in the Apify marketplace (harvested via cyb-detective). Quality and upkeep depend on the individual actor author; verify current status and pricing on the actor page before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Apify Facebook posts scraper",
+      "Facebook page posts scraper"
+    ],
     "tags": [
-      "Social Media",
-      "Facebook"
+      "social-media",
+      "facebook",
+      "scraper",
+      "apify"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-latest-posts-scraper.md"
   },
@@ -317205,36 +317318,54 @@
   },
   {
     "id": "facebook-search-2",
-    "name": "Facebook Search",
-    "description": "OSINT tool: Facebook Search.",
+    "name": "Facebook Search (SowSearch)",
+    "description": "Use when you have a `name`, `employer-org`, school or city and want to run structured people/post/photo searches on Facebook after Graph Search was killed — returns `social-profile` links and public posts.",
     "url": "https://www.sowsearch.info/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Rebuilding Facebook Graph-Search-style queries (people by employer/school/city, posts, photos, places) through a form that emits real Facebook search URLs.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "address"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source front-end. No account with SowSearch is needed, but you must be logged into your own Facebook account for the generated search URLs to return results.",
+    "opsec": "active",
+    "opsecNote": "SowSearch itself just builds URLs, but clicking through executes the search inside your logged-in Facebook session, so results and clicks are tied to whatever account you use. Use a sock-puppet Facebook account and browser profile, never your real one — Facebook logs searches and profile visits.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community tool by sowdust (open-source, github.com/sowdust). It only constructs Facebook search URLs — the data comes from Facebook itself, not a third-party scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SowSearch",
+      "sowsearch.info",
+      "Facebook Graph Search replacement"
+    ],
+    "tags": [
+      "facebook",
+      "social-networks"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-search-2.md"
   },
   {
@@ -326627,13 +326758,13 @@
   {
     "id": "internect-info",
     "name": "internect.info",
-    "description": "OSINT tool: internect.info.",
+    "description": "Use when you have a Bluesky handle, DID or AT URI and want to resolve it to the underlying AT Protocol identity — returns the stable `social-profile` (DID) and current `name`/handle mapping.",
     "url": "https://internect.info/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving Bluesky handles ↔ DIDs (decentralized identifiers) so you can track an account across handle changes and inspect its AT Protocol identity.",
     "selectorsIn": [
       "username",
       "name"
@@ -326642,29 +326773,38 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source lookup tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Resolving a handle/DID queries public AT Protocol / PLC directory data, not the account itself — the target gets no signal. The lookup runs through internect.info's server, which could log queries; use a puppet IP for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool by mozzius (a Bluesky app developer); it reads public AT Protocol identity data, so results are as authoritative as the protocol's PLC directory.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "internect",
+      "Bluesky DID lookup",
+      "AT Protocol search"
+    ],
     "tags": [
       "bluesky",
-      "BlueSky / BSky Related Sites"
+      "bsky",
+      "atproto",
+      "social-networks"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/internect-info.md"
   },
   {
@@ -334206,41 +334346,51 @@
   {
     "id": "reddit-comment-history",
     "name": "Reddit Comment History",
-    "description": "Comment activity timeline analysis",
+    "description": "Use when you have a Reddit `username` and want a visual timeline of their comment activity — returns `social-profile` cadence, karma, subreddits and posting-time patterns as charts.",
     "url": "https://roadtolarissa.com/javascript/reddit-comment-visualizer/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "reddit"
     ],
-    "bestFor": "Comment activity timeline analysis",
-    "input": "Reddit username",
-    "output": "Comment history visualizations and posting cadence insights",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Turning a Reddit user's public comment history into cadence/karma/subreddit visualizations that reveal timezone and routine.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free browser tool; no account or install. Runs client-side against Reddit's public API.",
     "opsec": "passive",
-    "opsecNote": "Analyzes publicly accessible Reddit comment data.",
+    "opsecNote": "Pulls only public comment data via Reddit's read API; the target gets no notification. The fetch comes from your browser/IP, so use a puppet connection if you are concerned about Reddit correlating the request.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Personal project by Adam Pearce (roadtolarissa.com); a thin client-side visualizer over Reddit's own API, so accuracy tracks whatever Reddit returns.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Reddit Comment Visualizer",
+      "roadtolarissa reddit"
+    ],
+    "tags": [
+      "reddit",
+      "social-networks",
+      "visualization"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit/reddit-comment-history.md"
   },
   {
