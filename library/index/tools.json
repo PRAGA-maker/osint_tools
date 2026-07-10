@@ -139398,30 +139398,30 @@
   {
     "id": "citizen-evidence-lab",
     "name": "Citizen Evidence Lab",
-    "description": "Website for Amnesty Internationals video verification guide for journalists to verify citizen videos",
+    "description": "Use when you have a video or `image` (often eyewitness/social footage) and want to verify its origin, upload time, and authenticity — returns metadata-exif and geolocation verification leads.",
     "url": "https://citizenevidence.org/category/method/digital-verification/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying eyewitness videos/images — provenance, upload time, and location corroboration.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "metadata-exif",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free resource hub run by Amnesty International; the linked YouTube DataViewer and guides are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading guides and running the DataViewer on a public video URL is passive and does not alert an uploader. Standard reverse-image/geolocation OpSec applies when you pivot to those steps.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Amnesty International's crisis/verification team; a respected, methodical authority on open-source video/image verification.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -139430,14 +139430,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "youtube-dataviewer",
+      "invid",
+      "tineye"
+    ],
+    "aliases": [
+      "citizenevidence.org",
+      "Amnesty Citizen Evidence Lab"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "video-verification"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/citizen-evidence-lab.md"
   },
@@ -208475,44 +208483,58 @@
   },
   {
     "id": "next-door",
-    "name": "Next Door",
-    "description": "OSINT tool: Next Door.",
+    "name": "Nextdoor",
+    "description": "Use when you have an `address`/neighborhood and want the residents, local posts, and real names tied to it — returns names and associates, but requires an address-verified account.",
     "url": "https://nextdoor.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying neighbors and real names around a target address via the local neighborhood feed.",
     "selectorsIn": [
       "address"
     ],
     "selectorsOut": [
       "name",
-      "phone",
-      "associate"
+      "associate",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to join. Access to a neighborhood's feed generally requires an account whose address is verified as being in (or near) that area.",
+    "opsec": "active",
+    "opsecNote": "Nextdoor ties accounts to a verified real address and pushes members to use real names; other residents can see that you joined and what you post. Joining a neighborhood you don't live in is against ToS and exposes a sock-puppet identity. Treat as active and high-friction; never use a personal account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "User-generated neighborhood network; names/posts are self-asserted by residents. Address verification makes access hard, which is why coverage from the outside is limited.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "truepeoplesearch",
+      "facebook"
+    ],
+    "aliases": [
+      "nextdoor.com",
+      "Next Door"
+    ],
     "tags": [
-      "address"
+      "address",
+      "neighborhood"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/next-door.md"
   },
   {
@@ -210775,46 +210797,59 @@
   },
   {
     "id": "scamdigger-com",
-    "name": "Scamdigger.com",
-    "description": "search in #scammers database by name, IP-adress, email or phone",
+    "name": "ScamDigger",
+    "description": "Use when you have a `name`, `email`, `phone`, or `ip-address` from a suspected romance/dating scammer and want matching documented scam profiles — returns name, email, phone, image, and address leads.",
     "url": "http://scamdigger.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a suspected scammer's selectors against a large documented romance-scam profile database.",
     "selectorsIn": [
       "email",
       "name",
-      "phone"
+      "phone",
+      "ip-address"
     ],
     "selectorsOut": [
-      "address",
-      "email",
       "name",
-      "phone"
+      "email",
+      "phone",
+      "address",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and browse documented scam profiles; community/forum-driven.",
+    "opsec": "passive",
+    "opsecNote": "Searches a public crowd-sourced database; no notification reaches anyone. Note the \"scammer\" photos are usually stolen images of innocent people — an image match tells you a photo is used in scams, not that the depicted person is the scammer.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Crowd-sourced anti-scam archive; entries are user-submitted and much of the core data dates to ~2017, so treat as leads, not verified fact.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "scamsearch-io",
+      "tineye"
+    ],
+    "aliases": [
+      "scamdigger.com"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "romance-scam",
+      "catfish"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/scamdigger-com.md"
   },
@@ -215916,37 +215951,56 @@
   {
     "id": "infobel",
     "name": "Infobel",
-    "description": "OSINT tool: Infobel.",
+    "description": "Use when you have a `name` or `phone` and want an international white/yellow-pages listing — returns phone, address, and name across many countries.",
     "url": "https://www.infobel.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "International phone-directory lookup (name→number/address and reverse) across many countries.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "phone",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory search; Infobel also sells business data (Infobel Pro), but the consumer/business directory search is free.",
+    "opsec": "passive",
+    "opsecNote": "Reads published directory listings; the subject is not notified. It only holds people/businesses that appear in public phone directories, which skews to landlines and businesses.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running international directory aggregator (Kapitol/Infobel, Belgium); coverage and freshness vary widely by country, and mobile numbers are largely absent.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "truecaller",
+      "whitepages",
+      "thats-them"
+    ],
+    "aliases": [
+      "infobel.com"
+    ],
     "tags": [
-      "phone-number-research"
+      "phone-number-research",
+      "directory"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/infobel.md"
   },
   {
@@ -256100,47 +256154,59 @@
   },
   {
     "id": "pappers-fr",
-    "name": "pappers.fr",
-    "description": "OSINT tool: pappers.fr.",
+    "name": "Pappers.fr",
+    "description": "Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employer-org links, associates, address, and partial dob.",
     "url": "https://www.pappers.fr/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping a person to French company directorships/officers, or a company to its officers and owners.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search and basic company/officer data; official filings (statutes, accounts) and bulk API access are paid.",
+    "opsec": "passive",
+    "opsecNote": "Reads official public French registry data; searches are anonymous and do not notify anyone. Business addresses/officer data are public record.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Aggregates authoritative French open data (INSEE/SIRENE, RCS/BODACC, INPI); the underlying records are official, though Pappers is a private reseller of that open data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "fr"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "societe-com",
+      "opencorporates",
+      "companies-house"
+    ],
+    "aliases": [
+      "pappers.fr"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "france"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/pappers-fr.md"
   },
   {
@@ -335639,37 +335705,51 @@
   {
     "id": "reddit-comment-search",
     "name": "Reddit Comment Search",
-    "description": "OSINT tool: Reddit Comment Search.",
+    "description": "Use when you have a Reddit `username` and want to keyword-search that user's entire comment history — returns matching comments (social-profile activity, locations, admissions).",
     "url": "https://redditcommentsearch.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword-searching one Reddit user's full comment history for self-disclosures.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reads only public Reddit comment data via a third-party interface; the target is not notified. You disclose the username you're researching to the site, so use a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party convenience wrapper over public Reddit data; reliability depends on Reddit's API availability and may lag or miss very old comments.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "reddit-user-analyser",
+      "redective"
+    ],
+    "aliases": [
+      "redditcommentsearch.com"
+    ],
     "tags": [
       "reddit"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-comment-search.md"
   },
   {
@@ -340472,37 +340552,52 @@
   {
     "id": "socialblade",
     "name": "SocialBlade",
-    "description": "OSINT tool: SocialBlade.",
-    "url": "http://socialblade.com",
+    "description": "Use when you have a social `username`/channel and want public statistics — follower history, estimated account age, rank, and linked handles — returns social-profile metadata.",
+    "url": "https://socialblade.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Pulling growth stats, activity history, and account-age estimates for a YouTube/Twitch/Instagram/X account.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core statistics are free with no login; deeper history, exports, and API access require a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "Reads public platform statistics; the account owner is not notified. You disclose the handle you're researching to SocialBlade.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-established analytics aggregator; follower counts are accurate, but growth figures and \"estimated\" values are modeled, not exact.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "socialblade-2",
+      "x-com"
+    ],
+    "aliases": [
+      "socialblade.com",
+      "Social Blade"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "social-media-analytics",
+      "account-stats"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/socialblade.md"
   },
   {
@@ -344737,45 +344832,56 @@
   {
     "id": "treeverse-2",
     "name": "Treeverse",
-    "description": "Chrome web extension for navigating complex Twitter conversations and visualizing as an easy-to-understand tree graph",
+    "description": "Use when you have an X/Twitter thread or `username` and want to visualize a conversation as a navigable tree to map participants and replies — returns social-profile and associate links.",
     "url": "https://chrome.google.com/webstore/detail/treeverse/aahmjdadniahaicebomlagekkcnlcila?hl=en",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Visualizing a tangled X/Twitter reply thread as a tree to see who replied to whom.",
     "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
+      "username",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free Chrome extension; no account for the extension itself, but it reads X, which now gates much content behind login and API limits.",
+    "opsec": "active",
+    "opsecNote": "The extension renders threads from your logged-in X session, so activity happens under whatever X account you use. Use a sock-puppet X account; viewing a public thread does not notify participants, but your account state drives what loads.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party browser extension; usefulness has degraded as X restricted its API and public thread access. Verify it still loads full threads before relying on it.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "x-com",
+      "tweeterid"
+    ],
+    "aliases": [
+      "Treeverse"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "twitter"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/treeverse-2.md"
   },
@@ -346169,7 +346275,7 @@
   {
     "id": "tweeterid",
     "name": "TweeterID",
-    "description": "Converting Twitter handles to numeric IDs (and reverse)",
+    "description": "Use when you have an X/Twitter `username` (or numeric ID) and want the stable numeric account ID, which survives handle changes — returns the mapped social-profile ID.",
     "url": "https://tweeterid.com/",
     "category": "social-networks",
     "path": [
@@ -346177,34 +346283,46 @@
       "twitter",
       "search"
     ],
-    "bestFor": "Converting Twitter handles to numeric IDs (and reverse)",
-    "input": "Twitter username or numeric Twitter ID",
-    "output": "Mapped username-ID pair for the submitted account",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Converting an X/Twitter handle to its permanent numeric ID (and back).",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web converter; no account.",
     "opsec": "passive",
-    "opsecNote": "Performs lookup against public account metadata through a third-party web interface.",
+    "opsecNote": "Resolves public account metadata through a third-party page; the target is not notified. Nothing sensitive is disclosed beyond the handle you look up.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small third-party utility; the numeric ID it returns is verifiable against X itself, so the risk is low even though the operator is unaudited.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "x-com",
+      "wayback-machine"
+    ],
+    "aliases": [
+      "tweeterid.com"
+    ],
+    "tags": [
+      "twitter",
+      "account-id"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/search/tweeterid.md"
   },
   {
@@ -369435,38 +369553,53 @@
   },
   {
     "id": "name-checkr",
-    "name": "Name Checkr",
-    "description": "OSINT tool: Name Checkr.",
-    "url": "http://www.namecheckr.com",
+    "name": "NameCheckr",
+    "description": "Use when you have a `username` and want a fast availability check across social networks and domains to see where the handle is taken — returns social-profile presence signals.",
+    "url": "https://www.namecheckr.com",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-glance check of which social sites and domains a username is registered on.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account.",
+    "opsec": "passive",
+    "opsecNote": "Availability checks are made from NameCheckr's side, not yours; targets are not notified. You disclose the handle to the site. As with all availability checkers, \"taken\" means the name exists — not that it's your subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Convenience availability checker; results are a quick signal, not verified profile confirmation, and its site list is smaller than dedicated enumerators.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "namechk-2",
+      "sherlock"
+    ],
+    "aliases": [
+      "namecheckr.com",
+      "Name Checkr"
+    ],
     "tags": [
       "username-check"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/name-checkr.md"
   },
   {
