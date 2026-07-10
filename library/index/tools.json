@@ -139747,44 +139747,49 @@
   {
     "id": "clipdrop-co",
     "name": "clipdrop.co",
-    "description": "OSINT tool: clipdrop.co.",
     "url": "https://clipdrop.co/cleanup/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "description": "Use when you have an `image` of poor/cluttered quality and want to clean it up before a face/reverse-image search — returns an edited `image` with objects, text or people removed.",
+    "bestFor": "Pre-processing a photo (remove clutter/watermarks/bystanders, upscale, uncrop) so a downstream reverse-image or face search matches better.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Cleanup and basic tools are free but the free tier caps exports at 720px; hi-resolution output and heavier tools need a paid plan. No login required for basic browser use.",
+    "opsec": "active",
+    "opsecNote": "You upload the target's photo to a commercial AI service (InitML/Jasper), which processes and may temporarily retain it. Do not upload sensitive or evidential images you would not want on a third-party server; strip anything you don't want disclosed and consider a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known commercial AI image-editing suite (originally InitML, now part of Jasper); reliable as an editor, but it is a data processor you hand images to, not an OSINT search tool.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Clipdrop",
+      "Clipdrop Cleanup"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "Photo Related Sites",
+      "image-preprocessing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/clipdrop-co.md"
   },
   {
@@ -147863,44 +147868,53 @@
   {
     "id": "imglarger-com",
     "name": "imglarger.com",
-    "description": "OSINT tool: imglarger.com.",
     "url": "https://imglarger.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "description": "Use when you have a small/blurry `image` or `face` and want to upscale and sharpen it before a face/reverse-image search — returns an enhanced `image`.",
+    "bestFor": "AI-upscaling and de-blurring a low-quality photo or face crop so downstream face-recognition matches better.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image",
+      "face"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier upscales 2x/4x up to 1200×1200; 8x and larger uploads (to 4000×4000) need a subscription. Registration is required to upload and process.",
+    "opsec": "active",
+    "opsecNote": "You upload the target's image to a commercial service; processed files are stated to auto-delete after 24h but you are still handing the photo to a third party. Register with a sock-puppet account and avoid uploading sensitive/evidential images.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely-used commercial AI upscaler; reliable as an image enhancer but it is a data processor you feed images to, not an OSINT search engine.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "ImgLarger",
+      "Image Larger AI upscaler"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "Photo Related Sites",
+      "image-preprocessing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/imglarger-com.md"
   },
   {
@@ -156200,45 +156214,53 @@
   },
   {
     "id": "search-by-image-chrome-google-com",
-    "name": "search by image (chrome.google.com)",
-    "description": "OSINT tool: search by image (chrome.google.com).",
-    "url": "https://chrome.google.com/webstore/detail/search-by-image/cnojnbdhbhnkbcieeekonklommdnndci?hl=en",
+    "name": "Search by Image (Chrome extension)",
+    "url": "https://chromewebstore.google.com/detail/search-by-image/cnojnbdhbhnkbcieeekonklommdnndci",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "description": "Use when you have an `image` or `face` and want to reverse-search it across 30+ engines at once — returns matching pages/profiles from Google, Bing, Yandex, TinEye and more.",
+    "bestFor": "One-click, right-click reverse image search of any photo across many engines simultaneously.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "name",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (developer armin.dev); no account. The extension just routes your image to third-party engines, some of which may gate heavy use.",
+    "opsec": "active",
+    "opsecNote": "Each search uploads/links the target's image to the chosen engine (Google, Yandex, etc.), which logs it against your browser session/IP. Run it in a sock-puppet browser profile and be aware Yandex/others retain uploaded images.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Popular open-source extension (~400k users, 4.1★) with a stated no-data-collection policy; it is a router to established engines, so trust rests on those engines, not the extension.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Search by Image extension",
+      "armin.dev Search by Image"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "Reverse Image Searching",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/search-by-image-chrome-google-com.md"
   },
   {
@@ -176639,42 +176661,54 @@
   {
     "id": "telepathy-2",
     "name": "Telepathy",
-    "description": "Telegram CLI toolkit for archiving/analyzing channels & members.",
     "url": "https://github.com/jordanwildon/Telepathy",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "description": "Use when you have a Telegram channel/group or a user's `social-profile` and want to archive it and enumerate members — returns member lists, message history and `associate` links.",
+    "bestFor": "Archiving a Telegram chat and extracting member lists, top posters, forward networks and user metadata for investigation.",
     "selectorsIn": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "associate"
+      "associate",
+      "username",
+      "metadata-exif"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (MIT). Requires your own Telegram API credentials from my.telegram.org; a Pro/hosted tier exists but the CLI is fully free.",
+    "opsec": "active",
+    "opsecNote": "You must authenticate with a real Telegram account (phone + code) whose identity Telegram — and potentially group admins — can see. Joining/scraping a group can expose that account. Use a dedicated burner Telegram number/account, never your real one, and note some groups detect scraping.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Widely-used open-source Telegram OSINT toolkit by researcher Jordan Wildon; code is public and auditable, but it drives your own account so responsibility (and risk) is yours.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "Telepathy Telegram OSINT",
+      "jordanwildon/Telepathy"
+    ],
     "tags": [
-      "kimi-2026"
+      "kimi-2026",
+      "telegram",
+      "chat-archiving"
     ],
     "source": "kimi-telegram",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/messaging/telepathy-2.md"
   },
@@ -203943,46 +203977,52 @@
   {
     "id": "deepfind-me",
     "name": "deepfind.me",
-    "description": "OSINT tool: deepfind.me.",
     "url": "https://www.deepfind.me/tools/social-media/username-search",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `username` (or email/domain) and want to find every account it maps to — returns correlated `social-profile` links across 50+ platforms.",
+    "bestFor": "Enumerating accounts tied to a single username across social, gaming, dev and content platforms in one report.",
     "selectorsIn": [
-      "name"
+      "username",
+      "email",
+      "domain"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
       "social-profile",
-      "associate"
+      "username"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Web username search runs free in the browser; higher-volume use, the API, and advanced tools (infostealer/breach lookup, profile analyzer) are gated behind accounts/paid plans.",
+    "opsec": "passive",
+    "opsecNote": "The tool queries third-party platforms server-side from DeepFind's own infrastructure, so your IP is not exposed to each checked site. It does not notify the account owner. Treat results as leads and confirm each profile directly before acting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A cybersecurity vendor's hosted OSINT tool suite (not open-source); results are convenient but you cannot audit how each platform is checked, so verify hits manually.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DeepFind.Me",
+      "deepfind username search"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "People Search Sites",
+      "username-enumeration"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/deepfind-me.md"
   },
   {
@@ -232428,46 +232468,56 @@
   {
     "id": "deceasedonline-com",
     "name": "deceasedonline.com",
-    "description": "OSINT tool: deceasedonline.com.",
     "url": "https://www.deceasedonline.com/servlet/GSDOSearch",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `name` and want UK burial/cremation records — returns death/burial dates, cemetery or crematorium, grave details and family in the same plot.",
+    "bestFor": "Locating UK burial and cremation register entries (and grave-map/family links) for a named deceased person.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "geolocation"
     ],
     "selectorsOut": [
+      "name",
+      "dob",
       "address",
-      "employer-org",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching by name and seeing that a record exists is free; viewing the full digitised register scan, grave details or maps is pay-per-view (voucher/credit) after free registration.",
+    "opsec": "active",
+    "opsecNote": "The name search itself is a passive archive query, but viewing full records requires creating an account and paying, which ties the lookup to your identity/payment method. Register with a sock-puppet account and dedicated payment if attribution matters. No notification ever reaches the (deceased) subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official digitised burial/cremation registers supplied under agreement with UK local authorities and cemetery/crematoria operators; this is primary-source data, not scraped aggregation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Deceased Online",
+      "UK burial and cremation records"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "burial-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/deceasedonline-com.md"
   },
   {
@@ -244117,44 +244167,54 @@
   {
     "id": "interment",
     "name": "Interment",
-    "description": "OSINT tool: Interment.",
     "url": "http://www.interment.net/data/search.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `name` of a possibly-deceased person and want burial/cemetery records — returns death dates, cemetery location, and related-family names.",
+    "bestFor": "Confirming a death and locating the cemetery/interment record for a named person, especially in the US.",
     "selectorsIn": [
-      "name"
+      "name",
+      "geolocation"
     ],
     "selectorsOut": [
-      "associate",
+      "name",
       "dob",
-      "name"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online library of cemetery transcriptions; no account or payment required to search.",
+    "opsec": "passive",
+    "opsecNote": "Passive read of a public genealogy archive. You are not contacting the subject or any live account, so nothing is disclosed to a target. Standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running single-sourced (not crowd-sourced) transcription project; records come from cemetery offices, churches and archives rather than volunteer edits, so entries are relatively reliable but coverage is patchy.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "interment.net",
+      "Interment.net Cemetery Records"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "burial-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/interment.md"
   },
   {
@@ -253335,46 +253395,55 @@
   {
     "id": "northdata-com",
     "name": "northdata.com",
-    "description": "OSINT tool: northdata.com.",
     "url": "https://www.northdata.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `name` or `employer-org` and want European company/officer records — returns director/shareholder names, registered addresses and corporate links.",
+    "bestFor": "Tracing a person through European trade registers — which companies they direct, own or share an address with.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web search exposes basic publicly-available register data (companies, officers, links); Power Search, network analytics and bulk/machine-readable data are subscription-based.",
+    "opsec": "passive",
+    "opsecNote": "Passive read of published trade-register and filings data; the subject is not contacted and receives no notification. No login is needed for basic search, so lookups are low-attribution.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Aggregates official European trade registers, gazettes, and patent/trademark registries; source-cited primary data rather than self-reported profiles.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "eu",
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "North Data",
+      "northdata European company search"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registers"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/northdata-com.md"
   },
   {
@@ -313627,29 +313696,33 @@
   {
     "id": "behance",
     "name": "Behance",
-    "description": "Social media platform showcasing creative work by artists",
     "url": "https://www.behance.net",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `name` or `username` of a creative professional and want their portfolio profile — returns a `social-profile` with work, location, employer and linked accounts.",
+    "bestFor": "Finding a designer/artist/photographer's portfolio profile and the identity details creatives publish alongside their work.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "employer-org",
+      "geolocation",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search profiles and projects; an Adobe account is only needed to appreciate/comment/follow, not to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public profiles is passive and anonymous while logged out. Following, appreciating or messaging requires an Adobe login and is visible to the target — stay logged out (or use a sock puppet) for read-only work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Owned and operated by Adobe; profiles are self-published by the creatives themselves, so identity claims are self-asserted but the platform itself is authentic.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -313658,14 +313731,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "behance.net",
+      "Adobe Behance"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "portfolio"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/behance.md"
   },
@@ -317734,45 +317811,51 @@
   },
   {
     "id": "en-wikipedia-org",
-    "name": "en.wikipedia.org",
-    "description": "OSINT tool: en.wikipedia.org.",
+    "name": "en.wikipedia.org (List of social networking websites)",
     "url": "https://en.wikipedia.org/wiki/List_of_social_networking_websites",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `username` or `name` and want an exhaustive checklist of social platforms to search — returns a reference list of networks (with focus/region) to pivot into.",
+    "bestFor": "A comprehensive, maintained reference list of social-networking sites to make sure you haven't missed a niche or regional platform.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free encyclopedia article; no account or payment. It is a reference list, not a search service.",
+    "opsec": "passive",
+    "opsecNote": "Reading a Wikipedia article is fully passive and anonymous; nothing about your target is disclosed. Attribution risk only arises later, when you visit the individual platforms it lists.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Wikipedia is community-edited but this list is well-referenced and actively maintained; treat it as a directory of platforms to check, not as data about any individual.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Wikipedia list of social networking websites",
+      "list of social networks"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "reference-list"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/en-wikipedia-org.md"
   },
   {
@@ -346522,13 +346605,13 @@
   {
     "id": "truthsocial-com",
     "name": "truthsocial.com",
-    "description": "OSINT tool: truthsocial.com.",
     "url": "https://truthsocial.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `username` or `name` and want to check for a Truth Social presence — returns a `social-profile` with posts, bio, and connected accounts.",
+    "bestFor": "Finding and reading a subject's Truth Social profile and posts, especially US right-leaning users absent from mainstream networks.",
     "selectorsIn": [
       "username",
       "name"
@@ -346537,29 +346620,39 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; reading most public profiles/posts works without an account, though some views and all interaction require free registration.",
+    "opsec": "active",
+    "opsecNote": "Logged-out browsing of public profiles is passive. Creating an account to see more or to follow/reply is active and can expose a sock-puppet identity; the platform requires registration (historically email/phone) and interactions are visible. Keep read-only and logged out where possible.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Trump Media & Technology Group; the platform is authentic (a Mastodon-derived network), though individual accounts may be impersonators or parody.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global",
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Truth Social",
+      "truthsocial"
+    ],
     "tags": [
       "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
+      "Right Wing Social Media Sites",
+      "alt-social"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/truthsocial-com.md"
   },
   {
@@ -373721,36 +373814,51 @@
   },
   {
     "id": "username-search-tool",
-    "name": "Username search tool",
-    "description": "OSINT tool: Username search tool.",
+    "name": "Username search tool (Aware Online)",
     "url": "https://www.aware-online.com/en/osint-tools/username-search-tool/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "description": "Use when you have a `username` and want a fast dashboard of search links across engines and people/username databases — returns pivot links to `social-profile`s and mentions.",
+    "bestFor": "One page that fans a username out to Google/Bing/Yandex plus username databases (KnowEm, PeekYou, UserSearch) as ready-made search links.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "email"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser tool; it only builds and opens search URLs on third-party services, so no account or payment on Aware Online itself.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Aware Online generates links client-side and does not itself query the target; attribution risk comes from the destination services you click through to (Google, Yandex, KnowEm). Use a sock-puppet browser when following the generated links.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by Aware Online, a reputable Dutch OSINT training provider; it is a link-builder, so the underlying results come from the third-party engines it points to.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Aware Online username search",
+      "aware-online username tool"
+    ],
+    "tags": [
+      "username-enumeration",
+      "osint-dashboard"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-tool.md"
   },
   {
