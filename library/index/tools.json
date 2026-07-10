@@ -103123,38 +103123,51 @@
   {
     "id": "email2phonenumber",
     "name": "email2phonenumber",
-    "description": "Tool to discover a target phone number from their email via password-reset leaks.",
+    "description": "Use when you have an `email` and want to recover the target's phone number by harvesting masked digits from services' password-reset flows — returns a reconstructed phone.",
     "url": "https://github.com/martinvigo/email2phonenumber",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Reconstructing a target's full phone number from the masked hints that websites' password-recovery flows reveal for a known email.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
       "phone"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open-source (Python). No paid tier; effectiveness depends on which services still leak masked digits for the email.",
+    "opsec": "active",
+    "opsecNote": "The tool triggers password-recovery flows on third-party services using the target's email to scrape masked phone digits. This can generate account-security notifications to the owner and leaves a footprint on those services. It is NOT passive — use only with authorisation, from a controlled environment, and expect it may alert the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known PoC by Martin Vigo demonstrating the masked-digit-harvesting technique; the concept is sound, but many services have since changed their reset flows/masking, so results are inconsistent.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "email2phonenumber",
+      "martinvigo/email2phonenumber"
+    ],
+    "tags": [
+      "email",
+      "phone-recovery",
+      "password-reset",
+      "cli"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/email2phonenumber.md"
   },
@@ -154300,45 +154313,52 @@
   },
   {
     "id": "preservetube-com",
-    "name": "preservetube.com",
-    "description": "OSINT tool: preservetube.com.",
+    "name": "PreserveTube",
+    "description": "Use when you have a YouTube video/channel (`social-profile`) and want to recover or archive it before/after deletion — returns the preserved video plus its title, description and metadata.",
     "url": "https://preservetube.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Archiving YouTube videos and channels so removed/deleted content stays viewable, and searching whether a given video/channel has already been preserved.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free service; no account. It stores video files and metadata for later retrieval.",
+    "opsec": "passive",
+    "opsecNote": "Requesting an archive or viewing a preserved copy is done through PreserveTube's servers; you don't contact the uploader, so it's passive toward the subject. Note that submitting a video to be archived is a public action on a third-party service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community video-preservation service; genuinely archives YouTube content, but it's a third-party host — coverage is limited to what's been submitted, and long-term availability isn't guaranteed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PreserveTube",
+      "preservetube.com"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "archive",
+      "deleted-content"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/preservetube-com.md"
   },
   {
@@ -155877,45 +155897,51 @@
   },
   {
     "id": "search-by-image-addons-mozilla-org",
-    "name": "search by image (addons.mozilla.org)",
-    "description": "OSINT tool: search by image (addons.mozilla.org).",
+    "name": "Search by Image (Firefox add-on)",
+    "description": "Use when you have an `image` and want to reverse-search it across 30+ engines from the browser — returns social-profile, face and other matches of where the picture appears.",
     "url": "https://addons.mozilla.org/en-GB/firefox/addon/search_by_image/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "One-click reverse image search of any picture across 30+ engines (Google, Bing, Yandex, TinEye, Baidu, etc.) via right-click in Firefox.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "face"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source browser extension; no account. The engines it dispatches to have their own free/paid tiers.",
+    "opsec": "passive",
+    "opsecNote": "The extension uploads the image to whichever third-party search engines you choose — so the picture leaves your machine to Google/Yandex/etc. That's inherent to reverse image search; use engines you trust, and avoid submitting images you must keep confidential. It does not contact the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Popular, Firefox-\"Recommended\", actively maintained open-source extension by Armin Sebastian (400k+ users); it's a dispatcher to established search engines, so result quality is theirs, not the extension's.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Search by Image",
+      "Armin Sebastian Search by Image"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "Reverse Image Searching",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/search-by-image-addons-mozilla-org.md"
   },
   {
@@ -176716,42 +176742,59 @@
   },
   {
     "id": "tosint",
-    "name": "Tosint",
-    "description": "Telegram bot reconnaissance and metadata extraction",
+    "name": "TOSINT",
+    "description": "Use when you have a Telegram bot token or a public group/channel and want to extract its metadata, admins and settings — returns social-profile, associate (admins) and metadata.",
     "url": "https://github.com/drego85/tosint",
     "category": "messaging",
     "path": [
       "messaging",
       "telegram"
     ],
-    "bestFor": "Telegram bot reconnaissance and metadata extraction",
-    "input": "Telegram bot usernames, links, or identifiers",
-    "output": "Extracted bot metadata, discovery artifacts, and investigation leads",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Telegram OSINT from the CLI — extracting bot identity, chat/channel metadata, admin lists and permissions from a bot token or public chat.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Python); no cost. You supply a bot token or a public chat identifier.",
     "opsec": "active",
-    "opsecNote": "Performs direct queries to Telegram services for target resolution and metadata retrieval.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "TOSINT queries Telegram's API directly (via a bot token) to resolve and enumerate the target chat, so the activity runs through a Telegram bot you control and touches the target chat's server side. Use a throwaway bot/account, and note that adding a bot to a group is visible to admins — prefer public metadata extraction over intrusive joins.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source Telegram-OSINT tool by Andrea Draghetti (drego85); source is inspectable and the project is maintained, but it's a community tool, not an official Telegram product.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Tosint",
+      "Telegram OSINT",
+      "drego85/tosint"
+    ],
+    "tags": [
+      "telegram",
+      "bot-recon",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram/tosint.md"
   },
   {
@@ -177575,38 +177618,52 @@
   },
   {
     "id": "whatsapp-checkleaked",
-    "name": "Whatsapp CheckLeaked",
-    "description": "OSINT tool: Whatsapp CheckLeaked.",
+    "name": "WhatsApp CheckLeaked (DP Viewer)",
+    "description": "Use when you have a `phone` number and want to confirm it's on WhatsApp and view its public profile photo and About — returns social-profile, image and account-type.",
     "url": "https://whatsapp.checkleaked.cc/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Checking whether a phone number has an active WhatsApp account and viewing its public profile picture, About/bio and business status without saving the contact.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "The basic profile-picture/About viewer is free; a paid API is offered for bulk/developer use. Not a breach-search tool (that's the separate checkleaked.cc).",
+    "opsec": "passive",
+    "opsecNote": "The lookup is done server-side by the service, so you don't add the number to your own contacts or message it — you stay off the target's radar. You are, however, submitting the target's number to a third party; use a number you're authorised to check and don't rely on the service storing it responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party WhatsApp profile viewer; effective, but WhatsApp policy changes mean profile-photo retrieval for personal accounts is no longer guaranteed, and it falls back to cached/third-party data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WhatsApp CheckLeaked",
+      "WhatsApp DP viewer",
+      "whatsapp.checkleaked.cc"
+    ],
     "tags": [
-      "whatsapp"
+      "whatsapp",
+      "phone",
+      "profile-viewer"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/whatsapp-checkleaked.md"
   },
   {
@@ -206173,47 +206230,55 @@
   },
   {
     "id": "interpol",
-    "name": "Interpol",
-    "description": "OSINT tool: Interpol.",
+    "name": "INTERPOL Notices",
+    "description": "Use when you have a `name` and want to check INTERPOL's public Red (wanted) and Yellow (missing persons) notices — returns name, dob, image, physical-description and notice document-id.",
     "url": "http://www.interpol.int",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Searching INTERPOL's public notices — Yellow Notices for missing persons and Red Notices for internationally wanted persons — by name/nationality.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "name",
+      "dob",
+      "image",
+      "physical-description",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search of the notices INTERPOL chooses to publish; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Searching the public notices database does not contact the subject — passive. The data is officially published by INTERPOL/member countries; standard web-server logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official INTERPOL website; published notices are authoritative, issued via member countries' law-enforcement — though only a subset of notices are made public.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Interpol",
+      "INTERPOL Red Notices",
+      "INTERPOL Yellow Notices"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "missing-persons",
+      "law-enforcement"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/interpol.md"
   },
   {
@@ -259551,47 +259616,55 @@
   },
   {
     "id": "saa-gov-uk",
-    "name": "saa.gov.uk",
-    "description": "OSINT tool: saa.gov.uk.",
+    "name": "Scottish Assessors (saa.gov.uk)",
+    "description": "Use when you have a Scottish `address` (or a commercial occupier `name`) and want council-tax band or valuation-roll details — returns address, occupier employer-org and property data.",
     "url": "https://www.saa.gov.uk",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up Scottish council-tax bands (by address) and the valuation roll (commercial property occupiers/proprietors) via the official Scottish Assessors portal.",
     "selectorsIn": [
-      "name",
       "address",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
       "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You query the official Scottish Assessors portal, not the subject — passive, over public property data. Standard web-server logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official portal of the Scottish Assessors Association (independent local-government assessors); council-tax bands and valuation-roll data are authoritative first-party records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Scottish Assessors",
+      "SAA",
+      "saa.gov.uk"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "scotland",
+      "council-tax"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/saa-gov-uk.md"
   },
   {
@@ -261508,46 +261581,52 @@
   {
     "id": "setlist-fm",
     "name": "setlist.fm",
-    "description": "OSINT tool: setlist.fm.",
+    "description": "Use when you have a performer/band `name` and want their concert history — dates, venues and cities — returns geolocation and address of gigs plus a timeline.",
     "url": "https://www.setlist.fm/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Tracing a musician's or band's tour history — where and when they performed (venues, cities, dates) via crowd-sourced setlists.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation",
+      "address",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free crowd-sourced database; no account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public setlists is passive toward the subject. Standard web-server logging by setlist.fm applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large, long-running crowd-sourced concert database (owned by Live Nation); data is fan-submitted, so dates/venues are usually accurate for notable acts but can be incomplete or wrong for obscure ones.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "setlist.fm",
+      "setlistfm"
+    ],
     "tags": [
-      "professionlicensing",
-      "Profession & Licensing Sites"
+      "music",
+      "concerts",
+      "tour-history",
+      "timeline"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/setlist-fm.md"
   },
   {
@@ -316414,36 +316493,54 @@
   },
   {
     "id": "facebook-email-reverse-lookup",
-    "name": "Facebook Email Reverse Lookup",
-    "description": "OSINT tool: Facebook Email Reverse Lookup.",
+    "name": "Facebook Email Reverse Lookup (technique)",
+    "description": "Use when you have an `email` and want to find the linked Facebook account — a technique using login/recovery and search, now heavily limited by privacy settings — returns a social-profile and name.",
     "url": "https://osint.support/chrome-extensions/2019/09/01/facebook-email-reverse-lookup.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Attempting to resolve an email address to a Facebook profile via the search bar and password-recovery flow — works only when the account allows lookup by email.",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free technique/guide; no tool to buy. The referenced 2019 Chrome extension approach is largely obsolete after Facebook removed bulk email search.",
+    "opsec": "active",
+    "opsecNote": "The password-recovery path touches Facebook's auth system for the target's email and, if pushed past the lookup step, can send a security alert to the account owner. Do the lookup only, from a sock-puppet Facebook account on a clean browser; never advance an actual reset.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community technique documented on osint.support (2019); Facebook has since closed most email-based discovery, so success is now the exception, gated by the target's privacy settings.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Facebook email lookup",
+      "FB reverse email"
+    ],
+    "tags": [
+      "facebook",
+      "email",
+      "reverse-lookup",
+      "technique"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-email-reverse-lookup.md"
   },
   {
@@ -348855,14 +348952,14 @@
   },
   {
     "id": "webasha-com",
-    "name": "webasha.com",
-    "description": "OSINT tool: webasha.com.",
+    "name": "WebAsha — Instagram OSINT Guide",
+    "description": "Use when you're investigating an Instagram account (`username`/`name`) and want a step-by-step methodology (Google dorking, reverse image, social lookup) — a guide returning social-profile and name leads.",
     "url": "https://www.webasha.com/blog/step-by-step-guide-to-performing-osint-on-your-instagram-account-how-to-search-analyze-and-protect-your-digital-footprint-using-google-dorking-reverse-image-search-and-social-media-lookup-tools",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A beginner-friendly walkthrough of Instagram OSINT — Google dorking, reverse image search, and social-media lookup tools — plus how to protect your own footprint.",
     "selectorsIn": [
       "username",
       "name"
@@ -348871,29 +348968,36 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public blog article; no account needed to read.",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. The techniques it describes range from passive (Google dorks, reverse image search) to active (logging in to view profiles); apply sock-puppet/anonymous-viewer practices when you act on them so you don't expose yourself to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Blog article from WebAsha, a cybersecurity-training vendor; a serviceable how-to guide rather than a vetted primary source — cross-check techniques against more authoritative OSINT references.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WebAsha Instagram OSINT"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "reference",
+      "methodology"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/webasha-com.md"
   },
   {
