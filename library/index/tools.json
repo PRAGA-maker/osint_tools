@@ -201097,13 +201097,13 @@
   {
     "id": "advancedbackgroundchecks",
     "name": "AdvancedBackgroundChecks",
-    "description": "Free people-search aggregator with relatives, phones and addresses.",
+    "description": "Use when you have a `name`, `phone`, or `address` and want a free US people lookup with relatives and address history — returns names, phones, addresses, and associates.",
     "url": "https://www.advancedbackgroundchecks.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Free people search by name, phone, or address with relatives and address history.",
+    "bestFor": "Free US people search by name, phone, or address with relatives and address history.",
     "selectorsIn": [
       "name",
       "phone",
@@ -201115,15 +201115,16 @@
       "address",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view core results (addresses, phones, relatives); upsells to paid partner reports for extras, but the free tier is genuinely usable.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public-records data broker; the subject is not notified. You disclose the searched selectors to the site. Not FCRA-permissible for employment/tenant/credit screening.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Free people-search broker in the same data family as TruePeopleSearch-style sites; convenient and free but broker data mixes similarly-named people and lags reality.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -201132,9 +201133,15 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "truepeoplesearch",
+      "fastpeoplesearch",
+      "beenverified-com"
+    ],
     "aliases": [
       "ABC",
-      "AdvBackground"
+      "AdvBackground",
+      "advancedbackgroundchecks.com"
     ],
     "tags": [
       "people-search",
@@ -201142,7 +201149,7 @@
       "relatives"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/advancedbackgroundchecks.md"
   },
@@ -202014,47 +202021,63 @@
   },
   {
     "id": "beenverified-com",
-    "name": "beenverified.com",
-    "description": "OSINT tool: beenverified.com.",
+    "name": "BeenVerified",
+    "description": "Use when you have a `name` (or phone/email/address) and want a consolidated US person report — returns address history, phone, email, relatives, and social-profile links behind a paywall.",
     "url": "https://www.beenverified.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Consolidated US background report (addresses, relatives, contacts) from a name or phone/email.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "email",
+      "address"
     ],
     "selectorsOut": [
       "address",
       "phone",
       "email",
       "social-profile",
-      "associate"
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching is free and shows a teaser (locations, relatives count), but viewing the full report requires a paid subscription (monthly membership, often with auto-renew).",
+    "opsec": "passive",
+    "opsecNote": "A commercial data-broker report; the subject is not notified. You disclose the searched selectors and your payment identity to the broker. Under US FCRA this data must NOT be used for employment, tenancy, or credit decisions.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Aggregated data-broker records (public records + marketing data); convenient but error-prone (mixed people, stale addresses). Not a consumer reporting agency.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "truepeoplesearch",
+      "advancedbackgroundchecks",
+      "spokeo"
+    ],
+    "aliases": [
+      "beenverified.com"
+    ],
     "tags": [
       "peoplesearch",
       "People Search Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/beenverified-com.md"
   },
   {
@@ -209794,47 +209817,62 @@
   },
   {
     "id": "peoplesmart-us",
-    "name": "PeopleSmart (US)",
-    "description": "OSINT tool: PeopleSmart (US).",
+    "name": "PeopleSmart",
+    "description": "Use when you have a `name`, `email`, `phone`, or LinkedIn (`social-profile`) and want a business/contact-data lookup — returns name, email, phone, employer-org, and address.",
     "url": "https://www.peoplesmart.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse contact lookup (email/phone/LinkedIn → person) via a B2B contact database.",
     "selectorsIn": [
-      "name"
+      "name",
+      "email",
+      "phone",
+      "social-profile"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
+      "name",
       "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "phone",
+      "employer-org",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Positioned as a B2B lead/contact database; searching may show teasers but revealing full contact details requires a paid plan/credits.",
+    "opsec": "passive",
+    "opsecNote": "A commercial contact-data broker; the subject is not notified. You disclose the searched selector and your account/payment to the vendor. The vendor states data may not be fully accurate and that it is not a consumer reporting agency (no FCRA uses).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Rebuilt as a B2B lead-generation service (distinct from the consumer PeopleSmart that closed in 2016); marketing/aggregated data with a self-declared accuracy disclaimer.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "rocketreach",
+      "beenverified-com"
+    ],
+    "aliases": [
+      "peoplesmart.com",
+      "PeopleSmart US"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "b2b-contact-data"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/peoplesmart-us.md"
   },
   {
@@ -212800,37 +212838,57 @@
   {
     "id": "uk-phone-book",
     "name": "UK Phone Book",
-    "description": "OSINT tool: UK Phone Book.",
+    "description": "Use when you have a `name` (+ UK area) or a landline `phone` and want a directory listing — returns address and phone, with reverse lookups behind a small paywall.",
     "url": "https://www.ukphonebook.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "UK landline directory lookup — name→address/number and reverse number→name/address.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic name/area searches return teaser results free; full address details and reverse-number lookups are pay-per-view or subscription (credits).",
+    "opsec": "passive",
+    "opsecNote": "Reads published UK directory and electoral-derived data; the subject is not notified. You disclose the searched name/number to the site.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running UK directory service (part of the 192.com/UKChanged data ecosystem); covers listed landlines and electoral-roll–derived entries, so mobile-only and opted-out people are missing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "192-com",
+      "infobel"
+    ],
+    "aliases": [
+      "ukphonebook.com"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "uk-directory"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/uk-phone-book.md"
   },
   {
@@ -256897,47 +256955,56 @@
   },
   {
     "id": "planningalerts-org-au",
-    "name": "planningalerts.org.au",
-    "description": "OSINT tool: planningalerts.org.au.",
+    "name": "PlanningAlerts (Australia)",
+    "description": "Use when you have an Australian `address`/area and want local development/planning applications — returns addresses, applicant details, and application descriptions.",
     "url": "https://www.planningalerts.org.au/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding planning/development applications tied to an Australian address or neighbourhood.",
     "selectorsIn": [
-      "name",
       "address",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public service run by the OpenAustralia Foundation (a non-profit); email alerts and an API are also free.",
+    "opsec": "passive",
+    "opsecNote": "Aggregates council-published planning notices; searching is anonymous and does not notify anyone. Applicant names in DAs are public record as councils publish them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the OpenAustralia Foundation; it republishes official local-council development-application data, so records are authoritative (subject to what each council publishes).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-maps",
+      "pappers-fr"
+    ],
+    "aliases": [
+      "planningalerts.org.au"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "australia"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/planningalerts-org-au.md"
   },
   {
@@ -257560,45 +257627,59 @@
   },
   {
     "id": "polk-court-records",
-    "name": "Polk Court Records",
-    "description": "OSINT tool: Polk Court Records.",
+    "name": "Polk County (FL) Court Records",
+    "description": "Use when you have a `name` and want to check Polk County, Florida court cases tied to them — returns case records, DOB, and case/document IDs.",
     "url": "https://pro.polkcountyclerk.net/pro/home/publiclogin",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Polk County (FL) Clerk of Court civil/criminal/family case records by name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public access to the Polk County Clerk records portal; some sensitive documents require a registered/higher-access login.",
+    "opsec": "passive",
+    "opsecNote": "Official county court-records search; anonymous public queries are not linked to the subject. A free public login may be required to view case details, and that account is attributable to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Polk County (Florida) Clerk of the Circuit Court — authoritative first-party court record, not a data broker.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "florida-courts",
+      "vinelink"
+    ],
+    "aliases": [
+      "Polk County Clerk records",
+      "pro.polkcountyclerk.net"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "florida"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/polk-court-records.md"
   },
   {
@@ -370810,41 +370891,53 @@
   {
     "id": "sherlock-2",
     "name": "Sherlock",
-    "description": "Mass username enumeration across 400+ sites",
+    "description": "Use when you have a `username` and want to enumerate that handle across 400+ sites at once — returns a list of social-profile URLs where the account exists.",
     "url": "https://github.com/sherlock-project/sherlock",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Mass username enumeration across 400+ sites",
-    "input": "Username(s)",
-    "output": "List of discovered profile URLs across social networks",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast, comprehensive CLI enumeration of one username across hundreds of sites.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (sherlock-project). No account or key.",
     "opsec": "active",
-    "opsecNote": "Directly queries each target site to check username existence; supports Tor/proxy for anonymity.",
+    "opsecNote": "Sherlock queries each target site directly from your machine to test whether the handle exists, so your IP touches every checked site. Route through Tor/proxy (built-in support) and avoid your attributable IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "The de-facto standard username enumerator — large, actively maintained open-source project. Some site checks false-positive/false-negative as sites change; verify each hit.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "maigret",
+      "name-checkr"
+    ],
+    "aliases": [
+      "sherlock-project"
+    ],
+    "tags": [
+      "username-search",
+      "account-enumeration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/sherlock-2.md"
   },
   {
