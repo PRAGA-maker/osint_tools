@@ -22760,13 +22760,13 @@
   {
     "id": "wayback-machine-2",
     "name": "Wayback Machine",
-    "description": "Browse historical snapshots of websites and deleted/changed pages.",
+    "description": "Use when you have a `domain`, `social-profile` or `username` URL and want to see historical snapshots — including deleted or changed pages — returns archived page content, prior profile states, and timestamps.",
     "url": "https://archive.org/web/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "Recovering deleted social posts, profiles or pages tied to a subject.",
+    "bestFor": "Recovering deleted social posts, profiles, or pages tied to a subject.",
     "selectorsIn": [
       "domain",
       "social-profile",
@@ -22777,15 +22777,16 @@
       "name",
       "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public service of the Internet Archive; no account needed to browse. A free account is only needed to submit \"Save Page Now\" captures.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive and covert toward the subject — you view an archived copy held by the Internet Archive, so the subject's live site is never touched and gets no visitor/log entry. Note that submitting a \"Save Page Now\" capture DOES fetch the live URL from Archive's servers (not yours), which can leave a hit in the target's logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Listed in Trace Labs awesome-osint (Documentation & Capture); Internet Archive.",
+    "trustNote": "Operated by the Internet Archive, a long-standing nonprofit; snapshots are authentic captures with reliable timestamps, widely accepted as evidence of what a page said at a point in time.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -22804,7 +22805,7 @@
       "deleted-content"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/archives-cache/wayback-machine-2.md"
   },
@@ -147862,44 +147863,49 @@
   {
     "id": "imageyoutube-com",
     "name": "imageyoutube.com",
-    "description": "OSINT tool: imageyoutube.com.",
+    "description": "Use when you have a YouTube video or channel `social-profile` URL and want to extract its full-resolution thumbnail, avatar, or banner `image` — returns downloadable images to feed into reverse-image and face search.",
     "url": "https://imageyoutube.com/?",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the highest-resolution thumbnail/avatar/banner off a YouTube channel or video to reverse-image search.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "100% free with no download limits and no account, per the site.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you paste a public YouTube URL and the tool fetches YouTube's own public image assets. Neither the channel owner nor YouTube ties the download to you. Save images and reverse-search them from a sock-puppet browser to keep the follow-on searches clean.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A free single-purpose downloader that simply pulls YouTube's public image CDN assets; low risk, but it is an anonymous third-party site — don't enter anything but the target URL.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "imageyoutube",
+      "YouTube image downloader"
+    ],
     "tags": [
       "profileimages",
-      "Profile Images"
+      "Profile Images",
+      "thumbnail-extraction"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/imageyoutube-com.md"
   },
   {
@@ -201138,46 +201144,50 @@
   {
     "id": "360username-com",
     "name": "360username.com",
-    "description": "OSINT tool: 360username.com.",
+    "description": "Use when you have a `username` and want to see which of 150+ social platforms and domain TLDs it is registered/taken on — returns a per-platform taken/available map with direct profile links.",
     "url": "https://360username.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-checking one handle across 150+ platforms at once to map a subject's account footprint.",
     "selectorsIn": [
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
       "social-profile",
-      "associate"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free, no account required; account creation is optional and adds nothing needed for lookups.",
+    "opsec": "passive",
+    "opsecNote": "Passive from the target's view — the tool probes each platform's public availability endpoint, not the subject. Note the checks originate from 360username's servers (or your browser), so no direct login to any target account occurs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A free handle/domain-availability checker aimed at brand/creator naming; results reflect availability endpoints, which can false-negative (rate-limited platforms show 'available' wrongly), so confirm hits by opening the profile.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "360username",
+      "360username.com"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "People Search Sites",
+      "username-enumeration"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/360username-com.md"
   },
   {
@@ -209904,35 +209914,52 @@
   {
     "id": "people-search-engine",
     "name": "People Search Engine",
-    "description": "OSINT tool: People Search Engine.",
+    "description": "Use when you have a `name` or `username` and want a Google-powered search pre-scoped to people-finder and social sites — returns web links and social-profile leads from a curated custom search engine.",
     "url": "https://cse.google.com/cse?cx=14db36e158cd791c0",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running a name/handle through a Google Custom Search Engine tuned to people-search and social sources in one query.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "domain"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free — it's a Google Custom Search Engine (CSE). No account; results are Google-backed but limited to the sites the CSE creator configured.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — a Google-backed search that never contacts the subject. Your query goes to Google (and is subject to Google logging/personalization); use a sock-puppet browser/logged-out session to reduce attribution and filter-bubble effects.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built Google Custom Search Engine; its usefulness depends entirely on an unknown creator's site list, which can drift or degrade over time and is not maintained by a vendor.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "People Search CSE",
+      "Google Custom Search people"
+    ],
+    "tags": [
+      "peoplesearch",
+      "custom-search-engine",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/people-search-engine.md"
   },
   {
@@ -211196,47 +211223,53 @@
   {
     "id": "rocketreach",
     "name": "RocketReach",
-    "description": "Search 700M professionals and 35M companies for contact info.",
+    "description": "Use when you have a `name` plus an `employer-org` (or a LinkedIn `social-profile`) and want that person's professional `email` and `phone` — returns verified work/personal emails, phone numbers, and social links.",
     "url": "https://rocketreach.co/person",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Finding professional contact details (email/phone) for a named person",
+    "bestFor": "Finding professional contact details (email/phone) for a named person tied to a company.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "employer-org",
+      "social-profile"
     ],
     "selectorsOut": [
       "email",
       "phone",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier is 5 lookups/month (personal + professional email, browser extension, no card). Phone numbers, exports and API require paid plans — Essentials ~$69/mo, Pro ~$119/mo (adds phones + CRM), Ultimate higher; a lookup credit is spent only when a contact is successfully revealed.",
+    "opsec": "active",
+    "opsecNote": "Semi-active — the subject is not contacted, but you must create an account and every lookup is tied to your identity/billing. RocketReach may email the person as part of its own \"contributor\" model. Use a dedicated investigative account, never your personal login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, established B2B contact-data vendor (700M+ profiles); data is aggregated and can be stale or wrong, so verify a revealed email/phone before acting on it.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "aliases": [
+      "rocketreach.co"
+    ],
     "tags": [
       "linkedin",
       "people-search",
       "contact-enrichment"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/rocketreach.md"
   },
@@ -218992,44 +219025,51 @@
   {
     "id": "receive-smss-com",
     "name": "receive-smss.com",
-    "description": "OSINT tool: receive-smss.com.",
+    "description": "Use when you have a `phone` number (or want to see who else uses a public disposable number) and want to read the public SMS inbox for that number — returns message content, sender IDs, and OTP/verification traffic.",
     "url": "https://receive-smss.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Reading the public inbox of a shared disposable/virtual number, and recognising when a target's number is actually a throwaway.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "phone",
+      "social-profile",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Fully free; no account, no payment, unlimited receiving on the shared public numbers.",
+    "opsec": "passive",
+    "opsecNote": "Passive with a caveat — reading the site leaks nothing to your target. But everything received on these numbers is PUBLIC. Never send a verification code to one of these numbers for an account you care about, and assume anyone can read anything sent to them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known free disposable-SMS site of the same family as receivesms.org / freephonenum.com; useful but operator-anonymous, so treat displayed numbers/messages as public and unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "receive-smss",
+      "Receive SMS Online"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "disposable-number"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/receive-smss-com.md"
   },
   {
@@ -246003,45 +246043,55 @@
   },
   {
     "id": "kansas",
-    "name": "Kansas",
-    "description": "OSINT tool: Kansas.",
+    "name": "Kansas (KASPER)",
+    "description": "Use when you have a `name` and want to check whether a subject is in the Kansas Department of Corrections population — returns offense history, supervision status, digital image, and KDOC ID.",
     "url": "https://kdocrepository.doc.ks.gov/kasper",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming Kansas DOC incarceration/supervision status and offense history for a named person.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "image",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official public records service operated by the Kansas Department of Corrections; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a state public-records repository, not the subject. The offender is not notified. Standard official-site logging applies; use a clean browser if you want to avoid attributing the query to yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "KASPER is the official public offender repository of the Kansas Department of Corrections — authoritative for KDOC-supervised persons, though it warns it is not a complete criminal-history source (consult KBI for that).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "KASPER",
+      "Kansas Adult Supervised Population Electronic Repository",
+      "Kansas Department of Corrections offender search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/kansas.md"
   },
   {
@@ -263856,44 +263906,54 @@
   {
     "id": "sex-offender-search",
     "name": "Sex Offender Search",
-    "description": "OSINT tool: Sex Offender Search.",
+    "description": "Use when you have a `name` and want to check US state sex-offender registries — returns registry listings with photo, offense, registered address, and DOB via a directory of all 50 states plus DC.",
     "url": "https://www.blackbookonline.info/usa-sex-offenders.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "One-stop directory into every US state sex-offender registry for a name/address check.",
     "selectorsIn": [
-      "name"
+      "name",
+      "address"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "address",
+      "image",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public-records portal; the state registries it links to are also free government sites. No account.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query public government registries, not the subject. Registrants are not notified of searches. The portal (Black Book Online) and each state site log traffic; use a clean browser if you want to avoid attributing the query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known free public-records aggregator (Black Book Online, by investigator Robert Scott) that links to official state registries; the portal is a directory, so trust the linked government registry, not the portal, as the source of truth.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Black Book Online sex offender search",
+      "blackbookonline.info"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "sex-offender-registry"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sex-offender-search.md"
   },
   {
@@ -265233,44 +265293,52 @@
   {
     "id": "state-and-county-jail-inmate-locators",
     "name": "State and County Jail Inmate Locators",
-    "description": "OSINT tool: State and County Jail Inmate Locators.",
+    "description": "Use when you have a `name` and want to check whether a subject is currently or was recently incarcerated in a US state prison or county jail — returns offense, facility, and biographical record hints.",
     "url": "https://inmatesplus.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a named person is incarcerated in a US state/county correctional facility.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The name search and basic hit list are free; some detail pages and background-report upsells route to paid third-party data brokers. Stay on the free official-record layer.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you are querying an aggregator's index, not contacting the subject or a facility. The subject is not notified. Use a clean browser if you want to avoid the site profiling your interest, but no account is required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial inmate-locator aggregator, not an official corrections agency. Treat any hit as a lead to confirm against the relevant state DOC or county sheriff's official roster.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "InmatesPlus",
+      "inmatesplus.com"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/state-and-county-jail-inmate-locators.md"
   },
   {
@@ -270184,46 +270252,53 @@
   {
     "id": "vat-search-co-uk",
     "name": "vat-search.co.uk",
-    "description": "OSINT tool: vat-search.co.uk.",
+    "description": "Use when you have an `employer-org` name or a VAT number and want to verify it and pull the registered business details — returns company name, registered address, and VAT status across 90+ countries.",
     "url": "https://vat-search.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a VAT number and resolving it to a registered company name and address.",
     "selectorsIn": [
+      "employer-org",
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic VAT number lookup/verification is free to use; bulk lookups, API access, and advanced features are paid (the site has pricing tiers and a login). Author against the free single-lookup layer.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a VAT-registry aggregator (backed by official VIES/HMRC data), not the business owner. The subject is not notified. A login is only needed for paid/bulk use; single lookups need none.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial VAT-verification aggregator (600+ enterprise clients) that sits on top of official EU VIES / national VAT databases; the underlying registry data is authoritative, the aggregation layer is third-party.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "vat-search.co.uk",
+      "VAT Search"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "vat-lookup"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/vat-search-co-uk.md"
   },
   {
@@ -308866,43 +308941,52 @@
   {
     "id": "webcrawler-com",
     "name": "webcrawler.com",
-    "description": "OSINT tool: webcrawler.com.",
+    "description": "Use when you have a `name` or other search string and want blended results from several major search engines at once — returns web links and social-profile leads deduped across providers.",
     "url": "https://www.webcrawler.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A quick metasearch pass that blends Google/Yahoo-style results so a name isn't missed by a single engine's ranking.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "name",
-      "social-profile"
+      "social-profile",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free ad-supported metasearch; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive — a normal web search that never contacts the subject. Your query does go to the metasearch operator (System1's InfoSpace family) and downstream engines; use a sock-puppet browser/IP if you want query attribution hidden.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running metasearch front-end (InfoSpace/System1 family, alongside Dogpile and MetaCrawler); reputable as an aggregator but the ranking is opaque and ad-heavy.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WebCrawler",
+      "webcrawler.com"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "metasearch"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/webcrawler-com.md"
   },
   {
@@ -370219,13 +370303,13 @@
   {
     "id": "gaddr",
     "name": "Gaddr",
-    "description": "OSINT tool: Gaddr.",
+    "description": "Use when you have a `username` and want to find every social platform where that handle is registered, aggregated under one profile view — returns linked social profiles and name/identity hints.",
     "url": "https://gaddr.me",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregating one handle's presence across many social platforms into a single account map.",
     "selectorsIn": [
       "username"
     ],
@@ -370233,28 +370317,35 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Historically free to check a handle; advanced/aggregated features may sit behind an account or paid tier. At last check the site was intermittently unavailable (HTTP 503), so availability is not guaranteed.",
+    "opsec": "passive",
+    "opsecNote": "Passive — it queries platforms' public presence for a handle, not the subject directly. As with any hosted aggregator, your query is processed on the operator's servers; use a sock-puppet browser and don't log in with a real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A username-aggregation service recommended across several curated OSINT source lists (MetaOSINT cites 4), but operator identity is thin and the site has shown uptime issues — corroborate every hit.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "gaddr.me"
+    ],
     "tags": [
-      "username"
+      "username",
+      "username-enumeration",
+      "social-aggregation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/gaddr.md"
   },
   {
