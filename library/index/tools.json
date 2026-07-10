@@ -157513,30 +157513,30 @@
   {
     "id": "stolen-camera-finder",
     "name": "Stolen Camera Finder",
-    "description": "Uses the serial number stored in photos to search the web for photos taken with the same camera",
+    "description": "Use when you have a photo with EXIF and want other photos taken by the same camera — returns other `image`s and the `social-profile`s/pages where they appear, matched on camera serial number.",
     "url": "https://www.stolencamerafinder.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding other photos on the web taken with the same physical camera, by matching the serial number embedded in a photo's EXIF.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic search using common EXIF serial tags; a Pro tier unlocks extra metadata fields (body/lens serial, image unique ID, copyright).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload/point at a photo whose EXIF is read for the serial; the search hits an index, not the target. It reveals no info to the photo's owner. For sensitive images, note you're handing the file/metadata to a third-party service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-standing niche tool relying on cameras writing a serial number into EXIF (many phones/cameras don't) and on a limited crawl index; coverage is narrow, so absence of results is common.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -157545,14 +157545,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "stolencamerafinder.com",
+      "camera serial search"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
+      "image-analysis",
+      "exif",
+      "reverse-image",
+      "camera-serial"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/stolen-camera-finder.md"
   },
@@ -201373,37 +201377,57 @@
   {
     "id": "apollo-io",
     "name": "Apollo.io",
-    "description": "OSINT tool: Apollo.io.",
+    "description": "Use when you have a `name`, company or `domain` and want a person's work contact details — returns business `email`, `phone`, `employer-org`, title and LinkedIn (`social-profile`).",
     "url": "https://www.apollo.io/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "B2B contact enrichment — resolving a professional's work email, phone, employer, and LinkedIn from a name + company, backed by a large sales-intelligence database.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "phone",
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium sales-intelligence platform — a free plan gives limited monthly credits to reveal emails/phones; higher volume and phone numbers need paid tiers. Requires account signup.",
+    "opsec": "passive",
+    "opsecNote": "You query Apollo's aggregated B2B database, not the target — no notification reaches them. But you disclose the subject to a commercial vendor and, on signup, Apollo may scrape your own contacts if you connect email. Use a clean investigative account and don't grant contact access.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Large, reputable sales-intelligence vendor; data is aggregated from public/third-party sources and crowd-contributed, so contact details can be outdated or wrong — verify before use.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Apollo",
+      "apollo.io"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "people-search",
+      "b2b",
+      "enrichment"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/apollo-io.md"
   },
   {
@@ -204515,46 +204539,51 @@
   {
     "id": "forebears",
     "name": "Forebears",
-    "description": "OSINT tool: Forebears.",
+    "description": "Use when you have a surname/given `name` and want its geographic distribution and origin — returns where the name is common (`geolocation`) and ethnic/family origin clues (`associate`), NOT personal contact data.",
     "url": "http://forebears.io",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Surname and given-name analytics — incidence maps, country/region distribution, and origin/meaning of a name, to infer likely nationality/ethnicity of a subject.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "geolocation",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search name statistics and distribution maps. It is a names/demographics resource, not a paid people-search — no personal records behind a paywall here.",
+    "opsec": "passive",
+    "opsecNote": "You query aggregate name statistics, not an individual — nothing identifies or notifies any specific person. Fully passive; no OpSec risk beyond normal web browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, well-known names database (30M+ given names, 31M+ surnames) built from public census/registry statistics. Distribution figures are estimates aggregated from national data, so treat them as indicative, not exact.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "forebears.io",
+      "surname distribution"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "genealogy",
+      "surname",
+      "demographics"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/forebears.md"
   },
   {
@@ -208243,48 +208272,53 @@
   },
   {
     "id": "ofac-specially-designated-nationals-search-united-states",
-    "name": "OFAC Specially Designated Nationals Search (United States)",
-    "description": "People-related search of the US Department of the Treasurys Specially Designated Nationals database",
+    "name": "OFAC Sanctions List Search (SDN)",
+    "description": "Use when you have a `name` and want to check the US Treasury sanctions/SDN list — returns match with aliases, `address`es, `dob`, and linked entities (`associate`).",
     "url": "http://sdnsearch.ofac.treas.gov",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Screening a person or entity against the US Treasury OFAC Specially Designated Nationals and consolidated sanctions lists — with fuzzy name matching and rich identifiers.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
       "address",
-      "phone",
-      "associate"
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official US government tool; no account. (The current endpoint is sanctionssearch.ofac.treas.gov; the older sdnsearch host redirects there.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the public sanctions list does not notify anyone and is a routine compliance action. It's a US government site — use a puppet browser/IP if you don't want the query tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the US Department of the Treasury's Office of Foreign Assets Control — the authoritative source for US sanctions designations.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OFAC SDN search",
+      "Sanctions List Search",
+      "sanctionssearch.ofac.treas.gov"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "people-search"
+      "sanctions",
+      "people-search",
+      "compliance",
+      "watchlist"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/ofac-specially-designated-nationals-search-united-states.md"
   },
@@ -210790,16 +210824,18 @@
   },
   {
     "id": "skopenow-com",
-    "name": "skopenow.com",
-    "description": "OSINT tool: skopenow.com.",
+    "name": "Skopenow",
+    "description": "Use when you have a `name` (or email/phone) and want an automated OSINT dossier on a person — returns `address`, `phone`, `email`, `social-profile`s and `associate`s in one report. Paid/vetted access.",
     "url": "https://www.skopenow.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Automated, analyst-grade OSINT reports that aggregate a subject's social media, contact info, addresses, and connections — used by investigators, insurers, and law enforcement.",
     "selectorsIn": [
-      "name"
+      "name",
+      "email",
+      "phone"
     ],
     "selectorsOut": [
       "address",
@@ -210808,29 +210844,41 @@
       "social-profile",
       "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Enterprise/paid platform — access requires a vetted business account and subscription (no open free tier for the public). Author it accurately as paid; there is no anonymous public lookup.",
+    "opsec": "passive",
+    "opsecNote": "Skopenow assembles public data without alerting the subject, but access is gated to approved organizations and every search is tied to your vetted account and logged for compliance/audit. Use only within an authorized, lawful engagement.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established commercial OSINT/investigations vendor. It aggregates third-party and social data, so reports can contain stale or mismatched records — an analyst must verify, and the platform gates access for compliance reasons.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": true,
+    "aliases": [
+      "Skopenow",
+      "skopenow.com"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "people-search",
+      "investigations",
+      "dossier"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/skopenow-com.md"
   },
   {
@@ -327287,45 +327335,56 @@
   },
   {
     "id": "kaspr-io",
-    "name": "kaspr.io",
-    "description": "OSINT tool: kaspr.io.",
+    "name": "Kaspr",
+    "description": "Use when you have a LinkedIn profile (`social-profile`)/`name` and want that person's direct contact details — returns `email`, `phone` and `employer-org` via a browser extension over LinkedIn. Paid/freemium.",
     "url": "https://www.kaspr.io",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting a professional's email and (mobile) phone number directly from their LinkedIn profile via a Chrome extension, backed by a B2B contact database.",
     "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "selectorsOut": [
+      "email",
+      "phone",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — a limited free credit allowance to reveal contacts, with paid plans for volume (especially phone numbers). Requires account signup and (for the main workflow) a LinkedIn login plus the browser extension.",
+    "opsec": "active",
+    "opsecNote": "The core workflow runs a browser extension while you view the target's LinkedIn as a logged-in user — LinkedIn can see the profile visit and may flag scraping-like automation. Use a sock-puppet LinkedIn account and a clean profile, never your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A commercial LinkedIn-prospecting/contact-enrichment vendor. Contact data is aggregated/crowd-sourced, so emails and especially mobile numbers can be wrong or outdated — verify before use.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "kaspr.io",
+      "Kaspr LinkedIn"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "contact-enrichment",
+      "social-networks",
+      "b2b"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/kaspr-io.md"
   },
   {
@@ -330042,41 +330101,52 @@
   {
     "id": "myspace",
     "name": "Myspace",
-    "description": "Searching for archived Myspace profiles and historical social media data",
+    "description": "Use when you have a `name` or `username` (often music/2000s-era) and want an old Myspace profile — returns `social-profile`, photos and social connections from active and legacy accounts.",
     "url": "https://myspace.com/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Searching for archived Myspace profiles and historical social media data",
-    "input": "Username or artist name",
-    "output": "User profiles, music collections, photos, and social connections from active and archived accounts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Recovering legacy 2000s-era social presence — old Myspace profiles can carry real names, photos, hometowns, friends, and music tastes long predating a subject's current footprint.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; a free account gives fuller access but public profiles are viewable without one.",
     "opsec": "passive",
-    "opsecNote": "Queries Myspace's public search; profile views are not tracked or visible to users.",
+    "opsecNote": "Browsing public Myspace profiles is passive and not shown to the profile owner. If you log in to see more, use a sock-puppet account. Note Myspace's 2019 server migration destroyed much pre-2016 uploaded media.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A genuine, still-operating platform, now a shadow of its peak. Surviving profiles are authentic but data is patchy after the 2019 media loss; treat gaps as loss, not absence.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "MySpace",
+      "myspace.com"
+    ],
+    "tags": [
+      "social-networks",
+      "legacy",
+      "historical"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/myspace.md"
   },
   {
@@ -339682,45 +339752,54 @@
   },
   {
     "id": "sotwe-com",
-    "name": "sotwe.com",
-    "description": "OSINT tool: sotwe.com.",
+    "name": "Sotwe",
+    "description": "Use when you have a Twitter/X `username` and want to read their tweets without an X login — returns `social-profile` timeline content, though access is frequently blocked.",
     "url": "https://www.sotwe.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing a public Twitter/X account's tweets and media without logging into X — a Nitter-style front-end/archive, when it isn't rate-limited or blocked.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, no account. But it depends on scraping X, which X actively fights — availability is intermittent and it often shows CAPTCHAs, partial timelines, or blocks.",
+    "opsec": "passive",
+    "opsecNote": "You read via Sotwe's servers instead of your own X session, so you don't touch the target's account or reveal your identity to X. Sotwe (a third party) can log your queries — use a puppet IP for sensitive work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party X viewer/archive whose data comes from scraping X. Coverage is partial and often stale or truncated because X throttles such tools; treat what you see as a possibly-incomplete snapshot.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sotwe.com",
+      "Nitter alternative"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "twitter",
+      "social-networks",
+      "alternative-frontend"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/sotwe-com.md"
   },
   {
@@ -367637,13 +367716,13 @@
   {
     "id": "gosearch",
     "name": "GoSearch",
-    "description": "Search anyone's digital footprint across 300+ websites by username.",
+    "description": "Use when you have a `username` and want fast enumeration across 300+ sites plus breach/infostealer hits — returns `social-profile` links and exposure signals.",
     "url": "https://github.com/ibnaleem/gosearch",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Fast username enumeration with breach/HudsonRock integration",
+    "bestFor": "Fast CLI username enumeration across 300+ sites with integrated HudsonRock infostealer and breach-directory checks — a quicker Sherlock with exposure data.",
     "selectorsIn": [
       "username"
     ],
@@ -367651,15 +367730,16 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Go). Install via `go install` or a release binary; no account. Breach/HudsonRock lookups use public/free endpoints.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Enumeration probes target sites for profile existence from YOUR IP — high-volume automated requests can be logged by those sites and by any breach API used. Run from a VPN/puppet network; the target is not directly notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Fast Go-based username searcher (3.4k stars); active community project.",
+    "trustNote": "Active open-source project (ibnaleem/gosearch, thousands of stars). Like all URL-enumeration tools it produces false positives; each hit needs manual confirmation.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -367678,7 +367758,7 @@
       "breach-check"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/gosearch.md"
   },
@@ -369698,13 +369778,13 @@
   {
     "id": "socid-extractor",
     "name": "socid-extractor",
-    "description": "Extracts structured account data (IDs, names, bios) from profile URLs across 150+ sites.",
+    "description": "Use when you have a profile URL (`social-profile`) and want the hidden account data behind it — returns internal user IDs (`device-id`), `username`, `name`, linked `email` and registration `metadata-exif`.",
     "url": "https://github.com/soxoj/socid-extractor",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Pulling hidden account IDs and metadata from a known profile URL",
+    "bestFor": "Pulling hidden structured fields (internal user IDs, real names, registration dates, linked emails) from a known profile page across 150+ sites — the pivot engine behind Maigret.",
     "selectorsIn": [
       "social-profile"
     ],
@@ -369713,18 +369793,18 @@
       "name",
       "email",
       "device-id",
-      "metadata-exif",
-      "dob"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Python). `pip install socid-extractor`; no account or key.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It fetches the profile page you point it at, from YOUR IP — a normal page view, but done by a script. Nothing is sent to the profile owner. For sensitive targets, fetch via a puppet/VPN and avoid authenticated endpoints.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "python-lib",
     "trust": "trusted",
-    "trustNote": "By soxoj (Maigret author); the extraction engine behind Maigret (1k stars).",
+    "trustNote": "By soxoj, author of Maigret; socid-extractor is Maigret's extraction engine. Widely used and reliable, though individual site parsers break when sites change their markup.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -369743,7 +369823,7 @@
       "python"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/socid-extractor.md"
   },
