@@ -143245,46 +143245,47 @@
   {
     "id": "find-any-film",
     "name": "Find Any Film",
-    "description": "Multi-media search engine focusing on videos related to movies and TV shows",
+    "description": "Use when you have a film or TV title and want to confirm it exists and find where it can legally be watched in the UK — returns release metadata and streaming/retail availability.",
     "url": "http://www.findanyfilm.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a film/TV title is real and locating legitimate UK viewing sources; low direct value for people-finding.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name"
     ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free UK film-industry service (run by the Industry Trust for IP Awareness); no account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only catalogue search that has nothing to do with the subject. No selector about the target is submitted, so there is no leakage risk.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Legitimate UK industry-funded service, but it is a film-availability directory — not a person, image, or reverse-media search tool despite the category it was harvested into.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "FindAnyFilm"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/find-any-film.md"
   },
@@ -169172,48 +169173,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/messaging/create-spoof-fake-text-sms-messages.md"
-  },
-  {
-    "id": "create-spoof-fake-twitter-direct-messenger-site",
-    "name": "Create Spoof / Fake Twitter Direct Messenger Site",
-    "description": "OSINT tool: Create Spoof / Fake Twitter Direct Messenger Site.",
-    "url": "https://www.prankmenot.com/?twitter_message",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "messengerapps",
-      "Messenger Apps"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/create-spoof-fake-twitter-direct-messenger-site.md"
   },
   {
     "id": "create-spoof-fake-twitter-post",
@@ -208388,31 +208347,30 @@
   {
     "id": "peep-mail-search-tool",
     "name": "Peep Mail Search Tool",
-    "description": "People-related search using name and domain",
+    "description": "Use when you have a person's `name` and their employer's `domain` and want a best-guess corporate `email` address — returns a likely email pattern to test.",
     "url": "http://samy.pl/peepmail/elift.cgi",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Guessing a likely work email address from a full name plus a company domain.",
     "selectorsIn": [
-      "name"
+      "name",
+      "domain"
     ],
     "selectorsOut": [
-      "social-profile",
-      "address",
-      "phone",
-      "associate"
+      "email"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free legacy web tool by security researcher Samy Kamkar; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The guess itself is generated client/server-side and does not contact the subject. But the *next* step — verifying a guessed address by sending mail or running it through a validator — can be active and may alert the target's mail admin. Stop at the candidate address unless you validate it passively.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by a well-known security researcher (Samy Kamkar), but it is an old project page; the underlying CGI is not reliably maintained, so treat output as a heuristic guess only.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -208421,14 +208379,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "mailcat"
+    ],
+    "aliases": [
+      "PeepMail",
+      "Samy PeepMail"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "email-permutation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/peep-mail-search-tool.md"
   },
@@ -220702,46 +220668,56 @@
   {
     "id": "ama-assn-org",
     "name": "ama-assn.org",
-    "description": "OSINT tool: ama-assn.org.",
+    "description": "Use when you have a physician `name` and a US city/state/ZIP and want to verify they are a real, licensed doctor — returns specialty, practice location and credentialing details.",
     "url": "https://find-doctor.ama-assn.org/#",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that a named person is a real US physician and pinning down their specialty and practice location.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory operated by the American Medical Association; a free account/sign-in may be prompted for full result detail but basic lookup is open.",
+    "opsec": "passive",
+    "opsecNote": "Read-only lookup against the AMA's public physician directory. You are not contacting the subject; the AMA cannot tie a search to the person searched-for. Still, use a clean browser session if you create an account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the American Medical Association (AMA), the primary US physician professional body — the authoritative source for \"is this person actually an MD\".",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "thentiacloud-net"
+    ],
+    "aliases": [
+      "AMA Find a Doctor",
+      "AMA DoctorFinder"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ama-assn-org.md"
   },
   {
@@ -224701,13 +224677,13 @@
   {
     "id": "california",
     "name": "California",
-    "description": "OSINT tool: California.",
+    "description": "Use when you have a `name` or CDCR number and want to locate a person in California state prison custody — returns current incarceration status, facility, age and CDCR ID.",
     "url": "https://inmatelocator.cdcr.ca.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a named person is (or was) in California state prison and where they are held.",
     "selectorsIn": [
       "name"
     ],
@@ -224716,29 +224692,43 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free official state service; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Read-only search of the state's public inmate database. You submit only a name/ID; the subject is not notified and CDCR does not tie the query to the searcher. Use a clean session for hygiene.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the California Department of Corrections and Rehabilitation (CDCR) — the authoritative source for California state-prison custody status.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "indiana-offender-database-search",
+      "sex-offender-us"
+    ],
+    "aliases": [
+      "CDCR Inmate Locator",
+      "California inmate locator"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/california.md"
   },
   {
@@ -225290,35 +225280,56 @@
   {
     "id": "cancelthesefunerals-com",
     "name": "Cancelthesefunerals.com",
-    "description": "OSINT tool: Cancelthesefunerals.com.",
+    "description": "Use when you have a `name` and want to check whether a person appears in the US Social Security Death Master File — returns death record fields (dob, date of death, last-residence ZIP, partial SSN).",
     "url": "http://cancelthesefunerals.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking a name against a public copy of the Social Security Death Master File to confirm (or rule out) a US death record.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "dob",
+      "address",
+      "document-id"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free public-interest project; no account or payment. The site is intermittently reachable and its data is a historical DMF copy, not a live feed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only search of a static death-index copy hosted by a third party. You submit only a name; nothing is sent to the subject. As with any third-party mirror, assume the operator can log queries — use a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A single-operator activist project (created by Tom Alciere) republishing the government Death Master File; the underlying DMF is authoritative but this mirror is unofficial, possibly stale, and known to be flaky.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "sortedbybirthdate",
+      "legacy-com"
+    ],
+    "aliases": [
+      "Cancel These Funerals",
+      "Death Master File mirror",
+      "DMF lookup"
+    ],
+    "tags": [
+      "death-records",
+      "vital-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cancelthesefunerals-com.md"
   },
   {
@@ -258840,46 +258851,52 @@
   {
     "id": "royalmail-com",
     "name": "royalmail.com",
-    "description": "OSINT tool: royalmail.com.",
+    "description": "Use when you have a UK `address` fragment or postcode and want to resolve the full, canonical postal address (or the postcode for an address) — returns the authoritative PAF® `address`.",
     "url": "https://www.royalmail.com/postcode-finder",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving/normalising a UK address against the official Postcode Address File (postcode ↔ full address).",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public postcode/address lookup from Royal Mail; free tier is limited to a modest number of lookups before it prompts for a paid PAF® product.",
+    "opsec": "passive",
+    "opsecNote": "A directory read against Royal Mail's address file. You submit an address/postcode, not anything identifying about your subject beyond where they may live; Royal Mail cannot tie the query to a person. Use a clean session if doing many lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Royal Mail using the official Postcode Address File (PAF®), regulated by Ofcom — the authoritative source of truth for UK postal addresses.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "zoopla-co-uk"
+    ],
+    "aliases": [
+      "Royal Mail Postcode Finder",
+      "PAF lookup"
+    ],
     "tags": [
       "propertysites",
       "Property Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/royalmail-com.md"
   },
   {
@@ -311331,41 +311348,61 @@
   {
     "id": "blackplanet-com-member-find",
     "name": "BlackPlanet.com - Member Find",
-    "description": "Finding BlackPlanet user profiles by username or criteria",
+    "description": "Use when you have a `username` or `name` and want to find a profile on BlackPlanet, a large African-American social network — returns a `social-profile` with photos, location and connections.",
     "url": "https://www.blackplanet.com/user_search/index.html",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Finding BlackPlanet user profiles by username or criteria",
-    "input": "Username, email, or profile search criteria",
-    "output": "User profiles, profile metadata, photos, and social connections",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding a BlackPlanet member profile for a subject active in the African-American online community.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Uses BlackPlanet's public member search; no authentication required and searches are anonymous.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "100% free to search, message and view profiles; a free account/login is required to run member search and see full results.",
+    "opsec": "active",
+    "opsecNote": "Member search and profile viewing generally require being logged in, so you act from an account and viewing may register as a \"hit\"/visitor on the target's profile. Use a sock-puppet account; never message or interact with the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A genuine, long-running niche social network (20M+ members); all profile data is user-supplied and unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us",
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "peekyou",
+      "webmii"
+    ],
+    "aliases": [
+      "BlackPlanet",
+      "BlackPlanet member search"
+    ],
+    "tags": [
+      "gsocialmedia",
+      "General Social Media Sites"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/blackplanet-com-member-find.md"
   },
   {
@@ -323109,44 +323146,57 @@
   {
     "id": "hi5-com",
     "name": "hi5.com",
-    "description": "OSINT tool: hi5.com.",
+    "description": "Use when you have a `username` or `name` and want to find a profile on hi5, a legacy global social network still operated by The Meet Group — returns a `social-profile` with photos and bio.",
     "url": "https://hi5.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding an old or still-active hi5 profile for a subject who used the network in the late-2000s or across Latin America/Asia.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to join and search; a free account/login is required to run member search and view most profiles.",
+    "opsec": "active",
+    "opsecNote": "Member search and profile viewing require being logged in, so you act from an account. Viewing a profile can register a \"visitor\" on some settings, and messaging is intrusive. Use a sock-puppet account, never your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, long-running consumer social network (now part of The Meet Group / ParshipMeet); user-supplied profile data, so treat content as unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "peekyou",
+      "webmii"
+    ],
+    "aliases": [
+      "hi5"
+    ],
     "tags": [
       "gsocialmedia",
       "General Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/hi5-com.md"
   },
   {
@@ -330090,44 +330140,53 @@
   {
     "id": "ollie-boyd-github-io",
     "name": "ollie-boyd.github.io",
-    "description": "OSINT tool: ollie-boyd.github.io.",
+    "description": "Use when you have a LinkedIn post/activity URL and want the exact time it was published — returns the precise creation timestamp (local + UTC) decoded from the post ID.",
     "url": "https://ollie-boyd.github.io/Linkedin-post-timestamp-extractor/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering the exact publication timestamp of a LinkedIn post from its URL/activity ID.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free client-side static web tool hosted on GitHub Pages; no account, no API key.",
+    "opsec": "passive",
+    "opsecNote": "The timestamp is decoded locally in your browser from the numeric post ID embedded in the URL — nothing is sent to LinkedIn and the post owner is not notified. You only need the URL, which you can copy without visiting/interacting with the post while logged in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open, single-purpose community tool that decodes the timestamp deterministically from the LinkedIn snowflake-style ID; verifiable and low-risk, but community-maintained.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "thread-reader"
+    ],
+    "aliases": [
+      "LinkedIn Post Timestamp Extractor"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "timestamp",
+      "metadata"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ollie-boyd-github-io.md"
   },
   {
