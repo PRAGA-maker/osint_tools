@@ -158346,44 +158346,49 @@
   {
     "id": "tineye",
     "name": "TinEye",
-    "description": "Reverse-image search engine best for tracking an image's origin and modifications over time.",
+    "description": "Use when you have an `image` and want its provenance — returns exact and modified copies across the web, ranked so you can find the earliest/original appearance.",
     "url": "http://www.tineye.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Reverse image search specializing in finding exact copies and the earliest appearance of an image.",
+    "bestFor": "Reverse image search specialised in exact/near-duplicate matching and finding an image's earliest appearance.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "image"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web search with generous limits; paid API/commercial plans for bulk/automated use. No account needed for the web tool.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload an image (or URL) to TinEye, which matches it against its own crawled index — the subject is not contacted. The uploaded image is sent to a third party; avoid submitting sensitive images you must keep private. Use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-established, reputable reverse-image engine (Idée Inc.) with its own crawler; strong for exact/edited-copy matching and provenance, though its index differs from Google/Yandex and it does not do facial recognition.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TinEye",
+      "tineye.com"
+    ],
     "tags": [
       "reverse-image",
       "image",
       "provenance"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/tineye.md"
   },
@@ -208284,41 +208289,53 @@
   {
     "id": "peekyou",
     "name": "PeekYou",
-    "description": "Finding social media profiles and web presence by name",
+    "description": "Use when you have a `name` or `username` and want their web/social footprint — returns aggregated social profiles, usernames and public web presence tied to that person.",
     "url": "https://www.peekyou.com/",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Finding social media profiles and web presence by name",
-    "input": "Name and optional location, or username",
-    "output": "Aggregated social media profiles, contact information, web presence",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Aggregating a person's social profiles and web presence from a name or username.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "name"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free to search and see aggregated profiles/links; deeper contact/background reports route to paid partner brokers.",
     "opsec": "passive",
-    "opsecNote": "No registration required; all searches use public data.",
+    "opsecNote": "PeekYou aggregates public web/social data — the subject is not contacted and nothing is posted. You disclose the searched name/handle to PeekYou; use a sock-puppet browser. Some \"full report\" links hand off to commercial data brokers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running US-focused people aggregator that links names to social profiles; convenient, but a third-party scraper whose matches (and any broker upsell data) need verification.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "PeekYou",
+      "peekyou.com"
+    ],
+    "tags": [
+      "people-search",
+      "social-aggregator",
+      "web-footprint"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/peekyou.md"
   },
   {
@@ -214205,40 +214222,55 @@
   {
     "id": "family-tree-now",
     "name": "Family Tree Now",
-    "description": "Phone-to-person and household/relative pivoting",
-    "url": "https://www.familytreenow.com/search/genealogy/results?phoneno=(555)555-5555",
+    "description": "Use when you have a `phone`, `name` or `address` and want free US household and relative links — returns person records, addresses, ages and likely relatives/associates.",
+    "url": "https://www.familytreenow.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Phone-to-person and household/relative pivoting",
-    "input": "Phone number",
-    "output": "Possible person records, addresses, and relationship links",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free US people/genealogy search that maps a name/phone/address to addresses, ages and probable relatives.",
+    "selectorsIn": [
+      "phone",
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "associate",
+      "name",
+      "dob"
+    ],
     "status": "live",
-    "pricing": "freemium",
+    "pricing": "free",
+    "costNote": "Genuinely free — no paywall on core records (name/age, address history, relatives). No account needed to search.",
     "opsec": "passive",
-    "opsecNote": "Search is platform-mediated and generally does not involve direct interaction with targets.",
+    "opsecNote": "A data-broker/genealogy lookup — you query FamilyTreeNow, not the subject, and nobody is notified. Use a sock-puppet browser. FamilyTreeNow offers a record opt-out, so a missing person may be suppressed rather than absent.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A free US people-search/genealogy aggregator; strong for relative/household links but accuracy is uneven — inferred relatives and old addresses are common, so it's a lead source, not proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FamilyTreeNow",
+      "familytreenow.com"
+    ],
+    "tags": [
+      "people-search",
+      "genealogy",
+      "relatives",
+      "data-broker"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/family-tree-now.md"
   },
   {
@@ -215770,41 +215802,53 @@
   {
     "id": "numberway",
     "name": "Numberway",
-    "description": "Reverse phone owner and location enrichment",
+    "description": "Use when you have a `phone` (any country) and want owner/carrier/location or the right national directory — returns caller details plus links to in-country white pages.",
     "url": "https://www.numberway.com/",
     "category": "phone",
     "path": [
       "phone",
       "international"
     ],
-    "bestFor": "Reverse phone owner and location enrichment",
-    "input": "Phone number",
-    "output": "Potential owner identity, carrier, and geographic details",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "International phone lookup and a gateway to national white-pages directories across 200+ countries.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone",
+      "name",
+      "address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free lookups with no account (numberway.com now redirects to thisnumber.com); some owner-detail/social-profile enrichments hand off to paid partners.",
     "opsec": "passive",
-    "opsecNote": "Query is brokered through third-party lookup infrastructure rather than direct target contact.",
+    "opsecNote": "Lookups are brokered through the service's data and linked directories, not direct contact with the number — the subject isn't notified. You disclose the number to a third party; use a sock-puppet browser. US results may include an owner name; most international results are carrier/location plus directory links.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A phone-intelligence/directory gateway (numberway → thisnumber); international results are mostly carrier/line-type plus links to national directories, so owner attribution quality varies by country.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Numberway",
+      "numberway.com",
+      "thisnumber.com"
+    ],
+    "tags": [
+      "reverse-phone",
+      "international",
+      "white-pages"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/international/numberway.md"
   },
   {
@@ -216480,29 +216524,32 @@
   {
     "id": "phone-book-of-the-world",
     "name": "Phone Book of the World",
-    "description": "Database of phone books from around the world",
+    "description": "Use when you have a `name`/`phone` in a specific country and want its national directory — returns links to that country's white/yellow pages and reverse-lookup services.",
     "url": "http://www.phonebookoftheworld.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "A country-by-country directory of national phone books and reverse-lookup services worldwide.",
     "selectorsIn": [
+      "name",
       "phone"
     ],
     "selectorsOut": [
       "phone",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free directory of links to national phone books; the destination directories vary (many free, some paid). No account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a link directory — the OpSec that matters is each destination country's phone book. Browsing the index is passive; the actual lookups happen on third-party national sites, so use a sock-puppet browser throughout. No contact reaches the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing curated index of international phone directories; value depends entirely on the destination national directories, whose coverage, freshness and availability vary widely (and some links may be stale).",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -216511,14 +216558,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Phone Book of the World",
+      "phonebookoftheworld.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "telephone-numbers"
+      "telephone-numbers",
+      "international"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/phone/phone-book-of-the-world.md"
   },
@@ -261870,35 +261921,52 @@
   {
     "id": "sortedbybirthdate",
     "name": "Sortedbybirthdate",
-    "description": "OSINT tool: Sortedbybirthdate.",
+    "description": "Use when you have a `dob` (or name) for a deceased US person and want to confirm death details — returns Death Master File entries with name, birth and death dates.",
     "url": "https://sortedbybirthdate.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming a deceased US person's birth/death dates via a free Social Security Death Index (Death Master File) listing.",
+    "selectorsIn": [
+      "dob",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse; based on the public Social Security Death Master File (as of ~March 2014), so it is a static historical index, not a live/current record set.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a public death index — no notification reaches anyone, and the data concerns deceased individuals. Use a sock-puppet browser as routine hygiene. Records are historical (frozen ~2014), so recent deaths won't appear.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free genealogy site republishing the US Social Security Death Master File; the underlying SSDI data is authoritative for deaths it covers, but this copy is dated (~2014) and covers only DMF-reported deaths.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Sorted By Birth Date",
+      "sortedbybirthdate.com"
+    ],
+    "tags": [
+      "ssdi",
+      "death-records",
+      "genealogy",
+      "birthdate"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sortedbybirthdate.md"
   },
   {
@@ -269509,51 +269577,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/zoopla.md"
-  },
-  {
-    "id": "zoopla-co-uk",
-    "name": "zoopla.co.uk",
-    "description": "OSINT tool: zoopla.co.uk.",
-    "url": "https://www.zoopla.co.uk/house-prices/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "propertysites",
-      "Property Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/zoopla-co-uk.md"
   },
   {
     "id": "100-search-engines",
@@ -342761,41 +342784,52 @@
   {
     "id": "tumblr",
     "name": "Tumblr",
-    "description": "Finding content and user profiles by tag or keyword across Tumblr",
+    "description": "Use when you have a `username`, tag or keyword and want Tumblr content/blogs — returns public posts, blogs and user profiles matching the tag or search term.",
     "url": "https://www.tumblr.com/tagged/search",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Finding content and user profiles by tag or keyword across Tumblr",
-    "input": "Search terms, tags, or keywords",
-    "output": "Public posts, blog content, hashtags, user profiles, and engagement data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding Tumblr blogs and posts by tag/keyword, and inspecting a known blog's public content.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse public blogs and tag/search results; an account is only needed to follow/interact (not to read public content).",
     "opsec": "passive",
-    "opsecNote": "Searches public content through Tumblr's search interface; searches are not attributed to specific users.",
+    "opsecNote": "Browsing public blogs and tag search doesn't notify the blogger and isn't tied to a user unless you log in. Tumblr has no \"who viewed\" for logged-out browsing; if you must log in, use a sock-puppet account. Note asks/messages are active and attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An authentic major blogging/social platform; content is user-generated and pseudonymous, and its search/tag surface is imperfect, so it's a lead source rather than authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Tumblr",
+      "tumblr.com"
+    ],
+    "tags": [
+      "major-social-networks",
+      "blogging",
+      "tag-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/tumblr.md"
   },
   {
@@ -365304,41 +365338,48 @@
   {
     "id": "alternate-spelling-finder",
     "name": "Alternate Spelling Finder",
-    "description": "When searching for information by name, remember that the same name can be recorded in documents and files very differently, as people of different nationalities perceive sounds differently.",
+    "description": "Use when you have a `name` and want its likely spelling variants — returns phonetic/transliteration alternatives to broaden name searches across records and platforms.",
     "url": "https://datayze.com/alternate-spelling-finder",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Generating alternate/phonetic spellings of a name so you don't miss records filed under a variant.",
     "selectorsIn": [
-      "username"
+      "name"
     ],
     "selectorsOut": [
-      "social-profile",
-      "username"
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool from Datayze; no account required (Datayze offers a paid membership to remove ads/limits, but the finder is free to use).",
+    "opsec": "passive",
+    "opsecNote": "Purely a local text transformation — you enter a name and it returns spellings; nothing is searched externally and no one is contacted. No sock puppet strictly needed, though routine hygiene is fine. It generates ideas; the actual searching happens in other tools.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple, useful name-variant generator (Datayze); it produces candidate spellings algorithmically — a brainstorming aid, not an authoritative list of a person's real aliases.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Datayze Alternate Spelling Finder",
+      "name variant generator"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "name-variants",
+      "transliteration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/alternate-spelling-finder.md"
   },
