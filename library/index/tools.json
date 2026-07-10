@@ -105679,29 +105679,30 @@
   {
     "id": "hushmail-canada",
     "name": "Hushmail (Canada)",
-    "description": "Email service provider",
+    "description": "Use when you have an `email` on a Hush domain and want to understand what that provider choice implies — returns provider/domain context, not a lookup result.",
     "url": "https://www.hushmail.com",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising a Hush-family email domain and reading the privacy/behavioural signal it carries.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email",
-      "social-profile"
+      "domain",
+      "metadata-exif"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Hushmail is a paid encrypted-email provider (with a limited free tier historically); there is no free public lookup API here. For OSINT this entry is about recognising the domain, not querying a service.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Simply noting that an address ends in a Hush domain is passive and leaks nothing. Do NOT attempt to log into secure.hushmail.com with the target's address or trigger a password-reset against it — that touches the provider's auth and could alert the owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hushmail is a long-running (since 1999), reputable Canadian encrypted-email company; the domain signal is authoritative even though there is no investigative API.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -105710,14 +105711,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "hushmail.com",
+      "hush.com",
+      "encrypted email provider"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "email-addresses"
+      "email-addresses",
+      "privacy-provider"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/hushmail-canada.md"
   },
@@ -145728,30 +145734,32 @@
   {
     "id": "google-reverse-image-search",
     "name": "Google Reverse Image Search",
-    "description": "Reverse image search engine; upload or paste an image URL to find visually similar images and source pages. Referenced in sinwindie's Image Analysis bookmarklet tool.",
+    "description": "Use when you have an `image` of a person or place and want to find where else it appears online — returns matching/related images, source pages and profile/name leads.",
     "url": "https://www.google.com/searchbyimage",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Finding where a photo of a missing person appears online and locating matching or related images",
+    "bestFor": "Finding other appearances of a photo online and identifying the person, account or location behind it.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
       "image",
       "social-profile",
-      "name"
+      "name",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account needed. Google Lens (the modern engine behind it) is also free in-browser and in the Google app.",
+    "opsec": "passive",
+    "opsecNote": "You upload/point at an image and query Google — the person in the photo is not contacted. Google logs your searches and stored uploads; use a sock-puppet Google session and don't sign in with an attributable account when handling sensitive images.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google service; results are authoritative as *matches*, but Google's index skews Western/English, so pair with Yandex/Bing for faces and non-Western content.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -145760,9 +145768,13 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "yahoo-image-search-2"
+    ],
     "aliases": [
       "Google Images",
-      "Google Lens"
+      "Google Lens",
+      "searchbyimage"
     ],
     "tags": [
       "reverse-image",
@@ -145770,7 +145782,7 @@
       "bookmarklet"
     ],
     "source": "sinwindie-osint",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/google-reverse-image-search.md"
   },
@@ -207814,46 +207826,55 @@
   {
     "id": "namecheckerr-com",
     "name": "namecheckerr.com",
-    "description": "OSINT tool: namecheckerr.com.",
+    "description": "Use when you have a `username` and want to see where that handle is already taken across social platforms (and as a domain) — returns which platforms have a matching account.",
     "url": "https://namecheckerr.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Fast availability sweep of a username/handle (and business/domain name) across many social sites at once.",
     "selectorsIn": [
+      "username",
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
       "social-profile",
-      "associate"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "The site checks availability from its own servers, so the target is not contacted directly. You are, however, disclosing the handle of interest to a third-party site — use a sock-puppet context and don't submit anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Third-party availability checker with no transparency about its methodology; \"taken\" only means a name is registered, not that it belongs to your subject, so treat results as leads to verify.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-python",
+      "instant-username"
+    ],
+    "aliases": [
+      "namecheckerr",
+      "business name checker"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "username-availability",
+      "name-availability"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/namecheckerr-com.md"
   },
   {
@@ -211625,48 +211646,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/people-search/superpages-com.md"
-  },
-  {
-    "id": "swedish-name-register",
-    "name": "Swedish Name Register",
-    "description": "Find out how common a name is in Sweden based on census data",
-    "url": "https://scb.se/hitta-statistik/sverige-i-siffror/namnsok/",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "people"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/swedish-name-register.md"
   },
   {
     "id": "switchboard",
@@ -216205,44 +216184,55 @@
   {
     "id": "numberingplans-com",
     "name": "numberingplans.com",
-    "description": "OSINT tool: numberingplans.com.",
+    "description": "Use when you have a `phone` number, IMEI or IMSI and want to decode its country, operator/number-type or device make — returns carrier/geolocation and device metadata.",
     "url": "https://www.numberingplans.com/?page=home",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding what a phone number, IMEI, IMSI or SIM identifies — country, network/operator, number type or handset make/model.",
     "selectorsIn": [
-      "phone"
+      "phone",
+      "device-id"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "geolocation",
+      "metadata-exif"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Most analysis is free for personal/limited use; professional/business volume needs a paid subscription. The number-analysis, IMEI and IMSI tools are usable free.",
+    "opsec": "passive",
+    "opsecNote": "You query numberingplans.com's own reference databases, not the subscriber's carrier, so the number holder is not contacted or alerted. It reveals no personal identity — only technical metadata about the number/device.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "International Numbering Plans is a long-established reference for global telephone numbering, IMEI (TAC) and IMSI/MCC-MNC data; the technical decoding is authoritative, though it does not identify people.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "freephonenum-com"
+    ],
+    "aliases": [
+      "International Numbering Plans",
+      "numberingplans"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "phone-analysis",
+      "imei",
+      "imsi"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/numberingplans-com.md"
   },
   {
@@ -316027,13 +316017,13 @@
   {
     "id": "ello",
     "name": "Ello",
-    "description": "Social networking platform",
+    "description": "Use when a historical lead points to an `ello.co` profile — returns nothing live; the network shut down in 2023 and the domain is now hijacked, so treat only as archival context.",
     "url": "https://ello.co/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising that an old ello.co reference is dead and pivoting to web archives instead of the live domain.",
     "selectorsIn": [
       "name",
       "username"
@@ -316041,16 +316031,17 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
+    "costNote": "The service is defunct; there is nothing to pay for or query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Do NOT visit the live ello.co domain for research — as of 2025-2026 it changed hands and redirects to casino/spam sites; use web.archive.org instead so you never touch the hijacked domain.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trustNote": "The original creative-focused network is gone (servers began failing June 2023, permanently shut down that year); the current domain is unrelated spam, so nothing served there can be trusted.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -316058,14 +316049,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "ello.co"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "defunct"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/ello.md"
   },
@@ -326723,13 +326720,13 @@
   {
     "id": "instaloader-3",
     "name": "Instaloader",
-    "description": "Downloads Instagram photos, videos, captions, comments and metadata for a profile or hashtag.",
+    "description": "Use when you have an Instagram `username` (or hashtag) and want to bulk-archive its posts, captions, comments and metadata — returns images, EXIF/timestamps, tagged associates and profile data.",
     "url": "https://instaloader.github.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Bulk-archiving a subject's Instagram content and metadata.",
+    "bestFor": "Reliable command-line archiving of a public Instagram profile's media and metadata for timeline and associate analysis.",
     "selectorsIn": [
       "username"
     ],
@@ -326739,15 +326736,16 @@
       "social-profile",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT). Works anonymously for public profiles; some features (stories, private accounts, full follower lists) require logging in with an account.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "Anonymous downloads of public content are low-touch, but any authenticated use hits Instagram's API as a logged-in client and risks rate-limiting or banning that account. Use a burner/sock-puppet login and a clean IP; never your own account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Listed in Trace Labs awesome-osint (Social Media).",
+    "trustNote": "Mature, actively maintained open-source project (listed in Trace Labs awesome-osint); widely used and reliable, though it breaks intermittently when Instagram changes its private API.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -326756,7 +326754,13 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "osintgram",
+      "instagram-search-engine"
+    ],
+    "aliases": [
+      "instaloader"
+    ],
     "tags": [
       "python",
       "instagram",
@@ -326764,7 +326768,7 @@
       "scraping"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/instaloader-3.md"
   },
@@ -331390,37 +331394,57 @@
   {
     "id": "oblivion",
     "name": "Oblivion",
-    "description": "OSINT tool: Oblivion.",
+    "description": "Use when you have an `email`, `username` or `domain` and want to monitor and aggregate credential-leak exposure across breach sources — returns breach hits and exposed credentials.",
     "url": "https://github.com/loseys/Oblivion",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "Self-hosted, real-time monitoring and one-off scanning of an identifier against multiple breach/leak feeds with exportable reports.",
+    "selectorsIn": [
+      "email",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "email",
+      "metadata-exif",
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Free and open-source, but its power depends on third-party API keys (HaveIBeenPwned, IntelX, Scylla, CIRCL) — several of which are now paid — so meaningful results often require paid keys.",
+    "opsec": "passive",
+    "opsecNote": "Queries go to breach-database APIs, not to the target, so the subject is not alerted. Your API keys and query patterns are visible to those providers; run from an attributable-safe environment and store exported results (which contain plaintext credentials) encrypted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "trustNote": "Community project by loseys; the repository was archived (read-only) on 12 Dec 2025, so it is no longer maintained and API integrations may break as upstream services change.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gosearch"
+    ],
+    "aliases": [
+      "loseys/Oblivion"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "data-leak",
+      "breach-monitoring",
+      "credentials"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/oblivion.md"
   },
   {
@@ -332437,43 +332461,59 @@
   {
     "id": "osintgram",
     "name": "Osintgram",
-    "description": "Deep Instagram profile analysis from a local CLI workflow",
+    "description": "Use when you have an Instagram `username` and want to bulk-extract a public account's posts, followers, tagged users and metadata — returns social-profile intelligence and associate lists.",
     "url": "https://github.com/Datalux/Osintgram",
     "category": "social-networks",
     "path": [
       "social-networks",
       "instagram"
     ],
-    "bestFor": "Deep Instagram profile analysis from a local CLI workflow",
-    "input": "Instagram username and operator credentials for session access",
-    "output": "Posts, captions, hashtags, engagement metrics, and account metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Interactive CLI reconnaissance of a single public Instagram account (posts, captions, comments, followers/following, tagged users).",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "image",
+      "metadata-exif"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT). Requires either a real Instagram login or a HikerAPI token (first 100 requests free) to authenticate against Instagram.",
     "opsec": "active",
-    "opsecNote": "Direct interaction with Instagram endpoints can trigger rate limits or account monitoring.",
+    "opsecNote": "Every command hits Instagram's private endpoints while authenticated. Instagram rate-limits and can flag or ban the account you log in with, and the target may not be notified but Instagram sees the traffic. Use a burner/sock-puppet Instagram account and a clean IP, never your own login.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "account-login",
+      "rate-limit"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known community project (Datalux) with thousands of GitHub stars; last stable release v1.3 (May 2021) with a v2 beta branch, so expect breakage as Instagram changes its API.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": true,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "instaloader-3",
+      "instagram-search-engine"
+    ],
+    "aliases": [
+      "Datalux/Osintgram"
+    ],
+    "tags": [
+      "instagram",
+      "cli",
+      "social-media"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram/osintgram.md"
   },
   {
@@ -344736,7 +344776,7 @@
   {
     "id": "tweepsect",
     "name": "Tweepsect",
-    "description": "Historical reference for follower overlap analysis workflows",
+    "description": "Use when an old workflow references Tweepsect for Twitter follower-overlap analysis — returns nothing live; the service is defunct, so pivot to a current follower-intersection method.",
     "url": "https://tweepsect.com/",
     "category": "social-networks",
     "path": [
@@ -344745,34 +344785,45 @@
       "analytics",
       "profile"
     ],
-    "bestFor": "Historical reference for follower overlap analysis workflows",
-    "input": "Twitter username(s)",
-    "output": "Follower/following intersection sets (historical behavior)",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Recognising a dead follower-overlap tool and switching to a working approach for comparing two accounts' networks.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "social-profile"
+    ],
     "status": "down",
     "pricing": "free",
+    "costNote": "Defunct; nothing to pay for or query.",
     "opsec": "passive",
-    "opsecNote": "Service endpoint is no longer functional; keep for historical context only.",
+    "opsecNote": "The endpoint no longer functions, so there is nothing to leak by \"using\" it. Do not enter credentials anywhere claiming to be Tweepsect.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Historical third-party Twitter analytics site that is no longer operational; retained only as a pointer away from it toward live alternatives.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": true,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "tweepsect.com"
+    ],
+    "tags": [
+      "twitter",
+      "analytics",
+      "follower-overlap",
+      "defunct"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/profile/tweepsect.md"
   },
   {
@@ -349511,45 +349562,58 @@
   },
   {
     "id": "vsco-co",
-    "name": "vsco.co",
-    "description": "OSINT tool: vsco.co.",
-    "url": "https://www.vsco.co/",
+    "name": "VSCO",
+    "description": "Use when you have a `username` and want to view a person's public photo grid and profile without an account — returns social-profile, images and location/metadata leads.",
+    "url": "https://vsco.co/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a suspected handle on VSCO for a public photo gallery, journal posts and profile bio.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image",
+      "name",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Viewing public profiles is free and needs no account; VSCO's editing app has paid tiers but those are irrelevant to lookups.",
+    "opsec": "passive",
+    "opsecNote": "Loading vsco.co/<username> in a logged-out browser is a passive read. VSCO does not show users who viewed them. Do not sign in or follow, which would create a footprint; some content now prompts a login wall, so use a sock-puppet account only if you must.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "VSCO is a legitimate, well-known photo-sharing platform; a profile at vsco.co/<username> is authoritative first-party content, not scraped data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "instagram-search-engine",
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "vsco.co",
+      "VSCO Grid"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "social-media",
+      "photo-sharing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/vsco-co.md"
   },
   {
@@ -368130,41 +368194,57 @@
   {
     "id": "keybase",
     "name": "Keybase",
-    "description": "Looking up verified social accounts, PGP keys, and crypto wallets tied to a username",
+    "description": "Use when you have a `username` and want to pivot to the same person's verified other accounts, PGP key and crypto wallets — returns cross-platform social-profile proofs and wallet addresses.",
     "url": "https://keybase.io/",
     "category": "username",
     "path": [
       "username",
       "specific-sites"
     ],
-    "bestFor": "Looking up verified social accounts, PGP keys, and crypto wallets tied to a username",
-    "input": "Username",
-    "output": "User profile showing verified identities across platforms, PGP keys, cryptocurrency addresses, and devices",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Turning one handle into a cryptographically-verified cluster of that person's other identities (Twitter/X, GitHub, Reddit, HN, websites) plus PGP key and crypto addresses.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "crypto-wallet",
+      "domain",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public directory; no account needed to view a profile or query the API.",
     "opsec": "passive",
-    "opsecNote": "Public profile lookups are passive web requests. No login required to view profiles.",
+    "opsecNote": "Viewing keybase.io/<user> or hitting the public user/lookup API is a passive read of self-published data and does not notify the target. Avoid logging in or following, which would attribute activity to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Keybase (now owned by Zoom) maintains a publicly auditable key directory; the identity proofs are cryptographically verified, so a green proof is strong evidence the accounts are controlled by the same key-holder.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "gosearch",
+      "whatsmyname-python"
+    ],
+    "aliases": [
+      "keybase.io"
+    ],
+    "tags": [
+      "username",
+      "identity-verification",
+      "pgp",
+      "crypto"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/specific-sites/keybase.md"
   },
   {
