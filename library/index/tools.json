@@ -110190,44 +110190,57 @@
   {
     "id": "snusbase",
     "name": "Snusbase",
-    "description": "Breach-database search by email, username, hash, IP, name.",
     "url": "https://www.snusbase.com/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "description": "Use when you have an `email`, `username`, `name`, `ip-address` or hash and want breached records — returns linked emails, names, addresses, phones and password hashes.",
+    "bestFor": "Fast, indexed breach-database search that pivots one selector (email/username/IP/name) into other leaked personal data.",
     "selectorsIn": [
       "email",
       "username",
       "ip-address",
-      "name"
+      "name",
+      "phone"
     ],
     "selectorsOut": [
       "email",
-      "name"
+      "name",
+      "address",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Effectively paid — account required, and plaintext results (names, addresses, passwords) are for paying members; a free API tier (up to ~2,048 requests/day) exists for subscribers. No usable free anonymous search.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching breach data does not contact or notify the subject — it is passive. But you must register and pay, tying queries to an account/payment; the operator sees exactly what you search. Use a sock-puppet account and dedicated payment for sensitive investigations.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running (since 2016) commercial breach-search service with broad indexed data; results are as accurate as the underlying breaches, which can be old, mixed-quality, or contain errors.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "aliases": [
+      "Snusbase",
+      "snusbase.com"
+    ],
     "tags": [
-      "breach"
+      "breach",
+      "credential-search"
     ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/snusbase.md"
   },
@@ -112069,40 +112082,51 @@
   {
     "id": "whatbreach",
     "name": "WhatBreach",
-    "description": "CLI that finds breaches and dumps tied to an email.",
     "url": "https://github.com/Ekultek/WhatBreach",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "description": "Use when you have an `email` and want to know which data breaches it appears in — returns breach names, associated pastes and (with keys) downloadable dumps.",
+    "bestFor": "Enumerating the data breaches and paste leaks tied to an email address from the command line.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email"
+      "email",
+      "username"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Open-source and free to run, but useful output depends on API keys — HaveIBeenPwned now needs a paid key (~$3.50/mo); some sources it was built against (WeLeakInfo, databases.today) are defunct.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Querying breach indexes about an email does not contact or notify the owner — it is passive. Note you are sending the target's email to third-party APIs (HIBP, Hunter, emailrep), which log the query against your keys. Use dedicated keys/accounts for sensitive work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A genuine open-source OSINT CLI, but lightly maintained and built partly against data sources that have since been seized/shut down, so coverage is degraded versus its original scope.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WhatBreach",
+      "Ekultek/WhatBreach"
+    ],
     "tags": [
-      "breach"
+      "breach",
+      "cli",
+      "open-source"
     ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/email/whatbreach.md"
   },
@@ -204440,46 +204464,50 @@
   {
     "id": "everypolitician-org",
     "name": "Everypolitician.org",
-    "description": "OSINT tool: Everypolitician.org.",
     "url": "http://everypolitician.org",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `name` of a politician/office-holder and want structured political data — returns party, terms, positions and links (`social-profile`, `associate`).",
+    "bestFor": "Looking up an elected/appointed official's structured record — party, offices held, terms — across many countries from open, Wikidata-linked data.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
       "social-profile",
-      "dob"
+      "associate",
+      "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and openly licensed (Creative Commons); data is community-built on Wikidata. It is a bulk/open dataset rather than a polished live search, and currency varies.",
+    "opsec": "passive",
+    "opsecNote": "Passive read of open, published political data; nothing is disclosed to the subject and no login is required. These are public figures, so relevance/sensitivity is low.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A large open, Wikidata-derived dataset of politicians; coverage is broad but community-maintained and can be dated or incomplete, so confirm current office against an official source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "EveryPolitician",
+      "everypolitician.org"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "political-data"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/everypolitician-org.md"
   },
   {
@@ -204638,41 +204666,52 @@
   {
     "id": "facecheckid",
     "name": "FaceCheckID",
-    "description": "Reverse face image search and identity verification",
     "url": "https://facecheck.id/",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Reverse face image search and identity verification",
-    "input": "Uploaded face photograph",
-    "output": "Matching profiles, social media accounts, news articles, mugshots",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "description": "Use when you have a `face`/`image` and want to identify the person — returns matching faces across social media, news, mugshots and sex-offender sources as `social-profile` links.",
+    "bestFor": "Reverse face search across social, news, mugshot and offender sources to put a name/profile to an unknown face.",
+    "selectorsIn": [
+      "face",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free searches return limited/blurred results; buying credits unlocks more matches per search and clearer thumbnails. Account optional to start.",
     "opsec": "active",
-    "opsecNote": "Uploaded images are processed server-side; free tier has limited results, credits required for full access.",
+    "opsecNote": "You upload the target's face to a commercial facial-recognition engine that processes and logs it server-side. This is a disclosure of the image; use a sock-puppet account and avoid uploading sensitive/evidential faces you wouldn't want retained. The subject is not notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely-used face-search engine with real reach into social/news/mugshot imagery; matches carry confidence ratings and its own disclaimer warns unrelated people look alike — treat hits as leads to confirm.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FaceCheck.ID",
+      "facecheck"
+    ],
+    "tags": [
+      "face-search",
+      "reverse-image"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/facecheckid.md"
   },
   {
@@ -264331,35 +264370,52 @@
   {
     "id": "social-security-death-index",
     "name": "Social Security Death Index",
-    "description": "OSINT tool: Social Security Death Index.",
     "url": "https://stevemorse.org/ssdi/ssdi.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "description": "Use when you have a US `name` and want to confirm a death — returns death date, birth date (`dob`), and last-residence location from the SSA Death Master File.",
+    "bestFor": "Confirming whether a US person is deceased and getting their DOB, death date and last-residence area via the SSDI.",
+    "selectorsIn": [
+      "name",
+      "dob"
+    ],
+    "selectorsOut": [
+      "dob",
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Steve Morse's SSDI search forms are free; they query back-end databases (Ancestry/FamilySearch/etc.) that may themselves require a free or paid account for full record detail.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A passive search of a public death index; the subject is deceased and no one is notified. The Steve Morse forms run in your browser and pass the query to a chosen backend — standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Steve Morse's tools are a respected, long-standing genealogy portal that front-ends official SSA Death Master File data; the underlying index is authoritative for deaths reported to the SSA (roughly 1962 onward).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SSDI",
+      "SSDI search (Steve Morse)",
+      "Death Master File"
+    ],
+    "tags": [
+      "genealogy",
+      "death-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/social-security-death-index.md"
   },
   {
@@ -314970,14 +315026,14 @@
   },
   {
     "id": "bsky-social",
-    "name": "bsky.social",
-    "description": "OSINT tool: bsky.social.",
+    "name": "bsky.social (Bluesky)",
     "url": "https://bsky.social/about/blog/05-31-2024-search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "description": "Use when you have a `username` or `name` and want to find a Bluesky presence — returns a `social-profile` with posts, handle, bio and follow graph.",
+    "bestFor": "Finding and reading a subject's Bluesky profile and posts, including full-text post search across the network.",
     "selectorsIn": [
       "username",
       "name"
@@ -314986,29 +315042,35 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; public profiles and posts are readable without an account, though full search and interaction work best signed in (registration is free and open).",
+    "opsec": "passive",
+    "opsecNote": "Reading public profiles/posts (including via the AT Protocol's open data) is passive and doesn't notify the subject. Following/replying requires a login and is visible — keep to read-only, and note Bluesky's open protocol means posts are broadly accessible/archivable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The official Bluesky network; the platform is authentic and its AT Protocol makes public data openly queryable, though individual accounts may be impersonators.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bluesky",
+      "bsky.app"
+    ],
     "tags": [
       "bluesky",
       "BlueSky / BSky Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bsky-social.md"
   },
   {
