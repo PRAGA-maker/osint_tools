@@ -133471,41 +133471,57 @@
   {
     "id": "suncalc",
     "name": "SunCalc",
-    "description": "Shadow-based time and location validation",
+    "description": "Use when you have coordinates and a photo with shadows and want to verify time/location (chronolocation) — returns sun azimuth/elevation and shadow direction for any place and moment.",
     "url": "https://suncalc.net/",
     "category": "geolocation",
     "path": [
       "geolocation",
       "geolocation-tools"
     ],
-    "bestFor": "Shadow-based time and location validation",
-    "input": "Date/time and coordinates",
-    "output": "Sun azimuth/elevation and daylight phase data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Chronolocation — checking whether the sun position/shadows in a photo are consistent with a claimed place, date and time.",
+    "selectorsIn": [
+      "geolocation",
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account.",
     "opsec": "passive",
-    "opsecNote": "Uses open-source mapping/geospatial data and does not directly interact with the target.",
+    "opsecNote": "Purely a calculation over map/astronomical data — you don't touch the subject or any account. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Sun-position math is deterministic astronomy; SunCalc's azimuth/elevation output is reliable. The interpretation (matching shadows in a photo) is where analyst error enters, not the data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "online-exif-viewer",
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "suncalc.net",
+      "SunCalc.org"
+    ],
+    "tags": [
+      "geolocation",
+      "chronolocation",
+      "shadows",
+      "verification"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/geolocation-tools/suncalc.md"
   },
   {
@@ -151870,30 +151886,31 @@
   {
     "id": "online-exif-viewer",
     "name": "Online EXIF Viewer",
-    "description": "View photo EXIF data details from most photo format's meta data",
-    "url": "https://onlineexifviewer.com",
+    "description": "Use when you have a photo file and want its embedded metadata — returns EXIF including GPS coordinates, capture timestamp, and camera/device model.",
+    "url": "https://onlineexifviewer.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Reading EXIF/metadata from a photo — GPS location, date/time taken, and the camera or phone model that shot it.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "geolocation",
+      "metadata-exif",
+      "device-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free in-browser viewer; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload the image to a third-party site to parse it — the subject isn't contacted, but the file (and any GPS/identifying metadata) is disclosed to that site. For sensitive images, prefer a local tool (exiftool) so nothing leaves your machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "EXIF parsing is deterministic, so the readout is accurate; the caveats are that many platforms strip EXIF on upload, and metadata can be edited/spoofed.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -151902,15 +151919,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "suncalc",
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "onlineexifviewer.com",
+      "EXIF viewer"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "image-video-multimedia-search",
-      "useful-websites-tools-documents"
+      "exif",
+      "metadata",
+      "geolocation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/online-exif-viewer.md"
   },
@@ -159106,31 +159130,33 @@
   },
   {
     "id": "twitch-tv",
-    "name": "Twitch.tv",
-    "description": "Live streaming platform for gamers including chat",
-    "url": "http://www.twitch.tv",
+    "name": "Twitch",
+    "description": "Use when you have a `username` and want a person's live-streaming presence — returns their channel, VODs/clips, chat activity and voice/face/location leaks from streams.",
+    "url": "https://www.twitch.tv/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Checking a handle on Twitch for a streaming profile, past broadcasts and clips that can leak face, voice, room/location and routine.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
+      "social-profile",
       "image",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to view channels, VODs and clips; an account is only needed to chat/follow, not to watch public content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a channel/VODs logged-out is passive. Don't follow, chat, or view while logged into an attributable account — that notifies the streamer and ties activity to you. Some streamers see viewer counts but not identities of logged-out viewers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Twitch is a legitimate mainstream platform; content is authentic first-party streaming, though a handle matching your target must still be verified.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -159139,14 +159165,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "twitch.tv"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
+      "streaming",
+      "gaming",
+      "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/twitch-tv.md"
   },
@@ -160587,8 +160620,8 @@
   },
   {
     "id": "xeuledoc-fetch-metadata-about-any-public-google-document",
-    "name": "xeuledoc - Fetch metadata about any public Google document",
-    "description": "Google document attribution and metadata extraction",
+    "name": "xeuledoc",
+    "description": "Use when you have a public Google Doc/Sheet/Drive URL and want its owner and history — returns the creator's Google ID, creation/modification dates and permission info.",
     "url": "https://github.com/Malfrats/xeuledoc",
     "category": "image-video-face",
     "path": [
@@ -160596,34 +160629,49 @@
       "images",
       "metadata"
     ],
-    "bestFor": "Google document attribution and metadata extraction",
-    "input": "Public Google document URLs",
-    "output": "Owner identifiers, account metadata, and document context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Attributing a public Google document (Docs, Sheets, Slides, Drive, My Maps, Apps Script) to its owner and pulling its timestamps.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "metadata-exif",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Python CLI); no account or key needed for public documents.",
     "opsec": "passive",
-    "opsecNote": "Reads only public docs without authentication bypass, but still queries Google infrastructure.",
+    "opsecNote": "It reads publicly-shared document metadata via Google's own endpoints without any authentication bypass, so the document owner is not notified. Your requests go to Google infrastructure; use a sock-puppet network context for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A well-known OSINT tool (Malfrats, ~1k stars); it surfaces metadata Google exposes for public docs — reliable, but what's revealed (owner name vs. just an ID) depends on the doc's sharing settings.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "online-exif-viewer",
+      "commit-stream"
+    ],
+    "aliases": [
+      "Malfrats/xeuledoc",
+      "xeuledoc"
+    ],
+    "tags": [
+      "google-docs",
+      "metadata",
+      "document-attribution"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/metadata/xeuledoc-fetch-metadata-about-any-public-google-document.md"
   },
   {
@@ -169533,38 +169581,55 @@
   },
   {
     "id": "creationdatebot",
-    "name": "creationdatebot",
-    "description": "OSINT tool: creationdatebot.",
+    "name": "Creation Date Bot (Telegram)",
+    "description": "Use when you have a Telegram `username`/account and want to estimate when it was created — returns an approximate account age to judge if it's a fresh throwaway.",
     "url": "https://t.me/creationdatebot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Estimating a Telegram account's creation date/age from its numeric user ID, to gauge how new (throwaway) or established an account is.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot; you need a Telegram account to message it.",
+    "opsec": "active",
+    "opsecNote": "You must use a Telegram account to query the bot, and querying by username/ID means the bot operator sees your request. Use a sock-puppet Telegram account, never your primary; avoid actions that would notify the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trust": "unverified",
+    "trustNote": "A community Telegram bot; the creation date is an *estimate* interpolated from Telegram's sequential user IDs (not an official field), and the third-party operator's data handling is opaque — treat the age as approximate.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "telegram-finder"
+    ],
+    "aliases": [
+      "@creationdatebot",
+      "Telegram creation date bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "account-age",
+      "messaging"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/creationdatebot.md"
   },
   {
@@ -175358,42 +175423,56 @@
   },
   {
     "id": "telegram-osint",
-    "name": "Telegram-OSINT",
-    "description": "Sourcing Telegram-specific tooling and investigative playbooks",
+    "name": "Telegram-OSINT (resource hub)",
+    "description": "Use when you're starting a Telegram investigation and want a curated map of Telegram-specific tools and playbooks — returns pointers to the right tool for a given selector.",
     "url": "https://github.com/The-Osint-Toolbox/Telegram-OSINT",
     "category": "messaging",
     "path": [
       "messaging",
       "telegram"
     ],
-    "bestFor": "Sourcing Telegram-specific tooling and investigative playbooks",
-    "input": "Manual review of listed tools and references",
-    "output": "Collection of Telegram OSINT resources and workflows",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Orienting a Telegram investigation — a curated reference of Telegram OSINT tools, bots, and investigative workflows to pick from.",
+    "selectorsIn": [
+      "username",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub reference repository; the tools it links have their own pricing/OpSec.",
     "opsec": "passive",
-    "opsecNote": "Reference repository only; OPSEC depends on the selected downstream tools.",
+    "opsecNote": "Reading the repo is passive. OpSec depends entirely on which linked tools you then run — some (bots, member scrapers) are active and require a Telegram account; evaluate each on its own before use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "A community-curated resource list (The OSINT Toolbox), not a tool itself; useful as a directory, but each linked tool must be independently verified for currency and trust before you rely on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "telegram-finder",
+      "creationdatebot"
+    ],
+    "aliases": [
+      "The-Osint-Toolbox/Telegram-OSINT"
+    ],
+    "tags": [
+      "telegram",
+      "resource-hub",
+      "playbook"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram/telegram-osint.md"
   },
   {
@@ -206905,44 +206984,61 @@
   },
   {
     "id": "land-registry-property-search",
-    "name": "Land Registry - Property Search",
-    "description": "OSINT tool: Land Registry - Property Search.",
+    "name": "HM Land Registry — Property Search",
+    "description": "Use when you have a UK `address` and want the legal owner — returns the registered proprietor's name and title details from the official land register.",
     "url": "https://eservices.landregistry.gov.uk/eservices/findaproperty/view/quickenquiryinit.do",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Finding who legally owns a property in England & Wales by address, via the official HM Land Registry title register.",
     "selectorsIn": [
       "address"
     ],
     "selectorsOut": [
       "name",
-      "phone",
-      "associate"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching the index is free; obtaining the title register or title plan (which name the owner) costs a small statutory fee (£3–£7 per document).",
+    "opsec": "passive",
+    "opsecNote": "You query the official land register by property, not by person, so the owner is not notified. Your purchase ties to your Land Registry order; the data (owner name, price paid) is official public record — use lawfully.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "HM Land Registry is the authoritative UK land-ownership register for England & Wales; the registered proprietor and title details are legally definitive.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb-eng",
+      "gb-wls"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "192",
+      "scottishepcregister-org-uk"
+    ],
+    "aliases": [
+      "HM Land Registry",
+      "Find a Property",
+      "Land Registry title register"
+    ],
     "tags": [
-      "address"
+      "address",
+      "property",
+      "land-registry",
+      "uk"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/land-registry-property-search.md"
   },
   {
@@ -223885,47 +223981,56 @@
   },
   {
     "id": "billiongraves-com",
-    "name": "billiongraves.com",
-    "description": "OSINT tool: billiongraves.com.",
+    "name": "BillionGraves",
+    "description": "Use when you have a `name` and want burial/headstone records — returns death/birth dates, GPS-tagged cemetery location and family members buried nearby.",
     "url": "https://billiongraves.com/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's grave record — dates of birth/death, cemetery with GPS location, headstone photo, and linked family members.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "dob",
+      "geolocation",
+      "associate",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Search and basic records are free; some features and deeper genealogy tools sit behind a paid plan, and it partners with genealogy services.",
+    "opsec": "passive",
+    "opsecNote": "You search a public genealogy/burial database; no living person is contacted. Records concern the deceased, so privacy risk is low, but linked family trees can expose living relatives — handle those responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large volunteer-photographed headstone database with GPS coordinates; individual transcriptions are volunteer-made and can contain errors, so verify dates against a certificate where it matters.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gro-gov-uk"
+    ],
+    "aliases": [
+      "billiongraves.com"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "genealogy",
+      "burial-records",
+      "graves"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/billiongraves-com.md"
   },
   {
@@ -252622,47 +252727,57 @@
   },
   {
     "id": "obituaries-from-newspapers-north-america",
-    "name": "Obituaries From Newspapers (North America)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
-    "url": "http://www.legacy.com/ns/about/newspapers/",
+    "name": "Legacy.com Obituaries (North America)",
+    "description": "Use when you have a `name` and want obituary/death notices — returns death dates, hometowns and named surviving relatives from North American newspaper obituaries.",
+    "url": "https://www.legacy.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's obituary to confirm a death and harvest family members, hometown and life details from newspaper death notices.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "dob",
+      "associate",
+      "geolocation",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Searching and reading obituaries is free; Legacy aggregates death notices from thousands of North American newspapers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search published obituaries; no living person is contacted. Obituaries name living relatives, though — treat that family data responsibly and lawfully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Legacy.com is the main aggregator of US/Canada newspaper obituaries; notices are family-submitted, so details are usually accurate but occasionally incomplete or with variant spellings.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "billiongraves-com"
+    ],
+    "aliases": [
+      "Legacy.com",
+      "newspaper obituaries"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "genealogy",
+      "obituaries",
+      "death-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/obituaries-from-newspapers-north-america.md"
   },
@@ -324139,38 +324254,54 @@
   },
   {
     "id": "haveibeenzuckered",
-    "name": "haveibeenzuckered",
-    "description": "OSINT tool: haveibeenzuckered.",
+    "name": "HaveIBeenZuckered",
+    "description": "Use when you have a `phone` number and want to know if it was exposed in the 2021 Facebook 533M breach — returns whether that number appears in the leaked dataset.",
     "url": "https://haveibeenzuckered.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a phone number was in the 2021 Facebook (533M-record) data breach, implying a Facebook account was tied to it.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free lookup; no account.",
+    "opsec": "passive",
+    "opsecNote": "You check a number against a static leaked dataset held by the site, not against Facebook, so the account owner is not notified. You do disclose the number to a third-party site — use a sock-puppet context and avoid submitting numbers you aren't authorised to check.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A single-purpose checker over the well-documented 2021 Facebook scrape; a hit is a strong signal the number had a Facebook account in that era, but the dataset is fixed (2021) and doesn't reflect current status.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "numberingplans-com"
+    ],
+    "aliases": [
+      "haveibeenzuckered.com",
+      "have I been zuckered"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "data-breach",
+      "phone"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/haveibeenzuckered.md"
   },
   {
