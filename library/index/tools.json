@@ -152358,46 +152358,52 @@
   {
     "id": "pbs-search",
     "name": "PBS Search",
-    "description": "PBS media search engine, search episdoes",
+    "description": "Use when you have a `name` or topic and want to check if a person appears in PBS documentary/news content — returns video episodes and mentions, not face matching.",
     "url": "https://www.pbs.org/search/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Searching PBS's video archive by name/keyword to find documentary, news or interview appearances of a person or subject.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "metadata-exif",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and stream most PBS content; no account required for searching.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public media archive is passive and doesn't touch the subject. Nothing sensitive is disclosed beyond your query terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "PBS is a reputable US public broadcaster; its search returns its own catalog. Note it is a media/video search, NOT the face/reverse-image tool the seed data implied.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "pbs.org/search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "media-search",
+      "video"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/pbs-search.md"
   },
@@ -156167,37 +156173,58 @@
   {
     "id": "search4faces",
     "name": "Search4faces",
-    "description": "OSINT tool: Search4faces.",
+    "description": "Use when you have a `face`/`image` and want to find matching profiles on VK, Odnoklassniki, TikTok or Clubhouse — returns links to social profiles of the same or similar-looking person.",
     "url": "https://search4faces.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Reverse face search against Russian/Eastern-European social networks (VK, OK) plus TikTok/Clubhouse avatars and a celebrity set.",
+    "selectorsIn": [
+      "face",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "face",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic searches are free; some databases/features and higher volume require an account and/or paid credits.",
+    "opsec": "passive",
+    "opsecNote": "You upload the target's face to a third-party (Russian-operated) service, which processes and may retain it. The subject is not notified, but assume the image and your query are logged by the operator; use a sock-puppet account and avoid uploading the most sensitive imagery.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known face-search service with real matching power against VK/OK; matches are probabilistic (\"same or similar\"), so every hit must be confirmed, and the operator's data handling is opaque.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "google-reverse-image-search",
+      "huggingface-co"
+    ],
+    "aliases": [
+      "search4faces.com"
+    ],
     "tags": [
-      "image-search"
+      "image-search",
+      "face-recognition",
+      "vk",
+      "tiktok"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/search4faces.md"
   },
   {
@@ -216682,35 +216709,61 @@
   {
     "id": "nuwber",
     "name": "Nuwber",
-    "description": "OSINT tool: Nuwber.",
+    "description": "Use when you have a US `name`, `phone` or `address` and want a person's contact profile — returns addresses, phone numbers, emails and relatives/associates.",
     "url": "https://nuwber.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "US people/reverse-phone search — resolving a name or number to addresses, phones, emails and relatives.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "email",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Preview results (name, age, city, partial data) are free; the full report and detailed contacts require a paid Nuwber subscription.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Queries hit Nuwber's aggregated public-records data, not the subject, so no alert is sent. Note Nuwber lists people's own profiles publicly — your searches/purchases tie to your account, so use a sock-puppet context.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A mainstream US data-broker people-search; useful for leads, but like all aggregators it carries stale addresses and same-name conflation — verify before relying.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "searchbug",
+      "411-us",
+      "reverse-phone-lookup-2"
+    ],
+    "aliases": [
+      "nuwber.com"
+    ],
+    "tags": [
+      "people-search",
+      "reverse-phone",
+      "data-broker",
+      "us"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/nuwber.md"
   },
   {
@@ -240042,47 +240095,61 @@
   },
   {
     "id": "gro-gov-uk",
-    "name": "gro.gov.uk",
-    "description": "OSINT tool: gro.gov.uk.",
+    "name": "GRO (General Register Office)",
+    "description": "Use when you have a `name` and want to confirm a birth, death or parentage in England & Wales — returns index entries with dates, districts and mother's maiden name, and orderable certificates.",
     "url": "https://www.gro.gov.uk/gro/content/certificates/login.asp",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the official England & Wales birth/death index to confirm identity, DOB, death, and parents (via mother's maiden name), then ordering certificates.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "dob",
+      "name",
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free registration lets you search the online GRO index (births 1837–1922 and from 1934; deaths 1837–1957 and from 1984). Certificates cost a fee (PDF ~£8, paper ~£12.50) to order.",
+    "opsec": "passive",
+    "opsecNote": "Searching the civil-registration index is a passive query to a government register; the subject is not notified. Ordering a certificate ties to your GRO account and address — use an appropriately attributed account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official UK government civil-registration authority for England & Wales; index and certificate data are authoritative primary records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "gb-eng",
+      "gb-wls"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "192"
+    ],
+    "aliases": [
+      "General Register Office",
+      "gro.gov.uk",
+      "GRO index"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "genealogy",
+      "birth-death-marriage",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gro-gov-uk.md"
   },
   {
@@ -325001,37 +325068,55 @@
   {
     "id": "imgur",
     "name": "Imgur",
-    "description": "OSINT tool: Imgur.",
-    "url": "http://imgur.com/search?q=",
+    "description": "Use when you have a `username`, keyword or an `image` lead and want to find hosted images/albums and a user's uploads — returns images, album context and profile activity.",
+    "url": "https://imgur.com/search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Imgur for images/albums by keyword and browsing a user's public uploads (a common reverse-image landing spot).",
+    "selectorsIn": [
+      "username",
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view; an account is only needed to interact (comment/upload), not to browse public content.",
+    "opsec": "passive",
+    "opsecNote": "Browsing and searching Imgur is passive and doesn't notify uploaders. Don't sign in or comment on target content (that attributes activity to you). Note some images are \"hidden\" (unlisted) and only reachable via their direct link.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Imgur is a legitimate mainstream image host/community; content is user-uploaded so context/authenticity varies — treat captions and claimed context as unverified.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "imgur.com"
+    ],
     "tags": [
-      "reddit"
+      "reddit",
+      "image-host",
+      "image-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/imgur.md"
   },
   {
@@ -346303,36 +346388,54 @@
   },
   {
     "id": "twint-2",
-    "name": "twint",
-    "description": "OSINT tool: twint.",
+    "name": "Twint",
+    "description": "Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so use a current method.",
     "url": "https://pypi.org/project/twint/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Historical reference only — a Python library that once scraped tweets/profiles without the API; now defunct.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "down",
+    "pricing": "free",
+    "costNote": "Free and open-source, but archived (Mar 2023) and broken against the current X platform.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "When it worked, it scraped Twitter's front-end without your account (passive). It is not a live concern now — don't build workflows on it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "python-lib",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "unverified",
+    "trustNote": "The twintproject repo was archived on 30 Mar 2023 and last released in 2019; Twitter/X anti-scraping and API changes broke it. Treat this as a redirect, not a working tool.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "getdaytrends"
+    ],
+    "aliases": [
+      "twintproject/twint",
+      "twint"
+    ],
+    "tags": [
+      "twitter",
+      "scraping",
+      "deprecated"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twint-2.md"
   },
   {
@@ -367702,47 +367805,53 @@
   },
   {
     "id": "commit-stream",
-    "name": "Commit-stream",
-    "description": "Real-time GitHub commit monitoring that extracts author names/emails.",
+    "name": "commit-stream",
+    "description": "Use when you have a GitHub `username` or org and want the real name and email behind commits — returns committer names and emails harvested from the live GitHub event stream.",
     "url": "https://github.com/x1sec/commit-stream",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Harvesting committer names and emails from GitHub commit streams",
+    "bestFor": "Extracting the real name and email tied to a GitHub account/organisation by reading commit author metadata from GitHub's public event firehose.",
     "selectorsIn": [
-      "employer-org",
-      "username"
+      "username",
+      "employer-org"
     ],
     "selectorsOut": [
       "name",
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Go). A GitHub API token raises rate limits; the public event stream is otherwise free.",
+    "opsec": "passive",
+    "opsecNote": "You read GitHub's public events/commit metadata, not the target's account directly, so the user is not notified. The name/email are self-published in commits. Use a dedicated GitHub token, not your primary account, if you supply one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A known open-source tool (x1sec); it simply surfaces the author name/email that developers themselves put in their commits — reliable data, but a global @users.noreply.github.com address means the user hid their email.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "keybase"
+    ],
+    "aliases": [
+      "x1sec/commit-stream"
+    ],
     "tags": [
       "github",
       "commits",
       "email-harvest"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/commit-stream.md"
   },
@@ -368295,13 +368404,13 @@
   {
     "id": "go-sherlock",
     "name": "Go Sherlock",
-    "description": "#GO version of Project Sherlock (https://github.com/sherlock-project/sherlock…). It's quite fast. Checks if a user with a certain nickname exists on a thousand sites in a few tens of seconds.",
+    "description": "Use when you have a `username` and want a fast local enumeration across ~1000 sites — returns the sites where the handle exists, as a Go port of Sherlock.",
     "url": "https://github.com/Longwater1234/go-sherlock",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, concurrent command-line username enumeration (a Go reimplementation of Project Sherlock) run from your own machine.",
     "selectorsIn": [
       "username"
     ],
@@ -368309,27 +368418,40 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Go); compile once and run locally, no account.",
+    "opsec": "active",
+    "opsecNote": "Unlike hosted enumerators, this runs from YOUR machine, so target sites see your IP making the existence checks. Route through a VPN/proxy and use a sock-puppet context if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community Go port of the well-known Sherlock project; accuracy depends on how current its site list is — an unmaintained fork can drift, so corroborate hits.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "whatsmyname-python",
+      "gosearch"
+    ],
+    "aliases": [
+      "Longwater1234/go-sherlock"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username",
+      "cli",
+      "golang"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/go-sherlock.md"
   },
@@ -371750,42 +371872,57 @@
   },
   {
     "id": "whatsmyname-web",
-    "name": "WhatsMyName Web",
-    "description": "Quick web-based username enumeration across social media, forums, gaming platforms, and professional networks",
+    "name": "WhatsMyName (web)",
+    "description": "Use when you have a `username` and want to find every site it exists on — returns direct profile links across hundreds of social, gaming, forum and professional sites.",
     "url": "https://whatsmyname.app/",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Quick web-based username enumeration across social media, forums, gaming platforms, and professional networks",
-    "input": "Username",
-    "output": "List of sites where the username exists with direct profile links",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast, browser-based username enumeration across 600+ sites with direct links to the profiles that exist.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Makes HTTP requests to each target site to check for username existence, however it does it from WhatsMyName infrastructure.",
+    "costNote": "Free, open-source project (Micah Hoffman / OSINT community); no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Checks are executed from WhatsMyName's own infrastructure, so target sites see its servers rather than your IP — passive from your side. Still avoid entering anything but the handle, and note the site owner can see your queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The de-facto community-standard username enumerator; its site-detection list (wmn-data) is open, widely reviewed and continuously maintained, making it one of the most reliable enumerators available.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "whatsmyname-python",
+      "gosearch",
+      "instant-username"
+    ],
+    "aliases": [
+      "whatsmyname.app",
+      "WMN"
+    ],
+    "tags": [
+      "username",
+      "enumeration",
+      "social-media"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/whatsmyname-web.md"
   },
   {
