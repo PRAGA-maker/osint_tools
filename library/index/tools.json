@@ -207230,31 +207230,29 @@
   {
     "id": "knowem-username-search",
     "name": "Knowem Username Search",
-    "description": "Search by username from over 500 social networkss and 150 domain names",
+    "description": "Use when you have a `username` and want to see which of 500+ social networks (and domains) it's registered on — returns a grid of taken/available `social-profile`s to pivot into.",
     "url": "http://knowem.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot username availability/presence check across 500+ social networks and 150+ domains.",
     "selectorsIn": [
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "address",
-      "phone",
-      "associate"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free username-availability grid; Knowem also sells paid brand-protection registration services, but the checking tool is free and needs no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Knowem checks availability from its own infrastructure, so requests to the 500+ sites don't come from your IP and no target is contacted. Standard sock-puppet browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running brand/username checker; \"taken\" means the handle exists on that site, but it doesn't confirm the account is your subject — verify each hit by opening it.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -207263,14 +207261,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "namechk-2",
+      "namevine-user-name-search"
+    ],
+    "aliases": [
+      "KnowEm",
+      "knowem.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "username-check"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/knowem-username-search.md"
   },
@@ -212838,45 +212844,57 @@
   {
     "id": "thisnumber",
     "name": "ThisNumber",
-    "description": "An international directory of white pages and yellow pages phone books, and online directory enquiries. It's a free, independent and up-to-date guide to telephone directories on the web.",
+    "description": "Use when you have a `name` or `phone` in a specific country and need that country's phone directory — a gateway to national white/yellow-pages that return `name`, `address`, and `phone`.",
     "url": "https://sur.ly/o/numberway.com/AA000014",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the right national telephone directory (white/yellow pages) for a given country, then searching it.",
     "selectorsIn": [
       "name",
       "phone"
     ],
     "selectorsOut": [
       "name",
-      "social-profile",
+      "address",
       "phone"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory-of-directories; it routes you to national phone books (each with its own free/paid model). The listed URL is a redirect wrapper — availability of the underlying portal varies.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a list of directories is passive. OpSec exposure begins on the destination national directory, where a query may be logged — apply that site's precautions there.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A curated portal linking to national phone directories worldwide; it holds no data itself and destination quality/coverage varies widely by country.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "numberway",
+      "phone-book-of-the-world",
+      "infobel"
+    ],
+    "aliases": [
+      "ThisNumber",
+      "thisnumber.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "people"
+      "people",
+      "phone-directory"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/people-search/thisnumber.md"
   },
   {
@@ -228183,47 +228201,57 @@
   },
   {
     "id": "cms-gov",
-    "name": "cms.gov",
-    "description": "OSINT tool: cms.gov.",
+    "name": "cms.gov (Open Payments)",
+    "description": "Use when you have a US doctor's `name` and want financial-industry ties — CMS Open Payments returns payments from drug/device firms, the paying `employer-org`, and the physician's practice `address`.",
     "url": "https://openpaymentsdata.cms.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a US physician/teaching hospital and mapping their payments from pharma/device companies (name, specialty, practice location, payers).",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official US government (CMS) database; no account needed to search or download.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public federal transparency database is passive and does not notify the physician. Standard sock-puppet browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "First-party US Centers for Medicare & Medicaid Services (CMS) data, mandated by the Sunshine Act; authoritative for reported physician/industry financial relationships.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ama-assn-org"
+    ],
+    "aliases": [
+      "CMS Open Payments",
+      "Open Payments Sunshine Act",
+      "openpaymentsdata.cms.gov"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "healthcare"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cms-gov.md"
   },
   {
@@ -252455,47 +252483,59 @@
   },
   {
     "id": "nidirect-gov-uk-2",
-    "name": "nidirect.gov.uk",
-    "description": "OSINT tool: nidirect.gov.uk.",
+    "name": "nidirect.gov.uk (Land & Property Registers)",
+    "description": "Use when you have a Northern Ireland `address` or owner `name` and want land/property records — the official gateway routes to registers returning ownership and `address` detail.",
     "url": "https://www.nidirect.gov.uk/information-and-services/buying-your-home/land-and-property-registers",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official gateway to Northern Ireland's land and property registers (ownership, boundaries, property records).",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The nidirect guidance is free; the underlying Land Registry / property searches (via Land & Property Services / LandWeb) typically charge a per-search fee. Some checks require an account.",
+    "opsec": "passive",
+    "opsecNote": "Searching a property register is passive and does not notify the owner. Paid searches require account/payment details, tying the lookup to you — use a role-based identity if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Northern Ireland government (nidirect) gateway to the statutory Land Registry; records are authoritative for NI property.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "land-registry-property-search",
+      "ros-gov-uk"
+    ],
+    "aliases": [
+      "nidirect land registry",
+      "Northern Ireland Land Registry"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "northern-ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nidirect-gov-uk-2.md"
   },
   {
@@ -261690,51 +261730,6 @@
     "_file": "library/tools/public-records/scoot.md"
   },
   {
-    "id": "scotlandspeople-gov-uk",
-    "name": "scotlandspeople.gov.uk",
-    "description": "OSINT tool: scotlandspeople.gov.uk.",
-    "url": "https://www.scotlandspeople.gov.uk/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "genealogybdmANDwills",
-      "Genealogy Linked Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/scotlandspeople-gov-uk.md"
-  },
-  {
     "id": "scotlandspeople-gov-uk-2",
     "name": "scotlandspeople.gov.uk",
     "description": "Use when you have a `name` and approximate date/place in Scotland and want official birth/marriage/death/census records to confirm identity and family links — returns `name`, `dob`, `address`, `associate` (parents/spouse).",
@@ -270480,46 +270475,56 @@
   {
     "id": "whorepresents-com",
     "name": "whorepresents.com",
-    "description": "OSINT tool: whorepresents.com.",
+    "description": "Use when you have a celebrity/public-figure `name` and want to find who represents them — returns the agency/publicist (`employer-org`) and a professional contact route.",
     "url": "http://www.whorepresents.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the agent, manager, or PR firm that represents a celebrity or public figure.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "A long-standing entertainment-industry contact database; basic lookups may be free but full contact detail and bulk access are subscription-gated. Coverage/uptime have become inconsistent over the years.",
+    "opsec": "passive",
+    "opsecNote": "Looking up a public figure's representation is passive and does not contact the person. If you then approach the agency, that is an active outreach step — plan pretext and attribution accordingly.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "An established industry directory of talent representation; useful but can be dated, and its free tier and reliability vary — corroborate a listed agency against the person's official/agency site.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "apollo-io",
+      "contactout"
+    ],
+    "aliases": [
+      "WhoRepresents",
+      "whorepresents.com"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "entertainment"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/whorepresents-com.md"
   },
   {
@@ -341988,44 +341993,55 @@
   {
     "id": "ssstik-io",
     "name": "ssstik.io",
-    "description": "OSINT tool: ssstik.io.",
+    "description": "Use when you have a TikTok video URL/`social-profile` and want to save it (watermark-free) without login — returns the downloaded video `image`/frames for offline analysis.",
     "url": "https://ssstik.io/en",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "No-login, watermark-free download of a public TikTok video for evidence preservation and frame analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account; ad-supported. No TikTok login required to download a public video.",
+    "opsec": "passive",
+    "opsecNote": "ssstik fetches the video through its own servers, so the download doesn't come from your IP and TikTok gives the target no viewer/download signal. You do paste the target URL into a third-party site — assume it's logged. Use a sock-puppet context; never log into TikTok here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A popular, functional third-party TikTok downloader unaffiliated with TikTok; reliable for public videos, but a scraper whose availability/terms can change.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "exolyt",
+      "cobalt-tools"
+    ],
+    "aliases": [
+      "SSSTik",
+      "ssstik.io"
+    ],
     "tags": [
       "tiktok",
-      "TikTok Related Sites"
+      "TikTok Related Sites",
+      "downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ssstik-io.md"
   },
   {
@@ -342832,44 +342848,54 @@
   {
     "id": "storysaver",
     "name": "StorySaver",
-    "description": "OSINT tool: StorySaver.",
+    "description": "Use when you have a public Instagram `username` and want to view/download their current Stories anonymously — returns Story `image`s/videos with possible `geolocation`/timestamp context.",
     "url": "https://www.storysaver.net",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing and saving a public Instagram account's active Stories before they expire.",
     "selectorsIn": [
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
       "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported, no login. Third-party Instagram Story viewers like this break frequently with Instagram's changes — verify it works before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "The value here is anonymity — StorySaver fetches Stories via its own servers, so (unlike viewing in-app) the target does NOT see you in their Story viewer list. You do disclose the target username to a third-party ad-supported site; assume it's logged. Never enter your Instagram credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Story-viewer site of variable reliability and uptime; unaffiliated with Instagram and frequently broken by platform changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "inflact-com-4",
+      "toutatis-2"
+    ],
+    "aliases": [
+      "StorySaver",
+      "storysaver.net"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "story-viewer"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/storysaver.md"
   },
   {
@@ -370220,13 +370246,13 @@
   {
     "id": "maigret-via-socid-extractor-soxoj-ecosystem",
     "name": "Maigret (via socid_extractor / soxoj ecosystem)",
-    "description": "Extracts account details and identifiers (names, IDs, linked profiles) from social media and other pages.",
+    "description": "Use when you have a profile URL/`social-profile` and want the hidden identifiers behind it — socid_extractor scrapes real `name`, user ID, `email`, and linked accounts to pivot further.",
     "url": "https://github.com/soxoj/socid_extractor",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Pulling hidden identifiers (real name, user ID, linked accounts) from a profile URL",
+    "bestFor": "Extracting hidden identifiers (real name, numeric user ID, linked accounts, emails) from a known profile page to pivot across platforms.",
     "selectorsIn": [
       "social-profile",
       "username"
@@ -370237,15 +370263,16 @@
       "device-id",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (soxoj); a Python CLI/library. No account or key; pairs naturally with Maigret.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "socid_extractor fetches the target's public profile page from your host, so that platform sees your IP request the page (a normal page view, no login, no notification). Run behind a proxy/VPN from a sock-puppet environment for hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "python-lib",
     "trust": "trusted",
-    "trustNote": "By soxoj; widely used companion to Maigret (listed in the Social-Media-OSINT collection).",
+    "trustNote": "By soxoj (author of Maigret), widely used in the OSINT community; it parses public page metadata, so results are as reliable as the source page, and site-specific parsers can break when platforms change.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -370254,8 +370281,13 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [
+      "social-analyzer",
+      "whatsmyname-web"
+    ],
     "aliases": [
-      "socid_extractor"
+      "socid_extractor",
+      "soxoj socid_extractor"
     ],
     "tags": [
       "identifier-extraction",
@@ -370263,7 +370295,7 @@
       "python"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/maigret-via-socid-extractor-soxoj-ecosystem.md"
   },
@@ -372347,41 +372379,52 @@
   {
     "id": "thorndyke",
     "name": "Thorndyke",
-    "description": "Checks the availability of a specified username on over 200 websites",
+    "description": "Use when you have a `username` and want a fast CLI account sweep — checks the handle's availability across 200+ websites and returns the `social-profile`s where it exists.",
     "url": "https://github.com/rlyonheart/thorndyke",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Command-line username enumeration across 200+ sites to find where a handle is registered.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "username"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (rlyonheart); a Python CLI installed locally. No account or key.",
+    "opsec": "passive",
+    "opsecNote": "Thorndyke requests each site's profile URL from your host, so those sites see your IP hit many URLs quickly. Run behind a proxy/VPN from a sock-puppet environment; it does not log into or notify the target accounts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community username-availability checker; like all such tools its site list and detection logic drift, so hits are heuristic and need visual confirmation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "sherlock-2",
+      "go-sherlock"
+    ],
+    "aliases": [
+      "thorndyke",
+      "rlyonheart thorndyke"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username-check"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/thorndyke.md"
   },
