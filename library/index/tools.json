@@ -175044,38 +175044,59 @@
   },
   {
     "id": "telegram-channels-scraper-telegraphite",
-    "name": "Telegram channels scraper TeleGraphite",
-    "description": "OSINT tool: Telegram channels scraper TeleGraphite.",
+    "name": "TeleGraphite (Telegram channels scraper)",
+    "description": "Use when you have public Telegram channel `username`s and want their posts, media, and any leaked contacts archived to JSON — returns social-profile posts, phone, and email.",
     "url": "https://github.com/hamodywe/telegram-scraper-TeleGraphite",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Batch-archiving posts and media from a list of public Telegram channels, with contact extraction.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "phone",
+      "email",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free, open-source Python tool. Installable via `pip install telegraphite`. Requires your own Telegram API credentials (free from my.telegram.org).",
+    "opsec": "active",
+    "opsecNote": "Runs through the Telegram API using YOUR API ID/hash tied to a phone-verified Telegram account, so activity is attributable to that account. Use a dedicated sock-puppet Telegram number, not your personal one. Reading public channels does not notify their admins.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Small open-source project (hamodywe) built on Telethon; inspectable but unaudited.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [
+      "telegram-scraper",
+      "telepathy"
+    ],
+    "aliases": [
+      "TeleGraphite",
+      "telegraphite"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "channel-scraper"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-channels-scraper-telegraphite.md"
   },
   {
@@ -177611,14 +177632,14 @@
   },
   {
     "id": "wechat-com",
-    "name": "wechat.com",
-    "description": "OSINT tool: wechat.com.",
+    "name": "WeChat",
+    "description": "Use when you have a `phone` or WeChat ID (`username`) and want to confirm it maps to a WeChat account and view its public profile — returns social-profile existence and display data.",
     "url": "http://www.wechat.com/en/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a phone/WeChat-ID maps to a live WeChat account and reading its public profile card.",
     "selectorsIn": [
       "phone",
       "username"
@@ -177626,29 +177647,42 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free app. There is no public web search; account/ID lookup happens inside the WeChat mobile/desktop app after login.",
+    "opsec": "active",
+    "opsecNote": "You must be logged into a WeChat account to search a phone/ID, and searching or adding a contact can generate a friend request or be visible to the target. WeChat (Tencent) is subject to Chinese data law and heavy logging. Use a dedicated sock-puppet account and number; never your own.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "WeChat is Tencent's first-party platform; account existence and profile data are authoritative, though user-set names/photos are self-asserted.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "telegram",
+      "whatsapp"
+    ],
+    "aliases": [
+      "wechat.com",
+      "Weixin"
+    ],
     "tags": [
       "messengerapps",
-      "Messenger Apps"
+      "Messenger Apps",
+      "china"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/messaging/wechat-com.md"
   },
   {
@@ -233186,47 +233220,54 @@
   },
   {
     "id": "eircode-ie",
-    "name": "eircode.ie",
-    "description": "OSINT tool: eircode.ie.",
+    "name": "Eircode Finder",
+    "description": "Use when you have an Irish `address` and want its unique Eircode (postcode), or an Eircode and want the matching address — returns a precise address for a single property.",
     "url": "https://finder.eircode.ie/#/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving an Irish address to its unique property-level Eircode, or reverse.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public lookup operated by the official Eircode service. No account.",
+    "opsec": "passive",
+    "opsecNote": "Official address-lookup utility; searching is anonymous and does not identify or notify anyone. No people data is returned — only address/postcode.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Eircode (An Post / Capita) — the authoritative Irish postcode system; address↔Eircode mapping is official.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-maps",
+      "eircode-ie-2"
+    ],
+    "aliases": [
+      "Eircode finder",
+      "finder.eircode.ie"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/eircode-ie.md"
   },
   {
@@ -248450,35 +248491,57 @@
   {
     "id": "michigan-resident-database",
     "name": "Michigan Resident Database",
-    "description": "OSINT tool: Michigan Resident Database.",
+    "description": "Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and associate leads.",
     "url": "https://www.michiganresidentdatabase.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free name-based lookup of Michigan residents to get address, DOB, and neighbor links.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free basic search; some detail/expanded reports may route to paid partner background-check services.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching is anonymous and does not notify the subject. You are, however, querying a third-party data-broker aggregation — use a clean browser session and be mindful the site may log queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party republication of Michigan public records (voter/SoS-derived data); a data broker, not an official state portal, so records may be stale or mismatched.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "truepeoplesearch",
+      "fastpeoplesearch",
+      "voter-records"
+    ],
+    "aliases": [
+      "michiganresidentdatabase.com",
+      "Michigan Residents Database"
+    ],
+    "tags": [
+      "people-search",
+      "michigan",
+      "voter-data"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/michigan-resident-database.md"
   },
   {
@@ -330985,45 +331048,56 @@
   },
   {
     "id": "myspace-com",
-    "name": "myspace.com",
-    "description": "OSINT tool: myspace.com.",
-    "url": "http://www.myspace.com/",
+    "name": "Myspace",
+    "description": "Use when you have a `username` or `name` and want to check for a legacy Myspace profile — returns a social-profile and old photos, mostly valuable as a historical-footprint check.",
+    "url": "https://myspace.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering a subject's legacy/early-2000s online identity, handle, and old photos.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search public profiles; an account is optional.",
+    "opsec": "passive",
+    "opsecNote": "Browsing/searching public profiles is passive and anonymous. If you sign in to view or connect, use a sock-puppet account, since interactions can be visible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Myspace still operates but pivoted to music/entertainment and lost most user-uploaded content (photos, audio, video) from before 2016 in a 2019 server migration; surviving profile data is old and self-asserted.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "wayback-machine"
+    ],
+    "aliases": [
+      "myspace.com"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "legacy-social-network"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/myspace-com.md"
   },
   {
@@ -343252,41 +343326,57 @@
   {
     "id": "threadsrecon",
     "name": "ThreadsRecon",
-    "description": "Threads profile investigation with sentiment and network analysis",
+    "description": "Use when you have a Threads `username` and want an automated scrape + analysis of their profile, posts, and network — returns social-profile data, associates, and PDF/JSON investigation reports.",
     "url": "https://github.com/offseq/threadsrecon",
     "category": "social-networks",
     "path": [
       "social-networks",
       "threads"
     ],
-    "bestFor": "Threads profile investigation with sentiment and network analysis",
-    "input": "Threads username",
-    "output": "Profile analysis, sentiment scores, network graphs, and PDF investigation reports",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-command Threads profile investigation with sentiment and network-graph reporting.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (offseq/threadsrecon) on GitHub. No paid tier.",
     "opsec": "active",
-    "opsecNote": "Makes direct requests to Threads to collect profile and post data for analysis.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Makes direct automated requests to threads.net for the target profile; scraping at volume can require a logged-in session and may trip Meta's anti-bot/rate limits. Run from a sock-puppet Threads/Instagram account and a non-attributable IP, never your own.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project (offseq) with active commit history (~79 commits); inspectable but unaudited, and dependent on Threads' HTML which changes without notice.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "threads-net",
+      "soig"
+    ],
+    "aliases": [
+      "offseq/threadsrecon"
+    ],
+    "tags": [
+      "threads",
+      "social-media-scraper"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/threads/threadsrecon.md"
   },
   {
@@ -350229,38 +350319,58 @@
   },
   {
     "id": "vk5",
-    "name": "VK5",
-    "description": "OSINT tool: VK5.",
+    "name": "VK5 (city4me VK viewer)",
+    "description": "Use when you have a VKontakte profile (`social-profile` id/URL) and want to surface hidden friends, activity, likes, and photos — returns associates, images, and activity metadata.",
     "url": "http://vk5.city4me.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting hidden friends, likes, online activity, and photos from a VK profile.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "image",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web service; most features unlock only after you authorize it against your own VK account (OAuth).",
+    "opsec": "active",
+    "opsecNote": "This is a third-party Russian VK-surveillance service. Authorizing it grants a foreign tool access to your VK account and exposes your queries; the account you use is attributable. Use a dedicated sock-puppet VK account, never a personal one, and assume the service logs everything. VK also applies flood-control that can throttle or flag automated viewing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Anonymous third-party VK scraper of unknown operator; requires handing it VK OAuth. Treat as untrusted infrastructure — useful signal, real operational risk.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vk-com",
+      "220vk"
+    ],
+    "aliases": [
+      "vk5.city4me.com",
+      "city4me"
+    ],
     "tags": [
-      "vkontakte"
+      "vkontakte",
+      "vk-analytics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/vk5.md"
   },
   {
@@ -371427,38 +371537,58 @@
   },
   {
     "id": "trace",
-    "name": "Trace",
-    "description": "OSINT tool: Trace.",
+    "name": "Trace (Trace OSINT)",
+    "description": "Use when you have a `username`, `email`, or `phone` and want a one-page sweep across 600+ sites plus breach and phone checks — returns social-profile links, breach hits, and phone metadata.",
     "url": "https://trace.manus.space",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast, free browser sweep of a username across 600+ platforms with added email-breach and phone lookups.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no login required. Breach checks are powered by XposedOrNot and BreachDirectory (no API key needed).",
+    "opsec": "passive",
+    "opsecNote": "Username enumeration runs server-side from Trace's infrastructure, so your IP does not hit each target site directly. But you disclose the target selectors to a third-party (Manus-hosted) app that may log queries. Avoid for the most sensitive subjects.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Hosted on manus.space (an AI-app platform), so it may be ephemeral and its result quality is unaudited; treat hits as leads. Aggregates public checkers rather than proprietary data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-web",
+      "sherlock",
+      "holehe"
+    ],
+    "aliases": [
+      "Trace OSINT",
+      "trace.manus.space"
+    ],
     "tags": [
-      "username-check"
+      "username-check",
+      "breach-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/trace.md"
   },
   {
