@@ -229335,46 +229335,54 @@
   {
     "id": "companycheck-co-uk",
     "name": "companycheck.co.uk",
-    "description": "OSINT tool: companycheck.co.uk.",
+    "description": "Use when you have a UK company `name` or a person's `name` and want directorships, filings and registered addresses — returns `employer-org`, `address`, `associate` (co-directors).",
     "url": "https://www.companycheck.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "UK company and director intelligence built on Companies House data, with cross-linked director networks.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic company profiles and director listings are viewable free (a free account unlocks more); full financials, credit reports and director-network detail sit behind paid plans.",
+    "opsec": "passive",
+    "opsecNote": "Passive — data comes from Companies House filings via Company Check's index; the company/directors are not notified. Viewing full detail may require a free login, which creates an account trail on your side; use a sock-puppet account for sensitive work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-established UK company-data reseller sourcing from Companies House; the underlying registry data is authoritative, but the value-add (credit scores, network maps) is Company Check's own analysis.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Company Check",
+      "companycheck.co.uk"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "uk-companies-house"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/companycheck-co-uk.md"
   },
   {
@@ -238080,46 +238088,52 @@
   {
     "id": "geneanet-org",
     "name": "geneanet.org",
-    "description": "OSINT tool: geneanet.org.",
+    "description": "Use when you have a `name` and want genealogical records — ancestors, relatives, birth/death dates and places — returns `associate` (family), `dob`, and `address`/place links.",
     "url": "https://en.geneanet.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Genealogy research — family trees and vital records, especially strong for France and continental Europe.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "associate",
+      "dob",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and to view much shared-tree and index data with a free account; a Premium subscription unlocks full record images, some collections, and advanced search filters.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you search user-contributed trees and record indexes; living people are generally masked, and no subject is notified. A free account is needed for most detail; register with a sock-puppet identity for sensitive work. Geneanet (owned by Ancestry) logs searches.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major, long-established genealogy platform; index data derives from official vital records, but user-submitted family trees are unverified and can contain errors or speculation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Geneanet"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "genealogy"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/geneanet-org.md"
   },
   {
@@ -243413,46 +243427,54 @@
   {
     "id": "info-clipper-com",
     "name": "info-clipper.com",
-    "description": "OSINT tool: info-clipper.com.",
+    "description": "Use when you have a company `name` (or an `employer-org`/`phone`) and want its registry profile, directors and address across 200 countries — returns `employer-org`, `address`, `associate` (directors).",
     "url": "https://www.info-clipper.com/en/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Worldwide company KYC lookups — profiles, directors, shareholders and addresses across 200 countries.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "phone"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Company search and directory browsing are free; full reports (registration detail, financials, official documents) are pay-as-you-go with no subscription (a prepaid pass lowers per-report cost). Budget for a paid report to get the meaty data.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query info-clipper's aggregated registry data; the company/directors are not notified. Info-clipper logs your searches and requires payment (hence identity/payment trail) for full reports; use appropriate billing hygiene if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial reseller aggregating official company registers from many jurisdictions; data ultimately derives from registries but is repackaged, so verify against the primary register for critical facts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "info-clipper"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/info-clipper-com.md"
   },
   {
@@ -280983,43 +281005,51 @@
   {
     "id": "duckduckgo-com",
     "name": "duckduckgo.com",
-    "description": "OSINT tool: duckduckgo.com.",
+    "description": "Use when you have a `name`, `username` or any string and want unpersonalised search results and !bang shortcuts to pivot fast — returns `social-profile`, `name` and page leads.",
     "url": "https://duckduckgo.com/?t=hc",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Privacy-respecting, non-personalised web search with !bang operators for quick cross-site pivots.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account, no ads-tracking profile; core search plus !bang redirects at no cost.",
+    "opsec": "passive",
+    "opsecNote": "DuckDuckGo does not build a personalised profile of you, so results aren't skewed by your history and your searches aren't tied to a persistent identity the way a logged-in Google session is — good hygiene for investigative queries. Searches still traverse your IP/network; use Tor or a VPN for sensitive subjects. Queries reach the target site only when you click a result.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A mainstream, reputable search engine; results come from its own crawl plus Bing, so coverage differs from Google — use it alongside, not instead of, other engines.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DuckDuckGo",
+      "DDG"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "privacy"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/duckduckgo-com.md"
   },
   {
@@ -334243,13 +334273,13 @@
   {
     "id": "osintdojo-com",
     "name": "osintdojo.com",
-    "description": "OSINT tool: osintdojo.com.",
+    "description": "Use when you have a `username`/`name` on a platform (e.g. Pinterest) and want a methodology map of every pivot available — returns a visual guide toward `social-profile`s, not live data.",
     "url": "https://www.osintdojo.com/diagrams/pinterest",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Free platform-by-platform OSINT flowcharts showing how to pivot from one selector to the next.",
     "selectorsIn": [
       "username",
       "name"
@@ -334258,29 +334288,37 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free educational resource; diagrams viewable as embedded SVG and downloadable PDF, no account.",
+    "opsec": "passive",
+    "opsecNote": "This is reference/training material — reading it touches only osintdojo.com and reveals nothing about any target. OpSec risk lives in the techniques it describes (some require logging into a platform or probing profiles); apply sock-puppet discipline when you execute the steps.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "OSINT Dojo is a respected, widely-cited educational project; the diagrams are curated methodology, not a live data feed, and platform surfaces shift over time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT Dojo",
+      "osintdojo diagrams"
+    ],
     "tags": [
       "pinterest",
-      "Pinterest Related Sites"
+      "Pinterest Related Sites",
+      "methodology",
+      "training"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osintdojo-com.md"
   },
   {
@@ -346724,44 +346762,50 @@
   {
     "id": "twdown-net",
     "name": "twdown.net",
-    "description": "OSINT tool: twdown.net.",
+    "description": "Use when you have a `social-profile` (a tweet/X post URL) and want to archive its video before deletion — returns the downloaded video/`image` and its `metadata-exif`.",
     "url": "https://twdown.net/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Free, no-login download of Twitter/X videos (and MP3 audio) from a tweet URL.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free, no registration, no stated download limit; ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public tweet URL; twdown's server fetches the media, so the target isn't notified and never sees your IP. twdown's servers (and their ad networks) see the URL you submit and set trackers — use a hardened/sock-puppet browser and an ad blocker. Never submit private/authenticated post URLs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A functional but anonymous, ad-heavy third-party downloader; it works, but there's no accountable operator, so verify the media against the live tweet.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "twdown",
+      "twdown.net"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "media-archival"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twdown-net.md"
   },
   {
@@ -371074,29 +371118,38 @@
   {
     "id": "namechk",
     "name": "Namechk",
-    "description": "Quick username availability check across social media and domains",
+    "description": "Use when you have a `username` (or `domain`) and want to see, in one screen, which platforms it is taken on — returns per-platform availability implying existing `social-profile`s.",
     "url": "https://namechk.com/",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Quick username availability check across social media and domains",
-    "input": "Username or domain name",
-    "output": "Availability status across 100+ platforms and domain extensions",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast web-based check of a handle's availability across 90+ platforms and domain TLDs.",
+    "selectorsIn": [
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to check usernames and domains; monetised via domain-registration and \"brand\" upsell links you can ignore.",
     "opsec": "passive",
-    "opsecNote": "Searches are routed through Namechk's servers; target accounts are not directly contacted by the user.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Namechk queries the platforms server-side and shows you availability — you never touch the target sites directly, and the subject is not notified. Namechk's own servers see the handles you submit; assume logged. Use a clean browser if the handle itself is sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running commercial username/domain checker; results are a quick triage signal, not proof of account ownership, and its \"available/taken\" logic can lag reality.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -371104,11 +371157,16 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "namechk.com"
+    ],
+    "tags": [
+      "username",
+      "availability"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/namechk.md"
   },
   {
@@ -371490,13 +371548,13 @@
   {
     "id": "osrframework-jaykali-fork",
     "name": "OSRFramework (jaykali fork)",
-    "description": "Framework of APIs and tools for accurate online research (usernames, domains, mails).",
+    "description": "Use when you have a `username`, `email`, `phone` or `domain` and want a multi-module CLI to enumerate accounts and registrations — returns `social-profile`, `email`, `domain` leads.",
     "url": "https://github.com/jaykali/osrframework",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Username/email/domain searches via usufy/mailfy/searchfy utilities",
+    "bestFor": "Classic multi-utility OSINT suite (usufy/mailfy/searchfy/phonefy/domainfy) for username, email, name, phone and domain enumeration.",
     "selectorsIn": [
       "username",
       "email",
@@ -371508,15 +371566,16 @@
       "email",
       "domain"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free and open source; install via pip/from source. No account. Note it is aging — several provider modules (notably mailfy and some usufy sites) are known to be partially broken.",
+    "opsec": "active",
+    "opsecNote": "usufy probes each target site directly to test a username (like Sherlock), and phonefy/domainfy hit third-party services — these touch platforms, not the subject. Run behind Tor/proxy for sensitive work. mailfy historically queried breach/registration services; treat those queries as logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Fork of the well-known i3visio OSRFramework (23 stars on this fork; original is widely used).",
+    "trustNote": "Fork of the well-known i3visio OSRFramework; the original is largely unmaintained and bit-rotted, so expect broken modules — still useful where its providers remain live.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -371538,7 +371597,7 @@
       "i3visio"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/osrframework-jaykali-fork.md"
   },
@@ -371793,41 +371852,50 @@
   {
     "id": "pyosint",
     "name": "Pyosint",
-    "description": "Search for usenames form a list of 326 websites. Scrap a website to extract all links form a given website. Automate the search of subdomains of a given domain from diffrent services",
+    "description": "Use when you have a `username` (or a `domain`) and want a CLI that enumerates accounts across ~326 sites plus scrapes links and subdomains — returns `social-profile` URLs and `domain` leads.",
     "url": "https://github.com/d8rkmind/Pyosint",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Command-line username enumeration across ~326 sites, plus link scraping and subdomain discovery.",
     "selectorsIn": [
-      "username"
+      "username",
+      "domain"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "username",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Python 3); clone the repo and install requirements with pip. No account or keys for the core Find module.",
+    "opsec": "active",
+    "opsecNote": "The Find module directly requests a profile URL on each of ~326 sites to test a username (like Sherlock), and Enum queries third-party services (VirusTotal, PassiveDNS, crt.sh, ThreatCrowd) — both touch external services, not the subject. Threaded runs are noisy; route through a proxy/VPN for sensitive work and expect rate-limiting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small community Python tool (fork of the syamsv/Pyosint project); functional but not widely audited — expect some site adapters to be stale.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Pyosint"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username",
+      "enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/pyosint.md"
   },
@@ -372018,29 +372086,35 @@
   {
     "id": "sherlock",
     "name": "Sherlock",
-    "description": "Mass username enumeration across 400+ sites",
+    "description": "Use when you have a `username` and want to find every site where that handle is registered — returns a list of `social-profile` URLs.",
     "url": "https://github.com/sherlock-project/sherlock",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Mass username enumeration across 400+ sites",
-    "input": "Username(s)",
-    "output": "List of discovered profile URLs across social networks",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Mass username enumeration across 400+ sites from the command line.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (MIT); install locally with pip/pipx or run via Docker. No account, no keys.",
     "opsec": "active",
-    "opsecNote": "Directly queries each target site to check username existence; supports Tor/proxy for anonymity.",
+    "opsecNote": "Sherlock directly requests a profile URL on each of 400+ sites to test whether the username exists — those sites (and any that log referrers) see the hits. It does NOT contact the person, but it does touch every platform. Route through Tor/a proxy (--tor / --proxy) for sensitive work and expect some sites to rate-limit or false-positive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The de-facto standard open-source username enumerator (sherlock-project); very widely used and actively maintained, but community-run and prone to per-site false positives/negatives as sites change.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -372048,11 +372122,16 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "sherlock-project"
+    ],
+    "tags": [
+      "username",
+      "enumeration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/sherlock.md"
   },
   {
