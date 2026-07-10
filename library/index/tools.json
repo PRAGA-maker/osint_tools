@@ -142443,37 +142443,53 @@
   {
     "id": "faceagle",
     "name": "Faceagle",
-    "description": "OSINT tool: Faceagle.",
+    "description": "Use when you have a `face`/`image` of a person and want to find other online images/profiles of the same face — a reverse face-search engine — returns matching `image`s, `social-profile`s, and lookalikes.",
     "url": "https://faceagle.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Reverse facial-recognition search — upload a face photo to find where else that person appears online.",
+    "selectorsIn": [
+      "face",
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "face",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free searches are typically offered with results/credits gated behind a paid tier (the common model for face-search engines); confirm current limits on the site.",
+    "opsec": "active",
+    "opsecNote": "Uploading a target's face to a third-party recognition engine sends biometric data to that operator, who may retain/log it — a real privacy and legal exposure. Use only with a lawful basis, strip identifying metadata from the image first, and prefer a sock-puppet account; assume the uploaded face is stored.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party face-search engine; capable in principle but not independently vetted here, and results (like all face search) include false matches that require human confirmation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Faceagle face search"
+    ],
     "tags": [
-      "image-search"
+      "image-search",
+      "face-search",
+      "facial-recognition"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/faceagle.md"
   },
   {
@@ -152264,8 +152280,8 @@
   },
   {
     "id": "pastebin-osint-harvester",
-    "name": "Pastebin OSINT Harvester",
-    "description": "OSINT tool: Pastebin OSINT Harvester.",
+    "name": "Pastebin OSINT Harvester (sniff-paste)",
+    "description": "Use when you want to continuously scrape Pastebin for a target's `email`, `ip-address`, `phone`, or `crypto-wallet` appearing in pastes/dumps — returns extracted identifiers linked back to source pastes.",
     "url": "https://github.com/needmorecowbell/sniff-paste",
     "category": "image-video-face",
     "path": [
@@ -152273,34 +152289,50 @@
       "documents",
       "paste-sites"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Automated, multithreaded Pastebin monitoring that extracts and databases emails, IPs, phones, URLs, and crypto addresses from recent pastes.",
+    "selectorsIn": [
+      "email",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "email",
+      "ip-address",
+      "phone",
+      "crypto-wallet"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Python). Needs a local MySQL database and (for higher rates) a Pastebin Pro/scraping API subscription; the free public scrape is rate-limited.",
+    "opsec": "passive",
+    "opsecNote": "You scrape Pastebin's public pastes, not the target — passive toward any subject. The tool also port-scans harvested IPs, which is an ACTIVE, potentially unlawful action against third-party hosts; disable/avoid the port-scan feature unless you have authorization for those IPs.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A community Python OSINT tool; straightforward scraping/regex extraction, but review the code and be mindful its IP port-scanning goes beyond passive collection.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "sniff-paste",
+      "Pastebin OSINT Harvester"
+    ],
+    "tags": [
+      "pastebin",
+      "paste-sites",
+      "breach-monitoring",
+      "data-harvesting"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/documents/paste-sites/pastebin-osint-harvester.md"
   },
   {
@@ -215652,35 +215684,52 @@
   {
     "id": "inteltechniques-telephone",
     "name": "IntelTechniques Telephone",
-    "description": "OSINT tool: IntelTechniques Telephone.",
+    "description": "Use when you have a `phone` number and want to fan it across many phone-OSINT sources at once via Michael Bazzell's search-form tool — returns `name`, `address`, `social-profile`, carrier leads from the linked services.",
     "url": "https://inteltechniques.com/tools/Telephone.html",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A consolidated set of phone-number search forms that push one number to many reverse-lookup, carrier, and social sources.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use; maintained by Michael Bazzell as a companion to the OSINT Techniques book (tools last updated Nov 2024). Some destination services it links to have their own paywalls.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tool only builds and submits queries — it doesn't contact the target. But each form hands your number to a third-party service that logs it (and some, like carrier/HLR or messaging apps, can be more intrusive). Run from a sock-puppet browser/IP and be deliberate about which forms you fire.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Created by Michael Bazzell (former FBI, widely respected OSINT author); the tool itself is authoritative as a query launcher, though result quality depends on the third-party sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IntelTechniques phone search tool",
+      "Bazzell telephone tool"
+    ],
+    "tags": [
+      "phone",
+      "osint-framework",
+      "reverse-phone-lookup"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/phone/inteltechniques-telephone.md"
   },
   {
@@ -223726,46 +223775,52 @@
   {
     "id": "birmingham-public-library-databases",
     "name": "Birmingham Public Library Databases",
-    "description": "Database of coal mine fatalities occurring in Alabama from 1898 to 1938, inventors, episcopal church registers, obituaries, and more",
+    "description": "Use when you have a `name` linked to Alabama/Birmingham and want niche local-history records (coal-mine fatalities, obituaries, church registers, inventors) — returns `dob`/death, `associate`, `employer-org`, `address` from historical indexes.",
     "url": "http://www.bplonline.org/virtual/databases/default.aspx?p=2&q=11#db",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Specialty local-history and genealogy indexes for the Birmingham/Alabama area (mine fatalities, obituaries, church and civil records).",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "address",
+      "associate",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The library's own local-history index databases are free to search; some linked commercial genealogy databases may require a library card / in-library access.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A library records index — you query historical databases, nothing reaches any subject. Some databases may want a free library-card login; use a research account where needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by the Birmingham Public Library (Alabama); its curated local-history indexes are drawn from primary records, though transcription errors are possible.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "aliases": [
+      "BPL databases",
+      "Birmingham Alabama Public Library databases"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/birmingham-public-library-databases.md"
   },
@@ -230048,47 +230103,57 @@
   },
   {
     "id": "croatia",
-    "name": "Croatia",
-    "description": "OSINT tool: Croatia.",
+    "name": "Croatia (FINA Register of Beneficial Owners)",
+    "description": "Use when you have a Croatian `employer-org` (company) and want its beneficial owners — returns the natural-person `name`s who ultimately own/control the entity, plus `associate` links.",
     "url": "https://rsv.fina.hr/RSV-javnost/login",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the beneficial owners (natural persons) behind Croatian legal entities via the official UBO register.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The data is provided free of charge, but access to the public register requires authentication through Croatia's NIAS national e-identity system — a hard gate for anyone without Croatian e-ID credentials.",
+    "opsec": "passive",
+    "opsecNote": "You query the official register, not the target — the subject isn't notified. However, access is via NIAS login, which ties every lookup to an authenticated (Croatian) identity; there is no anonymous access, so plan for attribution and a lawful basis (it is personal data under AML law).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trust": "trusted",
+    "trustNote": "Operated by FINA for Croatia's Ministry of Finance under the Money Laundering and Terrorist Financing Prevention Act; the beneficial-owner data is authoritative statutory filing.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "hr"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Registar stvarnih vlasnika",
+      "Croatia Register of Beneficial Owners",
+      "FINA RSV"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/croatia.md"
   },
   {
@@ -236334,46 +236399,53 @@
   {
     "id": "gassaferegister-co-uk",
     "name": "gassaferegister.co.uk",
-    "description": "OSINT tool: gassaferegister.co.uk.",
+    "description": "Use when you have a UK gas engineer/business `name`, `employer-org`, or `address`/postcode and want to verify Gas Safe registration — returns registered business/engineer `name`, `employer-org`, licence number, and service `address`/area.",
     "url": "https://www.gassaferegister.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a UK gas engineer or business is Gas Safe registered, and finding registered businesses by area.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public \"check the register\" / \"find an engineer\" lookup; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public professional-register search — you query the official register, nothing reaches the subject. No login; standard browser hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Gas Safe Register is the official statutory register of legally registered gas engineers/businesses in the UK; membership data is authoritative.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Gas Safe Register",
+      "gassaferegister"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk-trades-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gassaferegister-co-uk.md"
   },
   {
@@ -314672,49 +314744,6 @@
     "_file": "library/tools/social-networks/datanyze-com.md"
   },
   {
-    "id": "ddlvid-com",
-    "name": "ddlvid.com",
-    "description": "OSINT tool: ddlvid.com.",
-    "url": "https://ddlvid.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook",
-      "Facebook General Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/ddlvid-com.md"
-  },
-  {
     "id": "deaditarchive-netlify-app",
     "name": "Deaditarchive.netlify.app",
     "description": "OSINT tool: Deaditarchive.netlify.app.",
@@ -318596,7 +318625,7 @@
   {
     "id": "fedica",
     "name": "Fedica",
-    "description": "Cross-platform social analytics and tracking",
+    "description": "Use when you have a public `username`/account and want audience analytics, posting patterns, and follower-location mapping — returns `geolocation` (audience/location distribution), activity patterns, and `social-profile` insights.",
     "url": "https://fedica.com/",
     "category": "social-networks",
     "path": [
@@ -318604,36 +318633,47 @@
       "twitter",
       "location-mapping"
     ],
-    "bestFor": "Cross-platform social analytics and tracking",
-    "input": "Connected social accounts or profile targets",
-    "output": "Engagement metrics, trend data, and audience analytics",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Cross-platform social analytics — mapping an account's follower locations and analyzing its posting behavior and audience.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Freemium — a free tier with limited analyses/history; deeper analytics, larger accounts, and export are paid. Connecting your own account unlocks more; analyzing others is more limited on free.",
     "opsec": "active",
-    "opsecNote": "Platform usage and connected account actions are visible to service provider logs.",
+    "opsecNote": "Fedica (formerly Tweepsmap) is a registered platform that authenticates via your social accounts. Connecting an account exposes it to Fedica and can, for your own account, be visible to the platform; analyzing a third-party public account is less intrusive but still logged. Use a sock-puppet account and never connect a personal one.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "An established social-analytics vendor (formerly Tweepsmap); metrics are computed from public/platform data and are reliable in aggregate, though follower-location is inferred, not exact.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Fedica",
+      "Tweepsmap"
+    ],
+    "tags": [
+      "twitter",
+      "x-com",
+      "social-analytics",
+      "audience-mapping"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/location-mapping/fedica.md"
   },
   {
@@ -325473,45 +325513,52 @@
   },
   {
     "id": "ins-downloader-addons-mozilla-org",
-    "name": "ins downloader (addons.mozilla.org)",
-    "description": "OSINT tool: ins downloader (addons.mozilla.org).",
+    "name": "Instagram Downloader (addons.mozilla.org)",
+    "description": "Use when you are viewing an Instagram/Threads profile or post and want to download its photos/videos for offline analysis — a Firefox extension that adds download buttons — returns `image`/video files.",
     "url": "https://addons.mozilla.org/en-GB/firefox/addon/ins-downloader/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "One-click downloading of Instagram (and Threads) images/videos from the browser for offline evidence and reverse-image analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free Firefox add-on (MIT-licensed, ~37k users, actively updated). No account or payment.",
+    "opsec": "active",
+    "opsecNote": "The extension runs in your logged-in Instagram session and requires access to Instagram/Threads data. Downloading media means you are browsing the target's profile while authenticated — use a sock-puppet Instagram account and a dedicated Firefox profile; a third-party extension can also see your session, so vet it and isolate it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A community-maintained browser extension; useful and popular, but a third-party add-on with broad access to your Instagram session — review permissions and run it in isolation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ins downloader",
+      "Instagram Downloader Firefox"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ins-downloader-addons-mozilla-org.md"
   },
   {
@@ -368897,42 +368944,49 @@
   {
     "id": "namevine-user-name-search",
     "name": "NameVine (User Name Search)",
-    "description": "OSINT tool: NameVine (User Name Search).",
+    "description": "Use when you have a `username` and want an instant, type-as-you-go availability check across major social handles and domains — returns which platforms/domains the handle is taken on (i.e. where the person likely has a `social-profile`).",
     "url": "https://namevine.com",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, real-time checking of one handle across social networks and domain extensions to spot where it's registered.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; a member sign-in exists for enhanced features, but the core cross-platform/domain check works without an account.",
+    "opsec": "active",
+    "opsecNote": "NameVine checks handle availability by querying each platform/registrar, so those services see the lookups (from NameVine's infrastructure). It doesn't notify the target. Treat \"taken\" as a presence signal, not confirmation the same person owns it; use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing handle/domain availability checker; fast and convenient, but availability checks yield false positives (namesakes) and false negatives (site markup changes).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NameVine",
+      "namevine username search"
+    ],
     "tags": [
-      "username"
+      "username",
+      "handle-availability"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-10",
+    "enrichment": "full",
     "_file": "library/tools/username/namevine-user-name-search.md"
   },
   {
