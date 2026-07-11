@@ -125081,13 +125081,13 @@
   {
     "id": "geogratis-canada",
     "name": "GeoGratis (Canada)",
-    "description": "Map database of the Government of Canada, including mapping tools and applications",
+    "description": "Use when you have a Canadian `geolocation` or `address`/area and want free official maps, aerial imagery, topographic data and place names — returns geolocation and address context.",
     "url": "http://geogratis.cgdi.gc.ca",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading free Government-of-Canada topographic maps, imagery and geospatial datasets for an area.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -125096,31 +125096,37 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and unrestricted — a Natural Resources Canada portal providing open geospatial data at no cost via the browser (data also mirrored on the Open Government portal).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Downloading public map/imagery data is passive and touches no subject. Only your IP reaches the government server. Nothing identifies who or what you are investigating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Natural Resources Canada (NRCan); authoritative official geospatial data, though some datasets have migrated to open.canada.ca / GEO.CA and coverage/currency varies by layer.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GeoGratis",
+      "GéoGratis",
+      "geogratis.gc.ca"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "canada"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/geogratis-canada.md"
   },
@@ -156588,44 +156594,52 @@
   },
   {
     "id": "search-by-image",
-    "name": "Search by Image",
-    "description": "A browser extension to reverse search an image on multiple search engines.",
+    "name": "Search by Image (browser extension)",
+    "description": "Use when you have an `image` and want to reverse-search it across many engines at once from a right-click menu — returns matching image copies, social-profile and face leads.",
     "url": "https://addons.opera.com/extensions/details/search-by-image/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "One-click reverse image search across Google, Bing, Yandex, TinEye and many other engines from any webpage.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
       "image",
-      "social-profile"
+      "social-profile",
+      "face"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source browser extension (Chrome/Firefox/Edge/Opera). No account.",
+    "opsec": "passive",
+    "opsecNote": "Reverse searching uploads/links the image to third-party search engines (Google, Yandex, etc.), which may retain it — that is a data-handling exposure, not a leak to the target. The subject is not notified. Avoid uploading sensitive images you don't want cached by search providers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-regarded open-source extension (by Armin Sebastian) featured in Bellingcat's toolkit; it orchestrates the search engines rather than providing its own index, so match quality is the engines' own.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Search by Image extension",
+      "Armin Sebastian Search by Image"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "reverse-image-search"
+      "reverse-image-search",
+      "browser-extension"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/search-by-image.md"
   },
   {
@@ -178590,44 +178604,53 @@
   },
   {
     "id": "wacheck-online",
-    "name": "wacheck.online",
-    "description": "OSINT tool: wacheck.online.",
+    "name": "WACheck Online",
+    "description": "Use when you have a `phone` number and want to monitor its WhatsApp online/offline activity to infer a pattern of life and timezone — returns a social-profile presence/activity signal.",
     "url": "https://wacheck.online/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Tracking when a WhatsApp number is online/offline to infer active hours, timezone and routine.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "phone"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free checks are heavily rate-limited (one every several seconds, short trial); continuous/logged monitoring is a paid \"WA Watcher\" subscription.",
+    "opsec": "passive",
+    "opsecNote": "It observes the number's WhatsApp online-presence indicator — it does not message the target, so the person is not notified. However, this is intrusive activity-surveillance; use only with proper authorisation, and be aware the service itself sees the numbers you monitor.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party service that exploits WhatsApp's online-presence indicator. It has been described critically in the press as a surveillance tool; treat the data as observational and the operator as untrusted with your query list.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WA Check",
+      "wacheck.online",
+      "WA Watcher"
+    ],
     "tags": [
       "whatsapp",
-      "WhatsApp"
+      "WhatsApp",
+      "presence-monitoring"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/wacheck-online.md"
   },
   {
@@ -217870,45 +217893,51 @@
   },
   {
     "id": "ifreeicloud-co-uk",
-    "name": "ifreeicloud.co.uk",
-    "description": "OSINT tool: ifreeicloud.co.uk.",
+    "name": "iFreeiCloud IMEI/Serial Check",
+    "description": "Use when you have an Apple device `device-id` (IMEI or serial) and want its model details and iCloud/Find My lock and blacklist status — returns enriched device-id (model, activation-lock, carrier, blacklist).",
     "url": "https://ifreeicloud.co.uk/free-check",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up an iPhone/iPad's model, iCloud (Find My) activation-lock and lost/blacklist status from its IMEI or serial.",
     "selectorsIn": [
-      "phone"
+      "device-id"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "device-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The basic check (model + iCloud/Find My status) is free. Detailed reports (full carrier, sim-lock, blacklist history, MDM) are paid per-lookup services.",
+    "opsec": "passive",
+    "opsecNote": "Queries device databases by IMEI/serial — it does not contact the phone or its owner, so nothing is leaked to the subject. The site is Cloudflare-fronted; only your IP is exposed. Never enter an IMEI you are not authorised to check.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial IMEI/GSX-checking service; results (model, activation lock) draw on Apple/GSMA data and are generally accurate, though free-tier detail is limited and paid tiers vary in reliability.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "iFreeiCloud",
+      "ifreeicloud.co.uk",
+      "iCloud check"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "imei-check"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/ifreeicloud-co-uk.md"
   },
   {
@@ -234603,47 +234632,53 @@
   },
   {
     "id": "directorwho-co-uk",
-    "name": "directorwho.co.uk",
-    "description": "OSINT tool: directorwho.co.uk.",
+    "name": "DirectorWho",
+    "description": "Use when you have a `name` and want the UK companies they are/were a director of, plus co-directors and DOB/address hints — returns employer-org, associate, dob and address.",
     "url": "https://www.directorwho.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-searching a person's name across UK company directorships and their co-directors.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "dob",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; a front-end that re-presents live Companies House data (which is itself free and public).",
+    "opsec": "passive",
+    "opsecNote": "Searches public Companies House-derived records; the director is not notified. Only your IP touches the site. Note that Companies House exposes director month/year of birth and a service/registered address — public but personal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party interface over authoritative Companies House data; its name/DOB merging is convenient but heuristic — confirm merged profiles against the official register before treating them as one person.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Director Who",
+      "directorwho.co.uk"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "companies-house"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/directorwho-co-uk.md"
   },
   {
@@ -244323,47 +244358,53 @@
   },
   {
     "id": "icas-org-uk-2",
-    "name": "icas.org.uk",
-    "description": "OSINT tool: icas.org.uk.",
+    "name": "ICAS Disciplinary Notices",
+    "description": "Use when you have a `name` of a Scottish chartered accountant and want to check for published disciplinary findings against them — returns name, employer-org context and a case document-id.",
     "url": "https://www.icas.com/regulation/regulatory-monitoring/disciplinary-notices",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a chartered accountant has published ICAS disciplinary findings.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public regulatory notices published by ICAS; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Public regulator notices; reading them is anonymous and does not notify anyone. Only your IP touches the ICAS site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Institute of Chartered Accountants of Scotland (ICAS) is the statutory professional body; published disciplinary notices are authoritative records of findings against its members/firms.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ICAS disciplinary notices",
+      "Institute of Chartered Accountants of Scotland",
+      "icas.com"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "accountancy"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/icas-org-uk-2.md"
   },
   {
@@ -252939,47 +252980,55 @@
   },
   {
     "id": "myheritage-com",
-    "name": "myheritage.com",
-    "description": "OSINT tool: myheritage.com.",
+    "name": "MyHeritage",
+    "description": "Use when you have a `name` and want genealogical records and family-tree links — relatives, dates, places — to map a person's family network — returns name, associate (relatives), dob and address.",
     "url": "https://www.myheritage.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Building a family/relative network and finding birth/marriage/death and census records from a name.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "dob",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register, search, and build/view trees; viewing many historical record images and using DNA/record matches requires a paid subscription. Search hits (names, dates, record existence) are visible before you pay.",
+    "opsec": "passive",
+    "opsecNote": "Searching records/trees does not notify anyone living. Be careful with living people — MyHeritage restricts and privacy-masks living individuals, and building a tree from an account ties research to you. Use an investigation account, not a personal genealogy account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A major commercial genealogy platform. Historical records are reliable primary/secondary sources; user-submitted family trees are crowd data and can contain errors — verify tree claims against actual records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "MyHeritage",
+      "myheritage.com"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "family-tree"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/myheritage-com.md"
   },
   {
