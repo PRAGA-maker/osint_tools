@@ -227464,46 +227464,52 @@
   {
     "id": "canadian-obituaries",
     "name": "Canadian Obituaries",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name` and want to check whether a subject (or relative) has a Canadian death/obituary notice — returns death confirmation, funeral home, location, and surviving family.",
     "url": "http://www.canadianobituaries.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a death and pulling funeral-home, location, and family (associate) details from Canadian obituary notices.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search published notices; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading published obituary notices is passive and non-attributable; these are intentionally public tributes. No sock puppet needed. Handle findings with sensitivity given the bereavement context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An obituary publishing platform fed by funeral homes; notices are genuine but family-authored, and coverage skews to recent notices from participating homes rather than a complete national death index.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "CanadianObituaries.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "obituary",
+      "genealogy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/canadian-obituaries.md"
   },
@@ -228341,46 +228347,53 @@
   {
     "id": "childcare-co-uk",
     "name": "childcare.co.uk",
-    "description": "OSINT tool: childcare.co.uk.",
+    "description": "Use when you have a `name` or postcode and want to find a subject who works in UK childcare/tutoring — returns provider profiles with area, experience, qualifications, and reviews.",
     "url": "http://www.childcare.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a UK childminder, nanny, babysitter, or tutor's public profile and working area by name or postcode.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
+      "social-profile",
       "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and searching provider profiles is free; contacting providers via the on-site messaging and some features require a (free or paid) member account.",
+    "opsec": "passive",
+    "opsecNote": "Searching and viewing public provider profiles is passive. Messaging a provider goes through the site's system and reveals you to them — use a sock-puppet account and never contact a subject directly. Providers can sometimes see profile-view activity if you're logged in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large, established UK childcare/tutor marketplace; profiles are self-authored (with optional document validation), so treat details as claimed until corroborated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Childcare.co.uk"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "childcare"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/childcare-co-uk.md"
   },
   {
@@ -243455,46 +243468,55 @@
   {
     "id": "idealista-com",
     "name": "idealista.com",
-    "description": "OSINT tool: idealista.com.",
+    "description": "Use when you have an `address` or area and want property listings tied to it in Spain, Italy, or Portugal — returns listing photos, features, price, and the listing agent/contact.",
     "url": "https://www.idealista.com/en/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Researching property listings (photos, features, agent contact) by location in Spain, Italy, and Portugal.",
     "selectorsIn": [
-      "name",
       "address",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "image",
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and searching listings is free; contacting agents needs no payment, but some pro/market-data features and unthrottled use require an account/subscription.",
+    "opsec": "passive",
+    "opsecNote": "Searching listings and viewing photos is passive and non-attributable. Contacting an advertiser through the site reveals you to them — use a sock-puppet account and never approach a subject. Note listings show the property as advertised, not verified ownership.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The dominant Spanish (also IT/PT) property portal; listings are advertiser-supplied marketing, so they evidence a property being marketed, not who owns or lives there.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "es",
+      "it",
+      "pt"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Idealista"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "real-estate"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/idealista-com.md"
   },
   {
@@ -256808,46 +256830,55 @@
   {
     "id": "opensupplyhub-org",
     "name": "opensupplyhub.org",
-    "description": "OSINT tool: opensupplyhub.org.",
+    "description": "Use when you have a company/brand or factory `name`/`address` and want to map global production facilities and who sources from them — returns facility locations, IDs, and linked contributors.",
     "url": "https://opensupplyhub.org/facilities/?sort_by=contributors_desc",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping global production facilities to the brands/organizations that source from them, with addresses and stable facility IDs.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-data platform (a nonprofit); browsing and searching facilities is free, and a free API/account is available for bulk/programmatic access.",
+    "opsec": "passive",
+    "opsecNote": "Querying an open public database of facilities; nothing touches any company or individual and there is nothing to alert. Standard clean-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Nonprofit open-data project (successor to the Open Apparel Registry) that deduplicates contributor-submitted facility data into stable OS IDs; widely used in supply-chain research, though data completeness depends on what contributors have disclosed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Open Supply Hub",
+      "OS Hub",
+      "Open Apparel Registry"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "supply-chain"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/opensupplyhub-org.md"
   },
   {
@@ -320118,13 +320149,14 @@
   {
     "id": "facebook-matrix",
     "name": "Facebook Matrix",
-    "description": "OSINT tool: Facebook Matrix.",
+    "description": "Use when you have a Facebook numeric ID (user/page/place) and want to run advanced graph-style searches — returns URL/JSON formulas that surface friends, photos, posts, and tagged locations.",
     "url": "https://plessas.net/facebookmatrix",
     "category": "social-networks",
     "path": [
-      "social-networks"
+      "social-networks",
+      "facebook"
     ],
-    "bestFor": "",
+    "bestFor": "A reference of Facebook search formulas that turn a numeric ID into friend lists, photos, and location-tagged content.",
     "selectorsIn": [
       "username",
       "name"
@@ -320134,28 +320166,40 @@
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free reference page; the techniques themselves need a (sock-puppet) Facebook login to run.",
+    "opsec": "active",
+    "opsecNote": "The formulas are just constructed URLs, but running them means browsing Facebook while logged in — which ties your account to the searches and can surface you to targets. Facebook has also killed or throttled many graph-search endpoints, so some formulas simply no longer return results. Always run from a sock-puppet account, never your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-maintained, widely-cited reference by Henk van Ess / Plessas of Facebook search techniques; the reference is authoritative, but Facebook's own changes mean not every formula still works.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "The Facebook Matrix",
+      "Plessas Facebook Matrix"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "graph-search",
+      "url-technique"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-matrix.md"
   },
   {
@@ -374113,40 +374157,52 @@
   {
     "id": "socid-extractor-2",
     "name": "socid-extractor",
-    "description": "Extracts account IDs and metadata from profile pages.",
+    "description": "Use when you have a `social-profile` URL or page source and want the hidden account IDs, real names, and metadata baked into it — returns internal user IDs and profile metadata for pivoting.",
     "url": "https://pypi.org/project/socid-extractor/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling hidden numeric account IDs, real names, and creation dates out of a profile page's source for cross-platform pivoting.",
     "selectorsIn": [
       "social-profile",
       "username"
     ],
     "selectorsOut": [
       "device-id",
-      "metadata-exif"
+      "metadata-exif",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (Python package / CLI); no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "To extract, it fetches the target's public profile page once (or you paste page source you already have), so at most a single normal page request reaches that site from your IP — comparable to viewing the page. It sends nothing to the subject and doesn't log in. Run behind a VPN if you want the fetch off your attributable IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known open-source extractor by soxoj (of Maigret); community-maintained parsers for many platforms, inspectable, but individual site parsers rot as sites change their page markup.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "socid_extractor"
+    ],
+    "tags": [
+      "username",
+      "metadata-extraction",
+      "account-id"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/username/socid-extractor-2.md"
   },
