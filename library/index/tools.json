@@ -165812,13 +165812,13 @@
   {
     "id": "mapillary-2",
     "name": "Mapillary",
-    "description": "Crowdsourced street-level imagery, useful where Google Street View has no coverage.",
+    "description": "Use when you have a `geolocation`/`address` and want crowdsourced street-level imagery — especially where Google Street View has no coverage — returns ground-level photos you can use to verify or geolocate a place.",
     "url": "https://www.mapillary.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "Street-level geolocation in areas Google Street View doesn't cover.",
+    "bestFor": "Street-level ground imagery for verification/geolocation in areas Google Street View doesn't cover.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -165827,15 +165827,16 @@
       "geolocation",
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search imagery; a free account and API/key are available for programmatic access and larger use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing published crowdsourced imagery is passive — you query Mapillary (owned by Meta), not any target, and no subject is notified. Standard browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Listed in Trace Labs awesome-osint (Geolocation & Mapping).",
+    "trustNote": "Established crowdsourced street-imagery platform owned by Meta, widely used in the OSINT/geolocation community; imagery is contributor-supplied but timestamped and geotagged.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -165844,7 +165845,9 @@
     "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "mapillary.com"
+    ],
     "tags": [
       "maps",
       "street-level",
@@ -165852,7 +165855,7 @@
       "geolocation"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/mapillary-2.md"
   },
@@ -170447,44 +170450,49 @@
   },
   {
     "id": "disboard-org",
-    "name": "disboard.org",
-    "description": "OSINT tool: disboard.org.",
+    "name": "Disboard (Discord Server Directory)",
+    "description": "Use when you have a keyword, community name, or `username` and want to find public Discord servers around it — returns listed servers with invite links, member counts, tags, and descriptions.",
     "url": "https://disboard.org/servers",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering public Discord servers by keyword/tag/community name, with invite links and member counts.",
     "selectorsIn": [
-      "phone",
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory; no account needed to search and follow invite links.",
+    "opsec": "passive",
+    "opsecNote": "Browsing Disboard is passive and touches no target. The exposure comes when you JOIN a server — do that only from a sock-puppet Discord account, since your profile becomes visible to members and admins.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A well-known third-party Discord server listing site; it indexes servers that opt in to be listed, so coverage is partial and self-selected, not exhaustive.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Disboard",
+      "disboard.org"
+    ],
     "tags": [
       "discord",
       "Discord Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/disboard-org.md"
   },
   {
@@ -208979,47 +208987,54 @@
   },
   {
     "id": "my-life-people-search",
-    "name": "My Life People Search",
-    "description": "OSINT tool: My Life People Search.",
+    "name": "MyLife People Search",
+    "description": "Use when you have a `name` for a US subject and want an aggregated profile with a \"reputation\" angle — returns age, address history, phones, relatives, and a MyLife reputation score.",
     "url": "https://www.mylife.com/people-search",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregated US people lookup (age, addresses, relatives, phones) plus MyLife's reputation/background teaser.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone"
     ],
     "selectorsOut": [
       "address",
       "phone",
-      "email",
       "associate",
-      "social-profile",
       "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free teaser (name, age, city, partial relatives, a \"reputation score\"). Full background details are paywalled behind a paid MyLife subscription, which is known for aggressive upsell and hard-to-cancel billing.",
+    "opsec": "passive",
+    "opsecNote": "Querying is passive — the subject is not notified of a search. However, MyLife is notorious for creating profiles and using dark-pattern billing; use a sock-puppet email/account and disposable payment if you ever subscribe, and never enter real personal details.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial data broker with a poor reputation for accuracy and manipulative billing; its \"reputation scores\" are marketing, not fact. Treat all fields as unverified leads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MyLife",
+      "mylife.com"
+    ],
     "tags": [
       "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/my-life-people-search.md"
   },
   {
@@ -211758,47 +211773,52 @@
   },
   {
     "id": "rootsweb",
-    "name": "Rootsweb",
-    "description": "OSINT tool: Rootsweb.",
-    "url": "http://home.rootsweb.ancestry.com",
+    "name": "RootsWeb",
+    "description": "Use when you have a `name`/surname and want historic genealogy data — user-submitted family trees, surname lists, and archived mailing lists — returns ancestors, relatives, dates, and places from a now read-only archive.",
+    "url": "https://www.rootsweb.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Searching legacy user-submitted genealogy (WorldConnect trees, surname lists, mailing-list archives) by name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
+      "name",
       "associate",
-      "social-profile",
+      "address",
       "dob"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search. Owned by Ancestry; the community-contributed data here is free, though Ancestry's paid records are separate.",
+    "opsec": "passive",
+    "opsecNote": "Passive reading of an archived, largely read-only site — nobody is contacted or notified. Ordinary browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Legacy user-submitted genealogy owned by Ancestry. Content is hobbyist-contributed (often unsourced) and, since 2020-2024, made largely read-only — accurate as leads, not as verified records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RootsWeb WorldConnect",
+      "home.rootsweb.ancestry.com"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "genealogy"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/rootsweb.md"
   },
   {
@@ -336111,14 +336131,14 @@
   },
   {
     "id": "osintcombine-com",
-    "name": "osintcombine.com",
-    "description": "OSINT tool: osintcombine.com.",
-    "url": "https://www.osintcombine.com/post/bluesky-osint-guide",
+    "name": "OSINT Combine (Free Tools & Guides)",
+    "description": "Use when you need a vetted free OSINT tool or methodology guide (alt-tech search, TikTok/username checkers, maps, platform how-tos like Bluesky) — returns purpose-built browser tools and step-by-step guides, not a single lookup.",
+    "url": "https://www.osintcombine.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A hub of free, analyst-built OSINT micro-tools and platform how-to guides (incl. alt-tech and Bluesky).",
     "selectorsIn": [
       "username",
       "name"
@@ -336127,29 +336147,36 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The how-to guides and a suite of free browser tools are free with no login. Training courses and the flagship NexusXplore platform are paid/commercial.",
+    "opsec": "passive",
+    "opsecNote": "Reading guides and using the client-side free tools is passive. Some free tools redirect your query into the target platform's own search (e.g. TikTok/Google) — the same OpSec as searching that platform applies, so use a sock puppet where you'd normally use one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Reputable Australian OSINT firm used by law enforcement, defense, and enterprise; its free tools and guides are professionally produced and well-regarded in the community.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT Combine",
+      "osintcombine.com"
+    ],
     "tags": [
       "bluesky",
-      "BlueSky / BSky Related Sites"
+      "BlueSky / BSky Related Sites",
+      "osint-tools"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osintcombine-com.md"
   },
   {
@@ -347702,8 +347729,8 @@
   },
   {
     "id": "tinfoleak-web",
-    "name": "Tinfoleak Web",
-    "description": "Twitter profile and timeline intelligence",
+    "name": "Tinfoleak (Web)",
+    "description": "Use when you have a Twitter/X `username` and want an automated intelligence dossier on the account — returns profile details, activity patterns, devices/apps, hashtags, mentions, and any geolocated posts.",
     "url": "https://tinfoleak.com/",
     "category": "social-networks",
     "path": [
@@ -347711,24 +347738,32 @@
       "twitter",
       "analytics"
     ],
-    "bestFor": "Twitter profile and timeline intelligence",
-    "input": "Twitter/X username or profile URL",
-    "output": "Profile details, tweet history views, and account activity context",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Automated Twitter/X profile and timeline intelligence — activity times, apps/devices, top hashtags/mentions, geolocated tweets.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "device-id"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "The hosted web version requires (free) registration/login; the underlying tool is open-source and self-hostable. Depth is constrained by current X API access.",
     "opsec": "active",
-    "opsecNote": "Queries are sent to third-party service infrastructure and may be logged.",
+    "opsecNote": "Queries run through Tinfoleak's third-party infrastructure (web version) or your own credentials (self-hosted), and pulling a timeline is an API-level interaction that can be logged. Use a sock-puppet account/keys; don't tie it to your real identity.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "account-login",
+      "api-key"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established, well-documented open-source Twitter OSINT tool (by Vicente Aguilera Díaz), bundled in Kali/BlackArch. Reputable, but its output completeness has degraded with X's API restrictions.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -347736,11 +347771,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "tinfoleak",
+      "tinfoleak.com"
+    ],
+    "tags": [
+      "twitter",
+      "analytics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/tinfoleak-web.md"
   },
   {
@@ -349894,7 +349935,7 @@
   {
     "id": "tweetvacuum",
     "name": "TweetVacuum",
-    "description": "Expanded tweet history export",
+    "description": "Use when you have a Twitter/X `username` and want to export that account's full timeline past the 3,200-tweet API cap — returns the scraped tweets saved locally (archived/deprecated tool).",
     "url": "https://github.com/UberKitten/TweetVacuum",
     "category": "social-networks",
     "path": [
@@ -349902,36 +349943,46 @@
       "twitter",
       "archive-deleted-tweets"
     ],
-    "bestFor": "Expanded tweet history export",
-    "input": "Twitter/X account identifiers",
-    "output": "Archived tweet records in local export formats",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Bulk-exporting a user's entire visible tweet history beyond the 3,200-tweet limit via a browser extension.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "down",
     "pricing": "free",
+    "costNote": "Free and open-source Chrome extension. No fees; you supply a logged-in Twitter/X browser session.",
     "opsec": "active",
-    "opsecNote": "Collection patterns may be visible through account- or IP-linked activity.",
+    "opsecNote": "It scrapes the timeline from YOUR logged-in browser session, opening many pages rapidly — that pattern is tied to the account/IP you use and can trip anti-abuse controls. Use a sock-puppet Twitter/X account, never your real one.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "A community Chrome extension, archived (read-only) on GitHub since September 2023. It scraped the old Twitter web UI; X's redesign and API changes make current functionality unreliable.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
+    "deprecated": true,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Tweet Vacuum"
+    ],
+    "tags": [
+      "twitter",
+      "archive"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/archive-deleted-tweets/tweetvacuum.md"
   },
   {
