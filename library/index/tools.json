@@ -104287,40 +104287,46 @@
   {
     "id": "geemail-user-finder",
     "name": "geeMail User Finder",
-    "description": "A simple tool to check the validity of a Gmail account. You can check a single email or a list of emails.",
+    "description": "Use when you have one or many candidate `email` addresses and want to confirm which are registered Gmail accounts — returns a validated `email` existence verdict per address.",
     "url": "https://github.com/dievus/geeMailUserFinder",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-validating whether a list of addresses are live Gmail/Google accounts.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python CLI. No API key or account needed.",
+    "opsec": "active",
+    "opsecNote": "The tool sends requests to Google's own endpoints for each address, so you are probing Google's infrastructure — not the subject, who is not notified. The author warns Google \"may or may not appreciate account testing like this,\" so route through a VPN/clean IP and keep volumes modest to avoid rate-limiting or blocks.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source tool by a known OSINT author (dievus/The OSINT Curious); inspect the code before running. Existence is inferred from cookie behaviour and can occasionally false-positive.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "geeMailUserFinder"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "account-existence"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/geemail-user-finder.md"
   },
@@ -124593,46 +124599,51 @@
   {
     "id": "foursquare",
     "name": "Foursquare",
-    "description": "A location technology platform allowing users to discover and share information about places and businesses they have checked in",
+    "description": "Use when you have a `geolocation`/`address` or a venue and want place details, photos, and user tips — returns venue `geolocation`, `address`, and associated user activity.",
     "url": "https://foursquare.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Enriching a place/venue with precise coordinates, photos, tips, and (where public) the users who engaged with it.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
       "geolocation",
-      "address"
+      "address",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing venue pages, photos, and tips is free. Programmatic/bulk access via the Foursquare Places API is a paid developer product with a free tier.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public venue pages and tips is passive. If you engage (check in, comment, follow) via a logged-in account you leave traces and may notify others — browse read-only, and use a sock-puppet account if you must log in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established location-technology company; venue/place data is well-maintained. Personal check-in data is now largely in its Swarm app and much less public than it once was.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Foursquare City Guide",
+      "Swarm"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/foursquare.md"
   },
@@ -145409,44 +145420,51 @@
   {
     "id": "get-metadata-com",
     "name": "Get-metadata.com",
-    "description": "OSINT tool: Get-metadata.com.",
+    "description": "Use when you have an `image` (or document/video/audio file) and want its hidden EXIF/metadata — returns `metadata-exif`, GPS `geolocation`, and device/author (`device-id`) details.",
     "url": "https://www.get-metadata.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Reading EXIF/metadata (GPS, camera, timestamps, author) out of a file via the browser, no install.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "social-profile",
+      "metadata-exif",
       "geolocation",
-      "metadata-exif"
+      "device-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no registration, no installation; runs in the browser (redirects to its current host, metadata2go.com).",
+    "opsec": "active",
+    "opsecNote": "You upload the target's file to a third-party server to read it — the file (and any embedded location/identity) leaves your control and is processed by an external service. For sensitive material, prefer a local tool like ExifTool instead; only use this for low-sensitivity files or where server-side processing is acceptable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular free online metadata viewer (metadata2go); reliable for standard EXIF extraction. It reads embedded metadata only — it does no reverse-image or face matching.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "metadata2go",
+      "get-metadata"
+    ],
     "tags": [
-      "reverse-image"
+      "reverse-image",
+      "exif",
+      "metadata"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/get-metadata-com.md"
   },
   {
@@ -172625,13 +172643,13 @@
   {
     "id": "line-me",
     "name": "line.me",
-    "description": "OSINT tool: line.me.",
+    "description": "Use when you have a `phone` number or LINE ID (`username`) for a subject likely in Japan/Taiwan/Thailand and want to confirm a LINE account and its display profile — returns a `social-profile` (display name, photo, status).",
     "url": "https://line.me/en/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a LINE account and reading its public display profile from a phone number or LINE ID, especially in East/Southeast Asia.",
     "selectorsIn": [
       "phone",
       "username"
@@ -172639,29 +172657,37 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "The LINE app is free; you need a LINE account (which itself requires a phone number to register) to search or add contacts.",
+    "opsec": "active",
+    "opsecNote": "Adding a subject by phone/ID, or enabling \"add by phone number,\" can surface you to them or push a contact notification — and LINE may show mutual-contact hints. Operate only from a dedicated sock-puppet account on a separate device/number; never from a personal LINE. Stop at viewing the public display profile; do not message the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Official LINE service. The display name/photo are user-set and often not a real identity, so treat the profile as a lead requiring corroboration.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "LINE",
+      "line messenger"
+    ],
     "tags": [
       "messengerapps",
       "Messenger Apps"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/line-me.md"
   },
   {
@@ -201580,46 +201606,6 @@
     "_file": "library/tools/people-search/address-check-1-2-united-states.md"
   },
   {
-    "id": "addresses-com",
-    "name": "Addresses.com",
-    "description": "Quick US people and address lookups",
-    "url": "https://www.addresses.com/",
-    "category": "people-search",
-    "path": [
-      "people-search",
-      "general-people-search"
-    ],
-    "bestFor": "Quick US people and address lookups",
-    "input": "Name, phone number, or address",
-    "output": "Name, age, partial phone numbers, associated addresses",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Free basic searches; detailed reports require Intelius subscription.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/general-people-search/addresses-com.md"
-  },
-  {
     "id": "advancedbackgroundchecks",
     "name": "AdvancedBackgroundChecks",
     "description": "Use when you have a `name`, `phone`, or `address` and want a free US people lookup with relatives and address history — returns names, phones, addresses, and associates.",
@@ -212120,43 +212106,51 @@
   {
     "id": "slavevoyages-org",
     "name": "SlaveVoyages.org",
-    "description": "the Trans-Atlantic and Intra-American slave trade databases are the culmination of several decades of independent and collaborative research by scholars drawing upon data in libraries and archives around the Atlantic world.",
+    "description": "Use when you have a historical `name` connected to the Atlantic slave trade (enslaved person or enslaver) and want biographical/voyage records — returns `name`, `geolocation` (embarkation/disembarkation), age (`dob`), and `associate` links.",
     "url": "https://slavevoyages.org/resources/names-database",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Genealogical/historical tracing of named individuals — enslaved Africans and enslavers — in the 1514–1866 Atlantic slave trade.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "email",
       "name",
-      "phone"
+      "geolocation",
+      "dob",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open academic resource; datasets are also downloadable. No account required to search.",
+    "opsec": "passive",
+    "opsecNote": "Purely a historical academic database — searching it reveals nothing to any living subject and carries no operational risk. It concerns people of the 16th–19th centuries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Scholarly project hosted at Emory University, built from decades of peer-reviewed archival research across Atlantic-world libraries and archives.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SlaveVoyages People Database",
+      "African Names Database",
+      "Trans-Atlantic Slave Trade Database"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "genealogy"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/slavevoyages-org.md"
   },
@@ -235802,46 +235796,54 @@
   {
     "id": "familysearch-deaths-and-burials-1816-1980-australia",
     "name": "Familysearch Deaths and Burials 1816-1980 (Australia)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name` of a person who may have died in Australia (1816–1980) and want death/burial record details — returns death/burial dates, `dob`, place (`geolocation`), and family `associate`s.",
     "url": "https://familysearch.org/search/collection/1770857",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a death/burial and extracting family and date details for an Australian subject or ancestor, 1816–1980.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "dob",
+      "geolocation",
+      "associate",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view; a free FamilySearch account (registration) is required to see full record details on many collections.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching a historical vital-records index is passive and reveals nothing to any living person. A free account ties searches to your login; use a research-only account if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "FamilySearch is operated by the non-profit Genealogical Society of Utah (LDS Church); this is an indexed collection drawn from Australian civil/parish records.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "au"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "FamilySearch Australia Deaths and Burials",
+      "Collection 1770857"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/familysearch-deaths-and-burials-1816-1980-australia.md"
   },
@@ -240237,46 +240239,54 @@
   {
     "id": "gov-hk",
     "name": "gov.hk",
-    "description": "OSINT tool: gov.hk.",
+    "description": "Use when you have a Hong Kong `employer-org`, `name`, or `address` and want official company/director records — routes to the Companies Registry e-Search / Cyber Search Centre returning `employer-org`, `address`, `name`, and `associate` (directors).",
     "url": "https://www.gov.hk/en/business/registration/deregistration/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reaching Hong Kong's official Companies Registry search to confirm a company, its address, and its directors/officers.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "name",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The gov.hk information pages are free. Company searches run via the Companies Registry Cyber Search Centre / e-Search Services, which charge per-document/per-search fees (small HKD amounts) for detailed extracts; some basic index lookups are free.",
+    "opsec": "passive",
+    "opsecNote": "Searching the registry is passive — you query a government database, not the subject, and the company/director is not notified. Paid searches require registration/payment on the Companies Registry portal, which attributes the query to your account; use an appropriate identity for paid extracts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Government of Hong Kong SAR portal and Companies Registry; the company data is authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "hk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GovHK",
+      "Hong Kong Companies Registry",
+      "Cyber Search Centre"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-hk.md"
   },
   {
@@ -268190,46 +268200,55 @@
   {
     "id": "traderegistry-ae",
     "name": "traderegistry.ae",
-    "description": "OSINT tool: traderegistry.ae.",
+    "description": "Use when you have a UAE `employer-org`, `name`, or `address` and want official-style trade-register company reports — returns `employer-org`, `address`, `name`, and `associate` (owners/managers).",
     "url": "https://traderegistry.ae/product/company-search-report/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Ordering current/historical company reports and extracts for UAE-registered entities from a trade-register smart portal.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "name",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A basic company-name search/lookup is free, but the substantive Company Search Report and Trade Register Extract (with owners, managers, history, documents) are paid, per-report products.",
+    "opsec": "passive",
+    "opsecNote": "Searching and ordering a report queries a registry portal, not the subject, who is not notified. Purchasing a report ties the order to your payment/contact identity on the portal — use appropriate separation for sensitive inquiries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial \"smart portal\" reselling UAE trade-register data; it is not the emirate government registry itself (e.g. DED / u.ae National Economic Register). Verify critical facts against the official government source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ae"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UAE Trade Registry Smart Portal",
+      "traderegistry.ae"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/traderegistry-ae.md"
   },
   {
@@ -304406,13 +304425,13 @@
   {
     "id": "seznam-cz",
     "name": "seznam.cz",
-    "description": "OSINT tool: seznam.cz.",
+    "description": "Use when you have a `name`/handle for a Czech subject and want Czech-web results Google under-indexes — returns `name`, `social-profile`, and Czech-language page leads.",
     "url": "https://www.seznam.cz/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the Czech-language web via the leading domestic search engine and portal.",
     "selectorsIn": [
       "name"
     ],
@@ -304420,29 +304439,35 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; no account needed for search (a Seznam account is only needed for its email/other services).",
+    "opsec": "passive",
+    "opsecNote": "Running searches is passive and does not touch the subject. As with any search engine, your queries are logged by the provider; use a clean/sock-puppet browser session if your query pattern is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Seznam is the major established Czech search engine and web portal; results are its own index, strongest on Czech-language and .cz content.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "cz"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Seznam",
+      "seznam.cz"
+    ],
     "tags": [
       "searchengines",
       "Search Engines"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/seznam-cz.md"
   },
   {
@@ -317878,13 +317903,13 @@
   {
     "id": "douban",
     "name": "Douban",
-    "description": "A Chinese social networking site",
+    "description": "Use when you have a `name`/`username` of a likely Chinese subject and want their books/film/music and interest-group activity — returns a `social-profile` and interest footprint.",
     "url": "https://www.douban.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Profiling a Chinese-speaking subject via their reviews, ratings, and interest groups on China's culture-focused social network.",
     "selectorsIn": [
       "name",
       "username"
@@ -317892,31 +317917,37 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to browse much public content; a Chinese-mobile-verified account is generally needed to search fully, view some content, and interact.",
+    "opsec": "active",
+    "opsecNote": "Registration typically requires a Chinese phone number, and a logged-in account operating from an unusual location/IP draws scrutiny on Chinese platforms. Prefer read-only access to public profiles; if you must register, use a dedicated, well-warmed sock-puppet and appropriate infrastructure — never an attributable identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Major, legitimate Chinese social network; profile content is user-generated, and pseudonymity is common, so attribution to a real identity requires corroboration.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "cn"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "豆瓣",
+      "douban.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/douban.md"
   },
