@@ -206171,43 +206171,53 @@
   {
     "id": "fixmystreet",
     "name": "FixMyStreet",
-    "description": "OSINT tool: FixMyStreet.",
+    "description": "Use when you have an `address`/`geolocation` (or a reporter's `name`) and want public local-problem reports tied to that spot — returns `name` (reporter), `geolocation`, photos and dated activity.",
     "url": "https://www.fixmystreet.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Reading public street-problem reports pinned to an address, including reporter names, photos and timestamps.",
     "selectorsIn": [
-      "address"
+      "address",
+      "geolocation",
+      "name"
     ],
     "selectorsOut": [
       "name",
-      "phone",
-      "associate"
+      "geolocation",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free civic service run by mySociety; no account needed to browse reports.",
+    "opsec": "passive",
+    "opsecNote": "Public report map; browsing is passive and needs no login. To *file* a report you must register, but for OSINT you only read — stay in read-only mode.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by mySociety, a reputable UK civic-tech charity; reports are user-submitted so individual content is as reliable as its reporter.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Fix My Street",
+      "mySociety FixMyStreet"
+    ],
     "tags": [
-      "address"
+      "address",
+      "civic",
+      "geolocation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/fixmystreet.md"
   },
   {
@@ -229301,47 +229311,55 @@
   },
   {
     "id": "checkatrade-com",
-    "name": "checkatrade.com",
-    "description": "OSINT tool: checkatrade.com.",
+    "name": "Checkatrade",
+    "description": "Use when you have a tradesperson's `name`, business name or `address`/area and want their UK trade listing, reviews and contact/location — returns `employer-org`, `address`, `phone`, `social-profile`.",
     "url": "https://www.checkatrade.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating and vetting a UK tradesperson via their Checkatrade business profile, reviews and service area.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "phone",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read profiles/reviews; membership (the listing side) is paid for traders, but browsing costs nothing.",
+    "opsec": "passive",
+    "opsecNote": "Public directory; browsing is passive and needs no login. Contacting a trader through the site is an active step — keep to reading unless you intend to engage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Checkatrade vets member traders and publishes verified customer reviews, but listing content (business name, area, description) is trader-supplied.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Check a Trade"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "trades",
+      "reviews"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/checkatrade-com.md"
   },
   {
@@ -233462,47 +233480,60 @@
   },
   {
     "id": "czech-republic",
-    "name": "Czech Republic",
-    "description": "OSINT tool: Czech Republic.",
+    "name": "Czech Justice Registers",
+    "description": "Use when you have a `name` or `employer-org` linked to the Czech Republic and want registered companies, officers and addresses — returns `employer-org`, `associate`, `address`, `name`.",
     "url": "https://esm.justice.cz/ias/issm/rejstrik",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Tying a Czech company or person to registered officers and addresses via the Ministry of Justice registers.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "associate",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free. The public commercial register (or.justice.cz) is fully open; the beneficial-ownership register at this stub's URL (esm.justice.cz) had its public access restricted from December 2025 and now needs authentication for most users.",
+    "opsec": "passive",
+    "opsecNote": "Official Czech state registers; queries hit justice.cz, not the subject. The commercial register needs no login. The beneficial-ownership register now requires authenticated access (data box) for full extracts, which ties the request to a Czech-authorized identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Czech Ministry of Justice; authoritative primary source. Note the beneficial-ownership portal's public access is now curtailed.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "cz"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "justice.cz",
+      "Czech commercial register",
+      "Obchodní rejstřík",
+      "Evidence skutečných majitelů"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/czech-republic.md"
   },
   {
@@ -254225,47 +254256,60 @@
   },
   {
     "id": "netherlands",
-    "name": "Netherlands",
-    "description": "OSINT tool: Netherlands.",
+    "name": "KVK Business Register (Netherlands)",
+    "description": "Use when you have a `name` or `employer-org` linked to the Netherlands and want registered companies, directors and addresses — returns `employer-org`, `associate`, `address`, `name`.",
     "url": "https://www.kvk.nl/bestellen/#/?productfilter=ubo",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Tying a Dutch company or person to registered officers, addresses and (paid) beneficial-owner extracts.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "associate",
+      "address",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic search of the Handelsregister (name, address, registration status). Full KVK extracts, corporate history, financial statements and UBO extracts are paid per-document; the UBO register itself has restricted access post-2022 EU ruling.",
+    "opsec": "passive",
+    "opsecNote": "Official Dutch Chamber of Commerce register; searching hits KVK, not the subject. Basic search needs no account; ordering paid extracts requires payment details, which attaches your identity to the request — use an investigative account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "KVK is the official Netherlands business register; free basic data is authoritative, paid extracts are the legal record.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "nl"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "KVK",
+      "Kamer van Koophandel",
+      "Dutch Business Register",
+      "Handelsregister"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/netherlands.md"
   },
   {
@@ -255551,14 +255595,14 @@
   },
   {
     "id": "north-carolina",
-    "name": "North Carolina",
-    "description": "OSINT tool: North Carolina.",
-    "url": "https://www.ncdps.gov/dps-services/crime-data/offender-search",
+    "name": "North Carolina Offender Search",
+    "description": "Use when you have a `name` and want to check North Carolina prison/probation/parole records — returns `name`, `dob`, `document-id` (offender number), status and location.",
+    "url": "https://webapps.doc.state.nc.us/opi/offendersearch.do?method=view",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and locating a person in the North Carolina state correctional system (prison, probation, parole).",
     "selectorsIn": [
       "name"
     ],
@@ -255567,29 +255611,37 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Official NC Department of Adult Correction database; searching is passive and needs no login. Nothing is sent to the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the NC Department of Adult Correction (formerly under NC DPS); authoritative government correctional record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NC DPS offender search",
+      "NC DAC Offender Public Information Search",
+      "North Carolina inmate search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/north-carolina.md"
   },
   {
@@ -262611,13 +262663,13 @@
   {
     "id": "refdesk",
     "name": "RefDesk",
-    "description": "Fact checker for the internet, listing various resource categories, including weather resources, news sources, people search sites, as well as reference tools",
+    "description": "Use when you have a starting `name`/`employer-org` and want a curated jump-off directory of people-finder, public-records and reference sites — returns links onward to `address`, `employer-org` lookups.",
     "url": "https://www.refdesk.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A curated meta-index of free reference, people-search and public-records resources to branch from.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -262626,16 +262678,17 @@
       "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reference portal; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It is a link directory — browsing RefDesk itself is passive and reveals nothing about your target. OpSec exposure happens on the third-party sites you click through to; apply hygiene there.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Long-running, well-known reference portal; it curates links rather than holding data, so quality depends on the linked destinations.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -262643,14 +262696,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Refdesk.com",
+      "Reference Desk"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "reference-sites"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/refdesk.md"
   },
@@ -315306,7 +315362,7 @@
   {
     "id": "all-my-tweets",
     "name": "All My Tweets",
-    "description": "Quick review of tweet history",
+    "description": "Use when you have a Twitter/X `username` and want that account's recent public tweets on one scrollable page for fast review/export — returns `social-profile` post history (up to ~3,200 tweets).",
     "url": "https://www.allmytweets.net/",
     "category": "social-networks",
     "path": [
@@ -315314,34 +315370,47 @@
       "twitter",
       "archive-deleted-tweets"
     ],
-    "bestFor": "Quick review of tweet history",
-    "input": "Twitter/X username",
-    "output": "Chronological list of public tweets and profile activity",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Rendering an X account's recent tweets on a single page for quick keyword/date review and export.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free, but now requires signing in with an X account and is being wound down (\"AllMyTweets is now part of Twilert; will soon stop functioning\"). Subject to X API rate limits.",
     "opsec": "active",
-    "opsecNote": "Uses third-party web service access that can be logged by provider systems.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You must authorize the app with an X login — use a sock-puppet X account, never your real one, since the OAuth grant ties your account to the lookups. It reads the target's public tweets, not private ones.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trustNote": "Third-party service dependent on the X API; being merged into Twilert and slated to stop, so reliability is declining.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "allmytweets",
+      "All My Tweets viewer"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "tweet-history",
+      "archive"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/archive-deleted-tweets/all-my-tweets.md"
   },
   {
@@ -323568,41 +323637,50 @@
   {
     "id": "fediverse-osint",
     "name": "Fediverse_OSINT",
-    "description": "Cross-instance Fediverse user and content search",
+    "description": "Use when you have a `username` and want to hunt for it across Mastodon/Fediverse instances — returns `social-profile` matches and which servers the handle exists on.",
     "url": "https://github.com/cyfinoid/fediverse_osint",
     "category": "social-networks",
     "path": [
       "social-networks",
       "fediverse-mastodon"
     ],
-    "bestFor": "Cross-instance Fediverse user and content search",
-    "input": "Username or search terms",
-    "output": "User profiles and posts found across Fediverse instances",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
+    "bestFor": "Checking whether a username exists across known Fediverse (Mastodon/ActivityPub) servers.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source Python CLI; no account. Uses the open ActivityPub/WebFinger APIs of public instances.",
     "opsec": "active",
-    "opsecNote": "Queries multiple Fediverse instances directly; requests may be logged by instance administrators.",
+    "opsecNote": "It queries many Fediverse instances directly from your host — each instance admin can see your requests in their logs. Use a non-attributable IP if the target is sensitive; there is no central intermediary hiding you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Open-source project by cyfinoid; inspectable code. Coverage is bounded by its known-instances list, so absence isn't proof.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "cyfinoid fediverse_osint"
+    ],
+    "tags": [
+      "fediverse",
+      "mastodon",
+      "activitypub",
+      "username-enumeration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fediverse-mastodon/fediverse-osint.md"
   },
   {
@@ -353105,47 +353183,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/twitter-developer-platform.md"
-  },
-  {
-    "id": "twitter-location-search",
-    "name": "Twitter Location Search",
-    "description": "Finding public tweets associated with specific coordinates and radius",
-    "url": "https://twitter.com/search?q=geocode%3A36.1143855%2C-115.1727518%2C1km&src=typd",
-    "category": "social-networks",
-    "path": [
-      "social-networks",
-      "twitter",
-      "search"
-    ],
-    "bestFor": "Finding public tweets associated with specific coordinates and radius",
-    "input": "Latitude/longitude plus radius in search query",
-    "output": "Tweets matching the configured location filter",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Searches public indexed content; no outbound contact to targets beyond normal platform queries.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitter/search/twitter-location-search.md"
   },
   {
     "id": "twitter-lolarchiver-com",
