@@ -211866,48 +211866,53 @@
   },
   {
     "id": "political-graveyard",
-    "name": "Political Graveyard",
-    "description": "Website claiming to be the Internets most comprehensive source of US political biography",
+    "name": "The Political Graveyard",
+    "description": "Use when you have a `name` of a US political figure (or their relative) and want biographical and burial data — returns life dates, offices held, family links and cemetery/burial location.",
     "url": "http://politicalgraveyard.com/index.html",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Biographical, family and burial-location lookups for people who held or ran for US public office (and their kin).",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
+      "associate",
       "address",
-      "phone",
-      "associate"
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static public biographical database — searching contacts no one and leaves no trace with any subject. No account required. Records are historical/public-figure data, so PII sensitivity is low.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "A long-running, single-author labour-of-love database (Lawrence Kestenbaum) covering people connected to US politics. Well-known and broadly reliable for public figures, but hobbyist-maintained — corroborate specific facts.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Political Graveyard",
+      "politicalgraveyard.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "biography",
+      "burial"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/political-graveyard.md"
   },
@@ -217639,29 +217644,33 @@
   },
   {
     "id": "free-reverse-phone-lookup",
-    "name": "Free Reverse Phone Lookup",
-    "description": "Free reverse phone lookup with voicemail-name reveal.",
+    "name": "SpyDialer (Free Reverse Phone Lookup)",
+    "description": "Use when you have a `phone` and want the owner's name/location — returns a likely name, carrier, line type and city, sometimes with a voicemail-greeting name reveal.",
     "url": "https://spydialer.com/default.aspx",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, free reverse lookup of a US phone number to a probable name and location, including a voicemail-name check.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free — up to 50 lookups per day at no cost; no account required. Deeper \"background report\" upsells are paid third-party products.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "SpyDialer states it never notifies the person you look up, and the name lookup itself is passive. Its \"voicemail\" feature, however, can place a silent call to hear/reveal the voicemail greeting — that IS active (it rings the target's line); avoid the voicemail feature unless you accept that risk. Use a sock-puppet browser.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running free reverse-lookup service drawing on compiled public/commercial data; results are probabilistic and self-disclaimed as possibly out-of-date. Treat a name as a lead to corroborate.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -217670,10 +217679,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SpyDialer",
+      "Free Reverse Phone Lookup"
+    ],
+    "tags": [
+      "phone",
+      "reverse-phone"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/phone/free-reverse-phone-lookup.md"
   },
@@ -242396,47 +242411,52 @@
   },
   {
     "id": "gov-uk-11",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "GOV.UK — Valuation Office Agency",
+    "description": "Use when you have a UK `address` and want its official property valuation data — returns council-tax band or business-rates rateable value for the property.",
     "url": "https://www.gov.uk/government/organisations/valuation-office-agency",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a UK property's council-tax band or business rateable value from the official government valuation body.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public government service; no account or payment to check a council-tax band or rateable value.",
+    "opsec": "passive",
+    "opsecNote": "Looking up a property's valuation queries a UK government service about the PROPERTY, not a person — no resident is notified. It reveals nothing about who currently lives there, only the property's tax band/value. Use a sock-puppet browser if you'd rather not log the query against your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The Valuation Office Agency is an official UK government body (part of HMRC); its council-tax band and rateable-value data are authoritative for the property.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Valuation Office Agency",
+      "VOA council tax band",
+      "GOV.UK VOA"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "uk-property"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-11.md"
   },
   {
@@ -244042,47 +244062,54 @@
   },
   {
     "id": "heraldsun-com-au",
-    "name": "heraldsun.com.au",
-    "description": "OSINT tool: heraldsun.com.au.",
+    "name": "Herald Sun Tributes",
+    "description": "Use when you have a `name` of someone who may have died in Victoria, Australia and want the death/funeral notice — returns published tributes with locality, family names and funeral detail.",
     "url": "https://www.heraldsun.com.au/tributes",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding Australian (Victoria/Melbourne) death and funeral notices to confirm a death and map the family network.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The tributes/death-notices section is generally free to search and read; the wider Herald Sun news site is largely subscriber-paywalled. Notices are placed (paid) by families/funeral directors.",
+    "opsec": "passive",
+    "opsecNote": "Reading a published tribute contacts no one and leaves no trace with any subject. Notices are voluntarily placed by families and name living relatives — handle that PII responsibly and lawfully. Use a sock-puppet browser if you'd rather not log searches.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Herald Sun is a major established Melbourne newspaper (News Corp Australia); its tributes are funeral-director/family sourced and reliable, limited to what families choose to publish. Australian death notices commonly aggregate here and on tributes.com.au.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Herald Sun death notices",
+      "heraldsun.com.au tributes"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "death-notices",
+      "obituaries",
+      "australia"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/heraldsun-com-au.md"
   },
   {
@@ -257058,47 +257085,57 @@
   },
   {
     "id": "offshorealert-com",
-    "name": "offshorealert.com",
-    "description": "OSINT tool: offshorealert.com.",
+    "name": "OffshoreAlert",
+    "description": "Use when you have a `name` or `employer-org` and want offshore-finance, fraud and litigation intelligence — returns investigative reports and a database of civil/criminal actions, judgments and leaked documents naming the parties.",
     "url": "https://www.offshorealert.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Digging up offshore fraud, asset and litigation records tied to a person or company in secrecy jurisdictions.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "associate",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A subscription-based investigative service. Headlines and some articles are free, but the searchable document database and full investigative reports sit behind a paid subscription; some documents are sold individually.",
+    "opsec": "passive",
+    "opsecNote": "Searching and reading are passive against OffshoreAlert's own archive — no subject is contacted. A subscription ties your research to an account and payment method; use a sock-puppet identity you are willing to expose to the vendor. Handle any third-party financial PII lawfully.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trust": "trusted",
+    "trustNote": "OffshoreAlert is a well-known, long-running investigative outlet (founded by David Marchant) specializing in offshore financial fraud, with a track record of breaking major cases and hosting primary-source litigation documents. Reports are edited journalism; documents are primary sources.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Offshore Alert",
+      "offshorealert.com"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "offshore",
+      "fraud",
+      "litigation"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/offshorealert-com.md"
   },
   {
@@ -265145,47 +265182,55 @@
   },
   {
     "id": "scottishindexes-com",
-    "name": "scottishindexes.com",
-    "description": "OSINT tool: scottishindexes.com.",
+    "name": "Scottish Indexes",
+    "description": "Use when you have a `name` linked to Scotland and want historical Scottish records — returns free indexed entries (Court of Session, census, BMD, prison, mental-health records) with residence, occupation and dates.",
     "url": "https://www.scottishindexes.com/cssearch.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free indexing of Scottish genealogy and legal records to place a person by residence, occupation and date.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The indexes are free to search; the site funds itself via optional record-transcription/research services and donations, but no payment is needed to search and read index entries.",
+    "opsec": "passive",
+    "opsecNote": "Searching queries Scottish Indexes' own historical databases — no living subject is contacted (records are largely historical). No account required. Use a sock-puppet browser only if you care about not logging searches against your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A well-regarded independent Scottish genealogy project (Graham and Emma Maxwell) that indexes primary Scottish records; the indexes are volunteer/expert-compiled and widely cited. Transcription errors are possible, as with any index.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb-sct"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "scottishindexes.com",
+      "Scottish Indexes Court of Session"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "scotland",
+      "genealogy"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/scottishindexes-com.md"
   },
   {
@@ -327266,49 +327311,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/google-com-47.md"
-  },
-  {
-    "id": "google-com-48",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Agapowork.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gsocialmedia",
-      "General Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-48.md"
   },
   {
     "id": "google-com-49",
