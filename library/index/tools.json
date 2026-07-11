@@ -157626,7 +157626,7 @@
   {
     "id": "smugmug-search",
     "name": "SmugMug Search",
-    "description": "Finding public photographer portfolios and gallery artifacts",
+    "description": "Use when you have a `name`/`username` of a photographer (or an event/keyword) and want their public photo galleries — returns public albums, image sets and profile-linked collections.",
     "url": "https://www.smugmug.com/",
     "category": "image-video-face",
     "path": [
@@ -157634,34 +157634,46 @@
       "images",
       "search"
     ],
-    "bestFor": "Finding public photographer portfolios and gallery artifacts",
-    "input": "Keyword, gallery, or photographer search",
-    "output": "Public albums, image sets, and profile-linked photo collections",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding a subject's public SmugMug photo portfolios and event galleries by name, handle or keyword.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse and search public galleries; hosting/downloading is a paid feature for the account owner, not the viewer. No account needed to view public content.",
     "opsec": "passive",
-    "opsecNote": "Research is limited to publicly exposed gallery content.",
+    "opsecNote": "Browsing public galleries does not notify the photographer. Content is limited to what owners expose publicly. Use a sock-puppet browser; note that some galleries are password-protected or unlisted and should not be brute-forced.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "SmugMug is a long-established commercial photo-hosting platform; galleries are self-published by their owners, so content is authentic but reflects only what the owner chose to make public.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SmugMug",
+      "smugmug.com galleries"
+    ],
+    "tags": [
+      "images",
+      "photo-hosting",
+      "portfolio"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/search/smugmug-search.md"
   },
   {
@@ -204385,38 +204397,54 @@
   },
   {
     "id": "clustermaps",
-    "name": "Clustermaps",
-    "description": "OSINT tool: Clustermaps.",
+    "name": "ClustrMaps",
+    "description": "Use when you have a `name` or `address` and want US resident/address intelligence — returns current and past residents, relatives/neighbors, phones and property/household detail.",
     "url": "https://clustrmaps.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Reverse-address and name lookups that reveal who lives (or lived) at a US address plus their relatives, neighbors and phones.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse a lot of address/resident data; deeper \"background report\" detail is upsold via paid third-party partners. No account needed for basic lookups.",
+    "opsec": "passive",
+    "opsecNote": "A data-broker aggregation of public/commercial records — searching does not notify the subject. It is broker data, so treat outputs as leads to corroborate, and mind privacy law when handling third-party PII. Use a sock-puppet browser. (If YOU are the subject, ClustrMaps offers an opt-out.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "ClustrMaps is a widely-used address/people aggregator compiling public and commercial records. Data is often stale or conflated (old residents shown as current); reliable as a lead source, not as proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "clustrmaps.com",
+      "Clustermaps"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "people-search",
+      "reverse-address",
+      "data-broker"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/clustermaps.md"
   },
   {
@@ -256080,35 +256108,53 @@
   {
     "id": "north-carolina-resident-database",
     "name": "North Carolina Resident Database",
-    "description": "OSINT tool: North Carolina Resident Database.",
+    "description": "Use when you have a `name` in North Carolina and want address/contact and household leads — returns residents, addresses, phones, neighbors and voter-registration-derived demographics.",
     "url": "https://northcarolinaresidentdatabase.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free NC people/address lookups (from voter-registration data) revealing addresses, neighbors and demographic detail.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search and browse residents/addresses; deeper \"background check\" detail is upsold via paid third-party partners. No account required for basic lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A data-broker site aggregating NC public voter-registration and commercial records — searching does not notify the subject. It is broker data; corroborate before relying, and handle third-party PII lawfully. Use a sock-puppet browser. (Subjects can opt out via the site / removal services.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "One of a network of state \"resident database\" people-search sites built on public voter-registration data plus commercial sources. Data can be stale or conflated; reliable as a lead source, not as proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "northcarolinaresidentdatabase.com",
+      "NC Resident Database"
+    ],
+    "tags": [
+      "people-search",
+      "data-broker",
+      "voter-records",
+      "north-carolina"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/north-carolina-resident-database.md"
   },
   {
@@ -328342,49 +328388,6 @@
     "_file": "library/tools/social-networks/google-com-86.md"
   },
   {
-    "id": "google-com-87",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Asnapchat.com%2Fplace%2F+inurl%3A&rlz=1C1CHBD_en-GBGB1007GB1007&oq=site%3Asnapchat.com%2Fplace%2F+inurl%3A&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEHNzA1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "snapchat",
-      "Snapchat"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-87.md"
-  },
-  {
     "id": "google-com-88",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -339401,45 +339404,51 @@
   },
   {
     "id": "pixnoy-com",
-    "name": "pixnoy.com",
-    "description": "OSINT tool: pixnoy.com.",
+    "name": "Pixnoy",
+    "description": "Use when you have an Instagram `username` and want to view/download a public profile's posts, stories and highlights without logging in — returns photos, videos, bio and follower/following counts anonymously.",
     "url": "https://www.pixnoy.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing and downloading a public Instagram profile's content (incl. stories/highlights) without an account.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no signup, no download limits; ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "Its value is that you view Instagram WITHOUT logging in, so your (or a sock-puppet's) IG account never appears in the subject's story-view list or gets recommended to them. The subject is not notified. But Pixnoy itself sees which profiles you look up and may log/serve ads; use a sock-puppet browser. Only public accounts are accessible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party anonymous Instagram viewer with no official Instagram connection and no accountable operator; content is real (pulled from public Instagram) but the site is ad-driven and disposable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "pixnoy.com",
+      "Pixnoy Instagram viewer"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "anonymous-viewer"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/pixnoy-com.md"
   },
   {
