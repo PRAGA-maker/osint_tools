@@ -103141,39 +103141,49 @@
   },
   {
     "id": "email-verifier",
-    "name": "Email Verifier",
-    "description": "Verifies whether an email address is deliverable.",
+    "name": "Hunter Email Verifier",
+    "description": "Use when you have an `email` and want to know whether it is a real, deliverable mailbox before acting on it — returns a validity/deliverability verdict and confidence score.",
     "url": "https://hunter.io/email-verifier",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming an email address is deliverable (format, domain/MX, SMTP, disposable/spam-trap checks) before treating it as a live selector.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Single verifications are free with no signup. A free account allows ~50-100 verifications/month; bulk verification and API access require registration and paid tiers for volume.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Verification is server-side against mail infrastructure and does NOT send a visible email to the target, so it is passive from the subject's view. Note Hunter itself sees every address you check — use it for triage, not for addresses you must keep confidential from a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hunter.io is a well-established, widely used email-intelligence company; the verifier is a mainstream, reputable service.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [],
+    "registration": false,
+    "aliases": [
+      "Hunter.io Email Verifier",
+      "Hunter email checker"
+    ],
+    "tags": [
+      "email",
+      "email-verification",
+      "deliverability"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/email-verifier.md"
   },
@@ -149152,32 +149162,31 @@
   },
   {
     "id": "istockphoto",
-    "name": "Istockphoto",
-    "description": "Website related to social networking with photo and image galleries, posting and sharing services",
+    "name": "iStock (by Getty Images)",
+    "description": "Use when you suspect a profile `image` is a stock/model photo and want to check it against a major royalty-free catalog — returns matching stock images (evidence the photo is not a real person's).",
     "url": "http://www.istockphoto.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming that a suspected fake-profile or catfish photo is a licensed stock image by finding it in the iStock/Getty catalog.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and searching the (watermarked-preview) catalog is free; actually licensing/downloading an image requires payment. For OSINT you only need the free search/preview to confirm a match.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the catalog is passive and reveals nothing to any subject. iStock has no native reverse-image upload, so you typically arrive here from a reverse-image engine — keep that upstream search on a clean/sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "iStock is Getty Images' royalty-free stock marketplace — a first-party, reputable catalog; the limitation is coverage (it only helps for images that are actually Getty/iStock stock), not authenticity.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -149185,14 +149194,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "iStock",
+      "istockphoto.com",
+      "iStock by Getty Images"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "stock-photo"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/istockphoto.md"
   },
@@ -202295,47 +202309,53 @@
   },
   {
     "id": "411directoryassistance-ca",
-    "name": "411directoryassistance.ca",
-    "description": "OSINT tool: 411directoryassistance.ca.",
+    "name": "411 Directory Assistance (Canada)",
+    "description": "Use when you have a Canadian `name` or `phone` and want listed directory details — returns addresses and phone numbers from Canadian white/yellow-pages listings.",
     "url": "https://www.411directoryassistance.ca",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Canadian phone-book style lookup — resolving a name to a listed address/number, or a number to a listed name (reverse), across Canada.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone"
     ],
     "selectorsOut": [
       "address",
       "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory-assistance style lookups; results are limited to publicly listed white/yellow-pages entries, so unlisted mobiles won't appear.",
+    "opsec": "passive",
+    "opsecNote": "Directory lookups are passive and do not notify the subject. It only returns listings the person chose to make public, so it reveals nothing beyond a phone book — but log queries through a clean browser as a matter of habit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A Canadian directory-assistance/white-pages aggregator; useful for landline-era listed numbers but of unverified freshness and no authority over unlisted or mobile data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "411 Canada",
+      "411directoryassistance.ca"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "canada",
+      "directory"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/411directoryassistance-ca.md"
   },
   {
@@ -205564,47 +205584,53 @@
   },
   {
     "id": "expertengine",
-    "name": "ExpertEngine",
-    "description": "OSINT tool: ExpertEngine.",
+    "name": "ExpertEngine (Expert by Big Village)",
+    "description": "Use when you have a subject `name` or a technical discipline and want to confirm whether they are a listed expert witness/consultant — returns names, credentials and employer/affiliation.",
     "url": "https://www.expertengine.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a named person is a registered expert witness/consultant, or finding a credentialed specialist in a given field.",
     "selectorsIn": [
-      "name"
+      "name",
+      "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "name",
+      "employer-org",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The public directory of disciplines and expert bios is browsable for free; engaging or contacting an expert is a paid B2B litigation-support service, so full profile/contact details are gated behind an inquiry.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and does not notify the person. Submitting an \"engage an expert\" inquiry, however, routes your request to Expert by Big Village recruiters and may reach the expert — stop at reading public bios if you only need to confirm existence.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running commercial expert-witness directory (operating since 1984, now Expert by Big Village / Intellex); legitimate but curated as a sales directory, not an authoritative identity source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Expert by Big Village",
+      "Expert Engine"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "expert-witness"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/expertengine.md"
   },
   {
@@ -214871,36 +214897,56 @@
   },
   {
     "id": "ufind-name",
-    "name": "Ufind.name",
-    "description": "OSINT tool: Ufind.name.",
+    "name": "uFind.name",
+    "description": "Use when you have a `name` (or a `phone`/`email`) in the US and want a consolidated people-search profile — returns addresses, phone numbers, emails, relatives and social profiles.",
     "url": "https://ufind.name/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A single name-to-profile lookup that aggregates address history, phones, emails, relatives and (via VIN) vehicle links for US subjects.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "email",
+      "associate",
+      "social-profile",
+      "vin"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Search and partial results are free; fuller reports (complete phone/address history, background details) are gated behind paid data-broker report tiers typical of US people-search sites.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying is passive — the subject is not notified. However, aggregator sites log searcher IP/queries and may show ads/retargeting; use a clean browser and consider a VPN. Do not enter your own identifying details into any \"unlock report\" upsell.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A US data-broker-style aggregator; results are compiled from public records and third-party data of variable freshness and accuracy — corroborate before relying on any single field.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ufind.name",
+      "uFind people search"
+    ],
+    "tags": [
+      "people-search",
+      "data-broker"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/ufind-name.md"
   },
   {
@@ -241212,47 +241258,53 @@
   },
   {
     "id": "github-io",
-    "name": "github.io",
-    "description": "OSINT tool: github.io.",
+    "name": "cipher387 Graves Search (github.io)",
+    "description": "Use when you have the `name` of a deceased person and want to find their burial record and, via neighbouring graves, family surnames — returns cemetery/burial location, relatives and dates.",
     "url": "https://cipher387.github.io/osint_stuff_tool_collection/graves_search.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A single jump-off page linking ~25 grave/cemetery databases (Find a Grave, BillionGraves, CWGC, JewishGen, regional registers) for genealogical death research.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "associate",
+      "name",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The directory page itself is a free static list; each linked database is free to search, though a few (e.g. Ancestry) gate full records behind their own subscriptions.",
+    "opsec": "passive",
+    "opsecNote": "Searching public grave/genealogy databases is passive and does not alert anyone. The subject here is typically deceased; the OpSec concern is the living relatives you surface, so handle their names with care and use a clean browser for the third-party sites.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A curated static link page by well-known OSINT collector cipher387; the page is a reliable index but the author notes it is somewhat dated, and the linked databases vary in quality.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "graves search",
+      "cipher387 osint tool collection"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "cemetery"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/github-io.md"
   },
   {
@@ -321992,44 +322044,51 @@
   {
     "id": "expand-all-facebook-comments-bookmarklet",
     "name": "Expand All Facebook Comments – Bookmarklet",
-    "description": "OSINT tool: Expand All Facebook Comments – Bookmarklet.",
+    "description": "Use when you have a Facebook post/`social-profile` thread and want to force every hidden comment and reply to load so you can read the full commenter list — returns associates, names and usernames.",
     "url": "http://com.hemiola.com/2015/08/29/expand-all",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Auto-clicking every \"View more comments\" / \"View replies\" fold on a Facebook post so the whole discussion is visible for reading or scraping.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "image",
-      "associate"
+      "associate",
+      "name",
+      "username"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free snippet of JavaScript you save as a browser bookmark; nothing to buy or register.",
+    "opsec": "active",
+    "opsecNote": "You must be logged into Facebook to view the post, so the expansion runs from YOUR authenticated session — every comment you load is a request tied to your account. Use a sock-puppet Facebook profile, never the investigator's real account; loading a friends-only thread can leave a viewer trace.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A hobbyist blog snippet (hemiola.com, 2015), not a maintained product; Facebook's DOM has been rewritten many times since, so the selectors it clicks may no longer match.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Expand all Facebook comments",
+      "Facebook comment expander bookmarklet"
+    ],
     "tags": [
       "facebook"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/expand-all-facebook-comments-bookmarklet.md"
   },
   {
@@ -338575,14 +338634,14 @@
   },
   {
     "id": "osome-iu-edu",
-    "name": "osome.iu.edu",
-    "description": "OSINT tool: osome.iu.edu.",
-    "url": "https://osome.iu.edu/tools/mastodon/#",
+    "name": "OSoMe Mastodon Search (Indiana University)",
+    "description": "Use when you have a `username`, `name` or keyword and want to search across many Mastodon/Fediverse instances at once — returns matching public posts and account profiles.",
+    "url": "https://osome.iu.edu/tools/mastodon/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Querying public Mastodon content across multiple instances from one dashboard, instead of searching each instance separately.",
     "selectorsIn": [
       "username",
       "name"
@@ -338591,29 +338650,36 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free academic research tool from Indiana University's Observatory on Social Media (OSoMe); no payment, though heavy/programmatic use may be rate-limited or require contacting OSoMe.",
+    "opsec": "passive",
+    "opsecNote": "You are querying an OSoMe-operated index of already-public Mastodon posts, not the target's instance directly, so it is passive and does not notify the subject. As with any hosted tool, OSoMe sees your queries — avoid pasting sensitive selectors you must keep private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Observatory on Social Media at Indiana University, a well-established academic research center behind Botometer, Hoaxy and related tools.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSoMe Mastodon",
+      "Observatory on Social Media Mastodon Search"
+    ],
     "tags": [
       "mastodon",
-      "Mastodon Related Sites"
+      "Mastodon Related Sites",
+      "fediverse"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osome-iu-edu.md"
   },
   {
@@ -338747,45 +338813,59 @@
   },
   {
     "id": "palenath",
-    "name": "Palenath",
-    "description": "OSINT tool: Palenath.",
+    "name": "Palenath (megadose toolset)",
+    "description": "Use when you have an `email`, `phone` or `username` and want to enumerate which sites and social accounts it is registered on — returns social profiles, names, phones and emails via megadose's open-source tools.",
     "url": "https://github.com/megadose",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "One selector (email/phone/username) fanned out across dozens of sites to find where the subject holds accounts, plus scraping public Instagram/LinkedIn data.",
     "selectorsIn": [
-      "username",
-      "name"
+      "email",
+      "phone",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "email",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and fully open-source (GPL); you run the Python tools yourself, no account or key for the core account-enumeration functions.",
+    "opsec": "active",
+    "opsecNote": "Holehe/Ignorant trigger real password-reset or registration-check requests against each target site, so the LOOKUP touches those platforms with the subject's address/number — some may log or rate-limit it. Run from a VPN/throwaway IP; never point it at your own infrastructure. Toutatis needs an Instagram session cookie — use a sock-puppet account, never a real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Widely used, well-starred tools by researcher \"megadose\" (Palenath); open-source and auditable, but community-maintained and dependent on target-site behaviour that changes often.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "megadose",
+      "Holehe",
+      "Toutatis",
+      "Ignorant"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "account-enumeration"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/palenath.md"
   },
   {
@@ -359056,45 +359136,56 @@
   },
   {
     "id": "zalo-me",
-    "name": "zalo.me",
-    "description": "OSINT tool: zalo.me.",
-    "url": "https://zalo.me/pc#",
+    "name": "Zalo (zalo.me)",
+    "description": "Use when you have a Vietnamese `phone` number or `name` and want to check for a Zalo messaging account and its public profile — returns a social profile, display name and profile photo.",
+    "url": "https://zalo.me/pc",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a Vietnamese phone number maps to a live Zalo account and pulling its display name / avatar.",
     "selectorsIn": [
-      "username",
+      "phone",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free consumer messaging app; you need your own Zalo account to search or view profiles.",
+    "opsec": "active",
+    "opsecNote": "Zalo primarily resolves people by phone number, and adding/searching a contact happens from YOUR logged-in account — the target may see a friend request or that someone viewed them. Use a sock-puppet Zalo account on a burner number; do not search from a real investigator account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Operated by VNG Corporation, Vietnam's dominant messaging platform; this is the genuine first-party service, not a scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "vn",
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Zalo",
+      "VNG Zalo"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "vietnam"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/zalo-me.md"
   },
   {
