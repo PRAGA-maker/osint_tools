@@ -149423,38 +149423,52 @@
   },
   {
     "id": "jeffreys-image-metadata-viewer",
-    "name": "Jeffreys Image Metadata Viewer",
-    "description": "OSINT tool: Jeffreys Image Metadata Viewer.",
+    "name": "Jeffrey's Image Metadata Viewer",
+    "description": "Use when you have a photo (`image`) and want to read its embedded metadata — returns EXIF/IPTC/XMP fields including GPS `geolocation`, camera/device, and capture timestamps.",
     "url": "http://exif.regex.info/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting the full EXIF/IPTC/XMP metadata from an image — especially GPS coordinates, camera model, and original date/time.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "metadata-exif",
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account; accepts an uploaded file or a URL to a hosted image.",
+    "opsec": "passive",
+    "opsecNote": "Analysis is passive against the subject, but you upload the image to Jeffrey Friedl's third-party server (or hand it an image URL) — so the picture, and any URL you paste, is disclosed to that service. For sensitive evidence, prefer a local tool (ExifTool); Jeffrey's viewer is ExifTool under the hood.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-running, well-known viewer maintained by Jeffrey Friedl, built on Phil Harvey's ExifTool; its parsing is authoritative for whatever metadata the file actually contains.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "exif.regex.info",
+      "Jeffrey Friedl EXIF viewer"
+    ],
     "tags": [
-      "image-analysis"
+      "image-analysis",
+      "exif",
+      "metadata"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/jeffreys-image-metadata-viewer.md"
   },
   {
@@ -211938,47 +211952,59 @@
   },
   {
     "id": "pipl-com",
-    "name": "pipl.com",
-    "description": "OSINT tool: pipl.com.",
+    "name": "Pipl",
+    "description": "Use when you have a `name`/`email`/`phone` and need deep identity resolution — but note Pipl is now an enterprise fraud/identity API, no longer a consumer people-search — returns linked identity, contact and social data to authorised business clients.",
     "url": "https://www.pipl.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Enterprise identity resolution / fraud investigation that links a name, email or phone to a fuller identity — accessible only via a paid business account/API.",
     "selectorsIn": [
-      "name"
+      "name",
+      "email",
+      "phone"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
       "email",
+      "phone",
       "social-profile",
+      "address",
       "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "No longer free or consumer-facing. Pipl pivoted to an enterprise fraud-intelligence platform; access is via paid contracts / API (Contact Sales), typically for payment, marketplace and investigation teams — individuals cannot self-serve a search.",
+    "opsec": "passive",
+    "opsecNote": "Queries run against Pipl's own aggregated dataset via the API, not against the subject, so lookups are passive. But access requires a vetted business account, and use is governed by Pipl's terms and applicable privacy law (FCRA/GDPR) — do not assume personal or ad-hoc investigative use is permitted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "Pipl is a long-established, reputable identity-data company; its data is high quality, but it is now gated behind enterprise contracts, so most investigators will not have direct access.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "pipl.com",
+      "Pipl SEARCH",
+      "Pipl API"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "People Search Sites",
+      "identity-resolution"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/pipl-com.md"
   },
   {
@@ -229786,47 +229812,54 @@
   },
   {
     "id": "charteredaccountants-ie",
-    "name": "charteredaccountants.ie",
-    "description": "OSINT tool: charteredaccountants.ie.",
+    "name": "Chartered Accountants Ireland — Find a Firm",
+    "description": "Use when you have a `name` or `employer-org` and want to verify an Irish chartered accountancy firm/member — returns the firm's details and confirmation of Chartered Accountants Ireland membership.",
     "url": "https://www.charteredaccountants.ie/Find-a-Firm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming that an accountancy firm or accountant is a genuine Chartered Accountants Ireland member, and locating the firm.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory from the professional body; no account required.",
+    "opsec": "passive",
+    "opsecNote": "An official member/firm directory — searching it is passive and notifies no one. It exposes business, not personal-home, details, so privacy risk is low.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Chartered Accountants Ireland (the professional body); authoritative on which firms/members are chartered.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "ie",
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "charteredaccountants.ie",
+      "CAI Find a Firm"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "accountant"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/charteredaccountants-ie.md"
   },
   {
@@ -239559,47 +239592,57 @@
   },
   {
     "id": "france",
-    "name": "France",
-    "description": "OSINT tool: France.",
+    "name": "Infogreffe (French Company Registry)",
+    "description": "Use when you have a French `employer-org` or a director's `name` and want official company records — returns company registration, filings, and named officers/directors (dirigeants).",
     "url": "https://www.infogreffe.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official French business records — resolving a company to its registration, status, accounts and named directors, or finding companies a person directs.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic company identity, status and officer names are viewable free; full documents (statutes, annual accounts, extrait Kbis) are paid per-document official extracts.",
+    "opsec": "passive",
+    "opsecNote": "Infogreffe is an official public registry — searches are passive and notify no one. Director records expose business roles and a registered business address, not necessarily a home; treat named individuals' data per GDPR.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The official online portal of the greffes des tribunaux de commerce (French commercial court registries); authoritative for French company data.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "fr"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Infogreffe",
+      "infogreffe.fr",
+      "greffe tribunal de commerce"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "france",
+      "corporate-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/france.md"
   },
   {
@@ -248543,47 +248586,52 @@
   },
   {
     "id": "justice-gov-uk",
-    "name": "justice.gov.uk",
-    "description": "OSINT tool: justice.gov.uk.",
+    "name": "Certificated Enforcement Agent Register (justice.gov.uk)",
+    "description": "Use when you have a `name` or `employer-org` and want to verify a UK certificated bailiff/enforcement agent — returns certification status and the issuing County Court.",
     "url": "http://certificatedbailiffs.justice.gov.uk/CertificatedBailiffs/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a named person is a certificated enforcement agent (bailiff) in England & Wales and which court certified them.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Official free GOV.UK register; no account needed. If a person isn't found, you can email the court (cbregister@justice.gov.uk) to verify.",
+    "opsec": "passive",
+    "opsecNote": "This is an official public register — searching it is passive and notifies no one. It confirms a professional status, not a home address, so the privacy exposure is minimal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by HM Courts & Tribunals Service (Ministry of Justice); certificates are issued by County Court judges, so the register is the authoritative source on bailiff certification.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Certificated Bailiffs register",
+      "certificatedbailiffs.justice.gov.uk"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk-gov"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/justice-gov-uk.md"
   },
   {
@@ -264153,47 +264201,53 @@
   },
   {
     "id": "rics-org",
-    "name": "rics.org",
-    "description": "OSINT tool: rics.org.",
+    "name": "RICS Find a Member/Firm",
+    "description": "Use when you have a `name` or `employer-org` and want to verify a chartered surveyor's RICS membership — returns the member/firm's professional standing and regulated-firm details.",
     "url": "https://www.rics.org/networking/find-a-member",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming that a person or firm is genuinely RICS-qualified/regulated (chartered surveyor, valuer) and surfacing the associated firm.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory from the professional body; no account required.",
+    "opsec": "passive",
+    "opsecNote": "An official membership directory — searching it is passive and notifies no one. It exposes professional, not personal-home, details, so privacy risk is low.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Royal Institution of Chartered Surveyors (RICS), the professional body itself; authoritative on who is a current member/regulated firm.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "rics.org find a member",
+      "RICS find a surveyor"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "surveyor"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rics-org.md"
   },
   {
@@ -374834,43 +374888,54 @@
   {
     "id": "gitfive",
     "name": "GitFive",
-    "description": "Deep investigation of GitHub user profiles and email-to-account mapping",
+    "description": "Use when you have a GitHub `username` or `email` and want to unmask the person behind it — returns linked emails, name/username history, SSH keys and probable secondary GitHub accounts.",
     "url": "https://github.com/mxrch/GitFive",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Deep investigation of GitHub user profiles and email-to-account mapping",
-    "input": "GitHub username or email address",
-    "output": "Profile history, linked emails, SSH keys, repository analysis, JSON export",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Deep GitHub-account OSINT — mapping a handle or email to the real identity, linked emails and other accounts a developer controls.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "name",
+      "username",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (mxrch); no payment. Requires Python 3.10+ and a GitHub account/token for API access.",
     "opsec": "active",
-    "opsecNote": "Queries GitHub API directly; developer recommends using a secondary GitHub account.",
+    "opsecNote": "GitFive queries the GitHub API authenticated as your token, so activity ties to that account — use a dedicated secondary GitHub account, never your real one. It stays under rate limits by design, but the developer explicitly restricts use to personal/criminal-investigation/open-source contexts.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-regarded open-source tool by researcher mxrch (also behind GHunt); auditable and effective, but it relies on GitHub behaviour (commit metadata, API fields) that can change.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "mxrch GitFive"
+    ],
+    "tags": [
+      "username-search",
+      "github"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/gitfive.md"
   },
   {
@@ -377366,30 +377431,32 @@
   {
     "id": "social-finder",
     "name": "Social Finder",
-    "description": "Platform to search and discover social media profiles across platforms.",
+    "description": "Use when you have a `username`/`name` and want to check an opt-in directory where people self-publish all their handles — returns a person's linked social profiles when they've claimed a page.",
     "url": "https://socialfinder.app",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Searching for a username across multiple social networks",
+    "bestFor": "Finding a person's cluster of self-declared social handles via an opt-in directory (only works if the subject published a profile).",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; users create one profile listing all their handles. No account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "Browsing is passive and notifies no one. Because entries are self-published, a hit reflects what the subject chose to reveal — reliable as their own declaration, but coverage is small since it only contains people who opted in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "A small opt-in social-directory service; data is self-reported by users, so it is honest-but-partial — useful when present, absent for most targets.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -377397,13 +377464,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "socialfinder.app"
+    ],
     "tags": [
       "username-search",
-      "multi-platform"
+      "multi-platform",
+      "opt-in-directory"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/username/social-finder.md"
   },
