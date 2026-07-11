@@ -135303,31 +135303,31 @@
   },
   {
     "id": "waze-livemap",
-    "name": "Waze Livemap",
-    "description": "Geolocation and mapping program covering worldwide locations",
-    "url": "https://www.waze.com/livemap",
+    "name": "Waze Live Map",
+    "description": "Use when you have a `geolocation` or `address` and want real-time, crowd-sourced traffic, incidents and road reports at that location — returns live geolocation context (jams, hazards, police, closures).",
+    "url": "https://www.waze.com/live-map",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing real-time crowd-sourced traffic, hazards and incident reports at any location worldwide.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web map; no account needed to view. Contributing reports requires the Waze app and an account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing the public live map is passive and leaks nothing about a subject — you are only reading crowd-sourced road data, not querying a person. No login to browse.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Waze (Google); the live map is the genuine first-party service. Reports are crowd-sourced, so individual incident pins are user-submitted and unverified.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -135336,14 +135336,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Waze livemap",
+      "waze.com/live-map"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "geo-location-mapping-tools"
+      "mapping",
+      "traffic",
+      "geolocation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/waze-livemap.md"
   },
@@ -158342,45 +158346,52 @@
   },
   {
     "id": "stolencamerafinder-com",
-    "name": "stolencamerafinder.com",
-    "description": "OSINT tool: stolencamerafinder.com.",
+    "name": "StolenCameraFinder",
+    "description": "Use when you have an original `image` (with intact EXIF) and want to find other photos taken by the same physical camera via its serial number — returns links to other images and the profiles hosting them.",
     "url": "http://www.stolencamerafinder.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting from a photo's camera serial number to other images taken by that same camera across the web.",
     "selectorsIn": [
       "image",
-      "face"
+      "metadata-exif"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image",
+      "social-profile",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required for the basic serial-number search.",
+    "opsec": "passive",
+    "opsecNote": "You upload/drag a photo to extract its EXIF locally in-browser, then it queries an index for the serial. This is largely passive and does not touch the subject. Do not upload sensitive case images to a third party you don't control unless the photo is already public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing niche tool built around camera serial numbers in EXIF; its index is limited, so coverage is partial and unverified, but the core EXIF-serial mechanic is legitimate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "stolen camera finder"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "exif",
+      "camera-serial"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/stolencamerafinder-com.md"
   },
   {
@@ -202625,41 +202636,53 @@
   {
     "id": "anywho",
     "name": "AnyWho",
-    "description": "US white pages people and phone lookups",
+    "description": "Use when you have a US `name`, `phone` or `address` and want free white-pages contact details — returns address, phone and associated people.",
     "url": "https://www.anywho.com/whitepages",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "US white pages people and phone lookups",
-    "input": "Name, phone number, or address",
-    "output": "Contact details, address, phone numbers, associated people",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free US white-pages lookups by name, phone or address.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free white-pages lookups. AnyWho is an Intelius-family directory; deeper background data is upsold to paid partner services, but core white-pages results are free.",
     "opsec": "passive",
-    "opsecNote": "Free service; may have bot protection on automated access.",
+    "opsecNote": "Searching is passive and does not notify the subject. The site has bot protection, so automate cautiously; use a clean/sock-puppet browser session for target searches.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established US white-pages directory (formerly AT&T, now Intelius-family). Data is aggregated from directory and public sources — useful but not authoritative, with stale entries common.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "anywho.com",
+      "AnyWho white pages"
+    ],
+    "tags": [
+      "people-search",
+      "white-pages"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/anywho.md"
   },
   {
@@ -235047,47 +235070,53 @@
   },
   {
     "id": "e-justice-europa-eu",
-    "name": "e-justice.europa.eu",
-    "description": "OSINT tool: e-justice.europa.eu.",
+    "name": "EU e-Justice — Land Registers",
+    "description": "Use when you have a `name` or `address` and a property question in an EU country and want the official routing to that country's land/property registry — returns links to ownership, address and property-holder (employer-org) records.",
     "url": "https://e-justice.europa.eu/109/EN/land_registers_in_eu_countries",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the official national land/property registry for any EU country to look up property ownership.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The e-Justice portal directory is free. The national registries it points to vary — some allow free index searches, others charge per-document or require a professional/registered account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the EU portal is passive and leaks nothing about the subject. OpSec and any login/fees apply at the destination national registry, which you should assess per country. No login on the portal itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The European e-Justice Portal is the official EU-operated navigation hub; the registries it links to are national government authorities. Authoritative routing to authoritative sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "European e-Justice Portal land registers",
+      "e-justice.europa.eu"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "land-registry",
+      "property-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/e-justice-europa-eu.md"
   },
   {
@@ -240075,36 +240104,52 @@
   },
   {
     "id": "georgia-voters-com",
-    "name": "Georgia-voters.com",
-    "description": "OSINT tool: Georgia-voters.com.",
+    "name": "Georgia-Voters.com",
+    "description": "Use when you have a `name` and a Georgia connection and want to look them up in the public Georgia voter file — returns residential address, age/registration date and voting-district context.",
     "url": "https://georgia-voters.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching the public Georgia voter registration file by name to obtain a residential address and registration details.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "A third-party front-end to Georgia's public voter file; basic name searches are free. Georgia law makes voter name, address, race, gender, registration date and last-voted date public (but NOT DOB, SSN or driver's licence).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A third-party republisher of public voter data — searching is passive and the subject is not notified. Because it is not an official state site, be mindful the operator can log your queries; use a clean browser session and don't assume the data is current.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An unofficial third-party site exposing the public Georgia voter file. The underlying data is authoritative (state voter records) but this is not the state's own portal, so freshness and completeness are not guaranteed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Georgia voters",
+      "GA voter file lookup"
+    ],
+    "tags": [
+      "voter-records",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/georgia-voters-com.md"
   },
   {
@@ -250695,45 +250740,54 @@
   },
   {
     "id": "maryland",
-    "name": "Maryland",
-    "description": "OSINT tool: Maryland.",
+    "name": "Maryland DPSCS Inmate Locator",
+    "description": "Use when you have a `name` (or inmate number) and want to check Maryland state custody status — returns identity confirmation, dob, inmate document-id and facility/location.",
     "url": "http://www.dpscs.state.md.us/inmate",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person in Maryland's state prison system by name or inmate identification number.",
     "selectorsIn": [
-      "name"
+      "name",
+      "document-id"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public records search operated by the Maryland Department of Public Safety and Correctional Services; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public government database; searching is passive and the subject is not notified. No login required — use a clean browser session as routine hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Maryland Department of Public Safety and Correctional Services (dpscs.state.md.us); authoritative first-party government data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Maryland DPSCS",
+      "Maryland inmate locator"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/maryland.md"
   },
   {
@@ -266337,47 +266391,53 @@
   },
   {
     "id": "socialworkengland-org-uk",
-    "name": "socialworkengland.org.uk",
-    "description": "OSINT tool: socialworkengland.org.uk.",
+    "name": "Social Work England — Register Search",
+    "description": "Use when you have a `name` (or registration number) and want to confirm someone is a registered social worker in England and their practising status — returns town, registration document-id, employer/status context.",
     "url": "https://www.socialworkengland.org.uk/umbraco/surface/searchregister/results",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a person is a registered social worker in England and reading their register status, town and any conditions.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "document-id"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "document-id",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public statutory register search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public regulator register; searching is passive and the subject is not notified. No login required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Social Work England is the statutory regulator for social workers in England; the register is an authoritative, real-time first-party government/regulatory source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Social Work England register",
+      "SWE register search"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "professional-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/socialworkengland-org-uk.md"
   },
   {
@@ -266427,47 +266487,52 @@
   },
   {
     "id": "solicitorstribunal-org-uk",
-    "name": "solicitorstribunal.org.uk",
-    "description": "OSINT tool: solicitorstribunal.org.uk.",
+    "name": "Solicitors Disciplinary Tribunal — Judgment Search",
+    "description": "Use when you have a `name` of a solicitor in England & Wales and want to check for published disciplinary judgments against them — returns case document-id, findings/outcome and employer-org (firm) context.",
     "url": "https://www.solicitorstribunal.org.uk/judgment-search-results#search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a solicitor in England & Wales has faced disciplinary proceedings and the outcome.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "document-id",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search of published disciplinary judgments; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public tribunal record; searching is passive and the subject is not notified. No login required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Solicitors Disciplinary Tribunal (SDT) is the statutory disciplinary body for solicitors in England & Wales; published judgments are authoritative first-party records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SDT judgment search",
+      "Solicitors Disciplinary Tribunal"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "disciplinary-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/solicitorstribunal-org-uk.md"
   },
   {
@@ -290740,13 +290805,13 @@
   {
     "id": "info-com",
     "name": "info.com",
-    "description": "OSINT tool: info.com.",
+    "description": "Use when you have a `name` or other keyword and want an alternate general web search engine to surface pages a mainstream engine ranks differently — returns web results linking to name mentions and social-profiles.",
     "url": "https://info.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A secondary general web search engine (System1) for cross-checking name/keyword results against Google/Bing.",
     "selectorsIn": [
       "name"
     ],
@@ -290754,29 +290819,34 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web search; no account. Ad-supported (operated by System1).",
+    "opsec": "passive",
+    "opsecNote": "A general search engine; typing a name is passive and does not notify the subject. As with any search engine, your queries are logged by the operator — use a clean/sock-puppet session and avoid clicking through to anything that would deanonymise you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, operational search portal run by System1; results are drawn from mainstream indexes with heavy ad monetisation, so it offers modest OSINT value beyond a ranking-diversity cross-check.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "info.com search"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "metasearch"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/info-com.md"
   },
   {
