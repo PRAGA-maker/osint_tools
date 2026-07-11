@@ -205699,14 +205699,14 @@
   },
   {
     "id": "fastpeoplesearch",
-    "name": "fastpeoplesearch",
-    "description": "Free US people lookup with addresses, phones and relatives.",
+    "name": "FastPeopleSearch",
+    "description": "Use when you have a US `name`, `phone` or `address` and want a genuinely free lookup of addresses, phone numbers and relatives — returns address history, phones and associates with no paywall.",
     "url": "https://fastpeoplesearch.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Free US people lookups returning current/past addresses, phone numbers and relatives without a paywall.",
     "selectorsIn": [
       "name",
       "phone",
@@ -205717,15 +205717,18 @@
       "phone",
       "associate"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Genuinely free — full results (addresses, phones, relatives) show without payment or registration, unlike most brokers that gate the report. Funded by ads/upsells to background-check partners.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching is passive and does not notify the subject. The site has aggressive bot protection (CAPTCHA/rate limits) on automated access — drive it manually. Use a clean/sock-puppet browser session for target searches.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely used free US people-search aggregator (same broker ecosystem as TruePeopleSearch). Data is aggregated from public and commercial sources — high-yield leads, but stale entries and wrong relatives occur; not authoritative.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -205734,10 +205737,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "fastpeoplesearch.com",
+      "Fast People Search"
+    ],
+    "tags": [
+      "people-search",
+      "white-pages"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/fastpeoplesearch.md"
   },
@@ -243039,47 +243048,56 @@
   },
   {
     "id": "guernseyregistry-com",
-    "name": "guernseyregistry.com",
-    "description": "OSINT tool: guernseyregistry.com.",
+    "name": "Guernsey Registry",
+    "description": "Use when you have a company `name`, a director `name`, or a Guernsey business connection and want official company/director records — returns registered company details, officers/associates and a registered address.",
     "url": "https://portal.guernseyregistry.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Guernsey company and director/officer lookups from the States of Guernsey registry.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic company search/existence and some details are free; full filings, officer detail and document copies are typically charged per item or require a registry account.",
+    "opsec": "passive",
+    "opsecNote": "An official corporate registry; searching is passive and no one is notified. A free-text search is anonymous; ordering documents may require an account and payment tied to you — use a research identity if so.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the States of Guernsey (the official company registry for the Bailiwick of Guernsey); authoritative first-party corporate data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gg"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Guernsey Registry portal",
+      "guernseyregistry.com"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "company-records",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/guernseyregistry-com.md"
   },
   {
@@ -246812,47 +246830,49 @@
   },
   {
     "id": "irelandhouse-ie",
-    "name": "irelandhouse.ie",
-    "description": "OSINT tool: irelandhouse.ie.",
+    "name": "Ireland House (Property Price Register)",
+    "description": "Use when you have an Irish `address`/Eircode (or an area) and want historical property sale prices and dates — returns sale price, date and property address from Ireland's Residential Property Price Register.",
     "url": "https://irelandhouse.ie/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching historical residential property sales in Ireland by address/Eircode, county, price and date.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; built on the public Residential Property Price Register (PSRA / Revenue stamp-duty filings).",
+    "opsec": "passive",
+    "opsecNote": "Public property-sales data; searching is passive and notifies no one. No login required. Note the register lists sale price/date/address but not buyer/seller names.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party front-end partially based on Ireland's official Residential Property Price Register (PSRA data). The underlying sales data is authoritative; presentation and any derived statistics are this site's own.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "irelandhouse.ie",
+      "Ireland House property register"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "property-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/irelandhouse-ie.md"
   },
   {
@@ -250878,45 +250898,52 @@
   },
   {
     "id": "massachusetts",
-    "name": "Massachusetts",
-    "description": "OSINT tool: Massachusetts.",
+    "name": "Massachusetts Inmate Locator (via VINELink)",
+    "description": "Use when you have a `name` (or commitment number) and want to locate someone in a Massachusetts prison — the state directs you to VINELink to confirm custody and status, returning identity and a custody document-id.",
     "url": "https://www.mass.gov/how-to/find-an-inmate-in-a-massachusetts-prison",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person held in a Massachusetts Department of Correction facility via the state's VINELink service.",
     "selectorsIn": [
-      "name"
+      "name",
+      "document-id"
     ],
     "selectorsOut": [
       "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public service; VINELink search and the (866) 277-7477 phone line cost nothing.",
+    "opsec": "passive",
+    "opsecNote": "A public custody-lookup service; searching is passive and the subject is not notified. VINELink offers optional victim-notification registration — do NOT register for alerts on a target, as that is a distinct, logged action; use the search only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The mass.gov page is the official state instruction; it routes to VINELink, the state's designated inmate-location/notification partner (only the MA DOC participates). Authoritative for MA state custody.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Massachusetts DOC inmate search",
+      "MA VINELink"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/massachusetts.md"
   },
   {
