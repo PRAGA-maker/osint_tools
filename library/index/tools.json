@@ -158325,46 +158325,53 @@
   {
     "id": "steam",
     "name": "Steam",
-    "description": "Website related to social networking and players of over 200 games on this website",
+    "description": "Use when you have a `username`/handle and think the subject games on Steam — returns `social-profile`, `image` (avatar), `associate` (friends) and activity.",
     "url": "http://store.steampowered.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's Steam profile — avatar, games, friends list, activity and linked accounts.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
+      "social-profile",
       "image",
-      "social-profile"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to view public profiles at steamcommunity.com; no account needed to read public profiles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public profile is passive and doesn't notify the target. To see friends-only content you'd need to friend them (active) — use a sock-puppet and avoid that unless justified. Many profiles are set private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "Valve's first-party gaming platform; profile data is authoritative for the account, though handles/personas are self-chosen.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Steam Community",
+      "steampowered.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "gaming",
+      "steam"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/steam.md"
   },
@@ -249162,47 +249169,53 @@
   },
   {
     "id": "le-necrologue-obituary-search-canada",
-    "name": "Le Necrologue Obituary Search (Canada)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "name": "Le Nécrologue (Canada Obituary Search)",
+    "description": "Use when you have a `name` and want Canadian death notices/obituaries — returns `dob`/death date, `address` (city/province), funeral home and `associate` (surviving family).",
     "url": "https://www.lenecrologue.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Canadian (Quebec-heavy) death notices to confirm a death and surface family, dates and location.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "dob",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Historically free; since Sept 2025 many notices depend on funeral-home paid subscriptions, though basic browsing/search remains. No cost to search names.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public obituary database; searching is passive and the subject/family isn't notified. No login for basic search. Be mindful this concerns the recently deceased and grieving families — handle findings sensitively.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large Canadian obituary aggregator (1.2M+ notices); notices originate from funeral homes/families, so details are generally reliable but not an official vital record.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Le Necrologue",
+      "lenecrologue.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "obituary",
+      "death-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/le-necrologue-obituary-search-canada.md"
   },
@@ -252876,47 +252889,54 @@
   },
   {
     "id": "musicteachers-co-uk",
-    "name": "musicteachers.co.uk",
-    "description": "OSINT tool: musicteachers.co.uk.",
+    "name": "MusicTeachers.co.uk",
+    "description": "Use when you have a `name`, instrument or `address`/area and think the subject is a UK private music teacher — returns teacher `name`, `address`/area, qualifications and `social-profile`.",
     "url": "https://musicteachers.co.uk/music-lessons",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a UK private music teacher's listing — name, instrument, service area and qualifications.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the directory (lesson fees are the teacher's, not the site's); no account needed to browse listings.",
+    "opsec": "passive",
+    "opsecNote": "Public directory; browsing is passive and needs no login. Contacting a teacher is an active step — stay in read-only unless you intend to engage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A legitimate UK music-tuition directory with a stated vetting process, but listings are teacher self-supplied, so details are claimed.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Music Teachers UK"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "music",
+      "tuition"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/musicteachers-co-uk.md"
   },
   {
@@ -334144,14 +334164,14 @@
   },
   {
     "id": "lotus-vn",
-    "name": "lotus.vn",
-    "description": "OSINT tool: lotus.vn.",
+    "name": "Lotus.vn",
+    "description": "Use when you have a `username` or `name` and think the subject uses Lotus, a Vietnamese social network — returns `social-profile`, `name`, posts (app-centric, limited web view).",
     "url": "https://lotus.vn/w",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Checking for a subject's profile/posts on Lotus, a Vietnamese social network.",
     "selectorsIn": [
       "username",
       "name"
@@ -334160,29 +334180,38 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free to use, but the platform is app-centric — the web view is limited and registering an account requires the mobile app.",
+    "opsec": "passive",
+    "opsecNote": "Viewing whatever is public on the web is passive. Deeper access needs the mobile app and an account, which ties a (sock-puppet) identity to your activity; installing/registering exposes device/phone details, so use a burner setup.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A real Vietnamese social platform (VIVA), but with limited public web access and unclear reach; profile content is user-supplied.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "vn"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Lotus Vietnam",
+      "lotus.vn"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "vietnam"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/lotus-vn.md"
   },
   {
@@ -376311,37 +376340,56 @@
   {
     "id": "sherlockeye",
     "name": "SherlockEye",
-    "description": "OSINT tool: SherlockEye.",
+    "description": "Use when you have a `username`, `email`, `phone`, `name`, `domain` or `ip-address` and want an aggregated reverse-lookup across 800+ sources — returns `social-profile`, `associate`, breach and identity links.",
     "url": "https://sherlockeye.io/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "One-dashboard reverse lookup of a selector across 800+ open sources, linking aliases to a single identity.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "phone",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "email"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — free tier on sign-up; paid credit plans (Essential $16/mo up to Enterprise) unlock volume and advanced features. Results are credit-metered.",
+    "opsec": "passive",
+    "opsecNote": "Queries are run server-side across aggregated sources, so your IP isn't hitting each target site — but you register an account and the platform logs your searches. Use a dedicated investigative account; don't enter case-sensitive selectors you wouldn't want a third party to hold.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial AI-OSINT aggregator; breadth is real but results are machine-correlated across sources of varying quality, so confirm before relying.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "SherlockEye.io"
+    ],
     "tags": [
-      "username-check"
+      "username-check",
+      "reverse-lookup",
+      "aggregator",
+      "digital-footprint"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/sherlockeye.md"
   },
   {
