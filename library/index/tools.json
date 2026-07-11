@@ -173655,37 +173655,58 @@
   {
     "id": "maltego-telegram",
     "name": "Maltego Telegram",
-    "description": "OSINT tool: Maltego Telegram.",
+    "description": "Use when you have a `phone`, Telegram `username`, or channel and want to map users, groups, admins, and forwards in Maltego — returns social-profile, associate, and username links.",
     "url": "https://github.com/vognik/maltego-telegram",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Telegram OSINT inside Maltego — resolve a phone to a Telegram user, enumerate group members/admins, and map channel authors and forwarded/related channels.",
+    "selectorsIn": [
+      "phone",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open source (GPL-3.0). Needs the free Maltego client plus your own Telegram API credentials; a paid Maltego tier isn't required for the community client.",
+    "opsec": "active",
+    "opsecNote": "Transforms authenticate with YOUR Telegram account/API credentials and actively query Telegram — resolving a phone can add the target to your contacts and, in some configs, make you visible to them. Use a dedicated sock-puppet Telegram account and burner API credentials, and understand each transform before running it against a live target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community open-source Maltego transform set on GitHub; it uses Telegram's own API (data is authoritative), but the tooling is third-party and unmaintained-risk.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [
+      "telegram-nearby-map",
+      "maltego"
+    ],
+    "aliases": [
+      "maltego-telegram",
+      "vognik telegram transforms"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "maltego",
+      "messaging"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/maltego-telegram.md"
   },
   {
@@ -207926,51 +207947,6 @@
     "_file": "library/tools/people-search/inteltechniques-osint.md"
   },
   {
-    "id": "inteltechniques-people-search-tools",
-    "name": "Inteltechniques - People Search Tools",
-    "description": "OSINT tool: Inteltechniques - People Search Tools.",
-    "url": "https://inteltechniques.com/menu/pages/person.tool.html",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/inteltechniques-people-search-tools.md"
-  },
-  {
     "id": "intelx-io",
     "name": "Intelligence X (intelx.io)",
     "description": "Use when you have an `email`, `domain`, `ip-address`, `crypto-wallet` or `username` and want breach/dark-web/archive hits — returns leaked records, documents and linked identities.",
@@ -232965,14 +232941,14 @@
   },
   {
     "id": "cro-ie-2",
-    "name": "cro.ie",
-    "description": "OSINT tool: cro.ie.",
-    "url": "https://core.cro.ie/search?__cf_chl_jschl_tk__=SpGJVcG9n8RPzw3wvMXsJyg8lf7OrD94Kd_rO84.xSc-1637240167-0-gaNycGzNBj0",
+    "name": "cro.ie (Companies Registration Office Ireland — CORE)",
+    "description": "Use when you have an `employer-org` or director `name` in Ireland and want company registration, officers, and addresses — returns employer-org, address, and director-name data.",
+    "url": "https://core.cro.ie/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Ireland's official company register (CRO/CORE) for companies, business names, directors, and their registered addresses.",
     "selectorsIn": [
       "name",
       "address",
@@ -232983,29 +232959,43 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic company/business-name search (name, number, status, registered address, some officer data); full filings and documents (annual returns, officer lists, accounts) are paid per document.",
+    "opsec": "passive",
+    "opsecNote": "Official government registry — searching does not notify anyone and reveals only your IP to the CRO. Buying documents requires a CORE account and payment (attributable). The free search is fully passive; use payment hygiene if purchasing filings.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Irish government registry (Companies Registration Office); the authoritative record of Irish companies and business names.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "companies-house",
+      "ebra-be"
+    ],
+    "aliases": [
+      "CRO Ireland",
+      "CORE",
+      "Companies Registration Office"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cro-ie-2.md"
   },
   {
@@ -261685,36 +261675,58 @@
   },
   {
     "id": "public-access-to-court-electronic-records",
-    "name": "Public Access to Court Electronic Records",
-    "description": "OSINT tool: Public Access to Court Electronic Records.",
+    "name": "PACER (Public Access to Court Electronic Records)",
+    "description": "Use when you have a `name` and want US federal court cases (dockets, parties, filings) they are involved in — returns document-id, associate, and address leads from litigation.",
     "url": "https://pacer.uscourts.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching US federal court records nationwide — district, bankruptcy, and appellate case dockets, party names, and filed documents.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to register and search; $0.10/page (capped $3.00/document) to view dockets/documents, but fees are waived entirely for any quarter in which you accrue $30 or less — so most light users pay nothing.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Official federal-judiciary system — searching does not notify parties. You must register an attributable PACER account (name/billing), and searches are associated with it, so PACER itself can see your activity; there is no anonymous access. No notification reaches the person you search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party US federal judiciary system; the authoritative source for federal court records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [
+      "courtlistener",
+      "canadian-legal-information-institute"
+    ],
+    "aliases": [
+      "PACER",
+      "PACER Case Locator"
+    ],
+    "tags": [
+      "court",
+      "legal",
+      "federal-courts"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/public-access-to-court-electronic-records.md"
   },
   {
@@ -324047,35 +324059,53 @@
   {
     "id": "first-tweet",
     "name": "First Tweet",
-    "description": "OSINT tool: First Tweet.",
+    "description": "Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes broke it); retained as historical reference.",
     "url": "http://ctrlq.org/first/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Historical reference only — the tool is offline; use a live alternative for earliest-tweet discovery.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "down",
+    "pricing": "free",
+    "costNote": "Was a free web tool; now returns HTTP 404 and is no longer maintained.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The endpoint is dead (404). Do not rely on any page that loads there; a lapsed/parked domain could be repurposed. Do not enter data expecting a trustworthy result.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Formerly a popular Amit Agarwal (Digital Inspiration/ctrlq.org) utility; now defunct, largely due to Twitter/X API restrictions that removed the free search access it relied on.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "deprecated": true,
+    "relatedTools": [
+      "social-searcher",
+      "whopostedwhat-com"
+    ],
+    "aliases": [
+      "ctrlq first tweet",
+      "first tweet finder"
+    ],
+    "tags": [
+      "twitter",
+      "search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/first-tweet.md"
   },
   {
@@ -332513,49 +332543,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/jump-cutter.md"
-  },
-  {
-    "id": "justgetmydata-com",
-    "name": "justgetmydata.com",
-    "description": "OSINT tool: justgetmydata.com.",
-    "url": "https://justgetmydata.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gsocialmedia",
-      "General Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/justgetmydata-com.md"
   },
   {
     "id": "justlog",
@@ -344994,41 +344981,56 @@
   {
     "id": "social-searcher",
     "name": "Social Searcher",
-    "description": "Cross-platform social media content search",
+    "description": "Use when you have a `name`, `username`, or keyword and want recent public posts and mentions across social networks — returns social-profile and associated post/mention leads.",
     "url": "https://www.social-searcher.com/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "search"
     ],
-    "bestFor": "Cross-platform social media content search",
-    "input": "Keywords, hashtags, or usernames",
-    "output": "Posts, profiles, hashtags, and metadata from multiple social networks",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free real-time search of public social-media posts, mentions, and profiles across multiple networks from a single query box.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free public search of posts, mentions, accounts, and hashtags with no login; saved monitoring, analytics, alerts, and the API are paid plans.",
     "opsec": "passive",
-    "opsecNote": "Searches through Social Searcher's aggregated index; does not make direct requests to target accounts.",
+    "opsecNote": "Searches Social Searcher's own aggregated index rather than querying the target's accounts directly, so no notification reaches the subject. Only Social Searcher sees your query and IP; use a VPN/sock-puppet browser for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established third-party social-media search aggregator; results are real public posts but coverage/freshness vary by network and by what the platforms currently expose.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "whopostedwhat-com",
+      "one-liner-osint-github-com"
+    ],
+    "aliases": [
+      "social-searcher.com",
+      "Social Searcher"
+    ],
+    "tags": [
+      "social-media",
+      "search",
+      "monitoring"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/search/social-searcher.md"
   },
   {
@@ -355742,28 +355744,31 @@
   {
     "id": "whopostedwhat-com",
     "name": "whopostedwhat.com",
-    "description": "Facebook keyword search engine that finds posts by keyword on specific dates.",
+    "description": "Use when you have a `name`/keyword and a date and want Facebook posts from that exact day/range — returns social-profile and post leads around a key date.",
     "url": "https://whopostedwhat.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Finding Facebook posts mentioning a name/keyword on a date range",
+    "bestFor": "Searching Facebook for posts containing a keyword/name on a specific day, month, year, or date range — activity that native Facebook search won't surface by date.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use (donation-supported). Some features (e.g. resolving a profile to its numeric ID, or running certain searches) work best when you are logged into your own Facebook account in the same browser.",
+    "opsec": "active",
+    "opsecNote": "The site builds Facebook search URLs that you then open inside YOUR Facebook session — Facebook logs the viewing account and it can surface you to the target via \"people you may know\". Always run the resulting searches from a sock-puppet Facebook account, never an attributable one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Widely used Facebook search tool (in the Social-Media-OSINT collection).",
+    "trustNote": "Widely used, well-regarded journalist/OSINT tool (conceived by Henk van Ess); it constructs Facebook's own search queries, so results come from Facebook itself.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -355771,16 +355776,21 @@
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
+    "registration": false,
+    "relatedTools": [
+      "facebook-search-tool-2",
+      "social-searcher"
+    ],
     "aliases": [
-      "who posted what"
+      "who posted what",
+      "whopostedwhat"
     ],
     "tags": [
       "facebook",
       "search"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/whopostedwhat-com.md"
   },
