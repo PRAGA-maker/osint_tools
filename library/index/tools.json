@@ -160993,7 +160993,7 @@
   {
     "id": "wikileaks-search",
     "name": "WikiLeaks Search",
-    "description": "OSINT tool: WikiLeaks Search.",
+    "description": "Use when you have a `name`, `email`, `employer-org`, or keyword and want to find mentions in WikiLeaks' published document sets — returns matching leaked cables, emails, and files.",
     "url": "https://search.wikileaks.org/advanced",
     "category": "image-video-face",
     "path": [
@@ -161001,22 +161001,32 @@
       "documents",
       "search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Full-text searching WikiLeaks' published leaks (diplomatic cables, org emails, files) for a person, address, or keyword.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "email",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free full-text search of published WikiLeaks collections; no account required.",
+    "opsec": "active",
+    "opsecNote": "Simply visiting WikiLeaks and searching can be sensitive in some jurisdictions/workplaces and may be monitored. Use a VPN/Tor and a clean browser; do not run these searches from an attributable corporate or government network if that matters for your situation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "The documents are genuine leaked materials, but they are unverified primary sources with agenda/selection bias; a hit proves a mention, not the truth of the surrounding claims.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -161024,11 +161034,16 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "search.wikileaks.org"
+    ],
+    "tags": [
+      "documents",
+      "leaks"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/documents/search/wikileaks-search.md"
   },
   {
@@ -208334,29 +208349,37 @@
   {
     "id": "lullar-2",
     "name": "Lullar",
-    "description": "Username and email-based social media profile enumeration",
+    "description": "Use when you have an `email`, `username`, or `name` and want a fast sweep of public social-media profiles under it — returns links to matching profiles across 175+ platforms.",
     "url": "https://com.lullar.com/",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Username and email-based social media profile enumeration",
-    "input": "Email address or username",
-    "output": "Matching profiles across 148+ social media platforms",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick anonymous enumeration of public social profiles by email, username, or name across many platforms.",
+    "selectorsIn": [
+      "email",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "100% free, no signup, no account — anonymous searches over HTTPS.",
     "opsec": "passive",
-    "opsecNote": "No registration required; searches public profiles only.",
+    "opsecNote": "Lullar builds and runs profile-lookup queries; per the site it keeps no logs and requires no account, and the target is not notified. Still, open discovered profiles from a sock-puppet browser and avoid engaging them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-standing free profile-search aggregator; results are pattern/URL guesses across platforms, so expect false positives and misses. Verify each hit manually.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -208364,11 +208387,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Lullar Profile Search",
+      "com.lullar.com"
+    ],
+    "tags": [
+      "username",
+      "email"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/lullar-2.md"
   },
   {
@@ -214541,38 +214570,55 @@
   },
   {
     "id": "white-pages-us",
-    "name": "White Pages (US)",
-    "description": "OSINT tool: White Pages (US).",
-    "url": "http://www.whitepages.com",
+    "name": "Whitepages (US)",
+    "description": "Use when you have a US `name`, `phone`, or `address` and want contact/identity details — returns current address, phone numbers, relatives/associates, and age.",
+    "url": "https://www.whitepages.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "US name/phone/address lookup returning current contact info, relatives, and age.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free teaser (current city, age range, partial phone/relatives). Full contact details, background info, and reverse-phone owner data are paywalled behind Whitepages Premium.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive — the subject is not notified. You do disclose your query to a commercial broker; use a sock-puppet account/email and disposable payment if you subscribe.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Long-established US contact-data broker. Generally decent for current phone/address but aggregated from many sources, so entries can be stale or merged across same-name people.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Whitepages",
+      "whitepages.com"
+    ],
     "tags": [
       "people-investigations"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/white-pages-us.md"
   },
   {
@@ -220901,14 +220947,14 @@
   },
   {
     "id": "truecaller-com",
-    "name": "Truecaller.com",
-    "description": "OSINT tool: Truecaller.com.",
-    "url": "https://truecaller.com",
+    "name": "Truecaller",
+    "description": "Use when you have a `phone` number and want the name/caller-ID the crowd has associated with it — returns a likely owner name, location/carrier, and spam flags.",
+    "url": "https://www.truecaller.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Crowd-sourced caller-ID lookup — resolving a phone number to a likely name and location.",
     "selectorsIn": [
       "phone"
     ],
@@ -220917,28 +220963,36 @@
       "address",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free basic lookups but the web/app now requires signing in with an account; deeper features (unlimited lookups, full name/details, who-viewed) sit behind Truecaller Premium.",
+    "opsec": "active",
+    "opsecNote": "Truecaller ties lookups to your account and historically uploads/records activity; searching a number can consume from your quota and is logged against your identity. Use a sock-puppet account, and be aware that installing the app can upload your own contacts. The number's owner is not directly notified of a lookup.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Names come from crowd-sourced address books and user tags, not an authoritative registry — often right, but can be outdated, mislabeled, or reflect a previous owner of a recycled number.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "truecaller.com",
+      "Truecaller"
+    ],
     "tags": [
       "phone"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/truecaller-com.md"
   },
   {
@@ -227006,47 +227060,53 @@
   },
   {
     "id": "business-gov-au",
-    "name": "business.gov.au",
-    "description": "OSINT tool: business.gov.au.",
+    "name": "ABN Lookup (Australian Business Register)",
+    "description": "Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN status, type, GST registration, location, and trading names.",
     "url": "https://abr.business.gov.au/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Australian business lookups — ABN status, entity type, trading names, and location from a name or number.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free government service; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Public register lookup — the entity is not notified. Anonymous; standard browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Australian Business Register (ATO-administered) — the authoritative source for ABN/entity status. Sole-trader ABNs can tie a business directly to a person's name.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ABN Lookup",
+      "abr.business.gov.au",
+      "Australian Business Register"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/business-gov-au.md"
   },
   {
@@ -246534,47 +246594,54 @@
   },
   {
     "id": "jerseyfsc-org",
-    "name": "jerseyfsc.org",
-    "description": "OSINT tool: jerseyfsc.org.",
+    "name": "Jersey Financial Services Commission Registry",
+    "description": "Use when you have an `employer-org` or `name` tied to a Jersey company/entity and want official registry data — returns entity existence, status, type, and registered address.",
     "url": "https://www.jerseyfsc.org/registry/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Jersey (Channel Islands) company/entity lookups — status, type, and registered address.",
     "selectorsIn": [
+      "employer-org",
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic entity name/number search is available online (myRegistry); ordering filed documents and some registry services carry per-item fees.",
+    "opsec": "passive",
+    "opsecNote": "Public registry lookups are passive and anonymous — the entity is not notified. As in other offshore registers, beneficial-ownership and some controller data are NOT public; stay within the public entity search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Jersey Financial Services Commission — the statutory, first-party registrar for Jersey companies, business names, foundations, and partnerships. Authoritative, though visible officers may be nominees.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "je"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "JFSC Registry",
+      "jerseyfsc.org",
+      "Jersey companies registry"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/jerseyfsc-org.md"
   },
   {
@@ -247959,47 +248026,53 @@
   },
   {
     "id": "lawsociety-org-uk",
-    "name": "lawsociety.org.uk",
-    "description": "OSINT tool: lawsociety.org.uk.",
-    "url": "http://solicitors.lawsociety.org.uk/?Pro=True",
+    "name": "Law Society Find a Solicitor (England & Wales)",
+    "description": "Use when you have a `name` or firm and want to confirm a solicitor's registration and workplace in England & Wales — returns the solicitor's status, firm/employer, and office address.",
+    "url": "https://solicitors.lawsociety.org.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a person is a registered solicitor in England & Wales and locating their firm/office.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory operated by the Law Society; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Public register lookup — the solicitor is not notified. Anonymous; standard browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Law Society \"Find a Solicitor\" register, drawing on SRA regulatory data — the authoritative source for solicitor registration in England & Wales.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Find a Solicitor",
+      "solicitors.lawsociety.org.uk"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/lawsociety-org-uk.md"
   },
   {
@@ -256461,47 +256534,50 @@
   },
   {
     "id": "onthehouse-com-au",
-    "name": "onthehouse.com.au",
-    "description": "OSINT tool: onthehouse.com.au.",
+    "name": "OnTheHouse (Australia Property)",
+    "description": "Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated value, listing history, and property attributes.",
     "url": "https://www.onthehouse.com.au/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Australian property lookups — sale history, value estimates, and listing history from an address.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to view estimated values, sale history, and property details for most addresses. Fuller property reports and some data are gated/upsold.",
+    "opsec": "passive",
+    "opsecNote": "Passive lookup of published property data — no owner is notified. Note owner names are generally NOT shown (unlike a land-titles office); it's property-level data. Standard browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A major Australian property portal (CoreLogic data). Sale-history and attribute data are reliable; automated value estimates are approximations, not valuations.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "onthehouse.com.au",
+      "On The House"
+    ],
     "tags": [
       "propertysites",
       "Property Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/onthehouse-com-au.md"
   },
   {
@@ -257245,47 +257321,52 @@
   },
   {
     "id": "optical-org",
-    "name": "optical.org",
-    "description": "OSINT tool: optical.org.",
+    "name": "GOC Register (opticians, UK)",
+    "description": "Use when you have a `name` and want to confirm a UK optician/optometrist's registration and practice — returns registrant status, registration number, and (for businesses) registered details.",
     "url": "https://www.optical.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a person is a GOC-registered optometrist/dispensing optician in the UK and their registration status.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register search operated by the UK General Optical Council; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Public register lookup — the registrant is not notified. Anonymous; standard browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the General Optical Council (GOC), the UK statutory regulator of optical professionals — a first-party authoritative register.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "General Optical Council",
+      "GOC register",
+      "optical.org"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/optical-org.md"
   },
   {
@@ -328476,45 +328557,52 @@
   },
   {
     "id": "inaturalist-org",
-    "name": "inaturalist.org",
-    "description": "OSINT tool: inaturalist.org.",
+    "name": "iNaturalist",
+    "description": "Use when you have a `username`/`name` on iNaturalist and want their nature observations — returns geotagged, time-stamped observation photos revealing places the person has physically been.",
     "url": "https://www.inaturalist.org/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping where and when a person has been, via their geotagged nature-observation photos.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "geolocation",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free citizen-science platform; no account needed to browse public observations and profiles.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public observations is passive — the user is not notified. Note iNaturalist obscures coordinates for sensitive/threatened species and lets users obscure their own locations, so precise geodata isn't guaranteed. Use a sock-puppet if you ever create an account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Reputable, widely used citizen-science platform (California Academy of Sciences / National Geographic). Observation locations/timestamps are user-supplied but generally reliable, subject to deliberate obscuring.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "inaturalist.org",
+      "iNaturalist"
+    ],
     "tags": [
       "gsocialmedia",
       "General Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inaturalist-org.md"
   },
   {
