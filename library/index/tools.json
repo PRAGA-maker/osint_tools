@@ -221128,42 +221128,56 @@
   {
     "id": "spydialer",
     "name": "SpyDialer",
-    "description": "Phone-number attribution and spam context pivoting",
-    "url": "https://www.spydialer.com:443/default.aspx",
+    "description": "Use when you have a US `phone` number and want the owner name, line type, and location context — returns name and address-area leads (also reverse name/email/address search).",
+    "url": "https://www.spydialer.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Phone-number attribution and spam context pivoting",
-    "input": "Phone number",
-    "output": "Identity clues, carrier/location context, and related lookup data",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Primary lookup behavior is database-driven, though some features may increase visibility.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
+    "bestFor": "Free US reverse-phone lookup — owner name, carrier/line type, and general location, with up to 50 free lookups a day and no signup.",
+    "selectorsIn": [
+      "phone",
+      "name",
+      "email"
     ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free with no account and no credit card; up to 50 lookups per day. Some deeper results may hand off to a paid partner, but core reverse-phone lookup is free.",
+    "opsec": "passive",
+    "opsecNote": "Database-driven lookup — SpyDialer states searches are anonymous and the person you look up is not notified. You only expose your query/IP to SpyDialer; use a VPN/sock-puppet browser for sensitive work. Avoid its \"listen to voicemail greeting\" feature against a live target, which could place a call.",
+    "humanInLoop": false,
+    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established free people/phone-lookup service drawing on public records and proprietary data; results are lead-quality and vary in freshness, so corroborate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
-    "api": true,
+    "coverage": [
+      "us"
+    ],
+    "auth": "none",
+    "api": false,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": false,
+    "relatedTools": [
+      "truecaller-search-engine",
+      "moriarty-project"
+    ],
+    "aliases": [
+      "Spy Dialer",
+      "spydialer.com"
+    ],
+    "tags": [
+      "phone",
+      "reverse-phone",
+      "people-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/spydialer.md"
   },
   {
@@ -227368,52 +227382,6 @@
     "_file": "library/tools/public-records/brazillian-address-cep-search-and-report.md"
   },
   {
-    "id": "brb-free-public-records",
-    "name": "BRB Free Public Records",
-    "description": "US Database providing links to free public records searches",
-    "url": "http://www.brbpub.com/free-public-records/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "full",
-    "_file": "library/tools/public-records/brb-free-public-records.md"
-  },
-  {
     "id": "brb-public-records",
     "name": "BRB Public Records",
     "description": "Public records source directory",
@@ -228506,36 +228474,57 @@
   },
   {
     "id": "canadian-legal-information-institute",
-    "name": "Canadian Legal Information Institute",
-    "description": "OSINT tool: Canadian Legal Information Institute.",
+    "name": "Canadian Legal Information Institute (CanLII)",
+    "description": "Use when you have a `name` and want Canadian court/tribunal decisions or legislation mentioning them — returns document-id case citations and associate/address context.",
     "url": "https://www.canlii.org/en/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text search of Canadian case law and legislation to find a person named as a party, witness, or subject in court/tribunal decisions.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and read the full text of decisions and statutes; funded by Canadian law societies. No account required for public search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public legal-research database — searching does not notify anyone named in a case, and CanLII only sees your query/IP. Note CanLII applies noindex/anti-scraping so cases are less exposed to general search engines; that's a benefit for the subject, not a barrier to your manual search. Use a sock-puppet browser for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Federation of Law Societies of Canada; authoritative primary-source court decisions and legislation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "supremecourt-uk",
+      "courtlistener"
+    ],
+    "aliases": [
+      "CanLII",
+      "canlii.org"
+    ],
+    "tags": [
+      "court",
+      "legal",
+      "case-law",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/canadian-legal-information-institute.md"
   },
   {
@@ -237425,14 +237414,14 @@
   },
   {
     "id": "fca-org-uk",
-    "name": "fca.org.uk",
-    "description": "OSINT tool: fca.org.uk.",
+    "name": "fca.org.uk (FCA Mutuals Public Register)",
+    "description": "Use when you have an `employer-org` or `name` tied to a UK mutual (credit union, co-op, friendly society) and want its registration and filings — returns employer-org, address, and document-id.",
     "url": "https://mutuals.fca.org.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the FCA's register of UK mutual societies — co-operatives, community benefit societies, credit unions, building & friendly societies — for registration details and filings.",
     "selectorsIn": [
       "name",
       "address",
@@ -237443,29 +237432,40 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search by society name or registration number; basic details downloadable as CSV. No account needed.",
+    "opsec": "passive",
+    "opsecNote": "Official public register — searching it does not notify anyone and reveals only your IP to the FCA. A fully passive records lookup; no sock-puppet strictly needed, but use one if the wider case is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party UK regulator (Financial Conduct Authority); the register is the authoritative record of mutual societies, though the FCA notes it does not warrant absolute accuracy of submitted material.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "companies-house",
+      "ebra-be"
+    ],
+    "aliases": [
+      "FCA Mutuals Public Register",
+      "mutuals.fca.org.uk"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "regulator-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/fca-org-uk.md"
   },
   {
@@ -244820,47 +244820,59 @@
   },
   {
     "id": "ifa-org-uk",
-    "name": "ifa.org.uk",
-    "description": "OSINT tool: ifa.org.uk.",
+    "name": "ifa.org.uk (Institute of Financial Accountants)",
+    "description": "Use when you have an accountant's `name` and want to verify UK IFA membership/practising status — returns employer-org and address of the practice via the \"Find an Accountant\" directory.",
     "url": "https://www.ifa.org.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether someone is a member of the Institute of Financial Accountants and locating their practice via the public \"Find an Accountant\" directory.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public \"Find an Accountant\" directory search; no account needed to verify membership or find a practising member.",
+    "opsec": "passive",
+    "opsecNote": "A professional-body directory lookup — searching does not notify the member and reveals only your IP to the IFA. Fully passive; use a sock-puppet browser only if the wider investigation is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party professional body (Institute of Financial Accountants, part of IPA Group); the membership directory is an authoritative statement of who it certifies.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "fca-org-uk",
+      "companies-house"
+    ],
+    "aliases": [
+      "IFA",
+      "Institute of Financial Accountants",
+      "ifa.org.uk find an accountant"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "regulator-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ifa-org-uk.md"
   },
   {
@@ -263783,14 +263795,14 @@
   },
   {
     "id": "ros-gov-uk-2",
-    "name": "ros.gov.uk",
-    "description": "OSINT tool: ros.gov.uk.",
+    "name": "ros.gov.uk (ScotLIS — Scotland's Land Information Service)",
+    "description": "Use when you have a Scottish property `address` (postcode) and want the owner and price history — returns owner name, address, and document-id of title deeds.",
     "url": "https://scotlis.ros.gov.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding who owns a Scottish property, its sale price history, and title documents via Registers of Scotland's official land service.",
     "selectorsIn": [
       "name",
       "address",
@@ -263801,29 +263813,43 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search by postcode/title number and view basic property/ownership and price-history summaries; purchasing full title deeds/plans (title sheet documents) incurs a per-document fee.",
+    "opsec": "passive",
+    "opsecNote": "Official government land registry — searching does not notify the owner and reveals only your IP to Registers of Scotland. Buying a document requires payment (attributable). No sock-puppet needed for the free search; use payment hygiene if purchasing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Scottish government body (Registers of Scotland); the authoritative record of land ownership in Scotland.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gov-uk-14",
+      "gov-uk-9"
+    ],
+    "aliases": [
+      "ScotLIS",
+      "Registers of Scotland",
+      "scotlis.ros.gov.uk"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "land-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ros-gov-uk-2.md"
   },
   {
@@ -268176,45 +268202,58 @@
   },
   {
     "id": "supremecourt-uk",
-    "name": "supremecourt.uk",
-    "description": "OSINT tool: supremecourt.uk.",
+    "name": "supremecourt.uk (UK Supreme Court cases)",
+    "description": "Use when you have a `name` and want to check if they are a party in a UK Supreme Court case — returns case parties, document-id citations, and associate links.",
     "url": "https://www.supremecourt.uk/current-cases/index.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching UK Supreme Court current and decided cases for parties, case status, and full judgments.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and publicly accessible; case lists, details, and judgments are all free to read with no account.",
+    "opsec": "passive",
+    "opsecNote": "Public court information — searching does not notify parties and reveals only your IP to the court site. Fully passive; a sock-puppet browser is optional and only for broader case hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party UK judiciary (The Supreme Court of the United Kingdom); authoritative case and judgment records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "canadian-legal-information-institute",
+      "bailii"
+    ],
+    "aliases": [
+      "UK Supreme Court",
+      "UKSC",
+      "supremecourt.uk"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "legal",
+      "case-law",
+      "uk"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/supremecourt-uk.md"
   },
   {
@@ -335756,13 +335795,13 @@
   {
     "id": "namemc",
     "name": "NameMC",
-    "description": "Find usernames, track username changes on minecraft",
+    "description": "Use when you have a Minecraft `username` (or account UUID) and want its name-change history, skins, and profile — returns prior usernames and social-profile leads.",
     "url": "https://namemc.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a Minecraft account's username history, skins/capes, and profile — and checking username availability.",
     "selectorsIn": [
       "username",
       "name"
@@ -335771,29 +335810,41 @@
       "username",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; no account needed for name history, skins, and profile lookups.",
+    "opsec": "passive",
+    "opsecNote": "NameMC indexes public Mojang/Minecraft account data; searching does not notify the account owner. Only NameMC (and your network) sees your query and IP. Note NameMC profiles have public comment/friend features — do NOT log in or interact from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known community Minecraft-identity site; name-history data derives from Mojang's public profile API and is broadly reliable, though NameMC is third-party.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "steamosint",
+      "username-search-2"
+    ],
+    "aliases": [
+      "name mc",
+      "namemc minecraft"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "other-platforms"
+      "other-platforms",
+      "minecraft",
+      "gaming"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/namemc.md"
   },
   {
@@ -346352,41 +346403,57 @@
   {
     "id": "steamosint",
     "name": "SteamOSINT",
-    "description": "Steam account investigation and user profile analysis",
+    "description": "Use when you have a Steam `username`/profile URL and want the account's games, playtime, and public friends — returns social-profile and associate links.",
     "url": "https://github.com/Frontline-Femmes/Steam-OSINT",
     "category": "social-networks",
     "path": [
       "social-networks",
       "steam-discord-and-gaming-networks"
     ],
-    "bestFor": "Steam account investigation and user profile analysis",
-    "input": "Steam username or profile URL",
-    "output": "User profile details, games library, playtime, achievements, trade history, and public friend lists",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Pulling a Steam account's profile, games library, playtime, achievements, and public friend list from a username or profile URL.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (GitHub). Uses Steam's public Web API; some endpoints need a free Steam Web API key.",
     "opsec": "active",
-    "opsecNote": "Queries Steam's public API and web interface; requests are visible in Steam community logs.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Queries Steam's public Web API and community pages. Read-only profile data does not notify the target, but requests are made from your IP/API key and Steam logs them; if you view a profile while logged in, that can register. Use a Steam Web API key tied to a sock-puppet account and run from a VPN.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community open-source project on GitHub; it wraps Steam's official public API, so the underlying data is authoritative, but the tool is unverified/unmaintained-risk.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "steamid-io",
+      "namemc"
+    ],
+    "aliases": [
+      "Steam-OSINT",
+      "Steam OSINT"
+    ],
+    "tags": [
+      "steam",
+      "gaming",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/steam-discord-and-gaming-networks/steamosint.md"
   },
   {
@@ -356397,7 +356464,7 @@
   {
     "id": "x0rz-tweets-analyzer",
     "name": "X0rz Tweets_analyzer",
-    "description": "Behavioral profiling and temporal analysis of Twitter accounts",
+    "description": "Use when you have a Twitter/X `username` and want a behavioral/temporal profile — activity by hour/day, timezone, sources, top hashtags — returns social-profile and associate patterns.",
     "url": "https://github.com/x0rz/tweets_analyzer",
     "category": "social-networks",
     "path": [
@@ -356406,36 +356473,51 @@
       "analytics",
       "profile"
     ],
-    "bestFor": "Behavioral profiling and temporal analysis of Twitter accounts",
-    "input": "Twitter username and API credentials",
-    "output": "Activity charts, language/source statistics, and account behavior indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Building a behavioral fingerprint of a Twitter/X account — posting rhythm, likely timezone/hours, client apps, and most-interacted accounts.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open source, but depends on the Twitter/X API — which now requires a paid developer tier for the timeline endpoints this tool uses. In practice it needs current API credentials/budget to run at all.",
     "opsec": "active",
-    "opsecNote": "Requires API-driven collection and can expose investigator infrastructure through API usage patterns.",
+    "opsecNote": "Collection runs through the Twitter/X API using your developer credentials — the API account/app is attributable and your usage pattern is visible to X. Use a dedicated sock-puppet developer account, never one linked to your identity. Reading a public timeline does not notify the target, but the API app is logged.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "api-key"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular open-source tool by researcher x0rz (~3k stars), but built for the older Twitter API v1.1; its viability now hinges on X's current (paid, restrictive) API, so treat it as degraded.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "twint",
+      "tinfoleak"
+    ],
+    "aliases": [
+      "tweets_analyzer",
+      "x0rz tweets analyzer"
+    ],
+    "tags": [
+      "twitter",
+      "analytics",
+      "behavioral-profiling",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/profile/x0rz-tweets-analyzer.md"
   },
   {
