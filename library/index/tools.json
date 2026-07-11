@@ -107131,40 +107131,49 @@
   {
     "id": "mailmeta",
     "name": "mailMeta",
-    "description": "Simple tool to analyze emails headers and identify spoofed emails.",
+    "description": "Use when you have a raw `email` (with full headers) and want to analyze its headers to spot spoofing and trace origin — returns sender/origin `ip-address` and authentication verdicts.",
     "url": "https://github.com/gr33nm0nk2802/mailMeta",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Parsing email headers to detect spoofing and extract the originating server/IP and SPF/DKIM/DMARC results.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
+      "ip-address",
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python CLI. No account or API key.",
+    "opsec": "passive",
+    "opsecNote": "Entirely offline analysis of a message you already possess — it parses the header text locally and contacts no one, so there is zero footprint against the sender. Only handle emails you are authorized to inspect.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source header-analysis utility; results are a straightforward parse of the message headers, so accuracy equals the headers' own reliability (which spoofers can partially forge).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "mailMeta",
+      "gr33nm0nk2802/mailMeta"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "headers",
+      "spoofing"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/mailmeta.md"
   },
@@ -133907,13 +133916,13 @@
   {
     "id": "terrafly-map-united-states",
     "name": "TerraFly Map (United States)",
-    "description": "Geo database and map providing local point-data, and aerial and satellite imagery from around the world",
+    "description": "Use when you have a `geolocation`/`address` and want aerial/satellite imagery plus overlaid local point-data for that spot — returns imagery and `geolocation`/`address` context.",
     "url": "http://terrafly.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing aerial/satellite imagery with overlaid demographic, property, and point-of-interest data for a US location.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -133922,31 +133931,35 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web map/geo-database from Florida International University's research lab; some advanced/bulk features are research- or API-oriented.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing maps and imagery is passive and reveals nothing to any subject. Standard map-service logging applies to your own queries; use a clean session if a location query is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Academic project (FIU's TerraFly/High Performance Database Research Center); imagery and overlays are aggregated from public/geo sources and may be dated.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TerraFly",
+      "terrafly.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/terrafly-map-united-states.md"
   },
@@ -161404,30 +161417,30 @@
   {
     "id": "yandex-image-search",
     "name": "Yandex Image Search",
-    "description": "Yandex image search engine, similar to Google Images",
+    "description": "Use when you have an `image` (especially a face or scene) and want visually-similar images and other photos of the same subject — returns matching/similar images and their source `social-profile`s.",
     "url": "https://www.yandex.com/images/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "The strongest general-purpose reverse image search for faces, places, and objects — finds similar images, not just exact copies.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web reverse-image search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Uploading an image sends it to Yandex's servers, but the search targets the web, not the subject, who is not notified. Yandex is a Russian company — avoid uploading highly sensitive images you would not want processed there; use a clean session, and prefer URL search when possible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Yandex is a major search engine with the best-regarded facial/scene visual-similarity matching among free tools; results are its index and must be opened to verify.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -161436,14 +161449,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Yandex Images",
+      "yandex.com/images"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "reverse-image"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/yandex-image-search.md"
   },
@@ -209342,35 +209359,50 @@
   {
     "id": "no-1-free-people-search",
     "name": "No.1 Free People Search",
-    "description": "OSINT tool: No.1 Free People Search.",
+    "description": "Use when you have a `name` and want a web-mention aggregation of that person (links, news, images, profiles) — returns `social-profile`s, related `name`s, and web references.",
     "url": "http://www.yasni.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Aggregating public web mentions of a person's name into one profile view (links, news, images, social).",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search and view aggregated mentions. Yasni also sells self-promotion \"Exposé\" profiles, but searching others is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Yasni aggregates already-public web mentions; searching is passive and the subject is not notified. It does not require login. It only surfaces indexed public references — treat what it finds as leads to verify at the source.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running name-based web aggregator (German-origin); it collates third-party mentions, so quality varies and same-name people are easily conflated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Yasni",
+      "yasni.com"
+    ],
+    "tags": [
+      "people-search",
+      "name-aggregator"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/no-1-free-people-search.md"
   },
   {
@@ -223893,13 +223925,13 @@
   {
     "id": "arkansas-department-of-correction",
     "name": "Arkansas Department of Correction",
-    "description": "OSINT tool: Arkansas Department of Correction.",
+    "description": "Use when you have a `name` of someone who may be incarcerated in Arkansas and want their inmate record — returns `name`, `dob`/age, ADC `document-id`, facility, and status.",
     "url": "https://apps.ark.org/inmate_info/index.php",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is (or was) an Arkansas state prison inmate and pulling their offender record.",
     "selectorsIn": [
       "name"
     ],
@@ -223908,29 +223940,35 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Arkansas state inmate lookup; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public government inmate database is passive and does not notify anyone. No login is needed; treat the personal/criminal data returned responsibly and lawfully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Arkansas state service (apps.ark.org / Arkansas Division of Correction); the offender data is authoritative public record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Arkansas Division of Correction inmate search",
+      "ADC inmate lookup"
+    ],
     "tags": [
       "court",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/arkansas-department-of-correction.md"
   },
   {
@@ -236735,46 +236773,53 @@
   {
     "id": "findagraveinscotland-com",
     "name": "findagraveinscotland.com",
-    "description": "OSINT tool: findagraveinscotland.com.",
+    "description": "Use when you have a `name` of someone buried in Scotland and want their grave/headstone record — returns headstone `image`, dates (`dob`), cemetery `address`, and family `associate`s on the memorial.",
     "url": "https://www.findagraveinscotland.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a Scottish grave and its headstone inscription (dates, family names) via a grave-photography service.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "image",
+      "dob",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "First consultation/search enquiry is free; viewing/downloading the high-resolution headstone photograph costs a small fee (around £3 per photo).",
+    "opsec": "passive",
+    "opsecNote": "Requesting a grave search is passive — you contact a genealogy service, not the subject's family, and it concerns a deceased person. You do disclose the name you're researching (and your contact email) to the service; use a research-only email if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A privately owned Scottish grave-photography service, unaffiliated with local councils; it has visited/photographed hundreds of cemeteries but coverage is partial and results come via manual fulfilment.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Find A Grave in Scotland",
+      "findagraveinscotland"
+    ],
     "tags": [
       "genealogybdmANDwills",
       "Genealogy Linked Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/findagraveinscotland-com.md"
   },
   {
@@ -243839,35 +243884,51 @@
   {
     "id": "independent-fundamental-baptist-sexual-misconduct-database",
     "name": "Independent fundamental Baptist sexual misconduct database",
-    "description": "OSINT tool: Independent fundamental Baptist sexual misconduct database.",
+    "description": "Use when you have a `name` possibly tied to Independent Fundamental Baptist church abuse and want the Star-Telegram's documented cases — returns accused `name`, `employer-org` (church/school), and `geolocation` of where they worked.",
     "url": "https://datawrapper.dwcdn.net/UyECh/20/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking a name against a journalistic database of documented IFB-church sexual-misconduct allegations and where the accused worked.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to view; a public interactive database embedded from the Fort Worth Star-Telegram investigation.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a published journalistic database is passive and notifies no one. The data concerns allegations and convictions — handle it responsibly, avoid defamatory conclusions, and note that \"alleged\" entries are not proven guilt.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Compiled by Fort Worth Star-Telegram investigative reporters (\"Spirit of Fear,\" 2018); a credible journalistic dataset, but entries mix convictions and allegations and it is a point-in-time snapshot.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Spirit of Fear database",
+      "IFB sexual misconduct database",
+      "Star-Telegram IFB abuse database"
+    ],
+    "tags": [
+      "misconduct",
+      "abuse-database"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/independent-fundamental-baptist-sexual-misconduct-database.md"
   },
   {
@@ -244459,46 +244520,55 @@
   {
     "id": "inpi-fr",
     "name": "inpi.fr",
-    "description": "OSINT tool: inpi.fr.",
+    "description": "Use when you have a French `name`, `employer-org`, or `address` and want official company records and directors/beneficial owners — returns `employer-org`, `name`, `address`, `associate`, and the SIREN `document-id`.",
     "url": "https://data.inpi.fr/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching France's national business register (RNE) for a company, its officers, and beneficial owners.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-data portal from INPI; no account needed for search. Some full document downloads (statutes, acts) may require a free login.",
+    "opsec": "passive",
+    "opsecNote": "Querying the national register is passive — you search a government database, not the subject, who is not notified. No login is needed for basic search; queries are ordinary web requests.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by INPI (Institut National de la Propriété Industrielle), which maintains France's Registre National des Entreprises (RNE); data is authoritative public record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "fr"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "data.inpi.fr",
+      "Registre National des Entreprises",
+      "RNE"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/inpi-fr.md"
   },
   {
@@ -321610,37 +321680,49 @@
   {
     "id": "find-my-facebook-id",
     "name": "Find my Facebook ID",
-    "description": "OSINT tool: Find my Facebook ID.",
+    "description": "Use when you have a Facebook profile/page/group URL or vanity `username` and want its stable numeric ID — returns the numeric Facebook ID that powers graph-search pivots.",
     "url": "https://randomtools.io",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Converting a Facebook vanity URL/username into the persistent numeric user/page/group ID.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free with no usage limits; no account required. Works across profiles, pages, and groups.",
+    "opsec": "passive",
+    "opsecNote": "The tool resolves a public URL to its numeric ID via Facebook's own metadata — you do not interact with the subject or their account, and no notification is sent. Do the resolution from a clean session; the ID itself is public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free third-party utility; it performs a mechanical lookup of the numeric ID, which is verifiable, but the site itself is a general \"random tools\" host.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Facebook ID finder",
+      "lookup-id",
+      "randomtools.io Facebook ID"
+    ],
     "tags": [
       "facebook"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/find-my-facebook-id.md"
   },
   {
@@ -352201,49 +352283,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/untwitch-com.md"
-  },
-  {
-    "id": "urlebird-com",
-    "name": "urlebird.com",
-    "description": "OSINT tool: urlebird.com.",
-    "url": "https://urlebird.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "tiktok",
-      "TikTok Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/urlebird-com.md"
   },
   {
     "id": "urlebird-com-2",
