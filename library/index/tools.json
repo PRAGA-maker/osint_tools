@@ -203253,31 +203253,31 @@
   {
     "id": "carrier-lookup-2",
     "name": "Carrier Lookup",
-    "description": "Free telephone carrier lookup by number",
+    "description": "Use when you have a `phone` number and want its carrier and line type (mobile vs landline) plus the email-to-SMS gateway — returns enriched `phone` metadata.",
     "url": "http://freecarrierlookup.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the current carrier and whether a number is wireless or landline, plus the US/CA email-to-SMS gateway.",
     "selectorsIn": [
-      "name"
+      "phone"
     ],
     "selectorsOut": [
-      "social-profile",
-      "address",
-      "phone",
-      "associate"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free for interactive lookups on the website; each query requires solving a CAPTCHA. No official API (third-party screen-scraper wrappers exist).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The lookup queries carrier/portability databases, not the subject — the number's owner is not notified. It is passive against the target, though you disclose the number to freecarrierlookup's operator; use a clean browser if the association matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party service, not independently verified here; carrier data is generally accurate for most countries but reflects the current carrier after any porting, not the original one.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -203286,14 +203286,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FreeCarrierLookup",
+      "freecarrierlookup.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "people-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/carrier-lookup-2.md"
   },
@@ -205358,43 +205361,47 @@
   {
     "id": "find-a-postal-code-address",
     "name": "Find a Postal Code / Address",
-    "description": "OSINT tool: Find a Postal Code / Address.",
+    "description": "Use when you have a Canadian `address` and want its exact postal code (or to confirm the address is deliverable) — returns a normalized `address`/postal code.",
     "url": "https://www.canadapost.ca/info/mc/personal/postalcode/fpc.jsf",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Normalizing a Canadian street address to its official postal code before feeding it to other people-search tools.",
     "selectorsIn": [
       "address"
     ],
     "selectorsOut": [
-      "name",
-      "phone",
-      "associate"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Canada Post consumer tool; no account or payment needed.",
+    "opsec": "passive",
+    "opsecNote": "You are querying Canada Post's public postal-code database, not the target. Nothing about the subject is revealed to a third party beyond the address string you type. Safe to run from any browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Canada Post, the national postal authority; the postal-code data is authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Canada Post Find a Postal Code",
+      "FPC"
+    ],
     "tags": [
       "address"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/find-a-postal-code-address.md"
   },
   {
@@ -211169,45 +211176,53 @@
   {
     "id": "ratsit",
     "name": "Ratsit",
-    "description": "Look up phone numbers/names (Sweden)",
+    "description": "Use when you have a `name` or `phone` in Sweden and want the person's address, age, and household — returns `address`, `phone`, `dob`, `associate`, and `employer-org`.",
     "url": "https://www.ratsit.se/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a Swedish person to a current address, age, neighbours, and company/vehicle links from a name or number.",
     "selectorsIn": [
       "name",
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "social-profile",
-      "phone"
+      "address",
+      "phone",
+      "dob",
+      "associate",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic person and address search (name, age, address, phone) is free without login. Full credit-history reports, previous addresses, and detailed profiles require a paid subscription or one-off purchase, and pulling a formal credit report notifies the subject by law.",
+    "opsec": "passive",
+    "opsecNote": "Free searches are passive against the subject — you query Ratsit, not the person. BUT a formal \"kreditupplysning\" (credit check) triggers a legally mandated notice letter to the subject; never run one during a covert inquiry. Ratsit itself logs your session; use a sock-puppet browser and consider whether your own IP/account matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Commercial aggregator, but its data is drawn from official Swedish registries (Skatteverket/tax agency, SCB, Bolagsverket, Transportstyrelsen, Lantmäteriet) under Sweden's freedom-of-information framework; registered as a media outlet.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "se"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Ratsit.se",
+      "Ratsit Personsök"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "people"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/ratsit.md"
   },
   {
@@ -219388,49 +219403,6 @@
     "_file": "library/tools/phone/receive-smss-com.md"
   },
   {
-    "id": "receiveasms-com",
-    "name": "receiveasms.com",
-    "description": "OSINT tool: receiveasms.com.",
-    "url": "https://receiveasms.com/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mobilephone",
-      "Mobile & Phone Related"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/receiveasms-com.md"
-  },
-  {
     "id": "reverse-genie",
     "name": "Reverse Genie",
     "description": "Quick reverse-number triage from public-data aggregations",
@@ -220412,44 +220384,49 @@
   {
     "id": "thisnumber-com",
     "name": "thisnumber.com",
-    "description": "OSINT tool: thisnumber.com.",
+    "description": "Use when you have an international `phone` number and want to identify its country/region of origin and reach that country's phone directories — returns `geolocation` (country) and directory `name` leads.",
     "url": "https://www.thisnumber.com/country",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the country of an unknown international number and jumping to that country's national phone directory.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "geolocation",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account required. It aggregates links to national directories, some of which are themselves paid.",
+    "opsec": "passive",
+    "opsecNote": "Parsing a number's country code is passive and never touches the subject. Following through to a national directory may hand your query to that third-party site; judge each linked directory on its own.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Directory-of-directories aggregator; the country-code identification is reliable, but the onward directory links vary widely in quality and currency.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ThisNumber",
+      "thisnumber phone directory"
+    ],
     "tags": [
       "mobilephone",
       "Mobile & Phone Related"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/thisnumber-com.md"
   },
   {
@@ -243147,46 +243124,54 @@
   {
     "id": "iceland",
     "name": "Iceland",
-    "description": "OSINT tool: Iceland.",
+    "description": "Use when you have an Icelandic `employer-org`, `name`, or `address` and want official company-registry details — returns `employer-org`, `address`, `name`, and the kennitala `document-id`.",
     "url": "https://www.rsk.is/fyrirtaekjaskra/#tab1",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming an Icelandic company's registration, address, and ID number from the national business register.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "name",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Basic registry search (company existence, ID number, registered address, status) is free. Detailed certificates/extracts and some data may require a paid order.",
+    "opsec": "passive",
+    "opsecNote": "Searching the official register is passive — you query the state registry, not the subject. No login is needed for basic lookups, so nothing is attributed to you beyond a normal web request.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Skatturinn (the Iceland Revenue and Customs / tax authority); this is the authoritative national company register (Fyrirtækjaskrá).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "is"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Fyrirtaekjaskra",
+      "Iceland business register",
+      "RSK / Skatturinn company registry"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/iceland.md"
   },
   {
@@ -256900,44 +256885,50 @@
   {
     "id": "os-death-records",
     "name": "OS Death Records",
-    "description": "OSINT tool: OS Death Records.",
+    "description": "Use when you have a `name` and want to reach the right US state/county death-record and obituary databases — returns links yielding `dob`, death dates, and `associate` (surviving family).",
     "url": "http://publicrecords.onlinesearches.com/death-records.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A directory that routes a US death-records inquiry to the correct state/county vital-records source.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "associate",
       "dob",
+      "associate",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The directory is free. It links to official state/county sources, some of which charge for certified copies; index/obituary lookups are typically free.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive. The onward official sources log queries per their own policies, but checking whether a person is deceased is a benign, low-risk lookup. Ordering a certified certificate may require identifying yourself and can be restricted to relatives.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "OnlineSearches is a reputable, long-running index of official public-records sources; it links to authoritative government databases rather than hosting data itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlineSearches Death Records",
+      "publicrecords.onlinesearches.com death"
+    ],
     "tags": [
       "genealogy",
       "family"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/os-death-records.md"
   },
   {
@@ -259243,46 +259234,54 @@
   {
     "id": "portugal",
     "name": "Portugal",
-    "description": "OSINT tool: Portugal.",
+    "description": "Use when you have a Portuguese `employer-org` or `name` and want its beneficial owners from the national UBO register — returns `name`, `associate`, and `employer-org` links.",
     "url": "https://rcbe.justica.gov.pt/Autenticacao?ReturnUrl=%2fConsulta",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the natural persons who ultimately own or control a Portuguese company via the RCBE beneficial-ownership register.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "associate",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Filing and the service itself are free of charge, but consulting the register requires Portuguese electronic authentication, which non-residents generally cannot obtain — so open access is effectively gated.",
+    "opsec": "active",
+    "opsecNote": "Consulting the RCBE requires logging in with a Portuguese Cartão de Cidadão or Chave Móvel Digital, tying the query to a real, government-verified identity. There is no anonymous access — do not treat this as passive. Only use it where an authenticated, attributable lookup is acceptable.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Portugal's Ministry of Justice / IRN (Instituto dos Registos e do Notariado); the authoritative Central Register of Beneficial Owners (RCBE).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "pt"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "RCBE",
+      "Registo Central do Beneficiário Efetivo"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/portugal.md"
   },
   {
@@ -347468,44 +347467,53 @@
   {
     "id": "trombi-com",
     "name": "trombi.com",
-    "description": "OSINT tool: trombi.com.",
+    "description": "Use when you have a `name` (including a maiden name) and a French school/era and want to find the person's classmates-network profile and photos — returns a `social-profile`, `name`, and `image`.",
     "url": "https://www.trombi.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a French subject via their former school, class year, and class photos on a classmates reunion network.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and search; contacting members and some features require a paid (\"Premium\") membership.",
+    "opsec": "active",
+    "opsecNote": "Full search and profile viewing require a logged-in account, and viewing a profile can leave a \"visitor\" trace to that member. Register and browse only from a sock-puppet account with a plausible French persona; never use an attributable identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running French commercial social network (classmates/reunion niche); profiles are user-submitted, so accuracy and freshness vary.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "fr"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Trombi",
+      "Copains d'avant competitor"
+    ],
     "tags": [
       "esocialmedia",
       "European Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/trombi-com.md"
   },
   {
@@ -373445,38 +373453,47 @@
   {
     "id": "snoop-2",
     "name": "snoop",
-    "description": "CLI username search tool (Russian-focused fork).",
+    "description": "Use when you have a `username` and want to enumerate accounts across thousands of sites (with strong Russian/Cyrillic-segment coverage) — returns `social-profile` links.",
     "url": "https://github.com/snooppr/snoop",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk username enumeration across 5000+ sites, including RU-segment platforms that Sherlock/Maigret miss.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (GPL). No account or API key. Optional plugins for geolocation/IP mapping are also free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "snoop queries each target site directly from your machine, so your IP hits thousands of platforms in a burst — run it behind a VPN/proxy or Tor, and never from an attributable network. It does not authenticate to sites, so it leaves no logged-in trace, but the request pattern is noisy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project on GitHub (Russian maintainers); popular in the RU OSINT community. Verify you cloned the genuine snooppr/snoop repo before running.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "snoop project",
+      "snooppr/snoop"
+    ],
+    "tags": [
+      "username-enumeration",
+      "cli"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/username/snoop-2.md"
   },
