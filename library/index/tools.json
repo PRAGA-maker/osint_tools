@@ -125403,14 +125403,14 @@
   },
   {
     "id": "geoportail-france",
-    "name": "Geoportail (France)",
-    "description": "Geolocation and mapping program covering country locations",
-    "url": "http://www.geoportail.gouv.fr/accueil",
+    "name": "Géoportail (France)",
+    "description": "Use when you have a French `address`/`geolocation` and want authoritative national maps and imagery — returns high-res aerial photos, cadastral parcels, topographic layers, and precise coordinates.",
+    "url": "https://www.geoportail.gouv.fr/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative French mapping — aerial/satellite imagery, cadastre, and topographic layers for a location.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -125419,31 +125419,36 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free national geographic portal operated by IGN; no account required for interactive use (API/keys available for developers).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive lookup of published government map data — no subject is notified. Standard browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by IGN (France's national mapping agency) — authoritative, official cartographic and cadastral data.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "fr"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Geoportail",
+      "geoportail.gouv.fr",
+      "IGN Géoportail"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/geoportail-france.md"
   },
@@ -141214,45 +141219,50 @@
   },
   {
     "id": "deturl-com",
-    "name": "deturl.com",
-    "description": "OSINT tool: deturl.com.",
+    "name": "DeTurl (Video Downloader)",
+    "description": "Use when you have a video URL (e.g. a YouTube post tied to a subject) and want to download it locally for analysis/preservation — returns the video/audio file in MP4/MP3/AVI etc.",
     "url": "https://deturl.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly downloading an online video (YouTube etc.) as a local file for evidence preservation and frame analysis.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser-based downloader; no install or account (bookmarklet / URL-prefix trick).",
+    "opsec": "passive",
+    "opsecNote": "You send the video URL to DeTurl's servers to fetch it, so the download passes through a third party — the uploader is not notified, but don't route sensitive/private links through it. Prefer a local tool (e.g. yt-dlp) for anything you must not disclose.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "A third-party ad-supported video-download utility, not an OSINT-specific tool; reliable for public videos but unaffiliated and subject to breakage as sites change.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "deturl.com",
+      "pwnyoutube"
+    ],
     "tags": [
       "videosites",
       "Video Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/deturl-com.md"
   },
   {
@@ -192083,13 +192093,13 @@
   {
     "id": "owlculus",
     "name": "Owlculus",
-    "description": "OSINT case-management and investigation toolkit with a web UI for organizing entities and evidence.",
+    "description": "Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-management platform; returns a structured case with cross-linked entities and findings.",
     "url": "https://github.com/be0vlk/owlculus",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "Managing a missing-persons case: tracking entities, evidence and running OSINT plugins.",
+    "bestFor": "Managing an investigation (missing-person or other) — tracking entities/evidence and running OSINT plugins in one web UI.",
     "selectorsIn": [
       "name",
       "username",
@@ -192101,24 +192111,29 @@
       "email",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "100% free and open-source (GPL-3.0); self-hosted via Docker. No fees; you provide the infrastructure and any downstream tool/API keys.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Owlculus itself is a local case-management app — running it is passive. But its plugins make real queries to third-party services from your host, which are active; isolate the deployment and route plugin traffic through a sock-puppet network. Keep case data on encrypted storage you control.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "docker",
     "trust": "trusted",
-    "trustNote": "Installed (Docker-based) in the Trace Labs VM (install_owlculus).",
+    "trustNote": "Actively maintained open-source project (v2.0.2, Sept 2025) and bundled in the Trace Labs OSINT VM; the app is a workflow/orchestration layer, so its \"trust\" is about tooling reliability, not data provenance.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "be0vlk/owlculus"
+    ],
     "tags": [
       "case-management",
       "docker",
@@ -192126,7 +192141,7 @@
       "web-ui"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/owlculus.md"
   },
@@ -222316,14 +222331,14 @@
   },
   {
     "id": "access-state-records-online-staterecords-org",
-    "name": "Access State Records Online - StateRecords.org",
-    "description": "OSINT tool: Access State Records Online - StateRecords.org.",
+    "name": "StateRecords.org",
+    "description": "Use when you have a `name` and want a US public-records starting point (criminal, court, arrest, vital records) — returns aggregated record leads across 50 states, behind a paid third-party funnel.",
     "url": "https://staterecords.org/criminal.php",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A third-party aggregator entry point for US criminal/court/vital records searches by name.",
     "selectorsIn": [
       "name"
     ],
@@ -222332,29 +222347,37 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free name search returns teaser/hit indications, but accessing actual record details is paywalled behind a paid subscription. The same records are often available free directly from official county/state sources.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive — the subject is not notified. You disclose your query to a private lead-gen company; use a sock-puppet account and disposable payment if you ever subscribe, and never enter real personal details.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A privately owned aggregator, NOT a government source; it explicitly disclaims accuracy/completeness and is not an FCRA consumer-reporting agency. Treat everything as a lead and confirm against the official record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "StateRecords.org",
+      "staterecords.org"
+    ],
     "tags": [
       "court",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/access-state-records-online-staterecords-org.md"
   },
   {
@@ -265344,47 +265367,52 @@
   },
   {
     "id": "sijilat-bh-2",
-    "name": "sijilat.bh",
-    "description": "OSINT tool: sijilat.bh.",
+    "name": "Sijilat (Bahrain Commercial Registry)",
+    "description": "Use when you have a Bahraini business `name`/CR number or an `employer-org` and want official commercial-registration data — returns company existence, status, activities, and registration details.",
     "url": "https://www.sijilat.bh/agency-registration/ARSearch/ar-search-1.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Bahrain company/commercial-registration lookups — status, activities, and registration details.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public commercial-registration search on the government Sijilat portal; some detailed services/certificates may carry fees.",
+    "opsec": "passive",
+    "opsecNote": "Public registry lookup — the business/owners are not notified. Anonymous; standard browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Sijilat is Bahrain's official commercial registration portal (Ministry of Industry & Commerce) — the authoritative source for Bahraini company records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "bh"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sijilat.bh",
+      "Bahrain commercial registry"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sijilat-bh-2.md"
   },
   {
@@ -320997,36 +321025,51 @@
   },
   {
     "id": "facebook-profile-directory",
-    "name": "Facebook Profile Directory",
-    "description": "OSINT tool: Facebook Profile Directory.",
+    "name": "Facebook Public Profile Directory",
+    "description": "Use when you have a `name` and want to browse Facebook's alphabetical public directory of profiles/pages — returns public profile links you can open and enumerate.",
     "url": "https://www.facebook.com/directory/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Browsing/enumerating public Facebook profiles and pages via the platform's alphabetical directory.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, but Facebook increasingly gates the directory behind a logged-in session and limits what's browsable.",
+    "opsec": "active",
+    "opsecNote": "Browsing the directory largely requires being logged in, tying activity to that Facebook account. Use a sock-puppet account, and don't view target profiles in a way that leaves a footprint (e.g. avoid friend requests, story views).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A genuine Facebook feature (public directory of profiles/pages that opted into listing), but coverage is partial and access is increasingly login-gated and rate-limited.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "facebook.com/directory",
+      "FB people directory"
+    ],
+    "tags": [
+      "facebook"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-profile-directory.md"
   },
   {
@@ -349243,36 +349286,49 @@
   },
   {
     "id": "tweet-finder",
-    "name": "Tweet Finder",
-    "description": "OSINT tool: Tweet Finder.",
+    "name": "Tweet Finder (Google CSE)",
+    "description": "Use when you have a keyword, `name`, or `username` and want tweets/profiles indexed by Google — returns Google-indexed twitter.com/x.com links matching your terms.",
     "url": "https://cse.google.com/cse/publicurl?cx=016621447308871563343:u4r_fupvs-e",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Keyword/name/handle search scoped to Google-indexed Twitter/X content via a Custom Search Engine.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free hosted Google Custom Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries go to Google, not to X, so the target isn't touched or notified. Standard search-engine hygiene (sock-puppet browser) is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A third-party Google Custom Search Engine over twitter.com/x.com; coverage is only what Google has indexed and has degraded as X restricts indexing and login-gates content.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Tweet Finder CSE"
+    ],
+    "tags": [
+      "twitter"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tweet-finder.md"
   },
   {
@@ -374121,30 +374177,37 @@
   },
   {
     "id": "protonmail-users",
-    "name": "ProtonMail users",
-    "description": "Confirming whether a ProtonMail username exists and retrieving its PGP public key",
+    "name": "ProtonMail User Enumeration (PGP key server)",
+    "description": "Use when you have a candidate Proton (ProtonMail) `email`/`username` and want to confirm it exists — query Proton's public PGP key server and get back a key with a creation timestamp hinting at account age.",
     "url": "https://api.protonmail.ch/pks/lookup?op=index&search=<username>@protonmail.com",
     "category": "username",
     "path": [
       "username",
       "specific-sites"
     ],
-    "bestFor": "Confirming whether a ProtonMail username exists and retrieving its PGP public key",
-    "input": "ProtonMail username (appended with @protonmail.com)",
-    "output": "PGP key index with public key fingerprint, algorithm, creation timestamp, and email UID",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming a Proton/ProtonMail address exists and reading its PGP key creation date as an account-age signal.",
+    "selectorsIn": [
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, unauthenticated HKP key-server query; no account or payment needed.",
     "opsec": "passive",
-    "opsecNote": "Unauthenticated API query to ProtonMail's public key server. Target user is not notified. Enables user enumeration.",
+    "opsecNote": "An unauthenticated GET to Proton's public key server. The target is not notified, and you're not logging into anything. Still route through a sock-puppet browser/VPN; the query goes to Proton's infrastructure and could be logged on their side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "This is Proton's own first-party public key server (HKP), so an existence/keys answer is authoritative — the account has a published key iff it exists and hasn't disabled key publication.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -374152,11 +374215,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ProtonMail PKS lookup",
+      "Proton key server enumeration"
+    ],
+    "tags": [
+      "email",
+      "account-existence"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/specific-sites/protonmail-users.md"
   },
   {
