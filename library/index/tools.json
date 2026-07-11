@@ -171705,37 +171705,51 @@
   {
     "id": "groupio",
     "name": "Groupio",
-    "description": "OSINT tool: Groupio.",
+    "description": "Use when you have a topic, tag, or language and want to find public WhatsApp groups a subject may belong to — returns group listings with member counts and join links.",
     "url": "https://en.groupio.app/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering public WhatsApp groups by category, tag, or language to locate a subject's community presence.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory; no account needed to browse or search.",
+    "opsec": "passive",
+    "opsecNote": "Searching the directory is passive and does not touch the target. Opening/joining a listed WhatsApp group loads it in WhatsApp under your account and exposes your number/username to that group — join only from a sock-puppet WhatsApp account, and prefer reading over participating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Multi-language, user-submitted WhatsApp group directory; listings are self-promoted and unvetted, so coverage is partial and each hit must be verified inside WhatsApp.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Groupio",
+      "groupio.app"
+    ],
     "tags": [
-      "whatsapp"
+      "whatsapp",
+      "group-discovery"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/groupio.md"
   },
   {
@@ -177148,37 +177162,54 @@
   {
     "id": "teletracker",
     "name": "TeleTracker",
-    "description": "OSINT tool: TeleTracker.",
+    "description": "Use when you have a Telegram channel/bot ID and want to harvest and archive its messages, media, and owner info — returns exported content and channel metadata.",
     "url": "https://github.com/tsale/TeleTracker",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-collecting and archiving a Telegram channel's messages, media, and bot/owner details for investigation.",
+    "selectorsIn": [
+      "username",
+      "device-id"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (Python); requires your own free Telegram API credentials (api_id/api_hash) and a bot token.",
+    "opsec": "active",
+    "opsecNote": "TeleGatherer/TeleViewer read channel content via the API (passive to members), but the toolkit also includes TeleTexter, which SENDS messages (including bulk) — an active, potentially attributable action. Downloading media pulls files to your disk. Use a dedicated sock-puppet Telegram account/API app, never send messages to a live target channel unless deliberate, and handle downloaded media with care.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source threat-intel toolkit (tsale/TeleTracker); code is inspectable and framed for analysts, but it uses the Telegram API under your credentials and includes messaging capability that carries real OpSec risk.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "TeleTracker"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "scraper",
+      "threat-intel"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/teletracker.md"
   },
   {
@@ -241373,46 +241404,51 @@
   {
     "id": "govchain-co-za",
     "name": "govchain.co.za",
-    "description": "OSINT tool: govchain.co.za.",
+    "description": "Use when you have a company name and want to check whether it is registered in South Africa (CIPC) — returns name-availability/existence, a lead toward the official company record.",
     "url": "https://www.govchain.co.za/name-search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly checking whether a South African company name is registered (existence check) as an entry point to CIPC records.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The name-availability search is free; Govchain's actual product (company registration and compliance services) is paid, but you don't need to pay to run the name check.",
+    "opsec": "passive",
+    "opsecNote": "A name-availability query against a commercial registration portal that draws on CIPC data; it does not notify anyone tied to the company. Standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Govchain is a private SA company-registration service, not the registrar; its name check reflects CIPC availability data but for authoritative director/address details go to CIPC itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "za"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Govchain"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "south-africa"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/govchain-co-za.md"
   },
   {
@@ -326370,35 +326406,50 @@
   {
     "id": "graphtreon-com",
     "name": "Graphtreon.com",
-    "description": "OSINT tool: Graphtreon.com.",
+    "description": "Use when you have a Patreon creator `username`/page and want their patron counts, earnings estimates, and growth history — returns financial and audience metrics over time.",
     "url": "https://graphtreon.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Estimating a Patreon creator's income, patron count, and growth trajectory, and ranking them against peers.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Core creator stats, rankings, and graphs are free; deeper/historical analytics and some features sit behind a paid tier.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads Graphtreon's aggregated public metrics about a creator's page — it does not touch the creator or their patrons and sends no signal to the target. Purely observational; no sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running third-party Patreon analytics site; patron counts are observed but earnings are estimates (Patreon hides exact figures and creators can opt out), so treat income numbers as approximate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Graphtreon"
+    ],
+    "tags": [
+      "patreon",
+      "creator-analytics"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/graphtreon-com.md"
   },
   {
@@ -352267,13 +352318,13 @@
   {
     "id": "universal-reddit-scraper-urs",
     "name": "Universal Reddit Scraper (URS)",
-    "description": "Python tool to scrape Reddit submissions, comments, and user activity.",
+    "description": "Use when you have a Reddit `username` (or subreddit) and want their full post/comment history exported for analysis — returns activity that leaks location, routine, and associates.",
     "url": "https://github.com/JosephLai241/URS",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Pulling a Reddit user's full post/comment history",
+    "bestFor": "Exporting a Reddit user's complete submission and comment history to mine for location, schedule, and relationship signals.",
     "selectorsIn": [
       "username"
     ],
@@ -352281,23 +352332,28 @@
       "social-profile",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Python); requires your own free Reddit API credentials (PRAW client id/secret).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reads via Reddit's official API using your API key — it does not interact with the target (no votes, no messages) and the user is not notified. Your API app/IP is visible to Reddit, not to the subject. Use a dedicated Reddit API app for investigative work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Listed in the Social-Media-OSINT collection.",
+    "trustNote": "Well-known open-source Reddit scraper (JosephLai241/URS); code is inspectable and it uses the sanctioned API, so data fidelity is high subject to Reddit API limits.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
     "aliases": [
       "URS"
     ],
@@ -352307,7 +352363,7 @@
       "python"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/universal-reddit-scraper-urs.md"
   },
@@ -375292,29 +375348,34 @@
   {
     "id": "whatsmyname",
     "name": "WhatsMyName",
-    "description": "Username enumeration using community-maintained site detection data",
+    "description": "Use when you have a `username` and want to know every site where it exists — returns a list of accounts across hundreds of platforms via response-pattern matching.",
     "url": "https://github.com/WebBreacher/WhatsMyName",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Username enumeration using community-maintained site detection data",
-    "input": "Username",
-    "output": "List of sites where the username exists, based on HTTP response pattern matching",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enumerating where a single username is registered across hundreds of sites using community-maintained detection rules.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; the hosted web UI (whatsmyname.app) and the CLI/data are all free, no account.",
     "opsec": "active",
-    "opsecNote": "Makes HTTP requests to each target site to check for username existence.",
+    "opsecNote": "The check works by sending an HTTP request to each candidate site for that username — so those sites (and any logging in between) see a hit for the target handle from your IP. Run the CLI behind a VPN/sock infrastructure; the hosted web app proxies requests but still relies on live probes. It does not notify the account owner directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Micah Hoffman (WebBreacher) with a large community-curated detection dataset (wmn-data.json); the de-facto standard username-enumeration data source, reused by many other tools.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -375322,11 +375383,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WMN",
+      "whatsmyname.app"
+    ],
+    "tags": [
+      "username-check",
+      "username-enumeration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/whatsmyname.md"
   },
   {
