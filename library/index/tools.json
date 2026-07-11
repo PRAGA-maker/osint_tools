@@ -155343,44 +155343,50 @@
   {
     "id": "remove-background",
     "name": "Remove Background",
-    "description": "OSINT tool: Remove Background.",
+    "description": "Use when you have an `image`/`face` and want to isolate the subject or the background for cleaner analysis — returns a cut-out `image` (subject-only or background-only) to feed reverse-image and geolocation work.",
     "url": "https://www.remove.bg",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Stripping the background from a photo to isolate a face/object (or the background scene) before further analysis.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "social-profile",
-      "geolocation",
-      "metadata-exif"
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier returns a reduced-resolution (preview) cut-out; full-resolution downloads, bulk, and API access are paid (credits/subscription).",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to remove.bg's servers (an AI SaaS, Canva-owned), so a copy transits a third party. Nothing reaches the target. Strip EXIF and avoid uploading material you can't share externally.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A mainstream, reputable commercial background-removal service. It only transforms your image; it does not itself surface intelligence — its value is as a preprocessing step.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "remove.bg",
+      "removebg"
+    ],
     "tags": [
-      "reverse-image"
+      "reverse-image",
+      "preprocessing",
+      "image-editing"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/remove-background.md"
   },
   {
@@ -156086,7 +156092,7 @@
   {
     "id": "saucenao",
     "name": "SauceNAO",
-    "description": "Tracing image origins and duplicate postings",
+    "description": "Use when you have an `image` (especially art/anime/illustration or an avatar) and want its origin — returns the source posting, artist, and duplicate appearances (`social-profile`/`name` of the creator).",
     "url": "https://saucenao.com/",
     "category": "image-video-face",
     "path": [
@@ -156094,34 +156100,53 @@
       "images",
       "search"
     ],
-    "bestFor": "Tracing image origins and duplicate postings",
+    "bestFor": "Tracing an illustration, anime frame, or avatar back to its original source and creator.",
     "input": "Image upload or image URL",
     "output": "Likely source links, matching images, and similarity metrics",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier allows a limited number of searches per day/per 30s (short + long rate limits). A paid account raises the limits and unlocks API access.",
     "opsec": "passive",
-    "opsecNote": "Search workflow only; does not interact with target accounts directly.",
+    "opsecNote": "You upload the image or an image URL to SauceNAO's index — the image transits a third party, but nothing reaches the target. Strip EXIF from sensitive uploads; the subject is never notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running, well-known reverse-image index specialised in art/anime/booru sources. Reliable within its domain; it indexes creative-media databases (Pixiv, Danbooru, DeviantArt, etc.) rather than the general web.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "yandex-images",
+      "tineye",
+      "google-lens"
+    ],
+    "aliases": [
+      "SauceNAO",
+      "saucenao.com"
+    ],
+    "tags": [
+      "reverse-image",
+      "art",
+      "avatar-tracing"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/search/saucenao.md"
   },
   {
@@ -161157,30 +161182,31 @@
   {
     "id": "world-cams",
     "name": "World Cams",
-    "description": "Web Cameras from around the world.",
+    "description": "Use when you have a `geolocation`/`address` and want live eyes on it — returns public live-webcam feeds (`image`/video) from that place for real-time verification and scene-matching.",
     "url": "https://worldcams.tv",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding live public webcams for a location to observe or corroborate a scene in real time.",
     "selectorsIn": [
-      "image",
-      "face"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
       "image",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory of public live webcams. No account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You watch publicly broadcast webcam streams; you are not interacting with the target and the feeds are already public. Passive. (Only the camera operators' public feeds are shown; you are not accessing any private device.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party aggregator of publicly available webcam streams. Feeds are real but sourced from many operators; camera placement/labels can be approximate, so confirm the exact location independently.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -161189,14 +161215,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WorldCams",
+      "worldcams.tv"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "webcam"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/world-cams.md"
   },
@@ -216122,44 +216152,55 @@
   {
     "id": "celltowermaps-com",
     "name": "celltowermaps.com",
-    "description": "OSINT tool: celltowermaps.com.",
+    "description": "Use when you have a `geolocation`/`address` (or a carrier) and want the cell towers serving it — returns tower locations, callsigns, carrier and band data (`geolocation` + `metadata-exif`-style RF detail).",
     "url": "https://www.celltowermaps.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping US cell-tower locations by area or carrier from FCC data.",
     "selectorsIn": [
-      "phone"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "geolocation",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free. Maps ~2.8M US tower locations from public FCC database records; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You query a static map of infrastructure, not a person or their device. Nothing reaches any subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party visualiser of public FCC tower registrations. The underlying FCC data is authoritative; tower-to-coverage inference (which tower actually served a call) is not something this tool can prove.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "cellmapper",
+      "fcc-io"
+    ],
+    "aliases": [
+      "Cell Tower Maps",
+      "celltowermaps.com"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "cell-tower"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/celltowermaps-com.md"
   },
   {
@@ -217230,44 +217271,50 @@
   {
     "id": "gsmarena-com",
     "name": "gsmarena.com",
-    "description": "OSINT tool: gsmarena.com.",
+    "description": "Use when you have a phone/device model (a `device-id` or a phone seen in a photo) and want its full specifications — returns camera, dimensions, sensor and release data (`metadata-exif`-style device intel) for image and device analysis.",
     "url": "https://www.gsmarena.com/glossary.php3",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a mobile device's detailed specifications to support image/device analysis.",
     "selectorsIn": [
-      "phone"
+      "device-id",
+      "image"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the full specifications database. No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You look up a device model in a public specs catalogue — no person, phone number, or account is queried, and nothing reaches any subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The de-facto reference database for mobile-device specifications, widely cited and accurate for hardware specs. Note it is a spec catalogue, not a person/phone-number lookup.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GSMArena",
+      "gsmarena.com"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "device-specs"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/gsmarena-com.md"
   },
   {
@@ -246465,46 +246512,54 @@
   {
     "id": "irelandnursing-com",
     "name": "irelandnursing.com",
-    "description": "OSINT tool: irelandnursing.com.",
+    "description": "Use when you have a `name` and want to check if they're a registered Irish nurse/midwife — returns license status and directory details for ~127k nurses (an unofficial mirror; confirm against NMBI).",
     "url": "https://www.irelandnursing.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly checking whether a name appears among registered Irish nurses/midwives and their license status.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the directory of ~127,560 licensed nurses by name. No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You search a public third-party directory; nothing reaches the subject. Passive. Because it's an unofficial site, don't treat its output as authoritative — verify status on the official NMBI register.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An independent, third-party directory (with a reviews feature) that mirrors Irish nursing registration data — NOT the official regulator. The Nursing and Midwifery Board of Ireland (nmbi.ie) is the authoritative source; use this only as a quick index and confirm there.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "nmbi-ie"
+    ],
+    "aliases": [
+      "Ireland Nursing",
+      "irelandnursing.com"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "nursing",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/irelandnursing-com.md"
   },
   {
@@ -330255,37 +330310,56 @@
   {
     "id": "instagram-monitor",
     "name": "instagram_monitor",
-    "description": "OSINT tool: instagram_monitor.",
+    "description": "Use when you have an Instagram `username` and want to watch it over time — returns real-time alerts on new posts/stories/reels, follower/following changes, and profile edits (`social-profile` + `image` capture).",
     "url": "https://github.com/misiektoja/instagram_monitor",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Continuously monitoring an Instagram account for new activity and profile changes, with media capture.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (Python). No cost; optional features (stories, follower deltas) need you to import a logged-in browser session.",
+    "opsec": "active",
+    "opsecNote": "Basic tracking runs in a no-login mode (passive-ish); enabling stories/follower monitoring imports YOUR (ideally sock-puppet) Instagram session, which is ACTIVE — repeated polling and story views can be visible to the target (story view lists) and risk the account. Use a dedicated burner Instagram account, never your real one, and keep polling intervals sane.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Actively maintained open-source OSINT tool (misiektoja), part of a family of *_monitor tools, ~1k stars and frequent releases. It surfaces Instagram's own data; reliability tracks Instagram's anti-automation measures.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "instagram-com",
+      "osintgram"
+    ],
+    "aliases": [
+      "instagram_monitor",
+      "misiektoja instagram monitor"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "monitoring"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-monitor.md"
   },
   {
@@ -376060,37 +376134,57 @@
   {
     "id": "user-search",
     "name": "User Search",
-    "description": "OSINT tool: User Search.",
+    "description": "Use when you have a `username` and want to find matching accounts across social networks, plus reverse email/phone leads — returns candidate `social-profile`s and `name` hints to verify.",
     "url": "http://www.usersearch.org",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Searching one username across many social/dating/forum platforms from a single site.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Username lookups across many networks are free. Deeper features — reverse email/phone lookups and some aggregated results — are gated behind paid credits/registration.",
+    "opsec": "passive",
+    "opsecNote": "usersearch.org runs the checks server-side against public profiles, so the target's platforms don't see your IP for the enumeration itself. Nothing is sent to the subject. Opening a returned profile does expose your browser to that site — use a sock puppet for follow-through.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing community username/identity search aggregator. It reports candidate matches, not confirmed identities — same username across sites is a lead, not proof of the same person.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname-app",
+      "user-name-search-intel-techniques",
+      "namechk"
+    ],
+    "aliases": [
+      "usersearch.org",
+      "UserSearch"
+    ],
     "tags": [
-      "username-check"
+      "username-check",
+      "account-enumeration"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/user-search.md"
   },
   {
