@@ -158278,44 +158278,55 @@
   {
     "id": "stolencamerafinder",
     "name": "StolenCameraFinder",
-    "description": "OSINT tool: StolenCameraFinder.",
+    "description": "Use when you have an `image` with a camera serial number in its EXIF and want other photos from the same physical camera — returns other online images sharing that serial (`social-profile`/`geolocation` leads). Reliability is intermittent.",
     "url": "http://www.stolencamerafinder.co.uk",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding other photos taken by the same physical camera via its EXIF serial number.",
     "selectorsIn": [
       "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation",
       "metadata-exif"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use. Built originally to help recover stolen cameras by tracing their serial number across public photos.",
+    "opsec": "passive",
+    "opsecNote": "You upload an image (or enter a serial) to extract/search the EXIF serial — the image transits a third party but nothing reaches the subject. Strip other sensitive EXIF if needed. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A known, long-standing tool built on the fact that many cameras embed a unique serial number in EXIF. Its coverage depends on searchable photo indexes (historically Flickr's API), which have tightened over the years — so it works intermittently and finds fewer matches than it once did.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "cameratrace",
+      "exiftool"
+    ],
+    "aliases": [
+      "Stolen Camera Finder",
+      "stolencamerafinder.co.uk"
+    ],
     "tags": [
-      "reverse-image"
+      "reverse-image",
+      "exif",
+      "camera-serial"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/stolencamerafinder.md"
   },
   {
@@ -207177,37 +207188,62 @@
   {
     "id": "infotracer",
     "name": "InfoTracer",
-    "description": "OSINT tool: InfoTracer.",
+    "description": "Use when you have a `name`, `phone`, `email`, or `address` and want a US background/contact profile — returns addresses, phones, relatives (`associate`) and public-record hits behind a paywall.",
     "url": "https://infotracer.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "US people-search / background lookup aggregating contact, address, relatives, and public records.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search shows a teaser/preview (that a record exists); the actual report — contact details, addresses, relatives, criminal/court records — is behind a paid subscription. No usable free full report.",
+    "opsec": "passive",
+    "opsecNote": "You query a data-broker aggregator, not the subject, so nothing reaches the target. But you must create an account and pay, associating the search with your payment identity — use a sock-puppet account and privacy-preserving payment. Note results are aggregated from brokers and can be stale or wrong.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial US data-broker/people-search aggregator. Convenient breadth, but broker data is frequently outdated or conflated across same-name individuals — corroborate every field before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "truepeoplesearch",
+      "spokeo",
+      "beenverified"
+    ],
+    "aliases": [
+      "InfoTracer",
+      "infotracer.com"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "data-broker",
+      "background-check"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/infotracer.md"
   },
   {
@@ -222831,46 +222867,56 @@
   {
     "id": "ahpra-gov-au",
     "name": "ahpra.gov.au",
-    "description": "OSINT tool: ahpra.gov.au.",
+    "description": "Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualifications and principal practice location (`address`/`employer-org`) from the national register.",
     "url": "https://www.ahpra.gov.au/Registration/Registers-of-Practitioners.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying an Australian doctor, nurse, or other health practitioner and finding their practice location.",
     "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
       "name",
       "address",
       "employer-org"
     ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official national register search. No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You search a public statutory register; the practitioner is not contacted or notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Australian Health Practitioner Regulation Agency's official national register, covering 15+ regulated health professions — authoritative registration and conditions/notation data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "docinfo-org",
+      "rcvs-org-uk"
+    ],
+    "aliases": [
+      "AHPRA",
+      "Register of Practitioners Australia"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "health-practitioner",
+      "australia"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ahpra-gov-au.md"
   },
   {
@@ -238526,46 +238572,57 @@
   {
     "id": "freebmd-org-uk",
     "name": "freebmd.org.uk",
-    "description": "OSINT tool: freebmd.org.uk.",
+    "description": "Use when you have a `name` and want English & Welsh birth, marriage, or death registrations — returns the registration event with quarter/year (`dob` lead), district (`address`), and marriage links (`associate`).",
     "url": "https://www.freebmd.org.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding historic England & Wales birth/marriage/death index entries by name to build a family/timeline.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free volunteer-transcribed index of the England & Wales civil registration index. Free registration lets you run more searches; no payment for the index itself (ordering the actual certificate from the GRO costs money).",
+    "opsec": "passive",
+    "opsecNote": "You search a historic public-records index; nothing reaches any living subject. Fully passive. Registering ties an email to your searches — use a sock-puppet address if you prefer.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-running charitable project transcribing the official GRO index for England & Wales. Highly regarded, but transcription is volunteer-driven and coverage is strongest ~1837–1992 and not 100% complete — verify against the GRO for certainty.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "gro-gov-uk",
+      "ancestry"
+    ],
+    "aliases": [
+      "FreeBMD",
+      "freebmd.org.uk"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "vital-records",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/freebmd-org-uk.md"
   },
   {
@@ -248228,46 +248285,56 @@
   {
     "id": "lawscot-org-uk",
     "name": "lawscot.org.uk",
-    "description": "OSINT tool: lawscot.org.uk.",
+    "description": "Use when you have a `name` and want to verify/locate a Scottish solicitor — returns their practising status, firm (`employer-org`) and office `address` from the Law Society of Scotland's Find a Solicitor directory.",
     "url": "https://www.lawscot.org.uk/find-a-solicitor/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a Scottish solicitor's registration and finding their firm and office location.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory from the Law Society of Scotland. No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You search a public professional directory; the solicitor is not contacted or notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Law Society of Scotland, the statutory professional body for Scottish solicitors — authoritative for who holds a current practising certificate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "sra-org-uk"
+    ],
+    "aliases": [
+      "Law Society of Scotland Find a Solicitor",
+      "lawscot.org.uk"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "solicitor",
+      "scotland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/lawscot-org-uk.md"
   },
   {
@@ -333338,49 +333405,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/mastodon-search-engine.md"
-  },
-  {
-    "id": "mastodon-social",
-    "name": "mastodon.social",
-    "description": "OSINT tool: mastodon.social.",
-    "url": "https://mastodon.social/about",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mastodon",
-      "Mastodon Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/mastodon-social.md"
   },
   {
     "id": "mastogizmos-com",
