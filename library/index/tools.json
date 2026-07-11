@@ -102110,45 +102110,48 @@
   {
     "id": "email-address-format-tool",
     "name": "Email Address Format Tool",
-    "description": "Tool that provides email address formatting for business by domain names",
+    "description": "Use when you have a company `domain` (and maybe a `name`) and want the organization's likely email pattern — returns the email format and sample `email`s to construct or verify an address.",
     "url": "http://email-format.com",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering an organization's email-address pattern (e.g. first.last@) to build or confirm a target's likely work email.",
     "selectorsIn": [
-      "email"
+      "domain",
+      "name"
     ],
     "selectorsOut": [
-      "email",
-      "social-profile"
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free lookups on email-format.com; a paid/API tier exists for bulk or programmatic use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Looking up a domain's public email pattern is passive — you query email-format.com, not the target or their mail server, so nothing is sent to the subject. Constructing an address is inference; verifying it (SMTP/other tools) is a separate, more active step you should do knowingly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running aggregator of observed email formats per domain; patterns are inferred from public samples and can be outdated or have exceptions.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "email-format.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "email-addresses"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/email-address-format-tool.md"
   },
@@ -203901,51 +203904,6 @@
     "_file": "library/tools/people-search/cvfox.md"
   },
   {
-    "id": "cyber-background-checks-us",
-    "name": "Cyber Background Checks (US)",
-    "description": "OSINT tool: Cyber Background Checks (US).",
-    "url": "https://www.cyberbackgroundchecks.com datascrape",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/cyber-background-checks-us.md"
-  },
-  {
     "id": "cyberbackgroundchecks",
     "name": "CyberBackgroundChecks",
     "description": "Free people-search aggregator with relatives and contact history.",
@@ -217540,43 +217498,52 @@
   {
     "id": "next-caller",
     "name": "Next Caller",
-    "description": "OSINT tool: Next Caller.",
+    "description": "Use when you have a `phone` number and need enterprise-grade caller identity/fraud intelligence via API — returns the associated `name` and `address` (subject to enterprise access).",
     "url": "https://nextcaller.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Programmatic phone-to-identity (name/address) and fraud-risk scoring for organizations with an API contract.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
-      "address",
-      "social-profile"
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Enterprise phone-intelligence API (caller ID + fraud detection), not a free consumer lookup. Access requires an API key and a commercial agreement; there is no walk-up web search for the public.",
+    "opsec": "passive",
+    "opsecNote": "An API query is passive against the subject (no notification). The real constraint is access and compliance — this is regulated identity data (often FCRA/GLBA-adjacent) intended for authorized business use (fraud, verification); do not assume you may use it for arbitrary OSINT. Queries are logged against your API account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A real, established B2B phone-intelligence provider (caller-ID/anti-fraud); data quality is commercial-grade but access is gated and use is contractually/legally constrained.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "us"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "NextCaller",
+      "nextcaller.com"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "caller-id",
+      "api"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/next-caller.md"
   },
   {
@@ -220881,35 +220848,49 @@
   {
     "id": "validnumber-com",
     "name": "Validnumber.com",
-    "description": "OSINT tool: Validnumber.com.",
+    "description": "Use when you have a `phone` number and want a free reverse lookup / caller-ID and spam-report check — returns caller `name`/`geolocation` leads and community spam flags.",
     "url": "https://validnumber.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Free reverse phone lookup and checking whether a number is community-reported as spam/unsafe.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reverse lookups and community spam reporting; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Looking up a number is passive — you query Validnumber's database, not the subject, who is not notified. Your own query may be logged and, since results pages let users report numbers, avoid submitting anything that identifies your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-driven reverse-lookup / spam-report site; caller-ID and location data are partly user-contributed, so accuracy varies and coverage skews to numbers others have reported.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Valid Number",
+      "validnumber.com"
+    ],
+    "tags": [
+      "phone",
+      "reverse-lookup"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/validnumber-com.md"
   },
   {
@@ -224274,46 +224255,51 @@
   {
     "id": "austcemindex-com",
     "name": "austcemindex.com",
-    "description": "OSINT tool: austcemindex.com.",
+    "description": "Use when you have a `name` of someone buried in Australia (esp. regional NSW) and want their cemetery/headstone record — returns headstone `image`, dates (`dob`), cemetery `address`, and family `associate`s.",
     "url": "https://www.austcemindex.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free search of Australian cemetery inscriptions and headstone photos to confirm a burial and extract family/date details.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view; a volunteer-driven index with no account required.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public genealogy index concerning deceased people is passive and notifies no one. No login is required; queries are ordinary web requests.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The Australian Cemeteries Index — a large volunteer-contributed database (1.7M+ records, 1,100+ cemeteries) strongest in regional NSW; coverage is partial and contributor-dependent.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Australian Cemeteries Index",
+      "austcemindex"
+    ],
     "tags": [
       "genealogybdmANDwills",
       "Genealogy Linked Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/austcemindex-com.md"
   },
   {
@@ -263028,46 +263014,50 @@
   {
     "id": "scwonline-wales",
     "name": "scwonline.wales",
-    "description": "OSINT tool: scwonline.wales.",
+    "description": "Use when you have a `name` of a social care worker in Wales and want to verify their registration — returns the registrant `name`, registration `document-id`/type, `employer-org` context, and any fitness-to-practise removal.",
     "url": "https://www.scwonline.wales/en/search-the-register/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a person is a registered social care worker in Wales, and checking for removals via fitness-to-practise.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register search operated by the statutory regulator; no account needed to search.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public professional register is passive and does not notify the person. No login is required. The data is a factual registration status published by the regulator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Social Care Wales, the statutory regulator of the social care workforce in Wales; registration status and fitness-to-practise removals are authoritative public record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Social Care Wales register",
+      "SCWonline"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/scwonline-wales.md"
   },
   {
@@ -314440,44 +314430,54 @@
   {
     "id": "bayt-com",
     "name": "bayt.com",
-    "description": "OSINT tool: bayt.com.",
+    "description": "Use when you have a `name`/`username` of a Middle East / Gulf professional and want their CV-style profile and work history — returns a `social-profile`, `name`, and `employer-org`.",
     "url": "https://www.bayt.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Profiling a Middle East / Gulf region jobseeker or professional via their Bayt CV/profile and employment history.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse the site and some public profiles; recruiter/full-CV access and messaging require an account (jobseeker or employer), and employer/CV-search features are paid.",
+    "opsec": "active",
+    "opsecNote": "Viewing profiles typically requires a logged-in account, and recruiter-side actions can leave visitor/contact traces. Register and browse from a sock-puppet account with a plausible regional persona; never use an attributable identity, especially given the professional context.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Bayt is the leading legitimate Middle East job/professional platform; profiles are self-submitted CVs, so employment claims are user-stated and should be corroborated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ae",
+      "sa"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Bayt",
+      "bayt.com"
+    ],
     "tags": [
       "linkedin",
       "LinkedIn & Similar Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bayt-com.md"
   },
   {
@@ -333997,40 +333997,6 @@
     "_file": "library/tools/social-networks/nitter-ca.md"
   },
   {
-    "id": "nitter-instances",
-    "name": "Nitter Instances",
-    "description": "OSINT tool: Nitter Instances.",
-    "url": "https://xnaas.github.io/nitter-instances/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/nitter-instances.md"
-  },
-  {
     "id": "nitter-it",
     "name": "Nitter.it",
     "description": "OSINT tool: Nitter.it.",
@@ -343414,7 +343380,7 @@
   {
     "id": "spoonbill",
     "name": "Spoonbill",
-    "description": "Monitoring profile change history",
+    "description": "Use when you have Twitter/X `username`s you want to monitor and want to catch profile edits (bio, name, location, URL changes) — returns change alerts revealing prior `social-profile` states and `name`/location shifts.",
     "url": "https://spoonbill.io/",
     "category": "social-networks",
     "path": [
@@ -343422,36 +343388,44 @@
       "twitter",
       "archive-deleted-tweets"
     ],
-    "bestFor": "Monitoring profile change history",
-    "input": "Twitter/X usernames",
-    "output": "Historical profile snapshots and change alerts",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Detecting and logging changes to the accounts you follow (bio, display name, location, link) on Twitter/X.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Free to use with a connected account; functionality depends on Twitter/X API access, which has been heavily restricted since 2023.",
     "opsec": "passive",
-    "opsecNote": "Monitoring is indirect; investigator does not directly engage target accounts.",
+    "opsecNote": "Monitoring is indirect — you observe changes to accounts you already follow, without engaging the target. However, Spoonbill connects to your Twitter/X account via OAuth, so use a sock-puppet X account, not a personal one, and review the permissions you grant.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A real, established profile-change tracker, but its coverage was undermined by X's API pricing changes; results may be partial or delayed. It requires OAuth access to your account.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "spoonbill.io"
+    ],
+    "tags": [
+      "twitter",
+      "profile-monitoring"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/archive-deleted-tweets/spoonbill.md"
   },
   {
