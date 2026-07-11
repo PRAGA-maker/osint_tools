@@ -110648,42 +110648,53 @@
   },
   {
     "id": "spycloud-com",
-    "name": "Spycloud.com",
-    "description": "check for a particular email in data leaks. Shows how many addresses registered on a particular house have been scrambled",
+    "name": "SpyCloud Check Your Exposure",
+    "description": "Use when you have an `email` on a domain you control/investigate and want to know whether that identity or domain appears in recaptured darknet data — returns a domain-level exposure report (breached credentials, malware-infected users, stolen session cookies).",
     "url": "https://spycloud.com/check-your-exposure/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a business/domain's identities show up in SpyCloud's recaptured breach & infostealer-malware data.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "address",
-      "email"
+      "email",
+      "device-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The \"Check Your Exposure\" report is free but scopes results to the DOMAIN of a business email you submit (consumer webmail is typically rejected). Full record-level data and per-person lookups are a paid enterprise product.",
+    "opsec": "passive",
+    "opsecNote": "You submit a business email to receive a domain-level report; the report is delivered to that address, so you must control the mailbox. The subject/individual is not contacted. Do not enter a target's address expecting a personal breach dump — the free tool is org-scoped, not a per-email breach checker, and submitting generates a sales lead tied to whatever email you use.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "SpyCloud is a well-known commercial breach/darknet-recapture vendor whose data underpins many enterprise ARP products. The recaptured data is real; the free tool is deliberately limited to summaries to drive sales.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "SpyCloud exposure check",
+      "SpyCloud breach exposure"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "breach",
+      "infostealer",
+      "darknet"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/spycloud-com.md"
   },
@@ -129471,47 +129482,53 @@
   },
   {
     "id": "maps-app-by-apple",
-    "name": "Maps App by Apple",
-    "description": "Mapping program available for mobile download",
+    "name": "Apple Maps",
+    "description": "Use when you have an `address` or `geolocation` and want to see and verify a location — returns satellite/3-D imagery, street-level \"Look Around\" panoramas and points of interest.",
     "url": "https://www.apple.com/ios/maps",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying an address on the ground with Apple's \"Look Around\" street-level imagery and high-quality 3-D/satellite views.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "address",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation",
-      "address"
+      "address",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free with an Apple device (iPhone/iPad/Mac); a limited web version (maps.apple.com / DuckDuckGo Maps) works cross-platform.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a place in Apple Maps does not notify anyone at that location and does not touch the subject. Requests go to Apple; do the browsing on a device/account not tied to your identity if attribution matters. Do not confuse map \"Directions\" (which uses YOUR location) with looking at a target address — searching a target address leaks nothing about them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "First-party Apple mapping product with independently-captured imagery. Imagery is periodically refreshed, so \"Look Around\" panoramas may be months to a few years old — date the capture where possible.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Apple Maps",
+      "Look Around"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "street-view"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/maps-app-by-apple.md"
   },
@@ -202564,47 +202581,53 @@
   },
   {
     "id": "amazon-co-uk-3",
-    "name": "amazon.co.uk",
-    "description": "OSINT tool: amazon.co.uk.",
+    "name": "Amazon.co.uk Wish Lists & Registries",
+    "description": "Use when you have a `name` and want a UK subject's public Amazon wish list / gift registry — returns a display name, wanted items and sometimes a shipping town or delivery address.",
     "url": "https://www.amazon.co.uk/registries",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's public Amazon wish list or baby/wedding registry to reveal interests, location and occasionally a shipping address.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "address",
-      "phone",
-      "email",
-      "social-profile",
-      "associate"
+      "associate",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; an Amazon account (any account) makes the registry/wish-list finder easier to use.",
+    "opsec": "passive",
+    "opsecNote": "Searching the public wish-list/registry finder does not notify the subject. However, buying an item ships it to them and reveals their address to you while alerting them to a gift — do NOT purchase; stop at the public listing. Browse in a sock-puppet Amazon session so the recommendation engine and order history stay clean.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "First-party Amazon feature; listings are self-published by the subject, so the display name and items are genuine but user-supplied (aliases/nicknames common).",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Amazon UK wish list search",
+      "Amazon registry finder"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "People Search Sites",
+      "wishlist",
+      "registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/amazon-co-uk-3.md"
   },
   {
@@ -209482,44 +209505,60 @@
   },
   {
     "id": "melissadata",
-    "name": "MelissaData",
-    "description": "OSINT tool: MelissaData.",
+    "name": "Melissa Lookups",
+    "description": "Use when you have an `address`, `name`, `phone` or `email` and want to verify it and pull linked contact/identity data — returns current resident names, addresses, phones, property owner detail and demographics.",
     "url": "https://www.melissa.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying and reverse-resolving a US/Canada address or name into current resident, contact and property-owner data.",
     "selectorsIn": [
-      "address"
+      "address",
+      "name",
+      "phone",
+      "email"
     ],
     "selectorsOut": [
       "name",
       "phone",
+      "address",
       "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free \"Lookups\" tools run on credits — registering grants 1,000 free credits, enough for many single lookups; heavy/bulk use and the full APIs are paid.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit Melissa's own reference databases (USPS/Canada Post + compiled consumer/property data); the subject is not contacted. Registering for free credits ties lookups to an account, so use a sock-puppet identity/email. This is data-broker data — treat outputs as leads to corroborate, and mind local privacy law when handling third-party PII.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Melissa is a long-established data-quality/address-verification company (decades old); its address engine is USPS/Canada-Post-certified. Consumer/demographic data is broker-sourced, so accuracy varies by record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "us",
+      "ca"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "MelissaData",
+      "Melissa Personator",
+      "Melissa Address Check"
+    ],
     "tags": [
-      "address"
+      "address",
+      "data-broker",
+      "address-verification"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/melissadata.md"
   },
   {
@@ -224912,46 +224951,59 @@
   {
     "id": "archives-com",
     "name": "Archives.com",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name` (plus rough birth/death year and country) and want historical/vital records — returns biographical detail, addresses, occupations and family links from census, obituary and vital-record collections.",
     "url": "http://www.archives.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Cheap genealogy/vital-record lookups (census, obituaries, deaths) to build a subject's family and address history.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
+      "address",
+      "associate",
       "employer-org",
-      "address"
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free 7-day trial gives full access; after that a paid subscription is required. Searching (seeing hit counts and index snippets) is often possible without paying, but viewing full record images requires the trial/subscription.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching only queries Archives.com's own indexed record collections — the subject is never contacted and nothing is sent to any account the subject controls. Register the trial with a sock-puppet identity and a payment method you are willing to expose, since it auto-renews into a paid plan.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Ancestry.com's group; a large, long-running commercial genealogy service indexing primary-source record collections. Records are digitised primary sources, but transcription/OCR errors occur.",
     "missingPersonsRelevance": "high",
     "coverage": [
+      "us",
+      "uk",
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Archives.com genealogy",
+      "Archives dot com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy",
+      "vital-records",
+      "obituaries"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/archives-com.md"
   },
@@ -260313,13 +260365,13 @@
   {
     "id": "pibuzz",
     "name": "Pibuzz",
-    "description": "Private investigators public record research, including US federal, state, county and municipal government salaries and employee names database",
+    "description": "Use when you have a `name` (or `employer-org`) and want to find where a US public-sector subject works and what they earn — returns a directory of government salary/employee-name databases keyed by state and agency.",
     "url": "http://pibuzz.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating the government salary/employee database for a given US state so you can confirm a public employee's agency, job and pay.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -260328,31 +260380,37 @@
       "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory/blog; the linked salary databases are themselves free public records.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Pibuzz is a link directory — you leave it to query third-party salary databases, each of which is a passive public-records search that does not notify the subject. No account needed. As always, run searches from a sock-puppet browser to avoid tying your investigative sessions together.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "A long-running private-investigator blog that curates links to legitimate government salary databases compiled by news orgs, watchdogs and agencies. Pibuzz itself hosts no data; verify each downstream source.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Private Investigator Blog",
+      "Pibuzz government salaries"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "government-employees",
+      "salaries"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/pibuzz.md"
   },
@@ -261119,45 +261177,51 @@
   },
   {
     "id": "polk-county-ordinances",
-    "name": "Polk County Ordinances",
-    "description": "OSINT tool: Polk County Ordinances.",
+    "name": "Polk County (FL) Code of Ordinances",
+    "description": "Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code (ordinance text and section IDs) via the Municode Library.",
     "url": "https://library.municode.com/fl/polk_county/codes/code_of_ordinances",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reading and citing Polk County FL local ordinances (zoning, animal, code-enforcement, nuisance) to understand the legal context of a location or a code-enforcement matter.",
     "selectorsIn": [
-      "name"
+      "address"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public access via Municode Library; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You are reading a public legal code hosted by Municode — nothing is sent to any subject and no target is queried. Requests hit Municode's servers; use a sock-puppet browser only if you care about not linking your research sessions. This resource contains statutes, not personal records, so there is minimal PII exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Municode is the official codification/hosting vendor for thousands of US local governments; this is the authoritative published code of ordinances for Polk County, FL. It is legal text, not a person-search database.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Municode Polk County",
+      "Polk County FL ordinances"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "municipal-code",
+      "legal"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/polk-county-ordinances.md"
   },
   {
@@ -327351,49 +327415,6 @@
     "_file": "library/tools/social-networks/google-com-52.md"
   },
   {
-    "id": "google-com-53",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Ainstagram.com%2Fexplore%2Ftags%2F",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram",
-      "Instagram Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-53.md"
-  },
-  {
     "id": "google-com-54",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -354590,44 +354611,50 @@
   {
     "id": "twittervideodownload-com",
     "name": "twittervideodownload.com",
-    "description": "OSINT tool: twittervideodownload.com.",
+    "description": "Use when you have a `social-profile` (a Twitter/X tweet URL) and want the underlying video/GIF file — returns the downloadable MP4 media for offline analysis.",
     "url": "https://twittervideodownload.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the raw MP4/GIF out of an X/Twitter post so you can inspect, archive or reverse-search the media.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "metadata-exif",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool, ad-supported; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public tweet URL into a third-party site — the tweet's author is never notified. But the download service sees the tweet you are interested in; use a sock-puppet browser/IP and assume the site logs the URLs you submit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Anonymous third-party downloader that scrapes X's public CDN; no named operator. Media is pulled from Twitter's CDN, but the site injects ads and pop-unders — treat as disposable and untrusted.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Twitter Video Downloader",
+      "X video download"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twittervideodownload-com.md"
   },
   {
