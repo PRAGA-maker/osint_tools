@@ -105445,40 +105445,51 @@
   {
     "id": "holehe-2",
     "name": "holehe",
-    "description": "CLI that checks if an email is registered on 120+ sites.",
+    "description": "Use when you have an `email` and want to know which sites it's registered on — returns a list of accounts (`social-profile`) tied to that address via password-reset/registration probes.",
     "url": "https://pypi.org/project/holehe/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating which of 120+ online services an email address has an account on.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (Python, MIT). Install via pip; no account, API key, or payment.",
+    "opsec": "active",
+    "opsecNote": "For each site, holehe probes the registration/password-reset endpoint using the target's email — an ACTIVE query against those services. Most checks are silent, but some providers can trigger a notification email or log the reset attempt to the account owner. Run from a sock-puppet IP; be aware you are touching real login infrastructure with the target's address.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "",
+    "trustNote": "Widely-used open-source tool by megadose, standard in the OSINT toolkit. It only observes each site's own responses; accuracy depends on each site's current behaviour (modules break as sites change).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com",
+      "whatsmyname-app"
+    ],
+    "aliases": [
+      "holehe",
+      "megadose holehe"
+    ],
     "tags": [
-      "email-recon"
+      "email-recon",
+      "account-enumeration"
     ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/holehe-2.md"
   },
@@ -136710,40 +136721,60 @@
   {
     "id": "yandex-maps",
     "name": "Yandex.Maps",
-    "description": "Geolocation research in Russia/CIS where western maps are weaker",
+    "description": "Use when you have a `geolocation`/`address` (especially in Russia/CIS) and want imagery, panoramas and POI context western maps lack — returns street-level `image`, `address` and nearby POIs.",
     "url": "https://yandex.com/maps/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "Geolocation research in Russia/CIS where western maps are weaker",
+    "bestFor": "Street-level and satellite geolocation research across Russia, CIS, and Eastern Europe.",
     "input": "Address/place query or coordinates",
-    "output": "Map imagery, routes, and regional POI context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "output": "Map imagery, panoramas, routes, and regional POI context",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "image",
+      "address",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse maps, satellite, and panoramas in the web client. No account needed for viewing.",
     "opsec": "passive",
-    "opsecNote": "Uses open-source mapping/geospatial data and does not directly interact with the target.",
+    "opsecNote": "You query Yandex's mapping servers, not the target — nothing reaches the subject. Note Yandex is a Russian company under Russian jurisdiction; use a sock-puppet/VPN if you'd rather your map queries not be tied to you, but the lookup itself is passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party mapping service from Yandex — genuine, high-quality imagery. It is authoritative for what it shows; the caveat is jurisdiction and occasional deliberate blurring of sensitive sites, not authenticity.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-maps",
+      "openstreetmap"
+    ],
+    "aliases": [
+      "Yandex Maps",
+      "Яндекс.Карты"
+    ],
+    "tags": [
+      "geolocation",
+      "panorama",
+      "russia-cis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/yandex-maps.md"
   },
   {
@@ -156002,35 +156033,54 @@
   {
     "id": "same-energy",
     "name": "same.energy",
-    "description": "OSINT tool: same.energy.",
+    "description": "Use when you have an `image` and want aesthetically/visually similar images to identify a scene, object, or style — returns visually similar `image`s (a mood-match engine, not same-photo reverse search).",
     "url": "https://same.energy/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding images with the same visual \"vibe\" — scene, object, or aesthetic — rather than the exact same photo.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and search. An optional login exists for saving boards; not required to run visual searches.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload/drop an image to same.energy's servers to search; the image transits a third party but nothing reaches the subject. Strip EXIF from anything sensitive before uploading, and don't upload material you can't hand to an external service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A legitimate independent visual-search engine (by Jacob Jackson). It indexes an aesthetic/Creative-Commons image space, so it finds *similar-looking* images, not necessarily the origin of a specific photo — manage expectations accordingly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-lens",
+      "yandex-images",
+      "tineye"
+    ],
+    "aliases": [
+      "Same Energy",
+      "sameenergy"
+    ],
+    "tags": [
+      "reverse-image",
+      "visual-similarity",
+      "image-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/same-energy.md"
   },
   {
@@ -162045,7 +162095,7 @@
   {
     "id": "youtube-data-tools",
     "name": "YouTube Data Tools",
-    "description": "OSINT tool: YouTube Data Tools.",
+    "description": "Use when you have a YouTube channel or video (a `social-profile`) and want structured data about it — returns channel/video metadata, comment networks and commenter `username`s for analysis.",
     "url": "https://tools.digitalmethods.net/netvizz/youtube/",
     "category": "image-video-face",
     "path": [
@@ -162053,34 +162103,54 @@
       "videos",
       "analyze-record"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting channel info, video lists, and comment networks from YouTube as structured data (CSV/GDF).",
+    "input": "YouTube channel ID / video ID / search query",
+    "output": "CSV/network files of channel metadata, video lists, and comment data",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free academic tool (University of Amsterdam / Digital Methods Initiative). No account; it uses the maintainer's YouTube API quota, so heavy jobs may be rate-limited.",
+    "opsec": "passive",
+    "opsecNote": "All data comes from YouTube's public API — you never interact with the channel owner or commenters, and they are not notified. Passive. The exported data can contain many real usernames, so handle and store it responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Bernhard Rieder / the Digital Methods Initiative, a respected academic research group. It only surfaces YouTube's own public API data; completeness is bounded by API limits and quota.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "youtube-com",
+      "youtube-metadata"
+    ],
+    "aliases": [
+      "YouTube Data Tools",
+      "YTDT",
+      "netvizz youtube"
+    ],
+    "tags": [
+      "youtube",
+      "network-analysis",
+      "video-metadata"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/videos/analyze-record/youtube-data-tools.md"
   },
   {
@@ -170482,46 +170552,6 @@
     "_file": "library/tools/messaging/detectiva.md"
   },
   {
-    "id": "disboard",
-    "name": "Disboard",
-    "description": "Discovering public Discord communities and server metadata",
-    "url": "https://disboard.org/",
-    "category": "messaging",
-    "path": [
-      "messaging",
-      "discord"
-    ],
-    "bestFor": "Discovering public Discord communities and server metadata",
-    "input": "Keyword, category, or tag searches",
-    "output": "Indexed public Discord server listings with invite links and tags",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Searches are performed against Disboard listings; browsing does not interact with target users directly.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/discord/disboard.md"
-  },
-  {
     "id": "disboard-org",
     "name": "Disboard (Discord Server Directory)",
     "description": "Use when you have a keyword, community name, or `username` and want to find public Discord servers around it — returns listed servers with invite links, member counts, tags, and descriptions.",
@@ -171060,37 +171090,57 @@
   {
     "id": "easyvin",
     "name": "EasyVIN",
-    "description": "OSINT tool: EasyVIN.",
+    "description": "Use when you have a Russian vehicle `vin` or `vehicle-plate` and want its history — returns registration/accident history and cross-referenced VIN↔plate details via a paid Telegram bot.",
     "url": "https://t.me/EasyVINbot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Pulling a Russian car's history from its VIN or state registration plate.",
+    "selectorsIn": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Pay-per-check — no usable free tier. Each vehicle report costs ~99 ₽ (Russian rubles), paid inside Telegram. A companion channel (@EasyVINinfo) posts discounts/promos.",
+    "opsec": "passive",
+    "opsecNote": "You query a vehicle identifier, not a person, so nothing reaches a subject. But the query and payment go to an unknown third-party Russian operator via Telegram — use a sock-puppet Telegram account and privacy-preserving payment; assume the operator logs your queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A third-party Russian Telegram bot resells vehicle-history data of uncertain provenance. Confirmed active and paid, but neither the data source nor accuracy is independently verifiable — corroborate anything important.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ru"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vin-decoder"
+    ],
+    "aliases": [
+      "Изи ВИН",
+      "EasyVINbot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "vin",
+      "vehicle",
+      "russia"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/easyvin.md"
   },
   {
@@ -176483,43 +176533,59 @@
   {
     "id": "telegram-phone-number-checker-github-com",
     "name": "telegram phone number checker (github.com)",
-    "description": "OSINT tool: telegram phone number checker (github.com).",
+    "description": "Use when you have a `phone` number and want to know if it's on Telegram — returns whether an account exists plus the linked `username`, display name and profile (`social-profile`) via Telegram's own API.",
     "url": "https://github.com/bellingcat/telegram-phone-number-checker",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether phone numbers are registered on Telegram and pulling the linked account details.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "phone"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open-source (Python). Requires your own Telegram API credentials (api_id/api_hash from my.telegram.org) and a logged-in Telegram account to run.",
+    "opsec": "active",
+    "opsecNote": "The script adds the target's number to your account's contacts to resolve it via Telegram's API — an ACTIVE operation. It uses YOUR Telegram identity; abusive volume risks your account being flagged/banned, and the added contact can leave traces. Use a dedicated sock-puppet Telegram account and number, keep volume low, and clean up added contacts.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Published by Bellingcat, a leading OSINT organisation. It queries Telegram's official API, so a positive result is authoritative; the technique is documented and maintained openly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [
+      "telegram-org",
+      "holehe-2"
+    ],
+    "aliases": [
+      "bellingcat telegram-phone-number-checker",
+      "Telegram phone checker"
+    ],
     "tags": [
       "telegram",
-      "Telegram"
+      "Telegram",
+      "phone",
+      "account-existence"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-phone-number-checker-github-com.md"
   },
   {
@@ -261442,46 +261508,57 @@
   {
     "id": "rcvs-org-uk",
     "name": "rcvs.org.uk",
-    "description": "OSINT tool: rcvs.org.uk.",
+    "description": "Use when you have a `name` and want to confirm/locate a UK veterinary surgeon or nurse — returns registration status, qualifications, and the practice `address`/`employer-org` from the RCVS official register.",
     "url": "https://findavet.rcvs.org.uk/home/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a UK vet/veterinary nurse's registration and finding their practice location.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official register search. No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You search a public professional register; the registrant is not contacted or notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Royal College of Veterinary Surgeons is the statutory UK regulator of vets and vet nurses; its \"Find a Vet\" register is the authoritative source for who is legally registered to practise.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gmc-org-uk",
+      "hcpc-org-uk"
+    ],
+    "aliases": [
+      "RCVS Find a Vet",
+      "Royal College of Veterinary Surgeons register"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "veterinary",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rcvs-org-uk.md"
   },
   {
@@ -265247,35 +265324,59 @@
   {
     "id": "sex-offender-registry-websites",
     "name": "Sex Offender Registry Websites",
-    "description": "OSINT tool: Sex Offender Registry Websites.",
+    "description": "Use when you have a `name` or `geolocation` and want to check US sex-offender registries — returns registrant `name`, `address`, `image`, `physical-description` and `dob` via the national/state public registries.",
     "url": "https://www.fbi.gov/scams-and-safety/sex-offender-registry",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Locating a registered sex offender by name or area across US national and state registries.",
+    "selectorsIn": [
+      "name",
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "image",
+      "physical-description",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public-safety registries. The FBI page is a gateway to NSOPW (the National Sex Offender Public Website) and individual state registries; all are free, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search public safety registries; nothing is disclosed to the subject. Passive. Be aware registry data is legally restricted to lawful purposes — do not use it to harass, and don't rely on it for anything other than what the registry authorizes.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The FBI gateway links to NSOPW (a US Department of Justice service) and official state registries — authoritative government data. Currency varies by state, and registries only list convicted, registered offenders.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "nsopw"
+    ],
+    "aliases": [
+      "NSOPW",
+      "National Sex Offender Public Website",
+      "state sex offender registry"
+    ],
+    "tags": [
+      "court",
+      "criminal-records",
+      "registry"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sex-offender-registry-websites.md"
   },
   {
@@ -271202,44 +271303,56 @@
   {
     "id": "us-tax-court",
     "name": "US Tax Court",
-    "description": "OSINT tool: US Tax Court.",
+    "description": "Use when you have a `name` and want to find their US Tax Court litigation — returns matching cases with docket numbers (`document-id`), party names and the petitioner's city/state (`address`).",
     "url": "https://www.ustaxcourt.gov/ustcdockinq/default.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether an individual or business has litigated against the IRS in US Tax Court.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free federal-court docket search. No account for basic docket inquiry; some case documents require registration/eAccess and may be restricted.",
+    "opsec": "passive",
+    "opsecNote": "You search a public federal court index; nothing is disclosed to the subject. Fully passive. Standard web hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official United States Tax Court docket system — authoritative primary court records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pacer",
+      "courtlistener"
+    ],
+    "aliases": [
+      "USTC docket inquiry",
+      "ustaxcourt.gov"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "federal-records",
+      "litigation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/us-tax-court.md"
   },
   {
