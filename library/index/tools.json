@@ -104981,13 +104981,13 @@
   {
     "id": "h8mail-trace-labs-fork",
     "name": "h8mail (Trace Labs fork)",
-    "description": "Email OSINT and breach-hunting tool that searches leaked credentials and breach databases for an email address.",
+    "description": "Use when you have an `email` and want breach/leak exposure — searches breach databases and leaked-credential sources — returns linked `email`s, `username`s, passwords, and `associate` accounts.",
     "url": "https://github.com/tracelabs/h8mail",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "Finding breached passwords, accounts and exposures tied to an email address.",
+    "bestFor": "Finding breach exposures, leaked credentials, and linked accounts tied to an email address.",
     "selectorsIn": [
       "email"
     ],
@@ -104996,15 +104996,16 @@
       "username",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The tool is free (pip install h8mail) and runs against local breach dump files at no cost; premium sources (HIBP, Snusbase, Leak-Lookup, Hunter.io, etc.) require your own paid API keys.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying local breach files is entirely passive and offline — nothing touches the subject. If you enable online API integrations, you disclose the target email to those third-party services (and consume your keyed quota); choose integrations knowingly. Handle any recovered credentials ethically and legally — never attempt to log in as the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Trace Labs fork of khast3x/h8mail.",
+    "trustNote": "Trace Labs fork of the well-known khast3x/h8mail; Trace Labs is a reputable nonprofit focused on OSINT for missing persons.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -105024,7 +105025,7 @@
       "tracelabs"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/h8mail-trace-labs-fork.md"
   },
@@ -159026,44 +159027,48 @@
   {
     "id": "tineye-com",
     "name": "tineye.com",
-    "description": "OSINT tool: tineye.com.",
+    "description": "Use when you have an `image` and want to find where else it appears online and its earliest/other copies — returns matching pages (`social-profile`/source links) via reverse image search.",
     "url": "https://www.tineye.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Exact/edited-copy reverse image search — tracing where an image appears and finding its oldest occurrence.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web reverse-image search with generous limits; bulk/commercial use and the TinEye API are paid.",
+    "opsec": "passive",
+    "opsecNote": "Uploading an image to TinEye sends it to a third-party server, but the search targets the wider web, not the subject, who is not notified. For sensitive images, prefer searching by URL over uploading, and use a clean session. TinEye matches the image itself — it does no face recognition, so it won't match a different photo of the same person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established, reputable reverse-image-search company (Idée Inc.); strong at exact and modified-copy matching with a first-seen date.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TinEye",
+      "tineye.com"
+    ],
     "tags": [
       "reverseimagesearching",
       "Reverse Image Searching"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/tineye-com.md"
   },
   {
@@ -170925,41 +170930,54 @@
   {
     "id": "email2whatsapp",
     "name": "Email2WhatsApp",
-    "description": "Email-to-WhatsApp account correlation during profiling",
+    "description": "Use when you have an `email` and want to derive the linked WhatsApp `phone` number — exploits partial-number leaks in password-recovery flows — returns candidate `phone`s, WhatsApp `social-profile`s, and `image`s.",
     "url": "https://github.com/dsonbaker/email2whatsapp",
     "category": "messaging",
     "path": [
       "messaging",
       "whatsapp"
     ],
-    "bestFor": "Email-to-WhatsApp account correlation during profiling",
-    "input": "Email address targets",
-    "output": "Potential linked WhatsApp account indicators and correlation results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Recovering a target's WhatsApp phone number (and photo) starting from just an email address.",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "phone",
+      "social-profile",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Primarily performs correlation lookups without messaging target accounts directly.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Go). `go install github.com/dsonbaker/email2whatsapp@latest`. No paid tiers.",
+    "opsec": "active",
+    "opsecNote": "This is intrusive. It probes third-party sites' password-recovery endpoints (PayPal, Mercado Livre, Microsoft, Uber, etc.) for leaked digits and then connects to WhatsApp to validate candidate numbers — actions those services and WhatsApp may log or rate-limit, and which can leave a trace. Run behind a VPN and a sock-puppet WhatsApp account/number; understand the legal/ToS implications before use.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source OSINT tool; the technique is clever but noisy and dependent on target services continuing to leak partial digits, so it breaks as they patch.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "email2whatsapp",
+      "dsonbaker/email2whatsapp"
+    ],
+    "tags": [
+      "whatsapp",
+      "email",
+      "phone"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/whatsapp/email2whatsapp.md"
   },
   {
@@ -211338,41 +211356,50 @@
   {
     "id": "registry-finder",
     "name": "Registry Finder",
-    "description": "Cross-retailer gift registry search",
-    "url": "https://registryfinder.com:443/",
+    "description": "Use when you have a `name` and want to find their gift registries (wedding/baby) across major US retailers — returns registry links revealing `associate` (partner/family), event dates, and `address` (event/city) hints.",
+    "url": "https://registryfinder.com/",
     "category": "people-search",
     "path": [
       "people-search",
       "registries"
     ],
-    "bestFor": "Cross-retailer gift registry search",
-    "input": "Registrant first and last name",
-    "output": "Registry links across multiple retailers",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Locating a person's wedding/baby gift registries to surface partner names, dates, and location clues.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "name",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search; no account required (revenue comes from retailer affiliate links).",
     "opsec": "passive",
-    "opsecNote": "No registration required; revenue from affiliate commissions.",
+    "opsecNote": "You query a registry aggregator, not the subject, and no notice is sent to them. Viewing a registry does not alert the registrant. Safe to run from a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party aggregator that federates searches to Amazon, Target, and other retailers; results depend on those retailers' registry search and are only as current as they are.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "RegistryFinder.com"
+    ],
+    "tags": [
+      "registries",
+      "people-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/registries/registry-finder.md"
   },
   {
@@ -218217,49 +218244,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/phone/open-cnam.md"
-  },
-  {
-    "id": "opsimathy",
-    "name": "Opsimathy",
-    "description": "OSINT tool: Opsimathy.",
-    "url": "https://www.opsimathy.co.uk/phone-format-search-tool/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "searchingphonenumbers",
-      "Searching Phone Numbers"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/opsimathy.md"
   },
   {
     "id": "osint-forensics-mobile",
@@ -241045,46 +241029,51 @@
   {
     "id": "gov-uk-5",
     "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "description": "Use when you have a `name` of someone who worked in UK schools and want teacher-misconduct/prohibition records — returns the person's `name`, the `employer-org` (school), and a case `document-id`/outcome.",
     "url": "https://www.gov.uk/guidance/teacher-misconduct-attend-a-professional-conduct-panel-hearing-or-meeting",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a named individual has a UK teacher-misconduct panel outcome or prohibition order.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free UK government guidance and published panel-outcome decisions; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Reading published government misconduct decisions is passive and does not notify the subject. These records concern professional conduct findings — handle the sensitive personal information they contain responsibly and lawfully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official UK Government (gov.uk) / Teaching Regulation Agency material; published misconduct outcomes and prohibition data are authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Teacher misconduct panel outcomes",
+      "Teaching Regulation Agency",
+      "TRA prohibition"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-5.md"
   },
   {
@@ -245518,46 +245507,53 @@
   {
     "id": "ipo-gov-uk-2",
     "name": "ipo.gov.uk",
-    "description": "OSINT tool: ipo.gov.uk.",
+    "description": "Use when you have a `name` or `employer-org` and want UK trademark filings tied to them — returns the owner/applicant `name`, `address`, and `employer-org` on the mark.",
     "url": "https://trademarks.ipo.gov.uk/ipo-tmtext",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding UK trademarks by owner/applicant to link a person or brand to a registered mark and its filing address.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search on the UK Intellectual Property Office site; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Searching a government trademark register is passive and does not notify the owner. No login is needed; queries are ordinary web requests.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the UK Intellectual Property Office (a government agency); filing data — including applicant name and address — is authoritative public record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UK IPO trademark search",
+      "IPO tmtext"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "trademark"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ipo-gov-uk-2.md"
   },
   {
@@ -352993,37 +352989,51 @@
   {
     "id": "watools",
     "name": "WATools",
-    "description": "OSINT tool: WATools.",
+    "description": "Use when you have a `phone` number and want to confirm it's on WhatsApp, grab its profile photo, and (via WA Watcher) track online activity — returns a `social-profile`, `image`, and online-pattern signals.",
     "url": "https://watools.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Checking whether a number is on WhatsApp, pulling its profile picture, and monitoring online/last-seen patterns.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic checks (number-on-WhatsApp, profile picture, chat links) are free; the WA Watcher online-tracking/analytics product is a paid subscription (3-day trial).",
+    "opsec": "active",
+    "opsecNote": "Checking a number and downloading its picture is relatively passive, but WA Watcher's online-status tracking is an actively intrusive monitoring capability with clear ethical/legal limits — persistent surveillance of a person's online times can be unlawful without authorization. Use only within a lawful, authorized investigation; never for stalking. Any WhatsApp interaction should come from a sock-puppet number.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial WhatsApp-tooling service; the monitoring features are privacy-invasive and its data (online times) is inferential, not authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "WA Watcher",
+      "watools.io"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "real-time-search-social-media-search-and-general-social-media-tools",
+      "whatsapp"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/watools.md"
   },
   {
