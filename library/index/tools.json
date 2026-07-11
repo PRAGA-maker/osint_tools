@@ -107159,40 +107159,49 @@
   {
     "id": "mailfoguess",
     "name": "Mailfoguess",
-    "description": "tool create a lot of possible local-part from personal information, add domain to all local-part respecting the conditions of creation of mail of these domains and verify these mails",
+    "description": "Use when you have a person's `name`/`username` and want to derive and test their likely email addresses — generates permuted local-parts, applies per-provider rules, and verifies which exist.",
     "url": "https://github.com/WildSiphon/Mailfoguess",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Turning first/middle/last name + username + a number into a ranked set of candidate emails, then checking which are real.",
     "selectorsIn": [
-      "email"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source Python CLI; no account or key. Optional verification uses the holehe library, also free.",
+    "opsec": "active",
+    "opsecNote": "Generation itself is offline/passive, but the optional verification step probes real provider/site endpoints for each candidate address — that traffic touches those services with the guessed addresses. Run verification behind a VPN and pace it; rate limits cause false negatives.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community open-source tool (WildSiphon); the generation logic is transparent and auditable, but verification accuracy is bounded by provider anti-abuse behaviour.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WildSiphon Mailfoguess"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "email-permutation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/mailfoguess.md"
   },
@@ -162881,38 +162890,51 @@
   },
   {
     "id": "zapmeta",
-    "name": "Zapmeta",
-    "description": "OSINT tool: Zapmeta.",
+    "name": "ZapMeta",
+    "description": "Use when you have a `name` or `username` and want a single sweep across several search engines at once — returns aggregated web results and social-profile links from Bing, Yahoo, Wikipedia and more.",
     "url": "http://www.zapmeta.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-box metasearch that pulls results from multiple engines simultaneously, surfacing hits a single engine buries.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported metasearch; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Queries go to ZapMeta, which relays them to the underlying engines — the subject is not contacted. As with any hosted search, ZapMeta sees your query terms, so avoid pasting selectors you must keep private, and use a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "A long-running third-party metasearch aggregator; it re-serves other engines' results, so quality depends on those sources and ranking is opaque.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "zapmeta.com",
+      "Zapmeta"
+    ],
     "tags": [
-      "visual-search-and-clustering-search-engines"
+      "visual-search-and-clustering-search-engines",
+      "metasearch"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/zapmeta.md"
   },
   {
@@ -175442,44 +175464,50 @@
   },
   {
     "id": "signal-org",
-    "name": "signal.org",
-    "description": "OSINT tool: signal.org.",
+    "name": "Signal Transparency (\"Big Brother\")",
+    "description": "Use when your subject uses Signal and you need to know what data is recoverable — the page documents that Signal retains only registration date and last-connection date, nothing more.",
     "url": "https://signal.org/bigbrother/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Calibrating expectations about Signal — confirming that message/contact/metadata content is not obtainable, and that only registration + last-seen dates exist even under legal process.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "phone"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public transparency page from Signal; no account needed to read it. (Confirming a number is registered on Signal requires the free Signal app.)",
+    "opsec": "passive",
+    "opsecNote": "Reading the transparency page is fully passive. If you separately use the Signal app to test whether a number is registered, that check is done from your app install — use a sock-puppet account on a burner number and never initiate a message, which would notify the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party page published by the Signal Foundation, reproducing the actual subpoenas received and Signal's responses; authoritative on what data Signal does and does not hold.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Signal Big Brother",
+      "Signal government requests"
+    ],
     "tags": [
       "messengerapps",
-      "Messenger Apps"
+      "Messenger Apps",
+      "transparency"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/signal-org.md"
   },
   {
@@ -218058,36 +218086,51 @@
   },
   {
     "id": "gsm-arena",
-    "name": "GSM Arena",
-    "description": "OSINT tool: GSM Arena.",
+    "name": "GSMArena",
+    "description": "Use when you have a phone model name, a partial description, or EXIF `device-id` and want to confirm the exact handset and its specs — returns device identification and technical details.",
     "url": "https://www.gsmarena.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Identifying and verifying a specific phone model (dimensions, camera, release date) from a model name, spec fragment, or photo metadata.",
+    "selectorsIn": [
+      "device-id",
+      "metadata-exif"
+    ],
+    "selectorsOut": [
+      "device-id",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The specifications database, phone finder and comparisons are entirely free; the site is ad-supported with no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing GSMArena is passive and unrelated to any subject — you are looking up device facts, not querying a person. No sock puppet needed; standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "GSMArena is the long-established, industry-standard reference for mobile-phone specifications; its device data is accurate and widely cited.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "GSM Arena",
+      "gsmarena.com"
+    ],
+    "tags": [
+      "device-identification",
+      "phone-specs"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/gsm-arena.md"
   },
   {
@@ -221389,45 +221432,51 @@
   },
   {
     "id": "spoofbox-com",
-    "name": "spoofbox.com",
-    "description": "OSINT tool: spoofbox.com.",
+    "name": "Spoofbox Trash Mobile",
+    "description": "Use when you need a disposable phone number to receive an SMS verification code while standing up a sock-puppet account — returns a temporary public number and its incoming texts.",
     "url": "https://www.spoofbox.com/en/tool/trash-mobile",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [
+    "bestFor": "Getting a throwaway number to receive a one-time SMS code so you can create a research/sock-puppet account without exposing a real number.",
+    "selectorsIn": [],
+    "selectorsOut": [
       "phone"
     ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The public \"trash mobile\" receive-SMS numbers are free. Spoofbox's other products (spoof calls/SMS) are paid and are a separate, sensitive category — see gotchas.",
+    "opsec": "active",
+    "opsecNote": "This is sock-puppet INFRASTRUCTURE, not a lookup on a target. Every incoming message to a trash number is PUBLIC — anyone can read codes sent to it, so never use one for an account you care about, and never route a target's real traffic through it. Spoofbox's caller-ID/SMS spoofing features can be unlawful (fraud/harassment) in many jurisdictions — do not use them.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "A commercial spoofing/disposable-number site of unverified operator; treat its infrastructure as untrusted (public, logged) and use only for throwaway, non-sensitive verifications.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "trash mobile",
+      "spoofbox"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "sock-puppet",
+      "disposable-number"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/spoofbox-com.md"
   },
   {
@@ -222311,37 +222360,53 @@
   {
     "id": "usphonebook",
     "name": "USPhoneBook",
-    "description": "OSINT tool: USPhoneBook.",
+    "description": "Use when you have a US `phone` number (or a `name`) and want to identify the owner — returns the name, address, relatives/associates and phone type behind the number.",
     "url": "https://www.usphonebook.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Free reverse-phone lookup that resolves a US number to a name, current/past addresses and named relatives.",
+    "selectorsIn": [
+      "phone",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "associate",
+      "phone"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic reverse-phone and name lookups return a name/location for free; fuller reports (complete address history, all relatives, background details) push you toward paid data-broker tiers.",
+    "opsec": "passive",
+    "opsecNote": "Querying is passive — the subject is not notified. The site logs searcher IP/queries and runs ad retargeting; use a clean browser/VPN and never enter your own details into an \"unlock report\" upsell.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A US data-broker aggregator; results are compiled from public records and third-party data of variable freshness and can conflate same-name people — corroborate before relying on any field.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "USPhoneBook.com",
+      "US Phone Book"
+    ],
     "tags": [
-      "phone-number-research"
+      "phone-number-research",
+      "reverse-phone",
+      "data-broker"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/usphonebook.md"
   },
   {
@@ -322670,41 +322735,52 @@
   },
   {
     "id": "facebook-latest-comments-scraper",
-    "name": "Facebook Latest Comments Scraper",
-    "description": "Enter link to the #Facebook post and get comments comments to it (text, timestamp and other info).",
+    "name": "Facebook Latest Comments Scraper (Apify)",
+    "description": "Use when you have a public Facebook post URL and want the full comment thread as structured data — returns commenter names/usernames, text and timestamps for associate-network mapping.",
     "url": "https://console.apify.com/actors/w8bYllu7Jq18uWz99",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-extracting the comments under a public Facebook post into JSON/CSV — the commenters, their handles, and timing.",
     "selectorsIn": [
-      "face",
-      "image"
+      "social-profile"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "associate",
+      "name",
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "An Apify actor billed per result / compute (typical Apify pay-as-you-go); the platform's free monthly credit covers small runs, but large scrapes cost money and require an Apify account.",
+    "opsec": "passive",
+    "opsecNote": "The actor runs on Apify's cloud infrastructure, not your machine, so the scrape originates from Apify's IPs and leaves no viewer trace tied to you on the target post. Apify logs your jobs/inputs; use a dedicated account and don't submit anything you must keep private.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A third-party Apify Store actor, not a first-party Facebook feature; reliability depends on the actor author's maintenance and Facebook's anti-scraping defences, which change often.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Apify Facebook comments scraper"
+    ],
     "tags": [
       "Social Media",
-      "Facebook"
+      "Facebook",
+      "scraper"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-latest-comments-scraper.md"
   },
@@ -330895,45 +330971,53 @@
   },
   {
     "id": "inflact-com-5",
-    "name": "inflact.com",
-    "description": "OSINT tool: inflact.com.",
+    "name": "Inflact Instagram Downloader",
+    "description": "Use when you have a public Instagram post/reel/profile URL and want to download its video/media without logging in — returns downloadable video and image files for offline analysis.",
     "url": "https://inflact.com/downloader/instagram/video/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "No-login downloading of public Instagram videos/reels/photos to preserve media before it disappears.",
     "selectorsIn": [
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The standalone Instagram downloader and profile-viewer web tools are free with no account; Inflact's broader growth/automation suite is paid, but you don't need it for the downloader.",
+    "opsec": "passive",
+    "opsecNote": "Inflact's servers fetch the public media, so your IP does not touch the target's Instagram and no viewer trace is left on the subject. Inflact does log the URLs/handles you submit — use a clean session and avoid pasting anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Inflact (formerly Ingramer) is an established commercial Instagram-tools vendor; the free downloader is legitimate but relies on scraping public data that Instagram periodically blocks.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Ingramer",
+      "inflact.com",
+      "Inflact Instagram video downloader"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inflact-com-5.md"
   },
   {
@@ -339998,45 +340082,52 @@
   },
   {
     "id": "publer-io",
-    "name": "publer.io",
-    "description": "OSINT tool: publer.io.",
+    "name": "Publer Free Tools",
+    "description": "Use when you have an Instagram `username`/post URL and want to download public media or gauge audience authenticity without logging in — returns downloadable images/videos and follower-credibility signals.",
     "url": "https://publer.io/tools/instagram-reel-downloader",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "No-login downloading of public Instagram reels/photos/stories and a quick fake-follower/credibility check on an account.",
     "selectorsIn": [
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The standalone web tools (downloaders, fake-follower checker) are free and require no account; Publer's full social-media-management suite is a paid product but you don't need it for these utilities.",
+    "opsec": "passive",
+    "opsecNote": "Publer's servers fetch the public content — your IP does not touch the target's Instagram directly, so it is passive and leaves no viewer trace on the subject. Publer does see the URLs/handles you submit; use a clean session and don't paste anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Publer is an established commercial social-media-management company; its free tools are legitimate, though they scrape public data whose availability changes with Instagram's defences.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "publer.io",
+      "Publer Instagram downloader"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/publer-io.md"
   },
   {
@@ -350277,37 +350368,52 @@
   {
     "id": "toutatis",
     "name": "Toutatis",
-    "description": "OSINT tool: Toutatis.",
+    "description": "Use when you have an Instagram `username` and want to pull the account's hidden contact data — returns obfuscated email/phone, the numeric user ID and linked profile details.",
     "url": "https://github.com/megadose/toutatis",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting an Instagram account's partially-hidden email/phone, user ID and profile metadata from just the handle.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "phone",
+      "name",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free, open-source (GPL) Python tool; no payment. It does require a valid Instagram session cookie, which means a (free) Instagram account.",
+    "opsec": "active",
+    "opsecNote": "Toutatis authenticates with an Instagram sessionid cookie, so every query is made AS that logged-in account — use a dedicated sock-puppet Instagram account on a burner, never a real or investigator account. Heavy use can get the puppet flagged or banned.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known, widely-used tool by researcher megadose (Palenath); open-source and auditable, but it depends on Instagram's private endpoints, which change and can break it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "megadose toutatis"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "account-enumeration"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/toutatis.md"
   },
   {
