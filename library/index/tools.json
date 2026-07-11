@@ -202614,37 +202614,58 @@
   {
     "id": "beenverified",
     "name": "BeenVerified",
-    "description": "OSINT tool: BeenVerified.",
+    "description": "Use when you have a US `name`, `phone`, `email`, or `address` and want a consolidated background report — returns addresses, phones, relatives, and age/DOB (full report paywalled).",
     "url": "https://www.backgroundchecks.com/solutions/beenverified",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "US people-search reports tying a person to address history, phones, emails, relatives, and possible records.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Search and a teaser preview are free, but viewing a full report requires a paid subscription (recurring). Direct site is beenverified.com. Budget for the paywall for complete data.",
+    "opsec": "passive",
+    "opsecNote": "BeenVerified is a data-broker aggregator; running a search does not notify the subject. It is FCRA-restricted — not for employment, tenant, or credit screening. Use a sock-puppet account and payment method if attribution matters; the broker logs your searches.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A mainstream US people-search broker; broad coverage but records blend current and dated data, so corroboration is essential.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "BeenVerified",
+      "beenverified.com"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "data-broker",
+      "background-report"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/beenverified.md"
   },
   {
@@ -215148,45 +215169,50 @@
   {
     "id": "area-code-decoder-united-states",
     "name": "Area Code Decoder (United States)",
-    "description": "Database search by telephone area code in the United States",
+    "description": "Use when you have a US `phone` (or just its area code) and want the geographic region it maps to — returns the city/state/timezone the NANP area code covers.",
     "url": "http://decoder.americom.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Translating a US/NANP area code into its geographic region, timezone, and coverage.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "phone",
-      "name"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reference lookup; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a static reference database of area-code-to-region mappings — you look up a code, nothing is sent to the number or its owner. Fully passive; no notification to anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing NANP area-code reference; the geographic mapping is accurate for the code's assigned region, but says nothing about where the current holder actually is (mobiles keep their number when they move).",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Area Code Decoder",
+      "decoder.americom.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "telephone-numbers"
+      "telephone-numbers",
+      "area-code"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/phone/area-code-decoder-united-states.md"
   },
@@ -218414,44 +218440,54 @@
   },
   {
     "id": "open-cnam",
-    "name": "Open Cnam",
-    "description": "OSINT tool: Open Cnam.",
+    "name": "OpenCNAM (Neustar Caller Name)",
+    "description": "Use when you have a US `phone` and want the registered caller-ID name (CNAM) for the line — returns the CNAM string (a name), now via Neustar's enterprise API.",
     "url": "https://www.opencnam.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a US phone number to its registered CNAM (caller-ID name) label via API.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "The old self-serve OpenCNAM free/hobbyist tier is gone — opencnam.com now redirects to Neustar's enterprise \"Caller Name Services.\" Access today generally requires a business account/contract and an API key; there is no easy free individual tier. Author-listed for completeness and to warn that the free tool many OSINT lists reference no longer exists.",
+    "opsec": "passive",
+    "opsecNote": "A CNAM lookup is a passive API query against telecom caller-name data; the subject is never contacted or notified. The exposure is to the API provider (Neustar), which logs the query and the number under your account/API key.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "CNAM data itself is telecom-grade, but it reflects the label the line's carrier registered (often a business or the account holder's name, sometimes blank or generic) — not a verified identity.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "us"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "OpenCNAM",
+      "opencnam.com",
+      "Neustar Caller Name Services"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "cnam",
+      "caller-id"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/open-cnam.md"
   },
   {
@@ -244021,46 +244057,52 @@
   {
     "id": "immo-data-fr",
     "name": "immo-data.fr",
-    "description": "OSINT tool: immo-data.fr.",
+    "description": "Use when you have a French `address` and want the property's recorded sale prices and transaction history — returns geolocation and price/date records from official DVF data.",
     "url": "https://www.immo-data.fr/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping French property sale transactions (price, date, size) by address or area from open DVF land-value data.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free interactive map of DVF transaction data; some advanced/detailed features may require a paid tier, but the core price/history map is free. No account needed for basic use.",
+    "opsec": "passive",
+    "opsecNote": "This visualizes France's open DVF (Demandes de valeurs foncières) dataset — official records of property sales — on a map. It does not name buyers/sellers and does not contact anyone; browsing is fully passive. The subject is never notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built on the French government's official DVF land-transaction dataset; the sale prices/dates are authoritative, though the data omits owner identities.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "fr"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "immo-data.fr",
+      "DVF map"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "france",
+      "property-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/immo-data-fr.md"
   },
   {
@@ -249155,47 +249197,55 @@
   },
   {
     "id": "londonstockexchange-com",
-    "name": "londonstockexchange.com",
-    "description": "OSINT tool: londonstockexchange.com.",
-    "url": "https://www.londonstockexchange.com/home/homepage.htm",
+    "name": "London Stock Exchange",
+    "description": "Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns company records, addresses, and named directors.",
+    "url": "https://www.londonstockexchange.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Researching UK/internationally-listed companies and their regulatory announcements (RNS) and leadership.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Company pages, prices, and RNS regulatory announcements are free to browse. Deep historical data feeds and some professional tools are paid, but the public issuer/RNS pages need no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the exchange's public company and announcement pages is passive and does not notify anyone. It is corporate disclosure data, but announcements and filings name real individuals (directors, major shareholders) — handle those personal pivots with normal care.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official exchange; issuer data and RNS announcements are authoritative regulatory disclosures, not third-party summaries.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "London Stock Exchange",
+      "LSE",
+      "londonstockexchange.com"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/londonstockexchange-com.md"
   },
   {
@@ -326795,43 +326845,52 @@
   {
     "id": "gravatar-email-checker",
     "name": "Gravatar Email Checker",
-    "description": "Check if an email address has been used to comment on blogs and whether there is a profile image attached.",
+    "description": "Use when you have an `email` and want to know if it has a Gravatar profile/avatar — returns a linked avatar image, public profile, and reused-identity leads.",
     "url": "https://en.gravatar.com/site/check/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Turning an email into a face (avatar) and a public Gravatar profile that often links other accounts.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email",
-      "social-profile"
+      "image",
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account needed to check an address. Gravatar is operated by Automattic (WordPress.com).",
+    "opsec": "passive",
+    "opsecNote": "Gravatar is keyed on the MD5/SHA-256 hash of the lowercased email; checking is a passive read against Gravatar's public API and never contacts the subject. Nothing is sent to the email owner. Standard sock-puppet browsing is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Automattic service; a returned avatar/profile is authentic to the address, though the profile fields are self-entered by the user.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Gravatar",
+      "Gravatar Email Checker"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "other-platforms"
+      "other-platforms",
+      "email-to-image"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/gravatar-email-checker.md"
   },
   {
@@ -331820,35 +331879,54 @@
   {
     "id": "linkedin-email-reverse-lookup",
     "name": "LinkedIn Email Reverse Lookup",
-    "description": "OSINT tool: LinkedIn Email Reverse Lookup.",
+    "description": "Use when you have an `email` and want the matching LinkedIn profile — returns the person's name, profile ID/username, and photo via a logged-in session.",
     "url": "https://osint.support/chrome-extensions/2019/09/03/linkedin-email-reverse-lookup.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reversing an email address to a specific LinkedIn profile using LinkedIn's own contact-matching.",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "The referenced Chrome extension is free but old (2019) and may be gone from the store; the underlying technique (query LinkedIn's contact-matching API with your session) still works via current extensions/scripts. Some tools that wrap this are paid.",
+    "opsec": "active",
+    "opsecNote": "The lookup runs through YOUR active, logged-in LinkedIn session, so LinkedIn attributes the queries to that account and can rate-limit or flag it — always use a well-aged sock-puppet LinkedIn account, never your real one. The target is not directly notified, but bulk querying is exactly what LinkedIn's anti-abuse watches for.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community technique/extension, not an official feature; the specific 2019 extension is obfuscated (may trip AV) and dated, so treat it as a pattern to reproduce with current tooling.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "LinkedIn Email Reverse Lookup",
+      "LinkedIn email to profile"
+    ],
+    "tags": [
+      "linkedin",
+      "email-to-account",
+      "chrome-extension"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/linkedin-email-reverse-lookup.md"
   },
   {
@@ -340712,45 +340790,54 @@
   },
   {
     "id": "rumble-com",
-    "name": "rumble.com",
-    "description": "OSINT tool: rumble.com.",
+    "name": "Rumble",
+    "description": "Use when you have a `username`/channel name or `name` and want to find and analyze a subject's Rumble video presence — returns the channel profile, videos, and activity.",
     "url": "https://rumble.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and reviewing a subject's channel and uploads on the Rumble video platform.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search public channels and videos. An account is only needed to comment, subscribe, or upload.",
+    "opsec": "passive",
+    "opsecNote": "Browsing and searching public channels/videos is passive and does not notify the subject. Watching a video, subscribing, or commenting from an account is visible — do those only from a sock-puppet account. Rumble logs viewer IPs like any site; use a clean browser/IP for sensitive review.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, major video platform; channel content is user-generated and unverified, but the platform itself is the authoritative host of the account's uploads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Rumble",
+      "rumble.com"
+    ],
     "tags": [
       "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
+      "Right Wing Social Media Sites",
+      "video-platform"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/rumble-com.md"
   },
   {
