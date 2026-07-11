@@ -213099,41 +213099,55 @@
   {
     "id": "snitch-name",
     "name": "Snitch.name",
-    "description": "Cross-platform social media profile discovery",
+    "description": "Use when you have a `name` and want candidate social-media profiles across many platforms in one pass — returns social-profile leads (site is degraded/expired-cert).",
     "url": "https://snitch.name/",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Cross-platform social media profile discovery",
-    "input": "First and last name",
-    "output": "Social media profiles across ~40 platforms",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-shot name-to-social-profiles discovery across roughly 40 platforms — when it is up.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
     "status": "degraded",
     "pricing": "free",
+    "costNote": "Free with no account. Reliability is the issue, not cost — the site has an expired SSL certificate and intermittent availability.",
     "opsec": "passive",
-    "opsecNote": "SSL certificate expired; browsers will show security warnings.",
+    "opsecNote": "The service queries platforms/search engines on its side, so the target is not directly contacted. Because the SSL cert is expired, your browser will warn and the connection may be unencrypted/tampered — avoid entering anything beyond the target name, use a sock-puppet browser/VPN, and don't trust the transport.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community name-search tool of uncertain upkeep (expired certificate, intermittent uptime); results are unverified leads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "inteltechniques-people-search-tools",
+      "social-searcher"
+    ],
+    "aliases": [
+      "Snitch",
+      "snitch.name"
+    ],
+    "tags": [
+      "people-search",
+      "social-media",
+      "username-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/snitch-name.md"
   },
   {
@@ -239355,51 +239369,6 @@
     "_file": "library/tools/public-records/funeral-notices-death-notices-and-obituaries-australia.md"
   },
   {
-    "id": "funeralguide-co-uk",
-    "name": "funeralguide.co.uk",
-    "description": "OSINT tool: funeralguide.co.uk.",
-    "url": "https://www.funeralguide.co.uk/obituaries",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "genealogybdmANDwills",
-      "Genealogy Linked Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/funeralguide-co-uk.md"
-  },
-  {
     "id": "funeralnet",
     "name": "Funeralnet",
     "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
@@ -241091,47 +241060,59 @@
   },
   {
     "id": "gmc-uk-org",
-    "name": "gmc-uk.org",
-    "description": "OSINT tool: gmc-uk.org.",
+    "name": "gmc-uk.org (GMC Medical Register)",
+    "description": "Use when you have a doctor's `name` (or GMC number) and want to verify UK medical registration/licence — returns employer-org context, registration status, and document-id (GMC number).",
     "url": "https://www.gmc-uk.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a doctor is registered and licensed to practise medicine in the UK via the GMC's public medical register (LRMP).",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search of the List of Registered Medical Practitioners (LRMP); no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Official regulator's public register — searching does not notify the doctor and reveals only your IP to the GMC. Fully passive records lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party UK regulator (General Medical Council); the authoritative register of who may practise medicine in the UK.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ifa-org-uk",
+      "myewc-wales-2"
+    ],
+    "aliases": [
+      "GMC",
+      "General Medical Council",
+      "medical register LRMP"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "regulator-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gmc-uk-org.md"
   },
   {
@@ -250296,49 +250277,6 @@
     "_file": "library/tools/public-records/local-north-america.md"
   },
   {
-    "id": "locate-family",
-    "name": "Locate Family",
-    "description": "OSINT tool: Locate Family.",
-    "url": "https://www.locatefamily.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "associate",
-      "dob",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "genealogy",
-      "family"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/locate-family.md"
-  },
-  {
     "id": "londonstockexchange-com",
     "name": "London Stock Exchange",
     "description": "Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns company records, addresses, and named directors.",
@@ -253159,13 +253097,13 @@
   {
     "id": "myplan-ie",
     "name": "myplan.ie",
-    "description": "OSINT tool: myplan.ie.",
+    "description": "Use when you have an Irish property `address`/location and want planning applications there (applicant names, addresses) — returns name, address, and employer-org leads.",
     "url": "https://myplan.ie/national-planning-application-map-viewer/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Ireland's national planning-application map for applications at a location — surfacing applicant names, addresses, and development details from the last ~10 years.",
     "selectorsIn": [
       "name",
       "address",
@@ -253176,29 +253114,41 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official government tool; planning data is public and downloadable with no account.",
+    "opsec": "passive",
+    "opsecNote": "Official government planning portal — searching does not notify anyone and reveals only your IP. Fully passive. Planning records are public by law, but treat any personal details found (applicant home addresses) responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Irish government resource (Department of Housing, Local Government and Heritage) aggregating local-authority planning data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ros-gov-uk-2",
+      "cro-ie-2"
+    ],
+    "aliases": [
+      "MyPlan",
+      "myplan.ie planning map",
+      "national planning application map viewer"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "planning"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/myplan-ie.md"
   },
   {
@@ -352550,7 +352500,7 @@
   {
     "id": "twitonomy",
     "name": "Twitonomy",
-    "description": "Profile-level Twitter analytics and behavior baselining",
+    "description": "Use when you have a Twitter/X `username` and want profile analytics — activity patterns, mentions, top interactions, follower analysis — returns social-profile and associate leads.",
     "url": "https://www.twitonomy.com/",
     "category": "social-networks",
     "path": [
@@ -352559,36 +352509,50 @@
       "analytics",
       "profile"
     ],
-    "bestFor": "Profile-level Twitter analytics and behavior baselining",
-    "input": "Twitter/X username",
-    "output": "Activity timelines, hashtag/topic frequency, and account-level analytics",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Requires third-party platform access and may prompt X/Twitter sign-in for full features.",
+    "bestFor": "Profile-level Twitter/X analytics — posting patterns, most-mentioned/retweeted accounts, and follower/following breakdowns for behavioral baselining.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Free tier with a Twitter/X sign-in for basic analytics; deeper reports/exports are a paid premium plan. Functionality is constrained by X's current API access.",
+    "opsec": "active",
+    "opsecNote": "Requires signing into Twitter/X (OAuth) to run analytics — you authorize Twitonomy against an account, so use a sock-puppet X account, never your real one. Reading a public profile's analytics does not notify the target, but the third-party app authorization is tied to whatever account you log in with.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing third-party Twitter analytics service; results reflect X's API-permitted data, which has shrunk over time — treat coverage as partial and possibly stale.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "x0rz-tweets-analyzer",
+      "social-searcher"
+    ],
+    "aliases": [
+      "Twitonomy",
+      "twitonomy.com"
+    ],
+    "tags": [
+      "twitter",
+      "analytics",
+      "behavioral-profiling"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/profile/twitonomy.md"
   },
   {
