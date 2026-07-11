@@ -211728,48 +211728,57 @@
   {
     "id": "scylla",
     "name": "Scylla",
-    "description": "OSINT tool: Scylla.",
-    "url": "https://github.com/josh0xa/scylla searchyellowdirectory",
+    "description": "Use when you have a `username`, `phone`, or `name` and want an all-in-one recon sweep from a local CLI — returns social profiles, geolocation, and breach hints (but many data sources are stale).",
+    "url": "https://github.com/josh0xA/Scylla",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Running a single local Python CLI that fans a username/phone/name across multiple recon sources at once.",
     "selectorsIn": [
+      "username",
+      "phone",
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
       "social-profile",
-      "dob"
+      "geolocation",
+      "email"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free open-source (Python). Some modules (e.g. Shodan) need your own API key; no paid tier.",
+    "opsec": "passive",
+    "opsecNote": "Runs from your own machine and queries third-party APIs/sites; nothing is sent to the target directly. Because it hits many external services, run it from a VPN and expect some modules to leak your IP to those services. Do not rely on its breach/finance checks for anything sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Open-source tool by Josh Schiavone; explicitly no longer maintained, with many APIs broken — code is inspectable but results are unreliable and partial.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "josh0xA Scylla",
+      "Scylla OSINT"
+    ],
     "tags": [
       "people-search",
       "open-source",
       "cli"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/scylla.md"
   },
   {
@@ -213163,15 +213172,18 @@
   {
     "id": "thatsthem-people-search",
     "name": "ThatsThem People Search",
-    "description": "OSINT tool: ThatsThem People Search.",
+    "description": "Use when you have a `name` (or a phone/email/address to reverse) and want a US person's contact record — returns addresses, phones, emails, associates, and demographic hints, free.",
     "url": "https://thatsthem.com/people-search",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Free US people-search that reverses a name, phone, email, or address into contact and household details.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "email",
+      "address"
     ],
     "selectorsOut": [
       "address",
@@ -213181,28 +213193,35 @@
       "social-profile",
       "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core name/phone/email/address lookups are free and unlimited; the site monetizes via ads and upsells to paid partner background reports for deeper data.",
+    "opsec": "passive",
+    "opsecNote": "A third-party data-broker query that does not notify the subject. It reflects aggregated broker data, not authoritative records — the site itself warns results need independent verification. Search from a clean browser; do not act on a single unconfirmed hit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running, widely-used US people-search aggregator; data is broker-sourced and self-admittedly non-authoritative, so treat every field as a lead to confirm.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "ThatsThem"
+    ],
     "tags": [
       "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/thatsthem-people-search.md"
   },
   {
@@ -215855,44 +215874,51 @@
   {
     "id": "countrycallingcodes-com",
     "name": "countrycallingcodes.com",
-    "description": "OSINT tool: countrycallingcodes.com.",
+    "description": "Use when you have a `phone` number or a bare dialing prefix and want to identify the country/area it belongs to — returns the country (and often region) plus time-zone context.",
     "url": "http://www.countrycallingcodes.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving an international/area dialing code to its country and region (forward and reverse lookup).",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
       "address",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference site (running since 2000); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Fully offline-style reference lookup — you type a code, not the target's full number, and nothing is sent to the subject or their carrier. No sock puppet needed; this is one of the safest first steps in phone OSINT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing, single-purpose reference for international dialing codes; the underlying ITU code data is stable and easy to cross-check.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Country Calling Codes"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "dialing-codes"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/countrycallingcodes-com.md"
   },
   {
@@ -217570,14 +217596,14 @@
   },
   {
     "id": "no-nonsense-intel",
-    "name": "No Nonsense Intel",
-    "description": "OSINT tool: No Nonsense Intel.",
+    "name": "No Nonsense Intel — Phone Variant Search",
+    "description": "Use when you have a `phone` number and want to search the web for it in every format people actually write it — returns ready-made search queries that surface a name, address, or profile.",
     "url": "https://www.no-nonsense-intel.com/phone-variant-search",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Generating every plausible written format of a phone number and firing them at search engines to find where it's posted.",
     "selectorsIn": [
       "phone"
     ],
@@ -217586,29 +217612,38 @@
       "address",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser-based query builder; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The tool builds the query strings in your browser and does not query the target's carrier or the subject; the actual searches you then run are against Google/Bing/Yandex/Baidu, which log your IP. Run the resulting searches from a clean/sock browser, and note the tool opens multiple search tabs at once.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Simple, transparent client-side utility from a UK OSINT practitioner; it only builds search strings you can inspect, so there is little to trust wrongly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "No Nonsense Intel",
+      "Phone Variant Search"
+    ],
     "tags": [
       "searchingphonenumbers",
-      "Searching Phone Numbers"
+      "Searching Phone Numbers",
+      "dorking"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/no-nonsense-intel.md"
   },
   {
@@ -224098,14 +224133,14 @@
   },
   {
     "id": "arrests",
-    "name": "Arrests",
-    "description": "OSINT tool: Arrests.",
+    "name": "Arrests.org",
+    "description": "Use when you have a `name` and want to check for a US arrest record or mugshot — returns booking photos, arrest dates, charges, and county, indexed by state.",
     "url": "http://www.arrests.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding US arrest/booking records and mugshots for a subject, browsable by state and county.",
     "selectorsIn": [
       "name"
     ],
@@ -224114,29 +224149,38 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing recent bookings and mugshots is free; full detailed reports (charges, court dates, background) are upsold to paid partner reports (commonly ~$20–40).",
+    "opsec": "passive",
+    "opsecNote": "A public-records aggregator query that does not notify the subject. Beware of the many near-identical clone/scam domains imitating \"arrests.org\" — stick to the known site and never pay a clone. Use a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular US booking-photo aggregator republishing county arrest data; coverage is uneven, records can be stale or misattributed, and numerous copycat domains exist — verify against the source county.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Arrests.org",
+      "Arrests Org"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "mugshot"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/arrests.md"
   },
   {
@@ -315036,13 +315080,13 @@
   {
     "id": "bitchute-com",
     "name": "bitchute.com",
-    "description": "OSINT tool: bitchute.com.",
+    "description": "Use when you have a `username` or `name` and want to find a subject's video presence on the alt-tech platform BitChute — returns channels, videos, and profile context.",
     "url": "https://www.bitchute.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a subject's channel and video activity on BitChute, an alt-tech video-sharing platform.",
     "selectorsIn": [
       "username",
       "name"
@@ -315051,29 +315095,37 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search public channels/videos; an optional free account is needed only to comment or subscribe.",
+    "opsec": "passive",
+    "opsecNote": "Browsing and searching public channels does not notify the target. Creating an account or subscribing ties activity to you — use a sock-puppet if you need to interact. Content skews to fringe/extremist material; handle exposure and download of media carefully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Genuine, well-known alt-tech video platform; profiles are self-authored so identity attribution needs corroboration, and much content is unmoderated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "BitChute"
+    ],
     "tags": [
       "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
+      "Right Wing Social Media Sites",
+      "video"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bitchute-com.md"
   },
   {
@@ -339633,44 +339685,51 @@
   {
     "id": "regvk-com",
     "name": "regvk.com",
-    "description": "OSINT tool: regvk.com.",
+    "description": "Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for deeper VK OSINT lookups.",
     "url": "http://regvk.com/id/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a VK vanity page/group URL to its permanent numeric ID for downstream VK OSINT.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single-purpose utility; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The tool queries VK's public data about the page, not the person, and does not notify the subject. It is a Russian-language third-party site — use a clean/sock browser and avoid entering anything but the public profile URL.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Popular Russian utility for VK ID resolution; single-purpose and widely referenced in VK OSINT guides, but unofficial.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "RegVK",
+      "Узнать ID ВКонтакте"
+    ],
     "tags": [
       "russiansocialmedia",
-      "Russian Social Media Sites"
+      "Russian Social Media Sites",
+      "vkontakte"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/regvk-com.md"
   },
   {
@@ -354219,44 +354278,58 @@
   {
     "id": "xiaohongshu-com",
     "name": "xiaohongshu.com",
-    "description": "OSINT tool: xiaohongshu.com.",
+    "description": "Use when you have a `username` or `name` and want to find a subject on Xiaohongshu (RED / Little Red Book), China's major lifestyle social platform — returns profiles, posts, and location/lifestyle context.",
     "url": "https://www.xiaohongshu.com/explore",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's profile and lifestyle/location posts on Xiaohongshu (RED), a major Chinese social network.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to view; deep browsing, search, and most content require the mobile app and a logged-in account (often a Chinese phone number to register).",
+    "opsec": "active",
+    "opsecNote": "The platform aggressively gates content behind login and app use; a logged-in session ties viewing to your account and the platform is Chinese-jurisdiction. Use a dedicated sock-puppet account and device/browser, avoid your real phone number, and assume viewing/following can be surfaced to the target and logged by the platform.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Genuine, very large Chinese social platform (RED); profiles are self-authored and the walled-garden UX makes systematic OSINT hard, so treat findings as leads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Xiaohongshu",
+      "RED",
+      "Little Red Book",
+      "小红书"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "chinese-social-media"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/xiaohongshu-com.md"
   },
   {
