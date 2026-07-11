@@ -139130,30 +139130,31 @@
   {
     "id": "buzzsprout",
     "name": "Buzzsprout",
-    "description": "Website related to social networking and podcasting services",
+    "description": "Use when you have a `name` or `username` and want to find a subject's podcast presence — returns social-profile, audio/show-notes content, and employer-org / contact leads from their podcast site.",
     "url": "https://www.buzzsprout.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a subject's podcast (hosted on Buzzsprout) and mining its episodes, show notes, and site for identifying details.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier for creators; listening/browsing hosted shows is free and needs no account. Podcaster tools (upload, analytics) are paid — irrelevant for research use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public podcast page and playing episodes is passive and anonymous; you are viewing published content, not contacting the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial podcast-hosting platform (est. 2009), not an investigative tool; useful only as a content source for shows it hosts.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -139162,14 +139163,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Buzzsprout podcast"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "podcast"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/buzzsprout.md"
   },
@@ -222538,45 +222542,47 @@
   },
   {
     "id": "wikitravel-org",
-    "name": "wikitravel.org",
-    "description": "OSINT tool: wikitravel.org.",
+    "name": "Wikitravel — Phone Numbers",
+    "description": "Use when you have a `phone` number and want to interpret its country/dialing format — returns reference context (country, trunk/international prefixes), not a subscriber identity.",
     "url": "https://wikitravel.org/en/Wikitravel:Phone_numbers",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding how a phone number's country code, trunk prefix, and dialing format work when normalizing an unfamiliar international number.",
     "selectorsIn": [
       "phone"
     ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public wiki page. No account, no lookup service — it is documentation, not a database.",
+    "opsec": "passive",
+    "opsecNote": "Reading a static wiki page reveals nothing about the target and does not touch any phone network. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-edited travel wiki page; Wikitravel is largely frozen/abandoned in favor of Wikivoyage, so content may be dated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Wikitravel Phone Numbers"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "reference"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/wikitravel-org.md"
   },
   {
@@ -260018,45 +260024,56 @@
   },
   {
     "id": "permits-and-inspections-search-by-state",
-    "name": "Permits and Inspections Search (by State)",
-    "description": "OSINT tool: Permits and Inspections Search (by State).",
+    "name": "Permits and Inspections Search (by State) — OnlineSearches",
+    "description": "Use when you have a property `address` or owner `name` and want building/permit records — returns a state-by-state directory of official permit and inspection lookups (document-id, address, owner links).",
     "url": "https://publicrecords.onlinesearches.com/permits-and-inspections.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the official city/county building-permit and inspection portals for a US location to tie a property to owners and dates.",
     "selectorsIn": [
-      "name"
+      "name",
+      "address"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "address",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free directory; it links out to official government portals, which are themselves free to search (some may charge for certified copies).",
+    "opsec": "passive",
+    "opsecNote": "OnlineSearches is a link directory and the government portals it points to are read-only public records — searching does not notify the property owner. Passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party public-records aggregator/directory; it does not hold data itself but curates links to official state/county sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlineSearches permits and inspections",
+      "publicrecords.onlinesearches.com"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "property",
+      "permits"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/permits-and-inspections-search-by-state.md"
   },
   {
@@ -266836,47 +266853,59 @@
   },
   {
     "id": "slovenia",
-    "name": "Slovenia",
-    "description": "OSINT tool: Slovenia.",
+    "name": "AJPES ePRS (Slovenian Business Register)",
+    "description": "Use when you have a company `name`, `address`, or registration number in Slovenia and want official registry data — returns employer-org details, registered address, and names of directors/representatives.",
     "url": "https://www.ajpes.si/prs/Default.asp?language=english",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a Slovenian company and identifying its registered address, status, and directors/legal representatives.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free of charge. Basic search works without login; the full ePRS entry view requires a free AJPES web portal account (registration first). Certified extracts are issued in Slovenian only.",
+    "opsec": "passive",
+    "opsecNote": "Official government register; searches are read-only against a public database and do not notify the subject. Registering an account ties queries to that account — use a research-only login if you want separation from your identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by AJPES, the Agency of the Republic of Slovenia for Public Legal Records — the authoritative national business registry.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "si"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "AJPES",
+      "ePRS",
+      "Slovenian Business Register",
+      "PRS"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "business-register",
+      "europe"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/slovenia.md"
   },
   {
@@ -268118,45 +268147,50 @@
   },
   {
     "id": "statistics-and-data",
-    "name": "Statistics and Data",
-    "description": "OSINT tool: Statistics and Data.",
+    "name": "UNODC Data Portal",
+    "description": "Use when you have a country/region context and want aggregate crime, homicide, drug, trafficking, or prison statistics — returns country-level figures, NOT individual person records.",
     "url": "https://dataunodc.un.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Country-level base rates and context on homicide, trafficking, drugs, and prison populations to frame an investigation.",
     "selectorsIn": [
-      "name"
+      "address"
     ],
-    "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free UN public data portal; no account required. Data is downloadable (CSV/Excel) and cite-able.",
+    "opsec": "passive",
+    "opsecNote": "Reading aggregate UN statistics reveals nothing about any subject and involves no personal query. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official United Nations Office on Drugs and Crime data portal — authoritative, but statistical/aggregate only.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UNODC dataUNODC",
+      "data.unodc.org",
+      "UN Office on Drugs and Crime statistics"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "statistics",
+      "context"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/statistics-and-data.md"
   },
   {
@@ -316561,45 +316595,54 @@
   },
   {
     "id": "bearpanther-com",
-    "name": "Bearpanther.com",
-    "description": "OSINT tool: Bearpanther.com.",
+    "name": "Bearpanther Instamap",
+    "description": "Use when you have a `geolocation` (a point or area on a map) and want to surface public Instagram posts tagged there — returns social-profile, username, and image leads.",
     "url": "http://bearpanther.com/instamap",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Plotting geotagged public Instagram posts for a location onto a map to find who was there.",
     "selectorsIn": [
-      "username",
-      "name"
+      "geolocation"
     ],
     "selectorsOut": [
       "social-profile",
-      "image",
-      "geolocation"
+      "username",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source tool (code on GitHub as bearpanther/instamap). No account or payment; hosted demo has historically been intermittently offline.",
+    "opsec": "passive",
+    "opsecNote": "You are not contacting the target directly, but the tool queries Instagram's public endpoints on your behalf. Run the self-hosted version behind a sock-puppet IP if you want to avoid tying the queries to your own address; the hosted demo logs are outside your control.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-built hobby project by an independent developer (bearpanther); not a maintained commercial service.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Instamap",
+      "Instagram Map"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "geolocation",
+      "socmint"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bearpanther-com.md"
   },
   {
@@ -329613,13 +329656,13 @@
   {
     "id": "hi5",
     "name": "hi5",
-    "description": "A social network for meeting new people",
+    "description": "Use when you have a `name` or `username` and want to check for a legacy hi5 social-network profile — returns a social-profile (now served through Tagged/The Meet Group).",
     "url": "https://secure.hi5.com/index.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding older/legacy social profiles from the hi5 era, now merged into the Tagged platform.",
     "selectorsIn": [
       "name",
       "username"
@@ -329627,31 +329670,38 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search/browse; profile viewing and messaging require a free account. Now operated as part of Tagged by The Meet Group.",
+    "opsec": "active",
+    "opsecNote": "hi5/Tagged is a social/dating platform — viewing a profile while logged in can leave a visible \"viewer\" footprint and the target may be notified. Use a sock-puppet account, never your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Legacy consumer social network, now absorbed into Tagged/The Meet Group; not an investigative tool, just a data source.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "hi5.com",
+      "Tagged"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "legacy-network"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/hi5.md"
   },
@@ -348599,45 +348649,53 @@
   },
   {
     "id": "thumbtube-com-2",
-    "name": "thumbtube.com",
-    "description": "OSINT tool: thumbtube.com.",
+    "name": "ThumbTube IGTV Downloader",
+    "description": "Use when you have an Instagram video/IGTV post URL and want to save the media for offline analysis — returns the downloaded video/image file for metadata and frame review.",
     "url": "https://thumbtube.com/igtv-downloader",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a public Instagram (IGTV/video) post to a local file so you can analyze frames, audio, and any embedded metadata.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, unlimited, no account and no email required per the site. Ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "You paste a post URL into a third-party downloader — the downloader (not you) fetches from Instagram, so it does not touch your identity, but ThumbTube sees the URL and your IP. Use a sock-puppet/VPN session; do not paste URLs that themselves reveal your investigative interest to a logged service.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Anonymous third-party media-downloader site; convenient but unvetted — treat downloaded files as untrusted until scanned.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ThumbTube",
+      "IGTV downloader"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/thumbtube-com-2.md"
   },
   {
@@ -373930,28 +373988,31 @@
   {
     "id": "findme-0xsaikat",
     "name": "findme (0xSaikat)",
-    "description": "CLI tool locating social media and online profiles linked to a username.",
+    "description": "Use when you have a `username` and want to enumerate matching accounts across the web — returns social-profile links on 400+ platforms for a digital-footprint sweep.",
     "url": "https://github.com/0xSaikat/findme",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Username-to-profile discovery and digital footprint verification",
+    "bestFor": "Fast username-to-profile enumeration across hundreds of sites from the command line.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT). Install via `pip install findme-osint` or from the GitHub source; no account or API key.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The tool checks target profiles by requesting each platform directly from your machine — that reveals your IP to hundreds of sites and does not contact the subject. Run behind a VPN/proxy and a sock-puppet environment; some sites may rate-limit or log the sweep.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Username enumerator (278 stars).",
+    "trustNote": "Community username enumerator (~300 GitHub stars); actively maintained (v1.0.7, Dec 2025). Verify hits manually — enumerators produce false positives.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -373960,13 +374021,16 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "findme-osint",
+      "0xSaikat findme"
+    ],
     "tags": [
       "username-enumeration",
       "cli"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/username/findme-0xsaikat.md"
   },
