@@ -131796,13 +131796,13 @@
   {
     "id": "police-crime-maps-uk",
     "name": "Police Crime Maps (UK)",
-    "description": "UK-based crime map displaying crime trends by neighborhood in England, Wales, and Northern Ireland",
+    "description": "Use when you have a UK `address`/`geolocation` and want the area's recent recorded-crime picture plus the local policing team — returns street-level crime categories and neighbourhood contact details.",
     "url": "https://www.police.uk/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Area-level UK crime context and the responsible neighbourhood policing team for a postcode/address.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -131811,31 +131811,35 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official UK service; no account or payment required. Underlying crime data is also downloadable in open format.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive, anonymous lookup of published area statistics — no individual is queried or notified. Crime locations are deliberately snapped to approximate map points, not exact addresses.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "Official service run by the UK Home Office / police forces of England, Wales and Northern Ireland — authoritative recorded-crime data (published with a ~2-month lag).",
+    "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "police.uk",
+      "UK street-level crime map"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/police-crime-maps-uk.md"
   },
@@ -204163,44 +204167,54 @@
   {
     "id": "daprofiler",
     "name": "DaProfiler",
-    "description": "Get emails, social medias, adresses of peoples using web scraping and google dorking",
+    "description": "Use when you have a `name` (best for a French subject) and want to auto-aggregate emails, phones, addresses, and social profiles via scraping and Google dorking — returns contact details and linked profiles.",
     "url": "https://github.com/TheRealDalunacrobate/DaProfiler",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Automated aggregation of a person's emails, phones, addresses and socials from a name, with French-specific email guessing.",
     "selectorsIn": [
-      "email",
-      "name"
+      "name",
+      "email"
     ],
     "selectorsOut": [
-      "address",
       "email",
-      "name",
-      "phone"
+      "phone",
+      "address",
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open-source (self-hosted). No fees, but you supply your own environment and, for some modules, API keys.",
+    "opsec": "active",
+    "opsecNote": "DaProfiler drives a real browser (Firefox), scrapes third-party sites, and runs Google dorks from your machine — that traffic hits target and intermediary services from your IP. Run it from a VM behind a VPN/sock-puppet identity; some scraping may breach site terms of service. Facial-recognition matching of profile photos is intrusive and legally sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit",
+      "captcha"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Community open-source project (~200 stars) by a single maintainer; unaudited scraper whose accuracy depends on volatile third-party sites. Read the code before running.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "fr",
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DaProfiler OSINT"
+    ],
     "tags": [
       "Universal Contact Search and Leaks Search"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/daprofiler.md"
   },
@@ -214240,46 +214254,55 @@
   {
     "id": "ussearch-us",
     "name": "USSEARCH (US)",
-    "description": "OSINT tool: USSEARCH (US).",
+    "description": "Use when you have a `name`, `phone`, or `address` for a US subject and want to pull an aggregated public-records profile — returns address history, phone, relatives, and age/dob hints.",
     "url": "https://www.ussearch.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregated US public-records lookup (address history, relatives, phones) from a name, phone, or address.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
       "address",
       "phone",
       "email",
       "associate",
-      "social-profile",
       "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search returns teaser results (name, approximate age, city, partial relatives). The full report (complete address history, phone numbers, possible relatives/associates) is paywalled behind a paid membership/one-off report purchase.",
+    "opsec": "passive",
+    "opsecNote": "Querying is passive — the subject is not notified and USSearch does not alert them. You are, however, handing your search terms to a commercial data broker; use a sock-puppet account/email and a clean IP if you buy a report, and never enter your real payment identity on an investigation you want kept quiet.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial people-search broker (PeopleConnect/Intelius family). Data is aggregated from public records and marketing sources, so it can be stale, merged across same-name individuals, or wrong — corroborate before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "US Search",
+      "ussearch.com"
+    ],
     "tags": [
       "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/ussearch-us.md"
   },
   {
@@ -239717,47 +239740,53 @@
   },
   {
     "id": "gijn-org",
-    "name": "gijn.org",
-    "description": "OSINT tool: gijn.org.",
-    "url": "https://gijn.org/resource/asia-focus-open-source-guide-investigating-chinese-companies/?utm_campaign=website&utm_medium=email&utm_source=sendgrid.com",
+    "name": "GIJN Resource Centre",
+    "description": "Use when you need a vetted methodology or country/sector guide for an investigation (e.g. tracing companies or people abroad) — returns curated how-to guides, tool lists, and source pointers, not queryable data.",
+    "url": "https://gijn.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Methodology and country/topic guides for investigating companies and people, with curated tool/source recommendations.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to read. GIJN is a nonprofit network; guides, tool lists, and its Help Desk resources are freely accessible.",
+    "opsec": "passive",
+    "opsecNote": "Reading GIJN is passive — you are consuming published guides, querying nobody about your target. No subject is touched. Standard browsing hygiene is enough.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Global Investigative Journalism Network is a respected nonprofit of investigative journalism organisations; its guides are authored/vetted by professional investigators.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Global Investigative Journalism Network",
+      "gijn.org"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gijn-org.md"
   },
   {
@@ -240644,47 +240673,54 @@
   },
   {
     "id": "gov-im",
-    "name": "gov.im",
-    "description": "OSINT tool: gov.im.",
+    "name": "Isle of Man Companies Registry",
+    "description": "Use when you have an `employer-org` or `name` linked to an Isle of Man company and want official registry data — returns company status, officers/directors, and registered address.",
     "url": "https://services.gov.im/companies-registry/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Isle of Man company/director lookups — registered address, officers, and company status.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic company name/number search is free. Copies of filed documents (incorporation, annual returns, officer details) are typically charged per document.",
+    "opsec": "passive",
+    "opsecNote": "Public registry lookups are passive and anonymous — the company/officers are not notified. Note the beneficial-ownership register is NOT public; attempting to access it without authorisation is a criminal offence under Isle of Man law. Stay within the public company search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Isle of Man Government's Department for Enterprise — the statutory, first-party company register. Authoritative, though visible officers may be nominees.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "im"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Isle of Man Companies Registry",
+      "services.gov.im companies registry",
+      "Companies Registry IoM"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-im.md"
   },
   {
@@ -240981,47 +241017,53 @@
   },
   {
     "id": "gov-uk-10",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "GOV.UK Find Driving Instructors (DVSA)",
+    "description": "Use when you have a `name` or `geolocation` for a UK subject who may be a driving instructor and want to confirm DVSA approval — returns approved-instructor listing, grade, and business location.",
     "url": "https://www.gov.uk/find-driving-schools-and-lessons",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is a DVSA-approved UK driving instructor (ADI) and their grade/location.",
     "selectorsIn": [
+      "name",
+      "address",
+      "geolocation"
+    ],
+    "selectorsOut": [
       "name",
       "address",
       "employer-org"
     ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free UK government service; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "This is a public GOV.UK lookup — the instructor is not notified. Only ADIs who opt in are listed, so absence is not evidence. Searches are anonymous; no sock-puppet needed beyond ordinary browsing hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Driver and Vehicle Standards Agency (DVSA), the UK statutory regulator of driving instructors — a first-party authoritative source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Find driving instructors",
+      "DVSA approved driving instructor search"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-10.md"
   },
   {
@@ -266043,47 +266085,58 @@
   },
   {
     "id": "spotlight-com",
-    "name": "spotlight.com",
-    "description": "OSINT tool: spotlight.com.",
+    "name": "Spotlight (Contacts & Performers)",
+    "description": "Use when you have a `name` for someone in the UK entertainment industry and want to find their professional profile or the agents/services around them — returns performer/service listings with location and representation.",
     "url": "https://www.spotlight.com/contacts",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating UK performers, their agents/representation, and industry service providers by name or location.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
+      "name",
       "address",
       "employer-org",
-      "name"
+      "image",
+      "physical-description"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing the Contacts directory of agents/services is free. Full performer profiles (with photos, physical stats, showreels, agent) live in the Spotlight members' directory, parts of which are gated behind an industry membership/login used by casting professionals.",
+    "opsec": "passive",
+    "opsecNote": "Public browsing is passive — subjects are not notified. Deeper casting features require an industry account; using one ties the lookup to that identity, so use a sock-puppet professional account if discretion matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Spotlight is the long-established, authoritative UK casting directory (since 1927); performer listings are self-submitted and verified for industry use, so identity/representation data is reliable though self-reported physical stats may be dated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Spotlight.com",
+      "Spotlight Contacts",
+      "Spotlight casting directory"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/spotlight-com.md"
   },
   {
@@ -268312,47 +268365,56 @@
   },
   {
     "id": "thegazette-co-uk",
-    "name": "thegazette.co.uk",
-    "description": "OSINT tool: thegazette.co.uk.",
+    "name": "The Gazette (UK Official Public Record)",
+    "description": "Use when you have a `name` and want official UK notices — insolvency, deceased-estates/wills, and company notices — returns published notices tying a person to bankruptcy, death/probate, or corporate events.",
     "url": "https://www.thegazette.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching official UK notices — personal/corporate insolvency, deceased-estates (probate), and company notices — by name.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
+      "name",
       "address",
       "employer-org",
-      "name"
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching and reading notices is free. Placing a notice and the bulk/premium \"Gazette Data Service\" (structured company/insolvency/deceased-estates feeds) are paid.",
+    "opsec": "passive",
+    "opsecNote": "Reading the public record is passive and anonymous — no subject is notified. No account needed to search. Ordinary browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official public record of the UK (published since 1665) under His Majesty's Stationery Office / The National Archives — authoritative, legally-published notices.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "London Gazette",
+      "Edinburgh Gazette",
+      "Belfast Gazette",
+      "thegazette.co.uk"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/thegazette-co-uk.md"
   },
   {
@@ -371432,37 +371494,49 @@
   {
     "id": "blackbird",
     "name": "Blackbird",
-    "description": "OSINT tool: Blackbird.",
+    "description": "Use when you have a `username` or `email` and want to sweep 600+ sites for accounts under that identity — returns a list of matching `social-profile` URLs and optional AI profiling.",
     "url": "https://github.com/p1ngul1n0/blackbird",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast enumeration of accounts across 600+ platforms from a username or email.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (self-hosted CLI). Optional AI-profiling features may require your own LLM/API key.",
+    "opsec": "active",
+    "opsecNote": "Blackbird makes live requests to each of hundreds of platforms from your host to test account existence — that traffic originates from your IP and can be logged by target sites. Run behind a VPN/sock-puppet IP. It queries the target's username, not the target directly, so the subject is not personally notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular, actively maintained community project (~6.9k stars) leveraging the WhatsMyName dataset. Well-regarded but unaudited; false positives/negatives occur as sites change.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "blackbird osint",
+      "p1ngul1n0/blackbird"
+    ],
     "tags": [
       "username-check"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/blackbird.md"
   },
   {
