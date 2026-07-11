@@ -157569,44 +157569,55 @@
   {
     "id": "snapchat-com",
     "name": "snapchat.com",
-    "description": "OSINT tool: snapchat.com.",
+    "description": "Use when you have a Snapchat `username` and want the public profile behind it — returns the public profile page, Bitmoji/avatar and public Story/Spotlight content (`social-profile`/`image`), plus Snap Map `geolocation` context.",
     "url": "https://snapchat.com/add/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing a Snapchat user's public profile, avatar, and public snaps from the web.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "image",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free. Public profile pages (snapchat.com/add/<username>) and Snap Map are viewable in a browser without an account.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a public web profile or the Snap Map is passive and does NOT notify the user. This changes the instant you use the app to add/message someone or view their Story while logged in — that can be visible to them. For public recon stay on the web profile; if you must use the app, use a sock-puppet account and device.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Snapchat platform. The public web profile is genuine platform data; how much is exposed depends entirely on the user's privacy settings (many profiles show little publicly).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "snap-map",
+      "gsmarena-com"
+    ],
+    "aliases": [
+      "Snapchat",
+      "snapchat.com/add"
+    ],
     "tags": [
       "profileimages",
-      "Profile Images"
+      "Profile Images",
+      "snapchat"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/snapchat-com.md"
   },
   {
@@ -202834,43 +202845,52 @@
   {
     "id": "bc-assessment",
     "name": "BC Assessment",
-    "description": "OSINT tool: BC Assessment.",
+    "description": "Use when you have a British Columbia `address` and want the property's official assessment — returns assessed value, property characteristics and sales history for that `address` (property data, not the owner's identity).",
     "url": "https://www.bcassessment.ca",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a BC property's assessed value and characteristics by civic address.",
     "selectorsIn": [
       "address"
     ],
     "selectorsOut": [
-      "name",
-      "phone",
-      "associate"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public property-assessment search by address, PID, or roll number. No account or payment for the standard property report.",
+    "opsec": "passive",
+    "opsecNote": "You query a public property-assessment database by address; no person is searched and nothing reaches any occupant. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "BC Assessment is the official provincial property-assessment authority for British Columbia — authoritative valuation and property data. Note it publishes property/value data, not owner names, so don't expect PII.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "land-registry"
+    ],
+    "aliases": [
+      "BC Assessment",
+      "bcassessment.ca"
+    ],
     "tags": [
-      "address"
+      "address",
+      "property",
+      "british-columbia"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/bc-assessment.md"
   },
   {
@@ -212698,13 +212718,13 @@
   {
     "id": "smartbackgroundchecks",
     "name": "SmartBackgroundChecks",
-    "description": "Free people-search aggregator with relatives and contact history.",
+    "description": "Use when you have a US `name`, `phone`, or `address` and want a free contact profile — returns addresses, phone numbers, and relatives/`associate`s largely without a paywall.",
     "url": "https://www.smartbackgroundchecks.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Free people/background search with relatives, phones, and addresses.",
+    "bestFor": "Free US people-search showing addresses, phones, and relatives from a name, phone, or address.",
     "selectorsIn": [
       "name",
       "phone",
@@ -212716,15 +212736,16 @@
       "address",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The core results — current/past addresses, phone numbers, and relatives — are viewable free without a subscription (deeper \"background report\" upsells exist but the contact/relative data is the free draw).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a data-broker aggregator, not the subject, so nothing reaches the target. Use a clean browser (it's ad-heavy and may fingerprint). Because it aggregates broker data, results can be stale or conflate same-name people — corroborate.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial US people-search aggregator (part of the same data-broker ecosystem as TruePeopleSearch et al.). Good free breadth for leads, but broker data quality is uneven — verify before relying on any field.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -212733,8 +212754,14 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "truepeoplesearch",
+      "fastpeoplesearch",
+      "thatsthem"
+    ],
     "aliases": [
-      "SBC"
+      "SBC",
+      "smartbackgroundchecks.com"
     ],
     "tags": [
       "people-search",
@@ -212742,7 +212769,7 @@
       "relatives"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/smartbackgroundchecks.md"
   },
@@ -223114,13 +223141,13 @@
   {
     "id": "alabama-dept-of-corrections",
     "name": "Alabama Dept of Corrections",
-    "description": "OSINT tool: Alabama Dept of Corrections.",
+    "description": "Use when you have a `name` and want to check if they're in Alabama state prison — returns the inmate record with AIS number (`document-id`), `dob`, facility and status.",
     "url": "http://www.doc.state.al.us/inmatesearch",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person in Alabama state custody by name and getting their inmate record.",
     "selectorsIn": [
       "name"
     ],
@@ -223129,29 +223156,41 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state inmate search. No account or payment. (Current site is doc.alabama.gov; the older doc.state.al.us address redirects there.)",
+    "opsec": "passive",
+    "opsecNote": "You search a public corrections database; nothing reaches the subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Alabama Department of Corrections — authoritative for people in Alabama state custody. It covers state prisons only (not county jails or federal facilities).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "bop-inmate-locator",
+      "vinelink"
+    ],
+    "aliases": [
+      "Alabama DOC inmate search",
+      "ADOC"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections",
+      "alabama"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/alabama-dept-of-corrections.md"
   },
   {
@@ -225660,46 +225699,57 @@
   {
     "id": "bellingcat-com",
     "name": "bellingcat.com",
-    "description": "OSINT tool: bellingcat.com.",
+    "description": "Use when you have a `name` or keyword and want verbatim quotes from UK & Ireland local-council meetings — returns transcript hits naming who said what in which council (`name`/`employer-org` in local-government context).",
     "url": "https://council-search.bellingcat.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching auto-generated transcripts of UK & Ireland council meetings for a name or phrase.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Bellingcat). No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You search public meeting transcripts; nothing reaches any subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and maintained by Bellingcat (open source). Transcripts are auto-generated from council AV (via the Public I provider), so quotes can contain transcription errors — verify wording against the source recording before quoting.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "tellmescotland-gov-uk",
+      "companies-house"
+    ],
+    "aliases": [
+      "Bellingcat Council Meeting Transcript Search",
+      "CouncilSearcher",
+      "council-search.bellingcat.com"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "local-government",
+      "transcripts"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bellingcat-com.md"
   },
   {
@@ -236645,44 +236695,58 @@
   {
     "id": "familysearch-free-family-trees-and-genealogy-archives-familysearch-org",
     "name": "FamilySearch • Free Family Trees and Genealogy Archives — FamilySearch.org",
-    "description": "OSINT tool: FamilySearch • Free Family Trees and Genealogy Archives — FamilySearch.org.",
+    "description": "Use when you have a `name` and want family/genealogy records — returns relatives (`associate`), birth/marriage/death dates (`dob`) and historical documents from the world's largest free genealogy archive.",
     "url": "https://www.familysearch.org/en",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free global genealogy research — family trees plus billions of indexed historical vital records.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "associate",
       "dob",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, run by a non-profit (The Church of Jesus Christ of Latter-day Saints). A free account/login is required to view most records and trees; no payment.",
+    "opsec": "passive",
+    "opsecNote": "You search historical/genealogical records and user-contributed trees; nothing reaches a living subject. Passive. A free account ties searches to an email — use a sock-puppet address. Be aware living persons are largely masked in shared trees for privacy.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "One of the largest and most reputable genealogy archives in the world. Indexed historical records are authoritative; user-submitted family trees are community-contributed and can contain errors — verify against the source documents.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "freebmd-org-uk",
+      "ancestry"
+    ],
+    "aliases": [
+      "FamilySearch",
+      "familysearch.org"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "vital-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/familysearch-free-family-trees-and-genealogy-archives-familysearch-org.md"
   },
   {
@@ -252200,46 +252264,54 @@
   {
     "id": "mycounciltax-org-uk",
     "name": "mycounciltax.org.uk",
-    "description": "OSINT tool: mycounciltax.org.uk.",
+    "description": "Use when you have a UK `address`/postcode and want the Council Tax band for properties there — returns the band per property (a proxy for property value/size) and street-level `address` context.",
     "url": "http://www.mycounciltax.org.uk/content/index",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up Council Tax bands for UK addresses by postcode (a rough property-value proxy).",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search by postcode. No account or payment. (Underlying band data is the public VOA/Scottish Assessors valuation banding.)",
+    "opsec": "passive",
+    "opsecNote": "You look up public property banding by postcode; no person is queried and nothing reaches any occupant. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party front-end over the public Council Tax valuation bands. Band data itself is official; this site is a convenience layer, so confirm a specific band on the official VOA/Scottish Assessors site if it matters.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gov-uk-council-tax-band",
+      "companies-house"
+    ],
+    "aliases": [
+      "My Council Tax",
+      "mycounciltax.org.uk"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "council-tax",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/mycounciltax-org-uk.md"
   },
   {
@@ -316987,13 +317059,13 @@
   {
     "id": "bsky-social-2",
     "name": "bsky.social",
-    "description": "OSINT tool: bsky.social.",
+    "description": "Use when you have a `username`/`name` and want their Bluesky presence — returns the profile, posts, and follow graph (`social-profile`) on an unusually open, API-friendly network.",
     "url": "https://bsky.social/about/support",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and reading a subject's Bluesky (AT Protocol) profile, posts, and connections.",
     "selectorsIn": [
       "username",
       "name"
@@ -317002,29 +317074,40 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse public profiles and posts; much of the network is viewable without an account via the app or bsky.app. A (free) account enables in-app search and following.",
+    "opsec": "passive",
+    "opsecNote": "Reading public posts/profiles is passive and doesn't notify the target. Bluesky's AT Protocol is extremely open — public posts are broadcast on a firehose and widely mirrored — which is great for collection but also means your own account's activity is equally public. Follow/like from a sock puppet only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "bsky.social is the flagship, first-party Bluesky service. Genuine platform data, and unusually verifiable because the underlying records are openly published on the AT Protocol.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "clearsky-app",
+      "twitter-x"
+    ],
+    "aliases": [
+      "Bluesky",
+      "bsky.app"
+    ],
     "tags": [
       "bluesky",
-      "BlueSky / BSky Related Sites"
+      "BlueSky / BSky Related Sites",
+      "at-protocol"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bsky-social-2.md"
   },
   {
