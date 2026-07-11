@@ -210365,47 +210365,55 @@
   {
     "id": "peoplebyname-reverse-phone-lookup",
     "name": "PeopleByName Reverse Phone Lookup",
-    "description": "Database search by telephone number, provides publicly available information",
+    "description": "Use when you have a `phone` (or a `name`) and want the owner's name, address, age, and relatives for the US/Canada — returns contact and household details, free.",
     "url": "http://www.peoplebyname.com/search.php",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Free reverse phone lookup (US/Canada) that resolves a number to a name, address, age, and associated relatives — and vice versa by name.",
     "selectorsIn": [
+      "phone",
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
+      "name",
       "address",
-      "phone",
-      "associate"
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core reverse-phone and name lookups are free; the site upsells deeper paid partner reports (background/full history), but you don't need to pay for the basic name/address result.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A data-broker query that does not notify the number's owner. Data is aggregated from public records/directories and is not authoritative — verify before acting. Search from a clean browser; ignore paid upsell prompts unless needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established reverse-lookup provider (operating since 2008) with a large US/Canada record set; broker-sourced, so treat outputs as leads to confirm, not verified facts.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "PeopleByName"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "reverse-phone"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/peoplebyname-reverse-phone-lookup.md"
   },
@@ -253233,35 +253241,54 @@
   {
     "id": "new-jersey-voter-records",
     "name": "New Jersey Voter Records",
-    "description": "OSINT tool: New Jersey Voter Records.",
+    "description": "Use when you have a `name` and want to confirm a New Jersey address, birth year, and party from voter-registration data — returns residential address and household-level leads.",
     "url": "https://stevemorse.org/njvoters/njvoters.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up a New Jersey voter's registered residential address, approximate age, and party via Steve Morse's One-Step search.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free One-Step search hosted on stevemorse.org; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries a static voter-data set hosted for research/genealogy; nothing is sent to the subject and no login is required. It reflects a snapshot of NJ voter registration data, which is public in New Jersey. Use a clean browser; treat as one dated snapshot, not live.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Steve Morse's One-Step tools are a well-known, reputable genealogy/records resource; the NJ voter data is a public dataset snapshot, so coverage is bounded to that vintage and to registered voters.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Steve Morse NJ Voters",
+      "One-Step NJ voter search"
+    ],
+    "tags": [
+      "voter-records",
+      "new-jersey",
+      "genealogy"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/new-jersey-voter-records.md"
   },
   {
@@ -257656,44 +257683,56 @@
   {
     "id": "pacer",
     "name": "PACER",
-    "description": "OSINT tool: PACER.",
+    "description": "Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs across federal courts.",
     "url": "https://www.pacer.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's involvement in US federal court cases (civil, criminal, bankruptcy) and pulling docket/party details.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
+      "address",
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Registration is free; searches and document views cost $0.10/page (capped at $3.00 per document), and fees are waived if you accrue under $30 in a quarter. Effectively low-cost, not free.",
+    "opsec": "active",
+    "opsecNote": "PACER requires a registered, identity-verified account and logs your searches and document accesses under it. You are not anonymous — your queries are attributable to your PACER identity, and case parties are not notified but the Judiciary retains logs. Use an account appropriate to your investigative authority; do not expect passive anonymity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official US Judiciary system (Public Access to Court Electronic Records); authoritative for federal court filings, though it does not cover state/local courts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Public Access to Court Electronic Records",
+      "PACER.gov"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "federal",
+      "legal"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/pacer.md"
   },
   {
@@ -375074,36 +375113,51 @@
   },
   {
     "id": "username-checker",
-    "name": "Username Checker",
-    "description": "OSINT tool: Username Checker.",
+    "name": "Username Checker (AnalyzeID)",
+    "description": "Use when you have a `username` and want to see where it's registered across 100+ sites plus a quick public summary of each account — returns social profiles and account context.",
     "url": "https://analyzeid.com/username/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Web-based username enumeration across 100+ platforms with a public-info summary for each taken handle.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Basic checks are usable free; AnalyzeID gates deeper/bulk features and richer summaries behind a paid tier.",
+    "opsec": "active",
+    "opsecNote": "AnalyzeID runs live existence checks against each platform for the handle (server-side), so the probing is proxied through their infrastructure rather than your IP, but a request per site still hits those platforms. It does not notify the account owner. For sensitive work prefer a self-hosted enumerator you control; treat any results as leads.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial web OSINT service; convenient no-install username enumeration, but a closed third party (you can't inspect its checks), so verify each hit directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "AnalyzeID username"
+    ],
+    "tags": [
+      "username-check",
+      "username-enumeration"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/username-checker.md"
   },
   {
