@@ -150336,31 +150336,33 @@
   {
     "id": "libsyn",
     "name": "Libsyn",
-    "description": "Website related to social networking and podcasting services",
+    "description": "Use when you have a `name`, `username` or podcast title and want to find a subject's podcast, its episodes and host details — returns `social-profile`, `name`, `metadata-exif` (episode dates/descriptions).",
     "url": "https://libsyn.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a subject's self-hosted podcast, its back catalogue, show notes and host bios.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "name",
+      "metadata-exif"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Hosting is a paid service for creators, but listening to and browsing published shows/episode pages is free and needs no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public show page or episode is passive; you view a hosted site, not the target. Following links from show notes to the host's other socials should use sock-puppet accounts as usual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Libsyn is a long-established, legitimate podcast host; content is publisher-supplied, so accuracy depends on the podcaster, not Libsyn.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -150368,14 +150370,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Liberated Syndication"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "podcast"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/libsyn.md"
   },
@@ -158879,31 +158884,33 @@
   {
     "id": "ted",
     "name": "TED",
-    "description": "Website related to social networking with intellectual video posting and sharing services",
+    "description": "Use when you have a `name` and think the subject gave a TED/TEDx talk, and you want their video, bio, headshot and topic — returns `image`, `face`, `social-profile`, `physical-description`.",
     "url": "https://www.ted.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's TED/TEDx talk — video (voice + appearance), speaker bio and linked profiles.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name"
     ],
     "selectorsOut": [
       "image",
-      "social-profile"
+      "face",
+      "social-profile",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and watch; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Fully passive — you are viewing a public media library, and TED does not notify a speaker that their page was viewed. Standard browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "TED is a well-known nonprofit media organization; speaker pages are editorially curated, so identity and bio data are reliable.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -158911,14 +158918,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TED Talks",
+      "TEDx"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "video",
+      "speaker"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/ted.md"
   },
@@ -236132,47 +236144,57 @@
   },
   {
     "id": "estonia",
-    "name": "Estonia",
-    "description": "OSINT tool: Estonia.",
+    "name": "Estonia e-Business Register",
+    "description": "Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registered addresses — returns `employer-org`, `associate`, `address`, `name`.",
     "url": "https://ariregister.rik.ee/eng",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Tying an Estonian person to the companies they own, direct or serve on the board of, plus registered addresses.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "associate",
+      "address",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free official state register — quick search of legal entities, officers and beneficial owners is no-cost. Some detailed/bulk features are reserved for contractual clients, but core people/company lookups are free.",
+    "opsec": "passive",
+    "opsecNote": "Official government register; queries hit the state portal, not the subject. Passive. No login needed for basic search, so no account of yours is exposed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Estonian Centre of Registers and Information Systems / Tartu County Court registration department — an authoritative primary source.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "ee"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ariregister",
+      "Estonian e-Business Register",
+      "Äriregister"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/estonia.md"
   },
   {
@@ -245079,47 +245101,55 @@
   },
   {
     "id": "imiregister-org-uk",
-    "name": "imiregister.org.uk",
-    "description": "OSINT tool: imiregister.org.uk.",
+    "name": "IMI Professional Register",
+    "description": "Use when you have a `name` and think the subject is a UK automotive professional, and want to verify their accreditation and workplace — returns `name`, `employer-org`, `address` (place of work).",
     "url": "https://tide.theimi.org.uk/membership/professional-register",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a UK motor-industry professional's IMI accreditation and finding their place of work.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Public professional register; searching hits the IMI site, not the subject, and requires no login. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Institute of the Motor Industry (IMI), the UK professional body for the automotive sector — an authoritative accreditation source.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Institute of the Motor Industry register",
+      "theimi.org.uk professional register"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "automotive",
+      "accreditation"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/imiregister-org-uk.md"
   },
   {
@@ -253193,47 +253223,56 @@
   },
   {
     "id": "nadj-org-uk",
-    "name": "nadj.org.uk",
-    "description": "OSINT tool: nadj.org.uk.",
+    "name": "NADJ Directory",
+    "description": "Use when you have a `name`, business name or `address`/area and want to find a UK disc jockey's professional listing — returns `name`, `employer-org` (DJ business), `address`/area, `social-profile`.",
     "url": "https://www.nadj.org.uk/member-directory/#!directory/map/ord=rnd",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a UK DJ via the National Association of Disc Jockeys member directory and marketplace.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the public directory; listings are paid/DIY for members, but searching and viewing them costs nothing.",
+    "opsec": "passive",
+    "opsecNote": "Public member directory; browsing is passive and needs no login. Any contact you initiate through a listing is an active step — keep to reading unless you intend to engage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Run by the National Association of Disc Jockeys (NADJ) CIC, a UK trade body; listings are member self-submitted, so treat business details as claimed, not verified.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "National Association of Disc Jockeys",
+      "NADJ member directory"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "dj",
+      "entertainment"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nadj-org-uk.md"
   },
   {
@@ -320235,45 +320274,54 @@
   {
     "id": "doximity-united-states",
     "name": "Doximity (United States)",
-    "description": "Website related to social networking for healthcare professionals",
+    "description": "Use when you have a `name` and believe the subject is a US clinician (doctor, PA, NP) and want their verified professional profile, specialty and workplace — returns `social-profile`, `employer-org`, `address`.",
     "url": "https://www.doximity.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and locating a US healthcare professional — specialty, credentials and practice location.",
     "selectorsIn": [
       "name",
-      "username"
+      "employer-org"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "employer-org",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free for verified US clinicians (identity-gated). Non-clinicians can view public \"Doximity Dialer\"/directory profile pages surfaced via search engines, but full network features require a verified clinician account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Public profile pages can be read passively (often via Google) without logging in. Do NOT try to register as a clinician you are not — verification is identity-checked and impersonation is both detectable and a legal/ethics problem.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "Doximity is a publicly traded, verified network of US healthcare professionals; profiles are credential-checked, so specialty/licensure data is high quality.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Doximity"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "healthcare",
+      "medical"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/doximity-united-states.md"
   },
@@ -335464,37 +335512,51 @@
   {
     "id": "mytweetalerts",
     "name": "MyTweetAlerts",
-    "description": "OSINT tool: MyTweetAlerts.",
+    "description": "Use when you have a `username`, `name` or keyword and want ongoing email alerts whenever matching tweets are posted — returns `social-profile` activity notifications over time.",
     "url": "https://www.mytweetalerts.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Standing monitoring of Twitter/X for a person, handle or keyword via scheduled email alerts.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Freemium with paid tiers; free/low tiers are limited in number of alerts and frequency. Requires registration. Ongoing viability depends on Twitter/X API access, which has tightened — verify it still delivers before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "You monitor public tweets via a third-party service; the target is not notified. But you register an account and hand MyTweetAlerts your search criteria and email, so use a dedicated investigative email, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trustNote": "A long-running third-party Twitter alerting service (600k+ alerts sent), but dependent on Twitter/X API terms that can change without notice.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "My Tweet Alerts"
+    ],
     "tags": [
-      "twitter"
+      "twitter",
+      "monitoring",
+      "alerts"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/mytweetalerts.md"
   },
   {
@@ -347628,37 +347690,53 @@
   {
     "id": "the-endorser",
     "name": "the-endorser",
-    "description": "OSINT tool: the-endorser.",
+    "description": "Use when you have LinkedIn `social-profile` URLs and want a relationship graph built from shared skill endorsements — returns `associate` links and a visual `name`-to-`name` network.",
     "url": "https://github.com/eth0izzle/the-endorser",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Visualising which people are connected through LinkedIn skill endorsements across several target profiles.",
+    "selectorsIn": [
+      "social-profile",
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free, open-source (Python). No cost, but it drives a real LinkedIn session via Selenium, so it needs your (or a sock-puppet's) LinkedIn login.",
+    "opsec": "active",
+    "opsecNote": "This logs into LinkedIn and scrapes profiles with an automated browser — LinkedIn's ToS forbids scraping, it detects automation, and views may notify targets or get the account banned. Use a dedicated sock-puppet LinkedIn account and a non-primary IP; never your real account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trustNote": "Open-source tool by eth0izzle; the code is inspectable but the repo is explicitly no longer maintained, so it likely breaks against current LinkedIn markup.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "eth0izzle the-endorser"
+    ],
     "tags": [
-      "linkedin"
+      "linkedin",
+      "graph",
+      "endorsements",
+      "relationship-mapping"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/the-endorser.md"
   },
   {
@@ -347922,14 +348000,14 @@
   },
   {
     "id": "threads-net",
-    "name": "threads.net",
-    "description": "OSINT tool: threads.net.",
+    "name": "Threads",
+    "description": "Use when you have a `username` (usually the subject's Instagram handle) and want their Threads posts, bio and network — returns `social-profile`, `name`, post content.",
     "url": "https://www.threads.net/login",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Reading a subject's Threads posts and confirming the Instagram-linked identity behind a handle.",
     "selectorsIn": [
       "username",
       "name"
@@ -347938,29 +348016,39 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to view; public profiles/posts are partly readable logged-out, but full browsing (scrolling, replies, followers) increasingly prompts a login.",
+    "opsec": "passive",
+    "opsecNote": "Viewing public posts is passive, but Threads is a Meta property tightly coupled to Instagram — logging in to see more ties your (sock-puppet) account to the viewing and can surface you in suggestions. Use a dedicated puppet, never a personal Meta account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Meta/Instagram platform; profile data is authoritative for that account, though anyone can create a handle.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Threads by Instagram",
+      "threads.com"
+    ],
     "tags": [
       "threads",
-      "Threads Related Sites"
+      "Threads Related Sites",
+      "instagram",
+      "meta"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/threads-net.md"
   },
   {
@@ -349037,44 +349125,50 @@
   {
     "id": "tikvib-com",
     "name": "tikvib.com",
-    "description": "OSINT tool: tikvib.com.",
+    "description": "Use when you have a TikTok `username` and want to view/download their public videos and profile stats anonymously — returns `social-profile`, `image`, `metadata-exif`.",
     "url": "https://www.tikvib.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing and downloading a public TikTok account's videos, stories and profile analytics.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no login or payment required to view or download public TikTok content.",
+    "opsec": "passive",
+    "opsecNote": "Anonymous by design — you browse via tikvib's servers, not your own logged-in TikTok, so your view does not appear to the target and no account of yours is exposed. Still use a clean browser session; third-party viewers of unknown provenance may log your IP/queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Third-party TikTok scraper of unknown operator; useful but not authoritative, and may break when TikTok changes its site.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TikVib"
+    ],
     "tags": [
-      "instagram",
-      "Instagram Related Sites"
+      "tiktok",
+      "video-downloader",
+      "anonymous-viewer"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tikvib-com.md"
   },
   {
@@ -356033,45 +356127,57 @@
   },
   {
     "id": "wiza-co",
-    "name": "wiza.co",
-    "description": "OSINT tool: wiza.co.",
+    "name": "Wiza",
+    "description": "Use when you have a `name` + `employer-org` or a LinkedIn `social-profile` and want a verified work `email` and `phone` — returns `email`, `phone`, `employer-org`.",
     "url": "https://wiza.co/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a LinkedIn profile or name+company into a verified business email and phone number.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "name",
+      "employer-org"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "email",
+      "phone",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — a limited number of free verified credits to start, then pay-per-valid-email (you are only charged for contacts that verify). Registration required; real volume is paid.",
+    "opsec": "active",
+    "opsecNote": "This queries a B2B data broker for the target's contact details and requires you to register an account, so your identity/billing is tied to the lookup. The subject is not notified, but you are leaving a trail with Wiza. Use a dedicated investigative account, not a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trust": "community",
+    "trustNote": "Wiza is an established commercial sales-intelligence vendor; data is aggregated/inferred, so emails are \"verified deliverable\" but not guaranteed to be the person's primary or current address.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Wiza LinkedIn email finder"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "email-finder",
+      "b2b-data"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/wiza-co.md"
   },
   {
@@ -375091,43 +375197,51 @@
   {
     "id": "namint",
     "name": "NAMINT",
-    "description": "Enter first, middle (or nickname) and last name, and press Go! to see possible search patterns and links (Google, Yandex, Facebook, Twitter, Linkedin and others social media)",
+    "description": "Use when you have a `name` (first / middle / nickname / last) and want ready-made search patterns and pivot links across Google, Yandex, Facebook, Twitter, LinkedIn and more — returns `username`, `social-profile` leads.",
     "url": "https://seintpl.github.io/NAMINT/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a real name into candidate usernames, email patterns and pre-built social/search-engine query links.",
     "selectorsIn": [
-      "face",
-      "image",
+      "name",
       "username"
     ],
     "selectorsOut": [
+      "username",
       "social-profile",
-      "username"
+      "email"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source, runs entirely client-side in the browser (GitHub Pages); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The page runs locally in your browser and only assembles links — nothing is submitted to the target until YOU click a generated link. Clicking a link then queries that third party (Google/Facebook/etc.) directly, so treat each pivot with normal sock-puppet hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by Wiktor (seintpl), author of several well-known OSINT name/username tools; open-source and hosted on GitHub Pages, so the logic is inspectable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Name Intelligence",
+      "seintpl NAMINT"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username-enumeration",
+      "name-permutation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/username/namint.md"
   },
@@ -377090,37 +377204,52 @@
   {
     "id": "user-scanner",
     "name": "user-scanner",
-    "description": "OSINT tool: user-scanner.",
+    "description": "Use when you have a `username` or `email` and want to enumerate where it is registered across 300+ sites and breach sources — returns `social-profile`, `email` registration status, breach hints.",
     "url": "https://github.com/kaifcodec/user-scanner.git",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast CLI enumeration of a username/email across hundreds of platforms plus breach-intel enrichment.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python CLI; installable via PyPI (`pip install user-scanner`) or Nix. No account for core scanning; some enrichment sources may have their own limits.",
+    "opsec": "active",
+    "opsecNote": "The tool actively queries hundreds of sites for the username/email from your host. Use proxy rotation (built in) and a non-attributable IP; hitting many login/registration endpoints from one address is detectable and rate-limitable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project by kaifcodec; inspectable code, but like all username enumerators it produces false positives/negatives as sites change their signup responses.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "kaifcodec user-scanner"
+    ],
     "tags": [
-      "username-check"
+      "username-check",
+      "username-enumeration",
+      "email-enumeration",
+      "breach"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/user-scanner.md"
   },
   {
