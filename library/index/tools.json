@@ -212085,43 +212085,57 @@
   {
     "id": "recordsearch-naa-gov-au",
     "name": "recordsearch.naa.gov.au",
-    "description": "National archives of #Australia",
+    "description": "Use when you have a `name` and want Australian federal archival records — immigration/passenger arrivals, naturalisation, service files — returns name, address, and dob-era leads.",
     "url": "https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/SearchScreens/PassengerSearch.aspx",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the National Archives of Australia catalogue — especially the passenger-arrivals index (10M+ records) and naturalisation/immigration files.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "email",
       "name",
-      "phone"
+      "address",
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to search RecordSearch and view already-digitised records; NAA charges a copying fee to digitise files that are not yet online.",
+    "opsec": "passive",
+    "opsecNote": "A public government archive search — you query NAA's catalogue, not the subject, so no one is notified. Records are historical/archival (largely pre-1970s arrivals), so living-person privacy exposure is limited. Standard VPN/sock-puppet hygiene covers you; the search is not attributable to the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Australian federal government archive (National Archives of Australia); authoritative primary-source records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "trove",
+      "archives-library-information-center-alic"
+    ],
+    "aliases": [
+      "RecordSearch",
+      "National Archives of Australia",
+      "NAA passenger arrivals"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "archives",
+      "immigration-records"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/recordsearch-naa-gov-au.md"
   },
@@ -218358,13 +218372,13 @@
   {
     "id": "moriarty-project",
     "name": "Moriarty-Project",
-    "description": "Phone-number investigation toolkit.",
+    "description": "Use when you have a `phone` number and want to aggregate owner, spam-risk, related links, and possible social platforms in one CLI run — returns name and social-profile leads.",
     "url": "https://github.com/AzizKpln/Moriarty-Project",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Running a single local CLI pass over a phone number to pull carrier/owner hints, spam risk, related links, and candidate social platforms.",
     "selectorsIn": [
       "phone"
     ],
@@ -218372,25 +218386,39 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open source (GitHub). Some enrichment modules depend on third-party services/keys that may have changed since the last release (v4.1.2).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Runs locally and queries public phone-intel sources; it does NOT call or message the target, so the owner is not notified. However, some modules hit third-party APIs from your IP — run it from a VPN/sock-puppet host, and note that querying certain sources over their free tier may be rate-limited or logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular open-source project (~2k stars) by AzizKpln; community-maintained with 100+ commits, but relies on scraping/third-party endpoints that can silently break, so validate results.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "phoneinfoga",
+      "truecaller-search-engine"
+    ],
+    "aliases": [
+      "Moriarty",
+      "Moriarty Project"
+    ],
+    "tags": [
+      "phone",
+      "cli",
+      "phone-osint"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/phone/moriarty-project.md"
   },
@@ -222200,42 +222228,54 @@
   {
     "id": "whocalld",
     "name": "WhoCalld",
-    "description": "Historical reference only (defunct per project guidance)",
+    "description": "Use when you have a `phone` number and want caller-ID/spam context — DEFUNCT service, retained as a historical reference only; returns nothing usable today.",
     "url": "https://whocalld.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Historical reference only (defunct per project guidance)",
-    "input": "Phone number",
-    "output": "Previously provided caller identity and spam context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Historical reference only — the service is defunct and should not be relied on in live casework.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
     "status": "down",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "Marked defunct per CEO guidance; reliability and operational behavior are not trusted.",
+    "costNote": "When operational it offered a free reverse-lookup tier with paid/API access; the service is now defunct so pricing is moot.",
+    "opsec": "passive",
+    "opsecNote": "Do not use in active casework — the service is marked defunct and its current behavior (redirects, parked domain, or resold traffic) cannot be trusted. Treat any page that loads there as untrusted; do not enter a real target number.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Defunct per project guidance; historical reverse-caller-ID service with no verifiable current operation or data quality.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
     "deprecated": true,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "truecaller-search-engine"
+    ],
+    "aliases": [
+      "whocalld.com"
+    ],
+    "tags": [
+      "phone",
+      "reverse-caller-id"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/whocalld.md"
   },
   {
@@ -224676,46 +224716,56 @@
   {
     "id": "archives-library-information-center-alic",
     "name": "Archives Library Information Center (ALIC)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
-    "url": "http://www.archives.gov/research/alic/reference/vital-records.html",
+    "description": "Use when you have a `name` and want authoritative pointers to US vital/genealogy records (birth, death, marriage) — returns links toward address, employer-org, and family records.",
+    "url": "https://www.archives.gov/research/alic/reference/vital-records.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A US National Archives (NARA) reference hub that points you to where birth, death, marriage, and genealogy records actually live.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US federal government reference resource (NARA); no account or payment for the reference pages themselves. Records they point to may charge fees at the holding agency.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are reading NARA reference/link pages, not querying a database about the target, so nothing is attributable to the subject. Standard web hygiene (VPN/sock-puppet) is sufficient; the sensitive step is whichever record repository ALIC sends you to next.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party US National Archives (archives.gov) reference resource; authoritative as a signposting guide, though the actual records sit at state/agency repositories it links to.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "familysearch",
+      "deathindexes-com"
+    ],
+    "aliases": [
+      "ALIC",
+      "NARA vital records reference"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/archives-library-information-center-alic.md"
   },
@@ -233350,13 +233400,13 @@
   {
     "id": "cyprusregistry-com",
     "name": "cyprusregistry.com",
-    "description": "OSINT tool: cyprusregistry.com.",
+    "description": "Use when you have an `employer-org` or director `name` in Cyprus and want company officers, shareholders, and addresses — returns employer-org, address, and associate/name data.",
     "url": "https://cyprusregistry.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Previewing Cyprus company records — directors, secretaries, shareholders, addresses, and historical changes — via a searchable third-party mirror.",
     "selectorsIn": [
       "name",
       "address",
@@ -233367,29 +233417,42 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free preview of basic company data (key people, addresses); full reports (shareholders + addresses, historic changes, previous names/addresses, mortgages, documents) are paid and prepared within ~6 hours. Pricing not published on-page.",
+    "opsec": "passive",
+    "opsecNote": "Third-party aggregator (NOT the official Cyprus Registrar of Companies); it queries its own dataset, so the target is not notified and only the operator sees your search/IP. Buying a full report requires payment details — use appropriate payment hygiene and a sock-puppet account if the case is sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial aggregator mirroring Cyprus registry data, explicitly not affiliated with the official Registrar; useful and generally accurate, but confirm critical facts against the official registry.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "opencorporates",
+      "ebra-be"
+    ],
+    "aliases": [
+      "Cyprus Registry",
+      "cyprusregistry"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cyprusregistry-com.md"
   },
   {
@@ -235436,14 +235499,14 @@
   },
   {
     "id": "ebra-be",
-    "name": "ebra.be",
-    "description": "OSINT tool: ebra.be.",
+    "name": "ebra.be (EBRA Worldwide Registers)",
+    "description": "Use when you have an `employer-org` or `name` and need the official company register for a given country — returns a directory link toward employer-org, address, and director-name data.",
     "url": "https://ebra.be/worldwide-registers/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A country-by-country directory of official government business/company registries worldwide — the jump-off point to authoritative corporate records.",
     "selectorsIn": [
       "name",
       "address",
@@ -235454,29 +235517,41 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The EBRA directory page is free; it links out to each country's official registry, some of which charge per search or per document.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and reveals nothing about your target. OpSec considerations shift to the individual national registry you follow through to — some (e.g. UK Companies House) are fully anonymous, others may require an account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "EBRA (European Business Registry Association AISBL) is the official association of European and international business registers; its directory links to genuine government registries, not scrapers.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "opencorporates",
+      "cyprusregistry-com"
+    ],
+    "aliases": [
+      "EBRA",
+      "European Business Registry Association",
+      "worldwide company registers"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ebra-be.md"
   },
   {
@@ -242099,14 +242174,14 @@
   },
   {
     "id": "gov-uk-14",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "gov.uk (HM Land Registry HC1 — historical register/title plan)",
+    "description": "Use when you have a property `address` (or title number) and want a PAST edition of the HM Land Registry register/title plan — returns historical owner name and address records.",
     "url": "https://www.gov.uk/government/publications/historical-registertitle-plan-registration-hc1",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Ordering superseded (historical) editions of an England & Wales property register or title plan to recover former registered owners.",
     "selectorsIn": [
       "name",
       "address",
@@ -242117,29 +242192,44 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The HC1 application form itself is free to download, but HM Land Registry charges a statutory fee per historical edition supplied (consult the current HMLR fee schedule). Paid-but-official, not a free dataset.",
+    "opsec": "passive",
+    "opsecNote": "This is an official application to a government registry, not a covert query — you submit the HC1 form (and pay a fee), so the request is attributable to whoever files it. There is no notification to the current owner, but do not expect anonymity; the transaction is logged by HMLR.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party UK government (HM Land Registry via GOV.UK) — the authoritative source for England & Wales land title records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gov-uk-9",
+      "land-registry"
+    ],
+    "aliases": [
+      "HC1",
+      "Land Registry historical register",
+      "historical title plan"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "land-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-14.md"
   },
   {
@@ -251493,35 +251583,57 @@
   {
     "id": "michigan-state-records",
     "name": "Michigan State Records",
-    "description": "OSINT tool: Michigan State Records.",
+    "description": "Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns address, dob-era, and document-id leads.",
     "url": "https://michigan.staterecords.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A one-box aggregator of Michigan public records — court, criminal/arrest, inmate, vital, and property — as a starting index before going to official sources.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "name",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free name search and record-category selection, but full report content is largely gated behind a paid tier. Free official alternatives exist (Michigan DOC offender search, State Police, county courts).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "A privately-owned aggregator (NOT a government site and NOT an FCRA consumer-reporting agency) — do not use results for employment/tenant screening. Queries hit the aggregator's index, not the subject, so no notification reaches them; only the operator sees your search/IP. Use a sock-puppet browser and expect upsell/paywall prompts.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial records aggregator (staterecords.org network), not government-affiliated; coverage is broad but data is second-hand and must be confirmed at the official source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "state-corrections-links",
+      "familysearch"
+    ],
+    "aliases": [
+      "Michigan StateRecords.org",
+      "staterecords Michigan"
+    ],
+    "tags": [
+      "public-records",
+      "state-records",
+      "michigan"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/michigan-state-records.md"
   },
   {
@@ -252795,47 +252907,58 @@
   },
   {
     "id": "myewc-wales-2",
-    "name": "myewc.wales",
-    "description": "OSINT tool: myewc.wales.",
+    "name": "myewc.wales (Education Workforce Council register)",
+    "description": "Use when you have a `name` of a Welsh education practitioner and want registration status or disciplinary orders — returns employer-org context and document-id of any order.",
     "url": "https://www.myewc.wales/en/member-of-public/current-expired-disc-orders",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a teacher/education worker in Wales is registered and whether they carry a current or expired disciplinary order.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public access to the Education Workforce Council register and disciplinary-orders list; no account required for the public search.",
+    "opsec": "passive",
+    "opsecNote": "Official regulator's public register — searching it does not notify the practitioner and reveals nothing about you beyond your IP to the EWC. Standard passive lookup; use a sock-puppet browser only if the wider case is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party regulator — the Education Workforce Council (EWC, formerly GTCW) is the statutory body for the education workforce in Wales; the register is authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gov-uk-14"
+    ],
+    "aliases": [
+      "Education Workforce Council",
+      "EWC Wales register",
+      "GTCW register"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "regulator-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/myewc-wales-2.md"
   },
   {
@@ -267599,13 +267722,13 @@
   {
     "id": "state-corrections-links",
     "name": "State Corrections Links",
-    "description": "OSINT tool: State Corrections Links.",
-    "url": "https://corrections.com/links/30",
+    "description": "Use when you have a `name` and want to find the right state DOC inmate locator to check incarceration status — returns a directory pointing to name, dob, and inmate document-id data.",
+    "url": "https://www.corrections.com/links/30",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A directory of links to US state Department of Corrections inmate-locator and offender-search systems.",
     "selectorsIn": [
       "name"
     ],
@@ -267614,29 +267737,40 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free links directory; the state DOC locators it points to are also free to search.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a links directory and searching an official state inmate locator are both passive — the incarcerated subject is not notified, and you reveal only your IP to the state system. No login needed; use a sock-puppet browser for sensitive casework.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "corrections.com is a long-running corrections-industry portal; its links page is a community-curated index that points to authoritative official DOC locators (verify the target link is current, as directory entries can rot).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "michigan-state-records",
+      "vinelink"
+    ],
+    "aliases": [
+      "corrections.com links",
+      "DOC inmate locator directory"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/state-corrections-links.md"
   },
   {
@@ -299253,48 +299387,6 @@
     "_file": "library/tools/search-engines/one-liner-osint.md"
   },
   {
-    "id": "one-liner-osint-github-com",
-    "name": "One Liner OSINT (github.com)",
-    "description": "OSINT tool: One Liner OSINT (github.com).",
-    "url": "https://github.com/yogsec/One-Liner-OSINT?tab=readme-ov-file#-osint-dorks-for-finding-personal-information",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "searchengines",
-      "Search Engines"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/one-liner-osint-github-com.md"
-  },
-  {
     "id": "one-look-reverse-dictionary",
     "name": "One Look Reverse Dictionary",
     "description": "OSINT tool: One Look Reverse Dictionary.",
@@ -318330,44 +318422,54 @@
   {
     "id": "clearsky-app",
     "name": "clearsky.app",
-    "description": "OSINT tool: clearsky.app.",
+    "description": "Use when you have a Bluesky `username` (handle) and want block relationships, handle-change history, and account metadata — returns social-profile plus associate/name links.",
     "url": "https://clearsky.app/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Auditing a Bluesky handle — who blocks it, which block/starter-pack lists it is on, and its handle-change and registration history.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "100% free and anonymous; no login, signup, or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit ClearSky's own index of the public Bluesky (AT Protocol) firehose, not the target's account, so the subject is not notified. You browse without authenticating, so nothing ties the lookup to you — but the site operator sees your IP; use a VPN/sock-puppet browser if the investigation is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent community-run Bluesky analytics site widely referenced in the Bluesky tooling ecosystem; data is derived from the public AT Protocol firehose and is verifiable against Bluesky itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "bluesky"
+    ],
+    "aliases": [
+      "ClearSky",
+      "clearsky bluesky"
+    ],
     "tags": [
       "bluesky",
       "BlueSky / BSky Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/clearsky-app.md"
   },
   {
@@ -319270,14 +319372,14 @@
   },
   {
     "id": "dev-to",
-    "name": "dev.to",
-    "description": "OSINT tool: dev.to.",
-    "url": "https://dev.to/khenhey/how-to-find-your-mastodon-account-id-489d?comments_sort=oldest",
+    "name": "dev.to (Find a Mastodon account ID)",
+    "description": "Use when you have a Mastodon `username`/handle and want the numeric account ID via the public API — returns social-profile metadata to pivot into Mastodon tooling.",
+    "url": "https://dev.to/khenhey/how-to-find-your-mastodon-account-id-489d",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A technique reference for resolving a Mastodon handle to its numeric account ID (and profile JSON) via the instance's public lookup API.",
     "selectorsIn": [
       "username",
       "name"
@@ -319286,29 +319388,40 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public-API technique documented in a free dev.to article; no account or key needed for the lookup endpoint.",
+    "opsec": "passive",
+    "opsecNote": "The Mastodon `accounts/lookup` endpoint reads public profile data and does not notify the account owner. The request goes to the target's home instance, whose admins can see your IP in server logs — use a VPN/sock-puppet if the instance is small and the case sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A community how-to article; the underlying method is the standard, documented Mastodon public API, so the technique is reliable even though the article is informal.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "fedidb",
+      "clearsky-app"
+    ],
+    "aliases": [
+      "Mastodon account ID lookup",
+      "Mastodon accounts/lookup"
+    ],
     "tags": [
       "mastodon",
-      "Mastodon Related Sites"
+      "Mastodon Related Sites",
+      "fediverse"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/dev-to.md"
   },
   {
@@ -322463,13 +322576,13 @@
   {
     "id": "facebook-search-tool-2",
     "name": "Facebook Search Tool",
-    "description": "OSINT tool: Facebook Search Tool.",
+    "description": "Use when you have a Facebook profile `username`/ID or a `name` and want to run advanced Graph-style queries (photos-of, photos-by, places, connections) — returns social-profile, image, and associate leads.",
     "url": "https://netbootcamp.org/facebook.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Building advanced Facebook Graph-search URLs from a profile ID to surface tagged photos, places, and connections that keyword search hides.",
     "selectorsIn": [
       "username",
       "name"
@@ -322479,28 +322592,39 @@
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web-based query builder from NetBootcamp; no payment. You must supply your own logged-in Facebook account to execute most generated queries.",
+    "opsec": "active",
+    "opsecNote": "The builder itself is passive, but every generated link opens inside Facebook under YOUR logged-in session — Facebook logs the query and it can surface you in the target's \"people you may know\". Always run generated queries from a dedicated sock-puppet Facebook account, never a real/attributable one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing OSINT training resource by Bob Brasich (NetBootcamp); it only assembles Facebook's own search URLs, so results come from Facebook, not a third-party scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "find-facebook-id"
+    ],
+    "aliases": [
+      "NetBootcamp Facebook Search",
+      "Facebook Graph Search Tool"
+    ],
     "tags": [
       "facebook"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-search-tool-2.md"
   },
   {
@@ -343609,13 +343733,13 @@
   {
     "id": "skyzoo-blue",
     "name": "skyzoo.blue",
-    "description": "OSINT tool: skyzoo.blue.",
+    "description": "Use when you have a Bluesky `username` (handle) and want account statistics, starter-pack membership, and network rankings — returns social-profile and name context.",
     "url": "https://skyzoo.blue/stats",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bluesky analytics — per-account stats, starter-pack membership, top-account rankings, and post permalink extraction.",
     "selectorsIn": [
       "username",
       "name"
@@ -343624,29 +343748,38 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (donation-supported via Ko-fi/GitHub Sponsors); no login or payment to view stats.",
+    "opsec": "passive",
+    "opsecNote": "Reads the public Bluesky (AT Protocol) network via skyzoo's own tooling, not the target's account, so the subject is not notified. Only the site operator sees your IP; use a VPN/sock-puppet browser for sensitive lookups. Do not authenticate.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source community project by jycouet; data derives from the public AT Protocol and is verifiable against Bluesky itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "clearsky-app"
+    ],
+    "aliases": [
+      "Sky Zoo",
+      "skyzoo"
+    ],
     "tags": [
       "bluesky",
       "BlueSky / BSky Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/skyzoo-blue.md"
   },
   {
@@ -377340,39 +377473,57 @@
   },
   {
     "id": "username-search-2",
-    "name": "Username Search",
-    "description": "IDCrawl username search across major platforms.",
+    "name": "Username Search (IDCrawl)",
+    "description": "Use when you have a `username` and want the social-media profiles and possible real identity behind it across 100+ platforms — returns social-profile, name, and address leads.",
     "url": "https://www.idcrawl.com/username",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "One-box username lookup that spreads a handle across Instagram, TikTok, X, and 100+ networks and links it to real-identity/people-search data.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Username search is free with no signup for the social-profile results; deeper people-search enrichment (real identity, addresses, public records) is gated behind IDCrawl's paid people-search product.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "IDCrawl queries its own aggregated index, not the target's accounts, so no notification reaches the subject. Only IDCrawl (and your network) sees your query and IP — use a VPN/sock-puppet browser for sensitive work. Do not log into any surfaced profile from your real account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known commercial people-search aggregator; username results are generally reliable pointers, but auto-matched \"real identity\"/address claims are probabilistic and must be corroborated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "sherlock",
+      "whatsmyname",
+      "clearsky-app"
+    ],
+    "aliases": [
+      "IDCrawl username search",
+      "idcrawl"
+    ],
+    "tags": [
+      "username",
+      "people-search",
+      "social-media"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/username/username-search-2.md"
   },
