@@ -135902,28 +135902,30 @@
   {
     "id": "whereisthisplace",
     "name": "WhereIsThisPlace",
-    "description": "Free AI guess-the-location from a photo.",
+    "description": "Use when you have an `image` and want an AI's best guess at where it was taken — returns coordinates, a place name and supporting reasoning.",
     "url": "https://whereisthisplace.org",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Fast first-pass AI geolocation of a photo when you have no obvious landmark to search.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use (framed as a free trial / free tier); no install. Heavy or bulk use may hit limits.",
+    "opsec": "passive",
+    "opsecNote": "You upload the target's photo to a third-party AI service — that image (and any EXIF it still carries) leaves your control and may be logged or retained by the operator. Strip metadata and crop out sensitive/identifying detail before upload unless you accept exposing it, and use a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community/indie AI geolocation site with no named accountable operator; it combines vision models, EXIF parsing, OCR and LLM reasoning. Treat its guesses as leads to verify, never as proof.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -135932,12 +135934,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Where Is This Place"
+    ],
     "tags": [
-      "kimi-2026"
+      "kimi-2026",
+      "geolocation",
+      "ai-geolocation"
     ],
     "source": "kimi-geo",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/whereisthisplace.md"
   },
@@ -162788,45 +162794,51 @@
   },
   {
     "id": "zamzar-com",
-    "name": "zamzar.com",
-    "description": "OSINT tool: zamzar.com.",
+    "name": "Zamzar",
+    "description": "Use when you have an `image`/video/document (a file or a URL) in an awkward format and want it converted to something analysable — returns the converted file.",
     "url": "https://www.zamzar.com/url/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Converting media/documents (including from a URL) into a standard format so other OSINT tools can ingest them.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier converts files up to ~50MB and keeps results ~24h; larger files and higher volume need a paid account.",
+    "opsec": "passive",
+    "opsecNote": "You upload the file (or hand Zamzar a URL to fetch) to a third-party cloud converter — the content, and any metadata it carries, leaves your control and may be retained briefly on their servers. Strip anything sensitive first, and note that converting via URL means Zamzar's servers fetch the source, not you (which can be a feature or a leak depending on the source).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Zamzar is a long-established, reputable commercial file-conversion service. It is a utility, not an investigative data source — it neither identifies faces nor finds profiles despite how it was tagged.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "zamzar.com",
+      "Zamzar converter"
+    ],
     "tags": [
       "videosites",
-      "Video Related Sites"
+      "Video Related Sites",
+      "file-conversion",
+      "utility"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/zamzar-com.md"
   },
   {
@@ -176671,37 +176683,53 @@
   {
     "id": "telegram-nearby-map",
     "name": "Telegram Nearby Map",
-    "description": "OSINT tool: Telegram Nearby Map.",
+    "description": "Use when you have a `geolocation` and want to find Telegram users who enabled \"People Nearby\" there — returns nearby profiles plotted on a map with a trilaterated distance estimate.",
     "url": "https://github.com/tejado/telegram-nearby-map",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering and roughly locating Telegram users who have the \"People Nearby\" feature switched on around a given point.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (Node.js); you supply your own Telegram account and API credentials.",
+    "opsec": "active",
+    "opsecNote": "Using Telegram's \"People Nearby\" makes YOUR account visible to others nearby and requires a logged-in Telegram account tied to a phone number — use a dedicated burner account/number, never your real one. Querying is active on Telegram's side; the accounts you enumerate are self-exposing, but you are participating in the same feature and can be seen back.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "account-login"
+    ],
+    "bestInteractionPattern": "docker",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "trustNote": "A popular open-source project (tejado) using Telegram's official TDLib and OpenStreetMap. Last substantially updated in 2023; Telegram deliberately coarsened nearby-distance precision, so exact trilateration is degraded.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "telegram-nearby-map",
+      "tejado nearby map"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "geolocation",
+      "people-nearby"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram-nearby-map.md"
   },
   {
@@ -238577,47 +238605,58 @@
   },
   {
     "id": "findmypast-co-uk",
-    "name": "findmypast.co.uk",
-    "description": "OSINT tool: findmypast.co.uk.",
+    "name": "Findmypast",
+    "description": "Use when you have a `name` (and rough era/place) and want UK/Irish genealogy and historical records — returns census, BMD, electoral, military and newspaper records revealing addresses, family and dates.",
     "url": "https://www.findmypast.co.uk/home.jsp",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "UK & Irish family-history research — census, birth/marriage/death, electoral rolls and newspapers to reconstruct a person's history and relatives.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
+      "associate",
+      "dob",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and search the indexes (hit counts and snippets), but viewing full records/images requires a paid subscription or pay-as-you-go credits.",
+    "opsec": "passive",
+    "opsecNote": "Searching queries Findmypast's own record indexes; the subject is never contacted. A subscription ties searches to an account and a payment method — use a sock-puppet identity, and cancel to avoid auto-renewal. Handle any living-person data (recent electoral rolls) within your legal basis.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Findmypast is a major, established UK/Irish genealogy provider with digitised primary-source collections (incl. the British Newspaper Archive). Records are authoritative primary sources; transcription/OCR errors occur.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk",
+      "ie"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "findmypast.co.uk",
+      "Find My Past"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "genealogy",
+      "census"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/findmypast-co-uk.md"
   },
   {
@@ -257382,13 +257421,13 @@
   {
     "id": "oklahoma-offender-search",
     "name": "Oklahoma Offender Search",
-    "description": "OSINT tool: Oklahoma Offender Search.",
+    "description": "Use when you have a `name` and want to confirm someone is/was in Oklahoma state custody or supervision — returns offender records with DOB, DOC number, facility/status and offense detail.",
     "url": "https://okoffender.doc.ok.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and locating an adult in Oklahoma Department of Corrections custody, probation or parole.",
     "selectorsIn": [
       "name"
     ],
@@ -257397,29 +257436,37 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public government record search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public Oklahoma DOC lookup — searching does not notify or reach the subject. Requests hit an Oklahoma state server; use a sock-puppet browser if you'd rather your searches not be logged against your IP, and handle returned PII within your legal basis.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Oklahoma Department of Corrections; authoritative first-party government data covering state custody/supervision. Recent bookings, releases and transfers can lag.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Oklahoma DOC offender lookup",
+      "OK DOC inmate search",
+      "okoffender"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/oklahoma-offender-search.md"
   },
   {
@@ -262270,47 +262317,53 @@
   },
   {
     "id": "public-records-directory",
-    "name": "Public Records Directory",
-    "description": "US nationwide directory of publicly available record resources",
+    "name": "Public Records Directory (OnlineSearches)",
+    "description": "Use when you have a `name`/location and want the right official record source for it — returns a curated directory of free US public-records databases indexed by state, county and record type.",
     "url": "http://publicrecords.onlinesearches.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding which official county/state database holds the record type you need (property, court, vital, inmate, licenses) for a given US location.",
     "selectorsIn": [
       "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "address",
+      "document-id",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory of links to official/free public-records sources; the underlying government databases are also free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a link directory — you leave it to search the actual government databases, each a passive public-records lookup that does not notify the subject. No account needed. Run downstream searches from a sock-puppet browser to avoid tying your sessions together.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running commercial directory (OnlineSearches) that catalogs links to official government and free public-records sources. It hosts no data itself; verify each linked source and beware sponsored \"background check\" upsells interspersed with the free links.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlineSearches",
+      "publicrecords.onlinesearches.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "public-records-index"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/public-records-directory.md"
   },
@@ -263914,47 +263967,55 @@
   },
   {
     "id": "rip-ie",
-    "name": "rip.ie",
-    "description": "OSINT tool: rip.ie.",
+    "name": "RIP.ie",
+    "description": "Use when you have a `name` (and rough locality) of someone who may have died in Ireland and want the death/funeral notice — returns death notices with locality, family members (mourners) and funeral detail.",
     "url": "https://rip.ie/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming an Irish death and harvesting the family/associate network and locality from the published notice.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read notices; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public death notice does not contact or notify anyone. The notices are voluntarily published by families, but they contain living relatives' names — handle that PII responsibly and within your legal basis. Use a sock-puppet browser if you'd rather not log searches against your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "RIP.ie is the dominant, long-established death-notice service in Ireland used by funeral directors nationally; notices are family/funeral-director sourced and reliable, though names and localities are as families choose to publish them.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "rip.ie",
+      "Irish death notices"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "death-notices",
+      "obituaries"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rip-ie.md"
   },
   {
@@ -267702,14 +267763,14 @@
   },
   {
     "id": "south-dakota",
-    "name": "South Dakota",
-    "description": "OSINT tool: South Dakota.",
+    "name": "South Dakota DOC Offender Lookup",
+    "description": "Use when you have a `name` and want to confirm someone is/was in South Dakota state custody — returns offender records with DOB, ID number, facility/status and offense detail.",
     "url": "https://doc.sd.gov/adult/lookup",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and locating an adult in South Dakota Department of Corrections custody or supervision.",
     "selectorsIn": [
       "name"
     ],
@@ -267718,29 +267779,36 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public government record search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "This is a public state-government inmate lookup — searching it does not notify the subject and leaves no trace with them. Requests hit a South Dakota state server; use a sock-puppet browser if you don't want your searches logged against your IP. Handle any returned PII in line with your legal basis.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the South Dakota Department of Corrections; an authoritative first-party government record source. Records reflect state custody/supervision only and can lag on recent releases/transfers.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SD DOC offender lookup",
+      "South Dakota inmate search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/south-dakota.md"
   },
   {
@@ -373617,28 +373685,31 @@
   {
     "id": "alfred-osint",
     "name": "Alfred OSINT",
-    "description": "Open-source tool for discovering social media accounts by username.",
+    "description": "Use when you have a `username` and want to find where it exists across social platforms — returns a list of matching profile URLs (a Sherlock-family enumerator).",
     "url": "https://github.com/Alfredredbird/alfred",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Enumerating social media accounts across sites from a username",
+    "bestFor": "Enumerating social-media and web accounts across many sites from a single username, from the command line.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source; you run it yourself, so cost is only your compute/time.",
+    "opsec": "passive",
+    "opsecNote": "The tool requests each candidate profile URL directly from the target sites, so those sites see traffic from YOUR IP (not the subject's). Run it from a VPS/VPN or sock-puppet network if you don't want your address in those sites' logs. It does not notify the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community-maintained open-source project by GitHub user Alfredredbird; not independently audited. Like all username enumerators it produces false positives (default profile pages) and false negatives (login-walled sites) — verify each hit by hand.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -373647,14 +373718,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Alfred",
+      "Alfredredbird alfred"
+    ],
     "tags": [
       "username-search",
       "account-enumeration",
-      "python"
+      "python",
+      "sherlock-family"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/username/alfred-osint.md"
   },
