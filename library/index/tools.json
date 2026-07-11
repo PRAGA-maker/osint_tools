@@ -108625,13 +108625,13 @@
   {
     "id": "phonebook-cz",
     "name": "Phonebook.cz",
-    "description": "Intelligence X Phonebook: enumerates emails/subdomains/URLs for a domain.",
+    "description": "Use when you have a `domain` and want to enumerate every email address, subdomain, and URL Intelligence X has indexed for it — returns email and domain.",
     "url": "https://phonebook.cz/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-enumerating email addresses and subdomains associated with a domain via Intelligence X's index.",
     "selectorsIn": [
       "domain",
       "email"
@@ -108640,25 +108640,36 @@
       "email",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to query with a capped number of returned results per search; the full result set and API require an Intelligence X account (paid tiers). The free web tier is enough for most enumeration.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries Intelligence X's own index — it does not touch the target's mail server or website, so nothing is sent to the target's infrastructure. Only your query and IP reach IntelX.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A front-end to Intelligence X, a reputable data-search company. Results are as complete as IntelX's crawl; a null result means \"not in their index\", not \"does not exist\".",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Phonebook",
+      "IntelX Phonebook",
+      "phonebook.cz"
+    ],
+    "tags": [
+      "email-enumeration",
+      "domain-recon",
+      "intelligence-x"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/phonebook-cz.md"
   },
@@ -162352,45 +162363,52 @@
   },
   {
     "id": "youtubetranscript-com",
-    "name": "youtubetranscript.com",
-    "description": "OSINT tool: youtubetranscript.com.",
+    "name": "YouTube Transcript",
+    "description": "Use when you have a YouTube video (a `social-profile` URL) and want its full spoken transcript to mine for names, places and details — returns name, associate and geolocation leads mentioned on-camera.",
     "url": "https://youtubetranscript.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the full text transcript of a YouTube video so it can be read, searched, and mined for entities.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account. Works on videos that have captions/auto-captions available.",
+    "opsec": "passive",
+    "opsecNote": "Fetches the public transcript server-side — it does not add a view from your session, subscribe, or comment, so the uploader is not alerted. Only your IP touches the transcript site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple utility that surfaces YouTube's own caption track; accuracy of the text depends on whether captions are human-made or auto-generated (auto-captions mis-hear names/places).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "YouTube Transcript",
+      "youtubetranscript.com"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "transcript"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/youtubetranscript-com.md"
   },
   {
@@ -207642,35 +207660,58 @@
   {
     "id": "intelligence-x-person-tools",
     "name": "Intelligence X Person Tools",
-    "description": "Collection of person-pivot search tools from Intelligence X.",
+    "description": "Use when you have a `name`, `email`, `phone`, or `username` and want a launchpad of prebuilt search links into many people-search services at once — returns social-profile, address and name leads.",
     "url": "https://intelx.io/tools?tab=person",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A one-page dashboard that generates ready-made queries into dozens of third-party people/identity databases.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "phone",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "address",
+      "name",
+      "phone"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The Intelligence X tools dashboard (URL generator) is free and needs no IntelX account. Some of the third-party services it links to have their own paywalls/logins.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The dashboard itself only builds links — it does not query anyone until you click through. Once you do, you are interacting with third-party brokers (Spokeo, Radaris, ThatsThem, etc.), which may log your IP; some require you to be logged in. Use sock-puppet accounts and a VPN for the onward services.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by Intelligence X, a reputable data-search firm; it is a curated link launcher, so quality of results comes from the third-party services, not IntelX itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "IntelX Person Tools",
+      "Intelligence X Tools person tab",
+      "intelx.io tools person"
+    ],
+    "tags": [
+      "people-search",
+      "link-launcher",
+      "intelligence-x"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/intelligence-x-person-tools.md"
   },
   {
@@ -208835,47 +208876,54 @@
   },
   {
     "id": "lullar-com-3-appspot-com",
-    "name": "lullar-com-3.appspot.com",
-    "description": "OSINT tool: lullar-com-3.appspot.com.",
+    "name": "Lullar Profile Search",
+    "description": "Use when you have an `email`, `username`, or `name` and want to sweep 175+ platforms for matching public profiles in one query — returns social-profile and name.",
     "url": "https://lullar-com-3.appspot.com/en",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot parallel profile lookup across 175+ social/web platforms by email, username, or name.",
     "selectorsIn": [
+      "email",
+      "username",
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
       "social-profile",
-      "dob"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "100% free, no signup. The operator advertises anonymous, no-log searches over HTTPS.",
+    "opsec": "passive",
+    "opsecNote": "Lullar checks each platform for a matching public profile on your behalf; the target is not notified. Only your query and IP touch Lullar. Verify hits yourself, as platform \"profile exists\" checks can false-positive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-standing but lightly-documented profile-search front-end; it aggregates per-platform existence checks, which are convenient but not authoritative — confirm each result.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Lullar",
+      "Lullar Com",
+      "lullar-com-3.appspot.com"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "profile-search",
+      "username-enumeration"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/lullar-com-3-appspot-com.md"
   },
   {
@@ -217331,37 +217379,50 @@
   {
     "id": "freecarrierlookup",
     "name": "FreeCarrierLookup",
-    "description": "OSINT tool: FreeCarrierLookup.",
+    "description": "Use when you have a `phone` number and want to identify its carrier and whether it is mobile or landline — returns the carrier name, line type and (US/CA) email-to-SMS/MMS gateway.",
     "url": "https://freecarrierlookup.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free carrier and line-type (mobile vs landline) identification for a phone number.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Completely free; no account or email required. A per-lookup CAPTCHA is the only gate.",
+    "opsec": "passive",
+    "opsecNote": "This performs a network/carrier database (HLR-style) lookup — it identifies the carrier but does NOT ring, text, or otherwise alert the subscriber. Passive toward the target; only your IP touches the site. Use a VPN if you don't want the query tied to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running free carrier-lookup service; carrier/line-type results are generally accurate for most countries, though number portability can make the \"current carrier\" lag.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Free Carrier Lookup",
+      "freecarrierlookup.com"
+    ],
     "tags": [
-      "phone-number-research"
+      "phone-number-research",
+      "carrier-lookup"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/freecarrierlookup.md"
   },
   {
@@ -261250,47 +261311,51 @@
   },
   {
     "id": "propertypriceregisterireland-com",
-    "name": "propertypriceregisterireland.com",
-    "description": "OSINT tool: propertypriceregisterireland.com.",
+    "name": "Property Price Register Ireland",
+    "description": "Use when you have an Irish `address` (or area) and want to confirm a residential sale — date and price — at that property — returns address plus the transaction date and amount.",
     "url": "https://propertypriceregisterireland.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming when an Irish residential property sold and for how much, as a timeline/ownership-change signal.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; a cleaner front-end over the official Residential Property Price Register data (PSRA).",
+    "opsec": "passive",
+    "opsecNote": "Public transaction records; searching does not identify or notify anyone. Only your IP touches the site. Note the register lists no buyer/seller names — only address, date, and price.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party mirror/search UI over Ireland's official Residential Property Price Register (an authoritative government dataset); the underlying data is authoritative, the presentation is community-run.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PPR Ireland",
+      "Irish Property Price Register",
+      "propertypriceregisterireland.com"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/propertypriceregisterireland-com.md"
   },
   {
@@ -315412,14 +315477,14 @@
   },
   {
     "id": "app-fanpagekarma-com",
-    "name": "app.fanpagekarma.com",
-    "description": "OSINT tool: app.fanpagekarma.com.",
+    "name": "Fanpage Karma Facebook Catalogue",
+    "description": "Use when you have a `name` or `username` and want to find and compare public Facebook (and other social) pages/profiles by keyword — returns social-profile and name.",
     "url": "https://app.fanpagekarma.com/facebook-catalogue",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Keyword-searching a directory of public Facebook pages to locate a person's or brand's page.",
     "selectorsIn": [
       "username",
       "name"
@@ -315428,29 +315493,37 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The Facebook catalogue/page-search is free to browse; deeper analytics (engagement, posting-time analysis, historical metrics) require a Fanpage Karma account and paid plan.",
+    "opsec": "passive",
+    "opsecNote": "Searches a directory/analytics index of public pages — it does not visit the page as you or notify its admin. Only your IP touches Fanpage Karma. Good for locating a page without leaving a footprint on Facebook itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Fanpage Karma is an established commercial social-analytics company; its public catalogue is a legitimate page-discovery index, though coverage skews to public Pages rather than personal profiles.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FanpageKarma",
+      "Fanpage Karma Catalogue",
+      "app.fanpagekarma.com"
+    ],
     "tags": [
       "facebook",
-      "Facebook General Links"
+      "Facebook General Links",
+      "page-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/app-fanpagekarma-com.md"
   },
   {
@@ -338645,37 +338718,58 @@
   {
     "id": "predicta-search",
     "name": "Predicta Search",
-    "description": "OSINT tool: Predicta Search.",
+    "description": "Use when you have an `email`, `phone`, `username`, or `name` and want a correlated digital-footprint report of linked accounts across many platforms — returns social-profile, name and image.",
     "url": "https://predictasearch.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "One-query reverse lookup of an email/phone into a correlated set of linked social and web accounts.",
+    "selectorsIn": [
+      "email",
+      "phone",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Registration required; runs on a credit model. There is a free trial (no card), after which searches consume purchased credits. Without an account/credits you get no results.",
+    "opsec": "passive",
+    "opsecNote": "A third-party correlation engine — it queries public sources and its own data, and does not notify the target. However, you must create an account and pay, so your identity is known to the vendor; use investigation-dedicated account details and be mindful the vendor logs your queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial OSINT vendor (Predicta Lab) widely used by investigators; results are correlated leads that still require manual verification and can include false links.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "PredictaSearch",
+      "Predicta Lab",
+      "predictasearch.com"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "real-time-search-social-media-search-and-general-social-media-tools",
+      "digital-footprint",
+      "reverse-lookup"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/predicta-search.md"
   },
   {
@@ -345607,13 +345701,13 @@
   {
     "id": "stalkface",
     "name": "StalkFace",
-    "description": "Toolkit for Facebook profile investigation and graph search.",
+    "description": "Use when you have a Facebook `social-profile` (or numeric ID) and want prebuilt Facebook Graph-search queries for their photos, activity and connections — returns social-profile and image links.",
     "url": "https://stalkface.com/en/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Running prebuilt Facebook profile investigation queries",
+    "bestFor": "Generating ready-made Facebook Graph-search URLs (photos of, posts by, places visited) for a given profile.",
     "selectorsIn": [
       "social-profile",
       "name"
@@ -345622,15 +345716,18 @@
       "social-profile",
       "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free query generator; no account on StalkFace itself, but the generated links must be run while logged into Facebook.",
+    "opsec": "active",
+    "opsecNote": "StalkFace only builds URLs, but running them requires you to be logged into Facebook, and those searches execute against Facebook under YOUR account — attributable, and Facebook logs the activity. Use a sock-puppet Facebook account, never your real one. Do not send friend requests or interact.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party query builder for Facebook Graph search. Facebook deprecated much of Graph search in 2019, so many generated queries no longer return results; treat it as hit-or-miss.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -345639,14 +345736,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Stalk Face",
+      "stalkface.com"
+    ],
     "tags": [
       "facebook",
       "graph-search",
       "profile-investigation"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/stalkface.md"
   },
