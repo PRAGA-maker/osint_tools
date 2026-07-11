@@ -172193,38 +172193,61 @@
   },
   {
     "id": "himerasearch",
-    "name": "HimeraSearch",
-    "description": "OSINT tool: HimeraSearch.",
+    "name": "HimeraSearch (Telegram probiv bot)",
+    "description": "Use when you have a `phone`, `name`, `email` or `vehicle-plate` and want a Russian-market data-broker bot to return aggregated identity, contact and record data — returns address, dob, associate, employer-org and vehicle links. Legally and ethically sensitive.",
     "url": "https://t.me/HimeraNeGBL8Pro1dp_Search_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestFor": "Aggregated \"probiv\"-style lookups (phone/name/email/plate → identity, contacts, records) focused on Russia/CIS data.",
+    "selectorsIn": [
+      "phone",
+      "name",
+      "email",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "associate",
+      "employer-org",
+      "vehicle-plate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Limited free lookups, then paid — the bot is tied to the Unirate24 counterparty-verification/credit system; deep results require payment. Treat as a paid service.",
+    "opsec": "active",
+    "opsecNote": "This is a data-broker (\"probiv\") bot querying aggregated and often breach-sourced databases. It is queried from a Telegram account (use a burner/sock-puppet, never your real account and never your real phone as the account number). Its data provenance is largely illegal/leaked; using it against a person may itself be unlawful depending on jurisdiction. Do not enter targets you are not legally authorised to investigate, and do not treat outputs as clean.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate",
+      "payment-wall-partial"
+    ],
+    "bestInteractionPattern": "chrome-mcp",
+    "trust": "unverified",
+    "trustNote": "An anonymous Russian-market data-broker bot drawing on breached and grey-market databases; accuracy is inconsistent and the sourcing is not lawful or auditable. Corroborate everything and understand the legal exposure.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ru",
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Himera Search",
+      "Химера"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "probiv",
+      "data-broker"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/himerasearch.md"
   },
   {
@@ -173647,38 +173670,52 @@
   },
   {
     "id": "mothersearchbot",
-    "name": "MotherSearchBot",
-    "description": "OSINT tool: MotherSearchBot.",
+    "name": "MotherSearchBot (Telegram search)",
+    "description": "Use when you have a `username`, `name` or keyword and want to search across Telegram for channels, groups and messages mentioning it — returns social-profile presence and associate links inside Telegram.",
     "url": "https://t.me/MotherSearchBot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword/name search of Telegram channels, groups and discussions to locate a subject's presence or mentions.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "costNote": "Free to use in Telegram; some search bots of this class add paid tiers for deeper history, but the core search runs without payment.",
+    "opsec": "active",
+    "opsecNote": "You must query the bot from a Telegram account — use a sock-puppet, not your real account. The operator can log your queries. Searching does not notify the subject, but joining or interacting with any channel the search surfaces is visible to that channel's admins.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "chrome-mcp",
+    "trust": "unverified",
+    "trustNote": "An anonymously operated Telegram search bot; results are unranked and unvetted, and coverage of Telegram's private/closed spaces is inherently partial. Corroborate any hit by opening the source directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MotherSearch"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "search-engine"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/mothersearchbot.md"
   },
   {
@@ -176114,32 +176151,35 @@
   {
     "id": "telegram-finder-telegram-finder-io",
     "name": "Telegram Finder (telegram-finder.io)",
-    "description": "Resolve usernames/phones to Telegram presence and find related groups.",
+    "description": "Use when you have a `phone`, `email` or LinkedIn `social-profile` and want to find the matching Telegram account — returns the linked Telegram social-profile and basic account info.",
     "url": "https://telegram-finder.io",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Contact enrichment — resolving a phone/email/LinkedIn to a Telegram account and username.",
     "selectorsIn": [
-      "username",
-      "phone"
+      "phone",
+      "email",
+      "social-profile"
     ],
     "selectorsOut": [
       "social-profile",
+      "username",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier gives 2 phone-based lookups per day with basic info. Premium is ~$29.90/month (100 hourly lookups plus email/LinkedIn enrichment, 30 monthly credits); failed enrichments don't consume credits, successful reverse lookups do.",
+    "opsec": "active",
+    "opsecNote": "You are submitting the target's phone/email to a third-party enrichment service that logs and monetises queries. The subject is not notified, but the query is tied to your session/account and the operator sees what you look up. Use a research account and never enrich identifiers you are not authorised to investigate.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "payment-wall-partial"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial contact-enrichment service of unknown provenance; results are probabilistic matches from aggregated data, so a returned account is a lead to confirm, not proof of ownership.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -176147,13 +176187,16 @@
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "telegram-finder.io"
+    ],
     "tags": [
-      "kimi-2026"
+      "telegram",
+      "contact-enrichment"
     ],
     "source": "kimi-telegram",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/messaging/telegram-finder-telegram-finder-io.md"
   },
@@ -178210,38 +178253,53 @@
   },
   {
     "id": "username-to-id-bot",
-    "name": "username_to_id_bot",
-    "description": "OSINT tool: username_to_id_bot.",
+    "name": "username_to_id_bot (Telegram)",
+    "description": "Use when you have a Telegram `username` (or forwarded message) and want the stable numeric user/group/channel ID behind it — returns a device-id-style Telegram numeric ID for tracking across handle changes.",
     "url": "https://t.me/username_to_id_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving a Telegram @username to its permanent numeric ID (and the reverse for groups/channels).",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "device-id",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free Telegram bot; no payment. Requires a Telegram account to message the bot.",
+    "opsec": "active",
+    "opsecNote": "You must query the bot from a Telegram account, so use a sock-puppet account — not your real one. The bot operator can see who queries it and which usernames you look up. The target is not notified when you resolve their ID, but forwarding one of their messages to the bot reveals metadata to a third party you don't control.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "chrome-mcp",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A popular community Telegram utility bot widely cited in OSINT lists; it works reliably but is operated by an unknown third party, so treat it as untrusted infrastructure for anything sensitive.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "username_to_id_bot",
+      "Telegram username to ID"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "id-resolver"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/username-to-id-bot.md"
   },
   {
@@ -210488,16 +210546,19 @@
   },
   {
     "id": "people-looker-us",
-    "name": "People Looker (US)",
-    "description": "OSINT tool: People Looker (US).",
+    "name": "PeopleLooker (US)",
+    "description": "Use when you have a US `name`, `phone`, `email` or `address` and want a consumer background-report aggregator to pull contact history, relatives and records — returns address, phone, email, associate, social-profile and dob.",
     "url": "https://www.peoplelooker.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Consolidated US background reports (contact history, relatives, court/criminal records) from a name, phone, email or address.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "email",
+      "address"
     ],
     "selectorsOut": [
       "address",
@@ -210507,62 +210568,89 @@
       "social-profile",
       "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Not genuinely free. A search runs and shows a teaser (city, age, possible relatives) at no cost, but reading any full report requires a paid subscription (typically a low-cost multi-day trial that auto-renews into a monthly plan). Budget for the subscription and cancel deliberately.",
+    "opsec": "active",
+    "opsecNote": "You must create an account and pay, so the query is tied to your billing identity — never use a real personal card/identity for target research. PeopleLooker also warns subjects can opt out, and it may retain your search history. The subject is not notified of an individual lookup, but the transaction ties the search to you; use a dedicated research account and payment method.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial data broker (BeenVerified family of brands). Data is aggregated from public records and commercial sources — useful but not authoritative; expect stale and mismatched entries.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "PeopleLooker",
+      "peoplelooker.com"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "background-check",
+      "data-broker"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/people-looker-us.md"
   },
   {
     "id": "people-search",
-    "name": "People Search",
-    "description": "OSINT tool: People Search.",
+    "name": "People Search (iTools)",
+    "description": "Use when you have a `name` and want a curated jump-off directory of people-search engines to run it through — returns links to address, phone, email and social-profile lookup tools.",
     "url": "http://itools.com/search/people-search",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A hand-picked launchpad of people-finder services (Spokeo, Wink, reverse phone/address, etc.) to run one name across several engines.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "email",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The iTools directory is free to browse. The individual tools it links to are a mix of free and paywalled (Spokeo and similar background-check services charge for full reports).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the iTools directory is passive and leaks nothing about the target. OpSec risk begins only when you follow a link and submit the target's name to a downstream engine — assess each destination separately and use a sock-puppet where the destination logs queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "iTools is a long-running independent tools portal; it is a link directory, not a data broker, so trust concerns attach to the downstream services it points at rather than to iTools itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "itools people search"
+    ],
+    "tags": [
+      "people-search",
+      "directory"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/people-search.md"
   },
   {
@@ -231116,47 +231204,53 @@
   },
   {
     "id": "coraweb-birth-death-and-marriage-records-australia",
-    "name": "Coraweb Birth Death and Marriage Records (Australia)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "name": "Coraweb — Australian Birth, Death & Marriage Records",
+    "description": "Use when you have a `name` and an Australian connection and want a curated directory of BDM/vital-record and genealogy sources to search — returns pointers to dob, address and associate (family) records.",
     "url": "https://coraweb.com.au/websites/birth-death-and-marriage-records/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A curated launchpad of Australian birth/death/marriage and genealogy record sites (by state and nationally).",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "dob",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The Coraweb directory is free to browse. Individual destination registries and archives it links to vary — many state BDM index searches are free, but ordering a certificate or accessing some databases costs money at the destination.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory leaks nothing about the subject. OpSec risk begins only at a destination site where you enter a name — assess each linked registry separately. No login on Coraweb itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Coraweb (Cora Num's long-running Australian genealogy site) is a respected curated directory of links, not a data source; trust attaches to the official state BDM registries and archives it points at.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Cora Web",
+      "Cora Num genealogy directory"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "genealogy",
+      "vital-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/coraweb-birth-death-and-marriage-records-australia.md"
   },
@@ -254131,45 +254225,54 @@
   },
   {
     "id": "new-mexico",
-    "name": "New Mexico",
-    "description": "OSINT tool: New Mexico.",
+    "name": "New Mexico Corrections Offender Search",
+    "description": "Use when you have a `name` (or offender number) and want to check whether someone is in New Mexico state custody or has absconded — returns identity confirmation, dob and offender document-id.",
     "url": "https://search.cd.nm.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person in the New Mexico state prison / probation / parole system, including absconders.",
     "selectorsIn": [
-      "name"
+      "name",
+      "document-id"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public records search operated by the New Mexico Corrections Department; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "This is a public government database and searching it is passive — the state logs the query but the subject is not notified. No login, so use a clean browser session as routine hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the New Mexico Corrections Department (nm.gov); an authoritative first-party government source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NMCD Offender Search",
+      "New Mexico Corrections Department"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/new-mexico.md"
   },
   {
@@ -254263,36 +254366,53 @@
   },
   {
     "id": "new-york-state-prison-records",
-    "name": "New York State Prison Records",
-    "description": "OSINT tool: New York State Prison Records.",
+    "name": "New York State Prison Records (Steve Morse One-Step)",
+    "description": "Use when you have a `name` and want to search indexed historical New York State prison/inmate records — returns identity confirmation, dob/age, an inmate document-id and physical-description.",
     "url": "https://stevemorse.org/prison/prison.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching historical New York State prison admission/inmate indexes by name for genealogical and cold-case identity work.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "document-id",
+      "physical-description"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The Steve Morse One-Step search interface is free. Some underlying record images it links to (e.g. Ancestry/FamilySearch collections) may sit behind a subscription on the host archive.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public genealogical search interface; querying it is passive and the subject (typically a historical figure) is not notified. No login on the One-Step page itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Steve Morse's \"One-Step\" pages are a long-respected, widely cited genealogy resource; they are a front-end that queries authoritative archive indexes (NY State Archives, Ancestry/FamilySearch), so the underlying data is trustworthy while the interface is an independent project.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Steve Morse prison records",
+      "One-Step NY prison search"
+    ],
+    "tags": [
+      "prison",
+      "genealogy",
+      "historical-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/new-york-state-prison-records.md"
   },
   {
@@ -272996,45 +273116,55 @@
   },
   {
     "id": "wisconsin",
-    "name": "Wisconsin",
-    "description": "OSINT tool: Wisconsin.",
+    "name": "Wisconsin DOC Offender Search",
+    "description": "Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, dob, offender document-id and physical description.",
     "url": "https://doc.wi.gov/pages/home.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person in Wisconsin's state prison / community-supervision system, or on its public sex-offender registry.",
     "selectorsIn": [
-      "name"
+      "name",
+      "document-id"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public records searches operated by the Wisconsin Department of Corrections; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Public government databases; searching is passive and the subject is not notified. No login required — use a clean browser session as routine hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Wisconsin Department of Corrections (doc.wi.gov); authoritative first-party government data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Wisconsin Department of Corrections",
+      "Wisconsin Person in Our Care search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections",
+      "sex-offender-registry"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/wisconsin.md"
   },
   {
@@ -335279,45 +335409,55 @@
   },
   {
     "id": "nicolasconstant-github-io",
-    "name": "nicolasconstant.github.io",
-    "description": "OSINT tool: nicolasconstant.github.io.",
+    "name": "Sengi (Mastodon/Pleroma client)",
+    "description": "Use when you have a Mastodon/Pleroma `username` or instance handle and want a multi-account desktop/web client to read and monitor fediverse activity — returns social-profile context, associates and post threads.",
     "url": "https://nicolasconstant.github.io/sengi/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Monitoring and reading fediverse (Mastodon/Pleroma) accounts and timelines across multiple sock-puppet accounts in one interface.",
     "selectorsIn": [
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open source (FLOSS); usable as a web app or installed desktop client. No paid tier.",
+    "opsec": "passive",
+    "opsecNote": "Reading public fediverse posts is passive. However, following, boosting, or replying from an account is active and visible to the target and their instance admins — keep a research account in read-only discipline and never interact from your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Open-source client by developer Nicolas Constant, hosted on GitHub Pages; the code is public and auditable, but it is a community project, not an official Mastodon product.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Sengi",
+      "sengi mastodon client"
+    ],
     "tags": [
       "mastodon",
-      "Mastodon Related Sites"
+      "pleroma",
+      "fediverse"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/nicolasconstant-github-io.md"
   },
   {
@@ -357490,44 +357630,54 @@
   {
     "id": "zesty-facebook-search",
     "name": "Zesty Facebook Search",
-    "description": "OSINT tool: Zesty Facebook Search.",
+    "description": "Use when you have a Facebook profile `name`/`username` (or numeric profile ID) and want to build Graph-Search-style query URLs to surface a target's photos, friends and tagged content — returns social-profile, image and associate leads.",
     "url": "http://zesty.ca/facebook",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Constructing Facebook Graph-Search URLs (photos of, friends of, places visited) from a profile ID.",
     "selectorsIn": [
+      "name",
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
       "social-profile",
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free single-page helper; no account or payment needed to generate the URLs. The Facebook queries it links to require a logged-in Facebook session to run.",
+    "opsec": "active",
+    "opsecNote": "The generator itself is a passive client-side form, but the URLs it produces run searches against Facebook — typically while you are logged in. Use a sock-puppet Facebook account, never your real one, or the target's network graph can surface you as a viewer/searcher.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing third-party helper page hosted on a personal domain (zesty.ca); it stores nothing and only assembles facebook.com URLs, but it is not affiliated with Facebook.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Zesty Facebook Graph Search",
+      "zesty.ca/facebook"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "graph-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/zesty-facebook-search.md"
   },
   {
@@ -372096,42 +372246,51 @@
   },
   {
     "id": "aliens-eye",
-    "name": "Aliens eye",
-    "description": "Find links to social media accounts in 70 websites by username",
+    "name": "Aliens_eye",
+    "description": "Use when you have a `username` and want to enumerate matching accounts across hundreds of platforms with ML-assisted confidence scoring — returns social-profile links, display names and avatar images.",
     "url": "https://github.com/BLINKING-IDIOT/Aliens_eye",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, async username enumeration across 800+ sites with Found/Maybe/Not-Found classification and multi-format export.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "username",
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; install via pip. Costs are only your own compute and (optional) proxy/Tor usage.",
+    "opsec": "active",
+    "opsecNote": "The tool actively requests hundreds of platforms for the target username, so your IP hits every one of those sites in a burst. Route through Tor/proxies (built-in support) so the enumeration is not traced to you, and never run it from an IP tied to your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source project on GitHub (BLINKING-IDIOT/Aliens_eye); code is public and auditable, but it is a community tool — verify each \"Found\" hit manually, as automated classifiers produce false positives.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Aliens eye",
+      "aliens_eye"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username-enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/username/aliens-eye.md"
   },
