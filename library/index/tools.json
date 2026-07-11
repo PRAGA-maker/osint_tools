@@ -205964,42 +205964,54 @@
   },
   {
     "id": "familysearch-org",
-    "name": "FamilySearch.org",
-    "description": "Free genealogy research and historical record access",
+    "name": "FamilySearch",
+    "description": "Use when you have a `name` (plus rough dates/places) and want free genealogical and historical records — returns vital records, census entries, family-tree links and relatives.",
     "url": "https://familysearch.org/search/",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Free genealogy research and historical record access",
-    "input": "Name, date, place, or family relationships",
-    "output": "Historical records, family trees, digitized documents, cemetery records",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "The largest free genealogy database — resolving a name to birth/marriage/death records, census entries, and a web of named relatives.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "dob",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, operated by a non-profit; a free account unlocks more records and the collaborative Family Tree. Some indexed records link out to partner sites (Ancestry/Findmypast) that are paid.",
     "opsec": "passive",
-    "opsecNote": "Basic search is free without login; account needed for Family Tree features.",
+    "opsecNote": "Searching historical records is passive and notifies no one. FamilySearch focuses on deceased/historical individuals; be careful that living-person data in shared trees is restricted, and handle any relatives' details responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by FamilySearch International (a non-profit affiliated with the LDS Church); a huge, reputable, well-sourced genealogical archive, though user-contributed trees vary in accuracy.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FamilySearch.org",
+      "LDS genealogy"
+    ],
+    "tags": [
+      "genealogy",
+      "vital-records",
+      "people-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/familysearch-org.md"
   },
   {
@@ -210514,47 +210526,51 @@
   {
     "id": "obituaries-australia",
     "name": "Obituaries Australia",
-    "description": "Digital repository of obituaries published in newspapers, journals, magazines, and bulletins in Australia",
+    "description": "Use when you have the `name` of a deceased person with an Australian connection and want their published obituary — returns death details, biography and named relatives/associates.",
     "url": "http://oa.anu.edu.au/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Finding published Australian obituaries by name to confirm a death and harvest biographical detail and family relationships.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
-      "address",
-      "phone",
-      "associate"
+      "name",
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free academic resource hosted by the Australian National University; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a published obituary archive is passive and notifies no one. The subject is deceased; the sensitivity is the living relatives named in obituaries — handle their details responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the National Centre of Biography at the Australian National University; a reputable, sourced academic repository of obituaries transcribed from real publications.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "oa.anu.edu.au",
+      "Obituaries Australia ANU"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "obituaries"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/obituaries-australia.md"
   },
@@ -220910,40 +220926,49 @@
   {
     "id": "reverse-genie",
     "name": "Reverse Genie",
-    "description": "Quick reverse-number triage from public-data aggregations",
+    "description": "Use when you have a US `phone` number and want quick reverse-lookup triage — returns a possible owner name, location and related listing details from aggregated public data.",
     "url": "https://www.reversegenie.com/phone.php",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Quick reverse-number triage from public-data aggregations",
-    "input": "Phone number",
-    "output": "Possible owner name, location, and related listing details",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast, free reverse-phone triage to attach a candidate name/location to a US number before deeper enrichment.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free reverse-lookup triage; like most such sites, deeper/\"full report\" details are pushed toward paid data-broker upsells.",
     "opsec": "passive",
-    "opsecNote": "Search is executed through an aggregator site and is generally non-interactive for targets.",
+    "opsecNote": "The lookup runs through an aggregator, not against the number's owner, so it is passive and the target is not notified. The site logs your queries and shows upsells — use a clean browser and never enter your own details to \"unlock\" a report.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A reverse-lookup aggregator drawing on public/third-party data of variable freshness; a convenience triage tool, not an authoritative source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "reversegenie.com"
+    ],
+    "tags": [
+      "phone",
+      "reverse-phone",
+      "data-broker"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/reverse-genie.md"
   },
   {
@@ -252868,47 +252893,55 @@
   },
   {
     "id": "molfar-com",
-    "name": "molfar.com",
-    "description": "OSINT tool: molfar.com.",
+    "name": "Molfar Useful Apps & Registers",
+    "description": "Use when you have a lead and need the right public register or OSINT app for a jurisdiction — Molfar's curated directory returns links to registers and tools for finding people, companies and records.",
     "url": "https://molfar.com/en/useful-apps-registers",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A curated jump-list of public registers and OSINT apps (people, company, sanction, vehicle, etc.), strong on Ukraine/CIS and international sources.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The useful-apps-and-registers directory is a free public resource. Molfar's actual investigations are a separate paid, analyst-delivered service.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive. The registers it links to vary — some are official/passive, others may log or rate-limit queries — so apply each linked tool's own OpSec (clean browser/VPN) when you follow through.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Curated by Molfar, a reputable Ukrainian private-intelligence firm; the directory is a well-maintained pointer list, though the quality/availability of each linked register is external to Molfar.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "ua"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Molfar registers",
+      "Molfar useful apps"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "tool-directory",
+      "registers"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/molfar-com.md"
   },
   {
@@ -296551,24 +296584,32 @@
   {
     "id": "malfrat-s-osint-map",
     "name": "Malfrat's OSINT Map",
-    "description": "Interactive visual mind-map of OSINT tools organized by investigation type.",
+    "description": "Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branches by selector to curated, current OSINT tools.",
     "url": "https://map.malfrats.industries/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Visually navigating tool categories from a starting selector",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Choosing the right OSINT tool for a given lead, via an interactive mind-map branched by selector type, with flags for cost/install/whether a tool alerts the target.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "phone",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, community-maintained web resource; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the map is passive. Usefully, its legend flags which listed tools may alert the target (an \"active\" warning) — read those flags before you actually run a downstream tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community-maintained interactive OSINT mind-map.",
+    "trustNote": "A community-maintained interactive OSINT tool map (GitHub/Discord contributions); reputable and kept relatively current, but it is a pointer resource whose links depend on external tools.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -296577,7 +296618,10 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "malfrats.industries",
+      "OSINT map"
+    ],
     "tags": [
       "tool-collection",
       "mindmap",
@@ -296586,8 +296630,8 @@
       "phone"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/malfrat-s-osint-map.md"
   },
   {
@@ -316847,42 +316891,51 @@
   },
   {
     "id": "ask-fm",
-    "name": "Ask FM",
-    "description": "Finding Ask FM profiles by username",
+    "name": "ASKfm",
+    "description": "Use when you have an `username` and want to check for an ASKfm profile — returns the public Q&A history, likes and follower links that often reveal candid personal detail.",
     "url": "https://ask.fm/%3Cusername%3E",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Finding Ask FM profiles by username",
-    "input": "Ask FM username",
-    "output": "Public profile, Q&A history, followers, and profile metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding a person's ASKfm profile from a handle and mining their public question-and-answer history for volunteered personal information.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public profiles; no account needed to view a public ASKfm page.",
     "opsec": "passive",
-    "opsecNote": "Standard web request to Ask FM public profile; profile views are not logged to target users.",
+    "opsecNote": "Viewing a public profile is a passive web request and is not shown to the target. If you interact (ask a question, follow), that IS visible — and anonymous questions can still be traced by the platform, so stay read-only from a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "ASKfm is a real, long-running Q&A social network popular with younger users; content is user-generated and self-reported, so treat disclosures as leads to corroborate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ask.fm",
+      "Ask FM"
+    ],
+    "tags": [
+      "qa-network",
+      "social-networks"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/ask-fm.md"
   },
   {
