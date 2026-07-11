@@ -39745,13 +39745,13 @@
   {
     "id": "tiktok-search-inteltechniques-method",
     "name": "TikTok Search (IntelTechniques method)",
-    "description": "Structured TikTok profile/tag/video search plus analytics services.",
+    "description": "Use when you have a TikTok `username` or `name` and want a structured search workflow — profile, hashtag, and video queries plus third-party analytics to map a subject's TikTok footprint.",
     "url": "https://www.tiktok.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "Search TikTok profiles, tags, videos and run engagement analytics.",
+    "bestFor": "A repeatable workflow for finding and analyzing a subject's TikTok profile, tagged/hashtag content, and engagement.",
     "selectorsIn": [
       "username",
       "name"
@@ -39761,15 +39761,18 @@
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "TikTok itself is free to browse; the IntelTechniques method combines native TikTok search with free/freemium third-party viewers and analytics sites.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Viewing TikTok without logging in is passive, but TikTok is aggressive about device/behavior tracking. Use a sock-puppet browser/session, avoid logging in as yourself, and prefer login-free third-party viewers for sensitive targets.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A documented investigative workflow (IntelTechniques-style) over TikTok plus third-party tools; the third-party pieces break as TikTok tightens access.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -39778,14 +39781,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "IntelTechniques TikTok",
+      "TikTok OSINT method"
+    ],
     "tags": [
       "tiktok",
       "video",
       "social"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/tiktok-search-inteltechniques-method.md"
   },
@@ -157144,45 +157150,51 @@
   },
   {
     "id": "seintpl-github-io",
-    "name": "seintpl.github.io",
-    "description": "OSINT tool: seintpl.github.io.",
+    "name": "YTXtractor (seintpl)",
+    "description": "Use when you have a YouTube video URL and want its data and thumbnails — returns the video's metadata (title, channel, dates) and downloadable thumbnail images for analysis.",
     "url": "https://seintpl.github.io/ytxtractor/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly pulling a YouTube video's metadata and full-resolution thumbnails from a link, in the browser.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser tool hosted on GitHub Pages (by SEINT / seintpl); no account or install.",
+    "opsec": "passive",
+    "opsecNote": "The extraction runs against YouTube's public data for the video you paste. It does not contact the uploader. As a client-side page it typically fetches public YouTube endpoints — use a VPN if you want to avoid tying the lookup to your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A single-purpose utility by a known OSINT developer (SEINT); simple and client-side, but depends on YouTube's public data remaining accessible.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ytxtractor",
+      "SEINT YouTube extractor"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "metadata"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/seintpl-github-io.md"
   },
   {
@@ -175948,37 +175960,49 @@
   {
     "id": "telegago-2",
     "name": "Telegago",
-    "description": "OSINT tool: Telegago.",
+    "description": "Use when you have a `name`, `username`, keyword, or phone and want to find public Telegram content mentioning it — a Google Custom Search Engine over t.me returning channels, groups, and messages.",
     "url": "https://cse.google.com/cse?q=+&cx=006368593537057042503:efxu7xprihg#gsc.tab=0&gsc.q=%20&gsc.page=1",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword/username searching public Telegram channels, groups, and messages via Google — no Telegram account needed.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Google Custom Search Engine; no account, no Telegram login.",
+    "opsec": "passive",
+    "opsecNote": "You query Google, not Telegram — the target's channels are not touched and you leave no footprint on Telegram. Standard Google-query privacy applies; use a clean session for sensitive terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely-used, Bellingcat-referenced Google CSE scoped to Telegram's public web domains; results are only as complete as Google's index of t.me.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Telegago Telegram search"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "search-engine"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegago-2.md"
   },
   {
@@ -250836,45 +250860,53 @@
   },
   {
     "id": "maine",
-    "name": "Maine",
-    "description": "OSINT tool: Maine.",
+    "name": "Maine DOC Corrections Search",
+    "description": "Use when you have a `name` of someone possibly in Maine's corrections system and want their custody info — returns the resident's name, MDOC identifier, and facility/supervision status.",
     "url": "https://www1.maine.gov/online/mdoc/search-and-deposit/index.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a person is an adult resident or community-corrections client of the Maine Department of Corrections and where.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Maine DOC service, available 24/7; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Official government custody lookup; the search is anonymous and does not notify the individual. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Maine Department of Corrections. Note the site itself states results are NOT a complete criminal history — that requires a separate Public Criminal History Request.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Maine Department of Corrections search",
+      "MDOC inmate search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections",
+      "maine"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/maine.md"
   },
   {
@@ -272917,46 +272949,53 @@
   {
     "id": "vat-lookup-co-uk",
     "name": "vat-lookup.co.uk",
-    "description": "OSINT tool: vat-lookup.co.uk.",
+    "description": "Use when you have a UK company `name` or a VAT number and want to resolve the other — returns the registered business name, VAT number, and address, plus VAT-registration history.",
     "url": "https://www.vat-lookup.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-looking-up a UK VAT number from a company name (or vice versa) and confirming the registered trading address.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free third-party lookup covering 1.5M+ UK companies; no account. Occasionally returns HTTP 503 under load.",
+    "opsec": "passive",
+    "opsecNote": "A read-only lookup against a third-party VAT database; the business is not notified. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing third-party UK VAT database — useful, but not the official source; confirm critical VAT numbers against HMRC's own checker (gov.uk/check-uk-vat-number).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VAT Lookup UK"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "vat",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/vat-lookup-co-uk.md"
   },
   {
@@ -375944,14 +375983,14 @@
   },
   {
     "id": "peek-you-user-name",
-    "name": "Peek You - User Name",
-    "description": "OSINT tool: Peek You - User Name.",
+    "name": "PeekYou - Username Search",
+    "description": "Use when you have a `username` and want the real person behind it — returns linked social-profiles, a probable name, and aggregated identity leads.",
     "url": "https://www.peekyou.com/username",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a username to a real identity by aggregating the profiles and public content tied to that handle.",
     "selectorsIn": [
       "username"
     ],
@@ -375959,28 +375998,35 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search 300M+ profiles by username; deep contact detail may push toward paid partner reports.",
+    "opsec": "passive",
+    "opsecNote": "Searching aggregates public data and does not notify the subject, but PeekYou is itself a data broker that logs queries. Use a clean session; note PeekYou also lets people be searched — consider your own footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A large commercial people-search aggregator; identity links are algorithmic guesses from public data — strong leads, but conflation happens, so verify.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PeekYou"
+    ],
     "tags": [
-      "username"
+      "username",
+      "people-search",
+      "data-broker"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/peek-you-user-name.md"
   },
   {
