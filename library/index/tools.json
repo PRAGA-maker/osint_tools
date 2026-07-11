@@ -103256,40 +103256,52 @@
   {
     "id": "emailanalyzer",
     "name": "EmailAnalyzer",
-    "description": "Tool for analyzing .eml files. It analyzes and checks with VirusTotal links, attachments and headers.",
+    "description": "Use when you have an email message (.eml) and want to extract its headers, originating IP, and check links/attachments — returns sender path, IP, and reputation signals.",
     "url": "https://github.com/keraattin/EmailAnalyzer",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Parsing a raw .eml file to surface originating IP, sender routing headers, and malicious link/attachment indicators.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email"
+      "ip-address",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Python CLI); VirusTotal link/attachment checks need your own free VirusTotal API key.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally on an email file you already possess — parsing headers touches nothing external and alerts no one. The exception is the optional VirusTotal lookups, which submit URLs/hashes (not the email body) to VirusTotal; avoid submitting anything sensitive you don't want shared with a third party.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small open-source email-forensics utility (keraattin/EmailAnalyzer); inspectable and does standard header parsing, but a niche community tool rather than a hardened product.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "EmailAnalyzer"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "email-headers",
+      "forensics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/emailanalyzer.md"
   },
@@ -205314,43 +205326,52 @@
   {
     "id": "fei-database-person-search",
     "name": "FEI Database Person Search",
-    "description": "If the person you are researching is related to equestrian sports, check the FEI database for information about him or her. There you can find cards of riders, horse owners, grooms and fans around the world.",
+    "description": "Use when you have a `name` linked to equestrian sport and want to confirm their role and nationality in the international federation — returns FEI ID, discipline, and national federation.",
     "url": "https://data.fei.org/Person/Search.aspx",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a person's registration in international equestrian sport (rider, owner, groom, official) and their nationality/FEI ID.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "email",
       "name",
-      "phone"
+      "employer-org",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public search of the FEI database; no account required.",
+    "opsec": "passive",
+    "opsecNote": "A public sports-governing-body database; searching does not notify the person and exposes only the sporting record they registered under the FEI. No sock puppet needed; treat it as a niche corroboration source.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official database of the Fédération Équestre Internationale (FEI), the world governing body for equestrian sport; authoritative for FEI registration, discipline, and nationality.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "FEI Database",
+      "Fédération Équestre Internationale"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "equestrian",
+      "sport"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/fei-database-person-search.md"
   },
@@ -217014,38 +217035,48 @@
   {
     "id": "ignorant",
     "name": "ignorant",
-    "description": "CLI that checks if a phone number is registered on sites (Instagram, Amazon, etc.).",
+    "description": "Use when you have a `phone` number and want to know if it's registered on Instagram, Amazon, or Snapchat — returns account-existence signals without alerting the owner.",
     "url": "https://pypi.org/project/ignorant/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a phone number is tied to accounts on Instagram, Amazon, and Snapchat, silently.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (Python CLI); no account or API key.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Like holehe for phones, it probes each site's registration/recovery endpoints to infer whether the number is registered — WITHOUT triggering a password reset or notifying the owner. Requests originate from your IP to those platforms, so run behind a VPN. It does not log in and does not alert the target, but heavy use can rate-limit your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "",
+    "trustNote": "Well-known open-source tool from the same author lineage as holehe (megadose/sundowndev); inspectable code, but its checks break when the target platforms change their endpoints.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "ignorant phone osint"
+    ],
+    "tags": [
+      "phone",
+      "account-existence"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/phone/ignorant.md"
   },
@@ -259700,47 +259731,54 @@
   },
   {
     "id": "private-eye-co-uk",
-    "name": "private-eye.co.uk",
-    "description": "OSINT tool: private-eye.co.uk.",
+    "name": "private-eye.co.uk (Offshore Property Registry)",
+    "description": "Use when you have an `address` or area in England/Wales and want to know if it's owned by an offshore company — returns the offshore owner, price paid, and Land Registry link.",
     "url": "https://www.private-eye.co.uk/registry",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a property in England or Wales is held by an offshore/overseas company, and revealing that owner.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive map and search; the underlying dataset is also downloadable at no cost.",
+    "opsec": "passive",
+    "opsecNote": "A static, FOI-derived dataset presented as a map; querying it touches no live target system and alerts no one. Purely observational research over public Land Registry data. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Compiled by Private Eye from Land Registry data released under Freedom of Information laws; a well-documented, widely-cited dataset, though Land Registry records can contain errors and bundled-price entries.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Private Eye offshore property map",
+      "Selling England by the pound"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "offshore",
+      "land-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/private-eye-co-uk.md"
   },
   {
@@ -267329,47 +267367,55 @@
   },
   {
     "id": "tfl-gov-uk",
-    "name": "tfl.gov.uk",
-    "description": "OSINT tool: tfl.gov.uk.",
+    "name": "tfl.gov.uk Licence Checker",
+    "description": "Use when you have a London taxi/private-hire driver badge or a vehicle plate and want to confirm the licence is valid — returns licence status for TfL-licensed drivers and vehicles.",
     "url": "https://tph.tfl.gov.uk/home/services/licence-checker",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a London taxi/PHV driver badge or vehicle licence number is genuine and currently valid.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "document-id",
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "document-id",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Transport for London service; no account.",
+    "opsec": "passive",
+    "opsecNote": "An official TfL verification page that checks a licence number you already have; it does not notify the driver and returns only licence-status data, not personal contact details. Standard clean-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Transport for London (TfL) Taxi & Private Hire — the licensing authority itself, so licence-status results are authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "TfL licence checker",
+      "Taxi and Private Hire licence checker"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "london",
+      "taxi"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/tfl-gov-uk.md"
   },
   {
@@ -273000,36 +273046,57 @@
   },
   {
     "id": "yearbooks-high-school-yearbooks-ancestry",
-    "name": "Yearbooks \\| High School Yearbooks \\| Ancestry",
-    "description": "OSINT tool: Yearbooks \\| High School Yearbooks \\| Ancestry.",
+    "name": "U.S. School Yearbooks (Ancestry)",
+    "description": "Use when you have a `name` and want a historical photo, school, and approximate age for a subject — returns yearbook portraits and school/year from Ancestry's yearbook collection.",
     "url": "https://www.ancestry.com/search/collections/1265/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a subject's historical yearbook photo, school, and graduation year to establish an old face, age, and location.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "image",
+      "employer-org",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Indexed names may appear in free search results, but viewing the yearbook image/page generally requires an Ancestry subscription (or a free trial / library edition access).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching a genealogy archive is passive and does not notify anyone; the records are decades-old public-ish yearbooks. Viewing requires an Ancestry account, which ties the search to your login — use an investigative/sock account if you don't want it on your personal Ancestry profile.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Ancestry's large, digitized U.S. school yearbook collection; the source documents are genuine, though OCR-indexed names can be misread and coverage varies by school/year.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Ancestry Yearbooks",
+      "U.S. School Yearbooks 1880-2012"
+    ],
+    "tags": [
+      "yearbook",
+      "genealogy",
+      "ancestry"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/yearbooks-high-school-yearbooks-ancestry.md"
   },
   {
