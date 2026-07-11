@@ -127782,31 +127782,32 @@
   },
   {
     "id": "ipligence-ip-address-geolocation-program",
-    "name": "Ipligence IP Address Geolocation Program",
-    "description": "Geolocation search using hostname or web address",
+    "name": "IPligence IP Address Geolocation",
+    "description": "Use when you have an `ip-address` or `domain`/hostname and want its approximate city/country location — returns geolocation and a coarse address (city, country).",
     "url": "http://www.ipligence.com/geolocation",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "A quick free city/country lookup for an IP, hostname, or URL.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "ip-address",
+      "domain"
     ],
     "selectorsOut": [
       "geolocation",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web lookup capped at 50 personal queries per day; a paid \"IPligence Max\" database and API exist for volume/commercial use. Provided \"as is\" with no accuracy guarantee.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a geolocation database, not the target — the IP's owner is never contacted or alerted. Purely a lookup of data you already hold. Beware the result quality, not exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing commercial IP-geolocation vendor. The location data is best-effort ISP/registry-derived (city-level at best), so treat it as a lead, not fact.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -127815,14 +127816,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "IPligence geolocation"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "ip-geolocation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/ipligence-ip-address-geolocation-program.md"
   },
@@ -162652,45 +162656,54 @@
   },
   {
     "id": "ytdt-digitalmethods-net-2",
-    "name": "ytdt.digitalmethods.net",
-    "description": "OSINT tool: ytdt.digitalmethods.net.",
+    "name": "YouTube Data Tools (ytdt.digitalmethods.net)",
+    "description": "Use when you have a YouTube `social-profile` (channel URL/ID) or a search term and want channel/video metadata plus the network of connected channels — returns metadata, social-profile, and associate links.",
     "url": "https://ytdt.digitalmethods.net/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-extracting a YouTube channel's/video's metadata, comments, and featured-channel network for analysis.",
     "selectorsIn": [
-      "image",
-      "face"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "metadata",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free academic tool (Digital Methods Initiative); no account or key needed. It runs on a shared YouTube API quota, so heavy jobs can hit a temporary rate limit — retry later.",
+    "opsec": "passive",
+    "opsecNote": "The extraction runs server-side from ytdt's own servers against YouTube's public API, not from your IP against the target. It only touches data the channel/video already exposes publicly, and the subject is not notified. Still, only pull public channels/videos.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Written and maintained by Bernhard Rieder (University of Amsterdam / Digital Methods Initiative); a long-standing, widely cited academic tool, open-sourced on GitHub. Reputable but third-party, not a Google endpoint.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "YouTube Data Tools",
+      "YTDT",
+      "Netvizz YouTube"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "network-analysis"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ytdt-digitalmethods-net-2.md"
   },
   {
@@ -174232,38 +174245,51 @@
   },
   {
     "id": "oksearch",
-    "name": "OkSearch",
-    "description": "OSINT tool: OkSearch.",
+    "name": "OkSearch (Telegram bot)",
+    "description": "Use when you have a `name`/`username`/keyword and want to find Telegram channels, groups, and posts mentioning it — returns social-profile leads (Telegram channels/groups).",
     "url": "https://telegram.me/OkSearchBot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering which Telegram channels/groups a person, handle, or topic appears in.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The channel/content search described is free to use inside Telegram. Some Telegram OSINT bots gate deeper lookups behind payment; only the keyword/channel search is confirmed here.",
+    "opsec": "active",
+    "opsecNote": "You query it from inside your own Telegram account, so the bot operator (an unknown third party) sees your search terms and your account. Use a dedicated sock-puppet Telegram account with a burner number, never your real one, and assume every query is logged.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party Telegram bot with a sizeable user base; confirmed as a channel/group/content search assistant. Any capability beyond keyword/channel discovery is unverified — don't assume phone/breach lookups.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OkSearchBot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "channel-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/oksearch.md"
   },
   {
@@ -204895,13 +204921,13 @@
   {
     "id": "cybersecstu-osint-for-finding-people",
     "name": "CyberSecStu - OSINT for Finding People",
-    "description": "Public Google Sheet focused specifically on tools for finding people (CyberSecStu).",
+    "description": "Use when you have a `name`/`username`/`email`/`phone` and want a curated list of which tools to try next for locating a person — returns pointers to social-profile, address, and phone tools.",
     "url": "https://docs.google.com/spreadsheets/d/1JxBbMt4JvGr--G0Pkl3jP9VDTBunR2uD3_faZXDvhxc/edit",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "People-finding-specific tool list in spreadsheet form",
+    "bestFor": "A people-finding-specific tool index in spreadsheet form — a \"what do I try next\" menu, not a lookup itself.",
     "selectorsIn": [
       "name",
       "username",
@@ -204913,15 +204939,16 @@
       "address",
       "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public Google Sheet; read-only, no account needed. Individual tools it links to may have their own costs.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the sheet is inert — it's a static Google Doc and nothing is queried about your subject. OpSec risk lives entirely in the downstream tools you pick from it; vet each one before running it against a target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community spreadsheet; explicitly themed around finding people.",
+    "trustNote": "Community-curated Google Sheet attributed to CyberSecStu; a directory, so link quality varies and entries can go stale. Verify any tool it points to independently.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -204930,14 +204957,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "CyberSecStu people OSINT sheet"
+    ],
     "tags": [
       "people-search",
       "spreadsheet",
-      "missing-persons"
+      "missing-persons",
+      "directory"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/cybersecstu-osint-for-finding-people.md"
   },
@@ -206287,37 +206317,52 @@
   {
     "id": "finalnotes-obituary-research-guide",
     "name": "FinalNotes Obituary Research Guide",
-    "description": "OSINT tool: FinalNotes Obituary Research Guide.",
+    "description": "Use when you have a `name` of a possibly-deceased person and want a methodology plus source list for finding and verifying their obituary — points to genealogy/obituary sources returning dob, address, and associate (kin) leads.",
     "url": "https://www.finalnotes.page/obituary-research-guide/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A how-to guide and curated source list for obituary/death research — teaches the workflow, not a database itself.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "dob",
+      "address",
+      "associate",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free educational guide; the external sources it recommends (FamilySearch, Find a Grave, newspaper archives) have their own free/paid tiers.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guide is inert. Downstream obituary/genealogy searches are also passive lookups of published records; nobody is notified. The subject here is typically deceased, but living relatives named in obituaries are real people — handle their data with care.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An independent educational resource/guide, not a records database. Value is in its methodology and source pointers; verify every downstream source on its own.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FinalNotes obituary guide"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "obituary",
+      "genealogy",
+      "deceased"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/finalnotes-obituary-research-guide.md"
   },
   {
@@ -221182,45 +221227,53 @@
   },
   {
     "id": "reverseaustralia-com",
-    "name": "reverseaustralia.com",
-    "description": "OSINT tool: reverseaustralia.com.",
+    "name": "Reverse Australia",
+    "description": "Use when you have an Australian `phone` number and want any publicly-listed owner details or crowd comments about it — returns name, address, and geolocation leads.",
     "url": "https://www.reverseaustralia.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-lookup of an Australian landline/mobile against aggregated public listings and user-reported comments.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
       "address",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search. It is an ad-supported data-broker-style directory; it also publishes records, so numbers/owners can appear whether or not they want to (an opt-out is offered).",
+    "opsec": "passive",
+    "opsecNote": "Querying a number does not alert its owner. But this is a data-broker site — searching a personal number contributes traffic to it, and results may be stale or wrong. Use a clean browser; don't enter a number you don't want associated with your session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Aggregated public/crowd data of unknown provenance and freshness; useful as a lead, not proof. Known enough to appear in data-broker opt-out guides.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "reverseaustralia.com",
+      "ReverseAustralia"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "australia",
+      "reverse-phone"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/phone/reverseaustralia-com.md"
   },
   {
@@ -249237,47 +249290,54 @@
   },
   {
     "id": "landregistryireland-com",
-    "name": "landregistryireland.com",
-    "description": "OSINT tool: landregistryireland.com.",
+    "name": "LandRegistryIreland.com (third-party)",
+    "description": "Use when you have an Irish property `address`/eircode and want to buy its ownership record — returns owner name, address, and mortgage/associate details (paid).",
     "url": "https://www.landregistryireland.com/home",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Buying Irish land-registry folio data (owner name, mortgage) for a specific property, via an unofficial reseller.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Map/property search to locate a folio is free, but the useful data — owner name/address, mortgage details, folio maps — is paywalled (advertised around €28 per property). The official Property Registration Authority of Ireland (PRAI, prai.ie / landdirect.ie) is the authoritative and often cheaper route.",
+    "opsec": "passive",
+    "opsecNote": "A records purchase; the property owner is not notified. But you are handing a third-party commercial site an address of interest plus your payment details — pay attention to who you're transacting with, and prefer the official PRAI/landdirect.ie service where possible.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Explicitly an independent reseller, \"not affiliated with the PRAI.\" It resells data that originates from the official registry; convenient but unofficial — for authoritative use, go to landdirect.ie directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Land Registry Ireland"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "ireland",
+      "land-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/landregistryireland-com.md"
   },
   {
@@ -252127,45 +252187,55 @@
   },
   {
     "id": "michigan",
-    "name": "Michigan",
-    "description": "OSINT tool: Michigan.",
+    "name": "Michigan OTIS (Offender Tracking Information System)",
+    "description": "Use when you have a `name` and want to check whether someone is or was recently under Michigan corrections supervision — returns name, dob, physical-description, offender number, and facility/location.",
     "url": "https://www.michigan.gov/corrections/0,4551,7-119-1409---,00.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person currently in Michigan prison/parole/probation, or discharged within the last 3 years.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "physical-description",
+      "document-id",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state government database (Michigan Department of Corrections). No account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public records query against a state database; the subject is not notified and nothing is sent to them. Standard practice is still to search from a research browser, not an account tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Michigan Department of Corrections; the authoritative source for that state's supervised-offender data (with the state's own disclaimers about currency/completeness).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OTIS",
+      "Michigan Offender Tracking Information System",
+      "Michigan DOC offender search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/michigan.md"
   },
   {
@@ -269055,36 +269125,53 @@
   },
   {
     "id": "supreme-court-of-canada-cases",
-    "name": "Supreme Court of Canada - Cases",
-    "description": "OSINT tool: Supreme Court of Canada - Cases.",
-    "url": "https://www.scc-csc.ca/case-dossier/index-eng.aspx",
+    "name": "Supreme Court of Canada - Case Information",
+    "description": "Use when you have a party `name` and want to check for a Supreme Court of Canada case involving them — returns the docket, parties/counsel (associate), and case summary.",
+    "url": "https://www.scc-csc.ca/cases-dossiers/search-recherche/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Canada's top-court docket by party name or case number for parties, counsel, and case status.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official Supreme Court of Canada database. Copies of specific court documents may require a records request.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public court-records search; parties are not notified. Nothing is sent to the subject. Standard research-browser hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Supreme Court of Canada; the authoritative docket source for that court. (Full judgment texts live on the SCC Judgments / Lexum site.)",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SCC Case Information",
+      "Supreme Court of Canada case dossier"
+    ],
+    "tags": [
+      "court",
+      "canada",
+      "legal",
+      "case-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/supreme-court-of-canada-cases.md"
   },
   {
@@ -325303,37 +325390,49 @@
   {
     "id": "foller-me",
     "name": "Foller.me",
-    "description": "OSINT tool: Foller.me.",
+    "description": "Use when you have a Twitter/X `username` and want a quick public-profile analytics snapshot — returns metadata, topics/hashtags, and activity patterns (a social-profile behavioural picture).",
     "url": "http://foller.me",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A fast public analytics snapshot of a Twitter/X account — topics, mentions, and posting rhythm.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "metadata",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account. Coverage is constrained by X's API restrictions since 2023, so results can be partial or fail on some accounts.",
+    "opsec": "passive",
+    "opsecNote": "Foller.me queries public profile data server-side; the account owner is not notified and nothing comes from your IP. Only public accounts are analysable. Avoid pasting handles you don't want logged by a third-party service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running (since 2009) third-party Twitter analytics site. Reputable and durable, but subject to X API limits; treat derived figures as indicative, not exact.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Foller"
+    ],
     "tags": [
-      "twitter"
+      "twitter",
+      "x",
+      "profile-analytics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/foller-me.md"
   },
   {
@@ -330596,45 +330695,60 @@
   },
   {
     "id": "igexport-export-instagram-chrome-google-com",
-    "name": "igexport export instagram (chrome.google.com)",
-    "description": "OSINT tool: igexport export instagram (chrome.google.com).",
+    "name": "igexport / Followers Exporter (Instagram, Chrome)",
+    "description": "Use when you have an Instagram `social-profile` and want its full follower/following list as a spreadsheet — returns username, name, image, and (detailed mode) email/phone.",
     "url": "https://chrome.google.com/webstore/detail/igexport-export-instagram/ehbjlcniiagahknoclpikfjgnnggkoac",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Exporting a target Instagram account's followers/following (with profile fields) to CSV/Excel for pivoting.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "username",
+      "name",
+      "image",
+      "email",
+      "phone",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier exports basic fields (username, ID, name, profile-pic, verified). \"Detailed mode\" enrichment (public email, phone, bio, website) and very large exports are typically gated behind a paid upgrade.",
+    "opsec": "active",
+    "opsecNote": "The extension scrapes through YOUR logged-in Instagram session, so the requests come from your account and IP — Instagram can rate-limit, action-block, or ban the account for bulk follower pulls. Always use a burner/sock-puppet Instagram login and a clean browser, never your real identity. The vendor claims local-only processing, but that is unverified.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party Chrome extension (has appeared under names like \"Followers Exporter\") that requires Instagram access; it has broad permissions over your session and its local-only-processing claim is not independently verified. Treat as untrusted with a sock puppet.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "igexport",
+      "Followers Exporter",
+      "IG Exporter"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "follower-export"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/igexport-export-instagram-chrome-google-com.md"
   },
   {
@@ -345416,45 +345530,51 @@
   },
   {
     "id": "snapthreads-net",
-    "name": "snapthreads.net",
-    "description": "OSINT tool: snapthreads.net.",
+    "name": "SnapThreads",
+    "description": "Use when you have a public Threads post `social-profile`/link and want to download its video for analysis — returns the MP4 (image/face frames, metadata) without the platform watermark.",
     "url": "https://snapthreads.net/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a public Instagram Threads video by URL for offline review, framing, or reverse-image work.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online downloader; no account. Ad-supported third-party site.",
+    "opsec": "passive",
+    "opsecNote": "SnapThreads' servers fetch the public video, so the download isn't made from your IP against Threads and the poster isn't notified. But you are pasting the target's URL into a third-party site that logs it — use a URL that doesn't reveal your wider investigation, and prefer a clean browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous third-party media downloader. It works for public content but is ad-heavy and unaccountable; don't trust it beyond fetching a public file, and scan downloads before opening.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "snapthreads.net",
+      "Threads video downloader"
+    ],
     "tags": [
       "threads",
-      "Threads Related Sites"
+      "Threads Related Sites",
+      "video-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snapthreads-net.md"
   },
   {
