@@ -123510,47 +123510,53 @@
   },
   {
     "id": "degulesider-mapping-program-for-europe-denmark",
-    "name": "DeGuleSider Mapping Program for Europe (Denmark)",
-    "description": "Mapping program covering regional and country locations",
+    "name": "De Gule Sider Kort (Denmark maps)",
+    "description": "Use when you have a Danish `address` or `geolocation` and want a street-level map with business/address context and aerial/street imagery — returns geolocation, address and nearby employer-org.",
     "url": "http://kort.degulesider.dk",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Street-level and aerial mapping of Danish addresses with directory/business overlay.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
       "geolocation",
-      "address"
+      "address",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free consumer map/directory product from De Gule Sider (the Danish Yellow Pages); no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Loading a map is passive and does not touch the subject. The tiles are served by a Danish commercial provider; only your IP is exposed. Nothing identifies who you looked up.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial Danish directory/mapping service (Eniro/De Gule Sider); imagery and business listings are generally reliable for Denmark but not an authoritative land/address registry.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "dk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "De Gule Sider Kort",
+      "kort.degulesider.dk",
+      "Danish Yellow Pages maps"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/degulesider-mapping-program-for-europe-denmark.md"
   },
@@ -152932,36 +152938,56 @@
   },
   {
     "id": "photo-album-finder",
-    "name": "Photo Album Finder",
-    "description": "OSINT tool: Photo Album Finder.",
+    "name": "Photo Album Finder (Google CSE)",
+    "description": "Use when you have a `name`, `username`, or `email` and want to find public photo albums/galleries hosting that person's images across photo-sharing sites — returns image, social-profile and metadata-exif leads.",
     "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:bldnx392j6u",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword-searching a curated set of photo-hosting/album sites for a person's public galleries.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to use in the browser. It is a Google Custom Search Engine, so results are ad-supported Google results restricted to a preset list of photo sites; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Runs as a normal Google search, so it does not touch the target or the hosting sites directly beyond ordinary indexing. Only your query and IP reach Google. Search from a sock-puppet if you don't want the query tied to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-configured Google CSE (owner-defined site list). Coverage depends entirely on the CSE's configuration and Google's index, and can silently degrade as the config ages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Photo Album Finder CSE",
+      "Google Custom Search photo albums"
+    ],
+    "tags": [
+      "image-search",
+      "photo-albums",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/photo-album-finder.md"
   },
   {
@@ -153068,46 +153094,53 @@
   {
     "id": "photome-exif-metadata-viewer",
     "name": "PhotoME EXIF Metadata Viewer",
-    "description": "Exif tool designed to extract and edit data from image files",
+    "description": "Use when you have an `image` file and want to read its full EXIF/IPTC/ICC metadata — including embedded GPS — locally without uploading — returns metadata-exif, geolocation and device-id.",
     "url": "http://www.photome.de",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Offline, no-upload extraction of EXIF/IPTC metadata and embedded GPS coordinates from a photo.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "metadata-exif",
+      "geolocation",
+      "device-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Windows desktop application (freeware); no account, no per-use cost.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Runs entirely on your machine — the image is never uploaded to a third party, so nothing about the file or your investigation leaves your host. This is the safest way to inspect a sensitive image's metadata. Download the installer only from the official photome.de site to avoid bundled adware from mirror sites.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Long-standing, well-regarded freeware EXIF editor for Windows; not open-source but widely used in the community. Metadata parsing is reliable across JPEG and many camera RAW formats.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PhotoME",
+      "photome.de"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "exif"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/photome-exif-metadata-viewer.md"
   },
@@ -204434,13 +204467,13 @@
   {
     "id": "cyberbackgroundchecks",
     "name": "CyberBackgroundChecks",
-    "description": "Free people-search aggregator with relatives and contact history.",
+    "description": "Use when you have a `name`, `phone`, or `address` in the US and want current/past addresses, phone numbers and named relatives for free — returns name, phone, address, associate.",
     "url": "https://www.cyberbackgroundchecks.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Free people/background search with addresses, phones and relatives.",
+    "bestFor": "Free US people-search returning address history, phones and a relatives/associates graph.",
     "selectorsIn": [
       "name",
       "phone",
@@ -204452,15 +204485,18 @@
       "address",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The core people-search results — addresses, phones, relatives — are shown for free without an account. Deeper \"background report\" tiers are upsold to paid partners, but you rarely need them for OSINT pivots.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Third-party aggregator; querying does not alert the target. The site is Cloudflare-protected and may present a challenge. Only your own IP is exposed, so use a VPN/sock-puppet if you don't want the lookup tied to you. There is a self-serve opt-out/removal form — do not use it, and be aware records may be suppressed by subjects who have opted out.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent commercial data broker aggregating US public records and marketing data; strong for relatives/address history but not authoritative and can be stale or conflate same-name people.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -204471,7 +204507,8 @@
     "registration": false,
     "aliases": [
       "CBC",
-      "CyberBackground"
+      "CyberBackground",
+      "cyberbackgroundchecks.com"
     ],
     "tags": [
       "people-search",
@@ -204479,7 +204516,7 @@
       "relatives"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/cyberbackgroundchecks.md"
   },
@@ -207129,41 +207166,65 @@
   {
     "id": "idcrawl",
     "name": "IDCrawl",
-    "description": "Aggregated people search across social media and public records",
+    "description": "Use when you have a `name`, `username`, `phone`, or `email` and want a fast, free aggregate of the person's social profiles and public-records footprint — returns social-profile, name, phone, address, associate.",
     "url": "https://www.idcrawl.com/",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Aggregated people search across social media and public records",
-    "input": "Name, username, phone, or email",
-    "output": "Social media profiles, photos, public records, contact information",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-shot free aggregation of social profiles + US public records from a name, username, phone, or email.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "phone",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "100% free, no signup. Monetised by ads and by upsell links to paid background-report brokers; the core aggregation and social links are free.",
     "opsec": "passive",
-    "opsecNote": "Cloudflare-protected; no registration required.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Third-party aggregator — querying it does not touch the target or alert them. Your own IP hits IDCrawl (Cloudflare-fronted); run from a VPN/sock-puppet if you don't want the lookup tied to you. Do not follow the paid \"background report\" upsells with real identifiers.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent commercial aggregator, not an authoritative record source; results are scraped/indexed and can be stale or conflate same-name people. Corroborate every hit.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "cyberbackgroundchecks",
+      "usersherlock-com"
+    ],
+    "aliases": [
+      "IDCrawl",
+      "idcrawl.com"
+    ],
+    "tags": [
+      "people-search",
+      "social-media-aggregator",
+      "us-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/idcrawl.md"
   },
   {
@@ -211301,44 +211362,53 @@
   },
   {
     "id": "permits-city-of-vancouver-application-permit-search-by-address",
-    "name": "Permits - City of Vancouver - Application / Permit Search By Address",
-    "description": "OSINT tool: Permits - City of Vancouver - Application / Permit Search By Address.",
+    "name": "City of Vancouver Permit & Application Search",
+    "description": "Use when you have a Vancouver (BC) `address` and want the building/development permit applications tied to it, which often name owners, applicants and contractors — returns name, employer-org and associate.",
     "url": "https://plposweb.vancouver.ca/public/default.aspx",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Linking a Vancouver property address to the people and firms who applied for permits on it.",
     "selectorsIn": [
       "address"
     ],
     "selectorsOut": [
       "name",
-      "phone",
+      "employer-org",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search on the City of Vancouver's POSSE portal; browsing/searching needs no account. An account is only required to submit an application, not to search.",
+    "opsec": "passive",
+    "opsecNote": "Public municipal record; searching an address is anonymous and does not notify the property owner. Only use the public search side — do not register/log in with real identity for OSINT, as the applicant portal is attributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official City of Vancouver permitting system (POSSE); the authoritative municipal record of permit applications, though the personal detail surfaced varies by application and redaction.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Vancouver POSSE permits",
+      "City of Vancouver permit search",
+      "plposweb.vancouver.ca"
+    ],
     "tags": [
-      "address"
+      "address",
+      "permits",
+      "property"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/permits-city-of-vancouver-application-permit-search-by-address.md"
   },
   {
@@ -259928,47 +259998,55 @@
   },
   {
     "id": "planningsystemni-gov-uk",
-    "name": "planningsystemni.gov.uk",
-    "description": "OSINT tool: planningsystemni.gov.uk.",
+    "name": "NI Planning Register (planningsystemni.gov.uk)",
+    "description": "Use when you have an `address` (or applicant/agent `name`) in Northern Ireland and want planning-application records tying a person to a property — returns name, address and employer-org (agents/architects).",
     "url": "https://planningregister.planningsystemni.gov.uk/simple-search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Linking a Northern Ireland property address to the people who applied to develop it (owners, agents, architects).",
     "selectorsIn": [
+      "address",
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
       "name",
       "address",
       "employer-org"
     ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Official NI government planning portal; searching and viewing/downloading application documents is free with no account.",
+    "opsec": "passive",
+    "opsecNote": "Public government register; searching is anonymous and does not notify anyone. To comment on or track an application you must register, which is attributable — only use the anonymous search for OSINT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by NI's Department for Infrastructure / district councils on the Idox public-access platform; the authoritative statutory planning record for Northern Ireland.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NI Planning Portal",
+      "Northern Ireland Planning Register",
+      "planningregister.planningsystemni.gov.uk"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "planning"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/planningsystemni-gov-uk.md"
   },
   {
@@ -273957,47 +274035,57 @@
   },
   {
     "id": "www-ratemyteachers-com",
-    "name": "www.ratemyteachers.com",
-    "description": "OSINT tool: www.ratemyteachers.com.",
+    "name": "RateMyTeachers",
+    "description": "Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address (school location) and corroborating name.",
     "url": "http://ie.ratemyteachers.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Placing a named teacher at a named school and confirming the employer/location link.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search; no account needed to view ratings.",
+    "opsec": "passive",
+    "opsecNote": "Third-party review site; querying does not alert the subject. Only browse — do not post a rating or comment, as that leaves an attributable trace and taints the record.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "User-generated review site; entries are crowd-submitted and unverified, and can be fabricated or misattributed. Use only to corroborate a teacher↔school link, never as sole proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie",
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Rate My Teachers",
+      "ratemyteachers.com",
+      "ie.ratemyteachers.com"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "education"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/www-ratemyteachers-com.md"
   },
   {
@@ -331157,36 +331245,55 @@
   },
   {
     "id": "instagram-user-id",
-    "name": "Instagram User ID",
-    "description": "OSINT tool: Instagram User ID.",
+    "name": "Instagram User ID Finder (Comment Picker)",
+    "description": "Use when you have an Instagram `username` and want its stable numeric user ID plus basic account stats — returns social-profile (numeric ID), name and device-id-style stable identifier.",
     "url": "https://commentpicker.com/instagram-user-id.php",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving an Instagram handle to its permanent numeric user ID so a rename doesn't break your tracking.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free for a small number of lookups per day (roughly 2); unlimited lookups require a paid premium membership. No login with Instagram needed.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The lookup runs server-side on Comment Picker, not from your session, so it does not appear as a profile view to the target and does not require you to authenticate to Instagram. Only your IP touches Comment Picker.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party utility that queries Instagram's public endpoints; reliable for the ID mapping but dependent on Instagram's API remaining open and on the site's daily quota.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Comment Picker Instagram ID",
+      "Instagram username to ID",
+      "commentpicker.com instagram-user-id"
+    ],
+    "tags": [
+      "instagram",
+      "social-media",
+      "id-resolution"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-user-id.md"
   },
   {
@@ -377182,14 +377289,14 @@
   },
   {
     "id": "usersherlock-com",
-    "name": "UserSherlock.com",
-    "description": "OSINT tool: UserSherlock.com.",
+    "name": "UserSherlock",
+    "description": "Use when you have a `username` and want a quick web check of which popular sites have an account under that handle — returns social-profile links and candidate name.",
     "url": "http://www.usersherlock.com/usersearch",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Fast, no-install browser check of a username across ~20+ popular social/web services.",
     "selectorsIn": [
       "username"
     ],
@@ -377197,28 +377304,35 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use in the browser; no account required.",
+    "opsec": "passive",
+    "opsecNote": "The service checks each site for you server-side, so the target is not notified. Because it is an older, single-site service its results can lag; treat \"found\" links as candidates to verify, not confirmations. Only your IP touches UserSherlock.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running but dated username-checker; no transparency about how/when it probes each site, and it returned a server error during verification. Reliability is inconsistent — corroborate with a maintained tool.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "User Sherlock",
+      "usersherlock.com"
+    ],
     "tags": [
-      "username"
+      "username",
+      "username-enumeration"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/username/usersherlock-com.md"
   },
   {
