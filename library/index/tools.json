@@ -171613,37 +171613,51 @@
   {
     "id": "groupda",
     "name": "GroupDa",
-    "description": "OSINT tool: GroupDa.",
+    "description": "Use when you have a topic, country, or language and want to find public Telegram (and WhatsApp) groups a subject may be active in — returns group listings you can pivot to a `social-profile`.",
     "url": "https://groupda.com/telegram/group/search",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering public Telegram/WhatsApp groups by category, country, or language to locate a subject's community presence.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory; no account or payment required to search or open group links.",
+    "opsec": "passive",
+    "opsecNote": "Searching the directory is passive. Joining a linked Telegram group, however, exposes your account to that group's admins and members and may reveal your username to everyone — join only from a sock-puppet Telegram account, and prefer previewing public groups without joining.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running community group-directory populated by user submissions; widely used but unvetted, so links can be stale, mislabeled, or spam.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "groupda.com"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "whatsapp",
+      "group-discovery"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/groupda.md"
   },
   {
@@ -177988,43 +178002,51 @@
   {
     "id": "wachannelsfinder-com",
     "name": "wachannelsfinder.com",
-    "description": "OSINT tool: wachannelsfinder.com.",
+    "description": "Use when you have a topic, region, or organization name and want to find public WhatsApp channels a subject may run or follow — returns channel listings you can pivot to a `social-profile`.",
     "url": "https://wachannelsfinder.com/all-whatsapp-channels/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering public WhatsApp channels by category, country, or language to find a subject's broadcast presence.",
     "selectorsIn": [
-      "phone",
+      "name",
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory; no account or payment required to browse or search.",
+    "opsec": "passive",
+    "opsecNote": "Browsing this third-party directory does not touch the target. Opening the actual WhatsApp channel link, however, loads it inside WhatsApp — follow/preview a channel from a sock-puppet WhatsApp account, since owners can see follower counts and, for small channels, may notice new followers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent aggregator of user-submitted WhatsApp channel links; listings are self-promoted and unvetted, so treat coverage as partial and verify each channel inside WhatsApp.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "WhatsApp Channels Finder"
+    ],
     "tags": [
       "whatsapp",
-      "WhatsApp"
+      "WhatsApp",
+      "channel-discovery"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/wachannelsfinder-com.md"
   },
   {
@@ -221988,46 +222010,57 @@
   {
     "id": "adultwork-com",
     "name": "adultwork.com",
-    "description": "OSINT tool: adultwork.com.",
+    "description": "Use when you have a `name`, `username`, or location and suspect a subject advertises adult/escort services in the UK — returns public profiles with photos, working areas, and contact leads.",
     "url": "http://www.adultwork.com/Home.asp",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a subject's public adult-services profile (photos, working area, aliases) in UK escort/adult-work investigations.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "username",
+      "image"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "social-profile",
+      "image",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Profiles are browsable free, but the site is age-gated and much profile detail (contacts, galleries, messaging) requires a (free) logged-in account; some content is behind paid credits.",
+    "opsec": "active",
+    "opsecNote": "Adult-services investigations are sensitive and the platform is tied to vulnerable people and possible trafficking/exploitation. Viewing profiles while logged in can register as profile views the advertiser sees. Always use a sock-puppet account and a clean browser; never contact or engage a subject. Follow legal/ethical guardrails and involve law enforcement where exploitation is suspected.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, long-established UK adult-services marketplace; profiles are self-authored and often use stage names/aliases, so identity must be corroborated, not taken at face value.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "gb"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "AdultWork"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "adult-services"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/adultwork-com.md"
   },
   {
@@ -244191,46 +244224,55 @@
   {
     "id": "infoempresa-com",
     "name": "infoempresa.com",
-    "description": "OSINT tool: infoempresa.com.",
+    "description": "Use when you have a `name` or company and want to find a subject's Spanish company directorships, shareholdings, or registered addresses — returns corporate roles drawn from official Spanish registries.",
     "url": "https://www.infoempresa.com/en-in/es/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Linking a person to Spanish companies (as director/shareholder) and pulling registered company addresses from official sources.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic company existence and headline details are viewable free; full reports (directors, shareholders, accounts, credit) sit behind paid reports/subscription.",
+    "opsec": "passive",
+    "opsecNote": "Queries official-registry-derived data and does not alert the subject. Deeper reports may require registration, which ties the lookup to your account — use a sock-puppet identity if you buy a report.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Aggregates data from the Spanish Commercial Registry and BORME (official gazette); the underlying sources are authoritative though the presentation is a commercial reseller.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "es"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Infoempresa"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "spain"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/infoempresa-com.md"
   },
   {
@@ -253724,46 +253766,53 @@
   {
     "id": "nmbi-ie",
     "name": "nmbi.ie",
-    "description": "OSINT tool: nmbi.ie.",
+    "description": "Use when you have a `name` (and ideally a registration number) for a nurse or midwife in Ireland and want to confirm their professional registration — returns registration status, division, and conditions.",
     "url": "https://my.nmbi.ie/search-the-register/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a subject is a registered nurse or midwife in the Republic of Ireland.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official public register; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public regulator lookup that does not alert the registrant. Only professional details are exposed (no home address). Standard clean-browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Nursing and Midwifery Board of Ireland (NMBI), the statutory regulator — authoritative for Irish nurse/midwife registration.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "Nursing and Midwifery Board of Ireland",
+      "NMBI register search"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "healthcare"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nmbi-ie.md"
   },
   {
@@ -271354,14 +271403,14 @@
   },
   {
     "id": "west-virginia",
-    "name": "West Virginia",
-    "description": "OSINT tool: West Virginia.",
+    "name": "West Virginia Offender Search",
+    "description": "Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody status, DOB, and offender ID.",
     "url": "https://dcr.wv.gov/offendersearch/pages/default.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming current/past incarceration of a subject in West Virginia state prisons or regional jails.",
     "selectorsIn": [
       "name"
     ],
@@ -271370,29 +271419,38 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state government service; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public government lookup that does not notify the subject; queries may be logged by the state but are not tied to the person searched. Use a clean browser/VPN if you want to keep the investigation off your own IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the West Virginia Division of Corrections and Rehabilitation — an authoritative government source for that state's custody data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "WV DCR Offender Search",
+      "West Virginia Division of Corrections"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "incarceration"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/west-virginia.md"
   },
   {
@@ -320147,7 +320205,7 @@
   {
     "id": "facebook-photos-by-id",
     "name": "Facebook Photos by ID",
-    "description": "Opening specific Facebook photos from known numeric IDs",
+    "description": "Use when you have a Facebook photo's numeric `fbid` (from a scrape, an old link, or an image reference) and want to open the original photo page — returns the live photo, its owner, and context.",
     "url": "https://www.facebook.com/photo.php?fbid=PHOTO-ID-HERE",
     "category": "social-networks",
     "path": [
@@ -320155,34 +320213,49 @@
       "facebook",
       "search"
     ],
-    "bestFor": "Opening specific Facebook photos from known numeric IDs",
-    "input": "Photo ID value inserted into the URL",
-    "output": "Direct Facebook photo page for the supplied photo ID",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Resolving a bare Facebook photo ID back to its live photo page, owner, album, and caption.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Accesses publicly available photo endpoints; visibility depends on the target photo privacy settings.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free direct Facebook URL technique; a Facebook login is usually needed to view the resolved page.",
+    "opsec": "active",
+    "opsecNote": "Opening the URL while logged in ties your Facebook account to the view and can register in the owner's audience insights; on friends-only content it may surface you. Always resolve these links from a sock-puppet Facebook account in a separate browser profile, never your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is Facebook's own canonical photo endpoint, not a third-party scraper — the resolved page is authoritative for whatever the photo's privacy settings expose.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "fbid photo lookup",
+      "facebook photo.php"
+    ],
+    "tags": [
+      "facebook",
+      "photo-id",
+      "url-technique"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook/search/facebook-photos-by-id.md"
   },
   {
@@ -335509,37 +335582,56 @@
   {
     "id": "osintgraph",
     "name": "Osintgraph",
-    "description": "OSINT tool: Osintgraph.",
+    "description": "Use when you have an Instagram `username` and want to map the subject's follower/followee network to surface close ties — returns a Neo4j graph of connections and AI-summarized profiles.",
     "url": "https://github.com/XD-MHLOO/Osintgraph",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Building and visualizing a target's Instagram social graph to find mutual connections and close associates.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free open-source tool. Neo4j has a free tier; optional Gemini AI analysis needs your own (free-tier-capable) API key.",
+    "opsec": "active",
+    "opsecNote": "Scraping requires logging into Instagram; the account you use follows/reads targets and WILL be rate-limited or banned, and Instagram may flag the activity to the target's account. Use a dedicated sock-puppet Instagram account, a residential-looking User-Agent, and slow collection — never your real account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source project on GitHub (XD-MHLOO); code is inspectable but unofficial, relies on scraping that breaks when Instagram changes, and carries account-ban risk.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "aliases": [
+      "OSINTGraph",
+      "Instagram graph OSINT"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "social-graph",
+      "neo4j"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osintgraph.md"
   },
   {
@@ -344709,41 +344801,50 @@
   {
     "id": "subreddits",
     "name": "subreddits",
-    "description": "Topic-based subreddit discovery",
+    "description": "Use when you have a topic, interest, or location tied to a subject and want to find the Reddit communities where they might post — returns candidate subreddits to search.",
     "url": "https://subreddits.org/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "reddit"
     ],
-    "bestFor": "Topic-based subreddit discovery",
-    "input": "Topic keywords or category browsing",
-    "output": "Lists of relevant subreddits and navigation paths",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Discovering topic- and interest-based subreddits to seed a Reddit username/activity hunt.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public directory; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "Public index browsing with no direct target engagement.",
+    "opsecNote": "Browsing a third-party static index only. No query touches Reddit or the target, and nothing is logged against the subject. Still, pivot into Reddit itself in a sock-puppet session so your real account is not tied to the search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent, unofficial static directory of subreddits; not affiliated with Reddit and may be stale, but it only points at public communities so the correctness risk is low.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "subreddits.org"
+    ],
+    "tags": [
+      "reddit",
+      "subreddit-discovery"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit/subreddits.md"
   },
   {
