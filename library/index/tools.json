@@ -138585,13 +138585,13 @@
   {
     "id": "berify",
     "name": "Berify",
-    "description": "Reverse image search engine to help users find stolen images and videos",
+    "description": "Use when you have an `image` or `face` and want to find where else it appears online across multiple engines plus a proprietary index — returns matching/similar images and the pages hosting them.",
     "url": "https://berify.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Multi-engine reverse image/video search (Google, Bing, Yandex, Baidu + own index) to find where a photo appears online.",
     "selectorsIn": [
       "image",
       "face"
@@ -138600,31 +138600,36 @@
       "image",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Offers free searches (no card for the initial trial) but requires account registration; automated monitoring, alerts, video search, and higher volumes are paid.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You upload the target image to a third-party service, which stores it and may retain/monitor it. The person in the photo is not notified, but the image now sits on Berify's servers — use a sock-puppet account and don't upload anything you can't expose to a vendor.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial reverse-image service aimed at photographers protecting their work; result quality relies on the engines it aggregates plus an unaudited proprietary index.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "berify.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/berify.md"
   },
@@ -171659,29 +171664,36 @@
   {
     "id": "google-cse-for-telegram-links",
     "name": "Google CSE for Telegram links",
-    "description": "Finding public Telegram channels and groups by keyword",
+    "description": "Use when you have a keyword, `name`, or `username` and want public Telegram channels/groups mentioning it — returns Google-indexed t.me links to public Telegram resources.",
     "url": "https://cse.google.com/cse?cx=006368593537057042503:efxu7xprihg",
     "category": "messaging",
     "path": [
       "messaging",
       "telegram"
     ],
-    "bestFor": "Finding public Telegram channels and groups by keyword",
-    "input": "Keyword search terms",
-    "output": "Google CSE results linking to public Telegram resources",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Finding public Telegram channels and groups by keyword via a pre-scoped Google Custom Search Engine.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free hosted Google Custom Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "Queries are sent to Google CSE rather than directly to Telegram services.",
+    "opsecNote": "Queries go to Google CSE, not to Telegram, so you never touch the target's Telegram or the channels themselves during search — nobody is notified. Only join/view channels from a sock-puppet Telegram account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Google Custom Search Engine over t.me and Telegram-directory pages; coverage is only what Google has indexed and decays as the CSE config ages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -171689,11 +171701,16 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Telegram links CSE",
+      "Google CSE Telegram"
+    ],
+    "tags": [
+      "telegram"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegram/google-cse-for-telegram-links.md"
   },
   {
@@ -232351,46 +232368,53 @@
   {
     "id": "curious-fox-united-kingdom",
     "name": "Curious Fox (United Kingdom)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name`/surname tied to a UK or Irish village and want to reach people researching that family/place — returns village-linked genealogy posts and a way to contact the researchers behind them.",
     "url": "http://www.curiousfox.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Village-by-village UK/Ireland genealogy contact board — connecting to others researching a surname or locality.",
     "selectorsIn": [
       "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free members can post entries but cannot initiate contact; only paid members can message others. Searching/browsing entries is free.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Passive research board — no email addresses are exposed (anti-spam by design), and contact is mediated through the site. Posting your own query reveals your research interest to other members, so use a sock-puppet handle if the enquiry is sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running community genealogy contact site; content is user-submitted research queries, not authoritative records — treat leads as tips to verify.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "CuriousFox",
+      "curiousfox.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/curious-fox-united-kingdom.md"
   },
@@ -251866,47 +251890,53 @@
   },
   {
     "id": "myfamilyannouncements-co-uk",
-    "name": "myfamilyannouncements.co.uk",
-    "description": "OSINT tool: myfamilyannouncements.co.uk.",
+    "name": "My Family Announcements (UK)",
+    "description": "Use when you have a `name` and want UK newspaper family notices — births, deaths, marriages, in memoriam — returns published notices with dates, places, and named relatives.",
     "url": "https://www.myfamilyannouncements.co.uk/national",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching UK regional/national newspaper family notices (deaths, births, marriages, in memoriam) by name.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
+      "name",
+      "associate",
       "address",
-      "employer-org",
-      "name"
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Searching and reading published notices is free. Placing a notice is a paid newspaper service.",
+    "opsec": "passive",
+    "opsecNote": "Passive lookup of publicly published newspaper notices — no subject is contacted or notified. Ordinary browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregator of notices submitted by families to UK regional newspapers (Reach/DC Thomson titles). The notices themselves are as reliable as what the family submitted; coverage depends on which papers participate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "myfamilyannouncements.co.uk",
+      "Family Announcements"
+    ],
     "tags": [
       "genealogybdmANDwills",
       "Genealogy Linked Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/myfamilyannouncements-co-uk.md"
   },
   {
@@ -320354,37 +320384,52 @@
   {
     "id": "facebook-friend-list-scraper",
     "name": "Facebook Friend List Scraper",
-    "description": "OSINT tool: Facebook Friend List Scraper.",
+    "description": "Use when you have a target's Facebook profile and want their friend network — returns the names and usernames of accounts on a large friend list without hitting rate limits.",
     "url": "https://github.com/narkopolo/fb_friend_list_scraper",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting names/usernames from a target's Facebook friend list at scale.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "name",
+      "username",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (pip-installable CLI). No fees; you supply a Facebook login.",
+    "opsec": "active",
+    "opsecNote": "It logs in with a real Facebook account and scrapes the target's friends from your session — Facebook can detect this and may flag/ban the account used. ALWAYS use a dedicated sock-puppet Facebook account and a proxy, never your real identity. Scraping friend lists may breach Facebook's terms.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community open-source scraper (~300 stars). Works only while it matches Facebook's current page markup, which changes often — expect breakage.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "fb_friend_list_scraper",
+      "fbfriendlistscraper"
+    ],
     "tags": [
       "facebook"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-friend-list-scraper.md"
   },
   {
@@ -320748,36 +320793,49 @@
   },
   {
     "id": "facebook-photo-search-engine",
-    "name": "Facebook Photo Search Engine",
-    "description": "OSINT tool: Facebook Photo Search Engine.",
+    "name": "Facebook Photo Search Engine (Google CSE)",
+    "description": "Use when you have a `name` or keyword and want to find Facebook-hosted photos/pages indexed by Google — returns Facebook links (profiles, photos) matching your terms.",
     "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:jyvyp2ppxma",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Keyword/name search scoped to publicly indexed Facebook photos and pages via a Google Custom Search Engine.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to use — it is a hosted Google Custom Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries go to Google, not to Facebook, so the target is not touched or notified. Standard search-engine hygiene (sock-puppet browser) is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A third-party Google Custom Search Engine with a fixed configuration; coverage is only what Google has indexed of Facebook and degrades as the CSE config ages and Facebook restricts indexing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Facebook photo CSE"
+    ],
+    "tags": [
+      "facebook"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-photo-search-engine.md"
   },
   {
@@ -323225,45 +323283,51 @@
   },
   {
     "id": "fulldp-co",
-    "name": "fulldp.co",
-    "description": "OSINT tool: fulldp.co.",
+    "name": "fulldp.co (Instagram Full-Size DP Viewer)",
+    "description": "Use when you have an Instagram `username` and want the full-resolution profile picture Instagram normally shows only as a thumbnail — returns the full-size DP image to download.",
     "url": "https://fulldp.co/instagram-full-size-profile-picture/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing/downloading a public Instagram account's profile picture at full resolution from just the username.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool, ad-supported; no account or payment needed.",
+    "opsec": "passive",
+    "opsecNote": "You send the target's username to a third-party site (not to Instagram directly), so the account owner is not notified and it doesn't touch your Instagram session. Use a sock-puppet browser; these ad-supported sites can be sketchy — avoid clicking their ads/downloads beyond the image.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party, ad-supported profile-picture fetcher of the many interchangeable \"insta DP\" sites. No affiliation with Instagram; reliability comes and goes as Instagram changes access.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "fulldp",
+      "instagram full size profile picture",
+      "insta dp viewer"
+    ],
     "tags": [
       "instagram",
       "Instagram Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fulldp-co.md"
   },
   {
@@ -347100,29 +347164,36 @@
   {
     "id": "tiktok-osint",
     "name": "TikTok-OSINT",
-    "description": "Automated TikTok metadata collection",
+    "description": "Use when you have a TikTok `username` and want that account's public metadata in one shot — returns display name, bio, follower/following/like counts, verification, user ID, and profile picture.",
     "url": "https://github.com/Omicron166/TikTok-OSINT",
     "category": "social-networks",
     "path": [
       "social-networks",
       "tiktok"
     ],
-    "bestFor": "Automated TikTok metadata collection",
-    "input": "TikTok usernames or profile URLs",
-    "output": "Profile metadata, video details, and engagement-related fields",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast automated capture of a TikTok account's public profile metadata and avatar from a username.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (self-hosted Python CLI). No API key or account required.",
     "opsec": "active",
-    "opsecNote": "Automated requests can trigger anti-abuse controls and rate limits.",
+    "opsecNote": "The script requests the target's public TikTok profile from your machine; automated/repeated requests can trip TikTok's rate limits and anti-abuse controls. Run behind a VPN/sock-puppet IP. It does not log in and does not notify the account owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small community script (a fork with a couple dozen commits); unaudited and dependent on TikTok's current page structure, so it can break without notice. Read the code before running.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -347130,11 +347201,16 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "TikTok OSINT",
+      "tiktokOSINT"
+    ],
+    "tags": [
+      "tiktok"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tiktok/tiktok-osint.md"
   },
   {
@@ -351169,38 +351245,48 @@
   },
   {
     "id": "twitter-audit",
-    "name": "Twitter Audit",
-    "description": "OSINT tool: Twitter Audit.",
+    "name": "TwitterAudit",
+    "description": "Use when you have an X (Twitter) `username` and want a rough estimate of how many of its followers look fake vs real — returns a real/fake follower score for the account.",
     "url": "https://www.twitteraudit.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Estimating the proportion of fake/bot followers on a Twitter/X account.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "A basic audit of your own or a public account is free; larger/repeat audits and full follower breakdowns are paid.",
+    "opsec": "passive",
+    "opsecNote": "The audited account is not notified. Historically it required authorising the app against a Twitter account for deeper audits — avoid connecting your real account; use a sock puppet, and prefer the anonymous public-account audit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "unverified",
+    "trustNote": "Third-party estimator using a sampled heuristic (not ground truth). Since X's API lockdown its ability to audit arbitrary/newer accounts is unreliable — treat any score as a rough indicator only.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Twitter Audit",
+      "twitteraudit.com"
+    ],
     "tags": [
       "twitter"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-audit.md"
   },
   {
@@ -351749,38 +351835,55 @@
   },
   {
     "id": "twitter-search",
-    "name": "Twitter Search",
-    "description": "OSINT tool: Twitter Search.",
-    "url": "http://search.twitter.com",
+    "name": "Twitter/X Advanced Search",
+    "description": "Use when you have a `name`, `username`, keyword, place, or date range and want to surface matching public posts on X (Twitter) — returns tweets, the accounts behind them, and timing/location clues.",
+    "url": "https://x.com/search-advanced",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Precisely filtering public X (Twitter) posts by author, keyword, date, and place using search operators.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search; a logged-in X account is effectively required now, and some result depth/recency is gated behind X Premium.",
+    "opsec": "passive",
+    "opsecNote": "Searching does not notify the accounts you find. But you must be logged in, so searches are tied to whatever X account you use — use a sock-puppet account, not your real identity, and avoid following/liking the target from it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party X (Twitter) search over the platform's own public posts — authoritative for what X exposes, though the index and operator behaviour have degraded since the API/Premium changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Twitter Advanced Search",
+      "X Search",
+      "search.twitter.com"
+    ],
     "tags": [
       "twitter"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-search.md"
   },
   {
