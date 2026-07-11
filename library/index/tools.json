@@ -125818,46 +125818,51 @@
   {
     "id": "global-incident-map",
     "name": "Global Incident Map",
-    "description": "Map displaying terrorist activity and other suspicious events by location, including arson, shootings, and explosions",
+    "description": "Use when you have a `geolocation`/region and want situational context — returns a map of reported terrorism, suspicious activity, and other incidents by location (context, not person data).",
     "url": "http://www.globalincidentmap.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Situational-awareness context — what incidents (terrorism, arson, shootings, hazmat) have been reported in an area.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Historically had free public maps; now largely behind a login/subscription. Account required for full access.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Browsing an incident map reveals nothing about any individual and is passive. Registering ties access to an account you create — use a research login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running aggregator of incident/terrorism news plotted on a map; sourced from news feeds, so treat entries as reported (not verified) events.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "globalincidentmap.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "situational-awareness"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/geolocation/global-incident-map.md"
   },
@@ -171239,41 +171244,56 @@
   {
     "id": "discordosint",
     "name": "DiscordOSINT",
-    "description": "Learning Discord investigation methods and toolchains",
+    "description": "Use when you have a Discord `username`/user-ID/server and want the current method and toolchain — returns a curated guide of Discord investigation techniques and tools (a reference, not a lookup).",
     "url": "https://github.com/husseinmuhaisen/DiscordOSINT",
     "category": "messaging",
     "path": [
       "messaging",
       "discord"
     ],
-    "bestFor": "Learning Discord investigation methods and toolchains",
+    "bestFor": "Learning the current Discord investigation workflow and finding the right tool for user-ID, server, and message intelligence.",
     "input": "Manual review of documentation and linked resources",
     "output": "Investigation guidance, resource links, and workflow references",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository (curated reference). No account; browse or clone.",
     "opsec": "passive",
-    "opsecNote": "Reference material only; OPSEC depends on which downstream tools are executed.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Reading the repo is passive and reveals nothing. The Discord techniques it describes are often ACTIVE (joining servers, resolving IDs, scraping) — each downstream action has its own footprint and can expose a puppet account; assess before executing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "A well-known community-maintained Discord OSINT resource collection; a curated directory, not a vetted tool — verify each linked tool independently.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "husseinmuhaisen DiscordOSINT"
+    ],
+    "tags": [
+      "discord",
+      "catalog",
+      "socmint"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/discord/discordosint.md"
   },
   {
@@ -208538,44 +208558,53 @@
   },
   {
     "id": "land-registry-map-enquiry",
-    "name": "Land Registry - Map Enquiry",
-    "description": "OSINT tool: Land Registry - Map Enquiry.",
+    "name": "HM Land Registry – Map Enquiry",
+    "description": "Use when you have a property `address` in England & Wales and want to identify its registered owner — returns the title number free, then the owner's name/address on the title register for a small fee.",
     "url": "https://eservices.landregistry.gov.uk/eservices/findaproperty/view/mapenquiryinit.do",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a property address into the registered legal owner via HM Land Registry's official title records.",
     "selectorsIn": [
       "address"
     ],
     "selectorsOut": [
       "name",
-      "phone",
-      "associate"
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Finding a property and its title number via the map is free; the title register / title plan that reveals the owner's name costs a small statutory fee (a few pounds) paid by card.",
+    "opsec": "passive",
+    "opsecNote": "An official records query — the registered owner is not notified. Ordering documents requires payment details tied to you; use a research payment method if you need separation.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "HM Land Registry is the official government register of property ownership in England & Wales; the title register is authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "HM Land Registry Find a Property",
+      "Land Registry map search"
+    ],
     "tags": [
-      "address"
+      "address",
+      "property",
+      "uk"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/land-registry-map-enquiry.md"
   },
   {
@@ -211997,47 +212026,55 @@
   {
     "id": "publicrecordsnow",
     "name": "PublicRecordsNOW",
-    "description": "People-related search engine that searches using name, address or phone number; includes public records, criminal checks, and background checks",
+    "description": "Use when you have a `name`, `phone`, or `address` and want an aggregate people-search profile — teases addresses, phones, relatives, and background/criminal hits; unverified leads behind an upsell.",
     "url": "http://www.publicrecordsnow.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A fast aggregate lead-check on a US subject that points to records to confirm elsewhere.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
-      "social-profile",
       "address",
       "phone",
-      "associate"
+      "associate",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search returns a teaser; full reports (contact detail, background/criminal) push toward a paid report or partner upsell.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching is passive and doesn't notify the subject, but you're handing the target's identifiers to a commercial data broker that logs and monetizes queries. Use throwaway registration details and never enter real personal info.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial people-search/data-broker aggregator (claims 120B+ records from thousands of sources); compiled, often stale or conflated data — treat as leads.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Public Records Now"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "data-broker"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/publicrecordsnow.md"
   },
@@ -252852,45 +252889,52 @@
   },
   {
     "id": "mugshots",
-    "name": "Mugshots",
-    "description": "OSINT tool: Mugshots.",
+    "name": "Mugshots.com",
+    "description": "Use when you have a `name` and want to check for a US arrest/booking record — returns booking photo, charges, arrest location and date; treat as an unverified lead, not proof.",
     "url": "http://mugshots.com/search.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A quick check for a booking photo and arrest record on a US subject, to corroborate elsewhere.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
+      "image",
       "name",
-      "dob",
+      "address",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view records. It is an aggregator of public arrest data and news, not an official source.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive and does not alert the subject. Note the site is ethically controversial (it publishes booking photos of people not convicted); handle findings carefully and never treat an arrest as guilt.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial arrest-photo aggregator that explicitly disclaims accuracy/timeliness; records can be stale, mismatched, or reflect dropped charges. Corroborate with the originating county/court.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mugshots"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "arrest-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/mugshots.md"
   },
   {
@@ -331820,13 +331864,13 @@
   {
     "id": "instagram-search-inteltechniques-method",
     "name": "Instagram Search (IntelTechniques method)",
-    "description": "Structured Instagram queries (profile, tagged photos, followers, hashtags) and third-party viewers.",
+    "description": "Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers, and hashtag searches plus third-party viewer links.",
     "url": "https://inteltechniques.com/tools/Instagram.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Instagram profile, tagged, followers/following and hashtag query workflow plus viewer mirrors.",
+    "bestFor": "Building precise Instagram queries (profile, tagged, followers/following, hashtag) and jumping to viewer mirrors from one page.",
     "selectorsIn": [
       "username"
     ],
@@ -331836,15 +331880,18 @@
       "associate",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web tool from IntelTechniques (Michael Bazzell). No account; it builds and launches query URLs rather than hosting data itself.",
+    "opsec": "passive",
+    "opsecNote": "The page just constructs query links — building them is passive. Following a link takes you to Instagram or a third-party viewer, where normal Instagram OpSec applies (use a sock-puppet, avoid logging in as yourself).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely-cited free tool page from a respected OSINT author; individual query links depend on Instagram/third-party endpoints that break as Instagram restricts access.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -331853,7 +331900,10 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "IntelTechniques Instagram Tool",
+      "Bazzell Instagram tools"
+    ],
     "tags": [
       "instagram",
       "photos",
@@ -331861,7 +331911,7 @@
       "followers"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-search-inteltechniques-method.md"
   },
@@ -358534,29 +358584,37 @@
   {
     "id": "yt-dlp",
     "name": "yt-dlp",
-    "description": "Video evidence preservation and metadata export",
+    "description": "Use when you have a video/channel/profile URL and want to preserve the media and its metadata — returns the video file plus JSON metadata (uploader, timestamps, thumbnails, subtitles) for evidence and analysis.",
     "url": "https://github.com/yt-dlp/yt-dlp",
     "category": "social-networks",
     "path": [
       "social-networks",
       "tiktok"
     ],
-    "bestFor": "Video evidence preservation and metadata export",
+    "bestFor": "Downloading and preserving video evidence with full JSON metadata from 1000+ sites (TikTok, YouTube, Instagram, X, etc.).",
     "input": "Video, playlist, or channel URLs",
     "output": "Media files, JSON metadata, thumbnails, subtitles, and related artifacts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Unlicense). Install via `pip install yt-dlp`, a package manager, or a static binary; no account or API key.",
     "opsec": "active",
-    "opsecNote": "Direct content fetch requests expose investigator network identifiers.",
+    "opsecNote": "yt-dlp fetches directly from the target platform, exposing your IP to that host (and, for some sites, hitting endpoints that may be rate-limited or logged). Route through a VPN/proxy and use a clean environment; for logged-in-only content, cookies you supply tie the fetch to that account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The de-facto standard, heavily-audited open-source video downloader (successor to youtube-dl) with a large active maintainer community.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
@@ -358564,11 +358622,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "youtube-dl successor"
+    ],
+    "tags": [
+      "video-download",
+      "evidence-preservation",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tiktok/yt-dlp.md"
   },
   {
