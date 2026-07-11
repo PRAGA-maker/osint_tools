@@ -36883,30 +36883,32 @@
   {
     "id": "reddit-old-reddit-search",
     "name": "Reddit (old.reddit search)",
-    "description": "Structured Reddit search across user profiles, submissions, comments and keyword/domain mentions.",
+    "description": "Use when you have a Reddit `username` or keyword/`name` and want to read a user's full post/comment history or find mentions — returns their social-profile activity, interests, associates and location/timing signals.",
     "url": "https://old.reddit.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "Search Reddit users, their submissions/comments and keyword/domain mentions.",
+    "bestFor": "Reading a Reddit user's submissions/comments and searching keyword/domain mentions via the old, operator-friendly interface.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "associate"
+      "associate",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free; no account required to read public profiles or search. Logged out avoids personalisation.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public profiles and searching is passive and does not notify the user. Do NOT upvote, comment, follow or message from a real account — that is active and visible. Use a logged-out session or a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "old.reddit.com is Reddit's own legacy interface — first-party and reliable for what users publicly posted; the caveat is user self-reporting (people post inaccurate or deliberately misleading personal details).",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -36916,7 +36918,8 @@
     "localInstall": false,
     "registration": false,
     "aliases": [
-      "old.reddit"
+      "old.reddit",
+      "old reddit search"
     ],
     "tags": [
       "reddit",
@@ -36924,7 +36927,7 @@
       "user-history"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/reddit-old-reddit-search.md"
   },
@@ -108573,37 +108576,49 @@
   },
   {
     "id": "personal-data-leak-checker",
-    "name": "Personal Data Leak Checker",
-    "description": "Personal data leak checker by email.",
+    "name": "CyberNews Personal Data Leak Checker",
+    "description": "Use when you have an `email` and want to check whether it appears in known data breaches — returns a breach-exposure indicator (and leaked-data categories) to gauge the account's exposure.",
     "url": "https://cybernews.com/personal-data-leak-check/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly checking whether an email address shows up in aggregated known data breaches.",
     "selectorsIn": [
       "email"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "selectorsOut": [
+      "email"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use; no account required to run a check.",
+    "opsec": "active",
+    "opsecNote": "You submit the target's email to a third-party (CyberNews) breach-lookup service, which processes and may log it. The subject is not notified, but do not enter addresses you are not authorised to check; use a clean session and treat the query as leaving a trace with the operator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Run by CyberNews, a reputable security-news outlet, over aggregated public breach datasets. Reliable as an exposure indicator; the specific breach sources are summarised rather than exhaustively enumerated like HIBP.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CyberNews data leak checker",
+      "cybernews personal data leak check"
+    ],
+    "tags": [
+      "breach",
+      "data-leak",
+      "email-exposure"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/email/personal-data-leak-checker.md"
   },
@@ -155307,40 +155322,49 @@
   {
     "id": "remini-ai-photo-enhancer",
     "name": "Remini AI Photo Enhancer",
-    "description": "Tool allows to restore blurry faces to photos.",
+    "description": "Use when you have a low-resolution or blurry `image`/`face` and want an AI upscale/restoration to make features more legible for a human viewer — returns an enhanced image. Treat output as reconstructed, not evidential.",
     "url": "https://app.remini.ai/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "AI upscaling/restoration of blurry or low-res faces to make them more viewable (as a lead, not proof).",
     "selectorsIn": [
-      "face",
+      "image",
+      "face"
+    ],
+    "selectorsOut": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Freemium — limited free enhancements, then a subscription/credits for volume and higher quality; the mobile app pushes paid tiers.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to Remini's cloud to process it — the file leaves your control and is handled by a third party. Do not upload sensitive or case-critical images you cannot risk exposing; strip nothing you need and assume the upload is retained. No contact with the subject, so passive toward them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular, legitimate commercial AI enhancer. Its critical limitation for OSINT is that it *generates* plausible detail rather than recovering real pixels — enhanced faces can look convincing but be wrong.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Remini",
+      "remini.ai"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Image editing tools"
+      "image-editing",
+      "ai-enhancement"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/remini-ai-photo-enhancer.md"
   },
@@ -208477,43 +208501,48 @@
   {
     "id": "leakey",
     "name": "LEAKEY",
-    "description": "#bash script which checks and validates for leaked credentials (45 types).",
+    "description": "Use when you have a leaked API key/token/credential (e.g. found in a breach or paste) and want to validate whether it is still live and which service it belongs to — returns an active/revoked status and the owning service/employer-org.",
     "url": "https://github.com/rohsec/LEAKEY/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Validating leaked credentials/API tokens (45+ signature types) to see if they are still active during an assessment.",
     "selectorsIn": [
-      "name"
+      "document-id"
     ],
     "selectorsOut": [
-      "address",
-      "email",
-      "name",
-      "phone"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (GitHub); install and run locally. No paid tier.",
+    "opsec": "active",
+    "opsecNote": "LEAKEY actively sends authenticated requests to each service's API to test whether a credential is live — that touches the third-party service (and, implicitly, the credential owner's account infrastructure), and can be logged or alert the owner. Only run it against credentials you are legally authorised to test (e.g. your own assessment scope); testing someone else's live keys may be unlawful.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source security utility (rohsec/LEAKEY); code and signatures are auditable. It is a pentest/credential-validation tool, not a person-finder — its people-OSINT relevance is indirect (validating creds found in a subject's breached data).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "leakey",
+      "leaky"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "credential-validation",
+      "breach"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/leakey.md"
   },
@@ -213030,38 +213059,61 @@
   },
   {
     "id": "socialcatfish",
-    "name": "Socialcatfish",
-    "description": "OSINT tool: Socialcatfish.",
+    "name": "Social Catfish",
+    "description": "Use when you have an `image`, `email`, `phone`, `username` or `name` and want a reverse-lookup that verifies identity and surfaces linked profiles — returns social-profile, aliases, contact info and associates. Freemium.",
     "url": "https://socialcatfish.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Reverse identity verification — especially catching catfish/romance-scam personas by reverse-searching a photo, email or phone into linked profiles.",
+    "selectorsIn": [
+      "image",
+      "email",
+      "phone",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "associate",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Freemium — you can start a search and see limited previews free, but full reports and deep results require a paid plan (subscription). Budget for the plan and cancel deliberately.",
+    "opsec": "active",
+    "opsecNote": "A search runs against a broker index and is passive toward the subject (no notification), but full access requires a paid account tied to your billing identity. Its signature use — verifying a romance-scam persona — means you may be searching a photo/email the subject supplied; use a research account and payment method, never your own.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known commercial reverse-lookup aggregator marketed for catfish/scam detection. Data is aggregated from public and broker sources — useful leads, not authoritative facts; expect false and stale matches.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "socialcatfish.com",
+      "SocialCatfish"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "reverse-lookup",
+      "catfish"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/socialcatfish.md"
   },
   {
@@ -253565,45 +253617,51 @@
   },
   {
     "id": "nb-courts-public-self-serve-website",
-    "name": "NB Courts - Public Self-Serve Website",
-    "description": "OSINT tool: NB Courts - Public Self-Serve Website.",
+    "name": "New Brunswick Courts — Public Self-Serve",
+    "description": "Use when you have a `name` and a New Brunswick (Canada) connection and want to find court cases involving that person — returns case participants, case type, location and case document-id.",
     "url": "https://www1.gnb.ca/nota/default.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching New Brunswick court cases (civil, small claims, bankruptcy, probate) by participant name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public court-records search operated by the Government of New Brunswick; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public government court database; searching is passive and the subject is not notified. No login required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Government of New Brunswick (gnb.ca); authoritative first-party court record data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NB Courts self-serve",
+      "New Brunswick court case search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "legal-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nb-courts-public-self-serve-website.md"
   },
   {
