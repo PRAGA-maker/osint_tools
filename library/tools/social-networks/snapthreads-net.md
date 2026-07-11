@@ -11,7 +11,7 @@ selectorsIn:
 - social-profile
 selectorsOut:
 - image
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free online downloader; no account. Ad-supported third-party site.

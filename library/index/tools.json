@@ -159926,7 +159926,7 @@
   {
     "id": "tubechop",
     "name": "TubeChop",
-    "description": "OSINT tool: TubeChop.",
+    "description": "Use when you have a YouTube video (`social-profile`/URL) and want to cite or share a precise segment of it — returns a time-coded clip link pointing at the moment of interest.",
     "url": "https://tubechop.com/",
     "category": "image-video-face",
     "path": [
@@ -159934,22 +159934,29 @@
       "videos",
       "analyze-record"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Making a shareable, time-coded clip of a specific segment of a YouTube video for a report or hand-off.",
+    "input": "YouTube video URL + start/end times",
+    "output": "A shareable time-coded clip link",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free clips work without an account but expire after 7 days; a low-cost account (around $15/yr) removes expiry and adds unlisted links. It does not download the video — it wraps the official YouTube player with start/end times.",
+    "opsec": "passive",
+    "opsecNote": "TubeChop just stores start/end timestamps against a public YouTube URL; it doesn't touch the uploader and doesn't host the media. The uploader isn't notified. It is NOT preservation — if the source video is deleted, the clip breaks.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A long-running third-party YouTube-clipping utility. Reliable for what it does (time-coded sharing), but it is not an evidence-preservation tool — the clip depends on the source video staying online.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -159957,11 +159964,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "TubeChop"
+    ],
+    "tags": [
+      "youtube",
+      "video-clip",
+      "citation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/videos/analyze-record/tubechop.md"
   },
   {
@@ -162670,8 +162683,8 @@
     ],
     "selectorsOut": [
       "social-profile",
-      "metadata",
-      "associate"
+      "associate",
+      "name"
     ],
     "status": "live",
     "pricing": "free",
@@ -210478,45 +210491,55 @@
   {
     "id": "nigeriaphonebook",
     "name": "NigeriaPhonebook",
-    "description": "Look up by name, state, and phone number. Last names are partially censored for free accounts.",
+    "description": "Use when you have a Nigerian `phone` or `name` and want caller/owner identification or a business listing — returns name, phone, and address/business details.",
     "url": "https://nigeriaphonebook.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying Nigerian phone numbers (MTN/Airtel/Glo/9mobile) and businesses, with scam-report context.",
     "selectorsIn": [
       "name",
       "phone"
     ],
     "selectorsOut": [
       "name",
-      "social-profile",
-      "phone"
+      "phone",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing the business directory is free, but personal phone-number lookups are gated — last names are partially censored on free accounts and full lookups start around a $1 trial with paid plans beyond.",
+    "opsec": "passive",
+    "opsecNote": "Querying a number does not alert its owner. It aggregates public/crowd data of varying reliability; corroborate before acting. Use a clean browser and a payment method you're comfortable exposing if you buy lookups.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Crowd/aggregated Nigerian directory with scam-report features; useful for leads but data provenance and freshness are unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ng"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Nigeria Phonebook",
+      "nigeriaphonebook.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "people"
+      "people",
+      "nigeria",
+      "reverse-phone"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/nigeriaphonebook.md"
   },
   {
@@ -213659,49 +213682,56 @@
   },
   {
     "id": "social-recon",
-    "name": "Social Recon",
-    "description": "OSINT tool: Social Recon.",
+    "name": "Social Recon (osint-scraper)",
+    "description": "Use when you have a `username` or `email` and want an automated sweep of their online footprint — returns social-profile, associate, and email leads (self-hosted, unmaintained).",
     "url": "https://github.com/famavott/osint-scraper",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A self-hosted Python/Flask app that compiles a person's online presence from a username/email.",
     "selectorsIn": [
-      "name"
+      "username",
+      "email"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
       "social-profile",
-      "dob"
+      "associate",
+      "email"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open-source (MIT-style). Cost is your own time — it's dated (Python 3.5-era) and likely needs dependency fixes to run today.",
+    "opsec": "passive",
+    "opsecNote": "Runs locally under your control, so queries originate from your machine/IP — route through a VPN/sock-puppet setup if you don't want your IP hitting the sites it scrapes. It pulls public data only and does not notify the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "A community open-source project (a few hundred GitHub stars) that is no longer actively maintained; audit the code before running and expect breakage against sites that have changed since.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "osint-scraper",
+      "famavott osint-scraper"
+    ],
     "tags": [
       "people-search",
       "open-source",
-      "cli"
+      "cli",
+      "self-hosted"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/social-recon.md"
   },
   {
@@ -214888,13 +214918,13 @@
   {
     "id": "truepeoplesearch",
     "name": "TruePeopleSearch",
-    "description": "Free US people search returning addresses, phones, relatives.",
+    "description": "Use when you have a US `name`, `phone`, or `address` and want current/past addresses, phone numbers, and relatives — returns address, phone, associate, and approximate dob.",
     "url": "https://www.truepeoplesearch.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Free US person lookup that ties a name to address history, phones, and a relatives/associates web.",
     "selectorsIn": [
       "name",
       "phone",
@@ -214906,15 +214936,18 @@
       "associate",
       "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Core search and the main results (addresses, phones, relatives) are genuinely free. Some \"full report\"/background-check links hand off to paid third-party partners — you don't need those for the core data.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching does not notify the subject. It is a data-broker aggregator, so treat results as leads, not proof, and be aware your own record is likely in it (an opt-out exists). Use a clean/sock-puppet browser; expect a bot-check.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely-used free US people-aggregator. Data is compiled from public records and commercial sources; coverage is strong but includes stale addresses and occasional wrong relative/associate links.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -214923,10 +214956,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "True People Search",
+      "TPS"
+    ],
+    "tags": [
+      "people-search",
+      "data-broker",
+      "reverse-phone",
+      "reverse-address"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/people-search/truepeoplesearch.md"
   },
@@ -244303,47 +244344,54 @@
   },
   {
     "id": "hcpc-uk-org",
-    "name": "hcpc-uk.org",
-    "description": "OSINT tool: hcpc-uk.org.",
+    "name": "HCPC Check the Register (hcpc-uk.org)",
+    "description": "Use when you have a `name` of a UK health/care professional and want to confirm their registration and status — returns name, profession/registration, and registration number.",
     "url": "https://www.hcpc-uk.org/check-the-register/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a UK health & care professional (e.g. paramedic, physio, radiographer) is registered, and their status.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official register maintained by the Health and Care Professions Council; no account.",
+    "opsec": "passive",
+    "opsecNote": "A public professional-register lookup; the individual is not notified. Nothing is sent to them. Confirms professional identity, not home/contact details.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the HCPC, the UK statutory regulator for 15 health & care professions; the authoritative source for whether a named person holds current registration.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "HCPC register",
+      "Health and Care Professions Council register"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk",
+      "verification"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/hcpc-uk-org.md"
   },
   {
@@ -245343,47 +245391,55 @@
   },
   {
     "id": "ico-org-uk",
-    "name": "ico.org.uk",
-    "description": "OSINT tool: ico.org.uk.",
+    "name": "ICO Data Protection Register (ico.org.uk)",
+    "description": "Use when you have an organisation/sole-trader `name` and want to confirm UK data-protection registration and its contact details — returns registered name, address, and employer-org registration.",
     "url": "https://ico.org.uk/ESDWebPages/Search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a UK business/sole trader is registered with the ICO and pulling its registered name, address, and registration number.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official UK register maintained by the Information Commissioner's Office; no account.",
+    "opsec": "passive",
+    "opsecNote": "A public register lookup; the registrant is not notified. Nothing is sent to the subject. Note that sole traders who register may have their home address published here — handle personal addresses responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Information Commissioner's Office (the UK data-protection regulator); the authoritative register of fee-paying data controllers.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ICO register",
+      "Data Protection Register",
+      "ICO ESD register"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "uk",
+      "data-protection"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ico-org-uk.md"
   },
   {
@@ -251555,45 +251611,53 @@
   },
   {
     "id": "manitoba-court-records",
-    "name": "Manitoba Court Records",
-    "description": "OSINT tool: Manitoba Court Records.",
+    "name": "Manitoba Court Records (name search)",
+    "description": "Use when you have a `name` and want to check for court cases involving them in Manitoba, Canada — returns matching cases, file numbers, and parties/counsel.",
     "url": "https://web43.gov.mb.ca/registry/namesearch",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Manitoba court files (family, criminal, civil, probate, bankruptcy) by a person's or company's name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free name search of the Manitoba Courts registry. Ordering copies of the actual court documents may carry a fee.",
+    "opsec": "passive",
+    "opsecNote": "A public court-records search; parties are not notified and nothing is sent to them. Standard research-browser hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Government of Manitoba / Manitoba Courts; the authoritative index of that province's court files.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Manitoba Courts registry search",
+      "Manitoba name search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "canada",
+      "manitoba",
+      "legal"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/manitoba-court-records.md"
   },
   {
@@ -325401,7 +325465,6 @@
       "username"
     ],
     "selectorsOut": [
-      "metadata",
       "social-profile"
     ],
     "status": "degraded",
@@ -345543,7 +345606,7 @@
     ],
     "selectorsOut": [
       "image",
-      "metadata"
+      "metadata-exif"
     ],
     "status": "live",
     "pricing": "free",

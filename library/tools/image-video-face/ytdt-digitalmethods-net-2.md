@@ -12,8 +12,8 @@ selectorsIn:
 - username
 selectorsOut:
 - social-profile
-- metadata
 - associate
+- name
 status: live
 pricing: free
 costNote: Free academic tool (Digital Methods Initiative); no account or key needed. It runs on a shared YouTube API quota, so heavy jobs can hit a temporary rate limit — retry later.

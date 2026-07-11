@@ -10,7 +10,6 @@ bestFor: A fast public analytics snapshot of a Twitter/X account — topics, men
 selectorsIn:
 - username
 selectorsOut:
-- metadata
 - social-profile
 status: degraded
 pricing: free
