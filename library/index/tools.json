@@ -170419,44 +170419,49 @@
   },
   {
     "id": "create-spoof-fake-twitter-post",
-    "name": "Create Spoof / Fake Twitter Post",
-    "description": "OSINT tool: Create Spoof / Fake Twitter Post.",
+    "name": "Simitator — Fake Twitter Post Generator",
+    "description": "Use when you need to fabricate a mock X/Twitter post for a sock-puppet/pretext, or to understand how a spoofed screenshot is made so you can debunk one — produces a fake tweet image, not real data.",
     "url": "https://simitator.com/generator/twitter/tweet",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Generating a realistic-looking fake tweet image for pretext/training/debunking; recognizing the tell-tale signs of forged tweet screenshots.",
     "selectorsIn": [
-      "phone",
       "username"
     ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account. Exports a JPG of the mocked-up tweet.",
+    "opsec": "active",
+    "opsecNote": "This CREATES fabricated content — using it to deceive a target is an active, high-risk pretext step with legal/ethical exposure; never impersonate a real person or organization. Its defensive value (recognizing fakes) is safe and passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A novelty \"prank\" generator unaffiliated with X; useful as a red-team/pretext prop and as a reference for how forged screenshots are produced.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Simitator",
+      "fake tweet generator"
+    ],
     "tags": [
       "messengerapps",
-      "Messenger Apps"
+      "Messenger Apps",
+      "pretext",
+      "verification"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/messaging/create-spoof-fake-twitter-post.md"
   },
   {
@@ -204077,46 +204082,50 @@
   {
     "id": "certificated-bailiff-register-justice-uk",
     "name": "Certificated Bailiff Register – Justice UK",
-    "description": "OSINT tool: Certificated Bailiff Register – Justice UK.",
+    "description": "Use when you have a `name` of someone claiming to be an enforcement agent (bailiff) in England & Wales and want to verify them — returns whether they hold a valid certificate, their employer, and the certifying court.",
     "url": "https://certificatedbailiffs.justice.gov.uk",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that a purported bailiff/enforcement agent is genuinely certificated, and identifying their employer and issuing court.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official government register; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Read-only search of an official register; it does not notify the individual. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official GOV.UK / Ministry of Justice register of certificated enforcement agents (Crown copyright, Open Government Licence).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Certificated Enforcement Agent Register",
+      "certificatedbailiffs.justice.gov.uk"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "professionlicensing",
+      "uk"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/certificated-bailiff-register-justice-uk.md"
   },
   {
@@ -207116,46 +207125,52 @@
   {
     "id": "hey-press",
     "name": "Hey Press",
-    "description": "OSINT tool: Hey Press.",
+    "description": "Use when you have a `name` or beat and want to find a journalist and what they cover — returns the journalist's outlet, recent articles, and social-profile links (a media-contact database, not general people search).",
     "url": "https://www.hey.press",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying journalists by name, outlet, or topic and pulling their recent coverage and contact/social links.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
       "social-profile",
-      "dob"
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free searches are limited; fuller results and contact detail require a paid plan. Now integrated with JournoFinder.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public journalist database is passive and does not alert the person. Registering ties queries to your account — use a research login if you want separation.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial PR/media-contact database (JournoFinder/Hey Press); accurate for journalist–outlet mapping, but a marketing tool, not an investigative record source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "hey.press",
+      "JournoFinder"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "journalists",
+      "media"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/hey-press.md"
   },
   {
@@ -212194,47 +212209,53 @@
   },
   {
     "id": "recordsfinder-people-search-ca",
-    "name": "RecordsFinder - People Search (CA)",
-    "description": "OSINT tool: RecordsFinder - People Search (CA).",
+    "name": "RecordsFinder - People Search (Canada)",
+    "description": "Use when you have a `name` and want a data-broker aggregate profile via RecordsFinder's Canada portal — teases address/phone/associate leads behind a paywall; verify everything downstream.",
     "url": "https://recordsfinder.com/canada",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A quick aggregate lead-check on a name; better as a pointer to records to confirm elsewhere than as a source of truth.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "address",
       "phone",
-      "email",
       "associate",
-      "social-profile",
-      "dob"
+      "email"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search returns a teaser (existence, partial results); full reports and most detail sit behind a paid subscription. Canadian data coverage is far thinner than its US coverage.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive and doesn't alert the subject, but you are handing the target's name to a commercial data broker that logs queries and may market to you. Use a throwaway account and email if you register; never enter real personal detail.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial people-search/data-broker aggregator; data is compiled from mixed sources, often stale or conflated, and monetized. Treat outputs as unverified leads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RecordsFinder Canada"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "data-broker"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/recordsfinder-people-search-ca.md"
   },
   {
@@ -215064,38 +215085,51 @@
   },
   {
     "id": "vinelink",
-    "name": "VineLink",
-    "description": "OSINT tool: VineLink.",
+    "name": "VINELink",
+    "description": "Use when you have a `name` (or offender ID) of an incarcerated person in the US and want their custody status and facility — returns location/facility (address) and custody-change alerts.",
     "url": "https://www.vinelink.com/#state-selection",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a person is in US jail/prison custody, where, and getting notified of release/transfer.",
+    "selectorsIn": [
+      "name",
+      "dob"
+    ],
+    "selectorsOut": [
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free — funded through corrections agencies via Appriss/Equifax. No account needed to search; free registration only if you want release/transfer notifications.",
+    "opsec": "passive",
+    "opsecNote": "Searching the offender database is anonymous and does not alert the subject. Only registering for notifications requires your contact details — use a dedicated contact if you want separation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The national VINE (Victim Information and Notification Everyday) service, operated under contract with state/county corrections agencies; authoritative for custody status where a facility participates.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VINE",
+      "Victim Information and Notification Everyday"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "inmate",
+      "corrections"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/people-search/vinelink.md"
   },
   {
@@ -252177,47 +252211,53 @@
   },
   {
     "id": "mmc-gov-my",
-    "name": "mmc.gov.my",
-    "description": "OSINT tool: mmc.gov.my.",
+    "name": "Malaysian Medical Council Register (MeRITS)",
+    "description": "Use when you have a doctor's `name` in Malaysia and want to verify registration — returns their registration number, qualifying institution, and practice status (employer-org, document-id).",
     "url": "https://merits.mmc.gov.my/search/registeredDoctor",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that a person is a registered medical practitioner in Malaysia and pulling their qualifications and registration status.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register search; no account needed to search (some advanced features may prompt login).",
+    "opsec": "passive",
+    "opsecNote": "Official government register; read-only searches do not notify the practitioner. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Malaysian Medical Council (MeRITS — Medical Register Information and Technical System), the statutory licensing body for doctors in Malaysia.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "my"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MMC",
+      "MeRITS",
+      "Malaysian Medical Council"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "medical-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/public-records/mmc-gov-my.md"
   },
   {
@@ -345031,13 +345071,13 @@
   {
     "id": "social-media-osint-tools-collection",
     "name": "Social-Media-OSINT-Tools-Collection",
-    "description": "Large curated collection of social media OSINT tools (SOCINT) organized by platform.",
+    "description": "Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated catalog pointing to social-profile discovery tools across 16+ platforms.",
     "url": "https://github.com/osintambition/Social-Media-OSINT-Tools-Collection",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Finding platform-specific tools for Facebook, Instagram, Twitter, Telegram, etc.",
+    "bestFor": "Finding the current best tool for a specific platform (Facebook, Instagram, X, Telegram, TikTok, LinkedIn, etc.) before starting collection.",
     "selectorsIn": [
       "username",
       "name",
@@ -345047,15 +345087,18 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository (curated list). No account; clone or browse in-page.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reading a GitHub list is passive and reveals nothing about your target. The tools it links to have their own, varying OpSec profiles — assess each individually before running it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Rich, frequently referenced SOCINT catalog (1.8k+ stars).",
+    "trustNote": "Well-referenced community SOCMINT catalog (1.8k+ GitHub stars); a directory, not a vetted tool — link quality and freshness vary.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -345064,14 +345107,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "osintambition Social Media OSINT Tools",
+      "SOCMINT tools collection"
+    ],
     "tags": [
       "awesome-list",
       "socint",
       "catalog"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/social-media-osint-tools-collection.md"
   },
@@ -354392,45 +354438,51 @@
   },
   {
     "id": "twitterwebviewer-com",
-    "name": "twitterwebviewer.com",
-    "description": "OSINT tool: twitterwebviewer.com.",
+    "name": "TwitterWebViewer",
+    "description": "Use when you have an X/Twitter `username` and want to read the profile, tweets, and media without logging in — returns social-profile content and downloadable media, anonymously.",
     "url": "https://twitterwebviewer.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing public X (Twitter) profiles, tweets, and videos without an account or leaving a logged-in footprint.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free with generous limits; no account or personal info required. Ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "Lets you read X without logging in your own (or a puppet) account, avoiding X's login wall and view-tracking. But you are routing the lookup through a third party that sees the username you query and your IP — use a VPN and don't reveal investigative targets you consider sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party anonymous X viewer; convenient but unaffiliated with X and dependent on scraping that X may break at any time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Twitter Web Viewer",
+      "X viewer"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "anonymous-viewer"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-11",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitterwebviewer-com.md"
   },
   {
