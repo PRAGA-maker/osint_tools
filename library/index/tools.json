@@ -173804,44 +173804,57 @@
   },
   {
     "id": "linecorp-com",
-    "name": "linecorp.com",
-    "description": "OSINT tool: linecorp.com.",
+    "name": "LINE — Responding to Law Enforcement",
+    "description": "Use when you have a `phone` or `username` tied to a LINE messenger account and need to know what data LINE holds and how (via legal process) it can be obtained — returns the legal-request channel and data-availability reference, not a self-service lookup.",
     "url": "https://linecorp.com/en/security/article/35",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding what account data LINE retains and the lawful channel to request it during a LINE-linked investigation.",
     "selectorsIn": [
       "phone",
       "username"
     ],
     "selectorsOut": [
+      "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free reference page published by LINE; the underlying data disclosure requires a valid legal request routed through law enforcement, not a purchase.",
+    "opsec": "passive",
+    "opsecNote": "Reading LINE's published policy is passive and leaves no trace against the subject. The actual data request is a legal-process action taken by law enforcement, not something an open-source investigator executes directly — never attempt to social-engineer or impersonate a request.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party policy page published by LINE Corporation (now LY Corporation); authoritative on LINE's own data-handling and disclosure practices.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "linecorp-com-transparency"
+    ],
+    "aliases": [
+      "LINE law enforcement guidelines",
+      "LINE data request policy"
+    ],
     "tags": [
       "messengerapps",
-      "Messenger Apps"
+      "Messenger Apps",
+      "legal-process"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/linecorp-com.md"
   },
   {
@@ -179728,41 +179741,58 @@
   {
     "id": "wechatsogou",
     "name": "WechatSogou",
-    "description": "Automating batch WeChat article and account discovery",
-    "url": "https://github.com/Chowency/WechatSogou",
+    "description": "Use when you have a WeChat public-account `name`/`username` or keyword and want to discover the account and its articles via Sogou's WeChat search — returns social-profile (account metadata) and image (QR/avatar).",
+    "url": "https://github.com/chyroc/WechatSogou",
     "category": "messaging",
     "path": [
       "messaging",
       "wechat-line"
     ],
-    "bestFor": "Automating batch WeChat article and account discovery",
-    "input": "Search keywords and query parameters",
-    "output": "Parsed WeChat article and account metadata from Sogou results",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Programmatically discovering WeChat public (official) accounts and their recent articles by scraping Sogou's WeChat search.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open-source Python library; no fees. Cost is operational — Sogou throttles and serves CAPTCHAs heavily.",
     "opsec": "passive",
-    "opsecNote": "Automates queries to Sogou search endpoints; no direct messaging-platform interaction with target users.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Queries Sogou's public WeChat search, not WeChat itself, and never contacts the target account. Sogou aggressively rate-limits and CAPTCHA-gates scraping, so run from a disposable IP; the tool historically needed proxy/CAPTCHA handling.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Well-known open-source project (chyroc/WechatSogou) with a large following, but WeChat/Sogou anti-crawling has degraded reliability; the code is public and inspectable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "cn"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "wechat-id-search"
+    ],
+    "aliases": [
+      "WeChatSogou",
+      "微信公众号爬虫"
+    ],
+    "tags": [
+      "wechat",
+      "open-source",
+      "scraper",
+      "china"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/wechat-line/wechatsogou.md"
   },
   {
@@ -207150,47 +207180,57 @@
   },
   {
     "id": "forensicosint-com-3",
-    "name": "forensicosint.com",
-    "description": "OSINT tool: forensicosint.com.",
+    "name": "Forensic OSINT — Username Search",
+    "description": "Use when you have a `username` and want to enumerate matching accounts across 500+ sites with screenshot evidence capture — returns social-profile links.",
     "url": "https://www.forensicosint.com/free-tools/username-search",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating a single username across 500+ social/forum/gaming sites with automated screenshot and MHTML evidence preservation.",
     "selectorsIn": [
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "social-profile",
-      "associate"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The username search is free but requires creating a free Forensic OSINT account. Forensic OSINT also sells a paid browser-based evidence-capture product; this specific tool is the free tier.",
+    "opsec": "passive",
+    "opsecNote": "Checks are run against target sites to confirm account existence; you are not messaging the subject, but profile pages may be loaded. Sign up with a sock-puppet email, not a personal identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Reputable OSINT vendor (Forensic OSINT); the underlying detection is powered by the open-source WhatsMyName project, so the enumeration logic is transparent and community-maintained.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "whatsmyname",
+      "sherlock",
+      "namechk"
+    ],
+    "aliases": [
+      "ForensicOSINT username search",
+      "Forensic OSINT WhatsMyName"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "People Search Sites",
+      "username-enumeration"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/forensicosint-com-3.md"
   },
   {
@@ -211915,31 +211955,35 @@
   },
   {
     "id": "people-search-2",
-    "name": "People search",
-    "description": "US people-search profiles with relatives and contact info.",
+    "name": "Radaris",
+    "description": "Use when you have a `name`, `phone`, or `address` and want a US people-search profile — returns address history, phone, associate (relatives), and employer-org.",
     "url": "https://radaris.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Building a US person's profile — address history, phones, relatives, and past employers — from a name, phone, or address.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
       "address",
       "phone",
-      "associate"
+      "associate",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier shows summary results (names, approximate age, city, partial relatives/phones). Full detailed reports and unredacted contact data are sold as paid reports.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching Radaris does not notify the subject. Radaris itself aggregates from public/commercial sources; browse from a sock-puppet context and expect ad-heavy pages. Do not enter your own or the subject's data into any \"claim/remove\" flow.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running commercial US data broker (15+ years); broad coverage but aggregated data with the usual broker error rate — stale addresses and mismatched relatives are common.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "us"
@@ -211948,10 +211992,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "truepeoplesearch",
+      "fastpeoplesearch",
+      "thatsthem"
+    ],
+    "aliases": [
+      "Radaris people search",
+      "Radaris reverse phone lookup"
+    ],
+    "tags": [
+      "peoplesearch",
+      "data-broker",
+      "reverse-phone"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/people-search/people-search-2.md"
   },
@@ -212756,47 +212812,59 @@
   },
   {
     "id": "political-moneyline-us",
-    "name": "Political MoneyLine (US)",
-    "description": "OSINT tool: Political MoneyLine (US).",
+    "name": "Political MoneyLine (CQ)",
+    "description": "Use when you have a `name` and want US political-donation and lobbying records tied to that person — returns the donor's home address, employer-org, occupation, and associate links from contribution filings.",
     "url": "https://www.politicalmoneyline.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a US individual's federal campaign-contribution and lobbying history — including the home address and employer disclosed on donation filings.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "employer-org",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "The Political MoneyLine brand is now CQ \"Capitol Hill Access\" under FiscalNote — a paid subscription with no meaningful free public search. The SAME underlying data (FEC filings) is free at FEC.gov and OpenSecrets; use those unless you already have CQ access.",
+    "opsec": "passive",
+    "opsecNote": "Querying campaign-finance filings is passive and leaves no trace against the subject — this is disclosed public record. No sock puppet needed for the data itself; if logging into a CQ subscription, use investigative-context credentials.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running campaign-finance tracker (FECInfo → PoliticalMoneyLine → CQ MoneyLine), now part of CQ Roll Call / FiscalNote; data is sourced from FEC/IRS/House/Senate filings and is reliable, but the standalone free product is effectively gone.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "opensecrets-org",
+      "fec-gov"
+    ],
+    "aliases": [
+      "PoliticalMoneyLine",
+      "CQ MoneyLine",
+      "Capitol Hill Access"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "campaign-finance",
+      "lobbying"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/political-moneyline-us.md"
   },
   {
@@ -242234,45 +242302,57 @@
   },
   {
     "id": "georgia",
-    "name": "Georgia",
-    "description": "OSINT tool: Georgia.",
+    "name": "Georgia DOC Offender Query",
+    "description": "Use when you have a `name` (or GDC ID) and want to locate someone in Georgia state prison custody — returns current facility/status plus dob, physical-description, and image (mugshot).",
     "url": "http://www.dcor.state.ga.us/gdc/offender/query",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating and confirming a person in Georgia Department of Corrections custody by name or offender ID.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "name",
       "dob",
-      "document-id"
+      "physical-description",
+      "image",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public record search operated by the Georgia Department of Corrections; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A read-only query against a government public-records site; the subject is not notified and no login is required. Ordinary passive browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Georgia Department of Corrections offender database; authoritative for state-prison custody, though GDC itself disclaims completeness and advises written verification for legal use.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vinelink",
+      "bop-inmate-locator"
+    ],
+    "aliases": [
+      "Georgia Department of Corrections offender search",
+      "GDC inmate locator"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/georgia.md"
   },
   {
@@ -256285,44 +256365,55 @@
   {
     "id": "ncra-sourcebook",
     "name": "NCRA Sourcebook",
-    "description": "OSINT tool: NCRA Sourcebook.",
+    "description": "Use when you have a `name` you believe belongs to a court reporter, captioner, or legal videographer and want to confirm the professional and find their firm/contact — returns employer-org, address, and social-profile.",
     "url": "https://portal.ncra.org/sourcebook",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and locating a US court reporting / captioning professional by name and finding their firm and business contact details.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
+      "employer-org",
+      "address",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public member-directory search operated by the NCRA; no account or payment needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "A read-only directory lookup against the NCRA membership site; no notice to the subject and no login required. Standard passive browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official directory of the National Court Reporters Association; records are self-maintained by members, so contact details are usually current but scope is limited to NCRA members.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "truepeoplesearch",
+      "linkedin"
+    ],
+    "aliases": [
+      "National Court Reporters Association Sourcebook",
+      "NCRA member directory"
+    ],
     "tags": [
       "court",
+      "professional-directory",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ncra-sourcebook.md"
   },
   {
@@ -272583,47 +272674,61 @@
   },
   {
     "id": "traderegistry-ae-2",
-    "name": "traderegistry.ae",
-    "description": "OSINT tool: traderegistry.ae.",
+    "name": "traderegistry.ae — Register of Directors",
+    "description": "Use when you have a UAE company (`employer-org`) or a director's `name` and want official corporate records — returns the directors (name), shareholders/UBO (associate), and registered address.",
     "url": "https://traderegistry.ae/product/register-of-directors/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Ordering official UAE corporate documents (register of directors, shareholders, UBO) to link a person to a UAE company or vice versa.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Fee-per-document service — each corporate extract (register of directors, shareholders, UBO, etc.) is purchased individually; there is no free full-data search. Browsing the catalogue is free.",
+    "opsec": "passive",
+    "opsecNote": "Ordering a corporate extract does not notify the company's directors, but you must supply payment and often account/identity details to the portal. Use investigative-context payment and account details, and be aware the order is logged by the portal operator.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party \"smart portal\" that retrieves and resells UAE corporate documents; it is not the official government registry itself (the emirate economic departments / Ministry of Economy are). Verify critical facts against the official registrar where possible.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ae"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "opencorporates",
+      "uae-national-economic-register"
+    ],
+    "aliases": [
+      "UAE Trade Registry Smart Portal",
+      "traderegistry.ae register of directors"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-records",
+      "uae"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/traderegistry-ae-2.md"
   },
   {
@@ -333850,47 +333955,59 @@
   },
   {
     "id": "instagram-crawler-gitgub",
-    "name": "Instagram Crawler - Gitgub",
-    "description": "OSINT tool: Instagram Crawler - Gitgub.",
+    "name": "instagram-crawler (hehpollon)",
+    "description": "Use when you have an Instagram `username` (or hashtag) and want to bulk-download that account's posts, captions, comments and timestamps for offline analysis — returns image, social-profile, and associate leads.",
     "url": "https://github.com/hehpollon/instagram-crawler",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-scraping a public Instagram account's or hashtag's posts, images, captions, and commenters to a local folder for offline review.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
       "image",
-      "geolocation"
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (Python); no fees. Cost is operational — Instagram's anti-scraping measures increasingly break unauthenticated crawlers.",
+    "opsec": "passive",
+    "opsecNote": "You never contact the target, but the tool repeatedly hits Instagram from your IP. Instagram may rate-limit or block that IP/account. Run from a sock-puppet context and a disposable IP; never point it from an account or address tied to your identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small third-party GitHub project (~86 stars), not widely audited and lightly maintained; verify the code before running and expect breakage as Instagram changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "instaloader",
+      "osintgram"
+    ],
+    "aliases": [
+      "instagram-crawler",
+      "hehpollon instagram crawler"
+    ],
     "tags": [
       "instagram",
       "open-source",
-      "cli"
+      "cli",
+      "scraper"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-crawler-gitgub.md"
   },
   {
@@ -353964,35 +354081,56 @@
   {
     "id": "tweet-binder",
     "name": "Tweet Binder",
-    "description": "OSINT tool: Tweet Binder.",
+    "description": "Use when you have a `username`, hashtag, or keyword and want to map who is talking about it on X/Twitter — returns social-profile and associate links (top contributors, mentioners, amplifiers).",
     "url": "https://www.tweetbinder.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Profiling an X/Twitter hashtag, keyword, or account's conversation to surface the top participating accounts and their reach.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "A free report covers up to 200 posts from the last 7 days with no payment. Deeper real-time (next 30 days) and historical reports run up to 35,000 posts on paid plans; the API is a paid add-on.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You never contact the target account — you query TweetBinder's own index. However, generating a report requires signing in with an X/Twitter account and authorizing the app, so use a sock-puppet X account, not one tied to your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established commercial social-analytics vendor (clients include Coca-Cola, Google, Disney); reputable but a third-party aggregator, so treat reach/impression figures as estimates.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [
+      "tweetdeck",
+      "twitter-advanced-search"
+    ],
+    "aliases": [
+      "TweetBinder",
+      "Twitter hashtag analytics"
+    ],
+    "tags": [
+      "twitter",
+      "social-analytics",
+      "hashtag"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tweet-binder.md"
   },
   {
