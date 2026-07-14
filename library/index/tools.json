@@ -146030,46 +146030,54 @@
   {
     "id": "giphy",
     "name": "GIPHY",
-    "description": "GIF searches engine, search usernames, tags, and channels",
+    "description": "Use when you have a `username` and want to find that person's GIPHY profile, channel, and uploaded GIFs/stickers — returns a social-profile and self-branded media; also serves as a GIF search engine.",
     "url": "https://giphy.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's GIPHY channel and uploaded content by username, and searching GIFs/stickers by tag.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse; no account needed to view profiles or GIFs.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public GIPHY profiles is passive — the subject is not notified. A clean browser is sufficient. Do not sign in with an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Mainstream GIF platform; profiles and uploads are genuine public content, but a username here is not identity-verified — treat a matching channel as a lead.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "tenor",
+      "namechk"
+    ],
+    "aliases": [
+      "Giphy",
+      "giphy.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "username-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/giphy.md"
   },
@@ -159779,44 +159787,55 @@
   {
     "id": "tineye-reverse-image-search-addons-mozilla-org",
     "name": "tineye reverse image search (addons.mozilla.org)",
-    "description": "OSINT tool: tineye reverse image search (addons.mozilla.org).",
+    "description": "Use when you have an `image` and want to find where else it appears online and its earliest known instance — this Firefox add-on runs TinEye reverse search from a right-click; returns social-profile/domain leads.",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/tineye-reverse-image-search/?src=search",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Right-click reverse-image search via TinEye, to find an image's other appearances and earliest source.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser add-on; the underlying TinEye web search is free (a paid API tier exists but isn't needed for manual use).",
+    "opsec": "passive",
+    "opsecNote": "The image (or its URL) is sent to TinEye's servers to search. The subject is not notified. Use a sock-puppet browser profile for the extension, and be mindful that uploading a private image shares it with a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Official TinEye-provided Firefox add-on; TinEye is a long-established, reputable reverse-image-search engine (exact/edited-copy matching rather than similarity).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "tineye-com",
+      "yandex-images",
+      "google-lens"
+    ],
+    "aliases": [
+      "TinEye Firefox extension",
+      "TinEye reverse image search add-on"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "Reverse Image Searching",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/tineye-reverse-image-search-addons-mozilla-org.md"
   },
   {
@@ -166180,24 +166199,29 @@
   {
     "id": "live-universal-awareness-map",
     "name": "Live Universal Awareness Map",
-    "description": "The platform Live Universal Awareness Map allows users to see what's happening with events as they unfold in real-time",
+    "description": "Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — returns geolocated event markers with source links.",
     "url": "https://usa.liveuamap.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Correlating a location and time window with reported real-world events (conflict, unrest, disasters) on an interactive map.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse the map and event markers; some regions/features and ad-free/premium access require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You read a public events map — nothing about your subject is transmitted. Fully passive. Treat the crowd/media-sourced markers as reported claims, not verified fact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Aggregates news and social-media reports onto a map; individual markers are only as reliable as their cited source, and coverage/bias vary by conflict — always click through to the source.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -166206,16 +166230,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "acled",
+      "bellingcat-timeline"
+    ],
+    "aliases": [
+      "Liveuamap",
+      "Live UA Map",
+      "liveuamap.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "event-mapping"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/live-universal-awareness-map.md"
   },
   {
@@ -216133,28 +216165,32 @@
   {
     "id": "yandex-people-search",
     "name": "Yandex People Search",
-    "description": "Yandex people search.",
+    "description": "Use when you have a `name` (or `username`) and want to find matching social-media profiles across many networks in one query — returns social-profile links, strongest for Russian/CIS and European subjects.",
     "url": "https://yandex.ru/people",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregated cross-network people search by name/username, with unusually strong coverage of Russian/CIS and European social platforms.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query Yandex, not the subject — the target gets no signal. But Yandex is a Russia-based provider that logs queries; run from a sock-puppet browser/clean IP and never from an attributable identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Yandex's own people-search aggregator over public social profiles; results are as reliable as the indexed public data, and coverage skews to Russian/CIS/European networks Western engines index poorly.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global",
@@ -216164,10 +216200,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "yandex-images",
+      "yandex-mail",
+      "google-com-3"
+    ],
+    "aliases": [
+      "Yandex People",
+      "yandex.ru/people"
+    ],
+    "tags": [
+      "people-search",
+      "social-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/people-search/yandex-people-search.md"
   },
@@ -221042,43 +221089,54 @@
   {
     "id": "receive-sms-free",
     "name": "Receive SMS (free)",
-    "description": "OSINT tool: Receive SMS (free).",
+    "description": "Use when you have a `phone` number and want to check whether it is a public disposable/temp-SMS number (so any account on it is likely throwaway), or need a burner number to receive an OTP — returns disposable-number status and inbound SMS.",
     "url": "http://sms.sellaite.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Flagging a number as a known public temp-SMS number, and receiving OTPs on a throwaway number for sock-puppet registrations.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public disposable-number service (Sellaite SMS receiver); no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Any SMS received on these numbers is publicly visible to everyone — never route anything you care about through them. Checking whether a number is listed is passive. Keep these numbers entirely away from your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "One of many interchangeable public temp-SMS sites; the numbers and public inboxes are exactly as advertised, but any specific number's uptime/availability is not guaranteed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "receive-sms-free-2",
+      "receive-smss-com"
+    ],
+    "aliases": [
+      "Sellaite SMS",
+      "sms.sellaite.com",
+      "disposable phone number"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "disposable-number",
+      "temp-sms"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/receive-sms-free.md"
   },
   {
@@ -221794,43 +221852,56 @@
   {
     "id": "slydial",
     "name": "Slydial",
-    "description": "Voicemail-based phone-number engagement checks",
+    "description": "Use when you have a US mobile `phone` number and want to reach its voicemail directly (bypassing a ring) to hear the greeting for a name/voice — returns a name or voice from the greeting (ACTIVE, leaves a trace).",
     "url": "https://www.slydial.com/",
     "category": "phone",
     "path": [
       "phone",
       "voicemail"
     ],
-    "bestFor": "Voicemail-based phone-number engagement checks",
-    "input": "Phone number (primarily US mobile numbers)",
-    "output": "Voicemail delivery result and call/session outcome",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reaching a US mobile number's voicemail directly to capture the greeting (which may state a name) without ringing the phone.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "physical-description"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free ad-supported tier (with prompts); paid/subscription removes ads and adds features. A phone/app or the web service is used to place the call.",
     "opsec": "active",
-    "opsecNote": "Initiates outbound telephony actions against the target number and can generate logs/alerts.",
+    "opsecNote": "ACTIVE telephony. Slydial places a real connection to the target's carrier voicemail. It aims to skip the ring, but the target still gets a voicemail/missed-indicator, and carriers log the event. If you stay silent and never leave a message you minimise the trace, but you cannot guarantee zero notification. Use only with lawful justification and from a non-attributable number; never leave a message.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Legitimate commercial direct-to-voicemail service; it does what it claims, but it is an active tool that interacts with the target's line, so treat it as intrusive.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "nanpa-area-code-map",
+      "twilio-lookup"
+    ],
+    "aliases": [
+      "slydial",
+      "direct to voicemail"
+    ],
+    "tags": [
+      "phone",
+      "voicemail"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/voicemail/slydial.md"
   },
   {
@@ -323942,35 +324013,53 @@
   {
     "id": "facebook-profile-id-grabber",
     "name": "Facebook Profile Id Grabber",
-    "description": "OSINT tool: Facebook Profile Id Grabber.",
+    "description": "Use when you have a Facebook profile (vanity URL or open page) and want its stable numeric profile ID — returns the numeric ID that unlocks graph-search and survives name/URL changes.",
     "url": "https://osint.support/chrome-extensions/2019/09/01/facebook-profile-id-grabber.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Extracting the numeric Facebook profile ID behind a vanity username, for stable tracking and graph-based searches.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser extension / method.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a profile's public numeric ID does not notify the target. However, if you view the profile while logged into a personal Facebook account you risk appearing in \"people you may know\"/leaving a footprint — use a sock-puppet account and browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community OSINT technique/extension; it simply reads a value Facebook exposes, so the ID it returns is authoritative — but vet any extension's permissions before installing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "lookup-id-com",
+      "graph-tips"
+    ],
+    "aliases": [
+      "Facebook Profile ID Grabber",
+      "Facebook numeric ID finder"
+    ],
+    "tags": [
+      "facebook",
+      "facebook-graph",
+      "browser-extension"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-profile-id-grabber.md"
   },
   {
