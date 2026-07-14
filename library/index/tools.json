@@ -171326,44 +171326,54 @@
   },
   {
     "id": "discordbotlist-com",
-    "name": "discordbotlist.com",
-    "description": "OSINT tool: discordbotlist.com.",
+    "name": "Discord Bot List — Servers",
+    "description": "Use when you have a community/topic `name` and want to discover public Discord servers (and OSINT bots) around it — returns `social-profile` links to joinable servers with member counts and descriptions.",
     "url": "https://discordbotlist.com/servers",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering public Discord servers by topic/name (and finding listed bots) as an entry point into communities a subject may inhabit.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "name"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory; browsing and searching require no account (joining a server does).",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and anonymous. The moment you JOIN a listed server you become visible to its members/admins — do that only from a sock-puppet Discord account, never your own, and expect join logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A community-run listing site (51k+ self-submitted servers); it indexes what owners chose to advertise, so it is a discovery aid, not a complete or authoritative map of Discord.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pixelatomy-com"
+    ],
+    "aliases": [
+      "discordbotlist.com",
+      "Discord Bot List servers"
+    ],
     "tags": [
       "discord",
-      "Discord Related Sites"
+      "Discord Related Sites",
+      "server-discovery",
+      "directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/messaging/discordbotlist-com.md"
   },
   {
@@ -206966,37 +206976,57 @@
   {
     "id": "genealogy-links",
     "name": "Genealogy Links",
-    "description": "OSINT tool: Genealogy Links.",
+    "description": "Use when you have a `name` and want the right regional genealogy/vital-records source — returns a directory of 50k+ curated links to birth/marriage/death, census and cemetery records across the English-speaking world.",
     "url": "http://www.genealogylinks.net",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the correct regional birth/marriage/death, census and cemetery record source for a subject or their ancestors across the US, UK/Ireland, Canada, Australia and NZ.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The directory is free (online since 1997); some destination archives it links to may charge for record copies.",
+    "opsec": "passive",
+    "opsecNote": "A link directory — searches happen on the destination archive sites, which see your IP/query. Genealogy work often touches living relatives' data; be mindful and use a sock-puppet browser for sensitive traces.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running curated directory (50k+ links) maintained since 1997; result quality is that of each linked archive, and some links inevitably rot over the decades.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "nettrace",
+      "court-records-directory"
+    ],
+    "aliases": [
+      "genealogylinks.net"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "genealogy",
+      "vital-records",
+      "directory"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/people-search/genealogy-links.md"
   },
   {
@@ -221774,37 +221804,53 @@
   {
     "id": "spy-dialer",
     "name": "Spy Dialer",
-    "description": "OSINT tool: Spy Dialer.",
+    "description": "Use when you have a US `phone` number and want the owner and context — returns the subscriber `name`, line type, carrier, general `geolocation`, spam flags and any voicemail greeting.",
     "url": "http://spydialer.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free reverse lookup of a US phone number to a name, line type, carrier and city/state, plus hearing the voicemail greeting.",
+    "selectorsIn": [
+      "phone",
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free, no account or card; up to ~50 lookups per day, ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "Searches are anonymous and the number's owner is not notified. Note the voicemail feature works by actually reaching the carrier's voicemail — using it is closer to active; the record/name lookup itself is passive. Use a sock-puppet browser for sensitive numbers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running free reverse-lookup aggregator of public records and proprietary data; coverage is US-centric and can be incomplete or stale — treat a name hit as a lead, not proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "spydialer.com",
+      "SpyDialer"
+    ],
     "tags": [
-      "phone-number-research"
+      "phone-number-research",
+      "reverse-phone",
+      "us"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/phone/spy-dialer.md"
   },
   {
@@ -319808,45 +319854,54 @@
   },
   {
     "id": "codeofaninja-com",
-    "name": "codeofaninja.com",
-    "description": "OSINT tool: codeofaninja.com.",
+    "name": "Find TikTok ID (codeofaninja.com)",
+    "description": "Use when you have a TikTok `username` and want its stable numeric user ID (`document-id`) — returns the account's permanent ID for use across rename-proof lookups and APIs.",
     "url": "https://www.codeofaninja.com/tools/find-tiktok-id/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a TikTok @username into the account's permanent numeric user ID, which survives handle changes and feeds other TikTok tooling.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The tool queries TikTok's public data for the handle, not the person; the subject is not notified. The site sees the username you enter — use a sock-puppet browser for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small free developer utility that reads TikTok's public account data; the numeric ID it returns is a factual platform value, but the third-party page can break when TikTok changes its APIs.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "here-19",
+      "pixelatomy-com"
+    ],
+    "aliases": [
+      "codeofaninja.com find tiktok id",
+      "TikTok ID finder"
+    ],
     "tags": [
       "tiktok",
-      "TikTok Related Sites"
+      "TikTok Related Sites",
+      "id-resolution"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/codeofaninja-com.md"
   },
   {
@@ -321345,45 +321400,54 @@
   },
   {
     "id": "downloader-instagram-addons-mozilla-org",
-    "name": "downloader instagram (addons.mozilla.org)",
-    "description": "OSINT tool: downloader instagram (addons.mozilla.org).",
+    "name": "Downloader for Instagram (Firefox add-on)",
+    "description": "Use when you have a subject's Instagram `social-profile`/post and want to save the original media for analysis — returns downloaded `image`/video files (photos, reels, stories, highlights).",
     "url": "https://addons.mozilla.org/en-GB/firefox/addon/downloader-instagram/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Saving full-resolution Instagram photos, videos, reels, stories and highlights locally so they can be reverse-image-searched and archived before they vanish.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free Firefox extension (v3.1.7, updated Oct 2024; ~22k users, 4.2 stars). No payment.",
+    "opsec": "active",
+    "opsecNote": "The extension requires you to be logged into Instagram to work, so downloads happen under whatever account you use — Instagram can associate the viewing/saving with it. Use a sock-puppet Instagram account and browser profile, never your personal login. Stories in particular can register a view.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A third-party browser extension (not affiliated with Instagram) with a moderate user base and mixed reviews; it reads content you can already see, but as with any extension, review its permissions before installing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Downloader for Instagram",
+      "downloader-instagram firefox"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/downloader-instagram-addons-mozilla-org.md"
   },
   {
@@ -330291,45 +330355,54 @@
   },
   {
     "id": "here-19",
-    "name": "Here",
-    "description": "OSINT tool: Here.",
+    "name": "X (Twitter) intent — user_id → profile",
+    "description": "Use when you have a numeric X/Twitter user ID (`document-id`) and want the account's current handle/profile — append the ID to the intent URL and it resolves to the live `social-profile` and `username`.",
     "url": "https://x.com/intent/user?user_id=",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a stable numeric Twitter/X user ID to the account's current @handle and profile, even after the user renamed.",
     "selectorsIn": [
-      "username",
-      "name"
+      "document-id"
     ],
     "selectorsOut": [
       "social-profile",
+      "username",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Native X endpoint; free. Viewing the resolved profile may prompt an X login depending on X's current gating.",
+    "opsec": "passive",
+    "opsecNote": "You hit X's own intent endpoint, not the target directly; it does not notify the account owner. If X requires login to view the profile, use a sock-puppet X account, never your own.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A first-party X.com endpoint (the \"intent\" system), so the ID→account mapping is authoritative straight from the platform.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "x.com intent user",
+      "Twitter user_id lookup",
+      "twitter intent user"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "id-resolution"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/here-19.md"
   },
   {
@@ -331852,43 +331925,61 @@
   {
     "id": "inspy",
     "name": "InSpy",
-    "description": "Employee and email pattern discovery",
+    "description": "Use when you have an `employer-org` + `domain` and want a company's likely employees and their email pattern — returns candidate `name`s, roles and guessed `email`s. (Deprecated/unmaintained.)",
     "url": "https://github.com/jobroche/InSpy",
     "category": "social-networks",
     "path": [
       "social-networks",
       "linkedin"
     ],
-    "bestFor": "Employee and email pattern discovery",
-    "input": "Company name and domain context",
-    "output": "Employee candidates with associated role and email pattern hints",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Enumerating a target company's employees and inferring the corporate email format from a company name + domain (historically, via LinkedIn + Hunter.io).",
+    "selectorsIn": [
+      "employer-org",
+      "domain"
+    ],
+    "selectorsOut": [
+      "name",
+      "email",
+      "employer-org"
+    ],
+    "status": "down",
     "pricing": "free",
+    "costNote": "Open-source and free, but it requires your own Hunter.io API key (paste into InSpy.py). Note the repo is deprecated and no longer maintained (last release Aug 2018).",
     "opsec": "active",
-    "opsecNote": "Enumeration and enrichment workflows can expose investigator infrastructure.",
+    "opsecNote": "Employee enumeration and email-pattern probing generate outbound requests tied to your infrastructure/keys and touch third-party services (Hunter.io); run from isolated infrastructure and a dedicated API key, never a personal one.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "api-key"
     ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
+    "trustNote": "A well-known but DEPRECATED pentest recon tool (jobroche/InSpy); LinkedIn's anti-scraping changes since 2018 mean it likely no longer works as originally designed — treat as historical unless you verify it runs.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "footprintiq"
+    ],
+    "aliases": [
+      "jobroche/InSpy"
+    ],
+    "tags": [
+      "linkedin",
+      "employee-enumeration",
+      "email-pattern",
+      "cli",
+      "python",
+      "deprecated"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/linkedin/inspy.md"
   },
   {
@@ -341357,37 +341448,52 @@
   {
     "id": "reddit",
     "name": "Reddit",
-    "description": "OSINT tool: Reddit.",
+    "description": "Use when you have a `username` and want a subject's full public post/comment history — returns a `social-profile` whose activity leaks `geolocation`, interests, routines and `associate` links.",
     "url": "https://www.reddit.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mining a Reddit username's complete public comment/post history for self-disclosed location, employer, interests and timeline.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse public profiles and search; a free account raises rate limits and unlocks some search/sort options.",
+    "opsec": "passive",
+    "opsecNote": "Reading public profiles/subreddits is passive and unlogged to the subject. Do NOT comment, DM, or vote from an attributable account — interacting alerts the target. Use a sock-puppet account only if you need to reach gated content; never your own.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party major platform; the post history is authoritative for what the account said, though the account's real-world identity is self-asserted and pseudonymous by default.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "reddit.com"
+    ],
     "tags": [
-      "major-social-networks"
+      "major-social-networks",
+      "reddit",
+      "username"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit.md"
   },
   {
@@ -355764,45 +355870,54 @@
   },
   {
     "id": "uk-pinterest-com",
-    "name": "uk.pinterest.com",
-    "description": "OSINT tool: uk.pinterest.com.",
+    "name": "Pinterest (UK)",
+    "description": "Use when you have a `username` or `name` and want a subject's Pinterest boards/pins — returns a `social-profile` whose boards leak interests, plans, locations and saved `image`s.",
     "url": "https://uk.pinterest.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Reading a person's Pinterest boards to infer interests, life plans (weddings, homes, travel), locations and reused imagery.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
+      "image",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Public profiles and pins are viewable free; Pinterest increasingly nudges toward login, and some browsing is gated behind a free account.",
+    "opsec": "passive",
+    "opsecNote": "Viewing public boards is passive. Do not follow, message, or react from an attributable account — that alerts the subject. If login is required, use a sock-puppet account, never your own; avoid the \"related pins\" personalisation tying activity to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "uk.pinterest.com is the UK locale of the first-party Pinterest platform; board content is user-generated but the platform reliably reflects what the account saved.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "uk.pinterest.com",
+      "Pinterest UK"
+    ],
     "tags": [
       "pinterest",
-      "Pinterest Related Sites"
+      "Pinterest Related Sites",
+      "interests"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/uk-pinterest-com.md"
   },
   {
