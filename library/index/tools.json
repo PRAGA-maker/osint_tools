@@ -147412,30 +147412,30 @@
   {
     "id": "hypem-music-search",
     "name": "Hypem Music Search",
-    "description": "Website that provides a search engine that searches artists or music tracks",
+    "description": "Use when you have an artist/DJ `name` or `username` and want to find their tracks, blog write-ups and linked profiles across music blogs — returns social-profile links and web mentions.",
     "url": "http://hypem.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Surfacing music-blog coverage, track uploads and linked accounts for a subject who is a musician, DJ or producer.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse; a free account is optional (only needed to save favourites). No paywall for lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive third-party browsing — you query Hype Machine's index, not the subject. Searches are not visible to the subject. Standard sock-puppet browser hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running (since 2005) music-blog aggregator; reputable within music discovery, but it indexes third-party blogs so attribution quality varies. Not a first-party identity source.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -147444,14 +147444,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Hype Machine",
+      "hypem.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/hypem-music-search.md"
   },
@@ -147556,47 +147560,50 @@
   },
   {
     "id": "icon-finder",
-    "name": "Icon Finder",
-    "description": "Multi-media search engine focusing on icon mages from marketing databases",
+    "name": "Iconfinder",
+    "description": "Use when you have a small graphic/logo/icon `image` and want to identify or source a matching stock icon — a graphic-asset marketplace, not a reverse image search of people or faces.",
     "url": "https://www.iconfinder.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying or sourcing a stock icon/logo graphic; effectively never useful for locating a person.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and browse; many icons are free, others are paid/licensed. A subset requires a paid plan or per-icon purchase to download.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive stock-asset browsing — no target interaction. Nothing about a subject is queried or revealed. Standard browser hygiene only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established, legitimate icon marketplace. Trusted as a commercial asset library — but it is not an OSINT people-search or face-recognition tool despite its harvested category.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "iconfinder.com",
+      "Icon Finder"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/icon-finder.md"
   },
@@ -175605,44 +175612,52 @@
   },
   {
     "id": "reddit-com-2",
-    "name": "reddit.com",
-    "description": "OSINT tool: reddit.com.",
+    "name": "reddit.com (r/Telegram — find a user's ID)",
+    "description": "Use when you have a Telegram `username` and want the account's stable numeric user ID — this is a community how-to thread describing the bot-forwarding technique, returning a persistent social-profile identifier.",
     "url": "https://www.reddit.com/r/Telegram/comments/1f2p61w/how_to_find_another_users_id/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Learning how to resolve a Telegram handle to its immutable numeric user ID so you can track an account across username changes.",
     "selectorsIn": [
-      "phone",
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free — a public Reddit discussion thread. The technique it describes uses free Telegram bots; a Telegram account is needed to actually run it.",
+    "opsec": "active",
+    "opsecNote": "Reading the thread is passive, but executing the technique is ACTIVE — resolving an ID by forwarding a target's message to a lookup bot means you are operating inside Telegram from an account. Use a dedicated sock Telegram account; forwarding/interaction can be visible.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A Reddit thread, not a tool — crowd-sourced guidance. The core technique (bots like @userinfobot / @getidsbot returning the numeric ID) is well established, but verify any specific bot before trusting it with data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Telegram user ID lookup",
+      "how to find another user's Telegram ID"
+    ],
     "tags": [
       "telegram",
       "Telegram"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/reddit-com-2.md"
   },
   {
@@ -219575,45 +219590,51 @@
   },
   {
     "id": "hellofax-com",
-    "name": "hellofax.com",
-    "description": "OSINT tool: hellofax.com.",
+    "name": "hellofax.com (Dropbox Fax)",
+    "description": "Use when you have a `phone`/fax number and need to send or receive a fax — e.g. to submit a records request to an agency that only accepts fax — rather than to enrich a person.",
     "url": "https://www.hellofax.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Sending/receiving faxes online (no fax machine) to reach agencies, courts or offices that only accept records requests by fax.",
     "selectorsIn": [
       "phone"
     ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Now Dropbox Fax (hellofax.com redirects to fax.dropbox.com). Free tier gives ~5 send pages (plus limited bonus pages); regular use needs a paid plan or pay-as-you-go. A receiving fax number is a paid feature.",
+    "opsec": "active",
+    "opsecNote": "This is a utility for contacting a number, not a lookup. Sending a fax reveals your sender line/cover details to the recipient — use a dedicated account and neutral sender info, never personal identifiers. Do not use it to probe or harass a target's line.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Legitimate commercial service operated by Dropbox (formerly HelloFax). It is a fax utility, not an OSINT data source — it returns no information about a person.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "HelloFax",
+      "Dropbox Fax",
+      "fax.dropbox.com"
+    ],
     "tags": [
       "mobilephone",
       "Mobile & Phone Related"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/hellofax-com.md"
   },
   {
@@ -241830,47 +241851,53 @@
   },
   {
     "id": "freeones-com",
-    "name": "freeones.com",
-    "description": "OSINT tool: freeones.com.",
+    "name": "FreeOnes",
+    "description": "Use when a subject may work in the adult-entertainment industry and you have a `name`/stage name — returns aliases, linked social-profiles and biographical bio data from a performer database.",
     "url": "https://www.freeones.com/forums/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving an adult-industry performer's stage name to aliases, linked accounts and bio details for identity disambiguation.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "username"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core performer profiles/bios and the community forum are free to browse; some galleries/content are premium. Identity-useful data (aliases, links, bio) is on the free tier.",
+    "opsec": "passive",
+    "opsecNote": "Passive third-party lookup — you browse a database, the subject is not notified. Adult content; use a dedicated sock account and an isolated browser profile, and treat this as a sensitive source (handle findings discreetly and lawfully).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-established adult-performer directory with community-maintained bios; useful for alias resolution but user-contributed data can be inaccurate or outdated — corroborate before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "freeones.com",
+      "FreeOnes forum"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/freeones-com.md"
   },
   {
@@ -271386,36 +271413,51 @@
   },
   {
     "id": "street-name-changes",
-    "name": "Street Name Changes",
-    "description": "OSINT tool: Street Name Changes.",
+    "name": "Street Name Changes (Steve Morse One-Step)",
+    "description": "Use when you have a historical `address` whose street may have been renamed/renumbered and want the modern (or old) equivalent — returns the mapped current/former street name for the area.",
     "url": "https://stevemorse.org/census/changes.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Reconciling old and current street names/house numbers when tracing a person through historical census, vital or address records.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference tables on Stephen P. Morse's One-Step genealogy site. No account, no payment; part of a donation-supported nonprofit-style resource.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Fully passive — static reference tables. No query about a person is sent anywhere and nothing is logged against a subject. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Stephen P. Morse's One-Step tools are a widely cited, respected genealogy resource; street-change tables are compiled from municipal records and city sources, though older/city-specific tables can be incomplete.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Steve Morse street name changes",
+      "One-Step street changes"
+    ],
+    "tags": [
+      "public-records",
+      "genealogy",
+      "historical-address"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/street-name-changes.md"
   },
   {
@@ -330899,49 +330941,6 @@
     "_file": "library/tools/social-networks/google-com-50.md"
   },
   {
-    "id": "google-com-52",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Ainstagram.com%2Fexplore%2Flocations%2F",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram",
-      "Instagram Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-52.md"
-  },
-  {
     "id": "google-com-54",
     "name": "LinkedIn X-Ray (Google site-scoped search)",
     "description": "Use when you have a name, employer or role and want to find LinkedIn profiles Google has indexed — returns public LinkedIn profile links without logging into LinkedIn.",
@@ -331382,49 +331381,6 @@
     "_file": "library/tools/social-networks/google-com-68.md"
   },
   {
-    "id": "google-com-69",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Agettr.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-69.md"
-  },
-  {
     "id": "google-com-70",
     "name": "Google dork — site:mewe.com",
     "description": "Use when you have a `name` or `username` and want to surface a subject's MeWe profile/posts that Google has indexed — returns `social-profile` links and the display `name` on them.",
@@ -331575,49 +331531,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-72.md"
-  },
-  {
-    "id": "google-com-73",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Atruthsocial.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-73.md"
   },
   {
     "id": "google-com-86",
@@ -353948,44 +353861,54 @@
   {
     "id": "tokimeki-blue",
     "name": "tokimeki.blue",
-    "description": "OSINT tool: tokimeki.blue.",
+    "description": "Use when you have a Bluesky `username` (handle) and want a TweetDeck-style, multi-column view of that account's posts, feeds and media to monitor it — returns social-profile activity and media.",
     "url": "https://tokimeki.blue/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Monitoring a Bluesky target's timeline, feeds and media in customizable columns, like TweetDeck for Bluesky.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free third-party Bluesky client (PWA). No payment; a Bluesky/AT Protocol account login is required to use it.",
+    "opsec": "active",
+    "opsecNote": "You must sign in with a Bluesky account, so use a dedicated sock-puppet account, never a personal one. Viewing does not notify the target, but following, liking, or reposting from your session is visible to them — stay read-only.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent client built on the public AT Protocol; it shows the same public posts the official app does, so data fidelity is high, but it is a third-party developer project, not Bluesky first-party.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "google-com-69"
+    ],
+    "aliases": [
+      "TOKIMEKI for Bluesky",
+      "tokimeki bluesky client"
+    ],
     "tags": [
       "bluesky",
       "BlueSky / BSky Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tokimeki-blue.md"
   },
   {
