@@ -101035,13 +101035,13 @@
   {
     "id": "breachchecker-com",
     "name": "Breachchecker.com",
-    "description": "history of data leaks associated with a particular email address",
+    "description": "Use when you have an `email` and want the history of data breaches it appears in, including which fields leaked — returns breach names and exposed selectors like address and password hints.",
     "url": "https://breachchecker.com/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Checking which known data breaches exposed a given email and what data leaked.",
     "selectorsIn": [
       "email"
     ],
@@ -101049,27 +101049,36 @@
       "address",
       "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free breach lookup by email; detailed per-breach exposure and monitoring features are gated behind paid/registered tiers.",
+    "opsec": "passive",
+    "opsecNote": "Passive toward the subject (they are not notified), but you are submitting the target's email to a third-party breach aggregator that logs queries. Use a sock-puppet session; automated/bot access may hit a Cloudflare challenge.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial breach-lookup aggregator of unverified sourcing; corroborate significant hits against an independent breach source (e.g. HIBP) before acting.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BreachChecker",
+      "breachchecker.com"
+    ],
     "tags": [
-      "Emails"
+      "Emails",
+      "breach-check"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/email/breachchecker-com.md"
   },
@@ -143062,44 +143071,53 @@
   {
     "id": "faceapi-regulaforensics-com",
     "name": "faceapi.regulaforensics.com",
-    "description": "OSINT tool: faceapi.regulaforensics.com.",
+    "description": "Use when you have two face `image`s and want a 1:1 face match plus age/gender/attribute estimates — returns a match score and physical-description attributes, not a web face search.",
     "url": "https://faceapi.regulaforensics.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "1:1 face comparison and attribute estimation via a demo of Regula's commercial Face SDK.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
       "face",
-      "social-profile"
+      "physical-description"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A demo/trial front-end for Regula's commercial Face SDK. The web demo is free to try (30-day trial framing); production use requires a paid SDK/API license.",
+    "opsec": "passive",
+    "opsecNote": "You upload images to Regula's servers for processing — the images leave your control and may be logged. Do not upload sensitive case imagery you cannot expose to a third party; strip metadata and use imagery you're authorized to process.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Regula is an established commercial identity-verification/forensics vendor; this is their own demo endpoint, so the technology is genuine (though it is verification tech, not an OSINT face-search engine).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Regula Face SDK demo",
+      "Regula FaceAPI"
+    ],
     "tags": [
       "facialcomparison",
-      "Facial Comparison Sites"
+      "Facial Comparison Sites",
+      "face-match"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/faceapi-regulaforensics-com.md"
   },
   {
@@ -144395,7 +144413,7 @@
   {
     "id": "foca",
     "name": "FOCA",
-    "description": "Corporate document metadata reconnaissance",
+    "description": "Use when you have a `domain` and want to harvest public documents from it and extract their metadata — returns usernames, emails, software/paths and EXIF metadata that map an organization's internals.",
     "url": "https://github.com/ElevenPaths/FOCA",
     "category": "image-video-face",
     "path": [
@@ -144403,34 +144421,46 @@
       "images",
       "metadata"
     ],
-    "bestFor": "Corporate document metadata reconnaissance",
-    "input": "Target domains and document repositories",
-    "output": "Extracted usernames, paths, software fingerprints, and document metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Corporate document-metadata reconnaissance against a target domain.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "username",
+      "email",
+      "metadata-exif",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (ElevenPaths/Telefónica). No license fee; Windows-only and requires .NET + SQL Server to run.",
     "opsec": "active",
-    "opsecNote": "Performs active collection and download actions that may be logged by target infrastructure.",
+    "opsecNote": "FOCA searches Google/Bing/DuckDuckGo for documents then downloads them — the download of files from the target's own servers can be logged by that infrastructure. Route through a VPN/sock-puppet network and expect the fetches to be attributable if the target inspects logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Well-known open-source tool from ElevenPaths (Telefónica); last release ~2021, Windows-only, still widely used but no longer actively developed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Fingerprinting Organizations with Collected Archives",
+      "ElevenPaths FOCA"
+    ],
+    "tags": [
+      "metadata",
+      "document-metadata",
+      "exif"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/metadata/foca.md"
   },
   {
@@ -178257,37 +178287,56 @@
   {
     "id": "telerecon",
     "name": "Telerecon",
-    "description": "OSINT tool: Telerecon.",
+    "description": "Use when you have a Telegram `username`, `phone` or channel and want to scrape and profile that target across Telegram — returns messages, contact selectors, associate network and EXIF/GPS from media.",
     "url": "https://github.com/sockysec/Telerecon",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Deep OSINT reconnaissance and profiling of Telegram users and channels.",
+    "selectorsIn": [
+      "username",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "email",
+      "associate",
+      "geolocation",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (MIT). Requires your own Telegram account/API credentials to run.",
+    "opsec": "active",
+    "opsecNote": "Telerecon authenticates with a Telegram account to scrape, so use a dedicated sock-puppet Telegram account and API keys — never your real one. Joining or querying channels with a burner still leaves that account's footprint; heavy scraping risks the account being flagged/banned.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular open-source Telegram OSINT framework by sockysec, widely referenced in awesome-osint lists; results depend on your account access and Telegram's current API behavior.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sockysec Telerecon"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "messaging",
+      "profiling"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telerecon.md"
   },
   {
@@ -215917,31 +215966,29 @@
   {
     "id": "uk-guide-to-names-and-naming-practices",
     "name": "UK Guide to Names and Naming Practices",
-    "description": "Guide produced in the UK on names and naming practices",
+    "description": "Use when you have a `name` from an unfamiliar culture and need to parse it correctly (given vs family name, honorifics, variants) before searching — returns corrected name-component understanding to feed other tools.",
     "url": "https://www.fbiic.gov/public/2008/nov/Naming_practice_guide_UK_2006.pdf",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Correctly interpreting names from many cultures so name-based searches don't fail on structure.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
-      "address",
-      "phone",
-      "associate"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public PDF reference document; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static reference document — reading it involves no target interaction and leaks nothing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "An official UK government reference guide (mirrored on the US FBIIC site); authoritative on naming conventions, widely cited in investigative training.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -215950,14 +215997,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Naming practice guide UK 2006",
+      "UK naming conventions guide"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "names"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/people-search/uk-guide-to-names-and-naming-practices.md"
   },
@@ -270309,13 +270360,13 @@
   {
     "id": "state-adoption-resources",
     "name": "State Adoption Resources",
-    "description": "OSINT tool: State Adoption Resources.",
+    "description": "Use when a missing-persons/family case involves adoption and you need each US state's rules for accessing (largely sealed) adoption records and reunion registries — returns the lawful pathway to birth-family associate/dob leads.",
     "url": "https://www.childwelfare.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding each US state's adoption-record access rules and reunion-registry pathways.",
     "selectorsIn": [
       "name"
     ],
@@ -270324,29 +270375,38 @@
       "dob",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free US government resource (Child Welfare Information Gateway, HHS). No account or payment; obtaining actual records may involve state agency fees and eligibility processes.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guidance is passive. Actual record access is an overt, identity-verified legal process (you must usually be an eligible party), and reunion registries are consent-based — this is a lawful-request pathway, not covert research.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official US government (HHS Children's Bureau) information portal; authoritative on the law and process, though it holds no personal records itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Child Welfare Information Gateway",
+      "childwelfare.gov"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "adoption"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/state-adoption-resources.md"
   },
   {
@@ -270551,13 +270611,13 @@
   {
     "id": "state-public-records-laws",
     "name": "State Public Records Laws",
-    "description": "OSINT tool: State Public Records Laws.",
+    "description": "Use when you need to obtain a US public record about a person and want to know each state's records-law rules and file the request — returns the pathway to documents (name, dob, document-id).",
     "url": "https://www.muckrock.com/place",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding each US jurisdiction's public-records (FOIA) law and filing a request to obtain documents.",
     "selectorsIn": [
       "name"
     ],
@@ -270566,29 +270626,39 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "MuckRock's place/records-law data and guidance are free to browse. Filing requests via MuckRock is free to start, though agencies may charge copy/processing fees and MuckRock has paid plans for heavy filers.",
+    "opsec": "active",
+    "opsecNote": "Filing a public-records request is an overt, named, on-the-record action — the agency (and sometimes the subject, via notice provisions) learns a request was made. This is not covert research; use it only when an official paper request is appropriate and consider that some states notify third parties.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "MuckRock is a well-established nonprofit transparency/journalism platform; its records-law data is professionally researched and its filing tooling is genuine.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "MuckRock place",
+      "MuckRock public records"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "foia",
+      "public-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/state-public-records-laws.md"
   },
   {
@@ -312097,13 +312167,13 @@
   {
     "id": "toddington-free-osint-resources",
     "name": "Toddington Free OSINT Resources",
-    "description": "Toddington International's large curated list of free OSINT search/research tools.",
+    "description": "Use when you have any starting selector and want a vetted, professionally-maintained index of free OSINT tools to pick the right one — returns pointers to specialized tools, not data itself.",
     "url": "https://www.toddington.com/resources/free-osint-resources-open-source-intelligence-search-tools-research-tools-online-investigation/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "A vetted, professionally-maintained free tools list",
+    "bestFor": "A vetted, professionally-curated directory of free OSINT search and research tools.",
     "selectorsIn": [
       "name",
       "username",
@@ -312111,16 +312181,20 @@
       "phone",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "The resource list is free to browse. Toddington International (TII) is a paid training/services firm, but this tools directory is public and free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory is passive; the OpSec profile of anything you launch from it depends on that individual tool, so read each tool's own footprint before use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Toddington is an established online-research training firm.",
+    "trustNote": "Maintained by Toddington International, a long-established professional online-investigation training firm; the list is curated and periodically pruned, unlike raw scraped seed lists.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -312129,14 +312203,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Toddington International resources",
+      "TII free OSINT resources"
+    ],
     "tags": [
       "tool-collection",
       "people-search",
       "public-records"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/search-engines/toddington-free-osint-resources.md"
   },
@@ -327105,44 +327182,50 @@
   {
     "id": "find-my-facebook-id-3",
     "name": "Find my Facebook ID",
-    "description": "OSINT tool: Find my Facebook ID.",
+    "description": "Use when you have a Facebook profile URL/`username` and want its stable numeric user ID — returns the numeric ID that anchors the profile against vanity-name changes.",
     "url": "https://findmyfbid.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a Facebook profile URL or vanity name to its permanent numeric user ID.",
     "selectorsIn": [
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "image",
-      "associate"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single-purpose web tool. Widely reported operational, but the .com domain intermittently failed to resolve at verification; several mirrors exist as fallbacks.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public profile URL into a third-party site; the target is not notified. Passive, but the resolver only works if the target profile allows search-engine linking, so results reflect the subject's privacy settings.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small third-party utility (one of many near-identical FBID resolvers); it only echoes Facebook's own numeric ID, so correctness is easy to spot-check, but the specific domain's uptime is unreliable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "findmyfbid",
+      "findmyfbid.com",
+      "Facebook numeric ID lookup"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "facebook-id"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/find-my-facebook-id-3.md"
   },
   {
@@ -353287,41 +353370,50 @@
   {
     "id": "treeverse",
     "name": "Treeverse",
-    "description": "Conversation structure mapping",
+    "description": "Use when you have a Bluesky post or thread URL and want to see the full reply structure and participants — returns a hierarchical thread tree of associate/social-profile leads.",
     "url": "https://treeverse.app/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "bluesky"
     ],
-    "bestFor": "Conversation structure mapping",
-    "input": "Post or thread URLs",
-    "output": "Hierarchical thread trees with participant and reply context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Visualizing a Bluesky conversation's full reply tree to surface participants and context.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web app; open-source (created by Paul Butler). No account or payment required.",
     "opsec": "passive",
-    "opsecNote": "Public-content visualization without direct target interaction.",
+    "opsecNote": "Reads public Bluesky content via the public API without interacting with the target's account — fully passive, no notification to participants.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "Open-source hobby tool by a known developer; it only re-renders public Bluesky data, so accuracy tracks the platform's public API.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "treeverse.app",
+      "Bluesky thread visualizer"
+    ],
+    "tags": [
+      "bluesky",
+      "thread-visualization"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bluesky/treeverse.md"
   },
   {
