@@ -179187,43 +179187,57 @@
   {
     "id": "viber-com",
     "name": "viber.com",
-    "description": "OSINT tool: viber.com.",
+    "description": "Use when you have a `phone` number and want to check whether it is registered on Viber — returns the account's public display name and profile photo (a social-profile / image confirmation).",
     "url": "https://www.viber.com/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a phone number is on Viber and capturing its public display name and avatar.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "phone"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free app; you need a Viber account (tied to your own number) to perform contact lookups.",
+    "opsec": "active",
+    "opsecNote": "To check a number you add it as a contact in the Viber app running on YOUR account — this can expose your account to the target (e.g. if they later see you, or via mutual-contact features) and, depending on settings, may surface you to them. Use a dedicated sock-puppet Viber account on a burner number, never your personal one. Do NOT message the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Viber is a legitimate, widely-used messaging platform (Rakuten). The account-existence + display-name/photo signal is genuine first-party data, though users can hide their photo/name.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "whatsapp-web",
+      "account-live-com"
+    ],
+    "aliases": [
+      "Viber"
+    ],
     "tags": [
       "messengerapps",
-      "Messenger Apps"
+      "Messenger Apps",
+      "account-existence"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/viber-com.md"
   },
   {
@@ -214409,48 +214423,58 @@
   {
     "id": "socialpath",
     "name": "SocialPath",
-    "description": "OSINT tool: SocialPath.",
+    "description": "Use when you have a `username` and want to track its reuse across social platforms and profile it — returns matching profiles, activity, and mentioned-contact (associate) data as social-profile.",
     "url": "https://github.com/woj-ciech/socialpath",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "De-anonymising a username by correlating its reuse across Facebook, Twitter, Instagram, Reddit, GitHub and more, with CSV output.",
     "selectorsIn": [
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
       "social-profile",
-      "dob"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open-source (Python/Django). No purchase, but you must supply your own platform API credentials, which are increasingly hard to obtain.",
+    "opsec": "active",
+    "opsecNote": "The tool uses authenticated platform APIs/scraping with YOUR credentials, so activity is tied to those accounts — use dedicated sock-puppet API keys, never personal ones. Heavy querying can trip platform rate limits or bans. Results (and CSVs) are stored locally.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Open-source project by woj-ciech (a known OSINT developer). Low commit count and dependence on platform APIs mean modules break as those APIs change; inspect and test before relying.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "sherlock",
+      "maigret"
+    ],
+    "aliases": [
+      "woj-ciech/socialpath"
+    ],
     "tags": [
       "people-search",
       "open-source",
-      "cli"
+      "cli",
+      "username-deanon"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/socialpath.md"
   },
   {
@@ -219318,37 +219342,52 @@
   {
     "id": "inmobprefix",
     "name": "InMobPrefix",
-    "description": "OSINT tool: InMobPrefix.",
+    "description": "Use when you have an Indian mobile `phone` number and want to identify the original operator and telecom circle (region) from its prefix — returns geolocation (circle/state) and carrier without a paid lookup.",
     "url": "https://github.com/hstsethi/in-mob-prefix",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Offline mapping of an Indian mobile prefix to its telecom circle (region) and original operator.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; runs entirely offline against a bundled dataset (no API, no per-lookup cost).",
+    "opsec": "passive",
+    "opsecNote": "Fully local — the number is never sent to any third party, so this is the most OpSec-safe way to region-profile an Indian number. No target contact, no query leakage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Open-source project using public data from Wikipedia, India's DoT, and TRAI, with a trained model for unknown prefixes. Mobile number portability means the *current* operator may differ from the original allocation.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "in"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "phoneinfoga"
+    ],
+    "aliases": [
+      "in-mob-prefix",
+      "Indian mobile prefix lookup"
+    ],
     "tags": [
-      "phone-number-research"
+      "phone-number-research",
+      "india"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/inmobprefix.md"
   },
   {
@@ -220381,44 +220420,54 @@
   {
     "id": "ofcom-org-uk",
     "name": "ofcom.org.uk",
-    "description": "OSINT tool: ofcom.org.uk.",
+    "description": "Use when you have a UK `address`/postcode (or a `geolocation`) and want to know which mobile networks cover it — returns per-operator signal/coverage for that location.",
     "url": "https://checker.ofcom.org.uk/mobile-coverage",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Checking which UK mobile networks (and broadband) serve a specific address/postcode.",
     "selectorsIn": [
-      "phone"
+      "address",
+      "geolocation"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official UK regulator tool; no account.",
+    "opsec": "passive",
+    "opsecNote": "You query a government regulator's coverage database by location, not by person — no target is contacted or notified. Ofcom logs the query; use a sock-puppet browser if you want to avoid attribution. This checks infrastructure coverage, not any individual's phone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Ofcom, the UK communications regulator — authoritative first-party coverage data supplied by the networks.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "cellular-towers-map-canada"
+    ],
+    "aliases": [
+      "Ofcom coverage checker",
+      "ofcom mobile coverage"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "coverage"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/ofcom-org-uk.md"
   },
   {
@@ -272727,46 +272776,58 @@
   {
     "id": "trustmark-org-uk",
     "name": "trustmark.org.uk",
-    "description": "OSINT tool: trustmark.org.uk.",
+    "description": "Use when you have a UK tradesperson/business `name` or trade + location and want to confirm TrustMark registration — returns the registered business name, address, and trade (employer-org details).",
     "url": "https://www.trustmark.org.uk/homeowner/find-a-tradesperson",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that a UK home-improvement tradesperson/business is TrustMark-registered and getting their registered business details.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search operated under the UK government-endorsed scheme; no account.",
+    "opsec": "passive",
+    "opsecNote": "A public register of accredited businesses — searching it doesn't notify anyone and reveals only self-published, scheme-vetted business data. Passive; use a sock-puppet browser if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "TrustMark is the UK Government Endorsed Quality Scheme for tradespeople; registrations are vetted, so a listing is authoritative for business accreditation (not for private-individual identity).",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "companies-house"
+    ],
+    "aliases": [
+      "TrustMark",
+      "Find a Tradesperson"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "public-records",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/trustmark-org-uk.md"
   },
   {
@@ -294097,13 +294158,13 @@
   {
     "id": "inteltechniques-tools-search-engines-suite",
     "name": "IntelTechniques Tools (search engines suite)",
-    "description": "Michael Bazzell's suite of free web OSINT search tools across many selectors (name, email, username, phone, image, location, etc.).",
+    "description": "Use when you have almost any selector (name, email, username, phone, image, domain, location) and want pre-built query interfaces that fan it across dozens of sources — returns links/results to social-profile, address, email and more.",
     "url": "https://inteltechniques.com/tools/index.html",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "One-stop free search interfaces for nearly every selector",
+    "bestFor": "A canonical, free one-stop set of search interfaces covering nearly every selector — the standard starting point for person-finding.",
     "selectorsIn": [
       "name",
       "email",
@@ -294119,15 +294180,16 @@
       "address",
       "email"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free hosted tools by Michael Bazzell. No account. Some individual modules break over time as target platforms change their query formats.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The pages build query URLs against third-party sites and open them in your browser — the actual searches hit those destinations, so your browser/IP is what reaches them, not IntelTechniques. Use a sock-puppet browser. Nothing is submitted to Bazzell's server beyond loading the tool page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "By Michael Bazzell (IntelTechniques), an authoritative OSINT source (referenced via the LinkedIn search tool in the collection).",
+    "trustNote": "Maintained by Michael Bazzell (IntelTechniques), a foundational and widely-cited figure in OSINT. The tooling is authoritative and regularly referenced in training.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global",
@@ -294137,16 +294199,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "invitationOnly": false,
+    "relatedTools": [
+      "sherlock",
+      "account-live-com"
+    ],
     "aliases": [
-      "inteltechniques.com/tools"
+      "inteltechniques.com/tools",
+      "Bazzell tools"
     ],
     "tags": [
       "search",
       "bazzell",
-      "suite"
+      "suite",
+      "pivot-hub"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/search-engines/inteltechniques-tools-search-engines-suite.md"
   },
@@ -321617,13 +321686,13 @@
   {
     "id": "crowdtangle",
     "name": "CrowdTangle",
-    "description": "Social media monitoring tool for Facebook, Instagram, and Reddit",
+    "description": "Use when you want historical Facebook/Instagram public-post monitoring — but note the tool was SHUT DOWN by Meta in August 2024 and is no longer usable; its successor is the Meta Content Library.",
     "url": "https://www.crowdtangle.com/videosearch",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "(Retired) Was Meta's tool for monitoring and searching public posts across Facebook, Instagram, and Reddit.",
     "selectorsIn": [
       "name",
       "username"
@@ -321631,31 +321700,42 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
+    "costNote": "Was free to approved researchers/journalists. Decommissioned by Meta on 14 August 2024; access no longer available.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Moot — the service is offline. Do not spend investigative time attempting to access it. For current work, pursue access to the Meta Content Library (its successor), which is gated to approved academics/nonprofits.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "Was a first-party Meta product with authoritative platform data. The trust rating is historical; the tool itself is retired.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": true,
+    "relatedTools": [
+      "meta-content-library"
+    ],
+    "aliases": [
+      "CrowdTangle"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "retired"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/crowdtangle.md"
   },
@@ -324267,35 +324347,57 @@
   {
     "id": "facebook-entity-id-parser",
     "name": "Facebook Entity Id Parser",
-    "description": "OSINT tool: Facebook Entity Id Parser.",
+    "description": "Use when you have a Facebook profile/page `social-profile` (URL) and want its stable numeric entity ID — returns the numeric Facebook ID that survives vanity-URL and display-name changes.",
     "url": "https://osint.support/chrome-extensions/2019/09/08/facebook-entity-id-parser.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Extracting the durable numeric Facebook ID behind a profile/page so it can be tracked across renames.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "device-id",
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Chrome extension (downloadable zip). No account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "The extension reads the Facebook page already loaded in YOUR browser and parses its numeric ID locally — it does not query Facebook about the target beyond your normal page view, so it's passive. BUT the developer warns the code is obfuscated (may trigger antivirus) and you assume risk installing third-party extensions; load it only in a sandboxed/sock-puppet browser profile, ideally not one logged into your real Facebook.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community tooling from osint.support. Useful and long-standing, but the 2019 extension is obfuscated and unmaintained; Facebook DOM changes can break parsing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "lookup-id-com",
+      "sowsearch"
+    ],
+    "aliases": [
+      "Facebook Entity ID Parser",
+      "FB ID grabber"
+    ],
+    "tags": [
+      "facebook",
+      "chrome-extension",
+      "entity-id"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-entity-id-parser.md"
   },
   {
@@ -349852,44 +349954,54 @@
   {
     "id": "streamscharts-com",
     "name": "streamscharts.com",
-    "description": "OSINT tool: streamscharts.com.",
+    "description": "Use when you have a Twitch/Kick streamer `username` and want their stable numeric user ID plus channel analytics — returns the ID and public streaming stats as a social-profile.",
     "url": "https://streamscharts.com/tools/convert-username",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a Twitch username to its permanent numeric user ID and pulling public channel analytics.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The username→ID converter and basic channel stats are free with no account; deeper historical analytics are paid.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party analytics site, not Twitch, so the streamer is not notified. StreamsCharts logs your queries/IP; use a sock-puppet browser. Only public streaming data is exposed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Established Twitch/Kick analytics platform. Data is derived from public streaming activity; figures are third-party estimates, generally reliable for IDs and broad stats.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "twitch-username-and-user-id-addons-mozilla-org"
+    ],
+    "aliases": [
+      "StreamsCharts",
+      "streamscharts convert username"
+    ],
     "tags": [
       "twitch",
-      "Twitch Related Sites"
+      "Twitch Related Sites",
+      "kick",
+      "streaming-analytics"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/streamscharts-com.md"
   },
   {
