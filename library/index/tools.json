@@ -100182,45 +100182,51 @@
   {
     "id": "addresssearch-email-and-address-lookup-united-states",
     "name": "AddressSearch Email & Address Lookup (United States)",
-    "description": "Search from over 95 million email addresses and 140 million mailing addresses",
+    "description": "Use when you have an `email` (or `name`) in the US and want the linked mailing address, or a reverse-email match — returns address and email from a large opt-in-style index.",
     "url": "http://addresssearch.com",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Free US email-to-mailing-address and reverse-email lookups across a large consumer index.",
     "selectorsIn": [
-      "email"
+      "email",
+      "name"
     ],
     "selectorsOut": [
-      "email",
-      "social-profile"
+      "address",
+      "email"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Advertised as a free lookup service (email and mailing-address search, reverse email). No payment claimed; the site was intermittently unreachable at last check, so treat availability as flaky.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you query a third-party consumer-data index, not the subject, so no notification reaches them. The site says it protects the searched person's privacy, but assume your query is logged; use a clean/sock browser and do not enter your own identifiers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial US consumer-data lookup harvested via Toddington's directory; data provenance and freshness are not independently verified, so treat hits as leads to corroborate.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "AddressSearch",
+      "addresssearch.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "email-addresses"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/email/addresssearch-email-and-address-lookup-united-states.md"
   },
@@ -136689,30 +136695,30 @@
   {
     "id": "worldtimelapse-mapping-website",
     "name": "WorldTimeLapse Mapping Website",
-    "description": "Mapping program that provides time-lapse imagery of locations worlwide",
+    "description": "Use when you have a `geolocation`/`address` and want to see how that place changed year-by-year in satellite imagery (1984–present) — returns time-lapse imagery of the location.",
     "url": "http://world.time.com/timelapse",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing decades of annual satellite imagery for a location to see construction, terrain and land-use change over time.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free. The original Time-hosted URL (world.time.com/timelapse) is legacy; the live project is Google Earth Timelapse (earthengine.google.com/timelapse or g.co/Timelapse).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Fully passive — you view public satellite imagery of a place, not the subject. Nothing is sent about any person and no target is alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The imagery comes from the Google Earth Timelapse project (Google Earth Engine with Carnegie Mellon CREATE Lab) — authoritative satellite data. The Time.com URL is a defunct legacy pointer; use the Google endpoint.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -136721,14 +136727,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Google Earth Timelapse",
+      "Timelapse",
+      "world.time.com/timelapse"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/geolocation/worldtimelapse-mapping-website.md"
   },
@@ -170355,38 +170366,51 @@
   },
   {
     "id": "bmi-np-bot",
-    "name": "bmi_np_bot",
-    "description": "OSINT tool: bmi_np_bot.",
+    "name": "MNProbot (phone operator & region lookup)",
+    "description": "Use when you have a Russian `phone` number and want its current mobile operator and geographic region, accounting for number portability (MNP) — a Telegram bot returning carrier and coarse region.",
     "url": "https://t.me/MNProbot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying the operator and home region of a Russian mobile number, correctly handling ported (MNP) numbers.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot. Requires a Telegram account to query it; no payment for lookups.",
+    "opsec": "active",
+    "opsecNote": "Active and account-bound — you send the target's number to a third-party bot, so the operator sees your query. Use a dedicated sock Telegram account; this only reveals carrier/region, not the subscriber's identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party Telegram bot over Russian numbering/MNP data. Operator/region mapping is generally reliable for planning, but it is unofficial — treat region as coarse, not an address.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ru"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "bmi_np_bot",
+      "MNProbot"
+    ],
     "tags": [
       "telegram"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/bmi-np-bot.md"
   },
   {
@@ -176115,37 +176139,51 @@
   {
     "id": "shtrafkzbot",
     "name": "ShtrafKZBot",
-    "description": "OSINT tool: ShtrafKZBot.",
+    "description": "Use when you have a Kazakhstan national/business ID (`document-id`, ИИН/БИН) or a `vehicle-plate` and want to check that person's/vehicle's outstanding fines, taxes and penalties — a Telegram bot returning penalty records.",
     "url": "https://t.me/ShtrafKZBot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking Kazakhstan fines, taxes and traffic penalties tied to a national ID (ИИН), business ID (БИН), or vehicle plate.",
+    "selectorsIn": [
+      "document-id",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot. Requires a Telegram account to message it; no payment for basic lookups.",
+    "opsec": "active",
+    "opsecNote": "Active and account-bound — you message a third-party Telegram bot with the target's identifiers, so the bot operator sees your query and the ID you submit. Use a dedicated sock Telegram account; never submit your own ИИН or personal data.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community/third-party Telegram bot querying Kazakh government fine/tax portals. Data may reflect official sources, but the bot itself is unofficial — verify important results against the official e-gov portal.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "kz"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "ShtrafKZ",
+      "Штрафы KZ bot"
+    ],
     "tags": [
       "telegram"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/shtrafkzbot.md"
   },
   {
@@ -231282,44 +231320,51 @@
   {
     "id": "causelist-uk",
     "name": "Causelist - UK",
-    "description": "OSINT tool: Causelist - UK.",
+    "description": "Use when you have a `name` and want to find upcoming or listed UK court hearings involving that person — returns the case/party listing (name, court, case reference).",
     "url": "http://causelist.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a UK subject appears in published court cause lists (daily hearing schedules) across courts and tribunals.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search published cause-list data. The causelist.org endpoint was intermittently unreachable (503) at last check; official HMCTS lists and CauseAlert cover the same data.",
+    "opsec": "passive",
+    "opsecNote": "Passive — cause lists are public court schedules and you search an aggregator, not the subject. No one is notified. Use a clean browser; nothing about you is exposed by a name search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregates official UK court cause-list data. The underlying listings are authoritative (published by HMCTS), but this third-party aggregator's uptime and completeness are not guaranteed — cross-check against official sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Causelist",
+      "causelist.org",
+      "UK cause list"
+    ],
     "tags": [
       "court",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/causelist-uk.md"
   },
   {
@@ -325562,44 +325607,53 @@
   {
     "id": "facebook-directory-users-by-name",
     "name": "Facebook Directory (Users by Name)",
-    "description": "OSINT tool: Facebook Directory (Users by Name).",
+    "description": "Use when you have a `name` and want to enumerate public Facebook profiles matching it via Facebook's own alphabetical directory — returns candidate social-profiles.",
     "url": "https://www.facebook.com/directory/people",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing/enumerating public Facebook profiles by name through Facebook's built-in people directory.",
     "selectorsIn": [
-      "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "image",
-      "associate"
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free. The public directory still exists but Facebook increasingly gates it behind login and has curtailed logged-out browsing, so coverage varies.",
+    "opsec": "active",
+    "opsecNote": "Meaningful use now generally requires a Facebook login — use a sock account, never your own. Browsing the directory doesn't notify targets, but any profile interaction from your session does. Stay read-only.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Facebook surface listing public profiles; the profiles are genuine, but the directory's completeness has degraded as Facebook restricts it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "facebook-watch"
+    ],
+    "aliases": [
+      "facebook.com/directory",
+      "FB people directory"
+    ],
     "tags": [
       "facebook"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-directory-users-by-name.md"
   },
   {
@@ -326869,45 +326923,55 @@
   {
     "id": "facebook-watch",
     "name": "Facebook Watch",
-    "description": "Facebook video and show viewer",
+    "description": "Use when you have a `name`/`username` or page and want to find video content that person or page has posted or appears in on Facebook — returns social-profile video content.",
     "url": "https://www.facebook.com/watch/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Surfacing a subject's or page's Facebook video uploads and shows, and video mentions, via Facebook's video hub.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free. Browsing/searching video increasingly requires a logged-in Facebook account; without login you hit walls quickly.",
+    "opsec": "active",
+    "opsecNote": "Practical use needs a Facebook login, so use a well-worn sock account, never your own. Views themselves aren't shown to the target, but likes/comments/follows from your session are. Stay read-only.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Facebook surface; the content is genuine platform data. Reliability of discovery depends on Facebook's search, which is inconsistent.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "facebook-directory-users-by-name"
+    ],
+    "aliases": [
+      "fb watch",
+      "facebook.com/watch"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-watch.md"
   },
@@ -341726,45 +341790,51 @@
   },
   {
     "id": "osintcombine-com-2",
-    "name": "osintcombine.com",
-    "description": "OSINT tool: osintcombine.com.",
+    "name": "OSINT Combine — Mastodon Investigation Guide",
+    "description": "Use when you have a `username`/`name` and need a method for finding and investigating a subject on Mastodon/the Fediverse — a reputable how-to guide returning tools and techniques, not a lookup itself.",
     "url": "https://www.osintcombine.com/post/let-s-get-on-with-mastodon",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Learning the workflow and third-party tools for locating and investigating Mastodon/Fediverse accounts.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public article on the OSINT Combine blog. Some tools it recommends need their own account (e.g. a Twitter/X account for migration-finder tools).",
+    "opsec": "passive",
+    "opsecNote": "Reading the guide is passive. The techniques it describes range from passive (third-party keyword search) to active (native searching requires a Mastodon account) — apply the relevant per-tool OpSec when you execute them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "OSINT Combine is a well-regarded professional OSINT training/tooling company; their guidance is reliable, though individual third-party tools it links can change or disappear.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Let's get on with Mastodon",
+      "OSINT Combine Mastodon guide"
+    ],
     "tags": [
       "mastodon",
       "Mastodon Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osintcombine-com-2.md"
   },
   {
