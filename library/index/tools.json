@@ -180040,43 +180040,56 @@
   {
     "id": "whatsapp-osint",
     "name": "WhatsApp-OSINT",
-    "description": "Rapid WhatsApp account reconnaissance and metadata checks",
+    "description": "Use when you have a `phone` number and want to pull its WhatsApp profile photo, business/verification status, about-text, and linked-device signals — returns image, social-profile, and device-id data.",
     "url": "https://github.com/kinghacker0/WhatsApp-OSINT",
     "category": "messaging",
     "path": [
       "messaging",
       "whatsapp"
     ],
-    "bestFor": "Rapid WhatsApp account reconnaissance and metadata checks",
-    "input": "Phone numbers or WhatsApp account identifiers",
-    "output": "Enriched account metadata and reconnaissance results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enriching a phone number into its WhatsApp profile photo, account type, and device/privacy signals via a scripted API.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "The script is free (open source), but it calls a third-party WhatsApp OSINT API on RapidAPI that requires an API key; RapidAPI has a limited free tier with paid quotas beyond it.",
     "opsec": "active",
-    "opsecNote": "Direct API-driven lookups against messaging infrastructure may be logged by providers.",
+    "opsecNote": "Lookups route through a third-party RapidAPI service, not your own WhatsApp account, so the target is not directly notified — but you are handing the target's number to an unknown API operator who sees and may log every query. Use a dedicated key and never query numbers you must keep confidential from that operator.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "api-key"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community GitHub project (kinghacker0/WhatsApp-OSINT, ~700+ stars) wrapping a third-party API; the code is inspectable but the underlying data source is opaque and unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": true,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "kinghacker0 WhatsApp-OSINT"
+    ],
+    "tags": [
+      "whatsapp",
+      "messaging",
+      "phone"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/whatsapp/whatsapp-osint.md"
   },
   {
@@ -213880,44 +213893,54 @@
   },
   {
     "id": "scotland-landlord-search",
-    "name": "Scotland Landlord Search",
-    "description": "OSINT tool: Scotland Landlord Search.",
+    "name": "Scottish Landlord Register Search",
+    "description": "Use when you have a Scottish rental-property `address` (postcode) or a landlord registration number and want to find who owns/manages it — returns landlord/agent name, contact address, and local authority.",
     "url": "https://www.landlordregistrationscotland.gov.uk/search/start",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the registered landlord or letting agent of a rental property in Scotland by postcode.",
     "selectorsIn": [
-      "address"
+      "address",
+      "document-id"
     ],
     "selectorsOut": [
       "name",
-      "phone",
+      "address",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Scottish Government service; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Public register lookup; anonymous and server-side, with no notification to the landlord or occupant. No sock puppet required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Scottish Government / Scottish local authorities; the statutory landlord register.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Scottish Landlord Register",
+      "landlordregistrationscotland.gov.uk"
+    ],
     "tags": [
-      "address"
+      "address",
+      "property",
+      "scotland",
+      "uk"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/scotland-landlord-search.md"
   },
   {
@@ -219481,45 +219504,50 @@
   },
   {
     "id": "howtocallabroad-com",
-    "name": "howtocallabroad.com",
-    "description": "OSINT tool: howtocallabroad.com.",
+    "name": "How To Call Abroad",
+    "description": "Use when you have a foreign `phone` number and want to resolve its country dialing code and correct international format so you can normalise and route it — returns country/dialing-code context.",
     "url": "http://www.howtocallabroad.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up international dialing codes and correct call formats to normalise a foreign phone number.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference site; no account. Ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "A static reference lookup on your side only — nothing is sent to the number or its owner. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A helper/reference site of unremarkable third-party ownership; dialing-code data is easy to cross-check and low-risk, but it is not an authoritative registry.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "howtocallabroad.com",
+      "international dialing codes guide"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "reference"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/howtocallabroad-com.md"
   },
   {
@@ -222017,44 +222045,49 @@
   },
   {
     "id": "receive-sms-online-3",
-    "name": "Receive SMS Online",
-    "description": "OSINT tool: Receive SMS Online.",
+    "name": "Receive SMS Online (receivesmsonline.net)",
+    "description": "Use when you have a `phone` number a subject used for verification and want to check whether it is a public throwaway/disposable number — returns disposable-number confirmation and its public inbox.",
     "url": "https://www.receivesmsonline.net",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Determining whether a phone number is a public disposable/burner number and reading its openly visible SMS inbox.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no registration; the operator monetises via ads. The numbers are shared public numbers, not a private service.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the site's number list and public inboxes is passive and does not touch the target. Never send anything to these numbers expecting privacy — every message to a listed number is world-readable. Do not receive your own verification codes here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party disposable-SMS aggregator of unknown ownership; useful as a reference list, but treat the site itself as untrusted infrastructure.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "receivesmsonline.net",
+      "free receive SMS online"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "disposable-numbers"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/receive-sms-online-3.md"
   },
   {
@@ -228987,47 +229020,55 @@
   },
   {
     "id": "bmi-com",
-    "name": "bmi.com",
-    "description": "OSINT tool: bmi.com.",
+    "name": "BMI / Songview Repertoire Search",
+    "description": "Use when you have a `name` (songwriter, performer, or publisher) or a song title and want to link a person to musical works, co-writers, and publishing companies — returns songwriter names, publishers, and co-writer associates.",
     "url": "https://repertoire.bmi.com/StartPage.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Linking a songwriter/composer to their registered works, publishers, and co-writers via the BMI/ASCAP Songview database.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public repertoire search; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "A public copyright-database query; anonymous and server-side, with no notification to any writer or rights-holder. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by BMI (a performing-rights organization) jointly with ASCAP via Songview; authoritative copyright-ownership data for ~40M works.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Songview",
+      "BMI repertoire",
+      "ASCAP/BMI Songview"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "music",
+      "copyright"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bmi-com.md"
   },
   {
@@ -243084,47 +243125,54 @@
   },
   {
     "id": "gijn-org-3",
-    "name": "gijn.org",
-    "description": "OSINT tool: gijn.org.",
+    "name": "GIJN Guide — Land & Property Ownership Records",
+    "description": "Use when you have an `address` or a person/`employer-org` and want a methodology and jurisdiction pointers for finding land/property ownership records worldwide — returns a research guide, not a search box.",
     "url": "https://gijn.org/resource/land-ownership-records-so-useful-but-challenging-to-find/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Learning where and how to find land/property ownership records across jurisdictions when no single registry covers your target.",
     "selectorsIn": [
-      "name",
       "address",
+      "name",
       "employer-org"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free guide/resource article from GIJN; no account required. The registries it points to may have their own fees.",
+    "opsec": "passive",
+    "opsecNote": "Reading a guide is entirely passive. OpSec risk lives in the individual registries it directs you to, not in this page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Published by the Global Investigative Journalism Network (GIJN), a well-regarded nonprofit resource for investigative methodology.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GIJN land ownership records guide"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "guide",
+      "methodology"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gijn-org-3.md"
   },
   {
@@ -245740,47 +245788,55 @@
   },
   {
     "id": "guernseyroyalcourt-gg",
-    "name": "guernseyroyalcourt.gg",
-    "description": "OSINT tool: guernseyroyalcourt.gg.",
+    "name": "Guernsey Royal Court — BDM, Wills & Deed Polls",
+    "description": "Use when you have a `name` with a Guernsey nexus and need birth/death/marriage, will, deed-poll or power-of-attorney records — returns vital-record and legal-document access via a manual request to the Greffe.",
     "url": "https://www.guernseyroyalcourt.gg/article/1637/Births-Deaths-Marriages-Wills-and-Deed-Polls",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Obtaining Guernsey vital records (births, deaths, marriages), wills, deed polls and POAs by request from the Royal Court's Greffe.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The information page is free, but obtaining certificates is paid per document (birth/death certificates ~£40, marriage ~£31); archive (Strongroom) research is by appointment.",
+    "opsec": "passive",
+    "opsecNote": "Requesting a record from the Greffe is passive with respect to the subject (they are not notified), but you identify yourself to a court registry when you make the request. There is no anonymous online search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "His Majesty's Greffier / Registrar-General of the Bailiwick of Guernsey; authoritative custodian of the island's vital and legal records.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "gg"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "HM Greffe Guernsey",
+      "Guernsey Registrar-General",
+      "Guernsey births deaths marriages wills"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "guernsey"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/guernseyroyalcourt-gg.md"
   },
   {
@@ -251191,47 +251247,56 @@
   },
   {
     "id": "latvia",
-    "name": "Latvia",
-    "description": "OSINT tool: Latvia.",
+    "name": "Latvian Register of Enterprises",
+    "description": "Use when you have a `name` or `employer-org` linked to Latvia and want to find company records, directors, and registered addresses — returns officer names, business addresses, and company links.",
     "url": "https://www.ur.gov.lv/en/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up Latvian companies and their officers/registered addresses to link a person to a business.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic company search and current data are free; official certificates, full historical records, and some non-public documents are paid per-request. No account needed to run a basic search.",
+    "opsec": "passive",
+    "opsecNote": "Querying a public government registry is passive and anonymous; no target notification. Use standard clean-browser hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Register of Enterprises of the Republic of Latvia (Latvijas Republikas Uzņēmumu reģistrs); authoritative national company data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "lv"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Uzņēmumu reģistrs",
+      "Latvia company registry",
+      "ur.gov.lv"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry",
+      "latvia"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/latvia.md"
   },
   {
@@ -257901,36 +257966,52 @@
   },
   {
     "id": "nigeria-sexual-offenders-registers",
-    "name": "Nigeria Sexual Offenders Registers",
-    "description": "OSINT tool: Nigeria Sexual Offenders Registers.",
-    "url": "https://nsod.naptip.gov.ng/view_cases.php",
+    "name": "Nigeria Sexual Offenders Database (NAPTIP)",
+    "description": "Use when you have a `name` and want to check whether a person appears in Nigeria's national sexual-offenders database as reported, arraigned, or convicted — returns offence status and case details.",
+    "url": "https://nsod.naptip.gov.ng/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Background-checking a name against Nigeria's national register of reported/convicted sexual offenders.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Convicted-offender records are free to view online; non-convicted categories (reported/arraigned but not convicted) are released on demand rather than shown publicly.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public government register is passive and anonymous; the listed individual is not notified. Handle results carefully — these are sensitive criminal-status records; corroborate before acting and respect the presumption of innocence for non-convicted entries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by NAPTIP (National Agency for the Prohibition of Trafficking in Persons), a Nigerian federal agency; authoritative for the records it publishes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ng"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NAPTIP NSOD",
+      "Nigeria National Sexual Offenders Database"
+    ],
+    "tags": [
+      "offenders",
+      "background-check",
+      "nigeria"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nigeria-sexual-offenders-registers.md"
   },
   {
@@ -265983,47 +266064,51 @@
   },
   {
     "id": "residential",
-    "name": "Residential",
-    "description": "OSINT tool: Residential.",
-    "url": "http://www.voa.gov.uk/cti/InitS.asp?lcn=0",
+    "name": "VOA Council Tax Band Check",
+    "description": "Use when you have a UK `address` (postcode) and want to confirm a dwelling exists and read its council tax band as a rough property-value / occupancy signal — returns address-level band data.",
+    "url": "https://www.gov.uk/council-tax-bands",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a specific England/Wales dwelling exists at an address and reading its council tax band.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free UK government service (Valuation Office Agency); no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You query a government database of properties, not people. The lookup is anonymous, server-side, and never notifies any occupant. Standard clean-browser hygiene is enough; no sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Valuation Office Agency (part of HMRC); this is the authoritative source of council tax bands for England and Wales.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Valuation Office Agency council tax band search",
+      "VOA band check",
+      "voa.gov.uk council tax"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/residential.md"
   },
   {
@@ -269483,47 +269568,54 @@
   },
   {
     "id": "skilledtradesontario-ca",
-    "name": "skilledtradesontario.ca",
-    "description": "OSINT tool: skilledtradesontario.ca.",
+    "name": "Skilled Trades Ontario Public Register",
+    "description": "Use when you have a `name` and want to verify whether a person holds a valid Ontario skilled-trades certification/registration — returns certification status and trade details.",
     "url": "https://www.skilledtradesontario.ca/public-register/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a named person is a certified/registered tradesperson or apprentice in a compulsory trade in Ontario.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "document-id"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "document-id",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Ontario government register; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Public certification-register lookup; anonymous and server-side, with no notification to the tradesperson. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Skilled Trades Ontario, the provincial Crown agency responsible for trade certification.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Skilled Trades Ontario register",
+      "Ontario trades public register"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "canada",
+      "ontario"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/skilledtradesontario-ca.md"
   },
   {
@@ -271946,47 +272038,54 @@
   },
   {
     "id": "tfl-gov-uk-2",
-    "name": "tfl.gov.uk",
-    "description": "OSINT tool: tfl.gov.uk.",
-    "url": "https://tfl.gov.uk/forms/12389.aspx",
+    "name": "TfL Taxi & Private Hire Licence Checker",
+    "description": "Use when you have a London taxi/private-hire licence or badge number, a vehicle plate, or an operator name and want to confirm it is validly licensed — returns licence validity, licensee/operator details.",
+    "url": "https://tph.tfl.gov.uk/home/services/licence-checker",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a London taxi/PHV driver, vehicle, or operator holds a valid TfL licence.",
     "selectorsIn": [
-      "name",
-      "address",
+      "document-id",
+      "vehicle-plate",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Transport for London service; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Public licence-status lookup against TfL's register; anonymous and server-side, with no notification to the licensee. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Transport for London, the statutory licensing authority for London taxis and private hire.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TfL licence checker",
+      "London taxi private hire licence check"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk",
+      "transport"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/tfl-gov-uk-2.md"
   },
   {
@@ -273596,47 +273695,55 @@
   },
   {
     "id": "tutorhunt-com",
-    "name": "tutorhunt.com",
-    "description": "OSINT tool: tutorhunt.com.",
+    "name": "Tutor Hunt",
+    "description": "Use when you have a subject you suspect tutors in the UK (a `name` or a subject+`geolocation`) and want to find their tutor profile — returns tutor name, area, subjects, qualifications, and often a photo.",
     "url": "https://www.tutorhunt.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's private-tutor profile (subjects, area, qualifications, photo) on the UK Tutor Hunt marketplace.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "geolocation"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "image",
+      "geolocation",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and viewing tutor profiles is free; contacting a tutor through the platform requires a (free) account and messaging credits/registration.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public tutor profiles is passive. Contacting a tutor via the site is active and reveals your account to them — stop at the profile unless you intend to make contact under a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A commercial UK tutor marketplace; profile content is self-submitted by tutors (with DBS/ID checks claimed by the site) and should be treated as claims to corroborate.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tutorhunt.com",
+      "Tutor Hunt UK"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk",
+      "tutoring"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/tutorhunt-com.md"
   },
   {
@@ -379125,29 +379232,37 @@
   {
     "id": "mit-pgp-key-server",
     "name": "MIT PGP Key Server",
-    "description": "Looking up PGP public keys associated with a username or email address",
+    "description": "Use when you have an `email`, `name`, or key ID and want to find a subject's published PGP public key and the identities (UIDs/emails) attached to it — returns linked emails, names, and key metadata.",
     "url": "https://pgp.mit.edu/",
     "category": "username",
     "path": [
       "username",
       "specific-sites"
     ],
-    "bestFor": "Looking up PGP public keys associated with a username or email address",
-    "input": "Name, email address, or key ID",
-    "output": "PGP public key data, key fingerprints, associated UIDs/email addresses, and key metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Looking up a person's PGP public key by email/name and reading the other identities and emails bound to that key.",
+    "selectorsIn": [
+      "email",
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free public key server; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Public key server query; no authentication required and target is not notified of lookups.",
+    "opsecNote": "A public key-server query is passive — the key owner is not notified and the server logs only ordinary web requests. No sock puppet needed, though use a clean session as a matter of habit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running keyserver operated by MIT; the key data itself is user-submitted and unverified, but the server is a legitimate first-party host.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -379155,11 +379270,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "pgp.mit.edu",
+      "MIT public key server"
+    ],
+    "tags": [
+      "pgp",
+      "keyserver",
+      "email"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/specific-sites/mit-pgp-key-server.md"
   },
   {
@@ -379592,29 +379714,34 @@
   {
     "id": "names-directory",
     "name": "Names Directory",
-    "description": "Finding name combinations and frequency data for a given first or last name",
+    "description": "Use when you have a first `name` or surname and want to discover which forenames/surnames commonly pair with it (to generate candidate full names) — returns associated name combinations with frequency counts.",
     "url": "https://namesdir.com/",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Finding name combinations and frequency data for a given first or last name",
-    "input": "First name or surname",
-    "output": "Associated name combinations with frequency counts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Generating plausible full-name variants by finding forename↔surname pairings and their frequency.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public name database; no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "Queries a static public database; no contact with any target individual.",
+    "opsecNote": "Queries a static, pre-crawled public name database; no contact with any target and nothing is sent to anyone. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A long-running (since 2007) third-party aggregator of publicly-crawled name pairings; useful for generating leads, not an authoritative identity source.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -379622,11 +379749,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "namesdir.com",
+      "names directory"
+    ],
+    "tags": [
+      "name-variants",
+      "reference"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/names-directory.md"
   },
   {
