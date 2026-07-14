@@ -148135,35 +148135,49 @@
   {
     "id": "images-search-engine",
     "name": "Images Search Engine",
-    "description": "OSINT tool: Images Search Engine.",
+    "description": "Use when you have a `name`/`username` and want to search a curated, image-scoped Google Custom Search Engine for pictures of a subject — returns image, social-profile leads.",
     "url": "https://cse.google.com/cse?cx=281566d4e61dcc05d",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding photos of a subject via a pre-scoped, image-focused Google Custom Search Engine.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free in the browser. A hosted Google Custom Search Engine (CSE) configured for image results; no account or payment for the web widget.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries hit Google via the CSE, not the subject — passive. Google logs the query to your IP/account; use a sock-puppet browser and stay logged out to reduce attribution.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Google's engine, but the site scope is set by an unknown third party's `cx` config that silently rots as included sites change; coverage and relevance are unverifiable and drift over time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Google CSE image search"
+    ],
+    "tags": [
+      "image-search",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images-search-engine.md"
   },
   {
@@ -207464,35 +207478,51 @@
   {
     "id": "google-custom-search-2",
     "name": "Google Custom Search",
-    "description": "OSINT tool: Google Custom Search.",
+    "description": "Use when you have a `name`/`username`/`email` and want to search a curated slice of the web (a pre-built Custom Search Engine) rather than all of Google — returns social-profile, address, associate leads.",
     "url": "https://cse.google.com/cse?cx=017648920863780530960:lddgpbzqgoi",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running a name/handle query against a pre-scoped Google Custom Search Engine for people-search.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "address",
+      "associate"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to use in the browser. It is a hosted Google Custom Search Engine (CSE); Google's programmatic CSE API has a free daily quota then charges, but the web widget here is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries go to Google over the CSE, not to the subject — passive. Google logs the search against your IP/account like any Google query; use a sock-puppet browser and stay logged out for less attribution.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "The engine is Google's, but the *scope* (which sites it searches) is defined by an unknown third party via the `cx` config, and CSE configs silently rot as included sites change — so relevance and coverage are unverifiable and drift over time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Google CSE people search"
+    ],
+    "tags": [
+      "search-engine",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/google-custom-search-2.md"
   },
   {
@@ -207638,46 +207668,52 @@
   {
     "id": "hauziz",
     "name": "hauziz",
-    "description": "OSINT tool: hauziz.",
+    "description": "Use when you have an `address` (or a `name`) and want the residents/owner tied to a US property plus pivot links into paid brokers — returns name, address, phone, associate.",
     "url": "https://hauziz.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-address lookup of US property owners/residents and the links they share.",
     "selectorsIn": [
+      "address",
       "name"
     ],
     "selectorsOut": [
+      "name",
       "address",
       "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The Hauziz-hosted profile pages are free to read; the \"get full report\" links funnel you into paid brokers (BeenVerified, TruthFinder, Instant Checkmate) that charge for the detail.",
+    "opsec": "passive",
+    "opsecNote": "You are querying a public data-broker site, not contacting the target, so lookups are passive. Use a clean browser; the paid-broker links it hands off to will try to set tracking cookies and, if you sign up, tie the search to your identity. Do not click through to a paid report from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous data-broker aggregator with no cited sourcing; scraped/aggregated property records are frequently stale or mismatched. Corroborate every hit against a primary record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Hauziz reverse address"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "data-broker",
+      "reverse-address"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/hauziz.md"
   },
   {
@@ -209752,46 +209788,52 @@
   {
     "id": "mattiapasti-com",
     "name": "mattiapasti.com",
-    "description": "OSINT tool: mattiapasti.com.",
+    "description": "Use when you have a `name` (first + last) and want to sweep many social platforms for matching profiles at once — returns social-profile, username.",
     "url": "https://sfinder.mattiapasti.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot cross-platform social-profile search from a person's first and last name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
       "social-profile",
-      "associate"
+      "username"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier (\"Continua con il limite free\") runs searches with a per-session cap; a premium login raises the search limit. No payment needed to start.",
+    "opsec": "passive",
+    "opsecNote": "Server-side aggregator — queries run from the tool's infrastructure, not your browser, so the platforms see the tool's requests, not yours, and the subject is not notified. Still run from a sock-puppet session; the operator can log what you search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A single-developer OSINT project (Mattia Pasti) with no transparency on data sources or freshness; results are best-effort name matches that need manual confirmation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Social Finder",
+      "sfinder"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "People Search Sites",
+      "social-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/mattiapasti-com.md"
   },
   {
@@ -214550,46 +214592,50 @@
   {
     "id": "starving-farmer",
     "name": "Starving Farmer",
-    "description": "OSINT tool: Starving Farmer.",
+    "description": "Use when you have a `name` you believe belongs to a US farmer and want to place them in a state/county — returns name, address (county/state). Niche directory, browse by state.",
     "url": "https://www.starvingfarmer.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a named US farmer within a state/county via a browsable agricultural directory.",
     "selectorsIn": [
-      "name"
+      "name",
+      "geolocation"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse; a static directory site with no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Read-only browse of a static public directory; nothing is sent to the subject. No login, so no attribution beyond ordinary web-server logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A self-published \"Directory of American Farmers\" (2015 base data) with no cited sourcing or verification process; useful as a corroborating lead, not authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Directory of American Farmers"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "directory",
+      "agriculture"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/starving-farmer.md"
   },
   {
@@ -222656,42 +222702,53 @@
   {
     "id": "true-caller",
     "name": "True Caller",
-    "description": "Caller-ID enrichment and spam reputation checks",
+    "description": "Use when you have a `phone` number and want a crowd-sourced caller-ID name, carrier/location hints and spam reputation — returns name, address (region) and social-profile leads.",
     "url": "https://www.truecaller.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Caller-ID enrichment and spam reputation checks",
-    "input": "Phone number",
-    "output": "Caller profile signals, spam labels, and identity hints",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Attaching a crowd-sourced name and spam reputation to an unknown phone number.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Lookups are mediated by the platform; typical usage does not directly notify the target.",
+    "costNote": "Free tier requires creating/using a Truecaller account and gives limited lookups; unlimited/detailed search and the \"who searched me\" data sit behind Truecaller Premium.",
+    "opsec": "active",
+    "opsecNote": "Truecaller ties a lookup to YOUR account, and its \"who viewed my number\" feature can surface that a search happened — so a query is not fully anonymous. Use a dedicated sock-puppet Truecaller account/number, never your real one, and be aware that installing the app uploads your contact book by default (do NOT do this from a real device).",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large, established caller-ID service, but names are crowd-sourced from users' address books — often an outdated nickname, a business tag, or how one contact saved the number, not a verified legal name.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Truecaller"
+    ],
+    "tags": [
+      "phone",
+      "caller-id",
+      "reverse-phone"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/true-caller.md"
   },
   {
@@ -334414,29 +334471,30 @@
   {
     "id": "izuum",
     "name": "Izuum",
-    "description": "Zoom an Instagram profile picture by undering a username",
+    "description": "Use when you have an Instagram `username` and want to view/enlarge their (public) profile picture — returns image, social-profile. Now largely a bio/quote blog; treat the DP-viewer as degraded.",
     "url": "http://izuum.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Enlarging a public Instagram profile picture from a username (instadp-style viewer).",
     "selectorsIn": [
-      "name",
       "username"
     ],
     "selectorsOut": [
+      "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free, ad-supported. No account needed for the viewer when it works.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Third-party viewers render Instagram's own CDN image; the target is not notified. But you are trusting an unaffiliated ad-supported site with your query — use a sock-puppet browser and never enter your own IG credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Unaffiliated third party (explicitly \"not affiliated with Instagram\"). On last check the domain served mostly bio/quote/blog content and the profile-picture-viewer function could not be confirmed working — hence degraded.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -334445,14 +334503,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Izuum instadp",
+      "Instagram DP viewer"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "instagram"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/izuum.md"
   },
@@ -334930,37 +334992,53 @@
   {
     "id": "klear",
     "name": "Klear",
-    "description": "OSINT tool: Klear.",
+    "description": "Use when you have an `name`/`username` of a social-media creator and want audience/reach analytics and profile discovery across Instagram, TikTok and YouTube — returns social-profile, associate (audience/brand links).",
     "url": "http://klear.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Influencer/creator discovery and audience analytics across major social platforms.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Klear has been folded into Meltwater's Influencer Marketing suite; klear.com now redirects to meltwater.com. It is an enterprise, demo-and-quote product with no meaningful self-service free tier — expect a sales gate, not a public lookup box.",
+    "opsec": "passive",
+    "opsecNote": "Analytics are computed from public social data, so a lookup does not notify the target. But access requires a corporate account/demo, which ties every query to your organisation's identity — not suitable for covert single-subject work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Legitimate commercial analytics vendor (now Meltwater), but a marketing product, not an investigative one; figures are modelled estimates (\"True Reach\", audience demographics), not ground truth.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Meltwater Influencer Marketing",
+      "Klear influencer analytics"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "real-time-search-social-media-search-and-general-social-media-tools",
+      "influencer-analytics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/klear.md"
   },
   {
@@ -342378,37 +342456,50 @@
   {
     "id": "reddit-comment-lookup",
     "name": "Reddit Comment Lookup",
-    "description": "OSINT tool: Reddit Comment Lookup.",
+    "description": "Use when you have a Reddit `username` and want to search that account's comment history (by keyword or in bulk) to profile interests, location tells, and associates — returns social-profile, associate, geolocation leads.",
     "url": "https://randomtools.io/reddit-comment-search/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword-searching or bulk-reading a Reddit user's comment history to build a behavioural profile.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use, unlimited queries per the site; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reads Reddit's public comment data via the site, not through your own logged-in Reddit account, so the target sees nothing. Still use a sock-puppet browser; the tool operator can log which usernames you probe.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free third-party utility (randomtools.io) that queries recent/cached Reddit data, not live — so it can miss the newest comments and deleted content; corroborate against Reddit directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Reddit comment search",
+      "randomtools reddit search"
+    ],
     "tags": [
-      "reddit"
+      "reddit",
+      "social-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-comment-lookup.md"
   },
   {
@@ -348989,44 +349080,50 @@
   {
     "id": "storysaver-net",
     "name": "storysaver.net",
-    "description": "OSINT tool: storysaver.net.",
+    "description": "Use when you have a public Instagram post/story/reel `url` (from a target's `social-profile`) and want to download the media for offline capture/analysis — returns image, metadata.",
     "url": "https://www.storysaver.net/download-instagram-videos",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a public Instagram video/story/reel for evidence capture and EXIF/frame analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported, no login required. Funded by on-page ads.",
+    "opsec": "passive",
+    "opsecNote": "The site fetches Instagram's public CDN media server-side; the target is not notified and your IP isn't exposed to Instagram for the pull. But it is an unaffiliated ad-heavy site — never enter your own Instagram credentials, and use a sock-puppet browser as ad networks will track you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous third-party downloader with heavy ads; the download function works but the operator is unaccountable — treat downloaded media as the value, ignore any prompts to install or log in.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "StorySaver Instagram downloader"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/storysaver-net.md"
   },
   {
@@ -377846,43 +377943,52 @@
   {
     "id": "paypal-com",
     "name": "paypal.com",
-    "description": "OSINT tool: paypal.com.",
+    "description": "Use when you have an `email` (or phone) and want to confirm whether it is tied to a live PayPal account plus any masked recovery hints — returns account-existence and masked email/phone leads.",
     "url": "https://www.paypal.com/authflow/password-recovery/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether an email/phone belongs to a registered PayPal account (existence oracle).",
     "selectorsIn": [
-      "username",
-      "email"
+      "email",
+      "phone"
     ],
     "selectorsOut": [
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free; PayPal's own account-recovery flow, no account or payment needed to run the existence check.",
+    "opsec": "active",
+    "opsecNote": "This queries PayPal's real auth infrastructure about the target's address. PayPal may log the attempt and, if you advance the flow, can trigger a security email/2FA prompt to the account owner. Stop at the existence/masked-hint step — never request or enter a recovery code. Use a sock-puppet browser and IP.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by PayPal; this is the genuine first-party account-recovery endpoint, so the existence signal is authoritative (no third-party data-quality risk).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PayPal password recovery",
+      "PayPal account existence check"
+    ],
     "tags": [
       "passwordreset",
-      "Password Reset Details"
+      "Password Reset Details",
+      "account-existence"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/paypal-com.md"
   },
   {
