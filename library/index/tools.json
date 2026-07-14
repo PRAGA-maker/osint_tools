@@ -144619,30 +144619,30 @@
   {
     "id": "fotki",
     "name": "Fotki",
-    "description": "Website related to social networking with photo galleries, photo posting and sharing services",
+    "description": "Use when you have a `username` and want to find a long-running photo-sharing profile and its galleries — returns a `social-profile` and the subject's uploaded `image`s.",
     "url": "http://www.fotki.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering a subject's personal photo galleries on a legacy photo-community when the handle is reused there.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to view public galleries and browse; uploading and some premium features require a (free or paid) account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing public gallery URLs is passive and the subject isn't notified. Commenting/following ties activity to an account — use a sock puppet and browse read-only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established (since 1998) photo-sharing community; genuine user content, but an older/niche platform, so coverage is spotty and many accounts are dormant.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -144651,14 +144651,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "fotki.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "photo-sharing"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/fotki.md"
   },
@@ -145980,40 +145983,50 @@
   {
     "id": "gfpgan",
     "name": "GFPGAN",
-    "description": "Blind face restoration algorithm towards real-world face images. Restores blurry, blurred and damaged faces in photos.",
+    "description": "Use when you have a low-quality, blurry, or degraded `face`/`image` and want an AI-restored version to improve recognition and reverse-image matching — returns a cleaned-up face image.",
     "url": "https://replicate.com/tencentarc/gfpgan",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Restoring/upscaling a poor-quality face crop (CCTV, old photo, compressed avatar) before running facial-recognition or reverse-image search.",
     "selectorsIn": [
       "face",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Open-source (Tencent ARC, BSD-3). Free to self-host; the hosted Replicate demo charges tiny per-run compute fees after a small free allowance.",
+    "opsec": "passive",
+    "opsecNote": "If you self-host the model, processing is fully offline and private — best for sensitive imagery. Using the hosted Replicate version uploads the image to a third party, so avoid that for case-sensitive faces; run it locally instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Widely-used open-source model from Tencent ARC; reliable as image enhancement, but it *reconstructs* plausible detail and can invent features — treat outputs as leads, never as ground truth.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GFP-GAN",
+      "tencentarc/gfpgan"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Image editing tools"
+      "Image editing tools",
+      "face-restoration",
+      "ai"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/gfpgan.md"
   },
@@ -163027,45 +163040,53 @@
   },
   {
     "id": "ytdt-digitalmethods-net",
-    "name": "ytdt.digitalmethods.net",
-    "description": "OSINT tool: ytdt.digitalmethods.net.",
+    "name": "YouTube Data Tools (YTDT) — Video Comments",
+    "description": "Use when you have a YouTube video/channel (`social-profile`) and want its full commenter list and comment text — returns commenter `name`s/channels (`associate`s) and engagement as a downloadable dataset.",
     "url": "https://ytdt.digitalmethods.net/mod_video_comments.php",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-extracting every commenter and comment on a YouTube video to map an audience/community around a subject.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "associate",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free academic tool (University of Amsterdam / Digital Methods Initiative); no user API key required — it uses the project's quota.",
+    "opsec": "passive",
+    "opsecNote": "You query the tool, which pulls public YouTube data via the API; the video owner/commenters are not notified. Passive, but results are limited by the shared project API quota.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-established scholarly tool by Bernhard Rieder / Digital Methods Initiative; data is straight from the YouTube API. At last check the endpoint 302-redirected to a private IP (server misconfig) — verify it's up before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "YTDT",
+      "YouTube Data Tools",
+      "Digital Methods YouTube"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "comments",
+      "network-analysis"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ytdt-digitalmethods-net.md"
   },
   {
@@ -219348,45 +219369,51 @@
   },
   {
     "id": "giffgaff-com",
-    "name": "giffgaff.com",
-    "description": "OSINT tool: giffgaff.com.",
+    "name": "giffgaff",
+    "description": "Use when you need an anonymous UK mobile number for sock-puppet accounts (OpSec infrastructure), or a reference for phone-unlocking by network — a cheap PAYG SIM provider, not a number-to-identity lookup.",
     "url": "https://giffgaff.com/unlock",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [
+    "bestFor": "Sourcing a low-cost, low-friction UK PAYG SIM to receive SMS for investigative sock-puppet accounts.",
+    "selectorsIn": [],
+    "selectorsOut": [
       "phone"
     ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "SIM is free/cheap; you pay only for PAYG credit or a \"goodybag\" bundle. The /unlock page itself is free informational content.",
+    "opsec": "active",
+    "opsecNote": "This is OpSec *infrastructure*, not a lookup — a burner UK number for your sock puppets. Register and top up in a way not linked to your real identity (avoid your own payment card/address). Do NOT use it to contact targets.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "giffgaff is a legitimate UK MVNO on the O2 network. It does NOT reverse a number to a name/address — the stub's implied lookup capability is incorrect; its OSINT value is as a burner-SIM source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "giffgaff.com",
+      "giffgaff SIM"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "opsec",
+      "burner"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/giffgaff-com.md"
   },
   {
@@ -233970,45 +233997,51 @@
   },
   {
     "id": "corrections-com-inmate-locaton-links",
-    "name": "Corrections.com - Inmate Locaton Links",
-    "description": "OSINT tool: Corrections.com - Inmate Locaton Links.",
+    "name": "Corrections.com — Inmate Locator Links",
+    "description": "Use when you have a `name` and want to find the right US state/federal inmate-locator to search — a curated directory of DOC lookup links that route to records returning custody status and `document-id`.",
     "url": "https://www.corrections.com/links/20",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly finding the correct state Department of Corrections inmate-locator for a jurisdiction.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory of links; the linked official DOC locators are themselves free.",
+    "opsec": "passive",
+    "opsecNote": "Following links and searching public DOC locators is passive; inmates/subjects are not notified. Nothing is tied to you beyond normal web requests.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Corrections.com is a long-standing corrections-industry portal; this is a link directory, so trust each destination DOC site (authoritative) rather than the aggregator.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "corrections.com inmate locator links"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/corrections-com-inmate-locaton-links.md"
   },
   {
@@ -245531,14 +245564,14 @@
   },
   {
     "id": "grave-info-us",
-    "name": "Grave Info (US)",
-    "description": "OSINT tool: Grave Info (US).",
+    "name": "GraveInfo.com (Snake Hill / Potter's Field burials)",
+    "description": "Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index returning burial listing and approximate date.",
     "url": "http://www.graveinfo.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking the Snake Hill / Secaucus Potter's Field pauper burial lists for an unclaimed/indigent death.",
     "selectorsIn": [
       "name"
     ],
@@ -245546,29 +245579,36 @@
       "name",
       "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the published burial lists; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading a static historical burial list is fully passive; nothing is submitted about a living subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A narrow, volunteer/enthusiast burial-index site (est. 2002) focused on Snake Hill potter's field — genuine but very limited in scope; the name \"Grave Info (US)\" overstates its coverage.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Grave Info US",
+      "Snake Hill Potter's Field"
+    ],
     "tags": [
       "death",
-      "obituary"
+      "obituary",
+      "burial"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/grave-info-us.md"
   },
   {
@@ -278033,36 +278073,53 @@
   },
   {
     "id": "yearbooks",
-    "name": "Yearbooks",
-    "description": "OSINT tool: Yearbooks.",
+    "name": "E-Yearbook.com",
+    "description": "Use when you have a `name` and an approximate school/year and want a historical school/college/military yearbook photo and entry — returns a period `image`, confirmed `name` spelling, and school/year context.",
     "url": "https://www.e-yearbook.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Putting a face and school/year to a name from digitized yearbooks — useful for older subjects and long-cold cases.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "image",
+      "name"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Browsing/searching and low-res previews are free; full-resolution page access, printing, and downloads require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching is passive and does not touch the subject. Creating an account for full access ties activity to that login — use a sock-puppet account if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A large commercial yearbook-digitization archive; the scans are authentic primary sources, though coverage is uneven by school/year and OCR name-indexing can miss entries.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "e-yearbook",
+      "eyearbook"
+    ],
+    "tags": [
+      "yearbook",
+      "genealogy",
+      "school"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/yearbooks.md"
   },
   {
@@ -338570,45 +338627,52 @@
   },
   {
     "id": "medium-com-2",
-    "name": "medium.com",
-    "description": "OSINT tool: medium.com.",
+    "name": "Medium: Unconventional Guide to LinkedIn OSINT (article)",
+    "description": "Use when you have a `name`/`username` and want a methodology for investigating them on LinkedIn — a how-to article yielding techniques that produce `email`s and `social-profile`s while avoiding detection.",
     "url": "https://medium.com/ax1al/the-unconventional-guide-to-conducting-osint-on-linkedin-c9631b27935d",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Learning search-URL manipulation, tooling, and detection-avoidance for LinkedIn reconnaissance.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read on Medium (may hit Medium's metered paywall after a few articles/month; open in a private window if so).",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. The *techniques* it teaches include detectable actions — crucially, LinkedIn shows targets who viewed their profile via \"Search Appearances\"/\"Who viewed your profile.\" Apply its methods only from a sock-puppet LinkedIn account with private mode enabled.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An individual practitioner's Medium write-up; the techniques are legitimate and widely used, but it's a personal guide (accuracy/currency not editorially verified), and LinkedIn's UI changes over time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ax1al LinkedIn OSINT guide"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "methodology",
+      "reference"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/medium-com-2.md"
   },
   {
@@ -342375,14 +342439,14 @@
   },
   {
     "id": "parler-archives",
-    "name": "Parler – Archives",
-    "description": "Search Parler archives on WayBackMachine",
+    "name": "Parler – Wayback Archives",
+    "description": "Use when you have a `name`/`username` tied to the Parler social network and want their now-defunct posts — search the Wayback Machine's captures of parler.com for archived `social-profile` content.",
     "url": "https://web.archive.org/web/20210501000000*/parler.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering a subject's Parler profile/posts from Wayback captures after the platform's takedown/data loss.",
     "selectorsIn": [
       "name",
       "username"
@@ -342390,15 +342454,16 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free via the Internet Archive Wayback Machine; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse the Internet Archive's snapshots, not Parler itself; the subject is not notified and no live account is touched. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Wayback Machine is a reliable archive; the *content* is user-generated Parler posts (self-asserted), and coverage is partial — only what was crawled before/around the 2021 takedown survives here.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -342407,14 +342472,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Parler archive",
+      "parler.com Wayback"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "archive"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/parler-archives.md"
   },
