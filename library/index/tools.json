@@ -57615,13 +57615,13 @@
   {
     "id": "google-document-dorks-inteltechniques-method",
     "name": "Google Document Dorks (IntelTechniques method)",
-    "description": "A set of Google filetype/site dorks to surface documents, spreadsheets and cloud files mentioning a subject.",
+    "description": "Use when you have a `name` or `domain` and want to surface documents, spreadsheets, and cloud files naming the subject — returns document-id, metadata-exif, and name leads.",
     "url": "https://inteltechniques.com/tools/Documents.html",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "Filetype-targeted Google dorks (PDF/DOC/XLS/PPT, cloud buckets, SlideShare/Scribd) to find documents naming a person.",
+    "bestFor": "Filetype- and site-targeted Google dorks (PDF/DOC/XLS/PPT, cloud buckets, Scribd/SlideShare) to find documents mentioning a person or tied to a domain.",
     "selectorsIn": [
       "name",
       "domain"
@@ -57631,15 +57631,16 @@
       "metadata-exif",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool from IntelTechniques; it just builds Google/search queries — no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tool itself only assembles search-engine queries locally; the actual searching happens on Google/other engines from your browser. Passive, but the documents you then open may log your visit — open sensitive hits via cache/archive or a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Maintained by Michael Bazzell's IntelTechniques, a widely-respected OSINT resource; the dork templates are sound, though results depend entirely on what search engines currently index.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -57648,7 +57649,15 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-dorks",
+      "metagoofil",
+      "exiftool"
+    ],
+    "aliases": [
+      "IntelTechniques Documents tool",
+      "Bazzell document search"
+    ],
     "tags": [
       "dorks",
       "documents",
@@ -57656,7 +57665,7 @@
       "cloud-buckets"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/google-document-dorks-inteltechniques-method.md"
   },
@@ -179675,46 +179684,6 @@
     "_file": "library/tools/messaging/wechat-com-2.md"
   },
   {
-    "id": "wechat-dump",
-    "name": "wechat-dump",
-    "description": "Authorized mobile WeChat chat history extraction and preservation",
-    "url": "https://github.com/ppwwyyxx/wechat-dump",
-    "category": "messaging",
-    "path": [
-      "messaging",
-      "wechat-line"
-    ],
-    "bestFor": "Authorized mobile WeChat chat history extraction and preservation",
-    "input": "Rooted Android device data and WeChat app storage",
-    "output": "Extracted local WeChat message databases and media artifacts",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Operates on local device data and does not require contacting external targets.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/wechat-line/wechat-dump.md"
-  },
-  {
     "id": "wechat-text-backup",
     "name": "wechat-text-backup",
     "description": "Use when you have local access to a subject's Windows WeChat data and want to decrypt and export their chat history — returns readable message archives (contacts, timestamps, message text).",
@@ -221536,13 +221505,13 @@
   {
     "id": "phonumspy",
     "name": "PhoNumSpy",
-    "description": "Phone number OSINT tool returning location, country code, city, carrier plus web and social-network footprint search.",
+    "description": "Use when you have a `phone` number and want carrier/location enrichment plus a web/social footprint sweep — returns geolocation, social-profile, and name leads.",
     "url": "https://github.com/CyberNDR/PhoNumSpy",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Enriching a phone number with carrier/location data and finding linked web/social footprint",
+    "bestFor": "Enriching a phone number with carrier/region/line-type data and hunting its linked web and social-media footprint.",
     "selectorsIn": [
       "phone"
     ],
@@ -221551,15 +221520,16 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source Python CLI; no fees or API key required for the core lookup.",
     "opsec": "active",
-    "opsecNote": "",
+    "opsecNote": "Beyond the offline carrier/region parse, it runs web and social searches that touch third-party sites — that traffic originates from your host. Run from a sock-puppet context; the number owner is not contacted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "~46 stars; small community tool, verify results.",
+    "trustNote": "Small community tool (~46 stars); the carrier/region data comes from the libphonenumber-style metadata and is reliable, but the web/social \"footprint\" results are heuristic and need verification.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -221568,14 +221538,21 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "phoneinfoga",
+      "truecaller"
+    ],
+    "aliases": [
+      "PhoNumSpy",
+      "Phone Number Spy"
+    ],
     "tags": [
       "phone-osint",
       "carrier-lookup",
       "social-footprint"
     ],
     "source": "gh-topic-footprinting",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/phonumspy.md"
   },
@@ -243871,47 +243848,58 @@
   },
   {
     "id": "gov-im-3",
-    "name": "gov.im",
-    "description": "OSINT tool: gov.im.",
+    "name": "Isle of Man Births, Deaths & Marriages",
+    "description": "Use when you have a `name` linked to the Isle of Man and want official vital records (birth/death/marriage) — returns document-id (certificate), name, and dob leads.",
     "url": "https://services.gov.im/births-deaths-marriages/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Ordering official Isle of Man birth, death, and marriage certificates to confirm identity, relationships, or a death.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "document-id",
+      "name",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching the index is free; ordering actual certificates carries a per-certificate fee paid to the Isle of Man General Registry.",
+    "opsec": "passive",
+    "opsecNote": "Searching/ordering vital records does not notify the subject or their family. Ordering a certificate requires payment and contact details logged by the registry; use investigative-context details where permitted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Isle of Man Government (General Registry) service; authoritative for IoM civil registration records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "im"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gro-gov-uk",
+      "freebmd"
+    ],
+    "aliases": [
+      "Isle of Man General Registry",
+      "IoM BMD"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "vital-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-im-3.md"
   },
   {
@@ -247086,45 +247074,58 @@
   },
   {
     "id": "illinois",
-    "name": "Illinois",
-    "description": "OSINT tool: Illinois.",
+    "name": "Illinois DOC Inmate Search",
+    "description": "Use when you have a `name` (or IDOC number) and want to locate someone in Illinois state prison custody — returns custody status/facility plus dob, physical-description, and image (photo).",
     "url": "https://www2.illinois.gov/idoc/offender/pages/inmatesearch.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating and confirming a person in Illinois Department of Corrections custody by name or IDOC number.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "physical-description",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public record search operated by the Illinois Department of Corrections; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A read-only query against a government public-records site; the subject is not notified and no login is required. Ordinary passive browsing hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Illinois Department of Corrections individual-in-custody database; authoritative for IL state-prison custody.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "georgia",
+      "vinelink",
+      "bop-inmate-locator"
+    ],
+    "aliases": [
+      "Illinois Department of Corrections inmate search",
+      "IDOC offender search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/illinois.md"
   },
   {
@@ -336059,45 +336060,55 @@
   },
   {
     "id": "khoji-github-com",
-    "name": "khoji (github.com)",
-    "description": "OSINT tool: khoji (github.com).",
+    "name": "Khoji",
+    "description": "Use when you have a Snapchat `username` and want to download that user's full Bitmoji avatar history — returns image artifacts revealing appearance and self-presentation over time.",
     "url": "https://github.com/asharbinkhalil/khoji",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating and downloading the historical Bitmoji avatars of a Snapchat username to study appearance and self-presentation changes.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source Python tool; a free hosted web version exists at khoji.onrender.com (slow on free hosting).",
+    "opsec": "active",
+    "opsecNote": "The tool queries Snapchat's public Bitmoji endpoints for the target username — that traffic originates from your IP/host. It does not friend or message the user, but you are touching Snapchat's infrastructure; run from a sock-puppet context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Small community OSINT tool (~48 stars) implementing a public technique credited to hatless1der; verify output and expect breakage if Snapchat changes its Bitmoji endpoints.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "the-bitmoji-avatar-history-enumerator-2",
+      "reveye-reverse-image-search"
+    ],
+    "aliases": [
+      "khoji",
+      "Snapchat Bitmoji history"
+    ],
     "tags": [
       "snapchat",
-      "Snapchat"
+      "bitmoji",
+      "open-source",
+      "cli"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/khoji-github-com.md"
   },
   {
@@ -337411,41 +337422,57 @@
   {
     "id": "masto",
     "name": "Masto",
-    "description": "Mastodon user profile investigation and account analysis",
+    "description": "Use when you have a Mastodon handle (`username`@instance) and want to profile the account — returns social-profile, associate (followers/following), and metadata-exif (account creation, activity).",
     "url": "https://github.com/C3n7ral051nt4g3ncy/Masto",
     "category": "social-networks",
     "path": [
       "social-networks",
       "fediverse-mastodon"
     ],
-    "bestFor": "Mastodon user profile investigation and account analysis",
-    "input": "Mastodon username and instance (e.g., user@mastodon.social)",
-    "output": "Profile details, recent toots, follower/following lists, account creation date, and metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enumerating a Mastodon account's profile, posts, follower/following graph, and account metadata from the command line.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source Python CLI; uses public Mastodon instance APIs, no paid tier.",
     "opsec": "active",
-    "opsecNote": "Makes API requests directly to the target Mastodon instance; instance admins can see request logs.",
+    "opsecNote": "Queries the target's Mastodon instance API directly, so that instance's admins can see your requests in logs. Run from a sock-puppet IP/host; Mastodon instances are small and admins often notice unusual query patterns.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source OSINT tool by a known fediverse-OSINT author (C3n7ral051nt4g3ncy); reads public instance data, so accuracy tracks whatever the instance exposes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "mastodon-github-com",
+      "osrframework-2"
+    ],
+    "aliases": [
+      "Masto",
+      "Mastodon OSINT"
+    ],
+    "tags": [
+      "mastodon",
+      "fediverse",
+      "open-source",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fediverse-mastodon/masto.md"
   },
   {
