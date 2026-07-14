@@ -24,7 +24,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Operated by the Bar Council of England & Wales; entries are self-listed by Public Access-qualified barristers, so it is authoritative for the fact of qualification but marketing-style for the profile text.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - uk
 auth: none

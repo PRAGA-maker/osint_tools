@@ -149302,30 +149302,31 @@
   {
     "id": "itemfix",
     "name": "ItemFix",
-    "description": "Social Video Factory",
+    "description": "Use when you have a keyword, event or `username` and want user-uploaded incident/dashcam/CCTV video — returns hashtag-searchable clips and the accounts that posted them.",
     "url": "https://www.itemfix.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding user-uploaded incident, crash, CCTV and \"caught on camera\" videos and the accounts behind them.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse, search and upload; ad-supported. An account is only needed to upload/interact, not to view or search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and hashtag search are passive and anonymous. It hosts a lot of graphic/incident content (a spiritual successor to LiveLeak), so use a clean/sock-puppet browser and be prepared for disturbing material.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A real, active video-sharing platform, but with casual user tagging and no verification — treat uploads as unverified user content and confirm any claimed location/time independently.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -149334,14 +149335,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "youtube-data-tools",
+      "yandex-images"
+    ],
+    "aliases": [
+      "ItemFix",
+      "Social Video Factory"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "video"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/itemfix.md"
   },
@@ -172968,7 +172977,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
     "trustNote": "Anonymous third-party Telegram bot (~25k monthly users, Russian-language) with no transparency on operator or data handling. Fine for pulling public media; treat the bot itself as untrusted.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
@@ -212240,46 +212249,57 @@
   },
   {
     "id": "person-lookup",
-    "name": "Person Lookup",
-    "description": "find individuals, phonenumbers, and adresses",
+    "name": "Person Lookup (South Africa)",
+    "description": "Use when you have a `name` or `phone` in South Africa and want the matching landline and address — returns telephone/address records and property data for ~5.5M South Africans.",
     "url": "https://personlookup.co.za/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "South African name-to-phone/address and reverse-phone lookups.",
     "selectorsIn": [
       "name",
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "social-profile",
-      "phone"
+      "address",
+      "phone",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic search/preview appears free; fuller contact and property details are typically gated behind payment, as with most people-search databases.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive and not shown to the subject, but you are querying a commercial data broker that logs lookups. Use a sock-puppet. Data is regional (South Africa) and drawn from telephone/address and property records.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Listed in the Bellingcat toolkit (South Africa). A commercial landline/address database compiled from public and directory sources; can be stale or incomplete (landline-centric), so corroborate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "za"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "truecaller",
+      "whitepages"
+    ],
+    "aliases": [
+      "personlookup.co.za",
+      "Person Lookup ZA"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "people"
+      "people",
+      "south-africa"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/person-lookup.md"
   },
   {
@@ -218174,42 +218194,57 @@
   {
     "id": "fone-finder",
     "name": "Fone Finder",
-    "description": "Historical reference only (defunct per project guidance)",
+    "description": "Historical reference only — the classic NPA-NXX carrier/location lookup is defunct; the domain now funnels to affiliate people-search, so route to a live phone tool instead.",
     "url": "https://www.fonefinder.net/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Historical reference only (defunct per project guidance)",
-    "input": "Phone number",
-    "output": "Previously provided owner/location lookup details",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Historical reference only — legacy phone-prefix-to-carrier/location lookup, no longer reliable.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
     "status": "down",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "Marked defunct per CEO guidance; do not rely on this entry operationally.",
+    "costNote": "The original free NPA-NXX lookup is effectively dead; the current page routes to paid affiliate people-search offers rather than serving authoritative prefix data.",
+    "opsec": "passive",
+    "opsecNote": "Don't rely on it operationally (flagged defunct in this library). If you do land on the page, treat the \"search anybody\" boxes as affiliate lead-gen — anything you enter goes to a commercial people-search partner, so use a sock-puppet and don't submit sensitive numbers.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Once a well-known NPA-NXX (area code + exchange) carrier/location reference, but number portability gutted its accuracy and the site has degraded into affiliate people-search; not a dependable source today.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
     "deprecated": true,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "numlookup",
+      "twilio-lookup",
+      "phoneinfoga"
+    ],
+    "aliases": [
+      "FoneFinder",
+      "fonefinder.net"
+    ],
+    "tags": [
+      "phone",
+      "carrier-lookup",
+      "defunct"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/fone-finder.md"
   },
   {
@@ -235840,7 +235875,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
     "trustNote": "Operated by the Bar Council of England & Wales; entries are self-listed by Public Access-qualified barristers, so it is authoritative for the fact of qualification but marketing-style for the profile text.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "uk"
     ],
@@ -237006,46 +237041,58 @@
   {
     "id": "electricalcompetentperson-co-uk",
     "name": "electricalcompetentperson.co.uk",
-    "description": "OSINT tool: electricalcompetentperson.co.uk.",
+    "description": "Use when you have an electrician's or firm `name` (or a UK postcode) and want to confirm government-registered status — returns the registered competent-person listing with company and area.",
     "url": "https://electricalcompetentperson.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that a UK (England & Wales) electrician/firm is on the government-approved Competent Person register.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search facility; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Passive — a public register search that only exposes business/trade details and is not attributed to the subject. Low leakage; it returns company-level info, not private home data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Registered Competent Person Electrical single register, backed by UK Government and the scheme operators (NICEIC, NAPIT, Blue Flame); authoritative for registration status in England & Wales.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gas-safe-register",
+      "companies-house"
+    ],
+    "aliases": [
+      "Registered Competent Person Electrical",
+      "Competent Person Electrical Register"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "electricians",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/electricalcompetentperson-co-uk.md"
   },
   {
@@ -252414,13 +252461,13 @@
   {
     "id": "marriage-records-search-directory",
     "name": "Marriage Records Search Directory",
-    "description": "OSINT tool: Marriage Records Search Directory.",
+    "description": "Use when you have a `name` and want to find US marriage records — returns links to state/county marriage-record search resources that confirm spouses and dates.",
     "url": "http://publicrecords.onlinesearches.com/marriage-records.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Routing to the correct US state/county marriage-record search to confirm a spouse and marriage date.",
     "selectorsIn": [
       "name"
     ],
@@ -252429,29 +252476,40 @@
       "dob",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The directory of links is free; most linked state/county vital-records searches are free indexes, though ordering a certified certificate usually costs a fee.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory and the linked public indexes is passive and not attributed to the subject. Watch for Intelius-style paid-report upsells woven into onlinesearches pages — those route to a commercial data broker.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A curated link directory (onlinesearches.com, Intelius-powered) pointing to authoritative state/county vital-records sources; trust the destination registries, not the aggregator's upsells.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "jail-and-inmate-records-search-directory",
+      "familysearch"
+    ],
+    "aliases": [
+      "OnlineSearches marriage records",
+      "marriage records directory"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "vital-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/marriage-records-search-directory.md"
   },
   {
@@ -253534,47 +253592,60 @@
   },
   {
     "id": "moci-gov-kw",
-    "name": "moci.gov.kw",
-    "description": "OSINT tool: moci.gov.kw.",
+    "name": "moci.gov.kw (Kuwait Commercial Registry)",
+    "description": "Use when you have a Kuwaiti company or trade `name` and want its official commercial-registration details — returns registry data tying businesses to owners/agents.",
     "url": "https://www.moci.gov.kw/en/e-service/electronic-services-managing-commercial-registry/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a Kuwaiti company's commercial registration and linking it to owners/agents.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Government e-service. Basic access is free, but the commercial-registry inquiry portal (ereg.moci.gov.kw) requires an account login; some filings/extracts may carry a fee.",
+    "opsec": "active",
+    "opsecNote": "You query a Kuwaiti government system and must log in to reach the registry inquiry, so activity is authenticated and logged under Kuwaiti jurisdiction. Use a research account, not a personal one, and be aware the interface is primarily Arabic.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Kuwait Ministry of Commerce and Industry portal — authoritative for Kuwaiti commercial registrations; the constraint is access (login, Arabic UI), not data reliability.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "kw"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "opencorporates-com",
+      "blockint-nl"
+    ],
+    "aliases": [
+      "Kuwait MOCI",
+      "Kuwait commercial registry"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry",
+      "kuwait"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/moci-gov-kw.md"
   },
   {
@@ -264986,7 +265057,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
     "trustNote": "Operated by RIAS, the professional body for architects in Scotland; the \"Chartered Practice\" designation is authoritative, though individual profile text is self-supplied.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "uk"
     ],
@@ -271021,46 +271092,56 @@
   {
     "id": "the-ryerson-index-australia",
     "name": "The Ryerson Index (Australia)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name` and want to confirm an Australian death or find the obituary/funeral trail — returns death-notice index entries pointing to the original newspaper source.",
     "url": "http://www.ryersonindex.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a death and locating Australian death/funeral/probate notices by name.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "dob",
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and always will be, per the operators; run by volunteers. No account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Fully passive — you query a volunteer-run index, not a live government system, and nothing is attributed to the subject. Safe to use without a sock-puppet, though good browser hygiene never hurts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-established, well-regarded volunteer genealogy index (10M+ entries from 500+ Australian sources); it is an index/finding aid, not a primary source, so confirm details in the original notice it points to.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "findagrave",
+      "births-deaths-marriages-au"
+    ],
+    "aliases": [
+      "Ryerson Index",
+      "Australian death notices index"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy",
+      "obituaries"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/the-ryerson-index-australia.md"
   },
@@ -323336,7 +323417,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
     "trustNote": "One of many interchangeable third-party SEO utilities (SEOToolStation and clones). They break frequently as Facebook changes markup, and there is no guarantee of accuracy or data handling — verify each ID.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
@@ -329375,7 +329456,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
     "trustNote": "This is Google's own search with a `site:` operator — the mechanism is authoritative; the caveat is only that Google's index of Rumble is incomplete and can lag.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
@@ -339421,7 +339502,7 @@
     "bestInteractionPattern": "browser-extension",
     "trust": "community",
     "trustNote": "Small personal utility repo (eenblam) of scripts/bookmarklets for QuizTime-style OSINT; inspect the short source before installing. Not a maintained product.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
@@ -350214,7 +350295,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
     "trustNote": "One of many interchangeable third-party Threads/Instagram media downloaders; no transparency on operator or data handling. Fine for grabbing public media, but treat the site itself as untrusted.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
@@ -375593,7 +375674,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "community",
     "trustNote": "Long-running KnowEm-operated brand-protection tool (formerly the original CheckUserNames). Built for brand/handle availability, so a \"taken\" mark means the handle exists — not that it belongs to your subject.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
@@ -379155,41 +379236,56 @@
   {
     "id": "tinder-usernames",
     "name": "Tinder Usernames",
-    "description": "Confirming existence of a Tinder profile and viewing public profile details",
-    "url": "https://www.gotinder.com/@%3Cusername%3E",
+    "description": "Use when you have a Tinder `username` and want to confirm the profile exists and see its public web card — returns name, photos and basic info when the user enabled web sharing.",
+    "url": "https://www.gotinder.com/@username",
     "category": "username",
     "path": [
       "username",
       "specific-sites"
     ],
-    "bestFor": "Confirming existence of a Tinder profile and viewing public profile details",
-    "input": "Tinder username (appended to URL after @)",
-    "output": "Public profile page with name, photo, and basic info if the user has web sharing enabled",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming a Tinder profile exists and viewing its shared public web card by username.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free — just load a public URL. No account or app needed to view a shared web profile.",
     "opsec": "passive",
-    "opsecNote": "Simple HTTP GET to a public page; target is not notified of profile views via the web URL.",
+    "opsecNote": "This is a plain HTTP GET to a public share URL; unlike swiping in the app, it does not notify the target or appear in their likes. It is not \"matching\" — you're only viewing a page the user chose to make shareable. Use a clean/sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The URL resolves against Tinder's own web infrastructure, so a returned profile is first-party and authentic; only users who enabled a public web username are reachable this way.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "tinder-com",
+      "social-searcher"
+    ],
+    "aliases": [
+      "gotinder.com username",
+      "Tinder web profile"
+    ],
+    "tags": [
+      "tinder",
+      "dating",
+      "username"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/specific-sites/tinder-usernames.md"
   },
   {

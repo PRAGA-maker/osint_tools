@@ -24,7 +24,7 @@ humanInLoopReason:
 bestInteractionPattern: web-manual
 trust: unverified
 trustNote: Anonymous third-party Telegram bot (~25k monthly users, Russian-language) with no transparency on operator or data handling. Fine for pulling public media; treat the bot itself as untrusted.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - global
 auth: account

@@ -23,7 +23,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: trusted
 trustNote: This is Google's own search with a `site:` operator — the mechanism is authoritative; the caveat is only that Google's index of Rumble is incomplete and can lag.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - global
 auth: none

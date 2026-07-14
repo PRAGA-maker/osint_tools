@@ -23,7 +23,7 @@ humanInLoopReason: []
 bestInteractionPattern: browser-extension
 trust: community
 trustNote: Small personal utility repo (eenblam) of scripts/bookmarklets for QuizTime-style OSINT; inspect the short source before installing. Not a maintained product.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - global
 auth: none

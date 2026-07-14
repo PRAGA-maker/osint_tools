@@ -22,7 +22,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: unverified
 trustNote: One of many interchangeable third-party SEO utilities (SEOToolStation and clones). They break frequently as Facebook changes markup, and there is no guarantee of accuracy or data handling — verify each ID.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - global
 auth: none

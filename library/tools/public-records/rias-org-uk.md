@@ -25,7 +25,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Operated by RIAS, the professional body for architects in Scotland; the "Chartered Practice" designation is authoritative, though individual profile text is self-supplied.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - uk
 auth: none

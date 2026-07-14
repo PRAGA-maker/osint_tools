@@ -22,7 +22,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: unverified
 trustNote: One of many interchangeable third-party Threads/Instagram media downloaders; no transparency on operator or data handling. Fine for grabbing public media, but treat the site itself as untrusted.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - global
 auth: none

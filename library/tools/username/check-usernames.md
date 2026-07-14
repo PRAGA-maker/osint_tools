@@ -21,7 +21,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: community
 trustNote: Long-running KnowEm-operated brand-protection tool (formerly the original CheckUserNames). Built for brand/handle availability, so a "taken" mark means the handle exists — not that it belongs to your subject.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - global
 auth: none
