@@ -211573,36 +211573,62 @@
   },
   {
     "id": "osrframework-2",
-    "name": "osrframework",
-    "description": "OSINT tool: osrframework.",
+    "name": "OSRFramework",
+    "description": "Use when you have a `username`, `email`, `phone`, or full `name` and want to enumerate accounts and profiles across many platforms from the command line — returns social-profile and email leads.",
     "url": "https://pypi.org/project/osrframework/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Command-line enumeration of a username/email/phone across social networks, forums and services via the i3visio module suite (usufy, mailfy, phonefy, searchfy).",
+    "selectorsIn": [
+      "username",
+      "email",
+      "phone",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open-source (AGPLv3). No fees; some modules need free API keys for certain data sources.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Modules like usufy visit each candidate platform to confirm a profile — that traffic originates from your IP. Run from a sock-puppet context/VPN; you never message the target, but you do touch many sites in quick succession.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "python-lib",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known open-source suite by i3visio analysts, but effectively unmaintained since 2021 (last PyPI release Nov 2021); several modules break as target sites change.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "sherlock",
+      "maigret",
+      "whatsmyname"
+    ],
+    "aliases": [
+      "osrframework",
+      "i3visio",
+      "usufy",
+      "mailfy"
+    ],
+    "tags": [
+      "username-enumeration",
+      "open-source",
+      "cli",
+      "python"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/osrframework-2.md"
   },
   {
@@ -226818,14 +226844,14 @@
   },
   {
     "id": "arrest-warrants",
-    "name": "Arrest Warrants",
-    "description": "OSINT tool: Arrest Warrants.",
+    "name": "BlackBookOnline — Arrest Warrants",
+    "description": "Use when you have a `name` and want to find an outstanding US arrest warrant — a directory routing you to free state/county warrant searches, returning name, dob, and document-id (warrant/case) leads.",
     "url": "https://www.blackbookonline.info/usa-arrest-warrants.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the right free official arrest-warrant search for a US jurisdiction, as a gateway to checking whether a person has an active warrant.",
     "selectorsIn": [
       "name"
     ],
@@ -226834,29 +226860,40 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public-records directory; the destination county/state warrant searches it links to are also free.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive. The linked jurisdiction searches are official public-records sites; querying them does not notify the subject, but use normal sock-puppet browsing hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "BlackBookOnline is a long-running, reputable public-records portal (run by PI Robert Scott / The Open Data People); it curates links but the underlying data quality belongs to each jurisdiction.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "blackbookonline",
+      "vinelink"
+    ],
+    "aliases": [
+      "Black Book Online arrest warrants",
+      "USA arrest warrant search directory"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "warrants"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/arrest-warrants.md"
   },
   {
@@ -236657,47 +236694,57 @@
   },
   {
     "id": "disputesregister-org",
-    "name": "disputesregister.org",
-    "description": "OSINT tool: disputesregister.org.",
+    "name": "DisputesRegister.org",
+    "description": "Use when you have an `employer-org` or `name` and want a global directory of official company registries plus a searchable register of public business disputes — returns employer-org, address, and associate leads.",
     "url": "https://www.disputesregister.org/advice/company-registries-by-country",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the right official company registry for any country, and checking whether a business/person has a publicly filed dispute.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the registry directory and search filed disputes; filing a dispute is a separate (registrant) action, not needed for research.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the country registry directory and searching filed disputes is passive and does not notify anyone. No account needed to read.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A public complaint-filing platform with a curated worldwide company-registry directory; the directory links are useful, but dispute entries are user-submitted and unvetted — treat them as claims, not proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "opencorporates",
+      "onlinesearch-mns-mu"
+    ],
+    "aliases": [
+      "Disputes Register",
+      "Business Disputes Register"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "registry-directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/disputesregister-org.md"
   },
   {
@@ -238581,47 +238628,61 @@
   },
   {
     "id": "explee-com",
-    "name": "explee.com",
-    "description": "OSINT tool: explee.com.",
+    "name": "Explee",
+    "description": "Use when you have a `name` or `employer-org` and want B2B contact enrichment from a large people/company database — returns email, employer-org, and address (business) leads.",
     "url": "https://explee.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Enriching a person or company against a large B2B prospecting database to surface work email, employer, and business location.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "email",
       "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Pay-as-you-go, not free — new accounts get ~$30 in credits; enrichment is billed per record (e.g. ~$0.03 per email). No open free search.",
+    "opsec": "passive",
+    "opsecNote": "Querying a B2B data provider does not notify the subject, but you create an account and spend credits, which the vendor logs. Use investigative-context account/payment details, not personal ones.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial B2B sales-intelligence/prospecting platform, not an OSINT-first vendor; its 500M+ people / 100M+ company data is aggregated marketing data with variable accuracy.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "rocketreach",
+      "hunter-io",
+      "apollo-io"
+    ],
+    "aliases": [
+      "Explee AI",
+      "Explee B2B database"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "b2b-data",
+      "contact-enrichment"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/explee-com.md"
   },
   {
@@ -259759,47 +259820,62 @@
   },
   {
     "id": "onlinesearch-mns-mu",
-    "name": "onlinesearch.mns.mu",
-    "description": "OSINT tool: onlinesearch.mns.mu.",
+    "name": "Mauritius CBRD Online Search",
+    "description": "Use when you have a Mauritius company (`employer-org`) or a director's `name` and want official corporate registry data — returns directors/shareholders (name, associate) and the registered address.",
     "url": "https://onlinesearch.mns.mu/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up Mauritius companies and their directors/shareholders in the official Corporate and Business Registration Department (CBRD) register.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic name/company existence search is free; full company file extracts (directors, shareholders, filings) are paid per-document via Mauritius Network Services (MNS).",
+    "opsec": "passive",
+    "opsecNote": "A registry lookup does not notify the company or its officers. Ordering paid extracts requires an MNS account and payment, which are logged; use investigative-context details.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official online search for Mauritius's Corporate and Business Registration Department, operated by Mauritius Network Services (the government-appointed e-services operator); authoritative for Mauritius entities.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "mu"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "opencorporates",
+      "disputesregister-org"
+    ],
+    "aliases": [
+      "CBRD Online Search",
+      "Mauritius Network Services company search",
+      "companies.govmu"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-records",
+      "mauritius"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/onlinesearch-mns-mu.md"
   },
   {
@@ -299008,24 +299084,25 @@
   {
     "id": "metaosint-intelscott",
     "name": "MetaOSINT (IntelScott)",
-    "description": "Searchable, sortable table of top OSINT tools and resources.",
+    "description": "Use when you have a selector type (name, username, email, phone, image) and need to pick the right tool — a searchable, sortable, data-ranked table of top OSINT tools and resources.",
     "url": "https://metaosint.github.io/table",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Filtering a ranked table of tools by category and type",
+    "bestFor": "Systematically choosing the best-ranked OSINT tools for a given selector and task by filtering a curated table.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free static site; no account, no payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A read-only reference table hosted on GitHub Pages; browsing it involves no target contact and leaks nothing about your case.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Maintained by IntelScott; data-driven ranking of tools.",
+    "trustNote": "Maintained by IntelScott; the ranking is data-driven (tools scored by how many curated OSINT source lists recommend them), making it a reliable meta-index rather than a personal opinion list.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -299034,19 +299111,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "osint-framework",
+      "start-me"
+    ],
     "aliases": [
-      "MetaOSINT table"
+      "MetaOSINT table",
+      "metaosint.github.io"
     ],
     "tags": [
       "tool-collection",
       "searchable-table",
-      "username",
-      "email",
-      "phone"
+      "meta-resource"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/metaosint-intelscott.md"
   },
   {
@@ -336090,37 +336170,59 @@
   {
     "id": "kribrum",
     "name": "Kribrum",
-    "description": "OSINT tool: Kribrum.",
+    "description": "Use when you have a `name` or `username` and want to monitor and analyze mentions across Russian-language social media, forums, and Telegram — returns social-profile, associate, and geolocation signals.",
     "url": "https://kribrum.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Monitoring and analyzing a person's or topic's footprint across Russian-language social media, blogs, forums, YouTube, and Telegram at scale.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Enterprise social-listening platform — access is via paid subscription / demo, not an open free search. Expect a sales-gated onboarding.",
+    "opsec": "passive",
+    "opsecNote": "Monitoring indexed public posts is passive and does not contact the subject. Access requires a Kribrum account (a Russian vendor); use investigative-context credentials and be mindful of the jurisdiction when handling data.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established Russian social-media monitoring firm (Kribrum / Ashmanov & Partners) with a dedicated analytics center; reliable within its Russian-language focus, but a commercial closed platform.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "vk-search",
+      "brand24"
+    ],
+    "aliases": [
+      "Крибрум",
+      "Kribrum Pro"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "social-monitoring",
+      "russia",
+      "vk",
+      "telegram"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/kribrum.md"
   },
   {
@@ -336335,47 +336437,58 @@
   },
   {
     "id": "line-play",
-    "name": "Line Play",
-    "description": "An app where users create their own avatar, chat with friends, play games, exchange diaries, and live a virtual life through their avatar.",
+    "name": "LINE Play",
+    "description": "Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — returns social-profile and image (avatar) leads.",
     "url": "https://play.game.line.me",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a subject has a LINE Play avatar profile and pulling their avatar, nickname, and social connections.",
     "selectorsIn": [
-      "name",
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free consumer app; no fee to view profiles, though full interaction needs the LINE Play app and a LINE account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "Viewing a public LINE Play profile is passive, but following/messaging or adding the user is active and visible. Use a sock-puppet LINE account and stop at read-only viewing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An official LINE consumer product, but its OSINT use (finding and reading a target's avatar profile) is community practice, not a documented investigative feature; profile matching by nickname is unreliable.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "line-app",
+      "linecorp-com"
+    ],
+    "aliases": [
+      "LinePlay",
+      "LINE Play avatar"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
+      "line",
+      "avatar",
       "social-media",
-      "add-ons-apps-extensions"
+      "asia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/line-play.md"
   },
@@ -356805,40 +356918,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/twitter-photo-search.md"
-  },
-  {
-    "id": "twitter-profiles-directory",
-    "name": "Twitter / Profiles Directory",
-    "description": "OSINT tool: Twitter / Profiles Directory.",
-    "url": "https://twitter.com/i/directory/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitter-profiles-directory.md"
   },
   {
     "id": "twitter-scraper",
