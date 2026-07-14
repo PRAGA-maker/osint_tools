@@ -11084,13 +11084,13 @@
   {
     "id": "osinttools-linayorda",
     "name": "OSINTtools (LinaYorda)",
-    "description": "Social media OSINT tools curated for Trace Labs Search Party CTF (missing persons).",
+    "description": "Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-media and locate tools for turning a `name`/`username`/`image` into a `social-profile` or `address`.",
     "url": "https://github.com/LinaYorda/OSINTtools",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Missing-persons CTF (Trace Labs) tooling and workflow",
+    "bestFor": "A missing-persons-focused (Trace Labs Search Party CTF) curation of social-media OSINT tools and workflow.",
     "selectorsIn": [
       "name",
       "username",
@@ -11101,15 +11101,16 @@
       "social-profile",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public GitHub repository; no account or payment. Individual tools it links to have their own pricing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the repo is passive. It's a catalog — the OpSec profile of each activity depends on the specific linked tool you then run, so evaluate those individually (some are active/attributable).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Directly tied to Trace Labs missing-persons CTF (77 stars).",
+    "trustNote": "A community GitHub curation by LinaYorda, explicitly assembled for Trace Labs missing-persons CTFs; well-aligned to the use case, though it's a personal list that may age.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -11118,7 +11119,10 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "LinaYorda OSINTtools",
+      "Trace Labs OSINT tools"
+    ],
     "tags": [
       "trace-labs",
       "missing-persons",
@@ -11126,7 +11130,7 @@
       "catalog"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osinttools-linayorda.md"
   },
@@ -222614,44 +222618,54 @@
   },
   {
     "id": "reverse-phone-lookup-find-name-address-and-amp-more-for-any-phone-number-addresses-com",
-    "name": "Reverse Phone Lookup - Find Name, Address &amp; More For Any Phone Number - Addresses.com",
-    "description": "OSINT tool: Reverse Phone Lookup - Find Name, Address &amp; More For Any Phone Number - Addresses.com.",
+    "name": "Addresses.com Reverse Phone Lookup",
+    "description": "Use when you have a US `phone` number and want the likely owner's name and address — returns `name`, `address`, and `associate` links (full detail behind a paywall).",
     "url": "http://www.addresses.com/phone",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "US reverse-phone lookup to attach a name/address to a number (teaser free, full report paid via Intelius).",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
       "address",
-      "social-profile"
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Powered by Intelius. A free search returns teaser results (city/state, partial name); the full owner name, address, and associated people are gated behind a paid Intelius report/subscription.",
+    "opsec": "active",
+    "opsecNote": "Queries go to a US data broker (Intelius), which logs your searches and IP; the number's owner is not notified. Data brokers also profile searchers — use a sock-puppet identity/IP for sensitive work. Not a consumer-reporting agency; results are not FCRA-permissible for employment/tenant screening.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Addresses.com is an Intelius-powered people-search aggregator; data is compiled from public records and broker sources, so accuracy is decent but not authoritative and can be stale.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "addresses.com phone",
+      "Intelius reverse phone"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "people-search",
+      "data-broker"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/reverse-phone-lookup-find-name-address-and-amp-more-for-any-phone-number-addresses-com.md"
   },
   {
@@ -246672,49 +246686,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/home-comptroller-texas-gov.md"
-  },
-  {
-    "id": "home-verein-f-r-computergenealogie-e-v-compgen",
-    "name": "Home • Verein für Computergenealogie e.V. (CompGen)",
-    "description": "OSINT tool: Home • Verein für Computergenealogie e.V. (CompGen).",
-    "url": "https://www.compgen.de",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "associate",
-      "dob",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "genealogy",
-      "family"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/home-verein-f-r-computergenealogie-e-v-compgen.md"
   },
   {
     "id": "homefacts-us",
@@ -334793,45 +334764,51 @@
   },
   {
     "id": "instadp-search-profile-pictures",
-    "name": "Instadp search profile pictures",
-    "description": "OSINT tool: Instadp search profile pictures.",
+    "name": "InstaDP (Instagram profile picture viewer)",
+    "description": "Use when you have an Instagram `username` and want the full-size profile picture (and stories) anonymously — returns the high-res `image` for reverse-image and face work.",
     "url": "https://www.instadp.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing/downloading a public Instagram account's full-resolution profile photo (and stories) without logging in and without alerting the user.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
       "image",
-      "geolocation"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account or payment. Ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "InstaDP fetches the image server-side, so the target's account does not register a visit from you (anonymous) — unlike viewing directly on Instagram. Note you are trusting a third-party site with the username you look up; use a sock-puppet context and don't enter anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A popular third-party Instagram utility (one of many \"instadp\" clones); it works by pulling public Instagram data. Reliability varies with Instagram's anti-scraping changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "InstaDP",
+      "instagram dp viewer",
+      "instagram profile picture downloader"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "profile-picture"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instadp-search-profile-pictures.md"
   },
   {
@@ -346725,45 +346702,51 @@
   },
   {
     "id": "rknight-me",
-    "name": "rknight.me",
-    "description": "OSINT tool: rknight.me.",
+    "name": "Get Mastodon Account ID from Username (technique)",
+    "description": "Use when you have a Mastodon `username`/handle and want its numeric account ID to unlock API/RSS access to the account's posts — returns the account ID and canonical `social-profile`.",
     "url": "https://rknight.me/blog/get-mastodon-account-id-from-username/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a Mastodon @user@instance handle to its numeric account ID so you can pull its public feed via API/RSS.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free technique using Mastodon's own public API endpoints; no account or key needed for public data.",
+    "opsec": "passive",
+    "opsecNote": "The lookup queries the target's home instance API for public account data — read-only and not tied to following or notifying the user. Requests hit that instance's server from your IP; use a sock-puppet/VPN context for sensitive work. You are not authenticating, so nothing is attributable to a Mastodon account of yours.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A clear how-to by developer Robb Knight describing Mastodon's documented public API behavior; the technique is verifiable against Mastodon's own docs, independent of the blog.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Mastodon account id lookup",
+      "mastodon username to id"
+    ],
     "tags": [
       "mastodon",
-      "Mastodon Related Sites"
+      "Mastodon Related Sites",
+      "api-technique"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/rknight-me.md"
   },
   {
