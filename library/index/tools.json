@@ -153951,30 +153951,30 @@
   {
     "id": "picvario-metadata-editor",
     "name": "Picvario Metadata Editor",
-    "description": "Free online metadata editor lets you edit and add metadata to EXIF, IPTC and XMP",
+    "description": "Use when you have an `image` and want to read its EXIF/IPTC/XMP metadata — including GPS geolocation and camera/device — via a free browser tool (also edits/strips for OpSec).",
     "url": "https://picvario.com/online-photo-metadata-editor/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Reading (and editing/stripping) EXIF/IPTC/XMP metadata, incl. GPS geotags, from a photo in-browser.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "geolocation",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free online tool; up to 10 images, 100MB per file. Picvario's broader DAM product requires registration, but the metadata editor is usable without it.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The image is UPLOADED to Picvario's servers for processing, so do not submit sensitive case imagery you can't expose to a third party — extract EXIF locally (e.g. exiftool) for anything confidential. Reading metadata does not touch the subject. When using it to STRIP metadata from your own images before publishing, that is an OpSec (active-hygiene) use, not target research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A free front-end from a commercial DAM vendor (Picvario); it reads standard metadata fields, so output is verifiable against any other EXIF reader.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -153983,14 +153983,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Picvario MetaEditor",
+      "online photo metadata editor"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "exif",
+      "metadata"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/picvario-metadata-editor.md"
   },
@@ -218888,13 +218892,13 @@
   {
     "id": "free-to-lookup-unknown-callers",
     "name": "FREE to Lookup Unknown Callers",
-    "description": "OSINT tool: FREE to Lookup Unknown Callers.",
+    "description": "Use when you have a `phone` number and want a reverse-lookup for the owner's name/area — returns line/carrier and location for free, with name/address behind a paywall.",
     "url": "https://www.reversephonelookup.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "A first-pass US reverse-phone lookup for line type, carrier, and general location.",
     "selectorsIn": [
       "phone"
     ],
@@ -218903,28 +218907,37 @@
       "address",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Despite the \"free\" framing, the genuinely free layer is usually line type, carrier, and general location; owner name, full address, and detailed reports are gated behind a paid report. Treat the paywall as the norm, not the exception.",
+    "opsec": "passive",
+    "opsecNote": "The subject is not notified, but you are handing a target phone number to a commercial data broker that logs queries and may retarget you. Use a sock-puppet session and never enter your own number.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running commercial reverse-phone aggregator; free results are shallow and paid results are broker-sourced, so corroborate any name/address before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "reversephonelookup.com",
+      "Reverse Phone Lookup"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "reverse-phone"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/free-to-lookup-unknown-callers.md"
   },
   {
@@ -235127,44 +235140,52 @@
   {
     "id": "cso",
     "name": "CSO",
-    "description": "OSINT tool: CSO.",
+    "description": "Use when you have a `name` and want to check British Columbia (Canada) court records for that party — returns confirmed name, case/file numbers and court-history leads.",
     "url": "https://justice.gov.bc.ca/cso/index.do",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching British Columbia court records (civil, criminal, appeal, traffic) by party name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Party-name record searches are free to view. Viewing/downloading actual court documents incurs per-document fees under the CSO Schedule of Fees; filing requires a registered account.",
+    "opsec": "passive",
+    "opsecNote": "Searching the registry is passive — the party is not notified. It is an official government registry that logs access; use a sock-puppet browser as good practice.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Province of British Columbia as the official electronic court registry; authoritative, though data is provided \"as is\" and may be subject to publication bans.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Court Services Online",
+      "BC CSO"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "canada"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cso.md"
   },
   {
@@ -248095,13 +248116,13 @@
   {
     "id": "inmate-locator-us",
     "name": "Inmate Locator (US)",
-    "description": "OSINT tool: Inmate Locator (US).",
+    "description": "Use when you have a `name` and want to find where a US inmate is incarcerated by routing to the right federal/state/ICE locator — returns confirmed name, inmate ID and facility/dob leads.",
     "url": "https://www.theinmatelocator.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the correct US federal, state, or ICE inmate-search system to locate an incarcerated person.",
     "selectorsIn": [
       "name"
     ],
@@ -248110,29 +248131,38 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free directory; the official locators it links to (BOP, state DOCs, ICE) are also free public systems.",
+    "opsec": "passive",
+    "opsecNote": "Searching official inmate locators is passive — the incarcerated person is not notified. Use a sock-puppet browser as good practice; the underlying government sites log queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party directory that aggregates links to official inmate-search systems; the directory is a signpost — the authoritative data is on the government locator it sends you to.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "The Inmate Locator",
+      "theinmatelocator.com"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/inmate-locator-us.md"
   },
   {
@@ -259534,35 +259564,52 @@
   {
     "id": "ohio-resident-database",
     "name": "Ohio Resident Database",
-    "description": "OSINT tool: Ohio Resident Database.",
+    "description": "Use when you have a `name` in Ohio and want address/age/party from the state's public voter-registration data — returns address, dob-year and associate leads for Ohio residents.",
     "url": "https://www.ohioresidentdatabase.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up Ohio residents (address, approximate age, party) from public voter-registration data.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free name lookups against Ohio's public voter/resident data; some deeper detail or bulk features may be gated. Automated access is blocked (403 to bots) — use a normal browser.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The subject is not notified, but you are querying a third-party site that republishes Ohio's public voter file and logs your searches. Use a sock-puppet browser. Note the underlying voter data is genuinely public in Ohio; this site just makes it searchable.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A third-party site republishing Ohio's public voter-registration data; data can be stale between voter-file updates, so corroborate the address/age before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ohioresidentdatabase.com"
+    ],
+    "tags": [
+      "voter-records",
+      "ohio",
+      "people-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ohio-resident-database.md"
   },
   {
@@ -263996,46 +264043,49 @@
   {
     "id": "proper-ie",
     "name": "proper.ie",
-    "description": "OSINT tool: proper.ie.",
+    "description": "Use when you have an Irish `address`/area and want sale-price history from Ireland's public Residential Property Price Register — returns transaction price/date context to corroborate an address timeline.",
     "url": "https://proper.ie/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking Irish residential sale prices and history by area from the public Property Price Register.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to access; built on Ireland's public Residential Property Price Register (PPR) data.",
+    "opsec": "passive",
+    "opsecNote": "Reading aggregated public sale data is passive and leaks nothing about the subject. The PPR records transactions, not current occupants — do not infer present residency from a past sale.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party front-end over Ireland's official Residential Property Price Register; the underlying transaction data is authoritative, but proper.ie presents it as market analytics rather than person-level lookup.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "proper.ie",
+      "Irish property price register viewer"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/proper-ie.md"
   },
   {
@@ -299852,24 +299902,33 @@
   {
     "id": "my-osint-training-tools",
     "name": "My OSINT Training Tools",
-    "description": "Curated, categorized web tool launcher maintained by My OSINT Training (Griffin Glynn).",
+    "description": "Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns pointers to specialized tools, not data itself.",
     "url": "https://tools.myosint.training/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Quickly launching vetted OSINT web tools by category",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Quickly launching vetted OSINT web tools by category.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public tool board maintained by My OSINT Training; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the board is passive; the OpSec footprint of anything you launch depends on that specific tool — check each one's own profile before submitting target data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Maintained by Griffin Glynn (@hatless1der), well-known OSINT trainer; curator of this board.",
+    "trustNote": "Curated by Griffin Glynn (@hatless1der), a well-known OSINT trainer; a vetted, actively-maintained board rather than a raw scraped list.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -299878,15 +299937,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tools.myosint.training",
+      "hatless1der tools board"
+    ],
     "tags": [
       "tool-collection",
       "launcher",
       "people-search"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/my-osint-training-tools.md"
   },
   {
@@ -325778,35 +325840,48 @@
   {
     "id": "facebook-search-engine",
     "name": "Facebook Search Engine",
-    "description": "OSINT tool: Facebook Search Engine.",
+    "description": "Use when you have a `name`/`username` or keyword and want to search public Facebook content via a prebuilt Google Custom Search Engine — returns candidate social-profile hits, coverage permitting.",
     "url": "https://cse.google.com/cse?cx=95ae46262a5f2958e",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Keyword/name searching of indexed public Facebook content via a Google CSE.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine. No account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Google's index of Facebook, not Facebook directly — the subject is not notified. Passive; use a sock-puppet session to keep queries out of your own Google profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google CSE; results depend on what Google has indexed of Facebook, which is limited and shrinking as Facebook restricts public indexing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Facebook CSE"
+    ],
+    "tags": [
+      "facebook",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-search-engine.md"
   },
   {
@@ -344783,37 +344858,49 @@
   {
     "id": "reddit-suite",
     "name": "Reddit Suite",
-    "description": "OSINT tool: Reddit Suite.",
-    "url": "https://chrome.google.com/webstore/detail/reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb",
+    "description": "Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navigation, and account context on hover.",
+    "url": "https://chromewebstore.google.com/detail/reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Enhancing manual Reddit investigation with user tagging, navigation, and inline context.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source browser extension (Reddit Enhancement Suite / RES); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "RES only augments how you view public Reddit in your own browser — it does not interact with the target. Passive, but you should still browse Reddit logged out or via a sock-puppet account to avoid tying your real account to the investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing, widely-used open-source Reddit extension (RES); it enhances the interface only and surfaces no non-public data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Reddit Enhancement Suite",
+      "RES"
+    ],
     "tags": [
-      "reddit"
+      "reddit",
+      "browser-extension"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-suite.md"
   },
   {
@@ -357170,35 +357257,50 @@
   {
     "id": "twitter-photo-search",
     "name": "Twitter Photo Search",
-    "description": "OSINT tool: Twitter Photo Search.",
+    "description": "Use when you have a `name`/`username` or keyword and want to search Twitter/X image content via a prebuilt Google Custom Search Engine — returns candidate social-profile/image hits, coverage permitting.",
     "url": "https://cse.google.com/cse/publicurl?cx=006290531980334157382:_ltcjq0robu",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Keyword/name searching of indexed Twitter/X image content via a Google CSE.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine. No account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are querying Google's index, not Twitter/X directly — the subject is not notified. Passive; run from a sock-puppet session to keep queries out of your own Google profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google CSE; results depend entirely on what Google has indexed and on the CSE's site scoping, both of which degrade as X restricts indexing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Twitter image CSE"
+    ],
+    "tags": [
+      "twitter",
+      "custom-search-engine",
+      "image-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-photo-search.md"
   },
   {
