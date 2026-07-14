@@ -141551,37 +141551,52 @@
   {
     "id": "diffchecker",
     "name": "DiffChecker",
-    "description": "OSINT tool: DiffChecker.",
+    "description": "Use when you have two versions of an `image` (or document/text) and want to see exactly what changed — returns a highlighted diff exposing edits, retouching, and tampering.",
     "url": "https://www.diffchecker.com/image-diff/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Comparing two images (or two text/document versions) side by side to reveal edits, manipulation, or forgery.",
+    "selectorsIn": [
+      "image"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free in-browser diffing for images and text; a paid tier adds saved diffs, larger files, and no ads. Core comparison is free without an account.",
+    "opsec": "passive",
+    "opsecNote": "Uploaded files/text may be processed on Diffchecker's servers (text diffs especially). Do not paste sensitive/identifying case material into the hosted tool; for confidential evidence prefer a local diff. Strip metadata from images before upload.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known general-purpose diff utility; reliable at showing pixel/text differences, but it is a third-party host, so mind what you upload.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "forensically",
+      "fotoforensics"
+    ],
+    "aliases": [
+      "Diff Checker",
+      "diffchecker.com",
+      "image diff"
+    ],
     "tags": [
-      "image-analysis"
+      "image-analysis",
+      "diff",
+      "forensics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/diffchecker.md"
   },
   {
@@ -152742,44 +152757,53 @@
   {
     "id": "originality-ai",
     "name": "originality.ai",
-    "description": "OSINT tool: originality.ai.",
+    "description": "Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an AI-likelihood and plagiarism score.",
     "url": "https://originality.ai/youtube-script-generator",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
+    "bestFor": "Estimating whether text is AI-generated or plagiarised, to flag fake profiles, reviews, and content farms.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Paid credit-based AI-detection/plagiarism scanning is the core product; some free single-use tools and a limited free check exist, but sustained use needs a paid plan or API key.",
+    "opsec": "passive",
+    "opsecNote": "You paste text into a third-party scanner that processes it server-side. Do not submit confidential or victim-identifying material. AI-detection is probabilistic and error-prone — never treat a score as proof.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
     ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial AI-content/plagiarism detector; scores are statistical estimates with real false-positive/negative rates, so treat every result as a lead, not a verdict.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "gptzero",
+      "copyleaks"
+    ],
+    "aliases": [
+      "Originality.AI",
+      "originality ai"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "ai-detection",
+      "text-analysis"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/originality-ai.md"
   },
   {
@@ -153700,37 +153724,53 @@
   {
     "id": "pictriev-2",
     "name": "Pictriev",
-    "description": "Face-matching search (finds lookalikes / celebrities).",
+    "description": "Use when you have a `face`/`image` and want to find celebrity or public-figure lookalikes and an age/gender estimate — returns similar known faces (weak identity lead).",
     "url": "http://pictriev.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding celebrity/public-figure lookalikes for a face and estimating apparent age/gender.",
     "selectorsIn": [
       "face",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "selectorsOut": [
+      "physical-description"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to use; no account. The site has long carried an \"under construction\" notice and can be flaky.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload a face image to a third-party server. Do not upload a photo you don't want retained; strip metadata first. Use a sock-puppet browser. It matches against celebrities/public figures, not private individuals.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing hobbyist face-matching site; matches are against a celebrity dataset, so results are entertainment-grade leads, not identifications.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "pimeyes",
+      "facecheck-id"
+    ],
+    "aliases": [
+      "PicTriev",
+      "pictriev.com"
+    ],
+    "tags": [
+      "face-search",
+      "face-recognition",
+      "image-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/pictriev-2.md"
   },
@@ -161747,44 +161787,55 @@
   {
     "id": "y2mate-com",
     "name": "y2mate.com",
-    "description": "OSINT tool: y2mate.com.",
+    "description": "Use when you have a public YouTube (or other) video URL and want to download the video/audio for offline preservation and frame analysis — returns the media file.",
     "url": "https://www.y2mate.com/en950",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a YouTube video/audio to a local file for archiving and frame-by-frame analysis.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account. Heavily ad-supported with aggressive/deceptive ads and pop-ups.",
+    "opsec": "passive",
+    "opsecNote": "WARNING — y2mate-style sites are notorious for malvertising, fake \"download\" buttons, and browser-notification/scam pop-ups. Use a hardened sock-puppet browser with an ad/script blocker, never install anything it prompts, and paste only the public video URL. No login is required or should ever be given.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A widely-mirrored, ad-laden downloader of unknown operation; it does deliver the public video, but the surrounding site is hostile — prefer a reputable downloader (e.g. yt-dlp) when possible.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "yt-dlp",
+      "ssstwitter-com"
+    ],
+    "aliases": [
+      "y2mate",
+      "y2mate.com",
+      "youtube downloader"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "media-downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/y2mate-com.md"
   },
   {
@@ -217620,44 +217671,55 @@
   {
     "id": "data-8-co-uk",
     "name": "data-8.co.uk",
-    "description": "OSINT tool: data-8.co.uk.",
+    "description": "Use when you have a UK `phone` number and want to validate it and identify its line type and network operator — returns phone metadata (validity, mobile/landline, carrier).",
     "url": "https://www.data-8.co.uk/data-validation/phone-validation/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Validating a UK phone number and returning its line type and current network/operator.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "UK data-quality vendor. A free web demo validates a number or two; production/volume validation is a paid, API-key service (per-lookup or subscription).",
+    "opsec": "passive",
+    "opsecNote": "Server-side validation lookup — the subject is not contacted or notified. Demo checks are anonymous; API use is tied to your account/key. Data-8 is a legitimate UK B2B data provider, not a grey-market people-finder.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established UK data-validation company; results (validity, line type, network) are reliable telco-grade metadata, but it returns number attributes, not subscriber identity.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "twilio-lookup",
+      "serviceobjects-reverse-number-lookup"
+    ],
+    "aliases": [
+      "Data8",
+      "data-8.co.uk phone validation"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "phone-validation"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/data-8-co-uk.md"
   },
   {
@@ -226510,46 +226572,62 @@
   {
     "id": "austria",
     "name": "Austria",
-    "description": "OSINT tool: Austria.",
+    "description": "Use when you have an Austrian company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name, dob, and address of controlling persons (access-gated).",
     "url": "https://wieregms.bmf.gv.at/at.gv.bmf.wiereg-p/wiereg?execution=e1s1",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the ultimate beneficial owners of Austrian companies and other legal entities via the WiEReG register.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Government register (WiEReG). Public inspection extracts carry a small per-extract fee (~€3) and require an authenticated Unternehmensserviceportal (USP)/FinanzOnline account; broader access requires demonstrating a legitimate interest after the 2022 CJEU ruling.",
+    "opsec": "active",
+    "opsecNote": "Access is via authenticated Austrian portal login (USP/FinanzOnline/eID). Every query is logged against your identity and extracts are paid/receipted — this is a named, auditable interaction, not anonymous OSINT. Do not access under a false identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Austrian Federal Ministry of Finance register of beneficial owners (Register der wirtschaftlichen Eigentümer); data is legally mandated and authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "at"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "belgium",
+      "opencorporates-com",
+      "gleif-org"
+    ],
+    "aliases": [
+      "WiEReG",
+      "Register der wirtschaftlichen Eigentuemer",
+      "Austrian beneficial ownership register"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/austria.md"
   },
   {
@@ -241675,46 +241753,59 @@
   {
     "id": "gibraltar",
     "name": "Gibraltar",
-    "description": "OSINT tool: Gibraltar.",
+    "description": "Use when you have a Gibraltar company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name, dob, and nationality of controlling persons (login-gated).",
     "url": "https://ubosearch.egov.gi/Login?ReturnUrl=%2f",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying beneficial owners of Gibraltar-registered companies via the Gibraltar UBO search portal.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Gibraltar government UBO search portal. Requires an authenticated eGov account, and access to another entity's beneficial owners is subject to eligibility/legitimate-interest rules; some searches carry a fee.",
+    "opsec": "active",
+    "opsecNote": "Access is via authenticated Gibraltar eGov login and is logged against your identity. This is a named, auditable government interaction — not anonymous OSINT. Do not register or access under a false identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Gibraltar government beneficial-ownership register portal; filings are legally mandated and authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "gi"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "belgium",
+      "austria",
+      "opencorporates-com"
+    ],
+    "aliases": [
+      "Gibraltar UBO register",
+      "ubosearch.egov.gi"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gibraltar.md"
   },
   {
@@ -272280,46 +272371,56 @@
   {
     "id": "ukbirthadoptionregister-com",
     "name": "ukbirthadoptionregister.com",
-    "description": "OSINT tool: ukbirthadoptionregister.com.",
+    "description": "Use when you have a `name` and approximate `dob` and are working an adoption-reunion case — searches an adoption contact register to link adopted people with birth parents/siblings; returns name, dob, and associate leads.",
     "url": "https://www.ukbirthadoptionregister.com/search.php",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Matching adopted people with birth relatives via a voluntary UK adoption contact/reunion register.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "dob",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the register. (Some UK reunion registers charge to register an entry, but searching entries here is free.)",
+    "opsec": "passive",
+    "opsecNote": "A voluntary reunion register — entries are self-submitted by people seeking contact. Search is passive, but this is sensitive personal territory; use findings only for legitimate reunification/tracing, never to expose someone who has not sought contact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A private/voluntary adoption contact register, not an official government record; entries are self-reported and unverified, so treat matches as leads requiring confirmation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gro-gov-uk",
+      "freebmd"
+    ],
+    "aliases": [
+      "UK Birth Adoption Register",
+      "ukbirthadoptionregister.com"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "adoption"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ukbirthadoptionregister-com.md"
   },
   {
@@ -324928,40 +325029,54 @@
   {
     "id": "fdown-net",
     "name": "Fdown.net",
-    "description": "Facebook video downloader",
+    "description": "Use when you have a public Facebook video/reel `social-profile` URL and want to download the media for offline analysis and archiving — returns the video file (image/video).",
     "url": "https://fdown.net",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading video from a public Facebook post/reel without a login, for preservation and frame-level analysis.",
     "selectorsIn": [
-      "face",
-      "image"
+      "social-profile"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account. Ad-supported; paid \"HD\" prompts appear but the basic download is free.",
+    "opsec": "passive",
+    "opsecNote": "You paste the Facebook video URL into a third-party downloader that logs your request/IP. No Facebook login is required, so it isn't tied to your FB identity — but use a sock-puppet browser and paste only the public URL. It cannot reach private/friends-only videos.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "One of many interchangeable Facebook video downloaders; delivers the public media but is ad-heavy with an unknown operator — never enter anything but the public URL.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ssstwitter-com",
+      "getfvid"
+    ],
+    "aliases": [
+      "fdown",
+      "fdown.net",
+      "facebook video downloader"
+    ],
     "tags": [
       "Social Media",
-      "Facebook"
+      "Facebook",
+      "media-downloader"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/fdown-net.md"
   },
