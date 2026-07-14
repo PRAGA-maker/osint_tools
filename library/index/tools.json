@@ -155978,45 +155978,52 @@
   },
   {
     "id": "reverse-image-search-dmtr-addons-mozilla-org",
-    "name": "reverse image search dmtr (addons.mozilla.org)",
-    "description": "OSINT tool: reverse image search dmtr (addons.mozilla.org).",
+    "name": "Reverse Image Search (dmtr) — Firefox add-on",
+    "description": "Use when you have an image on a web page and want to reverse-search it fast — returns a right-click menu that sends the image to multiple search engines.",
     "url": "https://addons.mozilla.org/en-GB/firefox/addon/reverse-image-search-dmtr/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "One-click, right-click reverse image search of any on-page image across several engines from Firefox.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
+      "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Firefox add-on. Note it is barely maintained (last updated 2023, tiny user base) — functional but not actively developed.",
+    "opsec": "passive",
+    "opsecNote": "The add-on just opens the image's URL in a search engine's reverse-image page — the query goes to that engine, not the target, so the subject isn't alerted. As a browser extension it can read page content by design; install only from the official AMO listing, and use a sock-puppet browser profile for investigations.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A minor third-party Firefox add-on with very low adoption and no reviews; convenient but unaudited — the reverse-search itself runs on the mainstream engines, which is where the real trust lies.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Reverse Image Search dmtr",
+      "dmtr reverse image firefox addon"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "Reverse Image Searching",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/reverse-image-search-dmtr-addons-mozilla-org.md"
   },
   {
@@ -228838,36 +228845,55 @@
   },
   {
     "id": "brooklyn-genealogy",
-    "name": "Brooklyn Genealogy",
-    "description": "OSINT tool: Brooklyn Genealogy.",
+    "name": "Brooklyn Genealogy Information Page",
+    "description": "Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, directory and institutional record entries.",
     "url": "http://bklyn-genealogy-info.stevemorse.org/index.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Researching historical Brooklyn / Kings County (NY) people via transcribed census, cemetery, church and directory records.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and search the transcribed record collections; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading transcribed historical records is passive and alerts no one. The site logs standard web access; VPN for sensitive work. This is historical genealogical research, inherently non-intrusive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing volunteer-transcribed genealogy resource (hosted on Steve Morse's domain); reliable as a pointer to historical records, but transcriptions can contain errors — verify against the original where it matters.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Brooklyn Genealogy Info",
+      "bklyn-genealogy-info",
+      "Kings County NY genealogy"
+    ],
+    "tags": [
+      "genealogy",
+      "vital-records",
+      "brooklyn",
+      "new-york"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/brooklyn-genealogy.md"
   },
   {
@@ -233650,14 +233676,14 @@
   },
   {
     "id": "court-records-search-directory",
-    "name": "Court Records Search Directory",
-    "description": "OSINT tool: Court Records Search Directory.",
+    "name": "OnlineSearches Court Records Directory",
+    "description": "Use when you have a name and a US jurisdiction and want the official court-record search for it — returns links to state/county court, docket and case-index searches.",
     "url": "http://publicrecords.onlinesearches.com/courts.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the correct official free US court/docket search site for a specific county or state.",
     "selectorsIn": [
       "name"
     ],
@@ -233666,29 +233692,37 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The directory and the official court searches it links to are free; OnlineSearches (Intelius-run) also upsells paid reports on the same pages — use the outbound official links.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and alerts no one. Each outbound court search runs on a government site with its own logging. Avoid the Intelius-branded paid boxes if you want to stay off a broker's logs; VPN for sensitive names.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial directory (Intelius-operated) that links to authoritative government court sites; the directory is a signpost, so trust the official portals it points to, not the aggregator.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlineSearches courts",
+      "court records directory",
+      "publicrecords.onlinesearches.com courts"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records-directory"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-records-search-directory.md"
   },
   {
@@ -257032,47 +257066,55 @@
   },
   {
     "id": "nidirect-gov-uk-3",
-    "name": "nidirect.gov.uk",
-    "description": "OSINT tool: nidirect.gov.uk.",
+    "name": "NI Landlord Registration Scheme (Public Register)",
+    "description": "Use when you have a landlord's name or a Northern Ireland property and want to confirm registration — returns whether a landlord/property is on the NI register.",
     "url": "https://www.communities-ni.gov.uk/articles/landlord-registration-scheme",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a person is a registered NI landlord, or who is registered against a Northern Ireland rental property.",
     "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
       "name",
       "address",
       "employer-org"
     ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register search; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public government register is passive and does not alert the landlord. The service logs standard web access; use a VPN for sensitive lookups and stay within lawful public-record use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the NI Department for Communities; the register is an official government record of landlords registered under the statutory scheme.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Northern Ireland Landlord Registration",
+      "NI landlord register search",
+      "Landlord Registration Scheme NI"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "landlord-register",
+      "northern-ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nidirect-gov-uk-3.md"
   },
   {
@@ -329321,45 +329363,55 @@
   },
   {
     "id": "google-com-54",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Alinkedin.com",
+    "name": "LinkedIn X-Ray (Google site-scoped search)",
+    "description": "Use when you have a name, employer or role and want to find LinkedIn profiles Google has indexed — returns public LinkedIn profile links without logging into LinkedIn.",
+    "url": "https://www.google.com/search?q=site%3Alinkedin.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding LinkedIn profiles via a Google site-scoped dork, bypassing LinkedIn's login wall and search limits.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free — it's a Google query; no LinkedIn account needed to see the indexed public profile snippets.",
+    "opsec": "passive",
+    "opsecNote": "The search runs on Google, not LinkedIn, so you avoid LinkedIn's \"who viewed your profile\" signal at the search stage — a key advantage. But OPENING a LinkedIn profile while logged in can notify the person; view via a logged-out/sock-puppet session or Google's cache to stay unattributed. Google logs your query; use a VPN for sensitive names.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Uses Google's first-party index over LinkedIn's own public profiles; the technique is reliable, though LinkedIn limits how much of a profile is indexed/visible when logged out.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "LinkedIn X-Ray search",
+      "site:linkedin.com dork",
+      "LinkedIn Google search"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "google-dork",
+      "x-ray-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-54.md"
   },
   {
