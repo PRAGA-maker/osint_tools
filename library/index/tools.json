@@ -105190,41 +105190,46 @@
   {
     "id": "have-i-been-sold",
     "name": "Have I Been Sold?",
-    "description": "The service checks if the e-mail address is included in one of the databases, which are sold illegally and are used for various illegal activities such as spamming.",
+    "description": "Use when you have an `email` and want to check whether it appears in illegally-sold spam/marketing databases — but the original domain is dead, so treat this as unavailable.",
     "url": "https://haveibeensold.app/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "(Historically) checking whether an email address turned up in illegally-traded spam/marketing lists.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "address",
       "email"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "down",
+    "pricing": "free",
+    "costNote": "Was a free web check. The domain no longer resolves to the tool — as of this verification haveibeensold.app 301-redirects to an unrelated third-party gambling site, indicating the original service is defunct or the domain was dropped and re-registered.",
+    "opsec": "passive",
+    "opsecNote": "Do NOT visit the current URL — it redirects off-host to an unrelated commercial/gambling domain that could serve hostile content. There is no safe live endpoint to query; entering a target email would leak it to whoever now controls the domain.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "The service that this record describes is no longer reachable at its URL; the domain now points to unrelated content, so nothing here can be verified against a live tool.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "HaveIBeenSold",
+      "haveibeensold.app"
+    ],
     "tags": [
       "Emails"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/email/have-i-been-sold.md"
   },
@@ -206951,13 +206956,13 @@
   {
     "id": "find-people-search-us",
     "name": "Find People Search (US)",
-    "description": "OSINT tool: Find People Search (US).",
+    "description": "Use when you have a `name` and want a free first-pass US people-search that surfaces addresses, phones, relatives and possible social profiles — returns address, phone, email, associate, social-profile, dob.",
     "url": "https://findpeoplesearch.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A free name-first sweep of US public-records aggregations for contact info and a relative graph.",
     "selectorsIn": [
       "name"
     ],
@@ -206969,28 +206974,36 @@
       "social-profile",
       "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic name/state lookups and teaser results are free; full contact details, exact-name reports and background-style detail sit behind a paid report (positioned as a cheaper alternative to BeenVerified/Spokeo/Intelius).",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive against the subject — they are not notified. But you are handing the target's name to a commercial data broker that logs queries and may retarget you with ads; use a sock-puppet browser/session and never enter your own identifying details.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial people-search aggregator; data is scraped/licensed from public records and marketing databases, so results are lead-quality and need corroboration, not proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FindPeopleSearch",
+      "findpeoplesearch.com"
+    ],
     "tags": [
       "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/find-people-search-us.md"
   },
   {
@@ -215459,43 +215472,50 @@
   {
     "id": "the-law-pages",
     "name": "The Law Pages",
-    "description": "Search criminal court case details in the UK, such as sentence, hearing, defendant, etc.",
+    "description": "Use when you have a `name` and want to check whether that person appears in England & Wales Crown Court criminal sentencing records — returns confirmed name, court/case details and a case reference.",
     "url": "https://www.thelawpages.com/court-cases/court-case-search.php?mode=1",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Searching UK (England & Wales) criminal court sentencing records by defendant name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "social-profile"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The court-case sentencing search is free to use with no account.",
+    "opsec": "passive",
+    "opsecNote": "You are searching a public court-records database; the defendant is not notified and nothing touches the subject's own accounts. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running commercial UK legal-directory site compiling Crown Court listings and sentencing results; sourced from public court data but not an official government register, so confirm significant findings against primary court records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "thelawpages.com",
+      "The Law Pages court case search"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "people"
+      "people",
+      "court-records"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/the-law-pages.md"
   },
   {
@@ -229466,46 +229486,50 @@
   {
     "id": "business",
     "name": "Business",
-    "description": "OSINT tool: Business.",
+    "description": "Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 list URL is dead, so use the current GOV.UK replacement.",
     "url": "http://www.2010.voa.gov.uk/rli/en/basic/find",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Linking a UK business premises to its rateable-value / business-rates record (via the current VOA/GOV.UK search).",
     "selectorsIn": [
-      "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free government service. The specific `2010.voa.gov.uk` rating-list URL is defunct — the 2010 list is closed and the VOA (now part of HMRC as of April 2026) migrated the search to GOV.UK. Use the live replacement instead.",
+    "opsec": "passive",
+    "opsecNote": "Searching a government business-rates register is passive — no subject notification. Use the current GOV.UK endpoint; do not enter data into the dead legacy domain in case it is re-registered by a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Valuation Office Agency (part of HMRC) is the authoritative UK source for rateable values; only the legacy 2010-list URL recorded here is dead, not the underlying government service.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VOA 2010 rating list",
+      "VOA business rates search"
+    ],
     "tags": [
       "propertysites",
       "Property Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/business.md"
   },
   {
@@ -261187,44 +261211,53 @@
   {
     "id": "os-divorce-records",
     "name": "OS Divorce Records",
-    "description": "OSINT tool: OS Divorce Records.",
+    "description": "Use when you have a `name` and want to reach the official US county/state agency that holds that person's divorce (dissolution) record — returns links to associate, dob and address leads.",
     "url": "http://publicrecords.onlinesearches.com/divorce-records.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding which US county/state office to query for a subject's divorce/dissolution record.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "associate",
-      "dob",
-      "name"
+      "address",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The OnlineSearches directory itself is free (Intelius-operated); it hands you off to official county/state record portals, some of which charge per-copy fees for certified documents.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory and the linked government portals is passive — you are reading public indexes, not alerting the subject. If a linked portal requires an account or logs searches, treat that specific hop as active and use a sock-puppet.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "OnlineSearches is a commercial directory (Intelius-powered) that aggregates links to genuine government record sources; the directory is a signpost, the authoritative data lives at the linked official agency.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlineSearches Divorce Records",
+      "publicrecords.onlinesearches.com"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "divorce-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/os-divorce-records.md"
   },
   {
@@ -318054,44 +318087,48 @@
   {
     "id": "accountkiller-com",
     "name": "accountkiller.com",
-    "description": "OSINT tool: accountkiller.com.",
+    "description": "Use when you have a `username` and want a reference directory of where accounts can exist plus each platform's account/URL structure — returns social-profile enumeration leads, not a person lookup.",
     "url": "http://www.accountkiller.com/en/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating which platforms an account may exist on and understanding each site's account-page conventions.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported directory of 1,300+ account-deletion guides; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Purely a reference directory — you browse platform guides, you do not submit a target's selectors anywhere. Fully passive; nothing reaches the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-maintained catalog of account-deletion instructions; useful as a platform index, but it holds no personal data and performs no lookups itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "AccountKiller",
+      "accountkiller.com"
+    ],
     "tags": [
       "gsocialmedia",
       "General Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/accountkiller-com.md"
   },
   {
@@ -348437,35 +348474,49 @@
   {
     "id": "social-profiles-finder",
     "name": "Social Profiles Finder",
-    "description": "OSINT tool: Social Profiles Finder.",
+    "description": "Use when you have a `name` or `username` and want to surface a person's public social profiles across major networks in one place — returns social-profile links and display names.",
     "url": "https://www.social-searcher.com/search-users/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A free, no-login sweep of indexed public social profiles for a name or handle across many networks at once.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The users-search feature is free with no registration and no daily cap. (Social Searcher's separate real-time keyword monitoring has paid tiers, but profile/user search is free.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It only queries what search engines have already indexed — you are not touching the target's accounts, and the subject is not notified. Passive; still run it from a sock-puppet browser to keep the query out of your own ad/search profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by Social Searcher, a commercial social-monitoring service; results are limited to publicly indexed content and need manual confirmation that a profile is the right person.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Social Searcher Users Search",
+      "social-searcher.com users search"
+    ],
+    "tags": [
+      "social-networks"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/social-profiles-finder.md"
   },
   {
@@ -356015,44 +356066,52 @@
   {
     "id": "twitch-tools-lolarchiver-com",
     "name": "twitch-tools.lolarchiver.com",
-    "description": "OSINT tool: twitch-tools.lolarchiver.com.",
+    "description": "Use when you have a Twitch `username` and want its historical name changes and account history — returns prior usernames and profile leads, though this endpoint has moved and now requires the LoLArchiver suite.",
     "url": "https://twitch-tools.lolarchiver.com/username_changelog",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering a Twitch account's past username(s) to widen handle/identity pivots.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "username",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "LoLArchiver offers some free lookups but gates full history/results behind a paid subscription. The original `twitch-tools.lolarchiver.com/username_changelog` URL now returns HTTP 410 Gone / 301s to `t-tools.lolarchiver.com`; the username-changelog feature lives inside the current Twitch Tools suite there.",
+    "opsec": "passive",
+    "opsecNote": "Queries LoLArchiver's own archive, not Twitch's live API against the target, so it is passive toward the subject. Note this is a grey-area aggregator — use a sock-puppet account/browser and do not enter your own identifiers.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A niche, paid grey-area archive; data is scraped and not independently auditable, so confirm any prior-username claim before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "LoLArchiver Twitch Tools",
+      "t-tools.lolarchiver.com",
+      "Twitch username changelog"
+    ],
     "tags": [
       "twitch",
       "Twitch Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitch-tools-lolarchiver-com.md"
   },
   {
@@ -381341,13 +381400,13 @@
   {
     "id": "user-sherlock",
     "name": "User Sherlock",
-    "description": "OSINT tool: User Sherlock.",
+    "description": "Use when you have a `username` and want a legacy web-based namechecker to see which social sites host that handle — returns candidate social-profile links and display names.",
     "url": "http://www.usersherlock.com",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "A quick browser-based check of one username across a batch of social/registration sites.",
     "selectorsIn": [
       "username"
     ],
@@ -381355,28 +381414,36 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web tool; no account required. At last check the site returned HTTP 503, so availability is intermittent — verify it loads before relying on it.",
+    "opsec": "passive",
+    "opsecNote": "The lookup queries third-party sites from the tool's servers, not yours, so it is passive against the target. Do not enter your own accounts; results are public-presence checks only.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legacy, lightly-documented namechecker of unknown maintainership; results should be confirmed by loading each claimed profile directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "usersherlock.com",
+      "User Sherlock namechecker"
+    ],
     "tags": [
       "username"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/user-sherlock.md"
   },
   {
@@ -381623,13 +381690,13 @@
   {
     "id": "username-generation-guide",
     "name": "username-generation-guide",
-    "description": "Definitive guide to generating username permutations for OSINT.",
+    "description": "Use when you have a `name` or a known `username` and want a systematic method to expand it into candidate handles before running enumerators — returns a wider set of username variants to search.",
     "url": "https://github.com/soxoj/username-generation-guide",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Expanding a known nickname into candidate usernames to search",
+    "bestFor": "Expanding a known nickname or real name into candidate usernames to feed into namecheckers.",
     "selectorsIn": [
       "username",
       "name"
@@ -381637,15 +381704,16 @@
     "selectorsOut": [
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository (guide plus helper Python scripts); no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the guide and generating variants happens entirely offline/local — nothing touches the target or any third party until you take the resulting handles to a lookup tool. The generation step is fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "By soxoj (Maigret author).",
+    "trustNote": "Authored by soxoj, creator of Maigret and a well-known OSINT-username researcher; the methodology is widely referenced in the community.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -381654,14 +381722,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "soxoj username generation guide",
+      "username permutation guide"
+    ],
     "tags": [
       "username",
       "guide",
-      "permutation"
+      "permutation",
+      "methodology"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/username/username-generation-guide.md"
   },
