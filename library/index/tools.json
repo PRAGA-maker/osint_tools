@@ -140844,46 +140844,51 @@
   {
     "id": "crunchyroll",
     "name": "Crunchyroll",
-    "description": "Streaming service including the largest collection of Anime movies and shows",
+    "description": "Use when you have a `username` and want to check for a matching anime-streaming profile — returns a `social-profile` (public display name, avatar, activity) if the handle is reused there.",
     "url": "https://www.crunchyroll.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a subject reuses a handle on Crunchyroll and pulling their public anime profile/avatar.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Viewing is free with ads or paid (Fan/Mega Fan tiers); creating an account to view another user's public profile is free.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Browsing a public profile URL is passive, but Crunchyroll social features (following, commenting) are logged to your account. Use a sock-puppet account and never follow/interact with the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Sony/Crunchyroll LLC; first-party platform, but only a niche identity signal, not an investigative dataset.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Crunchyroll anime"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "username-pivot"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/crunchyroll.md"
   },
@@ -140944,30 +140949,29 @@
   {
     "id": "dacast",
     "name": "Dacast",
-    "description": "Website related to social networking and livestreaming audio and/or video services",
+    "description": "Use when you encounter a live/embedded video stream and want to identify its host — Dacast is a B2B streaming platform with no public people-search, so it returns at most a `social-profile`/org behind an embedded player.",
     "url": "http://www.dacast.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising Dacast-hosted embedded streams and pivoting to the organisation that runs them; not a lookup tool.",
     "selectorsIn": [
-      "image",
-      "face"
+      "domain"
     ],
     "selectorsOut": [
-      "image",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Dacast is a paid B2B streaming/hosting product (free trial only). There is no public directory or free lookup — the platform is for broadcasters, not searchers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public embedded Dacast player is passive. There is nothing to search here, so the main \"leak\" risk is on the broadcaster's side, not yours.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Dacast is a legitimate, established streaming vendor; the honest caveat is that it has essentially no OSINT/discovery surface.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -140976,14 +140980,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Dacast streaming"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/dacast.md"
   },
@@ -147254,45 +147260,52 @@
   },
   {
     "id": "huggingface-co-4",
-    "name": "huggingface.co",
-    "description": "OSINT tool: huggingface.co.",
+    "name": "Whisper Word-Level Timestamps (Hugging Face Space)",
+    "description": "Use when you have an audio/video clip of a subject and want an accurate transcript with per-word timing — returns spoken `name`s and `associate`s you can pin to an exact timestamp.",
     "url": "https://huggingface.co/spaces/Xenova/whisper-word-level-timestamps",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "In-browser transcription of a media clip with word-level timestamps, for evidence-grade quoting of who/what was said and when.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public Hugging Face Space; runs the Whisper model in-browser (Transformers.js), no account or API key needed.",
+    "opsec": "passive",
+    "opsecNote": "Transcription runs client-side in your browser (Transformers.js), so the audio is not uploaded to a third party — good for sensitive media. Still, only process clips you are lawfully entitled to have.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-published Space by a well-known Transformers.js maintainer (Xenova); the underlying Whisper model is OpenAI's, but transcripts still need human verification of names/spellings.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Whisper timestamps",
+      "Xenova whisper Space"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "transcription",
+      "audio-analysis"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/huggingface-co-4.md"
   },
   {
@@ -154850,30 +154863,31 @@
   {
     "id": "podbean",
     "name": "Podbean",
-    "description": "Website related to social networking and podcasting services",
+    "description": "Use when you have a subject's `name` or `username` and suspect they host a podcast — returns their public podcast `social-profile`, episode metadata, and linked contact/social details.",
     "url": "http://www.podbean.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's podcast, its episode history, and the show notes / linked accounts they publish alongside it.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse the public Discover directory and podcast/episode pages; hosting a podcast has free and paid tiers, but searching is free and needs no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public podcast and episode pages is passive and unauthenticated. Do not subscribe/comment from an attributable account if you want to stay unseen.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Podbean is a large, established podcast-hosting platform; the content is first-party creator publishing, though creator-supplied bio/links are self-asserted.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -154882,14 +154896,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Podbean podcasts"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "podcast"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/podbean.md"
   },
@@ -162574,45 +162591,52 @@
   },
   {
     "id": "you-tldr-com",
-    "name": "you-tldr.com",
-    "description": "OSINT tool: you-tldr.com.",
+    "name": "YouTLDR",
+    "description": "Use when you have a subject's YouTube video/channel (`social-profile`) and want its transcript and a summary without watching — returns `name`s and `associate`s mentioned plus searchable transcript text.",
     "url": "https://you-tldr.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a full transcript/summary of a target's YouTube video to mine spoken names, places, and associates.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "name",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tools include YouTube-to-transcript/blog and chapters; some conversions and higher limits sit behind a paid tier.",
+    "opsec": "passive",
+    "opsecNote": "YouTLDR fetches the video's captions server-side, so the target's channel does not see a view from you. Paste only public video URLs; do not upload private/unlisted links you were not meant to have.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party summarizer built on YouTube captions; transcript accuracy depends on YouTube's captions and any AI summary may paraphrase — verify quotes against the source video.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "you-tldr",
+      "YouTube TLDR"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "transcript",
+      "video-analysis"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/you-tldr-com.md"
   },
   {
@@ -173666,44 +173690,52 @@
   },
   {
     "id": "knowlesys-com-4",
-    "name": "knowlesys.com",
-    "description": "OSINT tool: knowlesys.com.",
+    "name": "Knowlesys WhatsApp OSINT Methods (article)",
+    "description": "Use when you have a `phone` or `username` tied to WhatsApp and want a methodology — a how-to guide for extracting profile pictures and finding public WhatsApp groups, which yields `social-profile` / `image` leads.",
     "url": "https://knowlesys.com/en/articles/social_websites/hide/whatsapp_open_source_intelligence_investigation_methods2.html",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Learning repeatable techniques to pull a WhatsApp profile photo and discover public group chats a number/topic is linked to.",
     "selectorsIn": [
       "phone",
       "username"
     ],
     "selectorsOut": [
+      "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; it is vendor educational content (Knowlesys sells a commercial OSINT platform, but the article itself is open).",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. The *techniques* it teaches range from passive (search-engine dorking for chat.whatsapp.com links) to active (opening WhatsApp Web to view a target's photo, which can leak that you viewed them). Apply the active steps only from a sock-puppet WhatsApp number.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Educational article from a commercial OSINT vendor (Knowlesys); methods are sound and widely known, but it is marketing-adjacent content, not a neutral standard.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Knowlesys OSINT Academy WhatsApp"
+    ],
     "tags": [
       "whatsapp",
-      "WhatsApp"
+      "WhatsApp",
+      "methodology",
+      "reference"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/knowlesys-com-4.md"
   },
   {
@@ -265185,46 +265217,53 @@
   {
     "id": "ratemyteachers-com",
     "name": "ratemyteachers.com",
-    "description": "OSINT tool: ratemyteachers.com.",
-    "url": "http://uk.ratemyteachers.com/",
+    "description": "Use when you have a teacher's `name` (and ideally their school as `employer-org`) and want to confirm where they teach/taught — returns `employer-org` (school), subject, and public rating history.",
+    "url": "https://ratemyteachers.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Tying a named teacher to a specific school and time period via a public review profile.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read. Posting a review requires a free account; reading does not.",
+    "opsec": "passive",
+    "opsecNote": "Searching and reading profiles is passive and unauthenticated. Do NOT post a review — that is active, logged to an account, and pollutes the record.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowd-sourced student reviews; useful for the structural fact (teacher X at school Y) but the ratings/comments themselves are unverified opinion.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca",
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Rate My Teachers",
+      "RMT"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "education"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ratemyteachers-com.md"
   },
   {
@@ -273848,47 +273887,59 @@
   },
   {
     "id": "uglymugs-org",
-    "name": "uglymugs.org",
-    "description": "OSINT tool: uglymugs.org.",
-    "url": "https://uglymugs.org/um/",
+    "name": "National Ugly Mugs (NUM)",
+    "description": "Use when a subject is (or may be) an adult-industry worker and you need a vetted, members-only safety/alert scheme — returns `associate` / `physical-description` warning reports, but only to verified members.",
+    "url": "https://nationaluglymugs.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A UK sex-worker safety charity's incident/alert database — accessible only to vetted members, not the public.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "phone"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "physical-description",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to join, but membership is vetted and restricted to sex workers and approved support/enforcement partners; the alert data is not open to the general public.",
+    "opsec": "active",
+    "opsecNote": "This is a closed, safeguarding-focused community for a vulnerable group. Accessing it requires a real, vetted membership — do NOT create a false identity to get in. Approach only through legitimate channels (e.g. police/partner referral) and treat all content as highly sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "manual-review",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established UK registered charity (National Ugly Mugs); data is genuine safeguarding reporting, but ethically and legally gated behind vetted membership.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": true,
+    "aliases": [
+      "Ugly Mugs",
+      "NUM",
+      "uglymugs.org"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "safeguarding",
+      "sex-worker-safety"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/uglymugs-org.md"
   },
   {
@@ -355409,35 +355460,50 @@
   {
     "id": "tweet-topic-explorer",
     "name": "Tweet Topic Explorer",
-    "description": "OSINT tool: Tweet Topic Explorer.",
+    "description": "Use when you have an X/Twitter `username` and want to see what they tweet about and who they mention most — returns a topic word-cloud and frequently-mentioned `associate` handles.",
     "url": "http://tweettopicexplorer.neoformix.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Quickly profiling a Twitter account's dominant topics and most-mentioned users from their recent tweets.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free tool by Jeff Clark (Neoformix); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the tool, not the target; the target is not notified. However the tool historically pulled tweets via Twitter's API, so results depend on API access and may be empty or stale.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent 2011 visualization tool by data-viz author Jeff Clark; well-regarded historically but reliant on Twitter API access that is now heavily restricted.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Neoformix Tweet Topic Explorer"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "visualization",
+      "topic-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tweet-topic-explorer.md"
   },
   {
@@ -382376,13 +382442,13 @@
   {
     "id": "username-check",
     "name": "Username Check",
-    "description": "OSINT tool: Username Check.",
+    "description": "Use when you have a `username` and want to see which sites/social platforms it is registered on — returns candidate `social-profile` links across many services.",
     "url": "http://www.usernamecheck.com",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "A fast, no-login sweep of one handle across dozens of social and web platforms.",
     "selectorsIn": [
       "username"
     ],
@@ -382390,28 +382456,34 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account required.",
+    "opsec": "passive",
+    "opsecNote": "The tool queries each platform on your behalf; the target is not notified. It does, however, make live requests to many sites — run it from a sock-puppet browser/IP rather than an attributable connection.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party availability checker; results can lag reality (false \"available\"/\"taken\") and the service has shown intermittent downtime — verify each hit manually.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "usernamecheck.com"
+    ],
     "tags": [
-      "username"
+      "username",
+      "enumeration"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/username-check.md"
   },
   {
