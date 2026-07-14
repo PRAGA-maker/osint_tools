@@ -122936,13 +122936,13 @@
   {
     "id": "cellular-towers-map-canada",
     "name": "Cellular Towers Map (Canada)",
-    "description": "Map of cellular towers in Canada, searchable by location and filterable by service provider",
+    "description": "Use when you have a Canadian `geolocation`/`address` and want to identify nearby licensed cellular tower sites and their operators — returns tower locations and provider info.",
     "url": "http://www.ertyu.org/steven_nikkel/cancellsites.html",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Locating Canadian cell tower sites near a point and identifying which carrier operates them.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -122951,31 +122951,41 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public map built from Industry Canada / ISED spectrum-licence data.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads a static public dataset of licensed tower sites; no target, account, or query is exposed to any subject. Fully passive. This maps infrastructure, not people or devices — it cannot locate a phone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Long-standing independent project by Steven Nikkel using official Canadian spectrum-licence records. Data can lag the regulator; treat as approximate.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "cellmapper",
+      "opencellid"
+    ],
+    "aliases": [
+      "Canadian Cellular Towers",
+      "ertyu.org cell sites"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "cell-towers"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/geolocation/cellular-towers-map-canada.md"
   },
@@ -142882,45 +142892,55 @@
   {
     "id": "face-comparison-by-toolpie",
     "name": "Face Comparison by ToolPie",
-    "description": "Compares two human face photos to determine similarity.",
+    "description": "Use when you have two `face`/`image` photos and want to know whether they show the same person — returns a same-person similarity score.",
     "url": "https://facecomparison.toolpie.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Quick 1:1 verification of whether two face photos are the same individual.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile",
-      "image"
+      "face"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free web tool; no account required.",
+    "opsec": "active",
+    "opsecNote": "You upload the target's photos to a third-party (ToolPie) server for AI processing. The site states photos are deleted after comparison, but uploading a subject's face to an unknown third party is an active disclosure — avoid for sensitive cases, or self-host an offline comparator instead. No target is notified.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Listed in the Bellingcat online investigation toolkit. A convenience AI face-matcher; the vendor's stated accuracy is self-reported and unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "pimeyes"
+    ],
+    "aliases": [
+      "ToolPie Face Comparison"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "facial-recognition"
+      "facial-recognition",
+      "face-match"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/face-comparison-by-toolpie.md"
   },
   {
@@ -178526,37 +178546,53 @@
   {
     "id": "tgramsearch",
     "name": "TgramSearch",
-    "description": "OSINT tool: TgramSearch.",
+    "description": "Use when you have a keyword, topic, or `username` and want to find related Telegram channels — returns a catalogue of channels with names, descriptions, and join links as social-profile leads.",
     "url": "https://tgramsearch.com/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a large indexed catalogue of public Telegram channels by keyword or category.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You search a third-party index of public channels, not Telegram itself, so no channel admin is notified of your search. The index operator sees your queries/IP; use a sock-puppet browser. Actually joining a discovered channel in Telegram is a separate, more active step done from an investigative account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Independent Telegram channel-directory (Russian-language interface) indexing 800k+ channels from open sources. Coverage is broad but incomplete and unranked by authority.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "telegago",
+      "tgstat"
+    ],
+    "aliases": [
+      "Tgram Search",
+      "tgramsearch.com"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "channel-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/tgramsearch.md"
   },
   {
@@ -221529,43 +221565,56 @@
   {
     "id": "receive-sms-free-3",
     "name": "Receive-SMS (free)",
-    "description": "OSINT tool: Receive-SMS (free).",
+    "description": "Use when you need a disposable `phone` number to receive SMS for a sock-puppet signup, or want to check whether a target's number is a known public/shared burner — returns public inbox messages and number metadata.",
     "url": "https://receive-sms.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Provisioning throwaway numbers for investigative signups, and recognising numbers that are public shared-SMS burners.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free shared public numbers (messages visible to everyone); private, dedicated numbers require an account and payment. The free tier is fine for OpSec-tolerant signups and for the \"is this a burner?\" check.",
+    "opsec": "active",
+    "opsecNote": "Two modes. Using a free number for your own signups is operational, not a query against a target. Free numbers are PUBLIC — anyone can read the SMS, so never send them a real 2FA/reset code tied to your identity. Checking whether a target's number appears here is passive. Buying a private number ties a payment trail to you; use appropriate cover.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Typical public disposable-SMS service; operator anonymous. Reliable for its purpose but treat all free-number traffic as fully public and untrusted.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "fastmail-usa"
+    ],
+    "aliases": [
+      "receive-sms.com",
+      "disposable SMS"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "disposable-number",
+      "sock-puppet-infrastructure"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/receive-sms-free-3.md"
   },
   {
@@ -223961,44 +224010,56 @@
   {
     "id": "yellow-co-nz",
     "name": "yellow.co.nz",
-    "description": "OSINT tool: yellow.co.nz.",
+    "description": "Use when you have a business `name`/`phone` in New Zealand and want contact and location details — returns address, phone, and website for NZ businesses (limited for private individuals).",
     "url": "https://yellow.co.nz/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up New Zealand business listings by name to get phone, address, and website.",
     "selectorsIn": [
+      "name",
       "phone"
     ],
     "selectorsOut": [
       "name",
       "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory search; businesses pay for enhanced listings but lookup is free and needs no account.",
+    "opsec": "passive",
+    "opsecNote": "A published business directory — searching it does not notify anyone and reveals only self-published business contact data. Passive. It is not a reverse-lookup for private mobile numbers; expect little on individuals.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The official New Zealand Yellow Pages directory (Yellow NZ). Business data is self-submitted and generally reliable; coverage of private individuals is minimal.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "nz"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "whitepages-nz"
+    ],
+    "aliases": [
+      "Yellow NZ",
+      "Yellow Pages New Zealand"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "business-directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/yellow-co-nz.md"
   },
   {
@@ -234101,46 +234162,56 @@
   {
     "id": "cpaverify-org",
     "name": "cpaverify.org",
-    "description": "OSINT tool: cpaverify.org.",
+    "description": "Use when you have a `name` and want to confirm whether someone is a licensed US CPA — returns license status, jurisdiction, and issuing-board details (employer-org/address hints).",
     "url": "https://cpaverify.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a US Certified Public Accountant's license across participating state boards in one search.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public lookup operated by NASBA; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A public regulatory register — searching it does not contact or notify the subject. Queries go to NASBA's ALD service and are logged there; use a sock-puppet browser if you want to avoid tying the search to yourself. Nothing here is intrusive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by NASBA (National Association of State Boards of Accountancy); aggregates official state-board CPA license data. Authoritative, though not every state participates.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "thentiacloud-net"
+    ],
+    "aliases": [
+      "CPAverify",
+      "NASBA CPA lookup",
+      "ald.nasba.org"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "public-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cpaverify-org.md"
   },
   {
@@ -272024,46 +272095,55 @@
   {
     "id": "thentiacloud-net",
     "name": "thentiacloud.net",
-    "description": "OSINT tool: thentiacloud.net.",
+    "description": "Use when you have a `name` and want to confirm a person's professional registration/licence on a regulator's public register — returns registration status, registrant number, and profession/employer details.",
     "url": "https://coru.portaleu.thentiacloud.net/webs/portal/register/#/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a regulator's official public register (hosted on Thentia Cloud) to verify a practitioner's licence.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register search; no account. Thentia Cloud is the platform vendor — the data belongs to the specific regulator hosting on it.",
+    "opsec": "passive",
+    "opsecNote": "Public regulatory registers are meant to be searched; doing so does not notify the registrant. Queries are logged by the platform/regulator; use a sock-puppet browser if attribution matters. Fully passive and non-intrusive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Thentia Cloud is a licensing platform used by official professional regulators to publish their public registers; the data is authoritative regulator data. This specific instance is a regulator's live register (e.g. CORU, Ireland's health & social care regulator).",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "cpaverify-org"
+    ],
+    "aliases": [
+      "Thentia Cloud register",
+      "CORU register"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "public-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/thentiacloud-net.md"
   },
   {
@@ -319141,35 +319221,58 @@
   {
     "id": "birdhunt",
     "name": "BirdHunt",
-    "description": "OSINT tool: BirdHunt.",
+    "description": "Use when you have a `geolocation` (place of interest) and want X/Twitter posts sent from near it — returns geographically-filtered posts and their authors as social-profile leads.",
     "url": "https://birdhunt.co/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding tweets by location — surfacing X posts and accounts active near a chosen point.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Part of the HuntIntel platform; a basic location search is usable, deeper features and higher limits are account/paid-gated. Confirm current limits on the site.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query a third-party search of public X posts; no target is notified. BirdHunt/HuntIntel logs your searches and may require an account — use an investigative login. Post geotags are coarse and often profile-set, so a returned location is a lead, not a device fix.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial OSINT search tool (HuntIntel). Depends on X data access, which limits completeness and can change without notice.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "xplore-x-vercel-app",
+      "twitter-advanced-search"
+    ],
+    "aliases": [
+      "BirdHunt",
+      "birdhunt.huntintel.io"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "geosocial",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/birdhunt.md"
   },
   {
@@ -352985,35 +353088,58 @@
   {
     "id": "truthnest",
     "name": "TruthNest",
-    "description": "OSINT tool: TruthNest.",
+    "description": "Use when you have an X/Twitter `username` and want deep account analytics (activity patterns, hashtags, mentions, bot-likelihood signals) — returns a behavioural social-profile.",
     "url": "https://app.truthnest.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Analysing an X/Twitter account's posting behaviour, network, and authenticity signals for verification work.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Originally free to the fact-checking community; the free tier was revoked after Twitter/X API pricing changes. Now access is gated behind a paid/quote arrangement — contact truthnest@atc.gr. Treat as effectively pay-gated.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Analysis runs server-side against X's public data; the target is not notified. You must log into TruthNest, so your investigative identity is known to the operator (ATC, a Greek company) — use an investigative account, not your personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trustNote": "Built by Athens Technology Center (ATC) for journalist/fact-checker use. Reputable origin, but reliant on X's API — coverage degraded as X restricted access.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "xcancel-nitter-mirror"
+    ],
+    "aliases": [
+      "Truth Nest",
+      "app.truthnest.com"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "account-analytics",
+      "verification"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/truthnest.md"
   },
   {
@@ -359651,28 +359777,30 @@
   {
     "id": "xcancel-nitter-mirror",
     "name": "XCancel (Nitter mirror)",
-    "description": "Nitter-based X/Twitter front-end allowing tweet viewing without an account.",
+    "description": "Use when you have an X/Twitter `username` and want to read their tweets, replies, and media without logging in — returns the public timeline as a social-profile via a Nitter front-end.",
     "url": "https://xcancel.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Login-free X/Twitter mirror to view a user's tweets, media and replies.",
+    "bestFor": "Reading and searching an X account's public timeline, media, and replies with no account and no JavaScript tracking.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public Nitter instance; no account, no ads.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You view X content through a third-party Nitter mirror instead of x.com, so X does not tie the view to your identity and the target gets no notification. The mirror operator sees your IP/queries; use a sock-puppet browser or route through Tor. Nitter instances come and go — have backup mirrors ready.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "One of the surviving public Nitter mirrors after X's API lockdown. Community-run; reliability fluctuates as X blocks instances.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -359681,8 +359809,14 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "invitationOnly": false,
+    "relatedTools": [
+      "truthnest",
+      "twitter-advanced-search"
+    ],
     "aliases": [
-      "XCancel"
+      "XCancel",
+      "Nitter"
     ],
     "tags": [
       "twitter",
@@ -359692,7 +359826,7 @@
       "no-login"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/xcancel-nitter-mirror.md"
   },
