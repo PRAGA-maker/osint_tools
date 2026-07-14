@@ -148183,30 +148183,31 @@
   {
     "id": "imageshack-us",
     "name": "Imageshack.us",
-    "description": "Website related to social networking with photo galleries, photo posting and sharing services",
+    "description": "Use when you have a lead pointing to an ImageShack-hosted `image` or user gallery and want to view it / enumerate a subject's uploaded photos — returns image, social-profile.",
     "url": "http://imageshack.us",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing images and user galleries hosted on ImageShack (not a reverse-image search).",
     "selectorsIn": [
       "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "imageshack.us now redirects to imageshack.com. Viewing public images is free; uploading/hosting and account features are on a paid/freemium plan. It is an image HOST, not a search engine — there is no reverse-image lookup here.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a hosted image or public gallery is passive and doesn't notify the uploader. Use a sock-puppet browser; if you view a private/unlisted link the host may log the access.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legitimate long-running image host, but as an OSINT source its value is narrow — it stores images others link to; it does not search or match them. Find ImageShack images via a general/reverse-image engine, then view them here.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -148215,14 +148216,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ImageShack"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "image-hosting"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/imageshack-us.md"
   },
@@ -149732,37 +149736,52 @@
   {
     "id": "jpegsnoop-2",
     "name": "JPEGsnoop",
-    "description": "OSINT tool: JPEGsnoop.",
+    "description": "Use when you have an `image` (JPEG/AVI/PSD) and want to read its embedded metadata and detect editing/forgery from its compression signature — returns metadata-exif, geolocation, device-id.",
     "url": "https://sourceforge.net/projects/jpegsnoop",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Deep JPEG metadata extraction and tamper/edit detection via compression-signature analysis.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation",
+      "device-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open source (GPLv2); a standalone Windows executable, no account or purchase.",
+    "opsec": "passive",
+    "opsecNote": "Fully offline analysis on a file you already hold — nothing is sent to the target or any server, so it is completely passive and safe for sensitive evidence. Work on a copy to preserve the original's hash.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-standing, widely cited forensic utility (Calvin Hass) with 100k+ downloads; its EXIF read-out is authoritative, but its tamper \"assessment\" is a heuristic on quantization tables, not proof of manipulation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "JPEGsnoop"
+    ],
     "tags": [
-      "image-analysis"
+      "image-analysis",
+      "exif",
+      "forensics"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/jpegsnoop-2.md"
   },
   {
@@ -175949,43 +175968,57 @@
   {
     "id": "slackpirate",
     "name": "SlackPirate",
-    "description": "Slack workspace enumeration and sensitive data exposure assessment",
+    "description": "Use when you already hold a valid access `token`/session for a Slack workspace and want to enumerate its users and hunt exposed secrets/PII — returns email, name, employer-org, document-id, associate.",
     "url": "https://github.com/emtunc/SlackPirate",
     "category": "messaging",
     "path": [
       "messaging",
       "slack"
     ],
-    "bestFor": "Slack workspace enumeration and sensitive data exposure assessment",
-    "input": "Authenticated Slack session/token and workspace target",
-    "output": "Channel/user inventory and extracted accessible Slack content",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Enumerating a Slack workspace and surfacing accidentally-shared credentials/PII once you have a token.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "email",
+      "name",
+      "employer-org",
+      "associate",
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source Python tool (MIT). No cost, but you must supply your own valid Slack access token.",
     "opsec": "active",
-    "opsecNote": "Interacts directly with Slack workspace APIs and can leave observable request activity.",
+    "opsecNote": "This authenticates to a real Slack workspace and issues many API calls, which Slack logs and workspace admins/audit tooling can see. Only run against a workspace you are authorised to test (your own org or a sanctioned engagement) with a token you legitimately hold — enumerating a workspace you don't control is unlawful. Never use a token obtained illicitly.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "account-login",
+      "legal-gate"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known defensive/red-team tool by emtunc, widely used in security assessments; open-source and inspectable, but it is a security tool whose legitimacy depends entirely on authorised use.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": true,
-    "registration": true,
+    "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "SlackPirate"
+    ],
+    "tags": [
+      "slack",
+      "security-assessment",
+      "credential-exposure"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/slack/slackpirate.md"
   },
   {
@@ -270348,46 +270381,51 @@
   {
     "id": "teachingcouncil-ie",
     "name": "teachingcouncil.ie",
-    "description": "OSINT tool: teachingcouncil.ie.",
+    "description": "Use when you have a `name` you believe belongs to an Irish teacher and want to confirm their registration status and registration number — returns name, employer-org (registration), document-id.",
     "url": "http://www.teachingcouncil.ie/en/Registration/Register-of-Teachers/Search-the-Register/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a person is a registered teacher in Ireland and retrieving their registration details.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, public statutory register maintained by the Teaching Council of Ireland; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "A read-only query against an official public register; the subject is not notified and nothing is disclosed to them. No login, so no attribution beyond ordinary web-server logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Teaching Council, Ireland's statutory regulator for the teaching profession; the register is authoritative for registration status.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Teaching Council of Ireland Register",
+      "Search the Register of Teachers"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/teachingcouncil-ie.md"
   },
   {
@@ -324691,35 +324729,49 @@
   {
     "id": "facebook-video-downloader",
     "name": "Facebook Video Downloader",
-    "description": "OSINT tool: Facebook Video Downloader.",
+    "description": "Use when you have a public Facebook video `url` (from a target's `social-profile`) and want to save the file for offline capture and analysis — returns image (video), metadata-exif.",
     "url": "https://fbdown.github.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Downloading a public Facebook video for evidence preservation and frame/metadata analysis.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free, ad-supported, no login. A browser-based downloader (also offers a Chrome extension).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Pasting a public video URL into the downloader fetches the media server-side, so Facebook does not see your IP and the poster is not notified. It is an unaffiliated ad-heavy site — never enter Facebook credentials, use a sock-puppet browser with an ad-blocker, and avoid installing the extension on a real device.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Anonymous third-party downloader (copyright ~2019) that depends on Facebook's changing markup; these tools break frequently, so treat availability as unreliable and have a fallback.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "fbdown",
+      "FB video downloader"
+    ],
+    "tags": [
+      "facebook",
+      "media-download"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-video-downloader.md"
   },
   {
@@ -339529,13 +339581,13 @@
   {
     "id": "osint-combine-tiktok-quick-search",
     "name": "OSINT Combine TikTok Quick Search",
-    "description": "Browser tool to search TikTok by username, hashtag, or keyword; returns direct profile/result links.",
+    "description": "Use when you have a `username`, `name`, or keyword/hashtag and want to jump straight into the right TikTok search views — returns social-profile links.",
     "url": "https://www.osintcombine.com/tiktok-quick-search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "One-box pivot into TikTok profile, hashtag, and keyword searches from a handle or term.",
     "selectorsIn": [
       "username",
       "name"
@@ -339543,15 +339595,16 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account required; a browser-based query builder hosted by OSINT Combine.",
+    "opsec": "passive",
+    "opsecNote": "The tool just constructs and opens TikTok search/profile URLs — the actual viewing happens on TikTok, which logs the visit against your IP/session. Use a sock-puppet browser and stay logged out of TikTok so views aren't tied to your account or surfaced to the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "",
+    "trustNote": "Published by OSINT Combine, a reputable OSINT training/tooling vendor; it is a thin, transparent query-builder over TikTok's own search, so nothing proprietary can be wrong — results are whatever TikTok returns.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -339560,12 +339613,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT Combine TikTok search"
+    ],
     "tags": [
+      "tiktok",
+      "pivot-tool",
       "kimi-2026"
     ],
     "source": "kimi-tiktok-snap",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/osint-combine-tiktok-quick-search.md"
   },
@@ -340221,13 +340278,13 @@
   {
     "id": "overseas-weibo-com",
     "name": "overseas.weibo.com",
-    "description": "OSINT tool: overseas.weibo.com.",
+    "description": "Use when you have a `name`/`username` and want to reach Sina Weibo to search for a Chinese-language social profile — returns social-profile, name. The overseas portal now just redirects to weibo.com.",
     "url": "http://overseas.weibo.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Entry point to Sina Weibo profile/keyword search (overseas portal now folds into weibo.com).",
     "selectorsIn": [
       "username",
       "name"
@@ -340236,29 +340293,38 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to browse; overseas.weibo.com now 301-redirects to the main weibo.com. Deeper viewing/search on Weibo increasingly requires a registered (often China-mobile-verified) account.",
+    "opsec": "active",
+    "opsecNote": "Weibo is a Chinese-operated platform with real-name policies and heavy logging; searching and especially registering ties activity to you. Use a sock-puppet account and browser, and assume queries are logged. Do not use a personal identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The genuine Sina Weibo platform, but the dedicated \"overseas\" portal is effectively deprecated (redirects to weibo.com); search depth is gated behind login and Chinese-language handling.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Weibo overseas",
+      "Sina Weibo international"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "weibo"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/overseas-weibo-com.md"
   },
   {
@@ -353979,35 +354045,50 @@
   {
     "id": "twiangulate-analyzing-the-connections-between-friends-and-followers",
     "name": "Twiangulate: analyzing the connections between friends and followers",
-    "description": "OSINT tool: Twiangulate: analyzing the connections between friends and followers.",
+    "description": "Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, social-profile. Likely degraded by X API lockdown.",
     "url": "http://twiangulate.com/search/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding mutual connections and overlapping networks between Twitter/X accounts.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use; some analyses gated behind sign-in. No payment, but functionality now depends on X API access.",
+    "opsec": "active",
+    "opsecNote": "Requires \"Sign in with Twitter\", which authorises the app against YOUR X account and ties queries to it — not anonymous. Use a sock-puppet X account, never your real one, and revoke the app's access afterward.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running third-party network-analysis site (since 2009); genuine, but wholly dependent on Twitter/X API access, which has been heavily restricted — treat current functionality as unreliable until confirmed live.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Twiangulate"
+    ],
+    "tags": [
+      "twitter",
+      "network-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twiangulate-analyzing-the-connections-between-friends-and-followers.md"
   },
   {
@@ -357633,35 +357714,51 @@
   {
     "id": "vk-search-engine",
     "name": "VK Search Engine",
-    "description": "OSINT tool: VK Search Engine.",
+    "description": "Use when you have a `name`/`username` and want to search VKontakte (VK) profiles and content via a pre-scoped Google Custom Search Engine — returns social-profile, name.",
     "url": "https://cse.google.com/cse?cx=f5e7cd4c6e33954ec",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding VK (VKontakte) profiles and posts for a name/handle via a VK-scoped Google CSE.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free browser widget; a Google Custom Search Engine scoped to vk.com. No account for the widget.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries hit Google (not VK directly), so it's passive and the target isn't notified. Opening the VK profiles it surfaces does touch VK — use a sock-puppet browser and stay logged out of VK. Note VK is Russian-operated; treat all interaction accordingly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Google runs the engine, but the vk.com scope is defined by an unknown third party's `cx` config and Google's index of VK is partial and can lag — coverage is unverifiable and drifts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "VK Google CSE",
+      "VKontakte search"
+    ],
+    "tags": [
+      "vk",
+      "vkontakte",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/vk-search-engine.md"
   },
   {
