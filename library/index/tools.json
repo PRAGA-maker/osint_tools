@@ -174079,41 +174079,48 @@
   {
     "id": "linelog2py",
     "name": "linelog2py",
-    "description": "Converting LINE chat exports for downstream analysis workflows",
+    "description": "Use when you have an exported LINE chat history file and want it parsed into structured messages for analysis — returns per-message `username` (sender), timestamps, and content for timeline/associate mapping.",
     "url": "https://github.com/jyu0414/linelog2py",
     "category": "messaging",
     "path": [
       "messaging",
       "wechat-line"
     ],
-    "bestFor": "Converting LINE chat exports for downstream analysis workflows",
-    "input": "Exported LINE chat history files",
-    "output": "Structured parsed LINE messages and conversation artifacts",
+    "bestFor": "Parsing exported LINE chat logs into structured Message objects (sender, timestamp, type, content) for downstream analysis.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "username",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free open-source Python library (jyu0414/linelog2py); installable via `pip install linelog2py`.",
     "opsec": "passive",
-    "opsecNote": "Processes local chat export files without contacting target services.",
+    "opsecNote": "Fully passive and offline — it parses chat-export text files locally and never contacts LINE or any server. OpSec risk is entirely in how you lawfully obtained the export (consent, seizure, disclosure); the parsing itself leaks nothing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "python-lib",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small open-source library (modest GitHub adoption). It only transforms a file you already possess, so trust risk is low — but audit the code before running it on sensitive evidence.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "LINE chat export parser"
+    ],
+    "tags": [
+      "line",
+      "chat-analysis",
+      "messaging"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/wechat-line/linelog2py.md"
   },
   {
@@ -223957,41 +223964,53 @@
   },
   {
     "id": "usa-telephone-directory-collection",
-    "name": "USA Telephone Directory Collection",
-    "description": "3512 of paper \"yellow\" and \"white\" pages available for download in PDF published from 1887 to 1987",
+    "name": "USA Telephone Directory Collection (Library of Congress)",
+    "description": "Use when you have a historical US `name`, `phone`, or `address` (roughly 1880s–1980s) and want to place a person at an address/number in that era — returns `address`, `phone`, and `name` from scanned directories.",
     "url": "https://www.loc.gov/collections/united-states-telephone-directory-collection/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Historical US white/yellow-pages lookups (1887–1987) for cold cases, genealogy, and confirming an era-specific address or number.",
     "selectorsIn": [
-      "phone"
+      "name",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
-      "phone"
+      "address",
+      "phone",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free digitized collection from the Library of Congress; PDFs are downloadable at no cost, no account required.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you are reading digitized historical documents on loc.gov, not querying any live person or service. No subject is alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hosted by the Library of Congress; the scans are authoritative primary documents, though OCR/searchability is imperfect and you often browse a directory page-by-page.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Library of Congress telephone directories",
+      "historical phone books US"
+    ],
     "tags": [
-      "Phone numbers"
+      "Phone numbers",
+      "historical",
+      "genealogy"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/usa-telephone-directory-collection.md"
   },
@@ -266433,47 +266452,51 @@
   },
   {
     "id": "residential-rental-properties",
-    "name": "Residential Rental Properties",
-    "description": "OSINT tool: Residential Rental Properties.",
+    "name": "Check the Register of Fair Rents (GOV.UK)",
+    "description": "Use when you have a UK residential `address` and want to check the registered \"fair rent\" for a regulated tenancy — returns confirmation the property exists on the register plus a rent record tied to the `address`.",
     "url": "https://www.gov.uk/check-register-rents",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a UK regulated-tenancy property and its registered maximum rent by address (older private lettings started before 15 Jan 1989).",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online check via GOV.UK / the Valuation Office Agency; certified copies of a register entry cost £1.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you query a government property register by address, not a person, and no subject is notified. The register is about the property/tenancy, not directly about named occupants.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official GOV.UK / Valuation Office Agency service; the register is an authoritative government record, though pre-2004 entries may be offline and require contacting the VOA.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Fair Rents register",
+      "check register of rents",
+      "VOA fair rents"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/residential-rental-properties.md"
   },
   {
@@ -285634,24 +285657,25 @@
   {
     "id": "cyb-detective-osint-stuff-tool-collection",
     "name": "cyb_detective OSINT stuff tool collection",
-    "description": "Large categorized index of 1000+ OSINT tools and services by cipher387 (cyb_detective).",
+    "description": "Use when you have a selector class (username, email, phone, image, domain…) and want to discover niche tools for it — returns pointers to 1000+ categorized OSINT tools, not subject data.",
     "url": "https://cipher387.github.io/osint_stuff_tool_collection/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Browsing an enormous categorized index of niche OSINT tools",
+    "bestFor": "Browsing an enormous, deeply categorized index of niche OSINT tools and services to find the right instrument for a selector.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public index on GitHub Pages (with a companion GitHub repo); no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the collection is passive — it's a directory of tools, not a query against a subject. Each listed tool has its own OpSec profile; evaluate that before running any of them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Maintained by cipher387/cyb_detective, prolific OSINT tool curator.",
+    "trustNote": "Maintained by cipher387 (cyb_detective), a prolific and well-regarded OSINT tool curator; the curation is reputable, though individual listed tools vary in quality and liveness.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -285666,14 +285690,15 @@
     ],
     "tags": [
       "tool-collection",
+      "directory",
       "username",
       "email",
       "phone",
       "image"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/cyb-detective-osint-stuff-tool-collection.md"
   },
   {
@@ -304535,7 +304560,7 @@
     "bestInteractionPattern": "web-manual",
     "trust": "community",
     "trustNote": "Community-curated directory. Useful as a jump-off point; individual listed tools vary widely in trust and must be judged on their own.",
-    "missingPersonsRelevance": "medium",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
@@ -311049,13 +311074,13 @@
   {
     "id": "spiderfoot-poppopjmp-fork",
     "name": "SpiderFoot (poppopjmp fork)",
-    "description": "Automated OSINT collection engine for threat analysis and attack-surface mapping across 200+ modules.",
+    "description": "Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ modules — returns `email`, `social-profile`, `domain`, `ip-address`, and `address` correlations.",
     "url": "https://github.com/poppopjmp/spiderfoot",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Automated multi-source enrichment of a name/email/domain/IP/phone",
+    "bestFor": "Automated, correlated OSINT enrichment of a seed selector across hundreds of data sources in one run.",
     "selectorsIn": [
       "name",
       "email",
@@ -311071,25 +311096,29 @@
       "ip-address",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source. Many modules work with no key; others (Shodan, Hunter, HaveIBeenPwned, etc.) need your own API keys to activate — some of those are paid.",
     "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "SpiderFoot can run ACTIVE modules that touch the target directly — DNS lookups, port/banner scans, web crawling — which are logged by the target's infrastructure. For OPSEC-sensitive work, explicitly select a passive-only module set (or \"passive\" scan mode) so you never touch the subject. Your own IP and API keys are exposed to the data sources you enable.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Fork of the well-known SpiderFoot framework (174 stars on fork).",
+    "trustNote": "A maintained community fork of the well-known SpiderFoot framework; the core engine is mature and widely used, though this specific fork's currency should be checked against upstream.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": false,
     "aliases": [
-      "spiderfoot"
+      "spiderfoot",
+      "SpiderFoot HX fork"
     ],
     "tags": [
       "automation",
@@ -311097,7 +311126,7 @@
       "enrichment"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/search-engines/spiderfoot-poppopjmp-fork.md"
   },
@@ -332929,45 +332958,55 @@
   },
   {
     "id": "here-16",
-    "name": "Here",
-    "description": "OSINT tool: Here.",
+    "name": "Twitch Law Enforcement Response (reference)",
+    "description": "Use when you have a Twitch `username`/`social-profile` and a case that may justify legal process — returns the official path and requirements for law enforcement to obtain subscriber data (`name`, `email`, `ip-address`) from Twitch.",
     "url": "https://safety.twitch.tv/s/article/Law-Enforcement-Response?language=en_US",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding how (and via what process) law enforcement can compel Twitch to disclose account/subscriber records, including emergency-disclosure routes.",
     "selectorsIn": [
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "name",
+      "email",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free reference documentation from Twitch; obtaining actual data requires valid legal process (subpoena/warrant) or a qualifying emergency request — available only to law enforcement.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guidelines is passive. Any actual request is an official law-enforcement action tied to your agency and case, and Twitch may notify the user unless legally barred (e.g. a non-disclosure order). This route is for authorized investigators only — not an OSINT trick.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Twitch (Amazon) safety documentation of its own law-enforcement response process; authoritative for what Twitch requires and provides.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Twitch law enforcement guidelines",
+      "Twitch LE response"
+    ],
     "tags": [
       "twitch",
-      "Twitch Related Sites"
+      "Twitch Related Sites",
+      "legal-process"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/here-16.md"
   },
   {
@@ -354478,45 +354517,49 @@
   },
   {
     "id": "trevorfox-com",
-    "name": "trevorfox.com",
-    "description": "OSINT tool: trevorfox.com.",
+    "name": "Reddit Post Date Finder (trevorfox.com)",
+    "description": "Use when you have a Reddit post/comment `social-profile` URL and want its exact creation timestamp — returns precise UTC/local date-time metadata for timeline analysis.",
     "url": "https://trevorfox.com/reddit-post-date-finder/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering the exact UTC and local timestamp of a Reddit post/comment from its shareable URL.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single-purpose web utility; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The tool reads publicly available data embedded in Reddit's pages; it does not post, vote, or notify anyone. Running it is passive. It does not require a Reddit login.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A personal-site utility by Trevor Fox; it derives timestamps from Reddit's own public data, so the value it returns is verifiable against Reddit directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Reddit post date finder",
+      "reddit timestamp finder"
+    ],
     "tags": [
+      "reddit",
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "timestamp"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/trevorfox-com.md"
   },
   {

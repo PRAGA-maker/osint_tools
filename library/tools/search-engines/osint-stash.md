@@ -19,7 +19,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: community
 trustNote: Community-curated directory. Useful as a jump-off point; individual listed tools vary widely in trust and must be judged on their own.
-missingPersonsRelevance: medium
+missingPersonsRelevance: high
 coverage:
 - global
 auth: none
@@ -79,7 +79,7 @@ You're mid-investigation and hold a selector class — a `username`, `email`, `i
 | selectorsIn → selectorsOut |  →  |
 | pricing / cost | free |
 | trust | community |
-| MP relevance | medium |
+| MP relevance | high |
 | interaction | web-manual |
 | opsec | passive |
 | human-in-loop | no |
