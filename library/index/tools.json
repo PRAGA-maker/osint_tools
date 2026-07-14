@@ -207081,47 +207081,55 @@
   },
   {
     "id": "free-public-records-directory-us",
-    "name": "Free Public Records Directory (US)",
-    "description": "OSINT tool: Free Public Records Directory (US).",
-    "url": "http://publicrecords.onlinesearches.com golookup (us)",
+    "name": "OnlineSearches (Free Public Records Directory, US)",
+    "description": "Use when you have a name and a US state/county and want the right official record source — returns links to free state/county property, court, vital and voter record searches.",
+    "url": "http://publicrecords.onlinesearches.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the correct free official US state/county public-records search portal for a given jurisdiction.",
     "selectorsIn": [
-      "name"
+      "name",
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "phone",
-      "email",
       "associate",
-      "social-profile",
-      "dob"
+      "dob",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The directory and the official searches it links to are free; OnlineSearches is operated by Intelius and upsells paid people-search reports on the same pages. Stick to the outbound links to free official sources to avoid the paywall.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and does not alert anyone. Each outbound official search runs on a government site with its own logging. Avoid running names through the Intelius-branded paid boxes on the page if you want to stay off a commercial broker's logs; use the free official links instead. VPN for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An aggregator/directory (Intelius-run) that links to authoritative government sources; the directory itself is a signpost, and it monetises via paid reports, so treat its own boxes with caution and trust the official sites it points to.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OnlineSearches",
+      "publicrecords.onlinesearches.com",
+      "Free Public Records Directory"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "public-records-directory",
+      "us"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/free-public-records-directory-us.md"
   },
   {
@@ -251603,47 +251611,58 @@
   },
   {
     "id": "lithuania",
-    "name": "Lithuania",
-    "description": "OSINT tool: Lithuania.",
+    "name": "Lithuania Register of Legal Entities (JAR)",
+    "description": "Use when you have a company name, person name or address and want official Lithuanian company records — returns registration code, legal status, address and management/officer names.",
     "url": "https://www.registrucentras.lt/jar/p_en/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a Lithuanian company and finding the people (directors, managers) legally tied to it.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search of the Register of Legal Entities, capped at roughly 100 free searches per day; formal certified extracts and deeper filings are paid.",
+    "opsec": "passive",
+    "opsecNote": "Querying an official public register is passive — the subject is not notified. The state operator logs standard web access; use a VPN for sensitive lookups. You are searching a government database, so stay within lawful public-record use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the State Enterprise Centre of Registers (Registrų centras) under Lithuania's Ministry of Justice — the authoritative national company register.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "lt"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Registru centras",
+      "JAR",
+      "Lithuania company register",
+      "Register of Legal Entities Lithuania"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry",
+      "lithuania"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/lithuania.md"
   },
   {
@@ -252440,36 +252459,57 @@
   },
   {
     "id": "manitoba-sex-offender",
-    "name": "Manitoba Sex Offender",
-    "description": "OSINT tool: Manitoba Sex Offender.",
+    "name": "Manitoba High-Risk Sex Offender Notification",
+    "description": "Use when you have a name or photo and want to check whether the subject is a publicly notified high-risk sex offender in Manitoba — returns name, photo, offence history and expected residence area.",
     "url": "https://www.gov.mb.ca/justice/commsafe/notification/index.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming whether a person is a Manitoba-notified high-risk sex offender and reading their last-known residence area.",
+    "selectorsIn": [
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "name",
+      "image",
+      "physical-description",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official Government of Manitoba notification page; no account or payment. Access is gated to Manitoba residents (self-attested).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reading a government notification page is passive and leaves no trace with the subject. You must click through a Manitoba-residency confirmation; the page logs standard web-server access only. Do not republish offender details outside your investigation — misuse of notification data can breach the terms of release.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published directly by the Province of Manitoba (Justice / Manitoba Integrated High Risk Sex Offender Unit) using police-supplied data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Manitoba Justice offender notification",
+      "Manitoba high risk sex offender registry",
+      "commsafe notification"
+    ],
+    "tags": [
+      "public-records",
+      "sex-offender-registry",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/manitoba-sex-offender.md"
   },
   {
@@ -289143,44 +289183,54 @@
   },
   {
     "id": "github-io-2",
-    "name": "github.io",
-    "description": "OSINT tool: github.io.",
+    "name": "FilePhish (Greylens)",
+    "description": "Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns document leads and their embedded metadata.",
     "url": "https://greylensresearch.github.io/filephish/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Building filetype-targeted \"dork\" queries to hunt exposed documents across six search engines.",
     "selectorsIn": [
-      "name"
+      "name",
+      "domain"
     ],
     "selectorsOut": [
-      "name",
-      "social-profile"
+      "document-id",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free static web tool hosted on GitHub Pages; no account, no payment, no rate limit of its own (the underlying search engine's limits apply).",
+    "opsec": "passive",
+    "opsecNote": "FilePhish itself only assembles a query string in your browser — nothing is sent to the target. The actual search runs on Google/Bing/Yandex/etc., which log your IP and query. The document you eventually open, however, IS fetched from the host that published it, so open sensitive hits through a sock-puppet browser/VPN, not your attributable IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by Greylens Research and hosted on their GitHub Pages; it is a client-side query builder with no backend, so there is no data-collection risk, but it is a hobby project, not an audited service.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FilePhish",
+      "Greylens FilePhish",
+      "filephish query builder"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "dorking",
+      "document-discovery"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/github-io-2.md"
   },
   {
@@ -298661,44 +298711,53 @@
   },
   {
     "id": "monstercrawler-com",
-    "name": "monstercrawler.com",
-    "description": "OSINT tool: monstercrawler.com.",
+    "name": "MonsterCrawler",
+    "description": "Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns page links, images and mentions.",
     "url": "https://monstercrawler.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A supplementary general web/image/video/news search engine to cross-check what Google and Bing surface.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username",
+      "domain"
     ],
     "selectorsOut": [
+      "social-profile",
       "name",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; ad-supported, no account required.",
+    "opsec": "passive",
+    "opsecNote": "Searches run against MonsterCrawler (operated by RMG Ltd), not the target — the subject is not alerted. The operator and its ad partners log your IP and query, so use a sock-puppet/VPN for sensitive terms. Opening a result fetches from that result's host, which can log you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A minor general-purpose search engine run by RMG Ltd; result quality and index freshness are not independently audited and it partly resells other engines' results.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MonsterCrawler",
+      "monstercrawler.com"
+    ],
     "tags": [
       "searchengines",
       "Search Engines"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/monstercrawler-com.md"
   },
   {
@@ -312543,44 +312602,53 @@
   },
   {
     "id": "usearchfrom-com",
-    "name": "usearchfrom.com",
-    "description": "OSINT tool: usearchfrom.com.",
+    "name": "U Search From",
+    "description": "Use when you have a name or term and want to see Google results as they appear from another country/language/device — returns location-localised search results.",
     "url": "https://usearchfrom.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Running a Google search as if you were in a specific country/city with a chosen language and device, to surface geo-localised results.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "name",
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web utility; no account. It just constructs and opens a parameterised Google search.",
+    "opsec": "passive",
+    "opsecNote": "The tool builds a Google query with location/language parameters and hands it to Google; it does not query the target. Google still logs your real IP unless you also use a VPN — U Search From spoofs the search's assumed locale, not your network origin. Use a sock-puppet/VPN for sensitive names.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known SEO/marketing utility that simply redirects to Google with region parameters; low risk, but it is a convenience wrapper, not a data source of its own.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "U Search From",
+      "usearchfrom.com",
+      "search from another country"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "geo-localised-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/usearchfrom-com.md"
   },
   {
@@ -325216,45 +325284,53 @@
   },
   {
     "id": "fastdl-app",
-    "name": "fastdl.app",
-    "description": "OSINT tool: fastdl.app.",
+    "name": "FastDl (Instagram downloader)",
+    "description": "Use when you have an Instagram post/reel/story URL and want to save the media without logging in — returns the downloaded photo/video file (and its embedded metadata to mine).",
     "url": "https://fastdl.app/instagram-reels-download",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading public Instagram reels, photos, stories and highlights anonymously to preserve and analyse them.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, unlimited, no account; ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public Instagram URL into FastDl's server, which fetches the media on your behalf — you never authenticate to Instagram, so the target account sees no viewer/story-view signal from you (the story-view leak that direct viewing causes is avoided). FastDl logs the URL you submit; use a VPN for sensitive targets. Downloading someone else's media has evidentiary and legal considerations — stay in scope.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party downloader, not affiliated with Instagram; reliable for public media capture but the operator sees every URL you submit.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FastDl",
+      "fastdl.app",
+      "f-d.app"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fastdl-app.md"
   },
   {
@@ -326031,36 +326107,52 @@
   },
   {
     "id": "find-my-facebook-id-2",
-    "name": "Find My Facebook ID",
-    "description": "OSINT tool: Find My Facebook ID.",
+    "name": "Find My Facebook ID (CommentPicker)",
+    "description": "Use when you have a Facebook profile/page/group URL or vanity name and want its stable numeric ID — returns the numeric Facebook ID for use in other lookups.",
     "url": "https://commentpicker.com/find-facebook-id.php",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Converting a Facebook vanity URL or username into the permanent numeric user/page/group ID.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no login, no stated usage cap; ad-supported.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You paste a public Facebook URL into CommentPicker's server, which resolves it via Facebook's public graph — the target is not notified. The operator logs the URL you submit; avoid pasting URLs that would reveal your active investigation focus if you are cautious, and use a VPN. It does not require you to log into Facebook.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "CommentPicker is a long-running giveaway/tools site; the ID it returns is verifiable against Facebook itself, so accuracy is easy to confirm even though the operator is a third party.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CommentPicker Facebook ID finder",
+      "Find Facebook ID",
+      "facebook id lookup"
+    ],
+    "tags": [
+      "facebook",
+      "id-lookup"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/find-my-facebook-id-2.md"
   },
   {
@@ -335300,45 +335392,61 @@
   },
   {
     "id": "kuaishou-com",
-    "name": "kuaishou.com",
-    "description": "OSINT tool: kuaishou.com.",
+    "name": "Kuaishou (Kwai)",
+    "description": "Use when you have a username or name and want to find a subject's short-video presence on China's Kuaishou/Kwai — returns profiles, videos, photos and location clues.",
     "url": "https://www.kuaishou.com/new-reco",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and viewing a subject's short-form video content on China's second-largest short-video platform.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to browse public content; deeper interaction, following, and some profile/search features are gated behind a logged-in account, and registration typically needs a Chinese mobile number.",
+    "opsec": "passive",
+    "opsecNote": "Viewing public profiles/videos is passive, but Kuaishou heavily fingerprints and rate-limits anonymous web visitors and often forces a login wall. Use a sock-puppet account and clean browser; never follow, like or message from an attributable account. Video views can be counted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Kuaishou Technology; this is the genuine first-party platform, though individual video content carries the usual social-media reliability caveats.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global",
+      "cn"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Kuaishou",
+      "Kwai",
+      "快手",
+      "kuaishou.com"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "china",
+      "short-video"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/kuaishou-com.md"
   },
   {
@@ -336506,45 +336614,54 @@
   },
   {
     "id": "mastogizmos-com",
-    "name": "mastogizmos.com",
-    "description": "OSINT tool: mastogizmos.com.",
+    "name": "MastoGizmos",
+    "description": "Use when you have a username, hashtag or topic and want to search across the decentralised Mastodon fediverse — returns matching profiles, posts and linked accounts.",
     "url": "https://mastogizmos.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Searching hashtags, verified users and topics across many Mastodon instances at once (which native Mastodon search can't do).",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tools; no account required. Some gizmos hit instance APIs that rate-limit, and results depend on which instances are reachable.",
+    "opsec": "passive",
+    "opsecNote": "Queries run against MastoGizmos and public Mastodon instance APIs, not against the target's own account, so viewing is passive. Instance admins can see API/read traffic; use a VPN for sensitive searches. Do not follow or interact from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A hobbyist collection of client-side Mastodon utilities; useful and low-risk but not an official or audited service, and coverage is best-effort across a decentralised network.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MastoGizmos",
+      "mastogizmos.com",
+      "Mastodon gizmos"
+    ],
     "tags": [
       "mastodon",
-      "Mastodon Related Sites"
+      "Mastodon Related Sites",
+      "fediverse"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/mastogizmos-com.md"
   },
   {
@@ -358305,45 +358422,60 @@
   },
   {
     "id": "weibo-com",
-    "name": "weibo.com",
-    "description": "OSINT tool: weibo.com.",
+    "name": "Sina Weibo",
+    "description": "Use when you have a username or name and want to find a subject's Chinese-language social presence — returns social profiles, posts, photos and network links.",
     "url": "http://www.weibo.com/signup/mobile.php?lang=en-us",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and reading a subject's activity on China's dominant microblogging platform.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search and read, but Weibo increasingly gates full post history, follower lists and search behind a logged-in account, and many actions require a Chinese mobile number to register.",
+    "opsec": "passive",
+    "opsecNote": "Public profile viewing is passive, but Weibo aggressively fingerprints and rate-limits anonymous visitors and often forces a login wall after a few page views. Use a sock-puppet account (ideally registered on a burner number) and a clean browser; do not follow, like or message the target from an attributable account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Sina Corporation; this is the genuine first-party platform, though content authenticity of individual posts is only as reliable as the poster.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global",
+      "cn"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Weibo",
+      "微博",
+      "Sina Weibo",
+      "weibo.com"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "china"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/weibo-com.md"
   },
   {
@@ -375773,42 +375905,57 @@
   },
   {
     "id": "amazon-usernames",
-    "name": "Amazon Usernames",
-    "description": "Finding Amazon public profiles, wishlists, and review activity by username",
+    "name": "Amazon Usernames (Google dork)",
+    "description": "Use when you have a username or name and want to find the subject's Amazon public profile, reviews, wish lists or lists — returns Amazon profile links and review activity.",
     "url": "https://www.google.com/search?q=site:amazon.com+%3Cusername%3E",
     "category": "username",
     "path": [
       "username",
       "specific-sites"
     ],
-    "bestFor": "Finding Amazon public profiles, wishlists, and review activity by username",
-    "input": "Username (inserted into Google search query)",
-    "output": "Google search results linking to Amazon pages mentioning the username",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Surfacing a person's public Amazon profile, reviews and wish lists via a site-scoped Google search.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free — just a Google query; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Query goes to Google, not Amazon directly. Google may log the search but the target is not alerted.",
+    "opsecNote": "The query goes to Google, not to Amazon, so the target is not alerted and Amazon does not see you. Google logs the search and your IP; use a sock-puppet/VPN for sensitive names. Opening the resulting Amazon profile is a normal public page view.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "This is a search technique, not a maintained tool — reliability depends on Google's index and on whether the subject left profile/review content public.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Amazon profile search",
+      "Amazon reviews dork",
+      "site:amazon.com username"
+    ],
+    "tags": [
+      "username",
+      "amazon",
+      "google-dork"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/specific-sites/amazon-usernames.md"
   },
   {
@@ -379387,13 +379534,13 @@
   {
     "id": "sultan-username-search-tool-builder",
     "name": "SULTAN (Username Search Tool builder)",
-    "description": "Sinwindie's own Python-based framework/script for building a username search tool across many sites, driven by a spreadsheet of site templates (SULTAN.py, SULTAN_DATA.xlsx). Distributed in the repo with a how-to PDF.",
+    "description": "Use when you have a username and want to check it across many platforms at once — returns per-site profile URLs and hit/miss status for the subject's social footprint.",
     "url": "https://github.com/sinwindie/OSINT/tree/master/SULTAN",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Bulk-checking a username across many platforms to find a missing person's social footprint",
+    "bestFor": "Bulk-checking one username across many platforms to map a person's social footprint, using an editable spreadsheet of sites.",
     "selectorsIn": [
       "username"
     ],
@@ -379401,15 +379548,16 @@
       "username",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open on GitHub (Sinwindie's OSINT repo); no account. Requires local Python.",
+    "opsec": "passive",
+    "opsecNote": "SULTAN queries each target platform directly from your machine to test whether the username exists, so those platforms see requests from your IP — run it behind a VPN/proxy. It does not log into or notify the target's accounts, but high-volume checks can trip rate-limits or bot-detection; the bundled RequestsValidator helps flag false positives.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Authored by Sinwindie, a well-known OSINT educator; the repo is popular (thousands of stars) and open-source, so the code is inspectable, though it is a community project, not a maintained product.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -379419,7 +379567,9 @@
     "localInstall": true,
     "registration": false,
     "aliases": [
-      "SULTAN"
+      "SULTAN",
+      "Sinwindie SULTAN",
+      "username search tool builder"
     ],
     "tags": [
       "username-enumeration",
@@ -379428,7 +379578,7 @@
       "sinwindie"
     ],
     "source": "sinwindie-osint",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/username/sultan-username-search-tool-builder.md"
   },
