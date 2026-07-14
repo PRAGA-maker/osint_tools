@@ -55666,14 +55666,14 @@
   },
   {
     "id": "exif-data-viewer",
-    "name": "EXIF Data Viewer",
-    "description": "Online EXIF metadata viewer for photos.",
+    "name": "EXIFdata.com Viewer",
+    "description": "Use when you have an image file and want to read its embedded metadata — returns EXIF fields including camera, timestamps and GPS coordinates when present.",
     "url": "http://exifdata.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly viewing a photo's EXIF metadata (camera, date/time, GPS) in the browser.",
     "selectorsIn": [
       "image"
     ],
@@ -55681,25 +55681,36 @@
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account. Processing is client-side (in your browser), so there is no upload/quota.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The site states all processing happens in your browser with no server upload, so the image is not exfiltrated to a third party — this makes it safe for sensitive evidence. Nothing touches the target. Still, only handle images you are authorised to examine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing free EXIF utility; because it runs client-side, output is verifiable and there is no data-handling risk, though it is a hobby/community tool rather than a forensic product.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "EXIFdata",
+      "exifdata.com",
+      "EXIF viewer"
+    ],
+    "tags": [
+      "metadata",
+      "exif",
+      "image-forensics"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/documents-metadata/exif-data-viewer.md"
   },
@@ -121319,47 +121330,54 @@
   },
   {
     "id": "aprs-on-google-maps",
-    "name": "APRS on Google Maps",
-    "description": "Real-time APRS tracking using Google Maps",
+    "name": "aprs.fi (APRS on Google Maps)",
+    "description": "Use when you have an amateur-radio callsign or an area and want real-time/historic position tracks — returns map locations, movement history and station metadata.",
     "url": "https://aprs.fi/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Tracking the live and historical map position of APRS stations (ham operators, vehicles, boats, weather stations) by callsign or area.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "username",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation",
-      "address"
+      "device-id",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view on the web; no account needed. A registered account/API key unlocks the data API and some extras.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are reading data that APRS stations broadcast publicly over radio and the internet — querying aprs.fi does not touch or alert the operator. The site logs your access; use a VPN for sensitive work. Note the subject is the transmitter — if you track a specific callsign, you are watching a beacon the operator chose to broadcast.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-established, widely-used APRS aggregator fed by the global APRS-IS network; positions are as reported by the transmitting stations themselves.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "aprs.fi",
+      "APRS on Google Maps",
+      "APRS tracking"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "ham-radio"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/geolocation/aprs-on-google-maps.md"
   },
@@ -205689,36 +205707,63 @@
   },
   {
     "id": "effect-group",
-    "name": "Effect Group",
-    "description": "OSINT tool: Effect Group.",
+    "name": "Effect Group (EffectAI)",
+    "description": "Use when you have a name, email or phone and want an aggregated OSINT profile — returns linked profiles, contact data, breach hits and face/logo image matches.",
     "url": "https://effectgroup.io/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A pay-per-use aggregated people/company search that fuses web data, breach data and image recognition into one report.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "phone",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "phone",
+      "associate",
+      "employer-org",
+      "face"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Pay-per-use with no meaningful free tier — searches start around €9.95 each, billed per query rather than by subscription. Budget before running; results volume/quality varies by selector.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searches run against Effect Group's aggregated datasets, not the target's own accounts, so it does not directly alert the subject. You must create an account and pay, so your identity/payment is known to the vendor — use appropriate billing and a sock-puppet where policy allows. Aggregated broker data can be stale or wrong; verify before acting.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial OSINT aggregator marketed to journalists, investigators and due-diligence users; useful breadth, but it is a data broker whose sourcing is opaque, so treat outputs as leads to verify.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "Effect Group",
+      "EffectAI",
+      "effectgroup.io"
+    ],
+    "tags": [
+      "people-search",
+      "osint-aggregator",
+      "breach-data",
+      "face-recognition"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/effect-group.md"
   },
   {
@@ -215032,42 +215077,55 @@
   },
   {
     "id": "the-bump",
-    "name": "The Bump",
-    "description": "Finding baby registries by parent name",
+    "name": "The Bump Baby Registry Finder",
+    "description": "Use when you have a parent's name and want to find their baby registry — returns registry links, expected item lists and sometimes an event date or general location.",
     "url": "https://registry.thebump.com/babyregistrysearch",
     "category": "people-search",
     "path": [
       "people-search",
       "registries"
     ],
-    "bestFor": "Finding baby registries by parent name",
-    "input": "Parent first and last name",
-    "output": "Baby registry links and gift lists",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Locating an expectant/new parent's baby registry by name to confirm identity, timing and associates.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search; no account or payment required to look up a registry by parent name.",
     "opsec": "passive",
-    "opsecNote": "No registration required to search registries.",
+    "opsecNote": "You search The Bump's public registry index, not the parent's account — the target is not notified. The Bump logs your search; use a VPN for sensitive work. Registries are self-published, so treat what you find as information the person chose to make public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A mainstream consumer parenting site (part of The Knot Worldwide); the registry index is reliable but user-submitted, so detail depends on what each parent published.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "The Bump registry search",
+      "thebump baby registry finder"
+    ],
+    "tags": [
+      "people-search",
+      "registries",
+      "baby-registry"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/registries/the-bump.md"
   },
   {
@@ -222499,45 +222557,51 @@
   },
   {
     "id": "telecom-tariffs-co-uk",
-    "name": "telecom-tariffs.co.uk",
-    "description": "OSINT tool: telecom-tariffs.co.uk.",
+    "name": "Telecom Tariffs UK Code Look-up",
+    "description": "Use when you have a UK phone number and want to identify its geographic area or network operator from the dialling code/number range — returns area and operator information.",
     "url": "http://www.telecom-tariffs.co.uk/codelook.htm",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a UK dialling code or mobile/number range to its geographic area or network operator.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free look-up, no account. As of verification the codelook page 301-redirects to a bare server IP with a TLS-certificate mismatch, so it is currently awkward to reach in a normal browser.",
+    "opsec": "passive",
+    "opsecNote": "You look up a number range in a reference table — nothing is sent to the number's owner, so it is fully passive and non-alerting. Ofcom's own number-allocation data is the authoritative equivalent if this mirror is unreachable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-standing hobbyist UK telecoms reference; useful for code/range identification, but currently in a degraded/relocated state and not an official source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "telecom-tariffs.co.uk codelook",
+      "UK dialling code lookup",
+      "UK number range lookup"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/telecom-tariffs-co-uk.md"
   },
   {
@@ -230641,36 +230705,55 @@
   },
   {
     "id": "chicago-cook-county-genealogy",
-    "name": "Chicago Cook County Genealogy",
-    "description": "OSINT tool: Chicago Cook County Genealogy.",
+    "name": "Steve Morse One-Step — Cook County (Chicago) Vital Records",
+    "description": "Use when you have a name tied to Chicago/Cook County and want vital-record indexes — returns birth, marriage and death index entries to order the underlying certificate.",
     "url": "https://stevemorse.org/vital/cook.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Cook County (Chicago) birth, marriage and death indexes to confirm dates and family links.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The One-Step search forms are free; they query official/genealogical indexes, and ordering the actual certificate from the county/state costs a fee.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search public genealogical/government indexes, not the individual — no one is alerted. Steve Morse's forms are front ends that submit to the underlying record providers; use a VPN for sensitive work. This is historical vital-record research, inherently passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Steve Morse's One-Step Webpages are a long-respected, widely-cited genealogy resource; the forms query authoritative vital-record indexes (Illinois/Cook County, FamilySearch, etc.).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Steve Morse One-Step Cook County",
+      "Chicago vital records search",
+      "stevemorse.org cook"
+    ],
+    "tags": [
+      "vital-records",
+      "genealogy",
+      "chicago",
+      "cook-county"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/chicago-cook-county-genealogy.md"
   },
   {
@@ -243257,47 +243340,59 @@
   },
   {
     "id": "gov-im-4",
-    "name": "gov.im",
-    "description": "OSINT tool: gov.im.",
+    "name": "Isle of Man Deeds, Probate & Land Registry Search",
+    "description": "Use when you have a name or property on the Isle of Man and want official deed/probate/land records — returns registered documents including wills, grants of probate and land dealings.",
     "url": "https://services.gov.im/deeds-probate-land-registry-document-search/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching official Isle of Man deeds, probate (wills/grants) and land-registry documents by surname or property.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "associate",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching the index is free; viewing/downloading document images is a paid purchase per document. Images stay in your account for 30 days once bought.",
+    "opsec": "passive",
+    "opsecNote": "You query the Isle of Man government registry, not the subject — no notification is sent. The service logs access and requires account/payment to view images; use lawful public-record scope. VPN for sensitive lookups.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Isle of Man Government Deeds & Probate / Land Registry online service; records are authoritative government registrations.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "im"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Isle of Man Deeds and Probate Registry",
+      "IoM land registry search",
+      "services.gov.im deeds probate"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "probate",
+      "isle-of-man"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-im-4.md"
   },
   {
@@ -269620,14 +269715,14 @@
   },
   {
     "id": "state-appellate-and-supreme-courts",
-    "name": "State Appellate & Supreme Courts",
-    "description": "OSINT tool: State Appellate & Supreme Courts.",
-    "url": "http://www.brbpub.com/freeresources/pubrecsitessearch.aspx",
+    "name": "BRB Free Public Record Site Search (State Courts)",
+    "description": "Use when you have a name and a US state and want the official free court-record search for that jurisdiction — returns links to state appellate/supreme and county court record sites.",
+    "url": "https://www.brbpublications.com/free-sites",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the authoritative free US court-record search site (state appellate/supreme and county) for a given jurisdiction.",
     "selectorsIn": [
       "name"
     ],
@@ -269636,29 +269731,37 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The BRB free directory and the official government searches it links to are free; BRB also sells the paid Public Record Research System (PRRS) for professionals, but the free-sites directory needs no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and alerts no one. Each outbound court search runs on a government site with its own logging. Use a VPN for sensitive lookups; treat court records within lawful investigative scope.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "BRB Publications is a long-established, respected public-records research publisher; its free directory curates links straight to authoritative government court sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BRB Publications free sites",
+      "BRB public record directory",
+      "brbpub free resources"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records-directory"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/state-appellate-and-supreme-courts.md"
   },
   {
@@ -290323,44 +290426,54 @@
   },
   {
     "id": "google-com-77",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/advanced_search?q",
+    "name": "Google Advanced Search",
+    "description": "Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and document mentions with less noise.",
+    "url": "https://www.google.com/advanced_search",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Running tightly-scoped Google queries (exact phrase, site, filetype, date, exclusions) without memorising operator syntax.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account required for search (some heavy/automated querying may trigger a CAPTCHA).",
+    "opsec": "passive",
+    "opsecNote": "Queries go to Google, not to the target, so the subject is not alerted. Google logs your IP and search history; use a sock-puppet/VPN for sensitive names, and remember that clicking a result fetches that result's host, which can log you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's own first-party advanced-search form; it is a query builder over the standard index, so results are as authoritative as any Google search.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Google advanced search",
+      "google.com advanced_search",
+      "Google dorking form"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "google",
+      "dorking"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-com-77.md"
   },
   {
