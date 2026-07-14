@@ -105064,40 +105064,52 @@
   {
     "id": "h8mail-2",
     "name": "h8mail",
-    "description": "CLI email breach hunter (correlates leaks/passwords).",
+    "description": "Use when you have an `email` (or a bulk list) and want to find associated breaches, leaked passwords and correlated addresses — a CLI tool querying breach services and local leak dumps.",
     "url": "https://pypi.org/project/h8mail/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk email breach hunting from the command line — correlating an address with leaks, passwords and related emails via APIs or local dumps.",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email"
+      "email",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The tool is free/open-source (pip install h8mail). Its best data sources are API keys you supply (some paid, e.g. premium breach services); it also runs offline against local BreachCompilation/Collection#1 dumps you already hold.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive to the target — queries go to breach APIs and your local files, never to the subject. But you transmit the target's email to whatever third-party services you enable; use a dedicated key/environment and mind each provider's logging. Handle recovered credentials lawfully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely used open-source OSINT tool (khast3x/h8mail). Reliable as software, but breach coverage depends on which services/dumps you connect; last major release was 2.5.6 (2022), so some integrations may need updating.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "my-cse-for-search-in-48-pastebin-sites"
+    ],
+    "aliases": [
+      "h8mail",
+      "khast3x h8mail"
+    ],
     "tags": [
-      "breach"
+      "breach",
+      "leaks",
+      "cli"
     ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/email/h8mail-2.md"
   },
@@ -203503,47 +203515,53 @@
   {
     "id": "alm-experts-united-states",
     "name": "ALM Experts (United States)",
-    "description": "Search for expert witnesses, consultants, and litigation support services, searchable by category, subject matter and keywords",
-    "url": "http://www.almexperts.com",
+    "description": "Use when you have a `name` or a specialty and want to identify or verify an expert witness / litigation consultant — a searchable directory returning the expert's firm, location and area of expertise.",
+    "url": "https://www.law.com/expert-witness/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Finding or vetting expert witnesses and litigation consultants by name or subject-matter, and pulling their firm/location/expertise.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
+      "employer-org",
       "address",
-      "phone",
-      "associate"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search the directory. Now hosted under Law.com's Expert Witness Search (ALM's legal-media platform); listings are self-submitted professional profiles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you browse a public professional directory; nothing is submitted about the subject and no alert is generated. Ordinary browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by ALM (a major legal-media publisher) — a legitimate directory, but listings are self-submitted marketing profiles, so verify credentials independently.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ALM Experts",
+      "almexperts.com",
+      "Law.com Expert Witness Search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "expert-witness"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/people-search/alm-experts-united-states.md"
   },
@@ -330989,49 +331007,6 @@
     "_file": "library/tools/social-networks/google-com-47.md"
   },
   {
-    "id": "google-com-49",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Alotus.vn",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gsocialmedia",
-      "General Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-49.md"
-  },
-  {
     "id": "google-com-5",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -331222,49 +331197,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/google-com-55.md"
-  },
-  {
-    "id": "google-com-57",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Acontactout.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "linkedin",
-      "LinkedIn & Similar Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-57.md"
   },
   {
     "id": "google-com-58",
