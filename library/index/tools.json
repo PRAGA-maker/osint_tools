@@ -129463,13 +129463,13 @@
   {
     "id": "mapquest-maps-and-directions",
     "name": "MapQuest Maps & Directions",
-    "description": "Geolocation and mapping program that searches using address or lat/long coordinates",
+    "description": "Use when you have an `address` or `geolocation` (lat/long) and want to map it, get directions/travel times, or reverse-geocode coordinates to a place — returns address, geolocation.",
     "url": "http://www.mapquest.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Geocoding/reverse-geocoding an address or coordinate and measuring routes/travel times between points.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -129478,31 +129478,35 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free consumer web maps (ad-supported); a separate MapQuest Developer API tier exists (freemium) for programmatic geocoding/routing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Looking up a place or route is passive and doesn't touch the subject. Your queries are logged by MapQuest like any web-map service; use a clean browser if the searched location is sensitive. As an alternative map provider, it's useful when you don't want all geolocation queries concentrated in one company's logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established mainstream mapping provider; geocoding/routing is reliable commercial-grade data, though (like all maps) imagery/street data can be less current than the market leaders in some areas.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MapQuest"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "mapping"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/geolocation/mapquest-maps-and-directions.md"
   },
@@ -203832,46 +203836,49 @@
   {
     "id": "behind-the-name-arabic-names",
     "name": "Behind the Name: Arabic Names",
-    "description": "OSINT tool: Behind the Name: Arabic Names.",
+    "description": "Use when you have an Arabic `name` and want its meaning, script, and spelling/transliteration variants so you can search every plausible form of it — returns name variants.",
     "url": "https://www.behindthename.com/names/usage/arabic",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Generating Arabic name variants/transliterations and meanings to broaden name-based searches.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference site; no account needed to browse name entries, etymologies, and variant spellings.",
+    "opsec": "passive",
+    "opsecNote": "A reference-book lookup — you're reading name etymology, not querying anything about a person. Fully passive; nothing reaches any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Behind the Name is a well-established, widely-cited onomastics reference; reliable for meanings/origins/variants, though it is a naming reference, not a people database.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Behind the Name",
+      "behindthename.com Arabic"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "name-reference",
+      "transliteration"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/behind-the-name-arabic-names.md"
   },
   {
@@ -241624,46 +241631,51 @@
   {
     "id": "genuki-uk-and-ireland-genealogy",
     "name": "Genuki UK & Ireland Genealogy",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name` plus a UK/Ireland place and want a curated, locality-by-locality reference to the parish and historical records that cover it — returns address (place), associate leads.",
     "url": "http://www.genuki.org.uk/index.php",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A trusted UK & Ireland genealogy reference organised by county/parish to locate the right historical records.",
     "selectorsIn": [
       "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, volunteer-run reference (a registered UK charity). No account; it links out to record collections that may have their own pricing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a reference/directory and following it to historical archives is fully passive — no living subject is contacted. No login required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "GENUKI is a long-established, charity-run genealogy reference maintained by volunteers; authoritative as a signpost to sources, though it is a reference/index rather than a searchable records database itself.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GENUKI",
+      "Genealogy of the UK and Ireland"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/genuki-uk-and-ireland-genealogy.md"
   },
@@ -245500,46 +245512,50 @@
   {
     "id": "houseprices-io",
     "name": "houseprices.io",
-    "description": "OSINT tool: houseprices.io.",
+    "description": "Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns address, sale history (no owner names).",
     "url": "https://houseprices.io/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up UK (England & Wales) sold-price history and transaction dates for an address/postcode.",
     "selectorsIn": [
-      "name",
       "address",
-      "employer-org"
+      "geolocation"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; presents official Land Registry \"price paid\" data (Jan 1995–present) for England & Wales. No account needed.",
+    "opsec": "passive",
+    "opsecNote": "Read-only lookup of official public price-paid records; the subject is not notified and nothing is disclosed. No login. Note the data does NOT include owner names — it's property transactions, not people.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A convenient front-end over official HM Land Registry Price Paid Data; the underlying transaction records are authoritative, though this third-party site's freshness lags the official feed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "houseprices.io",
+      "UK sold prices"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "land-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/houseprices-io.md"
   },
   {
@@ -316824,44 +316840,51 @@
   {
     "id": "17-imginn",
     "name": "17- Imginn",
-    "description": "OSINT tool: 17- Imginn.",
+    "description": "Use when you have an Instagram `username` and want to anonymously view/download that account's public posts, stories and highlights without logging in — returns image, geolocation, metadata-exif.",
     "url": "https://imginn.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing and downloading a public Instagram account's posts, stories and highlights.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
       "image",
-      "geolocation"
+      "geolocation",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported. No Instagram account or login required to browse or download public content.",
+    "opsec": "passive",
+    "opsecNote": "Imginn proxies Instagram's public content server-side, so you never touch the target's profile from your own IP/account and the target is not notified — the key reason to use it over logging in. It is an unaffiliated ad-heavy site; use a sock-puppet browser with an ad-blocker and never enter Instagram credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Popular third-party Instagram viewer/downloader (widely listed in OSINT guides), but unaffiliated and reliant on scraping — uptime and completeness vary, and it only ever shows public content.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Imginn",
+      "imginn.com"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "anonymous-viewer",
+      "media-download"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/17-imginn.md"
   },
   {
