@@ -172941,37 +172941,57 @@
   {
     "id": "instabot",
     "name": "InstaBot",
-    "description": "OSINT tool: InstaBot.",
+    "description": "Use when you have a public Instagram post/profile URL and want the raw media inside Telegram — returns the downloaded photos/videos as files.",
     "url": "https://telegram.me/InstaBot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Grabbing Instagram media (photos, videos, stories) via a Telegram bot without a browser.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot. Requires a Telegram account; no payment, though it may show ads/promo messages.",
+    "opsec": "passive",
+    "opsecNote": "You send the target's Instagram link to an anonymous Russian-operated Telegram bot, which fetches the media from Instagram's CDN (the poster is not notified). The bot operator sees every link you submit and it is tied to your Telegram identity — use a sock-puppet Telegram account, never your real one, and don't submit sensitive targets.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trust": "unverified",
+    "trustNote": "Anonymous third-party Telegram bot (~25k monthly users, Russian-language) with no transparency on operator or data handling. Fine for pulling public media; treat the bot itself as untrusted.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "instaloader",
+      "threadsdownloader-com"
+    ],
+    "aliases": [
+      "InstaBot Telegram",
+      "@InstaBot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "instagram",
+      "media-download"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/instabot.md"
   },
   {
@@ -227903,46 +227923,57 @@
   {
     "id": "blockint-nl",
     "name": "blockint.nl",
-    "description": "OSINT tool: blockint.nl.",
+    "description": "Use when you have a company or person `name` and want to trace ultimate beneficial owners (UBOs) across EU corporate registers — returns a country-by-country map of where and how to look up ownership.",
     "url": "https://www.blockint.nl/kyc/ubo-registers-in-the-eu/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding which EU country's UBO/beneficial-ownership register to query, and how to access it, for a company or its owners.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "associate",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference article. The individual national registers it links to vary — some are free, some charge per extract or require an authenticated business account.",
+    "opsec": "passive",
+    "opsecNote": "Reading this Blockint guide is fully passive. OpSec risk only appears once you follow a link into a national register and submit a query there — several EU registers log the searcher and some (post-2022 CJEU ruling) require you to declare a legitimate interest, which is an identifiable action.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by Blockint, a Netherlands-based OSINT/KYC practitioner; it is a curated compilation, not an official source, and the author notes it is still being tested and updated.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "opencorporates-com"
+    ],
+    "aliases": [
+      "Blockint UBO registers guide",
+      "UBO registers in the EU"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "ubo",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/blockint-nl.md"
   },
   {
@@ -235783,46 +235814,56 @@
   {
     "id": "directaccessportal-co-uk",
     "name": "directaccessportal.co.uk",
-    "description": "OSINT tool: directaccessportal.co.uk.",
+    "description": "Use when you have a barrister's `name` (or need to identify one in England & Wales) and want their chambers, practice areas and contact route — returns a public professional profile.",
     "url": "https://www.directaccessportal.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a barrister in England & Wales is real and Public-Access qualified, plus their chambers and specialisms.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory operated by the Bar Council; no account needed to search or view profiles.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you are reading a public professional directory, and searches are not attributed to you. Submitting an enquiry through the portal, however, sends your details to the barrister/chambers, so stop at the profile view for pure OSINT.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Bar Council of England & Wales; entries are self-listed by Public Access-qualified barristers, so it is authoritative for the fact of qualification but marketing-style for the profile text.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "barristers-register-bsb"
+    ],
+    "aliases": [
+      "Direct Access Portal",
+      "Bar Council direct access"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "legal",
+      "barristers"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/directaccessportal-co-uk.md"
   },
   {
@@ -248662,13 +248703,13 @@
   {
     "id": "jail-and-inmate-records-search-directory",
     "name": "Jail and Inmate Records Search Directory",
-    "description": "OSINT tool: Jail and Inmate Records Search Directory.",
+    "description": "Use when you have a `name` and want to locate the right US jail/inmate lookup for a state or county — returns links to official incarceration search databases.",
     "url": "https://publicrecords.onlinesearches.com/jail-and-inmate-records.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Routing to the correct state/county jail or inmate record search for a US subject.",
     "selectorsIn": [
       "name"
     ],
@@ -248677,29 +248718,40 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The directory of links is free; most linked government inmate databases are also free. Some third-party record aggregators it surfaces (it is powered by Intelius) upsell paid reports.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive. The official DOC/sheriff inmate searches it links to are also generally anonymous public lookups. Be wary of the Intelius-branded \"paid report\" upsells — those route you to a commercial data broker and asking for a report there is an attributable action.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A curated link directory (onlinesearches.com, Intelius-powered) pointing to authoritative government sources; the directory itself is a convenience layer, so trust the destination databases, not the aggregator's upsells.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vinelink",
+      "bop-inmate-locator"
+    ],
+    "aliases": [
+      "OnlineSearches jail and inmate records",
+      "inmate records directory"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "incarceration"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/jail-and-inmate-records-search-directory.md"
   },
   {
@@ -255858,35 +255910,60 @@
   {
     "id": "new-england-facts",
     "name": "New England Facts",
-    "description": "OSINT tool: New England Facts.",
+    "description": "Use when you have a `name` in the US Northeast and want an address, phone, relatives and property links — returns an aggregated people/property profile for the six New England states.",
     "url": "https://newenglandfacts.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Regional people- and property-search across CT, MA, RI, ME, NH and VT.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "email",
+      "associate",
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Basic profile snippets (name, approximate location, relatives) are viewable free; full contact details and property/report data are gated behind a paid lookup like most data-broker people-search sites.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching is passive and not shown to the subject, but you are querying a commercial data broker that logs lookups. Use a sock-puppet. Note this is also a site people opt out of — a missing/sparse result may mean suppression, not absence.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A regional data-broker/people-search aggregator; data is compiled from public records and third-party brokers, so it can be stale, mismatched or merged across same-name individuals. Corroborate before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "truepeoplesearch",
+      "fastpeoplesearch",
+      "whitepages"
+    ],
+    "aliases": [
+      "NewEnglandFacts",
+      "newenglandfacts.com"
+    ],
+    "tags": [
+      "people-search",
+      "data-broker",
+      "new-england"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/new-england-facts.md"
   },
   {
@@ -264882,46 +264959,56 @@
   {
     "id": "rias-org-uk",
     "name": "rias.org.uk",
-    "description": "OSINT tool: rias.org.uk.",
+    "description": "Use when you have an architect's or firm `name` (or a Scottish location) and want to confirm the practice and its address — returns a chartered architectural-practice profile.",
     "url": "https://www.rias.org.uk/for-the-public/practices",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and locating a chartered architectural practice in Scotland by name, area or specialism.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory operated by the Royal Incorporation of Architects in Scotland; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Passive — browsing the directory is anonymous and not attributed to you. It only exposes business (practice) contact details, not private home addresses, so leakage risk is low.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by RIAS, the professional body for architects in Scotland; the \"Chartered Practice\" designation is authoritative, though individual profile text is self-supplied.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "arb-register"
+    ],
+    "aliases": [
+      "RIAS practice directory",
+      "Royal Incorporation of Architects in Scotland"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "architects"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rias-org-uk.md"
   },
   {
@@ -323224,45 +323311,54 @@
   },
   {
     "id": "facebook-bulk-id-usernames-to-s",
-    "name": "Facebook Bulk ID (Usernames to #s)",
-    "description": "OSINT tool: Facebook Bulk ID (Usernames to #s).",
+    "name": "Facebook Bulk ID (Usernames to",
+    "description": "Use when you have Facebook profile/page `username`s or URLs and want their durable numeric IDs in bulk — returns the numeric account IDs that survive username changes.",
     "url": "https://seotoolstation.com/bulk-facebook-id-finder",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a batch of Facebook vanity usernames/URLs into stable numeric IDs for tracking and pivoting.",
     "selectorsIn": [
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "image",
-      "associate"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool. No account required; ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "You submit the target's username/URL to a third-party SEO site, which resolves it against Facebook. The tool operator sees what you look up, and the resolution itself is a normal public request to Facebook. Use a sock-puppet/VPN if you don't want the lookup tied to you, and don't paste sensitive lists you wouldn't share with an unknown operator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "One of many interchangeable third-party SEO utilities (SEOToolStation and clones). They break frequently as Facebook changes markup, and there is no guarantee of accuracy or data handling — verify each ID.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "lookup-id-com",
+      "facebook-com"
+    ],
+    "aliases": [
+      "Bulk Facebook ID Finder",
+      "SEOToolStation Facebook ID finder"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "id-lookup"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-bulk-id-usernames-to-s.md"
   },
   {
@@ -324064,14 +324160,14 @@
   },
   {
     "id": "facebook-scanner",
-    "name": "🔍 Facebook Scanner",
-    "description": "OSINT tool: 🔍 Facebook Scanner.",
+    "name": "Facebook Scanner (StalkScan)",
+    "description": "Use when older guides point you to StalkScan for Facebook Graph Search — but it is defunct; returns nothing and you should route to a live workaround instead.",
     "url": "https://stalkscan.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Historical reference only — Facebook Graph Search-style querying of a profile's public interactions (no longer functional).",
     "selectorsIn": [
       "username",
       "name"
@@ -324081,28 +324177,39 @@
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Was free while it existed; the domain no longer serves a working tool.",
+    "opsec": "passive",
+    "opsecNote": "The tool is dead, so there is nothing to query. Do not enter targets into any clone or mirror claiming to be StalkScan — several parked/imitation domains harvest whatever you type. Treat any \"StalkScan\" prompt that asks for a login or token as hostile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Originally a legitimate tool by researcher Inti De Ceukelaire, but it broke permanently when Facebook killed Graph Search in June 2019; the domain today is not a maintained tool.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "who-posted-what",
+      "intelligence-x"
+    ],
+    "aliases": [
+      "StalkScan",
+      "stalkscan.com"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "defunct"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-scanner.md"
   },
   {
@@ -329242,45 +329349,57 @@
   },
   {
     "id": "google-com-72",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "name": "Google site-search (Rumble)",
+    "description": "Use when you have a `name` or `username` and want their presence on Rumble — returns Rumble channels/videos via a Google `site:rumble.com` dork.",
     "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Arumble.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's Rumble channel or appearances by dorking Rumble through Google instead of its weak native search.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free — it's just a Google query. No account.",
+    "opsec": "passive",
+    "opsecNote": "You're searching Google's index, not touching Rumble, so the target isn't notified. Google logs the query against your IP/account; use a logged-out/sock-puppet browser if the search terms themselves are sensitive. Only when you click through to a Rumble page does Rumble see you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "This is Google's own search with a `site:` operator — the mechanism is authoritative; the caveat is only that Google's index of Rumble is incomplete and can lag.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-com",
+      "rumble-com"
+    ],
+    "aliases": [
+      "site:rumble.com",
+      "Rumble Google dork"
+    ],
     "tags": [
       "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
+      "Right Wing Social Media Sites",
+      "rumble",
+      "google-dork"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-72.md"
   },
   {
@@ -333299,44 +333418,56 @@
   {
     "id": "instagram-tool-inteltechniques-com",
     "name": "Instagram Tool - IntelTechniques.com",
-    "description": "OSINT tool: Instagram Tool - IntelTechniques.com.",
+    "description": "Use when you have an Instagram `username` and want a one-stop panel of query shortcuts (profile, media, followers, location) — returns pre-built links into Instagram's search surfaces.",
     "url": "https://inteltechniques.com/osint/instagram.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Firing a battery of pre-built Instagram investigative queries from one page instead of hand-crafting each URL.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "image",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Bazzell removed the public online tools in June 2019 after cease-and-desist/DMCA pressure; the working search panels now live behind a paid login (bundled with his OSINT training/books). The public instagram.html may render but its query boxes are often gated or non-functional without the member login.",
+    "opsec": "passive",
+    "opsecNote": "The tool only builds and opens query URLs from your browser — it doesn't proxy anything — so requests go directly from your IP to Instagram/Google. That is passive but attributable to you; run it in a sock-puppet browser logged into a research Instagram account, never your real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by Michael Bazzell (IntelTechniques), a widely respected OSINT author; the methodology is authoritative, but the free/public version has been curtailed and query boxes break as Instagram changes its URL structure.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "inteltechniques-search-tool",
+      "osintgram"
+    ],
+    "aliases": [
+      "IntelTechniques Instagram tool",
+      "Bazzell Instagram OSINT"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "bazzell"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-tool-inteltechniques-com.md"
   },
   {
@@ -338419,41 +338550,62 @@
   {
     "id": "odnoklassniki",
     "name": "Odnoklassniki",
-    "description": "Finding Russian-speaking users and investigating Odnoklassniki profiles",
+    "description": "Use when you have a `name`, `username` or `phone` for a Russian/CIS subject and want their social profile, photos and connections — returns profile, photos, groups and friends.",
     "url": "https://ok.ru/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Finding Russian-speaking users and investigating Odnoklassniki profiles",
-    "input": "Username or search criteria",
-    "output": "User profiles, profile photos, mutual friends, groups, and public activity data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding and profiling Russian- and CIS-region subjects on a major regional social network.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "associate",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view public profiles. A (sock-puppet) account unlocks more search and full profile/photo viewing; some features nudge toward the mobile app.",
     "opsec": "active",
-    "opsecNote": "Queries Odnoklassniki's servers directly; public profile views may be logged. Uses Russian-language interface by default.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Queries hit OK.ru's (VK-owned, Russia-based) servers directly and are subject to Russian data jurisdiction. Logged-in profile views can trigger a \"guest\"/visitor notification to the account owner. Always use a sock-puppet account and a clean/VPN browser; assume the platform logs and may attribute your activity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "OK.ru is a genuine, major social network (owned by VK), so profile data is first-party and authoritative — but it sits under Russian jurisdiction, so treat the operating environment, not the data authenticity, as the risk.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "vk-com",
+      "yandex-people-search"
+    ],
+    "aliases": [
+      "OK.ru",
+      "Odnoklassniki",
+      "Одноклассники"
+    ],
+    "tags": [
+      "russia",
+      "cis",
+      "social-network"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/odnoklassniki.md"
   },
   {
@@ -339243,45 +339395,57 @@
   },
   {
     "id": "osint-github-com-2",
-    "name": "osint (github.com)",
-    "description": "OSINT tool: osint (github.com).",
+    "name": "osint (eenblam/github)",
+    "description": "Use when you are on a TikTok video page and want its embedded metadata, or need a quick Yandex reverse-image jump — returns extracted page metadata via a browser extension/bookmarklet.",
     "url": "https://github.com/eenblam/osint",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling metadata off a TikTok video page and one-click Yandex reverse image search while browsing.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "image"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "metadata-exif",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; install the extension/bookmarklet locally, no account.",
+    "opsec": "passive",
+    "opsecNote": "The TikTok metadata extractor reads data already present in the page you loaded — it adds no extra request to TikTok, so it is passive. The Yandex bookmarklet, however, sends the image to Yandex (a Russian service), which then holds and may retain that image; avoid it for sensitive imagery and use a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Small personal utility repo (eenblam) of scripts/bookmarklets for QuizTime-style OSINT; inspect the short source before installing. Not a maintained product.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "yandex-images",
+      "exiftool"
+    ],
+    "aliases": [
+      "eenblam osint",
+      "TikTok metadata bookmarklet"
+    ],
     "tags": [
       "tiktok",
-      "TikTok Related Sites"
+      "TikTok Related Sites",
+      "bookmarklet",
+      "browser-extension"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osint-github-com-2.md"
   },
   {
@@ -350026,44 +350190,54 @@
   {
     "id": "threadsdownloader-com",
     "name": "threadsdownloader.com",
-    "description": "OSINT tool: threadsdownloader.com.",
+    "description": "Use when you have a public Meta Threads post URL and want the underlying media file — returns the downloadable video/image/GIF for reverse-search and EXIF work.",
     "url": "https://threadsdownloader.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the raw media file (MP4/JPEG/GIF) out of a public Threads post for offline analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free; no account or install. Ad-supported web page.",
+    "opsec": "passive",
+    "opsecNote": "You paste a post URL into a third-party downloader; that operator sees which post you're pulling, and the actual media fetch hits Meta's CDN (not the poster), so the target is not notified. Use a sock-puppet browser and don't submit links you wouldn't want the operator to log.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "One of many interchangeable third-party Threads/Instagram media downloaders; no transparency on operator or data handling. Fine for grabbing public media, but treat the site itself as untrusted.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "exiftool",
+      "yandex-images"
+    ],
+    "aliases": [
+      "Threads Downloader",
+      "threadsdownloader.com"
+    ],
     "tags": [
       "threads",
-      "Threads Related Sites"
+      "Threads Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/threadsdownloader-com.md"
   },
   {
@@ -355064,44 +355238,56 @@
   {
     "id": "twitter-lolarchiver-com",
     "name": "twitter.lolarchiver.com",
-    "description": "OSINT tool: twitter.lolarchiver.com.",
+    "description": "Use when you have a Twitter/X `username` or user ID and want its history of handle, display-name, bio, location and website changes — returns a timeline of past profile values.",
     "url": "https://twitter.lolarchiver.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering a Twitter/X account's former usernames, display names, bio locations and websites over time.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "username",
+      "name",
+      "geolocation",
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic history lookups are free; the wider lolarchiver ecosystem gates deeper/bulk features and other platforms behind paid credits.",
+    "opsec": "passive",
+    "opsecNote": "You query the archive, not Twitter/X, so the target is not notified. But you are handing the subject's handle to lolarchiver — a third-party doxx-adjacent archive of dubious provenance — which logs your lookups. Use a sock-puppet and treat the operator as untrusted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party scraped archive with no accountability; data may be stale, partial or wrong, and the site's broader ecosystem is associated with doxxing. Corroborate anything it returns.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "spoonbill-io",
+      "memory-lol"
+    ],
+    "aliases": [
+      "lolarchiver twitter",
+      "twitter username history"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "username-history"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-lolarchiver-com.md"
   },
   {
@@ -375384,35 +375570,53 @@
   {
     "id": "check-usernames",
     "name": "Check Usernames",
-    "description": "OSINT tool: Check Usernames.",
+    "description": "Use when you have a `username` and want to see which social networks it is registered on — returns a taken/available grid across ~150+ platforms.",
     "url": "https://checkusernames.com/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Quick visual sweep of which social platforms a single username is taken on.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The basic checkusernames.com availability grid is free; deeper checks, monitoring and auto-registration are upsold through its parent service KnowEm (paid).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Checks run server-side from KnowEm's infrastructure, not your IP, so the target platforms don't see you directly — but you hand the target handle to KnowEm, which logs the query. It only tells you a handle is taken, not who owns it, so leakage about the subject is minimal. Use a sock-puppet if even the lookup should be unattributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Long-running KnowEm-operated brand-protection tool (formerly the original CheckUserNames). Built for brand/handle availability, so a \"taken\" mark means the handle exists — not that it belongs to your subject.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "knowem",
+      "whatsmyname",
+      "namechk"
+    ],
+    "aliases": [
+      "CheckUsernames",
+      "checkusernames.com"
+    ],
+    "tags": [
+      "username-enumeration",
+      "brand-protection"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/check-usernames.md"
   },
   {
@@ -378484,28 +378688,29 @@
   {
     "id": "socialfinder-rix4uni",
     "name": "socialfinder (rix4uni)",
-    "description": "Hunt down social media accounts by username across social networks.",
+    "description": "Use when you have a `username` and want to enumerate which social/dev/gaming sites it exists on — returns a streamed list of `social-profile` URLs.",
     "url": "https://github.com/rix4uni/socialfinder",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Username-to-social-account enumeration",
+    "bestFor": "Fast command-line username-to-account enumeration across a couple dozen platforms.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (Go). No account or API key.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Requests come from your IP directly to each target platform, one per site. It is passive reconnaissance (no login, no interaction with the target), but the checked sites see your IP and user-agent — run from a VPN/sock-puppet host if you don't want your address in their logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Username enumerator (16 stars).",
+    "trustNote": "Small single-author Go tool (rix4uni) with a modest star count; useful but not widely audited. Confirm every hit manually — username collisions and false positives are common.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -378514,13 +378719,21 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "sherlock",
+      "maigret",
+      "whatsmyname"
+    ],
+    "aliases": [
+      "socialfinder",
+      "rix4uni socialfinder"
+    ],
     "tags": [
       "username-enumeration",
       "cli"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/username/socialfinder-rix4uni.md"
   },
