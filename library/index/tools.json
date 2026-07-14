@@ -158121,30 +158121,32 @@
   {
     "id": "soundcloud",
     "name": "SoundCloud",
-    "description": "Website related to social networking and podcasting services",
+    "description": "Use when you have a `username` or `name` and want to find a subject's audio/podcast presence — returns a `social-profile` with avatar `image`, bio, location text, tracks, and follower links.",
     "url": "https://soundcloud.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a subject's audio-social presence (music, DJ sets, podcasts) and pivoting from a reused handle to a profile with avatar, bio and location.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
+      "social-profile",
       "image",
-      "social-profile"
+      "username"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and searching public profiles/tracks is free without an account. A free login is needed to see followers/following lists and some engagement details.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public profile and track pages can be viewed without logging in — do that from a sock-puppet browser. Logging in to view followers ties the query to whatever account you use; use a research account, never a personal one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "SoundCloud is a large, first-party audio-hosting platform; profile content is user-generated but the platform itself is authoritative for what a given handle has posted.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -158153,14 +158155,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "soundcloud.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "audio",
+      "username"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-13",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/soundcloud.md"
   },
@@ -158907,45 +158914,52 @@
   },
   {
     "id": "tactiq-io",
-    "name": "tactiq.io",
-    "description": "OSINT tool: tactiq.io.",
+    "name": "Tactiq YouTube Transcript",
+    "description": "Use when you have a YouTube video URL (`social-profile` / `metadata`) and want its full spoken transcript to mine for names, places and dates — returns transcript text as `metadata`.",
     "url": "https://tactiq.io/tools/youtube-transcript",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the full text transcript of a subject's YouTube video so spoken names, locations and timeframes become searchable.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The web YouTube-transcript tool is free with no email or login. Tactiq's separate live-meeting Chrome extension has paid tiers, but the transcript-from-URL tool does not.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public YouTube URL into Tactiq's own servers — the target is not touched or notified. Tactiq sees which video you transcribed; use a sock-puppet browser if that link is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial SaaS (Tactiq) offering a free transcript utility; the transcript is machine ASR of the public video, so accuracy is good but not perfect on names/proper nouns.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "tactiq.io",
+      "Tactiq YouTube transcript generator"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "transcript",
+      "video"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/tactiq-io.md"
   },
   {
@@ -210272,16 +210286,19 @@
   },
   {
     "id": "netbootcamp-s-people-tool",
-    "name": "NetBootCampï¿½s People Tool",
-    "description": "OSINT tool: NetBootCampï¿½s People Tool.",
+    "name": "NetBootCamp People Search",
+    "description": "Use when you have a `name` (or screen name / phone / address) and want one console that fires the query into dozens of US people-search and social sites at once — returns `address`, `phone`, `email`, `associate`, `social-profile` and `dob` leads.",
     "url": "https://netbootcamp.org/peoplesearch.html",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Fanning a single name/handle out across many people-search, social and public-record sites from one form instead of visiting each site manually.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
       "address",
@@ -210291,28 +210308,39 @@
       "social-profile",
       "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The query console itself is free. It hands off to third-party sites, several of which paywall the full report even though the search is free — cost lands downstream, not on NetBootCamp.",
+    "opsec": "passive",
+    "opsecNote": "The tool builds and opens searches on other sites in your browser; each downstream site sees your browser/IP. Run it in a sock-puppet browser. It does not contact the subject, but data brokers it forwards to may log your queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running investigator resource by Bob Brasich (@NetBootCamp), widely cited in OSINT tool lists; it is a query launcher, so result quality is entirely that of the destination sites.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "NetBootCamp People Search",
+      "netbootcamp.org peoplesearch"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "aggregator",
+      "query-launcher"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/people-search/netbootcamp-s-people-tool.md"
   },
   {
@@ -218918,45 +218946,55 @@
   },
   {
     "id": "mastdata-com",
-    "name": "mastdata.com",
-    "description": "OSINT tool: mastdata.com.",
+    "name": "Mastdata",
+    "description": "Use when you have a `geolocation` or `address` and want to know which UK mobile operators/masts serve it and where coverage gaps are — returns cell-mast `geolocation` and coverage `metadata`, not personal data.",
     "url": "https://www.mastdata.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding UK mobile coverage and cell-mast infrastructure around a location — which operators reach an area and where the not-spots are.",
     "selectorsIn": [
-      "phone"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free coverage maps and reference material; detailed analysis tools, line-of-sight modelling and corporate features sit behind paid subscriptions / user accounts.",
+    "opsec": "passive",
+    "opsecNote": "You query infrastructure data, not a person — nothing touches or notifies any subject. Creating an account ties usage to that login; browse the free maps anonymously where possible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Industry/crowdsourced UK telecoms resource (coverage partly from a crowdsourced Android app plus infrastructure records); good for planning-grade coverage insight, not a precise real-time source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "mastdata.com",
+      "UK mobile base station resource"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "cell-tower",
+      "coverage",
+      "uk",
+      "infrastructure"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/phone/mastdata-com.md"
   },
   {
@@ -232795,14 +232833,14 @@
   },
   {
     "id": "court-records-directory",
-    "name": "Court Records Directory",
-    "description": "OSINT tool: Court Records Directory.",
+    "name": "SearchSystems.net Court Records Directory",
+    "description": "Use when you have a `name` and a rough US jurisdiction and want to reach the right free official court/criminal record database — returns curated links to `.gov`/county court systems that yield `document-id`, `dob` and case records.",
     "url": "http://publicrecords.searchsystems.net/free_public_records_by_type_of_record/court_records",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the correct free, official (non-broker) US court/criminal record database for a given state or county, then searching a name there.",
     "selectorsIn": [
       "name"
     ],
@@ -232811,29 +232849,42 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The directory is free with no account, email or paywall; it links only to free government sources (destinations may themselves charge for copies of documents).",
+    "opsec": "passive",
+    "opsecNote": "SearchSystems is just a link directory — searching happens on the official destination site, which sees your IP/query. Use a sock-puppet browser; the subject is not notified.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running (since 1996) curated directory that links directly to .gov/.us/county/court systems — explicitly never to data brokers, scrapers or resold databases.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "tennessee"
+    ],
+    "aliases": [
+      "SearchSystems.net",
+      "Public Records court records directory"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records",
+      "directory"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-records-directory.md"
   },
   {
@@ -236294,47 +236345,57 @@
   },
   {
     "id": "eca-co-uk",
-    "name": "eca.co.uk",
-    "description": "OSINT tool: eca.co.uk.",
+    "name": "ECA — Find a Member (Electrical Contractors' Association)",
+    "description": "Use when you have a company `name`, `address`/area, or trade and want to confirm a UK electrical contractor is an ECA member — returns the member `employer-org` with location and areas of work.",
     "url": "https://www.eca.co.uk/find-a-member",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that a UK electrical/electrotechnical contractor is a registered ECA member and finding its location and scope of accredited work.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The member directory search is free and public; some deeper member-only content requires an employer-linked registration, but the find-a-member lookup does not.",
+    "opsec": "passive",
+    "opsecNote": "A read-only search of a trade-association directory — no subject notification. The site sees your IP/query like any website; a sock-puppet browser suffices for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "The ECA (Electrical Contractors' Association) is the recognised UK trade body; membership listings are first-party and reliable for who is an accredited member.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Electrical Contractors' Association find a member",
+      "eca.co.uk"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk",
+      "trade-association",
+      "electrical"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/public-records/eca-co-uk.md"
   },
   {
@@ -268546,51 +268607,6 @@
     "_file": "library/tools/public-records/sra-org-uk.md"
   },
   {
-    "id": "sssc-uk-com",
-    "name": "sssc.uk.com",
-    "description": "OSINT tool: sssc.uk.com.",
-    "url": "https://www.sssc.uk.com/search-the-register/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professionlicensing",
-      "Profession & Licensing Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/sssc-uk-com.md"
-  },
-  {
     "id": "st-louis-county-salaries-fiscal-2020",
     "name": "St. Louis County salaries fiscal 2020",
     "description": "OSINT tool: St. Louis County salaries fiscal 2020.",
@@ -269759,49 +269775,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/tendersinfo.md"
-  },
-  {
-    "id": "tennessee",
-    "name": "Tennessee",
-    "description": "OSINT tool: Tennessee.",
-    "url": "https://www.tn.gov/correction/redirect-agency-services/foil.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "court",
-      "inmate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/tennessee.md"
   },
   {
     "id": "tennessee-registered-voter-verification",
@@ -314700,13 +314673,13 @@
   {
     "id": "xsint",
     "name": "xsint",
-    "description": "All-in-one CLI OSINT aggregator that takes an email, phone, username, IP, or address and fans the query out across 67+ services and modules.",
+    "description": "Use when you have a single `email`, `phone`, `username`, `ip-address`, or `address` and want to fan it out across ~60 services in one command — returns account presence, breach exposure, phone metadata, and geocoded addresses.",
     "url": "https://github.com/h1lw/xsint",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Quickly pivoting from a single identifier (email/phone/username/IP/address) to account-presence hits, breach exposure, phone metadata, and geocoded addresses in one command.",
+    "bestFor": "Quickly pivoting from a single identifier to account-presence hits, breach exposure, phone metadata, and geocoded addresses in one CLI run.",
     "selectorsIn": [
       "email",
       "phone",
@@ -314722,15 +314695,18 @@
       "address",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPL v3). Core modules need no keys; optional modules (HaveIBeenPwned, IntelX, GHunt/Google, GitFive/GitHub, a Telegram breach bot) require you to supply your own accounts or API keys.",
     "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Many modules hit third-party auth/recovery endpoints (e.g. Instagram recovery flow, Amazon/Snapchat presence checks) using the target's identifier, which those services can log and may surface to the account owner. xsint supports Tor/Burp proxying — route it through a sock-puppet IP and expect that some checks are intrusive rather than passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Open-source (GPL v3) Python CLI by GitHub user h1lw; small/new project, verify behavior before relying on results. Some modules require third-party logins/API keys (Google session, GitHub PAT, HIBP, IntelX, Telegram).",
+    "trustNote": "Open-source Python CLI by GitHub user h1lw (~120 commits, small star count, no tagged releases). Verify module behavior against a known control before relying on results.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -314739,6 +314715,9 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [
+      "account-live-com"
+    ],
     "aliases": [
       "h1lw/xsint"
     ],
@@ -314753,7 +314732,7 @@
       "python"
     ],
     "source": "xsint",
-    "lastVerified": "",
+    "lastVerified": "2026-07-13",
     "enrichment": "full",
     "_file": "library/tools/search-engines/xsint.md"
   },
@@ -328015,14 +327994,14 @@
   },
   {
     "id": "google-com-50",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "name": "Google dork — site:zalo.me",
+    "description": "Use when you have a `name` or `username` and want to surface a subject's Zalo (Vietnamese messenger/social) profile pages that Google has indexed — returns `social-profile` links and the display `name` on them.",
     "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Azalo.me%2F",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding public Zalo profile pages for a subject with Vietnamese ties by constraining a Google search to the zalo.me domain.",
     "selectorsIn": [
       "username",
       "name"
@@ -328031,29 +328010,39 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Uses ordinary Google web search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The query runs against Google, not against Zalo or the target, so the subject is not notified. Google still logs the search to your IP/session — run it from a sock-puppet browser if the search terms themselves are sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is a standard Google `site:` operator, not a third-party service — reliability is Google's index coverage of zalo.me pages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "site:zalo.me",
+      "Zalo Google dork"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "zalo",
+      "google-dork",
+      "vietnam"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-50.md"
   },
   {
@@ -358093,37 +358082,55 @@
   {
     "id": "xquik",
     "name": "Xquik",
-    "description": "OSINT tool: Xquik.",
+    "description": "Use when you have a `username` or keyword and want to search public X (Twitter) posts and export an account's follower list — returns `social-profile` links, post content, and `associate` connections.",
     "url": "https://xquik.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Searching public X/Twitter posts by keyword/account/operator and exporting an account's followers to map connections, via a dashboard or API.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Third-party X-access platform with a dashboard, REST API and MCP server. A free tier exists for basic use; higher-volume search and follower export sit behind paid plans and require account signup / OAuth.",
+    "opsec": "active",
+    "opsecNote": "You connect an X account (OAuth 2.1) to use it, so activity is attributable to that account — use a research/sock-puppet X login, never a personal one. Follower exports and keyword monitoring generate real API traffic against X.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent third party, explicitly not affiliated with X Corp. Data reflects X's public API; treat coverage as best-effort and verify anything load-bearing directly on X.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "xquik.com"
+    ],
     "tags": [
-      "twitter"
+      "twitter",
+      "x",
+      "follower-export",
+      "api"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/xquik.md"
   },
   {
