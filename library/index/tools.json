@@ -156211,7 +156211,7 @@
   {
     "id": "reveye-reverse-image-search",
     "name": "RevEye Reverse Image Search",
-    "description": "Multi-engine reverse image pivoting from a single browser action",
+    "description": "Use when you have an `image` or `face` on a web page and want to reverse-search it across multiple engines in one click — returns image matches and social-profile leads.",
     "url": "https://github.com/steven2358/reveye",
     "category": "image-video-face",
     "path": [
@@ -156219,34 +156219,50 @@
       "images",
       "search"
     ],
-    "bestFor": "Multi-engine reverse image pivoting from a single browser action",
-    "input": "Right-click target image in browser",
-    "output": "Parallel reverse-search results in configured engines",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-click, multi-engine reverse image search (Google Lens, Bing, Yandex, TinEye) from any image in the browser.",
+    "selectorsIn": [
+      "image",
+      "face"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (GPLv3); no ads, no tracking, optional donations.",
     "opsec": "passive",
-    "opsecNote": "Client-side extension submits search queries to selected engines only.",
+    "opsecNote": "Each search sends the image URL to the engine(s) you pick — including Yandex, which is Russian-operated. You choose which engines receive the query; do it from a sock-puppet browser and be deliberate about which engines see a sensitive image.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Actively maintained open-source extension (v2.0.0, Aug 2024) by steven2358; the developer states no data tracking and no ads, and the code is public.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "yandex-images",
+      "pimeyes",
+      "tineye"
+    ],
+    "aliases": [
+      "RevEye",
+      "Reverse Image Search Magic"
+    ],
+    "tags": [
+      "reverse-image",
+      "browser-extension",
+      "open-source"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/search/reveye-reverse-image-search.md"
   },
   {
@@ -157292,46 +157308,56 @@
   {
     "id": "second-life",
     "name": "Second Life",
-    "description": "Website related to social networking and players of the virtual computer game Second Life",
-    "url": "http://secondlife.com",
+    "description": "Use when you have a `username` (Second Life resident name) or `name` and want to find a subject's virtual-world avatar profile — returns social-profile and image (avatar) leads.",
+    "url": "https://secondlife.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's Second Life resident/avatar profile and picking up avatar images and in-world social connections.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to create an account and view resident profiles; land/goods cost in-world currency but are irrelevant to profile lookups.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Viewing profiles is passive, but joining Second Life to search in-world means creating an avatar and logging in. Use a sock-puppet resident account; never contact or teleport to the target avatar.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A genuine Linden Lab virtual world, but identities are pseudonymous avatars with a deliberately weak link to real-world identity; treat any match as a soft lead.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "gravatar",
+      "username-search"
+    ],
+    "aliases": [
+      "SecondLife",
+      "SL resident search"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
+      "virtual-world",
+      "avatar",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/second-life.md"
   },
@@ -202963,48 +202989,58 @@
   },
   {
     "id": "address-check-1-2-united-states",
-    "name": "Address Check 1.2 (United States)",
-    "description": "Address verification tool for addresses in the United States",
-    "url": "http://www.melissadata.com/lookups/AddressCheck.asp",
+    "name": "Melissa Address Check (US)",
+    "description": "Use when you have an `address` (or name) and want to verify/standardize a US address and identify residents — returns a validated address plus name and associate (resident) leads.",
+    "url": "https://lookups.melissa.com/home/addresscheck/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying and standardizing a US address (deliverability, ZIP+4) and, via Melissa's people lookups, identifying who lives there.",
     "selectorsIn": [
+      "address",
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
       "address",
-      "phone",
+      "name",
       "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Melissa's free web \"lookups\" allow a limited number of address checks/resident lookups per day; higher volume and full contact data require a paid Melissa account/API.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Validating an address does not notify anyone. Melissa is a data-quality vendor, not a people-search-first service; free lookups are rate-limited, and richer resident data is a paid API call.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Melissa (Melissa Data) is a long-established, reputable address-verification and data-quality vendor whose data feeds many enterprise systems; address validation is authoritative, resident data is aggregated.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "usps-zip-lookup",
+      "truepeoplesearch"
+    ],
+    "aliases": [
+      "Melissa Data AddressCheck",
+      "Melissa Lookups"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "people-search"
+      "people-search",
+      "address-verification"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/people-search/address-check-1-2-united-states.md"
   },
@@ -212895,47 +212931,58 @@
   },
   {
     "id": "private-eye",
-    "name": "Private Eye",
-    "description": "OSINT tool: Private Eye.",
+    "name": "PrivateEye",
+    "description": "Use when you have a `name`, `phone`, or `email` and want a US people-search profile — returns address, phone, and associate (relatives) leads.",
     "url": "https://www.privateeye.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Building a US contact/associate profile — addresses, phones, relatives — from a name, phone, or email.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "email"
     ],
     "selectorsOut": [
       "address",
       "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to run a search and see summary matches; the full report (unredacted contact details, background records) is a paid unlock.",
+    "opsec": "passive",
+    "opsecNote": "Searching does not notify the subject. PrivateEye aggregates public records; browse from a sock-puppet context and never use it for FCRA-regulated purposes (it explicitly is not a consumer reporting agency).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running commercial US people-search brand drawing on public-records aggregators; broad but with the usual data-broker error rate — stale addresses and mismatched relatives occur.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "people-search-2",
+      "truepeoplesearch",
+      "intelius"
+    ],
+    "aliases": [
+      "PrivateEye.com",
+      "Private Eye people search"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "data-broker"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/private-eye.md"
   },
   {
@@ -241292,47 +241339,58 @@
   },
   {
     "id": "fscmauritius-org",
-    "name": "fscmauritius.org",
-    "description": "OSINT tool: fscmauritius.org.",
+    "name": "FSC Mauritius",
+    "description": "Use when you have a `name` or `employer-org` linked to Mauritius financial services and want to check the regulator's licensee register — returns employer-org, name, and document-id (licence) leads.",
     "url": "https://www.fscmauritius.org/en",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a person or company is licensed by Mauritius's financial regulator, and confirming licence status for a Mauritius financial entity.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public regulator site; the licensee register and enforcement notices are freely searchable.",
+    "opsec": "passive",
+    "opsecNote": "Searching a regulator's public register does not notify anyone and needs no account. Standard passive browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Financial Services Commission is Mauritius's official integrated regulator for non-bank financial services; its register and enforcement actions are authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "mu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "onlinesearch-mns-mu",
+      "opencorporates"
+    ],
+    "aliases": [
+      "Financial Services Commission Mauritius",
+      "FSC Mauritius register"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "regulator",
+      "mauritius"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/fscmauritius-org.md"
   },
   {
@@ -252710,47 +252768,60 @@
   },
   {
     "id": "luxembourg",
-    "name": "Luxembourg",
-    "description": "OSINT tool: Luxembourg.",
-    "url": "https://www.lbr.lu/mjrcs-lbr/jsp/IndexActionNotSecured.action?time=1631033938069&loop=1",
+    "name": "Luxembourg Business Registers (RCS)",
+    "description": "Use when you have a `name` or `employer-org` and want official Luxembourg company records — returns directors/officers (name, associate), the company (employer-org), and its registered address.",
+    "url": "https://www.lbr.lu/mjrcs-lbr/jsp/IndexActionNotSecured.action",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up Luxembourg companies and their directors/managers in the official Registre de Commerce et des Sociétés (RCS).",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
+      "name",
+      "associate",
       "address",
-      "employer-org",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic name/company search and the register index are free; full company extracts and filed documents (statutes, accounts) are paid per-document.",
+    "opsec": "passive",
+    "opsecNote": "A registry search does not notify anyone. Buying document extracts may require an LBR account and payment, which are logged; use investigative-context details.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Luxembourg Business Registers (RCS), operated under a state economic-interest grouping; authoritative for Luxembourg entities and their officers.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "lu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "opencorporates",
+      "disputesregister-org"
+    ],
+    "aliases": [
+      "LBR Luxembourg",
+      "RCS Luxembourg",
+      "Registre de Commerce et des Sociétés"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-records",
+      "luxembourg"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/luxembourg.md"
   },
   {
@@ -318323,45 +318394,55 @@
   {
     "id": "ameba",
     "name": "Ameba",
-    "description": "A Japanese blogging and social media website",
+    "description": "Use when you have a `username` or `name` and want to find a Japanese subject's Ameba blog/social profile — returns social-profile and image (posted photos) leads.",
     "url": "https://www.ameba.jp",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a Japanese subject's Ameba blog and profile, and mining posts for photos and personal detail.",
     "selectorsIn": [
-      "name",
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free consumer blogging platform; reading public blogs needs no account, commenting/following does.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public Ameba blog is passive and leaves no trace. Following or commenting requires an account and is visible — use a sock-puppet account and stay read-only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A large, genuine Japanese blogging platform (CyberAgent); the subject's own posts are authoritative, but username matches need corroboration and content is Japanese-language.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "jp"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mixi",
+      "line-play"
+    ],
+    "aliases": [
+      "Ameblo",
+      "アメーバ",
+      "Ameba Blog"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
+      "japan",
+      "blogging",
       "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/ameba.md"
   },
@@ -343042,37 +343123,60 @@
   {
     "id": "qzone-china",
     "name": "Qzone (China)",
-    "description": "OSINT tool: Qzone (China).",
-    "url": "http://qzone.qq.com",
+    "description": "Use when you have a QQ number/`username` or `name` and want to find a subject's Tencent Qzone social profile — returns social-profile, image, and associate leads.",
+    "url": "https://qzone.qq.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating and viewing a Chinese subject's Qzone (QQ Zone) profile, photos, and friend network, tied to their QQ number.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Tencent consumer service; viewing most content requires a QQ account and, for many profiles, being an approved friend.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a Qzone requires logging in with a QQ account, and visiting some profiles leaves a \"visitor\" footprint the owner can see. Use a sock-puppet QQ account and be aware Tencent operates under Chinese data/censorship regimes.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A genuine, massive Tencent platform tied to QQ; authoritative as the subject's own posts, but heavily access-controlled and privacy-gated for outsiders.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "cn"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "wechatsogou",
+      "weibo-com"
+    ],
+    "aliases": [
+      "QQ Zone",
+      "QQ空间",
+      "Qzone"
+    ],
     "tags": [
-      "major-social-networks"
+      "major-social-networks",
+      "china",
+      "qq",
+      "tencent"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/qzone-china.md"
   },
   {
