@@ -112481,13 +112481,13 @@
   {
     "id": "yandex-mail",
     "name": "Yandex Mail",
-    "description": "Email service provider",
+    "description": "Use when you have an `email` on the yandex domain (or need a sock-puppet base in the Yandex ecosystem) and want account-existence confirmation and a pivot into Yandex's OSINT-rich services — returns account existence and social-profile hints.",
     "url": "https://mail.yandex.com",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming Yandex account existence for an address and providing a base account for Yandex's ecosystem (reverse image, maps, disk).",
     "selectorsIn": [
       "email"
     ],
@@ -112495,31 +112495,44 @@
       "email",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free webmail; a Yandex account (free) unlocks the wider ecosystem (Yandex Images reverse search, Maps, Disk).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Checking whether a @yandex address exists (via the login/recovery flow) is a light active touch on Yandex auth; using Yandex services logged-in ties activity to your account. Register and operate any Yandex account as a dedicated sock puppet, and be aware Yandex is a Russia-based provider — assume broad logging.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Yandex; the mail/login endpoints are first-party, so existence signals are authoritative (subject to CAPTCHAs and anti-abuse).",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "yandex-images",
+      "account-live-com",
+      "gmail-com"
+    ],
+    "aliases": [
+      "Yandex Mail",
+      "mail.yandex.com",
+      "mail.yandex.ru"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "email-addresses"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/email/yandex-mail.md"
   },
@@ -207066,45 +207079,57 @@
   {
     "id": "getcontact",
     "name": "GetContact",
-    "description": "Phonenumber ID app - draws from crowdsourced contactbooks",
+    "description": "Use when you have a `phone` number and want the name(s) other people saved it under — returns crowdsourced name tags and profile hints.",
     "url": "https://www.getcontact.com/en/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Revealing how a phone number is labeled in other people's address books via crowdsourced caller-ID data.",
     "selectorsIn": [
-      "name",
-      "phone"
+      "phone",
+      "name"
     ],
     "selectorsOut": [
       "name",
-      "social-profile",
-      "phone"
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier with limited lookups; a Premium subscription unlocks the full \"tags\" list showing every name the number is saved under. App registration (your own phone number) is required.",
+    "opsec": "active",
+    "opsecNote": "To use it you must install the app and register with a real phone number; the app pressures you to upload your entire contact list (do NOT — that leaks your contacts into the crowdsourced pool). Looking up a number does not directly notify its owner, but registering ties the activity to your device/number. Use a dedicated burner device and number, never your real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial caller-ID app; data is crowdsourced from users' address books, so tags are unverified user-supplied labels, not authoritative records.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [
+      "truecaller",
+      "eyecon"
+    ],
+    "aliases": [
+      "Get Contact",
+      "getcontact.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "people"
+      "people",
+      "caller-id"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/getcontact.md"
   },
   {
@@ -214630,41 +214655,65 @@
   {
     "id": "thatsthem-2",
     "name": "ThatsThem",
-    "description": "Quick free people lookups by name, address, phone, email, or IP",
+    "description": "Use when you have a `name`, `address`, `phone`, `email`, or `ip-address` and want free reverse-lookup contact details — returns name, address, phone, email, and associate links.",
     "url": "https://thatsthem.com/name-address-search",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Quick free people lookups by name, address, phone, email, or IP",
-    "input": "Name, address, phone number, email, or IP address",
-    "output": "Contact details, associated addresses, phone numbers, email addresses",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free US reverse lookups pivoting between name, address, phone, email, and IP.",
+    "selectorsIn": [
+      "name",
+      "address",
+      "phone",
+      "email",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "phone",
+      "email",
+      "associate"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web lookups with no account for basic searches; soft daily limits apply. A paid API is offered for bulk/programmatic use.",
     "opsec": "passive",
-    "opsecNote": "Free tier has daily lookup limits; no account required for basic searches.",
+    "opsecNote": "Standard aggregator query — the subject is not notified. No account needed, so a clean sock-puppet browser is enough. Data is scraped/compiled from public records and marketing sources; treat as leads.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial people-search aggregator compiling public-record and marketing data; coverage and accuracy vary and records can be stale — corroborate before relying.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "fastpeoplesearch",
+      "truepeoplesearch",
+      "whitepages-com"
+    ],
+    "aliases": [
+      "That's Them",
+      "thatsthem.com"
+    ],
+    "tags": [
+      "people-search",
+      "reverse-lookup",
+      "aggregator"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/thatsthem-2.md"
   },
   {
@@ -226813,47 +226862,62 @@
   },
   {
     "id": "belgium",
-    "name": "Belgium",
-    "description": "OSINT tool: Belgium.",
+    "name": "Belgium UBO Register",
+    "description": "Use when you have a Belgian company `employer-org` or a person's `name` and want the ultimate beneficial owners behind it — returns name, address, dob, and associate links (access-restricted).",
     "url": "https://financien.belgium.be/nl/E-services/Ubo-register",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the ultimate beneficial owners (controlling natural persons) behind Belgian companies, associations, foundations, and trusts.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "address",
+      "dob",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Government service with no fee, but public access was curtailed after the 2022 CJEU ruling — you must authenticate and, in most cases, demonstrate a legitimate interest to view another entity's beneficial owners.",
+    "opsec": "active",
+    "opsecNote": "Access is via authenticated login (Belgian eID/itsme/eIDAS or the ForREG portal for foreigners). Every query is logged against your identity, and legitimate-interest requests are reviewed. This is a named, auditable government interaction — not anonymous. Do not attempt to access it under a false identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official register operated by the Belgian Federal Public Service Finance; the data is legally mandated and authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "be"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "opencorporates-com",
+      "gleif-org"
+    ],
+    "aliases": [
+      "UBO-register",
+      "Belgian beneficial ownership register",
+      "Register van uiteindelijke begunstigden"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/belgium.md"
   },
   {
@@ -249591,46 +249655,56 @@
   {
     "id": "landregistryservices-com",
     "name": "landregistryservices.com",
-    "description": "OSINT tool: landregistryservices.com.",
+    "description": "Use when you have a UK property `address` and want the registered owner's `name` and title details — returns name, address, and document-id (paid, independent agent).",
     "url": "https://www.landregistryservices.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Ordering HM Land Registry title registers/plans for a UK property to identify the registered legal owner.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Independent search agent, not the official registry. Per-document fees apply (title registers/plans typically ~£20-£45 each). HM Land Registry's own service is cheaper (title summary free, register £3-£7) — use this only for the agent's convenience/bundling.",
+    "opsec": "passive",
+    "opsecNote": "You order a document about a property, not a query against the subject. The owner is not notified. Purchase leaves a payment trail with the agent; use appropriate payment hygiene if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent commercial reseller of HM Land Registry documents; not affiliated with the UK government. The underlying title data is official, but you pay a middleman markup.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gov-uk-land-registry",
+      "landregistry-uk-com"
+    ],
+    "aliases": [
+      "Land Registry Services"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "land-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/landregistryservices-com.md"
   },
   {
@@ -259081,46 +259155,56 @@
   {
     "id": "openleis-com",
     "name": "openleis.com",
-    "description": "OSINT tool: openleis.com.",
+    "description": "Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `address` — returns employer-org and address details.",
     "url": "https://openleis.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a company's Legal Entity Identifier (LEI) and its officially registered name and address.",
     "selectorsIn": [
+      "employer-org",
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free front-end over the open GLEIF LEI dataset; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "A neutral lookup against a public corporate-registry mirror — you are querying company data, not the subject. No target-side signal. Standard sock-puppet browser hygiene is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party search front-end over GLEIF's authoritative open LEI data; the underlying records are official but the interface is community-run, so confirm anything important against gleif.org.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gleif-org"
+    ],
+    "aliases": [
+      "Open LEIS",
+      "OpenLEI"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "lei"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/openleis-com.md"
   },
   {
@@ -267125,46 +267209,56 @@
   {
     "id": "sesac-com",
     "name": "sesac.com",
-    "description": "OSINT tool: sesac.com.",
+    "description": "Use when you have a songwriter/performer `name` or publisher `employer-org` and want to confirm their affiliation and linked works — returns name, employer-org, and associate links.",
     "url": "https://www.sesac.com/repertory/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a songwriter/artist's affiliation with the SESAC performing-rights organization and linking them to publishers and works.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public repertory search; no account needed. Terms forbid bulk data-mining and redistribution.",
+    "opsec": "passive",
+    "opsecNote": "Public catalog lookup — you query song/rights data, not the subject. No target-side signal. The site prohibits scraping, so search manually rather than automating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by SESAC, a US performing-rights organization; the repertory is its own authoritative record of works it represents.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ascap-com",
+      "bmi-com"
+    ],
+    "aliases": [
+      "SESAC Repertory",
+      "SESAC repertory search"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "music-rights"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sesac-com.md"
   },
   {
@@ -324547,7 +324641,7 @@
   {
     "id": "fb-identify-requires-logout",
     "name": "FB Identify (Requires Logout)",
-    "description": "Account discovery checks through Facebook identify flow",
+    "description": "Use when you have an `email`, `phone`, or `name` and want to confirm whether it maps to a Facebook account — returns the matched profile's name and photo (must be logged out).",
     "url": "https://www.facebook.com/login/identify",
     "category": "social-networks",
     "path": [
@@ -324555,34 +324649,55 @@
       "facebook",
       "search"
     ],
-    "bestFor": "Account discovery checks through Facebook identify flow",
-    "input": "Email address, phone number, or profile identifier",
-    "output": "Potential account matches and recovery prompts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming a Facebook account exists for an email/phone and revealing the matched profile's name and photo via the account-recovery flow.",
+    "selectorsIn": [
+      "email",
+      "phone",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "image",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Requires interacting with Facebook recovery interfaces and may produce different results when authenticated.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free; uses Facebook's own \"Find Your Account\" recovery page, no account needed (in fact you must be logged out).",
+    "opsec": "active",
+    "opsecNote": "You query Facebook's recovery system about the target's identifier. Facebook logs the attempt and applies anti-abuse rate limits. Stop at the identification card — do NOT send or enter a login/reset code, which would alert the account owner. Use a sock-puppet browser/IP; repeated attempts trigger CAPTCHAs and blocks.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Facebook's first-party account-recovery endpoint; the match it returns is authoritative for account existence.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "facebook-search",
+      "account-live-com"
+    ],
+    "aliases": [
+      "Facebook Find Your Account",
+      "facebook.com/login/identify"
+    ],
+    "tags": [
+      "facebook",
+      "account-existence",
+      "account-recovery"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook/search/fb-identify-requires-logout.md"
   },
   {
@@ -375185,43 +375300,57 @@
   {
     "id": "ebay-co-uk",
     "name": "ebay.co.uk",
-    "description": "OSINT tool: ebay.co.uk.",
+    "description": "Use when you have an `email` or `username` and want to confirm whether it is tied to a live eBay account — returns account existence plus masked recovery hints.",
     "url": "https://www.ebay.co.uk/pages/help/account/forgot-password.html",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether an email or username belongs to a registered eBay account via the password-recovery flow.",
     "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
+      "email",
       "username"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "username",
+      "phone"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free; eBay's own account-recovery flow, no account or payment needed to run the existence check.",
+    "opsec": "active",
+    "opsecNote": "This queries eBay's auth system about the target's identifier. eBay may log the attempt and can send a security notification if you advance the reset. Stop at the existence check — never request or enter a recovery code. Use a sock-puppet browser/IP.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by eBay; this is the genuine first-party account-recovery endpoint, not a third-party scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com",
+      "paypal-com"
+    ],
+    "aliases": [
+      "eBay UK password reset",
+      "eBay account recovery"
+    ],
     "tags": [
       "passwordreset",
-      "Password Reset Details"
+      "Password Reset Details",
+      "account-existence"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/ebay-co-uk.md"
   },
   {
