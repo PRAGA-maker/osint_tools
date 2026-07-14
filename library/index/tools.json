@@ -218273,44 +218273,55 @@
   },
   {
     "id": "cnam-and-caller-name-lookup-service-provider-cid-name-professional-cnam-service-provider-for-asterisk-freeswitch-ope",
-    "name": "CNAM and caller name lookup service provider - CID(name)Professional cnam service provider for asterisk, freeswitch, ope",
-    "description": "OSINT tool: CNAM and caller name lookup service provider - CID(name)Professional cnam service provider for asterisk, freeswitch, ope.",
+    "name": "CID(name) — CNAM Caller Name Lookup",
+    "description": "Use when you have a US/Canada `phone` number and want the CNAM (registered caller-ID name) via a live SS7 dip — returns the name (person or business) on the line.",
     "url": "http://www.cidname.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving the CNAM (caller-ID name) registered to a US/Canada phone number via a live per-dip SS7 query.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "name",
-      "address",
-      "social-profile"
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Requires a paid account; each lookup is a billable \"dip\" (small per-query fee) delivered over an HTTP API. No meaningful free browsing — the value is behind signup and per-dip charges.",
+    "opsec": "passive",
+    "opsecNote": "A CNAM dip queries the carrier's SS7 record, not the subscriber; the number's owner is not contacted or notified. Your account/billing identifies you to the provider, so use a dedicated account for investigative work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A specialist commercial CNAM provider for VoIP platforms (Asterisk/FreeSWITCH/OpenSIPS); data comes live from the number owner's carrier via SS7 rather than a stale private database, so it is fresh but only as accurate as the carrier's CNAM record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "us",
+      "ca"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "cidname.com",
+      "CID(name)",
+      "CNAM lookup"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "cnam",
+      "caller-id"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/cnam-and-caller-name-lookup-service-provider-cid-name-professional-cnam-service-provider-for-asterisk-freeswitch-ope.md"
   },
   {
@@ -220362,29 +220373,34 @@
   {
     "id": "numbering-plans",
     "name": "Numbering Plans",
-    "description": "Telephony standards and numbering-plan validation",
+    "description": "Use when you have a `phone` number and want to validate it and resolve its country, area, and network/operator from published numbering-plan data — returns geolocation and carrier/line context.",
     "url": "https://www.numberingplans.com/?page=analysis&sub=phonenr",
     "category": "phone",
     "path": [
       "phone",
       "international"
     ],
-    "bestFor": "Telephony standards and numbering-plan validation",
-    "input": "Country code, number range, or prefix",
-    "output": "Numbering-plan structure, carrier/routing metadata, and dialing references",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Validating a phone number and resolving its country, area, and network/operator from official numbering plans.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Basic number analysis is free (some daily query limits for anonymous use); a free account and paid subscriptions unlock heavier use and additional numbering databases.",
     "opsec": "passive",
-    "opsecNote": "Reference lookup against published numbering data; no interaction with the target number.",
+    "opsecNote": "A reference lookup against published numbering-plan data; nothing is sent to the target number and the owner is not notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running independent telephony-numbering reference site; its plan data mirrors public/regulatory allocations and is reliable for structure/geography, less so for post-porting carrier ownership.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -220392,11 +220408,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "numberingplans.com",
+      "number analysis tool"
+    ],
+    "tags": [
+      "phone",
+      "numbering-plan",
+      "validation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/international/numbering-plans.md"
   },
   {
@@ -225972,47 +225995,54 @@
   },
   {
     "id": "amazon-co-uk",
-    "name": "amazon.co.uk",
-    "description": "OSINT tool: amazon.co.uk.",
+    "name": "Amazon Wedding & Gift Registry Search",
+    "description": "Use when you have a `name` and want to find their public Amazon wedding/gift registry — returns partner/associate names, approximate location, event date, and interests from the wishlist.",
     "url": "https://www.amazon.co.uk/wedding/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's public Amazon wedding/gift registry to reveal a partner, rough location, event date, and interests.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "associate",
+      "name",
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; an Amazon account may be prompted to view some registry details but basic registry search is open.",
+    "opsec": "passive",
+    "opsecNote": "Searching public registries is passive and does not notify the registrant. Avoid purchasing or messaging through a registry, which would expose your identity. Prefer a clean/sock-puppet Amazon session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Amazon; registry contents are self-published by the registrant, so the data is genuine but user-supplied.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Amazon wedding registry search",
+      "Amazon gift list search"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/amazon-co-uk.md"
   },
   {
@@ -244810,47 +244840,56 @@
   },
   {
     "id": "gov-uk-4",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "GOV.UK — Copy of Decree Absolute / Final Order",
+    "description": "Use when you have a `name` and want to confirm a divorce/dissolution in England & Wales and obtain the record — returns marital-status confirmation and ex-partner/associate details via a court index search.",
     "url": "https://www.gov.uk/copy-decree-absolute-final-order",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and obtaining a decree absolute / final order (divorce record) in England & Wales, including via a Central Family Court index search.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Official GOV.UK / HMCTS service. Applying for a copy carries a court fee (a search of the Central Family Court index plus a copy is a modest paid application); there is no free instant online database.",
+    "opsec": "passive",
+    "opsecNote": "A records request to HMCTS; the individuals named are not notified. You identify yourself to the court in the application, and a name-index search is a formal request rather than an anonymous lookup.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by HM Courts & Tribunals Service via GOV.UK; the authoritative source for divorce/dissolution records in England & Wales.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "decree absolute copy",
+      "final order divorce record",
+      "HMCTS divorce record"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "uk",
+      "court"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-4.md"
   },
   {
@@ -343980,8 +344019,8 @@
   },
   {
     "id": "recover-fb-account",
-    "name": "Recover FB Account",
-    "description": "Validating whether a target email or phone is tied to a Facebook account",
+    "name": "Recover FB Account (existence oracle)",
+    "description": "Use when you have an `email` or `phone` and want to confirm whether it is tied to a Facebook account — returns account existence plus the masked name/photo Facebook shows on the recovery screen.",
     "url": "https://www.facebook.com/login/identify?ctx=recover",
     "category": "social-networks",
     "path": [
@@ -343989,22 +344028,32 @@
       "facebook",
       "search"
     ],
-    "bestFor": "Validating whether a target email or phone is tied to a Facebook account",
-    "input": "Email address or phone number",
-    "output": "Account match confirmation and available recovery paths",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming whether an email/phone belongs to a Facebook account and reading the profile name/photo Facebook reveals during recovery.",
+    "selectorsIn": [
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "No login required, but submitted identifiers are sent directly to Facebook.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Facebook account-recovery flow; no account or payment needed to reach the identification step.",
+    "opsec": "active",
+    "opsecNote": "This queries Facebook's auth infrastructure about the target's identifier and may be logged. Facebook can show a security prompt to the account owner and CAPTCHAs to you. Stop at the identification screen; NEVER request or enter a login/reset code, which would alert the owner. Use a logged-out sock-puppet browser and clean IP.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is Facebook's genuine first-party account-recovery endpoint, not a third-party scraper — the existence signal is authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -344012,11 +344061,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Facebook account recovery",
+      "facebook.com/login/identify",
+      "FB email/phone lookup"
+    ],
+    "tags": [
+      "facebook",
+      "account-existence"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook/search/recover-fb-account.md"
   },
   {
@@ -353492,8 +353548,8 @@
   },
   {
     "id": "tinfoleak-py",
-    "name": "Tinfoleak.py",
-    "description": "CLI-based Twitter metadata collection",
+    "name": "Tinfoleak",
+    "description": "Use when you have a Twitter/X `username` and want an automated intelligence report — profile, activity, geolocation history, media EXIF, and network — returns geolocation, social-profile, associates, and image metadata.",
     "url": "https://github.com/vaguileradiaz/tinfoleak",
     "category": "social-networks",
     "path": [
@@ -353501,34 +353557,52 @@
       "twitter",
       "analytics"
     ],
-    "bestFor": "CLI-based Twitter metadata collection",
-    "input": "Twitter/X usernames or profile identifiers",
-    "output": "User profile metadata and related account intelligence artifacts",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Generating an automated Twitter/X intelligence report (activity, geolocation, media metadata, network) for a username.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "social-profile",
+      "associate",
+      "image",
+      "metadata-exif"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "The tool is free and open source, but it depends on Twitter/X API credentials — and since the 2023 API pricing overhaul, meaningful access requires a paid API tier, which is what actually gates it.",
     "opsec": "active",
-    "opsecNote": "Direct requests to platform endpoints expose source IP and request patterns.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Runs from your machine against Twitter/X APIs using your API keys, tying the collection to your developer account. Use dedicated throwaway API credentials and, ideally, a VPN; heavy automated pulls can trip rate limits or account flags.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established, well-regarded open-source SOCMINT tool by Vicente Aguilera Díaz; the code is public, but functionality now hinges on unstable/paid Twitter API access.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "tinfoleak",
+      "vaguileradiaz/tinfoleak"
+    ],
+    "tags": [
+      "twitter",
+      "socmint",
+      "geolocation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/tinfoleak-py.md"
   },
   {
@@ -356817,45 +356891,51 @@
   },
   {
     "id": "twitch-username-and-user-id-addons-mozilla-org",
-    "name": "twitch username and user id (addons.mozilla.org)",
-    "description": "OSINT tool: twitch username and user id (addons.mozilla.org).",
+    "name": "Twitch Username & User ID (Firefox add-on)",
+    "description": "Use when you have a Twitch `username` (or numeric user ID) and want to convert between them to get a stable identifier that survives renames — returns the persistent Twitch user ID / social-profile handle.",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/twitch-username-and-user-id/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a Twitch username to its permanent numeric user ID (and back) to track an account across name changes.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Firefox add-on; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "The lookup queries Twitch's public API for the ID↔name mapping; the account owner is not notified. Passive, though the request originates from your browser/IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A small third-party Firefox add-on (v1.8, last updated 2021); it simply wraps Twitch's public ID lookup, so risk is low, but it is unmaintained and could break if Twitch changes its API.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Twitch username to user id",
+      "Twitch ID lookup"
+    ],
     "tags": [
       "twitch",
-      "Twitch Related Sites"
+      "Twitch Related Sites",
+      "account-id"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitch-username-and-user-id-addons-mozilla-org.md"
   },
   {
