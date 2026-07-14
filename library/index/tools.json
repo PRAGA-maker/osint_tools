@@ -228754,46 +228754,59 @@
   {
     "id": "bookkeepers-org-uk",
     "name": "bookkeepers.org.uk",
-    "description": "OSINT tool: bookkeepers.org.uk.",
+    "description": "Use when you have a UK bookkeeper/business `name` or location and want to confirm ICB membership — returns the certified bookkeeper's business name, area, and practice details (employer-org/address hints).",
     "url": "https://www.bookkeepers.org.uk/Find-a-Bookkeeper/Browse-Directory/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a UK bookkeeper is an ICB-certified member and getting their practice name and service area.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public \"find a bookkeeper\" directory run by the ICB; no account.",
+    "opsec": "passive",
+    "opsecNote": "A public professional directory — searching it doesn't notify anyone and reveals only self-published, scheme-vetted practice data. Passive; use a sock-puppet browser if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Institute of Certified Bookkeepers (ICB); a listing authoritatively confirms current ICB membership, though it covers only bookkeepers who chose to list.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "companies-house",
+      "trustmark-org-uk"
+    ],
+    "aliases": [
+      "ICB Find a Bookkeeper",
+      "bookkeepers.org.uk"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "public-records",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bookkeepers-org-uk.md"
   },
   {
@@ -234605,14 +234618,14 @@
   },
   {
     "id": "criminal-search-criminal-records-by-state-and",
-    "name": "Criminal Search (Criminal Records by State &",
-    "description": "OSINT tool: Criminal Search (Criminal Records by State &.",
+    "name": "Criminal Search (Criminal Records by State)",
+    "description": "Use when you have a `name` and want to reach the right official US criminal/court record database for a given state or county — returns links to state/county criminal, court, and inmate record sources.",
     "url": "https://www.blackbookonline.info/criminalsearch.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Navigating (via Black Book Online) to official free US criminal, court, and inmate record databases by jurisdiction.",
     "selectorsIn": [
       "name"
     ],
@@ -234621,29 +234634,44 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Black Book Online is a free directory of official public-record sources; no account. Some destination databases charge for detailed records.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and anonymous; the actual criminal-record searches run on the linked government sites, which log queries per their policies — use a sock-puppet browser. Criminal-record data is sensitive; handle and store it responsibly.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Black Book Online is a long-established free public-records directory linking primarily to official government (court/DOC/state) sources rather than data brokers. Quality depends on the destination agency.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "court-cases-results",
+      "searchsystems-birth-records"
+    ],
+    "aliases": [
+      "Black Book Online criminal search",
+      "blackbookonline.info"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "criminal-records",
+      "public-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/criminal-search-criminal-records-by-state-and.md"
   },
   {
@@ -267644,44 +267672,59 @@
   {
     "id": "searchsystems-death-records",
     "name": "SearchSystems Death Records",
-    "description": "OSINT tool: SearchSystems Death Records.",
+    "description": "Use when you have a `name` (and rough US location) and want to locate the official government database holding a death/mortality record — returns links to state/county source databases yielding dob, date of death, and associate (next-of-kin) links.",
     "url": "https://publicrecords.searchsystems.net/free_public_records_by_type_of_record/death_records",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Routing to the correct official US state/county death-record or vital-records database instead of guessing the agency.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "associate",
       "dob",
+      "associate",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The directory is entirely free (\"no paywall, no email harvesting, no account\"). Some linked government databases charge for certified copies.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and anonymous. Actual searches run on the linked .gov/.us sites, which log queries per their own policies; use a sock-puppet browser. The subject here is deceased, but next-of-kin data may surface living relatives — handle sensitively.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running (since 1997) public-records directory linking only to official government (.gov/.us) sources, not data brokers. A navigation index, so quality depends on the destination agency.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "searchsystems-birth-records",
+      "vitalchek"
+    ],
+    "aliases": [
+      "Search Systems death records",
+      "searchsystems.net"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "vital-records",
+      "public-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/searchsystems-death-records.md"
   },
   {
@@ -379166,41 +379209,57 @@
   {
     "id": "protonmail-domains",
     "name": "ProtonMail Domains",
-    "description": "Checking if an email address on a custom domain is hosted on ProtonMail",
+    "description": "Use when you have an `email` (on any domain) and want to know whether it is hosted on Proton Mail — the public HKP key-lookup returns a PGP key index (existence, key-creation timestamp) if the address is a Proton account.",
     "url": "https://api.protonmail.ch/pks/lookup?op=index&search=<email_address>",
     "category": "username",
     "path": [
       "username",
       "specific-sites"
     ],
-    "bestFor": "Checking if an email address on a custom domain is hosted on ProtonMail",
-    "input": "Full email address (any domain that may be hosted on ProtonMail)",
-    "output": "PGP key index with public key fingerprint, algorithm, creation timestamp, and email UID",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Passively confirming an address (including custom domains) is a Proton Mail account via the public key-server endpoint.",
+    "selectorsIn": [
+      "email"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free unauthenticated public key-server (HKP) endpoint; no account, no key needed.",
     "opsec": "passive",
-    "opsecNote": "Unauthenticated public HKP endpoint. Target is not notified. Can reveal whether a custom domain uses ProtonMail.",
+    "opsecNote": "A public PGP key-lookup — the target is NOT notified and nothing is sent to their mailbox. You query Proton's key server directly; use a sock-puppet browser/IP to avoid tying the query to you. This is the manual version of what NeutrOSINT automates.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "The endpoint is Proton's own public key server, so an existence/key result is authoritative. Interpretation is on you — a returned key proves the address is a Proton account.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "neutrosint",
+      "account-live-com"
+    ],
+    "aliases": [
+      "ProtonMail key lookup",
+      "proton HKP lookup"
+    ],
+    "tags": [
+      "email",
+      "protonmail",
+      "account-existence",
+      "pgp"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/specific-sites/protonmail-domains.md"
   },
   {
@@ -379860,13 +379919,13 @@
   {
     "id": "social-analyzer-chrome-extension",
     "name": "Social Analyzer (Chrome extension)",
-    "description": "Social media monitoring and analysis browser extension.",
+    "description": "Use when you have a `username` (or name) and want to find and rank matching profiles across many social platforms from the browser — returns candidate social-profile links with confidence ratings.",
     "url": "https://chromewebstore.google.com/detail/socialanalyzer-social-sen/efeikkcpimdfpdlmlbjdecnmkknjcfcp",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Monitoring and analyzing social presence across platforms",
+    "bestFor": "Browser-based hunting of a username/name across many sites with confidence-scored results.",
     "selectorsIn": [
       "username",
       "name"
@@ -379874,15 +379933,18 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free browser extension. The related open-source Social-Analyzer engine (qeeqbox) is also free.",
+    "opsec": "passive",
+    "opsecNote": "The extension checks public profile URLs for the target handle — probes originate from your browser/IP, so run it in a sock-puppet browser/VPN. No target account is contacted or notified. Avoid using a browser logged into your real social accounts.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Companion to the well-known open-source Social-Analyzer project (qeeqbox), which searches 1000+ sites with layered detection and confidence scoring. Verify the extension listing's publisher before installing; treat scores as leads, not proof.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -379891,14 +379953,22 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "sherlock",
+      "maigret"
+    ],
+    "aliases": [
+      "Social Analyzer",
+      "social-analyzer"
+    ],
     "tags": [
       "username-search",
       "social-analysis",
       "chrome-extension"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/username/social-analyzer-chrome-extension.md"
   },
@@ -380964,13 +381034,13 @@
   {
     "id": "userfinder",
     "name": "UserFinder",
-    "description": "tool for finding profiles by username",
+    "description": "Use when you have a `username` and want to enumerate matching profiles across social platforms — returns links to accounts reusing that handle as social-profile leads.",
     "url": "https://github.com/mishakorzik/UserFinder",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Quick shell-based enumeration of a username across social and other sites.",
     "selectorsIn": [
       "username"
     ],
@@ -380978,27 +381048,40 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source (Bash). No account; needs git, curl, and jq installed.",
+    "opsec": "passive",
+    "opsecNote": "The tool sends HTTP requests to many sites checking for the username — those requests come from your IP, so run it from a sock-puppet/VPN context. No target account is contacted or notified; it only probes public profile URLs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Single-author open-source shell tool (mishakorzik), last meaningfully updated around 2021. Site lists rot over time, so expect false positives/negatives; inspect the script before running.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "sherlock",
+      "maigret"
+    ],
+    "aliases": [
+      "UserFinder",
+      "mishakorzik/UserFinder"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username-enumeration",
+      "cli"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/username/userfinder.md"
   },
