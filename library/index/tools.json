@@ -159574,45 +159574,52 @@
   },
   {
     "id": "the-bitmoji-avatar-history-enumerator",
-    "name": "The Bitmoji Avatar History Enumerator",
-    "description": "OSINT tool: The Bitmoji Avatar History Enumerator.",
+    "name": "Backmoji (Bitmoji Avatar History Enumerator)",
+    "description": "Use when you have a Snapchat `username` and want to enumerate the history of Bitmoji avatars that account has used — returns `image` avatars and `physical-description` / appearance cues.",
     "url": "https://backmoji.myosint.training/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the historical Bitmoji avatar images tied to a Snapchat account to observe appearance/style changes and corroborate identity.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool hosted by MyOSINT Training; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The tool reads publicly exposed Bitmoji avatar assets keyed to a Snapchat account; it does not add the target or notify them on Snapchat. Run from a sock-puppet browser for hygiene. It reveals only Bitmoji cartoons the user chose, not real photos.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built and hosted by MyOSINT Training (a recognized OSINT training provider); it relies on Snapchat's public Bitmoji asset URLs, which can change if Snapchat alters that surface.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Backmoji",
+      "Bitmoji avatar history",
+      "Snapchat Bitmoji history"
+    ],
     "tags": [
       "profileimages",
-      "Profile Images"
+      "Profile Images",
+      "snapchat"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/the-bitmoji-avatar-history-enumerator.md"
   },
   {
@@ -159959,45 +159966,50 @@
   },
   {
     "id": "tineye-reverse-image-sear-chrome-google-com",
-    "name": "tineye reverse image sear (chrome.google.com)",
-    "description": "OSINT tool: tineye reverse image sear (chrome.google.com).",
+    "name": "TinEye Reverse Image Search (Chrome extension)",
+    "description": "Use when you have an `image` and want a one-right-click TinEye reverse search for exact copies and earliest appearances — returns pages hosting the image and possible `social-profile` sources.",
     "url": "https://chrome.google.com/webstore/detail/tineye-reverse-image-sear/haebnnbpedcbhciplfhjjkbafijpncjl?hl=en",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Right-click reverse image search on TinEye — best for exact-copy matches, image attribution, and finding the earliest/original appearance.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official TinEye extension; TinEye web search is free for standard use (paid API/commercial tiers exist but aren't needed for manual lookups).",
+    "opsec": "passive",
+    "opsecNote": "The image is sent to TinEye (Idée Inc) for matching, not to the person in it, so the subject is not alerted. TinEye states the search image is not saved. Still, mind the sensitivity of the imagery and your authorization when uploading. Install in a dedicated OSINT browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Official extension published by Idée Inc, the company that invented reverse image search (2008); ~300k users, 4.5★. The engine is authoritative for exact-copy matching.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TinEye extension",
+      "TinEye Chrome"
+    ],
     "tags": [
       "reverseimagesearching",
       "Reverse Image Searching"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/tineye-reverse-image-sear-chrome-google-com.md"
   },
   {
@@ -218964,40 +218976,49 @@
   {
     "id": "firefly",
     "name": "FireFly",
-    "description": "Get information about phone number using Numverify API",
+    "description": "Use when you have a `phone` number and want carrier/country/line-type validation via the Numverify API from a simple CLI — returns `phone` metadata (carrier, country, line type).",
     "url": "https://github.com/Lexxrt/FireFly",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Scriptable phone-number validation and enrichment (carrier, country, line type) wrapping the Numverify API.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "phone"
+      "phone",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The FireFly CLI is free and open-source, but it requires a Numverify API key. Numverify has a free tier (limited monthly lookups); heavy use needs a paid Numverify plan.",
+    "opsec": "passive",
+    "opsecNote": "Lookups go to Numverify's API, not to the number's owner, so the subject is not alerted. Your API key and IP are attributable to Numverify. This is metadata validation only — it does not dial or message the number.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small open-source wrapper (Lexxrt/FireFly) around Numverify. The data authority is Numverify; the wrapper itself is minor community code — audit before running.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "FireFly phone lookup"
+    ],
     "tags": [
-      "Phone numbers"
+      "Phone numbers",
+      "numverify"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/firefly.md"
   },
@@ -274267,40 +274288,43 @@
   {
     "id": "uk-osint",
     "name": "UK-OSINT",
-    "description": "UK-focused OSINT resource portal (people, records, registries) by Neil Smith.",
+    "description": "Use when you have a UK `name`, `address`, or `phone` and want a curated map of the right UK records, registries, and people-search tools — returns pointers toward `address`, `employer-org`, and record links.",
     "url": "https://www.uk-osint.net/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "UK-specific people search, records, and registries",
+    "bestFor": "A practitioner-curated portal of UK-specific people search, public records, company/land registries, and investigation techniques.",
     "selectorsIn": [
       "name",
       "address",
       "phone"
     ],
     "selectorsOut": [
-      "address"
+      "address",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free portal by Neil Smith; the tools and registries it links to have their own pricing (many UK registries charge small per-record fees).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the portal is passive and safe — you're reading a directory of techniques, not querying a subject. Each linked tool/registry has its own OpSec profile; evaluate those separately before running a lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Long-running UK OSINT portal by practitioner Neil Smith.",
+    "trustNote": "Long-running UK OSINT portal by practitioner Neil Smith, widely cited in the UK investigations community; curation is authoritative, though individual linked sites vary.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "eu"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "aliases": [
-      "UK-OSINT.net"
+      "UK-OSINT.net",
+      "Neil Smith UK-OSINT"
     ],
     "tags": [
       "public-records",
@@ -274309,7 +274333,7 @@
       "registries"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/uk-osint.md"
   },
@@ -325731,36 +325755,51 @@
   },
   {
     "id": "facebook-geo",
-    "name": "Facebook Geo",
-    "description": "OSINT tool: Facebook Geo.",
+    "name": "Facebook Geo (OSINT Combine)",
+    "description": "Use when you have a `geolocation` or place and want to surface Facebook posts/pages tied to that location — returns `social-profile` and post links with `geolocation` context.",
     "url": "https://www.osintcombine.com/facebook-geo-pages",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding Facebook content and pages associated with a specific geographic location for place-based investigation.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free tool provided by OSINT Combine; no account required for the basic geo-page search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tool builds Facebook geo/search queries; the searches hit Facebook, not the people posting, so subjects aren't directly alerted. Run from a sock-puppet browser. Facebook increasingly gates location content behind login — do not use a real account to view more.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by OSINT Combine, a well-known professional OSINT training/tooling company; the tool is a query-builder over Facebook's own surfaces.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "OSINT Combine Facebook Geo",
+      "Facebook geo pages"
+    ],
+    "tags": [
+      "facebook",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-geo.md"
   },
   {
@@ -330506,49 +330545,6 @@
     "_file": "library/tools/social-networks/google-com-4.md"
   },
   {
-    "id": "google-com-42",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Anaijapals.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gsocialmedia",
-      "General Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-42.md"
-  },
-  {
     "id": "google-com-43",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -331622,92 +331618,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/google-com-73.md"
-  },
-  {
-    "id": "google-com-74",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Avk.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "russiansocialmedia",
-      "Russian Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-74.md"
-  },
-  {
-    "id": "google-com-75",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site:ok.ru&ie=utf-8&oe=utf-8&gws_rd=cr&ei=5gelVs6GM8KZUfHyq7gI",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "russiansocialmedia",
-      "Russian Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-75.md"
   },
   {
     "id": "google-com-86",
@@ -335694,37 +335604,48 @@
   {
     "id": "instagramprivsniffer",
     "name": "InstagramPrivSniffer",
-    "description": "OSINT tool: InstagramPrivSniffer.",
+    "description": "Use when you have a private Instagram `username` and want to recover posts exposed through the Collaboration feature — returns a `social-profile` link and `image` media.",
     "url": "https://github.com/obitouka/InstagramPrivSniffer",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Recovering posts from a private Instagram account when it has collaborated on a post with a public account.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source CLI (obitouka/InstagramPrivSniffer). No paid tier.",
+    "opsec": "active",
+    "opsecNote": "The tool queries Instagram's endpoints on your behalf; activity is attributable to whatever session/IP it runs from. It only surfaces content the private account itself co-posted with a public account (Meta confirmed this is intended Collaboration behavior, not a breach). Run from a sock-puppet context and treat retrieved media as sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source proof-of-concept from an individual researcher; it relies on Instagram's Collaboration feature exposing co-posts, which Meta has acknowledged. Reliability varies as Instagram changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Instagram Priv Sniffer"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "private-account"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagramprivsniffer.md"
   },
   {
@@ -347030,45 +346951,48 @@
   },
   {
     "id": "school-or-university",
-    "name": "School or University",
-    "description": "OSINT tool: School or University.",
+    "name": "Facebook \"went to\" school/university dork",
+    "description": "Use when you have a `name` and a school/university and want to find the subject's Facebook profile via the education field — returns a `social-profile`.",
     "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Afacebook.com+%22went+to%22+%22Search+Term%22",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a Facebook profile by pivoting on the \"went to [school]\" education text Facebook exposes publicly.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Google `site:` dork; no account on Google or Facebook required to read indexed public results.",
+    "opsec": "passive",
+    "opsecNote": "The query hits Google's index, not Facebook, so the subject is not alerted. Opening the profile logged-out is passive; if you click through while logged into a real Facebook account you may appear in \"People You May Know\" — use a sock puppet or logged-out session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A search-engine technique over Facebook's public education field, not a product; reliability depends on Google's index of facebook.com and what Facebook exposes publicly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "coverage": [
+      "global"
+    ],
+    "aliases": [
+      "Facebook school dork",
+      "facebook went to school search"
+    ],
     "tags": [
       "facebook",
-      "Facebook General Links"
+      "Facebook General Links",
+      "google-dork"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/school-or-university.md"
   },
   {
