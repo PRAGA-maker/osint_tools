@@ -209259,36 +209259,53 @@
   },
   {
     "id": "ioa",
-    "name": "IOA",
-    "description": "OSINT tool: IOA.",
+    "name": "Information Operations Archive (IOA)",
+    "description": "Use when you have a `username` or account handle and want to know whether it belongs to a documented state-linked disinformation campaign — returns attribution and associated social-profile data.",
     "url": "https://www.io-archive.org/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a social-media account/handle is part of a known, attributed information operation (troll farm) and pulling its archived posts/media.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search the archive of publicly released, attributed IO datasets; bulk dataset access/downloads may require request or registration.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a static research archive, not a live platform, so nothing reaches the account or its operators. Fully passive; ordinary browsing hygiene through a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A researcher-maintained archive of platform-released, rigorously attributed information-operations datasets (Twitter/X and Reddit takedowns since 2018); attribution comes from the platforms' own disclosures.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "IOA",
+      "Information Operation Archive",
+      "io-archive.org"
+    ],
+    "tags": [
+      "disinformation",
+      "information-operations",
+      "attribution"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/ioa.md"
   },
   {
@@ -239220,47 +239237,60 @@
   },
   {
     "id": "familysearch-births-and-baptisms-1972-1981-australia",
-    "name": "Familysearch Births and Baptisms 1972-1981 (Australia)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "name": "FamilySearch — Australia Births & Baptisms",
+    "description": "Use when you have a `name` (and rough birth year/place in Australia) and want indexed birth/baptism records to confirm identity and parents — returns dob, associate and address leads.",
     "url": "https://familysearch.org/search/collection/1770729",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming an Australian subject's birth/baptism and parentage from FamilySearch's free indexed birth-and-baptism collection.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
+      "dob",
+      "associate",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free — FamilySearch is a nonprofit; a free account may be required to view full index details. Due to privacy laws, recent records may be withheld.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You search a historical genealogy index, not the living subject; no target-facing signal is sent. A free FamilySearch account is tied to you — register a sock-puppet identity for it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "FamilySearch is operated by the nonprofit Genealogical Society of Utah; the index is authoritative though coverage is partial and transcriptions can contain errors.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "findmypast-ie",
+      "ancestry"
+    ],
+    "aliases": [
+      "Australia Births and Baptisms 1792-1981",
+      "FamilySearch collection 1770729"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "genealogy",
+      "australia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/familysearch-births-and-baptisms-1972-1981-australia.md"
   },
@@ -347024,37 +347054,55 @@
   {
     "id": "searchisback",
     "name": "SearchIsBack",
-    "description": "OSINT tool: SearchIsBack.",
+    "description": "Use when you have a `name` plus attributes (location, school, employer, interests) and want to find matching Facebook people, events and posts — returns social-profile leads.",
     "url": "https://searchisback.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Building structured Facebook people/event/post searches by attribute (location, relationship, school, workplace, birth date) — a graph-search-style helper.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tool. Functionality is intermittently limited because Facebook keeps changing/removing the search surfaces it relies on; the author has repeatedly had to rebuild it.",
+    "opsec": "passive",
+    "opsecNote": "SearchIsBack builds a Facebook search URL/query; the actual searching happens on Facebook, so log in with a sock-puppet Facebook account, never your real one. Viewing profiles from a real account risks \"People You May Know\" correlation with the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-running independent tool that reconstructs Facebook's removed graph-search; reliability tracks Facebook's ever-changing restrictions, so expect breakage.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "intelligence-x",
+      "graph-tips"
+    ],
+    "aliases": [
+      "Search Is Back",
+      "searchisback.com"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "facebook-graph-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/searchisback.md"
   },
   {
@@ -350695,44 +350743,52 @@
   {
     "id": "storydownloader-app",
     "name": "storydownloader.app",
-    "description": "OSINT tool: storydownloader.app.",
+    "description": "Use when you have an Instagram `username` and want to view/download that public account's stories anonymously — returns image/video story content and social-profile context.",
     "url": "https://storydownloader.app/en",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing and saving a public Instagram account's active stories without an Instagram login.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account, install, or plugin. Works only on public Instagram profiles.",
+    "opsec": "passive",
+    "opsecNote": "Because you view stories through this third party rather than your own Instagram account, the target sees no viewer entry in their story list and your real account is not exposed. The site itself sees the usernames you look up — use a sock-puppet browser/VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An anonymous third-party Instagram story downloader of unknown ownership; it re-serves public Instagram content, so trust the source profile, not the site.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "storiesig"
+    ],
+    "aliases": [
+      "Story Downloader",
+      "storydownloader.app"
+    ],
     "tags": [
       "instagram",
       "Instagram Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/storydownloader-app.md"
   },
   {
