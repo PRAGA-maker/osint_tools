@@ -220782,13 +220782,13 @@
   {
     "id": "numspy-india",
     "name": "NumSpy (India)",
-    "description": "Find details of any mobile number in India.",
+    "description": "Use when you have an Indian mobile `phone` number and want carrier/region (and, when its data source works, name) — a legacy CLI that queried a TrueCaller-style API; largely defunct now.",
     "url": "https://github.com/bhattsameer/NumSpy-older",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "India mobile-number lookups",
+    "bestFor": "Basic Indian mobile-number enrichment (carrier/circle/region) — where a working data source is available.",
     "selectorsIn": [
       "phone"
     ],
@@ -220796,15 +220796,18 @@
       "name",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
+    "costNote": "Free open-source Python CLI; you run it yourself.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You run a local script that queries an external number-lookup API; the number's owner is not directly notified. But you are sending the target number to a third-party API — use responsibly and avoid attributable infrastructure.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "Older regional phone tool (22 stars); may be unmaintained.",
+    "trustNote": "A small, archived (read-only since Jan 2020) regional tool relying on a TrueCaller-style API that is almost certainly no longer functional; the author points to a newer pip-installable NumSpy.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "in"
@@ -220814,7 +220817,8 @@
     "localInstall": true,
     "registration": false,
     "aliases": [
-      "NumSpy"
+      "NumSpy",
+      "NumSpy-older"
     ],
     "tags": [
       "phone",
@@ -220822,7 +220826,7 @@
       "regional"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/numspy-india.md"
   },
@@ -240224,47 +240228,50 @@
   },
   {
     "id": "finance-ni-gov-uk",
-    "name": "finance-ni.gov.uk",
-    "description": "OSINT tool: finance-ni.gov.uk.",
+    "name": "Land & Property Services NI — Property Valuation Search",
+    "description": "Use when you have a Northern Ireland property `address` and want its official valuation/rating record — returns the property's capital value and rating details from the NI valuation list.",
     "url": "https://valuationservices.finance-ni.gov.uk/Property/Search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a Northern Ireland property exists on the rating list and its official capital value.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official public valuation search; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Public property-valuation search keyed on address; no living person is queried and no login is required, so it's fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Northern Ireland government service (Land & Property Services, Dept of Finance); authoritative for rating/valuation, but it returns property data, not owner identities.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "LPS NI valuation",
+      "finance-ni valuation services"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "northern-ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/finance-ni-gov-uk.md"
   },
   {
@@ -245267,47 +245274,51 @@
   },
   {
     "id": "gov-uk-9",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "GOV.UK — View or Share Driving Licence",
+    "description": "Use when you (lawfully) hold a subject's driving-licence number plus their NI number and postcode, or they give you a share code — the DVLA self-service returns licence status, entitlements, and penalty points. Not a third-party lookup.",
     "url": "https://www.gov.uk/view-driving-licence",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a UK driving licence's validity, categories, and penalty points via DVLA's self/share service.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "document-id"
     ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free official DVLA service; no account, but strict identity inputs required.",
+    "opsec": "passive",
+    "opsecNote": "The service requires the licence holder's own three identifiers (driving-licence number, National Insurance number, postcode) or a time-limited \"share code\" they generate. You cannot query an arbitrary person — attempting to use someone's identifiers without authority is unlawful. Treat this as a verification-with-consent tool, not reconnaissance.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official UK DVLA service; authoritative for licence data, but gated behind the holder's personal identifiers or an explicitly shared code.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "View Driving Licence",
+      "DVLA share driving licence",
+      "check driving licence"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "dvla"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-9.md"
   },
   {
@@ -250200,45 +250211,52 @@
   },
   {
     "id": "jail-records",
-    "name": "Jail Records",
-    "description": "OSINT tool: Jail Records.",
+    "name": "BlackBookOnline — US Inmate Records",
+    "description": "Use when you have a `name` and want to check US jail/prison custody — a curated directory of official federal/state/county inmate locators returning custody status and `document-id`.",
     "url": "https://www.blackbookonline.info/usa-inmates.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the right official inmate locator (federal, state, or county) for a US custody check.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory; the official locators it links to are also free.",
+    "opsec": "passive",
+    "opsecNote": "Following links and searching public inmate locators is passive; the subject is not notified and no login is needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "BlackBookOnline is a long-standing free public-records portal; it aggregates links, so trust each destination official locator (authoritative) rather than the aggregator itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BlackBookOnline inmates",
+      "blackbookonline.info"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/jail-records.md"
   },
   {
@@ -335762,13 +335780,13 @@
   {
     "id": "instaloader",
     "name": "Instaloader",
-    "description": "Downloads Instagram pictures, videos, captions, and metadata for public (and own) accounts.",
+    "description": "Use when you have an Instagram `username` and want to bulk-download their public posts, stories highlights, captions, and metadata — returns `image`s, `metadata-exif`/timestamps, and profile data for offline analysis.",
     "url": "https://github.com/instaloader/instaloader",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Archiving an Instagram profile's media and metadata",
+    "bestFor": "Archiving a public Instagram profile's media, captions, and metadata to a local folder for analysis.",
     "selectorsIn": [
       "username"
     ],
@@ -335777,15 +335795,18 @@
       "metadata-exif",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (Python). You run it yourself; no paid service.",
     "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Downloading hits Instagram's servers and is rate-limited; heavy use or logging in raises ban risk for the account/IP used. Prefer anonymous (no-login) mode where possible, run behind a proxy/sock-puppet, and throttle. Logging in with a sock-puppet is sometimes needed but ties requests to that account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "trusted",
-    "trustNote": "Long-established, widely trusted IG tool (listed in the Social-Media-OSINT collection).",
+    "trustNote": "Long-established, widely used open-source Instagram tool with an active community; the data is straight from Instagram, though IG changes can require updates.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -335794,14 +335815,17 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "instaloader.py"
+    ],
     "tags": [
       "instagram",
       "media-download",
-      "python"
+      "python",
+      "scraper"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/instaloader.md"
   },
@@ -337048,45 +337072,51 @@
   },
   {
     "id": "knowlesys-com",
-    "name": "knowlesys.com",
-    "description": "OSINT tool: knowlesys.com.",
+    "name": "Knowlesys Pinterest OSINT Methods (article)",
+    "description": "Use when you have a `username`/`name` tied to Pinterest and want a methodology — a how-to article on investigating Pinterest profiles and boards, yielding `social-profile` leads.",
     "url": "https://knowlesys.com/en/articles/social_websites/others/open_source_intelligence_investigation_of_pinterest.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Learning techniques to find and analyse a subject's Pinterest presence and infer interests/locations.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; vendor educational content (Knowlesys sells a commercial OSINT platform, but this article is open).",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. The techniques it teaches (viewing public boards, searching) are largely passive too; avoid logging in to follow/interact, which would notify the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Educational article from a commercial OSINT vendor; methods are legitimate and commonly known, but it is marketing-adjacent content, not a neutral standard.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Knowlesys OSINT Academy Pinterest"
+    ],
     "tags": [
       "pinterest",
-      "Pinterest Related Sites"
+      "Pinterest Related Sites",
+      "methodology",
+      "reference"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/knowlesys-com.md"
   },
   {
@@ -339535,45 +339565,47 @@
   },
   {
     "id": "myosint-training",
-    "name": "MyOSINT.Training",
-    "description": "OSINT tool: MyOSINT.Training.",
+    "name": "My OSINT Training (MOT)",
+    "description": "Use when you want to build OSINT skills or grab free practitioner tools — a reputable training provider (Micah Hoffman & Griffin Glynn) offering courses plus free bookmarklets/resources, not a lookup service.",
     "url": "https://myosint.training/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Learning current OSINT methodology and using the free bookmarklet tools at tools.myosint.training.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Paid courses and bundles ($399–$999) and live events; a free resources section, free bookmarklet tools (tools.myosint.training), and a YouTube channel are open to all.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the site and using its free reference material is passive. The bookmarklets run in your browser to speed up manual OSINT actions — review any bookmarklet before running it, as with any code.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by well-known, respected OSINT practitioners (Micah Hoffman, Griffin Glynn / @WebBreacher); methodology-focused and current — a credible learning source, not a data provider.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MyOSINT.Training",
+      "MOT"
+    ],
     "tags": [
       "bluesky",
-      "BlueSky / BSky Related Sites"
+      "BlueSky / BSky Related Sites",
+      "training",
+      "methodology"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/myosint-training.md"
   },
   {
@@ -349659,35 +349691,50 @@
   {
     "id": "socialbearing",
     "name": "Socialbearing",
-    "description": "OSINT tool: Socialbearing.",
+    "description": "Use when you have an X/Twitter `username` and want analytics on their tweets — timeline stats, top tweets, engagement, and posting patterns that build a `social-profile` and activity timeline.",
     "url": "https://socialbearing.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Analysing a Twitter account's tweet history, engagement, and posting-time patterns at a glance.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Historically free for basic tweet/timeline analytics; heavier use behind account/limits.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the analytics tool, not the target; the subject is not notified. It depends on Twitter/X API access, which is now heavily restricted and paywalled — expect failures.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known third-party Twitter analytics site; reliable historically, but its function hinges on the X API, which has been locked down since 2023 — verify it returns data before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "socialbearing.com",
+      "social bearing"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "analytics",
+      "social-media"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/socialbearing.md"
   },
   {
