@@ -138652,30 +138652,29 @@
   {
     "id": "bambuser",
     "name": "Bambuser",
-    "description": "Website related to social networking and livestreaming audio and/or video services; focused on shopping",
+    "description": "Use to recognise Bambuser-powered live-shopping video embedded on a retailer's site — a B2B video-commerce platform with no public people-search, so it yields at most the `social-profile`/brand behind a stream.",
     "url": "http://bambuser.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying that a site uses Bambuser for live-shopping video; not a people-finding tool.",
     "selectorsIn": [
-      "image",
-      "face"
+      "domain"
     ],
     "selectorsOut": [
-      "image",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Enterprise B2B product (paid, demo/trial only). No public consumer directory or free lookup.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public embedded live-shopping stream is passive. There is nothing to search, so exposure risk is minimal and mostly on the broadcaster's side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Legitimate, established video-commerce vendor (pivoted from consumer livestreaming years ago). The honest caveat is near-zero OSINT/discovery value.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -138684,14 +138683,16 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Bambuser live shopping"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/bambuser.md"
   },
@@ -156436,43 +156437,48 @@
   {
     "id": "rootabout",
     "name": "RootAbout",
-    "description": "Reverse search images on the Internet Archive",
+    "description": "Use when you have an `image` and want to reverse-search it against the Internet Archive and Open Library (plus Google) — returns matching archived/book `image`s that mainstream engines miss.",
     "url": "http://rootabout.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-image search across Internet Archive and Open Library holdings — a different corpus than Google/Yandex/TinEye.",
     "selectorsIn": [
       "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You upload/point to an image and it queries archive corpora; the search is passive and not tied to any target. Avoid uploading case-sensitive imagery to a third-party site if privacy is critical.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A small, long-lived reverse-image tool (Bellingcat-listed) that searches Internet Archive/Open Library; niche but genuinely covers a corpus the big engines don't.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "rootabout.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "reverse-image-search"
+      "reverse-image-search",
+      "internet-archive"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/rootabout.md"
   },
   {
@@ -160390,45 +160396,51 @@
   },
   {
     "id": "tumblr-com",
-    "name": "Tumblr.com",
-    "description": "OSINT tool: Tumblr.com.",
+    "name": "Tumblr",
+    "description": "Use when you have a `username` and want to find a subject's Tumblr blog and image posts — returns a `social-profile` and the images/text they post, often more candid than mainstream platforms.",
     "url": "http://www.tumblr.com/tagged/image-search",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's Tumblr blog by handle and mining its image posts, reblogs, and interests.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view public blogs; an account (free) is only needed to interact, which you should avoid.",
+    "opsec": "passive",
+    "opsecNote": "Viewing public blog URLs (`<username>.tumblr.com`) is passive and unauthenticated. Do not log in and follow/like — that notifies the blog owner. Note some blogs gate mature content behind a login prompt.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party access to a real, large blogging platform; content is user-generated (self-asserted), but a confirmed blog is authentic.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "tumblr.com"
+    ],
     "tags": [
       "reverse-image",
-      "face"
+      "face",
+      "blogging",
+      "social-media"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/tumblr-com.md"
   },
   {
@@ -174732,43 +174744,50 @@
   {
     "id": "now-gg",
     "name": "now.gg",
-    "description": "OSINT tool: now.gg.",
+    "description": "Use when you need to run a mobile messaging/social app (WhatsApp, Telegram, TikTok, etc.) in a disposable cloud Android instance — OpSec infrastructure for investigating apps without installing them on your own device.",
     "url": "https://now.gg/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
+    "bestFor": "Running mobile-only OSINT/messaging apps in a browser-based cloud Android device, isolated from your real phone.",
+    "selectorsIn": [],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free browser-based cloud Android sessions (ad-supported / time-limited); paid tiers remove limits and add persistence.",
+    "opsec": "active",
+    "opsecNote": "This is OpSec *infrastructure* — a throwaway Android in the cloud so you don't install a target's messaging app on your own device or leak your real IMEI/number. Use a sock-puppet account and number inside it; remember the app you run may still notify the target (e.g. WhatsApp \"last seen\", contact adds). Content lives on now.gg's servers, so treat sessions as non-private.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A legitimate cloud-Android/gaming service (from the makers of BlueStacks); reliable as an emulator, but a third party that sees whatever you do in the session — not for sensitive credentials.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "now gg",
+      "nowgg cloud android"
+    ],
     "tags": [
       "messengerapps",
-      "Messenger Apps"
+      "Messenger Apps",
+      "opsec",
+      "emulator"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/now-gg.md"
   },
   {
@@ -195230,42 +195249,49 @@
   },
   {
     "id": "reddit-guide-to-opting-out-of-background-check-websites",
-    "name": "Reddit Guide to Opting Out of Background Check Websites",
-    "description": "Website providing information about how to remove personal information from background check sites",
+    "name": "Reddit Guide — Opting Out of Background-Check Sites",
+    "description": "Use when you (the investigator) want to reduce your own exposure on people-search/background-check sites — a community guide listing opt-out/removal steps to shrink your personal footprint.",
     "url": "https://www.reddit.com/comments/j1mit/how_to_remove_yourself_from_all_background_check",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "",
+    "bestFor": "An investigator hardening their own privacy by opting out of US data-broker/people-search sites.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to read. The opt-out processes it describes are free (paid \"removal services\" are a separate, optional shortcut).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This is defensive/self-directed OpSec — it's about removing YOUR data, not querying a target. Reading it is passive. Be aware some broker opt-outs require you to submit ID/email to the very broker you're leaving.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A crowd-sourced Reddit thread; the general approach is sound and widely echoed, but individual broker steps date quickly as sites and opt-out URLs change.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Reddit background check opt-out guide"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "proxy-servers-online-privacy-security-tools"
+      "proxy-servers-online-privacy-security-tools",
+      "opsec",
+      "privacy"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/reddit-guide-to-opting-out-of-background-check-websites.md"
   },
   {
@@ -252645,45 +252671,47 @@
   },
   {
     "id": "list-of-all-criminal-offences-a-to-z",
-    "name": "List of All Criminal Offences - A to Z",
-    "description": "OSINT tool: List of All Criminal Offences - A to Z.",
+    "name": "List of All Criminal Offences A–Z (Australia)",
+    "description": "Use when you have a charge/offence term (e.g. from a court listing) and want to understand what it means — an Australian legal reference glossary of offences, not a person or records lookup.",
     "url": "https://www.criminal-lawyers.com.au/offences",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
-    ],
-    "status": "unknown",
+    "bestFor": "Decoding Australian criminal-offence terminology encountered in court/records so you interpret a subject's charges correctly.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference content published by an Australian criminal-defence law firm.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public legal glossary is fully passive and involves no target data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Authored by a commercial law firm as marketing/education content; legally informed and useful as a glossary, but jurisdiction-specific (Australia) and not an official statute source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Criminal offences A to Z",
+      "criminal-lawyers.com.au offences"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "reference",
+      "legal"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/list-of-all-criminal-offences-a-to-z.md"
   },
   {
@@ -291056,44 +291084,53 @@
   },
   {
     "id": "goldenowl-ai",
-    "name": "goldenowl.ai",
-    "description": "OSINT tool: goldenowl.ai.",
+    "name": "Golden Owl Syntax (dork generator)",
+    "description": "Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that outputs `site:`/`filetype:`/`intext:` queries to surface `social-profile`s and documents.",
     "url": "https://syntax.goldenowl.ai/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly generating precise Google dork queries for a target without memorising operator syntax.",
     "selectorsIn": [
-      "name"
+      "name",
+      "email",
+      "username"
     ],
     "selectorsOut": [
-      "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free (\"Open Access\" tool from Golden Owl); no account required for the syntax generator.",
+    "opsec": "passive",
+    "opsecNote": "The generator itself just builds query strings (passive). OpSec risk is in *running* the resulting dorks — do that from a sock-puppet browser/IP, since the searches hit Google, not the tool.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A vendor-provided free utility; it only assembles standard Google operators, so output is easy to verify — the value is convenience, not proprietary data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Golden Owl Syntax",
+      "goldenowl.ai dork generator"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "google-dorks",
+      "query-builder"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/goldenowl-ai.md"
   },
   {
@@ -342838,41 +342875,50 @@
   {
     "id": "pingroupie",
     "name": "PinGroupie",
-    "description": "Pinterest user and board analysis",
+    "description": "Use when you have a Pinterest `username` or board and want to analyse their boards, pins, and interests — returns `social-profile` data (boards, pin themes, followers) that reveals a subject's interests and locations.",
     "url": "https://pingroupie.com/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "search"
     ],
-    "bestFor": "Pinterest user and board analysis",
-    "input": "Pinterest username or board name",
-    "output": "User profiles, board statistics, pin collections, followers, and engagement data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Profiling a Pinterest account's boards and pins to infer interests, plans, and location clues.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free to search and browse the board/category directory; heavier analytics/filtering may prompt an account.",
     "opsec": "passive",
-    "opsecNote": "Queries Pinterest's public data; does not require authentication or notify target users.",
+    "opsecNote": "Works against Pinterest's public data; no login needed and the target is not notified. Fully passive so long as you don't log into Pinterest and follow/interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing third-party Pinterest analytics/board-discovery site; reliable for public board data, but a scraper-style tool subject to Pinterest changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Pin Groupie",
+      "pingroupie.com"
+    ],
+    "tags": [
+      "pinterest",
+      "board-analysis",
+      "social-media"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/search/pingroupie.md"
   },
   {
