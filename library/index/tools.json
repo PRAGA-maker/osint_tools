@@ -207305,47 +207305,59 @@
   {
     "id": "freeality",
     "name": "Freeality",
-    "description": "People-related searches linked to 19 search engines searchable, by telephone, name, location, or email",
+    "description": "Use when you have a `name`, `phone`, `email`, or `address` in the US and want a fast link-hub of free reverse-lookup searches — returns pre-built queries to many people/reverse directories yielding address, phone, and associate leads.",
     "url": "http://www.freeality.com/finde.htm",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A legacy one-page launcher of many free US reverse-lookup searches by name, phone, email, or address.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "email",
+      "address"
     ],
     "selectorsOut": [
-      "social-profile",
       "address",
       "phone",
+      "social-profile",
       "associate"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free link hub; no account. Many of the third-party directories it points to now charge or have changed, so hit-rate varies.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Freeality just builds and launches searches against other sites in your browser — the actual queries hit those third parties, so your browser/IP reaches them. Use a sock-puppet browser. No subject is notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing free people-search portal (link aggregator). It hosts no data itself; result quality depends entirely on the destination directories, many of which are dated.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "inteltechniques-tools-search-engines-suite"
+    ],
+    "aliases": [
+      "Freeality",
+      "freeality.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "link-hub"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/people-search/freeality.md"
   },
@@ -210872,43 +210884,60 @@
   {
     "id": "neutrosint",
     "name": "NeutrOSINT",
-    "description": "A tool for investigating Proton Mail addresses.",
+    "description": "Use when you have an `email` or `username` and want to confirm whether it exists as a Proton Mail address (and get its PGP key-creation date) — returns account existence, an approximate creation date, and public key metadata.",
     "url": "https://github.com/Kr0wZ/NeutrOSINT",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a Proton Mail address exists and pulling its PGP-key creation date without alerting the owner.",
     "selectorsIn": [
-      "name"
+      "email",
+      "username"
     ],
     "selectorsOut": [
-      "name",
+      "metadata-exif",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source. Light (API) mode needs no account; the Selenium bulk mode requires your own ProtonMail credentials.",
+    "opsec": "passive",
+    "opsecNote": "Light mode uses Proton's public key-lookup API and does NOT alert the target — a genuinely passive existence check. It is rate-limited (~100 requests/hour). Selenium mode logs into a ProtonMail account (use a sock-puppet account, never your own). Do not send mail to the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit",
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source tool (Kr0wZ) featured in the Bellingcat toolkit. Relies on Proton's public key-lookup behaviour, which could change; verify results against a second method.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "account-live-com",
+      "protonmail"
+    ],
+    "aliases": [
+      "NeutrOSINT",
+      "Proton Mail OSINT"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "people"
+      "people",
+      "email",
+      "protonmail"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/neutrosint.md"
   },
   {
@@ -222740,45 +222769,54 @@
   {
     "id": "telcodata-us-area-code-search",
     "name": "TelcoData.US Area Code Search",
-    "description": "Telecommunications database search by telephone, area code, or business",
+    "description": "Use when you have a US `phone` number and want to identify its carrier, rate center (geographic origin), and line details from the NPA-NXX — returns operating company and rate-center location.",
     "url": "http://www.telcodata.us/search-area-code-exchange-detail",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a US number's area code + exchange (NPA-NXX) to its operating carrier and rate-center location.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "phone",
-      "name"
+      "geolocation",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic NPA-NXX lookups are free with no account; bulk CSV/API/downloads and advanced carrier-footprint reports require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a telecom reference database by number range, not by person — nothing is disclosed to the subject and no target is contacted. Fully passive. Rate-center data reflects where a number was assigned, which for mobiles need not match the user's current location.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "Well-established US telecom NPA-NXX reference built on public numbering-administration data. Authoritative for carrier/rate-center of a number block.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "phoneinfoga",
+      "reverse-phone-lookup-3"
+    ],
+    "aliases": [
+      "TelcoData",
+      "NPA-NXX lookup"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "telephone-numbers"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/telcodata-us-area-code-search.md"
   },
@@ -233576,44 +233614,55 @@
   {
     "id": "court-cases-results",
     "name": "Court Cases Results",
-    "description": "OSINT tool: Court Cases Results.",
+    "description": "Use when you have a `name` (or offence/court) and want UK Crown Court criminal sentencing records — returns matching convictions with offence, sentence, court, and case details as document-id references.",
     "url": "https://www.thelawpages.com/court-cases/court-case-search.php",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching UK Crown Court criminal sentencing/conviction records by defendant name, offence, court, or judge.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the criminal sentencing database on The Law Pages; no account required.",
+    "opsec": "passive",
+    "opsecNote": "A published legal-record database — searching it does not notify anyone and reveals only already-public court outcomes. Passive; use a sock-puppet browser if you want to avoid tying the query to yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "The Law Pages is an established UK legal resource publishing Crown Court hearing lists and a daily-updated criminal sentencing database. Reliable as a secondary index; the primary record remains the court itself.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "gov-uk-court-lists"
+    ],
+    "aliases": [
+      "The Law Pages court search",
+      "UK criminal sentencing search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "uk",
+      "criminal-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-cases-results.md"
   },
   {
@@ -240465,35 +240514,59 @@
   {
     "id": "florida-residents-directory",
     "name": "Florida Residents Directory",
-    "description": "OSINT tool: Florida Residents Directory.",
+    "description": "Use when you have a `name`, `phone`, `email`, or `address` in Florida and want a free people-record lookup — returns addresses, phones, relatives/neighbors, and voter demographics (accuracy varies, often stale).",
     "url": "https://www.floridaresidentsdirectory.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free first-pass lookup of Florida residents by name/phone/email/address, including relatives and voter-registration demographics.",
+    "selectorsIn": [
+      "name",
+      "phone",
+      "email",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Advertised as free with no ads for basic Florida people searches; some detail/report features may upsell. No account needed to start.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A data-broker-style aggregator; searching does not notify the subject. Your queries and IP are logged by the operator (a commercial data broker) — use a sock-puppet browser. Note their opt-out process is reported to be unreliable, so treat the operator as adversarial to privacy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial Florida people-search/data-broker site. User reviews report significant data staleness (7-8 years out of date) and inaccuracies; useful as a lead source, not authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "freeality",
+      "fastpeoplesearch"
+    ],
+    "aliases": [
+      "Florida Residents Directory",
+      "floridaresidentsdirectory.com"
+    ],
+    "tags": [
+      "people-search",
+      "florida",
+      "voter-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/florida-residents-directory.md"
   },
   {
@@ -357416,7 +357489,7 @@
   {
     "id": "twopcharts",
     "name": "Twopcharts",
-    "description": "Legacy exploratory checks of historical Twitter influence rankings",
+    "description": "Use when you have an X/Twitter `username` and want account metadata and history (creation date, name-change history, activity stats) — returns account-lifecycle data, though coverage is degraded post-API-lockdown.",
     "url": "https://twopcharts.com/",
     "category": "social-networks",
     "path": [
@@ -357424,34 +357497,48 @@
       "twitter",
       "search"
     ],
-    "bestFor": "Legacy exploratory checks of historical Twitter influence rankings",
-    "input": "City or language selection",
-    "output": "Ranked user lists and basic activity comparisons",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking an X account's age, name/handle history, and activity metrics — where data is still available.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "degraded",
     "pricing": "free",
+    "costNote": "Free, no account. Much of the functionality relied on Twitter's open API and has broken or gone stale since X restricted access.",
     "opsec": "passive",
-    "opsecNote": "Data freshness is unclear; treat outputs as historical indicators rather than real-time intelligence.",
+    "opsecNote": "You query a third-party analytics site, not X, so the target is not notified. Twopcharts logs your queries/IP; use a sock-puppet browser. Treat outputs as historical indicators, not real-time truth.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Long-running independent Twitter analytics site. Reliable historically, but X's API lockdown means many metrics are frozen or unavailable — verify freshness before relying.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "xcancel-nitter-mirror",
+      "truthnest"
+    ],
+    "aliases": [
+      "Twopcharts",
+      "twopcharts.com"
+    ],
+    "tags": [
+      "twitter",
+      "x",
+      "account-history"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/search/twopcharts.md"
   },
   {
