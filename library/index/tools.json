@@ -127568,30 +127568,30 @@
   {
     "id": "imb-piracy-and-armed-robbery-map",
     "name": "IMB Piracy & Armed Robbery Map",
-    "description": "Live map displaying piracy and armed robbery incidents reported to IMB Piracy Reporting Centre",
+    "description": "Use when you have a `geolocation` or maritime region and want reported piracy/armed-robbery incidents there — returns geolocation and incident metadata.",
     "url": "https://icc-ccs.org/piracy-reporting-centre/live-piracy-report",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping recent piracy and armed-robbery-at-sea incidents by location, for maritime-context and cold-case work involving vessels or seafarers.",
     "selectorsIn": [
       "geolocation",
       "address"
     ],
     "selectorsOut": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public live map maintained by the ICC International Maritime Bureau; full incident reports can be requested (some detail is gated).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a public incident map hosted by the ICC; no target-specific query leaves your machine. Fully passive; ordinary browsing hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by the ICC International Maritime Bureau (IMB) Piracy Reporting Centre, the authoritative global clearing-house for maritime piracy reports since 1992.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -127600,14 +127600,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "IMB Live Piracy Map",
+      "ICC-CCS Piracy Map"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "maritime"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/geolocation/imb-piracy-and-armed-robbery-map.md"
   },
@@ -150593,47 +150598,51 @@
   },
   {
     "id": "librivox",
-    "name": "Librivox",
-    "description": "Website related to social networking and audio files for books",
+    "name": "LibriVox",
+    "description": "Use when you have a `name`/`username` you suspect narrates public-domain audiobooks and want their reader profile, forum activity and voice samples — returns social-profile leads.",
     "url": "https://librivox.org",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying and profiling volunteer audiobook narrators — reader pages, forum accounts, and recorded voice samples.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Entirely free and non-commercial; all recordings are public-domain and downloadable without an account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a public volunteer catalogue and forum; nothing target-facing is sent. Fully passive — reader and forum pages are open to anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running, reputable non-profit volunteer project; reader profiles and forum posts are self-published by the volunteers themselves.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "LibriVox audiobooks"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "audio"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/librivox.md"
   },
@@ -153258,36 +153267,52 @@
   },
   {
     "id": "peteyvid-com",
-    "name": "Peteyvid.com",
-    "description": "OSINT tool: Peteyvid.com.",
+    "name": "Petey Vid",
+    "description": "Use when you have a `name`, `username` or keyword and want to find videos of the subject across non-YouTube platforms — returns social-profile and image/video leads.",
     "url": "https://www.peteyvid.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Cross-platform video discovery — surfacing clips of a person or event on sites a normal Google/YouTube search misses.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free web search engine and browser extension; no account required. Domain was intermittently unreachable at last check — retry or use the browser add-on.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Petey Vid advertises that it does not collect, save, or sell user data. You are searching an index, not contacting the subject, so queries are passive; still use a sock-puppet browser as a habit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An independent, privacy-focused video search engine covering 70+ platforms; results are third-party-hosted videos, so verify each source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "PeteyVid",
+      "Petey Vid video search"
+    ],
+    "tags": [
+      "flickr",
+      "video-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/peteyvid-com.md"
   },
   {
@@ -175233,43 +175258,51 @@
   {
     "id": "prankshit-com-2",
     "name": "prankshit.com",
-    "description": "OSINT tool: prankshit.com.",
+    "description": "Use when you have a screenshot of a `phone`/`username` WhatsApp \"chat\" and want to know whether it could be fabricated — this is a fake-chat generator, so it tells you what forged evidence looks like.",
     "url": "https://prankshit.com/fake-whatsapp-chat-generator.php",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding and recognising fabricated WhatsApp screenshots — a counter-disinformation reference, not a data source.",
     "selectorsIn": [
       "phone",
       "username"
     ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free browser tool; an optional €2 payment removes the watermark for 2 hours. Everything runs client-side with no account.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely in your browser with no database, so nothing you type is stored server-side. Never use it to fabricate evidence — its only investigative value is defensive, to learn the tells of forged chats.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A novelty/entertainment site openly marketed as a fake-chat generator; there is no data provenance because it produces no real data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Fake WhatsApp Chat Generator",
+      "prankshit"
+    ],
     "tags": [
       "whatsapp",
-      "WhatsApp"
+      "WhatsApp",
+      "fake-evidence"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/prankshit-com-2.md"
   },
   {
@@ -203237,47 +203270,53 @@
   {
     "id": "alumni-member-search",
     "name": "Alumni Member Search",
-    "description": "People-related search engine that searches using member, group, affiliation, or location",
+    "description": "Use when you have a `name` plus a school/affiliation and want the subject's classmate-network profile and contact leads — returns social-profile, address, associate.",
     "url": "http://www.alumni.net",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person through school/affiliation-based alumni networking, where members self-list to reconnect with former classmates.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "address",
-      "phone",
-      "associate"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free membership-based directory; you register to search fully, and coverage skews to users who joined years ago (the site is legacy and traffic has declined).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching the directory does not contact the subject, but any outreach through the site's messaging would. Register a sock-puppet account; do not use a real identity to look up or message members.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legacy classmate-networking site; entries are self-submitted by members and may be stale, so treat everything as user-provided and unverified.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Alumni.NET"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "alumni"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/people-search/alumni-member-search.md"
   },
@@ -220182,46 +220221,52 @@
   },
   {
     "id": "number-guru-lookup",
-    "name": "Number Guru Lookup",
-    "description": "Reverse phone and text lookup",
+    "name": "NumberGuru Lookup",
+    "description": "Use when you have a `phone` number and want the likely owner name, carrier, line type and spam reputation — returns name and phone metadata.",
     "url": "https://www.numberguru.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Fast reverse-phone triage — is this US number a real line, who might own it, and is it a spam/robocall source.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "phone",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic reverse lookup (caller name, location, carrier, spam score) is free; full owner reports, people/email/property lookups run on paid BeenVerified-backed records.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You submit only the phone number; the number's owner is not notified by a lookup. The service (owned by BeenVerified) logs your queries — use a sock-puppet account/app install and avoid tying a lookup to your real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A consumer reverse-phone/caller-ID service (BeenVerified-owned) that aggregates public and crowd-sourced records; results are probabilistic and must be corroborated.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "NumberGuru",
+      "Number Guru reverse phone"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "telephone-numbers"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/number-guru-lookup.md"
   },
@@ -272342,35 +272387,54 @@
   {
     "id": "the-weapons-id-database",
     "name": "The Weapons ID Database",
-    "description": "OSINT tool: The Weapons ID Database.",
+    "description": "Use when you have an `image` or `physical-description` of a firearm/ammunition and want to identify make, model and markings — returns weapon identification leads.",
     "url": "http://www.smallarmssurvey.org/weapons-and-markets/tools/weapons-id-database.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Identifying a small arm, light weapon or round of ammunition visible in a photo or described by a witness.",
+    "selectorsIn": [
+      "image",
+      "physical-description"
+    ],
+    "selectorsOut": [
+      "physical-description",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference material published by the Small Arms Survey; downloadable as a full PDF or per-chapter, no account or payment required.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You are reading a static reference document hosted by a research institute. No target-specific query is made, so there is nothing to leak; standard passive-browsing hygiene is sufficient.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the Small Arms Survey, a Geneva-based research project; authored by recognised arms-identification specialists (N.R. Jenzen-Jones, Matt Schroeder).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Small Arms Survey Weapons Identification Guide",
+      "Weapons ID Handbook"
+    ],
+    "tags": [
+      "weapons",
+      "arms-identification",
+      "reference"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/the-weapons-id-database.md"
   },
   {
@@ -272454,46 +272518,52 @@
   {
     "id": "thebppa-com",
     "name": "thebppa.com",
-    "description": "OSINT tool: thebppa.com.",
+    "description": "Use when you have a `name` and suspect the subject is a UK press photographer and want their portfolio, byline history and professional identity — returns social-profile and employer-org leads.",
     "url": "https://thebppa.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and profiling a UK-based press/editorial photographer via their professional association directory.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "employer-org",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public website; the freelance directory and member galleries are browsable without an account.",
+    "opsec": "passive",
+    "opsecNote": "Ordinary public-website browsing. You are querying an association directory, not the subject; nothing target-facing is sent. No login needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official site of the British Press Photographers' Association, a recognised UK professional body; member listings are self-published by the association.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "British Press Photographers' Association",
+      "BPPA directory"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "photographers"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/thebppa-com.md"
   },
   {
@@ -324554,37 +324624,52 @@
   {
     "id": "exportdata",
     "name": "ExportData",
-    "description": "OSINT tool: ExportData.",
+    "description": "Use when you have a Twitter/X `username` and want to export their followers, followings, and tweet history at scale — returns associate links, social-profile and metadata.",
     "url": "https://www.exportdata.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Bulk-exporting a Twitter/X account's followers, followings, and timeline to CSV/Excel for network and activity analysis.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Pay-as-you-go — small exports/previews are cheap or free, but large follower/timeline exports consume paid credits. No subscription lock-in.",
+    "opsec": "passive",
+    "opsecNote": "You query public Twitter/X data through a third party; the target's account gets no interaction (no follow/view), so it is passive toward them. ExportData sees which handles you export — use a sock-puppet account and avoid exporting anything that signals your investigation.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An established commercial Twitter-data service; data is scraped from public Twitter/X, so completeness depends on platform access at export time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "ExportData.io"
+    ],
     "tags": [
-      "twitter"
+      "twitter",
+      "social-network-export"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/exportdata.md"
   },
   {
@@ -324803,45 +324888,53 @@
   },
   {
     "id": "facebook-com",
-    "name": "facebook.com",
-    "description": "OSINT tool: facebook.com.",
+    "name": "Facebook Ad Library",
+    "description": "Use when you have a `name`, `employer-org` or Page and want the ads that entity has run on Meta platforms — returns social-profile, employer-org and funding/contact metadata.",
     "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=political_and_issue_ads&country=GB",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding every ad a Facebook/Instagram Page or advertiser has run — including who paid for political/issue ads — via Meta's official transparency archive.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "employer-org"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, first-party Meta transparency tool; no account needed to view most ads (political/issue ad details are fully public).",
+    "opsec": "passive",
+    "opsecNote": "This is Meta's public archive; you search the advertiser, not the subject's personal account, and no login is required for the library. Standard passive browsing; use a sock puppet if you want to avoid any session correlation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Meta (Facebook) product; the ad-transparency data is authoritative because it comes from the platform that served the ads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Facebook Ad Library",
+      "Meta Ad Library"
+    ],
     "tags": [
       "facebook",
-      "Facebook General Links"
+      "Facebook General Links",
+      "ad-transparency"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-com.md"
   },
   {
@@ -346141,45 +346234,59 @@
   },
   {
     "id": "rocketreach-co",
-    "name": "rocketreach.co",
-    "description": "OSINT tool: rocketreach.co.",
+    "name": "RocketReach",
+    "description": "Use when you have a `name` + `employer-org` (or a company domain) and want the subject's professional email, phone and social profiles — returns email, phone and social-profile.",
     "url": "https://rocketreach.co",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a name-plus-employer into professional contact details (work email, direct/mobile phone, LinkedIn) via a B2B contact database.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "employer-org"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "email",
+      "phone",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free account gives a small number of lookups/credits per month; full contact reveals (especially phone numbers) and bulk use require a paid plan or API key.",
+    "opsec": "active",
+    "opsecNote": "You are querying a third-party aggregator that logs your searches, and the subject is not contacted — but registration ties queries to your account. Use a dedicated sock-puppet account and email, never a personal or agency login, and avoid revealing the target's exact identity in any shared/team workspace.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, established commercial contact-data provider; data is aggregated/inferred, so email and phone accuracy varies and must be verified before use.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "hunter-io"
+    ],
+    "aliases": [
+      "rocketreach.co",
+      "RocketReach lead intelligence"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "b2b-contact-data"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/rocketreach-co.md"
   },
   {
@@ -351307,37 +351414,53 @@
   {
     "id": "taringa-latin-america",
     "name": "Taringa (Latin America)",
-    "description": "OSINT tool: Taringa (Latin America).",
+    "description": "Use when you have a `name`/`username` tied to Latin America and want historical posts/profiles from the defunct Taringa network — returns archived social-profile leads.",
     "url": "http://www.taringa.net",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Recovering historical Hispanophone social-media activity from Taringa, which closed in 2024 — now an archive-only source.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The live site is shut down; archived copies (Wayback Machine, ArchiveTeam) are free to access.",
+    "opsec": "passive",
+    "opsecNote": "You are querying web archives, not a live platform, so there is nothing target-facing to leak. Standard passive-browsing hygiene through an archive front-end.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Taringa was a genuine, major Latin American social network (once the region's",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "web-archive-org"
+    ],
+    "aliases": [
+      "Taringa!",
+      "taringa.net"
+    ],
     "tags": [
-      "major-social-networks"
+      "major-social-networks",
+      "latin-america",
+      "defunct"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/taringa-latin-america.md"
   },
   {
@@ -352286,44 +352409,53 @@
   {
     "id": "tikface-com",
     "name": "tikface.com",
-    "description": "OSINT tool: tikface.com.",
+    "description": "Use when you have a TikTok `username` and want to view/download a profile's videos and pictures anonymously without a TikTok account — returns social-profile, image and video content.",
     "url": "https://www.tikface.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing and archiving a TikTok profile's public content anonymously, without logging into TikTok.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool, no registration; anonymous TikTok profile/video viewing and downloading.",
+    "opsec": "passive",
+    "opsecNote": "Viewing through Tikface means you never log into TikTok, so the target's account gets no \"profile view\" signal and your real account is not exposed. However, Tikface is a third party that sees the usernames you look up — use a sock-puppet browser/VPN and don't trust it with anything else.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An anonymous third-party TikTok viewer/downloader of unknown ownership; it re-serves TikTok's public data, so content is only as reliable as the underlying profile.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ttsave-app"
+    ],
+    "aliases": [
+      "Tikface",
+      "Anonymous TikTok Viewer"
+    ],
     "tags": [
       "tiktok",
       "TikTok Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tikface-com.md"
   },
   {
@@ -361016,44 +361148,51 @@
   {
     "id": "yoodownload-com",
     "name": "yoodownload.com",
-    "description": "OSINT tool: yoodownload.com.",
+    "description": "Use when you have a `social-profile` or post/video URL and want to download the media for offline analysis — returns image/video files and metadata.",
     "url": "http://yoodownload.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a downloadable copy of a video/audio post from Instagram, YouTube, Facebook, Twitter and similar before it is edited or deleted.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web downloader; no account. YouTube-to-MP3 conversion is capped (around 20 minutes per video).",
+    "opsec": "passive",
+    "opsecNote": "You paste a public media URL into a third-party converter; the target is not contacted, so it is passive toward them. The site does see the URLs you submit — use a sock-puppet browser and don't submit anything that reveals your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An anonymous third-party downloader/converter of unknown ownership; it re-serves public media, so trust the underlying platform, not the site itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "YooDownload"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/yoodownload-com.md"
   },
   {
@@ -379786,41 +379925,55 @@
   {
     "id": "profil3r",
     "name": "Profil3r",
-    "description": "search for profiles in social networks by nickname",
+    "description": "Use when you have a `username` and want to enumerate matching accounts across social networks plus derive and breach-check likely emails — returns social-profile, email and breach hints.",
     "url": "https://github.com/Rog3rSm1th/Profil3r",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "One-shot username-to-accounts-and-emails sweep with automatic breach lookup and a JSON/HTML report.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
+      "email",
       "username"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (Python). No paid tier; the only cost is local setup.",
+    "opsec": "passive",
+    "opsecNote": "Enumeration runs from your host and hits many target platforms directly. Run from a sock-puppet IP/VPN; each checked site sees your address. The breach-check step queries third-party leak indexes with the derived email — avoid on sensitive investigations where that lookup itself is a tell.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Widely forked, well-known OSINT project by Rog3rSm1th. The original upstream repo is currently unreachable (404); use an actively maintained fork/mirror and review the code before running.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "sherlock",
+      "maigret"
+    ],
+    "aliases": [
+      "Profil3r"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "username-enumeration"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/username/profil3r.md"
   },
