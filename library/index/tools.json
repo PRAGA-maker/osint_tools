@@ -100469,13 +100469,13 @@
   {
     "id": "aol-webmail-usa",
     "name": "AOL Webmail (USA)",
-    "description": "Email service provider",
+    "description": "Use when you have an `@aol.com` `email` and want to confirm the account exists and gauge account age — returns account-existence and social-profile hints.",
     "url": "http://webmail.aol.com",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming an AOL/Verizon-family email is a live account and reading the age/legacy signal an @aol.com address carries.",
     "selectorsIn": [
       "email"
     ],
@@ -100483,15 +100483,18 @@
       "email",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free webmail (now part of Yahoo/AOL under the same account system).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Existence checks touch AOL/Yahoo's shared login/recovery flow — a light active step; use a sock puppet and never advance a reset. Reading the demographic signal of the address itself is fully passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Yahoo/AOL; the login endpoint is first-party, so existence signals are authoritative (subject to CAPTCHA/anti-abuse).",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -100500,14 +100503,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "yahoo-mail",
+      "account-live-com",
+      "google-gmail"
+    ],
+    "aliases": [
+      "AOL Mail",
+      "webmail.aol.com",
+      "aol.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "email-addresses"
+      "email-addresses",
+      "account-existence"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/email/aol-webmail-usa.md"
   },
@@ -104893,13 +104906,13 @@
   {
     "id": "google-gmail",
     "name": "Google Gmail",
-    "description": "Email service provider",
+    "description": "Use when you have a Gmail `email` and want to confirm the account exists and pivot into the Google identity behind it — returns account-existence and social-profile hints.",
     "url": "https://mail.google.com",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a Gmail address maps to a live Google account and serving as the anchor for Google-account OSINT (profile photo, reviews, maps).",
     "selectorsIn": [
       "email"
     ],
@@ -104907,15 +104920,18 @@
       "email",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free consumer webmail. The OSINT value is the surrounding Google account graph, also free to explore.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Existence checks via Google's recovery/login flow are a light active touch on Google auth; keep everything on a sock-puppet account and clean IP. Never advance a password reset — that can alert the owner.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Google; login/account endpoints are first-party, so existence and linked-profile signals are authoritative (subject to anti-abuse gating).",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -104924,14 +104940,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ghunt",
+      "google-account-finder",
+      "account-live-com"
+    ],
+    "aliases": [
+      "Gmail",
+      "mail.google.com",
+      "Google Mail"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "email-addresses"
+      "email-addresses",
+      "account-existence"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/email/google-gmail.md"
   },
@@ -203348,46 +203374,55 @@
   {
     "id": "arabic-name-structure-wikipedia",
     "name": "Arabic name structure - Wikipedia",
-    "description": "OSINT tool: Arabic name structure - Wikipedia.",
+    "description": "Use when you have an Arabic `name` and want to decompose it into its components (given name, patronymic, tribal/place nisba) to derive search variants and family links — returns name variants and associate leads.",
     "url": "https://en.wikipedia.org/wiki/arabic_name",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding Arabic naming conventions to generate transliteration variants and extract family/lineage clues from a name.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Wikipedia reference article.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public reference article — nothing about the subject is transmitted. Fully anonymous tradecraft aid, not a lookup service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-maintained Wikipedia article; a reliable general explainer of naming conventions, but it is reference material, not a data source about any individual.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "wikipedia-patronymic-guides",
+      "google-com-3"
+    ],
+    "aliases": [
+      "Arabic name",
+      "Arabic naming conventions"
+    ],
     "tags": [
-      "people-search"
+      "people-search",
+      "names",
+      "tradecraft",
+      "reference"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/arabic-name-structure-wikipedia.md"
   },
   {
@@ -219189,43 +219224,55 @@
   {
     "id": "nanpa-area-code-map",
     "name": "NANPA : Area Code Map",
-    "description": "OSINT tool: NANPA : Area Code Map.",
+    "description": "Use when you have a US/Canada `phone` number and want the geographic region its area code maps to — returns geolocation (the region/state served by that code).",
     "url": "https://www.nationalnanpa.com/area_code_maps/ac_map_static.html",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping a North American area code to the geographic region/state it serves.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official reference maintained by the North American Numbering Plan Administrator.",
+    "opsec": "passive",
+    "opsecNote": "A static reference lookup — nothing is sent about the subject; you are reading a public map. Fully anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by NANPA, the official administrator of the North American Numbering Plan; area-code-to-region assignments are authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "nanpa-area-code-lookup",
+      "twilio-lookup"
+    ],
+    "aliases": [
+      "NANPA area code map",
+      "North American area code map"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "area-code",
+      "geolocation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/nanpa-area-code-map.md"
   },
   {
@@ -220975,43 +221022,54 @@
   {
     "id": "receive-sms-free-2",
     "name": "Receive SMS (free)",
-    "description": "OSINT tool: Receive SMS (free).",
+    "description": "Use when you have a `phone` number and want to check whether it is a public disposable/temp-SMS number (not a real person), or need a throwaway number to receive an OTP for a sock puppet — returns disposable-number status and inbound SMS.",
     "url": "https://receive-sms-online.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Flagging a number as a known public/temporary SMS number, and receiving OTPs on a throwaway number for sock-puppet registrations.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public disposable-number service; no account needed. Paid \"private number\" tiers exist elsewhere but the public numbers are free.",
+    "opsec": "passive",
+    "opsecNote": "Anything received on a public number is visible to everyone — never route a message you care about through it. Checking whether a number is on the site is passive. Do not use these numbers for anything tied to your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "One of many interchangeable public temp-SMS sites; the numbers and their public inboxes are exactly as advertised, but the operator and uptime of any given number are not guaranteed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "receive-smss-com",
+      "sms-activate"
+    ],
+    "aliases": [
+      "receive-sms-online.com",
+      "temporary SMS number",
+      "disposable phone number"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "disposable-number",
+      "temp-sms"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/phone/receive-sms-free-2.md"
   },
   {
@@ -221615,45 +221673,59 @@
   {
     "id": "serviceobjects-reverse-number-lookup",
     "name": "ServiceObjects Reverse Number Lookup",
-    "description": "Reverse phone lookup tool",
+    "description": "Use when you have a `phone` number and want carrier, line type, geographic location, and (where available) the associated name — returns name, geolocation, and phone metadata via API.",
     "url": "http://www.serviceobjects.com/developers/lookups/geophone-plus",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Programmatic reverse-phone intelligence — validating a number and returning carrier, line type, region, and contact name.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "phone",
-      "name"
+      "name",
+      "geolocation",
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Commercial data API (DOTS GeoPhone Plus). A free trial key and a \"Quick Lookups\" demo (a record or two) exist, but production/volume use requires a paid API key.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "opsecNote": "Server-side data lookup — the subject is not contacted or notified. Queries run through ServiceObjects with your API key, which ties usage to your account; use appropriate hygiene if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "payment-wall-partial"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "Established commercial data-validation vendor; results are compiled/licensed data, generally reliable for carrier/line-type/geo but name coverage is partial (best for US landlines).",
     "missingPersonsRelevance": "high",
     "coverage": [
+      "us",
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "twilio-lookup",
+      "numverify"
+    ],
+    "aliases": [
+      "DOTS GeoPhone Plus",
+      "ServiceObjects GeoPhone"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "telephone-numbers"
+      "telephone-numbers",
+      "reverse-phone"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/serviceobjects-reverse-number-lookup.md"
   },
@@ -254121,13 +254193,13 @@
   {
     "id": "myheritage",
     "name": "MyHeritage",
-    "description": "OSINT tool: MyHeritage.",
+    "description": "Use when you have a `name` and want genealogical records — births, marriages, deaths, family links — to establish relatives, `dob`, and life events; returns associate, dob, and name leads.",
     "url": "https://www.myheritage.com/search-records",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's relatives, vital records (birth/marriage/death), and life dates via a large genealogy database.",
     "selectorsIn": [
       "name"
     ],
@@ -254136,29 +254208,40 @@
       "dob",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching the record index is free and shows match previews; viewing full record images or saving to a tree requires a paid Data/Complete/Omni subscription.",
+    "opsec": "passive",
+    "opsecNote": "Public-facing record search — the subject is not notified. Browse logged-out or on a sock-puppet account; do not attach findings to a real personal MyHeritage tree, which would tie your identity to the research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Major commercial genealogy provider; record collections are sourced from official archives and civil registries, though transcriptions can contain indexing errors.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "familysearch-org",
+      "ancestry-com"
+    ],
+    "aliases": [
+      "My Heritage",
+      "myheritage.com"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "vital-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/myheritage.md"
   },
   {
@@ -256451,35 +256534,56 @@
   {
     "id": "njparcels-com",
     "name": "NJParcels.com",
-    "description": "OSINT tool: NJParcels.com.",
+    "description": "Use when you have a New Jersey property `address` (or an owner `name`) and want the assessed owner, sale history, and parcel details — returns name, address, and associate links.",
     "url": "http://njparcels.com/property/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding the assessed owner and sale/tax history of any New Jersey property, or all NJ properties tied to a name.",
+    "selectorsIn": [
+      "address",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public-records aggregator over NJ tax-assessment data; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Aggregates public NJ tax-assessor records — the subject is not notified. A clean browser is sufficient. Data is public but should be independently confirmed; it is not a consumer report and mustn't be used for FCRA-covered decisions.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent aggregator republishing New Jersey municipal tax-assessment data; the underlying records are official, the interface is community-run.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "njmcdirect",
+      "countyassessor-lookups"
+    ],
+    "aliases": [
+      "NJ Parcels",
+      "njparcels.com"
+    ],
+    "tags": [
+      "property",
+      "new-jersey",
+      "tax-assessment"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/njparcels-com.md"
   },
   {
@@ -271023,46 +271127,62 @@
   {
     "id": "thekyb-com",
     "name": "thekyb.com",
-    "description": "OSINT tool: thekyb.com.",
+    "description": "Use when you have a company `name` or `employer-org` and want verified registry data — legal name, address, officers, and beneficial owners across 250+ jurisdictions; returns employer-org, address, and associate links.",
     "url": "https://thekyb.com/blog/how-to-verify-a-company-in-spain-an-ultimate-guide/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Global Know-Your-Business verification — pulling official registry records, officers, and UBOs for a company across 250+ countries/states.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Commercial KYB platform. A free trial / limited \"Try Now\" lookups exist, but sustained or bulk use requires a paid subscription or API key. Treat as paid-gated beyond the trial.",
+    "opsec": "passive",
+    "opsecNote": "You query corporate registry data, not the subject. No target-side signal. Account/API sign-up ties your queries to your subscription — use appropriate attribution hygiene if that matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "api-key"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial KYB aggregator sourcing from official registries worldwide; data is registry-derived (authoritative) but coverage/freshness varies by jurisdiction and the aggregation layer is vendor-run.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "opencorporates-com",
+      "gleif-org",
+      "belgium"
+    ],
+    "aliases": [
+      "The KYB",
+      "thekyb"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "kyb",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/thekyb-com.md"
   },
   {
@@ -347515,44 +347635,56 @@
   {
     "id": "ssstwitter-com",
     "name": "ssstwitter.com",
-    "description": "OSINT tool: ssstwitter.com.",
+    "description": "Use when you have a tweet/X `social-profile` URL and want to download its video/media for offline analysis and archiving — returns the media file (image/video) plus any embedded metadata.",
     "url": "https://ssstwitter.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading video/media from a public tweet (X post) without a login, for archiving and frame-level analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account and no browser extension required.",
+    "opsec": "passive",
+    "opsecNote": "You submit the tweet URL to a third-party downloader; that operator sees which post you're pulling. No login means no direct link to your X identity, but the download site logs your request/IP — use a sock-puppet browser. It cannot access private/protected accounts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "One of many interchangeable third-party X-video downloaders; it delivers the public media but is ad-heavy and the operator is unknown, so avoid entering anything but the public URL.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "twitter-video-downloader",
+      "fdown-net",
+      "twmate"
+    ],
+    "aliases": [
+      "sss twitter",
+      "ssstwitter",
+      "twitter video downloader"
+    ],
     "tags": [
       "xtwitter",
-      "X / Twitter Related Sites"
+      "X / Twitter Related Sites",
+      "media-downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ssstwitter-com.md"
   },
   {
