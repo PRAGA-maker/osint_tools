@@ -138485,46 +138485,55 @@
   {
     "id": "baidu-image-search-2",
     "name": "Baidu Image Search",
-    "description": "Baidu's image search engine",
+    "description": "Use when you have an image or face and want matches indexed by China's dominant search engine — returns visually similar images and the Chinese-language pages hosting them.",
     "url": "http://image.baidu.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-image searching against Baidu's China-focused index, which surfaces matches Google/Yandex miss.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
       "image",
-      "social-profile"
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; no account needed for basic reverse-image search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You upload/submit an image to Baidu, not to the target, so the subject is not alerted. Baidu (a Chinese company) logs the query and the uploaded image; use a sock-puppet and VPN, and never upload an image you must keep confidential to a foreign search provider.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Baidu's first-party image search; authoritative as a search engine, though it is subject to Chinese content controls and its match quality varies.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "global",
+      "cn"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Baidu reverse image search",
+      "image.baidu.com",
+      "百度识图"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "reverse-image",
+      "china"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/baidu-image-search-2.md"
   },
@@ -156809,8 +156818,8 @@
   },
   {
     "id": "search-by-exif",
-    "name": "Search by Exif",
-    "description": "Rapid EXIF and geolocation extraction",
+    "name": "Exif OSINT Tool (exif.osint-tool.com)",
+    "description": "Use when you have an image and want a fast web read of its metadata — returns EXIF fields with an emphasis on GPS/geolocation to place where a photo was taken.",
     "url": "https://exif.osint-tool.com",
     "category": "image-video-face",
     "path": [
@@ -156818,34 +156827,48 @@
       "images",
       "metadata"
     ],
-    "bestFor": "Rapid EXIF and geolocation extraction",
-    "input": "Image files",
-    "output": "EXIF metadata with location-relevant fields",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick web-based EXIF + GPS extraction from an image when you don't want to install anything.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Web-hosted processing can expose uploads to third-party infrastructure.",
+    "costNote": "Free, no account.",
+    "opsec": "active",
+    "opsecNote": "Unlike a client-side viewer, a web-hosted extractor means you upload the image to a third-party server — the operator receives your file. Do NOT use it for confidential/evidential images; prefer a client-side tool (e.g. exifdata.com) for anything sensitive. The target is not alerted either way.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small single-purpose OSINT utility; useful for speed, but server-side upload and unknown operator mean you should not feed it sensitive images and should verify GPS independently.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Search by Exif",
+      "exif.osint-tool.com",
+      "Exif OSINT Tool"
+    ],
+    "tags": [
+      "metadata",
+      "exif",
+      "geolocation",
+      "image-forensics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/metadata/search-by-exif.md"
   },
   {
@@ -215901,48 +215924,59 @@
   },
   {
     "id": "ussearch-people-search-united-states",
-    "name": "USSearch People Search (United States)",
-    "description": "People-related search engine that searches using name, location, address, phone number",
+    "name": "US Search (People Search, United States)",
+    "description": "Use when you have a US name (optionally a city/state) and want an aggregated people report — returns addresses, phone numbers, relatives and associated records.",
     "url": "http://www.ussearch.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A mainstream US people-search aggregator for current/past addresses, phones and relatives from a name.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
-      "social-profile",
       "address",
       "phone",
-      "associate"
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to run a search and see teaser results (name/age/city, relatives), but the full report — full address history, phone numbers, records — is behind a paid subscription/one-off purchase. Effectively pay-to-view detail.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searches query US Search's aggregated broker data, not the target, so no notification reaches the subject. Buying a report requires an account and payment, which identifies you to the vendor. Note US Search is subject to opt-out; some subjects will be absent because they opted out, not because no record exists.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running commercial people-search (PeopleConnect/Intelius family); broad US coverage but data-broker sourcing that can be stale or conflated — treat as leads to verify, and it is explicitly not for FCRA uses.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "USSearch",
+      "ussearch.com",
+      "US Search people finder"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "data-broker"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/people-search/ussearch-people-search-united-states.md"
   },
@@ -220518,30 +220552,30 @@
   {
     "id": "owl-sint",
     "name": "Owl-sint",
-    "description": "Tool for searching phone number information and tracking.",
+    "description": "Use when you have a phone number (or an IP/Instagram handle) and want a scripted OSINT lookup — returns carrier/line and geographic metadata for the number plus related pivots.",
     "url": "https://github.com/IccTeam/Owl-sint",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Phone number lookups",
+    "bestFor": "Command-line phone-number metadata lookups (carrier, line type, region) with side utilities for IP and Instagram.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
+      "geolocation",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source on GitHub (GPL-3.0). Requires local Python; some sub-features may depend on third-party APIs/keys.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Number metadata (carrier, country, line type) is derived from numbering-plan libraries and does not contact the subscriber, so it is passive and non-alerting. Its \"location tracking\" and Instagram/IP features may query third-party services from your IP — run behind a VPN, and be sceptical of any precise-location claim.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "Smaller project (113 stars); verify accuracy.",
+    "trustNote": "A small community GitHub project (~110 stars); the phone-metadata output is standard and reliable, but its \"tracking\"/location and social features are unaudited — verify results.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -220550,13 +220584,18 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Owl-sint",
+      "OwlSint"
+    ],
     "tags": [
       "phone",
-      "lookup"
+      "lookup",
+      "cli",
+      "self-hosted"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/owl-sint.md"
   },
@@ -275006,47 +275045,59 @@
   },
   {
     "id": "vision-net-ie",
-    "name": "vision-net.ie",
-    "description": "OSINT tool: vision-net.ie.",
+    "name": "Vision-Net (Irish Company & Director Info)",
+    "description": "Use when you have an Irish company or a director's name and want registry-sourced records — returns company filings, director details and linked directorships.",
     "url": "https://www.vision-net.ie/index.jsp",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Researching Irish companies and directors — official registry reports, director profiles and their other directorships.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and see basic company/director listings; full registry reports, documents, financials and credit data are paid (per-report or subscription). Operated by CRIF, a third-party reseller of Irish CRO registry data.",
+    "opsec": "passive",
+    "opsecNote": "Querying a company-data service is passive and does not alert the subject. Buying reports needs an account/payment, identifying you to CRIF. Use lawful public-record scope; VPN for sensitive lookups.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by CRIF (a major credit/data company) and sourced from the official Irish Companies Registration Office; a reputable reseller of authoritative registry data rather than the CRO itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Vision-Net",
+      "vision-net.ie",
+      "Irish company director search"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-registry",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/public-records/vision-net-ie.md"
   },
   {
@@ -380580,36 +380631,51 @@
   },
   {
     "id": "username-checker-2",
-    "name": "Username Checker",
-    "description": "OSINT tool: Username Checker.",
+    "name": "CheckUser.org Username Checker",
+    "description": "Use when you have a username and want to see which social platforms it exists on — returns per-platform availability/existence across 70+ sites with direct profile links.",
     "url": "https://checkuser.org/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Fast triage of one username across 70+ social platforms to find where a subject has accounts.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free, no signup required for the core check.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "CheckUser queries each platform (or its own index) to test whether the handle exists; the target account is not notified, but the checks originate from CheckUser's infrastructure or your browser. Use a sock-puppet/VPN for sensitive handles, and verify hits manually rather than trusting the availability label alone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A free web username-availability checker; convenient for breadth, but \"available/taken\" labels can be wrong for sites that soft-fail, so confirm the actual profile.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CheckUser",
+      "checkuser.org",
+      "username availability checker"
+    ],
+    "tags": [
+      "username",
+      "username-enumeration"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/username/username-checker-2.md"
   },
   {
