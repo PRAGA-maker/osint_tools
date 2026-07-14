@@ -163210,44 +163210,51 @@
   {
     "id": "ytlarge-com",
     "name": "ytlarge.com",
-    "description": "OSINT tool: ytlarge.com.",
+    "description": "Use when you have a YouTube channel/video URL or handle (`social-profile`) and want the channel's stable ID, stats and metadata (tags, thumbnails, shadowban status) — returns durable channel identifiers and analytics.",
     "url": "https://ytlarge.com/youtube/channel-id-finder/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a YouTube channel to its immutable channel ID plus stats, tags, thumbnails and shadowban status for tracking and enrichment.",
     "selectorsIn": [
-      "image",
-      "face"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tools (uses YouTube Data API v3 under the hood). No account required for the lookups.",
+    "opsec": "passive",
+    "opsecNote": "Passive to the target — you query ytlarge/YouTube's API about a public channel, not the subject. No notification reaches the channel owner. Ordinary sock-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party YouTube tools site drawing on the official YouTube Data API and page source; the underlying data is genuine, but it's an unofficial aggregator — confirm critical facts on YouTube directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ytlarge",
+      "YouTube channel ID finder"
+    ],
     "tags": [
       "youtube",
       "YouTube Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ytlarge-com.md"
   },
   {
@@ -179879,44 +179886,55 @@
   },
   {
     "id": "web-botim-me",
-    "name": "web.botim.me",
-    "description": "OSINT tool: web.botim.me.",
+    "name": "web.botim.me (BOTIM)",
+    "description": "Use when you have a `phone` number likely used in the UAE/Gulf and want to check whether it's on BOTIM and pull the profile photo/name — a popular Gulf VoIP/messaging app, returning social-profile presence.",
     "url": "https://web.botim.me/#/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a phone number's presence on BOTIM (widely used in the UAE/Gulf) and capturing its profile photo and display name.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "phone"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image",
+      "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free app/service. The web endpoint now centers on BOTIM Meet (video meetings/login); the contact-registration check is done in the mobile app, which is the practical OSINT surface.",
+    "opsec": "active",
+    "opsecNote": "Active — adding a target number to your contacts to check BOTIM presence is a query against the platform, and depending on settings the target may see a contact/\"joined\" signal. Use a dedicated sock account and burner number; do not initiate calls or messages.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "BOTIM is a genuine, widely used Gulf-region messaging/VoIP app. The number-check technique mirrors WhatsApp-style contact syncing; profile visibility depends on the target's privacy settings.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ae",
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "BOTIM",
+      "botim.me"
+    ],
     "tags": [
       "messengerapps",
       "Messenger Apps"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/messaging/web-botim-me.md"
   },
   {
@@ -210928,44 +210946,55 @@
   {
     "id": "my-cse-for-search-in-48-pastebin-sites",
     "name": "My CSE for search in 48 pastebin sites",
-    "description": "OSINT tool: My CSE for search in 48 pastebin sites.",
+    "description": "Use when you have a `name`, `username`, `email` or other selector and want to find it in leaked/pasted data — a Google Custom Search Engine spanning ~48 pastebin sites, returning paste hits with contact/leak data.",
     "url": "https://cipher387.github.io/pastebinsearchengines/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Sweeping dozens of pastebin/paste sites at once for a selector, to surface leaked credentials, dumps and mentions.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username",
+      "email"
     ],
     "selectorsOut": [
-      "address",
       "email",
-      "name",
-      "phone"
+      "phone",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free — a hosted Google Custom Search Engine (CSE) over ~48 paste sites. No account; results are ordinary Google search results scoped to those sites.",
+    "opsec": "passive",
+    "opsecNote": "Passive to the target — you query Google's index, not the paste hosts directly, so the subject isn't alerted. Use a sock browser. Do NOT log into or download from any leak site; only read the indexed results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by cipher387 / cyb-detective, a well-known OSINT tooling author. It is a curated Google CSE, so result quality is Google's; coverage is only what Google has indexed on those paste sites.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "pastebin search engines",
+      "cipher387 pastebin CSE",
+      "cyb-detective pastebin search"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "pastebin",
+      "leaks"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/people-search/my-cse-for-search-in-48-pastebin-sites.md"
   },
   {
@@ -228547,46 +228576,55 @@
   {
     "id": "big101-obituaries-listing-north-america",
     "name": "Big101 Obituaries Listing (North America)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name` (and a US state/Canadian region) and want to find an obituary/death notice — a meta-directory of newspaper obituary pages and death indexes returning death date, locality and family.",
     "url": "http://www.big101.com/OBITUARIES101.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a deceased subject's obituary via a state-by-state directory of North American newspaper death notices and indexes.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "dob",
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory of links. The obituary pages it points to are mostly free, though some newspaper archives may paywall older notices.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive — you follow public obituary links; nothing about the subject is submitted to any monitored system and no alert is generated.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party link directory (not a data source itself); usefulness depends on the linked newspapers and whether their links are still live. Some links may be dead.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "sysoon-deceased-database"
+    ],
+    "aliases": [
+      "Obituaries101",
+      "big101 obituaries"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "deceased"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/big101-obituaries-listing-north-america.md"
   },
@@ -318905,44 +318943,53 @@
   {
     "id": "a-tremendously-valuable-osint-tip-for-pinterest",
     "name": "A Tremendously Valuable OSINT Tip For Pinterest",
-    "description": "OSINT tool: A Tremendously Valuable OSINT Tip For Pinterest.",
-    "url": "https://hatless1der.com/author/hatless1der/",
+    "description": "Use when you have a Pinterest `username` and want to hypothesize the subject's `email` — a documented technique exploiting Pinterest's Google-signup default that turns the email's local-part into the username.",
+    "url": "https://hatless1der.com/a-tremendously-valuable-osint-tip-for-pinterest/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Deriving a candidate email address from a Pinterest username (for accounts created via Google sign-up), then validating it.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free technique documented on hatless1der.com (Griffin Glynn / \"The OSINT Curious\" practitioner). No tool to buy; you apply the method with an email-validation step.",
+    "opsec": "passive",
+    "opsecNote": "Passive — reading the Pinterest username and hypothesizing an email leaks nothing to the subject. The follow-up email validation should use a passive/non-alerting method; avoid sending mail to the guessed address.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Authored by a respected missing-persons OSINT practitioner (hatless1der). The technique is sound but probabilistic — it produces a hypothesis to validate, not a confirmed email.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com"
+    ],
+    "aliases": [
+      "hatless1der Pinterest tip",
+      "Pinterest username to email"
+    ],
     "tags": [
       "pinterest",
       "Pinterest Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-14",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/a-tremendously-valuable-osint-tip-for-pinterest.md"
   },
   {
