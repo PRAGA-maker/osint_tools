@@ -174793,44 +174793,53 @@
   },
   {
     "id": "pixelatomy-com",
-    "name": "pixelatomy.com",
-    "description": "OSINT tool: pixelatomy.com.",
+    "name": "Snow Stamp (Discord Snowflake → Timestamp)",
+    "description": "Use when you have a Discord ID (`document-id` snowflake from a user, message, or channel) and want its exact creation date/time — returns the decoded UTC timestamp.",
     "url": "https://pixelatomy.com/snow-stamp/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Decoding a Discord snowflake ID into the precise UTC creation timestamp of the account, message, or channel it belongs to.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "document-id"
     ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser tool; no account, no payment.",
+    "opsec": "passive",
+    "opsecNote": "Fully client-side/offline math — the snowflake is decoded locally and nothing is sent to Discord or the subject. No account or query is logged against the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A simple deterministic converter (Discord snowflakes embed a millisecond timestamp since the Discord epoch); the math is exact and verifiable, so results are reliable regardless of who hosts the page.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "regdatebot"
+    ],
+    "aliases": [
+      "Snow Stamp",
+      "Discord snowflake to timestamp",
+      "pixelatomy.com"
+    ],
     "tags": [
       "discord",
-      "Discord Related Sites"
+      "Discord Related Sites",
+      "snowflake",
+      "timestamp"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/messaging/pixelatomy-com.md"
   },
   {
@@ -175121,38 +175130,52 @@
   },
   {
     "id": "regdatebot",
-    "name": "RegDateBot",
-    "description": "OSINT tool: RegDateBot.",
+    "name": "RegDateBot (Telegram)",
+    "description": "Use when you have a Telegram `username` or account and want to estimate when it was created — returns an approximate account registration date to age-check and disambiguate accounts.",
     "url": "https://t.me/regdate_clone_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Estimating the creation/registration date of a Telegram account to judge whether it is old/established or freshly made.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot; you only need a Telegram account to message it.",
+    "opsec": "active",
+    "opsecNote": "You send the target's Telegram ID/username to an unknown third-party bot operator, who sees both your account and the query. Use a sock-puppet Telegram account, and note that forwarding a message from the target to a bot can, in some setups, be observable — prefer looking up by numeric ID.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A third-party \"clone\" bot of unknown operator; the registration date is an ESTIMATE derived from the sequential Telegram user ID, not an official timestamp, and the operator could log or mishandle queries.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "regdate_clone_bot",
+      "Telegram registration date bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "account-age",
+      "messaging"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/messaging/regdatebot.md"
   },
   {
@@ -225162,51 +225185,6 @@
     "_file": "library/tools/public-records/arcgis-com-4.md"
   },
   {
-    "id": "architects-register-org-uk",
-    "name": "architects-register.org.uk",
-    "description": "OSINT tool: architects-register.org.uk.",
-    "url": "http://architects-register.org.uk/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professionlicensing",
-      "Profession & Licensing Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/architects-register-org-uk.md"
-  },
-  {
     "id": "architecture-com",
     "name": "architecture.com",
     "description": "OSINT tool: architecture.com.",
@@ -239673,47 +239651,58 @@
   },
   {
     "id": "forceswarrecords-com",
-    "name": "forceswarrecords.com",
-    "description": "OSINT tool: forceswarrecords.com.",
+    "name": "Forces War Records",
+    "description": "Use when you have a `name` of someone who served in the UK/Commonwealth military and want their service history — returns military `document-id` records with regiment/unit (`employer-org`), rank, `dob` and next-of-kin `associate` links.",
     "url": "https://uk.forceswarrecords.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Tracing a person's UK/Commonwealth military service history (regiment, rank, medals, casualty records) from a name for genealogy and identity work.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "name",
+      "dob",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Name index is searchable free, but viewing full transcribed/original records requires a paid subscription (a genealogy site, now part of the Ancestry group).",
+    "opsec": "passive",
+    "opsecNote": "A read-only historical-records search; no living subject is contacted or notified. You create an account to subscribe, which ties activity to that login — use a research account for sensitive work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial military-genealogy database of transcribed and scanned records; transcription errors happen, so treat individual fields as leads to confirm against the original scan.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "forceswarrecords.com",
+      "Forces War Records"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "military",
+      "uk",
+      "genealogy"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/public-records/forceswarrecords-com.md"
   },
   {
@@ -245218,47 +245207,61 @@
   },
   {
     "id": "icaew-com",
-    "name": "icaew.com",
-    "description": "OSINT tool: icaew.com.",
+    "name": "ICAEW — Find a Chartered Accountant",
+    "description": "Use when you have a `name` or firm and want to confirm a UK chartered accountant / ICAEW-regulated firm — returns the firm/member `employer-org`, `address` and services offered.",
     "url": "https://find.icaew.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying that an accountant or accountancy firm is ICAEW-regulated and finding their firm name, location and service areas.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory operated by the ICAEW (Institute of Chartered Accountants in England and Wales); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A read-only directory search — the subject is not notified. The site sees your IP/query like any website; a sock-puppet browser suffices for a sensitive lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "First-party directory of the ICAEW, the UK chartered-accountancy body; authoritative for ICAEW membership/regulation, though it lists firms/services rather than exhaustive individual detail.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "eca-co-uk",
+      "architects-register-org-uk"
+    ],
+    "aliases": [
+      "find.icaew.com",
+      "Find a Chartered Accountant",
+      "icaew.com"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "uk",
+      "accountancy",
+      "regulator"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/public-records/icaew-com.md"
   },
   {
@@ -245643,47 +245646,61 @@
   },
   {
     "id": "identitynumber-org",
-    "name": "identitynumber.org",
-    "description": "OSINT tool: identitynumber.org.",
+    "name": "IdentityNumber.org (South Africa)",
+    "description": "Use when you have a South African `name` or ID number (`document-id`) and want identity verification plus genealogy/death records — returns confirmed `name`, `dob`, `address` and family `associate` links.",
     "url": "https://www.identitynumber.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying a South African ID number and pulling SA death-notice, marriage and family-finder records for identity and genealogy tracing.",
     "selectorsIn": [
       "name",
       "address",
-      "employer-org"
+      "document-id"
     ],
     "selectorsOut": [
+      "name",
+      "dob",
       "address",
-      "employer-org",
-      "name"
+      "associate",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free \"Silver\" tier does basic ID verification; fuller access to death records, marriage transcriptions, immigration and contact details is gated behind Gold/Platinum/Diamond paid tiers (~$20–$50).",
+    "opsec": "passive",
+    "opsecNote": "You submit the subject's name/ID to a third-party South African service, which logs the query and requires signup for anything beyond the free tier — use a research account. No notification reaches the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party South African genealogy/verification platform (transcribed death notices, family-finder). Useful for SA-specific leads but not an official government register; verify critical facts against Home Affairs / official sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "za"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "identitynumber.org",
+      "SA ID verification"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "south-africa",
+      "id-verification",
+      "death-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/public-records/identitynumber-org.md"
   },
   {
@@ -255336,45 +255353,61 @@
   },
   {
     "id": "nettrace",
-    "name": "NetTrace",
-    "description": "OSINT tool: NetTrace.",
+    "name": "Net-Trace",
+    "description": "Use when you have a `name` and an Australian (or AU/UK/US/NZ) subject and want the right free public-record source — returns a curated directory of searches yielding `name`, `dob`, `document-id` and licensing/registry records.",
     "url": "https://www.nettrace.com.au/resource/search/people",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the correct free people-search and public-record databases for Australia (and other countries) from one long-running curated directory.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The directory is free (operating since 1998); the government/registry databases it links to are largely free, though some certificate copies may charge.",
+    "opsec": "passive",
+    "opsecNote": "Net-Trace is a link directory — searches run on the destination government/registry sites, which see your IP/query. Use a sock-puppet browser; the subject is not notified.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established (since 1998) curated directory of free people-search and public-record links, Australia-focused with international coverage; result quality is that of each linked destination.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "au"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "court-records-directory"
+    ],
+    "aliases": [
+      "nettrace.com.au",
+      "Net-Trace people search"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "people-search",
+      "australia",
+      "directory",
+      "public-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nettrace.md"
   },
   {
@@ -328563,14 +328596,14 @@
   },
   {
     "id": "google-com-70",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "name": "Google dork — site:mewe.com",
+    "description": "Use when you have a `name` or `username` and want to surface a subject's MeWe profile/posts that Google has indexed — returns `social-profile` links and the display `name` on them.",
     "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Amewe.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding public MeWe profiles and posts for a subject by constraining a Google search to the mewe.com domain.",
     "selectorsIn": [
       "username",
       "name"
@@ -328579,29 +328612,40 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Uses ordinary Google web search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The query runs against Google, not against MeWe or the target, so the subject is not notified. Google still logs the search to your IP/session — run it from a sock-puppet browser if the terms are sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is a standard Google `site:` operator, not a third-party service — reliability is Google's index coverage of mewe.com pages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-com-50"
+    ],
+    "aliases": [
+      "site:mewe.com",
+      "MeWe Google dork"
+    ],
     "tags": [
       "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
+      "Right Wing Social Media Sites",
+      "mewe",
+      "google-dork"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-70.md"
   },
   {
@@ -340113,44 +340157,58 @@
   {
     "id": "ppl-contact",
     "name": "ppl.contact",
-    "description": "OSINT tool: ppl.contact.",
+    "description": "Use when you have a `name` + `employer-org` (or company `domain`) and want a person's business `email`/`phone` — returns B2B contact details drawn from a 278M+ contact database.",
     "url": "https://ppl.contact/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a named professional at a known company to a verified business email and phone via a large B2B contact database.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "employer-org",
+      "domain"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "email",
+      "phone",
+      "employer-org",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Pay-as-you-go credit model over a 278M+ B2B contact database; effectively paid — expect only a small free trial/credit allotment before lookups consume paid credits and require signup.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party broker's database, not the subject, so no notification reaches them. You must create an account to spend credits, which attributes usage to that login — use a research account, and be aware the broker logs your queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trustNote": "A commercial B2B contact/lead broker; contacts are scraped/aggregated and may be stale or wrong, and \"verified\" is the vendor's claim — confirm any email/phone before relying on it.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "ppl.contact"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "b2b",
+      "contact-enrichment",
+      "data-broker"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ppl-contact.md"
   },
   {
@@ -375049,41 +375107,60 @@
   {
     "id": "footprintiq",
     "name": "FootprintIQ",
-    "description": "Username and email footprint scanning with breach and data broker exposure checks",
+    "description": "Use when you have a `username`, `email`, or `phone` and want a one-shot exposure scan — returns matched `social-profile`s across 500+ platforms, breach hits, data-broker listings, and reverse image/face matches.",
     "url": "https://footprintiq.app",
     "category": "username",
     "path": [
       "username",
       "username-search-engines"
     ],
-    "bestFor": "Username and email footprint scanning with breach and data broker exposure checks",
-    "input": "Username, email address, or phone number",
-    "output": "Matched profiles across 500+ platforms, breach exposure, data broker listings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A fast single-selector footprint scan that fans a username/email/phone across 500+ platforms and cross-references breaches and data-broker listings.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "email",
+      "image",
+      "address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "A basic exposure scan is free with no card and no sign-up. Deep scans, image intelligence, continuous monitoring and broker-removal automation are Pro (paid).",
     "opsec": "active",
-    "opsecNote": "Queries are routed through FootprintIQ infrastructure; target platforms may log lookup activity.",
+    "opsecNote": "Queries route through FootprintIQ's infrastructure and out to target platforms, which may log the lookup. It is marketed for scanning your OWN footprint — running it on a third party is fine for OSINT but assume the query is attributable to FootprintIQ, not you; still use a sock-puppet where the selector is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial exposure-scanning SaaS; cross-platform username matching is inherently noisy (name collisions), so treat hits as candidates to confirm, not identity proof.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "xsint"
+    ],
+    "aliases": [
+      "footprintiq.app"
+    ],
+    "tags": [
+      "username",
+      "footprint",
+      "breach",
+      "data-broker",
+      "aggregator"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-13",
+    "enrichment": "full",
     "_file": "library/tools/username/username-search-engines/footprintiq.md"
   },
   {
