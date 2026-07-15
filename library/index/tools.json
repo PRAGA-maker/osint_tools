@@ -25882,37 +25882,53 @@
   {
     "id": "controlc-pastebin",
     "name": "ControlC Pastebin",
-    "description": "OSINT tool: ControlC Pastebin.",
-    "url": "https://Controlc.com",
+    "description": "Use when you have a paste ID/link or a leaked snippet and want to read or host plain-text content anonymously — a pastebin where dumped data (`email`, `phone`, credentials) often surfaces.",
+    "url": "https://controlc.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading or hosting anonymous text pastes; a site where leaked/dumped personal data is sometimes posted.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "phone",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to view and create pastes. Registration is optional; paid/registered accounts add features like never-expiring pastes.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a paste is passive and does not notify anyone. Creating a paste hosts content publicly — never paste real target data or your own investigative notes there. ControlC has no full-text search, so you generally reach pastes via a direct link found through a search engine or a breach index; treat content as unverified and potentially planted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running independent pastebin (formerly controlc.com / \"anonymous pastebin\"); content is user-generated and unvetted, so anything found is a lead to corroborate, not a source of truth.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "controlc",
+      "anonymous pastebin"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "leaks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/controlc-pastebin.md"
   },
   {
@@ -313020,14 +313036,14 @@
   },
   {
     "id": "webcleaner-com",
-    "name": "webcleaner.com",
-    "description": "OSINT tool: webcleaner.com.",
+    "name": "Web Cleaner",
+    "description": "Use when you have a `name` (or any query) and want to sweep several major search engines from one page — returns aggregated web `social-profile`/`name` mentions across engines.",
     "url": "https://www.webcleaner.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly running the same name/query across multiple search engines from a single meta-search page.",
     "selectorsIn": [
       "name"
     ],
@@ -313035,29 +313051,35 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account required. Ad-supported meta-search front end.",
+    "opsec": "passive",
+    "opsecNote": "A meta-search front end that hands your query off to the underlying engines. Your query and IP reach those third-party engines (Google/Bing/etc.) as normal searches — no different from searching them directly. Use a sock-puppet browser/VPN if the query itself is sensitive; there is no target-side notification.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Small independent meta-search site; it merely relays queries to mainstream engines, so result quality is whatever those engines return. No proprietary data of its own.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "webcleaner.com"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "meta-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/webcleaner-com.md"
   },
   {
@@ -332069,38 +332091,51 @@
   {
     "id": "inflact-instagram-search",
     "name": "Inflact Instagram Search",
-    "description": "Instagram profiles search tool with the ability to filter results by number of subscribers, number of posts, gender, categories (personal blog, artist, product/service etc.)",
+    "description": "Use when you have a partial `name`/`username`, keyword, or location and want to discover Instagram profiles matching it — returns candidate `social-profile`s filterable by followers, post count, gender and category.",
     "url": "https://inflact.com/tools/instagram-search/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering Instagram accounts by keyword, bio term, or location when you don't yet have the exact handle.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier runs limited searches with basic result display; a paid Inflact subscription unlocks unlimited queries and CSV/Excel export of results. No Instagram login required.",
+    "opsec": "passive",
+    "opsecNote": "Inflact queries publicly available Instagram data server-side, so nothing is authenticated to the target's account and no viewer trace is left. Your search terms reach Inflact (a third-party marketing service) — use a sock puppet if the terms are sensitive. Inflact is a growth/marketing vendor, so avoid submitting operationally sensitive selectors you would not want logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial Instagram-marketing vendor (Inflact, formerly Ingramer); the search tool is a public front end over Instagram data, not affiliated with or endorsed by Meta.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Inflact",
+      "Ingramer Instagram search"
+    ],
     "tags": [
       "Social Media",
-      "Instagram"
+      "Instagram",
+      "profile-discovery"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "inflact",
       "inflact-com",
@@ -332112,6 +332147,8 @@
       "inflact-instagram-viewer-anonymous",
       "inflact-profile-analyzer"
     ],
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inflact-instagram-search.md"
   },
   {
@@ -358441,37 +358478,55 @@
   {
     "id": "vk-watch",
     "name": "VK.watch",
-    "description": "OSINT tool: VK.watch.",
+    "description": "Use when you have a VKontakte `social-profile`/`username` and want the profile's change history — former names, deleted avatars, added/removed friends and groups — returns historical `social-profile` snapshots plus `associate` links.",
     "url": "https://vk.watch/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Reconstructing how a VKontakte profile looked in the past — prior display names, deleted avatars, and friends/groups later hidden or removed.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier is the @VKHistoryRobot Telegram bot, which returns basic historical dumps (old profile page, avatars, bio) for a VK ID. Continuous monitoring and deeper friend/group change history on vk.watch itself require a paid subscription.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party archive, not VK, so the target is not notified and nothing touches their account. Risk is that you hand the target's VK ID to a Russian-operated service — use a sock-puppet Telegram account for the bot and keep operationally sensitive selectors off it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Widely cited in VK-OSINT tradecraft guides. Independent third party, not affiliated with VK; historical depth depends on when VK.watch first crawled the target.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "vk.watch",
+      "VKHistoryRobot"
+    ],
     "tags": [
-      "vkontakte"
+      "vkontakte",
+      "profile-history",
+      "social-media"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/vk-watch.md"
   },
   {
@@ -374319,44 +374374,50 @@
   },
   {
     "id": "thatsthem-vin-search",
-    "name": "thatsthem (Vin Search)",
-    "description": "OSINT tool: thatsthem (Vin Search).",
-    "url": "http://thatsthem.com/vin-search",
+    "name": "ThatsThem VIN Search",
+    "description": "Use when you have a `vin` and want to identify the vehicle and any linked owner records — returns vehicle make/model/year plus, where matched, the owner `name` and `address`.",
+    "url": "https://thatsthem.com/vin-search",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a US vehicle VIN into make/model/year and, when ThatsThem has a match, the associated owner's name and address.",
     "selectorsIn": [
-      "vehicle-plate",
       "vin"
     ],
     "selectorsOut": [
       "name",
-      "address"
+      "address",
+      "vehicle-plate"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search; no account required. ThatsThem is ad-supported and upsells paid background-report partners, but the core VIN and people lookups are free.",
+    "opsec": "passive",
+    "opsecNote": "Passive query against ThatsThem's aggregated public-records/marketing data — the vehicle owner is not notified. Your search and IP are logged by ThatsThem; use a sock-puppet browser/VPN for sensitive work. Note ThatsThem is a data-broker aggregator, so accuracy varies and some links are stale.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "ThatsThem is a free US people-search/data-broker aggregator; coverage and freshness are inconsistent (a valid VIN may return no owner match). Treat owner links as leads, not proof.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "thatsthem VIN",
+      "ThatsThem vehicle lookup"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "vin",
+      "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "thats-them",
       "thatsthem",
@@ -374365,6 +374426,8 @@
       "thatsthem-phone-search",
       "vin-lookup"
     ],
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/transportation/thatsthem-vin-search.md"
   },
   {

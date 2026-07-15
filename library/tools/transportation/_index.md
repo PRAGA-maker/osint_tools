@@ -194,7 +194,7 @@ kind: group-index
 - **`submarine-tracker`** (low) — OSINT tool: SUBMARINE TRACKER.
 - **`submarinecablemap-com`** (low) — submarine communications cables map
 - **`surfy`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, travel discounts, travel news, 
-- **`thatsthem-vin-search`** (medium) — OSINT tool: thatsthem (Vin Search).
+- **`thatsthem-vin-search`** (medium) — Use when you have a `vin` and want to identify the vehicle and any linked owner records — returns vehicle make/model/year plus, where matche
 - **`the-burnsy-vehicle-osint`** (medium) — OSINT tool: The Burnsy Vehicle OSINT.
 - **`tokyo-mou`** (low) — Ship inspection/history database (PSC Database)
 - **`track-trace`** (medium) — Package tracking and supply-chain movement checks

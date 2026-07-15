@@ -855,7 +855,7 @@ kind: group-index
 - **`web-directories`** (low) — Directory of web directories
 - **`web-search-navigator`** (low) — extension that adds keyboard shortcuts to Google, YouTube, Github, Amazon, and others
 - **`webcam-hopper`** (medium) — Search live webcams around the world
-- **`webcleaner-com`** (high) — OSINT tool: webcleaner.com.
+- **`webcleaner-com`** (medium) — Use when you have a `name` (or any query) and want to sweep several major search engines from one page — returns aggregated web `social-prof
 - **`webcrawler-com`** (high) — Use when you have a `name` or other search string and want blended results from several major search engines at once — returns web links and
 - **`webcrawler-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`webdork`** (medium) — OSINT tool: webdork.

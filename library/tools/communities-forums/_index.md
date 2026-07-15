@@ -75,7 +75,7 @@ kind: group-index
 - **`computerworld`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`computing`** (medium) — News and analysis for UK executives
 - **`context`** (medium) — OSINT tool: Context.
-- **`controlc-pastebin`** (medium) — OSINT tool: ControlC Pastebin.
+- **`controlc-pastebin`** (medium) — Use when you have a paste ID/link or a leaked snippet and want to read or host plain-text content anonymously — a pastebin where dumped data
 - **`couchsurfing`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`council-on-foreign-relations`** (medium) — Site maintained by the Council on Foreign Relations, offering information on defense and security, including terrorist groups and US police
 - **`createtv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base

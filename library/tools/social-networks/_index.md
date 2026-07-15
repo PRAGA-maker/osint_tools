@@ -320,7 +320,7 @@ kind: group-index
 - **`inflact-com-4`** (medium) — Use when you have an Instagram Reel `social-profile`/URL and want to save the video for offline analysis without logging in — returns the do
 - **`inflact-com-5`** (high) — Use when you have a public Instagram post/reel/profile URL and want to download its video/media without logging in — returns downloadable vi
 - **`inflact-com`** (high) — Use when you have an Instagram `username` and want the full-size profile picture (avatar) without logging in — returns the high-resolution `
-- **`inflact-instagram-search`** (medium) — Instagram profiles search tool with the ability to filter results by number of subscribers, number of posts, gender, categories (personal bl
+- **`inflact-instagram-search`** (medium) — Use when you have a partial `name`/`username`, keyword, or location and want to discover Instagram profiles matching it — returns candidate 
 - **`inflact-profile-analyzer`** (medium) — Free Instagram profile analysis tool.
 - **`inflact`** (medium) — Another online tool that allows you to watch Instagram, without logging in: - search users by nickname; - view last posts; - analyze profile
 - **`initstring-linkedin2username`** (high) — Use when you have an `employer-org` (company LinkedIn page) and want a generated list of likely employee usernames/emails and real names — r
@@ -838,7 +838,7 @@ kind: group-index
 - **`vk-community-search`** (high) — Use when you have a keyword, place or interest (`name`) and want to find VKontakte groups/communities a subject may belong to — returns soci
 - **`vk-people-search`** (high) — Use when you have a `name` (plus city/school/employer) for a Russian/CIS subject and want their VKontakte profile — returns profiles filtera
 - **`vk-search-engine`** (high) — Use when you have a `name`/`username` and want to search VKontakte (VK) profiles and content via a pre-scoped Google Custom Search Engine — 
-- **`vk-watch`** (high) — OSINT tool: VK.watch.
+- **`vk-watch`** (high) — Use when you have a VKontakte `social-profile`/`username` and want the profile's change history — former names, deleted avatars, added/remov
 - **`vk5`** (high) — Use when you have a VKontakte profile (`social-profile` id/URL) and want to surface hidden friends, activity, likes, and photos — returns as
 - **`vsco-co`** (high) — Use when you have a `username` and want to view a person's public photo grid and profile without an account — returns social-profile, images
 - **`watch-frame-by-frame`** (low) — OSINT tool: watch frame by frame.
