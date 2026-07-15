@@ -250420,47 +250420,58 @@
   },
   {
     "id": "italy",
-    "name": "Italy",
-    "description": "OSINT tool: Italy.",
+    "name": "Italy (Italian Business Register)",
+    "description": "Use when you have an Italian `employer-org` or a director's `name` and want official company data — InfoCamere's register returns the company, its directors/proprietors and registered address; free search, paid documents.",
     "url": "https://italianbusinessregister.it/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming an Italian company and its directors/registered office via the official InfoCamere business register.",
     "selectorsIn": [
+      "employer-org",
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "\"Ricerca Imprese Gratuita\" (free company search) is free; detailed reports, filings and financial statements are paid per document by credit card.",
+    "opsec": "passive",
+    "opsecNote": "Searching the register is a passive, anonymous lookup against official corporate records — no notification to the company or its officers. Paid document orders attach your payment identity to the request.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The English portal of the official Italian Business Register, operated by InfoCamere SCpA (the Italian Chambers of Commerce network) — an authoritative first-party source, linked to registroimprese.it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "it"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Italian Business Register",
+      "InfoCamere",
+      "Registro Imprese"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "italy",
+      "business-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/italy.md"
   },
   {
@@ -265822,46 +265833,55 @@
   {
     "id": "rbo-gov-ie",
     "name": "rbo.gov.ie",
-    "description": "OSINT tool: rbo.gov.ie.",
+    "description": "Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/year of birth and nature of control, though public access is now restricted.",
     "url": "https://rbo.gov.ie/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the natural persons who ultimately own/control an Irish company or society (beneficial ownership).",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "dob",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The register itself is a free statutory service, but general public access was restricted after the November 2022 CJEU ruling — open searching by anyone is no longer available.",
+    "opsec": "passive",
+    "opsecNote": "Any lookup is a passive query against a government register — no signal to the company or owner. Access, however, now requires you to authenticate as a designated/competent person or establish legitimate interest, which ties the request to your identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Ireland's official statutory Register of Beneficial Ownership (RBO), operated under the Companies Registration Office — an authoritative first-party source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ie"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Register of Beneficial Ownership Ireland",
+      "RBO Ireland"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "beneficial-ownership",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rbo-gov-ie.md"
   },
   {
@@ -269563,47 +269583,56 @@
   },
   {
     "id": "service-gov-uk",
-    "name": "service.gov.uk",
-    "description": "OSINT tool: service.gov.uk.",
+    "name": "service.gov.uk (Find a Will / probate search)",
+    "description": "Use when you have a `name` and want to confirm a death and find the will/grant of probate in England & Wales — returns death date, probate record and the orderable will (from 1858).",
     "url": "https://probatesearch.service.gov.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a death and retrieving the probate record/will (executors, estate, dates) for England & Wales.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Searching the probate index is free; ordering a copy of a will or grant costs a small fee (£1.50 per document). No account needed to search.",
+    "opsec": "passive",
+    "opsecNote": "Searching probate records is a passive, anonymous lookup against a government index — no notification to anyone. Ordering a document requires supplying a delivery email/details, which attaches your identity to that order.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official HM Courts & Tribunals Service probate search for England & Wales — an authoritative first-party government record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Find a Will",
+      "UK probate search",
+      "probatesearch.service.gov.uk"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "probate",
+      "wills",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/service-gov-uk.md"
   },
   {
@@ -269821,35 +269850,58 @@
   {
     "id": "sex-offender-korea",
     "name": "Sex Offender Korea",
-    "description": "OSINT tool: Sex Offender Korea.",
+    "description": "Use when you need to check South Korea's official sex-offender registry for a `name`/location — returns offender name, photo, address area and offence, but access is gated behind Korean real-name authentication.",
     "url": "https://www.sexoffender.go.kr/indexN.nsc",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking South Korea's official registry of registered sex offenders by name, location, or proximity to schools.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "image",
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free government service, but viewing requires Korean real-name authentication (resident registration number, Korean mobile, i-PIN, or Digital OnePass) — effectively inaccessible without Korean ID.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The lookup itself is passive against a government registry. However, access is logged against your authenticated Korean identity, and the law expressly forbids republishing or misusing the data (penalties under the Act on child/youth sexual-abuse crimes) — treat any information as legally restricted.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "성범죄자 알림e — the official public registry operated by South Korea's Ministry of Gender Equality and Family; an authoritative first-party source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "kr"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "aliases": [
+      "성범죄자 알림e",
+      "Sex Offender Notification e",
+      "sexoffender.go.kr"
+    ],
+    "tags": [
+      "sex-offender",
+      "registry",
+      "south-korea",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sex-offender-korea.md"
   },
   {
@@ -271540,44 +271592,52 @@
   {
     "id": "state-local-tribal-gov-page-search",
     "name": "State, Local, Tribal Gov Page Search",
-    "description": "OSINT tool: State, Local, Tribal Gov Page Search.",
+    "description": "Use when you need the official website for a specific US state, county, city or tribal government to reach its records — USA.gov's authoritative directory routes you to the right jurisdiction's portal.",
     "url": "https://www.usa.gov/state-tribal-governments",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the official government website for a US state/county/city/tribe as the gateway to that jurisdiction's own records searches.",
     "selectorsIn": [
-      "name"
+      "name",
+      "address"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official US government directory; no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a government directory is passive and anonymous. Records searches on the destination sites you reach are separate actions governed by each site's own rules.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "USA.gov is the US federal government's official web portal; its directory of state, local and tribal government sites is authoritative for routing, though it holds no personal records itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "USA.gov state and tribal governments",
+      "state local tribal government directory"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "directory",
+      "us",
+      "gateway"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/state-local-tribal-gov-page-search.md"
   },
   {
@@ -292546,14 +292606,14 @@
   },
   {
     "id": "google-com-82",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "name": "google.com (Dataset Search)",
+    "description": "Use when you have a `name` or topic and want to find published datasets that may list people — Google Dataset Search indexes datasets across the web, returning their sources and access links.",
     "url": "https://toolbox.google.com/datasetsearch",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering public datasets (voter files, salary tables, membership lists, research data) that may contain a subject.",
     "selectorsIn": [
       "name"
     ],
@@ -292561,29 +292621,37 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Google service; no account. Datasets it links to may have their own access terms or paywalls.",
+    "opsec": "passive",
+    "opsecNote": "Searching for datasets queries Google, not the subject — passive. Downloading a dataset from its host is a separate action against that host; use a clean/sock-puppet browser for sensitive queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's own dataset-discovery index (now at datasetsearch.research.google.com) — authoritative as a finder; the datasets themselves come from third parties and vary in quality/legality.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Google Dataset Search",
+      "datasetsearch"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "datasets",
+      "google"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-com-82.md"
   },
   {
