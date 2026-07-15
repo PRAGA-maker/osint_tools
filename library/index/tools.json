@@ -212788,36 +212788,59 @@
   },
   {
     "id": "people-search-tool",
-    "name": "People search Tool",
-    "description": "OSINT tool: People search Tool.",
+    "name": "People Search Tool (Aware Online)",
+    "description": "Use when you have a `name`, `username`, `email`, or `phone` and want ready-made search-engine queries across Google/Bing/Yandex/Baidu — returns social-profile, name, and address leads.",
     "url": "https://www.aware-online.com/en/osint-tools/people-search-tool/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "One-click query-builder that fires a person's identifier at multiple search engines with OSINT-optimised dorks.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser-based query generator from Aware Online Academy; no account, no payment. It does not host data itself — it redirects your query to third-party search engines.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tool builds and launches searches from YOUR browser against Google/Bing/Yandex/Baidu, so those engines log the queries under your IP; nothing is sent to or seen by the target. Run it behind a sock-puppet browser/VPN if you don't want the queries tied to you. Note Yandex/Baidu are Russian/Chinese-jurisdiction engines.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Published by Aware Online Academy, an established Dutch OSINT training provider. It is a query builder, not a data source, so there is no scraped-data quality risk — only the quality of the underlying engines.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "google-dorks"
+    ],
+    "aliases": [
+      "Aware Online people search",
+      "aware-online person search tool"
+    ],
+    "tags": [
+      "people-search",
+      "search-engine-dorks"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/people-search/people-search-tool.md"
   },
   {
@@ -252004,14 +252027,14 @@
   },
   {
     "id": "lawlink-co-uk",
-    "name": "lawlink.co.uk",
-    "description": "OSINT tool: lawlink.co.uk.",
+    "name": "Lawlink NI",
+    "description": "Use when you have a `name` or `address` in Northern Ireland and want registered/unregistered land, charges, bankruptcy and court-judgement records — returns address, employer-org, name, and document-id via a paid professional search.",
     "url": "http://www.lawlink.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Ordering authoritative Northern Ireland property, deeds, bankruptcy and court-judgement searches (Registry of Deeds / Land Registry).",
     "selectorsIn": [
       "name",
       "address",
@@ -252020,31 +252043,46 @@
     "selectorsOut": [
       "address",
       "employer-org",
-      "name"
+      "name",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Commercial law-search firm, not a free public database. You order searches (Registry of Deeds, Land Registry, Statutory Charges, bankruptcy, Queen's/King's Bench & Chancery judgements) and pay per search; results are returned next-day or same-day by email/post. No instant self-serve lookup.",
+    "opsec": "active",
+    "opsecNote": "Ordering a search discloses the subject's name/address to a commercial firm and creates a client paper trail tied to you. It is built for solicitors/lenders doing conveyancing due diligence — not anonymous research. Assume the order is logged against your account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established Northern Ireland law-search company (60+ years), handling roughly a third of NI property-transaction searches. Authoritative for NI land/charges/court records, but B2B — access requires being a client, not a public API.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "gov-uk-land-registry"
+    ],
+    "aliases": [
+      "lawlink.co.uk",
+      "Lawlink Northern Ireland"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "northern-ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/lawlink-co-uk.md"
   },
   {
@@ -337039,45 +337077,54 @@
   },
   {
     "id": "khendrikse-netlify-app",
-    "name": "khendrikse.netlify.app",
-    "description": "OSINT tool: khendrikse.netlify.app.",
+    "name": "Find Your Mastodon Account ID (guide)",
+    "description": "Use when you have a Mastodon handle (`username`@instance) and want its stable numeric account ID for API queries — a short guide returning the social-profile ID and account JSON.",
     "url": "https://khendrikse.netlify.app/blog/find-your-mastodon-account-id/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a Mastodon @user@instance handle to its permanent numeric account ID via the public lookup API.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free how-to blog post; the technique it teaches uses Mastodon's own public, unauthenticated lookup API — no account, key, or payment.",
+    "opsec": "passive",
+    "opsecNote": "The lookup endpoint is public and read-only; the target's instance may log the request under your IP but the account owner is not notified. Query from a VPN/sock-puppet if you don't want the instance operator tying the request to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A personal developer blog documenting a genuine, official Mastodon API endpoint. The method is authoritative (it's Mastodon's own API); the page is just the reference for it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "mastodon"
+    ],
+    "aliases": [
+      "Mastodon account ID lookup",
+      "khendrikse.netlify.app"
+    ],
     "tags": [
       "mastodon",
       "Mastodon Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/khendrikse-netlify-app.md"
   },
   {
@@ -338301,37 +338348,56 @@
   {
     "id": "mail-ru-social-network-search",
     "name": "Mail.Ru Social Network Search",
-    "description": "OSINT tool: Mail.Ru Social Network Search.",
+    "description": "Use when you have a `name` or `username` for a RU/CIS subject and want to surface Russian-language social and web results — returns social-profile and name leads.",
     "url": "https://go.mail.ru/search_social",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Russian-language name/username search that indexes VK, Odnoklassniki and other RU/CIS web content Google under-covers.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Russian search portal; no account needed. The old dedicated `search_social` endpoint now 301-redirects to Mail.Ru's general web search, so it is no longer a purpose-built social-only filter.",
+    "opsec": "passive",
+    "opsecNote": "Mail.Ru is a Russian (VK Group) service; every query is logged under Russian jurisdiction and may be tied to your IP. Use a sock-puppet browser + VPN, and never search from an attributable session. Nothing is sent to the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by VK Group (Mail.Ru). Authoritative reach into RU/CIS content, but a commercial engine with opaque ranking and heavy ad content — treat results as leads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ru",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "yandex-people-search"
+    ],
+    "aliases": [
+      "go.mail.ru social search",
+      "Mail.ru search"
+    ],
     "tags": [
       "real-time-search-social-media-search-and-general-social-media-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/mail-ru-social-network-search.md"
   },
   {
@@ -339437,14 +339503,14 @@
   },
   {
     "id": "monnett-social",
-    "name": "monnett.social",
-    "description": "OSINT tool: monnett.social.",
+    "name": "Monnett",
+    "description": "Use when you have a `username` or `name` and suspect the subject is on Monnett, a small privacy-focused European social app — returns a social-profile and name if they have an account.",
     "url": "https://monnett.social/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a subject has a profile on Monnett, a niche, ad-free, EU-made friends network (app-only).",
     "selectorsIn": [
       "username",
       "name"
@@ -339453,29 +339519,43 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free to use; the whole pitch is \"no AI, no ads, made in Europe.\" Operated by Monnet Social SA. It is app-only (iOS/Android), so meaningful search generally requires installing the app and creating an account.",
+    "opsec": "active",
+    "opsecNote": "There is no public web search — to look anyone up you must install the app and register, which ties an identity/device to the platform. Use a sock-puppet account on a clean device/number; the network is friend-oriented, so avoid sending connection requests to the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "A real, growing EU social app (self-reported 90k+ users) run by Monnet Social SA. Small and privacy-walled, so as an OSINT source it's low-yield and hard to query without an account.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "eu",
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "facebook"
+    ],
+    "aliases": [
+      "monnett.social",
+      "Monnet Social"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "europe"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/monnett-social.md"
   },
   {
@@ -339987,45 +340067,58 @@
   },
   {
     "id": "naijapals-com",
-    "name": "naijapals.com",
-    "description": "OSINT tool: naijapals.com.",
+    "name": "Naijapals",
+    "description": "Use when you have a `username` or `name` likely tied to a Nigerian subject and want their member profile on Nigeria's veteran social network — returns social-profile, name, and photos.",
     "url": "http://www.naijapals.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding Nigerian subjects' profiles, photos and social connections on a long-running Nigeria-focused social/entertainment network.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to join and browse; members watch Nollywood/Yoruba films, download music, and maintain profiles. Full member search/profile viewing generally needs a (free) account.",
+    "opsec": "active",
+    "opsecNote": "Viewing/searching members typically requires registering an account, and the platform may show activity to other members — use a sock-puppet account, not a real identity, and a clean browser/IP. Do not friend or message the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A genuine, long-established Nigerian social platform (self-described as one of Nigeria's largest). Not an OSINT tool per se — a live network whose public member data you mine. Content is user-generated, so verify identities.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ng"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "facebook"
+    ],
+    "aliases": [
+      "naijapals.com"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "nigeria"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/naijapals-com.md"
   },
   {
@@ -341611,42 +341704,62 @@
   },
   {
     "id": "orkut-brazil",
-    "name": "Orkut (Brazil)",
-    "description": "Accessing archived Orkut profiles via Wayback Machine",
+    "name": "Orkut (archived)",
+    "description": "Use when you have a `username`/`name` for a subject active before 2014 and want their old Orkut profile via web archives — returns social-profile, name, associates, and photos from historical snapshots.",
     "url": "https://orkut.google.com/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Accessing archived Orkut profiles via Wayback Machine",
-    "input": "Username or profile ID (via Wayback Machine)",
-    "output": "Archived profile pages, photos, and social network data from historical snapshots",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Recovering pre-2014 Orkut profiles, scraps and friend lists for Brazilian/Indian subjects via the Wayback Machine.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "associate",
+      "image"
+    ],
     "status": "down",
     "pricing": "free",
+    "costNote": "Orkut the live service shut down 30 Sep 2014; there is no cost because you query third-party web archives (Wayback Machine, Archive.today), not Orkut itself.",
     "opsec": "passive",
-    "opsecNote": "Live service is no longer available; historical data accessible only through web archives.",
+    "opsecNote": "You are reading archived snapshots on archive.org, not touching any live Orkut endpoint, so the subject cannot be alerted. Normal Wayback OpSec applies — your archive requests are logged by the Internet Archive under your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Content is whatever the Wayback Machine happened to capture before 2014 — coverage is patchy and snapshots may be partial. Authoritative as an archive, but incomplete by nature.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "br",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": true,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "wayback-machine",
+      "archive-today"
+    ],
+    "aliases": [
+      "Orkut",
+      "orkut.google.com",
+      "orkut.com"
+    ],
+    "tags": [
+      "other-social-networks",
+      "archived"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/orkut-brazil.md"
   },
   {
@@ -342482,45 +342595,57 @@
   },
   {
     "id": "outx-ai",
-    "name": "outx.ai",
-    "description": "OSINT tool: outx.ai.",
+    "name": "OutX LinkedIn Profile Viewer",
+    "description": "Use when you have a LinkedIn profile URL (`social-profile`) or `username` and want to read it anonymously without your account appearing in \"who viewed\" — returns name, employer-org, location, and photo.",
     "url": "https://www.outx.ai/all-tools/linkedin-profile-viewer",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing a target's LinkedIn profile without leaving a trace in their profile-view notifications.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "name",
+      "employer-org",
+      "address",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core anonymous view (name, headline, photo, location, About) is free with no login. A free Chrome extension (optional signup) unlocks extended fields — positions, education, skills, and sometimes email/phone.",
+    "opsec": "passive",
+    "opsecNote": "The whole point is that OutX fetches the profile server-side, so the owner never sees you in their viewer list. But you are handing your query to an unvetted third party who now knows who you are researching — assume they log it. Do not use it to view profiles you must not tip off if you distrust the operator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party commercial scraper of unclear ownership; operates in LinkedIn ToS-gray territory. Output freshness depends on their cache — corroborate anything critical against another source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "linkedin"
+    ],
+    "aliases": [
+      "outx.ai",
+      "OutX anonymous LinkedIn viewer"
+    ],
     "tags": [
       "linkedin",
       "LinkedIn & Similar Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/outx-ai.md"
   },
   {
@@ -344708,42 +344833,55 @@
   },
   {
     "id": "reddit-archive",
-    "name": "Reddit Archive",
-    "description": "Historical Reddit content lookup",
+    "name": "Reddit Archive (redditarchive.com)",
+    "description": "Use when you have a Reddit `username`, subreddit, or keyword and want historical/deleted posts — but the site is currently offline; returns social-profile activity from archived Reddit datasets when reachable.",
     "url": "https://www.redditarchive.com/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "reddit"
     ],
-    "bestFor": "Historical Reddit content lookup",
-    "input": "Subreddit names, usernames, and keyword queries",
-    "output": "Archived post and comment references from historical datasets",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
+    "bestFor": "Historical Reddit post/comment lookup by user, subreddit or keyword (when the service is up).",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "down",
     "pricing": "free",
+    "costNote": "Was a free web archive of Reddit content; the homepage currently returns HTTP 404 and the service appears offline. No payment involved either way.",
     "opsec": "passive",
-    "opsecNote": "Read-only archive queries; availability may vary with backend data sources.",
+    "opsecNote": "Read-only archive queries never touch the target's live Reddit account, so there is no notification risk. When the site is down, use the alternatives below rather than assuming Reddit history is unrecoverable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party Reddit archive of unclear maintenance; currently unreachable (404). Even historically, dataset coverage and freshness were unverified. Prefer better-maintained archives for anything you must rely on.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": true,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "wayback-machine",
+      "pullpush-io"
+    ],
+    "aliases": [
+      "redditarchive.com"
+    ],
+    "tags": [
+      "reddit",
+      "archived"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit/reddit-archive.md"
   },
   {
@@ -357454,49 +357592,6 @@
     "_file": "library/tools/social-networks/twitch-tools-rootonline-de.md"
   },
   {
-    "id": "twitch-username-and-user-chrome-google-com",
-    "name": "twitch username and user (chrome.google.com)",
-    "description": "OSINT tool: twitch username and user (chrome.google.com).",
-    "url": "https://chrome.google.com/webstore/detail/twitch-username-and-user/laonpoebfalkjijglbjbnkfndibbcoon/related",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitch",
-      "Twitch Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitch-username-and-user-chrome-google-com.md"
-  },
-  {
     "id": "twitch-username-and-user-id-addons-mozilla-org",
     "name": "Twitch Username & User ID (Firefox add-on)",
     "description": "Use when you have a Twitch `username` (or numeric user ID) and want to convert between them to get a stable identifier that survives renames — returns the persistent Twitch user ID / social-profile handle.",
@@ -358724,36 +358819,54 @@
   },
   {
     "id": "twitter-trending-hashtags-and-topics",
-    "name": "Twitter Trending Hashtags and Topics",
-    "description": "OSINT tool: Twitter Trending Hashtags and Topics.",
+    "name": "Trendsmap",
+    "description": "Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — returns social-profile and topic leads for a place and moment.",
     "url": "https://www.trendsmap.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mapping X/Twitter trending hashtags, topics and influential accounts by location — useful for event/incident-linked chatter.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free map view shows current trends by location; historical data, deeper analytics, alerts and exports sit behind paid plans. No login needed for the basic live map.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse aggregated public-trend data; you are not querying any individual, so nothing reaches a target. Standard browsing hygiene (VPN/sock-puppet) is enough if you don't want Trendsmap tying the session to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running commercial X/Twitter-analytics service. Reliable for aggregate trend signals; it does not resolve individuals, so its value is contextual (place/time) rather than person-identifying.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "twitter-advanced-search"
+    ],
+    "aliases": [
+      "Twitter Trending Hashtags and Topics",
+      "trendsmap.com"
+    ],
+    "tags": [
+      "twitter",
+      "trends",
+      "geolocation"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-trending-hashtags-and-topics.md"
   },
   {
