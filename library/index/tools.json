@@ -123481,30 +123481,27 @@
   {
     "id": "cybermap",
     "name": "Cybermap",
-    "description": "Real-time, interactive cyberthreat map",
+    "description": "Use when you want a real-time global picture of cyberattack activity by country — Kaspersky's live threat map returns `geolocation`-tagged attack telemetry, useful for situational awareness rather than finding a specific person.",
     "url": "http://cybermap.kaspersky.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
+    "bestFor": "Real-time situational awareness of global cyberthreat activity by geography (a context/briefing tool, not a people-finder).",
+    "selectorsIn": [],
     "selectorsOut": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public visualization; no account, no install.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are just loading a public dashboard; nothing about any subject is queried, so it is passive. Note the \"Am I Infected?\" widget scans your own device — skip it on a shared/managed research machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Kaspersky visualization of its own detection telemetry — authentic as a data source, but it depicts aggregate threat activity, not information about individuals.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -123513,14 +123510,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Kaspersky Cyberthreat Live Map",
+      "Cyberthreat Real-Time Map"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "geo-location-mapping-tools"
+      "geo-location-mapping-tools",
+      "threat-intel"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/geolocation/cybermap.md"
   },
@@ -157611,41 +157613,53 @@
   {
     "id": "seeallthethings",
     "name": "SeeAllTheThings",
-    "description": "OSINT tool: SeeAllTheThings.",
+    "description": "Use when you have a US `geolocation`/`address` and want public webcam feeds covering that area — this GitHub directory returns curated links to publicly available traffic/tourism cams organised by state.",
     "url": "https://github.com/baywolf88/seeallthethings",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "webcams"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding publicly available live webcam feeds (DOT traffic, tourism cams) for a US area, organised by state.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open GitHub repository; no account needed to browse the links.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the repo and viewing officially public webcam feeds (DOT/tourism) is passive. The author stresses the links are from publicly available sources — do not use it to reach non-public/unauthorised feeds, which crosses into illegal access.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small community-maintained link directory (a handful of commits). Links are curated public sources but may age; verify each feed is still live and genuinely public before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "see all the things",
+      "baywolf88/seeallthethings"
+    ],
+    "tags": [
+      "webcams",
+      "publiccams",
+      "curated-directory"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/webcams/seeallthethings.md"
   },
   {
@@ -319319,43 +319333,48 @@
   {
     "id": "yogsec",
     "name": "Yogsec",
-    "description": "OSINT tool: Yogsec.",
+    "description": "Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised tool lists (notably the 1.8k-star \"Hacking-Tools\" collection), not a lookup on any person.",
     "url": "https://github.com/yogsec/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "bestFor": "Discovering and shortlisting OSINT/pentest tools from a maintained, categorised GitHub collection.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open on GitHub; no account needed to browse (a GitHub login only helps for starring/forking).",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public GitHub profile is passive and touches no target. Vet any tool you pull from the list before running it against real subjects — a curated link is not an endorsement of a tool's safety or legality in your context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by Abhinav Singwal (yogsec), an active security researcher with a followed, well-starred set of repos. It is a community reference list; individual linked tools vary in quality and must be judged on their own.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "yogsec",
+      "Abhinav Singwal",
+      "Hacking-Tools"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "curated-directory",
+      "tool-list"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yogsec.md"
   },
   {
@@ -328467,44 +328486,55 @@
   {
     "id": "fakeinfo-net",
     "name": "fakeinfo.net",
-    "description": "OSINT tool: fakeinfo.net.",
+    "description": "Use when you need consistent fake persona details for a research sock puppet, or want to understand how forgeable \"evidence\" is — this fake-information generator returns fabricated `name`/`address`/`email`/`dob` and fake chat screenshots, never real data about anyone.",
     "url": "https://fakeinfo.net/fake-snapchat-chat-generator",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
+    "bestFor": "Generating fabricated identity details for a research persona, and demonstrating how easily chat/ID \"evidence\" can be faked.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "name",
+      "address",
+      "email",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free in-browser generators; no login required.",
+    "opsec": "passive",
+    "opsecNote": "Generating fake data touches no real person and is passive. But fabricated identities/screenshots must never be presented as genuine — that can be fraud, forgery, or defamation. Legitimate uses are (a) fleshing out a consistent sock-puppet persona and (b) counter-forensics — proving that a submitted screenshot could be fake.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "untrustworthy",
+    "trustNote": "A fabrication tool by design — everything it outputs is invented. Its only investigative value is defensive (persona-building and recognising forgeries); it is never a data source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "zeoob-com",
+      "create-spoof-fake-text-sms-messages"
+    ],
+    "aliases": [
+      "Fake Information Generator",
+      "fakeinfo"
+    ],
     "tags": [
       "snapchat",
-      "Snapchat"
+      "Snapchat",
+      "fake-content-generator",
+      "sockpuppet"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fakeinfo-net.md"
   },
   {
@@ -335045,44 +335075,54 @@
   {
     "id": "inflact-com-2",
     "name": "inflact.com",
-    "description": "OSINT tool: inflact.com.",
+    "description": "Use when you have an Instagram `username` and want to view or download a public profile's stories, posts and profile photo without logging in — returns the account's `social-profile` content and downloadable `image`/video.",
     "url": "https://inflact.com/instagram-viewer/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing and downloading a public Instagram profile's stories, posts, reels, and profile picture without an account.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The anonymous story/post viewer and basic downloads are free with no login; profile analytics, follower tracking and higher limits are paid (~$7.80/mo).",
+    "opsec": "passive",
+    "opsecNote": "Inflact proxies the request, so you view public content without an Instagram login and without appearing in the target's story-viewer list — this is one of its main OSINT advantages. Still, you are trusting a third party with your query; use a research browser/VPN and never enter your own IG credentials.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial third-party Instagram scraper/growth-tool vendor. It surfaces genuine public IG content, but it is not affiliated with Meta and coverage can lag or break when Instagram changes its API.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "threadsphotodownloader-com",
+      "imagewhisperer-org"
+    ],
+    "aliases": [
+      "Inflact Instagram Viewer",
+      "Inflact"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "anonymous-viewer"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inflact-com-2.md"
   },
   {
@@ -349319,41 +349359,52 @@
   {
     "id": "share-secret-feedback",
     "name": "Share Secret Feedback",
-    "description": "Looking up Secreto profiles by username to find anonymous feedback pages",
+    "description": "Use when you have a Secreto `username`/profile link (often shared from a subject's Instagram/Snapchat bio) and want to view their public anonymous-feedback page — returns the target's Secreto `social-profile` page.",
     "url": "https://secreto.site/en/%3Cuser_id%3E",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Looking up Secreto profiles by username to find anonymous feedback pages",
-    "input": "Secreto username or user ID",
-    "output": "Public profile page and shareable feedback link for the target user",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Viewing a subject's public Secreto anonymous-feedback profile page, discovered from a link they shared on other social platforms.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; viewing a public Secreto page needs no account. Sending or reading received messages requires the page owner's own login, which you will not have.",
     "opsec": "passive",
-    "opsecNote": "Viewing a public Secreto profile page is a standard web request; does not notify the profile owner.",
+    "opsecNote": "Loading a public Secreto profile page is a standard, unauthenticated web request that does not notify the owner. Passive. Do NOT submit an anonymous message to their page as an investigator — that is active contact with the subject and can reveal your interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Secreto.site is a real, live anonymous-feedback platform. The value here is confirming a subject's presence and capturing their public page; the anonymous messages they receive are private and not visible to you.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Secreto",
+      "secreto.site"
+    ],
+    "tags": [
+      "secreto",
+      "anonymous-feedback",
+      "other-social-networks"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/share-secret-feedback.md"
   },
   {
@@ -352942,44 +352993,54 @@
   {
     "id": "streamweasels-com",
     "name": "streamweasels.com",
-    "description": "OSINT tool: streamweasels.com.",
+    "description": "Use when you have a Twitch `username` and want its permanent numeric Twitch user/channel ID — returns the stable `device-id`-style ID that survives display-name changes, for reliable API queries and cross-referencing.",
     "url": "https://www.streamweasels.com/tools/convert-twitch-username-%20to-user-id/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Converting a Twitch username to its permanent numeric channel/user ID (which does not change when the streamer renames).",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "device-id",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool, no login; it calls the Twitch API server-side to do the lookup.",
+    "opsec": "passive",
+    "opsecNote": "The conversion is a public Twitch API read done by StreamWeasels' server; the Twitch user is not notified and nothing is posted. Passive. Your query goes to a third-party site, so use a research browser if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "StreamWeasels is an established vendor of Twitch/YouTube embed tools; this converter is a widely-referenced free utility. The ID it returns comes straight from Twitch's API, so it is verifiable and reliable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "matthewcassinelli-com",
+      "trevorfox-com-2"
+    ],
+    "aliases": [
+      "StreamWeasels Twitch Channel ID Converter",
+      "Twitch username to user ID"
+    ],
     "tags": [
       "twitch",
-      "Twitch Related Sites"
+      "Twitch Related Sites",
+      "id-lookup"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/streamweasels-com.md"
   },
   {
@@ -354277,44 +354338,53 @@
   {
     "id": "threadsphotodownloader-com",
     "name": "threadsphotodownloader.com",
-    "description": "OSINT tool: threadsphotodownloader.com.",
+    "description": "Use when you have a Meta Threads post URL and want to save its media at full quality — returns the downloadable `image`/video from that `social-profile` post.",
     "url": "https://threadsphotodownloader.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading the photos/videos from a specific Meta Threads post by its URL, for evidence preservation and reverse-image search.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free, no login, no install; works in any browser on desktop or mobile.",
+    "opsec": "passive",
+    "opsecNote": "You supply a post URL you already have; the tool fetches public media server-side. The Threads user is not notified. Passive — though the request passes through a third-party site, so use a research browser for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A single-purpose third-party downloader, not affiliated with Meta. It retrieves genuine public Threads media; reliability depends on Threads' markup staying stable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "inflact-com-2",
+      "threads-dashboard"
+    ],
+    "aliases": [
+      "Threads Photo Downloader"
+    ],
     "tags": [
       "threads",
-      "Threads Related Sites"
+      "Threads Related Sites",
+      "media-downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/threadsphotodownloader-com.md"
   },
   {
