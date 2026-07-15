@@ -28,7 +28,7 @@ trustNote: Generic domain harvested under "Hacked / Breached Account Sites"; I c
 missingPersonsRelevance: medium
 coverage:
 - global
-auth: unknown
+auth: none
 api: false
 localInstall: false
 registration: false

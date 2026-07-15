@@ -11,7 +11,7 @@ selectorsIn:
 - email
 selectorsOut:
 - ip-address
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free archived web page (Wayback Machine snapshot).

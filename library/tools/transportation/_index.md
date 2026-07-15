@@ -13,7 +13,235 @@ kind: group-index
 - **`vehicle-records/`** — 8 skill(s) below.
 
 ## Skills here
+- **`ads-b-exchange-radar-view`** (low) — OSINT tool: ADS-B Exchange Radar View.
+- **`ads-b-historical-flight-viewer`** (low) — OSINT tool: ADS-B Historical Flight Viewer.
+- **`aircraft-registry`** (low) — OSINT tool: Aircraft Registry.
+- **`airfleets`** (low) — Database for aircraft details.
+- **`airframes`** (low) — A database of aircraft details
+- **`airlinecodes`** (low) — OSINT tool: Airlinecodes.
+- **`airnav-radarbox-2`** (low) — OSINT tool: AirNav RadarBox.
+- **`airnav-radarbox`** (low) — Live flight tracker.
+- **`ais-boatnerd-com`** (low) — OSINT tool: Ais.boatnerd.com.
+- **`ais-ships-map`** (low) — OSINT tool: AIS Ships Map.
+- **`alamo-rental-receipts`** (medium) — OSINT tool: Alamo Rental Receipts.
+- **`all-vehicle-data`** (medium) — OSINT tool: All Vehicle Data.
+- **`american-association-of-motor-vehicle-administrators`** (medium) — Website for the American Association of Motor Vehicle Administrators
+- **`amtrak-status-maps-archive-database`** (low) — find out the train schedule for a station on a particular day that passed many years ago (since 2008)
+- **`ancapa-sciences-intelligence-analysis`** (medium) — Company specializing in analysis, education, and training for both the government and private industries
+- **`askmid`** (medium) — OSINT tool: askMID.
+- **`australia-department-of-immigration-and-citizenship`** (medium) — Australian Governments Department of Immigration and Citizenship
+- **`australian-maritime-safety-authority-amsa`** (medium) — Maritime-related website that offers a search of an Australian database of naval vessel types
+- **`auto-bid-master-auction`** (medium) — OSINT tool: auto bid master (auction).
+- **`autocheck`** (medium) — OSINT tool: AutoCheck.
+- **`autogespot`** (medium) — OSINT tool: Autogespot.
+- **`autowini-vin-search-international`** (medium) — OSINT tool: Autowini (Vin Search International).
+- **`aviation-safety-network`** (low) — Aircraft incident database; can be searched by country, registration, year, etc.
+- **`bikemap`** (low) — biking route world map
+- **`boatnerd-great-lakes-shipping`** (medium) — Maritime-related website focusing on Great Lakes and seaway shipping, including vessel information, photos, facts, and figures
+- **`canadian-black-book-values`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information
+- **`canadian-black-book`** (medium) — Canada's used car value and pricing search
+- **`canadian-civil-aircraft-register-search-canada`** (medium) — Transport Canada's registered civil aircraft registration search
+- **`canadian-vessel-registration-query-system`** (medium) — Maritime-related website that offers a search of a Canadian database of naval vessel types
+- **`car-check`** (medium) — OSINT tool: CAR CHECK.
+- **`car-vehicle-model-recognition-online`** (medium) — OSINT tool: Car/Vehicle Model Recognition Online.
+- **`caranalytics-co-uk`** (medium) — OSINT tool: Caranalytics.co.uk.
+- **`cars-com-black-book-value`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes videos and reviews
+- **`cars-for-sale-in-the-uk-newsnow-classifieds`** (medium) — OSINT tool: Cars for sale in the UK - NewsNow Classifieds.
+- **`casa-aircraft-search-australia`** (medium) — Aviation-related website that offers a search of the Australian database of registered aviation owners
+- **`certified-aircraft-database`** (medium) — Aviation-related website database focusing on international aircraft registration prefixes, manufactuerers, disgnators and markings
+- **`check-any-vin-free`** (medium) — OSINT tool: Check Any VIN Free.
+- **`check-any-vin`** (medium) — OSINT tool: Check Any VIN.
+- **`check-if-a-vehicle-is-taxed-and-has-an-mot`** (medium) — OSINT tool: Check if a vehicle is taxed and has an MOT.
+- **`check-that-vin-2`** (medium) — OSINT tool: Check that VIN!.
+- **`check-that-vin-search`** (medium) — OSINT tool: Check That (Vin Search).
+- **`check-that-vin`** (medium) — OSINT tool: Check That Vin.
+- **`chronotrains-2`** (low) — A terrific weekend travel planning service for Europeans. It shows how far you can go from a certain station in 5 hours by train.
+- **`chronotrains`** (low) — Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel t
+- **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK Civil Aviation Authority database, covering aircrat registration information
+- **`cma-voyage-finder`** (low) — search for voyage details by voyage number or ship name
+- **`collection-of-public-transport-maps`** (low) — 20 online public transport maps (most real-time) for different cities and countries around the world
+- **`connecticut-license-verification`** (medium) — Connecticut Department of Motor Vehicles license verification utility
+- **`container-tracking-2`** (low) — OSINT tool: Container tracking.
+- **`container-tracking-cargo`** (low) — OSINT tool: container-tracking (Cargo).
+- **`container-tracking`** (low) — OSINT tool: Container Tracking.
+- **`copart-auction`** (medium) — OSINT tool: copart (auction).
+- **`cosint-osint-on-cars`** (medium) — OSINT tool: COSINT – OSINT on Cars.
+- **`crewlist-org-uk`** (low) — OSINT tool: Crewlist.org.uk.
+- **`cruise-mapper`** (low) — OSINT tool: Cruise Mapper.
+- **`cyclevin`** (low) — Motorcycle-specific VIN history.
+- **`deciphering-number-plates`** (medium) — OSINT tool: Deciphering Number Plates.
+- **`direkht-ban-guru`** (low) — Enter the name of the station to see what cities you can get to by train without changing (+ travel time for each city).
+- **`enterprise-rental-receipts`** (medium) — OSINT tool: enterprise Rental Receipts.
+- **`epicvin`** (medium) — OSINT tool: EpicVIN.
+- **`equasis-2`** (low) — OSINT tool: Equasis.
+- **`equasis`** (low) — Equasis provides vessel ownership and safety records, as well as shipping company fleet information.
+- **`eships-net`** (low) — OSINT tool: eships.net.
+- **`europe-station-maps-floor-plan`** (low) — OSINT tool: Europe station maps floor plan.
+- **`european-database-of-stolen-vehicles`** (medium) — OSINT tool: European Database of Stolen Vehicles.
+- **`europlates-eu`** (medium) — OSINT tool: Europlates.eu.
+- **`exotic-cars-the-largest-photo-collection`** (medium) — OSINT tool: Exotic Cars | The Largest Photo Collection.
+- **`faa-registry`** (low) — OSINT tool: FAA Registry.
+- **`faxvin`** (medium) — OSINT tool: FaxVIN.
+- **`federal-aviation-administration`** (low) — Nationwide Plane Registry. Search by N-Number (a.k.a. callsign). Comprehensive list of privately owned planes in the US.
+- **`fleetmon-vessel-search`** (medium) — Maritime-related website that provides live ship tracking worldwide
+- **`fleetmon`** (low) — OSINT tool: FleetMon.
+- **`flight-radar-24`** (low) — OSINT tool: Flight Radar 24.
+- **`flight-stats`** (medium) — Aviation-related website that offers a listing of over 13,000 worldwide airports and associated information
+- **`flight-status-info`** (low) — - get a list of airports by city name; - view the flight schedule of a particular airport; - view the flight schedule of a particular airlin
+- **`flight-tracker`** (low) — OSINT tool: Flight Tracker.
+- **`flightairmap`** (medium) — OSINT tool: FlightAirMap.
+- **`flightaware`** (medium) — Flight tracking and history.
+- **`flightconnections`** (low) — OSINT tool: FlightConnections.
+- **`flightwise`** (low) — OSINT tool: Flightwise.
+- **`free-aviation-records-black-book-online`** (low) — OSINT tool: Free Aviation Records | Black Book Online.
+- **`free-car-license-plate-lookup`** (medium) — OSINT tool: Free Car License Plate Lookup.
+- **`free-license-plate-search-check-any-license-plate-free`** (medium) — OSINT tool: FREE License Plate Search | Check Any License Plate FREE.
+- **`free-vin-decoder-vindecoderz`** (medium) — OSINT tool: Free VIN decoder - Vindecoderz.
+- **`freecarcheck-co-uk`** (medium) — OSINT tool: Freecarcheck.co.uk.
+- **`freedar`** (low) — OSINT tool: Freedar.
+- **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK database of registered aviation owners
+- **`gpsjam`** (low) — GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing area
+- **`hertz-rent-receipt`** (medium) — OSINT tool: Hertz Rent Receipt.
+- **`how-s-my-driving-ny`** (medium) — OSINT tool: How's My Driving NY.
+- **`icao-civil-and-military-airspace-suashp`** (medium) — OSINT tool: ICAO Civil and Military airspace SUASHP.
+- **`icarus-flights`** (medium) — OSINT tool: Icarus.flights.
+- **`illegal-unreported-unregular-fishing-vessels-list`** (low) — A combined list of known illegal, unreported, unregular fishing vessels
+- **`illicit-services-vehicle-search`** (medium) — Free search engine over leaked datasets; can pivot plates, names and phones to personal records.
+- **`imo-registry`** (low) — Ship/shipping-related information from the IMO
+- **`inmarsat-ships-directory`** (medium) — Maritime-related website that provides a searchable directory of contact numbers for vessels fitted with Inmarsat equipment
+- **`international-aircraft-search-by-manufacturer`** (medium) — Aviation-related website that offers a search of a US database of registered aviation owners
+- **`international-registry-of-mobile-assets`** (medium) — Aviation-related website that offers a search for international aircraft and organizations owning aircraft
+- **`investigative-dashboard`** (medium) — Website providing resources and links for journalists to track finances and company ownership information across international borders
+- **`itamilradar`** (low) — track military flights over Italy and over the Mediterranean Sea.
+- **`itu-ship-station-database`** (medium) — Maritime-related website focusing on ITU ship station callsigns, ship names, aircraft stations, and registration information
+- **`jane-s-defence-land-platforms-yearbook`** (medium) — Land-related website that offers a search of the global database of land vehicle types
+- **`janes-all-the-world-s-aircraft-yearbook`** (medium) — Aviation-related website that offers a search of the global database of aircraft types
+- **`janes-fighting-ships-yearbook`** (medium) — Maritime-related website that offers a search of the global database of naval vessel types
+- **`kayak-travel-search-engine`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment,
+- **`kelley-blue-book-for-cars-united-states`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes reviews, awards, and top 10s
+- **`lefranz-geneva-dictators`** (low) — OSINT tool: lefranz/geneva-dictators.
+- **`legrooms-for-google-flights`** (low) — An extension that displays the size of the legroom between the seats next to the flight information.
+- **`license-plate-lookup-2`** (medium) — OSINT tool: License Plate Lookup.
+- **`license-plate-lookup`** (medium) — OSINT tool: License Plate Lookup.
+- **`license-plate-mania`** (medium) — OSINT tool: License Plate Mania.
+- **`license-plate-maps`** (low) — Collection of tools and maps for discerning license plates by country
+- **`license-plates-in-canada`** (medium) — OSINT tool: 🚗License Plates in Canada 🇨🇦.
+- **`live-air-traffic-control`** (medium) — OSINT tool: Live Air Traffic Control.
+- **`live-atc`** (low) — Audio from air traffic control towers in the United States. Aircraft have to identify themselves to ATC towers, so in cases where aircraft a
+- **`live-cruise-ship-tracker`** (low) — OSINT tool: Live Cruise Ship Tracker.
+- **`live-piracy-map`** (low) — OSINT tool: Live Piracy Map.
+- **`live-train-tracker`** (low) — A world map showing real-time train traffic (with route point's exact geographic coordinates) and schedules on the roads of Europe, North an
+- **`live-vessel-tracking-and-monitoring-with-fleetmon-explorer`** (low) — OSINT tool: Live vessel tracking and monitoring with FleetMon Explorer.
+- **`llyoyd-list-intelligence-maritime-search`** (medium) — Maritime-related website focusing on Lloyds of London and their maritime vessel registration search, including associated vessel information
+- **`lucas-county-ohio-areis-online`** (medium) — Lucas County Auditor's Real Estate Information System - includes parcel, ownership, valuation, and tax information
+- **`maersk-tracking`** (low) — OSINT tool: Maersk Tracking.
+- **`marine-traffic-geolocation-search`** (medium) — Maritime-related website focusing on worldwide vessels and real-time shipping geolocation tracking on a live map database
+- **`marinetraffic`** (low) — Live AIS vessel tracking and ship details.
+- **`maritime-awareness-project`** (low) — OSINT tool: Maritime Awareness Project.
+- **`maritime-connector-com-ships`** (low) — OSINT tool: Maritime-connector.com/ships.
+- **`maritime-database`** (low) — OSINT tool: Maritime Database.
+- **`maritimeconnector`** (low) — OSINT tool: MaritimeConnector.
+- **`military-ship-tracker`** (low) — OSINT tool: Military Ship Tracker.
+- **`mobissimo-travel-search-engine`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment,
+- **`mot-history`** (medium) — OSINT tool: MOT History.
+- **`my-ship-tracking`** (low) — OSINT tool: My Ship Tracking.
+- **`nada-car-price-guides-north-america`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes a vehicle search engine
+- **`nada-guides`** (medium) — Vehicle-related website that identifies vehicles by type and model based on entered information
+- **`national-insurance-crime-bureau-vin-search`** (medium) — OSINT tool: National Insurance Crime Bureau(Vin Search).
+- **`nato-int`** (low) — Explore this interactive map to learn more about NATO, how the Alliance works and how it responds to today's security challenges.
+- **`noaa-fisheries-vessel-search`** (medium) — Maritime-related website that offers a search of a US database of naval vessel types
+- **`nomerogram-ru`** (medium) — OSINT tool: Nomerogram.ru.
+- **`number-plate-check`** (medium) — OSINT tool: Number Plate Check.
+- **`open-data-soft-navitia`** (medium) — OSINT tool: Open Data Soft - Navitia.
+- **`open-source-munitions-portal-2`** (low) — Archive of verified images from conflict zones. Search by munition category, condition, characteristics, shapem, mechanical features, wall (
+- **`openrailwaymap-3`** (low) — a detailed online map of the world's railway infrastructure
+- **`opensky-network`** (low) — Community, open source flight tracking network.
+- **`openstreetmap-public-transport`** (low) — Select an area on the map (if the square around it is green, then data for that location is available) and download data (buttons on the rig
+- **`orto-website`** (medium) — OSINT tool: Orto.website.
+- **`oscar-job-function-codes-united-kingdom`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`osint-on-the-ocean`** (low) — OSINT tool: OSINT on the Ocean.
+- **`panjiva-cargo`** (low) — OSINT tool: Panjiva (Cargo).
+- **`partial-number-plate-search`** (medium) — OSINT tool: Partial Number Plate Search.
+- **`passenger-airlines-wiki`** (low) — OSINT tool: Passenger Airlines Wiki.
+- **`plane-finder`** (low) — OSINT tool: Plane Finder.
+- **`planefinder-army-live-flight-tracker`** (low) — OSINT tool: Planefinder Army Live Flight Tracker.
+- **`planefinder`** (low) — Live flight tracker.
+- **`planespotters-net`** (medium) — OSINT tool: Planespotters.net.
+- **`plate-recognizer`** (medium) — OSINT tool: Plate Recognizer.
+- **`plates-mania`** (medium) — OSINT tool: Plates Mania.
+- **`poctra-com`** (medium) — OSINT tool: Poctra.com.
+- **`ports-com`** (low) — online calculation of travel time between two ports (with optimal path). It's possible to select the speed from 5 to 40 knots. Shows a list 
+- **`ports`** (low) — OSINT tool: Ports.
+- **`radarbox`** (medium) — OSINT tool: RadarBox.
+- **`radarbox24-pro`** (low) — OSINT tool: radarbox24-pro.
+- **`railcabrides`** (low) — Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location.
+- **`rasp-yandex-ru-map-trains`** (low) — Live map of trains for Russia, Belarus, Ukraine, Kazahstan and Abhazia
+- **`recordsfinder`** (medium) — Records aggregator covering people, phones and vehicles.
+- **`redbook-car-pricing-authority-australia`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes information on bikes and boats
+- **`reverse-genie-license-plate-search`** (medium) — OSINT tool: Reverse Genie (License Plate Search).
+- **`ride-with-gps`** (low) — OSINT tool: Ride With GPS.
+- **`runmap`** (low) — running routes world map
+- **`russia-ukraine-monitor-map`** (low) — represent open source material such as videos, photos and imagery that have been cross-referenced with satellite imagery to determine precis
+- **`rzjets-net`** (low) — user updated online database (census) of civilian jet and turbojet aircraft
 - **`satellite-tracking`** (medium) — Space object and satellite movement monitoring
+- **`searates-container-tracking`** (low) — tracking a shipping container by number
+- **`searchquarry`** (medium) — Plate/VIN and public-records lookup service.
+- **`shadowbroker`** (low) — Platform tracking global intelligence signals including corporate jets, satellites, and seismic events with AI analysis.
+- **`ship-spotting`** (low) — OSINT tool: Ship Spotting.
+- **`shipais`** (low) — OSINT tool: ShipAIS.
+- **`shipfinder`** (low) — ShipFinder is an application designed to track vessels in near real-time across the globe, available on iPhone and Android platforms (but no
+- **`shipmentlink`** (low) — OSINT tool: ShipmentLink.
+- **`shipping-database`** (low) — OSINT tool: Shipping Database.
+- **`shippingexplorer`** (low) — OSINT tool: ShippingExplorer.
+- **`shipspotting-com`** (low) — Community website for uploading pictures & details of vessels spotted around the world.
+- **`shipspotting-live-ais`** (medium) — Maritime-related website that provides live AIS and satellite ship tracking worldwide
+- **`skyscanner-travel-search-engine`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment,
+- **`skyscanner`** (medium) — OSINT tool: Skyscanner.
+- **`skyvector`** (low) — tool is designed for planning private flights. And you can find an incredible amount of data about the current situation in the sky on it
+- **`stolencars24`** (medium) — OSINT tool: Stolencars24.
+- **`submarine-tracker`** (low) — OSINT tool: SUBMARINE TRACKER.
+- **`submarinecablemap-com`** (low) — submarine communications cables map
+- **`surfy`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, travel discounts, travel news, 
+- **`thatsthem-vin-search`** (medium) — OSINT tool: thatsthem (Vin Search).
+- **`the-burnsy-vehicle-osint`** (medium) — OSINT tool: The Burnsy Vehicle OSINT.
+- **`tokyo-mou`** (low) — Ship inspection/history database (PSC Database)
+- **`tools-3`** (medium) — OSINT tool: Tools.
 - **`track-trace`** (medium) — Package tracking and supply-chain movement checks
+- **`trade-car-checks-and-vehicle-valuation-services`** (medium) — OSINT tool: Trade Car Checks & Vehicle Valuation Services.
+- **`transit-visualisation`** (low) — ch.sbb.netzkarte,ch.sbb.netzkarte.dark\&lang=en\&layers=strassennamen,haltekanten,haltestellen,pois,p%C3%A4rke,geops.travic.live\&x=810000\&
+- **`transtats-bts-gov`** (low) — flight schedules and data on the actual departure/arrival times of flights in the U.S. for more than 30 years (!))
+- **`uk-govt-vessel-lists`** (medium) — Maritime-related website that offers a search of a UK database of naval vessel types
+- **`ukraine-liveuamap-com`** (low) — online tracking of war-related events in Ukraine.
+- **`understanding-war-map-room`** (low) — collection of maps illustrating military conflicts in different countries.
+- **`us-military-bases-interactive-worldwide-map`** (low) — Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more inf
+- **`uscg-maritime-search-investigation-reports-united-states`** (medium) — Maritime-related website that offers a search of a US database of naval vessel types
+- **`uscg-psix-vessel-search-united-states`** (medium) — Maritime-related website that offers a search of a US database of naval vessel types
+- **`vehicle-documents`** (medium) — OSINT tool: Vehicle Documents.
+- **`vehicle-enquiry`** (medium) — OSINT tool: Vehicle Enquiry.
+- **`vehicle-history-reports-get-a-carfax-report`** (medium) — OSINT tool: Vehicle History Reports – Get a CARFAX Report.
+- **`venicle-number-search-toolbox`** (low) — search information about car by venicle numbers (14 different countries from one page) - #GreatBritain, #Norway, #Denmark, #Russian and othe
+- **`vessel-tracker`** (low) — OSINT tool: Vessel Tracker.
+- **`vin-check-and-get-vehicle-history-report`** (medium) — OSINT tool: VIN Check and get Vehicle History Report.
+- **`vin-check-reports`** (medium) — OSINT tool: VIN Check Reports.
+- **`vin-decoder-2`** (medium) — OSINT tool: VIN Decoder.
+- **`vin-decoder-3`** (medium) — OSINT tool: VIN decoder.
+- **`vin-decoder-and-lookup`** (medium) — OSINT tool: VIN Decoder & Lookup.
+- **`vin-decoder`** (medium) — OSINT tool: VIN decoder.
+- **`vin-info`** (medium) — OSINT tool: Vin-Info.
+- **`vin-lookup`** (medium) — OSINT tool: VIN Lookup.
+- **`vin-place-vehicle-registration-reports`** (medium) — OSINT tool: Vin Place (Vehicle Registration Reports).
+- **`vincheck-info`** (medium) — OSINT tool: VINCheck.info.
+- **`vincheck-nicb`** (medium) — Free VIN lookup for theft and salvage records.
+- **`vincheck`** (medium) — OSINT tool: VINCheck®.
+- **`wandermap`** (low) — hiking routes world map
+- **`websdr`** (low) — online access to a short-wave receiver located at the University of Twente. It can be used to listen to military conversations (voice or Mor
+- **`wikicars`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on v
+- **`wikiroutes`** (low) — Public transport database.
+- **`world-aviation-accident-database-1962-2007`** (low) — OSINT tool: World Aviation Accident Database 1962-2007.
+- **`world-aviation-accident-database-2008-2021`** (low) — OSINT tool: World Aviation Accident Database 2008-2021.
+- **`world-license-plates`** (medium) — OSINT tool: World License Plates.
+- **`world-shipping-register`** (medium) — Maritime-related website focusing on a searchable database of worldwide vessel registration information
+- **`xblog-bellingcat-a-beginner-s-guide-to-flight-tracking-bellingcat`** (low) — OSINT tool: xBlog: bellingcat - A Beginner's Guide To Flight Tracking - bellingcat.
+- **`zugfinder`** (low) — Detailed information on trains, stations and real-time train traffic for European countries
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

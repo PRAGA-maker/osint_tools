@@ -10,7 +10,7 @@ bestFor: Grading whether a single email address is real and deliverable, with ex
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 - social-profile
 status: live
 pricing: freemium

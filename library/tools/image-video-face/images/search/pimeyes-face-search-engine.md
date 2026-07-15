@@ -19,7 +19,7 @@ status: live
 pricing: freemium
 costNote: Free tier shows blurred thumbnails proving matches exist but WITHOUT source links; you must pay (from ~$29.99/mo) to see the URLs that make results actionable. Effectively paywalled for investigative use.
 opsec: active
-opsecNote: You upload a biometric face image to a third-party facial-recognition provider that indexes 3.5B+ images and logs searches. Do not upload images of yourself or non-targets; use a clean/sock-puppet account, and be aware some jurisdictions restrict biometric processing.
+opsecNote: You upload a biometric face image to a third-party facial-recognition provider that indexes 10B+ images and logs searches. Do not upload images of yourself or non-targets; use a clean/sock-puppet account, and be aware some jurisdictions restrict biometric processing.
 humanInLoop: true
 humanInLoopReason:
 - account-login
@@ -52,7 +52,7 @@ enrichment: full
 > The high-coverage reverse face search: upload a face and find where else on the web that same face appears — with the source pages (behind a paywall) to pivot from.
 
 ## When to use
-You have a `face`/`image` of a subject and want to find *other* photos of the same person elsewhere on the web — different accounts, news pages, forums, dating profiles — to expand identity, confirm a match, or find a name. PimEyes indexes 3.5B+ images and matches on facial geometry, so it often surfaces appearances that reverse-*image* search (which needs the same photo) misses. It is one of the strongest tools for turning a single face into a web-wide presence map.
+You have a `face`/`image` of a subject and want to find *other* photos of the same person elsewhere on the web — different accounts, news pages, forums, dating profiles — to expand identity, confirm a match, or find a name. PimEyes indexes 10B+ images and matches on facial geometry, so it often surfaces appearances that reverse-*image* search (which needs the same photo) misses. It is one of the strongest tools for turning a single face into a web-wide presence map.
 
 ## How to use it (`bestInteractionPattern`: web-manual)
 1. Register an account and open https://pimeyes.com/en (use a research identity; you'll need to confirm you're searching lawfully).

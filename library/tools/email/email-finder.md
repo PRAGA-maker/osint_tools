@@ -12,7 +12,7 @@ selectorsIn:
 selectorsOut:
 - social-profile
 - username
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free reverse-email lookups on OSINT.SH; the suite also offers paid/API tiers and rate limits free use.

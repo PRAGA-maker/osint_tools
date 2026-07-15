@@ -10,7 +10,7 @@ bestFor: Free single-address email validity check (syntax, MX, SMTP/deliverabili
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 - domain
 status: unknown
 pricing: free

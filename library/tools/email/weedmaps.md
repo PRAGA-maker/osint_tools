@@ -19,7 +19,7 @@ humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: unverified
 trustNote: Hosted on an individual's Keybase public folder (bloopbase.keybase.pub/POPPY/WEEDMAPS) under the name "Weedmaps". Not a recognized OSINT service; function unconfirmed and content may be stale or gone. Verify before relying on it.
-missingPersonsRelevance: unknown
+missingPersonsRelevance: low
 coverage: []
 auth: none
 api: false

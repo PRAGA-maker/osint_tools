@@ -18,8 +18,279 @@ kind: group-index
 - **`search/`** — 6 skill(s) below.
 
 ## Skills here
+- **`1-free-online-ocr`** (low) — OSINT tool: 1- Free Online OCR.
+- **`2023-world-report`** (low) — Human Rights Watch - 2023 World Report
+- **`99designs`** (low) — Website related to outsourcing of jobs related to design logos
+- **`act-on`** (low) — Website that offers social media advertising, marketing, and SEO services, plus articles and/or a blog
+- **`acuris-risk-intelligence`** (low) — Provides data intelligence for anti-money laundering, anti-corruption and cybersecurity professionals
+- **`adobe-acrobat-program`** (low) — Program that allows you to read and create PDF format documents
+- **`adobe-acrobat-reader-program`** (low) — Program that allows you to read but not PDF format documents
+- **`adobe-photoshop-program`** (low) — Program that allows you to view, create and modify images in multiple document formats
+- **`advertise-com`** (low) — Website that offers social media advertising, marketing, and search engine optimization services
+- **`agent-ransack`** (low) — Free, fast hard drive file searching utility for windows
+- **`amazon-mechanical-turk`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
+- **`amazon-pay`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
+- **`analyze-file-format-online`** (low) — OSINT tool: Analyze file format online.
+- **`angellist`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`apple-icloud-usa`** (low) — Cloud storage and cloud computing service by Apple
+- **`apple-magazine`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`association-of-certified-fraud-examiners`** (low) — The Association of Certified Fraud Examiners Home Page offers information on the function and services of the ACFE, as well as certification
+- **`audacity`** (low) — Website that offers services related to downloading and saving audio files
+- **`aware-online`** (low) — OSINT website offering various search tools including reddit search, vimeo search, facebook search, and more.
+- **`awesome-indexed`** (low) — OSINT tool: Awesome-indexed.
+- **`awesome-open-source`** (low) — OSINT tool: Awesome Open Source.
+- **`awesomelists-top`** (low) — OSINT tool: Awesomelists.top.
+- **`bazaarvoice-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`binvis`** (low) — lets you visually dissect and analyze binary files. It's the interactive grandchild of a static visualisation online tool
+- **`bitbucket-repo-search`** (low) — OSINT tool: Bitbucket Repo Search.
+- **`bitly-url-shortener-and-link-manager`** (low) — Tool for shortening URL address hyperlinks
+- **`bookmarkee-bookmark-organizer`** (low) — Online bookmark manager to organize links
+- **`bookmax-bookmark-organizer`** (low) — Website that provides online bookmark manager services
+- **`bubbl-us-online-flow-chart-tool`** (low) — Tool for creating online flow charts using linked bubbles
+- **`bubbly`** (low) — A voice service that works across feature phones and smartphones; allows users to create their own voice blog in real-time and share their a
+- **`canadavisa-it-salary-ranges`** (low) — Online organization website providing information on computer and information technology occupations
+- **`catchvideo`** (low) — Website that offers services related to downloading and saving videos from a web page
+- **`checking-mi-account`** (medium) — Use when you have a Xiaomi/Mi device's IMEI or serial — check whether it is bound to a Mi (Xiaomi) account / Mi Cloud lock to learn if a dev
+- **`chief-information-officers-council-united-states`** (low) — Online government website providing information on computer and information technology occupations
+- **`choice-consumer-australia`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`cloudconvert`** (low) — Converts between some 100 different document and file formats and saves them in the cloud
+- **`cnet-technology-products-reviews`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`code-finder`** (low) — OSINT tool: Code Finder.
+- **`compressedcrack`** (low) — Simple tool for brute passwords for ZIP and RAR archives
+- **`computer-hope`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`computer-weekly`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`consumer-information`** (low) — The Federal Trade Commissions identity theft information, awareness and prevention webpage
+- **`consumeraffairs-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`consumerreports-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`consumersearch`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`contex-condoms-serial-number-lookup`** (low) — Use only to verify whether a Contex-brand condom serial/batch code is authentic — a product-authenticity checker, not a people-finder.
+- **`convert-net`** (low) — Tool that converts units and mesurements for distance, size, volume, mass, temperature, time, etc.
+- **`copernic-desktop-search-tool`** (low) — Award-winning desktop search tool for PC
+- **`copypastecharacter`** (low) — Website that offers multiple sets of characters and symbols for cutting and pasting into documents or slides
+- **`crowdriff`** (low) — Visual marketing software platform
+- **`crowdspring`** (low) — Project outsourcing website
+- **`cute-pdf-writer-program`** (low) — Program that allows you to create PDF format documents
+- **`cylect-io`** (low) — An AI tool that integrates multiple databases and simplifies search capability into an easily navigable interface
+- **`datasurgeon`** (medium) — Quickly extracts emails, IPs, hashes, credit cards and other selectors from text.
+- **`de-digger`** (low) — OSINT tool: de digger.
+- **`designcrowd`** (low) — Graphic design outsourcing website
+- **`dictation-online-dictation-tool`** (low) — Tool for Chrome browser that transcribes your speech to text in real time
+- **`diffnow-com`** (low) — Compares and finds differences in text, URL (html code downloaded by link), office documents (doc, docx, xls, xlsx, ppt, pptx), source code 
+- **`diigo`** (low) — Website related to social networking and bookmarking activities allowing users to tag and share bookmarked pages with other users in the com
+- **`docjax`** (medium) — OSINT tool: docjax.
+- **`documentcloud`** (low) — OSINT tool: DocumentCloud.
+- **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
+- **`doppelme`** (low) — Online avatar creator
+- **`dropbox-2`** (low) — Program that provides file sharing and transfer services
+- **`e-gg-timer-alarm-tool`** (low) — Tool for setting a count down timer that alerts you with beeps when the time runs out
+- **`earthcam-net`** (low) — Website providing webcam content, technology, and services
+- **`easybib`** (low) — Guide for citing Tweets into MLA and APA format
+- **`edocr`** (low) — Presentation management website that allows EDoc and EFile sharing
+- **`encrytped-zip-file-creator`** (low) — Create ZIP archive online
+- **`engadget`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of technology
+- **`engage121`** (low) — Website offering social media content and publishing services
+- **`etherpad-collaborative-editing`** (low) — Program that offers collaborative online editing services for editing text and documents in real time
+- **`eventbrite-canada`** (low) — Website related to event management and ticket sales
+- **`eventbrite-united-states`** (low) — Website related to event management and ticket sales
+- **`evite`** (low) — Website related to event invitation and party planning
+- **`evuln`** (low) — Program that provides multiple tools and programs to prevent website hacking and protective monitoring
+- **`exif-app`** (low) — Press "Diff check button", upload two graphical images and get a comparison table of their metadata. The differences are highlighted in yell
+- **`exif-data-viewer`** (high) — Use when you have an image file and want to read its embedded metadata — returns EXIF fields including camera, timestamps and GPS coordinate
+- **`exif-py`** (low) — get exif data of photos thrue command line
+- **`exif-remove-chrome-google-com`** (low) — OSINT tool: exif remove (chrome.google.com).
+- **`exif-viewer-addons-mozilla-org`** (low) — OSINT tool: exif viewer (addons.mozilla.org).
+- **`exif-viewer-classic-chrome-google-com`** (low) — OSINT tool: exif viewer classic (chrome.google.com).
+- **`exif-viewer-pro-chrome-google-com`** (low) — OSINT tool: exif viewer pro (chrome.google.com).
+- **`exifpurge`** (medium) — EXIF Purge is a small portable application to remove EXIF metadata from multiple images at once. With the click of a button you can remove t
+- **`exiftool-lucasgelfond-online`** (low) — OSINT tool: exiftool.lucasgelfond.online.
+- **`expatica`** (low) — Searchable guides to moving, working, and living abroad
+- **`eyedex`** (low) — OSINT tool: eyedex.
+- **`fbi-information-technology-united-states`** (low) — Online government website providing information on computer and information technology occupations
+- **`federal-it-dashboard-united-states`** (low) — Online government website providing information on computer and information technology occupations
+- **`ffmpeg`** (medium) — Multimedia framework for extracting, converting and processing video and audio.
+- **`fide`** (low) — World chess player ratings website
+- **`fifa`** (low) — Football team rankings website
+- **`filesec-io`** (low) — OSINT tool: Filesec.io.
+- **`find-pdf-doc`** (low) — OSINT tool: Find-pdf-doc.
+- **`fitbit`** (low) — Website related to social networking in the form of health, wellness, fitness, lifesteaming or digital diaries
+- **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
+- **`foca-2`** (medium) — OSINT tool: FOCA.
+- **`folkd`** (low) — Social bookmarking and social search site
+- **`follow-up-then-email-reminder-program`** (low) — Program that provides email-based scheduling and reminder services
+- **`forensic-analyzer`** (medium) — OSINT tool: Forensic Analyzer.
+- **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents
+- **`forensicosint-com-2`** (low) — OSINT tool: forensicosint.com.
+- **`foursquare-time-machine`** (low) — Foursquare history visualizer and discovery tool
+- **`free-full-pdf`** (low) — OSINT tool: Free Full PDF.
+- **`free-ocr`** (low) — OSINT tool: Free OCR.
+- **`freelancer`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
+- **`fundrazr`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`gdrive-copy`** (low) — The standard functionality of #GoogleDrive does not allow you to copy an entire folder with all subfolders and files. But it can be done usi
 - **`ghidra`** (low) — Reverse engineering and static malware analysis
+- **`git-hound`** (low) — OSINT tool: git-hound.
+- **`gitdorker`** (low) — OSINT tool: GitDorker.
+- **`github-code-search-2`** (low) — OSINT tool: GitHub Code Search.
+- **`github-code-search`** (low) — OSINT tool: GitHub Code Search.
+- **`github-search-engine`** (low) — OSINT tool: GitHub Search Engine.
+- **`github`** (low) — Open source code hosting community for users to collaborate and create projects.
+- **`glossary-of-computer-and-internet-terms`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`gmail-help-for-identifying-email-headers`** (low) — Google webpage providing information about identifying email headers
+- **`gmx-mail`** (low) — All-in-one German webmail service that lets you manage all of your email accounts from one place
+- **`gogetfunding`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`google-analytics`** (low) — Web analytics service offered by Google that tracks web traffic
+- **`google-cloud-ocr`** (low) — OSINT tool: Google Cloud OCR.
+- **`google-docs-to-markdown-online-converter`** (low) — just copy text to the site
+- **`google-document-dorks-inteltechniques-method`** (high) — Use when you have a `name` or `domain` and want to surface documents, spreadsheets, and cloud files naming the subject — returns document-id
+- **`google-to-search-profiles-on-github`** (low) — OSINT tool: Google to search profiles on GitHub.
+- **`grep-app`** (low) — OSINT tool: grep.app.
+- **`grep-for-osint`** (low) — simple toolkit that helps to quickly extract "important data" (phone numbers, email addresses, URLs) from the text / file directory
+- **`grouptweet`** (low) — Website related to social networking that focuses on the Twitter website, offering management and monitoring capabilities of Twitter content
+- **`guru-com`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
+- **`hashtagifyme`** (low) — Search for Twitter Hashtags
+- **`hispavista-spain`** (low) — Spain-based digital marketing service
+- **`hoverme`** (low) — Tool that uncovers social media profiles for individuals
+- **`identify-plans`** (low) — OSINT tool: Identify plans.
+- **`image-analyzer-addon`** (low) — View all images on a page and expose image properties, EXIF data, and one-click download
+- **`imgonline-com-ua`** (low) — OSINT tool: imgonline.com.ua.
+- **`indiegogo`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`inflact-downloader`** (medium) — Use when you need to download a public Instagram/Facebook/Twitter/TikTok post, story, reel, or profile photo at full resolution from a URL —
+- **`information-and-communications-technology-council-canada`** (low) — Online organization website providing information on computer and information technology occupations
+- **`inmatrix-zoomplayer`** (low) — Program that (with codex packs) plays all public video formats
+- **`instapaper`** (low) — Website related to a social networking and bookmarking app
+- **`intensedebate`** (low) — Website related to the provision of news feeds and comments from other websites
+- **`iphone-imei-checker`** (medium) — Use when you have an iPhone's IMEI/serial (`device-id`) and want its model, specs and iCloud/blacklist status — returns device metadata and 
+- **`irfanview`** (medium) — Windows-based software to extract metadata.
+- **`jeff-sagarin-north-america`** (low) — Website related to sports ratings
+- **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — OSINT tool: Jeffrey Friedl's Image Metadata Viewer.
+- **`joinme-screensharing-tool`** (low) — Website that provides screen sharing and online meetings
+- **`json-to-csv`** (low) — OSINT tool: JSON to CSV.
+- **`katana`** (low) — Katana-dork scanner is a simple python tool that automates Google hacking/dorking and supports Tor.
+- **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
+- **`keyhole-2`** (low) — Real-time, hashtag, keyword and URL tracker for Twitter, Facebook and Instagram
+- **`kickstarter`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
+- **`knowyourmeme`** (low) — Website that provides a database of Internet-based memes, culture and online behaviour
+- **`lifestream`** (low) — Faith/religion based website related to social networking in the form of lifestreaming or digital diaries
+- **`loseit`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
+- **`mactech-apple-technology`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`macworld`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`madeit-australia`** (low) — Website related to arts and crafts events
 - **`malware-analysis-tools`** (low) — Malware analysis tool discovery and best practices reference
+- **`marker-to-online-highlighter`** (low) — Chrome browser add-on that highlights online text on websites; free public use; no account required; download required
+- **`meawfy`** (low) — OSINT tool: Meawfy.
+- **`media-smarts-digital-and-media-literacy`** (low) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
+- **`mediainforobot`** (low) — telegram bot to getting metadata from different types of files
+- **`meltwater-blog-search`** (low) — Media intelligence company providing media monitoring and social media monitoring to help grow brands
+- **`mendeley-academic-research-manager`** (low) — Academic-related research manager allowing the colloboration and sharing of data online
+- **`mever-gr`** (low) — OSINT tool: mever.gr.
+- **`microsoft-office-online`** (low) — Website for Microsoft Office Online that offers collaboration services, including access to free template documents
+- **`minexp-gumroad-com`** (low) — OSINT tool: minexp.gumroad.com.
+- **`mp3juices`** (low) — Website that offers services related to downloading and saving audio files from a video
+- **`mutagen`** (low) — get meta data of audiofiles thrue command line
+- **`national-restaurant-association-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`new-zealand-government-it-jobs`** (low) — Online government website providing information on computer and information technology occupations
+- **`new-zealand-technology-industry-association`** (low) — Online organization website providing information on computer and information technology occupations
+- **`occupational-outlook-handbook-it-united-states`** (low) — Online government website providing information on computer and information technology occupations
+- **`odcrawler`** (low) — OSINT tool: ODCrawler.
+- **`online-ide-and-paste-search-engine`** (low) — OSINT tool: Online IDE and Paste Search Engine.
+- **`online-metadata-viewer-and-editor`** (low) — High-quality and well-made. Support docx, xlsx, msg, pptx, jpeg, vsd, mpp.
+- **`online-ocr-converter`** (low) — Tool that performs optical character recognition, converting scanned PDF documents and photos into editable and searchable electronic docume
+- **`osintdashboard-azurewebsites-net`** (low) — OSINT tool: osintdashboard.azurewebsites.net.
+- **`ow-ly-url-shortener`** (low) — Tool for shortening URL address hyperlinks for Hootsuite
+- **`pageinsider`** (low) — Website that shows a summary of information that is or was on a specific website
+- **`pages2images`** (low) — Website screenshot tool
+- **`paste-search`** (low) — OSINT tool: Paste Search.
+- **`pastes-search-engine-2`** (low) — OSINT tool: Pastes Search Engine 2.
+- **`pastes-search-engine`** (low) — OSINT tool: Pastes Search Engine.
+- **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
+- **`pdfdrive`** (low) — PDF/book search index.
+- **`pdfmyurl`** (low) — Saves webpages as a PDF
+- **`pdfx`** (low) — get meta data of PDF files thrue command line
+- **`pearltrees`** (low) — Website related to social networking and bookmarking activities allowing users to save web pages, files, videos, photos, and notes
+- **`photosint-chrome-google-com`** (low) — OSINT tool: photosint (chrome.google.com).
+- **`picture-exif-cleaner-addons-mozilla-org`** (low) — OSINT tool: picture exif cleaner (addons.mozilla.org).
+- **`pixelprivacy`** (low) — Blog related to online privacy and protection
+- **`popurls`** (low) — Aggregator for trending and popular URLs on various social and news sites
+- **`powtoon-animation-program`** (low) — Program that creates and animates videos and presentations
+- **`prezi`** (low) — Presentation management website
+- **`printwhatyoulike`** (low) — Program that helps you select and print selected portions of web pages online
+- **`punchbowl`** (low) — Website related to event invitation and party planning
+- **`pymeta`** (low) — A tool that searches (using Google, Bing etc.) for documents in the domain, analyses their metadata and generate a report in CSV format.
+- **`quackr-io`** (medium) — Use when you need a disposable phone number for SMS verification (sock-puppet creation) — or to check whether a phone number a subject used 
+- **`rebelmouse`** (low) — Creative agency and website publishing platform
+- **`recap`** (medium) — OSINT tool: RECAP.
+- **`recoverytoolbox`** (low) — recovery tools for corrupted Excel, CorelDraw, Photoshop, PowerPoint, RAR, ZIP, PDF and other files
+- **`reposearch`** (low) — OSINT tool: Reposearch.
+- **`restaurant-and-catering-industry-website-australia`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`restaurant-association-of-new-zealand`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`restaurant-report-website-united-states`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`restaurants-canada-website-canada`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`reveal-image-verification-assistant`** (medium) — Forensic providing eight filters to detect still images alterations. Web-based image tool. Also available within InVID verification plugin.
+- **`savefrom-net`** (low) — Website that offers services related to downloading and saving videos from a web page
+- **`savevideo-me`** (low) — Website that offers services related to downloading and saving videos from a web page
+- **`scan-qr-code`** (low) — While determining the location of the photo, sometimes the research of QR codes on the road poles, showcases and billboards helps a lot. Thi
+- **`scoop-it`** (low) — Publishing content services website
+- **`screencast-o-matic`** (low) — Website that offers services related to downloading and saving audio content from a website
+- **`screenshot-guru`** (low) — Website that provides screen capture capability, taking screenshots of full webpages via a URL
+- **`search-the-current-site`** (low) — A toolbar button to search all pages of any website using Google.
+- **`search4faces-com`** (medium) — Face recognition and reverse image search engine for Vkontakte, Odnoklassniki, avatars of TikTok & ClubHouse users
+- **`searchfiles-de`** (low) — OSINT tool: SearchFiles.de.
+- **`shared-count`** (low) — Social URL analytics tool for tracking URL shares, likes and tweets
+- **`shhgit`** (low) — OSINT tool: Shhgit.
+- **`siftrss-com`** (low) — tool for filtering RSS feeds
+- **`site-dorks`** (low) — Search Google, Bing, Ecosia, Yahoo or Yandex for a search term with several websites
+- **`slide-share`** (low) — Search and share slide shows, presentations, infographics, documents, and more
+- **`slideshare`** (low) — OSINT tool: SlideShare.
+- **`slink-url-shortener`** (low) — Tool for shortening URL address hyperlinks
+- **`snagit`** (low) — Program that provides screen capture services, currently the best commercial program for this action
+- **`sndeepinfo`** (medium) — Use when you have an IMEI, serial, ICCID, MEID, or Apple part number — decode it into device make/model/specs and (for Apple) warranty/black
+- **`socialmediarestaurant`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`socialoomph`** (low) — Social media managing tool
+- **`sourcebot`** (low) — OSINT tool: Sourcebot.
+- **`sourcegraph-2`** (low) — OSINT tool: Sourcegraph.
+- **`sourcegraph`** (low) — OSINT tool: SourceGraph.
+- **`squareup`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
+- **`statwing`** (low) — Intuitive data analytics tool
+- **`steghide`** (low) — Steganography tool to detect and extract data hidden inside image and audio files.
+- **`stegosuite`** (low) — Graphical steganography tool to hide and extract data in image files.
+- **`stegseek`** (low) — Fast steghide cracker that brute-forces passphrases to extract hidden data.
+- **`street-drug-slang`** (low) — DEA intelligence report for slang terms and code words for street drugs
+- **`studyblue`** (low) — Website and mobile app for finding, creating and sharing study flashcards and notes
+- **`taskrabbit`** (low) — Website related to outsourcing of jobs related to homes and neighbourhoods
+- **`tastedive-current-multimedia-trends`** (low) — Website that recommends trending music, movies, books, games and more
+- **`techuk`** (low) — Online organization website providing information on computer and information technology occupations
+- **`telcodata-us`** (low) — US Telecommunications Database; mobile telephone number lookup
+- **`textise-net`** (low) — convert the HTML code of a page to TXT
+- **`the-internet-clipboard-url-tool`** (low) — Tool for copying and/or pasting content to the website clipboard and sharing content by turning it into a URL
+- **`the-time-now`** (low) — Tells you what time it is in any location or time zone
+- **`the-time-zone-converter`** (low) — Converts time between time zones and locations
+- **`thedorkbox`** (low) — A collection of Google dorks &amp; OSINT techniques
+- **`thexifer-net`** (low) — OSINT tool: thexifer.net.
+- **`toolsley-analyze-file-format-online`** (low) — OSINT tool: ToolSley: analyze file format online.
+- **`topsite`** (low) — Search engine that identifies the top ten results for almost any subject
+- **`transferwise`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
+- **`transitions-abroad`** (low) — Online guide to working, studying, traveling and living abroad
+- **`true-random-number-service`** (low) — Program that creates random number sequences using a random number generator for numbers between 1 and 100
+- **`truth-or-fiction-search`** (low) — Information on scams, fraud, fake news, myths, and misinformation articles
+- **`twitter-analytics`** (low) — Website offering analytical capabilities of Twitter content
+- **`uk-government-information-technology`** (low) — Online government website providing information on computer and information technology occupations
+- **`ultimatecoupons`** (low) — Website related to coupons and other shopping savings
+- **`undiddit`** (high) — Use when you have a Reddit thread/comment URL or username and want to recover content deleted or moderator-removed from Reddit — returns rec
+- **`upwork`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
+- **`urlex-modified-url-expander`** (low) — Tool for modifying URL address hyperlinks
+- **`violation-tracker`** (low) — US based database on corporate misconduct, covering banking, consumer protection, false claims, environmental, safety, employment discrimina
 - **`virustotal-2`** (low) — Multi-engine malware scanning and URL reputation lookup
+- **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
+- **`voyant-tools-org`** (low) — analysis of particular words in .TXT, .DOCX, .XLSX, .CSV and other file types.
+- **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos
+- **`warble-alerts`** (low) — Website offering social media content monitoring and alert services; sends daily alerts via email
+- **`webfinery-source-code-search`** (low) — OSINT tool: Webfinery \| Source Code Search.
+- **`webpreserver`** (low) — A browser-based plugin compatible with Chrome and Edge, allows users to capture social media posts and comments and store them on their comp
+- **`wetransfer`** (low) — File transfer platform for sizes up up to 2GB
+- **`wheredoesthislinkgo-modified-url-expander`** (low) — Tool for expanding URL address hyperlinks that have been previously shortened
+- **`wolfram-alpha-personal-analytics`** (low) — Wolfram Alphas personal analytics utility for Facebook
+- **`xifr-addons-mozilla-org`** (low) — OSINT tool: xifr (addons.mozilla.org).
+- **`xifr`** (medium) — A Firefox add-on for extracting EXIF metadata by right-clicking an image.
+- **`yotpo`** (low) — eCommerce marketing platform offering advanced solutions for customer reviews and visual marketing
+- **`zamzar-online-file-converter`** (low) — Online file donversion tool, converts documents, images, videos, and more to various formats
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

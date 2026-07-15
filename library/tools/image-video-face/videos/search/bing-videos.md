@@ -17,7 +17,7 @@ selectorsIn:
 - address
 selectorsOut:
 - social-profile
-- metadata
+- metadata-exif
 status: live
 pricing: free
 opsec: passive
@@ -28,7 +28,8 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Operated by Microsoft; a mainstream, well-maintained search engine. Results themselves are third-party and must be verified.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false

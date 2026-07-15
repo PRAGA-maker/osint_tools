@@ -7,28 +7,127 @@ kind: group-index
 # dating-classifieds
 
 ## Skills here
-- **`adultfriendfinder`** (high) — Adult dating, explicit preference filtering, and username-based discovery
-- **`ayi-com`** (high) — Real-time flirting and location-based casual dating
-- **`badoo`** (high) — Global-scale casual dating and people-nearby discovery
-- **`beautifulpeople-com`** (high) — Identity-verified social discovery and premium dating communities
-- **`bumble`** (high) — Women-initiated conversations and location-based dating
-- **`craigslist`** (high) — Searching local US classifieds by city, vehicle/property fraud investigations, locating individuals via posts
-- **`ebay`** (high) — Seller profile research, username cross-referencing, item provenance tracking, fraud investigation
-- **`farmers-only`** (high) — Rural lifestyle dating and niche community matching
-- **`francais-a-londres-org-french-classifieds`** (high) — Investigating French-speaking subjects in the UK, Franco-British community connections
-- **`goofbid`** (high) — Finding overlooked eBay listings, researching items through misspelled keywords, auction intelligence
-- **`hinge`** (high) — Intentional relationship-focused matching with richer profile context
-- **`kijiji-canada-classifieds`** (high) — Canadian classified investigations, vehicle/property fraud research, locating subjects via listings
-- **`kleinanzeigen-de`** (high) — German classifieds investigations, German-speaking subject research, vehicle and property fraud research
-- **`meetup`** (high) — Interest-based in-person social discovery through events and groups
-- **`offerup`** (high) — Local US marketplace investigations, seller profile research, connecting listings to individuals
-- **`plenty-of-fish-com`** (high) — Casual dating and broad free profile discovery
-- **`quikr-india-classifieds`** (high) — Indian classifieds investigations, tracking subjects through local listings, fraud research
-- **`search-tempest`** (high) — Multi-city Craigslist investigations, nationwide item or person search across classifieds
-- **`searchalljunk`** (high) — Cross-platform classifieds search, aggregating listings from multiple sources simultaneously
-- **`spark-com`** (high) — Relationship-seeking users and compatibility-based matching
-- **`tantan`** (high) — Asia-focused dating and geolocation-based matching
-- **`tinder`** (high) — High-volume casual matching and rapid local discovery
-- **`totalcraigsearch`** (high) — Nationwide Craigslist searches, tracking listings across multiple cities for a single subject or item
+- **`ad-mart-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`admireme-vip`** (medium) — OSINT tool: admireme.vip.
+- **`adpost-com-worldwide`** (medium) — Classified advertisements-related website that provides regional services
+- **`adultfriendfinder`** (medium) — Use when you have a `username`, `image`, or rough `geolocation` and want to check whether a subject maintains an adult-dating profile — sear
+- **`anonib-to`** (medium) — OSINT tool: anonib.to.
+- **`ashley-madison`** (medium) — OSINT tool: Ashley Madison.
+- **`autotrader-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`ayi-com`** (low) — Use when checking whether a subject keeps a casual/location-based dating profile by `username` or `geolocation` — a legacy "Are You Interest
+- **`backpage-craigslist-alternative`** (medium) — OSINT tool: Backpage (Craigslist Alternative).
+- **`badoo`** (medium) — Use when you have a `username`, `image`, or `geolocation` and want to find a subject's profile on one of the largest global dating/people-ne
+- **`bargaincity-classified-ads-canada`** (medium) — Classified advertisements-related website that provides regional services
+- **`beautifulpeople-com`** (low) — Use when checking a niche, member-voted dating community for a subject's profile by `username` or `image` — a small, vetting-gated platform.
+- **`bed-page`** (medium) — OSINT tool: Bed Page.
+- **`best-classified-site-in-india`** (medium) — Classified advertisements-related website that lists over 1000 websites worldwide by country
+- **`bumble`** (medium) — Use when you have an `image`, first `name`, or `geolocation` and want to check for a subject's profile on Bumble's location-based dating app
+- **`camsoda-com`** (medium) — OSINT tool: camsoda.com.
+- **`cia-foia`** (medium) — CIAs Freedom of Information Act Electronic Reading Room - provides access to declassified documents
+- **`classifiedads-com`** (medium) — Classified advertisements-related website that provides regional services
+- **`coomer-st`** (medium) — OSINT tool: coomer.st.
+- **`craigslist-classified-ads-worldwide`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
+- **`craigslist`** (medium) — Use when you have a `phone`, `name`, or location keyword and want to search US local classifieds for a subject's posts, listings, or contact
+- **`datingadvice`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to dating queries
+- **`dudjob-com`** (medium) — OSINT tool: dudjob.com.
+- **`ebay-classifieds-united-states`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
+- **`ebay`** (low) — Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest 
+- **`ebin-pub`** (medium) — OSINT tool: ebin.pub.
+- **`eharmony`** (medium) — OSINT tool: eHarmony.
+- **`eroticbeauties-net`** (medium) — OSINT tool: eroticbeauties.net.
+- **`espanafans-com`** (medium) — OSINT tool: espanafans.com.
+- **`fairfax-advertisers-classified-ads-australia`** (medium) — Classified advertisements-related website that provides regional services
+- **`fansearch`** (medium) — OnlyFans finder with 3M+ accounts.
+- **`fanslist-com`** (medium) — OSINT tool: fanslist.com.
+- **`fansmetrics-com`** (low) — OSINT tool: Fansmetrics.com.
+- **`fanspedia-net`** (medium) — OSINT tool: fanspedia.net.
+- **`fapello-com`** (medium) — OSINT tool: fapello.com.
+- **`farmers-only`** (low) — Use when a subject has a rural/agricultural background and you want to check for a profile on this US niche dating site by `username` or `im
+- **`fikfap-com`** (medium) — OSINT tool: fikfap.com.
+- **`findr-fans`** (low) — OSINT tool: Findr.fans.
+- **`francais-a-londres-org-french-classifieds`** (low) — Use when investigating a French-speaking subject in London/the UK — search this Franco-British community site's classifieds and listings by 
+- **`free-classified-website-listing`** (medium) — Classified advertisements-related website that lists at least 1000 websites worldwide
+- **`freeads-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`freefans-de`** (low) — German OnlyFans directory.
+- **`freefans-nl`** (low) — Dutch OnlyFans directory.
+- **`full-dp-com`** (medium) — OSINT tool: full-dp.com.
+- **`geebo-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
+- **`girlfindr`** (low) — OnlyFans creator exploration tool.
+- **`goofbid`** (low) — Use when researching eBay activity and you want to surface mistyped/overlooked listings a subject posted — a misspelling-search front-end fo
+- **`gumtree-classified-ads-australia`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
+- **`gumtree-classified-ads-united-kingdom`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
+- **`hallo-london-free-classified-ads`** (medium) — Classified advertisements-related website that provides regional services
+- **`hinge`** (medium) — Use when you have an `image` and rough `geolocation` and want to check a subject against Hinge — a relationship-focused app with richer, pro
+- **`hoobly-classified-ads`** (medium) — Classified advertisements-related website that provides regional services
+- **`hubite`** (medium) — Advanced OnlyFans search engine.
+- **`justlanded-classified-ads-worldwide`** (medium) — Classified advertisements-related website that provides worldwide services
+- **`kijiji-canada-classifieds`** (medium) — Use when investigating a Canadian subject and you want to search local classifieds for their posts, sales, vehicles, or contact details by `
+- **`kijiji-canada`** (medium) — OSINT tool: Kijiji (Canada).
+- **`kijiji-classified-ads-canada`** (medium) — One of the Top 10 classified advertisements-related websites in Canada
+- **`kleinanzeigen-de`** (high) — Use when a German-speaking subject may post on Germany's largest classifieds site — pivot from name/phone/location to seller listings and co
+- **`locanto-free-classified-ads-worldwide`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
+- **`look-by-username-replace-username-in-this-case-mark`** (medium) — OSINT tool: Look by username - replace @username (in this case, Mark).
+- **`loot-com-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`lovingcreators-com`** (medium) — OSINT tool: lovingcreators.com.
+- **`match-com`** (medium) — OSINT tool: Match.com.
+- **`meetup`** (high) — Use when a subject's hobbies/interests are known — find the groups and in-person events they attend, plus public member profiles and RSVP hi
+- **`merchant-circle-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
+- **`modelsearcher-com`** (medium) — OSINT tool: modelsearcher.com.
+- **`nzdoctor-free-classified-ads-new-zealand`** (medium) — Classified advertisements-related website that provides regional services
+- **`offerup`** (high) — Use when a US subject buys/sells locally — pivot from a seller alias or item to a profile with photos, approximate location, ratings, and tr
+- **`ohio-department-of-transportation`** (medium) — Ohio Department of Transportations website providing information about construction projects and maps dating back to 1912
+- **`okcupid`** (medium) — OSINT tool: OkCupid.
+- **`onlybritish`** (low) — UK OnlyFans creator directory.
+- **`onlycanadian-fans`** (medium) — OSINT tool: onlycanadian.fans.
+- **`onlydanske-dk`** (medium) — OSINT tool: onlydanske.dk.
+- **`onlyespana-es`** (medium) — OSINT tool: onlyespana.es.
+- **`onlyfam`** (medium) — OnlyFans search and model finder.
+- **`onlyfans-com-2`** (medium) — OSINT tool: onlyfans.com.
+- **`onlyfans-com-3`** (medium) — OSINT tool: onlyfans.com.
+- **`onlyfans-com-4`** (medium) — OSINT tool: onlyfans.com.
+- **`onlyfans-com`** (medium) — OSINT tool: onlyfans.com.
+- **`onlyfans-finder`** (medium) — Advanced OnlyFans search with filtering.
+- **`onlyfinder-com`** (medium) — OSINT tool: onlyfinder.com.
+- **`onlyfinder`** (low) — OSINT tool: OnlyFinder.
+- **`onlyleaks-pro`** (medium) — OSINT tool: onlyleaks.pro.
+- **`onlysearch-co`** (low) — OSINT tool: Onlysearch.co.
+- **`onlysuomi`** (low) — Finnish OnlyFans directory.
+- **`onlytop-fr`** (medium) — OSINT tool: onlytop.fr.
+- **`oodle-classified-advertisements-united-states`** (medium) — Classified advertisements-related website with listings from around the United States
+- **`oodle-online-classifieds`** (medium) — OSINT tool: Oodle (Online Classifieds).
+- **`plenty-of-fish-com`** (high) — Use when a subject may have a dating profile — search POF by username/area/age to surface a photo, self-description, and approximate locatio
+- **`plentyoffish-online-dating`** (medium) — OSINT tool: PlentyOfFish (Online Dating).
+- **`pornhoard-com`** (medium) — OSINT tool: pornhoard.com.
+- **`quikr-classified-ads-india`** (medium) — Classified advertisements-related website that provides regional services
+- **`quikr-india-classifieds`** (high) — Use when an India-based subject may buy/sell locally — pivot from name/phone/city to classified listings, a seller profile, and a contact nu
+- **`recycler-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
+- **`sales-spider`** (medium) — OSINT tool: Sales Spider.
+- **`salespider-north-america`** (medium) — Classified advertisements-related website that provides regional services
+- **`search-all-junk`** (medium) — OSINT tool: Search All Junk.
+- **`search-onlyfans-profiles`** (low) — OSINT tool: Search OnlyFans profiles.
+- **`search-tempest`** (high) — Use when you need to sweep Craigslist (and eBay) across many cities at once for a subject's listings, alias, or distinctive item — instead o
+- **`searchalljunk`** (high) — Use when you want to query multiple classifieds/marketplace sources from one box — a meta-search front-end for second-hand listings across p
+- **`secretfans`** (low) — Search engine for OnlyFans creators.
+- **`similarfans`** (low) — OSINT tool: SimilarFans.
+- **`sotugas-net`** (medium) — OSINT tool: sotugas.net.
+- **`sotugas`** (low) — Portuguese OnlyFans directory.
+- **`spark-com`** (high) — Use when a subject may use a relationship-oriented dating site — search Spark by area/age/interests to surface a profile photo, bio, and app
+- **`tantan`** (high) — Use when an East-Asia / Chinese-diaspora subject may use a Tinder-style swipe app — surface a profile photo, age, and approximate location v
+- **`the-west-classifieds-australia`** (medium) — Classified advertisements-related website that provides regional services
+- **`tinder`** (high) — Use when a subject likely uses the dominant swipe-dating app — surface a recent photo, age, approximate location, and bio via geolocation-ba
+- **`totalcraigsearch-searches-all-regions`** (medium) — OSINT tool: TotalCraigSearch (Searches All Regions).
+- **`totalcraigsearch`** (high) — Use when you want to search Craigslist across many cities/states at once for a subject's listings, alias, or distinctive item — without chec
+- **`trademe-new-zealand`** (medium) — Classified advertisements-related website that provides regional services
+- **`tradingpost-australia`** (medium) — Classified advertisements-related website that provides regional services
+- **`transsearcher-com`** (medium) — OSINT tool: transsearcher.com.
+- **`truedater-online-dating-reports`** (medium) — OSINT tool: TrueDater (Online Dating Reports).
+- **`ukclassifieds`** (medium) — Classified advertisements-related website that provides regional services
+- **`used-ca`** (medium) — One of the Top 10 classified advertisements-related websites in Canada
+- **`usersearch-org-2`** (medium) — OSINT tool: usersearch.org.
+- **`vivastreet-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`x-ray-contact`** (medium) — OSINT tool: x-ray.contact.
+- **`yakaz-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
+- **`yourclassifieds-ca-canada`** (medium) — Classified advertisements-related website that provides regional services
+- **`zoosk`** (medium) — OSINT tool: Zoosk.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

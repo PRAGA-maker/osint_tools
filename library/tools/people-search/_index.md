@@ -10,5 +10,281 @@ kind: group-index
 - **`general-people-search/`** — 13 skill(s) below.
 - **`registries/`** — 5 skill(s) below.
 
+## Skills here
+- **`192-uk`** (high) — Use when you have a UK `name` (or `address`/`phone`) and want the electoral-roll listing, household members and directorships — returns `add
+- **`192`** (high) — Use when you have a UK `name` and/or `address` and want current/historical occupancy, electoral-roll and household links — returns addresses
+- **`360username-com`** (high) — Use when you have a `username` and want to see which of 150+ social platforms and domain TLDs it is registered/taken on — returns a per-plat
+- **`411-us`** (high) — Use when you have a US `name`, `phone` or `address` and want contact and household details — returns addresses, phone numbers and associated
+- **`411`** (high) — Use when you have a US `name`, `phone`, or `address` and want white-pages data — returns listed `name`, `address`, `phone`, relatives, and b
+- **`411directoryassistance-ca`** (high) — Use when you have a Canadian `name` or `phone` and want listed directory details — returns addresses and phone numbers from Canadian white/y
+- **`academia`** (medium) — OSINT tool: Academia.
+- **`address-check-1-2-united-states`** (high) — Use when you have an `address` (or name) and want to verify/standardize a US address and identify residents — returns a validated address pl
+- **`advancedbackgroundchecks`** (high) — Use when you have a `name`, `phone`, or `address` and want a free US people lookup with relatives and address history — returns names, phone
+- **`allareacodes`** (high) — Use when you have a US/Canada `phone` number and want free white-pages identification — returns the owner `name` and `address`, or carrier/c
+- **`alm-experts-united-states`** (high) — Use when you have a `name` or a specialty and want to identify or verify an expert witness / litigation consultant — a searchable directory 
+- **`alumni-member-search`** (high) — Use when you have a `name` plus a school/affiliation and want the subject's classmate-network profile and contact leads — returns social-pro
+- **`amazon-co-uk-3`** (medium) — Use when you have a `name` and want a UK subject's public Amazon wish list / gift registry — returns a display name, wanted items and someti
+- **`amazon-co-uk-4`** (medium) — Use when you have a name (and rough city/region) and want to find a person's public Amazon UK wedding registry to learn partner name, locati
+- **`ancestry-genealogy-family-trees-and-family-history-records`** (high) — Use when you have a name + approximate DOB/place and need family-tree links, historical records, or relatives to corroborate a missing perso
+- **`ancestry`** (high) — Use when you have a name plus a date or place and want genealogical records (census, birth/marriage/death, immigration) to build family conn
+- **`anywho-whitepages-north-america`** (high) — Use when you have a `name` or `phone` in the US and want a listed address, landline and household associates — returns address, phone and as
+- **`apollo-io`** (high) — Use when you have a `name`, company or `domain` and want a person's work contact details — returns business `email`, `phone`, `employer-org`
+- **`arabic-name-structure-wikipedia`** (high) — Use when you have an Arabic `name` and want to decompose it into its components (given name, patronymic, tribal/place nisba) to derive searc
+- **`arachnys-com`** (high) — OSINT tool: Arachnys.com.
+- **`australia-lookup`** (high) — Use when you have an Australian `name` or `phone` and want a free residential address/phone match — returns address, phone and reverse-direc
+- **`bc-assessment`** (high) — Use when you have a British Columbia `address` and want the property's official assessment — returns assessed value, property characteristic
+- **`beenverified-com`** (high) — Use when you have a `name` (or phone/email/address) and want a consolidated US person report — returns address history, phone, email, relati
+- **`beenverified`** (high) — Use when you have a US `name`, `phone`, `email`, or `address` and want a consolidated background report — returns addresses, phones, relativ
+- **`behind-the-name-arabic-names`** (high) — Use when you have an Arabic `name` and want its meaning, script, and spelling/transliteration variants so you can search every plausible for
+- **`behindthenames`** (high) — Use when you have a `name` and want its variants, diminutives, foreign-language forms and etymology to widen a search — returns alternate `n
+- **`bellingcat-name-variant-search`** (high) — Use when you have a `name` and want every plausible spelling, transliteration, and nickname to search across — returns an expanded set of `n
+- **`beyond`** (medium) — OSINT tool: Beyond.
+- **`biographies-net`** (medium) — Use when you have a `name` of a notable-ish person and want a biographical summary — returns birth/death `dob`, profession, family `associat
+- **`biz-yellow-pages-usa-business-and-people-dire`** (high) — OSINT tool: Biz Yellow Pages, USA Business & People Dire.
+- **`british-phone-book`** (high) — Use when you have a UK `name` and want a residential landline listing with address — returns address and phone (landline).
+- **`bt-uk`** (high) — OSINT tool: BT (UK).
+- **`buscapaginasblancas`** (high) — Use when you have Spanish surnames and want listed name/phone/address records — a Python scraper of Spain's Páginas Blancas, now defunct bec
+- **`california-justice-watch`** (high) — Use when you have a `name` for a California DA, judge, or police officer and want documented misconduct/accountability records — returns cas
+- **`campuscareercenter`** (medium) — OSINT tool: CampusCareerCenter.
+- **`canada-post-find-a-postal-code`** (high) — Use when you have a Canadian street `address` and want its exact postal code (or to validate/standardize the address) — returns the canonica
+- **`canada411-advanced-search-whitepages-ca`** (high) — Use when you have a `name`, `phone`, or `address` in Canada and want the matching residential/business listing — returns name, address and p
+- **`canada411`** (high) — Use when you have a Canadian `phone`, `name`, or `address` and want free white-pages data — returns listed `name`, `address`, and `phone` fr
+- **`careerbuilder`** (medium) — OSINT tool: CareerBuilder.
+- **`carrier-lookup-2`** (high) — Use when you have a `phone` number and want its carrier and line type (mobile vs landline) plus the email-to-SMS gateway — returns enriched 
+- **`cedar`** (high) — OSINT tool: Cedar.
+- **`certificated-bailiff-register-justice-uk`** (high) — Use when you have a `name` of someone claiming to be an enforcement agent (bailiff) in England & Wales and want to verify them — returns whe
+- **`classmates-canada-alumni-lookup`** (high) — Use when you have a `name` and a school/graduation year and want alumni and digitized yearbook records — returns `social-profile`, classmate
+- **`classmates`** (high) — Use when you have a `name` and a US school (`employer-org`) and want yearbook photos and alumni profiles — returns image, social-profile and
+- **`cloob-com`** (high) — Historical reference only — Iran's "Facebook" people search, permanently shut down in 2021; returns nothing today, so route to archives or o
+- **`clustermaps`** (high) — Use when you have a `name` or `address` and want US resident/address intelligence — returns current and past residents, relatives/neighbors,
+- **`coeus-osint-toolbox`** (medium) — OSINT toolbox bundling tools for intelligence gathering from open sources.
+- **`college-recruiter`** (medium) — OSINT tool: College Recruiter.
+- **`community-search`** (medium) — OSINT tool: Поиск сообществ (Community Search).
+- **`contactout`** (high) — Use when you have a professional's `name`/LinkedIn `social-profile` and want their personal `email` and `phone` — returns contact data for 3
+- **`craiglist`** (medium) — OSINT tool: Craiglist.
+- **`crosslinked`** (medium) — LinkedIn enumeration via search engine scraping (no auth).
+- **`cvfox`** (medium) — OSINT tool: CVFox.
+- **`cyberbackgroundchecks`** (high) — Use when you have a `name`, `phone`, or `address` in the US and want current/past addresses, phone numbers and named relatives for free — re
+- **`cybersecstu-osint-for-finding-people`** (high) — Use when you have a `name`/`username`/`email`/`phone` and want a curated list of which tools to try next for locating a person — returns poi
+- **`daprofiler`** (high) — Use when you have a `name` (best for a French subject) and want to auto-aggregate emails, phones, addresses, and social profiles via scrapin
+- **`dating-sites-search-engine`** (high) — Use when you have a `name`, `username` or `email` and want to sweep multiple dating platforms at once via a curated Google Custom Search Eng
+- **`deadtrap`** (high) — Use when you have a `phone` and want to identify its likely owner, carrier region and linked social/spam footprint — returns name, social-pr
+- **`deepfind-me`** (high) — Use when you have a `username` (or email/domain) and want to find every account it maps to — returns correlated `social-profile` links acros
+- **`dice`** (medium) — OSINT tool: Dice.
+- **`digi-netra`** (medium) — Python toolkit for tracing phone numbers, usernames, IPs, and emails via CLI.
+- **`discordleaks`** (high) — Use when you have a `name`, `username`, or keyword and want to search leaked messages from white-supremacist / neo-nazi Discord (and RocketC
+- **`dob-search-death-records`** (medium) — OSINT tool: DOB Search - Death records.
+- **`effect-group`** (high) — Use when you have a name, email or phone and want an aggregated OSINT profile — returns linked profiles, contact data, breach hits and face/
+- **`ellis-island-new-york-passenger-search`** (high) — Use when you have a historical immigrant's `name` and want their Port of New York / Ellis Island arrival record — returns arrival date, ship
+- **`ellis-island`** (high) — Use when you have a `name` of a US immigrant ancestor (1892-1957) and want their arrival record — returns arrival date, age (`dob`), origin/
+- **`eluta-canada`** (medium) — OSINT tool: Eluta (Canada).
+- **`eniro`** (high) — Use when you have a Swedish `name` (or `phone`/`address`) and want the person's registered address, phone and household — returns `address`,
+- **`eurojobs`** (medium) — OSINT tool: Eurojobs.
+- **`everypolitician-org`** (low) — Use when you have a `name` of a politician/office-holder and want structured political data — returns party, terms, positions and links (`so
+- **`expertengine`** (high) — Use when you have a subject `name` or a technical discipline and want to confirm whether they are a listed expert witness/consultant — retur
+- **`expertisefinder`** (medium) — OSINT tool: ExpertiseFinder.
+- **`expertpages`** (medium) — OSINT tool: ExpertPages.
+- **`experts-com`** (medium) — OSINT tool: Experts.com.
+- **`family-search`** (high) — Use when you have a `name` and want the largest free genealogy archive — returns birth/marriage/death, census, immigration records with `dob
+- **`familysearch-2`** (high) — Use when you have a `name` and want genealogical records — returns birth/marriage/death records, family links (`associate`), historical `add
+- **`familytree`** (high) — Use when you have a `name` and want a free US map of relatives, past/current addresses and age — returns `associate`, `address`, `dob`, `pho
+- **`familytreenow`** (high) — Use when you have a US `name` and want a free deep people-search — returns `address` history, approximate `dob`/age, relatives and `associat
+- **`fastpeoplesearch`** (high) — Use when you have a US `name`, `phone` or `address` and want a genuinely free lookup of addresses, phone numbers and relatives — returns add
+- **`federal-bureau-of-prisons-inmate-locator-us`** (high) — Use when you have a `name` or BOP register number and want to check US federal custody status — returns name, age/race, location, and releas
+- **`fei-database-person-search`** (high) — Use when you have a `name` linked to equestrian sport and want to confirm their role and nationality in the international federation — retur
+- **`finalnotes-obituary-research-guide`** (high) — Use when you have a `name` of a possibly-deceased person and want a methodology plus source list for finding and verifying their obituary — 
+- **`find-a-postal-code-address`** (high) — Use when you have a Canadian `address` and want its exact postal code (or to confirm the address is deliverable) — returns a normalized `add
+- **`find-people-search-us`** (high) — Use when you have a `name` and want a free first-pass US people-search that surfaces addresses, phones, relatives and possible social profil
+- **`fish4jobs`** (medium) — OSINT tool: Fish4Jobs.
+- **`fixmystreet`** (medium) — Use when you have an `address`/`geolocation` (or a reporter's `name`) and want public local-problem reports tied to that spot — returns `nam
+- **`fold3-us-military-records`** (high) — Use when you have a `name` of a US veteran/service member (often historical) and want military records — returns service records, casualty/u
+- **`forebears`** (high) — Use when you have a surname/given `name` and want its geographic distribution and origin — returns where the name is common (`geolocation`) 
+- **`forensicosint-com-3`** (high) — Use when you have a `username` and want to enumerate matching accounts across 500+ sites with screenshot evidence capture — returns social-p
+- **`free-people-search`** (high) — Use when you have a `name`, `phone` or `address` and want an aggregated US background profile — returns `address`, `phone`, `associate`, `so
+- **`free-public-records-directory-us`** (high) — Use when you have a name and a US state/county and want the right official record source — returns links to free state/county property, cour
+- **`freeality`** (high) — Use when you have a `name`, `phone`, `email`, or `address` in the US and want a fast link-hub of free reverse-lookup searches — returns pre-
+- **`genealogy-bank`** (high) — Use when you have a US `name` and want historical newspapers and obituaries — returns obituaries, articles, and SSDI records yielding `dob`/
+- **`genealogy-links`** (high) — Use when you have a `name` and want the right regional genealogy/vital-records source — returns a directory of 50k+ curated links to birth/m
+- **`getcontact`** (high) — Use when you have a `phone` number and want the name(s) other people saved it under — returns crowdsourced name tags and profile hints.
+- **`ghostintel`** (medium) — Python OSINT framework for investigation via username, email, domain, IP, and phone.
+- **`ghostrecon`** (medium) — OSINT framework for online investigations.
+- **`globalexperts`** (medium) — OSINT tool: GlobalExperts.
+- **`gofindwho-com`** (high) — Use when you have a `name`, `username`, `email`, `phone`, or `address` and want a curated set of pre-built search forms that pivot across fr
+- **`google-custom-search-2`** (high) — Use when you have a `name`/`username`/`email` and want to search a curated slice of the web (a pre-built Custom Search Engine) rather than a
+- **`government-electronic-directory-services-canada`** (high) — Use when you have a `name` and think the person is a Canadian federal public servant — returns their title, department, work phone/email and
+- **`gravatar`** (high) — Use when you have an `email` (or its MD5 hash) or a Gravatar `username` and want the linked public avatar and profile — returns a profile ph
+- **`haro`** (medium) — OSINT tool: HARO.
+- **`hauziz`** (high) — Use when you have an `address` (or a `name`) and want the residents/owner tied to a US property plus pivot links into paid brokers — returns
+- **`headhunter`** (medium) — OSINT tool: Headhunter.
+- **`hey-press`** (high) — Use when you have a `name` or beat and want to find a journalist and what they cover — returns the journalist's outlet, recent articles, and
+- **`hiretual`** (medium) — OSINT tool: Hiretual.
+- **`hitta-se-2`** (high) — Use when you have a `name` (or `phone`/`address`) in Sweden and want official-directory people/business data — returns `address`, `phone`, a
+- **`howmanyofme`** (high) — Use when you have a `name` and want to know how common it is in the US — returns an estimated count of people sharing that name, to gauge se
+- **`human-predictions`** (medium) — OSINT tool: Human Predictions.
+- **`idealist`** (medium) — OSINT tool: Idealist.
+- **`indeed`** (medium) — OSINT tool: Indeed.
+- **`infospace`** (high) — Use when you have a US `name` or `phone` and want a free white-pages/metasearch lookup — returns address, phone and related directory listin
+- **`infotracer`** (high) — Use when you have a `name`, `phone`, `email`, or `address` and want a US background/contact profile — returns addresses, phones, relatives (
+- **`inmate-database-search`** (high) — Use when you have a `name` and want to check whether a person is held in the Indianapolis / Marion County jail — returns booking record, inm
+- **`innocentive`** (medium) — OSINT tool: Innocentive.
+- **`inteligator-people-trace-united-states`** (high) — Use when you have a `name` (optionally + state) and want a US background-style report — returns address, phone, email, relatives and public-
+- **`intelius-people-search-engine`** (high) — Use when you have a US `name`, `phone`, or `address` and want a consolidated background profile — returns addresses, phones, relatives, and 
+- **`intelligence-x-person-tools`** (high) — Use when you have a `name`, `email`, `phone`, or `username` and want a launchpad of prebuilt search links into many people-search services a
+- **`intelligencex-linkedin-search`** (medium) — Web-based LinkedIn search tool.
+- **`inteltechniques-linkedin-search-tool`** (medium) — Interface bundling various LinkedIn OSINT search tools.
+- **`inteltechniques-osint`** (high) — Use when you have a `name`, `username`, `email`, `phone` or `domain` and want automated multi-source pivots — a free toolset that fires one 
+- **`intelx-io`** (high) — Use when you have an `email`, `domain`, `ip-address`, `crypto-wallet` or `username` and want breach/dark-web/archive hits — returns leaked r
+- **`internet-experts`** (medium) — OSINT tool: Internet Experts.
+- **`interpol`** (high) — Use when you have a `name` and want to check INTERPOL's public Red (wanted) and Yellow (missing persons) notices — returns name, dob, image,
+- **`ioa`** (high) — Use when you have a `username` or account handle and want to know whether it belongs to a documented state-linked disinformation campaign — 
+- **`jobs-poland`** (medium) — OSINT tool: Jobs (Poland).
+- **`jobsite-uk`** (medium) — OSINT tool: Jobsite (UK).
+- **`jobster-job-posts-resumes`** (medium) — OSINT tool: Jobster (Job Posts / Resumes).
+- **`john-doe-us`** (high) — OSINT tool: John Doe (US).
+- **`karus`** (medium) — Multi-purpose OSINT utility with a custom web interface.
+- **`knowem-username-search`** (high) — Use when you have a `username` and want to see which of 500+ social networks (and domains) it's registered on — returns a grid of taken/avai
+- **`kompass`** (high) — Use when you have a company `employer-org` or a business `name` and want firmographics and business contacts — returns company address, phon
+- **`land-registry-map-enquiry`** (high) — Use when you have a property `address` in England & Wales and want to identify its registered owner — returns the title number free, then th
+- **`land-registry-property-search`** (high) — Use when you have a UK `address` and want the legal owner — returns the registered proprietor's name and title details from the official lan
+- **`lead-ferret`** (medium) — OSINT tool: Lead Ferret.
+- **`leak-lookup`** (high) — Use when you have an `email`, `username`, or `domain` and want to find which data breaches exposed it and what associated credentials/fields
+- **`leakey`** (high) — Use when you have a leaked API key/token/credential (e.g. found in a breach or paste) and want to validate whether it is still live and whic
+- **`library-of-congress-ask-a-librarian`** (medium) — OSINT tool: Library of Congress: Ask a Librarian.
+- **`licenseplates`** (medium) — OSINT tool: Licenseplates.
+- **`linkedin-advanced-search`** (medium) — OSINT tool: Linkedin Advanced Search.
+- **`lookupuk`** (high) — Use when you're trying to trace a lost friend/relative in the UK and want a portal of search resources plus reunion message boards — returns
+- **`lullar-com-3-appspot-com`** (high) — Use when you have an `email`, `username`, or `name` and want to sweep 175+ platforms for matching public profiles in one query — returns soc
+- **`manycontacts-mail-check`** (medium) — Use when you have an `email` and want to know if it's valid/deliverable before pivoting on it — returns an existence/deliverability verdict,
+- **`marketvisual`** (medium) — OSINT tool: MarketVisual.
+- **`mattiapasti-com`** (high) — Use when you have a `name` (first + last) and want to sweep many social platforms for matching profiles at once — returns social-profile, us
+- **`maven`** (medium) — OSINT tool: Maven.
+- **`melissa-com`** (high) — Use when you have a US `name`, `email`, `phone` or `address` fragment and want verified, cross-linked contact data — returns matched `addres
+- **`melissa-us-2`** (high) — Use when you have a `name`, `address`, `phone` or `email` and want to verify and enrich it into full contact detail — returns matched name, 
+- **`melissa-us`** (high) — Use when you have a US `address` (or name/phone) and want to verify/normalise it and find associated residents — returns standardised `addre
+- **`melissadata`** (high) — Use when you have an `address`, `name`, `phone` or `email` and want to verify it and pull linked contact/identity data — returns current res
+- **`monster`** (medium) — OSINT tool: Monster.
+- **`mr-holmes`** (high) — Use when you have a `username`, `email`, `phone`, or `domain` and want a one-command multi-module sweep — returns `social-profile`, email/se
+- **`muckrack`** (medium) — OSINT tool: MuckRack.
+- **`my-cse-for-search-in-48-pastebin-sites`** (high) — Use when you have a `name`, `username`, `email` or other selector and want to find it in leaked/pasted data — a Google Custom Search Engine 
+- **`my-life-people-search`** (high) — Use when you have a `name` for a US subject and want an aggregated profile with a "reputation" angle — returns age, address history, phones,
+- **`mylife-compilation-and-search-engine`** (high) — Use when you have a US `name` and want an aggregated profile with address, phone, age and relatives — returns contact and background leads, 
+- **`namecheckerr-com`** (medium) — Use when you have a `username` and want to see where that handle is already taken across social platforms (and as a domain) — returns which 
+- **`national-speakers-association`** (medium) — OSINT tool: National Speakers Association.
+- **`naukri-india`** (medium) — OSINT tool: Naukri (India).
+- **`netbootcamp-s-people-tool`** (high) — Use when you have a `name` (or screen name / phone / address) and want one console that fires the query into dozens of US people-search and 
+- **`neutrosint`** (high) — Use when you have an `email` or `username` and want to confirm whether it exists as a Proton Mail address (and get its PGP key-creation date
+- **`new-canada-411`** (high) — Use when you have a Canadian `name`, `phone` or `address` and want the matching listing — returns name, address, phone and (via same-address
+- **`newswise`** (medium) — OSINT tool: Newswise.
+- **`next-door`** (high) — Use when you have an `address`/neighborhood and want the residents, local posts, and real names tied to it — returns names and associates, b
+- **`nigeriaphonebook`** (high) — Use when you have a Nigerian `phone` or `name` and want caller/owner identification or a business listing — returns name, phone, and address
+- **`no-1-free-people-search`** (high) — Use when you have a `name` and want a web-mention aggregation of that person (links, news, images, profiles) — returns `social-profile`s, re
+- **`obituaries-australia`** (high) — Use when you have the `name` of a deceased person with an Australian connection and want their published obituary — returns death details, b
+- **`ofac-specially-designated-nationals-search-united-states`** (high) — Use when you have a `name` and want to check the US Treasury sanctions/SDN list — returns match with aliases, `address`es, `dob`, and linked
+- **`officialusa-usa-official`** (medium) — Free directory-style people lookup aggregator.
+- **`one-charliebrassington`** (high) — Use when you have an `email`, `username`, `name` or UK postcode and want a Python CLI that scrapes multiple people-search and account source
+- **`osint-san`** (medium) — Framework for rapid information discovery and user deanonymization.
+- **`osint-search-engine`** (high) — Use when you have a `name`, `username` or `email` and want to search a curated set of people/OSINT sites at once — a prebuilt Google Custom 
+- **`osint-toolkit-ayxkaddd`** (medium) — Web interface providing access to various OSINT tools and resources.
+- **`osrframework-2`** (high) — Use when you have a `username`, `email`, `phone`, or full `name` and want to enumerate accounts and profiles across many platforms from the 
+- **`patent-attorneys-agent-search`** (medium) — OSINT tool: Patent Attorneys/Agent Search.
+- **`peekyou-people-search`** (high) — Use when you have a `name` or `username` and want a free aggregation of someone's social profiles, photos and contact leads — returns `socia
+- **`peep-mail-search-tool`** (high) — Use when you have a person's `name` and their employer's `domain` and want a best-guess corporate `email` address — returns a likely email p
+- **`peepdb-person-search`** (high) — OSINT tool: PeepDB (Person Search).
+- **`people-looker-us`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want a consumer background-report aggregator to pull contact history, relat
+- **`people-search-2`** (high) — Use when you have a `name`, `phone`, or `address` and want a US people-search profile — returns address history, phone, associate (relatives
+- **`people-search-3`** (high) — OSINT tool: People Search.
+- **`people-search-engine`** (high) — Use when you have a `name` or `username` and want a Google-powered search pre-scoped to people-finder and social sites — returns web links a
+- **`people-search-find-people-over-the-internet-for-free-white-pages`** (high) — OSINT tool: People search - Find people over the internet for free - White Pages.
+- **`people-search-results-vk`** (medium) — OSINT tool: People search results | VK.
+- **`people-search-tool`** (high) — Use when you have a `name`, `username`, `email`, or `phone` and want ready-made search-engine queries across Google/Bing/Yandex/Baidu — retu
+- **`people-search`** (high) — Use when you have a `name` and want a curated jump-off directory of people-search engines to run it through — returns links to address, phon
+- **`peoplebyname-reverse-phone-lookup`** (high) — Use when you have a `phone` (or a `name`) and want the owner's name, address, age, and relatives for the US/Canada — returns contact and hou
+- **`peoplebyname-us`** (high) — Use when you have a US `name` and want a free first-pass on their address, landline phone and likely relatives — returns directory-style `ad
+- **`peoplefinders-united-states`** (high) — Use when you have a `name`, `phone` or `address` and want US contact and public-record data — returns addresses, phones, relatives and backg
+- **`peoplesearch-net`** (high) — OSINT tool: PeopleSearch.net.
+- **`peoplesearchnow`** (high) — Use when you have a `name` or `address` in the US and want a free lookup of contact and household data — returns `address` history, `phone`,
+- **`peoplesmart-us`** (high) — Use when you have a `name`, `email`, `phone`, or LinkedIn (`social-profile`) and want a business/contact-data lookup — returns name, email, 
+- **`permits-city-of-vancouver-application-permit-search-by-address`** (high) — Use when you have a Vancouver (BC) `address` and want the building/development permit applications tied to it, which often name owners, appl
+- **`person-lookup`** (high) — Use when you have a `name` or `phone` in South Africa and want the matching landline and address — returns telephone/address records and pro
+- **`pinosin`** (medium) — Framework for investigating individuals and tracking investigation progress.
+- **`pipl-com`** (high) — Use when you have a `name`/`email`/`phone` and need deep identity resolution — but note Pipl is now an enterprise fraud/identity API, no lon
+- **`political-graveyard`** (medium) — Use when you have a `name` of a US political figure (or their relative) and want biographical and burial data — returns life dates, offices 
+- **`political-moneyline-us`** (high) — Use when you have a `name` and want US political-donation and lobbying records tied to that person — returns the donor's home address, emplo
+- **`private-eye`** (high) — Use when you have a `name`, `phone`, or `email` and want a US people-search profile — returns address, phone, and associate (relatives) lead
+- **`prnewswire`** (medium) — OSINT tool: PRNewswire.
+- **`profile-engine`** (high) — OSINT tool: Profile Engine.
+- **`public-info-directory-us`** (high) — Use when you have a US `name` and want a free aggregated people/public-records profile — returns addresses, phones, relatives, and record po
+- **`publicrecordsnow`** (high) — Use when you have a `name`, `phone`, or `address` and want an aggregate people-search profile — teases addresses, phones, relatives, and bac
+- **`radaris-people-and-business-search-north-america`** (high) — Use when you have a `name`, `phone` or `address` and want a US person's contacts and associates — returns addresses, phone numbers, relative
+- **`ratsit`** (high) — Use when you have a `name` or `phone` in Sweden and want the person's address, age, and household — returns `address`, `phone`, `dob`, `asso
+- **`recordsearch-naa-gov-au`** (high) — Use when you have a `name` and want Australian federal archival records — immigration/passenger arrivals, naturalisation, service files — re
+- **`recordsfinder-people-search-ca`** (high) — Use when you have a `name` and want a data-broker aggregate profile via RecordsFinder's Canada portal — teases address/phone/associate leads
+- **`reed-uk`** (medium) — OSINT tool: Reed (UK).
+- **`reseacherid`** (medium) — OSINT tool: ReseacherID.
+- **`reunion`** (high) — Use when you follow an old Reunion.com people-finder link — the brand is retired and now redirects to MyLife, a US people-search returning `
+- **`rocketreach`** (high) — Use when you have a `name` plus an `employer-org` (or a LinkedIn `social-profile`) and want that person's professional `email` and `phone` —
+- **`rootsweb`** (high) — Use when you have a `name`/surname and want historic genealogy data — user-submitted family trees, surname lists, and archived mailing lists
+- **`rss-vk-to-rss`** (medium) — OSINT tool: ВКонтакте RSS VK to RSS.
+- **`scamdigger-com`** (high) — Use when you have a `name`, `email`, `phone`, or `ip-address` from a suspected romance/dating scammer and want matching documented scam prof
+- **`scotland-landlord-search`** (high) — Use when you have a Scottish rental-property `address` (postcode) or a landlord registration number and want to find who owns/manages it — r
+- **`scylla`** (high) — Use when you have a `username`, `phone`, or `name` and want an all-in-one recon sweep from a local CLI — returns social profiles, geolocatio
+- **`searchbug`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want cross-linked contact and background data — returns addresses, phones, 
+- **`seek-australia`** (medium) — OSINT tool: Seek (Australia).
+- **`seekout`** (medium) — OSINT tool: Seekout.
+- **`shesource`** (medium) — OSINT tool: SheSource.
+- **`simplyhired`** (medium) — OSINT tool: SimplyHired.
+- **`singlehire`** (high) — Tool for search contacts by full name, location and job title. Shows phones, emails, #Linkedin, #Facebook, #Twitter and other social media p
+- **`skip-ease`** (high) — Use when you have a `name`/`phone`/`address` and want a curated launchpad of people-search and public-record tools — a directory linking to 
+- **`skopenow-com`** (high) — Use when you have a `name` (or email/phone) and want an automated OSINT dossier on a person — returns `address`, `phone`, `email`, `social-p
+- **`slavevoyages-org`** (high) — Use when you have a historical `name` connected to the Atlantic slave trade (enslaved person or enslaver) and want biographical/voyage recor
+- **`smartbackgroundchecks`** (high) — Use when you have a US `name`, `phone`, or `address` and want a free contact profile — returns addresses, phone numbers, and relatives/`asso
+- **`snoopstation`** (high) — Use when you have a `name` (+ US state) and want a public-records/background search — returns `address`, `phone`, `associate`, and `dob` lea
+- **`social-recon`** (high) — Use when you have a `username` or `email` and want an automated sweep of their online footprint — returns social-profile, associate, and ema
+- **`socialcatfish`** (high) — Use when you have an `image`, `email`, `phone`, `username` or `name` and want a reverse-lookup that verifies identity and surfaces linked pr
+- **`sociallist-io`** (high) — OSINT tool: SocialList.io.
+- **`socialpath`** (high) — Use when you have a `username` and want to track its reuse across social platforms and profile it — returns matching profiles, activity, and
+- **`sources`** (medium) — OSINT tool: Sources.
+- **`sovaweb`** (high) — web version of a famous Russian bot in Telegram for searching by email, nickname, IMSI, IMEI, MSISDN, BTS, IP, BSSID
+- **`spokeo-com`** (high) — Use when you have a `name`, `phone`, `email`, or `address` and want an aggregated US people profile — returns address history, phone/email, 
+- **`spokeo`** (high) — Use when you have a `name`, `email`, `phone`, or `username` and want a consolidated US person report that also links social profiles — retur
+- **`spydialer-reverse-phone-lookup`** (high) — Use when you have a US `phone` and want the owner — returns owner `name`, carrier/line-type and location; also does reverse name/address/ema
+- **`spytox`** (high) — Use when you have a `name`, `phone` or `address` in the US and want a free reverse-lookup — returns `address`, `phone`, age and relatives (`
+- **`ssn-validator`** (medium) — Use when you have a US Social Security Number and want to check its validity — returns whether the SSN was validly issued, the state/era of 
+- **`starving-farmer`** (high) — Use when you have a `name` you believe belongs to a US farmer and want to place them in a state/county — returns name, address (county/state
+- **`superpages-com`** (medium) — Use when you have a US `address`, `name`, or `phone` and want white/yellow-pages data — returns listed `name`, `phone`, business listings, a
+- **`switchboard`** (high) — Use when you have a US `name` (or phone/address) and want a white-pages record — returns `address`, `phone` and relatives; now resolves to t
+- **`sysoon-deceased-database`** (high) — Use when you have a `name` and need to check whether the person is deceased — returns death record details (DOB/DOD, last known residence, b
+- **`textmagic-free-carrier-lookup`** (high) — Use when you have a `phone` number and want to know its carrier and line type — returns carrier name, mobile/landline/VoIP classification, c
+- **`thatsthem-people-search`** (high) — Use when you have a `name` (or a phone/email/address to reverse) and want a US person's contact record — returns addresses, phones, emails, 
+- **`the-law-pages`** (high) — Use when you have a `name` and want to check whether that person appears in England & Wales Crown Court criminal sentencing records — return
+- **`the-names-of-jihad-majalla-magazine`** (high) — OSINT tool: The Names of Jihad - Majalla Magazine.
+- **`the-national-archives-uk`** (high) — Use when you have a `name` and want UK historical government records — returns Discovery-catalogue hits on wills, military, immigration and 
+- **`thisnumber`** (high) — Use when you have a `name` or `phone` in a specific country and need that country's phone directory — a gateway to national white/yellow-pag
+- **`trexpertwitness`** (medium) — OSINT tool: TRExpertWitness.
+- **`truepeoplesearch`** (high) — Use when you have a US `name`, `phone`, or `address` and want current/past addresses, phone numbers, and relatives — returns address, phone,
+- **`trufflehog`** (high) — Use when you have a subject's code presence (`username`/`domain` — GitHub org, repo, site) and want secrets and contact data leaked in commi
+- **`truthfinder`** (medium) — Commercial background-report people-search; free search, paid reports.
+- **`ufind-name`** (high) — Use when you have a `name` (or a `phone`/`email`) in the US and want a consolidated people-search profile — returns addresses, phone numbers
+- **`uk-guide-to-names-and-naming-practices`** (high) — Use when you have a `name` from an unfamiliar culture and need to parse it correctly (given vs family name, honorifics, variants) before sea
+- **`uk-phone-book`** (high) — Use when you have a `name` (+ UK area) or a landline `phone` and want a directory listing — returns address and phone, with reverse lookups 
+- **`usa-official-com`** (high) — Use when you have a US `name` and want a free public-records aggregation — returns address history, phones, emails, DOB/age, relatives and l
+- **`usa-people-search`** (medium) — Commercial people-search aggregator.
+- **`username-search`** (high) — Use when you have a `username` and want to find where it exists across social, dating, gaming, forum, and crypto platforms — returns matchin
+- **`usersearch-org`** (high) — Use when you have a `username`, `email`, `phone` or profile `image` and want to find matching accounts across social/dating/gaming/crypto si
+- **`ussearch-people-search-united-states`** (high) — Use when you have a US name (optionally a city/state) and want an aggregated people report — returns addresses, phone numbers, relatives and
+- **`ussearch-us`** (high) — Use when you have a `name`, `phone`, or `address` for a US subject and want to pull an aggregated public-records profile — returns address h
+- **`vinelink`** (high) — Use when you have a `name` (or offender ID) of an incarcerated person in the US and want their custody status and facility — returns locatio
+- **`voter-records`** (high) — Use when you have a US `name` and want registered-voter data — returns `address`, approximate `dob`/age, and political-party affiliation fro
+- **`white-pages-us`** (high) — Use when you have a US `name`, `phone`, or `address` and want contact/identity details — returns current address, phone numbers, relatives/a
+- **`white-pages`** (high) — Use when you have a US `name`, `phone` or `address` and want current address, phone and relatives — returns address, phone, associate and ap
+- **`wink`** (high) — OSINT tool: Wink.
+- **`xlek`** (high) — Use when you have a `name` (+ US location) and want free public-records data — returns `address`, `phone`, `email`, `associate` plus voter/p
+- **`yandex-people-search`** (high) — Use when you have a `name` (or `username`) and want to find matching social-media profiles across many networks in one query — returns socia
+- **`yasni-2`** (high) — Use when you have a `name` and want an aggregated web/people profile — links, mentions, and contact leads pulled from across the open web — 
+- **`zaba-search`** (high) — Use when you have a US `name` (or phone) and want free current/past addresses and phone numbers — returns address, phone, age and links to f
+- **`zabasearch`** (high) — Use when you have a US `name` and want a free first-pass people search — returns current/prior `address`, `phone`, and approximate `dob`/age
+- **`zer0sint`** (low) — Tool to uncover and examine publicly accessible information.
+- **`zintro`** (medium) — OSINT tool: Zintro.
+- **`ziprecruiter`** (medium) — OSINT tool: ZipRecruiter.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

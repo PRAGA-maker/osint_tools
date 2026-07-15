@@ -11,7 +11,7 @@ selectorsIn:
 - social-profile
 - domain
 selectorsOut:
-- metadata
+- metadata-exif
 - image
 status: live
 pricing: freemium

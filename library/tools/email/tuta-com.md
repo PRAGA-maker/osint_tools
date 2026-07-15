@@ -11,7 +11,7 @@ selectorsIn:
 - email
 selectorsOut:
 - domain
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free encrypted mailbox with limited storage; paid tiers add storage, custom domains, and aliases.

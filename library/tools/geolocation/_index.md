@@ -13,36 +13,355 @@ kind: group-index
 - **`mobile-coverage/`** — 4 skill(s) below.
 
 ## Skills here
-- **`baidu-maps`** (high) — Geolocation and POI discovery in mainland China
-- **`bing-maps`** (high) — General geolocation and route context with Microsoft map data
-- **`corona`** (high) — Cold War-era historical imagery analysis
-- **`dual-maps`** (high) — Comparing two map layers or providers at the same location
-- **`earthexplorer`** (high) — Downloading historical and multispectral satellite datasets
-- **`flash-earth`** (high) — Fast satellite and weather imagery review
-- **`google-earth-overlays`** (high) — Overlaying external KML/KMZ intelligence layers on earth imagery
-- **`google-earth`** (high) — Historical satellite and terrain review in 3D
-- **`google-maps-update-alerts`** (high) — Tracking imagery refreshes for watched locations
-- **`google-maps`** (high) — General geolocation, routing, and POI correlation
-- **`here-maps`** (high) — Commercial-grade map and route analysis
-- **`hiking-and-biking-map`** (high) — Outdoor trail and route reconnaissance
-- **`historic-aerials`** (high) — Comparing land and infrastructure changes over decades
-- **`hivemapper`** (high) — Street-level imagery in areas with limited mainstream coverage
-- **`instant-google-street-view`** (high) — Quick street-level reconnaissance from an address or coordinate
-- **`landsatlook-viewer`** (high) — Long-term environmental and infrastructure change detection
-- **`mapquest`** (high) — Route analysis and multi-stop planning
-- **`naver-korean`** (high) — Geolocation and POI analysis in South Korea
-- **`nexrad-data-inventory-search`** (high) — Locating radar archives for weather-event correlation
-- **`openinfrastructuremap`** (high) — Infrastructure mapping across energy and utility networks
-- **`openrailwaymap-2`** (high) — Rail network and station infrastructure mapping
-- **`openstreetcam`** (high) — Street-level image review outside mainstream Street View coverage
-- **`openstreetmap-2`** (high) — Open basemap and geospatial reference without vendor lock-in
-- **`openstreetmap`** (high) — Open basemap and geospatial reference without vendor lock-in
-- **`overpass-turbo`** (high) — Custom extraction of OSM entities by tags and geography
-- **`skyfi-com-satellite-open-data`** (high) — Finding open and commercial satellite scenes from one interface
-- **`travel-by-drone`** (high) — Planning drone-oriented visual reconnaissance paths
-- **`us-nav-guide-zip-code-data`** (high) — Linking US zip codes to geographic lookup context
-- **`wayback-imagery`** (high) — Recent-era imagery change detection across archived basemap releases
-- **`wikimapia`** (high) — Supplementary user-labeled place context when newer sources are unavailable
-- **`yandex-maps`** (high) — Geolocation research in Russia/CIS where western maps are weaker
+- **`123cam`** (medium) — OSINT tool: 123Cam.
+- **`24timezones-com`** (medium) — OSINT tool: 24timezones.com.
+- **`511on-ca`** (low) — OSINT tool: 511on.ca.
+- **`acled-data-crisis-map`** (medium) — OSINT tool: Acled data crisis map.
+- **`acsdg`** (medium) — tool allows you to quickly mark a group of points on the map and then export their geographic coordinates to CSV.
+- **`airport-webcams`** (low) — OSINT tool: Airport Webcams.
+- **`apify-s-google-maps-scraper`** (medium) — Use when you need to bulk-extract Google Maps place data (names, addresses, phone numbers, reviews, coordinates) around a location or for a 
+- **`apps-skylens-io`** (medium) — Posts with geotags from five social networks at once on one map (Twitter, YouTube, Instagram, Flickr, Vkontakte)
+- **`aprs-on-google-maps`** (high) — Use when you have an amateur-radio callsign or an area and want real-time/historic position tracks — returns map locations, movement history
+- **`aqicn`** (medium) — Air pollution gauges on the map
+- **`arcgis-mapping-platform`** (high) — Use when you have a `geolocation`/`address` and want to view or analyse published geospatial layers (parcels, imagery, infrastructure) — ret
+- **`arcgis`** (medium) — Use when you need authoritative basemaps, imagery, demographic, boundary, or live-feed map layers to add geographic context to a location, a
+- **`arggis-military-overlay`** (medium) — Military Overlay can be used to create overlays with standard military symbols, by using and adapting existing feature templates in **ArgGis
+- **`argis-ufo-map`** (medium) — UFO sightings interactive map. USA only
+- **`astronomy-sun-moon-eclipses`** (medium) — OSINT tool: Astronomy - Sun - Moon - Eclipses.
+- **`atlas`** (low) — Use when you have your own case location data (spreadsheet/coordinates) and want to load, map, and run spatial analysis on it collaborativel
+- **`atlasify`** (low) — Use when checking an OSINT toollist reference to atlasify.com — the domain is currently unreachable (TLS/self-signed certificate error), so 
+- **`australia-ufo-map-2008`** (medium) — UFO sigthins Google Map Australia 2008
+- **`automated-transcription-for-radio-stations`** (low) — OSINT tool: Automated transcription for radio stations.
+- **`average-gamma-dose-rate-map`** (medium) — Shows measurements of environmental radioactivity in the form of gamma dose rate for the last 24 hours. These measurements originate from so
+- **`baidu-maps`** (medium) — Use when a person, address, or photo points to mainland China and you need the local-quality map, POIs, satellite, and street-level Panorama
+- **`batchgeo`** (medium) — Use when you have a spreadsheet/list of addresses and want to drop them onto an interactive, shareable map fast — no GIS account or setup.
+- **`baton-rouge-traffic-cams`** (low) — OSINT tool: Baton Rouge Traffic Cams.
+- **`bellingcat-openstreetmap-search`** (medium) — A user interface to search OpenStreetMap data for features in proximity to each other.
+- **`bfro-bigfoot-sightings-database`** (medium) — This comprehensive database of credible sightings and related reports is maintained by an all-volunteer network of bigfoot/sasquatch researc
+- **`bigfoot-and-ufo-map`** (medium) — Bigfoot, UFO and other sightings around USA and Europe
+- **`bigfoot-sightings-and-density-of-the-us-with-biomes`** (medium) — Bigfoot sightings reports density around the USA
+- **`bing-maps`** (medium) — Use when you need a second mapping/imagery source — Microsoft aerial and 3D views, directions, and business search — to confirm a location o
+- **`birdhunt-2`** (high) — Use when you have a `geolocation`/`address` and want tweets posted from or tagged near that spot on a map — returns social-profile handles a
+- **`broadcastify`** (low) — OSINT tool: Broadcastify.
+- **`c4-cams`** (low) — OSINT tool: C4-cams.
+- **`calcmaps`** (medium) — Simple online map tools: Calculate area (triangles, quadrilaterals and complex polygons), Calculate distance (for complex routes), Measure r
+- **`calls-node-status`** (low) — OSINT tool: Calls Node Status.
+- **`camhacker-com`** (low) — OSINT tool: Camhacker.com.
+- **`camvista`** (medium) — OSINT tool: CamVista.
+- **`carte-ma`** (medium) — Mapping/streetview service for Morocco
+- **`cartodb`** (low) — Use when you have a sizeable spatial dataset (addresses, coordinates, geometries) and need cloud-based mapping, SQL/spatial analysis, and sh
+- **`cellular-towers-map-canada`** (medium) — Use when you have a Canadian `geolocation`/`address` and want to identify nearby licensed cellular tower sites and their operators — returns
+- **`citizen-com`** (medium) — live map of incidents (mainly shooting) that happened in the last hours in major U.S. cities
+- **`city-webcams-com`** (low) — OSINT tool: city-webcams.com.
+- **`collection-of-cadastral-maps`** (medium) — 41 countries
+- **`colorbrewer`** (low) — Use when building a thematic/choropleth map and you need a perceptually sound, colorblind-safe color palette — it outputs ready-to-use color
+- **`copernix`** (medium) — Worldwide map of geolocated Wikipedia articles. It's possible to enter the name of a locality to see articles about local streets or attract
+- **`corona`** (low) — Use when you need declassified 1960s–70s CORONA spy-satellite imagery of a location for historical landscape analysis — returns georeference
+- **`crimemapping-com`** (medium) — pick a state, a police agency, and what crimes and where were committed in the territory under its control in the last 24 hours, a week, or 
+- **`crisisgroup`** (medium) — OSINT tool: Crisisgroup.
+- **`crowdmap`** (low) — Use when you want to aggregate and map crowdsourced incident/sighting reports — but note Crowdmap (Ushahidi's hosted platform) has been disc
+- **`ctlrq-address-lookup`** (high) — Use when you need to convert between a map pin/coordinates and a street address — drop a pin to get the address, or enter an address to get 
+- **`currentmillis-com`** (medium) — OSINT tool: currentmillis.com.
+- **`cybermap`** (high) — Use when you want a real-time global picture of cyberattack activity by country — Kaspersky's live threat map returns `geolocation`-tagged a
+- **`cyclocane`** (medium) — click on the hurricane on the map and get detailed information about it
+- **`datacore-gn-unepgrid-ch`** (medium) — OSINT tool: Datacore-gn.unepgrid.ch.
+- **`default-router-login`** (low) — OSINT tool: Default Router Login.
+- **`degulesider-mapping-program-for-europe-denmark`** (high) — Use when you have a Danish `address` or `geolocation` and want a street-level map with business/address context and aerial/street imagery — 
+- **`demo-4map-com`** (medium) — 3D interactive world map
+- **`digikam`** (high) — Use when you have a batch of images and need to read/map their EXIF GPS and metadata at scale — an open-source photo manager that geotags, m
+- **`dual-maps`** (high) — Use when geolocating a spot and you want Google map, satellite, and Street View synchronized in one view — pan one panel and the others foll
+- **`dualmaps`** (high) — Use when you have a coordinate or address and want side-by-side map, aerial, and Street View of the same spot to confirm a location.
+- **`earth-engine-dataset`** (medium) — OSINT tool: Earth Engine Dataset.
+- **`earthexplorer`** (high) — Use when you have an area of interest and need historical or multispectral satellite/aerial imagery for a specific date to corroborate timel
+- **`emmeline-carto-com`** (medium) — OSINT tool: emmeline.carto.com.
+- **`emporis-buildings-map`** (medium) — world map showing notable buildings. For each object you can find out the height, number of floors, type, and purpose
+- **`environmental-investigation-agency`** (low) — Use when researching environmental-crime investigations, reports, or geographic case context — not a person-search or coordinate tool.
+- **`epoch101-com`** (medium) — OSINT tool: epoch101.com.
+- **`epochconverter-com`** (medium) — OSINT tool: epochconverter.com.
+- **`epochconverter-io`** (medium) — OSINT tool: epochconverter.io.
+- **`esri-arcgis-online-mapping-program`** (high) — Use when you have a `geolocation`/`address` and want to view and cross-reference rich GIS layers (satellite, parcels, infrastructure, demogr
+- **`esri`** (high) — Use when you need professional GIS mapping, ArcGIS basemaps/imagery, or geocoding to plot and analyze case locations.
+- **`european-world-translator`** (medium) — Enter the word in English to see its translation into different European languages on the map.
+- **`everymountainintheworld`** (medium) — Map of the world showing the mountains (with absolute and relative altitude and links to Peakbagger, Listsofjohn and Caltopo).
+- **`explorecams-com`** (low) — OSINT tool: Explorecams.com.
+- **`fao-map-catalog`** (medium) — OSINT tool: FAO Map Catalog.
+- **`feeds-talonvoice-com`** (low) — OSINT tool: Feeds.talonvoice.com.
+- **`felt`** (medium) — FREE online tool for creating map-based visualizations: - put labels with names and descriptions - draw lines and routes - choose from hundr
+- **`find-food-support`** (medium) — find places where you can get free food by address (USA)
+- **`fisgonia`** (low) — OSINT tool: Fisgonia.
+- **`flash-earth-2`** (high) — Use when referencing the legacy flashearth.com satellite viewer — it relied on Adobe Flash and is effectively defunct; use zoom.earth instea
+- **`flash-earth`** (high) — Use when you need recent/near-real-time satellite and weather imagery for an area to check conditions around a date or location.
+- **`flickr-common-map`** (medium) — displays only Flickr photos distributed under a Creative Commons license (250 of the latest for each location)
+- **`forensicosint-com-4`** (medium) — OSINT tool: forensicosint.com.
+- **`foursquare`** (high) — Use when you have a `geolocation`/`address` or a venue and want place details, photos, and user tips — returns venue `geolocation`, `address
+- **`free-wifi-search-engine`** (low) — OSINT tool: Free WiFi Search Engine.
+- **`freedomhouse-org`** (medium) — map of the world that shows the scores of different countries on the following indicators (on a scale of 1 to 100)
+- **`freemaptools`** (high) — Use when you have a `geolocation` or `address`/postcode and want to measure radius/distance, convert coordinates, or find places within an a
+- **`frontex-migratory-map`** (medium) — click on a country or region to see how many illegal border crossings have been reported there in the last six months.
+- **`gaisma`** (medium) — A site for those who verify the location of a photo by the position of the sun. It is very much inferior in functionality to http://timeandd
+- **`gdal3-js-org`** (medium) — One of the main problems of using geospatial data in investigations is the large number of applications for working with it, which save the 
+- **`geodesics-on-the-earth`** (medium) — finding the shortest path between two points
+- **`geogig`** (low) — Use when you need to version, branch, and merge large geospatial datasets like Git for GIS — a data-engineering tool, not a lookup.
+- **`geogratis-canada`** (high) — Use when you have a Canadian `geolocation` or `address`/area and want free official maps, aerial imagery, topographic data and place names —
+- **`geohints`** (medium) — GeoHints is a website that provides information about things like traffic lights, utility poles, bollards etc. for different regions of the 
+- **`geoinfer`** (medium) — Use cautiously — listed as a geolocation tool but the site returns 404 and capabilities are unconfirmed; treat as unverified.
+- **`geoint-py`** (medium) — OSINT tool: geoint-py.
+- **`geoint-search`** (medium) — OSINT tool: GeoINT Search.
+- **`geoint`** (medium) — OSINT tool: GEOINT.
+- **`geoip-tracker-tool`** (medium) — OSINT tool: GeoIP Tracker tool.
+- **`geonames-2`** (medium) — Geographical names database with coordinates.
+- **`geonames`** (high) — Use when you have a place name, postal code, or coordinate and need to resolve it to canonical lat/long, admin region, or nearby place names
+- **`geoplatform-portal`** (medium) — OSINT tool: GeoPlatform Portal.
+- **`geoportail-france`** (high) — Use when you have a French `address`/`geolocation` and want authoritative national maps and imagery — returns high-res aerial photos, cadast
+- **`geoprotests-api`** (medium) — OSINT tool: geoprotests API.
+- **`geoseer-net`** (medium) — OSINT tool: Geoseer.net.
+- **`geovisual-search`** (medium) — Use when you want to find places that look like a chosen feature in satellite imagery (visual similarity search across the globe).
+- **`global-biodiversity-information-facility`** (medium) — Enter the name of an animal, bird or plant to see a map of where it has been spotted.
+- **`global-conflict-tracker`** (medium) — OSINT tool: Global Conflict Tracker.
+- **`global-flood-database-and-interactive-map`** (medium) — Detailed statistics on floods over the last 15 years (worldwide): precipitation levels, flooded area, number of people affected, dates, dura
+- **`global-incident-map`** (high) — Use when you have a `geolocation`/region and want situational context — returns a map of reported terrorism, suspicious activity, and other 
+- **`global-terriorism-database`** (medium) — Info about more than 200,000 terrorist incidents from 1970 to 2020 (worldwide): - dozens of advanced search options; - statistical data for 
+- **`global-wetlands-map`** (medium) — Interactive map of open waters, mangroves, swamps, fens, riverines, floodswamps, marshs, wet meadows and floodplains (unfortunately, there a
+- **`globalfishingmap`** (medium) — click on a point on the map and get the data on the current fishing effort at that location.
+- **`gmaps-extractor`** (medium) — Extract data from placemarks
+- **`google-earth-overlays`** (medium) — Use when you want to layer external map grids, charts, or KML/KMZ data over Google Earth imagery for cross-referencing a location.
+- **`google-earth-pro`** (high) — Use when you need a deep historical-imagery timeline, measurement, and high-quality exports for a location — the desktop power version of Go
+- **`google-earth`** (high) — Use when you have a location and want 3D terrain, global high-res imagery, and measurement to study a site or last-known area.
+- **`google-maps-scraper`** (medium) — Enter search terms (ex "Boston museum") and scrape adresses, phone, websites and other place info from Google Maps.
+- **`google-maps-timeline-exporter`** (medium) — If your Google account has once enabled collecting data about your location (link for checking https://timeline.google.com/maps/timeline), t
+- **`google-maps-update-alerts`** (high) — Use when you have a `geolocation`/`address` of interest and want to be notified when Google's satellite/aerial imagery of that spot refreshe
+- **`google-maps`** (high) — Use when you have an address or coordinate and need Street View, routing, POIs, or to ground-truth a location at street level.
+- **`google-my-maps`** (high) — Use when you have multiple `geolocation`/`address` points and want to plot, annotate, and visually correlate them on a shared custom map.
+- **`googleearth`** (high) — Use when you have an `address` or `geolocation` and want to study the place — satellite/3D imagery, historical timeline, terrain and measure
+- **`googlestreetview`** (high) — Use when you have a `geolocation`/`address` (or photo clues) and want to see the place at ground level — returns street-level imagery to ver
+- **`gps-visualizer`** (high) — Use when you have an `address` or `geolocation` and want to convert between them or plot points on a map — returns latitude/longitude, addre
+- **`grassgis`** (medium) — Use when you need heavy-duty desktop GIS analysis of raster/vector `geolocation` data — terrain, viewshed, imagery — beyond what a web map o
+- **`ham-radio-qrz-callsign-database-search`** (low) — OSINT tool: Ham Radio QRZ Callsign Database Search.
+- **`hate-map`** (medium) — OSINT tool: Hate Map.
+- **`haunted-places`** (medium) — Google Earth map of ghost sightings around the world
+- **`hawaii-traffic-cameras`** (low) — OSINT tool: Hawaii Traffic Cameras.
+- **`here-2`** (high) — Use when you have an `address`/`geolocation` and want maps, routing, and location context from HERE's mapping platform (alternative basemap 
+- **`here-com-geolocation-and-mapping-tool`** (medium) — Use when you have an `address` or coordinates and want an alternative map view — returns `geolocation`, satellite/street imagery, and routin
+- **`here-maps`** (high) — Use when you have an `address`/`geolocation` and want an interactive map, satellite view, and routing from HERE as a cross-check against Goo
+- **`hiking-and-biking-map`** (high) — Use when you have a `geolocation` search area and need trail, path, and terrain detail (footpaths, cycle routes) not shown on standard road 
+- **`historic-aerials`** (high) — Use when you have a `geolocation`/`address` and need decades of historical aerial photos and topo maps to see how a site changed over time.
+- **`hivemapper`** (medium) — Use when you have a `geolocation` and want recent crowdsourced/dashcam street-level imagery, sometimes fresher than Google Street View.
+- **`hong-kong-traffic-data-and-cams`** (low) — OSINT tool: Hong Kong Traffic Data & Cams.
+- **`honolulu-traffic-cams`** (low) — OSINT tool: Honolulu Traffic Cams.
+- **`hungermap`** (medium) — Worldwide Hunger Map
+- **`huntel-io`** (medium) — get a list of links to Facebook/Instagram locations linked to geographic coordinates
+- **`i-know-where-your-cat-lives`** (medium) — geottaged photo from Instagram with #cat hashtag
+- **`i-see-you-iseeyou`** (medium) — Bash/JS tool to find a user's exact location during social-engineering or phishing.
+- **`imb-piracy-and-armed-robbery-map`** (high) — Use when you have a `geolocation` or maritime region and want reported piracy/armed-robbery incidents there — returns geolocation and incide
+- **`inspire-geoportal-eu`** (medium) — OSINT tool: Inspire-geoportal.eu.
+- **`inspire-geoportal`** (medium) — Use when you need official EU spatial datasets (boundaries, addresses, land use, transport) for a `geolocation` in a European member state.
+- **`instahunt-2`** (high) — Use when you have a `geolocation` (a map point/area) and want Instagram posts tagged there — returns location-tagged posts, the `username`/`
+- **`instant-google-street-view`** (high) — Use when you have an `address`/`geolocation` and want an immediate, navigable Google Street View panorama of that exact spot.
+- **`instantatlas`** (low) — Use when you need to build interactive thematic/statistical maps and dashboards from your own area-level data — a reporting tool, not a peop
+- **`ipligence-ip-address-geolocation-program`** (high) — Use when you have an `ip-address` or `domain`/hostname and want its approximate city/country location — returns geolocation and a coarse add
+- **`isric-data-hub`** (medium) — OSINT tool: ISRIC Data Hub.
+- **`kartaview`** (high) — Use when you have a `geolocation` and want free, open, crowdsourced street-level imagery as an alternative to Google Street View.
+- **`kartograph`** (low) — Use when you (as a developer) want to render custom interactive SVG maps from your own geodata — a map-making library, not a lookup tool.
+- **`lake-county-fire-cameras`** (low) — OSINT tool: Lake County Fire Cameras.
+- **`land-viewer`** (high) — Use when you have a `geolocation`/`address` and want recent and historical satellite imagery (multispectral, time-slider) to inspect a site 
+- **`landsatlook-viewer`** (high) — Use when you need to confirm or date a rural/wilderness location from satellite imagery — returns Landsat scenes and acquisition metadata fo
+- **`latitude-longitude-finder`** (high) — Use when you have an `address` or a `geolocation` and want to convert between them — returns lat/long coordinates for an address, or the add
+- **`latlong`** (high) — Use when you need to turn an address or place name into precise lat/lon coordinates (or back) — returns a geolocation.
+- **`leaflet`** (high) — Use when you need to build a custom interactive web map to plot OSINT findings — a developer library, not a lookup service.
+- **`light-pollution-world-map`** (medium) — showing the degree of light pollution in different countries. It's possible to see the data over time (since 2013)
+- **`lightingmaps`** (medium) — lightning strikes in real time and also data on thunderstorms that ended months or years ago
+- **`live-bar-and-pub-webcams`** (low) — OSINT tool: Live Bar and Pub Webcams.
+- **`live-cams-iplivecams`** (low) — OSINT tool: Live Cams \| Iplivecams.
+- **`live-world-webcam`** (low) — OSINT tool: Live World Webcam.
+- **`localfocus-nl-geokit`** (medium) — geographic toolkit for investigative journalists
+- **`localtimes-info`** (medium) — OSINT tool: localtimes.info.
+- **`lookr`** (medium) — OSINT tool: Lookr.
+- **`lost-places-map`** (medium) — A map of independent research reports on urban spaces that are published in the Lost places Facebook community
+- **`lostplace-atlas`** (medium) — Google map of lost places in Germany and other Europe countries
+- **`lubbock-live-traffic-cameras`** (low) — OSINT tool: Lubbock Live Traffic Cameras.
+- **`macrostrat-s-geologic-map-system-integrates-over-290-bedrock-geologic-maps-from-around-the-world-into-a-single-multisca`** (medium) — Macrostrat's geologic map system integrates over 290 bedrock geologic maps from around the world into a single, multiscale database (c).
+- **`map-army`** (medium) — Online tool for creating schemes of battles and military operations on the map. Extensive customization possibilities and a huge library of 
+- **`map-fight`** (medium) — compare size of two countries
+- **`map-maker`** (high) — Use when you need free forward/reverse geocoding or a quick custom map from an address — returns lat/lon coordinates (maps.co geocoding).
+- **`map-view-ngmdb`** (medium) — map for exploring some geologic maps and articles from the NGMDB (National Geologic Map Database).
+- **`mapalist`** (medium) — Use when you want to batch-plot a spreadsheet of addresses onto one map — geocodes an address list to mapped points (likely defunct; verify)
+- **`mapbox`** (medium) — Use when you need to build custom maps, geocode at scale, or run isochrone/routing queries via API — a mapping platform, not an investigativ
+- **`mapchart-net`** (low) — Use when you need to create a custom colored/annotated reference map (regions, coverage areas) for a case briefing — a map-making tool, not 
+- **`mapchecking`** (low) — Use when you need a defensible crowd-size estimate for an area in a photo/video — returns an estimated headcount for a drawn geolocation pol
+- **`maperitive`** (low) — Use when you need to render or export custom OpenStreetMap maps/tiles offline on the desktop — a map-rendering app, not a lookup service.
+- **`maphub`** (high) — Use when you need to plot case locations (markers, areas, imported GeoJSON) on a shareable interactive map — a no-code mapping tool, not a d
+- **`mapillary`** (high) — Use when you need crowd-sourced street-level imagery to verify or geolocate a place from a photo — returns dated ground-level views for a ge
+- **`mapjam`** (low) — Use when you want to make a simple stylized custom map with points of interest — a basic map maker that appears defunct; verify before relyi
+- **`mapline`** (medium) — Use when you need to plot a large spreadsheet of addresses on a map with territories and heat layers — a business data-mapping platform (pai
+- **`mapnificent`** (medium) — Choose a city on the world map, then select an address on the map and see what places you can get to by public transport in a certain time i
+- **`mapquest-maps-and-directions`** (high) — Use when you have an `address` or `geolocation` (lat/long) and want to map it, get directions/travel times, or reverse-geocode coordinates t
+- **`mapquest`** (high) — Use when you need geocoding, routing, or distance/ETA between locations — returns coordinates, turn-by-turn routes, and travel metrics for a
+- **`maps-app-by-apple`** (high) — Use when you have an `address` or `geolocation` and want to see and verify a location — returns satellite/3-D imagery, street-level "Look Ar
+- **`measuremaponline`** (medium) — tool for drawing rectangles, circles and complex polygons on a world map to measure their area and perimeter
+- **`measuretool-googlemaps-v3`** (medium) — Measurement tool for #GoogleMaps.
+- **`meteoblue`** (medium) — Weather stats data
+- **`metrocosm`** (high) — A collection of maps and other data visualization projects
+- **`mgrs-mapper`** (medium) — Build and share custom maps with standard military graphics using a simple visual interface (paod)
+- **`mindat-org`** (medium) — mineral maps for different countries
+- **`modest-maps`** (low) — Use when a developer needs a lightweight library to build a custom slippy-map viewer — not a lookup tool for finding a person.
+- **`monitor-tracking-civic-space-worldwide-map`** (medium) — Civicus (@CIVICUSalliance)
+- **`mooncalc`** (high) — Use when an outdoor photo shows the moon and you need its azimuth/elevation/phase at a date+place to confirm or break a claimed time and loc
+- **`mozilla-location-service`** (low) — OSINT tool: Mozilla Location Service.
+- **`murph-live`** (low) — OSINT tool: @murph\_live.
+- **`native-land-ca`** (medium) — click on the point on the map and find out: - what nation this area used to belong to; - what language was once spoken there; - a historical
+- **`natural-hazards-map-worldwide`** (medium) — Enter location and assess the risk of flooding, earthquakes and hail in this place on the map.
+- **`naver-korean`** (high) — Use when a location is in South Korea and you need accurate maps, street view (Roadview), POIs, and addresses that Google Maps covers poorly
+- **`ncei-noaa-gov`** (medium) — Natural Hazards Viewer (worldwide)
+- **`nest-cam-directory`** (low) — OSINT tool: Nest Cam Directory.
+- **`nexrad-data-inventory-search`** (medium) — Use when you need to prove or check the weather at a US place and time — pull archived NWS Doppler radar for chronolocation and timeline cor
+- **`nga-geoint`** (low) — Use when you need open-source geospatial libraries/datasets (GeoServer plugins, geodata tools) from the US National Geospatial-Intelligence 
+- **`ngdc-bathymetry-map`** (medium) — worldwide detailed interactive bathymetry map
+- **`nyc-crime-map`** (high) — Use when you have a New York City `address` or `geolocation` and want the local crime picture — returns mapped NYPD crime incidents by area,
+- **`ocearch-shark-tracker`** (medium) — Click on a shark on the world map and find out its name, size and travel log.
+- **`old-maps-online`** (high) — Use when you have a `geolocation` or place `address` and want historical maps of that spot across time — returns historical map imagery and 
+- **`oldmapsonline`** (medium) — World aggregator of old maps from various sources (498,908 maps)
+- **`open-benches`** (medium) — Worldwide map of 22,756 memorial benches (added by users).
+- **`open-street-map`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its features, POIs, and tags — without vendor
+- **`openindoor`** (medium) — A world map where you can see how different buildings look from the inside (number of floors, location of stairways, rooms, doors, etc.). Th
+- **`openinfrastructuremap`** (medium) — Use when an image or area shows power lines, pylons, substations, or telecom masts and you want to identify/confirm a location by its infras
+- **`openlayers`** (low) — Use when you are building a custom geospatial web app and need a powerful JS map library to display layers, imagery, and analysis results — 
+- **`openrailwaymap-2`** (medium) — Use when a photo or area shows railway tracks, stations, signals, or catenary and you want to identify/confirm a location by its rail infras
+- **`openstreetcam-2`** (medium) — OSINT tool: Openstreetcam.
+- **`openstreetcam`** (high) — Use when Google/Bing Street View lacks coverage and you need crowdsourced street-level imagery to confirm a scene, sign, or building at a lo
+- **`openstreetmap-2`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry. (Dup
+- **`openstreetmap-overpass-turbo-taginfo-database`** (medium) — 694 tags for different objects (buildings, trees, streams etc), 5684 keys, 45 relations (routes, streets etc)
+- **`openstreetmap`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry.
+- **`openswitchmapsweb`** (medium) — One of the most powerful map switches I've ever seen. It allows you to see data for the same location in 160+ different services (some of th
+- **`opentopia`** (low) — OSINT tool: Opentopia.
+- **`osm-finder`** (medium) — A tool for automate work with Overpass Turbo. Upload a photo, mark a line on the map roads, railroads, power lines and get a ready-made quer
+- **`osm-smart-menu`** (medium) — Google Chrome extension to switch between dozens of different types of online maps (based on #OpenStreetMap and NOT only)
+- **`osmaps-radius`** (medium) — drawing circles with a certain radius on the map
+- **`osmbuildings-org`** (medium) — world map showing notable buildings. For each object you can find out the height, type, and purpose.
+- **`outage-map`** (low) — OSINT tool: Outage map.
+- **`overpass-api`** (medium) — This simple online tool shows Open Street Map changes over a certain date range.
+- **`overpass-turbo`** (high) — Use when you need to find every place matching specific features (e.g., all schools/churches/diners with a feature) within an area — query O
+- **`pastvu-com`** (medium) — View historical photos taken at a particular location on a map.
+- **`peakfinder`** (high) — Use when an outdoor photo shows a mountain skyline and you want to identify peaks or confirm/narrow the camera location by matching the hori
+- **`pedestriansfirst`** (medium) — Evaluate the pedestrian friendliness of streets in different cities. There is a lot of detailed data that will be useful both for choosing a
+- **`perry-castaneda-library`** (high) — Use when you have a place name or region and need historical/topographic/political reference maps to interpret a geolocation.
+- **`photo-map-ru`** (medium) — Geotagged VK posts.
+- **`pic2map`** (high) — Use when you have a photo and want to extract embedded EXIF/GPS metadata and plot the capture location on a map.
+- **`pictimo`** (medium) — OSINT tool: Pictimo.
+- **`plowto`** (low) — OSINT tool: PlowTO.
+- **`police-crime-maps-uk`** (medium) — Use when you have a UK `address`/`geolocation` and want the area's recent recorded-crime picture plus the local policing team — returns stre
+- **`polymaps`** (low) — Use when you are a developer building a custom slippy-map web visualization with SVG/vector tiles, not for ad-hoc lookups.
+- **`poweroutage`** (medium) — Map with real-time power outage statistics by country and region.
+- **`presto-map-lead-extractor`** (medium) — Converts information about labels on Google Maps to CSV or XLSX
+- **`python-overpy`** (medium) — Old (but it's still working) and simple command line #python tool for access Overpass Turbo API.
+- **`qgis`** (high) — Use when you need to overlay, measure and analyze geospatial layers (imagery, terrain, coordinates) for serious location analysis.
+- **`quickmaps`** (medium) — Use when you want a one-click Chrome extension to map highlighted text (an address or coordinates) without leaving the page.
+- **`r4ven`** (medium) — Tracks GPS location and captures device/IP information via a hosted link.
+- **`radio-locator`** (low) — OSINT tool: Radio-Locator.
+- **`radio-sherlock`** (low) — OSINT tool: Radio-Sherlock.
+- **`radiocells-org`** (low) — OSINT tool: Radiocells.org.
+- **`radioid-database`** (low) — OSINT tool: RadioID Database.
+- **`radioreference`** (low) — OSINT tool: RadioReference.
+- **`rain-alarm`** (medium) — shows where it is raining on the map. You can enable notification of approaching rain (in the browser and in the mobile app)
+- **`rally-maps`** (medium) — A worldwide map showing thousands of race (regular and one-off) locations. It's possinle to find names of winners, routes, dates and other d
+- **`residential-fire-fatalities-in-indiana`** (medium) — OSINT tool: Residential Fire Fatalities in Indiana.
+- **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.
+- **`rfsearch-com`** (low) — OSINT tool: Rfsearch.com.
+- **`riskmap`** (medium) — OSINT tool: RiskMap.
+- **`rivermap`** (medium) — Online map with the most detailed information on Europe's rivers (mostly central for the time being, but the data is being updated): directi
+- **`safe-airspace`** (medium) — (Conflict Zone & Risk Database) worldwide map showing the countries where flying over may be dangerous; detailed history of incidents and of
+- **`sas-planet`** (high) — Use when you need to download and cache high-res satellite/aerial imagery from many providers for offline geolocation work.
+- **`satellites-pro`** (high) — Use when you have coordinates or a place and want a quick free web view of satellite imagery and map layers.
+- **`satintel`** (low) — Use when you need satellite reconnaissance (orbital/TLE data, satellite tracking) rather than ground geolocation of a person.
+- **`scanmap`** (low) — OSINT tool: Scanmap.
+- **`scribble-maps`** (high) — Use when you need to draw markers, shapes and notes on a map and share or export an annotated investigative map.
+- **`seeker`** (medium) — Accurately locate smartphones using social engineering (geolocation via crafted phishing page).
+- **`sentinel-hub`** (high) — Use when you need dated, recent satellite imagery of an area to detect change over time or confirm current ground conditions.
+- **`shademap`** (medium) — ShadeMap is a global simulation of mountain, building & tree shadows for a given date & time. Base data is free, but users can buy 30cm accu
+- **`shadow-finder`** (medium) — To analyse shadows in source imagery, Shadow Finder maps all points on the earth where a shadow of given length could occur at a given date 
+- **`shadowmap`** (medium) — Global map of 3D buildlings and the shadows they cast at a specific time a day
+- **`site24x7-com`** (medium) — OSINT tool: site24x7.com.
+- **`skydb`** (medium) — Worldwide database of skyscrapers and tall buildings.
+- **`skyfi-com-satellite-open-data`** (high) — Use when you need to find or order higher-resolution open and commercial satellite scenes for a specific area and date.
+- **`smappen`** (medium) — Online tool to calculate the distance a person can travel from a given point in a given time (on foot, by car, by bicycle, by train, by truc
+- **`snaptrends`** (high) — Location-based social media insight tool used to monitor, analyze, and visualize publicly available social media posts
+- **`soar`** (medium) — Use when you want to browse a community digital atlas of maps and imagery layers for an area, beyond standard basemaps.
+- **`sondehub`** (medium) — Worldwide map of radiosondes with detailed info (altitude, coordinates, frequency, manufacturer, sonde-type and much more)
+- **`spot`** (medium) — A natural language interface for querying the OpenStreetMap database to find locations which meet the search criteria described by the user.
+- **`storymaps`** (medium) — Use when you need to build a narrative, map-driven report combining locations, imagery and text for presentation.
+- **`street-art-cities`** (medium) — Worldwide street artworks online map: 1,443 cities and counting, 51,510 artworks, 100 countries and 260 verified artists
+- **`sun-rise-noon-and-set-time-and-direction`** (medium) — OSINT tool: Sun rise, noon, and set time and direction..
+- **`sunearthtools-com`** (medium) — OSINT tool: SunEarthTools.com.
+- **`surging-seas-risk-zone-map`** (medium) — Map of points where there is a risk of significant sea level rise in the event of melting glaciers.
+- **`surveillance-under-surveillance`** (low) — OSINT tool: Surveillance under Surveillance.
+- **`tableau`** (medium) — Use when you have a spreadsheet of geocoded points (sightings, addresses, ping data) and need to plot and explore them on an interactive map
+- **`taste-atlas`** (medium) — Worldwide online map of national cuisine. There are thousands of dishes typical of countries or regions as a whole, as well as small towns.
+- **`terrafly-map-united-states`** (high) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery plus overlaid local point-data for that spot — returns imagery
+- **`the-haunted-map`** (medium) — A map of haunted locations where ghost sightings have been reported around the world. Based by data from http://ghostresearchinternational.c
+- **`the-meddin-bike-sharing-world-map`** (medium) — 8 million+ bikes in one map. There is information about rental stations that have recently closed or suspended their activities.
+- **`the-painted-planet`** (medium) — Click on a point on the map to get a list of landscapes by famous artists depicting the area.
+- **`the-webcam-network`** (low) — OSINT tool: The Webcam Network.
+- **`thingful`** (low) — OSINT tool: thingful.
+- **`time-is`** (medium) — OSINT tool: time.is.
+- **`timeanddate-com-2`** (medium) — OSINT tool: timeanddate.com.
+- **`timeanddate-com-3`** (medium) — OSINT tool: timeanddate.com.
+- **`timeanddate-com`** (medium) — OSINT tool: timeanddate.com.
+- **`timeanddate`** (high) — Use when you need precise sunrise/sunset/twilight, timezone, or weather-history facts for a place and date to validate a photo's timestamp o
+- **`timejones-com`** (medium) — OSINT tool: timejones.com.
+- **`timestamp-converter-com`** (medium) — OSINT tool: timestamp-converter.com.
+- **`toronto-area-live-traffic-cams`** (low) — OSINT tool: Toronto area Live Traffic Cams.
+- **`toronto-live`** (medium) — OSINT tool: Toronto Live.
+- **`tpscalls-live`** (low) — OSINT tool: tpscalls.live.
+- **`travel-by-drone`** (medium) — Use when you need aerial/drone video of a specific area to understand terrain, access routes, or scene layout that street-level and satellit
+- **`trendsmap-com`** (medium) — Explore most popular #Twitter trends, hashtags and users on the worldmap
+- **`ufo-reporting-map`** (medium) — YouMap of UFO sightings reporting around the USA
+- **`ukraine-live-cams`** (low) — OSINT tool: Ukraine Live Cams.
+- **`unixtime-org`** (medium) — OSINT tool: unixtime.org.
+- **`unixtimestamp-com`** (medium) — OSINT tool: unixtimestamp.com.
+- **`urbex-database-map`** (medium) — Europe lost places map based by Urbex database
+- **`us-crisis-monitor`** (medium) — OSINT tool: US Crisis Monitor.
+- **`us-nav-guide-zip-code-data`** (medium) — Use when you have a US ZIP code or coordinates and need to resolve it to county/FIPS, lat-long, area code, and nearby-ZIP radius context.
+- **`usa-fishermap`** (medium) — when you click on a freshwater body of water, its detailed map opens, on which the depth at different points is marked
+- **`vdot-traffic-cams`** (low) — OSINT tool: VDOT Traffic Cams.
+- **`ventusky-com`** (medium) — collection of weather map (wind, rain, temperature, air pressure, humidity, waves etc)
+- **`viamichelin`** (medium) — Use when you need driving routes, distances, ETAs, and toll/fuel cost estimates between two places to test whether a journey or timeline is 
+- **`view-in-google-earth`** (medium) — Use when you have coordinates or a map view and want to open them in Google Earth (via a generated KML link) for 3D/historical-imagery inspe
+- **`virtual-globe-trotting`** (medium) — Add latitude and longitude to the URL to see the nearby : Unusual and funny images from Google Street View; Interesting parts of the satelli
+- **`wayback-imagery`** (high) — Use when you need to see how a location's satellite imagery looked on specific past dates — to detect change, date a structure, or match an 
+- **`waze-livemap`** (high) — Use when you have a `geolocation` or `address` and want real-time, crowd-sourced traffic, incidents and road reports at that location — retu
+- **`webcam-live`** (low) — OSINT tool: WEBCAM LIVE.
+- **`webcam-nl-nl`** (medium) — OSINT tool: Webcam.nl (NL).
+- **`webcam-search-engine`** (low) — OSINT tool: Webcam Search Engine.
+- **`webcams-abroad-live-images`** (low) — OSINT tool: Webcams Abroad live images.
+- **`webcams-travel`** (medium) — OSINT tool: Webcams.travel.
+- **`webcamtaxi`** (low) — OSINT tool: Webcamtaxi.
+- **`what3words-2`** (high) — Use when you have a `geolocation`/`address` or a three-word address and want to convert between them — returns the precise 3m-square locatio
+- **`whatiswhere-com`** (medium) — OpenStreetMap based free POI (point of interest) search. 102 types of objects
+- **`whatiswhere`** (high) — Use when you have a `geolocation` or `address` and want to enumerate every nearby point-of-interest by type/keyword — returns `geolocation` 
+- **`wheelmap-org`** (medium) — map shows public places that are accessible and partially accessible to #wheelchair users
+- **`whereis-com-maps-of-australia`** (medium) — Use when you have an Australian `address` or place and want to map, verify, and geolocate it (coordinates, directions, nearby context) — ret
+- **`whereisthisplace`** (high) — Use when you have an `image` and want an AI's best guess at where it was taken — returns coordinates, a place name and supporting reasoning.
+- **`whodidit`** (medium) — Click on an area on the OpenStreetMap to get a list of nicknames of users who have made changes on it (with dates).
+- **`whoishere-py`** (medium) — WiFi client detection tool that identifies people by naming devices seen issuing wireless probe requests.
+- **`wifispc-com`** (low) — OSINT tool: Wifispc.com.
+- **`wikiloc-gps-location-sharing`** (high) — Use when you have a `username`/`name` or an area `geolocation` and want user-posted GPS trails (with start points, dates and photos) — retur
+- **`wikimapia`** (medium) — Use when you need crowd-labeled names and descriptions of buildings, businesses, and landmarks at a location that official maps leave blank.
+- **`wikinearby`** (medium) — Enter geographic coordinates, language, and get a list of Wikipedia articles about streets, towns, stations and other notable places nearby.
+- **`wikipedia-list-of-online-mapping-programs-worldwide`** (high) — Wiki database listing showing mapping programs for countries worldwide; free public use; no account required
+- **`wikishootme`** (medium) — Worldwide map of geotagged Wikipedia Creative Commons Images. To display more information, log in with your Media Wiki account.
+- **`wiman`** (low) — OSINT tool: Wiman.
+- **`windy`** (high) — Use when you need historical/forecast weather for a place and date, or live and recently archived webcams near a location, to validate a sce
+- **`world-population-density-map`** (medium) — Very detailed data. It's possible to look at the density not only by country and city, but also by individual metropolitan areas, towns, and
+- **`worldcam`** (low) — OSINT tool: WorldCam.
+- **`worldmap-harvard`** (low) — Use when you need specialized GIS data layers (historical, demographic, environmental) overlaid on a base map to add context to a location, 
+- **`worldtimebuddy-com`** (medium) — OSINT tool: worldtimebuddy.com.
+- **`worldtimelapse-mapping-website`** (high) — Use when you have a `geolocation`/`address` and want to see how that place changed year-by-year in satellite imagery (1984–present) — return
+- **`worldwebcams`** (medium) — OSINT tool: WorldWebcams.
+- **`worldwide-detention-centres-map`** (medium) — This service will help in investigations related to illegal emigration, human trafficking, missing refugees and tourists.
+- **`worldwide-osint-tools-map`** (medium) — Use when you need to discover country-specific OSINT resources (registries, directories, search sites) for the country where a case is locat
+- **`wunderground`** (medium) — weather history data
+- **`yahoo-maps`** (low) — Use only as a legacy fallback map; the standalone Yahoo Maps product was discontinued and the URL now redirects to a partner/search experien
+- **`yandex-maps`** (high) — Use when you have a `geolocation`/`address` (especially in Russia/CIS) and want imagery, panoramas and POI context western maps lack — retur
+- **`yandexmaps`** (high) — Use when you have an `address` or coordinates (especially Russia/Eastern Europe/Central Asia) and want maps, satellite, and street panoramas
+- **`zeemaps`** (high) — Use when you have multiple `address`/`geolocation` points and want to plot and annotate them on a shared custom map — returns an interactive
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

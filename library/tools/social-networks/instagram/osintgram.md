@@ -17,7 +17,7 @@ selectorsOut:
 - metadata-exif
 status: degraded
 pricing: free
-costNote: Free and open-source (MIT). Requires either a real Instagram login or a HikerAPI token (first 100 requests free) to authenticate against Instagram.
+costNote: Free and open-source (GPL-3.0). Requires either a real Instagram login or a HikerAPI token (first 100 requests free) to authenticate against Instagram.
 opsec: active
 opsecNote: Every command hits Instagram's private endpoints while authenticated. Instagram rate-limits and can flag or ban the account you log in with, and the target may not be notified but Instagram sees the traffic. Use a burner/sock-puppet Instagram account and a clean IP, never your own login.
 humanInLoop: true

@@ -10,7 +10,7 @@ bestFor: Web-based music/song search and discovery (musgle.com aggregates music 
 selectorsIn:
 - name
 selectorsOut:
-- metadata
+- metadata-exif
 status: degraded
 pricing: free
 costNote: Free site; an older, possibly intermittently maintained music search front-end.
@@ -20,7 +20,7 @@ humanInLoop: false
 humanInLoopReason: []
 bestInteractionPattern: web-manual
 trust: unverified
-trustNote: 'Identified only from name/URL (musgle.com = "Google for music"); appears to be a song-search aggregator, not an image/face tool. Miscategorized under image-video-face. Not verified live.'
+trustNote: Identified only from name/URL (musgle.com = "Google for music"); appears to be a song-search aggregator, not an image/face tool. Miscategorized under image-video-face. Not verified live.
 missingPersonsRelevance: low
 coverage:
 - global

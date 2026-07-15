@@ -28,17 +28,1142 @@ kind: group-index
 - **`us-voter-records/`** — 1 skill(s) below.
 
 ## Skills here
+- **`1c-database-converter`** (medium) — 1C is a very popular program in CIS countries for storing data in enterprises (accounting, document management, etc.). This tool allows you 
+- **`4chansearch-org`** (low) — OSINT tool: 4chansearch.org.
+- **`50-states`** (medium) — Resource website containing information on all 50 US states and their capitals
+- **`51-000-university-of-michigan-employee-salaries`** (high) — Use when you have a `name` believed to work at the University of Michigan and want to confirm employment, title and pay — returns `employer-
+- **`8chan-8kun-qresearch-board-search`** (low) — OSINT tool: 8chan/8kun QResearch Board Search.
+- **`8chan`** (low) — OSINT tool: 8chan.
+- **`990-finder`** (medium) — Enter the company name and select the state to get a link to download its 900 form.
+- **`aat-org-uk`** (high) — Use when you have an accountant/bookkeeper `name` or a UK location and want to verify AAT-licensed status — returns member/firm name, busine
+- **`academictree`** (medium) — A tool for finding links between scientists (including little-known ones). 150000+ people in database (in all sections combined). Select a f
+- **`accaglobal-com`** (high) — Use when you have a `name`, firm or town and want to confirm someone is a chartered certified accountant (ACCA member) — returns membership 
+- **`access-state-records-online-staterecords-org`** (high) — Use when you have a `name` and want a US public-records starting point (criminal, court, arrest, vital records) — returns aggregated record 
+- **`acrevalue`** (low) — Land-parcel value and ownership mapping tool.
+- **`adultwork-com`** (high) — Use when you have a `name`, `username`, or location and suspect a subject advertises adult/escort services in the UK — returns public profil
+- **`advanced-registry-search`** (medium) — OSINT tool: Advanced Registry Search.
+- **`afrobarometer`** (medium) — huge database of the results of sociological surveys conducted in African countries over the last 20 years
+- **`agoa-data-center`** (low) — OSINT tool: AGOA Data Center.
+- **`ahpra-gov-au`** (high) — Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualificat
+- **`aiddata`** (low) — OSINT tool: AidData.
+- **`akp-email-database`** (medium) — OSINT tool: AKP email database.
+- **`al-local-surety-association-directory`** (high) — OSINT tool: AL Local Surety Association Directory.
+- **`alabama-deaths`** (medium) — FamilySearch genealogy site providing death records for Alabama from 1908 to 1974
+- **`alabama-dept-of-corrections`** (high) — Use when you have a `name` and want to check if they're in Alabama state prison — returns the inmate record with AIS number (`document-id`),
+- **`alaska-inmate-search`** (high) — Use when you have a `name` and want to locate someone in Alaska Department of Corrections custody — a guide/gateway to the official Alaska D
+- **`alberta-business-search`** (low) — OSINT tool: Alberta Business Search.
+- **`alberta-police-misconduct-database`** (medium) — OSINT tool: Alberta Police Misconduct Database.
+- **`alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj`** (low) — OSINT tool: Alcool - Régie des alcools, des courses et des jeux (RACJ).
+- **`alibaba-china`** (medium) — China's largest e-commerce company hosting millions of merchents and businesses
+- **`allbusiness`** (medium) — News, articles, and guides related to business, technology, finance, marketing, and more
+- **`allmyfaves`** (medium) — Ultimate homepage of everything from social media platforms, video search sites, search engines, shopping pages and more
+- **`allpeople`** (medium) — OSINT tool: AllPeople.
+- **`allstockslinks`** (medium) — OSINT tool: AllStocksLinks.
+- **`ama-assn-org`** (high) — Use when you have a physician `name` and a US city/state/ZIP and want to verify they are a real, licensed doctor — returns specialty, practi
+- **`amazon-asin-finder`** (medium) — OSINT tool: Amazon ASIN Finder.
+- **`amazon-co-uk`** (medium) — Use when you have a `name` and want to find their public Amazon wedding/gift registry — returns partner/associate names, approximate locatio
+- **`amazon-com`** (medium) — OSINT tool: Amazon.com.
+- **`amazon-scraper`** (medium) — scraped detail information about list of items
+- **`ancestor-hunt`** (high) — Use when you have a `name` and want a curated directory of free genealogy/public-record collections (births, deaths, marriages, obituaries, 
+- **`ancestry-family-search-engine-united-kingdom`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database at the national country level
+- **`ar-college-university-2017-salaries`** (high) — Use when you have a `name` and want to confirm they worked at an Arkansas public college/university in 2017 — returns employer-org, job titl
+- **`arabbarometer`** (medium) — database of the results of sociological surveys conducted in the Arab countries of Africa and the Middle East in 2007-2018
+- **`arcgis-com-3`** (high) — OSINT tool: arcgis.com.
+- **`arcgis-com-4`** (high) — OSINT tool: arcgis.com.
+- **`architecture-com`** (high) — OSINT tool: architecture.com.
+- **`archive-today-2`** (medium) — Webpage capture site that archives webpages through snapshots, searchable by domain
+- **`archived-moe`** (low) — OSINT tool: archived.moe.
+- **`archives-com`** (high) — Use when you have a `name` (plus rough birth/death year and country) and want historical/vital records — returns biographical detail, addres
+- **`archives-library-information-center-alic`** (high) — Use when you have a `name` and want authoritative pointers to US vital/genealogy records (birth, death, marriage) — returns links toward add
+- **`archives`** (high) — Use when you have a `name` and want US death, obituary and vital records to confirm a death, approximate DOB and relatives — returns dob, na
+- **`argo-scholar`** (medium) — A tool for analysing connections between research articles
+- **`ariadne2-isti-cnr-it`** (low) — OSINT tool: Ariadne2.isti.cnr.it.
+- **`arivify`** (medium) — OSINT tool: Arivify.
+- **`arizona-genealogy-birth-and-death-certificates`** (medium) — Searchable database of public Arizona birth and death certificates - birth records available from 1885 to 1937 and death records available f
+- **`arizona-inmate-datasearch`** (high) — Use when you have a `name` and want to check Arizona state prison custody — returns inmate records with ADC number, DOB, status and facility
+- **`arizona-le-database-abc15`** (medium) — OSINT tool: Arizona LE Database - ABC15.
+- **`arkansas-ashley-county-ledger-search-united-states`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`arkansas-department-of-correction`** (high) — Use when you have a `name` of someone who may be incarcerated in Arkansas and want their inmate record — returns `name`, `dob`/age, ADC `doc
+- **`arkvoters-com`** (high) — OSINT tool: Arkvoters.com.
+- **`arrest-bookings-search-and-report`** (high) — OSINT tool: Arrest Bookings Search and Report.
+- **`arrest-warrants`** (high) — Use when you have a `name` and want to find an outstanding US arrest warrant — a directory routing you to free state/county warrant searches
+- **`arrests`** (high) — Use when you have a `name` and want to check for a US arrest record or mugshot — returns booking photos, arrest dates, charges, and county, 
+- **`ascap-com`** (medium) — Use when you have a `name` who may be a songwriter/composer/publisher and want to confirm it — ASCAP's ACE database returns registered works
+- **`asic-gov-au`** (high) — Use when you have a person `name`, company `name`/ACN or `address` in Australia and want official corporate/registration records — returns c
+- **`association-assq-qc-ca`** (medium) — OSINT tool: Association-assq.qc.ca.
+- **`austcemindex-com`** (high) — Use when you have a `name` of someone buried in Australia (esp. regional NSW) and want their cemetery/headstone record — returns headstone `
+- **`australasia-birth-death-and-marriage-exchange`** (high) — Obituary-related search for ancestral, family, and historical records, using a database at the national country level
+- **`australian-business-register-abn-lookup`** (medium) — Australian Business Number (ABN) lookup by name, business number, or company number
+- **`australian-securities-and-investments-commission`** (medium) — ASIC company register search
+- **`austria`** (high) — Use when you have an Austrian company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
+- **`aws-public-datasets`** (low) — OSINT tool: AWS Public Datasets.
+- **`b2bhint-com`** (high) — Use when you have an `employer-org` or officer `name` and want company data across 190 countries — returns company details, current/former d
+- **`backgroundchecks-org`** (medium) — Use when you have a US `name` and need to find which public-records/genealogy database to search — a curated directory of free record source
+- **`bahrainbourse-com`** (low) — Use when you have a Bahrain-listed `employer-org` and want official market data and corporate disclosures — returns company quotes, announce
+- **`bank-for-international-settlements-statistics`** (low) — OSINT tool: Bank for International Settlements Statistics.
+- **`banq-num-rique`** (low) — OSINT tool: BAnQ numérique.
+- **`barcode-lookup`** (medium) — OSINT tool: Barcode lookup.
+- **`base-academic-search-engine`** (medium) — Academic-related search engine focusing on science and research
+- **`baytown-tx-employee-directory`** (medium) — OSINT tool: Baytown TX Employee Directory.
+- **`belgium`** (high) — Use when you have a Belgian company `employer-org` or a person's `name` and want the ultimate beneficial owners behind it — returns name, ad
+- **`bellingcat-com`** (high) — Use when you have a `name` or keyword and want verbatim quotes from UK & Ireland local-council meetings — returns transcript hits naming who
+- **`berkely-library-data-lab`** (low) — OSINT tool: Berkely Library: Data Lab.
+- **`better-business-bureau`** (medium) — OSINT tool: Better Business Bureau.
+- **`bgafd-co-uk`** (medium) — Use when you need to identify a British adult-film performer by stage name and resolve aliases/physical description — a niche performer data
+- **`big101-obituaries-listing-north-america`** (high) — Use when you have a `name` (and a US state/Canadian region) and want to find an obituary/death notice — a meta-directory of newspaper obitua
+- **`bigquery-public-datasets`** (low) — OSINT tool: BigQuery public datasets.
+- **`bikudo`** (medium) — Business directory of manufacturers and suppliers
+- **`billiongraves-com`** (high) — Use when you have a `name` and want burial/headstone records — returns death/birth dates, GPS-tagged cemetery location and family members bu
+- **`binlist`** (low) — OSINT tool: Binlist.
+- **`birmingham-public-library-databases`** (high) — Use when you have a `name` linked to Alabama/Birmingham and want niche local-history records (coal-mine fatalities, obituaries, church regis
+- **`birth-database`** (high) — OSINT tool: Birth Database.
+- **`bizeurope`** (medium) — OSINT tool: Bizeurope.
+- **`biznar-business-search-engines`** (medium) — Specialty search engine targeting businesses
+- **`bizportal-gov-za`** (high) — Use when you have a person's `name` or a company (`employer-org`) in South Africa and want to confirm company registration, status and direc
+- **`bizwiki-business-wiki-search-united-states`** (medium) — Business-related search engine that searches using company name and location
+- **`blockint-nl`** (high) — Use when you have a company or person `name` and want to trace ultimate beneficial owners (UBOs) across EU corporate registers — returns a c
+- **`bloomberg-com`** (high) — Use when you have a company `name`/ticker or an `employer-org` and want executives, filings-level corporate data and officer profiles — retu
+- **`bloomberg-public-companies-search`** (medium) — Business-related website offering a search feature using company names
+- **`bloomberg`** (medium) — OSINT tool: Bloomberg.
+- **`blueleaks`** (medium) — OSINT tool: BlueLeaks.
+- **`bmi-com`** (low) — Use when you have a `name` (songwriter, performer, or publisher) or a song title and want to link a person to musical works, co-writers, and
+- **`boatinfoworld`** (medium) — Use when you have a `name` (owner or vessel) and want US Coast Guard documented-vessel records — returns owner `name`, `address`, `document-
+- **`bookkeepers-org-uk`** (medium) — Use when you have a UK bookkeeper/business `name` or location and want to confirm ICB membership — returns the certified bookkeeper's busine
+- **`boston-police-internal-affairs-cases-2010-2020`** (medium) — OSINT tool: Boston Police Internal Affairs Cases, 2010-2020.
+- **`boursakuwait-com-kw`** (high) — OSINT tool: boursakuwait.com.kw.
+- **`bp-statistical-review-of-world-energy`** (low) — OSINT tool: BP Statistical Review of World Energy.
+- **`bps-org-uk`** (low) — Use when you have a `name` of someone claiming to be a UK psychologist and want to verify BPS membership/chartered status — returns the prac
+- **`brazillian-address-cep-search-and-report`** (medium) — OSINT tool: Brazillian Address CEP Search and Report.
 - **`brb-public-records-2`** (low) — OSINT tool: BRB Public Records.
 - **`brb-public-records`** (medium) — Public records source directory
+- **`brooklyn-genealogy`** (high) — Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, direct
+- **`brownbook`** (medium) — OSINT tool: BrownBook.
+- **`buffalo-police`** (medium) — OSINT tool: Buffalo Police.
+- **`bulgaria`** (high) — OSINT tool: Bulgaria.
+- **`bureau-van-dijk`** (medium) — OSINT tool: Bureau Van Dijk.
+- **`burial-records-uk`** (high) — OSINT tool: Burial Records (UK).
+- **`business-directory-occ`** (low) — OSINT tool: Business Directory \| OCC.
+- **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s
+- **`business-govt-nz`** (high) — Use when you have a business `name`/brand and want to see if it is registered or claimed in New Zealand — returns availability across compan
+- **`business-source`** (medium) — OSINT tool: Business Source.
+- **`business-type-phone-book-united-kingdom`** (medium) — Search for a business by type or name
+- **`business`** (high) — Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 l
+- **`cal-poly-email-search`** (medium) — OSINT tool: Cal Poly Email Search.
+- **`california-registered-voter-verification`** (medium) — California voter registration verification and search
+- **`california`** (high) — Use when you have a `name` or CDCR number and want to locate a person in California state prison custody — returns current incarceration sta
+- **`caltech-coolcosmos-infrared-zoo`** (medium) — View infra-red pictures and information about animals
+- **`canada-gazette`** (medium) — OSINT tool: Canada Gazette.
+- **`canadian-business-research`** (medium) — OSINT tool: Canadian Business Research.
+- **`canadian-copyrights-database`** (medium) — OSINT tool: Canadian Copyrights Database.
+- **`canadian-importers-database`** (medium) — OSINT tool: Canadian Importers Database.
+- **`canadian-industrial-designs-database`** (medium) — OSINT tool: Canadian Industrial Designs Database.
+- **`canadian-institute-for-health-information`** (medium) — OSINT tool: Canadian Institute for Health Information.
+- **`canadian-intellectual-property-office`** (medium) — OSINT tool: Canadian Intellectual Property Office.
+- **`canadian-legal-information-institute`** (high) — Use when you have a `name` and want Canadian court/tribunal decisions or legislation mentioning them — returns document-id case citations an
+- **`canadian-obituaries`** (high) — Use when you have a `name` and want to check whether a subject (or relative) has a Canadian death/obituary notice — returns death confirmati
+- **`canadian-patents-database`** (medium) — OSINT tool: Canadian Patents Database.
+- **`canadian-resident-database-warning-slow`** (high) — OSINT tool: Canadian Resident Database (warning: slow).
+- **`canadian-trademarks-database`** (medium) — OSINT tool: Canadian Trademarks Database.
+- **`cancelthesefunerals-com`** (high) — Use when you have a `name` and want to check whether a person appears in the US Social Security Death Master File — returns death record fie
+- **`canlii-database`** (medium) — Canadian Legal Information Institute searchable database of legal documents and cases
+- **`canpages-search-canada`** (medium) — Business-related search engine that searches using company name, people name, address and telephone
+- **`capstat-nyc`** (medium) — OSINT tool: CAPstat.nyc.
+- **`case-tracker-justice-uk`** (high) — Use when you have a UK civil-appeal case number or party `name` and want its status — the official tracker returns the case title (parties),
+- **`catalogue-of-research-databases-occrp-id`** (low) — OSINT tool: Catalogue of Research Databases | OCCRP ID.
+- **`causelist-uk`** (high) — Use when you have a `name` and want to find upcoming or listed UK court hearings involving that person — returns the case/party listing (nam
+- **`cemetery-directory`** (high) — OSINT tool: Cemetery.directory.
+- **`censusfinder`** (high) — Use when you have a `name` and want free online census/genealogy records — returns a curated directory of links to census indexes, transcrip
+- **`center-for-international-earth-science-information-network`** (low) — OSINT tool: Center for International Earth Science Information Network.
+- **`central-and-eastern-european-business-directory`** (medium) — Central and Eastern European Business Directory
+- **`cepii`** (low) — OSINT tool: CEPII.
+- **`charteredaccountants-ie`** (medium) — Use when you have a `name` or `employer-org` and want to verify an Irish chartered accountancy firm/member — returns the firm's details and 
+- **`checkatrade-com`** (medium) — Use when you have a tradesperson's `name`, business name or `address`/area and want their UK trade listing, reviews and contact/location — r
+- **`chicago-cook-county-genealogy`** (high) — Use when you have a name tied to Chicago/Cook County and want vital-record indexes — returns birth, marriage and death index entries to orde
+- **`chicago-police-department-demographics`** (medium) — OSINT tool: Chicago Police Department Demographics.
+- **`childcare-co-uk`** (high) — Use when you have a `name` or postcode and want to find a subject who works in UK childcare/tutoring — returns provider profiles with area, 
+- **`childminding-ie`** (high) — Use when you have an Irish county/`address` (or a childminder's `name`) and want to find registered childminders in that area — returns chil
+- **`ci-general-company-registry-cayman-islands`** (medium) — Business-related search engine that searches national results by company name
+- **`cia-world-factbook`** (low) — OSINT tool: CIA World Factbook.
+- **`cilexgroup-org-uk`** (high) — Use when you have a `name` claimed to be a UK chartered legal executive (CILEX) and want to verify membership — returns membership status, g
+- **`cipfa-org`** (medium) — Use when you have a `name` and want to confirm UK public-finance accountancy credentials — returns whether the person is a CIPFA member/regi
+- **`citation-machine`** (medium) — Automatic citation generator for APA, MLA, Chicago, and more writing styles
+- **`citizens-police-data-project`** (medium) — OSINT tool: Citizens Police Data Project.
+- **`citma-org-uk`** (high) — Use when you have a `name`, `employer-org` or location and want to verify a UK chartered trade mark attorney — returns the attorney's name, 
+- **`city-of-brandtford-provincial-offence-court`** (medium) — Website for City of Brantford Provincial Offences Court Office
+- **`civilian-office-of-police-accountability`** (medium) — OSINT tool: Civilian Office of Police Accountability.
+- **`clearview-ai-us-taxpayer-funded-entities`** (medium) — OSINT tool: Clearview AI US taxpayer-funded entities.
+- **`clinicaltrials-gov`** (medium) — 433,207 research studies in 221 countries. For people who have a difficult-to-treat disease, this registry will help them learn about recent
+- **`cme-group`** (medium) — Information on trading, risk management, and more
+- **`cms-gov`** (medium) — Use when you have a US doctor's `name` and want financial-industry ties — CMS Open Payments returns payments from drug/device firms, the pay
+- **`college-police-uk`** (high) — Use when you have a `name` and want to check whether a UK police officer/special was dismissed for misconduct — returns the barred person's 
+- **`colorado-statewide-marriage-index`** (medium) — Colorado Statewide Marriage Index of records from 1953 to 2006
+- **`colorado`** (high) — Use when you have a `name` and want to check whether a subject is in Colorado Department of Corrections custody — returns offender record wi
+- **`coloradovoters-info`** (high) — Use when you have a `name` in Colorado and want registered-voter data — returns `address`, approximate `dob`/age, party affiliation, and vot
+- **`commonlawcourt-com`** (high) — OSINT tool: commonlawcourt.com.
+- **`companies-and-orgs-search-engine`** (medium) — OSINT tool: Companies & Orgs Search Engine.
+- **`companieshouse-gi`** (medium) — Use when you have a Gibraltar `employer-org` or director `name` and want official company registry data — returns company details, directors
+- **`companieshouse-im`** (medium) — Use when you have an Isle of Man company `name` or an `employer-org` link and want registry data — returns company status, registered `addre
+- **`company-check-zauba`** (low) — OSINT tool: Company Check Zauba.
+- **`company-check`** (low) — OSINT tool: Company Check.
+- **`company-information-service-gov-uk-2`** (high) — Use when you have a `name`, `employer-org` or `address` and want dissolved/closed UK companies — returns company details, registered address
+- **`company-information-service-gov-uk-3`** (high) — Use when you have a `name` and want to check whether someone is a disqualified UK company director — returns name, dob, the disqualification
+- **`company-information-service-gov-uk`** (high) — Use when you have a person `name`, company `name`/number or `address` in the UK and want official corporate records — returns directorships 
+- **`company-registration-round-the-world`** (medium) — OSINT tool: Company Registration Round the World.
+- **`company-research-resources-by-country-comparably`** (medium) — OSINT tool: Company Research Resources by Country Comparably.
+- **`company-search-tool`** (medium) — OSINT tool: Company search tool.
+- **`companycheck-co-uk`** (high) — Use when you have a UK company `name` or a person's `name` and want directorships, filings and registered addresses — returns `employer-org`
+- **`comparitech-research-guide`** (medium) — Research guide from Comparitech on using deep web search engines for academic and scholarly research
+- **`competeshark`** (medium) — OSINT tool: CompeteShark.
+- **`completed-access-to-information-requests`** (medium) — OSINT tool: Completed Access to Information Requests.
+- **`connectedpapers`** (medium) — A tool for gathering information about academic papers. It shows a large graph of references to other articles that are present in the text 
+- **`connecticut-registered-voter-verification`** (medium) — Connecticut voter registration verification and search
+- **`connecticut`** (high) — Use when you have a `name` or DOC number and want to locate a person currently held in Connecticut state prison/jail — returns custody statu
+- **`connvoters-com`** (high) — Use when you have a `name` (and roughly a Connecticut location) and want the subject's registered address, town, party and DOB from the stat
+- **`convicted-alberta-sex-offender`** (high) — OSINT tool: Convicted Alberta Sex Offender.
+- **`convicted-sex-offenders-list`** (high) — OSINT tool: Convicted Sex Offenders List.
+- **`cop26-registered-attendees`** (medium) — OSINT tool: COP26 registered attendees.
+- **`coplookup-com`** (medium) — OSINT tool: Coplookup.com.
+- **`coraweb-birth-death-and-marriage-records-australia`** (high) — Use when you have a `name` and an Australian connection and want a curated directory of BDM/vital-record and genealogy sources to search — r
+- **`cornell-legal-information-institute-united-states`** (medium) — Legal-related search engine for legal court cases and documents
+- **`coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k`** (medium) — OSINT tool: Coronavirus Bailouts: Search Every Company Approved for Federal Loans Over $150k.
+- **`corporate-affairs-registry-database`** (low) — OSINT tool: Corporate Affairs Registry Database.
+- **`corporate-information`** (medium) — OSINT tool: Corporate Information.
+- **`corporationwiki`** (medium) — OSINT tool: CorporationWiki.
+- **`corporative-registry-catalog`** (medium) — worldwide catalog of business registries (63 countries)
+- **`corrections-books-approval-search`** (high) — OSINT tool: Corrections Books Approval Search.
+- **`corrections-com-inmate-locaton-links`** (high) — Use when you have a `name` and want to find the right US state/federal inmate-locator to search — a curated directory of DOC lookup links th
+- **`counciltaxrates-info`** (medium) — Use when you have a UK `address`/postcode and want the property's council-tax band and local rates — returns band, rateable value and the re
+- **`county-clerks-recorded-doc-s-by-state`** (high) — Use when you have a `name` and a US location and want official recorded-document / public-record databases (deeds, liens, UCC, vital, court)
+- **`court-cases-results`** (medium) — Use when you have a `name` (or offence/court) and want UK Crown Court criminal sentencing records — returns matching convictions with offenc
+- **`court-electronic-records-pacer`** (high) — Use when you have a `name` and want US federal court records (civil, criminal, bankruptcy) — returns case filings, party names and document 
+- **`court-locator-united-states-courts`** (high) — Use when you have a location (`address`/state) and need to find the right US federal court and its records system — returns the court and a 
+- **`court-records-directory-2`** (high) — Use when you have a `name` and a US location and need the right court/online case-search portal to look them up — returns pointers to court 
+- **`court-records-directory-3`** (medium) — Site providing links to court records and court information by state
+- **`court-records-directory`** (high) — Use when you have a `name` and a rough US jurisdiction and want to reach the right free official court/criminal record database — returns cu
+- **`court-records-search-directory`** (high) — Use when you have a name and a US jurisdiction and want the official court-record search for it — returns links to state/county court, docke
+- **`court-records-united-states-courts`** (high) — Use when you have a `name` involved in a US federal case and want the court docket and filings via PACER — returns name, case document-id an
+- **`courthousedirect-com`** (high) — Use when you have a `name` or property identifier and want deeds, liens, real-property and grantor/grantee records (mainly TX/NM, links nati
+- **`courtlistener-recap`** (high) — Use when you have a `name` and want free US court opinions and PACER federal dockets — returns matching case parties (`name`), docket/case n
+- **`courts-and-tribunals-judiciary`** (high) — Use when you have a `name` and want to find UK court/tribunal judgments naming them — returns published judgments, sentencing remarks and or
+- **`covidbailouttracker-com`** (medium) — OSINT tool: Covidbailouttracker.com.
+- **`cpaverify-org`** (medium) — Use when you have a `name` and want to confirm whether someone is a licensed US CPA — returns license status, jurisdiction, and issuing-boar
+- **`credibly-accused`** (medium) — Use when you have a `name` (or diocese/location) and want to check whether a US Catholic clergy member was named on a credibly-accused-of-ab
+- **`creditrisk-monitor`** (medium) — Business-related directory of public companies worldwide
+- **`creditsafe-com`** (high) — Use when you have an `employer-org`, `name` or `address` and want a business credit report — returns company details, registered address, di
+- **`crime-brasil`** (low) — OSINT tool: Crime Brasil.
+- **`crimereports`** (medium) — Use when you have an `address`/`geolocation` and want to see recent reported crime incidents around it — returns block-level incident locati
+- **`criminal-cop-database-lookup`** (medium) — OSINT tool: Criminal Cop Database Lookup.
+- **`criminal-search-criminal-records-by-state-and`** (high) — Use when you have a `name` and want to reach the right official US criminal/court record database for a given state or county — returns link
+- **`cro-ie-2`** (high) — Use when you have an `employer-org` or director `name` in Ireland and want company registration, officers, and addresses — returns employer-
+- **`cro-ie`** (high) — Use when you have a `name` or company (`employer-org`) in Ireland and want registration, status and directors — returns employer-org, name, 
+- **`croatia`** (medium) — Use when you have a Croatian `employer-org` (company) and want its beneficial owners — returns the natural-person `name`s who ultimately own
+- **`cronodump`** (medium) — When searching for information about citizens of Ukraine, Russia and other CIS countries, often have to deal with leaked databases for the C
+- **`cso`** (high) — Use when you have a `name` and want to check British Columbia (Canada) court records for that party — returns confirmed name, case/file numb
+- **`curious-fox-united-kingdom`** (high) — Use when you have a `name`/surname tied to a UK or Irish village and want to reach people researching that family/place — returns village-li
+- **`cyndi-s-list`** (high) — Use when you have a `name` and a research locale and want to find the right genealogy database or record collection to search next — returns
+- **`cyprus`** (high) — Use when you have a company `name`, officer `name` or registration number tied to Cyprus and want official corporate records — returns `empl
+- **`cyprusregistry-com`** (high) — Use when you have an `employer-org` or director `name` in Cyprus and want company officers, shareholders, and addresses — returns employer-o
+- **`czech-republic`** (medium) — Use when you have a `name` or `employer-org` linked to the Czech Republic and want registered companies, officers and addresses — returns `e
+- **`d-and-b-company-search`** (low) — OSINT tool: D&B Company Search.
+- **`darpan-ngo-search`** (medium) — OSINT tool: Darpan NGO Search.
+- **`data-com-connect`** (medium) — OSINT tool: Data.com Connect.
+- **`data-ddosecrets-search`** (low) — OSINT tool: Data \| DDoSecrets Search.
+- **`data-gov-uk`** (low) — OSINT tool: Data.gov.uk.
+- **`data-gov`** (low) — OSINT tool: Data.gov.
+- **`data-occrp-org`** (medium) — OSINT tool: data.occrp.org.
+- **`data-sets-oh-shint`** (low) — OSINT tool: Data Sets - OH SHINT.
+- **`data-world`** (low) — OSINT tool: data.world.
+- **`databasd`** (low) — OSINT tool: Databasd.
+- **`database-of-suspected-terrorists`** (low) — OSINT tool: Database of suspected terrorists.
+- **`databasesets-com`** (high) — OSINT tool: databasesets.com.
+- **`dataset-domainsproject-org`** (medium) — dataset of 616 millions domains (16GB!)
+- **`datasetlist-com`** (low) — OSINT tool: Datasetlist.com.
+- **`datasetsearch-research-google-com`** (low) — OSINT tool: Datasetsearch.research.google.com.
+- **`dauphin-county-pa-2017-compensation`** (medium) — OSINT tool: Dauphin County PA 2017 Compensation.
+- **`dbpedia`** (low) — OSINT tool: DBPedia.
+- **`deceasedonline-com`** (high) — Use when you have a `name` and want UK burial/cremation records — returns death/burial dates, cemetery or crematorium, grave details and fam
+- **`deepdyve`** (medium) — Database for scientific and scholarly research including over 18 million journals and articles
+- **`delaware`** (high) — Use when you have a `name` and want to check Delaware custody status — the Delaware DOC directs offender lookups to VINELink, returning cust
+- **`delawarevoters-info`** (high) — OSINT tool: Delawarevoters.info.
+- **`denmark`** (high) — Use when you have a Danish company `name`, `address`, or CVR number (or a person's name as an owner/director) and want the official business
+- **`denver-obituary-project`** (high) — Use when you have a `name` of someone who may have died in Colorado (outside Denver) between the 1970s and 1990 and want their obituary — re
+- **`dfw1n-osint`** (medium) — Australia-focused open-source intelligence resource repository.
+- **`diagramify`** (medium) — generates flow charts from the text description. Branching and backtracking are supported
+- **`digital-public-library-of-america`** (medium) — Academic-related search engine providing open access to digitized library resources including images, texts, videos, and sounds
+- **`diligenciagroup-com`** (high) — Use when you have a `name`, `address`, or `employer-org` linked to the Middle East or Africa and want authoritative corporate-registry data,
+- **`directaccessportal-co-uk`** (high) — Use when you have a barrister's `name` (or need to identify one in England & Wales) and want their chambers, practice areas and contact rout
+- **`directorwho-co-uk`** (high) — Use when you have a `name` and want the UK companies they are/were a director of, plus co-directors and DOB/address hints — returns employer
+- **`dirt-diggers-digest-guide-united-states`** (medium) — Dirt Diggers digest guide to strategic corporate research.
+- **`disputesregister-org`** (high) — Use when you have an `employer-org` or `name` and want a global directory of official company registries plus a searchable register of publi
+- **`dlook-local-business-directory-australia`** (medium) — Australia based business search engine that searches using keyword, suburb, or postcode
+- **`dnb-co-uk`** (high) — Use when you have a company `name` (or `employer-org`/`address`) and want to confirm the entity and its D-U-N-S number — returns `employer-o
+- **`dnc-email-database`** (medium) — OSINT tool: DNC email database.
+- **`dobsearch`** (high) — Use when you have a `name` and want date of birth, addresses, phone and relatives — returns an aggregated US people-search profile including
+- **`docinfo-org`** (high) — Use when you have a doctor's `name` and want to confirm and locate them professionally — returns the states they're licensed in, medical sch
+- **`doe-data-explorer`** (medium) — Discoverable database of non-text, or data, information in the Department of Energy
+- **`drug-enforcement-administration`** (medium) — DEA website providing reports, publications, facts and other resources
+- **`dsc-data-science-search-engine`** (low) — OSINT tool: DSC Data Science Search Engine.
+- **`duedil-united-kingdom`** (medium) — Business-related platform that provides information on over 40 million companies including company name search and director name search
+- **`dutchess-and-ulster-bridge-safety-ratings-2015`** (medium) — OSINT tool: Dutchess and Ulster bridge safety ratings 2015.
+- **`e-gov-kw`** (high) — OSINT tool: e.gov.kw.
+- **`e-justice-europa-eu`** (high) — Use when you have a `name` or `address` and a property question in an EU country and want the official routing to that country's land/proper
+- **`easybib-citation-generator`** (medium) — Academic-related program that generates an automatic bibliographical reference and/or citation from a website URL
+- **`easystreet`** (medium) — OSINT tool: EasyStreet.
+- **`ebra-be`** (high) — Use when you have an `employer-org` or `name` and need the official company register for a given country — returns a directory link toward e
+- **`eca-co-uk`** (medium) — Use when you have a company `name`, `address`/area, or trade and want to confirm a UK electrical contractor is an ECA member — returns the m
+- **`edgar-u-s-securities-and-exchange-commission-filings`** (medium) — OSINT tool: EDGAR U.S. Securities and Exchange Commission Filings.
+- **`eff-atlas-of-surveillance`** (medium) — OSINT tool: EFF Atlas of Surveillance.
+- **`egafd-com-2`** (high) — OSINT tool: egafd.com.
+- **`egafd-com`** (high) — Use when you have a `name`/stage name or `image` of a European female adult-film performer and want to identify or cross-reference them — re
+- **`eircode-ie`** (high) — Use when you have an Irish `address` and want its unique Eircode (postcode), or an Eircode and want the matching address — returns a precise
+- **`electricalcompetentperson-co-uk`** (high) — Use when you have an electrician's or firm `name` (or a UK postcode) and want to confirm government-registered status — returns the register
+- **`elicit`** (medium) — AI research assistant. Find answers to any question from 175 million papers. The results show a list of papers with summaries + Summary of t
+- **`employee-contact-directory-search-novascotia-ca`** (medium) — OSINT tool: Employee Contact Directory Search \| novascotia.ca.
+- **`emporis`** (medium) — OSINT tool: EMPORIS.
+- **`en-52wmb-com`** (medium) — Search information about worldwide buyers and suppliers by product name, company name or HS code.
+- **`enotes-academic-search`** (medium) — Academic-related search engine that searches literature and provides expert summaries and analyses
+- **`eric-institute-of-education-sciences`** (medium) — Education Resources Information Center
+- **`estonia`** (medium) — Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registere
+- **`europages-business-search-europe`** (medium) — Database of over 3 million company listings in Europe
+- **`european-business-register`** (medium) — OSINT tool: European Business Register.
+- **`european-union-open-data-portal`** (low) — OSINT tool: European Union Open Data Portal.
+- **`europeana`** (medium) — Collection of over 57 million European artworks, artifacts, books, films, music, and more
+- **`europol-most-wanted-search-engine`** (low) — OSINT tool: Europol Most Wanted Search Engine.
+- **`eurostat`** (low) — OSINT tool: Eurostat.
+- **`exa-ai`** (high) — Use when you have a company `name` or website `domain` and want an AI-compiled dossier — people, funding, competitors, news — returns `emplo
+- **`explainpaper`** (medium) — AI is a tool to make reading scientific articles easier. Highlight a phrase, sentence or whole paragraph to get its simple and detailed expl
+- **`explee-com`** (high) — Use when you have a `name` or `employer-org` and want B2B contact enrichment from a large people/company database — returns email, employer-
+- **`explore-canada-s-real-estate-market`** (medium) — OSINT tool: Explore Canada's Real Estate Market.
+- **`extremist-groups`** (low) — OSINT tool: Extremist Groups.
+- **`extremist-profiles`** (low) — OSINT tool: Extremist Profiles.
+- **`ezilon`** (medium) — OSINT tool: Ezilon.
+- **`factiva`** (medium) — OSINT tool: Factiva.
+- **`fafsa-search-and-report`** (high) — OSINT tool: FAFSA Search and Report.
+- **`familyecho-com`** (medium) — Use when you have gathered several relatives (`name`/`associate`) and want a free workspace to build and visualise the family tree — returns
+- **`familysearch-births-and-baptisms-1972-1981-australia`** (high) — Use when you have a `name` (and rough birth year/place in Australia) and want indexed birth/baptism records to confirm identity and parents 
+- **`familysearch-deaths-and-burials-1816-1980-australia`** (high) — Use when you have a `name` of a person who may have died in Australia (1816–1980) and want death/burial record details — returns death/buria
+- **`familysearch-free-family-trees-and-genealogy-archives-familysearch-org`** (high) — Use when you have a `name` and want family/genealogy records — returns relatives (`associate`), birth/marriage/death dates (`dob`) and histo
+- **`familysearch-guessing-a-name-variation`** (medium) — Genealogy website FamilySearch's wiki page for guessing name variations
+- **`familysearch-s-united-states-record-collections`** (high) — Use when you have a `name` and want a one-page portal into FamilySearch's US genealogy record collections (census, vital, immigration) via S
+- **`familysearch`** (high) — Use when you have a deceased US subject's `name` and want death/birth-date confirmation and last residence — returns name, DOB/death date an
+- **`fastpeoplesearch-com-reverse-address`** (medium) — OSINT tool: FastPeopleSearch.com - Reverse Address.
+- **`fatal-encounters`** (medium) — OSINT tool: Fatal Encounters.
+- **`fbi-most-wanted-search-engine`** (low) — OSINT tool: FBI Most Wanted Search Engine.
+- **`fca-org-uk`** (high) — Use when you have an `employer-org` or `name` tied to a UK mutual (credit union, co-op, friendly society) and want its registration and fili
+- **`federal-corporation-search-canada`** (medium) — Searches can be performed by Corporate Name, Corporation Number, or Business Number (BN)
+- **`federal-court`** (high) — Use when you have a `name` and want to find Federal Court of Canada judgments and orders naming that party — returns case decisions, docket/
+- **`federalcorporation`** (low) — OSINT tool: FederalCorporation.
+- **`felon-spy`** (low) — Do NOT use — a documented hoax that returns randomly-generated fake "criminal neighbor" data; it identifies no real person and has no OSINT 
+- **`filae-com`** (high) — Use when you have a `name` and want French civil/genealogical records (births, marriages, deaths, census) — returns dob/dates, places (addre
+- **`finance-ni-gov-uk`** (high) — Use when you have a Northern Ireland property `address` and want its official valuation/rating record — returns the property's capital value
+- **`financial-conduct-authority`** (low) — OSINT tool: Financial Conduct Authority.
+- **`financialplanning-org-uk`** (high) — Use when you have a `name`, firm or UK location and want to confirm a certified financial planner — returns the planner's name, firm/employe
+- **`fincen-msb-registrant-search`** (low) — OSINT tool: FinCEN MSB Registrant Search.
+- **`find-a-prisoner`** (high) — Use when you have a `name` and believe someone is in prison in England or Wales but don't know which one — a request service (not a public d
+- **`find-a-teacher`** (medium) — OSINT tool: Find a Teacher.
+- **`findagraveinscotland-com`** (high) — Use when you have a `name` of someone buried in Scotland and want their grave/headstone record — returns headstone `image`, dates (`dob`), c
+- **`findingstartups-com`** (medium) — OSINT tool: Findingstartups.com.
+- **`findmypast-2`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`findmypast-co-uk`** (high) — Use when you have a `name` (and rough era/place) and want UK/Irish genealogy and historical records — returns census, BMD, electoral, milita
+- **`findmypast-ie`** (high) — Use when you have a `name` and Irish ancestry/context and want historical records (census, BMD, church, migration) to build family and ident
+- **`findmypast`** (high) — Use when you have a `name` and want genealogy/vital records — returns census, birth/marriage/death, military and newspaper matches exposing 
+- **`finland`** (medium) — Use when you have a `name` or `employer-org` linked to Finland and want registered companies, officers and addresses — returns `employer-org
+- **`first-philadelphia-preparatory-charter-school-staff-public-release-2017`** (medium) — OSINT tool: First Philadelphia Preparatory Charter School Staff Public Release 2017.
+- **`first-search`** (medium) — OSINT tool: First Search.
+- **`fivethirtyeight`** (low) — OSINT tool: FiveThirtyEight.
+- **`fl-energy-money-in-politics`** (medium) — OSINT tool: FL Energy Money in Politics.
+- **`florida-probation-search`** (high) — Use when you have a `name` and want to check Florida Department of Corrections inmate, probation, or supervision status — returns `name`, `d
+- **`florida-registered-voter-verification`** (medium) — Florida voter registration records and search
+- **`florida-residents-directory`** (high) — Use when you have a `name`, `phone`, `email`, or `address` in Florida and want a free people-record lookup — returns addresses, phones, rela
+- **`florida`** (high) — Use when you have a `name` (or DC number) and want to check Florida state custody, supervision or release status — returns identity confirma
+- **`flvoters-com`** (high) — Use when you have a Florida subject's `name` and want their public voter record — returns registered name, address, DOB, party and (public) 
+- **`foia-gov-search`** (low) — US federal FOIA records search/request portal.
+- **`forbes-global-2000`** (medium) — OSINT tool: Forbes Global 2000.
+- **`forceswarrecords-com`** (high) — Use when you have a `name` of someone who served in the UK/Commonwealth military and want their service history — returns military `document
+- **`fortune-500-list-of-companies-2020-fortune`** (low) — OSINT tool: Fortune 500 list of companies 2020 | Fortune.
+- **`foursquare-business-search`** (medium) — Business-related search engine that searches using company name
+- **`france`** (medium) — Use when you have a French `employer-org` or a director's `name` and want official company records — returns company registration, filings, 
+- **`freebase`** (low) — OSINT tool: Freebase.
+- **`freebmd-org-uk`** (high) — Use when you have a `name` and want English & Welsh birth, marriage, or death registrations — returns the registration event with quarter/ye
+- **`freecen-org-uk`** (high) — Use when you have a `name` and rough year/place in 19th–early-20th-century Britain and want free transcribed census records to place a perso
+- **`freeones-com`** (high) — Use when a subject may work in the adult-entertainment industry and you have a `name`/stage name — returns aliases, linked social-profiles a
+- **`fscmauritius-org`** (high) — Use when you have a `name` or `employer-org` linked to Mauritius financial services and want to check the regulator's licensee register — re
+- **`funeral-notices-co-uk`** (high) — Use when you have a `name` and want a UK death/funeral notice — returns date of death, location, funeral details and named family members.
+- **`funeral-notices-death-notices-and-obituaries-australia`** (high) — Use when you have a `name` and want Australian death/funeral notices — returns family-member associate names, funeral location/date and deat
+- **`funeralnet`** (high) — Use when you have a `name` and want to confirm a death and surface funeral/obituary details — date, hometown and surviving family — across U
+- **`funeraltimes-com`** (high) — Use when you have a `name` and want Northern Ireland / Ireland death and funeral notices — returns name, dob (death date), address, associat
+- **`gapminder-world`** (low) — OSINT tool: Gapminder World.
+- **`gassaferegister-co-uk`** (medium) — Use when you have a UK gas engineer/business `name`, `employer-org`, or `address`/postcode and want to verify Gas Safe registration — return
+- **`gazettes-africa`** (high) — Use when you have a `name`/`employer-org` and want to full-text search African government gazettes for official notices (directorships, name
+- **`gdc-uk-org`** (high) — Use when you have a `name` (or registration number) and want to confirm a UK dental professional's registration, status and area — returns c
+- **`gendatabase-com`** (high) — Use when you have a `name` of a deceased South African and want genealogy/vital records (birth, death, marriage, estate, voter roll, ID) — r
+- **`genealogical-prison-records`** (medium) — Site providing genealogical prison and insane asylum records for the US, UK and Canada
+- **`genealogy-links-us-and-other-countries`** (high) — OSINT tool: Genealogy Links us and other Countries.
+- **`genealogy`** (high) — Use when you have a `name` and want to check death records / obituaries to confirm a person is deceased and surface relatives — returns `dob
+- **`genealogybank-ssdi`** (medium) — SSDI and historical newspaper/obituary search; helps determine if a person is deceased.
+- **`genealogyintime`** (high) — Use when you have a `name` and want to sweep billions of free genealogy/ancestral records at once — returns matching records with dates, rel
+- **`genealogyplace-family-search`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`geneanet-org`** (high) — Use when you have a `name` and want genealogical records — ancestors, relatives, birth/death dates and places — returns `associate` (family)
+- **`geneologyintime-family-tree-search-engine`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`general-land-office-records`** (medium) — The Official Federal Land Records Site providing search tool for land patents, surveys and field notes
+- **`genesreunited-co-uk`** (high) — Use when you have a UK `name` and want genealogy/family-history records — returns census, birth/marriage/death and family-tree matches expos
+- **`genuki-uk-and-ireland-genealogy`** (high) — Use when you have a `name` plus a UK/Ireland place and want a curated, locality-by-locality reference to the parish and historical records t
+- **`george-floyd-where-black-people-are-most-disproportionately-killed-by-police`** (medium) — OSINT tool: George Floyd - Where black people are most disproportionately killed by police.
+- **`georgefloyd-protest-police-brutality-videos`** (medium) — OSINT tool: GeorgeFloyd Protest police brutality videos.
+- **`georgia-ports-authority`** (medium) — Georgia Ports Authority Guide and Directory
+- **`georgia-voters-com`** (high) — Use when you have a `name` and a Georgia connection and want to look them up in the public Georgia voter file — returns residential address,
+- **`georgia`** (high) — Use when you have a `name` (or GDC ID) and want to locate someone in Georgia state prison custody — returns current facility/status plus dob
+- **`german-gov-employee-database-unknown`** (medium) — OSINT tool: German Gov Employee Database (Unknown).
+- **`germany`** (high) — Use when you have a German company/association (`employer-org`) or a `name` behind one and want beneficial-ownership and registry data — ret
+- **`gettr`** (low) — OSINT tool: Gettr.
+- **`gettysburg-pa-adams-county-2017-payroll-search-and-report`** (medium) — OSINT tool: Gettysburg PA Adams County 2017 Payroll Search and Report.
+- **`gi-files`** (medium) — OSINT tool: GI Files.
+- **`gibraltar`** (high) — Use when you have a Gibraltar company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
+- **`gijn-org-3`** (medium) — Use when you have an `address` or a person/`employer-org` and want a methodology and jurisdiction pointers for finding land/property ownersh
+- **`gijn-org`** (high) — Use when you need a vetted methodology or country/sector guide for an investigation (e.g. tracing companies or people abroad) — returns cura
+- **`github-io`** (high) — Use when you have the `name` of a deceased person and want to find their burial record and, via neighbouring graves, family surnames — retur
+- **`givesendgo`** (low) — OSINT tool: GiveSendGo.
+- **`gla-gov-uk`** (high) — Use when you have a UK labour provider/gangmaster `name`, business or `address` and want to confirm their licence — returns the licensed bus
+- **`glassdoor`** (medium) — OSINT tool: Glassdoor.
+- **`global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool`** (low) — OSINT tool: GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL.
+- **`globaledge-database-of-international-business-statistics`** (low) — OSINT tool: globalEDGE Database of International Business Statistics.
+- **`globaledge`** (medium) — OSINT tool: globalEdge.
+- **`gmc-uk-org`** (high) — Use when you have a doctor's `name` (or GMC number) and want to verify UK medical registration/licence — returns employer-org context, regis
+- **`gogettr`** (low) — OSINT tool: gogettr.
+- **`goldensnitches`** (low) — OSINT tool: Goldensnitches.
+- **`goodfirms`** (medium) — OSINT tool: GoodFirms.
+- **`google-public-data-explorer`** (low) — OSINT tool: Google Public Data Explorer.
+- **`google-scholar-search-tips`** (medium) — Google scholar search engine tips
+- **`gouvernement-du-qu-bec`** (medium) — OSINT tool: Gouvernement du Québec.
+- **`gov-cy`** (high) — Use when you have a Cyprus `employer-org`/company name (or reg number) and want its official registry record — returns registered `address`,
+- **`gov-hk`** (high) — Use when you have a Hong Kong `employer-org`, `name`, or `address` and want official company/director records — routes to the Companies Regi
+- **`gov-im-2`** (high) — Use when you have a `name` and an Isle of Man life event and want an official birth/death/marriage certificate — returns registered vital-re
+- **`gov-im-3`** (high) — Use when you have a `name` linked to the Isle of Man and want official vital records (birth/death/marriage) — returns document-id (certifica
+- **`gov-im-4`** (high) — Use when you have a name or property on the Isle of Man and want official deed/probate/land records — returns registered documents including
+- **`gov-im-5`** (high) — Use when you have an `address` (or `name`/keyword) on the Isle of Man and want planning-application records tied to a property or applicant 
+- **`gov-im`** (high) — Use when you have an `employer-org` or `name` linked to an Isle of Man company and want official registry data — returns company status, off
+- **`gov-scot`** (high) — Use when you have a Scottish `address` or business and want the property's rateable value and the named proprietor/tenant/occupier — a gov.s
+- **`gov-uk-10`** (high) — Use when you have a `name` or `geolocation` for a UK subject who may be a driving instructor and want to confirm DVSA approval — returns app
+- **`gov-uk-11`** (medium) — Use when you have a UK `address` and want its official property valuation data — returns council-tax band or business-rates rateable value f
+- **`gov-uk-12`** (high) — Use when you have an `address` in England or Wales and want the registered owner and title details — returns the proprietor's `name`, the pr
+- **`gov-uk-13`** (high) — Use when you have a UK `address`/`geolocation` and want to identify a registered property and obtain its ownership — returns the title numbe
+- **`gov-uk-14`** (high) — Use when you have a property `address` (or title number) and want a PAST edition of the HM Land Registry register/title plan — returns histo
+- **`gov-uk-15`** (high) — Use when you have a UK `address` (or postcode) and want to confirm a property exists, see its dwelling characteristics, and date when it was
+- **`gov-uk-16`** (high) — Use when you have an `address`/postcode in England and want its flood risk and live water levels — returns flood alerts, 5-day forecast, lon
+- **`gov-uk-3`** (high) — OSINT tool: gov.uk.
+- **`gov-uk-4`** (medium) — Use when you have a `name` and want to confirm a divorce/dissolution in England & Wales and obtain the record — returns marital-status confi
+- **`gov-uk-5`** (high) — Use when you have a `name` of someone who worked in UK schools and want teacher-misconduct/prohibition records — returns the person's `name`
+- **`gov-uk-6`** (high) — Use when you have a teacher's `name` (or `employer-org` school) and want to find UK professional-misconduct panel outcomes — returns name, e
+- **`gov-uk-7`** (high) — Use when you have a `name` or `employer-org` of a UK immigration adviser and want to confirm they are officially regulated — returns the adv
+- **`gov-uk-8`** (medium) — Use when you have a `name` or SIA licence number and want to confirm a person holds a valid UK private-security licence — returns licence va
+- **`gov-uk-9`** (high) — Use when you (lawfully) hold a subject's driving-licence number plus their NI number and postcode, or they give you a share code — the DVLA 
+- **`gov-uk`** (medium) — Use when you have a UK VAT number (an `employer-org` identifier) and want to validate it — HMRC returns the registered business `name` and `
+- **`govchain-co-za`** (high) — Use when you have a company name and want to check whether it is registered in South Africa (CIPC) — returns name-availability/existence, a 
 - **`govdata-das-datenportal-f-r-deutschland-german-2`** (low) — OSINT tool: GOVDATA - Das Datenportal für Deutschland (German).
 - **`govdata-das-datenportal-f-r-deutschland-german`** (medium) — German administrative data
+- **`government-of-canada-open-data`** (low) — OSINT tool: Government of Canada Open Data.
+- **`government-staff-directory`** (medium) — OSINT tool: Government staff directory.
+- **`govsalaries`** (medium) — OSINT tool: GovSalaries.
+- **`grammar-check`** (medium) — Online grammar, spelling, and punctuation editor
+- **`grave-info-us`** (high) — Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index
+- **`greataupair-com`** (high) — OSINT tool: greataupair.com.
+- **`greater-sacramento-area-public-salaries`** (medium) — OSINT tool: Greater Sacramento Area Public Salaries.
+- **`greece`** (high) — Use when you have a Greek company `name`/`employer-org` and want its beneficial owners (UBO) — returns the natural persons behind the entity
+- **`gro-gov-uk`** (high) — Use when you have a `name` and want to confirm a birth, death or parentage in England & Wales — returns index entries with dates, districts 
+- **`gtcni-org-uk`** (high) — OSINT tool: gtcni.org.uk.
+- **`gtcs-org-uk`** (high) — Use when you have a `name` claimed to be a Scottish teacher and want to verify registration — returns registration status, number and qualif
+- **`guernseyregistry-com`** (high) — Use when you have a company `name`, a director `name`, or a Guernsey business connection and want official company/director records — return
+- **`guernseyroyalcourt-gg`** (medium) — Use when you have a `name` with a Guernsey nexus and need birth/death/marriage, will, deed-poll or power-of-attorney records — returns vital
+- **`guidestar`** (medium) — OSINT tool: GuideStar.
+- **`gun-dealer-inspections-the-trace`** (medium) — OSINT tool: Gun Dealer Inspections \| The Trace.
+- **`gutneberg-project`** (medium) — Database of over 59,000 free eBooks, including Kindle eBooks
+- **`guttr`** (low) — OSINT tool: GUTTR.
+- **`hathitrust-digital-library`** (medium) — Collaboration of academic and research institutions, offering a collection of millions of digitized titles from libraries
+- **`hcpc-uk-org`** (high) — Use when you have a `name` of a UK health/care professional and want to confirm their registration and status — returns name, profession/reg
+- **`healthcare-education-providers`** (medium) — OSINT tool: HEALTHCARE EDUCATION PROVIDERS.
+- **`heraldsun-com-au`** (high) — Use when you have a `name` of someone who may have died in Victoria, Australia and want the death/funeral notice — returns published tribute
+- **`high-schools-that-received-nra-grants-2010-2016`** (high) — OSINT tool: High schools that received NRA grants 2010-2016.
+- **`highly-cited-researchers`** (medium) — List of highly cited researchers, including search by name and affiliation
+- **`his-piers`** (low) — OSINT tool: HIS Piers.
+- **`hmcpl-obituary-index`** (high) — Use when you have a `name` of someone likely connected to the Huntsville/Madison County, Alabama area and want to find their obituary — retu
+- **`home-comptroller-texas-gov`** (medium) — OSINT tool: Home Comptroller.Texas.Gov.
+- **`homefacts-us`** (medium) — OSINT tool: HomeFacts (US).
+- **`hoovers`** (medium) — OSINT tool: Hoovers.
+- **`houseprices-io`** (high) — Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns
+- **`how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have`** (medium) — OSINT tool: How many untested rape kits does your city police department or county sheriff's office have?.
+- **`hudwayglass-com`** (high) — OSINT tool: hudwayglass.com.
+- **`human-development-reports`** (low) — OSINT tool: Human Development Reports.
+- **`i-cyprus-com`** (high) — Use when you have a company or director `name` in Cyprus and want corporate-registry detail — returns directors, shareholders, secretaries, 
+- **`iaea-online-org`** (high) — Use when you need to find or verify a UK/international independent automotive engineer assessor by location/specialty — returns a matching p
+- **`ic-gc-ca`** (high) — Use when you have a Canadian federal company `name` or an `employer-org` link and want the official registry — returns corporate status, dir
+- **`icaew-com`** (medium) — Use when you have a `name` or firm and want to confirm a UK chartered accountant / ICAEW-regulated firm — returns the firm/member `employer-
+- **`icas-org-uk-2`** (high) — Use when you have a `name` of a Scottish chartered accountant and want to check for published disciplinary findings against them — returns n
+- **`icas-org-uk`** (high) — Use when you have a `name` or firm and want to verify/locate a Chartered Accountant registered with ICAS — returns the member/firm, their fi
+- **`ice-patrol`** (medium) — OSINT tool: ICE Patrol.
+- **`iceland`** (high) — Use when you have an Icelandic `employer-org`, `name`, or `address` and want official company-registry details — returns `employer-org`, `ad
+- **`ico-org-uk`** (high) — Use when you have an organisation/sole-trader `name` and want to confirm UK data-protection registration and its contact details — returns r
+- **`idaho`** (high) — Use when you have a `name` and want to check Idaho Department of Correction custody/probation/parole status — returns `name`, `document-id` 
+- **`idealista-com`** (high) — Use when you have an `address` or area and want property listings tied to it in Spain, Italy, or Portugal — returns listing photos, features
+- **`identitynumber-org`** (high) — Use when you have a South African `name` or ID number (`document-id`) and want identity verification plus genealogy/death records — returns 
+- **`ifa-org-uk`** (high) — Use when you have an accountant's `name` and want to verify UK IFA membership/practising status — returns employer-org and address of the pr
+- **`illinois-inmate-search`** (medium) — Illinois past and present inmate search
+- **`illinois-public-salaries`** (medium) — OSINT tool: Illinois Public Salaries.
+- **`illinois`** (high) — Use when you have a `name` (or IDOC number) and want to locate someone in Illinois state prison custody — returns custody status/facility pl
+- **`ilo-world-employment-and-social-outlook-trends`** (low) — OSINT tool: ILO World Employment and Social Outlook Trends.
+- **`ilostat`** (low) — OSINT tool: ILOSTAT.
+- **`imf-world-economic-outlook-database`** (low) — OSINT tool: IMF World Economic Outlook Database.
+- **`imiregister-org-uk`** (medium) — Use when you have a `name` and think the subject is a UK automotive professional, and want to verify their accreditation and workplace — ret
+- **`immo-data-fr`** (high) — Use when you have a French `address` and want the property's recorded sale prices and transaction history — returns geolocation and price/da
+- **`inc-5000`** (medium) — OSINT tool: Inc. 5000.
+- **`inciteful`** (medium) — Enter paper title, DOI, PubMed URl, arXiv URL to build a graph of links between the research article and other publications (who it cites an
+- **`independent-fundamental-baptist-sexual-misconduct-database`** (high) — Use when you have a `name` possibly tied to Independent Fundamental Baptist church abuse and want the Star-Telegram's documented cases — ret
+- **`index-mundi`** (low) — OSINT tool: Index Mundi.
+- **`indiana-offender-database-search`** (high) — Use when you have a `name` (or DOC number) and want to check Indiana incarceration status — returns offender ID, DOB, offense, facility and 
+- **`indiancompany-info`** (high) — OSINT tool: indiancompany.info.
+- **`info-clipper-com`** (high) — Use when you have a company `name` (or an `employer-org`/`phone`) and want its registry profile, directors and address across 200 countries 
+- **`infocreditgroup-com`** (medium) — Use when you have a company `name` or a person's `name` tied to a business and want credit, ownership, and due-diligence/KYC data across 130
+- **`infoempresa-com`** (high) — Use when you have a `name` or company and want to find a subject's Spanish company directorships, shareholdings, or registered addresses — r
+- **`infogreffe-fr`** (high) — Use when you have a company or director `name` in France and want official commercial-registry detail — returns company officers, registered
+- **`informnapalm`** (low) — OSINT tool: INFORMNAPALM.
+- **`infotrack-com-au`** (high) — Use when you have a `name`, `address` or `employer-org` in Australia and need professional property, company, court or person-locator search
+- **`inmate-locator-us`** (high) — Use when you have a `name` and want to find where a US inmate is incarcerated by routing to the right federal/state/ICE locator — returns co
+- **`inmateaid`** (high) — Use when you have a `name` and think a US subject may be incarcerated — returns inmate records with facility/location, inmate ID, and age/DO
+- **`inmemorium-canada`** (high) — Use when you have a `name` and want to confirm a Canadian death and pull obituary details — returns death/birth dates, funeral location and 
+- **`inpi-fr`** (high) — Use when you have a French `name`, `employer-org`, or `address` and want official company records and directors/beneficial owners — returns 
+- **`insight-jini`** (medium) — Extreme quick, extreme simple and free online tool for data visalization and analysis
+- **`insolvency-practitioners-org-uk`** (high) — Use when you have a `name` or firm and want to confirm a UK insolvency practitioner's licence, firm, and business address — returns name, em
+- **`integrated-companies-research-china-hong-kong`** (medium) — Chinese business-related search engine that searches by company name and director name
+- **`inteltechniques-business-search-tool`** (high) — Use when you have a company `employer-org` or a business owner's `name` and want to sweep many business-record sources at once — returns reg
+- **`interment`** (high) — Use when you have a `name` of a possibly-deceased person and want burial/cemetery records — returns death dates, cemetery location, and rela
+- **`international-company-profile-united-kingdom`** (medium) — UK based website providing company credit reports, appraisals, and other business-related information
+- **`international-energy-agency-statistics`** (low) — OSINT tool: International Energy Agency Statistics.
+- **`international-federation-of-accountants-ifac`** (medium) — Business-related web portal to global accountancy knowledge, resources, and news
+- **`international-labour-comparisons`** (low) — OSINT tool: International Labour Comparisons.
+- **`international-monetary-fund`** (medium) — Website providing data and publications regarding IMF lending, exchange rates, and other economic and financial indicators
+- **`international-trade-center`** (low) — OSINT tool: International Trade Center.
+- **`interpol-most-wanted-search-engine`** (low) — OSINT tool: Interpol Most Wanted Search Engine.
+- **`investing-com`** (medium) — View a detailed investment profile of the company
+- **`ioserv-com-en-jurisdictions-jurisdlist`** (low) — OSINT tool: Ioserv.com/en/jurisdictions/jurisdlist/.
+- **`iowa-cities-police-budgets`** (medium) — OSINT tool: Iowa Cities police budgets.
+- **`iowa-courts-online-search`** (high) — Use when you have a `name` and want Iowa state court case history (civil, criminal, traffic) — returns `document-id` (case numbers), `dob`/a
+- **`iowa-judicial-branch`** (high) — Use when you have a `name` and want Iowa state court cases — returns civil, criminal, traffic and other case records with parties, charges a
+- **`iowa-offender-search`** (high) — Use when you have a `name` and want to locate someone in Iowa state correctional custody or supervision — returns incarceration/supervision 
+- **`iowa-registered-voter-verification`** (medium) — Iowa registered voter verification and search
+- **`iowa-warrant-inquiry-polk-county`** (high) — Use when you have a `name` and want to check whether the subject has a possible active warrant held by the Polk County (Florida) Sheriff's O
+- **`ipo-gov-uk-2`** (high) — Use when you have a `name` or `employer-org` and want UK trademark filings tied to them — returns the owner/applicant `name`, `address`, and
+- **`ipo-gov-uk`** (high) — Use when you have a `name`/`employer-org` and want the UK trademarks they own — the UK Intellectual Property Office owner search returns the
+- **`ipums-variable-search`** (medium) — A service for finding variables in data from sociological surveys in 157 countries from 1960 to 2022. You can find completely rare and surpr
+- **`irelandhouse-ie`** (high) — Use when you have an Irish `address`/Eircode (or an area) and want historical property sale prices and dates — returns sale price, date and 
+- **`irelandnursing-com`** (high) — Use when you have a `name` and want to check if they're a registered Irish nurse/midwife — returns license status and directory details for 
+- **`irishdentalassoc-ie`** (medium) — Use when you have a dentist's `name` or a location in Ireland and want to confirm they are a practising IDA member and find their practice —
+- **`iron-march`** (low) — OSINT tool: Iron March.
+- **`ironmarch-exposed`** (low) — OSINT tool: Ironmarch.exposed.
+- **`italy`** (high) — Use when you have an Italian `employer-org` or a director's `name` and want official company data — InfoCamere's register returns the compan
+- **`ius-the-horizon-search-and-report`** (high) — OSINT tool: IUS The Horizon Search and Report.
+- **`jail-and-inmate-records-search-directory`** (high) — Use when you have a `name` and want to locate the right US jail/inmate lookup for a state or county — returns links to official incarceratio
+- **`jail-records`** (high) — Use when you have a `name` and want to check US jail/prison custody — a curated directory of official federal/state/county inmate locators r
+- **`jailbase`** (high) — Use when you have a `name` and want to check for a recent US arrest — returns booking records with mugshot, charges, booking date and county
+- **`jerseyfsc-org`** (high) — Use when you have an `employer-org` or `name` tied to a Jersey company/entity and want official registry data — returns entity existence, st
+- **`jisc`** (medium) — Access thousands of resources from e-books and images to journals and texts
+- **`journal-officiel-gouv-fr`** (medium) — Use when you have a French association `name`, person, or `address` and want the official register — returns declared non-profit association
+- **`journalmap-geosearch`** (medium) — Academic-related search engine that identifies research and literature material by geographic area
+- **`junar`** (low) — OSINT tool: Junar.
+- **`jurn-academic-search`** (medium) — Academic-related search engine focused on arts, science, business, law, and medicine and includes millions of academic articles, chapters, a
+- **`justia-us-supreme-court-center-united-states`** (medium) — Legal-related search engine for legal court cases and documents
+- **`justice-gov-uk`** (medium) — Use when you have a `name` or `employer-org` and want to verify a UK certificated bailiff/enforcement agent — returns certification status a
+- **`kaggle`** (low) — OSINT tool: Kaggle.
+- **`kansas-restaurant-inspections`** (medium) — OSINT tool: Kansas Restaurant Inspections.
+- **`kansas`** (high) — Use when you have a `name` and want to check whether a subject is in the Kansas Department of Corrections population — returns offense histo
+- **`katrina-spending-search`** (high) — Use when you have a `name` or `employer-org` and want to check Hurricane Katrina federal-aid/contract recipients — returns recipient `name`,
+- **`kmle-medical-dictionary-korean`** (medium) — Korean Medical Library Engine: academic-related search engine focusing on medicine
+- **`knoema`** (low) — OSINT tool: Knoema.
+- **`knowledge-guide-to-international-company-registration`** (medium) — OSINT tool: Knowledge guide to international company registration.
+- **`koreabr-com`** (high) — Use when you have a South Korean company or a `name` (CEO) and want to confirm the business and its officers/address — a KoDATA business-cre
+- **`ky-state-salary-2019`** (medium) — OSINT tool: KY State Salary 2019.
+- **`la-county-ca-restaurant-health-violations`** (medium) — OSINT tool: LA County CA Restaurant Health Violations.
+- **`labcfrontdoor-co-uk`** (medium) — Use when you have a UK `address`/postcode or trade `employer-org` and want to find the registered "competent person" building tradespeople t
+- **`land-valuation-bermuda`** (medium) — OSINT tool: Land Valuation - Bermuda.
+- **`landlordregistrationscotland-gov-uk`** (high) — Use when you have a Scottish rental property `address` (postcode) or a landlord registration number and want to confirm who is the registere
+- **`landmatrix`** (low) — OSINT tool: LandMatrix.
+- **`landregistryireland-com`** (high) — Use when you have an Irish property `address`/eircode and want to buy its ownership record — returns owner name, address, and mortgage/assoc
+- **`landregistryservices-com`** (high) — Use when you have a UK property `address` and want the registered owner's `name` and title details — returns name, address, and document-id 
+- **`latinobarometro`** (low) — OSINT tool: Latinobarometro.
+- **`latvia`** (high) — Use when you have a `name` or `employer-org` linked to Latvia and want to find company records, directors, and registered addresses — return
+- **`lauderdale-county`** (high) — Use when you have a `name` tied to Lauderdale County, Alabama and want historical court, land, cemetery and obituary records — returns assoc
+- **`lawlink-co-uk`** (high) — Use when you have a `name` or `address` in Northern Ireland and want registered/unregistered land, charges, bankruptcy and court-judgement r
+- **`laws-and-codes-search-directory-by-state`** (high) — OSINT tool: Laws and Codes Search Directory (By State).
+- **`lawscot-org-uk`** (high) — Use when you have a `name` and want to verify/locate a Scottish solicitor — returns their practising status, firm (`employer-org`) and offic
+- **`lawsoc-ni-org`** (medium) — Use when you have a `name` or firm and want to confirm a Northern Ireland solicitor — returns the solicitor's firm, office address and profe
+- **`lawsociety-org-uk`** (high) — Use when you have a `name` or firm and want to confirm a solicitor's registration and workplace in England & Wales — returns the solicitor's
+- **`le-necrologue-obituary-search-canada`** (high) — Use when you have a `name` and want Canadian death notices/obituaries — returns `dob`/death date, `address` (city/province), funeral home an
+- **`lebanon-county-pa-2017-search-and-report`** (medium) — OSINT tool: Lebanon County PA 2017 Search and Report.
+- **`lefigaro-fr`** (high) — OSINT tool: lefigaro.fr.
+- **`legacy-com`** (high) — Use when you have a `name` and want to find a death notice or obituary — returns date of death, age, location, funeral home and surviving/pr
+- **`legacy`** (high) — Use when you have a `name` and want to find a published obituary/memorial to confirm a death and harvest family detail — returns death date,
+- **`legal-entity-types-by-country`** (low) — OSINT tool: Legal Entity Types by Country.
+- **`legalmondo-com`** (high) — Use when you have a Spanish `employer-org`/company name and want to know which registries hold its data — a free methodology guide pointing 
+- **`lei-bloomberg-com`** (medium) — search information about company by Legal Identify Number
+- **`lei-search`** (medium) — can help find "who owned by" or "who owns"
+- **`leolist`** (low) — OSINT tool: LeoList.
+- **`lexington-fayette-county-ky-health-department-restaurant-inspections`** (medium) — OSINT tool: Lexington-Fayette County KY Health Department Restaurant Inspections.
+- **`lexington-ky-employee-salaries-2021`** (medium) — OSINT tool: Lexington KY Employee Salaries 2021.
+- **`lexisnexis-advance-quicklaw`** (medium) — Legal-related search engine for legal court cases and documents with advanced search forms for a more precise search
+- **`lexisnexis`** (medium) — Legal-related search engine for legal court cases and documents
+- **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
+- **`library-and-archives-canada-lac`** (medium) — OSINT tool: Library and Archives Canada (LAC).
+- **`library-journal-infodocket`** (medium) — Library information docket providing information on industry news
+- **`library-of-congress-united-states`** (medium) — Largest library in the world allowing users to search for books, audio recordings, videos, newspapers, maps, and more
+- **`library-university-of-michigan-statistics-and-datasets`** (low) — OSINT tool: Library, University of Michigan: Statistics and Datasets.
+- **`list-of-all-criminal-offences-a-to-z`** (high) — Use when you have a charge/offence term (e.g. from a court listing) and want to understand what it means — an Australian legal reference glo
+- **`list-of-criminal-charges-findlaw`** (high) — Use when you have a charge or offense name from a court/arrest record and want to understand what it means — returns plain-English legal def
+- **`list-org`** (medium) — OSINT tool: list-org.
+- **`lists-of-united-states-state-prisons-wikipedia`** (high) — OSINT tool: Lists of United States state prisons - Wikipedia.
+- **`lithuania`** (high) — Use when you have a company name, person name or address and want official Lithuanian company records — returns registration code, legal sta
+- **`little-rock-ar-crime-search`** (high) — OSINT tool: Little Rock AR Crime Search.
+- **`liveroots`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`local-directories-search-australia`** (medium) — Australian business-related search engine that searches global results by product, occupation, business and city name
+- **`local-government-gis-beacon`** (medium) — OSINT tool: Local Government GIS - Beacon.
+- **`local-north-america`** (medium) — Business-realted website that allows search for local businesses in your area
+- **`londonstockexchange-com`** (high) — Use when you have a company `employer-org` (or a director's `name`) and want issuer, regulatory-filing, and leadership detail — returns comp
+- **`lou-barletta-2017-donors`** (medium) — OSINT tool: Lou Barletta 2017 Donors.
+- **`louisiana-registered-voter-verification`** (medium) — Louisiana registered voter verification and search
+- **`louisiana`** (high) — Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, an
+- **`luxembourg`** (high) — Use when you have a `name` or `employer-org` and want official Luxembourg company records — returns directors/officers (name, associate), th
+- **`ma-middlesex-county-city-employee-salary-2019`** (medium) — OSINT tool: MA Middlesex County City employee salary 2019.
+- **`macron-campaign-emails`** (medium) — OSINT tool: Macron Campaign Emails.
+- **`maine-county-law-enforcement-discipline-chart`** (medium) — OSINT tool: Maine County Law Enforcement Discipline Chart.
+- **`maine`** (high) — Use when you have a `name` of someone possibly in Maine's corrections system and want their custody info — returns the resident's name, MDOC
+- **`maldives-sex-offender`** (high) — OSINT tool: Maldives Sex Offender.
+- **`malta`** (high) — Use when you have a Maltese company `name`/`employer-org` or a person and want official registry data — returns registered company details, 
+- **`manitoba-assessment-online`** (low) — OSINT tool: Manitoba Assessment Online.
+- **`manitoba-court-records`** (high) — Use when you have a `name` and want to check for court cases involving them in Manitoba, Canada — returns matching cases, file numbers, and 
+- **`manitoba-sex-offender`** (high) — Use when you have a name or photo and want to check whether the subject is a publicly notified high-risk sex offender in Manitoba — returns 
+- **`manta-north-america`** (medium) — American business-related search engine that searches using company name
+- **`manta`** (low) — OSINT tool: Manta.
+- **`mapmy23-ancestry-dna-file-converter`** (high) — OSINT tool: MapMy23 Ancestry DNA File Converter.
+- **`mappingpoliceviolence-org`** (medium) — OSINT tool: Mappingpoliceviolence.org.
+- **`marriage-records-search-directory`** (high) — Use when you have a `name` and want to find US marriage records — returns links to state/county marriage-record search resources that confir
+- **`maryland`** (high) — Use when you have a `name` (or inmate number) and want to check Maryland state custody status — returns identity confirmation, dob, inmate d
+- **`massachusetts`** (high) — Use when you have a `name` (or commitment number) and want to locate someone in a Massachusetts prison — the state directs you to VINELink t
+- **`media-room-and-blue-book`** (medium) — OSINT tool: Media Room & Blue Book.
+- **`medicalcouncil-ie`** (high) — Use when you have a doctor's `name` and want to verify Irish medical registration — returns registration status, specialty/qualifications an
+- **`melissadata-campaign-contributions`** (medium) — OSINT tool: MelissaData (Campaign Contributions).
+- **`mellssa-data`** (medium) — OSINT tool: Mellssa Data.
+- **`mergent-intellect`** (medium) — OSINT tool: Mergent Intellect.
+- **`mergent-online`** (medium) — OSINT tool: Mergent Online.
+- **`michigan-ppp-loans`** (medium) — OSINT tool: Michigan PPP loans.
+- **`michigan-resident-database`** (high) — Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and
+- **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres
+- **`michigan`** (high) — Use when you have a `name` and want to check whether someone is or was recently under Michigan corrections supervision — returns name, dob, 
+- **`michiganvoters-info`** (high) — OSINT tool: Michiganvoters.info.
+- **`microsoft-academic-research`** (medium) — Academic-related search engine focusing on science and research; includes over 220,000,000 papers and 48,000 journals
+- **`miexact-com`** (high) — OSINT tool: miexact.com.
+- **`milwaukee-wisconsin-city-employee-salaries-2019`** (medium) — OSINT tool: Milwaukee Wisconsin City Employee Salaries 2019.
+- **`ministry-of-corporate-affairs-india`** (medium) — Business-related search engine that searches by company name
+- **`minnesota-registered-voter-verification`** (medium) — Minnesota registered voter verification and search
+- **`minnesota`** (high) — Use when you have a `name` (or MNDOC offender ID) and want to check Minnesota state custody — returns offender ID, offense, custody status, 
+- **`missouri-registered-voter-verification`** (medium) — Missouri registered voter verification and search
+- **`missouri`** (high) — Use when you have a `name` and want to check whether a subject is in Missouri Department of Corrections custody or supervision — returns off
+- **`mmc-gov-my`** (high) — Use when you have a doctor's `name` in Malaysia and want to verify registration — returns their registration number, qualifying institution,
+- **`mobile-al-salaries-search-and-report`** (medium) — OSINT tool: Mobile AL Salaries Search and Report.
+- **`mocavo-find-my-past`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`moci-gov-kw`** (high) — Use when you have a Kuwaiti company or trade `name` and want its official commercial-registration details — returns registry data tying busi
+- **`molfar-com`** (high) — Use when you have a lead and need the right public register or OSINT app for a jurisdiction — Molfar's curated directory returns links to re
+- **`money-house-search-switzerland`** (medium) — Business-related search engine that searches global results by company, location, and country
+- **`montana-registered-voter-verification`** (medium) — Montana registered voter verification and search
+- **`montana`** (high) — Use when you have a `name` (or DOC ID) and want to check Montana state incarceration/supervision records — returns offender status, facility
+- **`montreal-council-of-social-agencies-database`** (medium) — OSINT tool: Montreal Council of Social Agencies Database.
+- **`most-wanted`** (high) — Use when you have a `name` (or are working an image/case) and want to check whether the person appears on the FBI's wanted/most-wanted lists
+- **`mpts-uk-org-2`** (high) — Use when you have a doctor's `name` (or GMC number) and want to check for UK fitness-to-practise tribunal hearings/decisions against them — 
+- **`mpts-uk-org`** (high) — Use when you have a UK doctor's `name` and want fitness-to-practise tribunal records — returns hearing listings and decision documents namin
+- **`mras-business-registry-search`** (low) — OSINT tool: MRAS Business Registry Search.
+- **`muckrock`** (medium) — OSINT tool: MuckRock.
+- **`mugshots`** (high) — Use when you have a `name` and want to check for a US arrest/booking record — returns booking photo, charges, arrest location and date; trea
+- **`musicteachers-co-uk`** (low) — Use when you have a `name`, instrument or `address`/area and think the subject is a UK private music teacher — returns teacher `name`, `addr
+- **`mycounciltax-org-uk`** (high) — Use when you have a UK `address`/postcode and want the Council Tax band for properties there — returns the band per property (a proxy for pr
+- **`myewc-wales-2`** (high) — Use when you have a `name` of a Welsh education practitioner and want registration status or disciplinary orders — returns employer-org cont
+- **`myewc-wales`** (high) — Use when you have a `name` and want to confirm a Welsh teacher/education worker's professional registration — returns registration status, `
+- **`myfamilyannouncements-co-uk`** (high) — Use when you have a `name` and want UK newspaper family notices — births, deaths, marriages, in memoriam — returns published notices with da
+- **`myheritage-2`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`myheritage-com`** (high) — Use when you have a `name` and want genealogical records and family-tree links — relatives, dates, places — to map a person's family network
+- **`myheritage`** (high) — Use when you have a `name` and want genealogical records — births, marriages, deaths, family links — to establish relatives, `dob`, and life
+- **`myplan-ie`** (high) — Use when you have an Irish property `address`/location and want planning applications there (applicant names, addresses) — returns name, add
+- **`nadj-org-uk`** (medium) — Use when you have a `name`, business name or `address`/area and want to find a UK disc jockey's professional listing — returns `name`, `empl
+- **`naics-code-search`** (low) — OSINT tool: NAICS Code Search.
+- **`napit-org-uk`** (high) — Use when you have a UK tradesperson `name`, `employer-org` or postcode and want to verify NAPIT registration — returns the registered busine
+- **`narcotics-control-reports`** (medium) — US Department of State Narcotics Control Strategy Reports
+- **`nation-master`** (low) — OSINT tool: Nation Master.
+- **`national-archives-and-records`** (medium) — US National Archives and Records Administration site of searchable archived federal government documents
+- **`national-association-of-investigative-specialists`** (high) — Site offering numerous links for free search online, including public records and skip trace portals and links
+- **`national-business-register-united-kingdom`** (medium) — National business register that allows for search using business or company name
+- **`national-center-for-state-courts-united-states`** (medium) — Legal-related search engine for legal court cases and documents
+- **`national-company-registers`** (medium) — OSINT tool: National Company Registers.
+- **`national-institute-on-drug-abuse`** (medium) — National Institute on Drug Abuse website offering publications with information regarding drug abuse trends and statistics
+- **`nationwide-business-directory-australia`** (medium) — Australian business directory that allows search by business name, keyword, and location
+- **`nationwide-county-court-records-by-state-and`** (high) — Use when you have a `name` and want the right free county/state court-records portal to search — returns links to official court, criminal, 
+- **`nb-courts-public-self-serve-website`** (high) — Use when you have a `name` and a New Brunswick (Canada) connection and want to find court cases involving that person — returns case partici
+- **`nc-state-employee-overtime-2018-search-and-report`** (medium) — OSINT tool: NC State Employee Overtime 2018 Search and Report.
+- **`nc-state-government-salaries-search-and-report`** (medium) — OSINT tool: NC State Government Salaries Search and Report.
+- **`ncra-sourcebook`** (high) — Use when you have a `name` you believe belongs to a court reporter, captioner, or legal videographer and want to confirm the professional an
+- **`nebraska`** (high) — Use when you have a `name` and want to check whether a person is or was incarcerated in Nebraska state prison — returns inmate record, ID (`
+- **`netherlands`** (medium) — Use when you have a `name` or `employer-org` linked to the Netherlands and want registered companies, directors and addresses — returns `emp
+- **`nethouseprices-com`** (medium) — Use when you have a UK `address`/postcode and want its sale history — returns sold prices and dates (England & Wales, from HM Land Registry)
+- **`nettrace`** (high) — Use when you have a `name` and an Australian (or AU/UK/US/NZ) subject and want the right free public-record source — returns a curated direc
+- **`nevada-registered-voter-verification`** (medium) — Nevada registered voter verification and search
+- **`new-england-facts`** (high) — Use when you have a `name` in the US Northeast and want an address, phone, relatives and property links — returns an aggregated people/prope
+- **`new-hampshire`** (high) — Use when you have a `name` and want to check New Hampshire state custody — returns offender name, current location, charges/convictions, par
+- **`new-jersey-registered-voter-verification`** (medium) — New Jersey registered voter verification and search
+- **`new-jersey-voter-records`** (high) — Use when you have a `name` and want to confirm a New Jersey address, birth year, and party from voter-registration data — returns residentia
+- **`new-jersey`** (high) — Use when you have a `name` and want to check New Jersey state prison custody — returns inmate status, `document-id` (SBI/ID number), `dob`/a
+- **`new-mexico`** (high) — Use when you have a `name` (or offender number) and want to check whether someone is in New Mexico state custody or has absconded — returns 
+- **`new-york-public-library-search`** (medium) — Academic-related search engine for the New York Public Librarys compilation of articles and databases
+- **`new-york-state-prison-records`** (high) — Use when you have a `name` and want to search indexed historical New York State prison/inmate records — returns identity confirmation, dob/a
+- **`new-york-state-voter-records`** (high) — Use when you have a `name` in New York State and want their voter registration — returns address, dob, party and household associate voters.
+- **`new-york-state`** (high) — Use when you have a `name` or DIN and think the subject may be in New York State prison — returns custody status, facility `address`, `dob` 
+- **`nexok-co-uk`** (high) — Use when you have a `name`, `address`/postcode, or `employer-org` in the UK and want to find associated companies and director records — ret
+- **`nibusinessinfo-co-uk`** (high) — Use when you have a Northern Ireland `address` or business and want its rating valuation — a guidance portal that links to the LPS valuation
+- **`nidirect-gov-uk-2`** (high) — Use when you have a Northern Ireland `address` or owner `name` and want land/property records — the official gateway routes to registers ret
+- **`nidirect-gov-uk-3`** (high) — Use when you have a landlord's name or a Northern Ireland property and want to confirm registration — returns whether a landlord/property is
+- **`nidirect-gov-uk`** (high) — OSINT tool: nidirect.gov.uk.
+- **`nigeria-sexual-offenders-registers`** (high) — Use when you have a `name` and want to check whether a person appears in Nigeria's national sexual-offenders database as reported, arraigned
+- **`niscc-org`** (high) — Use when you have a `name` and want to confirm they are a registered social worker / social care worker in Northern Ireland — returns regist
+- **`nj-police-and-fire-fy-2011-pension-contribution`** (medium) — OSINT tool: NJ Police and Fire FY 2011 Pension contribution.
+- **`njparcels-com`** (high) — Use when you have a New Jersey property `address` (or an owner `name`) and want the assessed owner, sale history, and parcel details — retur
+- **`nmbi-ie`** (high) — Use when you have a `name` (and ideally a registration number) for a nurse or midwife in Ireland and want to confirm their professional regi
+- **`nmc-org-in`** (high) — Use when you have a doctor's `name` (or registration number) in India and want to verify their medical registration — returns registration n
+- **`nmc-uk-org`** (high) — Use when you have a `name` claimed to be a UK nurse or midwife and want to verify their registration — returns registration status, PIN, qua
+- **`nonprofit-explorer`** (medium) — OSINT tool: Nonprofit Explorer.
+- **`noodle-educational-faculty-search-united-states`** (medium) — Academic-related search engine focusing on educational facilities
+- **`north-carolina-resident-database`** (high) — Use when you have a `name` in North Carolina and want address/contact and household leads — returns residents, addresses, phones, neighbors 
+- **`north-carolina`** (high) — Use when you have a `name` and want to check North Carolina prison/probation/parole records — returns `name`, `dob`, `document-id` (offender
+- **`northdata-com`** (high) — Use when you have a `name` or `employer-org` and want European company/officer records — returns director/shareholder names, registered addr
+- **`nsa-css`** (medium) — The NSAs Guide to Internet Research
+- **`nuans-business-name-search-canada`** (medium) — Canadadian business search engine that searches using company name
+- **`nursing-home-inspect`** (medium) — OSINT tool: Nursing Home Inspect.
+- **`ny-rent-regulated-building-search`** (medium) — Use when you have a New York `address` and want to know if the building is rent-regulated — returns the building's rent-stabilization status
+- **`nypd-misconduct-complaint-database`** (medium) — OSINT tool: NYPD Misconduct Complaint Database.
+- **`nypd-officer-profile`** (medium) — OSINT tool: NYPD Officer Profile.
+- **`nz-certificates-online-new-zealand`** (high) — Use when you have a `name` (plus a `dob`/event detail) and want a certified New Zealand birth, death or marriage certificate — returns an of
+- **`nzbn-govt-nz`** (high) — Use when you have a New Zealand business `name` or `employer-org` and want its official registry details — returns `employer-org`, `address`
+- **`oanda`** (medium) — Currency converter, view historial and live exchange rates
+- **`obituaries-from-newspapers-north-america`** (high) — Use when you have a `name` and want obituary/death notices — returns death dates, hometowns and named surviving relatives from North America
+- **`obituary-research-service-australia`** (high) — Obituary-related search for ancestral, family, and historical records, using a database at the national country level
+- **`obituary-searches-com`** (high) — Obituary-related search for ancestral, family, and historical records, using a database at the national country level
+- **`obsidian-cli`** (medium) — Very simple #go tool that let to interact with the Obsidian using the terminal. Open, search, create and edit files. Can be combined with an
+- **`oec-world`** (medium) — A tool for detailed analysis of international trade. It will show clearly which country sells which products, to which countries these produ
+- **`oecd-aid-database`** (low) — OSINT tool: OECD Aid Database.
+- **`oecd-data`** (low) — OSINT tool: OECD Data.
+- **`oecd-factbook`** (low) — OSINT tool: OECD Factbook.
+- **`ofac-sanctioned-search-engine`** (low) — OSINT tool: OFAC Sanctioned Search Engine.
+- **`offender-tracking-information-system-otis`** (high) — Use when you have a `name` of someone possibly in the Michigan corrections system and want their status, photo, physical description and loc
+- **`office-of-national-drug-control-policy`** (medium) — US Office of National Drug Control website linking to publications, programs, prevention, treatment, enforcement, drug facts, state and loca
+- **`offshorealert-com`** (medium) — Use when you have a `name` or `employer-org` and want offshore-finance, fraud and litigation intelligence — returns investigative reports an
+- **`oh-court-costs`** (medium) — OSINT tool: OH Court Costs.
+- **`oh-marijuana-docs`** (high) — OSINT tool: OH marijuana docs.
+- **`ohio-mhas`** (medium) — Ohio Mental Health and Addiction Services site - includes facts and resources for prevention and regulation
+- **`ohio-obituaries-death-and-marriage-search`** (high) — OSINT tool: Ohio obituaries, death & marriage Search.
+- **`ohio-registered-voter-verification`** (medium) — Ohio registered voter verification and search
+- **`ohio-resident-database`** (high) — Use when you have a `name` in Ohio and want address/age/party from the state's public voter-registration data — returns address, dob-year an
+- **`ohio`** (high) — Use when you have a `name` and want to locate someone in Ohio state prison custody — returns incarceration status, facility, age/DOB and off
+- **`ohiovoters-us`** (high) — OSINT tool: Ohiovoters.us.
+- **`oklahoma-offender-search`** (high) — Use when you have a `name` and want to confirm someone is/was in Oklahoma state custody or supervision — returns offender records with DOB, 
+- **`oklahoma-registered-voter-verification`** (medium) — Oklahoma registered voter verification and search
+- **`oklahoma-voters-search`** (high) — Use when you have a `name` in Oklahoma and want voter-registration details — returns registration data (address/precinct) from Oklahoma vote
+- **`oklavoters-com`** (high) — OSINT tool: Oklavoters.com.
+- **`on-demand-court-records`** (high) — Use when you have a `name` and want Oklahoma district/tribal court case records — returns matching parties, case numbers (`document-id`), fi
+- **`online-searchable-death-indexes-and-records-united-states`** (high) — Use when you have a deceased US subject's `name` and want the right state death index — returns links to death records giving dates, place a
+- **`online-services-pei-business-corporate-registry`** (low) — OSINT tool: Online Services PEI Business / Corporate Registry.
+- **`online-students-research-toolkit`** (medium) — Maryville University's Online Students' Research Toolkit with search and citation tips, and resources
+- **`onlinesearch-mns-mu`** (high) — Use when you have a Mauritius company (`employer-org`) or a director's `name` and want official corporate registry data — returns directors/
+- **`onondaga-county-home-sales`** (medium) — OSINT tool: Onondaga County Home Sales.
+- **`ontario-genealogy-and-history-database-index`** (medium) — Ontario (Upper Canada) Genealogy and History Database Index - searchable marriage and death records
+- **`ontario-highway-traffic-act`** (medium) — Site providing access to Ontarios laws including the Highway Traffic Act, Provincial Offences Act, and subsequent amendments
+- **`ontario-provincial-police`** (medium) — OSINT tool: Ontario Provincial Police.
+- **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
+- **`open-corporates-command-line-client-occli`** (medium) — Gathering detailed information about company through cli.
+- **`open-data-network`** (low) — OSINT tool: Open Data Network.
+- **`open-data-policing`** (medium) — OSINT tool: Open Data Policing.
 - **`open-data-portal-m-nchen-german-2`** (low) — OSINT tool: Open-Data-Portal München (German).
 - **`open-data-portal-m-nchen-german`** (medium) — Munich municipal administrative data
+- **`open-knowledge-maps`** (medium) — Visual research engine of publications
+- **`opendata-by-socrata`** (low) — OSINT tool: OpenData by Socrata.
+- **`opengazettes`** (low) — OSINT tool: OpenGazettes.
+- **`openleis-com`** (high) — Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `addr
+- **`openoversight`** (medium) — OSINT tool: Openoversight.
+- **`openownership-org`** (medium) — Wordwide beneficial ownership data.
+- **`openownership-register`** (medium) — OSINT tool: OpenOwnership Register.
+- **`openpayrolls-com`** (medium) — OSINT tool: Openpayrolls.com.
+- **`opensanctions-org`** (low) — OSINT tool: Opensanctions.org.
+- **`opensupplyhub-org`** (high) — Use when you have a company/brand or factory `name`/`address` and want to map global production facilities and who sources from them — retur
+- **`optical-org`** (medium) — Use when you have a `name` and want to confirm a UK optician/optometrist's registration and practice — returns registrant status, registrati
+- **`orbis-directory`** (medium) — OSINT tool: Orbis directory.
+- **`oregon-dpsst-professional-standards-cases-database`** (medium) — OSINT tool: Oregon DPSST Professional Standards Cases Database.
+- **`oregon-offender-search`** (high) — Use when you have a `name` and want Oregon DOC custody/offender records — returns the offender's name, DOB, ID number, photo and status/loca
+- **`os-birth-records`** (high) — Use when you have a `name` and want a state-by-state directory of official birth/vital-record sources — returns links to `dob`, `name` and `
+- **`os-death-records`** (high) — Use when you have a `name` and want to reach the right US state/county death-record and obituary databases — returns links yielding `dob`, d
+- **`os-divorce-records`** (high) — Use when you have a `name` and want to reach the official US county/state agency that holds that person's divorce (dissolution) record — ret
+- **`osint-for-countries-wddadk`** (high) — GitHub repo mapping OSINT resources by country.
+- **`osint-hub-fr`** (medium) — OSINT database covering France and international resources.
+- **`osint-list-of-public-sex-offenders-registers-osintme-com`** (high) — Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to nat
+- **`osint-tools-bulgaria`** (medium) — Bulgarian OSINT tools list (regional registries and sources).
+- **`osti-science-cinema-search`** (medium) — Multi-media search engine focusing on videos in the OSTI database related to science
+- **`pa-2017-certificate-actions-education`** (medium) — OSINT tool: PA 2017 Certificate Actions (Education).
+- **`pa-forfeiture-2010-2016-search`** (medium) — OSINT tool: PA Forfeiture 2010-2016 Search.
+- **`pa-perry-county-2017-compensation-search-and-report`** (medium) — OSINT tool: PA Perry County 2017 Compensation Search and Report.
+- **`pa-ppp-database`** (medium) — OSINT tool: PA PPP Database.
+- **`pa-school-districts-deeds-user-facing-web-search`** (medium) — OSINT tool: PA School Districts Deeds user-facing web search.
+- **`pa-teacher-salary-average`** (high) — OSINT tool: PA teacher salary average.
+- **`pacer-2`** (high) — Use when you have a `name` (party, attorney, or business) and want to find US federal court cases and dockets involving them — returns name,
+- **`pacer-case-locator`** (high) — Use when you have a `name` and want to find any US federal court cases (civil, criminal, bankruptcy, appellate) a person is party to — retur
+- **`pacer`** (high) — Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs a
+- **`padmapper`** (medium) — OSINT tool: Padmapper.
+- **`panjiva-com`** (medium) — search data on millions of shipments worldwide
+- **`paperpanda`** (medium) — In recent years it has become increasingly difficult to find scientific articles. To download their full versions, websites require registra
+- **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
+- **`parallelsearch-case-law`** (high) — OSINT tool: Parallelsearch case law.
+- **`parler-archive-search`** (low) — OSINT tool: Parler Archive Search.
+- **`parler-capitol-videos`** (low) — OSINT tool: Parler Capitol Videos.
+- **`paul-hensel-s-general-informational-data-page`** (low) — OSINT tool: Paul Hensel’s General Informational Data Page.
+- **`penn-world-table`** (low) — OSINT tool: Penn World Table.
+- **`pennsylvania-registered-voter-verification`** (medium) — Pennsylvania registered voter verification and search
+- **`pennsylvania`** (high) — Use when you have a `name` and want to know if the subject is (or recently was) in Pennsylvania state custody — returns inmate identity, DOB
+- **`people-search-4`** (high) — Use when you have a `name` and need Philippines-focused people-finding resources — a portal of missing-persons, adoption, public-records and
+- **`peoplefinder-com-reverse-address`** (medium) — OSINT tool: PeopleFinder.com - Reverse Address.
+- **`permits-and-inspections-search-by-state`** (high) — Use when you have a property `address` or owner `name` and want building/permit records — returns a state-by-state directory of official per
+- **`pew-research-center`** (low) — OSINT tool: Pew Research Center.
+- **`pharmacyregulation-org`** (high) — Use when you have a `name` or registration number and want to verify a GB pharmacist/pharmacy technician — returns registration status, numb
+- **`pibuzz`** (medium) — Use when you have a `name` (or `employer-org`) and want to find where a US public-sector subject works and what they earn — returns a direct
+- **`pipl-us-warning-slow`** (high) — OSINT tool: Pipl US (warning: slow).
+- **`plain-view-project`** (medium) — OSINT tool: Plain View Project.
+- **`planning-org-uk`** (medium) — Use when you have a UK `address`/postcode and want planning-application activity there — returns `address` (application sites), `associate` 
+- **`planningalerts-org-au`** (high) — Use when you have an Australian `address`/area and want local development/planning applications — returns addresses, applicant details, and 
+- **`planningportal-nsw-gov-au`** (high) — Use when you have an `address` in New South Wales and want the property's planning, zoning, and land context — returns geolocation, lot/parc
+- **`planningsystemni-gov-uk`** (high) — Use when you have an `address` (or applicant/agent `name`) in Northern Ireland and want planning-application records tying a person to a pro
+- **`plunkett-research`** (medium) — OSINT tool: Plunkett Research.
+- **`poland`** (medium) — Use when you have a Polish `employer-org` and want its beneficial owners — returns the natural-person `name`s (with partial `dob`/PESEL) who
+- **`police-body-worn-camera-footage-access-map`** (medium) — OSINT tool: Police Body-Worn Camera Footage Access Map.
+- **`police-complaint-lookup`** (medium) — OSINT tool: Police Complaint Lookup.
+- **`police-decertifcations-search-and-report`** (medium) — OSINT tool: Police Decertifcations Search and Report.
+- **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.
+- **`police-surveillance-in-chicago`** (medium) — OSINT tool: Police Surveillance in Chicago.
+- **`police1`** (medium) — OSINT tool: Police1.
+- **`policebrutalitydatabase-org`** (medium) — OSINT tool: Policebrutalitydatabase.org.
+- **`policecrime-bgsu-edu`** (medium) — OSINT tool: Policecrime.bgsu.edu.
+- **`politicalmoneyline`** (low) — Campaign-finance/lobbying records.
+- **`polk-county-ordinances`** (high) — Use when you have a `address`/jurisdiction in Polk County, Florida and want the governing local laws — returns the searchable municipal code
+- **`polk-court-records`** (high) — Use when you have a `name` and want to check Polk County, Florida court cases tied to them — returns case records, DOB, and case/document ID
+- **`pomanda-com`** (high) — Use when you have a company `name`, a director `name`, or an `address` in the UK and want company intelligence and officer links — returns r
+- **`population-reference-bureau-data-finder`** (low) — OSINT tool: Population Reference Bureau Data Finder.
+- **`portugal`** (high) — Use when you have a Portuguese `employer-org` or `name` and want its beneficial owners from the national UBO register — returns `name`, `ass
+- **`postcert`** (medium) — OSINT tool: postcert.
+- **`pricepaid`** (medium) — OSINT tool: PricePaid.
+- **`primelocation`** (medium) — OSINT tool: PrimeLocation.
+- **`prison-search-free-prison-inmate-locators`** (high) — Use when you have a `name` and want to find the right official US inmate locator — a state-by-state directory of free federal, state, and co
+- **`private-eye-co-uk`** (high) — Use when you have an `address` or area in England/Wales and want to know if it's owned by an offshore company — returns the offshore owner, 
+- **`probaterecords-co-uk`** (medium) — Use when you have a deceased person's `name` and want an official sealed copy of their England & Wales will or grant of probate — returns `a
+- **`project-whispers`** (low) — OSINT tool: Project Whispers.
+- **`proper-ie`** (high) — Use when you have an Irish `address`/area and want sale-price history from Ireland's public Residential Property Price Register — returns tr
+- **`property-records-public-records-by-state`** (medium) — OSINT tool: Property Records - Public Records by State.
+- **`property-search-public-records-by-state`** (medium) — OSINT tool: Property Search - Public Records by State.
+- **`propertypriceregister-ie`** (medium) — Use when you have an Irish `address` (or area) and want to confirm a residential sale, its date and price — returns the sale date, price and
+- **`propertypriceregisterireland-com`** (high) — Use when you have an Irish `address` (or area) and want to confirm a residential sale — date and price — at that property — returns address 
+- **`prostitutenearme-co-uk`** (high) — OSINT tool: prostitutenearme.co.uk.
+- **`prs-risk-indicators`** (low) — OSINT tool: PRS Risk Indicators.
+- **`psa-gov-ie`** (high) — Use when you have a contractor/employee `name` or `employer-org` in Irish private security and want to verify their PSA licence — returns li
+- **`public-access-to-court-electronic-records`** (high) — Use when you have a `name` and want US federal court cases (dockets, parties, filings) they are involved in — returns document-id, associate
+- **`public-library-of-science-search`** (medium) — Academic-related search engine for the Public Library of Science articles, providing access to various scientific publications and collectio
 - **`public-records-2`** (low) — OSINT tool: Public Records?.
+- **`public-records-directory`** (high) — Use when you have a `name`/location and want the right official record source for it — returns a curated directory of free US public-records
 - **`public-records`** (medium) — Unclear - requires VP clarification
+- **`punternet-com`** (high) — OSINT tool: punternet.com.
+- **`quandl`** (medium) — Database of corporate, financial, trade, and capital market data
+- **`quicksold-co-uk`** (high) — OSINT tool: quicksold.co.uk.
+- **`ratemyteachers-com`** (high) — Use when you have a teacher's `name` (and ideally their school as `employer-org`) and want to confirm where they teach/taught — returns `emp
+- **`rbo-gov-ie`** (high) — Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/y
+- **`rcmp-death-search-2`** (medium) — OSINT tool: RCMP Death Search 2.
+- **`rcmp-death-search-3`** (medium) — OSINT tool: RCMP Death Search 3.
+- **`rcmp-death-search`** (medium) — OSINT tool: RCMP Death Search.
+- **`rcvs-org-uk`** (high) — Use when you have a `name` and want to confirm/locate a UK veterinary surgeon or nurse — returns registration status, qualifications, and th
+- **`realtor`** (medium) — OSINT tool: Realtor.
+- **`rechercher-par-entreprise`** (low) — OSINT tool: Rechercher par entreprise.
+- **`rechercher-par-r-gion-ou-type-de-travaux`** (low) — OSINT tool: Rechercher par région ou type de travaux.
+- **`rechercher-par-r-pondant`** (low) — OSINT tool: Rechercher par répondant.
+- **`refdesk`** (low) — Use when you have a starting `name`/`employer-org` and want a curated jump-off directory of people-finder, public-records and reference site
+- **`reference-com`** (medium) — Reference search engine and directory
+- **`refseek`** (medium) — Research directory of references, including relevant webpages and documents
+- **`regional-municipality-of-durham`** (medium) — OSINT tool: Regional Municipality of Durham.
+- **`registrant-directory`** (medium) — OSINT tool: Registrant directory.
+- **`registrant-lookup`** (low) — OSINT tool: Registrant Lookup.
+- **`rehold`** (medium) — OSINT tool: rehold.
+- **`rejestr-sprawc-w-przest-pstw-na-tle-seksualnym`** (high) — Use when you have a `name` of a person possibly convicted of a sexual offence in Poland and want the official public sex-offender register e
+- **`related-list`** (medium) — find company-related contacts and confidential documents leaked online
+- **`rental-in-canada`** (low) — OSINT tool: Rental in Canada.
+- **`research-rabbit`** (medium) — Find articles and view its connections - similar works, references, citations and more
+- **`residential-rental-properties`** (high) — Use when you have a UK residential `address` and want to check the registered "fair rent" for a regulated tenancy — returns confirmation the
+- **`residential`** (high) — Use when you have a UK `address` (postcode) and want to confirm a dwelling exists and read its council tax band as a rough property-value / 
+- **`resources-library-ubc-ca`** (medium) — OSINT tool: Resources.library.ubc.ca.
+- **`responsesource-com`** (high) — OSINT tool: responsesource.com.
+- **`rhode-island-registered-voter-verification`** (medium) — Rhode Island registered voter verification and search
+- **`rhode-island`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Rhode Island state corrections — returns inmate record, ID 
+- **`rias-org-uk`** (high) — Use when you have an architect's or firm `name` (or a Scottish location) and want to confirm the practice and its address — returns a charte
+- **`rics-org`** (medium) — Use when you have a `name` or `employer-org` and want to verify a chartered surveyor's RICS membership — returns the member/firm's professio
+- **`rightmove-co-uk`** (high) — Use when you have a UK `address`/postcode and want a property's sold-price history and past listing photos — Rightmove's house-price tool re
+- **`rip-ie`** (high) — Use when you have a `name` (and rough locality) of someone who may have died in Ireland and want the death/funeral notice — returns death no
+- **`rivoters-com`** (high) — Use when you have a `name` and want a Rhode Island resident's registered-voter record — returns their address, year/date of birth and helps 
+- **`rjsc-connect`** (low) — OSINT tool: RJSC Connect.
+- **`romania`** (high) — Use when you have a Romanian `employer-org`/company name (or CUI) and want the official trade-register record — returns registered `address`
+- **`rootsweb-2`** (high) — Use when you have a `name` and want ancestry/family links — returns user-submitted family trees (WorldConnect), relatives, birth/death dates
+- **`rootsweb-3`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
+- **`ros-gov-uk-2`** (high) — Use when you have a Scottish property `address` (postcode) and want the owner and price history — returns owner name, address, and document-
+- **`ros-gov-uk`** (high) — Use when you have a `name` or Scottish `address` and want property ownership or a will/deed — returns address, owner name and employer-org l
+- **`royal-canadian-mounted-police`** (medium) — OSINT tool: Royal Canadian Mounted Police.
+- **`royalmail-com`** (high) — Use when you have a UK `address` fragment or postcode and want to resolve the full, canonical postal address (or the postcode for an address
+- **`rxlist`** (medium) — Internet drug index for prescription drugs and medications
+- **`ryersonindex-org`** (high) — Use when you have an Australian subject's `name` and suspect they've died — returns death-notice/obituary index entries (death date, age, so
+- **`saa-gov-uk`** (high) — Use when you have a Scottish `address` (or a commercial occupier `name`) and want council-tax band or valuation-roll details — returns addre
+- **`sacompany-co-za`** (high) — OSINT tool: sacompany.co.za.
+- **`sadoctorsapp-co-za`** (high) — Use when you have a doctor's `name` or a `geolocation`/`address` in South Africa and want their practice location and contact details — retu
+- **`samhsa`** (medium) — Substance Abuse and Mental Health Services Administration; an agency of the U.S. Department of Health and Human Services, website providing 
+- **`san-francisco-copwatch-database`** (medium) — OSINT tool: San Francisco CopWatch Database.
+- **`scholarcy`** (medium) — AI papers summarizer. Upload the file or copy the access URL to the article to get: Key concepts; Abstract; Synopsis; Highlights; Summary; L
+- **`sciencehack-video-search`** (medium) — Multi-media search engine focusing on videos related to science
+- **`scinapse-io`** (medium) — Academic Search Engine. Search by 48000 journals
+- **`scite-ai`** (medium) — Enter the article title or DOI to get a list of publications that cite it. Results can be filtered by type (book, review, article), year, au
+- **`scoot`** (medium) — OSINT tool: Scoot.
+- **`scotlandspeople-gov-uk-2`** (high) — Use when you have a `name` and approximate date/place in Scotland and want official birth/marriage/death/census records to confirm identity 
+- **`scotlandspeople-gov-uk-3`** (high) — Use when you have a `name` and want official Scottish vital records — births, marriages, deaths, divorces, censuses — returns `dob`/life dat
+- **`scottishepcregister-org-uk`** (medium) — Use when you have a Scottish `address` or postcode and want the property's Energy Performance Certificate — returns property characteristics
+- **`scottishindexes-com`** (high) — Use when you have a `name` linked to Scotland and want historical Scottish records — returns free indexed entries (Court of Session, census,
+- **`scotussearch-com`** (medium) — OSINT tool: Scotussearch.com.
+- **`scwonline-wales`** (high) — Use when you have a `name` of a social care worker in Wales and want to verify their registration — returns the registrant `name`, registrat
+- **`search-datasets`** (low) — OSINT tool: Search Datasets.
+- **`search-for-a-federal-corporation`** (low) — OSINT tool: Search for a Federal Corporation.
+- **`search-for-company-documents`** (low) — OSINT tool: Search for Company Documents.
+- **`search-for-open-information-documents`** (medium) — OSINT tool: Search for Open Information Documents.
+- **`search-for-us-voters-with-custom-search-engines-osint-boolean-strings`** (high) — Use when you have a US `name` and want registered-voter public records — a Google Custom Search Engine technique over voterrecords.com that 
+- **`search-polk-county-ordinance`** (high) — OSINT tool: Search Polk County Ordinance.
+- **`search-systems-criminal-records`** (high) — Use when you have a `name` and need to find the right public-records database for a jurisdiction — a directory routing you to court, crimina
+- **`search-the-open-information-catalogue`** (medium) — OSINT tool: Search the Open Information Catalogue.
 - **`searchable-fcc-id-database-2`** (low) — OSINT tool: Searchable FCC ID Database.
 - **`searchable-fcc-id-database`** (medium) — Electronics device certification lookup
+- **`searching-state-courts`** (high) — OSINT tool: Searching state courts.
+- **`searchsystems-birth-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database that holds a birth or vital record — 
+- **`searchsystems-death-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database holding a death/mortality record — re
+- **`sec-company-search`** (low) — OSINT tool: SEC Company Search.
+- **`sec-gov`** (medium) — Use when you have a `name` or `employer-org` and want US securities filings — returns officer/director names, business `address`, company af
+- **`seco-verification-of-course-attendance-2018`** (high) — OSINT tool: SECO Verification of Course Attendance 2018.
+- **`secret-surveillance-catalogue`** (medium) — OSINT tool: Secret Surveillance Catalogue.
+- **`section-16-deadline-calculator`** (medium) — OSINT tool: Section 16 Deadline Calculator.
+- **`securities-administrators-ca`** (high) — Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give invest
+- **`security-licence-status-verification`** (medium) — OSINT tool: Security Licence Status Verification.
+- **`seethroughny-pensions`** (medium) — OSINT tool: SeeThroughNY :: Pensions.
+- **`selective-service-online-registration`** (medium) — Selective Service Systems Online Registration Search - search requires last name, social security number and date of birth
+- **`sellerapp-com-amazon-reverse-asin-search`** (medium) — OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.
+- **`semantic-scholar`** (medium) — Searchable database of peer-reviewed research and liteature
+- **`semrush`** (medium) — OSINT tool: SEMrush.
+- **`serpstat`** (medium) — OSINT tool: Serpstat.
+- **`service-gov-uk`** (high) — Use when you have a `name` and want to confirm a death and find the will/grant of probate in England & Wales — returns death date, probate r
+- **`services-en-ligne`** (low) — OSINT tool: Services en ligne.
+- **`sesac-com`** (high) — Use when you have a songwriter/performer `name` or publisher `employer-org` and want to confirm their affiliation and linked works — returns
+- **`sesric-basic-social-and-economic-indicators`** (low) — OSINT tool: SESRIC Basic Social and Economic Indicators.
+- **`sesric-databases`** (low) — OSINT tool: SESRIC Databases.
+- **`setlist-fm`** (high) — Use when you have a performer/band `name` and want their concert history — dates, venues and cities — returns geolocation and address of gig
+- **`sex-offender-korea`** (high) — Use when you need to check South Korea's official sex-offender registry for a `name`/location — returns offender name, photo, address area a
+- **`sex-offender-registry-websites`** (high) — Use when you have a `name` or `geolocation` and want to check US sex-offender registries — returns registrant `name`, `address`, `image`, `p
+- **`sex-offender-registry`** (medium) — United States Sex Offender Registry - searchable by location or name
+- **`sex-offender-search`** (high) — Use when you have a `name` and want to check US state sex-offender registries — returns registry listings with photo, offense, registered ad
+- **`sex-offender-us`** (high) — Use when you have a `name` or `address` and want to check US state sex-offender registries — returns registrant name, address, DOB, photo an
+- **`sherpaintelligence-substack-com`** (high) — Use when you need a methodology for investigating an organisation (charity/company) tied to a subject — returns a walkthrough of registries 
+- **`shopsearchengine-com`** (medium) — OSINT tool: Shopsearchengine.com.
+- **`sijilat-bh-2`** (high) — Use when you have a Bahraini business `name`/CR number or an `employer-org` and want official commercial-registration data — returns company
+- **`sijilat-bh`** (high) — Use when you have a company `name`/`employer-org` (or owner name) in Bahrain and want the official commercial-registration record — returns 
+- **`skilledtradesontario-ca`** (medium) — Use when you have a `name` and want to verify whether a person holds a valid Ontario skilled-trades certification/registration — returns cer
+- **`skyscraperpage`** (medium) — OSINT tool: SkyscraperPage.
+- **`slovakia`** (high) — Use when you have a company `name`/`employer-org` or a `name` doing business with the Slovak state and want its verified beneficial owners —
+- **`slovenia`** (high) — Use when you have a company `name`, `address`, or registration number in Slovenia and want official registry data — returns employer-org det
+- **`smallbusinesspro-co-uk`** (high) — OSINT tool: smallbusinesspro.co.uk.
+- **`snitch-list`** (low) — OSINT tool: Snitch List.
+- **`social-security-death-index`** (high) — Use when you have a US `name` and want to confirm a death — returns death date, birth date (`dob`), and last-residence location from the SSA
+- **`social-security-death-master-file`** (high) — Use when you have a `name` (or SSN) of a possibly-deceased US person and want death confirmation with birth/death dates and last residence —
+- **`socialworkengland-org-uk`** (high) — Use when you have a `name` (or registration number) and want to confirm someone is a registered social worker in England and their practisin
+- **`societe-ninja`** (high) — Use when you have a `name` or `employer-org` tied to France and want to map a person to French companies they run or are registered against 
+- **`solicitorstribunal-org-uk`** (high) — Use when you have a `name` of a solicitor in England & Wales and want to check for published disciplinary judgments against them — returns c
+- **`solocheck-ie`** (high) — Use when you have an Irish company `name` or a director's `name` and want company profiles, directors and addresses — returns `employer-org`
+- **`sortedbybirthdate`** (high) — Use when you have a `dob` (or name) for a deceased US person and want to confirm death details — returns Death Master File entries with name
+- **`sortedbyname-com`** (high) — Use when you have a `name` and want genealogy/vital-record leads (births, marriages, deaths) indexed by surname — returns links to public re
+- **`south-carolina-registered-voter-verification`** (medium) — South Carolina registered voter verification and search
+- **`south-dakota`** (high) — Use when you have a `name` and want to confirm someone is/was in South Dakota state custody — returns offender records with DOB, ID number, 
+- **`spain`** (high) — OSINT tool: Spain.
+- **`spotlight-com`** (high) — Use when you have a `name` for someone in the UK entertainment industry and want to find their professional profile or the agents/services a
+- **`spyfu`** (medium) — OSINT tool: SpyFu.
+- **`sra-org-uk`** (medium) — Use when you have a `name` or firm and want to verify a solicitor in England & Wales — returns regulatory status, practising history and fir
+- **`st-louis-county-salaries-fiscal-2020`** (medium) — OSINT tool: St. Louis County salaries fiscal 2020.
+- **`startup-tracker`** (medium) — OSINT tool: Startup Tracker.
+- **`state-adoption-resources`** (high) — Use when a missing-persons/family case involves adoption and you need each US state's rules for accessing (largely sealed) adoption records 
+- **`state-and-county-jail-inmate-locators`** (high) — Use when you have a `name` and want to check whether a subject is currently or was recently incarcerated in a US state prison or county jail
+- **`state-appellate-and-supreme-courts`** (high) — Use when you have a name and a US state and want the official free court-record search for that jurisdiction — returns links to state appell
+- **`state-corrections-links`** (high) — Use when you have a `name` and want to find the right state DOC inmate locator to check incarceration status — returns a directory pointing 
+- **`state-local-tribal-gov-page-search`** (high) — Use when you need the official website for a specific US state, county, city or tribal government to reach its records — USA.gov's authorita
+- **`state-public-records-laws`** (high) — Use when you need to obtain a US public record about a person and want to know each state's records-law rules and file the request — returns
+- **`statista`** (low) — OSINT tool: Statista.
+- **`statistics-and-data`** (high) — Use when you have a country/region context and want aggregate crime, homicide, drug, trafficking, or prison statistics — returns country-lev
+- **`statistics-canada`** (medium) — OSINT tool: Statistics Canada.
+- **`street-name-changes`** (high) — Use when you have a historical `address` whose street may have been renamed/renumbered and want the modern (or old) equivalent — returns the
+- **`strongabogados-com`** (high) — OSINT tool: strongabogados.com.
+- **`superpages-directory-united-states`** (medium) — Search directory for local businesses and retailers
+- **`supreme-court-of-canada-cases`** (high) — Use when you have a party `name` and want to check for a Supreme Court of Canada case involving them — returns the docket, parties/counsel (
+- **`supreme-court`** (high) — OSINT tool: Supreme Court.
+- **`supremecourt-uk`** (high) — Use when you have a `name` and want to check if they are a party in a UK Supreme Court case — returns case parties, document-id citations, a
+- **`sweden`** (high) — Use when you have a Swedish company `name`/`employer-org` or person and want official registry data — returns registered company details, ad
+- **`sweetsearch`** (medium) — Research search engine for students
+- **`switzerland`** (high) — Use when you have a company or director `name` in Switzerland and want official commercial-register detail — returns the company, registered
+- **`systemday-com`** (medium) — Use when you have a company `name` or number in an offshore/hard-to-reach jurisdiction and want an official registry search report — returns
+- **`taxpolicy-org-uk-2`** (high) — OSINT tool: taxpolicy.org.uk.
+- **`taxpolicy-org-uk`** (high) — OSINT tool: taxpolicy.org.uk.
+- **`teachingcouncil-ie`** (high) — Use when you have a `name` you believe belongs to an Irish teacher and want to confirm their registration status and registration number — r
+- **`tellmescotland-gov-uk`** (high) — Use when you have a Scottish `address`/`geolocation` and want the statutory public notices (planning, licensing, roadworks) attached to it —
+- **`tendersinfo`** (medium) — Search tenders around the world by keywords.
+- **`tennessee-registered-voter-verification`** (medium) — Tennessee registered voter verification and search
+- **`terrorism-incidents-database`** (low) — OSINT tool: Terrorism Incidents Database.
+- **`tess`** (medium) — Search engine for #USA trademarks
+- **`texas-local-superintendent-salaries-search-and-report`** (medium) — OSINT tool: Texas Local Superintendent Salaries Search and Report.
+- **`texas-public-records-search`** (high) — Use when you have a `name` and a Texas nexus and want an organised directory into official Texas state/county record databases — returns lin
+- **`tfl-gov-uk-2`** (medium) — Use when you have a London taxi/private-hire licence or badge number, a vehicle plate, or an operator name and want to confirm it is validly
+- **`tfl-gov-uk`** (high) — Use when you have a London taxi/private-hire driver badge or a vehicle plate and want to confirm the licence is valid — returns licence stat
+- **`tgcg-members-page`** (medium) — OSINT tool: TGCG Members Page.
+- **`the-ancestor-hunt`** (high) — Use when you have a `name` and want to find historical/genealogical records — newspapers, obituaries, cemetery, vital and yearbook records —
+- **`the-atlas-of-economic-complexity`** (low) — OSINT tool: The Atlas of Economic Complexity.
+- **`the-courts-of-british-columbia-home`** (high) — Use when you have a `name` involved in a BC (Canada) court matter and want published judgments, daily hearing lists and case references — re
+- **`the-data-and-story-library`** (low) — OSINT tool: The Data and Story Library.
+- **`the-investigator-s-handbook-a-guide-to-using-opencorporates`** (low) — OSINT tool: The Investigator’s Handbook: A Guide to Using OpenCorporates.
+- **`the-nypd-files`** (medium) — OSINT tool: The NYPD Files.
+- **`the-pegasus-project-occrp`** (medium) — OSINT tool: The Pegasus Project \| OCCRP.
+- **`the-philadelphia-police-misconduct-database`** (medium) — OSINT tool: The Philadelphia Police Misconduct Database.
+- **`the-ryerson-index-australia`** (high) — Use when you have a `name` and want to confirm an Australian death or find the obituary/funeral trail — returns death-notice index entries p
+- **`the-tribal-court-clearinghouse`** (high) — Use when a case touches a US tribal jurisdiction and you need to identify the right tribal court and its records/contacts — a reference port
+- **`the-weapons-id-database`** (high) — Use when you have an `image` or `physical-description` of a firearm/ammunition and want to identify make, model and markings — returns weapo
 - **`the-world-bank-open-data-catalog-2`** (low) — OSINT tool: The World Bank Open Data Catalog.
 - **`the-world-bank-open-data-catalog`** (medium) — Development data and statistics
+- **`thebppa-com`** (high) — Use when you have a `name` and suspect the subject is a UK press photographer and want their portfolio, byline history and professional iden
+- **`thegazette-co-uk`** (high) — Use when you have a `name` and want official UK notices — insolvency, deceased-estates/wills, and company notices — returns published notice
+- **`thegenealogist-co-uk`** (high) — Use when you have a `name` (plus rough `dob`/`address`) and want UK census, BMD, parish, will and 1939-register records — returns name, dob,
+- **`thekyb-com`** (high) — Use when you have a company `name` or `employer-org` and want verified registry data — legal name, address, officers, and beneficial owners 
+- **`thentiacloud-net`** (medium) — Use when you have a `name` and want to confirm a person's professional registration/licence on a regulator's public register — returns regis
+- **`thewebco`** (medium) — OSINT tool: TheWebCo.
+- **`tmdn-design-view`** (medium) — Search 17 684 046 products designs across the European Union and beyond
+- **`toronto-police-service`** (medium) — OSINT tool: Toronto Police Service.
+- **`toronto-star`** (low) — OSINT tool: Toronto Star.
+- **`tracxn`** (medium) — OSINT tool: Tracxn.
+- **`tradeint`** (medium) — Quick access for more than 85 tools for gathering information about company and company website, location and sector
+- **`traderegistry-ae-2`** (high) — Use when you have a UAE company (`employer-org`) or a director's `name` and want official corporate records — returns the directors (name), 
+- **`traderegistry-ae`** (high) — Use when you have a UAE `employer-org`, `name`, or `address` and want official-style trade-register company reports — returns `employer-org`
+- **`trading-economics`** (low) — OSINT tool: Trading Economics.
+- **`transparency-org-corruption-perception-index`** (low) — OSINT tool: Transparency.org Corruption Perception Index.
+- **`trellis`** (medium) — State-court records and analytics search.
+- **`trinka`** (medium) — A partly free online tool to help you prepare a research paper for publication: AI Grammar; Checker (made especially for scientific papers);
+- **`trouver-une-d-cision`** (medium) — OSINT tool: Trouver une décision.
+- **`trulia-real-estate-listings-homes-for-sale-housing-data`** (medium) — OSINT tool: Trulia: Real Estate Listings, Homes For Sale, Housing Data.
+- **`trump-twitter-archive`** (low) — OSINT tool: Trump Twitter Archive.
+- **`trustmark-org-uk`** (medium) — Use when you have a UK tradesperson/business `name` or trade + location and want to confirm TrustMark registration — returns the registered 
+- **`tsa-no-fly-list`** (low) — OSINT tool: TSA No-Fly List.
+- **`ttabcenter-com`** (medium) — OSINT tool: Ttabcenter.com.
+- **`tutorhunt-com`** (medium) — Use when you have a subject you suspect tutors in the UK (a `name` or a subject+`geolocation`) and want to find their tutor profile — return
+- **`uglymugs-org`** (high) — Use when a subject is (or may be) an adult-industry worker and you need a vetted, members-only safety/alert scheme — returns `associate` / `
+- **`uk-census-online`** (medium) — Database of deaths, births, and marriages. From 1841 to the beginning of the 21st century. Only the first and last names can be searched.
+- **`uk-government-list-of-overseas-registries`** (medium) — Government of UK list of overseas companies registries with links
+- **`uk-osint`** (high) — Use when you have a UK `name`, `address`, or `phone` and want a curated map of the right UK records, registries, and people-search tools — r
+- **`ukas-com`** (high) — Use when you have an `employer-org` name (a lab, cert body or inspection firm) and want to verify its UK accreditation — returns the org's a
+- **`ukbirthadoptionregister-com`** (high) — Use when you have a `name` and approximate `dob` and are working an adoption-reunion case — searches an adoption contact register to link ad
+- **`ukbmd-org-uk`** (high) — Use when you have a `name` and want UK births/marriages/deaths records — a portal routing you to local transcribed civil-registration indexe
+- **`ukdatabase`** (high) — OSINT tool: UKDatabase.
+- **`ukrlp-co-uk`** (low) — Use when you have a training/education provider `name` or UKPRN and want its official registration — returns `employer-org`, `address`, cont
+- **`uksocialhousing-com`** (medium) — Use when you have a UK location/`address` and want social-housing context — returns council/housing-association properties and providers in 
+- **`uky-salaries-2019`** (medium) — OSINT tool: UKY Salaries 2019.
+- **`un-comtrade-database`** (low) — OSINT tool: UN COMTRADE Database.
+- **`un-data`** (low) — OSINT tool: UN Data.
+- **`unc-system-employees-with-the-biggest-paychecks`** (medium) — OSINT tool: UNC System employees with the biggest paychecks.
+- **`unclaimed-and-abandoned-property-search-directory`** (medium) — OSINT tool: Unclaimed and Abandoned Property Search Directory.
+- **`unclaimed-money-us-google-search`** (medium) — OSINT tool: "unclaimed money" US - Google Search.
+- **`unclaimed-property-administrators`** (medium) — OSINT tool: Unclaimed Property Administrators.
+- **`unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa`** (medium) — OSINT tool: Unclaimed Property FREE SEARCH - Officially endorsed By The States, Provinces and Naupa.
+- **`unctad-country-fact-sheets`** (low) — OSINT tool: UNCTAD Country Fact Sheets.
+- **`unctad-investment-country-profiles`** (low) — OSINT tool: UNCTAD Investment Country Profiles.
+- **`unctad-stat`** (low) — OSINT tool: UNCTAD STAT.
+- **`undps-human-development-index`** (low) — OSINT tool: UNDPs Human Development Index.
+- **`unece`** (low) — OSINT tool: UNECE.
+- **`unesco-institute-for-statistics`** (low) — OSINT tool: UNESCO Institute for Statistics.
+- **`unicorn-riot-discord-leaks`** (low) — OSINT tool: Unicorn Riot: Discord Leaks.
+- **`unido-statistical-databases`** (low) — OSINT tool: UNIDO Statistical Databases.
+- **`united-kingdom-inmate-search-and-prison-lookup-locate-inmates-in-hmp-prisons`** (high) — OSINT tool: United Kingdom Inmate Search and Prison Lookup | Locate inmates in HMP Prisons.
+- **`university-of-texas-libraries-database`** (medium) — Academic-related search engine for the University of Texas publication catalog of articles, journals, books and media
+- **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
+- **`upsala-conflict-data-program`** (low) — OSINT tool: Upsala Conflict Data Program.
+- **`us-data-and-statistics`** (low) — OSINT tool: US Data and Statistics.
+- **`us-dept-of-energy-office-of-science-search`** (medium) — Academic-related search engine for open access publications in the sciences that uses federated search technology
+- **`us-institute-of-peace`** (medium) — United States Institute of Peace website, providing a special report on the use of the internet in modern terrorism
+- **`us-tax-court`** (high) — Use when you have a `name` and want to find their US Tax Court litigation — returns matching cases with docket numbers (`document-id`), part
+- **`usgenweb-archives-united-states`** (high) — Use when you have a `name` and want transcribed US genealogical records — obituaries, wills, cemetery, census, and marriage records — return
+- **`uspages-business-directory-united-states`** (medium) — Business-related search directory
+- **`usrealtyrecords-com`** (high) — Use when you have a US `address` (or owner `name`) and want property ownership, value, sale history and possible owner contact info — return
+- **`ustitlerecords-com`** (high) — Use when you have a `name` or `address` and want US property/title records — returns property ownership, transfer history, liens and all pro
+- **`utah-gun-exchange`** (low) — OSINT tool: Utah Gun Exchange.
+- **`utah`** (high) — Use when you have a `name` and want to check whether the person is under Utah Department of Corrections supervision — returns name, offender
+- **`utvoters-com`** (high) — OSINT tool: Utvoters.com.
+- **`validfleetlist-unknown-sail-boat-database`** (medium) — OSINT tool: ValidFleetList (unknown Sail Boat database).
+- **`vat-lookup-co-uk`** (high) — Use when you have a UK company `name` or a VAT number and want to resolve the other — returns the registered business name, VAT number, and 
+- **`vat-search-co-uk`** (high) — Use when you have an `employer-org` name or a VAT number and want to verify it and pull the registered business details — returns company na
+- **`vat-search-eu`** (medium) — Use when you have an EU company `name` or VAT number and want to validate/resolve it — returns the VAT-registered business `name`, `address`
+- **`viking-rifle-series-shooter-live-results`** (medium) — OSINT tool: Viking Rifle Series Shooter Live Results.
+- **`virtualglobetrotting-com`** (medium) — OSINT tool: Virtualglobetrotting.com.
+- **`vision-net-ie`** (high) — Use when you have an Irish company or a director's name and want registry-sourced records — returns company filings, director details and li
+- **`vizala`** (low) — OSINT tool: Vizala.
+- **`washington-state-voter-database`** (high) — OSINT tool: Washington State Voter Database.
+- **`washington`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Washington State corrections — returns inmate record, DOC n
+- **`webmd-medical-sciences-search`** (medium) — Academic-related search engine focusing on science, research, and medicine
+- **`west-virginia`** (high) — Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody st
+- **`western-states-marriages-search`** (medium) — Search form that allows you to search for marriage records by the groom or bride
+- **`westlaw-united-states`** (medium) — Legal-related search engine for legal court cases and documents
+- **`whaleslide`** (medium) — OSINT tool: WhaleSlide.
+- **`whitepages-reverse-address-search`** (medium) — OSINT tool: Whitepages - Reverse Address Search.
+- **`who-data`** (low) — OSINT tool: WHO Data.
+- **`who-do-you-search`** (medium) — Business-related search engine; searches global results by product, occupation, business and city name
+- **`whorepresents-com`** (low) — Use when you have a celebrity/public-figure `name` and want to find who represents them — returns the agency/publicist (`employer-org`) and 
+- **`whosarat-com`** (low) — OSINT tool: WhosaRat.com.
+- **`whowhere-search`** (medium) — Business-related search engine that searches global results by product, occupation, business and city name
+- **`windeed-co-za`** (high) — Use when you have a `name` or ID/registration number in South Africa and want official property, deeds, company, and directorship records — 
+- **`wisconsin-fox-river-veterans-grave-registration-database`** (medium) — Use when you have a veteran's `name` connected to the Fox River region of Wisconsin and want burial details — returns cemetery/grave locatio
+- **`wisconsin-registered-voter-verification`** (medium) — Wisconsin registered voter verification and search
+- **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
+- **`wiscvoters-com`** (high) — OSINT tool: Wiscvoters.com.
+- **`worcester-ma-employee-gross-pay`** (medium) — OSINT tool: Worcester MA Employee Gross Pay.
+- **`world-bank-data-2`** (low) — OSINT tool: World Bank Data.
+- **`world-bank-data`** (low) — OSINT tool: World Bank Data.
+- **`world-bank-doing-business`** (low) — OSINT tool: World Bank Doing Business.
+- **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
+- **`world-bank-investing-across-borders`** (low) — OSINT tool: World Bank Investing Across Borders.
+- **`world-digital-library-2`** (medium) — Digital library of archived historical documents and cultural content
+- **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.
+- **`world-wide-science-resources`** (medium) — Academic-related global science gateway includes a list of websites participating in WorldWideScience.org
+- **`wto-statistics`** (low) — OSINT tool: WTO Statistics.
+- **`www-infogo-gov-on-ca-infogo-home-html`** (medium) — OSINT tool: www.infogo.gov.on.ca/infogo/home.html.
+- **`www-ratemyteachers-com`** (high) — Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address
+- **`xbrl-voluntary-filing-program`** (low) — OSINT tool: XBRL Voluntary Filing Program.
+- **`xhibit`** (high) — Use when you have a `name` and want to see if they are listed in today's England & Wales Crown Court hearings — returns the defendant `name`
+- **`xlamma-com`** (high) — OSINT tool: xlamma.com.
+- **`xrefer`** (medium) — OSINT tool: XRefer.
+- **`yahoo-finance`** (medium) — Yahoo's finance search page, search companies, finance news, market information, and more
+- **`yearbooks-high-school-yearbooks-ancestry`** (high) — Use when you have a `name` and want a historical photo, school, and approximate age for a subject — returns yearbook portraits and school/ye
+- **`yearbooks-myheritage`** (high) — Use when you have a `name` and want an older photo and school context — searches digitized US school yearbooks and returns yearbook images, 
+- **`yearbooks`** (high) — Use when you have a `name` and an approximate school/year and want a historical school/college/military yearbook photo and entry — returns a
+- **`yell-online-business-directory-uk`** (medium) — UK-based business directory; search engine that searches using company name
+- **`york-city-pa-compensation`** (medium) — OSINT tool: York City PA Compensation.
+- **`york-county-pa-2017-write-in-report`** (high) — OSINT tool: York County PA 2017 Write in Report.
+- **`york-county-va-2017-public-salaries`** (medium) — OSINT tool: York County VA 2017 Public Salaries.
+- **`youcontrol`** (medium) — OSINT tool: YouControl.
+- **`zendy-io`** (medium) — Discover academic journals, articles, & books on one seamless platform. Search keyword, authors, titles ISBN, ISSN etc
+- **`zillow-canada`** (medium) — OSINT tool: Zillow Canada.
+- **`zillow`** (medium) — OSINT tool: Zillow.
+- **`zoominfo`** (medium) — Business to business company contact information
+- **`zoopla`** (medium) — OSINT tool: Zoopla.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

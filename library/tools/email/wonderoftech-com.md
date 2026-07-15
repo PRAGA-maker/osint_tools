@@ -10,7 +10,7 @@ bestFor: Reference article explaining the Ugly Email extension for detecting ema
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free article; the Ugly Email extension it describes is also free.

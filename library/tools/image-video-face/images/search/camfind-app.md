@@ -14,7 +14,7 @@ output: ''
 selectorsIn:
 - image
 selectorsOut:
-- metadata
+- metadata-exif
 - social-profile
 status: degraded
 pricing: freemium
@@ -27,7 +27,8 @@ bestInteractionPattern: mobile-app
 trust: unverified
 trustNote: A consumer visual-search app (Image Searcher Inc.); recognition is object/product-oriented, not facial. App freshness and current availability not confirmed here.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: account
 api: false
 localInstall: false

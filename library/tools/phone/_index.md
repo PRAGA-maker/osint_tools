@@ -11,18 +11,151 @@ kind: group-index
 - **`voicemail/`** — 1 skill(s) below.
 
 ## Skills here
-- **`callerid-test`** (high) — Caller-ID behavior and number validity testing
-- **`family-tree-now`** (high) — Phone-to-person and household/relative pivoting
-- **`fone-finder`** (high) — Historical reference only (defunct per project guidance)
-- **`hiya-r`** (high) — Spam classification and caller-ID enrichment on mobile workflows
-- **`numspy-api`** (high) — Programmatic phone-number verification and enrichment
-- **`numspy`** (high) — Technical lookup workflows and scripted number reconnaissance
-- **`phone-validator`** (high) — Phone format/type validation before deeper pivots
-- **`phonerator`** (high) — Generating test-number patterns for scripting and analysis
-- **`reverse-genie`** (high) — Quick reverse-number triage from public-data aggregations
-- **`spydialer`** (high) — Phone-number attribution and spam context pivoting
-- **`true-caller`** (high) — Caller-ID enrichment and spam reputation checks
-- **`whitepages-reverse-phone`** (high) — US reverse-phone attribution and address correlation
-- **`whocalld`** (high) — Historical reference only (defunct per project guidance)
+- **`712`** (high) — Use when you have a French landline or mobile number (06/07) and need the subscriber name + address via 118712's free reverse-lookup (annuai
+- **`800notes`** (low) — Community phone-complaint directory; useful for identifying spam/scam callers.
+- **`advanced-background-checks`** (high) — Use when you have a US phone number and need the owner's name, current/past addresses, relatives, and associates from aggregated public reco
+- **`americaphonebook`** (low) — Free phone directory lookup.
+- **`aql-com`** (medium) — Use when you have a UK phone number and need its network operator (and ported status) from Ofcom data, to confirm carrier before further pho
+- **`area-code-decoder-united-states`** (high) — Use when you have a US `phone` (or just its area code) and want the geographic region it maps to — returns the city/state/timezone the NANP 
+- **`best-phone-lookup`** (low) — Use when researching a US phone number — but note this domain is now a parked redirector, not a working lookup; prefer a live reverse-phone 
+- **`bmobile-in-india`** (medium) — Use when you have a 10-digit Indian mobile number and need its telecom operator and circle (region) to localise the subscriber.
+- **`bmobile-in`** (medium) — Use when you have a 10-digit Indian mobile number and need its telecom operator and circle (region) to localise the subscriber.
+- **`britishphonebook-com`** (medium) — Use when you have a UK name + town (or postcode) and want a listed residential landline number and address from a UK directory-enquiries sit
+- **`callerid-test`** (low) — Use when you want the CNAM (caller-ID name) a number transmits — but the service has shut down; use a live CNAM/carrier tool instead.
+- **`callersmart`** (medium) — Reverse-phone lookup with community caller reports.
+- **`canada411-ca-2`** (high) — Use when you have a Canadian street address or postal code and want the names and listed phone numbers of people at that location.
+- **`canada411-ca`** (high) — Use when you have a Canadian phone number and need the listed subscriber's name and address via Canada411 reverse phone search.
+- **`carrier-lookup`** (medium) — Use when you have a US phone number and need its carrier and line type (mobile vs landline) to qualify the number before deeper phone OSINT.
+- **`cell-revealer-telephone-number-lookup`** (high) — Use when you have a `phone` number and want to attribute an owner name/location or check spam-fraud reports — returns name, address and carr
+- **`cellmapper-net`** (medium) — Use when you have a cell tower ID / sector or a carrier and area and need tower locations and coverage to ground a phone's approximate locat
+- **`celltower-locator`** (medium) — Use when you have raw cell identifiers (MCC/MNC/LAC/CID, or SID/NID/BID) and need to convert them to approximate GPS coordinates for a phone
+- **`celltowermaps-com`** (high) — Use when you have a `geolocation`/`address` (or a carrier) and want the cell towers serving it — returns tower locations, callsigns, carrier
+- **`checkwa`** (high) — Use when you have a `phone` number and want to know if it is on WhatsApp — returns WhatsApp-registration status and, where public, the profi
+- **`cid-db-opencnam-caller-id-data`** (high) — Use when you have a US `phone` number and want the caller-name (CNAM) registered to it — returns the CNAM string (the name that shows on cal
+- **`cnam-and-caller-name-lookup-service-provider-cid-name-professional-cnam-service-provider-for-asterisk-freeswitch-ope`** (high) — Use when you have a US/Canada `phone` number and want the CNAM (registered caller-ID name) via a live SS7 dip — returns the name (person or 
+- **`collector`** (medium) — Use when you have a `phone`, `ip-address`, or `username` (GitHub/Instagram) and want a quick one-command enrichment — returns carrier/geo fo
+- **`countrycallingcodes-com`** (high) — Use when you have a `phone` number or a bare dialing prefix and want to identify the country/area it belongs to — returns the country (and o
+- **`data-8-co-uk`** (high) — Use when you have a UK `phone` number and want to validate it and identify its line type and network operator — returns phone metadata (vali
+- **`data24-7-data-on-demand`** (high) — Use when you have a `phone` (or a contact list) and want authoritative carrier/subscriber and name/address append via a paid B2B API — retur
+- **`emobiletracker-com`** (high) — Use when you have a `phone` and want its country, telecom operator and approximate region — returns coarse geolocation and carrier, not the 
+- **`epieos-check-phone-usage`** (high) — Use when you have a `phone` (or `email`) and want to see which online services it is registered on, plus any linked name/photo — returns `na
+- **`family-tree-now`** (high) — Use when you have a `phone`, `name` or `address` and want free US household and relative links — returns person records, addresses, ages and
+- **`faxtastic-co-uk`** (high) — OSINT tool: faxtastic.co.uk.
+- **`fcc-io`** (high) — Use when you have an FCC ID off a wireless device (`device-id`) and want the manufacturer and filing behind it — returns the grantee `employ
+- **`find-gsm-base-stations-cell-id-coordinates`** (high) — Use when you have GSM cell identifiers (MCC/MNC/LAC/CID) and want the tower's approximate location — returns base-station coordinates plotte
+- **`firefly`** (high) — Use when you have a `phone` number and want carrier/country/line-type validation via the Numverify API from a simple CLI — returns `phone` m
+- **`fone-finder`** (high) — Historical reference only — the classic NPA-NXX carrier/location lookup is defunct; the domain now funnels to affiliate people-search, so ro
+- **`free-carrier-lookup`** (high) — Use when you have a `phone` and want to know its carrier and whether it's mobile, landline, or VoIP — returns telecom metadata that shapes h
+- **`free-reverse-phone-lookup`** (high) — Use when you have a `phone` and want the owner's name/location — returns a likely name, carrier, line type and city, sometimes with a voicem
+- **`free-to-lookup-unknown-callers`** (high) — Use when you have a `phone` number and want a reverse-lookup for the owner's name/area — returns line/carrier and location for free, with na
+- **`freecarrierlookup`** (high) — Use when you have a `phone` number and want to identify its carrier and whether it is mobile or landline — returns the carrier name, line ty
+- **`freeonlinephone-org`** (high) — OSINT tool: freeonlinephone.org.
+- **`freephonenum-com`** (medium) — Use when you have a `phone` number and want to check whether it is a public throwaway SMS number — or need a burner number for sock-puppet s
+- **`geocell-mobi`** (high) — OSINT tool: geocell.mobi.
+- **`giffgaff-com`** (high) — Use when you need an anonymous UK mobile number for sock-puppet accounts (OpSec infrastructure), or a reference for phone-unlocking by netwo
+- **`gsm-arena`** (medium) — Use when you have a phone model name, a partial description, or EXIF `device-id` and want to confirm the exact handset and its specs — retur
+- **`gsmarena-com`** (high) — Use when you have a phone/device model (a `device-id` or a phone seen in a photo) and want its full specifications — returns camera, dimensi
+- **`hellofax-com`** (high) — Use when you have a `phone`/fax number and need to send or receive a fax — e.g. to submit a records request to an agency that only accepts f
+- **`hiya-r`** (medium) — Use when you have a `phone` number and want caller-ID and spam/scam reputation on it — returns caller name/org and a spam classification, ma
+- **`howtocallabroad-com`** (low) — Use when you have a foreign `phone` number and want to resolve its country dialing code and correct international format so you can normalis
+- **`ifreeicloud-co-uk`** (high) — Use when you have an Apple device `device-id` (IMEI or serial) and want its model details and iCloud/Find My lock and blacklist status — ret
+- **`ignorant`** (high) — Use when you have a `phone` number and want to know if it's registered on Instagram, Amazon, or Snapchat — returns account-existence signals
+- **`infobel`** (high) — Use when you have a `name` or `phone` and want an international white/yellow-pages listing — returns phone, address, and name across many co
+- **`inmobprefix`** (medium) — Use when you have an Indian mobile `phone` number and want to identify the original operator and telecom circle (region) from its prefix — r
+- **`inteltechniques-telephone`** (high) — Use when you have a `phone` number and want to fan it across many phone-OSINT sources at once via Michael Bazzell's search-form tool — retur
+- **`international-numbering-plans-database`** (high) — Use when you have a `phone` (or SIM/IMSI) number and want to identify its country, network operator, and number-range validity — returns the
+- **`ipqualityscore-com-2`** (high) — Use when you have a `phone` and want to validate it — returns carrier, line type (mobile/VOIP/landline), active status, country/region and a
+- **`jtdirectory-com`** (high) — OSINT tool: jtdirectory.com.
+- **`makelia-public-records-repository`** (high) — OSINT tool: Makelia - Public Records Repository.
+- **`mastdata-com`** (low) — Use when you have a `geolocation` or `address` and want to know which UK mobile operators/masts serve it and where coverage gaps are — retur
+- **`moriarty-project`** (high) — Use when you have a `phone` number and want to aggregate owner, spam-risk, related links, and possible social platforms in one CLI run — ret
+- **`nanpa-area-code-map`** (high) — Use when you have a US/Canada `phone` number and want the geographic region its area code maps to — returns geolocation (the region/state se
+- **`nanpa-area-code-query`** (high) — Use when you have a North American `phone` number (or just its area code) and want the authoritative region it belongs to — returns the `geo
+- **`next-caller`** (high) — Use when you have a `phone` number and need enterprise-grade caller identity/fraud intelligence via API — returns the associated `name` and 
+- **`no-nonsense-intel`** (high) — Use when you have a `phone` number and want to search the web for it in every format people actually write it — returns ready-made search qu
+- **`number-guru-lookup`** (high) — Use when you have a `phone` number and want the likely owner name, carrier, line type and spam reputation — returns name and phone metadata.
+- **`numberingplans-com`** (medium) — Use when you have a `phone` number, IMEI or IMSI and want to decode its country, operator/number-type or device make — returns carrier/geolo
+- **`numpi`** (medium) — Reverse-phone people lookup.
+- **`numspy-api`** (high) — Use when you have an Indian mobile `phone` number and want basic subscriber/network details via a simple GET API — returns `name`, carrier, 
+- **`numspy-india`** (high) — Use when you have an Indian mobile `phone` number and want carrier/region (and, when its data source works, name) — a legacy CLI that querie
+- **`numspy`** (high) — Use when you have an Indian `phone` number and want scripted carrier/region lookup from Python/CLI — returns carrier, circle/region, and num
+- **`numverify-api`** (high) — Use when you have a `phone` number and want to validate it and learn its country, carrier, and line type — returns validity, country/region,
+- **`nuwber`** (high) — Use when you have a US `name`, `phone` or `address` and want a person's contact profile — returns addresses, phone numbers, emails and relat
+- **`ofcom-org-uk`** (medium) — Use when you have a UK `address`/postcode (or a `geolocation`) and want to know which mobile networks cover it — returns per-operator signal
+- **`okcaller`** (medium) — Free reverse-phone lookup.
+- **`oldphonebook-com`** (high) — Use when you have a `name` or `phone` and want a historical US listing (back to ~1994) — returns the archived name, address and phone from o
+- **`open-cnam`** (high) — Use when you have a US `phone` and want the registered caller-ID name (CNAM) for the line — returns the CNAM string (a name), now via Neusta
+- **`osint-forensics-mobile`** (medium) — Collection of mobile OSINT and forensics tools.
+- **`osintxphone`** (high) — Use when you have a Mexican `phone` and want its carrier, portability status and region — returns geolocation (region/carrier).
+- **`owl-sint`** (high) — Use when you have a phone number (or an IP/Instagram handle) and want a scripted OSINT lookup — returns carrier/line and geographic metadata
+- **`personlookup-co-nz`** (high) — Use when you have a New Zealand `phone` (or `name`/`address`) and want to identify the person behind it — returns a name, residential addres
+- **`phomber`** (high) — Use when you have a `phone` (or IP/domain/username) and want CLI reconnaissance — returns carrier/line metadata and OSINT footprints, no API
+- **`phone-book-of-the-world`** (high) — Use when you have a `name`/`phone` in a specific country and want its national directory — returns links to that country's white/yellow page
+- **`phone-number-lookup-tool`** (high) — OSINT tool: Phone Number Lookup Tool.
+- **`phone-number-search-tool`** (high) — Use when you have a `phone` number and want to sweep it across search engines in every common format — returns social-profile/web mentions y
+- **`phone-scoop`** (high) — Use when you have a phone make/model or `device-id` (or a photo of a handset) and want to confirm the exact model and its hardware specs/cap
+- **`phone-validator-us`** (high) — Use when you have a `phone` number and want to validate it and classify the line — returns line type (cell/landline/VoIP/invalid), carrier a
+- **`phone-validator`** (high) — Use when you have a US `phone` number and want to know if it's real and whether it's a mobile or landline before deeper pivots — returns val
+- **`phonebooks-com`** (high) — Use when you have a US `phone` (or `name`) and want a reverse-lookup to an owner and address — returns `name`, `address`, `associate`.
+- **`phoneinfoga-demo`** (high) — Use when you have a `phone` and want automated number reconnaissance — returns country/carrier/line-type plus search-engine footprints (prof
+- **`phonenumber-osint`** (high) — Use when you have a `phone` number and want its basic technical metadata — returns country, region, carrier/provider, timezone, and line-typ
+- **`phonenumbers-store`** (high) — OSINT tool: phonenumbers.store.
+- **`phoneowner`** (medium) — Reverse-phone lookup with owner identity.
+- **`phonumspy`** (high) — Use when you have a `phone` number and want carrier/location enrichment plus a web/social footprint sweep — returns geolocation, social-prof
+- **`phunter`** (high) — Use when you have a `phone` number and want a one-shot OSINT profile of it — returns country/operator, line type, location hints, reputation
+- **`pleasepress1-com`** (high) — OSINT tool: pleasepress1.com.
+- **`receive-sms-free-2`** (high) — Use when you have a `phone` number and want to check whether it is a public disposable/temp-SMS number (not a real person), or need a throwa
+- **`receive-sms-free-3`** (medium) — Use when you need a disposable `phone` number to receive SMS for a sock-puppet signup, or want to check whether a target's number is a known
+- **`receive-sms-free`** (high) — Use when you have a `phone` number and want to check whether it is a public disposable/temp-SMS number (so any account on it is likely throw
+- **`receive-sms-online-3`** (high) — Use when you have a `phone` number a subject used for verification and want to check whether it is a public throwaway/disposable number — re
+- **`receive-sms-online-info`** (medium) — Use when you have a `phone` number and want to check if it's a public throwaway SMS line — or need a burner number for sock-puppet signups; 
+- **`receive-smss-com`** (high) — Use when you have a `phone` number (or want to see who else uses a public disposable number) and want to read the public SMS inbox for that 
+- **`reverse-genie`** (high) — Use when you have a US `phone` number and want quick reverse-lookup triage — returns a possible owner name, location and related listing det
+- **`reverse-phone-check`** (high) — Use when you have a US `phone` number and want the owner and their records — returns name, address and public-records hits, but the full rep
+- **`reverse-phone-lookup-2`** (high) — Use when you have a US `phone` number and want the linked person and their online footprint — returns name, likely social profiles and addre
+- **`reverse-phone-lookup-3`** (high) — Use when you have a `phone` number and want the registered owner's name — returns a caller/subscriber name via a free reverse lookup (ZLooku
+- **`reverse-phone-lookup-find-name-address-and-amp-more-for-any-phone-number-addresses-com`** (high) — Use when you have a US `phone` number and want the likely owner's name and address — returns `name`, `address`, and `associate` links (full 
+- **`reverse-phone-lookup`** (high) — OSINT tool: Reverse Phone Lookup.
+- **`reverseaustralia-com`** (high) — Use when you have an Australian `phone` number and want any publicly-listed owner details or crowd comments about it — returns name, address
+- **`saynoto0870-com`** (medium) — Use when you have a UK non-geographic/premium `phone` number (084x/087x/03xx) and want the organisation behind it and its alternative geogra
+- **`searchpeoplefree`** (high) — Use when you have a US `phone`, `name`, or `address` and want a free first-pass owner profile — returns name, address history, relatives, an
+- **`serviceobjects-reverse-number-lookup`** (high) — Use when you have a `phone` number and want carrier, line type, geographic location, and (where available) the associated name — returns nam
+- **`smartdigital-telephone-directories`** (high) — Directory with over 60 websites that contain telephone number-related information
+- **`sms-receive-net`** (high) — Use when you have a `phone` number and want to check whether it is a public throwaway SMS-receive number (or need a disposable number yourse
+- **`spoofbox-com`** (low) — Use when you need a disposable phone number to receive an SMS verification code while standing up a sock-puppet account — returns a temporar
+- **`spoofcard-com`** (medium) — Use when you have a target `phone` number and need to place a call from a masked/virtual caller ID (e.g. to reach voicemail and capture the 
+- **`spy-dialer`** (high) — Use when you have a US `phone` number and want the owner and context — returns the subscriber `name`, line type, carrier, general `geolocati
+- **`spydialer`** (high) — Use when you have a US `phone` number and want the owner name, line type, and location context — returns name and address-area leads (also r
+- **`superpages-online-yellow-pages-local-business-directory`** (high) — Use when you have a US `phone`, `name`, or business and want directory data — returns names, addresses and phone numbers from a live US busi
+- **`sync-me`** (high) — Use when you have a `phone` number and want a crowd-sourced caller-ID name plus any linked social/profile photo — returns name, image, socia
+- **`telcodata-us-area-code-search`** (medium) — Use when you have a US `phone` number and want to identify its carrier, rate center (geographic origin), and line details from the NPA-NXX —
+- **`telecom-tariffs-co-uk`** (high) — Use when you have a UK phone number and want to identify its geographic area or network operator from the dialling code/number range — retur
+- **`thatsthem-phone-search`** (high) — Use when you have a US `phone` number and want the owner's name, address, and linked details — returns `name`, `address`, `email`, `social-p
+- **`the-directory-area-code-listings-worldwide`** (high) — Use when you have a North American `phone` number and want the fine-grained rate-center location behind its prefix — returns the `geolocatio
+- **`thisnumber-com-2`** (high) — Use when you have a `phone` number (from 200+ countries) and want to identify it — returns country, carrier and line type for any number, pl
+- **`thisnumber-com`** (high) — Use when you have an international `phone` number and want to identify its country/region of origin and reach that country's phone directori
+- **`tracefind-info-2`** (high) — Use when you have a `phone` number and want name/address/social links tied to it — but this is a paid, credit-based service of unverified ac
+- **`true-caller`** (high) — Use when you have a `phone` number and want a crowd-sourced caller-ID name, carrier/location hints and spam reputation — returns name, addre
+- **`truecaller-com`** (high) — Use when you have a `phone` number and want the name/caller-ID the crowd has associated with it — returns a likely owner name, location/carr
+- **`truecaller-search-engine`** (high) — Use when you have a `phone` number and want a name/identity behind it — a Google Custom Search Engine scoped to Truecaller-style caller-ID p
+- **`twilio`** (high) — Use when you have a `phone` and want carrier, line-type, caller-name (CNAM) and SIM-swap/validity intelligence — returns carrier, line type 
+- **`ukphonebook-com`** (high) — Use when you have a UK `phone`, `name` or partial `address` and want the matching listing — returns name, current/previous address, other oc
+- **`us-phonebook`** (high) — Use when you have a US `phone`, `name` or `address` and want the person behind it — returns owner `name`, `address`, relatives and phone typ
+- **`usa-telephone-directory-collection`** (high) — Use when you have a historical US `name`, `phone`, or `address` (roughly 1880s–1980s) and want to place a person at an address/number in tha
+- **`usphonebook`** (high) — Use when you have a US `phone` number (or a `name`) and want to identify the owner — returns the name, address, relatives/associates and pho
+- **`validnumber-com`** (high) — Use when you have a `phone` number and want a free reverse lookup / caller-ID and spam-report check — returns caller `name`/`geolocation` le
+- **`whatsappmonitor`** (medium) — Monitor WhatsApp contact online/offline activity.
+- **`whatsfoto`** (medium) — Download WhatsApp profile pictures.
+- **`white-pages-people-finder-anywho`** (high) — Use when you have a US `phone` number or a `name` and want free white-pages data — returns the listed `name`, `address`, and phone from publ
+- **`whitepages-reverse-phone`** (high) — Use when you have a US `phone` number and want to attribute an owner and address — returns owner name, city/address, line type and related c
+- **`who-called-me`** (high) — Use when you have a `phone` number and want community reports about it — returns user comments/ratings flagging spam, scam or the likely cal
+- **`whocalld`** (high) — Use when you have a `phone` number and want caller-ID/spam context — DEFUNCT service, retained as a historical reference only; returns nothi
+- **`whocallsme-com`** (high) — Use when you have a `phone` number and want crowdsourced reports on who it belongs to — returns user comments identifying the caller, often 
+- **`whoseno`** (low) — Crowd-reported reverse-phone lookup.
+- **`wikipedia-org-2`** (high) — OSINT tool: wikipedia.org.
+- **`wikitravel-org`** (high) — Use when you have a `phone` number and want to interpret its country/dialing format — returns reference context (country, trunk/internationa
+- **`www-spydialer-com`** (high) — Use when you have a US `phone` (or a name/email) and want the likely owner, location, and line type — returns name, approximate address, and
+- **`yellow-co-nz`** (medium) — Use when you have a business `name`/`phone` in New Zealand and want contact and location details — returns address, phone, and website for N
+- **`yellowpages-people`** (medium) — Free people and reverse-phone directory.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

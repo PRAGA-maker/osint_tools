@@ -13,7 +13,7 @@ selectorsIn:
 selectorsOut:
 - social-profile
 - name
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free interactive tools with limits; deeper/bulk lookups and API on paid Epieos plans.

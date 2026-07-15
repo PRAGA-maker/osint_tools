@@ -12,7 +12,7 @@ selectorsIn:
 - address
 selectorsOut:
 - geolocation
-- metadata
+- metadata-exif
 status: down
 pricing: free
 costNote: Was a free hosted service; the hosted Crowdmap product has been discontinued by Ushahidi.

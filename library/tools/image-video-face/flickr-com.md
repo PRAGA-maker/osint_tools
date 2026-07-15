@@ -13,7 +13,7 @@ selectorsIn:
 selectorsOut:
 - image
 - geolocation
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free to browse; a free account/API key unlocks more.

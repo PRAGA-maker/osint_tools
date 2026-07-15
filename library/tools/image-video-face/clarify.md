@@ -10,7 +10,7 @@ bestFor: Historical reference to a media-content (speech/keyword) indexing API; 
 selectorsIn:
 - image
 selectorsOut:
-- metadata
+- metadata-exif
 status: down
 pricing: freemium
 opsec: unknown
@@ -22,7 +22,8 @@ bestInteractionPattern: api
 trust: unverified
 trustNote: clarify.io was a media-indexing/speech-search API startup that appears discontinued. Do not confuse with Clarifai (clarifai.com) image recognition. Status inferred, not freshly fetched.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: api-key
 api: true
 localInstall: false

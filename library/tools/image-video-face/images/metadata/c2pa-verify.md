@@ -15,7 +15,6 @@ selectorsIn:
 - image
 - metadata-exif
 selectorsOut:
-- metadata
 - metadata-exif
 status: live
 pricing: free
@@ -28,7 +27,8 @@ bestInteractionPattern: web-manual
 trust: unverified
 trustNote: A third-party C2PA manifest viewer (not the official Content Authenticity Initiative verifier). The C2PA standard is legitimate; this particular viewer's handling is not independently confirmed here.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false

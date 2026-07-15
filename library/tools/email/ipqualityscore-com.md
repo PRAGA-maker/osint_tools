@@ -10,7 +10,7 @@ bestFor: Validating an email and scoring its risk (valid, disposable, recent abu
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free web email verifier with a daily cap; higher volume and API access require a paid plan/API key.

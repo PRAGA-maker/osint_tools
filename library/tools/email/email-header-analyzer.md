@@ -8,11 +8,11 @@ path:
 - email
 bestFor: Parsing raw email headers into a readable delivery path with hop delays and SPF/DKIM/DMARC results.
 selectorsIn:
-- metadata
+- metadata-exif
 selectorsOut:
 - ip-address
 - domain
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free header analysis on MXToolbox; deeper monitoring/diagnostics and the API are paid.

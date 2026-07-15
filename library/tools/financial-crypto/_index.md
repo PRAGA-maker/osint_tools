@@ -18,5 +18,141 @@ kind: group-index
 - **`privacy-coin-analysis/`** — 2 skill(s) below.
 - **`wallet-clustering-and-address-analysis/`** — 2 skill(s) below.
 
+## Skills here
+- **`527-explorer`** (low) — ProPublica's 527 Explorer is a database that allows users to examine the finances of organizations known as 527s in the United States, which
+- **`a-ton-of-privacy`** (low) — Tool for OSINT investigations on TON NFTs. Search info (balance, scam status etc) by Telegram nickname, phone number or domain.
+- **`acfcs-org`** (medium) — OSINT tool: acfcs.org.
+- **`addresschecker-eu`** (low) — OSINT tool: Addresschecker.eu.
+- **`addresswatcher-com`** (low) — OSINT tool: Addresswatcher.com.
+- **`afd-co-uk-2`** (medium) — OSINT tool: afd.co.uk.
+- **`afd-co-uk`** (medium) — OSINT tool: afd.co.uk.
+- **`aib-gov-uk-2`** (medium) — OSINT tool: aib.gov.uk.
+- **`aib-gov-uk-3`** (medium) — OSINT tool: aib.gov.uk.
+- **`aib-gov-uk`** (medium) — OSINT tool: aib.gov.uk.
+- **`analytics-engine`** (low) — OSINT tool: analytics-engine.
+- **`binbase-com`** (medium) — OSINT tool: binbase.com.
+- **`bincodes-com`** (medium) — OSINT tool: bincodes.com.
+- **`bindb-com`** (medium) — OSINT tool: bindb.com.
+- **`bitcoin-atm-map`** (low) — OSINT tool: Bitcoin ATM map.
+- **`bitcoin-explorer`** (low) — OSINT tool: Bitcoin Explorer.
+- **`bitcoin-forums-search-engine`** (low) — OSINT tool: Bitcoin Forums Search Engine.
+- **`bitcoin-org`** (medium) — OSINT tool: bitcoin.org.
+- **`bitcoinpaths-com`** (medium) — OSINT tool: bitcoinpaths.com.
+- **`bitcoinwhoswho`** (low) — OSINT tool: Bitcoinwhoswho.
+- **`bitinfocharts-com`** (medium) — OSINT tool: bitinfocharts.com.
+- **`blockchain-com`** (low) — OSINT tool: Blockchain.com.
+- **`blockchain-explorer`** (low) — OSINT tool: Blockchain Explorer.
+- **`blockchain-info-2`** (medium) — OSINT tool: blockchain.info.
+- **`blockchain-info`** (low) — OSINT tool: Blockchain.info.
+- **`blockchair-com`** (medium) — OSINT tool: blockchair.com.
+- **`blockcypher-2`** (low) — Blockchain explorer for Bitcoin, Ethereum, Litecoin, DogeCoin, Dash. Getting into about address, transactions and block hashes, block number
+- **`blockcypher`** (low) — OSINT tool: Blockcypher.
+- **`blockexplorer`** (low) — Following a bitcoin trail or following a bitcoin account?
+- **`bpfi-ie`** (medium) — OSINT tool: bpfi.ie.
+- **`btc-com`** (low) — OSINT tool: BTC.com.
+- **`btcbook-guarda-com`** (medium) — OSINT tool: btcbook.guarda.com.
+- **`business-hsbc-co-uk`** (medium) — OSINT tool: business.hsbc.co.uk.
+- **`chainabuse`** (medium) — Cross-chain crypto scam/abuse report database.
+- **`chainalysis`** (low) — OSINT tool: Chainalysis.
+- **`checkmyfile-com`** (medium) — OSINT tool: checkmyfile.com.
+- **`china-related-resources`** (low) — Resources for research on companies in China.,
+- **`coinatmradar-com`** (medium) — OSINT tool: coinatmradar.com.
+- **`coinbase-com`** (low) — OSINT tool: Coinbase.com.
+- **`coinchoose-com`** (medium) — OSINT tool: coinchoose.com.
+- **`coinmap`** (low) — OSINT tool: CoinMap.
+- **`coinmarketcap`** (low) — OSINT tool: CoinMarketCap.
+- **`coinwink-com`** (low) — OSINT tool: Coinwink.com.
+- **`covi-analytics`** (low) — OSINT tool: CoVi Analytics.
+- **`credit-osint`** (low) — A very simple #python tool to gather information about bank cards and validate them.
+- **`cryptocompare-com`** (medium) — OSINT tool: cryptocompare.com.
+- **`cryptocurrency-alerting`** (low) — OSINT tool: Cryptocurrency Alerting.
+- **`cryptocurrency-search-tool`** (low) — OSINT tool: Cryptocurrency search tool.
+- **`cryptocurrencyalerting-com`** (medium) — OSINT tool: cryptocurrencyalerting.com.
+- **`cryptocurrencyfacts-com`** (low) — OSINT tool: cryptocurrencyfacts.com/.
+- **`csol-ie`** (medium) — OSINT tool: csol.ie.
+- **`economy-ni-gov-uk-2`** (medium) — OSINT tool: economy-ni.gov.uk.
+- **`economy-ni-gov-uk`** (medium) — OSINT tool: economy-ni.gov.uk.
+- **`edgar-command-line-interface-edgar-tool`** (low) — Tool for the retrieval of corporate and financial data from SEC's EDGAR (Electronic Data Gathering, Analysis, and Retrieval) database.
+- **`edgar`** (low) — Database of corporate filings for the US
+- **`elliptic`** (low) — OSINT tool: Elliptic.
+- **`ether-chain`** (low) — OSINT tool: Ether Chain.
+- **`etherscan-io`** (medium) — OSINT tool: etherscan.io.
+- **`ethplorer-io`** (medium) — OSINT tool: ethplorer.io.
+- **`ethtective-com`** (medium) — OSINT tool: ethtective.com.
+- **`eu-consolidated-corporate-registers`** (low) — Consolidated company registers covering most of the EU, Iceland, Liechtenstein and Norway.
+- **`eu-sanctions-map`** (low) — Database of sanctions imposed by the European Union and the United Nations
+- **`europa-eu`** (medium) — OSINT tool: europa.eu.
+- **`experian-co-uk`** (medium) — OSINT tool: experian.co.uk.
+- **`fdic-search`** (low) — Search banks by FDIC (Federal Deposit Insurance Corporation) certificate number and get detailed information about it
+- **`fingble-nftport`** (low) — One of the most accurate search engines for finding NFT by uploaded image. Works well with faces. Also it's possible to search by keyword or
+- **`flowscan-org`** (low) — OSINT tool: Flowscan.org.
+- **`follow-the-bitcoin-automating-osint-blogpost`** (low) — OSINT tool: Follow the Bitcoin | Automating OSINT BLOGPOST.
+- **`freebin-checker`** (low) — easy-to-use API for getting bank details by BIN. 850,000+ BIN records in FreeBinChecker's database
+- **`freeformatter-com`** (medium) — OSINT tool: freeformatter.com.
+- **`gijn-org-2`** (medium) — OSINT tool: gijn.org.
+- **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
+- **`gov-uk-2`** (medium) — OSINT tool: gov.uk.
+- **`greylist-trace`** (low) — OSINT tool: Greylist Trace.
+- **`iban-com`** (low) — Check the validity of the IBAN (International Bank Account Number) of the company and see the information about the bank where it is service
+- **`ibancalculator-com-2`** (medium) — OSINT tool: ibancalculator.com.
+- **`ibancalculator-com`** (medium) — OSINT tool: ibancalculator.com.
+- **`importyeti`** (low) — Search 60 million US customs sea shipment records, find company suppliers.
+- **`insolvency-govt-nz`** (medium) — OSINT tool: insolvency.govt.nz.
+- **`insolvencydirect-bis-gov-uk`** (medium) — OSINT tool: insolvencydirect.bis.gov.uk.
+- **`investing-com-2`** (medium) — OSINT tool: investing.com.
+- **`ip-logger-2`** (low) — OSINT tool: IP Logger.
+- **`jahs-ie`** (medium) — OSINT tool: jahs.ie.
+- **`learnmeabitcoin-com`** (medium) — OSINT tool: learnmeabitcoin.com.
+- **`linkedin-com-2`** (medium) — OSINT tool: linkedin.com.
+- **`linkedin-com-3`** (medium) — OSINT tool: linkedin.com.
+- **`live-coin-watch`** (low) — OSINT tool: Live Coin Watch.
+- **`matbea`** (low) — OSINT tool: Matbea.
+- **`medium-com`** (medium) — OSINT tool: medium.com.
+- **`merklescience-com-2`** (medium) — OSINT tool: merklescience.com.
+- **`merklescience-com-3`** (medium) — OSINT tool: merklescience.com.
+- **`merklescience-com-4`** (medium) — OSINT tool: merklescience.com.
+- **`merklescience-com-5`** (medium) — OSINT tool: merklescience.com.
+- **`merklescience-com-6`** (medium) — OSINT tool: merklescience.com.
+- **`merklescience-com-7`** (medium) — OSINT tool: merklescience.com.
+- **`merklescience-com`** (medium) — OSINT tool: merklescience.com.
+- **`mixero-io`** (medium) — OSINT tool: mixero.io.
+- **`monero-blocks-2`** (low) — OSINT tool: Monero Blocks.
+- **`mylostaccount-org-uk`** (medium) — OSINT tool: mylostaccount.org.uk.
+- **`nonfungible-com`** (low) — help to analyze the NFT market, find out which tokens were sold most actively (week, month, year, all time)
+- **`north-data`** (low) — Search for people and companies in EU corporate and trade registers + visualize relationships
+- **`numbers`** (low) — Search NFT by Content ID, Commit hash, keywords or uploaded photo.
+- **`osint-assassin`** (medium) — OSINT tool: OSINT-Assassin.
+- **`osint-cryptocurrencies`** (low) — OSINT tool: OSINT cryptocurrencies.
+- **`osint-tools-map`** (low) — An interactive worldwide map, showcasing business registries, court records, and other publicly available information to aid OSINT investiga
+- **`palatine-co-uk`** (medium) — OSINT tool: palatine.co.uk.
+- **`ppp-adatascienti-st`** (low) — OSINT tool: Ppp.adatascienti.st.
+- **`radixdlt-com`** (medium) — OSINT tool: radixdlt.com.
+- **`reddit-com`** (medium) — OSINT tool: reddit.com.
+- **`researchgate-net`** (medium) — OSINT tool: researchgate.net.
+- **`robert-devere-bunn`** (medium) — OSINT tool: Robert Devere Bunn.
+- **`rupep`** (low) — Online database of politically exposed persons in Russia, Belarus, Kyrgyzstan and Kazakhstan.
+- **`sanctionsexplorer`** (low) — A comprehensive database of current and historical OFAC/UN/EU sanctions
+- **`search-for-investment-fund-documents`** (low) — OSINT tool: Search for Investment Fund Documents.
+- **`search-our-ppp-loan-database`** (low) — OSINT tool: Search Our PPP Loan Database.
+- **`secjuice-com-2`** (medium) — OSINT tool: secjuice.com.
+- **`secjuice-com`** (medium) — OSINT tool: secjuice.com.
+- **`sortcodes-co-uk-2`** (medium) — OSINT tool: sortcodes.co.uk.
+- **`sortcodes-co-uk`** (medium) — OSINT tool: sortcodes.co.uk.
+- **`start-me-2`** (medium) — OSINT tool: start.me.
+- **`start-me`** (medium) — OSINT tool: start.me.
+- **`thenextweb-com`** (medium) — OSINT tool: thenextweb.com.
+- **`tmx-tsx`** (low) — OSINT tool: TMX TSX.
+- **`tmx`** (low) — OSINT tool: TMX.
+- **`token-view`** (low) — OSINT tool: Token View.
+- **`tradint-research-tool`** (low) — OSINT tool: Tradint Research Tool.
+- **`trustonline-org-uk`** (medium) — OSINT tool: trustonline.org.uk.
+- **`uk-equifax-com`** (medium) — OSINT tool: uk.equifax.com.
+- **`unclaimedestates-com`** (medium) — OSINT tool: unclaimedestates.com.
+- **`validate-creditcard`** (medium) — OSINT tool: validate.creditcard.
+- **`wallet-labels`** (low) — Search across more than 7.5M #Ethereum addresses labeled to easily identify wallets and exchange
+- **`wearepay-uk`** (medium) — OSINT tool: wearepay.uk.
+- **`wikipedia-list-of-registers`** (low) — Wikipedia list of official business registers around the world.
+- **`wikipedia-org`** (medium) — OSINT tool: wikipedia.org.
+- **`x-com`** (medium) — OSINT tool: x.com.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

@@ -10,7 +10,7 @@ bestFor: A technical email validation report with MX lookup and live SMTP mailbo
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 - domain
 - ip-address
 status: live

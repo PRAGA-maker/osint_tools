@@ -75,12 +75,17 @@ def validate_tree(base, schema, label, errors, warns, stats):
     required = schema.get("required", [])
     enums = enum_map(schema)
     domains = defaultdict(list)
-    for path, fm, _body in C.iter_skills(base):
+    for path, fm, body in C.iter_skills(base):
         rel = os.path.relpath(path, C.ROOT)
         stem = os.path.basename(path)[:-3]
         stats["count"] += 1
         if fm.get("enrichment") == "stub":
             stats["stub"] += 1
+        # flag/body drift: the enrichment field should match the authored body signal
+        if label == "tool":
+            authored = "## When to use" in (body or "")
+            if authored != (fm.get("enrichment") == "full"):
+                stats["drift"] += 1
         for req in required:
             if fm.get(req) in (None, ""):
                 errors.append(f"{rel}: missing required '{req}'")
@@ -128,13 +133,16 @@ def check_links(base):
 
 def main():
     errors, warns = [], []
-    stats = {"count": 0, "stub": 0}
+    stats = {"count": 0, "stub": 0, "drift": 0}
     validate_tree(C.TOOLS_DIR, load_schema("tool.schema.json"), "tool", errors, warns, stats)
     if os.path.isdir(C.STRATEGIES_DIR):
         validate_tree(C.STRATEGIES_DIR, load_schema("strategy.schema.json"), "strategy", errors, warns, stats)
 
     print(f"validated {stats['count']} skills ({stats['stub']} stub)")
     print(f"errors={len(errors)} warnings={len(warns)}")
+    if stats["drift"]:
+        print(f"  info  {stats['drift']} tools have enrichment flag != authored body "
+              f"(run build_index.py to reconcile the DB/coverage)")
     for e in errors[:60]:
         print("  ERROR", e)
     for w in warns[:25]:

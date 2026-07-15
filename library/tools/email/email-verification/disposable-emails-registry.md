@@ -12,7 +12,7 @@ selectorsIn:
 - email
 - domain
 selectorsOut:
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free static list hosted on GitHub Pages; no account.

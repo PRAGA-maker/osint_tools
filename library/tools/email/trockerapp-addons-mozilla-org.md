@@ -10,7 +10,7 @@ bestFor: Firefox add-on that exposes and strips read-receipt tracking pixels and
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free open-source browser add-on.

@@ -13,7 +13,7 @@ selectorsIn:
 - name
 selectorsOut:
 - email
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: emailhunter.co now redirects to Hunter.io; free tier gives limited searches/verifications per month, more requires an account/paid plan.

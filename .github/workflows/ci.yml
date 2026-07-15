@@ -19,6 +19,39 @@ jobs:
       - name: Validate arf.json is well-formed
         run: python3 -m json.tool public/arf.json > /dev/null
 
+  library-validate:
+    name: Skill Library Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      # Schema + enum + id + url checks over every skill. Exits non-zero on any
+      # error, so enum drift (e.g. 'metadata' vs 'metadata-exif') fails the build
+      # instead of accumulating silently on master.
+      - name: Validate skill frontmatter
+        run: python library/scripts/validate.py
+
+      # The generated index/coverage must be in sync with the source skills: rebuild
+      # and fail if the deterministic text outputs changed (i.e. a commit edited skills
+      # but forgot to run build_index.py). Excluded from the diff: the binary
+      # library.sqlite (regenerable, not byte-stable) and STATUS.md (carries a build
+      # date that legitimately changes day to day).
+      - name: Check index/coverage are rebuilt
+        run: |
+          python library/scripts/build_index.py
+          git diff --exit-code -- \
+            library/index/tools.json library/index/strategies.json \
+            library/index/library.csv library/index/library-strategies.csv \
+            library/ledger/coverage.md \
+            || (echo "::error::generated index/coverage is stale — run 'python library/scripts/build_index.py' and commit" && exit 1)
+
   smoke-test:
     name: Smoke Test
     runs-on: ubuntu-latest

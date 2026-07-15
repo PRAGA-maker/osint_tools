@@ -10,7 +10,7 @@ bestFor: Free single-address SMTP verification (syntax, MX, mailbox-exists probe
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 - domain
 status: live
 pricing: free

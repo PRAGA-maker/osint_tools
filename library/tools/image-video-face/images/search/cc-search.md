@@ -15,7 +15,7 @@ selectorsIn:
 - name
 selectorsOut:
 - image
-- metadata
+- metadata-exif
 status: degraded
 pricing: free
 opsec: passive
@@ -26,7 +26,8 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Official Creative Commons / Openverse search over openly-licensed collections. It indexes license-free media, not arbitrary web photos — limited use for identifying a specific person.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: none
 api: true
 localInstall: false

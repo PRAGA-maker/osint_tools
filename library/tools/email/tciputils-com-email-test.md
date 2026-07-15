@@ -13,7 +13,7 @@ selectorsIn:
 selectorsOut:
 - domain
 - ip-address
-- metadata
+- metadata-exif
 status: degraded
 pricing: free
 costNote: Free web utility; TCP/IP Utils has reduced/limited free lookups over time.

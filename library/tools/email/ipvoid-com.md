@@ -9,11 +9,11 @@ path:
 bestFor: Tracing an email's originating IP and mail route from its full headers.
 selectorsIn:
 - email
-- metadata
+- metadata-exif
 selectorsOut:
 - ip-address
 - geolocation
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free web tool; IPVoid also sells other paid lookups but the email tracer is free.

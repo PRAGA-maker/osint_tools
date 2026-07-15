@@ -12,5 +12,133 @@ kind: group-index
 - **`public-datasets/`** — 4 skill(s) below.
 - **`web/`** — 15 skill(s) below.
 
+## Skills here
+- **`alltop`** (low) — OSINT tool: Alltop.
+- **`archivarix-com`** (medium) — OSINT tool: archivarix.com.
+- **`archive-it`** (low) — Website that provides cached page recovery services of a specific URL link
+- **`archive-md`** (medium) — OSINT tool: Archive.md.
+- **`archive-org-downloader`** (medium) — A simple #python script for downloading books from [http://archive.org](http://archive.org) in PDF format. You can adjust image resolution t
+- **`archive-org`** (medium) — OSINT tool: archive.org.
+- **`archive-page-addons-mozilla-org`** (medium) — OSINT tool: archive page (addons.mozilla.org).
+- **`archive-page-chrome-google-com`** (medium) — OSINT tool: archive page (chrome.google.com).
+- **`archive-today-3`** (medium) — On-demand web-page archiving/retrieval service.
+- **`archive-today`** (low) — Archive any webpage, including Facebook and search for archived pages.
+- **`archive-vn`** (medium) — OSINT tool: Archive.vn.
+- **`archivebox`** (medium) — Create your own self-hosted web archive. Save pages from browser history, bookmarks, Pocket etc. Save html, js, css, media, pdf and other fi
+- **`arquivo-pt`** (medium) — OSINT tool: Arquivo.pt.
+- **`auto-archiver`** (low) — Bellingcat's tool to automatically archive social media posts, videos, and images. Free and Open-Source.
+- **`awasu`** (low) — OSINT tool: Awasu.
+- **`bellingcat-tiktok-hashtag-analysis`** (low) — Archive content and metadata from TikTok posts that contain one or more specified hashtags
+- **`blackwidow`** (medium) — OSINT tool: BlackWidow.
+- **`bridge-leslibres`** (low) — OSINT tool: Bridge.Leslibres.
+- **`bridge-suumitsu`** (low) — OSINT tool: Bridge.Suumitsu.
+- **`cachedview-b4your-com`** (medium) — quick search website old versions in different search engines and archives
+- **`cachedview`** (medium) — OSINT tool: CachedView.
+- **`carbon-dating-the-web`** (medium) — OSINT tool: Carbon Dating The Web.
+- **`cashedpages`** (medium) — OSINT tool: CashedPages.
+- **`changedetect-2`** (low) — OSINT tool: ChangeDetect.
+- **`changedetection-io-open-source`** (low) — OSINT tool: ChangeDetection.io Open Source.
+- **`changedetection`** (low) — OSINT tool: ChangeDetection.
+- **`commoncrawl-org`** (medium) — OSINT tool: commoncrawl.org.
+- **`cybdetective-com`** (medium) — OSINT tool: cybdetective.com.
+- **`deleted-tweet-finder-digital-digging-cache`** (medium) — Search deleted tweets across archives/caches.
+- **`deltafeed`** (low) — OSINT tool: Deltafeed.
+- **`diggreader`** (low) — OSINT tool: DiggReader.
+- **`directory-of-open-access-journals`** (medium) — Search by 16 920 journals, 6, 588, 661 articles, 80 lanquages, 129 countries
+- **`distill-io`** (low) — Distill.io is a website change monitoring tool that allows users to track changes on web pages.
+- **`easycache`** (medium) — quick search website old versions in different search engines and archives
+- **`factinsect`** (medium) — Free online tool for automating #factchecking. In order to confirm or deny some information, the service provides several arguments with ref
+- **`feed-exileed`** (low) — OSINT tool: Feed Exileed.
+- **`feed-filter-maker`** (low) — OSINT tool: Feed Filter Maker.
+- **`feedbooster`** (low) — OSINT tool: FeedBooster.
+- **`feederator`** (low) — OSINT tool: Feederator.
+- **`feedly`** (low) — OSINT tool: Feedly.
+- **`feedreader`** (low) — OSINT tool: FeedReader.
+- **`fetchrss`** (low) — OSINT tool: FetchRSS.
+- **`firecrawl-dev`** (medium) — OSINT tool: firecrawl.dev.
+- **`followthatpage`** (low) — OSINT tool: FollowThatPage.
+- **`gau`** (medium) — Simple #golang tool to fetch all known website URLs from: WayBackMachine, AlienVault's Open Threat Exchange, Common Crawl, URLScan
+- **`gh-archive`** (low) — Public dataset of GitHub activity events.
+- **`grab-site`** (medium) — Af you need to make a Warc archive out of a huge site with a lot of different content, then it is better to use this #python script with doz
+- **`har2warc`** (medium) — Convert HTTP Archive (HAR) -> Web Archive (WARC) format
+- **`index-commoncrawl-org`** (medium) — OSINT tool: index.commoncrawl.org.
+- **`industrydocuments-ucsf-edu`** (medium) — digital archive of documents created by industries which influence public health (tobacco, chemical, drug, fossil fuel)
+- **`infominder`** (low) — OSINT tool: InfoMinder.
+- **`internet-archive-wayback-machine-link-ripper`** (medium) — Enter a host or URL to retrieve the links to the URL's archived versions at [http://wayback.archive.org](http://wayback.archive.org). A text
+- **`kiwix-org`** (medium) — OSINT tool: kiwix.org.
+- **`linctas-ent-sirsidynix-net-au`** (medium) — OSINT tool: linctas.ent.sirsidynix.net.au.
+- **`linkedin-com`** (medium) — OSINT tool: linkedin.com.
+- **`lumen`** (low) — A research project collecting and publishing legal takedown notices for online content transparency
+- **`lux-leaks`** (medium) — — the name of a financial scandal revealed in November 2014 by a journalistic investigation. On this site you will find documents related to
+- **`memento-timetravel`** (low) — Meta-archive search across multiple web-archive providers.
+- **`mention`** (low) — OSINT tool: Mention.
+- **`metawarc`** (medium) — Allows you to quickly analyze the structure of the warc file and collect metadata from all the files in the archive
+- **`microsystools-com`** (medium) — OSINT tool: microsystools.com.
+- **`national-center-for-biotechnology`** (medium) — unique tool to search 39 scientific databases (Pubmed, SRA, OMIN, MedGen etc) from one page
+- **`nationalarchives-gov-uk`** (medium) — OSINT tool: nationalarchives.gov.uk.
+- **`newsblur`** (low) — OSINT tool: Newsblur.
+- **`newspaper-navigator`** (medium) — Keyword search of a database of 1.5 million newspaper clippings with photos from the Library of Congress database. It's possible to filter r
+- **`omeareader`** (low) — OSINT tool: OmeaReader.
+- **`onwebchange`** (low) — OSINT tool: OnWebChange.
+- **`osint2h22v-substack-com`** (medium) — OSINT tool: osint2h22v.substack.com.
+- **`pagecached-com`** (medium) — OSINT tool: pagecached.com.
+- **`perma-cc`** (medium) — OSINT tool: perma.cc.
+- **`quick-cache-and-archive-search`** (medium) — quick search website old versions in different search engines and archives (21 source)
+- **`replayweb`** (medium) — If the warc file is small, you can view its contents with this extreme simple online tool. Also it's possible to deploy ReplayWeb on your ow
+- **`ricks-apps-com`** (medium) — OSINT tool: ricks-apps.com.
+- **`rootssearch`** (medium) — Quick search service for five sites with genealogical information (as well as births, weddings and deaths/burials)
+- **`rss-feed-reader`** (low) — OSINT tool: RSS Feed Reader.
+- **`rss-micro`** (low) — OSINT tool: RSS Micro.
+- **`rss-search-engine`** (low) — OSINT tool: RSS Search Engine.
+- **`rss-search-hub`** (low) — OSINT tool: RSS Search Hub.
+- **`rssowl`** (low) — OSINT tool: RSSOwl.
+- **`scrapestorm-com`** (medium) — OSINT tool: scrapestorm.com.
+- **`selfoss`** (low) — OSINT tool: Selfoss.
+- **`send-to-internet-archive-addons-mozilla-org`** (medium) — OSINT tool: send to internet archive (addons.mozilla.org).
+- **`send-to-internet-archive-chrome-google-com`** (medium) — OSINT tool: send to internet archive (chrome.google.com).
+- **`sourceforge-net`** (medium) — OSINT tool: sourceforge.net.
+- **`stored-website`** (medium) — OSINT tool: stored.website.
+- **`swap-stanford-edu`** (medium) — OSINT tool: Swap.stanford.edu.
+- **`talkwalker`** (low) — OSINT tool: Talkwalker.
+- **`the-old-reader`** (low) — OSINT tool: The Old Reader.
+- **`the-time-machine`** (medium) — Tool for gathering domain info from WayBackMachine: - fetches subdomains from waybackurl; - search for /api/JSON/Configuration endpoints and
+- **`theoldnet-com`** (medium) — OSINT tool: TheOldNet.com.
+- **`time-travel-for-web-chromewebstore-google-com`** (medium) — OSINT tool: time travel for web (chromewebstore.google.com).
+- **`trove`** (medium) — australian web archive
+- **`ukwa`** (medium) — archive of more than half a billion saved English-language web pages (data from 2013)
+- **`vandal`** (medium) — extension that makes working with [http://archive.org](http://archive.org) faster, more comfortable, and more efficient.
+- **`vault-fbi-gov`** (medium) — Vault is FOIA Library, containing 6,700 documents that have been scanned from paper
+- **`vefsafn-is`** (medium) — OSINT tool: Vefsafn.is.
+- **`versionista`** (low) — OSINT tool: versionista.
+- **`view-page-archive-addons-mozilla-org`** (medium) — OSINT tool: view page archive (addons.mozilla.org).
+- **`vislibri`** (medium) — World’s largest search engine for old, rare & second-hand books. Search across 140+ websites worldwide.(Ebay, Amazone, Booklooker, Catawiki,
+- **`warcat`** (medium) — My favorite (because it's the easiest) tool for working with Warc files. It allows you to see the list of files in the archive (command "lis
+- **`wayback-archive-it-org`** (medium) — OSINT tool: Wayback.archive-it.org.
+- **`wayback-archive`** (medium) — OSINT tool: Wayback-Archive.
+- **`wayback-google-analytics`** (medium) — A tool that finds all Google Analytics ID in URL (including old ones from Web Archive).
+- **`wayback-keywords-search`** (medium) — A tool that allows you to download all the pages of a particular domain from http://archive.org for a particular month or day, and quickly d
+- **`wayback-machine-2`** (high) — Use when you have a `domain`, `social-profile` or `username` URL and want to see historical snapshots — including deleted or changed pages —
+- **`wayback-machine-downloader-github-com`** (medium) — OSINT tool: wayback machine downloader (github.com).
+- **`wayback-machine`** (medium) — OSINT tool: Wayback Machine.
+- **`wayback-tweets`** (medium) — Display archived tweets retrieved from the Wayback Machine.
+- **`waybackpdf`** (medium) — Collects a list of saved PDFs for the given domain from [http://archive.org](http://archive.org) and downloads them into a folder.
+- **`waybackpy-2`** (low) — Python library/CLI for the Wayback Machine API.
+- **`waybackpy`** (medium) — OSINT tool: waybackpy.
+- **`waymore`** (medium) — Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).
+- **`web-archive-bibalex-org`** (medium) — OSINT tool: web.archive.bibalex.org.
+- **`web-archive-google-chrome-extension`** (medium) — Simple Chrome Extensions for getting information about current URL using http://archive.org CDX API
+- **`web-archive-org`** (medium) — OSINT tool: web.archive.org.
+- **`web-archives-2`** (medium) — extension for viewing cached web page version in 18 search engines and services
+- **`web-archives-chrome-google-com`** (medium) — OSINT tool: web archives (chrome.google.com).
+- **`web-archives`** (low) — A browser extension to view archived and cached versions of a website on multiple archiving sites.
+- **`web-cache-viewer-chrome-google-com`** (medium) — OSINT tool: web cache viewer (chrome.google.com).
+- **`webarchive-loc-gov`** (medium) — OSINT tool: Webarchive.loc.gov.
+- **`webreader`** (low) — OSINT tool: WebReader.
+- **`webrecorder-tools`** (medium) — Archiving various interesting sites is a noble and useful activity for society. To make it easier for posterity to analyze your web archives
+- **`website-diff`** (low) — OSINT tool: Website-Diff.
+- **`website-watcher`** (low) — OSINT tool: WebSite Watcher.
+- **`winds`** (low) — OSINT tool: Winds.
+- **`world-cat`** (medium) — Enter the name of the paper book and find out which public libraries near you can find it. Works for the USA, Australia and most European co
+- **`yahoo`** (medium) — OSINT tool: Yahoo.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

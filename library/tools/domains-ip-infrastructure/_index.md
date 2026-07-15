@@ -49,5 +49,566 @@ kind: group-index
 - **`whois-records/`** — 15 skill(s) below.
 - **`wireless-network-info/`** — 2 skill(s) below.
 
+## Skills here
+- **`0xdork`** (low) — Very light and simple #Python tool for Google Dorking
+- **`1-and-1-ionos-united-states`** (medium) — Service provider for registering websites and domain addresses
+- **`21-domain-japan`** (medium) — Japanese service provider for registering websites and domain addresses
+- **`876-solutions-jamaica`** (medium) — Jamaican service provider for registering websites and domain addresses
+- **`aa419-fake-sites-database`** (low) — OSINT tool: aa419 Fake Sites Database.
+- **`about-rdap-org`** (medium) — OSINT tool: about.rdap.org.
+- **`account-arin-net`** (medium) — OSINT tool: account.arin.net.
+- **`accuranker`** (low) — OSINT tool: Accuranker.
+- **`afrinic`** (medium) — OSINT tool: AFRINIC.
+- **`ahrefs-backlink-checker`** (medium) — Free online website backlink checker tool
+- **`ahrefs`** (low) — OSINT tool: ahrefs.
+- **`aiodnsbrute`** (low) — Python asynchronous DNS brute-force utility.
+- **`alertx`** (low) — Very fast #go tool for search subdomains. For example, it fin 111 http://tesla.com subdomains in 0.003 seconds.
+- **`alexa`** (low) — OSINT tool: Alexa.
+- **`aline`** (low) — a very simple tool that simply downloads files of a certain type, located on a certain domain and indexed by Google.
+- **`all-net-tool`** (medium) — Network analysis tools; whois lookups; traceroute
+- **`all-net-tools-toolbox-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
+- **`all-net-tools-toolbox-domain-information`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`all-net-tools-toolbox-traceroute`** (medium) — Tool that identifies the traceroute path of an IP address
+- **`alojate-mexico`** (medium) — Mexico based service provider for registering websites and domain addresses
+- **`ample-hosting-south-africa`** (medium) — South African service provider for registering websites and domain addresses
+- **`analyticsrelationships`** (low) — command line #tool for to search for links between domains by Google Analytics ID
+- **`anubis`** (low) — Subdomain enumeration and information gathering tool
+- **`aort`** (low) — All in one domain recon tool: portscan; email services enumeration; subdomain information gathering; find info in Wayback Machine and more.
+- **`api-domaindumper`** (low) — An interesting tool for researchers of IT history and data journalists. Just an FREE API that shows how many sites were registered in each d
+- **`api-mylnikov-org`** (low) — get lattitude and longitude by WiFI BBSID
+- **`apnic`** (medium) — OSINT tool: APNIC.
+- **`appsumo-content-analyzer`** (low) — Enter the name of the domain and find out for free its three most popular publications in social networks (for six months, a quarter, a mont
+- **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
+- **`archiveready`** (low) — OSINT specialists most often use various web archives to analyze other people's sites. But if you want your descendants to be able to find y
+- **`argus`** (low) — All-in-one information gathering toolkit with many modular recon scripts.
+- **`arin-net-2`** (medium) — OSINT tool: arin.net.
+- **`arin-net`** (medium) — OSINT tool: arin.net.
+- **`arin`** (medium) — OSINT tool: ARIN.
+- **`arvixe-uk`** (medium) — UK based service provider for registering websites and domain addresses
+- **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
+- **`atsameip-intercode-ca`** (medium) — OSINT tool: atsameip.intercode.ca.
+- **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
+- **`auto-scroll-search-2`** (low) — A simple extension for Chrome that automatically scrolls a web page until a certain word or phrase appears on it (or until the stop button i
+- **`autoexif`** (low) — A simple script to read and delete metadata from images and ACVH videos.
+- **`awesome-tech-stack`** (low) — OSINT tool: Awesome Tech Stack.
+- **`azure-tenant-resolution-by-pingcastle`** (low) — OSINT tool: Azure Tenant Resolution by PingCastle.
+- **`bbot`** (low) — Recursive internet scanner that chains modules for subdomains, emails, and attack surface.
+- **`bgpview-io`** (low) — OSINT tool: Bgpview.io.
+- **`bi-zone`** (low) — OSINT tool: Bi.Zone.
+- **`bing-webmaster-tools`** (low) — OSINT tool: Bing Webmaster Tools.
+- **`bitdefender-threat-map`** (low) — OSINT tool: Bitdefender Threat Map.
+- **`blacklist-alert-check`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
+- **`blog`** (medium) — Service provider for hosting webpages and websites
+- **`bluehost-united-states`** (medium) — Service provider for registering websites and domain addresses
+- **`breachhq`** (low) — OSINT tool: BreachHQ.
+- **`broadband-speed-checker-uk`** (medium) — Analysis tool that assesses the speed of your Internet connection
+- **`broken-link-checker`** (low) — shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.
+- **`broken-link-hijacker`** (low) — Crawls the website and searches for all the broken links (in "<a href" and "<img src").
+- **`browserling`** (low) — OSINT tool: Browserling.
+- **`built-with`** (medium) — Website search that identifies a websites mail service provider, advertising partners, tracking widgets, plugins and more
+- **`bunkerweb-live-cyber-attack-threat-map`** (low) — OSINT tool: BunkerWeb Live Cyber Attack Threat Map.
+- **`carbon14`** (low) — A simple Python tool that helps you determine when (approximately) some content was published. It find the Last-Modified header of linked im
+- **`cdnstrip`** (low) — Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.
+- **`cellmapper`** (low) — Worldwide cell towers map; Cell ID Calculator; Frequency Calculator; LTE Throughput Calculator; Network statistics by countries.
+- **`censys-certificates`** (low) — OSINT tool: Censys Certificates.
+- **`censys-ipv4`** (low) — OSINT tool: Censys IPv4.
+- **`central-ops`** (low) — OSINT tool: Central Ops.
+- **`cert4recon`** (low) — Very quick and simple subdomain enumeration using [http://crt.sh](http://crt.sh).
+- **`certificate-search`** (low) — OSINT tool: Certificate Search.
+- **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — OSINT tool: Check any website to see in real time if it is blocked in China.
+- **`check-domains-website-analyzer`** (medium) — Search for information and statistics about any online website
+- **`check-my-links`** (low) — Old and large lists of tutorials or tools often have many inactive links. This extension will help mark inactive links in red and save you t
+- **`check-point-live-cyber-threat-map`** (low) — OSINT tool: Check Point Live Cyber Threat Map.
+- **`checkphishai`** (low) — An online tool that finds registered domain typosquats and analyzes them for suspicious activity.
+- **`chismodon`** (low) — Command line #osint toolkit for domain information gathering. Search by domain name, Google Play Store ID, CIDR/ASN, email/username/password
+- **`cira-whois-canada`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`cisco-talos-intelligence-2`** (low) — OSINT tool: Cisco Talos Intelligence.
+- **`cloakquest3r`** (low) — Tool to uncover the IP address hidden by Cloudflare (or alternatives): - IP address History, - SSL Certificate Analysis, - Subdomain Scannin
+- **`cloudbrute`** (low) — Tool to find target infrastructure, files, and apps on the popular cloud providers
+- **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.
+- **`cloudflare-resolver`** (low) — OSINT tool: Cloudflare Resolver.
+- **`cloudmare`** (low) — Simple tool to find origin servers of websites protected by #Cloudflare, #Sucuri or #Incapsula with a misconfiguration DNS
+- **`cloudunflare`** (low) — Reconnaissance Real IP address for Cloudflare Bypass
+- **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
+- **`coffer-com`** (medium) — OSINT tool: coffer.com.
+- **`cogipas-internet-privacy-guide`** (medium) — Search tool that identifies the IP address you are currently using
+- **`columbus-project-2`** (low) — A fast, API-first subdomain discovery service with advanced queries.
+- **`conexcol-hosting-colombia`** (medium) — Service provider for registering websites and domain addresses
+- **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
+- **`content-security-policy-csp-validator`** (low) — Online service for checking the headers and meta tags of websites for compliance with security standards. It can help determine if a site is
+- **`cookieserve-com`** (low) — detailed website cookie analyze
+- **`copy-all-links-and-image-links-to-csv-or-json`** (low) — Download all links from current webpage in CSV (for open in #Excel) or JSON
+- **`core-serp-vitals`** (low) — adds a bit of information from CrUX API to the standard Google search results
+- **`cqcounter-site-info`** (medium) — Search for information and statistics about any online website; includes a whois lookup tool, traceroute, and more
+- **`crab`** (low) — Well done and well designed port scanner, host info gatherer (include whois).
+- **`crypto-scam-and-crypto-phishing-url-threat-intel-feed`** (low) — OSINT tool: Crypto Scam & Crypto Phishing URL Threat Intel Feed.
+- **`cve-binary-tool`** (low) — #Python tool to find known vulnerabilities in software, using data from the NVD), list of CVEs, Redhat, OSV and GAD. 200+ checkers in one to
+- **`cve-map`** (low) — Simple #go command line tool for getting information about CVEs: by ID, by vendor, by product, by severity, by cvss score and much more.
+- **`cvecrowd`** (low) — Alternative to Cvetrends (stopped working due to Twitter API restrictions). Shows the most popular CVEs in Fidverse for the last 24 h.
+- **`dark-web-informer`** (low) — OSINT tool: Dark Web Informer.
+- **`dedicated-or-not`** (low) — OSINT tool: Dedicated or Not.
+- **`determines-if-website-is-not-comply-with-eu-cookie-law-and-gives-you-insight-about-cookies-installed-from-website-before`** (low) — OSINT tool: Determines if website is not comply with EU Cookie Law and gives you insight about cookies installed from website before.
+- **`dirhunt`** (low) — Tool for search and analyze directories, can find interesting things if the server has the "index of" mode enabled (also useful if the direc
+- **`dirscraper`** (low) — OSINT scanning tool which discovers and maps directories found in javascript files hosted on a website
+- **`discord-resolver`** (low) — OSINT tool: Discord Resolver.
+- **`ditto`** (low) — Dsmall tool that accepts a domain name as input and generates all its variants for an homograph attack as output, checking which ones are av
+- **`dns-history-lookup`** (low) — OSINT tool: DNS History Lookup.
+- **`dns-history`** (low) — OSINT tool: DNS History.
+- **`dns-twist-2`** (medium) — Search for domain name permutations, results include IP Address, DNS & Mail Server
+- **`dnslytics-com`** (medium) — OSINT tool: dnslytics.com.
+- **`dnsquery`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`dnsreaper`** (low) — TwiSub-domain takeover tool
+- **`dnsstuff-tools`** (medium) — Includes domain tools, IP tools, networking tools, and email tools
+- **`domain-codex`** (low) — OSINT tool: Domain Codex.
+- **`domain-crawler`** (low) — OSINT tool: Domain Crawler.
+- **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
+- **`domain-investigation-toolbox`** (low) — gather information about domain with 41 online tools from one page.
+- **`domain-tools`** (low) — OSINT tool: Domain Tools.
+- **`domainbigdata`** (low) — OSINT tool: domainbigdata.
+- **`domainiq-com`** (medium) — OSINT tool: domainiq.com.
+- **`domainrecon`** (low) — OSINT tool: DomainRecon.
+- **`domaintools-com`** (medium) — OSINT tool: domaintools.com.
+- **`domaintools-ping-test`** (medium) — Analysis tool that assesses the status of an IP address
+- **`domaintools-reverse-ip`** (medium) — Search tool that helps identify the IP address soomeone else is using
+- **`domaintools-whois-lookup`** (low) — DomainTools Whois provides detailed domain name registration information, and can be used to investigate details about domains or IP address
+- **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
+- **`domainwatch`** (low) — OSINT tool: DomainWatch.
+- **`dome`** (low) — Fast and reliable #python script that makes active and/or passive scan to obtain subdomains and search for open ports. Used 21 different #OS
+- **`domeneshop-norway`** (medium) — Service provider for registering websites and domain addresses
+- **`dork-dump`** (low) — Looks for Google-indexed files with doc, docx, ppt, pptx, csv, pdf, xls, xlsx extensions on a particular domain and downloads them.
+- **`dork-scanner`** (low) — NOT support Google. Only Bing, ASK and [http://WoW.com](http://WoW.com) (AOL) search engines. Can work with very long lists of queries/docum
+- **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
+- **`dorks-hunter`** (low) — A simple script to analyze domain using Google Dorks. It saves in file the results of checking the following categories Backup files, Databa
+- **`doteasy-canada`** (medium) — Canadian service provider for registering websites and domain addresses
+- **`dotster-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`dpulse`** (low) — Tool for a complex, comprehensive approach to domain OSINT with reporting.
+- **`drishti`** (low) — Nodejs toolkit for OSINT
+- **`dsl-reports-ping-test`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
+- **`dumpsterdiver`** (low) — Tool can analyze big volumes of data and find some "secrets" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)
+- **`dwhois-net-whois-service`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`easy-dns-canada`** (medium) — Service provider for registering websites and domain addresses
+- **`ekhwan-uae`** (medium) — UAE based service provider for registering websites and domain addresses
+- **`elisa-net-finland`** (medium) — Finnish telecommunications and digital services website
+- **`email-finder-2`** (low) — Another tool to collect emails registered on a certain domain from search results (google, bing, baidu, yandex). Can be used in combination 
+- **`emailharvester-2`** (low) — A tool to collect emails registered on a certain domain from search results (google, bing, yahoo, ask) and save the results to a text file. 
+- **`enom-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
+- **`etda`** (low) — OSINT tool: ETDA.
+- **`eurodns`** (low) — Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the statu
+- **`expandurl`** (low) — URL expander that resolves shortened links to their final destination. Referenced in sinwindie's MISC URL Expander bookmarklet.
+- **`expireddomains-net`** (low) — lists of deleted and expired domains (last 7 days)
+- **`fast-google-dorks-scan`** (low) — Search the website for vulnerable pages and files with sensitive information using 45 types of Google Dorks.
+- **`favfreak`** (low) — #python tool for using favicon.ico hashes for finding new assets/IP addresses and technologies owned by a company.
+- **`favhash`** (low) — Simple script to calculate favicon hash for searching in Shodan.
+- **`favicon-hasher`** (low) — Favicon.ico files hashes is a feature by which you can find domains related with your target. This tool generates hashes for all favicon.ico
+- **`fierce`** (low) — DNS reconnaissance tool for locating non-contiguous IP space and hostnames.
+- **`finalrecon`** (low) — All-in-one web reconnaissance tool (headers, whois, DNS, crawler, ports, subdomains).
+- **`find-plus`** (low) — Regex Find-in-Page Tool
+- **`findmyass-hostspider`** (low) — Domain investigations toolkit
+- **`focsec`** (low) — OSINT tool: Focsec.
+- **`fofa-2`** (low) — OSINT tool: FOFA.
+- **`follow-net`** (low) — OSINT tool: Follow.net.
+- **`fortiguard-labs-2`** (low) — OSINT tool: Fortiguard Labs.
+- **`fortiguard-labs`** (low) — OSINT tool: FortiGuard Labs.
+- **`free-hosting`** (medium) — Service provider for hosting webpages and websites
+- **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
+- **`fuzzuli`** (low) — Url fuzzing tool written on #go that aims to find critical backup files by creating a dynamic wordlist based on the domain. It's using 7 dif
+- **`gandi-uk`** (medium) — UK based service provider for registering websites and domain addresses
+- **`genotec-ag-switzerland`** (medium) — Switzerland based service provider for registering websites and domain addresses
+- **`geo-data-tool`** (low) — IP geolocation service to identify the location and other technical information associated to IP addresses.
+- **`geobytes-ip-locator`** (medium) — Search tool that identifies the geolocation of an IP adddress on a map
+- **`geowifi`** (low) — Search WiFi geolocation data by BSSID and SSID on different public databases (Wigle, Apple, OpenWifi, API Mylnikov).
+- **`get-link-info`** (low) — OSINT tool: Get Link Info.
+- **`getlinkinfo`** (low) — URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookm
+- **`ghost-eye`** (low) — Information-gathering tool for Whois, DNS, EtherApe, Nmap, and more.
+- **`gitgot`** (low) — Semi-automated Git repository auditing for secrets.
+- **`gitgraber`** (low) — Search and clone sensitive information from GitHub.
+- **`glesys-sweden`** (medium) — Sweden based service provider for registering websites and domain addresses, including cloud hosting services
+- **`go-dork`** (low) — Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.
+- **`go3-poland`** (medium) — Poland based service provider for registering websites and domain addresses
+- **`goblyn`** (low) — tool focused to enumeration and capture of website files metadata. It will search for active directories in the website and so enumerate the
+- **`godaddy-com`** (medium) — OSINT tool: godaddy.com.
+- **`godaddy-whois-lookup`** (medium) — Whois lookup tool offered by GoDaddy that identifies the available registration information for a website or domain name
+- **`godaddy`** (medium) — Service provider for registering websites and domain addresses
+- **`gofindwhois`** (low) — More than 180 online tool for domain investigaions in one. What's not to be found here: reverse whois, hosting history, cloudfare resolver, 
+- **`gogetcrawl`** (low) — Search and download archived web pages and files from Common Crawl and Wayback Machine.
+- **`google-bug-bounty-dorks-generator`** (low) — Generate Google Dorks for searching juicy extensions, open redirects, code leaks, cloud storages, file upload endpoints and more.
+- **`google-chrome-webpage-regexp-search`** (low) — OSINT tool: Google Chrome webpage Regexp search.
+- **`google-transparency-report`** (low) — OSINT tool: Google Transparency Report.
+- **`google-universal-dork-builder`** (low) — Quick create queries with advanced search operator for Google, Bing, Yandex etc. Copy dorks from Google Hacking Database. Save dorks in your
+- **`gotanda`** (low) — Google Chrome extension. 56 tools for domain, ip and url investigation in one
+- **`graphystories`** (low) — OSINT tool: GraphyStories.
+- **`greynoise-intelligence`** (low) — OSINT tool: GreyNoise Intelligence.
+- **`gtmetrix-website-performance`** (medium) — Provides details about your website's speed and performance, and allows searching for information about any website
+- **`h3x-cctv`** (low) — A simple command line tool with a Google Dorks list to find vulnerable CCTV cameras
+- **`hachoir-2`** (low) — One of the most powerful tools for work with files metadata with the most detailed settings.
+- **`hacker-target`** (medium) — Includes tools such as Whoislookup, IP lookup, reverse IP lookup, traceroute, dns lookup, reverse dns lookup, ping test, and more
+- **`hackertarget-com`** (medium) — OSINT tool: hackertarget.com.
+- **`hackertarget`** (low) — 14 tools for gathering information about domain using Hackerarget API ([http://hackertarget.com](http://hackertarget.com))
+- **`haklistgen`** (low) — A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).
+- **`hakrawler`** (low) — Extreme(!) fast crawler designed for easy, quick discovery of links, endpoints and assets within a web application.
+- **`hcl-threat-map`** (low) — OSINT tool: HCL Threat Map.
+- **`headlines-sharethrough-com`** (low) — analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100
+- **`heartbleed-check`** (low) — OSINT tool: Heartbleed Check.
+- **`here-4`** (medium) — OSINT tool: Here.
+- **`here-5`** (medium) — OSINT tool: Here.
+- **`hexometer-stack-checker`** (low) — OSINT tool: Hexometer stack checker.
+- **`host-on-net-singapore`** (medium) — Singapore based service provider for registering websites and domain addresses
+- **`hostgator-united-states`** (medium) — Service provider for registering websites and domain addresses
+- **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques
+- **`httparchive-org`** (medium) — Search for information and statistics about any online website
+- **`httpfy`** (low) — A fast #nodejs tool for gathering information about a domain or a list of domains. Response time, main page word count, content type, redire
+- **`hurricane-electric-internet-services`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`hussh`** (low) — shell script for domain analyzing
+- **`hypestat-analyzer-plugin`** (low) — Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.
+- **`hypestat`** (low) — OSINT tool: HypeStat.
+- **`iana-root-zone-database`** (low) — OSINT tool: IANA — Root Zone Database.
+- **`iana-whois-service`** (medium) — Whois tool that identifies the available registration information for a website or domain name
+- **`ibm-x-force-exchange-current-malicious-activity`** (low) — OSINT tool: IBM X-Force Exchange Current Malicious Activity.
+- **`icann-lookup`** (low) — OSINT tool: Icann Lookup.
+- **`icann-org`** (medium) — OSINT tool: icann.org.
+- **`icann-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`idn-checker`** (low) — IDN Checker detects visually similar versions of a domain.
+- **`iknowwhatyoudownload`** (medium) — Tracks BitTorrent activity by IP; can suggest a device's downloads/location.
+- **`imperva-live-threat-map`** (low) — OSINT tool: Imperva Live Threat Map.
+- **`infobox-russia`** (medium) — Russian service provider for registering websites and domain addresses
+- **`infosniper-net`** (medium) — OSINT tool: infosniper.net.
+- **`infosniper`** (low) — OSINT tool: Infosniper.
+- **`infrapedia`** (low) — Worldwide detailed online map of Submarine Cables, Data Centers, Terrestrial Fibers, Internet Exchanges
+- **`inmotion-hosting-united-states`** (medium) — Service provider for registering websites and domain addresses
+- **`instantdomainsearch`** (low) — search for domains for sale
+- **`intelspy`** (low) — Automated multi-threaded network reconnaissance scanner that maps and enumerates a target network.
+- **`internet-access-providers-meta-list`** (medium) — Website that provides a list of internet access providers in the US, Canada, and worldwide
+- **`internet-census-2012`** (low) — OSINT tool: Internet Census 2012.
+- **`internetdb-shodan-io`** (low) — OSINT tool: Internetdb.shodan.io.
+- **`internic-whois-search`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`intezer-analyzer`** (low) — Online tool for finding code injections, malware, unrecognized code and suspicious artifacts in: Files (up to 150 mb), URL, Memory dumps, En
+- **`intodns-ai`** (low) — OSINT tool: IntoDNS.ai.
+- **`investigator-recon-tool`** (low) — web based handy-#recon tool that uses different #GoogleDorking techniques and some open sources service to find juicy information about targ
+- **`investigo`** (low) — A very simple and fast (written in #go) tool that searches for active links to social network accounts by username (or multiple usernames)
+- **`ip-2-geolocation`** (low) — OSINT tool: IP 2 Geolocation.
+- **`ip-checking`** (low) — OSINT tool: IP Checking.
+- **`ip-chicken`** (medium) — Search tool that identifies the IP address you are currently using
+- **`ip-finger-prints`** (medium) — IP address geographical location finder
+- **`ip-geo-location-lookup`** (low) — OSINT tool: IP GEO Location Lookup.
+- **`ip-info-tools`** (medium) — Tooks including Privacy Check, IP Checker, Anonymous Email, and more
+- **`ip-investigation-toolbox`** (low) — type ip-adress once and gather information about it with 13 tools
+- **`ip-location-io`** (low) — OSINT tool: IP Location.io.
+- **`ip-neighbors`** (low) — Find the hosting neighbors for a specific web site or hostname
+- **`ip-search-network-entity-reputation-database`** (low) — OSINT tool: IP search - Network Entity Reputation Database.
+- **`ip2geo-dev`** (low) — OSINT tool: ip2geo.dev.
+- **`ip2location-free-email-header-tracer`** (medium) — Process for identifying an IP address from an email header
+- **`ip2location-free-ip-location-search`** (medium) — Search tool that identifies the geolocation of an IP adddress on a map
+- **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
+- **`ipaddress-tools`** (medium) — Tooks including IP Address Lookup, Reverse IP Lookup, Whois Lookup, Email Address Tracer and more
+- **`ipage-united-states`** (medium) — Service provider for registering websites and domain addresses
+- **`ipanalyzer-privacy-test`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
+- **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.
+- **`ipinfo-map`** (low) — paste up to 500,000 IPs below to see where they're located on a map
+- **`ipnet-tools`** (medium) — OSINT tool: ipnet.tools.
+- **`iptools-robot`** (low) — univsersal domain investigation Telegram bot
+- **`ipvoid`** (low) — OSINT tool: IPVoid.
+- **`iqwhois`** (low) — Search whois data by address, city, name, surname, phonenumber
+- **`ironspider-website-analysis-tools`** (medium) — Search for information on website hosting, as well as other information related to website design
+- **`ismalicious`** (low) — OSINT tool: isMalicious.
+- **`isp-tools`** (low) — OSINT tool: ISP.Tools.
+- **`iwantmyname-search`** (medium) — Tool that identifies if a domain name is available
+- **`ixss-warsong-pw`** (low) — very old service for making XSS (Cross Site Scripting) faster and easier
+- **`jaan-internet-solutions-belgium`** (medium) — Belgium based IT company including expertise in technology, web development, mobile applications, and more
+- **`jsleak`** (low) — Extreme fast #Go tool to find secrets (emails, API keys etc), paths, links in the source code during domain recon.
+- **`jsluice`** (low) — #go library for extracting juicy info from JavaScript files: urls, paths, API secrets etc.
+- **`kali-intelligence-suite-kis`** (low) — Framework for fast, autonomous, centralized collection of intelligence by orchestrating standard pentest tools.
+- **`kaspersky-cyberthreat-live-map`** (low) — OSINT tool: Kaspersky Cyberthreat live Map.
+- **`kloth`** (low) — OSINT tool: Kloth.
+- **`knockknock`** (low) — A very fast script written in #go that queries the ViewDNSInfo API (free, 500 results limit) and gets a list of domains related to target do
+- **`knowledgenow`** (low) — OSINT tool: KNOWLEDGENOW.
+- **`lacnic`** (medium) — OSINT tool: LACNIC.
+- **`larger-io`** (low) — OSINT tool: Larger.io.
+- **`lazarusholic`** (low) — OSINT tool: lazarusholic.
+- **`leakix`** (low) — OSINT tool: LeakIX.
+- **`lfitester`** (low) — Tool which tests if a server is vulnerable to Local File Inclusion (LFI) attack
+- **`linkfinder`** (low) — Simple tool discover endpoints and their parameters in JavaScript files. It's possible to discover individual URLs, groups of URLs and direc
+- **`linkklipper`** (low) — The easiest extension to collect links from an open web page: - select links with Ctrl/Command key or download all; - filter links by extens
+- **`lionic-cyber-threat-map`** (low) — OSINT tool: LIONIC Cyber Threat Map.
+- **`listly`** (low) — An extension that allows to collect all the data from a website into a table, quickly filter out the excess, and export the result to Excel/
+- **`logsensor`** (low) — #Python tool to discover login panels, and POST Form SQLi Scanning. Support multiple hosts scanning, targeted SQLi form scanning and proxies
+- **`lookup-icann-org`** (medium) — OSINT tool: lookup.icann.org.
+- **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image
+- **`majestic`** (low) — OSINT tool: Majestic.
+- **`majordomo-russia`** (medium) — Service provider for registering websites and domain addresses; Russia-based
+- **`mark-monitor-whois`** (low) — OSINT tool: Mark Monitor WHOIS.
+- **`markmonitor-search-whois`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`matika`** (medium) — Browser extension for searching IP, domain, URL, hash, etc. via the context menu
+- **`maxmind`** (low) — OSINT tool: MaxMind.
+- **`mayorsecdnsscan`** (low) — Identify DNS records for target domains, check for zone transfers and conduct subdomain enumeration.
+- **`metabigor`** (low) — OSINT tools for intelligence gathering without requiring API keys.
+- **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
+- **`metadefender-2`** (low) — OSINT tool: MetaDefender.
+- **`metadetective`** (low) — A simple tool that analyzes the metadata of files in a specific directory and extracts important information from them (names of document cr
+- **`metafinder`** (low) — At first glance, it seems like just another tool that searches for documents on a company's website in search engines and analyzes their met
+- **`mijndomein-netherlands`** (medium) — Service provider for registering websites and domain addresses
+- **`misp-galaxy`** (low) — OSINT tool: MISP Galaxy.
+- **`miteru`** (low) — Experimental phishing kit detection tool. It collects phishy URLs from phishing info feeds and checks each phishy URL whether it enables dir
+- **`mkpath`** (low) — A simple #go tool that generates multi-level file paths based on wordlists. Used in combination with brute-force tools (GoBuster, Dirbuster 
+- **`mksub`** (low) — A simple #go tool that generates multi-level subdomain names based on wordlists. Used in combination with subdomain brute-force tools (Subli
+- **`mmhdan`** (low) — Calculate a fingerprint of a website (HTML, Favicon, Certificate in SHA1, SHA256, MD5, MMH3) and create the quick links to search it in IOT 
+- **`moartls-analyzer`** (low) — addon which check all links on the webpage and show list of non-secure links
+- **`moz-analytics-open-site-explorer`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`moz-link-explorer`** (low) — Analyse the links of any website.
+- **`mx-toolbox-blacklist-check`** (medium) — Search tool that identifies if an IP address is on an anti-spam blacklist
+- **`mx-toolbox-email-header-analyzer`** (medium) — Process for identifying an IP address from an email header
+- **`mx-toolbox-reverse-ip-search`** (medium) — Search tool that helps identify the IP address soomeone else is using
+- **`mx-toolbox-whois-lookup`** (medium) — WHOIS and domain name lookup
+- **`mxtoolbox-com`** (medium) — OSINT tool: mxtoolbox.com.
+- **`my-global-ip`** (medium) — Search tool that identifies the IP address you are currently using
+- **`my-ip-address`** (medium) — Search tool that identifies the IP address you are currently using
+- **`myip-ip-address`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`name-com-bulk-search`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`name-com-united-states`** (medium) — Service provider for registering websites and domain addresses
+- **`namecheap-united-states`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`namecheap-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`ndorker`** (low) — Enter the domain name and get quick links to Google Dorks, Github dorks, Shodan dorks and quick links to get info about domain in Codepad, C
+- **`neilpatel-backlinks-analyzer`** (low) — find out how many sites are linking to a certain web page
+- **`netbootcamp-org-websitetool-html`** (low) — access to 74 #tools to collect domain information from a single page
+- **`netcraft-site-report`** (low) — OSINT tool: Netcraft Site Report.
+- **`netcraft`** (low) — Site reports, DNS search, and hosting history tools.
+- **`netscout-cyber-threat-map`** (low) — OSINT tool: NETSCOUT Cyber Threat Map.
+- **`network-solutions-whois-lookup`** (medium) — Whois lookup, search by domain name or IP address
+- **`network-tools`** (medium) — Web trace, WHOIS, and domain lookups
+- **`nibbler-website-test`** (medium) — Search for information and statistics about any online website
+- **`nibbler`** (low) — Free tool for comprehensive website analysis on more than ten different parameters.
+- **`nindo-host-morocco`** (medium) — Moroccan service provider for registering websites and domain addresses
+- **`nirsoft-whois-servers-list`** (medium) — Listing of over 200 active servers worldwide for conducting whois searches
+- **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.
+- **`nmap-formatter`** (low) — A tool to convert NMAP scan results into different formats: html, csv, Markdown, json, svg (Graphviz), sqlite
+- **`nmap-online`** (low) — OSINT tool: NMAP Online.
+- **`nominet-uk-2`** (medium) — OSINT tool: nominet.uk.
+- **`nominet-uk`** (medium) — OSINT tool: nominet.uk.
+- **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
+- **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
+- **`online-domain-tools-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
+- **`onomae-server-japan`** (medium) — Japanese service provider for registering websites and domain addresses
+- **`ookla-speedtest`** (medium) — Analysis tool that assesses the speed of your Internet connection
+- **`ooni-explorer`** (low) — World biggest open data resource on internet censorship around the world. 1.6+ million measurements in 241 countries since 2012.
+- **`open-host-new-zealand`** (medium) — New Zealand based service provider for registering websites and domain addresses
+- **`open-link-structured-data-sniffer`** (low) — View webpage details info in Google Chrome: RDFa linked data ([http://rdfa.info](http://rdfa.info)) POSH (Plain Old Semantic HTML) Microdata
+- **`open-multiple-links-one-click`** (low) — OSINT tool: Open Multiple Links ☷ One Click.
+- **`open-web-analytics-tool`** (medium) — Search for information and statistics about any online website using open source software
+- **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
+- **`openlink-profiler`** (medium) — A Free Tool to Check Backlinks to Any Site
+- **`openlink-structured-data-sniffer`** (low) — GoogleChrome extension which reveals structured metadata (Microdata, RDFa, JSON-LD, Turtle, etc.) embedded within HTML documents.
+- **`openlinkprofiler`** (low) — OSINT tool: OpenLinkProfiler.
+- **`openlinkprofiles`** (low) — Get backlinks by website URL. Filter and sort backlinks by anchor, context, trust, LIS and industry.
+- **`opensquat`** (low) — Search newly registered phishing domain by keywords; Check it with VirusTotal and Quad9 DNS;
+- **`oralyzer`** (low) — Script that check website for following types of Open Redirect Vulnerabilities
+- **`orb`** (low) — Massive footprinting tool.
+- **`ote-osint-template-engine`** (low) — OSINT template engine / cross-platform subdomain enumeration and recon GUI.
+- **`owasp-amass`** (low) — The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and
+- **`ozspeedtest-australia`** (medium) — Analysis tool that assesses the speed of your Internet connection, including download speed and upload speed
+- **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
+- **`papaki-whois-search`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`pentest-tools-com`** (low) — OSINT tool: Pentest-Tools.com.
+- **`photon-2`** (low) — OSINT tool: photon.
+- **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
+- **`piwik-web-analytics`** (medium) — Search for information and statistics about any online website using open source software
+- **`planethoster-canada`** (medium) — Service provider for registering websites and domain addresses
+- **`poodle-check`** (low) — OSINT tool: Poodle Check.
+- **`privacy-net-privacy-analyzer`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
+- **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
+- **`ptrarchive-com`** (low) — search by 230 billion DNS records retrieved from 2008 to the present.
+- **`punkspider`** (low) — OSINT tool: Punkspider.
+- **`purewhois`** (medium) — Tool that safely identifies the available registration information for a website or domain name
+- **`pydork`** (low) — Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge
+- **`qualys-ssl-check`** (low) — OSINT tool: Qualys SSL Check.
+- **`quango-seo-ranks-and-monitoring`** (medium) — Search for information and statistics about any online website
+- **`quantcast`** (low) — OSINT tool: Quantcast.
+- **`quick-sprout`** (low) — OSINT tool: Quick Sprout.
+- **`r3con1z3r`** (low) — Lightweight web information-gathering tool written in Python.
+- **`radb`** (low) — Provides information collected from all the registries that form part of the Internet Routing Registry
+- **`radware-live-cyber-threat-map`** (low) — OSINT tool: Radware Live Cyber Threat Map.
+- **`ransomlook`** (low) — "Yet another Ransomware gang tracker" (c) Group profiles, recent updates, forums and markets list + some stats. A real treasure cybercrime r
+- **`raymond`** (low) — Framework for gathering information about website
+- **`rdrs-icann-org`** (medium) — OSINT tool: rdrs.icann.org.
+- **`reconnor`** (low) — Educational recon and OSINT tool suite.
+- **`redirectdetective`** (low) — OSINT tool: RedirectDetective.
+- **`regex-checker`** (low) — Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses
+- **`regexper`** (low) — A simple and free online tool for visualizing regular expressions. Just copy the regular expression to the site and convert it into a detail
+- **`registerit-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`remote-dns-lookup`** (low) — OSINT tool: Remote DNS Lookup.
+- **`repolist`** (low) — A very fast and simple tool that allows to generate wordlists for different CMS and frameworks (using Github repos).
+- **`retire-js`** (low) — GoogleChrome extension for scanning a web app for use of vulnerable JavaScript libraries
+- **`reverse-domain`** (low) — OSINT tool: Reverse Domain.
+- **`reverse-google-adsense`** (low) — OSINT tool: Reverse Google Adsense.
+- **`reverse-google-analytics`** (low) — OSINT tool: Reverse Google Analytics.
+- **`reverse-ip-lookup`** (low) — OSINT tool: Reverse IP Lookup.
+- **`reverse-mx-record`** (low) — OSINT tool: Reverse MX Record.
+- **`reversewhois-io`** (medium) — OSINT tool: reversewhois.io.
+- **`rextract`** (low) — This extreme simple tool extracts the strings corresponding to a certain #regex from the html code of the list of URLs.
+- **`ripe`** (medium) — OSINT tool: RIPE.
+- **`robottester`** (low) — Simple Python script can enumerate all URLs present in robots.txt files, and test whether they can be accessed or not.
+- **`ronin-recon`** (low) — Recursive recon engine and framework for subdomains, DNS, port scanning, and TLS certs.
+- **`sameid`** (low) — OSINT tool: SameID.
+- **`samy-pl`** (medium) — OSINT tool: samy.pl.
+- **`scamadvisor`** (medium) — Allows you to search for a website and check whether it is a scam
+- **`scan4all`** (low) — 15000+PoCs; 20 kinds of application password crack; 7000+Web fingerprints; 146 protocols and 90000+ rules Port scanning; Fuzzing and many ma
+- **`scrape-api`** (low) — Proxy API for Web Scraping
+- **`scrappy`** (low) — One of the easiest to learn web scrapers I've seen (and quite fast at that). It allows you to extract all URLs, table fields, lists and any 
+- **`search-arin-net`** (medium) — OSINT tool: search.arin.net.
+- **`search-censys-io`** (medium) — OSINT tool: search.censys.io.
+- **`search-dnslytics-com`** (medium) — OSINT tool: search.dnslytics.com.
+- **`secmas-host-guatemala`** (medium) — Guatemala based service provider for registering websites and domain addresses
+- **`secretfinder`** (low) — Tool for find sensitive data (apikeys, accesstoken,jwt,..) or search anything with #regexp on #javascript files
+- **`secure-gateway-live-cyber-threat-map`** (low) — OSINT tool: Secure Gateway Live Cyber Threat Map.
+- **`securitytrails-2`** (low) — OSINT tool: SecurityTrails.
+- **`securitytrails`** (low) — OSINT tool: SecurityTrails.
+- **`seekolver`** (low) — #python tool for searching and filtering subdomains using different APIs: SecurityTrails, AlienVault, VirusTotal, SpyOnWeb, Crt sh
+- **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
+- **`seo-spyglass`** (medium) — Free online backlink checker and analysis tool
+- **`seomastering-domain-age-checker`** (medium) — Domain age tool provides the approximate age of a website, as well as information on how the website looked when it first started
+- **`seotools-for-excel`** (low) — OSINT tool: SEOTools for Excel.
+- **`servage-germany`** (medium) — German service provider for registering websites and domain addresses
+- **`server-status-pwn`** (low) — Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.
+- **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.
+- **`shaw-speed-test-canada`** (medium) — Analysis tool that assesses the speed of your Internet connection
+- **`sicknerd`** (low) — tool for researching domain lists using Google Dorking. You can automatically load fresh dorks from GHDB and customize the maximum number of
+- **`sify-technologies-limited-india`** (medium) — Indian information and communications technology company that provides end to end ICT solutions
+- **`silicon-house-india`** (medium) — India based service provider for registering websites and domain addresses
+- **`simplifica-spain`** (medium) — Spanish service provider for registering websites and domain addresses
+- **`single-file`** (low) — GoogleChrome, Firefox and MicrosoftEdge addon to save webpage in single html file
+- **`site-analyzer`** (medium) — Online website analyzing tool
+- **`sitebroker`** (low) — Domain investigation #python tool
+- **`skype-resolver`** (low) — OSINT tool: Skype Resolver.
+- **`smallseotools-backlink-checker`** (medium) — Tool that identifies the available information about backlinks that link back to a particular website
+- **`smallseotools`** (low) — OSINT tool: SmallSEOTools.
+- **`smart-ruler`** (low) — Simple #GoogleChrome extension (200 000 users) for those who like to explore the design of different sites
+- **`snov-io-technology-checker`** (low) — type name of #webdev technology (jquery, django, wordpress etc) and get the list of websites, which used it.
+- **`snyk-io`** (low) — Website Vulnerabilities Scanner
+- **`soc-multi-tool`** (low) — Chrome Extension for quick: IP/Domain Reputation Lookup IP/ Domain Info Lookup Hash Reputation Lookup (Decoding of Base64 & HEX using CyberC
+- **`socradar-labs`** (low) — OSINT tool: SOCRadar LABS.
+- **`source-code-search-engine-315-million-domains-indexed-search-by-title-metadata-javascript-files-server-name-locat`** (low) — Source code search engine (315 million domains indexed). Search by title, metadata, javascript files, server name, location and more.
+- **`sourcewolf`** (low) — A tool for analyzing #javascript files. It finds all the variables, endpoints and social media links mentioned in the code in just a few sec
+- **`speedtest-com`** (medium) — Analysis tool that assesses the speed of your Internet connection
+- **`sputnik`** (low) — Chrome extension for quick gathering info about IP, domain, hash or URL in dozens of different services: Censys, GreyNoise, VirusTotal, Shod
+- **`spyoffers-com`** (low) — tool that allows you to do a full trace of a URL Redirect
+- **`spyse-cli`** (low) — command line client for Spyse.com
+- **`spyse-com`** (low) — domain investigation toolbox
+- **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
+- **`squarespace-2`** (medium) — Service provider for building and hosting webpages and websites
+- **`squatm3gator`** (low) — OSINT tool: Squatm3gator.
+- **`striker`** (low) — Quick and simple tool for gathering information about domain (http headers, technologies, vulnerabilities etc).
+- **`stylifyme`** (low) — Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between tw
+- **`subdomain-finder`** (low) — OSINT tool: Subdomain Finder.
+- **`subdomainradar-io`** (low) — OSINT tool: SubDomainRadar.io.
+- **`subdomainsbrute`** (low) — Very(!) fast and simple tool for subdomain bruteforce. It find 53 subdomains, scanned 31160 variations in 31 seconds.
+- **`talend-api-tester-free-edition`** (low) — tool that allows to quickly test requests to different APIs directly in the browser, send requests and inspect responses, validate API behav
+- **`team-cyru-ip-to-asn-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`technology-lookup`** (low) — OSINT tool: Technology Lookup.
+- **`terms-of-service-didn-t-read`** (low) — find out what interesting privacy and confidentiality clauses are in the license agreements of popular websites and apps
+- **`test-net-network-tools`** (medium) — Tools including whois lookup, reverse lookup, traceroute, ping test, proxy checker, and more
+- **`testmy-net-internet-speed-test`** (medium) — Analysis tool that assesses the speed of your website performance
+- **`thale-s-cyberthreat-map`** (low) — OSINT tool: Thale's Cyberthreat Map.
+- **`thales`** (low) — OSINT tool: Thales.
+- **`the-favicon-finder`** (low) — Instantly finds the favicon and all .ico files on the site, and then generates links to download them quickly.
+- **`the-information-laundromat`** (low) — A tool for analyzing content replication and site architecture to detect information laundering.
+- **`thehot`** (medium) — Free online backlink checker tool
+- **`threat-actor-usernames-scrape`** (low) — OSINT tool: Threat Actor Usernames Scrape.
+- **`threatseye-live-cyber-threat-map`** (low) — OSINT tool: ThreatsEye | Live Cyber Threat Map.
+- **`tidos-framework`** (low) — Offensive web application penetration testing and reconnaissance framework with OSINT and footprinting modules.
+- **`tinyscan`** (low) — OSINT tool: TinyScan.
+- **`tor-whois`** (low) — OSINT tool: Tor Whois.
+- **`tormap`** (low) — Worldwide online map of Tor Nodes
+- **`traceroutevisualizer`** (low) — OSINT tool: TracerouteVisualizer.
+- **`trickest-inventory`** (low) — Asset inventory of 800+ public bug bounty programs.
+- **`try-jsoup-org`** (low) — online version of HTML pasrer [http://github.com/jhy/jsoup](http://github.com/jhy/jsoup)
+- **`tucows-canada`** (medium) — Canada based service provider for registering websites and domain addresses
+- **`turbolist3r`** (low) — An improved and accelerated version of famous sublist3r. Looks for subdomains in 11 sources (see picture). It's possible to apply bruteforce
+- **`ubersuggest-keyword-creator`** (medium) — Language-related search for keyword combinations by using a word and current search engine results to create new keywords
+- **`udon`** (low) — #go tool to find assets/domains based by Google Analytics ID
+- **`umatrix`** (low) — Shows all the domains to which the site connects at runtime and allows you to block different sources at will. Useful for ad blocking, track
+- **`universalsearchbot`** (low) — telegram bot finding information about email, russian phone number, domain or IP
+- **`unshorten-it`** (low) — OSINT tool: Unshorten.it.
+- **`unshorten-me`** (low) — OSINT tool: Unshorten.me.
+- **`urlhaus`** (low) — OSINT tool: URLhaus.
+- **`urlquery`** (low) — OSINT tool: urlQuery.
+- **`urlscan`** (low) — OSINT tool: urlscan.
+- **`urlvoid`** (low) — OSINT tool: URLVoid.
+- **`urlxray`** (low) — OSINT tool: Urlxray.
+- **`uscrapper`** (low) — Simple #python tool for extracting different information from web pages: - email addresses - social media links - phone numbers
+- **`user-agent-parser`** (low) — User Agent String can be found, for example, in the logs of your site (or someone else's), in the source code of some CLI tools for #osint a
+- **`validin`** (low) — OSINT tool: Validin.
+- **`verisign-whois-lookup`** (medium) — Whois tool that identifies the available registration information for a website or domain name
+- **`verisign`** (low) — OSINT tool: Verisign.
+- **`versionista-website-monitoring`** (medium) — Website monitoring tool that monitors webpages for changes
+- **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — OSINT tool: VERY QUICK and SIMPLE metadata online editor and remover.
+- **`vfeed`** (low) — Correlated CVE vulnerability and threat-intelligence database with a Python API.
+- **`view-rendered-source`** (low) — The standard browser source code view did not display the actual source code. View Rendered Source extension solve this problem. It shows th
+- **`vincos-it`** (low) — world social media popularity map
+- **`virus-total`** (low) — OSINT tool: Virus Total.
+- **`visual-ping-website-monitoring`** (medium) — Website monitoring tool that monitors webpages for changes
+- **`visual-site-mapper-2`** (low) — A free online tool for generating site maps in graph form. Allows you to visually see the links between the pages of a website and estimate 
+- **`vmaker-host-pakistan`** (medium) — Service provider for registering websites and domain addresses
+- **`vstat-info`** (low) — Getting detailed info about website traffic (sources, keywords, linked sites etc)
+- **`w3snoop`** (low) — OSINT tool: w3snoop.
+- **`w3techs`** (low) — OSINT tool: w3techs.
+- **`weare-ie`** (medium) — OSINT tool: weare.ie.
+- **`web-cam-taxi`** (low) — open webcams around the world
+- **`web-check`** (low) — OSINT tool: Web-Check.
+- **`web-dsn-taiwan`** (medium) — Taiwan based service provider for registering websites and domain addresses
+- **`web-hosting-ireland`** (medium) — Ireland based service provider for registering websites and domain addresses
+- **`web-misr-egypt`** (medium) — Egypt based service provider for registering websites and domain addresses
+- **`web-tech-survey`** (low) — OSINT tool: Web Tech Survey.
+- **`webconfs-domain-age-tool`** (medium) — Tool used to identify the age of a website
+- **`webcopilot`** (low) — All in one toolkit for subdomain enumeration, extract titles and take screenshots, crawl all the endpoints of the subdomains, search vulnera
+- **`webemailextractor-com`** (low) — extract email's and phone numbers from the website or list of website
+- **`webhackurls`** (low) — The simplest tool for URl recon with filter by keyword and saving results to file.
+- **`webmeup`** (low) — OSINT tool: WebMeUp.
+- **`webosint`** (low) — Simple #python tool for step-by-step collection of domain information using HackerTarget and whoisxmlapi APIs.
+- **`webpalm`** (low) — Command-line tool that traverse a website and generate a tree of all its webpages. Also it can scrape and extract data using #regex.
+- **`webscore`** (low) — OSINT tool: Webscore.
+- **`webscout`** (low) — OSINT tool: Webscout.
+- **`website-information`** (low) — OSINT tool: Website Information.
+- **`website-outlook`** (medium) — Website analytics and network information
+- **`website-search-tool`** (low) — OSINT tool: Website search tool.
+- **`websiteiq`** (medium) — Free website traffic estimates & analytics
+- **`websitetechminer-py`** (low) — OSINT tool: WebsiteTechMiner.py.
+- **`webstatsdomain-website-analysis`** (medium) — Search for information and statistics about any online website
+- **`weebly`** (medium) — Service provider for hosting webpages and websites, specifically oriented towards online shopping
+- **`well-known-dev`** (medium) — OSINT tool: well-known.dev.
+- **`what-cms`** (low) — A tool that you can use to identify the technologies used to power a website.
+- **`what-every-browser-knows-about-you`** (low) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests
+- **`whatismyipaddress-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
+- **`whatismyipaddress`** (low) — OSINT tool: WhatIsMyIPAddress.
+- **`whatruns`** (low) — extension, which discover what runs a website: frameworks, Analytics Tools, Wordpress Plugins, Fonts.
+- **`whois-arin-online`** (low) — OSINT tool: Whois Arin Online.
+- **`whois-domain-search-tool`** (low) — A tool that allows you to query whois data for a site name in several domain zones at once.
+- **`whois-freaks`** (low) — API which allows you to search Whois-database (430M+ domains since 1986) by keyword, company name or owner name
+- **`whois-history`** (low) — OSINT tool: Whois History.
+- **`whois-lookup-service`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`whois-request`** (medium) — Whois lookup tool that identifies the available registration information for a website or domain name
+- **`whois-search-com`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`whois-search`** (low) — OSINT tool: Whois Search.
+- **`whois-service`** (low) — OSINT tool: WHOIS Service.
+- **`whois-xml-api-whois-history-database`** (low) — OSINT tool: Whois XML API Whois history database.
+- **`whoisdatacenter-com`** (medium) — OSINT tool: whoisdatacenter.com.
+- **`whoisds-com`** (low) — database of domains registered in the last day
+- **`whoishostingthis`** (low) — OSINT tool: WhoIsHostingThis.
+- **`whoismind`** (low) — OSINT tool: WhoisMind.
+- **`whoisrequest`** (low) — OSINT tool: WhoIsRequest.
+- **`whoxy`** (low) — OSINT tool: Whoxy.
+- **`whtop`** (medium) — Webhosting directory including tools such as IP location lookup, as well as other website information
+- **`wintelguy-com`** (medium) — OSINT tool: wintelguy.com.
+- **`wix-2`** (medium) — Website builder that offers web hosting as well
+- **`woorank-review-and-seo`** (medium) — Search for information and statistics about any online website
+- **`wordpress`** (medium) — Website creation and hosting site
+- **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o
+- **`world-monitor-tech`** (low) — OSINT tool: World Monitor Tech.
+- **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
+- **`xmundo-argentina`** (medium) — Service provider for registering websites and domain addresses
+- **`xnlinkfinder`** (low) — Tool for discover endpoints for a given target. One of the most versatile tools of this type, with dozens of different settings.
+- **`xurlfind3r`** (low) — Find domain's known URLs from: AlienVault's, Open Threat Exchange, Common Crawl, Github, Intelligence X, URLScan, Wayback Machine
+- **`xypnet-zambia`** (medium) — Service provider for registering websites and domain addresses
+- **`you-get-signal`** (low) — OSINT tool: You Get Signal.
+- **`yougetsignal-com`** (medium) — OSINT tool: yougetsignal.com.
+- **`zscaler-global-threat-map-dashboard`** (low) — OSINT tool: Zscaler Global Threat Map Dashboard.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._
