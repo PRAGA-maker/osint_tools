@@ -159510,40 +159510,53 @@
   {
     "id": "telegram-facemath-bot",
     "name": "Telegram Facemath bot",
-    "description": "searching for a face among the archive of photographs from public events in Kazakhstan",
+    "description": "Use when you have a `face`/`image` and want to find that person in an archive of public-event photos from Kazakhstan — returns matching event photos and where/when they were taken.",
     "url": "https://t.me/facematch_bot",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Face-searching a Kazakhstan public-events photo archive to place a person at an event and get more images of them.",
     "selectorsIn": [
       "face",
       "image"
     ],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
     "status": "unknown",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Telegram bot advertised as freemium — typically a few free matches, then credits/subscription for more results or higher-resolution source images. Verify current gating in-bot.",
+    "opsec": "active",
+    "opsecNote": "You upload the target's face to an unknown third-party Telegram bot, disclosing both the image and your Telegram identity to its operator. Assume the operator retains every uploaded face. Never upload from your real account or a face you're not authorized to search; use a burner Telegram account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "chrome-mcp",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A regional face-search bot catalogued by the Cyber Detective (cyb-detective) OSINT list; underlying dataset, accuracy and operator are not independently verified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "kz"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "facematch_bot",
+      "FaceMatch Kazakhstan"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Face recognition and search"
+      "Face recognition and search",
+      "telegram",
+      "kazakhstan"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/telegram-facemath-bot.md"
   },
@@ -176445,31 +176458,40 @@
   {
     "id": "slack-web-scraper",
     "name": "slack-web-scraper",
-    "description": "Archiving Slack channel content for offline analysis",
+    "description": "Use when you have access to a Slack workspace and want to archive a channel's messages for offline analysis — returns JSON exports of posts, threads, participants and timestamps.",
     "url": "https://github.com/iulspop/slack-web-scraper",
     "category": "messaging",
     "path": [
       "messaging",
       "slack"
     ],
-    "bestFor": "Archiving Slack channel content for offline analysis",
+    "bestFor": "Archiving Slack channel/DM content you can already access into local JSON for evidence and analysis, without API keys or admin.",
     "input": "Slack-authenticated browser/session context",
     "output": "Scraped channel messages and related metadata exports",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "associate",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free open-source (Node.js) project; no Slack paid plan or API key required. Repository was archived by its author in September 2024.",
     "opsec": "active",
-    "opsecNote": "Direct scraping activity against Slack endpoints may be logged and rate-limited.",
+    "opsecNote": "It logs in as YOUR Slack account via a headless browser and drives the workspace UI — Slack (and any workspace admin/audit log) can see that session's activity, and rapid navigation may be rate-limited or flagged. Only run against workspaces you are lawfully a member of; use with care and expect the account to be attributable.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A single-developer project, now archived (Sept 2024); the author himself recommends intercepting network requests over HTML scraping, so expect breakage against current Slack.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": true,
@@ -176477,11 +176499,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "iulspop/slack-web-scraper"
+    ],
+    "tags": [
+      "slack",
+      "scraper",
+      "archiving"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/slack/slack-web-scraper.md"
   },
   {
@@ -248937,46 +248965,53 @@
   {
     "id": "inmemorium-canada",
     "name": "Inmemorium (Canada)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "description": "Use when you have a `name` and want to confirm a Canadian death and pull obituary details — returns death/birth dates, funeral location and surviving family from aggregated newspaper obituaries.",
     "url": "https://www.inmemoriam.ca",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a death and reading the obituary (dates, funeral home, hometown, relatives) for a Canadian subject.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "dob",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read memorials; supported by partnerships with 135+ Canadian newspapers. No account needed to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching published obituaries is a fully passive, anonymous lookup — nothing reaches any living relative. Leaving a tribute/condolence, however, is a public post tied to whatever identity you use; don't do so from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregates genuine newspaper obituaries and family-submitted memorials across Canada; obituary facts are as reliable as the originating notice, but tributes are user-generated.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "InMemoriam.ca",
+      "inmemoriam"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "obituary",
+      "canada"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/public-records/inmemorium-canada.md"
   },
@@ -251344,46 +251379,56 @@
   {
     "id": "koreabr-com",
     "name": "koreabr.com",
-    "description": "OSINT tool: koreabr.com.",
+    "description": "Use when you have a South Korean company or a `name` (CEO) and want to confirm the business and its officers/address — a KoDATA business-credit portal; free search, paid detailed reports.",
     "url": "http://www.koreabr.com/mk/MKBRD01R0.do",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a South Korean company (existence, CEO, registration numbers, address) and finding companies tied to a person's name.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic search by company/CEO name is available, but full credit/investigation reports require an account, an order process, and credit-card payment. Treat detailed data as paywalled (payment-wall-partial).",
+    "opsec": "passive",
+    "opsecNote": "Searching the business directory is a passive, anonymous lookup against corporate records — nothing reaches any individual. Ordering a paid report requires an account and payment, which attaches your identity to that transaction; use a sock-puppet/company account if that matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by KoDATA, an established Korean business-credit-information agency drawing on official corporate registration data (~7 million companies); an authoritative source for Korean company facts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "kr"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "KoreaBR",
+      "KoDATA"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "south-korea",
+      "business-registry"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/koreabr-com.md"
   },
   {
@@ -273153,44 +273198,54 @@
   {
     "id": "the-tribal-court-clearinghouse",
     "name": "The Tribal Court Clearinghouse",
-    "description": "OSINT tool: The Tribal Court Clearinghouse.",
+    "description": "Use when a case touches a US tribal jurisdiction and you need to identify the right tribal court and its records/contacts — a reference portal that routes you to tribal, state and federal justice resources.",
     "url": "http://www.tribal-institute.org/index.htm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the correct Native American / Alaska Native tribal court and jurisdiction, and the resources/contacts to request its records.",
     "selectorsIn": [
-      "name"
+      "name",
+      "address"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public resource operated by the Tribal Law and Policy Institute; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the clearinghouse and its resource links is passive and anonymous. Any subsequent records request to a specific tribal court is a separate, potentially attributable action governed by that court's own rules.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by the Tribal Law and Policy Institute since 1997; an established, authoritative clearinghouse for tribal-justice information — though it is a reference hub, not a searchable case database.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Tribal Law and Policy Institute",
+      "tribal-institute.org"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "tribal-court",
+      "us",
+      "reference"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/the-tribal-court-clearinghouse.md"
   },
   {
@@ -327917,13 +327972,13 @@
   {
     "id": "fediverse",
     "name": "Fediverse",
-    "description": "Decentralized networks running on free open software",
+    "description": "Use when a subject may be on decentralized social networks and you need to know which platforms/instances exist — a guide to the Fediverse (Mastodon, Lemmy, PeerTube…) that routes your username search.",
     "url": "https://fediverse.party",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Learning the Fediverse landscape (which apps/instances exist) so you know where to search for a subject's decentralized profiles.",
     "selectorsIn": [
       "name",
       "username"
@@ -327931,15 +327986,16 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free educational portal; no account. It is a directory/guide, not itself a data source.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the guide is passive and anonymous. The actual searching happens on individual instances afterward — where viewing a profile is typically also passive, but interacting (following, messaging) is attributable, so use a sock puppet for that.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community-run introductory guide/directory to federated networks; accurate as orientation, but it points elsewhere and does not itself hold or verify user data.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -327948,14 +328004,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "fediverse.party",
+      "Mastodon / Fediverse guide"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "fediverse",
+      "mastodon"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/fediverse.md"
   },
@@ -330943,49 +331004,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/google-com-44.md"
-  },
-  {
-    "id": "google-com-45",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aqzone.qq.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gsocialmedia",
-      "General Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-45.md"
   },
   {
     "id": "google-com-46",
@@ -347230,13 +347248,13 @@
   {
     "id": "search-linkedin-intelligence-recruitment-software",
     "name": "Search LinkedIn - Intelligence Recruitment Software",
-    "description": "OSINT tool: Search LinkedIn - Intelligence Recruitment Software.",
+    "description": "Use when you have a `name`/`employer-org` and want to find someone's LinkedIn profile past LinkedIn's search limits — a free Chrome extension blending X-ray and direct search to return profiles.",
     "url": "http://www.intel-sw.com/blog/search-linkedin",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding LinkedIn profiles that X-ray-only or in-network-only searches miss, via a hybrid Chrome extension.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -347245,28 +347263,38 @@
       "social-profile",
       "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "The Chrome extension is free; the author invites feedback. A LinkedIn account improves the direct-search half but isn't required for the X-ray half.",
+    "opsec": "active",
+    "opsecNote": "The direct-search component runs queries inside LinkedIn while you're logged in, and LinkedIn records searches/profile views against your account (and may notify viewed users depending on your privacy setting). Use a sock-puppet LinkedIn account in private/anonymous-view mode; the X-ray (Google) component alone is passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "A free tool from Intelligence Software (intel-sw.com), a recruitment-search vendor; recommended across several OSINT lists, but a small third-party extension dependent on LinkedIn's shifting search behaviour.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "intel-sw Search LinkedIn",
+      "Intelligence Software LinkedIn search"
+    ],
     "tags": [
-      "linkedin"
+      "linkedin",
+      "browser-extension",
+      "x-ray-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/search-linkedin-intelligence-recruitment-software.md"
   },
   {
