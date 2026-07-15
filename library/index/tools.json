@@ -160718,44 +160718,51 @@
   {
     "id": "twitter-com",
     "name": "Twitter.com",
-    "description": "OSINT tool: Twitter.com.",
+    "description": "Use when you have a `name`, keyword, or event and want eyewitness photos/media posted to X — returns `social-profile`s of posters and `image` content, filtered to the media view.",
     "url": "https://twitter.com/search?q=explosion&src=typd&mode=photos",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling photo/video posts from X (Twitter) for a person, place, or event using the media-only search view.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, but since 2023 X requires a logged-in account to run and page through search results; logged-out search is largely blocked.",
+    "opsec": "active",
+    "opsecNote": "Searching now needs a login, so use a sock-puppet X account — never your real one. Viewing posts is passive to the poster, but liking/following/replying is visible; browse only.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party X search over public posts; the media itself is authoritative content, though X's ranking and login-gating limit what you can page through.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "X photo search",
+      "Twitter media search"
+    ],
     "tags": [
       "reverse-image",
       "face"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/twitter-com.md"
   },
   {
@@ -174017,43 +174024,48 @@
   {
     "id": "knowlesys-com-2",
     "name": "knowlesys.com",
-    "description": "OSINT tool: knowlesys.com.",
+    "description": "Use when you have a Telegram `username` and want the stable numeric user ID (which survives username/name changes) — returns a how-to for the @userinfobot technique.",
     "url": "https://knowlesys.com/en/articles/social_websites/telegram/how_to_find_a_user_id_in_telegram.html",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Learning how to pull a Telegram account's permanent numeric user ID via @userinfobot.",
     "selectorsIn": [
-      "phone",
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tutorial article.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guide is passive. The technique — forwarding a target's message to @userinfobot, or querying by username — is low-touch, but interacting with a third-party bot means trusting it; use a burner Telegram account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Knowlesys is an OSINT/monitoring vendor publishing how-to articles; the @userinfobot method it documents is a widely-used, verifiable Telegram technique.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "how to find a user ID in Telegram",
+      "Telegram userinfobot guide"
+    ],
     "tags": [
       "telegram",
       "Telegram"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/knowlesys-com-2.md"
   },
   {
@@ -177040,43 +177052,45 @@
   {
     "id": "support-discord-com",
     "name": "support.discord.com",
-    "description": "OSINT tool: support.discord.com.",
+    "description": "Use when you're resolving a Discord `username` and need to understand the 2023 unique-username vs display-name system — returns reference knowledge for interpreting handles.",
     "url": "https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding Discord's unique-username / display-name model so you interpret and search handles correctly.",
     "selectorsIn": [
-      "phone",
       "username"
     ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official Discord help article.",
+    "opsec": "passive",
+    "opsecNote": "Reading a help article is invisible to any subject. Pure reference.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Discord support documentation; authoritative on how Discord's username system works.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Discord New Usernames Display Names"
+    ],
     "tags": [
       "discord",
       "Discord Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/support-discord-com.md"
   },
   {
@@ -271125,46 +271139,52 @@
   {
     "id": "sherpaintelligence-substack-com",
     "name": "sherpaintelligence.substack.com",
-    "description": "OSINT tool: sherpaintelligence.substack.com.",
+    "description": "Use when you need a methodology for investigating an organisation (charity/company) tied to a subject — returns a walkthrough of registries and records that yield `employer-org`, `address`, and `associate` links.",
     "url": "https://sherpaintelligence.substack.com/p/osint-basecamp-investigating-charities",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Learning how to investigate a charity/organisation and the people behind it via public registries.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Substack article (Sherpa Intelligence \"OSINT Basecamp\" series); some posts in the publication may be subscriber-only.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guide and querying public registries is passive — subjects and organisations are not notified. Work from a clean browser regardless.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Sherpa Intelligence is a practitioner-run OSINT training publication; sound methodology, but verify that named registries/links are current for your jurisdiction.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Sherpa Intelligence OSINT Basecamp",
+      "investigating charities OSINT"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sherpaintelligence-substack-com.md"
   },
   {
@@ -333067,13 +333087,13 @@
   {
     "id": "google-com-71",
     "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "description": "Use when you're chasing a subject's Parler footprint and want Google's indexed/archived copies of Parler posts via a site-search dork — returns residual `social-profile` and post links.",
     "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Aparler.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Dorking Google for residual/archived Parler content after the platform's shutdowns.",
     "selectorsIn": [
       "username",
       "name"
@@ -333082,29 +333102,35 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Uses only Google search; free, no account.",
+    "opsec": "passive",
+    "opsecNote": "Query hits Google, not Parler; the subject is not alerted. Search signed out / in a sock browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A Google `site:` dork, not a third-party tool. Reliability equals whatever Parler content Google still has indexed — which is thin, because Parler was deplatformed (2021) and shut down (2023).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "site:parler.com dork",
+      "Parler Google search"
+    ],
     "tags": [
       "rightwingsocialmediasites",
       "Right Wing Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-71.md"
   },
   {
@@ -343919,13 +343945,13 @@
   {
     "id": "osintteam-blog-2",
     "name": "osintteam.blog",
-    "description": "OSINT tool: osintteam.blog.",
+    "description": "Use when you want a curated shortlist of LinkedIn OSINT tools to try against a subject — returns a listicle of tools that surface `social-profile`s, not a lookup itself.",
     "url": "https://osintteam.blog/linkedin-osint-tools-for-osint-investigators-55e91e7c3d43",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A quick, curated inventory of current LinkedIn OSINT tools and what each is good for.",
     "selectorsIn": [
       "username",
       "name"
@@ -343934,29 +343960,34 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Medium-hosted article (The OSINT Team publication); Medium may prompt a sign-in/paywall interstitial after a few free reads.",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. The tools it lists vary in OpSec — some require logging into LinkedIn (active, and visible via \"who viewed your profile\"); apply per-tool caution.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The OSINT Team is a community Medium publication; a useful curated pointer, but a listicle — verify each named tool is still live and behaves as described.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "The OSINT Team LinkedIn tools"
+    ],
     "tags": [
       "linkedin",
       "LinkedIn & Similar Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osintteam-blog-2.md"
   },
   {
@@ -349569,13 +349600,13 @@
   {
     "id": "secjuice-com-3",
     "name": "secjuice.com",
-    "description": "OSINT tool: secjuice.com.",
+    "description": "Use when you're about to investigate a subject on LinkedIn and want a methodology walkthrough — returns techniques for finding and reading `social-profile`s, not a lookup itself.",
     "url": "https://www.secjuice.com/linkedin-osint-part-1/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Learning a structured LinkedIn OSINT workflow (finding profiles, reading them safely) before you start.",
     "selectorsIn": [
       "username",
       "name"
@@ -349584,29 +349615,34 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free community infosec publication; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. It also teaches how to view LinkedIn profiles WITHOUT tipping off the target (private mode, Google cache) — apply those before browsing, since LinkedIn shows \"who viewed your profile\".",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Secjuice is a respected volunteer-run infosec publication; articles are practitioner-written but not formally peer-reviewed, so verify specific techniques still work.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Secjuice LinkedIn OSINT"
+    ],
     "tags": [
       "linkedin",
       "LinkedIn & Similar Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/secjuice-com-3.md"
   },
   {
@@ -383637,13 +383673,13 @@
   {
     "id": "social-analyzer-2",
     "name": "social-analyzer",
-    "description": "API/CLI/web to find a person profiles across 1000+ sites.",
+    "description": "Use when you have a `username` (or `name`) and want to sweep 1000+ sites for matching profiles with a confidence rating — returns ranked `social-profile` hits.",
     "url": "https://pypi.org/project/social-analyzer/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "High-coverage username enumeration across 1000+ sites with a detection-confidence score to cut false positives.",
     "selectorsIn": [
       "username",
       "name"
@@ -383651,25 +383687,34 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open-source (qeeqbox/social-analyzer). Install via `pip install social-analyzer`; no account or key. Runs as CLI, importable API, or a local web UI.",
+    "opsec": "active",
+    "opsecNote": "The scan sends requests to hundreds of sites from your host/IP, so each target site sees your traffic — this is active reconnaissance. Route through a VPN/proxy or managed-attribution host; the *subject* is not directly notified, but the platforms are queried.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Well-known open-source project by qeeqbox with a large maintained site list; detection uses multiple methods (profile, HTTP, dynamic) and returns a confidence rating rather than raw exists/doesn't.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "social-analyzer",
+      "qeeqbox social-analyzer"
+    ],
+    "tags": [
+      "username-check",
+      "python"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/username/social-analyzer-2.md"
   },
