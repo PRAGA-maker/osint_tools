@@ -180526,37 +180526,58 @@
   {
     "id": "whoisdombot",
     "name": "WhoisDomBot",
-    "description": "OSINT tool: WhoisDomBot.",
+    "description": "Use when you have a `domain` or `ip-address` and want registration and DNS data from inside Telegram — returns WHOIS records plus dig/traceroute results for the domain/IP.",
     "url": "https://t.me/WhoisDomBot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Quick WHOIS + dig/trace lookups on a domain or IP without leaving Telegram.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "name",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot; requires a Telegram account.",
+    "opsec": "active",
+    "opsecNote": "WHOIS/dig/trace queries touch registry and DNS infrastructure for the domain/IP, not the site itself — low exposure to the target, but you are querying through a third-party Telegram bot that sees every lookup you run. Use a sock-puppet Telegram account and avoid entering anything that identifies you or your case.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community Telegram utility bot wrapping standard WHOIS/dig/trace; results reflect public registry/DNS data. As with any third-party bot, it can log your queries — trust the data, not the operator.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "WhoisDomBot",
+      "Telegram whois bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "whois",
+      "domain",
+      "dns"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/whoisdombot.md"
   },
   {
@@ -242881,45 +242902,56 @@
   },
   {
     "id": "genealogy",
-    "name": "Genealogy",
-    "description": "OSINT tool: Genealogy.",
+    "name": "Genealogy.com death records",
+    "description": "Use when you have a `name` and want to check death records / obituaries to confirm a person is deceased and surface relatives — returns `dob`/death dates, `name` variants and `associate` (family) links.",
     "url": "https://www.genealogy.com/lp/death-records",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Starting a death-records / obituary search by name to confirm death and identify family members.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "associate",
+      "name",
       "dob",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The landing page and basic searching are free, but genealogy.com is an Ancestry-owned funnel — full record images (Social Security Death Index, obituaries, death certificates) typically require an Ancestry subscription.",
+    "opsec": "passive",
+    "opsecNote": "Passive records search; the (deceased) subject and living relatives are not notified. Registration/subscription ties searches to an account — use a research account, not personal, if you sign up.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "genealogy.com is a long-running genealogy portal owned by Ancestry; the death-record datasets it draws on (SSDI, obituaries) are legitimate, though full access is a paid upsell.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "genealogy.com",
+      "death records genealogy"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "death-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/genealogy.md"
   },
   {
@@ -244645,47 +244677,59 @@
   },
   {
     "id": "gov-cy",
-    "name": "gov.cy",
-    "description": "OSINT tool: gov.cy.",
+    "name": "Cyprus Registrar of Companies (DRCOR)",
+    "description": "Use when you have a Cyprus `employer-org`/company name (or reg number) and want its official registry record — returns registered `address`, company officers/directors and status.",
     "url": "https://efiling.drcor.mcit.gov.cy/DrcorPublic/SearchForm.aspx?sc=0",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Cyprus company search — find a registered company, its officers and registered address.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search of the registered-organisations catalogue; certified copies of filings may carry a fee, but the basic search and officer/address view are free.",
+    "opsec": "passive",
+    "opsecNote": "Passive lookup of a public government registry; neither the company nor its officers are notified. First-party official source. No account needed; clean session sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Cyprus Department of Registrar of Companies and Intellectual Property (DRCOR), Ministry of Energy, Commerce and Industry — the authoritative Cyprus corporate register.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "cy"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "legalmondo-com"
+    ],
+    "aliases": [
+      "DRCOR",
+      "Cyprus company registry",
+      "efiling.drcor.mcit.gov.cy"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-cy.md"
   },
   {
@@ -255819,45 +255863,57 @@
   },
   {
     "id": "montana",
-    "name": "Montana",
-    "description": "OSINT tool: Montana.",
+    "name": "Montana Correctional Offender Network (ConWeb)",
+    "description": "Use when you have a `name` (or DOC ID) and want to check Montana state incarceration/supervision records — returns offender status, facility/location and a Department of Corrections `document-id`.",
     "url": "https://app.mt.gov/conweb",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Montana Department of Corrections records for a convicted felon by name or DOC ID.",
     "selectorsIn": [
-      "name"
+      "name",
+      "document-id"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "geolocation",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official State of Montana government service; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Passive query against a public government database; the subject is not notified and no third party is tipped off. It is a first-party official source. Standard clean-session browsing is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the State of Montana / Department of Corrections — authoritative for Montana correctional records. Data reflects DOC records and may lag real-world status.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "ConWeb",
+      "Montana offender search",
+      "mt.gov offender network"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/montana.md"
   },
   {
@@ -267571,47 +267627,60 @@
   },
   {
     "id": "romania",
-    "name": "Romania",
-    "description": "OSINT tool: Romania.",
+    "name": "Romania Trade Register (ONRC)",
+    "description": "Use when you have a Romanian `employer-org`/company name (or CUI) and want the official trade-register record — returns registered `address`, status and associated officers.",
     "url": "https://portal.onrc.ro/ONRCPortalWeb/ONRCPortal.portal",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Romanian company search — confirm a company exists and pull its registered address and basic record.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic existence/identification search is free; detailed extracts (furnizare informații — officers, financials, history) are paid per-document through the ONRC portal, and full features require an account.",
+    "opsec": "passive",
+    "opsecNote": "Passive lookup of the official public registry; the company/officers are not notified. Ordering paid extracts requires an account that logs your requests — use a research account. First-party government source.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Romania's Oficiul Național al Registrului Comerțului (ONRC), the national trade register — authoritative for Romanian company data. Portal is Romanian-language.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ro"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "gov-cy"
+    ],
+    "aliases": [
+      "ONRC",
+      "Registrul Comertului",
+      "portal.onrc.ro"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "corporate-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/romania.md"
   },
   {
@@ -331380,49 +331449,6 @@
     "_file": "library/tools/social-networks/google-account-finder-epieos.md"
   },
   {
-    "id": "google-com",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Absky.app",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bluesky",
-      "BlueSky / BSky Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com.md"
-  },
-  {
     "id": "google-com-2",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -379537,37 +379563,51 @@
   {
     "id": "digital-footprint-check",
     "name": "Digital Footprint Check",
-    "description": "OSINT tool: Digital Footprint Check.",
+    "description": "Use when you have a `username` (or `email`) and want to see which of 500+ platforms it exists on — returns direct `social-profile` links where the handle is registered.",
     "url": "https://www.digitalfootprintcheck.com/free-checker.html",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Client-side username/email enumeration across 500+ sites using the WhatsMyName dataset.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free; no account. Checks run client-side in your browser.",
+    "opsec": "passive",
+    "opsecNote": "The tool states checking is client-side (\"zero data sent to our servers\"), but your browser still makes requests to each of the 500+ platforms to test the handle — those platforms see your IP. Run from a sock-puppet browser/VPN if you don't want target sites logging the check. It does not notify the account owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A front-end over the open-source WhatsMyName database (the community-standard username-enumeration dataset). Results are only as current as WhatsMyName's rules; false positives/negatives occur.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "digitalfootprintcheck.com",
+      "WhatsMyName web checker"
+    ],
     "tags": [
-      "username-check"
+      "username-check",
+      "username-enumeration"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/username/digital-footprint-check.md"
   },
   {
