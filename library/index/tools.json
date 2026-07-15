@@ -242407,47 +242407,55 @@
   },
   {
     "id": "funeraltimes-com",
-    "name": "funeraltimes.com",
-    "description": "OSINT tool: funeraltimes.com.",
+    "name": "Funeral Times",
+    "description": "Use when you have a `name` and want Northern Ireland / Ireland death and funeral notices — returns name, dob (death date), address, associate.",
     "url": "https://www.funeraltimes.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's death/funeral notice across Northern Ireland and Ireland — death date, funeral location and named relatives.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "dob",
+      "address",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read; free optional registration only adds alerts, condolences and a personal diary.",
+    "opsec": "passive",
+    "opsecNote": "Reading published death notices is passive and does not alert anyone. Only register (free) with a sock-puppet identity if you want alerts; posting a condolence would be an attributable, visible action — don't.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely used Northern Ireland/Ireland funeral-notice aggregator; notices are submitted by families/funeral directors, so details are generally reliable but self-published and unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb",
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "FuneralTimes",
+      "funeraltimes.com death notices"
+    ],
     "tags": [
       "genealogybdmANDwills",
-      "Genealogy Linked Sites"
+      "Genealogy Linked Sites",
+      "death-notices"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/funeraltimes-com.md"
   },
   {
@@ -242643,47 +242651,56 @@
   },
   {
     "id": "gendatabase-com",
-    "name": "gendatabase.com",
-    "description": "OSINT tool: gendatabase.com.",
+    "name": "GenDatabase.com",
+    "description": "Use when you have a `name` of a deceased South African and want genealogy/vital records (birth, death, marriage, estate, voter roll, ID) — returns dob, name, associate, document-id.",
     "url": "https://www.gendatabase.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Researching a deceased South African subject's birth/death/marriage/estate records and ID number to anchor identity and surface relatives.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "dob",
+      "name",
+      "associate",
+      "document-id",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Some free databases exist, but most searching requires a paid membership (about R110/US$6.99 per day up to R400/US$23.99 per month for unlimited searches).",
+    "opsec": "passive",
+    "opsecNote": "Searching transcribed historical/genealogy indexes is passive and does not alert anyone (the platform only covers deceased individuals, not living people). A paid membership ties access to a billing identity — use a dedicated account if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial South African genealogy platform providing transcribed (not original) records; useful as leads and pointers to official documents, but transcriptions can carry errors — verify against source registries.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "za"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "Gen Database",
+      "gendatabase"
+    ],
     "tags": [
       "genealogybdmANDwills",
       "Genealogy Linked Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gendatabase-com.md"
   },
   {
@@ -269357,47 +269374,55 @@
   },
   {
     "id": "securities-administrators-ca",
-    "name": "securities-administrators.ca",
-    "description": "OSINT tool: securities-administrators.ca.",
+    "name": "CSA National Registration Search (securities-administrators.ca)",
+    "description": "Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give investment advice in Canada — returns name, employer-org, address, document-id.",
     "url": "https://info.securities-administrators.ca/nrsmobile/nrssearch.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether an individual or firm is a registered securities dealer/adviser in any Canadian jurisdiction, and in what categories.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "address",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official tool run by the Canadian Securities Administrators; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Querying the public regulator database is passive and does not alert the person or firm searched. No login required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Canadian Securities Administrators (CSA) National Registration Search — the authoritative, multi-jurisdiction source for whether someone is registered to deal in or advise on securities in Canada.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "National Registration Search",
+      "NRS",
+      "CSA Are They Registered"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/securities-administrators-ca.md"
   },
   {
@@ -333855,45 +333880,56 @@
   },
   {
     "id": "ig-exporter-chrome-google-com",
-    "name": "ig exporter (chrome.google.com)",
-    "description": "OSINT tool: ig exporter (chrome.google.com).",
-    "url": "https://chrome.google.com/webstore/detail/ig-exporter/nmnhoiehpdfllknopjkhjgoddkpnmfpa?utm_source=listmore.info",
+    "name": "IG Exporter / Exporter for Followers (Chrome extension)",
+    "description": "Use when you have an Instagram `username` and want to export their followers/following (with bio, email and website) to CSV for associate-network analysis — returns associate, social-profile, email.",
+    "url": "https://chromewebstore.google.com/detail/ig-exporter/nmnhoiehpdfllknopjkhjgoddkpnmfpa",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-exporting an Instagram account's follower/following lists (up to ~50k, with bio/email/website in detailed mode) to a spreadsheet for network mapping.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "associate",
+      "username",
+      "email"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free Chrome extension with fast and detailed export modes (detailed adds bio/email/website); higher-volume/detailed exports may be gated by a paid upgrade.",
+    "opsec": "active",
+    "opsecNote": "The extension scrapes Instagram through YOUR logged-in session, so requests come from your account and IP and can trigger rate-limits, action-blocks or bans — the developer explicitly warns against using your primary account. Use a dedicated sock-puppet Instagram account and a clean browser profile, and pace exports.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Popular third-party Chrome extension (~500k users, ~4.2★, updated 2025) but its Web Store listing declares it collects personally identifiable and payment information; it runs inside your Instagram session — vet the privacy policy and use only a throwaway account.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "IG Exporter",
+      "Exporter for Followers"
+    ],
     "tags": [
       "instagram",
       "Instagram Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ig-exporter-chrome-google-com.md"
   },
   {
