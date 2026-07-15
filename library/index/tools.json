@@ -10886,13 +10886,13 @@
   {
     "id": "osint-tools-mcp-server",
     "name": "osint-tools-mcp-server",
-    "description": "MCP server exposing multiple OSINT tools to AI assistants like Claude.",
+    "description": "Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/SpiderFoot/theHarvester/Blackbird directly via MCP — returns `social-profile`, `email`, `domain`, and `ip-address` intelligence.",
     "url": "https://github.com/frishtik/osint-tools-mcp-server",
     "category": "ai-analysis-automation",
     "path": [
       "ai-analysis-automation"
     ],
-    "bestFor": "Giving an LLM agent direct tool access to OSINT lookups via the Model Context Protocol",
+    "bestFor": "Giving an LLM agent native MCP access to a bundle of classic username/email/domain recon tools.",
     "selectorsIn": [
       "username",
       "email",
@@ -10906,15 +10906,19 @@
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Open-source (self-hosted); free to run. Some bundled tools (GHunt, SpiderFoot, Blackbird) require their own separate install and, in GHunt's case, valid Google auth cookies.",
+    "opsec": "active",
+    "opsecNote": "The bundled tools reach out to third-party infrastructure on the target's selectors — Holehe pings ~120 platforms' password-reset/registration endpoints, GHunt queries Google with your cookies, SpiderFoot actively probes IPs/domains. Run from a sock-puppet network and use throwaway Google cookies for GHunt; several of these leave lookups that could be logged by the queried providers.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "207 stars; directly designed for Claude/AI-assistant integration, highly relevant to an agent-driven workflow.",
+    "trustNote": "Community GitHub project (~200 stars) that wraps well-known open-source OSINT tools behind MCP; the wrapper is only as trustworthy as the upstream tools and your own install. Purpose-built for Claude/AI-assistant integration.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -10933,7 +10937,7 @@
       "integration"
     ],
     "source": "gh-topic-intelligence-gathering",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/ai-analysis-automation/osint-tools-mcp-server.md"
   },
@@ -245606,47 +245610,51 @@
   },
   {
     "id": "gov-uk-15",
-    "name": "gov.uk",
-    "description": "OSINT tool: gov.uk.",
+    "name": "GOV.UK Find an Energy Certificate",
+    "description": "Use when you have a UK `address` (or postcode) and want to confirm a property exists, see its dwelling characteristics, and date when it was last sold/let/assessed — returns property `address` details and assessment dates.",
     "url": "https://www.gov.uk/find-energy-certificate",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a UK property at an address and dating when an EPC was lodged (a proxy for a recent sale/tenancy).",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free UK government register; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You query a public government register about a property, not about the target directly — nothing is sent to the subject. Ordinary web-logging by GOV.UK only; a sock-puppet browser/IP is prudent but not essential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party UK government service (Department for Levelling Up / MHCLG), drawing on the official EPC register — authoritative, not a third-party scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "EPC register",
+      "Energy Performance Certificate search",
+      "find-energy-certificate"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-uk-15.md"
   },
   {
@@ -331923,45 +331931,54 @@
   },
   {
     "id": "google-com-46",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Arenren.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+    "name": "Google site search — renren.com",
+    "description": "Use when you have a `name` or `username` possibly tied to the Chinese social network Renren and want to find their profile without a Renren account — returns `social-profile` links via Google's index.",
+    "url": "https://www.google.com/search?q=site%3Arenren.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding Renren (人人网) profiles by name/username using a Google `site:renren.com` dork.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free — it is a Google web search. Note that Renren itself has declined sharply since its 2010s peak, so indexed profiles are often stale or gone.",
+    "opsec": "passive",
+    "opsecNote": "You search Google, not Renren, so the platform is not notified by the query. Google logs searches against your IP/account — use a logged-out/sock-puppet session. Renren's public pages are heavily login-walled, so most detail requires an account you likely shouldn't create with your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is Google's own web search with a `site:` operator; the engine is authoritative. Result quality is bounded by Google's (limited) indexing of a declining, login-walled Chinese platform.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "site:renren.com",
+      "Renren Google dork",
+      "人人网"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "google-dork",
+      "china"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-46.md"
   },
   {
@@ -332158,45 +332175,53 @@
   },
   {
     "id": "google-com-55",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?channel=trow5&client=firefox-b-d&q=site%3Auk.linkedin.com",
+    "name": "Google site search — uk.linkedin.com",
+    "description": "Use when you have a `name` (or `username`, employer, or town) and want to find a person's UK LinkedIn profile without logging into LinkedIn — returns `social-profile` links via Google's index.",
+    "url": "https://www.google.com/search?q=site%3Auk.linkedin.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding UK LinkedIn profiles by name/employer using a Google `site:uk.linkedin.com` dork, bypassing LinkedIn's login wall.",
     "selectorsIn": [
+      "name",
       "username",
-      "name"
+      "employer-org"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free — it is a Google web search; no LinkedIn account needed to see the indexed snippets.",
+    "opsec": "passive",
+    "opsecNote": "You search Google, not LinkedIn, so LinkedIn's \"who viewed your profile\" is not triggered by the search itself. Google logs your queries against your IP/account — use a sock-puppet/logged-out session. Clicking through to the actual LinkedIn page IS a visit and can be logged by LinkedIn; read the Google cache/snippet first if you want to stay off LinkedIn entirely.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is Google's own web search with a `site:` operator — the engine is authoritative; result quality is bounded only by what Google has indexed from LinkedIn.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "site:uk.linkedin.com",
+      "Google LinkedIn UK dork"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "google-dork"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-55.md"
   },
   {
@@ -332929,44 +332954,49 @@
   {
     "id": "gramfeed-com",
     "name": "Gramfeed.com",
-    "description": "OSINT tool: Gramfeed.com.",
+    "description": "Use when you have an Instagram `username` and want a web viewer with map/geo browsing — but the service has shut down, so treat as defunct.",
     "url": "http://gramfeed.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "(Defunct) web-based Instagram browsing with search and map view; service discontinued.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Was a free/freemium Instagram web client; it later rebranded to Picodash and has since been discontinued. The domain now returns errors.",
+    "opsec": "passive",
+    "opsecNote": "Moot — the service is discontinued. When it operated it was a third-party Instagram client (passive toward the subject).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Was an early third-party Instagram web client (later \"Picodash\"); shut down after Instagram tightened API access. Opaque ownership and now non-functional.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Picodash"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "defunct"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/gramfeed-com.md"
   },
   {
@@ -341521,49 +341551,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/nitter-it.md"
-  },
-  {
-    "id": "notetracker-socialmedialab-ca",
-    "name": "notetracker.socialmedialab.ca",
-    "description": "OSINT tool: notetracker.socialmedialab.ca.",
-    "url": "https://notetracker.socialmedialab.ca/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "xtwitter",
-      "X / Twitter Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/notetracker-socialmedialab-ca.md"
   },
   {
     "id": "noxinluencer",
@@ -351728,45 +351715,50 @@
   },
   {
     "id": "sssthreads-pro",
-    "name": "sssthreads.pro",
-    "description": "OSINT tool: sssthreads.pro.",
+    "name": "sssThreads.pro",
+    "description": "Use when you have a Threads (Meta) post URL or `username` and want to view/download its public media — but the service is now permanently closed, so treat as defunct.",
     "url": "https://sssthreads.pro/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "(Defunct) downloading public media from Meta's Threads; site permanently shut down.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Was a free downloader; now permanently closed with no services offered.",
+    "opsec": "passive",
+    "opsecNote": "Moot — the service is offline. When it operated, it was a third-party downloader (passive toward the subject, but such sites commonly log inputs and serve ads).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Was one of the \"sss\" family of Meta/Instagram/Threads media downloaders; ownership was never transparent and the site now shows only a permanent-closure notice.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "sssthreads"
+    ],
     "tags": [
       "threads",
-      "Threads Related Sites"
+      "Threads Related Sites",
+      "defunct"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/sssthreads-pro.md"
   },
   {
@@ -352025,35 +352017,48 @@
   {
     "id": "statflux",
     "name": "Statflux",
-    "description": "OSINT tool: Statflux.",
+    "description": "Use when you have an Instagram `username` and want a public-facing analytics snapshot of the account — returns `social-profile` metrics and recent `image` activity.",
     "url": "http://statflux.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A quick third-party analytics view of a public Instagram account's activity and engagement.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Advertised as a free Instagram analytics viewer; deeper reports may sit behind sign-up or paid tiers. Live functionality could not be fully confirmed at last check (page rendered no readable content), so treat availability as uncertain.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a third-party analytics site about a public Instagram handle, not Instagram's authenticated surface — the subject is not notified. Use a sock-puppet browser; some such viewers inject ads or trackers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Small third-party Instagram-analytics service (listed on Crunchbase, San Francisco); ownership and data sourcing are opaque and its live status is inconsistent — verify each figure independently.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "statflux.com"
+    ],
+    "tags": [
+      "instagram",
+      "analytics"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/statflux.md"
   },
   {
@@ -360215,36 +360220,50 @@
   },
   {
     "id": "twittertrails-com",
-    "name": "Twittertrails.com",
-    "description": "OSINT tool: Twittertrails.com.",
+    "name": "TwitterTrails.com",
+    "description": "Use when you have a claim/rumor or hashtag and want to analyze how it spread on Twitter and how skeptical the audience was — but this .com domain is now dead/repurposed, so treat as defunct.",
     "url": "http://twittertrails.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "(Defunct) investigating rumor propagation, originators, and audience skepticism on Twitter; the .com no longer hosts the tool.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "down",
+    "pricing": "free",
+    "costNote": "Was a free academic research tool; the twittertrails.com domain has been abandoned and is now parked with unrelated spam/blog content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Moot — the tool is offline. When it operated it analyzed public tweets in aggregate (passive; no interaction with any individual subject).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "The original TwitterTrails was a credible Wellesley College research project (blogs.wellesley.edu/twittertrails), but the twittertrails.com domain is now repurposed and no longer runs it — do not trust content currently served there.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "TwitterTrails",
+      "TRAILS"
+    ],
+    "tags": [
+      "xtwitter",
+      "misinformation",
+      "defunct"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twittertrails-com.md"
   },
   {
@@ -361861,44 +361880,48 @@
   {
     "id": "web-stagram-com",
     "name": "Web.stagram.com",
-    "description": "OSINT tool: Web.stagram.com.",
+    "description": "Use when you have an Instagram `username` and want a web-based public-profile viewer — but the domain no longer resolves, so treat as defunct.",
     "url": "https://web.stagram.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "(Defunct) browsing/downloading public Instagram content from the browser; domain no longer resolves.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "image",
-      "geolocation"
+      "image"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Was a free Instagram web viewer; the domain now fails to resolve (no DNS record).",
+    "opsec": "passive",
+    "opsecNote": "Moot — the host is offline. When it operated it was a third-party Instagram viewer (passive toward the subject, but such sites typically log inputs and serve ads).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Was one of many interchangeable third-party Instagram web viewers (the \"Webstagram\" family); opaque ownership, and the domain no longer resolves.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Webstagram"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "defunct"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/web-stagram-com.md"
   },
   {
