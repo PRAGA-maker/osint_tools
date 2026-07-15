@@ -143611,49 +143611,6 @@
     "_file": "library/tools/image-video-face/facesearch-arrests-org.md"
   },
   {
-    "id": "facesearch-facesearch-ai",
-    "name": "FaceSearch (facesearch.ai)",
-    "description": "AI face-search engine indexing public web images.",
-    "url": "https://facesearch.ai",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "face",
-      "image"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "kimi-2026"
-    ],
-    "source": "kimi-faces",
-    "lastVerified": "",
-    "enrichment": "full",
-    "_file": "library/tools/image-video-face/facesearch-facesearch-ai.md"
-  },
-  {
     "id": "faceseek-face-search-engine",
     "name": "FaceSeek Face Search Engine",
     "description": "Use when you have a face photo and want a supplemental reverse face search across social media and the web to find matching profiles or images.",
@@ -157321,45 +157278,59 @@
   },
   {
     "id": "search-fotki-com",
-    "name": "search.fotki.com",
-    "description": "OSINT tool: search.fotki.com.",
+    "name": "Fotki Profile Search",
+    "description": "Use when you have a `username` or `name` and want to find a profile on Fotki, a long-running photo-sharing community — returns social-profile, photos, and name.",
     "url": "http://search.fotki.com/?search_type=profiles",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the veteran Fotki photo-sharing community for a member's profile and their uploaded photo albums.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "social-profile",
+      "image",
+      "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search and view public Fotki profiles/albums. Fotki has been running since 1998 and skews toward RU/US photo hobbyists; the search now sits behind an anti-bot interstitial, so a real browser is needed.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public profiles and albums is passive and does not notify the member. The anti-bot layer means you should use a normal browser (not a scraper); use a sock-puppet browser/IP if you don't want the session tied to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Fotki is a genuine, long-established photo-sharing site, but a niche one; account data is user-generated and the profile-search feature is gated behind anti-bot checks. Verify any identity match against the actual albums.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "flickr-com"
+    ],
+    "aliases": [
+      "fotki.com",
+      "Fotki profile search"
+    ],
     "tags": [
       "flickr",
-      "Flickr & Similar Linked Sites"
+      "Flickr & Similar Linked Sites",
+      "photo-sharing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/search-fotki-com.md"
   },
   {
@@ -159877,45 +159848,56 @@
   },
   {
     "id": "tikfuel-com",
-    "name": "tikfuel.com",
-    "description": "OSINT tool: tikfuel.com.",
+    "name": "TikFuel TikTok Profile Picture Downloader",
+    "description": "Use when you have a TikTok `username` and want the full-resolution profile picture (which TikTok only shows small) to reverse-image or face-search — returns image and face.",
     "url": "https://tikfuel.com/tiktok-profile-downloader/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a TikTok user's full-size (≈1080×1080) profile picture from just their username.",
     "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
       "image",
       "face"
     ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The profile-picture download is free and needs only the username (no login/password). Note the site is primarily an engagement vendor (sells TikTok views/followers), with the downloader as a free lead tool.",
+    "opsec": "passive",
+    "opsecNote": "You submit a public username and receive the public avatar; TikTok does not notify the target and you never authenticate. The engagement-selling context means the operator is a marketing vendor — don't enter anything beyond the username, and run the downstream reverse-image search behind a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A TikTok-growth marketing site offering the downloader as a freebie. The image it returns is genuine (TikTok's own CDN), but the operator is a commercial engagement vendor, so treat the surrounding site with caution.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "tiktok",
+      "pimeyes"
+    ],
+    "aliases": [
+      "tikfuel.com",
+      "TikFuel profile downloader"
+    ],
     "tags": [
       "profileimages",
-      "Profile Images"
+      "Profile Images",
+      "tiktok"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/tikfuel-com.md"
   },
   {
@@ -163318,45 +163300,56 @@
   },
   {
     "id": "ytlarge-com-2",
-    "name": "ytlarge.com",
-    "description": "OSINT tool: ytlarge.com.",
+    "name": "YTLarge Thumbnail & Profile Picture Downloader",
+    "description": "Use when you have a YouTube video or channel URL and want the full-size thumbnail, channel avatar or banner image to reverse-image or face-search — returns image and face.",
     "url": "https://ytlarge.com/thumbnail-downloader",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting high-resolution YouTube thumbnails, channel profile pictures and banners from a video/channel URL.",
     "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
       "image",
       "face"
     ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account. Covers not just video thumbnails but also channel avatars and banners in enlarged sizes (s800–s2560), which YouTube otherwise serves small.",
+    "opsec": "passive",
+    "opsecNote": "You fetch publicly-served images from Google's CDN; the channel owner is not notified. As with any avatar grab, the exposure is the reverse-image search afterwards — run that behind a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small free utility that exposes YouTube's public image endpoints at larger sizes. Images are authentic (Google CDN); the wrapper site is a lightweight ad-supported tool, so treat it as convenience over a manual URL trick.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "get-youtube-thumbnail-com",
+      "pimeyes"
+    ],
+    "aliases": [
+      "ytlarge.com",
+      "YTLarge"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "thumbnails"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ytlarge-com-2.md"
   },
   {
@@ -328128,43 +328121,56 @@
   {
     "id": "fedifinder",
     "name": "Fedifinder",
-    "description": "Finding Twitter contacts who moved to Mastodon/Fediverse",
+    "description": "Use when you want to map a Twitter/X account's contacts to their Mastodon/Fediverse handles — but the tool is now offline (Twitter API lockdown killed it); historically returned social-profile handles from a Twitter following list.",
     "url": "https://fedifinder.glitch.me/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "fediverse-mastodon"
     ],
-    "bestFor": "Finding Twitter contacts who moved to Mastodon/Fediverse",
-    "input": "Twitter/X account (via OAuth login)",
-    "output": "CSV list of discovered Fediverse handles from your Twitter contacts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "(Historic) Discovering the Fediverse/Mastodon handles that a Twitter account's follows had posted in their bios/tweets.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "down",
     "pricing": "free",
+    "costNote": "Was a free tool hosted on Glitch. Now offline — the page returns HTTP 410 Gone, and its Twitter-OAuth mechanism broke when X restricted/priced its API in 2023. Documented so you don't chase a dead endpoint.",
     "opsec": "active",
-    "opsecNote": "Requires Twitter OAuth authentication; scans public bios and tweets of followed accounts.",
+    "opsecNote": "When it worked, it required Twitter OAuth (delegating access to your Twitter account) and scanned the public bios/tweets of accounts you followed. That OAuth grant tied the activity to your Twitter identity — a reason to have used a sock-puppet account.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A popular community tool during the 2022–2023 Twitter-to-Mastodon migration, but hosted on Glitch and now gone (410). Its OAuth model is obsolete given X's API changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
     "deprecated": true,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "khendrikse-netlify-app"
+    ],
+    "aliases": [
+      "fedifinder.glitch.me"
+    ],
+    "tags": [
+      "mastodon",
+      "fediverse",
+      "migration"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fediverse-mastodon/fedifinder.md"
   },
   {
@@ -359762,41 +359768,56 @@
   {
     "id": "unfurl",
     "name": "Unfurl",
-    "description": "URL parameter and metadata forensics",
+    "description": "Use when you have a URL (shared link, tracking URL, shortlink) and want to decode every hidden component — timestamps, account IDs, geolocation, tracking params — returns geolocation, device-id, and social-profile IDs.",
     "url": "https://github.com/obsidianforensics/unfurl",
     "category": "social-networks",
     "path": [
       "social-networks",
       "tiktok"
     ],
-    "bestFor": "URL parameter and metadata forensics",
-    "input": "URLs or encoded URL fragments",
-    "output": "Parsed components, decoded values, and relationship visualizations",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Exploding any URL into a graph of decoded parts — timestamps, embedded IDs, coordinates and tracking data hidden in the link.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "device-id",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source (MIT). Use the hosted version at dfir.blog/unfurl (no account), or `pip install dfir-unfurl[all]` for local CLI/web use. Actively maintained (releases through 2026).",
     "opsec": "passive",
-    "opsecNote": "Local analysis mode avoids contacting target platforms during parsing.",
+    "opsecNote": "Local/hosted parsing decodes the URL string itself and does not fetch the target platform, so you never touch the subject's account. Prefer local install (`unfurl`) for sensitive links so the URL never leaves your machine via the public web app.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by Ryan Benson (obsidianforensics), a respected DFIR practitioner; widely used in forensics/OSINT. Open-source and transparent about how each parser decodes values.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "epoch-converter"
+    ],
+    "aliases": [
+      "dfir-unfurl",
+      "obsidianforensics unfurl"
+    ],
+    "tags": [
+      "url-forensics",
+      "metadata",
+      "dfir"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tiktok/unfurl.md"
   },
   {
