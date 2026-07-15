@@ -151842,31 +151842,28 @@
   },
   {
     "id": "midomi-music-search-engine",
-    "name": "Midomi Music Search Engine",
-    "description": "Multi-media search engine focusing on music and songs, searches bymatching to an audio of a tune that you hum",
+    "name": "Midomi / SoundHound Music Search",
+    "description": "Use when you have an audio clip, hum, or song playing in a subject's video and want to identify the track — returns song title/artist metadata (a minor corroboration/timeline aid).",
     "url": "http://www.midomi.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
+    "bestFor": "Identifying a song from a recording, hum, or sung snippet (music ID), now delivered via SoundHound.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free music-identification service; the midomi.com brand now redirects to SoundHound (music.soundhound.com), which offers free song detection via web and mobile apps.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You submit an audio sample to SoundHound's recognition service — nothing about your subject is queried, only the audio you provide. Standard privacy caveats of uploading audio to a third party apply.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Midomi is now part of SoundHound Inc., an established music-recognition company (Houndify technology); the recognition result is reliable, though this is a niche OSINT use.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -151875,14 +151872,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Midomi",
+      "SoundHound"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "audio"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/midomi-music-search-engine.md"
   },
@@ -214183,38 +214184,52 @@
   },
   {
     "id": "reunion",
-    "name": "Reunion",
-    "description": "OSINT tool: Reunion.",
+    "name": "Reunion.com",
+    "description": "Use when you follow an old Reunion.com people-finder link — the brand is retired and now redirects to MyLife, a US people-search returning `address`, `phone`, and `associate` data.",
     "url": "http://reunion.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "(Legacy brand) reconnecting-with-people search; now redirects to the MyLife people-search platform.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "associate"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "The Reunion.com brand is retired; the domain 301-redirects to mylife.com. MyLife shows teaser results free and gates full reports/contact data behind a paid subscription.",
+    "opsec": "passive",
+    "opsecNote": "Searching is passive, but MyLife is a reputation/people-search operator known for aggressive upsells and for compiling profiles; use a sock-puppet identity and never enter your own details or pay from an attributable account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "The original Reunion.com no longer exists as a standalone service; it now points to MyLife, whose data accuracy is inconsistent and which has faced criticism over its profile/reputation practices. Verify anything it surfaces elsewhere.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "reunion.com",
+      "MyLife (redirect target)"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "people-search",
+      "defunct-brand"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/people-search/reunion.md"
   },
   {
@@ -258863,47 +258878,55 @@
   },
   {
     "id": "nexok-co-uk",
-    "name": "nexok.co.uk",
-    "description": "OSINT tool: nexok.co.uk.",
+    "name": "Nexok",
+    "description": "Use when you have a `name`, `address`/postcode, or `employer-org` in the UK and want to find associated companies and director records — returns company details, `address`, appointments, and director `associate` links.",
     "url": "https://www.nexok.co.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting a UK name/company/postcode into director records, company addresses, and appointment history via a Companies House front-end.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
+      "associate",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Search and filtering over UK company data are usable for free; bulk export (for direct-mail/marketing) is the paid product. The underlying data derives from Companies House, which is itself free at source.",
+    "opsec": "passive",
+    "opsecNote": "You query a public UK company database, not the subject — no notification to any individual. Ordinary web-logging only; a sock-puppet session is prudent for bulk work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party value-add front-end over Companies House data (~5.7M active UK companies, 50+ filters). Data is only as current as its Companies House feed; cross-check anything critical against the official register.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "nexok.co.uk"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "uk",
+      "companies-house"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nexok-co-uk.md"
   },
   {
@@ -332398,45 +332421,54 @@
   },
   {
     "id": "google-com-63",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Axing.com%2Fprofile",
+    "name": "Google site search — xing.com/profile",
+    "description": "Use when you have a `name` (or employer) for someone in the German-speaking world and want their XING profile without logging into XING — returns `social-profile` links via Google's index.",
+    "url": "https://www.google.com/search?q=site%3Axing.com%2Fprofile",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding XING (DACH professional network) profiles by name/employer using a Google `site:xing.com/profile` dork.",
     "selectorsIn": [
+      "name",
       "username",
-      "name"
+      "employer-org"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free — it is a Google web search; no XING account required to read the indexed snippets.",
+    "opsec": "passive",
+    "opsecNote": "You search Google, not XING, so XING's profile-visitor tracking is not triggered by the search itself. Google logs your queries — use a logged-out/sock-puppet session. Clicking through to the live XING profile IS a visit XING can log; read the snippet/cache first to stay off-platform.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's own web search with a `site:` operator — authoritative engine; results limited only by what Google has indexed from XING.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "de"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "site:xing.com/profile",
+      "Google XING dork"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "xing",
+      "google-dork"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-63.md"
   },
   {
@@ -354317,44 +354349,48 @@
   {
     "id": "thumbtube-com",
     "name": "thumbtube.com",
-    "description": "OSINT tool: thumbtube.com.",
+    "description": "Use when you have an Instagram post URL and want to download its photos/videos in full resolution without login — returns the media `image`/video files.",
     "url": "https://thumbtube.com/download-instagram-photos-videos",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading full-resolution photos and videos from a public Instagram post URL, no account needed.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free with no download limits; no account, payment, or install required.",
+    "opsec": "passive",
+    "opsecNote": "You paste an Instagram post URL into a third-party downloader — Instagram is not directly queried by you and the subject is not notified. The site sees the URL you submit; use a sock-puppet session and expect ads.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Opaque third-party downloader (not affiliated with Instagram); bundles other utilities (YouTube converter, LinkedIn finder). The download function works but ownership/logging are unknown.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "thumbtube"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/thumbtube-com.md"
   },
   {
@@ -356274,44 +356310,49 @@
   {
     "id": "ttsave-app-2",
     "name": "ttsave.app",
-    "description": "OSINT tool: ttsave.app.",
+    "description": "Use when you have a TikTok video or profile URL and want to download the media without watermark or login — returns the video, thumbnail `image`, audio, and profile picture.",
     "url": "https://ttsave.app/thumbnail",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a target's TikTok videos, thumbnails, audio, and profile pictures (no watermark, no account).",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free with unlimited quota; no account, login, or software install required.",
+    "opsec": "passive",
+    "opsecNote": "You paste a TikTok URL into a third-party downloader — TikTok is not directly queried by you and the subject is not notified. The downloader site sees the URL you submit; use a sock-puppet session and expect ads/trackers on the page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Opaque third-party downloader (not affiliated with TikTok); the download function is verifiable and works, but ownership and any logging are unknown.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ttsave"
+    ],
     "tags": [
       "tiktok",
-      "TikTok Related Sites"
+      "TikTok Related Sites",
+      "downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ttsave-app-2.md"
   },
   {
