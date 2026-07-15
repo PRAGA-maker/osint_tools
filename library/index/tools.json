@@ -161080,46 +161080,50 @@
   {
     "id": "vdownloader",
     "name": "VDownloader",
-    "description": "Free video downloader for Youtube, Facebook, and Vimeo videos",
+    "description": "Use when you have a video URL (a subject's `social-profile`/post) and want to preserve it offline for analysis — a desktop downloader that saves videos from 200+ sites for frame, metadata and evidence work.",
     "url": "https://vdownloader.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading and preserving videos from YouTube, Facebook, Instagram, Vimeo, TikTok and 200+ sites for offline OSINT analysis.",
     "selectorsIn": [
-      "image",
-      "face"
+      "social-profile"
     ],
     "selectorsOut": [
       "image",
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free version downloads video; VDownloader Plus (paid) adds higher resolutions, playlist/channel bulk downloads, scheduling and conversion. The free tier suffices for one-off evidence capture.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Downloading a public video does not notify the uploader. It runs locally as a desktop app, so nothing about your query leaves your machine except the normal request to the video host. Prefer a compartmentalized machine/VPN when capturing sensitive material.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Long-running commercial desktop downloader; it fetches genuine media from the source host, but as third-party software install it only from the official site and verify the download.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "VDownloader",
+      "vdownloader.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "video-download"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/vdownloader.md"
   },
@@ -176831,38 +176835,52 @@
   },
   {
     "id": "sms-activate",
-    "name": "SMS Activate",
-    "description": "OSINT tool: SMS Activate.",
+    "name": "SMS Activate / PrivatePhoneBot (virtual numbers)",
+    "description": "Use when you need a disposable `phone` number to receive an SMS/OTP for a sock-puppet account without exposing your own number — rents temporary numbers by country/operator via a Telegram bot.",
     "url": "https://t.me/PrivatePhoneBot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Renting a temporary virtual phone number to receive verification SMS/calls when creating research/sock-puppet accounts.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "selectorsOut": [
+      "phone"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Pay-per-use: you top up a small balance (often crypto/card) and pay cents-to-dollars per number/rental depending on country and target service. No large free tier — budget a few dollars for burner numbers.",
+    "opsec": "passive",
+    "opsecNote": "This is OpSec *infrastructure* for you, not a lookup on a target. It protects your identity by keeping your real number off research accounts. Caveats these are shared/recycled numbers (someone else may have used or later use them), the operator sees which services you verify, and some platforms detect and block known virtual-number ranges. Never route anything tied to your real identity through it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A functioning commercial virtual-number reseller (Telegram front-end to an SMS-Activate-style service); reliable enough for OTP capture but an opaque third party — assume it logs your activity and never handle sensitive verifications through it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "SMS Activate Bot",
+      "PrivatePhoneBot",
+      "Private Phone"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "virtual-number",
+      "sock-puppet"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/sms-activate.md"
   },
   {
@@ -179895,38 +179913,55 @@
   },
   {
     "id": "usinfobot",
-    "name": "UsInfoBot",
-    "description": "OSINT tool: UsInfoBot.",
+    "name": "UsInfoBot (Telegram user-info)",
+    "description": "Use when you have a Telegram `username` or a forwarded message and want the account's stable numeric Telegram ID, display name and profile picture — an inline Telegram lookup bot.",
     "url": "https://t.me/usinfobot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving a Telegram username (or forwarded message) to the account's persistent numeric ID, current name and profile photo.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot; you only need a Telegram account to use it.",
+    "opsec": "passive",
+    "opsecNote": "You query a bot, not the target — resolving a username to an ID does not notify that user. Do it from a sock-puppet Telegram account as hygiene. NOTE This is the benign Telegram user-info bot; do NOT confuse it with criminal \"US info\"/SSN-lookup Telegram services that resell stolen data-broker access — those are illegal and out of scope.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A widely-used, benign Telegram utility that surfaces only Telegram's own public account metadata; it does not access private data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "usinfobot",
+      "Inline Info Username"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "user-info",
+      "id-lookup"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/usinfobot.md"
   },
   {
@@ -223954,44 +223989,53 @@
   },
   {
     "id": "superpages-online-yellow-pages-local-business-directory",
-    "name": "Superpages Online Yellow Pages, Local Business Directory",
-    "description": "OSINT tool: Superpages Online Yellow Pages, Local Business Directory.",
+    "name": "Superpages (Yellow Pages / Find People)",
+    "description": "Use when you have a US `phone`, `name`, or business and want directory data — returns names, addresses and phone numbers from a live US business + white-pages directory.",
     "url": "https://www.superpages.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Free US directory lookups — reverse phone, business listings, and white-pages people search for names, addresses and numbers.",
     "selectorsIn": [
-      "phone"
+      "phone",
+      "name"
     ],
     "selectorsOut": [
       "name",
       "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported directory; \"full report\" links may hand off to paid partners, but the core business/people listings are free.",
+    "opsec": "passive",
+    "opsecNote": "You query a public directory, not the subject — no notification is sent. No login required. Use a clean browser session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established US yellow-pages/white-pages directory (Thryv-operated); strong on business listings, weaker/older on residential people data — corroborate residential hits.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Superpages",
+      "superpages.com"
+    ],
     "tags": [
-      "phone"
+      "phone",
+      "yellow-pages",
+      "white-pages"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/phone/superpages-online-yellow-pages-local-business-directory.md"
   },
   {
@@ -321983,35 +322027,50 @@
   {
     "id": "bibliogram-art",
     "name": "Bibliogram.art",
-    "description": "OSINT tool: Bibliogram.art.",
+    "description": "Use when you have an Instagram `username` and want to view their public profile/posts without an Instagram login — but this Bibliogram instance (and the project) is discontinued, so it returns nothing today.",
     "url": "https://bibliogram.art/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Historically, viewing public Instagram profiles/posts anonymously via a privacy front-end — no longer functional.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "down",
+    "pricing": "free",
+    "costNote": "Was a free open-source front-end; the project is discontinued and public instances (including bibliogram.art) are offline, so there is nothing to use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Moot while offline. The historical appeal was anonymity — viewing Instagram without logging in or hitting Instagram directly. That benefit is gone; today anonymous Instagram viewing needs a different route.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Bibliogram was a legitimate open-source Instagram front-end, but the project was discontinued and instances were shut down after Instagram tightened access; this domain no longer serves a working viewer.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Bibliogram",
+      "bibliogram.art"
+    ],
+    "tags": [
+      "instagram",
+      "front-end",
+      "defunct"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bibliogram-art.md"
   },
   {
