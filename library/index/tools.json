@@ -204872,37 +204872,52 @@
   {
     "id": "buscapaginasblancas",
     "name": "BuscaPaginasBlancas",
-    "description": "OSINT tool: BuscaPaginasBlancas.",
+    "description": "Use when you have Spanish surnames and want listed name/phone/address records — a Python scraper of Spain's Páginas Blancas, now defunct because the source endpoint was permanently shut down.",
     "url": "https://github.com/GeiserX/BuscaPaginasBlancas",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Historically, bulk-scraping Spain's Páginas Blancas white-pages directory into a local database by surname.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address"
+    ],
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source (Python) on GitHub, but non-functional — the repository was archived in April 2026 after the Páginas Blancas endpoint it scraped was permanently shut down (GDPR/LOPDGDD enforcement).",
+    "opsec": "active",
+    "opsecNote": "When it worked, it scraped a live third-party directory directly from your IP (active, ToS-sensitive). Moot now that the endpoint is dead — but any successor tool scraping Spanish personal data raises the same GDPR/legal exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A small community Python project (single author), now archived and inoperable because its data source was taken offline.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "es"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GeiserX/BuscaPaginasBlancas",
+      "Paginas Blancas scraper"
+    ],
     "tags": [
-      "people-investigations"
+      "people-investigations",
+      "spain",
+      "white-pages",
+      "scraper"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/people-search/buscapaginasblancas.md"
   },
   {
@@ -208905,31 +208920,44 @@
   {
     "id": "infoflow-public-people-search-in-chilean",
     "name": "InfoFlow Public People Search In Chilean",
-    "description": "Chilean public records and identity verification",
+    "description": "Use when you have a Chilean `name`, RUN (national ID) or `vehicle-plate` and want identity/vehicle/company data — InfoFlow aggregates Chilean public records into a single lookup.",
     "url": "https://infoflow.cloud/",
     "category": "people-search",
     "path": [
       "people-search",
       "general-people-search"
     ],
-    "bestFor": "Chilean public records and identity verification",
+    "bestFor": "Chilean identity resolution — name/RUN/plate to personal data, vehicle registration and company links.",
     "input": "Name, RUN (Chilean ID number), or vehicle plate",
     "output": "Personal identification data, vehicle registration, company records",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "name",
+      "document-id",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "dob",
+      "employer-org",
+      "vehicle-plate"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Freemium — registration (with a Chilean RUT) is required, and fuller results/queries are typically metered or paid beyond a free allowance.",
     "opsec": "active",
-    "opsecNote": "Requires registration with Chilean RUT; queries may be logged.",
+    "opsecNote": "You must register (with a Chilean RUT) and log in, so queries are attributable to your account and may be logged by the operator. This is an aggregator of a third party's compiled data, not an official portal — use a sock-puppet account and assume the searched selectors are recorded.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial aggregator of Chilean public/leaked records; convenient but unofficial, with unverified data currency and provenance.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "cl"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": false,
@@ -208937,11 +208965,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "InfoFlow Chile",
+      "infoflow.cloud"
+    ],
+    "tags": [
+      "people-search",
+      "chile",
+      "vehicle",
+      "identity"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/people-search/general-people-search/infoflow-public-people-search-in-chilean.md"
   },
   {
@@ -267118,46 +267154,52 @@
   {
     "id": "rightmove-co-uk",
     "name": "rightmove.co.uk",
-    "description": "OSINT tool: rightmove.co.uk.",
+    "description": "Use when you have a UK `address`/postcode and want a property's sold-price history and past listing photos — Rightmove's house-price tool returns Land Registry sale prices, dates and interior/exterior images.",
     "url": "https://www.rightmove.co.uk/house-prices.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a UK property's sold-price history and archived listing photos/floorplans from an address.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search sold prices and view archived listings; a free account only adds tracking features. No payment needed.",
+    "opsec": "passive",
+    "opsecNote": "Looking up a property is a passive, anonymous query against public sold-price data — no signal to any owner or occupier. A normal browser is fine; sign in only if you want tracking, which attaches your identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Rightmove is the UK's largest property portal; its sold-price data comes from HM Land Registry / Registers of Scotland (authoritative), and listing photos are the portal's own archive.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Rightmove house prices",
+      "Rightmove sold prices"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "uk",
+      "property",
+      "sold-prices"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rightmove-co-uk.md"
   },
   {
