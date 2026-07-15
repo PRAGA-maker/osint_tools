@@ -176467,43 +176467,57 @@
   {
     "id": "slack-intelbot",
     "name": "slack-intelbot",
-    "description": "In-channel IOC enrichment for threat intelligence triage",
+    "description": "Use when you have an `ip-address`, `domain` or file hash and want reputation/threat context posted in-channel — returns aggregated verdicts from VirusTotal, AbuseIPDB, URLhaus, Hybrid Analysis and OTX.",
     "url": "https://github.com/pun1sh3r/slack-intelbot",
     "category": "messaging",
     "path": [
       "messaging",
       "slack"
     ],
-    "bestFor": "In-channel IOC enrichment for threat intelligence triage",
-    "input": "Indicators posted in Slack and configured API credentials",
-    "output": "Automated enrichment responses with indicator context and reputation data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "In-Slack enrichment of atomic indicators (IP, domain, hash) with aggregated threat-intelligence reputation data.",
+    "selectorsIn": [
+      "ip-address",
+      "domain"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "The bot is free/open-source, but it queries third-party APIs (VirusTotal, AbuseIPDB, URLhaus, Hybrid Analysis, AlienVault OTX) that each require your own API key; free API tiers are rate-limited. You self-host the bot in your Slack workspace.",
     "opsec": "passive",
-    "opsecNote": "Queries third-party intelligence APIs; no direct interaction with investigation targets by default.",
+    "opsecNote": "Passive toward any human subject — it queries reputation databases about infrastructure, not the person, and doesn't touch the target's systems. Note that submitting an indicator to VirusTotal/OTX makes that lookup visible to those platforms (and potentially the indicator's owner if they monitor VT), so treat submissions as semi-public; don't upload sensitive private hashes.",
     "humanInLoop": true,
     "humanInLoopReason": [
+      "api-key",
       "account-login"
     ],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community GitHub project (pun1sh3r/slack-intelbot); it's a thin aggregator over well-known reputation APIs, so trust rests on those upstream sources — audit the code before deploying it with your API keys.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "pun1sh3r/slack-intelbot",
+      "Slack IntelBot"
+    ],
+    "tags": [
+      "slack",
+      "threat-intelligence",
+      "ioc-enrichment"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/slack/slack-intelbot.md"
   },
   {
@@ -247649,46 +247663,55 @@
   {
     "id": "iaea-online-org",
     "name": "iaea-online.org",
-    "description": "OSINT tool: iaea-online.org.",
+    "description": "Use when you need to find or verify a UK/international independent automotive engineer assessor by location/specialty — returns a matching professional's name, area and contact details.",
     "url": "https://www.iaea-online.org/find-an-engineer",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating or verifying a member automotive engineer assessor (e.g. for vehicle forensics/valuations) by area and type of work.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "employer-org",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public \"find an engineer\" directory run by a professional body; no account needed. You contract directly with the independent member, not the IAEA.",
+    "opsec": "passive",
+    "opsecNote": "Passive — you browse a public professional directory; no subject is contacted through the lookup itself. If you then phone/email a listed assessor you are contacting that professional directly, which is overt.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Institute of Automotive Engineer Assessors (IAEA), a UK learned society and registered charity; membership listings are authoritative for verifying an assessor's professional standing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Institute of Automotive Engineer Assessors",
+      "IAEA find an engineer"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/iaea-online-org.md"
   },
   {
