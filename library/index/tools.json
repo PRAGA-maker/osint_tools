@@ -156009,45 +156009,57 @@
   },
   {
     "id": "replicate-com",
-    "name": "replicate.com",
-    "description": "OSINT tool: replicate.com.",
+    "name": "replicate.com (Bringing Old Photos Back to Life)",
+    "description": "Use when you have a degraded/old `image` of a face and want it restored/enhanced for identification — runs Microsoft's photo-restoration model on Replicate, returning a cleaner image.",
     "url": "https://replicate.com/microsoft/bringing-old-photos-back-to-life",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Restoring and enhancing old, scratched, faded or low-quality photos of a person to improve face-recognition and identification.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image",
+      "face"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Replicate runs models pay-per-second of compute (fractions of a cent to a few cents per image); new accounts get some free credit. Signing in (often via GitHub) is required to run a model.",
+    "opsec": "active",
+    "opsecNote": "You upload the subject's photo to Replicate's cloud, where it is processed on third-party GPUs and may be retained/logged. This exposes the image (and your account) to a third party — use a sock-puppet account and avoid uploading images you're not authorized to process; for maximum control, run the open-source model locally instead.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Replicate is a reputable model-hosting platform; this model is Microsoft Research's published \"Bringing Old Photos Back to Life.\" The tooling is trustworthy — but restoration is generative, so outputs are reconstructions, not ground truth.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Bringing Old Photos Back to Life",
+      "Microsoft photo restoration",
+      "Replicate"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "Photo Related Sites",
+      "photo-restoration",
+      "image-enhancement",
+      "ai"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/replicate-com.md"
   },
   {
@@ -162774,46 +162786,52 @@
   {
     "id": "youku-chinese-language",
     "name": "Youku (Chinese language)",
-    "description": "Video hosting website",
+    "description": "Use when you have a `name`/`username` and want a Chinese subject's video presence — search Youku, China's major video platform, for their uploads and channel, returning profiles and imagery.",
     "url": "http://www.youku.com/?screen=pc",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a Chinese subject's videos and uploader channel on Youku (China's YouTube-equivalent).",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and watch; some content and account features prompt a Chinese phone/Alibaba login, but public search and playback are open.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and viewing are passive and anonymous against a major public platform — no signal to the subject. Registering/commenting requires a login that is attributable; use a sock-puppet account if you go beyond viewing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Youku is a genuine, major video platform (owned by Alibaba); the platform is authentic, but uploaded content and channel claims are user-generated and unverified.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "cn"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Youku",
+      "优酷"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "china",
+      "video"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/youku-chinese-language.md"
   },
@@ -250047,46 +250065,56 @@
   {
     "id": "ipo-gov-uk",
     "name": "ipo.gov.uk",
-    "description": "OSINT tool: ipo.gov.uk.",
+    "description": "Use when you have a `name`/`employer-org` and want the UK trademarks they own — the UK Intellectual Property Office owner search returns the owner's name, address and their registered/applied trademarks.",
     "url": "https://trademarks.ipo.gov.uk/ipo-tmowner",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding UK trademarks by owner name to link a person/business to brands and a service address.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official government search; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Searching the public trademark register is a passive, anonymous lookup against government records — no notification to the owner. A normal browser session suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The UK Intellectual Property Office's own register — an authoritative, first-party government source of trademark ownership.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "UK IPO trademark search",
+      "Intellectual Property Office",
+      "search by owner"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "trademark",
+      "uk",
+      "ip"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ipo-gov-uk.md"
   },
   {
@@ -292602,44 +292630,53 @@
   },
   {
     "id": "google-com-84",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "name": "google.com (Advanced Image Search)",
+    "description": "Use when you have a `name` and want to find photos of a person with precise filters — Google Advanced Image Search narrows by size, type, colour, region, site and usage rights to return candidate images.",
     "url": "https://www.google.com/advanced_image_search",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Finding images of a subject by keyword with advanced filters (site, region, image type, size, usage rights).",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Google service; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "A keyword image search queries Google, not the subject — passive. Results are anonymous pageviews; only clicking through to a site touches that site. Use a clean/sock-puppet browser to avoid personalized results.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's own advanced image-search interface — authoritative as a search tool; the images it surfaces come from third-party sites and must be judged individually.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Google Advanced Image Search",
+      "advanced_image_search"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "image-search",
+      "google"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-com-84.md"
   },
   {
@@ -342781,13 +342818,13 @@
   {
     "id": "picodash",
     "name": "Picodash",
-    "description": "OSINT tool: Picodash.",
+    "description": "Use when you have a `username`/`name` and want Instagram search/analytics — formerly a location & hashtag search engine, now a paid analytics tool whose OSINT-grade location search was gutted by Instagram's API changes.",
     "url": "https://www.picodash.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Instagram account/hashtag analytics and content curation; historically, searching Instagram posts by location.",
     "selectorsIn": [
       "username",
       "name"
@@ -342797,28 +342834,37 @@
       "image",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Now a subscription analytics/marketing service (formerly Gramfeed). The free/OSINT-useful location & hashtag search that made it valuable was curtailed after Instagram deprecated its public API in 2018; full features require a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "Querying Picodash's own index is passive against the subject — no signal to their Instagram. You do disclose the account/location of interest to Picodash and must create an account for most features; use a sock-puppet login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial third-party Instagram tool dependent on Instagram's API; its capabilities have shrunk as Instagram restricted access, so current OSINT yield is uncertain.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Gramfeed",
+      "picodash.com"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "analytics"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/picodash.md"
   },
   {
