@@ -146112,45 +146112,58 @@
   },
   {
     "id": "gijn-org-4",
-    "name": "gijn.org",
-    "description": "OSINT tool: gijn.org.",
+    "name": "GIJN Guide to Detecting AI-Generated Content",
+    "description": "Use when you have an `image`/video and need a methodology to judge whether it is AI-generated or manipulated — returns verification techniques and tool pointers, not a verdict.",
     "url": "https://gijn.org/resource/guide-detecting-ai-generated-content",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "A reputable, up-to-date methodology for spotting AI-generated/deepfake images, video and audio.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
       "face",
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free guide published by GIJN (Global Investigative Journalism Network); no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guide is fully passive. The verification steps it recommends (reverse image search, metadata checks, detector tools) each have their own OpSec — run those in a clean session and avoid uploading sensitive originals to third-party detectors.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by the Global Investigative Journalism Network, a respected non-profit supporting investigative journalists worldwide; a curated, sourced methodology rather than a black-box tool.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "thehackernews-com"
+    ],
+    "aliases": [
+      "GIJN AI content guide",
+      "detecting AI-generated content"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "Reverse Image Searching",
+      "deepfake",
+      "verification"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/gijn-org-4.md"
   },
   {
@@ -335609,36 +335622,56 @@
   },
   {
     "id": "instagram-deep-photo-search-engine",
-    "name": "Instagram Deep Photo Search Engine",
-    "description": "OSINT tool: Instagram Deep Photo Search Engine.",
+    "name": "Instagram Deep Photo Search (Google CSE)",
+    "description": "Use when you have a `username`/`name`/keyword and want to search Instagram content via Google — a prebuilt Custom Search Engine that returns Instagram `social-profile`/post/`image` links.",
     "url": "https://cse.google.com/cse?cx=017261104271573007538:ffk_jpt64gy",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Instagram profiles/posts through a Google Custom Search Engine scoped to Instagram content.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account. It rides Google's index, so no direct Instagram API cost.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The CSE runs against Google's index, not Instagram, so it is passive toward the target. Clicking through to instagram.com is the active step — do it logged out / sock-puppet, since Meta can associate views with a signed-in account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built Google Custom Search Engine; coverage depends entirely on its (fixed) configuration and on what Google has indexed of Instagram, both of which drift — expect degradation over time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "google-com-86"
+    ],
+    "aliases": [
+      "Instagram CSE",
+      "Instagram photo search"
+    ],
+    "tags": [
+      "instagram",
+      "google-cse",
+      "image-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-deep-photo-search-engine.md"
   },
   {
