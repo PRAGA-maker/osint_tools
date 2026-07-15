@@ -103541,45 +103541,54 @@
   {
     "id": "emailsherlock-caution-alerts-email-account-holder",
     "name": "EmailSherlock (Caution – Alerts email account holder)",
-    "description": "Tool that identifies if an email address is valid and/or operational",
-    "url": "http://www.emailsherlock.com",
+    "description": "Use when you have an `email` and want a fast reverse lookup for the owner's name, linked social profiles and the address's reputation — returns `name`, `social-profile` and deliverability/blacklist signals.",
+    "url": "https://www.emailsherlock.com/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "",
+    "bestFor": "Free reverse-email lookup that pairs owner discovery (name + social profiles) with technical reputation signals (SPF/DKIM/DMARC, blacklists).",
     "selectorsIn": [
       "email"
     ],
     "selectorsOut": [
-      "email",
+      "name",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free unlimited single lookups with no signup; a Premium tier checks 30+ social networks (vs ~8 free), plus batch (up to 100) and API access behind payment/registration.",
+    "opsec": "active",
+    "opsecNote": "Treat as ACTIVE. The tool performs live validation against the address's mail host, and per the Toddington caution it can generate a probe that risks alerting the account holder. Never run it against a target's primary address without accepting that risk; query from a sock-puppet context and prefer passive checks first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Run by a commercial data-lookup operator (the \"Sherlock\" family, e.g. PeopleSherlock); results aggregate public records and prior lookups and are not independently verified — treat every hit as a lead.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "invitationOnly": false,
+    "relatedTools": [
+      "epieos",
+      "holehe"
+    ],
+    "aliases": [
+      "EmailSherlock",
+      "emailsherlock.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "email-addresses"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/email/emailsherlock-caution-alerts-email-account-holder.md"
   },
@@ -232667,47 +232676,55 @@
   },
   {
     "id": "college-police-uk",
-    "name": "college.police.uk",
-    "description": "OSINT tool: college.police.uk.",
-    "url": "http://www.college.police.uk/What-we-do/Ethics/integrity-and-transparency/Barred-List/Pages/Search.aspx",
+    "name": "college.police.uk (Police Barred List)",
+    "description": "Use when you have a `name` and want to check whether a UK police officer/special was dismissed for misconduct — returns the barred person's `name`, former force (`employer-org`) and dismissal details.",
+    "url": "https://www.college.police.uk/ethics/barred-list/search-the-barred-list",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking the public Police Barred List to see if a named individual was dismissed from UK policing for gross misconduct.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search operated by the College of Policing; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public register does not notify the individual. Only the College of Policing site sees the query; use a sock puppet only if the wider investigation is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the College of Policing, the professional body for UK policing — the authoritative first-party source for the statutory Police Barred List.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "mpts-uk-org-2"
+    ],
+    "aliases": [
+      "Police Barred List",
+      "College of Policing Barred List"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/college-police-uk.md"
   },
   {
@@ -255948,46 +255965,55 @@
   {
     "id": "mpts-uk-org-2",
     "name": "mpts-uk.org",
-    "description": "OSINT tool: mpts-uk.org.",
-    "url": "https://www.mpts-uk.org/hearings-and-decisions/interim-orders-tribunals",
+    "description": "Use when you have a doctor's `name` (or GMC number) and want to check for UK fitness-to-practise tribunal hearings/decisions against them — returns `name`, GMC `document-id`, `employer-org` and published misconduct outcomes.",
+    "url": "https://www.mpts-uk.org/hearings-and-decisions",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a UK doctor has been before a Medical Practitioners Tribunal and reading the published decision.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
+      "name",
       "employer-org",
-      "name"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register of hearings and decisions; no account needed. Operated by the MPTS (part of the GMC).",
+    "opsec": "passive",
+    "opsecNote": "You read a public tribunal register; the doctor is not notified. Only the MPTS site sees your visit. No sock puppet needed for casual lookups, though use one if the investigation is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Medical Practitioners Tribunal Service, the statutory adjudication body for UK doctors — an authoritative first-party register, not a third-party aggregator.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "gmc-register"
+    ],
+    "aliases": [
+      "MPTS",
+      "Medical Practitioners Tribunal Service"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/mpts-uk-org-2.md"
   },
   {
@@ -258290,45 +258316,58 @@
   },
   {
     "id": "new-york-state",
-    "name": "New York State",
-    "description": "OSINT tool: New York State.",
-    "url": "http://nysdoccslookup.doccs.ny.gov",
+    "name": "New York State DOCCS Incarcerated Lookup",
+    "description": "Use when you have a `name` or DIN and think the subject may be in New York State prison — returns custody status, facility `address`, `dob` (year), sentence and admission dates.",
+    "url": "https://nysdoccslookup.doccs.ny.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating and confirming the custody status of anyone incarcerated in a New York State prison since the early 1970s.",
     "selectorsIn": [
-      "name"
+      "name",
+      "document-id"
     ],
     "selectorsOut": [
       "name",
       "dob",
+      "address",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official state lookup; no account or payment. Available 24/7 except a ~15-minute nightly maintenance window around 11:45pm ET.",
+    "opsec": "passive",
+    "opsecNote": "Querying a public state corrections database does not notify the incarcerated person. NYS logs the request server-side; use a sock-puppet browser/IP if you need to keep the inquiry unattributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the New York State Department of Corrections and Community Supervision — the authoritative first-party source for NYS state-prison custody data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "bop-inmate-locator"
+    ],
+    "aliases": [
+      "NYS DOCCS Inmate Lookup",
+      "New York State Incarcerated Lookup",
+      "nysdoccslookup"
+    ],
     "tags": [
       "court",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/new-york-state.md"
   },
   {
@@ -278551,45 +278590,54 @@
   },
   {
     "id": "xhibit",
-    "name": "Xhibit",
-    "description": "OSINT tool: Xhibit.",
-    "url": "http://xhibit.justice.gov.uk/court_lists.htm",
+    "name": "XHIBIT (Crown Court Lists)",
+    "description": "Use when you have a `name` and want to see if they are listed in today's England & Wales Crown Court hearings — returns the defendant `name`, court/room and live hearing status for that day.",
+    "url": "https://xhibit.justice.gov.uk/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a named person is a defendant in a Crown Court hearing today, and tracking that case's live status.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public HMCTS service; no account. Shows current-day listings only — it is a live status board, not a searchable archive of past cases.",
+    "opsec": "passive",
+    "opsecNote": "You read a public court list; nothing is sent to the subject. HMCTS sees your visit only. No sock puppet needed for a routine check.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by HM Courts & Tribunals Service (justice.gov.uk) — an authoritative first-party publication of official Crown Court listings.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "courtserve"
+    ],
+    "aliases": [
+      "XHIBIT",
+      "Xhibit Crown Court Lists"
+    ],
     "tags": [
       "court",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/xhibit.md"
   },
   {
@@ -324304,7 +324352,7 @@
   {
     "id": "dmi-tcat",
     "name": "DMI-TCAT",
-    "description": "Large-scale Twitter collection and analysis",
+    "description": "Use when you have a Twitter/X `username`, keyword or hashtag and want to capture and analyse a large tweet dataset over time — returns a stored, queryable corpus of tweets, `social-profile` and `associate` interaction graphs.",
     "url": "https://github.com/digitalmethodsinitiative/dmi-tcat",
     "category": "social-networks",
     "path": [
@@ -324312,36 +324360,51 @@
       "twitter",
       "analytics"
     ],
-    "bestFor": "Large-scale Twitter collection and analysis",
-    "input": "API credentials plus search terms, handles, or tracking filters",
-    "output": "Stored tweet datasets, exports, and analysis-ready records",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Self-hosted longitudinal capture and analysis of tweets by handle, keyword, or hashtag into a queryable database.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open source. The cost is operational — you must run a PHP/MySQL server and, critically, supply Twitter/X API credentials, which are now expensive/restricted under X's paid API tiers.",
     "opsec": "active",
-    "opsecNote": "Requires authenticated API collection and self-hosted data processing.",
+    "opsecNote": "Collection runs through an authenticated Twitter/X API app tied to a developer account, so your capture is attributable to that account. It does not notify the targets you track, but X sees the app's activity — use a dedicated project account, never your personal one.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "account-login",
+      "api-key"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained (until archival in Jan 2025) by the University of Amsterdam's Digital Methods Initiative — a reputable academic group; the code is open and widely used in research, though the repo is now read-only.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "twitter-x-advanced-search"
+    ],
+    "aliases": [
+      "DMI-TCAT",
+      "Twitter Capture and Analysis Toolset"
+    ],
+    "tags": [
+      "twitter",
+      "analytics",
+      "academic"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/dmi-tcat.md"
   },
   {
@@ -343027,13 +343090,13 @@
   {
     "id": "parler-com",
     "name": "parler.com",
-    "description": "OSINT tool: parler.com.",
+    "description": "Use when you have a `username`/`name` and suspect the subject is active on the right-leaning social platform Parler — returns their `social-profile`, posts and stated `name`.",
     "url": "https://parler.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and reading a subject's profile and posts on Parler, an alt-tech / right-leaning social network.",
     "selectorsIn": [
       "username",
       "name"
@@ -343042,29 +343105,40 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to sign up and browse. Relaunched after its 2023 shutdown; some content/profile viewing may require an account.",
+    "opsec": "active",
+    "opsecNote": "Parler restricts anonymous browsing, so you likely need to register and log in to view profiles — do this only from a sock-puppet account (burner email/number), never your own. Following or interacting leaks your interest to the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Parler is a real, operating platform (relaunched under new ownership), but it is a partisan alt-tech network with a turbulent history — profiles are user-generated and unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "gab-com"
+    ],
+    "aliases": [
+      "Parler"
+    ],
     "tags": [
       "rightwingsocialmediasites",
       "Right Wing Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/parler-com.md"
   },
   {
