@@ -158779,45 +158779,53 @@
   },
   {
     "id": "ssstik-link",
-    "name": "ssstik.link",
-    "description": "OSINT tool: ssstik.link.",
+    "name": "ssstik.link (TikTok profile picture downloader)",
+    "description": "Use when you have a TikTok `username`/`social-profile` and want the full-resolution profile picture — returns the original-size avatar image to feed reverse-image/face search.",
     "url": "https://ssstik.link/en/download-tiktok-profile-picture",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a TikTok user's full-size, high-resolution profile picture (avatars are thumbnailed in-app) for reverse-image and face search.",
     "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
       "image",
       "face"
     ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account; but this class of downloader rotates domains frequently — if ssstik.link is unreachable, equivalent tools (ssstt.io, ttsave.app, sssstik.com) perform the identical function.",
+    "opsec": "passive",
+    "opsecNote": "You submit a public TikTok link/username to a third-party downloader; it pulls the image from TikTok's CDN and does not notify the target. Your query is visible to the tool operator — use a clean session, and prefer pulling the avatar URL yourself where possible.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous third-party downloader from the volatile \"sss-tik\" family; it returns genuine TikTok CDN images, but domains appear and vanish and some mirrors are ad/malware-laden — verify the file, avoid extra downloads/prompts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ssstik",
+      "ssstt.io",
+      "TikTok profile picture downloader"
+    ],
     "tags": [
       "profileimages",
-      "Profile Images"
+      "Profile Images",
+      "tiktok"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ssstik-link.md"
   },
   {
@@ -172849,38 +172857,53 @@
   },
   {
     "id": "getchatlist",
-    "name": "getChatList",
-    "description": "OSINT tool: getChatList.",
+    "name": "getChatList (GetChatListBot)",
+    "description": "Use when you have a Telegram `username` or user ID and want to map which groups/channels that account belongs to — returns the list of Telegram communities the account is in, exposing associates and interests.",
     "url": "https://telegram.me/getchatlistbot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering which Telegram groups/channels a given username or user ID is a member of, to map a subject's communities and associates.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot; you only need a Telegram account to message it.",
+    "opsec": "active",
+    "opsecNote": "You send the subject's username/ID to a third-party bot backed by an unofficial scraped index; the operator can log your queries and your Telegram account. Query from a sock-puppet Telegram account, not one linked to you. This does not notify the target, but you are trusting an opaque operator with the identifiers you search.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known Telegram OSINT bot with a large scraped catalogue (hundreds of thousands of channels, tens of millions of users); coverage is partial and historical, so absence of a group is not proof of non-membership.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "GetChatListBot",
+      "getchatlistbot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "group-membership"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/getchatlist.md"
   },
   {
@@ -212354,36 +212377,53 @@
   },
   {
     "id": "osint-search-engine",
-    "name": "OSINT Search Engine",
-    "description": "OSINT tool: OSINT Search Engine.",
+    "name": "OSINT Search Engine (Google CSE)",
+    "description": "Use when you have a `name`, `username` or `email` and want to search a curated set of people/OSINT sites at once — a prebuilt Google Custom Search Engine returning web hits scoped to sources the author configured.",
     "url": "https://cse.google.com/cse/publicurl?cx=006290531980334157382:qcaf4enph7i",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "One-box searching across a curated bundle of people-search / OSINT sites via a prebuilt Google Custom Search Engine.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use in the browser (it's a public Google CSE); no account needed. Its usefulness depends entirely on the site list its author configured, which you cannot see or edit.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This runs as a normal Google search over a restricted site list; you query Google, not the subject, and no notification is sent. Search terms go to Google and the CSE owner's config — use a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Custom Search Engine; results are real Google results, but the value and coverage depend on an opaque, author-controlled site list that can go stale or be abandoned.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Google CSE OSINT",
+      "custom search engine people search"
+    ],
+    "tags": [
+      "people-search",
+      "custom-search-engine",
+      "technique"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/people-search/osint-search-engine.md"
   },
   {
@@ -244408,47 +244448,55 @@
   },
   {
     "id": "gla-gov-uk",
-    "name": "gla.gov.uk",
-    "description": "OSINT tool: gla.gov.uk.",
+    "name": "GLAA Public Register (gla.gov.uk)",
+    "description": "Use when you have a UK labour provider/gangmaster `name`, business or `address` and want to confirm their licence — returns the licensed business, its address, authorised sectors and licence status.",
     "url": "https://glass.gla.gov.uk/public/s/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a UK labour provider (gangmaster) is licensed and pulling the licensed business's details and authorised sectors.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official public register run by the GLAA; no account or payment needed for basic register checks.",
+    "opsec": "passive",
+    "opsecNote": "Official government register lookup; you query the register, not any individual, and no notification is sent. No login required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Gangmasters and Labour Abuse Authority (GLAA), a UK government body; the register is the authoritative record of who holds a gangmaster's licence.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GLAA Public Register",
+      "Gangmasters and Labour Abuse Authority",
+      "glass.gla.gov.uk"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "licensing-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gla-gov-uk.md"
   },
   {
@@ -335680,45 +335728,55 @@
   },
   {
     "id": "inleo-io",
-    "name": "inleo.io",
-    "description": "OSINT tool: inleo.io.",
+    "name": "InLeo (inleo.io)",
+    "description": "Use when you have a `username` or `name` and want to find and read someone's posts on the Hive-blockchain social network InLeo — returns their profile and on-chain, undeletable post history.",
     "url": "https://inleo.io/threads/v2",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's InLeo/Hive profile and mining their on-chain (permanent, uncensorable) microblog and long-form posts.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "crypto-wallet"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and read; an account (a Hive keychain/wallet) is only needed to post or earn tokens.",
+    "opsec": "passive",
+    "opsecNote": "Reading public posts is passive and does not notify the author. Because content lives on the Hive blockchain it is public and permanent — you can read it without an account, and even \"deleted\" posts often remain retrievable on-chain.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "InLeo is a real, active Hive-based social platform; content is user-generated and self-asserted, but the blockchain backing means posts are timestamped and hard to alter or erase.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "InLeo",
+      "LeoFinance",
+      "inleo.io"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "hive-blockchain",
+      "web3-social"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inleo-io.md"
   },
   {
@@ -363002,44 +363060,54 @@
   },
   {
     "id": "www-linkedin-com-pub-dir-people-search",
-    "name": "www.linkedin.com/pub/dir/People/Search",
-    "description": "OSINT tool: www.linkedin.com/pub/dir/People/Search.",
+    "name": "LinkedIn Public Directory People Search",
+    "description": "Use when you have a `name` (optionally + employer) and want to find a subject's LinkedIn profile — returns their profile, current/past employer and professional history; now requires a logged-in account.",
     "url": "http://www.linkedin.com/pub/dir/people/search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's LinkedIn profile by name (and disambiguating by employer) to pull employment and professional history.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "social-profile",
-      "employer-org"
+      "employer-org",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Free with a LinkedIn account; the old unauthenticated /pub/dir public directory has been largely locked down, so you now need to be logged in (a free account works; Sales Navigator is not required).",
+    "opsec": "active",
+    "opsecNote": "LinkedIn logs profile views and, by default, tells a member when you view their profile. Use a dedicated sock-puppet account set to Private/anonymous browsing mode, never your real account, and be aware LinkedIn actively rate-limits and blocks scraping.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "First-party LinkedIn data (authoritative for self-reported employment), but profiles are self-asserted and LinkedIn increasingly gates and obfuscates search for non-logged-in and non-premium users.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "LinkedIn people directory",
+      "linkedin.com/pub/dir"
+    ],
     "tags": [
-      "linkedin"
+      "linkedin",
+      "LinkedIn & Similar Sites"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/www-linkedin-com-pub-dir-people-search.md"
   },
   {
