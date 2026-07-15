@@ -151691,7 +151691,7 @@
   {
     "id": "metapicz",
     "name": "Metapicz",
-    "description": "Legacy metadata checks when primary tools are unavailable",
+    "description": "Use when you have an `image` (file or URL) and want its EXIF/IPTC metadata and any embedded GPS — returns camera/device `metadata-exif` and `geolocation` when present.",
     "url": "https://metapicz.com/#landing",
     "category": "image-video-face",
     "path": [
@@ -151699,22 +151699,29 @@
       "images",
       "metadata"
     ],
-    "bestFor": "Legacy metadata checks when primary tools are unavailable",
-    "input": "Image files",
-    "output": "Formatted EXIF metadata when service is functioning",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reading EXIF/IPTC metadata and GPS coordinates out of a photo, as a fallback when primary EXIF tools are down.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation",
+      "device-id"
+    ],
     "status": "degraded",
     "pricing": "free",
+    "costNote": "Free web tool; no account. Reliability is inconsistent (the service intermittently returns 5xx / fails to process).",
     "opsec": "passive",
-    "opsecNote": "Reliability appears inconsistent; verify findings with maintained alternatives.",
+    "opsecNote": "Uploading an image to a third-party web tool means that image leaves your machine and sits on their server. For sensitive source images prefer a local extractor (exiftool); use Metapicz only for non-sensitive images or when you accept that exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small third-party EXIF viewer of uncertain maintenance; it merely surfaces the file's own metadata, but availability is unreliable — corroborate with a maintained tool.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -151722,11 +151729,17 @@
     "invitationOnly": false,
     "deprecated": true,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "metapicz.com"
+    ],
+    "tags": [
+      "exif",
+      "image-metadata",
+      "geolocation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/metadata/metapicz.md"
   },
   {
@@ -155452,8 +155465,8 @@
   },
   {
     "id": "print-youtube-storyboard-instructions",
-    "name": "Print YouTube StoryBoard Instructions",
-    "description": "OSINT tool: Print YouTube StoryBoard Instructions.",
+    "name": "Print YouTube Storyboard (labnol bookmarklet)",
+    "description": "Use when you have a YouTube video and want a single contact-sheet of its frames without downloading the whole video — returns a poster of storyboard thumbnail `image` frames to scan for faces/places.",
     "url": "https://www.labnol.org/internet/print-youtube-video/28217",
     "category": "image-video-face",
     "path": [
@@ -155461,34 +155474,48 @@
       "videos",
       "analyze-record"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
+    "bestFor": "Extracting a YouTube video's storyboard thumbnail strip into one printable contact-sheet for fast visual review.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image",
+      "face",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free bookmarklet described in a free how-to article; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The storyboard frames are the low-res preview tiles YouTube already serves to every viewer; assembling them is passive and does not notify the uploader. You are still requesting the video's assets from YouTube/Google — use a clean session if the video is sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "labnol.org (Digital Inspiration / Amit Agarwal) is a long-running, reputable how-to site; the technique relies on YouTube's own storyboard files, so it works as long as YouTube keeps serving them.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "YouTube storyboard",
+      "print youtube video",
+      "video contact sheet"
+    ],
+    "tags": [
+      "youtube",
+      "video-analysis",
+      "thumbnails"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/videos/analyze-record/print-youtube-storyboard-instructions.md"
   },
   {
@@ -162449,7 +162476,7 @@
   {
     "id": "yahoo-video-search",
     "name": "Yahoo Video Search",
-    "description": "OSINT tool: Yahoo Video Search.",
+    "description": "Use when you have a `name`/phrase and want a non-Google video index to find clips featuring a subject or place — returns video results (with `image` thumbnails) that may show a `face` or `geolocation`.",
     "url": "https://video.search.yahoo.com/",
     "category": "image-video-face",
     "path": [
@@ -162457,34 +162484,48 @@
       "videos",
       "search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A second video search engine to surface clips (across hosts) that Google/YouTube search may rank differently or omit.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "image",
+      "face",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account. Aggregates video results (largely via the Bing index) across YouTube, Dailymotion, Vimeo and other hosts.",
+    "opsec": "passive",
+    "opsecNote": "Passive search against Yahoo/Bing — the subject is not notified. Clicking through to a host (YouTube etc.) is where you may be observed; do so logged out / sock-puppet. Sensitive queries from a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Yahoo; legitimate aggregated video results (Bing-powered), distinct in ranking from Google/YouTube search.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "yahoo-com",
+      "print-youtube-storyboard-instructions"
+    ],
+    "aliases": [
+      "video.search.yahoo.com"
+    ],
+    "tags": [
+      "video-search",
+      "Video Related Sites"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/videos/search/yahoo-video-search.md"
   },
   {
@@ -172905,44 +172946,54 @@
   },
   {
     "id": "groupda-com",
-    "name": "groupda.com",
-    "description": "OSINT tool: groupda.com.",
+    "name": "GroupDA",
+    "description": "Use when you have a topic/place/keyword and want to find public WhatsApp & Telegram groups a subject might be in — returns group invite links (`social-profile`/community) filterable by category, country and language.",
     "url": "https://groupda.com/add/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering public WhatsApp/Telegram group invite links by category, country, language or keyword.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "username",
+      "geolocation"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search the directory; no account needed to view listings.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive. Actually JOINING a group via an invite link is active and exposes your account/number to that group — never join with a personal WhatsApp/Telegram account; use a dedicated sock-puppet number/handle, and remember members can see who joined.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A community-submitted, user-generated group directory; listings are unvetted, may be stale, spammy, or bait. Verify a group is real before acting on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "groupda.com",
+      "Group DA"
+    ],
     "tags": [
       "whatsapp",
-      "WhatsApp"
+      "WhatsApp",
+      "telegram",
+      "group-directory"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/groupda-com.md"
   },
   {
@@ -204514,44 +204565,51 @@
   },
   {
     "id": "behindthenames",
-    "name": "BehindTheNames",
-    "description": "when conducting an in-depth search for information about a person, it is important to check the different pronunciations of their name and diminutives. This service will help you find them",
+    "name": "Behind the Name",
+    "description": "Use when you have a `name` and want its variants, diminutives, foreign-language forms and etymology to widen a search — returns alternate `name` spellings/nicknames to feed other tools.",
     "url": "https://www.behindthename.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Expanding a person's name into nicknames, diminutives, and cross-language variants before searching.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "email",
-      "name",
-      "phone"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse names, meanings, related forms and popularity. Optional free registration; no payment needed for the name data an investigator uses.",
+    "opsec": "passive",
+    "opsecNote": "Fully passive — you are looking up a name in a reference dictionary, not touching the subject or any of their accounts. Nothing is disclosed to anyone. No sock-puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, well-regarded onomastics reference (given names + a companion surnames site). Authoritative for name etymology/variants; it holds no personal data about individuals.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "behindthename.com",
+      "Behind the Surname"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "name-variants",
+      "Universal Contact Search and Leaks Search",
+      "onomastics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/people-search/behindthenames.md"
   },
@@ -280603,13 +280661,13 @@
   {
     "id": "all-io-net",
     "name": "all-io.net",
-    "description": "OSINT tool: all-io.net.",
+    "description": "Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your search on Google, Bing, DuckDuckGo, Twitter, YouTube and more.",
     "url": "https://all-io.net/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A multi-engine search launcher / new-tab page that sends one query to many search services.",
     "selectorsIn": [
       "name"
     ],
@@ -280617,29 +280675,40 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account. Optional browser extension / customizable new-tab page.",
+    "opsec": "passive",
+    "opsecNote": "all-io.net itself is a launcher — it just hands your query to each destination engine, so those engines (Google, Bing, Twitter, etc.) see the search, not a central data broker. Still, run sensitive queries from a sock-puppet browser, and be aware a browser-extension version could see your queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small independent metasearch/new-tab aggregator; it holds no index of its own and simply routes queries, so trust rests on the destination engines, not on all-io.net.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "yahoo-com",
+      "searchenginejournal-com"
+    ],
+    "aliases": [
+      "all-io.net"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "metasearch"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/all-io-net.md"
   },
   {
@@ -318244,14 +318313,14 @@
   },
   {
     "id": "yahoo-com",
-    "name": "yahoo.com",
-    "description": "OSINT tool: yahoo.com.",
+    "name": "Yahoo Search",
+    "description": "Use when you have a `name`/handle/phrase and want a second general search engine whose index and ranking differ from Google — returns web results, `social-profile` and `name` mentions Google may bury.",
     "url": "https://search.yahoo.com/web?",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A non-Google general web search for cross-checking and surfacing differently-ranked results.",
     "selectorsIn": [
       "name"
     ],
@@ -318259,29 +318328,39 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account required. (Yahoo Search is powered by Bing's index with Yahoo's own ranking/presentation.)",
+    "opsec": "passive",
+    "opsecNote": "Passive web search — the subject is not notified. Your queries go to Yahoo/Bing; use a sock-puppet browser/IP for sensitive investigations and avoid being signed into a Yahoo/Microsoft account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Yahoo (a major search provider); results are legitimate index results, though it surfaces Bing's index rather than a wholly independent one.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "searchenginejournal-com"
+    ],
+    "aliases": [
+      "yahoo.com",
+      "search.yahoo.com"
+    ],
     "tags": [
       "searchengines",
       "Search Engines"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yahoo-com.md"
   },
   {
@@ -342729,37 +342808,66 @@
   {
     "id": "osintnova",
     "name": "OSINTNova",
-    "description": "OSINT tool: OSINTNova.",
+    "description": "Use when you have almost any selector (`username`, `email`, `phone`, `ip-address`, `domain`, `vehicle-plate`, `crypto-wallet`, `image`) and want a one-stop platform that runs 50+ lookups — returns social-profile, breach, infra and metadata results.",
     "url": "https://app.osintnova.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "A single web console that fans one selector out across many OSINT modules (social, people, infra, crypto, vehicle, image).",
+    "selectorsIn": [
+      "username",
+      "email",
+      "phone",
+      "ip-address",
+      "domain",
+      "vehicle-plate",
+      "vin",
+      "crypto-wallet",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "email",
+      "phone",
+      "geolocation",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free signup (Google or Discord login) unlocks the majority of commands; some tools are gated behind a PRO tier. No cost for the bulk of lookups after registering.",
+    "opsec": "active",
+    "opsecNote": "This is a third-party aggregator — every selector you enter is sent to their servers and to the downstream services each module queries, and you must log in (tying your searches to a Google/Discord identity). Register with a dedicated sock-puppet account, never a personal one. Some modules (e.g. account-existence, phone) actively touch target platforms.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community OSINT aggregator; it wraps many third-party sources of varying quality, so results are only as good as the underlying module. Corroborate hits at the original source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "osintnova",
+      "app.osintnova.com"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "real-time-search-social-media-search-and-general-social-media-tools",
+      "aggregator",
+      "osint-platform"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osintnova.md"
   },
   {
