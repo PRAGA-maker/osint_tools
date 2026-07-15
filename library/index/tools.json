@@ -160373,44 +160373,53 @@
   {
     "id": "ttsave-app",
     "name": "ttsave.app",
-    "description": "OSINT tool: ttsave.app.",
+    "description": "Use when you have a TikTok post/profile URL and want to download the video, audio, slideshow, thumbnail or profile photo watermark-free — returns image/face media for analysis.",
     "url": "https://ttsave.app/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a target's TikTok media — including the profile photo and video thumbnails — for offline archiving and face/frame analysis.",
     "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
       "image",
       "face"
     ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no login, ad-supported. Handles public TikTok content via a pasted URL; the most complete grabber (video, MP3, stories, slides, profile photo, thumbnail).",
+    "opsec": "passive",
+    "opsecNote": "You submit a public TikTok URL, not your own identity; TikTok isn't told who downloaded and the creator gets no notification. ttsave logs submitted URLs, so use a clean session. Downloading avoids any follow/like that would tip off the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent third-party TikTok downloader of unknown ownership; the media it returns is genuine TikTok content, but treat the site as a convenience layer and hash/verify downloaded evidence.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "snaptik-app"
+    ],
+    "aliases": [
+      "ttsave"
+    ],
     "tags": [
       "profileimages",
-      "Profile Images"
+      "Profile Images",
+      "tiktok"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ttsave-app.md"
   },
   {
@@ -246480,46 +246489,60 @@
   {
     "id": "greece",
     "name": "Greece",
-    "description": "OSINT tool: Greece.",
+    "description": "Use when you have a Greek company `name`/`employer-org` and want its beneficial owners (UBO) — returns the natural persons behind the entity, though public access is now gated.",
     "url": "https://www.gsis.gr/en/citizens-businesses/businesses/real-beneficiaries-register",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying the natural-person beneficial owners behind a Greek legal entity via the government UBO register.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "address"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Official Greek government register, free where accessible. Since a Nov 2022 notice (following the EU CJEU ruling on UBO registers) full public access was suspended — access is now restricted to authorised users / those with a demonstrable legitimate interest, typically via TaxisNet credentials.",
+    "opsec": "passive",
+    "opsecNote": "Passive against the target — you query a government register, not the person or their company's own systems, and no notification is sent to the subject. However, access itself is authenticated/gated, so using it ties the lookup to whatever official credentials you authenticate with — do not use personal credentials for covert work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Greek government beneficial-ownership register (GSIS/AADE), the authoritative source for Greek UBO data; limitation is access restriction, not data quality.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "gr"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "bloomberg-com"
+    ],
+    "aliases": [
+      "Greek Central Register of Real Beneficiaries",
+      "Κεντρικό Μητρώο Πραγματικών Δικαιούχων",
+      "UBO register Greece"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/greece.md"
   },
   {
@@ -334936,44 +334959,54 @@
   {
     "id": "inflact-com-3",
     "name": "inflact.com",
-    "description": "OSINT tool: inflact.com.",
+    "description": "Use when you have an Instagram `username` and want to anonymously view/download that public account's stories in HD — returns story image/video content without a login.",
     "url": "https://inflact.com/downloader/instagram/stories/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously downloading a public Instagram account's active stories in HD before they expire.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier caps you at ~2 story downloads per day; unlimited downloads and extra tools require a paid Inflact plan. The anonymous story-view/download itself needs no Instagram login.",
+    "opsec": "passive",
+    "opsecNote": "You never log in and Inflact fetches the stories server-side, so Instagram sees Inflact, not you, and the target gets no \"seen\" notification on their story. Inflact logs the usernames you look up; use a clean/sock-puppet session. Stop at viewing/downloading — don't use its paid \"growth\"/automation features against a target.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Inflact is a commercial Instagram-marketing vendor; its free downloader works on public content but is a third-party mirror — corroborate anything important against Instagram directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "dumpor-io"
+    ],
+    "aliases": [
+      "Inflact story downloader"
+    ],
     "tags": [
       "instagram",
       "Instagram Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inflact-com-3.md"
   },
   {
@@ -335990,29 +336023,32 @@
   {
     "id": "instagram-hashtag-search",
     "name": "Instagram Hashtag Search",
-    "description": "Search Instagram hashtags without logging in",
+    "description": "Use when you have an event/location/interest `name` and want public Instagram posts under that hashtag — the native explore/tags URL returns social-profile posts and the accounts behind them.",
     "url": "https://www.instagram.com/explore/tags/hashtag/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding public Instagram posts (and their authors) tied to an event, place or interest hashtag via Instagram's own explore URL.",
     "selectorsIn": [
-      "name",
-      "username"
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and native to Instagram. Instagram increasingly forces a login to view hashtag/explore results — a logged-out view may be truncated or blocked, so plan for a sock-puppet account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Browsing a hashtag notifies no one. But Instagram frequently gates hashtag/explore behind a login — if you sign in, use a sock-puppet account, never your real identity, since your viewing is then attributable to that account. Don't like/comment; just observe.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is Instagram's own first-party hashtag/explore endpoint, so the posts returned are authentic; the only caveat is Instagram's login-gating of results.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -336021,14 +336057,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "dumpor-io"
+    ],
+    "aliases": [
+      "Instagram explore tags",
+      "IG hashtag search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "instagram"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-hashtag-search.md"
   },
@@ -337049,37 +337092,56 @@
   {
     "id": "insto",
     "name": "insto",
-    "description": "OSINT tool: insto.",
+    "description": "Use when you have an Instagram `username` and want a scripted, no-login dossier — posts, followers, geo-fingerprint and network intersections — returns social-profile, associate, geolocation and image data.",
     "url": "https://github.com/subzeroid/insto",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "Command-line Instagram OSINT — building a full profile dossier, follower/network analysis and posting-pattern/geo fingerprint without logging into Instagram.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The tool itself is free/open-source (Python). Its default HikerAPI backend is a paid third-party Instagram API (needs an API key/credits); the alternate aiograpi backend can run against Instagram directly but then needs session credentials. So real cost/gating comes from the backend you choose.",
+    "opsec": "passive",
+    "opsecNote": "With the default HikerAPI backend you never touch Instagram with your own IP/account — queries go through HikerAPI, so it is effectively passive and the target isn't notified. If you switch to the aiograpi backend you use real IG session credentials — that becomes attributable and risks the account; only do so from a sock-puppet. Snapshots are stored locally in SQLite.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source CLI (subzeroid/insto on GitHub); code is auditable. Data quality depends on the chosen backend (HikerAPI vs direct), and third-party IG APIs can break when Instagram changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "dumpor-io",
+      "otzberg-net-find-your-instagram-user-id"
+    ],
+    "aliases": [
+      "subzeroid/insto"
+    ],
     "tags": [
       "instagram"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/insto.md"
   },
   {
@@ -342180,44 +342242,55 @@
   {
     "id": "onli-vk-ru",
     "name": "onli-vk.ru",
-    "description": "OSINT tool: onli-vk.ru.",
+    "description": "Use when you have a VKontakte profile ID/name and want hidden friends, friend-list changes and derived profile data — returns associate links, social-profile insights and DOB/age.",
     "url": "https://onli-vk.ru/pivatfriends.php?id=12345",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Revealing a VK user's hidden friends and tracking friend-list changes to map their real social network.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
+      "associate",
       "social-profile",
-      "name"
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free third-party VK analysis tool (redirects to onli-vk.com); no account needed to run a lookup. Some deeper tracking features may prompt for registration.",
+    "opsec": "passive",
+    "opsecNote": "You submit only a public VK ID to a third-party site; the VK user is not notified. This is NOT an official VKontakte site — it derives \"hidden friends\" by cross-referencing public connection data, so treat its inferences as leads. onli-vk logs the IDs you query; use a clean session and don't log into your own VK there.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent Russian-language VK OSINT site of unknown ownership; the \"hidden friends\" output is inferred, not authoritative, so corroborate any key connection against VK directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ru",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "onli-vk.com",
+      "VK hidden friends"
+    ],
     "tags": [
       "russiansocialmedia",
-      "Russian Social Media Sites"
+      "Russian Social Media Sites",
+      "vk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/onli-vk-ru.md"
   },
   {
@@ -350143,44 +350216,52 @@
   {
     "id": "snaptik-app",
     "name": "snaptik.app",
-    "description": "OSINT tool: snaptik.app.",
+    "description": "Use when you have a TikTok video/post URL from a target and want to download it watermark-free for evidence/analysis — returns the MP4/image, preserving the social-profile content.",
     "url": "https://snaptik.app/en1",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a target's TikTok videos and slideshows without watermark, for offline archiving and frame analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account, ad-supported. Works on public TikTok content; you supply the video/post link, not a username.",
+    "opsec": "passive",
+    "opsecNote": "You give SnapTik a public TikTok URL, not your identity — TikTok is not told who downloaded, and the creator gets no notification. SnapTik logs the URLs you submit; use a clean session. Grabbing content this way avoids liking/following (which would alert the target), so it's OpSec-safer than viewing while logged in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Independent third-party TikTok downloader (explicitly unaffiliated with TikTok/ByteDance); reliable for grabbing public media but of unknown ownership — treat downloaded files as evidence to hash/verify, not the site as authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "ttsave-app"
+    ],
+    "aliases": [
+      "SnapTik"
+    ],
     "tags": [
       "tiktok",
       "TikTok Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snaptik-app.md"
   },
   {
