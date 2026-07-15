@@ -145986,45 +145986,55 @@
   },
   {
     "id": "get-youtube-thumbnail-com",
-    "name": "get-youtube-thumbnail.com",
-    "description": "OSINT tool: get-youtube-thumbnail.com.",
+    "name": "Get YouTube Thumbnail",
+    "description": "Use when you have a YouTube video URL (`social-profile`) and want its full-resolution thumbnail image to reverse-search or face-analyse — returns image and face.",
     "url": "http://www.get-youtube-thumbnail.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling the max-resolution thumbnail image out of any YouTube video URL so you can reverse-image or face-search it.",
     "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
       "image",
       "face"
     ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free single-purpose utility; no account. Author accepts optional tips. You could get the same file directly (`img.youtube.com/vi/<ID>/maxresdefault.jpg`) — this just does it for you.",
+    "opsec": "passive",
+    "opsecNote": "You fetch a public thumbnail served by Google's image CDN; the video owner is not notified. The subsequent reverse-image search is where the real exposure is — run that behind a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small hobbyist tool that simply exposes YouTube's public thumbnail endpoints. No data-quality risk (it returns Google's own image), but the site itself is unmaintained-looking; the manual URL trick is a safe fallback.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "google-reverse-image-search",
+      "pimeyes"
+    ],
+    "aliases": [
+      "get-youtube-thumbnail.com"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "thumbnails"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/get-youtube-thumbnail-com.md"
   },
   {
@@ -170539,42 +170549,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/messaging/botim-me.md"
-  },
-  {
-    "id": "cctv",
-    "name": "CCTV",
-    "description": "OSINT tool: CCTV.",
-    "url": "https://github.com/IvanGlinkin/CCTV",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/cctv.md"
   },
   {
     "id": "chatbottle-telegram-bots",
@@ -242361,47 +242335,59 @@
   },
   {
     "id": "funeralnet",
-    "name": "Funeralnet",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
+    "name": "FuneralNet Obituaries",
+    "description": "Use when you have a `name` and want to confirm a death and surface funeral/obituary details — date, hometown and surviving family — across US funeral-home sites; returns dob/death date, address, and associate (relatives).",
     "url": "http://www.funeralnet.com/obits.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a death and pulling obituary details (dates, hometown, next-of-kin) from funeral-home-hosted memorial pages.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "dob",
+      "address",
+      "associate",
+      "name"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to read obituaries. FuneralNet (which invented online obituaries in 1997) was acquired by Frazer Consultants in 2017; obituary content now lives on Frazer-powered funeral-home sites and the `obit.funeralnet.com` client pages, so the legacy `obits.html` search may be flaky.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public obituary is entirely passive and never touches a living subject. Note that obituaries expose relatives' names — handle that PII responsibly, especially in active missing-persons work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established death-care web provider (founded 1996, now under Frazer Consultants) serving thousands of US/CA/AU funeral homes. Obituary text is authored by funeral homes/families — authoritative for the death event, but family details are as given.",
     "missingPersonsRelevance": "high",
     "coverage": [
+      "us",
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "the-ancestor-hunt",
+      "legacy-com"
+    ],
+    "aliases": [
+      "funeralnet.com",
+      "FuneralNet obituaries"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "obituaries"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/public-records/funeralnet.md"
   },
@@ -272961,44 +272947,57 @@
   {
     "id": "the-ancestor-hunt",
     "name": "The Ancestor Hunt",
-    "description": "OSINT tool: The Ancestor Hunt.",
+    "description": "Use when you have a `name` and want to find historical/genealogical records — newspapers, obituaries, cemetery, vital and yearbook records — via a large curated free-resource directory; returns name, dob, and associate (family) leads.",
     "url": "http://www.theancestorhunt.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A curated launchpad to thousands of free genealogy/newspaper/obituary databases for reconstructing a person's history and family links.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "associate",
       "dob",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The core value — huge curated lists of links to free online newspaper, obituary, cemetery and vital-record databases, plus ~10 free tools (relationship calculator, nickname finder) — is free. Some field guides, bundles and courses ($9.95–$20) and an academy are paid.",
+    "opsec": "passive",
+    "opsecNote": "You browse a directory and follow out to third-party archives; nothing touches the subject. Normal browsing hygiene applies. The linked databases have their own logging, so use a clean session for sensitive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known, long-running (since 2008) genealogy resource by Kenneth R. Marks, widely cited in the family-history community. It's a curated pointer directory, so quality depends on the underlying archives it links to.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "familysearch",
+      "newspapers-com"
+    ],
+    "aliases": [
+      "theancestorhunt.com",
+      "Ancestor Hunt"
+    ],
     "tags": [
       "genealogy",
       "family"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/the-ancestor-hunt.md"
   },
   {
@@ -324805,45 +324804,59 @@
   },
   {
     "id": "dumpitblue-chromewebstore-google-com",
-    "name": "dumpitblue (chromewebstore.google.com)",
-    "description": "OSINT tool: dumpitblue (chromewebstore.google.com).",
+    "name": "DumpItBlue+ (Chrome extension)",
+    "description": "Use when you are logged into Facebook viewing a `social-profile`/page and want to capture everything on screen — posts, comments, friends — for offline analysis; returns social-profile, name, and associate data.",
     "url": "https://chromewebstore.google.com/detail/dumpitblue+/igmgknoioooacbcpcfgjigbaajpelbfe",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-capturing a Facebook profile/page's visible content (auto-scroll, expand, strip clutter) into a saveable dump for evidence and analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free Chrome extension (le.tools.com). Complements the separate DumpItBlue web tool for parsing the captured page. No account with the extension itself.",
+    "opsec": "active",
+    "opsecNote": "It captures whatever the LOGGED-IN Facebook account can see, so you must be signed into Facebook — do that only from a sock-puppet account on a clean browser/IP. Auto-scrolling a target's profile generates real views/requests from your account; never use a real or attributable identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Established research extension (10k+ users, v3.2.1 in 2025) by le.tools.com, listed under Facebook Account Research on uk-osint. It only reads what's on screen — no scraping of hidden data — so risk is your own OpSec, not the tool's integrity.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "facebook",
+      "graph-tips"
+    ],
+    "aliases": [
+      "DumpItBlue",
+      "dumpitblue+"
+    ],
     "tags": [
       "facebookaccountresearch",
       "Facebook Account Research"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/dumpitblue-chromewebstore-google-com.md"
   },
   {
@@ -352564,45 +352577,57 @@
   },
   {
     "id": "the-bitmoji-avatar-history-enumerator-2",
-    "name": "The Bitmoji Avatar History Enumerator",
-    "description": "OSINT tool: The Bitmoji Avatar History Enumerator.",
+    "name": "BACKMOJI (Bitmoji Avatar History Enumerator)",
+    "description": "Use when you have a Snapchat user's Bitmoji ID and want their historical avatar/outfit changes — returns image snapshots and physical-description clues over time.",
     "url": "https://webbreacher.com/2022/10/24/grabbing-old-bitmoji-outfits-with-BACKMOJI/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Enumerating a Snapchat/Bitmoji user's past avatar outfits and appearance changes by iterating Bitmoji outfit IDs.",
     "selectorsIn": [
       "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool by Micah Hoffman (WebBreacher), hosted at backmoji.myosint.training. No account. The linked blog post explains the method; the tool itself does the enumeration.",
+    "opsec": "passive",
+    "opsecNote": "It requests public Bitmoji avatar images from Snapchat's/Bitmoji's CDN by iterating outfit IDs — the target's Snapchat account is not notified and you never interact with them. Still, do the ID discovery step (viewing their Snapchat/Bitmoji) from a sock-puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built and maintained by Micah Hoffman (WebBreacher / MyOSINT Training), a highly regarded OSINT trainer, building on Griffin's Snapchat research. Reputable and technique-transparent.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "snapchat",
+      "snap-map"
+    ],
+    "aliases": [
+      "BACKMOJI",
+      "Bitmoji Avatar History Enumerator"
+    ],
     "tags": [
       "snapchat",
-      "Snapchat"
+      "Snapchat",
+      "bitmoji"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/the-bitmoji-avatar-history-enumerator-2.md"
   },
   {
@@ -358392,36 +358417,53 @@
   },
   {
     "id": "twitter-monitoring",
-    "name": "Twitter Monitoring",
-    "description": "OSINT tool: Twitter Monitoring.",
+    "name": "Twitter Monitor (OSINT Toolkit)",
+    "description": "Use when you have a Twitter/X `username` or a keyword/hashtag and want a quick browser-based search/monitor without logging in — returns social-profile and post leads.",
     "url": "https://one-plus.github.io/TwitterMonitor",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Fast, no-login lookup of an X/Twitter account or keyword from a static web page in a broader OSINT toolkit.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free static GitHub-Pages tool (part of one-plus's OSINT Toolkit). No account required. Because it depends on X/Twitter's increasingly locked-down public search, results can be thin or intermittent since the 2023+ API changes.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query from your own browser and don't log in, so nothing is tied to a Twitter account of yours; but the requests still originate from your IP — use a VPN/sock-puppet browser for sensitive targets. The subject is not notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built front-end that wraps X/Twitter search; it's convenient but only as reliable as Twitter's public search allows, which is now restricted. Treat gaps as platform limits, not proof of absence.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "twitter-advanced-search"
+    ],
+    "aliases": [
+      "TwitterMonitor",
+      "one-plus OSINT Toolkit Twitter"
+    ],
+    "tags": [
+      "twitter",
+      "monitoring"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-monitoring.md"
   },
   {
