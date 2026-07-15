@@ -155243,40 +155243,49 @@
   {
     "id": "portrait-matcher",
     "name": "Portrait Matcher",
-    "description": "Upload a picture of a face and get three paintings that show similar people.",
+    "description": "Use when you have a `face` and want to see which historical portrait paintings it resembles — returns physical-description-style lookalikes, not identities.",
     "url": "http://zeus.robots.ox.ac.uk/portraitmatcher/index?error=agree",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "A novelty face-similarity demo (Oxford VGG + Art UK) that matches an uploaded face to look-alike portrait paintings — useful for testing/teaching face-embedding behaviour, not for identification.",
     "selectorsIn": [
       "face",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free academic demo from Oxford's Visual Geometry Group; no account or payment.",
+    "opsec": "active",
+    "opsecNote": "You upload a face image to a University of Oxford server and, per the on-page consent, grant Oxford rights to retain and use it for academic purposes. Never upload a real target's or victim's face here — it leaves your control. Only use throwaway/test images.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Genuine academic project by Oxford's VGG in collaboration with Art UK; first-party and non-commercial, but purpose-built as a novelty, not an investigative tool.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Oxford Portrait Matcher",
+      "Art UK face match"
+    ],
     "tags": [
       "Image Search and Identification",
       "Reverse Image Search Engines and automation tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/portrait-matcher.md"
   },
@@ -221493,45 +221502,51 @@
   {
     "id": "osintxphone",
     "name": "osintxphone",
-    "description": "OSINT tool to verify and look up phone numbers in Mexico.",
+    "description": "Use when you have a Mexican `phone` and want its carrier, portability status and region — returns geolocation (region/carrier).",
     "url": "https://github.com/e-m3din4/osintxphone",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Mexico phone-number verification/lookup",
+    "bestFor": "Enriching a 10-digit Mexican phone number with carrier and region data via the IFT registry.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "MIT-licensed open-source script (free), but it queries the IFT (Instituto Federal de Telecomunicaciones) API — you must supply your own IFT API key in config.json, so the practical barrier is obtaining that key.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Lookups hit Mexico's telecom regulator (IFT), not the subscriber's device, so the target is not alerted — passive. The query is tied to your IFT API key/account, so use a dedicated key and run from a clean environment.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "Regional phone tool (20 stars).",
+    "trust": "community",
+    "trustNote": "Small single-author OSS tool (~20 GitHub stars, MIT). Thin community footprint; audit the short Python source before running.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "mx"
     ],
-    "auth": "none",
+    "auth": "api-key",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "OSINT-x-Phone",
+      "osint x phone"
+    ],
     "tags": [
       "phone",
       "mexico",
       "regional"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/phone/osintxphone.md"
   },
@@ -233913,35 +233928,53 @@
   {
     "id": "connvoters-com",
     "name": "Connvoters.com",
-    "description": "OSINT tool: Connvoters.com.",
+    "description": "Use when you have a `name` (and roughly a Connecticut location) and want the subject's registered address, town, party and DOB from the state voter list — returns address, dob, associate.",
     "url": "https://connvoters.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Free lookup of a Connecticut resident's voter-registration record — current address, town, party and approximate DOB — plus household co-registrants.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "name",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free-to-access; the site republishes a purchased copy of Connecticut's statewide voter file as a public-interest/genealogy resource.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying a republished public voter list is passive and does not notify the subject. It is a third-party site, so assume queries may be logged; use a clean browser/IP and enter only the selectors you need.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Privately run site republishing an official Connecticut voter file; the underlying data is government-sourced but the snapshot can be dated between purchases, and it is not the state's own portal.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Connvoters",
+      "Connecticut voter lookup"
+    ],
+    "tags": [
+      "voter-records",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/connvoters-com.md"
   },
   {
@@ -267954,14 +267987,14 @@
   },
   {
     "id": "sadoctorsapp-co-za",
-    "name": "sadoctorsapp.co.za",
-    "description": "OSINT tool: sadoctorsapp.co.za.",
+    "name": "sadoctorsapp.co.za (Near Me Doctors)",
+    "description": "Use when you have a doctor's `name` or a `geolocation`/`address` in South Africa and want their practice location and contact details — returns address, phone, employer-org.",
     "url": "https://www.sadoctorsapp.co.za/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a South African doctor's practice — address, phone, hours and map — from a name or an area.",
     "selectorsIn": [
       "name",
       "address",
@@ -267969,32 +268002,40 @@
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "phone",
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory / booking site (\"Near Me Doctors\"); no account needed to search.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public practitioner directory is passive and does not alert the doctor. Avoid using any \"book appointment\" flow, which would create a real interaction; stop at the listing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial doctor-directory/booking app, not the official HPCSA licensing register — listings are business info, so it confirms where a practitioner works but is not authoritative for verifying registration status.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "za"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Near Me Doctors",
+      "SA Doctors App"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/sadoctorsapp-co-za.md"
   },
   {
@@ -270466,47 +270507,60 @@
   },
   {
     "id": "slovakia",
-    "name": "Slovakia",
-    "description": "OSINT tool: Slovakia.",
+    "name": "RPVS – Register of Public Sector Partners (Slovakia)",
+    "description": "Use when you have a company `name`/`employer-org` or a `name` doing business with the Slovak state and want its verified beneficial owners — returns name, dob, address, associate, employer-org.",
     "url": "https://rpvs.gov.sk/rpvs/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Unmasking the real beneficial owners (with DOB and address) behind any entity that contracts with, or receives funds from, the Slovak public sector.",
     "selectorsIn": [
       "name",
+      "employer-org",
       "address",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
+      "name",
+      "dob",
       "address",
+      "associate",
       "employer-org",
-      "name"
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, public, no login; a Slovak government transparency registry.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public government registry is passive and leaves no trace to the target. No account needed; still query over a clean IP as good practice.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Slovak government registry (rpvs.gov.sk) mandated by the anti-shell-company transparency law; beneficial-owner entries are lawyer-verified filings, making it unusually authoritative for ownership data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "sk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "RPVS",
+      "Register partnerov verejného sektora",
+      "Slovak beneficial ownership register"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "beneficial-ownership"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/slovakia.md"
   },
   {
@@ -334869,45 +334923,55 @@
   },
   {
     "id": "insfo-ig-follower-export-chrome-google-com",
-    "name": "insfo ig follower export (chrome.google.com)",
-    "description": "OSINT tool: insfo ig follower export (chrome.google.com).",
-    "url": "https://chrome.google.com/webstore/detail/insfo-ig-follower-export/bckleejkdhlponanidmjfjdigpahlado/related",
+    "name": "InsFo IG Follower Export (Chrome extension)",
+    "description": "Use when you have an Instagram `username` and want to export and map their followers/following/commenters as an associate graph — returns social-profile, associate, username.",
+    "url": "https://chromewebstore.google.com/detail/insfo-ig-follower-export/bckleejkdhlponanidmjfjdigpahlado",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-exporting an Instagram account's follower/following/commenter/tag lists to CSV for associate-network analysis.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "associate",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free Chrome extension (data exported to CSV/Excel); some analytics features may be gated behind an upgrade.",
+    "opsec": "active",
+    "opsecNote": "The extension scrapes Instagram through YOUR logged-in session, so requests come from your account and IP and can trigger Instagram rate-limits, action blocks or bans. Use a dedicated sock-puppet Instagram account and a clean browser profile — never your real account. Scraping is against Instagram's ToS.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party Chrome extension (~10k users, ~4.3★); publisher offers several similar scrapers. It runs inside your Instagram session, so it has access to your account context — vet the privacy policy and use only a throwaway account.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "insfo ig follower export",
+      "InsFo Instagram export"
+    ],
     "tags": [
       "instagram",
       "Instagram Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/insfo-ig-follower-export-chrome-google-com.md"
   },
   {
@@ -337991,35 +338055,53 @@
   {
     "id": "linkedin-search-engine",
     "name": "LinkedIn Search Engine",
-    "description": "OSINT tool: LinkedIn Search Engine.",
+    "description": "Use when you have a `name`, `employer-org` or `username` and want to find someone's LinkedIn profile without logging into LinkedIn — returns social-profile, name, employer-org.",
     "url": "https://cse.google.com/cse?cx=daaf18e804f81bed0",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding a subject's LinkedIn profile via a Google Custom Search Engine scoped to linkedin.com, without touching LinkedIn while logged in.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Programmable/Custom Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Results come from Google's index of public LinkedIn pages, so you never visit LinkedIn while authenticated — the subject's \"Who viewed your profile\" is not triggered and no view is logged against you. Strongly preferred over searching inside a logged-in LinkedIn session. Heavy use may draw a Google CAPTCHA.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Google Custom Search Engine (config cx=daaf18e804f81bed0) scoped to LinkedIn; it is only as current as Google's index and the CSE owner's configuration, which can drift over time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "LinkedIn CSE",
+      "LinkedIn Google Custom Search"
+    ],
+    "tags": [
+      "linkedin",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/linkedin-search-engine.md"
   },
   {
@@ -340258,44 +340340,52 @@
   {
     "id": "nairaland-com-2",
     "name": "nairaland.com",
-    "description": "OSINT tool: nairaland.com.",
+    "description": "Use when you have a `username` or `name` and want to surface a person's posts, profile and self-disclosed details on Nairaland (Nigeria's largest forum) — returns social-profile, name, associate.",
     "url": "https://www.nairaland.com/search?q=&search=Search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a Nigerian subject's forum footprint, posts and disclosed contact/location details on Africa's largest discussion board.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and search; a free account is only needed to view members' profile pages and some threads.",
+    "opsec": "passive",
+    "opsecNote": "Searching public threads is passive and leaves no trace to the target. Reading a member's profile page while logged in is still passive to the target but ties the view to your account — use a sock-puppet Nairaland account, never your real one, and browse over a clean IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "User-generated forum content; anything a member posts is self-asserted and unverified. Treat disclosed phone numbers, locations and jobs as leads to corroborate, not facts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ng",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Nairaland Forum"
+    ],
     "tags": [
       "gsocialmedia",
       "General Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/nairaland-com-2.md"
   },
   {
@@ -349865,35 +349955,49 @@
   {
     "id": "social-search-engine",
     "name": "Social Search Engine",
-    "description": "OSINT tool: Social Search Engine.",
+    "description": "Use when you have a `name` or `username` and want to sweep several social networks at once from one box — returns social-profile links.",
     "url": "https://www.socialsearchengine.org/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A fast first-pass social sweep of a name/handle across multiple networks in a single query.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free, ad-supported web tool; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries run through this third-party site and (for the underlying platforms) through Google-style indexes, so you never touch the target's profiles directly — passive. Assume the operator logs your queries; use a clean browser/IP and avoid entering selectors you don't want a random third party to see.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Anonymous third-party aggregator that fans a query out to platform search pages; some targeted networks (e.g. Google+) are defunct, so coverage is partial and stale in places.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "socialsearchengine.org"
+    ],
+    "tags": [
+      "social-aggregator"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/social-search-engine.md"
   },
   {
