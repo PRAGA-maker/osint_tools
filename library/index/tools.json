@@ -161299,45 +161299,53 @@
   },
   {
     "id": "viewing-bitmoji-changes",
-    "name": "Viewing Bitmoji Changes",
-    "description": "OSINT tool: Viewing Bitmoji Changes.",
+    "name": "Viewing Bitmoji Changes (Snapchat technique)",
+    "description": "Use when you have a Snapchat `username` and want a passive activity/liveness signal — watch the account's Bitmoji avatar for changes to infer the person is active, returning avatar `image` and a behavioural signal.",
     "url": "https://hatless1der.com/a-snapchat-osint-tip-viewing-bitmoji-changes/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Monitoring a Snapchat user's Bitmoji avatar over time as a low-noise signal that the account (and person) is active.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
-      "face",
+      "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free technique described on the hatless1der OSINT blog; no tool to buy — you pull the public Bitmoji image via a known URL/endpoint and compare over time.",
+    "opsec": "passive",
+    "opsecNote": "You fetch a publicly-served Bitmoji image by the account's Snapchat identifier — you do not add, message, or interact with the target, so no notification is generated. Never add the account or view Stories from an attributable account; that would alert them.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Documented by Griffin (hatless1der), a well-known OSINT practitioner; it's a real, community-shared technique, though Snapchat can change how Bitmojis are served at any time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "snapchat"
+    ],
     "tags": [
       "profileimages",
-      "Profile Images"
+      "Profile Images",
+      "snapchat"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/viewing-bitmoji-changes.md"
   },
   {
@@ -310553,14 +310561,14 @@
   },
   {
     "id": "seosly-com-2",
-    "name": "seosly.com",
-    "description": "OSINT tool: seosly.com.",
+    "name": "seosly.com (Bing Search Operators guide)",
+    "description": "Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search operators, feeding sharper `name`/`social-profile` queries.",
     "url": "https://seosly.com/bing-search-operators/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A reference guide to Bing's advanced search operators for building precise dork queries.",
     "selectorsIn": [
       "name"
     ],
@@ -310568,29 +310576,36 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public blog/reference article; no account. It's documentation, not a service — the searching happens on Bing.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guide leaks nothing. The downstream Bing searches are also passive toward the target (you query Bing, not the person); Bing/Microsoft logs your queries, so use a clean/sock-puppet session for sensitive dorking.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-regarded SEO practitioner's reference; the operators it documents are Bing's own, so accuracy is easy to self-check against Bing.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "yahoo-com-2"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "dorking"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/seosly-com-2.md"
   },
   {
@@ -327237,36 +327252,51 @@
   },
   {
     "id": "facebook-search-3",
-    "name": "Facebook Search",
-    "description": "OSINT tool: Facebook Search.",
+    "name": "Facebook Search (Social Searcher)",
+    "description": "Use when you have a `name`, keyword or `username` and want to search recent public Facebook posts/mentions — returns `social-profile` posts and author `name`s, subject to Meta's search limits.",
     "url": "https://www.social-searcher.com/facebook-search/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Keyword/name search of public Facebook posts and mentions via Social Searcher's social media search engine.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Free tier allows limited real-time searches and saved searches; paid plans raise limits and add monitoring/analytics/export. Facebook coverage is constrained by Meta's platform restrictions.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Social Searcher's index, not the targets — no notification reaches them. Social Searcher logs your searches; use a clean/sock-puppet session for sensitive work and avoid pasting attributable identifiers beyond the query terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Social Searcher is an established, widely-used social media search/monitoring service; results depend on what Meta still exposes publicly, so coverage is partial rather than a data-quality issue.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "facebook-search-tool"
+    ],
+    "tags": [
+      "facebook",
+      "social-searcher"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-search-3.md"
   },
   {
@@ -327361,36 +327391,53 @@
   },
   {
     "id": "facebook-search-tool",
-    "name": "Facebook Search Tool",
-    "description": "OSINT tool: Facebook Search Tool.",
+    "name": "Facebook Search Tool (Aware Online)",
+    "description": "Use when you have two Facebook profiles and want to see who they know in common — returns the mutual-friends list, i.e. `associate` and `social-profile` links between them.",
     "url": "https://www.aware-online.com/osint-tools/facebook-search-tool/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding the mutual friends shared between two Facebook accounts to map connections between people.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "associate",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser tool from Aware Online (a Dutch OSINT training company); no account needed. They also sell OSINT courses but the tool itself is free.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The tool constructs a Facebook URL/query from the two IDs you supply and opens the result — you view public friend data, the targets aren't notified. You must be logged into Facebook (use a sock-puppet account) to see the results Facebook returns.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Aware Online is a reputable, well-known OSINT training provider; the tool is a thin, transparent query builder over Facebook's own pages, not a data broker.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "facebook-search-3"
+    ],
+    "tags": [
+      "facebook",
+      "aware-online"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-search-tool.md"
   },
   {
@@ -343769,44 +343816,50 @@
   {
     "id": "pokoinsta-com",
     "name": "pokoinsta.com",
-    "description": "OSINT tool: pokoinsta.com.",
+    "description": "Use when you have an Instagram `username` and want the target's full-size profile picture without logging in — returns the HD profile `image`/`face` for reverse-image and comparison work.",
     "url": "https://pokoinsta.com/download-profile-picture-instagram",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a full-resolution Instagram profile picture anonymously (no login) so you can reverse-image or face-compare it.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "face"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free; no account, no payment, works from any browser. Ad-supported third-party site.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public Instagram profile URL into a third-party downloader — Instagram is not queried under your account and the target is not notified. The downloader operator sees which profile you pulled; use a sock-puppet/clean browser if that linkage matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An anonymous ad-supported third-party utility, not affiliated with Instagram; it works but has no accountability — verify the image you get actually matches the target profile.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "instadp",
+      "pimeyes"
+    ],
     "tags": [
       "instagram",
       "Instagram Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/pokoinsta-com.md"
   },
   {
