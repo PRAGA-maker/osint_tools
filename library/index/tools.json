@@ -151026,31 +151026,33 @@
   },
   {
     "id": "livestream-aka-vimeo",
-    "name": "Livestream aka Vimeo",
-    "description": "Website related to social networking and livestreaming audio and/or video services",
+    "name": "Livestream (now Vimeo)",
+    "description": "Use when you have a `name`/`username` or an event title and want to find a subject's live/archived video and channel — returns their social-profile plus on-camera image and incidental location clues.",
     "url": "https://livestream.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's live or recorded events/channel (now hosted on Vimeo) and observing them on camera.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
+      "social-profile",
       "image",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and watching public videos/events is free; broadcasting and premium features require a paid Vimeo plan.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Watching public videos/events is passive and anonymous. Following, commenting, or otherwise interacting reveals your Vimeo account — stay read-only or use a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Livestream was a real, established live-events platform now merged into Vimeo (livestream.com redirects to vimeo.com); the platform is legitimate but individual channel content is user-generated and self-asserted.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -151059,14 +151061,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Livestream",
+      "livestream.com",
+      "Vimeo Livestream"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "livestreaming"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/livestream-aka-vimeo.md"
   },
@@ -160993,31 +161000,33 @@
   },
   {
     "id": "vaughnlivetv",
-    "name": "VaughnliveTV",
-    "description": "Website related to social networking and livestreaming audio and/or video services",
+    "name": "VaughnLive TV",
+    "description": "Use when you have a `username`/handle or need to browse live IRL/streaming video and want to find a person's live channel and on-camera appearance — returns social-profile and image/video of the streamer.",
     "url": "http://vaughnlive.tv",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's live-streaming channel (IRL/gaming/webcam) and observing them on camera in real time.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
+      "social-profile",
       "image",
-      "social-profile"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and watch; account only needed to broadcast, chat, or follow.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Watching a public stream is passive and anonymous. But entering chat, following, or interacting reveals your account to the streamer and viewers — lurk read-only unless you deliberately want to engage from a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent live-streaming platform (now at vaughn.live); legitimate service, but content is user-generated and unmoderated in places, so any identifying detail is claimed, not verified.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -161026,14 +161035,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Vaughn Live",
+      "vaughnlive.tv",
+      "vaughn.live"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "livestreaming"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/vaughnlivetv.md"
   },
@@ -171836,30 +171850,31 @@
   {
     "id": "discord-name",
     "name": "Discord.name",
-    "description": "Discord profile lookup by user ID.",
+    "description": "Use when you have a Discord `social-profile`/user ID and want to resolve it to a username and username history — but the service has been shut down by Discord, so returns nothing today.",
     "url": "https://discord.name/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Resolving a Discord user ID to profile/username history",
+    "bestFor": "Historically, resolving a Discord snowflake user ID to current username and past username history.",
     "selectorsIn": [
-      "device-id",
-      "social-profile"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
       "username",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Was a free, solo-maintained utility; no longer operational after Discord enforcement action, so there is no cost because there is no service.",
+    "opsec": "passive",
+    "opsecNote": "Moot while offline. When it ran it queried a third-party mirror of Discord data, so lookups did not touch the target's own account or notify them — but you were trusting an unofficial operator with the IDs you searched.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Solo-operated unofficial Discord data utility with no transparency about data sourcing; Discord itself deemed it a policy violation and forced it offline.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -171868,14 +171883,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "discord.name",
+      "Discord Name lookup"
+    ],
     "tags": [
       "discord",
       "id-lookup",
       "username-history"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/messaging/discord-name.md"
   },
@@ -172144,43 +172162,59 @@
   {
     "id": "doxbin-com",
     "name": "doxbin.com",
-    "description": "OSINT tool: doxbin.com.",
+    "description": "Use when you have a `name`, `username` or `phone` and want to check whether the subject has been doxed — returns any leaked personal dossier (address, phone, email, associates) posted about them.",
     "url": "https://doxbin.com/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a subject already has a publicly-posted \"dox\" (leaked personal dossier) and reading what identifiers it exposes.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "name",
+      "username",
+      "phone"
     ],
     "selectorsOut": [
-      "social-profile"
+      "address",
+      "phone",
+      "email",
+      "social-profile",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to search and read public pastes; some content and posting may require an account.",
+    "opsec": "active",
+    "opsecNote": "Highly sensitive. Doxbin is Cloudflare-gated and hostile; browsing is technically passive but you are visiting a site that logs traffic and is itself a target of law enforcement. Never log in with, post, or search personal identifiers tied to you. Use an isolated VM + sock-puppet routing. Reading is a defensive check on what is exposed about your subject; do NOT create, add to, or amplify a dox.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous, unmoderated doxing paste site; entries are attacker-submitted, frequently false, malicious, or mixing multiple people. Nothing here is verified — treat as unsourced accusation.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "doxbin",
+      "doxbin.com"
+    ],
     "tags": [
       "telegram",
-      "Telegram"
+      "Telegram",
+      "doxing",
+      "leaked-data"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/doxbin-com.md"
   },
   {
@@ -209386,47 +209420,56 @@
   {
     "id": "inteligator-people-trace-united-states",
     "name": "Inteligator People Trace (United States)",
-    "description": "People-related search engine that searches using name and state",
+    "description": "Use when you have a `name` (optionally + state) and want a US background-style report — returns address, phone, email, relatives and public-records hits, behind a paid subscription.",
     "url": "http://www.inteligator.com/home/index.php?tab=4",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Aggregated US background reports (address history, phones, relatives, criminal/records hits) from a single name query.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile",
       "address",
       "phone",
-      "associate"
+      "email",
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Not usably free: the name search runs and shows a teaser, but viewing the report requires a subscription — commonly a $1/day trial that rolls into ~$19.95/month. Treat as paid; the free step only confirms a record may exist.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query an aggregator's database, not the subject — the person is not notified. But you must create an account and enter payment to see results, so your own identity/payment is exposed to Inteligator; use a dedicated investigative account, not personal details.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running commercial background-check aggregator (claims 2B+ records, 50 states); reviewers report broad coverage but frequent stale/incorrect relatives, emails and profiles — corroborate everything.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Inteligator",
+      "inteligator.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "people-search"
+      "people-search",
+      "background-check"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/people-search/inteligator-people-trace-united-states.md"
   },
@@ -216831,14 +216874,14 @@
   },
   {
     "id": "usa-official-com",
-    "name": "usa-official.com",
-    "description": "OSINT tool: usa-official.com.",
+    "name": "usa-official.com (USA Official / OfficialUSA)",
+    "description": "Use when you have a US `name` and want a free public-records aggregation — returns address history, phones, emails, DOB/age, relatives and links to official government directories.",
     "url": "https://usa-official.com/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Free first-pass US person lookup pulling address history, phones, relatives and pointers into official state/county records.",
     "selectorsIn": [
       "name"
     ],
@@ -216846,32 +216889,40 @@
       "address",
       "phone",
       "email",
-      "social-profile",
+      "dob",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core name search and public-records results are free; the site monetizes via links to paid third-party report providers, so decline upsells to stay free.",
+    "opsec": "passive",
+    "opsecNote": "You query an aggregator, not the subject — no notification is sent to them. No login is required, so your search leaks only to the site operator. Use a clean/sock-puppet browser session as good hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregator of bulk US public records; broad but frequently stale and mixed across same-name individuals — treat every field as a lead to corroborate.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "USA Official",
+      "OfficialUSA",
+      "usa-official.com"
+    ],
     "tags": [
       "peoplesearch",
-      "People Search Sites"
+      "People Search Sites",
+      "public-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/people-search/usa-official-com.md"
   },
   {
@@ -269326,36 +269377,54 @@
   },
   {
     "id": "search-for-us-voters-with-custom-search-engines-osint-boolean-strings",
-    "name": "Search for US Voters with Custom Search Engines #OSINT \\| Boolean Strings",
-    "description": "OSINT tool: Search for US Voters with Custom Search Engines #OSINT \\| Boolean Strings.",
+    "name": "Search for US Voters with Custom Search Engines (Boolean Strings)",
+    "description": "Use when you have a US `name` and want registered-voter public records — a Google Custom Search Engine technique over voterrecords.com that returns address, DOB/age, phone and party affiliation.",
     "url": "https://booleanstrings.com/2021/07/15/search-for-us-voters-with-custom-search-engines-osint/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Structured searching of US voter-registration records (name → address, age, party) via a Google Custom Search Engine over voterrecords.com.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "dob",
+      "phone",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The technique and the underlying voterrecords.com data are free; the author (Irina Shamaeva / Boolean Strings) upsells a paid book and CSE training course, but you do not need those to use the method.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are querying Google's index and a public records site, not the subject — no notification reaches them. Run searches from a clean/sock-puppet session as routine hygiene; voter records are public but sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-regarded OSINT/sourcing practitioner's documented method; the technique is sound but depends on voterrecords.com's coverage and on Google indexing, both of which vary by state and change over time.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Boolean Strings voter CSE",
+      "US voter custom search engine"
+    ],
+    "tags": [
+      "public-records",
+      "voter-records",
+      "custom-search-engine",
+      "technique"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/search-for-us-voters-with-custom-search-engines-osint-boolean-strings.md"
   },
   {
@@ -320887,45 +320956,56 @@
   },
   {
     "id": "arrse-co-uk-2",
-    "name": "arrse.co.uk",
-    "description": "OSINT tool: arrse.co.uk.",
+    "name": "arrse.co.uk (Army Rumour Service)",
+    "description": "Use when you have a `username` or `name` and want to find a subject's profile on the UK's main British-Army community forum — returns their forum social-profile, post history and self-disclosed details.",
     "url": "https://www.arrse.co.uk/community/members/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a subject's account and post history on ARRSE, the large UK British-Army/military community forum.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to read; a registered account is generally needed to view the member directory and search members.",
+    "opsec": "passive",
+    "opsecNote": "Reading public threads is passive. Viewing the members list and profiles typically requires logging in, which exposes your account to the platform (and your profile becomes visible to others) — use a sock-puppet forum account, never a personal one. Do not message or interact with the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-established, real UK military community forum; content is user-generated and pseudonymous, so identity and service claims are self-asserted, not verified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "uk"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "ARRSE",
+      "Army Rumour Service",
+      "arrse.co.uk"
+    ],
     "tags": [
       "uksocialmedia",
-      "UK Social Media Sites"
+      "UK Social Media Sites",
+      "military-forum"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/arrse-co-uk-2.md"
   },
   {
@@ -324587,41 +324667,51 @@
   {
     "id": "delicious",
     "name": "Delicious",
-    "description": "Finding user bookmarking profiles and discovering curated link collections",
+    "description": "Use when you have a `username` and want that person's public social-bookmarking profile and saved links to infer interests and other handles — but the service is defunct, so this returns nothing live.",
     "url": "https://del.icio.us/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Finding user bookmarking profiles and discovering curated link collections",
-    "input": "Username or URL/tag search",
-    "output": "User profiles, bookmarked links, tags, collections, and user activity",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Historically, mining a person's public bookmark collection (saved URLs + tags) to profile interests and surface linked accounts.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "down",
     "pricing": "free",
+    "costNote": "Was free; the service has shut down, so there is nothing to pay for or query.",
     "opsec": "passive",
-    "opsecNote": "Searches public bookmarks and user profiles; searches do not interact with or notify individual users.",
+    "opsecNote": "Moot while offline. Historically, viewing a public bookmark profile was passive and did not notify the owner. Archived copies (Wayback) are equally passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Once a mainstream social-bookmarking service, now defunct; the del.icio.us domain no longer serves a working product.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "del.icio.us",
+      "Delicious bookmarking"
+    ],
+    "tags": [
+      "social-bookmarking",
+      "other-social-networks",
+      "defunct"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/delicious.md"
   },
   {
@@ -382096,44 +382186,57 @@
   },
   {
     "id": "ok-ru",
-    "name": "ok.ru",
-    "description": "OSINT tool: ok.ru.",
+    "name": "ok.ru (Odnoklassniki account-existence check)",
+    "description": "Use when you have an `email`/`phone` or `username` and want to confirm whether it maps to an Odnoklassniki (OK.ru) account — the recovery flow returns account existence plus masked recovery hints.",
     "url": "https://ok.ru/dk?st.cmd=anonymRecoveryStart",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether an email/phone/login belongs to a live Odnoklassniki (OK.ru) account and leaking masked recovery contacts.",
     "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
+      "email",
+      "phone",
       "username"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "phone",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Russian social-network recovery flow; no account or payment needed to run the existence check.",
+    "opsec": "active",
+    "opsecNote": "This touches OK.ru's auth infrastructure for the target's identifier. OK.ru (a Russian, VK-group platform) may log the attempt and could notify the account owner if you proceed. Stop at the existence check; never request or enter a recovery code. Use a sock-puppet browser/IP and assume Russian-jurisdiction logging.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "This is Odnoklassniki's own first-party account-recovery endpoint, so the existence signal is authoritative; it is not a third-party scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Odnoklassniki",
+      "OK.ru account recovery",
+      "ok.ru password reset"
+    ],
     "tags": [
       "passwordreset",
-      "Password Reset Details"
+      "Password Reset Details",
+      "account-existence"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/username/ok-ru.md"
   },
   {
