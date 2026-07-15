@@ -264081,45 +264081,54 @@
   },
   {
     "id": "pennsylvania",
-    "name": "Pennsylvania",
-    "description": "OSINT tool: Pennsylvania.",
+    "name": "Pennsylvania DOC Inmate Locator",
+    "description": "Use when you have a `name` and want to know if the subject is (or recently was) in Pennsylvania state custody — returns inmate identity, DOB, inmate number and facility from the official PA Department of Corrections locator.",
     "url": "http://inmatelocator.cor.pa.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a person is incarcerated or supervised in the Pennsylvania state corrections system and pulling their inmate record.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
       "dob",
-      "document-id"
+      "document-id",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official government inmate locator; no account or payment needed.",
+    "opsec": "passive",
+    "opsecNote": "Official public-records search; you query the state database, not the individual, and no notification is sent. No login required. Use a clean session as routine hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Pennsylvania Department of Corrections (cor.pa.gov); records are authoritative for people in PA state custody (note it does not cover county jails or federal prison).",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PA DOC Inmate Locator",
+      "Pennsylvania Department of Corrections locator",
+      "inmatelocator.cor.pa.gov"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "corrections"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/pennsylvania.md"
   },
   {
@@ -325725,45 +325734,51 @@
   },
   {
     "id": "downloadgram-app",
-    "name": "downloadgram.app",
-    "description": "OSINT tool: downloadgram.app.",
+    "name": "DownloadGram",
+    "description": "Use when you have an Instagram post/reel URL (from a subject's `social-profile`) and want the original-quality media offline — downloads public photos, videos, reels and IGTV for analysis and preservation.",
     "url": "https://downloadgram.app/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading full-quality public Instagram photos, videos, reels and albums for offline OSINT analysis and preservation.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account or app install; works in any browser. Only public Instagram content is downloadable.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public post URL into a third-party downloader that pulls the media from Instagram's CDN; the account owner is not notified and you never log into Instagram. Your query is visible to the tool operator — use a clean session and avoid extra prompts/ads.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A functioning third-party Instagram downloader; it returns genuine Instagram CDN media, but it's an ad-supported operator (like others in this class), so download only the media and ignore install/notification prompts.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DownloadGram",
+      "downloadgram.app"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/downloadgram-app.md"
   },
   {
