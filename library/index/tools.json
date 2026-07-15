@@ -150273,30 +150273,32 @@
   {
     "id": "kosmos-2",
     "name": "Kosmos 2",
-    "description": "An AI-based tool you can use to geolocate a photo",
+    "description": "Use when you have an `image` and want an AI description that names objects, text and landmarks in it (with bounding boxes) — returns `physical-description` and grounded scene captions, not a map location.",
     "url": "https://huggingface.co/spaces/ydshieh/Kosmos-2",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Grounded image captioning — getting a multimodal model to describe and localise what is visible in a photo (objects, signage text, landmarks).",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "physical-description",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
+    "costNote": "Free Hugging Face Space; no account needed when running. As of the last check the Space throws a runtime error (model download fails) — self-host the open Kosmos-2 model or use another HF mirror if it stays down.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You upload the image to a third-party Hugging Face Space, so the photo leaves your machine and transits Microsoft/HF infrastructure. Strip anything you don't want disclosed and never upload a sensitive victim image to a public demo — self-host for those.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-hosted demo (by HF user ydshieh) of Microsoft's open-source Kosmos-2 model; the model is legitimate research, but this specific Space is an unofficial, currently-broken deployment.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -150305,7 +150307,14 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "google-lens"
+    ],
+    "aliases": [
+      "Kosmos-2",
+      "Kosmos 2 grounding"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
@@ -150314,7 +150323,7 @@
       "artificial-intelligence"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/kosmos-2.md"
   },
@@ -157805,46 +157814,54 @@
   {
     "id": "shutterfly",
     "name": "Shutterfly",
-    "description": "Website related to social networking with photo galleries, photo posting and sharing services",
+    "description": "Use when you have a `name`/`username` and suspect the subject uses Shutterfly to share photos — returns `image` galleries and shared-album pages found via search-engine dorking, not an on-site people search.",
     "url": "https://www.shutterfly.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a subject's shared Shutterfly photo albums / \"share sites\" through external search dorks, since the platform has no public people/photo search of its own.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "image",
-      "social-profile"
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "The consumer service is free to browse; there is no OSINT search feature — you rely on public share-site URLs indexed by search engines. Buying products costs money but is irrelevant to investigation.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You never query Shutterfly about the target directly — you search a general search engine for public share-site links, so nothing reaches the subject. Opening a discovered public album is passive; do not attempt to log into or request access to a private album.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Shutterfly is a long-established US consumer photo-products company; any album you find is genuine user content, but discoverability depends entirely on the owner having made it public.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "google-com-44"
+    ],
+    "aliases": [
+      "Shutterfly",
+      "Shutterfly share site"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/shutterfly.md"
   },
@@ -170744,46 +170761,6 @@
     "_file": "library/tools/messaging/commentgram-cse.md"
   },
   {
-    "id": "comms-analyzer-toolbox",
-    "name": "Comms Analyzer Toolbox",
-    "description": "Email/SMS chat archive forensics and timeline analysis",
-    "url": "https://github.com/bitsofinfo/comms-analyzer-toolbox",
-    "category": "messaging",
-    "path": [
-      "messaging",
-      "chat-archive-analysis"
-    ],
-    "bestFor": "Email/SMS chat archive forensics and timeline analysis",
-    "input": "Communication exports and structured message datasets",
-    "output": "Searchable communication records, timelines, and analytics dashboards",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Performs local analysis on collected datasets and does not contact targets by default.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/chat-archive-analysis/comms-analyzer-toolbox.md"
-  },
-  {
     "id": "create-spoof-fake-chat-messages-app",
     "name": "Create Spoof / Fake Chat Messages App",
     "description": "OSINT tool: Create Spoof / Fake Chat Messages App.",
@@ -171728,37 +171705,56 @@
   {
     "id": "discord-sensor",
     "name": "Discord Sensor",
-    "description": "OSINT tool: Discord Sensor.",
+    "description": "Use when you have a Discord `username`/`device-id` (user ID) or server and want analytics on that user/community's activity — returns `social-profile` activity data via a Telegram bot, behind a channel-subscription gate.",
     "url": "https://telegram.me/discordsensorbot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestFor": "Querying Discord user/server activity and analytics from within Telegram via the @DiscordSensorbot bot.",
+    "selectorsIn": [
+      "username",
+      "device-id"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Menu-driven Telegram bot; core use is free but full functionality requires subscribing to the bot's linked Telegram channel (used as access control), and some \"probiv\" query bots in this ecosystem gate deeper data behind payment.",
+    "opsec": "active",
+    "opsecNote": "Interacting requires a Telegram account, which ties the query to that account's identity/number — always use a dedicated sock-puppet Telegram account on a burner number, never your real one. These pribiv/analytics bots log queries; assume the operator sees who looked up whom.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "unverified",
+    "trustNote": "Anonymous Telegram bot from the Russian-language \"probiv\" (data-lookup) bot ecosystem; operator identity and data provenance are unknown, so treat every result as an unverified lead.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "discord-lookup"
+    ],
+    "aliases": [
+      "Discord Sensor",
+      "DiscordSensorbot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "discord"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/discord-sensor.md"
   },
   {
@@ -270856,13 +270852,13 @@
   {
     "id": "societe-ninja",
     "name": "societe.ninja",
-    "description": "OSINT tool: societe.ninja.",
+    "description": "Use when you have a `name` or `employer-org` tied to France and want to map a person to French companies they run or are registered against — returns `employer-org`, officer `name`, registered `address` and filed documents.",
     "url": "https://www.societe.ninja/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free search of the French company register (SIRENE/RCS) by company or by director/officer name.",
     "selectorsIn": [
       "name",
       "address",
@@ -270873,29 +270869,39 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public-data search; company fiches, actes (incorporation docs) and bilans (financial statements) are downloadable at no cost. Beneficial-ownership (bénéficiaires effectifs) register is legally gated to lawyers/notaries/journalists.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party aggregator of open French registry data; nothing reaches the target. The operator (cybertron.fr) sees your IP and search terms — use a sock-puppet browser/IP if the investigation is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent French project (cybertron.fr) re-serving official INSEE/INPI open data; the underlying records are authoritative but the presentation layer is third-party, so confirm critical facts against the official source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "fr"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "pappers"
+    ],
+    "aliases": [
+      "societe ninja",
+      "cybertron societe"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/societe-ninja.md"
   },
   {
@@ -318135,43 +318141,54 @@
   {
     "id": "yahoo-com-2",
     "name": "yahoo.com",
-    "description": "OSINT tool: yahoo.com.",
-    "url": "https://search.yahoo.com//web/advanced",
+    "description": "Use when you have a `name` (or `username`/phrase) and want a second general-purpose search index that surfaces pages Google buries — returns `social-profile`, `name` mentions and source URLs.",
+    "url": "https://search.yahoo.com/web/advanced",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "A second-opinion general web index with a form-driven advanced-search page (phrase, domain, file-type, country, language filters).",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public web search; no account required. Yahoo web results are powered by Bing's index.",
+    "opsec": "passive",
+    "opsecNote": "You are querying Yahoo/Bing infrastructure, not the target. No signal reaches the subject. Yahoo does log your IP and may serve a CAPTCHA on automated-looking query bursts — use a sock-puppet browser/IP if you are running many queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Yahoo (Apollo Global / Yahoo Inc.); results are drawn from Microsoft Bing's index, so this is a first-party search engine, not a scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "google-com-44"
+    ],
+    "aliases": [
+      "Yahoo Search",
+      "Yahoo Advanced Web Search"
+    ],
     "tags": [
       "searchengines",
       "Search Engines"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yahoo-com-2.md"
   },
   {
@@ -319282,29 +319299,32 @@
   {
     "id": "4sqmap",
     "name": "4sqmap",
-    "description": "Foursquare maps and statistics",
+    "description": "Use when you have a Foursquare/Swarm `username` and want to plot that account's check-ins, venues and photos on a map — returns `geolocation` history and place `social-profile` data, subject to Foursquare API limits.",
     "url": "http://www.4sqmap.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Visualising a Foursquare/Swarm user's public check-in history and venue photos on an interactive map.",
     "selectorsIn": [
-      "name",
       "username"
     ],
     "selectorsOut": [
+      "geolocation",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free web app. Relies on the Foursquare/Swarm API, which has been repeatedly restricted — expect partial or empty results; not a paid product but functionally throttled.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reading public Foursquare data through a third-party viewer does not notify the target. The 4sqmap operator and Foursquare see your queries, not the subject — but do not connect/authorise your own Foursquare account against a target's profile, which could create a follow signal.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party visualiser of Foursquare data, provenance and current maintenance unclear; the source data is Foursquare's, but this front-end is unvetted and its uptime is unreliable.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -319313,14 +319333,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "foursquare"
+    ],
+    "aliases": [
+      "4sqmap",
+      "foursquare map"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/4sqmap.md"
   },
@@ -350380,13 +350408,13 @@
   {
     "id": "socialmedialist-org",
     "name": "socialmedialist.org",
-    "description": "OSINT tool: socialmedialist.org.",
+    "description": "Use when you have a `username`/`name` and want a checklist of niche and non-Western social networks to hunt it across — returns a reference directory of ~250 platforms to seed a `social-profile` search.",
     "url": "https://socialmedialist.org/social-media-sites.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A curated, regularly-updated reference list of ~250 social networking sites worldwide to remind you which platforms to check a name/handle against.",
     "selectorsIn": [
       "username",
       "name"
@@ -350395,29 +350423,39 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference site; free for personal/academic use (commercial reuse prohibited). No account, no lookup fee — it is a static list, not a search engine.",
+    "opsec": "passive",
+    "opsecNote": "You read a public list of website names; nothing about your target is entered anywhere. The only OpSec that matters is downstream — visit the individual platforms it points you to through a sock puppet.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An independently-maintained directory (running since 2018) of social networks in many languages; accurate as a list, but it is a signpost, not a data source, so it holds no personal data itself.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "namechk"
+    ],
+    "aliases": [
+      "Social Media List",
+      "list of social networking sites"
+    ],
     "tags": [
       "gsocialmedia",
       "General Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/socialmedialist-org.md"
   },
   {
@@ -380447,41 +380485,51 @@
   {
     "id": "nameberry",
     "name": "Nameberry",
-    "description": "When you are looking for mentions of a person on social media, remember that one name can have dozens of different spelling variations. Ideally, you should check them all, or at least the most popular ones.",
+    "description": "Use when you have a `name` and want its nicknames, diminutives and spelling variants so you can search every form of it — returns alternate `name`/`username` strings to feed other tools.",
     "url": "https://nameberry.com/search?q=john",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Generating the full set of nickname and spelling variations of a given first name to broaden a username/name search.",
     "selectorsIn": [
-      "username"
+      "name"
     ],
     "selectorsOut": [
-      "social-profile",
+      "name",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse name pages and search; some list/curation features push a paid app, but the core name → nicknames/variants lookup is free with no account.",
+    "opsec": "passive",
+    "opsecNote": "You look up a generic given name in a public baby-name dictionary — the query is not attributable to any target and leaks nothing about your investigation. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established baby-name reference (Nameberry, since 1999); editorially curated etymology/nickname data, reliable as a naming dictionary though not an investigative source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "namechk"
+    ],
+    "aliases": [
+      "Nameberry",
+      "baby name variations"
+    ],
     "tags": [
       "Nicknames"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/username/nameberry.md"
   },
