@@ -223465,45 +223465,58 @@
   },
   {
     "id": "spoofcard-com",
-    "name": "spoofcard.com",
-    "description": "OSINT tool: spoofcard.com.",
+    "name": "SpoofCard",
+    "description": "Use when you have a target `phone` number and need to place a call from a masked/virtual caller ID (e.g. to reach voicemail and capture the greeting) — returns name from voicemail and confirmation the line is live.",
     "url": "http://www.spoofcard.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Placing calls from a controlled virtual/spoofed caller ID to confirm a live line and capture a voicemail greeting without exposing your real number.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Paid credit/subscription model with a limited free trial via the mobile app; sustained use requires purchasing minutes. Treat as paid for anything beyond a single test.",
+    "opsec": "active",
+    "opsecNote": "This places a REAL phone call to the target from a number you choose — it is active and intrusive, and the recipient sees a ring/missed call. Only legitimate use is confirming a number is live or reaching voicemail; going \"straight to voicemail\" avoids ringing but still hits the target's carrier. Caller-ID spoofing is regulated (e.g. the US Truth in Caller ID Act) and is unlawful when done to defraud or harm — stay strictly within authorized, non-deceptive investigative use and log your authority.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "legal-gate"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trustNote": "A commercial consumer caller-ID/voice-changing service, not an intelligence data source; it produces no database records, only the outcome of a call you place.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us",
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "fonefinder-net"
+    ],
+    "aliases": [
+      "spoofcard.com",
+      "SpoofCard caller ID"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "caller-id",
+      "pretexting"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/phone/spoofcard-com.md"
   },
   {
@@ -248904,47 +248917,66 @@
   },
   {
     "id": "infocreditgroup-com",
-    "name": "infocreditgroup.com",
-    "description": "OSINT tool: infocreditgroup.com.",
+    "name": "Infocredit Group",
+    "description": "Use when you have a company `name` or a person's `name` tied to a business and want credit, ownership, and due-diligence/KYC data across 130+ countries — returns employer-org, associate, and address records.",
     "url": "https://www.infocreditgroup.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Commercial business-intelligence, credit-risk, and due-diligence/KYC reports on companies and their principals across 137+ countries.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "name",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Paid B2B/enterprise service — reports, API access, and the ComplianceSuite/Nexis Diligence platforms are purchased per-report or by subscription. There is no free public lookup; the site's marketing pages are open but any actual report requires a paid account. Author-listed as freemium only because the enum has no \"paid\" value.",
+    "opsec": "passive",
+    "opsecNote": "Standard commercial data-broker query — running a report does not notify the subject. Because it requires a registered corporate account, your identity and the searches you run are logged by Infocredit; use an appropriate investigative account, not a personal one, and be mindful of the legal basis for KYC/credit searches on individuals (GDPR/DPA where applicable).",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trust": "trusted",
+    "trustNote": "Established provider (founded 1972) with ISO 9001/22301/27001 certifications, sourcing from official company registries and credit data; a reputable commercial due-diligence house, not a scraper.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global",
+      "eu"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "opencorporates",
+      "dnb"
+    ],
+    "aliases": [
+      "Infocredit World",
+      "InfocreditWorld.com",
+      "Infocredit Group Ltd"
+    ],
     "tags": [
       "companysites",
-      "Company Related Sites"
+      "Company Related Sites",
+      "business-intelligence",
+      "kyc",
+      "due-diligence"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/infocreditgroup-com.md"
   },
   {
@@ -310387,13 +310419,13 @@
   {
     "id": "searchenginemap-com",
     "name": "searchenginemap.com",
-    "description": "OSINT tool: searchenginemap.com.",
+    "description": "Use when you need to choose which alternative search engines to query and want to see which ones have their own independent index — returns a visual map of engines and their data sources.",
     "url": "https://www.searchenginemap.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Picking non-Google/Bing search engines that actually crawl independently, so you widen coverage instead of re-querying the same index.",
     "selectorsIn": [
       "name"
     ],
@@ -310401,29 +310433,38 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive reference site; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "This is a static visualization about search engines, not a search itself — opening it reveals nothing about your target. OpSec only matters at the next step, when you run the engines it points you to.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Independently maintained reference graph; it makes no claims about people, only about which engines source results from which — a research aid, not a data source.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "searx"
+    ],
+    "aliases": [
+      "Search Engine Map"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "meta-research"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/searchenginemap-com.md"
   },
   {
@@ -314154,24 +314195,35 @@
   {
     "id": "trace-labs-awesome-osint",
     "name": "Trace Labs awesome-osint",
-    "description": "TraceLabs-endorsed curated list of OSINT frameworks, libraries and software specifically for missing-persons searches.",
+    "description": "Use when you are starting or stuck in a missing-persons investigation and want a vetted, category-organized catalog of OSINT tools to work through — returns a curated directory of tools by selector type.",
     "url": "https://github.com/tracelabs/awesome-osint",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Authoritative starting catalog of missing-persons-relevant OSINT tools curated by Trace Labs.",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Authoritative starting catalog of missing-persons-relevant OSINT tools, curated and endorsed by Trace Labs and organized by investigative category.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free open GitHub repository (curated list); many linked tools are themselves free, some are commercial.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the list is a passive GitHub page view that reveals nothing about your target. OpSec risk lives entirely in the individual tools you then launch from it — assess each one's active/passive profile before use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Official Trace Labs curated list; explicitly scoped to missing-persons OSINT.",
+    "trustNote": "Official Trace Labs curated list, explicitly scoped to missing-persons OSINT and maintained by the organization that runs the Search Party CTF; entries are vetted rather than scraped.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -314180,8 +314232,13 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "osint-framework",
+      "start-me-osint"
+    ],
     "aliases": [
-      "awesome-osint tracelabs"
+      "awesome-osint tracelabs",
+      "Trace Labs OSINT list"
     ],
     "tags": [
       "curated-list",
@@ -314190,8 +314247,8 @@
       "meta-resource"
     ],
     "source": "tracelabs-repos",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/trace-labs-awesome-osint.md"
   },
   {
@@ -335488,29 +335545,31 @@
   {
     "id": "instafreeview",
     "name": "InstaFreeView",
-    "description": "View Instagram profiles without logging in.",
+    "description": "Use when you have an Instagram `username` and want to view a public profile, posts, or stories without logging in or appearing in the viewer list — returns social-profile content and images.",
     "url": "https://instafreeview.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Anonymous viewing of public Instagram profiles",
+    "bestFor": "Anonymously viewing and browsing a public Instagram profile's posts and stories without a logged-in account.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "image"
+      "image",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free ad-supported viewer; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "The point of the tool is that you do NOT appear in the target's story viewer list or leave a login trail on Instagram — the third-party site fetches the content on your behalf. Still access it through a sock-puppet browser/VPN, since you are trusting an unknown operator with your requests and they can log your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous third-party viewer of unknown ownership; it relays public Instagram content but the operator, retention, and reliability are all unverified.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -335519,13 +335578,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "anonyig",
+      "imginn"
+    ],
+    "aliases": [
+      "Instafreeview",
+      "Instagram anonymous viewer"
+    ],
     "tags": [
       "instagram",
-      "anonymous-view"
+      "anonymous-view",
+      "story-viewer"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/instafreeview.md"
   },
@@ -339042,45 +339109,54 @@
   },
   {
     "id": "mastodon-github-com",
-    "name": "mastodon (github.com)",
-    "description": "OSINT tool: mastodon (github.com).",
+    "name": "Mastodon accounts/lookup API",
+    "description": "Use when you have a known Mastodon `username`/handle on a specific instance and want to resolve it to a stable account ID and profile metadata — returns the account's social-profile and id.",
     "url": "https://github.com/mastodon/mastodon/discussions/21156",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a known Mastodon handle on a given instance to its numeric account ID and public profile via the REST API.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Mastodon is open-source; the API endpoint is free on any public instance, no key needed for public account lookups.",
+    "opsec": "passive",
+    "opsecNote": "A read of the public `/api/v1/accounts/lookup` endpoint does not notify the account owner and looks like ordinary traffic. Query the instance the account actually lives on; hitting an unrelated instance leaks your interest to that instance's admins for no benefit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "This is the official Mastodon project's own REST API, documented in the project's GitHub discussions; the data returned is the instance's authoritative record for that account.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mastodon-social"
+    ],
+    "aliases": [
+      "Mastodon API account lookup",
+      "accounts/lookup"
+    ],
     "tags": [
       "mastodon",
-      "Mastodon Related Sites"
+      "Mastodon Related Sites",
+      "api-technique"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/mastodon-github-com.md"
   },
   {
@@ -348668,44 +348744,58 @@
   {
     "id": "seemutualfriendsonfacebook-com",
     "name": "seemutualfriendsonfacebook.com",
-    "description": "OSINT tool: seemutualfriendsonfacebook.com.",
+    "description": "Use when you have two or more Facebook friend lists (scraped) and want to find the people they have in common — returns overlapping social-profiles and names.",
     "url": "https://seemutualfriendsonfacebook.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Cross-referencing scraped Facebook friend lists to surface mutual connections between two or more accounts.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free browser tool; all processing happens client-side, no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The comparison runs in your browser on CSV files you already have; the site never touches Facebook or the target, so it leaks nothing to Meta. The active/risky step is the upstream friend-list scraping you do separately — do that from a sock-puppet Facebook session, not your real account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent third-party utility, not affiliated with or endorsed by Meta; it only does set-intersection on files you supply, so there is no data-quality risk beyond your own inputs.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "tweetbeaver"
+    ],
+    "aliases": [
+      "See Mutual Friends On Facebook",
+      "mutual friends finder"
+    ],
     "tags": [
       "facebook",
-      "Facebook General Links"
+      "Facebook General Links",
+      "mutual-friends"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/seemutualfriendsonfacebook-com.md"
   },
   {
