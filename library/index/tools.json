@@ -152660,48 +152660,6 @@
     "_file": "library/tools/image-video-face/images/metadata/oletools.md"
   },
   {
-    "id": "onedrive",
-    "name": "OneDrive",
-    "description": "OSINT tool: OneDrive.",
-    "url": "https://www.google.com/search?safe=off&q=site:onedrive.live.com+%3Csearchterm%3E",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face",
-      "documents",
-      "search",
-      "common-googledorks"
-    ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/documents/search/common-googledorks/onedrive.md"
-  },
-  {
     "id": "online-exif-viewer",
     "name": "Online EXIF Viewer",
     "description": "Use when you have a photo file and want its embedded metadata — returns EXIF including GPS coordinates, capture timestamp, and camera/device model.",
@@ -206058,48 +206016,54 @@
   {
     "id": "deadtrap",
     "name": "DeadTrap",
-    "description": "OSINT tool: DeadTrap.",
-    "url": "https://github.com/chr0m0s0m3s/deadtrap",
+    "description": "Use when you have a `phone` and want to identify its likely owner, carrier region and linked social/spam footprint — returns name, social-profile, geolocation.",
+    "url": "https://github.com/kaan-44/DeadTrap",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Enriching an international phone number into owner, carrier/region and social-media footprint from one CLI run.",
     "selectorsIn": [
-      "name"
+      "phone"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
+      "name",
       "social-profile",
-      "dob"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "MIT-licensed open-source Python tool; free. Needs Python 3 plus Firefox + geckodriver (it drives a browser via Selenium); no paid API keys.",
+    "opsec": "active",
+    "opsecNote": "DeadTrap automates Google and social-media queries about the number via a real browser (Selenium). It does not alert the number's owner, but the automated searches are fingerprintable and can trigger Google CAPTCHAs/rate-limits against your IP — run it behind a VPN/clean IP, not from an attributable network.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Single-author open-source project (~54 GitHub stars, MIT). Results are aggregated from public web/social sources and are indicative, not authoritative; audit the Python source before running and verify every hit independently.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Dead Trap"
+    ],
     "tags": [
       "people-search",
       "open-source",
-      "cli"
+      "cli",
+      "phone"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/people-search/deadtrap.md"
   },
   {
@@ -227057,45 +227021,57 @@
   },
   {
     "id": "archives",
-    "name": "Archives",
-    "description": "OSINT tool: Archives.",
+    "name": "Archives.com (Death & Vital Records)",
+    "description": "Use when you have a `name` and want US death, obituary and vital records to confirm a death, approximate DOB and relatives — returns dob, name, associate.",
     "url": "https://www.archives.com/search/death",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a subject has died and pulling DOB, death date, place and named relatives from US death/obituary/vital records.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "associate",
       "dob",
-      "name"
+      "name",
+      "associate",
+      "address",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching (name + optional year/state) is free and returns match previews, but viewing full record details requires a paid Archives.com subscription / free-trial signup (Archives.com is an Ancestry-owned service).",
+    "opsec": "passive",
+    "opsecNote": "Searching genealogy/death indexes is passive and does not alert anyone. A subscription/trial ties record views to a billing identity — use a dedicated account, not one linked to your real identity, if attribution matters.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Archives.com / Ancestry, a major commercial genealogy provider indexing official death, SSDI, obituary and cemetery records; data provenance is reputable though completeness varies by state and era.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "Archives.com",
+      "Archives death search"
+    ],
     "tags": [
       "genealogy",
-      "family"
+      "family",
+      "death-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/archives.md"
   },
   {
@@ -338107,35 +338083,54 @@
   {
     "id": "linkedin-search-engine-with-images",
     "name": "LinkedIn Search Engine (with Images)",
-    "description": "OSINT tool: LinkedIn Search Engine (with Images).",
+    "description": "Use when you have a `name`/`employer-org` and want LinkedIn profiles surfaced with thumbnail photos for fast visual matching — returns social-profile, image, name.",
     "url": "https://cse.google.com/cse?cx=40126f0af1aff84f8",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding a subject's LinkedIn profile via a Google CSE that shows result thumbnails, so you can visually confirm identity without opening each profile.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Programmable/Custom Search Engine; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Results come from Google's index of public LinkedIn pages, so you never authenticate to LinkedIn — the target's \"Who viewed your profile\" is not triggered and no view is logged against you. Heavy querying may draw a Google CAPTCHA. Confirm identity from the thumbnail before opening the live profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party Google Custom Search Engine (config cx=40126f0af1aff84f8) scoped to LinkedIn and configured to display image thumbnails; only as current as Google's index and the CSE owner's configuration.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "LinkedIn CSE with images",
+      "LinkedIn image search"
+    ],
+    "tags": [
+      "linkedin",
+      "google-cse"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/linkedin-search-engine-with-images.md"
   },
   {
