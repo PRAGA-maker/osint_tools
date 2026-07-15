@@ -155258,47 +155258,50 @@
   },
   {
     "id": "portrait-search",
-    "name": "Portrait Search",
-    "description": "Multi-media search engine focusing on images from over 100,000 US portraits in the regional area",
+    "name": "Smithsonian National Portrait Gallery — Portrait Search",
+    "description": "Use when you have a `name` of a notable/historical American and want catalogued portraits of them — returns portrait `image`s and biographical catalogue metadata. Niche; not for everyday missing-persons work.",
     "url": "http://npgportraits.si.edu/code/emuseum.asp",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding catalogued portraits and identity/biographical records of notable or historical people via the Smithsonian NPG collection.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free public museum collection. The original eMuseum URL (npgportraits.si.edu) now 301-redirects to the Smithsonian National Portrait Gallery collection at npg.si.edu/portraits.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a public museum catalogue — no subject interaction, no notification. Ordinary web-logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Smithsonian Institution (National Portrait Gallery) — an authoritative cultural-heritage catalogue, not a third-party scraper. The legacy eMuseum interface is retired; use the current npg.si.edu collection.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NPG portrait search",
+      "Smithsonian portrait collection"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "museum"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/portrait-search.md"
   },
@@ -161635,8 +161638,8 @@
   },
   {
     "id": "webstigram",
-    "name": "Webstigram",
-    "description": "Historical reference while migrating to active Instagram tooling",
+    "name": "Webstigram / Websta.me",
+    "description": "Use when you follow an old Webstagram/Websta.me link for Instagram profile browsing — the Instagram tool is dead and the domain is now an unrelated SEO/reviews blog, so treat as defunct.",
     "url": "https://websta.me/search-engine-optimization/",
     "category": "image-video-face",
     "path": [
@@ -161644,34 +161647,40 @@
       "images",
       "instagram"
     ],
-    "bestFor": "Historical reference while migrating to active Instagram tooling",
-    "input": "Instagram usernames or tags (legacy workflow)",
-    "output": "Unreliable/limited Instagram lookup results",
+    "bestFor": "(Defunct) legacy Instagram profile/hashtag viewer; domain now repurposed as a general blog.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "degraded",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "Tool status is unclear and behavior is inconsistent; validate with alternative tools before operational use.",
+    "costNote": "Was a free Instagram web viewer/analytics tool; the websta.me domain no longer runs it and now serves unrelated blog content.",
+    "opsec": "passive",
+    "opsecNote": "Moot — the Instagram tool no longer exists. Do not enter subject handles into the current site; it is an unrelated publication.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "The original Webstagram/Websta.me was an interchangeable third-party Instagram viewer; the domain has since been repurposed into an SEO/reviews blog and no longer provides any Instagram functionality.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": true,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Webstagram",
+      "Websta.me"
+    ],
+    "tags": [
+      "instagram",
+      "defunct"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/images/instagram/webstigram.md"
   },
   {
@@ -162119,45 +162128,50 @@
   },
   {
     "id": "www3-lunapic-com",
-    "name": "www3.lunapic.com",
-    "description": "OSINT tool: www3.lunapic.com.",
+    "name": "LunaPic",
+    "description": "Use when you have an `image` of a subject and want to crop, enhance, deskew, or isolate a face in-browser before running reverse-image/face search — returns an edited `image`.",
     "url": "https://www3.lunapic.com/editor/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Free in-browser image editing (crop, enhance, background removal) to prep a photo for reverse-image or face search.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online photo editor; no account or install required (ad-supported).",
+    "opsec": "passive",
+    "opsecNote": "Editing happens in the browser but images are uploaded to LunaPic's servers to apply effects — do not upload anything sensitive you would not entrust to a third party. Use a sock-puppet session; strip nothing you still need (keep an untouched original for EXIF).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Long-running free consumer photo editor (LunaPic); it is a general utility, not an OSINT-specific tool, and its servers process uploaded images.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "lunapic",
+      "lunapic.com editor"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "Photo Related Sites",
+      "image-editing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/www3-lunapic-com.md"
   },
   {
@@ -331782,45 +331796,53 @@
   },
   {
     "id": "google-com-2",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Astayfriends.de",
+    "name": "Google site search — stayfriends.de",
+    "description": "Use when you have a `name` (and a German school/town) and want to find someone's StayFriends classmates profile without an account — returns `social-profile` links via Google's index.",
+    "url": "https://www.google.com/search?q=site%3Astayfriends.de",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding StayFriends (German-speaking classmates/reunion network) profiles by name/school using a Google `site:stayfriends.de` dork.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free — it is a Google web search; no StayFriends account needed to read the indexed snippets.",
+    "opsec": "passive",
+    "opsecNote": "You search Google, not StayFriends, so the platform is not notified by the query. Google logs your searches — use a logged-out/sock-puppet session. StayFriends is heavily login-walled, so clicking through will hit a registration prompt; read the Google snippet/cache first.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's own web search with a `site:` operator — authoritative engine; results limited only by what Google has indexed from a largely login-walled site.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "de"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "site:stayfriends.de",
+      "Google StayFriends dork"
+    ],
     "tags": [
       "esocialmedia",
-      "European Social Media Sites"
+      "European Social Media Sites",
+      "stayfriends",
+      "google-dork"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-2.md"
   },
   {
@@ -348710,36 +348732,44 @@
   },
   {
     "id": "search-twitter-users",
-    "name": "Search Twitter Users",
-    "description": "OSINT tool: Search Twitter Users.",
+    "name": "Pushshift Twitter User Search",
+    "description": "Use when you follow an old Pushshift Twitter-user-search link — the endpoint is gone (404) and Pushshift no longer serves public Twitter data, so treat as defunct.",
     "url": "https://pushshift.io/twitter-user-search/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "(Defunct) bulk Twitter user/tweet search via Pushshift; the Twitter endpoints have been removed.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "down",
+    "pricing": "free",
+    "costNote": "Was a free research search over archived Twitter data; the Twitter-user-search page now returns 404 and Pushshift has retired public Twitter access.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Moot — the service is gone. When it operated it queried an archive, not Twitter live, so it was passive toward the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Pushshift was a respected academic-adjacent data archive, but after platform-API changes it wound down public Twitter search and now focuses on gated Reddit data; the Twitter user-search URL is dead.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "pushshift twitter search"
+    ],
+    "tags": [
+      "twitter",
+      "defunct"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/search-twitter-users.md"
   },
   {
