@@ -148381,44 +148381,58 @@
   {
     "id": "imagewhisperer-org",
     "name": "imagewhisperer.org",
-    "description": "OSINT tool: imagewhisperer.org.",
+    "description": "Use when you have an `image` and want to know whether it is AI-generated, deepfaked or edited before you trust it — returns a plain-language authenticity verdict plus forensic `metadata-exif` and reverse-image findings.",
     "url": "https://imagewhisperer.org/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Verifying whether a photo of a person or scene is AI-generated, manipulated, or authentic before acting on it.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "metadata-exif",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "2 free verifications without signup, then paid (about $7.99 per 20 analyses); enterprise/API plans exist. The free tier is enough for occasional one-off checks.",
+    "opsec": "passive",
+    "opsecNote": "You upload an image to a third-party server for analysis; the target is never contacted, so this is passive toward the subject. Do not upload images you are legally barred from sharing, and assume the uploaded file may be retained by the service.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent verification service marketed to journalists; its detectors are probabilistic, so treat verdicts as strong signals, not proof. Reportedly used by newsroom fact-checkers (AP/AFP/Reuters), which lends some credibility.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "fotoforensics",
+      "pixlr-com"
+    ],
+    "aliases": [
+      "Image Whisperer",
+      "imagewhisperer"
+    ],
     "tags": [
       "reverseimagesearching",
-      "Reverse Image Searching"
+      "Reverse Image Searching",
+      "image-verification",
+      "deepfake-detection"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/imagewhisperer-org.md"
   },
   {
@@ -154383,44 +154397,55 @@
   {
     "id": "pixlr-com",
     "name": "pixlr.com",
-    "description": "OSINT tool: pixlr.com.",
+    "description": "Use when you have an `image` and want to enhance, crop, or dissect it in-browser — returns a cleaned/zoomed/adjusted `image` you can then push into reverse-image or face search.",
     "url": "https://pixlr.com/x/#home",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Quick in-browser photo editing (crop, sharpen, adjust, background removal) to prep an image before reverse-image or face search.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image",
+      "face"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core editor is free with no mandatory login; AI features (background removal, upscaling, generate) and ad-free use are gated behind a paid subscription. All the tasks that matter for OSINT prep are on the free tier.",
+    "opsec": "passive",
+    "opsecNote": "Editing happens client-side/in your session; you are not querying anything about the target, so this is passive. If you use the cloud AI features the image is sent to Pixlr's servers — avoid that for sensitive material and keep a local copy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-known commercial online photo editor (Inmagine group). Reliable as a tool; it produces no investigative data itself, so \"trust\" here is about it being a stable, legitimate editor rather than a source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "imagewhisperer-org",
+      "fotoforensics"
+    ],
+    "aliases": [
+      "Pixlr X",
+      "Pixlr E"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "Photo Related Sites",
+      "image-editing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/pixlr-com.md"
   },
   {
@@ -171120,43 +171145,55 @@
   {
     "id": "create-spoof-fake-text-sms-messages",
     "name": "Create Spoof / Fake Text / SMS Messages",
-    "description": "OSINT tool: Create Spoof / Fake Text / SMS Messages.",
+    "description": "Use when you are assessing whether a text/SMS \"from\" a `phone` could be spoofed — this Spoofbox tool sends messages with a forged sender ID, so it returns nothing about a target but proves how unreliable caller/sender numbers are.",
     "url": "https://www.spoofbox.com/en/app/spoof-sms",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding and demonstrating that an SMS sender number can be forged, so a text \"from\" someone is not proof of who sent it.",
     "selectorsIn": [
-      "phone",
-      "username"
+      "phone"
     ],
     "selectorsOut": [
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Credit-based — each spoof SMS costs credits (~50 per message); a small number of free spoofs are available via promo/social engagement, but sustained use is paid. Registration required.",
+    "opsec": "active",
+    "opsecNote": "Actually SENDING a spoofed SMS contacts a real recipient and impersonates a number — that is active, potentially illegal (fraud/harassment), and traceable back to the Spoofbox account. Use this only to understand the threat (that inbound texts can be forged); do not send spoofed messages to targets or witnesses.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "untrustworthy",
+    "trustNote": "A commercial spoofing service. It produces no intelligence; its only investigative value is counter-forensic — it demonstrates that sender IDs on SMS are trivially forgeable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "zeoob-com"
+    ],
+    "aliases": [
+      "Spoofbox",
+      "Spoof SMS",
+      "fake text message sender"
+    ],
     "tags": [
       "messengerapps",
-      "Messenger Apps"
+      "Messenger Apps",
+      "spoofing"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/create-spoof-fake-text-sms-messages.md"
   },
   {
@@ -323188,37 +323225,56 @@
   {
     "id": "castrick",
     "name": "Castrick",
-    "description": "OSINT tool: Castrick.",
+    "description": "Use when you have an `email`, `username` or `phone` and want a trace-free reverse lookup into linked accounts — Castrick returned `social-profile` links from real-time sources, but the service shut down in February 2026.",
     "url": "https://castrickclues.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "(Historical) Trace-free reverse email / username / phone lookup returning linked social profiles.",
+    "selectorsIn": [
+      "email",
+      "username",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "down",
+    "pricing": "freemium",
+    "costNote": "When live, Castrick was freemium — a limited free tier plus subscriptions roughly $12–$100/month. It is no longer purchasable; the service closed on 7 February 2026 and unused credits were refunded/contacted by email.",
+    "opsec": "passive",
+    "opsecNote": "Castrick advertised trace-free lookups — it claimed not to log/store searches and that its modules did not alert the target, aggregating only real-time public sources (no breach/data-broker databases). Since the service is now down, this is moot; do not rely on the domain, and treat any site now answering on it as unaffiliated.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Was a known, community-referenced OSINT platform (listed on awesome-osint) with a stated no-log / no-broker-data policy. As of 2026 it is defunct, so the entry is retained for historical reference only.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "account-live-com"
+    ],
+    "aliases": [
+      "Castrick Clues",
+      "castrickclues.com",
+      "castrick.com"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "real-time-search-social-media-search-and-general-social-media-tools",
+      "reverse-lookup",
+      "defunct"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/castrick.md"
   },
   {
@@ -330725,40 +330781,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/getdaytrends.md"
-  },
-  {
-    "id": "getdewey-co",
-    "name": "Getdewey.co",
-    "description": "OSINT tool: Getdewey.co.",
-    "url": "https://getdewey.co/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/getdewey-co.md"
   },
   {
     "id": "gettr-com",
@@ -339583,44 +339605,56 @@
   {
     "id": "matthewcassinelli-com",
     "name": "matthewcassinelli.com",
-    "description": "OSINT tool: matthewcassinelli.com.",
+    "description": "Use when you have a Mastodon/fediverse handle or profile link and want its stable numeric account ID — this free Apple Shortcut returns the account ID via the Mastodon lookup API so you can track the account across handle changes.",
     "url": "https://matthewcassinelli.com/shortcuts-mastodon-lookup-account-id/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving a Mastodon handle/profile URL to its permanent numeric account ID (which survives display-name and handle changes).",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "device-id",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "This specific shortcut is a free download; the author's broader Shortcuts Library is membership-based, but the Mastodon lookup shortcut itself is free. Requires Apple Shortcuts (iOS/macOS).",
+    "opsec": "passive",
+    "opsecNote": "The shortcut calls the target instance's public /api/v1/accounts/lookup endpoint — an unauthenticated read that any client makes when loading a profile. No follow, no interaction, no notification to the account. Passive, though the request originates from your IP unless you route it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "Published by Matthew Cassinelli, a well-known Shortcuts author; the shortcut is a thin wrapper over Mastodon's documented public API, so its output is as reliable as the instance's own API.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "trevorfox-com-2"
+    ],
+    "aliases": [
+      "Mastodon Lookup Account ID shortcut",
+      "Matthew Cassinelli Shortcuts"
+    ],
     "tags": [
       "mastodon",
-      "Mastodon Related Sites"
+      "Mastodon Related Sites",
+      "fediverse"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/matthewcassinelli-com.md"
   },
   {
@@ -354031,43 +354065,55 @@
   {
     "id": "threads-dashboard",
     "name": "Threads Dashboard",
-    "description": "Threads account analytics and engagement investigation",
+    "description": "Use when you control (or can log into) a Meta Threads account and want its analytics — returns follower trends, engagement, posting cadence and audience demographics for that connected `social-profile`.",
     "url": "https://www.threadsdashboard.com/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "threads"
     ],
-    "bestFor": "Threads account analytics and engagement investigation",
-    "input": "Threads username or account URL",
-    "output": "Audience demographics, engagement rates, posting frequency, optimal posting times, and historical data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Analytics on a Threads account you can authenticate as — follower growth, engagement, posting times, audience demographics.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Perpetual free tier gives basic metrics and current-week data; Pro (~$5.99/mo, or ~$4.99/mo annual) unlocks 6–12 months of history, advanced charts, and follower demographics.",
     "opsec": "passive",
-    "opsecNote": "Retrieves data via Meta's official Threads API; no direct contact with the target account.",
+    "opsecNote": "Data is pulled through Meta's official Threads API via one-click Meta login — so you can only analyse an account you can authenticate as (your own or a sock puppet you control), NOT an arbitrary target. It does not touch or notify third-party accounts. Passive, but it requires connecting a Meta account, which ties the activity to that login.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party analytics SaaS built on Meta's Threads API. It surfaces official Meta metrics for a connected account; reliability depends on Meta's API, and the service is a small commercial operator with no independent track record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Threads Dashboard",
+      "threadsdashboard.com"
+    ],
+    "tags": [
+      "threads",
+      "meta-threads",
+      "social-analytics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/threads/threads-dashboard.md"
   },
   {
@@ -356092,44 +356138,52 @@
   {
     "id": "trevorfox-com-2",
     "name": "trevorfox.com",
-    "description": "OSINT tool: trevorfox.com.",
+    "description": "Use when you have a LinkedIn post/activity URL (a `social-profile` artifact) and want its true publication timestamp — returns the exact `dob`-style creation date/time decoded from the post ID.",
     "url": "https://trevorfox.com/linkedin-post-date-extractor.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting the exact date/time a LinkedIn post was published from its URL, even when LinkedIn only shows \"3w ago.\"",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The post-date extractor is free and needs no login; the site also promotes a paid analytics product (\"Flux\"), which is unrelated to this single-purpose tool.",
+    "opsec": "passive",
+    "opsecNote": "Decoding happens locally in your browser from the post ID embedded in the URL — LinkedIn is not queried and the poster gets no notification. Fully passive. You do need to have obtained the post URL first (viewing the post on LinkedIn is a separate, logged action if done from an attributable account).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A single-purpose utility by developer Trevor Fox; the timestamp math (decoding the epoch millis from the first 41 bits of the post ID) is deterministic and verifiable, so results are reliable regardless of who hosts the page.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "matthewcassinelli-com"
+    ],
+    "aliases": [
+      "LinkedIn Post Date Extractor",
+      "Trevor Fox LinkedIn timestamp"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "timestamp"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/trevorfox-com-2.md"
   },
   {
@@ -364899,44 +364953,52 @@
   {
     "id": "zeoob-com",
     "name": "zeoob.com",
-    "description": "OSINT tool: zeoob.com.",
+    "description": "Use when you have a screenshot of a Snapchat/Instagram/WhatsApp chat or post and want to judge whether it could be fabricated — this is a fake-generator, so it returns nothing about a target but teaches you what forged `social-profile` evidence looks like.",
     "url": "https://zeoob.com/generate-snapchat-chat/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising and stress-testing fabricated social-media screenshots (Snapchat/Instagram/WhatsApp/Twitter) submitted as \"evidence.\"",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use in-browser; some templates or watermark removal may be gated, but the core generators are free.",
+    "opsec": "passive",
+    "opsecNote": "Generating a mock screenshot touches nothing about any real person and is passive. Creating and then presenting a fake conversation as real, however, can be fraud/defamation — use it only defensively (to test whether a submitted screenshot is forgeable), never to fabricate evidence.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "untrustworthy",
+    "trustNote": "This is deliberately a fake-content generator. It produces no real data; its only OSINT value is counter-forensic — understanding how convincingly chat/DM \"proof\" can be faked.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "create-spoof-fake-text-sms"
+    ],
+    "aliases": [
+      "Zeoob",
+      "fake Snapchat chat generator"
+    ],
     "tags": [
       "snapchat",
-      "Snapchat"
+      "Snapchat",
+      "fake-content-generator"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/zeoob-com.md"
   },
   {
