@@ -154993,31 +154993,33 @@
   },
   {
     "id": "podcast-alley",
-    "name": "Podcast Alley",
-    "description": "Website related to social networking and podcasting services",
+    "name": "Podcast Alley (Podcast Machine)",
+    "description": "Use when you have a `name`/`username` and want to check whether a subject self-hosts a podcast here — returns a show page with bio, photo and audio (a niche host, not a search directory).",
     "url": "https://podcastmachine.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and pulling a subject's self-hosted podcast (bio, cover image, voice) if they publish on Podcast Machine.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
+      "social-profile",
       "image",
-      "social-profile"
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier (1 GB storage) up to a $39/month plan; viewing a public show page needs no account or payment — the paid tiers are for creators hosting content, not for searchers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public show page is an anonymous pageview and does not notify the podcaster. Registering as a creator is unnecessary for OSINT; if you do sign up, use a sock-puppet identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party podcast hosting/publishing platform, not a curated OSINT source; it was harvested into a directory under a mislabeled name (\"Podcast Alley\"). Any hosted content is self-published by the show owner.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -155026,14 +155028,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Podcast Machine",
+      "podcastmachine.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "podcast"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/podcast-alley.md"
   },
@@ -173629,44 +173635,56 @@
   },
   {
     "id": "kalilinuxtutorials-com",
-    "name": "kalilinuxtutorials.com",
-    "description": "OSINT tool: kalilinuxtutorials.com.",
+    "name": "kalilinuxtutorials.com (WhatsApp OSINT / whatsappbeacon)",
+    "description": "Use when you have a target's `phone`/WhatsApp `username` and want to monitor their online/offline pattern and pull profile metadata — returns activity timing, profile photo and status text.",
     "url": "https://kalilinuxtutorials.com/whatsapp-osint-tool-2/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Passively logging a WhatsApp contact's online/offline activity pattern and scraping their public profile picture/status.",
     "selectorsIn": [
       "phone",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image",
+      "metadata-exif"
     ],
     "status": "unknown",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "The described tool (whatsappbeacon.py) is a free open-source script; the kalilinuxtutorials.com page is a how-to article, not the tool itself.",
+    "opsec": "active",
+    "opsecNote": "This drives WhatsApp Web through Selenium logged in as YOUR (sock-puppet) account, and the target must be in that account's contacts. Repeatedly opening their chat to read presence is an active interaction with WhatsApp's servers; use a burner number/device, never your real account, and note that presence-monitoring of a specific person can be legally sensitive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A hobbyist Selenium script written up on a tutorial blog; brittle against WhatsApp Web UI changes and not an official or vetted product.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "whatsappbeacon",
+      "WhatsApp OSINT Tool"
+    ],
     "tags": [
       "whatsapp",
-      "WhatsApp"
+      "WhatsApp",
+      "presence-monitoring",
+      "selenium"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/kalilinuxtutorials-com.md"
   },
   {
@@ -176155,38 +176173,53 @@
   },
   {
     "id": "sherlock-3",
-    "name": "Sherlock",
-    "description": "OSINT tool: Sherlock.",
+    "name": "Sherlock (Telegram Getcontact-style bot)",
+    "description": "Use when you have a `phone` number and want the names it is saved as in other people's contacts — a Telegram GetContact-style lookup bot that returns name/tag strings.",
     "url": "https://t.me/Getcontact123qwerty_bot?start=_ref_jGW8Sa_iEmG9V",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reverse phone → name/tag lookup by querying crowdsourced contact-book data via a Telegram bot.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
     "status": "unknown",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "costNote": "The bot advertises free lookups, typically metered — a few queries then a paywall/credit prompt or a referral requirement.",
+    "opsec": "active",
+    "opsecNote": "You hand the target's phone number to an unknown third-party bot operator via your Telegram account, which reveals your Telegram identity/ID to them and logs the number you searched. Use a burner Telegram account, never your real one. Assume the operator harvests every number queried.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "chrome-mcp",
+    "trust": "unverified",
+    "trustNote": "An anonymous Telegram bot reached via a referral link — not the official GetContact app. Could be a legitimate data reseller, a scam, or a data-harvesting honeypot; provenance and data quality are unknown.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Getcontact Telegram bot",
+      "phone name lookup bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "getcontact",
+      "phone-lookup",
+      "caller-id"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/sherlock-3.md"
   },
   {
@@ -211826,51 +211859,62 @@
   {
     "id": "one-charliebrassington",
     "name": "one (charliebrassington)",
-    "description": "OSINT tool with multiple scrapers including a cyberbackgroundchecks integration.",
+    "description": "Use when you have an `email`, `username`, `name` or UK postcode and want a Python CLI that scrapes multiple people-search and account sources at once — returns addresses, phones, associates and linked accounts.",
     "url": "https://github.com/charliebrassington/one",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "US people-search scraping (background-check style data)",
+    "bestFor": "Running several people-search / account-discovery scrapers (US + UK, Discord, Minecraft, account-recovery) from one command line.",
     "selectorsIn": [
+      "email",
+      "username",
       "name",
-      "phone",
       "address",
-      "email"
+      "phone"
     ],
     "selectorsOut": [
       "address",
       "phone",
       "associate",
-      "name"
+      "name",
+      "social-profile"
     ],
     "status": "unknown",
     "pricing": "free",
+    "costNote": "Open-source (MIT-style) on GitHub, free to clone and run; some individual scrapers may hit paywalled or rate-limited upstream sites.",
     "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Each scraper queries a live third-party site (people-search DBs, Discord, Virgin Media postcode lookup) directly from your IP, so this is active — those sites log the request and may rate-limit or block. Run from a sock-puppet IP/VPN, and expect that scraping people-search sites can violate their ToS.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "Small community scraper (34 stars); scrapes third-party people-search sites (ToS-sensitive).",
+    "trustNote": "Small community project (~34 GitHub stars) by an individual developer; code is inspectable but unmaintained-scale and dependent on brittle upstream scrapers that break when target sites change.",
     "missingPersonsRelevance": "high",
     "coverage": [
-      "us"
+      "us",
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "one osint tool",
+      "charliebrassington/one"
+    ],
     "tags": [
       "people-search",
       "scraper",
       "cyberbackgroundchecks",
-      "us"
+      "us",
+      "uk",
+      "python"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/people-search/one-charliebrassington.md"
   },
@@ -247317,47 +247361,57 @@
   },
   {
     "id": "icas-org-uk",
-    "name": "icas.org.uk",
-    "description": "OSINT tool: icas.org.uk.",
+    "name": "icas.org.uk (Find a CA)",
+    "description": "Use when you have a `name` or firm and want to verify/locate a Chartered Accountant registered with ICAS — returns the member/firm, their firm's address and professional standing.",
     "url": "https://www.icas.com/find-a-ca",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming that a person is a genuine ICAS-registered Chartered Accountant and finding their firm/location.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "employer-org",
+      "address"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory run by ICAS; no account or payment to search.",
+    "opsec": "passive",
+    "opsecNote": "Searching a public professional directory does not notify the subject and is passive. You disclose your interest only to ICAS's website; a normal browser session is fine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by ICAS (The Institute of Chartered Accountants of Scotland), the statutory professional body — an authoritative first-party register of its members.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Find a CA",
+      "ICAS member directory",
+      "Institute of Chartered Accountants of Scotland"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "accountant",
+      "uk",
+      "verification"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/icas-org-uk.md"
   },
   {
@@ -258235,47 +258289,56 @@
   },
   {
     "id": "nibusinessinfo-co-uk",
-    "name": "nibusinessinfo.co.uk",
-    "description": "OSINT tool: nibusinessinfo.co.uk.",
+    "name": "nibusinessinfo.co.uk (business rates / LPS valuation)",
+    "description": "Use when you have a Northern Ireland `address` or business and want its rating valuation — a guidance portal that links to the LPS valuation search returning a property's Net Annual Value.",
     "url": "https://www.nibusinessinfo.co.uk/content/business-rates",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reaching the NI Land & Property Services valuation search to confirm a non-domestic property and its rateable value from an address.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
       "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free government guidance portal; the linked LPS valuation search is also free and needs no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading rating guidance and running an address through the LPS valuation search are anonymous lookups against government sites — passive, with no notification to any occupier. A normal browser session is fine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "nibusinessinfo.co.uk is the official NI government business-support portal (Invest NI); it links to Land & Property Services (Dept of Finance), the statutory valuation authority — authoritative first-party sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Northern Ireland business rates",
+      "LPS valuation search",
+      "nibusinessinfo"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "northern-ireland",
+      "business-rates",
+      "property"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nibusinessinfo-co-uk.md"
   },
   {
@@ -330792,49 +330855,6 @@
     "_file": "library/tools/social-networks/google-com-4.md"
   },
   {
-    "id": "google-com-43",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Anairaland.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gsocialmedia",
-      "General Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-43.md"
-  },
-  {
     "id": "google-com-44",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -331326,49 +331346,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/google-com-60.md"
-  },
-  {
-    "id": "google-com-61",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Apeople.bayt.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "linkedin",
-      "LinkedIn & Similar Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-61.md"
   },
   {
     "id": "google-com-62",
@@ -361078,44 +361055,53 @@
   {
     "id": "worldcam-search-instagram-by-location",
     "name": "Worldcam - Search Instagram by location",
-    "description": "OSINT tool: Worldcam - Search Instagram by location.",
+    "description": "Use when you have a `geolocation`/`address` and want to see public Instagram photos taken there — returns images, poster usernames and social-profile links (largely defunct since Instagram removed its location API).",
     "url": "http://worldc.am",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Historically, surfacing public Instagram posts geotagged to a specific place or venue.",
     "selectorsIn": [
-      "username",
-      "name"
+      "geolocation",
+      "address"
     ],
     "selectorsOut": [
-      "social-profile",
       "image",
+      "social-profile",
+      "username",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "down",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Was free with no login; built on the (now-deprecated) public Instagram, Foursquare and Geonames APIs.",
+    "opsec": "passive",
+    "opsecNote": "Querying a third-party web front end for a location does not touch the target's account, so it is passive against the subject. You do, however, disclose the location/venue of interest to whoever operates worldc.am; use a sock-puppet browser/IP if the location itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party mashup by \"Act Normal\"; depended entirely on Instagram's public location API, which Instagram shut down. No first-party guarantees and no recent evidence of a working index.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Worldcam",
+      "worldc.am"
+    ],
     "tags": [
-      "instagram"
+      "instagram",
+      "geolocation",
+      "location-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/worldcam-search-instagram-by-location.md"
   },
   {
