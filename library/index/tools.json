@@ -235638,45 +235638,58 @@
   },
   {
     "id": "crimereports",
-    "name": "CrimeReports",
-    "description": "OSINT tool: CrimeReports.",
+    "name": "CrimeReports (LexisNexis Community Crime Map)",
+    "description": "Use when you have an `address`/`geolocation` and want to see recent reported crime incidents around it — returns block-level incident locations, types, and dates.",
     "url": "https://www.crimereports.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping recent police-reported crime incidents around a location, block by block, from participating US agencies.",
     "selectorsIn": [
-      "name"
+      "address",
+      "geolocation"
     ],
     "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public crime map; the CrimeReports brand is now LexisNexis Community Crime Map (communitycrimemap.com). No account needed to view.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a public crime map is passive and reveals nothing about your interest in a specific person — you query a location, not a subject. Safe to use openly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Incident data is fed directly by participating law-enforcement agencies to LexisNexis and geocoded to block level; authoritative where an agency participates, blank where it does not.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "spotcrime",
+      "nsopw"
+    ],
+    "aliases": [
+      "CrimeReports",
+      "Community Crime Map",
+      "communitycrimemap.com"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "crime-map",
+      "public-records"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/crimereports.md"
   },
   {
@@ -250614,14 +250627,14 @@
   },
   {
     "id": "irishdentalassoc-ie",
-    "name": "irishdentalassoc.ie",
-    "description": "OSINT tool: irishdentalassoc.ie.",
+    "name": "Irish Dental Association – Find A Dentist",
+    "description": "Use when you have a dentist's `name` or a location in Ireland and want to confirm they are a practising IDA member and find their practice — returns practice address and employer-org.",
     "url": "https://portal.irishdentalassoc.ie/Find-A-Dentist",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a dentist's professional affiliation in Ireland and locating their practice via the Irish Dental Association member directory.",
     "selectorsIn": [
       "name",
       "address",
@@ -250632,29 +250645,40 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory search; no account required to look up a dentist.",
+    "opsec": "passive",
+    "opsecNote": "A standard directory lookup — searching a professional register does not notify the subject. Fully passive; you're querying a membership body's public \"find a member\" page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Irish Dental Association, the professional body for dentists in Ireland; listings are member-supplied but maintained by the association, making it authoritative for IDA membership.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "dentalcouncil-ie"
+    ],
+    "aliases": [
+      "IDA Find A Dentist",
+      "Irish Dental Association member finder"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "professional-register",
+      "ireland"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/irishdentalassoc-ie.md"
   },
   {
@@ -262705,35 +262729,61 @@
   {
     "id": "osint-list-of-public-sex-offenders-registers-osintme-com",
     "name": "OSINT list of public sex offenders registers – osintme.com",
-    "description": "OSINT tool: OSINT list of public sex offenders registers – osintme.com.",
+    "description": "Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to national registers that can confirm an address, photo, or DOB.",
     "url": "https://www.osintme.com/index.php/2021/08/31/osint-list-of-public-sex-offenders-registers/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A curated country-by-country index of publicly accessible sex-offender registers, for checking a named subject against official registries.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "image",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free blog article; the registers it links to are themselves public and free, though some require captcha or local-language navigation.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the OSINTme article is passive. The linked registers are official government sites — searching them is generally passive too, but some (e.g. the US NSOPW) log queries and a few require you to accept terms; use a clean browser and avoid entering identifying info about yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Written by OSINTme (Matthias Wilson), a recognized OSINT practitioner; the article is a signpost, and the authority rests with the official government registers it links to.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global",
+      "us",
+      "kr",
+      "ca",
+      "gb",
+      "ng",
+      "pl"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "nsopw",
+      "osintme-com"
+    ],
+    "aliases": [
+      "OSINTme sex offender registers list",
+      "public sex offender registers"
+    ],
+    "tags": [
+      "sex-offender-register",
+      "curated-list",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/osint-list-of-public-sex-offenders-registers-osintme-com.md"
   },
   {
@@ -318182,44 +318232,59 @@
   },
   {
     "id": "xen00rw-me",
-    "name": "xen00rw.me",
-    "description": "OSINT tool: xen00rw.me.",
+    "name": "Go for Dorks (xen00rw.me)",
+    "description": "Use when you have a subject or target domain and want to build advanced search-operator (dork) queries across many engines from one interface — returns crafted queries that surface names, profiles, and exposed files.",
     "url": "https://dorks.xen00rw.me/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Constructing and launching Google-dork-style operator queries across multiple search and recon engines from a single form.",
     "selectorsIn": [
-      "name"
+      "name",
+      "domain",
+      "email"
     ],
     "selectorsOut": [
       "name",
-      "social-profile"
+      "social-profile",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web utility; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The builder itself is passive — it just assembles a query string. Exposure happens when you run the query on the target engine (Google/Bing/Shodan/etc.), which logs the search against your IP. Use a sock-puppet/VPN session for the actual searches, especially against Shodan/FOFA/LeakIX.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "An independent practitioner-built dork helper; it constructs queries client-side and sends you to the chosen engine, so there is no data-collection risk beyond the engines themselves.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-dorking",
+      "dorksearch"
+    ],
+    "aliases": [
+      "Go for Dorks",
+      "xen00rw dorks"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "google-dorks",
+      "query-builder"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/xen00rw-me.md"
   },
   {
@@ -322095,45 +322160,57 @@
   },
   {
     "id": "bluesky-insights-dwagentai-com",
-    "name": "bluesky-insights.dwagentai.com",
-    "description": "OSINT tool: bluesky-insights.dwagentai.com.",
+    "name": "Bluesky Insights",
+    "description": "Use when you have a Bluesky `username`/handle and want follower-growth analytics and similar-account discovery — returns social-profile metrics and related accounts.",
     "url": "https://bluesky-insights.dwagentai.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Quick, no-login analytics on a Bluesky handle — follower trends, growth velocity, and discovery of similar profiles.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
+      "associate",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no signup and the site states it stores no user data.",
+    "opsec": "passive",
+    "opsecNote": "It reads public Bluesky (AT Protocol) data and requires no login, so the subject is not notified. You do route the handle through a third-party host (dwagentai.com) that could log your queries — use a sock-puppet browser if the subject is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "An independent third-party analytics front-end over public Bluesky data; ownership is unverified, but the underlying data is Bluesky's open, public firehose.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "clearsky-app",
+      "bsky-app"
+    ],
+    "aliases": [
+      "Bluesky Insights",
+      "bsky insights"
+    ],
     "tags": [
       "bluesky",
-      "BlueSky / BSky Related Sites"
+      "BlueSky / BSky Related Sites",
+      "analytics"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bluesky-insights-dwagentai-com.md"
   },
   {
@@ -342620,45 +342697,61 @@
   },
   {
     "id": "osint-tactical",
-    "name": "OSINT Tactical",
-    "description": "OSINT tool: OSINT Tactical.",
+    "name": "OSINT Tactical (C3n7ral051nt4g3ncy)",
+    "description": "Use when you have a `username`, Mastodon handle, or domain and want purpose-built recon tools — returns the developer's OSINT toolset (username enumeration, Mastodon intel, web recon).",
     "url": "https://github.com/C3n7ral051nt4g3ncy",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "A prolific OSINT developer's GitHub with tools for username enumeration, Mastodon intelligence, and web reconnaissance.",
     "selectorsIn": [
       "username",
-      "name"
+      "name",
+      "domain"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source repositories on GitHub; some tools are also on PyPI.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the GitHub profile is passive. The tools you run from it vary — username enumerators and Mastodon scrapers make requests that hit target platforms; run them from a sock-puppet environment and review each tool's behavior before pointing it at a live subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Maintained by C3n7ral051nt4g3ncy / \"OSINT Tactical,\" a recognized OSINT practitioner (1k+ followers, CTF participant); open-source code is inspectable, though as with any third-party tool, review before running.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whatsmyname",
+      "sherlock",
+      "masto-python"
+    ],
+    "aliases": [
+      "OSINT Tactical",
+      "C3n7ral051nt4g3ncy",
+      "Central Intelligence Agency OSINT"
+    ],
     "tags": [
       "mastodon",
-      "Mastodon Related Sites"
+      "Mastodon Related Sites",
+      "username-enumeration",
+      "toolmaker"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/osint-tactical.md"
   },
   {
@@ -352797,37 +352890,54 @@
   {
     "id": "tagdef",
     "name": "Tagdef",
-    "description": "OSINT tool: Tagdef.",
+    "description": "Use when you have a hashtag from a subject's posts and want to know what it means and who uses it — returns the crowd-sourced definition plus recent tweets using the tag.",
     "url": "https://tagdef.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Decoding unfamiliar hashtags — their meaning, origin, and recent usage — to interpret a subject's posts and find related communities.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free ad-supported site; no account needed to look up a hashtag.",
+    "opsec": "passive",
+    "opsecNote": "Looking up a hashtag definition reveals nothing about your target — you're querying a public dictionary, not the subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "A long-running crowd-sourced hashtag dictionary; definitions are user-submitted and voted on, so treat meanings as community consensus rather than authoritative fact.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "hashtagify",
+      "twitter-x-advanced-search"
+    ],
+    "aliases": [
+      "Tagdef",
+      "tagdef.com",
+      "social media dictionary"
+    ],
     "tags": [
-      "twitter"
+      "twitter",
+      "hashtag",
+      "context"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/tagdef.md"
   },
   {
