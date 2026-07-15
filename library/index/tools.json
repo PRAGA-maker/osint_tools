@@ -175558,13 +175558,13 @@
   {
     "id": "osintteam-blog-3",
     "name": "osintteam.blog",
-    "description": "OSINT tool: osintteam.blog.",
+    "description": "Use when you have a `phone` or `username` and want a curated shortlist of WhatsApp OSINT tools/techniques to try — returns a listicle pointing to `social-profile` methods, not a lookup.",
     "url": "https://osintteam.blog/whatsapp-osint-tools-for-osint-investigators-c9050048193b",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "A curated inventory of WhatsApp OSINT tools and techniques for investigating a number/handle.",
     "selectorsIn": [
       "phone",
       "username"
@@ -175572,29 +175572,34 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Medium-hosted article (The OSINT Team publication); Medium may show a sign-in/paywall interstitial after a few free reads.",
+    "opsec": "passive",
+    "opsecNote": "Reading is passive. Many WhatsApp techniques it describes are ACTIVE — e.g. adding a target's number as a contact to view their profile photo/about/last-seen can be logged and, if you message, is visible. Use a burner WhatsApp number and never message the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community Medium publication; a useful curated pointer, but a listicle — verify each named tool/technique is still live and legal in your jurisdiction.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "The OSINT Team WhatsApp tools"
+    ],
     "tags": [
       "whatsapp",
       "WhatsApp"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/osintteam-blog-3.md"
   },
   {
@@ -244158,46 +244163,53 @@
   {
     "id": "germany",
     "name": "Germany",
-    "description": "OSINT tool: Germany.",
+    "description": "Use when you have a German company/association (`employer-org`) or a `name` behind one and want beneficial-ownership and registry data — returns `employer-org` detail, `associate` officers/owners, and `address`.",
     "url": "https://www.transparenzregister.de/treg/de/start;jsessionid=70446A1E6E977FEDA187BC388AE0B5B7.app11?0",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up German beneficial owners and the people/addresses behind companies and associations.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The Transparenzregister is free to search, but access requires a free registered account (introduced under the 2017/2020 transparency rules); some documents/extracts may carry a small fee.",
+    "opsec": "passive",
+    "opsecNote": "Querying the register is passive and not disclosed to the company or individuals. Note that under German rules the register can log who accessed certain beneficial-owner records; use an account that isn't tied to a sensitive investigation identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Germany's statutory Transparency Register (operated for the Federal Ministry of Finance by Bundesanzeiger Verlag); authoritative for registered beneficial-ownership data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "de"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "Transparenzregister",
+      "German Transparency Register"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/germany.md"
   },
   {
@@ -333191,13 +333203,13 @@
   {
     "id": "google-com-88",
     "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "description": "Use when you have a `username` or `name` and want to find a subject's public Snapchat Spotlight content via a Google site-search dork — returns `social-profile` and post links.",
     "url": "https://www.google.com/search?q=site%3Asnapchat.com%2F+inurl%3Aspotlight%2F&rlz=1C1CHBD_en-GBGB1007GB1007&oq=site%3Asnapchat.com%2F+inurl%3Aspotlight%2F&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEHNzI1ajBqOagCBrACAfEFmpw_HnrbJIU&sourceid=chrome&ie=UTF-8",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Dorking Google for publicly indexed Snapchat Spotlight posts tied to a person.",
     "selectorsIn": [
       "username",
       "name"
@@ -333206,29 +333218,35 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Uses only Google search; free, no account.",
+    "opsec": "passive",
+    "opsecNote": "Query hits Google, not Snapchat, so the subject is not alerted and you avoid opening the Snapchat app/account. Search signed out / in a sock browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A Google `site:`/`inurl:` dork, not a third-party tool; reliability equals Google's index of public Snapchat Spotlight pages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "site:snapchat.com inurl:spotlight dork",
+      "Snapchat Spotlight Google search"
+    ],
     "tags": [
       "snapchat",
       "Snapchat"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-88.md"
   },
   {
@@ -339533,13 +339551,13 @@
   {
     "id": "linkedinsider-deutschland-blog-von-stephan-ko",
     "name": "LinkedInsider Deutschland Blog von Stephan Koß",
-    "description": "OSINT tool: LinkedInsider Deutschland Blog von Stephan Koß.",
+    "description": "Use when investigating a subject on LinkedIn (especially German-market) and want expert technique/hidden-feature tips — returns methods for finding and reading `social-profile`s, not a lookup.",
     "url": "https://linkedinsiders.wordpress.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "German-market LinkedIn tips and lesser-known features useful for OSINT on LinkedIn profiles.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -339548,28 +339566,35 @@
       "social-profile",
       "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free WordPress blog; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading the blog is passive. Applying LinkedIn techniques may be active — LinkedIn shows \"who viewed your profile\", so use private mode or a sock account when you then browse.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Written by Stephan Koß, a long-standing German LinkedIn specialist; practitioner insight (partly German-language), not vendor documentation — verify features still exist as LinkedIn changes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "de",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "LinkedInsider",
+      "Stephan Koß LinkedIn blog"
+    ],
     "tags": [
       "linkedin"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/linkedinsider-deutschland-blog-von-stephan-ko.md"
   },
   {
@@ -357704,7 +357729,7 @@
   {
     "id": "tweet-metadata",
     "name": "Tweet Metadata",
-    "description": "Understanding tweet metadata fields for forensic analysis",
+    "description": "Use when you have a tweet or a `social-profile`'s exported data and need to interpret the metadata fields forensically — returns field-level meaning for timestamps, source, and geo data.",
     "url": "https://www.wsj.com/public/resources/documents/TweetMetadata.pdf",
     "category": "social-networks",
     "path": [
@@ -357712,34 +357737,44 @@
       "twitter",
       "analytics"
     ],
-    "bestFor": "Understanding tweet metadata fields for forensic analysis",
-    "input": "Tweet JSON/export data and metadata field references",
-    "output": "Field-level interpretation guidance for tweet metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Reading and interpreting the metadata fields inside tweet/account JSON for forensic analysis.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free reference document hosted by the Wall Street Journal.",
     "opsec": "passive",
-    "opsecNote": "Documentation resource only; does not query live targets directly.",
+    "opsecNote": "A documentation resource — reading it and analysing already-collected tweet data touches no live target and alerts no one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A WSJ-published reference mapping tweet metadata fields; the field definitions mirror Twitter/X's documented object model, though the API/object schema has evolved since publication.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WSJ Tweet Metadata reference",
+      "tweet metadata fields"
+    ],
+    "tags": [
+      "twitter",
+      "metadata",
+      "forensics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/tweet-metadata.md"
   },
   {
