@@ -162794,44 +162794,53 @@
   {
     "id": "yoodownload-com-2",
     "name": "yoodownload.com",
-    "description": "OSINT tool: yoodownload.com.",
+    "description": "Use when you have a public video URL (YouTube/Facebook/Instagram/Twitter/Vimeo) and want to save the clip or its audio for evidence and frame-by-frame review — returns a downloadable video/`image`/audio file.",
     "url": "https://yoodownload.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a public video (or its audio) from a URL for offline preservation and frame-by-frame analysis.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no login. It is an older service (public changelog stalls around 2018), so reliability across platforms is patchy — keep a fallback downloader ready.",
+    "opsec": "passive",
+    "opsecNote": "You supply a public video URL; the download is fetched server-side by Yoodownload. The uploader is not notified. Passive — but the request routes through a third-party site, so use a research browser for sensitive material and keep a local copy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A generic third-party video downloader of some age. It retrieves genuine public media, but it is not authoritative, coverage has likely eroded as platforms changed, and ad-heavy downloader sites warrant caution.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ytlarge-com-3",
+      "threadsphotodownloader-com"
+    ],
+    "aliases": [
+      "Yoodownload"
+    ],
     "tags": [
       "videosites",
-      "Video Related Sites"
+      "Video Related Sites",
+      "media-downloader"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/yoodownload-com-2.md"
   },
   {
@@ -163464,44 +163473,54 @@
   {
     "id": "ytlarge-com-3",
     "name": "ytlarge.com",
-    "description": "OSINT tool: ytlarge.com.",
+    "description": "Use when you have a YouTube video URL and want its true upload timestamp, tags, stats and downloadable thumbnails — returns `metadata-exif`-style video data for verification and timeline-building.",
     "url": "https://ytlarge.com/youtube/video-data-viewer/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a YouTube video's exact published/modified date, tags, stats and thumbnails from its URL for verification and timelines.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool, no login; it reads public video metadata via the YouTube Data API server-side.",
+    "opsec": "passive",
+    "opsecNote": "The lookup is a public-metadata read done by YTLarge's server; the uploader is not notified and you never interact with the channel. Passive. Your query goes to a third-party site, so use a research browser if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "YTLarge is an established YouTube-tools site. The data it shows (published date, tags, stats, thumbnails) comes from YouTube's own API, so it is verifiable and authoritative.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "trevorfox-com-2",
+      "imagewhisperer-org"
+    ],
+    "aliases": [
+      "YTLarge Video Data Viewer",
+      "YouTube video data viewer"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "metadata"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ytlarge-com-3.md"
   },
   {
@@ -171302,43 +171321,52 @@
   {
     "id": "create-spoof-fake-whatsapp-facebook-twitter-skype-messenger",
     "name": "Create Spoof / Fake WhatsApp, Facebook, Twitter, Skype Messenger",
-    "description": "OSINT tool: Create Spoof / Fake WhatsApp, Facebook, Twitter, Skype Messenger.",
+    "description": "Use when a WhatsApp/Facebook/Twitter/Skype chat screenshot is offered as evidence and you need to gauge how forgeable it is — this GeekPrank generator makes convincing fake chat images, so it returns no real data, only proof that such screenshots can't be trusted alone.",
     "url": "https://geekprank.com/chat-screenshot/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
+    "bestFor": "Demonstrating how easily multi-platform chat screenshots (WhatsApp/Messenger/Twitter/Skype/iMessage) can be fabricated, so message \"evidence\" is treated as unverified.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free in-browser generator; no login or install.",
+    "opsec": "passive",
+    "opsecNote": "Making a mock screenshot touches no real person and is passive. Presenting a fabricated conversation as genuine, however, can be fraud/defamation — use it strictly to test whether a submitted screenshot is forgeable, never to manufacture evidence.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "untrustworthy",
+    "trustNote": "A prank/fabrication tool by design; it outputs no real data. Its only investigative value is counter-forensic — showing that a chat screenshot is not proof on its own.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "zeoob-com",
+      "fakeinfo-net",
+      "create-spoof-fake-text-sms-messages"
+    ],
+    "aliases": [
+      "GeekPrank chat screenshot",
+      "fake WhatsApp/Messenger screenshot generator"
+    ],
     "tags": [
       "messengerapps",
-      "Messenger Apps"
+      "Messenger Apps",
+      "fake-content-generator"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/create-spoof-fake-whatsapp-facebook-twitter-skype-messenger.md"
   },
   {
@@ -383998,42 +384026,55 @@
   {
     "id": "unavatar",
     "name": "Unavatar",
-    "description": "Simple free online tool for finding avatars. Replace john in link to nickname, email or domain name",
+    "description": "Use when you have an `email`, `username`, or `domain` and want the associated avatar/profile picture pulled from across platforms — returns the person's `image` (and hints which service hosts it) to feed into reverse-image/face search.",
     "url": "https://unavatar.io/john",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "",
+    "bestFor": "Retrieving a person's avatar/profile photo from an email, username, or domain by aggregating many platforms through one URL/API.",
     "selectorsIn": [
       "email",
-      "username"
+      "username",
+      "domain"
     ],
     "selectorsOut": [
-      "social-profile",
-      "username"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to use by URL (rate-limited); an optional API key / paid tier raises limits for heavy/automated use. Open-source project, self-hostable.",
+    "opsec": "passive",
+    "opsecNote": "Unavatar's server fetches the avatar from the underlying providers, so the target's platforms see Unavatar's IP, not yours — a useful buffer. Passive. You are still disclosing the selector (email/username) to a third-party service; use a research context for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "api",
+    "trust": "community",
+    "trustNote": "A popular open-source avatar-aggregation API (widely used, source on GitHub). It returns real avatars pulled live from providers like Gravatar, GitHub, social platforms; if none is found it can fall back to a generated placeholder, so confirm you got a real hit.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "imagewhisperer-org",
+      "inflact-com-2"
+    ],
+    "aliases": [
+      "unavatar.io",
+      "universal avatar API"
+    ],
     "tags": [
-      "Nicknames"
+      "Nicknames",
+      "avatar",
+      "profile-image"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/username/unavatar.md"
   },
