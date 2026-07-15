@@ -163456,45 +163456,57 @@
   },
   {
     "id": "ytlarge-com-4",
-    "name": "ytlarge.com",
-    "description": "OSINT tool: ytlarge.com.",
+    "name": "YTLarge YouTube toolkit",
+    "description": "Use when you have a YouTube channel/video (`social-profile`) and want to profile it — returns channel ID, stats, tags, thumbnails, shadowban/monetization status and other `metadata-exif`-style channel data.",
     "url": "https://ytlarge.com/youtube/monetization-checker/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Extracting a YouTube channel/video's hidden IDs, tags, stats and status for investigation.",
     "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif",
+      "image",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tools; no account needed for the checkers.",
+    "opsec": "passive",
+    "opsecNote": "These tools query YouTube's public data about a channel/video, not the subject directly, and don't notify the channel owner. Requests go through ytlarge's servers, so avoid pasting anything case-identifying beyond the public URL; use a clean session for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party YouTube-tools site; the data it surfaces (channel ID, tags, public stats) comes from YouTube's public API/pages. Revenue \"estimates\" are guesses — treat only the factual IDs/tags/stats as reliable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "print-youtube-storyboard-instructions"
+    ],
+    "aliases": [
+      "ytlarge.com",
+      "YouTube channel ID finder",
+      "YouTube tag extractor"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "YouTube Related Sites",
+      "channel-analysis"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ytlarge-com-4.md"
   },
   {
@@ -257538,14 +257550,14 @@
   },
   {
     "id": "nationwide-county-court-records-by-state-and",
-    "name": "Nationwide County Court Records (By State &",
-    "description": "OSINT tool: Nationwide County Court Records (By State &.",
+    "name": "Black Book Online — Nationwide County Court Records",
+    "description": "Use when you have a `name` and want the right free county/state court-records portal to search — returns links to official court, criminal, and record search sites indexed by state and county.",
     "url": "https://www.blackbookonline.info/usa-county-court-records.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A free directory that routes you to the correct county/state court-record search portal for a US locality.",
     "selectorsIn": [
       "name"
     ],
@@ -257554,29 +257566,44 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free directory/aggregator of public-records portals. The destination court sites are mostly free, though some counties charge for document copies or full case detail.",
+    "opsec": "passive",
+    "opsecNote": "Browsing Black Book Online and running name searches on the county portals it links is passive — the subject is not notified. Some destination court systems log searches or require a clickwrap; use a clean session for sensitive work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running free public-records directory maintained by PI Robert Scott; it aggregates links to official government portals. It explicitly disclaims data accuracy and is not an FCRA source.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "montana"
+    ],
+    "aliases": [
+      "Black Book Online",
+      "blackbookonline.info",
+      "BRB county court records"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "public-records",
+      "records-directory"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nationwide-county-court-records-by-state-and.md"
   },
   {
@@ -332352,49 +332379,6 @@
     "_file": "library/tools/social-networks/google-com-88.md"
   },
   {
-    "id": "google-com-89",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Athreads.net%2F",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "threads",
-      "Threads Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-89.md"
-  },
-  {
     "id": "google-plus-and-linkedin",
     "name": "Google+ & LinkedIn",
     "description": "OSINT tool: Google+ & LinkedIn.",
@@ -381407,28 +381391,29 @@
   {
     "id": "osint-namecheckers-list",
     "name": "osint-namecheckers-list",
-    "description": "Curated list of tools that search accounts by username (name checkers).",
+    "description": "Use when you have a `username` and need to choose the right enumeration tool — a soxoj-curated catalog of username-search/account-discovery tools that ultimately return `social-profile` links.",
     "url": "https://github.com/soxoj/osint-namecheckers-list",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Choosing among username-enumeration tools",
+    "bestFor": "Picking the best current username-enumeration tool (Maigret, Sherlock, WhatsMyName, etc.) for a given job.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open (MIT-licensed) GitHub catalog; no account. The listed tools are themselves mostly free/open-source.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the list is fully passive. The tools it points to make requests to hundreds of platforms when you run them — that part is active toward those sites, so run the actual enumerators from a sock-puppet browser/VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "Maintained by soxoj (Maigret author), a respected OSINT developer (666 stars).",
+    "trustNote": "Maintained by soxoj (author of Maigret), a respected OSINT developer; ~690 stars and actively curated, with explicit notes on which listed tools are deprecated.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -381437,14 +381422,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "digital-footprint-check"
+    ],
+    "aliases": [
+      "soxoj namecheckers",
+      "username tools list"
+    ],
     "tags": [
       "username",
       "namechecker",
-      "catalog"
+      "catalog",
+      "username-enumeration"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/username/osint-namecheckers-list.md"
   },
