@@ -221516,44 +221516,54 @@
   {
     "id": "personlookup-co-nz",
     "name": "personlookup.co.nz",
-    "description": "OSINT tool: personlookup.co.nz.",
+    "description": "Use when you have a New Zealand `phone` (or `name`/`address`) and want to identify the person behind it — returns a name, residential address and related property/valuation data.",
     "url": "https://personlookup.co.nz/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse phone lookup and name/address search across New Zealand residential data.",
     "selectorsIn": [
-      "phone"
+      "phone",
+      "name",
+      "address"
     ],
     "selectorsOut": [
       "name",
       "address",
-      "social-profile"
+      "phone"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Basic search is free; the site advertises a database of 4.5M+ New Zealanders and added real-estate valuation/sale-history features that may sit behind fuller/paid detail — confirm gating before relying on a \"free\" full record.",
+    "opsec": "passive",
+    "opsecNote": "A reverse lookup queries the site's own aggregated dataset, not the subject's phone or accounts, so it is passive — the person is not alerted. You disclose the searched number to the site operator; use a sock-puppet browser if the number's sensitivity warrants.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial NZ data-aggregator scraping/compiling residential, phone and property data; not an official register and data currency/accuracy are unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "nz"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Person Lookup NZ",
+      "NZ reverse phone lookup"
+    ],
     "tags": [
       "mobilephone",
-      "Mobile & Phone Related"
+      "Mobile & Phone Related",
+      "new-zealand",
+      "reverse-lookup"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/phone/personlookup-co-nz.md"
   },
   {
@@ -244795,14 +244805,14 @@
   },
   {
     "id": "gov-scot",
-    "name": "gov.scot",
-    "description": "OSINT tool: gov.scot.",
+    "name": "gov.scot (non-domestic rates / Scottish valuation roll)",
+    "description": "Use when you have a Scottish `address` or business and want the property's rateable value and the named proprietor/tenant/occupier — a gov.scot gateway to the Scottish Assessors valuation roll.",
     "url": "https://www.gov.scot/policies/local-government/non-domestic-rates/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reaching the Scottish Assessors valuation roll to tie a Scottish commercial address to a named proprietor/tenant/occupier and its rateable value.",
     "selectorsIn": [
       "name",
       "address",
@@ -244813,29 +244823,39 @@
       "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free government information page; the linked Scottish Assessors (SAA) valuation-roll search is also free with no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading rates guidance and searching the public valuation roll are anonymous government lookups — passive, with no notification to any occupier. A normal browser session is fine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "gov.scot is the official Scottish Government site; it links to the Scottish Assessors Association (saa.gov.uk), the statutory valuation authority whose roll is an authoritative public record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Scottish non-domestic rates",
+      "Scottish Assessors valuation roll",
+      "SAA valuation search"
+    ],
     "tags": [
       "propertysites",
-      "Property Related Sites"
+      "Property Related Sites",
+      "scotland",
+      "business-rates",
+      "valuation-roll"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gov-scot.md"
   },
   {
@@ -263176,45 +263196,54 @@
   },
   {
     "id": "people-search-4",
-    "name": "People Search",
-    "description": "OSINT tool: People Search.",
+    "name": "People Search (peoplesearch.ph)",
+    "description": "Use when you have a `name` and need Philippines-focused people-finding resources — a portal of missing-persons, adoption, public-records and directory links plus its own missing-persons registry.",
     "url": "https://www.peoplesearch.ph",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A launch-pad of Philippine and international people-finding resources, including a missing-persons registry, rather than a single data-returning search.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free portal; browsing categories, registries and links costs nothing. It is a signpost/registry site, not a paid database.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the portal and its link categories is passive. Note that POSTING to its Missing Persons / Friends & Family registries is a public disclosure — anything you submit (names, photos, contact info) becomes visible and indexable, so treat registry posts as active outreach and mind what you reveal about a case.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A themed link-directory / registry portal for the Philippines; it aggregates third-party resources and user-submitted registry entries rather than authoritative records, so provenance varies by link.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "peoplesearch.ph"
+    ],
     "tags": [
       "court",
-      "inmate"
+      "inmate",
+      "missing-persons",
+      "philippines",
+      "directory"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/people-search-4.md"
   },
   {
@@ -267094,35 +267123,53 @@
   {
     "id": "rivoters-com",
     "name": "Rivoters.com",
-    "description": "OSINT tool: Rivoters.com.",
+    "description": "Use when you have a `name` and want a Rhode Island resident's registered-voter record — returns their address, year/date of birth and helps confirm identity from public voter rolls.",
     "url": "https://rivoters.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up a Rhode Island registered voter's address and birth year from the public voter roll, free and without login.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "name",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public-records site; no account, payment or login. Data derives from Rhode Island's public voter file (a February 2021 snapshot).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching is a fully passive, anonymous lookup against a static published dataset — nothing reaches the subject or any authority. You disclose your query only to the site host; a normal browser session is adequate.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An independent site republishing Rhode Island's public voter roll (as of 4 Feb 2021). Accurate as of that snapshot but static and unaffiliated with the state; the official source is vote.sos.ri.gov.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Rhode Island voters",
+      "RI voter records"
+    ],
+    "tags": [
+      "voter-records",
+      "public-records",
+      "rhode-island",
+      "us"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rivoters-com.md"
   },
   {
@@ -332209,13 +332256,13 @@
   {
     "id": "graph-tips-fb-search",
     "name": "Graph Tips FB Search",
-    "description": "OSINT tool: Graph Tips FB Search.",
+    "description": "Use when you have a `name`/`username` and want to search Facebook for a person, their photos, places and connections — returns Facebook profiles, images and associates via a rebuilt graph-search interface.",
     "url": "https://graph.tips/beta",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Running structured Facebook people/photo/place/post searches after Facebook removed native Graph Search.",
     "selectorsIn": [
       "username",
       "name"
@@ -332225,28 +332272,38 @@
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Completely free and open-source; no account or payment for the query-builder itself (you view results on Facebook, which may prompt its own login).",
+    "opsec": "active",
+    "opsecNote": "The tool only builds/redirects the query, but clicking through runs the search on Facebook while you are (or aren't) logged in. Use a sock-puppet Facebook account and browser — Facebook logs searches and profile views against whatever session you use, never your real account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by @sowdust (also known as whopostedwhat.com), widely cited across 23+ OSINT source lists; experimental and dependent on Facebook's ever-changing search behaviour.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "graph.tips",
+      "whopostedwhat",
+      "Facebook graph search"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "graph-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/graph-tips-fb-search.md"
   },
   {
@@ -339859,44 +339916,54 @@
   {
     "id": "nairaland-com",
     "name": "nairaland.com",
-    "description": "OSINT tool: nairaland.com.",
+    "description": "Use when you have a `name`/`username` for a Nigerian subject and want their forum presence — returns a Nairaland profile, post history, self-disclosed details and connected members.",
     "url": "http://www.nairaland.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Finding and reading a subject's profile and posts on Nairaland, Nigeria's largest online forum.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read; profiles and threads are publicly viewable without an account. Registration is only needed to post.",
+    "opsec": "passive",
+    "opsecNote": "Reading public profiles and threads is passive and anonymous — no login required and no signal to the subject. Only registering/posting exposes you; if you do, use a sock-puppet account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "The genuine, long-running Nairaland forum; the platform is authentic, but individual posts are pseudonymous user-generated content of varying reliability.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Nairaland",
+      "Nairaland Forum"
+    ],
     "tags": [
       "gsocialmedia",
-      "General Social Media Sites"
+      "General Social Media Sites",
+      "nairaland",
+      "nigeria",
+      "forum"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/nairaland-com.md"
   },
   {
@@ -350097,14 +350164,14 @@
   },
   {
     "id": "sowdust-fb-search",
-    "name": "Sowdust FB search",
-    "description": "OSINT tool: Sowdust FB search.",
+    "name": "Sowdust FB search (SOWsearch)",
+    "description": "Use when you have a `name`/`username` and want to build Facebook search URLs for people, posts, photos-by-location and mutual friends — returns Facebook profiles, images and associates, no FB login to build the query.",
     "url": "https://sowdust.github.io/fb-search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Constructing precise Facebook graph-search query URLs (people, posts, photos by location, mutual friends) without Facebook's native search.",
     "selectorsIn": [
       "username",
       "name"
@@ -350114,28 +350181,38 @@
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Completely free and open-source; building the query needs no account, though opening the resulting Facebook search may prompt a Facebook login.",
+    "opsec": "active",
+    "opsecNote": "The query builder itself is passive and needs no login, but executing the generated URL runs the search on Facebook under whatever session you have. Use a sock-puppet Facebook account/browser; Facebook logs the search and any profile you open.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project by @sowdust; cited across multiple OSINT lists. Now redirects from the old GitHub Pages URL to sowsearch.info. Dependent on Facebook's current, shifting search behaviour.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SOWsearch",
+      "sowsearch.info",
+      "Facebook graph search"
+    ],
     "tags": [
-      "facebook"
+      "facebook",
+      "graph-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/sowdust-fb-search.md"
   },
   {
