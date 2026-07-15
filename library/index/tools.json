@@ -224055,36 +224055,50 @@
   },
   {
     "id": "truecaller-search-engine",
-    "name": "Truecaller Search Engine",
-    "description": "OSINT tool: Truecaller Search Engine.",
+    "name": "Truecaller Search Engine (Google CSE)",
+    "description": "Use when you have a `phone` number and want a name/identity behind it — a Google Custom Search Engine scoped to Truecaller-style caller-ID pages, returning candidate `name` and `social-profile` links.",
     "url": "https://cse.google.com/cse?cx=c46b76bce1848d976",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reverse-searching a phone number against Truecaller/caller-ID content indexed by Google, without opening Truecaller directly.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "The Google CSE itself is free. It surfaces publicly-indexed caller-ID pages; deeper detail on Truecaller proper is freemium (Truecaller gates full results behind login/paid). Coverage depends on the CSE config and Google's index, and can rot over time.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query Google (via the CSE), not Truecaller's app or the number's owner — no lookup notification is sent to the target, unlike searching inside the Truecaller app where your own number/identity can be exposed. Google logs the query; use a clean/sock-puppet session for sensitive numbers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party Google Custom Search Engine (unaffiliated with Truecaller) that scopes Google results to caller-ID sites; results are only as good/fresh as Google's index of those pages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "truecaller"
+    ],
+    "tags": [
+      "phone",
+      "caller-id"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/phone/truecaller-search-engine.md"
   },
   {
@@ -321319,7 +321333,7 @@
   {
     "id": "birdwatcher",
     "name": "Birdwatcher",
-    "description": "Local collection and analysis of Twitter datasets at scale",
+    "description": "Use when you have Twitter/X `username`(s) and want to collect and mine their tweets locally — returns stored tweets, `associate` social graphs, `geolocation` (KML) maps and activity heatmaps.",
     "url": "https://github.com/michenriksen/birdwatcher",
     "category": "social-networks",
     "path": [
@@ -321327,36 +321341,46 @@
       "twitter",
       "analytics"
     ],
-    "bestFor": "Local collection and analysis of Twitter datasets at scale",
-    "input": "Twitter account targets and API configuration",
-    "output": "Collected tweets, relationship data, and analysis-ready exports (including geospatial artifacts)",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "A self-hosted, Metasploit-style console for collecting a set of Twitter users' tweets into PostgreSQL and generating word clouds, social graphs, geo maps, and time heatmaps.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "associate",
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open source (MIT). Cost is operational — you host PostgreSQL and supply Twitter API credentials, which under X's paid API are now expensive/restricted.",
     "opsec": "active",
-    "opsecNote": "Performs direct API/data collection activity from investigator infrastructure.",
+    "opsecNote": "Collection runs through an authenticated Twitter/X API app tied to a developer account, so activity is attributable to that account. Targets aren't notified, but URL-crawling modules make live requests to links in tweets — those can hit attacker/target-controlled servers that log your IP; use a dedicated project account and consider egress isolation.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "account-login",
+      "api-key"
     ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Written by Michael Henriksen (author of Aquatone/Gitrob), a well-known security researcher; open-source and MIT-licensed, though the repo is dormant.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "dmi-tcat"
+    ],
+    "tags": [
+      "twitter",
+      "analytics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/birdwatcher.md"
   },
   {
@@ -351868,45 +351892,50 @@
   },
   {
     "id": "storiesig",
-    "name": "Storiesig",
-    "description": "OSINT tool: Storiesig.",
-    "url": "https://storiesig.com",
+    "name": "StoriesIG",
+    "description": "Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns story/post `image`s and any embedded `geolocation`, with no login.",
+    "url": "https://storiesig.com/en",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing and downloading a public Instagram account's stories, highlights, reels, and photos without an account.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
       "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Completely free, no registration, browser-based. Ad-supported third-party site; domain variants exist (storiesig.com/.info/.net).",
+    "opsec": "passive",
+    "opsecNote": "Because you view through StoriesIG rather than your own Instagram account, the target is NOT added to their story viewers list — this is the whole point. The StoriesIG operator sees which handle you pulled; use a clean/sock-puppet browser if that linkage matters. Never view via your real Instagram account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An anonymous ad-supported third-party viewer, not affiliated with Instagram; it works reliably for public accounts but has no accountability and its domains shift.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "pokoinsta-com",
+      "imginn"
+    ],
     "tags": [
       "instagram"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/storiesig.md"
   },
   {
