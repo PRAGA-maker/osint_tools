@@ -141786,7 +141786,7 @@
   {
     "id": "dogpile",
     "name": "Dogpile",
-    "description": "OSINT tool: Dogpile.",
+    "description": "Use when you have a `name` or `username` and want a metasearch that blends Google, Yahoo, Bing, and Yandex results in one pass — returns `social-profile` links and `name` corroboration other single engines miss.",
     "url": "https://www.dogpile.com/",
     "category": "image-video-face",
     "path": [
@@ -141794,34 +141794,43 @@
       "videos",
       "search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running one query across several search engines at once to catch results any single engine ranks out of view.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free ad-supported metasearch; no account.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit Dogpile (which fans them out to upstream engines), not the subject — nobody is alerted. Dogpile logs and personalises less than a logged-in Google session; still run it from a clean/sock browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running InfoSpace/System1 metasearch aggregator; it re-ranks other engines' results rather than crawling itself, so quality mirrors its upstreams.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Dogpile metasearch"
+    ],
+    "tags": [
+      "searchengines",
+      "metasearch"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/videos/search/dogpile.md"
   },
   {
@@ -148783,46 +148792,52 @@
   {
     "id": "imvu",
     "name": "Imvu",
-    "description": "Website related to social networking and players of the virtual computer game Imvu",
+    "description": "Use when you have a `username` and want to check IMVU, a large 3D-avatar social network — returns a `social-profile` with avatar images, join date, interests, and connections.",
     "url": "http://www.imvu.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Finding an IMVU member profile by handle to surface avatar photos, activity, and social connections.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to join and browse public profiles; virtual goods and some features are paid. A sock account helps for full search/messaging visibility.",
+    "opsec": "active",
+    "opsecNote": "Viewing profiles while logged in can leave visitor traces, and IMVU is a live social space where interaction is easy to trigger accidentally. Use a sock-puppet account, browse only, and never message the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A real, large, still-active 3D-avatar social platform; profile content (avatar, bio, interests) is user-created and pseudonymous, so it corroborates a handle more than a real identity.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "imvu.com",
+      "IMVU avatar social network"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/imvu.md"
   },
@@ -179213,13 +179228,13 @@
   {
     "id": "tginfo-me",
     "name": "tginfo.me",
-    "description": "OSINT tool: tginfo.me.",
+    "description": "Use when you're trying to resolve a `phone` or `username` on Telegram and need to understand the add-by-number technique and its privacy/rate limits — returns process knowledge, not a lookup.",
     "url": "https://tginfo.me/user-not-found-by-phone-number-en/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding how Telegram phone-number-to-profile discovery works and why it fails, before you attempt it.",
     "selectorsIn": [
       "phone",
       "username"
@@ -179227,29 +179242,36 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free reference article.",
+    "opsec": "passive",
+    "opsecNote": "Reading the guide is passive. The technique it describes — importing a number as a contact to reveal a Telegram profile — is ACTIVE and can alert nobody directly but is logged by Telegram and rate-limited/banned if abused; use a burner Telegram account on a dedicated number.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "tginfo.me is a community Telegram-tips site; the article accurately documents Telegram's own contact-discovery behavior, which is verifiable in the app.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Telegram user not found by phone number"
+    ],
     "tags": [
       "telegram",
       "Telegram"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/tginfo-me.md"
   },
   {
@@ -221447,40 +221469,48 @@
   {
     "id": "numspy",
     "name": "Numspy",
-    "description": "Technical lookup workflows and scripted number reconnaissance",
+    "description": "Use when you have an Indian `phone` number and want scripted carrier/region lookup from Python/CLI — returns carrier, circle/region, and number metadata.",
     "url": "https://bhattsameer.github.io/numspy/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Technical lookup workflows and scripted number reconnaissance",
-    "input": "Phone number",
-    "output": "Carrier/region and related phone intelligence fields",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Scripted lookup of Indian mobile-number metadata (operator, telecom circle/region) from a Python module.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone",
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free open-source Python module (`pip3 install numspy`). No API key for the number-details lookup; the bundled Way2SMS send/schedule features depend on Way2SMS, which is largely defunct, so treat SMS features as unreliable.",
     "opsec": "active",
-    "opsecNote": "Tool-driven queries can be attributable to operator infrastructure and API endpoints.",
+    "opsecNote": "The number-details lookup scrapes third-party number-info sites from your machine/IP — those endpoints see your requests. Run it from a VPN/attribution-managed host if you need to stay covert; the target is not contacted by the lookup.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "bestInteractionPattern": "python-lib",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A hobby OSINT module by developer Sameer Bhatt (bhattsameer); installs cleanly but relies on scraped upstream sources whose accuracy and uptime vary.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "in"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "numspy python module"
+    ],
+    "tags": [
+      "phone-number-research",
+      "python"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/phone/numspy.md"
   },
   {
@@ -254417,13 +254447,13 @@
   {
     "id": "louisiana",
     "name": "Louisiana",
-    "description": "OSINT tool: Louisiana.",
+    "description": "Use when you have a `name` and want to check whether a person is in Louisiana state prison custody — returns incarceration status, `dob`, and DOC `document-id` (offender number).",
     "url": "https://doc.louisiana.gov/imprisoned-person-programs-resources/offender-information",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming Louisiana state DOC custody and pulling an offender's DOC number and facility.",
     "selectorsIn": [
       "name"
     ],
@@ -254432,29 +254462,37 @@
       "dob",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free official Louisiana Department of Public Safety & Corrections resource.",
+    "opsec": "passive",
+    "opsecNote": "Querying a government inmate resource is passive and not disclosed to the subject. Records are public; still work from a clean browser to avoid tying searches to you.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Louisiana DOC (doc.louisiana.gov); authoritative for state-custody status, though it covers only state DOC facilities, not parish jails or federal custody.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Louisiana DOC offender information",
+      "Louisiana Department of Corrections inmate lookup"
+    ],
     "tags": [
       "court",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/public-records/louisiana.md"
   },
   {
@@ -321457,13 +321495,13 @@
   {
     "id": "authentic8-com-2",
     "name": "authentic8.com",
-    "description": "OSINT tool: authentic8.com.",
+    "description": "Use when a subject may be on Mastodon/the Fediverse and you need to understand instances and federation before searching — returns platform orientation, not profiles.",
     "url": "https://www.authentic8.com/blog/introduction-mastodon-osint-practitioners",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Orienting on Mastodon/the Fediverse — instances, federation, and how to find where a subject's account lives.",
     "selectorsIn": [
       "username",
       "name"
@@ -321472,29 +321510,35 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free vendor blog article; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading the article is passive. When you then search Mastodon instances, do so logged out / via a sock account — some instances log profile views.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Authentic8 (makers of Silo), a reputable managed-attribution/OSINT vendor; accurate platform primer, though it is Part 1 and stops before hands-on collection technique.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Authentic8 Mastodon OSINT",
+      "Introduction to Mastodon for OSINT"
+    ],
     "tags": [
       "mastodon",
       "Mastodon Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/authentic8-com-2.md"
   },
   {
@@ -330643,45 +330687,53 @@
   {
     "id": "fubar",
     "name": "Fubar",
-    "description": "Social networking platform",
+    "description": "Use when you have a `username` or `name` and want to check Fubar, a long-running social/dating \"online bar\" network — returns `social-profile` pages with photos, location, and interests.",
     "url": "http://fubar.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Fubar members by handle or name to find an adult-leaning social/dating profile a mainstream search misses.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to join and browse; some features are paywalled. A member account is needed to see full profiles and to search effectively.",
+    "opsec": "active",
+    "opsecNote": "Meaningful use requires logging in, and Fubar surfaces \"who viewed you\", so visiting a target's profile can notify them. Use a sock-puppet account with no real details and avoid interacting.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A real, long-running niche social network (formerly LostCherry / CherryTAP); profile data is self-reported by users, so treat details as claims, not facts.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "aliases": [
+      "fubar.com",
+      "LostCherry",
+      "CherryTAP"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "social-media"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
+    "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/fubar.md"
   },
@@ -332488,44 +332540,50 @@
   {
     "id": "google-com-5",
     "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "description": "Use when you have a `name` or `username` and want to find profiles on Draugiem.lv (the dominant Latvian social network) via a Google site-search dork — returns `social-profile` links.",
     "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Adraugiem.lv",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Google-dorking Draugiem.lv, Latvia's main social network, for a specific person.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Uses only Google search; free, no account.",
+    "opsec": "passive",
+    "opsecNote": "Query hits Google, not Draugiem, so the subject is not alerted and you avoid registering on the platform. Search signed out / in a sock browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A Google `site:` dork, not a third-party tool; reliability equals Google's index of public Draugiem.lv pages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "lv"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "site:draugiem.lv dork",
+      "Draugiem Google search"
+    ],
     "tags": [
       "esocialmedia",
       "European Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-5.md"
   },
   {
@@ -334093,37 +334151,49 @@
   {
     "id": "here",
     "name": "here",
-    "description": "OSINT tool: here.",
+    "description": "Use when you have a Reddit `username` or topic and want to reach Pushshift-based historical Reddit archives — returns `social-profile` history (posts/comments) beyond what Reddit's own search shows.",
     "url": "https://www.reddit.com/r/pushshift/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the current, access-approved way into Pushshift-style historical Reddit data (deleted/edited/old posts).",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The subreddit is free. Pushshift data access itself is now gated — since 2023 Reddit restricted the public API, and full Pushshift access is limited to Reddit-approved moderators; check the subreddit for the current front-ends and terms.",
+    "opsec": "passive",
+    "opsecNote": "Reading the subreddit and querying archives is passive — the target is not notified. Do the querying signed out / in a sock account; do not contact the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "r/pushshift is the community hub for the Pushshift Reddit dataset; the data is real archival Reddit content, but availability and front-ends shift as Reddit's API policy evolves.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "r/pushshift",
+      "Pushshift Reddit archive"
+    ],
     "tags": [
       "reddit"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/here.md"
   },
   {
@@ -334301,44 +334371,47 @@
   {
     "id": "here-15",
     "name": "Here",
-    "description": "OSINT tool: Here.",
+    "description": "Use when a subject's trail runs into TikTok and you need to know what data TikTok holds and how law enforcement can request it — returns process knowledge, not a lookup.",
     "url": "https://www.tiktok.com/legal/law-enforcement?lang=en",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding what TikTok account/content data is obtainable and the legal channel to request it.",
     "selectorsIn": [
-      "username",
-      "name"
+      "username"
     ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public legal/policy page.",
+    "opsec": "passive",
+    "opsecNote": "Reading TikTok's law-enforcement guidelines reveals nothing about your subject. Purely a reference — no query touches the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party TikTok legal documentation; authoritative on TikTok's own retention and disclosure practices.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "TikTok Law Enforcement Guidelines"
+    ],
     "tags": [
       "tiktok",
       "TikTok Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/here-15.md"
   },
   {
