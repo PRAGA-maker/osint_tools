@@ -141659,44 +141659,48 @@
   {
     "id": "digitaldigging-org-2",
     "name": "digitaldigging.org",
-    "description": "OSINT tool: digitaldigging.org.",
+    "description": "Use when you have an `image` and need to judge whether it is AI-generated/manipulated — returns detection methodology (visual-anomaly and provenance checks), not a database.",
     "url": "https://www.digitaldigging.org/p/exposing-ai-manipulation-in-fast",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Learning how to spot AI-generated or manipulated images during verification, from a working investigative journalist.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "metadata-exif"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "digitaldigging.org is Henk van Ess's Substack; many posts are free to read, some are behind a paid subscription. This methodology article is largely readable free with a paywalled remainder.",
+    "opsec": "passive",
+    "opsecNote": "Reading a blog is passive and reveals nothing about your subject. The techniques it teaches (visual inspection, reverse search, provenance checks) are themselves passive when applied.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Authored by Henk van Ess, a widely respected verification/OSINT trainer (Bellingcat, GIJN); methodology-focused and citing his own casework.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Digital Digging",
+      "Henk van Ess AI manipulation"
+    ],
     "tags": [
       "reverseimagesearching",
       "Reverse Image Searching"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/digitaldigging-org-2.md"
   },
   {
@@ -171796,43 +171800,48 @@
   {
     "id": "discord-com-2",
     "name": "discord.com",
-    "description": "OSINT tool: discord.com.",
+    "description": "Use when you have a `username` on Discord and need to know what data Discord retains and how law-enforcement/legal process can obtain it — returns process knowledge, not lookups.",
     "url": "https://discord.com/safety/360043712132-how-we-investigate",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Understanding what account/message data Discord holds and the legal channel to request it.",
     "selectorsIn": [
-      "phone",
       "username"
     ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public policy/reference page.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public policy page reveals nothing about your subject. Purely a reference — no query touches the target.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Discord Trust & Safety documentation; authoritative on Discord's own retention and disclosure practices.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Discord How We Investigate",
+      "Discord Trust and Safety"
+    ],
     "tags": [
       "discord",
       "Discord Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/discord-com-2.md"
   },
   {
@@ -177058,43 +177067,48 @@
   {
     "id": "support-discord-com-2",
     "name": "support.discord.com",
-    "description": "OSINT tool: support.discord.com.",
+    "description": "Use when you have a `username` and want to search Discord's public community help forum for posts, complaints, or server references tied to it — returns `social-profile` context.",
     "url": "https://support.discord.com/hc/en-us/community/topics",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Searching Discord's public community support forum for user-posted threads that mention a handle, server, or issue.",
     "selectorsIn": [
-      "phone",
       "username"
     ],
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public forum; reading requires no account (posting does).",
+    "opsec": "passive",
+    "opsecNote": "Browsing is passive — you read public Zendesk-hosted threads and Discord is not told who you are researching. Do not reply or post from an attributable account; a logged-out browser is safest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Discord support community (official support.discord.com), so the existence of a thread is authoritative — but user posts are self-reported and thin on identifying detail.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Discord community support forum",
+      "support.discord.com community"
+    ],
     "tags": [
       "discord",
       "Discord Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/messaging/support-discord-com-2.md"
   },
   {
@@ -293767,43 +293781,50 @@
   {
     "id": "google-com-85",
     "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "description": "Use when you have a `name` or `username` and want to surface video footage of or uploaded by a subject — returns `social-profile` (channels) and `name` leads.",
     "url": "https://www.google.com/advanced_video_search",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Filtering a web-wide video search by exact phrase, site, duration, and post date to find footage of a person.",
     "selectorsIn": [
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "name",
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Google service; no account or payment required to build or run the query.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit Google's infrastructure, not the target, so the subject is not alerted. Results are personalised to your Google session/IP and logged by Google — use a clean/sock-puppet browser and consider signing out to reduce filter-bubble skew.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Google search surface; the video index itself is authoritative, though coverage depends on what platforms let Google crawl.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Google Advanced Video Search",
+      "advanced_video_search"
+    ],
     "tags": [
       "searchengines",
       "Search Engines"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-com-85.md"
   },
   {
@@ -326323,13 +326344,13 @@
   {
     "id": "en-wikipedia-org-2",
     "name": "en.wikipedia.org",
-    "description": "OSINT tool: en.wikipedia.org.",
+    "description": "Use when you need an overview of far-right online platforms/ecosystems to decide where to search for an extremist-adjacent subject — returns background and platform names, not profiles.",
     "url": "https://en.wikipedia.org/wiki/Far-right_usage_of_the_internet",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping the alt-tech / far-right platform landscape to guide where to look for a subject's online presence.",
     "selectorsIn": [
       "username",
       "name"
@@ -326338,41 +326359,46 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free encyclopedia article; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading a Wikipedia article is invisible to any subject. Background research only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Wikipedia is community-edited; strong for a landscape overview and platform names, but corroborate specific claims against the cited primary sources.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Far-right usage of the internet"
+    ],
     "tags": [
       "rightwingsocialmediasites",
       "Right Wing Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/en-wikipedia-org-2.md"
   },
   {
     "id": "en-wikipedia-org-3",
     "name": "en.wikipedia.org",
-    "description": "OSINT tool: en.wikipedia.org.",
+    "description": "Use when you need background on BitChute (alt-tech video platform) before searching it for a subject's content — returns platform context and how it works, not profiles.",
     "url": "https://en.wikipedia.org/wiki/BitChute",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Orienting yourself on BitChute — what it is, who uses it, how content is hosted — before hunting a subject there.",
     "selectorsIn": [
       "username",
       "name"
@@ -326381,29 +326407,34 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free encyclopedia article; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading a Wikipedia article is invisible to any subject. Purely background research — you are not touching BitChute or the person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Wikipedia is community-edited; excellent for orientation and platform facts, but corroborate specific claims against primary sources before acting.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BitChute Wikipedia"
+    ],
     "tags": [
       "rightwingsocialmediasites",
       "Right Wing Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/en-wikipedia-org-3.md"
   },
   {
@@ -332227,44 +332258,50 @@
   {
     "id": "google-com-3",
     "name": "google.com",
-    "description": "OSINT tool: google.com.",
+    "description": "Use when you have a `name` or `username` and want to find profiles on Trombi.com (French classmates network) via a Google site-search dork — returns `social-profile` links.",
     "url": "https://www.google.com/search?q=site%3Atrombi.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Google-dorking the French social/classmates network Trombi.com for a specific person.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Uses only Google search; free, no account needed.",
+    "opsec": "passive",
+    "opsecNote": "Query hits Google, not Trombi, so the subject is not alerted and you avoid creating a Trombi account. Search signed out / in a sock browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A Google `site:` dork, not a third-party tool; reliability equals Google's index of public Trombi.com pages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "fr"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "site:trombi.com dork",
+      "Trombi Google search"
+    ],
     "tags": [
       "esocialmedia",
       "European Social Media Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-3.md"
   },
   {
@@ -334549,44 +334586,50 @@
   {
     "id": "here-8",
     "name": "Here",
-    "description": "OSINT tool: Here.",
+    "description": "Use when you have a `name` plus an approximate location and want to surface public Facebook profiles/posts via a Google site-search dork — returns `social-profile` links and `name` corroboration.",
     "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Afacebook.com+%22Search+Name%22+%22Search+Location%22",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Google-dorking Facebook for a named person tied to a specific place, without logging into Facebook.",
     "selectorsIn": [
-      "username",
-      "name"
+      "name",
+      "geolocation"
     ],
     "selectorsOut": [
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Uses only Google search; free, no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The query hits Google, not Facebook, so the subject is not notified and you never touch Facebook while logged in. Run it signed out / in a sock browser so results aren't tied to your identity or filter bubble.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Not a third-party tool — it is a Google `site:` dork template; reliability equals Google's index of publicly crawlable Facebook pages.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Facebook site search dork",
+      "site:facebook.com name location"
+    ],
     "tags": [
       "facebook",
       "Facebook General Links"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/here-8.md"
   },
   {
@@ -339491,35 +339534,50 @@
   {
     "id": "linkedprospect",
     "name": "LinkedProspect",
-    "description": "OSINT tool: LinkedProspect.",
+    "description": "Use when you have a target's role or `employer-org` and want a ready-made LinkedIn Boolean query to surface matching profiles — returns a copy-paste search string leading to `social-profile`.",
     "url": "https://linkedprospect.com/linkedin-boolean-search-tool/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Generating a correct LinkedIn Boolean search string from job-title, company, and keyword filters.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The Boolean-string builder is free and needs no login. It is a lead-magnet for LinkedProspect's paid LinkedIn outreach/automation SaaS (free trial, then subscription) — but you never need to buy anything to use the generator.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The generator runs in your browser and touches only LinkedProspect — nothing about the target leaves your machine until you paste the string into LinkedIn. The actual search then runs inside your logged-in LinkedIn session; visiting profiles can appear in \"Who viewed your profile\", so run it from a sock LinkedIn account if you need to stay covert.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "LinkedProspect is a third-party sales-outreach vendor; the free Boolean builder is a simple, transparent utility that only concatenates operators — no data is collected about the person you search.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "LinkedProspect Boolean Search Tool",
+      "LinkedIn Boolean search builder"
+    ],
+    "tags": [
+      "linkedin",
+      "boolean-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/linkedprospect.md"
   },
   {
@@ -363230,13 +363288,13 @@
   {
     "id": "x-com-3",
     "name": "x.com",
-    "description": "OSINT tool: x.com.",
+    "description": "Use when you want curated LinkedIn/people-finding OSINT technique tips from the @cyb_detective account — returns pointers to `social-profile` search methods, not a lookup.",
     "url": "https://x.com/cyb_detective/status/1891600542872297622",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Reading a curated OSINT tip/thread from @cyb_detective on finding people and profiles.",
     "selectorsIn": [
       "username",
       "name"
@@ -363245,29 +363303,37 @@
       "social-profile",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free public post; viewing full threads on X increasingly prompts a login.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public tweet is passive; the subject of your investigation is not involved. Do not like/reply/bookmark from an attributable account — those actions are logged and visible.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "@cyb_detective (Cyber Detective) is a widely-cited OSINT curator, but this is a personal tip — verify each referenced tool/technique independently before relying on it.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "cyb_detective tweet",
+      "Cyber Detective OSINT tip"
+    ],
     "tags": [
       "linkedin",
       "LinkedIn & Similar Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/x-com-3.md"
   },
   {
