@@ -328,7 +328,6 @@ kind: group-index
 - **`google-com-77`** (high) — Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and docu
 - **`google-com-78`** (high) — OSINT tool: google.com.
 - **`google-com-79`** (high) — OSINT tool: google.com.
-- **`google-com-80`** (high) — OSINT tool: google.com.
 - **`google-com-81`** (high) — Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined pa
 - **`google-com-82`** (high) — Use when you have a `name` or topic and want to find published datasets that may list people — Google Dataset Search indexes datasets across
 - **`google-com-84`** (high) — Use when you have a `name` and want to find photos of a person with precise filters — Google Advanced Image Search narrows by size, type, co

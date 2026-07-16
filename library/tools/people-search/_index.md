@@ -248,7 +248,6 @@ kind: group-index
 - **`textmagic-free-carrier-lookup`** (high) — Use when you have a `phone` number and want to know its carrier and line type — returns carrier name, mobile/landline/VoIP classification, c
 - **`thatsthem-people-search`** (high) — Use when you have a `name` (or a phone/email/address to reverse) and want a US person's contact record — returns addresses, phones, emails, 
 - **`the-law-pages`** (high) — Use when you have a `name` and want to check whether that person appears in England & Wales Crown Court criminal sentencing records — return
-- **`the-names-of-jihad-majalla-magazine`** (high) — OSINT tool: The Names of Jihad - Majalla Magazine.
 - **`the-national-archives-uk`** (high) — Use when you have a `name` and want UK historical government records — returns Discovery-catalogue hits on wills, military, immigration and 
 - **`thisnumber`** (high) — Use when you have a `name` or `phone` in a specific country and need that country's phone directory — a gateway to national white/yellow-pag
 - **`trexpertwitness`** (medium) — OSINT tool: TRExpertWitness.

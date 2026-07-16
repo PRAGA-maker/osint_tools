@@ -26,7 +26,6 @@ kind: group-index
 - **`4sqmap`** (high) — Use when you have a Foursquare/Swarm `username` and want to plot that account's check-ins, venues and photos on a map — returns `geolocation
 - **`6-izuum-com`** (high) — OSINT tool: 6- Izuum.com.
 - **`a-tremendously-valuable-osint-tip-for-pinterest`** (high) — Use when you have a Pinterest `username` and want to hypothesize the subject's `email` — a documented technique exploiting Pinterest's Googl
-- **`about-fb-com`** (high) — OSINT tool: about.fb.com.
 - **`account-analysis`** (medium) — OSINT tool: Account analysis.
 - **`accountkiller-com`** (high) — Use when you have a `username` and want a reference directory of where accounts can exist plus each platform's account/URL structure — retur
 - **`advanced-downloader-for-tiktok-addons-mozilla-org`** (low) — Use when you have a TikTok video `social-profile` URL and want to save the clip for evidence — a Firefox extension returning the downloaded 
@@ -101,7 +100,6 @@ kind: group-index
 - **`cobalt-tools`** (high) — Use when you have a `social-profile`/media URL and want to download the video, audio or image cleanly — returns the media file (with its met
 - **`codeofaninja-com`** (high) — Use when you have a TikTok `username` and want its stable numeric user ID (`document-id`) — returns the account's permanent ID for use acros
 - **`coderstats`** (low) — Developer activity and statistics tracker for GitHub.
-- **`com-hemiola-com`** (high) — OSINT tool: com.hemiola.com.
 - **`commentpicker-com-2`** (high) — Use when you have a TikTok `username` and want its permanent numeric user ID plus account stats — returns the numeric ID, account creation d
 - **`commentpicker-com`** (high) — Use when you have an Instagram/Facebook/TikTok/YouTube `username` or post and want the account's stable numeric ID or the list of commenters
 - **`commentpicker`** (medium) — Facebook profiles/posts ID finder Export Facebook like and comments YouTube Tag Extractor Instagram profile analyzer Twitter account data ex
@@ -250,15 +248,11 @@ kind: group-index
 - **`google-account-finder-epieos`** (high) — Use when you have an `email` (Gmail) or `phone` and want the linked Google account's profile photo, public Maps reviews/photos, and which se
 - **`google-com-2`** (high) — Use when you have a `name` (and a German school/town) and want to find someone's StayFriends classmates profile without an account — returns
 - **`google-com-3`** (high) — Use when you have a `name` or `username` and want to find profiles on Trombi.com (French classmates network) via a Google site-search dork —
-- **`google-com-44`** (high) — OSINT tool: google.com.
 - **`google-com-46`** (high) — Use when you have a `name` or `username` possibly tied to the Chinese social network Renren and want to find their profile without a Renren 
-- **`google-com-47`** (high) — OSINT tool: google.com.
 - **`google-com-5`** (high) — Use when you have a `name` or `username` and want to find profiles on Draugiem.lv (the dominant Latvian social network) via a Google site-se
 - **`google-com-50`** (high) — Use when you have a `name` or `username` and want to surface a subject's Zalo (Vietnamese messenger/social) profile pages that Google has in
 - **`google-com-54`** (high) — Use when you have a name, employer or role and want to find LinkedIn profiles Google has indexed — returns public LinkedIn profile links wit
 - **`google-com-55`** (high) — Use when you have a `name` (or `username`, employer, or town) and want to find a person's UK LinkedIn profile without logging into LinkedIn 
-- **`google-com-58`** (high) — OSINT tool: google.com.
-- **`google-com-59`** (high) — OSINT tool: google.com.
 - **`google-com-62`** (medium) — Use when you have a `name` of someone likely working in the Middle East and want their professional profile — a Google `site:bayt.com` dork 
 - **`google-com-63`** (high) — Use when you have a `name` (or employer) for someone in the German-speaking world and want their XING profile without logging into XING — re
 - **`google-com-70`** (high) — Use when you have a `name` or `username` and want to surface a subject's MeWe profile/posts that Google has indexed — returns `social-profil
@@ -631,7 +625,6 @@ kind: group-index
 - **`steamid-uk`** (medium) — Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) s
 - **`stegers`** (high) — OSINT tool: Stegers.
 - **`sterraxcyl`** (medium) — Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following coun
-- **`sticktock-com`** (high) — OSINT tool: sticktock.com.
 - **`storiesig`** (high) — Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns s
 - **`story-saver`** (medium) — Download public Instagram Stories, Highlights and Videos.
 - **`storydownloader-app`** (high) — Use when you have an Instagram `username` and want to view/download that public account's stories anonymously — returns image/video story co
@@ -769,7 +762,6 @@ kind: group-index
 - **`twitter-shadowban-test`** (medium) — OSINT tool: Twitter Shadowban Test.
 - **`twitter-trending-hashtags-and-topics`** (high) — Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — return
 - **`twitter-url-scraper`** (medium) — A simple tool for analyzing twitter conversations (and other pages). Get profile pictures, user names and the text of the conversation's twe
-- **`twitter-video-download-com`** (high) — OSINT tool: twitter-video-download.com.
 - **`twitter-video-downloader`** (medium) — Download videos from X (formerly Twitter) by converting tweet URLs into downloadable video links.
 - **`twitter-x-advanced-search`** (medium) — Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criter
 - **`twitter-x-location-search`** (medium) — Search for geocoded tweets by their distance from some coordinates.
@@ -794,7 +786,6 @@ kind: group-index
 - **`us-twitter-trend-calendar`** (medium) — OSINT tool: US Twitter Trend Calendar.
 - **`username-availability`** (low) — OSINT tool: Username Availability.
 - **`uvrx`** (high) — Use when you have a person `name` or `username` and want to search across many social networks at once through one Google-custom-search fron
-- **`viddex-video-downloader-chrome-google-com`** (high) — OSINT tool: viddex video downloader (chrome.google.com).
 - **`vidnice`** (medium) — OSINT tool: Vidnice.
 - **`vimeo-search-tool`** (medium) — Use when you have a `username`, `name`, or keyword and want to build advanced Vimeo searches for people and videos — returns `social-profile
 - **`vk-city4me-com`** (medium) — tracking user online time

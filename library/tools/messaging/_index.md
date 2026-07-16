@@ -31,7 +31,6 @@ kind: group-index
 - **`avtogram-bot`** (low) — Use when you want to contribute/monetize car photos to a plate-photo community — note it is an upload bot, not a lookup tool.
 - **`avtonomer`** (medium) — Use when you have a (mostly Russian/CIS) license plate and want user-submitted photos of that plate/vehicle via a Telegram search of platesm
 - **`awesome-telegram-osint`** (medium) — Curated list of Telegram OSINT tools, bots, sites and resources.
-- **`blog-pagefreezer-com`** (high) — OSINT tool: blog.pagefreezer.com.
 - **`bmi-np-bot`** (high) — Use when you have a Russian `phone` number and want its current mobile operator and geographic region, accounting for number portability (MN
 - **`botim-me`** (high) — Use when you have a `phone` number (often Gulf/Middle-East) and want to check whether it has a BOTIM messaging account and see any public pr
 - **`chatbottle-telegram-bots`** (low) — Directory of Telegram bots.
@@ -40,8 +39,6 @@ kind: group-index
 - **`chatvisualizer-com`** (medium) — another #WhatsApp chat analyzer.
 - **`clerkbot`** (high) — OSINT tool: ClerkBot.
 - **`commentgram-cse`** (medium) — search by Telegram comments
-- **`create-spoof-fake-facebook-chats-site`** (high) — OSINT tool: Create Spoof / Fake Facebook Chats Site.
-- **`create-spoof-fake-facebook-messenger-post`** (high) — OSINT tool: Create Spoof / Fake Facebook Messenger Post.
 - **`create-spoof-fake-facebook-status-update-post`** (low) — Use when you need to understand how easily a fake Facebook post/status screenshot can be fabricated — this generator produces convincing spo
 - **`create-spoof-fake-imessages`** (high) — OSINT tool: Create Spoof / Fake iMessages.
 - **`create-spoof-fake-text-sms-messages`** (high) — Use when you are assessing whether a text/SMS "from" a `phone` could be spoofed — this Spoofbox tool sends messages with a forged sender ID,
@@ -91,7 +88,7 @@ kind: group-index
 - **`instabot`** (high) — Use when you have a public Instagram post/profile URL and want the raw media inside Telegram — returns the downloaded photos/videos as files
 - **`instances-social`** (medium) — A tool for searching across full list of instances in #Mastodon. It can help you choose the right instance to register (matching your views 
 - **`intelligence-x-telegram-search`** (medium) — Google-based search engine for Telegram (includes Telegago)
-- **`itp-infotrack`** (high) — OSINT tool: ITP Infotrack.
+- **`itp-infotrack`** (high) — Use when you have a `name` (optionally a US `address` or `phone`) and want a free people-search preview — returns name, address, phone, age/
 - **`ixgram`** (medium) — OSINT tool: Ixgram.
 - **`jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization`** (medium) — OSINT tool: Jihadi Telegram Tutorial Channels: The Lone Wolf’s Lair - European Eye on Radicalization.
 - **`kalilinuxtutorials-com`** (high) — Use when you have a target's `phone`/WhatsApp `username` and want to monitor their online/offline pattern and pull profile metadata — return
@@ -127,7 +124,6 @@ kind: group-index
 - **`pimeyes`** (high) — Use when you have a `face`/`image` of a subject and want to find other web pages showing that same face — returns matching photos and the UR
 - **`pixelatomy-com`** (medium) — Use when you have a Discord ID (`document-id` snowflake from a user, message, or channel) and want its exact creation date/time — returns th
 - **`prankshit-com-2`** (high) — Use when you have a screenshot of a `phone`/`username` WhatsApp "chat" and want to know whether it could be fabricated — this is a fake-chat
-- **`prime-os-emuapps-com`** (high) — OSINT tool: prime-os.emuapps.com.
 - **`rapidapi-com`** (high) — OSINT tool: rapidapi.com.
 - **`readergram-com`** (medium) — OSINT tool: Readergram.com.
 - **`reddit-com-2`** (high) — Use when you have a Telegram `username` and want the account's stable numeric user ID — this is a community how-to thread describing the bot

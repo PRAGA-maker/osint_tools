@@ -462,7 +462,6 @@ kind: group-index
 - **`hcpc-uk-org`** (high) — Use when you have a `name` of a UK health/care professional and want to confirm their registration and status — returns name, profession/reg
 - **`healthcare-education-providers`** (medium) — OSINT tool: HEALTHCARE EDUCATION PROVIDERS.
 - **`heraldsun-com-au`** (high) — Use when you have a `name` of someone who may have died in Victoria, Australia and want the death/funeral notice — returns published tribute
-- **`high-schools-that-received-nra-grants-2010-2016`** (high) — OSINT tool: High schools that received NRA grants 2010-2016.
 - **`highly-cited-researchers`** (medium) — List of highly cited researchers, including search by name and affiliation
 - **`his-piers`** (low) — OSINT tool: HIS Piers.
 - **`hmcpl-obituary-index`** (high) — Use when you have a `name` of someone likely connected to the Huntsville/Madison County, Alabama area and want to find their obituary — retu
@@ -618,7 +617,6 @@ kind: group-index
 - **`manitoba-sex-offender`** (high) — Use when you have a name or photo and want to check whether the subject is a publicly notified high-risk sex offender in Manitoba — returns 
 - **`manta-north-america`** (medium) — American business-related search engine that searches using company name
 - **`manta`** (low) — OSINT tool: Manta.
-- **`mapmy23-ancestry-dna-file-converter`** (high) — OSINT tool: MapMy23 Ancestry DNA File Converter.
 - **`mappingpoliceviolence-org`** (medium) — OSINT tool: Mappingpoliceviolence.org.
 - **`marriage-records-search-directory`** (high) — Use when you have a `name` and want to find US marriage records — returns links to state/county marriage-record search resources that confir
 - **`maryland`** (high) — Use when you have a `name` (or inmate number) and want to check Maryland state custody status — returns identity confirmation, dob, inmate d
@@ -907,7 +905,6 @@ kind: group-index
 - **`search-systems-criminal-records`** (high) — Use when you have a `name` and need to find the right public-records database for a jurisdiction — a directory routing you to court, crimina
 - **`search-the-open-information-catalogue`** (medium) — OSINT tool: Search the Open Information Catalogue.
 - **`searchable-fcc-id-database`** (medium) — Electronics device certification lookup
-- **`searching-state-courts`** (high) — OSINT tool: Searching state courts.
 - **`searchsystems-birth-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database that holds a birth or vital record — 
 - **`searchsystems-death-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database holding a death/mortality record — re
 - **`sec-company-search`** (low) — OSINT tool: SEC Company Search.
@@ -968,7 +965,6 @@ kind: group-index
 - **`statistics-and-data`** (high) — Use when you have a country/region context and want aggregate crime, homicide, drug, trafficking, or prison statistics — returns country-lev
 - **`statistics-canada`** (medium) — OSINT tool: Statistics Canada.
 - **`street-name-changes`** (high) — Use when you have a historical `address` whose street may have been renamed/renumbered and want the modern (or old) equivalent — returns the
-- **`strongabogados-com`** (high) — OSINT tool: strongabogados.com.
 - **`superpages-directory-united-states`** (medium) — Search directory for local businesses and retailers
 - **`supreme-court-of-canada-cases`** (high) — Use when you have a party `name` and want to check for a Supreme Court of Canada case involving them — returns the docket, parties/counsel (
 - **`supreme-court`** (high) — Use when you have a `name` and want to find whether that person was a party in a Supreme Court of Canada case — returns name, document-id, a

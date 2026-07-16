@@ -19,11 +19,8 @@ kind: group-index
 
 ## Skills here
 - **`360cities-net-map`** (medium) — world map of panoramic (360 degrees) images
-- **`56-com-china`** (high) — Video hosting website based in China
 - **`6mzld2-csb-app`** (high) — OSINT tool: 6mzld2.csb.app.
-- **`888poker`** (high) — Website related to social networking and players of poker with gambling options
 - **`addicting-games`** (high) — Website related to social networking and players of over 1,000 games on this website
-- **`age-of-conan`** (high) — Website related to social networking and players of the computer game Age of Conan
 - **`age-toolpie-com`** (medium) — Use when you have a face photo and want a quick automated age estimate to sanity-check whether an image plausibly matches a missing person's
 - **`ailab-wondershare-com-2`** (low) — Use when you need to strip the background off a subject photo so the face/clothing is isolated before running reverse-image search or compar
 - **`ailab-wondershare-com-3`** (medium) — Use when a low-resolution photo of a subject is too small/blurry to search and you want an AI upscale to recover detail before reverse-image
@@ -79,7 +76,6 @@ kind: group-index
 - **`codeofaninja-com-2`** (high) — Use when you have a YouTube channel URL or handle for a person of interest and need its stable channel ID — returns the UC… channel ID.
 - **`codeofaninja-com-3`** (high) — Use when you have a YouTube video URL and want its full-resolution thumbnail to run through reverse-image or face search — returns the HD th
 - **`comedy-central-united-states`** (high) — Website that hosts videos from TV and movies
-- **`comedy-network-canada`** (high) — Website that hosts videos from TV and movies
 - **`compress-or-die-com-analyze`** (medium) — get detail information about images (exif, metatags, ICC_Profile, quantanisation tables)
 - **`copernicus-open-access-hub`** (medium) — ESA's open access portal to Sentinel data
 - **`copyseeker-net`** (high) — Use when you have a photo of a missing person or a place and want to find where else that image (or visually similar ones) appears online — 
@@ -100,14 +96,11 @@ kind: group-index
 - **`discover-podcasts-here`** (high) — Use when you have a `name` and want to find a subject's own podcast or guest appearances — returns social-profile, associate.
 - **`downalbum`** (medium) — Chrome extension for downloading photo albums from social media.
 - **`downloadhelper`** (medium) — OSINT tool: DownloadHelper.
-- **`dropshots-multimedia-search-sharing`** (high) — Multi-media search engine focusing on photo and video search and private sharing
-- **`dungeon-fighter-online`** (high) — Website related to social networking and players of the computer game Dungeon Fighter Online
 - **`dupli-checker`** (high) — Use when you have a photo of a person/place and want a quick multi-engine reverse-image lookup — returns matching social-profile pages and i
 - **`eagleeye-image-recognition`** (high) — Use when you have a person's name plus reference face photos and want to discover their social-media profiles — returns social-profile links
 - **`earthviewer360-com`** (medium) — Click on a point on the map to see a 360 degree video panorama (it's possiblle to pause to see some areas in more detail)
 - **`efficientnetv2`** (medium) — DeepFake Video Detector
 - **`emergent`** (medium) — OSINT tool: Emergent.
-- **`eve-online`** (high) — Website related to social networking and players of the computer game Eve Online
 - **`everypixel`** (medium) — Reverse image search engine. Search across 50 leading stock images agencies. It's possible to filter only free or only paid images.
 - **`exiflooter`** (high) — Use when you have images (or a URL/directory of them) and want to extract GPS metadata and map it — returns geolocation from metadata-exif.
 - **`exiftool-2`** (high) — Use when you have a media/document file and want a full local metadata dump — returns metadata-exif, geolocation, device-id (same tool as ex
@@ -150,10 +143,8 @@ kind: group-index
 - **`fulldp-co-4`** (high) — Use when you have a social username/profile and need the full-resolution profile picture (Instagram/TikTok/VK/YouTube etc.) — the fulldp.co 
 - **`fulldp-co-5`** (high) — Use when you have a YouTube channel/handle and need the full-resolution channel profile picture rather than the small thumbnail — returns a 
 - **`fulldp`** (medium) — Download OnlyFans full-size profile pictures.
-- **`fulltilt-poker`** (high) — Website related to social networking and players of poker with gambling options
 - **`funnyordie`** (high) — Website related to social networking with video posting and sharing services
 - **`gaia`** (high) — Use when you have a `username` or `name` and want to find a Gaia Online avatar-community profile — returns the social-profile, avatar images
-- **`gamehouse`** (high) — Website related to social networking and players of over 2,300 games on this website
 - **`gamesville`** (high) — Website related to social networking and players of over 500 games on this website
 - **`geograph-worldwide`** (medium) — Use when you have a `geolocation` (grid square / area) and want ground-level reference photos of it — returns geotagged `image`s to compare 
 - **`geosearch`** (medium) — OSINT tool: Geosearch.
@@ -171,7 +162,6 @@ kind: group-index
 - **`google-reverse-image-search`** (high) — Use when you have an `image` of a person or place and want to find where else it appears online — returns matching/related images, source pa
 - **`google-reverse-search`** (high) — Use when you have a photo and want to find every page that hosts the same or a similar image — returns matching pages, source sites, and soc
 - **`goris`** (medium) — Command line tool for Google reverse image search automation. It can find links to similar pictures by URL or by file.
-- **`habbo`** (high) — Website related to social networking and players of the virtual computer game Habbo
 - **`hatless-investigations-group`** (low) — Use when you want to reach a private investigations firm rather than run a self-service tool — this is a LinkedIn company page for an OSINT/
 - **`how-to-accurately-check-an-id-using-facial-features-to-verify-photo-id-s`** (medium) — Use when you need a human reference method for comparing a face against a photo ID — this is an instructional article on facial-feature comp
 - **`hue-tools`** (low) — Use when you need to work with colors (generate, convert, blend palettes) — a color/design utility with marginal OSINT use for matching or d
@@ -180,7 +170,6 @@ kind: group-index
 - **`hugin`** (low) — Hugin is a free and open-source panorama photo stitching and HDR (High Dynamic Range imaging) merging software that helps users create seaml
 - **`hulu-united-states`** (high) — Video on demand service
 - **`hypem-music-search`** (high) — Use when you have an artist/DJ `name` or `username` and want to find their tracks, blog write-ups and linked profiles across music blogs — r
-- **`ibm-video`** (high) — Website related to social networking and livestreaming audio and/or video services
 - **`icon-finder`** (high) — Use when you have a small graphic/logo/icon `image` and want to identify or source a matching stock icon — a graphic-asset marketplace, not 
 - **`identifont-com`** (medium) — OSINT tool: Identifont.com.
 - **`idgettr-com`** (medium) — Use when you have a Flickr username or profile URL and need the account's numeric NSID to anchor it for API/feed lookups.
@@ -212,7 +201,6 @@ kind: group-index
 - **`isgen-ai`** (medium) — Use when you have an image and want to estimate whether it was AI-generated (deepfake/synthetic) — returns a likelihood/verdict, not a rever
 - **`istockphoto`** (medium) — Use when you suspect a profile `image` is a stock/model photo and want to check it against a major royalty-free catalog — returns matching s
 - **`itemfix`** (high) — Use when you have a keyword, event or `username` and want user-uploaded incident/dashcam/CCTV video — returns hashtag-searchable clips and t
-- **`iwin`** (high) — Website related to social networking and players of over 1,000 games on this website
 - **`izitru`** (medium) — Use when you want to test whether a JPEG is an unmodified original camera file — historically returned an authenticity/"trust" score; note t
 - **`jeffreys-image-metadata-viewer`** (high) — Use when you have a photo (`image`) and want to read its embedded metadata — returns EXIF/IPTC/XMP fields including GPS `geolocation`, camer
 - **`jimpl`** (high) — Use when you have an `image` and want its hidden EXIF metadata — returns GPS `geolocation`, camera `device-id`, timestamps and other `metada
@@ -220,7 +208,6 @@ kind: group-index
 - **`jpegsnoop-image-decoder`** (high) — Use when you have an `image` and want its embedded metadata plus signs of editing/manipulation — returns EXIF, camera/software fingerprint, 
 - **`kairos-com`** (high) — Use when you have two face images and want to verify whether they are the same person — returns a similarity/match score.
 - **`kartavision`** (high) — Use when you have a street-level or scenic image and want to find visually similar locations to help geolocate where it was taken — returns 
-- **`kartrider`** (high) — Website related to social networking and players of the computer game Kartrider
 - **`keep-save-it`** (medium) — OSINT tool: Keep Save It.
 - **`keyhole-engelsjk`** (medium) — Experimental visualization tool for 1.3 million+ declassified spy satellite imagery (1960 to 1984 years).
 - **`kongregate`** (low) — Use when you have a gamer `username` and want to check for a matching public profile on the Kongregate browser-games community — returns a s
@@ -263,7 +250,6 @@ kind: group-index
 - **`numlookup-reverse-image-search`** (medium) — The results are very different from Yandex Images and Google Lens search results, as the service only searches for links to exact matches wi
 - **`observer`** (medium) — service allows you to watch data from different orbiting satellites in the record. The data is available in 15-30 minutes after recording.
 - **`online-exif-viewer`** (high) — Use when you have a photo file and want its embedded metadata — returns EXIF including GPS coordinates, capture timestamp, and camera/device
-- **`online-image-editor-com`** (high) — OSINT tool: online-image-editor.com.
 - **`openi-nlm-nih-gov`** (medium) — Reverse image search engine for scientific and medical images
 - **`openphoto`** (high) — Website related to social networking with photo and image galleries, posting and sharing services
 - **`originality-ai`** (high) — Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an
@@ -308,11 +294,9 @@ kind: group-index
 - **`positive-security`** (high) — OSINT tool: positive.security.
 - **`preservetube-com`** (high) — Use when you have a YouTube video/channel (`social-profile`) and want to recover or archive it before/after deletion — returns the preserved
 - **`profileimageintel`** (high) — Use when you have a social `username`, profile-image URL, or WhatsApp `phone` and want to know when the profile picture was set/changed — re
-- **`publicradiofan-station-listings`** (high) — List of radio stations and programs around the world
 - **`pureref`** (low) — Image workspace; lets you arrange images in groups, organize them, etc.
 - **`quiteaplaylist-com`** (high) — Use when you have a YouTube playlist (a subject's `social-profile`) and want to recover videos that were deleted or made private — returns t
 - **`radioreference-station-search`** (medium) — Use when you have a `geolocation`/agency or radio call sign and want radio-comms intelligence — returns scanner frequencies, trunked-system 
-- **`ragnarok-online`** (high) — Website related to social networking and players of the computer game Ragnarok Online
 - **`remini-ai-photo-enhancer`** (high) — Use when you have a low-resolution or blurry `image`/`face` and want an AI upscale/restoration to make features more legible for a human vie
 - **`remove-background`** (high) — Use when you have an `image`/`face` and want to isolate the subject or the background for cleaner analysis — returns a cut-out `image` (subj
 - **`remove-photos`** (medium) — Use when you have an `image`/`face` photo that's cluttered, low-res, or old and want to clean it up for reverse-image search — returns a pro
@@ -332,7 +316,6 @@ kind: group-index
 - **`scene-detection`** (medium) — Determine the timecodes on which there is a change of scenery in the video and significantly save time watching it
 - **`scene-edit-detection`** (medium) — A tool to help speed up and automate your video viewing. It highlights the frames where a new scene begins and allows you to quickly analyze
 - **`screencast`** (high) — Website related to social networking with video posting and sharing services
-- **`screenpal-com`** (high) — OSINT tool: screenpal.com.
 - **`search-by-image-addons-mozilla-org`** (high) — Use when you have an `image` and want to reverse-search it across 30+ engines from the browser — returns social-profile, face and other matc
 - **`search-by-image-chrome-google-com`** (high) — Use when you have an `image` or `face` and want to reverse-search it across 30+ engines at once — returns matching pages/profiles from Googl
 - **`search-by-image`** (high) — Use when you have an `image` and want to reverse-search it across many engines at once from a right-click menu — returns matching image copi
@@ -368,7 +351,6 @@ kind: group-index
 - **`stolencamerafinder-com`** (high) — Use when you have an original `image` (with intact EXIF) and want to find other photos taken by the same physical camera via its serial numb
 - **`stolencamerafinder`** (high) — Use when you have an `image` with a camera serial number in its EXIF and want other photos from the same physical camera — returns other onl
 - **`street-clip`** (medium) — AI, which determines from a photo the likelihood that it was taken in a particular country. (don't forget to change the list of countries fo
-- **`stupidvideos`** (high) — Website related to social networking with video posting and sharing services
 - **`subtitlevideo`** (medium) — Extract subtitles from video
 - **`svg-editor`** (high) — Use when you have an SVG `image` and want to inspect, edit, annotate or redact it in-browser — returns a modified image/vector, useful for m
 - **`tactiq-io`** (high) — Use when you have a YouTube video URL (`social-profile` / `metadata`) and want its full spoken transcript to mine for names, places and date
