@@ -24,7 +24,7 @@ kind: group-index
 - **`bumble`** (medium) — Use when you have an `image`, first `name`, or `geolocation` and want to check for a subject's profile on Bumble's location-based dating app
 - **`camsoda-com`** (medium) — OSINT tool: camsoda.com.
 - **`cia-foia`** (medium) — CIAs Freedom of Information Act Electronic Reading Room - provides access to declassified documents
-- **`classifiedads-com`** (medium) — Classified advertisements-related website that provides regional services
+- **`classifiedads-com`** (medium) — Use when you have a `name`, `phone`, or `username` and want to find a subject's classified listings — returns a `social-profile`/ad with `ph
 - **`coomer-st`** (medium) — OSINT tool: coomer.st.
 - **`craigslist-classified-ads-worldwide`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
 - **`craigslist`** (medium) — Use when you have a `phone`, `name`, or location keyword and want to search US local classifieds for a subject's posts, listings, or contact

@@ -120,7 +120,7 @@ kind: group-index
 - **`license-plate-mania`** (medium) — OSINT tool: License Plate Mania.
 - **`license-plate-maps`** (low) — Collection of tools and maps for discerning license plates by country
 - **`license-plates-in-canada`** (medium) — OSINT tool: 🚗License Plates in Canada 🇨🇦.
-- **`live-air-traffic-control`** (medium) — OSINT tool: Live Air Traffic Control.
+- **`live-air-traffic-control`** (medium) — Use when you have a `geolocation` (an airport) and want live and archived ATC radio audio — returns real-time and recorded controller/pilot 
 - **`live-atc`** (low) — Audio from air traffic control towers in the United States. Aircraft have to identify themselves to ATC towers, so in cases where aircraft a
 - **`live-cruise-ship-tracker`** (low) — OSINT tool: Live Cruise Ship Tracker.
 - **`live-piracy-map`** (low) — OSINT tool: Live Piracy Map.

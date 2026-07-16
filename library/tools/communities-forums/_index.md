@@ -343,7 +343,7 @@ kind: group-index
 - **`seeking-arrangement`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`seniorfriendfinder`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`seniorpeoplemeet`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`shaadi-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships; focused on the Indian community
+- **`shaadi-com`** (high) — Use when you have a `name`, `dob`, or partial details of a South-Asian subject and want a matrimonial profile — returns a `social-profile` w
 - **`showcase-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`sina-weibo-chinese`** (medium) — Chinese website related to social networking and micro-blogging
 - **`skout`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
@@ -404,7 +404,7 @@ kind: group-index
 - **`tutpaste`** (medium) — OSINT tool: TutPaste.
 - **`tvnz-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`typepad`** (medium) — Website related to social networking and blogging
-- **`uberpeople-net`** (medium) — OSINT tool: uberpeople.net.
+- **`uberpeople-net`** (medium) — Use when you have a `username` or a rideshare-driver subject and want their forum posts — returns a `social-profile` with location hints, ac
 - **`ukbusinessforums-co-uk`** (medium) — OSINT tool: ukbusinessforums.co.uk.
 - **`uksexforum-co-uk`** (medium) — OSINT tool: uksexforum.co.uk.
 - **`univision-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base

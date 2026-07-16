@@ -11,7 +11,7 @@ kind: group-index
 - **`bielefeld-academic-search-engine`** (medium) — Broad academic literature search across open-access and institutional repositories
 - **`copyscape-plagiarism-checker`** (medium) — Detecting plagiarism and tracing where specific text or content has been copied or republished online
 - **`google-scholar`** (medium) — Comprehensive academic literature discovery with citation tracking across all disciplines
-- **`jurn`** (medium) — Open-access academic article discovery in arts, humanities, and social sciences
+- **`jurn`** (medium) — Use when you have a `name` or research topic and want open-access scholarly work by/about a person — returns article links naming authors, a
 - **`lazy-scholar`** (medium) — Finding free full-text access to paywalled academic papers without institutional subscription
 - **`library-databases`** (medium) — Identifying specialized academic databases by subject for deep literature research
 - **`microsoft-academic`** (medium) — Academic paper discovery with author disambiguation and citation graph analysis

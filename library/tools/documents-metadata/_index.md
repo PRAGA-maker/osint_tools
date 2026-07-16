@@ -106,7 +106,7 @@ kind: group-index
 - **`eyedex`** (low) — OSINT tool: eyedex.
 - **`fbi-information-technology-united-states`** (low) — Online government website providing information on computer and information technology occupations
 - **`federal-it-dashboard-united-states`** (low) — Online government website providing information on computer and information technology occupations
-- **`ffmpeg`** (medium) — Multimedia framework for extracting, converting and processing video and audio.
+- **`ffmpeg`** (medium) — Use when you have a video/audio file (a `metadata-exif` carrier) and want to pull frames and embedded metadata — returns `image` stills and 
 - **`fide`** (low) — World chess player ratings website
 - **`fifa`** (low) — Football team rankings website
 - **`filesec-io`** (low) — OSINT tool: Filesec.io.
