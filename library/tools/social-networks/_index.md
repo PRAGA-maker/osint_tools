@@ -61,7 +61,7 @@ kind: group-index
 - **`birdhunt`** (high) — Use when you have a `geolocation` (place of interest) and want X/Twitter posts sent from near it — returns geographically-filtered posts and
 - **`birdsql`** (medium) — New Twitter search tool using OpenAI GPT 3.5. Type queries in simple english language to get lists of tweets or users. For example: most lik
 - **`bitchute-com`** (high) — Use when you have a `username` or `name` and want to find a subject's video presence on the alt-tech platform BitChute — returns channels, v
-- **`bitdownloader-io`** (high) — OSINT tool: bitdownloader.io.
+- **`bitdownloader-io`** (high) — Use when you have a `social-profile` post/media URL and want the raw video or photo file off-platform — returns the downloaded `image`/video
 - **`bitmoji-avatar-history-enumerator`** (medium) — BACKMOJI takes a Bitmoji ID, version (usually the number 5), and a maximum value. Press the “Grab Images!” button and your browser will make
 - **`blackplanet-com`** (high) — Use when you have a `username` or `name` and want to check a legacy BlackPlanet profile — but note the site has pivoted to a news platform, 
 - **`blastup`** (high) — Download Instagram videos and photos
@@ -140,7 +140,7 @@ kind: group-index
 - **`doximity-united-states`** (medium) — Use when you have a `name` and believe the subject is a US clinician (doctor, PA, NP) and want their verified professional profile, specialt
 - **`draugiem-latvia`** (high) — Use when you have a `name` or `username` of a Latvian subject and want their social profile — returns a Draugiem.lv profile (photos, friends
 - **`dumpitblue-chromewebstore-google-com`** (high) — Use when you are logged into Facebook viewing a `social-profile`/page and want to capture everything on screen — posts, comments, friends — 
-- **`dumplt-blue`** (high) — GoogleChrome extension for @Facebook: dump to txt file friends, group members, messenger contacts etc, automate scroll page to bottom (+isol
+- **`dumplt-blue`** (high) — Use when you have access to a target's `social-profile` (Facebook profile, group, or friends list) and want the connections as a structured 
 - **`dumpor-instagram-search`** (high) — Use when you have an Instagram `username`, `name` or hashtag and want to view/download the public profile anonymously — returns profile, pos
 - **`dumpor-io`** (high) — Use when you have an Instagram `username` and want to view/download that public profile's posts, stories, reels and follower lists without l
 - **`duolingosint`** (medium) — The language learning platform Duolingo has more than 570 million+ users worldwide. This tool collects information about Duolingo users by n

@@ -15,7 +15,7 @@ kind: group-index
 - **`odnoklassniki`** (high) — Use when you have a `name`, `username` or `phone` for a Russian/CIS subject and want their social profile, photos and connections — returns 
 - **`orkut-brazil`** (high) — Use when you have a `username`/`name` for a subject active before 2014 and want their old Orkut profile via web archives — returns social-pr
 - **`share-secret-feedback`** (high) — Use when you have a Secreto `username`/profile link (often shared from a subject's Instagram/Snapchat bio) and want to view their public ano
-- **`thehoodup-nsfw`** (high) — Searching forum posts, user profiles, and discussions on TheHoodUp community board
+- **`thehoodup-nsfw`** (high) — Use when you have a `username`/`name`/alias tied to US street or "hood" culture and want the person's forum profile, posts, and self-declare
 - **`tumblr`** (high) — Use when you have a `username`, tag or keyword and want Tumblr content/blogs — returns public posts, blogs and user profiles matching the ta
 - **`vk`** (high) — Use when you have a `name`/`username` for a Russian or Eastern-European subject and want a rich profile — returns photos, friends, wall post
 

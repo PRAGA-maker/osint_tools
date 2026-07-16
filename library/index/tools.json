@@ -140308,30 +140308,29 @@
   {
     "id": "fix-picture-image-conversion-tool",
     "name": "Fix Picture Image Conversion Tool",
-    "description": "Website with an image conversion and resizing tool with over 400 supported formats",
+    "description": "Use when you have an `image` in an awkward format (HEIC, RAW, TIFF, WebP) and want a clean JPG/PNG at a controlled size — returns a converted `image` ready for reverse-image and face search.",
     "url": "http://www.fixpicture.org",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Converting and resizing a source photo into a format reverse-image / face-search engines will accept.",
     "selectorsIn": [
-      "image",
-      "face"
+      "image"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free online converter, no account; batch of up to 20 images at a time. Now served by XnView (fixpicture.org 301-redirects to convert.xnview.com).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a UTILITY, not a query against the target — but the image you upload leaves your machine and is processed on XnView's servers. Never upload an evidentiary image you must keep chain-of-custody on, or one whose loss/retention matters. Strip nothing you still need; keep your master copy local and convert a copy.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by XnView, a long-standing image-software vendor; reputable utility, but a third-party you are handing pixels to. No investigative data is returned, so data-quality risk is nil.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -140340,15 +140339,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "tools"
+    ],
+    "aliases": [
+      "FixPicture",
+      "XnView convert",
+      "fixpicture.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "image-conversion"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fix-picture-image-conversion-tool.md"
   },
   {
@@ -318801,44 +318808,53 @@
   {
     "id": "bitdownloader-io",
     "name": "bitdownloader.io",
-    "description": "OSINT tool: bitdownloader.io.",
+    "description": "Use when you have a `social-profile` post/media URL and want the raw video or photo file off-platform — returns the downloaded `image`/video for offline preservation, frame grabs, and reverse search.",
     "url": "https://bitdownloader.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a target's posted video or photo from YouTube / Facebook / Instagram / TikTok / X as a local file before it is deleted.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account, no software install; ad-supported (interstitial/redirect ads).",
+    "opsec": "passive",
+    "opsecNote": "Useful OpSec property — BitDownloader's server fetches the media, so the download does not hit the target's profile from your IP. BUT you disclose the target's post URL to a third-party ad-supported site; assume it is logged. Use a sock-puppet browser session and an ad-blocker, and never click the injected \"download\" ads (malvertising risk).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous consumer downloader with no accountable operator; the service works but is ad-heavy. Verify every file you pull (hash it, scan it) before opening.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "tools"
+    ],
+    "aliases": [
+      "BitDownloader",
+      "bitdownloader"
+    ],
     "tags": [
       "facebook",
-      "Facebook General Links"
+      "Facebook General Links",
+      "video-download",
+      "social-media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bitdownloader-io.md"
   },
   {
@@ -322568,42 +322584,59 @@
   },
   {
     "id": "dumplt-blue",
-    "name": "Dumplt Blue",
-    "description": "GoogleChrome extension for @Facebook: dump to txt file friends, group members, messenger contacts etc, automate scroll page to bottom (+isolate scrolling), automate expanding comments and replies and much more.",
+    "name": "DumpItBlue+",
+    "description": "Use when you have access to a target's `social-profile` (Facebook profile, group, or friends list) and want the connections as a structured file — returns `associate`/`name`/`social-profile`/`image` rows dumped to text.",
     "url": "https://chrome.google.com/webstore/detail/dumpitblue%2B/igmgknoioooacbcpcfgjigbaajpelbfe/related",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-extracting a Facebook profile's friends, a group's members, or a thread's commenters into a text file for network analysis.",
     "selectorsIn": [
-      "face",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "associate",
+      "name",
+      "social-profile",
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension by arioux (le-tools.com). No paywall; documentation at le-tools.com/DumpItBlueExtensionDoc.html.",
+    "opsec": "active",
+    "opsecNote": "This runs inside YOUR logged-in Facebook session and auto-scrolls the target's pages — that IS automation Facebook can detect and act on. Use ONLY a dedicated sock-puppet Facebook account (never a personal/work one), expect the account to be rate-limited or banned, and never let it touch your real identity. Being friends with the target may surface you in their \"recently viewed\"; prefer a puppet with no relationship to the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-maintained extension from arioux/le-tools, a known author of DFIR/OSINT utilities; open enough to inspect, but it injects JS into Facebook, so run it in an isolated browser profile.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "DumpItBlue",
+      "DumpItBlue Plus",
+      "le-tools DumpItBlue"
+    ],
     "tags": [
       "Social Media",
-      "Facebook"
+      "Facebook",
+      "friend-list",
+      "network-analysis",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/dumplt-blue.md"
   },
   {
@@ -350672,41 +350705,58 @@
   {
     "id": "thehoodup-nsfw",
     "name": "TheHoodUp (NSFW)",
-    "description": "Searching forum posts, user profiles, and discussions on TheHoodUp community board",
+    "description": "Use when you have a `username`/`name`/alias tied to US street or \"hood\" culture and want the person's forum profile, posts, and self-declared locale — returns `social-profile`, `associate` links, and `geolocation` clues.",
     "url": "https://thehoodup.com/board/",
     "category": "social-networks",
     "path": [
       "social-networks",
       "other-social-networks"
     ],
-    "bestFor": "Searching forum posts, user profiles, and discussions on TheHoodUp community board",
-    "input": "Username, keywords, or topic search",
-    "output": "Forum posts, user profiles, discussion threads, and media content",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Tracing an alias or handle through a US-centric street-culture community board where users self-identify their neighbourhood and affiliations.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to read public boards; registering an account (free) is generally needed to use the internal search and view some threads.",
     "opsec": "passive",
-    "opsecNote": "Standard web request to public forum; browsing does not require an account for most content.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Browsing is passive, but this is a small, insular NSFW community that flags outsiders and lurkers. Never register or post with an attributable identity — use a sock-puppet account and a clean browser/VPN. Content includes gang, drug and violent-crime discussion; handle as sensitive and do not engage members.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha",
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "User-generated content on an anonymous forum; identities, locations and boasts are self-asserted and frequently exaggerated or fabricated. Every claim needs external corroboration.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "TheHoodUp",
+      "thehoodup.com",
+      "street-gangz"
+    ],
+    "tags": [
+      "forum",
+      "street-culture",
+      "nsfw"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-15",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/other-social-networks/thehoodup-nsfw.md"
   },
   {

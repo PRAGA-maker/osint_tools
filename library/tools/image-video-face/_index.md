@@ -136,7 +136,7 @@ kind: group-index
 - **`findpiclocation-com`** (high) — Use when you have a photo and need to estimate where it was taken (image geolocation) to localize a missing person or a sighting.
 - **`findsounds`** (high) — Multi-media search engine focusing on sounds stored on multiple databases
 - **`fireshot-addons-mozilla-org`** (medium) — Use when you need to capture a full-page screenshot of a web profile or post to preserve evidence before it is edited or deleted.
-- **`fix-picture-image-conversion-tool`** (high) — Website with an image conversion and resizing tool with over 400 supported formats
+- **`fix-picture-image-conversion-tool`** (high) — Use when you have an `image` in an awkward format (HEIC, RAW, TIFF, WebP) and want a clean JPG/PNG at a controlled size — returns a converte
 - **`flexclip`** (medium) — Get video metadata
 - **`flickr-com`** (high) — Use when you want to browse geotagged Flickr photos on a map to place a person or scene — a duplicate listing pointing at Flickr's map view.
 - **`font-spring`** (medium) — OSINT tool: Font Spring.
