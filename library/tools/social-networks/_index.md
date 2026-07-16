@@ -61,7 +61,7 @@ kind: group-index
 - **`bitdownloader-io`** (high) — Use when you have a `social-profile` post/media URL and want the raw video or photo file off-platform — returns the downloaded `image`/video
 - **`bitmoji-avatar-history-enumerator`** (medium) — BACKMOJI takes a Bitmoji ID, version (usually the number 5), and a maximum value. Press the “Grab Images!” button and your browser will make
 - **`blackplanet-com`** (high) — Use when you have a `username` or `name` and want to check a legacy BlackPlanet profile — but note the site has pivoted to a news platform, 
-- **`blastup`** (high) — Download Instagram videos and photos
+- **`blastup`** (low) — Use when you have an Instagram post/reel/photo URL and want to save the original-quality media (no watermark, no login) for offline analysis
 - **`blog-compass-security-com`** (high) — Use when you have a subject on LinkedIn (`name`/`username`) and want proven techniques to deanonymise surnames, detect language, and X-ray p
 - **`bluesky-insights-dwagentai-com`** (medium) — Use when you have a Bluesky `username`/handle and want follower-growth analytics and similar-account discovery — returns social-profile metr
 - **`bluesky-users-stats`** (medium) — OSINT tool: BlueSky users stats.
@@ -389,7 +389,6 @@ kind: group-index
 - **`monnett-social`** (high) — Use when you have a `username` or `name` and suspect the subject is on Monnett, a small privacy-focused European social app — returns a soci
 - **`montage-meedan-com`** (medium) — Search #YouTube video by date (uploaded or recording) and by geolocation.
 - **`mostly-harmless`** (high) — Use when you have a URL/`domain` or image and want to find where it's been posted on Reddit and who submitted it — a browser extension retur
-- **`mymfb-com`** (high) — OSINT tool: mymfb.com.
 - **`myosint-training`** (high) — Use when you want to build OSINT skills or grab free practitioner tools — a reputable training provider (Micah Hoffman & Griffin Glynn) offe
 - **`myspace-com`** (high) — Use when you have a `username` or `name` and want to check for a legacy Myspace profile — returns a social-profile and old photos, mostly va
 - **`mytweetalerts`** (medium) — Use when you have a `username`, `name` or keyword and want ongoing email alerts whenever matching tweets are posted — returns `social-profil

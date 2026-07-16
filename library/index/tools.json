@@ -149230,52 +149230,6 @@
     "_file": "library/tools/image-video-face/podcast-alley.md"
   },
   {
-    "id": "podcastalley",
-    "name": "Podcastalley",
-    "description": "Website related to social networking and podcasting services",
-    "url": "http://www.podcastalley.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/podcastalley.md"
-  },
-  {
     "id": "podomatic",
     "name": "Podomatic",
     "description": "Use when you have a `name`/`username` and want to find a subject's podcast presence — returns a social-profile with episodes, avatar and any voice/location clues.",
@@ -169198,37 +169152,52 @@
   {
     "id": "spyggbot",
     "name": "SpyGGbot",
-    "description": "OSINT tool: SpyGGbot.",
+    "description": "Use when you have an NFT/crypto wallet address and want to track its holdings, ownership and floor prices via Telegram — returns crypto-wallet activity and ownership links.",
     "url": "https://telegram.me/SpyGGbot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracking NFT wallet holdings, ownership and floor prices from within Telegram.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot for NFT/wallet tracking; some tracking bots gate alerts/extras behind credits.",
+    "opsec": "passive",
+    "opsecNote": "You query on-chain/marketplace data that is already public; the wallet owner is not notified. You must, however, message the bot from a Telegram account, which exposes your querying account to the bot operator — use a burner Telegram identity for research.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trust": "unverified",
+    "trustNote": "An anonymous Telegram bot (bio pitches NFT wallet/floor-price/ownership tracking); provenance and continuity of the handle are unverifiable, so treat outputs as leads and confirm on a block explorer or marketplace directly.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SpyGG bot",
+      "SpyGGbot NFT tracker"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "crypto",
+      "nft",
+      "wallet-tracking"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "avtogram-bot",
       "datxpert",
@@ -257184,51 +257153,6 @@
     "_file": "library/tools/public-records/propertypriceregisterireland-com.md"
   },
   {
-    "id": "prostitutenearme-co-uk",
-    "name": "prostitutenearme.co.uk",
-    "description": "OSINT tool: prostitutenearme.co.uk.",
-    "url": "https://prostitutenearme.co.uk/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professionlicensing",
-      "Profession & Licensing Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/prostitutenearme-co-uk.md"
-  },
-  {
     "id": "prs-risk-indicators",
     "name": "PRS Risk Indicators",
     "description": "OSINT tool: PRS Risk Indicators.",
@@ -261028,40 +260952,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/general-info-and-news/sec-gov-edgar.md"
-  },
-  {
-    "id": "seco-verification-of-course-attendance-2018",
-    "name": "SECO Verification of Course Attendance 2018",
-    "description": "OSINT tool: SECO Verification of Course Attendance 2018.",
-    "url": "https://c0esh132.caspio.com/dp/9040200005c29c35a74342e2b357",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/seco-verification-of-course-attendance-2018.md"
   },
   {
     "id": "secret-surveillance-catalogue",
@@ -312798,31 +312688,31 @@
   },
   {
     "id": "blastup",
-    "name": "Blastup",
-    "description": "Download Instagram videos and photos",
+    "name": "Blastup Instagram Downloader",
+    "description": "Use when you have an Instagram post/reel/photo URL and want to save the original-quality media (no watermark, no login) for offline analysis and preservation — returns the downloaded media file.",
     "url": "https://blastup.com/instagram-downloader",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "One-click, login-free download of Instagram reels, photos, carousels and videos in original quality.",
     "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Advertised as 100% free with no download limits and no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You paste a public Instagram post URL into Blastup's site; nothing about you or your subject is submitted beyond the post link, and the account owner is not notified of the download. Blastup's own servers see the URL and your IP — use a research browser/VPN if you don't want the lookup tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trustNote": "Third-party downloader (listed in Toddington's OSINT resource directory), not affiliated with Instagram/Meta. Reliable for grabbing public media but offers no provenance guarantees; don't paste private/logged-in URLs.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -312830,15 +312720,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Blastup",
+      "Blastup IG downloader"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "instagram",
+      "video-download"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/blastup.md"
   },
   {
@@ -329979,49 +329874,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/mostly-harmless.md"
-  },
-  {
-    "id": "mymfb-com",
-    "name": "mymfb.com",
-    "description": "OSINT tool: mymfb.com.",
-    "url": "http://mymfb.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gsocialmedia",
-      "General Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/mymfb-com.md"
   },
   {
     "id": "myosint-training",

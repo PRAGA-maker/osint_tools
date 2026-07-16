@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8452 total · 2427 full · 6025 stub (28% enriched)
+**Tools:** 8448 total · 2429 full · 6019 stub (28% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3355 · low: 3151 · high: 1946
+medium: 3355 · low: 3153 · high: 1940
 
 ## Tools by trust
-unverified: 4547 · community: 3116 · trusted: 776 · personal: 7 · untrustworthy: 6
+unverified: 4545 · community: 3114 · trusted: 776 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -25,15 +25,15 @@ unverified: 4547 · community: 3116 · trusted: 776 · personal: 7 · untrustwor
 - `evidence-capture` — 1/33
 - `financial-crypto` — 0/134
 - `geolocation` — 150/359
-- `image-video-face` — 348/484
+- `image-video-face` — 348/483
 - `maps-geospatial-data` — 3/147
-- `messaging` — 131/204
+- `messaging` — 132/204
 - `opsec-investigator-tooling` — 3/567
 - `people-search` — 212/277
 - `phone` — 128/140
-- `public-records` — 516/1147
+- `public-records` — 516/1145
 - `search-engines` — 50/987
-- `social-networks` — 497/895
+- `social-networks` — 498/894
 - `training-ctf` — 0/12
 - `translation-language` — 1/103
 - `transportation` — 7/237
@@ -41,14 +41,14 @@ unverified: 4547 · community: 3116 · trusted: 776 · personal: 7 · untrustwor
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1079 leaves
+- `library/tools/public-records` — 1077 leaves
 - `library/tools/search-engines` — 916 leaves
-- `library/tools/social-networks` — 866 leaves
+- `library/tools/social-networks` — 865 leaves
 - `library/tools/domains-ip-infrastructure` — 533 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/communities-forums` — 423 leaves
 - `library/tools/ai-analysis-automation` — 421 leaves
-- `library/tools/image-video-face` — 387 leaves
+- `library/tools/image-video-face` — 386 leaves
 - `library/tools/geolocation` — 343 leaves
 - `library/tools/people-search` — 267 leaves
 - `library/tools/documents-metadata` — 266 leaves

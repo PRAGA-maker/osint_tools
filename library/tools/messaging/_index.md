@@ -129,7 +129,7 @@ kind: group-index
 - **`skresolver-com`** (medium) — OSINT tool: skResolver.com.
 - **`skypehunt`** (medium) — A tool for finding Skype users by nickname. Shows a list of users with date of birth, year of account creation, country, avatar link, and ot
 - **`sms-activate`** (high) — Use when you need a disposable `phone` number to receive an SMS/OTP for a sock-puppet account without exposing your own number — rents tempo
-- **`spyggbot`** (high) — OSINT tool: SpyGGbot.
+- **`spyggbot`** (low) — Use when you have an NFT/crypto wallet address and want to track its holdings, ownership and floor prices via Telegram — returns crypto-wall
 - **`support-discord-com-2`** (high) — Use when you have a `username` and want to search Discord's public community help forum for posts, complaints, or server references tied to 
 - **`support-discord-com`** (high) — Use when you're resolving a Discord `username` and need to understand the 2023 unique-username vs display-name system — returns reference kn
 - **`surftg-bot`** (high) — Use when you have a `name`, `username`, or keyword and want to find matching Telegram messages/channels via a search bot — returns `social-p

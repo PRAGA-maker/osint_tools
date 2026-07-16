@@ -273,7 +273,6 @@ kind: group-index
 - **`pocket`** (low) — OSINT tool: Pocket.
 - **`podbean`** (high) — Use when you have a subject's `name` or `username` and suspect they host a podcast — returns their public podcast `social-profile`, episode 
 - **`podcast-alley`** (high) — Use when you have a `name`/`username` and want to check whether a subject self-hosts a podcast here — returns a show page with bio, photo an
-- **`podcastalley`** (high) — Website related to social networking and podcasting services
 - **`podomatic`** (high) — Use when you have a `name`/`username` and want to find a subject's podcast presence — returns a social-profile with episodes, avatar and any
 - **`portrait-matcher`** (high) — Use when you have a `face` and want to see which historical portrait paintings it resembles — returns physical-description-style lookalikes,
 - **`portrait-search`** (high) — Use when you have a `name` of a notable/historical American and want catalogued portraits of them — returns portrait `image`s and biographic

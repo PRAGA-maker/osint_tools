@@ -822,7 +822,6 @@ kind: group-index
 - **`property-search-public-records-by-state`** (medium) — OSINT tool: Property Search - Public Records by State.
 - **`propertypriceregister-ie`** (medium) — Use when you have an Irish `address` (or area) and want to confirm a residential sale, its date and price — returns the sale date, price and
 - **`propertypriceregisterireland-com`** (high) — Use when you have an Irish `address` (or area) and want to confirm a residential sale — date and price — at that property — returns address 
-- **`prostitutenearme-co-uk`** (high) — OSINT tool: prostitutenearme.co.uk.
 - **`prs-risk-indicators`** (low) — OSINT tool: PRS Risk Indicators.
 - **`psa-gov-ie`** (high) — Use when you have a contractor/employee `name` or `employer-org` in Irish private security and want to verify their PSA licence — returns li
 - **`public-access-to-court-electronic-records`** (high) — Use when you have a `name` and want US federal court cases (dockets, parties, filings) they are involved in — returns document-id, associate
@@ -897,7 +896,6 @@ kind: group-index
 - **`searchsystems-death-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database holding a death/mortality record — re
 - **`sec-company-search`** (low) — OSINT tool: SEC Company Search.
 - **`sec-gov`** (medium) — Use when you have a `name` or `employer-org` and want US securities filings — returns officer/director names, business `address`, company af
-- **`seco-verification-of-course-attendance-2018`** (high) — OSINT tool: SECO Verification of Course Attendance 2018.
 - **`secret-surveillance-catalogue`** (medium) — OSINT tool: Secret Surveillance Catalogue.
 - **`section-16-deadline-calculator`** (medium) — OSINT tool: Section 16 Deadline Calculator.
 - **`securities-administrators-ca`** (high) — Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give invest
