@@ -79,7 +79,7 @@ kind: group-index
 - **`followgraph-for-mastodon`** (medium) — Enter any #Mastodon Handle and get a list of accounts followed by the people this profile follows. It helps to find connections between peop
 - **`geogramint`** (high) — Use when you have a `geolocation` (coordinates) and want to enumerate Telegram users/groups who have shared their location nearby — returns 
 - **`geomacfinder`** (high) — OSINT tool: GeoMacFinder.
-- **`getairplane`** (high) — OSINT tool: Getairplane.
+- **`getairplane`** (medium) — Use when you have a `phone` and want to check for associated airline-booking / flight-history records — returns name and geolocation (route)
 - **`getchatlist`** (high) — Use when you have a Telegram `username` or user ID and want to map which groups/channels that account belongs to — returns the list of Teleg
 - **`getsendgifts`** (high) — OSINT tool: GetSendGifts.
 - **`github-com-skarlso-rscrap`** (medium) — OSINT tool: Github.com/Skarlso/rscrap.
@@ -206,7 +206,6 @@ kind: group-index
 - **`tgscanrobot`** (medium) — telegram bot to show which telegram groups a person is member of.
 - **`tgspyder`** (medium) — Telegram analysis tool for social media intelligence and threat research.
 - **`tgstat-ru`** (medium) — Russian Telegram analytics platform.
-- **`tgworld`** (high) — OSINT tool: tgworld.
 - **`thunderify-com`** (high) — OSINT tool: thunderify.com.
 - **`tlgrm-eu-channels`** (medium) — Search Telegram channels.
 - **`transcriber-bot`** (medium) — telegram bot, which can convert to text voice messages in 24 languages (view pic)

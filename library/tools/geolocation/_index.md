@@ -197,7 +197,6 @@ kind: group-index
 - **`measuremaponline`** (medium) — tool for drawing rectangles, circles and complex polygons on a world map to measure their area and perimeter
 - **`measuretool-googlemaps-v3`** (medium) — Measurement tool for #GoogleMaps.
 - **`meteoblue`** (medium) — Weather stats data
-- **`metrocosm`** (high) — A collection of maps and other data visualization projects
 - **`mgrs-mapper`** (medium) — Build and share custom maps with standard military graphics using a simple visual interface (paod)
 - **`mindat-org`** (medium) — mineral maps for different countries
 - **`modest-maps`** (low) — Use when a developer needs a lightweight library to build a custom slippy-map viewer — not a lookup tool for finding a person.

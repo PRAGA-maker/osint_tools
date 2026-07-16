@@ -125899,55 +125899,6 @@
     "_file": "library/tools/geolocation/meteoblue.md"
   },
   {
-    "id": "metrocosm",
-    "name": "Metrocosm",
-    "description": "A collection of maps and other data visualization projects",
-    "url": "http://metrocosm.com",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "geo-location-mapping-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "disputed-territories"
-    ],
-    "_file": "library/tools/geolocation/metrocosm.md"
-  },
-  {
     "id": "mgrs-mapper",
     "name": "MGRS Mapper",
     "description": "Build and share custom maps with standard military graphics using a simple visual interface (paod)",
@@ -146506,31 +146457,31 @@
   {
     "id": "kongregate",
     "name": "Kongregate",
-    "description": "Website related to social networking and players of over 1,000 games on this website",
-    "url": "http://www.kongregate.com",
+    "description": "Use when you have a gamer `username` and want to check for a matching public profile on the Kongregate browser-games community — returns a social-profile with activity and avatar.",
+    "url": "https://www.kongregate.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming whether a username is a real Kongregate account and reading its public profile/avatar.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse public profiles; no account needed to view them.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public Kongregate profile is passive and does not notify the account holder. Logging in to view would tie the lookup to your account, so browse logged-out; commenting or friending is active and leaks you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Kongregate is a real, long-running games platform (owned by MTG/Kongregate); profile data is user-supplied, so treat display names and bios as self-asserted.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -146538,15 +146489,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "invitationOnly": false,
     "aliases": [],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "gaming"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/kongregate.md"
   },
   {
@@ -147596,48 +147549,52 @@
   },
   {
     "id": "lyrics-net",
-    "name": "Lyrics.net",
-    "description": "Multi-media search engine focusing on music, songs, artists, musicians, and lyrics stored on multiple databases",
-    "url": "http://www.lyrics.net",
+    "name": "Lyrics.com (Lyrics.net)",
+    "description": "Use when you have a fragment of song lyrics or an artist `name` and want to identify the track/artist or find a contributor profile — returns names and social-profile leads.",
+    "url": "https://www.lyrics.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying a song from a remembered lyric line, or resolving an artist/band name to their catalogue.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name"
     ],
     "selectorsOut": [
-      "image",
+      "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported lyrics database (STANDS4 network); no account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Plain keyword search of a public database; nothing is disclosed to any person. Standard third-party-site logging applies — use a VPN/sock-puppet only if the lyric fragment itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Part of the STANDS4 reference network; lyric and metadata entries are user-contributed and can contain errors.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Lyrics.net",
+      "Lyrics.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/lyrics-net.md"
   },
   {
@@ -152936,32 +152893,31 @@
   },
   {
     "id": "runescape",
-    "name": "Runescape",
-    "description": "Website related to social networking and players of the computer game Runescape",
-    "url": "http://www.runescape.com/community",
+    "name": "RuneScape (Player Hiscores)",
+    "description": "Use when you have a gamer `username` and want to confirm a RuneScape account and read its public hiscores/activity — returns a social-profile with skill stats.",
+    "url": "https://secure.runescape.com/m=hiscore/compare",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a RuneScape display name exists and pulling its public skill/activity stats.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username"
     ],
     "selectorsOut": [
-      "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public hiscores; no account or payment to look up a display name.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Hiscore and profile lookups are read-only against Jagex's public pages and do not alert the player. Adding the player as a friend or messaging in-game is active — do not.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "Operated by Jagex, the game's publisher; the hiscore stats are first-party and authoritative for that display name.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -152969,15 +152925,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "RuneScape hiscores",
+      "Old School RuneScape hiscores"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "image-video-multimedia-search"
+      "image-video-multimedia-search",
+      "gaming"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/runescape.md"
   },
   {
@@ -156035,52 +155996,6 @@
     "_file": "library/tools/image-video-face/telegram-facemath-bot.md"
   },
   {
-    "id": "telly",
-    "name": "Telly",
-    "description": "Video on demand service",
-    "url": "http://telly.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/telly.md"
-  },
-  {
     "id": "textgrab",
     "name": "TextGrab",
     "description": "Simple #Chrome extension for copying and recognizing text from videos (#YouTube, #GoogleMeetup etc.)",
@@ -158131,52 +158046,6 @@
       "websta-instagram-analytics"
     ],
     "_file": "library/tools/image-video-face/images/instagram/webstigram.md"
-  },
-  {
-    "id": "webstigram-com",
-    "name": "Webstigram.com",
-    "description": "OSINT tool: Webstigram.com.",
-    "url": "https://web.stagram.com/search",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reverse-image",
-      "face"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "web-stagram-com"
-    ],
-    "_file": "library/tools/image-video-face/webstigram-com.md"
   },
   {
     "id": "weheartit",
@@ -169192,38 +169061,55 @@
   },
   {
     "id": "getairplane",
-    "name": "Getairplane",
-    "description": "OSINT tool: Getairplane.",
-    "url": "https://telegram.me/getairplane_bot",
+    "name": "Getairplane (flight-history bot)",
+    "description": "Use when you have a `phone` and want to check for associated airline-booking / flight-history records — returns name and geolocation (route) leads from leaked travel data.",
+    "url": "https://t.me/getairplane_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Reverse-checking a phone number against leaked airline booking data for flight history.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Free tier returns a truncated result (about three lines); fuller output is paywalled/credit-gated.",
+    "opsec": "active",
+    "opsecNote": "This is a \"probiv\" bot querying breached/leaked airline data via a Telegram account you control. The query runs through the bot operator, who logs your account and every number you submit; results derive from stolen data, so treat use as legally sensitive. Use a dedicated sock-puppet Telegram account on a burner number over VPN, and confirm you have lawful basis before querying a real person.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trust": "unverified",
+    "trustNote": "Anonymous Telegram bot trading on breached airline data; no accountable operator, no provenance, and results cannot be independently verified. Data may be stale, partial, or fabricated.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "getairplane_bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "probiv",
+      "flight-osint"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/getairplane.md"
   },
   {
@@ -175535,42 +175421,6 @@
       "telegram-analytics"
     ],
     "_file": "library/tools/messaging/tgstat-ru.md"
-  },
-  {
-    "id": "tgworld",
-    "name": "tgworld",
-    "description": "OSINT tool: tgworld.",
-    "url": "https://tg.world/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/tgworld.md"
   },
   {
     "id": "thunderify-com",
@@ -201539,51 +201389,6 @@
     "_file": "library/tools/people-search/carrier-lookup-2.md"
   },
   {
-    "id": "cedar",
-    "name": "Cedar",
-    "description": "OSINT tool: Cedar.",
-    "url": "http://www.cedar.buffalo.edu/adserv/person-search.html",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/cedar.md"
-  },
-  {
     "id": "certificated-bailiff-register-justice-uk",
     "name": "Certificated Bailiff Register – Justice UK",
     "description": "Use when you have a `name` of someone claiming to be an enforcement agent (bailiff) in England & Wales and want to verify them — returns whether they hold a valid certificate, their employer, and the certifying court.",
@@ -224359,40 +224164,6 @@
     "_file": "library/tools/public-records/arkansas-department-of-correction.md"
   },
   {
-    "id": "arkvoters-com",
-    "name": "Arkvoters.com",
-    "description": "OSINT tool: Arkvoters.com.",
-    "url": "https://arkvoters.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/arkvoters-com.md"
-  },
-  {
     "id": "arrest-bookings-search-and-report",
     "name": "Arrest Bookings Search and Report",
     "description": "OSINT tool: Arrest Bookings Search and Report.",
@@ -230864,40 +230635,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/public-records/connvoters-com.md"
-  },
-  {
-    "id": "convicted-alberta-sex-offender",
-    "name": "Convicted Alberta Sex Offender",
-    "description": "OSINT tool: Convicted Alberta Sex Offender.",
-    "url": "http://stoppedophiles.ca/convicted-AB.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/convicted-alberta-sex-offender.md"
   },
   {
     "id": "convicted-sex-offenders-list",
@@ -243214,47 +242951,56 @@
   },
   {
     "id": "greataupair-com",
-    "name": "greataupair.com",
-    "description": "OSINT tool: greataupair.com.",
-    "url": "http://www.greataupair.com/",
+    "name": "GreatAuPair",
+    "description": "Use when you have a `name` and suspect the subject works or seeks work in childcare/eldercare — returns a social-profile with location, job type, and photo.",
+    "url": "https://www.greataupair.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a caregiver's public profile (au pair, nanny, tutor, senior-care) by browsing/searching the platform.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "address"
     ],
     "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
+      "social-profile",
+      "geolocation",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to sign up and browse candidate/family profiles; contacting members and premium features require a paid subscription.",
+    "opsec": "active",
+    "opsecNote": "Browsing public listings is passive, but seeing full profiles and searching effectively needs a (free) account, which ties queries to it — use a sock-puppet account. Contacting a member notifies them, so stop at reading the profile.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "trust": "community",
+    "trustNote": "A legitimate, long-running caregiver-matching marketplace; profiles are self-created by users, so names, photos, and locations are self-asserted.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "Great Au Pair"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "caregiver"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/greataupair-com.md"
   },
   {
@@ -290571,48 +290317,6 @@
     "_file": "library/tools/search-engines/google-com-82.md"
   },
   {
-    "id": "google-com-83",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://docs.google.com/document/d/1ydVaJJeL1EYbWtlfj9TPfBTE5IBADkQfZrQaBZxqXGs/edit?fbclid=IwAR25ZP_8_eh_kN6_Ruyupo42RlYWGo9r-8XN7BnPHTL7w716PJFW-N-JiRM",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "searchengines",
-      "Search Engines"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/google-com-83.md"
-  },
-  {
     "id": "google-com-84",
     "name": "google.com (Advanced Image Search)",
     "description": "Use when you have a `name` and want to find photos of a person with precise filters — Google Advanced Image Search narrows by size, type, colour, region, site and usage rights to return candidate images.",
@@ -308230,14 +307934,14 @@
   },
   {
     "id": "seosly-com",
-    "name": "seosly.com",
-    "description": "OSINT tool: seosly.com.",
+    "name": "seosly.com (Google Search Operators guide)",
+    "description": "Use when you have a `name` or other selector and want to build precise Google dork queries to find it — returns a reference of 50+ working search operators, not data itself.",
     "url": "https://seosly.com/google-search-operators/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up the exact, currently-working Google search operator syntax for building people-search dorks.",
     "selectorsIn": [
       "name"
     ],
@@ -308245,29 +307949,37 @@
       "name",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free article; no paywall or account to read the full operator list.",
+    "opsec": "passive",
+    "opsecNote": "This is a reference article you read — it queries nobody. The dorks you then run in Google touch Google (not the target); use a logged-out/sock-puppet browser for the actual searches if attribution matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Authored and maintained by named SEO practitioner Olga Zarr; a widely-cited, regularly-updated operator reference. It is documentation, not a data source.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Google search operators",
+      "Google dorks cheat sheet"
+    ],
     "tags": [
       "searchengines",
-      "Search Engines"
+      "Search Engines",
+      "dorking"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "seosly-com-2"
     ],
@@ -317327,45 +317039,49 @@
   },
   {
     "id": "advanced-downloader-for-tiktok-addons-mozilla-org",
-    "name": "advanced downloader for tiktok (addons.mozilla.org)",
-    "description": "OSINT tool: advanced downloader for tiktok (addons.mozilla.org).",
+    "name": "Advanced Downloader for TikTok (Firefox add-on)",
+    "description": "Use when you have a TikTok video `social-profile` URL and want to save the clip for evidence — a Firefox extension returning the downloaded image/video file.",
     "url": "https://addons.mozilla.org/en-GB/firefox/addon/advanced-downloader-for-tiktok/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "One-click downloading of a TikTok video you are viewing, straight from the browser toolbar.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Firefox add-on; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The extension downloads the video you are already viewing on tiktok.com — the capture itself does not notify the creator, but you must load the TikTok page (which TikTok logs against your session). Browse the target's TikTok logged-out / from a sock-puppet before capturing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Unofficial third-party add-on (not affiliated with TikTok/ByteDance), last updated 2021, ~3.1★ with polarised reviews. It works but is stale and unmaintained; grant it no more permission than needed.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Advanced Downloader for TikTok"
+    ],
     "tags": [
       "tiktok",
       "TikTok Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/advanced-downloader-for-tiktok-addons-mozilla-org.md"
   },
   {
@@ -323779,45 +323495,54 @@
   },
   {
     "id": "facebook-ad-s-link",
-    "name": "Facebook Ad's Link",
-    "description": "OSINT tool: Facebook Ad's Link.",
-    "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=political_and_issue_ads&country=GB&impression_search_field=has_impressions_lifetime&view_all_page_id=AddFacebookAccountIDNumberHere",
+    "name": "Facebook Ad's Link (Meta Ad Library)",
+    "description": "Use when you have a Facebook Page `social-profile` (or its page-ID) and want to pull every ad it has run — returns the advertiser's other pages, funding entity, and reach data.",
+    "url": "https://www.facebook.com/ads/library/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Reading the full ad history of a Facebook/Instagram Page, including who paid for political/issue ads.",
     "selectorsIn": [
-      "username",
+      "social-profile",
+      "employer-org",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "employer-org",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, public Meta transparency tool; no account needed to browse, though logging in shows more.",
+    "opsec": "passive",
+    "opsecNote": "You are browsing Meta's public transparency database, not contacting the target. Requests hit Facebook, so use a sock-puppet/logged-out browser if you do not want the query tied to your own account; nothing is disclosed to the advertiser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Meta as its legally-mandated ad-transparency archive; the ad and funder data is first-party and authoritative.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Meta Ad Library",
+      "Facebook Ad Library"
+    ],
     "tags": [
       "facebook",
       "Facebook General Links"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-ad-s-link.md"
   },
   {
@@ -325716,44 +325441,50 @@
   {
     "id": "fastvideosave-net",
     "name": "fastvideosave.net",
-    "description": "OSINT tool: fastvideosave.net.",
+    "description": "Use when you have an Instagram post/reel/story `social-profile` URL and want to download the underlying video/photo/audio for evidence — returns image and metadata-exif.",
     "url": "https://fastvideosave.net/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a copy of an Instagram reel, video, photo or story off a known post URL without an account.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "100% free web tool; no subscription, account, or install required.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public Instagram URL into a third-party downloader; the fetch to Instagram is made by fastvideosave's servers, not you, so it is passive from the target's perspective. But the operator can log every URL you submit — use a sock-puppet/VPN if the specific post is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Anonymous ad-supported scraper with no named operator and no stated retention policy. Fine for grabbing media; assume submitted URLs are logged.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "fastvideosave",
+      "Instagram reels downloader"
+    ],
     "tags": [
       "instagram",
       "Instagram Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/fastvideosave-net.md"
   },
   {
@@ -329626,45 +329357,53 @@
   },
   {
     "id": "google-com-62",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Abayt.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
+    "name": "Google site-search — Bayt.com professionals",
+    "description": "Use when you have a `name` of someone likely working in the Middle East and want their professional profile — a Google `site:bayt.com` dork returning social-profile and employer-org.",
+    "url": "https://www.google.com/search?q=site%3Abayt.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Surfacing a subject's professional profile on Bayt.com (the leading Gulf/MENA jobs network) via a Google site-search.",
     "selectorsIn": [
-      "username",
       "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free Google search; no account needed.",
+    "opsec": "passive",
+    "opsecNote": "A Google dork touches Google, not the target or Bayt — the person is not notified. Run it from a logged-out/sock-puppet browser so the query and any clicked Bayt profiles are not tied to your Google account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Uses Google's index over Bayt.com, a real regional professional network; the technique is reliable, though Bayt profile content is self-asserted by its users.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "site:bayt.com",
+      "Bayt Google dork"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "LinkedIn & Similar Sites",
+      "dorking",
+      "mena"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-62.md"
   },
   {
@@ -330325,40 +330064,6 @@
       "instagram-search"
     ],
     "_file": "library/tools/social-networks/gramfeed-com.md"
-  },
-  {
-    "id": "gramsize-com",
-    "name": "Gramsize.com",
-    "description": "OSINT tool: Gramsize.com.",
-    "url": "https://gramsize.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/gramsize-com.md"
   },
   {
     "id": "gramspy",
@@ -332941,49 +332646,6 @@
       "stegers"
     ],
     "_file": "library/tools/social-networks/insta-timestamp-github-com.md"
-  },
-  {
-    "id": "instadp-instagram-downloader",
-    "name": "Instadp: Instagram downloader",
-    "description": "OSINT tool: Instadp: Instagram downloader.",
-    "url": "https://instadp.org",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/instadp-instagram-downloader.md"
   },
   {
     "id": "instadp-search-profile-pictures",
@@ -342592,49 +342254,6 @@
     "_file": "library/tools/social-networks/qzone-china.md"
   },
   {
-    "id": "r00m101-com",
-    "name": "r00m101.com",
-    "description": "OSINT tool: r00m101.com.",
-    "url": "https://r00m101.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "gsocialmedia",
-      "General Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/r00m101-com.md"
-  },
-  {
     "id": "raditube",
     "name": "RadiTube",
     "description": "A search engine that searches the subtitles of about 380 (right/left) radical YouTube channels. You query for example for q says\" of \"voter fraud\" in 170,000 videos, and the search results will link you to the specific time-code in the vide",
@@ -346262,49 +345881,6 @@
     "_file": "library/tools/social-networks/seemutualfriendsonfacebook-com.md"
   },
   {
-    "id": "sentiment140",
-    "name": "Sentiment140",
-    "description": "OSINT tool: Sentiment140.",
-    "url": "http://www.twittersentiment.appspot.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "google-maps-update-alerts",
-      "lullar-com-3-appspot-com",
-      "military-grid-reference-system-coordinates",
-      "rss-vk-to-rss",
-      "snapchat-search-enter-username-here"
-    ],
-    "_file": "library/tools/social-networks/sentiment140.md"
-  },
-  {
     "id": "seo-resources-search-engine",
     "name": "SEO Resources Search Engine",
     "description": "OSINT tool: SEO Resources Search Engine.",
@@ -347655,42 +347231,6 @@
       "socialblade"
     ],
     "_file": "library/tools/social-networks/social-blade.md"
-  },
-  {
-    "id": "social-downornot",
-    "name": "Social DownORNot",
-    "description": "OSINT tool: Social DownORNot.",
-    "url": "http://social.downornot.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/social-downornot.md"
   },
   {
     "id": "social-media-osint-tools-collection",

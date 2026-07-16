@@ -331,7 +331,6 @@ kind: group-index
 - **`google-com-80`** (high) — OSINT tool: google.com.
 - **`google-com-81`** (high) — Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined pa
 - **`google-com-82`** (high) — Use when you have a `name` or topic and want to find published datasets that may list people — Google Dataset Search indexes datasets across
-- **`google-com-83`** (high) — OSINT tool: google.com.
 - **`google-com-84`** (high) — Use when you have a `name` and want to find photos of a person with precise filters — Google Advanced Image Search narrows by size, type, co
 - **`google-com-85`** (high) — Use when you have a `name` or `username` and want to surface video footage of or uploaded by a subject — returns `social-profile` (channels)
 - **`google-com-hack-attack`** (medium) — OSINT tool: \*.Google.com Hack Attack.
@@ -737,7 +736,7 @@ kind: group-index
 - **`seek-job-search-engine-new-zealand`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`sensebot`** (medium) — Provides a text summary for your search query instead of a collection of links to Web pages
 - **`seosly-com-2`** (high) — Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search opera
-- **`seosly-com`** (high) — OSINT tool: seosly.com.
+- **`seosly-com`** (medium) — Use when you have a `name` or other selector and want to build precise Google dork queries to find it — returns a reference of 50+ working s
 - **`seqe-search-engines-query-engine`** (medium) — OSINT tool: SEQE - Search Engines Query Engine.
 - **`seznam-cz`** (high) — Use when you have a `name`/handle for a Czech subject and want Czech-web results Google under-indexes — returns `name`, `social-profile`, an
 - **`seznam-czech-republic`** (low) — OSINT tool: Seznam(Czech Republic).

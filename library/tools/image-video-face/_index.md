@@ -230,7 +230,7 @@ kind: group-index
 - **`kartrider`** (high) — Website related to social networking and players of the computer game Kartrider
 - **`keep-save-it`** (medium) — OSINT tool: Keep Save It.
 - **`keyhole-engelsjk`** (medium) — Experimental visualization tool for 1.3 million+ declassified spy satellite imagery (1960 to 1984 years).
-- **`kongregate`** (high) — Website related to social networking and players of over 1,000 games on this website
+- **`kongregate`** (low) — Use when you have a gamer `username` and want to check for a matching public profile on the Kongregate browser-games community — returns a s
 - **`kosmos-2`** (high) — Use when you have an `image` and want an AI description that names objects, text and landmarks in it (with bounding boxes) — returns `physic
 - **`labnol-org`** (high) — Use when you have an image (especially on mobile) and want to push it into Google/Bing/Yandex reverse image search in one place — returns li
 - **`landviewer`** (medium) — satellite observation imagery tool that allows for on-the-fly searching, processing and getting valuable insights from satellite data to tac
@@ -250,7 +250,7 @@ kind: group-index
 - **`lossless-cut`** (medium) — #javascript #opensource swiss army knife for audio/video editing.
 - **`lycos-image-search`** (low) — Use when you want a secondary keyword image-search index outside Google/Bing — returns image results for a text query.
 - **`lykdat-com`** (medium) — clothing reverse image search services
-- **`lyrics-net`** (high) — Multi-media search engine focusing on music, songs, artists, musicians, and lyrics stored on multiple databases
+- **`lyrics-net`** (low) — Use when you have a fragment of song lyrics or an artist `name` and want to identify the track/artist or find a contributor profile — return
 - **`mangolinkworld`** (medium) — OSINT tool: MangolinkWorld.
 - **`maps-video`** (medium) — Google street view alternative. Online YouTube video driving map for different routes. Worldwide, but most videos in the USA and Europe.
 - **`maxar`** (medium) — Highlight an area on the world map and get dozens of satellite images of that area taken at different times (mostly 2021-2023)
@@ -341,7 +341,7 @@ kind: group-index
 - **`rock-star-games`** (high) — Website related to social networking and players of over 50 games on this website
 - **`rootabout-wayback-reverse-image`** (medium) — Use when you have an `image` and want to find where it appears in the Internet Archive / OpenLibrary — returns matching archived items (book
 - **`rootabout`** (high) — Use when you have an `image` and want to reverse-search it against the Internet Archive and Open Library (plus Google) — returns matching ar
-- **`runescape`** (high) — Website related to social networking and players of the computer game Runescape
+- **`runescape`** (low) — Use when you have a gamer `username` and want to confirm a RuneScape account and read its public hiscores/activity — returns a social-profil
 - **`same-energy`** (high) — Use when you have an `image` and want aesthetically/visually similar images to identify a scene, object, or style — returns visually similar
 - **`savevideo`** (medium) — OSINT tool: SaveVideo.
 - **`scene-detection`** (medium) — Determine the timecodes on which there is a change of scenery in the video and significantly save time watching it
@@ -394,7 +394,6 @@ kind: group-index
 - **`teachingprivacy-com`** (high) — Use when you have a `username` and want to visualise the geotagged posting history behind a public Twitter/Instagram account — was built to 
 - **`ted`** (medium) — Use when you have a `name` and think the subject gave a TED/TEDx talk, and you want their video, bio, headshot and topic — returns `image`, 
 - **`telegram-facemath-bot`** (high) — Use when you have a `face`/`image` and want to find that person in an archive of public-event photos from Kazakhstan — returns matching even
-- **`telly`** (high) — Video on demand service
 - **`textgrab`** (medium) — Simple #Chrome extension for copying and recognizing text from videos (#YouTube, #GoogleMeetup etc.)
 - **`the-bitmoji-avatar-history-enumerator`** (high) — Use when you have a Snapchat `username` and want to enumerate the history of Bitmoji avatars that account has used — returns `image` avatars
 - **`the-seint`** (high) — OSINT tool: The SEINT.
@@ -431,7 +430,6 @@ kind: group-index
 - **`watermarkremover`** (medium) — Remove watermark from image with AI
 - **`webcam-cse`** (medium) — Google Custom Search Engine for search in 10 online street webcam catalogs
 - **`webshots`** (high) — Website related to social networking with photo galleries, photo posting and sharing services
-- **`webstigram-com`** (high) — OSINT tool: Webstigram.com.
 - **`weheartit`** (high) — Use when you have a `username` or `image` and want a subject's curated image collections and tastes on this Tumblr-style gallery site — retu
 - **`when-where-net`** (high) — OSINT tool: When-where.net.
 - **`who-stole-my-pictures-addons-mozilla-org`** (high) — Use when you have an `image` and want to run it through several reverse-image engines at once from a right-click menu — returns matching pag

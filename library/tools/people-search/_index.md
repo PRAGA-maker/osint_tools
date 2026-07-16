@@ -51,7 +51,6 @@ kind: group-index
 - **`canada411`** (high) — Use when you have a Canadian `phone`, `name`, or `address` and want free white-pages data — returns listed `name`, `address`, and `phone` fr
 - **`careerbuilder`** (medium) — OSINT tool: CareerBuilder.
 - **`carrier-lookup-2`** (high) — Use when you have a `phone` number and want its carrier and line type (mobile vs landline) plus the email-to-SMS gateway — returns enriched 
-- **`cedar`** (high) — OSINT tool: Cedar.
 - **`certificated-bailiff-register-justice-uk`** (high) — Use when you have a `name` of someone claiming to be an enforcement agent (bailiff) in England & Wales and want to verify them — returns whe
 - **`classmates-canada-alumni-lookup`** (high) — Use when you have a `name` and a school/graduation year and want alumni and digitized yearbook records — returns `social-profile`, classmate
 - **`classmates`** (high) — Use when you have a `name` and a US school (`employer-org`) and want yearbook photos and alumni profiles — returns image, social-profile and

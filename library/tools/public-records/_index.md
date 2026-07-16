@@ -81,7 +81,6 @@ kind: group-index
 - **`arizona-le-database-abc15`** (medium) — OSINT tool: Arizona LE Database - ABC15.
 - **`arkansas-ashley-county-ledger-search-united-states`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`arkansas-department-of-correction`** (high) — Use when you have a `name` of someone who may be incarcerated in Arkansas and want their inmate record — returns `name`, `dob`/age, ADC `doc
-- **`arkvoters-com`** (high) — OSINT tool: Arkvoters.com.
 - **`arrest-bookings-search-and-report`** (high) — OSINT tool: Arrest Bookings Search and Report.
 - **`arrest-warrants`** (high) — Use when you have a `name` and want to find an outstanding US arrest warrant — a directory routing you to free state/county warrant searches
 - **`arrests`** (high) — Use when you have a `name` and want to check for a US arrest record or mugshot — returns booking photos, arrest dates, charges, and county, 
@@ -214,7 +213,6 @@ kind: group-index
 - **`connecticut-registered-voter-verification`** (medium) — Connecticut voter registration verification and search
 - **`connecticut`** (high) — Use when you have a `name` or DOC number and want to locate a person currently held in Connecticut state prison/jail — returns custody statu
 - **`connvoters-com`** (high) — Use when you have a `name` (and roughly a Connecticut location) and want the subject's registered address, town, party and DOB from the stat
-- **`convicted-alberta-sex-offender`** (high) — OSINT tool: Convicted Alberta Sex Offender.
 - **`convicted-sex-offenders-list`** (high) — OSINT tool: Convicted Sex Offenders List.
 - **`cop26-registered-attendees`** (medium) — OSINT tool: COP26 registered attendees.
 - **`coplookup-com`** (medium) — OSINT tool: Coplookup.com.
@@ -455,7 +453,7 @@ kind: group-index
 - **`govsalaries`** (medium) — OSINT tool: GovSalaries.
 - **`grammar-check`** (medium) — Online grammar, spelling, and punctuation editor
 - **`grave-info-us`** (high) — Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index
-- **`greataupair-com`** (high) — OSINT tool: greataupair.com.
+- **`greataupair-com`** (medium) — Use when you have a `name` and suspect the subject works or seeks work in childcare/eldercare — returns a social-profile with location, job 
 - **`greater-sacramento-area-public-salaries`** (medium) — OSINT tool: Greater Sacramento Area Public Salaries.
 - **`greece`** (high) — Use when you have a Greek company `name`/`employer-org` and want its beneficial owners (UBO) — returns the natural persons behind the entity
 - **`gro-gov-uk`** (high) — Use when you have a `name` and want to confirm a birth, death or parentage in England & Wales — returns index entries with dates, districts 
