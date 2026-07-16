@@ -344,7 +344,7 @@ kind: group-index
 - **`world-population-density-map`** (medium) — Very detailed data. It's possible to look at the density not only by country and city, but also by individual metropolitan areas, towns, and
 - **`worldcam`** (low) — OSINT tool: WorldCam.
 - **`worldmap-harvard`** (low) — Use when you need specialized GIS data layers (historical, demographic, environmental) overlaid on a base map to add context to a location, 
-- **`worldtimebuddy-com`** (medium) — OSINT tool: worldtimebuddy.com.
+- **`worldtimebuddy-com`** (low) — Use when you have a post/message timestamp and a candidate `geolocation` and want to convert between time zones — helps infer a subject's lo
 - **`worldtimelapse-mapping-website`** (high) — Use when you have a `geolocation`/`address` and want to see how that place changed year-by-year in satellite imagery (1984–present) — return
 - **`worldwebcams`** (medium) — OSINT tool: WorldWebcams.
 - **`worldwide-detention-centres-map`** (medium) — This service will help in investigations related to illegal emigration, human trafficking, missing refugees and tourists.

@@ -134,7 +134,6 @@ kind: group-index
 - **`usa-telephone-directory-collection`** (high) — Use when you have a historical US `name`, `phone`, or `address` (roughly 1880s–1980s) and want to place a person at an address/number in tha
 - **`usphonebook`** (high) — Use when you have a US `phone` number (or a `name`) and want to identify the owner — returns the name, address, relatives/associates and pho
 - **`validnumber-com`** (high) — Use when you have a `phone` number and want a free reverse lookup / caller-ID and spam-report check — returns caller `name`/`geolocation` le
-- **`whatsappmonitor`** (medium) — Monitor WhatsApp contact online/offline activity.
 - **`whatsfoto`** (medium) — Download WhatsApp profile pictures.
 - **`white-pages-people-finder-anywho`** (high) — Use when you have a US `phone` number or a `name` and want free white-pages data — returns the listed `name`, `address`, and phone from publ
 - **`whitepages-reverse-phone`** (high) — Use when you have a US `phone` number and want to attribute an owner and address — returns owner name, city/address, line type and related c

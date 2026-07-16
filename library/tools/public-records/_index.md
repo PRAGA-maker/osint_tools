@@ -375,7 +375,7 @@ kind: group-index
 - **`genealogical-prison-records`** (medium) — Site providing genealogical prison and insane asylum records for the US, UK and Canada
 - **`genealogy-links-us-and-other-countries`** (high) — Use when you have a `name` and a region and want a curated gateway to vital-records and census sources — returns links leading to name, dob,
 - **`genealogy`** (high) — Use when you have a `name` and want to check death records / obituaries to confirm a person is deceased and surface relatives — returns `dob
-- **`genealogybank-ssdi`** (medium) — SSDI and historical newspaper/obituary search; helps determine if a person is deceased.
+- **`genealogybank-ssdi`** (medium) — Use when you have a `name` (and maybe `dob`) and want to confirm a death or find an obituary — returns Social Security Death Index and obitu
 - **`genealogyintime`** (high) — Use when you have a `name` and want to sweep billions of free genealogy/ancestral records at once — returns matching records with dates, rel
 - **`genealogyplace-family-search`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`geneanet-org`** (high) — Use when you have a `name` and want genealogical records — ancestors, relatives, birth/death dates and places — returns `associate` (family)

@@ -15,7 +15,7 @@ kind: group-index
 - **`google-translate`** (medium) — Quick translation across broad language coverage
 - **`slang-dictionary-and-translator`** (medium) — Decoding internet slang and text abbreviations
 - **`slangit-the-slang-dictionary`** (medium) — Understanding current online slang and acronym usage
-- **`urban-dictionary`** (medium) — Interpreting emerging slang and culture-driven terms
+- **`urban-dictionary`** (low) — Use when you have slang, a nickname, or a coded term from a subject's posts and want its meaning — returns crowd-sourced definitions that ca
 - **`wiktionary`** (medium) — Word definitions, etymology, and multilingual term translation
 - **`word-reference`** (medium) — Word-level translation with conjugation and usage context
 

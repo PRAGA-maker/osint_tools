@@ -683,7 +683,7 @@ kind: group-index
 - **`tweeplers`** (medium) — OSINT tool: Tweeplers.
 - **`tweepsmap-unfollows`** (medium) — displayed unsubscribed accounts (list for the one week available for free)
 - **`tweet-archive-search`** (high) — Use when you have a `username` or keyword and want to find historical/archived tweets that the live X search hides — returns `social-profile
-- **`tweet-beaver-friends-following`** (medium) — OSINT tool: Tweet Beaver Friends Following.
+- **`tweet-beaver-friends-following`** (low) — Use when you have two Twitter/X `username`s and want to see the accounts they both follow or that follow both — returns the overlapping `soc
 - **`tweet-binder`** (high) — Use when you have a `username`, hashtag, or keyword and want to map who is talking about it on X/Twitter — returns social-profile and associ
 - **`tweet-finder`** (high) — Use when you have a keyword, `name`, or `username` and want tweets/profiles indexed by Google — returns Google-indexed twitter.com/x.com lin
 - **`tweet-machine`** (medium) — Simple #bash script which retrieves links to the deleted (and other) tweets and replies of any Twitter user from WayBackMachine.
@@ -799,7 +799,7 @@ kind: group-index
 - **`x-com-3`** (high) — Use when you want curated LinkedIn/people-finding OSINT technique tips from the @cyb_detective account — returns pointers to `social-profile
 - **`x-com-4`** (high) — Use when you have a `username` or `name` and want the subject's X (Twitter) profile and posts via the platform's own search — returns `socia
 - **`x-com-6`** (high) — Use when you have an `email`, `phone`, or `username` and want to confirm it belongs to an X/Twitter account — returns account existence plus
-- **`xboxgamertag`** (medium) — Search gamertags, see games played and recorded game clips
+- **`xboxgamertag`** (medium) — Use when you have an Xbox `username` (gamertag) and want the public gaming profile behind it — returns games played, achievements, activity 
 - **`xcancel-nitter-mirror`** (high) — Use when you have an X/Twitter `username` and want to read their tweets, replies, and media without logging in — returns the public timeline
 - **`xiaohongshu-com`** (high) — Use when you have a `username` or `name` and want to find a subject on Xiaohongshu (RED / Little Red Book), China's major lifestyle social p
 - **`xingdumper`** (medium) — Use when you have an `employer-org` (a XING company page) and want to enumerate its employees — returns `name`, `social-profile`, and option

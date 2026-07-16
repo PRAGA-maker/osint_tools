@@ -10,7 +10,7 @@ kind: group-index
 - **`github-dorks`** (medium) — Finding exposed credentials and sensitive files on GitHub via advanced search dorks
 - **`gitleaks`** (medium) — Use when you have a target's git repo/`username` and want secrets and committer identities buried in its history — returns leaked credential
 - **`gitrob`** (medium) — GitHub organization reconnaissance for exposed secrets and sensitive files in commit history
-- **`nerdydata`** (medium) — Identifying websites using specific technologies, libraries, or code patterns
+- **`nerdydata`** (low) — Use when you have a code snippet, tracking ID, or tech string and want every website whose source contains it — returns the matching `domain
 - **`publicwww`** (medium) — Finding websites with specific code/analytics IDs, competitive intelligence, security research
 - **`searchcode`** (medium) — Source code snippet and function discovery across public repositories
 

@@ -394,7 +394,7 @@ kind: group-index
 - **`infotrail`** (medium) — Use when you have an `email`/`username`/`domain` and want to check it against stealer logs and leaked databases — returns breached credentia
 - **`insecac`** (medium) — Worlds biggest online cameras directory
 - **`inside`** (low) — Human edited web directory, formerly known as Mahalo
-- **`intelligence-x`** (medium) — OSINT tool: Intelligence X.
+- **`intelligence-x`** (medium) — Use when you have any selector (`email`, `domain`, `ip-address`, `username`, `name`, `phone`, `crypto-wallet`, `vin`) and want a one-stop la
 - **`inteltechniques-tools-search-engines-suite`** (high) — Use when you have almost any selector (name, email, username, phone, image, domain, location) and want pre-built query interfaces that fan i
 - **`international-association-of-chiefs-of-police`** (medium) — Site identifying the issues in law enforcement and providing information and research to the public
 - **`international-standard-classification-of-occupations`** (medium) — Website that identifies the occupation classification code across the country at the national level
@@ -921,7 +921,6 @@ kind: group-index
 - **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised
 - **`youcare`** (medium) — Charitable search engine that allows you to choose an environmental project to support with your search.
 - **`youdao-search-engine-china`** (medium) — Chinese based web search engine by NetEase
-- **`zanran`** (medium) — OSINT tool: Zanran.
 - **`zarebin-iran`** (low) — OSINT tool: Zarebin (Iran).
 - **`zetoc`** (low) — OSINT tool: Zetoc.
 - **`zilladog-safe-email-and-games-for-kids`** (low) — Child-oritentated email and entertainment
