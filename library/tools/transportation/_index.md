@@ -41,7 +41,6 @@ kind: group-index
 - **`canadian-black-book`** (medium) — Canada's used car value and pricing search
 - **`canadian-civil-aircraft-register-search-canada`** (medium) — Transport Canada's registered civil aircraft registration search
 - **`canadian-vessel-registration-query-system`** (medium) — Maritime-related website that offers a search of a Canadian database of naval vessel types
-- **`car-check`** (medium) — OSINT tool: CAR CHECK.
 - **`car-vehicle-model-recognition-online`** (medium) — OSINT tool: Car/Vehicle Model Recognition Online.
 - **`caranalytics-co-uk`** (medium) — OSINT tool: Caranalytics.co.uk.
 - **`cars-com-black-book-value`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes videos and reviews
@@ -97,7 +96,7 @@ kind: group-index
 - **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK database of registered aviation owners
 - **`gpsjam`** (low) — GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing area
 - **`hertz-rent-receipt`** (medium) — Use when you have a Hertz rental's agreement number (or the renter's driver's-license number + surname) and want the rental record — returns
-- **`how-s-my-driving-ny`** (medium) — OSINT tool: How's My Driving NY.
+- **`how-s-my-driving-ny`** (medium) — Use when you have a `vehicle-plate` (and state) and want its NYC traffic/parking/camera violation history — returns a location-and-time patt
 - **`icao-civil-and-military-airspace-suashp`** (medium) — OSINT tool: ICAO Civil and Military airspace SUASHP.
 - **`icarus-flights`** (medium) — OSINT tool: Icarus.flights.
 - **`illegal-unreported-unregular-fishing-vessels-list`** (low) — A combined list of known illegal, unreported, unregular fishing vessels
@@ -213,7 +212,7 @@ kind: group-index
 - **`venicle-number-search-toolbox`** (low) — search information about car by venicle numbers (14 different countries from one page) - #GreatBritain, #Norway, #Denmark, #Russian and othe
 - **`vin-check-and-get-vehicle-history-report`** (medium) — Use when you have a `vin` (or plate to look up a VIN) and want to decode the vehicle and screen for theft/salvage flags — returns vehicle ph
 - **`vin-check-reports`** (medium) — OSINT tool: VIN Check Reports.
-- **`vin-decoder-and-lookup`** (medium) — OSINT tool: VIN Decoder & Lookup.
+- **`vin-decoder-and-lookup`** (low) — Use when you have a `vin` and want to decode the vehicle's year, make, model and specs for free — returns a physical-description to confirm 
 - **`vin-decoder`** (medium) — OSINT tool: VIN decoder.
 - **`vin-info`** (medium) — OSINT tool: Vin-Info.
 - **`vin-lookup`** (medium) — OSINT tool: VIN Lookup.

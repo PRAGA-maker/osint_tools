@@ -676,7 +676,7 @@ kind: group-index
 - **`reverse-genie-lookup`** (medium) — Database search by telephone number, person name, email, plate number, address, IP, domain or area code
 - **`reviewmeta`** (low) — OSINT tool: ReviewMeta.
 - **`rfc-fyi`** (low) — Browseable, searchable RFC index
-- **`rightmove-united-kingdom`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`rightmove-united-kingdom`** (medium) — Use when you have a UK `address` or area and want property listings, sold-price history and interior photos — returns geolocation, physical-
 - **`robots-txt-search-engine`** (medium) — OSINT tool: Robots.txt Search Engine.
 - **`rocketlawyer`** (medium) — Website related to social networking and crowdsourceing with thousands of online responses to legal queries
 - **`rockstargames-socialclub-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities

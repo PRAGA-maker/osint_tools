@@ -240,7 +240,7 @@ kind: group-index
 - **`perry-castaneda-library`** (high) — Use when you have a place name or region and need historical/topographic/political reference maps to interpret a geolocation.
 - **`photo-map-ru`** (medium) — Geotagged VK posts.
 - **`pic2map`** (high) — Use when you have a photo and want to extract embedded EXIF/GPS metadata and plot the capture location on a map.
-- **`pictimo`** (medium) — OSINT tool: Pictimo.
+- **`pictimo`** (low) — Use when you have a `geolocation`/place and want live public webcams there to observe or corroborate a scene — returns real-time imagery for
 - **`plowto`** (low) — OSINT tool: PlowTO.
 - **`police-crime-maps-uk`** (medium) — Use when you have a UK `address`/`geolocation` and want the area's recent recorded-crime picture plus the local policing team — returns stre
 - **`polymaps`** (low) — Use when you are a developer building a custom slippy-map web visualization with SVG/vector tiles, not for ad-hoc lookups.

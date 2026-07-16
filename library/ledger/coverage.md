@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8429 total · 2503 full · 5926 stub (29% enriched)
+**Tools:** 8427 total · 2513 full · 5914 stub (29% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3311 · low: 3182 · high: 1936
+medium: 3306 · low: 3184 · high: 1937
 
 ## Tools by trust
-unverified: 4476 · community: 3129 · trusted: 811 · personal: 7 · untrustworthy: 6
+unverified: 4468 · community: 3130 · trusted: 816 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -23,20 +23,20 @@ unverified: 4476 · community: 3129 · trusted: 811 · personal: 7 · untrustwor
 - `domains-ip-infrastructure` — 6/773
 - `email` — 239/246
 - `evidence-capture` — 2/33
-- `financial-crypto` — 1/134
-- `geolocation` — 155/358
+- `financial-crypto` — 2/134
+- `geolocation` — 156/358
 - `image-video-face` — 352/482
 - `maps-geospatial-data` — 4/147
 - `messaging` — 135/203
 - `opsec-investigator-tooling` — 6/567
-- `people-search` — 213/277
-- `phone` — 128/139
-- `public-records` — 530/1144
-- `search-engines` — 61/984
-- `social-networks` — 509/892
+- `people-search` — 213/276
+- `phone` — 129/139
+- `public-records` — 533/1144
+- `search-engines` — 62/984
+- `social-networks` — 510/892
 - `training-ctf` — 0/12
 - `translation-language` — 2/103
-- `transportation` — 14/237
+- `transportation` — 16/236
 - `username` — 91/105
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -50,10 +50,10 @@ unverified: 4476 · community: 3129 · trusted: 811 · personal: 7 · untrustwor
 - `library/tools/communities-forums` — 419 leaves
 - `library/tools/image-video-face` — 385 leaves
 - `library/tools/geolocation` — 342 leaves
-- `library/tools/people-search` — 267 leaves
+- `library/tools/people-search` — 266 leaves
 - `library/tools/documents-metadata` — 265 leaves
 - `library/tools/email` — 222 leaves
-- `library/tools/transportation` — 218 leaves
+- `library/tools/transportation` — 217 leaves
 - `library/tools/messaging` — 188 leaves
 - `library/tools/maps-geospatial-data` — 147 leaves
 - `library/tools/phone` — 141 leaves

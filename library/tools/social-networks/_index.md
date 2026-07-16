@@ -203,7 +203,7 @@ kind: group-index
 - **`foller-me`** (high) — Use when you have a Twitter/X `username` and want a quick public-profile analytics snapshot — returns metadata, topics/hashtags, and activit
 - **`follower-wonk-compare`** (medium) — this service allows you to find out how many followers two (or three) Twitter accounts have in common.
 - **`followeraudit`** (low) — OSINT tool: FollowerAudit.
-- **`followerwonk-tools-for-twitter-analytics-bio-search-and-more`** (medium) — OSINT tool: Followerwonk: Tools for Twitter Analytics, Bio Search and More.
+- **`followerwonk-tools-for-twitter-analytics-bio-search-and-more`** (medium) — Use when you have a `name`, keyword, or `username` and want to find or profile social accounts by bio text and analyze their followers — ret
 - **`forcesreunited-co-uk`** (high) — Use when you have a UK military subject's `name`, unit, or service era and want to place them via a veterans' network — returns a member `so
 - **`free-people-search-tool`** (high) — Use when you have a `name` (plus location or company) and want a one-box hub that fans a search across LinkedIn, Twitter, GitHub, and Dribbb
 - **`fubar`** (high) — Use when you have a `username` or `name` and want to check Fubar, a long-running social/dating "online bar" network — returns `social-profil

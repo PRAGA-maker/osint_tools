@@ -219,7 +219,6 @@ kind: group-index
 - **`scylla`** (high) — Use when you have a `username`, `phone`, or `name` and want an all-in-one recon sweep from a local CLI — returns social profiles, geolocatio
 - **`searchbug`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want cross-linked contact and background data — returns addresses, phones, 
 - **`seek-australia`** (medium) — OSINT tool: Seek (Australia).
-- **`seekout`** (medium) — OSINT tool: Seekout.
 - **`shesource`** (medium) — OSINT tool: SheSource.
 - **`simplyhired`** (medium) — OSINT tool: SimplyHired.
 - **`singlehire`** (high) — Use when you have a `name` (+ `employer-org`/`geolocation`) or a work `email`/`phone` and want the person's contact details — returns email,

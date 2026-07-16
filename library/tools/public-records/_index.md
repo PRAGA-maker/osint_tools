@@ -322,7 +322,7 @@ kind: group-index
 - **`familysearch-guessing-a-name-variation`** (medium) — Genealogy website FamilySearch's wiki page for guessing name variations
 - **`familysearch-s-united-states-record-collections`** (high) — Use when you have a `name` and want a one-page portal into FamilySearch's US genealogy record collections (census, vital, immigration) via S
 - **`familysearch`** (high) — Use when you have a deceased US subject's `name` and want death/birth-date confirmation and last residence — returns name, DOB/death date an
-- **`fastpeoplesearch-com-reverse-address`** (medium) — OSINT tool: FastPeopleSearch.com - Reverse Address.
+- **`fastpeoplesearch-com-reverse-address`** (high) — Use when you have a US `address`, `name`, or `phone` and want the people tied to it — returns names, relatives, phones and prior addresses.
 - **`fatal-encounters`** (medium) — OSINT tool: Fatal Encounters.
 - **`fbi-most-wanted-search-engine`** (low) — OSINT tool: FBI Most Wanted Search Engine.
 - **`fca-org-uk`** (high) — Use when you have an `employer-org` or `name` tied to a UK mutual (credit union, co-op, friendly society) and want its registration and fili
@@ -642,7 +642,7 @@ kind: group-index
 - **`mpts-uk-org-2`** (high) — Use when you have a doctor's `name` (or GMC number) and want to check for UK fitness-to-practise tribunal hearings/decisions against them — 
 - **`mpts-uk-org`** (high) — Use when you have a UK doctor's `name` and want fitness-to-practise tribunal records — returns hearing listings and decision documents namin
 - **`mras-business-registry-search`** (low) — OSINT tool: MRAS Business Registry Search.
-- **`muckrock`** (medium) — OSINT tool: MuckRock.
+- **`muckrock`** (medium) — Use when you want to file or search US public-records/FOIA requests and released government documents about a `name` or `employer-org` — ret
 - **`mugshots`** (high) — Use when you have a `name` and want to check for a US arrest/booking record — returns booking photo, charges, arrest location and date; trea
 - **`musicteachers-co-uk`** (low) — Use when you have a `name`, instrument or `address`/area and think the subject is a UK private music teacher — returns teacher `name`, `addr
 - **`mycounciltax-org-uk`** (high) — Use when you have a UK `address`/postcode and want the Council Tax band for properties there — returns the band per property (a proxy for pr
