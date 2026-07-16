@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`every-politician`** (medium) — Global politician data and positions
-- **`influence-explorer`** (medium) — Political influence and money tracking
 - **`political-moneyline`** (medium) — Campaign finance and lobbying tracking
 - **`us-federal-election-commission`** (medium) — Federal campaign finance records
 

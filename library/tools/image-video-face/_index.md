@@ -219,7 +219,7 @@ kind: group-index
 - **`lyrics-net`** (low) — Use when you have a fragment of song lyrics or an artist `name` and want to identify the track/artist or find a contributor profile — return
 - **`mangolinkworld`** (medium) — OSINT tool: MangolinkWorld.
 - **`maps-video`** (medium) — Google street view alternative. Online YouTube video driving map for different routes. Worldwide, but most videos in the USA and Europe.
-- **`maxar`** (medium) — Highlight an area on the world map and get dozens of satellite images of that area taken at different times (mostly 2021-2023)
+- **`maxar`** (low) — Use when you have a `geolocation` and want to see what high-resolution satellite imagery exists over it and when — returns dated `image` cap
 - **`media-io-watermark-remover`** (medium) — Select the area and mark the time frame in which you want to remove the object. Works for barely visible watermarks as well as for bright an
 - **`metacafe`** (medium) — OSINT tool: Metacafe.
 - **`metadata-viewer`** (high) — Use when you have an `image` (file or URL) and want its embedded EXIF — returns GPS `geolocation`, camera/device `metadata-exif` and creatio

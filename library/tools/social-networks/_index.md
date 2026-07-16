@@ -310,7 +310,7 @@ kind: group-index
 - **`instagram-explorer`** (medium) — Click on a point on the map. Follow the instructions on the left. Get a link to view Instagram posts made at this location on a specific dat
 - **`instagram-hashtag-scraper`** (medium) — Enter hashtag name and scrape all post tagged it. Get caption, commentsCount, photo dimensions, URL, other hashtags and other details in CSV
 - **`instagram-hashtag-search`** (high) — Use when you have an event/location/interest `name` and want public Instagram posts under that hashtag — the native explore/tags URL returns
-- **`instagram-location-search`** (medium) — A command line tool that allows users to find location tags near a specified latitude and longitude.
+- **`instagram-location-search`** (medium) — Use when you have a `geolocation` (lat/long) and want the Instagram location tags near that point — returns location tag IDs to pivot into `
 - **`instagram-location`** (high) — Use when you have a place (`geolocation`/`address`) and want public posts tagged there — returns location-tagged `social-profile`s, `image`s
 - **`instagram-monitor`** (high) — Use when you have an Instagram `username` and want to watch it over time — returns real-time alerts on new posts/stories/reels, follower/fol
 - **`instagram-reddit-and-snapchat`** (high) — Use when you have an Instagram `username` and want a one-page launcher of profile, ID, hashtag and geolocation lookups — returns social-prof

@@ -93,7 +93,7 @@ kind: group-index
 - **`flickr-common-map`** (medium) — displays only Flickr photos distributed under a Creative Commons license (250 of the latest for each location)
 - **`foursquare`** (high) — Use when you have a `geolocation`/`address` or a venue and want place details, photos, and user tips — returns venue `geolocation`, `address
 - **`free-wifi-search-engine`** (low) — OSINT tool: Free WiFi Search Engine.
-- **`freedomhouse-org`** (medium) — map of the world that shows the scores of different countries on the following indicators (on a scale of 1 to 100)
+- **`freedomhouse-org`** (low) — Use when you have a `geolocation` (country) and want its political-rights and civil-liberties context — returns freedom scores and country-l
 - **`freemaptools`** (high) — Use when you have a `geolocation` or `address`/postcode and want to measure radius/distance, convert coordinates, or find places within an a
 - **`frontex-migratory-map`** (medium) — click on a country or region to see how many illegal border crossings have been reported there in the last six months.
 - **`gaisma`** (medium) — Use when you have a candidate `geolocation` and photo shadows/sun position and want sunrise/sunset/solar-angle data to confirm or time the s

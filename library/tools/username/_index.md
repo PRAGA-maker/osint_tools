@@ -11,7 +11,7 @@ kind: group-index
 - **`username-search-engines/`** — 12 skill(s) below.
 
 ## Skills here
-- **`addmecontacts`** (medium) — Platform to find and connect with new contacts across social media platforms.
+- **`addmecontacts`** (low) — Use when you have a `username`/`name` and want to find messaging-app handles a person has publicly listed to be added — returns linked `soci
 - **`addmes`** (low) — 'Add Me' directory of Snapchat users on the web.
 - **`alfred-osint`** (high) — Use when you have a `username` and want to find where it exists across social platforms — returns a list of matching profile URLs (a Sherloc
 - **`aliens-eye`** (high) — Use when you have a `username` and want to enumerate matching accounts across hundreds of platforms with ML-assisted confidence scoring — re

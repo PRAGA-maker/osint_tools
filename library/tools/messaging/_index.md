@@ -181,7 +181,7 @@ kind: group-index
 - **`tgstat-ru`** (medium) — Use when you have a Telegram channel/`username`, `name` or keyword and want to find and analyze public Telegram channels and posts — returns
 - **`tlgrm-eu-channels`** (medium) — Search Telegram channels.
 - **`transcriber-bot`** (medium) — telegram bot, which can convert to text voice messages in 24 languages (view pic)
-- **`trunk`** (medium) — 200+ thematic lists of accounts in Mastodon. Python, JavaScript, Vim, Ruby, Privacy, Linux... There are even nudists and Tarot. The Pytrunk 
+- **`trunk`** (low) — Use when you have a topic/interest and want curated lists of Mastodon/Fediverse accounts about it — returns `social-profile` handles to expl
 - **`turibot`** (medium) — Use when you have a Telegram numeric user ID and want the current @username / account behind it (or vice-versa) — returns username and socia
 - **`unamer`** (high) — Use when you have a Telegram `username`, `phone`, ID, or forwarded message and want the account's username history and probable registration
 - **`username-to-id-bot`** (high) — Use when you have a Telegram `username` (or forwarded message) and want the stable numeric user/group/channel ID behind it — returns a devic

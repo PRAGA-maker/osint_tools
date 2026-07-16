@@ -24,7 +24,7 @@ kind: group-index
 - **`sanctions-pep/`** — 2 skill(s) below.
 - **`sanctions-screening/`** — 4 skill(s) below.
 - **`us-county-data/`** — 1 skill(s) below.
-- **`us-political-records/`** — 4 skill(s) below.
+- **`us-political-records/`** — 3 skill(s) below.
 - **`us-voter-records/`** — 1 skill(s) below.
 
 ## Skills here
@@ -657,7 +657,7 @@ kind: group-index
 - **`napit-org-uk`** (high) — Use when you have a UK tradesperson `name`, `employer-org` or postcode and want to verify NAPIT registration — returns the registered busine
 - **`narcotics-control-reports`** (medium) — US Department of State Narcotics Control Strategy Reports
 - **`nation-master`** (low) — OSINT tool: Nation Master.
-- **`national-archives-and-records`** (medium) — US National Archives and Records Administration site of searchable archived federal government documents
+- **`national-archives-and-records`** (medium) — Use when you have a `name` or `employer-org` tied to US federal history and want archived government records — returns document records (`do
 - **`national-business-register-united-kingdom`** (medium) — National business register that allows for search using business or company name
 - **`national-center-for-state-courts-united-states`** (medium) — Legal-related search engine for legal court cases and documents
 - **`national-company-registers`** (medium) — OSINT tool: National Company Registers.
