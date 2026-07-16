@@ -71,7 +71,6 @@ kind: group-index
 - **`clipsnap-com`** (high) — Use when you have a subject `image`/`face` and want to clean, isolate or upscale it before running face/reverse-image search — returns a pro
 - **`codeofaninja-com-2`** (high) — Use when you have a YouTube channel URL or handle for a person of interest and need its stable channel ID — returns the UC… channel ID.
 - **`codeofaninja-com-3`** (high) — Use when you have a YouTube video URL and want its full-resolution thumbnail to run through reverse-image or face search — returns the HD th
-- **`comedy-central-united-states`** (high) — Website that hosts videos from TV and movies
 - **`compress-or-die-com-analyze`** (medium) — get detail information about images (exif, metatags, ICC_Profile, quantanisation tables)
 - **`copernicus-open-access-hub`** (medium) — ESA's open access portal to Sentinel data
 - **`copyseeker-net`** (high) — Use when you have a photo of a missing person or a place and want to find where else that image (or visually similar ones) appears online — 
@@ -278,7 +277,6 @@ kind: group-index
 - **`podomatic`** (high) — Use when you have a `name`/`username` and want to find a subject's podcast presence — returns a social-profile with episodes, avatar and any
 - **`portrait-matcher`** (high) — Use when you have a `face` and want to see which historical portrait paintings it resembles — returns physical-description-style lookalikes,
 - **`portrait-search`** (high) — Use when you have a `name` of a notable/historical American and want catalogued portraits of them — returns portrait `image`s and biographic
-- **`positive-security`** (high) — OSINT tool: positive.security.
 - **`preservetube-com`** (high) — Use when you have a YouTube video/channel (`social-profile`) and want to recover or archive it before/after deletion — returns the preserved
 - **`profileimageintel`** (high) — Use when you have a social `username`, profile-image URL, or WhatsApp `phone` and want to know when the profile picture was set/changed — re
 - **`pureref`** (low) — Image workspace; lets you arrange images in groups, organize them, etc.
@@ -330,7 +328,6 @@ kind: group-index
 - **`spiderpig`** (high) — Use when you have a target `domain`/website and want to spider it, download its documents and extract embedded metadata — returns metadata-e
 - **`spotify`** (low) — Use when you have a `username`/handle and want the person's public Spotify profile — returns social-profile, display name, avatar, and publi
 - **`ssstik-link`** (high) — Use when you have a TikTok `username`/`social-profile` and want the full-resolution profile picture — returns the original-size avatar image
-- **`star-wars-tor`** (high) — Website related to social networking and players of the computer game Star Wars The Old Republic
 - **`steam`** (medium) — Use when you have a `username`/handle and think the subject games on Steam — returns `social-profile`, `image` (avatar), `associate` (friend
 - **`stolen-camera-finder`** (high) — Use when you have a photo with EXIF and want other photos taken by the same camera — returns other `image`s and the `social-profile`s/pages 
 - **`stolencamerafinder-com`** (high) — Use when you have an original `image` (with intact EXIF) and want to find other photos taken by the same physical camera via its serial numb
@@ -373,7 +370,7 @@ kind: group-index
 - **`videosearch-io`** (high) — Use when you have a `name`/`username`/keyword and want to search for videos of or about a subject across many platforms at once — returns so
 - **`viewing-bitmoji-changes`** (high) — Use when you have a Snapchat `username` and want a passive activity/liveness signal — watch the account's Bitmoji avatar for changes to infe
 - **`vimeo`** (medium) — OSINT tool: Vimeo.
-- **`watannetwork-com`** (high) — OSINT tool: watannetwork.com.
+- **`watannetwork-com`** (low) — Use when you have a YouTube video URL/ID and want to see which countries it is available or blocked in — returns geolocation (country allow/
 - **`watermarkremover`** (medium) — Remove watermark from image with AI
 - **`webcam-cse`** (medium) — Google Custom Search Engine for search in 10 online street webcam catalogs
 - **`weheartit`** (high) — Use when you have a `username` or `image` and want a subject's curated image collections and tastes on this Tumblr-style gallery site — retu

@@ -470,7 +470,6 @@ kind: group-index
 - **`libgen-rs`** (medium) — OSINT tool: Libgen.rs.
 - **`libraries-io`** (medium) — Open search tool for source packages and frameworks.
 - **`library-genesis`** (low) — "search engine for articles and books, which allows free access to content that is otherwise paywalled or not digitized elsewhere" (c)
-- **`lifewire-com`** (high) — OSINT tool: lifewire.com.
 - **`lilo`** (medium) — Charitable search engine that supports environmental initiatives each time a user searches.
 - **`limetorrents`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property

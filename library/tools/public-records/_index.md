@@ -721,7 +721,6 @@ kind: group-index
 - **`office-of-national-drug-control-policy`** (medium) — US Office of National Drug Control website linking to publications, programs, prevention, treatment, enforcement, drug facts, state and loca
 - **`offshorealert-com`** (medium) — Use when you have a `name` or `employer-org` and want offshore-finance, fraud and litigation intelligence — returns investigative reports an
 - **`oh-court-costs`** (medium) — OSINT tool: OH Court Costs.
-- **`oh-marijuana-docs`** (high) — OSINT tool: OH marijuana docs.
 - **`ohio-mhas`** (medium) — Ohio Mental Health and Addiction Services site - includes facts and resources for prevention and regulation
 - **`ohio-obituaries-death-and-marriage-search`** (high) — Use when you have a `name` (and optionally a death year) and want an Ohio obituary/death/marriage record — returns a `dob`/death-date lead a
 - **`ohio-registered-voter-verification`** (medium) — Ohio registered voter verification and search
@@ -790,7 +789,6 @@ kind: group-index
 - **`pew-research-center`** (low) — OSINT tool: Pew Research Center.
 - **`pharmacyregulation-org`** (high) — Use when you have a `name` or registration number and want to verify a GB pharmacist/pharmacy technician — returns registration status, numb
 - **`pibuzz`** (medium) — Use when you have a `name` (or `employer-org`) and want to find where a US public-sector subject works and what they earn — returns a direct
-- **`pipl-us-warning-slow`** (high) — OSINT tool: Pipl US (warning: slow).
 - **`plain-view-project`** (medium) — OSINT tool: Plain View Project.
 - **`planning-org-uk`** (medium) — Use when you have a UK `address`/postcode and want planning-application activity there — returns `address` (application sites), `associate` 
 - **`planningalerts-org-au`** (high) — Use when you have an Australian `address`/area and want local development/planning applications — returns addresses, applicant details, and 
@@ -891,7 +889,7 @@ kind: group-index
 - **`search-for-company-documents`** (low) — OSINT tool: Search for Company Documents.
 - **`search-for-open-information-documents`** (medium) — OSINT tool: Search for Open Information Documents.
 - **`search-for-us-voters-with-custom-search-engines-osint-boolean-strings`** (high) — Use when you have a US `name` and want registered-voter public records — a Google Custom Search Engine technique over voterrecords.com that 
-- **`search-polk-county-ordinance`** (high) — OSINT tool: Search Polk County Ordinance.
+- **`search-polk-county-ordinance`** (low) — Use when you have an address, subdivision, or property description in Polk County, FL and want the local ordinance record touching it — retu
 - **`search-systems-criminal-records`** (high) — Use when you have a `name` and need to find the right public-records database for a jurisdiction — a directory routing you to court, crimina
 - **`search-the-open-information-catalogue`** (medium) — OSINT tool: Search the Open Information Catalogue.
 - **`searchable-fcc-id-database`** (medium) — Electronics device certification lookup

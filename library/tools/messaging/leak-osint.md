@@ -36,7 +36,18 @@ auth: account
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- avtogram-bot
+- datxpert
+- discord-sensor
+- getchatlist
+- getsendgifts
+- instabot
+- oksearch
+- pimeyes
+- searchforchats
+- spyggbot
+- unamer
 aliases:
 - Leak_SSINTbot
 - Leak OSINT bot

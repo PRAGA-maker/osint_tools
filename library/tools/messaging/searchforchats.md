@@ -31,6 +31,17 @@ localInstall: false
 registration: true
 relatedTools:
 - reddit-com-2
+- avtogram-bot
+- datxpert
+- discord-sensor
+- getchatlist
+- getsendgifts
+- instabot
+- leak-osint
+- oksearch
+- pimeyes
+- spyggbot
+- unamer
 aliases:
 - searchforchatsbot
 - Поиск чатов и каналов

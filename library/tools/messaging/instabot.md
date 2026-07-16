@@ -34,6 +34,17 @@ registration: false
 relatedTools:
 - instaloader
 - threadsdownloader-com
+- avtogram-bot
+- datxpert
+- discord-sensor
+- getchatlist
+- getsendgifts
+- leak-osint
+- oksearch
+- pimeyes
+- searchforchats
+- spyggbot
+- unamer
 aliases:
 - InstaBot Telegram
 - '@InstaBot'

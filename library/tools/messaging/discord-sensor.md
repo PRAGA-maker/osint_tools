@@ -34,6 +34,17 @@ registration: true
 invitationOnly: false
 relatedTools:
 - discord-lookup
+- avtogram-bot
+- datxpert
+- getchatlist
+- getsendgifts
+- instabot
+- leak-osint
+- oksearch
+- pimeyes
+- searchforchats
+- spyggbot
+- unamer
 aliases:
 - Discord Sensor
 - DiscordSensorbot

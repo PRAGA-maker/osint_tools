@@ -146,7 +146,6 @@ kind: group-index
 - **`en-wikipedia-org`** (medium) — Use when you have a `username` or `name` and want an exhaustive checklist of social platforms to search — returns a reference list of networ
 - **`enlarge-discord-avatars`** (medium) — OSINT tool: Enlarge Discord avatars.
 - **`epieos`** (high) — Use when you have an `email` or `phone` and want to reverse-lookup the accounts, profiles and Google identity tied to it — returns social-pr
-- **`eu-usatoday-com`** (high) — OSINT tool: eu.usatoday.com.
 - **`exolyt`** (medium) — Use when you have a TikTok `social-profile`/`username` and want analytics on it — returns posting patterns, engagement, audience geography a
 - **`expand-all-facebook-comments-bookmarklet`** (high) — Use when you have a Facebook post/`social-profile` thread and want to force every hidden comment and reply to load so you can read the full 
 - **`exportdata`** (high) — Use when you have a Twitter/X `username` and want to export their followers, followings, and tweet history at scale — returns associate link
@@ -659,7 +658,7 @@ kind: group-index
 - **`tiktok-search-engine`** (medium) — OSINT tool: TIKTOK Search Engine.
 - **`tiktok-user-finder`** (high) — Use when you have a TikTok `username` and want that account's metadata — numeric user ID, region, creation date, username-change history and
 - **`tiktok-user-search`** (medium) — OSINT tool: TikTok User Search.
-- **`tiktok-video-downloader-chromewebstore-google-com`** (high) — OSINT tool: tiktok video downloader (chromewebstore.google.com).
+- **`tiktok-video-downloader-chromewebstore-google-com`** (low) — Use when you have a subject's TikTok video/profile and want to save the clip (no watermark) for offline analysis and evidence preservation —
 - **`tiktok-video-downloader`** (medium) — OSINT tool: TikTok video downloader.
 - **`tiktokapi`** (medium) — Python - This is an unofficial api wrapper for TikTok.com in python. With this api you are able to call most trending and fetch specific use
 - **`tikvib-com`** (medium) — Use when you have a TikTok `username` and want to view/download their public videos and profile stats anonymously — returns `social-profile`

@@ -21,12 +21,24 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Russian-language Telegram bot ("Автограм — загружайте свои фотографии машин и зарабатывайте") for uploading car photos; not an investigative lookup tool.
 missingPersonsRelevance: low
-coverage: [ru]
+coverage:
+- ru
 auth: account
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- datxpert
+- discord-sensor
+- getchatlist
+- getsendgifts
+- instabot
+- leak-osint
+- oksearch
+- pimeyes
+- searchforchats
+- spyggbot
+- unamer
 aliases:
 - Avtogram
 - ABTOGRAMBOT
