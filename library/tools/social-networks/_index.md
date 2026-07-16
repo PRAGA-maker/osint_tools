@@ -8,7 +8,7 @@ kind: group-index
 
 ## Sub-groups
 - **`bluesky/`** — 1 skill(s) below.
-- **`facebook/`** — 5 skill(s) below.
+- **`facebook/`** — 4 skill(s) below.
 - **`fediverse-mastodon/`** — 4 skill(s) below.
 - **`instagram/`** — 2 skill(s) below.
 - **`linkedin/`** — 4 skill(s) below.
@@ -42,7 +42,6 @@ kind: group-index
 - **`archive-4plebs-org`** (medium) — 4plebs is an unofficial archive of certain boards of 4chan.org, including 11 boards. It offers a large number of searchable discussions with
 - **`arctic-shift-2`** (high) — Use when you have a Reddit `username` (or subreddit/keyword) and want historical Reddit posts and comments Reddit's own search hides — retur
 - **`arrse-co-uk-2`** (high) — Use when you have a `username` or `name` and want to find a subject's profile on the UK's main British-Army community forum — returns their 
-- **`articles`** (high) — OSINT tool: Articles.
 - **`audiense`** (high) — Use when you have a Twitter/X `username` or audience and want deep audience-segmentation intelligence — returns audience segments, influence
 - **`authentic8-com-2`** (high) — Use when a subject may be on Mastodon/the Fediverse and you need to understand instances and federation before searching — returns platform 
 - **`authentic8-com`** (high) — Use when you're investigating an Instagram account (`username`/`name`) and want a structured methodology — profile, network, content and met
@@ -336,7 +335,7 @@ kind: group-index
 - **`instagram-location`** (high) — Use when you have a place (`geolocation`/`address`) and want public posts tagged there — returns location-tagged `social-profile`s, `image`s
 - **`instagram-monitor`** (high) — Use when you have an Instagram `username` and want to watch it over time — returns real-time alerts on new posts/stories/reels, follower/fol
 - **`instagram-online-viewer-picbear`** (high) — OSINT tool: Instagram Online Viewer | Picbear.
-- **`instagram-reddit-and-snapchat`** (high) — OSINT tool: Instagram, Reddit & Snapchat.
+- **`instagram-reddit-and-snapchat`** (high) — Use when you have an Instagram `username` and want a one-page launcher of profile, ID, hashtag and geolocation lookups — returns social-prof
 - **`instagram-scraper`** (medium) — Scrape info about accounts, posts, stories and comment
 - **`instagram-search-inteltechniques-method`** (high) — Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers
 - **`instagram-search`** (high) — OSINT tool: Instagram Search.
@@ -741,7 +740,6 @@ kind: group-index
 - **`tweetdeck`** (medium) — OSINT tool: Tweetdeck.
 - **`tweetdelete-net`** (high) — OSINT tool: tweetdelete.net.
 - **`tweetfeed`** (medium) — List of IOCs shared today by the #infosec community at Twitter: domains, URLs, IPs, SHA256/MD5 hashes
-- **`tweetmap`** (high) — OSINT tool: TweetMap.
 - **`tweetpaths`** (medium) — OSINT tool: Tweetpaths.
 - **`tweetreach`** (medium) — OSINT tool: Tweetreach.
 - **`tweeview`** (medium) — Twitter conversation visualization (beta)

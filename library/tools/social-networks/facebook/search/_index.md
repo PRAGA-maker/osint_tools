@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`facebook-photos-by-id`** (high) — Use when you have a Facebook photo's numeric `fbid` (from a scrape, an old link, or an image reference) and want to open the original photo 
-- **`fb-email-search`** (high) — Quick Facebook account existence checks from an email identifier
 - **`fb-identify-requires-logout`** (high) — Use when you have an `email`, `phone`, or `name` and want to confirm whether it maps to a Facebook account — returns the matched profile's n
 - **`fb-lookup-id`** (high) — Use when you have a Facebook profile/page/group `social-profile` URL and want its numeric ID — returns the stable numeric Facebook ID for pi
 - **`recover-fb-account`** (high) — Use when you have an `email` or `phone` and want to confirm whether it is tied to a Facebook account — returns account existence plus the ma

@@ -14,7 +14,7 @@ kind: group-index
 - **`images/`** — 54 skill(s) below.
 - **`reverse-media-search/`** — 2 skill(s) below.
 - **`source-verification/`** — 3 skill(s) below.
-- **`videos/`** — 18 skill(s) below.
+- **`videos/`** — 17 skill(s) below.
 - **`webcams/`** — 3 skill(s) below.
 
 ## Skills here
@@ -391,7 +391,7 @@ kind: group-index
 - **`telegram-facemath-bot`** (high) — Use when you have a `face`/`image` and want to find that person in an archive of public-event photos from Kazakhstan — returns matching even
 - **`textgrab`** (medium) — Simple #Chrome extension for copying and recognizing text from videos (#YouTube, #GoogleMeetup etc.)
 - **`the-bitmoji-avatar-history-enumerator`** (high) — Use when you have a Snapchat `username` and want to enumerate the history of Bitmoji avatars that account has used — returns `image` avatars
-- **`the-seint`** (high) — OSINT tool: The SEINT.
+- **`the-seint`** (high) — Use when you have an image `metadata-exif`/filename and want to infer the camera make/model that produced it — returns device-id.
 - **`thehackernews-com`** (high) — Use when you have an `image` containing pixelated/blurred redacted text and want to attempt reconstruction — points to the Unredacter/Depix 
 - **`theinpaint`** (medium) — One of the best (and free) online photo object removal tools I've ever seen. Just highlight red on the photo and press Erase. Then do it aga
 - **`tikfuel-com`** (high) — Use when you have a TikTok `username` and want the full-resolution profile picture (which TikTok only shows small) to reverse-image or face-

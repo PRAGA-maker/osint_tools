@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8642 total · 2359 full · 6283 stub (27% enriched)
+**Tools:** 8636 total · 2364 full · 6272 stub (27% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3354 · low: 3145 · high: 2143
+medium: 3354 · low: 3145 · high: 2137
 
 ## Tools by trust
-unverified: 4717 · community: 3155 · trusted: 757 · personal: 7 · untrustworthy: 6
+unverified: 4709 · community: 3155 · trusted: 759 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -24,16 +24,16 @@ unverified: 4717 · community: 3155 · trusted: 757 · personal: 7 · untrustwor
 - `email` — 239/249
 - `evidence-capture` — 1/33
 - `financial-crypto` — 0/135
-- `geolocation` — 149/360
-- `image-video-face` — 338/540
+- `geolocation` — 150/360
+- `image-video-face` — 339/539
 - `maps-geospatial-data` — 2/147
 - `messaging` — 120/232
 - `opsec-investigator-tooling` — 3/567
 - `people-search` — 210/285
 - `phone` — 128/144
-- `public-records` — 501/1179
+- `public-records` — 503/1177
 - `search-engines` — 45/992
-- `social-networks` — 487/943
+- `social-networks` — 488/940
 - `training-ctf` — 0/12
 - `translation-language` — 0/103
 - `transportation` — 1/237
@@ -41,9 +41,9 @@ unverified: 4717 · community: 3155 · trusted: 757 · personal: 7 · untrustwor
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1111 leaves
+- `library/tools/public-records` — 1109 leaves
 - `library/tools/search-engines` — 921 leaves
-- `library/tools/social-networks` — 911 leaves
+- `library/tools/social-networks` — 909 leaves
 - `library/tools/domains-ip-infrastructure` — 533 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/image-video-face` — 439 leaves

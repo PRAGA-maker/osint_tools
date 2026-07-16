@@ -453,7 +453,7 @@ kind: group-index
 - **`greater-sacramento-area-public-salaries`** (medium) — OSINT tool: Greater Sacramento Area Public Salaries.
 - **`greece`** (high) — Use when you have a Greek company `name`/`employer-org` and want its beneficial owners (UBO) — returns the natural persons behind the entity
 - **`gro-gov-uk`** (high) — Use when you have a `name` and want to confirm a birth, death or parentage in England & Wales — returns index entries with dates, districts 
-- **`gtcni-org-uk`** (high) — OSINT tool: gtcni.org.uk.
+- **`gtcni-org-uk`** (high) — Use when you have a `name` and want to confirm whether someone is a registered teacher in Northern Ireland — returns registration status, la
 - **`gtcs-org-uk`** (high) — Use when you have a `name` claimed to be a Scottish teacher and want to verify registration — returns registration status, number and qualif
 - **`guernseyregistry-com`** (high) — Use when you have a company `name`, a director `name`, or a Guernsey business connection and want official company/director records — return
 - **`guernseyroyalcourt-gg`** (medium) — Use when you have a `name` with a Guernsey nexus and need birth/death/marriage, will, deed-poll or power-of-attorney records — returns vital
@@ -637,9 +637,7 @@ kind: group-index
 - **`michigan-resident-database`** (high) — Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and
 - **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres
 - **`michigan`** (high) — Use when you have a `name` and want to check whether someone is or was recently under Michigan corrections supervision — returns name, dob, 
-- **`michiganvoters-info`** (high) — OSINT tool: Michiganvoters.info.
 - **`microsoft-academic-research`** (medium) — Academic-related search engine focusing on science and research; includes over 220,000,000 papers and 48,000 journals
-- **`miexact-com`** (high) — OSINT tool: miexact.com.
 - **`milwaukee-wisconsin-city-employee-salaries-2019`** (medium) — OSINT tool: Milwaukee Wisconsin City Employee Salaries 2019.
 - **`ministry-of-corporate-affairs-india`** (medium) — Business-related search engine that searches by company name
 - **`minnesota-registered-voter-verification`** (medium) — Minnesota registered voter verification and search
@@ -874,7 +872,7 @@ kind: group-index
 - **`residential-rental-properties`** (high) — Use when you have a UK residential `address` and want to check the registered "fair rent" for a regulated tenancy — returns confirmation the
 - **`residential`** (high) — Use when you have a UK `address` (postcode) and want to confirm a dwelling exists and read its council tax band as a rough property-value / 
 - **`resources-library-ubc-ca`** (medium) — OSINT tool: Resources.library.ubc.ca.
-- **`responsesource-com`** (high) — OSINT tool: responsesource.com.
+- **`responsesource-com`** (high) — Use when you have a `name` and want to confirm a UK journalist's outlet, beat and role — returns employer-org, social-profile, name.
 - **`rhode-island-registered-voter-verification`** (medium) — Rhode Island registered voter verification and search
 - **`rhode-island`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Rhode Island state corrections — returns inmate record, ID 
 - **`rias-org-uk`** (high) — Use when you have an architect's or firm `name` (or a Scottish location) and want to confirm the practice and its address — returns a charte

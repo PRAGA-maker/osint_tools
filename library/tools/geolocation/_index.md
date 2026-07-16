@@ -339,7 +339,7 @@ kind: group-index
 - **`wikiloc-gps-location-sharing`** (high) — Use when you have a `username`/`name` or an area `geolocation` and want user-posted GPS trails (with start points, dates and photos) — retur
 - **`wikimapia`** (medium) — Use when you need crowd-labeled names and descriptions of buildings, businesses, and landmarks at a location that official maps leave blank.
 - **`wikinearby`** (medium) — Enter geographic coordinates, language, and get a list of Wikipedia articles about streets, towns, stations and other notable places nearby.
-- **`wikipedia-list-of-online-mapping-programs-worldwide`** (high) — Wiki database listing showing mapping programs for countries worldwide; free public use; no account required
+- **`wikipedia-list-of-online-mapping-programs-worldwide`** (high) — Use when you have a `geolocation`/`address` in a specific country and want the right regional map/imagery service for it — routes you to loc
 - **`wikishootme`** (medium) — Worldwide map of geotagged Wikipedia Creative Commons Images. To display more information, log in with your Media Wiki account.
 - **`wiman`** (low) — OSINT tool: Wiman.
 - **`windy`** (high) — Use when you need historical/forecast weather for a place and date, or live and recently archived webcams near a location, to validate a sce

@@ -132510,14 +132510,14 @@
   },
   {
     "id": "wikipedia-list-of-online-mapping-programs-worldwide",
-    "name": "Wikipedia List of Online Mapping Programs Worldwide",
-    "description": "Wiki database listing showing mapping programs for countries worldwide; free public use; no account required",
+    "name": "Wikipedia — List of Online Map Services",
+    "description": "Use when you have a `geolocation`/`address` in a specific country and want the right regional map/imagery service for it — routes you to local mapping tools.",
     "url": "https://en.wikipedia.org/wiki/List_of_online_map_services",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "A maintained reference index of global and country-specific online map/imagery services, for picking the best mapping tool for a given region.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -132526,15 +132526,16 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free Wikipedia reference article; the map services it lists have their own (often free) access terms.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a Wikipedia list is passive and leaks nothing. OpSec considerations belong to the destination map service you choose (e.g. don't sign into a personal account on an imagery site while working a case).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Community-maintained Wikipedia article; it is an index, so authority rests with the individual map services it points to.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -132542,16 +132543,19 @@
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "aliases": [
+      "List of online map services",
+      "online mapping programs worldwide"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "geo-location-mapping-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/wikipedia-list-of-online-mapping-programs-worldwide.md"
   },
   {
@@ -155893,45 +155897,50 @@
   },
   {
     "id": "the-seint",
-    "name": "The SEINT",
-    "description": "OSINT tool: The SEINT.",
+    "name": "SEINT — Camera Filename Pattern Reference",
+    "description": "Use when you have an image `metadata-exif`/filename and want to infer the camera make/model that produced it — returns device-id.",
     "url": "https://github.com/seintpl/osint/blob/main/camera-filename-pattern.md",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping a photo's default filename prefix (IMG_, DSC_, PXL_…) to the camera brand or phone model that shot it.",
     "selectorsIn": [
-      "image",
-      "face"
+      "metadata-exif"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "device-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open reference document in a public GitHub repository; no account required.",
+    "opsec": "passive",
+    "opsecNote": "This is a static reference you read locally — nothing about your subject is transmitted. The analysis happens on files you already hold, so there is zero footprint against the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Part of the well-regarded seintpl/osint resource; the mapping is community knowledge and the author warns filenames are trivially altered — treat inferences as leads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "camera filename pattern",
+      "seintpl osint"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "Photo Related Sites",
+      "metadata"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/the-seint.md"
   },
   {
@@ -157561,47 +157570,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/vimeo.md"
-  },
-  {
-    "id": "vines",
-    "name": "Vines",
-    "description": "OSINT tool: Vines.",
-    "url": "https://www.google.com/search?q=site:vine.co+%3Csearchterm%3E",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face",
-      "videos",
-      "search"
-    ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/videos/search/vines.md"
   },
   {
     "id": "watannetwork-com",
@@ -242518,47 +242486,52 @@
   },
   {
     "id": "gtcni-org-uk",
-    "name": "gtcni.org.uk",
-    "description": "OSINT tool: gtcni.org.uk.",
+    "name": "GTCNI Register of Teachers (Northern Ireland)",
+    "description": "Use when you have a `name` and want to confirm whether someone is a registered teacher in Northern Ireland — returns registration status, last known employer, GTCNI number.",
     "url": "https://iregistration.gtcni.org.uk/search-teachers",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a person's status on the statutory register of teachers in Northern Ireland and their last known school/employer.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public register lookup; any member of the public may check a teacher's registration status with no account or fee.",
+    "opsec": "passive",
+    "opsecNote": "Searching the statutory register is passive and anonymous — the teacher is not notified. No login is required, so a clean browser is sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The General Teaching Council for Northern Ireland is the statutory regulator; the register is the authoritative record of who may teach in NI.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "General Teaching Council for Northern Ireland",
+      "GTCNI register",
+      "search.gtcni.org.uk"
+    ],
     "tags": [
       "professionlicensing",
       "Profession & Licensing Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gtcni-org-uk.md"
   },
   {
@@ -251424,40 +251397,6 @@
     "_file": "library/tools/public-records/michigan-state-records.md"
   },
   {
-    "id": "michiganvoters-info",
-    "name": "Michiganvoters.info",
-    "description": "OSINT tool: Michiganvoters.info.",
-    "url": "https://michiganvoters.info/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/michiganvoters-info.md"
-  },
-  {
     "id": "microsoft-academic-research",
     "name": "Microsoft Academic Research",
     "description": "Academic-related search engine focusing on science and research; includes over 220,000,000 papers and 48,000 journals",
@@ -251502,51 +251441,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/microsoft-academic-research.md"
-  },
-  {
-    "id": "miexact-com",
-    "name": "miexact.com",
-    "description": "OSINT tool: miexact.com.",
-    "url": "https://www.miexact.com/halo/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "genealogybdmANDwills",
-      "Genealogy Linked Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/miexact-com.md"
   },
   {
     "id": "milwaukee-wisconsin-city-employee-salaries-2019",
@@ -263479,47 +263373,55 @@
   },
   {
     "id": "responsesource-com",
-    "name": "responsesource.com",
-    "description": "OSINT tool: responsesource.com.",
+    "name": "ResponseSource Journalist Profiles",
+    "description": "Use when you have a `name` and want to confirm a UK journalist's outlet, beat and role — returns employer-org, social-profile, name.",
     "url": "https://profiles.responsesource.com/search",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming which publication a UK-focused journalist writes for, their beat and freelance/staff status.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "social-profile",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing public journalist profiles is free; the full media-contact database and enquiry/outreach service are paid B2B products, and some contact fields require a login.",
+    "opsec": "passive",
+    "opsecNote": "Searching public journalist profiles is passive. Do not use the outreach/enquiry side against a subject — that would email real journalists and expose your interest. Read-only profile browsing leaks nothing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial UK media-contacts platform; profile data is self-reported by journalists and curated, so verify beats/outlets against published bylines.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "responsesource.com",
+      "ResponseSource profiles"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "journalists"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/responsesource-com.md"
   },
   {
@@ -316859,49 +316761,6 @@
     "_file": "library/tools/social-networks/arrse-co-uk-2.md"
   },
   {
-    "id": "articles",
-    "name": "Articles",
-    "description": "OSINT tool: Articles.",
-    "url": "https://techzillo.com/see-someones-recently-added-friends-facebook/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook",
-      "Facebook General Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/articles.md"
-  },
-  {
     "id": "ask-fm",
     "name": "ASKfm",
     "description": "Use when you have an `username` and want to check for an ASKfm profile — returns the public Q&A history, likes and follower links that often reveal candid personal detail.",
@@ -324717,59 +324576,6 @@
     "_file": "library/tools/social-networks/fastvideosave-net.md"
   },
   {
-    "id": "fb-email-search",
-    "name": "FB Email Search",
-    "description": "Quick Facebook account existence checks from an email identifier",
-    "url": "https://www.facebook.com/public?query=email@gmail.com&nomc=0",
-    "category": "social-networks",
-    "path": [
-      "social-networks",
-      "facebook",
-      "search"
-    ],
-    "bestFor": "Quick Facebook account existence checks from an email identifier",
-    "input": "Email address (replace the query value in the URL)",
-    "output": "Facebook public search results that may include matching profile records",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Uses Facebook web search endpoints without authentication, but query terms are visible in browser/network logs.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "facebook",
-      "facebook-ad-s-link",
-      "facebook-com",
-      "facebook-com-2",
-      "facebook-directory-users-by-name",
-      "facebook-live-map",
-      "facebook-photos-by-id",
-      "facebook-profile-directory",
-      "facebook-watch",
-      "fb-identify-requires-logout",
-      "recover-fb-account"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/facebook/search/fb-email-search.md"
-  },
-  {
     "id": "fb-identify-requires-logout",
     "name": "FB Identify (Requires Logout)",
     "description": "Use when you have an `email`, `phone`, or `name` and want to confirm whether it maps to a Facebook account — returns the matched profile's name and photo (must be logged out).",
@@ -332324,36 +332130,51 @@
   },
   {
     "id": "instagram-reddit-and-snapchat",
-    "name": "Instagram, Reddit & Snapchat",
-    "description": "OSINT tool: Instagram, Reddit & Snapchat.",
+    "name": "OSINT Toolkit — Instagram (one-plus)",
+    "description": "Use when you have an Instagram `username` and want a one-page launcher of profile, ID, hashtag and geolocation lookups — returns social-profile, image, geolocation.",
     "url": "https://one-plus.github.io/Instagram",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A curated single-page launcher of Instagram (and adjacent Reddit/Snapchat) OSINT tools, run from a known account name.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The toolkit page itself is free; it links out to third-party services, some of which are free and some rate-limited or paid.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The launcher builds queries against third-party services; some of those (account-ID finders, viewers) may register a request. Drive them from a sock-puppet browser and avoid logging into Instagram itself from your working session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community-built GitHub Pages OSINT toolkit aggregating third-party tools; quality and liveness depend on each linked service, not the page.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "one-plus OSINT toolkit Instagram",
+      "Instagram Reddit Snapchat toolkit"
+    ],
+    "tags": [
+      "instagram",
+      "osint-toolkit"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "bookmarks",
       "document-search",
@@ -353083,47 +352904,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/tweetfeed.md"
-  },
-  {
-    "id": "tweetmap",
-    "name": "TweetMap",
-    "description": "OSINT tool: TweetMap.",
-    "url": "http://mapd.csail.mit.edu/tweetmap",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "mit-pgp-key-server",
-      "mit-pgp-public-key-server",
-      "places2"
-    ],
-    "_file": "library/tools/social-networks/tweetmap.md"
   },
   {
     "id": "tweetpaths",
