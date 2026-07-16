@@ -96,7 +96,7 @@ kind: group-index
 - **`freedar`** (low) — OSINT tool: Freedar.
 - **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK database of registered aviation owners
 - **`gpsjam`** (low) — GPSJam.org is a daily map that visualizes the GPS/GNSS disruptions on aircraft worldwide. It collects and presents 24-hour data showing area
-- **`hertz-rent-receipt`** (medium) — OSINT tool: Hertz Rent Receipt.
+- **`hertz-rent-receipt`** (medium) — Use when you have a Hertz rental's agreement number (or the renter's driver's-license number + surname) and want the rental record — returns
 - **`how-s-my-driving-ny`** (medium) — OSINT tool: How's My Driving NY.
 - **`icao-civil-and-military-airspace-suashp`** (medium) — OSINT tool: ICAO Civil and Military airspace SUASHP.
 - **`icarus-flights`** (medium) — OSINT tool: Icarus.flights.

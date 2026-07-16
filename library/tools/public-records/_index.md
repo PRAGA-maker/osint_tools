@@ -204,7 +204,7 @@ kind: group-index
 - **`connecticut-registered-voter-verification`** (medium) — Connecticut voter registration verification and search
 - **`connecticut`** (high) — Use when you have a `name` or DOC number and want to locate a person currently held in Connecticut state prison/jail — returns custody statu
 - **`connvoters-com`** (high) — Use when you have a `name` (and roughly a Connecticut location) and want the subject's registered address, town, party and DOB from the stat
-- **`cop26-registered-attendees`** (medium) — OSINT tool: COP26 registered attendees.
+- **`cop26-registered-attendees`** (low) — Use when you have a `name`/`employer-org` possibly present at the 2021 UN COP26 summit and want to confirm attendance — returns their listed
 - **`coplookup-com`** (medium) — OSINT tool: Coplookup.com.
 - **`coraweb-birth-death-and-marriage-records-australia`** (high) — Use when you have a `name` and an Australian connection and want a curated directory of BDM/vital-record and genealogy sources to search — r
 - **`cornell-legal-information-institute-united-states`** (medium) — Use when you have a `name`, statute cite, or legal topic and want authoritative free US law and court opinions — returns document-id, name.
@@ -572,7 +572,7 @@ kind: group-index
 - **`legal-entity-types-by-country`** (low) — OSINT tool: Legal Entity Types by Country.
 - **`legalmondo-com`** (high) — Use when you have a Spanish `employer-org`/company name and want to know which registries hold its data — a free methodology guide pointing 
 - **`lei-bloomberg-com`** (medium) — search information about company by Legal Identify Number
-- **`lei-search`** (medium) — can help find "who owned by" or "who owns"
+- **`lei-search`** (medium) — Use when you have an `employer-org` and want its legal identity and ownership chain — returns the entity's registered name, address, and par
 - **`leolist`** (low) — OSINT tool: LeoList.
 - **`lexington-fayette-county-ky-health-department-restaurant-inspections`** (medium) — OSINT tool: Lexington-Fayette County KY Health Department Restaurant Inspections.
 - **`lexington-ky-employee-salaries-2021`** (medium) — OSINT tool: Lexington KY Employee Salaries 2021.
@@ -613,7 +613,7 @@ kind: group-index
 - **`marriage-records-search-directory`** (high) — Use when you have a `name` and want to find US marriage records — returns links to state/county marriage-record search resources that confir
 - **`maryland`** (high) — Use when you have a `name` (or inmate number) and want to check Maryland state custody status — returns identity confirmation, dob, inmate d
 - **`massachusetts`** (high) — Use when you have a `name` (or commitment number) and want to locate someone in a Massachusetts prison — the state directs you to VINELink t
-- **`media-room-and-blue-book`** (medium) — OSINT tool: Media Room & Blue Book.
+- **`media-room-and-blue-book`** (low) — Use when you have a subject affiliated with the University of Toronto and want their expert profile and media contact — returns faculty affi
 - **`medicalcouncil-ie`** (high) — Use when you have a doctor's `name` and want to verify Irish medical registration — returns registration status, specialty/qualifications an
 - **`melissadata-campaign-contributions`** (medium) — OSINT tool: MelissaData (Campaign Contributions).
 - **`mellssa-data`** (medium) — OSINT tool: Mellssa Data.

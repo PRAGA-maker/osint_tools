@@ -28,7 +28,7 @@ kind: group-index
 - **`4shared`** (medium) — Website that allows users to search, store, and share files.
 - **`aaroncti-s-online-resources`** (medium) — Public Google Sheet of OSINT/CTI online resources curated by AaronCTI.
 - **`abc-search-engine`** (medium) — Surface web search engine covering worldwide results, including various categories to choose from
-- **`abebooks-search-engine`** (medium) — Website that offers book search services, including art and collectibles
+- **`abebooks-search-engine`** (low) — Use when you have a `name`/title tied to a book, seller, or inscribed copy and want listings — returns marketplace entries with seller and p
 - **`abilogic`** (low) — Business web directory
 - **`aboutus`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`abusech`** (medium) — OSINT tool: Abusech.
@@ -391,7 +391,7 @@ kind: group-index
 - **`indeed-job-search-engine-worldwide`** (medium) — Website that offers job search services for multiple countries worldwide
 - **`info-com-meta-search-engine-united-kingdom`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`info-com`** (high) — Use when you have a `name` or other keyword and want an alternate general web search engine to surface pages a mainstream engine ranks diffe
-- **`infotrail`** (medium) — Advanced Cyber Threat Intelligence & OSINT Platform
+- **`infotrail`** (medium) — Use when you have an `email`/`username`/`domain` and want to check it against stealer logs and leaked databases — returns breached credentia
 - **`insecac`** (medium) — Worlds biggest online cameras directory
 - **`inside`** (low) — Human edited web directory, formerly known as Mahalo
 - **`intelligence-x`** (medium) — OSINT tool: Intelligence X.

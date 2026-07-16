@@ -70,7 +70,7 @@ kind: group-index
 - **`money-center`** (low) — OSINT tool: Money Center.
 - **`mullvad-vpn`** (low) — OSINT tool: Mullvad VPN.
 - **`naval-open-source-intelligence`** (medium) — Operational naval news curated from open source intelligence
-- **`newsworld-usa`** (medium) — Comprehensive news aggregator for major online news
+- **`newsworld-usa`** (medium) — Use when you have a `name`/`employer-org` and want recent and archived US news mentions — returns aggregated headlines linking a subject to 
 - **`north-american-industry-classification-system-naics-canada`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`north-american-sic-structure-united-states`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`onion-engine`** (low) — OSINT tool: Onion Engine.

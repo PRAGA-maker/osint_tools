@@ -403,7 +403,7 @@ kind: group-index
 - **`radware-live-cyber-threat-map`** (low) — OSINT tool: Radware Live Cyber Threat Map.
 - **`ransomlook`** (low) — "Yet another Ransomware gang tracker" (c) Group profiles, recent updates, forums and markets list + some stats. A real treasure cybercrime r
 - **`raymond`** (low) — Framework for gathering information about website
-- **`rdrs-icann-org`** (medium) — OSINT tool: rdrs.icann.org.
+- **`rdrs-icann-org`** (medium) — Use when you have a `domain` and want the nonpublic (redacted) registrant data — returns a channel to formally request name, email, and addr
 - **`reconnor`** (low) — Educational recon and OSINT tool suite.
 - **`redirectdetective`** (low) — OSINT tool: RedirectDetective.
 - **`regex-checker`** (low) — Search and highlight (in webpage): Emails, Phone numbers, Dates, Prices, Addresses
