@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`ai-analysis-automation/`** — 457 skill(s) below.
 - **`archives-cache/`** — 144 skill(s) below.
-- **`communities-forums/`** — 438 skill(s) below.
+- **`communities-forums/`** — 435 skill(s) below.
 - **`dark-web/`** — 121 skill(s) below.
 - **`dating-classifieds/`** — 117 skill(s) below.
 - **`documents-metadata/`** — 320 skill(s) below.

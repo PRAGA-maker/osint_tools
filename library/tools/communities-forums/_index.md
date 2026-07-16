@@ -21,7 +21,7 @@ kind: group-index
 - **`abc-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`abc-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`actualidad-world-newspapers-online`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
-- **`adult-friendfinder`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`adult-friendfinder`** (medium) — Use when you have an `email`/`username` and want to check for a profile on this adult dating network — returns account-existence and any pub
 - **`airbnb`** (medium) — Website related to travel and accomodations
 - **`alltop-micronews-website`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`alt-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
@@ -93,7 +93,6 @@ kind: group-index
 - **`discovery-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`disqus`** (medium) — Worldide blog comment hosting service
 - **`doesthedogdie`** (low) — This is an ingenious site that lets you find out if a movie (video game) has scenes that might upset someone (death of dogs, cats and horses
-- **`dogster`** (medium) — Networking website for dog lovers
 - **`doxbin`** (medium) — OSINT tool: doxbin.
 - **`dpaste`** (medium) — OSINT tool: dpaste.
 - **`ehow`** (low) — OSINT tool: eHow.
@@ -178,7 +177,6 @@ kind: group-index
 - **`google-com-40`** (medium) — OSINT tool: google.com.
 - **`google-com-41`** (medium) — OSINT tool: google.com.
 - **`google-com-6`** (medium) — OSINT tool: google.com.
-- **`google-com-7`** (medium) — OSINT tool: google.com.
 - **`google-com-8`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — OSINT tool: Google Groups.
@@ -285,7 +283,6 @@ kind: group-index
 - **`paste-in-ua`** (medium) — OSINT tool: paste.in.ua.
 - **`paste-kde`** (medium) — OSINT tool: paste.kde.
 - **`paste-monster`** (medium) — OSINT tool: Paste.Monster.
-- **`paste-quest`** (medium) — OSINT tool: Paste.Quest.
 - **`paste-sh`** (medium) — OSINT tool: paste.sh.
 - **`paste-ubuntu`** (medium) — OSINT tool: paste.ubuntu.
 - **`pastebin-cz`** (medium) — OSINT tool: Pastebin.cz.

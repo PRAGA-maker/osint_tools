@@ -607,7 +607,7 @@ kind: group-index
 - **`stayfriends-de`** (high) — Use when you have a German-speaking subject's `name` and a school and want to place them via a class-reunion network — returns a `social-pro
 - **`steam-community-search`** (low) — OSINT tool: Steam Community :: Search.
 - **`steam-id-finder`** (low) — OSINT tool: Steam ID Finder.
-- **`steam-osint-tool`** (medium) — Enter the link to the user's Steam profile to get a list of his or her closed "friends" and a list of his or her public comments.
+- **`steam-osint-tool`** (medium) — Use when you have a Steam profile `url`/`username` and want hidden connections — returns inferred "closed" friends and the user's public com
 - **`steam-osint`** (medium) — OSINT tool: Steam-OSINT.
 - **`steamdb-info-calculator`** (low) — OSINT tool: steamdb.info/calculator.
 - **`steamid-uk`** (medium) — Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) s

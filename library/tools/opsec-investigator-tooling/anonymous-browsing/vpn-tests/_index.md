@@ -12,7 +12,7 @@ kind: group-index
 - **`email-leak-tests`** (medium) — Verifying email IP privacy, testing anonymous email service configurations
 - **`ip-dns-leak-detection`** (medium) — Verifying VPN effectiveness, detecting IP and DNS leaks before OSINT operations
 - **`ipv6-leak-tests`** (medium) — Detecting IPv6 leaks through IPv4-only VPNs, dual-stack network verification
-- **`jondonym`** (medium) — Comprehensive anonymization verification, browser privacy audit
+- **`jondonym`** (low) — Use when you want to audit your investigative connection's anonymity — returns your exposed IP, headers, cookies, and fingerprint with an an
 - **`letmecheck-it`** (medium) — Comprehensive pre-operation anonymization check covering multiple leak vectors
 - **`perfect-privacy`** (medium) — Pre-operation anonymization verification, IP and DNS leak check
 - **`trace-my-ip`** (medium) — Verifying visible IP and geolocation before OSINT operations

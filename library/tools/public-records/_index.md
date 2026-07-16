@@ -127,7 +127,7 @@ kind: group-index
 - **`brazillian-address-cep-search-and-report`** (medium) — OSINT tool: Brazillian Address CEP Search and Report.
 - **`brb-public-records`** (medium) — Public records source directory
 - **`brooklyn-genealogy`** (high) — Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, direct
-- **`brownbook`** (medium) — OSINT tool: BrownBook.
+- **`brownbook`** (medium) — Use when you have a business `name`/`employer-org` and want its listing — returns address, phone, and contact details from a global crowd-so
 - **`buffalo-police`** (medium) — OSINT tool: Buffalo Police.
 - **`bulgaria`** (high) — Use when you have a `name` or `employer-org` in Bulgaria and want to confirm company officers, ownership and registered addresses — returns 
 - **`business-directory-occ`** (low) — OSINT tool: Business Directory \| OCC.
@@ -514,7 +514,7 @@ kind: group-index
 - **`interpol-most-wanted-search-engine`** (low) — OSINT tool: Interpol Most Wanted Search Engine.
 - **`investing-com`** (medium) — View a detailed investment profile of the company
 - **`ioserv-com-en-jurisdictions-jurisdlist`** (low) — OSINT tool: Ioserv.com/en/jurisdictions/jurisdlist/.
-- **`iowa-cities-police-budgets`** (medium) — OSINT tool: Iowa Cities police budgets.
+- **`iowa-cities-police-budgets`** (low) — Use when you need Iowa municipal police-budget figures for context or accountability research — returns a published comparison of police spe
 - **`iowa-courts-online-search`** (high) — Use when you have a `name` and want Iowa state court case history (civil, criminal, traffic) — returns `document-id` (case numbers), `dob`/a
 - **`iowa-judicial-branch`** (high) — Use when you have a `name` and want Iowa state court cases — returns civil, criminal, traffic and other case records with parties, charges a
 - **`iowa-offender-search`** (high) — Use when you have a `name` and want to locate someone in Iowa state correctional custody or supervision — returns incarceration/supervision 
@@ -773,7 +773,7 @@ kind: group-index
 - **`pacer-case-locator`** (high) — Use when you have a `name` and want to find any US federal court cases (civil, criminal, bankruptcy, appellate) a person is party to — retur
 - **`pacer`** (high) — Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs a
 - **`padmapper`** (medium) — OSINT tool: Padmapper.
-- **`panjiva-com`** (medium) — search data on millions of shipments worldwide
+- **`panjiva-com`** (low) — Use when you have a company `name`/`employer-org` in trade and want its import/export shipments — returns bill-of-lading records naming supp
 - **`paperpanda`** (medium) — In recent years it has become increasingly difficult to find scientific articles. To download their full versions, websites require registra
 - **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
 - **`parler-archive-search`** (low) — OSINT tool: Parler Archive Search.

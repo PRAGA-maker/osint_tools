@@ -659,7 +659,7 @@ kind: group-index
 - **`ratemyemployer-canada`** (medium) — Website related to employwer ratings
 - **`ratemyprofessors-north-america`** (medium) — Use when you have a `name` you think teaches at a college and want to confirm their institution and department — returns employer-org, geolo
 - **`ratemyteachers-north-america`** (medium) — Website related to teachers and professor ratings
-- **`rateyourlecturer-united-kingdom`** (medium) — Website related to teachers and professor ratings
+- **`rateyourlecturer-united-kingdom`** (low) — Use when you have a `name` of a UK university lecturer and want student reviews confirming their institution and role — returns ratings tied
 - **`realtor-com-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`recon`** (medium) — OSINT tool: Recon.
 - **`reconspider`** (medium) — OSINT framework for scanning IP addresses, emails, websites, and organizations.

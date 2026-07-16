@@ -51,7 +51,7 @@ kind: group-index
 - **`check-any-vin-free`** (medium) — Use when you have a `vin` (or `vehicle-plate`) and want to decode the vehicle's make/model/year, specs, recalls, and history — returns a phy
 - **`check-any-vin`** (medium) — OSINT tool: Check Any VIN.
 - **`check-if-a-vehicle-is-taxed-and-has-an-mot`** (medium) — OSINT tool: Check if a vehicle is taxed and has an MOT.
-- **`check-that-vin-search`** (medium) — OSINT tool: Check That (Vin Search).
+- **`check-that-vin-search`** (medium) — Use when you have a `vin` and want the vehicle's NMVTIS title history — returns titling states/dates, brands (salvage/junk/flood), odometer,
 - **`check-that-vin`** (medium) — OSINT tool: Check That Vin.
 - **`chronotrains`** (low) — Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel t
 - **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK Civil Aviation Authority database, covering aircrat registration information
@@ -112,7 +112,7 @@ kind: group-index
 - **`jane-s-defence-land-platforms-yearbook`** (medium) — Land-related website that offers a search of the global database of land vehicle types
 - **`janes-all-the-world-s-aircraft-yearbook`** (medium) — Aviation-related website that offers a search of the global database of aircraft types
 - **`janes-fighting-ships-yearbook`** (medium) — Maritime-related website that offers a search of the global database of naval vessel types
-- **`kayak-travel-search-engine`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment,
+- **`kayak-travel-search-engine`** (low) — Use when you have a route/date and want to test whether a claimed trip was feasible — returns flights, schedules, and prices to corroborate 
 - **`kelley-blue-book-for-cars-united-states`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes reviews, awards, and top 10s
 - **`lefranz-geneva-dictators`** (low) — OSINT tool: lefranz/geneva-dictators.
 - **`legrooms-for-google-flights`** (low) — An extension that displays the size of the legroom between the seats next to the flight information.
