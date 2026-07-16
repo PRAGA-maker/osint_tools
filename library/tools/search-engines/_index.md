@@ -660,7 +660,7 @@ kind: group-index
 - **`rapusia`** (medium) — Charitable search engine that supports environmental projects and initiatives.
 - **`ratedpeople-united-kingdom`** (medium) — Website related to tradesman ratings
 - **`ratemyemployer-canada`** (medium) — Website related to employwer ratings
-- **`ratemyprofessors-north-america`** (medium) — Website related to teachers and professor ratings
+- **`ratemyprofessors-north-america`** (medium) — Use when you have a `name` you think teaches at a college and want to confirm their institution and department — returns employer-org, geolo
 - **`ratemyteachers-north-america`** (medium) — Website related to teachers and professor ratings
 - **`rateyourlecturer-united-kingdom`** (medium) — Website related to teachers and professor ratings
 - **`realtor-com-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives

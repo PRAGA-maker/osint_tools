@@ -88,7 +88,7 @@ kind: group-index
 - **`asic-gov-au`** (high) — Use when you have a person `name`, company `name`/ACN or `address` in Australia and want official corporate/registration records — returns c
 - **`association-assq-qc-ca`** (medium) — OSINT tool: Association-assq.qc.ca.
 - **`austcemindex-com`** (high) — Use when you have a `name` of someone buried in Australia (esp. regional NSW) and want their cemetery/headstone record — returns headstone `
-- **`australian-business-register-abn-lookup`** (medium) — Australian Business Number (ABN) lookup by name, business number, or company number
+- **`australian-business-register-abn-lookup`** (medium) — Use when you have a `name` or `employer-org` in Australia and want the official business registration record — returns employer-org, address
 - **`australian-securities-and-investments-commission`** (medium) — ASIC company register search
 - **`austria`** (high) — Use when you have an Austrian company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
 - **`aws-public-datasets`** (low) — OSINT tool: AWS Public Datasets.
@@ -211,7 +211,7 @@ kind: group-index
 - **`cop26-registered-attendees`** (medium) — OSINT tool: COP26 registered attendees.
 - **`coplookup-com`** (medium) — OSINT tool: Coplookup.com.
 - **`coraweb-birth-death-and-marriage-records-australia`** (high) — Use when you have a `name` and an Australian connection and want a curated directory of BDM/vital-record and genealogy sources to search — r
-- **`cornell-legal-information-institute-united-states`** (medium) — Legal-related search engine for legal court cases and documents
+- **`cornell-legal-information-institute-united-states`** (medium) — Use when you have a `name`, statute cite, or legal topic and want authoritative free US law and court opinions — returns document-id, name.
 - **`coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k`** (medium) — OSINT tool: Coronavirus Bailouts: Search Every Company Approved for Federal Loans Over $150k.
 - **`corporate-affairs-registry-database`** (low) — OSINT tool: Corporate Affairs Registry Database.
 - **`corporate-information`** (medium) — OSINT tool: Corporate Information.
@@ -756,7 +756,7 @@ kind: group-index
 - **`opendata-by-socrata`** (low) — OSINT tool: OpenData by Socrata.
 - **`opengazettes`** (low) — OSINT tool: OpenGazettes.
 - **`openleis-com`** (high) — Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `addr
-- **`openoversight`** (medium) — OSINT tool: Openoversight.
+- **`openoversight`** (medium) — Use when you have a `name`, badge, or `image` of a US police officer and want to identify them — returns name, image, dob.
 - **`openownership-org`** (medium) — Wordwide beneficial ownership data.
 - **`openownership-register`** (medium) — OSINT tool: OpenOwnership Register.
 - **`openpayrolls-com`** (medium) — OSINT tool: Openpayrolls.com.

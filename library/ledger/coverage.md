@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8517 total · 2384 full · 6133 stub (27% enriched)
+**Tools:** 8516 total · 2390 full · 6126 stub (28% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3355 · low: 3147 · high: 2015
+medium: 3355 · low: 3147 · high: 2014
 
 ## Tools by trust
-unverified: 4600 · community: 3138 · trusted: 766 · personal: 7 · untrustworthy: 6
+unverified: 4594 · community: 3140 · trusted: 769 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -29,14 +29,14 @@ unverified: 4600 · community: 3138 · trusted: 766 · personal: 7 · untrustwor
 - `maps-geospatial-data` — 2/147
 - `messaging` — 121/218
 - `opsec-investigator-tooling` — 3/567
-- `people-search` — 211/279
+- `people-search` — 211/278
 - `phone` — 128/143
-- `public-records` — 508/1162
-- `search-engines` — 47/989
+- `public-records` — 511/1162
+- `search-engines` — 48/989
 - `social-networks` — 491/904
 - `training-ctf` — 0/12
 - `translation-language` — 0/103
-- `transportation` — 4/237
+- `transportation` — 6/237
 - `username` — 91/105
 
 ## Folders needing a split (>12 leaves — go deeper)
@@ -50,7 +50,7 @@ unverified: 4600 · community: 3138 · trusted: 766 · personal: 7 · untrustwor
 - `library/tools/ai-analysis-automation` — 421 leaves
 - `library/tools/image-video-face` — 402 leaves
 - `library/tools/geolocation` — 343 leaves
-- `library/tools/people-search` — 269 leaves
+- `library/tools/people-search` — 268 leaves
 - `library/tools/documents-metadata` — 266 leaves
 - `library/tools/email` — 224 leaves
 - `library/tools/transportation` — 218 leaves

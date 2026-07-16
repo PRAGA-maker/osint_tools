@@ -160,7 +160,7 @@ kind: group-index
 - **`planefinder`** (low) — Live flight tracker.
 - **`planespotters-net`** (medium) — OSINT tool: Planespotters.net.
 - **`plate-recognizer`** (medium) — OSINT tool: Plate Recognizer.
-- **`plates-mania`** (medium) — OSINT tool: Plates Mania.
+- **`plates-mania`** (medium) — Use when you have a `vehicle-plate` and want user-uploaded photos of the actual vehicle wearing it — returns image, geolocation.
 - **`poctra-com`** (medium) — OSINT tool: Poctra.com.
 - **`ports-com`** (low) — online calculation of travel time between two ports (with optimal path). It's possible to select the speed from 5 to 40 knots. Shows a list 
 - **`ports`** (low) — OSINT tool: Ports.
@@ -206,7 +206,7 @@ kind: group-index
 - **`understanding-war-map-room`** (low) — collection of maps illustrating military conflicts in different countries.
 - **`us-military-bases-interactive-worldwide-map`** (low) — Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more inf
 - **`uscg-maritime-search-investigation-reports-united-states`** (medium) — Maritime-related website that offers a search of a US database of naval vessel types
-- **`uscg-psix-vessel-search-united-states`** (medium) — Maritime-related website that offers a search of a US database of naval vessel types
+- **`uscg-psix-vessel-search-united-states`** (medium) — Use when you have a US vessel `name`, official number, HIN, or call sign and want the documented vessel and its owner — returns name, addres
 - **`vehicle-documents`** (medium) — OSINT tool: Vehicle Documents.
 - **`vehicle-enquiry`** (medium) — OSINT tool: Vehicle Enquiry.
 - **`vehicle-history-reports-get-a-carfax-report`** (medium) — OSINT tool: Vehicle History Reports – Get a CARFAX Report.

@@ -198246,51 +198246,6 @@
     "_file": "library/tools/people-search/british-phone-book.md"
   },
   {
-    "id": "bt-uk",
-    "name": "BT (UK)",
-    "description": "OSINT tool: BT (UK).",
-    "url": "https://www.btexchanges.com canada411(canada)",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/bt-uk.md"
-  },
-  {
     "id": "buscapaginasblancas",
     "name": "BuscaPaginasBlancas",
     "description": "Use when you have Spanish surnames and want listed name/phone/address records — a Python scraper of Spain's Páginas Blancas, now defunct because the source endpoint was permanently shut down.",
@@ -221278,47 +221233,55 @@
   {
     "id": "australian-business-register-abn-lookup",
     "name": "Australian Business Register ABN Lookup",
-    "description": "Australian Business Number (ABN) lookup by name, business number, or company number",
+    "description": "Use when you have a `name` or `employer-org` in Australia and want the official business registration record — returns employer-org, address, name.",
     "url": "http://www.abr.business.gov.au",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving an Australian business/trading name or ABN to its registered entity, status, location, and associated names.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "name"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Completely free government service; no account or login required to search or view results.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A read-only query against a public government register — the entity is not notified. No login means no account trail; standard VPN/clean-browser hygiene is more than sufficient.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Australian Taxation Office / Australian Business Register — authoritative first-party government data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "ABN Lookup",
+      "Australian Business Register",
+      "ABR"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "company-search"
+      "company-search",
+      "public-records",
+      "australia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/australian-business-register-abn-lookup.md"
   },
   {
@@ -227319,51 +227282,55 @@
   {
     "id": "cornell-legal-information-institute-united-states",
     "name": "Cornell Legal Information Institute (United States)",
-    "description": "Legal-related search engine for legal court cases and documents",
+    "description": "Use when you have a `name`, statute cite, or legal topic and want authoritative free US law and court opinions — returns document-id, name.",
     "url": "http://www.law.cornell.edu",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reading the actual text of US federal/state law and Supreme Court opinions for free, and finding the parties/citations in reported cases.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "document-id",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public-service resource operated by Cornell Law School; no account or payment. Funded by donations/sponsorship.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading of published law and public court opinions — nothing here contacts or notifies any subject. No login, no trail beyond normal web browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by Cornell Law School since the early web; a long-standing, authoritative free mirror of US primary law and the Wex legal encyclopedia.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "birdnet",
       "lexcraft-cornell-university-legal-wiki-canada"
     ],
+    "aliases": [
+      "Cornell LII",
+      "Legal Information Institute",
+      "law.cornell.edu",
+      "Wex"
+    ],
+    "tags": [
+      "toddington",
+      "legal",
+      "public-records"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/cornell-legal-information-institute-united-states.md"
   },
   {
@@ -255019,36 +254986,55 @@
   },
   {
     "id": "openoversight",
-    "name": "Openoversight",
-    "description": "OSINT tool: Openoversight.",
+    "name": "OpenOversight",
+    "description": "Use when you have a `name`, badge, or `image` of a US police officer and want to identify them — returns name, image, dob.",
     "url": "https://openoversight.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Identifying US law-enforcement officers from a name, badge/department, or a photo, using a crowd-sourced accountability database.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "image"
+    ],
+    "selectorsOut": [
+      "name",
+      "image",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and volunteer-funded (Lucy Parsons Labs). No account needed to search; submitting photos is optional and free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A passive read of a public transparency database — no subject is notified. It concerns public officials acting in an official capacity; keep use within lawful accountability/research purposes and avoid uploading investigation material you don't want public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Crowd-sourced from public and volunteer-processed records (Lucy Parsons Labs); accurate where curated, but coverage is limited to participating departments.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "OpenOversight",
+      "Lucy Parsons Labs OpenOversight"
+    ],
+    "tags": [
+      "public-records",
+      "police-accountability",
+      "face-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/openoversight.md"
   },
   {
@@ -300617,41 +300603,52 @@
   {
     "id": "ratemyprofessors-north-america",
     "name": "RateMyProfessors (North America)",
-    "description": "Website related to teachers and professor ratings",
+    "description": "Use when you have a `name` you think teaches at a college and want to confirm their institution and department — returns employer-org, geolocation.",
     "url": "http://www.ratemyprofessors.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming that a named person is a professor/instructor and tying them to a specific school and department in North America.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read ratings; an account is only needed to post reviews.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive read of a public reviews site — the professor is not notified you looked. Browse without logging in; a review account would tie your identity to the query.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Student-submitted ratings (Cheddar/owned brand); the school/department linkage is reliable, but the review text is subjective and occasionally spoofed.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RateMyProfessors",
+      "RMP"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "academia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ratemyprofessors-north-america.md"
   },
   {
@@ -366681,43 +366678,51 @@
   {
     "id": "plates-mania",
     "name": "Plates Mania",
-    "description": "OSINT tool: Plates Mania.",
+    "description": "Use when you have a `vehicle-plate` and want user-uploaded photos of the actual vehicle wearing it — returns image, geolocation.",
     "url": "http://platesmania.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding crowd-sourced photos of a specific license plate (and the vehicle/place it was shot) across a large plate-spotting community.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "image",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view. A free account is only needed to upload photos or use some catalog features; no payment involved.",
+    "opsec": "passive",
+    "opsecNote": "Searching is a passive read against a public photo community — no notification to any vehicle owner. Do not upload the plate you are investigating; that would publish your interest and add a photo to the very database you are searching.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large volunteer plate-spotting community (user-uploaded photos); coverage and accuracy vary by country and depend on hobbyists, not official records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "PlatesMania",
+      "platesmania.com"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "transportation",
+      "plate-spotting"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/transportation/plates-mania.md"
   },
   {
@@ -368605,44 +368610,57 @@
   {
     "id": "uscg-psix-vessel-search-united-states",
     "name": "USCG PSIX Vessel Search (United States)",
-    "description": "Maritime-related website that offers a search of a US database of naval vessel types",
+    "description": "Use when you have a US vessel `name`, official number, HIN, or call sign and want the documented vessel and its owner — returns name, address, document-id.",
     "url": "https://cgmix.uscg.mil/PSIX/PSIXSearch.aspx",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving a US-documented vessel to its particulars and documented (managing) owner via the Coast Guard's PSIX register.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public US Coast Guard service; no account required. FOIA is available for records not exposed in the online form.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A passive query against a public federal register — the vessel owner is not notified. No login, so no account trail; standard clean-browser hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the U.S. Coast Guard (CGMIX/PSIX) — authoritative first-party federal vessel-documentation data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "uscg-maritime-search-investigation-reports-united-states"
     ],
+    "aliases": [
+      "USCG PSIX",
+      "Port State Information Exchange",
+      "CGMIX vessel search"
+    ],
+    "tags": [
+      "toddington",
+      "specialty-search",
+      "maritime",
+      "transportation"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/transportation/uscg-psix-vessel-search-united-states.md"
   },
   {

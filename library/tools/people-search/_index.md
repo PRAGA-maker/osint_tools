@@ -41,7 +41,6 @@ kind: group-index
 - **`biographies-net`** (medium) — Use when you have a `name` of a notable-ish person and want a biographical summary — returns birth/death `dob`, profession, family `associat
 - **`biz-yellow-pages-usa-business-and-people-dire`** (high) — OSINT tool: Biz Yellow Pages, USA Business & People Dire.
 - **`british-phone-book`** (high) — Use when you have a UK `name` and want a residential landline listing with address — returns address and phone (landline).
-- **`bt-uk`** (high) — OSINT tool: BT (UK).
 - **`buscapaginasblancas`** (high) — Use when you have Spanish surnames and want listed name/phone/address records — a Python scraper of Spain's Páginas Blancas, now defunct bec
 - **`california-justice-watch`** (high) — Use when you have a `name` for a California DA, judge, or police officer and want documented misconduct/accountability records — returns cas
 - **`campuscareercenter`** (medium) — OSINT tool: CampusCareerCenter.
