@@ -43,7 +43,7 @@ kind: group-index
 - **`f4map`** (low) — F4Map is an interactive 3D map visualization tool that provides detailed rendering of urban landscapes and geographical features.
 - **`fgdc-gp-demos-s-public-fiddles`** (medium) — OSINT tool: fgdc\_gp\_demos's public fiddles.
 - **`findlatitudeandlongitude-com`** (medium) — OSINT tool: findlatitudeandlongitude.com.
-- **`firms`** (medium) — OSINT tool: FIRMS.
+- **`firms`** (low) — Use when you have a `geolocation`/date and want to know if a fire or thermal anomaly was detected there — returns satellite-detected active-
 - **`free-map-tools`** (medium) — OSINT tool: Free Map Tools.
 - **`freemaptools-com`** (medium) — OSINT tool: freemaptools.com.
 - **`gaode-maps`** (low) — Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.

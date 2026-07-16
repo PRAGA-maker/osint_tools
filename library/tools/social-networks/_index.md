@@ -198,7 +198,7 @@ kind: group-index
 - **`finddit-viralharia`** (low) — Reddit search tool (Finddit).
 - **`findface`** (medium) — OSINT tool: FindFace.
 - **`first-tweet`** (high) — Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes brok
-- **`flickr-photopool-contact-network`** (medium) — Analyzes Flickr groups and makes a list of nicknames of participants for further graph analysis in Gephi
+- **`flickr-photopool-contact-network`** (low) — Use when you have a Flickr group (photopool) ID and want its member list for network analysis — returns participant usernames as a graph fil
 - **`flocknet`** (medium) — A tool for finding and filtering your own #Twitter followers. It allows you to find all the people from a certain city or with certain inter
 - **`foller-me`** (high) — Use when you have a Twitter/X `username` and want a quick public-profile analytics snapshot — returns metadata, topics/hashtags, and activit
 - **`follower-wonk-compare`** (medium) — this service allows you to find out how many followers two (or three) Twitter accounts have in common.
@@ -513,7 +513,6 @@ kind: group-index
 - **`reeddit`** (low) — Simplified Reddit web interface.
 - **`regvk-com`** (high) — Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for dee
 - **`related-repos`** (medium) — OSINT tool: Related Repos.
-- **`removeddit`** (medium) — OSINT tool: Removeddit.
 - **`removetweets`** (medium) — In recent weeks, I have been seeing more and more accounts deleting their tweets in whole or in part. You can automate this process with thi
 - **`renren-com`** (high) — Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era acc
 - **`report-tree`** (medium) — OSINT tool: Report Tree.

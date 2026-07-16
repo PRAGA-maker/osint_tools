@@ -507,7 +507,7 @@ kind: group-index
 - **`interment`** (high) — Use when you have a `name` of a possibly-deceased person and want burial/cemetery records — returns death dates, cemetery location, and rela
 - **`international-company-profile-united-kingdom`** (medium) — UK based website providing company credit reports, appraisals, and other business-related information
 - **`international-energy-agency-statistics`** (low) — OSINT tool: International Energy Agency Statistics.
-- **`international-federation-of-accountants-ifac`** (medium) — Business-related web portal to global accountancy knowledge, resources, and news
+- **`international-federation-of-accountants-ifac`** (low) — Use when you have a `name`/`employer-org` in accountancy and want to trace their professional body — returns member-organization directories
 - **`international-labour-comparisons`** (low) — OSINT tool: International Labour Comparisons.
 - **`international-monetary-fund`** (medium) — Website providing data and publications regarding IMF lending, exchange rates, and other economic and financial indicators
 - **`international-trade-center`** (low) — OSINT tool: International Trade Center.

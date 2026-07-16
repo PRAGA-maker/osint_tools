@@ -11,7 +11,7 @@ kind: group-index
 - **`fake-us-identities`** (medium) — Generating synthetic US identity data for persona creation and testing
 - **`just-delete-me`** (medium) — Removing digital footprint, deleting OSINT research accounts, cleaning up persona accounts
 - **`optout-credit-prescreen`** (medium) — Reducing data broker exposure, removing from credit prescreening lists
-- **`panopticlick`** (medium) — Measuring browser fingerprint uniqueness, testing tracker blocking effectiveness
+- **`panopticlick`** (low) — Use when you want to test your investigative browser's fingerprint and tracker-blocking before an op — returns a uniqueness score and detail
 - **`privacy-guides`** (medium) — Selecting privacy tools, building an OSINT operational security toolkit
 - **`privacy-tools`** (medium) — Privacy tool discovery, OPSEC toolkit building
 - **`social-media-fingerprint`** (medium) — Checking social media session exposure, verifying browser compartmentalization effectiveness

@@ -229,7 +229,7 @@ kind: group-index
 - **`duckduckgo-com`** (high) — Use when you have a `name`, `username` or any string and want unpersonalised search results and !bang shortcuts to pivot fast — returns `soc
 - **`ecosia-search-engine`** (medium) — Privacy-friendly search engine that donates 80% of their profit to nonprofit organizations to help plant trees; does not sell data to third 
 - **`ecosia`** (medium) — OSINT tool: Ecosia.
-- **`ecured-cuba`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`ecured-cuba`** (low) — Use when you have a Cuban `name`/place/`employer-org` and want a Spanish-language encyclopedic profile — returns biographical, organizationa
 - **`eddy-the-eco-dog-kidswebtv`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, entertainment for children
 - **`egerin-search-engine-kurdish`** (medium) — Kurdish surface web search engine covering regional results
 - **`ekoru`** (medium) — A charitable search engine that is powered by run-of-river hydro-electricity; uses funds to keep our oceans clean.

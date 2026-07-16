@@ -383,7 +383,6 @@ kind: group-index
 - **`owasp-amass`** (low) — The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and
 - **`ozspeedtest-australia`** (medium) — Analysis tool that assesses the speed of your Internet connection, including download speed and upload speed
 - **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
-- **`papaki-whois-search`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`pentest-tools-com`** (low) — OSINT tool: Pentest-Tools.com.
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
 - **`piwik-web-analytics`** (medium) — Search for information and statistics about any online website using open source software
@@ -574,7 +573,6 @@ kind: group-index
 - **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o
 - **`world-monitor-tech`** (low) — OSINT tool: World Monitor Tech.
 - **`xboxresolver-com`** (low) — OSINT tool: Xboxresolver.com.
-- **`xmundo-argentina`** (medium) — Service provider for registering websites and domain addresses
 - **`xnlinkfinder`** (low) — Tool for discover endpoints for a given target. One of the most versatile tools of this type, with dozens of different settings.
 - **`xurlfind3r`** (low) — Find domain's known URLs from: AlienVault's, Open Threat Exchange, Common Crawl, Github, Intelligence X, URLScan, Wayback Machine
 - **`xypnet-zambia`** (medium) — Service provider for registering websites and domain addresses

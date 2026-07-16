@@ -13,7 +13,7 @@ kind: group-index
 - **`company-data-rex-eu`** (medium) — Cross-border EU company research and registry data lookup
 - **`crunchbase`** (medium) — Startup funding research, investor mapping, and executive tracking
 - **`europages`** (medium) — Finding European suppliers, manufacturers, and B2B companies by industry
-- **`littlesis`** (medium) — Mapping power relationships between corporations, politicians, and elites
+- **`littlesis`** (medium) — Use when you have a `name`/`employer-org` of a public figure or company and want their power network — returns board seats, donations, and r
 - **`opencorporates`** (medium) — Cross-jurisdictional company research and corporate network mapping
 - **`owler`** (medium) — Competitive intelligence and company profile research
 - **`rusprofile`** (medium) — Researching Russian companies, directors, and legal entity registration
