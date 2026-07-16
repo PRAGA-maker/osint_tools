@@ -17,7 +17,7 @@ kind: group-index
 - **`24timezones-com`** (medium) — OSINT tool: 24timezones.com.
 - **`511on-ca`** (low) — OSINT tool: 511on.ca.
 - **`acled-data-crisis-map`** (medium) — OSINT tool: Acled data crisis map.
-- **`acsdg`** (medium) — tool allows you to quickly mark a group of points on the map and then export their geographic coordinates to CSV.
+- **`acsdg`** (medium) — Use when you have map locations and want to measure courses/distances, draw radius circles, and export the points as coordinates — returns g
 - **`airport-webcams`** (low) — OSINT tool: Airport Webcams.
 - **`apify-s-google-maps-scraper`** (medium) — Use when you need to bulk-extract Google Maps place data (names, addresses, phone numbers, reviews, coordinates) around a location or for a 
 - **`apps-skylens-io`** (medium) — Posts with geotags from five social networks at once on one map (Twitter, YouTube, Instagram, Flickr, Vkontakte)
@@ -218,7 +218,6 @@ kind: group-index
 - **`oldmapsonline`** (medium) — World aggregator of old maps from various sources (498,908 maps)
 - **`open-benches`** (medium) — Worldwide map of 22,756 memorial benches (added by users).
 - **`open-street-map`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its features, POIs, and tags — without vendor
-- **`openindoor`** (medium) — A world map where you can see how different buildings look from the inside (number of floors, location of stairways, rooms, doors, etc.). Th
 - **`openinfrastructuremap`** (medium) — Use when an image or area shows power lines, pylons, substations, or telecom masts and you want to identify/confirm a location by its infras
 - **`openlayers`** (low) — Use when you are building a custom geospatial web app and need a powerful JS map library to display layers, imagery, and analysis results — 
 - **`openrailwaymap-2`** (medium) — Use when a photo or area shows railway tracks, stations, signals, or catenary and you want to identify/confirm a location by its rail infras

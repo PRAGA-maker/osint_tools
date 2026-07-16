@@ -68,7 +68,6 @@ kind: group-index
 - **`geomacfinder`** (high) — Use when you have a Wi-Fi access point `mac-address` (BSSID) and want its physical location via a Telegram bot — returns an approximate `geo
 - **`getairplane`** (medium) — Use when you have a `phone` and want to check for associated airline-booking / flight-history records — returns name and geolocation (route)
 - **`getchatlist`** (high) — Use when you have a Telegram `username` or user ID and want to map which groups/channels that account belongs to — returns the list of Teleg
-- **`getsendgifts`** (high) — OSINT tool: GetSendGifts.
 - **`github-com-skarlso-rscrap`** (medium) — OSINT tool: Github.com/Skarlso/rscrap.
 - **`global-telegram-database`** (medium) — OSINT tool: Global Telegram Database.
 - **`groupda-com`** (high) — Use when you have a topic/place/keyword and want to find public WhatsApp & Telegram groups a subject might be in — returns group invite link

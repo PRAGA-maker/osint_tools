@@ -31,7 +31,7 @@ kind: group-index
 - **`slideshare-downloader`** (low) — A very simple and fast tool for downloading Slideshare presentations in PDF format (recommend to choose High quality at once)
 - **`soundscrape`** (low) — Download tracks and playlists from SoundCloud, Bandcamp, MixCloud, Audiomack, Hive com.
 - **`stream-downloader`** (low) — Download streams from different sites
-- **`timeline-js3`** (medium) — Event documentation, chronological narrative, historical timeline creation
+- **`timeline-js3`** (medium) — Use when you have a set of dated events/evidence and want to build an interactive multimedia chronology — returns a shareable/embeddable web
 - **`wenku`** (low) — download documents from Baidu Wenku without registration
 - **`you-get`** (low) — Universal content downloader: - download video from popular sites like #YouTube or #TikTok - scrape webpages and download images - download 
 - **`z-history-dump`** (low) — Open chrome://history/ and download all links from browser history in json. This provides tremendous opportunities for visualization and ana

@@ -283,7 +283,6 @@ kind: group-index
 - **`doe-data-explorer`** (medium) — Discoverable database of non-text, or data, information in the Department of Energy
 - **`drug-enforcement-administration`** (medium) — DEA website providing reports, publications, facts and other resources
 - **`dsc-data-science-search-engine`** (low) — OSINT tool: DSC Data Science Search Engine.
-- **`duedil-united-kingdom`** (medium) — Business-related platform that provides information on over 40 million companies including company name search and director name search
 - **`dutchess-and-ulster-bridge-safety-ratings-2015`** (medium) — OSINT tool: Dutchess and Ulster bridge safety ratings 2015.
 - **`e-gov-kw`** (high) — Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warr
 - **`e-justice-europa-eu`** (high) — Use when you have a `name` or `address` and a property question in an EU country and want the official routing to that country's land/proper

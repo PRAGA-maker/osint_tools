@@ -438,7 +438,6 @@ kind: group-index
 - **`keywordpeopleuse`** (low) — Type in a keyword and see what questions mentioning it are being asked on Quora and Reddit. The service is also able to analyse Google Autoc
 - **`keywordtool-io`** (low) — keyword matching for Google, YouTube, Amazon, Ebay, Bing, Instagram, Twitter
 - **`keywordtool`** (low) — OSINT tool: KeywordTool.
-- **`kickasstorrents`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
 - **`kiddle`** (low) — Kid-friendly search engine.
 - **`kidoz-mobile-network-for-kids`** (low) — Content discovery made for kids to ensure safe browsing
 - **`kidrex`** (low) — Kid-friendly search engine.
@@ -764,7 +763,6 @@ kind: group-index
 - **`sploitus`** (medium) — OSINT tool: sploitus.
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
 - **`springer`** (low) — OSINT tool: Springer.
-- **`sputtr`** (medium) — OSINT tool: Sputtr.
 - **`stackoverflow`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 - **`stacksearch`** (medium) — OSINT tool: Stacksearch.
 - **`startpage-parser`** (low) — Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python to

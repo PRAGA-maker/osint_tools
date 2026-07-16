@@ -697,7 +697,7 @@ kind: group-index
 - **`tweet-tunnel`** (medium) — tool for quick and comfortable viewing old tweet's of someone account
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
 - **`tweetdeck`** (medium) — OSINT tool: Tweetdeck.
-- **`tweetfeed`** (medium) — List of IOCs shared today by the #infosec community at Twitter: domains, URLs, IPs, SHA256/MD5 hashes
+- **`tweetfeed`** (low) — Use when you have a suspicious domain, URL, or IP and want to check whether the infosec community has flagged it as a live IOC — returns mat
 - **`tweetpaths`** (medium) — OSINT tool: Tweetpaths.
 - **`tweetreach`** (medium) — OSINT tool: Tweetreach.
 - **`tweeview`** (medium) — Twitter conversation visualization (beta)

@@ -77,7 +77,6 @@ kind: group-index
 - **`dictation-online-dictation-tool`** (low) — Tool for Chrome browser that transcribes your speech to text in real time
 - **`diffnow-com`** (low) — Compares and finds differences in text, URL (html code downloaded by link), office documents (doc, docx, xls, xlsx, ppt, pptx), source code 
 - **`diigo`** (low) — Website related to social networking and bookmarking activities allowing users to tag and share bookmarked pages with other users in the com
-- **`docjax`** (medium) — OSINT tool: docjax.
 - **`documentcloud`** (low) — OSINT tool: DocumentCloud.
 - **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
 - **`doppelme`** (low) — Online avatar creator

@@ -390,7 +390,7 @@ kind: group-index
 - **`piwik-web-analytics`** (medium) — Search for information and statistics about any online website using open source software
 - **`planethoster-canada`** (medium) — Service provider for registering websites and domain addresses
 - **`poodle-check`** (low) — OSINT tool: Poodle Check.
-- **`privacy-net-privacy-analyzer`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
+- **`privacy-net-privacy-analyzer`** (low) — Use when you want to see exactly what your own browser/IP leaks before running an investigation — returns your ip-address, browser fingerpri
 - **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
 - **`ptrarchive-com`** (low) — search by 230 billion DNS records retrieved from 2008 to the present.
 - **`punkspider`** (low) — OSINT tool: Punkspider.
@@ -426,7 +426,7 @@ kind: group-index
 - **`ronin-recon`** (low) — Recursive recon engine and framework for subdomains, DNS, port scanning, and TLS certs.
 - **`sameid`** (low) — OSINT tool: SameID.
 - **`samy-pl`** (medium) — OSINT tool: samy.pl.
-- **`scamadvisor`** (medium) — Allows you to search for a website and check whether it is a scam
+- **`scamadvisor`** (medium) — Use when you have a domain, phone, IBAN, or crypto wallet and want a fast trust/scam assessment plus site metadata — returns a trust score a
 - **`scan4all`** (low) — 15000+PoCs; 20 kinds of application password crack; 7000+Web fingerprints; 146 protocols and 90000+ rules Port scanning; Fuzzing and many ma
 - **`scrape-api`** (low) — Proxy API for Web Scraping
 - **`scrappy`** (low) — One of the easiest to learn web scrapers I've seen (and quite fast at that). It allows you to extract all URLs, table fields, lists and any 
