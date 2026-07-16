@@ -467,7 +467,6 @@ kind: group-index
 - **`hoovers`** (medium) — OSINT tool: Hoovers.
 - **`houseprices-io`** (high) — Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns
 - **`how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have`** (medium) — OSINT tool: How many untested rape kits does your city police department or county sheriff's office have?.
-- **`hudwayglass-com`** (high) — OSINT tool: hudwayglass.com.
 - **`human-development-reports`** (low) — OSINT tool: Human Development Reports.
 - **`i-cyprus-com`** (high) — Use when you have a company or director `name` in Cyprus and want corporate-registry detail — returns directors, shareholders, secretaries, 
 - **`iaea-online-org`** (high) — Use when you need to find or verify a UK/international independent automotive engineer assessor by location/specialty — returns a matching p
@@ -591,7 +590,7 @@ kind: group-index
 - **`list-of-all-criminal-offences-a-to-z`** (high) — Use when you have a charge/offence term (e.g. from a court listing) and want to understand what it means — an Australian legal reference glo
 - **`list-of-criminal-charges-findlaw`** (high) — Use when you have a charge or offense name from a court/arrest record and want to understand what it means — returns plain-English legal def
 - **`list-org`** (medium) — OSINT tool: list-org.
-- **`lists-of-united-states-state-prisons-wikipedia`** (high) — OSINT tool: Lists of United States state prisons - Wikipedia.
+- **`lists-of-united-states-state-prisons-wikipedia`** (high) — Use when you have a state or a facility `name` and want the roster/location of that state's prisons — returns facility names and `address`/l
 - **`lithuania`** (high) — Use when you have a company name, person name or address and want official Lithuanian company records — returns registration code, legal sta
 - **`little-rock-ar-crime-search`** (high) — Use when you have an `address` or `geolocation` in Little Rock, AR and want reported crime incidents at/near it — returns incident records (
 - **`liveroots`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries

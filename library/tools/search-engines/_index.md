@@ -324,7 +324,6 @@ kind: group-index
 - **`google-blog-directory`** (medium) — Website that provides a search engine that searches blogs; search by topoc, language, region, or type
 - **`google-books-ngram-viewer`** (low) — OSINT tool: Google Books Ngram Viewer.
 - **`google-code`** (medium) — Google code search engine
-- **`google-com-76`** (high) — OSINT tool: google.com.
 - **`google-com-77`** (high) — Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and docu
 - **`google-com-81`** (high) — Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined pa
 - **`google-com-82`** (high) — Use when you have a `name` or topic and want to find published datasets that may list people — Google Dataset Search indexes datasets across

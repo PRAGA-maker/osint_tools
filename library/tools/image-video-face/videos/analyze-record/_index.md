@@ -9,7 +9,6 @@ kind: group-index
 ## Skills here
 - **`frame-by-frame-for-youtube`** (high) — Use when you need to step through a YouTube video one frame at a time to read a sign, plate, face, or transient on-screen detail — returns a
 - **`hooktube`** (low) — Use only as historical reference — a now-defunct YouTube proxy/front-end that once let you view and download YouTube videos without the offi
-- **`print-storyboard-from-youtube`** (high) — OSINT tool: Print Storyboard from Youtube.
 - **`print-youtube-storyboard-instructions`** (high) — Use when you have a YouTube video and want a single contact-sheet of its frames without downloading the whole video — returns a poster of st
 - **`tubechop`** (low) — Use when you have a YouTube video (`social-profile`/URL) and want to cite or share a precise segment of it — returns a time-coded clip link 
 - **`yasiv-youtube`** (high) — Defunct — was a YouTube related-video graph visualiser; the underlying API was shut down in 2020, so it no longer functions.

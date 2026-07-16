@@ -73,7 +73,6 @@ kind: group-index
 - **`botometer-by-osome`** (low) — OSINT tool: Botometer by OSoMe.
 - **`botometer`** (medium) — OSINT tool: Botometer.
 - **`botslayer`** (low) — OSINT tool: BotSlayer.
-- **`bottlenose`** (high) — OSINT tool: Bottlenose.
 - **`brandwatch`** (high) — Use when you have a `name`, handle, or keyword and want enterprise-scale social listening across platforms — returns aggregated mentions, se
 - **`bsky-social-2`** (high) — Use when you have a `username`/`name` and want their Bluesky presence — returns the profile, posts, and follow graph (`social-profile`) on a
 - **`bsky-social`** (medium) — Use when you have a `username` or `name` and want to find a Bluesky presence — returns a `social-profile` with posts, handle, bio and follow
@@ -802,7 +801,6 @@ kind: group-index
 - **`wikiwho`** (medium) — Database of edits made to #Wikipedia using IP ranges of organizations, government agencies and companies (FBI, NATO, European Parliament, et
 - **`wisdom-of-reddit`** (low) — Curated Reddit quotes and comments.
 - **`wiza-co`** (medium) — Use when you have a `name` + `employer-org` or a LinkedIn `social-profile` and want a verified work `email` and `phone` — returns `email`, `
-- **`wolfram-alpha-facebook-report`** (high) — OSINT tool: Wolfram Alpha Facebook Report.
 - **`worldcam-search-instagram-by-location`** (high) — Use when you have a `geolocation`/`address` and want to see public Instagram photos taken there — returns images, poster usernames and socia
 - **`www-linkedin-com-pub-dir-people-search`** (high) — Use when you have a `name` (optionally + employer) and want to find a subject's LinkedIn profile — returns their profile, current/past emplo
 - **`x-com-3`** (high) — Use when you want curated LinkedIn/people-finding OSINT technique tips from the @cyb_detective account — returns pointers to `social-profile

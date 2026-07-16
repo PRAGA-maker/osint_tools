@@ -7,7 +7,7 @@ kind: group-index
 # image-video-face/videos
 
 ## Sub-groups
-- **`analyze-record/`** — 7 skill(s) below.
+- **`analyze-record/`** — 6 skill(s) below.
 - **`search/`** — 10 skill(s) below.
 
 

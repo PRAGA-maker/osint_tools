@@ -11,16 +11,14 @@ kind: group-index
 - **`documents/`** — 12 skill(s) below.
 - **`fact-checking-tools/`** — 5 skill(s) below.
 - **`fonts/`** — 4 skill(s) below.
-- **`images/`** — 53 skill(s) below.
+- **`images/`** — 52 skill(s) below.
 - **`reverse-media-search/`** — 2 skill(s) below.
 - **`source-verification/`** — 3 skill(s) below.
-- **`videos/`** — 17 skill(s) below.
+- **`videos/`** — 16 skill(s) below.
 - **`webcams/`** — 3 skill(s) below.
 
 ## Skills here
 - **`360cities-net-map`** (medium) — world map of panoramic (360 degrees) images
-- **`6mzld2-csb-app`** (high) — OSINT tool: 6mzld2.csb.app.
-- **`addicting-games`** (high) — Website related to social networking and players of over 1,000 games on this website
 - **`age-toolpie-com`** (medium) — Use when you have a face photo and want a quick automated age estimate to sanity-check whether an image plausibly matches a missing person's
 - **`ailab-wondershare-com-2`** (low) — Use when you need to strip the background off a subject photo so the face/clothing is isolated before running reverse-image search or compar
 - **`ailab-wondershare-com-3`** (medium) — Use when a low-resolution photo of a subject is too small/blurry to search and you want an AI upscale to recover detail before reverse-image
@@ -121,7 +119,7 @@ kind: group-index
 - **`find-any-film`** (low) — Use when you have a film or TV title and want to confirm it exists and find where it can legally be watched in the UK — returns release meta
 - **`find-youtube-video`** (medium) — OSINT tool: Find YouTube Video.
 - **`findpiclocation-com`** (high) — Use when you have a photo and need to estimate where it was taken (image geolocation) to localize a missing person or a sighting.
-- **`findsounds`** (high) — Multi-media search engine focusing on sounds stored on multiple databases
+- **`findsounds`** (low) — Use when you have a distinctive sound in a recording/video and want to source or identify a matching audio sample on the web — returns downl
 - **`fireshot-addons-mozilla-org`** (medium) — Use when you need to capture a full-page screenshot of a web profile or post to preserve evidence before it is edited or deleted.
 - **`fix-picture-image-conversion-tool`** (high) — Use when you have an `image` in an awkward format (HEIC, RAW, TIFF, WebP) and want a clean JPG/PNG at a controlled size — returns a converte
 - **`flexclip`** (medium) — Get video metadata
@@ -133,7 +131,6 @@ kind: group-index
 - **`foxmonitor`** (medium) — OSINT tool: FoxMonitor.
 - **`frame-by-frame`** (medium) — OSINT tool: Frame by Frame.
 - **`free-music-search`** (low) — Use when you need to search for and identify a song or music track by name/artist online — returns links to matching audio/sources; marginal
-- **`freeimages`** (high) — Website related to social networking with photo and image galleries, posting and sharing services
 - **`full-fact`** (medium) — OSINT tool: Full Fact.
 - **`fulldp-co-2`** (high) — Use when you have a TikTok username/profile and need the full-resolution profile picture (TikTok serves a thumbnail) — returns a downloadabl
 - **`fulldp-co-3`** (high) — Use when you have a VK (VKontakte) profile and need the full-resolution profile picture rather than the cropped thumbnail — returns a downlo
