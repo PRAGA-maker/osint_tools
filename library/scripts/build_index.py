@@ -160,7 +160,9 @@ def coverage_report(tools, strategies):
         leaves = [f for f in files if f.endswith(".md") and f != "_index.md"]
         if len(leaves) > 12:
             fat.append((os.path.relpath(dirpath, C.ROOT).replace("\\", "/"), len(leaves)))
-    fat.sort(key=lambda x: -x[1])
+    # secondary key on path so equal-count folders order deterministically across
+    # platforms (os.walk order differs Windows vs Linux — would fail the CI drift gate)
+    fat.sort(key=lambda x: (-x[1], x[0]))
 
     src = {}
     sp = os.path.join(C.LEDGER_DIR, "sources.json")
