@@ -106208,51 +106208,6 @@
     "_file": "library/tools/email/posteo-de.md"
   },
   {
-    "id": "privatemail",
-    "name": "PrivateMail",
-    "description": "Service provider for sending and receiving private emails",
-    "url": "https://privatemail.com",
-    "category": "email",
-    "path": [
-      "email"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "email"
-    ],
-    "selectorsOut": [
-      "email",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "email-addresses"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/email/privatemail.md"
-  },
-  {
     "id": "privnote-com",
     "name": "privnote.com",
     "description": "Use when you need to send a one-time, self-destructing encrypted note — an operational tool for sharing tips/links securely, not an email-lookup utility.",
@@ -121605,9 +121560,7 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
-    "relatedTools": [
-      "rapidapi-com"
-    ],
+    "relatedTools": null,
     "_file": "library/tools/geolocation/geoprotests-api.md"
   },
   {
@@ -147419,52 +147372,6 @@
     "_file": "library/tools/image-video-face/openi-nlm-nih-gov.md"
   },
   {
-    "id": "openphoto",
-    "name": "Openphoto",
-    "description": "Website related to social networking with photo and image galleries, posting and sharing services",
-    "url": "http://openphoto.net",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/openphoto.md"
-  },
-  {
     "id": "originality-ai",
     "name": "originality.ai",
     "description": "Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an AI-likelihood and plagiarism score.",
@@ -150516,55 +150423,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/images/search/reveye-reverse-image-search.md"
-  },
-  {
-    "id": "rock-star-games",
-    "name": "Rock Star Games",
-    "description": "Website related to social networking and players of over 50 games on this website",
-    "url": "http://www.rockstargames.com/games",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "rockstargames-socialclub-player-search"
-    ],
-    "_file": "library/tools/image-video-face/rock-star-games.md"
   },
   {
     "id": "rootabout",
@@ -164319,42 +164177,6 @@
     "_file": "library/tools/messaging/chatvisualizer-com.md"
   },
   {
-    "id": "clerkbot",
-    "name": "ClerkBot",
-    "description": "OSINT tool: ClerkBot.",
-    "url": "https://t.me/clerksecretbot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/clerkbot.md"
-  },
-  {
     "id": "commentgram-cse",
     "name": "Commentgram CSE",
     "description": "search by Telegram comments",
@@ -164689,42 +164511,6 @@
     "_file": "library/tools/messaging/datxpert.md"
   },
   {
-    "id": "dcallsbot",
-    "name": "dCallsBot",
-    "description": "OSINT tool: dCallsBot.",
-    "url": "https://t.me/dCallsBot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/dcallsbot.md"
-  },
-  {
     "id": "debirdify",
     "name": "Debirdify",
     "description": "This tool automatically finds Fediverse/Mastodon accounts of people you follow on Twitter",
@@ -164760,42 +164546,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/messaging/debirdify.md"
-  },
-  {
-    "id": "detectiva",
-    "name": "Detectiva",
-    "description": "OSINT tool: Detectiva.",
-    "url": "http://detectiva.link/rezervBot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/detectiva.md"
   },
   {
     "id": "disboard-org",
@@ -165580,42 +165330,6 @@
     "_file": "library/tools/messaging/exploring-the-jihadi-telegram-world-a-brief-overview-european-eye-on-radicalization.md"
   },
   {
-    "id": "eyeton",
-    "name": "EyeTON",
-    "description": "OSINT tool: EyeTON.",
-    "url": "https://telegram.me/istoneyebot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/eyeton.md"
-  },
-  {
     "id": "fake-whatsapp-chat-generator",
     "name": "Fake WhatsApp Chat Generator",
     "description": "OSINT tool: Fake WhatsApp Chat Generator.",
@@ -165934,37 +165648,53 @@
   {
     "id": "geomacfinder",
     "name": "GeoMacFinder",
-    "description": "OSINT tool: GeoMacFinder.",
+    "description": "Use when you have a Wi-Fi access point `mac-address` (BSSID) and want its physical location via a Telegram bot — returns an approximate `geolocation`.",
     "url": "https://t.me/geomacbot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Geolocating a Wi-Fi access point from its MAC/BSSID by querying wardriving databases through a Telegram bot.",
+    "selectorsIn": [
+      "mac-address"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic BSSID lookups; higher volume or richer results may be credit-gated inside the bot.",
+    "opsec": "passive",
+    "opsecNote": "You query a MAC address against a wardriving database, not the target's device or network, so it does not touch the subject. The bot operator logs your queries — run from a sock-puppet Telegram account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "An anonymous Telegram bot fronting Wi-Fi geolocation databases (e.g. WiGLE-style datasets); coverage and accuracy are unverified and depend on prior wardriving of that AP.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "geomacbot",
+      "Geo Mac Finder"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "wifi-geolocation",
+      "mac-address"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/geomacfinder.md"
   },
   {
@@ -166540,42 +166270,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/messaging/informer-telegram.md"
-  },
-  {
-    "id": "insight",
-    "name": "Insight",
-    "description": "OSINT tool: Insight.",
-    "url": "https://t.me/ibhld_bot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/insight.md"
   },
   {
     "id": "instaanonym",
@@ -167196,48 +166890,6 @@
     "_file": "library/tools/messaging/leak-osint.md"
   },
   {
-    "id": "letsview-com",
-    "name": "letsview.com",
-    "description": "OSINT tool: letsview.com.",
-    "url": "https://letsview.com/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "messengerapps",
-      "Messenger Apps"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/letsview-com.md"
-  },
-  {
     "id": "line-me",
     "name": "line.me",
     "description": "Use when you have a `phone` number or LINE ID (`username`) for a subject likely in Japan/Taiwan/Thailand and want to confirm a LINE account and its display profile — returns a `social-profile` (display name, photo, status).",
@@ -167680,37 +167332,53 @@
   {
     "id": "mnp-bot",
     "name": "mnp_bot",
-    "description": "OSINT tool: mnp_bot.",
+    "description": "Use when you have a `phone` number and want its geographic region and mobile carrier via a Telegram bot — returns region/operator context on the number.",
     "url": "https://t.me/mnp_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying the region and (ported) mobile operator behind a phone number via a Telegram bot.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "phone",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free region/operator lookups; no payment required for the basic result.",
+    "opsec": "passive",
+    "opsecNote": "Resolves number metadata (region + carrier) against numbering databases, not the subscriber, so it does not ping or alert the phone's owner. The bot operator still logs your queries — use a sock-puppet Telegram account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "An anonymous Telegram bot returning MNP (mobile number portability) region/operator data; accurate for numbering-plan lookups but the operator and data source are undocumented.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ru"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "mnp_bot",
+      "MNP bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "phone",
+      "carrier-lookup"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/mnp-bot.md"
   },
   {
@@ -167837,37 +167505,56 @@
   {
     "id": "neuroautosearch",
     "name": "NEUROAUTOSEARCH",
-    "description": "OSINT tool: NEUROAUTOSEARCH.",
+    "description": "Use when you have a Russian `vehicle-plate` or `vin` and want owner/vehicle history details via a Telegram bot — returns vehicle data and possible `associate` links.",
     "url": "https://t.me/noblackAuto_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Looking up a Russian vehicle by licence plate/VIN through a Telegram bot's aggregated automobile database.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "vin"
+    ],
+    "selectorsOut": [
+      "name",
+      "vehicle-plate",
+      "vin",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic lookups; deeper/full reports are typically paywalled or credit-gated inside the bot.",
+    "opsec": "active",
+    "opsecNote": "You must query from a Telegram account, and the bot operator logs every plate/VIN you submit. Use a dedicated sock-puppet Telegram account and number; never query from a personal account. Data provenance is a grey-market aggregation of leaked/scraped Russian vehicle registries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "An anonymous Russian-language Telegram \"auto search\" bot aggregating unofficial vehicle data; accuracy and legality of its sources are unverified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ru"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "noblackAuto_bot",
+      "noblack Auto"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "russia",
+      "vehicle-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/neuroautosearch.md"
   },
   {
@@ -168026,42 +167713,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/messaging/opendatauabot.md"
-  },
-  {
-    "id": "openload-bot",
-    "name": "OPENLOAD Bot",
-    "description": "OSINT tool: OPENLOAD Bot.",
-    "url": "https://t.me/OPENLOADTOPBOT",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/openload-bot.md"
   },
   {
     "id": "osint-discord-resources-github-com",
@@ -168223,42 +167874,6 @@
     "_file": "library/tools/messaging/osint-tool-for-tg.md"
   },
   {
-    "id": "osintkit",
-    "name": "Osintkit",
-    "description": "OSINT tool: Osintkit.",
-    "url": "https://t.me/osintkit_check_bot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/osintkit.md"
-  },
-  {
     "id": "osintme-com",
     "name": "OSINTme – Ultimate Guide to Telegram OSINT",
     "description": "Use when you have a Telegram `username`/`phone` and want a vetted methodology and toolset for investigating Telegram users, groups, and channels — returns techniques and tool pointers yielding social-profiles.",
@@ -168368,42 +167983,6 @@
       "osintteam-blog-2"
     ],
     "_file": "library/tools/messaging/osintteam-blog-3.md"
-  },
-  {
-    "id": "passwordsearch",
-    "name": "PasswordSearch",
-    "description": "OSINT tool: PasswordSearch.",
-    "url": "https://telegram.me/PasswordSearchBot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/passwordsearch.md"
   },
   {
     "id": "pimeyes",
@@ -168561,51 +168140,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/messaging/prankshit-com-2.md"
-  },
-  {
-    "id": "rapidapi-com",
-    "name": "rapidapi.com",
-    "description": "OSINT tool: rapidapi.com.",
-    "url": "https://rapidapi.com/inutil-inutil-default/api/whatsapp-osint",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "whatsapp",
-      "WhatsApp"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "geoprotests-api"
-    ],
-    "_file": "library/tools/messaging/rapidapi-com.md"
   },
   {
     "id": "readergram-com",
@@ -168899,42 +168433,6 @@
     "_file": "library/tools/messaging/sangmatainfo-bot.md"
   },
   {
-    "id": "saveyoutubebot",
-    "name": "SaveYoutubeBot",
-    "description": "OSINT tool: SaveYoutubeBot.",
-    "url": "https://t.me/SaveYoutubeBot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/saveyoutubebot.md"
-  },
-  {
     "id": "search-buzz-im",
     "name": "Search.buzz.im",
     "description": "OSINT tool: Search.buzz.im.",
@@ -168971,37 +168469,56 @@
   {
     "id": "search-firm-bot",
     "name": "Search_firm_bot",
-    "description": "OSINT tool: Search_firm_bot.",
+    "description": "Use when you have a Russian `employer-org` name/ID and want registry, bank, and postal-index details via a Telegram bot — returns org records and `address`/`associate`.",
     "url": "https://t.me/Search_firm_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Looking up Russian organizations, banks, and postal codes through a Telegram bot (\"Поиск организаций\").",
+    "selectorsIn": [
+      "employer-org",
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic organization/bank/postcode lookups; extended reports may be credit-gated inside the bot.",
+    "opsec": "passive",
+    "opsecNote": "Queries target companies/registries, not the person directly, so it is comparatively low-touch. Still, the bot operator logs your queries — run it from a sock-puppet Telegram account rather than a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "An anonymous Russian-language Telegram bot mirroring organization/bank/postal data; underlying sources and freshness are not documented or verified.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "ru"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Search_firm_bot",
+      "Поиск организаций"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "russia",
+      "corporate-records"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/search-firm-bot.md"
   },
   {
@@ -169740,37 +169257,53 @@
   {
     "id": "surftg-bot",
     "name": "Surftg_bot",
-    "description": "OSINT tool: Surftg_bot.",
+    "description": "Use when you have a `name`, `username`, or keyword and want to find matching Telegram messages/channels via a search bot — returns `social-profile` and message leads.",
     "url": "https://t.me/surftg_bot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Full-text searching public Telegram messages and channels for a name, username, or keyword from inside Telegram.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free keyword/username searches with result limits; heavier use or full result sets may be credit-gated.",
+    "opsec": "passive",
+    "opsecNote": "Searches already-public Telegram content, not the subject's account, so it does not alert them. The bot operator logs your search terms — run from a sock-puppet Telegram account, especially since your queries reveal who/what you are investigating.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "An anonymous Russian-language Telegram search bot (\"Поиск по телеграм\"); index coverage and freshness are undocumented, and results are only as complete as its crawl.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "surftg_bot",
+      "Surf TG search"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "message-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/surftg-bot.md"
   },
   {
@@ -171781,48 +171314,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/messaging/teletracker.md"
-  },
-  {
-    "id": "tg-me-com",
-    "name": "tg-me.com",
-    "description": "OSINT tool: tg-me.com.",
-    "url": "https://tg-me.com/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram",
-      "Telegram"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/tg-me-com.md"
   },
   {
     "id": "tginfo-me",
@@ -198418,7 +197909,6 @@
     "enrichment": "stub",
     "relatedTools": [
       "get-user-info",
-      "item",
       "people-search-results-vk",
       "vk",
       "vk-com",
@@ -205573,7 +205063,6 @@
     "relatedTools": [
       "community-search",
       "get-user-info",
-      "item",
       "vk",
       "vk-com",
       "vk-com-2",
@@ -211841,49 +211330,6 @@
       "familytreenow"
     ],
     "_file": "library/tools/phone/family-tree-now.md"
-  },
-  {
-    "id": "faxtastic-co-uk",
-    "name": "faxtastic.co.uk",
-    "description": "OSINT tool: faxtastic.co.uk.",
-    "url": "http://www.faxtastic.co.uk/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mobilephone",
-      "Mobile & Phone Related"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/faxtastic-co-uk.md"
   },
   {
     "id": "fcc-io",
@@ -220133,40 +219579,6 @@
     "_file": "library/tools/public-records/arkansas-department-of-correction.md"
   },
   {
-    "id": "arrest-bookings-search-and-report",
-    "name": "Arrest Bookings Search and Report",
-    "description": "OSINT tool: Arrest Bookings Search and Report.",
-    "url": "https://b2.caspio.com/dp/a1a3100009b7083c53a9405f8c6b",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/arrest-bookings-search-and-report.md"
-  },
-  {
     "id": "arrest-warrants",
     "name": "BlackBookOnline — Arrest Warrants",
     "description": "Use when you have a `name` and want to find an outstanding US arrest warrant — a directory routing you to free state/county warrant searches, returning name, dob, and document-id (warrant/case) leads.",
@@ -225373,51 +224785,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/general-info-and-news/commercial-register-worldwide.md"
-  },
-  {
-    "id": "commonlawcourt-com",
-    "name": "commonlawcourt.com",
-    "description": "OSINT tool: commonlawcourt.com.",
-    "url": "https://www.commonlawcourt.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "genealogybdmANDwills",
-      "Genealogy Linked Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/commonlawcourt-com.md"
   },
   {
     "id": "companies-and-orgs-search-engine",
@@ -252993,35 +252360,54 @@
   {
     "id": "ohio-obituaries-death-and-marriage-search",
     "name": "Ohio obituaries, death & marriage Search",
-    "description": "OSINT tool: Ohio obituaries, death & marriage Search.",
+    "description": "Use when you have a `name` (and optionally a death year) and want an Ohio obituary/death/marriage record — returns a `dob`/death-date lead and `associate` (kin) names.",
     "url": "https://c0abe732.caspio.com/dp/679e5000cbc8c6a587bb42efa9ef",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching a large index of Ohio obituaries, death, and marriage notices (1810s–present) by surname.",
+    "selectorsIn": [
+      "name",
+      "dob"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The index is free to search online; obtaining the underlying obituary document is done through partner libraries (some free, some fee-based) and is a separate step.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public library-consortium index search; you query historical records, not a living person's account, so it is fully passive and leaks nothing to any subject. No login is required to search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A library/genealogy consortium index (surfaced via a Caspio-hosted datapage) aggregating 3.7M+ Ohio obituary/death/marriage notices; index is curated but individual entries should be confirmed against the source notice.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Ohio Obituary Index",
+      "Ohio death and marriage search"
+    ],
+    "tags": [
+      "vital-records",
+      "obituaries",
+      "genealogy",
+      "ohio"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ohio-obituaries-death-and-marriage-search.md"
   },
   {
@@ -255690,40 +255076,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/pappers-fr.md"
-  },
-  {
-    "id": "parallelsearch-case-law",
-    "name": "Parallelsearch case law",
-    "description": "OSINT tool: Parallelsearch case law.",
-    "url": "https://parallelsearch.casetext.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/parallelsearch-case-law.md"
   },
   {
     "id": "parler-archive-search",
@@ -267568,49 +266920,6 @@
     "_file": "library/tools/public-records/ukbmd-org-uk.md"
   },
   {
-    "id": "ukdatabase",
-    "name": "UKDatabase",
-    "description": "OSINT tool: UKDatabase.",
-    "url": "https://uk-database.net",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "court",
-      "inmate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/ukdatabase.md"
-  },
-  {
     "id": "ukrlp-co-uk",
     "name": "UK Register of Learning Providers (UKRLP)",
     "description": "Use when you have a training/education provider `name` or UKPRN and want its official registration — returns `employer-org`, `address`, contact and `document-id` (UKPRN).",
@@ -271014,51 +270323,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/employee-profiles-and-resumes/xing.md"
-  },
-  {
-    "id": "xlamma-com",
-    "name": "xlamma.com",
-    "description": "OSINT tool: xlamma.com.",
-    "url": "https://xlamma.com/uk",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professionlicensing",
-      "Profession & Licensing Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/xlamma-com.md"
   },
   {
     "id": "xrefer",
@@ -300590,9 +299854,7 @@
     "source": "toddington-resources",
     "lastVerified": "",
     "enrichment": "stub",
-    "relatedTools": [
-      "rock-star-games"
-    ],
+    "relatedTools": null,
     "_file": "library/tools/search-engines/rockstargames-socialclub-player-search.md"
   },
   {
@@ -321852,7 +321114,6 @@
     "enrichment": "stub",
     "relatedTools": [
       "community-search",
-      "item",
       "people-search-results-vk",
       "vk",
       "vk-com",
@@ -327705,51 +326966,6 @@
     "_file": "library/tools/social-networks/instanavigation.md"
   },
   {
-    "id": "instasaver",
-    "name": "InstaSaver",
-    "description": "Save or download posts from Instagram",
-    "url": "http://www.instasaverepost.com/instasave-repost-for-instagram",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "social-media"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/instasaver.md"
-  },
-  {
     "id": "instatracker",
     "name": "instatracker",
     "description": "Instagram tracking script that logs changes to an account (followers, following, posts, bio).",
@@ -328129,52 +327345,6 @@
     "_file": "library/tools/social-networks/invidious-instances.md"
   },
   {
-    "id": "item",
-    "name": "Дезертир",
-    "description": "OSINT tool: Дезертир.",
-    "url": "http://vk.com/app3046467",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "vkontakte"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "community-search",
-      "get-user-info",
-      "people-search-results-vk",
-      "vk",
-      "vk-com",
-      "vk-com-2",
-      "vk-community-search",
-      "vk-people-search"
-    ],
-    "_file": "library/tools/social-networks/item.md"
-  },
-  {
     "id": "izuum",
     "name": "Izuum",
     "description": "Use when you have an Instagram `username` and want to view/enlarge their (public) profile picture — returns image, social-profile. Now largely a bio/quote blog; treat the DP-viewer as degraded.",
@@ -328230,46 +327400,55 @@
   {
     "id": "jesus-social",
     "name": "Jesus Social",
-    "description": "Christian social networking website",
+    "description": "Use when you have a `name` or `username` and want to check for a profile on this niche Christian social network — returns a `social-profile`.",
     "url": "https://www.jesus.social",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a subject's profile on a niche Christian faith-community social network by name or username.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "100% free to join and browse; a free member account is needed to view the full member directory.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Browsing public profiles is passive. The member directory generally requires a (free) login, which is active — create the account with a sock-puppet identity, never your own, since the platform can see who viewed a member.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small independent Christian social-networking site; self-reported profile data with no identity verification, so treat any match as a lead, not confirmation.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "jesus.social",
+      "Jesus Social Network"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "niche-social-network"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/jesus-social.md"
   },
   {
@@ -335150,44 +334329,52 @@
   {
     "id": "quickvid-net",
     "name": "quickvid.net",
-    "description": "OSINT tool: quickvid.net.",
+    "description": "Use when you have a public Instagram post/reel/story `social-profile` URL and want to save the original media — returns downloaded `image` files with `metadata-exif`.",
     "url": "https://quickvid.net/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Downloading a target's public Instagram photos, reels, stories, or IGTV media without logging into Instagram.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile",
+      "username"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "image",
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported; no account or Instagram login required.",
+    "opsec": "passive",
+    "opsecNote": "You paste an Instagram URL into quickvid.net, not into Instagram, so the target gets no view/notification — a passive way to grab public media. Instagram is not touched with your account. Note the download passes through quickvid's servers, so they see what you fetch; use over a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Instagram media downloader; it only re-serves already-public content, but the operator is anonymous and the site is ad-heavy.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "quickvid",
+      "QuickVid downloader"
+    ],
     "tags": [
       "instagram",
-      "Instagram Related Sites"
+      "Instagram Related Sites",
+      "media-download"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/quickvid-net.md"
   },
   {
@@ -350752,7 +349939,6 @@
       "qzone",
       "community-search",
       "get-user-info",
-      "item",
       "people-search-results-vk",
       "vk-com",
       "vk-com-2",
@@ -350865,7 +350051,6 @@
     "relatedTools": [
       "community-search",
       "get-user-info",
-      "item",
       "people-search-results-vk",
       "vk",
       "vk-com",
@@ -350926,7 +350111,6 @@
     "relatedTools": [
       "community-search",
       "get-user-info",
-      "item",
       "people-search-results-vk",
       "vk",
       "vk-com",
@@ -350980,7 +350164,6 @@
       "yandex-people-search",
       "community-search",
       "get-user-info",
-      "item",
       "people-search-results-vk",
       "vk",
       "vk-com",
@@ -373933,7 +373116,6 @@
     "relatedTools": [
       "community-search",
       "get-user-info",
-      "item",
       "people-search-results-vk",
       "vk",
       "vk-com-2",

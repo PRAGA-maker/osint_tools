@@ -36,7 +36,6 @@ lastVerified: ''
 enrichment: stub
 relatedTools:
 - community-search
-- item
 - people-search-results-vk
 - vk
 - vk-com

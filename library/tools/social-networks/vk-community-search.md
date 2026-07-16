@@ -43,7 +43,6 @@ enrichment: full
 relatedTools:
 - community-search
 - get-user-info
-- item
 - people-search-results-vk
 - vk
 - vk-com

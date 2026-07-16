@@ -37,7 +37,6 @@ kind: group-index
 - **`chatsearchrobot`** (high) — Use when you have a Telegram group/channel `social-profile` or a topic `username`/keyword and want to discover similar or related Telegram c
 - **`chattoday`** (low) — Online chat platform for connecting and chatting with people.
 - **`chatvisualizer-com`** (medium) — another #WhatsApp chat analyzer.
-- **`clerkbot`** (high) — OSINT tool: ClerkBot.
 - **`commentgram-cse`** (medium) — search by Telegram comments
 - **`create-spoof-fake-facebook-status-update-post`** (low) — Use when you need to understand how easily a fake Facebook post/status screenshot can be fabricated — this generator produces convincing spo
 - **`create-spoof-fake-text-sms-messages`** (high) — Use when you are assessing whether a text/SMS "from" a `phone` could be spoofed — this Spoofbox tool sends messages with a forged sender ID,
@@ -45,9 +44,7 @@ kind: group-index
 - **`create-spoof-fake-whatsapp-facebook-twitter-skype-messenger`** (high) — Use when a WhatsApp/Facebook/Twitter/Skype chat screenshot is offered as evidence and you need to gauge how forgeable it is — this GeekPrank
 - **`creationdatebot`** (medium) — Use when you have a Telegram `username`/account and want to estimate when it was created — returns an approximate account age to judge if it
 - **`datxpert`** (high) — OSINT tool: datXpert.
-- **`dcallsbot`** (high) — OSINT tool: dCallsBot.
 - **`debirdify`** (medium) — This tool automatically finds Fediverse/Mastodon accounts of people you follow on Twitter
-- **`detectiva`** (high) — OSINT tool: Detectiva.
 - **`disboard-org`** (medium) — Use when you have a keyword, community name, or `username` and want to find public Discord servers around it — returns listed servers with i
 - **`discadia-com`** (high) — Use when you have a community `name`/keyword or `username` and want to find the public Discord server(s) tied to it — returns `social-profil
 - **`discord-com-2`** (high) — Use when you have a `username` on Discord and need to know what data Discord retains and how law-enforcement/legal process can obtain it — r
@@ -61,7 +58,6 @@ kind: group-index
 - **`easyvin`** (high) — Use when you have a Russian vehicle `vin` or `vehicle-plate` and want its history — returns registration/accident history and cross-referenc
 - **`egrul-bot`** (high) — Use when you have a Russian `employer-org`, INN/OGRN, or a director's `name` and want official EGRUL company data via Telegram — returns com
 - **`exploring-the-jihadi-telegram-world-a-brief-overview-european-eye-on-radicalization`** (medium) — OSINT tool: Exploring The Jihadi Telegram World: A Brief Overview - European Eye on Radicalization.
-- **`eyeton`** (high) — OSINT tool: EyeTON.
 - **`fake-whatsapp-chat-generator`** (medium) — OSINT tool: Fake WhatsApp Chat Generator.
 - **`fakedetail-com-2`** (medium) — Use when you need to understand or demonstrate how a WhatsApp chat screenshot can be fabricated — a counter-OSINT/evidence-verification refe
 - **`fediverse-explorer`** (medium) — Search Mastodon users by interests
@@ -69,7 +65,7 @@ kind: group-index
 - **`findstickercreator`** (medium) — Use when you have a Telegram sticker pack (or a `social-profile` that shared one) and want to de-anonymise its creator — returns the creator
 - **`followgraph-for-mastodon`** (medium) — Enter any #Mastodon Handle and get a list of accounts followed by the people this profile follows. It helps to find connections between peop
 - **`geogramint`** (high) — Use when you have a `geolocation` (coordinates) and want to enumerate Telegram users/groups who have shared their location nearby — returns 
-- **`geomacfinder`** (high) — OSINT tool: GeoMacFinder.
+- **`geomacfinder`** (high) — Use when you have a Wi-Fi access point `mac-address` (BSSID) and want its physical location via a Telegram bot — returns an approximate `geo
 - **`getairplane`** (medium) — Use when you have a `phone` and want to check for associated airline-booking / flight-history records — returns name and geolocation (route)
 - **`getchatlist`** (high) — Use when you have a Telegram `username` or user ID and want to map which groups/channels that account belongs to — returns the list of Teleg
 - **`getsendgifts`** (high) — OSINT tool: GetSendGifts.
@@ -81,7 +77,6 @@ kind: group-index
 - **`himerasearch`** (high) — Use when you have a `phone`, `name`, `email` or `vehicle-plate` and want a Russian-market data-broker bot to return aggregated identity, con
 - **`imagston`** (medium) — A tool that searches for users by name on different #Mastodon servers and collects information about them (profile picture, account type, da
 - **`informer-telegram`** (medium) — Python library to collect Telegram channel and user information.
-- **`insight`** (high) — OSINT tool: Insight.
 - **`instaanonym`** (high) — Use when you have an Instagram `username` and want to view that account's stories/profile media anonymously (without your account appearing 
 - **`instabot`** (high) — Use when you have a public Instagram post/profile URL and want the raw media inside Telegram — returns the downloaded photos/videos as files
 - **`instances-social`** (medium) — A tool for searching across full list of instances in #Mastodon. It can help you choose the right instance to register (matching your views 
@@ -95,7 +90,6 @@ kind: group-index
 - **`knowlesys-com-2`** (high) — Use when you have a Telegram `username` and want the stable numeric user ID (which survives username/name changes) — returns a how-to for th
 - **`knowlesys-com-4`** (high) — Use when you have a `phone` or `username` tied to WhatsApp and want a methodology — a how-to guide for extracting profile pictures and findi
 - **`leak-osint`** (high) — Use when you have an `email`, `phone`, `username` or `name` and want to check it against aggregated data-breach dumps via a Telegram bot — r
-- **`letsview-com`** (high) — OSINT tool: letsview.com.
 - **`line-me`** (high) — Use when you have a `phone` number or LINE ID (`username`) for a subject likely in Japan/Taiwan/Thailand and want to confirm a LINE account 
 - **`linecorp-com`** (high) — Use when you have a `phone` or `username` tied to a LINE messenger account and need to know what data LINE holds and how (via legal process)
 - **`lookup-guru`** (high) — Use when you have a Discord user ID (`device-id`/snowflake) and want the public profile behind it — returns username, avatar/banner image, a
@@ -103,35 +97,30 @@ kind: group-index
 - **`maigret-osint-bot`** (high) — Use when you have a `username` and want to check thousands of sites for accounts without installing anything — a Telegram bot wrapper for Ma
 - **`maltego-telegram`** (high) — Use when you have a `phone`, Telegram `username`, or channel and want to map users, groups, admins, and forwards in Maltego — returns social
 - **`mastovue`** (medium) — More and more #osint and #infosec bloggers are creating Mastodon profiles these days. This tool will help you find accounts that match your 
-- **`mnp-bot`** (high) — OSINT tool: mnp_bot.
+- **`mnp-bot`** (high) — Use when you have a `phone` number and want its geographic region and mobile carrier via a Telegram bot — returns region/operator context on
 - **`mothersearchbot`** (high) — Use when you have a `username`, `name` or keyword and want to search across Telegram for channels, groups and messages mentioning it — retur
 - **`movetodon`** (medium) — Get a list of your Twitter followings in Mastodon. With the ability to sort by date of registration, date of last activity, and buttons for 
 - **`nekogram-x`** (medium) — OSINT tool: Nekogram X.
-- **`neuroautosearch`** (high) — OSINT tool: NEUROAUTOSEARCH.
+- **`neuroautosearch`** (high) — Use when you have a Russian `vehicle-plate` or `vin` and want owner/vehicle history details via a Telegram bot — returns vehicle data and po
 - **`now-gg`** (high) — Use when you need to run a mobile messaging/social app (WhatsApp, Telegram, TikTok, etc.) in a disposable cloud Android instance — OpSec inf
 - **`oksearch`** (high) — Use when you have a `name`/`username`/keyword and want to find Telegram channels, groups, and posts mentioning it — returns social-profile l
 - **`opendatauabot`** (high) — Use when you have a Ukrainian person's `name`, `phone`, vehicle `vehicle-plate` or company and want state open-data — returns registry hits 
-- **`openload-bot`** (high) — OSINT tool: OPENLOAD Bot.
 - **`osint-discord-resources-github-com`** (high) — Use when you have a Discord `username`, user ID or server invite and want the method to pivot on it — returns a curated toolset for Discord 
 - **`osint-github-com`** (high) — Use when you have a Discord `username` or user/server ID and want a reference map of every pivot point — returns a methodology guide, not li
 - **`osint-tool-for-tg`** (medium) — Free tool for gathering OSINT from Telegram and other platforms.
-- **`osintkit`** (high) — OSINT tool: Osintkit.
 - **`osintme-com`** (high) — Use when you have a Telegram `username`/`phone` and want a vetted methodology and toolset for investigating Telegram users, groups, and chan
 - **`osintteam-blog-3`** (high) — Use when you have a `phone` or `username` and want a curated shortlist of WhatsApp OSINT tools/techniques to try — returns a listicle pointi
-- **`passwordsearch`** (high) — OSINT tool: PasswordSearch.
 - **`pimeyes`** (high) — Use when you have a `face`/`image` of a subject and want to find other web pages showing that same face — returns matching photos and the UR
 - **`pixelatomy-com`** (medium) — Use when you have a Discord ID (`document-id` snowflake from a user, message, or channel) and want its exact creation date/time — returns th
 - **`prankshit-com-2`** (high) — Use when you have a screenshot of a `phone`/`username` WhatsApp "chat" and want to know whether it could be fabricated — this is a fake-chat
-- **`rapidapi-com`** (high) — OSINT tool: rapidapi.com.
 - **`readergram-com`** (medium) — OSINT tool: Readergram.com.
 - **`reddit-com-2`** (high) — Use when you have a Telegram `username` and want the account's stable numeric user ID — this is a community how-to thread describing the bot
 - **`regdatebot`** (high) — Use when you have a Telegram `username` or account and want to estimate when it was created — returns an approximate account registration da
 - **`retrieve-metadata`** (medium) — OSINT tool: Retrieve Metadata.
 - **`sangmata-beta`** (high) — Use when you have a Telegram user (a `username` or forwarded message) and want their history of past names and usernames — returns prior `na
 - **`sangmatainfo-bot`** (high) — Use when you have a Telegram user (via a forwarded message or numeric ID) and want their history of past display names and usernames — retur
-- **`saveyoutubebot`** (high) — OSINT tool: SaveYoutubeBot.
 - **`search-buzz-im`** (medium) — OSINT tool: Search.buzz.im.
-- **`search-firm-bot`** (high) — OSINT tool: Search_firm_bot.
+- **`search-firm-bot`** (high) — Use when you have a Russian `employer-org` name/ID and want registry, bank, and postal-index details via a Telegram bot — returns org record
 - **`searchforchats`** (high) — Use when you have a keyword, topic or `name` and want to discover Telegram groups and channels about it — a Telegram catalog bot returning m
 - **`serverse`** (medium) — Search for Discord servers by keyword.
 - **`sherlock-3`** (high) — Use when you have a `phone` number and want the names it is saved as in other people's contacts — a Telegram GetContact-style lookup bot tha
@@ -143,7 +132,7 @@ kind: group-index
 - **`spyggbot`** (high) — OSINT tool: SpyGGbot.
 - **`support-discord-com-2`** (high) — Use when you have a `username` and want to search Discord's public community help forum for posts, complaints, or server references tied to 
 - **`support-discord-com`** (high) — Use when you're resolving a Discord `username` and need to understand the 2023 unique-username vs display-name system — returns reference kn
-- **`surftg-bot`** (high) — OSINT tool: Surftg_bot.
+- **`surftg-bot`** (high) — Use when you have a `name`, `username`, or keyword and want to find matching Telegram messages/channels via a search bot — returns `social-p
 - **`telegago-2`** (high) — Use when you have a `name`, `username`, keyword, or phone and want to find public Telegram content mentioning it — a Google Custom Search En
 - **`telegcrack-com`** (medium) — search in telegra.ph
 - **`telegram-analytics`** (medium) — OSINT tool: Telegram Analytics.
@@ -185,7 +174,6 @@ kind: group-index
 - **`telesearch`** (high) — Use when you have a `name`/keyword and want to find public Telegram channels, groups, and bots about it — returns social-profile leads with 
 - **`teleteg`** (high) — Use when you have a topic, `name` or keyword and want to discover public Telegram channels/groups around it — returns social-profile links t
 - **`teletracker`** (high) — Use when you have a Telegram channel/bot ID and want to harvest and archive its messages, media, and owner info — returns exported content a
-- **`tg-me-com`** (high) — OSINT tool: tg-me.com.
 - **`tginfo-me`** (high) — Use when you're trying to resolve a `phone` or `username` on Telegram and need to understand the add-by-number technique and its privacy/rat
 - **`tgram-io`** (low) — Explore and search Telegram channels, groups and bots.
 - **`tgramsearch`** (medium) — Use when you have a keyword, topic, or `username` and want to find related Telegram channels — returns a catalogue of channels with names, d

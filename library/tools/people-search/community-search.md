@@ -35,7 +35,6 @@ lastVerified: ''
 enrichment: stub
 relatedTools:
 - get-user-info
-- item
 - people-search-results-vk
 - vk
 - vk-com

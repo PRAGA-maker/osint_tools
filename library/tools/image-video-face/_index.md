@@ -241,7 +241,6 @@ kind: group-index
 - **`observer`** (medium) — service allows you to watch data from different orbiting satellites in the record. The data is available in 15-30 minutes after recording.
 - **`online-exif-viewer`** (high) — Use when you have a photo file and want its embedded metadata — returns EXIF including GPS coordinates, capture timestamp, and camera/device
 - **`openi-nlm-nih-gov`** (medium) — Reverse image search engine for scientific and medical images
-- **`openphoto`** (high) — Website related to social networking with photo and image galleries, posting and sharing services
 - **`originality-ai`** (high) — Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an
 - **`osint-essentials`** (medium) — Verification-focused tool and resource site for journalists/researchers.
 - **`pbs-search`** (low) — Use when you have a `name` or topic and want to check if a person appears in PBS documentary/news content — returns video episodes and menti
@@ -295,7 +294,6 @@ kind: group-index
 - **`reversely`** (high) — Use when you have a `face` or `image` and want AI reverse-image and face search to find where it appears online and identify the person — re
 - **`revesearch-com`** (medium) — allows to upload an image once and immediately search for it in #Google, #Yandex, and #Bing.
 - **`reveye-reverse-image-sear-chrome-google-com`** (high) — Use when you have an `image`/`face` and want to reverse-search it across multiple engines at once — a browser extension that right-click que
-- **`rock-star-games`** (high) — Website related to social networking and players of over 50 games on this website
 - **`rootabout-wayback-reverse-image`** (medium) — Use when you have an `image` and want to find where it appears in the Internet Archive / OpenLibrary — returns matching archived items (book
 - **`rootabout`** (high) — Use when you have an `image` and want to reverse-search it against the Internet Archive and Open Library (plus Google) — returns matching ar
 - **`runescape`** (low) — Use when you have a gamer `username` and want to confirm a RuneScape account and read its public hiscores/activity — returns a social-profil

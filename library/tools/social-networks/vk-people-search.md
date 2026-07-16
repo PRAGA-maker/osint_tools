@@ -38,7 +38,6 @@ relatedTools:
 - yandex-people-search
 - community-search
 - get-user-info
-- item
 - people-search-results-vk
 - vk
 - vk-com

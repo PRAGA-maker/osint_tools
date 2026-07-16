@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8486 total · 2399 full · 6087 stub (28% enriched)
+**Tools:** 8463 total · 2407 full · 6056 stub (28% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3353 · low: 3148 · high: 1985
+medium: 3353 · low: 3148 · high: 1962
 
 ## Tools by trust
-unverified: 4565 · community: 3137 · trusted: 771 · personal: 7 · untrustworthy: 6
+unverified: 4559 · community: 3120 · trusted: 771 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -21,19 +21,19 @@ unverified: 4565 · community: 3137 · trusted: 771 · personal: 7 · untrustwor
 - `dating-classifieds` — 23/117
 - `documents-metadata` — 9/320
 - `domains-ip-infrastructure` — 0/777
-- `email` — 239/247
+- `email` — 239/246
 - `evidence-capture` — 1/33
 - `financial-crypto` — 0/134
 - `geolocation` — 150/359
-- `image-video-face` — 346/489
+- `image-video-face` — 346/487
 - `maps-geospatial-data` — 2/147
-- `messaging` — 121/217
+- `messaging` — 126/205
 - `opsec-investigator-tooling` — 3/567
 - `people-search` — 212/278
-- `phone` — 128/141
-- `public-records` — 513/1156
+- `phone` — 128/140
+- `public-records` — 514/1151
 - `search-engines` — 48/988
-- `social-networks` — 493/898
+- `social-networks` — 495/896
 - `training-ctf` — 0/12
 - `translation-language` — 0/103
 - `transportation` — 6/237
@@ -41,22 +41,22 @@ unverified: 4565 · community: 3137 · trusted: 771 · personal: 7 · untrustwor
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1088 leaves
+- `library/tools/public-records` — 1083 leaves
 - `library/tools/search-engines` — 917 leaves
-- `library/tools/social-networks` — 869 leaves
+- `library/tools/social-networks` — 867 leaves
 - `library/tools/domains-ip-infrastructure` — 533 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/communities-forums` — 423 leaves
 - `library/tools/ai-analysis-automation` — 421 leaves
-- `library/tools/image-video-face` — 392 leaves
+- `library/tools/image-video-face` — 390 leaves
 - `library/tools/geolocation` — 343 leaves
 - `library/tools/people-search` — 268 leaves
 - `library/tools/documents-metadata` — 266 leaves
-- `library/tools/email` — 223 leaves
+- `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 218 leaves
-- `library/tools/messaging` — 202 leaves
+- `library/tools/messaging` — 190 leaves
 - `library/tools/maps-geospatial-data` — 147 leaves
-- `library/tools/phone` — 143 leaves
+- `library/tools/phone` — 142 leaves
 - `library/tools/archives-cache` — 123 leaves
 - `library/tools/dating-classifieds` — 117 leaves
 - `library/tools/financial-crypto` — 112 leaves

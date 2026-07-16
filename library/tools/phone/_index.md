@@ -40,7 +40,6 @@ kind: group-index
 - **`emobiletracker-com`** (high) — Use when you have a `phone` and want its country, telecom operator and approximate region — returns coarse geolocation and carrier, not the 
 - **`epieos-check-phone-usage`** (high) — Use when you have a `phone` (or `email`) and want to see which online services it is registered on, plus any linked name/photo — returns `na
 - **`family-tree-now`** (high) — Use when you have a `phone`, `name` or `address` and want free US household and relative links — returns person records, addresses, ages and
-- **`faxtastic-co-uk`** (high) — OSINT tool: faxtastic.co.uk.
 - **`fcc-io`** (high) — Use when you have an FCC ID off a wireless device (`device-id`) and want the manufacturer and filing behind it — returns the grantee `employ
 - **`find-gsm-base-stations-cell-id-coordinates`** (high) — Use when you have GSM cell identifiers (MCC/MNC/LAC/CID) and want the tower's approximate location — returns base-station coordinates plotte
 - **`firefly`** (high) — Use when you have a `phone` number and want carrier/country/line-type validation via the Numverify API from a simple CLI — returns `phone` m

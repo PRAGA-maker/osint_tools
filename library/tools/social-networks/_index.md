@@ -328,7 +328,6 @@ kind: group-index
 - **`instalooter-2`** (medium) — Use when you have an Instagram `username` and want to bulk-download a profile's media — returns saved `image`s (with any EXIF/`geolocation`)
 - **`instalooter`** (high) — Use when you have a public Instagram `username`, hashtag, or location and want to bulk-download its media without login or the API — returns
 - **`instanavigation`** (medium) — Anonymous Instagram story viewing.
-- **`instasaver`** (high) — Save or download posts from Instagram
 - **`instatracker`** (medium) — Instagram tracking script that logs changes to an account (followers, following, posts, bio).
 - **`insto`** (high) — Use when you have an Instagram `username` and want a scripted, no-login dossier — posts, followers, geo-fingerprint and network intersection
 - **`intel-sw-com`** (high) — Use when you have a `name` or `employer-org` and want to find someone's Facebook profile and mutual connections via advanced Graph-style ope
@@ -336,9 +335,8 @@ kind: group-index
 - **`inteltechniques-twitter`** (high) — Use when you have an X/Twitter `username` or `name` and want to run advanced searches across many operators at once — returns profile, posts
 - **`internect-info`** (high) — Use when you have a Bluesky handle, DID or AT URI and want to resolve it to the underlying AT Protocol identity — returns the stable `social
 - **`invidious-instances`** (medium) — OSINT tool: Invidious Instances.
-- **`item`** (high) — OSINT tool: Дезертир.
 - **`izuum`** (high) — Use when you have an Instagram `username` and want to view/enlarge their (public) profile picture — returns image, social-profile. Now large
-- **`jesus-social`** (high) — Christian social networking website
+- **`jesus-social`** (high) — Use when you have a `name` or `username` and want to check for a profile on this niche Christian social network — returns a `social-profile`
 - **`jump-cutter`** (medium) — An extension for those who watch university lectures on #YouTube and want to save their time. It identifies chunks where the lecturer writes
 - **`justlog`** (medium) — Enter the username and the name of the channel to see all of the user's messages in that channel. The results can be downloaded as TXT
 - **`karma-decay`** (medium) — OSINT tool: Karma Decay.
@@ -470,7 +468,7 @@ kind: group-index
 - **`pushshift-api-guide`** (medium) — OSINT tool: Pushshift API Guide.
 - **`pushshift-api`** (high) — Use when you want archived Reddit posts/comments (including deleted ones) — historically a full Reddit archive, now restricted to Reddit mod
 - **`quarter-tweets`** (medium) — OSINT tool: quarter tweets.
-- **`quickvid-net`** (high) — OSINT tool: quickvid.net.
+- **`quickvid-net`** (high) — Use when you have a public Instagram post/reel/story `social-profile` URL and want to save the original media — returns downloaded `image` f
 - **`qzone-china`** (high) — Use when you have a QQ number/`username` or `name` and want to find a subject's Tencent Qzone social profile — returns social-profile, image
 - **`qzone`** (high) — Use when you have a QQ number/`username` or `name` for a Chinese subject and want their Tencent social profile — returns a `social-profile` 
 - **`raditube`** (medium) — A search engine that searches the subtitles of about 380 (right/left) radical YouTube channels. You query for example for q says" of "voter 

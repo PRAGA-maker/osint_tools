@@ -36,7 +36,6 @@ enrichment: stub
 relatedTools:
 - community-search
 - get-user-info
-- item
 - vk
 - vk-com
 - vk-com-2

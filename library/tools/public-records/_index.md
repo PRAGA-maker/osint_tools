@@ -80,7 +80,6 @@ kind: group-index
 - **`arizona-le-database-abc15`** (medium) — OSINT tool: Arizona LE Database - ABC15.
 - **`arkansas-ashley-county-ledger-search-united-states`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`arkansas-department-of-correction`** (high) — Use when you have a `name` of someone who may be incarcerated in Arkansas and want their inmate record — returns `name`, `dob`/age, ADC `doc
-- **`arrest-bookings-search-and-report`** (high) — OSINT tool: Arrest Bookings Search and Report.
 - **`arrest-warrants`** (high) — Use when you have a `name` and want to find an outstanding US arrest warrant — a directory routing you to free state/county warrant searches
 - **`arrests`** (high) — Use when you have a `name` and want to check for a US arrest record or mugshot — returns booking photos, arrest dates, charges, and county, 
 - **`ascap-com`** (medium) — Use when you have a `name` who may be a songwriter/composer/publisher and want to confirm it — ASCAP's ACE database returns registered works
@@ -187,7 +186,6 @@ kind: group-index
 - **`colorado-statewide-marriage-index`** (medium) — Colorado Statewide Marriage Index of records from 1953 to 2006
 - **`colorado`** (high) — Use when you have a `name` and want to check whether a subject is in Colorado Department of Corrections custody — returns offender record wi
 - **`coloradovoters-info`** (high) — Use when you have a `name` in Colorado and want registered-voter data — returns `address`, approximate `dob`/age, party affiliation, and vot
-- **`commonlawcourt-com`** (high) — OSINT tool: commonlawcourt.com.
 - **`companies-and-orgs-search-engine`** (medium) — OSINT tool: Companies & Orgs Search Engine.
 - **`companieshouse-gi`** (medium) — Use when you have a Gibraltar `employer-org` or director `name` and want official company registry data — returns company details, directors
 - **`companieshouse-im`** (medium) — Use when you have an Isle of Man company `name` or an `employer-org` link and want registry data — returns company status, registered `addre
@@ -726,7 +724,7 @@ kind: group-index
 - **`oh-court-costs`** (medium) — OSINT tool: OH Court Costs.
 - **`oh-marijuana-docs`** (high) — OSINT tool: OH marijuana docs.
 - **`ohio-mhas`** (medium) — Ohio Mental Health and Addiction Services site - includes facts and resources for prevention and regulation
-- **`ohio-obituaries-death-and-marriage-search`** (high) — OSINT tool: Ohio obituaries, death & marriage Search.
+- **`ohio-obituaries-death-and-marriage-search`** (high) — Use when you have a `name` (and optionally a death year) and want an Ohio obituary/death/marriage record — returns a `dob`/death-date lead a
 - **`ohio-registered-voter-verification`** (medium) — Ohio registered voter verification and search
 - **`ohio-resident-database`** (high) — Use when you have a `name` in Ohio and want address/age/party from the state's public voter-registration data — returns address, dob-year an
 - **`ohio`** (high) — Use when you have a `name` and want to locate someone in Ohio state prison custody — returns incarceration status, facility, age/DOB and off
@@ -781,7 +779,6 @@ kind: group-index
 - **`panjiva-com`** (medium) — search data on millions of shipments worldwide
 - **`paperpanda`** (medium) — In recent years it has become increasingly difficult to find scientific articles. To download their full versions, websites require registra
 - **`pappers-fr`** (high) — Use when you have a `name` or French company and want directorships, officers, beneficial owners, and registered addresses — returns employe
-- **`parallelsearch-case-law`** (high) — OSINT tool: Parallelsearch case law.
 - **`parler-archive-search`** (low) — OSINT tool: Parler Archive Search.
 - **`parler-capitol-videos`** (low) — OSINT tool: Parler Capitol Videos.
 - **`paul-hensel-s-general-informational-data-page`** (low) — OSINT tool: Paul Hensel’s General Informational Data Page.
@@ -1022,7 +1019,6 @@ kind: group-index
 - **`ukas-com`** (high) — Use when you have an `employer-org` name (a lab, cert body or inspection firm) and want to verify its UK accreditation — returns the org's a
 - **`ukbirthadoptionregister-com`** (high) — Use when you have a `name` and approximate `dob` and are working an adoption-reunion case — searches an adoption contact register to link ad
 - **`ukbmd-org-uk`** (high) — Use when you have a `name` and want UK births/marriages/deaths records — a portal routing you to local transcribed civil-registration indexe
-- **`ukdatabase`** (high) — OSINT tool: UKDatabase.
 - **`ukrlp-co-uk`** (low) — Use when you have a training/education provider `name` or UKPRN and want its official registration — returns `employer-org`, `address`, cont
 - **`uksocialhousing-com`** (medium) — Use when you have a UK location/`address` and want social-housing context — returns council/housing-association properties and providers in 
 - **`uky-salaries-2019`** (medium) — OSINT tool: UKY Salaries 2019.
@@ -1091,7 +1087,6 @@ kind: group-index
 - **`www-ratemyteachers-com`** (high) — Use when you have a teacher/educator `name` and want to confirm and place them at a specific school — returns employer-org (school), address
 - **`xbrl-voluntary-filing-program`** (low) — OSINT tool: XBRL Voluntary Filing Program.
 - **`xhibit`** (high) — Use when you have a `name` and want to see if they are listed in today's England & Wales Crown Court hearings — returns the defendant `name`
-- **`xlamma-com`** (high) — OSINT tool: xlamma.com.
 - **`xrefer`** (medium) — OSINT tool: XRefer.
 - **`yahoo-finance`** (medium) — Yahoo's finance search page, search companies, finance news, market information, and more
 - **`yearbooks-high-school-yearbooks-ancestry`** (high) — Use when you have a `name` and want a historical photo, school, and approximate age for a subject — returns yearbook portraits and school/ye

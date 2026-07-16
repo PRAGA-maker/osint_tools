@@ -170,7 +170,6 @@ kind: group-index
 - **`pointofmail-com-email-tracking-addons-mozilla-org`** (medium) — Use when you can send the subject an email and want a read-receipt that reveals when/where they opened it — leaks the recipient's IP, geoloc
 - **`pointofmailcom-email-trac-chrome-google-com`** (medium) — Use when you can send the subject an email and want a read-receipt that reveals when/where they opened it — leaks the recipient's IP, geoloc
 - **`posteo-de`** (low) — Use when an email address ends in @posteo.de/@posteo.* and you need to understand the provider — a German privacy email host that yields lit
-- **`privatemail`** (high) — Service provider for sending and receiving private emails
 - **`privnote-com`** (low) — Use when you need to send a one-time, self-destructing encrypted note — an operational tool for sharing tips/links securely, not an email-lo
 - **`proofy`** (medium) — Use when you have an email address and need to confirm it is real/deliverable before investing in it — returns a validity/deliverability ver
 - **`proton-me`** (low) — Use when an email ends in @proton.me/@protonmail.com and you need to understand the provider — an encrypted Swiss mail host that yields almo
