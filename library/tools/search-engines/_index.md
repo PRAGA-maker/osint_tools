@@ -36,7 +36,7 @@ kind: group-index
 - **`abyznewslinks`** (low) — OSINT tool: ABYZNewsLinks.
 - **`academic-journals`** (low) — OSINT tool: Academic Journals.
 - **`access-to-archival-databases`** (medium) — The National Archives database of archival databases
-- **`advangle-advanced-web-search`** (medium) — Surface web search engine covering regional results with an advanced query builder
+- **`advangle-advanced-web-search`** (medium) — Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns soci
 - **`adzuna-job-search-engine-united-kingdom`** (medium) — Website that offers job search services for multiple countries worldwide, including salary statistics
 - **`african-development-bank`** (medium) — African Development Bank Groups statistical search site
 - **`african-journal-online`** (low) — OSINT tool: African Journal Online.
@@ -709,7 +709,7 @@ kind: group-index
 - **`search-craigslist`** (medium) — OSINT tool: Search craigslist.
 - **`search-encrypt`** (medium) — Private search engine that encrypts searches
 - **`search-engine-colossus`** (low) — International directory of search engines
-- **`search-engine-finder`** (medium) — OSINT tool: Search Engine Finder.
+- **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 
 - **`search-engines-index`** (medium) — OSINT tool: Search Engines Index.
 - **`search-engines-scraper`** (low) — Collects search results in text files. It's possible to search Google, Bing, DuckDuckGo, AOL and other search engines.
 - **`search-it`** (medium) — Search engine with popular website applications on its interface; includes Google, Bing, DuckDuckGo, Reddit, Twitter, and more.

@@ -12,7 +12,7 @@ kind: group-index
 - **`bing`** (medium) — Alternative to Google, regional results, academic content, supplementary searches
 - **`brave`** (medium) — Privacy-preserving searches, custom filtering via Goggles, enterprises needing zero data retention
 - **`duckduckgo`** (medium) — Privacy-preserving searches, tracking-free OSINT research, European results
-- **`google-advanced-search`** (medium) — Guided advanced searches, learning Google operators, constructing complex queries visually
+- **`google-advanced-search`** (medium) — Use when you have a `name`, `username` or `email` and want a form-guided way to build precise Google dork queries — returns social-profile, 
 - **`google`** (medium) — General web OSINT, historical information via cache, broad searches with operators
 - **`hulbee`** (medium) — Corporate information only, NOT for web search OSINT
 - **`instya`** (medium) — Product research, shopping comparisons, eCommerce OSINT only

@@ -12,7 +12,7 @@ kind: group-index
 - **`companies-in-the-uk`** (medium) — Quick UK company lookup with simplified Companies House data
 - **`company-data-rex-eu`** (medium) — Cross-border EU company research and registry data lookup
 - **`crunchbase`** (medium) — Startup funding research, investor mapping, and executive tracking
-- **`europages`** (medium) — Finding European suppliers, manufacturers, and B2B companies by industry
+- **`europages`** (low) — Use when you have a company `name`, product, or `employer-org` and want European B2B company listings — returns employer-org contact details
 - **`littlesis`** (medium) — Use when you have a `name`/`employer-org` of a public figure or company and want their power network — returns board seats, donations, and r
 - **`opencorporates`** (medium) — Cross-jurisdictional company research and corporate network mapping
 - **`owler`** (medium) — Competitive intelligence and company profile research

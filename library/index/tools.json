@@ -127429,43 +127429,51 @@
   {
     "id": "pastvu-com",
     "name": "Pastvu.com",
-    "description": "View historical photos taken at a particular location on a map.",
+    "description": "Use when you have a `geolocation` or an old `image` and want historical photos mapped to that spot — returns dated, geolocated imagery to confirm or refine a location.",
     "url": "https://pastvu.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding historical, geotagged photographs of a specific place to corroborate or refine a geolocation.",
     "selectorsIn": [
       "geolocation",
       "image"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free crowdsourced historical-photo archive on an interactive map; no account needed to browse. Registration only to upload/edit.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public photo-map archive is fully passive — no subject interaction, nothing logged against a target. Photos are user-contributed and their placement/dates are community-supplied, so verify before relying on them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large crowdsourced archive of historical photos with community-set coordinates and dates; placements are generally careful but user-supplied, not authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "PastVu",
+      "pastvu.com"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Social media and photos"
+      "maps",
+      "geolocation",
+      "historical-photos"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/pastvu-com.md"
   },
   {
@@ -198865,37 +198873,50 @@
   {
     "id": "experts-com",
     "name": "Experts.com",
-    "description": "OSINT tool: Experts.com.",
-    "url": "http://www.experts.com",
+    "description": "Use when you have a `name` or field and want to check if someone is a listed expert witness/consultant — returns employer-org, credentials, address and contact leads.",
+    "url": "https://www.experts.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding or verifying an expert witness / professional consultant by name or specialty, with their firm and contact details.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search expert profiles; no account needed. Experts pay to be listed, but searching is free to the public.",
+    "opsec": "passive",
+    "opsecNote": "Passive browsing of a public professional directory; the listed expert is not notified and nothing is revealed about you. Listed contact details are self-published for business, so they are public by intent.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An established (since 1994) directory of self-listed expert witnesses and consultants; profiles are self-submitted, so credentials should be independently verified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "experts.com"
+    ],
     "tags": [
-      "expert-search"
+      "expert-search",
+      "professional-directory",
+      "expert-witness"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/people-search/experts-com.md"
   },
   {
@@ -230449,41 +230470,54 @@
   {
     "id": "europages",
     "name": "Europages",
-    "description": "Finding European suppliers, manufacturers, and B2B companies by industry",
-    "url": "https://www.europages.co.uk:443/",
+    "description": "Use when you have a company `name`, product, or `employer-org` and want European B2B company listings — returns employer-org contact details, address and domain leads.",
+    "url": "https://www.europages.co.uk/",
     "category": "public-records",
     "path": [
       "public-records",
       "company-profiles"
     ],
-    "bestFor": "Finding European suppliers, manufacturers, and B2B companies by industry",
-    "input": "Company name, product, or industry sector",
-    "output": "Company listings with contact information, products, and certifications",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding European suppliers, manufacturers, and B2B companies by name, product, or sector, with contact details.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free B2B directory search; no account needed to browse company listings. Companies pay for enhanced listings, but searching is free.",
     "opsec": "passive",
-    "opsecNote": "All queries routed through Europages servers; no direct contact with listed companies.",
+    "opsecNote": "Browsing directory listings is passive and does not contact the companies. Avoid the \"contact supplier\"/quote-request forms for a target company — those send your enquiry to the business and expose your interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A long-running pan-European B2B directory; listings are largely self-submitted by companies, so details are useful leads but not authoritative registry data.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "europages.com",
+      "europages.co.uk"
+    ],
+    "tags": [
+      "company-search",
+      "b2b",
+      "directory",
+      "europe"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-profiles/europages.md"
   },
   {
@@ -242555,41 +242589,52 @@
   {
     "id": "judyrecords",
     "name": "judyrecords",
-    "description": "Nationwide court case search",
+    "description": "Use when you have a `name` and want free nationwide US court-case records — returns case filings, parties (associates), and document-id leads across 700M+ cases.",
     "url": "https://www.judyrecords.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Nationwide court case search",
-    "input": "Case name, parties, docket number",
-    "output": "Court documents, docket info, filings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free full-text search of 700M+ US court cases by party name to find litigation, filings, and connected parties.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "associate",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free unlimited court-case search across US jurisdictions; no account required. Funded without paywalling searches.",
     "opsec": "passive",
-    "opsecNote": "Public domain court records",
+    "opsecNote": "Court records are public; searching does not notify anyone and nothing is revealed about you. Note the subject's involvement in a case (victim, witness, party) may be sensitive — handle results discreetly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Aggregates real US court records from many jurisdictions; coverage and freshness vary by court, and indexing gaps mean absence is not proof of no record.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "judyrecords.com",
+      "judy records"
+    ],
+    "tags": [
+      "court-records",
+      "legal",
+      "criminal-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/judyrecords.md"
   },
   {
@@ -246837,47 +246882,56 @@
   {
     "id": "ministry-of-corporate-affairs-india",
     "name": "Ministry of Corporate Affairs (India)",
-    "description": "Business-related search engine that searches by company name",
-    "url": "http://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do",
+    "description": "Use when you have an Indian company `name` or `employer-org` and want official registry master data — returns registered address, incorporation details and director leads.",
+    "url": "https://www.mca.gov.in/content/mca/global/en/mca/master-data/MDS.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Indian company master-data lookup — registration number, status, registered address, and director signatories.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free company/LLP master-data view on the government MCA portal; no payment. Downloading full filed documents costs a fee, but the master-data summary is free.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Official government registry lookup; the company/directors are not notified and nothing is revealed about you. All master data here is public corporate record by law.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The Ministry of Corporate Affairs is India's official companies registrar; its master data is the authoritative record for Indian companies and LLPs.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "in"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "MCA India",
+      "mca.gov.in",
+      "MCA master data"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "company-search"
+      "company-search",
+      "india"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ministry-of-corporate-affairs-india.md"
   },
   {
@@ -258622,47 +258676,55 @@
   {
     "id": "rhode-island-registered-voter-verification",
     "name": "Rhode Island Registered Voter Verification",
-    "description": "Rhode Island registered voter verification and search",
+    "description": "Use when you have a `name` (with DOB) for a Rhode Island resident and want to confirm voter registration and district — returns address/district and registration status.",
     "url": "https://vote.sos.ri.gov",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a named Rhode Island resident's voter registration status and assigned polling district.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "address",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official Rhode Island Secretary of State voter-information lookup; no payment. Requires the person's name and date of birth to return a record.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "An official state lookup that does not notify the subject. It requires knowing the person's name and DOB, so it confirms/enriches an existing lead rather than discovering one. Use only for legitimate purposes; voter data use is legally constrained.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Rhode Island Department of State (Secretary of State); the registration status it returns is authoritative for RI.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "aliases": [
+      "RI voter lookup",
+      "vote.sos.ri.gov"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "voter-records",
+      "rhode-island"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "rhode-island"
     ],
@@ -271370,24 +271432,33 @@
   {
     "id": "advangle-advanced-web-search",
     "name": "Advangle Advanced Web Search",
-    "description": "Surface web search engine covering regional results with an advanced query builder",
+    "description": "Use when you have a `name`, `username` or `email` and want to visually build a complex Google/Bing query with many conditions — returns social-profile, domain and document-id leads.",
     "url": "http://advangle.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Visually composing multi-condition advanced search queries and running them on Google or Bing.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free query builder; running searches needs no account. A free account lets you save up to 5 queries.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Advangle only assembles the query and hands it to Google/Bing, so standard search OpSec applies — the search itself goes to those engines. Use a VPN/sock-puppet session; don't save sensitive queries to a personal Advangle account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small third-party query-builder front end; it produces standard Google/Bing queries, so result quality is those engines' — the tool just makes complex queries easier to construct.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -271396,15 +271467,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "advangle.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "dorking"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "advangle"
     ],
@@ -283581,41 +283655,54 @@
   {
     "id": "google-advanced-search",
     "name": "Google Advanced Search",
-    "description": "Guided advanced searches, learning Google operators, constructing complex queries visually",
+    "description": "Use when you have a `name`, `username` or `email` and want a form-guided way to build precise Google dork queries — returns social-profile, domain and document-id leads.",
     "url": "https://www.google.com/advanced_search",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Guided advanced searches, learning Google operators, constructing complex queries visually",
-    "input": "Form-based parameters (date range, language, file type, domain, safe search, reading level)",
-    "output": "Ranked web pages matching advanced filters",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Building precise, filtered Google queries (exact phrase, site, filetype, date) via a form instead of memorizing operators.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; it's Google's own advanced-search form. No account required.",
     "opsec": "passive",
-    "opsecNote": "Same passive OSINT as Google; educational tool for learning operator syntax; helps build effective dork queries",
+    "opsecNote": "Same OpSec as any Google search — the query goes to Google. Stay logged out to avoid personalized ranking, and search from a VPN/sock-puppet session for sensitive subjects.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google's first-party advanced-search interface; it builds standard Google queries, so results are Google's index.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "google advanced_search",
+      "Google dorking form"
+    ],
+    "tags": [
+      "search-engine",
+      "google",
+      "dorking"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/google-advanced-search.md"
   },
   {
@@ -300845,35 +300932,52 @@
   {
     "id": "search-engine-finder",
     "name": "Search Engine Finder",
-    "description": "OSINT tool: Search Engine Finder.",
+    "description": "Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns social-profile, domain and document-id leads.",
     "url": "https://cse.google.com/cse?cx=016621447308871563343:nyvaorurd5l",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A Google Custom Search Engine that queries a curated set of specialty/alternative search engines at once.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account needed to run a query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It's a Google CSE, so the query goes to Google over the curated source set — same OpSec as a normal web search. Use a VPN/sock-puppet session; stay logged out to avoid personalization.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A community-configured Google Custom Search Engine; its usefulness depends on the (curator-defined, potentially aging) list of sources it searches.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Search Engine Finder CSE"
+    ],
+    "tags": [
+      "search-engine",
+      "custom-search",
+      "metasearch"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-engine-finder.md"
   },
   {

@@ -80,7 +80,7 @@ kind: group-index
 - **`expertengine`** (high) — Use when you have a subject `name` or a technical discipline and want to confirm whether they are a listed expert witness/consultant — retur
 - **`expertisefinder`** (medium) — OSINT tool: ExpertiseFinder.
 - **`expertpages`** (medium) — OSINT tool: ExpertPages.
-- **`experts-com`** (medium) — OSINT tool: Experts.com.
+- **`experts-com`** (medium) — Use when you have a `name` or field and want to check if someone is a listed expert witness/consultant — returns employer-org, credentials, 
 - **`family-search`** (high) — Use when you have a `name` and want the largest free genealogy archive — returns birth/marriage/death, census, immigration records with `dob
 - **`familysearch-2`** (high) — Use when you have a `name` and want genealogical records — returns birth/marriage/death records, family links (`associate`), historical `add
 - **`familytree`** (high) — Use when you have a `name` and want a free US map of relatives, past/current addresses and age — returns `associate`, `address`, `dob`, `pho

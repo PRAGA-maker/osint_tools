@@ -234,7 +234,7 @@ kind: group-index
 - **`outage-map`** (low) — OSINT tool: Outage map.
 - **`overpass-api`** (medium) — Use when you have a `geolocation` and want to query OpenStreetMap features or see map edits over a date range — returns matching OSM objects
 - **`overpass-turbo`** (high) — Use when you need to find every place matching specific features (e.g., all schools/churches/diners with a feature) within an area — query O
-- **`pastvu-com`** (medium) — View historical photos taken at a particular location on a map.
+- **`pastvu-com`** (medium) — Use when you have a `geolocation` or an old `image` and want historical photos mapped to that spot — returns dated, geolocated imagery to co
 - **`peakfinder`** (high) — Use when an outdoor photo shows a mountain skyline and you want to identify peaks or confirm/narrow the camera location by matching the hori
 - **`pedestriansfirst`** (medium) — Evaluate the pedestrian friendliness of streets in different cities. There is a lot of detailed data that will be useful both for choosing a
 - **`perry-castaneda-library`** (high) — Use when you have a place name or region and need historical/topographic/political reference maps to interpret a geolocation.

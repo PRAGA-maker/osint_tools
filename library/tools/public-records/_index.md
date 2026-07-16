@@ -625,7 +625,7 @@ kind: group-index
 - **`michigan`** (high) — Use when you have a `name` and want to check whether someone is or was recently under Michigan corrections supervision — returns name, dob, 
 - **`microsoft-academic-research`** (medium) — Academic-related search engine focusing on science and research; includes over 220,000,000 papers and 48,000 journals
 - **`milwaukee-wisconsin-city-employee-salaries-2019`** (medium) — OSINT tool: Milwaukee Wisconsin City Employee Salaries 2019.
-- **`ministry-of-corporate-affairs-india`** (medium) — Business-related search engine that searches by company name
+- **`ministry-of-corporate-affairs-india`** (medium) — Use when you have an Indian company `name` or `employer-org` and want official registry master data — returns registered address, incorporat
 - **`minnesota-registered-voter-verification`** (medium) — Minnesota registered voter verification and search
 - **`minnesota`** (high) — Use when you have a `name` (or MNDOC offender ID) and want to check Minnesota state custody — returns offender ID, offense, custody status, 
 - **`missouri-registered-voter-verification`** (medium) — Missouri registered voter verification and search
@@ -851,7 +851,7 @@ kind: group-index
 - **`residential`** (high) — Use when you have a UK `address` (postcode) and want to confirm a dwelling exists and read its council tax band as a rough property-value / 
 - **`resources-library-ubc-ca`** (medium) — OSINT tool: Resources.library.ubc.ca.
 - **`responsesource-com`** (high) — Use when you have a `name` and want to confirm a UK journalist's outlet, beat and role — returns employer-org, social-profile, name.
-- **`rhode-island-registered-voter-verification`** (medium) — Rhode Island registered voter verification and search
+- **`rhode-island-registered-voter-verification`** (medium) — Use when you have a `name` (with DOB) for a Rhode Island resident and want to confirm voter registration and district — returns address/dist
 - **`rhode-island`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Rhode Island state corrections — returns inmate record, ID 
 - **`rias-org-uk`** (high) — Use when you have an architect's or firm `name` (or a Scottish location) and want to confirm the practice and its address — returns a charte
 - **`rics-org`** (medium) — Use when you have a `name` or `employer-org` and want to verify a chartered surveyor's RICS membership — returns the member/firm's professio
