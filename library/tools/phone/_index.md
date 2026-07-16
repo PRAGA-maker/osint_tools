@@ -93,7 +93,6 @@ kind: group-index
 - **`phonebooks-com`** (high) — Use when you have a US `phone` (or `name`) and want a reverse-lookup to an owner and address — returns `name`, `address`, `associate`.
 - **`phoneinfoga-demo`** (high) — Use when you have a `phone` and want automated number reconnaissance — returns country/carrier/line-type plus search-engine footprints (prof
 - **`phonenumber-osint`** (high) — Use when you have a `phone` number and want its basic technical metadata — returns country, region, carrier/provider, timezone, and line-typ
-- **`phoneowner`** (medium) — Reverse-phone lookup with owner identity.
 - **`phonumspy`** (high) — Use when you have a `phone` number and want carrier/location enrichment plus a web/social footprint sweep — returns geolocation, social-prof
 - **`phunter`** (high) — Use when you have a `phone` number and want a one-shot OSINT profile of it — returns country/operator, line type, location hints, reputation
 - **`pleasepress1-com`** (high) — Use when you have a customer-service `phone` number and want to attribute it to a company and see its call-menu structure — returns employer

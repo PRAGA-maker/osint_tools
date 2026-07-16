@@ -213,7 +213,7 @@ kind: group-index
 - **`vin-check-and-get-vehicle-history-report`** (medium) — Use when you have a `vin` (or plate to look up a VIN) and want to decode the vehicle and screen for theft/salvage flags — returns vehicle ph
 - **`vin-check-reports`** (medium) — OSINT tool: VIN Check Reports.
 - **`vin-decoder-and-lookup`** (low) — Use when you have a `vin` and want to decode the vehicle's year, make, model and specs for free — returns a physical-description to confirm 
-- **`vin-decoder`** (medium) — OSINT tool: VIN decoder.
+- **`vin-decoder`** (medium) — Use when you have a `vin` and want the vehicle's factory specification and build details — returns make/model/year/engine and manufacturing 
 - **`vin-info`** (medium) — OSINT tool: Vin-Info.
 - **`vin-lookup`** (medium) — OSINT tool: VIN Lookup.
 - **`vin-place-vehicle-registration-reports`** (medium) — OSINT tool: Vin Place (Vehicle Registration Reports).

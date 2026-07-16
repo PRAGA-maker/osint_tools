@@ -35,7 +35,7 @@ kind: group-index
 - **`gosearch`** (high) — Use when you have a `username` and want fast enumeration across 300+ sites plus breach/infostealer hits — returns `social-profile` links and
 - **`instant-username`** (high) — Use when you have a `username` and want a fast real-time check of where it exists — returns which of hundreds of sites have that handle regi
 - **`knowem`** (high) — Use when you have a `username` and want to see, across 500+ networks, where it is already taken — returns per-platform availability implying
-- **`linktree`** (medium) — Link-in-bio aggregator; a handle reveals a person's linked profiles and sites.
+- **`linktree`** (medium) — Use when you have a Linktree `username`/handle and want the person's aggregated set of links — returns their linked `social-profile` account
 - **`maigret-2`** (high) — Use when you have a `username` and want to enumerate accounts across thousands of sites and pull a linked dossier (bios, avatars, IDs) — ret
 - **`maigret-via-socid-extractor-soxoj-ecosystem`** (high) — Use when you have a profile URL/`social-profile` and want the hidden identifiers behind it — socid_extractor scrapes real `name`, user ID, `
 - **`maigret`** (high) — Use when you have a `username` and want a full cross-platform dossier — checks 3000+ sites and scrapes profile data, returning social-profil

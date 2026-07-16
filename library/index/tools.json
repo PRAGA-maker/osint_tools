@@ -18437,40 +18437,50 @@
   {
     "id": "cachedview",
     "name": "CachedView",
-    "description": "OSINT tool: CachedView.",
+    "description": "Use when you have a `domain`/URL and want to view archived snapshots of that page — returns historical captures (via the Wayback Machine) as `document-id`.",
     "url": "http://cachedview.com",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A quick front-end for pulling up cached/archived versions of a specific webpage that has changed or gone offline.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You paste a URL and it hands off to public archive services (Wayback Machine). The origin site is not contacted by you, so it does not learn you looked — passive. Use a clean browser for sensitive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A thin third-party front-end that redirects to established archives (archive.org); the archived content itself is authoritative, this is just a convenience lookup.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "web-history-and-website-capture"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "cached-view"
     ],
+    "aliases": [
+      "cachedview.com"
+    ],
+    "tags": [
+      "web-history-and-website-capture",
+      "cache"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/cachedview.md"
   },
   {
@@ -112724,47 +112734,55 @@
   },
   {
     "id": "coinatmradar-com",
-    "name": "coinatmradar.com",
-    "description": "OSINT tool: coinatmradar.com.",
-    "url": "https://coinatmradar.com/country/225/bitcoin-atm-united-kingdom/",
+    "name": "CoinATM Radar",
+    "description": "Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operator details for Bitcoin ATMs.",
+    "url": "https://coinatmradar.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the physical locations, operators and fees of Bitcoin/crypto ATMs and tellers in a given city or country.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "geolocation"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "address",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for visitors to search and browse; paid services target ATM operators (promotion, featured listings, map integration), not researchers.",
+    "opsec": "passive",
+    "opsecNote": "You search a location for public ATM listings; no subject data is submitted and no one is alerted. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "The best-known global directory of crypto ATMs; listings are operator/community sourced, so verify a specific machine's current status on site.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bitcoin-atm-map"
     ],
+    "aliases": [
+      "coinatmradar.com",
+      "Coin ATM Radar",
+      "Bitcoin ATM Map"
+    ],
+    "tags": [
+      "cryptosites",
+      "CryptoCurrency Related Sites",
+      "bitcoin-atm"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/coinatmradar-com.md"
   },
   {
@@ -151976,43 +151994,51 @@
   {
     "id": "snopes",
     "name": "Snopes",
-    "description": "Rapid validation of widely shared rumors and internet folklore",
+    "description": "Use when you have a viral claim, rumor, image or story (a `document-id`) and want to check whether it is true — returns a sourced verdict and citation trail.",
     "url": "https://www.snopes.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "fact-checking-tools"
     ],
-    "bestFor": "Rapid validation of widely shared rumors and internet folklore",
-    "input": "Rumors, claims, memes, and circulating stories",
-    "output": "Investigative write-ups with verdicts and citation trails",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quickly checking whether a widely-circulated rumor, meme, image or story has already been investigated and rated true/false.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to read all fact-checks; no account required.",
     "opsec": "passive",
-    "opsecNote": "Public resource; user activity is limited to normal web browsing telemetry.",
+    "opsecNote": "Searching a public fact-check archive reveals nothing about a subject; activity is limited to normal web-browsing telemetry. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "One of the oldest and most established fact-checking outlets; articles carry explicit verdicts and cited sourcing you can follow and verify.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "snopes-fact-checker"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "snopes.com"
+    ],
+    "tags": [
+      "fact-checking",
+      "misinformation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fact-checking-tools/snopes.md"
   },
   {
@@ -214017,51 +214043,6 @@
     "_file": "library/tools/phone/phonenumber-osint.md"
   },
   {
-    "id": "phoneowner",
-    "name": "PhoneOwner",
-    "description": "Reverse-phone lookup with owner identity.",
-    "url": "https://phoneowner.com/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "Reverse phone lookup returning owner name and address.",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "phone",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "us"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "phone",
-      "reverse-phone"
-    ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/phoneowner.md"
-  },
-  {
     "id": "phonumspy",
     "name": "PhoNumSpy",
     "description": "Use when you have a `phone` number and want carrier/location enrichment plus a web/social footprint sweep — returns geolocation, social-profile, and name leads.",
@@ -240057,38 +240038,52 @@
   },
   {
     "id": "inciteful",
-    "name": "INCITEFUL",
-    "description": "Enter paper title, DOI, PubMed URl, arXiv URL to build a graph of links between the research article and other publications (who it cites and who cites it)",
+    "name": "Inciteful",
+    "description": "Use when you have a `document-id` (a paper's title/DOI/arXiv/PubMed link) and want its citation network — returns connected papers and their authors as `document-id` and `associate` leads.",
     "url": "https://inciteful.xyz/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Building a citation graph around a research paper to map who cites it, who it cites, and the co-authors/researchers connected to it.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You submit only public paper identifiers to an academic-citation service; nothing about a private subject is revealed and no target is contacted. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Independent academic tool built on open citation datasets (Semantic Scholar / OpenAlex style data); facts are traceable to the underlying papers, but it is not an official index.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "INCITEFUL",
+      "inciteful.xyz"
+    ],
     "tags": [
-      "Science"
+      "Science",
+      "academic",
+      "citation-graph"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/inciteful.md"
   },
   {
@@ -294550,41 +294545,50 @@
   {
     "id": "numbeo",
     "name": "Numbeo",
-    "description": "Worldwide database of user contributed data on living conditions - including living costs, housing indicators, health care, traffic, crime and pollution",
+    "description": "Use when you have a `geolocation` (city/country) and want crowd-sourced living-conditions data for it — returns cost-of-living, crime, healthcare and quality-of-life context as `geolocation` intelligence.",
     "url": "http://www.numbeo.com/common/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Getting a quick, city-level read on cost of living, crime perception, healthcare and quality of life for a location tied to a case.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse; user-contributed database with optional paid data/API products for businesses. No account needed to read.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You look up a place, not a person; nothing about a subject is submitted and no one is alerted. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "The world's largest crowd-sourced cost-of-living database; figures are user-contributed estimates, useful for context and comparison rather than precise fact.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "numbeo.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "cost-of-living"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/numbeo.md"
   },
   {
@@ -302595,25 +302599,31 @@
   {
     "id": "sitejabber",
     "name": "Sitejabber",
-    "description": "Website related to online business reviews",
-    "url": "http://www.sitejabber.com",
+    "description": "Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `social-profile` reviewer accounts.",
+    "url": "https://www.sitejabber.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading consumer reviews of a website/business and mining the reviewer profiles that wrote them.",
+    "selectorsIn": [
+      "domain",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read reviews and reviewer profiles; the platform's paid products (now branded SmartCustomer) target businesses, not readers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading public reviews and profiles reveals nothing about your subject to the site or to the reviewers. Passive; normal browsing hygiene applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "Long-running consumer-review platform (business side now \"SmartCustomer\"); reviews are user-generated and can be gamed, so weigh them as leads, not proof.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -302621,15 +302631,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "sitejabber.com",
+      "SmartCustomer"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "reviews"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/sitejabber.md"
   },
   {
@@ -320745,44 +320760,54 @@
   },
   {
     "id": "geochirp",
-    "name": "Geochirp",
-    "description": "OSINT tool: Geochirp.",
+    "name": "GeoChirp",
+    "description": "Use when you have a `geolocation` or keyword and want to find tweets/Twitter users near a place on a map — returns `social-profile` and `geolocation` matches (functionality now impaired by X API limits).",
     "url": "http://www.geochirp.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Map-based geographic Twitter/X search — finding tweets and users around a location on a Google Map.",
     "selectorsIn": [
-      "username",
-      "name"
+      "geolocation",
+      "username"
     ],
     "selectorsOut": [
       "social-profile",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to use, but now requires a logged-in Twitter/X account and is constrained by X's API restrictions.",
+    "opsec": "active",
+    "opsecNote": "It now requires you to authenticate with a Twitter/X account, so any use is tied to that account and visible to X — always use a dedicated sock-puppet account, never your own, and expect limited or no results due to API throttling.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "trustNote": "A 2009-era Twitter/Google Maps mashup (CueBlocks); the site still loads but its usefulness has been undercut by X's post-2023 API lockdown — verify it returns results before relying on it.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Geochirp",
+      "geochirp.com"
+    ],
     "tags": [
-      "twitter"
+      "twitter",
+      "geosocial"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/geochirp.md"
   },
   {
@@ -366848,39 +366873,53 @@
   },
   {
     "id": "vin-decoder",
-    "name": "VIN decoder",
-    "description": "OSINT tool: VIN decoder.",
+    "name": "VIN Decoder (VINDecoderz)",
+    "description": "Use when you have a `vin` and want the vehicle's factory specification and build details — returns make/model/year/engine and manufacturing data tied to that `vin`.",
     "url": "http://www.vindecoderz.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Decoding a 17-character VIN into the vehicle's make, model, year, engine, plant and equipment details, free and without an account.",
+    "selectorsIn": [
+      "vin"
+    ],
+    "selectorsOut": [
+      "vehicle-plate",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Core VIN decoding is free and needs no account; deeper history/report products (paid) are upsold but not required for the spec decode.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You submit only a VIN (which describes the vehicle, not a person) to a decoding site. No owner data is queried and no one is alerted. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "One of many third-party VIN decoders; the decode follows the manufacturer VIN standard, so core spec fields are reliable, but it is not an official registry.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "free-vin-decoder-vindecoderz"
     ],
+    "aliases": [
+      "VINDecoderz",
+      "vindecoderz.com"
+    ],
+    "tags": [
+      "vehicle",
+      "vin"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vin-decoder.md"
   },
   {
@@ -369148,13 +369187,13 @@
   {
     "id": "linktree",
     "name": "Linktree",
-    "description": "Link-in-bio aggregator; a handle reveals a person's linked profiles and sites.",
+    "description": "Use when you have a Linktree `username`/handle and want the person's aggregated set of links — returns their linked `social-profile` accounts and `domain` destinations.",
     "url": "https://linktr.ee/",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Resolve a Linktree handle to a person's aggregated links and social profiles.",
+    "bestFor": "Resolving a Linktree handle into the full set of social profiles, sites and contact links a person chose to publish in one place.",
     "selectorsIn": [
       "username"
     ],
@@ -369162,15 +369201,16 @@
       "social-profile",
       "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Viewing a public Linktree page is free and requires no account; free/paid tiers only affect page owners, not viewers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are viewing a public bio page the subject published themselves; visiting it does not notify them. Passive — but Linktree pages can carry click-tracking, so route through a sock-puppet browser/VPN for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "First-party hosted, self-published link pages; the links are exactly what the account owner chose to expose, so they are authentic but curated (not exhaustive).",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -369179,15 +369219,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "linktr.ee",
+      "link-in-bio"
+    ],
     "tags": [
       "username",
       "link-in-bio",
       "social-linkage"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/username/linktree.md"
   },
   {

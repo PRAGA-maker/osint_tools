@@ -32,7 +32,7 @@ kind: group-index
 - **`bridge-leslibres`** (low) — OSINT tool: Bridge.Leslibres.
 - **`bridge-suumitsu`** (low) — OSINT tool: Bridge.Suumitsu.
 - **`cachedview-b4your-com`** (medium) — quick search website old versions in different search engines and archives
-- **`cachedview`** (medium) — OSINT tool: CachedView.
+- **`cachedview`** (low) — Use when you have a `domain`/URL and want to view archived snapshots of that page — returns historical captures (via the Wayback Machine) as
 - **`carbon-dating-the-web`** (medium) — OSINT tool: Carbon Dating The Web.
 - **`cashedpages`** (medium) — OSINT tool: CashedPages.
 - **`changedetection-io-open-source`** (low) — OSINT tool: ChangeDetection.io Open Source.

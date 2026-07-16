@@ -561,7 +561,7 @@ kind: group-index
 - **`nod`** (low) — OSINT tool: Nod.
 - **`notey`** (low) — OSINT tool: Notey.
 - **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.
-- **`numbeo`** (medium) — Worldwide database of user contributed data on living conditions - including living costs, housing indicators, health care, traffic, crime a
+- **`numbeo`** (low) — Use when you have a `geolocation` (city/country) and want crowd-sourced living-conditions data for it — returns cost-of-living, crime, healt
 - **`oa-mg`** (low) — OSINT tool: OA.mg.
 - **`occrp-org`** (medium) — Organized Crime and Corruption Reporting Project compiled public data sources, search by Continent, Country and data type
 - **`oceanhero`** (medium) — Charitable search engine that supports our oceans.
@@ -746,7 +746,7 @@ kind: group-index
 - **`similar-site-search`** (medium) — Search engine that searches for websites and webages similar to the original entry made by the user
 - **`similarsites-com`** (medium) — Discover websites that are similar to each other
 - **`similarsites`** (low) — OSINT tool: SimilarSites.
-- **`sitejabber`** (medium) — Website related to online business reviews
+- **`sitejabber`** (low) — Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `s
 - **`sitelike`** (medium) — Website allowing users to search for related or similar sites.
 - **`siteslike`** (low) — OSINT tool: SitesLike.
 - **`slack-discord-zoom-invites-search`** (medium) — OSINT tool: Slack/Discord/Zoom Invites Search.

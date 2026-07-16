@@ -211,7 +211,7 @@ kind: group-index
 - **`gab-social`** (high) — Use when you have a `name`/`username` and suspect the subject uses the alt-tech network Gab — returns their `social-profile`, posts, and con
 - **`gallery-dl`** (medium) — Quick and simple tool for downloading image galleries and collections from #flickr, #danbooru, #pixiv, #deviantart, #exhentai
 - **`gapowork-com`** (high) — Use when a Vietnamese subject's `employer-org` uses GapoWork and you're identifying the platform — a closed enterprise workspace, so it yiel
-- **`geochirp`** (medium) — OSINT tool: Geochirp.
+- **`geochirp`** (low) — Use when you have a `geolocation` or keyword and want to find tweets/Twitter users near a place on a map — returns `social-profile` and `geo
 - **`geocreepy`** (high) — Use when you want to aggregate a target's geotagged social-media posts onto a map to infer locations/pattern-of-life — returns `geolocation`
 - **`get-user-info`** (medium) — OSINT tool: Get User info.
 - **`getdaytrends`** (low) — Use when you have a place and time and want the historical Twitter/X trending topics there — returns trend/hashtag context to anchor an even

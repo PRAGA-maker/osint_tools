@@ -49,7 +49,7 @@ kind: group-index
 - **`chainalysis`** (low) — OSINT tool: Chainalysis.
 - **`checkmyfile-com`** (medium) — OSINT tool: checkmyfile.com.
 - **`china-related-resources`** (low) — Resources for research on companies in China.,
-- **`coinatmradar-com`** (medium) — OSINT tool: coinatmradar.com.
+- **`coinatmradar-com`** (low) — Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operat
 - **`coinbase-com`** (low) — OSINT tool: Coinbase.com.
 - **`coinchoose-com`** (medium) — OSINT tool: coinchoose.com.
 - **`coinmap`** (low) — OSINT tool: CoinMap.

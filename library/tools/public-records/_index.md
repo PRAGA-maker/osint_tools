@@ -486,7 +486,7 @@ kind: group-index
 - **`imiregister-org-uk`** (medium) — Use when you have a `name` and think the subject is a UK automotive professional, and want to verify their accreditation and workplace — ret
 - **`immo-data-fr`** (high) — Use when you have a French `address` and want the property's recorded sale prices and transaction history — returns geolocation and price/da
 - **`inc-5000`** (medium) — OSINT tool: Inc. 5000.
-- **`inciteful`** (medium) — Enter paper title, DOI, PubMed URl, arXiv URL to build a graph of links between the research article and other publications (who it cites an
+- **`inciteful`** (low) — Use when you have a `document-id` (a paper's title/DOI/arXiv/PubMed link) and want its citation network — returns connected papers and their
 - **`independent-fundamental-baptist-sexual-misconduct-database`** (high) — Use when you have a `name` possibly tied to Independent Fundamental Baptist church abuse and want the Star-Telegram's documented cases — ret
 - **`index-mundi`** (low) — OSINT tool: Index Mundi.
 - **`indiana-offender-database-search`** (high) — Use when you have a `name` (or DOC number) and want to check Indiana incarceration status — returns offender ID, DOB, offense, facility and 
