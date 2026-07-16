@@ -2,20 +2,20 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8427 total · 2522 full · 5905 stub (29% enriched)
+**Tools:** 8426 total · 2531 full · 5895 stub (30% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3303 · low: 3186 · high: 1938
+medium: 3295 · low: 3193 · high: 1938
 
 ## Tools by trust
-unverified: 4461 · community: 3134 · trusted: 819 · personal: 7 · untrustworthy: 6
+unverified: 4451 · community: 3141 · trusted: 821 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 5/457
-- `archives-cache` — 5/144
+- `archives-cache` — 6/144
 - `communities-forums` — 8/435
 - `dark-web` — 3/121
 - `dating-classifieds` — 24/117
@@ -23,17 +23,17 @@ unverified: 4461 · community: 3134 · trusted: 819 · personal: 7 · untrustwor
 - `domains-ip-infrastructure` — 6/773
 - `email` — 239/246
 - `evidence-capture` — 2/33
-- `financial-crypto` — 2/134
-- `geolocation` — 157/358
+- `financial-crypto` — 4/134
+- `geolocation` — 158/358
 - `image-video-face` — 352/482
 - `maps-geospatial-data` — 4/147
-- `messaging` — 135/203
-- `opsec-investigator-tooling` — 6/567
+- `messaging` — 136/203
+- `opsec-investigator-tooling` — 7/567
 - `people-search` — 214/276
 - `phone` — 129/139
 - `public-records` — 537/1144
-- `search-engines` — 65/984
-- `social-networks` — 510/892
+- `search-engines` — 66/984
+- `social-networks` — 512/891
 - `training-ctf` — 0/12
 - `translation-language` — 2/103
 - `transportation` — 16/236
@@ -43,7 +43,7 @@ unverified: 4461 · community: 3134 · trusted: 819 · personal: 7 · untrustwor
 
 - `library/tools/public-records` — 1076 leaves
 - `library/tools/search-engines` — 913 leaves
-- `library/tools/social-networks` — 863 leaves
+- `library/tools/social-networks` — 862 leaves
 - `library/tools/domains-ip-infrastructure` — 529 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/ai-analysis-automation` — 421 leaves

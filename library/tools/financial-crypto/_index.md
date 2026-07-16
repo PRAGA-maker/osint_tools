@@ -32,7 +32,7 @@ kind: group-index
 - **`bitcoin-explorer`** (low) — OSINT tool: Bitcoin Explorer.
 - **`bitcoin-forums-search-engine`** (low) — OSINT tool: Bitcoin Forums Search Engine.
 - **`bitcoin-org`** (medium) — OSINT tool: bitcoin.org.
-- **`bitcoinpaths-com`** (medium) — OSINT tool: bitcoinpaths.com.
+- **`bitcoinpaths-com`** (low) — Use when you have two `crypto-wallet` selectors (Bitcoin addresses/txids) and want to find the shortest chain of transactions linking them —
 - **`bitcoinwhoswho`** (low) — OSINT tool: Bitcoinwhoswho.
 - **`bitinfocharts-com`** (medium) — OSINT tool: bitinfocharts.com.
 - **`blockchain-com`** (low) — OSINT tool: Blockchain.com.
@@ -89,7 +89,7 @@ kind: group-index
 - **`insolvency-govt-nz`** (medium) — OSINT tool: insolvency.govt.nz.
 - **`insolvencydirect-bis-gov-uk`** (medium) — OSINT tool: insolvencydirect.bis.gov.uk.
 - **`jahs-ie`** (medium) — OSINT tool: jahs.ie.
-- **`learnmeabitcoin-com`** (medium) — OSINT tool: learnmeabitcoin.com.
+- **`learnmeabitcoin-com`** (low) — Use when you have a `crypto-wallet` (Bitcoin address or txid) and want to inspect its raw on-chain data and understand how to read it — retu
 - **`live-coin-watch`** (low) — OSINT tool: Live Coin Watch.
 - **`matbea`** (low) — OSINT tool: Matbea.
 - **`medium-com`** (medium) — OSINT tool: medium.com.

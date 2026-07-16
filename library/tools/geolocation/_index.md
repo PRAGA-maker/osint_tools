@@ -145,7 +145,7 @@ kind: group-index
 - **`hivemapper`** (medium) — Use when you have a `geolocation` and want recent crowdsourced/dashcam street-level imagery, sometimes fresher than Google Street View.
 - **`hong-kong-traffic-data-and-cams`** (low) — OSINT tool: Hong Kong Traffic Data & Cams.
 - **`honolulu-traffic-cams`** (low) — OSINT tool: Honolulu Traffic Cams.
-- **`hungermap`** (medium) — Worldwide Hunger Map
+- **`hungermap`** (low) — Use when you have a `geolocation` (country/region) and want live food-security, conflict and hazard context for it — returns situational `ge
 - **`huntel-io`** (medium) — get a list of links to Facebook/Instagram locations linked to geographic coordinates
 - **`i-know-where-your-cat-lives`** (medium) — geottaged photo from Instagram with #cat hashtag
 - **`i-see-you-iseeyou`** (medium) — Bash/JS tool to find a user's exact location during social-engineering or phishing.

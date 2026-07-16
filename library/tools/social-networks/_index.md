@@ -69,7 +69,6 @@ kind: group-index
 - **`blueskydirectory-com`** (high) — Use when you have a `name`, `username`, or interest and want to find or search Bluesky (bsky/AT Protocol) profiles, lists, and starter packs
 - **`blueskymeter-com`** (high) — Use when you have a Bluesky `username` (handle) and want public account analytics — returns follower/engagement metrics and profile activity
 - **`bot-sentinel-dashboard-bot-sentinel`** (low) — OSINT tool: Bot Sentinel Dashboard ‹ Bot Sentinel.
-- **`botcheck-me`** (medium) — OSINT tool: Botcheck.me.
 - **`botometer-by-osome`** (low) — OSINT tool: Botometer by OSoMe.
 - **`botometer`** (medium) — OSINT tool: Botometer.
 - **`botslayer`** (low) — OSINT tool: BotSlayer.
@@ -449,7 +448,7 @@ kind: group-index
 - **`pinterest-guest-firefox-add-on`** (low) — Firefox add-on for browsing Pinterest without an account.
 - **`pinterest-pin-stats`** (high) — Use when you have a Pinterest `username`/board and want each pin's engagement and creation date to reconstruct activity timing — returns soc
 - **`pixnoy-com`** (high) — Use when you have an Instagram `username` and want to view/download a public profile's posts, stories and highlights without logging in — re
-- **`pockettube`** (medium) — YouTube Subscription Manager
+- **`pockettube`** (low) — Use when you have a set of YouTube channels (`social-profile`/`username`) to monitor and want them grouped, deduped and watched in one feed 
 - **`pogu-live`** (medium) — Tool that allows you to watch sub only or deleted VODs for free. It works because when a streamer deletes a video, iit is not deleted from T
 - **`pokoinsta-com`** (high) — Use when you have an Instagram `username` and want the target's full-size profile picture without logging in — returns the HD profile `image
 - **`ppl-contact`** (medium) — Use when you have a `name` + `employer-org` (or company `domain`) and want a person's business `email`/`phone` — returns B2B contact details
@@ -726,7 +725,7 @@ kind: group-index
 - **`twitrss`** (medium) — OSINT tool: TwitRSS.
 - **`twitter-3d`** (medium) — 3D viewer of relationships between twitter users.
 - **`twitter-account-detector`** (medium) — A simple and fast Chrome extension that finds all Twitter accounts on a site.
-- **`twitter-archive-parser`** (medium) — In case your Twitter account is blocked, it's usefull to open settings and download account data. This tool extracts the most important info
+- **`twitter-archive-parser`** (low) — Use when you have a downloaded Twitter/X account archive and want it turned into readable, media-embedded tweets plus follower lists — retur
 - **`twitter-audit`** (low) — Use when you have an X (Twitter) `username` and want a rough estimate of how many of its followers look fake vs real — returns a real/fake f
 - **`twitter-bot-checker`** (low) — OSINT tool: Twitter Bot Checker.
 - **`twitter-chat-schedule`** (high) — Use when you have a subject's topic/interest or a hashtag and want to find the recurring Twitter/X chats and moderators around it — returns 

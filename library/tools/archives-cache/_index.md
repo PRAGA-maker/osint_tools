@@ -63,7 +63,7 @@ kind: group-index
 - **`industrydocuments-ucsf-edu`** (medium) — digital archive of documents created by industries which influence public health (tobacco, chemical, drug, fossil fuel)
 - **`infominder`** (low) — OSINT tool: InfoMinder.
 - **`internet-archive-wayback-machine-link-ripper`** (medium) — Enter a host or URL to retrieve the links to the URL's archived versions at [http://wayback.archive.org](http://wayback.archive.org). A text
-- **`kiwix-org`** (medium) — OSINT tool: kiwix.org.
+- **`kiwix-org`** (low) — Use when you need offline, censorship-proof access to a whole website/wiki (a `domain`) — returns a locally-served snapshot whose articles y
 - **`linctas-ent-sirsidynix-net-au`** (medium) — OSINT tool: linctas.ent.sirsidynix.net.au.
 - **`linkedin-com`** (medium) — OSINT tool: linkedin.com.
 - **`lumen`** (low) — A research project collecting and publishing legal takedown notices for online content transparency

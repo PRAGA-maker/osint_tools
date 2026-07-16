@@ -36,6 +36,7 @@ relatedTools:
 - epieos
 - follower-wonk-compare
 - search-twitter-bios-and-profiles
+- followerwonk-tools-for-twitter-analytics-bio-search-and-more
 aliases:
 - Follower Wonk
 tags:

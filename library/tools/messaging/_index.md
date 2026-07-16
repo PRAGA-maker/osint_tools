@@ -178,7 +178,7 @@ kind: group-index
 - **`tgramsearch`** (medium) — Use when you have a keyword, topic, or `username` and want to find related Telegram channels — returns a catalogue of channels with names, d
 - **`tgscanrobot`** (medium) — telegram bot to show which telegram groups a person is member of.
 - **`tgspyder`** (medium) — Telegram analysis tool for social media intelligence and threat research.
-- **`tgstat-ru`** (medium) — Russian Telegram analytics platform.
+- **`tgstat-ru`** (medium) — Use when you have a Telegram channel/`username`, `name` or keyword and want to find and analyze public Telegram channels and posts — returns
 - **`tlgrm-eu-channels`** (medium) — Search Telegram channels.
 - **`transcriber-bot`** (medium) — telegram bot, which can convert to text voice messages in 24 languages (view pic)
 - **`trunk`** (medium) — 200+ thematic lists of accounts in Mastodon. Python, JavaScript, Vim, Ruby, Privacy, Linux... There are even nudists and Tarot. The Pytrunk 

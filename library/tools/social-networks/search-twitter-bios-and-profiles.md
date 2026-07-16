@@ -49,6 +49,7 @@ enrichment: full
 relatedTools:
 - follower-wonk-compare
 - followerwonk
+- followerwonk-tools-for-twitter-analytics-bio-search-and-more
 ---
 
 # Search Twitter Bios and Profiles (Followerwonk)
