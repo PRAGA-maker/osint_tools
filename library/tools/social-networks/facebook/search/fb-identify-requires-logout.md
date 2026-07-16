@@ -40,6 +40,17 @@ deprecated: false
 relatedTools:
 - facebook-search
 - account-live-com
+- facebook
+- facebook-ad-s-link
+- facebook-com
+- facebook-com-2
+- facebook-directory-users-by-name
+- facebook-live-map
+- facebook-photos-by-id
+- facebook-profile-directory
+- facebook-watch
+- fb-email-search
+- recover-fb-account
 aliases:
 - Facebook Find Your Account
 - facebook.com/login/identify

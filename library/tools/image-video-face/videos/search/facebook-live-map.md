@@ -39,6 +39,16 @@ invitationOnly: false
 deprecated: false
 relatedTools:
 - facebook-watch
+- facebook
+- facebook-ad-s-link
+- facebook-com
+- facebook-com-2
+- facebook-directory-users-by-name
+- facebook-photos-by-id
+- facebook-profile-directory
+- fb-email-search
+- fb-identify-requires-logout
+- recover-fb-account
 aliases:
 - facebook.com/live
 - FB Live

@@ -135,7 +135,6 @@ kind: group-index
 - **`brownbook`** (medium) — OSINT tool: BrownBook.
 - **`buffalo-police`** (medium) — OSINT tool: Buffalo Police.
 - **`bulgaria`** (high) — OSINT tool: Bulgaria.
-- **`burial-records-uk`** (high) — OSINT tool: Burial Records (UK).
 - **`business-directory-occ`** (low) — OSINT tool: Business Directory \| OCC.
 - **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s
 - **`business-govt-nz`** (high) — Use when you have a business `name`/brand and want to see if it is registered or claimed in New Zealand — returns availability across compan
@@ -212,7 +211,6 @@ kind: group-index
 - **`connecticut-registered-voter-verification`** (medium) — Connecticut voter registration verification and search
 - **`connecticut`** (high) — Use when you have a `name` or DOC number and want to locate a person currently held in Connecticut state prison/jail — returns custody statu
 - **`connvoters-com`** (high) — Use when you have a `name` (and roughly a Connecticut location) and want the subject's registered address, town, party and DOB from the stat
-- **`convicted-sex-offenders-list`** (high) — OSINT tool: Convicted Sex Offenders List.
 - **`cop26-registered-attendees`** (medium) — OSINT tool: COP26 registered attendees.
 - **`coplookup-com`** (medium) — OSINT tool: Coplookup.com.
 - **`coraweb-birth-death-and-marriage-records-australia`** (high) — Use when you have a `name` and an Australian connection and want a curated directory of BDM/vital-record and genealogy sources to search — r
@@ -504,7 +502,6 @@ kind: group-index
 - **`independent-fundamental-baptist-sexual-misconduct-database`** (high) — Use when you have a `name` possibly tied to Independent Fundamental Baptist church abuse and want the Star-Telegram's documented cases — ret
 - **`index-mundi`** (low) — OSINT tool: Index Mundi.
 - **`indiana-offender-database-search`** (high) — Use when you have a `name` (or DOC number) and want to check Indiana incarceration status — returns offender ID, DOB, offense, facility and 
-- **`indiancompany-info`** (high) — OSINT tool: indiancompany.info.
 - **`info-clipper-com`** (high) — Use when you have a company `name` (or an `employer-org`/`phone`) and want its registry profile, directors and address across 200 countries 
 - **`infocreditgroup-com`** (medium) — Use when you have a company `name` or a person's `name` tied to a business and want credit, ownership, and due-diligence/KYC data across 130
 - **`infoempresa-com`** (high) — Use when you have a `name` or company and want to find a subject's Spanish company directorships, shareholdings, or registered addresses — r
@@ -582,7 +579,7 @@ kind: group-index
 - **`lawsociety-org-uk`** (high) — Use when you have a `name` or firm and want to confirm a solicitor's registration and workplace in England & Wales — returns the solicitor's
 - **`le-necrologue-obituary-search-canada`** (high) — Use when you have a `name` and want Canadian death notices/obituaries — returns `dob`/death date, `address` (city/province), funeral home an
 - **`lebanon-county-pa-2017-search-and-report`** (medium) — OSINT tool: Lebanon County PA 2017 Search and Report.
-- **`lefigaro-fr`** (high) — OSINT tool: lefigaro.fr.
+- **`lefigaro-fr`** (high) — Use when you have a French company `name`/`employer-org` or a director `name` and want free company records and leadership data — returns em
 - **`legacy-com`** (high) — Use when you have a `name` and want to find a death notice or obituary — returns date of death, age, location, funeral home and surviving/pr
 - **`legacy`** (high) — Use when you have a `name` and want to find a published obituary/memorial to confirm a death and harvest family detail — returns death date,
 - **`legal-entity-types-by-country`** (low) — OSINT tool: Legal Entity Types by Country.
@@ -707,7 +704,7 @@ kind: group-index
 - **`nibusinessinfo-co-uk`** (high) — Use when you have a Northern Ireland `address` or business and want its rating valuation — a guidance portal that links to the LPS valuation
 - **`nidirect-gov-uk-2`** (high) — Use when you have a Northern Ireland `address` or owner `name` and want land/property records — the official gateway routes to registers ret
 - **`nidirect-gov-uk-3`** (high) — Use when you have a landlord's name or a Northern Ireland property and want to confirm registration — returns whether a landlord/property is
-- **`nidirect-gov-uk`** (high) — OSINT tool: nidirect.gov.uk.
+- **`nidirect-gov-uk`** (high) — Use when your subject is in Northern Ireland and you need the official channel for driver/vehicle records and NI government services — retur
 - **`nigeria-sexual-offenders-registers`** (high) — Use when you have a `name` and want to check whether a person appears in Nigeria's national sexual-offenders database as reported, arraigned
 - **`niscc-org`** (high) — Use when you have a `name` and want to confirm they are a registered social worker / social care worker in Northern Ireland — returns regist
 - **`nj-police-and-fire-fy-2011-pension-contribution`** (medium) — OSINT tool: NJ Police and Fire FY 2011 Pension contribution.

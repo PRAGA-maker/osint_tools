@@ -64,7 +64,6 @@ kind: group-index
 - **`inteltechniques-telephone`** (high) — Use when you have a `phone` number and want to fan it across many phone-OSINT sources at once via Michael Bazzell's search-form tool — retur
 - **`international-numbering-plans-database`** (high) — Use when you have a `phone` (or SIM/IMSI) number and want to identify its country, network operator, and number-range validity — returns the
 - **`ipqualityscore-com-2`** (high) — Use when you have a `phone` and want to validate it — returns carrier, line type (mobile/VOIP/landline), active status, country/region and a
-- **`jtdirectory-com`** (high) — OSINT tool: jtdirectory.com.
 - **`mastdata-com`** (low) — Use when you have a `geolocation` or `address` and want to know which UK mobile operators/masts serve it and where coverage gaps are — retur
 - **`moriarty-project`** (high) — Use when you have a `phone` number and want to aggregate owner, spam-risk, related links, and possible social platforms in one CLI run — ret
 - **`nanpa-area-code-map`** (high) — Use when you have a US/Canada `phone` number and want the geographic region its area code maps to — returns geolocation (the region/state se

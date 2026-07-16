@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8663 total · 2347 full · 6316 stub (27% enriched)
+**Tools:** 8657 total · 2350 full · 6307 stub (27% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3354 · low: 3145 · high: 2164
+medium: 3354 · low: 3145 · high: 2158
 
 ## Tools by trust
-unverified: 4740 · community: 3156 · trusted: 754 · personal: 7 · untrustworthy: 6
+unverified: 4735 · community: 3154 · trusted: 755 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -30,20 +30,20 @@ unverified: 4740 · community: 3156 · trusted: 754 · personal: 7 · untrustwor
 - `messaging` — 120/232
 - `opsec-investigator-tooling` — 3/567
 - `people-search` — 209/285
-- `phone` — 127/145
-- `public-records` — 495/1183
+- `phone` — 127/144
+- `public-records` — 497/1180
 - `search-engines` — 45/993
-- `social-networks` — 486/950
+- `social-networks` — 487/949
 - `training-ctf` — 0/12
 - `translation-language` — 0/103
 - `transportation` — 1/237
-- `username` — 91/109
+- `username` — 91/108
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1115 leaves
+- `library/tools/public-records` — 1112 leaves
 - `library/tools/search-engines` — 922 leaves
-- `library/tools/social-networks` — 918 leaves
+- `library/tools/social-networks` — 917 leaves
 - `library/tools/domains-ip-infrastructure` — 533 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/image-video-face` — 444 leaves
@@ -56,13 +56,13 @@ unverified: 4740 · community: 3156 · trusted: 754 · personal: 7 · untrustwor
 - `library/tools/transportation` — 218 leaves
 - `library/tools/messaging` — 217 leaves
 - `library/tools/maps-geospatial-data` — 147 leaves
-- `library/tools/phone` — 146 leaves
+- `library/tools/phone` — 145 leaves
 - `library/tools/archives-cache` — 123 leaves
 - `library/tools/dating-classifieds` — 117 leaves
 - `library/tools/financial-crypto` — 112 leaves
 - `library/tools/dark-web` — 109 leaves
-- `library/tools/username` — 90 leaves
 - `library/tools/translation-language` — 89 leaves
+- `library/tools/username` — 89 leaves
 - `library/tools/evidence-capture` — 23 leaves
 - `library/tools/image-video-face/images/search` — 23 leaves
 - `library/tools/domains-ip-infrastructure/reputation` — 21 leaves

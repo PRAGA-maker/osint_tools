@@ -291,7 +291,6 @@ kind: group-index
 - **`hashatit`** (low) — OSINT tool: Hashatit.
 - **`hashtagify`** (medium) — OSINT tool: Hashtagify.
 - **`hatless1der-com`** (high) — Use when you have a Pinterest `username` and want to guess the account owner's `email` — an OSINT technique exploiting that Pinterest defaul
-- **`have-i-been-zucked`** (high) — OSINT tool: Have I Been Zucked?.
 - **`haveibeenzuckered`** (high) — Use when you have a `phone` number and want to know if it was exposed in the 2021 Facebook 533M breach — returns whether that number appears
 - **`here-15`** (high) — Use when a subject's trail runs into TikTok and you need to know what data TikTok holds and how law enforcement can request it — returns pro
 - **`here-16`** (high) — Use when you have a Twitch `username`/`social-profile` and a case that may justify legal process — returns the official path and requirement
@@ -822,7 +821,7 @@ kind: group-index
 - **`urlebird-com-2`** (high) — Use when you have a TikTok `username` and want to view their profile, videos, followers and bio anonymously without a TikTok account — retur
 - **`us-twitter-trend-calendar`** (medium) — OSINT tool: US Twitter Trend Calendar.
 - **`username-availability`** (low) — OSINT tool: Username Availability.
-- **`uvrx`** (high) — OSINT tool: UVRX.
+- **`uvrx`** (high) — Use when you have a person `name` or `username` and want to search across many social networks at once through one Google-custom-search fron
 - **`viddex-video-downloader-chrome-google-com`** (high) — OSINT tool: viddex video downloader (chrome.google.com).
 - **`vidnice`** (medium) — OSINT tool: Vidnice.
 - **`vimeo-search-tool`** (medium) — Use when you have a `username`, `name`, or keyword and want to build advanced Vimeo searches for people and videos — returns `social-profile

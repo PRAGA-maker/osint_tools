@@ -43,6 +43,18 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- facebook
+- facebook-ad-s-link
+- facebook-com
+- facebook-directory-users-by-name
+- facebook-live-map
+- facebook-photos-by-id
+- facebook-profile-directory
+- facebook-watch
+- fb-email-search
+- fb-identify-requires-logout
+- recover-fb-account
 ---
 
 # facebook.com (recovery / "hacked" flow)

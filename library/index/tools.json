@@ -24216,6 +24216,19 @@
     "source": "metaosint",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/communities-forums/before-reddit-optimize-a-post.md"
   },
   {
@@ -36331,6 +36344,19 @@
     "source": "metaosint",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/communities-forums/redditsearch.md"
   },
   {
@@ -39407,6 +39433,19 @@
     "source": "metaosint",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/communities-forums/trending-words-of-reddit.md"
   },
   {
@@ -55156,7 +55195,19 @@
     "registration": true,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "facebook-watch",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
+    ],
     "aliases": [],
     "tags": [],
     "source": "arf-seed",
@@ -81861,6 +81912,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/mmhdan.md"
   },
   {
@@ -91252,6 +91316,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/the-favicon-finder.md"
   },
   {
@@ -101013,6 +101090,19 @@
     "source": "uk-osint",
     "lastVerified": "",
     "enrichment": "full",
+    "relatedTools": [
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "facebook-watch",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
+    ],
     "_file": "library/tools/email/facebook-com-2.md"
   },
   {
@@ -127495,6 +127585,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/geolocation/osm-finder.md"
   },
   {
@@ -139302,7 +139405,17 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
-      "facebook-watch"
+      "facebook-watch",
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
     ],
     "aliases": [
       "facebook.com/live",
@@ -179773,6 +179886,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/opsec-investigator-tooling/cheat-sheet-maker.md"
   },
   {
@@ -197599,6 +197725,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/opsec-investigator-tooling/web-proxy.md"
   },
   {
@@ -216592,49 +216731,6 @@
     "_file": "library/tools/phone/ipqualityscore-com-2.md"
   },
   {
-    "id": "jtdirectory-com",
-    "name": "jtdirectory.com",
-    "description": "OSINT tool: jtdirectory.com.",
-    "url": "http://www.jtdirectory.com/?mode=people",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mobilephone",
-      "Mobile & Phone Related"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/jtdirectory-com.md"
-  },
-  {
     "id": "mastdata-com",
     "name": "Mastdata",
     "description": "Use when you have a `geolocation` or `address` and want to know which UK mobile operators/masts serve it and where coverage gaps are — returns cell-mast `geolocation` and coverage `metadata`, not personal data.",
@@ -226463,49 +226559,6 @@
     "_file": "library/tools/public-records/bulgaria.md"
   },
   {
-    "id": "burial-records-uk",
-    "name": "Burial Records (UK)",
-    "description": "OSINT tool: Burial Records (UK).",
-    "url": "http://www.asedonline.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "court",
-      "inmate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/burial-records-uk.md"
-  },
-  {
     "id": "business",
     "name": "Business",
     "description": "Use when you have a UK `address` and want the property's rateable value / business-rates entry as a person-to-premises link — but the 2010 list URL is dead, so use the current GOV.UK replacement.",
@@ -230265,40 +230318,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/public-records/connvoters-com.md"
-  },
-  {
-    "id": "convicted-sex-offenders-list",
-    "name": "Convicted Sex Offenders List",
-    "description": "OSINT tool: Convicted Sex Offenders List.",
-    "url": "https://www.ibbclaims.co.uk/site/services/child-abuse-and-trafficking/convicted-offenders/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/convicted-sex-offenders-list.md"
   },
   {
     "id": "cop26-registered-attendees",
@@ -245083,51 +245102,6 @@
     "_file": "library/tools/public-records/indiana-offender-database-search.md"
   },
   {
-    "id": "indiancompany-info",
-    "name": "indiancompany.info",
-    "description": "OSINT tool: indiancompany.info.",
-    "url": "https://www.indiancompany.info/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "companysites",
-      "Company Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/indiancompany-info.md"
-  },
-  {
     "id": "influence-explorer",
     "name": "Influence Explorer",
     "description": "Political influence and money tracking",
@@ -248982,47 +248956,56 @@
   },
   {
     "id": "lefigaro-fr",
-    "name": "lefigaro.fr",
-    "description": "OSINT tool: lefigaro.fr.",
+    "name": "Le Figaro Entreprises",
+    "description": "Use when you have a French company `name`/`employer-org` or a director `name` and want free company records and leadership data — returns employer-org, officer names/associates and registered address.",
     "url": "https://entreprises.lefigaro.fr/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Free French company and director lookups (financials, officers, registered address).",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free access to records for 8M+ French companies and establishments; no account required for basic company/director data.",
+    "opsec": "passive",
+    "opsecNote": "A public business directory; searching does not touch or alert any individual. Standard open-records browsing — no sock puppet strictly required, though a clean browser avoids personalization.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A Le Figaro media-affiliated directory that republishes official French registry (INSEE/RNE) data; reliable as a mirror of the official source, which remains the authority for disputes.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "fr"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "entreprises.lefigaro.fr",
+      "Figaro Entreprises"
+    ],
     "tags": [
-      "companysites",
-      "Company Related Sites"
+      "company",
+      "france",
+      "public-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/lefigaro-fr.md"
   },
   {
@@ -255314,47 +255297,58 @@
   },
   {
     "id": "nidirect-gov-uk",
-    "name": "nidirect.gov.uk",
-    "description": "OSINT tool: nidirect.gov.uk.",
+    "name": "nidirect.gov.uk (DVA Northern Ireland)",
+    "description": "Use when your subject is in Northern Ireland and you need the official channel for driver/vehicle records and NI government services — returns the authoritative contact/enquiry route for DVA and links to GRONI/PRONI records.",
     "url": "https://www.nidirect.gov.uk/contacts/driver-vehicle-agency-dva-northern-ireland",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Northern Ireland government gateway — DVA driver/vehicle enquiries plus links to civil-registration and archive records.",
     "selectorsIn": [
       "name",
       "address",
-      "employer-org"
+      "vehicle-plate"
     ],
     "selectorsOut": [
       "address",
-      "employer-org",
-      "name"
+      "name",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "The portal and its guidance are free; some record requests (certificates, driver-record enquiries) carry a statutory fee paid to the relevant agency.",
+    "opsec": "passive",
+    "opsecNote": "Reading the official government portal is passive and unattributed. Actually requesting driver/vehicle records requires a lawful basis and a formal application that ties the request to you — treat that as an active, logged, gated step.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Northern Ireland government services website; authoritative for how to reach DVA (driver/vehicle records) and the GRONI/PRONI record offices.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "nidirect",
+      "DVA Northern Ireland",
+      "Driver and Vehicle Agency NI"
+    ],
     "tags": [
-      "professionlicensing",
-      "Profession & Licensing Sites"
+      "profession-licensing",
+      "northern-ireland",
+      "public-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nidirect-gov-uk.md"
   },
   {
@@ -303937,6 +303931,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/search-engines/query-server.md"
   },
   {
@@ -323013,6 +323020,19 @@
     "source": "uk-osint",
     "lastVerified": "2026-07-16",
     "enrichment": "full",
+    "relatedTools": [
+      "facebook",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "facebook-watch",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
+    ],
     "_file": "library/tools/social-networks/facebook-ad-s-link.md"
   },
   {
@@ -323149,7 +323169,19 @@
     "api": true,
     "localInstall": false,
     "registration": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "facebook-watch",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
+    ],
     "aliases": [
       "Facebook Ad Library",
       "Meta Ad Library"
@@ -323202,7 +323234,17 @@
     "localInstall": false,
     "registration": true,
     "relatedTools": [
-      "facebook-watch"
+      "facebook-watch",
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
     ],
     "aliases": [
       "facebook.com/directory",
@@ -323948,6 +323990,19 @@
     "source": "arf-seed",
     "lastVerified": "2026-07-11",
     "enrichment": "full",
+    "relatedTools": [
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-profile-directory",
+      "facebook-watch",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
+    ],
     "_file": "library/tools/social-networks/facebook/search/facebook-photos-by-id.md"
   },
   {
@@ -323997,6 +324052,19 @@
     "source": "osint4all",
     "lastVerified": "2026-07-11",
     "enrichment": "full",
+    "relatedTools": [
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-watch",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
+    ],
     "_file": "library/tools/social-networks/facebook-profile-directory.md"
   },
   {
@@ -324583,7 +324651,17 @@
     "localInstall": false,
     "registration": true,
     "relatedTools": [
-      "facebook-directory-users-by-name"
+      "facebook-directory-users-by-name",
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "fb-email-search",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
     ],
     "aliases": [
       "fb watch",
@@ -324990,7 +325068,19 @@
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "facebook-watch",
+      "fb-identify-requires-logout",
+      "recover-fb-account"
+    ],
     "aliases": [],
     "tags": [],
     "source": "arf-seed",
@@ -325044,7 +325134,18 @@
     "deprecated": false,
     "relatedTools": [
       "facebook-search",
-      "account-live-com"
+      "account-live-com",
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "facebook-watch",
+      "fb-email-search",
+      "recover-fb-account"
     ],
     "aliases": [
       "Facebook Find Your Account",
@@ -329963,40 +330064,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/hatless1der-com.md"
-  },
-  {
-    "id": "have-i-been-zucked",
-    "name": "Have I Been Zucked?",
-    "description": "OSINT tool: Have I Been Zucked?.",
-    "url": "https://haveibeenzucked.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/have-i-been-zucked.md"
   },
   {
     "id": "haveibeenzuckered",
@@ -341735,7 +341802,19 @@
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "facebook",
+      "facebook-ad-s-link",
+      "facebook-com",
+      "facebook-com-2",
+      "facebook-directory-users-by-name",
+      "facebook-live-map",
+      "facebook-photos-by-id",
+      "facebook-profile-directory",
+      "facebook-watch",
+      "fb-email-search",
+      "fb-identify-requires-logout"
+    ],
     "aliases": [
       "Facebook account recovery",
       "facebook.com/login/identify",
@@ -357164,42 +357243,54 @@
   },
   {
     "id": "uvrx",
-    "name": "UVRX",
-    "description": "OSINT tool: UVRX.",
+    "name": "UVRX Social Search",
+    "description": "Use when you have a person `name` or `username` and want to search across many social networks at once through one Google-custom-search front-end — returns social-profile links.",
     "url": "http://www.uvrx.com/social.html",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-box search across Facebook, LinkedIn, Twitter, Instagram, Tumblr and more via a Google custom search.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; it's a Google Custom Search front-end, no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Searches run through Google's index, so you never touch the target's profiles and nobody is alerted. Opening any profile the results surface is a separate active step — do that from a sock-puppet browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-standing free community tool built on Google Custom Search; only as fresh and complete as Google's index of each platform.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "urvx",
       "urvx-com"
     ],
+    "aliases": [
+      "uvrx.com",
+      "UVRX Social Search"
+    ],
+    "tags": [
+      "social-media-search",
+      "meta-search"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/uvrx.md"
   },
   {
@@ -360300,6 +360391,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy"
+    ],
     "_file": "library/tools/social-networks/youtube-playlist-len.md"
   },
   {
@@ -375695,6 +375799,19 @@
     "source": "metaosint",
     "lastVerified": "2026-07-10",
     "enrichment": "full",
+    "relatedTools": [
+      "before-reddit-optimize-a-post",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "username-availability-checker",
+      "web-proxy",
+      "youtube-playlist-len"
+    ],
     "_file": "library/tools/username/blackbird-2.md"
   },
   {
@@ -377521,42 +377638,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/username/namechk-2.md"
-  },
-  {
-    "id": "nameketchup",
-    "name": "NameKetchup",
-    "description": "OSINT tool: NameKetchup.",
-    "url": "https://nameketchup.com",
-    "category": "username",
-    "path": [
-      "username"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "username-check"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/username/nameketchup.md"
   },
   {
     "id": "names-directory",
@@ -380235,7 +380316,18 @@
     "registration": false,
     "relatedTools": [
       "whatsmyname-python",
-      "instant-username"
+      "instant-username",
+      "before-reddit-optimize-a-post",
+      "blackbird-2",
+      "cheat-sheet-maker",
+      "mmhdan",
+      "osm-finder",
+      "query-server",
+      "redditsearch",
+      "the-favicon-finder",
+      "trending-words-of-reddit",
+      "web-proxy",
+      "youtube-playlist-len"
     ],
     "tags": [
       "Nicknames",

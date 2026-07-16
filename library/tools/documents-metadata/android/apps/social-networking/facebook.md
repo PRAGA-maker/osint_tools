@@ -32,7 +32,18 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- facebook-ad-s-link
+- facebook-com
+- facebook-com-2
+- facebook-directory-users-by-name
+- facebook-live-map
+- facebook-photos-by-id
+- facebook-profile-directory
+- facebook-watch
+- fb-email-search
+- fb-identify-requires-logout
+- recover-fb-account
 aliases: []
 tags: []
 source: arf-seed

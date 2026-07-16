@@ -32,6 +32,16 @@ localInstall: false
 registration: true
 relatedTools:
 - facebook-watch
+- facebook
+- facebook-ad-s-link
+- facebook-com
+- facebook-com-2
+- facebook-live-map
+- facebook-photos-by-id
+- facebook-profile-directory
+- fb-email-search
+- fb-identify-requires-logout
+- recover-fb-account
 aliases:
 - facebook.com/directory
 - FB people directory
