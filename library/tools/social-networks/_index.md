@@ -430,7 +430,6 @@ kind: group-index
 - **`nitter`** (medium) — OSINT tool: Nitter.
 - **`noxinluencer`** (medium) — youtube channels comparing
 - **`nqntnqnqmb`** (high) — Use when you have a `name` or `employer-org` and want to enumerate LinkedIn profiles, company employees, and their contact details programma
-- **`nursesreconnected-com`** (high) — OSINT tool: nursesreconnected.com.
 - **`ny-dolls-org`** (medium) — OSINT tool: NY Dolls.org.
 - **`nzbfriends`** (medium) — usenet search engine
 - **`o365chk`** (medium) — simple #Python script to check if there is an #Office365 instance linked to a particular domain and gathering information about this instanc

@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8615 total · 2368 full · 6247 stub (27% enriched)
+**Tools:** 8610 total · 2368 full · 6242 stub (27% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3354 · low: 3145 · high: 2116
+medium: 3354 · low: 3145 · high: 2111
 
 ## Tools by trust
-unverified: 4695 · community: 3146 · trusted: 761 · personal: 7 · untrustworthy: 6
+unverified: 4692 · community: 3144 · trusted: 761 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -29,28 +29,28 @@ unverified: 4695 · community: 3146 · trusted: 761 · personal: 7 · untrustwor
 - `maps-geospatial-data` — 2/147
 - `messaging` — 120/231
 - `opsec-investigator-tooling` — 3/567
-- `people-search` — 210/283
+- `people-search` — 210/282
 - `phone` — 128/143
-- `public-records` — 505/1173
+- `public-records` — 505/1171
 - `search-engines` — 45/992
-- `social-networks` — 488/931
+- `social-networks` — 488/930
 - `training-ctf` — 0/12
 - `translation-language` — 0/103
 - `transportation` — 1/237
-- `username` — 91/106
+- `username` — 91/105
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1105 leaves
+- `library/tools/public-records` — 1103 leaves
 - `library/tools/search-engines` — 921 leaves
-- `library/tools/social-networks` — 900 leaves
+- `library/tools/social-networks` — 899 leaves
 - `library/tools/domains-ip-infrastructure` — 533 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/image-video-face` — 438 leaves
 - `library/tools/communities-forums` — 423 leaves
 - `library/tools/ai-analysis-automation` — 421 leaves
 - `library/tools/geolocation` — 344 leaves
-- `library/tools/people-search` — 273 leaves
+- `library/tools/people-search` — 272 leaves
 - `library/tools/documents-metadata` — 266 leaves
 - `library/tools/email` — 225 leaves
 - `library/tools/transportation` — 218 leaves
@@ -62,7 +62,7 @@ unverified: 4695 · community: 3146 · trusted: 761 · personal: 7 · untrustwor
 - `library/tools/financial-crypto` — 112 leaves
 - `library/tools/dark-web` — 109 leaves
 - `library/tools/translation-language` — 89 leaves
-- `library/tools/username` — 88 leaves
+- `library/tools/username` — 87 leaves
 - `library/tools/evidence-capture` — 23 leaves
 - `library/tools/image-video-face/images/search` — 22 leaves
 - `library/tools/domains-ip-infrastructure/reputation` — 21 leaves

@@ -111,7 +111,6 @@ kind: group-index
 - **`billiongraves-com`** (high) — Use when you have a `name` and want burial/headstone records — returns death/birth dates, GPS-tagged cemetery location and family members bu
 - **`binlist`** (low) — OSINT tool: Binlist.
 - **`birmingham-public-library-databases`** (high) — Use when you have a `name` linked to Alabama/Birmingham and want niche local-history records (coal-mine fatalities, obituaries, church regis
-- **`birth-database`** (high) — OSINT tool: Birth Database.
 - **`bizeurope`** (medium) — OSINT tool: Bizeurope.
 - **`biznar-business-search-engines`** (medium) — Specialty search engine targeting businesses
 - **`bizportal-gov-za`** (high) — Use when you have a person's `name` or a company (`employer-org`) in South Africa and want to confirm company registration, status and direc
@@ -1094,7 +1093,6 @@ kind: group-index
 - **`wisconsin-fox-river-veterans-grave-registration-database`** (medium) — Use when you have a veteran's `name` connected to the Fox River region of Wisconsin and want burial details — returns cemetery/grave locatio
 - **`wisconsin-registered-voter-verification`** (medium) — Wisconsin registered voter verification and search
 - **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
-- **`wiscvoters-com`** (high) — OSINT tool: Wiscvoters.com.
 - **`worcester-ma-employee-gross-pay`** (medium) — OSINT tool: Worcester MA Employee Gross Pay.
 - **`world-bank-data`** (low) — OSINT tool: World Bank Data.
 - **`world-bank-doing-business`** (low) — OSINT tool: World Bank Doing Business.

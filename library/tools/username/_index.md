@@ -16,7 +16,6 @@ kind: group-index
 - **`alfred-osint`** (high) — Use when you have a `username` and want to find where it exists across social platforms — returns a list of matching profile URLs (a Sherloc
 - **`aliens-eye`** (high) — Use when you have a `username` and want to enumerate matching accounts across hundreds of platforms with ML-assisted confidence scoring — re
 - **`alternate-spelling-finder`** (high) — Use when you have a `name` and want its likely spelling variants — returns phonetic/transliteration alternatives to broaden name searches ac
-- **`antisocial`** (high) — OSINT tool: Antisocial.
 - **`arina-osint-nickname-checker`** (medium) — Tool for discovering information about historical online accounts/pages by nickname.
 - **`blackbird-2`** (high) — Use when you have a `username` (or email/name) and want fast enumeration across hundreds of sites with profile metadata — returns `social-pr
 - **`blackbird`** (high) — Use when you have a `username` or `email` and want to sweep 600+ sites for accounts under that identity — returns a list of matching `social

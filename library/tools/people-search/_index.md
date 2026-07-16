@@ -30,7 +30,6 @@ kind: group-index
 - **`anywho-whitepages-north-america`** (high) — Use when you have a `name` or `phone` in the US and want a listed address, landline and household associates — returns address, phone and as
 - **`apollo-io`** (high) — Use when you have a `name`, company or `domain` and want a person's work contact details — returns business `email`, `phone`, `employer-org`
 - **`arabic-name-structure-wikipedia`** (high) — Use when you have an Arabic `name` and want to decompose it into its components (given name, patronymic, tribal/place nisba) to derive searc
-- **`arachnys-com`** (high) — OSINT tool: Arachnys.com.
 - **`australia-lookup`** (high) — Use when you have an Australian `name` or `phone` and want a free residential address/phone match — returns address, phone and reverse-direc
 - **`bc-assessment`** (high) — Use when you have a British Columbia `address` and want the property's official assessment — returns assessed value, property characteristic
 - **`beenverified-com`** (high) — Use when you have a `name` (or phone/email/address) and want a consolidated US person report — returns address history, phone, email, relati
