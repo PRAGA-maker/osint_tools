@@ -52030,46 +52030,6 @@
     "_file": "library/tools/documents-metadata/app-analysis/apkleaks.md"
   },
   {
-    "id": "apktool",
-    "name": "APKtool",
-    "description": "APK decompilation, resource extraction, smali code analysis, app structure analysis",
-    "url": "https://apktool.org/",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata",
-      "app-analysis"
-    ],
-    "bestFor": "APK decompilation, resource extraction, smali code analysis, app structure analysis",
-    "input": "APK files",
-    "output": "Decompiled source code, resources, manifest data, smali bytecode",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Local analysis only; operates offline on APK files",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/app-analysis/apktool.md"
-  },
-  {
     "id": "apple-icloud-usa",
     "name": "Apple iCloud (USA)",
     "description": "Cloud storage and cloud computing service by Apple",
@@ -133903,52 +133863,6 @@
     "_file": "library/tools/image-video-face/amireal.md"
   },
   {
-    "id": "angry-birds",
-    "name": "Angry Birds",
-    "description": "Website related to social networking and players of the computer game Angry Birds",
-    "url": "https://www.angrybirds.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/angry-birds.md"
-  },
-  {
     "id": "anieraser-media-io",
     "name": "anieraser.media.io",
     "description": "Use when you need to erase an unwanted object, person, or watermark from a photo to isolate the subject before reverse-image search or comparison.",
@@ -141203,52 +141117,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/gaia.md"
-  },
-  {
-    "id": "gamesville",
-    "name": "Gamesville",
-    "description": "Website related to social networking and players of over 500 games on this website",
-    "url": "http://www.gamesville.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/gamesville.md"
   },
   {
     "id": "geo-search-tool",
@@ -150056,52 +149924,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/podomatic.md"
-  },
-  {
-    "id": "poker-stars",
-    "name": "Poker Stars",
-    "description": "Website related to social networking and players of poker with gambling options",
-    "url": "https://www.pokerstars.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/poker-stars.md"
   },
   {
     "id": "politifact",
@@ -165462,42 +165284,6 @@
     "_file": "library/tools/messaging/creationdatebot.md"
   },
   {
-    "id": "cryptobot",
-    "name": "CryptoBot",
-    "description": "OSINT tool: CryptoBot.",
-    "url": "https://t.me/CryptoBot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/cryptobot.md"
-  },
-  {
     "id": "datxpert",
     "name": "datXpert",
     "description": "OSINT tool: datXpert.",
@@ -173003,48 +172789,6 @@
       "telegram-analytics"
     ],
     "_file": "library/tools/messaging/tgstat-ru.md"
-  },
-  {
-    "id": "thunderify-com",
-    "name": "thunderify.com",
-    "description": "OSINT tool: thunderify.com.",
-    "url": "https://thunderify.com/fake/fakewha.htm",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "whatsapp",
-      "WhatsApp"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/thunderify-com.md"
   },
   {
     "id": "tlgrm-eu-channels",
@@ -203595,51 +203339,6 @@
     "_file": "library/tools/people-search/jobster-job-posts-resumes.md"
   },
   {
-    "id": "john-doe-us",
-    "name": "John Doe (US)",
-    "description": "OSINT tool: John Doe (US).",
-    "url": "https://johndoe.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/john-doe-us.md"
-  },
-  {
     "id": "karus",
     "name": "karus",
     "description": "Multi-purpose OSINT utility with a custom web interface.",
@@ -207309,51 +207008,6 @@
       "pr-newswire"
     ],
     "_file": "library/tools/people-search/prnewswire.md"
-  },
-  {
-    "id": "profile-engine",
-    "name": "Profile Engine",
-    "description": "OSINT tool: Profile Engine.",
-    "url": "http://profileengine.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/profile-engine.md"
   },
   {
     "id": "public-info-directory-us",
@@ -286284,90 +285938,6 @@
     "_file": "library/tools/search-engines/google-com-77.md"
   },
   {
-    "id": "google-com-78",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://support.google.com/websearch/answer/134479",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "searchengines",
-      "Search Engines"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/google-com-78.md"
-  },
-  {
-    "id": "google-com-79",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://support.google.com/websearch/answer/2466433",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "searchengines",
-      "Search Engines"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/google-com-79.md"
-  },
-  {
     "id": "google-com-81",
     "name": "Google Advanced Search Operators (reference)",
     "description": "Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined paths to `name` and `social-profile` hits.",
@@ -293584,44 +293154,57 @@
   {
     "id": "malwarebazaar",
     "name": "MalwareBazaar",
-    "description": "OSINT tool: MalwareBazaar.",
+    "description": "Use when you have a file hash, tag, or malware family and want to pull the sample plus its indicators — returns domain, ip-address, metadata-exif.",
     "url": "https://bazaar.abuse.ch/browse/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up a malware sample by hash/tag and retrieving its metadata and associated infrastructure indicators (C2 domains/IPs).",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free under abuse.ch fair-use terms. Browsing and single lookups need no login; the query/download API needs a free Auth-Key from auth.abuse.ch.",
+    "opsec": "passive",
+    "opsecNote": "You are querying abuse.ch's database, not the malware's live infrastructure — passive from the target's view. Never resolve, visit, or detonate the C2 domains/IPs it returns from your investigation host; treat any downloaded sample as live and handle only in an isolated malware VM.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by abuse.ch (now under Spamhaus) — a well-established, non-commercial threat-intel provider whose feeds are widely consumed by AV vendors and CERTs.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "urlhaus",
+      "abusech",
+      "yaraif",
+      "threatfox"
+    ],
+    "aliases": [
+      "MalwareBazaar",
+      "bazaar.abuse.ch"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "speciality-search-engines",
+      "threat-intel",
+      "malware"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "abusech",
-      "urlhaus",
-      "yaraif",
-      "zeus-c2-tracker",
-      "zeus-tracker"
-    ],
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/malwarebazaar.md"
   },
   {
@@ -312940,52 +312523,6 @@
     "_file": "library/tools/social-networks/4sqmap.md"
   },
   {
-    "id": "6-izuum-com",
-    "name": "6- Izuum.com",
-    "description": "OSINT tool: 6- Izuum.com.",
-    "url": "https://izuum.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "izuum"
-    ],
-    "_file": "library/tools/social-networks/6-izuum-com.md"
-  },
-  {
     "id": "a-tremendously-valuable-osint-tip-for-pinterest",
     "name": "A Tremendously Valuable OSINT Tip For Pinterest",
     "description": "Use when you have a Pinterest `username` and want to hypothesize the subject's `email` — a documented technique exploiting Pinterest's Google-signup default that turns the email's local-part into the username.",
@@ -328498,49 +328035,6 @@
     "_file": "library/tools/social-networks/instagram-monitor.md"
   },
   {
-    "id": "instagram-online-viewer-picbear",
-    "name": "Instagram Online Viewer | Picbear",
-    "description": "OSINT tool: Instagram Online Viewer | Picbear.",
-    "url": "http://picbear.club",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/instagram-online-viewer-picbear.md"
-  },
-  {
     "id": "instagram-reddit-and-snapchat",
     "name": "OSINT Toolkit — Instagram (one-plus)",
     "description": "Use when you have an Instagram `username` and want a one-page launcher of profile, ID, hashtag and geolocation lookups — returns social-profile, image, geolocation.",
@@ -335585,49 +335079,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/parler-com.md"
-  },
-  {
-    "id": "pewresearch-org",
-    "name": "pewresearch.org",
-    "description": "OSINT tool: pewresearch.org.",
-    "url": "https://www.pewresearch.org/short-reads/2023/02/17/key-facts-about-bitchute/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/pewresearch-org.md"
   },
   {
     "id": "pholder",
@@ -343855,52 +343306,6 @@
     "_file": "library/tools/social-networks/steam-discord-and-gaming-networks/steamosint.md"
   },
   {
-    "id": "stegers",
-    "name": "Stegers",
-    "description": "OSINT tool: Stegers.",
-    "url": "https://github.com/stegers",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram",
-      "Instagram Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "insta-timestamp-github-com"
-    ],
-    "_file": "library/tools/social-networks/stegers.md"
-  },
-  {
     "id": "sterraxcyl",
     "name": "Sterraxcyl",
     "description": "Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following count, etc)",
@@ -347868,42 +347273,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/twazzup.md"
-  },
-  {
-    "id": "twchat",
-    "name": "TwChat",
-    "description": "OSINT tool: TwChat.",
-    "url": "http://twchat.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twchat.md"
   },
   {
     "id": "twdown-net",
@@ -362853,43 +362222,54 @@
   {
     "id": "copart-auction",
     "name": "copart (auction)",
-    "description": "OSINT tool: copart (auction).",
+    "description": "Use when you have a `vin` (or Copart lot number) and want the salvage-auction record for that vehicle — returns image, geolocation.",
     "url": "https://www.copart.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a wrecked/salvage vehicle's auction listing — photos, damage, odometer, and yard location — from its VIN or lot number.",
     "selectorsIn": [
-      "vehicle-plate",
       "vin"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "image",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Browsing and searching listings is free; full VIN, complete photo sets, and sale prices often require a free \"Basic\" membership, and bidding requires a paid registration/deposit.",
+    "opsec": "passive",
+    "opsecNote": "Searching listings is a passive query against a public auction catalog — the vehicle's former owner is not notified. Creating a Copart account exposes your identity to Copart; prefer the free third-party mirror sites for anonymous lookups, and use a sock-puppet if you register.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Copart is a large, legitimate publicly-traded salvage-auction operator; listing data is first-party and reliable, but it only covers vehicles routed through Copart auctions.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Copart",
+      "Copart salvage auction"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "transportation",
+      "salvage-auction"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/transportation/copart-auction.md"
   },
   {
@@ -364996,24 +364376,31 @@
   {
     "id": "itu-ship-station-database",
     "name": "ITU Ship Station Database",
-    "description": "Maritime-related website focusing on ITU ship station callsigns, ship names, aircraft stations, and registration information",
+    "description": "Use when you have a vessel `name`, callsign, MMSI, or IMO number and want the licensed station record — returns name, document-id.",
     "url": "https://www.itu.int/en/ITU-R/terrestrial/mars/Pages/default.aspx",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving a ship's callsign / MMSI / name to its official ITU-registered station record and cross-referenced identifiers.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public access. No account or payment; ITU MARS is an open reference service.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A read-only query against the ITU's public register — no notification to any vessel owner and no login. Standard passive-recon hygiene (VPN/clean browser) is sufficient; nothing here is intrusive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the International Telecommunication Union (a UN agency); records are official administration-reported registrations, updated daily.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -365022,15 +364409,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ITU MARS",
+      "Maritime mobile Access and Retrieval System",
+      "MARS ship station search"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "maritime",
+      "transportation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/transportation/itu-ship-station-database.md"
   },
   {

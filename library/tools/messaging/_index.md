@@ -45,7 +45,6 @@ kind: group-index
 - **`create-spoof-fake-twitter-post`** (high) — Use when you need to fabricate a mock X/Twitter post for a sock-puppet/pretext, or to understand how a spoofed screenshot is made so you can
 - **`create-spoof-fake-whatsapp-facebook-twitter-skype-messenger`** (high) — Use when a WhatsApp/Facebook/Twitter/Skype chat screenshot is offered as evidence and you need to gauge how forgeable it is — this GeekPrank
 - **`creationdatebot`** (medium) — Use when you have a Telegram `username`/account and want to estimate when it was created — returns an approximate account age to judge if it
-- **`cryptobot`** (high) — OSINT tool: CryptoBot.
 - **`datxpert`** (high) — OSINT tool: datXpert.
 - **`dcallsbot`** (high) — OSINT tool: dCallsBot.
 - **`debirdify`** (medium) — This tool automatically finds Fediverse/Mastodon accounts of people you follow on Twitter
@@ -194,7 +193,6 @@ kind: group-index
 - **`tgscanrobot`** (medium) — telegram bot to show which telegram groups a person is member of.
 - **`tgspyder`** (medium) — Telegram analysis tool for social media intelligence and threat research.
 - **`tgstat-ru`** (medium) — Russian Telegram analytics platform.
-- **`thunderify-com`** (high) — OSINT tool: thunderify.com.
 - **`tlgrm-eu-channels`** (medium) — Search Telegram channels.
 - **`transcriber-bot`** (medium) — telegram bot, which can convert to text voice messages in 24 languages (view pic)
 - **`trunk`** (medium) — 200+ thematic lists of accounts in Mastodon. Python, JavaScript, Vim, Ruby, Privacy, Linux... There are even nudists and Tarot. The Pytrunk 

@@ -137,7 +137,6 @@ kind: group-index
 - **`jobs-poland`** (medium) — OSINT tool: Jobs (Poland).
 - **`jobsite-uk`** (medium) — OSINT tool: Jobsite (UK).
 - **`jobster-job-posts-resumes`** (medium) — OSINT tool: Jobster (Job Posts / Resumes).
-- **`john-doe-us`** (high) — OSINT tool: John Doe (US).
 - **`karus`** (medium) — Multi-purpose OSINT utility with a custom web interface.
 - **`knowem-username-search`** (high) — Use when you have a `username` and want to see which of 500+ social networks (and domains) it's registered on — returns a grid of taken/avai
 - **`kompass`** (high) — Use when you have a company `employer-org` or a business `name` and want firmographics and business contacts — returns company address, phon
@@ -205,7 +204,6 @@ kind: group-index
 - **`political-moneyline-us`** (high) — Use when you have a `name` and want US political-donation and lobbying records tied to that person — returns the donor's home address, emplo
 - **`private-eye`** (high) — Use when you have a `name`, `phone`, or `email` and want a US people-search profile — returns address, phone, and associate (relatives) lead
 - **`prnewswire`** (medium) — OSINT tool: PRNewswire.
-- **`profile-engine`** (high) — OSINT tool: Profile Engine.
 - **`public-info-directory-us`** (high) — Use when you have a US `name` and want a free aggregated people/public-records profile — returns addresses, phones, relatives, and record po
 - **`publicrecordsnow`** (high) — Use when you have a `name`, `phone`, or `address` and want an aggregate people-search profile — teases addresses, phones, relatives, and bac
 - **`radaris-people-and-business-search-north-america`** (high) — Use when you have a `name`, `phone` or `address` and want a US person's contacts and associates — returns addresses, phone numbers, relative

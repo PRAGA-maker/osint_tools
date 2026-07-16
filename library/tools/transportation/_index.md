@@ -60,7 +60,7 @@ kind: group-index
 - **`connecticut-license-verification`** (medium) — Connecticut Department of Motor Vehicles license verification utility
 - **`container-tracking-cargo`** (low) — OSINT tool: container-tracking (Cargo).
 - **`container-tracking`** (low) — OSINT tool: Container Tracking.
-- **`copart-auction`** (medium) — OSINT tool: copart (auction).
+- **`copart-auction`** (medium) — Use when you have a `vin` (or Copart lot number) and want the salvage-auction record for that vehicle — returns image, geolocation.
 - **`cosint-osint-on-cars`** (medium) — OSINT tool: COSINT – OSINT on Cars.
 - **`crewlist-org-uk`** (low) — OSINT tool: Crewlist.org.uk.
 - **`cruise-mapper`** (low) — OSINT tool: Cruise Mapper.
@@ -108,7 +108,7 @@ kind: group-index
 - **`international-registry-of-mobile-assets`** (medium) — Aviation-related website that offers a search for international aircraft and organizations owning aircraft
 - **`investigative-dashboard`** (medium) — Website providing resources and links for journalists to track finances and company ownership information across international borders
 - **`itamilradar`** (low) — track military flights over Italy and over the Mediterranean Sea.
-- **`itu-ship-station-database`** (medium) — Maritime-related website focusing on ITU ship station callsigns, ship names, aircraft stations, and registration information
+- **`itu-ship-station-database`** (medium) — Use when you have a vessel `name`, callsign, MMSI, or IMO number and want the licensed station record — returns name, document-id.
 - **`jane-s-defence-land-platforms-yearbook`** (medium) — Land-related website that offers a search of the global database of land vehicle types
 - **`janes-all-the-world-s-aircraft-yearbook`** (medium) — Aviation-related website that offers a search of the global database of aircraft types
 - **`janes-fighting-ships-yearbook`** (medium) — Maritime-related website that offers a search of the global database of naval vessel types

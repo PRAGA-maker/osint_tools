@@ -326,8 +326,6 @@ kind: group-index
 - **`google-code`** (medium) — Google code search engine
 - **`google-com-76`** (high) — OSINT tool: google.com.
 - **`google-com-77`** (high) — Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and docu
-- **`google-com-78`** (high) — OSINT tool: google.com.
-- **`google-com-79`** (high) — OSINT tool: google.com.
 - **`google-com-81`** (high) — Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined pa
 - **`google-com-82`** (high) — Use when you have a `name` or topic and want to find published datasets that may list people — Google Dataset Search indexes datasets across
 - **`google-com-84`** (high) — Use when you have a `name` and want to find photos of a person with precise filters — Google Advanced Image Search narrows by size, type, co
@@ -494,7 +492,7 @@ kind: group-index
 - **`maktoob-yahoo-search-engine-arabic`** (medium) — Search engine for the Middle East and North Africa region, acquired by Yahoo!
 - **`maldevel-osint`** (low) — Tools, scripts and tips useful during OSINT investigations and reconnaissance.
 - **`malfrat-s-osint-map`** (high) — Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branche
-- **`malwarebazaar`** (medium) — OSINT tool: MalwareBazaar.
+- **`malwarebazaar`** (medium) — Use when you have a file hash, tag, or malware family and want to pull the sample plus its indicators — returns domain, ip-address, metadata
 - **`mamma-meta-search-for-business-reviews`** (medium) — Meta-search engine for business reviews yielding results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`mamont-s-open-ftp-index`** (low) — OSINT tool: Mamont's open FTP Index.
 - **`mamont`** (medium) — OSINT tool: Mamont.

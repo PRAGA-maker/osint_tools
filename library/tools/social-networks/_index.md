@@ -24,7 +24,6 @@ kind: group-index
 - **`17-imginn`** (high) — Use when you have an Instagram `username` and want to anonymously view/download that account's public posts, stories and highlights without 
 - **`4plebs`** (medium) — Searchable archive of specific 4chan boards. Makes it possible to read threads after they are purged from 4chan.
 - **`4sqmap`** (high) — Use when you have a Foursquare/Swarm `username` and want to plot that account's check-ins, venues and photos on a map — returns `geolocation
-- **`6-izuum-com`** (high) — OSINT tool: 6- Izuum.com.
 - **`a-tremendously-valuable-osint-tip-for-pinterest`** (high) — Use when you have a Pinterest `username` and want to hypothesize the subject's `email` — a documented technique exploiting Pinterest's Googl
 - **`account-analysis`** (medium) — OSINT tool: Account analysis.
 - **`accountkiller-com`** (high) — Use when you have a `username` and want a reference directory of where accounts can exist plus each platform's account/URL structure — retur
@@ -318,7 +317,6 @@ kind: group-index
 - **`instagram-location-search`** (medium) — A command line tool that allows users to find location tags near a specified latitude and longitude.
 - **`instagram-location`** (high) — Use when you have a place (`geolocation`/`address`) and want public posts tagged there — returns location-tagged `social-profile`s, `image`s
 - **`instagram-monitor`** (high) — Use when you have an Instagram `username` and want to watch it over time — returns real-time alerts on new posts/stories/reels, follower/fol
-- **`instagram-online-viewer-picbear`** (high) — OSINT tool: Instagram Online Viewer | Picbear.
 - **`instagram-reddit-and-snapchat`** (high) — Use when you have an Instagram `username` and want a one-page launcher of profile, ID, hashtag and geolocation lookups — returns social-prof
 - **`instagram-scraper`** (medium) — Scrape info about accounts, posts, stories and comment
 - **`instagram-search-inteltechniques-method`** (high) — Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers
@@ -452,7 +450,6 @@ kind: group-index
 - **`parler-archive`** (medium) — OSINT tool: Parler archive.
 - **`parler-archives`** (high) — Use when you have a `name`/`username` tied to the Parler social network and want their now-defunct posts — search the Wayback Machine's capt
 - **`parler-com`** (high) — Use when you have a `username`/`name` and suspect the subject is active on the right-leaning social platform Parler — returns their `social-
-- **`pewresearch-org`** (high) — OSINT tool: pewresearch.org.
 - **`pholder`** (medium) — OSINT tool: Pholder.
 - **`picodash`** (high) — Use when you have a `username`/`name` and want Instagram search/analytics — formerly a location & hashtag search engine, now a paid analytic
 - **`pictame`** (high) — Use when you have an Instagram `username` (or hashtag/`name`) and want to view a public profile's posts, photos and tags without logging in 
@@ -623,7 +620,6 @@ kind: group-index
 - **`steam-osint`** (medium) — OSINT tool: Steam-OSINT.
 - **`steamdb-info-calculator`** (low) — OSINT tool: steamdb.info/calculator.
 - **`steamid-uk`** (medium) — Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) s
-- **`stegers`** (high) — OSINT tool: Stegers.
 - **`sterraxcyl`** (medium) — Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following coun
 - **`storiesig`** (high) — Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns s
 - **`story-saver`** (medium) — Download public Instagram Stories, Highlights and Videos.
@@ -694,7 +690,6 @@ kind: group-index
 - **`tumblr-search`** (medium) — OSINT tool: Tumblr Search.
 - **`tumblr-tool`** (medium) — collected posts tagged with a specific term from Tumblr and export to .tab file (opens in Excel) and .GDF (opens in Gephi)
 - **`twazzup`** (medium) — OSINT tool: Twazzup.
-- **`twchat`** (high) — OSINT tool: TwChat.
 - **`twdown-net`** (high) — Use when you have a `social-profile` (a tweet/X post URL) and want to archive its video before deletion — returns the downloaded video/`imag
 - **`tweeds`** (medium) — A very easy-to-use Python library that allows you to collect all of a user's tweets into a CSV/JSON file. Also it's possible to collect twee
 - **`tweeplers`** (medium) — OSINT tool: Tweeplers.

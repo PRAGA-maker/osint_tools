@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`apkleaks`** (medium) — API endpoint discovery, hardcoded credential detection, sensitive data extraction from APKs
-- **`apktool`** (medium) — APK decompilation, resource extraction, smali code analysis, app structure analysis
 - **`jadx`** (medium) — Java source code recovery, app logic analysis, vulnerability assessment, code review
 - **`mobsf`** (medium) — Comprehensive mobile app security analysis, vulnerability assessment, artifact extraction, compliance testing
 
