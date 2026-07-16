@@ -33,6 +33,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- sherpaintelligence-substack-com
 ---
 
 # osint2h22v.substack.com

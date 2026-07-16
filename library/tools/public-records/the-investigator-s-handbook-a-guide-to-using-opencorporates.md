@@ -34,6 +34,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- opencorporates
 ---
 
 # The Investigator’s Handbook: A Guide to Using OpenCorporates

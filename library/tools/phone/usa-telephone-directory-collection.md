@@ -42,6 +42,11 @@ tags:
 source: cyb-detective
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- library-of-congress-ask-a-librarian
+- library-of-congress-united-states
+- newspaper-navigator
+- webarchive-loc-gov
 ---
 
 # USA Telephone Directory Collection (Library of Congress)

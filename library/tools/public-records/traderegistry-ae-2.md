@@ -36,6 +36,7 @@ registration: true
 relatedTools:
 - opencorporates
 - uae-national-economic-register
+- traderegistry-ae
 aliases:
 - UAE Trade Registry Smart Portal
 - traderegistry.ae register of directors

@@ -37,6 +37,8 @@ tags:
 source: gh-topic-footprinting
 lastVerified: ''
 enrichment: full
+relatedTools:
+- netcraft-site-report
 ---
 
 # Netcraft

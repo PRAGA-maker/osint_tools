@@ -29,7 +29,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- live-piracy-map
 aliases:
 - IMB Live Piracy Map
 - ICC-CCS Piracy Map

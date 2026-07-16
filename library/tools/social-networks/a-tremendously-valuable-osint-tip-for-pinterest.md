@@ -31,6 +31,8 @@ localInstall: false
 registration: false
 relatedTools:
 - account-live-com
+- hatless1der-com
+- viewing-bitmoji-changes
 aliases:
 - hatless1der Pinterest tip
 - Pinterest username to email

@@ -30,6 +30,14 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- advanced-search-operators-list
+- apis-for-osint
+- awesome-grep
+- dorks-collections-list
+- grep-for-osint
+- maltego-transforms-list
+- python-osint-automation-examples
 ---
 
 # Code understanding tools list

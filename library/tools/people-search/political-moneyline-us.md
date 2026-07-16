@@ -34,6 +34,7 @@ registration: false
 relatedTools:
 - opensecrets-org
 - fec-gov
+- politicalmoneyline
 aliases:
 - PoliticalMoneyLine
 - CQ MoneyLine

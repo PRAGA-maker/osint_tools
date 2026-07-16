@@ -30,6 +30,10 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- sogou
+- sogou-wechat-search
+- sougou-com
 ---
 
 # SoGou (China)

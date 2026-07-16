@@ -36,6 +36,7 @@ invitationOnly: false
 relatedTools:
 - peekyou
 - webmii
+- hi5
 aliases:
 - hi5
 tags:

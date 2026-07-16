@@ -40,6 +40,15 @@ tags:
 source: awesome-osint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- community-search
+- get-user-info
+- item
+- people-search-results-vk
+- vk
+- vk-com
+- vk-com-2
+- vk-people-search
 ---
 
 # VK Community Search

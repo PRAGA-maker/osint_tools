@@ -29,7 +29,17 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- yandex-browser
+- yandex-image-search
+- yandex-images
+- yandex-mail
+- yandex-maps
+- yandex-russia
+- yandex-translate
+- yandex-video-search
+- yandex-wordstat
+- yandexmaps
 aliases: []
 tags: []
 source: arf-seed

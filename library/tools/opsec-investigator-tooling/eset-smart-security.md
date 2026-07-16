@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- eset-cybersecurity-for-mac
 ---
 
 # ESET Smart Security

@@ -35,6 +35,8 @@ relatedTools:
 - yandex-images
 - yandex-mail
 - google-com-3
+- rasp-yandex-ru-map-trains
+- wordstat-yandex-ru
 aliases:
 - Yandex People
 - yandex.ru/people

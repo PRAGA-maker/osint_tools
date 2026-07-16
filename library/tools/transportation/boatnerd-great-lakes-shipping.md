@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ais-boatnerd-com
 ---
 
 # BoatNerd Great Lakes Shipping

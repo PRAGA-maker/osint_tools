@@ -24,12 +24,15 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Lycos is a long-standing legacy search portal; its image search is keyword-based and largely powered by other engines, so results overlap mainstream engines and value as a distinct source is limited.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- lycos
+- lycos-mail-usa
 aliases: []
 tags:
 - image-search

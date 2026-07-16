@@ -30,7 +30,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- visual-ping-website-monitoring
 aliases: []
 tags: []
 source: arf-seed

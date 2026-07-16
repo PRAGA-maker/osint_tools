@@ -33,6 +33,8 @@ tags:
 source: gh-topic-footprinting
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- intelspy
 ---
 
 # maldevel/osint

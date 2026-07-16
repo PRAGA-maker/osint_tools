@@ -29,7 +29,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- time-news
 aliases:
 - Google Earth Timelapse
 - Timelapse

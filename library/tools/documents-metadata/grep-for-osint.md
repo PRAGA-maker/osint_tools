@@ -33,6 +33,14 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- advanced-search-operators-list
+- apis-for-osint
+- awesome-grep
+- code-understanding-tools-list
+- dorks-collections-list
+- maltego-transforms-list
+- python-osint-automation-examples
 ---
 
 # Grep for OSINT

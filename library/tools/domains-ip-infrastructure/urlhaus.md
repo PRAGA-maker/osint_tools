@@ -30,6 +30,12 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- abusech
+- malwarebazaar
+- yaraif
+- zeus-c2-tracker
+- zeus-tracker
 ---
 
 # URLhaus

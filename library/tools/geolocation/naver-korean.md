@@ -34,6 +34,8 @@ localInstall: false
 registration: false
 relatedTools:
 - openstreetmap
+- naver-com
+- naver-south-korea
 aliases:
 - Naver Map
 - 네이버 지도

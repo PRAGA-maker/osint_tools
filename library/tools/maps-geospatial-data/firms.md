@@ -29,6 +29,11 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- nasa-earthdata-search
+- nasa-firms
+- nasa-kids-club
+- nasa-worldview
 ---
 
 # FIRMS

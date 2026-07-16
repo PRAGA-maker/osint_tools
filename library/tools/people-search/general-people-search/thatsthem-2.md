@@ -43,6 +43,12 @@ relatedTools:
 - fastpeoplesearch
 - truepeoplesearch
 - whitepages-com
+- thats-them
+- thatsthem
+- thatsthem-people-search
+- thatsthem-phone-search
+- thatsthem-vin-search
+- vin-lookup
 aliases:
 - That's Them
 - thatsthem.com

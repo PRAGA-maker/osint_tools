@@ -35,6 +35,8 @@ tags:
 source: sinwindie-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- get-link-info
 ---
 
 # GetLinkInfo

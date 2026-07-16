@@ -29,6 +29,8 @@ registration: false
 invitationOnly: false
 relatedTools:
 - create-spoof-fake-twitter-direct-messenger-site
+- create-spoof-fake-facebook-messenger-post
+- create-spoof-fake-twitter-post
 aliases:
 - Simitator fake Facebook status
 - fake Facebook post generator

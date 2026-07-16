@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- mitre-att-and-ck
 aliases: []
 tags: []
 source: arf-seed

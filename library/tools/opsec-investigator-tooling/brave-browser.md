@@ -34,6 +34,8 @@ tags:
 source: tracelabs-repos
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- brave
 ---
 
 # Brave Browser

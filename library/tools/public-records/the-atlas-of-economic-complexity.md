@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- worldmap-harvard
 ---
 
 # The Atlas of Economic Complexity

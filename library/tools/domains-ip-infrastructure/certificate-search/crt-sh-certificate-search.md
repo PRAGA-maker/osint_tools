@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- crt-certificate-search
 aliases: []
 tags: []
 source: arf-seed

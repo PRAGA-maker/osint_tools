@@ -38,6 +38,8 @@ tags:
 source: toddington-resources
 lastVerified: '2026-07-15'
 enrichment: full
+relatedTools:
+- search-for-music-using-your-voice
 ---
 
 # Midomi / SoundHound Music Search

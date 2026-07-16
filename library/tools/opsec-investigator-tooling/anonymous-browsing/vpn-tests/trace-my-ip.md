@@ -30,7 +30,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- user-agent-string-decoder
 aliases: []
 tags: []
 source: arf-seed

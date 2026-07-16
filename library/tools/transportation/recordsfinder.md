@@ -42,6 +42,8 @@ tags:
 source: inteltechniques-tools
 lastVerified: ''
 enrichment: full
+relatedTools:
+- recordsfinder-people-search-ca
 ---
 
 # RecordsFinder

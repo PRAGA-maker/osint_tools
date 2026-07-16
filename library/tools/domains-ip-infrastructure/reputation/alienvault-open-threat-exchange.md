@@ -30,7 +30,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- alienvault-otx
 aliases: []
 tags: []
 source: arf-seed

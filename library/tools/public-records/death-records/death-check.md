@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- online-searchable-death-indexes-and-records-united-states
 aliases: []
 tags: []
 source: arf-seed

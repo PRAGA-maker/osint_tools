@@ -32,6 +32,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- copernicus-browser-formerly-sentinel-hub-playground-eo-browser
 ---
 
 # Copernicus Open Access Hub

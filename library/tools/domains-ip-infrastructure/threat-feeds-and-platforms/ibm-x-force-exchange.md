@@ -30,7 +30,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ibm-x-force-exchange-current-malicious-activity
 aliases: []
 tags: []
 source: arf-seed

@@ -34,6 +34,8 @@ relatedTools:
 - searchbug
 - 411-us
 - telegram-finder
+- idcrawl
+- username-search-2
 aliases:
 - IDCrawl phone
 - idcrawl.com/phone

@@ -30,7 +30,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- labnol-org
+- print-youtube-storyboard-instructions
 aliases: []
 tags: []
 source: arf-seed

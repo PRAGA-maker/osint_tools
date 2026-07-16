@@ -32,7 +32,12 @@ auth: account
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- court-locator-united-states-courts
+- court-records-united-states-courts
+- pacer-2
+- pacer-case-locator
+- public-access-to-court-electronic-records
 aliases:
 - PACER
 - PACER Case Locator

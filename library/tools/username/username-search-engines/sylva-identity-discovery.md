@@ -33,7 +33,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- sylva-identity-discovery-2
 aliases:
 - Sylva
 - sylva.pfeister.dev

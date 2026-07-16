@@ -31,6 +31,7 @@ localInstall: false
 registration: false
 relatedTools:
 - epieos
+- quick-cache-and-archive-search
 aliases:
 - Khoji
 - Bitmoji viewer

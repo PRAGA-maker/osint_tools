@@ -32,6 +32,8 @@ relatedTools:
 - yandexmaps
 - geograph-worldwide
 - here-com-geolocation-and-mapping-tool
+- better-reddit-search
+- react-reddit-search-app
 aliases:
 - GeoSpy
 - geospy.web.app

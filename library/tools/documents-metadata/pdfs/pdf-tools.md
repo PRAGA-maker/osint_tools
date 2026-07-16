@@ -29,7 +29,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- xorsearch-and-xorstrings
 aliases: []
 tags: []
 source: arf-seed

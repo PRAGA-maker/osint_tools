@@ -35,6 +35,9 @@ relatedTools:
 - epieos-email-tool
 - holehe
 - ghunt
+- epieos
+- epieos-check-phone-usage
+- google-account-finder-epieos
 aliases:
 - Epieos
 tags:

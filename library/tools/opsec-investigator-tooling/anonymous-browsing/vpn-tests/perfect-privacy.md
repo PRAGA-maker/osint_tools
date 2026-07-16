@@ -30,7 +30,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- webrtc-leak-test
 aliases: []
 tags: []
 source: arf-seed

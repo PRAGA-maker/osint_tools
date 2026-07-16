@@ -33,6 +33,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- vedbex-com
 ---
 
 # 4- Vedbex: Email to Skype

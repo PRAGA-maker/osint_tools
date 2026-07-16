@@ -42,6 +42,10 @@ tags:
 source: toddington-resources
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- ancestry
+- ancestry-com
+- yearbooks-high-school-yearbooks-ancestry
 ---
 
 # Lauderdale County, Alabama (RootsWeb/ALGenWeb)

@@ -30,7 +30,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- perfect-privacy
 aliases: []
 tags: []
 source: arf-seed

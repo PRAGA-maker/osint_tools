@@ -37,6 +37,9 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- create-spoof-fake-mesages-for-a-number-of-different-online-sites
+- fakedetail-com
 ---
 
 # fakedetail.com (Fake WhatsApp Chat Generator)

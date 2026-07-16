@@ -36,7 +36,17 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- bing
+- bing-creations
+- bing-images
+- bing-ip-search
+- bing-maps
+- bing-microsoft-translator
+- bing-news
+- bing-translate
+- bing-webmaster-tools
+- see-it-search-it
 aliases: []
 tags: []
 source: arf-seed

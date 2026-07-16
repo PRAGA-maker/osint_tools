@@ -34,6 +34,8 @@ invitationOnly: false
 deprecated: true
 relatedTools:
 - khendrikse-netlify-app
+- bskythreadreader
+- mastovue
 aliases:
 - fedifinder.glitch.me
 tags:

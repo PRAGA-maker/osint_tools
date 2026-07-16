@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - findagrave
 - births-deaths-marriages-au
+- ryersonindex-org
 aliases:
 - Ryerson Index
 - Australian death notices index

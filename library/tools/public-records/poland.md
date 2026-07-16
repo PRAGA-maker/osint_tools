@@ -41,6 +41,8 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- rejestr-sprawc-w-przest-pstw-na-tle-seksualnym
 ---
 
 # Poland (CRBR – Central Register of Beneficial Owners)

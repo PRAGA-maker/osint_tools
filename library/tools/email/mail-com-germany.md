@@ -36,6 +36,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: full
+relatedTools:
+- mail-com-free-email-creations
 ---
 
 # Mail.com (Germany)

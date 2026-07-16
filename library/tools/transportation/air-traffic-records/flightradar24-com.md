@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- flight-radar-24
 aliases: []
 tags: []
 source: arf-seed

@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- patent-attorneys-agent-search
+- tess
 aliases: []
 tags: []
 source: arf-seed

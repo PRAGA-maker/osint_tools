@@ -32,6 +32,8 @@ deprecated: true
 relatedTools:
 - social-searcher
 - whopostedwhat-com
+- ctlrq-address-lookup
+- rss-search-engine
 aliases:
 - ctrlq first tweet
 - first tweet finder

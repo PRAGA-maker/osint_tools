@@ -34,6 +34,14 @@ registration: false
 relatedTools:
 - instagram-com
 - osintgram
+- github-monitor
+- lastfm-monitor
+- lol-monitor
+- psn-monitor
+- spotify-monitor
+- spotify-profile-monitor
+- steam-monitor
+- xbox-monitor
 aliases:
 - instagram_monitor
 - misiektoja instagram monitor

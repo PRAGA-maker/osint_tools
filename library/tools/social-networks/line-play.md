@@ -34,6 +34,8 @@ registration: true
 relatedTools:
 - line-app
 - linecorp-com
+- line
+- line-me
 aliases:
 - LinePlay
 - LINE Play avatar

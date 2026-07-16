@@ -30,7 +30,10 @@ auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- ytlarge-com-2
+- ytlarge-com-3
+- ytlarge-com-4
 aliases:
 - ytlarge
 - YouTube channel ID finder

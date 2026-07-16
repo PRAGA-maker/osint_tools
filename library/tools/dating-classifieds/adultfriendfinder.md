@@ -36,7 +36,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- adult-friendfinder
 aliases:
 - AFF
 tags:

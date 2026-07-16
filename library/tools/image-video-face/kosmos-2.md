@@ -33,6 +33,15 @@ registration: false
 invitationOnly: false
 relatedTools:
 - google-lens
+- efficientnetv2
+- get-text-from-video
+- hugging-face-ai-detector
+- huggingface-co
+- huggingface-co-4
+- instruct-pix2pix
+- pix2pix-video
+- scene-edit-detection
+- youtube-whisperer
 aliases:
 - Kosmos-2
 - Kosmos 2 grounding

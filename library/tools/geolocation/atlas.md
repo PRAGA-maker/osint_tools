@@ -7,29 +7,44 @@ category: geolocation
 path:
 - geolocation
 bestFor: AI-assisted, collaborative GIS for mapping and analysing your own spatial data without specialist GIS skills.
-selectorsIn: [address, geolocation]
-selectorsOut: [geolocation, address]
+selectorsIn:
+- address
+- geolocation
+selectorsOut:
+- geolocation
+- address
 status: live
 pricing: freemium
 costNote: A free account is available ("sign up for a free account"); higher usage, team features, and larger workloads sit behind paid tiers (pricing not published on the landing page).
 opsec: passive
 opsecNote: You upload and analyse your own case data on Atlas's hosted platform; it does not contact the target. Note that anything you upload lives on a third-party cloud and shared map links are viewable by anyone who has them.
 humanInLoop: true
-humanInLoopReason: [account-login]
+humanInLoopReason:
+- account-login
 bestInteractionPattern: web-manual
 trust: community
 trustNote: Commercial AI-native GIS SaaS (atlas.co); legitimate and functional but vendor-maintained and relatively new, so it is an analysis surface rather than an authoritative data source.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: account
 api: false
 localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: [cartodb, batchgeo, arcgis]
-aliases: [atlas-co]
-tags: [gis, mapping, spatial-analysis, saas]
+relatedTools:
+- cartodb
+- batchgeo
+- arcgis
+- atlas-co
+aliases:
+- atlas-co
+tags:
+- gis
+- mapping
+- spatial-analysis
+- saas
 source: awesome-osint
 lastVerified: '2026-06-13'
 enrichment: full

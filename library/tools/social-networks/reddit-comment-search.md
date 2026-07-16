@@ -32,6 +32,8 @@ registration: false
 relatedTools:
 - reddit-user-analyser
 - redective
+- redditcommentsearch-com
+- search-reddit-comments-by-user
 aliases:
 - redditcommentsearch.com
 tags:

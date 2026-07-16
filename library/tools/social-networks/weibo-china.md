@@ -34,6 +34,9 @@ localInstall: false
 registration: true
 relatedTools:
 - baidu
+- overseas-weibo-com
+- sina-weibo-chinese
+- weibo-com
 aliases:
 - Sina Weibo
 - 微博

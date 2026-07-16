@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- thale-s-cyberthreat-map
 ---
 
 # Thales

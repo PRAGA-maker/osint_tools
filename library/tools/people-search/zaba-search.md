@@ -35,6 +35,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - australia-lookup
+- zabasearch
 aliases:
 - ZabaSearch
 - Zaba Search

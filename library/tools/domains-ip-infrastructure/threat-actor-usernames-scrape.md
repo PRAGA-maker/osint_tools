@@ -30,6 +30,10 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- crypto-scam-and-crypto-phishing-url-threat-intel-feed
+- phishingseclists
+- telegram-channel-joiner
 ---
 
 # Threat Actor Usernames Scrape

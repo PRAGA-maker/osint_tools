@@ -38,6 +38,8 @@ tags:
 source: inteltechniques-tools
 lastVerified: ''
 enrichment: full
+relatedTools:
+- hudson-rock
 ---
 
 # Hudson Rock Cavalier

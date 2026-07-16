@@ -35,6 +35,17 @@ localInstall: false
 registration: false
 relatedTools:
 - melissa-us-2
+- court-records-search-directory
+- free-public-records-directory-us
+- jail-and-inmate-records-search-directory
+- laws-and-codes-search-directory-by-state
+- marriage-records-search-directory
+- os-birth-records
+- os-death-records
+- os-divorce-records
+- permits-and-inspections-search-by-state
+- public-records-directory
+- unclaimed-and-abandoned-property-search-directory
 aliases:
 - OnlineSearches sex offender
 - NSOPW alternative

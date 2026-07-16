@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- vin-check-and-get-vehicle-history-report
 ---
 
 # FaxVIN

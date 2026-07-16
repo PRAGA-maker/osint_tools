@@ -34,6 +34,7 @@ registration: true
 invitationOnly: true
 relatedTools:
 - meta-content-library
+- crowdtangle-link-checker
 aliases:
 - CrowdTangle
 tags:

@@ -33,6 +33,10 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- doe-data-explorer
+- osti-science-cinema-search
+- us-dept-of-energy-office-of-science-search
 ---
 
 # Department of Energy Patents

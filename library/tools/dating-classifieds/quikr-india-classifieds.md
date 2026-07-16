@@ -9,8 +9,17 @@ path:
 bestFor: Placing an Indian subject in a city and surfacing a seller alias and contact phone via local classified listings.
 input: Search keywords, category, Indian city
 output: Classified listings with seller profile, contact phone (on reveal), and item details
-selectorsIn: [name, phone, geolocation, image]
-selectorsOut: [name, phone, geolocation, image, social-profile]
+selectorsIn:
+- name
+- phone
+- geolocation
+- image
+selectorsOut:
+- name
+- phone
+- geolocation
+- image
+- social-profile
 status: degraded
 pricing: free
 costNote: Free to browse and search; account/payment only for posting or premium ads.
@@ -22,16 +31,21 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Quikr was a major Indian classifieds site but has reportedly declined/restructured in recent years, so live coverage may be reduced — set status degraded and verify before relying on it.
 missingPersonsRelevance: high
-coverage: [in]
+coverage:
+- in
 auth: none
 api: false
 localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- quikr-classified-ads-india
 aliases: []
-tags: [classifieds, marketplace, india]
+tags:
+- classifieds
+- marketplace
+- india
 source: arf-seed
 lastVerified: ''
 enrichment: full

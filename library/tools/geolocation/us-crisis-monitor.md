@@ -29,6 +29,9 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- acled-armed-conflict-location-and-event-data-project
+- acled-data-crisis-map
 ---
 
 # US Crisis Monitor

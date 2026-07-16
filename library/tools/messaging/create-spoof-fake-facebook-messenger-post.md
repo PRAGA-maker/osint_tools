@@ -34,6 +34,9 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- create-spoof-fake-facebook-status-update-post
+- create-spoof-fake-twitter-post
 ---
 
 # Create Spoof / Fake Facebook Messenger Post

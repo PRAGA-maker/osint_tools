@@ -34,6 +34,8 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- openseamap-the-free-nautical-chart
 ---
 
 # OpenSeaMap

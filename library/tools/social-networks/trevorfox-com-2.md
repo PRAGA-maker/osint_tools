@@ -30,6 +30,7 @@ localInstall: false
 registration: false
 relatedTools:
 - matthewcassinelli-com
+- trevorfox-com
 aliases:
 - LinkedIn Post Date Extractor
 - Trevor Fox LinkedIn timestamp

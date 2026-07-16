@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- consumer-reports-security-planner
 ---
 
 # Consumerreports (North America)

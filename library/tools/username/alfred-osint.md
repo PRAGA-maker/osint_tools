@@ -40,6 +40,8 @@ tags:
 source: osintambition-social
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- tookie-osint
 ---
 
 # Alfred OSINT

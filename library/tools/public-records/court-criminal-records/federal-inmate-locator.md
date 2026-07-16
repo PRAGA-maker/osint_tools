@@ -29,7 +29,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- federal-bureau-of-prisons-inmate-locator-us
+- sorted-by-birth-date
+- the-inmate-locator
 aliases: []
 tags: []
 source: arf-seed

@@ -40,6 +40,10 @@ tags:
 source: awesome-osint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- crypto-scam-and-crypto-phishing-url-threat-intel-feed
+- phishingseclists
+- threat-actor-usernames-scrape
 ---
 
 # Telegram Channel Joiner

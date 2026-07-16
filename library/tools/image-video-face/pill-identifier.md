@@ -32,6 +32,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- webmd-medical-sciences-search
 ---
 
 # Pill Identifier

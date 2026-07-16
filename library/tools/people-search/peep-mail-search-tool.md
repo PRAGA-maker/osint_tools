@@ -32,6 +32,9 @@ registration: false
 invitationOnly: false
 relatedTools:
 - mailcat
+- peepmail
+- samy-kamkar
+- samy-pl
 aliases:
 - PeepMail
 - Samy PeepMail

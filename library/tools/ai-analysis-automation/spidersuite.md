@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ote-osint-template-engine
+- sub3-suite
 ---
 
 # SpiderSuite

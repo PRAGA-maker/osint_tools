@@ -30,6 +30,10 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- phishingseclists
+- telegram-channel-joiner
+- threat-actor-usernames-scrape
 ---
 
 # Crypto Scam & Crypto Phishing URL Threat Intel Feed

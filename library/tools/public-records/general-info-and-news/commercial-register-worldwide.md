@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- company-registration-round-the-world
 aliases: []
 tags: []
 source: arf-seed

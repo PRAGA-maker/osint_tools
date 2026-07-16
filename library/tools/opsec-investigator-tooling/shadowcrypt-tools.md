@@ -31,6 +31,12 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- cloudflare-resolver-tool
+- geoip-tracker-tool
+- nmap-checker-tool
+- page-links-extractor-tool
+- phone-number-lookup-tool
 ---
 
 # Shadowcrypt Tools

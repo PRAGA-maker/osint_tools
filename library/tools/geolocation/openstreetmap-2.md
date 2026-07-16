@@ -34,6 +34,10 @@ registration: false
 relatedTools:
 - openstreetmap
 - overpass-turbo
+- open-street-map
+- openstreetmap-nominatim
+- openstreetmap-overpass-turbo-taginfo-database
+- whodidit
 aliases:
 - OSM
 tags:

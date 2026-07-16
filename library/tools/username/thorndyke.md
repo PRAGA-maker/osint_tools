@@ -32,6 +32,10 @@ relatedTools:
 - whatsmyname-web
 - sherlock-2
 - go-sherlock
+- 0xdork
+- open-corporates-command-line-client-occli
+- thedevilseye
+- thelordeye
 aliases:
 - thorndyke
 - rlyonheart thorndyke

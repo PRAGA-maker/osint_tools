@@ -34,7 +34,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- telegram-search-search-for-posts
 aliases:
 - TGStat
 - tgstat.com

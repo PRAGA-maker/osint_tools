@@ -37,6 +37,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- sentinel-hub-eo-browser
+- sentinel-hub-playground
 ---
 
 # Sentinel Hub

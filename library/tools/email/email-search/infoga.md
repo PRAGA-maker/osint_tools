@@ -40,6 +40,7 @@ relatedTools:
 - holehe
 - have-i-been-pwned
 - hunter
+- secretfinder
 aliases: []
 tags: []
 source: arf-seed

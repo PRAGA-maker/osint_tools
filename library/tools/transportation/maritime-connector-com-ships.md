@@ -32,6 +32,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- maritimeconnector
 ---
 
 # Maritime-connector.com/ships

@@ -33,6 +33,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- council-on-foreign-relations
 ---
 
 # Global Conflict Tracker

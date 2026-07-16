@@ -34,6 +34,11 @@ registration: false
 relatedTools:
 - mastodon-github-com
 - osrframework-2
+- curl-for-osint
+- osint-tactical
+- prot1ntelligence
+- webosint
+- whatsmyname-python
 aliases:
 - Masto
 - Mastodon OSINT

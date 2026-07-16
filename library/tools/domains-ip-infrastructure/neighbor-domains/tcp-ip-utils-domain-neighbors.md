@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- dnslytics-com
+- search-dnslytics-com
 aliases: []
 tags: []
 source: arf-seed

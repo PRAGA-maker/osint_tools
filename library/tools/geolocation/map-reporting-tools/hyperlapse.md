@@ -34,6 +34,7 @@ invitationOnly: false
 deprecated: true
 relatedTools:
 - instant-google-street-view
+- google-street-view-hyperlapse
 aliases:
 - Hyperlapse.js
 tags:

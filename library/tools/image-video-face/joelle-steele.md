@@ -35,6 +35,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- how-to-accurately-check-an-id-using-facial-features-to-verify-photo-id-s
 ---
 
 # Joelle Steele

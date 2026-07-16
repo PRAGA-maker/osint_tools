@@ -36,6 +36,12 @@ localInstall: false
 registration: false
 relatedTools:
 - nsopw
+- fbi-common-fraud-schemes-united-states
+- fbi-information-technology-united-states
+- federal-bureau-of-investigations-value
+- most-wanted
+- most-wanted-criminal-pages
+- vault-fbi-gov
 aliases:
 - NSOPW
 - National Sex Offender Public Website

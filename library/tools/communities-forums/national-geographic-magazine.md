@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- national-geographic-kids
 ---
 
 # National Geographic Magazine

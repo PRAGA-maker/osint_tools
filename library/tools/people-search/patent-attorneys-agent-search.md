@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- tess
+- us-patent-office-search
 ---
 
 # Patent Attorneys/Agent Search

@@ -33,7 +33,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- protonmail-domains
 aliases:
 - ProtonMail PKS lookup
 - Proton key server enumeration

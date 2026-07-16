@@ -28,7 +28,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- world-bank-data
+- world-bank-investing-across-borders
+- world-integrated-trade-solution
 aliases: []
 tags: []
 source: arf-seed

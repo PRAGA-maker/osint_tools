@@ -23,12 +23,14 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Commercial AI geolocation service (geoinfer.com); plausible but unverified accuracy. Treat predictions as leads, not proof.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- geoinfer
 aliases:
 - GeoInfer
 tags:

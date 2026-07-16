@@ -35,6 +35,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- birdhunt-2
+- instahunt-2
 ---
 
 # Huntel.io

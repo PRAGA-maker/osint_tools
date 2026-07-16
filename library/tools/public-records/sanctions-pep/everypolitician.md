@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- every-politician
+- everypolitician-org
 aliases: []
 tags: []
 source: arf-seed

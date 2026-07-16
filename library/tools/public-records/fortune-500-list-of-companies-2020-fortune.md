@@ -34,6 +34,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- fortune-magazine
 ---
 
 # Fortune 500 list of companies 2020 | Fortune

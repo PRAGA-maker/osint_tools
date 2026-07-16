@@ -33,6 +33,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- scrapersnbots
 ---
 
 # Open Multiple Links ☷ One Click

@@ -27,7 +27,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- kaspersky-cyberthreat-live-map
+- kaspersky-tdsskiller-anti-rootkit-tool
 aliases:
 - Kaspersky Cyberthreat Live Map
 - Cyberthreat Real-Time Map

@@ -29,7 +29,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- world-monitor-tech
 aliases: []
 tags: []
 source: arf-seed

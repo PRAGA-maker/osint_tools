@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- open-access-scholarly-journals
 ---
 
 # Open Access Scientific Journals

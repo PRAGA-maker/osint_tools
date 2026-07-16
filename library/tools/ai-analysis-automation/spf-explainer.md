@@ -31,6 +31,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- nginxconfig
 ---
 
 # SPF Explainer

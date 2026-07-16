@@ -29,7 +29,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- national-center-for-biotechnology
+- openi-nlm-nih-gov
+- pubmed
 aliases: []
 tags: []
 source: arf-seed

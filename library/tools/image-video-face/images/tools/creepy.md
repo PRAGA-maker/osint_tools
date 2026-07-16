@@ -30,12 +30,16 @@ bestInteractionPattern: desktop-app
 trust: community
 trustNote: Long-known OSINT geolocation tool, but the upstream repo is effectively unmaintained and broke when Twitter/Instagram locked down their APIs.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: api-key
 api: false
 localInstall: true
 registration: false
-relatedTools: [current-location, deepfind-me-2]
+relatedTools:
+- current-location
+- deepfind-me-2
+- creepy-2
 aliases:
 - CreepyAI
 - cree.py

@@ -33,6 +33,12 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- curl-for-osint
+- masto
+- osint-tactical
+- prot1ntelligence
+- whatsmyname-python
 ---
 
 # WEBOSINT

@@ -34,6 +34,7 @@ localInstall: false
 registration: false
 relatedTools:
 - gov-uk-14
+- myewc-wales
 aliases:
 - Education Workforce Council
 - EWC Wales register

@@ -37,6 +37,9 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- my-osint-training-tools
+- the-bitmoji-avatar-history-enumerator
 ---
 
 # My OSINT Training (MOT)

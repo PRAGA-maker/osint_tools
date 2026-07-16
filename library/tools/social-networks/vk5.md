@@ -35,6 +35,7 @@ registration: false
 relatedTools:
 - vk-com
 - 220vk
+- vk-city4me-com
 aliases:
 - vk5.city4me.com
 - city4me

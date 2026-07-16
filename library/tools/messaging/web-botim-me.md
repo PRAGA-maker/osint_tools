@@ -32,7 +32,8 @@ auth: account
 api: false
 localInstall: true
 registration: true
-relatedTools: []
+relatedTools:
+- botim-me
 aliases:
 - BOTIM
 - botim.me

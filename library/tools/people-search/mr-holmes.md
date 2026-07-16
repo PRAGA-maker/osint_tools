@@ -38,6 +38,7 @@ registration: false
 relatedTools:
 - social-analyzer
 - phunter
+- linkdtime
 aliases:
 - mr holmes
 - mrholmes

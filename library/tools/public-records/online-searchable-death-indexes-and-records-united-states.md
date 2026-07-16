@@ -32,6 +32,7 @@ localInstall: false
 registration: false
 relatedTools:
 - familysearch
+- death-check
 aliases:
 - deathindexes.com
 - US death indexes directory

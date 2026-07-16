@@ -31,7 +31,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- identifont-com
 aliases: []
 tags:
 - fonts

@@ -37,6 +37,12 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: full
+relatedTools:
+- canadian-business-research
+- canadian-department-of-finance
+- completed-access-to-information-requests
+- gov-data-canada
+- government-of-canada-open-data
 ---
 
 # Federal Corporation Search (Canada)

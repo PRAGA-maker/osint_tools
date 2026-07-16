@@ -35,6 +35,8 @@ registration: true
 invitationOnly: false
 relatedTools:
 - facebook
+- naijapals
+- naijapals-com-2
 aliases:
 - naijapals.com
 tags:

@@ -35,6 +35,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - bop-inmate-locator
+- ny-rent-regulated-building-search
 aliases:
 - NYS DOCCS Inmate Lookup
 - New York State Incarcerated Lookup

@@ -31,6 +31,8 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- environmental-investigation-agency
 ---
 
 # EIA Global Environmental Crime Tracker

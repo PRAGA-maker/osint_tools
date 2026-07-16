@@ -34,6 +34,8 @@ registration: false
 invitationOnly: false
 relatedTools:
 - osintcombine-com
+- birdhunt-2
+- huntel-io
 aliases:
 - InstaHunt
 - HuntIntel Instahunt

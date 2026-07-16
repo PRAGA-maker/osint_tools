@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- backgroundchecks-org
+- fake-identity-generator
 aliases: []
 tags: []
 source: arf-seed

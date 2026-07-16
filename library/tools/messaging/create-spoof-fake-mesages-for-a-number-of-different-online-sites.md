@@ -34,6 +34,9 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- fakedetail-com
+- fakedetail-com-2
 ---
 
 # Create Spoof / Fake Mesages for a number of different online sites

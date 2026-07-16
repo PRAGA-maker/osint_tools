@@ -36,6 +36,7 @@ registration: false
 relatedTools:
 - 192-com
 - infobel
+- ukphonebook-com
 aliases:
 - ukphonebook.com
 tags:

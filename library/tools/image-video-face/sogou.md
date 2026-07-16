@@ -35,6 +35,9 @@ relatedTools:
 - yandex-images
 - baidu-images
 - google-lens
+- sogou-china
+- sogou-wechat-search
+- sougou-com
 aliases:
 - pic.sogou.com
 - 搜狗图片

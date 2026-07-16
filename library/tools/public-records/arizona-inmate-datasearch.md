@@ -33,6 +33,7 @@ localInstall: false
 registration: false
 relatedTools:
 - court-electronic-records-pacer
+- arizona-genealogy-birth-and-death-certificates
 aliases:
 - ADCRR inmate search
 - Arizona DOC inmate datasearch

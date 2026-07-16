@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- comodo-free-antivirus
+- valkyrie-file-analysis
 ---
 
 # Comodo Dragon

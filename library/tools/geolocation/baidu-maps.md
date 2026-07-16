@@ -7,29 +7,56 @@ category: geolocation
 path:
 - geolocation
 bestFor: Mapping, POI discovery, and street-level imagery inside mainland China where Western maps are weak.
-selectorsIn: [address, geolocation, name]
-selectorsOut: [address, geolocation, employer-org]
+selectorsIn:
+- address
+- geolocation
+- name
+selectorsOut:
+- address
+- geolocation
+- employer-org
 status: live
 pricing: freemium
 costNote: Viewing maps, POIs, and Panorama street view in a browser is free with no login; the Baidu Maps developer API/SDK requires a Baidu account and key.
 opsec: passive
 opsecNote: You browse Baidu's public map; no contact with the target. Baidu is a Chinese platform that logs requests — use a clean/sock browser session and avoid signing into a Baidu account tied to your identity.
 humanInLoop: true
-humanInLoopReason: [captcha]
+humanInLoopReason:
+- captcha
 bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Baidu Maps is China's dominant first-party mapping service (Baidu, NASDAQ-listed); imagery and POI data are authoritative for China, with the caveat of the BD-09 coordinate offset.
 missingPersonsRelevance: medium
-coverage: [cn]
+coverage:
+- cn
 auth: none
 api: true
 localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: [bing-maps, arcgis, batchgeo]
-aliases: [baidu-ditu, baidu-map]
-tags: [china, street-view, panorama, poi, mapping]
+relatedTools:
+- bing-maps
+- arcgis
+- batchgeo
+- baidu
+- baidu-china
+- baidu-com
+- baidu-image-search
+- baidu-image-search-2
+- baidu-images
+- baidu-translate
+- baiduknows-search-engine-china
+- baike-baidu-chinese-language
+aliases:
+- baidu-ditu
+- baidu-map
+tags:
+- china
+- street-view
+- panorama
+- poi
+- mapping
 source: arf-seed
 lastVerified: '2026-06-13'
 enrichment: full

@@ -32,6 +32,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- whatsapp-fake-chat-generator
 ---
 
 # Fake WhatsApp Chat Generator

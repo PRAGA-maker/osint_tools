@@ -30,7 +30,9 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ipvoid
+- ipvoid-com
 aliases: []
 tags: []
 source: arf-seed

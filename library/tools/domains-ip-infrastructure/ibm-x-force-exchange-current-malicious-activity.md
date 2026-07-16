@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ibm-x-force-exchange
 ---
 
 # IBM X-Force Exchange Current Malicious Activity

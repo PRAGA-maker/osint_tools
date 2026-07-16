@@ -32,6 +32,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - snaptik-app
+- ttsave-app-2
 aliases:
 - ttsave
 tags:

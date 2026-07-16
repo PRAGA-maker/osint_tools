@@ -30,7 +30,11 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- statistics-and-data
+- un-comtrade-database
+- un-data
+- unstats-social-indicators
 aliases: []
 tags: []
 source: arf-seed

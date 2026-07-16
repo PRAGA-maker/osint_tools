@@ -33,6 +33,9 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ship-spotting
+- shipspotting-live-ais
 ---
 
 # ShipSpotting.com

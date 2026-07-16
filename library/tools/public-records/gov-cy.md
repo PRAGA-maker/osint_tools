@@ -1,6 +1,6 @@
 ---
 id: gov-cy
-name: "Cyprus Registrar of Companies (DRCOR)"
+name: Cyprus Registrar of Companies (DRCOR)
 description: Use when you have a Cyprus `employer-org`/company name (or reg number) and want its official registry record — returns registered `address`, company officers/directors and status.
 url: https://efiling.drcor.mcit.gov.cy/DrcorPublic/SearchForm.aspx?sc=0
 category: public-records
@@ -35,6 +35,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - legalmondo-com
+- cyprus
 aliases:
 - DRCOR
 - Cyprus company registry

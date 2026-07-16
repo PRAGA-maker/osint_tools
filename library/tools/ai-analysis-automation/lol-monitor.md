@@ -30,6 +30,15 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- github-monitor
+- instagram-monitor
+- lastfm-monitor
+- psn-monitor
+- spotify-monitor
+- spotify-profile-monitor
+- steam-monitor
+- xbox-monitor
 ---
 
 # lol_monitor

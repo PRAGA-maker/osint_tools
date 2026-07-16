@@ -36,6 +36,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- eia-global-environmental-crime-tracker
 ---
 
 # Environmental Investigation Agency

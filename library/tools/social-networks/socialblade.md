@@ -31,6 +31,7 @@ registration: false
 relatedTools:
 - socialblade-2
 - x-com
+- social-blade
 aliases:
 - socialblade.com
 - Social Blade

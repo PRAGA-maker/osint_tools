@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- foursquare
+- foursquare-business-search
 ---
 
 # Foursquare Time Machine

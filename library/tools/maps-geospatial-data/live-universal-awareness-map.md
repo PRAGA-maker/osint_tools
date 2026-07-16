@@ -31,6 +31,9 @@ registration: false
 relatedTools:
 - acled
 - bellingcat-timeline
+- liveuamap
+- map-of-syrian-civil-war
+- ukraine-liveuamap-com
 aliases:
 - Liveuamap
 - Live UA Map

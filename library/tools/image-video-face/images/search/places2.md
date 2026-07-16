@@ -30,7 +30,10 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- mit-pgp-key-server
+- mit-pgp-public-key-server
+- tweetmap
 aliases: []
 tags: []
 source: arf-seed

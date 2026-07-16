@@ -36,6 +36,10 @@ registration: false
 relatedTools:
 - account-live-com
 - holehe
+- epieos-check-phone-usage
+- epieos-email-tool
+- epieos-tools
+- google-account-finder-epieos
 aliases:
 - Epieos email lookup
 - holehe online

@@ -32,6 +32,7 @@ localInstall: false
 registration: false
 relatedTools:
 - openstreetmap
+- whatiswhere-com
 aliases:
 - What Is Where
 - whatiswhere.com

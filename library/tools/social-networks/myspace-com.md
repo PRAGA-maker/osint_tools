@@ -34,6 +34,7 @@ registration: false
 relatedTools:
 - whatsmyname-web
 - wayback-machine
+- myspace
 aliases:
 - myspace.com
 tags:

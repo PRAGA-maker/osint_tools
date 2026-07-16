@@ -35,6 +35,7 @@ localInstall: false
 registration: true
 relatedTools:
 - hunter-io
+- rocketreach
 aliases:
 - rocketreach.co
 - RocketReach lead intelligence

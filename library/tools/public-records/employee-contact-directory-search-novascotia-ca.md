@@ -29,6 +29,8 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- rjsc-connect
 ---
 
 # Employee Contact Directory Search \| novascotia.ca

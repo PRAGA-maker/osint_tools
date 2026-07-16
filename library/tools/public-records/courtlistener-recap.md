@@ -42,6 +42,10 @@ tags:
 source: inteltechniques-tools
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- courtlistener
+- free-law-recap-archive
+- recap-court-doc-repo
 ---
 
 # CourtListener / RECAP

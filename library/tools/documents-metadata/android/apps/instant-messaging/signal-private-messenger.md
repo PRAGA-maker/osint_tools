@@ -32,7 +32,8 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- signal-org
 aliases: []
 tags: []
 source: arf-seed

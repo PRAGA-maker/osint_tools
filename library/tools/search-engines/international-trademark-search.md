@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- european-trademark-search
+- trademarkia
 ---
 
 # International Trademark Search

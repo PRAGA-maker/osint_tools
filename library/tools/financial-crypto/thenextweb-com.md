@@ -34,6 +34,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- thenextweb
 ---
 
 # thenextweb.com

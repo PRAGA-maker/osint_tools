@@ -34,6 +34,11 @@ registration: false
 relatedTools:
 - whopostedwhat-com
 - one-liner-osint-github-com
+- facebook-search-3
+- google-social-search
+- social-mentions
+- social-profiles-finder
+- social-trends
 aliases:
 - social-searcher.com
 - Social Searcher

@@ -34,6 +34,8 @@ localInstall: false
 registration: true
 relatedTools:
 - epieos
+- follower-wonk-compare
+- search-twitter-bios-and-profiles
 aliases:
 - Follower Wonk
 tags:

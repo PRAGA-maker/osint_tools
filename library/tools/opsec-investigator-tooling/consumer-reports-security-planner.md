@@ -29,6 +29,8 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- consumerreports-north-america
 ---
 
 # Consumer Reports Security Planner

@@ -41,6 +41,9 @@ tags:
 source: arf-seed
 lastVerified: '2026-07-15'
 enrichment: full
+relatedTools:
+- the-wall-street-journal
+- wsj-technology-news
 ---
 
 # Tweet Metadata

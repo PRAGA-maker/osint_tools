@@ -35,6 +35,7 @@ relatedTools:
 - georgia
 - vinelink
 - bop-inmate-locator
+- illinois-inmate-search
 aliases:
 - Illinois Department of Corrections inmate search
 - IDOC offender search

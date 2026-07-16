@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- forbes-com
+- forbes-global-2000
 ---
 
 # Forbes Magazine

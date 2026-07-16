@@ -39,6 +39,8 @@ deprecated: false
 relatedTools:
 - peekyou
 - webmii
+- blackplanet
+- blackplanet-com
 aliases:
 - BlackPlanet
 - BlackPlanet member search

@@ -32,7 +32,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- sherlock-2
 aliases:
 - sherlock-project
 tags:

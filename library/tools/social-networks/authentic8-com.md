@@ -41,6 +41,9 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- authentic8-com-2
+- authentic8-com-3
 ---
 
 # Authentic8 — Instagram OSINT Guide

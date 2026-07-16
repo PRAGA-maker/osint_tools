@@ -29,7 +29,18 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- here
+- r-opendirectories
+- reddit
+- reddit-askmeanything
+- reddit-com
+- reddit-darknet
+- reddit-deep-web
+- reddit-guide-to-opting-out-of-background-check-websites
+- reddit-old-reddit-search
+- reddit-onions
+- reddit-r-translator
 aliases:
 - Telegram user ID lookup
 - how to find another user's Telegram ID

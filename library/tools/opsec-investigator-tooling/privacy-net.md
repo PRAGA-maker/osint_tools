@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- privacy-net-privacy-analyzer
 ---
 
 # Privacy.net

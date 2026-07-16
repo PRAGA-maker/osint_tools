@@ -34,6 +34,10 @@ registration: false
 relatedTools:
 - gro-gov-uk
 - freebmd
+- gov-im
+- gov-im-2
+- gov-im-4
+- gov-im-5
 aliases:
 - Isle of Man General Registry
 - IoM BMD

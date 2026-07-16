@@ -35,6 +35,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- owasp-d4n155
 ---
 
 # OWASP Amass

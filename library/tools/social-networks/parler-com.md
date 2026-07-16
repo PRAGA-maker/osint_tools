@@ -34,6 +34,7 @@ registration: true
 invitationOnly: false
 relatedTools:
 - gab-com
+- parler-search
 aliases:
 - Parler
 tags:

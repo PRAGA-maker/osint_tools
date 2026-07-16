@@ -42,6 +42,7 @@ relatedTools:
 - beenverified-com
 - truepeoplesearch
 - pipl
+- spokeo-com
 aliases:
 - spokeo.com
 tags:

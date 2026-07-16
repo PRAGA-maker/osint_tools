@@ -31,6 +31,7 @@ registration: false
 relatedTools:
 - mailtester
 - mailscrap
+- email-permutator
 aliases:
 - email permutator
 tags:

@@ -34,6 +34,8 @@ invitationOnly: false
 deprecated: false
 relatedTools:
 - suncalc-2
+- astronomy-sun-moon-eclipses
+- timeanddate-com
 aliases:
 - timeanddate.com
 tags:

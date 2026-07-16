@@ -34,6 +34,7 @@ invitationOnly: false
 relatedTools:
 - california
 - indiana-offender-database-search
+- ohio-mhas
 aliases:
 - Ohio DRC Offender Search
 - Ohio inmate search

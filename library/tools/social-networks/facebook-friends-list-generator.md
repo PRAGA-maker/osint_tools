@@ -33,6 +33,11 @@ registration: true
 relatedTools:
 - facebook-directory-users-by-name
 - facebook-watch
+- facebook-email-reverse-lookup
+- facebook-entity-id-parser
+- facebook-profile-id-grabber
+- linkedin-email-reverse-lookup
+- osint-and-socmint-tooling
 aliases:
 - FB friends list extractor
 - osint.support friends list generator

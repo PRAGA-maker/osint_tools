@@ -34,6 +34,11 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- bellingcat-meta-content-library
+- bellingcat-s-online-investigation-toolkit-2
+- china-related-resources
+- license-plate-maps
 ---
 
 # About Maps and Satellites

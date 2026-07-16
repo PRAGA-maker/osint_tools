@@ -22,26 +22,9 @@ import _common as C
 
 SCHEMA_DIR = os.path.join(C.LIB, "schema")
 
-# Hosts where one domain serves many independent tools; key on host+first-path-seg
-# (or full host) so distinct repos/users aren't reported as overlaps.
-MULTITENANT = {"github.com", "gitlab.com", "sourceforge.net", "bitbucket.org",
-               "medium.com", "wordpress.com", "blogspot.com", "gitbook.io",
-               "herokuapp.com", "netlify.app", "pages.dev", "web.app",
-               "firebaseapp.com", "glitch.me", "replit.app", "readthedocs.io"}
-
-
-def dedup_key(url):
-    dom = C.registered_domain(url)
-    if not dom:
-        return ""
-    m = re.search(r"https?://([^/]+)(/[^/?#]*)?", url or "")
-    host = (m.group(1).lower() if m else dom)
-    if host.endswith(".github.io") or host.endswith(".gitlab.io"):
-        return host  # user.github.io is already per-tool
-    if dom in MULTITENANT:
-        seg = (m.group(2) or "").strip("/") if m else ""
-        return f"{dom}/{seg}" if seg else dom
-    return dom
+# dedup grouping + which groups are genuine "do both" suites lives in one place so
+# this validator's overlap warning matches exactly what wire_related.py links.
+from sibling_policy import dedup_key, is_cross_linked, should_link_group
 
 
 def load_schema(name):
@@ -75,6 +58,7 @@ def validate_tree(base, schema, label, errors, warns, stats):
     required = schema.get("required", [])
     enums = enum_map(schema)
     domains = defaultdict(list)
+    related_of = {}
     for path, fm, body in C.iter_skills(base):
         rel = os.path.relpath(path, C.ROOT)
         stem = os.path.basename(path)[:-3]
@@ -106,12 +90,18 @@ def validate_tree(base, schema, label, errors, warns, stats):
                 errors.append(f"{rel}: url not http(s)/bookmarklet: '{url[:60]}'")
             key = dedup_key(url)
             if key:
-                domains[key].append(fm.get("id", stem))
-    # dedup-by-domain warnings
+                tid = fm.get("id", stem)
+                domains[key].append(tid)
+                related_of[tid] = set(fm.get("relatedTools") or [])
+    # dedup-by-domain warnings: only for genuine sibling suites still un-wired
+    # (skip generic platforms / public-suffix false-groups / oversized per policy).
     for dom, ids in domains.items():
-        if len(ids) > 1:
+        if len(ids) < 2:
+            continue
+        ok, _reason = should_link_group(dom, ids)
+        if ok and not is_cross_linked(ids, related_of):
             warns.append(f"overlap@{dom}: {', '.join(ids[:8])}{'...' if len(ids) > 8 else ''} "
-                         f"-> ensure relatedTools cross-links ('do both')")
+                         f"-> relatedTools not cross-linked ('do both'); run wire_related.py")
 
 
 def check_links(base):

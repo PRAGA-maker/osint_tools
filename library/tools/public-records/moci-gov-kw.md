@@ -35,6 +35,7 @@ registration: true
 relatedTools:
 - opencorporates-com
 - blockint-nl
+- e-gov-kw
 aliases:
 - Kuwait MOCI
 - Kuwait commercial registry

@@ -40,6 +40,16 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- efficientnetv2
+- get-text-from-video
+- hugging-face-ai-detector
+- huggingface-co
+- instruct-pix2pix
+- kosmos-2
+- pix2pix-video
+- scene-edit-detection
+- youtube-whisperer
 ---
 
 # Whisper Word-Level Timestamps (Hugging Face Space)

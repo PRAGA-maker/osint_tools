@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- occupational-outlook-handbook-it-united-states
 ---
 
 # International Labour Comparisons

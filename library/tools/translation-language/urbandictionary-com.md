@@ -31,6 +31,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- urban-dictionary
 ---
 
 # urbandictionary.com

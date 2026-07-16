@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- kali-linux
+- kali-linux-os
 ---
 
 # Goofile

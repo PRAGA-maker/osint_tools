@@ -39,6 +39,8 @@ tags:
 source: cyb-detective
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- phunter
 ---
 
 # ZEHEF

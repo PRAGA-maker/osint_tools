@@ -37,6 +37,10 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: full
+relatedTools:
+- department-of-energy-patents
+- doe-data-explorer
+- us-dept-of-energy-office-of-science-search
 ---
 
 # OSTI Science Cinema Search

@@ -36,6 +36,7 @@ registration: false
 relatedTools:
 - companies-house
 - ebra-be
+- cro-ie
 aliases:
 - CRO Ireland
 - CORE

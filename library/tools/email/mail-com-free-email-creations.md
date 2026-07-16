@@ -28,7 +28,8 @@ auth: account
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- mail-com-germany
 aliases:
 - mail.com
 tags:

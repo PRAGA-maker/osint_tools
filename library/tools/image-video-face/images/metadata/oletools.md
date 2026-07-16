@@ -36,7 +36,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- balbuzard
 aliases:
 - olevba
 - olemeta

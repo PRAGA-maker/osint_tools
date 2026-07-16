@@ -33,6 +33,17 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- e-justice-europa-eu
+- eu-consolidated-corporate-registers
+- eu-sanctions-tool
+- europa-eu
+- europa-press-releases
+- european-union-open-data-portal
+- eurostat
+- frontex-migratory-map
+- inspire-geoportal
+- vat-number-validation
 ---
 
 # European Commission Home Affairs

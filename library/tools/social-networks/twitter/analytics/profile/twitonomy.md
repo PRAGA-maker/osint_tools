@@ -36,6 +36,7 @@ registration: true
 relatedTools:
 - x0rz-tweets-analyzer
 - social-searcher
+- twitter-mentions-map
 aliases:
 - Twitonomy
 - twitonomy.com

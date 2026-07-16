@@ -39,6 +39,10 @@ relatedTools:
 - holehe
 - ghunt
 - email-reputation
+- epieos
+- epieos-check-phone-usage
+- epieos-tools
+- google-account-finder-epieos
 aliases:
 - Epieos email lookup
 tags:

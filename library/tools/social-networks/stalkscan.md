@@ -36,6 +36,7 @@ deprecated: true
 relatedTools:
 - graph-tips
 - intelligencex
+- facebook-scanner
 aliases:
 - stalkscan.com
 tags:

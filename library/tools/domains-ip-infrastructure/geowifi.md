@@ -35,6 +35,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- deepfaceui-github-com
 ---
 
 # GeoWiFi

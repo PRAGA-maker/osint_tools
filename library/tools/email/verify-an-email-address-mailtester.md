@@ -32,6 +32,7 @@ registration: false
 relatedTools:
 - verify-email
 - validateemailaddress-org
+- mailtester
 aliases:
 - Mailtester
 - mailtester.com

@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - numberingplans-com
 - telegram-finder
+- zehef
 aliases:
 - N0rz3/Phunter
 tags:

@@ -35,6 +35,15 @@ relatedTools:
 - snapinsta-to
 - toutatis-2
 - insta-timestamp-github-com
+- inflact
+- inflact-com
+- inflact-com-2
+- inflact-com-3
+- inflact-com-5
+- inflact-downloader
+- inflact-instagram-search
+- inflact-instagram-viewer-anonymous
+- inflact-profile-analyzer
 aliases:
 - Inflact Reels Downloader
 - Insta Reels Downloader

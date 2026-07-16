@@ -30,7 +30,10 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- censys-certificates
+- censys-ipv4
+- search-censys-io
 aliases: []
 tags: []
 source: arf-seed

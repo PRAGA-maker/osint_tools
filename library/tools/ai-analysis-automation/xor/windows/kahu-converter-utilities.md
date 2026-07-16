@@ -30,7 +30,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- kahu-revelo
 aliases: []
 tags: []
 source: arf-seed

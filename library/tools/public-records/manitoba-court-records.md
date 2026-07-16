@@ -41,6 +41,9 @@ tags:
 source: metaosint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- manitoba-assessment-online
+- manitoba-sex-offender
 ---
 
 # Manitoba Court Records (name search)

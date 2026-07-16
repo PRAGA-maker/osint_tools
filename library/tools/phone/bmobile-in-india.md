@@ -38,6 +38,8 @@ tags:
 source: metaosint
 lastVerified: '2026-06-13'
 enrichment: full
+relatedTools:
+- bmobile-in
 ---
 
 # bmobile.in (India)

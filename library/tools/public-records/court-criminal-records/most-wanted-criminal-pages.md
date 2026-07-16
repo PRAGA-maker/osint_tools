@@ -29,7 +29,13 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- fbi-common-fraud-schemes-united-states
+- fbi-information-technology-united-states
+- federal-bureau-of-investigations-value
+- most-wanted
+- sex-offender-registry-websites
+- vault-fbi-gov
 aliases: []
 tags: []
 source: arf-seed

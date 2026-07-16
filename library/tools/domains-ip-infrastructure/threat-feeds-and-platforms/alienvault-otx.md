@@ -30,7 +30,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- alienvault-open-threat-exchange
 aliases: []
 tags: []
 source: arf-seed

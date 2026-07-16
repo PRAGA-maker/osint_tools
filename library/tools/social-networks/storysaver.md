@@ -33,6 +33,8 @@ registration: false
 relatedTools:
 - inflact-com-4
 - toutatis-2
+- story-saver
+- storysaver-net
 aliases:
 - StorySaver
 - storysaver.net

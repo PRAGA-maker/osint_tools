@@ -34,6 +34,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- pocket
 ---
 
 # Get Pocket News Saving App

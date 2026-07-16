@@ -35,6 +35,10 @@ registration: false
 relatedTools:
 - allareacodes
 - white-pages
+- canada411-advanced-search-whitepages-ca
+- canada411-ca
+- canada411-ca-2
+- new-canada-411
 aliases:
 - Canada 411
 - canada411.ca

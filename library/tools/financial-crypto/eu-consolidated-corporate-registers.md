@@ -35,6 +35,17 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- e-justice-europa-eu
+- eu-sanctions-tool
+- europa-eu
+- europa-press-releases
+- european-commission-home-affairs
+- european-union-open-data-portal
+- eurostat
+- frontex-migratory-map
+- inspire-geoportal
+- vat-number-validation
 ---
 
 # EU consolidated corporate registers

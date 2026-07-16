@@ -30,6 +30,11 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- highwire-free-online-full-text-articles
+- palladio
+- regular-expression-analyzer
+- stanford-large-network-dataset-collection
 ---
 
 # Swap.stanford.edu

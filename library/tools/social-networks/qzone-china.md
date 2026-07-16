@@ -35,6 +35,10 @@ registration: true
 relatedTools:
 - wechatsogou
 - weibo-com
+- qzone
+- tencent-com
+- tencent-maps
+- tencent-qq-mail
 aliases:
 - QQ Zone
 - QQ空间

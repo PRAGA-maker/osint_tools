@@ -29,7 +29,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- central-and-eastern-european-business-directory
+- globaledge
+- globaledge-database-of-international-business-statistics
 aliases: []
 tags: []
 source: arf-seed

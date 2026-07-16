@@ -36,6 +36,16 @@ relatedTools:
 - google-reverse-image-search
 - yandex-video-search
 - tineye
+- bing
+- bing-creations
+- bing-ip-search
+- bing-maps
+- bing-microsoft-translator
+- bing-news
+- bing-translate
+- bing-videos
+- bing-webmaster-tools
+- see-it-search-it
 aliases:
 - Bing Visual Search
 - bing.com/images

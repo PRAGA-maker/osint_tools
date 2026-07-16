@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - exolyt
 - cobalt-tools
+- tiktok-video-downloader-ssstik
 aliases:
 - SSSTik
 - ssstik.io

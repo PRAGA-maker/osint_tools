@@ -29,7 +29,11 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- photon
+- striker
+- zen
+- zen-github-com
 aliases: []
 tags: []
 source: arf-seed

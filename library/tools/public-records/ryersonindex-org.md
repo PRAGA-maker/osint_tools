@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - legacy-com
 - billiongraves-com
+- the-ryerson-index-australia
 aliases:
 - Ryerson Index
 - ryersonindex.org

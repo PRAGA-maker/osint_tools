@@ -31,6 +31,16 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- efficientnetv2
+- get-text-from-video
+- hugging-face-ai-detector
+- huggingface-co
+- huggingface-co-4
+- instruct-pix2pix
+- kosmos-2
+- pix2pix-video
+- scene-edit-detection
 ---
 
 # YouTube Whisperer

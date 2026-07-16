@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ratemyteachers-com
+- www-ratemyteachers-com
 ---
 
 # RateMyTeachers (North America)

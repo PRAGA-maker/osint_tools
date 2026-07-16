@@ -30,7 +30,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ifttt-instagram-integrations
 aliases: []
 tags: []
 source: arf-seed

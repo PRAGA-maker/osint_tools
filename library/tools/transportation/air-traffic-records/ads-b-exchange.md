@@ -29,7 +29,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ads-b-exchange-radar-view
+- ads-b-historical-flight-viewer
+- flight-tracker
 aliases: []
 tags: []
 source: arf-seed

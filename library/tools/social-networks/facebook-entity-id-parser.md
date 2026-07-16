@@ -34,6 +34,11 @@ invitationOnly: false
 relatedTools:
 - lookup-id-com
 - sowsearch
+- facebook-email-reverse-lookup
+- facebook-friends-list-generator
+- facebook-profile-id-grabber
+- linkedin-email-reverse-lookup
+- osint-and-socmint-tooling
 aliases:
 - Facebook Entity ID Parser
 - FB ID grabber

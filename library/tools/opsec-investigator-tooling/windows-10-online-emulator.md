@@ -30,6 +30,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- parrot-security-os-online-emulator
 ---
 
 # Windows 10 Online Emulator

@@ -36,6 +36,8 @@ tags:
 source: inteltechniques-tools
 lastVerified: ''
 enrichment: full
+relatedTools:
+- personal-data-leak-checker
 ---
 
 # Cybernews Personal Data Leak Check

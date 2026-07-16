@@ -46,6 +46,11 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- gov-im
+- gov-im-2
+- gov-im-3
+- gov-im-5
 ---
 
 # Isle of Man Deeds, Probate & Land Registry Search

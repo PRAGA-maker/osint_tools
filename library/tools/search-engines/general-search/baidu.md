@@ -29,7 +29,16 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- baidu-china
+- baidu-com
+- baidu-image-search
+- baidu-image-search-2
+- baidu-images
+- baidu-maps
+- baidu-translate
+- baiduknows-search-engine-china
+- baike-baidu-chinese-language
 aliases: []
 tags: []
 source: arf-seed

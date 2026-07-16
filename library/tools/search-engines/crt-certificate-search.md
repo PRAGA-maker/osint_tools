@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- crt-sh-certificate-search
 ---
 
 # CRT Certificate Search

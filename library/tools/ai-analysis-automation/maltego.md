@@ -51,6 +51,8 @@ tags:
 source: gh-topic-footprinting
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- paterva-maltego
 ---
 
 # Maltego

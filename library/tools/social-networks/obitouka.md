@@ -35,6 +35,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- instagramprivsniffer
 ---
 
 # Obitouka

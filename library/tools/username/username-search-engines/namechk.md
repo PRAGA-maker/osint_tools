@@ -34,7 +34,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- name-chk
 aliases:
 - namechk.com
 tags:

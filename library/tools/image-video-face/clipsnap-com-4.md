@@ -23,12 +23,15 @@ bestInteractionPattern: web-manual
 trust: unverified
 trustNote: Commercial AI image-editing site; output is a synthetic reconstruction, not a faithful record — never treat an unblurred face as forensic evidence.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: [deep-image-ai]
+relatedTools:
+- deep-image-ai
+- clipsnap-com
 aliases: []
 tags:
 - photosites

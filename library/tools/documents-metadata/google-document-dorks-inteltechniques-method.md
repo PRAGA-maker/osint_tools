@@ -35,6 +35,17 @@ relatedTools:
 - google-dorks
 - metagoofil
 - exiftool
+- email-assumptions
+- email-search-tool-by-inteltechniques
+- instagram-search-inteltechniques-method
+- instagram-tool-inteltechniques-com
+- inteltechniques-business-search-tool
+- inteltechniques-facebook
+- inteltechniques-osint
+- inteltechniques-telephone
+- inteltechniques-tools-search-engines-suite
+- inteltechniques-twitter
+- user-name-search-intel-techniques
 aliases:
 - IntelTechniques Documents tool
 - Bazzell document search

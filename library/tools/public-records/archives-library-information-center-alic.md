@@ -34,6 +34,8 @@ registration: false
 relatedTools:
 - familysearch
 - deathindexes-com
+- access-to-archival-databases
+- national-archives-and-records
 aliases:
 - ALIC
 - NARA vital records reference

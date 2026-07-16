@@ -39,6 +39,9 @@ tags:
 source: metaosint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- carrier-lookup-2
+- freecarrierlookup
 ---
 
 # Free Carrier Lookup

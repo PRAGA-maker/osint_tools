@@ -34,7 +34,8 @@ auth: account
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- pimeyes-2
 aliases:
 - PimEyes
 - reverse face search

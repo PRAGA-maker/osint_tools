@@ -36,6 +36,8 @@ relatedTools:
 - white-pages
 - allareacodes
 - white-pages-people-finder-anywho
+- superpages-directory-united-states
+- superpages-online-yellow-pages-local-business-directory
 aliases:
 - Superpages
 - superpages.com

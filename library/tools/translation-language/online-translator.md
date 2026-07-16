@@ -30,6 +30,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- promt-free-online-translator
 ---
 
 # Online Translator

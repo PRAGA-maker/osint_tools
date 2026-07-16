@@ -33,6 +33,11 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- open-corporates-command-line-client-occli
+- thedevilseye
+- thelordeye
+- thorndyke
 ---
 
 # 0xdork

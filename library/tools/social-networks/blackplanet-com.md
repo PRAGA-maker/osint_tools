@@ -33,6 +33,8 @@ registration: false
 relatedTools:
 - whatsmyname-web
 - google-com-90
+- blackplanet
+- blackplanet-com-member-find
 aliases:
 - blackplanet.com
 tags:

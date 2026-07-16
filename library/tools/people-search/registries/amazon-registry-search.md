@@ -28,7 +28,8 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: First-party Amazon US registry search. Data is self-published by the registrant — authentic but only as accurate as entered.
 missingPersonsRelevance: medium
-coverage: [us]
+coverage:
+- us
 auth: none
 api: false
 localInstall: false
@@ -37,6 +38,13 @@ invitationOnly: false
 deprecated: false
 relatedTools:
 - amazon-co-uk-4
+- amazon
+- amazon-com
+- amazon-pay
+- amazon-rekognition
+- amazon-sns
+- aws-public-datasets
+- us-east-1-console-aws-amazon-com
 aliases: []
 tags: []
 source: arf-seed

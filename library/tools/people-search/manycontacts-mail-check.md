@@ -30,6 +30,8 @@ localInstall: false
 registration: false
 relatedTools:
 - account-live-com
+- email-checker-searches-email-via-social-networks
+- manycontacts-sn-results
 aliases:
 - ManyContacts Mail Check
 - manycontacts.com mail check

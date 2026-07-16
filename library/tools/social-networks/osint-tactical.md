@@ -36,6 +36,11 @@ relatedTools:
 - whatsmyname
 - sherlock
 - masto-python
+- curl-for-osint
+- masto
+- prot1ntelligence
+- webosint
+- whatsmyname-python
 aliases:
 - OSINT Tactical
 - C3n7ral051nt4g3ncy

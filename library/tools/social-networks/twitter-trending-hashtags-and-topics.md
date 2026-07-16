@@ -31,6 +31,8 @@ registration: false
 invitationOnly: false
 relatedTools:
 - twitter-advanced-search
+- trendsmap
+- trendsmap-com
 aliases:
 - Twitter Trending Hashtags and Topics
 - trendsmap.com

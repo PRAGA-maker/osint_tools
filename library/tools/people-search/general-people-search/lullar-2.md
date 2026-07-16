@@ -34,7 +34,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- lullar
 aliases:
 - Lullar Profile Search
 - com.lullar.com

@@ -33,6 +33,9 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- cloudflare-resolver
+- skype-resolver
 ---
 
 # 2- Skypeipresolver.net

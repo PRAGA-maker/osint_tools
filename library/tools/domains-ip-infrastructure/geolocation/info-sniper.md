@@ -30,7 +30,9 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- infosniper
+- infosniper-net
 aliases: []
 tags: []
 source: arf-seed

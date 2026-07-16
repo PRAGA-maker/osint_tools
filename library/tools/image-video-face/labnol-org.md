@@ -24,12 +24,15 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Long-running reverse-image helper page by Amit Agarwal (Digital Inspiration / Labnol). The HTTP (non-HTTPS) URL and reliance on third-party engines mean it may break; verify it still loads.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- print-storyboard-from-youtube
+- print-youtube-storyboard-instructions
 aliases:
 - Reverse Image Search by Labnol
 tags:

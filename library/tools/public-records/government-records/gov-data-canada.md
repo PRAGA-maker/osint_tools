@@ -29,7 +29,12 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- canadian-business-research
+- canadian-department-of-finance
+- completed-access-to-information-requests
+- federal-corporation-search-canada
+- government-of-canada-open-data
 aliases: []
 tags: []
 source: arf-seed

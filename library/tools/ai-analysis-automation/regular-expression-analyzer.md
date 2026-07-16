@@ -30,6 +30,11 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- highwire-free-online-full-text-articles
+- palladio
+- stanford-large-network-dataset-collection
+- swap-stanford-edu
 ---
 
 # Regular Expression Analyzer

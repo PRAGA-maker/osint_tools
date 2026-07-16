@@ -29,7 +29,9 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- seclists
+- seclists-dns-subdomains
 aliases: []
 tags: []
 source: arf-seed

@@ -32,6 +32,11 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- bellingcat
+- bellingcat-com
+- bellingcat-openstreetmap-search
+- these-are-the-tools-open-source-researchers-say-they-need
 ---
 
 # xBlog: bellingcat - A Beginner's Guide To Flight Tracking - bellingcat

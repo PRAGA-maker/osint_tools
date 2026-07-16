@@ -32,6 +32,15 @@ registration: false
 relatedTools:
 - threadsphotodownloader-com
 - imagewhisperer-org
+- inflact
+- inflact-com
+- inflact-com-3
+- inflact-com-4
+- inflact-com-5
+- inflact-downloader
+- inflact-instagram-search
+- inflact-instagram-viewer-anonymous
+- inflact-profile-analyzer
 aliases:
 - Inflact Instagram Viewer
 - Inflact

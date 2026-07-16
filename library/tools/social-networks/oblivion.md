@@ -35,6 +35,7 @@ localInstall: true
 registration: false
 relatedTools:
 - gosearch
+- goblyn
 aliases:
 - loseys/Oblivion
 tags:

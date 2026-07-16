@@ -29,6 +29,9 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- manitoba-court-records
+- manitoba-sex-offender
 ---
 
 # Manitoba Assessment Online

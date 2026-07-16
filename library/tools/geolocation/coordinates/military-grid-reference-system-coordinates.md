@@ -31,7 +31,12 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- google-maps-update-alerts
+- lullar-com-3-appspot-com
+- rss-vk-to-rss
+- sentiment140
+- snapchat-search-enter-username-here
 aliases:
 - MGRS converter
 - USNG converter

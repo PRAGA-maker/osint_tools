@@ -32,6 +32,11 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- firms
+- nasa-firms
+- nasa-kids-club
+- nasa-worldview
 ---
 
 # NASA Earthdata Search

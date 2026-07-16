@@ -46,6 +46,9 @@ invitationOnly: false
 deprecated: false
 relatedTools:
 - ancestry-genealogy-family-trees-and-family-history-records
+- ancestry
+- lauderdale-county
+- yearbooks-high-school-yearbooks-ancestry
 aliases:
 - Ancestry
 - Ancestry.com

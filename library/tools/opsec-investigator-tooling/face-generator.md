@@ -32,6 +32,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- 2-682-783-free-ai-generated-photos
+- face-anonimyzer
 ---
 
 # Face Generator

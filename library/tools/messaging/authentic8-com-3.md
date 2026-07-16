@@ -26,12 +26,15 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Authored by Authentic8, a reputable cybersecurity/managed-attribution vendor; the guidance is solid tradecraft, though it doubles as product marketing.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- authentic8-com
+- authentic8-com-2
 aliases:
 - Authentic8 Telegram OSINT
 tags:

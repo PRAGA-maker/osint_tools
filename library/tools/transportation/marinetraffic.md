@@ -32,6 +32,8 @@ tags:
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- marine-traffic-geolocation-search
 ---
 
 # MarineTraffic

@@ -42,6 +42,11 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- gov-im-2
+- gov-im-3
+- gov-im-4
+- gov-im-5
 ---
 
 # Isle of Man Companies Registry

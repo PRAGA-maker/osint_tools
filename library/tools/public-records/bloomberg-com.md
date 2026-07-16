@@ -33,7 +33,11 @@ api: false
 localInstall: false
 registration: true
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- bloomberg
+- bloomberg-business-news
+- bloomberg-public-companies-search
+- lei-bloomberg-com
 aliases:
 - Bloomberg
 - Bloomberg Markets

@@ -34,6 +34,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- buzz-sumo
+- buzzsumo
 ---
 
 # AppSumo Content Analyzer

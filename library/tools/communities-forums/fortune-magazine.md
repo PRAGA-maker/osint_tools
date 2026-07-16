@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- fortune-500-list-of-companies-2020-fortune
 ---
 
 # Fortune Magazine

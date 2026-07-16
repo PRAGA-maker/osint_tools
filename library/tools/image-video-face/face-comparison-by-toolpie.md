@@ -33,6 +33,9 @@ registration: false
 invitationOnly: false
 relatedTools:
 - pimeyes
+- age-toolpie-com
+- car-vehicle-model-recognition-online
+- landmark-toolpie-com
 aliases:
 - ToolPie Face Comparison
 tags:

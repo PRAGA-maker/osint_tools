@@ -31,6 +31,11 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- library-of-congress-ask-a-librarian
+- library-of-congress-united-states
+- usa-telephone-directory-collection
+- webarchive-loc-gov
 ---
 
 # Newspaper navigator

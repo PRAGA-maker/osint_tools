@@ -41,6 +41,11 @@ tags:
 source: tracelabs-repos
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- gumshoe
+- the-osint-field-manual-tofm
+- trace-labs-awesome-osint
+- trace-labs-osint-vm-tlosint-vm
 ---
 
 # h8mail (Trace Labs fork)

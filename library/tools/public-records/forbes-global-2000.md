@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- forbes-com
+- forbes-magazine
 ---
 
 # Forbes Global 2000

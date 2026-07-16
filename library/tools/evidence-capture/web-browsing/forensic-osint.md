@@ -29,7 +29,10 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- forensic-osint-kb-guides
+- forensicosint-com
+- forensicosint-com-3
 aliases: []
 tags: []
 source: arf-seed

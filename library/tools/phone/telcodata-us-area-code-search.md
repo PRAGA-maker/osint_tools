@@ -33,6 +33,7 @@ invitationOnly: false
 relatedTools:
 - phoneinfoga
 - reverse-phone-lookup-3
+- telcodata-us
 aliases:
 - TelcoData
 - NPA-NXX lookup

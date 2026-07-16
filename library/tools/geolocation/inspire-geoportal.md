@@ -36,6 +36,17 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- e-justice-europa-eu
+- eu-consolidated-corporate-registers
+- eu-sanctions-tool
+- europa-eu
+- europa-press-releases
+- european-commission-home-affairs
+- european-union-open-data-portal
+- eurostat
+- frontex-migratory-map
+- vat-number-validation
 ---
 
 # Inspire Geoportal

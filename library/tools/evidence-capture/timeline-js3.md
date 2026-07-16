@@ -28,7 +28,10 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- storymap
+- timeline
+- twxplorer
 aliases: []
 tags: []
 source: arf-seed

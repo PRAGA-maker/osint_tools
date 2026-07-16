@@ -44,6 +44,8 @@ tags:
 source: ultimate-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- trace-labs-blog
 ---
 
 # Trace Labs OSINT VM

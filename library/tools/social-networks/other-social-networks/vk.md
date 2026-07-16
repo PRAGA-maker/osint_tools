@@ -37,6 +37,13 @@ relatedTools:
 - vk-community-search
 - barkov-net
 - qzone
+- community-search
+- get-user-info
+- item
+- people-search-results-vk
+- vk-com
+- vk-com-2
+- vk-people-search
 aliases:
 - VKontakte
 - vk.com

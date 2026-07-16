@@ -31,6 +31,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ip-search-network-entity-reputation-database
 ---
 
 # Network Entity Reputation Database (NERD)

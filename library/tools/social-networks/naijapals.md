@@ -42,6 +42,9 @@ tags:
 source: toddington-resources
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- naijapals-com
+- naijapals-com-2
 ---
 
 # Naijapals

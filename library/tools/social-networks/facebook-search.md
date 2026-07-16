@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- about-fb-com
+- facebook-newsroom
 ---
 
 # Facebook Search

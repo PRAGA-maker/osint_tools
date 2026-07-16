@@ -30,6 +30,11 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- palladio
+- regular-expression-analyzer
+- stanford-large-network-dataset-collection
+- swap-stanford-edu
 ---
 
 # HighWire: Free Online Full-text Articles

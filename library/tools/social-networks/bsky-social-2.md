@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - clearsky-app
 - twitter-x
+- bsky-social
 aliases:
 - Bluesky
 - bsky.app

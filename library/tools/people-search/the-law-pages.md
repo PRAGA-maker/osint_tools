@@ -39,6 +39,8 @@ tags:
 source: bellingcat-toolkit
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- court-cases-results
 ---
 
 # The Law Pages

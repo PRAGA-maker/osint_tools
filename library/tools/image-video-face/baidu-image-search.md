@@ -37,6 +37,16 @@ tags:
 source: sinwindie-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- baidu
+- baidu-china
+- baidu-com
+- baidu-image-search-2
+- baidu-images
+- baidu-maps
+- baidu-translate
+- baiduknows-search-engine-china
+- baike-baidu-chinese-language
 ---
 
 # Baidu Image Search

@@ -35,6 +35,7 @@ deprecated: false
 relatedTools:
 - google-my-maps
 - here-maps
+- gps-visualizer
 aliases: []
 tags:
 - geospatial-research-and-mapping-tools

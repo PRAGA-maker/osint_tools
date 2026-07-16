@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- global-terrorism-database
+- start-consortium-for-the-study-of-terrorism-and-responses-to-terrorism
 ---
 
 # Street Drug Slang

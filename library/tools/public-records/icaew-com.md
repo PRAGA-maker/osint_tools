@@ -35,6 +35,7 @@ registration: false
 relatedTools:
 - eca-co-uk
 - architects-register-org-uk
+- knowledge-guide-to-international-company-registration
 aliases:
 - find.icaew.com
 - Find a Chartered Accountant

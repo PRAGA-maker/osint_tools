@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- adobe-acrobat-program
+- adobe-photoshop-program
 ---
 
 # Adobe Acrobat Reader Program

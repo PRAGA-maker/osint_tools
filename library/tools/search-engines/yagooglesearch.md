@@ -30,6 +30,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- metagoofil
+- pagodo-passive-google-dork
 ---
 
 # Yagooglesearch

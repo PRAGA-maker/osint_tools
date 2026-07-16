@@ -28,7 +28,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- text2img
 aliases: []
 tags: []
 source: arf-seed

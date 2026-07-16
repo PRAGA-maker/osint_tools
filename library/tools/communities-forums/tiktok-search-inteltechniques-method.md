@@ -42,6 +42,10 @@ tags:
 source: inteltechniques-tools
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- here-15
+- tiktok
+- tiktok-creative-center-statistics
 ---
 
 # TikTok Search (IntelTechniques method)

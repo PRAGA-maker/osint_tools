@@ -40,6 +40,9 @@ tags:
 source: awesome-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- jeffrey-friedl-s-image-metadata-viewer
+- jeffrey-s-exif-viewer
 ---
 
 # Jeffrey's Image Metadata Viewer

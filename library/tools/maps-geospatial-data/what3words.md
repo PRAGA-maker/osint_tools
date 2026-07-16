@@ -34,6 +34,8 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- what3words-2
 ---
 
 # what3words

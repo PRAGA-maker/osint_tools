@@ -36,6 +36,14 @@ registration: false
 relatedTools:
 - odnoklassniki
 - yandex-people-search
+- community-search
+- get-user-info
+- item
+- people-search-results-vk
+- vk
+- vk-com
+- vk-com-2
+- vk-community-search
 aliases:
 - VKontakte people search
 - vk.com/people

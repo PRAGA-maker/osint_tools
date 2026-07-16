@@ -36,6 +36,8 @@ registration: true
 invitationOnly: false
 relatedTools:
 - dmi-tcat
+- aquatone
+- gitrob
 tags:
 - twitter
 - analytics

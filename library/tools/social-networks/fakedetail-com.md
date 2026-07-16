@@ -29,6 +29,7 @@ localInstall: false
 registration: false
 relatedTools:
 - fakedetail-com-2
+- create-spoof-fake-mesages-for-a-number-of-different-online-sites
 aliases:
 - FakeDetail
 - fake snapchat generator

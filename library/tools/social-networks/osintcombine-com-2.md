@@ -29,7 +29,15 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- facebook-geo
+- instagram-explorer
+- osint-combine-blog
+- osint-combine-reddit-post-analyzer
+- osint-combine-tiktok-quick-search
+- osint-combine-tools
+- osintcombine-com
+- snapchat-multi-viewer-osint-combine
 aliases:
 - Let's get on with Mastodon
 - OSINT Combine Mastodon guide

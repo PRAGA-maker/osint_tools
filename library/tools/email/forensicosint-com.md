@@ -37,6 +37,9 @@ tags:
 relatedTools:
 - google-analyzeheader
 - gaijin-at
+- forensic-osint
+- forensic-osint-kb-guides
+- forensicosint-com-3
 source: uk-osint
 lastVerified: ''
 enrichment: full

@@ -7,8 +7,13 @@ category: documents-metadata
 path:
 - documents-metadata
 bestFor: Grabbing full-resolution public social media media (photos/video/profile pictures) by URL for preservation and image analysis.
-selectorsIn: [social-profile, image, username]
-selectorsOut: [image, metadata-exif]
+selectorsIn:
+- social-profile
+- image
+- username
+selectorsOut:
+- image
+- metadata-exif
 status: live
 pricing: free
 costNote: Free web downloader; the broader Inflact suite is a paid social-marketing product, but the downloader itself is free to use.
@@ -26,7 +31,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-aliases: [Ingramer Downloader]
+aliases:
+- Ingramer Downloader
 tags:
 - toddington
 - curated-directory
@@ -35,6 +41,16 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: full
+relatedTools:
+- inflact
+- inflact-com
+- inflact-com-2
+- inflact-com-3
+- inflact-com-4
+- inflact-com-5
+- inflact-instagram-search
+- inflact-instagram-viewer-anonymous
+- inflact-profile-analyzer
 ---
 
 # Inflact Downloader

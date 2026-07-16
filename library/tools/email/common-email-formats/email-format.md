@@ -35,6 +35,7 @@ invitationOnly: false
 deprecated: false
 relatedTools:
 - email-permutator
+- email-address-format-tool
 aliases: []
 tags:
 - email-format

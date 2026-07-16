@@ -33,6 +33,10 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- his-piers
+- janes-all-the-world-s-aircraft-yearbook
+- janes-fighting-ships-yearbook
 ---
 
 # Jane’s Defence Land Platforms Yearbook

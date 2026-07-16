@@ -31,6 +31,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- observable
 ---
 
 # What goes on Mastodon

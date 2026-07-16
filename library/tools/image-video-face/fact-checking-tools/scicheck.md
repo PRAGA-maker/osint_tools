@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- debunking-false-stories-archives
+- fact-check
 aliases: []
 tags: []
 source: arf-seed

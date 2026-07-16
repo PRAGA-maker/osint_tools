@@ -33,6 +33,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- metrocosm
 ---
 
 # Disputed Territories

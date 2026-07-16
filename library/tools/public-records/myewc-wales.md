@@ -42,6 +42,8 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- myewc-wales-2
 ---
 
 # EWC Wales Register of Education Practitioners

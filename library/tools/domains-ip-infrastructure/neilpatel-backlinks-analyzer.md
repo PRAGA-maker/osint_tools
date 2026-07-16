@@ -33,6 +33,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- ubersuggest-keyword-creator
 ---
 
 # Neilpatel backlinks analyzer

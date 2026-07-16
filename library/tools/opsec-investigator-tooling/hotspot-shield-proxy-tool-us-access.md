@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- hotspot-shield
 ---
 
 # Hotspot Shield Proxy Tool (US access)

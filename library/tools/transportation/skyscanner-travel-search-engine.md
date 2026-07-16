@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- skyscanner
 ---
 
 # Skyscanner Travel Search Engine

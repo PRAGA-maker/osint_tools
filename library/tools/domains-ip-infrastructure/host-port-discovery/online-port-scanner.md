@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- port-scanner-online
 aliases: []
 tags: []
 source: arf-seed

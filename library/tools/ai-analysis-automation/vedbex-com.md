@@ -30,6 +30,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- 4-vedbex-email-to-skype
 ---
 
 # Vedbex.com

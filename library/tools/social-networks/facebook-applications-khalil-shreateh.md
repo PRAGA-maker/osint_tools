@@ -34,6 +34,8 @@ tags:
 source: osintambition-social
 lastVerified: ''
 enrichment: full
+relatedTools:
+- khalil-shreateh-social-applications
 ---
 
 # Facebook Applications (Khalil Shreateh)

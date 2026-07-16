@@ -29,7 +29,8 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- maltego
 aliases: []
 tags: []
 source: arf-seed

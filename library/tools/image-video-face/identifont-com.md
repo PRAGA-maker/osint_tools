@@ -32,6 +32,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- identifont
 ---
 
 # Identifont.com

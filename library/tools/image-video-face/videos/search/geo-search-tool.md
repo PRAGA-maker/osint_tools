@@ -37,6 +37,7 @@ invitationOnly: false
 deprecated: false
 relatedTools:
 - frame-by-frame-for-youtube
+- youtube-geo-search-tool
 aliases:
 - YouTube Geo Search
 - youtube-dataviewer geo

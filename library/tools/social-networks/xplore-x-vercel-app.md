@@ -32,6 +32,12 @@ registration: false
 invitationOnly: false
 relatedTools:
 - twitter-advanced-search
+- checkuser
+- followgraph-for-mastodon
+- gitvio
+- osint-steam
+- section-16-deadline-calculator
+- youtube-lookup
 aliases:
 - Xplore
 - Xplore-X

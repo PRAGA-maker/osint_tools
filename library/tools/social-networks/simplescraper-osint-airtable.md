@@ -35,6 +35,9 @@ tags:
 source: osintambition-social
 lastVerified: ''
 enrichment: full
+relatedTools:
+- buffalo-police
+- san-francisco-copwatch-database
 ---
 
 # SimpleScraper OSINT (Airtable)

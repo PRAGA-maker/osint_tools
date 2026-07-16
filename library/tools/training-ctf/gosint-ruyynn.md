@@ -32,6 +32,8 @@ tags:
 source: gh-topic-osint-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ghostintel
 ---
 
 # GOSINT (ruyynn)

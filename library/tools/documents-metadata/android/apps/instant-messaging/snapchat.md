@@ -32,7 +32,9 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- snap-map
+- snapchat-com
 aliases: []
 tags: []
 source: arf-seed

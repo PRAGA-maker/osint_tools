@@ -29,6 +29,15 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- akp-email-database
+- dnc-email-database
+- gi-files
+- ice-patrol
+- leaked-cables
+- sony-archives
+- wikileaks
+- wikileaks-search
 ---
 
 # Macron Campaign Emails

@@ -29,7 +29,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- i2p-invisible-internet-project
 aliases: []
 tags: []
 source: arf-seed

@@ -31,6 +31,11 @@ registration: false
 relatedTools:
 - lookup-id-com
 - graph-tips
+- facebook-email-reverse-lookup
+- facebook-entity-id-parser
+- facebook-friends-list-generator
+- linkedin-email-reverse-lookup
+- osint-and-socmint-tooling
 aliases:
 - Facebook Profile ID Grabber
 - Facebook numeric ID finder

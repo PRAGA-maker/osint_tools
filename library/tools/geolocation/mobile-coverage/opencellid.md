@@ -31,7 +31,8 @@ auth: api-key
 api: true
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- opencellid-database-of-cell-towers
 aliases:
 - OpenCellID
 tags:

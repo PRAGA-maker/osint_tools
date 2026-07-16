@@ -30,6 +30,10 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- location-search
+- search-youtube-by-location
+- youtube-metadata-bulk
 ---
 
 # YouTube Metadata

@@ -37,7 +37,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- graphx
 aliases:
 - Tika
 tags:

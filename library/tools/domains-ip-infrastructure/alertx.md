@@ -33,6 +33,10 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- cve-map
+- dnsx
+- subfinder
 ---
 
 # ALERTX

@@ -34,6 +34,10 @@ registration: true
 relatedTools:
 - wechat-com
 - renren-com
+- qzone-china
+- tencent-com
+- tencent-maps
+- tencent-qq-mail
 aliases:
 - Qzone
 - QQ空间

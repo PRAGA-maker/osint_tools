@@ -35,6 +35,8 @@ relatedTools:
 - whatsmyname-app
 - user-name-search-intel-techniques
 - namechk
+- username-search
+- usersearch-org
 aliases:
 - usersearch.org
 - UserSearch

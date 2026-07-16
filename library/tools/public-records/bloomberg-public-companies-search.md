@@ -37,6 +37,11 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: full
+relatedTools:
+- bloomberg
+- bloomberg-business-news
+- bloomberg-com
+- lei-bloomberg-com
 ---
 
 # Bloomberg Public Companies Search

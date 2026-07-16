@@ -43,6 +43,11 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- edgar
+- sec-company-search
+- sec-gov-edgar
+- us-securities-and-exchange-commission
 ---
 
 # sec.gov (EDGAR)

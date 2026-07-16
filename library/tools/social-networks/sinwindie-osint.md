@@ -32,6 +32,8 @@ registration: false
 relatedTools:
 - osint-framework-2
 - whatsmyname-web
+- osint-github-com
+- sultan-username-search-tool-builder
 aliases:
 - Sinwindie OSINT
 - sinwindie/osint

@@ -33,6 +33,13 @@ localInstall: false
 registration: false
 relatedTools:
 - mxtoolbox
+- email-header-analyzer
+- mx-toolbox-blacklist-check
+- mx-toolbox-email-header-analyzer
+- mx-toolbox-reverse-ip-search
+- mx-toolbox-whois-lookup
+- mxtoolbox-blacklists
+- mxtoolbox-com
 aliases:
 - MxToolbox Email Header Analyzer
 tags:

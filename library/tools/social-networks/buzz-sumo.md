@@ -34,6 +34,8 @@ registration: true
 relatedTools:
 - socialblade
 - talkwalker-social-media-search
+- appsumo-content-analyzer
+- buzzsumo
 aliases:
 - Buzz sumo
 - buzzsumo.com

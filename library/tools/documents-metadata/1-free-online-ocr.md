@@ -32,6 +32,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- online-ocr-sodapdf
 ---
 
 # 1- Free Online OCR

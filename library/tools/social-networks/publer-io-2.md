@@ -33,6 +33,8 @@ registration: false
 relatedTools:
 - imginn
 - fastvideosave-net
+- publer-io
+- publer-io-3
 aliases:
 - Publer Threads downloader
 - publer.com threads photo downloader

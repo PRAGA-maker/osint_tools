@@ -33,6 +33,9 @@ registration: false
 relatedTools:
 - familysearch-org
 - ancestry-com
+- myheritage-com
+- myheritage-photo-enhancer
+- yearbooks-myheritage
 aliases:
 - My Heritage
 - myheritage.com

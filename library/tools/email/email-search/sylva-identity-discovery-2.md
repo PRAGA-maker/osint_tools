@@ -34,7 +34,8 @@ auth: none
 api: false
 localInstall: true
 registration: false
-relatedTools: []
+relatedTools:
+- sylva-identity-discovery
 aliases: []
 tags:
 - email

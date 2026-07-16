@@ -34,6 +34,8 @@ registration: false
 relatedTools:
 - online-exif-viewer
 - ghiro
+- impulseadventure
+- jpegsnoop-image-decoder
 aliases:
 - JPEGsnoop
 - JPEG Snoop

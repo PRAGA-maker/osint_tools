@@ -33,6 +33,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- facebook-applications-khalil-shreateh
 ---
 
 # Khalil Shreateh Social Applications

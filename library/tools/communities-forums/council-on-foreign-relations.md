@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- global-conflict-tracker
 ---
 
 # Council on Foreign Relations

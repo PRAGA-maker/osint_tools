@@ -32,6 +32,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - gov-uk-court-lists
+- the-law-pages
 aliases:
 - The Law Pages court search
 - UK criminal sentencing search

@@ -45,6 +45,8 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-15'
 enrichment: full
+relatedTools:
+- icas-org-uk-2
 ---
 
 # icas.org.uk (Find a CA)

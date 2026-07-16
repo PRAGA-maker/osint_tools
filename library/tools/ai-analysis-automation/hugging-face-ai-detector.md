@@ -28,7 +28,16 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- efficientnetv2
+- get-text-from-video
+- huggingface-co
+- huggingface-co-4
+- instruct-pix2pix
+- kosmos-2
+- pix2pix-video
+- scene-edit-detection
+- youtube-whisperer
 aliases: []
 tags: []
 source: arf-seed

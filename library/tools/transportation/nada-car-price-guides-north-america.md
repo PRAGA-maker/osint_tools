@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- nada-guides
 ---
 
 # Nada Car Price Guides (North America)

@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- bitdefender-antivirus
 ---
 
 # Bitdefender Threat Map

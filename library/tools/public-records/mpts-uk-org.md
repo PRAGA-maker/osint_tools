@@ -32,6 +32,7 @@ localInstall: false
 registration: false
 relatedTools:
 - medicalcouncil-ie
+- mpts-uk-org-2
 aliases:
 - Medical Practitioners Tribunal Service
 - MPTS hearings

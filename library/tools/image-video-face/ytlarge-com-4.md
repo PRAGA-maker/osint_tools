@@ -1,6 +1,6 @@
 ---
 id: ytlarge-com-4
-name: "YTLarge YouTube toolkit"
+name: YTLarge YouTube toolkit
 description: Use when you have a YouTube channel/video (`social-profile`) and want to profile it — returns channel ID, stats, tags, thumbnails, shadowban/monetization status and other `metadata-exif`-style channel data.
 url: https://ytlarge.com/youtube/monetization-checker/
 category: image-video-face
@@ -33,6 +33,9 @@ registration: false
 invitationOnly: false
 relatedTools:
 - print-youtube-storyboard-instructions
+- ytlarge-com
+- ytlarge-com-2
+- ytlarge-com-3
 aliases:
 - ytlarge.com
 - YouTube channel ID finder

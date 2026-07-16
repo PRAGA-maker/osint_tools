@@ -34,6 +34,8 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- copernicus-open-access-hub
 ---
 
 # Copernicus Browser (formerly Sentinel Hub Playground, EO Browser)

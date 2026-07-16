@@ -30,7 +30,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- yoodownload-com-2
 aliases:
 - YooDownload
 tags:

@@ -35,6 +35,10 @@ registration: false
 relatedTools:
 - seemutualfriendsonfacebook-com
 - linkedin-email-reverse-lookup
+- facebook-email-reverse-lookup
+- facebook-entity-id-parser
+- facebook-friends-list-generator
+- facebook-profile-id-grabber
 aliases:
 - OSINT Support tooling
 - osint.support Chrome extensions

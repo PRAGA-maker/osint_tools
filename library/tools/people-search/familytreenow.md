@@ -35,6 +35,7 @@ relatedTools:
 - family-tree-now
 - voter-records
 - thatsthem-phone-search
+- familytree
 aliases:
 - Family Tree Now
 - familytreenow.com

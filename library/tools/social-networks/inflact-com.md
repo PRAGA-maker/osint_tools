@@ -35,6 +35,14 @@ relatedTools:
 - instadp
 - snapinsta-to
 - inflact-instagram-viewer-anonymous
+- inflact
+- inflact-com-2
+- inflact-com-3
+- inflact-com-4
+- inflact-com-5
+- inflact-downloader
+- inflact-instagram-search
+- inflact-profile-analyzer
 aliases:
 - Inflact
 - Inflact avatar downloader

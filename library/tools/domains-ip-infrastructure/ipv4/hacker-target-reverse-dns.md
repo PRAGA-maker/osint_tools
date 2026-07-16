@@ -29,7 +29,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- hacker-target
+- hackertarget-com
+- online-tool-to-extract-links-from-any-web-page
 aliases: []
 tags: []
 source: arf-seed

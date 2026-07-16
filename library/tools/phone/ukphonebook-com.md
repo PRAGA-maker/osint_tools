@@ -37,6 +37,7 @@ localInstall: false
 registration: false
 relatedTools:
 - epieos
+- uk-phone-book
 aliases:
 - UK Phone Book
 - ukphonebook electoral roll

@@ -30,6 +30,10 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- jane-s-defence-land-platforms-yearbook
+- janes-all-the-world-s-aircraft-yearbook
+- janes-fighting-ships-yearbook
 ---
 
 # HIS Piers

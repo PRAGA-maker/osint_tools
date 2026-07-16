@@ -43,6 +43,12 @@ tags:
 source: inteltechniques-tools
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- court-electronic-records-pacer
+- court-locator-united-states-courts
+- court-records-united-states-courts
+- pacer-case-locator
+- public-access-to-court-electronic-records
 ---
 
 # PACER

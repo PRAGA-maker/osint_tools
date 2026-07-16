@@ -39,6 +39,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- gitrecon
 ---
 
 # OSINTEye

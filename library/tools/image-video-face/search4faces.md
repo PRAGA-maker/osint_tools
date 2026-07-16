@@ -35,6 +35,8 @@ registration: true
 relatedTools:
 - google-reverse-image-search
 - huggingface-co
+- search4faces-com
+- search4faces-com-ch00
 aliases:
 - search4faces.com
 tags:

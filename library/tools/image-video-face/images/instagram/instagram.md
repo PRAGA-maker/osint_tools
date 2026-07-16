@@ -43,7 +43,9 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- instagram-hashtag-search
+- instagram-location
 aliases: []
 tags:
 - social-media

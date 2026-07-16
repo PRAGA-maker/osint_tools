@@ -41,6 +41,7 @@ relatedTools:
 - hunter-io
 - holehe
 - have-i-been-pwned
+- email-verifier
 aliases:
 - hunter.io
 tags: []

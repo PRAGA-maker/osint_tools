@@ -30,7 +30,10 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- alertx
+- cve-map
+- dnsx
 aliases: []
 tags: []
 source: arf-seed

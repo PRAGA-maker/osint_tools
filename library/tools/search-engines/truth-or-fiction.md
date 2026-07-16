@@ -29,6 +29,8 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- truth-or-fiction-search
 ---
 
 # Truth or Fiction

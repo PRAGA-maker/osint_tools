@@ -30,6 +30,15 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- community-search
+- get-user-info
+- people-search-results-vk
+- vk
+- vk-com
+- vk-com-2
+- vk-community-search
+- vk-people-search
 ---
 
 # Дезертир

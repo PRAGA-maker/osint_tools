@@ -37,7 +37,15 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- akp-email-database
+- dnc-email-database
+- gi-files
+- ice-patrol
+- leaked-cables
+- macron-campaign-emails
+- sony-archives
+- wikileaks
 aliases:
 - search.wikileaks.org
 tags:

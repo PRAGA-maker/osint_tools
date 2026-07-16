@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- criminology-wiki
+- wikiaentertainment
 ---
 
 # WoWWiki World of Warcraft Wiki

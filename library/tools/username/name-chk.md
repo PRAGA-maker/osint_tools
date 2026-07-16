@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - whatsmyname-web
 - namecheckerr-com
+- namechk
 aliases:
 - namechk.com
 - Name Chk

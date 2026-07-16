@@ -34,6 +34,8 @@ registration: false
 relatedTools:
 - tinder-com
 - social-searcher
+- look-by-username-replace-username-in-this-case-mark
+- tinder-2
 aliases:
 - gotinder.com username
 - Tinder web profile

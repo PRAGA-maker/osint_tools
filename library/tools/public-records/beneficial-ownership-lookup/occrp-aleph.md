@@ -30,7 +30,12 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- data-occrp-org
+- occrp-org
+- organized-crime-and-corruption-reporting-project
+- the-pegasus-project-occrp
+- visual-investigative-scenarios
 aliases: []
 tags: []
 source: arf-seed
