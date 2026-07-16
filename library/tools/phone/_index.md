@@ -95,7 +95,6 @@ kind: group-index
 - **`phonebooks-com`** (high) — Use when you have a US `phone` (or `name`) and want a reverse-lookup to an owner and address — returns `name`, `address`, `associate`.
 - **`phoneinfoga-demo`** (high) — Use when you have a `phone` and want automated number reconnaissance — returns country/carrier/line-type plus search-engine footprints (prof
 - **`phonenumber-osint`** (high) — Use when you have a `phone` number and want its basic technical metadata — returns country, region, carrier/provider, timezone, and line-typ
-- **`phonenumbers-store`** (high) — OSINT tool: phonenumbers.store.
 - **`phoneowner`** (medium) — Reverse-phone lookup with owner identity.
 - **`phonumspy`** (high) — Use when you have a `phone` number and want carrier/location enrichment plus a web/social footprint sweep — returns geolocation, social-prof
 - **`phunter`** (high) — Use when you have a `phone` number and want a one-shot OSINT profile of it — returns country/operator, line type, location hints, reputation
@@ -111,7 +110,6 @@ kind: group-index
 - **`reverse-phone-lookup-2`** (high) — Use when you have a US `phone` number and want the linked person and their online footprint — returns name, likely social profiles and addre
 - **`reverse-phone-lookup-3`** (high) — Use when you have a `phone` number and want the registered owner's name — returns a caller/subscriber name via a free reverse lookup (ZLooku
 - **`reverse-phone-lookup-find-name-address-and-amp-more-for-any-phone-number-addresses-com`** (high) — Use when you have a US `phone` number and want the likely owner's name and address — returns `name`, `address`, and `associate` links (full 
-- **`reverse-phone-lookup`** (high) — OSINT tool: Reverse Phone Lookup.
 - **`reverseaustralia-com`** (high) — Use when you have an Australian `phone` number and want any publicly-listed owner details or crowd comments about it — returns name, address
 - **`saynoto0870-com`** (medium) — Use when you have a UK non-geographic/premium `phone` number (084x/087x/03xx) and want the organisation behind it and its alternative geogra
 - **`searchpeoplefree`** (high) — Use when you have a US `phone`, `name`, or `address` and want a free first-pass owner profile — returns name, address history, relatives, an

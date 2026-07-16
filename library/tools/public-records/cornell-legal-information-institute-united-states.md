@@ -31,6 +31,7 @@ localInstall: false
 registration: false
 relatedTools:
 - lexcraft-cornell-university-legal-wiki-canada
+- birdnet
 aliases:
 - Cornell LII
 - Legal Information Institute

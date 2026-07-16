@@ -135,7 +135,6 @@ kind: group-index
 - **`liker`** (high) — Use when working through the POPPY OSINT toolkit and you reach the "Liker" page — purpose unverified; possibly a social-engagement/account l
 - **`maestrolabs-com`** (high) — Use when you want to send a tracked email to a missing person's known address and learn whether/where it was opened — returns read confirmat
 - **`mail-com-free-email-creations`** (high) — Use when you need a free throwaway / sock-puppet email account (with a choice of vanity domains) to register for investigative sites without
-- **`mail-com-germany`** (high) — German email service provider
 - **`mailaccess`** (medium) — Use when you want to run an open-source email checker locally — likely tests whether an email address exists / is accessible; confirm exact 
 - **`mailboxlayer-api`** (medium) — Use when you have an `email` and want to validate its deliverability and quality (syntax, MX, live SMTP, disposable/free flags) — returns an
 - **`mailcat`** (high) — Use when you have a `username` and want to find which email providers it has accounts on — returns existing email addresses via API and SMTP

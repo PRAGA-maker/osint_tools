@@ -40,7 +40,6 @@ kind: group-index
 - **`clerkbot`** (high) — OSINT tool: ClerkBot.
 - **`commentgram-cse`** (medium) — search by Telegram comments
 - **`create-spoof-fake-facebook-status-update-post`** (low) — Use when you need to understand how easily a fake Facebook post/status screenshot can be fabricated — this generator produces convincing spo
-- **`create-spoof-fake-imessages`** (high) — OSINT tool: Create Spoof / Fake iMessages.
 - **`create-spoof-fake-text-sms-messages`** (high) — Use when you are assessing whether a text/SMS "from" a `phone` could be spoofed — this Spoofbox tool sends messages with a forged sender ID,
 - **`create-spoof-fake-twitter-post`** (high) — Use when you need to fabricate a mock X/Twitter post for a sock-puppet/pretext, or to understand how a spoofed screenshot is made so you can
 - **`create-spoof-fake-whatsapp-facebook-twitter-skype-messenger`** (high) — Use when a WhatsApp/Facebook/Twitter/Skype chat screenshot is offered as evidence and you need to gauge how forgeable it is — this GeekPrank

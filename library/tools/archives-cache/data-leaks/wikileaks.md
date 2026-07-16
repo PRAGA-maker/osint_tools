@@ -38,6 +38,9 @@ relatedTools:
 - macron-campaign-emails
 - sony-archives
 - gi-files
+- akp-email-database
+- ice-patrol
+- wikileaks-search
 aliases:
 - WikiLeaks
 - wikileaks.org

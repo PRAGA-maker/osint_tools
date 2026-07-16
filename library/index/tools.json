@@ -23151,7 +23151,10 @@
       "dnc-email-database",
       "macron-campaign-emails",
       "sony-archives",
-      "gi-files"
+      "gi-files",
+      "akp-email-database",
+      "ice-patrol",
+      "wikileaks-search"
     ],
     "aliases": [
       "WikiLeaks",
@@ -104231,54 +104234,6 @@
     "_file": "library/tools/email/mail-com-free-email-creations.md"
   },
   {
-    "id": "mail-com-germany",
-    "name": "Mail.com (Germany)",
-    "description": "German email service provider",
-    "url": "http://www.mail.com/int",
-    "category": "email",
-    "path": [
-      "email"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "email"
-    ],
-    "selectorsOut": [
-      "email",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "email-addresses"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "mail-com-free-email-creations"
-    ],
-    "_file": "library/tools/email/mail-com-germany.md"
-  },
-  {
     "id": "mailaccess",
     "name": "MailAccess",
     "description": "Use when you want to run an open-source email checker locally — likely tests whether an email address exists / is accessible; confirm exact behavior from the repo README before relying on it.",
@@ -134960,52 +134915,6 @@
     "_file": "library/tools/image-video-face/bhuvan.md"
   },
   {
-    "id": "big-fish-games",
-    "name": "Big Fish Games",
-    "description": "Website related to social networking and players of over 1,000 games on this website",
-    "url": "http://www.bigfishgames.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/big-fish-games.md"
-  },
-  {
     "id": "bing-images",
     "name": "Bing Images",
     "description": "Use when you have an `image`/`face` and want a second reverse-image engine — returns visually-similar images, source pages, and object-level (\"visual search\") matches that Google/Yandex may miss.",
@@ -136520,52 +136429,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/copyseeker-net.md"
-  },
-  {
-    "id": "crackle-tv-and-movie-video-search",
-    "name": "Crackle TV and Movie Video Search",
-    "description": "Multi-media search engine focusing on videos related to movies and TV shows",
-    "url": "http://www.crackle.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/crackle-tv-and-movie-video-search.md"
   },
   {
     "id": "creepy",
@@ -141005,52 +140868,6 @@
     "_file": "library/tools/image-video-face/fulldp-co-5.md"
   },
   {
-    "id": "funnyordie",
-    "name": "FunnyOrDie",
-    "description": "Website related to social networking with video posting and sharing services",
-    "url": "http://www.funnyordie.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/funnyordie.md"
-  },
-  {
     "id": "gaia",
     "name": "Gaia Online",
     "description": "Use when you have a `username` or `name` and want to find a Gaia Online avatar-community profile — returns the social-profile, avatar images, and interest/friend links.",
@@ -142731,52 +142548,6 @@
       "septor-linux"
     ],
     "_file": "library/tools/image-video-face/hugin.md"
-  },
-  {
-    "id": "hulu-united-states",
-    "name": "Hulu (United States)",
-    "description": "Video on demand service",
-    "url": "http://www.hulu.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/hulu-united-states.md"
   },
   {
     "id": "hypem-music-search",
@@ -147969,52 +147740,6 @@
     "_file": "library/tools/image-video-face/osint-essentials.md"
   },
   {
-    "id": "party-poker",
-    "name": "Party Poker",
-    "description": "Website related to social networking and players of poker with gambling options",
-    "url": "https://www.partypoker.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/party-poker.md"
-  },
-  {
     "id": "pastebin-osint-harvester",
     "name": "Pastebin OSINT Harvester (sniff-paste)",
     "description": "Use when you want to continuously scrape Pastebin for a target's `email`, `ip-address`, `phone`, or `crypto-wallet` appearing in pastes/dumps — returns extracted identifiers linked back to source pastes.",
@@ -149584,44 +149309,49 @@
   {
     "id": "playlists-at",
     "name": "playlists.at",
-    "description": "OSINT tool: playlists.at.",
+    "description": "Use when you have a `name` or `username` and want to find a subject's YouTube uploads or appearances via advanced search operators — returns video hits and `social-profile` (channel) links.",
     "url": "https://playlists.at/youtube/search/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Running advanced-operator YouTube searches to surface a person's videos, channel, and appearances that the native YouTube box buries.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
-      "face",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use; no account required for search. Optional sign-in only for saving/creating playlists.",
+    "opsec": "passive",
+    "opsecNote": "You query playlists.at, which relays a search to YouTube — the target sees nothing. Standard web hygiene (sock-puppet browser/VPN) is enough; do not sign in with a real Google account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party front-end over YouTube's public search; results ultimately come from YouTube, so cross-check on youtube.com directly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "playlists.at YouTube search"
+    ],
     "tags": [
       "youtube",
-      "YouTube Related Sites"
+      "video-search"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/playlists-at.md"
   },
   {
@@ -151817,43 +151547,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/search-by-image-chrome-google-com.md"
-  },
-  {
-    "id": "search-for-music-using-your-voice",
-    "name": "Search for Music Using Your Voice",
-    "description": "OSINT tool: Search for Music Using Your Voice.",
-    "url": "https://www.midomi.com/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "midomi-music-search-engine"
-    ],
-    "_file": "library/tools/image-video-face/search-for-music-using-your-voice.md"
   },
   {
     "id": "search-fotki-com",
@@ -164972,48 +164665,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/messaging/create-spoof-fake-facebook-status-update-post.md"
-  },
-  {
-    "id": "create-spoof-fake-imessages",
-    "name": "Create Spoof / Fake iMessages",
-    "description": "OSINT tool: Create Spoof / Fake iMessages.",
-    "url": "https://www.fakeimess.com/generator",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "messengerapps",
-      "Messenger Apps"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/create-spoof-fake-imessages.md"
   },
   {
     "id": "create-spoof-fake-text-sms-messages",
@@ -202825,7 +202476,11 @@
     "relatedTools": [
       "intelligence-x",
       "intelligence-x-person-tools",
-      "facebook-graph-searcher-intelligencex"
+      "facebook-graph-searcher-intelligencex",
+      "intelligence-x-2",
+      "intelligence-x-telegram-search",
+      "intelligencex",
+      "intelx-io"
     ],
     "aliases": [
       "IntelligenceX LinkedIn",
@@ -215352,49 +215007,6 @@
     "_file": "library/tools/phone/phonenumber-osint.md"
   },
   {
-    "id": "phonenumbers-store",
-    "name": "phonenumbers.store",
-    "description": "OSINT tool: phonenumbers.store.",
-    "url": "https://www.phonenumbers.store/ukpayphone/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mobilephone",
-      "Mobile & Phone Related"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/phonenumbers-store.md"
-  },
-  {
     "id": "phoneowner",
     "name": "PhoneOwner",
     "description": "Reverse-phone lookup with owner identity.",
@@ -216012,45 +215624,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/phone/reverse-phone-check.md"
-  },
-  {
-    "id": "reverse-phone-lookup",
-    "name": "Reverse Phone Lookup",
-    "description": "OSINT tool: Reverse Phone Lookup.",
-    "url": "http://www.reversephonelookup.com/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "phone-number-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "free-to-lookup-unknown-callers"
-    ],
-    "_file": "library/tools/phone/reverse-phone-lookup.md"
   },
   {
     "id": "reverse-phone-lookup-2",
@@ -219216,40 +218789,6 @@
       "wikileaks-search"
     ],
     "_file": "library/tools/public-records/akp-email-database.md"
-  },
-  {
-    "id": "al-local-surety-association-directory",
-    "name": "AL Local Surety Association Directory",
-    "description": "OSINT tool: AL Local Surety Association Directory.",
-    "url": "https://c0gaf106.caspio.com/dp/2d4e1000c7506b7686a540d3b10f",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/al-local-surety-association-directory.md"
   },
   {
     "id": "alabama-deaths",
@@ -227257,7 +226796,8 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "lexcraft-cornell-university-legal-wiki-canada"
+      "lexcraft-cornell-university-legal-wiki-canada",
+      "birdnet"
     ],
     "aliases": [
       "Cornell LII",
@@ -227459,40 +226999,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/corporative-registry-catalog.md"
-  },
-  {
-    "id": "corrections-books-approval-search",
-    "name": "Corrections Books Approval Search",
-    "description": "OSINT tool: Corrections Books Approval Search.",
-    "url": "https://b2.caspio.com/dp/0a921000cae47f9702f44d2bb94b",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/corrections-books-approval-search.md"
   },
   {
     "id": "corrections-com-inmate-locaton-links",
@@ -232843,40 +232349,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/factiva.md"
-  },
-  {
-    "id": "fafsa-search-and-report",
-    "name": "FAFSA Search and Report",
-    "description": "OSINT tool: FAFSA Search and Report.",
-    "url": "https://c0dcb948.caspio.com/dp/726780004ccd83a96316450caead",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/fafsa-search-and-report.md"
   },
   {
     "id": "familyecho-com",
@@ -246724,35 +246196,49 @@
   {
     "id": "little-rock-ar-crime-search",
     "name": "Little Rock AR Crime Search",
-    "description": "OSINT tool: Little Rock AR Crime Search.",
+    "description": "Use when you have an `address` or `geolocation` in Little Rock, AR and want reported crime incidents at/near it — returns incident records (offense, date, location) as `geolocation` context.",
     "url": "https://b2.caspio.com/dp.asp?AppKey=88321000961d92fc4ed343f38a0e",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Pulling reported crime incidents by address, ZIP, offense type, or date range in Little Rock, Arkansas.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public crime-incident search; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a public records database about a location, not a person's account — the subject is never contacted. Requires browser cookies enabled. Use a sock-puppet browser as routine hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A Caspio-hosted front-end over Little Rock crime data; incident records are official but this is a third-party portal, so corroborate against the LRPD/city source for anything evidentiary.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Little Rock crime incident search"
+    ],
+    "tags": [
+      "crime",
+      "public-records",
+      "arkansas"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/little-rock-ar-crime-search.md"
   },
   {
@@ -256120,40 +255606,6 @@
     "_file": "library/tools/public-records/pa-school-districts-deeds-user-facing-web-search.md"
   },
   {
-    "id": "pa-teacher-salary-average",
-    "name": "PA teacher salary average",
-    "description": "OSINT tool: PA teacher salary average.",
-    "url": "https://b2.caspio.com/dp/0a921000a059622d4771466aab79",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/pa-teacher-salary-average.md"
-  },
-  {
     "id": "pacer",
     "name": "PACER",
     "description": "Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs across federal courts.",
@@ -261243,51 +260695,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/public-records/saa-gov-uk.md"
-  },
-  {
-    "id": "sacompany-co-za",
-    "name": "sacompany.co.za",
-    "description": "OSINT tool: sacompany.co.za.",
-    "url": "https://www.sacompany.co.za/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "companysites",
-      "Company Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/sacompany-co-za.md"
   },
   {
     "id": "sadoctorsapp-co-za",
@@ -293119,7 +292526,9 @@
       "urlhaus",
       "abusech",
       "yaraif",
-      "threatfox"
+      "threatfox",
+      "zeus-c2-tracker",
+      "zeus-tracker"
     ],
     "aliases": [
       "MalwareBazaar",
@@ -319772,55 +319181,6 @@
     "_file": "library/tools/social-networks/facebook-matrix-2.md"
   },
   {
-    "id": "facebook-newsroom",
-    "name": "Facebook Newsroom",
-    "description": "Facebook news and updates",
-    "url": "https://newsroom.fb.com/news/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "social-media"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "about-fb-com",
-      "facebook-search"
-    ],
-    "_file": "library/tools/social-networks/facebook-newsroom.md"
-  },
-  {
     "id": "facebook-photo-search-engine",
     "name": "Facebook Photo Search Engine (Google CSE)",
     "description": "Use when you have a `name` or keyword and want to find Facebook-hosted photos/pages indexed by Google — returns Facebook links (profiles, photos) matching your terms.",
@@ -331910,49 +331270,6 @@
     "_file": "library/tools/social-networks/mostly-harmless.md"
   },
   {
-    "id": "mundimago-com",
-    "name": "Mundimago.com",
-    "description": "OSINT tool: Mundimago.com.",
-    "url": "http://www.mundimago.com/profile/search",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/mundimago-com.md"
-  },
-  {
     "id": "mymfb-com",
     "name": "mymfb.com",
     "description": "OSINT tool: mymfb.com.",
@@ -332578,49 +331895,6 @@
       "trends-tool"
     ],
     "_file": "library/tools/social-networks/network-tool.md"
-  },
-  {
-    "id": "newsletter-fullstackrecruiter-net",
-    "name": "newsletter.fullstackrecruiter.net",
-    "description": "OSINT tool: newsletter.fullstackrecruiter.net.",
-    "url": "https://newsletter.fullstackrecruiter.net/p/how-to-find-people-on-bluesky",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bluesky",
-      "BlueSky / BSky Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/newsletter-fullstackrecruiter-net.md"
   },
   {
     "id": "nicolasconstant-github-io",
@@ -338357,45 +337631,51 @@
   },
   {
     "id": "redlinecybersecurity-com",
-    "name": "redlinecybersecurity.com",
-    "description": "OSINT tool: redlinecybersecurity.com.",
+    "name": "Redline — Dating a LinkedIn Post (technique)",
+    "description": "Use when you have a LinkedIn post URL (a `social-profile` activity) and want its exact publish timestamp for a timeline — returns a precise date/time decoded from the post's activity ID.",
     "url": "https://www.redlinecybersecurity.com/blog/how-to-get-the-exact-date-of-a-linkedin-post-using-osint-techniques",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Recovering the exact publish date/time of a LinkedIn post from its activity ID when the page only shows a fuzzy \"3mo\" label.",
     "selectorsIn": [
-      "username",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "social-profile",
-      "name"
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free technique/write-up; no account, no tool purchase — you decode a number from a public URL.",
+    "opsec": "passive",
+    "opsecNote": "The decoding is done on a URL/number you already have; you never re-query LinkedIn, so the subject gets no notification. If you first navigate LinkedIn to grab the post URL, do that from a sock-puppet account (LinkedIn shows \"who viewed your profile\").",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A vendor blog write-up of a widely-documented method; the underlying trick (the Unix timestamp embedded in the activity ID) is deterministic and independently verifiable.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "LinkedIn post exact date",
+      "LinkedIn activity ID timestamp"
+    ],
     "tags": [
       "linkedin",
-      "LinkedIn & Similar Sites"
+      "timestamp",
+      "technique"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/redlinecybersecurity-com.md"
   },
   {
@@ -338849,7 +338129,7 @@
   {
     "id": "ritetag",
     "name": "RiteTag",
-    "description": "Hashtag trend analysis and campaign tag selection",
+    "description": "Use when you have a topic or a subject's known hashtag and want the live high-engagement tag cluster and the accounts using it — returns hashtag sets and `social-profile` leads.",
     "url": "https://ritetag.com/",
     "category": "social-networks",
     "path": [
@@ -338858,36 +338138,45 @@
       "analytics",
       "hashtag"
     ],
-    "bestFor": "Hashtag trend analysis and campaign tag selection",
-    "input": "Keywords, draft text, or media captions",
-    "output": "Suggested hashtags with trend and visibility indicators",
+    "bestFor": "Expanding a topic or a subject's known hashtag into the live, high-engagement tag cluster and the accounts posting under it.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free RiteKit account plus the free browser extension gives limited daily hashtag lookups; unlimited use and saved Tag Sets sit behind a paid RiteKit subscription (free trial available).",
     "opsec": "passive",
-    "opsecNote": "Processes submitted content on third-party infrastructure for analytics.",
+    "opsecNote": "You submit your own text/images for analysis, not the target's credentials — the query never touches the subject's accounts. But content is processed on RiteKit's third-party servers, so keep queries generic and use a sock-puppet RiteKit account, not one tied to your real identity.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Commercial product from RiteKit, a social-media marketing vendor — reliable for engagement signal but its metrics are directional, not evidentiary.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "RiteKit RiteTag",
+      "ritetag.com"
+    ],
+    "tags": [
+      "twitter",
+      "hashtag",
+      "social-media"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter/analytics/hashtag/ritetag.md"
   },
   {
@@ -343682,51 +342971,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/streamweasels-com.md"
-  },
-  {
-    "id": "stumbleupon",
-    "name": "Stumbleupon",
-    "description": "Website related to social networking and bookmarking activities",
-    "url": "http://www.stumbleupon.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "social-media"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/stumbleupon.md"
   },
   {
     "id": "stweet",

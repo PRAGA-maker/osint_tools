@@ -168,7 +168,6 @@ kind: group-index
 - **`facebook-latest-posts-scraper`** (high) — Use when you have a public Facebook page/profile URL (`social-profile`) and want its recent posts and comments in bulk — returns post/commen
 - **`facebook-matrix-2`** (high) — Use when you have a Facebook numeric UID or profile (`username`/`name`) and want ready-made search-URL templates to pull photos, friends, pl
 - **`facebook-matrix`** (high) — Use when you have a Facebook numeric ID (user/page/place) and want to run advanced graph-style searches — returns URL/JSON formulas that sur
-- **`facebook-newsroom`** (high) — Facebook news and updates
 - **`facebook-photo-search-engine`** (high) — Use when you have a `name` or keyword and want to find Facebook-hosted photos/pages indexed by Google — returns Facebook links (profiles, ph
 - **`facebook-profile-directory`** (high) — Use when you have a `name` and want to browse Facebook's alphabetical public directory of profiles/pages — returns public profile links you 
 - **`facebook-profile-id-grabber`** (high) — Use when you have a Facebook profile (vanity URL or open page) and want its stable numeric profile ID — returns the numeric ID that unlocks 
@@ -394,7 +393,6 @@ kind: group-index
 - **`monnett-social`** (high) — Use when you have a `username` or `name` and suspect the subject is on Monnett, a small privacy-focused European social app — returns a soci
 - **`montage-meedan-com`** (medium) — Search #YouTube video by date (uploaded or recording) and by geolocation.
 - **`mostly-harmless`** (high) — Use when you have a URL/`domain` or image and want to find where it's been posted on Reddit and who submitted it — a browser extension retur
-- **`mundimago-com`** (high) — OSINT tool: Mundimago.com.
 - **`mymfb-com`** (high) — OSINT tool: mymfb.com.
 - **`myosint-training`** (high) — Use when you want to build OSINT skills or grab free practitioner tools — a reputable training provider (Micah Hoffman & Griffin Glynn) offe
 - **`myspace-com`** (high) — Use when you have a `username` or `name` and want to check for a legacy Myspace profile — returns a social-profile and old photos, mostly va
@@ -406,7 +404,6 @@ kind: group-index
 - **`nairaland-com`** (high) — Use when you have a `name`/`username` for a Nigerian subject and want their forum presence — returns a Nairaland profile, post history, self
 - **`namemc`** (high) — Use when you have a Minecraft `username` (or account UUID) and want its name-change history, skins, and profile — returns prior usernames an
 - **`network-tool`** (low) — OSINT tool: Network Tool.
-- **`newsletter-fullstackrecruiter-net`** (high) — OSINT tool: newsletter.fullstackrecruiter.net.
 - **`nicolasconstant-github-io`** (high) — Use when you have a Mastodon/Pleroma `username` or instance handle and want a multi-account desktop/web client to read and monitor fediverse
 - **`nitter-ca`** (high) — Use when you have a Twitter/X `username` and want to read the timeline without an X login — returns public tweets/profile via a lightweight,
 - **`nitter-it`** (high) — Use when you have a Twitter/X `username` and want to read their tweets/media without an X account or login — a Nitter privacy front-end retu
@@ -517,7 +514,7 @@ kind: group-index
 - **`redditvids`** (low) — Watch videos posted on Reddit.
 - **`reddloader-com`** (medium) — Reddit video downloader
 - **`redective`** (medium) — OSINT tool: Redective.
-- **`redlinecybersecurity-com`** (high) — OSINT tool: redlinecybersecurity.com.
+- **`redlinecybersecurity-com`** (high) — Use when you have a LinkedIn post URL (a `social-profile` activity) and want its exact publish timestamp for a timeline — returns a precise 
 - **`reeddit`** (low) — Simplified Reddit web interface.
 - **`regvk-com`** (high) — Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for dee
 - **`related-repos`** (medium) — OSINT tool: Related Repos.
@@ -629,7 +626,6 @@ kind: group-index
 - **`storysaver`** (high) — Use when you have a public Instagram `username` and want to view/download their current Stories anonymously — returns Story `image`s/videos 
 - **`streamscharts-com`** (medium) — Use when you have a Twitch/Kick streamer `username` and want their stable numeric user ID plus channel analytics — returns the ID and public
 - **`streamweasels-com`** (high) — Use when you have a Twitch `username` and want its permanent numeric Twitch user/channel ID — returns the stable `device-id`-style ID that s
-- **`stumbleupon`** (high) — Website related to social networking and bookmarking activities
 - **`stweet`** (medium) — Opensource Python library for scraping tweets (by user, by hashtag, by keyword). NO LOGIN OR API KEY REQUIRED.
 - **`subreddit-stats-user-overlap`** (medium) — A tool to find similar subreddits. The higher the score of a subreddit in the list, the higher the probability that users of the original su
 - **`sully-gnome`** (medium) — detailed analysis of #Twitch streamer stats

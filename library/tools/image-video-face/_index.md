@@ -51,7 +51,6 @@ kind: group-index
 - **`betaface`** (high) — Use when you have a face photo and want automated facial analysis — landmark detection, demographic/attribute estimation, and similarity com
 - **`betterviewer`** (medium) — #Google Chrome extension for work with images. Right click on the picture and open it in new tab. You will get access to the following tools
 - **`bhuvan`** (medium) — Indian Geo-platfrom of ISRO.
-- **`big-fish-games`** (high) — Website related to social networking and players of over 1,000 games on this website
 - **`bleepingcomputer-com`** (low) — Use when you have a redacted/pixelated image and need to understand whether obscured text can be recovered — this is a reference article, no
 - **`buzzsprout`** (high) — Use when you have a `name` or `username` and want to find a subject's podcast presence — returns social-profile, audio/show-notes content, a
 - **`caloriemama`** (medium) — AI can identify the type of food from the photo and give information about its caloric value.
@@ -78,7 +77,6 @@ kind: group-index
 - **`compress-or-die-com-analyze`** (medium) — get detail information about images (exif, metatags, ICC_Profile, quantanisation tables)
 - **`copernicus-open-access-hub`** (medium) — ESA's open access portal to Sentinel data
 - **`copyseeker-net`** (high) — Use when you have a photo of a missing person or a place and want to find where else that image (or visually similar ones) appears online — 
-- **`crackle-tv-and-movie-video-search`** (high) — Multi-media search engine focusing on videos related to movies and TV shows
 - **`crunchyroll`** (high) — Use when you have a `username` and want to check for a matching anime-streaming profile — returns a `social-profile` (public display name, a
 - **`dacast`** (high) — Use when you encounter a live/embedded video stream and want to identify its host — Dacast is a B2B streaming platform with no public people
 - **`dailymotion-com`** (high) — Use when you want to find videos of or uploaded by a person on Dailymotion — returns videos, channels, and profile info to mine for faces, l
@@ -142,7 +140,6 @@ kind: group-index
 - **`fulldp-co-4`** (high) — Use when you have a social username/profile and need the full-resolution profile picture (Instagram/TikTok/VK/YouTube etc.) — the fulldp.co 
 - **`fulldp-co-5`** (high) — Use when you have a YouTube channel/handle and need the full-resolution channel profile picture rather than the small thumbnail — returns a 
 - **`fulldp`** (medium) — Download OnlyFans full-size profile pictures.
-- **`funnyordie`** (high) — Website related to social networking with video posting and sharing services
 - **`gaia`** (high) — Use when you have a `username` or `name` and want to find a Gaia Online avatar-community profile — returns the social-profile, avatar images
 - **`geograph-worldwide`** (medium) — Use when you have a `geolocation` (grid square / area) and want ground-level reference photos of it — returns geotagged `image`s to compare 
 - **`geosearch`** (medium) — OSINT tool: Geosearch.
@@ -166,7 +163,6 @@ kind: group-index
 - **`huggingface-co-4`** (high) — Use when you have an audio/video clip of a subject and want an accurate transcript with per-word timing — returns spoken `name`s and `associ
 - **`huggingface-co`** (high) — Use when you have an `image` of a subject and want to strip the background to isolate the face/person before reverse-image or face search — 
 - **`hugin`** (low) — Hugin is a free and open-source panorama photo stitching and HDR (High Dynamic Range imaging) merging software that helps users create seaml
-- **`hulu-united-states`** (high) — Video on demand service
 - **`hypem-music-search`** (high) — Use when you have an artist/DJ `name` or `username` and want to find their tracks, blog write-ups and linked profiles across music blogs — r
 - **`icon-finder`** (high) — Use when you have a small graphic/logo/icon `image` and want to identify or source a matching stock icon — a graphic-asset marketplace, not 
 - **`identifont-com`** (medium) — OSINT tool: Identifont.com.
@@ -251,7 +247,6 @@ kind: group-index
 - **`openphoto`** (high) — Website related to social networking with photo and image galleries, posting and sharing services
 - **`originality-ai`** (high) — Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an
 - **`osint-essentials`** (medium) — Verification-focused tool and resource site for journalists/researchers.
-- **`party-poker`** (high) — Website related to social networking and players of poker with gambling options
 - **`pbs-search`** (low) — Use when you have a `name` or topic and want to check if a person appears in PBS documentary/news content — returns video episodes and menti
 - **`perceptual-image-analysis`** (medium) — Chrome extension for quick access to image #forensic tools: Metadata Levels Principal Component Analysis Slopes Error Level Analysis
 - **`peteyvid-com`** (high) — Use when you have a `name`, `username` or keyword and want to find videos of the subject across non-YouTube platforms — returns social-profi
@@ -279,7 +274,7 @@ kind: group-index
 - **`placespotter-com`** (high) — Use when you have an `image` and want an AI's guess at where it was taken — returns approximate coordinates and location details.
 - **`planet-gallery`** (medium) — A collection of satellite images to compare changes in specific locations before and after any significant events (fires, military actions, 
 - **`playboard-co`** (medium) — Use when you have a YouTube channel `social-profile`/`username` and want independent analytics — returns channel stats, rankings, growth, ea
-- **`playlists-at`** (high) — OSINT tool: playlists.at.
+- **`playlists-at`** (high) — Use when you have a `name` or `username` and want to find a subject's YouTube uploads or appearances via advanced search operators — returns
 - **`pocket`** (low) — OSINT tool: Pocket.
 - **`podbean`** (high) — Use when you have a subject's `name` or `username` and suspect they host a podcast — returns their public podcast `social-profile`, episode 
 - **`podcast-alley`** (high) — Use when you have a `name`/`username` and want to check whether a subject self-hosts a podcast here — returns a show page with bio, photo an
@@ -315,7 +310,6 @@ kind: group-index
 - **`search-by-image-addons-mozilla-org`** (high) — Use when you have an `image` and want to reverse-search it across 30+ engines from the browser — returns social-profile, face and other matc
 - **`search-by-image-chrome-google-com`** (high) — Use when you have an `image` or `face` and want to reverse-search it across 30+ engines at once — returns matching pages/profiles from Googl
 - **`search-by-image`** (high) — Use when you have an `image` and want to reverse-search it across many engines at once from a right-click menu — returns matching image copi
-- **`search-for-music-using-your-voice`** (high) — OSINT tool: Search for Music Using Your Voice.
 - **`search-fotki-com`** (high) — Use when you have a `username` or `name` and want to find a profile on Fotki, a long-running photo-sharing community — returns social-profil
 - **`search4faces`** (high) — Use when you have a `face`/`image` and want to find matching profiles on VK, Odnoklassniki, TikTok or Clubhouse — returns links to social pr
 - **`searchbyimage-app`** (medium) — search clothes in online shops

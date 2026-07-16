@@ -47,7 +47,6 @@ kind: group-index
 - **`ahpra-gov-au`** (high) — Use when you have a `name` and want to verify/locate an Australian health practitioner — returns registration status, profession, qualificat
 - **`aiddata`** (low) — OSINT tool: AidData.
 - **`akp-email-database`** (medium) — OSINT tool: AKP email database.
-- **`al-local-surety-association-directory`** (high) — OSINT tool: AL Local Surety Association Directory.
 - **`alabama-deaths`** (medium) — FamilySearch genealogy site providing death records for Alabama from 1908 to 1974
 - **`alabama-dept-of-corrections`** (high) — Use when you have a `name` and want to check if they're in Alabama state prison — returns the inmate record with AIS number (`document-id`),
 - **`alaska-inmate-search`** (high) — Use when you have a `name` and want to locate someone in Alaska Department of Corrections custody — a guide/gateway to the official Alaska D
@@ -217,7 +216,6 @@ kind: group-index
 - **`corporate-information`** (medium) — OSINT tool: Corporate Information.
 - **`corporationwiki`** (medium) — OSINT tool: CorporationWiki.
 - **`corporative-registry-catalog`** (medium) — worldwide catalog of business registries (63 countries)
-- **`corrections-books-approval-search`** (high) — OSINT tool: Corrections Books Approval Search.
 - **`corrections-com-inmate-locaton-links`** (high) — Use when you have a `name` and want to find the right US state/federal inmate-locator to search — a curated directory of DOC lookup links th
 - **`counciltaxrates-info`** (medium) — Use when you have a UK `address`/postcode and want the property's council-tax band and local rates — returns band, rateable value and the re
 - **`county-clerks-recorded-doc-s-by-state`** (high) — Use when you have a `name` and a US location and want official recorded-document / public-record databases (deeds, liens, UCC, vital, court)
@@ -321,7 +319,6 @@ kind: group-index
 - **`extremist-profiles`** (low) — OSINT tool: Extremist Profiles.
 - **`ezilon`** (medium) — OSINT tool: Ezilon.
 - **`factiva`** (medium) — OSINT tool: Factiva.
-- **`fafsa-search-and-report`** (high) — OSINT tool: FAFSA Search and Report.
 - **`familyecho-com`** (medium) — Use when you have gathered several relatives (`name`/`associate`) and want a free workspace to build and visualise the family tree — returns
 - **`familysearch-births-and-baptisms-1972-1981-australia`** (high) — Use when you have a `name` (and rough birth year/place in Australia) and want indexed birth/baptism records to confirm identity and parents 
 - **`familysearch-deaths-and-burials-1816-1980-australia`** (high) — Use when you have a `name` of a person who may have died in Australia (1816–1980) and want death/burial record details — returns death/buria
@@ -596,7 +593,7 @@ kind: group-index
 - **`list-org`** (medium) — OSINT tool: list-org.
 - **`lists-of-united-states-state-prisons-wikipedia`** (high) — OSINT tool: Lists of United States state prisons - Wikipedia.
 - **`lithuania`** (high) — Use when you have a company name, person name or address and want official Lithuanian company records — returns registration code, legal sta
-- **`little-rock-ar-crime-search`** (high) — OSINT tool: Little Rock AR Crime Search.
+- **`little-rock-ar-crime-search`** (high) — Use when you have an `address` or `geolocation` in Little Rock, AR and want reported crime incidents at/near it — returns incident records (
 - **`liveroots`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`local-directories-search-australia`** (medium) — Australian business-related search engine that searches global results by product, occupation, business and city name
 - **`local-government-gis-beacon`** (medium) — OSINT tool: Local Government GIS - Beacon.
@@ -778,7 +775,6 @@ kind: group-index
 - **`pa-perry-county-2017-compensation-search-and-report`** (medium) — OSINT tool: PA Perry County 2017 Compensation Search and Report.
 - **`pa-ppp-database`** (medium) — OSINT tool: PA PPP Database.
 - **`pa-school-districts-deeds-user-facing-web-search`** (medium) — OSINT tool: PA School Districts Deeds user-facing web search.
-- **`pa-teacher-salary-average`** (high) — OSINT tool: PA teacher salary average.
 - **`pacer-2`** (high) — Use when you have a `name` (party, attorney, or business) and want to find US federal court cases and dockets involving them — returns name,
 - **`pacer-case-locator`** (high) — Use when you have a `name` and want to find any US federal court cases (civil, criminal, bankruptcy, appellate) a person is party to — retur
 - **`pacer`** (high) — Use when you have a `name` and want to find US federal court cases involving them — returns case filings, docket parties, and document IDs a
@@ -881,7 +877,6 @@ kind: group-index
 - **`rxlist`** (medium) — Internet drug index for prescription drugs and medications
 - **`ryersonindex-org`** (high) — Use when you have an Australian subject's `name` and suspect they've died — returns death-notice/obituary index entries (death date, age, so
 - **`saa-gov-uk`** (high) — Use when you have a Scottish `address` (or a commercial occupier `name`) and want council-tax band or valuation-roll details — returns addre
-- **`sacompany-co-za`** (high) — OSINT tool: sacompany.co.za.
 - **`sadoctorsapp-co-za`** (high) — Use when you have a doctor's `name` or a `geolocation`/`address` in South Africa and want their practice location and contact details — retu
 - **`samhsa`** (medium) — Substance Abuse and Mental Health Services Administration; an agency of the U.S. Department of Health and Human Services, website providing 
 - **`san-francisco-copwatch-database`** (medium) — OSINT tool: San Francisco CopWatch Database.
