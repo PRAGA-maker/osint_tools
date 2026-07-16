@@ -120970,44 +120970,49 @@
   {
     "id": "gaisma",
     "name": "Gaisma",
-    "description": "A site for those who verify the location of a photo by the position of the sun. It is very much inferior in functionality to http://timeanddate.com, but its interface is much simpler.",
+    "description": "Use when you have a candidate `geolocation` and photo shadows/sun position and want sunrise/sunset/solar-angle data to confirm or time the shot — returns solar timing data.",
     "url": "https://www.gaisma.com/en/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up sunrise, sunset, dawn, dusk and sun-path data for a named location to sanity-check where/when a photo was taken.",
     "selectorsIn": [
-      "face",
       "geolocation",
       "image"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference site; no account or payment. (Enum lacks a \"free-reference\" nuance — there is no paid tier.)",
+    "opsec": "passive",
+    "opsecNote": "You look up a location's solar data on a static reference site — nothing about the subject is transmitted and no one is notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running free reference site for solar/climate data by location; astronomical values are standard almanac calculations, reliable for the coarse checks OSINT needs.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "gaisma.com"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Nature"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/gaisma.md"
   },
   {
@@ -137293,40 +137298,51 @@
   {
     "id": "downloadhelper",
     "name": "DownloadHelper",
-    "description": "OSINT tool: DownloadHelper.",
+    "description": "Use when you have a page hosting a video/image you need to preserve for analysis — returns the downloaded media file for archiving, framing, and metadata work.",
     "url": "http://www.downloadhelper.net",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Downloading video and audio (including HLS/DASH streams) from web pages via a browser extension, to capture evidence before it disappears.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free with no registration; a one-time paid license unlocks unlimited/concurrent downloads and advanced conversion features.",
+    "opsec": "passive",
+    "opsecNote": "Downloading fetches the media from the host like a normal viewer would — the host sees your IP as an ordinary request, and the uploader is not notified. Use a sock-puppet browser/VPN. The extension states it does not track browsing; still, install only the official add-on from the vendor's store listing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "browser-extension",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Video DownloadHelper is a long-established (nearly 20 years, 20M+ users) Chrome/Firefox/Edge extension by mig.net; widely used but a third-party add-on, so install only from official stores.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "video-downloadhelper"
+    ],
+    "aliases": [
+      "Video DownloadHelper",
+      "VDH"
+    ],
     "tags": [
       "video-search-and-other-video-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "video-downloadhelper"
-    ],
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/downloadhelper.md"
   },
   {
@@ -150726,31 +150742,32 @@
   {
     "id": "screencast",
     "name": "Screencast",
-    "description": "Website related to social networking with video posting and sharing services",
+    "description": "Use when you have a `name`/`username` and want to find screen recordings, tutorial videos, or captured images a subject has published — returns hosted media and profile links.",
     "url": "https://www.screencast.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Locating publicly shared screen captures and videos hosted on TechSmith's Screencast platform.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier hosts and shares content with storage/expiration limits; paid Pro ($9.99/mo or $99.99/yr) removes limits. Viewing/searching public content is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public Screencast collection or watch page is passive browsing over HTTPS and does not notify the uploader. Signing in or commenting would attach your identity — stay logged out and use a sock-puppet browser if you must interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "trusted",
+    "trustNote": "Operated by TechSmith (makers of Snagit/Camtasia); first-party hosting platform, not a scraper — content is what the uploader chose to publish.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -150758,15 +150775,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "TechSmith Screencast",
+      "screencast.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/screencast.md"
   },
   {
@@ -213757,47 +213778,6 @@
     "_file": "library/tools/phone/phone-book-of-the-world.md"
   },
   {
-    "id": "phone-number-lookup-tool",
-    "name": "Phone Number Lookup Tool",
-    "description": "OSINT tool: Phone Number Lookup Tool.",
-    "url": "https://shadowcrypt.net/tools/phone",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cloudflare-resolver-tool",
-      "geoip-tracker-tool",
-      "nmap-checker-tool",
-      "page-links-extractor-tool",
-      "shadowcrypt-tools"
-    ],
-    "_file": "library/tools/phone/phone-number-lookup-tool.md"
-  },
-  {
     "id": "phone-number-search-tool",
     "name": "Phone number search Tool",
     "description": "Use when you have a `phone` number and want to sweep it across search engines in every common format — returns social-profile/web mentions you'd miss by searching one format.",
@@ -228295,46 +228275,52 @@
   {
     "id": "databasesets-com",
     "name": "databasesets.com",
-    "description": "OSINT tool: databasesets.com.",
+    "description": "Use when you have an `employer-org`/company `name` and want registry details, addresses, and corporate credit info — returns company address and organization records.",
     "url": "https://user.databasesets.com/index/index/intro.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Cross-border company lookups and corporate credit reports across 200+ countries, with a focus on Asia-Pacific registries.",
     "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
       "employer-org",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Company name search and basic directory hits are free; full corporate credit reports and detailed registry documents are paid, per-report purchases.",
+    "opsec": "passive",
+    "opsecNote": "Searching a company name is passive and does not touch the subject. Buying a report requires registration/payment that identifies you — use a business alias and a dedicated payment method if you must purchase.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Commercial third-party aggregator of company registry/credit data; source and freshness of records are not independently disclosed, so treat specifics as leads.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "DatabaseSets",
+      "databasesets"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/databasesets-com.md"
   },
   {
@@ -235286,45 +235272,53 @@
   {
     "id": "gi-files",
     "name": "GI Files",
-    "description": "OSINT tool: GI Files.",
+    "description": "Use when you have a `name`/`email` possibly tied to Stratfor's 2004–2011 intelligence emails and want mentions or correspondence — returns matching leaked emails.",
     "url": "https://search.wikileaks.org/gifiles/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Full-text searching WikiLeaks' 5M+ Stratfor \"Global Intelligence Files\" emails for a name, address, or topic.",
+    "selectorsIn": [
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public WikiLeaks archive; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching runs server-side on WikiLeaks' host; your query and IP hit their infrastructure. WikiLeaks is a sensitive/monitored domain — use a sock-puppet browser and consider Tor/VPN. You are only reading a published archive; nothing reaches the people named in it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Authentic WikiLeaks publication of Stratfor's leaked emails; the archive is genuine, but individual email *claims* are Stratfor staff opinions/rumor, not verified fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "akp-email-database",
-      "dnc-email-database",
-      "ice-patrol",
-      "leaked-cables",
-      "macron-campaign-emails",
-      "sony-archives",
       "wikileaks",
-      "wikileaks-search"
+      "wikileaks-search",
+      "leaked-cables"
     ],
+    "tags": [
+      "wikileaks",
+      "leaks",
+      "email-search"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/gi-files.md"
   },
   {
@@ -252660,13 +252654,13 @@
   {
     "id": "online-students-research-toolkit",
     "name": "Online Students Research Toolkit",
-    "description": "Maryville University's Online Students' Research Toolkit with search and citation tips, and resources",
+    "description": "Use when you have a research question and want a curated index of authoritative databases and advanced-search tips — returns links to subject databases and citation resources.",
     "url": "https://online.maryville.edu/blog/the-online-students-research-toolkit/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A reference guide pointing to authoritative subject databases (science, medicine, criminal justice, forensics, law) plus Google power-search operators.",
     "selectorsIn": [
       "name",
       "employer-org"
@@ -252675,15 +252669,16 @@
       "employer-org",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free educational blog post from Maryville University. The databases it links to may have their own paywalls.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the guide is passive. It is a static article, so it collects nothing beyond ordinary web analytics; the databases it sends you to have their own logging.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Maryville University; a legitimate academic institution's how-to guide, though it is a 2018 article and some linked resources may have moved.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -252692,15 +252687,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Maryville Research Toolkit"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "academic-scholarly-research-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/online-students-research-toolkit.md"
   },
   {
@@ -282914,41 +282912,51 @@
   {
     "id": "gitleaks",
     "name": "GitLeaks",
-    "description": "Scanning git repositories for hardcoded secrets, API keys, and leaked credentials",
+    "description": "Use when you have a target's git repo/`username` and want secrets and committer identities buried in its history — returns leaked credentials plus committer emails/names.",
     "url": "https://github.com/gitleaks/gitleaks",
     "category": "search-engines",
     "path": [
       "search-engines",
       "code-search"
     ],
-    "bestFor": "Scanning git repositories for hardcoded secrets, API keys, and leaked credentials",
-    "input": "Git repository path, remote URL, or file system path",
-    "output": "Report of detected secrets with file location, matched rule, commit hash, and line context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Scanning a git repository's full history for hardcoded secrets, API keys, and (as a byproduct) committer email/name identity leaks.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "password",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (MIT). Install via Homebrew, Docker, Go, or a prebuilt binary; no account.",
     "opsec": "active",
-    "opsecNote": "Remote scans require cloning the target repository; clone activity may be logged by the hosting platform.",
+    "opsecNote": "Scanning a *remote* target repo means cloning it — that clone is a normal git fetch the host (e.g. GitHub) can log against your IP. Clone from a sock-puppet/VPN'd environment. Scanning a repo you already have locally is passive. Never act on or attempt to use any live credential you find.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Widely-adopted (28k+ stars) open-source secret scanner by Zachary Rice; reproducible on your own machine, so results are verifiable and not a third-party black box.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "gitleaks"
+    ],
+    "tags": [
+      "code-search",
+      "secrets-scanning"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/code-search/gitleaks.md"
   },
   {
@@ -338394,52 +338402,53 @@
   {
     "id": "snapchat-multi-viewer-osint-combine",
     "name": "Snapchat Multi-Viewer | OSINT Combine",
-    "description": "OSINT tool: Snapchat Multi-Viewer | OSINT Combine.",
+    "description": "Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile and public-story data.",
     "url": "https://www.osintcombine.com/snapchat-multi-viewer",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing several Snapchat public profiles at once — Bitmoji avatar, display name, public story/Spotlight content — without logging in.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "geolocation"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free browser tool from OSINT Combine; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "Loads Snapchat's own public profile endpoints in your browser; you are not logged into Snapchat and the target is not notified. Requests originate from your IP/browser — use a sock-puppet browser/VPN for hygiene. Do not attempt to add or message the account, which would be active and identifying.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by OSINT Combine, a well-known OSINT training/tooling vendor; it surfaces Snapchat's public data rather than scraping private content.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "instagram-explorer",
+      "osint-combine-tiktok-quick-search",
+      "osint-combine-reddit-post-analyzer",
+      "osintcombine-com"
+    ],
+    "aliases": [
+      "Snapchat Multi Viewer"
+    ],
     "tags": [
       "snapchat"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "facebook-geo",
-      "instagram-explorer",
-      "osint-combine-blog",
-      "osint-combine-reddit-post-analyzer",
-      "osint-combine-tiktok-quick-search",
-      "osint-combine-tools",
-      "osintcombine-com",
-      "osintcombine-com-2"
-    ],
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snapchat-multi-viewer-osint-combine.md"
   },
   {
@@ -352581,49 +352590,48 @@
   {
     "id": "youtube-whisperer",
     "name": "YouTube Whisperer",
-    "description": "Transcribe YouTube video",
+    "description": "Use when you have a YouTube video `url` tied to a subject and want a text transcript to search for names, places, and admissions — returns a Whisper-generated transcript.",
     "url": "https://huggingface.co/spaces/jeffistyping/Youtube-Whisperer",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Quick browser-based transcription of a single YouTube video using OpenAI's Whisper model, no install.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Hugging Face Space; no account needed. Runs on shared community hardware, so it can be slow, queued, or offline.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public YouTube URL into a third-party Space — the operator and Hugging Face see the URL you submit, but the video owner is not notified. Do not submit private/unlisted URLs you would not want logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-built Hugging Face Space by user jeffistyping wrapping OpenAI Whisper; not an official product and subject to breakage.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "get-text-from-video"
+    ],
     "tags": [
       "Social Media",
       "YouTube"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "efficientnetv2",
-      "get-text-from-video",
-      "hugging-face-ai-detector",
-      "huggingface-co",
-      "huggingface-co-4",
-      "instruct-pix2pix",
-      "kosmos-2",
-      "pix2pix-video",
-      "scene-edit-detection"
-    ],
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-whisperer.md"
   },
   {

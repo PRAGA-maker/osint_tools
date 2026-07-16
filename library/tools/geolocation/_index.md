@@ -96,7 +96,7 @@ kind: group-index
 - **`freedomhouse-org`** (medium) — map of the world that shows the scores of different countries on the following indicators (on a scale of 1 to 100)
 - **`freemaptools`** (high) — Use when you have a `geolocation` or `address`/postcode and want to measure radius/distance, convert coordinates, or find places within an a
 - **`frontex-migratory-map`** (medium) — click on a country or region to see how many illegal border crossings have been reported there in the last six months.
-- **`gaisma`** (medium) — A site for those who verify the location of a photo by the position of the sun. It is very much inferior in functionality to http://timeandd
+- **`gaisma`** (medium) — Use when you have a candidate `geolocation` and photo shadows/sun position and want sunrise/sunset/solar-angle data to confirm or time the s
 - **`gdal3-js-org`** (medium) — One of the main problems of using geospatial data in investigations is the large number of applications for working with it, which save the 
 - **`geodesics-on-the-earth`** (medium) — finding the shortest path between two points
 - **`geogig`** (low) — Use when you need to version, branch, and merge large geospatial datasets like Git for GIS — a data-engineering tool, not a lookup.

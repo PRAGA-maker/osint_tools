@@ -89,7 +89,7 @@ kind: group-index
 - **`digitaldigging-org-2`** (high) — Use when you have an `image` and need to judge whether it is AI-generated/manipulated — returns detection methodology (visual-anomaly and pr
 - **`discover-podcasts-here`** (high) — Use when you have a `name` and want to find a subject's own podcast or guest appearances — returns social-profile, associate.
 - **`downalbum`** (medium) — Chrome extension for downloading photo albums from social media.
-- **`downloadhelper`** (medium) — OSINT tool: DownloadHelper.
+- **`downloadhelper`** (medium) — Use when you have a page hosting a video/image you need to preserve for analysis — returns the downloaded media file for archiving, framing,
 - **`dupli-checker`** (high) — Use when you have a photo of a person/place and want a quick multi-engine reverse-image lookup — returns matching social-profile pages and i
 - **`eagleeye-image-recognition`** (high) — Use when you have a person's name plus reference face photos and want to discover their social-media profiles — returns social-profile links
 - **`earthviewer360-com`** (medium) — Click on a point on the map to see a 360 degree video panorama (it's possiblle to pause to see some areas in more detail)
@@ -298,7 +298,7 @@ kind: group-index
 - **`savevideo`** (medium) — OSINT tool: SaveVideo.
 - **`scene-detection`** (medium) — Determine the timecodes on which there is a change of scenery in the video and significantly save time watching it
 - **`scene-edit-detection`** (medium) — A tool to help speed up and automate your video viewing. It highlights the frames where a new scene begins and allows you to quickly analyze
-- **`screencast`** (high) — Website related to social networking with video posting and sharing services
+- **`screencast`** (medium) — Use when you have a `name`/`username` and want to find screen recordings, tutorial videos, or captured images a subject has published — retu
 - **`search-by-image-addons-mozilla-org`** (high) — Use when you have an `image` and want to reverse-search it across 30+ engines from the browser — returns social-profile, face and other matc
 - **`search-by-image-chrome-google-com`** (high) — Use when you have an `image` or `face` and want to reverse-search it across 30+ engines at once — returns matching pages/profiles from Googl
 - **`search-by-image`** (high) — Use when you have an `image` and want to reverse-search it across many engines at once from a right-click menu — returns matching image copi

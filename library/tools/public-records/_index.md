@@ -256,7 +256,7 @@ kind: group-index
 - **`data-world`** (low) — OSINT tool: data.world.
 - **`databasd`** (low) — OSINT tool: Databasd.
 - **`database-of-suspected-terrorists`** (low) — OSINT tool: Database of suspected terrorists.
-- **`databasesets-com`** (high) — OSINT tool: databasesets.com.
+- **`databasesets-com`** (medium) — Use when you have an `employer-org`/company `name` and want registry details, addresses, and corporate credit info — returns company address
 - **`dataset-domainsproject-org`** (medium) — dataset of 616 millions domains (16GB!)
 - **`datasetlist-com`** (low) — OSINT tool: Datasetlist.com.
 - **`datasetsearch-research-google-com`** (low) — OSINT tool: Datasetsearch.research.google.com.
@@ -392,7 +392,7 @@ kind: group-index
 - **`germany`** (high) — Use when you have a German company/association (`employer-org`) or a `name` behind one and want beneficial-ownership and registry data — ret
 - **`gettr`** (low) — OSINT tool: Gettr.
 - **`gettysburg-pa-adams-county-2017-payroll-search-and-report`** (medium) — OSINT tool: Gettysburg PA Adams County 2017 Payroll Search and Report.
-- **`gi-files`** (medium) — OSINT tool: GI Files.
+- **`gi-files`** (medium) — Use when you have a `name`/`email` possibly tied to Stratfor's 2004–2011 intelligence emails and want mentions or correspondence — returns m
 - **`gibraltar`** (high) — Use when you have a Gibraltar company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
 - **`gijn-org-3`** (medium) — Use when you have an `address` or a person/`employer-org` and want a methodology and jurisdiction pointers for finding land/property ownersh
 - **`gijn-org`** (high) — Use when you need a vetted methodology or country/sector guide for an investigation (e.g. tracing companies or people abroad) — returns cura
@@ -732,7 +732,7 @@ kind: group-index
 - **`on-demand-court-records`** (high) — Use when you have a `name` and want Oklahoma district/tribal court case records — returns matching parties, case numbers (`document-id`), fi
 - **`online-searchable-death-indexes-and-records-united-states`** (high) — Use when you have a deceased US subject's `name` and want the right state death index — returns links to death records giving dates, place a
 - **`online-services-pei-business-corporate-registry`** (low) — OSINT tool: Online Services PEI Business / Corporate Registry.
-- **`online-students-research-toolkit`** (medium) — Maryville University's Online Students' Research Toolkit with search and citation tips, and resources
+- **`online-students-research-toolkit`** (medium) — Use when you have a research question and want a curated index of authoritative databases and advanced-search tips — returns links to subjec
 - **`onlinesearch-mns-mu`** (high) — Use when you have a Mauritius company (`employer-org`) or a director's `name` and want official corporate registry data — returns directors/
 - **`onondaga-county-home-sales`** (medium) — OSINT tool: Onondaga County Home Sales.
 - **`ontario-genealogy-and-history-database-index`** (medium) — Ontario (Upper Canada) Genealogy and History Database Index - searchable marriage and death records

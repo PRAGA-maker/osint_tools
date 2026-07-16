@@ -560,7 +560,7 @@ kind: group-index
 - **`snap-map`** (medium) — OSINT tool: Snap Map.
 - **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
 - **`snapbird`** (medium) — OSINT tool: SnapBird.
-- **`snapchat-multi-viewer-osint-combine`** (medium) — OSINT tool: Snapchat Multi-Viewer | OSINT Combine.
+- **`snapchat-multi-viewer-osint-combine`** (medium) — Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile
 - **`snapchat-search-enter-username-here`** (medium) — OSINT tool: SnapChat Search (ENTER-USERNAME-HERE).
 - **`snapchat-user-search`** (medium) — OSINT tool: Snapchat User Search.
 - **`snapdex-the-best-snapchat-names-index`** (medium) — OSINT tool: Snapdex: The Best Snapchat Names Index.
@@ -840,7 +840,7 @@ kind: group-index
 - **`youtube-tool`** (medium) — #Python library for: - extracting subtitles by video ID or link (in different languages); - list all the video's contained in playlist; - li
 - **`youtube-transcript-api`** (medium) — Get the transcript/subtitles for a given #YouTube video (by ID from adress bar). It also works for automatically generated subtitles and sup
 - **`youtube-video-upload-time`** (medium) — OSINT tool: YouTube video upload time.
-- **`youtube-whisperer`** (medium) — Transcribe YouTube video
+- **`youtube-whisperer`** (medium) — Use when you have a YouTube video `url` tied to a subject and want a text transcript to search for names, places, and admissions — returns a
 - **`youtube-word-search`** (medium) — An extension that helps you find at what second in the video a certain word is heard. It's possible to search not only by one word, but by t
 - **`ytcomments-klostermann-ca`** (low) — OSINT tool: Ytcomments.klostermann.ca.
 - **`ytcs`** (medium) — google chrome extension to search YouTube comments without leaving the site (link to source code)

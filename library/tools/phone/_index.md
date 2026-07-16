@@ -86,7 +86,6 @@ kind: group-index
 - **`personlookup-co-nz`** (high) — Use when you have a New Zealand `phone` (or `name`/`address`) and want to identify the person behind it — returns a name, residential addres
 - **`phomber`** (high) — Use when you have a `phone` (or IP/domain/username) and want CLI reconnaissance — returns carrier/line metadata and OSINT footprints, no API
 - **`phone-book-of-the-world`** (high) — Use when you have a `name`/`phone` in a specific country and want its national directory — returns links to that country's white/yellow page
-- **`phone-number-lookup-tool`** (high) — OSINT tool: Phone Number Lookup Tool.
 - **`phone-number-search-tool`** (high) — Use when you have a `phone` number and want to sweep it across search engines in every common format — returns social-profile/web mentions y
 - **`phone-scoop`** (high) — Use when you have a phone make/model or `device-id` (or a photo of a handset) and want to confirm the exact model and its hardware specs/cap
 - **`phone-validator-us`** (high) — Use when you have a `phone` number and want to validate it and classify the line — returns line type (cell/landline/VoIP/invalid), carrier a
