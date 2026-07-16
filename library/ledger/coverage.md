@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8463 total · 2407 full · 6056 stub (28% enriched)
+**Tools:** 8460 total · 2414 full · 6046 stub (28% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-medium: 3353 · low: 3148 · high: 1962
+medium: 3353 · low: 3148 · high: 1959
 
 ## Tools by trust
-unverified: 4559 · community: 3120 · trusted: 771 · personal: 7 · untrustworthy: 6
+unverified: 4554 · community: 3119 · trusted: 774 · personal: 7 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -26,22 +26,22 @@ unverified: 4559 · community: 3120 · trusted: 771 · personal: 7 · untrustwor
 - `financial-crypto` — 0/134
 - `geolocation` — 150/359
 - `image-video-face` — 346/487
-- `maps-geospatial-data` — 2/147
-- `messaging` — 126/205
+- `maps-geospatial-data` — 3/147
+- `messaging` — 128/205
 - `opsec-investigator-tooling` — 3/567
-- `people-search` — 212/278
+- `people-search` — 212/277
 - `phone` — 128/140
-- `public-records` — 514/1151
-- `search-engines` — 48/988
-- `social-networks` — 495/896
+- `public-records` — 515/1149
+- `search-engines` — 49/988
+- `social-networks` — 496/896
 - `training-ctf` — 0/12
-- `translation-language` — 0/103
+- `translation-language` — 1/103
 - `transportation` — 6/237
 - `username` — 91/105
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1083 leaves
+- `library/tools/public-records` — 1081 leaves
 - `library/tools/search-engines` — 917 leaves
 - `library/tools/social-networks` — 867 leaves
 - `library/tools/domains-ip-infrastructure` — 533 leaves
@@ -50,7 +50,7 @@ unverified: 4559 · community: 3120 · trusted: 771 · personal: 7 · untrustwor
 - `library/tools/ai-analysis-automation` — 421 leaves
 - `library/tools/image-video-face` — 390 leaves
 - `library/tools/geolocation` — 343 leaves
-- `library/tools/people-search` — 268 leaves
+- `library/tools/people-search` — 267 leaves
 - `library/tools/documents-metadata` — 266 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 218 leaves

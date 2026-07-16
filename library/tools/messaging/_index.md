@@ -159,7 +159,7 @@ kind: group-index
 - **`telegram-search`** (medium) — OSINT tool: Telegram Search.
 - **`telegram-tools`** (high) — Use when you have a Telegram user/account `device-id` (numeric ID) or bot file ID and want to decode it — returns approximate account-creati
 - **`telegram-usernames-finder`** (medium) — OSINT tool: Telegram Usernames Finder.
-- **`telegramchannels-me`** (medium) — Ratings of the 100 largest (by number of subscribers) #Telegram channels for different languages
+- **`telegramchannels-me`** (medium) — Use when you have a `username`, `name`, or keyword and want to discover public Telegram channels — returns `social-profile` links to matchin
 - **`telegramdb-org`** (medium) — OSINT tool: TelegramDB.org.
 - **`telegramdb`** (medium) — TelegramDB is a searchable database service that allows users to explore public Telegram groups and channels via a dedicated bot.
 - **`telemetr-io`** (high) — Use when you have a Telegram channel/`username` or a keyword and want channel analytics, post search and mention monitoring across millions 
@@ -192,7 +192,7 @@ kind: group-index
 - **`wachannelsfinder-com`** (high) — Use when you have a topic, region, or organization name and want to find public WhatsApp channels a subject may run or follow — returns chan
 - **`wacheck-online`** (high) — Use when you have a `phone` number and want to monitor its WhatsApp online/offline activity to infer a pattern of life and timezone — return
 - **`wagscraper`** (medium) — Scraps Whatsapp Group Links From Google Results And Gives Working Links (with group names and images)
-- **`watools-io`** (medium) — download whatsapp profile picture
+- **`watools-io`** (medium) — Use when you have a `phone` number and want the account's public WhatsApp profile photo — returns an `image` for reverse-image/face pivots.
 - **`waybien-com`** (high) — OSINT tool: waybien.com.
 - **`web-botim-me`** (high) — Use when you have a `phone` number likely used in the UAE/Gulf and want to check whether it's on BOTIM and pull the profile photo/name — a p
 - **`wechat-com`** (high) — Use when you have a `phone` or WeChat ID (`username`) and want to confirm it maps to a WeChat account and view its public profile — returns 

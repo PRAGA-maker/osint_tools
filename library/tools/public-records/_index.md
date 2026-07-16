@@ -150,7 +150,6 @@ kind: group-index
 - **`canadian-legal-information-institute`** (high) — Use when you have a `name` and want Canadian court/tribunal decisions or legislation mentioning them — returns document-id case citations an
 - **`canadian-obituaries`** (high) — Use when you have a `name` and want to check whether a subject (or relative) has a Canadian death/obituary notice — returns death confirmati
 - **`canadian-patents-database`** (medium) — OSINT tool: Canadian Patents Database.
-- **`canadian-resident-database-warning-slow`** (high) — OSINT tool: Canadian Resident Database (warning: slow).
 - **`canadian-trademarks-database`** (medium) — OSINT tool: Canadian Trademarks Database.
 - **`cancelthesefunerals-com`** (high) — Use when you have a `name` and want to check whether a person appears in the US Social Security Death Master File — returns death record fie
 - **`canlii-database`** (medium) — Canadian Legal Information Institute searchable database of legal documents and cases
@@ -1058,7 +1057,6 @@ kind: group-index
 - **`virtualglobetrotting-com`** (medium) — OSINT tool: Virtualglobetrotting.com.
 - **`vision-net-ie`** (high) — Use when you have an Irish company or a director's name and want registry-sourced records — returns company filings, director details and li
 - **`vizala`** (low) — OSINT tool: Vizala.
-- **`washington-state-voter-database`** (high) — OSINT tool: Washington State Voter Database.
 - **`washington`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Washington State corrections — returns inmate record, DOC n
 - **`webmd-medical-sciences-search`** (medium) — Academic-related search engine focusing on science, research, and medicine
 - **`west-virginia`** (high) — Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody st

@@ -162553,13 +162553,13 @@
   {
     "id": "using-world-imagery-wayback",
     "name": "Using World Imagery Wayback",
-    "description": "OSINT tool: Using World Imagery Wayback.",
+    "description": "Use when you have a `geolocation`/`address` and want to see how that spot looked in past satellite imagery — returns dated historical `geolocation` imagery for change analysis.",
     "url": "https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/using-world-imagery-wayback",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Browsing Esri's archive of past World Imagery basemap versions to see a location at different points in time.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -162567,31 +162567,39 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use via the Living Atlas Wayback app; no ArcGIS account required for basic browsing/comparison.",
+    "opsec": "passive",
+    "opsecNote": "You are viewing pre-captured satellite basemaps hosted by Esri; nothing is sent to or about the subject, so it is fully passive. Queries go to Esri's servers like any web map — standard hygiene suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Esri's official World Imagery Wayback service (part of ArcGIS Living Atlas); imagery is authoritative commercial/aerial source data, with dozens of archived captures per area.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "maps"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "esri"
     ],
+    "aliases": [
+      "World Imagery Wayback",
+      "ArcGIS Wayback"
+    ],
+    "tags": [
+      "maps",
+      "satellite-imagery",
+      "historical-imagery"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/using-world-imagery-wayback.md"
   },
   {
@@ -170615,41 +170623,52 @@
   {
     "id": "telegramchannels-me",
     "name": "Telegramchannels.me",
-    "description": "Ratings of the 100 largest (by number of subscribers) #Telegram channels for different languages",
+    "description": "Use when you have a `username`, `name`, or keyword and want to discover public Telegram channels — returns `social-profile` links to matching/ranked channels.",
     "url": "https://telegramchannels.me/list/biggest?language=en",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Browsing and searching a directory of public Telegram channels, ranked by subscriber count and language.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and search the public channel directory; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public web directory of already-public Telegram channels leaks nothing to any subject and needs no Telegram login. Standard web hygiene (clean session) is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party Telegram channel directory/rating site; listings are crawled from public channels, coverage is partial, and the operator is anonymous.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Messengers",
-      "Telegram"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "telegram-channels"
     ],
+    "aliases": [
+      "telegramchannels.me"
+    ],
+    "tags": [
+      "Messengers",
+      "Telegram",
+      "channel-directory"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegramchannels-me.md"
   },
   {
@@ -172256,41 +172275,52 @@
   {
     "id": "watools-io",
     "name": "Watools.io",
-    "description": "download whatsapp profile picture",
+    "description": "Use when you have a `phone` number and want the account's public WhatsApp profile photo — returns an `image` for reverse-image/face pivots.",
     "url": "https://watools.io/download-profile-picture",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Pulling a WhatsApp account's public profile picture from a phone number without adding the contact.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; no account or payment required to fetch a public profile picture.",
+    "opsec": "passive",
+    "opsecNote": "Fetches the publicly-visible WhatsApp avatar via the site's own infrastructure; the target is NOT notified and you don't add them as a contact, so it is passive toward the subject. Watools.io itself sees every number you submit — use a clean/sock-puppet session and don't feed it numbers you need to keep confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An anonymous third-party WhatsApp-utility site; it surfaces genuinely public avatar data, but the operator logs queried numbers and there are no privacy guarantees.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Messengers",
-      "WhatsApp"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "watools"
     ],
+    "aliases": [
+      "WATools",
+      "watools.io profile picture"
+    ],
+    "tags": [
+      "Messengers",
+      "WhatsApp",
+      "profile-picture"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/watools-io.md"
   },
   {
@@ -197007,51 +197037,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/biographies-net.md"
-  },
-  {
-    "id": "biz-yellow-pages-usa-business-and-people-dire",
-    "name": "Biz Yellow Pages, USA Business & People Dire",
-    "description": "OSINT tool: Biz Yellow Pages, USA Business & People Dire.",
-    "url": "http://www.bizyellowpages.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/biz-yellow-pages-usa-business-and-people-dire.md"
   },
   {
     "id": "british-phone-book",
@@ -223005,40 +222990,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/canadian-patents-database.md"
-  },
-  {
-    "id": "canadian-resident-database-warning-slow",
-    "name": "Canadian Resident Database (warning: slow)",
-    "description": "OSINT tool: Canadian Resident Database (warning: slow).",
-    "url": "https://bloopbase.keybase.pub/POPPY/CANRES/index.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/canadian-resident-database-warning-slow.md"
   },
   {
     "id": "canadian-trademarks-database",
@@ -269002,40 +268953,6 @@
     "_file": "library/tools/public-records/washington.md"
   },
   {
-    "id": "washington-state-voter-database",
-    "name": "Washington State Voter Database",
-    "description": "OSINT tool: Washington State Voter Database.",
-    "url": "http://www.soundpolitics.com/voterlookup.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/washington-state-voter-database.md"
-  },
-  {
     "id": "webmd-medical-sciences-search",
     "name": "WebMD Medical Sciences Search",
     "description": "Academic-related search engine focusing on science, research, and medicine",
@@ -269977,41 +269894,53 @@
   {
     "id": "world-legal-information-institute",
     "name": "World Legal Information Institute",
-    "description": "International legal research",
+    "description": "Use when you have a `name` and want free access to court decisions and legal materials across jurisdictions — returns case `document-id`, `associate` (parties), and sometimes `address`.",
     "url": "https://worldlii.org",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "International legal research",
-    "input": "Jurisdiction, case name, statute",
-    "output": "Court decisions, laws, regulations",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free, cross-jurisdiction case-law and legal-materials search spanning the global LII (Legal Information Institute) network.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "associate",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read; WorldLII is a non-profit consortium (AustLII, BAILII, CanLII, and other LIIs) with no paywall.",
     "opsec": "passive",
-    "opsecNote": "Academic/government source",
+    "opsecNote": "Searching a public legal database queries published court/legal records, not the subject, so it is fully passive and needs no login. No signal reaches the person of interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Free Access to Law Movement / LII consortium (hosted with AustLII); an authoritative aggregator of primary legal materials, though coverage and recency vary by member jurisdiction.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WorldLII",
+      "WorldLII.org"
+    ],
+    "tags": [
+      "legal-research",
+      "case-law",
+      "court-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/world-legal-information-institute.md"
   },
   {
@@ -271073,38 +271002,51 @@
   {
     "id": "2lingual",
     "name": "2lingual",
-    "description": "OSINT tool: 2lingual.",
+    "description": "Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention results you'd miss in one language.",
     "url": "https://2lingual.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running a single query as a simultaneous bilingual Google search to surface foreign-language results a monolingual search buries.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; it front-ends Google Search with automatic query translation across ~30 languages.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searches are run against Google via the 2lingual front-end; you never contact the subject, so it is passive. Your query still passes through 2lingual's site and Google — use a clean/sock-puppet session and don't submit sensitive selectors you wouldn't put into a normal search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A small independent search front-end over Google; result quality is Google's, but the site itself is a third-party wrapper with no guarantees of longevity.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "2lingual-search"
     ],
+    "aliases": [
+      "2Lingual Google Search"
+    ],
+    "tags": [
+      "bilingual-search",
+      "search-engine"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/2lingual.md"
   },
   {
@@ -351627,41 +351569,57 @@
   {
     "id": "xingdumper",
     "name": "XingDumper",
-    "description": "The Xing job and networking service has almost 20 million users! Here is a simple script that allows you to get a list of employees registered there for a particular company.",
+    "description": "Use when you have an `employer-org` (a XING company page) and want to enumerate its employees — returns `name`, `social-profile`, and optionally `email`/`phone`.",
     "url": "https://github.com/l4rm4nd/XingDumper",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-extracting the employee roster of a company from XING (the DACH-region professional network) in two API calls.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile",
+      "email",
+      "phone"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source (Python/Docker). No cost beyond needing a valid XING account for the login cookie.",
+    "opsec": "active",
+    "opsecNote": "The script authenticates with YOUR XING login cookie and queries the target company via XING's API — XING can attribute the scraping to that account. Use a dedicated sock-puppet XING account, never a personal one; running at scale risks that account being flagged/banned.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained open-source tool by researcher l4rm4nd (active releases through 2026); code is auditable on GitHub, but output is only as accurate as the self-reported XING profiles it scrapes.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "de"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Xing"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "linkedindumper"
     ],
+    "aliases": [
+      "Xing Dumper"
+    ],
+    "tags": [
+      "Social Media",
+      "Xing",
+      "employee-enumeration",
+      "cli"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/xingdumper.md"
   },
   {
@@ -354738,43 +354696,47 @@
   {
     "id": "deepl-translator",
     "name": "DeepL Translator",
-    "description": "High-accuracy translation of documents and technical text",
+    "description": "Use when you have a foreign-language record, message, or document and want an accurate English (or other) rendering — returns translated text to read and pivot on.",
     "url": "https://www.deepl.com/en/translator",
     "category": "translation-language",
     "path": [
       "translation-language",
       "text"
     ],
-    "bestFor": "High-accuracy translation of documents and technical text",
-    "input": "Text or supported documents",
-    "output": "Translated text or translated document",
+    "bestFor": "High-accuracy machine translation of foreign-language OSINT text and documents.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier translates text (character-capped per request) and a limited number of documents; DeepL Pro (paid) raises limits and adds an API.",
     "opsec": "active",
-    "opsecNote": "Submitted content is transmitted to DeepL infrastructure for processing.",
+    "opsecNote": "Text you paste is transmitted to DeepL's servers for processing. Do NOT paste sensitive case material, unpublished PII, or anything you wouldn't hand to a third party; for confidential documents use a local/offline translator instead.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "DeepL is a well-established commercial translation provider widely regarded as more accurate than generic MT for European languages; the service itself is reliable, though any machine translation can mistranslate names and idioms.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "deepl"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DeepL"
+    ],
+    "tags": [
+      "translation",
+      "language"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/text/deepl-translator.md"
   },
   {

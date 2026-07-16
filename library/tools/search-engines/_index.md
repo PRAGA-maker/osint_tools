@@ -23,7 +23,7 @@ kind: group-index
 - **`1st-headlines`** (low) — OSINT tool: 1st Headlines.
 - **`1websdirectory`** (medium) — General web directory, browsable by category, keyword and country
 - **`2lingual-search`** (medium) — OSINT tool: 2lingual Search.
-- **`2lingual`** (medium) — OSINT tool: 2lingual.
+- **`2lingual`** (medium) — Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention r
 - **`3dfindit`** (low) — tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.
 - **`4shared`** (medium) — Website that allows users to search, store, and share files.
 - **`aaroncti-s-online-resources`** (medium) — Public Google Sheet of OSINT/CTI online resources curated by AaronCTI.

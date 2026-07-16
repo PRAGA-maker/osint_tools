@@ -140,7 +140,7 @@ kind: group-index
 - **`ukraine-war-map-heatmap`** (medium) — OSINT tool: Ukraine War Map/Heatmap.
 - **`unosat-analyses`** (low) — UNOSAT Analyses is a tool that maps humanitarian emergencies across the globe utilising United Nations Satellite Centre data.
 - **`us-labor-strike-map`** (medium) — OSINT tool: US Labor Strike Map.
-- **`using-world-imagery-wayback`** (medium) — OSINT tool: Using World Imagery Wayback.
+- **`using-world-imagery-wayback`** (medium) — Use when you have a `geolocation`/`address` and want to see how that spot looked in past satellite imagery — returns dated historical `geolo
 - **`utm-grid-zones`** (low) — An overview of the Universal Transverse Mercator coordinate system.
 - **`virtualvacation-us`** (medium) — OSINT tool: virtualvacation.us.
 - **`visionofbritain-org-uk`** (medium) — OSINT tool: visionofbritain.org.uk.

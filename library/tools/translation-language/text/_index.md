@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`bing-translate`** (medium) — Quick translation of text and webpages
 - **`cambridge-dictionary`** (medium) — Word-level translation and bilingual dictionary lookups
-- **`deepl-translator`** (medium) — High-accuracy translation of documents and technical text
+- **`deepl-translator`** (medium) — Use when you have a foreign-language record, message, or document and want an accurate English (or other) rendering — returns translated tex
 - **`free-translation`** (medium) — Fast multi-language text translation in a browser
 - **`google-input-tools`** (medium) — Typing non-Latin scripts and transliterated input
 - **`google-translate`** (medium) — Quick translation across broad language coverage

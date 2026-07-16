@@ -807,7 +807,7 @@ kind: group-index
 - **`xboxgamertag`** (medium) — Search gamertags, see games played and recorded game clips
 - **`xcancel-nitter-mirror`** (high) — Use when you have an X/Twitter `username` and want to read their tweets, replies, and media without logging in — returns the public timeline
 - **`xiaohongshu-com`** (high) — Use when you have a `username` or `name` and want to find a subject on Xiaohongshu (RED / Little Red Book), China's major lifestyle social p
-- **`xingdumper`** (medium) — The Xing job and networking service has almost 20 million users! Here is a simple script that allows you to get a list of employees register
+- **`xingdumper`** (medium) — Use when you have an `employer-org` (a XING company page) and want to enumerate its employees — returns `name`, `social-profile`, and option
 - **`xplore-x-vercel-app`** (high) — Use when you have a `geolocation` (a point/area of interest) and want to see live X/Twitter posts from that place — returns geographically-f
 - **`xquik`** (high) — Use when you have a `username` or keyword and want to search public X (Twitter) posts and export an account's follower list — returns `socia
 - **`yaseeker`** (medium) — Get information about [http://Yandex.ru](http://Yandex.ru) account by login
