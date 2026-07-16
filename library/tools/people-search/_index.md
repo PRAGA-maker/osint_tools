@@ -180,7 +180,7 @@ kind: group-index
 - **`osint-search-engine`** (high) — Use when you have a `name`, `username` or `email` and want to search a curated set of people/OSINT sites at once — a prebuilt Google Custom 
 - **`osint-toolkit-ayxkaddd`** (medium) — Web interface providing access to various OSINT tools and resources.
 - **`osrframework-2`** (high) — Use when you have a `username`, `email`, `phone`, or full `name` and want to enumerate accounts and profiles across many platforms from the 
-- **`patent-attorneys-agent-search`** (medium) — OSINT tool: Patent Attorneys/Agent Search.
+- **`patent-attorneys-agent-search`** (medium) — Use when you have a `name` and suspect they are a US-registered patent attorney or agent — returns confirmation plus their business address 
 - **`peekyou-people-search`** (high) — Use when you have a `name` or `username` and want a free aggregation of someone's social profiles, photos and contact leads — returns `socia
 - **`peep-mail-search-tool`** (high) — Use when you have a person's `name` and their employer's `domain` and want a best-guess corporate `email` address — returns a likely email p
 - **`people-looker-us`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want a consumer background-report aggregator to pull contact history, relat

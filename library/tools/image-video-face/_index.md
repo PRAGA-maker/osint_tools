@@ -294,7 +294,7 @@ kind: group-index
 - **`rootabout`** (high) — Use when you have an `image` and want to reverse-search it against the Internet Archive and Open Library (plus Google) — returns matching ar
 - **`runescape`** (low) — Use when you have a gamer `username` and want to confirm a RuneScape account and read its public hiscores/activity — returns a social-profil
 - **`same-energy`** (high) — Use when you have an `image` and want aesthetically/visually similar images to identify a scene, object, or style — returns visually similar
-- **`savevideo`** (medium) — OSINT tool: SaveVideo.
+- **`savevideo`** (medium) — Use when you have a social-media video URL and want to download the file for offline analysis — returns the video and its metadata-exif for 
 - **`scene-detection`** (medium) — Determine the timecodes on which there is a change of scenery in the video and significantly save time watching it
 - **`scene-edit-detection`** (medium) — A tool to help speed up and automate your video viewing. It highlights the frames where a new scene begins and allows you to quickly analyze
 - **`screencast`** (medium) — Use when you have a `name`/`username` and want to find screen recordings, tutorial videos, or captured images a subject has published — retu

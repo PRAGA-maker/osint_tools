@@ -15,7 +15,7 @@ kind: group-index
 - **`internet-archive-wayback-machine`** (medium) — Historical website analysis and deleted content recovery
 - **`pdf-my-url`** (medium) — Generating quick PDF evidence captures of web pages
 - **`screenshots-com`** (medium) — Visual timeline checks of website appearance changes
-- **`textfiles-com`** (medium) — Researching legacy digital culture and historical text archives
+- **`textfiles-com`** (low) — Use when a `name`, `username` or `email` may appear in 1980s–90s BBS/hacker text-file culture — returns document-id and username leads from 
 - **`uk-web-archive`** (medium) — Use when you have a UK `domain`, site title, `name`, or keyword and want historical captures of UK web content — returns domain, metadata-ex
 - **`wayback-machine-chrome-extension`** (medium) — Fast archive lookups while browsing dead or changed pages
 - **`waybackpack`** (medium) — Batch export of historical snapshots for offline analysis

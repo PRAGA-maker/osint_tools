@@ -21420,41 +21420,54 @@
   {
     "id": "textfiles-com",
     "name": "Textfiles.com",
-    "description": "Researching legacy digital culture and historical text archives",
+    "description": "Use when a `name`, `username` or `email` may appear in 1980s–90s BBS/hacker text-file culture — returns document-id and username leads from legacy archives.",
     "url": "https://textfiles.com/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "web"
     ],
-    "bestFor": "Researching legacy digital culture and historical text archives",
-    "input": "Keyword, directory path, or file browsing",
-    "output": "Archived plain-text files and scanned historical documents",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching legacy BBS, zine, and hacker-scene text archives for old handles, real names, and contact info.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "username",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and read; no account. A read-only historical archive maintained by Jason Scott.",
     "opsec": "passive",
-    "opsecNote": "Read-only archive browsing; minimal operational exposure beyond normal web access logging.",
+    "opsecNote": "Read-only browsing of a static public archive; nothing is submitted to any subject and there is no interaction. Standard web-access logging only; a VPN is optional.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Long-running, well-known archive curated by Jason Scott (also of the Internet Archive); the files are faithfully preserved historical artefacts.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "textfiles.com",
+      "Textfiles"
+    ],
+    "tags": [
+      "archive",
+      "historical",
+      "bbs"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/web/textfiles-com.md"
   },
   {
@@ -83396,42 +83409,51 @@
   {
     "id": "nominet-uk",
     "name": "nominet.uk",
-    "description": "OSINT tool: nominet.uk.",
+    "description": "Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registrant — returns domain and employer-org leads.",
     "url": "https://www.nominet.uk/lookup/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative WHOIS for .uk domains (registrar, dates, nameservers, and business registrant where not opted out).",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free registry WHOIS lookup from Nominet, the official .uk registry; no account. Rate-limited to deter bulk scraping.",
+    "opsec": "passive",
+    "opsecNote": "A registry WHOIS query does not notify the domain owner. Note that Nominet hides individual (non-trading) registrants' personal details by default under UK data-protection rules, so a blank registrant is privacy protection, not necessarily concealment.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Nominet is the official registry operator for .uk; its WHOIS is the authoritative source for .uk registration data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Nominet WHOIS",
+      "nominet.uk lookup"
+    ],
     "tags": [
       "domainsandips",
-      "Domains & IPs"
+      "Domains & IPs",
+      "whois",
+      "uk"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/nominet-uk.md"
   },
   {
@@ -112041,45 +112063,55 @@
   {
     "id": "blockchair",
     "name": "Blockchair",
-    "description": "Cross-chain address and transaction search with privacy-friendly interface",
+    "description": "Use when you have a `crypto-wallet` address or transaction hash and want its full history across many blockchains — returns transaction, balance and counterparty leads.",
     "url": "https://blockchair.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "chain-analysis-platforms"
     ],
-    "bestFor": "Cross-chain address and transaction search with privacy-friendly interface",
-    "input": "Blockchain address, transaction hash, or advanced SQL-like query across chains",
-    "output": "Transaction history, balance data, token transfers, smart contract events, cross-chain analytics",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Multi-chain block explorer and search for tracing a wallet's balance, transactions, and counterparties across 20+ blockchains.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet",
+      "document-id"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web explorer and search across Bitcoin, Ethereum, and 20+ chains; no account needed. Bulk data, exports, and heavy API use are paid.",
     "opsec": "passive",
-    "opsecNote": "Accessible via Tor; does not require registration; minimal tracking or logging. Privacy-oriented design.",
+    "opsecNote": "Blockchain data is public; querying an address does not alert its owner. Blockchair is reachable over Tor and requires no login, so you can research addresses without tying the lookup to yourself — still use Tor/VPN for sensitive tracing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-established multi-chain explorer widely used in crypto investigations; on-chain data it shows is authoritative because it comes from the blockchains themselves.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "blockchair.com"
+    ],
+    "tags": [
+      "crypto",
+      "blockchain-explorer",
+      "transaction-tracing"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "bitcoin-explorer",
       "blockchair-com",
       "zcash-block-explorer"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/financial-crypto/chain-analysis-platforms/blockchair.md"
   },
   {
@@ -150285,42 +150317,50 @@
   {
     "id": "savevideo",
     "name": "SaveVideo",
-    "description": "OSINT tool: SaveVideo.",
+    "description": "Use when you have a social-media video URL and want to download the file for offline analysis — returns the video and its metadata-exif for frame/geolocation review.",
     "url": "https://savevideo.me",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Grabbing a downloadable copy of a social-media video before it is deleted, for frame-by-frame and metadata analysis.",
     "selectorsIn": [
-      "image",
-      "name"
+      "social-profile"
     ],
     "selectorsOut": [
-      "metadata-exif"
+      "metadata-exif",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online downloader; no account. Supports Facebook, X/Twitter, Instagram, TikTok, Reddit, Vimeo, and 20+ other hosts.",
+    "opsec": "passive",
+    "opsecNote": "You paste a public video URL into a third-party downloader; the original poster is not notified, but SaveVideo's servers see the URL you request. For sensitive targets prefer a local tool like yt-dlp; use a VPN either way.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A free ad-supported downloader site; it fetches the real source video, but the site itself is unaudited and ad-heavy — verify the download and beware of misleading ad buttons.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "savevideo.me",
+      "SaveVideo.ME"
+    ],
     "tags": [
-      "video"
+      "video",
+      "download",
+      "media-preservation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "savevideo-me"
     ],
@@ -204315,37 +204355,52 @@
   {
     "id": "patent-attorneys-agent-search",
     "name": "Patent Attorneys/Agent Search",
-    "description": "OSINT tool: Patent Attorneys/Agent Search.",
+    "description": "Use when you have a `name` and suspect they are a US-registered patent attorney or agent — returns confirmation plus their business address and registration document-id.",
     "url": "https://oedci.uspto.gov/OEDCI/",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming and locating a US-registered patent practitioner (attorney or agent) by name, and pulling their listed contact info.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official USPTO Practitioner Finder; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "An official government registry lookup; the practitioner is not notified and the query reveals nothing about you. The listed address is the practitioner's professional/registration address, which is public by design.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the USPTO Office of Enrollment and Discipline; this is the authoritative register of practitioners licensed to practice before the USPTO.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "USPTO OEDCI",
+      "Practitioner Finder",
+      "Patent Practitioner Search"
+    ],
     "tags": [
-      "expert-search"
+      "expert-search",
+      "legal",
+      "professional-license"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "tess",
       "us-patent-office-search"
@@ -302901,36 +302956,49 @@
   },
   {
     "id": "sploitus",
-    "name": "sploitus",
-    "description": "OSINT tool: sploitus.",
+    "name": "Sploitus",
+    "description": "Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engine, not a people-finder.",
     "url": "https://sploitus.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Quickly finding published exploits, PoCs, and security tools for a given software, version, or CVE.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public exploit/PoC search; no account needed for basic queries. It aggregates public exploit databases and security repos.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching Sploitus only queries its own index of public exploit data; no target system is touched and nothing is sent to any subject. Fully passive research; still use a VPN if you prefer not to associate exploit searches with your IP.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A well-known exploit/PoC search aggregator; it indexes third-party exploit sources, so the exploits' quality/safety is the original authors', not Sploitus's.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "sploitus.com"
+    ],
+    "tags": [
+      "exploits",
+      "vulnerability",
+      "security-research"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/sploitus.md"
   },
   {
@@ -304254,24 +304322,33 @@
   {
     "id": "thelookup",
     "name": "TheLookup",
-    "description": "Metasearch engine that searches a range of popular search engines including DuckDuckGo, Startpage, Carrot2, Baidu, Bing, Google, and more.",
+    "description": "Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profile, domain and document-id leads.",
     "url": "http://the-lookup.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-page metasearch that fans a single query out to dozens of engines so no one index's blind spot hides a result.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; no account. It just hands your query off to other engines' result pages.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The query is sent to whichever downstream engines you open, so the same OpSec as a normal web search applies — use a VPN/sock-puppet session. TheLookup itself only builds the search URLs; it does not store your selector.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A convenience aggregator that redirects into third-party engines; result quality is entirely those engines', so trust follows whichever one returned the hit.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -304280,15 +304357,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "the-lookup.com",
+      "the lookup"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "meta-mega-search-tools"
+      "meta-mega-search-tools",
+      "metasearch"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/thelookup.md"
   },
   {
@@ -306253,46 +306334,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/walla-israel.md"
-  },
-  {
-    "id": "warcraft-character-search",
-    "name": "Warcraft Character Search",
-    "description": "Website that offers a search engine for locating players of leading games and gaming communities",
-    "url": "http://www.warcraftrealms.com/charhistory.php",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/warcraft-character-search.md"
   },
   {
     "id": "washington-office-of-financial-management",
@@ -309098,41 +309139,53 @@
   {
     "id": "yahoo-advanced-web-search",
     "name": "Yahoo Advanced Web Search",
-    "description": "Alternative to Google/Bing, specialized searches, location-based results",
+    "description": "Use when a Google/Bing search for a `name`, `username` or `email` is incomplete and you want an alternate index with operators — returns social-profile, domain and document-id leads.",
     "url": "https://search.yahoo.com/web/advanced",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Alternative to Google/Bing, specialized searches, location-based results",
-    "input": "Keywords, search operators (+, -, site:, intitle:, filetype:, exact phrases in quotes)",
-    "output": "Ranked web pages, news, images, location-specific results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "An alternate general-search index (Bing-backed) with an advanced-operator form for cross-checking queries.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free general web search; no account required.",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT technique; Yahoo Search API still active as of 2026; provides alternative result set",
+    "opsecNote": "Standard web-search OpSec — the query travels to Yahoo/Bing. Search from a VPN/sock-puppet session; Yahoo may personalise if you are logged into a Yahoo account, so stay logged out.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Yahoo is an established search provider (results primarily powered by Bing); reputable, though result quality tracks the underlying index.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Yahoo Search",
+      "search.yahoo.com"
+    ],
+    "tags": [
+      "search-engine",
+      "general-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/yahoo-advanced-web-search.md"
   },
   {
@@ -359114,41 +359167,50 @@
   {
     "id": "carnet-ai",
     "name": "Carnet.ai",
-    "description": "Vehicle identification from images in visual OSINT cases",
+    "description": "Use when you have an `image` of a car and want to identify its make, model and generation — returns a physical-description of the vehicle to narrow an ID.",
     "url": "https://carnet.ai/",
     "category": "transportation",
     "path": [
       "transportation",
       "vehicle-records"
     ],
-    "bestFor": "Vehicle identification from images in visual OSINT cases",
-    "input": "Vehicle image file or image URL",
-    "output": "Predicted make, model, generation year, and confidence score",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Recognising a vehicle's make/model/generation from a photo when you can't identify it by eye.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "physical-description"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Interactive web demo is free to try; API access is free for personal/educational or public link-back projects, otherwise paid. Recognises 300+ brands / 3100+ models built since ~1995.",
     "opsec": "passive",
-    "opsecNote": "Image submission to hosted inference service without direct interaction with vehicle operators.",
+    "opsecNote": "You upload only a vehicle image to a hosted inference service; no vehicle owner is contacted. Strip or avoid uploading images whose metadata/background you don't want on a third-party server, and consider a sock-puppet where sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent ML service claiming ~97% make/model accuracy; predictions are probabilistic and unverified against ground truth, so confirm before relying on them.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CarNet.AI",
+      "carnet.ai"
+    ],
+    "tags": [
+      "vehicle",
+      "image-recognition",
+      "visual-osint"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vehicle-records/carnet-ai.md"
   },
   {
@@ -366515,43 +366577,53 @@
   {
     "id": "vin-check-and-get-vehicle-history-report",
     "name": "VIN Check and get Vehicle History Report",
-    "description": "OSINT tool: VIN Check and get Vehicle History Report.",
+    "description": "Use when you have a `vin` (or plate to look up a VIN) and want to decode the vehicle and screen for theft/salvage flags — returns vehicle physical-description and history leads.",
     "url": "https://www.faxvin.com/vin-check",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Free VIN decode (make/model/year/specs) plus NICB theft and salvage screening for a vehicle.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "vin",
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "physical-description",
+      "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic VIN decoder (year, make, model, body, engine, assembly) and free NICB theft/salvage check (5 lookups per IP per day). Full title-brand/odometer history report is paid.",
+    "opsec": "passive",
+    "opsecNote": "You query FaxVIN's database about a vehicle, not a person; the owner is not notified. The lookup does not by itself return a name — do not assume vehicle → owner without a separate DMV/records source.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial VIN-report vendor; the free decode uses standard VIN structure and NICB data (authoritative for theft/salvage), while paid \"history\" aggregates third-party records of variable completeness.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "FaxVIN VIN Check",
+      "faxvin.com"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "vin",
+      "vehicle-history"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "faxvin"
     ],

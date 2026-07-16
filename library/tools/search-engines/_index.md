@@ -760,7 +760,7 @@ kind: group-index
 - **`soso`** (medium) — Chinese web search engine
 - **`sougou-com`** (medium) — OSINT tool: Sougou.com.
 - **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
-- **`sploitus`** (medium) — OSINT tool: sploitus.
+- **`sploitus`** (low) — Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engin
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
 - **`springer`** (low) — OSINT tool: Springer.
 - **`stackoverflow`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
@@ -790,7 +790,7 @@ kind: group-index
 - **`the-guantanamo-docket`** (medium) — Docket containing documents and research related to the detainee population of Guantanamo Bay from 2002
 - **`the-osint-rack-mario-santella`** (medium) — Personal curated 'rack' of OSINT tools by Mario Santella.
 - **`thefaceoff-ice-hockey-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on i
-- **`thelookup`** (medium) — Metasearch engine that searches a range of popular search engines including DuckDuckGo, Startpage, Carrot2, Baidu, Bing, Google, and more.
+- **`thelookup`** (medium) — Use when you have a `name`, `username` or `email` and want to run it across 100+ search engines at once from one page — returns social-profi
 - **`thelordeye`** (low) — Tool that searches for devices directly connected to the internet with a user specified query. It returns results for webcams, traffic light
 - **`thepiratebay`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
 - **`thereisabotforthat-com`** (low) — search by catalog of 5151 bots for 17 different apps and platforms
@@ -838,7 +838,6 @@ kind: group-index
 - **`vulnerability-and-exploit-database`** (medium) — OSINT tool: Vulnerability & Exploit Database.
 - **`wackysafe`** (low) — Kid-friendly search engine.
 - **`walla-israel`** (low) — OSINT tool: Walla (Israel).
-- **`warcraft-character-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`washington-office-of-financial-management`** (medium) — Washingtons Office of Financial Management site providing workforce and population data, and state budget information
 - **`watch-out-investors`** (medium) — Allows you to search for regulatory or disciplinary actions against corporate entities
 - **`wazap-video-and-game-search-japan`** (medium) — Website that offers a search engine for locating videos and games

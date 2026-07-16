@@ -7,7 +7,7 @@ kind: group-index
 # financial-crypto/chain-analysis-platforms
 
 ## Skills here
-- **`blockchair`** (medium) — Cross-chain address and transaction search with privacy-friendly interface
+- **`blockchair`** (medium) — Use when you have a `crypto-wallet` address or transaction hash and want its full history across many blockchains — returns transaction, bal
 - **`blockscan`** (medium) — EVM-chain portfolio aggregation and cross-chain transaction tracking
 - **`etherscan`** (medium) — Ethereum and EVM transaction analysis, smart contract inspection, token tracking
 - **`oxt-me`** (medium) — Bitcoin address privacy analysis and transaction probability scoring

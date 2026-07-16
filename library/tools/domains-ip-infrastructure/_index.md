@@ -360,7 +360,7 @@ kind: group-index
 - **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.
 - **`nmap-formatter`** (low) — A tool to convert NMAP scan results into different formats: html, csv, Markdown, json, svg (Graphviz), sqlite
 - **`nmap-online`** (low) — OSINT tool: NMAP Online.
-- **`nominet-uk`** (medium) — OSINT tool: nominet.uk.
+- **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
 - **`online-domain-tools-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
