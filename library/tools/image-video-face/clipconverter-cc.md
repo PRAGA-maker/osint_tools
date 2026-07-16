@@ -8,10 +8,10 @@ path:
 - image-video-face
 bestFor: Downloading and format-converting online videos (URL → mp4/mp3) so footage can be preserved and analyzed offline.
 selectorsIn:
-- metadata
+- metadata-exif
 selectorsOut:
 - image
-- metadata
+- metadata-exif
 status: unknown
 pricing: free
 opsec: passive
@@ -23,7 +23,8 @@ bestInteractionPattern: web-manual
 trust: unverified
 trustNote: A long-standing online video downloader/converter. Functionality is well understood; current uptime and ad/redirect safety are not freshly confirmed here.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false

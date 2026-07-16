@@ -9,8 +9,12 @@ path:
 bestFor: Marketplace/explorer to search open and commercial satellite scenes for an AOI and order imagery.
 input: AOI, date range, and scene filters
 output: Scene search results with preview and ordering options
-selectorsIn: [geolocation, address]
-selectorsOut: [geolocation, metadata]
+selectorsIn:
+- geolocation
+- address
+selectorsOut:
+- geolocation
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Open-data scene browsing/preview is free; ordering commercial high-resolution imagery is paid.
@@ -24,15 +28,18 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Commercial satellite-imagery marketplace (SkyFi); legitimate aggregator of providers, but high-res scenes are paid and account-gated.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: account
 api: true
 localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: [sentinel-hub]
-aliases: [SkyFi]
+relatedTools:
+- sentinel-hub
+aliases:
+- SkyFi
 tags: []
 source: arf-seed
 lastVerified: ''

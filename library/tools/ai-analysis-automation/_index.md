@@ -8,39 +8,434 @@ kind: group-index
 
 ## Sub-groups
 - **`barcodes-qr/`** — 1 skill(s) below.
-- **`graph-visualization/`** — 1 skill(s) below.
-- **`javascript/`** — 6 skill(s) below.
-- **`osint-automation/`** — 18 skill(s) below.
-- **`pentesting-recon/`** — 1 skill(s) below.
+- **`javascript/`** — 4 skill(s) below.
+- **`osint-automation/`** — 11 skill(s) below.
 - **`php/`** — 1 skill(s) below.
-- **`virtual-machines/`** — 9 skill(s) below.
+- **`virtual-machines/`** — 7 skill(s) below.
 - **`wordlist/`** — 4 skill(s) below.
 - **`xor/`** — 8 skill(s) below.
 
 ## Skills here
+- **`a1-website-download`** (low) — OSINT tool: A1 Website Download.
+- **`abine`** (low) — OSINT tool: Abine.
+- **`adium`** (low) — OSINT tool: Adium.
+- **`advanced-search-operators-list`** (low) — List of the links to the docs for different services, which explain using of advanced search operators
+- **`aeon`** (low) — OSINT tool: Aeon.
+- **`aha-music`** (low) — A very simple tool that helps you determine what track is playing in the current browser tab. What I like best about it is that it works whe
 - **`ai-or-not`** (low) — Detecting AI-generated images and audio in disinformation investigations and media verification
+- **`amazing-mind-reader-reveals-his-gift`** (low) — OSINT tool: Amazing mind reader reveals his ‘gift’.
+- **`anonymous-youtube-playlists`** (low) — OSINT tool: Anonymous YouTube Playlists.
+- **`api-guesser`** (low) — Enter the API key or token to find out which service it can be used by.
+- **`apis-for-osint`** (low) — List of API's for gathering information about phone numbers, addresses, domains etc
+- **`app-store-scraper`** (low) — get the most detailed metadata about the app from AppStore
+- **`appsec-fyi-osint-resources`** (low) — OSINT tool: appsec.fyi OSINT Resources.
+- **`arbor-js`** (low) — OSINT tool: Arbor.js.
+- **`arkhammirror`** (low) — OSINT tool: ArkhamMirror.
+- **`ashok`** (low) — Swiff knife for #osint
+- **`atlos`** (low) — ATLOS is a platform for collaborative and large-scale open source investigations.
+- **`aware-online-com`** (low) — OSINT tool: Aware-online.com.
+- **`awesome-anti-forensic`** (low) — OSINT tool: awesome-anti-forensic.
+- **`awesome-ctf`** (low) — OSINT tool: awesome-ctf.
+- **`awesome-forensics`** (low) — OSINT tool: awesome-forensics.
+- **`awesome-grep`** (low) — List of GREP modifications and alternatives for a variety of purposes
+- **`awesome-hacking`** (low) — OSINT tool: awesome-hacking.
+- **`awesome-honeypots`** (low) — OSINT tool: awesome-honeypots.
+- **`awesome-incident-response`** (low) — OSINT tool: awesome-incident-response.
+- **`awesome-lists-awesomelists-top`** (low) — Curated 'awesome' lists for programming languages/frameworks on GitHub.
+- **`awesome-lockpicking`** (low) — OSINT tool: awesome-lockpicking.
+- **`awesome-malware-analysis`** (low) — OSINT tool: awesome-malware-analysis.
+- **`awesome-osint-mcp-servers`** (medium) — Curated list of OSINT MCP servers for AI-driven investigations.
+- **`awesome-pentest`** (low) — OSINT tool: awesome-pentest.
+- **`awesome-privacy`** (low) — OSINT tool: awesome-privacy.
+- **`awesome-sec-talks`** (low) — OSINT tool: awesome-sec-talks.
+- **`awesome-security`** (low) — OSINT tool: awesome-security.
+- **`awesome-threat-intelligence`** (low) — OSINT tool: awesome-threat-intelligence.
+- **`awk-js`** (low) — AWK (script language) is a powerful command line tool for extracting data from texts and auto generating texts. For those who don't use CLI 
+- **`barcode-reader`** (low) — OSINT tool: Barcode Reader.
+- **`bazzellpy`** (low) — Unofficial(!) #Python library for automation work with IntelTechniques Search Tools https://inteltechniques.com/tools/
+- **`beaker`** (low) — OSINT tool: Beaker.
+- **`befunky`** (low) — OSINT tool: Befunky.
+- **`bellingcat-online-researcher-survey-tool-wishes`** (low) — OSINT tool: Bellingcat Online Researcher Survey: Tool Wishes.
+- **`bellingcat-s-online-investigation-toolkit`** (low) — OSINT tool: Bellingcat's Online Investigation Toolkit.
+- **`bellingcat`** (low) — OSINT tool: Bellingcat.
+- **`bendobrown`** (low) — OSINT tool: Bendobrown.
+- **`bevigil-cli`** (low) — OSINT tool: BeVigil-CLI.
+- **`big-number-calculator`** (low) — OSINT tool: Big Number Calculator.
+- **`bitwarden`** (low) — OSINT tool: Bitwarden.
+- **`bizint`** (low) — OSINT tool: Bizint.
+- **`blender`** (low) — Blender is an open-source 3D creation suite supporting the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing, and
+- **`botster`** (low) — A huge collection of bots for gathering, monitoring, analysing and validating data from Instagram, Twitter, Google, Amazon, Linkedin, Shopif
+- **`boxcryptor`** (low) — OSINT tool: boxcryptor.
+- **`cacoo`** (low) — OSINT tool: Cacoo.
+- **`canary-tokens`** (low) — OSINT tool: Canary Tokens.
+- **`canva`** (low) — OSINT tool: Canva.
+- **`cc-license`** (low) — OSINT tool: cc license.
+- **`ccleaner`** (low) — OSINT tool: CCleaner.
+- **`chart-js`** (low) — OSINT tool: Chart.js.
+- **`chartblocks`** (low) — OSINT tool: chartblocks.
+- **`chatsecure`** (low) — OSINT tool: Chatsecure.
+- **`cheat-sh`** (low) — Timesaving tool that allows cheat sheets to be loaded directly into the command line (or Sublime Text/IntelliJ IDEA) using the curl command 
+- **`checkphish-ai`** (low) — OSINT tool: Checkphish.ai.
+- **`cipherstick`** (low) — OSINT tool: Cipherstick.
+- **`circos`** (low) — OSINT tool: Circos.
+- **`code-repository-google-cse`** (low) — Google CSE for search 15 code repository services
+- **`code-understanding-tools-list`** (low) — Tools for understanding other people's code
+- **`codepen`** (low) — OSINT tool: CodePen.
+- **`codesandbox`** (low) — Great online environment for creating, testing, and researching written JavaScript tools (and #OSINT has many: social-analyzer, opencti, ren
+- **`columbus-project`** (low) — OSINT tool: Columbus Project.
+- **`compiler-explorer`** (low) — OSINT tool: Compiler Explorer.
+- **`complete-email-scraper`** (low) — Paste the link to the site and the bot finds the sitemap. The bot then goes through all the links on the site looking for email addresses (s
+- **`convert-text-to-image-file`** (low) — OSINT tool: Convert text to image file.
 - **`copyleaks`** (low) — Detecting AI-written reports, verifying authenticity of documents, plagiarism analysis
+- **`creately`** (low) — OSINT tool: creately.
+- **`creative-commons-attribution-sharealike-4-0-international`** (low) — OSINT tool: Creative Commons Attribution-ShareAlike 4.0 International.
+- **`crossfilter`** (low) — OSINT tool: Crossfilter.
+- **`crowdsec`** (low) — OSINT tool: CrowdSec.
+- **`csvkit`** (low) — OSINT tool: csvkit.
+- **`curl-for-osint`** (medium) — Reference/cheat-sheet collection of cURL command recipes for OSINT data collection from web sources.
+- **`cyberbro`** (low) — OSINT tool: Cyberbro.
 - **`cyberchef`** (low) — Building and replaying multi-step decode and transform recipes
+- **`cybergordon`** (low) — OSINT tool: CyberGordon.
+- **`cyclect`** (low) — Ultimate OSINT Search Engine + list of 281+ tools for information gathering about": IP Adress, Social Media Account, Email, Phone, Domain, P
+- **`cyotek-webcopy`** (low) — OSINT tool: Cyotek WebCopy.
+- **`d3js`** (low) — OSINT tool: D3js.
+- **`data-structure-infix-postfix-prefix-converter-and-evaluator`** (low) — OSINT tool: Data Structure : Infix Postfix Prefix - Converter & Evaluator.
+- **`data-to-go`** (low) — OSINT tool: Data to Go.
+- **`data-visualization-catalogue`** (low) — OSINT tool: Data Visualization Catalogue.
+- **`datawrapper`** (low) — OSINT tool: Datawrapper.
+- **`de4js`** (low) — HTML/JS deobfuscator
+- **`decompiler-com`** (low) — OSINT tool: Decompiler.com.
 - **`decopy-ai-image-detector`** (low) — Detecting AI-generated profile photos, fake news images, and synthetic media
 - **`deepai-ai-image-detector`** (low) — AI-generated image detection, media verification in OSINT investigations
 - **`deepseek`** (low) — Document summarization, OSINT data analysis, translation, and pattern identification in collected data
+- **`defend-network`** (low) — OSINT tool: defend.network.
+- **`dehashed-cli`** (low) — OSINT tool: Dehashed CLI.
+- **`developer-search-tool`** (low) — Take the art of copy and paste from Stack Overflow to a new level of speed and productivity
+- **`dfir-platform`** (low) — OSINT tool: DFIR Platform.
+- **`diceware-generator`** (low) — OSINT tool: Diceware Generator.
+- **`digital-privacy-ffffffff0x`** (low) — Collection of privacy and security / OSINT resources.
+- **`disa-code-template-generator`** (low) — OSINT tool: DISA Code Template Generator.
+- **`disasm-pro`** (low) — OSINT tool: Disasm.pro.
+- **`disconnect`** (low) — OSINT tool: Disconnect.
+- **`discoshell`** (low) — OSINT tool: Discoshell.
+- **`discover`** (low) — Custom bash scripts used to automate various penetration testing tasks including recon, scanning, parsing and listeners with metasploit (16 
+- **`dnsx`** (low) — OSINT tool: dnsx.
+- **`do-not-track`** (low) — OSINT tool: Do Not Track.
 - **`docmind-ai`** (low) — Private document analysis, querying sensitive documents without cloud exposure
+- **`dorks-collections-list`** (low) — List of Github repositories and articles with list of dorks for different search engines
+- **`dropbase`** (low) — OSINT tool: Dropbase.
+- **`dropmark`** (low) — OSINT tool: Dropmark.
 - **`duckduckgo-ai-chat`** (low) — Privacy-preserving AI assistance for OSINT tasks, anonymous LLM queries
+- **`duckduckgo-url-scraper`** (low) — OSINT tool: DuckDuckGo URL scraper.
+- **`dygraphs`** (low) — OSINT tool: dygraphs.
+- **`e4gl30s1nt`** (low) — ShellScript toolkit for #osint (12 tools)
+- **`easely`** (low) — OSINT tool: easely.
+- **`einvestigator`** (low) — OSINT tool: eInvestigator.
+- **`encsf-mp`** (low) — OSINT tool: EncSF MP.
+- **`epic-privacy-browser`** (low) — OSINT tool: Epic Privacy Browser.
+- **`eraser`** (low) — OSINT tool: Eraser.
+- **`euvsdisinfo`** (low) — OSINT tool: EUvsDisinfo.
+- **`exhibit`** (low) — OSINT tool: Exhibit.
+- **`explainshell-com`** (low) — OSINT tool: explainshell.com.
+- **`extendclass`** (low) — One of my favorite sites for #automating various routine tasks. Among the many analogues, it stands out for its quality of work and variety 
+- **`fake-news-inforrm-s-blog`** (low) — OSINT tool: Fake News – Inforrm's Blog.
+- **`faviconhash`** (low) — OSINT tool: FaviconHash.
+- **`filevault`** (low) — OSINT tool: FileVault.
+- **`find-osint-tool`** (low) — OSINT tool: Find osint tool.
+- **`flot`** (low) — OSINT tool: Flot.
+- **`fotor`** (low) — OSINT tool: Fotor.
+- **`foxyrecon`** (low) — 44 osint tools in one add-on for #Firefox
+- **`frack`** (low) — OSINT tool: Frack.
 - **`functions-online`** (low) — Quick PHP-specific encoding and decoding checks in browser
+- **`fusioncharts`** (low) — OSINT tool: FusionCharts.
+- **`geekflare-tools`** (low) — 39 online free tools for website testing
+- **`gephi`** (low) — OSINT tool: Gephi.
+- **`ghostery`** (low) — OSINT tool: Ghostery.
+- **`ghoulbond`** (low) — Just another all-in-one command line toolkit for gathering information about system (technical characteristics, internet speed, IP/Mac addre
+- **`gitguardian-public-github-monitoring`** (low) — OSINT tool: GitGuardian - Public GitHub Monitoring.
+- **`github-artifact-exporter`** (low) — provides a set of packages to make exporting Issues easier useful for those migrating information out of Github
+- **`github-search`** (low) — collection of Github investigation command line tools. Explore users, employes, endpoints,surveys and grab the repos
+- **`gitpod-io`** (low) — run code from repositories on Github directly in a browser
+- **`glit`** (low) — OSINT tool: Glit.
+- **`gmapcatcher`** (low) — OSINT tool: gmapcatcher.
+- **`gnu-pg`** (low) — OSINT tool: GNU PG.
+- **`gomapenum`** (low) — Gather emails on Linkedin (via Linkedin and via Google) + User enumeration and password bruteforce on Azure, ADFS, OWA, O365 (this part seem
+- **`google-colaboratory`** (low) — OSINT tool: Google Colaboratory.
+- **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
+- **`google-play-scraper`** (low) — get the most detailed
+- **`gpg-tools`** (low) — OSINT tool: GPG Tools.
 - **`gptzero`** (low) — Detecting AI-written intelligence reports, academic fraud, and synthetic narrative content
 - **`grammarly-ai-detector`** (low) — Detecting AI-written content in social media profiles, reports, and messages
+- **`graphviz-online`** (low) — OSINT tool: Graphviz Online.
+- **`graphx`** (low) — OSINT tool: GraphX.
+- **`greynoise`** (low) — OSINT tool: Greynoise.
+- **`guardian-project`** (low) — OSINT tool: Guardian Project.
+- **`guerrilla-mail`** (low) — OSINT tool: Guerrilla Mail.
+- **`gumshoe`** (medium) — Recursive investigation tool based on the OSINT Framework (work in progress).
+- **`gvng-search`** (low) — Command line toolkit for gathering information about person (nickname search, validate email, geolocate ip) and domain (traceroute, dns look
+- **`h-i-v-e`** (medium) — Automated OSINT multi-tool for efficient data gathering.
+- **`hackers-toolkit`** (low) — An extension for quick access to dozens of tools for decoding/encoding strings as well as generating queries for popular types of web attack
+- **`harpoon`** (low) — CLI tool for open-source and threat intelligence with many plugin commands.
+- **`helix`** (medium) — Advanced asynchronous OSINT identity mapper and relation tool.
+- **`highcharts`** (low) — OSINT tool: Highcharts.
 - **`hive-ai-generated-content-detection`** (low) — High-volume AI content detection, bulk media verification in large investigation datasets
+- **`hohli`** (low) — OSINT tool: Hohli.
+- **`hooey-webprint`** (low) — OSINT tool: Hooey webprint.
+- **`hotspot-shield`** (low) — OSINT tool: Hotspot Shield.
+- **`how-to-verify`** (low) — Visual fact checking mind maps for verification video, audio, source, text. Detailed workflows descriptions with tools, tips and tricks.
+- **`html-editor`** (low) — OSINT tool: HTML editor.
+- **`html-sanitizer-tool`** (low) — OSINT tool: HTML Sanitizer Tool.
+- **`http-cat`** (low) — free #API to get pictures with cats for different HTTP response codes
+- **`httpie-io`** (low) — command-line HTTP client
+- **`https-everywhere`** (low) — OSINT tool: HTTPs Everywhere.
+- **`httrack`** (low) — OSINT tool: HTTrack.
 - **`hugging-face-ai-detector`** (low) — Quick AI text classification using open-source models
+- **`hunchly`** (low) — OSINT tool: Hunchly.
+- **`hunt-osint-framework`** (low) — Dozens of online tools for different stages of #osint investigations
+- **`i2p`** (low) — OSINT tool: I2P.
+- **`ifttt-instagram-integrations`** (low) — Instagram workflows and automations via IFTTT.
 - **`illuminarty`** (low) — AI image detection with model attribution, deepfake and synthetic media investigation
+- **`infogr-am`** (low) — OSINT tool: Infogr.am.
+- **`infooze`** (low) — User Recon, Mail Finder, Whois/IP/DNS/headers lookup, InstaRecon, Git Recon, Exif Metadata
+- **`infosec-reference`** (low) — OSINT tool: infosec reference.
+- **`inkscape`** (low) — OSINT tool: Inkscape.
+- **`intelhub`** (low) — OSINT tool: IntelHub.
+- **`intellyweave`** (low) — OSINT tool: IntellyWeave.
+- **`ivre`** (low) — framework for network recon
+- **`java-infovis-toolkit`** (low) — OSINT tool: Java Infovis Toolkit.
+- **`jpgraph`** (low) — OSINT tool: JpGraph.
+- **`jqplot`** (low) — OSINT tool: jqPlot.
+- **`justdeleteme`** (low) — OSINT tool: justdeleteme.
+- **`keepass-password-safe`** (low) — OSINT tool: KeePass Password Safe.
+- **`keyfinder`** (low) — OSINT tool: keyFinder.
+- **`krebs-on-security`** (low) — OSINT tool: Krebs on Security.
+- **`lastfm-monitor`** (low) — OSINT tool: lastfm_monitor.
+- **`lastpass`** (low) — OSINT tool: Lastpass.
+- **`leakcop`** (low) — service that monitors in real-time the illegal use of source code from certain repositories on Github
+- **`linkscope-client`** (low) — OSINT tool: LinkScope Client.
+- **`linkscope`** (low) — OSINT tool: LinkScope.
+- **`linkuroius`** (low) — OSINT tool: Linkuroius.
+- **`listify`** (low) — OSINT tool: Listify.
+- **`live-demo`** (low) — OSINT tool: Live demo.
+- **`localfocus`** (low) — OSINT tool: LocalFocus.
+- **`lockbin`** (low) — OSINT tool: Lockbin.
+- **`logseq`** (low) — Logseq is an open-source knowledge management tool that enables users to organize their notes, tasks, and projects.
+- **`lol-monitor`** (low) — OSINT tool: lol_monitor.
+- **`lucidchart`** (low) — OSINT tool: Lucidchart.
+- **`magnifier`** (low) — #osint #python toolkit. 15 scripts in one: - subdomain finder; - website emails collector; - zone transfer; - reverse IP lookup; and much mo
+- **`mailbox`** (low) — OSINT tool: Mailbox.
+- **`mailvelope`** (low) — OSINT tool: Mailvelope.
+- **`maltego-transforms-list`** (low) — list of tools that handle different data and make it usable in Maltego
+- **`maltego-transforms-m0m0sms-osint`** (medium) — Compilation of Maltego assets, local transforms, and helper scripts.
+- **`maltego`** (high) — Use when you have any entity (`name`, `email`, `username`, `phone`, `domain`, `ip-address`) and want to build and expand a link-analysis gra
+- **`master-password`** (low) — OSINT tool: Master Password.
+- **`merklemap`** (low) — OSINT tool: Merklemap.
 - **`microsoft-copilot`** (low) — OSINT data summarization, research assistance, document drafting with web search context
+- **`mihari`** (low) — OSINT tool: Mihari.
+- **`mitaka`** (low) — OSINT tool: mitaka.
+- **`mozilla-http-observatory`** (low) — OSINT tool: Mozilla HTTP Observatory.
+- **`mp3-spectrum-analyzer`** (low) — OSINT tool: MP3 Spectrum Analyzer.
+- **`nazar`** (low) — universal Osint Toolkit
+- **`ncptf-national-child-protection-task-force`** (high) — Use when you need vetted volunteer/LEO collaboration on a missing or exploited-person case — connects an `associate` network of investigator
+- **`nginxconfig`** (low) — Online tool to configure stable and secure #nginx server. Select the options and then download the config files.
+- **`nixintel`** (low) — OSINT tool: NixIntel.
+- **`nixory`** (low) — OSINT tool: Nixory.
+- **`nodebox`** (low) — OSINT tool: Nodebox.
+- **`observable`** (low) — OSINT tool: Observable.
+- **`obsidian`** (low) — OSINT tool: Obsidian.
+- **`oda-the-online-disassembler`** (low) — OSINT tool: ODA - The Online Disassembler.
+- **`offliberty`** (low) — OSINT tool: Offliberty.
+- **`offshore-cat`** (low) — OSINT tool: OffShore.cat.
+- **`oftoolbox`** (low) — List of tools to create, share and monetize adult content (OnlyFans-focused).
 - **`ollama`** (low) — Private AI analysis of sensitive OSINT data, local document processing without cloud exposure
-- **`online-nikto-scanner-4`** (low) — Web server vulnerability scanning, security assessment, SSL/TLS validation
+- **`onion-lookup`** (low) — OSINT tool: onion-lookup.
+- **`online-color-picker`** (low) — OSINT tool: Online Color Picker.
+- **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
+- **`online-tools`** (low) — OSINT tool: Online Tools.
+- **`open-dns`** (low) — OSINT tool: Open DNS.
+- **`open-pgp`** (low) — OSINT tool: Open PGP.
+- **`opengraph-intel-ogi`** (low) — OSINT tool: OpenGraph Intel (OGI).
+- **`openrefine`** (low) — OSINT tool: OpenRefine.
+- **`ora`** (low) — OSINT tool: ORA.
+- **`oryon-osint-query-tool`** (low) — Construct investigations links in Google Sheet
+- **`oscobo-search-engine`** (low) — OSINT tool: Oscobo Search Engine.
+- **`osint-ambition-publication`** (low) — OSINT tool: OSINT Ambition Publication.
 - **`osint-analyser`** (low) — Automated OSINT aggregation with AI-powered analysis and reporting
+- **`osint-belarus`** (low) — OSINT tool: OSINT Belarus.
+- **`osint-cli-tool-skeleton`** (low) — OSINT tool: osint-cli-tool-skeleton.
+- **`osint-combine-blog`** (low) — OSINT tool: OSINT Combine Blog.
+- **`osint-dojo`** (low) — OSINT tool: OSINT Dojo.
+- **`osint-explorer`** (low) — OSINT framework for intelligence gathering.
+- **`osint-framework-osint-dev-team`** (low) — All-in-one OSINT-RECON Swiss Knife.
+- **`osint-framework`** (low) — OSINT tool: OSINT Framework.
+- **`osint-harvester`** (low) — Lightweight OSINT toolkit that collects and normalizes intelligence from multiple sources.
+- **`osint-search-tools`** (low) — Several hundred links for quick search in Social Media, Communties, Maps, Documents Search Engines, Maps, Pastes...
+- **`osint-sh`** (low) — OSINT tool: OSINT.SH.
+- **`osint-team`** (low) — OSINT tool: OSINT Team.
+- **`osint-techniques`** (low) — OSINT tool: OSINT Techniques.
+- **`osint-tool`** (low) — OSINT tool: OSINT-Tool.
+- **`osint-tools-mcp-server`** (high) — Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/Spide
+- **`osint-updates-a-free-weekly-newsletter-for-osinters`** (low) — OSINT tool: OSINT Updates - a free weekly newsletter for OSINTers.
+- **`osintcombine-tools`** (low) — OSINT tool: Osintcombine Tools.
+- **`osintcurious`** (low) — OSINT tool: OSINTCurious.
+- **`osintstalker`** (low) — OSINT tool: OsintStalker.
+- **`osinttools-linayorda`** (high) — Use when you're running a missing-persons investigation (Trace Labs style) and want a curated toolset/workflow — returns pointers to social-
+- **`osinttracker`** (low) — A simple and free online tool to visualize investigations and collect data about different entry points (domains, email addresses, crypto wa
+- **`ossec`** (low) — OSINT tool: OSSEC.
+- **`outwit`** (low) — OSINT tool: Outwit.
 - **`overview`** (low) — Large-scale document analysis, investigative research, institutional document management
+- **`palladio`** (low) — OSINT tool: Palladio.
+- **`passiverecon`** (low) — OSINT tool: PassiveRecon.
 - **`paterva-maltego`** (low) — Complex OSINT investigations, threat intelligence analysis, relationship mapping
-- **`truemedia`** (low) — Deepfake detection in political and news media contexts
+- **`peerblock`** (low) — OSINT tool: Peerblock.
+- **`personal-security-checklist`** (low) — OSINT tool: personal-security-checklist.
+- **`perspective`** (low) — OSINT tool: Perspective.
+- **`pgpkeyanalyser`** (low) — OSINT tool: PGPKeyAnalyser.
+- **`phantom-buster`** (medium) — Automation suite with data extraction across LinkedIn, Reddit and other platforms.
+- **`phantom-tide`** (low) — OSINT tool: Phantom Tide.
+- **`phantomtrace`** (medium) — Python OSINT tool aggregating public data from 35+ platforms.
+- **`pharos-ai`** (low) — OSINT tool: Pharos AI.
+- **`phishingseclists`** (low) — OSINT tool: PhishingSecLists.
+- **`phone-number-search-constructor`** (low) — OSINT tool: Phone Number Search Constructor.
+- **`pidgin`** (low) — OSINT tool: Pidgin.
+- **`piktochart`** (low) — OSINT tool: Piktochart.
+- **`pinpoint`** (low) — A tool by Google to catalogue uploaded documents and files, providing OCR, indexing, and other services. Full access only granted to journal
+- **`pixel-block`** (low) — OSINT tool: Pixel Block.
+- **`pixxa`** (low) — OSINT tool: Pixxa.
+- **`pldb`** (low) — A huge knowledge base of 4050 programming languages. For each language you can see its place in the ranking, the number of users and reposit
+- **`plotly`** (low) — OSINT tool: Plotly.
+- **`preceden`** (low) — OSINT tool: Preceden.
+- **`prism`** (low) — OSINT tool: PRISM.
+- **`privacy-badger`** (low) — OSINT tool: Privacy Badger.
+- **`privacy-com`** (low) — OSINT tool: Privacy.com.
+- **`privazer`** (low) — OSINT tool: Privazer.
+- **`probe-spider`** (low) — Python OSINT tool for reconnaissance.
+- **`profounder`** (low) — searching users by nickname and scrapping url's from website
+- **`proton-mail`** (low) — OSINT tool: Proton Mail.
+- **`psn-monitor`** (low) — OSINT tool: psn_monitor.
+- **`pyba`** (low) — OSINT tool: Pyba.
+- **`pygreynoise`** (low) — OSINT tool: pygreynoise.
+- **`python-code-checker`** (low) — quick find errors in code
+- **`python-osint-automation-examples`** (low) — In this repository, I will collect quick and simple code examples that use Python to automate various #osint tasks.
+- **`pywhat`** (low) — OSINT tool: pywhat.
+- **`qlikview`** (low) — OSINT tool: QlikView.
+- **`quadrigram`** (low) — OSINT tool: Quadrigram.
+- **`qubes`** (low) — OSINT tool: Qubes.
+- **`quick-hashtags-and-keywords-search`** (low) — OSINT tool: Quick hashtags and keywords search.
+- **`quickcode`** (low) — OSINT tool: QuickCode.
+- **`raphael`** (low) — OSINT tool: Raphael.
+- **`raw`** (low) — OSINT tool: RAW.
+- **`rawgraphs`** (low) — RAWGraphs is an open-source data visualization tool designed for non-technical users, enabling the creation of customizable, editable charts
+- **`recon-ng-paralax-fork`** (medium) — Reconnaissance-focused OSINT framework (personal fork).
+- **`reconftw`** (low) — OSINT tool: ReconFTW.
+- **`regular-expression-analyzer`** (low) — super tool for those who forget to leave comments on their code or have to deal with someone else's code.
+- **`relational-algebra-calculator`** (low) — OSINT tool: relational algebra calculator.
+- **`rescure-threat-intel-feed`** (low) — OSINT tool: REScure Threat Intel Feed.
+- **`researchbuzz`** (low) — Google Sinker Search queries constructor (view pic), Google News Search queries constructor, Quick twitter account historical navigation in 
+- **`resolver`** (low) — OSINT tool: Resolver.
+- **`rsa-encryption-decryption-and-prime-calculator`** (low) — OSINT tool: RSA encryption, decryption and prime calculator.
+- **`s-i-g-i-t`** (low) — Simple information gathering toolkit
+- **`sans-internet-storm-center-diary-full-text`** (low) — OSINT tool: SANS Internet Storm Center Diary (Full Text).
+- **`sans-osint-summit-2021-playlist`** (low) — OSINT tool: SANS OSINT Summit 2021 (Playlist).
+- **`sarenka`** (low) — OSINT tool: Sarenka.
+- **`sayhello`** (low) — #AI Search engine for developers. Type a question (e.g. how to do something) in normal human language and get code examples in response.
+- **`script-safe`** (low) — OSINT tool: Script Safe.
+- **`search-investigative-and-forensic-toolbar`** (low) — extension with quick access to dozens of online tools for osint, forensics and othef investigations goals.
+- **`seclists`** (low) — OSINT tool: SecLists.
+- **`sector035`** (low) — OSINT tool: Sector035.
+- **`securesha`** (low) — OSINT tool: Securesha.
+- **`security-list`** (low) — OSINT tool: security-list.
+- **`see-how-easily-freaks-can-take-over-your-life`** (low) — OSINT tool: See how easily freaks can take over your life.
+- **`semid-osint-framework`** (low) — Search user info in Tiktok, Playstation, Discord, Doxbin,Twitter, Github
+- **`sentinel-visualizer`** (low) — OSINT tool: Sentinel Visualizer.
+- **`serpapi`** (low) — OSINT tool: SerpApi.
+- **`serpscan`** (low) — OSINT tool: SerpScan.
+- **`shanti-interactive`** (low) — OSINT tool: Shanti Interactive.
+- **`shellcheck-net`** (low) — analyzes command-line scripts and explains in detail the errors found in them
+- **`shrewdeye`** (low) — Online versions of popular command line #osint tools: Amass, SubFinder, AssetFinder, GAU, DNSX
+- **`silent-circle`** (low) — OSINT tool: Silent circle.
+- **`sintelix`** (low) — OSINT tool: Sintelix.
+- **`sitesucker`** (low) — OSINT tool: SiteSucker.
+- **`skopenow`** (low) — OSINT tool: Skopenow.
+- **`sleuth-for-the-truth`** (low) — OSINT tool: Sleuth For The Truth.
+- **`sn0int`** (low) — OSINT tool: sn0int.
+- **`snappa`** (low) — OSINT tool: Snappa.
+- **`snort`** (low) — OSINT tool: Snort.
+- **`social-links`** (low) — OSINT tool: Social Links.
+- **`soundeffectssearch-com`** (low) — find a sound library
+- **`spf-explainer`** (low) — Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.
+- **`spideroak`** (low) — OSINT tool: Spideroak.
+- **`spidersuite`** (low) — OSINT tool: SpiderSuite.
+- **`spotify-monitor`** (low) — OSINT tool: spotify_monitor.
+- **`spotify-profile-monitor`** (low) — OSINT tool: spotify_profile_monitor.
+- **`steam-monitor`** (low) — OSINT tool: steam_monitor.
+- **`steganography-online-codec`** (low) — OSINT tool: Steganography Online Codec.
+- **`steganography-online`** (low) — OSINT tool: Steganography Online.
+- **`stix-viewer`** (low) — OSINT tool: STIX Viewer.
+- **`storymap`** (low) — OSINT tool: StoryMap.
+- **`sub3-suite`** (low) — OSINT tool: Sub3 Suite.
+- **`surveilliance-self-defense`** (low) — OSINT tool: Surveilliance Self Defense.
+- **`tableau-public`** (low) — OSINT tool: Tableau Public.
+- **`tagul`** (low) — OSINT tool: Tagul.
+- **`taranis-ai`** (low) — OSINT tool: Taranis AI.
+- **`telegram-howtofindbot`** (low) — OSINT tool: Telegram HowToFindBot.
+- **`tenssens`** (low) — osint framework
+- **`text-and-file-hash-calculator`** (low) — OSINT tool: Text and File Hash Calculator.
+- **`textures-js`** (low) — OSINT tool: Textures.js.
+- **`thanks`** (low) — A simple script that analyzes the #opensource products used in your project and displays a list of links to pages for financial support for 
+- **`the-citizen-lab`** (low) — OSINT tool: The Citizen Lab.
+- **`the-fuck`** (low) — Simple app which corrects your previous console commands.
+- **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
+- **`the-scraper`** (low) — Simple tool for scrapping emails and social media accounts from the website's source code.
+- **`these-are-the-tools-open-source-researchers-say-they-need`** (low) — OSINT tool: These Are the Tools Open Source Researchers Say They Need.
+- **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.
+- **`thunderbird`** (low) — OSINT tool: Thunderbird.
+- **`tik-tok`** (low) — OSINT tool: Tik-tok.
+- **`tiki-toki`** (low) — OSINT tool: Tiki-toki.
+- **`time-graphics`** (low) — A tool for creating, visualizing, and managing timelines online.
+- **`timeflow`** (low) — OSINT tool: Timeflow.
+- **`timeline`** (low) — OSINT tool: Timeline.
+- **`timetoast`** (low) — OSINT tool: Timetoast.
+- **`tio-run`** (low) — Run and test code written in one of 680 programming languages (260 practical and 420 recreational) directly in your browser
+- **`tldr`** (low) — A tool that is a great time-saver when working with the command line. Enter "tldr command name" and get a brief description with examples of
+- **`tools-digitalmethods-net`** (low) — OSINT tool: Tools.digitalmethods.net.
+- **`tor-project`** (low) — OSINT tool: Tor Project.
+- **`torrent-to-magnet`** (low) — OSINT tool: Torrent to Magnet.
+- **`torrentfreak-list-of-vpns`** (low) — OSINT tool: TorrentFreak List of VPNs.
+- **`trace-labs-blog`** (low) — OSINT tool: Trace Labs Blog.
+- **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T
+- **`ublock-origin`** (low) — OSINT tool: uBlock Origin.
+- **`uforio`** (low) — Generate word clouds from Reddit threads.
+- **`url-decoder-encoder`** (low) — OSINT tool: URL Decoder/Encoder.
+- **`vedbex-com`** (low) — OSINT tool: Vedbex.com.
+- **`vega-editor`** (low) — OSINT tool: Vega Editor.
+- **`venngage`** (low) — OSINT tool: Venngage.
+- **`vis-js`** (low) — OSINT tool: Vis.js.
+- **`visme`** (low) — OSINT tool: Visme.
+- **`visual-investigative-scenarios`** (low) — OSINT tool: Visual Investigative Scenarios.
+- **`visualize-free`** (low) — OSINT tool: Visualize Free.
+- **`visualize-me`** (low) — OSINT tool: Visualize.me.
+- **`visually`** (low) — OSINT tool: visually.
+- **`vocal-remover`** (low) — An AI-based service that removes vocals from a song, leaving only the music. It works amazingly well.
+- **`voice-stress-test`** (low) — tool analyzes the voice and determines a person's stress level.
+- **`voidaccess`** (low) — OSINT tool: VoidAccess.
+- **`voidly-censorship-index`** (low) — OSINT tool: Voidly Censorship Index.
+- **`vortex`** (low) — OSINT tool: Vortex.
+- **`wannabe1337-toolkit`** (low) — This site has dozens of free online tools (many of which will be useful for #osint): - website and network info gathering tools; - code, tex
 - **`wasitai`** (low) — Quick AI content checks for text and images during media verification
+- **`waybackurls`** (low) — OSINT tool: Waybackurls.
+- **`webassistant`** (low) — OSINT tool: WebAssistant.
+- **`website-ripper-copier`** (low) — OSINT tool: Website Ripper Copier.
+- **`wickr`** (low) — OSINT tool: Wickr.
 - **`world-monitor`** (low) — Geopolitical OSINT, global event monitoring, early warning intelligence gathering
+- **`wot`** (low) — OSINT tool: WOT.
+- **`wynyard-group`** (low) — OSINT tool: Wynyard Group.
+- **`x86-and-x64-intel-assembler`** (low) — OSINT tool: x86 and x64 Intel Assembler.
+- **`xbox-monitor`** (low) — OSINT tool: xbox_monitor.
 - **`you-com`** (low) — AI-assisted web research, summarizing search results, multi-source research aggregation
+- **`youcode`** (low) — Add free, privacy source code search engine with popular tech sites snippets in search results: Mozilla Developer Network; Github; W3 School
+- **`zen`** (low) — OSINT tool: Zen.
+- **`zingchart`** (low) — OSINT tool: ZingChart.
+- **`zmail`** (low) — OSINT tool: ZMail.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

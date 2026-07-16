@@ -7,41 +7,152 @@ kind: group-index
 # maps-geospatial-data
 
 ## Skills here
+- **`about-maps-and-satellites`** (low) — A guide to using map and satellite tools.
+- **`acled-armed-conflict-location-and-event-data-project`** (low) — ACLED provides data and analysis on political violence and protest around the world, facilitating research, policy making, and journalistic 
 - **`active-agency-map`** (medium) — OSINT tool: Active Agency Map.
+- **`alltrails`** (low) — AllTrails.com is a tool for discovering hiking, biking, and running trails worldwide, providing detailed trail maps, user reviews, and navig
+- **`amazonia-socio-ambiental-raisg`** (low) — Amazon rainforest maps and shapefiles of natural protected areas, concessions, indigenous territories, oil, mining, roads, fires, deforestat
+- **`apple-com`** (medium) — OSINT tool: apple.com.
+- **`apple-maps`** (low) — Apple Maps is a digital mapping service with detailed, interactive maps, satellite imagery, and location-based information.
+- **`aqueduct-water-risk-atlas`** (low) — The Aqueduct water Risk Atlas, developed by the World Resources Institute (WRI), is an interactive platform for assessing water-related risk
+- **`arcgis-online`** (medium) — OSINT tool: ArcGIS Online.
 - **`arcgis-wildfire-map`** (medium) — OSINT tool: ArcGIS Wildfire Map.
+- **`archieinitiative-com`** (medium) — OSINT tool: archieinitiative.com.
+- **`atlas-co`** (medium) — OSINT tool: atlas.co.
 - **`awesome-maps-ukraine`** (medium) — OSINT tool: awesome-maps-ukraine.
+- **`baidu-com`** (medium) — OSINT tool: baidu.com.
+- **`birdnet`** (low) — Identify bird sounds - find bird sounds on a global map.
+- **`bulletpicker-com`** (low) — Bulletpicker.com is a collection of ammunition guidebooks and manuals from several different armed forces.
+- **`cat-uxo`** (low) — A repository for professionals working in the explosive ordnance disposal (EOD) space.
 - **`cesium-stories`** (medium) — OSINT tool: Cesium Stories.
+- **`cites-trade-database`** (low) — Around 23 million records of trade in wildlife since 1975.
+- **`convert-geographic-units`** (low) — A tool that converts various geographic coordinates to support diverse mapping and spatial analysis needs.
+- **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (low) — A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with
 - **`covid-19-map`** (medium) — OSINT tool: COVID-19 Map.
+- **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
+- **`demo-geoguess-games`** (medium) — OSINT tool: demo.geoguess.games.
+- **`digitaldigging-org`** (medium) — OSINT tool: digitaldigging.org.
 - **`digitalglobe`** (medium) — OSINT tool: DigitalGlobe.
+- **`disputed-territories`** (medium) — OSINT tool: Disputed Territories.
+- **`douwe-com`** (medium) — OSINT tool: douwe.com.
 - **`earth`** (medium) — OSINT tool: Earth.
 - **`earthquake-watch`** (medium) — OSINT tool: Earthquake Watch.
+- **`eia-global-environmental-crime-tracker`** (low) — Map/tracker of environmental crimes including trade in ivory, rhino, big cats, and other exotic animals.
+- **`emily-bz`** (medium) — OSINT tool: emily.bz.
+- **`environmental-justice-atlas`** (low) — Map of environmental-related conflict globally
+- **`f4map`** (low) — F4Map is an interactive 3D map visualization tool that provides detailed rendering of urban landscapes and geographical features.
 - **`fgdc-gp-demos-s-public-fiddles`** (medium) — OSINT tool: fgdc\_gp\_demos's public fiddles.
+- **`findlatitudeandlongitude-com`** (medium) — OSINT tool: findlatitudeandlongitude.com.
 - **`firms`** (medium) — OSINT tool: FIRMS.
+- **`free-map-tools`** (medium) — OSINT tool: Free Map Tools.
+- **`freemaptools-com`** (medium) — OSINT tool: freemaptools.com.
+- **`gaode-maps`** (low) — Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.
 - **`generate-a-panorama`** (medium) — OSINT tool: Generate a panorama.
+- **`geocam-ru`** (medium) — Webcams from around the world, broadcasting in real time
+- **`geolocatethis`** (medium) — OSINT tool: GeoLocateThis.
+- **`geomastr-com`** (medium) — OSINT tool: geomastr.com.
 - **`geonarra-com`** (medium) — OSINT tool: Geonarra.com.
+- **`georgia-licensed-healthcare-provider-search`** (medium) — Georgia Composite Medical Boards licensed health care provider lookup
+- **`getlostgame-app`** (medium) — OSINT tool: getlostgame.app.
+- **`gisgraphy-gps-convert`** (medium) — Geocoding/reverse-geocoding service to convert addresses to coordinates.
+- **`gjirafa`** (low) — Mapping service for Albania (specially Kosovo)
+- **`global-forest-watch`** (low) — Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics a
+- **`global-monitoring-system-ecosolve`** (low) — Illicit online wildlife markets data from Brazil, South Africa and Thailand.
+- **`go-kml-maps`** (medium) — OSINT tool: Go KML Maps.
+- **`google-co-uk`** (medium) — OSINT tool: google.co.uk.
+- **`google-com-65`** (medium) — OSINT tool: google.com.
+- **`google-earth-engine`** (low) — Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.
+- **`google-flood-hub`** (low) — A visual tool to monitor river levels and forecast floods based on AI models developed by Google Research.
 - **`google-map-search-engine`** (medium) — OSINT tool: Google Map Search Engine.
+- **`gosur-map`** (medium) — OSINT tool: Gosur Map.
+- **`govmap`** (low) — GovMap provides an interactive map of Israel, offering users a wide range of data including property boundaries, planning information, and i
+- **`gps-latitude-longitude-com`** (medium) — OSINT tool: gps-latitude-longitude.com.
 - **`gpx-file-editor`** (medium) — OSINT tool: Gpx File Editor.
+- **`gridreferencefinder-com`** (medium) — OSINT tool: gridreferencefinder.com.
+- **`heavy-ai-tweetmap`** (medium) — Instantly visualize hundreds of millions of tweets in real time
+- **`here-wego`** (low) — Mapping service that can serve as an alternative to Google Maps or Apple Maps.
+- **`hitta-se`** (low) — Mapping service for Sweden
+- **`howtogeek-com`** (medium) — OSINT tool: howtogeek.com.
 - **`inciweb`** (medium) — OSINT tool: InciWeb.
-- **`item-4`** (medium) — OSINT tool: Допомога.
+- **`index-database`** (low) — A database of remote sensing indices and satellite imaging sensors
+- **`kakao-map`** (low) — A mapping application provided by South Korean technology company Kakao Corp.
+- **`kayak-airlines-search-engine`** (medium) — Aviation-related website that provides a listing of worldwide commercial airlines and route maps found by destination and arrival points
+- **`landmark-toolpie-com`** (medium) — OSINT tool: landmark.toolpie.com.
 - **`live-action-map-com`** (medium) — OSINT tool: Live-action-map.com.
 - **`live-map-of-london-underground-trains`** (medium) — OSINT tool: Live map of London Underground trains.
+- **`live-universal-awareness-map`** (high) — Use when you have a `geolocation` and rough time and want to know what reported events (conflict, unrest, incidents) were mapped there — ret
 - **`livecorona-co-kr`** (medium) — OSINT tool: Livecorona.co.kr.
+- **`locust-hub`** (low) — A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interv
+- **`lonny-com`** (medium) — OSINT tool: lonny.com.
+- **`manhole-co-il`** (medium) — OSINT tool: manhole.co.il.
 - **`map-of-syrian-civil-war`** (medium) — OSINT tool: Map of Syrian Civil War.
-- **`mapillary-2`** (high) — Crowdsourced street-level imagery, useful where Google Street View has no coverage.
+- **`mapa-sk`** (low) — Mapping service for Slovakia
+- **`mapillary-2`** (high) — Use when you have a `geolocation`/`address` and want crowdsourced street-level imagery — especially where Google Street View has no coverage
+- **`maploco-com`** (medium) — OSINT tool: maploco.com.
+- **`mapme-com`** (medium) — OSINT tool: mapme.com.
+- **`mapmyfitness`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
+- **`mappy`** (low) — Mapping service (and streetview in a couple of French cities \[double check this!])
 - **`maps-descarteslabs-com`** (medium) — OSINT tool: Maps.descarteslabs.com.
+- **`mapswitcher`** (low) — Chrome extension switches between online map apps, maintaining (as far as possible) the map centre, zoom level, & directions of the source m
+- **`mapy-cz`** (low) — Mapping service for Czechia
+- **`merlin`** (low) — Identify birds (visually), through an app.
 - **`military-bases-around-the-world-umap`** (medium) — OSINT tool: Military bases around the world. - uMap.
 - **`modis-wildfire`** (medium) — OSINT tool: MODIS Wildfire.
+- **`movebank`** (low) — Platform for animal tracking data.
+- **`nasa-firms`** (low) — Displays a world map overlaid with infra-red data from one or more satellites, some, but not all of which may represent heat from fires and 
+- **`nasa-worldview`** (low) — NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere,
+- **`neshan-org`** (medium) — OSINT tool: neshan.org.
+- **`nls-uk`** (medium) — OSINT tool: nls.uk.
 - **`oalley`** (medium) — OSINT tool: OALLEY.
+- **`one-network`** (medium) — OSINT tool: one.network.
 - **`ontario-givesendgo-donors`** (medium) — OSINT tool: Ontario GiveSendGo Donors.
+- **`open-source-munitions-portal`** (low) — A searchable library of verified images for researchers, journalists, and practitioners trying to learn more about munitions and their use a
+- **`openaerialmap`** (low) — Platform for accessing open-licensed satellite and unmanned aerial vehicle (UAV) imagery
+- **`openguessr-com`** (medium) — OSINT tool: openguessr.com.
+- **`openseamap`** (low) — Sea map of borders, special zones, shipping lanes, with overlays of MarineTraffic and other sources
 - **`openstreetmap-nominatim`** (medium) — Free geocoding service from OpenStreetMap that converts a street address into latitude/longitude coordinates and structured location data.
+- **`orbtrack`** (low) — Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for
+- **`overturemaps-org`** (medium) — OSINT tool: overturemaps.org.
+- **`peakvisor-com`** (medium) — OSINT tool: peakvisor.com.
+- **`peakvisor`** (low) — Dual window views for any global location: (1) a 2-D map & (2) a 3-D rendered terrain model, with photo fitting, shade/slope mapping, sun tr
+- **`planet-labs`** (low) — Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.
+- **`police-records-access-project`** (low) — A database providing searchable access to California law enforcement records including police use-of-force incidents, shootings, and miscond
+- **`policy-map`** (medium) — Data mapping tool; includes crime stats, demographics and other data sets
 - **`power-plants-in-the-united-states`** (medium) — OSINT tool: Power Plants in the United States.
+- **`qlock-world-clock`** (low) — Tool that displays time zones on a world map, searchable by city
+- **`quick-geolocation-search`** (low) — A tool that brings several maps into one place for easy location search.
+- **`radar-interference-tracker-rit`** (low) — Bellingcat's radar interference tracker can be used to locate and monitor active military radar systems.
 - **`radio-garden`** (medium) — OSINT tool: Radio Garden.
+- **`rammb-slider`** (low) — Real-time weather satellites of the entire globe
+- **`resource-watch`** (low) — A free open-data platform that hosts 300+ datasets on different topics relating to the environment and human well-being, including real-time
+- **`river-runner-global`** (low) — Calculate which water stream a drop of rain will follow
+- **`somerandomstuff1-wordpress-com`** (medium) — OSINT tool: somerandomstuff1.wordpress.com.
+- **`species-plus`** (low) — Centralized website with vulnerable species information.
+- **`strava`** (low) — Social media fitness app with exercise map based on users' GPS data.
+- **`tencent-maps`** (low) — Tencent Maps (formerly SOSO Maps) is a desktop and web mapping service application and technology provided by Chinese company Tencent, offer
+- **`terra-server`** (medium) — OSINT tool: Terra server.
 - **`tfl-jamcams`** (medium) — OSINT tool: TfL JamCams.
+- **`the-european-space-agency-esa-earth-online`** (low) — The ESA's Earth Online product offers a portal for accessing satellite imagery and environmental data, supporting a range of applications fr
+- **`the-perry-casta-eda-library-map-collection`** (medium) — OSINT tool: The Perry-CastaÃ±eda Library Map Collection.
+- **`topotijdreis-nl`** (low) — Over 200 years of maps and topography from the Netherlands.
+- **`travic-tracker-geops`** (medium) — OSINT tool: TRAVIC TRACKER GEOPS.
 - **`uk-onshore-oil-and-gas-activity`** (medium) — OSINT tool: UK Onshore Oil and Gas Activity.
 - **`ukraine-war-map-heatmap`** (medium) — OSINT tool: Ukraine War Map/Heatmap.
+- **`unosat-analyses`** (low) — UNOSAT Analyses is a tool that maps humanitarian emergencies across the globe utilising United Nations Satellite Centre data.
 - **`us-labor-strike-map`** (medium) — OSINT tool: US Labor Strike Map.
+- **`using-world-imagery-wayback`** (medium) — OSINT tool: Using World Imagery Wayback.
+- **`utm-grid-zones`** (low) — An overview of the Universal Transverse Mercator coordinate system.
+- **`virtualvacation-us`** (medium) — OSINT tool: virtualvacation.us.
+- **`visionofbritain-org-uk`** (medium) — OSINT tool: visionofbritain.org.uk.
+- **`visitedplaces-com`** (medium) — OSINT tool: visitedplaces.com.
 - **`walmart-store-status`** (medium) — OSINT tool: Walmart Store Status.
 - **`waze`** (medium) — OSINT tool: Waze.
-- **`windy-2`** (medium) — OSINT tool: Windy.
+- **`what3words`** (low) — A proprietary geocode system which identifies any location on the surface of the earth to a resolution of 3 metres. The identifier is a uniq
+- **`whentaken-com`** (medium) — OSINT tool: whentaken.com.
+- **`wildeye`** (low) — Tracking tool for data on environmental and wildlife crime cases, including court cases and convictions, across the globe.
+- **`wildlife-trade-portal`** (low) — An open-source tool to search wildlife seizure data worldwide.
+- **`wildme-and-wildbook`** (low) — Open source pattern recognition software to identify unique whales, sharks, zebras, jaguars, skunks, fish and much more.
+- **`world-database-on-protected-and-conserved-areas`** (low) — A comprehensive global database on terrestrial and marine protected areas.
+- **`worldofo-com`** (medium) — OSINT tool: worldofo.com.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

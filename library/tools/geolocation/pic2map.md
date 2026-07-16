@@ -7,8 +7,11 @@ category: geolocation
 path:
 - geolocation
 bestFor: Browser-based EXIF/GPS extractor that maps where a photo was taken and shows camera/timestamp metadata.
-selectorsIn: [image]
-selectorsOut: [geolocation, metadata, metadata-exif]
+selectorsIn:
+- image
+selectorsOut:
+- geolocation
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free upload-and-view; bulk/advanced features may prompt account creation.
@@ -20,12 +23,14 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Popular consumer EXIF-viewer site; results are only as good as the metadata in the file and the site is ad-supported.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-aliases: [Pic 2 Map]
+aliases:
+- Pic 2 Map
 tags:
 - geospatial-research-and-mapping-tools
 source: awesome-osint

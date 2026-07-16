@@ -8,7 +8,7 @@ path:
 - email
 bestFor: Pulling all email addresses out of pasted text (or a page's content) into a clean list.
 selectorsIn:
-- metadata
+- metadata-exif
 selectorsOut:
 - email
 status: live

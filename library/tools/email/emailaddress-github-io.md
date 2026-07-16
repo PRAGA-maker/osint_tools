@@ -10,7 +10,7 @@ bestFor: A curated hub/index of email-OSINT tools and techniques.
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: unknown
 pricing: free
 costNote: Free static GitHub Pages resource list.

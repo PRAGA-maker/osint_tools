@@ -12,7 +12,7 @@ kind: group-index
 - **`fediverse-mastodon/`** — 4 skill(s) below.
 - **`instagram/`** — 2 skill(s) below.
 - **`linkedin/`** — 4 skill(s) below.
-- **`other-social-networks/`** — 12 skill(s) below.
+- **`other-social-networks/`** — 11 skill(s) below.
 - **`reddit/`** — 4 skill(s) below.
 - **`search/`** — 4 skill(s) below.
 - **`steam-discord-and-gaming-networks/`** — 1 skill(s) below.
@@ -20,5 +20,900 @@ kind: group-index
 - **`tiktok/`** — 4 skill(s) below.
 - **`twitter/`** — 25 skill(s) below.
 
+## Skills here
+- **`17-imginn`** (high) — Use when you have an Instagram `username` and want to anonymously view/download that account's public posts, stories and highlights without 
+- **`4plebs`** (medium) — Searchable archive of specific 4chan boards. Makes it possible to read threads after they are purged from 4chan.
+- **`4sqmap`** (high) — Use when you have a Foursquare/Swarm `username` and want to plot that account's check-ins, venues and photos on a map — returns `geolocation
+- **`6-izuum-com`** (high) — OSINT tool: 6- Izuum.com.
+- **`a-tremendously-valuable-osint-tip-for-pinterest`** (high) — Use when you have a Pinterest `username` and want to hypothesize the subject's `email` — a documented technique exploiting Pinterest's Googl
+- **`about-fb-com`** (high) — OSINT tool: about.fb.com.
+- **`account-analysis`** (medium) — OSINT tool: Account analysis.
+- **`accountkiller-com`** (high) — Use when you have a `username` and want a reference directory of where accounts can exist plus each platform's account/URL structure — retur
+- **`advanced-downloader-for-tiktok-addons-mozilla-org`** (high) — OSINT tool: advanced downloader for tiktok (addons.mozilla.org).
+- **`agora-pulse`** (high) — Use when you have a Facebook Page you control/administer and want to benchmark its reach/engagement against similar pages — returns comparat
+- **`all-twitch-streamers-search`** (low) — OSINT tool: All Twitch Streamers Search.
+- **`allmytweets`** (medium) — OSINT tool: AllMyTweets.
+- **`amazing-hiring`** (medium) — An extension for Chrome that allows you to find a link to Linkedin, Facebook, VK, StackOverflow, Instagram... by user Github (or other) prof
+- **`ameba`** (high) — Use when you have a `username` or `name` and want to find a Japanese subject's Ameba blog/social profile — returns social-profile and image 
+- **`analyze-words-twitter`** (high) — Use when you have an X/Twitter `username` and want a quick psycholinguistic read of their tweets — returns an emotional/social/thinking-styl
+- **`anonymous-ad-preview-tool`** (low) — OSINT tool: Anonymous Ad Preview Tool.
+- **`anylizer-com`** (medium) — watch frame by frame YouTube and Vimeo)
+- **`app-fanpagekarma-com`** (high) — Use when you have a `name` or `username` and want to find and compare public Facebook (and other social) pages/profiles by keyword — returns
+- **`archive-4plebs-org`** (medium) — 4plebs is an unofficial archive of certain boards of 4chan.org, including 11 boards. It offers a large number of searchable discussions with
+- **`arctic-shift-2`** (high) — Use when you have a Reddit `username` (or subreddit/keyword) and want historical Reddit posts and comments Reddit's own search hides — retur
+- **`arrse-co-uk-2`** (high) — Use when you have a `username` or `name` and want to find a subject's profile on the UK's main British-Army community forum — returns their 
+- **`articles`** (high) — OSINT tool: Articles.
+- **`audiense`** (high) — Use when you have a Twitter/X `username` or audience and want deep audience-segmentation intelligence — returns audience segments, influence
+- **`authentic8-com-2`** (high) — Use when a subject may be on Mastodon/the Fediverse and you need to understand instances and federation before searching — returns platform 
+- **`authentic8-com`** (high) — Use when you're investigating an Instagram account (`username`/`name`) and want a structured methodology — profile, network, content and met
+- **`auto-scroll-search`** (medium) — automatically scrolls the page down (and loads the ribbon) until the specified keyword appears on it.
+- **`backtweets`** (medium) — OSINT tool: Backtweets.
+- **`barkov-net`** (high) — Use when you have a VKontakte/OK/Telegram community, user list or profile criteria and want to enumerate and filter users — returns `social-
+- **`bayt-com`** (high) — Use when you have a `name`/`username` of a Middle East / Gulf professional and want their CV-style profile and work history — returns a `soc
+- **`bearpanther-com`** (high) — Use when you have a `geolocation` (a point or area on a map) and want to surface public Instagram posts tagged there — returns social-profil
+- **`behance`** (high) — Use when you have a `name` or `username` of a creative professional and want their portfolio profile — returns a `social-profile` with work,
+- **`bellingcat-tiktok-date-extract`** (medium) — Get the exact upload date + time for tiktok video urls
+- **`best-tiktok-hashtags`** (medium) — OSINT tool: Best tiktok hashtags.
+- **`better-reddit-search`** (medium) — Reddit search tool for posts and subreddits (with boolean filters by keywords and filters by publication date).
+- **`bibliogram-art`** (high) — Use when you have an Instagram `username` and want to view their public profile/posts without an Instagram login — but this Bibliogram insta
+- **`bibliogram`** (high) — Use when you have an Instagram `username` and want to view a profile/posts without an Instagram login — but note this front-end is defunct; 
+- **`bikermatch-co-uk`** (high) — Use when you have a `username` or `name` tied to UK motorcycling and want to find a member profile — returns social-profile, photos, and rou
+- **`birdhunt`** (high) — Use when you have a `geolocation` (place of interest) and want X/Twitter posts sent from near it — returns geographically-filtered posts and
+- **`birdsql`** (medium) — New Twitter search tool using OpenAI GPT 3.5. Type queries in simple english language to get lists of tweets or users. For example: most lik
+- **`bitchute-com`** (high) — Use when you have a `username` or `name` and want to find a subject's video presence on the alt-tech platform BitChute — returns channels, v
+- **`bitdownloader-io`** (high) — OSINT tool: bitdownloader.io.
+- **`bitmoji-avatar-history-enumerator`** (medium) — BACKMOJI takes a Bitmoji ID, version (usually the number 5), and a maximum value. Press the “Grab Images!” button and your browser will make
+- **`blackplanet-com`** (high) — Use when you have a `username` or `name` and want to check a legacy BlackPlanet profile — but note the site has pivoted to a news platform, 
+- **`blastup`** (high) — Download Instagram videos and photos
+- **`blog-compass-security-com`** (high) — Use when you have a subject on LinkedIn (`name`/`username`) and want proven techniques to deanonymise surnames, detect language, and X-ray p
+- **`bluesky-insights-dwagentai-com`** (medium) — Use when you have a Bluesky `username`/handle and want follower-growth analytics and similar-account discovery — returns social-profile metr
+- **`bluesky-users-stats`** (medium) — OSINT tool: BlueSky users stats.
+- **`bluesky`** (high) — Use when you have a `username` or `name` and want to find and read a subject's Bluesky account and social graph — returns social-profile, po
+- **`blueskydirectory-com`** (high) — Use when you have a `name`, `username`, or interest and want to find or search Bluesky (bsky/AT Protocol) profiles, lists, and starter packs
+- **`blueskymeter-com`** (high) — Use when you have a Bluesky `username` (handle) and want public account analytics — returns follower/engagement metrics and profile activity
+- **`bot-sentinel-dashboard-bot-sentinel`** (low) — OSINT tool: Bot Sentinel Dashboard ‹ Bot Sentinel.
+- **`botcheck-me`** (medium) — OSINT tool: Botcheck.me.
+- **`botometer-by-osome`** (low) — OSINT tool: Botometer by OSoMe.
+- **`botometer`** (medium) — OSINT tool: Botometer.
+- **`botslayer`** (low) — OSINT tool: BotSlayer.
+- **`bottlenose`** (high) — OSINT tool: Bottlenose.
+- **`brandwatch`** (high) — Use when you have a `name`, handle, or keyword and want enterprise-scale social listening across platforms — returns aggregated mentions, se
+- **`bsky-social-2`** (high) — Use when you have a `username`/`name` and want their Bluesky presence — returns the profile, posts, and follow graph (`social-profile`) on a
+- **`bsky-social`** (medium) — Use when you have a `username` or `name` and want to find a Bluesky presence — returns a `social-profile` with posts, handle, bio and follow
+- **`bskyfollowfinder`** (medium) — A tool that identifies which Bluesky accounts are followed by a profile’s contacts but not by that profile. Can be used for expanding networ
+- **`bskythreadreader`** (medium) — BskyThreadReader is a web-based Bluesky thread viewer that allows anyone to read and share Bluesky threads without logging in.
+- **`bskyviewer-github-io`** (high) — Use when you have a Bluesky `username`/handle and want to view a profile, posts, and threads without an account — returns social-profile con
+- **`buffer`** (high) — OSINT tool: Buffer.
+- **`burrrd`** (medium) — OSINT tool: burrrd..
+- **`buzz-sumo`** (low) — Use when you have a topic, `domain`, or `name` and want to find their top content, who shared it, and connected authors/journalists — return
+- **`calialec-snap-map-private-api`** (medium) — OSINT tool: CaliAlec/snap-map-private-api.
+- **`castrick`** (high) — Use when you have an `email`, `username` or `phone` and want a trace-free reverse lookup into linked accounts — Castrick returned `social-pr
+- **`channel-crawler`** (low) — OSINT tool: Channel Crawler.
+- **`chartmasters-org-spotify-streaming-numbers-tool`** (medium) — report of the number of streams of a particular artist's tracks on Spotify
+- **`chat-downloader`** (medium) — download chats messages in JSON from #YouTube, #Twitch, #Reddit and #Facebook.
+- **`chatter`** (high) — Use when you want automated keyword/phrase monitoring across Twitter, Reddit, and 4chan with alerts to Telegram — returns matching public po
+- **`chearch`** (medium) — OSINT tool: Chearch.
+- **`check-channel-badges`** (low) — OSINT tool: Check channel badges.
+- **`check-twitch-follow-length`** (low) — OSINT tool: Check Twitch follow length.
+- **`chosic-com`** (medium) — analyze the playlist on Spotiify, calculate the prevailing mood, genres, decades and favorite artists
+- **`clearsky-app`** (high) — Use when you have a Bluesky `username` (handle) and want block relationships, handle-change history, and account metadata — returns social-p
+- **`clubhouse-database`** (low) — OSINT tool: Clubhouse Database.
+- **`clubsearch-search-clubhouse-rooms`** (low) — OSINT tool: ClubSearch -- search Clubhouse rooms.
+- **`cobalt-tools`** (high) — Use when you have a `social-profile`/media URL and want to download the video, audio or image cleanly — returns the media file (with its met
+- **`codeofaninja-com`** (high) — Use when you have a TikTok `username` and want its stable numeric user ID (`document-id`) — returns the account's permanent ID for use acros
+- **`coderstats`** (low) — Developer activity and statistics tracker for GitHub.
+- **`com-hemiola-com`** (high) — OSINT tool: com.hemiola.com.
+- **`commentpicker-com-2`** (high) — Use when you have a TikTok `username` and want its permanent numeric user ID plus account stats — returns the numeric ID, account creation d
+- **`commentpicker-com`** (high) — Use when you have an Instagram/Facebook/TikTok/YouTube `username` or post and want the account's stable numeric ID or the list of commenters
+- **`commentpicker`** (medium) — Facebook profiles/posts ID finder Export Facebook like and comments YouTube Tag Extractor Instagram profile analyzer Twitter account data ex
+- **`commits-top`** (medium) — Current list of the most active @Github users by country
+- **`company-or-organisation`** (high) — OSINT tool: Company or Organisation.
+- **`copainsdavant-linternaute-com`** (high) — Use when you have a `name` and a French school/town and want to place a subject via their old-classmates profile — returns social-profile, s
+- **`covaxxy`** (low) — OSINT tool: CoVaxxy.
+- **`crowdtangle-link-checker`** (medium) — Chrome extension showing Facebook, Instagram and Twitter posts that mention a given link.
+- **`crowdtangle`** (low) — Use when you want historical Facebook/Instagram public-post monitoring — but note the tool was SHUT DOWN by Meta in August 2024 and is no lo
+- **`dashboard-laterforreddit-com-analysis`** (medium) — examine popular post trends for a given subreddit
+- **`datanyze-com`** (medium) — Use when you have a `name` on LinkedIn or an `employer-org` and want business contact data — returns work `email`, direct-dial `phone` and f
+- **`deaditarchive-netlify-app`** (medium) — OSINT tool: Deaditarchive.netlify.app.
+- **`deck-blue`** (high) — Use when you have a Bluesky `username` and want to monitor their posts, searches and lists in real time across columns — returns live `socia
+- **`dev-to`** (high) — Use when you have a Mastodon `username`/handle and want the numeric account ID via the public API — returns social-profile metadata to pivot
+- **`diaspora`** (high) — Use when you have a `name` or `username` and want to check for a presence on the decentralised Diaspora* social network — returns a social-p
+- **`discord-bots`** (medium) — OSINT tool: Discord Bots.
+- **`discord-center`** (medium) — OSINT tool: Discord Center.
+- **`discord-chat-exporter`** (medium) — A tool for exporting Discord chat logs in multiple formats.
+- **`discord-history-tracker`** (medium) — OSINT tool: Discord History Tracker.
+- **`discord-id-lookup`** (medium) — OSINT tool: Discord ID Lookup.
+- **`discord-me`** (medium) — OSINT tool: Discord Me.
+- **`discord-servers-portal`** (medium) — OSINT tool: Discord Servers Portal.
+- **`discord-user-search`** (medium) — OSINT tool: Discord User Search.
+- **`discordservers`** (medium) — OSINT tool: DiscordServers.
+- **`doesfollow`** (high) — OSINT tool: DoesFollow.
+- **`dolphin-radar`** (high) — Use when you have a public Instagram `username` and want to monitor its behaviour over time — returns tracked follows/unfollows, likes, enga
+- **`douban`** (high) — Use when you have a `name`/`username` of a likely Chinese subject and want their books/film/music and interest-group activity — returns a `s
+- **`downgit`** (medium) — Create GitHub Resource Download Link
+- **`download-and-export-twitter-followers-into-excel-for-free`** (high) — OSINT tool: Download and Export Twitter Followers into Excel for Free.
+- **`download-tiktok-videos-without-watermark-for-free-tiktok-video-downloader-online`** (medium) — OSINT tool: Download TikTok Videos Without Watermark For Free - TikTok Video Downloader online.
+- **`download-twitter-videos-to-mp4-and-mp3-online-easy-and-free`** (medium) — OSINT tool: Download Twitter Videos to MP4 & MP3! Online Easy & Free.
+- **`downloader-instagram-addons-mozilla-org`** (high) — Use when you have a subject's Instagram `social-profile`/post and want to save the original media for analysis — returns downloaded `image`/
+- **`downloadgram-app`** (high) — Use when you have an Instagram post/reel URL (from a subject's `social-profile`) and want the original-quality media offline — downloads pub
+- **`downloadgram-instagram-photo-and-video-downloader-online`** (high) — Use when you have an Instagram post/reel `url` (from a target's public `username`) and want to save the original media — returns the full-re
+- **`doximity-united-states`** (medium) — Use when you have a `name` and believe the subject is a US clinician (doctor, PA, NP) and want their verified professional profile, specialt
+- **`draugiem-latvia`** (high) — Use when you have a `name` or `username` of a Latvian subject and want their social profile — returns a Draugiem.lv profile (photos, friends
+- **`dumpitblue-chromewebstore-google-com`** (high) — Use when you are logged into Facebook viewing a `social-profile`/page and want to capture everything on screen — posts, comments, friends — 
+- **`dumplt-blue`** (high) — GoogleChrome extension for @Facebook: dump to txt file friends, group members, messenger contacts etc, automate scroll page to bottom (+isol
+- **`dumpor-instagram-search`** (high) — Use when you have an Instagram `username`, `name` or hashtag and want to view/download the public profile anonymously — returns profile, pos
+- **`dumpor-io`** (high) — Use when you have an Instagram `username` and want to view/download that public profile's posts, stories, reels and follower lists without l
+- **`duolingosint`** (medium) — The language learning platform Duolingo has more than 570 million+ users worldwide. This tool collects information about Duolingo users by n
+- **`eightify`** (medium) — ChatGPT YouTube summary
+- **`ello`** (low) — Use when a historical lead points to an `ello.co` profile — returns nothing live; the network shut down in 2023 and the domain is now hijack
+- **`en-wikipedia-org-2`** (high) — Use when you need an overview of far-right online platforms/ecosystems to decide where to search for an extremist-adjacent subject — returns
+- **`en-wikipedia-org-3`** (high) — Use when you need background on BitChute (alt-tech video platform) before searching it for a subject's content — returns platform context an
+- **`en-wikipedia-org-4`** (high) — Use when you have a `username` or `name` possibly active on the alt-tech network Gab and want to understand the platform before pivoting to 
+- **`en-wikipedia-org-5`** (high) — Use when you have a `username`/`name` that may be on GETTR and want to understand the platform before searching it — returns background cont
+- **`en-wikipedia-org-8`** (high) — Use when you have a `name`/`username` seen on Rumble and want to understand the platform and its context before investigating accounts there
+- **`en-wikipedia-org`** (medium) — Use when you have a `username` or `name` and want an exhaustive checklist of social platforms to search — returns a reference list of networ
+- **`enlarge-discord-avatars`** (medium) — OSINT tool: Enlarge Discord avatars.
+- **`epieos`** (high) — Use when you have an `email` or `phone` and want to reverse-lookup the accounts, profiles and Google identity tied to it — returns social-pr
+- **`eu-usatoday-com`** (high) — OSINT tool: eu.usatoday.com.
+- **`exolyt`** (medium) — Use when you have a TikTok `social-profile`/`username` and want analytics on it — returns posting patterns, engagement, audience geography a
+- **`expand-all-facebook-comments-bookmarklet`** (high) — Use when you have a Facebook post/`social-profile` thread and want to force every hidden comment and reply to load so you can read the full 
+- **`exportdata`** (high) — Use when you have a Twitter/X `username` and want to export their followers, followings, and tweet history at scale — returns associate link
+- **`extract-meta-data-youtube`** (medium) — OSINT tool: Extract Meta Data YouTube.
+- **`f5bot`** (medium) — Sends you an email when a keyword is mentioned on Reddit.
+- **`facebook-ad-s-link`** (high) — OSINT tool: Facebook Ad's Link.
+- **`facebook-applications-khalil-shreateh`** (low) — Collection of tools automating Facebook functions.
+- **`facebook-bulk-id-usernames-to-s`** (high) — Use when you have Facebook profile/page `username`s or URLs and want their durable numeric IDs in bulk — returns the numeric account IDs tha
+- **`facebook-com`** (high) — Use when you have a `name`, `employer-org` or Page and want the ads that entity has run on Meta platforms — returns social-profile, employer
+- **`facebook-directory-users-by-name`** (high) — Use when you have a `name` and want to enumerate public Facebook profiles matching it via Facebook's own alphabetical directory — returns ca
+- **`facebook-email-reverse-lookup`** (high) — Use when you have an `email` and want to find the linked Facebook account — a technique using login/recovery and search, now heavily limited
+- **`facebook-entity-id-parser`** (high) — Use when you have a Facebook profile/page `social-profile` (URL) and want its stable numeric entity ID — returns the numeric Facebook ID tha
+- **`facebook-friend-list-scraper`** (high) — Use when you have a target's Facebook profile and want their friend network — returns the names and usernames of accounts on a large friend 
+- **`facebook-friends-list-generator`** (high) — Use when you have a Facebook `social-profile` and want to enumerate that person's friends/connections via a browser tool — returns an associ
+- **`facebook-geo`** (high) — Use when you have a `geolocation` or place and want to surface Facebook posts/pages tied to that location — returns `social-profile` and pos
+- **`facebook-graph-searcher-intelligencex`** (medium) — Web-based tool to search Facebook profiles via graph queries.
+- **`facebook-latest-comments-scraper`** (high) — Use when you have a public Facebook post URL and want the full comment thread as structured data — returns commenter names/usernames, text a
+- **`facebook-latest-posts-scraper`** (high) — Use when you have a public Facebook page/profile URL (`social-profile`) and want its recent posts and comments in bulk — returns post/commen
+- **`facebook-matrix-2`** (high) — Use when you have a Facebook numeric UID or profile (`username`/`name`) and want ready-made search-URL templates to pull photos, friends, pl
+- **`facebook-matrix`** (high) — Use when you have a Facebook numeric ID (user/page/place) and want to run advanced graph-style searches — returns URL/JSON formulas that sur
+- **`facebook-newsroom`** (high) — Facebook news and updates
+- **`facebook-photo-search-engine`** (high) — Use when you have a `name` or keyword and want to find Facebook-hosted photos/pages indexed by Google — returns Facebook links (profiles, ph
+- **`facebook-profile-directory`** (high) — Use when you have a `name` and want to browse Facebook's alphabetical public directory of profiles/pages — returns public profile links you 
+- **`facebook-profile-id-grabber`** (high) — Use when you have a Facebook profile (vanity URL or open page) and want its stable numeric profile ID — returns the numeric ID that unlocks 
+- **`facebook-scanner`** (high) — Use when older guides point you to StalkScan for Facebook Graph Search — but it is defunct; returns nothing and you should route to a live w
+- **`facebook-scraped-data-search`** (high) — OSINT tool: Facebook Scraped Data search.
+- **`facebook-search-2`** (high) — Use when you have a `name`, `employer-org`, school or city and want to run structured people/post/photo searches on Facebook after Graph Sea
+- **`facebook-search-3`** (high) — Use when you have a `name`, keyword or `username` and want to search recent public Facebook posts/mentions — returns `social-profile` posts 
+- **`facebook-search-engine`** (high) — Use when you have a `name`/`username` or keyword and want to search public Facebook content via a prebuilt Google Custom Search Engine — ret
+- **`facebook-search-tool-2`** (high) — Use when you have a Facebook profile `username`/ID or a `name` and want to run advanced Graph-style queries (photos-of, photos-by, places, c
+- **`facebook-search-tool`** (high) — Use when you have two Facebook profiles and want to see who they know in common — returns the mutual-friends list, i.e. `associate` and `soc
+- **`facebook-search`** (high) — OSINT tool: Facebook Search.
+- **`facebook-video-downloader-online`** (high) — OSINT tool: Facebook Video Downloader Online.
+- **`facebook-video-downloader`** (high) — Use when you have a public Facebook video `url` (from a target's `social-profile`) and want to save the file for offline capture and analysi
+- **`facebook-watch`** (high) — Use when you have a `name`/`username` or page and want to find video content that person or page has posted or appears in on Facebook — retu
+- **`faceparty`** (medium) — Use when you have a `name` or `username` possibly tied to an older UK internet user and want to check for a legacy FaceParty profile — retur
+- **`fake-follower-check`** (medium) — OSINT tool: Fake Follower Check.
+- **`fakedetail-com`** (low) — Not a lookup — a generator of fake Snapchat/social chat screenshots; relevant to OSINT only for recognising fabricated evidence and (cautiou
+- **`fakeinfo-net`** (high) — Use when you need consistent fake persona details for a research sock puppet, or want to understand how forgeable "evidence" is — this fake-
+- **`fanpage-karma`** (low) — Use when you have a public `social-profile` (page/account) and want its analytics — posting cadence, engagement, follower trends — returns `
+- **`fastdl-app`** (high) — Use when you have an Instagram post/reel/story URL and want to save the media without logging in — returns the downloaded photo/video file (
+- **`fastvideosave-net`** (high) — OSINT tool: fastvideosave.net.
+- **`fb-sleep-stats`** (high) — Use when you already have a Facebook contact and want to infer their sleep/activity schedule by logging online/offline status over time — re
+- **`fdown-net`** (high) — Use when you have a public Facebook video/reel `social-profile` URL and want to download the media for offline analysis and archiving — retu
+- **`fediverse`** (high) — Use when a subject may be on decentralized social networks and you need to know which platforms/instances exist — a guide to the Fediverse (
+- **`fidonet-nodelist`** (medium) — search by node number, sysop name and sysop location
+- **`find-github-user-id-caius`** (low) — Get a GitHub user's unique numeric identifier.
+- **`find-instagram-user-id-code-of-a-ninja`** (low) — Get an Instagram numeric ID from a username.
+- **`find-instagram-user-id`** (medium) — Use when you have an Instagram `username` and want its stable numeric account ID — returns the numeric Instagram user ID that persists acros
+- **`find-my-facebook-id-2`** (high) — Use when you have a Facebook profile/page/group URL or vanity name and want its stable numeric ID — returns the numeric Facebook ID for use 
+- **`find-my-facebook-id-3`** (high) — Use when you have a Facebook profile URL/`username` and want its stable numeric user ID — returns the numeric ID that anchors the profile ag
+- **`find-my-facebook-id`** (high) — Use when you have a Facebook profile/page/group URL or vanity `username` and want its stable numeric ID — returns the numeric Facebook ID th
+- **`find-my-snap-check-if-your-snapchat-account-was-leaked-on-the-2013-hack`** (medium) — OSINT tool: Find My Snap - Check if your SnapChat account was leaked on the 2013 hack..
+- **`find-twitter-followers`** (high) — OSINT tool: Find Twitter Followers.
+- **`finddit-viralharia`** (low) — Reddit search tool (Finddit).
+- **`findface`** (medium) — OSINT tool: FindFace.
+- **`first-tweet`** (high) — Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes brok
+- **`flickr-photopool-contact-network`** (medium) — Analyzes Flickr groups and makes a list of nicknames of participants for further graph analysis in Gephi
+- **`flocknet`** (medium) — A tool for finding and filtering your own #Twitter followers. It allows you to find all the people from a certain city or with certain inter
+- **`foller-me`** (high) — Use when you have a Twitter/X `username` and want a quick public-profile analytics snapshot — returns metadata, topics/hashtags, and activit
+- **`follower-wonk-compare`** (medium) — this service allows you to find out how many followers two (or three) Twitter accounts have in common.
+- **`followeraudit`** (low) — OSINT tool: FollowerAudit.
+- **`followerwonk-tools-for-twitter-analytics-bio-search-and-more`** (medium) — OSINT tool: Followerwonk: Tools for Twitter Analytics, Bio Search and More.
+- **`forbes-com`** (high) — OSINT tool: forbes.com.
+- **`forcesreunited-co-uk`** (high) — Use when you have a UK military subject's `name`, unit, or service era and want to place them via a veterans' network — returns a member `so
+- **`free-people-search-tool`** (high) — Use when you have a `name` (plus location or company) and want a one-box hub that fans a search across LinkedIn, Twitter, GitHub, and Dribbb
+- **`fubar`** (high) — Use when you have a `username` or `name` and want to check Fubar, a long-running social/dating "online bar" network — returns `social-profil
+- **`fulldp-co`** (high) — Use when you have an Instagram `username` and want the full-resolution profile picture Instagram normally shows only as a thumbnail — return
+- **`gab-com`** (high) — Use when you have a `username` or `name` and want to find/monitor a subject on the Gab social network — returns their `social-profile` and p
+- **`gab-social`** (high) — Use when you have a `name`/`username` and suspect the subject uses the alt-tech network Gab — returns their `social-profile`, posts, and con
+- **`gallery-dl`** (medium) — Quick and simple tool for downloading image galleries and collections from #flickr, #danbooru, #pixiv, #deviantart, #exhentai
+- **`gapowork-com`** (high) — Use when a Vietnamese subject's `employer-org` uses GapoWork and you're identifying the platform — a closed enterprise workspace, so it yiel
+- **`geochirp`** (medium) — OSINT tool: Geochirp.
+- **`geocreepy`** (high) — Use when you want to aggregate a target's geotagged social-media posts onto a map to infer locations/pattern-of-life — returns `geolocation`
+- **`get-user-info`** (medium) — OSINT tool: Get User info.
+- **`getdaytrends`** (low) — Use when you have a place and time and want the historical Twitter/X trending topics there — returns trend/hashtag context to anchor an even
+- **`gettr-com`** (medium) — Use when you have a `username` or `name` and want to find the subject on GETTR (a Twitter/X alternative) — returns `social-profile`, posts, 
+- **`gettwitterid`** (medium) — OSINT tool: GetTwitterID.
+- **`ghnames`** (medium) — OSINT tool: GHNames.
+- **`ghostcodes-addmesnaps-directories`** (medium) — Public Snapchat username directories; pivot from interests/handles to accounts.
+- **`ghostcodes-com`** (medium) — OSINT tool: Ghostcodes.com.
+- **`ghunt-online-version`** (medium) — Get info about Google account by email: - name - default profile and cover pictures; - calendar events and timezone; - Google Maps reviews; 
+- **`git-awards`** (low) — Rank GitHub users and repositories.
+- **`gitcolombo`** (medium) — simple and fast tool that collects information (edit statistics and contacts) about repository contributors on Github
+- **`github-chart`** (medium) — it shows a visual representation of the temporal distribution of user changes in the repositories. You can visually see "productivity peaks"
+- **`github-hovercard`** (medium) — Displays a block of detailed information about the repository or user when the mouse pointer is placed over it. Save time for those who look
+- **`github-monitor`** (medium) — OSINT tool: github_monitor.
+- **`github-rater`** (medium) — rates GitHub profile upon data received from GitHub API
+- **`github-release-stats`** (medium) — Estimate popularity of Github repo. Tool displays the number of downloads for each project release + some additional information.
+- **`github-repository-size`** (medium) — simple google chrome extension to view Github repo size
+- **`github-stars-githubstars-com`** (low) — Showcase of popular GitHub repositories.
+- **`github-trending-archives`** (medium) — Github trending archive for a specific date.
+- **`github-trending-rss`** (low) — RSS feed of trending GitHub repositories.
+- **`githubcompare`** (medium) — When searching for OSINT tools on #Github, you will often come across several repositories with the same name. This service will help to vis
+- **`githubrecon`** (medium) — OSINT tool: GithubRecon.
+- **`githut`** (low) — GitHub statistics and programming language visualizations.
+- **`gitleak`** (medium) — OSINT tool: GitLeak.
+- **`gitsome`** (medium) — A tool for gathering information from #Github: - extract all emails from commits of a particular user (top of the pic); - gathering info abo
+- **`gitstar-ranking`** (medium) — Unofficial GitHub star ranking for users, organizations and repositories
+- **`gitvio`** (medium) — A tool to quickly and easily view detailed information about a user's Github profile: the most popular repositories, number of commits, issu
+- **`gitxray`** (medium) — Security tool using GitHub REST APIs for reconnaissance, forensics, and pentesting of repos/users.
+- **`google-account-finder-epieos`** (high) — Use when you have an `email` (Gmail) or `phone` and want the linked Google account's profile photo, public Maps reviews/photos, and which se
+- **`google-com-2`** (high) — Use when you have a `name` (and a German school/town) and want to find someone's StayFriends classmates profile without an account — returns
+- **`google-com-3`** (high) — Use when you have a `name` or `username` and want to find profiles on Trombi.com (French classmates network) via a Google site-search dork —
+- **`google-com-4`** (high) — OSINT tool: google.com.
+- **`google-com-44`** (high) — OSINT tool: google.com.
+- **`google-com-46`** (high) — Use when you have a `name` or `username` possibly tied to the Chinese social network Renren and want to find their profile without a Renren 
+- **`google-com-47`** (high) — OSINT tool: google.com.
+- **`google-com-5`** (high) — Use when you have a `name` or `username` and want to find profiles on Draugiem.lv (the dominant Latvian social network) via a Google site-se
+- **`google-com-50`** (high) — Use when you have a `name` or `username` and want to surface a subject's Zalo (Vietnamese messenger/social) profile pages that Google has in
+- **`google-com-54`** (high) — Use when you have a name, employer or role and want to find LinkedIn profiles Google has indexed — returns public LinkedIn profile links wit
+- **`google-com-55`** (high) — Use when you have a `name` (or `username`, employer, or town) and want to find a person's UK LinkedIn profile without logging into LinkedIn 
+- **`google-com-58`** (high) — OSINT tool: google.com.
+- **`google-com-59`** (high) — OSINT tool: google.com.
+- **`google-com-60`** (high) — OSINT tool: google.com.
+- **`google-com-62`** (high) — OSINT tool: google.com.
+- **`google-com-63`** (high) — Use when you have a `name` (or employer) for someone in the German-speaking world and want their XING profile without logging into XING — re
+- **`google-com-68`** (high) — OSINT tool: google.com.
+- **`google-com-70`** (high) — Use when you have a `name` or `username` and want to surface a subject's MeWe profile/posts that Google has indexed — returns `social-profil
+- **`google-com-71`** (high) — Use when you're chasing a subject's Parler footprint and want Google's indexed/archived copies of Parler posts via a site-search dork — retu
+- **`google-com-72`** (high) — Use when you have a `name` or `username` and want their presence on Rumble — returns Rumble channels/videos via a Google `site:rumble.com` d
+- **`google-com-88`** (high) — Use when you have a `username` or `name` and want to find a subject's public Snapchat Spotlight content via a Google site-search dork — retu
+- **`google-plus-and-linkedin`** (medium) — OSINT tool: Google+ & LinkedIn.
+- **`google-plus-photo-custom-search`** (medium) — OSINT tool: Google+ Photo Custom Search.
+- **`google-to-search-profiles-on-dribbble`** (high) — Use when you have a skill/keyword (and optionally a `name` or `username`) and want to find Dribbble creative profiles via a Google site-sear
+- **`google-to-search-profiles-on-twitter`** (high) — Use when you have a `name`, keyword, or location and want to find matching X/Twitter profiles via a Google X-ray query — returns candidate `
+- **`google-to-search-profiles-on-xing`** (medium) — Use when you have a `name`/role in the German-speaking business world and want their Xing profile — builds a Google X-ray query that returns
+- **`gramfeed-com`** (high) — Use when you have an Instagram `username` and want a web viewer with map/geo browsing — but the service has shut down, so treat as defunct.
+- **`gramsize-com`** (high) — OSINT tool: Gramsize.com.
+- **`gramspy`** (high) — OSINT tool: Gramspy.
+- **`graph-tips-fb-search`** (high) — Use when you have a `name`/`username` and want to search Facebook for a person, their photos, places and connections — returns Facebook prof
+- **`graph-tips`** (high) — Use when you have a Facebook profile (`name`/`username`/numeric ID) and want to run Graph-Search-style queries on their photos, posts, frien
+- **`graphtreon-com`** (high) — Use when you have a Patreon creator `username`/page and want their patron counts, earnings estimates, and growth history — returns financial
+- **`gravatar-email-checker`** (high) — Use when you have an `email` and want to know if it has a Gravatar profile/avatar — returns a linked avatar image, public profile, and reuse
+- **`griffin-glynn-hatless1der`** (high) — OSINT tool: Griffin Glynn / hatless1der.
+- **`hadzy-com`** (medium) — OSINT tool: Hadzy.com.
+- **`hashatit`** (low) — OSINT tool: Hashatit.
+- **`hashtagify`** (medium) — OSINT tool: Hashtagify.
+- **`hatless1der-com`** (high) — Use when you have a Pinterest `username` and want to guess the account owner's `email` — an OSINT technique exploiting that Pinterest defaul
+- **`have-i-been-zucked`** (high) — OSINT tool: Have I Been Zucked?.
+- **`haveibeenzuckered`** (high) — Use when you have a `phone` number and want to know if it was exposed in the 2021 Facebook 533M breach — returns whether that number appears
+- **`help-center`** (high) — OSINT tool: Help Center.
+- **`here-15`** (high) — Use when a subject's trail runs into TikTok and you need to know what data TikTok holds and how law enforcement can request it — returns pro
+- **`here-16`** (high) — Use when you have a Twitch `username`/`social-profile` and a case that may justify legal process — returns the official path and requirement
+- **`here-19`** (high) — Use when you have a numeric X/Twitter user ID (`document-id`) and want the account's current handle/profile — append the ID to the intent UR
+- **`here-20`** (high) — Use when you have a numeric X/Twitter user ID and want the account's current @handle/profile — the /i/user/ redirect resolves ID to the live
+- **`here-8`** (high) — Use when you have a `name` plus an approximate location and want to surface public Facebook profiles/posts via a Google site-search dork — r
+- **`here`** (high) — Use when you have a Reddit `username` or topic and want to reach Pushshift-based historical Reddit archives — returns `social-profile` histo
+- **`hi5-com`** (high) — Use when you have a `username` or `name` and want to find a profile on hi5, a legacy global social network still operated by The Meet Group 
+- **`hi5`** (high) — Use when you have a `name` or `username` and want to check for a legacy hi5 social-network profile — returns a social-profile (now served th
+- **`hootsuite`** (high) — Use when you have a `username`, `name` or keywords and want to monitor a subject's cross-platform social activity in real time — returns agg
+- **`iconosquare`** (low) — Use when you have an Instagram/TikTok `social-profile` and want analytics on it — returns follower trends, posting patterns, hashtags, and e
+- **`id-zalo-me`** (high) — Use when you have a Vietnamese `phone` number and want to confirm it maps to a Zalo account — returns the linked `social-profile`, display `
+- **`ig-exporter-chrome-google-com`** (high) — Use when you have an Instagram `username` and want to export their followers/following (with bio, email and website) to CSV for associate-ne
+- **`igexport-export-instagram-chrome-google-com`** (high) — Use when you have an Instagram `social-profile` and want its full follower/following list as a spreadsheet — returns username, name, image, 
+- **`imginn`** (medium) — This service allows you to do the following without logging in to Instagram account: - search for accounts containing a keyword in the profi
+- **`imgur`** (medium) — Use when you have a `username`, keyword or an `image` lead and want to find hosted images/albums and a user's uploads — returns images, albu
+- **`improve-youtube`** (medium) — extension with dozens of different tweaks to the standard #YouTube interface
+- **`inaturalist-org`** (high) — Use when you have a `username`/`name` on iNaturalist and want their nature observations — returns geotagged, time-stamped observation photos
+- **`indownloader-app-2`** (high) — Use when you have an Instagram post/profile URL (`social-profile`) and want to save the media without logging in — returns downloaded `image
+- **`indownloader-app`** (high) — Use when you have a public Instagram `username` or post URL and want to view/download the profile picture, photos, reels or stories without 
+- **`inflact-com-2`** (high) — Use when you have an Instagram `username` and want to view or download a public profile's stories, posts and profile photo without logging i
+- **`inflact-com-3`** (high) — Use when you have an Instagram `username` and want to anonymously view/download that public account's stories in HD — returns story image/vi
+- **`inflact-com-4`** (medium) — Use when you have an Instagram Reel `social-profile`/URL and want to save the video for offline analysis without logging in — returns the do
+- **`inflact-com-5`** (high) — Use when you have a public Instagram post/reel/profile URL and want to download its video/media without logging in — returns downloadable vi
+- **`inflact-com`** (high) — Use when you have an Instagram `username` and want the full-size profile picture (avatar) without logging in — returns the high-resolution `
+- **`inflact-instagram-search`** (medium) — Instagram profiles search tool with the ability to filter results by number of subscribers, number of posts, gender, categories (personal bl
+- **`inflact-profile-analyzer`** (medium) — Free Instagram profile analysis tool.
+- **`inflact`** (medium) — Another online tool that allows you to watch Instagram, without logging in: - search users by nickname; - view last posts; - analyze profile
+- **`initstring-linkedin2username`** (high) — Use when you have an `employer-org` (company LinkedIn page) and want a generated list of likely employee usernames/emails and real names — r
+- **`inleo-io`** (high) — Use when you have a `username` or `name` and want to find and read someone's posts on the Hive-blockchain social network InLeo — returns the
+- **`ins-downloader-addons-mozilla-org`** (high) — Use when you are viewing an Instagram/Threads profile or post and want to download its photos/videos for offline analysis — a Firefox extens
+- **`insexport-get-instagram-f-chrome-google-com`** (high) — Use when you have an Instagram `username` and want to export that account's followers/following list to CSV/Excel for network mapping — retu
+- **`insfo-ig-follower-export-chrome-google-com`** (high) — Use when you have an Instagram `username` and want to export and map their followers/following/commenters as an associate graph — returns so
+- **`insfo`** (medium) — The ultimate simple tool for saving followers/following an Instagram account to a table.
+- **`insta-timestamp-github-com`** (high) — Use when you have an Instagram post/reel/story open and want its exact upload date and time — a bookmarklet that returns the post's timestam
+- **`instadp-instagram-downloader`** (high) — OSINT tool: Instadp: Instagram downloader.
+- **`instadp-search-profile-pictures`** (high) — Use when you have an Instagram `username` and want the full-size profile picture (and stories) anonymously — returns the high-res `image` fo
+- **`instafreeview`** (high) — Use when you have an Instagram `username` and want to view a public profile, posts, or stories without logging in or appearing in the viewer
+- **`instagram-analyzer-and-viewer`** (high) — OSINT tool: Instagram analyzer and viewer.
+- **`instagram-crawler-gitgub`** (high) — Use when you have an Instagram `username` (or hashtag) and want to bulk-download that account's posts, captions, comments and timestamps for
+- **`instagram-deep-photo-search-engine`** (high) — Use when you have a `username`/`name`/keyword and want to search Instagram content via Google — a prebuilt Custom Search Engine that returns
+- **`instagram-explorer`** (medium) — Click on a point on the map. Follow the instructions on the left. Get a link to view Instagram posts made at this location on a specific dat
+- **`instagram-hashtag-scraper`** (medium) — Enter hashtag name and scrape all post tagged it. Get caption, commentsCount, photo dimensions, URL, other hashtags and other details in CSV
+- **`instagram-hashtag-search`** (high) — Use when you have an event/location/interest `name` and want public Instagram posts under that hashtag — the native explore/tags URL returns
+- **`instagram-location-search`** (medium) — A command line tool that allows users to find location tags near a specified latitude and longitude.
+- **`instagram-location`** (high) — Use when you have a place (`geolocation`/`address`) and want public posts tagged there — returns location-tagged `social-profile`s, `image`s
+- **`instagram-monitor`** (high) — Use when you have an Instagram `username` and want to watch it over time — returns real-time alerts on new posts/stories/reels, follower/fol
+- **`instagram-online-viewer-picbear`** (high) — OSINT tool: Instagram Online Viewer | Picbear.
+- **`instagram-reddit-and-snapchat`** (high) — OSINT tool: Instagram, Reddit & Snapchat.
+- **`instagram-scraper`** (medium) — Scrape info about accounts, posts, stories and comment
+- **`instagram-search-engine`** (high) — OSINT tool: Instagram Search Engine.
+- **`instagram-search-inteltechniques-method`** (high) — Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers
+- **`instagram-search`** (high) — OSINT tool: Instagram Search.
+- **`instagram-tool-inteltechniques-com`** (high) — Use when you have an Instagram `username` and want a one-stop panel of query shortcuts (profile, media, followers, location) — returns pre-b
+- **`instagram-user-id`** (high) — Use when you have an Instagram `username` and want its stable numeric user ID plus basic account stats — returns social-profile (numeric ID)
+- **`instagramprivsniffer`** (high) — Use when you have a private Instagram `username` and want to recover posts exposed through the Collaboration feature — returns a `social-pro
+- **`instahunt`** (high) — Use when you have a `geolocation`/place and want public Instagram posts tagged near it on a map — returns location-tagged `social-profile`s 
+- **`instaloader-2`** (high) — Use when you have an Instagram `username` and want to bulk-download that profile's posts, captions, geotags and metadata for offline analysi
+- **`instaloader-3`** (high) — Use when you have an Instagram `username` (or hashtag) and want to bulk-archive its posts, captions, comments and metadata — returns images,
+- **`instaloader`** (high) — Use when you have an Instagram `username` and want to bulk-download their public posts, stories highlights, captions, and metadata — returns
+- **`instalooter-2`** (medium) — Use when you have an Instagram `username` and want to bulk-download a profile's media — returns saved `image`s (with any EXIF/`geolocation`)
+- **`instalooter`** (high) — Use when you have a public Instagram `username`, hashtag, or location and want to bulk-download its media without login or the API — returns
+- **`instanavigation`** (medium) — Anonymous Instagram story viewing.
+- **`instasaver`** (high) — Save or download posts from Instagram
+- **`instatracker`** (medium) — Instagram tracking script that logs changes to an account (followers, following, posts, bio).
+- **`insto`** (high) — Use when you have an Instagram `username` and want a scripted, no-login dossier — posts, followers, geo-fingerprint and network intersection
+- **`intel-sw-com`** (high) — OSINT tool: Intel-SW.com.
+- **`inteltechniques-facebook`** (high) — Use when you have a Facebook `username`/`social-profile` or numeric ID and want to run structured Facebook lookups (ID resolution, friend/ph
+- **`inteltechniques-twitter`** (high) — Use when you have an X/Twitter `username` or `name` and want to run advanced searches across many operators at once — returns profile, posts
+- **`internect-info`** (high) — Use when you have a Bluesky handle, DID or AT URI and want to resolve it to the underlying AT Protocol identity — returns the stable `social
+- **`invidious-instances`** (medium) — OSINT tool: Invidious Instances.
+- **`item`** (high) — OSINT tool: Дезертир.
+- **`izuum`** (high) — Use when you have an Instagram `username` and want to view/enlarge their (public) profile picture — returns image, social-profile. Now large
+- **`jesus-social`** (high) — Christian social networking website
+- **`jump-cutter`** (medium) — An extension for those who watch university lectures on #YouTube and want to save their time. It identifies chunks where the lecturer writes
+- **`justlog`** (medium) — Enter the username and the name of the channel to see all of the user's messages in that channel. The results can be downloaded as TXT
+- **`karma-decay`** (medium) — OSINT tool: Karma Decay.
+- **`kaspr-io`** (high) — Use when you have a LinkedIn profile (`social-profile`)/`name` and want that person's direct contact details — returns `email`, `phone` and 
+- **`keepvid`** (low) — OSINT tool: KeepVid.
+- **`keyhole`** (medium) — OSINT tool: Keyhole.
+- **`khalil-shreateh-social-applications`** (medium) — More than 20 tools to extend the standard functionality of #Facebook, #TikTok, #Instagram, #Twitter (information gathering, random pickers f
+- **`khendrikse-netlify-app`** (high) — Use when you have a Mastodon handle (`username`@instance) and want its stable numeric account ID for API queries — a short guide returning t
+- **`khoji-github-com`** (high) — Use when you have a Snapchat `username` and want to download that user's full Bitmoji avatar history — returns image artifacts revealing app
+- **`khoji-onrender-com`** (high) — Use when you have a Snapchat `username` and want to confirm the account and see its Bitmoji avatar — returns the account's Bitmoji image and
+- **`klear`** (high) — Use when you have an `name`/`username` of a social-media creator and want audience/reach analytics and profile discovery across Instagram, T
+- **`knowlesys-com`** (high) — Use when you have a `username`/`name` tied to Pinterest and want a methodology — a how-to article on investigating Pinterest profiles and bo
+- **`kribrum-io`** (medium) — searchengine for different social media platforms with filters by author and time period
+- **`kribrum`** (high) — Use when you have a `name` or `username` and want to monitor and analyze mentions across Russian-language social media, forums, and Telegram
+- **`kuaishou-com`** (high) — Use when you have a username or name and want to find a subject's short-video presence on China's Kuaishou/Kwai — returns profiles, videos, 
+- **`kworb`** (medium) — A lot of different statistics on views and listens collected from #YouTube, #iTunes, #Spotify. Ratings by country, year, music type, and mor
+- **`lampyre-io-medium-com`** (high) — OSINT tool: lampyre-io.medium.com.
+- **`libredd-it`** (medium) — OSINT tool: Libredd.it.
+- **`line-play`** (high) — Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — return
+- **`linkdtime`** (medium) — Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.
+- **`linkedin-datahub`** (medium) — linkedIn's generalized metadata search & discovery tool
+- **`linkedin-email-reverse-lookup`** (high) — Use when you have an `email` and want the matching LinkedIn profile — returns the person's name, profile ID/username, and photo via a logged
+- **`linkedin-search-engine-with-images`** (high) — Use when you have a `name`/`employer-org` and want LinkedIn profiles surfaced with thumbnail photos for fast visual matching — returns socia
+- **`linkedin-search-engine`** (high) — Use when you have a `name`, `employer-org` or `username` and want to find someone's LinkedIn profile without logging into LinkedIn — returns
+- **`linkedin-x-ray-search-tool`** (high) — Use when you have a `name`, job title, employer, or location and want public LinkedIn profiles — builds a Google X-ray query and returns lin
+- **`linkedindumper`** (high) — Use when you have an `employer-org` and want its staff roster from LinkedIn — a Python tool that dumps employee names, titles, locations, pr
+- **`linkedinsider-deutschland-blog-von-stephan-ko`** (high) — Use when investigating a subject on LinkedIn (especially German-market) and want expert technique/hidden-feature tips — returns methods for 
+- **`linkedprospect`** (high) — Use when you have a target's role or `employer-org` and want a ready-made LinkedIn Boolean query to surface matching profiles — returns a co
+- **`location-search`** (medium) — OSINT tool: Location Search.
+- **`lotus-vn`** (high) — Use when you have a `username` or `name` and think the subject uses Lotus, a Vietnamese social network — returns `social-profile`, `name`, p
+- **`mail-ru-social-network-search`** (high) — Use when you have a `name` or `username` for a RU/CIS subject and want to surface Russian-language social and web results — returns social-p
+- **`map-of-github`** (medium) — Enter the name of the repository, see its links to other projects, and its place on the map of all Github repositories. Notice how small 133
+- **`map-of-reddit`** (medium) — OSINT tool: Map of Reddit.
+- **`mastodon-github-com`** (medium) — Use when you have a known Mastodon `username`/handle on a specific instance and want to resolve it to a stable account ID and profile metada
+- **`mastodon-search-engine`** (low) — OSINT tool: Mastodon Search Engine.
+- **`mastodon`** (high) — Use when you have a `name` or `username` and want to find a subject's profile on the decentralised Mastodon/fediverse network — returns a so
+- **`mastogizmos-com`** (high) — Use when you have a username, hashtag or topic and want to search across the decentralised Mastodon fediverse — returns matching profiles, p
+- **`matthewcassinelli-com`** (high) — Use when you have a Mastodon/fediverse handle or profile link and want its stable numeric account ID — this free Apple Shortcut returns the 
+- **`mavekite`** (medium) — Search TikTok profile by username.
+- **`mediamister-com`** (high) — Use when you have an Instagram `username` and want its permanent numeric user ID — returns the stable numeric ID that survives username chan
+- **`medium-com-2`** (high) — Use when you have a `name`/`username` and want a methodology for investigating them on LinkedIn — a how-to article yielding techniques that 
+- **`meetme`** (high) — Use when you have a `name` or `username` and want to check for a profile on the MeetMe social/dating "people nearby" network — returns a soc
+- **`memory-lol-github-com`** (high) — Use when you have a Twitter/X `username` or numeric account ID and want its historical screen-name changes — returns prior `username`s and a
+- **`memory-lol`** (high) — Use when you have a Twitter/X `username` and want that account's past handles/screen-name history — returns prior usernames and the dates th
+- **`mentionmapp-analytics`** (low) — OSINT tool: Mentionmapp Analytics.
+- **`meta-content-library`** (medium) — Meta Content Library is a controlled-access tool that lets approved academic and non-profit researchers search the full public archive of Fa
+- **`mewe`** (high) — Use when you have a `name` or `username` and want to check for a MeWe profile (a privacy-focused social network that draws communities pushe
+- **`minesight`** (medium) — Minecraft #osint tool. By nickname, it checks the presence of users on different servers and collects information about them (date of regist
+- **`mixi-japan`** (high) — Use when you have a Japanese `name`/`username` and want a Mixi social-networking profile — returns profile, community memberships and diary/
+- **`mixi`** (high) — Use when you have a Japanese `username` or `name` and want to check for a mixi social profile — returns a social-profile, but most content i
+- **`mocospace`** (high) — Use when you have a `name` or `username` and want to check for a profile on the MocoSpace/Moco mobile social network — returns the matching 
+- **`monnett-social`** (high) — Use when you have a `username` or `name` and suspect the subject is on Monnett, a small privacy-focused European social app — returns a soci
+- **`montage-meedan-com`** (medium) — Search #YouTube video by date (uploaded or recording) and by geolocation.
+- **`mostly-harmless`** (high) — Use when you have a URL/`domain` or image and want to find where it's been posted on Reddit and who submitted it — a browser extension retur
+- **`mundimago-com`** (high) — OSINT tool: Mundimago.com.
+- **`mustbepresent`** (high) — OSINT tool: MustBePresent.
+- **`mymfb-com`** (high) — OSINT tool: mymfb.com.
+- **`myosint-training`** (high) — Use when you want to build OSINT skills or grab free practitioner tools — a reputable training provider (Micah Hoffman & Griffin Glynn) offe
+- **`myspace-com`** (high) — Use when you have a `username` or `name` and want to check for a legacy Myspace profile — returns a social-profile and old photos, mostly va
+- **`mytweetalerts`** (medium) — Use when you have a `username`, `name` or keyword and want ongoing email alerts whenever matching tweets are posted — returns `social-profil
+- **`naijapals-com-2`** (high) — Use when you have a `name` or `username` for a Nigeria-linked subject and want to find their NaijaPals profile — returns `social-profile`, `
+- **`naijapals-com`** (high) — Use when you have a `username` or `name` likely tied to a Nigerian subject and want their member profile on Nigeria's veteran social network
+- **`naijapals`** (high) — Use when you have a `name` or `username` and want to find a member profile on this large Nigerian social network — returns a `social-profile
+- **`nairaland-com-2`** (high) — Use when you have a `username` or `name` and want to surface a person's posts, profile and self-disclosed details on Nairaland (Nigeria's la
+- **`nairaland-com`** (high) — Use when you have a `name`/`username` for a Nigerian subject and want their forum presence — returns a Nairaland profile, post history, self
+- **`namemc`** (high) — Use when you have a Minecraft `username` (or account UUID) and want its name-change history, skins, and profile — returns prior usernames an
+- **`naseeb-com`** (high) — Naseeb.com is an online community that connects young, educated, professional Muslims through networks of friends and advanced search and ma
+- **`natcen-ac-uk`** (high) — OSINT tool: natcen.ac.uk.
+- **`netvibes`** (high) — OSINT tool: Netvibes.
+- **`network-tool`** (low) — OSINT tool: Network Tool.
+- **`newsletter-fullstackrecruiter-net`** (high) — OSINT tool: newsletter.fullstackrecruiter.net.
+- **`nicolasconstant-github-io`** (high) — Use when you have a Mastodon/Pleroma `username` or instance handle and want a multi-account desktop/web client to read and monitor fediverse
+- **`nitter-ca`** (high) — Use when you have a Twitter/X `username` and want to read the timeline without an X login — returns public tweets/profile via a lightweight,
+- **`nitter-it`** (high) — Use when you have a Twitter/X `username` and want to read their tweets/media without an X account or login — a Nitter privacy front-end retu
+- **`nitter`** (medium) — OSINT tool: Nitter.
+- **`noxinluencer`** (medium) — youtube channels comparing
+- **`nqntnqnqmb`** (high) — Use when you have a `name` or `employer-org` and want to enumerate LinkedIn profiles, company employees, and their contact details programma
+- **`nursesreconnected-com`** (high) — OSINT tool: nursesreconnected.com.
+- **`ny-dolls-org`** (medium) — OSINT tool: NY Dolls.org.
+- **`nzbfriends`** (medium) — usenet search engine
+- **`o365chk`** (medium) — simple #Python script to check if there is an #Office365 instance linked to a particular domain and gathering information about this instanc
+- **`obitouka`** (high) — OSINT tool: Obitouka.
+- **`oblivion`** (medium) — Use when you have an `email`, `username` or `domain` and want to monitor and aggregate credential-leak exposure across breach sources — retu
+- **`odnoklassniki-russia`** (high) — Use when you have a `name` or `username` of a Russian/CIS subject and want their social profile — returns a `social-profile` with photos, co
+- **`oh365userfinder`** (medium) — A simple tool that shows if an #Office365 account is tied to a specific email address. It's possible to check an entire list of emails from 
+- **`ollie-boyd-github-io`** (high) — Use when you have a LinkedIn post/activity URL and want the exact time it was published — returns the precise creation timestamp (local + UT
+- **`onedrive-enumeration-tool`** (medium) — A tool that checks the existence of OneDrive accounts with certain usernames (from the users.txt file) in the domain of a certain company.
+- **`onemilliontweetmap`** (medium) — Use when you have a place and want geotagged tweets there — plots recent X/Twitter posts on a live world map, returning location-bearing `so
+- **`onli-vk-ru`** (high) — Use when you have a VKontakte profile ID/name and want hidden friends, friend-list changes and derived profile data — returns associate link
+- **`open-measures`** (medium) — Open Measures helps open source researchers investigate harmful online activity such as extremism and disinformation.
+- **`open-source-software-insight`** (medium) — Amazing service that allows to analyze developers and repositories data based on more than 5 billion (!) Github Events.
+- **`open-source`** (medium) — OSINT tool: open-source.
+- **`opinioncrawl`** (high) — Use when you have a `name`, company or topic keyword and want a quick real-time sentiment snapshot across blogs, news and forums — returns s
+- **`orbit-livasch`** (medium) — A tool for analyzing connections between Twitter accounts (based on the number of likes, retweets, tweet citations, and mentions).
+- **`osgint`** (medium) — A simple #python tool to collect information about a Github user. It can be used to gather: all available emails avatar_url twitter_username
+- **`osi-ig`** (high) — Use when you have an Instagram `username` and want to pull the profile's public data — user ID, name, bio, counts, profile photo, and any em
+- **`osint-and-socmint-tooling`** (high) — Use when you have logged-in sessions on major social platforms and want browser-extension tooling to extract data from them — returns friend
+- **`osint-combine-reddit-post-analyzer`** (medium) — Analyze Reddit posts for OSINT signals.
+- **`osint-combine-tiktok-quick-search`** (high) — Use when you have a `username`, `name`, or keyword/hashtag and want to jump straight into the right TikTok search views — returns social-pro
+- **`osint-github-com-2`** (high) — Use when you are on a TikTok video page and want its embedded metadata, or need a quick Yandex reverse-image jump — returns extracted page m
+- **`osint-steam`** (medium) — OSINT tool: OSINT-Steam.
+- **`osint-tactical`** (high) — Use when you have a `username`, Mastodon handle, or domain and want purpose-built recon tools — returns the developer's OSINT toolset (usern
+- **`osintcombine-com-2`** (high) — Use when you have a `username`/`name` and need a method for finding and investigating a subject on Mastodon/the Fediverse — a reputable how-
+- **`osintcombine-com`** (high) — Use when you need a vetted free OSINT tool or methodology guide (alt-tech search, TikTok/username checkers, maps, platform how-tos like Blue
+- **`osintdojo-com`** (high) — Use when you have a `username`/`name` on a platform (e.g. Pinterest) and want a methodology map of every pivot available — returns a visual 
+- **`osintgraph`** (high) — Use when you have an Instagram `username` and want to map the subject's follower/followee network to surface close ties — returns a Neo4j gr
+- **`osintnova`** (high) — Use when you have almost any selector (`username`, `email`, `phone`, `ip-address`, `domain`, `vehicle-plate`, `crypto-wallet`, `image`) and 
+- **`osintteam-blog-2`** (high) — Use when you want a curated shortlist of LinkedIn OSINT tools to try against a subject — returns a listicle of tools that surface `social-pr
+- **`osintteam-blog`** (high) — OSINT tool: osintteam.blog.
+- **`osome-iu-edu`** (high) — Use when you have a `username`, `name` or keyword and want to search across many Mastodon/Fediverse instances at once — returns matching pub
+- **`otzberg-net-find-your-instagram-user-id`** (high) — Use when you have an Instagram `username` and want its stable numeric user ID — returns the account's permanent device-id/social-profile ide
+- **`outx-ai`** (high) — Use when you have a LinkedIn profile URL (`social-profile`) or `username` and want to read it anonymously without your account appearing in 
+- **`overseas-weibo-com`** (high) — Use when you have a `name`/`username` and want to reach Sina Weibo to search for a Chinese-language social profile — returns social-profile,
+- **`palenath`** (high) — Use when you have an `email`, `phone` or `username` and want to enumerate which sites and social accounts it is registered on — returns soci
+- **`parler-archive`** (medium) — OSINT tool: Parler archive.
+- **`parler-archives`** (high) — Use when you have a `name`/`username` tied to the Parler social network and want their now-defunct posts — search the Wayback Machine's capt
+- **`parler-com`** (high) — Use when you have a `username`/`name` and suspect the subject is active on the right-leaning social platform Parler — returns their `social-
+- **`pewresearch-org`** (high) — OSINT tool: pewresearch.org.
+- **`pholder`** (medium) — OSINT tool: Pholder.
+- **`picodash`** (high) — Use when you have a `username`/`name` and want Instagram search/analytics — formerly a location & hashtag search engine, now a paid analytic
+- **`pictame`** (high) — Use when you have an Instagram `username` (or hashtag/`name`) and want to view a public profile's posts, photos and tags without logging in 
+- **`picuki`** (high) — Use when you have an Instagram `username` and want to view/download their public posts, stories and profile without logging in — returns `im
+- **`pinterest-guest-firefox-add-on`** (low) — Firefox add-on for browsing Pinterest without an account.
+- **`pinterest-pin-stats`** (high) — Use when you have a Pinterest `username`/board and want each pin's engagement and creation date to reconstruct activity timing — returns soc
+- **`pitoolbox-com-au-facebook-tool`** (high) — OSINT tool: Pitoolbox.com.au/facebook-tool/.
+- **`pixnoy-com`** (high) — Use when you have an Instagram `username` and want to view/download a public profile's posts, stories and highlights without logging in — re
+- **`pockettube`** (medium) — YouTube Subscription Manager
+- **`pogu-live`** (medium) — Tool that allows you to watch sub only or deleted VODs for free. It works because when a streamer deletes a video, iit is not deleted from T
+- **`pokoinsta-com`** (high) — Use when you have an Instagram `username` and want the target's full-size profile picture without logging in — returns the HD profile `image
+- **`ppl-contact`** (medium) — Use when you have a `name` + `employer-org` (or company `domain`) and want a person's business `email`/`phone` — returns B2B contact details
+- **`prankshit-com`** (high) — OSINT tool: prankshit.com.
+- **`predicta-search`** (high) — Use when you have an `email`, `phone`, `username`, or `name` and want a correlated digital-footprint report of linked accounts across many p
+- **`profile-summary-for-github`** (medium) — Get detailed stats by Github username
+- **`projects-noahliebman-net-listcopy`** (medium) — copy a list made by another user to your Twitter account
+- **`prot1ntelligence`** (medium) — Validate ProtonMail email address, Gather info about ProtonMail user email or PGP Key, Search on the dark web target digital footprints, Che
+- **`proxycurl`** (high) — Use when you have a `name`/`social-profile` and want enriched professional data (employer, role, contact) via API — but note the service has
+- **`psnprofiles`** (high) — Use when you have a PlayStation Network `username` and want a public gaming profile — returns trophy/games activity, country, avatar `image`
+- **`publer-io-2`** (medium) — Use when you have a Threads (Meta) post or profile and want to download its full-resolution photos/media for evidence or analysis — returns 
+- **`publer-io-3`** (high) — Use when you have a `social-profile` (a Threads post/profile URL) and want to archive its video/media before it is deleted — returns the dow
+- **`publer-io`** (high) — Use when you have an Instagram `username`/post URL and want to download public media or gauge audience authenticity without logging in — ret
+- **`pullpush`** (high) — Use when you have a Reddit `username`, subreddit or keyword and want to search historical Reddit comments/submissions Reddit's own search bu
+- **`pushshift-api-guide`** (medium) — OSINT tool: Pushshift API Guide.
+- **`pushshift-api`** (high) — Use when you want archived Reddit posts/comments (including deleted ones) — historically a full Reddit archive, now restricted to Reddit mod
+- **`quarter-tweets`** (medium) — OSINT tool: quarter tweets.
+- **`quickvid-net`** (high) — OSINT tool: quickvid.net.
+- **`qzone-china`** (high) — Use when you have a QQ number/`username` or `name` and want to find a subject's Tencent Qzone social profile — returns social-profile, image
+- **`qzone`** (high) — Use when you have a QQ number/`username` or `name` for a Chinese subject and want their Tencent social profile — returns a `social-profile` 
+- **`r00m101-com`** (high) — OSINT tool: r00m101.com.
+- **`raditube`** (medium) — A search engine that searches the subtitles of about 380 (right/left) radical YouTube channels. You query for example for q says" of "voter 
+- **`react-reddit-search-app`** (low) — React-based Reddit search interface.
+- **`readr-for-reddit`** (low) — Chrome extension for improved Reddit reading.
+- **`recruitryte-com`** (high) — Use when you have a `name` / role / `employer-org` and want a ready-made LinkedIn X-Ray Boolean string to run in Google — returns a search q
+- **`redarcs`** (high) — Use when you have a subreddit or Reddit `username` and want bulk downloadable archives of its submissions and comments — including removed/b
+- **`reddit-comment-lookup`** (high) — Use when you have a Reddit `username` and want to search that account's comment history (by keyword or in bulk) to profile interests, locati
+- **`reddit-comment-search`** (high) — Use when you have a Reddit `username` and want to keyword-search that user's entire comment history — returns matching comments (social-prof
+- **`reddit-downloader`** (medium) — OSINT tool: Reddit Downloader.
+- **`reddit-enhancement-suite-chrome`** (low) — Chrome extension enhancing the Reddit browsing experience.
+- **`reddit-enhancement-suite-firefox`** (low) — Firefox add-on enhancing the Reddit browsing experience.
+- **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.
+- **`reddit-investigator`** (medium) — OSINT tool: Reddit Investigator.
+- **`reddit-persona`** (medium) — OSINT tool: Reddit\_Persona.
+- **`reddit-post-scraping-tool`** (medium) — Simple #python script for scraping post from #Reddit (by keywords and subreddit name)
+- **`reddit-reditr`** (medium) — OSINT tool: Reddit - Reditr.
+- **`reddit-scraper`** (medium) — Crawl posts, comments, communities, and users without login.
+- **`reddit-search-cemulate`** (low) — Alternative Reddit search tool.
+- **`reddit-search-engine`** (medium) — OSINT tool: Reddit Search Engine.
+- **`reddit-search-realsrikar`** (low) — Reddit content search tool.
+- **`reddit-search-reddit-search-surge-sh`** (low) — Reddit content discovery tool.
+- **`reddit-search-tool`** (medium) — OSINT tool: Reddit Search Tool.
+- **`reddit-search`** (medium) — OSINT tool: Reddit Search.
+- **`reddit-shell`** (low) — Command-line-style interface for Reddit.
+- **`reddit-stream`** (low) — Live-stream Reddit comments in real time.
+- **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
+- **`reddit-timer`** (medium) — Get last week's hourly activity schedule for a specific subreddit
+- **`reddit-user-analyser`** (high) — Use when you have a Reddit `username` and want a fast behavioural profile — returns activity stats, top subreddits, posting-time patterns an
+- **`reddit-user-extractor`** (medium) — #python script that allows you to get a complete list of comments by user name on Reddit in CSV format
+- **`reddit-visualization`** (medium) — OSINT tool: reddit visualization.
+- **`reddit`** (high) — Use when you have a `username` and want a subject's full public post/comment history — returns a `social-profile` whose activity leaks `geol
+- **`redditcommentsearch-com`** (medium) — getting a list of all comments by a Reddit user with a certain name
+- **`redditery`** (low) — Explore Reddit posts and comments by criteria.
+- **`redditle-com`** (medium) — OSINT tool: Redditle.com.
+- **`redditp-reddtip`** (low) — Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).
+- **`redditsave-com`** (medium) — Reddit video downloader
+- **`redditsearch-io`** (medium) — Reddit search tool
+- **`redditsfinder`** (medium) — OSINT tool: redditsfinder.
+- **`redditvids`** (low) — Watch videos posted on Reddit.
+- **`reddloader-com`** (medium) — Reddit video downloader
+- **`redective`** (medium) — OSINT tool: Redective.
+- **`redlinecybersecurity-com`** (high) — OSINT tool: redlinecybersecurity.com.
+- **`reeddit`** (low) — Simplified Reddit web interface.
+- **`regvk-com`** (high) — Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for dee
+- **`related-repos`** (medium) — OSINT tool: Related Repos.
+- **`removeddit`** (medium) — OSINT tool: Removeddit.
+- **`removetweets`** (medium) — In recent weeks, I have been seeing more and more accounts deleting their tweets in whole or in part. You can automate this process with thi
+- **`renren-com`** (high) — Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era acc
+- **`report-tree`** (medium) — OSINT tool: Report Tree.
+- **`repos-timeline`** (medium) — Enter #Github username and click Generate to see a timeline with all of the user's repositories and forks they have made.
+- **`repostsleuth`** (medium) — Reddit trends analyzer
+- **`resavr`** (medium) — OSINT tool: ReSavr.
+- **`return-youtube-comment-username`** (medium) — YouTube has recently stopped showing user names in comments. There is an extension that solves this problem.
+- **`rival-iq`** (high) — Use when you have a public `social-profile`/`username` and want its cross-platform posting history, engagement metrics and audience behaviou
+- **`rknight-me`** (high) — Use when you have a Mastodon `username`/handle and want its numeric account ID to unlock API/RSS access to the account's posts — returns the
+- **`rocketreach-co`** (high) — Use when you have a `name` + `employer-org` (or a company domain) and want the subject's professional email, phone and social profiles — ret
+- **`rooms-of-clubhouse`** (low) — OSINT tool: Rooms of Clubhouse.
+- **`ruby`** (medium) — Simple tool for searching videos by keyword in Rumble, BitChute, YouTube and saving results (author, title, link) to CSV file.
+- **`rumble-com`** (high) — Use when you have a `username`/channel name or `name` and want to find and analyze a subject's Rumble video presence — returns the channel p
+- **`savettok`** (medium) — Download TikTok videos (incl. without watermark) for evidence/frame analysis.
+- **`school-or-university`** (high) — Use when you have a `name` and a school/university and want to find the subject's Facebook profile via the education field — returns a `soci
+- **`scoutzen`** (medium) — search twitter lists by keywords
+- **`search-for-a-twitch-channel`** (low) — OSINT tool: Search for a Twitch channel.
+- **`search-linkedin-intelligence-recruitment-software`** (high) — Use when you have a `name`/`employer-org` and want to find someone's LinkedIn profile past LinkedIn's search limits — a free Chrome extensio
+- **`search-noc-social`** (low) — OSINT tool: Search.noc.social.
+- **`search-reddit-comments-by-user`** (medium) — OSINT tool: Search Reddit Comments by User.
+- **`search-reddit`** (medium) — OSINT tool: Search Reddit.
+- **`search-twitter-bios-and-profiles`** (high) — Use when you have a `name`, keyword, employer or location and want to find matching X/Twitter and Bluesky accounts by bio text — returns soc
+- **`search-twitter-users`** (high) — Use when you follow an old Pushshift Twitter-user-search link — the endpoint is gone (404) and Pushshift no longer serves public Twitter dat
+- **`search4faces-com-ch00`** (medium) — reverse image face search by 4 millions 594 thousands #clubhouse avatars.
+- **`searcheddit`** (medium) — OSINT tool: Searcheddit.
+- **`searchisback`** (high) — Use when you have a `name` plus attributes (location, school, employer, interests) and want to find matching Facebook people, events and pos
+- **`searchmy-bio`** (high) — Use when you have a `name`, keyword, link or interest and want Instagram accounts whose bio contains it — returns matching Instagram profile
+- **`searchstream-live`** (low) — OSINT tool: Searchstream.live.
+- **`seart-github-search`** (medium) — Search engine for #Github with a dozen different filters. It has slightly fewer features than the standard Github advanced search, but more 
+- **`secjuice-com-3`** (high) — Use when you're about to investigate a subject on LinkedIn and want a methodology walkthrough — returns techniques for finding and reading `
+- **`seemutualfriendsonfacebook-com`** (high) — Use when you have two or more Facebook friend lists (scraped) and want to find the people they have in common — returns overlapping social-p
+- **`sentiment140`** (high) — OSINT tool: Sentiment140.
+- **`seo-resources-search-engine`** (low) — OSINT tool: SEO Resources Search Engine.
+- **`shabbat`** (high) — Jewish social networking website
+- **`shotstars`** (medium) — OSINT tool: Shotstars.
+- **`simplescraper-osint-airtable`** (low) — Twitter OSINT scraping resources collated in Airtable.
+- **`sinwindie-osint`** (high) — Use when you have a `username`/`social-profile` and need a platform-specific investigation playbook — a curated GitHub repo of per-platform 
+- **`skircle-me`** (high) — Use when you have a Bluesky `username`/handle and want to see who they interact with most — returns an interaction "circle" of their top ~49
+- **`skype-search-engine`** (high) — Use when you have a `username`, `email` or `name` and want to find a Skype account's profile, avatar and location — now largely historical a
+- **`skype`** (medium) — Use when an old lead references a Skype username/account — returns little live intelligence; Skype was retired in May 2025, so treat it as h
+- **`skyzoo-blue`** (high) — Use when you have a Bluesky `username` (handle) and want account statistics, starter-pack membership, and network rankings — returns social-
+- **`slash-tags`** (medium) — tool for recommending YouTube tags and displaying related statistical data from search keyword(s)
+- **`sleeping-time`** (high) — OSINT tool: Sleeping Time.
+- **`small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without`** (medium) — OSINT tool: small tool to retreive vk.com (vkontakte) users hidden metadata (state, access, dates, counts, etc) anonymously (without.
+- **`sn0int-framework-module-for-pornhub`** (medium) — OSINT tool: Sn0int framework module for Pornhub.
+- **`snap-map`** (medium) — OSINT tool: Snap Map.
+- **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
+- **`snapbird`** (medium) — OSINT tool: SnapBird.
+- **`snapchat-multi-viewer-osint-combine`** (medium) — OSINT tool: Snapchat Multi-Viewer | OSINT Combine.
+- **`snapchat-search-enter-username-here`** (medium) — OSINT tool: SnapChat Search (ENTER-USERNAME-HERE).
+- **`snapchat-user-search`** (medium) — OSINT tool: Snapchat User Search.
+- **`snapdex-the-best-snapchat-names-index`** (medium) — OSINT tool: Snapdex: The Best Snapchat Names Index.
+- **`snapdex`** (medium) — OSINT tool: Snapdex.
+- **`snapintel`** (medium) — Python tool to gather information about a Snapchat user.
+- **`snapmap-archiver`** (medium) — OSINT tool: snapmap-archiver.
+- **`snapscraper`** (medium) — OSINT tool: SnapScraper.
+- **`snapthreads-net`** (high) — Use when you have a public Threads post `social-profile`/link and want to download its video for analysis — returns the MP4 (image/face fram
+- **`snaptik-app`** (high) — Use when you have a TikTok video/post URL from a target and want to download it watermark-free for evidence/analysis — returns the MP4/image
+- **`snapvip`** (medium) — OSINT tool: Snapvip.
+- **`snradar`** (medium) — OSINT tool: Snradar.
+- **`snscrape`** (medium) — Tool for search posts and gathering information about users in Twitter, Reddit, Vkontakte, Weibo, Telegram, Facebook, Instagram, Telegram an
+- **`social-blade`** (medium) — help you track YouTube Channel Statistics, Twitch User Stats, Instagram Stats, and much more
+- **`social-downornot`** (high) — OSINT tool: Social DownORNot.
+- **`social-media-osint-tools-collection`** (high) — Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated ca
+- **`social-media-salary-calculator`** (medium) — for YouTube, TikTok, Instagram
+- **`social-mention`** (medium) — OSINT tool: Social Mention.
+- **`social-mentions`** (low) — OSINT tool: Social Mentions.
+- **`social-profiles-finder`** (high) — Use when you have a `name` or `username` and want to surface a person's public social profiles across major networks in one place — returns 
+- **`social-rank-first-follower`** (medium) — OSINT tool: Social Rank First Follower.
+- **`social-search-engine`** (high) — Use when you have a `name` or `username` and want to sweep several social networks at once from one box — returns social-profile links.
+- **`social-stats`** (medium) — OSINT tool: Social Stats.
+- **`social-trends`** (low) — OSINT tool: Social Trends.
+- **`socialbakers`** (high) — OSINT tool: SocialBakers.
+- **`socialbearing`** (high) — Use when you have an X/Twitter `username` and want analytics on their tweets — timeline stats, top tweets, engagement, and posting patterns 
+- **`socialblade`** (high) — Use when you have a social `username`/channel and want public statistics — follower history, estimated account age, rank, and linked handles
+- **`socialdata-api`** (medium) — Unofficial Twitter/X API alternative for data access.
+- **`socialgrep`** (medium) — OSINT tool: SocialGrep.
+- **`socialmedialist-org`** (high) — Use when you have a `username`/`name` and want a checklist of niche and non-Western social networks to hunt it across — returns a reference 
+- **`socmint`** (high) — Use when you are starting social-media intelligence work and want a curated launchpad — a start.me dashboard linking dozens of SOCMINT tools
+- **`soig`** (high) — Use when you have an Instagram `username` and want profile metadata, hashtags, and post details beyond what the profile page shows — returns
+- **`sometag`** (high) — OSINT tool: sometag.
+- **`sotwe-com`** (high) — Use when you have a Twitter/X `username` and want to read their tweets without an X login — returns `social-profile` timeline content, thoug
+- **`sourcinglab-pinterest-search`** (low) — Pinterest search for pins, boards and users.
+- **`sowdust-fb-search`** (high) — Use when you have a `name`/`username` and want to build Facebook search URLs for people, posts, photos-by-location and mutual friends — retu
+- **`spaces-down`** (medium) — Twitter Spaces download service (available after the broadcast ends). Works for quite a long time. It took about 5 minutes to generate an MP
+- **`speak-subtitles-to-youtube`** (medium) — Subtitle dubbing tool with support for several dozen languages and voice variants. Useful for saving time and for education purposes. Works 
+- **`spotify-downloader`** (medium) — download spotify playlist in mp3 from YouTube
+- **`spotlight`** (medium) — OSINT tool: Spotlight.
+- **`sssthreads-pro`** (high) — Use when you have a Threads (Meta) post URL or `username` and want to view/download its public media — but the service is now permanently cl
+- **`ssstik-io`** (medium) — Use when you have a TikTok video URL/`social-profile` and want to save it (watermark-free) without login — returns the downloaded video `ima
+- **`ssstwitter-com`** (high) — Use when you have a tweet/X `social-profile` URL and want to download its video/media for offline analysis and archiving — returns the media
+- **`stalkface`** (high) — Use when you have a Facebook `social-profile` (or numeric ID) and want prebuilt Facebook Graph-search queries for their photos, activity and
+- **`stalkscan`** (high) — Use when you want to run Facebook Graph-search queries against a profile to surface photos, friends and likes — but the tool is defunct (Fac
+- **`star-history`** (medium) — simple tool that shows how the number of stars a repository on #Github has changed over the past three months.
+- **`statflux`** (high) — Use when you have an Instagram `username` and want a public-facing analytics snapshot of the account — returns `social-profile` metrics and 
+- **`stayfriends-de`** (high) — Use when you have a German-speaking subject's `name` and a school and want to place them via a class-reunion network — returns a `social-pro
+- **`steam-community-search`** (low) — OSINT tool: Steam Community :: Search.
+- **`steam-id-finder`** (low) — OSINT tool: Steam ID Finder.
+- **`steam-osint-tool`** (medium) — Enter the link to the user's Steam profile to get a list of his or her closed "friends" and a list of his or her public comments.
+- **`steam-osint`** (medium) — OSINT tool: Steam-OSINT.
+- **`steamdb-info-calculator`** (low) — OSINT tool: steamdb.info/calculator.
+- **`steamid-uk`** (medium) — Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) s
+- **`stegers`** (high) — OSINT tool: Stegers.
+- **`sterraxcyl`** (medium) — Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following coun
+- **`sticktock-com`** (high) — OSINT tool: sticktock.com.
+- **`storiesig`** (high) — Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns s
+- **`story-saver`** (medium) — Download public Instagram Stories, Highlights and Videos.
+- **`storydownloader-app`** (high) — Use when you have an Instagram `username` and want to view/download that public account's stories anonymously — returns image/video story co
+- **`storylooker`** (medium) — View public Snapchat/Instagram stories anonymously.
+- **`storysaver-net`** (high) — Use when you have a public Instagram post/story/reel `url` (from a target's `social-profile`) and want to download the media for offline cap
+- **`storysaver`** (high) — Use when you have a public Instagram `username` and want to view/download their current Stories anonymously — returns Story `image`s/videos 
+- **`streamscharts-com`** (medium) — Use when you have a Twitch/Kick streamer `username` and want their stable numeric user ID plus channel analytics — returns the ID and public
+- **`streamweasels-com`** (high) — Use when you have a Twitch `username` and want its permanent numeric Twitch user/channel ID — returns the stable `device-id`-style ID that s
+- **`stumbleupon`** (high) — Website related to social networking and bookmarking activities
+- **`stweet`** (medium) — Opensource Python library for scraping tweets (by user, by hashtag, by keyword). NO LOGIN OR API KEY REQUIRED.
+- **`subreddit-stats-user-overlap`** (medium) — A tool to find similar subreddits. The higher the score of a subreddit in the list, the higher the probability that users of the original su
+- **`sully-gnome`** (medium) — detailed analysis of #Twitch streamer stats
+- **`tagboard`** (high) — OSINT tool: Tagboard.
+- **`tagdef`** (low) — Use when you have a hashtag from a subject's posts and want to know what it means and who uses it — returns the crowd-sourced definition plu
+- **`tagged-com`** (medium) — Use when you have a `username` or `name` and think the subject uses the Tagged social/dating network — returns `social-profile`, `name`, pho
+- **`tailwind`** (low) — Social media scheduling tool including Pinterest.
+- **`target-log`** (medium) — OSINT tool: Target Log.
+- **`taringa-latin-america`** (high) — Use when you have a `name`/`username` tied to Latin America and want historical posts/profiles from the defunct Taringa network — returns ar
+- **`teddit`** (medium) — OSINT tool: teddit.
+- **`tenai`** (medium) — Simple tool that uncover some followers of a private #Instagram account
+- **`terra`** (medium) — Collect information about twitter and Instagram accounts
+- **`the-bitmoji-avatar-history-enumerator-2`** (high) — Use when you have a Snapchat user's Bitmoji ID and want their historical avatar/outfit changes — returns image snapshots and physical-descri
+- **`the-dots`** (high) — Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `socia
+- **`the-endorser`** (medium) — Use when you have LinkedIn `social-profile` URLs and want a relationship graph built from shared skill endorsements — returns `associate` li
+- **`the-twitter-stream-grab`** (medium) — Full archives of tweets in JSON for a particular month (from 2011, but some months are not available).
+- **`the-visualized`** (medium) — visualize profile tweets to see the most popular from the last month; get info about the use of a particular hashtag (popular tweets, relate
+- **`thread-reader`** (high) — Use when you have an X/Twitter thread `social-profile` URL and want it as one readable, preservable page — returns the full unrolled thread 
+- **`threads-net`** (high) — Use when you have a `username` (usually the subject's Instagram handle) and want their Threads posts, bio and network — returns `social-prof
+- **`threads`** (high) — Use when you have an Instagram/`username` or `name` and want the subject's Threads presence — returns their Threads profile, posts and (shar
+- **`threadsdownloader-com`** (high) — Use when you have a public Meta Threads post URL and want the underlying media file — returns the downloadable video/image/GIF for reverse-s
+- **`threadsphotodownloader-com`** (high) — Use when you have a Meta Threads post URL and want to save its media at full quality — returns the downloadable `image`/video from that `soc
+- **`threadster-app`** (high) — Use when you have a public Threads (Meta) post `url` from a subject's `social-profile` and want to download its video/photo/GIF for offline 
+- **`thumbtube-com-2`** (high) — Use when you have an Instagram video/IGTV post URL and want to save the media for offline analysis — returns the downloaded video/image file
+- **`thumbtube-com`** (high) — Use when you have an Instagram post URL and want to download its photos/videos in full resolution without login — returns the media `image`/
+- **`tikbuddy`** (medium) — TikTok profile analytics
+- **`tikface-com`** (high) — Use when you have a TikTok `username` and want to view/download a profile's videos and pictures anonymously without a TikTok account — retur
+- **`tikrank-com`** (medium) — free tool for comparing and analyzing #TikTok accounts. Available ranking of the most popular users by country (there are more than a millio
+- **`tikstats`** (medium) — detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account
+- **`tiktake-net`** (medium) — TikTok Video Downloader
+- **`tiktok-creative-center-statistics`** (medium) — List of most popular hashtags; songs; creators; videos for different countries and periods.
+- **`tiktok-downloader`** (medium) — OSINT tool: TikTok downloader.
+- **`tiktok-save-addons-mozilla-org`** (high) — Use when you have a TikTok video (from a target's `social-profile`/`username`) and want a local copy for offline analysis — returns the down
+- **`tiktok-scraper`** (medium) — scrapping video from user, trend or hashtag feed, extracting video's or user's metadata, downloading video or music, processing a list of cl
+- **`tiktok-search-engine`** (medium) — OSINT tool: TIKTOK Search Engine.
+- **`tiktok-user-finder`** (high) — Use when you have a TikTok `username` and want that account's metadata — numeric user ID, region, creation date, username-change history and
+- **`tiktok-user-search`** (medium) — OSINT tool: TikTok User Search.
+- **`tiktok-video-downloader-chromewebstore-google-com`** (high) — OSINT tool: tiktok video downloader (chromewebstore.google.com).
+- **`tiktok-video-downloader`** (medium) — OSINT tool: TikTok video downloader.
+- **`tiktokapi`** (medium) — Python - This is an unofficial api wrapper for TikTok.com in python. With this api you are able to call most trending and fetch specific use
+- **`tikvib-com`** (medium) — Use when you have a TikTok `username` and want to view/download their public videos and profile stats anonymously — returns `social-profile`
+- **`tinder-2`** (high) — Use when you have a subject's approximate location and rough identity and want to find their dating-app profile within a radius — returns so
+- **`tokimeki-blue`** (high) — Use when you have a Bluesky `username` (handle) and want a TweetDeck-style, multi-column view of that account's posts, feeds and media to mo
+- **`tokinsights-com`** (medium) — Use when you have a TikTok `username`/handle and want historical follower/engagement analytics and tracked account data — returns social-pro
+- **`tokkit`** (high) — TikTok bulk content/data scraper (CLI).
+- **`toolzu`** (low) — Instagram viewer and analytics tool.
+- **`toutatis-2`** (high) — Use when you have an Instagram `username`/ID and want the obfuscated contact data Instagram holds — returns partially-masked `email` and `ph
+- **`toutatis`** (high) — Use when you have an Instagram `username` and want to pull the account's hidden contact data — returns obfuscated email/phone, the numeric u
+- **`treeverse-2`** (high) — Use when you have an X/Twitter thread or `username` and want to visualize a conversation as a navigable tree to map participants and replies
+- **`trendhero`** (medium) — An Instagram profile search tool with a huge number of filters and the ability to view profile statistics.
+- **`trends-tool`** (low) — OSINT tool: Trends Tool.
+- **`trends24`** (low) — Use when you have a place and time and want to know what was trending on X/Twitter there — returns ranked trending topics by country/city wi
+- **`trendsmap`** (medium) — OSINT tool: TrendsMap.
+- **`trevorfox-com-2`** (high) — Use when you have a LinkedIn post/activity URL (a `social-profile` artifact) and want its true publication timestamp — returns the exact `do
+- **`trevorfox-com`** (high) — Use when you have a Reddit post/comment `social-profile` URL and want its exact creation timestamp — returns precise UTC/local date-time met
+- **`trombi-com`** (high) — Use when you have a `name` (including a maiden name) and a French school/era and want to find the person's classmates-network profile and ph
+- **`truthnest`** (medium) — Use when you have an X/Twitter `username` and want deep account analytics (activity patterns, hashtags, mentions, bot-likelihood signals) — 
+- **`truthsocial-com`** (medium) — Use when you have a `username` or `name` and want to check for a Truth Social presence — returns a `social-profile` with posts, bio, and con
+- **`ttsave-app-2`** (high) — Use when you have a TikTok video or profile URL and want to download the media without watermark or login — returns the video, thumbnail `im
+- **`tumblr-search`** (medium) — OSINT tool: Tumblr Search.
+- **`tumblr-tool`** (medium) — collected posts tagged with a specific term from Tumblr and export to .tab file (opens in Excel) and .GDF (opens in Gephi)
+- **`twazzup`** (medium) — OSINT tool: Twazzup.
+- **`twchat`** (high) — OSINT tool: TwChat.
+- **`twdown-net`** (high) — Use when you have a `social-profile` (a tweet/X post URL) and want to archive its video before deletion — returns the downloaded video/`imag
+- **`tweeds`** (medium) — A very easy-to-use Python library that allows you to collect all of a user's tweets into a CSV/JSON file. Also it's possible to collect twee
+- **`tweeplers`** (medium) — OSINT tool: Tweeplers.
+- **`tweepsmap-unfollows`** (medium) — displayed unsubscribed accounts (list for the one week available for free)
+- **`tweet-archive-search`** (high) — Use when you have a `username` or keyword and want to find historical/archived tweets that the live X search hides — returns `social-profile
+- **`tweet-beaver-friends-following`** (medium) — OSINT tool: Tweet Beaver Friends Following.
+- **`tweet-binder`** (high) — Use when you have a `username`, hashtag, or keyword and want to map who is talking about it on X/Twitter — returns social-profile and associ
+- **`tweet-finder`** (high) — Use when you have a keyword, `name`, or `username` and want tweets/profiles indexed by Google — returns Google-indexed twitter.com/x.com lin
+- **`tweet-machine`** (medium) — Simple #bash script which retrieves links to the deleted (and other) tweets and replies of any Twitter user from WayBackMachine.
+- **`tweet-mapper`** (medium) — OSINT tool: Tweet Mapper.
+- **`tweet-sentiment-visualization`** (medium) — OSINT tool: Tweet Sentiment Visualization.
+- **`tweet-topic-explorer`** (high) — Use when you have an X/Twitter `username` and want to see what they tweet about and who they mention most — returns a topic word-cloud and f
+- **`tweet-topic`** (medium) — OSINT tool: Tweet Topic.
+- **`tweet-tunnel`** (medium) — tool for quick and comfortable viewing old tweet's of someone account
+- **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
+- **`tweetdeck`** (medium) — OSINT tool: Tweetdeck.
+- **`tweetdelete-net`** (high) — OSINT tool: tweetdelete.net.
+- **`tweetfeed`** (medium) — List of IOCs shared today by the #infosec community at Twitter: domains, URLs, IPs, SHA256/MD5 hashes
+- **`tweetmap`** (high) — OSINT tool: TweetMap.
+- **`tweetpaths`** (medium) — OSINT tool: Tweetpaths.
+- **`tweetreach`** (medium) — OSINT tool: Tweetreach.
+- **`tweettioc-com`** (high) — OSINT tool: Tweettioc.com.
+- **`tweeview`** (medium) — Twitter conversation visualization (beta)
+- **`twemex`** (medium) — Twitter sidebar with: quick commands for searching your own tweets, lists, users tweets and replies; quick links to quotes of current tweet,
+- **`twiangulate-analyzing-the-connections-between-friends-and-followers`** (high) — Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, 
+- **`twiangulate`** (medium) — OSINT tool: Twiangulate.
+- **`twicsy-com`** (medium) — OSINT tool: Twicsy.com.
+- **`twiiter-trending-archive`** (medium) — A wide range of options for analyzing #Twitter trending history: 1. See what was popular on a particular day in a particular country or in t
+- **`twint-2`** (low) — Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so us
+- **`twipho`** (medium) — OSINT tool: Twipho.
+- **`twish`** (medium) — very simple, quick, comfortable and nicely designed advanced #Twitter search query builder for #GoogleChrome.
+- **`twitch-database`** (medium) — Following List + Channel Metadata + Role Lookup
+- **`twitch-fckdmca-com`** (low) — OSINT tool: Twitch.fckdmca.com.
+- **`twitch-followage-tool`** (medium) — Enter the Twitch username and get a complete list of channels he/she follows (with start dates)
+- **`twitch-following`** (low) — OSINT tool: Twitch Following.
+- **`twitch-insights`** (medium) — Account stats; Game ranking; Extensions stats; List of all Twitch bot; Check user status by nickname or ID; List of Twitch team (history bef
+- **`twitch-overlap`** (medium) — shows the viewer and audience overlap stats between different channels on Twitch. Currently tracks all channels over 1000 concurrent viewers
+- **`twitch-payout-search`** (low) — OSINT tool: Twitch Payout Search.
+- **`twitch-recover`** (medium) — Twitch VOD tool which recovers all VODs including those that are sub only or deleted.
+- **`twitch-stream-filter`** (medium) — Search streams and filter results by title, game, language, number of viewers.
+- **`twitch-tools-lolarchiver-com`** (high) — Use when you have a Twitch `username` and want its historical name changes and account history — returns prior usernames and profile leads, 
+- **`twitch-tools-rootonline-de`** (high) — Use when you have a Twitch `username` and want to enumerate its followers — returns the follower list with follow dates and account-age filt
+- **`twitch-tools`** (low) — OSINT tool: Twitch Tools.
+- **`twitch-username-and-user-id-addons-mozilla-org`** (medium) — Use when you have a Twitch `username` (or numeric user ID) and want to convert between them to get a stable identifier that survives renames
+- **`twitch-username-search`** (low) — OSINT tool: Twitch Username Search.
+- **`twitchmetrics-net`** (low) — OSINT tool: Twitchmetrics.net.
+- **`twitchtracker`** (low) — OSINT tool: TwitchTracker.
+- **`twitrss`** (medium) — OSINT tool: TwitRSS.
+- **`twitter-3d`** (medium) — 3D viewer of relationships between twitter users.
+- **`twitter-account-detector`** (medium) — A simple and fast Chrome extension that finds all Twitter accounts on a site.
+- **`twitter-archive-parser`** (medium) — In case your Twitter account is blocked, it's usefull to open settings and download account data. This tool extracts the most important info
+- **`twitter-audit`** (low) — Use when you have an X (Twitter) `username` and want a rough estimate of how many of its followers look fake vs real — returns a real/fake f
+- **`twitter-bot-checker`** (low) — OSINT tool: Twitter Bot Checker.
+- **`twitter-chat-schedule`** (high) — Use when you have a subject's topic/interest or a hashtag and want to find the recurring Twitter/X chats and moderators around it — returns 
+- **`twitter-control-panel`** (medium) — A cross-browser extension that allows you to have maximum control over your Twitter feed: Hide retweets, quote tweets, who to follow etc; Re
+- **`twitter-developer-platform`** (medium) — OSINT tool: Twitter Developer Platform.
+- **`twitter-lolarchiver-com`** (high) — Use when you have a Twitter/X `username` or user ID and want its history of handle, display-name, bio, location and website changes — return
+- **`twitter-mentions-map`** (medium) — A world map that shows the locations of users who mention you in their tweets.
+- **`twitter-money-calculator`** (medium) — OSINT tool: Twitter Money Calculator.
+- **`twitter-monitoring`** (high) — Use when you have a Twitter/X `username` or a keyword/hashtag and want a quick browser-based search/monitor without logging in — returns soc
+- **`twitter-name-search-twitter-name-search`** (medium) — OSINT tool: Twitter Name Search (Twitter Name Search).
+- **`twitter-photo-search`** (high) — Use when you have a `name`/`username` or keyword and want to search Twitter/X image content via a prebuilt Google Custom Search Engine — ret
+- **`twitter-scraper`** (medium) — Scrape any #Twitter user profile. Creates an unofficial Twitter API to extract tweets, retweets, replies, favorites, and conversation thread
+- **`twitter-search-engine`** (high) — Use when you have a `name`, `username`, or keyword and want to search Twitter/X content and profiles through a Google Custom Search Engine —
+- **`twitter-search-tool`** (high) — Use when you have a `username`, `name`, keyword, or `geolocation` and want to build advanced Twitter/X search queries without a Twitter acco
+- **`twitter-search`** (high) — Use when you have a `name`, `username`, keyword, place, or date range and want to surface matching public posts on X (Twitter) — returns twe
+- **`twitter-shadow-ban-checker`** (medium) — If you suddenly notice that your account's tweets have decreased in views and the flow of audience has slowed down, it's worth checking to s
+- **`twitter-shadowban-test`** (medium) — OSINT tool: Twitter Shadowban Test.
+- **`twitter-trending-hashtags-and-topics`** (high) — Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — return
+- **`twitter-url-scraper`** (medium) — A simple tool for analyzing twitter conversations (and other pages). Get profile pictures, user names and the text of the conversation's twe
+- **`twitter-video-download-com`** (high) — OSINT tool: twitter-video-download.com.
+- **`twitter-video-downloader`** (medium) — Download videos from X (formerly Twitter) by converting tweet URLs into downloadable video links.
+- **`twitter-x-advanced-search`** (medium) — Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criter
+- **`twitter-x-location-search`** (medium) — Search for geocoded tweets by their distance from some coordinates.
+- **`twitterfall`** (medium) — OSINT tool: Twitterfall.
+- **`twittertrails-com`** (high) — Use when you have a claim/rumor or hashtag and want to analyze how it spread on Twitter and how skeptical the audience was — but this .com d
+- **`twittervideodownload-com`** (medium) — Use when you have a `social-profile` (a Twitter/X tweet URL) and want the underlying video/GIF file — returns the downloadable MP4 media for
+- **`twitterwebviewer-com`** (high) — Use when you have an X/Twitter `username` and want to read the profile, tweets, and media without logging in — returns social-profile conten
+- **`twitwork`** (medium) — Electron/Node.js desktop app to monitor a live Twitter stream.
+- **`twlets`** (medium) — OSINT tool: Twlets.
+- **`twstalker-com`** (high) — Use when you have a Twitter/X `username` and want to view its public profile and tweets without logging in — returns the public profile, twe
+- **`twtdata-download-twitter-data`** (low) — Download Twitter follower/following data in CSV format.
+- **`twxplorer`** (medium) — OSINT tool: twXplorer.
+- **`udemy-video-playback-speed`** (medium) — A simple extension that changes the speed of playing video courses on #Udemy.
+- **`uk-pinterest-com`** (high) — Use when you have a `username` or `name` and want a subject's Pinterest boards/pins — returns a `social-profile` whose boards leak interests
+- **`uncensor-cc`** (medium) — OSINT tool: Uncensor.cc.
+- **`unfollower-stats`** (medium) — iOS App that tracking unfollowers and show nofollowersback and unactive followers for your Twitter account
+- **`universal-reddit-scraper-urs`** (high) — Use when you have a Reddit `username` (or subreddit) and want their full post/comment history exported for analysis — returns activity that 
+- **`universal-scammer-list`** (high) — Use when you have a Reddit `username` and want to check whether it appears on the community-maintained cross-subreddit scammer/banned list —
+- **`unlistedvideos-com`** (medium) — OSINT tool: Unlistedvideos.com.
+- **`untwitch-com`** (medium) — Twitch video downloader
+- **`urlebird-com-2`** (high) — Use when you have a TikTok `username` and want to view their profile, videos, followers and bio anonymously without a TikTok account — retur
+- **`us-twitter-trend-calendar`** (medium) — OSINT tool: US Twitter Trend Calendar.
+- **`username-availability`** (low) — OSINT tool: Username Availability.
+- **`uvrx`** (high) — OSINT tool: UVRX.
+- **`viddex-video-downloader-chrome-google-com`** (high) — OSINT tool: viddex video downloader (chrome.google.com).
+- **`vidnice`** (medium) — OSINT tool: Vidnice.
+- **`vimeo-search-tool`** (medium) — Use when you have a `username`, `name`, or keyword and want to build advanced Vimeo searches for people and videos — returns `social-profile
+- **`vk-city4me-com`** (medium) — tracking user online time
+- **`vk-com-2`** (high) — Use when you have a `name` or `username` (especially for a Russian/CIS-linked subject) and want to find their VKontakte profile — returns `s
+- **`vk-community-search`** (high) — Use when you have a keyword, place or interest (`name`) and want to find VKontakte groups/communities a subject may belong to — returns soci
+- **`vk-people-search`** (high) — Use when you have a `name` (plus city/school/employer) for a Russian/CIS subject and want their VKontakte profile — returns profiles filtera
+- **`vk-search-engine`** (high) — Use when you have a `name`/`username` and want to search VKontakte (VK) profiles and content via a pre-scoped Google Custom Search Engine — 
+- **`vk-watch`** (high) — OSINT tool: VK.watch.
+- **`vk5`** (high) — Use when you have a VKontakte profile (`social-profile` id/URL) and want to surface hidden friends, activity, likes, and photos — returns as
+- **`vsco-co`** (high) — Use when you have a `username` and want to view a person's public photo grid and profile without an account — returns social-profile, images
+- **`watch-frame-by-frame`** (low) — OSINT tool: watch frame by frame.
+- **`watools`** (high) — Use when you have a `phone` number and want to confirm it's on WhatsApp, grab its profile photo, and (via WA Watcher) track online activity 
+- **`web-stagram-com`** (high) — Use when you have an Instagram `username` and want a web-based public-profile viewer — but the domain no longer resolves, so treat as defunc
+- **`webasha-com`** (high) — Use when you're investigating an Instagram account (`username`/`name`) and want a step-by-step methodology (Google dorking, reverse image, s
+- **`websta-instagram-analytics`** (high) — OSINT tool: WEBSTA - Instagram Analytics.
+- **`weibo-china`** (high) — Use when you have a Chinese-context `name`/`username` and want their microblog presence — returns the `social-profile`, posts, photos (`imag
+- **`weibo-com`** (high) — Use when you have a username or name and want to find a subject's Chinese-language social presence — returns social profiles, posts, photos 
+- **`whopostedwhat-com`** (high) — Use when you have a `name`/keyword and a date and want Facebook posts from that exact day/range — returns social-profile and post leads arou
+- **`whotwi`** (medium) — OSINT tool: whotwi.
+- **`wikimedia-cloud-page-views`** (medium) — The tool shows how many times a particular page on WikiPedia has been visited within a certain period of time. It also allows you to compare
+- **`wikipedia-cross-lingual-image-analysis`** (medium) — A simple tool that allows to evaluate the content of different language versions of an #wikipedia article about the same subject or concept 
+- **`wikistalk-analyze-wikipedia-user-s-activity`** (medium) — OSINT tool: WikiStalk : Analyze Wikipedia User's Activity.
+- **`wikit`** (medium) — A tool for searching and reading #Wikipedia articles from the #CLI. The main benefit of it is fewer distractions from work. You don't have t
+- **`wikiwho`** (medium) — Database of edits made to #Wikipedia using IP ranges of organizations, government agencies and companies (FBI, NATO, European Parliament, et
+- **`wisdom-of-reddit`** (low) — Curated Reddit quotes and comments.
+- **`wiza-co`** (medium) — Use when you have a `name` + `employer-org` or a LinkedIn `social-profile` and want a verified work `email` and `phone` — returns `email`, `
+- **`wolfram-alpha-facebook-report`** (high) — OSINT tool: Wolfram Alpha Facebook Report.
+- **`worldcam-search-instagram-by-location`** (high) — Use when you have a `geolocation`/`address` and want to see public Instagram photos taken there — returns images, poster usernames and socia
+- **`www-linkedin-com-pub-dir-people-search`** (high) — Use when you have a `name` (optionally + employer) and want to find a subject's LinkedIn profile — returns their profile, current/past emplo
+- **`x-com-3`** (high) — Use when you want curated LinkedIn/people-finding OSINT technique tips from the @cyb_detective account — returns pointers to `social-profile
+- **`x-com-4`** (high) — Use when you have a `username` or `name` and want the subject's X (Twitter) profile and posts via the platform's own search — returns `socia
+- **`x-com-6`** (high) — Use when you have an `email`, `phone`, or `username` and want to confirm it belongs to an X/Twitter account — returns account existence plus
+- **`xboxgamertag`** (medium) — Search gamertags, see games played and recorded game clips
+- **`xcancel-nitter-mirror`** (high) — Use when you have an X/Twitter `username` and want to read their tweets, replies, and media without logging in — returns the public timeline
+- **`xiaohongshu-com`** (high) — Use when you have a `username` or `name` and want to find a subject on Xiaohongshu (RED / Little Red Book), China's major lifestyle social p
+- **`xingdumper`** (medium) — The Xing job and networking service has almost 20 million users! Here is a simple script that allows you to get a list of employees register
+- **`xplore-x-vercel-app`** (high) — Use when you have a `geolocation` (a point/area of interest) and want to see live X/Twitter posts from that place — returns geographically-f
+- **`xquik`** (high) — Use when you have a `username` or keyword and want to search public X (Twitter) posts and export an account's follower list — returns `socia
+- **`yaseeker`** (medium) — Get information about [http://Yandex.ru](http://Yandex.ru) account by login
+- **`yesitsme`** (high) — Use when you have a `name` plus a partial `email` or `phone` and want to find the matching Instagram account — returns the username/social-p
+- **`yoodownload-com`** (high) — Use when you have a `social-profile` or post/video URL and want to download the media for offline analysis — returns image/video files and m
+- **`yotube-channel-search`** (medium) — Tool for searching YouTube channels by keywords in the name and creation date. The result is a table with the channel ID, name, description,
+- **`youfilter-youtube-advanced-search-filter`** (medium) — An extension that displays #YouTube search results in a table with very detailed information about each video (including quick links to the 
+- **`youglish`** (medium) — Type a random phrase in English and listen to native speakers pronounce it in YouTube videos.
+- **`yout`** (medium) — OSINT tool: Yout.
+- **`youtube-actual-top-comments`** (medium) — The main drawback of the standard #YouTube comment display is that it does not sort comments by the number of likes, but simply shows popula
+- **`youtube-booster`** (medium) — This extension selects frames from videos and generates quick links to find them on Google and TinEye!
+- **`youtube-caption-searcher`** (medium) — Well down tool for searching in #YouTube video subtitles by keyword. Use Enter to move forward and Shift+Enter to move back.
+- **`youtube-channel-archiver`** (medium) — Tool for automation downloading video, thumbnails and comments text from target YouTube channel (or channels).
+- **`youtube-channel-id`** (medium) — OSINT tool: Youtube channel ID.
+- **`youtube-channel-search`** (medium) — OSINT tool: Youtube Channel Search.
+- **`youtube-comment-downloader`** (medium) — easy to install and fast tool for downloading YouTube comments in txt/json. Does NOT require authorization or API keys.
+- **`youtube-comment-finder`** (medium) — OSINT tool: YouTube Comment Finder.
+- **`youtube-comment-search-chrome-extension`** (medium) — OSINT tool: YouTube Comment Search Chrome Extension.
+- **`youtube-comment-sorting`** (medium) — OSINT tool: YouTube comment Sorting.
+- **`youtube-comments-analyze`** (medium) — Download detailed information about YouTube video comments to a .tab or .gdf
+- **`youtube-comments-downloader`** (medium) — OSINT tool: Youtube Comments Downloader.
+- **`youtube-dl`** (medium) — OSINT tool: youtube-dl.
+- **`youtube-geo-search-tool`** (medium) — OSINT tool: Youtube Geo Search Tool.
+- **`youtube-lookup`** (medium) — Simple tool for gathering info about video: Content details, Snippet details, Statistics, Status, Thumbnails
+- **`youtube-metadata-bulk`** (medium) — OSINT tool: YouTube Metadata Bulk.
+- **`youtube-periscope-twitch-and-dailymotion`** (medium) — OSINT tool: Youtube, Periscope, Twitch & Dailymotion.
+- **`youtube-playlist-len`** (medium) — Find out the total time of all the videos in playlist
+- **`youtube-scraper`** (medium) — Extract and download channel name, likes, number of views, and number of subscribers. Scrape by keyword or URL.
+- **`youtube-screen-capture`** (medium) — allows you to download a stream in pieces and then merge them
+- **`youtube-search-tool`** (medium) — OSINT tool: YouTube search tool.
+- **`youtube-timestamp-comments`** (medium) — extension finds all the timestamps in YouTube video comments and arranges them in chronological order.
+- **`youtube-tool`** (medium) — #Python library for: - extracting subtitles by video ID or link (in different languages); - list all the video's contained in playlist; - li
+- **`youtube-transcript-api`** (medium) — Get the transcript/subtitles for a given #YouTube video (by ID from adress bar). It also works for automatically generated subtitles and sup
+- **`youtube-video-upload-time`** (medium) — OSINT tool: YouTube video upload time.
+- **`youtube-whisperer`** (medium) — Transcribe YouTube video
+- **`youtube-word-search`** (medium) — An extension that helps you find at what second in the video a certain word is heard. It's possible to search not only by one word, but by t
+- **`ytcomments-klostermann-ca`** (low) — OSINT tool: Ytcomments.klostermann.ca.
+- **`ytcs`** (medium) — google chrome extension to search YouTube comments without leaving the site (link to source code)
+- **`ytgrep`** (medium) — A tool for quick text search of subtitles in YouTube videos. Supports regular expressions and searching across multiple videos.
+- **`zalo-me`** (high) — Use when you have a Vietnamese `phone` number or `name` and want to check for a Zalo messaging account and its public profile — returns a so
+- **`zeoob-com`** (high) — Use when you have a screenshot of a Snapchat/Instagram/WhatsApp chat or post and want to judge whether it could be fabricated — this is a fa
+- **`zesty-facebook-search`** (high) — Use when you have a Facebook profile `name`/`username` (or numeric profile ID) and want to build Graph-Search-style query URLs to surface a 
+- **`zspotify`** (medium) — Spotify track downloader. Download mp3 by link or by keywords
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

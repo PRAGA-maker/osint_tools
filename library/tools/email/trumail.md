@@ -10,7 +10,7 @@ bestFor: Open-source email verification/validation API (syntax, MX, SMTP, dispos
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 - domain
 status: down
 pricing: freemium

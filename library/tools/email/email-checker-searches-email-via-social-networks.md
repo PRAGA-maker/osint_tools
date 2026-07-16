@@ -11,7 +11,7 @@ selectorsIn:
 - email
 selectorsOut:
 - social-profile
-- metadata
+- metadata-exif
 status: unknown
 pricing: free
 costNote: The mail-check page was offered free by ManyContacts; ManyContacts as a product has wound down, so availability is uncertain.

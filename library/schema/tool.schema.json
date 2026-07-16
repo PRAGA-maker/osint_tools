@@ -9,7 +9,7 @@
   "definitions": {
     "selector": {
       "type": "string",
-      "enum": ["name", "username", "email", "phone", "image", "face", "geolocation", "address", "ip-address", "mac-address", "domain", "social-profile", "vehicle-plate", "vin", "employer-org", "associate", "dob", "physical-description", "document-id", "crypto-wallet", "device-id", "metadata-exif"]
+      "enum": ["name", "username", "email", "phone", "image", "face", "geolocation", "address", "ip-address", "mac-address", "domain", "social-profile", "vehicle-plate", "vin", "employer-org", "associate", "dob", "physical-description", "document-id", "crypto-wallet", "device-id", "metadata-exif", "password"]
     }
   },
   "properties": {

@@ -8,11 +8,11 @@ path:
 - email
 bestFor: Parsing raw email headers to extract the originating IP and the chain of relay servers.
 selectorsIn:
-- metadata
+- metadata-exif
 selectorsOut:
 - ip-address
 - domain
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free web tool; DNS Checker monetizes with ads, no account needed.

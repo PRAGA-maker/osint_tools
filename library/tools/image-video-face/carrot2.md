@@ -11,7 +11,7 @@ selectorsIn:
 - name
 - username
 selectorsOut:
-- metadata
+- metadata-exif
 - social-profile
 status: live
 pricing: free
@@ -23,7 +23,8 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Carrot2 is a real, long-running open-source search-results clustering engine. It clusters text results, not images — the image-video category placement is a harvest artifact.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: none
 api: true
 localInstall: true

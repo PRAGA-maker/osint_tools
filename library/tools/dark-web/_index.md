@@ -8,13 +8,119 @@ kind: group-index
 
 ## Sub-groups
 - **`clients/`** — 3 skill(s) below.
-- **`discovery/`** — 7 skill(s) below.
+- **`discovery/`** — 4 skill(s) below.
 - **`general-info/`** — 3 skill(s) below.
-- **`tor-directories/`** — 1 skill(s) below.
 - **`tor-search/`** — 2 skill(s) below.
 
 ## Skills here
+- **`200-plus-dark-web-links`** (low) — OSINT tool: 200+ Dark Web Links.
+- **`4-ever-proxy`** (low) — OSINT tool: 4 Ever Proxy.
+- **`activetk`** (low) — OSINT tool: ActiveTK.
+- **`ahmia-link-graph`** (low) — Enter the name of the site in the .onion domain zone and see what other sites in the #onion domain zone it is associated with.
+- **`aleph-open-search`** (medium) — OSINT tool: Aleph Open Search.
+- **`alpha-card-seller`** (low) — OSINT tool: Alpha Card Seller.
+- **`ancestor-search`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database at the national level
+- **`andi`** (medium) — AI search assistant, ad-free and privacy-focused
+- **`anz-standard-industrial-classification`** (medium) — Website that identifies the industrial sector classification across the country at the national level
+- **`astra-guns`** (low) — OSINT tool: Astra Guns.
+- **`bitpharma`** (low) — OSINT tool: BitPharma.
+- **`black-market`** (low) — OSINT tool: Black Market.
+- **`blockpath-com`** (low) — OSINT tool: Blockpath.com.
+- **`browseriling`** (low) — OSINT tool: Browseriling.
+- **`canadian-numbering-administrator`** (medium) — Canadian Numbering Administrator site providing regulatory telecommunications information and listing assigned carrier codes
+- **`cannabisuk`** (low) — OSINT tool: CannabisUK.
+- **`centre-for-investigative-journalism`** (medium) — Resource and information website for investigative journalists
+- **`charity-navigator`** (medium) — Large US-based charity evaluator
+- **`charlieuk`** (low) — OSINT tool: CharlieUK.
+- **`cpic-stolen-property-search`** (medium) — Canadian Police Information Centre stolen vehicle and property search
+- **`credit-card-center`** (low) — OSINT tool: Credit Card Center.
+- **`crypto-storm`** (low) — OSINT tool: Crypto Storm.
+- **`dargle`** (low) — OSINT tool: Dargle.
+- **`dark-fail`** (low) — List of several dozen services in the .onion domain (marketplaces, email clients, VPN services, search engines) with up-to-date links and st
+- **`dark-tracer`** (low) — OSINT tool: Dark Tracer.
+- **`dark-web-scraper`** (low) — Specify the start link and depth of crawl to research the .onion website for sensitive data (crypto wallets, API keys, emails, phone numbers
+- **`darknet-market-list`** (low) — OSINT tool: Darknet Market List.
+- **`darkscrape`** (low) — OSINT tool for scraping dark websites (.onion).
+- **`darkweb-archive`** (low) — Free simple tool that allows you to download website files in the .onion domain zone as an archive with html, css, javascript and other file
+- **`darkweb-forums`** (low) — OSINT tool: Darkweb Forums.
+- **`darkwebdaily`** (low) — OSINT tool: DarkWebDaily.
+- **`daunt-link`** (low) — OSINT tool: daunt.link.
+- **`dcdutchconnectionuk`** (low) — OSINT tool: DCdutchconnectionUK.
+- **`dedope`** (low) — OSINT tool: DeDope.
+- **`deep-money-transfer`** (low) — OSINT tool: Deep Money Transfer.
+- **`deep-search`** (low) — OSINT tool: Deep Search.
+- **`discounted-apple-products`** (low) — OSINT tool: Discounted Apple Products.
+- **`eucanna`** (low) — OSINT tool: EuCanna.
+- **`federal-bureau-of-investigations-value`** (medium) — FBI Records Vault of 6,700 documents and other media
+- **`ftse-industry-classification-benchmark-united-states`** (medium) — Website that identifies the industrial sector classification across the country at the national level
+- **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
+- **`github-danaxscully`** (low) — OSINT tool: Github - DanaXScully.
+- **`global-security`** (medium) — Global Security database of defense, space, intelligence and homeland security news
+- **`hidden-guns`** (low) — OSINT tool: Hidden Guns.
+- **`honor-guns`** (low) — OSINT tool: Honor Guns.
+- **`human-trafficking-search`** (medium) — Search portal for information on human trafficking with a view to raising awareness and prevention
+- **`i2p-invisible-internet-project`** (low) — OSINT tool: I2P - Invisible Internet Project.
 - **`iaca-dark-web-investigation-support`** (medium) — Federated dark web investigation support and discovery
-- **`web-o-proxy`** (medium) — Legacy gateway access reference for onion destinations
+- **`inmates-plus`** (medium) — Free inmate locator for state and county jails, with arrest records
+- **`international-organization-for-standardization-catalogue`** (medium) — Website that identifies the worlwide industrial sector standards for materials and quality assessments
+- **`kilos-darknet-search-engine`** (low) — OSINT tool: KILOS Darknet Search Engine.
+- **`linkbaseorg`** (low) — OSINT tool: LinkBaseORG.
+- **`mail2tor`** (low) — OSINT tool: Mail2Tor.
+- **`medina-county-auditor`** (medium) — Media County Auditors website, providing information regarding property records and GIS tax maps
+- **`money-center`** (low) — OSINT tool: Money Center.
+- **`mullvad-vpn`** (low) — OSINT tool: Mullvad VPN.
+- **`naval-open-source-intelligence`** (medium) — Operational naval news curated from open source intelligence
+- **`newsworld-usa`** (medium) — Comprehensive news aggregator for major online news
+- **`north-american-industry-classification-system-naics-canada`** (medium) — Website that identifies the industrial sector classification across the country at the national level
+- **`north-american-sic-structure-united-states`** (medium) — Website that identifies the industrial sector classification across the country at the national level
+- **`onion-engine`** (low) — OSINT tool: Onion Engine.
+- **`onion-land`** (low) — OSINT tool: Onion Land.
+- **`onion-search-engine`** (low) — OSINT tool: Onion search engine.
+- **`onion-search`** (low) — OSINT tool: Onion Search.
+- **`onions-darknetlive`** (low) — OSINT tool: Onions - Darknetlive.
+- **`onionsearch`** (low) — OSINT tool: onionsearch.
+- **`osint-me-1`** (low) — OSINT tool: osint.me 1.
+- **`osint-me-2`** (low) — OSINT tool: osint.me 2.
+- **`osint-me-3`** (low) — OSINT tool: osint.me 3.
+- **`pasta`** (low) — Pastebin scraper, which generates random paste addresses and checks if there is any text in them.
+- **`pastebin-bisque`** (low) — Command line #python tool, which downloads all the pastes of a particular #Pastebin user.
+- **`pathfinder`** (low) — OSINT tool: Pathfinder.
+- **`peoples-drug-store`** (low) — OSINT tool: Peoples Drug Store.
+- **`pirate-bay`** (low) — OSINT tool: Pirate Bay.
+- **`pitch`** (low) — OSINT tool: Pitch.
+- **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
+- **`raklet`** (low) — OSINT tool: Raklet.
+- **`ransomware-darknet-websites`** (low) — OSINT tool: Ransomware Darknet websites.
+- **`ransomware-group-sites`** (low) — OSINT tool: Ransomware Group Sites.
+- **`ransomwatch`** (low) — OSINT tool: ransomwatch 👀 🦅.
+- **`riseup`** (low) — OSINT tool: RiseUp.
+- **`rooted`** (low) — OSINT tool: Rooted.
+- **`search-systems-public-records-us`** (medium) — Use when you have a `name` (and rough `geolocation`) and need to find the right official US/county public-records portal — a directory that 
+- **`social-security-number-validator`** (medium) — Site offering social security number search for validation purposes
+- **`stark-county-auditor`** (medium) — Stark County Auditors website offering a property search with map capabilities by parcel number, owner, address and intersection, with advan
+- **`state-of-delaware-professional-license-validator`** (medium) — State of Delawares professional license validator
+- **`swp-cx`** (low) — OSINT tool: swp.cx.
+- **`tails-the-amnesic-incognito-live-system`** (low) — OSINT tool: TAILS - The Amnesic Incognito Live System.
+- **`the-hidden-wiki`** (low) — OSINT tool: The Hidden Wiki.
+- **`thedevilseye`** (low) — Search links in #darknet (.onion domain zone) from command line without using a Tor network.
+- **`tool-path`** (low) — OSINT tool: Tool \| path.
+- **`top-guns`** (low) — OSINT tool: Top Guns.
+- **`tor-link`** (low) — OSINT tool: tor.link.
+- **`tor-mail`** (low) — OSINT tool: Tor Mail.
+- **`tor-wiki`** (low) — OSINT tool: Tor Wiki.
+- **`tor2web-tor-hidden-services-gateway`** (low) — OSINT tool: Tor2Web: Tor Hidden Services Gateway.
+- **`torbox`** (low) — OSINT tool: TorBox.
+- **`torry-io`** (low) — OSINT tool: torry.io.
+- **`tweepi`** (medium) — Twitter monitor and search tool
+- **`uk-guns-and-ammo`** (low) — OSINT tool: UK Guns & Ammo.
+- **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Website that identifies the industrial sector classification across the country at the national level
+- **`us-inmate-locator`** (medium) — Inmate locator for US states
+- **`vocalink`** (medium) — UKs national payment infrastructure operator - provides industry research and white papers
+- **`vorm-web`** (low) — OSINT tool: Vorm Web.
+- **`western-union-agent-locator`** (medium) — Search tool for locating Western Union agent locations worldwide
+- **`wikieducator`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
+- **`witchdoctor-new-zealand`** (medium) — Website related to tech reviews
+- **`world-real-time-air-quality-index`** (medium) — Real-time air pollution index, ranking regions by air quality
+- **`ycombinator`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

@@ -7,8 +7,13 @@ category: geolocation
 path:
 - geolocation
 bestFor: Full-featured free/open-source desktop GIS for layering, measuring and analyzing geospatial data.
-selectorsIn: [geolocation, address, metadata]
-selectorsOut: [geolocation, metadata]
+selectorsIn:
+- geolocation
+- address
+- metadata-exif
+selectorsOut:
+- geolocation
+- metadata-exif
 status: live
 pricing: free
 opsec: passive
@@ -19,12 +24,14 @@ bestInteractionPattern: desktop-app
 trust: trusted
 trustNote: Flagship OSGeo project, widely used in government, academia and professional OSINT; open source and actively maintained.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: true
 registration: false
-aliases: [Quantum GIS]
+aliases:
+- Quantum GIS
 tags:
 - geospatial-research-and-mapping-tools
 source: awesome-osint

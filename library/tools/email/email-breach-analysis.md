@@ -10,7 +10,7 @@ bestFor: Checking whether an email address shows up in known breaches and what c
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free single-address breach exposure check (Inoitsu); no account required.

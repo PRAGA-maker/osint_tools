@@ -13,7 +13,7 @@ selectorsOut:
 - social-profile
 - name
 - username
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: The web search tool page is free; Bazzell's books/courses are paid but not required to use it.

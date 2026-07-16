@@ -23,7 +23,7 @@ trust: unverified
 trustNote: geoinfer.com returned HTTP 404 on review; the tool could not be confirmed to exist or function. The name implies geographic inference (possibly image-to-location), but this is not verified — do not assume capabilities.
 missingPersonsRelevance: medium
 coverage: []
-auth: unknown
+auth: none
 api: false
 localInstall: false
 registration: false

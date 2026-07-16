@@ -7,8 +7,6 @@ kind: group-index
 # public-records/employee-profiles-and-resumes
 
 ## Skills here
-- **`cvgadget`** (medium) — Finding publicly posted resumes and CVs via Google X-Ray search
-- **`jobster`** (medium) — Job listing and professional profile search (historical)
 - **`linkedin`** (medium) — Professional background research, employee enumeration, and corporate structure mapping
 - **`recruitem`** (medium) — X-Ray searching LinkedIn and other platforms for employee and candidate profiles
 - **`xing`** (medium) — Professional background research for German and European contacts

@@ -13,5 +13,228 @@ kind: group-index
 - **`email-verification/`** — 9 skill(s) below.
 - **`mail-blacklists/`** — 1 skill(s) below.
 
+## Skills here
+- **`aarya`** (high) — Use when you have an `email` and want its digital footprint — which platforms it's registered on plus Google Maps contributions/reviews — re
+- **`account-live-com`** (high) — Use when you have an `email` and want to confirm whether it is a registered Microsoft/Outlook/Hotmail account — returns account existence pl
+- **`addresssearch-email-and-address-lookup-united-states`** (high) — Use when you have an `email` (or `name`) in the US and want the linked mailing address, or a reverse-email match — returns address and email
+- **`alerts-bar`** (medium) — Use when you have an `email` or `domain` and want to know if its credentials surfaced in dark-web/breach markets — returns breach-exposure i
+- **`amazon-co-uk-2`** (medium) — Use when you have an `email` and want to test whether it is a registered Amazon UK account via the sign-in / account-assistance flow — retur
+- **`anonymailer-net`** (low) — Use when an investigation needs to send an anonymous/spoofed email from a sock-puppet identity (pretext/outreach), not when you need to look
+- **`anonymouse-org`** (low) — Use when an investigation needs to send an anonymous email via Anonymouse's AnonEmail — an outbound pretext tool, not an email lookup; the e
+- **`anymailfinder-com`** (high) — Use when you have a `name` plus an `employer-org`/`domain` (or a LinkedIn URL) and need that person's verified work `email` — returns a deli
+- **`aol-webmail-usa`** (high) — Use when you have an `@aol.com` `email` and want to confirm the account exists and gauge account age — returns account-existence and social-
+- **`app-profiler-me`** (high) — Use when you have an `email` (or `phone`/`username`) and want the registered accounts and social profiles tied to it — returns linked servic
+- **`arkowl-com`** (high) — Use when you have an `email` or `phone` and want enrichment — real name, aliases, account age, linked services and breach exposure — returns
+- **`ashley-madison-hacked-email-checker`** (low) — Use when you have an `email` and want to know if it appears in the 2015 Ashley Madison breach — returns a single yes/no exposure flag for th
+- **`avatar-api`** (high) — Use when you have an `email` and want the name, profile photo, and linked public profiles tied to it across 20+ platforms — returns name, im
+- **`behindtheemail-com`** (high) — Use when you have an `email` and want the person behind it — name, jobs, education, social profiles, location and breach exposure — returns 
+- **`blacklist-checker`** (low) — Use when you have an `ip-address`, `domain`, or `email` and want to know if its mail infrastructure is on spam blacklists — returns per-list
+- **`blog-mystrika-com`** (low) — Use when you want to read a vendor blog explaining how email open/IP tracking pixels work — it is reference reading, not a lookup tool you f
+- **`bloopbase`** (low) — Use as a (currently unreachable) Keybase-hosted email/OSINT resource — the host does not resolve, so treat as down and substitute another em
+- **`breachchecker-com`** (high) — Use when you have an `email` and want the history of data breaches it appears in, including which fields leaked — returns breach names and e
+- **`breachdirectory-org`** (high) — Use when you have an email, username, or domain and want to know which public data breaches it appears in — returns breach names and (often 
+- **`briteverify-email-verification`** (medium) — Use when you have an email address and want to confirm it is real/deliverable (mailbox exists, domain valid) — returns a deliverability verd
+- **`buster`** (high) — Use when you have an `email` and want linked accounts, breaches, pastes and reverse-WHOIS domains — returns social-profile, name and domain 
+- **`checkleaked-cc`** (high) — Use when you have an email, username, password, IP, or domain and want to find it across aggregated breach datasets — returns matching breac
+- **`cleantalk-email-ip-check`** (low) — Free email/IP spam-blacklist reputation check.
+- **`contacthelp-com`** (low) — Use when you want company customer-service contact details (phone, support email); despite its breach-site tag it is a consumer contact dire
+- **`credenshow`** (high) — Use when you have an email, username, phone, or domain and want to search aggregated breach/credential datasets — returns matching leaked re
+- **`cybernews-personal-data-leak-check`** (medium) — Free leak-checker for emails against aggregated breach datasets.
+- **`databreach-com`** (medium) — Use when you want to check whether an email/username appears in known breaches; harvested as a breach-account site but its exact function is
+- **`ddosecrets`** (medium) — Use when you have a name, email, org, or topic and want to search a large archive of leaked/hacked document datasets — returns links to sour
+- **`deepsearch`** (medium) — Use when you want to search Tor hidden-service (.onion) content for a name, username, email, or keyword tied to a subject — returns links to
+- **`defastra`** (high) — Use when you have an `email` or `phone` and want a fraud/risk score plus the social and digital profiles registered to it — returns linked `
+- **`didtheyreadit-com`** (low) — Use when you (as sender) want to know if an email you sent was opened and from where — an invisible read-receipt/tracking service that retur
+- **`digify-com`** (low) — Use when you want to share a document and track who opens it, when, and from where — a document-DRM/tracking product (the harvested URL is i
+- **`disposable-email-address-dea-detector`** (medium) — Use when you have an email or its domain and want to know if it is a disposable/throwaway address — returns a yes/no disposable verdict, not
+- **`dnschecker-org`** (high) — Use when you have raw email headers and want to trace the sending path — returns originating IP, mail-server hops, and timestamps.
+- **`e-mail-search-tool`** (high) — Use when you have an email address and want a one-stop launcher that runs it through multiple search engines and OSINT services — returns li
+- **`email-address-format-tool`** (high) — Use when you have a company `domain` (and maybe a `name`) and want the organization's likely email pattern — returns the email format and sa
+- **`email-address-validator`** (high) — Use when you have an email address and need to confirm it is real and deliverable — returns syntax/MX/mailbox validity plus disposable and r
+- **`email-address-verifier`** (high) — Use when you have an email address and need to confirm it is deliverable and check for breach/social signals — returns a deliverability grad
+- **`email-assumptions`** (high) — Use when you have an email address and want to run it through dozens of OSINT services from one dashboard — returns links into breach, socia
+- **`email-breach-analysis`** (high) — Use when you have an email address and want to know if it appears in known data breaches — returns an exposure summary (breach count, risk g
+- **`email-checker-searches-email-via-social-networks`** (high) — Use when you have an email address and want to know which social networks it is registered on — returns linked social-profile hints plus bas
+- **`email-dossier`** (high) — Use when you have an email address and want a technical validity report — returns syntax, domain/MX records, and a live SMTP mailbox-existen
+- **`email-extractor`** (high) — Use when you have a block of text or a web page and want every email address in it — returns a deduplicated list of extracted addresses.
+- **`email-finder-3`** (high) — Use when you have a person's `name` and their company `domain` and want their real work `email` — returns a list of likely address permutati
+- **`email-finder`** (high) — Use when you have an email address and want associated accounts and exposure in one lookup — returns linked social/registration hints and br
+- **`email-header-analyzer`** (high) — Use when you have raw email headers and want to trace delivery and authentication — returns the relay hops, originating IP, delay times, and
+- **`email-hunter`** (high) — Use when you have a company domain (and optionally a name) and want its email addresses and format — returns known addresses, the org email 
+- **`email-permutator-2`** (high) — Use when you have a person's name and a domain and want every plausible email format — returns a list of candidate addresses to verify (poli
+- **`email-permutator-3`** (high) — Use when you have a `name` and a company `domain` and want candidate email addresses to test — returns a list of likely `email` variants.
+- **`email-search-tool-by-inteltechniques`** (high) — Use when you have an email address and want to fan it out across dozens of third-party lookup services from one dashboard — returns links to
+- **`email-sherlock`** (medium) — Use when you have an email address and want a reverse lookup of which social networks/sites it is registered on plus any public profile snip
+- **`email-validator-tool`** (low) — Use when you want to confirm an email address is real/deliverable (syntax, MX, SMTP) before pivoting on it — returns validity/metadata only,
+- **`email-validator`** (low) — Use when you want a quick syntax/MX/deliverability check on a single email address via a lightweight web form — returns validity/metadata on
+- **`email-verifier`** (high) — Use when you have an `email` and want to know whether it is a real, deliverable mailbox before acting on it — returns a validity/deliverabil
+- **`email2phonenumber`** (high) — Use when you have an `email` and want to recover the target's phone number by harvesting masked digits from services' password-reset flows —
+- **`emailaddress-github-io`** (medium) — Use when you want a curated directory of email-OSINT tools and techniques to plan an address investigation — returns links/resources, not da
+- **`emailanalyzer`** (high) — Use when you have an email message (.eml) and want to extract its headers, originating IP, and check links/attachments — returns sender path
+- **`emailharvester`** (medium) — Use when you have a target domain and want to scrape associated email addresses from search engines and public sources — returns email addre
+- **`emailhippo-2`** (high) — Use when you have an `email` and want to check whether it is real/deliverable and how trustworthy it looks — returns a validity verdict, a r
+- **`emailhippo`** (medium) — Use when you need to verify whether an email address is real and deliverable (syntax, DNS/MX, SMTP, disposable/role detection) — returns val
+- **`emailsherlock-caution-alerts-email-account-holder`** (high) — Use when you have an `email` and want a fast reverse lookup for the owner's name, linked social profiles and the address's reputation — retu
+- **`emkei-s-fake-mailer`** (low) — Use when you must send an email with a chosen/spoofed From header (e.g. controlled pretext or a tracked message) to a target address — it se
+- **`encrypt-gmail-ciphermail-addons-mozilla-org`** (low) — Use when you want to encrypt/decrypt Gmail messages in Firefox (operational email security for the investigator) — not an OSINT lookup; it r
+- **`epieos-tools`** (high) — Use when you have an email or phone number and want Epieos's hub of free reverse-lookup tools (email-to-accounts, reverse phone) — returns s
+- **`espysys-com`** (medium) — Use when you want a paid OSINT platform/API to enrich an email (or phone/name) into linked accounts, profiles, and breach data at scale — re
+- **`facebook-com-2`** (high) — Use when you want to test whether an email or phone is tied to a Facebook account via the account-recovery/"hacked" flow — returns account-e
+- **`fakemailgenerator-com`** (low) — Use when you need a disposable inbox to register sock-puppet accounts during an investigation (investigator OpSec) — it creates throwaway em
+- **`fastmail-usa`** (high) — Use when you need operational sock-puppet email infrastructure (or to interpret an `email` whose domain is Fastmail-hosted) — provides priva
+- **`find-emails-addresses-and-social-profiles-in-seconds`** (medium) — Use when you want a commercial enrichment service (Orbitly) to turn an email or name+company into contact details and linked social profiles
+- **`findemail-io`** (high) — Use when you have a person's name plus an employer/company domain and need to find or guess their work email address.
+- **`foodora`** (low) — Use only if investigating a Foodora-related lead; this is an unverified Keybase-hosted page of uncertain function.
+- **`forensicosint-com`** (high) — Use when you have the raw headers of an email and need to trace its originating IP, mail path, and authentication results.
+- **`free-email-address-validator`** (high) — Use when you have a candidate email and need to confirm it is real/deliverable before relying on it as a contact point.
+- **`free-email-search`** (high) — Use when you have an email address and want to find the linked name, possible phone, and addresses via a US people-search data broker.
+- **`gaijin-at`** (high) — Use when you have raw email headers and want them parsed into the mail path, originating IP, and timestamps (German/English tools site).
+- **`geeksforgeeks-org`** (low) — Use as a reference article (not a tool) explaining how to extract a sender's IP from an email's headers.
+- **`geemail-user-finder`** (high) — Use when you have one or many candidate `email` addresses and want to confirm which are registered Gmail accounts — returns a validated `ema
+- **`getmailbird-com`** (low) — Use as a background article explaining how email open-tracking (tracking pixels) works and how to block it — context, not a tool.
+- **`getnotify-com`** (high) — Use when you can email a person and want to confirm if/when they open it and capture their IP and approximate location via a tracking pixel.
+- **`ghintel-secrets-ninja`** (high) — Use when you have a GitHub username/email and want to surface a developer's commit-derived emails, repos, and identity intel.
+- **`gist-github-com`** (medium) — Use as a reference list of known free/webmail and disposable email-provider domains to classify an address by provider type.
+- **`gitrecon`** (high) — Use when you have a GitHub/GitLab username and want to harvest the emails, names, and linked accounts exposed in that user's commit history.
+- **`gmail-security-alert`** (high) — Website that checks to see if your Gmail account was hacked
+- **`gmail`** (high) — Use as a pivot point — confirming a Gmail address exists, reading its raw headers, and feeding it into Google-account OSINT tools.
+- **`google-analyzeheader`** (high) — Use when you have raw email headers and want Google's own tool to parse the delivery path, hop delays, and authentication results.
+- **`google-com-51`** (medium) — Use as Google's account contact/recovery support entry point when a missing person's Google account is involved and you need a lawful channe
+- **`google-gmail`** (high) — Use when you have a Gmail `email` and want to confirm the account exists and pivot into the Google identity behind it — returns account-exis
+- **`h8mail-2`** (high) — Use when you have an `email` (or a bulk list) and want to find associated breaches, leaked passwords and correlated addresses — a CLI tool q
+- **`h8mail-trace-labs-fork`** (high) — Use when you have an `email` and want breach/leak exposure — searches breach databases and leaked-credential sources — returns linked `email
+- **`h8mail`** (high) — Use when you have an email (or list) and want to find breach hits and exposed passwords from public/leak sources.
+- **`have-i-been-sold`** (high) — Use when you have an `email` and want to check whether it appears in illegally-sold spam/marketing databases — but the original domain is de
+- **`help-x-com`** (low) — Use when an X (Twitter) account tied to a person of interest is compromised and you need the official recovery/help procedure — not an OSINT
+- **`help-yahoo-com`** (low) — Use only as a reference to Yahoo's account help/recovery pages — not an OSINT search tool; the harvested URL is stale.
+- **`here-6`** (low) — Use only as background reading on email encryption — this is a Comparitech blog article, not an OSINT tool.
+- **`heroic-now`** (high) — Use when you want to check an email against a large aggregated breach dataset via HEROIC's consumer breach-search product.
+- **`hib-ransomed`** (high) — Use when you want to check whether an email/domain appears in ransomware-leak or breach datasets.
+- **`holehe-2`** (high) — Use when you have an `email` and want to know which sites it's registered on — returns a list of accounts (`social-profile`) tied to that ad
+- **`hudson-rock-cavalier`** (medium) — Free infostealer-infection lookup for emails and domains.
+- **`hunter-io`** (high) — Use when you have a company domain and want all known work emails for that org plus its email-address pattern (Hunter.io Domain Search).
+- **`hushmail-canada`** (high) — Use when you have an `email` on a Hush domain and want to understand what that provider choice implies — returns provider/domain context, no
+- **`hushmail-com`** (low) — Use to recognise hushmail.com, the signup site for the Hushmail encrypted-email provider — a mail service, not an OSINT lookup tool.
+- **`hushmail`** (low) — Use to understand/recognise Hushmail, an encrypted email provider a subject might use — it is a mail service, not an OSINT lookup tool.
+- **`iknowyour-dad`** (high) — Use when you want to check an email/username against an aggregated breach-data search engine for leaked records.
+- **`inboxbear-passwordless-email-addresses`** (low) — Use to create disposable/passwordless email addresses for your own OpSec (sock-puppet signups) — it is an inbox provider, not a tool to look
+- **`infostealers-info`** (high) — Use when you have an email/username/domain and want to search infostealer malware logs for that subject — returns exposure confirmation and 
+- **`infostealers`** (high) — Use when you have an email or username and want to know if it appears in infostealer malware logs — returns exposure confirmation and (paid)
+- **`intelbase`** (high) — Use when you have an email, username, or domain and want to check it against aggregated breach/leak databases — returns linked credentials a
+- **`intelligence-x-2`** (high) — Use when you have an email and want to search a deep/dark-web and leak archive for that selector — returns breach hits, document references,
+- **`intelligencesecurity-io`** (high) — Use when you have an email or username and want to check it against a breach/leak index — returns exposure confirmation and any linked ident
+- **`ipqualityscore-com`** (high) — Use when you have an email address and want to validate it and assess risk/reputation — returns deliverability, validity, fraud score, and d
+- **`ipvoid-com`** (high) — Use when you have an email or its raw headers and want to trace the originating IP/route — returns sender IP, geolocation, and mail-route me
+- **`leakcheck`** (high) — Use when you have an email, username, phone, or domain and want to find which breaches expose it — returns breach names and linked credentia
+- **`leaked-domains`** (high) — Use when you have an email, username, or domain and want to check it against breached/leaked-account data — returns exposure confirmation an
+- **`leaked-site`** (high) — Use when you have an email, username, or domain and want to search compiled breach/leak data — returns exposure confirmation and linked cred
+- **`leakedpassword-com`** (high) — Use when you have an email or username and want to check it against breach data — returns which breaches expose it and associated identifier
+- **`leaker`** (high) — Use when you want a command-line client to query breach/leak databases by email, username, or domain — returns linked credentials/identifier
+- **`leakpeek-com`** (high) — Use when you have an email, username, or phone and want to find which breaches expose it — returns breach sources and linked credentials/ide
+- **`leakradar`** (high) — Use when you have an email, username, or domain and want to check it against infostealer logs and recent leaks — returns exposure confirmati
+- **`ledger`** (high) — Use when working through the POPPY OSINT toolkit and you reach the "Ledger" page — purpose unverified; likely an email/identity lookup helpe
+- **`liker`** (high) — Use when working through the POPPY OSINT toolkit and you reach the "Liker" page — purpose unverified; possibly a social-engagement/account l
+- **`lycos-mail-usa`** (high) — American email service provider
+- **`maestrolabs-com`** (high) — Use when you want to send a tracked email to a missing person's known address and learn whether/where it was opened — returns read confirmat
+- **`mail-com-free-email-creations`** (high) — Use when you need a free throwaway / sock-puppet email account (with a choice of vanity domains) to register for investigative sites without
+- **`mail-com-germany`** (high) — German email service provider
+- **`mailaccess`** (medium) — Use when you want to run an open-source email checker locally — likely tests whether an email address exists / is accessible; confirm exact 
+- **`mailboxlayer-api`** (medium) — Use when you have an `email` and want to validate its deliverability and quality (syntax, MX, live SMTP, disposable/free flags) — returns an
+- **`mailcat`** (high) — Use when you have a `username` and want to find which email providers it has accounts on — returns existing email addresses via API and SMTP
+- **`mailfoguess`** (high) — Use when you have a person's `name`/`username` and want to derive and test their likely email addresses — generates permuted local-parts, ap
+- **`mailmeta`** (high) — Use when you have a raw `email` (with full headers) and want to analyze its headers to spot spoofing and trace origin — returns sender/origi
+- **`mailtester`** (high) — Use when you have an email address and want a quick free check of whether it is valid and deliverable — returns SMTP/DNS validation status w
+- **`mailto-analyzer`** (medium) — Use when you have access to an `email` account's mailbox (.mbox export) and want to map which services that address is registered on — retur
+- **`manycontacts-sn-results`** (high) — Use when you have an email address and want to enrich it into a name, photo, company, and linked social-network profiles — returns identity/
+- **`metric-sparrow-email-permulator`** (high) — Use when you know a person's first/last name and an organization domain and need to generate the likely email-address permutations to then v
+- **`minerva-osint`** (high) — Use when you have an email (or username/phone) and want an aggregator to cross-reference breach data and online accounts into a single ident
+- **`monitor-firefox-com`** (high) — Use when you have an email address and want to learn which known data breaches it appears in (and what data classes leaked) — returns the br
+- **`multirbl`** (low) — Use when you have an IP address or mail domain and want to check it against hundreds of DNS blacklists (RBL/DNSBL) at once to gauge its spam
+- **`mxtoolbox-blacklists`** (low) — Use when you have a mail domain or IP and want to check it against the major email blacklists (RBLs) in one query — returns per-list listed/
+- **`mxtoolbox-com-2`** (high) — Use when you have the raw headers of an email to/from a subject and want to trace the delivery path and originating IP — returns the hop-by-
+- **`name2email-by-reply-chrome-google-com`** (medium) — Use when composing in Gmail and you have a person's name plus their company domain — the extension suggests their likely email address inlin
+- **`noimosiny-com`** (medium) — Use when following a uk-osint "Email Related Sites" lead — purpose unconfirmed; verify what the site does before relying on it for any email
+- **`nox`** (high) — Use when you have an email/username and want to query a breach-data search framework — but verify this specific repo before relying on it.
+- **`nymeria-io`** (high) — Use when you have a name + employer or a social/GitHub profile and want to find a person's email and contact data — returns email, phone, so
+- **`omail-io`** (high) — Use when you have a name + company/domain and want to find or verify business email addresses — returns candidate emails (B2B lead tool, ver
+- **`openpgp-org`** (high) — Use when you have an email address and want to check public PGP keyservers for a key tied to it — returns confirmed email use, a name/identi
+- **`osint-lolarchiver-com-2`** (high) — Use when you have an email, username, or phone and want to query lolarchiver's breach/hacked-account database directly — returns leaked cred
+- **`osint-lolarchiver-com`** (high) — Use when you have an email, username, or phone and want to pull linked records and leaked data from an aggregated breach/OSINT index — retur
+- **`osint-rocks`** (high) — Use when you have an email, username, or phone and want a fast free sweep across many account-discovery tools (Holehe/Sherlock-style) in one
+- **`osintcat`** (high) — Use when you have an email, username, phone, or name and want to search aggregated breach/leak datasets for exposed credentials and linked P
+- **`osinteye`** (high) — Use when you have an email or username and want to run a self-hosted recon tool that checks account existence and breach exposure from the c
+- **`outlook-usa`** (high) — Use when you have an `email` and want to confirm whether it is a live Microsoft/Outlook account — the login.live.com sign-in flow acts as an
+- **`pages-ebay-co-uk`** (low) — Not an OSINT lookup tool — this is an eBay UK help/account-security page, mis-catalogued; no investigative input/output.
+- **`pastebin-com`** (high) — Use when you have an email, username, or name and want to search public pastes for leaked dumps, contact data, or mentions — returns leaked 
+- **`peepmail`** (low) — Use when you have a person's name and their company domain and want to guess likely work email patterns — legacy Samy Kamkar demo, almost ce
+- **`personal-data-leak-checker`** (high) — Use when you have an `email` and want to check whether it appears in known data breaches — returns a breach-exposure indicator (and leaked-d
+- **`phonebook-cz`** (high) — Use when you have a `domain` and want to enumerate every email address, subdomain, and URL Intelligence X has indexed for it — returns email
+- **`pipl`** (high) — Use when you have an email, phone, username, or name and want deep identity resolution linking it to a real person, contacts, and history — 
+- **`pointofmail-com-email-tracking-addons-mozilla-org`** (medium) — Use when you can send the subject an email and want a read-receipt that reveals when/where they opened it — leaks the recipient's IP, geoloc
+- **`pointofmailcom-email-trac-chrome-google-com`** (medium) — Use when you can send the subject an email and want a read-receipt that reveals when/where they opened it — leaks the recipient's IP, geoloc
+- **`posteo-de`** (low) — Use when an email address ends in @posteo.de/@posteo.* and you need to understand the provider — a German privacy email host that yields lit
+- **`privatemail`** (high) — Service provider for sending and receiving private emails
+- **`privnote-com`** (low) — Use when you need to send a one-time, self-destructing encrypted note — an operational tool for sharing tips/links securely, not an email-lo
+- **`proofy`** (medium) — Use when you have an email address and need to confirm it is real/deliverable before investing in it — returns a validity/deliverability ver
+- **`proton-me`** (low) — Use when an email ends in @proton.me/@protonmail.com and you need to understand the provider — an encrypted Swiss mail host that yields almo
+- **`protosint`** (high) — Use when you have a ProtonMail `email` (or a Proton-related `ip-address`) and want to confirm the account exists and pull its public PGP key
+- **`proxynova-comb`** (medium) — Free lookup against the COMB aggregated-breach dataset.
+- **`public-email-records`** (low) — Use when you want to try a reverse-email lookup for an owner name/location — an obscure aggregator site that typically funnels to a paid peo
+- **`readnotify-com-2`** (medium) — Use when you want to covertly track whether a sent document/email was opened and capture the reader's IP/geolocation — ReadNotify's tracking
+- **`readnotify-com`** (medium) — Use when you need to covertly confirm a sent email was opened and capture the reader's IP/geolocation — ReadNotify's tracking-pixel ("covert
+- **`readnotify`** (medium) — Use when you need to confirm an email you sent was opened and capture the reader's approximate IP/geolocation — ReadNotify embeds a tracking
+- **`reverse-whois`** (medium) — Use when you have a registrant email or name and want every domain they registered — osint.sh reverse-whois returns domains tied to that con
+- **`reversecontact`** (high) — Use when you have an `email` (or domain) and want to resolve it to a real person and their LinkedIn/work identity — returns `name`, `social-
+- **`reversegenie`** (low) — Use when attempting a reverse-email-to-owner lookup via the legacy ReverseGenie site — an old, likely-defunct people-search aggregator.
+- **`robtex-com`** (low) — Use when you have a domain or IP (e.g. from an email's mail server or a registered domain) and want its DNS, hosting, and related-domain gra
+- **`scamsearch`** (medium) — Database of reported scammer identifiers searchable by email/phone/wallet.
+- **`scatteredsecrets-com`** (medium) — Use when you have an email and want to know which breaches it appears in and any exposed/cracked passwords — Scattered Secrets is a breached
+- **`scylla-so`** (medium) — Use when you want to search an email/username against leaked-breach records — Scylla was a breach-data search engine with intermittent avail
+- **`search-ashley-madison-leaked-data`** (high) — Use when you have an email and want to check whether it appeared in the 2015 Ashley Madison breach — returns a breach hit/miss signal.
+- **`secmail`** (medium) — Use when you need a disposable, anonymous email address to register sock-puppet accounts without exposing a real inbox — provides throwaway/
+- **`sendanonymousemail-net`** (high) — Use when you need to send an anonymous email to a target address (pretext/outreach) rather than to look up data — takes an email, sends a me
+- **`slack`** (high) — Use when you want guidance/links for finding people and emails across public Slack workspaces — points to Slack-OSINT resources rather than 
+- **`snov-io-2`** (high) — Use when you want to pull and verify emails directly from a webpage/LinkedIn profile via Snov.io's Chrome extension — returns verified email
+- **`snov-io`** (high) — Use when you have a name + company/domain and want to find and verify the person's email address — returns candidate emails with deliverabil
+- **`snusbase`** (high) — Use when you have an `email`, `username`, `name`, `ip-address` or hash and want breached records — returns linked emails, names, addresses, 
+- **`sony-archives`** (high) — Use when a person may appear in the leaked Sony Pictures email corpus — search a name/email/employer-org to surface their messages and conta
+- **`sourcecon-com`** (high) — Use when you have a GitHub username and want to recover the person's email — a how-to article on extracting emails from GitHub commit metada
+- **`spamgourmet-com`** (high) — Use when you need disposable, self-destructing email addresses for sock-puppet sign-ups — it forwards a limited number of messages then dies
+- **`spamhaus`** (high) — Use when you have a domain or IP from an email header and want its spam/abuse reputation — returns blocklist status for that domain/IP.
+- **`spotthem-com`** (high) — Use when you have an email or name and want a quick people/email-search aggregator lookup — purpose inferred from name/listing; outputs unve
+- **`spycloud-com`** (low) — Use when you have an `email` on a domain you control/investigate and want to know whether that identity or domain appears in recaptured dark
+- **`spycloud`** (medium) — Breach/infostealer exposure check.
+- **`stealseek`** (high) — Use when you have an email/username/domain and want to check exposure in infostealer logs and breach data — returns leaked credentials/accou
+- **`support-cloudhq-net`** (high) — Use when you need to understand email tracking pixels — a reference article on how an opened email can reveal a recipient's IP/device; techn
+- **`support-google-com`** (high) — Use when you have an email you received and need to read its full headers — Gmail's help page on viewing the original message to extract sen
+- **`support-rootsweb-com`** (high) — Use when reading full email headers in RootsWeb genealogy mailing lists — a list-admin help article on viewing full headers to trace a poste
+- **`tciputils-com-email-test`** (low) — Use when you have an email address and want to validate its domain MX/SMTP deliverability — returns mail-server metadata, not identity data.
+- **`tencent-qq-mail`** (high) — Use when you have a Chinese `email` (especially number@qq.com) and want to pivot it to a QQ number and Tencent social identity — returns soc
+- **`toofr`** (medium) — Use when you have a person's name and their company/domain and want to find or guess their work email — returns predicted/verified corporate
+- **`tracefind-info`** (medium) — Use when you want to try a reverse email/username lookup site for leads, treating results as unverified — claimed returns are name, username
+- **`trocker-chrome-google-com`** (low) — Use when you want to detect and block email tracking pixels and link trackers in your own webmail — protects your OpSec; it does not look up
+- **`trockerapp-addons-mozilla-org`** (low) — Use when you want to detect and block email tracking pixels and link trackers in your own webmail on Firefox — protects your OpSec; it does 
+- **`trumail`** (medium) — Use when you want a programmatic email-validation/verification API to check deliverability and risk of an address — returns validity, delive
+- **`tuta-com`** (low) — Use when you need a privacy-focused encrypted mailbox for sock-puppet accounts, or to recognize that a subject's address is a privacy-provid
+- **`tutanota`** (low) — Use when you need a privacy-focused encrypted mailbox for sock-puppet accounts, or to recognize a subject's address is a privacy-provider do
+- **`usersearch-ai`** (high) — Use when you have a username, email, phone, or photo and want to find matching social/dating profiles and accounts across many platforms — r
+- **`validateemailaddress-org`** (low) — Use when you have an email and want a quick web check of its syntax, MX records, and likely deliverability — returns validity/deliverability
+- **`venacus`** (high) — Use when you have an email, name, phone, or username and want to search aggregated data-breach and leaked records for linked identity detail
+- **`verify-an-email-address-mailtester`** (low) — Use when you have an email and want a fast free SMTP/MX deliverability check to see if the mailbox likely exists — returns validity/delivera
+- **`verify-email-2`** (low) — Use when you have an email and want a free web check of whether the mailbox exists and can receive mail (syntax, MX, SMTP) — returns deliver
+- **`verify-email-address`** (high) — Use when you have an email address and need to confirm it is real/deliverable before pivoting — returns a validity verdict (syntax, MX, SMTP
+- **`verify-email`** (low) — Use when you have an email and want a free web check of whether the mailbox exists and can receive mail (syntax, MX, SMTP) — returns deliver
+- **`web-archive-org-2`** (high) — Use when you have a raw email and need to learn how to read its headers to trace origin — this is an archived reference guide on email-heade
+- **`weedmaps`** (low) — Use cautiously — an unidentified page hosted on a Keybase public folder; its actual function (an OSINT writeup/guide named "WEEDMAPS") could
+- **`what-mail`** (high) — Use when you have a raw `email` header / .eml and want to parse and visualize it to trace the message's origin and path — returns sending `i
+- **`whatbreach`** (high) — Use when you have an `email` and want to know which data breaches it appears in — returns breach names, associated pastes and (with keys) do
+- **`whatismyipaddress-com`** (high) — Use when you have a raw email's full headers and want the originating IP and its approximate geolocation — paste headers into the Email Trac
+- **`wonderoftech-com`** (high) — Use to learn about Ugly Email — a browser extension that flags tracking pixels in incoming Gmail — this URL is a how-to article, not the ext
+- **`xposedornot`** (medium) — Searches an aggregated repository of compromised/breached passwords to check exposure.
+- **`yahoo-mail`** (high) — Use when you have an `email` and want to confirm whether it is a live Yahoo/AOL account (via the sign-in / account-recovery flow) — returns 
+- **`yandex-mail`** (high) — Use when you have an `email` on the yandex domain (or need a sock-puppet base in the Yandex ecosystem) and want account-existence confirmati
+- **`yellow-pages`** (high) — Use when you have a Canadian `name`, business, or `phone` and want directory details — returns `address`, `phone`, and business (`employer-o
+- **`zehef`** (high) — Use when you have an `email` and want an automated passive OSINT sweep on it — returns paste-site and breach hits, discovered social account
+- **`zen-github-com`** (high) — Use when you have a GitHub username/repo/org and want the real email addresses behind it — Zen harvests emails and names from GitHub commit 
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

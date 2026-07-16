@@ -14,7 +14,7 @@ selectorsIn:
 - email
 selectorsOut:
 - social-profile
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free interactive lookups and a free API tier with daily limits; paid/commercial keys for higher volume.

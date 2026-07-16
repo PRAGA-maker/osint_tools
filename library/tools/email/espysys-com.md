@@ -14,7 +14,7 @@ selectorsIn:
 selectorsOut:
 - social-profile
 - name
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Commercial platform; typically a trial/limited free tier with paid subscription or API credits for real volume.

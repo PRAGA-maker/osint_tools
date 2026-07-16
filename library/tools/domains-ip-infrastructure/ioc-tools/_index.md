@@ -11,7 +11,6 @@ kind: group-index
 - **`ioc-parser`** (low) — IOC extraction from reports
 - **`iocextract`** (low) — IOC extraction with deobfuscation
 - **`jager`** (low) — IOC collection and aggregation
-- **`mimir`** (low) — IOC extraction and validation
 - **`threatingestor`** (low) — Automated IOC collection and enrichment
 - **`threatpinch-lookup`** (low) — Indicator enrichment
 

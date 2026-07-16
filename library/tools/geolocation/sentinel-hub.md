@@ -7,8 +7,12 @@ category: geolocation
 path:
 - geolocation
 bestFor: Browser viewer for dated Sentinel/Landsat satellite imagery with band combinations and time-slider change detection.
-selectorsIn: [geolocation, address]
-selectorsOut: [geolocation, metadata]
+selectorsIn:
+- geolocation
+- address
+selectorsOut:
+- geolocation
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Sentinel Playground viewer is free; programmatic Sentinel Hub API access and high-volume use are paid.
@@ -20,12 +24,14 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Run by Sinergise (Planet); serves official ESA Copernicus Sentinel and USGS Landsat data — authoritative, dated imagery.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: true
 localInstall: false
 registration: false
-aliases: [Sentinel Playground]
+aliases:
+- Sentinel Playground
 tags:
 - geospatial-research-and-mapping-tools
 source: awesome-osint

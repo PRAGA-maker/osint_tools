@@ -10,9 +10,7 @@ kind: group-index
 - **`analyzeid`** (low) — Pivoting from shared tracking IDs to related domains
 - **`builtwith`** (low) — Website technology stack fingerprinting and ecosystem mapping
 - **`criminal-ip-search`** (low) — Threat-focused lookup of internet-facing assets and exposures
-- **`daily-dns-changes-2`** (low) — DNS change detection, subdomain discovery, infrastructure monitoring
 - **`kraken`** (low) — CLI-driven reconnaissance against domain and host assets
-- **`netlas-io-3`** (low) — Internet reconnaissance, DNS and WHOIS lookups, attack surface discovery, vulnerability research
 - **`online-nikto-scanner`** (low) — Web server vulnerability scanning
 - **`redirect-detective`** (low) — Understanding redirect paths and affiliate or cloaking behavior
 - **`shodan`** (low) — Finding exposed services and infrastructure risk indicators

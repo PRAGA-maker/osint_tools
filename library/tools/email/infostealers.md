@@ -15,7 +15,7 @@ selectorsOut:
 - email
 - username
 - domain
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free existence/preview check; full log records (passwords, cookies, host fingerprints) sit behind paid access.

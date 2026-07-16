@@ -1,0 +1,2842 @@
+[
+  {
+    "reason": "numeric-duplicate-of:aadinternals",
+    "id": "aadinternals-2",
+    "name": "aadinternals",
+    "file": "library/tools/ai-analysis-automation/aadinternals-2.md",
+    "status": "unknown",
+    "url": "https://aadinternals.com/osint"
+  },
+  {
+    "reason": "numeric-duplicate-of:domain-investigation-toolbox",
+    "id": "domain-investigation-toolbox-2",
+    "name": "Domain Investigation Toolbox",
+    "file": "library/tools/ai-analysis-automation/domain-investigation-toolbox-2.md",
+    "status": "unknown",
+    "url": "https://cipher387.github.io/domain_investigation_toolbox/"
+  },
+  {
+    "reason": "numeric-duplicate-of:google-colaboratory",
+    "id": "google-colaboratory-2",
+    "name": "Google Colaboratory",
+    "file": "library/tools/ai-analysis-automation/google-colaboratory-2.md",
+    "status": "unknown",
+    "url": "https://colab.research.google.com/"
+  },
+  {
+    "reason": "paid-only:inteltechniques.com",
+    "id": "inteltechniques",
+    "name": "IntelTechniques",
+    "file": "library/tools/ai-analysis-automation/inteltechniques.md",
+    "status": "unknown",
+    "url": "https://inteltechniques.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:online-nikto-scanner",
+    "id": "online-nikto-scanner-4",
+    "name": "Online Nikto scanner",
+    "file": "library/tools/ai-analysis-automation/online-nikto-scanner-4.md",
+    "status": "live",
+    "url": "https://nikto.online/"
+  },
+  {
+    "reason": "numeric-duplicate-of:osint-toolkit",
+    "id": "osint-toolkit-2",
+    "name": "OSINT Toolkit",
+    "file": "library/tools/ai-analysis-automation/osint-toolkit-2.md",
+    "status": "unknown",
+    "url": "https://github.com/dev-lu/osint_toolkit"
+  },
+  {
+    "reason": "numeric-duplicate-of:quick-cache-and-archive-search",
+    "id": "quick-cache-and-archive-search-2",
+    "name": "Quick Cache and Archive search",
+    "file": "library/tools/ai-analysis-automation/quick-cache-and-archive-search-2.md",
+    "status": "unknown",
+    "url": "https://cipher387.github.io/quickcacheandarchivesearch/"
+  },
+  {
+    "reason": "numeric-duplicate-of:quick-geolocation-search",
+    "id": "quick-geolocation-search-2",
+    "name": "Quick geolocation search",
+    "file": "library/tools/ai-analysis-automation/quick-geolocation-search-2.md",
+    "status": "unknown",
+    "url": "https://cipher387.github.io/quickgeolocationsearch/"
+  },
+  {
+    "reason": "numeric-duplicate-of:spiderfoot",
+    "id": "spiderfoot-2",
+    "name": "SpiderFoot",
+    "file": "library/tools/ai-analysis-automation/spiderfoot-2.md",
+    "status": "unknown",
+    "url": "https://www.spiderfoot.net"
+  },
+  {
+    "reason": "numeric-duplicate-of:tableau",
+    "id": "tableau-2",
+    "name": "Tableau",
+    "file": "library/tools/ai-analysis-automation/tableau-2.md",
+    "status": "unknown",
+    "url": "http://www.tableau.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:theharvester",
+    "id": "theharvester-4",
+    "name": "theHarvester",
+    "file": "library/tools/ai-analysis-automation/theharvester-4.md",
+    "status": "unknown",
+    "url": "https://pypi.org/project/theHarvester/"
+  },
+  {
+    "reason": "numeric-duplicate-of:threatpinch-lookup",
+    "id": "threatpinch-lookup-2",
+    "name": "ThreatPinch Lookup",
+    "file": "library/tools/ai-analysis-automation/threatpinch-lookup-2.md",
+    "status": "unknown",
+    "url": "https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke/related"
+  },
+  {
+    "reason": "numeric-duplicate-of:timeline",
+    "id": "timeline-2",
+    "name": "Timeline",
+    "file": "library/tools/ai-analysis-automation/timeline-2.md",
+    "status": "unknown",
+    "url": "http://www.simile-widgets.org/timeline"
+  },
+  {
+    "reason": "dead:down",
+    "id": "truemedia",
+    "name": "TrueMedia",
+    "file": "library/tools/ai-analysis-automation/truemedia.md",
+    "status": "down",
+    "url": "https://www.truemedia.org/"
+  },
+  {
+    "reason": "numeric-duplicate-of:unfurl",
+    "id": "unfurl-2",
+    "name": "Unfurl",
+    "file": "library/tools/ai-analysis-automation/unfurl-2.md",
+    "status": "unknown",
+    "url": "https://dfir.blog/unfurl/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "midins-titan",
+    "name": "MIDINS TITAN",
+    "file": "library/tools/ai-analysis-automation/graph-visualization/midins-titan.md",
+    "status": "down",
+    "url": "https://github.com/Med0-n/Midins_Titan-Osint_Tool"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "firebug",
+    "name": "Firebug",
+    "file": "library/tools/ai-analysis-automation/javascript/firebug.md",
+    "status": "degraded",
+    "url": "https://getfirebug.com/downloads/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "js-nice",
+    "name": "JS NICE",
+    "file": "library/tools/ai-analysis-automation/javascript/js-nice.md",
+    "status": "down",
+    "url": "https://jsnice.org/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "autoosint",
+    "name": "AutoOSINT",
+    "file": "library/tools/ai-analysis-automation/osint-automation/autoosint.md",
+    "status": "down",
+    "url": "https://github.com/bharshbarger/AutOSINT"
+  },
+  {
+    "reason": "dead:down",
+    "id": "datasploit",
+    "name": "DataSploit",
+    "file": "library/tools/ai-analysis-automation/osint-automation/datasploit.md",
+    "status": "down",
+    "url": "https://github.com/datasploit/datasploit/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "inquisitor",
+    "name": "Inquisitor",
+    "file": "library/tools/ai-analysis-automation/osint-automation/inquisitor.md",
+    "status": "down",
+    "url": "https://github.com/penafieljlm/inquisitor"
+  },
+  {
+    "reason": "dead:down",
+    "id": "osint-spy",
+    "name": "OSINT-SPY",
+    "file": "library/tools/ai-analysis-automation/osint-automation/osint-spy.md",
+    "status": "down",
+    "url": "https://github.com/SharadKumar97/OSINT-SPY"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "recondog",
+    "name": "ReconDog",
+    "file": "library/tools/ai-analysis-automation/osint-automation/recondog.md",
+    "status": "degraded",
+    "url": "https://github.com/s0md3v/ReconDog"
+  },
+  {
+    "reason": "dead:down",
+    "id": "stringify",
+    "name": "Stringify",
+    "file": "library/tools/ai-analysis-automation/osint-automation/stringify.md",
+    "status": "down",
+    "url": "https://www.stringify.com/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "vector",
+    "name": "Vector",
+    "file": "library/tools/ai-analysis-automation/osint-automation/vector.md",
+    "status": "down",
+    "url": "https://github.com/thesaderror/vector"
+  },
+  {
+    "reason": "dead:down",
+    "id": "low-hanging-fruit",
+    "name": "Low Hanging Fruit",
+    "file": "library/tools/ai-analysis-automation/pentesting-recon/low-hanging-fruit.md",
+    "status": "down",
+    "url": "https://github.com/blindfuzzy/LHF"
+  },
+  {
+    "reason": "paid-only:inteltechniques.com",
+    "id": "buscador-os",
+    "name": "Buscador OS",
+    "file": "library/tools/ai-analysis-automation/virtual-machines/buscador-os.md",
+    "status": "live",
+    "url": "https://inteltechniques.com/buscador/index.html"
+  },
+  {
+    "reason": "dead:down",
+    "id": "microsoft-edge-development-os-vms",
+    "name": "Microsoft Edge Development OS VMs",
+    "file": "library/tools/ai-analysis-automation/virtual-machines/microsoft-edge-development-os-vms.md",
+    "status": "down",
+    "url": "https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/"
+  },
+  {
+    "reason": "numeric-duplicate-of:archive-today",
+    "id": "archive-today-3",
+    "name": "Archive.today",
+    "file": "library/tools/archives-cache/archive-today-3.md",
+    "status": "unknown",
+    "url": "http://archive.md/"
+  },
+  {
+    "reason": "numeric-duplicate-of:changedetect",
+    "id": "changedetect-2",
+    "name": "ChangeDetect",
+    "file": "library/tools/archives-cache/changedetect-2.md",
+    "status": "unknown",
+    "url": "http://www.changedetect.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:waybackpy",
+    "id": "waybackpy-2",
+    "name": "waybackpy",
+    "file": "library/tools/archives-cache/waybackpy-2.md",
+    "status": "unknown",
+    "url": "https://pypi.org/project/waybackpy/"
+  },
+  {
+    "reason": "numeric-duplicate-of:web-archives",
+    "id": "web-archives-2",
+    "name": "Web Archives",
+    "file": "library/tools/archives-cache/web-archives-2.md",
+    "status": "unknown",
+    "url": "https://chrome.google.com/webstore/detail/web-archives/hkligngkgcpcolhcnkgccglchdafcnao/related"
+  },
+  {
+    "reason": "dead:down",
+    "id": "browsershots",
+    "name": "Browsershots",
+    "file": "library/tools/archives-cache/web/browsershots.md",
+    "status": "down",
+    "url": "https://browsershots.org/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "webcite",
+    "name": "WebCite",
+    "file": "library/tools/archives-cache/web/webcite.md",
+    "status": "degraded",
+    "url": "https://www.webcitation.org:443/query"
+  },
+  {
+    "reason": "numeric-duplicate-of:ask",
+    "id": "ask-2",
+    "name": "Ask",
+    "file": "library/tools/communities-forums/ask-2.md",
+    "status": "unknown",
+    "url": "http://www.ask.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:athlinks",
+    "id": "athlinks-2",
+    "name": "Athlinks",
+    "file": "library/tools/communities-forums/athlinks-2.md",
+    "status": "unknown",
+    "url": "http://www.athlinks.com/Search/Events"
+  },
+  {
+    "reason": "numeric-duplicate-of:bbc-news",
+    "id": "bbc-news-2",
+    "name": "BBC News",
+    "file": "library/tools/communities-forums/bbc-news-2.md",
+    "status": "unknown",
+    "url": "https://www.bbc.com/news"
+  },
+  {
+    "reason": "numeric-duplicate-of:eharmony",
+    "id": "eharmony-2",
+    "name": "eHarmony",
+    "file": "library/tools/communities-forums/eharmony-2.md",
+    "status": "unknown",
+    "url": "http://www.eharmony.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:item",
+    "id": "item-3",
+    "name": "Ответы",
+    "file": "library/tools/communities-forums/item-3.md",
+    "status": "unknown",
+    "url": "https://otvet.mail.ru/"
+  },
+  {
+    "reason": "numeric-duplicate-of:livejournal",
+    "id": "livejournal-2",
+    "name": "LiveJournal",
+    "file": "library/tools/communities-forums/livejournal-2.md",
+    "status": "unknown",
+    "url": "http://www.livejournal.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:newspaper-archive",
+    "id": "newspaper-archive-2",
+    "name": "Newspaper Archive",
+    "file": "library/tools/communities-forums/newspaper-archive-2.md",
+    "status": "unknown",
+    "url": "http://newspaperarchive.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:omgili",
+    "id": "omgili-2",
+    "name": "Omgili",
+    "file": "library/tools/communities-forums/omgili-2.md",
+    "status": "unknown",
+    "url": "http://omgili.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:strava",
+    "id": "strava-2",
+    "name": "Strava",
+    "file": "library/tools/communities-forums/strava-2.md",
+    "status": "unknown",
+    "url": "https://labs.strava.com/heatmap"
+  },
+  {
+    "reason": "dead:down",
+    "id": "mibbit",
+    "name": "Mibbit",
+    "file": "library/tools/communities-forums/irc-search/mibbit.md",
+    "status": "down",
+    "url": "https://search.mibbit.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:duckduckgo",
+    "id": "duckduckgo-2",
+    "name": "DuckDuckGo",
+    "file": "library/tools/dark-web/duckduckgo-2.md",
+    "status": "unknown",
+    "url": "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/"
+  },
+  {
+    "reason": "numeric-duplicate-of:facebook",
+    "id": "facebook-2",
+    "name": "Facebook",
+    "file": "library/tools/dark-web/facebook-2.md",
+    "status": "unknown",
+    "url": "https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/"
+  },
+  {
+    "reason": "numeric-duplicate-of:proton-mail",
+    "id": "proton-mail-2",
+    "name": "Proton Mail",
+    "file": "library/tools/dark-web/proton-mail-2.md",
+    "status": "unknown",
+    "url": "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"
+  },
+  {
+    "reason": "numeric-duplicate-of:torch",
+    "id": "torch-3",
+    "name": "Torch",
+    "file": "library/tools/dark-web/torch-3.md",
+    "status": "unknown",
+    "url": "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "web-o-proxy",
+    "name": "Web O Proxy",
+    "file": "library/tools/dark-web/web-o-proxy.md",
+    "status": "degraded",
+    "url": "https://weboproxy.com/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "docker-onion-nmap",
+    "name": "docker-onion-nmap",
+    "file": "library/tools/dark-web/discovery/docker-onion-nmap.md",
+    "status": "degraded",
+    "url": "https://github.com/milesrichardson/docker-onion-nmap"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "onion-investigator",
+    "name": "Onion Investigator",
+    "file": "library/tools/dark-web/discovery/onion-investigator.md",
+    "status": "degraded",
+    "url": "https://oint.ctrlbox.com/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "tor-scan",
+    "name": "Tor Scan",
+    "file": "library/tools/dark-web/discovery/tor-scan.md",
+    "status": "degraded",
+    "url": "https://www.torscan.io/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "hidden-wiki",
+    "name": "Hidden Wiki",
+    "file": "library/tools/dark-web/tor-directories/hidden-wiki.md",
+    "status": "down",
+    "url": "https://thehiddenwiki.org/"
+  },
+  {
+    "reason": "paid-only:eharmony.com",
+    "id": "eharmony",
+    "name": "eHarmony",
+    "file": "library/tools/dating-classifieds/eharmony.md",
+    "status": "unknown",
+    "url": "https://www.eharmony.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:onlyfans-com",
+    "id": "onlyfans-com-2",
+    "name": "onlyfans.com",
+    "file": "library/tools/dating-classifieds/onlyfans-com-2.md",
+    "status": "unknown",
+    "url": "https://onlyfans.com/legalguide"
+  },
+  {
+    "reason": "numeric-duplicate-of:onlyfans-com",
+    "id": "onlyfans-com-3",
+    "name": "onlyfans.com",
+    "file": "library/tools/dating-classifieds/onlyfans-com-3.md",
+    "status": "unknown",
+    "url": "https://onlyfans.com/transparency-center/assisting"
+  },
+  {
+    "reason": "numeric-duplicate-of:onlyfans-com",
+    "id": "onlyfans-com-4",
+    "name": "onlyfans.com",
+    "file": "library/tools/dating-classifieds/onlyfans-com-4.md",
+    "status": "unknown",
+    "url": "https://onlyfans.com/legalinquiry"
+  },
+  {
+    "reason": "numeric-duplicate-of:usersearch-org",
+    "id": "usersearch-org-2",
+    "name": "usersearch.org",
+    "file": "library/tools/dating-classifieds/usersearch-org-2.md",
+    "status": "unknown",
+    "url": "https://usersearch.org/updates/2023/02/04/how-to-search-someone-on-onlyfans/"
+  },
+  {
+    "reason": "numeric-duplicate-of:dropbox",
+    "id": "dropbox-2",
+    "name": "Dropbox",
+    "file": "library/tools/documents-metadata/dropbox-2.md",
+    "status": "unknown",
+    "url": "https://www.dropbox.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:foca",
+    "id": "foca-2",
+    "name": "FOCA",
+    "file": "library/tools/documents-metadata/foca-2.md",
+    "status": "unknown",
+    "url": "https://www.elevenpaths.com/labstools/foca/index.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:forensicosint-com",
+    "id": "forensicosint-com-2",
+    "name": "forensicosint.com",
+    "file": "library/tools/documents-metadata/forensicosint-com-2.md",
+    "status": "unknown",
+    "url": "https://www.forensicosint.com/free-tools/image-metadata-analyzer"
+  },
+  {
+    "reason": "numeric-duplicate-of:github-code-search",
+    "id": "github-code-search-2",
+    "name": "GitHub Code Search",
+    "file": "library/tools/documents-metadata/github-code-search-2.md",
+    "status": "unknown",
+    "url": "https://github.com/search"
+  },
+  {
+    "reason": "numeric-duplicate-of:keyhole",
+    "id": "keyhole-2",
+    "name": "Keyhole",
+    "file": "library/tools/documents-metadata/keyhole-2.md",
+    "status": "unknown",
+    "url": "http://keyhole.co/"
+  },
+  {
+    "reason": "numeric-duplicate-of:pastes-search-engine",
+    "id": "pastes-search-engine-2",
+    "name": "Pastes Search Engine 2",
+    "file": "library/tools/documents-metadata/pastes-search-engine-2.md",
+    "status": "unknown",
+    "url": "https://cse.google.com/cse?cx=006896442834264595052:fawrl1rug9e"
+  },
+  {
+    "reason": "numeric-duplicate-of:sourcegraph",
+    "id": "sourcegraph-2",
+    "name": "Sourcegraph",
+    "file": "library/tools/documents-metadata/sourcegraph-2.md",
+    "status": "unknown",
+    "url": "https://about.sourcegraph.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:virustotal",
+    "id": "virustotal-2",
+    "name": "virustotal",
+    "file": "library/tools/documents-metadata/virustotal-2.md",
+    "status": "live",
+    "url": "https://www.virustotal.com/gui/home/upload"
+  },
+  {
+    "reason": "numeric-duplicate-of:flickr",
+    "id": "flickr-2",
+    "name": "Flickr",
+    "file": "library/tools/documents-metadata/android/apps/pictures/flickr-2.md",
+    "status": "live",
+    "url": "https://www.flickr.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:instagram",
+    "id": "instagram-2",
+    "name": "Instagram",
+    "file": "library/tools/documents-metadata/android/apps/pictures/instagram-2.md",
+    "status": "live",
+    "url": "https://www.instagram.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin",
+    "id": "linkedin-2",
+    "name": "LinkedIn",
+    "file": "library/tools/documents-metadata/android/apps/social-networking/linkedin-2.md",
+    "status": "live",
+    "url": "https://www.linkedin.com/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "vine",
+    "name": "Vine",
+    "file": "library/tools/documents-metadata/android/apps/streaming-video/vine.md",
+    "status": "down",
+    "url": "https://vine.co/"
+  },
+  {
+    "reason": "numeric-duplicate-of:tylabs-quicksand-framework",
+    "id": "tylabs-quicksand-framework-2",
+    "name": "TYLabs QuickSand Framework",
+    "file": "library/tools/documents-metadata/hosted-automated-analysis/pdfs/tylabs-quicksand-framework-2.md",
+    "status": "live",
+    "url": "https://scan.tylabs.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:arin-net",
+    "id": "arin-net-2",
+    "name": "arin.net",
+    "file": "library/tools/domains-ip-infrastructure/arin-net-2.md",
+    "status": "unknown",
+    "url": "https://www.arin.net/resources/registry/whois/#combined-search"
+  },
+  {
+    "reason": "numeric-duplicate-of:auto-scroll-search",
+    "id": "auto-scroll-search-2",
+    "name": "Auto Scroll Search",
+    "file": "library/tools/domains-ip-infrastructure/auto-scroll-search-2.md",
+    "status": "unknown",
+    "url": "https://chrome.google.com/webstore/detail/auto-scroll-search-scroll/ieceeinfkigfaeoomfimmecebngempef/"
+  },
+  {
+    "reason": "numeric-duplicate-of:cisco-talos-intelligence",
+    "id": "cisco-talos-intelligence-2",
+    "name": "Cisco Talos Intelligence",
+    "file": "library/tools/domains-ip-infrastructure/cisco-talos-intelligence-2.md",
+    "status": "unknown",
+    "url": "https://talosintelligence.com/ebc_spam"
+  },
+  {
+    "reason": "numeric-duplicate-of:columbus-project",
+    "id": "columbus-project-2",
+    "name": "Columbus Project",
+    "file": "library/tools/domains-ip-infrastructure/columbus-project-2.md",
+    "status": "unknown",
+    "url": "https://columbus.elmasy.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:dns-twist",
+    "id": "dns-twist-2",
+    "name": "DNS Twist",
+    "file": "library/tools/domains-ip-infrastructure/dns-twist-2.md",
+    "status": "unknown",
+    "url": "https://dnstwist.it"
+  },
+  {
+    "reason": "paid-only:domaincrawler.com",
+    "id": "domain-crawler",
+    "name": "Domain Crawler",
+    "file": "library/tools/domains-ip-infrastructure/domain-crawler.md",
+    "status": "unknown",
+    "url": "http://www.domaincrawler.com"
+  },
+  {
+    "reason": "paid-only:domaintools.com",
+    "id": "domain-tools",
+    "name": "Domain Tools",
+    "file": "library/tools/domains-ip-infrastructure/domain-tools.md",
+    "status": "unknown",
+    "url": "http://whois.domaintools.com"
+  },
+  {
+    "reason": "paid-only:domaintools.com",
+    "id": "domaintools-com",
+    "name": "domaintools.com",
+    "file": "library/tools/domains-ip-infrastructure/domaintools-com.md",
+    "status": "unknown",
+    "url": "https://www.domaintools.com/research/whois-history/"
+  },
+  {
+    "reason": "paid-only:domaintools.com",
+    "id": "domaintools-ping-test",
+    "name": "DomainTools Ping Test",
+    "file": "library/tools/domains-ip-infrastructure/domaintools-ping-test.md",
+    "status": "unknown",
+    "url": "http://research.domaintools.com/research/dns"
+  },
+  {
+    "reason": "paid-only:domaintools.com",
+    "id": "domaintools-reverse-ip",
+    "name": "DomainTools Reverse IP",
+    "file": "library/tools/domains-ip-infrastructure/domaintools-reverse-ip.md",
+    "status": "unknown",
+    "url": "http://reverseip.domaintools.com"
+  },
+  {
+    "reason": "paid-only:domaintools.com",
+    "id": "domaintools-whois-lookup",
+    "name": "DomainTools Whois Lookup",
+    "file": "library/tools/domains-ip-infrastructure/domaintools-whois-lookup.md",
+    "status": "unknown",
+    "url": "https://whois.domaintools.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:email-finder",
+    "id": "email-finder-2",
+    "name": "Email Finder",
+    "file": "library/tools/domains-ip-infrastructure/email-finder-2.md",
+    "status": "unknown",
+    "url": "https://github.com/Josue87/EmailFinder"
+  },
+  {
+    "reason": "numeric-duplicate-of:emailharvester",
+    "id": "emailharvester-2",
+    "name": "EmailHarvester",
+    "file": "library/tools/domains-ip-infrastructure/emailharvester-2.md",
+    "status": "unknown",
+    "url": "https://github.com/4383/EmailHarvester"
+  },
+  {
+    "reason": "numeric-duplicate-of:fofa",
+    "id": "fofa-2",
+    "name": "FOFA",
+    "file": "library/tools/domains-ip-infrastructure/fofa-2.md",
+    "status": "unknown",
+    "url": "https://fofa.so/"
+  },
+  {
+    "reason": "numeric-duplicate-of:fortiguard-labs",
+    "id": "fortiguard-labs-2",
+    "name": "Fortiguard Labs",
+    "file": "library/tools/domains-ip-infrastructure/fortiguard-labs-2.md",
+    "status": "unknown",
+    "url": "https://fortiguard.fortinet.com/threat-map"
+  },
+  {
+    "reason": "numeric-duplicate-of:hachoir",
+    "id": "hachoir-2",
+    "name": "HACHOIR",
+    "file": "library/tools/domains-ip-infrastructure/hachoir-2.md",
+    "status": "unknown",
+    "url": "https://github.com/vstinner/hachoir"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-4",
+    "name": "Here",
+    "file": "library/tools/domains-ip-infrastructure/here-4.md",
+    "status": "unknown",
+    "url": "https://nominet.uk/privacy-notice/releasing-your-personal-data-to-third-parties/"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-5",
+    "name": "Here",
+    "file": "library/tools/domains-ip-infrastructure/here-5.md",
+    "status": "unknown",
+    "url": "https://www.bigdomaindata.com/"
+  },
+  {
+    "reason": "paid-only:markmonitor.com",
+    "id": "mark-monitor-whois",
+    "name": "Mark Monitor WHOIS",
+    "file": "library/tools/domains-ip-infrastructure/mark-monitor-whois.md",
+    "status": "unknown",
+    "url": "https://whois-webform.markmonitor.com/whois/"
+  },
+  {
+    "reason": "paid-only:markmonitor.com",
+    "id": "markmonitor-search-whois",
+    "name": "MarkMonitor Search Whois",
+    "file": "library/tools/domains-ip-infrastructure/markmonitor-search-whois.md",
+    "status": "unknown",
+    "url": "https://www.markmonitor.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:metadefender",
+    "id": "metadefender-2",
+    "name": "MetaDefender",
+    "file": "library/tools/domains-ip-infrastructure/metadefender-2.md",
+    "status": "unknown",
+    "url": "https://metadefender.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:nominet-uk",
+    "id": "nominet-uk-2",
+    "name": "nominet.uk",
+    "file": "library/tools/domains-ip-infrastructure/nominet-uk-2.md",
+    "status": "unknown",
+    "url": "https://nominet.uk/wp-content/uploads/2025/03/DataReleaseForm.pdf"
+  },
+  {
+    "reason": "numeric-duplicate-of:photon",
+    "id": "photon-2",
+    "name": "photon",
+    "file": "library/tools/domains-ip-infrastructure/photon-2.md",
+    "status": "unknown",
+    "url": "https://pypi.org/project/photon/"
+  },
+  {
+    "reason": "numeric-duplicate-of:securitytrails",
+    "id": "securitytrails-2",
+    "name": "SecurityTrails",
+    "file": "library/tools/domains-ip-infrastructure/securitytrails-2.md",
+    "status": "unknown",
+    "url": "https://securitytrails.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:squarespace",
+    "id": "squarespace-2",
+    "name": "Squarespace",
+    "file": "library/tools/domains-ip-infrastructure/squarespace-2.md",
+    "status": "unknown",
+    "url": "http://squarespace.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:visual-site-mapper",
+    "id": "visual-site-mapper-2",
+    "name": "Visual Site Mapper",
+    "file": "library/tools/domains-ip-infrastructure/visual-site-mapper-2.md",
+    "status": "unknown",
+    "url": "https://visualsitemapper.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:wix",
+    "id": "wix-2",
+    "name": "Wix",
+    "file": "library/tools/domains-ip-infrastructure/wix-2.md",
+    "status": "unknown",
+    "url": "http://www.wix.com"
+  },
+  {
+    "reason": "dead:down",
+    "id": "alexa-site-statistics",
+    "name": "Alexa Site Statistics",
+    "file": "library/tools/domains-ip-infrastructure/analytics/alexa-site-statistics.md",
+    "status": "down",
+    "url": "https://alexa.amazon.com/about"
+  },
+  {
+    "reason": "dead:down",
+    "id": "alexa-top-500-global-sites",
+    "name": "Alexa Top 500 Global Sites",
+    "file": "library/tools/domains-ip-infrastructure/analytics/alexa-top-500-global-sites.md",
+    "status": "down",
+    "url": "https://alexa.amazon.com/about"
+  },
+  {
+    "reason": "numeric-duplicate-of:builtwith",
+    "id": "builtwith-2",
+    "name": "BuiltWith",
+    "file": "library/tools/domains-ip-infrastructure/analytics/builtwith-2.md",
+    "status": "live",
+    "url": "https://builtwith.com/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "moonsearch",
+    "name": "Moonsearch",
+    "file": "library/tools/domains-ip-infrastructure/analytics/moonsearch.md",
+    "status": "degraded",
+    "url": "https://moonsearch.com/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "open-site-explorer",
+    "name": "Open Site Explorer",
+    "file": "library/tools/domains-ip-infrastructure/analytics/open-site-explorer.md",
+    "status": "degraded",
+    "url": "https://moz.com/link-explorer"
+  },
+  {
+    "reason": "dead:down",
+    "id": "pubdb",
+    "name": "PubDB",
+    "file": "library/tools/domains-ip-infrastructure/analytics/pubdb.md",
+    "status": "down",
+    "url": "https://pub-db.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:wappalyzer",
+    "id": "wappalyzer-2",
+    "name": "Wappalyzer",
+    "file": "library/tools/domains-ip-infrastructure/analytics/wappalyzer-2.md",
+    "status": "live",
+    "url": "https://www.wappalyzer.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:netlas-io",
+    "id": "netlas-io-4",
+    "name": "Netlas.io",
+    "file": "library/tools/domains-ip-infrastructure/certificate-search/netlas-io-4.md",
+    "status": "live",
+    "url": "https://app.netlas.io/certs/"
+  },
+  {
+    "reason": "numeric-duplicate-of:shodan",
+    "id": "shodan-2",
+    "name": "Shodan",
+    "file": "library/tools/domains-ip-infrastructure/certificate-search/shodan-2.md",
+    "status": "unknown",
+    "url": "https://www.shodan.io/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "upcheck",
+    "name": "UPcheck",
+    "file": "library/tools/domains-ip-infrastructure/change-detection/upcheck.md",
+    "status": "down",
+    "url": "https://upcheck.online/"
+  },
+  {
+    "reason": "numeric-duplicate-of:daily-dns-changes",
+    "id": "daily-dns-changes-2",
+    "name": "Daily DNS Changes",
+    "file": "library/tools/domains-ip-infrastructure/discovery/daily-dns-changes-2.md",
+    "status": "live",
+    "url": "https://dailychanges.domaintools.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:netlas-io",
+    "id": "netlas-io-3",
+    "name": "Netlas.io",
+    "file": "library/tools/domains-ip-infrastructure/discovery/netlas-io-3.md",
+    "status": "live",
+    "url": "https://app.netlas.io/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "dns-bh-malware-domain-blocklist",
+    "name": "DNS-BH Malware Domain Blocklist",
+    "file": "library/tools/domains-ip-infrastructure/domain-blacklists/dns-bh-malware-domain-blocklist.md",
+    "status": "down",
+    "url": "https://www.malwaredomains.com/wordpress/?page_id=66"
+  },
+  {
+    "reason": "paid-only:mailboxvalidator.com",
+    "id": "email-domain-validation",
+    "name": "Email Domain Validation",
+    "file": "library/tools/domains-ip-infrastructure/domain-blacklists/email-domain-validation.md",
+    "status": "live",
+    "url": "https://www.mailboxvalidator.com/domain"
+  },
+  {
+    "reason": "numeric-duplicate-of:malware-domain-list",
+    "id": "malware-domain-list-2",
+    "name": "Malware Domain List",
+    "file": "library/tools/domains-ip-infrastructure/domain-blacklists/malware-domain-list-2.md",
+    "status": "live",
+    "url": "https://www.malwaredomainlist.com/hostslist/hosts.txt"
+  },
+  {
+    "reason": "dead:down",
+    "id": "malware-domains-blacklist",
+    "name": "Malware Domains Blacklist",
+    "file": "library/tools/domains-ip-infrastructure/domain-blacklists/malware-domains-blacklist.md",
+    "status": "down",
+    "url": "https://mirror1.malwaredomains.com/files/domains.txt"
+  },
+  {
+    "reason": "dead:down",
+    "id": "threatexpert-com-malicious-urls",
+    "name": "Threatexpert.com Malicious URLs",
+    "file": "library/tools/domains-ip-infrastructure/domain-blacklists/threatexpert-com-malicious-urls.md",
+    "status": "down",
+    "url": "https://www.networksec.org/grabbho/block.txt"
+  },
+  {
+    "reason": "numeric-duplicate-of:criminal-ip-search",
+    "id": "criminal-ip-search-2",
+    "name": "Criminal IP Search",
+    "file": "library/tools/domains-ip-infrastructure/host-port-discovery/criminal-ip-search-2.md",
+    "status": "live",
+    "url": "https://www.criminalip.io/"
+  },
+  {
+    "reason": "numeric-duplicate-of:netlas-io",
+    "id": "netlas-io-5",
+    "name": "Netlas.io",
+    "file": "library/tools/domains-ip-infrastructure/host-port-discovery/netlas-io-5.md",
+    "status": "live",
+    "url": "https://netlas.io/"
+  },
+  {
+    "reason": "numeric-duplicate-of:shodan",
+    "id": "shodan-3",
+    "name": "Shodan",
+    "file": "library/tools/domains-ip-infrastructure/host-port-discovery/shodan-3.md",
+    "status": "live",
+    "url": "https://www.shodan.io/"
+  },
+  {
+    "reason": "numeric-duplicate-of:spyse",
+    "id": "spyse-2",
+    "name": "Spyse",
+    "file": "library/tools/domains-ip-infrastructure/host-port-discovery/spyse-2.md",
+    "status": "live",
+    "url": "https://spyse.com/search/ip"
+  },
+  {
+    "reason": "numeric-duplicate-of:urlscan-io",
+    "id": "urlscan-io-2",
+    "name": "urlscan.io",
+    "file": "library/tools/domains-ip-infrastructure/host-port-discovery/urlscan-io-2.md",
+    "status": "live",
+    "url": "https://urlscan.io/search/#*"
+  },
+  {
+    "reason": "dead:live",
+    "id": "mimir",
+    "name": "Mimir",
+    "file": "library/tools/domains-ip-infrastructure/ioc-tools/mimir.md",
+    "status": "live",
+    "url": "https://github.com/NullArray/Mimir"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "avg-threat-labs",
+    "name": "AVG Threat Labs",
+    "file": "library/tools/domains-ip-infrastructure/reputation/avg-threat-labs.md",
+    "status": "degraded",
+    "url": "https://www.avg.com/en/signal/website-safety"
+  },
+  {
+    "reason": "numeric-duplicate-of:sublist3r",
+    "id": "sublist3r-2",
+    "name": "Sublist3r",
+    "file": "library/tools/domains-ip-infrastructure/saas-footprinting/sublist3r-2.md",
+    "status": "live",
+    "url": "https://github.com/aboul3la/Sublist3r"
+  },
+  {
+    "reason": "numeric-duplicate-of:theharvester",
+    "id": "theharvester-3",
+    "name": "theHarvester",
+    "file": "library/tools/domains-ip-infrastructure/saas-footprinting/theharvester-3.md",
+    "status": "live",
+    "url": "https://github.com/laramies/theHarvester"
+  },
+  {
+    "reason": "numeric-duplicate-of:netlas-io",
+    "id": "netlas-io-2",
+    "name": "Netlas.io",
+    "file": "library/tools/domains-ip-infrastructure/subdomains/netlas-io-2.md",
+    "status": "live",
+    "url": "https://app.netlas.io/domains/"
+  },
+  {
+    "reason": "numeric-duplicate-of:theharvester",
+    "id": "theharvester-2",
+    "name": "theHarvester",
+    "file": "library/tools/domains-ip-infrastructure/subdomains/theharvester-2.md",
+    "status": "live",
+    "url": "https://github.com/laramies/theHarvester"
+  },
+  {
+    "reason": "numeric-duplicate-of:ofac-sanctions-list-search",
+    "id": "ofac-sanctions-list-search-3",
+    "name": "OFAC Sanctions List Search",
+    "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/sanctions-and-watchlists/ofac-sanctions-list-search-3.md",
+    "status": "live",
+    "url": "https://sanctionssearch.ofac.treas.gov/"
+  },
+  {
+    "reason": "numeric-duplicate-of:opensanctions",
+    "id": "opensanctions-2",
+    "name": "OpenSanctions",
+    "file": "library/tools/domains-ip-infrastructure/terrorism-and-extremism/sanctions-and-watchlists/opensanctions-2.md",
+    "status": "live",
+    "url": "https://www.opensanctions.org/"
+  },
+  {
+    "reason": "numeric-duplicate-of:firehol-ip-lists",
+    "id": "firehol-ip-lists-2",
+    "name": "FireHOL IP Lists",
+    "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/firehol-ip-lists-2.md",
+    "status": "live",
+    "url": "https://iplists.firehol.org/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "massive-octo-spice-csirtgadgets-github",
+    "name": "massive-octo-spice - csirtgadgets Github",
+    "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/massive-octo-spice-csirtgadgets-github.md",
+    "status": "degraded",
+    "url": "https://github.com/csirtgadgets/massive-octo-spice"
+  },
+  {
+    "reason": "numeric-duplicate-of:project-honey-pot",
+    "id": "project-honey-pot-2",
+    "name": "Project Honey Pot",
+    "file": "library/tools/domains-ip-infrastructure/threat-feeds-and-platforms/project-honey-pot-2.md",
+    "status": "live",
+    "url": "https://www.projecthoneypot.org/"
+  },
+  {
+    "reason": "numeric-duplicate-of:online-nikto-scanner",
+    "id": "online-nikto-scanner-3",
+    "name": "Online Nikto scanner",
+    "file": "library/tools/domains-ip-infrastructure/tools/online-nikto-scanner-3.md",
+    "status": "live",
+    "url": "https://nikto.online/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "malware-exploit-ttp-database",
+    "name": "Malware Exploit TTP Database",
+    "file": "library/tools/domains-ip-infrastructure/ttps/malware-exploit-ttp-database.md",
+    "status": "down",
+    "url": "https://www.pwnmalw.re/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "knowurl",
+    "name": "KnowURL",
+    "file": "library/tools/domains-ip-infrastructure/url-expanders/knowurl.md",
+    "status": "degraded",
+    "url": "https://www.knowurl.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:online-nikto-scanner",
+    "id": "online-nikto-scanner-2",
+    "name": "Online Nikto scanner",
+    "file": "library/tools/domains-ip-infrastructure/vulnerabilities/scanners/online-nikto-scanner-2.md",
+    "status": "live",
+    "url": "https://nikto.online/"
+  },
+  {
+    "reason": "paid-only:domaintools.com",
+    "id": "daily-dns-changes",
+    "name": "Daily DNS Changes",
+    "file": "library/tools/domains-ip-infrastructure/whois-records/daily-dns-changes.md",
+    "status": "live",
+    "url": "https://dailychanges.domaintools.com/"
+  },
+  {
+    "reason": "dead:live",
+    "id": "fraps",
+    "name": "FRAPS",
+    "file": "library/tools/evidence-capture/screen-capture/fraps.md",
+    "status": "live",
+    "url": "https://fraps.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:archive-is",
+    "id": "archive-is-2",
+    "name": "Archive.is",
+    "file": "library/tools/evidence-capture/web-browsing/archive-is-2.md",
+    "status": "live",
+    "url": "https://archive.is/"
+  },
+  {
+    "reason": "numeric-duplicate-of:burp-suite",
+    "id": "burp-suite-2",
+    "name": "Burp Suite",
+    "file": "library/tools/evidence-capture/web-browsing/burp-suite-2.md",
+    "status": "live",
+    "url": "https://portswigger.net/burp/download.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:afd-co-uk",
+    "id": "afd-co-uk-2",
+    "name": "afd.co.uk",
+    "file": "library/tools/financial-crypto/afd-co-uk-2.md",
+    "status": "unknown",
+    "url": "https://www.afd.co.uk/solutions/bank-verification/"
+  },
+  {
+    "reason": "numeric-duplicate-of:aib-gov-uk",
+    "id": "aib-gov-uk-2",
+    "name": "aib.gov.uk",
+    "file": "library/tools/financial-crypto/aib-gov-uk-2.md",
+    "status": "unknown",
+    "url": "https://roi.aib.gov.uk/roi/PublicSearches/PublicSearch"
+  },
+  {
+    "reason": "numeric-duplicate-of:aib-gov-uk",
+    "id": "aib-gov-uk-3",
+    "name": "aib.gov.uk",
+    "file": "library/tools/financial-crypto/aib-gov-uk-3.md",
+    "status": "unknown",
+    "url": "https://roi.aib.gov.uk/roi/PublicSearches/PublicSearch/InsolventCompany"
+  },
+  {
+    "reason": "numeric-duplicate-of:blockchain-info",
+    "id": "blockchain-info-2",
+    "name": "blockchain.info",
+    "file": "library/tools/financial-crypto/blockchain-info-2.md",
+    "status": "unknown",
+    "url": "https://www.blockchain.com/explorer/mempool/btc"
+  },
+  {
+    "reason": "numeric-duplicate-of:blockcypher",
+    "id": "blockcypher-2",
+    "name": "BlockCypher",
+    "file": "library/tools/financial-crypto/blockcypher-2.md",
+    "status": "unknown",
+    "url": "https://blockcypher.herokuapp.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:economy-ni-gov-uk",
+    "id": "economy-ni-gov-uk-2",
+    "name": "economy-ni.gov.uk",
+    "file": "library/tools/financial-crypto/economy-ni-gov-uk-2.md",
+    "status": "unknown",
+    "url": "https://www.economy-ni.gov.uk/services/individual-voluntary-arrangement-register"
+  },
+  {
+    "reason": "numeric-duplicate-of:gijn-org",
+    "id": "gijn-org-2",
+    "name": "gijn.org",
+    "file": "library/tools/financial-crypto/gijn-org-2.md",
+    "status": "unknown",
+    "url": "https://gijn.org/resource/introduction-investigative-journalism-following-money"
+  },
+  {
+    "reason": "numeric-duplicate-of:gov-uk",
+    "id": "gov-uk-2",
+    "name": "gov.uk",
+    "file": "library/tools/financial-crypto/gov-uk-2.md",
+    "status": "unknown",
+    "url": "https://www.gov.uk/government/publications/publishing-details-of-deliberate-tax-defaulters-pddd/current-list-of-deliberate-tax-defaulters"
+  },
+  {
+    "reason": "numeric-duplicate-of:ibancalculator-com",
+    "id": "ibancalculator-com-2",
+    "name": "ibancalculator.com",
+    "file": "library/tools/financial-crypto/ibancalculator-com-2.md",
+    "status": "unknown",
+    "url": "https://www.ibancalculator.com/bic_und_iban.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:investing-com",
+    "id": "investing-com-2",
+    "name": "investing.com",
+    "file": "library/tools/financial-crypto/investing-com-2.md",
+    "status": "unknown",
+    "url": "https://uk.investing.com/crypto/currencies?currency=gbp"
+  },
+  {
+    "reason": "numeric-duplicate-of:ip-logger",
+    "id": "ip-logger-2",
+    "name": "IP Logger",
+    "file": "library/tools/financial-crypto/ip-logger-2.md",
+    "status": "unknown",
+    "url": "https://osint-spy.com/ip-logger"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin-com",
+    "id": "linkedin-com-2",
+    "name": "linkedin.com",
+    "file": "library/tools/financial-crypto/linkedin-com-2.md",
+    "status": "unknown",
+    "url": "https://www.linkedin.com/posts/valdemarjb_%F0%9D%97%A3%F0%9D%97%B6%F0%9D%98%83%F0%9D%97%BC%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-%F0%9D%97%BC%F0%9D%97%BB-%F0%9D%97%A5%F0%9D%97%B2%F0%9D%98%83%F0%9D%97%BC%F0%9D%97%B9%F0%9D%98%82%F0%9D%98%81-%F0%9D%97%9B%F0%9D%97%BC%F0%9D%98%84-activity-7313893335306256384-M-W7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACqQ4E4B1ttTBrvoLEnyHHnrElaBmcAnHfs"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin-com",
+    "id": "linkedin-com-3",
+    "name": "linkedin.com",
+    "file": "library/tools/financial-crypto/linkedin-com-3.md",
+    "status": "unknown",
+    "url": "https://www.linkedin.com/posts/mariosantella_osint-cybersecurity-binance-ugcPost-7312391491551686656-d2-U?utm_source=share&utm_medium=member_desktop&rcm=ACoAACqQ4E4B1ttTBrvoLEnyHHnrElaBmcAnHfs"
+  },
+  {
+    "reason": "numeric-duplicate-of:merklescience-com",
+    "id": "merklescience-com-2",
+    "name": "merklescience.com",
+    "file": "library/tools/financial-crypto/merklescience-com-2.md",
+    "status": "unknown",
+    "url": "https://www.merklescience.com/blog/top-mistakes-investigators-make-when-investigating-crypto-crime"
+  },
+  {
+    "reason": "numeric-duplicate-of:merklescience-com",
+    "id": "merklescience-com-3",
+    "name": "merklescience.com",
+    "file": "library/tools/financial-crypto/merklescience-com-3.md",
+    "status": "unknown",
+    "url": "https://blog.merklescience.com/hubfs/Marketing%20reports/Merkle%20Science%20Attribution%20Mechanism%20Booklet%20(Dec%202023).pdf"
+  },
+  {
+    "reason": "numeric-duplicate-of:merklescience-com",
+    "id": "merklescience-com-4",
+    "name": "merklescience.com",
+    "file": "library/tools/financial-crypto/merklescience-com-4.md",
+    "status": "unknown",
+    "url": "https://blog.merklescience.com/general/investigative-strategies-for-crypto-crime-3-key-webinar-takeaways"
+  },
+  {
+    "reason": "numeric-duplicate-of:merklescience-com",
+    "id": "merklescience-com-5",
+    "name": "merklescience.com",
+    "file": "library/tools/financial-crypto/merklescience-com-5.md",
+    "status": "unknown",
+    "url": "https://blog.merklescience.com/general/investigating-dark-web-transactions-challenges-and-solutions"
+  },
+  {
+    "reason": "numeric-duplicate-of:merklescience-com",
+    "id": "merklescience-com-6",
+    "name": "merklescience.com",
+    "file": "library/tools/financial-crypto/merklescience-com-6.md",
+    "status": "unknown",
+    "url": "https://www.merklescience.com/blog/how-to-trace-illicit-crypto-funds-across-chains"
+  },
+  {
+    "reason": "numeric-duplicate-of:merklescience-com",
+    "id": "merklescience-com-7",
+    "name": "merklescience.com",
+    "file": "library/tools/financial-crypto/merklescience-com-7.md",
+    "status": "unknown",
+    "url": "https://www.merklescience.com/blog/cross-chain-analytics-law-enforcement-2025"
+  },
+  {
+    "reason": "numeric-duplicate-of:monero-blocks",
+    "id": "monero-blocks-2",
+    "name": "Monero Blocks",
+    "file": "library/tools/financial-crypto/monero-blocks-2.md",
+    "status": "unknown",
+    "url": "https://moneroblocks.info"
+  },
+  {
+    "reason": "numeric-duplicate-of:secjuice-com",
+    "id": "secjuice-com-2",
+    "name": "secjuice.com",
+    "file": "library/tools/financial-crypto/secjuice-com-2.md",
+    "status": "unknown",
+    "url": "https://www.secjuice.com/crypto-osint-wallet-research/"
+  },
+  {
+    "reason": "numeric-duplicate-of:sortcodes-co-uk",
+    "id": "sortcodes-co-uk-2",
+    "name": "sortcodes.co.uk",
+    "file": "library/tools/financial-crypto/sortcodes-co-uk-2.md",
+    "status": "unknown",
+    "url": "https://www.sortcodes.co.uk/"
+  },
+  {
+    "reason": "numeric-duplicate-of:start-me",
+    "id": "start-me-2",
+    "name": "start.me",
+    "file": "library/tools/financial-crypto/start-me-2.md",
+    "status": "unknown",
+    "url": "https://start.me/p/eppylY/finint-cryptocurrency"
+  },
+  {
+    "reason": "dead:down",
+    "id": "blockr-io",
+    "name": "Blockr.io",
+    "file": "library/tools/financial-crypto/bitcoin/blockr-io.md",
+    "status": "down",
+    "url": "https://blockr.io/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "blocktrail",
+    "name": "Blocktrail",
+    "file": "library/tools/financial-crypto/bitcoin/blocktrail.md",
+    "status": "down",
+    "url": "https://www.blocktrail.com/BTC"
+  },
+  {
+    "reason": "numeric-duplicate-of:bitcoin-who-s-who",
+    "id": "bitcoin-who-s-who-2",
+    "name": "Bitcoin Who's Who",
+    "file": "library/tools/financial-crypto/chain-analysis-platforms/bitcoin-who-s-who-2.md",
+    "status": "live",
+    "url": "https://www.bitcoinwhoswho.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:bitref",
+    "id": "bitref-2",
+    "name": "BitRef",
+    "file": "library/tools/financial-crypto/chain-analysis-platforms/bitref-2.md",
+    "status": "live",
+    "url": "https://bitref.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:wallet-explorer",
+    "id": "wallet-explorer-2",
+    "name": "Wallet Explorer",
+    "file": "library/tools/financial-crypto/chain-analysis-platforms/wallet-explorer-2.md",
+    "status": "live",
+    "url": "https://www.walletexplorer.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:etherscan",
+    "id": "etherscan-2",
+    "name": "Etherscan",
+    "file": "library/tools/financial-crypto/ethereum/etherscan-2.md",
+    "status": "live",
+    "url": "https://etherscan.io/"
+  },
+  {
+    "reason": "numeric-duplicate-of:ofac-sanctions-list-search",
+    "id": "ofac-sanctions-list-search-2",
+    "name": "OFAC Sanctions List Search",
+    "file": "library/tools/financial-crypto/mixer-tracking/ofac-sanctions-list-search-2.md",
+    "status": "live",
+    "url": "https://sanctionssearch.ofac.treas.gov/"
+  },
+  {
+    "reason": "numeric-duplicate-of:blockchair",
+    "id": "blockchair-2",
+    "name": "Blockchair",
+    "file": "library/tools/financial-crypto/multi-chain-explorers/blockchair-2.md",
+    "status": "live",
+    "url": "https://blockchair.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:blockchair",
+    "id": "blockchair-3",
+    "name": "Blockchair",
+    "file": "library/tools/financial-crypto/wallet-clustering-and-address-analysis/blockchair-3.md",
+    "status": "live",
+    "url": "https://blockchair.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:wallet-explorer",
+    "id": "wallet-explorer-3",
+    "name": "Wallet Explorer",
+    "file": "library/tools/financial-crypto/wallet-clustering-and-address-analysis/wallet-explorer-3.md",
+    "status": "live",
+    "url": "https://www.walletexplorer.com/"
+  },
+  {
+    "reason": "paid-only:emporis.com",
+    "id": "emporis-buildings-map",
+    "name": "Emporis Buildings Map",
+    "file": "library/tools/geolocation/emporis-buildings-map.md",
+    "status": "unknown",
+    "url": "https://www.emporis.com/buildings/map"
+  },
+  {
+    "reason": "numeric-duplicate-of:forensicosint-com",
+    "id": "forensicosint-com-4",
+    "name": "forensicosint.com",
+    "file": "library/tools/geolocation/forensicosint-com-4.md",
+    "status": "unknown",
+    "url": "https://www.forensicosint.com/free-tools/osint-timestamp-decoder"
+  },
+  {
+    "reason": "numeric-duplicate-of:geonames",
+    "id": "geonames-2",
+    "name": "GeoNames",
+    "file": "library/tools/geolocation/geonames-2.md",
+    "status": "unknown",
+    "url": "https://www.geonames.org/"
+  },
+  {
+    "reason": "numeric-duplicate-of:openstreetcam",
+    "id": "openstreetcam-2",
+    "name": "Openstreetcam",
+    "file": "library/tools/geolocation/openstreetcam-2.md",
+    "status": "unknown",
+    "url": "https://www.openstreetcam.org/map"
+  },
+  {
+    "reason": "numeric-duplicate-of:timeanddate-com",
+    "id": "timeanddate-com-2",
+    "name": "timeanddate.com",
+    "file": "library/tools/geolocation/timeanddate-com-2.md",
+    "status": "unknown",
+    "url": "https://www.timeanddate.com/worldclock/converter.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:timeanddate-com",
+    "id": "timeanddate-com-3",
+    "name": "timeanddate.com",
+    "file": "library/tools/geolocation/timeanddate-com-3.md",
+    "status": "unknown",
+    "url": "https://www.timeanddate.com/library/abbreviations/timezones/"
+  },
+  {
+    "reason": "numeric-duplicate-of:clarify",
+    "id": "clarify-2",
+    "name": "Clarify",
+    "file": "library/tools/image-video-face/clarify-2.md",
+    "status": "unknown",
+    "url": "http://clarify.io"
+  },
+  {
+    "reason": "numeric-duplicate-of:clipsnap-com",
+    "id": "clipsnap-com-2",
+    "name": "clipsnap.com",
+    "file": "library/tools/image-video-face/clipsnap-com-2.md",
+    "status": "unknown",
+    "url": "https://www.clipsnap.com/remove-person-from-photo/"
+  },
+  {
+    "reason": "numeric-duplicate-of:clipsnap-com",
+    "id": "clipsnap-com-3",
+    "name": "clipsnap.com",
+    "file": "library/tools/image-video-face/clipsnap-com-3.md",
+    "status": "unknown",
+    "url": "https://www.clipsnap.com/image-enhancer/editor/"
+  },
+  {
+    "reason": "numeric-duplicate-of:huggingface-co",
+    "id": "huggingface-co-2",
+    "name": "huggingface.co",
+    "file": "library/tools/image-video-face/huggingface-co-2.md",
+    "status": "unknown",
+    "url": "https://huggingface.co/spaces/AceXRoux/GeoVLM"
+  },
+  {
+    "reason": "numeric-duplicate-of:huggingface-co",
+    "id": "huggingface-co-3",
+    "name": "huggingface.co",
+    "file": "library/tools/image-video-face/huggingface-co-3.md",
+    "status": "unknown",
+    "url": "https://huggingface.co/spaces/Selfit/ImageEditPro"
+  },
+  {
+    "reason": "numeric-duplicate-of:metatube",
+    "id": "metatube-2",
+    "name": "Metatube",
+    "file": "library/tools/image-video-face/metatube-2.md",
+    "status": "unknown",
+    "url": "http://www.metatube.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:repostsleuth",
+    "id": "repostsleuth-2",
+    "name": "RepostSleuth",
+    "file": "library/tools/image-video-face/repostsleuth-2.md",
+    "status": "unknown",
+    "url": "https://www.repostsleuth.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:tools",
+    "id": "tools-2",
+    "name": "Tools",
+    "file": "library/tools/image-video-face/tools-2.md",
+    "status": "unknown",
+    "url": "https://intelx.io/tools?tab=image"
+  },
+  {
+    "reason": "numeric-duplicate-of:y2mate-com",
+    "id": "y2mate-com-2",
+    "name": "y2mate.com",
+    "file": "library/tools/image-video-face/y2mate-com-2.md",
+    "status": "unknown",
+    "url": "http://y2mate.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:youtube-metadata",
+    "id": "youtube-metadata-2",
+    "name": "YouTube Metadata",
+    "file": "library/tools/image-video-face/youtube-metadata-2.md",
+    "status": "unknown",
+    "url": "https://www.amnestyusa.org/citizenevidence"
+  },
+  {
+    "reason": "dead:down",
+    "id": "deepfake-image-detection",
+    "name": "DeepFake-Image-Detection",
+    "file": "library/tools/image-video-face/deepfake-detection/deepfake-image-detection.md",
+    "status": "down",
+    "url": "https://github.com/rmkemker/DeepFake-Image-Detection"
+  },
+  {
+    "reason": "dead:down",
+    "id": "hoaxy",
+    "name": "Hoaxy",
+    "file": "library/tools/image-video-face/fact-checking-tools/hoaxy.md",
+    "status": "down",
+    "url": "https://hoaxy.osome.iu.edu/"
+  },
+  {
+    "reason": "dead:degraded",
+    "id": "tofo-me",
+    "name": "Tofo.me",
+    "file": "library/tools/image-video-face/images/instagram/tofo-me.md",
+    "status": "degraded",
+    "url": "https://tofo.me/"
+  },
+  {
+    "reason": "numeric-duplicate-of:arcgis-com",
+    "id": "arcgis-com-2",
+    "name": "arcgis.com",
+    "file": "library/tools/maps-geospatial-data/arcgis-com-2.md",
+    "status": "unknown",
+    "url": "https://livingatlas.arcgis.com/wayback/?fbclid=IwAR3fKmK4S4V-PP5DzqxK9fDyuX3C1BvFWDUMljHf0wkbtpnM_CdlAtnvx0Q"
+  },
+  {
+    "reason": "numeric-duplicate-of:archieinitiative-com",
+    "id": "archieinitiative-com-2",
+    "name": "archieinitiative.com",
+    "file": "library/tools/maps-geospatial-data/archieinitiative-com-2.md",
+    "status": "unknown",
+    "url": "https://app.archieinitiative.com/map?mode=power"
+  },
+  {
+    "reason": "numeric-duplicate-of:freemaptools-com",
+    "id": "freemaptools-com-2",
+    "name": "freemaptools.com",
+    "file": "library/tools/maps-geospatial-data/freemaptools-com-2.md",
+    "status": "unknown",
+    "url": "https://www.freemaptools.com/distance-between-uk-postcodes.htm"
+  },
+  {
+    "reason": "numeric-duplicate-of:item",
+    "id": "item-4",
+    "name": "Допомога",
+    "file": "library/tools/maps-geospatial-data/item-4.md",
+    "status": "unknown",
+    "url": "https://dopomoha.pl"
+  },
+  {
+    "reason": "numeric-duplicate-of:windy",
+    "id": "windy-2",
+    "name": "Windy",
+    "file": "library/tools/maps-geospatial-data/windy-2.md",
+    "status": "unknown",
+    "url": "https://www.windy.com/-Webcams/webcams"
+  },
+  {
+    "reason": "numeric-duplicate-of:discord-com",
+    "id": "discord-com-3",
+    "name": "discord.com",
+    "file": "library/tools/messaging/discord-com-3.md",
+    "status": "unknown",
+    "url": "https://discord.com/servers"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-14",
+    "name": "Here",
+    "file": "library/tools/messaging/here-14.md",
+    "status": "unknown",
+    "url": "https://telegram.org/privacy/gb?setln=en"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-17",
+    "name": "Here",
+    "file": "library/tools/messaging/here-17.md",
+    "status": "unknown",
+    "url": "https://faq.whatsapp.com/en/android/26000050/?category=5245250"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-3",
+    "name": "Here",
+    "file": "library/tools/messaging/here-3.md",
+    "status": "unknown",
+    "url": "https://discord.com/safety/360044157931-working-with-law-enforcement"
+  },
+  {
+    "reason": "numeric-duplicate-of:item",
+    "id": "item-2",
+    "name": "Фари",
+    "file": "library/tools/messaging/item-2.md",
+    "status": "unknown",
+    "url": "https://telegram.me/faribybot"
+  },
+  {
+    "reason": "numeric-duplicate-of:knowlesys-com",
+    "id": "knowlesys-com-3",
+    "name": "knowlesys.com",
+    "file": "library/tools/messaging/knowlesys-com-3.md",
+    "status": "unknown",
+    "url": "https://knowlesys.com/osint/whatsapp_open_source_intelligence_investigation_method1.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin-com",
+    "id": "linkedin-com-4",
+    "name": "linkedin.com",
+    "file": "library/tools/messaging/linkedin-com-4.md",
+    "status": "unknown",
+    "url": "https://www.linkedin.com/posts/devaidan_osint-activity-7250565850837999616-Di3V/"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin-com",
+    "id": "linkedin-com-8",
+    "name": "linkedin.com",
+    "file": "library/tools/messaging/linkedin-com-8.md",
+    "status": "unknown",
+    "url": "https://www.linkedin.com/pulse/deleting-your-telegram-account-does-remove-identity-just-yehor-selin-vp6kf/"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin-com",
+    "id": "linkedin-com-9",
+    "name": "linkedin.com",
+    "file": "library/tools/messaging/linkedin-com-9.md",
+    "status": "unknown",
+    "url": "https://www.linkedin.com/pulse/whatsapp-osint-tools-investigators-vijay-kumar-gupta--3poac/"
+  },
+  {
+    "reason": "numeric-duplicate-of:medium-com",
+    "id": "medium-com-3",
+    "name": "medium.com",
+    "file": "library/tools/messaging/medium-com-3.md",
+    "status": "unknown",
+    "url": "https://medium.com/@kamramehak445/how-botim-quietly-became-the-everyday-app-you-rely-on-e7837b45a765"
+  },
+  {
+    "reason": "numeric-duplicate-of:osintteam-blog",
+    "id": "osintteam-blog-4",
+    "name": "osintteam.blog",
+    "file": "library/tools/messaging/osintteam-blog-4.md",
+    "status": "unknown",
+    "url": "https://osintteam.blog/whatsapp-osint-the-hidden-intelligence-behind-online-status-a3d7591cda3b"
+  },
+  {
+    "reason": "numeric-duplicate-of:reddit-com",
+    "id": "reddit-com-3",
+    "name": "reddit.com",
+    "file": "library/tools/messaging/reddit-com-3.md",
+    "status": "unknown",
+    "url": "https://www.reddit.com/r/Telegram/comments/7znf6s/how_do_i_find_my_telegram_id/"
+  },
+  {
+    "reason": "numeric-duplicate-of:telegago",
+    "id": "telegago-3",
+    "name": "Telegago",
+    "file": "library/tools/messaging/telegago-3.md",
+    "status": "unknown",
+    "url": "https://cse.google.com/cse?&cx=006368593537057042503:efxu7xprihg#gsc.tab=0"
+  },
+  {
+    "reason": "numeric-duplicate-of:telegram-osint",
+    "id": "telegram-osint-2022",
+    "name": "Telegram-OSINT-2022",
+    "file": "library/tools/messaging/telegram-osint-2022.md",
+    "status": "unknown",
+    "url": "https://github.com/arcx1/Telegram-OSINT-2022"
+  },
+  {
+    "reason": "numeric-duplicate-of:wechat-com",
+    "id": "wechat-com-2",
+    "name": "wechat.com",
+    "file": "library/tools/messaging/wechat-com-2.md",
+    "status": "unknown",
+    "url": "https://www.wechat.com/en/contact_us.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:fake-name-generator",
+    "id": "fake-name-generator-2",
+    "name": "Fake Name Generator",
+    "file": "library/tools/opsec-investigator-tooling/fake-name-generator-2.md",
+    "status": "unknown",
+    "url": "https://www.fakenamegenerator.com fake person generator"
+  },
+  {
+    "reason": "numeric-duplicate-of:gephi",
+    "id": "gephi-2",
+    "name": "Gephi",
+    "file": "library/tools/opsec-investigator-tooling/gephi-2.md",
+    "status": "unknown",
+    "url": "https://github.com/gephi/gephi"
+  },
+  {
+    "reason": "paid-only:inteltechniques.com",
+    "id": "privacy-services-by-michael-bazzell",
+    "name": "Privacy Services by Michael Bazzell",
+    "file": "library/tools/opsec-investigator-tooling/privacy-services-by-michael-bazzell.md",
+    "status": "unknown",
+    "url": "https://inteltechniques.com/workbook.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:pywhat",
+    "id": "pywhat-2",
+    "name": "pyWhat",
+    "file": "library/tools/opsec-investigator-tooling/pywhat-2.md",
+    "status": "unknown",
+    "url": "https://github.com/bee-san/pyWhat"
+  },
+  {
+    "reason": "numeric-duplicate-of:receive-sms-online",
+    "id": "receive-sms-online-2",
+    "name": "Receive SMS Online",
+    "file": "library/tools/opsec-investigator-tooling/receive-sms-online-2.md",
+    "status": "unknown",
+    "url": "https://hs3x.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:search-by-image",
+    "id": "search-by-image-2",
+    "name": "Search by Image",
+    "file": "library/tools/opsec-investigator-tooling/search-by-image-2.md",
+    "status": "unknown",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/search_by_image"
+  },
+  {
+    "reason": "numeric-duplicate-of:torch",
+    "id": "torch-2",
+    "name": "TORCH",
+    "file": "library/tools/opsec-investigator-tooling/torch-2.md",
+    "status": "unknown",
+    "url": "https://xmh57jrzrnw6insl.onion.to"
+  },
+  {
+    "reason": "numeric-duplicate-of:twilio",
+    "id": "twilio-2",
+    "name": "Twilio",
+    "file": "library/tools/opsec-investigator-tooling/twilio-2.md",
+    "status": "unknown",
+    "url": "https://www.twilio.com/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "vpn-comparisons-that-one-privacy-site",
+    "name": "VPN Comparisons - That One Privacy Site",
+    "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/anonymous-vpns/vpn-comparisons-that-one-privacy-site.md",
+    "status": "down",
+    "url": "https://thatoneprivacysite.net/"
+  },
+  {
+    "reason": "numeric-duplicate-of:freenet-project",
+    "id": "freenet-project-2",
+    "name": "Freenet Project",
+    "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/tor/freenet-project-2.md",
+    "status": "live",
+    "url": "https://freenetproject.org/pages/download.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:i2p-anonymous-network",
+    "id": "i2p-anonymous-network-2",
+    "name": "I2P Anonymous Network",
+    "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/tor/i2p-anonymous-network-2.md",
+    "status": "live",
+    "url": "https://geti2p.net/en/"
+  },
+  {
+    "reason": "numeric-duplicate-of:tor-download",
+    "id": "tor-download-2",
+    "name": "Tor Download",
+    "file": "library/tools/opsec-investigator-tooling/anonymous-browsing/tor/tor-download-2.md",
+    "status": "live",
+    "url": "https://www.torproject.org/download/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "faker-js",
+    "name": "Faker.js",
+    "file": "library/tools/opsec-investigator-tooling/persona-creation/faker-js.md",
+    "status": "down",
+    "url": "https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html"
+  },
+  {
+    "reason": "paid-only:inteltechniques.com",
+    "id": "credit-freeze",
+    "name": "Credit Freeze",
+    "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/credit-freeze.md",
+    "status": "live",
+    "url": "https://inteltechniques.com/blog/2018/09/28/complete-credit-freeze-tutorial-update/"
+  },
+  {
+    "reason": "paid-only:inteltechniques.com",
+    "id": "intel-techniques-hiding-from-the-internet",
+    "name": "Intel Techniques - Hiding from the Internet",
+    "file": "library/tools/opsec-investigator-tooling/privacy-clean-up/intel-techniques-hiding-from-the-internet.md",
+    "status": "live",
+    "url": "https://inteltechniques.com/data/workbook.pdf"
+  },
+  {
+    "reason": "paid-only:inteltechniques.com",
+    "id": "inteltechniques-linkedin-search-tool",
+    "name": "IntelTechniques LinkedIn Search Tool",
+    "file": "library/tools/people-search/inteltechniques-linkedin-search-tool.md",
+    "status": "unknown",
+    "url": "https://inteltechniques.com/tools/Linkedin.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:people-search",
+    "id": "people-search-3",
+    "name": "People Search",
+    "file": "library/tools/people-search/people-search-3.md",
+    "status": "unknown",
+    "url": "https://www.peoplesearch.com.au"
+  },
+  {
+    "reason": "paid-only:usa-people-search.com",
+    "id": "usa-people-search",
+    "name": "USA-People-Search",
+    "file": "library/tools/people-search/usa-people-search.md",
+    "status": "unknown",
+    "url": "https://www.usa-people-search.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:wikipedia-org",
+    "id": "wikipedia-org-2",
+    "name": "wikipedia.org",
+    "file": "library/tools/phone/wikipedia-org-2.md",
+    "status": "unknown",
+    "url": "https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers"
+  },
+  {
+    "reason": "numeric-duplicate-of:arcgis-com",
+    "id": "arcgis-com-3",
+    "name": "arcgis.com",
+    "file": "library/tools/public-records/arcgis-com-3.md",
+    "status": "unknown",
+    "url": "https://housinggovie.maps.arcgis.com/apps/webappviewer/index.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:arcgis-com",
+    "id": "arcgis-com-4",
+    "name": "arcgis.com",
+    "file": "library/tools/public-records/arcgis-com-4.md",
+    "status": "unknown",
+    "url": "https://manngis.maps.arcgis.com/apps/webappviewer/index.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:archive-today",
+    "id": "archive-today-2",
+    "name": "Archive Today",
+    "file": "library/tools/public-records/archive-today-2.md",
+    "status": "unknown",
+    "url": "http://archive.is/"
+  },
+  {
+    "reason": "numeric-duplicate-of:brb-public-records",
+    "id": "brb-public-records-2",
+    "name": "BRB Public Records",
+    "file": "library/tools/public-records/brb-public-records-2.md",
+    "status": "unknown",
+    "url": "https://www.brbpub.com/"
+  },
+  {
+    "reason": "paid-only:bvdinfo.com",
+    "id": "bureau-van-dijk",
+    "name": "Bureau Van Dijk",
+    "file": "library/tools/public-records/bureau-van-dijk.md",
+    "status": "unknown",
+    "url": "http://www.bvdinfo.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:court-records-directory",
+    "id": "court-records-directory-3",
+    "name": "Court Records Directory",
+    "file": "library/tools/public-records/court-records-directory-3.md",
+    "status": "unknown",
+    "url": "http://www.courtreference.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:egafd-com",
+    "id": "egafd-com-2",
+    "name": "egafd.com",
+    "file": "library/tools/public-records/egafd-com-2.md",
+    "status": "unknown",
+    "url": "https://www.egafd.com/fora/viewforum.php?f=2"
+  },
+  {
+    "reason": "paid-only:emporis.com",
+    "id": "emporis",
+    "name": "EMPORIS",
+    "file": "library/tools/public-records/emporis.md",
+    "status": "unknown",
+    "url": "https://www.emporis.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:findmypast",
+    "id": "findmypast-2",
+    "name": "FindMyPast",
+    "file": "library/tools/public-records/findmypast-2.md",
+    "status": "unknown",
+    "url": "http://www.findmypast.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:gov-uk",
+    "id": "gov-uk-3",
+    "name": "gov.uk",
+    "file": "library/tools/public-records/gov-uk-3.md",
+    "status": "unknown",
+    "url": "https://www.gov.uk/government/publications/adoption-certificate-application-form"
+  },
+  {
+    "reason": "numeric-duplicate-of:govdata-das-datenportal-f-r-deutschland-german",
+    "id": "govdata-das-datenportal-f-r-deutschland-german-2",
+    "name": "GOVDATA - Das Datenportal für Deutschland (German)",
+    "file": "library/tools/public-records/govdata-das-datenportal-f-r-deutschland-german-2.md",
+    "status": "unknown",
+    "url": "https://www.govdata.de/"
+  },
+  {
+    "reason": "paid-only:findmypast.com",
+    "id": "mocavo-find-my-past",
+    "name": "Mocavo Find My Past",
+    "file": "library/tools/public-records/mocavo-find-my-past.md",
+    "status": "unknown",
+    "url": "https://www.findmypast.com/mocavo-info"
+  },
+  {
+    "reason": "numeric-duplicate-of:myheritage",
+    "id": "myheritage-2",
+    "name": "MyHeritage",
+    "file": "library/tools/public-records/myheritage-2.md",
+    "status": "unknown",
+    "url": "http://www.myheritage.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:open-data-portal-m-nchen-german",
+    "id": "open-data-portal-m-nchen-german-2",
+    "name": "Open-Data-Portal München (German)",
+    "file": "library/tools/public-records/open-data-portal-m-nchen-german-2.md",
+    "status": "unknown",
+    "url": "https://www.opengov-muenchen.de/"
+  },
+  {
+    "reason": "paid-only:bvdinfo.com",
+    "id": "orbis-directory",
+    "name": "Orbis directory",
+    "file": "library/tools/public-records/orbis-directory.md",
+    "status": "unknown",
+    "url": "http://orbisdirectory.bvdinfo.com/version-20161014/OrbisDirectory/Companies"
+  },
+  {
+    "reason": "numeric-duplicate-of:public-records",
+    "id": "public-records-2",
+    "name": "Public Records?",
+    "file": "library/tools/public-records/public-records-2.md",
+    "status": "unknown",
+    "url": "https://publicrecords.searchsystems.net/"
+  },
+  {
+    "reason": "numeric-duplicate-of:rcmp-death-search",
+    "id": "rcmp-death-search-2",
+    "name": "RCMP Death Search 2",
+    "file": "library/tools/public-records/rcmp-death-search-2.md",
+    "status": "unknown",
+    "url": "https://c0cqk108.caspio.com/dp/915610007f161cceda514e33a0b7"
+  },
+  {
+    "reason": "numeric-duplicate-of:rcmp-death-search",
+    "id": "rcmp-death-search-3",
+    "name": "RCMP Death Search 3",
+    "file": "library/tools/public-records/rcmp-death-search-3.md",
+    "status": "unknown",
+    "url": "https://b2.caspio.com/dp/91561000c38ca49de99e4ecf9619"
+  },
+  {
+    "reason": "numeric-duplicate-of:rootsweb",
+    "id": "rootsweb-3",
+    "name": "RootsWeb",
+    "file": "library/tools/public-records/rootsweb-3.md",
+    "status": "unknown",
+    "url": "http://www.rootsweb.ancestry.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:searchable-fcc-id-database",
+    "id": "searchable-fcc-id-database-2",
+    "name": "Searchable FCC ID Database",
+    "file": "library/tools/public-records/searchable-fcc-id-database-2.md",
+    "status": "unknown",
+    "url": "https://fccid.io/"
+  },
+  {
+    "reason": "paid-only:semrush.com",
+    "id": "semrush",
+    "name": "SEMrush",
+    "file": "library/tools/public-records/semrush.md",
+    "status": "unknown",
+    "url": "https://www.semrush.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:taxpolicy-org-uk",
+    "id": "taxpolicy-org-uk-2",
+    "name": "taxpolicy.org.uk",
+    "file": "library/tools/public-records/taxpolicy-org-uk-2.md",
+    "status": "unknown",
+    "url": "https://www.taxpolicy.org.uk/2024/01/16/overseas/"
+  },
+  {
+    "reason": "numeric-duplicate-of:the-world-bank-open-data-catalog",
+    "id": "the-world-bank-open-data-catalog-2",
+    "name": "The World Bank Open Data Catalog",
+    "file": "library/tools/public-records/the-world-bank-open-data-catalog-2.md",
+    "status": "unknown",
+    "url": "https://datacatalog.worldbank.org/"
+  },
+  {
+    "reason": "numeric-duplicate-of:world-bank-data",
+    "id": "world-bank-data-2",
+    "name": "World Bank Data",
+    "file": "library/tools/public-records/world-bank-data-2.md",
+    "status": "unknown",
+    "url": "http://datatopics.worldbank.org/consumption/home"
+  },
+  {
+    "reason": "numeric-duplicate-of:world-digital-library",
+    "id": "world-digital-library-2",
+    "name": "World Digital Library",
+    "file": "library/tools/public-records/world-digital-library-2.md",
+    "status": "unknown",
+    "url": "https://www.loc.gov/collections/world-digital-library/"
+  },
+  {
+    "reason": "numeric-duplicate-of:companies-house",
+    "id": "companies-house-2",
+    "name": "Companies House",
+    "file": "library/tools/public-records/company-profiles/companies-house-2.md",
+    "status": "live",
+    "url": "https://beta.companieshouse.gov.uk/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "plonked",
+    "name": "Plonked",
+    "file": "library/tools/public-records/company-profiles/plonked.md",
+    "status": "down",
+    "url": "https://www.plonked.com/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "cvgadget",
+    "name": "CVGadget",
+    "file": "library/tools/public-records/employee-profiles-and-resumes/cvgadget.md",
+    "status": "down",
+    "url": "https://cvgadget.com/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "jobster",
+    "name": "Jobster",
+    "file": "library/tools/public-records/employee-profiles-and-resumes/jobster.md",
+    "status": "down",
+    "url": "https://jobster.com/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "ukraine-pep-register",
+    "name": "Ukraine PEP Register",
+    "file": "library/tools/public-records/sanctions-pep/ukraine-pep-register.md",
+    "status": "down",
+    "url": "https://pep.org.ua/en/"
+  },
+  {
+    "reason": "numeric-duplicate-of:academia",
+    "id": "academia-2",
+    "name": "Academia",
+    "file": "library/tools/search-engines/academia-2.md",
+    "status": "unknown",
+    "url": "https://www.academia.edu"
+  },
+  {
+    "reason": "numeric-duplicate-of:ask",
+    "id": "ask-3",
+    "name": "Ask",
+    "file": "library/tools/search-engines/ask-3.md",
+    "status": "unknown",
+    "url": "https://www.search.ask.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:bevigil",
+    "id": "bevigil-2",
+    "name": "BeVigil",
+    "file": "library/tools/search-engines/bevigil-2.md",
+    "status": "unknown",
+    "url": "https://bevigil.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:bgp-tools",
+    "id": "bgp-tools-2",
+    "name": "BGP.tools",
+    "file": "library/tools/search-engines/bgp-tools-2.md",
+    "status": "unknown",
+    "url": "https://bgp.tools"
+  },
+  {
+    "reason": "numeric-duplicate-of:code-finder",
+    "id": "code-finder-2",
+    "name": "Code Finder",
+    "file": "library/tools/search-engines/code-finder-2.md",
+    "status": "unknown",
+    "url": "https://codefinder.org/"
+  },
+  {
+    "reason": "paid-only:emporis.com",
+    "id": "emporis-world-buildings",
+    "name": "EMPORIS World Buildings",
+    "file": "library/tools/search-engines/emporis-world-buildings.md",
+    "status": "unknown",
+    "url": "http://www.emporis.com/buildings"
+  },
+  {
+    "reason": "numeric-duplicate-of:faa-registry",
+    "id": "faa-registry-2",
+    "name": "FAA Registry",
+    "file": "library/tools/search-engines/faa-registry-2.md",
+    "status": "unknown",
+    "url": "http://registry.faa.gov/aircraftinquiry"
+  },
+  {
+    "reason": "numeric-duplicate-of:factiva",
+    "id": "factiva-2",
+    "name": "Factiva",
+    "file": "library/tools/search-engines/factiva-2.md",
+    "status": "unknown",
+    "url": "http://www.dowjones.com/factiva"
+  },
+  {
+    "reason": "numeric-duplicate-of:findsounds",
+    "id": "findsounds-2",
+    "name": "FindSounds",
+    "file": "library/tools/search-engines/findsounds-2.md",
+    "status": "unknown",
+    "url": "https://findsounds.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:goodsearch",
+    "id": "goodsearch-2",
+    "name": "Goodsearch",
+    "file": "library/tools/search-engines/goodsearch-2.md",
+    "status": "unknown",
+    "url": "https://www.goodshop.com/search"
+  },
+  {
+    "reason": "numeric-duplicate-of:infospace",
+    "id": "infospace-2",
+    "name": "Infospace",
+    "file": "library/tools/search-engines/infospace-2.md",
+    "status": "unknown",
+    "url": "https://www.infospace.com/"
+  },
+  {
+    "reason": "paid-only:inteltechniques.com",
+    "id": "inteltechniques-search-engine",
+    "name": "IntelTechniques Search Engine",
+    "file": "library/tools/search-engines/inteltechniques-search-engine.md",
+    "status": "unknown",
+    "url": "https://inteltechniques.com/tools/Search.html"
+  },
+  {
+    "reason": "paid-only:melissa.com",
+    "id": "melissa-lookups",
+    "name": "Melissa Lookups",
+    "file": "library/tools/search-engines/melissa-lookups.md",
+    "status": "unknown",
+    "url": "https://www.melissa.com/v2/lookups/home/global"
+  },
+  {
+    "reason": "numeric-duplicate-of:newspapers-com",
+    "id": "newspapers-com-2",
+    "name": "Newspapers.com",
+    "file": "library/tools/search-engines/newspapers-com-2.md",
+    "status": "unknown",
+    "url": "https://www.newspapers.com/"
+  },
+  {
+    "reason": "paid-only:plessas.net",
+    "id": "plessas-digital-knowledge-base",
+    "name": "Plessas Digital Knowledge Base",
+    "file": "library/tools/search-engines/plessas-digital-knowledge-base.md",
+    "status": "unknown",
+    "url": "https://knowledgebase.plessas.net/Digital-Knowledge-Base-78d4cbf53357458785120698da59373f"
+  },
+  {
+    "reason": "numeric-duplicate-of:presearch",
+    "id": "presearch-2",
+    "name": "Presearch",
+    "file": "library/tools/search-engines/presearch-2.md",
+    "status": "unknown",
+    "url": "https://presearch.org"
+  },
+  {
+    "reason": "numeric-duplicate-of:public-buckets",
+    "id": "public-buckets-2",
+    "name": "Public Buckets",
+    "file": "library/tools/search-engines/public-buckets-2.md",
+    "status": "unknown",
+    "url": "https://osint.sh/buckets/"
+  },
+  {
+    "reason": "numeric-duplicate-of:qwant",
+    "id": "qwant-2",
+    "name": "Qwant",
+    "file": "library/tools/search-engines/qwant-2.md",
+    "status": "unknown",
+    "url": "https://www.qwant.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:searx",
+    "id": "searx-2",
+    "name": "Searx",
+    "file": "library/tools/search-engines/searx-2.md",
+    "status": "unknown",
+    "url": "https://searx.me"
+  },
+  {
+    "reason": "numeric-duplicate-of:searxng",
+    "id": "searxng-2",
+    "name": "SearXNG",
+    "file": "library/tools/search-engines/searxng-2.md",
+    "status": "unknown",
+    "url": "https://github.com/searxng/searxng"
+  },
+  {
+    "reason": "numeric-duplicate-of:seosly-com",
+    "id": "seosly-com-3",
+    "name": "seosly.com",
+    "file": "library/tools/search-engines/seosly-com-3.md",
+    "status": "unknown",
+    "url": "https://seosly.com/yandex-search-operators/"
+  },
+  {
+    "reason": "numeric-duplicate-of:startpage",
+    "id": "startpage-2",
+    "name": "Startpage",
+    "file": "library/tools/search-engines/startpage-2.md",
+    "status": "unknown",
+    "url": "https://www.ixquick.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:talkwalker",
+    "id": "talkwalker-2",
+    "name": "Talkwalker",
+    "file": "library/tools/search-engines/talkwalker-2.md",
+    "status": "unknown",
+    "url": "https://www.talkwalker.com/alerts"
+  },
+  {
+    "reason": "numeric-duplicate-of:the-open-syllabus-project",
+    "id": "the-open-syllabus-project-2",
+    "name": "The Open Syllabus Project",
+    "file": "library/tools/search-engines/the-open-syllabus-project-2.md",
+    "status": "unknown",
+    "url": "http://opensyllabusproject.org/"
+  },
+  {
+    "reason": "paid-only:theosintion.com",
+    "id": "the-osintion-wiki",
+    "name": "The OSINTion Wiki",
+    "file": "library/tools/search-engines/the-osintion-wiki.md",
+    "status": "unknown",
+    "url": "https://wiki.theosintion.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:verification-handbook",
+    "id": "verification-handbook-2",
+    "name": "Verification Handbook",
+    "file": "library/tools/search-engines/verification-handbook-2.md",
+    "status": "unknown",
+    "url": "https://datajournalism.com/read/handbook/verification-1"
+  },
+  {
+    "reason": "numeric-duplicate-of:yahoo-search",
+    "id": "yahoo-search-2",
+    "name": "Yahoo Search",
+    "file": "library/tools/search-engines/yahoo-search-2.md",
+    "status": "unknown",
+    "url": "https://search.yahoo.com/"
+  },
+  {
+    "reason": "dead:live",
+    "id": "opengrey-eu-papers",
+    "name": "OpenGrey EU Papers",
+    "file": "library/tools/search-engines/academic-publication-search/opengrey-eu-papers.md",
+    "status": "live",
+    "url": "https://opengrey.eu/"
+  },
+  {
+    "reason": "dead:live",
+    "id": "think-tank-search",
+    "name": "Think Tank Search",
+    "file": "library/tools/search-engines/academic-publication-search/think-tank-search.md",
+    "status": "live",
+    "url": "https://guides.library.harvard.edu/hks/think_tank_search"
+  },
+  {
+    "reason": "dead:live",
+    "id": "us-gov-publishing-office-fdsys",
+    "name": "US Gov Publishing Office - FDsys",
+    "file": "library/tools/search-engines/academic-publication-search/us-gov-publishing-office-fdsys.md",
+    "status": "live",
+    "url": "https://www.gpo.gov/fdsys/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "iseek",
+    "name": "iSEEK",
+    "file": "library/tools/search-engines/meta-search/iseek.md",
+    "status": "down",
+    "url": "https://iseek.com/iseek/home.page"
+  },
+  {
+    "reason": "numeric-duplicate-of:google-trends",
+    "id": "google-trends-2",
+    "name": "Google Trends",
+    "file": "library/tools/search-engines/search-tools/google-trends-2.md",
+    "status": "live",
+    "url": "https://trends.google.com/trends/"
+  },
+  {
+    "reason": "numeric-duplicate-of:allmytweets",
+    "id": "allmytweets-2",
+    "name": "Allmytweets",
+    "file": "library/tools/social-networks/allmytweets-2.md",
+    "status": "unknown",
+    "url": "https://allmytweets.net"
+  },
+  {
+    "reason": "numeric-duplicate-of:authentic8-com",
+    "id": "authentic8-com-4",
+    "name": "authentic8.com",
+    "file": "library/tools/social-networks/authentic8-com-4.md",
+    "status": "unknown",
+    "url": "https://www.authentic8.com/blog/guide-how-to-investigate-on-tiktok"
+  },
+  {
+    "reason": "numeric-duplicate-of:en-wikipedia-org",
+    "id": "en-wikipedia-org-6",
+    "name": "en.wikipedia.org",
+    "file": "library/tools/social-networks/en-wikipedia-org-6.md",
+    "status": "unknown",
+    "url": "https://en.wikipedia.org/wiki/Mewe_(social_media)"
+  },
+  {
+    "reason": "numeric-duplicate-of:en-wikipedia-org",
+    "id": "en-wikipedia-org-7",
+    "name": "en.wikipedia.org",
+    "file": "library/tools/social-networks/en-wikipedia-org-7.md",
+    "status": "unknown",
+    "url": "https://en.wikipedia.org/wiki/Parler"
+  },
+  {
+    "reason": "numeric-duplicate-of:en-wikipedia-org",
+    "id": "en-wikipedia-org-9",
+    "name": "en.wikipedia.org",
+    "file": "library/tools/social-networks/en-wikipedia-org-9.md",
+    "status": "unknown",
+    "url": "https://en.wikipedia.org/wiki/Truth_Social"
+  },
+  {
+    "reason": "numeric-duplicate-of:facebook-search",
+    "id": "facebook-search-4",
+    "name": "Facebook Search",
+    "file": "library/tools/social-networks/facebook-search-4.md",
+    "status": "unknown",
+    "url": "https://inteltechniques.com/osint/facebook.html"
+  },
+  {
+    "reason": "numeric-duplicate-of:facebook-video-downloader",
+    "id": "facebook-video-downloader-2",
+    "name": "Facebook Video Downloader",
+    "file": "library/tools/social-networks/facebook-video-downloader-2.md",
+    "status": "unknown",
+    "url": "http://fdown.net/"
+  },
+  {
+    "reason": "numeric-duplicate-of:first-tweet",
+    "id": "first-tweet-2",
+    "name": "First Tweet",
+    "file": "library/tools/social-networks/first-tweet-2.md",
+    "status": "unknown",
+    "url": "https://discover.twitter.com/first-tweet"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-10",
+    "name": "Here",
+    "file": "library/tools/social-networks/here-10.md",
+    "status": "unknown",
+    "url": "https://help.pinterest.com/en-gb/article/law-enforcement-guidelines"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-11",
+    "name": "Here",
+    "file": "library/tools/social-networks/here-11.md",
+    "status": "unknown",
+    "url": "https://values.snap.com/safety/safety-enforcement?lang=en-GB"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-12",
+    "name": "Here",
+    "file": "library/tools/social-networks/here-12.md",
+    "status": "unknown",
+    "url": "https://assets.ctfassets.net/dwtpq5hdcqjg/4jI8Swj0BHjUD0VzbCcxkk/75d69c0de7ce747cac82bfe39378106c/Snapchat_Law_Enforcement_Guide.pdf"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-13",
+    "name": "Here",
+    "file": "library/tools/social-networks/here-13.md",
+    "status": "unknown",
+    "url": "https://www.spotify.com/uk/legal/privacy-policy/"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-18",
+    "name": "Here",
+    "file": "library/tools/social-networks/here-18.md",
+    "status": "unknown",
+    "url": "https://help.x.com/en/rules-and-policies/x-law-enforcement-support"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-7",
+    "name": "Here",
+    "file": "library/tools/social-networks/here-7.md",
+    "status": "unknown",
+    "url": "https://www.facebook.com/safety/groups/law/guidelines"
+  },
+  {
+    "reason": "numeric-duplicate-of:here",
+    "id": "here-9",
+    "name": "Here",
+    "file": "library/tools/social-networks/here-9.md",
+    "status": "unknown",
+    "url": "https://help.instagram.com/494561080557017"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin-com",
+    "id": "linkedin-com-5",
+    "name": "linkedin.com",
+    "file": "library/tools/social-networks/linkedin-com-5.md",
+    "status": "unknown",
+    "url": "https://www.linkedin.com/posts/ritugill-osinttechniques_instagram-just-launched-a-map-feature-that-activity-7359406477821833217-WTgH/"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin-com",
+    "id": "linkedin-com-6",
+    "name": "linkedin.com",
+    "file": "library/tools/social-networks/linkedin-com-6.md",
+    "status": "unknown",
+    "url": "https://www.linkedin.com/posts/osint-switzerland_having-recently-learned-the-technique-activity-7296041731815362560-rsk0/"
+  },
+  {
+    "reason": "numeric-duplicate-of:linkedin-com",
+    "id": "linkedin-com-7",
+    "name": "linkedin.com",
+    "file": "library/tools/social-networks/linkedin-com-7.md",
+    "status": "unknown",
+    "url": "https://www.linkedin.com/posts/osint-switzerland_sometimes-being-able-to-pinpoint-the-activity-7294960901445541890-_-ZF/"
+  },
+  {
+    "reason": "paid-only:inteltechniques.com",
+    "id": "linkedin-profiles-by-email-michael-bazzell-blog",
+    "name": "LinkedIn Profiles by Email (Michael Bazzell Blog)",
+    "file": "library/tools/social-networks/linkedin-profiles-by-email-michael-bazzell-blog.md",
+    "status": "unknown",
+    "url": "https://inteltechniques.com/blog/2018/04/25/linkedin-profiles-by-email"
+  },
+  {
+    "reason": "numeric-duplicate-of:mediamister-com",
+    "id": "mediamister-com-2",
+    "name": "mediamister.com",
+    "file": "library/tools/social-networks/mediamister-com-2.md",
+    "status": "unknown",
+    "url": "https://www.mediamister.com/find-tiktok-user-id"
+  },
+  {
+    "reason": "numeric-duplicate-of:medium-com",
+    "id": "medium-com-4",
+    "name": "medium.com",
+    "file": "library/tools/social-networks/medium-com-4.md",
+    "status": "unknown",
+    "url": "https://medium.com/@loyalonlytoday/7c494fcfe0bc"
+  },
+  {
+    "reason": "numeric-duplicate-of:myosint-training",
+    "id": "myosint-training-2",
+    "name": "myosint.training",
+    "file": "library/tools/social-networks/myosint-training-2.md",
+    "status": "unknown",
+    "url": "https://www.myosint.training/courses/snapchat-essentials"
+  },
+  {
+    "reason": "numeric-duplicate-of:pewresearch-org",
+    "id": "pewresearch-org-2",
+    "name": "pewresearch.org",
+    "file": "library/tools/social-networks/pewresearch-org-2.md",
+    "status": "unknown",
+    "url": "https://www.pewresearch.org/short-reads/2023/02/01/key-facts-about-gettr/"
+  },
+  {
+    "reason": "numeric-duplicate-of:pewresearch-org",
+    "id": "pewresearch-org-3",
+    "name": "pewresearch.org",
+    "file": "library/tools/social-networks/pewresearch-org-3.md",
+    "status": "unknown",
+    "url": "https://www.pewresearch.org/short-reads/2022/12/21/key-facts-about-rumble/"
+  },
+  {
+    "reason": "numeric-duplicate-of:reddit-archive",
+    "id": "reddit-archive-2",
+    "name": "Reddit Archive",
+    "file": "library/tools/social-networks/reddit-archive-2.md",
+    "status": "unknown",
+    "url": "https://ihsoyct.github.io/"
+  },
+  {
+    "reason": "numeric-duplicate-of:reddit-search",
+    "id": "reddit-search-2",
+    "name": "reddit search",
+    "file": "library/tools/social-networks/reddit-search-2.md",
+    "status": "unknown",
+    "url": "https://www.redditsearch.io/"
+  },
+  {
+    "reason": "numeric-duplicate-of:reddit-search-engine",
+    "id": "reddit-search-engine-2",
+    "name": "Reddit Search Engine",
+    "file": "library/tools/social-networks/reddit-search-engine-2.md",
+    "status": "unknown",
+    "url": "https://cse.google.com/cse/publicurl?cx=017261104271573007538:bbzhlah6n4o"
+  },
+  {
+    "reason": "numeric-duplicate-of:reddit-search-tool",
+    "id": "reddit-search-tool-2",
+    "name": "Reddit search tool",
+    "file": "library/tools/social-networks/reddit-search-tool-2.md",
+    "status": "unknown",
+    "url": "https://www.aware-online.com/en/osint-tools/reddit-search-tool/"
+  },
+  {
+    "reason": "numeric-duplicate-of:reddit-user-analyser",
+    "id": "reddit-user-analyser-2",
+    "name": "Reddit User Analyser",
+    "file": "library/tools/social-networks/reddit-user-analyser-2.md",
+    "status": "unknown",
+    "url": "https://reddit-user-analyser.netlify.app/"
+  },
+  {
+    "reason": "numeric-duplicate-of:secjuice-com",
+    "id": "secjuice-com-4",
+    "name": "secjuice.com",
+    "file": "library/tools/social-networks/secjuice-com-4.md",
+    "status": "unknown",
+    "url": "https://www.secjuice.com/mastodon-osint-a-comprehensive-introduction/"
+  },
+  {
+    "reason": "numeric-duplicate-of:social-analyzer",
+    "id": "social-analyzer-3",
+    "name": "Social Analyzer",
+    "file": "library/tools/social-networks/social-analyzer-3.md",
+    "status": "unknown",
+    "url": "https://chrome.google.com/webstore/detail/socialanalyzer-social-sen/efeikkcpimdfpdlmlbjdecnmkknjcfcp"
+  },
+  {
+    "reason": "numeric-duplicate-of:tiktok-downloader",
+    "id": "tiktok-downloader-2",
+    "name": "TikTok Downloader",
+    "file": "library/tools/social-networks/tiktok-downloader-2.md",
+    "status": "unknown",
+    "url": "https://tiktokdownloader.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:tiktok-scraper",
+    "id": "tiktok-scraper-2",
+    "name": "Tiktok Scraper",
+    "file": "library/tools/social-networks/tiktok-scraper-2.md",
+    "status": "unknown",
+    "url": "https://github.com/sauermar/Tiktok-Scraper"
+  },
+  {
+    "reason": "numeric-duplicate-of:trevorfox-com",
+    "id": "trevorfox-com-3",
+    "name": "trevorfox.com",
+    "file": "library/tools/social-networks/trevorfox-com-3.md",
+    "status": "unknown",
+    "url": "https://trevorfox.com/tools/tiktok-video-date-extractor/"
+  },
+  {
+    "reason": "numeric-duplicate-of:tweetmap",
+    "id": "tweetmap-2",
+    "name": "TweetMap",
+    "file": "library/tools/social-networks/tweetmap-2.md",
+    "status": "unknown",
+    "url": "http://worldmap.harvard.edu/tweetmap"
+  },
+  {
+    "reason": "numeric-duplicate-of:tweetmap",
+    "id": "tweetmap-3",
+    "name": "tweetmap",
+    "file": "library/tools/social-networks/tweetmap-3.md",
+    "status": "unknown",
+    "url": "https://www.omnisci.com/demos/tweetmap"
+  },
+  {
+    "reason": "numeric-duplicate-of:tweetmap",
+    "id": "tweetmap-4",
+    "name": "TweetMap",
+    "file": "library/tools/social-networks/tweetmap-4.md",
+    "status": "unknown",
+    "url": "https://www.mapd.com/demos/tweetmap"
+  },
+  {
+    "reason": "numeric-duplicate-of:twitter-search",
+    "id": "twitter-search-2",
+    "name": "Twitter Search",
+    "file": "library/tools/social-networks/twitter-search-2.md",
+    "status": "unknown",
+    "url": "https://one-plus.github.io/Twitter"
+  },
+  {
+    "reason": "numeric-duplicate-of:twitter-video-downloader",
+    "id": "twitter-video-downloader-2",
+    "name": "Twitter Video Downloader",
+    "file": "library/tools/social-networks/twitter-video-downloader-2.md",
+    "status": "unknown",
+    "url": "https://x-downloader.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:x-com",
+    "id": "x-com-2",
+    "name": "x.com",
+    "file": "library/tools/social-networks/x-com-2.md",
+    "status": "unknown",
+    "url": "https://x.com/collin_intel/status/1892248986586599865"
+  },
+  {
+    "reason": "numeric-duplicate-of:x-com",
+    "id": "x-com-5",
+    "name": "x.com",
+    "file": "library/tools/social-networks/x-com-5.md",
+    "status": "unknown",
+    "url": "https://x.com/1ZRR4H/status/1877037044263800882"
+  },
+  {
+    "reason": "numeric-duplicate-of:youtube-actual-top-comments",
+    "id": "youtube-actual-top-comments-2",
+    "name": "Youtube Actual Top Comments",
+    "file": "library/tools/social-networks/youtube-actual-top-comments-2.md",
+    "status": "unknown",
+    "url": "https://chrome.google.com/webstore/detail/youtube-actual-top-commen/hbdmelobmfcompinikjdaiphhonbgfpn/related"
+  },
+  {
+    "reason": "numeric-duplicate-of:youtube-dl",
+    "id": "youtube-dl-2",
+    "name": "Youtube-dl",
+    "file": "library/tools/social-networks/youtube-dl-2.md",
+    "status": "unknown",
+    "url": "https://rg3.github.io/youtube-dl"
+  },
+  {
+    "reason": "numeric-duplicate-of:yt-dlp",
+    "id": "yt-dlp-2",
+    "name": "yt-dlp",
+    "file": "library/tools/social-networks/yt-dlp-2.md",
+    "status": "unknown",
+    "url": "https://pypi.org/project/yt-dlp/"
+  },
+  {
+    "reason": "dead:down",
+    "id": "asian-avenue",
+    "name": "Asian Avenue",
+    "file": "library/tools/social-networks/other-social-networks/asian-avenue.md",
+    "status": "down",
+    "url": "https://blackplanet.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:deepl",
+    "id": "deepl-2",
+    "name": "DeepL",
+    "file": "library/tools/translation-language/deepl-2.md",
+    "status": "unknown",
+    "url": "https://www.deepl.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:google-translate",
+    "id": "google-translate-2",
+    "name": "Google Translate",
+    "file": "library/tools/translation-language/google-translate-2.md",
+    "status": "unknown",
+    "url": "https://translate.google.co.uk"
+  },
+  {
+    "reason": "numeric-duplicate-of:lingojam-com",
+    "id": "lingojam-com-2",
+    "name": "lingojam.com",
+    "file": "library/tools/translation-language/lingojam-com-2.md",
+    "status": "unknown",
+    "url": "https://lingojam.com/SMSandTextMessageTranslator"
+  },
+  {
+    "reason": "numeric-duplicate-of:yandex-translate",
+    "id": "yandex-translate-2",
+    "name": "Yandex Translate",
+    "file": "library/tools/translation-language/yandex-translate-2.md",
+    "status": "unknown",
+    "url": "https://translate.yandex.ru"
+  },
+  {
+    "reason": "numeric-duplicate-of:i2ocr",
+    "id": "i2ocr-2",
+    "name": "i2OCR",
+    "file": "library/tools/translation-language/pictures/i2ocr-2.md",
+    "status": "live",
+    "url": "https://www.i2ocr.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:new-ocr",
+    "id": "new-ocr-2",
+    "name": "New OCR",
+    "file": "library/tools/translation-language/pictures/new-ocr-2.md",
+    "status": "live",
+    "url": "https://www.newocr.com/"
+  },
+  {
+    "reason": "numeric-duplicate-of:airnav-radarbox",
+    "id": "airnav-radarbox-2",
+    "name": "AirNav RadarBox",
+    "file": "library/tools/transportation/airnav-radarbox-2.md",
+    "status": "unknown",
+    "url": "https://www.radarbox24.com/flight/aa2097"
+  },
+  {
+    "reason": "numeric-duplicate-of:check-that-vin",
+    "id": "check-that-vin-2",
+    "name": "Check that VIN!",
+    "file": "library/tools/transportation/check-that-vin-2.md",
+    "status": "unknown",
+    "url": "https://checkthatvin.com/ctv"
+  },
+  {
+    "reason": "numeric-duplicate-of:chronotrains",
+    "id": "chronotrains-2",
+    "name": "Chronotrains",
+    "file": "library/tools/transportation/chronotrains-2.md",
+    "status": "unknown",
+    "url": "https://chronotrains-eu.vercel.app/"
+  },
+  {
+    "reason": "numeric-duplicate-of:container-tracking",
+    "id": "container-tracking-2",
+    "name": "Container tracking",
+    "file": "library/tools/transportation/container-tracking-2.md",
+    "status": "unknown",
+    "url": "https://www.track-trace.com/container"
+  },
+  {
+    "reason": "numeric-duplicate-of:equasis",
+    "id": "equasis-2",
+    "name": "Equasis",
+    "file": "library/tools/transportation/equasis-2.md",
+    "status": "unknown",
+    "url": "http://www.equasis.org/equasisweb/public/homepage"
+  },
+  {
+    "reason": "numeric-duplicate-of:license-plate-lookup",
+    "id": "license-plate-lookup-2",
+    "name": "License Plate Lookup",
+    "file": "library/tools/transportation/license-plate-lookup-2.md",
+    "status": "unknown",
+    "url": "https://www.faxvin.com/license-plate-lookup"
+  },
+  {
+    "reason": "numeric-duplicate-of:open-source-munitions-portal",
+    "id": "open-source-munitions-portal-2",
+    "name": "Open Source Munitions Portal",
+    "file": "library/tools/transportation/open-source-munitions-portal-2.md",
+    "status": "unknown",
+    "url": "https://github.com/eremit4/favihunter"
+  },
+  {
+    "reason": "numeric-duplicate-of:openrailwaymap",
+    "id": "openrailwaymap-3",
+    "name": "OpenRailwayMap",
+    "file": "library/tools/transportation/openrailwaymap-3.md",
+    "status": "unknown",
+    "url": "https://wiki.openstreetmap.org/wiki/OpenRailwayMap"
+  },
+  {
+    "reason": "numeric-duplicate-of:tools",
+    "id": "tools-3",
+    "name": "Tools",
+    "file": "library/tools/transportation/tools-3.md",
+    "status": "unknown",
+    "url": "https://intelx.io/tools?tab=vin"
+  },
+  {
+    "reason": "paid-only:vesseltracker.com",
+    "id": "vessel-tracker",
+    "name": "Vessel Tracker",
+    "file": "library/tools/transportation/vessel-tracker.md",
+    "status": "unknown",
+    "url": "https://www.vesseltracker.com"
+  },
+  {
+    "reason": "numeric-duplicate-of:vin-decoder",
+    "id": "vin-decoder-2",
+    "name": "VIN Decoder",
+    "file": "library/tools/transportation/vin-decoder-2.md",
+    "status": "unknown",
+    "url": "https://vindecoder.pl/"
+  },
+  {
+    "reason": "numeric-duplicate-of:vin-decoder",
+    "id": "vin-decoder-3",
+    "name": "VIN decoder",
+    "file": "library/tools/transportation/vin-decoder-3.md",
+    "status": "unknown",
+    "url": "https://www.vindecoder.net/"
+  }
+]

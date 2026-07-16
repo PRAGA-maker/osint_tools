@@ -10,7 +10,7 @@ bestFor: Browser extension that exposes and strips read-receipt tracking pixels 
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free open-source browser extension.

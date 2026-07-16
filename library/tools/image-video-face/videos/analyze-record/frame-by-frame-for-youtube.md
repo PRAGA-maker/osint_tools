@@ -10,7 +10,7 @@ path:
 - analyze-record
 bestFor: Frame-accurate stepping and slow-motion playback of YouTube videos for detail extraction.
 selectorsIn:
-- metadata
+- metadata-exif
 selectorsOut:
 - image
 - vehicle-plate

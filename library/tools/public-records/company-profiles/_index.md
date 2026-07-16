@@ -9,7 +9,6 @@ kind: group-index
 ## Skills here
 - **`aihit`** (medium) — Company executive discovery and B2B contact data enrichment
 - **`buzzfile`** (medium) — US business lookup by name, location, or industry classification
-- **`companies-house-2`** (medium) — UK company registration details, directors, and filed accounts
 - **`companies-in-the-uk`** (medium) — Quick UK company lookup with simplified Companies House data
 - **`company-data-rex-eu`** (medium) — Cross-border EU company research and registry data lookup
 - **`crunchbase`** (medium) — Startup funding research, investor mapping, and executive tracking
@@ -17,7 +16,6 @@ kind: group-index
 - **`littlesis`** (medium) — Mapping power relationships between corporations, politicians, and elites
 - **`opencorporates`** (medium) — Cross-jurisdictional company research and corporate network mapping
 - **`owler`** (medium) — Competitive intelligence and company profile research
-- **`plonked`** (medium) — UK business lookup by name or location
 - **`rusprofile`** (medium) — Researching Russian companies, directors, and legal entity registration
 - **`uk-data`** (medium) — UK company credit checks and financial health assessment
 - **`vault`** (medium) — Company culture research, salary benchmarking, and employee sentiment analysis

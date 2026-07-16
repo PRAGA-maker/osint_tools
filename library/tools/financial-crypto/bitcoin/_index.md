@@ -10,8 +10,6 @@ kind: group-index
 - **`bitcoin-who-s-who`** (medium) — Bitcoin address scam reports and community tagging
 - **`bitref`** (medium) — Bitcoin address balance lookup and transaction analysis
 - **`blockonomics`** (medium) — Bitcoin payment integration and address monitoring for developers
-- **`blockr-io`** (medium) — Historical reference only (service discontinued)
-- **`blocktrail`** (medium) — Historical reference only (rebranded to BTC.com)
 - **`orbit`** (medium) — Bitcoin transaction network visualization and wallet relationship mapping
 - **`wallet-explorer`** (medium) — Bitcoin address clustering and entity wallet identification
 

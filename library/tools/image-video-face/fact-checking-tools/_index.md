@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`duke-reporters-lab`** (medium) — Finding and benchmarking fact-checking organizations worldwide
-- **`hoaxy`** (medium) — Historical social diffusion analysis of misinformation and debunks
 - **`politifact`** (medium) — Verifying political statements and tracing source-backed ratings
 - **`scicheck`** (medium) — Validating scientific and medical claims in public discourse
 - **`snopes`** (medium) — Rapid validation of widely shared rumors and internet folklore

@@ -10,7 +10,7 @@ bestFor: Free single-address SMTP/MX email verification (HTTPS endpoint of verif
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 - domain
 status: live
 pricing: freemium

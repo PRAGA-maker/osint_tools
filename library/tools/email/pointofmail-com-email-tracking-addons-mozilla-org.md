@@ -22,7 +22,6 @@ opsecNote: This sends an email containing a tracking pixel to the subject — di
 humanInLoop: true
 humanInLoopReason:
 - account-login
-- browser-extension
 - legal-gate
 bestInteractionPattern: browser-extension
 trust: unverified

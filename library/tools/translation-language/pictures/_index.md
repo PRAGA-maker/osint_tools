@@ -7,8 +7,6 @@ kind: group-index
 # translation-language/pictures
 
 ## Skills here
-- **`i2ocr-2`** (medium) — Multilingual OCR extraction without account creation
-- **`new-ocr-2`** (medium) — General-purpose OCR from scanned pages and images
 - **`online-ocr-onlineocr-net`** (medium) — Quick OCR to Word, Excel, or plain text
 - **`online-ocr-sodapdf`** (medium) — OCR conversion of scanned PDFs for editing
 

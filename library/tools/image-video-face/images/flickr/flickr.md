@@ -16,7 +16,7 @@ selectorsIn:
 selectorsOut:
 - image
 - geolocation
-- metadata
+- metadata-exif
 - social-profile
 - associate
 status: live

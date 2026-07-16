@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`academic-research/`** — 2 skill(s) below.
 - **`research-centers/`** — 3 skill(s) below.
-- **`sanctions-and-watchlists/`** — 3 skill(s) below.
+- **`sanctions-and-watchlists/`** — 1 skill(s) below.
 - **`terrorist-financing/`** — 1 skill(s) below.
 
 

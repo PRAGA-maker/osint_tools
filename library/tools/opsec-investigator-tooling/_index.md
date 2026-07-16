@@ -7,10 +7,538 @@ kind: group-index
 # opsec-investigator-tooling
 
 ## Sub-groups
-- **`anonymous-browsing/`** — 28 skill(s) below.
+- **`anonymous-browsing/`** — 24 skill(s) below.
 - **`metadata-style/`** — 2 skill(s) below.
-- **`persona-creation/`** — 5 skill(s) below.
-- **`privacy-clean-up/`** — 12 skill(s) below.
+- **`persona-creation/`** — 4 skill(s) below.
+- **`privacy-clean-up/`** — 10 skill(s) below.
 
+## Skills here
+- **`10minutemail-com`** (low) — OSINT tool: 10minutemail.com.
+- **`2-682-783-free-ai-generated-photos`** (low) — OSINT tool: 2,682,783 free AI generated photos.
+- **`5-0-radio-police-scanner-app-mobile-ios`** (low) — App for iPad and iPhone for monitoring police, emergency, and ham radio communications
+- **`9-steps-to-security-in-the-digital-age`** (low) — Online privacy guide to security in the digital age
+- **`aba-generator`** (low) — OSINT tool: ABA Generator.
+- **`abine-blur-app`** (low) — Secure personal information you put online such as passwords, payments, etc.
+- **`account-killer`** (low) — Website providing information on how to delete accounts on various social media and people finder platforms
+- **`adblock-extension-chrome`** (low) — Add-on for Google Chrome that blocks Youtube and Facebook video ads
+- **`adblockplus-extension`** (low) — Free extension that allows you to block ads and disable tracking
+- **`adobe-acrobat-reader-app-mobile-ios`** (low) — App for mobile devices for reading PDF files
+- **`adobe-photoshop-express-app-mobile-android`** (low) — App for mobile devices for creating editing and sharing image-related media
+- **`adobe-photoshop-express-app-mobile-ios`** (low) — App for mobile devices for creating editing and sharing image-related media
+- **`adobe-photoshop-mix-app-mobile-android`** (low) — App for mobile devices for minor editing of photo-related media
+- **`ai-face-maker`** (low) — Just draw a person face (note that there is a separate tool for each part of the face) and the neural network will generate a realistic phot
+- **`ai-video-generator`** (low) — Type the text (video script). Choose a character and script template. Click the "Submit a video" button. Enter your registration data and wa
+- **`airbnb-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
+- **`airwatch-secure-content-locker-app-mobile-ios`** (low) — App for mobile devices that creates a secure content area on your device with password
+- **`am-i-unique`** (low) — OSINT tool: Am I unique?.
+- **`amazon-mobile-app-mobile-android`** (low) — App for mobile devices for online shopping
+- **`amazon-mobile-app-mobile-ios`** (low) — App for mobile devices for online shopping
+- **`amazon-sns`** (low) — OSINT tool: Amazon SNS.
+- **`android-studio-and-sdk-tools`** (low) — Official Android dev environment usable to run Android emulators for app-based OSINT.
+- **`annotely`** (low) — Perfectly simple tool for putting an arrow on a screenshot, highlighting some detail or blurring personal data.
+- **`anonaddy`** (low) — OSINT tool: AnonAddy.
+- **`anonymouse-premium-59-y`** (low) — OSINT tool: Anonymouse (Premium 59 $/Y).
+- **`anonymouse-web-proxy`** (low) — Anonymous browsing service provider
+- **`anonymox`** (low) — Browser extension for protecting your privacy and anonymous browsing
+- **`anydo-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
+- **`aol-explorer-for-windows-systems`** (low) — Internet browser program Windows systems
+- **`apple-app-store`** (low) — Website that provides searches for apps for Apple iOS-type mobile devices
+- **`apple-maps-app-mobile-ios`** (low) — App for mobile devices for searches of mapping services
+- **`apple-music-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
+- **`appyparking`** (low) — Mobile device app providing parking information on nearly all controlled parking zones in London United Kingdom
+- **`archstrike`** (low) — OSINT tool: ArchStrike.
+- **`argos-osint-workstation`** (low) — Script that automatically sets up an OSINT workstation on Ubuntu.
+- **`atom`** (low) — OSINT tool: Atom.
+- **`attifyos`** (low) — Linux distro for pentesting IoT devices.
+- **`australian-local-government-association-alga`** (low) — Online organization website providing information on computer and information technology occupations
+- **`autoregex`** (low) — AI regular expressions generator. Generates a pattern by verbal description. It does not work perfectly (see picture with bitcoin wallet, th
+- **`avast-free-antivirus-for-pc-or-mac`** (low) — Malware and virus detection and elimination program
+- **`avg-antivirus-for-mac`** (low) — Malware and virus detection and elimination program for PC and Mac
+- **`avg-antivirus-for-pc`** (low) — Malware and virus detection and elimination program for PC
+- **`avira-free-antivirus`** (low) — Malware and virus detection and elimination program
+- **`awesome-browser-extensions-for-osint`** (medium) — Collection of browser extensions useful for OSINT with use-case documentation.
+- **`awesome-screenshot-extension-chrome`** (low) — Add-on for Google Chrome that captures and annotates screnshot captures
+- **`backbox`** (low) — OSINT tool: BackBox.
+- **`badoo-dating-app-mobile-android`** (low) — App for android mobile device for meeting people on Badoo
+- **`badoo-dating-app-mobile-ios`** (low) — App for iOS mobile device for meeting people on Badoo
+- **`berobo-police-scanner-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
+- **`bitcoinprivacy-guide`** (low) — OSINT tool: Bitcoinprivacy.guide.
+- **`bitdefender-antivirus`** (low) — Malware and virus detection and elimination solutions for PC, Mac, Android, and iOS
+- **`bitonic`** (low) — OSINT tool: Bitonic.
+- **`blackarch-linux`** (low) — OSINT tool: BlackArch Linux.
+- **`blackhole`** (low) — OSINT tool: BlackHole.
+- **`blinklist`** (low) — Website that provides a listing for new and popular apps, including tech/software reviews
+- **`blogger-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
+- **`blokt-privacy-guides`** (low) — Website publishing the latest technology, cryptocurrency, and security news, with a comprehensive section of privacy guides
+- **`bool`** (low) — Boolean search assistant
+- **`boredhumans`** (low) — Another tool for creating non-existent people. AI was trained using a database of 70,000 of photos of real humans. I like this service becau
+- **`brave-browser`** (medium) — Privacy-focused Chromium browser shipped in the Trace Labs VM with OSINT extensions pre-installed.
+- **`bromite`** (low) — OSINT tool: Bromite.
+- **`bugmenot`** (low) — login and passwords for public accounts in different services
+- **`bunker-is`** (low) — OSINT tool: Bunker.is.
+- **`call-recorder-management-app-mobile-ios`** (low) — App for mobile devices for recording audio from any telephone call
+- **`canadian-anti-fraud-centre`** (low) — Canadian government site's list of scam, fraud, hoax, and phishing types
+- **`capture-explain-and-send-screenshots-extension-chrome`** (low) — Add-on for Google Chrome that allows you to annotate and draw inside of screenshot images
+- **`cardgenerator-org`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
+- **`cardgenerator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
+- **`cardguru`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
+- **`ccleaner-pc`** (low) — Program that assists in cleaning and optimizing PC systems
+- **`centbrowser`** (low) — OSINT tool: CentBrowser.
+- **`chat-and-date-social-networking-app-mobile-android`** (low) — Dating app to help you find amazing people near you.
+- **`cheat-sheet-maker`** (low) — simple tool for creating cheat sheets
+- **`chepy`** (low) — Python command line version of CyberChef
+- **`chibisafe-moe`** (low) — OSINT tool: Chibisafe.moe.
+- **`chmod-calculator`** (low) — Calculate the octal numeric or symbolic value for a set of file or folder permissions in #Linux servers. Check the desired boxes or directly
+- **`chrome-web-store`** (low) — Website that provides searches for Google Chrome browser add-ons/extensions
+- **`chrome`** (low) — OSINT tool: Chrome.
+- **`citymapper-mapping-app-mobile-android`** (low) — App for mobile devices for local maps of city areas
+- **`citymapper-mapping-app-mobile-ios`** (low) — App for mobile devices for local maps of city areas
+- **`clamxav-anti-virus-for-mac-osx`** (low) — Malware and virus detection and elimination program
+- **`click-and-clean-extension-chrome`** (low) — Add-on for Google Chrome that allows you to clean history, forms, temp files, etc, and conduct malware checks
+- **`cligpt`** (low) — The simplest tool possible (with as few settings as possible) for working with ChatGPT API at the command line and using in bash scripts.
+- **`cloudhq`** (low) — A collection of several dozen extensions for #Chrome that allow you to extend the functionality of the standard #Gmail interface and maximiz
+- **`cloudwards`** (low) — Website publishing guides on privacy and security tools, including VPNs, antivirus software, and more
+- **`codegent-chinese-mandarin-phrases-app-mobile-android`** (low) — App for mobile devices for learning phrases in the Chinese Mandarin language
+- **`comodo-dragon`** (low) — OSINT tool: Comodo Dragon.
+- **`comodo-free-antivirus`** (low) — Malware and virus detection and elimination program
+- **`consumer-reports-security-planner`** (low) — OSINT tool: Consumer Reports Security Planner.
+- **`coowon`** (low) — OSINT tool: Coowon.
+- **`counter-osint-guide-for-russians`** (low) — OSINT tool: Counter-OSINT guide for Russians.
+- **`coveryourtracks-eff-org`** (low) — can tell a lot about your browser and computer, including showing a list of installed fonts on the system.
+- **`crackstation-net`** (low) — password hash cracker
+- **`credit-card-generator`** (low) — OSINT tool: Credit Card Generator.
+- **`crontab-guru`** (low) — Online "shedule expression" editor (for setting task times in Crontab files).
+- **`csi-linux`** (medium) — Free investigation-focused Linux distribution/VM for OSINT and forensics.
+- **`cyberghost-vpn-proxy-website`** (low) — Anonymous browsing service provider
+- **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.
+- **`decoding-social-security-numbers`** (low) — OSINT tool: Decoding Social Security Numbers.
+- **`deep-face-live`** (low) — Real-time face swap for streaming and video calls
+- **`deepfakesweb`** (low) — Create deepfake videos ONLINE
+- **`deft-linux`** (low) — OSINT tool: Deft Linux.
+- **`delete-me-free-opt-out-guide`** (low) — Information and resources on removing personal information from the internet and opting out
+- **`distill-web-monitor-firefox-add-on`** (low) — Website monitoring tool for Firefox that monitors webpages for changes
+- **`distraction-free-youtube-extension-chrome`** (low) — Add-on for Google Chrome that allows you to block ads and other images around a posted Youtube video
+- **`download-all-images`** (low) — Firefox extension that offers services related to saving all images on a web page
+- **`dr-web-anti-virus-link-checker-extension-chrome`** (low) — Add-on for Google Chrome that checks hyperlinks for malicious content or links
+- **`dracos-linux`** (low) — OSINT tool: Dracos Linux.
+- **`duolingo-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 10 languages
+- **`easy-disposable-email-address-extension-chrome`** (low) — Add-on for Google Chrome that creates a disposable email address
+- **`ebay-auctionsniper-app-mobile-android`** (low) — App for mobile devices for online auction monitoring
+- **`echofon`** (low) — Website offering analytical capabilities of Twitter content
+- **`edge`** (low) — OSINT tool: Edge.
+- **`electronic-frontier-foundation-eff-tools`** (low) — Tools that offer enhanced browsing security including HTTPS Everywhere, Privacy Badger, Certbot, and more
+- **`emailformat-de`** (low) — OSINT tool: Emailformat.de.
+- **`encoding-and-decoding-driver-s-license-numbers`** (low) — OSINT tool: Encoding and Decoding Driver's License Numbers.
+- **`epic-online-guide-to-practical-privacy-tools`** (low) — The Electronic Privacy Information Center's guide to online privacy tools
+- **`eset-cybersecurity-for-mac`** (low) — Malware and virus detection and elimination program for Mac
+- **`eset-smart-security`** (low) — Malware and virus detection and elimination program
+- **`exif-viewer-add-on-for-chrome`** (low) — Exif tool designed to extract data from camera images, usually in JPG or JPEG format
+- **`exif-viewer-firefox-add-on`** (low) — Exif tool designed to extract data from camera images, usually in JPG or JPEG format
+- **`exonerator-ip-address-checker`** (low) — Website search that identifies if a given IP address was used as a Tor relay
+- **`expedia-travel-app-mobile-android`** (low) — App for mobile devices for locating accomodations while travelling
+- **`export-chrome-history`** (low) — A simple extension for Googlechrome that allows you to save detailed information about links from browser history as CSV/JSON. Useful for bo
+- **`extremetech-virutal-box`** (low) — Program for Virtual Machine (VM) software that protects your system from malware and attacks
+- **`f-secure-anti-virus-for-mac`** (low) — Malware and virus detection and elimination program
+- **`face-anonimyzer`** (low) — Upload a face photo and get set of similar AI generated faces.
+- **`face-generator`** (low) — Face Generator for creating #sockpuppets. Customize gender, age, head position, emotions, hair and skin color, makeup and glasses.
+- **`facebook-messenger-app-mobile-android`** (low) — App for mobile devices for messaging services related to Facebook
+- **`facebook-messenger-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook
+- **`facebook-pages-social-networking-app-mobile-ios`** (low) — App for mobile devices for monitoring Facebook page activity
+- **`facebook-social-networking-app-mobile-android`** (low) — Facebook mobile app for connecting users on a single social network platform
+- **`facebook-social-networking-app-mobile-ios`** (low) — App for mobile devices for messaging services related to Facebook,
+- **`fake-company-name-generator`** (low) — OSINT tool: Fake Company Name Generator.
+- **`fake-drivers-license-generator`** (low) — OSINT tool: Fake Drivers License Generator.
+- **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
+- **`fake-identity-id-random-name-generator`** (low) — OSINT tool: Fake Identity ID Random Name Generator.
+- **`fake-person-generator`** (low) — OSINT tool: Fake person generator.
+- **`fake-tiktok-profile-generator`** (low) — OSINT tool: Fake Tiktok Profile Generator.
+- **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
+- **`fakeinfo`** (low) — Online screenshot generator of fake YouTube channels, posts/profiles on Facebook, Instagram, TikTok, Twitter, chats on Telegram, Hangouts, W
+- **`faker`** (low) — Python tool for generating fake data in different languages. Generate addresses, city names, postal codes (you can choose the country), name
+- **`falcon-arch-linux`** (low) — OSINT tool: Falcon Arch Linux.
+- **`fastscanner-app-mobile-android`** (low) — App for mobile devices for turning your smartphone camera into a document scanner
+- **`fbi-common-fraud-schemes-united-states`** (low) — Listing of scam, fraud, hoax, and phishing types
+- **`fedora-security-lab`** (low) — OSINT tool: Fedora Security Lab.
+- **`fetching-title`** (low) — OSINT tool: Fetching title....
+- **`filevault2-open-source-disk-encryption-for-mac`** (low) — Program that enhances security by offering system and disk partition encryption
+- **`findemails`** (low) — OSINT tool: FindEmails.
+- **`fireball-search-engine-germany`** (low) — German web search engine offering anonymous browsing
+- **`firefox-browser-add-ons`** (low) — Website that provides searches for Mozilla Firefox browser add-ons/extensions
+- **`firefox-stealth`** (low) — OSINT tool: firefox-stealth.
+- **`firefox`** (low) — OSINT tool: Firefox.
+- **`fireshot`** (low) — Chrome web extension for capturing full webpage screenshots that can be edited, saved as PDFs, or emailed
+- **`forager`** (low) — Quick search tool extension by Chrome
+- **`foursquare-swarm-social-networking-app-mobile-android`** (low) — App for mobile devices for social messaging and reviews
+- **`foursquare-swarm-social-networking-app-mobile-ios`** (low) — App for mobile devices for social messaging and reviews
+- **`free-fax`** (low) — OSINT tool: Free Fax.
+- **`free-proxy-list`** (low) — Free proxies that are freshly checked and updated every 10 minutes
+- **`free-proxy-world`** (low) — Free proxy list, sortable by proxy type, anonymity and country
+- **`freenet`** (low) — Browse the internet and share files privately and anonymously via encrypted network
+- **`freshstart`** (low) — multi-login browser extension
+- **`generate-data`** (low) — Free tool for generating fake data. Useful for testing scripts and applications. The result can be downloaded in CSV, JSON, XML, SQL or Java
+- **`generate-sa-id-numbers`** (low) — OSINT tool: Generate SA ID Numbers.
+- **`genius-scan-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
+- **`geotagonline`** (low) — add fake geotags to photo
+- **`get-safe-online-database`** (low) — Website providing information about online privacy and security-related subjects
+- **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
+- **`giphy-the-gif-search-engine-app-mobile-ios`** (low) — App for mobile devices for creating and sharing GIF format multimedia
+- **`glassdoor-business-app-mobile-ios`** (low) — App for mobile devices for employment, company reviews, and company information posted by other users
+- **`gmail-messaging-app-mobile-android`** (low) — App for mobile devices for email and messaging services
+- **`gmail-messaging-app-mobile-ios`** (low) — App for mobile devices for email and messaging services
+- **`gnu-icecat`** (low) — OSINT tool: Gnu Icecat.
+- **`gnunet`** (low) — Network protocol stack for building secure, distibuted, privacy-preserving applications
+- **`gnupg-pgp-encryption`** (low) — Program that provides PGP standard encryption
+- **`gofoss-net`** (low) — OSINT tool: gofoss.net.
+- **`google-analytics-app-mobile-ios`** (low) — App for mobile devices for analysing website information
+- **`google-analytics-opt-out-extension-chrome`** (low) — Add-on for Google Chrome that prevents Google Analytics from tracking your visits and activity
+- **`google-chrome`** (low) — Web browser developed by Google
+- **`google-dashboard-privacy-control-tool`** (low) — Website that allows Gmail users to turn off history, location and other surfing characteristics
+- **`google-docs-voice-comments`** (low) — simple trick to save time. Voice comments in GoogleDocs, Sheets, Slides, and Forms.
+- **`google-forum-search`** (low) — Firefox browser add-on that allows for Google Forum Search
+- **`google-guide-to-removing-content-from-google`** (low) — Google webpage providing information about how to request the removal of personal information from their various services
+- **`google-image-search-extension-chrome`** (low) — Add-on for Google Chrome that searches for matching images
+- **`google-maps-app-mobile-android`** (low) — App for mobile devices for mapping and geolocation services
+- **`google-maps-app-mobile-ios`** (low) — App for mobile devices for mapping and geolocation services
+- **`google-password-alert-extension-chrome`** (low) — Add-on for Google Chrome that alerts you if you enter your Google password into any non-Google page or form
+- **`google-photos-management-app-mobile-android`** (low) — App for mobile devices for managing and sharing photo media
+- **`google-photos-management-app-mobile-ios`** (low) — App for mobile devices for managing and sharing photo media
+- **`google-play-movies-and-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing movies and TV shows
+- **`google-play-movies-and-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing movies and TV shows
+- **`google-play-store`** (low) — Website that provides searches for apps for Android-type mobile devices
+- **`google-search-app-mobile-android`** (low) — App for mobile devices for general searches
+- **`google-search-app-mobile-ios`** (low) — App for mobile devices for general searches
+- **`google-search-results-scraper`** (low) — Collects google search results and saves them into an Excel table
+- **`google-translate-extension-chrome`** (low) — Add-on for Google Chrome that allows you to see translations of text directly on the webpage
+- **`grammarly-lite-extension-chrome`** (low) — Add-on for Google Chrome that performs spell-checking tasks
+- **`grindr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
+- **`grindr-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and e-dating
+- **`grok-knowledge-base-for-phishing-scams`** (low) — Listing of scam, fraud, hoax, and phishing types
+- **`guid-uuid-and-short-guid-generator`** (low) — OSINT tool: GUID/UUID and short GUID generator.
+- **`hack-this-page`** (low) — A simple extension that allows you to edit the text of any web page.
+- **`hacker-vision-extension-chrome`** (low) — Add-on for Google Chrome that changes the background from white to black
+- **`hide-my-ass-proxy-website`** (low) — Anonymous browsing service provider
+- **`hipstamatic-camera-app-mobile-ios`** (low) — App for mobile devices for social networking and picture sharing
+- **`hola-better-internet-extension-chrome`** (low) — Add-on for Google Chrome that allows access to websites blocked by geolocation and nationality
+- **`hola-vpn`** (low) — VPN for unblocking wesbites and anonymous browsing
+- **`hotspot-shield-proxy-tool-us-access`** (low) — Anonymous browsing service provider with Hotspot Shield VPN
+- **`https-github-com-spyboy-productions-valid8proxy`** (low) — Retrieve proxies from popular proxy sources, officiently validate proxies, save the list of validated proxies to a file
+- **`hulu-tv-app-mobile-android`** (low) — App for mobile devices for locating and playing TV-related media, one of the Top 100 apps for 2015
+- **`hulu-tv-app-mobile-ios`** (low) — App for mobile devices for locating and playing TV-related media
+- **`huron-osint`** (low) — OSINT tool: Huron Osint.
+- **`icloud-app-mobile-ios`** (low) — App for mobile devices for searching and storing personal materials and information
+- **`ifax-communications-app-mobile-ios`** (low) — App for mobile devices for sending and receving faxes
+- **`iid-generator-by-georgy-bunin`** (low) — OSINT tool: IID Generator by Georgy Bunin.
+- **`image-scrubber`** (low) — OSINT tool: Image Scrubber.
+- **`imei-number-generator`** (low) — OSINT tool: IMEI Number Generator.
+- **`instagram-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photo sharing, one of the Top 10 apps for 2015 with over 400 million users
+- **`instagram-social-networking-app`** (low) — App for mobile devices for social networking and photo sharing
+- **`instant-preview`** (low) — Chrome extension that adds instant previews to the search engine results page.
+- **`intelbox-malwaredojo`** (low) — Installer arsenal of OSINT tools for Debian systems and VMs.
+- **`international-name-generator`** (low) — OSINT tool: International Name Generator.
+- **`ipcheck`** (low) — OSINT tool: IPCheck.
+- **`ipvanish-proxy-website`** (low) — Anonymous browsing service provider
+- **`iron-vest`** (low) — Offers protectection of information you share online, including passwords, payments, and other personal information
+- **`itranslate-language-translation-app-mobile-android`** (low) — App for mobile devices for language translation services, one of the Top 100 apps for 2015
+- **`itranslate-language-translation-app-mobile-ios`** (low) — App for mobile devices for language translation services
+- **`jottis-malware-scan`** (low) — Website that scans suspicious or potentially compromised files with multiple anti-virus programs
+- **`jsoncrack`** (low) — Online tool for visualizing, editing and searching for text in JSON files. With the ability to save, export and share results via a link.
+- **`jsonhero`** (low) — Free online tool for visualizing data in JSON format. With tree structure display, syntax highlighting, link preview, pictures, colors and m
+- **`jsonvisio`** (low) — Well-made JSON file renderer. Allows you to quickly understand the structure of even the most complex #JSON files.
+- **`kakao-talk-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging and chat services
+- **`kali-anonsurf`** (low) — Routes all system traffic through Tor and provides anti-forensic helpers for anonymity.
+- **`kali-linux`** (low) — Offensive-security Linux distribution with many recon/OSINT tools preinstalled.
+- **`kasm`** (low) — OSINT tool: Kasm.
+- **`kaspersky-internet-security`** (low) — Malware and virus detection and elimination programs available for Mac and PC
+- **`kaspersky-tdsskiller-anti-rootkit-tool`** (low) — Specialized anti-rootkit tool for advanced PC users
+- **`khan-academy-education-app-mobile-android`** (low) — App for mobile devices for education and information services, one of the Top 100 apps for 2015
+- **`khan-academy-education-app-mobile-ios`** (low) — App for mobile devices for education and information services
+- **`kik-messaging-app-mobile-android`** (low) — App for mobile devices for real-time messaging services, one of the Top 100 apps for 2015
+- **`kik-messaging-app-mobile-ios`** (low) — App for mobile devices for real-time messaging services
+- **`kindle-reading-app-mobile-android`** (low) — App for mobile devices for reading e-books using the Kindle program
+- **`kindle-reading-app-mobile-ios`** (low) — App for mobile devices for reading e-books using the Kindle program
+- **`ladder`** (low) — A tool to enhance web browsing experience: bypass paywalls and remove ads, no tracking and logs, modify URL parameters, http-headers and HTM
+- **`lavasoft-ad-aware-free-anti-virus`** (low) — Malware and virus detection and elimination program
+- **`ldplayer-net`** (low) — OSINT tool: Ldplayer.net.
+- **`lemmeknow`** (low) — Tool for "identifying mysterious text or analyze hard-coded strings". Identifies API keys, cryptocurrency wallet numbers, encrypted strings,
+- **`lexisnexis-accurint-investigation-support-app-mobile-android`** (low) — App for mobile devices for providing support services and information in support of investigations
+- **`lexisnexis-accurint-investigation-support-app-mobile-ios`** (low) — App for mobile devices for providing support services and information in support of investigations
+- **`librewolf`** (low) — OSINT tool: LibreWolf.
+- **`lightshot-screen-capture-add-on`** (low) — Firefox browser add-on for taking screenshots
+- **`link-cash-locator-app`** (low) — ATM locator for the UK, France, Jersey, Guernsey, Gibraltar, Isle of Man
+- **`linkedin-network-and-job-finder-mobile-ios`** (low) — LinkedIn network and job finder app
+- **`linkedin-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and business profiles
+- **`localbitcoins`** (low) — OSINT tool: LocalBitcoins.
+- **`localmonero-co`** (low) — OSINT tool: Localmonero.co.
+- **`macchanger`** (low) — Utility to view and spoof the MAC address of network interfaces.
+- **`magical-text-expander`** (low) — Create shortcuts in Google Chrome to reduce text entry time. For example: email templates, message templates for messengers, signatures and 
+- **`magicplan-floor-plans-and-estimates-app-mobile-android`** (low) — App for mobile devices for creating real-time floor plans using camera photos
+- **`magicplan-floor-plans-and-estimates-app-mobile-ios`** (low) — App for mobile devices for creating real-time floor plans using camera photos
+- **`magnifying-glass-tool-app-mobile-ios`** (low) — App for mobile devices for a combined flashlight and camera image magnification tool
+- **`maildrop`** (low) — OSINT tool: MailDrop.
+- **`malwarebytes-anti-malware`** (low) — Malware and virus detection and elimination program
+- **`malwoverview`** (low) — Get maximum information about potentially malicious files and links from: Virus Total, Hybrid Analysis, URLHaus, PolySwarm, Mal Share, Alien
+- **`many-passwords`** (low) — Default passwords for IoT devices and for web applications (for ex. MySQL and PostgreSQL admin panels)
+- **`manytools`** (low) — Collection of tools to automate the repetitive jobs involved in webdevelopment and hacking.
+- **`markmap`** (low) — A simple and free online tool to convert Markdown to Mindmap (SVG or interactive HTML). Formatting options are not too many, but enough to c
+- **`markwhen`** (low) — Free online tool that converts Markdown to graphical timeline. It will come in handy for investigations where you need to investigate time-b
+- **`match-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
+- **`matweb-info`** (low) — OSINT tool: Matweb.info.
+- **`maxthon`** (low) — OSINT tool: Maxthon.
+- **`mcafee-anti-virus-for-pc`** (low) — Malware and virus detection and elimination program
+- **`mcafee-internet-security-for-mac`** (low) — Malware and virus detection and elimination program for Mac
+- **`meetup-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and meetings
+- **`mega`** (low) — OSINT tool: MEGA.
+- **`memuplay-com`** (low) — OSINT tool: Memuplay.com.
+- **`metacleaner-com`** (low) — OSINT tool: Metacleaner.com.
+- **`microsoft-safety-and-security-center`** (low) — Information about online privacy, security websites, and programs, provided by Microsoft
+- **`mit-pgp-public-key-server`** (low) — Website from MIT that offers a search for PGP Public Key Servers
+- **`mozilla-firefox`** (low) — Internet browser program
+- **`mullvad-browser`** (low) — OSINT tool: Mullvad Browser.
+- **`multifind`** (low) — A search enhancement tool that allows you to search for words/phrases, images, and links.
+- **`multilogin`** (low) — multi-login browser extension
+- **`my-browser-info`** (low) — Analyzes your browser and computer for information being revealed about you
+- **`nano-id-cc`** (low) — OSINT tool: Nano ID CC.
+- **`netflix-movie-app-mobile-android`** (low) — App for mobile devices for searching for and watching movies
+- **`netflix-movie-app-mobile-ios`** (low) — App for mobile devices for searching for and watching movies
+- **`netsurf`** (low) — Multi-platform web browser program
+- **`network-analyzer-investigation-tool-app-mobile-ios`** (low) — App for mobile devices for conducting ping, traceroute, whois, DNS, net speed, port and wifi scanning actions
+- **`new-ip-now-web-proxy`** (low) — Anonymous browsing service provider
+- **`nino-generator`** (low) — OSINT tool: NINO Generator.
+- **`niosh-chemical-hazards-pocket-guide-app-mobile-ios`** (low) — App for mobile devices for reference information related to chemical hazards and materials
+- **`norton-safeweb-rating-search`** (low) — Website that offers the Norton Safe Web search for determining website safety ratings
+- **`note-board-management-extension-chrome`** (low) — Add-on for Google Chrome that manages information in the form of sticky notes on a board
+- **`off-the-record-instant-messaging-plug-in`** (low) — Program that offers encrypted instant messaging services that cannot be monitored
+- **`offen-osint`** (low) — OSINT tool: Offen Osint.
+- **`offensive-security-cheatsheet-haax-fr`** (low) — Pentest/offensive-security cheatsheet that includes OSINT reconnaissance sections.
+- **`okcupid-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
+- **`one-time-mobile-by-osintstash`** (low) — OSINT tool: One-time Mobile by @OsintStash.
+- **`onionshare-file-sharing-tool`** (low) — Tool for file sharing utilizing Tor claiming to be secure and anonymous
+- **`online-link-scan`** (low) — Website that offers an online virus scanner that scans links for malware, trojans and viruses
+- **`openmedia`** (low) — Website designed to educate Canadians on issues surrounding the internet and privacy, and aims at ensuring accountability in the Canadian go
+- **`opera`** (low) — OSINT tool: Opera.
+- **`osint-sync-karamabbasi05`** (medium) — Browser extension to discover usernames, emails, and phone numbers across 20+ platforms.
+- **`osint-sync`** (low) — Browser extension for OSINT (Osint Sync).
+- **`osint-vm-inforensics`** (low) — Virtual machine for OSINT investigators with AI tools and agents.
+- **`osintbox`** (low) — Script to provision a Parrot OS distro with popular OSINT tools.
+- **`osintlab`** (low) — Script that automates installation of ~50 OSINT recon tools.
+- **`osintux`** (low) — OSINT tool: Osintux.
+- **`overcast-podcast-app-mobile-ios`** (low) — App for mobile devices for podcasting services
+- **`owlculus`** (high) — Use when you're running an investigation and want to organize it — entities, evidence, and OSINT plugins — in one self-hosted case-managemen
+- **`pagezipper`** (low) — Chrome and Firefox browser add-on that automatically merges pages into one page for easier browsing
+- **`pandasecurity-free-antivirus`** (low) — Malware and virus detection and elimination program
+- **`pandora-radio-app-mobile-android`** (low) — App for mobile devices for searching and playing radio channels
+- **`pandora-radio-app-mobile-ios`** (low) — App for mobile devices for searching and playing radio channels
+- **`paper-creativity-app-mobile-ios`** (low) — App for mobile devices for creating and sharing ideas, notes, diagrams and drawings
+- **`parrot-security-os-online-emulator`** (low) — OSINT tool: Parrot Security OS Online Emulator.
+- **`parrot-security`** (low) — OSINT tool: Parrot Security.
+- **`passhunt`** (low) — Command line tool for searching of default credentials for network devices, web applications and more. Search through 523 vendors and their 
+- **`password-generator`** (low) — Password generator for creating strong passwords
+- **`password-safe`** (low) — Program that enhances security by offering password management services
+- **`paxful`** (low) — OSINT tool: Paxful.
+- **`paypal-mobile-payment-app-mobile-android`** (low) — App for mobile devices for mobile payment services
+- **`pentoo-linux`** (low) — OSINT tool: Pentoo Linux.
+- **`pexels`** (low) — OSINT tool: Pexels.
+- **`pic-cic-code-database`** (low) — OSINT tool: PIC/CIC Code Database.
+- **`pinterest-social-bookmarking-app-mobile-android`** (low) — App for mobile devices for social networking
+- **`pinterest-social-bookmarking-app-mobile-ios`** (low) — App for mobile devices for social networking
+- **`plentyoffish-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and e-dating
+- **`plex-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing photos and videos
+- **`police-scanner-radio-app-mobile-android`** (low) — App for mobile devices for monitoring law enforcement and emergency radio communications
+- **`postmates-delivery-app-mobile-ios`** (low) — App for mobile devices for tracking delivery services
+- **`pramp`** (low) — The service allows you to take five free (!) online #coding and #productmanagement interview training sessions with peers
+- **`premium-proxy-service`** (low) — Proxy server and free proxy list
+- **`primeos`** (low) — OSINT tool: PrimeOS.
+- **`prism-break`** (low) — OSINT tool: PRISM Break.
+- **`privacy-net`** (low) — Listing of privacy resources
+- **`prospectlinked`** (low) — OSINT tool: ProspectLinked.
+- **`proton-vpn`** (low) — OSINT tool: Proton VPN.
+- **`proxy-org`** (low) — Listing of anonymous web proxies
+- **`pushbullet-management-extension-chrome`** (low) — Add-on for Google Chrome that coordinates online activities between several personal devices
+- **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
+- **`random-face-generator`** (low) — OSINT tool: Random Face Generator.
+- **`ray-so`** (low) — A simple tool that allows you to beautifully design code as a picture (for social media post or article).
+- **`receive-sms-now-com`** (low) — OSINT tool: Receive-sms-now.com.
+- **`receive-sms-online-for-free`** (low) — OSINT tool: Receive SMS Online for FREE.
+- **`receive-sms-online`** (low) — OSINT tool: Receive SMS Online.
+- **`redbooth-team-collaboration-app`** (low) — Mobile device app for collaboration, task management, file sharing and communication allowing 5 free users
+- **`reddit-guide-to-opting-out-of-background-check-websites`** (high) — Use when you (the investigator) want to reduce your own exposure on people-search/background-check sites — a community guide listing opt-out
+- **`remindwhen`** (low) — Simple app that reminds you on email if your favorite country opens for tourists from your country.
+- **`resume-builder`** (low) — OSINT tool: Resume Builder.
+- **`resume-generator`** (low) — OSINT tool: Resume Generator.
+- **`resurrect-pages`** (low) — Firefox add-on by Anthony Lieuallen for viewing dead pages and broken links
+- **`ripoff-report`** (low) — Searchable database of complaints, scams, lawsuits, and frauds
+- **`rosetta-stone-learn-languages-app-mobile-android`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
+- **`rosetta-stone-learn-languages-app-mobile-ios`** (low) — App for mobile devices for learning words and phrases in up to 19 languages
+- **`rss-subscription-extension-chrome`** (low) — Add-on for Google Chrome that autodetects RSS feed links shows an RSS link at the top right of any webpage
+- **`rug`** (low) — Extreme simple tool for generating random user data.
+- **`runkeeper`** (low) — Website related to social networking in the form of health, wellness, and/or fitness
+- **`safari-for-macos`** (low) — Internet browser for Mac
+- **`safari-for-windows`** (low) — Internet browser download available for Windows
+- **`safari`** (low) — OSINT tool: Safari.
+- **`safetydetective-security-tools`** (low) — List of over 25 security tools, including anti-virus, malware, and spyware protection,
+- **`sales-navigator-for-gmail`** (low) — OSINT tool: Sales Navigator for Gmail.
+- **`samy-kamkar`** (low) — OSINT tool: Samy Kamkar.
+- **`scamwatch`** (low) — Australian government website for information on scams
+- **`scrapersnbots`** (low) — A collection of a wide variety of online tools for #osint and not only: search for users with a specific name on different sites, one domain
+- **`screenshot-full-page-screen-capture`** (low) — record a video of part of the screen using a very easy-to-use browser extension
+- **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
+- **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
+- **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
+- **`search-that-hash`** (low) — Python tool for automating password hash detection (based on Hashcat). It can work with single strings as well as with long lists of hashes 
+- **`searchonymous`** (low) — Firefox browser add-on that lets you search Google anonymously while remaining logged in
+- **`security-first-umbrella`** (low) — OSINT tool: Security First - Umbrella.
+- **`security-in-a-box`** (low) — OSINT tool: Security in a Box.
+- **`send-text-free`** (low) — OSINT tool: Send text free.
+- **`send`** (low) — OSINT tool: Send.
+- **`sendatext`** (low) — OSINT tool: SendaText.
+- **`septor-linux`** (low) — OSINT tool: Septor Linux.
+- **`sessionbox`** (low) — multi-login browser extension
+- **`shadowcrypt-messaging`** (low) — Tool for a browser add-on that encrypts messaging for webmail and social networking sites
+- **`shadowcrypt-tools`** (low) — 24 online tools for OSINT, network scanning, MD5 encryption and many others
+- **`shazam-music-entertainment-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
+- **`shazam-music-entertainment-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
+- **`shiftyjelly-pocketcasts-networking-app-mobile-android`** (low) — App for mobile devices for social networking and podcasts
+- **`similarsites-firefox`** (low) — Firefox extension for locating similar sites.
+- **`simplelogin`** (low) — OSINT tool: SimpleLogin.
+- **`sin-generator`** (low) — OSINT tool: SIN Generator.
+- **`skype-voip-communications-app-mobile-android`** (low) — App for mobile devices for VOIP communications services
+- **`skype-voip-communications-app-mobile-ios`** (low) — App for mobile devices for VOIP communications services
+- **`slack-business-app-mobile-android`** (low) — App for mobile devices for business communications and networking
+- **`slack-business-communication-app-mobile-ios`** (low) — App for mobile devices for business communications and networking
+- **`sleepcycle`** (low) — Website related to social networking in the form of health, wellness, and/or fitnes
+- **`sleipnir`** (low) — OSINT tool: Sleipnir.
+- **`slimjet`** (low) — OSINT tool: Slimjet.
+- **`slydial-ringless-voicemail-messaging`** (low) — Proxy voice messaging service that goes directly to a person's voicemail
+- **`smstome-com`** (low) — OSINT tool: Smstome.com.
+- **`snapchat-messaging-app-mobile-ios`** (low) — App for mobile devices for social networking and messaging
+- **`snapchat-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and self-deleting messages
+- **`snopes-fact-checker`** (low) — Fact-checking website, formerly known as Urban Legends Reference Pages
+- **`snow`** (low) — A very simple add-on that speeds up and simplifies the formatting of #GoogleDocs. "Show" shows non-printable characters (spaces, tabs, page 
+- **`sophos-mac-antivirus`** (low) — Free malware and virus detection and elimination program for Mac computers
+- **`soundcloud-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
+- **`soundcloud-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
+- **`soundhound-music-app-mobile-android`** (low) — App for mobile devices for searching for and playing music
+- **`soundhound-music-app-mobile-ios`** (low) — App for mobile devices for searching for and playing music
+- **`soundraw`** (low) — AI music generation
+- **`speech-jammer`** (low) — OSINT tool: Speech Jammer.
+- **`spotify-music-app-mobile-android`** (low) — App for mobile devices for searching and listening to music
+- **`spotify-music-app-mobile-ios`** (low) — App for mobile devices for searching and listening to music
+- **`spybot-search-and-destroy`** (low) — Malware and virus detection and elimination program
+- **`srware-iron`** (low) — OSINT tool: SRWare Iron.
+- **`ssn-generator`** (low) — OSINT tool: SSN Generator.
+- **`stayfocusd-management-extension-chrome`** (low) — Add-on for Google Chrome that lets you block yourself or limit your own time on a specified website
+- **`stealthy-proxy-server-extension-chrome`** (low) — Add-on for Google Chrome that allows for anonymous browsing and viewing material blocked by nationality
+- **`stegonline`** (low) — OSINT tool: StegOnline.
+- **`storyful-multisearch-chrome-add-on`** (low) — Add-on that provides multi-media search engine capabilities and results viewing
+- **`stutterbox`** (low) — OSINT tool: Stutterbox.
+- **`symantec-norton-anti-virus`** (low) — Malware and virus detection and elimination program
+- **`system-status-management-app-mobile-ios`** (low) — App for mobile devices for monitoring and managing battery and memory usage
+- **`tagged-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and photos
+- **`tango-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking, free video calls, and chat
+- **`tapatalk-messaging-app-mobile-android`** (low) — App for mobile devices for social networking and messaging
+- **`tempmail-org-bot`** (low) — telegram bot for quick creation of temporary email addresses (to receive emails when registering on different sites)
+- **`text-on-pictures-multimedia-app-mobile-ios`** (low) — App for mobile devices for adding text to images
+- **`text-to-ascii-art-generator-taag`** (low) — This site will help you make atmospheric lettering for your command line tool or README.
+- **`text2img`** (low) — text to image AI generator
+- **`the-cloak-proxy-website`** (low) — Website offering anonymous web surfing
+- **`the-osint-puppeteer`** (low) — OSINT tool: The OSINT Puppeteer.
+- **`the-weather-channel-app-mobile-android`** (low) — App for mobile devices for weather updates
+- **`thexifer`** (low) — add fake metadata to photo
+- **`this-baseball-player-does-not-exist`** (low) — A non-existent personality generator that generates people who look amazingly natural.
+- **`this-rental-does-not-exist`** (low) — OSINT tool: This Rental Does Not Exist.
+- **`thispersondoesnotexistapi-unofficial`** (low) — #Python library that returns a random "doesnotexist" person picture generated by AI (with site [http://thispersondoesnotexist.com](http://th
+- **`thisxdoesnotexist`** (low) — collection of more than 30 services that generate various items using neural networks.
+- **`timehop-past-activity-app-mobile-android`** (low) — App for mobile devices for locating and reviewing past online postings and activity
+- **`timehop-past-activity-app-mobile-ios`** (low) — App for mobile devices for locating and reviewing past online postings and activity
+- **`tinder-dating-app-mobile-android`** (low) — App for mobile devices for dating and relationship services
+- **`tinder-dating-app-mobile-ios`** (low) — App for mobile devices for dating and relationship services
+- **`tineye-reverse-image-search-extension-chrome`** (low) — Add-on for Google Chrome that allows you to search for matching images
+- **`tiny-scanner-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
+- **`tinywall-windows-firewall-enhancement`** (low) — Program that enhances security by offering extra firewall protection
+- **`tobloef-com`** (low) — text to mind map
+- **`todoist-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
+- **`tor-browser`** (low) — OSINT tool: Tor Browser.
+- **`tor`** (low) — Browser protects against tracking, surveillance, and censorship
+- **`torch-flashlight-tool-app-mobile-ios`** (low) — App for mobile devices for using your device as a flashlight
+- **`torch`** (low) — OSINT tool: Torch.
+- **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
+- **`trancreative-converter-plus-app-mobile-ios`** (low) — App for mobile devices for converting units of measurement and currencies
+- **`transfer-sh`** (low) — OSINT tool: transfer.sh.
+- **`transform-tools`** (low) — This tool is worth knowing for developers and anyone who has to work with different data formats. It can convert: JSON to MySQL, JavaScript 
+- **`trello-networking-app-mobile-android`** (low) — App for mobile devices for social networking and coordinating information
+- **`truecrypt-encryption-software`** (low) — Guide for TrueCrypt open-source disk encryption software for Windows, Mac and Linux
+- **`tsurugi-linux`** (low) — DFIR and OSINT-oriented Linux distribution.
+- **`tumblr-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and information sharing
+- **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 
+- **`tunnelbear`** (low) — Anonymous browsing service provider
+- **`turn-off-the-lights-extension-chrome`** (low) — Add-on for Google Chrome that dims other windows when the video window is open and running
+- **`twitter-profile-generator`** (low) — OSINT tool: Twitter Profile Generator.
+- **`twitter-social-networking-mobile-android`** (low) — App for mobile devices for social networking
+- **`twitter-social-networking-mobile-ios`** (low) — App for mobile devices for social networking
+- **`two-factor-authentication-list`** (low) — List of websites indicating whether a site uses two factor authentication or not
+- **`typeit`** (low) — If the text in the picture is not recognised using Google Lens or other OCR tools, try just typing it character by character using the onlin
+- **`uber-private-driver-app-mobile-android`** (low) — App for mobile devices for searching for and communicating with private hire driving services
+- **`uber-private-driver-app-mobile-ios`** (low) — App for mobile devices for searching for and communicating with private hire driving services
+- **`ucbrowser`** (low) — OSINT tool: UCBrowser.
+- **`uk-government-internet-scams-webpage`** (low) — Listing and reporting of scam, fraud, hoax, and phishing types
+- **`ultrasurf-proxy-website`** (low) — Anonymous browsing service provider
+- **`unpaywall`** (low) — Firefox add-on by Impactstory Team that looks for open-access legal articles
+- **`update-scanner-add-on`** (low) — Firefox browser add-on for monitoring changes to a webpage without using RSS or Atom feeds
+- **`upload-disroot`** (low) — OSINT tool: Upload \| Disroot.
+- **`upload-files-to-ipfs-from-browser`** (low) — OSINT tool: Upload files to IPFS from Browser.
+- **`urban-legends-online`** (low) — Searchable database of scam, fraud, hoax, phishing and misinformation articles
+- **`us-cop-reference-guide-app-mobile-android`** (low) — App for mobile devices for reference material for US-based LEO's
+- **`us-ssn-driver-license-state-id-passport-tax-id-generator`** (low) — OSINT tool: US SSN / Driver License / State ID / Passport / Tax ID Generator.
+- **`username-generator`** (low) — OSINT tool: Username Generator.
+- **`vcc-generator`** (low) — tool for generating valid bank card numbers (useful for registering accounts to use free trial versions or to create sock puppets)
+- **`venmo-mobile-payment-app-mobile-android`** (low) — App for mobile devices for mobile payment services
+- **`venmo-mobile-payment-app-mobile-ios`** (low) — App for mobile devices for mobile payment services
+- **`video-downloadhelper`** (low) — Browser add-on for Firefox and Chrome that downloads videos
+- **`view-exif-data-online-remove-exif-online`** (low) — OSINT tool: View Exif data online, remove Exif online.
+- **`vin-generator`** (low) — OSINT tool: VIN Generator.
+- **`visual-ping-extension-chrome`** (low) — Add-on for Google Chrome that send you an email when a specific webpage or website is updated or changed
+- **`vivaldi`** (low) — OSINT tool: Vivaldi.
+- **`vkontakte-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking
+- **`voicebooking`** (low) — fake voice generator
+- **`vpn-for-beginners`** (low) — Beginners guide to VPN by Best VPN
+- **`vpn`** (low) — Database of VPNs
+- **`walmart-shopping-app-mobile-android`** (low) — App for mobile devices for online shopping through Walmart
+- **`walmart-shopping-app-mobile-ios`** (low) — App for mobile devices for online shopping through Walmart
+- **`washington-state-driver-s-license-generator`** (low) — OSINT tool: Washington State Driver's License Generator.
+- **`waterfox`** (low) — OSINT tool: Waterfox.
+- **`web-history-stat`** (low) — detailed statistics of your browser history
+- **`web-of-trust`** (low) — Broswer add-on that identifies the trust ratings of websites
+- **`web-proxy`** (low) — free web proxy
+- **`webdext`** (low) — An intelligent and quick web data extractor for #GoogleChrome. Support data extraction from web pages containing a list of objects such as p
+- **`webmapper`** (low) — Extension that create a map-visualization based by browser history. A visual representation of the most visited sites in 10, 20, 50 or 100 d
+- **`webmd-health-and-wellness-app-mobile-ios`** (low) — App for mobile devices for medical and first aid information
+- **`wechat-messaging-app-mobile-android-china`** (low) — App for mobile devices for messaging services in China
+- **`wechat-messaging-app-mobile-ios-china`** (low) — App for mobile devices for messaging services in China
+- **`wevideo-video-editor-app-mobile-android`** (low) — App for mobile devices for social networking and creating, editing and publishing videos
+- **`whatsapp-fake-chat-generator`** (low) — Generate fake WhatsApp conversations.
+- **`whatsapp-messaging-app-mobile-android`** (low) — App for mobile devices for messaging services
+- **`whatsapp-messaging-app-mobile-ios`** (low) — App for mobile devices for messaging services
+- **`whenx`** (low) — Candidate notes for Linkedin profiles - synchronized with Google.
+- **`windows-10-online-emulator`** (low) — OSINT tool: Windows 10 Online Emulator.
+- **`windows-event-collection`** (low) — A tool to help you understand #Windows, #SharePoint, #SQLServer and Exchange system security logs.
+- **`windows-phone-imei-generator`** (low) — OSINT tool: Windows Phone IMEI Generator.
+- **`winpatrol-monitor-and-alert-program-windows`** (low) — Malware detection and program changes alert program
+- **`winpatrol-os-monitoring-system`** (low) — Program that protects against malware and malicious hacking by detecting changes to your device's operating system
+- **`wordpress-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and blogging
+- **`workflow-task-automation-app-mobile-ios`** (low) — App for mobile devices for business communications and sharing of materials
+- **`xmind-works`** (low) — Online tool for open and editing .xmind files
+- **`yahoo-finance-app-mobile-android`** (low) — App for mobile devices for monitoring stocks and finance
+- **`yahoo-finance-app-mobile-ios`** (low) — App for mobile devices for monitoring stocks and finance
+- **`yahoo-mail-app-mobile-android`** (low) — App for mobile devices for email services
+- **`yahoo-mail-app-mobile-ios`** (low) — App for mobile devices for email services
+- **`yandex-browser`** (low) — OSINT tool: Yandex Browser.
+- **`yelp-business-search-app-mobile-ios`** (low) — App for mobile devices for locating business by name, contact informatio, or geolocation
+- **`yelp-social-reviews-app-mobile-android`** (low) — App for mobile devices for social networking and reviews
+- **`youtube-social-networking-app-mobile-android`** (low) — App for mobile devices for social networking and video sharing
+- **`youtube-social-networking-app-mobile-ios`** (low) — App for mobile devices for social networking and video sharing
+- **`youtube-transcript-search`** (low) — Collect and search YouTube transcripts for multiple videos from a channel
+- **`zotero`** (low) — Browser add-on for Firefox, Chrome, and Safari that assists in collecting, organizing, citing, and sharing research and saved online webpage
+- **`zxing-barcode-scanner-app-mobile-android`** (low) — App for mobile devices for scanning and recognizing items with bar codes
+- **`zz-fo`** (low) — OSINT tool: Zz.fo.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

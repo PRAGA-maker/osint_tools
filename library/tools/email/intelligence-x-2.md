@@ -15,7 +15,7 @@ selectorsIn:
 selectorsOut:
 - email
 - domain
-- metadata
+- metadata-exif
 - document-id
 status: live
 pricing: freemium

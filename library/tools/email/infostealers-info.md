@@ -15,7 +15,7 @@ selectorsOut:
 - email
 - username
 - domain
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free search returns existence/preview; full credential and host records require a paid plan.

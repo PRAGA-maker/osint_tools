@@ -13,7 +13,7 @@ selectorsIn:
 - employer-org
 selectorsOut:
 - email
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free domain format lookups; bulk/API access is gated behind paid plans.

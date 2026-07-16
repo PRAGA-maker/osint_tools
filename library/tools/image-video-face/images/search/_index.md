@@ -7,28 +7,28 @@ kind: group-index
 # image-video-face/images/search
 
 ## Skills here
-- **`7photos-net`** (high) — Unknown; requires additional validation before operational use
-- **`baidu-images`** (high) — China-specific image source discovery
-- **`bing-images`** (high) — Cropped reverse-image matching and visual component analysis
-- **`camfind-app`** (high) — On-device object identification and quick visual lookups
-- **`cc-search`** (high) — Finding license-safe imagery and attribution-ready sources
-- **`current-location`** (high) — Discovering geotagged photos near a location of interest
-- **`facecheck-facial-recognition-search`** (high) — Finding public social profiles by face image
-- **`faceseek-face-search-engine`** (high) — Supplemental reverse face lookup and comparison
-- **`google-images`** (high) — Broad reverse image search and source discovery
-- **`image-identification-project`** (high) — Quick machine-labeling of unknown image content
-- **`imagenet`** (high) — Reference classification sets and ML-oriented visual taxonomy work
-- **`imgur-search`** (high) — Locating reposted images and public gallery content on Imgur
-- **`lenso-ai`** (high) — Matching altered or low-quality images and face lookups
-- **`photobucket`** (high) — Finding legacy hosted images and user gallery artifacts
-- **`picarta`** (high) — Estimating geographic origin of photos without metadata
-- **`pimeyes-face-search-engine`** (high) — High-coverage reverse face search investigations
+- **`7photos-net`** (high) — Use when an OSINT-framework listing points you at 7photos.net for an image task — but verify it loads before relying on it, as the destinati
+- **`baidu-images`** (high) — Use when you have a photo of a subject and want reverse-image matches from Chinese-language sites and platforms that Google and Western engi
+- **`bing-images`** (high) — Use when you have an `image`/`face` and want a second reverse-image engine — returns visually-similar images, source pages, and object-level
+- **`camfind-app`** (medium) — Use when you have a photo of an object, product, or landmark and want a mobile app to identify it and return related web results.
+- **`cc-search`** (low) — Use when you need openly-licensed images for reports/illustration — it searches CC and public-domain media, not the open web of people photo
+- **`current-location`** (high) — Use when you have coordinates or a place and want to see geotagged public photos taken nearby — returns geolocated images and their source l
+- **`facecheck-facial-recognition-search`** (high) — Use when you have a face photo of a missing person and need to find public web/social profiles, news, and forum posts showing the same face.
+- **`faceseek-face-search-engine`** (high) — Use when you have a face photo and want a supplemental reverse face search across social media and the web to find matching profiles or imag
+- **`google-images`** (high) — Use when you have a photo of a missing person, an object, or a backdrop and want to find where else it appears online — returns matching pag
+- **`image-identification-project`** (low) — Use when you have a photo and need a machine guess at what object/animal/thing is in it — returns a predicted label, useful for triaging unk
+- **`imagenet`** (low) — Use when you need a labeled reference image dataset / visual taxonomy for training or benchmarking a computer-vision model — not for searchi
+- **`imgur-search`** (high) — Use when you have a keyword, tag, or username and want to find publicly posted images/albums on Imgur — returns image posts and account-link
+- **`lenso-ai`** (high) — Use when you have a face or object image and want AI-powered reverse search across the web — returns visually and facially similar matches w
+- **`photobucket`** (medium) — Use when you have a username, email, or gallery name and want to surface legacy public photo albums — returns image galleries, associates, a
+- **`picarta`** (high) — Use when you have a photo with no metadata and want to estimate where it was taken — returns predicted geolocation (coordinates / place) and
+- **`pimeyes-face-search-engine`** (high) — Use when you have a `face`/`image` of someone and want to find other web pages showing that face — returns matched images and the source-pag
 - **`places2`** (high) — Scene classification reference and location-context model training
-- **`reveye-reverse-image-search`** (high) — Multi-engine reverse image pivoting from a single browser action
-- **`saucenao`** (high) — Tracing image origins and duplicate postings
-- **`smugmug-search`** (high) — Finding public photographer portfolios and gallery artifacts
-- **`surfface-face-and-people-search-engine`** (high) — Identity correlation from face imagery
-- **`twitter-image-search`** (high) — Finding image-containing tweets by keyword or operator
-- **`yandex-images`** (high) — Finding non-Western image sources and modified variants
+- **`reveye-reverse-image-search`** (high) — Use when you have an `image` or `face` on a web page and want to reverse-search it across multiple engines in one click — returns image matc
+- **`saucenao`** (high) — Use when you have an `image` (especially art/anime/illustration or an avatar) and want its origin — returns the source posting, artist, and 
+- **`smugmug-search`** (medium) — Use when you have a `name`/`username` of a photographer (or an event/keyword) and want their public photo galleries — returns public albums,
+- **`surfface-face-and-people-search-engine`** (high) — Use when you have a `face`/photo of an unknown person and want to find where else they appear online — returns matched `social-profile`s, na
+- **`twitter-image-search`** (high) — Use when you have a `username`, keyword, or place and want image/media tweets — an X/Twitter search URL with the images filter returns media
+- **`yandex-images`** (high) — Use when you have an `image` or `face` and want to find where it appears online, likely originals, and modified variants — returns source pa
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._

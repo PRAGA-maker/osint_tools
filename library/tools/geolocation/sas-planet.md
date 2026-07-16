@@ -7,8 +7,12 @@ category: geolocation
 path:
 - geolocation
 bestFor: Windows app aggregating many satellite/map providers to view and download cached, offline-usable imagery.
-selectorsIn: [geolocation, address]
-selectorsOut: [geolocation, metadata]
+selectorsIn:
+- geolocation
+- address
+selectorsOut:
+- geolocation
+- metadata-exif
 status: live
 pricing: free
 opsec: passive
@@ -19,12 +23,15 @@ bestInteractionPattern: desktop-app
 trust: community
 trustNote: Long-standing open Russian-origin GIS imagery tool (SASGIS); widely used in OSINT, free, but a Windows binary you should obtain from the official site.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: true
 registration: false
-aliases: [SAS.Planet, SASPlanet]
+aliases:
+- SAS.Planet
+- SASPlanet
 tags:
 - geospatial-research-and-mapping-tools
 source: awesome-osint

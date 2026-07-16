@@ -13,7 +13,7 @@ selectorsIn:
 - geolocation
 - address
 selectorsOut:
-- metadata
+- metadata-exif
 - image
 status: degraded
 pricing: free

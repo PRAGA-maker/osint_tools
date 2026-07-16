@@ -12,7 +12,7 @@ selectorsIn:
 - domain
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: down
 pricing: free
 costNote: Was free to browse; registration was required to see some entries.

@@ -12,7 +12,6 @@ kind: group-index
 - **`dorksearch-netlify-app`** (medium) — Fast, simple Google dork query generation
 - **`google-alerts`** (medium) — OSINT tool: Google Alerts.
 - **`google-custom-search-engine`** (medium) — OSINT tool: Google Custom Search Engine.
-- **`google-trends-2`** (medium) — Tracking topic interest, comparing search terms, identifying trend patterns
 - **`pagodo-passive-google-dork`** (medium) — Automated passive Google dork enumeration from GHDB
 - **`scanner-inurlbr`** (medium) — OSINT tool: Scanner-inurlbr.
 - **`searchdiggity`** (medium) — OSINT tool: SearchDiggity.

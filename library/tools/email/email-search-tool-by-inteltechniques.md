@@ -13,7 +13,7 @@ selectorsOut:
 - social-profile
 - name
 - username
-- metadata
+- metadata-exif
 status: live
 pricing: free
 costNote: Free web tool; the linked third-party services have their own pricing/limits.

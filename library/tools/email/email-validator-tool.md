@@ -10,7 +10,7 @@ bestFor: Deliverability/validity check of a single email address.
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: unknown
 pricing: free
 costNote: Free web form per its listing; many such services bulk-validate behind a paid API.

@@ -9,7 +9,6 @@ kind: group-index
 ## Sub-groups
 - **`android/`** — 2 skill(s) below.
 - **`office-files/`** — 2 skill(s) below.
-- **`pdfs/`** — 1 skill(s) below.
 
 ## Skills here
 - **`any-run`** (low) — Interactive malware analysis with real-time system interaction

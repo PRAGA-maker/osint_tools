@@ -8,9 +8,8 @@ kind: group-index
 
 ## Sub-groups
 - **`instant-messaging/`** — 8 skill(s) below.
-- **`pictures/`** — 2 skill(s) below.
-- **`social-networking/`** — 4 skill(s) below.
-- **`streaming-video/`** — 3 skill(s) below.
+- **`social-networking/`** — 3 skill(s) below.
+- **`streaming-video/`** — 2 skill(s) below.
 
 ## Skills here
 - **`truecaller`** (medium) — Phone number verification, caller ID lookup, spam detection, contact validation

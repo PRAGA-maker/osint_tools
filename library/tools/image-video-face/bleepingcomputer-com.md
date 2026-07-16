@@ -11,7 +11,7 @@ selectorsIn:
 - image
 - document-id
 selectorsOut:
-- metadata
+- metadata-exif
 status: live
 pricing: free
 opsec: passive
@@ -22,7 +22,8 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: BleepingComputer is an established security-news outlet. This specific URL is an article covering Dan Petro's "Unredacter" research, not an OSINT tool.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false

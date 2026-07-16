@@ -12,7 +12,7 @@ selectorsIn:
 - domain
 selectorsOut:
 - image
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Core capture (PNG/JPG) is free; PDF export, multi-page capture, and editing features are in the paid Pro version.

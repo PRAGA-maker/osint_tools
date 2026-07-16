@@ -7,8 +7,12 @@ category: geolocation
 path:
 - geolocation
 bestFor: Free, downloadable reference map collection (UT Austin) for country, city, topographic and historical maps.
-selectorsIn: [geolocation, address]
-selectorsOut: [geolocation, metadata]
+selectorsIn:
+- geolocation
+- address
+selectorsOut:
+- geolocation
+- metadata-exif
 status: live
 pricing: free
 opsec: passive
@@ -19,12 +23,15 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Hosted by the University of Texas at Austin Libraries (PCL Map Collection), a long-standing, authoritative public archive.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-aliases: [PCL Map Collection, UT Library Maps]
+aliases:
+- PCL Map Collection
+- UT Library Maps
 tags:
 - geospatial-research-and-mapping-tools
 source: awesome-osint

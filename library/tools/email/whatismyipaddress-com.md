@@ -9,7 +9,7 @@ path:
 bestFor: Extracting and geolocating the originating IP from pasted email headers (header → ip-address → location).
 selectorsIn:
 - email
-- metadata
+- metadata-exif
 selectorsOut:
 - ip-address
 - geolocation

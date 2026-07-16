@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`checkshorturl`** (low) — Safe short-link destination checks
-- **`knowurl`** (low) — Historical reference only
 - **`link-expander`** (low) — Expanding shortened links safely
 - **`url-expander`** (low) — Resolving opaque short links
 - **`where-does-this-link-go`** (low) — Tracing redirect chains for suspicious links

@@ -9,15 +9,10 @@ kind: group-index
 ## Skills here
 - **`blackweb`** (low) — Squid proxy malware filtering
 - **`critical-stack-intel`** (low) — Network IDS threat intelligence
-- **`dns-bh-malware-domain-blocklist`** (low) — Malware domain blocking (legacy)
 - **`dns-sinkhole`** (low) — DNS-based malware blocking
-- **`email-domain-validation`** (low) — Email domain and mailbox verification
-- **`malware-domain-list-2`** (low) — Malware domain reputation queries
-- **`malware-domains-blacklist`** (low) — Malware domain blocking (legacy)
 - **`malwareurl`** (low) — Malware URL reputation checking
 - **`scumware-org`** (low) — Malware and spyware domain research
 - **`shadowserver-foundation`** (low) — IP/domain reputation and abuse intelligence
-- **`threatexpert-com-malicious-urls`** (low) — Malware URL intelligence
 - **`zeus-c2-tracker`** (low) — Zeus botnet C2 blocking
 - **`zeus-tracker`** (low) — Zeus botnet tracking and blocking
 

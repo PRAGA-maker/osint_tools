@@ -7,8 +7,12 @@ category: geolocation
 path:
 - geolocation
 bestFor: A "digital atlas" platform aggregating satellite, drone and community-contributed maps/imagery for an area.
-selectorsIn: [geolocation, address]
-selectorsOut: [geolocation, metadata]
+selectorsIn:
+- geolocation
+- address
+selectorsOut:
+- geolocation
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Browsing the public atlas is free; some contributed/high-res layers and uploads may require an account or payment.
@@ -20,12 +24,14 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Commercial community map-sharing platform; layer quality and freshness vary because much content is user-contributed.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-aliases: [Soar.Earth]
+aliases:
+- Soar.Earth
 tags:
 - geospatial-research-and-mapping-tools
 source: awesome-osint

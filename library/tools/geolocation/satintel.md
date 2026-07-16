@@ -7,8 +7,11 @@ category: geolocation
 path:
 - geolocation
 bestFor: Open-source CLI for satellite OSINT — pulling orbital element (TLE) data and tracking/identifying satellites.
-selectorsIn: [metadata]
-selectorsOut: [geolocation, metadata]
+selectorsIn:
+- metadata-exif
+selectorsOut:
+- geolocation
+- metadata-exif
 status: live
 pricing: free
 opsec: passive
@@ -20,7 +23,8 @@ bestInteractionPattern: cli
 trust: community
 trustNote: Open-source GitHub project by ANG13T; legitimate satellite-recon tooling but a niche space-OSINT use case, not person geolocation.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: api-key
 api: false
 localInstall: true

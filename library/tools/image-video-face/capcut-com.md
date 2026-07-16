@@ -9,10 +9,10 @@ path:
 bestFor: Editing and lightly enhancing video/images — trimming clips, stabilizing, upscaling, and pulling still frames for further analysis.
 selectorsIn:
 - image
-- metadata
+- metadata-exif
 selectorsOut:
 - image
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 opsec: active
@@ -25,7 +25,8 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: CapCut is a widely used, real video-editing product (ByteDance). It is an editing/creation tool, not an OSINT search or recognition tool — relevance to investigations is limited to media prep.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: account
 api: false
 localInstall: false

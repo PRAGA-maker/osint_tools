@@ -10,7 +10,7 @@ bestFor: Reputable single-address deliverability verification.
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: live
 pricing: freemium
 costNote: Free interactive single-address checker; bulk and API use are paid (Email Hippo commercial plans).

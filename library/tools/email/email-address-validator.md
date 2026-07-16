@@ -10,7 +10,7 @@ bestFor: Verifying whether a single email address is syntactically valid, has li
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 - domain
 status: live
 pricing: freemium

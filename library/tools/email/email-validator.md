@@ -10,7 +10,7 @@ bestFor: Lightweight syntax/MX validity check of an email address.
 selectorsIn:
 - email
 selectorsOut:
-- metadata
+- metadata-exif
 status: unknown
 pricing: free
 costNote: Free hobby-hosted web form.

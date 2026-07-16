@@ -7,15 +7,938 @@ kind: group-index
 # search-engines
 
 ## Sub-groups
-- **`academic-publication-search/`** — 20 skill(s) below.
+- **`academic-publication-search/`** — 17 skill(s) below.
 - **`code-search/`** — 6 skill(s) below.
 - **`ftp-search/`** — 3 skill(s) below.
 - **`general-search/`** — 16 skill(s) below.
-- **`meta-search/`** — 2 skill(s) below.
+- **`meta-search/`** — 1 skill(s) below.
 - **`news-search/`** — 13 skill(s) below.
 - **`other-search/`** — 4 skill(s) below.
 - **`search-engine-guides/`** — 3 skill(s) below.
-- **`search-tools/`** — 10 skill(s) below.
+- **`search-tools/`** — 9 skill(s) below.
 
+## Skills here
+- **`100-search-engines`** (medium) — Meta search engine searching over a range of popular sites including Yahoo, Amazon, LinkedIn, Craigslist, Google Maps, and more.
+- **`1337x-torrent-search-engine`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
+- **`1st-headlines`** (low) — OSINT tool: 1st Headlines.
+- **`1websdirectory`** (medium) — General web directory, browsable by category, keyword and country
+- **`2lingual-search`** (medium) — OSINT tool: 2lingual Search.
+- **`2lingual`** (medium) — OSINT tool: 2lingual.
+- **`3dfindit`** (low) — tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.
+- **`4shared`** (medium) — Website that allows users to search, store, and share files.
+- **`aaroncti-s-online-resources`** (medium) — Public Google Sheet of OSINT/CTI online resources curated by AaronCTI.
+- **`abc-search-engine`** (medium) — Surface web search engine covering worldwide results, including various categories to choose from
+- **`abebooks-search-engine`** (medium) — Website that offers book search services, including art and collectibles
+- **`abilogic`** (low) — Business web directory
+- **`aboutus`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`abusech`** (medium) — OSINT tool: Abusech.
+- **`abuseipdb`** (medium) — OSINT tool: Abuseipdb.
+- **`abyznewslinks`** (low) — OSINT tool: ABYZNewsLinks.
+- **`academic-journals`** (low) — OSINT tool: Academic Journals.
+- **`access-to-archival-databases`** (medium) — The National Archives database of archival databases
+- **`advangle-advanced-web-search`** (medium) — Surface web search engine covering regional results with an advanced query builder
+- **`adzuna-job-search-engine-united-kingdom`** (medium) — Website that offers job search services for multiple countries worldwide, including salary statistics
+- **`african-development-bank`** (medium) — African Development Bank Groups statistical search site
+- **`african-journal-online`** (low) — OSINT tool: African Journal Online.
+- **`agence-france-presse-afp`** (low) — OSINT tool: Agence France-Presse (AFP).
+- **`ahmia-list-of-onion-domains`** (medium) — List of onion domains
+- **`ai-search-whisper`** (low) — Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.
+- **`airlines-inform`** (medium) — Aviation-related website that offers a search of the global database of airlines and airports
+- **`alabama-medical-license-search`** (medium) — Alabama Board of Medical Examiners physician license search tool
+- **`alhea-search-engine`** (medium) — Surface web search engine covering worldwide results
+- **`all-in-one`** (low) — OSINT tool: All-in-One.
+- **`all-io-net`** (high) — Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your sea
+- **`alleba-philippines`** (low) — OSINT tool: Alleba (Philippines).
+- **`alleba`** (medium) — OSINT tool: Alleba.
+- **`allgamesearch`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
+- **`alltheinternet`** (low) — OSINT tool: AllTheInternet.
+- **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
+- **`almonit`** (medium) — A decentralized search engine made with ENS and IPFS.
+- **`amazon-cloud-search-engine`** (medium) — OSINT tool: Amazon Cloud Search Engine.
+- **`amazon`** (medium) — Technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence
+- **`american-association-of-port-authorities`** (medium) — Site providing information on all the ports of the Western Hemisphere
+- **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
+- **`android-code-search`** (medium) — A tool that helps developers view the Android source code.
+- **`angieslist-north-america`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses related to homeowners.
+- **`animalsearch`** (low) — Animal search directory aimed at kids
+- **`anon-scraper`** (low) — Search uploaded files to AnonFile using Google
+- **`antso-search-engine-china`** (medium) — Chinese surgace web search engine covering regional results
+- **`aol-search-databse`** (medium) — Search logs of 650,000 AOL users and an analysis of their personality
+- **`aol`** (low) — OSINT tool: Aol.
+- **`ap`** (low) — OSINT tool: AP.
+- **`app-store-and-itunes-search-engine`** (medium) — OSINT tool: App Store and iTunes search engine.
+- **`app-store-custom-search-engine`** (medium) — OSINT tool: App Store Custom Search Engine.
+- **`appropedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`arabo-com`** (medium) — OSINT tool: Arabo.com.
+- **`archiplanet`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
+- **`archive-it-org`** (low) — OSINT tool: Archive-it.org.
+- **`argumentsearch-com`** (medium) — OSINT tool: Argumentsearch.com.
+- **`aristotele-search-engine-italy`** (medium) — Italy based surface web search engine covering regional results
+- **`arkansas-medical-license-search`** (medium) — Arkansas State Medical Boards medical license search tool
+- **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
+- **`asian-development-bank`** (medium) — Asian Development Banks website providing statistics, data, and research publications
+- **`asic-business-name-search`** (medium) — Business-related search engine that searches using company name
+- **`ask-metafilter`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
+- **`ask`** (low) — OSINT tool: Ask.
+- **`athlinks`** (medium) — Search engine aimed at competitive endurance athletes.
+- **`atscan`** (medium) — OSINT tool: ATSCAN.
+- **`australian-bureau-of-statistics`** (medium) — Australias Bureau of Statistics - includes population and census data
+- **`australian-government`** (medium) — Government of Australia portal
+- **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
+- **`avvo-north-america`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of lawyers
+- **`awesome-public-datasets`** (low) — OSINT tool: awesome-public-datasets.
+- **`awesome-recon-tools`** (low) — Compiled list of tools for reconnaissance and footprinting.
+- **`baidu-china`** (low) — OSINT tool: Baidu (China).
+- **`baiduknows-search-engine-china`** (medium) — Question and answer based website offered by Chinese search engine, Baidu
+- **`baike-baidu-chinese-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`ballotpedia-united-states`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on p
+- **`bank-of-canada-unclaimed-balances`** (medium) — Bank of Canada's unclaimed balance search
+- **`bank-of-canada`** (medium) — Offering general information about the Bank of Canada, its actions and services
+- **`base-de-datos-spanish-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`base`** (low) — OSINT tool: Base.
+- **`bazel`** (medium) — Google’s own build tool that has built-in support for building both client and server software, including client applications for both Andro
+- **`bbc-news`** (low) — OSINT tool: BBC News.
+- **`beautiful-news`** (low) — OSINT tool: Beautiful News.
+- **`bellingcat-s-online-investigation-toolkit-2`** (high) — Use when you need a vetted, current directory of OSINT tools by category (geolocation, social media, maps, verification) — returns pointers 
+- **`beso-shopping-search-engine`** (medium) — Online retailer for fashion items, manufactured products and other online shopping items
+- **`bespacific`** (medium) — Blog and searchable database of over 31,000 research updates relating to finance, government, privacy, security, legislation and more
+- **`best-of-the-web-directory`** (low) — Web directory offering listings from various different categories, sub categories, and regions
+- **`better-chrome-web-store-search-engine`** (medium) — OSINT tool: Better Chrome Web Store Search Engine.
+- **`bevigil`** (medium) — OSINT tool: BeVigil.
+- **`bibleserver`** (medium) — Website that offers Christian scripture search services, invluding Bible translations in 21 languages
+- **`biblio`** (medium) — Website offering nearly 100 million used books for sale from around the world
+- **`bibsonomy`** (low) — OSINT tool: Bibsonomy.
+- **`bigsearch`** (low) — Google Chrome and Firefox addon for quick access to dozens of online search tools: general search engines, video hosts, programming forums, 
+- **`bing-advanced-search-options`** (medium) — Website showing Bings reference list of advanced search engine operators
+- **`bing-news`** (low) — OSINT tool: Bing News.
+- **`bing-vs-google`** (low) — OSINT tool: Bing vs. Google.
+- **`binparcel-com`** (medium) — OSINT tool: Binparcel.com.
+- **`bizjournals-business-news-search`** (medium) — Business-related news from over 4 million news articles
+- **`biznar`** (medium) — OSINT tool: Biznar.
+- **`bizrate-shopping-search-engine`** (medium) — E-commere website for fashion items, manufactured products and other online shopping items
+- **`blinde-kuh-childrens-search-engine-germany`** (low) — German search engine for kids
+- **`blogpond-blogging`** (medium) — Australian website that provides a search engine that searches blogs; includes the top 100 blogs and articles
+- **`blogs-search-engine`** (low) — OSINT tool: Blogs Search Engine.
+- **`blogsearchengine`** (low) — OSINT tool: BlogSearchEngine.
+- **`blue-search`** (medium) — A charitable search engine which uses its revenues to restore our oceans.
+- **`blurtit`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries
+- **`bookfinder-search-engine`** (medium) — Website that offers book search services by book title, author, or ISBN
+- **`bookmarks`** (medium) — OSINT tool: Bookmarks.
+- **`boolean-builder-thebalazs`** (low) — Google Sheet to tool for constructing Google X-Ray search queries.
+- **`booleanstringbank`** (low) — over 430+ strings and 3553+ keywords
+- **`boolify-boolean-search-teaching-tool-for-kids`** (low) — Kid-friendly website that teaches Boolean logic search technqiues
+- **`bright-local-search-result-checker`** (low) — shows what #Google search results look like for a particular query around the world (by exact address)
+- **`brightcloud`** (medium) — OSINT tool: BrightCloud.
+- **`british-and-irish-legal-information-institute`** (medium) — British and Irish Legal Information Institute providing access to freely available public legal information
+- **`btdig`** (medium) — OSINT tool: btdig.
+- **`buckets-grayhatwarfare-com`** (low) — Amazon Public Buckets Search
+- **`bugbountyhunting`** (low) — Bug bounty hunting search engine
+- **`bureau-of-justice-statistics`** (medium) — Department of Justice, Bureau of Justice Statistics website providing crime and justice data online
+- **`cachedviews-com`** (medium) — OSINT tool: CachedViews.com.
+- **`campaign-finance-reports-and-data`** (medium) — US Federal Election Commissions site disclosing campaign finance reports and data
+- **`canadian-charity-search`** (medium) — Canada Revenue Agency's searchable list of registered Canadian charities
+- **`canadian-department-of-finance`** (medium) — Canada's Department of Finance site with searchable database
+- **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Legal-related search engine for locating legal representatives
+- **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`careerone-australia`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`carrier-route`** (medium) — Lookup tool that provides a list of all carrier routes within a specified radius from a central location
+- **`carrot2-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`catawiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`ceek-meta-search-japan`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`cellufun`** (low) — Kids gaming website; allows users to create an account and share personal messages
+- **`chatbottle`** (low) — A search engine to find the weirdest and most highly specialised chatbots for all occasions. There are over 150,000 bots in the database. Of
+- **`chegg-search-engine`** (medium) — Website that offers high school, college, and university book search services, including homework help, online tutoring, and application adv
+- **`chrome-extension-archive-search-engine`** (medium) — OSINT tool: Chrome Extension Archive Search Engine.
+- **`chromium-code-search`** (medium) — Code search tool
+- **`cisco-talos-intelligence`** (medium) — OSINT tool: Cisco Talos Intelligence.
+- **`citeseerx`** (medium) — OSINT tool: CiteSeerX.
+- **`citizen-audit`** (medium) — Search utility for Form 990 financial disclosure documents for nonprofit organizations in the US
+- **`citizendium`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`city-of-brampton`** (medium) — City of Brampton site, includes payment area for traffic tickets and other Provincial Offences Act violations
+- **`citysearch`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`clatscope-info-tool`** (high) — Use when you have any of a name/email/phone/IP/domain and want a one-stop recon sweep — a Python CLI that runs 70+ lookups (breach, WHOIS, D
+- **`clear-regulatory-directory-unitd-states`** (medium) — Council on Licensure, Enforcement and Regulations directory of regulatory boards and colleges
+- **`clearing-and-depository-services`** (medium) — Non-government site maintained by the Canadian Depository for Securities Limited
+- **`clicklaw`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
+- **`cloud-bucket-search-engine`** (medium) — OSINT tool: Cloud Bucket Search Engine.
+- **`cloud-file-search-engine`** (low) — search music, books, video, programs archives in 59 file-sharing sites (#meganz, #dropark, #turbotit etc)
+- **`cloudflare-radar`** (medium) — OSINT tool: Cloudflare Radar.
+- **`cloudscraper`** (medium) — Tool to enumerate targets in search of cloud resources.
+- **`cnn`** (low) — OSINT tool: CNN.
+- **`coalition-against-insurance-fraud`** (medium) — The Coalition Against Insurance Fraud website providing numerous resource links
+- **`colorado-licensed-professional-lookup`** (medium) — Colorados licensed professional or business search tool
+- **`colorado-unclaimed-property-search`** (medium) — Colorados unclaimed property search tool
+- **`comicvine`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
+- **`command-e`** (medium) — Universal search and productivity app
+- **`conservapedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`contenko-search-engine-united-kingdom`** (medium) — UK based surface web search engine covering regional results
+- **`context-menu-search`** (medium) — Chrome extension allowing users to search for selected text in different search engines using the right click menu.
+- **`control-validation-compass`** (low) — Database of 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques
+- **`copyright-search`** (medium) — Search copyright infringement complaints against websites
+- **`core`** (low) — OSINT tool: Core.
+- **`country-of-grey-canada`** (medium) — County of Grey site offering Provincial Offences Act resources
+- **`credit-guru`** (medium) — Listing of credit agencies around the world
+- **`criminology-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
+- **`crossref`** (medium) — OSINT tool: Crossref.
+- **`crown-prosecution-service-uk`** (medium) — UK's Crown Prosecution Service portal with resources for victims and witnesses
+- **`crt-certificate-search`** (medium) — OSINT tool: CRT Certificate Search.
+- **`cse-utopia`** (medium) — Custom search engine
+- **`cyb-detective-osint-stuff-tool-collection`** (high) — Use when you have a selector class (username, email, phone, image, domain…) and want to discover niche tools for it — returns pointers to 10
+- **`cyber-alert`** (low) — OSINT tool: Cyber Alert.
+- **`cyber-criminals-most-wanted`** (medium) — Cyber crime awareness, prevention and internet safety information portal
+- **`cybercemetery`** (medium) — Archive of government websites that have shut down
+- **`cybersec-documents-search-engine`** (low) — OSINT tool: Cybersec Documents Search Engine.
+- **`cybersecurity-osint-paulveillard`** (low) — Curated collection of OSINT tools, frameworks, and resources.
+- **`cybersleuth-kids-search-engine-north-america`** (low) — Search engine intended for kids including printables, images, and academic resources
+- **`dadgogo`** (medium) — Metasearch engine including a range of popular websites on a single platform; includes Google, Amazon, Ebay, YouTube, Pexels, and more.
+- **`dailyearth`** (low) — OSINT tool: DailyEarth.
+- **`dakkadakka-wargame-player-finder`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`datasploit-fogsec-mirror`** (medium) — OSINT framework to perform reconnaissance on companies, people, emails, domains, and phone numbers.
+- **`daum-search-engine-south-korea`** (medium) — South Korean web search engine covering regional results
+- **`daum-south-korea`** (low) — OSINT tool: Daum (South Korea).
+- **`ddgr`** (low) — Search in DuckDuckGo via the command line: - export the results to JSON; - bangs support - location setting
+- **`ddl-search`** (low) — search engine for Rapidshare, Megaupload, Filefactory, Depositfile, Fileserve and a lot of other file sharing sites
+- **`debate-cards`** (medium) — OSINT tool: Debate.cards.
+- **`debian-code-search`** (medium) — Code search tool
+- **`debunking-false-stories-archives`** (low) — OSINT tool: Debunking False Stories Archives.
+- **`defcad`** (medium) — Search engine for 3D printable models
+- **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
+- **`department-of-energy-patents`** (medium) — US Department of Energys patent search
+- **`deutscheseiten-search-engine-germany`** (medium) — German surface web search engine covering regional results
+- **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly
+- **`digle`** (low) — OSINT tool: Digle.
+- **`direct-download-almost-anything`** (low) — OSINT tool: Direct Download Almost Anything.
+- **`dirio-search-engine-bulgaria`** (medium) — Bulgarian surface web search engine covering regional results
+- **`dirjournal`** (low) — Web directory, offering local searches by categories
+- **`disconnect-search`** (low) — OSINT tool: Disconnect Search.
+- **`discovery-family-channel`** (low) — Kid-friendly website including television programs, educational programs
+- **`disneybooks`** (low) — Disney books search aimed at kids
+- **`disneysearch`** (low) — Disney's search feature aimed at kids
+- **`ditto-fashion-search-engine`** (medium) — E-commere website for eyewear, including virtual try-on
+- **`document-search`** (low) — OSINT tool: Document Search.
+- **`documents-search-engine`** (low) — OSINT tool: Documents Search Engine.
+- **`dog-bites-search-engine`** (medium) — OSINT tool: Dog Bites Search Engine.
+- **`dogpile-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`dorkeye`** (low) — OSINT tool: DorkEye.
+- **`dorkgenius`** (low) — OSINT tool: DorkGenius.
+- **`dorkgpt`** (low) — OSINT tool: DorkGPT.
+- **`dpa-international`** (low) — OSINT tool: DPA International.
+- **`drivesearch-kwebpia-net`** (low) — OSINT tool: Drivesearch.kwebpia.net.
+- **`duckduckgo-bangs`** (low) — extension that add DuckDuckGo bang buttons to search results and search links in the context menu
+- **`duckduckgo-com`** (high) — Use when you have a `name`, `username` or any string and want unpersonalised search results and !bang shortcuts to pivot fast — returns `soc
+- **`ecosia-search-engine`** (medium) — Privacy-friendly search engine that donates 80% of their profit to nonprofit organizations to help plant trees; does not sell data to third 
+- **`ecosia`** (medium) — OSINT tool: Ecosia.
+- **`ecured-cuba`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`eddy-the-eco-dog-kidswebtv`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, entertainment for children
+- **`egerin-search-engine-kurdish`** (medium) — Kurdish surface web search engine covering regional results
+- **`ekoru`** (medium) — A charitable search engine that is powered by run-of-river hydro-electricity; uses funds to keep our oceans clean.
+- **`elocalfinder-hybrid-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`elsevier`** (low) — OSINT tool: Elsevier.
+- **`encyclopedia-of-math`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on m
+- **`engine-presearch-org`** (medium) — OSINT tool: Engine.presearch.org.
+- **`eniro-sweden`** (low) — OSINT tool: Eniro (Sweden).
+- **`entireweb-text-based-search-engine`** (medium) — Surface web search engine covering worldwide results
+- **`etools`** (low) — OSINT tool: Etools.
+- **`euronews`** (low) — OSINT tool: Euronews.
+- **`europa-press-releases`** (medium) — Europe press release database - includes search and notification features
+- **`european-commission-home-affairs`** (medium) — European Commissions Home Affairs Organised Crime and Human Trafficking Prevention site
+- **`european-search-engines-directories-and-lists`** (medium) — List of European search engines, directories, and lists
+- **`european-trademark-search`** (medium) — Search tool for trademarks filed in Europe
+- **`eventful`** (medium) — Movie theater and event search engine
+- **`exalead-search-engine`** (medium) — One of the top ten surface web search engines covering worldwide results
+- **`excite-search-engine`** (medium) — Surface web search engine covering worldwide results including news and information on topics such as tech, finance, sports, and entertainme
+- **`excite`** (medium) — OSINT tool: Excite.
+- **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.
+- **`fact-checking`** (low) — OSINT tool: Fact-Checking.
+- **`fact-monster`** (low) — Kid friendly search engine.
+- **`faganfinder`** (low) — OSINT tool: FaganFinder.
+- **`falla`** (medium) — A search engine command line scraper for more than 15 search engines, including Google, Duckduckgo, Bing, Ask, and more.
+- **`familypedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on f
+- **`familysearch-research-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on f
+- **`fatfingers`** (medium) — eBay search using misspelled words and typos
+- **`fbi-tools`** (medium) — Curated collection of OSINT tools for gathering information and digital forensics.
+- **`federal-register`** (medium) — Daily journal of the United States government - includes information on regulations, codes and policy
+- **`fefoo-mega-search`** (medium) — Mega-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`felo`** (medium) — Free multilingual AI Search and Answer engine
+- **`filechef-com`** (low) — OSINT tool: Filechef.com.
+- **`filechef`** (low) — tool for searching different type of files (videos, application, documents, audio, images)
+- **`filephish`** (low) — OSINT tool: FilePhish.
+- **`filepursuit-com`** (low) — OSINT tool: Filepursuit.com.
+- **`filesearch-ru`** (medium) — File search engine; includes music, video, and video search.
+- **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
+- **`filetype-search-tool`** (low) — OSINT tool: Filetype search tool.
+- **`filmaffinity-canada`** (medium) — Movie listings website
+- **`finaid-mail-drop-search`** (medium) — Database search by address, city name, state and zip code
+- **`find-similar-sites`** (medium) — Search engine allowing users to enter a domain and find similar sites.
+- **`find-sort-codes`** (medium) — UK bank sort code search tool
+- **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
+- **`findhow`** (medium) — The how-to directory
+- **`findlaw`** (medium) — Legal-related search engine for locating legal representatives
+- **`firebounty`** (low) — Bug bounty search engine
+- **`fixya`** (medium) — Website that allows users to search for products/items that need fixing and offers information on how to fix the product being searched
+- **`flippity`** (medium) — OSINT tool: Flippity.
+- **`flixster`** (medium) — Movie listings website
+- **`fluther`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries
+- **`fofa`** (medium) — OSINT tool: FOFA.
+- **`fonetask`** (low) — OSINT tool: FONETASK.
+- **`foreign-agents-registration-act`** (medium) — Registered Foreign Agents quick search
+- **`foundation-finder`** (medium) — Foundation Centers online foundation directory
+- **`france24`** (low) — OSINT tool: France24.
+- **`fravia-soxoj`** (medium) — "The Art of Searching" - advanced search engine techniques and resources.
+- **`free-economic-data`** (medium) — Database of freely available economic, demographic and financial data
+- **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
+- **`freewareweb`** (medium) — FTP file search engine
+- **`freight-world`** (medium) — Index linking to various port and harbour sites
+- **`fresheye-search-japan`** (medium) — Japanese web search engine covering regional results
+- **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports
+- **`fullhunt`** (medium) — OSINT tool: FullHunt.
+- **`galaxy-search-directory`** (medium) — Surface web search directory covering worldwide results
+- **`game-convention-central-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`gametracker-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`gerdoo-iran`** (low) — OSINT tool: Gerdoo (Iran).
+- **`gexsi`** (medium) — Search engine that uses its revenues to support sustainable developmental goals.
+- **`gibiru`** (low) — OSINT tool: Gibiru.
+- **`gifcities-org`** (low) — GIF Search Engine from archive.org
+- **`gigablast`** (medium) — OSINT tool: Gigablast.
+- **`gijn-online-research-tools`** (medium) — Global Investigative Journalism Network's curated research tools page.
+- **`girlsaskguys`** (medium) — Search engine that searches for answers to questions on the subject of relationships between males and females
+- **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu
+- **`github-recon`** (medium) — Methodology and reference for reconnaissance and dorking against GitHub to surface leaked data.
+- **`github-with-awesome-list-search-engine`** (medium) — OSINT tool: Github with Awesome-List Search Engine.
+- **`givewater`** (medium) — Charitable search engine that supports a clean water initiative.
+- **`globalleaks`** (medium) — Open source software for enabling secure and anonymous whistleblowing
+- **`globalspec-engineer-search-engine`** (low) — OSINT tool: GlobalSpec Engineer Search Engine.
+- **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
+- **`goo-japan`** (low) — OSINT tool: Goo (Japan).
+- **`goo`** (medium) — OSINT tool: Goo.
+- **`goodgopher-com`** (low) — OSINT tool: GoodGopher.com.
+- **`goodhousekeeping`** (medium) — Housekeeping product reviews website
+- **`goodsearch`** (low) — OSINT tool: Goodsearch.
+- **`goofile`** (medium) — File search engine
+- **`goofram`** (low) — OSINT tool: Goofram.
+- **`google-advanced-search-operators-guide`** (low) — Reference document listing Google advanced search operators.
+- **`google-adwords`** (low) — OSINT tool: Google Adwords.
+- **`google-and-bing`** (medium) — OSINT tool: Google & Bing.
+- **`google-autocomplete-scraper`** (low) — One of the best ways to learn more about a person, company, or subject is to see what people are more likely to type in a search engine alon
+- **`google-blog-directory`** (medium) — Website that provides a search engine that searches blogs; search by topoc, language, region, or type
+- **`google-books-ngram-viewer`** (low) — OSINT tool: Google Books Ngram Viewer.
+- **`google-code`** (medium) — Google code search engine
+- **`google-com-76`** (high) — OSINT tool: google.com.
+- **`google-com-77`** (high) — Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and docu
+- **`google-com-78`** (high) — OSINT tool: google.com.
+- **`google-com-79`** (high) — OSINT tool: google.com.
+- **`google-com-80`** (high) — OSINT tool: google.com.
+- **`google-com-81`** (high) — Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined pa
+- **`google-com-82`** (high) — Use when you have a `name` or topic and want to find published datasets that may list people — Google Dataset Search indexes datasets across
+- **`google-com-83`** (high) — OSINT tool: google.com.
+- **`google-com-84`** (high) — Use when you have a `name` and want to find photos of a person with precise filters — Google Advanced Image Search narrows by size, type, co
+- **`google-com-85`** (high) — Use when you have a `name` or `username` and want to surface video footage of or uploaded by a subject — returns `social-profile` (channels)
+- **`google-com-hack-attack`** (medium) — OSINT tool: \*.Google.com Hack Attack.
+- **`google-cse-instances-search-engine`** (medium) — OSINT tool: Google CSE instances Search Engine.
+- **`google-custom-search`** (medium) — OSINT tool: Google Custom Search.
+- **`google-docs-cse`** (low) — OSINT tool: Google Docs CSE.
+- **`google-domain-hacker`** (medium) — OSINT tool: Google Domain Hacker.
+- **`google-dork-cheatsheet`** (medium) — OSINT tool: Google Dork Cheatsheet.
+- **`google-drive-folder-search-engine`** (medium) — OSINT tool: Google Drive Folder Search Engine.
+- **`google-email-extractor`** (low) — Extract emails from Google Search Results
+- **`google-ftp-search`** (medium) — Google's FTP search feature
+- **`google-minus-google-search-engine`** (medium) — Search with Google without getting results from other Google services such as Blogger and Youtube
+- **`google-news-print-archive`** (low) — OSINT tool: Google News Print Archive.
+- **`google-news`** (low) — OSINT tool: Google News.
+- **`google-safesearch-filter`** (low) — Google safesearch settings
+- **`google-search-scraper`** (low) — Crawls Google Search result pages (SERPs) and extracts a list of organic results, ads, related queries and more. It supports selection of cu
+- **`google-search`** (low) — OSINT tool: Google Search.
+- **`google-shopping-search-engine`** (medium) — Search for items on sale across the Web on Google's platform
+- **`google-to-search-profiles-on-stack-overflow`** (medium) — OSINT tool: Google to search profiles on Stack Overflow.
+- **`google-unlocked`** (low) — browser extension uncensor google search results
+- **`google-word-sniper`** (low) — Simple tool to make easier Google queries with the advanced search operator AROUND().
+- **`googledrive-search-engine`** (low) — OSINT tool: GoogleDrive Search Engine.
+- **`googler`** (low) — command line google search tool
+- **`gooru-search-engine-poland`** (medium) — Poland based web search engine covering regional results
+- **`goosh-org`** (low) — online google search command line tool
+- **`gopit-search-engine-home`** (medium) — OSINT tool: GoPit Search Engine - Home.
+- **`government-attic`** (medium) — Site providing electronic access to federal government documents obtained under the Freedom of Information Act
+- **`government-grants`** (medium) — Searchable database of available US government grants
+- **`government-science-portal`** (medium) — Gateway or portal to scientific government information, including research and development results
+- **`graball-search-engine`** (medium) — Surface web search engine covering worldwide results
+- **`grayhatwarfare`** (medium) — OSINT tool: GrayhatWarfare.
+- **`grey-guide`** (low) — OSINT tool: Grey Guide.
+- **`grey-literature-list-of-gateways`** (low) — OSINT tool: Grey Literature – List of Gateways.
+- **`grey-literature-strategies`** (low) — OSINT tool: Grey Literature Strategies.
+- **`greynet-international`** (low) — OSINT tool: GreyNet International.
+- **`greynoise-io`** (low) — OSINT tool: Greynoise.io.
+- **`gsearch`** (medium) — Google search in one domain - search for a site or specific domain
+- **`hacker-news-algolia`** (low) — Hacker News search engine with filters. Useful for finding all mentions of a product or person.
+- **`hacking-the-cloud`** (low) — Encyclopedia of the attacks/tactics/techniques that offensive security professionals can use on cloud exploitation (#AWS, #Azure, #GoogleClo
+- **`harmari-unified-listings-search`** (medium) — OSINT tool: Harmari (Unified Listings Search).
+- **`hawaii-professional-and-vocational-license-search`** (medium) — State of Hawaiis professional and vocational licensing search utility
+- **`headlinespot`** (low) — OSINT tool: HeadlineSpot.
+- **`heystack`** (low) — Service for finding public files in Google Docs, Google Sheets and Google Slides. It's possible to filter results by topic group and creatio
+- **`highwire-free-online-full-text-articles`** (low) — OSINT tool: HighWire: Free Online Full-text Articles.
+- **`hinduwebsite`** (medium) — Website that offers Hindu scripture search services
+- **`his-janes-360`** (medium) — Global defence and security intelligence and analysis site with search feature
+- **`home-co-uk`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives across England, Wales, Sco
+- **`homepage-search-engine`** (medium) — OSINT tool: Homepage Search Engine.
+- **`hong-kong-securities-and-futures-commission`** (medium) — Hong Kong Securities & Futures Commission website
+- **`hotbot-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`hotpads-real-estate-search-engine`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`https-vulmon-com`** (medium) — OSINT tool: https://vulmon.com/.
+- **`hunter-search-engine`** (medium) — OSINT tool: Hunter Search Engine.
+- **`i-intelligence-osint-handbook-2025`** (medium) — The widely-used i-intelligence OSINT Handbook of tools and resources.
+- **`i-search-from`** (low) — allows you to customize the country, language, device, city when searching on Google
+- **`ialeia`** (medium) — International Association of Law Enforcement Intelligence Analysts
+- **`ibj-criminal-defense-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
+- **`iconfinder-com`** (low) — Icons Search Engine
+- **`impersonal-me`** (medium) — Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns local
+- **`incruit-job-search-engine-south-korea`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`indeed-job-search-engine-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`indeed-job-search-engine-worldwide`** (medium) — Website that offers job search services for multiple countries worldwide
+- **`info-com-meta-search-engine-united-kingdom`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`info-com`** (high) — Use when you have a `name` or other keyword and want an alternate general web search engine to surface pages a mainstream engine ranks diffe
+- **`infotrail`** (medium) — Advanced Cyber Threat Intelligence & OSINT Platform
+- **`insecac`** (medium) — Worlds biggest online cameras directory
+- **`inside`** (low) — Human edited web directory, formerly known as Mahalo
+- **`intelligence-x`** (medium) — OSINT tool: Intelligence X.
+- **`inteltechniques-tools-search-engines-suite`** (high) — Use when you have almost any selector (name, email, username, phone, image, domain, location) and want pre-built query interfaces that fan i
+- **`international-association-of-chiefs-of-police`** (medium) — Site identifying the issues in law enforcement and providing information and research to the public
+- **`international-standard-classification-of-occupations`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`international-trademark-search`** (medium) — International trademark search tool - searchable by country
+- **`internet-archive`** (medium) — OSINT tool: Internet Archive.
+- **`internet-movie-database`** (medium) — Online database for movies and celebrities; includes ratings and reviews
+- **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
+- **`ipfs-search-com`** (medium) — OSINT tool: Ipfs-search.com.
+- **`ipse-io`** (medium) — OSINT tool: Ipse.io.
+- **`irbis-by-espy`** (medium) — Powerful lookup and reverse search tool
+- **`isearchfrom-com`** (high) — Use when you have a `name`/query and want to see Google results as they'd appear from a specific country, language, or device — returns geo/
+- **`islegitsite`** (medium) — OSINT tool: Islegitsite.
+- **`issuu`** (medium) — Digital publishing platform of over 15 million documents available for free downloading
+- **`itar-tass`** (low) — OSINT tool: Itar-Tass.
+- **`itlaw`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
+- **`ivmachiavelli-osint-team-links`** (medium) — GitHub-hosted curated list of OSINT links/tools.
+- **`ivyjoy-list-of-kids-related-websites`** (low) — Search engine resources for kids
+- **`ixigo`** (medium) — India travel information site
+- **`jayde-b2b-business-search`** (medium) — Business-related search engine that searches using company name and includes various categories of topics
+- **`jersey-financial-services-commission`** (medium) — Website for the Jersey Financial Services Commission with registered company search
+- **`jewish-virtual-library-online`** (medium) — Website that offers Jewish scripture search services
+- **`jobactive-job-search-engine-australia`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`jobrapido-job-search-engine-worldwide`** (medium) — Website that offers job search services for multiple countries worldwide
+- **`jobs-united-kingdom`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`jobsdb-asia`** (medium) — Website that offers job search services for multiple countries worldwide
+- **`jora-job-search-engine-new-zealand`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`journal-guide`** (low) — OSINT tool: Journal Guide.
+- **`journal-seek`** (low) — OSINT tool: Journal Seek.
+- **`journalist-s-toolbox-investigative`** (medium) — SPJ-associated curated set of investigative research tools for journalists.
+- **`jstor`** (low) — OSINT tool: JSTOR.
+- **`jubii-search-engine-denmark`** (medium) — Denmark based web search engine covering regional results
+- **`jurispro-expert-witness-listings-united-states`** (medium) — People-related search of a directory of expert witnesses, searchable by category, subject matter and keywords
+- **`justia-blawgsearch`** (medium) — Website that provides a search engine that searches blogs related to the law
+- **`justice-directory`** (medium) — Exhaustive list of law enforcement agency websites
+- **`kagi-search`** (low) — OSINT tool: Kagi Search.
+- **`kartoo-visual-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`kelkoo-shopping-search-engine-europe`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
+- **`keys-openpgp-org`** (medium) — OSINT tool: keys.openpgp.org.
+- **`keyword-discovery`** (low) — OSINT tool: Keyword Discovery.
+- **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
+- **`keywordpeopleuse`** (low) — Type in a keyword and see what questions mentioning it are being asked on Quora and Reddit. The service is also able to analyse Google Autoc
+- **`keywordtool-io`** (low) — keyword matching for Google, YouTube, Amazon, Ebay, Bing, Instagram, Twitter
+- **`keywordtool`** (low) — OSINT tool: KeywordTool.
+- **`kickasstorrents`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
+- **`kiddle`** (low) — Kid-friendly search engine.
+- **`kidoz-mobile-network-for-kids`** (low) — Content discovery made for kids to ensure safe browsing
+- **`kidrex`** (low) — Kid-friendly search engine.
+- **`kids-search`** (low) — Kid-friendly search engine.
+- **`kidshealth`** (low) — Kid-friendly website including information on health; sections for parents, teenagers, and educators are also available
+- **`kidsites-com`** (low) — Listing of youth-related websites
+- **`kidsnet-search-engine-australia`** (low) — Kid friendly search engine, including a dictionary, thesauras, and encylopedia
+- **`kidtopia`** (low) — Kid-friendly search engine.
+- **`kidzsearch`** (low) — Kid-friendly search engine
+- **`kiwireviews-new-zealand`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`klug-suchen`** (medium) — Website made for former Soviet soldiers, officers and their families.
+- **`komo`** (medium) — AI powered search engine
+- **`krugle`** (medium) — Enterprise code search tool
+- **`kvasir-search-engine-norway`** (medium) — Norway-based web search engine covering regional results
+- **`laiesken-search-engine-spain`** (medium) — Spanish web search engine covering regional results
+- **`lapozz-search-engine-hungary`** (medium) — Hungarian surface web search engine covering regional results
+- **`law-enforcement-resource-portal`** (medium) — Resources for law enforcement officers, agencies and associations around the world
+- **`law-net-united-states`** (medium) — Legal-related search engine for locating legal representives, legal resources, action groups, bar associations, publications, legal services
+- **`lawforkids`** (low) — Law-related search engine for kids
+- **`lawyerratingz-north-america`** (medium) — Website related to lawyer ratings
+- **`lawyers-com`** (medium) — Legal-related search engine for locating legal representatives
+- **`leaklooker`** (medium) — Tool to find open databases/services.
+- **`leet`** (medium) — Open directory search engine.
+- **`legistorm`** (medium) — Site providing information about employees of Congress, including salary and financial information
+- **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — OSINT tool: Leibniz Information Centre For Science and Technology University Library.
+- **`leit-search-engine-iceland`** (medium) — Iceland based surface web search engine covering regional results
+- **`lendx`** (low) — OSINT tool: LENDX.
+- **`lexcraft-cornell-university-legal-wiki-canada`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
+- **`libgen-rs`** (medium) — OSINT tool: Libgen.rs.
+- **`libraries-io`** (medium) — Open search tool for source packages and frameworks.
+- **`library-genesis`** (low) — "search engine for articles and books, which allows free access to content that is otherwise paywalled or not digitized elsewhere" (c)
+- **`lifewire-com`** (high) — OSINT tool: lifewire.com.
+- **`lilo`** (medium) — Charitable search engine that supports environmental initiatives each time a user searches.
+- **`limetorrents`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
+- **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
+- **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.
+- **`live-traffic-cameras-in-europe`** (medium) — Real-time monitoring of Europe’s 5,481 live traffic cameras
+- **`ljseek-livejournal-blog-search`** (medium) — Website that provides a search engine that searches blogs on LiveJournal
+- **`looksmart-search-engine-united-kingdom`** (medium) — Surface web search engine covering worldwide results
+- **`loopnet`** (medium) — Commercial real estate listing and research site
+- **`lotrowikia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
+- **`lycos-search-engine-uk`** (medium) — Surface web search engine
+- **`lycos`** (low) — OSINT tool: Lycos.
+- **`mac-address-lookup`** (medium) — OSINT tool: MAC Address Lookup.
+- **`mac-address-search-tool`** (low) — search by full Mac adress, part of Mac adress (prefix), vendor name or brand name
+- **`magportal`** (low) — OSINT tool: MagPortal.
+- **`mailing-list-archives-search-engine`** (low) — OSINT tool: Mailing List Archives Search Engine.
+- **`makeupalley`** (medium) — Website related to makeup, skincare, and other beauty related reviews
+- **`maktoob-yahoo-search-engine-arabic`** (medium) — Search engine for the Middle East and North Africa region, acquired by Yahoo!
+- **`maldevel-osint`** (low) — Tools, scripts and tips useful during OSINT investigations and reconnaissance.
+- **`malfrat-s-osint-map`** (high) — Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branche
+- **`malwarebazaar`** (medium) — OSINT tool: MalwareBazaar.
+- **`mamma-meta-search-for-business-reviews`** (medium) — Meta-search engine for business reviews yielding results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`mamont-s-open-ftp-index`** (low) — OSINT tool: Mamont's open FTP Index.
+- **`mamont`** (medium) — OSINT tool: Mamont.
+- **`meganzsearch-com`** (medium) — OSINT tool: Meganzsearch.com.
+- **`memegine`** (low) — A search engine to find memes. Helps you find rare and obscure memes when Google fails.
+- **`memory-alpha-star-trek-universe-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on S
+- **`mereku-com`** (low) — OSINT tool: Mereku.com.
+- **`merobase-code-search`** (medium) — A code search platform for Java software components.
+- **`metabear-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`metabot-ru-meta-search-engine-russia`** (medium) — Russian meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`metacritic`** (medium) — Website related to movie and TV ratings
+- **`metaeureka-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`metager-meta-search-engine`** (medium) — Meta-search engine yielding results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`metager-privacy-protected-search`** (medium) — OSINT tool: MetaGer: Privacy Protected Search.
+- **`metagoofil`** (medium) — OSINT tool: metagoofil.
+- **`metaosint-intelscott`** (high) — Use when you have a selector type (name, username, email, phone, image) and need to pick the right tool — a searchable, sortable, data-ranke
+- **`metaphor-systems`** (low) — A search engine with a new and unusual search method. This AI "trained to predict the next *link* (similar to the way GPT-3 predicts the nex
+- **`military-occupation-codes-canada`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`milled`** (medium) — OSINT tool: Milled.
+- **`million-short`** (medium) — OSINT tool: Million Short.
+- **`mindmap-search-engine`** (medium) — OSINT tool: Mindmap Search Engine.
+- **`mojeek-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results
+- **`monster-crawler-search`** (medium) — OSINT tool: Monster Crawler Search.
+- **`monstercrawler-com`** (high) — Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns pag
+- **`monstercrawler-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`moody-s`** (medium) — Website related to credit ratings
+- **`moreofit`** (medium) — Search engine for locating similar websites
+- **`mouthshut-north-america`** (medium) — Website related to product reviews
+- **`my-osint-training-tools`** (high) — Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns p
+- **`myallsearch-com`** (medium) — Use when you have a `name` and want a privacy-oriented web search that differs from Google — returns web results (and thus `social-profile`/
+- **`myallsearch`** (low) — OSINT tool: Myallsearch.
+- **`mybuilder-north-america`** (medium) — Website related to construction ratings
+- **`mymunka-safe-search-engine-for-kids`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly, blocking 98% of inappropriate content
+- **`mysimon-shopping-search-engine`** (medium) — A comparison shopping website offering recommendations, buying advice, and price comparisons
+- **`mywoodle-com`** (medium) — OSINT tool: Mywoodle.com.
+- **`najdi-slovenia`** (low) — OSINT tool: Najdi (Slovenia).
+- **`najdsi-slovenia`** (medium) — OSINT tool: Najdsi (Slovenia).
+- **`napalm`** (medium) — File search engine
+- **`nasa-kids-club`** (low) — Space-themed entertainment and information about NASA for kids
+- **`nate-search-engine-south-korea`** (medium) — South Korean web search engine covering regional results
+- **`national-criminal-justice-service`** (medium) — National Criminal Justice Reference Service site providing research, publications and statistics
+- **`national-geographic-kids`** (low) — National Geographic's website intended for kids
+- **`naver-com`** (high) — Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q
+- **`naver-south-korea`** (low) — OSINT tool: Naver (South Korea).
+- **`nerdydata-source-code-search-engine`** (medium) — Web search engine for source code, including search for keywords, HTML, JavaScript, CSS and plaintext of webpages
+- **`network-entity-reputation-database-nerd`** (low) — database of malicious entities on the Internet) It's possible to search by IP, domain, subdomain, and other parameters, including even the c
+- **`neuskool`** (medium) — Personal start page featuring search services on one page, including Google, YouTube, Wikipedia, Twitter, and more.
+- **`new-zealand-law-society`** (medium) — Legal-related search engine for locating legal representives
+- **`news-and-moods-search-australia`** (medium) — Search engine that provides keyword stats and trends along with results
+- **`news-explorer-bluemix`** (low) — OSINT tool: News Explorer BlueMix.
+- **`news-map`** (low) — OSINT tool: News Map.
+- **`news-now`** (low) — OSINT tool: News Now.
+- **`news-search-engine`** (low) — OSINT tool: News Search Engine.
+- **`news-search`** (low) — OSINT tool: News Search.
+- **`newseum-today-front-pages`** (low) — OSINT tool: Newseum - Today Front Pages.
+- **`newsinshorts`** (low) — OSINT tool: Newsinshorts.
+- **`newslink`** (low) — OSINT tool: Newslink.
+- **`newslookup-com`** (low) — OSINT tool: Newslookup.com.
+- **`newslookup`** (low) — OSINT tool: NewsLookup.
+- **`newsnow-canada`** (medium) — Comprehensive news aggregator
+- **`newsnow`** (low) — OSINT tool: Newsnow.
+- **`newspaper-archive`** (low) — OSINT tool: Newspaper Archive.
+- **`newspaperindex`** (low) — OSINT tool: Newspaperindex.
+- **`newspapers-com`** (low) — OSINT tool: Newspapers.com.
+- **`newswhip`** (low) — OSINT tool: NewsWhip.
+- **`niche`** (medium) — Website related to college facility rankings
+- **`nielsen-s-north-america`** (medium) — Data analytics company that provides insights on consumers and markets worldwide
+- **`nmhdds-open-directory`** (medium) — Open directory search database.
+- **`nod`** (low) — OSINT tool: Nod.
+- **`notey`** (low) — OSINT tool: Notey.
+- **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.
+- **`numbeo`** (medium) — Worldwide database of user contributed data on living conditions - including living costs, housing indicators, health care, traffic, crime a
+- **`oa-mg`** (low) — OSINT tool: OA.mg.
+- **`occrp-org`** (medium) — Organized Crime and Corruption Reporting Project compiled public data sources, search by Continent, Country and data type
+- **`oceanhero`** (medium) — Charitable search engine that supports our oceans.
+- **`ocg`** (medium) — Charitable search engine that supports our oceans.
+- **`octosearch-dootech-com`** (medium) — OSINT tool: Octosearch.dootech.com.
+- **`od-search-tool`** (medium) — Open directory search tool.
+- **`odbparser`** (medium) — ODBParser is a tool to search for PII being exposed in open databases.
+- **`odin`** (medium) — OSINT tool: ODIN.
+- **`office-of-government-ethics`** (medium) — US Office of Government Ethics site
+- **`oh-shint-osint-web-resources`** (medium) — GitBook of OSINT web resources and methodology.
+- **`omail`** (low) — An online tool that extracts and validates emails from Google and Bing search results (by keyword or domain). Partly free (200 extracts per 
+- **`ominis-osint`** (medium) — Python tool performing online information gathering via search engine queries.
+- **`one-liner-osint`** (low) — Collection of powerful one-liner commands for OSINT gathering.
+- **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
+- **`onet-pl-poland`** (low) — OSINT tool: Onet.pl (Poland).
+- **`onet`** (medium) — OSINT tool: Onet.
+- **`online-books-page-united-states`** (medium) — Website that offers book search services, covering over 1 million online books
+- **`onlinenewspapers`** (low) — OSINT tool: OnlineNewspapers.
+- **`open-access-scientific-journals`** (low) — OSINT tool: Open Access Scientific Journals.
+- **`open-directory-finder`** (low) — OSINT tool: Open Directory Finder.
+- **`open-directory-search`** (low) — OSINT tool: Open Directory Search.
+- **`open-grey`** (low) — OSINT tool: Open Grey.
+- **`open-hub`** (medium) — Search engine for open source projects
+- **`open-secrets`** (medium) — Center for Responsive Politics site - includes disclosure of election costs and personal finances
+- **`open-source-intelligence-txuswashere`** (low) — Comprehensive list of OSINT tools and methodologies.
+- **`opendirsearch-abifog-com`** (low) — OSINT tool: Opendirsearch.abifog.com.
+- **`opentable`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`orange-france`** (low) — OSINT tool: Orange (France).
+- **`orion-media-indexer`** (low) — Lightning Fast Link Indexer for Torrents, Usenet, and Hosters
+- **`orion`** (low) — open-Source Search Engine for social networking websites.
+- **`oryon-querytool`** (medium) — Google-Spreadsheet-based OSINT framework for complex searches of people, emails, files.
+- **`oscobo`** (medium) — Privacy-oriented search engine that keeps searches private through SSL encryption and does not store personal information
+- **`osint-blogs-search-engine`** (low) — OSINT tool: OSINT Blogs Search Engine.
+- **`osint-bookmark`** (low) — Curated collection of investigation tools for company research, scanning, DNS, and Whois.
+- **`osint-cheat-sheet`** (medium) — OSINT cheat sheet listing tools, wikis, datasets, articles and books.
+- **`osint-combine-tools`** (medium) — OSINT Combine's free tools (NexusXplore vendor) incl. social and language utilities.
+- **`osint-encyclopedia-optiv-cham423`** (medium) — Optiv-published GitHub encyclopedia of OSINT resources and techniques.
+- **`osint-framework-2`** (high) — Use when you have any selector and want to discover which tools exist for it — a navigable directory tree that maps a data type (username, e
+- **`osint-framework-3`** (high) — Use when you have a selector type (`email`, `username`, `phone`, etc.) but not the right tool — returns a categorized directory tree pointin
+- **`osint-investigation-assistant-lambda-black`** (medium) — Single-page assistant linking OSINT tools/queries for investigations.
+- **`osint-investigation-coldvisionz`** (low) — Collection of useful OSINT tools.
+- **`osint-kit-buddhsen-tripathi`** (medium) — Curated toolkit collection for investigation activities including auditing and aggregation.
+- **`osint-link`** (medium) — Directory-style portal of OSINT links organized by category.
+- **`osint-open-source-projects`** (medium) — OSINT tool: Osint Open Source Projects.
+- **`osint-sh-buckets`** (low) — Azure Public Buckets Search
+- **`osint-stash`** (high) — Use when you have a case type or selector class (username, email, image…) and want to discover which tool to reach for next — returns pointe
+- **`osint-techniques-tools`** (high) — Use when you have a `name`, `username`, `email`, `phone`, or `image` and want a practitioner-vetted list of the right tool for it — a curate
+- **`osint-toolkit-cybersight-security`** (medium) — Comprehensive catalog of tools and websites for OSINT investigations.
+- **`osint-tools-howtofind-bot`** (low) — Catalog of open-source OSINT tools.
+- **`osint-tools-yogsec`** (low) — Collection of OSINT tools and methods for intelligence gathering.
+- **`osintbookmarks`** (low) — OSINT bookmarks file for Firefox/Chrome/Edge/Safari.
+- **`osintgeek-tools`** (medium) — OSINTgeek's curated set of tools and dashboards.
+- **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
+- **`oxford-journals`** (low) — OSINT tool: Oxford Journals.
+- **`packettotal`** (low) — .pcap files (Packet Capture of network data) search engine and analyze tool. Search by URL, IP, file hash, network indicator, view timeline 
+- **`palined-search`** (medium) — Opend directory search engine.
+- **`paperball-news`** (low) — OSINT tool: Paperball.news.
+- **`paperboy`** (low) — OSINT tool: Paperboy.
+- **`parseek-iran`** (low) — OSINT tool: Parseek (Iran).
+- **`parseek`** (medium) — OSINT tool: Parseek.
+- **`pay-toronto-tickets`** (medium) — City of Toronto site for paying provincial tickets - lists location IDs and corresponding municipalities
+- **`pbs-kids`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, with kid-orientated articles and information from t
+- **`pdfsearch-io`** (low) — OSINT tool: Pdfsearch.io.
+- **`perplexity`** (low) — OSINT tool: Perplexity.
+- **`peteyvid`** (low) — search engine for 70 video hosting sites
+- **`ph055a-osint-collection`** (medium) — GitHub maintained list of OSINT resources across categories.
+- **`phind`** (low) — OSINT tool: Phind.
+- **`pinterest-trends`** (low) — OSINT tool: Pinterest Trends.
+- **`population-reference-bureau`** (medium) — Population Reference Bureaus US and international data search of population indicator
+- **`pr-newswire`** (low) — OSINT tool: PR Newswire.
+- **`presearch`** (low) — OSINT tool: Presearch.
+- **`press-reader`** (low) — OSINT tool: Press Reader.
+- **`pricegrabber`** (medium) — Website allowing users to compare prices of products from different websites
+- **`pricerunner-europe`** (medium) — Website allowing users to compare prices of products from different websites
+- **`productreviews-australia`** (medium) — Website related to product reviews
+- **`project-vote-smart`** (medium) — Website providing information on US elected officials and candidates
+- **`pronto-shopping-search-engine`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
+- **`property-services-regulatory-authority`** (medium) — Irelands Property Services Regulatory Authority
+- **`property-value`** (medium) — Australian property value, sales history, and valuation report search tool
+- **`publc-com`** (medium) — OSINT tool: Publc.com.
+- **`pubmed`** (low) — OSINT tool: PubMed.
+- **`pytrends`** (low) — Simple #python library for automatically collecting data from Google Trends.
+- **`qilt-university-australia`** (medium) — Website related to educational facility ratings
+- **`qsearch`** (medium) — Facebook timeline search tool
+- **`query-server`** (low) — A tool that can send queries to popular search engines (list in picture) and return search results in JSON, CSV or XML format.
+- **`quetzal-search`** (low) — OSINT tool: Quetzal Search.
+- **`quickfound-subject-search-engine`** (medium) — Search engine that searches by subject, topic and/or category of information including a section on news, science, travel, and more
+- **`quranicarabiccorpus`** (medium) — Website that offers Quranic scripture search services
+- **`qwant`** (low) — OSINT tool: Qwant.
+- **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.
+- **`radioreference-communications-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
+- **`rambler-search-engine-russia`** (medium) — Russian web search engine covering worldwide results
+- **`rapusia`** (medium) — Charitable search engine that supports environmental projects and initiatives.
+- **`ratedpeople-united-kingdom`** (medium) — Website related to tradesman ratings
+- **`ratemyemployer-canada`** (medium) — Website related to employwer ratings
+- **`ratemyprofessors-north-america`** (medium) — Website related to teachers and professor ratings
+- **`ratemyteachers-north-america`** (medium) — Website related to teachers and professor ratings
+- **`rateyourlecturer-united-kingdom`** (medium) — Website related to teachers and professor ratings
+- **`realtor-com-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`recon`** (medium) — OSINT tool: Recon.
+- **`reconspider`** (medium) — OSINT framework for scanning IP addresses, emails, websites, and organizations.
+- **`recruit-net`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`reeder`** (low) — OSINT tool: Reeder.
+- **`reference-source-microsoft`** (medium) — Open source code search engine
+- **`religion-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
+- **`remax-house-listing-search-canada`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`research-gate`** (low) — OSINT tool: Research Gate.
+- **`resellerratings-north-america`** (medium) — Website related to reseller ratings
+- **`restaurant-business-online-united-states`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`reuser-s-repertorium`** (medium) — Arno Reuser's long-standing repertorium of OSINT sources and tools.
+- **`reuters`** (low) — OSINT tool: Reuters.
+- **`reverse-genie-lookup`** (medium) — Database search by telephone number, person name, email, plate number, address, IP, domain or area code
+- **`reviewmeta`** (low) — OSINT tool: ReviewMeta.
+- **`rfc-fyi`** (low) — Browseable, searchable RFC index
+- **`rightmove-united-kingdom`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`robots-txt-search-engine`** (medium) — OSINT tool: Robots.txt Search Engine.
+- **`rocketlawyer`** (medium) — Website related to social networking and crowdsourceing with thousands of online responses to legal queries
+- **`rockstargames-socialclub-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`roger-ebert`** (medium) — Website related to movie reviews
+- **`rootdig`** (medium) — Genealogy blog providing links to genealogical resources
+- **`rotten-tomatoes`** (medium) — Website related to movie and TV reviews
+- **`rpx-corp`** (medium) — New searchable database of patents, litigation cases and entities
+- **`s`** (low) — Search from command line in 106 different sources
+- **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
+- **`sage-journals`** (low) — OSINT tool: SAGE Journals.
+- **`salary-and-wage-occupation-codes-australia`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`sapo-portugal`** (low) — OSINT tool: SAPO (Portugal).
+- **`sapo`** (medium) — OSINT tool: SAPO.
+- **`savvysearch`** (medium) — Meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
+- **`scala`** (medium) — Open source code search engine
+- **`scholarpedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on s
+- **`sciencedirect`** (low) — OSINT tool: ScienceDirect.
+- **`sciencedomain`** (low) — OSINT tool: ScienceDomain.
+- **`scirp`** (low) — OSINT tool: SCIRP.
+- **`sdorker`** (low) — Type the Google Dork and get the list of the pages, that came up with this query.
+- **`search-22`** (low) — access to 10+ ftp search tools from one page
+- **`search-abuseipdb`** (medium) — OSINT tool: Search Abuseipdb.
+- **`search-all`** (medium) — Chrome extension allowing you to select a search engine of your choice; quickly switch between search engines
+- **`search-atlas`** (medium) — OSINT tool: Search Atlas.
+- **`search-by-filetype`** (medium) — OSINT tool: Search by FileType.
+- **`search-ch-switzerland`** (low) — OSINT tool: Search.ch (Switzerland).
+- **`search-ch`** (medium) — OSINT tool: Search.ch.
+- **`search-com`** (low) — OSINT tool: Search.com.
+- **`search-commands`** (low) — Google Chrome extension provides a Swiss-knife style commands tool inside your browser's address bar to enhance your search experience
+- **`search-craigslist`** (medium) — OSINT tool: Search craigslist.
+- **`search-encrypt`** (medium) — Private search engine that encrypts searches
+- **`search-engine-colossus`** (low) — International directory of search engines
+- **`search-engine-finder`** (medium) — OSINT tool: Search Engine Finder.
+- **`search-engines-index`** (medium) — OSINT tool: Search Engines Index.
+- **`search-engines-scraper`** (low) — Collects search results in text files. It's possible to search Google, Bing, DuckDuckGo, AOL and other search engines.
+- **`search-it`** (medium) — Search engine with popular website applications on its interface; includes Google, Bing, DuckDuckGo, Reddit, Twitter, and more.
+- **`search-patterns`** (low) — A tool that analyzes autosuggest for #Google and #YouTube search queries (questions, prepositions, comparisons, and words starting with diff
+- **`search-shared`** (medium) — File sharing and search engine
+- **`search3`** (low) — New privacy search engine (no trackers + just a little bit of ads). With NFT search tab and cryptocurrencies realtime info tab
+- **`searchall-net`** (low) — 75 fields for quick entry of queries to different search services on one page
+- **`searchall`** (medium) — Metasearch engine including major search engines and social media platforms including Google, Bing, Yahoo, DuckDuckGo, Facebook, and more.
+- **`searchboth`** (medium) — Meta-search engine that shows results from two or more other search engines, allowing users to compare results
+- **`searchdorks`** (low) — OSINT tool: SearchDorks.
+- **`searchenginejournal-com`** (high) — Use when you have a `name`/handle/domain and want the full syntax of Google advanced operators to build a precise dork — returns a reference
+- **`searchenginemap-com`** (medium) — Use when you need to choose which alternative search engines to query and want to see which ones have their own independent index — returns 
+- **`searcher`** (low) — A very fast and simple #go tool that allows you to collect search results from a list of keywords in the following search engines: Ask Bing 
+- **`searx`** (medium) — OSINT tool: Searx.
+- **`searxng-baresearch-org`** (low) — Privacy metasearch aggregator (SearXNG instance).
+- **`searxng`** (low) — OSINT tool: SearXNG.
+- **`secret-search-engine-labs`** (medium) — Alternative search engine
+- **`seek-job-search-engine-new-zealand`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`sensebot`** (medium) — Provides a text summary for your search query instead of a collection of links to Web pages
+- **`seosly-com-2`** (high) — Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search opera
+- **`seosly-com`** (high) — OSINT tool: seosly.com.
+- **`seqe-search-engines-query-engine`** (medium) — OSINT tool: SEQE - Search Engines Query Engine.
+- **`seznam-cz`** (high) — Use when you have a `name`/handle for a Czech subject and want Czech-web results Google under-indexes — returns `name`, `social-profile`, an
+- **`seznam-czech-republic`** (low) — OSINT tool: Seznam(Czech Republic).
+- **`shadowserver`** (medium) — OSINT tool: Shadowserver.
+- **`sharedigger`** (low) — search files in popular file hosting services
+- **`sharkscope`** (medium) — Poker player search and stats
+- **`shazam`** (medium) — Website related to music and finding songs
+- **`shopperapproved`** (medium) — Website related to consumer product reviews
+- **`shopzilla`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
+- **`short-url-search-engine`** (medium) — OSINT tool: Short URL Search Engine.
+- **`sikkerapi`** (medium) — OSINT tool: SikkerAPI.
+- **`silobreaker`** (low) — OSINT tool: Silobreaker.
+- **`similar-site-search`** (medium) — Search engine that searches for websites and webages similar to the original entry made by the user
+- **`similarsites-com`** (medium) — Discover websites that are similar to each other
+- **`similarsites`** (low) — OSINT tool: SimilarSites.
+- **`sitejabber`** (medium) — Website related to online business reviews
+- **`sitelike`** (medium) — Website allowing users to search for related or similar sites.
+- **`siteslike`** (low) — OSINT tool: SitesLike.
+- **`slack-discord-zoom-invites-search`** (medium) — OSINT tool: Slack/Discord/Zoom Invites Search.
+- **`slideshare-search-engine`** (low) — OSINT tool: SlideShare Search Engine.
+- **`snipplr`** (medium) — Code snippet search engine
+- **`snowfl-com`** (low) — torrent aggregator which searches various public torrent indexes in real-time
+- **`sogou-china`** (low) — OSINT tool: SoGou (China).
+- **`somalia-conflict`** (medium) — List of individuals reported missing in connection with the conflict in Somalia
+- **`sonicrun`** (medium) — Sonic Run is an internet search engine providing web, meta, blog, and news search results.
+- **`soovle`** (low) — OSINT tool: Soovle.
+- **`soso`** (medium) — Chinese web search engine
+- **`sougou-com`** (medium) — OSINT tool: Sougou.com.
+- **`spiderfoot-poppopjmp-fork`** (high) — Use when you have a `name`, `email`, `username`, `domain`, `ip-address`, or `phone` and want automated multi-source enrichment across 200+ m
+- **`sploitus`** (medium) — OSINT tool: sploitus.
+- **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
+- **`springer`** (low) — OSINT tool: Springer.
+- **`sputtr`** (medium) — OSINT tool: Sputtr.
+- **`stackoverflow`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
+- **`stacksearch`** (medium) — OSINT tool: Stacksearch.
+- **`startpage-parser`** (low) — Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python to
+- **`startpagina-search-netherlands`** (medium) — Netherlands based web search engine that also includes news, TV, radio, and a blog
+- **`state-of-connecticut-licensing`** (medium) — State of Connecticuts online professional license search tool
+- **`stilltasty`** (medium) — Search engine that searches for food-related websites, material and content, primarily dealing with the duration of freshness, expiration da
+- **`storyful`** (low) — OSINT tool: Storyful.
+- **`studentreviews-north-america`** (medium) — Website related to education reviews
+- **`stumpedia-com`** (high) — OSINT tool: stumpedia.com.
+- **`suchmaschinen-datenbank`** (medium) — German meta search engine
+- **`summit-county-fiscal-office`** (medium) — Summit County Fiscal Office website with property tax and appraisal tool
+- **`sunxdcc`** (low) — XDCC file search engine
+- **`superdesk`** (low) — OSINT tool: Superdesk.
+- **`superuser`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
+- **`surf-canyon-ebay-search`** (medium) — eBay search engine
+- **`surfnetkids`** (low) — Search engine for kids including games, news, blogs, and more
+- **`susper`** (medium) — Decentralized web search engine that uses the peer to peer system 'YaCy' and 'Apache Solr' to crawl and index search results.
+- **`swisscows-com`** (high) — Use when you have a `name`/keyword and want a privacy-focused, non-personalized web search — returns web/social results from a different ind
+- **`tabnine`** (medium) — Java code search engine
+- **`taylor-and-francis-online`** (low) — OSINT tool: Taylor & Francis Online.
+- **`termwiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on w
+- **`terrorism-reports`** (medium) — US Department of States country reports on terrorism
+- **`the-best-document-search-engine`** (medium) — OSINT tool: The best document search engine.
+- **`the-book-seer-recommendation-website`** (medium) — Website that offers recommendations on what books to read
+- **`the-cyber-post-osint-tools-and-resources`** (low) — Blog-hosted aggregated list of OSINT tools and resources.
+- **`the-guantanamo-docket`** (medium) — Docket containing documents and research related to the detainee population of Guantanamo Bay from 2002
+- **`the-osint-rack-mario-santella`** (medium) — Personal curated 'rack' of OSINT tools by Mario Santella.
+- **`thefaceoff-ice-hockey-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on i
+- **`thelookup`** (medium) — Metasearch engine that searches a range of popular search engines including DuckDuckGo, Startpage, Carrot2, Baidu, Bing, Google, and more.
+- **`thelordeye`** (low) — Tool that searches for devices directly connected to the internet with a user specified query. It returns results for webcams, traffic light
+- **`thepiratebay`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
+- **`thereisabotforthat-com`** (low) — search by catalog of 5151 bots for 17 different apps and platforms
+- **`thingful-net`** (low) — OSINT tool: Thingful.net.
+- **`toddington-free-osint-resources`** (high) — Use when you have any starting selector and want a vetted, professionally-maintained index of free OSINT tools to pick the right one — retur
+- **`toddington-online-research-cheat-sheets`** (medium) — Toddington International's free cheat sheets for online research.
+- **`topix`** (low) — OSINT tool: Topix.
+- **`topmarks-education`** (low) — Children's educational search engine for locating educational resources, along with games and other learning tools
+- **`topuniversities`** (medium) — Website related to educational facility ratings
+- **`torrent-seeker`** (low) — torrents search engine
+- **`torrents-me`** (low) — torrent aggregator with search engines and list of new torrents trackers
+- **`totalbeauty`** (medium) — Website related to makeup, skincare, and other beauty related reviews
+- **`trace-labs-awesome-osint`** (high) — Use when you are starting or stuck in a missing-persons investigation and want a vetted, category-organized catalog of OSINT tools to work t
+- **`trademarkia`** (medium) — Search tool for trademarks filed in the US since 1870
+- **`trooclick`** (low) — OSINT tool: Trooclick.
+- **`trufflepiggy-context-search`** (low) — Search selected text in different search engines and sites from Google Chrome context menu.
+- **`trulia-united-states`** (medium) — Real estate listing search tool that also provides a location data overview
+- **`truth-or-fiction`** (low) — OSINT tool: Truth or Fiction.
+- **`tviv`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`twellow`** (medium) — Twitter user search
+- **`twingly`** (low) — OSINT tool: Twingly.
+- **`ubersuggest`** (low) — OSINT tool: Ubersuggest.
+- **`uk-law-society`** (medium) — Legal-related search engine for locating legal representatives including quick search and pro search
+- **`uk-patent-search`** (medium) — UK Governments trademark, copyright, patent and intellectual property search
+- **`ukons-standard-occupational-classifications-united-kingdom`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`united-states-marine-corps-occupation-codes`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`url-shorteners-search`** (medium) — OSINT tool: URL Shorteners Search.
+- **`urvx-com`** (low) — File storage search engine based by Google CSE
+- **`urvx`** (low) — Based by Google Custom Search tool for searching in popular cloud storages service
+- **`us-census-bureau`** (medium) — Provides US census information and population statistics
+- **`us-department-of-housing-and-urban-development`** (medium) — US Department of Housing and Urban Development - includes research, publications and data sets
+- **`us-dod-function-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`us-government-printing-office`** (medium) — US Government Printing Offices searchable database of publications, including various regulations
+- **`us-location-information`** (medium) — Site providing national income and poverty estimators, as well as other demographics in the US
+- **`us-securities-and-exchange-commission`** (medium) — Website for the United States Securities and Exchange Commission
+- **`usa-gov`** (medium) — The US governments official web portal
+- **`usarmy-occupation-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
+- **`usearchfrom-com`** (high) — Use when you have a name or term and want to see Google results as they appear from another country/language/device — returns location-local
+- **`usps-zip-code-look-up`** (medium) — United States Postal Service zip code look up tool - search by address, company and city
+- **`vancouver-sun-opinions`** (medium) — Read opinion articles from columnists and guest writers on various topics and controversies
+- **`vichiti`** (medium) — OSINT tool built with Node.js for gathering information across sources.
+- **`vinden-meta-search-netherlands`** (medium) — Netherlands based meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
+- **`virgilio-search-portal-italy`** (medium) — Italy based web portal including a search engine, news, email services, and chat
+- **`visto-search-engine-greece`** (medium) — Greek web search engine covering regional results
+- **`vulnerability-and-exploit-database`** (medium) — OSINT tool: Vulnerability & Exploit Database.
+- **`wackysafe`** (low) — Kid-friendly search engine.
+- **`walla-israel`** (low) — OSINT tool: Walla (Israel).
+- **`warcraft-character-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`washington-office-of-financial-management`** (medium) — Washingtons Office of Financial Management site providing workforce and population data, and state budget information
+- **`watch-out-investors`** (medium) — Allows you to search for regulatory or disciplinary actions against corporate entities
+- **`wazap-video-and-game-search-japan`** (medium) — Website that offers a search engine for locating videos and games
+- **`we-feel`** (medium) — Twitter search tool that analyzes emotions in real-time
+- **`web-archive-search-tool`** (low) — OSINT tool: Web archive search tool.
+- **`web-directories`** (low) — Directory of web directories
+- **`web-search-navigator`** (low) — extension that adds keyboard shortcuts to Google, YouTube, Github, Amazon, and others
+- **`webcam-hopper`** (medium) — Search live webcams around the world
+- **`webcleaner-com`** (high) — OSINT tool: webcleaner.com.
+- **`webcrawler-com`** (high) — Use when you have a `name` or other search string and want blended results from several major search engines at once — returns web links and
+- **`webcrawler-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`webdork`** (medium) — OSINT tool: webdork.
+- **`webhound-anoncatalyst`** (medium) — Python command-line assistant for web searches.
+- **`webkams`** (medium) — Search live webcams around the world
+- **`webwombat-search-engine-australia`** (medium) — Australian based web search engine covering worldwide results
+- **`welcome-to-dealstrap`** (low) — OSINT tool: Welcome to Dealstrap!.
+- **`white-house-disclosures`** (medium) — White House disclosure reports
+- **`wiby`** (medium) — Search engine for older style pages, based on a subject of interest.
+- **`wiki-for-kids`** (low) — Website that provides a search engine that searches wiki-type websites
+- **`wiki-search-engine`** (medium) — Website that provides a search engine that searches wiki-type websites
+- **`wikiaentertainment`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
+- **`wikiawikis`** (medium) — Website that provides a listing of wiki-type websites
+- **`wikibooks`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
+- **`wikichristian`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`wikicrimes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
+- **`wikidot`** (medium) — Website that provides wiki hosting services
+- **`wikihow`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; query-based 
+- **`wikiindex`** (medium) — Website that provides a listing of wiki-type websites
+- **`wikimatrix`** (medium) — Website that provides a comparison of wiki-type websites
+- **`wikimedia-meta-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`wikipedia`** (medium) — Website related to social networking in the form of the world's most popular crowdsourced encyclopedia and information database with close t
+- **`wikiquote`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on q
+- **`wikirecipes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
+- **`wikishire-united-kingdom`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; Gazeteer of 
+- **`wikisource`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`wikispaces-search-engine`** (medium) — OSINT tool: Wikispaces Search Engine.
+- **`wikispecies`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on a
+- **`wikisummaries`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b
+- **`wikitravel`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`wikivoyage`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`wiley`** (low) — OSINT tool: Wiley.
+- **`wintria`** (low) — OSINT tool: Wintria.
+- **`wipo`** (medium) — OSINT tool: WIPO.
+- **`wiredmagazine-electronic-device-reviews`** (medium) — Website related to tech news and reviews
+- **`woboq-code-browser`** (medium) — Code search engine
+- **`wolfram-alpha`** (low) — OSINT tool: Wolfram Alpha.
+- **`word-tracker`** (low) — OSINT tool: Word Tracker.
+- **`wordpress-com`** (medium) — OSINT tool: WordPress.com.
+- **`wordpress-content-snatcher`** (low) — OSINT tool: WordPress Content Snatcher.
+- **`wordpress-custom-search`** (low) — OSINT tool: WordPress Custom Search.
+- **`wordstat-yandex-ru`** (low) — the estimated number of Yandex searches in the coming month for different keywords
+- **`world-digital-library`** (low) — OSINT tool: World Digital Library.
+- **`world-newspapers`** (low) — OSINT tool: World-Newspapers.
+- **`worldchambersnetwork-directory-search`** (medium) — Business-related search engine that searches using company name
+- **`worldnews`** (low) — OSINT tool: WorldNews.
+- **`worldwidescience-org`** (medium) — OSINT tool: WorldWideScience.org.
+- **`wow-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results
+- **`wowjobs-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`wowwiki-world-of-warcraft-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
+- **`wpscan`** (medium) — OSINT tool: Wpscan.
+- **`xdcc-eu`** (low) — XDCC search engine
+- **`xen00rw-me`** (medium) — Use when you have a subject or target domain and want to build advanced search-operator (dork) queries across many engines from one interfac
+- **`xgs`** (low) — allows you to search for links to onion sites using Google Dorks (site:[http://onion.cab](http://onion.cab), site:[http://onion.city](http:/
+- **`xsint`** (high) — Use when you have a single `email`, `phone`, `username`, `ip-address`, or `address` and want to fan it out across ~60 services in one comman
+- **`xtorx`** (low) — fast torrents search engine
+- **`yacy`** (medium) — Decentralized search engine software.
+- **`yagooglesearch`** (low) — "Simulates real human Google search behavior to prevent rate limiting by Google and if HTTP 429 blocked by Google, logic to back off and con
+- **`yahoo-com-2`** (high) — Use when you have a `name` (or `username`/phrase) and want a second general-purpose search index that surfaces pages Google buries — returns
+- **`yahoo-com`** (high) — Use when you have a `name`/handle/phrase and want a second general search engine whose index and ranking differ from Google — returns web re
+- **`yahoo-news`** (low) — OSINT tool: Yahoo News.
+- **`yahoo-search`** (low) — OSINT tool: Yahoo! Search.
+- **`yam-search-engine-taiwan`** (medium) — Taiwan based surface web search engine covering regional results
+- **`yamli-arabic`** (medium) — Arabic search engine and smart Arabic keyboard
+- **`yandex-russia`** (low) — OSINT tool: Yandex (Russia).
+- **`yandex-wordstat`** (low) — OSINT tool: Yandex Wordstat.
+- **`yaraif`** (medium) — OSINT tool: YARAif.
+- **`yassen-com`** (medium) — OSINT tool: Yassen.com.
+- **`yeggi`** (low) — 3D printer model search engine. There are more than 3 million 700 thousand objects in the database. There are both paid and free.
+- **`yelp`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
+- **`yippy`** (medium) — OSINT tool: Yippy.
+- **`yogsec`** (high) — Use when you want a curated, categorised catalogue of pentest/OSINT tools to draw from — this security researcher's GitHub returns organised
+- **`youcare`** (medium) — Charitable search engine that allows you to choose an environmental project to support with your search.
+- **`youdao-search-engine-china`** (medium) — Chinese based web search engine by NetEase
+- **`zanran`** (medium) — OSINT tool: Zanran.
+- **`zarebin-iran`** (low) — OSINT tool: Zarebin (Iran).
+- **`zetoc`** (low) — OSINT tool: Zetoc.
+- **`zilladog-safe-email-and-games-for-kids`** (low) — Child-oritentated email and entertainment
+- **`zillow-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
+- **`zoek-search-engine`** (medium) — Netherlands based search engine covering regional results
+- **`zoo-search`** (medium) — OSINT tool: Zoo Search.
+- **`zoomeye`** (medium) — OSINT tool: ZoomEye.
+- **`zorexeye`** (medium) — OSINT tool: ZorexEye.
 
 _Auto-generated by build_index.py; replace with curated prose anytime (it won't be overwritten)._
