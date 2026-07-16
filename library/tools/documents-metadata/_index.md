@@ -7,10 +7,10 @@ kind: group-index
 # documents-metadata
 
 ## Sub-groups
-- **`android/`** — 22 skill(s) below.
+- **`android/`** — 18 skill(s) below.
 - **`app-analysis/`** — 4 skill(s) below.
 - **`device-forensics/`** — 2 skill(s) below.
-- **`hosted-automated-analysis/`** — 19 skill(s) below.
+- **`hosted-automated-analysis/`** — 18 skill(s) below.
 - **`ios/`** — 2 skill(s) below.
 - **`office-files/`** — 2 skill(s) below.
 - **`pcaps/`** — 1 skill(s) below.
@@ -81,7 +81,6 @@ kind: group-index
 - **`documentcloud`** (low) — OSINT tool: DocumentCloud.
 - **`doingbusiness-north-america`** (low) — Website related to social networking and crowdsourcing with online ratings and/or reviews of national economies
 - **`doppelme`** (low) — Online avatar creator
-- **`dropbox-2`** (low) — Program that provides file sharing and transfer services
 - **`e-gg-timer-alarm-tool`** (low) — Tool for setting a count down timer that alerts you with beeps when the time runs out
 - **`earthcam-net`** (low) — Website providing webcam content, technology, and services
 - **`easybib`** (low) — Guide for citing Tweets into MLA and APA format
@@ -114,12 +113,10 @@ kind: group-index
 - **`find-pdf-doc`** (low) — OSINT tool: Find-pdf-doc.
 - **`fitbit`** (low) — Website related to social networking in the form of health, wellness, fitness, lifesteaming or digital diaries
 - **`flashcard-machine`** (low) — Website that offers web-based flashcard creation, use and sharing
-- **`foca-2`** (medium) — OSINT tool: FOCA.
 - **`folkd`** (low) — Social bookmarking and social search site
 - **`follow-up-then-email-reminder-program`** (low) — Program that provides email-based scheduling and reminder services
 - **`forensic-analyzer`** (medium) — OSINT tool: Forensic Analyzer.
 - **`forensicdots-de`** (low) — find "yellow dots" (Machine Identification Code) in printed documents
-- **`forensicosint-com-2`** (low) — OSINT tool: forensicosint.com.
 - **`foursquare-time-machine`** (low) — Foursquare history visualizer and discovery tool
 - **`free-full-pdf`** (low) — OSINT tool: Free Full PDF.
 - **`free-ocr`** (low) — OSINT tool: Free OCR.
@@ -129,7 +126,6 @@ kind: group-index
 - **`ghidra`** (low) — Reverse engineering and static malware analysis
 - **`git-hound`** (low) — OSINT tool: git-hound.
 - **`gitdorker`** (low) — OSINT tool: GitDorker.
-- **`github-code-search-2`** (low) — OSINT tool: GitHub Code Search.
 - **`github-code-search`** (low) — OSINT tool: GitHub Code Search.
 - **`github-search-engine`** (low) — OSINT tool: GitHub Search Engine.
 - **`github`** (low) — Open source code hosting community for users to collaborate and create projects.
@@ -166,7 +162,6 @@ kind: group-index
 - **`json-to-csv`** (low) — OSINT tool: JSON to CSV.
 - **`katana`** (low) — Katana-dork scanner is a simple python tool that automates Google hacking/dorking and supports Tor.
 - **`kd6-3-7`** (low) — Python tool for getting additional information about ID holders from different countries
-- **`keyhole-2`** (low) — Real-time, hashtag, keyword and URL tracker for Twitter, Facebook and Instagram
 - **`kickstarter`** (low) — Website related to crowdsourced funding (venture capital) for ideas and projects
 - **`knowyourmeme`** (low) — Website that provides a database of Internet-based memes, culture and online behaviour
 - **`lifestream`** (low) — Faith/religion based website related to social networking in the form of lifestreaming or digital diaries
@@ -199,7 +194,6 @@ kind: group-index
 - **`pageinsider`** (low) — Website that shows a summary of information that is or was on a specific website
 - **`pages2images`** (low) — Website screenshot tool
 - **`paste-search`** (low) — OSINT tool: Paste Search.
-- **`pastes-search-engine-2`** (low) — OSINT tool: Pastes Search Engine 2.
 - **`pastes-search-engine`** (low) — OSINT tool: Pastes Search Engine.
 - **`paypal`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`pdfdrive`** (low) — PDF/book search index.
@@ -246,7 +240,6 @@ kind: group-index
 - **`socialmediarestaurant`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
 - **`socialoomph`** (low) — Social media managing tool
 - **`sourcebot`** (low) — OSINT tool: Sourcebot.
-- **`sourcegraph-2`** (low) — OSINT tool: Sourcegraph.
 - **`sourcegraph`** (low) — OSINT tool: SourceGraph.
 - **`squareup`** (low) — Website that provides payment transfer services between buyers and sellers, covering both real-world currency and ecurrency
 - **`statwing`** (low) — Intuitive data analytics tool
@@ -278,7 +271,6 @@ kind: group-index
 - **`upwork`** (low) — Website related to outsourcing of jobs related to a variety of creative occupations
 - **`urlex-modified-url-expander`** (low) — Tool for modifying URL address hyperlinks
 - **`violation-tracker`** (low) — US based database on corporate misconduct, covering banking, consumer protection, false claims, environmental, safety, employment discrimina
-- **`virustotal-2`** (low) — Multi-engine malware scanning and URL reputation lookup
 - **`visualorigins-digitaldigging-org`** (low) — OSINT tool: visualorigins.digitaldigging.org.
 - **`voyant-tools-org`** (low) — analysis of particular words in .TXT, .DOCX, .XLSX, .CSV and other file types.
 - **`vsudo-geotag-tool`** (low) — tool for mass geotagging of photos

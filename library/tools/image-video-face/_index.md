@@ -7,11 +7,11 @@ kind: group-index
 # image-video-face
 
 ## Sub-groups
-- **`deepfake-detection/`** — 8 skill(s) below.
+- **`deepfake-detection/`** — 7 skill(s) below.
 - **`documents/`** — 12 skill(s) below.
-- **`fact-checking-tools/`** — 6 skill(s) below.
+- **`fact-checking-tools/`** — 5 skill(s) below.
 - **`fonts/`** — 4 skill(s) below.
-- **`images/`** — 56 skill(s) below.
+- **`images/`** — 55 skill(s) below.
 - **`reverse-media-search/`** — 2 skill(s) below.
 - **`source-verification/`** — 3 skill(s) below.
 - **`videos/`** — 19 skill(s) below.
@@ -70,14 +70,11 @@ kind: group-index
 - **`check`** (medium) — OSINT tool: Check.
 - **`citizen-evidence-lab-toolbox`** (high) — Use when you have an `image`/video and want Amnesty International's curated list of verification tools (metadata viewers, reverse-image sear
 - **`citizen-evidence-lab`** (high) — Use when you have a video or `image` (often eyewitness/social footage) and want to verify its origin, upload time, and authenticity — return
-- **`clarify-2`** (medium) — OSINT tool: Clarify.
 - **`clarify`** (low) — Use only as a legacy reference — clarify.io was a media/audio-indexing API and appears discontinued.
 - **`cleanup-pictures`** (low) — Web tool for quickly removing objects from an image.
 - **`clip-blast`** (medium) — OSINT tool: Clip Blast.
 - **`clipconverter-cc`** (low) — Use when you need to download/convert an online video for offline frame-by-frame analysis or preservation — a converter, not a search tool.
 - **`clipdrop-co`** (high) — Use when you have an `image` of poor/cluttered quality and want to clean it up before a face/reverse-image search — returns an edited `image
-- **`clipsnap-com-2`** (high) — OSINT tool: clipsnap.com.
-- **`clipsnap-com-3`** (high) — OSINT tool: clipsnap.com.
 - **`clipsnap-com-4`** (high) — Use when you have a blurry or low-quality photo of a missing person and want to sharpen it before reverse-image search — returns an enhanced
 - **`clipsnap-com`** (high) — OSINT tool: clipsnap.com.
 - **`codeofaninja-com-2`** (high) — Use when you have a YouTube channel URL or handle for a person of interest and need its stable channel ID — returns the UC… channel ID.
@@ -183,8 +180,6 @@ kind: group-index
 - **`hatless-investigations-group`** (low) — Use when you want to reach a private investigations firm rather than run a self-service tool — this is a LinkedIn company page for an OSINT/
 - **`how-to-accurately-check-an-id-using-facial-features-to-verify-photo-id-s`** (medium) — Use when you need a human reference method for comparing a face against a photo ID — this is an instructional article on facial-feature comp
 - **`hue-tools`** (low) — Use when you need to work with colors (generate, convert, blend palettes) — a color/design utility with marginal OSINT use for matching or d
-- **`huggingface-co-2`** (high) — OSINT tool: huggingface.co.
-- **`huggingface-co-3`** (high) — OSINT tool: huggingface.co.
 - **`huggingface-co-4`** (high) — Use when you have an audio/video clip of a subject and want an accurate transcript with per-word timing — returns spoken `name`s and `associ
 - **`huggingface-co`** (high) — Use when you have an `image` of a subject and want to strip the background to isolate the face/person before reverse-image or face search — 
 - **`hugin`** (low) — Hugin is a free and open-source panorama photo stitching and HDR (High Dynamic Range imaging) merging software that helps users create seaml
@@ -262,7 +257,6 @@ kind: group-index
 - **`media-io-watermark-remover`** (medium) — Select the area and mark the time frame in which you want to remove the object. Works for barely visible watermarks as well as for bright an
 - **`metacafe`** (medium) — OSINT tool: Metacafe.
 - **`metadata-viewer`** (high) — Use when you have an `image` (file or URL) and want its embedded EXIF — returns GPS `geolocation`, camera/device `metadata-exif` and creatio
-- **`metatube-2`** (medium) — OSINT tool: Metatube.
 - **`metatube-com`** (high) — Use when you have a `name`/`username` or keyword and want to find videos about a subject aggregated from across platforms — returns social-p
 - **`midomi-music-search-engine`** (high) — Use when you have an audio clip, hum, or song playing in a subject's video and want to identify the track — returns song title/artist metada
 - **`minipaint`** (high) — Use when you need a free in-browser photo editor to crop, sharpen, adjust, or annotate a missing-person image before running face/reverse-im
@@ -338,7 +332,6 @@ kind: group-index
 - **`remove-background`** (high) — Use when you have an `image`/`face` and want to isolate the subject or the background for cleaner analysis — returns a cut-out `image` (subj
 - **`remove-photos`** (high) — OSINT tool: remove.photos.
 - **`replicate-com`** (high) — Use when you have a degraded/old `image` of a face and want it restored/enhanced for identification — runs Microsoft's photo-restoration mod
-- **`repostsleuth-2`** (medium) — Reverse-image search across Reddit; finds original posters of an image.
 - **`reverse-image-search-chrome-google-com`** (high) — Use when you have an `image` or `face` and want a fast right-click path to Google Images and TinEye reverse searches from any webpage — retu
 - **`reverse-image-search-dmtr-addons-mozilla-org`** (high) — Use when you have an image on a web page and want to reverse-search it fast — returns a right-click menu that sends the image to multiple se
 - **`reverse-image-search`** (high) — Use when you have an `image` or `face` and want to find where else it appears online — returns matching pages, source URLs and visually simi
@@ -414,7 +407,6 @@ kind: group-index
 - **`tineye-reverse-image-sear-chrome-google-com`** (high) — Use when you have an `image` and want a one-right-click TinEye reverse search for exact copies and earliest appearances — returns pages host
 - **`tineye-reverse-image-search-addons-mozilla-org`** (high) — Use when you have an `image` and want to find where else it appears online and its earliest known instance — this Firefox add-on runs TinEye
 - **`tineye`** (high) — Use when you have an `image` and want its provenance — returns exact and modified copies across the web, ranked so you can find the earliest
-- **`tools-2`** (high) — OSINT tool: Tools.
 - **`tracepoint`** (high) — Use when you have an `image` with visible directional features and want to triangulate where the camera stood — returns an estimated `geoloc
 - **`ttsave-app`** (high) — Use when you have a TikTok post/profile URL and want to download the video, audio, slideshow, thumbnail or profile photo watermark-free — re
 - **`tubuep`** (medium) — OSINT tool: Tubuep.
@@ -446,7 +438,6 @@ kind: group-index
 - **`world-cams`** (high) — Use when you have a `geolocation`/`address` and want live eyes on it — returns public live-webcam feeds (`image`/video) from that place for 
 - **`world-of-warcraft`** (high) — Website related to social networking and players of the computer game World of Warcraft
 - **`www3-lunapic-com`** (high) — Use when you have an `image` of a subject and want to crop, enhance, deskew, or isolate a face in-browser before running reverse-image/face 
-- **`y2mate-com-2`** (high) — OSINT tool: y2mate.com.
 - **`y2mate-com`** (high) — Use when you have a public YouTube (or other) video URL and want to download the video/audio for offline preservation and frame analysis — r
 - **`y8`** (high) — Use when you have a gaming `username` and suspect the subject uses Y8's browser-games portal — returns a public in-site `social-profile` wit
 - **`yahoo-image-search-2`** (medium) — Use when you have a `name`, `username` or keywords and want a keyword image search that indexes differently from Google — returns images and
@@ -458,7 +449,6 @@ kind: group-index
 - **`youku-chinese-language`** (high) — Use when you have a `name`/`username` and want a Chinese subject's video presence — search Youku, China's major video platform, for their up
 - **`younow`** (high) — Use when you have a `username` and want to check for a live-streaming profile with bio, photo, and broadcast history — returns a social-prof
 - **`youtube-captions-alternate-extractor`** (medium) — OSINT tool: YouTube Captions (Alternate Extractor).
-- **`youtube-metadata-2`** (medium) — OSINT tool: YouTube Metadata.
 - **`youtube-metadata`** (medium) — OSINT tool: YouTube Metadata.
 - **`youtube`** (medium) — OSINT tool: YouTube.
 - **`youtubetranscript-com`** (high) — Use when you have a YouTube video (a `social-profile` URL) and want its full spoken transcript to mine for names, places and details — retur

@@ -11,7 +11,6 @@ kind: group-index
 - **`aptnotes`** (low) — APT research and threat analysis
 - **`bot-scout`** (low) — Bot and spam detection
 - **`cymon-open-threat-intelligence`** (low) — IP threat tracking
-- **`firehol-ip-lists-2`** (low) — IP reputation and blocking
 - **`honeydb`** (low) — IoT honeypot intelligence
 - **`hostintel-keithjjones-github`** (low) — Host intelligence gathering
 - **`ibm-x-force-exchange`** (low) — Malware and threat intelligence
@@ -19,10 +18,8 @@ kind: group-index
 - **`maltiverse`** (low) — IOC aggregation and scoring
 - **`malware-information-sharing-platform`** (low) — Threat intelligence sharing
 - **`malware-patrol`** (low) — Malware IOC and feed intelligence
-- **`massive-octo-spice-csirtgadgets-github`** (low) — Legacy CSIRT intelligence platform
 - **`mlsecproject-combine`** (low) — Threat feed aggregation
 - **`mr-looquer-ioc-feed-1st-dual-stack-threat-feed`** (low) — IOC threat feed access
-- **`project-honey-pot-2`** (low) — Spam and harvester tracking
 - **`pulsedive`** (low) — IOC enrichment and risk scoring
 - **`rescure-cyber-threat-intelligence-project`** (low) — Threat intelligence feeds
 - **`scam-database`** (low) — Scam and fraud reporting

@@ -19,7 +19,6 @@ kind: group-index
 - **`airfleets`** (low) — Database for aircraft details.
 - **`airframes`** (low) — A database of aircraft details
 - **`airlinecodes`** (low) — OSINT tool: Airlinecodes.
-- **`airnav-radarbox-2`** (low) — OSINT tool: AirNav RadarBox.
 - **`airnav-radarbox`** (low) — Live flight tracker.
 - **`ais-boatnerd-com`** (low) — OSINT tool: Ais.boatnerd.com.
 - **`ais-ships-map`** (low) — OSINT tool: AIS Ships Map.
@@ -52,16 +51,13 @@ kind: group-index
 - **`check-any-vin-free`** (medium) — OSINT tool: Check Any VIN Free.
 - **`check-any-vin`** (medium) — OSINT tool: Check Any VIN.
 - **`check-if-a-vehicle-is-taxed-and-has-an-mot`** (medium) — OSINT tool: Check if a vehicle is taxed and has an MOT.
-- **`check-that-vin-2`** (medium) — OSINT tool: Check that VIN!.
 - **`check-that-vin-search`** (medium) — OSINT tool: Check That (Vin Search).
 - **`check-that-vin`** (medium) — OSINT tool: Check That Vin.
-- **`chronotrains-2`** (low) — A terrific weekend travel planning service for Europeans. It shows how far you can go from a certain station in 5 hours by train.
 - **`chronotrains`** (low) — Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel t
 - **`civil-aviation-authority-aircraft-register-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK Civil Aviation Authority database, covering aircrat registration information
 - **`cma-voyage-finder`** (low) — search for voyage details by voyage number or ship name
 - **`collection-of-public-transport-maps`** (low) — 20 online public transport maps (most real-time) for different cities and countries around the world
 - **`connecticut-license-verification`** (medium) — Connecticut Department of Motor Vehicles license verification utility
-- **`container-tracking-2`** (low) — OSINT tool: Container tracking.
 - **`container-tracking-cargo`** (low) — OSINT tool: container-tracking (Cargo).
 - **`container-tracking`** (low) — OSINT tool: Container Tracking.
 - **`copart-auction`** (medium) — OSINT tool: copart (auction).
@@ -73,7 +69,6 @@ kind: group-index
 - **`direkht-ban-guru`** (low) — Enter the name of the station to see what cities you can get to by train without changing (+ travel time for each city).
 - **`enterprise-rental-receipts`** (medium) — OSINT tool: enterprise Rental Receipts.
 - **`epicvin`** (medium) — OSINT tool: EpicVIN.
-- **`equasis-2`** (low) — OSINT tool: Equasis.
 - **`equasis`** (low) — Equasis provides vessel ownership and safety records, as well as shipping company fleet information.
 - **`eships-net`** (low) — OSINT tool: eships.net.
 - **`europe-station-maps-floor-plan`** (low) — OSINT tool: Europe station maps floor plan.
@@ -121,7 +116,6 @@ kind: group-index
 - **`kelley-blue-book-for-cars-united-states`** (medium) — Vehicle-related website that assesses the value of a vehicle based on entered information; includes reviews, awards, and top 10s
 - **`lefranz-geneva-dictators`** (low) — OSINT tool: lefranz/geneva-dictators.
 - **`legrooms-for-google-flights`** (low) — An extension that displays the size of the legroom between the seats next to the flight information.
-- **`license-plate-lookup-2`** (medium) — OSINT tool: License Plate Lookup.
 - **`license-plate-lookup`** (medium) — OSINT tool: License Plate Lookup.
 - **`license-plate-mania`** (medium) — OSINT tool: License Plate Mania.
 - **`license-plate-maps`** (low) — Collection of tools and maps for discerning license plates by country
@@ -153,8 +147,6 @@ kind: group-index
 - **`nomerogram-ru`** (medium) — OSINT tool: Nomerogram.ru.
 - **`number-plate-check`** (medium) — OSINT tool: Number Plate Check.
 - **`open-data-soft-navitia`** (medium) — OSINT tool: Open Data Soft - Navitia.
-- **`open-source-munitions-portal-2`** (low) — Archive of verified images from conflict zones. Search by munition category, condition, characteristics, shapem, mechanical features, wall (
-- **`openrailwaymap-3`** (low) — a detailed online map of the world's railway infrastructure
 - **`opensky-network`** (low) — Community, open source flight tracking network.
 - **`openstreetmap-public-transport`** (low) — Select an area on the map (if the square around it is green, then data for that location is available) and download data (buttons on the rig
 - **`orto-website`** (medium) — OSINT tool: Orto.website.
@@ -205,7 +197,6 @@ kind: group-index
 - **`thatsthem-vin-search`** (medium) — OSINT tool: thatsthem (Vin Search).
 - **`the-burnsy-vehicle-osint`** (medium) — OSINT tool: The Burnsy Vehicle OSINT.
 - **`tokyo-mou`** (low) — Ship inspection/history database (PSC Database)
-- **`tools-3`** (medium) — OSINT tool: Tools.
 - **`track-trace`** (medium) — Package tracking and supply-chain movement checks
 - **`trade-car-checks-and-vehicle-valuation-services`** (medium) — OSINT tool: Trade Car Checks & Vehicle Valuation Services.
 - **`transit-visualisation`** (low) — ch.sbb.netzkarte,ch.sbb.netzkarte.dark\&lang=en\&layers=strassennamen,haltekanten,haltestellen,pois,p%C3%A4rke,geops.travic.live\&x=810000\&
@@ -220,11 +211,8 @@ kind: group-index
 - **`vehicle-enquiry`** (medium) — OSINT tool: Vehicle Enquiry.
 - **`vehicle-history-reports-get-a-carfax-report`** (medium) — OSINT tool: Vehicle History Reports – Get a CARFAX Report.
 - **`venicle-number-search-toolbox`** (low) — search information about car by venicle numbers (14 different countries from one page) - #GreatBritain, #Norway, #Denmark, #Russian and othe
-- **`vessel-tracker`** (low) — OSINT tool: Vessel Tracker.
 - **`vin-check-and-get-vehicle-history-report`** (medium) — OSINT tool: VIN Check and get Vehicle History Report.
 - **`vin-check-reports`** (medium) — OSINT tool: VIN Check Reports.
-- **`vin-decoder-2`** (medium) — OSINT tool: VIN Decoder.
-- **`vin-decoder-3`** (medium) — OSINT tool: VIN decoder.
 - **`vin-decoder-and-lookup`** (medium) — OSINT tool: VIN Decoder & Lookup.
 - **`vin-decoder`** (medium) — OSINT tool: VIN decoder.
 - **`vin-info`** (medium) — OSINT tool: Vin-Info.

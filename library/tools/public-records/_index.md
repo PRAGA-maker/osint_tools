@@ -11,17 +11,17 @@ kind: group-index
 - **`annual-reports/`** — 4 skill(s) below.
 - **`beneficial-ownership-lookup/`** — 3 skill(s) below.
 - **`birth-records/`** — 1 skill(s) below.
-- **`company-profiles/`** — 14 skill(s) below.
+- **`company-profiles/`** — 12 skill(s) below.
 - **`court-criminal-records/`** — 18 skill(s) below.
 - **`death-records/`** — 3 skill(s) below.
-- **`employee-profiles-and-resumes/`** — 5 skill(s) below.
+- **`employee-profiles-and-resumes/`** — 3 skill(s) below.
 - **`financial-tax-resources/`** — 3 skill(s) below.
 - **`general-info-and-news/`** — 6 skill(s) below.
 - **`government-records/`** — 3 skill(s) below.
 - **`kyc-aml-tools/`** — 3 skill(s) below.
 - **`patent-records/`** — 2 skill(s) below.
 - **`property-records/`** — 3 skill(s) below.
-- **`sanctions-pep/`** — 3 skill(s) below.
+- **`sanctions-pep/`** — 2 skill(s) below.
 - **`sanctions-screening/`** — 4 skill(s) below.
 - **`us-county-data/`** — 1 skill(s) below.
 - **`us-political-records/`** — 4 skill(s) below.
@@ -68,10 +68,7 @@ kind: group-index
 - **`ancestry-family-search-engine-united-kingdom`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database at the national country level
 - **`ar-college-university-2017-salaries`** (high) — Use when you have a `name` and want to confirm they worked at an Arkansas public college/university in 2017 — returns employer-org, job titl
 - **`arabbarometer`** (medium) — database of the results of sociological surveys conducted in the Arab countries of Africa and the Middle East in 2007-2018
-- **`arcgis-com-3`** (high) — OSINT tool: arcgis.com.
-- **`arcgis-com-4`** (high) — OSINT tool: arcgis.com.
 - **`architecture-com`** (high) — OSINT tool: architecture.com.
-- **`archive-today-2`** (medium) — Webpage capture site that archives webpages through snapshots, searchable by domain
 - **`archived-moe`** (low) — OSINT tool: archived.moe.
 - **`archives-com`** (high) — Use when you have a `name` (plus rough birth/death year and country) and want historical/vital records — returns biographical detail, addres
 - **`archives-library-information-center-alic`** (high) — Use when you have a `name` and want authoritative pointers to US vital/genealogy records (birth, death, marriage) — returns links toward add
@@ -134,13 +131,11 @@ kind: group-index
 - **`bp-statistical-review-of-world-energy`** (low) — OSINT tool: BP Statistical Review of World Energy.
 - **`bps-org-uk`** (low) — Use when you have a `name` of someone claiming to be a UK psychologist and want to verify BPS membership/chartered status — returns the prac
 - **`brazillian-address-cep-search-and-report`** (medium) — OSINT tool: Brazillian Address CEP Search and Report.
-- **`brb-public-records-2`** (low) — OSINT tool: BRB Public Records.
 - **`brb-public-records`** (medium) — Public records source directory
 - **`brooklyn-genealogy`** (high) — Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, direct
 - **`brownbook`** (medium) — OSINT tool: BrownBook.
 - **`buffalo-police`** (medium) — OSINT tool: Buffalo Police.
 - **`bulgaria`** (high) — OSINT tool: Bulgaria.
-- **`bureau-van-dijk`** (medium) — OSINT tool: Bureau Van Dijk.
 - **`burial-records-uk`** (high) — OSINT tool: Burial Records (UK).
 - **`business-directory-occ`** (low) — OSINT tool: Business Directory \| OCC.
 - **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s
@@ -238,7 +233,6 @@ kind: group-index
 - **`court-electronic-records-pacer`** (high) — Use when you have a `name` and want US federal court records (civil, criminal, bankruptcy) — returns case filings, party names and document 
 - **`court-locator-united-states-courts`** (high) — Use when you have a location (`address`/state) and need to find the right US federal court and its records system — returns the court and a 
 - **`court-records-directory-2`** (high) — Use when you have a `name` and a US location and need the right court/online case-search portal to look them up — returns pointers to court 
-- **`court-records-directory-3`** (medium) — Site providing links to court records and court information by state
 - **`court-records-directory`** (high) — Use when you have a `name` and a rough US jurisdiction and want to reach the right free official court/criminal record database — returns cu
 - **`court-records-search-directory`** (high) — Use when you have a name and a US jurisdiction and want the official court-record search for it — returns links to state/county court, docke
 - **`court-records-united-states-courts`** (high) — Use when you have a `name` involved in a US federal case and want the court docket and filings via PACER — returns name, case document-id an
@@ -313,13 +307,11 @@ kind: group-index
 - **`eca-co-uk`** (medium) — Use when you have a company `name`, `address`/area, or trade and want to confirm a UK electrical contractor is an ECA member — returns the m
 - **`edgar-u-s-securities-and-exchange-commission-filings`** (medium) — OSINT tool: EDGAR U.S. Securities and Exchange Commission Filings.
 - **`eff-atlas-of-surveillance`** (medium) — OSINT tool: EFF Atlas of Surveillance.
-- **`egafd-com-2`** (high) — OSINT tool: egafd.com.
 - **`egafd-com`** (high) — Use when you have a `name`/stage name or `image` of a European female adult-film performer and want to identify or cross-reference them — re
 - **`eircode-ie`** (high) — Use when you have an Irish `address` and want its unique Eircode (postcode), or an Eircode and want the matching address — returns a precise
 - **`electricalcompetentperson-co-uk`** (high) — Use when you have an electrician's or firm `name` (or a UK postcode) and want to confirm government-registered status — returns the register
 - **`elicit`** (medium) — AI research assistant. Find answers to any question from 175 million papers. The results show a list of papers with summaries + Summary of t
 - **`employee-contact-directory-search-novascotia-ca`** (medium) — OSINT tool: Employee Contact Directory Search \| novascotia.ca.
-- **`emporis`** (medium) — OSINT tool: EMPORIS.
 - **`en-52wmb-com`** (medium) — Search information about worldwide buyers and suppliers by product name, company name or HS code.
 - **`enotes-academic-search`** (medium) — Academic-related search engine that searches literature and provides expert summaries and analyses
 - **`eric-institute-of-education-sciences`** (medium) — Education Resources Information Center
@@ -363,7 +355,6 @@ kind: group-index
 - **`find-a-teacher`** (medium) — OSINT tool: Find a Teacher.
 - **`findagraveinscotland-com`** (high) — Use when you have a `name` of someone buried in Scotland and want their grave/headstone record — returns headstone `image`, dates (`dob`), c
 - **`findingstartups-com`** (medium) — OSINT tool: Findingstartups.com.
-- **`findmypast-2`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`findmypast-co-uk`** (high) — Use when you have a `name` (and rough era/place) and want UK/Irish genealogy and historical records — returns census, BMD, electoral, milita
 - **`findmypast-ie`** (high) — Use when you have a `name` and Irish ancestry/context and want historical records (census, BMD, church, migration) to build family and ident
 - **`findmypast`** (high) — Use when you have a `name` and want genealogy/vital records — returns census, birth/marriage/death, military and newspaper matches exposing 
@@ -450,7 +441,6 @@ kind: group-index
 - **`gov-uk-14`** (high) — Use when you have a property `address` (or title number) and want a PAST edition of the HM Land Registry register/title plan — returns histo
 - **`gov-uk-15`** (high) — Use when you have a UK `address` (or postcode) and want to confirm a property exists, see its dwelling characteristics, and date when it was
 - **`gov-uk-16`** (high) — Use when you have an `address`/postcode in England and want its flood risk and live water levels — returns flood alerts, 5-day forecast, lon
-- **`gov-uk-3`** (high) — OSINT tool: gov.uk.
 - **`gov-uk-4`** (medium) — Use when you have a `name` and want to confirm a divorce/dissolution in England & Wales and obtain the record — returns marital-status confi
 - **`gov-uk-5`** (high) — Use when you have a `name` of someone who worked in UK schools and want teacher-misconduct/prohibition records — returns the person's `name`
 - **`gov-uk-6`** (high) — Use when you have a teacher's `name` (or `employer-org` school) and want to find UK professional-misconduct panel outcomes — returns name, e
@@ -459,7 +449,6 @@ kind: group-index
 - **`gov-uk-9`** (high) — Use when you (lawfully) hold a subject's driving-licence number plus their NI number and postcode, or they give you a share code — the DVLA 
 - **`gov-uk`** (medium) — Use when you have a UK VAT number (an `employer-org` identifier) and want to validate it — HMRC returns the registered business `name` and `
 - **`govchain-co-za`** (high) — Use when you have a company name and want to check whether it is registered in South Africa (CIPC) — returns name-availability/existence, a 
-- **`govdata-das-datenportal-f-r-deutschland-german-2`** (low) — OSINT tool: GOVDATA - Das Datenportal für Deutschland (German).
 - **`govdata-das-datenportal-f-r-deutschland-german`** (medium) — German administrative data
 - **`government-of-canada-open-data`** (low) — OSINT tool: Government of Canada Open Data.
 - **`government-staff-directory`** (medium) — OSINT tool: Government staff directory.
@@ -666,7 +655,6 @@ kind: group-index
 - **`missouri`** (high) — Use when you have a `name` and want to check whether a subject is in Missouri Department of Corrections custody or supervision — returns off
 - **`mmc-gov-my`** (high) — Use when you have a doctor's `name` in Malaysia and want to verify registration — returns their registration number, qualifying institution,
 - **`mobile-al-salaries-search-and-report`** (medium) — OSINT tool: Mobile AL Salaries Search and Report.
-- **`mocavo-find-my-past`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`moci-gov-kw`** (high) — Use when you have a Kuwaiti company or trade `name` and want its official commercial-registration details — returns registry data tying busi
 - **`molfar-com`** (high) — Use when you have a lead and need the right public register or OSINT app for a jurisdiction — Molfar's curated directory returns links to re
 - **`money-house-search-switzerland`** (medium) — Business-related search engine that searches global results by company, location, and country
@@ -684,7 +672,6 @@ kind: group-index
 - **`myewc-wales-2`** (high) — Use when you have a `name` of a Welsh education practitioner and want registration status or disciplinary orders — returns employer-org cont
 - **`myewc-wales`** (high) — Use when you have a `name` and want to confirm a Welsh teacher/education worker's professional registration — returns registration status, `
 - **`myfamilyannouncements-co-uk`** (high) — Use when you have a `name` and want UK newspaper family notices — births, deaths, marriages, in memoriam — returns published notices with da
-- **`myheritage-2`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`myheritage-com`** (high) — Use when you have a `name` and want genealogical records and family-tree links — relatives, dates, places — to map a person's family network
 - **`myheritage`** (high) — Use when you have a `name` and want genealogical records — births, marriages, deaths, family links — to establish relatives, `dob`, and life
 - **`myplan-ie`** (high) — Use when you have an Irish property `address`/location and want planning applications there (applicant names, addresses) — returns name, add
@@ -783,7 +770,6 @@ kind: group-index
 - **`open-corporates-command-line-client-occli`** (medium) — Gathering detailed information about company through cli.
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
 - **`open-data-policing`** (medium) — OSINT tool: Open Data Policing.
-- **`open-data-portal-m-nchen-german-2`** (low) — OSINT tool: Open-Data-Portal München (German).
 - **`open-data-portal-m-nchen-german`** (medium) — Munich municipal administrative data
 - **`open-knowledge-maps`** (medium) — Visual research engine of publications
 - **`opendata-by-socrata`** (low) — OSINT tool: OpenData by Socrata.
@@ -796,7 +782,6 @@ kind: group-index
 - **`opensanctions-org`** (low) — OSINT tool: Opensanctions.org.
 - **`opensupplyhub-org`** (high) — Use when you have a company/brand or factory `name`/`address` and want to map global production facilities and who sources from them — retur
 - **`optical-org`** (medium) — Use when you have a `name` and want to confirm a UK optician/optometrist's registration and practice — returns registrant status, registrati
-- **`orbis-directory`** (medium) — OSINT tool: Orbis directory.
 - **`oregon-dpsst-professional-standards-cases-database`** (medium) — OSINT tool: Oregon DPSST Professional Standards Cases Database.
 - **`oregon-offender-search`** (high) — Use when you have a `name` and want Oregon DOC custody/offender records — returns the offender's name, DOB, ID number, photo and status/loca
 - **`os-birth-records`** (high) — Use when you have a `name` and want a state-by-state directory of official birth/vital-record sources — returns links to `dob`, `name` and `
@@ -872,7 +857,6 @@ kind: group-index
 - **`psa-gov-ie`** (high) — Use when you have a contractor/employee `name` or `employer-org` in Irish private security and want to verify their PSA licence — returns li
 - **`public-access-to-court-electronic-records`** (high) — Use when you have a `name` and want US federal court cases (dockets, parties, filings) they are involved in — returns document-id, associate
 - **`public-library-of-science-search`** (medium) — Academic-related search engine for the Public Library of Science articles, providing access to various scientific publications and collectio
-- **`public-records-2`** (low) — OSINT tool: Public Records?.
 - **`public-records-directory`** (high) — Use when you have a `name`/location and want the right official record source for it — returns a curated directory of free US public-records
 - **`public-records`** (medium) — Unclear - requires VP clarification
 - **`punternet-com`** (high) — OSINT tool: punternet.com.
@@ -880,8 +864,6 @@ kind: group-index
 - **`quicksold-co-uk`** (high) — OSINT tool: quicksold.co.uk.
 - **`ratemyteachers-com`** (high) — Use when you have a teacher's `name` (and ideally their school as `employer-org`) and want to confirm where they teach/taught — returns `emp
 - **`rbo-gov-ie`** (high) — Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/y
-- **`rcmp-death-search-2`** (medium) — OSINT tool: RCMP Death Search 2.
-- **`rcmp-death-search-3`** (medium) — OSINT tool: RCMP Death Search 3.
 - **`rcmp-death-search`** (medium) — OSINT tool: RCMP Death Search.
 - **`rcvs-org-uk`** (high) — Use when you have a `name` and want to confirm/locate a UK veterinary surgeon or nurse — returns registration status, qualifications, and th
 - **`realtor`** (medium) — OSINT tool: Realtor.
@@ -913,7 +895,6 @@ kind: group-index
 - **`rjsc-connect`** (low) — OSINT tool: RJSC Connect.
 - **`romania`** (high) — Use when you have a Romanian `employer-org`/company name (or CUI) and want the official trade-register record — returns registered `address`
 - **`rootsweb-2`** (high) — Use when you have a `name` and want ancestry/family links — returns user-submitted family trees (WorldConnect), relatives, birth/death dates
-- **`rootsweb-3`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`ros-gov-uk-2`** (high) — Use when you have a Scottish property `address` (postcode) and want the owner and price history — returns owner name, address, and document-
 - **`ros-gov-uk`** (high) — Use when you have a `name` or Scottish `address` and want property ownership or a will/deed — returns address, owner name and employer-org l
 - **`royal-canadian-mounted-police`** (medium) — OSINT tool: Royal Canadian Mounted Police.
@@ -944,7 +925,6 @@ kind: group-index
 - **`search-polk-county-ordinance`** (high) — OSINT tool: Search Polk County Ordinance.
 - **`search-systems-criminal-records`** (high) — Use when you have a `name` and need to find the right public-records database for a jurisdiction — a directory routing you to court, crimina
 - **`search-the-open-information-catalogue`** (medium) — OSINT tool: Search the Open Information Catalogue.
-- **`searchable-fcc-id-database-2`** (low) — OSINT tool: Searchable FCC ID Database.
 - **`searchable-fcc-id-database`** (medium) — Electronics device certification lookup
 - **`searching-state-courts`** (high) — OSINT tool: Searching state courts.
 - **`searchsystems-birth-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database that holds a birth or vital record — 
@@ -960,7 +940,6 @@ kind: group-index
 - **`selective-service-online-registration`** (medium) — Selective Service Systems Online Registration Search - search requires last name, social security number and date of birth
 - **`sellerapp-com-amazon-reverse-asin-search`** (medium) — OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.
 - **`semantic-scholar`** (medium) — Searchable database of peer-reviewed research and liteature
-- **`semrush`** (medium) — OSINT tool: SEMrush.
 - **`serpstat`** (medium) — OSINT tool: Serpstat.
 - **`service-gov-uk`** (high) — Use when you have a `name` and want to confirm a death and find the will/grant of probate in England & Wales — returns death date, probate r
 - **`services-en-ligne`** (low) — OSINT tool: Services en ligne.
@@ -1018,7 +997,6 @@ kind: group-index
 - **`sweetsearch`** (medium) — Research search engine for students
 - **`switzerland`** (high) — Use when you have a company or director `name` in Switzerland and want official commercial-register detail — returns the company, registered
 - **`systemday-com`** (medium) — Use when you have a company `name` or number in an offshore/hard-to-reach jurisdiction and want an official registry search report — returns
-- **`taxpolicy-org-uk-2`** (high) — OSINT tool: taxpolicy.org.uk.
 - **`taxpolicy-org-uk`** (high) — OSINT tool: taxpolicy.org.uk.
 - **`teachingcouncil-ie`** (high) — Use when you have a `name` you believe belongs to an Irish teacher and want to confirm their registration status and registration number — r
 - **`tellmescotland-gov-uk`** (high) — Use when you have a Scottish `address`/`geolocation` and want the statutory public notices (planning, licensing, roadworks) attached to it —
@@ -1042,7 +1020,6 @@ kind: group-index
 - **`the-ryerson-index-australia`** (high) — Use when you have a `name` and want to confirm an Australian death or find the obituary/funeral trail — returns death-notice index entries p
 - **`the-tribal-court-clearinghouse`** (high) — Use when a case touches a US tribal jurisdiction and you need to identify the right tribal court and its records/contacts — a reference port
 - **`the-weapons-id-database`** (high) — Use when you have an `image` or `physical-description` of a firearm/ammunition and want to identify make, model and markings — returns weapo
-- **`the-world-bank-open-data-catalog-2`** (low) — OSINT tool: The World Bank Open Data Catalog.
 - **`the-world-bank-open-data-catalog`** (medium) — Development data and statistics
 - **`thebppa-com`** (high) — Use when you have a `name` and suspect the subject is a UK press photographer and want their portfolio, byline history and professional iden
 - **`thegazette-co-uk`** (high) — Use when you have a `name` and want official UK notices — insolvency, deceased-estates/wills, and company notices — returns published notice
@@ -1136,12 +1113,10 @@ kind: group-index
 - **`wisconsin`** (high) — Use when you have a `name` and want to check Wisconsin state custody, supervision or sex-offender status — returns identity confirmation, do
 - **`wiscvoters-com`** (high) — OSINT tool: Wiscvoters.com.
 - **`worcester-ma-employee-gross-pay`** (medium) — OSINT tool: Worcester MA Employee Gross Pay.
-- **`world-bank-data-2`** (low) — OSINT tool: World Bank Data.
 - **`world-bank-data`** (low) — OSINT tool: World Bank Data.
 - **`world-bank-doing-business`** (low) — OSINT tool: World Bank Doing Business.
 - **`world-bank-enterprise-surveys`** (low) — OSINT tool: World Bank Enterprise Surveys.
 - **`world-bank-investing-across-borders`** (low) — OSINT tool: World Bank Investing Across Borders.
-- **`world-digital-library-2`** (medium) — Digital library of archived historical documents and cultural content
 - **`world-integrated-trade-solution`** (low) — OSINT tool: World Integrated Trade Solution.
 - **`world-wide-science-resources`** (medium) — Academic-related global science gateway includes a list of websites participating in WorldWideScience.org
 - **`wto-statistics`** (low) — OSINT tool: WTO Statistics.

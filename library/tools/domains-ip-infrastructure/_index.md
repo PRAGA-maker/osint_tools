@@ -8,23 +8,23 @@ kind: group-index
 
 ## Sub-groups
 - **`advisories/`** — 10 skill(s) below.
-- **`analytics/`** — 19 skill(s) below.
+- **`analytics/`** — 12 skill(s) below.
 - **`attack-surface-security-testing/`** — 1 skill(s) below.
 - **`aws-enumeration/`** — 3 skill(s) below.
 - **`azure-gcp-discovery/`** — 5 skill(s) below.
 - **`bgp/`** — 4 skill(s) below.
 - **`blacklists/`** — 4 skill(s) below.
-- **`certificate-search/`** — 8 skill(s) below.
-- **`change-detection/`** — 7 skill(s) below.
+- **`certificate-search/`** — 6 skill(s) below.
+- **`change-detection/`** — 6 skill(s) below.
 - **`cloud-configuration-analysis/`** — 5 skill(s) below.
 - **`default-passwords/`** — 7 skill(s) below.
-- **`discovery/`** — 14 skill(s) below.
+- **`discovery/`** — 12 skill(s) below.
 - **`dnssec/`** — 2 skill(s) below.
-- **`domain-blacklists/`** — 13 skill(s) below.
+- **`domain-blacklists/`** — 8 skill(s) below.
 - **`exploits/`** — 2 skill(s) below.
 - **`geolocation/`** — 8 skill(s) below.
-- **`host-port-discovery/`** — 12 skill(s) below.
-- **`ioc-tools/`** — 7 skill(s) below.
+- **`host-port-discovery/`** — 7 skill(s) below.
+- **`ioc-tools/`** — 6 skill(s) below.
 - **`ip-loggers/`** — 3 skill(s) below.
 - **`ipv4/`** — 8 skill(s) below.
 - **`ipv6/`** — 1 skill(s) below.
@@ -34,19 +34,19 @@ kind: group-index
 - **`phishing/`** — 4 skill(s) below.
 - **`protected-by-cloud-services/`** — 2 skill(s) below.
 - **`report-malicious-sites/`** — 2 skill(s) below.
-- **`reputation/`** — 22 skill(s) below.
+- **`reputation/`** — 21 skill(s) below.
 - **`s3-blob-storage/`** — 5 skill(s) below.
-- **`saas-footprinting/`** — 5 skill(s) below.
+- **`saas-footprinting/`** — 3 skill(s) below.
 - **`social-analysis/`** — 1 skill(s) below.
-- **`subdomains/`** — 19 skill(s) below.
-- **`terrorism-and-extremism/`** — 9 skill(s) below.
-- **`threat-feeds-and-platforms/`** — 19 skill(s) below.
-- **`tools/`** — 6 skill(s) below.
-- **`ttps/`** — 3 skill(s) below.
+- **`subdomains/`** — 17 skill(s) below.
+- **`terrorism-and-extremism/`** — 7 skill(s) below.
+- **`threat-feeds-and-platforms/`** — 16 skill(s) below.
+- **`tools/`** — 5 skill(s) below.
+- **`ttps/`** — 2 skill(s) below.
 - **`typosquatting/`** — 4 skill(s) below.
-- **`url-expanders/`** — 5 skill(s) below.
-- **`vulnerabilities/`** — 5 skill(s) below.
-- **`whois-records/`** — 15 skill(s) below.
+- **`url-expanders/`** — 4 skill(s) below.
+- **`vulnerabilities/`** — 4 skill(s) below.
+- **`whois-records/`** — 14 skill(s) below.
 - **`wireless-network-info/`** — 2 skill(s) below.
 
 ## Skills here
@@ -81,14 +81,12 @@ kind: group-index
 - **`apt-groups-and-operations`** (low) — OSINT tool: APT Groups and Operations.
 - **`archiveready`** (low) — OSINT specialists most often use various web archives to analyze other people's sites. But if you want your descendants to be able to find y
 - **`argus`** (low) — All-in-one information gathering toolkit with many modular recon scripts.
-- **`arin-net-2`** (medium) — OSINT tool: arin.net.
 - **`arin-net`** (medium) — OSINT tool: arin.net.
 - **`arin`** (medium) — OSINT tool: ARIN.
 - **`arvixe-uk`** (medium) — UK based service provider for registering websites and domain addresses
 - **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
 - **`atsameip-intercode-ca`** (medium) — OSINT tool: atsameip.intercode.ca.
 - **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
-- **`auto-scroll-search-2`** (low) — A simple extension for Chrome that automatically scrolls a web page until a certain word or phrase appears on it (or until the stop button i
 - **`autoexif`** (low) — A simple script to read and delete metadata from images and ACVH videos.
 - **`awesome-tech-stack`** (low) — OSINT tool: Awesome Tech Stack.
 - **`azure-tenant-resolution-by-pingcastle`** (low) — OSINT tool: Azure Tenant Resolution by PingCastle.
@@ -122,7 +120,6 @@ kind: group-index
 - **`checkphishai`** (low) — An online tool that finds registered domain typosquats and analyzes them for suspicious activity.
 - **`chismodon`** (low) — Command line #osint toolkit for domain information gathering. Search by domain name, Google Play Store ID, CIDR/ASN, email/username/password
 - **`cira-whois-canada`** (medium) — Tool that identifies the available registration information for a website or domain name
-- **`cisco-talos-intelligence-2`** (low) — OSINT tool: Cisco Talos Intelligence.
 - **`cloakquest3r`** (low) — Tool to uncover the IP address hidden by Cloudflare (or alternatives): - IP address History, - SSL Certificate Analysis, - Subdomain Scannin
 - **`cloudbrute`** (low) — Tool to find target infrastructure, files, and apps on the popular cloud providers
 - **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.
@@ -132,7 +129,6 @@ kind: group-index
 - **`cmlabs-tools`** (low) — OSINT tool: CMLabs Tools.
 - **`coffer-com`** (medium) — OSINT tool: coffer.com.
 - **`cogipas-internet-privacy-guide`** (medium) — Search tool that identifies the IP address you are currently using
-- **`columbus-project-2`** (low) — A fast, API-first subdomain discovery service with advanced queries.
 - **`conexcol-hosting-colombia`** (medium) — Service provider for registering websites and domain addresses
 - **`contacts-details-scraper`** (low) — Free contact details scraper to extract and download emails, phone numbers, Facebook, Twitter, LinkedIn, and Instagram profiles from any web
 - **`content-security-policy-csp-validator`** (low) — Online service for checking the headers and meta tags of websites for compliance with security standards. It can help determine if a site is
@@ -154,23 +150,16 @@ kind: group-index
 - **`ditto`** (low) — Dsmall tool that accepts a domain name as input and generates all its variants for an homograph attack as output, checking which ones are av
 - **`dns-history-lookup`** (low) — OSINT tool: DNS History Lookup.
 - **`dns-history`** (low) — OSINT tool: DNS History.
-- **`dns-twist-2`** (medium) — Search for domain name permutations, results include IP Address, DNS & Mail Server
 - **`dnslytics-com`** (medium) — OSINT tool: dnslytics.com.
 - **`dnsquery`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`dnsreaper`** (low) — TwiSub-domain takeover tool
 - **`dnsstuff-tools`** (medium) — Includes domain tools, IP tools, networking tools, and email tools
 - **`domain-codex`** (low) — OSINT tool: Domain Codex.
-- **`domain-crawler`** (low) — OSINT tool: Domain Crawler.
 - **`domain-intelligence`** (low) — OSINT tool: Domain Intelligence.
 - **`domain-investigation-toolbox`** (low) — gather information about domain with 41 online tools from one page.
-- **`domain-tools`** (low) — OSINT tool: Domain Tools.
 - **`domainbigdata`** (low) — OSINT tool: domainbigdata.
 - **`domainiq-com`** (medium) — OSINT tool: domainiq.com.
 - **`domainrecon`** (low) — OSINT tool: DomainRecon.
-- **`domaintools-com`** (medium) — OSINT tool: domaintools.com.
-- **`domaintools-ping-test`** (medium) — Analysis tool that assesses the status of an IP address
-- **`domaintools-reverse-ip`** (medium) — Search tool that helps identify the IP address soomeone else is using
-- **`domaintools-whois-lookup`** (low) — DomainTools Whois provides detailed domain name registration information, and can be used to investigate details about domains or IP address
 - **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
 - **`domainwatch`** (low) — OSINT tool: DomainWatch.
 - **`dome`** (low) — Fast and reliable #python script that makes active and/or passive scan to obtain subdomains and search for open ports. Used 21 different #OS
@@ -189,8 +178,6 @@ kind: group-index
 - **`easy-dns-canada`** (medium) — Service provider for registering websites and domain addresses
 - **`ekhwan-uae`** (medium) — UAE based service provider for registering websites and domain addresses
 - **`elisa-net-finland`** (medium) — Finnish telecommunications and digital services website
-- **`email-finder-2`** (low) — Another tool to collect emails registered on a certain domain from search results (google, bing, baidu, yandex). Can be used in combination 
-- **`emailharvester-2`** (low) — A tool to collect emails registered on a certain domain from search results (google, bing, yahoo, ask) and save the results to a text file. 
 - **`enom-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
 - **`etda`** (low) — OSINT tool: ETDA.
@@ -206,9 +193,7 @@ kind: group-index
 - **`find-plus`** (low) — Regex Find-in-Page Tool
 - **`findmyass-hostspider`** (low) — Domain investigations toolkit
 - **`focsec`** (low) — OSINT tool: Focsec.
-- **`fofa-2`** (low) — OSINT tool: FOFA.
 - **`follow-net`** (low) — OSINT tool: Follow.net.
-- **`fortiguard-labs-2`** (low) — OSINT tool: Fortiguard Labs.
 - **`fortiguard-labs`** (low) — OSINT tool: FortiGuard Labs.
 - **`free-hosting`** (medium) — Service provider for hosting webpages and websites
 - **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
@@ -241,7 +226,6 @@ kind: group-index
 - **`greynoise-intelligence`** (low) — OSINT tool: GreyNoise Intelligence.
 - **`gtmetrix-website-performance`** (medium) — Provides details about your website's speed and performance, and allows searching for information about any website
 - **`h3x-cctv`** (low) — A simple command line tool with a Google Dorks list to find vulnerable CCTV cameras
-- **`hachoir-2`** (low) — One of the most powerful tools for work with files metadata with the most detailed settings.
 - **`hacker-target`** (medium) — Includes tools such as Whoislookup, IP lookup, reverse IP lookup, traceroute, dns lookup, reverse dns lookup, ping test, and more
 - **`hackertarget-com`** (medium) — OSINT tool: hackertarget.com.
 - **`hackertarget`** (low) — 14 tools for gathering information about domain using Hackerarget API ([http://hackertarget.com](http://hackertarget.com))
@@ -250,8 +234,6 @@ kind: group-index
 - **`hcl-threat-map`** (low) — OSINT tool: HCL Threat Map.
 - **`headlines-sharethrough-com`** (low) — analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100
 - **`heartbleed-check`** (low) — OSINT tool: Heartbleed Check.
-- **`here-4`** (medium) — OSINT tool: Here.
-- **`here-5`** (medium) — OSINT tool: Here.
 - **`hexometer-stack-checker`** (low) — OSINT tool: Hexometer stack checker.
 - **`host-on-net-singapore`** (medium) — Singapore based service provider for registering websites and domain addresses
 - **`hostgator-united-states`** (medium) — Service provider for registering websites and domain addresses
@@ -336,14 +318,11 @@ kind: group-index
 - **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image
 - **`majestic`** (low) — OSINT tool: Majestic.
 - **`majordomo-russia`** (medium) — Service provider for registering websites and domain addresses; Russia-based
-- **`mark-monitor-whois`** (low) — OSINT tool: Mark Monitor WHOIS.
-- **`markmonitor-search-whois`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`matika`** (medium) — Browser extension for searching IP, domain, URL, hash, etc. via the context menu
 - **`maxmind`** (low) — OSINT tool: MaxMind.
 - **`mayorsecdnsscan`** (low) — Identify DNS records for target domains, check for zone transfers and conduct subdomain enumeration.
 - **`metabigor`** (low) — OSINT tools for intelligence gathering without requiring API keys.
 - **`metadata-parser`** (low) — A simple #Python library to help retrieve website metadata by URL (description, location, keywords, keywords, images, content author names, 
-- **`metadefender-2`** (low) — OSINT tool: MetaDefender.
 - **`metadetective`** (low) — A simple tool that analyzes the metadata of files in a specific directory and extracts important information from them (names of document cr
 - **`metafinder`** (low) — At first glance, it seems like just another tool that searches for documents on a company's website in search engines and analyzes their met
 - **`mijndomein-netherlands`** (medium) — Service provider for registering websites and domain addresses
@@ -382,7 +361,6 @@ kind: group-index
 - **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.
 - **`nmap-formatter`** (low) — A tool to convert NMAP scan results into different formats: html, csv, Markdown, json, svg (Graphviz), sqlite
 - **`nmap-online`** (low) — OSINT tool: NMAP Online.
-- **`nominet-uk-2`** (medium) — OSINT tool: nominet.uk.
 - **`nominet-uk`** (medium) — OSINT tool: nominet.uk.
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
@@ -408,7 +386,6 @@ kind: group-index
 - **`pageglimpse`** (low) — OSINT tool: PageGlimpse.
 - **`papaki-whois-search`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`pentest-tools-com`** (low) — OSINT tool: Pentest-Tools.com.
-- **`photon-2`** (low) — OSINT tool: photon.
 - **`pidrila`** (low) — Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
 - **`piwik-web-analytics`** (medium) — Search for information and statistics about any online website using open source software
 - **`planethoster-canada`** (medium) — Service provider for registering websites and domain addresses
@@ -459,7 +436,6 @@ kind: group-index
 - **`secmas-host-guatemala`** (medium) — Guatemala based service provider for registering websites and domain addresses
 - **`secretfinder`** (low) — Tool for find sensitive data (apikeys, accesstoken,jwt,..) or search anything with #regexp on #javascript files
 - **`secure-gateway-live-cyber-threat-map`** (low) — OSINT tool: Secure Gateway Live Cyber Threat Map.
-- **`securitytrails-2`** (low) — OSINT tool: SecurityTrails.
 - **`securitytrails`** (low) — OSINT tool: SecurityTrails.
 - **`seekolver`** (low) — #python tool for searching and filtering subdomains using different APIs: SecurityTrails, AlienVault, VirusTotal, SpyOnWeb, Crt sh
 - **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
@@ -493,7 +469,6 @@ kind: group-index
 - **`spyse-cli`** (low) — command line client for Spyse.com
 - **`spyse-com`** (low) — domain investigation toolbox
 - **`sqli-dorks-generator`** (low) — python script generates Google Dorks for SQL Injections for sites from the list.
-- **`squarespace-2`** (medium) — Service provider for building and hosting webpages and websites
 - **`squatm3gator`** (low) — OSINT tool: Squatm3gator.
 - **`striker`** (low) — Quick and simple tool for gathering information about domain (http headers, technologies, vulnerabilities etc).
 - **`stylifyme`** (low) — Tool for analyzing the style characteristics of a particular website. In the context of #osint, it will help when analyzing links between tw
@@ -545,7 +520,6 @@ kind: group-index
 - **`vincos-it`** (low) — world social media popularity map
 - **`virus-total`** (low) — OSINT tool: Virus Total.
 - **`visual-ping-website-monitoring`** (medium) — Website monitoring tool that monitors webpages for changes
-- **`visual-site-mapper-2`** (low) — A free online tool for generating site maps in graph form. Allows you to visually see the links between the pages of a website and estimate 
 - **`vmaker-host-pakistan`** (medium) — Service provider for registering websites and domain addresses
 - **`vstat-info`** (low) — Getting detailed info about website traffic (sources, keywords, linked sites etc)
 - **`w3snoop`** (low) — OSINT tool: w3snoop.
@@ -597,7 +571,6 @@ kind: group-index
 - **`whoxy`** (low) — OSINT tool: Whoxy.
 - **`whtop`** (medium) — Webhosting directory including tools such as IP location lookup, as well as other website information
 - **`wintelguy-com`** (medium) — OSINT tool: wintelguy.com.
-- **`wix-2`** (medium) — Website builder that offers web hosting as well
 - **`woorank-review-and-seo`** (medium) — Search for information and statistics about any online website
 - **`wordpress`** (medium) — Website creation and hosting site
 - **`wordtune-com`** (low) — Provide a link to the text of the article or upload a PDF document. In response, the service will give a brief retelling of the main ideas o

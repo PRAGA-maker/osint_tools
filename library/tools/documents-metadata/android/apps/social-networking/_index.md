@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`facebook`** (medium) — Profile reconnaissance, relationship mapping, photo analysis, location tracking
-- **`linkedin-2`** (medium) — Professional background verification, corporate reconnaissance, employment history research
 - **`pinterest`** (medium) — Interest profiling, location discovery, lifestyle analysis, image reverse search
 - **`twitter`** (medium) — Real-time monitoring, account verification, relationship mapping, sentiment analysis
 

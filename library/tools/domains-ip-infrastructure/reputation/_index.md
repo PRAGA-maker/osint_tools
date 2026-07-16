@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`alienvault-open-threat-exchange`** (low) — Community threat intelligence sharing
-- **`avg-threat-labs`** (low) — Website safety assessment, threat detection reports, website popularity tracking
 - **`bluecoat-webpulse`** (low) — URL categorization, website reputation filtering, malicious link detection
 - **`cisco-talos`** (low) — IP/domain reputation intelligence
 - **`deepviz-domain-search`** (low) — Domain/IP threat intelligence, malware analysis, threat feed subscription

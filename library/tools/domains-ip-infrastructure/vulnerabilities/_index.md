@@ -8,7 +8,7 @@ kind: group-index
 
 ## Sub-groups
 - **`disclosure-sites/`** — 1 skill(s) below.
-- **`scanners/`** — 3 skill(s) below.
+- **`scanners/`** — 2 skill(s) below.
 
 ## Skills here
 - **`robotsdisallowed`** (low) — robots.txt enumeration and directory discovery

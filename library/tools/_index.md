@@ -7,29 +7,29 @@ kind: group-index
 # root
 
 ## Sub-groups
-- **`ai-analysis-automation/`** — 485 skill(s) below.
-- **`archives-cache/`** — 150 skill(s) below.
-- **`communities-forums/`** — 449 skill(s) below.
-- **`dark-web/`** — 130 skill(s) below.
-- **`dating-classifieds/`** — 122 skill(s) below.
-- **`documents-metadata/`** — 334 skill(s) below.
-- **`domains-ip-infrastructure/`** — 842 skill(s) below.
+- **`ai-analysis-automation/`** — 457 skill(s) below.
+- **`archives-cache/`** — 144 skill(s) below.
+- **`communities-forums/`** — 439 skill(s) below.
+- **`dark-web/`** — 121 skill(s) below.
+- **`dating-classifieds/`** — 117 skill(s) below.
+- **`documents-metadata/`** — 321 skill(s) below.
+- **`domains-ip-infrastructure/`** — 777 skill(s) below.
 - **`email/`** — 254 skill(s) below.
-- **`evidence-capture/`** — 36 skill(s) below.
-- **`financial-crypto/`** — 168 skill(s) below.
-- **`geolocation/`** — 368 skill(s) below.
-- **`image-video-face/`** — 571 skill(s) below.
-- **`maps-geospatial-data/`** — 152 skill(s) below.
-- **`messaging/`** — 253 skill(s) below.
-- **`opsec-investigator-tooling/`** — 582 skill(s) below.
-- **`people-search/`** — 300 skill(s) below.
-- **`phone/`** — 153 skill(s) below.
-- **`public-records/`** — 1230 skill(s) below.
-- **`search-engines/`** — 1027 skill(s) below.
-- **`social-networks/`** — 1043 skill(s) below.
+- **`evidence-capture/`** — 33 skill(s) below.
+- **`financial-crypto/`** — 135 skill(s) below.
+- **`geolocation/`** — 362 skill(s) below.
+- **`image-video-face/`** — 558 skill(s) below.
+- **`maps-geospatial-data/`** — 147 skill(s) below.
+- **`messaging/`** — 238 skill(s) below.
+- **`opsec-investigator-tooling/`** — 567 skill(s) below.
+- **`people-search/`** — 297 skill(s) below.
+- **`phone/`** — 152 skill(s) below.
+- **`public-records/`** — 1200 skill(s) below.
+- **`search-engines/`** — 995 skill(s) below.
+- **`social-networks/`** — 998 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
-- **`translation-language/`** — 109 skill(s) below.
-- **`transportation/`** — 249 skill(s) below.
+- **`translation-language/`** — 103 skill(s) below.
+- **`transportation/`** — 237 skill(s) below.
 - **`username/`** — 110 skill(s) below.
 
 

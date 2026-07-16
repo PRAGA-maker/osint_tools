@@ -10,7 +10,6 @@ kind: group-index
 - **`change-detection`** (low) — Self-hosted page change monitoring
 - **`changedetect`** (low) — Flexible page change monitoring with self-hosted control
 - **`follow-that-page`** (low) — Tracking updates on specific web pages by keyword
-- **`upcheck`** (low) — Quick site availability checks
 - **`urlwatch`** (low) — Self-hosted web page change monitoring automation
 - **`visualping`** (low) — Automated webpage change monitoring
 - **`watchthatpage`** (low) — Monitoring static web pages for updates over time

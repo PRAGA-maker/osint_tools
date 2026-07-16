@@ -7,8 +7,6 @@ kind: group-index
 # evidence-capture/web-browsing
 
 ## Skills here
-- **`archive-is-2`** (medium) — Web archiving, evidence preservation, historical snapshots
-- **`burp-suite-2`** (medium) — Web application security testing, vulnerability discovery, traffic analysis
 - **`ezr-osint-sidebar`** (medium) — OSINT data extraction, metadata analysis, investigation documentation
 - **`fiddler`** (medium) — Network traffic analysis, web debugging, protocol inspection
 - **`forensic-osint`** (medium) — Evidence capture, legal documentation, case-level review

@@ -7,7 +7,6 @@ kind: group-index
 # social-networks/other-social-networks
 
 ## Skills here
-- **`asian-avenue`** (high) — Searching archived Asian Avenue profile data
 - **`ask-fm`** (high) — Use when you have an `username` and want to check for an ASKfm profile — returns the public Q&A history, likes and follower links that often
 - **`blackplanet-com-member-find`** (high) — Use when you have a `username` or `name` and want to find a profile on BlackPlanet, a large African-American social network — returns a `soc
 - **`delicious`** (high) — Use when you have a `username` and want that person's public social-bookmarking profile and saved links to infer interests and other handles

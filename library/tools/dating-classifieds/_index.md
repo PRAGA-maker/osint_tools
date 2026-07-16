@@ -33,7 +33,6 @@ kind: group-index
 - **`ebay-classifieds-united-states`** (medium) — One of the Top 10 classified advertisements-related websites worldwide
 - **`ebay`** (low) — Use when you have a `username` and want to research a subject's selling/buying history, feedback, and location hints on the world's largest 
 - **`ebin-pub`** (medium) — OSINT tool: ebin.pub.
-- **`eharmony`** (medium) — OSINT tool: eHarmony.
 - **`eroticbeauties-net`** (medium) — OSINT tool: eroticbeauties.net.
 - **`espanafans-com`** (medium) — OSINT tool: espanafans.com.
 - **`fairfax-advertisers-classified-ads-australia`** (medium) — Classified advertisements-related website that provides regional services
@@ -82,9 +81,6 @@ kind: group-index
 - **`onlydanske-dk`** (medium) — OSINT tool: onlydanske.dk.
 - **`onlyespana-es`** (medium) — OSINT tool: onlyespana.es.
 - **`onlyfam`** (medium) — OnlyFans search and model finder.
-- **`onlyfans-com-2`** (medium) — OSINT tool: onlyfans.com.
-- **`onlyfans-com-3`** (medium) — OSINT tool: onlyfans.com.
-- **`onlyfans-com-4`** (medium) — OSINT tool: onlyfans.com.
 - **`onlyfans-com`** (medium) — OSINT tool: onlyfans.com.
 - **`onlyfans-finder`** (medium) — Advanced OnlyFans search with filtering.
 - **`onlyfinder-com`** (medium) — OSINT tool: onlyfinder.com.
@@ -123,7 +119,6 @@ kind: group-index
 - **`truedater-online-dating-reports`** (medium) — OSINT tool: TrueDater (Online Dating Reports).
 - **`ukclassifieds`** (medium) — Classified advertisements-related website that provides regional services
 - **`used-ca`** (medium) — One of the Top 10 classified advertisements-related websites in Canada
-- **`usersearch-org-2`** (medium) — OSINT tool: usersearch.org.
 - **`vivastreet-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
 - **`x-ray-contact`** (medium) — OSINT tool: x-ray.contact.
 - **`yakaz-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services

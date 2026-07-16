@@ -7,9 +7,7 @@ kind: group-index
 # ai-analysis-automation/virtual-machines
 
 ## Skills here
-- **`buscador-os`** (low) — OSINT investigations; pre-configured OSINT toolkit
 - **`kali-linux-os`** (low) — Penetration testing; security research; red team operations; OSINT research
-- **`microsoft-edge-development-os-vms`** (low) — Web development; Edge browser compatibility testing
 - **`parrotsec-os`** (low) — Penetration testing; red team; privacy-conscious computing; cybersecurity research
 - **`subgraph-os`** (low) — High-security threat model; adversary resistance; encrypted communications
 - **`tails-live-os`** (low) — High-anonymity OSINT; Tor-based anonymous communication for journalists and activists

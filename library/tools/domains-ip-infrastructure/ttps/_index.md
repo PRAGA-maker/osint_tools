@@ -7,7 +7,6 @@ kind: group-index
 # domains-ip-infrastructure/ttps
 
 ## Skills here
-- **`malware-exploit-ttp-database`** (low) — Malware exploit research
 - **`mitre-att-and-ck`** (low) — OSINT tool: MITRE ATT&CK.
 - **`mitre-ttps`** (low) — Threat modeling and TTP analysis
 

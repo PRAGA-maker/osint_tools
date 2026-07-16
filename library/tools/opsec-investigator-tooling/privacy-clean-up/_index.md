@@ -8,9 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`awesome-opt-out-guide-2026`** (medium) — Data broker removal, comprehensive opt-out across multiple platforms and services
-- **`credit-freeze`** (medium) — Protecting personal identity, hardening against identity theft, reducing data broker profiles
 - **`fake-us-identities`** (medium) — Generating synthetic US identity data for persona creation and testing
-- **`intel-techniques-hiding-from-the-internet`** (medium) — Personal OPSEC hardening, digital footprint removal, data broker opt-outs
 - **`just-delete-me`** (medium) — Removing digital footprint, deleting OSINT research accounts, cleaning up persona accounts
 - **`optout-credit-prescreen`** (medium) — Reducing data broker exposure, removing from credit prescreening lists
 - **`panopticlick`** (medium) — Measuring browser fingerprint uniqueness, testing tracker blocking effectiveness

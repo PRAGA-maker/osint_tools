@@ -15,10 +15,8 @@ kind: group-index
 - **`apple-com`** (medium) — OSINT tool: apple.com.
 - **`apple-maps`** (low) — Apple Maps is a digital mapping service with detailed, interactive maps, satellite imagery, and location-based information.
 - **`aqueduct-water-risk-atlas`** (low) — The Aqueduct water Risk Atlas, developed by the World Resources Institute (WRI), is an interactive platform for assessing water-related risk
-- **`arcgis-com-2`** (medium) — OSINT tool: arcgis.com.
 - **`arcgis-online`** (medium) — OSINT tool: ArcGIS Online.
 - **`arcgis-wildfire-map`** (medium) — OSINT tool: ArcGIS Wildfire Map.
-- **`archieinitiative-com-2`** (medium) — OSINT tool: archieinitiative.com.
 - **`archieinitiative-com`** (medium) — OSINT tool: archieinitiative.com.
 - **`atlas-co`** (medium) — OSINT tool: atlas.co.
 - **`awesome-maps-ukraine`** (medium) — OSINT tool: awesome-maps-ukraine.
@@ -47,7 +45,6 @@ kind: group-index
 - **`findlatitudeandlongitude-com`** (medium) — OSINT tool: findlatitudeandlongitude.com.
 - **`firms`** (medium) — OSINT tool: FIRMS.
 - **`free-map-tools`** (medium) — OSINT tool: Free Map Tools.
-- **`freemaptools-com-2`** (medium) — OSINT tool: freemaptools.com.
 - **`freemaptools-com`** (medium) — OSINT tool: freemaptools.com.
 - **`gaode-maps`** (low) — Gaode Maps (also known as AMap) is a mapping application and technology from the Chinese company Alibaba.
 - **`generate-a-panorama`** (medium) — OSINT tool: Generate a panorama.
@@ -78,7 +75,6 @@ kind: group-index
 - **`howtogeek-com`** (medium) — OSINT tool: howtogeek.com.
 - **`inciweb`** (medium) — OSINT tool: InciWeb.
 - **`index-database`** (low) — A database of remote sensing indices and satellite imaging sensors
-- **`item-4`** (medium) — OSINT tool: Допомога.
 - **`kakao-map`** (low) — A mapping application provided by South Korean technology company Kakao Corp.
 - **`kayak-airlines-search-engine`** (medium) — Aviation-related website that provides a listing of worldwide commercial airlines and route maps found by destination and arrival points
 - **`landmark-toolpie-com`** (medium) — OSINT tool: landmark.toolpie.com.
@@ -156,7 +152,6 @@ kind: group-index
 - **`wildeye`** (low) — Tracking tool for data on environmental and wildlife crime cases, including court cases and convictions, across the globe.
 - **`wildlife-trade-portal`** (low) — An open-source tool to search wildlife seizure data worldwide.
 - **`wildme-and-wildbook`** (low) — Open source pattern recognition software to identify unique whales, sharks, zebras, jaguars, skunks, fish and much more.
-- **`windy-2`** (medium) — OSINT tool: Windy.
 - **`world-database-on-protected-and-conserved-areas`** (low) — A comprehensive global database on terrestrial and marine protected areas.
 - **`worldofo-com`** (medium) — OSINT tool: worldofo.com.
 

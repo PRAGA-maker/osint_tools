@@ -8,7 +8,7 @@ kind: group-index
 
 ## Sub-groups
 - **`analysis/`** — 1 skill(s) below.
-- **`pictures/`** — 4 skill(s) below.
+- **`pictures/`** — 2 skill(s) below.
 - **`text/`** — 11 skill(s) below.
 
 ## Skills here
@@ -27,7 +27,6 @@ kind: group-index
 - **`cockney-rhyming-slang-converter`** (low) — Language-related tool for converting regular speech into Cockney ryhming slang (used in London)
 - **`collinsdictionary`** (low) — Tool for translating text and web content from one language to another
 - **`conveythis-free-translation`** (low) — Website offering a widget for other websites that provides language translation services
-- **`deepl-2`** (medium) — High-quality machine translation with strong European and Asian language support.
 - **`deepl`** (low) — High-quality machine translation.
 - **`definitions-net`** (low) — Multilingual dictionary providing definitions from various reference resources
 - **`dictionary-com-translation`** (low) — OSINT tool: Dictionary.com: Translation.
@@ -46,7 +45,6 @@ kind: group-index
 - **`gizoogle-textilizer`** (low) — Tool for translating English to street slang
 - **`global-language-monitor`** (low) — Language-related website with articles that focus on language data, language statistics, and language trends
 - **`google-quest-visual-wordlens`** (low) — Tool for translating words found in images from one language to another
-- **`google-translate-2`** (low) — OSINT tool: Google Translate.
 - **`grammar-and-spelling-search-engine`** (low) — Language and academic-related program for checking grammar and spelling in written materials
 - **`handspeak-english-sign-language`** (low) — Tool for translating from one language form to another
 - **`happyscribe-com`** (low) — OSINT tool: happyscribe.com.
@@ -60,7 +58,6 @@ kind: group-index
 - **`lexicool-translation`** (low) — OSINT tool: Lexicool Translation.
 - **`lexilogos-com`** (low) — OSINT tool: lexilogos.com.
 - **`lexilogos`** (low) — OSINT tool: Lexilogos.
-- **`lingojam-com-2`** (low) — OSINT tool: lingojam.com.
 - **`lingojam-com`** (low) — OSINT tool: lingojam.com.
 - **`linguee-english-french-dictionary`** (low) — Tool for translating text and web content from one language to another; including a language translation dictionary
 - **`localingual-com`** (low) — OSINT tool: localingual.com.
@@ -102,7 +99,6 @@ kind: group-index
 - **`webopedia-com`** (low) — OSINT tool: webopedia.com.
 - **`wordreference-translator`** (low) — Tool for translating text and web content from one language to another
 - **`yamii`** (low) — OSINT tool: Yamii.
-- **`yandex-translate-2`** (low) — OSINT tool: Yandex Translate.
 - **`yandex-translate`** (low) — Machine translation, strong for Russian.
 - **`yourdictionary-online-links`** (low) — Links to over 6600 online foreign language dictionaries and translation services
 

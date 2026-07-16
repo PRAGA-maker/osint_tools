@@ -17,6 +17,8 @@ bower_components
 # generated artifacts #
 ######################
 tools/link_audit_report.json
+# ephemeral prune dry-run output (regenerated every run; ledger/pruned.json is the durable log)
+library/ledger/prune-candidates.json
 
 # OS generated files #
 ######################

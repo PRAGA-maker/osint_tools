@@ -152,7 +152,6 @@ kind: group-index
 - **`whocalld`** (high) — Use when you have a `phone` number and want caller-ID/spam context — DEFUNCT service, retained as a historical reference only; returns nothi
 - **`whocallsme-com`** (high) — Use when you have a `phone` number and want crowdsourced reports on who it belongs to — returns user comments identifying the caller, often 
 - **`whoseno`** (low) — Crowd-reported reverse-phone lookup.
-- **`wikipedia-org-2`** (high) — OSINT tool: wikipedia.org.
 - **`wikitravel-org`** (high) — Use when you have a `phone` number and want to interpret its country/dialing format — returns reference context (country, trunk/internationa
 - **`www-spydialer-com`** (high) — Use when you have a US `phone` (or a name/email) and want the likely owner, location, and line type — returns name, approximate address, and
 - **`yellow-co-nz`** (medium) — Use when you have a business `name`/`phone` in New Zealand and want contact and location details — returns address, phone, and website for N

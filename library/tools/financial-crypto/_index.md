@@ -7,16 +7,14 @@ kind: group-index
 # financial-crypto
 
 ## Sub-groups
-- **`bitcoin/`** — 7 skill(s) below.
-- **`chain-analysis-platforms/`** — 8 skill(s) below.
+- **`bitcoin/`** — 5 skill(s) below.
+- **`chain-analysis-platforms/`** — 5 skill(s) below.
 - **`defi-and-dex-tracing/`** — 2 skill(s) below.
-- **`ethereum/`** — 1 skill(s) below.
-- **`mixer-tracking/`** — 5 skill(s) below.
+- **`mixer-tracking/`** — 4 skill(s) below.
 - **`monero/`** — 2 skill(s) below.
-- **`multi-chain-explorers/`** — 2 skill(s) below.
+- **`multi-chain-explorers/`** — 1 skill(s) below.
 - **`nft-provenance/`** — 2 skill(s) below.
 - **`privacy-coin-analysis/`** — 2 skill(s) below.
-- **`wallet-clustering-and-address-analysis/`** — 2 skill(s) below.
 
 ## Skills here
 - **`527-explorer`** (low) — ProPublica's 527 Explorer is a database that allows users to examine the finances of organizations known as 527s in the United States, which
@@ -24,10 +22,7 @@ kind: group-index
 - **`acfcs-org`** (medium) — OSINT tool: acfcs.org.
 - **`addresschecker-eu`** (low) — OSINT tool: Addresschecker.eu.
 - **`addresswatcher-com`** (low) — OSINT tool: Addresswatcher.com.
-- **`afd-co-uk-2`** (medium) — OSINT tool: afd.co.uk.
 - **`afd-co-uk`** (medium) — OSINT tool: afd.co.uk.
-- **`aib-gov-uk-2`** (medium) — OSINT tool: aib.gov.uk.
-- **`aib-gov-uk-3`** (medium) — OSINT tool: aib.gov.uk.
 - **`aib-gov-uk`** (medium) — OSINT tool: aib.gov.uk.
 - **`analytics-engine`** (low) — OSINT tool: analytics-engine.
 - **`binbase-com`** (medium) — OSINT tool: binbase.com.
@@ -42,10 +37,8 @@ kind: group-index
 - **`bitinfocharts-com`** (medium) — OSINT tool: bitinfocharts.com.
 - **`blockchain-com`** (low) — OSINT tool: Blockchain.com.
 - **`blockchain-explorer`** (low) — OSINT tool: Blockchain Explorer.
-- **`blockchain-info-2`** (medium) — OSINT tool: blockchain.info.
 - **`blockchain-info`** (low) — OSINT tool: Blockchain.info.
 - **`blockchair-com`** (medium) — OSINT tool: blockchair.com.
-- **`blockcypher-2`** (low) — Blockchain explorer for Bitcoin, Ethereum, Litecoin, DogeCoin, Dash. Getting into about address, transactions and block hashes, block number
 - **`blockcypher`** (low) — OSINT tool: Blockcypher.
 - **`blockexplorer`** (low) — Following a bitcoin trail or following a bitcoin account?
 - **`bpfi-ie`** (medium) — OSINT tool: bpfi.ie.
@@ -70,7 +63,6 @@ kind: group-index
 - **`cryptocurrencyalerting-com`** (medium) — OSINT tool: cryptocurrencyalerting.com.
 - **`cryptocurrencyfacts-com`** (low) — OSINT tool: cryptocurrencyfacts.com/.
 - **`csol-ie`** (medium) — OSINT tool: csol.ie.
-- **`economy-ni-gov-uk-2`** (medium) — OSINT tool: economy-ni.gov.uk.
 - **`economy-ni-gov-uk`** (medium) — OSINT tool: economy-ni.gov.uk.
 - **`edgar-command-line-interface-edgar-tool`** (low) — Tool for the retrieval of corporate and financial data from SEC's EDGAR (Electronic Data Gathering, Analysis, and Retrieval) database.
 - **`edgar`** (low) — Database of corporate filings for the US
@@ -89,34 +81,20 @@ kind: group-index
 - **`follow-the-bitcoin-automating-osint-blogpost`** (low) — OSINT tool: Follow the Bitcoin | Automating OSINT BLOGPOST.
 - **`freebin-checker`** (low) — easy-to-use API for getting bank details by BIN. 850,000+ BIN records in FreeBinChecker's database
 - **`freeformatter-com`** (medium) — OSINT tool: freeformatter.com.
-- **`gijn-org-2`** (medium) — OSINT tool: gijn.org.
 - **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
-- **`gov-uk-2`** (medium) — OSINT tool: gov.uk.
 - **`greylist-trace`** (low) — OSINT tool: Greylist Trace.
 - **`iban-com`** (low) — Check the validity of the IBAN (International Bank Account Number) of the company and see the information about the bank where it is service
-- **`ibancalculator-com-2`** (medium) — OSINT tool: ibancalculator.com.
 - **`ibancalculator-com`** (medium) — OSINT tool: ibancalculator.com.
 - **`importyeti`** (low) — Search 60 million US customs sea shipment records, find company suppliers.
 - **`insolvency-govt-nz`** (medium) — OSINT tool: insolvency.govt.nz.
 - **`insolvencydirect-bis-gov-uk`** (medium) — OSINT tool: insolvencydirect.bis.gov.uk.
-- **`investing-com-2`** (medium) — OSINT tool: investing.com.
-- **`ip-logger-2`** (low) — OSINT tool: IP Logger.
 - **`jahs-ie`** (medium) — OSINT tool: jahs.ie.
 - **`learnmeabitcoin-com`** (medium) — OSINT tool: learnmeabitcoin.com.
-- **`linkedin-com-2`** (medium) — OSINT tool: linkedin.com.
-- **`linkedin-com-3`** (medium) — OSINT tool: linkedin.com.
 - **`live-coin-watch`** (low) — OSINT tool: Live Coin Watch.
 - **`matbea`** (low) — OSINT tool: Matbea.
 - **`medium-com`** (medium) — OSINT tool: medium.com.
-- **`merklescience-com-2`** (medium) — OSINT tool: merklescience.com.
-- **`merklescience-com-3`** (medium) — OSINT tool: merklescience.com.
-- **`merklescience-com-4`** (medium) — OSINT tool: merklescience.com.
-- **`merklescience-com-5`** (medium) — OSINT tool: merklescience.com.
-- **`merklescience-com-6`** (medium) — OSINT tool: merklescience.com.
-- **`merklescience-com-7`** (medium) — OSINT tool: merklescience.com.
 - **`merklescience-com`** (medium) — OSINT tool: merklescience.com.
 - **`mixero-io`** (medium) — OSINT tool: mixero.io.
-- **`monero-blocks-2`** (low) — OSINT tool: Monero Blocks.
 - **`mylostaccount-org-uk`** (medium) — OSINT tool: mylostaccount.org.uk.
 - **`nonfungible-com`** (low) — help to analyze the NFT market, find out which tokens were sold most actively (week, month, year, all time)
 - **`north-data`** (low) — Search for people and companies in EU corporate and trade registers + visualize relationships
@@ -134,11 +112,8 @@ kind: group-index
 - **`sanctionsexplorer`** (low) — A comprehensive database of current and historical OFAC/UN/EU sanctions
 - **`search-for-investment-fund-documents`** (low) — OSINT tool: Search for Investment Fund Documents.
 - **`search-our-ppp-loan-database`** (low) — OSINT tool: Search Our PPP Loan Database.
-- **`secjuice-com-2`** (medium) — OSINT tool: secjuice.com.
 - **`secjuice-com`** (medium) — OSINT tool: secjuice.com.
-- **`sortcodes-co-uk-2`** (medium) — OSINT tool: sortcodes.co.uk.
 - **`sortcodes-co-uk`** (medium) — OSINT tool: sortcodes.co.uk.
-- **`start-me-2`** (medium) — OSINT tool: start.me.
 - **`start-me`** (medium) — OSINT tool: start.me.
 - **`thenextweb-com`** (medium) — OSINT tool: thenextweb.com.
 - **`tmx-tsx`** (low) — OSINT tool: TMX TSX.

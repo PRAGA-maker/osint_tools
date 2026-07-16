@@ -74,7 +74,6 @@ kind: group-index
 - **`earth-engine-dataset`** (medium) — OSINT tool: Earth Engine Dataset.
 - **`earthexplorer`** (high) — Use when you have an area of interest and need historical or multispectral satellite/aerial imagery for a specific date to corroborate timel
 - **`emmeline-carto-com`** (medium) — OSINT tool: emmeline.carto.com.
-- **`emporis-buildings-map`** (medium) — world map showing notable buildings. For each object you can find out the height, number of floors, type, and purpose
 - **`environmental-investigation-agency`** (low) — Use when researching environmental-crime investigations, reports, or geographic case context — not a person-search or coordinate tool.
 - **`epoch101-com`** (medium) — OSINT tool: epoch101.com.
 - **`epochconverter-com`** (medium) — OSINT tool: epochconverter.com.
@@ -92,7 +91,6 @@ kind: group-index
 - **`flash-earth-2`** (high) — Use when referencing the legacy flashearth.com satellite viewer — it relied on Adobe Flash and is effectively defunct; use zoom.earth instea
 - **`flash-earth`** (high) — Use when you need recent/near-real-time satellite and weather imagery for an area to check conditions around a date or location.
 - **`flickr-common-map`** (medium) — displays only Flickr photos distributed under a Creative Commons license (250 of the latest for each location)
-- **`forensicosint-com-4`** (medium) — OSINT tool: forensicosint.com.
 - **`foursquare`** (high) — Use when you have a `geolocation`/`address` or a venue and want place details, photos, and user tips — returns venue `geolocation`, `address
 - **`free-wifi-search-engine`** (low) — OSINT tool: Free WiFi Search Engine.
 - **`freedomhouse-org`** (medium) — map of the world that shows the scores of different countries on the following indicators (on a scale of 1 to 100)
@@ -109,7 +107,6 @@ kind: group-index
 - **`geoint-search`** (medium) — OSINT tool: GeoINT Search.
 - **`geoint`** (medium) — OSINT tool: GEOINT.
 - **`geoip-tracker-tool`** (medium) — OSINT tool: GeoIP Tracker tool.
-- **`geonames-2`** (medium) — Geographical names database with coordinates.
 - **`geonames`** (high) — Use when you have a place name, postal code, or coordinate and need to resolve it to canonical lat/long, admin region, or nearby place names
 - **`geoplatform-portal`** (medium) — OSINT tool: GeoPlatform Portal.
 - **`geoportail-france`** (high) — Use when you have a French `address`/`geolocation` and want authoritative national maps and imagery — returns high-res aerial photos, cadast
@@ -226,7 +223,6 @@ kind: group-index
 - **`openinfrastructuremap`** (medium) — Use when an image or area shows power lines, pylons, substations, or telecom masts and you want to identify/confirm a location by its infras
 - **`openlayers`** (low) — Use when you are building a custom geospatial web app and need a powerful JS map library to display layers, imagery, and analysis results — 
 - **`openrailwaymap-2`** (medium) — Use when a photo or area shows railway tracks, stations, signals, or catenary and you want to identify/confirm a location by its rail infras
-- **`openstreetcam-2`** (medium) — OSINT tool: Openstreetcam.
 - **`openstreetcam`** (high) — Use when Google/Bing Street View lacks coverage and you need crowdsourced street-level imagery to confirm a scene, sign, or building at a lo
 - **`openstreetmap-2`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry. (Dup
 - **`openstreetmap-overpass-turbo-taginfo-database`** (medium) — 694 tags for different objects (buildings, trees, streams etc), 5684 keys, 45 relations (routes, streets etc)
@@ -302,8 +298,6 @@ kind: group-index
 - **`the-webcam-network`** (low) — OSINT tool: The Webcam Network.
 - **`thingful`** (low) — OSINT tool: thingful.
 - **`time-is`** (medium) — OSINT tool: time.is.
-- **`timeanddate-com-2`** (medium) — OSINT tool: timeanddate.com.
-- **`timeanddate-com-3`** (medium) — OSINT tool: timeanddate.com.
 - **`timeanddate-com`** (medium) — OSINT tool: timeanddate.com.
 - **`timeanddate`** (high) — Use when you need precise sunrise/sunset/twilight, timezone, or weather-history facts for a place and date to validate a photo's timestamp o
 - **`timejones-com`** (medium) — OSINT tool: timejones.com.

@@ -10,7 +10,7 @@ kind: group-index
 - **`data-leaks/`** — 3 skill(s) below.
 - **`other-media/`** — 1 skill(s) below.
 - **`public-datasets/`** — 4 skill(s) below.
-- **`web/`** — 15 skill(s) below.
+- **`web/`** — 13 skill(s) below.
 
 ## Skills here
 - **`alltop`** (low) — OSINT tool: Alltop.
@@ -21,7 +21,6 @@ kind: group-index
 - **`archive-org`** (medium) — OSINT tool: archive.org.
 - **`archive-page-addons-mozilla-org`** (medium) — OSINT tool: archive page (addons.mozilla.org).
 - **`archive-page-chrome-google-com`** (medium) — OSINT tool: archive page (chrome.google.com).
-- **`archive-today-3`** (medium) — On-demand web-page archiving/retrieval service.
 - **`archive-today`** (low) — Archive any webpage, including Facebook and search for archived pages.
 - **`archive-vn`** (medium) — OSINT tool: Archive.vn.
 - **`archivebox`** (medium) — Create your own self-hosted web archive. Save pages from browser history, bookmarks, Pocket etc. Save html, js, css, media, pdf and other fi
@@ -36,7 +35,6 @@ kind: group-index
 - **`cachedview`** (medium) — OSINT tool: CachedView.
 - **`carbon-dating-the-web`** (medium) — OSINT tool: Carbon Dating The Web.
 - **`cashedpages`** (medium) — OSINT tool: CashedPages.
-- **`changedetect-2`** (low) — OSINT tool: ChangeDetect.
 - **`changedetection-io-open-source`** (low) — OSINT tool: ChangeDetection.io Open Source.
 - **`changedetection`** (low) — OSINT tool: ChangeDetection.
 - **`commoncrawl-org`** (medium) — OSINT tool: commoncrawl.org.
@@ -122,13 +120,11 @@ kind: group-index
 - **`wayback-machine`** (medium) — OSINT tool: Wayback Machine.
 - **`wayback-tweets`** (medium) — Display archived tweets retrieved from the Wayback Machine.
 - **`waybackpdf`** (medium) — Collects a list of saved PDFs for the given domain from [http://archive.org](http://archive.org) and downloads them into a folder.
-- **`waybackpy-2`** (low) — Python library/CLI for the Wayback Machine API.
 - **`waybackpy`** (medium) — OSINT tool: waybackpy.
 - **`waymore`** (medium) — Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).
 - **`web-archive-bibalex-org`** (medium) — OSINT tool: web.archive.bibalex.org.
 - **`web-archive-google-chrome-extension`** (medium) — Simple Chrome Extensions for getting information about current URL using http://archive.org CDX API
 - **`web-archive-org`** (medium) — OSINT tool: web.archive.org.
-- **`web-archives-2`** (medium) — extension for viewing cached web page version in 18 search engines and services
 - **`web-archives-chrome-google-com`** (medium) — OSINT tool: web archives (chrome.google.com).
 - **`web-archives`** (low) — A browser extension to view archived and cached versions of a website on multiple archiving sites.
 - **`web-cache-viewer-chrome-google-com`** (medium) — OSINT tool: web cache viewer (chrome.google.com).

@@ -7,7 +7,6 @@ kind: group-index
 # evidence-capture/screen-capture
 
 ## Skills here
-- **`fraps`** (medium) — Video game documentation, screen recording, FPS benchmarking
 - **`greenshot`** (medium) — Screenshot capture, annotation, web page documentation
 - **`sharex`** (medium) — Screenshot documentation, screen recording, quick sharing
 

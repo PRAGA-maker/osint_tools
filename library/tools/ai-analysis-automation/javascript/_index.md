@@ -7,10 +7,8 @@ kind: group-index
 # ai-analysis-automation/javascript
 
 ## Skills here
-- **`firebug`** (low) — Historical context for legacy JavaScript debugging references
 - **`javascript-deobfuscator`** (low) — Browser-native JavaScript deobfuscation during web investigations
 - **`js-beautifier`** (low) — Fast readability improvements for packed JavaScript
-- **`js-nice`** (low) — Historical reference for JavaScript decompilation workflows
 - **`kahu-revelo`** (low) — Unpacking heavily obfuscated JavaScript samples on Windows
 - **`spidermonkey`** (low) — Local JavaScript execution and behavior testing without browser UI
 

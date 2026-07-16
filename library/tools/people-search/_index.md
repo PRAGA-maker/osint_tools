@@ -131,7 +131,6 @@ kind: group-index
 - **`intelius-people-search-engine`** (high) — Use when you have a US `name`, `phone`, or `address` and want a consolidated background profile — returns addresses, phones, relatives, and 
 - **`intelligence-x-person-tools`** (high) — Use when you have a `name`, `email`, `phone`, or `username` and want a launchpad of prebuilt search links into many people-search services a
 - **`intelligencex-linkedin-search`** (medium) — Web-based LinkedIn search tool.
-- **`inteltechniques-linkedin-search-tool`** (medium) — Interface bundling various LinkedIn OSINT search tools.
 - **`inteltechniques-osint`** (high) — Use when you have a `name`, `username`, `email`, `phone` or `domain` and want automated multi-source pivots — a free toolset that fires one 
 - **`intelx-io`** (high) — Use when you have an `email`, `domain`, `ip-address`, `crypto-wallet` or `username` and want breach/dark-web/archive hits — returns leaked r
 - **`internet-experts`** (medium) — OSINT tool: Internet Experts.
@@ -192,7 +191,6 @@ kind: group-index
 - **`peepdb-person-search`** (high) — OSINT tool: PeepDB (Person Search).
 - **`people-looker-us`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want a consumer background-report aggregator to pull contact history, relat
 - **`people-search-2`** (high) — Use when you have a `name`, `phone`, or `address` and want a US people-search profile — returns address history, phone, associate (relatives
-- **`people-search-3`** (high) — OSINT tool: People Search.
 - **`people-search-engine`** (high) — Use when you have a `name` or `username` and want a Google-powered search pre-scoped to people-finder and social sites — returns web links a
 - **`people-search-find-people-over-the-internet-for-free-white-pages`** (high) — OSINT tool: People search - Find people over the internet for free - White Pages.
 - **`people-search-results-vk`** (medium) — OSINT tool: People search results | VK.
@@ -268,7 +266,6 @@ kind: group-index
 - **`uk-guide-to-names-and-naming-practices`** (high) — Use when you have a `name` from an unfamiliar culture and need to parse it correctly (given vs family name, honorifics, variants) before sea
 - **`uk-phone-book`** (high) — Use when you have a `name` (+ UK area) or a landline `phone` and want a directory listing — returns address and phone, with reverse lookups 
 - **`usa-official-com`** (high) — Use when you have a US `name` and want a free public-records aggregation — returns address history, phones, emails, DOB/age, relatives and l
-- **`usa-people-search`** (medium) — Commercial people-search aggregator.
 - **`username-search`** (high) — Use when you have a `username` and want to find where it exists across social, dating, gaming, forum, and crypto platforms — returns matchin
 - **`usersearch-org`** (high) — Use when you have a `username`, `email`, `phone` or profile `image` and want to find matching accounts across social/dating/gaming/crypto si
 - **`ussearch-people-search-united-states`** (high) — Use when you have a US name (optionally a city/state) and want an aggregated people report — returns addresses, phone numbers, relatives and

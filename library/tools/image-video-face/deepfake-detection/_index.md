@@ -8,7 +8,6 @@ kind: group-index
 
 ## Skills here
 - **`deepfake-detect`** (medium) — Research-grade deepfake detection model experimentation
-- **`deepfake-image-detection`** (medium) — Historical reference for legacy deepfake image detection approaches
 - **`deepfakebench`** (medium) — Comparing deepfake detector performance across common benchmarks
 - **`deepfakedetector`** (medium) — Rapid deepfake checks with optional self-hosted deployment
 - **`deepsafe`** (medium) — Ensemble deepfake detection for image and video investigations

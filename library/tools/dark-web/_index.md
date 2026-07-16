@@ -8,9 +8,8 @@ kind: group-index
 
 ## Sub-groups
 - **`clients/`** — 3 skill(s) below.
-- **`discovery/`** — 7 skill(s) below.
+- **`discovery/`** — 4 skill(s) below.
 - **`general-info/`** — 3 skill(s) below.
-- **`tor-directories/`** — 1 skill(s) below.
 - **`tor-search/`** — 2 skill(s) below.
 
 ## Skills here
@@ -51,9 +50,7 @@ kind: group-index
 - **`deep-money-transfer`** (low) — OSINT tool: Deep Money Transfer.
 - **`deep-search`** (low) — OSINT tool: Deep Search.
 - **`discounted-apple-products`** (low) — OSINT tool: Discounted Apple Products.
-- **`duckduckgo-2`** (low) — OSINT tool: DuckDuckGo.
 - **`eucanna`** (low) — OSINT tool: EuCanna.
-- **`facebook-2`** (low) — OSINT tool: Facebook.
 - **`federal-bureau-of-investigations-value`** (medium) — FBI Records Vault of 6,700 documents and other media
 - **`ftse-industry-classification-benchmark-united-states`** (medium) — Website that identifies the industrial sector classification across the country at the national level
 - **`github-apurv-singh-gautam`** (low) — OSINT tool: Github - Apurv Singh Gautam.
@@ -92,7 +89,6 @@ kind: group-index
 - **`pirate-bay`** (low) — OSINT tool: Pirate Bay.
 - **`pitch`** (low) — OSINT tool: Pitch.
 - **`pro-for-bro`** (low) — OSINT tool: Pro For Bro.
-- **`proton-mail-2`** (low) — OSINT tool: Proton Mail.
 - **`raklet`** (low) — OSINT tool: Raklet.
 - **`ransomware-darknet-websites`** (low) — OSINT tool: Ransomware Darknet websites.
 - **`ransomware-group-sites`** (low) — OSINT tool: Ransomware Group Sites.
@@ -114,7 +110,6 @@ kind: group-index
 - **`tor-wiki`** (low) — OSINT tool: Tor Wiki.
 - **`tor2web-tor-hidden-services-gateway`** (low) — OSINT tool: Tor2Web: Tor Hidden Services Gateway.
 - **`torbox`** (low) — OSINT tool: TorBox.
-- **`torch-3`** (low) — OSINT tool: Torch.
 - **`torry-io`** (low) — OSINT tool: torry.io.
 - **`tweepi`** (medium) — Twitter monitor and search tool
 - **`uk-guns-and-ammo`** (low) — OSINT tool: UK Guns & Ammo.
@@ -122,7 +117,6 @@ kind: group-index
 - **`us-inmate-locator`** (medium) — Inmate locator for US states
 - **`vocalink`** (medium) — UKs national payment infrastructure operator - provides industry research and white papers
 - **`vorm-web`** (low) — OSINT tool: Vorm Web.
-- **`web-o-proxy`** (medium) — Legacy gateway access reference for onion destinations
 - **`western-union-agent-locator`** (medium) — Search tool for locating Western Union agent locations worldwide
 - **`wikieducator`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
 - **`witchdoctor-new-zealand`** (medium) — Website related to tech reviews

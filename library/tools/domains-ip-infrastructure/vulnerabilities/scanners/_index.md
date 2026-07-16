@@ -7,7 +7,6 @@ kind: group-index
 # domains-ip-infrastructure/vulnerabilities/scanners
 
 ## Skills here
-- **`online-nikto-scanner-2`** (low) — Web server vulnerability scanning
 - **`sn1per`** (low) — Full-scope pentest automation and recon
 - **`web-data-exposure-scanner`** (low) — Detecting exposed sensitive data on web servers
 

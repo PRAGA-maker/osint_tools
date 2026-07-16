@@ -7,7 +7,6 @@ kind: group-index
 # domains-ip-infrastructure/whois-records
 
 ## Skills here
-- **`daily-dns-changes`** (low) — DNS change detection, subdomain discovery, infrastructure monitoring
 - **`dnsstuff`** (low) — Quick DNS and WHOIS lookups, network diagnostics
 - **`domain-dossier`** (low) — Quick domain and IP reconnaissance with DNS and WHOIS data
 - **`domainiq`** (low) — Domain ownership history, reverse analytics lookup, competitor domain research

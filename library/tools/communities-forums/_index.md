@@ -10,7 +10,7 @@ kind: group-index
 - **`blog-search-engines/`** — 2 skill(s) below.
 - **`discord-servers/`** — 3 skill(s) below.
 - **`forum-search-engines/`** — 5 skill(s) below.
-- **`irc-search/`** — 4 skill(s) below.
+- **`irc-search/`** — 3 skill(s) below.
 - **`reddit-communities/`** — 3 skill(s) below.
 
 ## Skills here
@@ -32,10 +32,7 @@ kind: group-index
 - **`aol-travel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`arabian-business-news-middle-east-english-language`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`arrse-co-uk`** (medium) — OSINT tool: arrse.co.uk.
-- **`ask-2`** (low) — OSINT tool: Ask.
-- **`athlinks-2`** (medium) — Networking website for athletes and athletic events
 - **`babycenter`** (medium) — Networking website for new and expecting parents
-- **`bbc-news-2`** (medium) — Online articles and news related to business, sports, travel, technology, entertainment, and future trends
 - **`bbc-news-iplayer-united-kingdom`** (medium) — iPlayer offered by BBC
 - **`bbc-news-united-kingdom`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`beanpaste`** (medium) — OSINT tool: BeanPaste.
@@ -99,7 +96,6 @@ kind: group-index
 - **`dogster`** (medium) — Networking website for dog lovers
 - **`doxbin`** (medium) — OSINT tool: doxbin.
 - **`dpaste`** (medium) — OSINT tool: dpaste.
-- **`eharmony-2`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`ehow`** (low) — OSINT tool: eHow.
 - **`engadget-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`etusivu`** (medium) — OSINT tool: Etusivu.
@@ -204,7 +200,6 @@ kind: group-index
 - **`information-week-news`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`inkdrop-international-newspapers`** (medium) — English online news outlets from around the world
 - **`iptv-org`** (low) — Search by 28 813 IP television channels in 196 countries. Get detailed information about channel in HTML/JSON (sometimes with link to livest
-- **`item-3`** (low) — OSINT tool: Ответы.
 - **`itpro`** (medium) — Enterprise and business IT news
 - **`itv-television-united-kingdom`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`itworldcanada`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
@@ -224,7 +219,6 @@ kind: group-index
 - **`liferea-linux-rss-news-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`linkedin-groups`** (medium) — OSINT tool: Linkedin Groups.
 - **`linkode-alpha`** (medium) — OSINT tool: Linkode(alpha).
-- **`livejournal-2`** (medium) — Russian social networking service for blogging
 - **`livejournal`** (low) — OSINT tool: LiveJournal.
 - **`logpasta`** (medium) — OSINT tool: Logpasta.
 - **`london-free-press`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
@@ -267,7 +261,6 @@ kind: group-index
 - **`new-york-times`** (medium) — Searchable website for a major newspaper covering national and local events in the United States
 - **`newsblur-rss-feeder`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
 - **`newsnow-united-kingdom`** (medium) — Searchable website for a major online news/media publisher covering global events, including sections on business, science, sports, and ente
-- **`newspaper-archive-2`** (medium) — Searchable website for a major online news/media publisher covering over 130 million scanned newspapers dating back 400 years, allows one fr
 - **`newspapermap`** (medium) — View and translate all newspapers from around the world on a visual map
 - **`ning`** (medium) — OSINT tool: Ning.
 - **`nitv-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
@@ -277,7 +270,6 @@ kind: group-index
 - **`nova-czech-republick`** (medium) — Online articles and news related to business, travel, sports, entertainment, and more
 - **`nursingforum-co-uk`** (medium) — OSINT tool: nursingforum.co.uk.
 - **`ohsint-gitbook`** (medium) — OSINT blog and resource collection with tools and investigative references.
-- **`omgili-2`** (low) — OSINT tool: Omgili.
 - **`onefinestay`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`onefootballforum-co-uk`** (medium) — OSINT tool: onefootballforum.co.uk.
 - **`open-diary`** (medium) — Use when a subject may have kept a public online journal under a `username` — search/browse Open Diary entries for self-disclosed details an
@@ -366,7 +358,6 @@ kind: group-index
 - **`squarespace`** (low) — OSINT tool: SquareSpace.
 - **`stackexchange`** (low) — OSINT tool: StackExchange.
 - **`stratfor-global-intelligence`** (medium) — World's leading geopolitical intelligence platform analysing global events
-- **`strava-2`** (low) — OSINT tool: Strava.
 - **`subreddits-org`** (low) — Directory of active subreddits.
 - **`subzin-com`** (low) — by one phrase will find the movie, as well as the full text of the dialogue with the timing
 - **`suggest-me-a-subreddit`** (low) — Subreddit recommendation tool.

@@ -8,18 +8,15 @@ kind: group-index
 
 ## Sub-groups
 - **`barcodes-qr/`** — 1 skill(s) below.
-- **`graph-visualization/`** — 1 skill(s) below.
-- **`javascript/`** — 6 skill(s) below.
-- **`osint-automation/`** — 18 skill(s) below.
-- **`pentesting-recon/`** — 1 skill(s) below.
+- **`javascript/`** — 4 skill(s) below.
+- **`osint-automation/`** — 11 skill(s) below.
 - **`php/`** — 1 skill(s) below.
-- **`virtual-machines/`** — 9 skill(s) below.
+- **`virtual-machines/`** — 7 skill(s) below.
 - **`wordlist/`** — 4 skill(s) below.
 - **`xor/`** — 8 skill(s) below.
 
 ## Skills here
 - **`a1-website-download`** (low) — OSINT tool: A1 Website Download.
-- **`aadinternals-2`** (low) — OSINT tool: aadinternals.
 - **`abine`** (low) — OSINT tool: Abine.
 - **`adium`** (low) — OSINT tool: Adium.
 - **`advanced-search-operators-list`** (low) — List of the links to the docs for different services, which explain using of advanced search operators
@@ -125,7 +122,6 @@ kind: group-index
 - **`dnsx`** (low) — OSINT tool: dnsx.
 - **`do-not-track`** (low) — OSINT tool: Do Not Track.
 - **`docmind-ai`** (low) — Private document analysis, querying sensitive documents without cloud exposure
-- **`domain-investigation-toolbox-2`** (low) — OSINT tool: Domain Investigation Toolbox.
 - **`dorks-collections-list`** (low) — List of Github repositories and articles with list of dorks for different search engines
 - **`dropbase`** (low) — OSINT tool: Dropbase.
 - **`dropmark`** (low) — OSINT tool: Dropmark.
@@ -164,7 +160,6 @@ kind: group-index
 - **`gmapcatcher`** (low) — OSINT tool: gmapcatcher.
 - **`gnu-pg`** (low) — OSINT tool: GNU PG.
 - **`gomapenum`** (low) — Gather emails on Linkedin (via Linkedin and via Google) + User enumeration and password bruteforce on Azure, ADFS, OWA, O365 (this part seem
-- **`google-colaboratory-2`** (low) — OSINT tool: Google Colaboratory.
 - **`google-colaboratory`** (low) — OSINT tool: Google Colaboratory.
 - **`google-developers-charts`** (low) — OSINT tool: Google Developers: Charts.
 - **`google-play-scraper`** (low) — get the most detailed
@@ -206,7 +201,6 @@ kind: group-index
 - **`inkscape`** (low) — OSINT tool: Inkscape.
 - **`intelhub`** (low) — OSINT tool: IntelHub.
 - **`intellyweave`** (low) — OSINT tool: IntellyWeave.
-- **`inteltechniques`** (low) — OSINT tool: IntelTechniques.
 - **`ivre`** (low) — framework for network recon
 - **`java-infovis-toolkit`** (low) — OSINT tool: Java Infovis Toolkit.
 - **`jpgraph`** (low) — OSINT tool: JpGraph.
@@ -257,7 +251,6 @@ kind: group-index
 - **`onion-lookup`** (low) — OSINT tool: onion-lookup.
 - **`online-color-picker`** (low) — OSINT tool: Online Color Picker.
 - **`online-loudness-meter`** (low) — allows to estimate the volume of noises in the room or to analyze the volume of sounds in a recording file.
-- **`online-nikto-scanner-4`** (low) — Web server vulnerability scanning, security assessment, SSL/TLS validation
 - **`online-tools`** (low) — OSINT tool: Online Tools.
 - **`open-dns`** (low) — OSINT tool: Open DNS.
 - **`open-pgp`** (low) — OSINT tool: Open PGP.
@@ -281,7 +274,6 @@ kind: group-index
 - **`osint-team`** (low) — OSINT tool: OSINT Team.
 - **`osint-techniques`** (low) — OSINT tool: OSINT Techniques.
 - **`osint-tool`** (low) — OSINT tool: OSINT-Tool.
-- **`osint-toolkit-2`** (low) — Self-hosted web app (one minute Docker installation) for gathering information about IPs, Domains, URLs, Emails, Hashes, CVEs and more.
 - **`osint-tools-mcp-server`** (high) — Use when you have a `username`, `email`, `domain`, `ip-address`, or `phone` and want an LLM agent to run Sherlock/Holehe/Maigret/GHunt/Spide
 - **`osint-updates-a-free-weekly-newsletter-for-osinters`** (low) — OSINT tool: OSINT Updates - a free weekly newsletter for OSINTers.
 - **`osintcombine-tools`** (low) — OSINT tool: Osintcombine Tools.
@@ -329,8 +321,6 @@ kind: group-index
 - **`qlikview`** (low) — OSINT tool: QlikView.
 - **`quadrigram`** (low) — OSINT tool: Quadrigram.
 - **`qubes`** (low) — OSINT tool: Qubes.
-- **`quick-cache-and-archive-search-2`** (low) — OSINT tool: Quick Cache and Archive search.
-- **`quick-geolocation-search-2`** (low) — OSINT tool: Quick geolocation search.
 - **`quick-hashtags-and-keywords-search`** (low) — OSINT tool: Quick hashtags and keywords search.
 - **`quickcode`** (low) — OSINT tool: QuickCode.
 - **`raphael`** (low) — OSINT tool: Raphael.
@@ -374,7 +364,6 @@ kind: group-index
 - **`social-links`** (low) — OSINT tool: Social Links.
 - **`soundeffectssearch-com`** (low) — find a sound library
 - **`spf-explainer`** (low) — Simple online tool that explain in details Sender Policy Framework (email authentication standard) record of target domain.
-- **`spiderfoot-2`** (low) — OSINT tool: SpiderFoot.
 - **`spideroak`** (low) — OSINT tool: Spideroak.
 - **`spidersuite`** (low) — OSINT tool: SpiderSuite.
 - **`spotify-monitor`** (low) — OSINT tool: spotify_monitor.
@@ -386,7 +375,6 @@ kind: group-index
 - **`storymap`** (low) — OSINT tool: StoryMap.
 - **`sub3-suite`** (low) — OSINT tool: Sub3 Suite.
 - **`surveilliance-self-defense`** (low) — OSINT tool: Surveilliance Self Defense.
-- **`tableau-2`** (low) — OSINT tool: Tableau.
 - **`tableau-public`** (low) — OSINT tool: Tableau Public.
 - **`tagul`** (low) — OSINT tool: Tagul.
 - **`taranis-ai`** (low) — OSINT tool: Taranis AI.
@@ -399,16 +387,13 @@ kind: group-index
 - **`the-fuck`** (low) — Simple app which corrects your previous console commands.
 - **`the-missing-package-manager-for-macos-or-linux`** (low) — OSINT tool: The Missing Package Manager for macOS (or Linux).
 - **`the-scraper`** (low) — Simple tool for scrapping emails and social media accounts from the website's source code.
-- **`theharvester-4`** (low) — OSINT tool: theHarvester.
 - **`these-are-the-tools-open-source-researchers-say-they-need`** (low) — OSINT tool: These Are the Tools Open Source Researchers Say They Need.
 - **`threat-actor-usernames`** (low) — OSINT tool: Threat Actor Usernames.
-- **`threatpinch-lookup-2`** (low) — Helps speed up security investigations by automatically providing relevant information upon hovering over any IPv4 address, MD5 hash, SHA2 h
 - **`thunderbird`** (low) — OSINT tool: Thunderbird.
 - **`tik-tok`** (low) — OSINT tool: Tik-tok.
 - **`tiki-toki`** (low) — OSINT tool: Tiki-toki.
 - **`time-graphics`** (low) — A tool for creating, visualizing, and managing timelines online.
 - **`timeflow`** (low) — OSINT tool: Timeflow.
-- **`timeline-2`** (low) — OSINT tool: Timeline.
 - **`timeline`** (low) — OSINT tool: Timeline.
 - **`timetoast`** (low) — OSINT tool: Timetoast.
 - **`tio-run`** (low) — Run and test code written in one of 680 programming languages (260 practical and 420 recreational) directly in your browser
@@ -419,10 +404,8 @@ kind: group-index
 - **`torrentfreak-list-of-vpns`** (low) — OSINT tool: TorrentFreak List of VPNs.
 - **`trace-labs-blog`** (low) — OSINT tool: Trace Labs Blog.
 - **`trace-labs-osint-vm`** (high) — Use when you want a ready-to-run, purpose-built OSINT toolkit for a missing-person case — a Kali-based VM preloaded with the tools used in T
-- **`truemedia`** (low) — Deepfake detection in political and news media contexts
 - **`ublock-origin`** (low) — OSINT tool: uBlock Origin.
 - **`uforio`** (low) — Generate word clouds from Reddit threads.
-- **`unfurl-2`** (low) — OSINT tool: Unfurl.
 - **`url-decoder-encoder`** (low) — OSINT tool: URL Decoder/Encoder.
 - **`vedbex-com`** (low) — OSINT tool: Vedbex.com.
 - **`vega-editor`** (low) — OSINT tool: Vega Editor.

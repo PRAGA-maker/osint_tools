@@ -12,7 +12,7 @@ kind: group-index
 - **`fediverse-mastodon/`** — 4 skill(s) below.
 - **`instagram/`** — 2 skill(s) below.
 - **`linkedin/`** — 4 skill(s) below.
-- **`other-social-networks/`** — 12 skill(s) below.
+- **`other-social-networks/`** — 11 skill(s) below.
 - **`reddit/`** — 4 skill(s) below.
 - **`search/`** — 4 skill(s) below.
 - **`steam-discord-and-gaming-networks/`** — 1 skill(s) below.
@@ -32,7 +32,6 @@ kind: group-index
 - **`advanced-downloader-for-tiktok-addons-mozilla-org`** (high) — OSINT tool: advanced downloader for tiktok (addons.mozilla.org).
 - **`agora-pulse`** (high) — Use when you have a Facebook Page you control/administer and want to benchmark its reach/engagement against similar pages — returns comparat
 - **`all-twitch-streamers-search`** (low) — OSINT tool: All Twitch Streamers Search.
-- **`allmytweets-2`** (medium) — OSINT tool: Allmytweets.
 - **`allmytweets`** (medium) — OSINT tool: AllMyTweets.
 - **`amazing-hiring`** (medium) — An extension for Chrome that allows you to find a link to Linkedin, Facebook, VK, StackOverflow, Instagram... by user Github (or other) prof
 - **`ameba`** (high) — Use when you have a `username` or `name` and want to find a Japanese subject's Ameba blog/social profile — returns social-profile and image 
@@ -46,7 +45,6 @@ kind: group-index
 - **`articles`** (high) — OSINT tool: Articles.
 - **`audiense`** (high) — Use when you have a Twitter/X `username` or audience and want deep audience-segmentation intelligence — returns audience segments, influence
 - **`authentic8-com-2`** (high) — Use when a subject may be on Mastodon/the Fediverse and you need to understand instances and federation before searching — returns platform 
-- **`authentic8-com-4`** (high) — OSINT tool: authentic8.com.
 - **`authentic8-com`** (high) — Use when you're investigating an Instagram account (`username`/`name`) and want a structured methodology — profile, network, content and met
 - **`auto-scroll-search`** (medium) — automatically scrolls the page down (and loads the ribbon) until the specified keyword appears on it.
 - **`backtweets`** (medium) — OSINT tool: Backtweets.
@@ -152,10 +150,7 @@ kind: group-index
 - **`en-wikipedia-org-3`** (high) — Use when you need background on BitChute (alt-tech video platform) before searching it for a subject's content — returns platform context an
 - **`en-wikipedia-org-4`** (high) — Use when you have a `username` or `name` possibly active on the alt-tech network Gab and want to understand the platform before pivoting to 
 - **`en-wikipedia-org-5`** (high) — Use when you have a `username`/`name` that may be on GETTR and want to understand the platform before searching it — returns background cont
-- **`en-wikipedia-org-6`** (high) — OSINT tool: en.wikipedia.org.
-- **`en-wikipedia-org-7`** (high) — OSINT tool: en.wikipedia.org.
 - **`en-wikipedia-org-8`** (high) — Use when you have a `name`/`username` seen on Rumble and want to understand the platform and its context before investigating accounts there
-- **`en-wikipedia-org-9`** (high) — OSINT tool: en.wikipedia.org.
 - **`en-wikipedia-org`** (medium) — Use when you have a `username` or `name` and want an exhaustive checklist of social platforms to search — returns a reference list of networ
 - **`enlarge-discord-avatars`** (medium) — OSINT tool: Enlarge Discord avatars.
 - **`epieos`** (high) — Use when you have an `email` or `phone` and want to reverse-lookup the accounts, profiles and Google identity tied to it — returns social-pr
@@ -188,12 +183,10 @@ kind: group-index
 - **`facebook-scraped-data-search`** (high) — OSINT tool: Facebook Scraped Data search.
 - **`facebook-search-2`** (high) — Use when you have a `name`, `employer-org`, school or city and want to run structured people/post/photo searches on Facebook after Graph Sea
 - **`facebook-search-3`** (high) — Use when you have a `name`, keyword or `username` and want to search recent public Facebook posts/mentions — returns `social-profile` posts 
-- **`facebook-search-4`** (high) — OSINT tool: Facebook Search.
 - **`facebook-search-engine`** (high) — Use when you have a `name`/`username` or keyword and want to search public Facebook content via a prebuilt Google Custom Search Engine — ret
 - **`facebook-search-tool-2`** (high) — Use when you have a Facebook profile `username`/ID or a `name` and want to run advanced Graph-style queries (photos-of, photos-by, places, c
 - **`facebook-search-tool`** (high) — Use when you have two Facebook profiles and want to see who they know in common — returns the mutual-friends list, i.e. `associate` and `soc
 - **`facebook-search`** (high) — OSINT tool: Facebook Search.
-- **`facebook-video-downloader-2`** (medium) — Handy website to download public Facebook videos. Copy paste the URL of the video and download it in the available definition formats.
 - **`facebook-video-downloader-online`** (high) — OSINT tool: Facebook Video Downloader Online.
 - **`facebook-video-downloader`** (high) — Use when you have a public Facebook video `url` (from a target's `social-profile`) and want to save the file for offline capture and analysi
 - **`facebook-watch`** (high) — Use when you have a `name`/`username` or page and want to find video content that person or page has posted or appears in on Facebook — retu
@@ -218,7 +211,6 @@ kind: group-index
 - **`find-twitter-followers`** (high) — OSINT tool: Find Twitter Followers.
 - **`finddit-viralharia`** (low) — Reddit search tool (Finddit).
 - **`findface`** (medium) — OSINT tool: FindFace.
-- **`first-tweet-2`** (medium) — OSINT tool: First Tweet.
 - **`first-tweet`** (high) — Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes brok
 - **`flickr-photopool-contact-network`** (medium) — Analyzes Flickr groups and makes a list of nicknames of participants for further graph analysis in Gephi
 - **`flocknet`** (medium) — A tool for finding and filtering your own #Twitter followers. It allows you to find all the people from a certain city or with certain inter
@@ -305,18 +297,11 @@ kind: group-index
 - **`have-i-been-zucked`** (high) — OSINT tool: Have I Been Zucked?.
 - **`haveibeenzuckered`** (high) — Use when you have a `phone` number and want to know if it was exposed in the 2021 Facebook 533M breach — returns whether that number appears
 - **`help-center`** (high) — OSINT tool: Help Center.
-- **`here-10`** (high) — OSINT tool: Here.
-- **`here-11`** (high) — OSINT tool: Here.
-- **`here-12`** (high) — OSINT tool: Here.
-- **`here-13`** (high) — OSINT tool: Here.
 - **`here-15`** (high) — Use when a subject's trail runs into TikTok and you need to know what data TikTok holds and how law enforcement can request it — returns pro
 - **`here-16`** (high) — Use when you have a Twitch `username`/`social-profile` and a case that may justify legal process — returns the official path and requirement
-- **`here-18`** (high) — OSINT tool: Here.
 - **`here-19`** (high) — Use when you have a numeric X/Twitter user ID (`document-id`) and want the account's current handle/profile — append the ID to the intent UR
 - **`here-20`** (high) — Use when you have a numeric X/Twitter user ID and want the account's current @handle/profile — the /i/user/ redirect resolves ID to the live
-- **`here-7`** (high) — OSINT tool: Here.
 - **`here-8`** (high) — Use when you have a `name` plus an approximate location and want to surface public Facebook profiles/posts via a Google site-search dork — r
-- **`here-9`** (high) — OSINT tool: Here.
 - **`here`** (high) — Use when you have a Reddit `username` or topic and want to reach Pushshift-based historical Reddit archives — returns `social-profile` histo
 - **`hi5-com`** (high) — Use when you have a `username` or `name` and want to find a profile on hi5, a legacy global social network still operated by The Meet Group 
 - **`hi5`** (high) — Use when you have a `name` or `username` and want to check for a legacy hi5 social-network profile — returns a social-profile (now served th
@@ -405,12 +390,8 @@ kind: group-index
 - **`libredd-it`** (medium) — OSINT tool: Libredd.it.
 - **`line-play`** (high) — Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — return
 - **`linkdtime`** (medium) — Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.
-- **`linkedin-com-5`** (high) — OSINT tool: linkedin.com.
-- **`linkedin-com-6`** (high) — OSINT tool: linkedin.com.
-- **`linkedin-com-7`** (high) — OSINT tool: linkedin.com.
 - **`linkedin-datahub`** (medium) — linkedIn's generalized metadata search & discovery tool
 - **`linkedin-email-reverse-lookup`** (high) — Use when you have an `email` and want the matching LinkedIn profile — returns the person's name, profile ID/username, and photo via a logged
-- **`linkedin-profiles-by-email-michael-bazzell-blog`** (high) — OSINT tool: LinkedIn Profiles by Email (Michael Bazzell Blog).
 - **`linkedin-search-engine-with-images`** (high) — Use when you have a `name`/`employer-org` and want LinkedIn profiles surfaced with thumbnail photos for fast visual matching — returns socia
 - **`linkedin-search-engine`** (high) — Use when you have a `name`, `employer-org` or `username` and want to find someone's LinkedIn profile without logging into LinkedIn — returns
 - **`linkedin-x-ray-search-tool`** (high) — Use when you have a `name`, job title, employer, or location and want public LinkedIn profiles — builds a Google X-ray query and returns lin
@@ -428,10 +409,8 @@ kind: group-index
 - **`mastogizmos-com`** (high) — Use when you have a username, hashtag or topic and want to search across the decentralised Mastodon fediverse — returns matching profiles, p
 - **`matthewcassinelli-com`** (high) — Use when you have a Mastodon/fediverse handle or profile link and want its stable numeric account ID — this free Apple Shortcut returns the 
 - **`mavekite`** (medium) — Search TikTok profile by username.
-- **`mediamister-com-2`** (high) — OSINT tool: mediamister.com.
 - **`mediamister-com`** (high) — Use when you have an Instagram `username` and want its permanent numeric user ID — returns the stable numeric ID that survives username chan
 - **`medium-com-2`** (high) — Use when you have a `name`/`username` and want a methodology for investigating them on LinkedIn — a how-to article yielding techniques that 
-- **`medium-com-4`** (high) — OSINT tool: medium.com.
 - **`meetme`** (high) — Use when you have a `name` or `username` and want to check for a profile on the MeetMe social/dating "people nearby" network — returns a soc
 - **`memory-lol-github-com`** (high) — Use when you have a Twitter/X `username` or numeric account ID and want its historical screen-name changes — returns prior `username`s and a
 - **`memory-lol`** (high) — Use when you have a Twitter/X `username` and want that account's past handles/screen-name history — returns prior usernames and the dates th
@@ -448,7 +427,6 @@ kind: group-index
 - **`mundimago-com`** (high) — OSINT tool: Mundimago.com.
 - **`mustbepresent`** (high) — OSINT tool: MustBePresent.
 - **`mymfb-com`** (high) — OSINT tool: mymfb.com.
-- **`myosint-training-2`** (high) — OSINT tool: myosint.training.
 - **`myosint-training`** (high) — Use when you want to build OSINT skills or grab free practitioner tools — a reputable training provider (Micah Hoffman & Griffin Glynn) offe
 - **`myspace-com`** (high) — Use when you have a `username` or `name` and want to check for a legacy Myspace profile — returns a social-profile and old photos, mostly va
 - **`mytweetalerts`** (medium) — Use when you have a `username`, `name` or keyword and want ongoing email alerts whenever matching tweets are posted — returns `social-profil
@@ -509,8 +487,6 @@ kind: group-index
 - **`parler-archive`** (medium) — OSINT tool: Parler archive.
 - **`parler-archives`** (high) — Use when you have a `name`/`username` tied to the Parler social network and want their now-defunct posts — search the Wayback Machine's capt
 - **`parler-com`** (high) — Use when you have a `username`/`name` and suspect the subject is active on the right-leaning social platform Parler — returns their `social-
-- **`pewresearch-org-2`** (high) — OSINT tool: pewresearch.org.
-- **`pewresearch-org-3`** (high) — OSINT tool: pewresearch.org.
 - **`pewresearch-org`** (high) — OSINT tool: pewresearch.org.
 - **`pholder`** (medium) — OSINT tool: Pholder.
 - **`picodash`** (high) — Use when you have a `username`/`name` and want Instagram search/analytics — formerly a location & hashtag search engine, now a paid analytic
@@ -547,7 +523,6 @@ kind: group-index
 - **`readr-for-reddit`** (low) — Chrome extension for improved Reddit reading.
 - **`recruitryte-com`** (high) — Use when you have a `name` / role / `employer-org` and want a ready-made LinkedIn X-Ray Boolean string to run in Google — returns a search q
 - **`redarcs`** (high) — Use when you have a subreddit or Reddit `username` and want bulk downloadable archives of its submissions and comments — including removed/b
-- **`reddit-archive-2`** (medium) — OSINT tool: Reddit Archive.
 - **`reddit-comment-lookup`** (high) — Use when you have a Reddit `username` and want to search that account's comment history (by keyword or in bulk) to profile interests, locati
 - **`reddit-comment-search`** (high) — Use when you have a Reddit `username` and want to keyword-search that user's entire comment history — returns matching comments (social-prof
 - **`reddit-downloader`** (medium) — OSINT tool: Reddit Downloader.
@@ -559,20 +534,16 @@ kind: group-index
 - **`reddit-post-scraping-tool`** (medium) — Simple #python script for scraping post from #Reddit (by keywords and subreddit name)
 - **`reddit-reditr`** (medium) — OSINT tool: Reddit - Reditr.
 - **`reddit-scraper`** (medium) — Crawl posts, comments, communities, and users without login.
-- **`reddit-search-2`** (medium) — OSINT tool: reddit search.
 - **`reddit-search-cemulate`** (low) — Alternative Reddit search tool.
-- **`reddit-search-engine-2`** (medium) — OSINT tool: Reddit Search Engine.
 - **`reddit-search-engine`** (medium) — OSINT tool: Reddit Search Engine.
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
 - **`reddit-search-reddit-search-surge-sh`** (low) — Reddit content discovery tool.
-- **`reddit-search-tool-2`** (medium) — OSINT tool: Reddit search tool.
 - **`reddit-search-tool`** (medium) — OSINT tool: Reddit Search Tool.
 - **`reddit-search`** (medium) — OSINT tool: Reddit Search.
 - **`reddit-shell`** (low) — Command-line-style interface for Reddit.
 - **`reddit-stream`** (low) — Live-stream Reddit comments in real time.
 - **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
 - **`reddit-timer`** (medium) — Get last week's hourly activity schedule for a specific subreddit
-- **`reddit-user-analyser-2`** (medium) — OSINT tool: Reddit User Analyser.
 - **`reddit-user-analyser`** (high) — Use when you have a Reddit `username` and want a fast behavioural profile — returns activity stats, top subreddits, posting-time patterns an
 - **`reddit-user-extractor`** (medium) — #python script that allows you to get a complete list of comments by user name on Reddit in CSV format
 - **`reddit-visualization`** (medium) — OSINT tool: reddit visualization.
@@ -622,7 +593,6 @@ kind: group-index
 - **`searchstream-live`** (low) — OSINT tool: Searchstream.live.
 - **`seart-github-search`** (medium) — Search engine for #Github with a dozen different filters. It has slightly fewer features than the standard Github advanced search, but more 
 - **`secjuice-com-3`** (high) — Use when you're about to investigate a subject on LinkedIn and want a methodology walkthrough — returns techniques for finding and reading `
-- **`secjuice-com-4`** (high) — OSINT tool: secjuice.com.
 - **`seemutualfriendsonfacebook-com`** (high) — Use when you have two or more Facebook friend lists (scraped) and want to find the people they have in common — returns overlapping social-p
 - **`sentiment140`** (high) — OSINT tool: Sentiment140.
 - **`seo-resources-search-engine`** (low) — OSINT tool: SEO Resources Search Engine.
@@ -654,7 +624,6 @@ kind: group-index
 - **`snapvip`** (medium) — OSINT tool: Snapvip.
 - **`snradar`** (medium) — OSINT tool: Snradar.
 - **`snscrape`** (medium) — Tool for search posts and gathering information about users in Twitter, Reddit, Vkontakte, Weibo, Telegram, Facebook, Instagram, Telegram an
-- **`social-analyzer-3`** (medium) — extension for Google Chrome that simplifies and speeds up daily monitoring of social networks. Create your own list of keywords and regularl
 - **`social-blade`** (medium) — help you track YouTube Channel Statistics, Twitch User Stats, Instagram Stats, and much more
 - **`social-downornot`** (high) — OSINT tool: Social DownORNot.
 - **`social-media-osint-tools-collection`** (high) — Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated ca
@@ -739,10 +708,8 @@ kind: group-index
 - **`tikstats`** (medium) — detailed statistics on the growth dynamics of subscribers, likes, and video views for the TikTok account
 - **`tiktake-net`** (medium) — TikTok Video Downloader
 - **`tiktok-creative-center-statistics`** (medium) — List of most popular hashtags; songs; creators; videos for different countries and periods.
-- **`tiktok-downloader-2`** (medium) — TikTok Video Downloader
 - **`tiktok-downloader`** (medium) — OSINT tool: TikTok downloader.
 - **`tiktok-save-addons-mozilla-org`** (high) — Use when you have a TikTok video (from a target's `social-profile`/`username`) and want a local copy for offline analysis — returns the down
-- **`tiktok-scraper-2`** (medium) — Extract data about videos, users, and channels based on hashtags, profiles and individual posts.
 - **`tiktok-scraper`** (medium) — scrapping video from user, trend or hashtag feed, extracting video's or user's metadata, downloading video or music, processing a list of cl
 - **`tiktok-search-engine`** (medium) — OSINT tool: TIKTOK Search Engine.
 - **`tiktok-user-finder`** (high) — Use when you have a TikTok `username` and want that account's metadata — numeric user ID, region, creation date, username-change history and
@@ -764,7 +731,6 @@ kind: group-index
 - **`trends24`** (low) — Use when you have a place and time and want to know what was trending on X/Twitter there — returns ranked trending topics by country/city wi
 - **`trendsmap`** (medium) — OSINT tool: TrendsMap.
 - **`trevorfox-com-2`** (high) — Use when you have a LinkedIn post/activity URL (a `social-profile` artifact) and want its true publication timestamp — returns the exact `do
-- **`trevorfox-com-3`** (high) — OSINT tool: trevorfox.com.
 - **`trevorfox-com`** (high) — Use when you have a Reddit post/comment `social-profile` URL and want its exact creation timestamp — returns precise UTC/local date-time met
 - **`trombi-com`** (high) — Use when you have a `name` (including a maiden name) and a French school/era and want to find the person's classmates-network profile and ph
 - **`truthnest`** (medium) — Use when you have an X/Twitter `username` and want deep account analytics (activity patterns, hashtags, mentions, bot-likelihood signals) — 
@@ -792,9 +758,6 @@ kind: group-index
 - **`tweetdeck`** (medium) — OSINT tool: Tweetdeck.
 - **`tweetdelete-net`** (high) — OSINT tool: tweetdelete.net.
 - **`tweetfeed`** (medium) — List of IOCs shared today by the #infosec community at Twitter: domains, URLs, IPs, SHA256/MD5 hashes
-- **`tweetmap-2`** (high) — OSINT tool: TweetMap.
-- **`tweetmap-3`** (high) — OSINT tool: tweetmap.
-- **`tweetmap-4`** (medium) — OSINT tool: TweetMap.
 - **`tweetmap`** (high) — OSINT tool: TweetMap.
 - **`tweetpaths`** (medium) — OSINT tool: Tweetpaths.
 - **`tweetreach`** (medium) — OSINT tool: Tweetreach.
@@ -840,7 +803,6 @@ kind: group-index
 - **`twitter-name-search-twitter-name-search`** (medium) — OSINT tool: Twitter Name Search (Twitter Name Search).
 - **`twitter-photo-search`** (high) — Use when you have a `name`/`username` or keyword and want to search Twitter/X image content via a prebuilt Google Custom Search Engine — ret
 - **`twitter-scraper`** (medium) — Scrape any #Twitter user profile. Creates an unofficial Twitter API to extract tweets, retweets, replies, favorites, and conversation thread
-- **`twitter-search-2`** (high) — OSINT tool: Twitter Search.
 - **`twitter-search-engine`** (high) — Use when you have a `name`, `username`, or keyword and want to search Twitter/X content and profiles through a Google Custom Search Engine —
 - **`twitter-search-tool`** (high) — Use when you have a `username`, `name`, keyword, or `geolocation` and want to build advanced Twitter/X search queries without a Twitter acco
 - **`twitter-search`** (high) — Use when you have a `name`, `username`, keyword, place, or date range and want to surface matching public posts on X (Twitter) — returns twe
@@ -849,7 +811,6 @@ kind: group-index
 - **`twitter-trending-hashtags-and-topics`** (high) — Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — return
 - **`twitter-url-scraper`** (medium) — A simple tool for analyzing twitter conversations (and other pages). Get profile pictures, user names and the text of the conversation's twe
 - **`twitter-video-download-com`** (high) — OSINT tool: twitter-video-download.com.
-- **`twitter-video-downloader-2`** (medium) — Online (X) Twitter download service to save videos, broadcasts, screenshots and MP3 audio from Twitter
 - **`twitter-video-downloader`** (medium) — Download videos from X (formerly Twitter) by converting tweet URLs into downloadable video links.
 - **`twitter-x-advanced-search`** (medium) — Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criter
 - **`twitter-x-location-search`** (medium) — Search for geocoded tweets by their distance from some coordinates.
@@ -904,10 +865,8 @@ kind: group-index
 - **`wolfram-alpha-facebook-report`** (high) — OSINT tool: Wolfram Alpha Facebook Report.
 - **`worldcam-search-instagram-by-location`** (high) — Use when you have a `geolocation`/`address` and want to see public Instagram photos taken there — returns images, poster usernames and socia
 - **`www-linkedin-com-pub-dir-people-search`** (high) — Use when you have a `name` (optionally + employer) and want to find a subject's LinkedIn profile — returns their profile, current/past emplo
-- **`x-com-2`** (high) — OSINT tool: x.com.
 - **`x-com-3`** (high) — Use when you want curated LinkedIn/people-finding OSINT technique tips from the @cyb_detective account — returns pointers to `social-profile
 - **`x-com-4`** (high) — Use when you have a `username` or `name` and want the subject's X (Twitter) profile and posts via the platform's own search — returns `socia
-- **`x-com-5`** (high) — OSINT tool: x.com.
 - **`x-com-6`** (high) — Use when you have an `email`, `phone`, or `username` and want to confirm it belongs to an X/Twitter account — returns account existence plus
 - **`xboxgamertag`** (medium) — Search gamertags, see games played and recorded game clips
 - **`xcancel-nitter-mirror`** (high) — Use when you have an X/Twitter `username` and want to read their tweets, replies, and media without logging in — returns the public timeline
@@ -922,7 +881,6 @@ kind: group-index
 - **`youfilter-youtube-advanced-search-filter`** (medium) — An extension that displays #YouTube search results in a table with very detailed information about each video (including quick links to the 
 - **`youglish`** (medium) — Type a random phrase in English and listen to native speakers pronounce it in YouTube videos.
 - **`yout`** (medium) — OSINT tool: Yout.
-- **`youtube-actual-top-comments-2`** (medium) — Fetch all comments to Youtube video (without answers). Sort them by likes and filter by keywords
 - **`youtube-actual-top-comments`** (medium) — The main drawback of the standard #YouTube comment display is that it does not sort comments by the number of likes, but simply shows popula
 - **`youtube-booster`** (medium) — This extension selects frames from videos and generates quick links to find them on Google and TinEye!
 - **`youtube-caption-searcher`** (medium) — Well down tool for searching in #YouTube video subtitles by keyword. Use Enter to move forward and Shift+Enter to move back.
@@ -935,7 +893,6 @@ kind: group-index
 - **`youtube-comment-sorting`** (medium) — OSINT tool: YouTube comment Sorting.
 - **`youtube-comments-analyze`** (medium) — Download detailed information about YouTube video comments to a .tab or .gdf
 - **`youtube-comments-downloader`** (medium) — OSINT tool: Youtube Comments Downloader.
-- **`youtube-dl-2`** (low) — OSINT tool: Youtube-dl.
 - **`youtube-dl`** (medium) — OSINT tool: youtube-dl.
 - **`youtube-geo-search-tool`** (medium) — OSINT tool: Youtube Geo Search Tool.
 - **`youtube-lookup`** (medium) — Simple tool for gathering info about video: Content details, Snippet details, Statistics, Status, Thumbnails
@@ -951,7 +908,6 @@ kind: group-index
 - **`youtube-video-upload-time`** (medium) — OSINT tool: YouTube video upload time.
 - **`youtube-whisperer`** (medium) — Transcribe YouTube video
 - **`youtube-word-search`** (medium) — An extension that helps you find at what second in the video a certain word is heard. It's possible to search not only by one word, but by t
-- **`yt-dlp-2`** (medium) — OSINT tool: yt-dlp.
 - **`ytcomments-klostermann-ca`** (low) — OSINT tool: Ytcomments.klostermann.ca.
 - **`ytcs`** (medium) — google chrome extension to search YouTube comments without leaving the site (link to source code)
 - **`ytgrep`** (medium) — A tool for quick text search of subtitles in YouTube videos. Supports regular expressions and searching across multiple videos.

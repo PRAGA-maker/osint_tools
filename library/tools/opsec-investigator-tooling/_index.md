@@ -7,10 +7,10 @@ kind: group-index
 # opsec-investigator-tooling
 
 ## Sub-groups
-- **`anonymous-browsing/`** — 28 skill(s) below.
+- **`anonymous-browsing/`** — 24 skill(s) below.
 - **`metadata-style/`** — 2 skill(s) below.
-- **`persona-creation/`** — 5 skill(s) below.
-- **`privacy-clean-up/`** — 12 skill(s) below.
+- **`persona-creation/`** — 4 skill(s) below.
+- **`privacy-clean-up/`** — 10 skill(s) below.
 
 ## Skills here
 - **`10minutemail-com`** (low) — OSINT tool: 10minutemail.com.
@@ -150,7 +150,6 @@ kind: group-index
 - **`fake-drivers-license-generator`** (low) — OSINT tool: Fake Drivers License Generator.
 - **`fake-generator-tools`** (low) — OSINT tool: Fake Generator Tools.
 - **`fake-identity-id-random-name-generator`** (low) — OSINT tool: Fake Identity ID Random Name Generator.
-- **`fake-name-generator-2`** (low) — OSINT tool: Fake Name Generator.
 - **`fake-person-generator`** (low) — OSINT tool: Fake person generator.
 - **`fake-tiktok-profile-generator`** (low) — OSINT tool: Fake Tiktok Profile Generator.
 - **`fake-youtube-channel-generator`** (low) — OSINT tool: Fake Youtube Channel Generator.
@@ -180,7 +179,6 @@ kind: group-index
 - **`generate-sa-id-numbers`** (low) — OSINT tool: Generate SA ID Numbers.
 - **`genius-scan-tool-app-mobile-ios`** (low) — App for mobile devices for scanning documents into PDF format
 - **`geotagonline`** (low) — add fake geotags to photo
-- **`gephi-2`** (low) — fast and easy to learn graph analytics tool with a lot of modules (plugins)
 - **`get-safe-online-database`** (low) — Website providing information about online privacy and security-related subjects
 - **`giphy-cam-gif-editor-app-mobile-android`** (low) — App for mobile devices for creating and sharing GIF format multimedia.
 - **`giphy-the-gif-search-engine-app-mobile-ios`** (low) — App for mobile devices for creating and sharing GIF format multimedia
@@ -352,17 +350,14 @@ kind: group-index
 - **`primeos`** (low) — OSINT tool: PrimeOS.
 - **`prism-break`** (low) — OSINT tool: PRISM Break.
 - **`privacy-net`** (low) — Listing of privacy resources
-- **`privacy-services-by-michael-bazzell`** (low) — OSINT tool: Privacy Services by Michael Bazzell.
 - **`prospectlinked`** (low) — OSINT tool: ProspectLinked.
 - **`proton-vpn`** (low) — OSINT tool: Proton VPN.
 - **`proxy-org`** (low) — Listing of anonymous web proxies
 - **`pushbullet-management-extension-chrome`** (low) — Add-on for Google Chrome that coordinates online activities between several personal devices
-- **`pywhat-2`** (low) — Python tool to help identify different text strings like wallet numbers, API keys, emails, and more. It is convenient for working with .pcap
 - **`quickvoice-recorder-app-mobile-ios`** (low) — App for mobile devices for recording personal messages
 - **`random-face-generator`** (low) — OSINT tool: Random Face Generator.
 - **`ray-so`** (low) — A simple tool that allows you to beautifully design code as a picture (for social media post or article).
 - **`receive-sms-now-com`** (low) — OSINT tool: Receive-sms-now.com.
-- **`receive-sms-online-2`** (low) — OSINT tool: Receive SMS Online.
 - **`receive-sms-online-for-free`** (low) — OSINT tool: Receive SMS Online for FREE.
 - **`receive-sms-online`** (low) — OSINT tool: Receive SMS Online.
 - **`redbooth-team-collaboration-app`** (low) — Mobile device app for collaboration, task management, file sharing and communication allowing 5 free users
@@ -388,7 +383,6 @@ kind: group-index
 - **`screenshot-full-page-screen-capture`** (low) — record a video of part of the screen using a very easy-to-use browser extension
 - **`scrim-email-protector`** (low) — Tool that converts an email address into a short link for sharing on the web to prevent spam
 - **`seamonkey`** (low) — Internet browser program including email, newsgroups, chat, and more
-- **`search-by-image-2`** (low) — Firefox add-on by Armin Sebastian for conducting reverse image searches on various search engines
 - **`search-incognito-extension-chrome`** (low) — Add-on for Google Chrome that prevents tracking of follow-up queries from highlighted words
 - **`search-that-hash`** (low) — Python tool for automating password hash detection (based on Hashcat). It can work with single strings as well as with long lists of hashes 
 - **`searchonymous`** (low) — Firefox browser add-on that lets you search Google anonymously while remaining logged in
@@ -465,7 +459,6 @@ kind: group-index
 - **`todoist-management-app-mobile-android`** (low) — App for mobile devices for managing and organizing tasks and lists
 - **`tor-browser`** (low) — OSINT tool: Tor Browser.
 - **`tor`** (low) — Browser protects against tracking, surveillance, and censorship
-- **`torch-2`** (low) — Accessed using the Tor browser; Tor dark web search engine
 - **`torch-flashlight-tool-app-mobile-ios`** (low) — App for mobile devices for using your device as a flashlight
 - **`torch`** (low) — OSINT tool: Torch.
 - **`trace-labs-osint-vm-tlosint-vm`** (high) — Use when you want a ready-made, OpSec-hardened investigator workstation — a Kali-based VM pre-loaded with the Trace Labs OSINT toolset for m
@@ -479,7 +472,6 @@ kind: group-index
 - **`tumblr-social-networking-mobile-ios`** (low) — App for mobile devices for social netwokring and bookmarking, one of the Top 100 apps for 2015; free public use; account required; download 
 - **`tunnelbear`** (low) — Anonymous browsing service provider
 - **`turn-off-the-lights-extension-chrome`** (low) — Add-on for Google Chrome that dims other windows when the video window is open and running
-- **`twilio-2`** (low) — OSINT tool: Twilio.
 - **`twitter-profile-generator`** (low) — OSINT tool: Twitter Profile Generator.
 - **`twitter-social-networking-mobile-android`** (low) — App for mobile devices for social networking
 - **`twitter-social-networking-mobile-ios`** (low) — App for mobile devices for social networking

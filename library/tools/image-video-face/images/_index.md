@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`flickr/`** — 5 skill(s) below.
 - **`forensics/`** — 2 skill(s) below.
-- **`instagram/`** — 5 skill(s) below.
+- **`instagram/`** — 4 skill(s) below.
 - **`metadata/`** — 17 skill(s) below.
 - **`ocr/`** — 3 skill(s) below.
 - **`search/`** — 23 skill(s) below.
