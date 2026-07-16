@@ -104113,55 +104113,6 @@
     "_file": "library/tools/email/liker.md"
   },
   {
-    "id": "lycos-mail-usa",
-    "name": "Lycos Mail (USA)",
-    "description": "American email service provider",
-    "url": "http://www.mail.lycos.com",
-    "category": "email",
-    "path": [
-      "email"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "email"
-    ],
-    "selectorsOut": [
-      "email",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "email-addresses"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "lycos",
-      "lycos-image-search"
-    ],
-    "_file": "library/tools/email/lycos-mail-usa.md"
-  },
-  {
     "id": "maestrolabs-com",
     "name": "maestrolabs.com",
     "description": "Use when you want to send a tracked email to a missing person's known address and learn whether/where it was opened — returns read confirmation and approximate IP geolocation.",
@@ -139626,45 +139577,6 @@
     "_file": "library/tools/image-video-face/faceplusplus-com.md"
   },
   {
-    "id": "facesaerch",
-    "name": "facesaerch",
-    "description": "Face image search engine.",
-    "url": "http://www.facesaerch.com/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "face"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "facesearch"
-    ],
-    "_file": "library/tools/image-video-face/facesaerch.md"
-  },
-  {
     "id": "facesearch",
     "name": "facesearch",
     "description": "Use when triaging legacy OSINT lists for a reverse face/photo search tool — but this entry's domain is misspelled and likely dead; verify before relying on it.",
@@ -157595,30 +157507,31 @@
   {
     "id": "vevo",
     "name": "Vevo",
-    "description": "Website that hosts videos from music",
+    "description": "Use when a subject is a recording artist and you have their stage/artist `name` and want their official music-video catalogue and verified channels — returns image (video stills) and social-profile links.",
     "url": "http://www.vevo.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a recording-artist subject's official videos, artist page and verified channels.",
     "selectorsIn": [
-      "image",
-      "face"
+      "name",
+      "username"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported streaming of official music videos; no account required to search or watch.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Ordinary public browsing of a media site; no interaction with the subject. Watching from a logged-out/sock-puppet session avoids tying the view to any of your accounts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official label-backed music-video platform (major-label joint venture); artist pages and videos are authoritative for verified recording artists, though niche/independent artists may not be present.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -157627,15 +157540,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "vevo.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
+      "video",
+      "music"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/vevo.md"
   },
   {
@@ -158223,49 +158138,6 @@
       "whatthefont"
     ],
     "_file": "library/tools/image-video-face/fonts/what-the-font.md"
-  },
-  {
-    "id": "when-where-net",
-    "name": "When-where.net",
-    "description": "OSINT tool: When-where.net.",
-    "url": "http://when-where.net",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reverse-image",
-      "face"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/when-where-net.md"
   },
   {
     "id": "who-stole-my-pictures-addons-mozilla-org",
@@ -167018,37 +166890,50 @@
   {
     "id": "chatsearchrobot",
     "name": "ChatSearchRobot",
-    "description": "OSINT tool: ChatSearchRobot.",
+    "description": "Use when you have a Telegram group/channel `social-profile` or a topic `username`/keyword and want to discover similar or related Telegram communities — returns social-profile links to other group chats.",
     "url": "https://t.me/ChatSearchRobot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding Telegram groups/channels similar to a known one, or by topic keyword.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free Telegram bot; no payment required beyond having a Telegram account.",
+    "opsec": "passive",
+    "opsecNote": "You query the bot, not any target, so no subject is alerted. But the operator logs your searches — use a burner Telegram account if the communities you're mapping are sensitive, and remember that joining any group the bot surfaces is itself an active step that can expose your account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Anonymous Telegram discovery bot; the similarity ranking is opaque and results are best treated as a lead list, not an exhaustive index.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "ChatSearchRobot bot"
+    ],
     "tags": [
       "telegram"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/chatsearchrobot.md"
   },
   {
@@ -170235,37 +170120,58 @@
   {
     "id": "leak-osint",
     "name": "Leak OSINT",
-    "description": "OSINT tool: Leak OSINT.",
+    "description": "Use when you have an `email`, `phone`, `username` or `name` and want to check it against aggregated data-breach dumps via a Telegram bot — returns leaked password, email, phone, address and name fragments.",
     "url": "https://telegram.me/Leak_SSINTbot",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Quick breach-data lookups on an email/phone/username from inside Telegram.",
+    "selectorsIn": [
+      "email",
+      "phone",
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "password",
+      "email",
+      "phone",
+      "address",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A handful of free lookups; deeper/unmasked results are gated behind paid credits or a subscription bought inside the bot.",
+    "opsec": "passive",
+    "opsecNote": "Queries never reach the target, but you are handing the target's PII to an anonymous bot operator who logs every request and could resell it. Run it only from a burner Telegram account on a sock-puppet number, and assume the operator sees exactly what you searched.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "Anonymous Telegram breach-aggregator bot; source dumps are of unknown provenance and may be stale, partial, or salted with false records. Treat every hit as a lead to verify, not fact.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Leak_SSINTbot",
+      "Leak OSINT bot"
+    ],
     "tags": [
-      "telegram"
+      "telegram",
+      "breach-data"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/messaging/leak-osint.md"
   },
   {
@@ -208743,51 +208649,6 @@
     "_file": "library/tools/people-search/peep-mail-search-tool.md"
   },
   {
-    "id": "peepdb-person-search",
-    "name": "PeepDB (Person Search)",
-    "description": "OSINT tool: PeepDB (Person Search).",
-    "url": "http://www.peepdb.com",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/peepdb-person-search.md"
-  },
-  {
     "id": "people-looker-us",
     "name": "PeopleLooker (US)",
     "description": "Use when you have a US `name`, `phone`, `email` or `address` and want a consumer background-report aggregator to pull contact history, relatives and records — returns address, phone, email, associate, social-profile and dob.",
@@ -211480,51 +211341,6 @@
     "_file": "library/tools/people-search/socialcatfish.md"
   },
   {
-    "id": "sociallist-io",
-    "name": "SocialList.io",
-    "description": "OSINT tool: SocialList.io.",
-    "url": "https://sociallist.io",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/sociallist-io.md"
-  },
-  {
     "id": "socialpath",
     "name": "SocialPath",
     "description": "Use when you have a `username` and want to track its reuse across social platforms and profile it — returns matching profiles, activity, and mentioned-contact (associate) data as social-profile.",
@@ -211617,51 +211433,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/people-search/sources.md"
-  },
-  {
-    "id": "sovaweb",
-    "name": "SovaWeb",
-    "description": "web version of a famous Russian bot in Telegram for searching by email, nickname, IMSI, IMEI, MSISDN, BTS, IP, BSSID",
-    "url": "http://sovaweb.herokuapp.com/",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "email",
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "address",
-      "email",
-      "name",
-      "phone"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Universal Contact Search and Leaks Search"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/sovaweb.md"
   },
   {
     "id": "spokeo",
@@ -216139,49 +215910,6 @@
     "_file": "library/tools/phone/freephonenum-com.md"
   },
   {
-    "id": "geocell-mobi",
-    "name": "geocell.mobi",
-    "description": "OSINT tool: geocell.mobi.",
-    "url": "https://geocell.mobi/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mobilephone",
-      "Mobile & Phone Related"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/geocell-mobi.md"
-  },
-  {
     "id": "giffgaff-com",
     "name": "giffgaff",
     "description": "Use when you need an anonymous UK mobile number for sock-puppet accounts (OpSec infrastructure), or a reference for phone-unlocking by network — a cheap PAYG SIM provider, not a number-to-identity lookup.",
@@ -216905,48 +216633,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/phone/jtdirectory-com.md"
-  },
-  {
-    "id": "makelia-public-records-repository",
-    "name": "Makelia - Public Records Repository",
-    "description": "OSINT tool: Makelia - Public Records Repository.",
-    "url": "https://makelia.com",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "phone"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/makelia-public-records-repository.md"
   },
   {
     "id": "mastdata-com",
@@ -219814,51 +219500,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/phone/voicemail/slydial.md"
-  },
-  {
-    "id": "smartdigital-telephone-directories",
-    "name": "SmartDigital Telephone Directories",
-    "description": "Directory with over 60 websites that contain telephone number-related information",
-    "url": "http://www.smartdigitaltelevision.com/directories.html",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "phone",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "telephone-numbers"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/smartdigital-telephone-directories.md"
   },
   {
     "id": "sms-receive-net",
@@ -228257,40 +227898,6 @@
     "_file": "library/tools/public-records/causelist-uk.md"
   },
   {
-    "id": "cemetery-directory",
-    "name": "Cemetery.directory",
-    "description": "OSINT tool: Cemetery.directory.",
-    "url": "https://cemetery.directory/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/cemetery-directory.md"
-  },
-  {
     "id": "censusfinder",
     "name": "Censusfinder",
     "url": "http://censusfinder.com",
@@ -233765,40 +233372,6 @@
       "state-of-delaware-professional-license-validator"
     ],
     "_file": "library/tools/public-records/delaware.md"
-  },
-  {
-    "id": "delawarevoters-info",
-    "name": "Delawarevoters.info",
-    "description": "OSINT tool: Delawarevoters.info.",
-    "url": "http://delawarevoters.info/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/delawarevoters-info.md"
   },
   {
     "id": "denmark",
@@ -256968,98 +256541,6 @@
     "_file": "library/tools/public-records/obituaries-from-newspapers-north-america.md"
   },
   {
-    "id": "obituary-research-service-australia",
-    "name": "Obituary Research Service (Australia)",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
-    "url": "http://obituaryresearchservice.com.au",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/obituary-research-service-australia.md"
-  },
-  {
-    "id": "obituary-searches-com",
-    "name": "Obituary-Searches.com",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
-    "url": "http://www.obituary-searches.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/obituary-searches-com.md"
-  },
-  {
     "id": "obsidian-cli",
     "name": "OBSIDIAN CLI",
     "description": "Very simple #go tool that let to interact with the Obsidian using the terminal. Open, search, create and edit files. Can be combined with any other #cli #osint tools to automate your workflow.",
@@ -268002,51 +267483,6 @@
     "_file": "library/tools/public-records/slovenia.md"
   },
   {
-    "id": "smallbusinesspro-co-uk",
-    "name": "smallbusinesspro.co.uk",
-    "description": "OSINT tool: smallbusinesspro.co.uk.",
-    "url": "https://www.smallbusinesspro.co.uk/tax/vat-numbers.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "companysites",
-      "Company Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/smallbusinesspro-co-uk.md"
-  },
-  {
     "id": "snitch-list",
     "name": "Snitch List",
     "description": "OSINT tool: Snitch List.",
@@ -268651,47 +268087,59 @@
   },
   {
     "id": "spain",
-    "name": "Spain",
-    "description": "OSINT tool: Spain.",
+    "name": "Registro Mercantil (Spain)",
+    "description": "Use when you have a Spanish company `name`, director `name` or `address` and want official mercantile-registry records — returns employer-org, associated officers, registered address and filing data.",
     "url": "https://sede.registradores.org/site/mercantil",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Official Spanish company and director records from the state mercantile registry.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
-      "name"
+      "name",
+      "address",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The portal is free to browse and basic company lookups are free, but full mercantile extracts, certifications and beneficial-ownership (titularidad real) reports are paid per document and require a registered account.",
+    "opsec": "passive",
+    "opsecNote": "This is a public government registry; querying it does not touch or alert the subject. Detailed/paid requests require account registration, which ties the lookup to your identity/payment — use an appropriately attributed account for sanctioned work.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Colegio de Registradores de España (CORPME), the official body for Spain's Property and Mercantile Registries — authoritative primary-source data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "es"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Registradores de España",
+      "Registro Mercantil",
+      "sede.registradores.org"
+    ],
     "tags": [
-      "companysites",
-      "Company Related Sites"
+      "company",
+      "public-records",
+      "spain"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/spain.md"
   },
   {
@@ -269884,47 +269332,57 @@
   },
   {
     "id": "taxpolicy-org-uk",
-    "name": "taxpolicy.org.uk",
-    "description": "OSINT tool: taxpolicy.org.uk.",
+    "name": "Tax Policy Associates UK PSC Map",
+    "description": "Use when you have a person `name`, `address` or company `employer-org` and want to map UK companies' Persons with Significant Control geographically — returns employer-org, associate and address links to beneficial owners.",
     "url": "https://taxpolicy.org.uk/wp-content/assets/pscs_map_v3.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Mapping UK beneficial owners (PSCs) to companies and locations on an interactive map.",
     "selectorsIn": [
       "name",
       "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "associate",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free interactive tool published by Tax Policy Associates; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "A static, client-side map served from a public site; searching and filtering happen in your browser, so no query reaches the subject and nothing is logged against them. Standard public-records browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built by Tax Policy Associates (Dan Neidle), a well-regarded independent UK tax-transparency body, from official Companies House PSC data; derivative of primary data but reputably assembled.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "PSC map",
+      "Tax Policy Associates persons with significant control map"
+    ],
     "tags": [
-      "companysites",
-      "Company Related Sites"
+      "company",
+      "beneficial-ownership",
+      "uk",
+      "public-records"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/taxpolicy-org-uk.md"
   },
   {
@@ -320960,49 +320418,6 @@
     "_file": "library/tools/social-networks/commits-top.md"
   },
   {
-    "id": "company-or-organisation",
-    "name": "Company or Organisation",
-    "description": "OSINT tool: Company or Organisation.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Afacebook.com+%22works+at%22+%22Search+Term%22+",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook",
-      "Facebook General Links"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/company-or-organisation.md"
-  },
-  {
     "id": "copainsdavant-linternaute-com",
     "name": "Copains d'avant",
     "description": "Use when you have a `name` and a French school/town and want to place a subject via their old-classmates profile — returns social-profile, schools/employers, and location.",
@@ -330381,58 +329796,6 @@
     "_file": "library/tools/social-networks/gravatar-email-checker.md"
   },
   {
-    "id": "griffin-glynn-hatless1der",
-    "name": "Griffin Glynn / hatless1der",
-    "description": "OSINT tool: Griffin Glynn / hatless1der.",
-    "url": "https://www.linkedin.com/in/griffin-g",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pinterest",
-      "Pinterest Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "hatless-investigations-group",
-      "linkedin",
-      "linkedin-advanced-search",
-      "linkedin-com",
-      "linkedin-groups",
-      "robert-devere-bunn",
-      "www-linkedin-com-pub-dir-people-search"
-    ],
-    "_file": "library/tools/social-networks/griffin-glynn-hatless1der.md"
-  },
-  {
     "id": "hadzy-com",
     "name": "Hadzy.com",
     "description": "OSINT tool: Hadzy.com.",
@@ -330686,49 +330049,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/haveibeenzuckered.md"
-  },
-  {
-    "id": "help-center",
-    "name": "Help Center",
-    "description": "OSINT tool: Help Center.",
-    "url": "https://www.facebook.com/help/460711197281324",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/help-center.md"
   },
   {
     "id": "here",
@@ -338084,52 +337404,6 @@
     "_file": "library/tools/social-networks/namemc.md"
   },
   {
-    "id": "naseeb-com",
-    "name": "Naseeb.com",
-    "description": "Naseeb.com is an online community that connects young, educated, professional Muslims through networks of friends and advanced search and matching algorithms.",
-    "url": "http://www.naseeb.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "social-media",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/naseeb-com.md"
-  },
-  {
     "id": "natcen-ac-uk",
     "name": "natcen.ac.uk",
     "description": "OSINT tool: natcen.ac.uk.",
@@ -340299,53 +339573,6 @@
     "_file": "library/tools/social-networks/osintnova.md"
   },
   {
-    "id": "osintteam-blog",
-    "name": "osintteam.blog",
-    "description": "OSINT tool: osintteam.blog.",
-    "url": "https://osintteam.blog/using-instagram-for-open-source-intelligence-18760c27c32a",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram",
-      "Instagram Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "osintteam-blog-2",
-      "osintteam-blog-3"
-    ],
-    "_file": "library/tools/social-networks/osintteam-blog.md"
-  },
-  {
     "id": "osintteam-blog-2",
     "name": "osintteam.blog",
     "description": "Use when you want a curated shortlist of LinkedIn OSINT tools to try against a subject — returns a listicle of tools that surface `social-profile`s, not a lookup itself.",
@@ -341198,49 +340425,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/pinterest-pin-stats.md"
-  },
-  {
-    "id": "pitoolbox-com-au-facebook-tool",
-    "name": "Pitoolbox.com.au/facebook-tool/",
-    "description": "OSINT tool: Pitoolbox.com.au/facebook-tool/.",
-    "url": "http://pitoolbox.com.au/facebook-tool",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/pitoolbox-com-au-facebook-tool.md"
   },
   {
     "id": "pixnoy-com",
@@ -348149,13 +347333,13 @@
   {
     "id": "sometag",
     "name": "sometag",
-    "description": "OSINT tool: sometag.",
+    "description": "Use when you have an Instagram `username`, hashtag or place `name` and want to browse that public profile, its posts, tagged locations and hashtag feeds without logging in — returns social-profile, image and geolocation leads.",
     "url": "https://sometag.org",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing a public Instagram profile, its media and hashtag/location feeds without an Instagram login.",
     "selectorsIn": [
       "username",
       "name"
@@ -348165,28 +347349,37 @@
       "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free ad-supported Instagram viewer; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "You browse Instagram content through sometag's own servers, so your IP never touches Instagram and the target gets no viewer/notification. But sometag is an anonymous third party that logs your requests — treat it as untrusted, reach it over a sock-puppet browser/VPN, and never enter your own Instagram credentials.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Anonymous third-party Instagram scraper with no stated operator; results mirror public Instagram but freshness and completeness are not guaranteed.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "sometag.org",
+      "Instagram hashtag viewer"
+    ],
     "tags": [
       "instagram"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/sometag.md"
   },
   {
@@ -354458,40 +353651,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/tweetreach.md"
-  },
-  {
-    "id": "tweettioc-com",
-    "name": "Tweettioc.com",
-    "description": "OSINT tool: Tweettioc.com.",
-    "url": "http://tweettioc.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweettioc-com.md"
   },
   {
     "id": "tweetvacuum",
@@ -378155,47 +377314,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/username/nameberry.md"
-  },
-  {
-    "id": "namecheck",
-    "name": "Namecheck",
-    "description": "OSINT tool: Namecheck.",
-    "url": "https://namecheck.bloggingehow.com",
-    "category": "username",
-    "path": [
-      "username"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "username"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/username/namecheck.md"
   },
   {
     "id": "namechecker-org",

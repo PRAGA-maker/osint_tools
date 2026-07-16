@@ -45,7 +45,6 @@ kind: group-index
 - **`name-checkr`** (high) — Use when you have a `username` and want a fast availability check across social networks and domains to see where the handle is taken — retu
 - **`name-chk`** (high) — Use when you have a `username` and want a quick presence/availability sweep across many social sites and domains — returns which platforms t
 - **`nameberry`** (high) — Use when you have a `name` and want its nicknames, diminutives and spelling variants so you can search every form of it — returns alternate 
-- **`namecheck`** (high) — OSINT tool: Namecheck.
 - **`namechecker-org`** (medium) — Free username availability checker.
 - **`namechk-2`** (low) — Use when an old workflow references this bash username checker — returns little now; it's archived and broken, so use a maintained enumerato
 - **`nameketchup`** (high) — OSINT tool: NameKetchup.

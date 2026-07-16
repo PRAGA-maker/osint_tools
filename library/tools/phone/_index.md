@@ -51,7 +51,6 @@ kind: group-index
 - **`freecarrierlookup`** (high) — Use when you have a `phone` number and want to identify its carrier and whether it is mobile or landline — returns the carrier name, line ty
 - **`freeonlinephone-org`** (high) — OSINT tool: freeonlinephone.org.
 - **`freephonenum-com`** (medium) — Use when you have a `phone` number and want to check whether it is a public throwaway SMS number — or need a burner number for sock-puppet s
-- **`geocell-mobi`** (high) — OSINT tool: geocell.mobi.
 - **`giffgaff-com`** (high) — Use when you need an anonymous UK mobile number for sock-puppet accounts (OpSec infrastructure), or a reference for phone-unlocking by netwo
 - **`gsm-arena`** (medium) — Use when you have a phone model name, a partial description, or EXIF `device-id` and want to confirm the exact handset and its specs — retur
 - **`gsmarena-com`** (high) — Use when you have a phone/device model (a `device-id` or a phone seen in a photo) and want its full specifications — returns camera, dimensi
@@ -66,7 +65,6 @@ kind: group-index
 - **`international-numbering-plans-database`** (high) — Use when you have a `phone` (or SIM/IMSI) number and want to identify its country, network operator, and number-range validity — returns the
 - **`ipqualityscore-com-2`** (high) — Use when you have a `phone` and want to validate it — returns carrier, line type (mobile/VOIP/landline), active status, country/region and a
 - **`jtdirectory-com`** (high) — OSINT tool: jtdirectory.com.
-- **`makelia-public-records-repository`** (high) — OSINT tool: Makelia - Public Records Repository.
 - **`mastdata-com`** (low) — Use when you have a `geolocation` or `address` and want to know which UK mobile operators/masts serve it and where coverage gaps are — retur
 - **`moriarty-project`** (high) — Use when you have a `phone` number and want to aggregate owner, spam-risk, related links, and possible social platforms in one CLI run — ret
 - **`nanpa-area-code-map`** (high) — Use when you have a US/Canada `phone` number and want the geographic region its area code maps to — returns geolocation (the region/state se
@@ -120,7 +118,6 @@ kind: group-index
 - **`saynoto0870-com`** (medium) — Use when you have a UK non-geographic/premium `phone` number (084x/087x/03xx) and want the organisation behind it and its alternative geogra
 - **`searchpeoplefree`** (high) — Use when you have a US `phone`, `name`, or `address` and want a free first-pass owner profile — returns name, address history, relatives, an
 - **`serviceobjects-reverse-number-lookup`** (high) — Use when you have a `phone` number and want carrier, line type, geographic location, and (where available) the associated name — returns nam
-- **`smartdigital-telephone-directories`** (high) — Directory with over 60 websites that contain telephone number-related information
 - **`sms-receive-net`** (high) — Use when you have a `phone` number and want to check whether it is a public throwaway SMS-receive number (or need a disposable number yourse
 - **`spoofbox-com`** (low) — Use when you need a disposable phone number to receive an SMS verification code while standing up a sock-puppet account — returns a temporar
 - **`spoofcard-com`** (medium) — Use when you have a target `phone` number and need to place a call from a masked/virtual caller ID (e.g. to reach voicemail and capture the 

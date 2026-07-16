@@ -123,7 +123,6 @@ kind: group-index
 - **`facelytics-io`** (low) — Use when you need on-the-fly demographic attributes (age, gender, emotion) from faces in an image or video stream — not for identifying a sp
 - **`faceplusplus-com`** (high) — Use when you have two face photos and need to confirm whether they show the same person (1:1 similarity comparison), not to search who a fac
 - **`faceplusplus`** (medium) — Use when you have two `face`/`image` inputs and want to detect faces or compare whether they are the same person — returns face attributes a
-- **`facesaerch`** (high) — Face image search engine.
 - **`facesearch-arrests-org`** (high) — Use when you have a face photo and want to check it against US arrest/booking (mugshot) records aggregated by Arrests.org.
 - **`facesearch`** (low) — Use when triaging legacy OSINT lists for a reverse face/photo search tool — but this entry's domain is misspelled and likely dead; verify be
 - **`facial-composite-identikit-maker`** (medium) — Use when you have only a witness/verbal physical description and need to build a composite face image (identikit) to use as a search or circ
@@ -421,7 +420,7 @@ kind: group-index
 - **`vdownloader`** (high) — Use when you have a video URL (a subject's `social-profile`/post) and want to preserve it offline for analysis — a desktop downloader that s
 - **`veoh`** (medium) — OSINT tool: Veoh.
 - **`verexif`** (high) — Use when you have an `image` and want its EXIF metadata (or to strip it) — returns GPS `geolocation`, camera details and other `metadata-exi
-- **`vevo`** (high) — Website that hosts videos from music
+- **`vevo`** (high) — Use when a subject is a recording artist and you have their stage/artist `name` and want their official music-video catalogue and verified c
 - **`video-stabilization-methods`** (medium) — OSINT tool: Video Stabilization Methods.
 - **`videosearch-io`** (high) — Use when you have a `name`/`username`/keyword and want to search for videos of or about a subject across many platforms at once — returns so
 - **`viewing-bitmoji-changes`** (high) — Use when you have a Snapchat `username` and want a passive activity/liveness signal — watch the account's Bitmoji avatar for changes to infe
@@ -431,7 +430,6 @@ kind: group-index
 - **`webcam-cse`** (medium) — Google Custom Search Engine for search in 10 online street webcam catalogs
 - **`webshots`** (high) — Website related to social networking with photo galleries, photo posting and sharing services
 - **`weheartit`** (high) — Use when you have a `username` or `image` and want a subject's curated image collections and tastes on this Tumblr-style gallery site — retu
-- **`when-where-net`** (high) — OSINT tool: When-where.net.
 - **`who-stole-my-pictures-addons-mozilla-org`** (high) — Use when you have an `image` and want to run it through several reverse-image engines at once from a right-click menu — returns matching pag
 - **`world-cams`** (high) — Use when you have a `geolocation`/`address` and want live eyes on it — returns public live-webcam feeds (`image`/video) from that place for 
 - **`world-of-warcraft`** (high) — Website related to social networking and players of the computer game World of Warcraft

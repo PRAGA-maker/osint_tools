@@ -134,7 +134,6 @@ kind: group-index
 - **`leakradar`** (high) — Use when you have an email, username, or domain and want to check it against infostealer logs and recent leaks — returns exposure confirmati
 - **`ledger`** (high) — Use when working through the POPPY OSINT toolkit and you reach the "Ledger" page — purpose unverified; likely an email/identity lookup helpe
 - **`liker`** (high) — Use when working through the POPPY OSINT toolkit and you reach the "Liker" page — purpose unverified; possibly a social-engagement/account l
-- **`lycos-mail-usa`** (high) — American email service provider
 - **`maestrolabs-com`** (high) — Use when you want to send a tracked email to a missing person's known address and learn whether/where it was opened — returns read confirmat
 - **`mail-com-free-email-creations`** (high) — Use when you need a free throwaway / sock-puppet email account (with a choice of vanity domains) to register for investigative sites without
 - **`mail-com-germany`** (high) — German email service provider

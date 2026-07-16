@@ -36,7 +36,7 @@ kind: group-index
 - **`bmi-np-bot`** (high) — Use when you have a Russian `phone` number and want its current mobile operator and geographic region, accounting for number portability (MN
 - **`botim-me`** (high) — Use when you have a `phone` number (often Gulf/Middle-East) and want to check whether it has a BOTIM messaging account and see any public pr
 - **`chatbottle-telegram-bots`** (low) — Directory of Telegram bots.
-- **`chatsearchrobot`** (high) — OSINT tool: ChatSearchRobot.
+- **`chatsearchrobot`** (high) — Use when you have a Telegram group/channel `social-profile` or a topic `username`/keyword and want to discover similar or related Telegram c
 - **`chattoday`** (low) — Online chat platform for connecting and chatting with people.
 - **`chatvisualizer-com`** (medium) — another #WhatsApp chat analyzer.
 - **`clerkbot`** (high) — OSINT tool: ClerkBot.
@@ -103,7 +103,7 @@ kind: group-index
 - **`kirbstr-s-mastodon-search`** (medium) — Google CSE for some of the most popular and open mastodon instances.
 - **`knowlesys-com-2`** (high) — Use when you have a Telegram `username` and want the stable numeric user ID (which survives username/name changes) — returns a how-to for th
 - **`knowlesys-com-4`** (high) — Use when you have a `phone` or `username` tied to WhatsApp and want a methodology — a how-to guide for extracting profile pictures and findi
-- **`leak-osint`** (high) — OSINT tool: Leak OSINT.
+- **`leak-osint`** (high) — Use when you have an `email`, `phone`, `username` or `name` and want to check it against aggregated data-breach dumps via a Telegram bot — r
 - **`leapdroid-en-softonic-com`** (high) — OSINT tool: leapdroid.en.softonic.com.
 - **`letsview-com`** (high) — OSINT tool: letsview.com.
 - **`line-me`** (high) — Use when you have a `phone` number or LINE ID (`username`) for a subject likely in Japan/Taiwan/Thailand and want to confirm a LINE account 

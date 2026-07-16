@@ -165,7 +165,6 @@ kind: group-index
 - **`case-tracker-justice-uk`** (high) — Use when you have a UK civil-appeal case number or party `name` and want its status — the official tracker returns the case title (parties),
 - **`catalogue-of-research-databases-occrp-id`** (low) — OSINT tool: Catalogue of Research Databases | OCCRP ID.
 - **`causelist-uk`** (high) — Use when you have a `name` and want to find upcoming or listed UK court hearings involving that person — returns the case/party listing (nam
-- **`cemetery-directory`** (high) — OSINT tool: Cemetery.directory.
 - **`censusfinder`** (high) — Use when you have a `name` and want free online census/genealogy records — returns a curated directory of links to census indexes, transcrip
 - **`center-for-international-earth-science-information-network`** (low) — OSINT tool: Center for International Earth Science Information Network.
 - **`central-and-eastern-european-business-directory`** (medium) — Central and Eastern European Business Directory
@@ -276,7 +275,6 @@ kind: group-index
 - **`deceasedonline-com`** (high) — Use when you have a `name` and want UK burial/cremation records — returns death/burial dates, cemetery or crematorium, grave details and fam
 - **`deepdyve`** (medium) — Database for scientific and scholarly research including over 18 million journals and articles
 - **`delaware`** (high) — Use when you have a `name` and want to check Delaware custody status — the Delaware DOC directs offender lookups to VINELink, returning cust
-- **`delawarevoters-info`** (high) — OSINT tool: Delawarevoters.info.
 - **`denmark`** (high) — Use when you have a Danish company `name`, `address`, or CVR number (or a person's name as an owner/director) and want the official business
 - **`denver-obituary-project`** (high) — Use when you have a `name` of someone who may have died in Colorado (outside Denver) between the 1970s and 1990 and want their obituary — re
 - **`dfw1n-osint`** (medium) — Australia-focused open-source intelligence resource repository.
@@ -732,8 +730,6 @@ kind: group-index
 - **`nzbn-govt-nz`** (high) — Use when you have a New Zealand business `name` or `employer-org` and want its official registry details — returns `employer-org`, `address`
 - **`oanda`** (medium) — Currency converter, view historial and live exchange rates
 - **`obituaries-from-newspapers-north-america`** (high) — Use when you have a `name` and want obituary/death notices — returns death dates, hometowns and named surviving relatives from North America
-- **`obituary-research-service-australia`** (high) — Obituary-related search for ancestral, family, and historical records, using a database at the national country level
-- **`obituary-searches-com`** (high) — Obituary-related search for ancestral, family, and historical records, using a database at the national country level
 - **`obsidian-cli`** (medium) — Very simple #go tool that let to interact with the Obsidian using the terminal. Open, search, create and edit files. Can be combined with an
 - **`oec-world`** (medium) — A tool for detailed analysis of international trade. It will show clearly which country sells which products, to which countries these produ
 - **`oecd-aid-database`** (low) — OSINT tool: OECD Aid Database.
@@ -958,7 +954,6 @@ kind: group-index
 - **`skyscraperpage`** (medium) — OSINT tool: SkyscraperPage.
 - **`slovakia`** (high) — Use when you have a company `name`/`employer-org` or a `name` doing business with the Slovak state and want its verified beneficial owners —
 - **`slovenia`** (high) — Use when you have a company `name`, `address`, or registration number in Slovenia and want official registry data — returns employer-org det
-- **`smallbusinesspro-co-uk`** (high) — OSINT tool: smallbusinesspro.co.uk.
 - **`snitch-list`** (low) — OSINT tool: Snitch List.
 - **`social-security-death-index`** (high) — Use when you have a US `name` and want to confirm a death — returns death date, birth date (`dob`), and last-residence location from the SSA
 - **`social-security-death-master-file`** (high) — Use when you have a `name` (or SSN) of a possibly-deceased US person and want death confirmation with birth/death dates and last residence —
@@ -970,7 +965,7 @@ kind: group-index
 - **`sortedbyname-com`** (high) — Use when you have a `name` and want genealogy/vital-record leads (births, marriages, deaths) indexed by surname — returns links to public re
 - **`south-carolina-registered-voter-verification`** (medium) — South Carolina registered voter verification and search
 - **`south-dakota`** (high) — Use when you have a `name` and want to confirm someone is/was in South Dakota state custody — returns offender records with DOB, ID number, 
-- **`spain`** (high) — OSINT tool: Spain.
+- **`spain`** (high) — Use when you have a Spanish company `name`, director `name` or `address` and want official mercantile-registry records — returns employer-or
 - **`spotlight-com`** (high) — Use when you have a `name` for someone in the UK entertainment industry and want to find their professional profile or the agents/services a
 - **`spyfu`** (medium) — OSINT tool: SpyFu.
 - **`sra-org-uk`** (medium) — Use when you have a `name` or firm and want to verify a solicitor in England & Wales — returns regulatory status, practising history and fir
@@ -995,7 +990,7 @@ kind: group-index
 - **`sweetsearch`** (medium) — Research search engine for students
 - **`switzerland`** (high) — Use when you have a company or director `name` in Switzerland and want official commercial-register detail — returns the company, registered
 - **`systemday-com`** (medium) — Use when you have a company `name` or number in an offshore/hard-to-reach jurisdiction and want an official registry search report — returns
-- **`taxpolicy-org-uk`** (high) — OSINT tool: taxpolicy.org.uk.
+- **`taxpolicy-org-uk`** (high) — Use when you have a person `name`, `address` or company `employer-org` and want to map UK companies' Persons with Significant Control geogra
 - **`teachingcouncil-ie`** (high) — Use when you have a `name` you believe belongs to an Irish teacher and want to confirm their registration status and registration number — r
 - **`tellmescotland-gov-uk`** (high) — Use when you have a Scottish `address`/`geolocation` and want the statutory public notices (planning, licensing, roadworks) attached to it —
 - **`tendersinfo`** (medium) — Search tenders around the world by keywords.

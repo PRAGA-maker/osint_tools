@@ -107,7 +107,6 @@ kind: group-index
 - **`commentpicker-com`** (high) — Use when you have an Instagram/Facebook/TikTok/YouTube `username` or post and want the account's stable numeric ID or the list of commenters
 - **`commentpicker`** (medium) — Facebook profiles/posts ID finder Export Facebook like and comments YouTube Tag Extractor Instagram profile analyzer Twitter account data ex
 - **`commits-top`** (medium) — Current list of the most active @Github users by country
-- **`company-or-organisation`** (high) — OSINT tool: Company or Organisation.
 - **`copainsdavant-linternaute-com`** (high) — Use when you have a `name` and a French school/town and want to place a subject via their old-classmates profile — returns social-profile, s
 - **`covaxxy`** (low) — OSINT tool: CoVaxxy.
 - **`crowdtangle-link-checker`** (medium) — Chrome extension showing Facebook, Instagram and Twitter posts that mention a given link.
@@ -288,14 +287,12 @@ kind: group-index
 - **`graph-tips`** (high) — Use when you have a Facebook profile (`name`/`username`/numeric ID) and want to run Graph-Search-style queries on their photos, posts, frien
 - **`graphtreon-com`** (high) — Use when you have a Patreon creator `username`/page and want their patron counts, earnings estimates, and growth history — returns financial
 - **`gravatar-email-checker`** (high) — Use when you have an `email` and want to know if it has a Gravatar profile/avatar — returns a linked avatar image, public profile, and reuse
-- **`griffin-glynn-hatless1der`** (high) — OSINT tool: Griffin Glynn / hatless1der.
 - **`hadzy-com`** (medium) — OSINT tool: Hadzy.com.
 - **`hashatit`** (low) — OSINT tool: Hashatit.
 - **`hashtagify`** (medium) — OSINT tool: Hashtagify.
 - **`hatless1der-com`** (high) — Use when you have a Pinterest `username` and want to guess the account owner's `email` — an OSINT technique exploiting that Pinterest defaul
 - **`have-i-been-zucked`** (high) — OSINT tool: Have I Been Zucked?.
 - **`haveibeenzuckered`** (high) — Use when you have a `phone` number and want to know if it was exposed in the 2021 Facebook 533M breach — returns whether that number appears
-- **`help-center`** (high) — OSINT tool: Help Center.
 - **`here-15`** (high) — Use when a subject's trail runs into TikTok and you need to know what data TikTok holds and how law enforcement can request it — returns pro
 - **`here-16`** (high) — Use when you have a Twitch `username`/`social-profile` and a case that may justify legal process — returns the official path and requirement
 - **`here-19`** (high) — Use when you have a numeric X/Twitter user ID (`document-id`) and want the account's current handle/profile — append the ID to the intent UR
@@ -434,7 +431,6 @@ kind: group-index
 - **`nairaland-com-2`** (high) — Use when you have a `username` or `name` and want to surface a person's posts, profile and self-disclosed details on Nairaland (Nigeria's la
 - **`nairaland-com`** (high) — Use when you have a `name`/`username` for a Nigerian subject and want their forum presence — returns a Nairaland profile, post history, self
 - **`namemc`** (high) — Use when you have a Minecraft `username` (or account UUID) and want its name-change history, skins, and profile — returns prior usernames an
-- **`naseeb-com`** (high) — Naseeb.com is an online community that connects young, educated, professional Muslims through networks of friends and advanced search and ma
 - **`natcen-ac-uk`** (high) — OSINT tool: natcen.ac.uk.
 - **`netvibes`** (high) — OSINT tool: Netvibes.
 - **`network-tool`** (low) — OSINT tool: Network Tool.
@@ -476,7 +472,6 @@ kind: group-index
 - **`osintgraph`** (high) — Use when you have an Instagram `username` and want to map the subject's follower/followee network to surface close ties — returns a Neo4j gr
 - **`osintnova`** (high) — Use when you have almost any selector (`username`, `email`, `phone`, `ip-address`, `domain`, `vehicle-plate`, `crypto-wallet`, `image`) and 
 - **`osintteam-blog-2`** (high) — Use when you want a curated shortlist of LinkedIn OSINT tools to try against a subject — returns a listicle of tools that surface `social-pr
-- **`osintteam-blog`** (high) — OSINT tool: osintteam.blog.
 - **`osome-iu-edu`** (high) — Use when you have a `username`, `name` or keyword and want to search across many Mastodon/Fediverse instances at once — returns matching pub
 - **`otzberg-net-find-your-instagram-user-id`** (high) — Use when you have an Instagram `username` and want its stable numeric user ID — returns the account's permanent device-id/social-profile ide
 - **`outx-ai`** (high) — Use when you have a LinkedIn profile URL (`social-profile`) or `username` and want to read it anonymously without your account appearing in 
@@ -492,7 +487,6 @@ kind: group-index
 - **`picuki`** (high) — Use when you have an Instagram `username` and want to view/download their public posts, stories and profile without logging in — returns `im
 - **`pinterest-guest-firefox-add-on`** (low) — Firefox add-on for browsing Pinterest without an account.
 - **`pinterest-pin-stats`** (high) — Use when you have a Pinterest `username`/board and want each pin's engagement and creation date to reconstruct activity timing — returns soc
-- **`pitoolbox-com-au-facebook-tool`** (high) — OSINT tool: Pitoolbox.com.au/facebook-tool/.
 - **`pixnoy-com`** (high) — Use when you have an Instagram `username` and want to view/download a public profile's posts, stories and highlights without logging in — re
 - **`pockettube`** (medium) — YouTube Subscription Manager
 - **`pogu-live`** (medium) — Tool that allows you to watch sub only or deleted VODs for free. It works because when a streamer deletes a video, iit is not deleted from T
@@ -638,7 +632,7 @@ kind: group-index
 - **`socialmedialist-org`** (high) — Use when you have a `username`/`name` and want a checklist of niche and non-Western social networks to hunt it across — returns a reference 
 - **`socmint`** (high) — Use when you are starting social-media intelligence work and want a curated launchpad — a start.me dashboard linking dozens of SOCMINT tools
 - **`soig`** (high) — Use when you have an Instagram `username` and want profile metadata, hashtags, and post details beyond what the profile page shows — returns
-- **`sometag`** (high) — OSINT tool: sometag.
+- **`sometag`** (high) — Use when you have an Instagram `username`, hashtag or place `name` and want to browse that public profile, its posts, tagged locations and h
 - **`sotwe-com`** (high) — Use when you have a Twitter/X `username` and want to read their tweets without an X login — returns `social-profile` timeline content, thoug
 - **`sourcinglab-pinterest-search`** (low) — Pinterest search for pins, boards and users.
 - **`sowdust-fb-search`** (high) — Use when you have a `name`/`username` and want to build Facebook search URLs for people, posts, photos-by-location and mutual friends — retu
@@ -756,7 +750,6 @@ kind: group-index
 - **`tweetmap`** (high) — OSINT tool: TweetMap.
 - **`tweetpaths`** (medium) — OSINT tool: Tweetpaths.
 - **`tweetreach`** (medium) — OSINT tool: Tweetreach.
-- **`tweettioc-com`** (high) — OSINT tool: Tweettioc.com.
 - **`tweeview`** (medium) — Twitter conversation visualization (beta)
 - **`twemex`** (medium) — Twitter sidebar with: quick commands for searching your own tweets, lists, users tweets and replies; quick links to quotes of current tweet,
 - **`twiangulate-analyzing-the-connections-between-friends-and-followers`** (high) — Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, 

@@ -187,7 +187,6 @@ kind: group-index
 - **`patent-attorneys-agent-search`** (medium) — OSINT tool: Patent Attorneys/Agent Search.
 - **`peekyou-people-search`** (high) — Use when you have a `name` or `username` and want a free aggregation of someone's social profiles, photos and contact leads — returns `socia
 - **`peep-mail-search-tool`** (high) — Use when you have a person's `name` and their employer's `domain` and want a best-guess corporate `email` address — returns a likely email p
-- **`peepdb-person-search`** (high) — OSINT tool: PeepDB (Person Search).
 - **`people-looker-us`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want a consumer background-report aggregator to pull contact history, relat
 - **`people-search-2`** (high) — Use when you have a `name`, `phone`, or `address` and want a US people-search profile — returns address history, phone, associate (relatives
 - **`people-search-engine`** (high) — Use when you have a `name` or `username` and want a Google-powered search pre-scoped to people-finder and social sites — returns web links a
@@ -238,10 +237,8 @@ kind: group-index
 - **`snoopstation`** (high) — Use when you have a `name` (+ US state) and want a public-records/background search — returns `address`, `phone`, `associate`, and `dob` lea
 - **`social-recon`** (high) — Use when you have a `username` or `email` and want an automated sweep of their online footprint — returns social-profile, associate, and ema
 - **`socialcatfish`** (high) — Use when you have an `image`, `email`, `phone`, `username` or `name` and want a reverse-lookup that verifies identity and surfaces linked pr
-- **`sociallist-io`** (high) — OSINT tool: SocialList.io.
 - **`socialpath`** (high) — Use when you have a `username` and want to track its reuse across social platforms and profile it — returns matching profiles, activity, and
 - **`sources`** (medium) — OSINT tool: Sources.
-- **`sovaweb`** (high) — web version of a famous Russian bot in Telegram for searching by email, nickname, IMSI, IMEI, MSISDN, BTS, IP, BSSID
 - **`spokeo-com`** (high) — Use when you have a `name`, `phone`, `email`, or `address` and want an aggregated US people profile — returns address history, phone/email, 
 - **`spokeo`** (high) — Use when you have a `name`, `email`, `phone`, or `username` and want a consolidated US person report that also links social profiles — retur
 - **`spydialer-reverse-phone-lookup`** (high) — Use when you have a US `phone` and want the owner — returns owner `name`, carrier/line-type and location; also does reverse name/address/ema
