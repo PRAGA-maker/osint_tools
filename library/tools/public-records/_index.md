@@ -88,7 +88,6 @@ kind: group-index
 - **`asic-gov-au`** (high) — Use when you have a person `name`, company `name`/ACN or `address` in Australia and want official corporate/registration records — returns c
 - **`association-assq-qc-ca`** (medium) — OSINT tool: Association-assq.qc.ca.
 - **`austcemindex-com`** (high) — Use when you have a `name` of someone buried in Australia (esp. regional NSW) and want their cemetery/headstone record — returns headstone `
-- **`australasia-birth-death-and-marriage-exchange`** (high) — Obituary-related search for ancestral, family, and historical records, using a database at the national country level
 - **`australian-business-register-abn-lookup`** (medium) — Australian Business Number (ABN) lookup by name, business number, or company number
 - **`australian-securities-and-investments-commission`** (medium) — ASIC company register search
 - **`austria`** (high) — Use when you have an Austrian company `employer-org` or a person's `name` and want the registered beneficial owners behind it — returns name
@@ -573,7 +572,7 @@ kind: group-index
 - **`latvia`** (high) — Use when you have a `name` or `employer-org` linked to Latvia and want to find company records, directors, and registered addresses — return
 - **`lauderdale-county`** (high) — Use when you have a `name` tied to Lauderdale County, Alabama and want historical court, land, cemetery and obituary records — returns assoc
 - **`lawlink-co-uk`** (high) — Use when you have a `name` or `address` in Northern Ireland and want registered/unregistered land, charges, bankruptcy and court-judgement r
-- **`laws-and-codes-search-directory-by-state`** (high) — OSINT tool: Laws and Codes Search Directory (By State).
+- **`laws-and-codes-search-directory-by-state`** (high) — Use when you have a `name` and a US state/county and want the right official record source (court, inmate, vital, property, plus state laws/
 - **`lawscot-org-uk`** (high) — Use when you have a `name` and want to verify/locate a Scottish solicitor — returns their practising status, firm (`employer-org`) and offic
 - **`lawsoc-ni-org`** (medium) — Use when you have a `name` or firm and want to confirm a Northern Ireland solicitor — returns the solicitor's firm, office address and profe
 - **`lawsociety-org-uk`** (high) — Use when you have a `name` or firm and want to confirm a solicitor's registration and workplace in England & Wales — returns the solicitor's
@@ -776,7 +775,7 @@ kind: group-index
 - **`os-birth-records`** (high) — Use when you have a `name` and want a state-by-state directory of official birth/vital-record sources — returns links to `dob`, `name` and `
 - **`os-death-records`** (high) — Use when you have a `name` and want to reach the right US state/county death-record and obituary databases — returns links yielding `dob`, d
 - **`os-divorce-records`** (high) — Use when you have a `name` and want to reach the official US county/state agency that holds that person's divorce (dissolution) record — ret
-- **`osint-for-countries-wddadk`** (high) — GitHub repo mapping OSINT resources by country.
+- **`osint-for-countries-wddadk`** (high) — Use when a lead is tied to a specific `address`/country and you want the local registries and people-search resources for it — returns point
 - **`osint-hub-fr`** (medium) — OSINT database covering France and international resources.
 - **`osint-list-of-public-sex-offenders-registers-osintme-com`** (high) — Use when you have a subject `name` (and possibly a country) and want to check public sex-offender registers worldwide — returns links to nat
 - **`osint-tools-bulgaria`** (medium) — Bulgarian OSINT tools list (regional registries and sources).
@@ -848,7 +847,6 @@ kind: group-index
 - **`public-library-of-science-search`** (medium) — Academic-related search engine for the Public Library of Science articles, providing access to various scientific publications and collectio
 - **`public-records-directory`** (high) — Use when you have a `name`/location and want the right official record source for it — returns a curated directory of free US public-records
 - **`public-records`** (medium) — Unclear - requires VP clarification
-- **`punternet-com`** (high) — OSINT tool: punternet.com.
 - **`quandl`** (medium) — Database of corporate, financial, trade, and capital market data
 - **`ratemyteachers-com`** (high) — Use when you have a teacher's `name` (and ideally their school as `employer-org`) and want to confirm where they teach/taught — returns `emp
 - **`rbo-gov-ie`** (high) — Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/y
@@ -1058,7 +1056,6 @@ kind: group-index
 - **`unesco-institute-for-statistics`** (low) — OSINT tool: UNESCO Institute for Statistics.
 - **`unicorn-riot-discord-leaks`** (low) — OSINT tool: Unicorn Riot: Discord Leaks.
 - **`unido-statistical-databases`** (low) — OSINT tool: UNIDO Statistical Databases.
-- **`united-kingdom-inmate-search-and-prison-lookup-locate-inmates-in-hmp-prisons`** (high) — OSINT tool: United Kingdom Inmate Search and Prison Lookup | Locate inmates in HMP Prisons.
 - **`university-of-texas-libraries-database`** (medium) — Academic-related search engine for the University of Texas publication catalog of articles, journals, books and media
 - **`unstats-social-indicators`** (low) — OSINT tool: UNStats Social Indicators.
 - **`upsala-conflict-data-program`** (low) — OSINT tool: Upsala Conflict Data Program.
@@ -1072,7 +1069,6 @@ kind: group-index
 - **`ustitlerecords-com`** (high) — Use when you have a `name` or `address` and want US property/title records — returns property ownership, transfer history, liens and all pro
 - **`utah-gun-exchange`** (low) — OSINT tool: Utah Gun Exchange.
 - **`utah`** (high) — Use when you have a `name` and want to check whether the person is under Utah Department of Corrections supervision — returns name, offender
-- **`utvoters-com`** (high) — OSINT tool: Utvoters.com.
 - **`validfleetlist-unknown-sail-boat-database`** (medium) — OSINT tool: ValidFleetList (unknown Sail Boat database).
 - **`vat-lookup-co-uk`** (high) — Use when you have a UK company `name` or a VAT number and want to resolve the other — returns the registered business name, VAT number, and 
 - **`vat-search-co-uk`** (high) — Use when you have an `employer-org` name or a VAT number and want to verify it and pull the registered business details — returns company na

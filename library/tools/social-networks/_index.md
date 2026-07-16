@@ -125,7 +125,6 @@ kind: group-index
 - **`discord-servers-portal`** (medium) — OSINT tool: Discord Servers Portal.
 - **`discord-user-search`** (medium) — OSINT tool: Discord User Search.
 - **`discordservers`** (medium) — OSINT tool: DiscordServers.
-- **`doesfollow`** (high) — OSINT tool: DoesFollow.
 - **`dolphin-radar`** (high) — Use when you have a public Instagram `username` and want to monitor its behaviour over time — returns tracked follows/unfollows, likes, enga
 - **`douban`** (high) — Use when you have a `name`/`username` of a likely Chinese subject and want their books/film/music and interest-group activity — returns a `s
 - **`downgit`** (medium) — Create GitHub Resource Download Link
@@ -325,7 +324,6 @@ kind: group-index
 - **`insta-timestamp-github-com`** (high) — Use when you have an Instagram post/reel/story open and want its exact upload date and time — a bookmarklet that returns the post's timestam
 - **`instadp-search-profile-pictures`** (high) — Use when you have an Instagram `username` and want the full-size profile picture (and stories) anonymously — returns the high-res `image` fo
 - **`instafreeview`** (high) — Use when you have an Instagram `username` and want to view a public profile, posts, or stories without logging in or appearing in the viewer
-- **`instagram-analyzer-and-viewer`** (high) — OSINT tool: Instagram analyzer and viewer.
 - **`instagram-crawler-gitgub`** (high) — Use when you have an Instagram `username` (or hashtag) and want to bulk-download that account's posts, captions, comments and timestamps for
 - **`instagram-deep-photo-search-engine`** (high) — Use when you have a `username`/`name`/keyword and want to search Instagram content via Google — a prebuilt Custom Search Engine that returns
 - **`instagram-explorer`** (medium) — Click on a point on the map. Follow the instructions on the left. Get a link to view Instagram posts made at this location on a specific dat
@@ -376,7 +374,6 @@ kind: group-index
 - **`kribrum`** (high) — Use when you have a `name` or `username` and want to monitor and analyze mentions across Russian-language social media, forums, and Telegram
 - **`kuaishou-com`** (high) — Use when you have a username or name and want to find a subject's short-video presence on China's Kuaishou/Kwai — returns profiles, videos, 
 - **`kworb`** (medium) — A lot of different statistics on views and listens collected from #YouTube, #iTunes, #Spotify. Ratings by country, year, music type, and mor
-- **`lampyre-io-medium-com`** (high) — OSINT tool: lampyre-io.medium.com.
 - **`libredd-it`** (medium) — OSINT tool: Libredd.it.
 - **`line-play`** (high) — Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — return
 - **`linkdtime`** (medium) — Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.
@@ -589,7 +586,6 @@ kind: group-index
 - **`skype`** (medium) — Use when an old lead references a Skype username/account — returns little live intelligence; Skype was retired in May 2025, so treat it as h
 - **`skyzoo-blue`** (high) — Use when you have a Bluesky `username` (handle) and want account statistics, starter-pack membership, and network rankings — returns social-
 - **`slash-tags`** (medium) — tool for recommending YouTube tags and displaying related statistical data from search keyword(s)
-- **`sleeping-time`** (high) — OSINT tool: Sleeping Time.
 - **`small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without`** (medium) — OSINT tool: small tool to retreive vk.com (vkontakte) users hidden metadata (state, access, dates, counts, etc) anonymously (without.
 - **`sn0int-framework-module-for-pornhub`** (medium) — OSINT tool: Sn0int framework module for Pornhub.
 - **`snap-map`** (medium) — OSINT tool: Snap Map.

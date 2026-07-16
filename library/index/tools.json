@@ -140762,30 +140762,37 @@
   },
   {
     "id": "font-squirrel",
-    "name": "Font Squirrel",
-    "description": "OSINT tool: Font Squirrel.",
+    "name": "Font Squirrel Matcherator",
+    "description": "Use when you have an `image` of text (a document, sign, screenshot, note) and want to identify the typeface — returns font-name leads (metadata-exif class) that help fingerprint and source a document.",
     "url": "https://www.fontsquirrel.com/matcherator",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "fonts"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying the font in an image of text to fingerprint or source a document.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Completely free; no account or payment required to upload and identify.",
+    "opsec": "passive",
+    "opsecNote": "You upload a cropped text image to Font Squirrel's servers (Fontspring's Matcherator engine). It does not touch the target or any account under investigation, so it is passive — but crop out sensitive/identifying content around the text first, since the image leaves your machine.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Font Squirrel / Fontspring, a long-established commercial font distributor; the match engine is their own product, not a scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -140793,11 +140800,19 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Matcherator",
+      "Fontspring Matcherator",
+      "Font Squirrel font identifier"
+    ],
+    "tags": [
+      "fonts",
+      "document-analysis",
+      "image-forensics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fonts/font-squirrel.md"
   },
   {
@@ -144841,47 +144856,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/reverse-media-search/imgops.md"
-  },
-  {
-    "id": "imgrab",
-    "name": "Imgrab",
-    "description": "Batch image capture and archive building",
-    "url": "https://www.imgrab.com/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face",
-      "images",
-      "instagram"
-    ],
-    "bestFor": "Batch image capture and archive building",
-    "input": "Web pages or direct image URLs",
-    "output": "Downloaded image files",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Primarily local processing; risk profile depends on source websites being queried.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/images/instagram/imgrab.md"
   },
   {
     "id": "imgur-search",
@@ -154789,52 +154763,6 @@
     "_file": "library/tools/image-video-face/soundcloud.md"
   },
   {
-    "id": "spezify-visual-search",
-    "name": "Spezify Visual Search",
-    "description": "Multi-media search engine focusing on images from multiple databases stored by category",
-    "url": "http://www.spezify.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/spezify-visual-search.md"
-  },
-  {
     "id": "spiderpig",
     "name": "SpiderPig",
     "description": "Use when you have a target `domain`/website and want to spider it, download its documents and extract embedded metadata — returns metadata-exif, geolocation (photo GPS), email and creator names.",
@@ -156974,54 +156902,53 @@
   },
   {
     "id": "us-east-1-console-aws-amazon-com",
-    "name": "us-east-1.console.aws.amazon.com",
-    "description": "OSINT tool: us-east-1.console.aws.amazon.com.",
+    "name": "AWS Rekognition Face Comparison (console)",
+    "description": "Use when you have two `face` images and want a quantified similarity score to decide if they are the same person — returns a match confidence plus per-face bounding boxes (face selector).",
     "url": "https://us-east-1.console.aws.amazon.com/rekognition/home?region=us-east-1#/face-comparison",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Getting an objective similarity percentage between two candidate face photos.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "face"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Requires an AWS account. Free tier covers 5,000 images/month for the first 12 months; after that CompareFaces is roughly $1 per 1,000 images. The console demo lets you try comparisons interactively within these limits.",
+    "opsec": "passive",
+    "opsecNote": "You upload both images to AWS for processing; you never contact the subject, so it is passive toward the target. But the images (and your AWS account identity) are logged by Amazon — use images you are authorized to process and be aware AWS retains request metadata.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Amazon Web Services product; the CompareFaces model is well-documented and the similarity score is deterministic, though not a legal identification.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [
+      "amazon-rekognition"
+    ],
     "tags": [
       "facialcomparison",
-      "Facial Comparison Sites"
+      "face-matching",
+      "aws"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "amazon",
-      "amazon-com",
-      "amazon-pay",
-      "amazon-registry-search",
-      "amazon-rekognition",
-      "amazon-sns",
-      "aws-public-datasets"
-    ],
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/us-east-1-console-aws-amazon-com.md"
   },
   {
@@ -167117,52 +167044,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/messaging/create-spoof-fake-imessages.md"
-  },
-  {
-    "id": "create-spoof-fake-mesages-for-a-number-of-different-online-sites",
-    "name": "Create Spoof / Fake Mesages for a number of different online sites",
-    "description": "OSINT tool: Create Spoof / Fake Mesages for a number of different online sites.",
-    "url": "https://fakedetail.com/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "messengerapps",
-      "Messenger Apps"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fakedetail-com",
-      "fakedetail-com-2"
-    ],
-    "_file": "library/tools/messaging/create-spoof-fake-mesages-for-a-number-of-different-online-sites.md"
   },
   {
     "id": "create-spoof-fake-text-sms-messages",
@@ -209021,51 +208902,6 @@
     "_file": "library/tools/people-search/peoplefinders-united-states.md"
   },
   {
-    "id": "peoplesearch-net",
-    "name": "PeopleSearch.net",
-    "description": "OSINT tool: PeopleSearch.net.",
-    "url": "http://www.peoplesearch.net",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
-      "social-profile",
-      "dob"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "people-search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/peoplesearch-net.md"
-  },
-  {
     "id": "peoplesearchnow",
     "name": "PeopleSearchNow",
     "description": "Use when you have a `name` or `address` in the US and want a free lookup of contact and household data — returns `address` history, `phone`, and relatives (`associate`).",
@@ -215645,49 +215481,6 @@
       "free-carrier-lookup"
     ],
     "_file": "library/tools/phone/freecarrierlookup.md"
-  },
-  {
-    "id": "freeonlinephone-org",
-    "name": "freeonlinephone.org",
-    "description": "OSINT tool: freeonlinephone.org.",
-    "url": "https://www.freeonlinephone.org/",
-    "category": "phone",
-    "path": [
-      "phone"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mobilephone",
-      "Mobile & Phone Related"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/phone/freeonlinephone-org.md"
   },
   {
     "id": "freephonenum-com",
@@ -223977,52 +223770,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/public-records/austcemindex-com.md"
-  },
-  {
-    "id": "australasia-birth-death-and-marriage-exchange",
-    "name": "Australasia Birth Death and Marriage Exchange",
-    "description": "Obituary-related search for ancestral, family, and historical records, using a database at the national country level",
-    "url": "http://www.ausbdm.org",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/australasia-birth-death-and-marriage-exchange.md"
   },
   {
     "id": "australian-business-register-abn-lookup",
@@ -248374,45 +248121,40 @@
   },
   {
     "id": "laws-and-codes-search-directory-by-state",
-    "name": "Laws and Codes Search Directory (By State)",
-    "description": "OSINT tool: Laws and Codes Search Directory (By State).",
-    "url": "http://publicrecords.onlinesearches.com/laws-and-codes.htm",
+    "name": "OnlineSearches Public Records & Laws/Codes Directory (By State)",
+    "description": "Use when you have a `name` and a US state/county and want the right official record source (court, inmate, vital, property, plus state laws/codes) — returns links to local records yielding `address`, `dob`, and `document-id`.",
+    "url": "https://publicrecords.onlinesearches.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the correct free state/county public-record source for a person or statute lookup.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "name",
+      "address",
       "dob",
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The directory and most linked government records are free; some \"find a person\" widgets on the site funnel to paid partners (e.g. Intelius) — stay on the official-record links to keep it free.",
+    "opsec": "passive",
+    "opsecNote": "Browsing the directory is passive and reveals nothing to the target. Exposure risk moves to whichever linked government record system you then query — most county sites are anonymous, but a few log searches; judge each one.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "OnlineSearches.com is a long-running aggregator that links out to official government record systems; the directory curation is reliable but always confirm you have reached the authoritative source, not a paid reseller page.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "court",
-      "inmate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "court-records-search-directory",
       "free-public-records-directory-us",
@@ -248426,6 +248168,19 @@
       "sex-offender-us",
       "unclaimed-and-abandoned-property-search-directory"
     ],
+    "aliases": [
+      "OnlineSearches public records",
+      "Laws and Codes Search Directory",
+      "onlinesearches.com by state"
+    ],
+    "tags": [
+      "court",
+      "inmate",
+      "public-records-directory"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/laws-and-codes-search-directory-by-state.md"
   },
   {
@@ -258703,24 +258458,32 @@
   {
     "id": "osint-for-countries-wddadk",
     "name": "OSINT for Countries (wddadk)",
-    "description": "GitHub repo mapping OSINT resources by country.",
+    "description": "Use when a lead is tied to a specific `address`/country and you want the local registries and people-search resources for it — returns pointers to national records that yield `address`, `document-id`, and `employer-org`.",
     "url": "https://github.com/wddadk/OSINT-for-countries",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "Finding country-specific records and registries",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the right country-specific registries and OSINT resources for a lead abroad.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "document-id",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub repository; no account needed to read (a free GitHub login only helps for starring/cloning).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the repo is passive and leaks nothing about your target. OpSec risk shifts to the individual linked resources — some foreign registries log queries or require in-country access; assess each linked site on its own before querying.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Community GitHub list organized by country.",
+    "trustNote": "Community-maintained GitHub list (wddadk); links are curated but unverified and can rot — confirm each destination is live before relying on it.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -258729,7 +258492,11 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT for countries",
+      "wddadk OSINT-for-countries",
+      "country OSINT index"
+    ],
     "tags": [
       "tool-collection",
       "public-records",
@@ -258737,8 +258504,8 @@
       "github"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/osint-for-countries-wddadk.md"
   },
   {
@@ -262162,51 +261929,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/annual-reports/public-register-s-annual-report-service.md"
-  },
-  {
-    "id": "punternet-com",
-    "name": "punternet.com",
-    "description": "OSINT tool: punternet.com.",
-    "url": "http://www.punternet.com/index.php/reviews",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "professionlicensing",
-      "Profession & Licensing Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/punternet-com.md"
   },
   {
     "id": "quandl",
@@ -272434,49 +272156,6 @@
     "_file": "library/tools/public-records/unido-statistical-databases.md"
   },
   {
-    "id": "united-kingdom-inmate-search-and-prison-lookup-locate-inmates-in-hmp-prisons",
-    "name": "United Kingdom Inmate Search and Prison Lookup | Locate inmates in HMP Prisons",
-    "description": "OSINT tool: United Kingdom Inmate Search and Prison Lookup | Locate inmates in HMP Prisons.",
-    "url": "http://www.jailguide.com/unitedkingdom-prisons/unitedkingdom-inmatesearch.php",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "dob",
-      "document-id"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "court",
-      "inmate"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/united-kingdom-inmate-search-and-prison-lookup-locate-inmates-in-hmp-prisons.md"
-  },
-  {
     "id": "university-of-texas-libraries-database",
     "name": "University of Texas Libraries Database",
     "description": "Academic-related search engine for the University of Texas publication catalog of articles, journals, books and media",
@@ -273178,40 +272857,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/utah-gun-exchange.md"
-  },
-  {
-    "id": "utvoters-com",
-    "name": "Utvoters.com",
-    "description": "OSINT tool: Utvoters.com.",
-    "url": "http://utvoters.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/utvoters-com.md"
   },
   {
     "id": "validfleetlist-unknown-sail-boat-database",
@@ -320933,40 +320578,6 @@
     "_file": "library/tools/social-networks/twitter/analytics/dmi-tcat.md"
   },
   {
-    "id": "doesfollow",
-    "name": "DoesFollow",
-    "description": "OSINT tool: DoesFollow.",
-    "url": "https://doesfollow.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/doesfollow.md"
-  },
-  {
     "id": "dolphin-radar",
     "name": "Dolphin Radar",
     "description": "Use when you have a public Instagram `username` and want to monitor its behaviour over time — returns tracked follows/unfollows, likes, engagement patterns and downloaded stories/highlights.",
@@ -331614,40 +331225,6 @@
     "_file": "library/tools/social-networks/instafreeview.md"
   },
   {
-    "id": "instagram-analyzer-and-viewer",
-    "name": "Instagram analyzer and viewer",
-    "description": "OSINT tool: Instagram analyzer and viewer.",
-    "url": "https://gramho.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/instagram-analyzer-and-viewer.md"
-  },
-  {
     "id": "instagram-crawler-gitgub",
     "name": "instagram-crawler (hehpollon)",
     "description": "Use when you have an Instagram `username` (or hashtag) and want to bulk-download that account's posts, captions, comments and timestamps for offline analysis — returns image, social-profile, and associate leads.",
@@ -334196,49 +333773,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/kworb.md"
-  },
-  {
-    "id": "lampyre-io-medium-com",
-    "name": "lampyre-io.medium.com",
-    "description": "OSINT tool: lampyre-io.medium.com.",
-    "url": "https://lampyre-io.medium.com/pinterest-tools-for-osint-purposes-3762c9794355",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pinterest",
-      "Pinterest Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/lampyre-io-medium-com.md"
   },
   {
     "id": "libredd-it",
@@ -345070,40 +344604,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/slash-tags.md"
-  },
-  {
-    "id": "sleeping-time",
-    "name": "Sleeping Time",
-    "description": "OSINT tool: Sleeping Time.",
-    "url": "http://sleepingtime.org/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/sleeping-time.md"
   },
   {
     "id": "small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without",

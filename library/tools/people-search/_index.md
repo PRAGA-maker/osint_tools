@@ -197,7 +197,6 @@ kind: group-index
 - **`peoplebyname-reverse-phone-lookup`** (high) — Use when you have a `phone` (or a `name`) and want the owner's name, address, age, and relatives for the US/Canada — returns contact and hou
 - **`peoplebyname-us`** (high) — Use when you have a US `name` and want a free first-pass on their address, landline phone and likely relatives — returns directory-style `ad
 - **`peoplefinders-united-states`** (high) — Use when you have a `name`, `phone` or `address` and want US contact and public-record data — returns addresses, phones, relatives and backg
-- **`peoplesearch-net`** (high) — OSINT tool: PeopleSearch.net.
 - **`peoplesearchnow`** (high) — Use when you have a `name` or `address` in the US and want a free lookup of contact and household data — returns `address` history, `phone`,
 - **`peoplesmart-us`** (high) — Use when you have a `name`, `email`, `phone`, or LinkedIn (`social-profile`) and want a business/contact-data lookup — returns name, email, 
 - **`permits-city-of-vancouver-application-permit-search-by-address`** (high) — Use when you have a Vancouver (BC) `address` and want the building/development permit applications tied to it, which often name owners, appl

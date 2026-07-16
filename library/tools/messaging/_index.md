@@ -46,7 +46,6 @@ kind: group-index
 - **`create-spoof-fake-facebook-messenger-post`** (high) — OSINT tool: Create Spoof / Fake Facebook Messenger Post.
 - **`create-spoof-fake-facebook-status-update-post`** (low) — Use when you need to understand how easily a fake Facebook post/status screenshot can be fabricated — this generator produces convincing spo
 - **`create-spoof-fake-imessages`** (high) — OSINT tool: Create Spoof / Fake iMessages.
-- **`create-spoof-fake-mesages-for-a-number-of-different-online-sites`** (high) — OSINT tool: Create Spoof / Fake Mesages for a number of different online sites.
 - **`create-spoof-fake-text-sms-messages`** (high) — Use when you are assessing whether a text/SMS "from" a `phone` could be spoofed — this Spoofbox tool sends messages with a forged sender ID,
 - **`create-spoof-fake-twitter-post`** (high) — Use when you need to fabricate a mock X/Twitter post for a sock-puppet/pretext, or to understand how a spoofed screenshot is made so you can
 - **`create-spoof-fake-twitter-posts-site`** (high) — OSINT tool: Create Spoof / Fake Twitter Posts Site.

@@ -49,7 +49,6 @@ kind: group-index
 - **`free-reverse-phone-lookup`** (high) — Use when you have a `phone` and want the owner's name/location — returns a likely name, carrier, line type and city, sometimes with a voicem
 - **`free-to-lookup-unknown-callers`** (high) — Use when you have a `phone` number and want a reverse-lookup for the owner's name/area — returns line/carrier and location for free, with na
 - **`freecarrierlookup`** (high) — Use when you have a `phone` number and want to identify its carrier and whether it is mobile or landline — returns the carrier name, line ty
-- **`freeonlinephone-org`** (high) — OSINT tool: freeonlinephone.org.
 - **`freephonenum-com`** (medium) — Use when you have a `phone` number and want to check whether it is a public throwaway SMS number — or need a burner number for sock-puppet s
 - **`giffgaff-com`** (high) — Use when you need an anonymous UK mobile number for sock-puppet accounts (OpSec infrastructure), or a reference for phone-unlocking by netwo
 - **`gsm-arena`** (medium) — Use when you have a phone model name, a partial description, or EXIF `device-id` and want to confirm the exact handset and its specs — retur

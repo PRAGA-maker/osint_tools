@@ -11,7 +11,7 @@ kind: group-index
 - **`documents/`** — 12 skill(s) below.
 - **`fact-checking-tools/`** — 5 skill(s) below.
 - **`fonts/`** — 4 skill(s) below.
-- **`images/`** — 54 skill(s) below.
+- **`images/`** — 53 skill(s) below.
 - **`reverse-media-search/`** — 2 skill(s) below.
 - **`source-verification/`** — 3 skill(s) below.
 - **`videos/`** — 17 skill(s) below.
@@ -370,7 +370,6 @@ kind: group-index
 - **`social-catfish-reverse-image-search`** (high) — Use when you have an `image`/`face` of an online persona and want to know where else it appears and whose identity it maps to — returns matc
 - **`sogou`** (high) — Use when you have an `image`/`face` and want a Chinese-web reverse-image and image search that indexes content Google misses — returns match
 - **`soundcloud`** (high) — Use when you have a `username` or `name` and want to find a subject's audio/podcast presence — returns a `social-profile` with avatar `image
-- **`spezify-visual-search`** (high) — Multi-media search engine focusing on images from multiple databases stored by category
 - **`spiderpig`** (high) — Use when you have a target `domain`/website and want to spider it, download its documents and extract embedded metadata — returns metadata-e
 - **`spotify`** (high) — Website related to music, videos, and artists
 - **`ssstik-link`** (high) — Use when you have a TikTok `username`/`social-profile` and want the full-resolution profile picture — returns the original-size avatar image
@@ -409,7 +408,7 @@ kind: group-index
 - **`undetectable-ai`** (high) — Use when you have an `image`/`face` and want to know if it is AI-generated — returns an AI-vs-human verdict with a confidence score, useful 
 - **`unscreen-com`** (medium) — remove the background from an uploaded video
 - **`unsee-cc`** (high) — OSINT tool: unsee.cc.
-- **`us-east-1-console-aws-amazon-com`** (high) — OSINT tool: us-east-1.console.aws.amazon.com.
+- **`us-east-1-console-aws-amazon-com`** (high) — Use when you have two `face` images and want a quantified similarity score to decide if they are the same person — returns a match confidenc
 - **`usespottr-com`** (high) — Use when you have a long `image`/video and want to find a person, vehicle plate or scene inside it — returns matched moments, incl. OCR'd pl
 - **`vaughnlivetv`** (high) — Use when you have a `username`/handle or need to browse live IRL/streaming video and want to find a person's live channel and on-camera appe
 - **`vdownloader`** (high) — Use when you have a video URL (a subject's `social-profile`/post) and want to preserve it offline for analysis — a desktop downloader that s

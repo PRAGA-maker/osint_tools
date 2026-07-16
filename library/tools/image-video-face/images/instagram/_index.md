@@ -7,7 +7,6 @@ kind: group-index
 # image-video-face/images/instagram
 
 ## Skills here
-- **`imgrab`** (high) — Batch image capture and archive building
 - **`instagram`** (high) — Use when you have a username, name, hashtag, or location and want photos, captions, location tags, and social connections — returns profiles
 - **`mini-instagram`** (high) — Preserving Instagram media for offline review
 - **`webstigram`** (high) — Use when you follow an old Webstagram/Websta.me link for Instagram profile browsing — the Instagram tool is dead and the domain is now an un

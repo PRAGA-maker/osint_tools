@@ -7,7 +7,7 @@ kind: group-index
 # image-video-face/fonts
 
 ## Skills here
-- **`font-squirrel`** (high) — OSINT tool: Font Squirrel.
+- **`font-squirrel`** (high) — Use when you have an `image` of text (a document, sign, screenshot, note) and want to identify the typeface — returns font-name leads (metad
 - **`identifont`** (medium) — Use when you need to identify the typeface in a logo, document, or photographed sign by answering questions about its letterforms — returns 
 - **`what-font-is`** (high) — Use when you have an `image` containing text and want to identify the typeface used — returns the matching font name plus close alternatives
 - **`what-the-font`** (low) — Use when you have an `image` of text and want to identify the typeface — returns matching font names to help attribute a document, logo, fly
