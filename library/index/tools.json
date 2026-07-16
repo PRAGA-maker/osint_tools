@@ -133751,52 +133751,6 @@
     "_file": "library/tools/image-video-face/ailab-wondershare-com-3.md"
   },
   {
-    "id": "airtime",
-    "name": "Airtime",
-    "description": "Open source platform that lets you broadcast streaming radio on the web",
-    "url": "https://www.sourcefabric.org/software/airtime",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/airtime.md"
-  },
-  {
     "id": "aiseesoft-com",
     "name": "aiseesoft.com",
     "description": "Use when a useful subject photo is obscured by a watermark/overlay and you want to clear it before reverse-image search or comparison.",
@@ -137801,52 +137755,6 @@
       "visualorigins-digitaldigging-org"
     ],
     "_file": "library/tools/image-video-face/digitaldigging-org-2.md"
-  },
-  {
-    "id": "digitalpodcast",
-    "name": "Digitalpodcast",
-    "description": "Website related to social networking and podcasting services",
-    "url": "http://www.digitalpodcast.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/digitalpodcast.md"
   },
   {
     "id": "discover-podcasts-here",
@@ -142396,49 +142304,6 @@
     "_file": "library/tools/image-video-face/giphy.md"
   },
   {
-    "id": "google-com-66",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/imghp?hl=en&tab=wi&ei=bOucVcutAcG-sgGbvIu4Dw&ved=0CBUQqi4oAQ",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reverseimagesearching",
-      "Reverse Image Searching"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/google-com-66.md"
-  },
-  {
     "id": "google-images",
     "name": "Google Images",
     "description": "Use when you have a photo of a missing person, an object, or a backdrop and want to find where else it appears online — returns matching pages, visually similar images, and source sites.",
@@ -145885,49 +145750,6 @@
     "_file": "library/tools/image-video-face/jimpl.md"
   },
   {
-    "id": "jpegcompress-com",
-    "name": "jpegcompress.com",
-    "description": "OSINT tool: jpegcompress.com.",
-    "url": "https://jpegcompress.com/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "photosites",
-      "Photo Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/jpegcompress-com.md"
-  },
-  {
     "id": "jpegsnoop",
     "name": "JPEGsnoop",
     "description": "Use when you have a JPEG `image` and want deep forensic analysis — returns EXIF `metadata-exif`, camera signature (`device-id`), and tamper/edit indicators to judge authenticity.",
@@ -146577,52 +146399,6 @@
     "_file": "library/tools/image-video-face/last-fm.md"
   },
   {
-    "id": "league-of-legends",
-    "name": "League of Legends",
-    "description": "Website related to social networking and players of the computer game League of Legends",
-    "url": "https://na.leagueoflegends.com/en/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/league-of-legends.md"
-  },
-  {
     "id": "leaked-cables",
     "name": "Leaked Cables",
     "description": "Use when you want to search leaked/declassified US diplomatic cables for a name, org or location reference — returns matching cable documents.",
@@ -147242,52 +147018,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/logobook.md"
-  },
-  {
-    "id": "lord-of-the-rings",
-    "name": "Lord of the Rings",
-    "description": "Website related to social networking and players of the computer game Lord of the Rings",
-    "url": "http://signup.lotro.com/lotro.php",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/lord-of-the-rings.md"
   },
   {
     "id": "lossless-cut",
@@ -148402,52 +148132,6 @@
       "nasa-worldview"
     ],
     "_file": "library/tools/image-video-face/nasa-earthdata-search.md"
-  },
-  {
-    "id": "netflix",
-    "name": "Netflix",
-    "description": "Video on demand service",
-    "url": "https://www.netflix.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/netflix.md"
   },
   {
     "id": "neural-network-image-super-resolution-and-enhancement",
@@ -150633,52 +150317,6 @@
     "_file": "library/tools/image-video-face/placespotter-com.md"
   },
   {
-    "id": "planet-calypso",
-    "name": "Planet Calypso",
-    "description": "Website related to social networking and players of the computer game Planet Calypso",
-    "url": "http://www.planetcalypso.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/planet-calypso.md"
-  },
-  {
     "id": "planet-gallery",
     "name": "Planet Gallery",
     "description": "A collection of satellite images to compare changes in specific locations before and after any significant events (fires, military actions, floods, animal migrations, etc.). Hundreds of locations around the world.",
@@ -150819,52 +150457,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/playlists-at.md"
-  },
-  {
-    "id": "playtech",
-    "name": "Playtech",
-    "description": "Website related to social networking and players of poker with gambling options",
-    "url": "https://www.playtech.com/products/poker",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/playtech.md"
   },
   {
     "id": "pocket",
@@ -154042,52 +153634,6 @@
     "_file": "library/tools/image-video-face/sightengine-com.md"
   },
   {
-    "id": "skyforge",
-    "name": "Skyforge",
-    "description": "Website related to social networking and players of the computer game Skyforge",
-    "url": "https://sf.my.games/en",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/skyforge.md"
-  },
-  {
     "id": "skyline-webcams",
     "name": "Skyline Webcams",
     "description": "OSINT tool: Skyline Webcams.",
@@ -154834,49 +154380,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/star-wars-tor.md"
-  },
-  {
-    "id": "statigr-am",
-    "name": "Statigr.am",
-    "description": "OSINT tool: Statigr.am.",
-    "url": "http://statigr.am",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "reverse-image",
-      "face"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/statigr-am.md"
   },
   {
     "id": "steam",
@@ -157460,52 +156963,6 @@
     "_file": "library/tools/image-video-face/webcam-cse.md"
   },
   {
-    "id": "webshots",
-    "name": "Webshots",
-    "description": "Website related to social networking with photo galleries, photo posting and sharing services",
-    "url": "http://webshots.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/webshots.md"
-  },
-  {
     "id": "webstigram",
     "name": "Webstigram / Websta.me",
     "description": "Use when you follow an old Webstagram/Websta.me link for Instagram profile browsing — the Instagram tool is dead and the domain is now an unrelated SEO/reviews blog, so treat as defunct.",
@@ -157877,52 +157334,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/world-cams.md"
-  },
-  {
-    "id": "world-of-warcraft",
-    "name": "World of Warcraft",
-    "description": "Website related to social networking and players of the computer game World of Warcraft",
-    "url": "https://worldofwarcraft.com/en-us/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/world-of-warcraft.md"
   },
   {
     "id": "www3-lunapic-com",
@@ -166220,48 +165631,6 @@
     "_file": "library/tools/messaging/awesome-telegram-osint.md"
   },
   {
-    "id": "bigone-zendesk-com",
-    "name": "bigone.zendesk.com",
-    "description": "OSINT tool: bigone.zendesk.com.",
-    "url": "https://bigone.zendesk.com/hc/en-us/articles/360008014894-How-to-get-the-Telegram-user-ID",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "telegram",
-      "Telegram"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/bigone-zendesk-com.md"
-  },
-  {
     "id": "blog-pagefreezer-com",
     "name": "blog.pagefreezer.com",
     "description": "OSINT tool: blog.pagefreezer.com.",
@@ -166660,48 +166029,6 @@
     "_file": "library/tools/messaging/commentgram-cse.md"
   },
   {
-    "id": "create-spoof-fake-chat-messages-app",
-    "name": "Create Spoof / Fake Chat Messages App",
-    "description": "OSINT tool: Create Spoof / Fake Chat Messages App.",
-    "url": "https://apps.apple.com/us/app/fake-chat-and-prank-joker/id1252038999#?platform=ipad",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "messengerapps",
-      "Messenger Apps"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/create-spoof-fake-chat-messages-app.md"
-  },
-  {
     "id": "create-spoof-fake-facebook-chats-site",
     "name": "Create Spoof / Fake Facebook Chats Site",
     "description": "OSINT tool: Create Spoof / Fake Facebook Chats Site.",
@@ -166990,51 +166317,6 @@
       "create-spoof-fake-facebook-status-update-post"
     ],
     "_file": "library/tools/messaging/create-spoof-fake-twitter-post.md"
-  },
-  {
-    "id": "create-spoof-fake-twitter-posts-site",
-    "name": "Create Spoof / Fake Twitter Posts Site",
-    "description": "OSINT tool: Create Spoof / Fake Twitter Posts Site.",
-    "url": "https://www.prankmenot.com/?twitter_tweet",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "messengerapps",
-      "Messenger Apps"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "create-spoof-fake-facebook-chats-site"
-    ],
-    "_file": "library/tools/messaging/create-spoof-fake-twitter-posts-site.md"
   },
   {
     "id": "create-spoof-fake-whatsapp-facebook-twitter-skype-messenger",
@@ -169699,51 +168981,6 @@
     "_file": "library/tools/messaging/leak-osint.md"
   },
   {
-    "id": "leapdroid-en-softonic-com",
-    "name": "leapdroid.en.softonic.com",
-    "description": "OSINT tool: leapdroid.en.softonic.com.",
-    "url": "https://leapdroid.en.softonic.com/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "messengerapps",
-      "Messenger Apps"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "mini-instagram"
-    ],
-    "_file": "library/tools/messaging/leapdroid-en-softonic-com.md"
-  },
-  {
     "id": "letsview-com",
     "name": "letsview.com",
     "description": "OSINT tool: letsview.com.",
@@ -170126,48 +169363,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/messaging/maigret-osint-bot.md"
-  },
-  {
-    "id": "makeuseof-com",
-    "name": "makeuseof.com",
-    "description": "OSINT tool: makeuseof.com.",
-    "url": "https://www.makeuseof.com/how-to-find-follow-whatsapp-channels/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "whatsapp",
-      "WhatsApp"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/makeuseof-com.md"
   },
   {
     "id": "maltego-telegram",
@@ -171193,48 +170388,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/messaging/prime-os-emuapps-com.md"
-  },
-  {
-    "id": "pts-project-org",
-    "name": "pts-project.org",
-    "description": "OSINT tool: pts-project.org.",
-    "url": "https://pts-project.org/blog/analysis-of-botim-v3.38.1/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "messengerapps",
-      "Messenger Apps"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/pts-project-org.md"
   },
   {
     "id": "rapidapi-com",
@@ -172273,48 +171426,6 @@
       "sougou-com"
     ],
     "_file": "library/tools/messaging/wechat-line/sogou-wechat-search.md"
-  },
-  {
-    "id": "spoofwave-com",
-    "name": "spoofwave.com",
-    "description": "OSINT tool: spoofwave.com.",
-    "url": "https://www.spoofwave.com/whatsapp",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "phone",
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "whatsapp",
-      "WhatsApp"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/spoofwave-com.md"
   },
   {
     "id": "spyggbot",
@@ -225338,51 +224449,6 @@
     "_file": "library/tools/public-records/boston-police-internal-affairs-cases-2010-2020.md"
   },
   {
-    "id": "boursakuwait-com-kw",
-    "name": "boursakuwait.com.kw",
-    "description": "OSINT tool: boursakuwait.com.kw.",
-    "url": "https://www.boursakuwait.com.kw/en/participants/participants/listed-companies",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "companysites",
-      "Company Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/boursakuwait-com-kw.md"
-  },
-  {
     "id": "bp-statistical-review-of-world-energy",
     "name": "BP Statistical Review of World Energy",
     "description": "OSINT tool: BP Statistical Review of World Energy.",
@@ -233625,49 +232691,59 @@
   {
     "id": "e-gov-kw",
     "name": "e.gov.kw",
-    "description": "OSINT tool: e.gov.kw.",
+    "description": "Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warrants, travel bans, residency) — returns document-id and address/status confirmations.",
     "url": "https://e.gov.kw/sites/kgoenglish/Pages/HomePage.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Kuwait's official e-government portal for Civil ID, arrest-warrant, travel-ban and residency status inquiries.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "document-id"
     ],
     "selectorsOut": [
+      "document-id",
       "address",
-      "employer-org",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Government portal; the inquiry services are free, though many require the subject's own Civil ID / PACI login and are meant for self-service.",
+    "opsec": "active",
+    "opsecNote": "Queries hit a Kuwaiti government system and several services require authenticating as the subject (Civil ID + PIN / PACI login). Do not attempt to log in as a person you are investigating — that is impersonation. Restrict use to the open status-inquiry pages that take only a Civil ID number, and treat access as logged by the state.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the State of Kuwait (Kuwait Government Online / KGO); the records are authoritative first-party government data.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "kw"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "companysites",
-      "Company Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "moci-gov-kw"
     ],
+    "aliases": [
+      "Kuwait Government Online",
+      "KGO portal"
+    ],
+    "tags": [
+      "companysites",
+      "Company Related Sites",
+      "government",
+      "kuwait"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/e-gov-kw.md"
   },
   {
@@ -246296,40 +245372,6 @@
     "_file": "library/tools/public-records/italy.md"
   },
   {
-    "id": "ius-the-horizon-search-and-report",
-    "name": "IUS The Horizon Search and Report",
-    "description": "OSINT tool: IUS The Horizon Search and Report.",
-    "url": "https://c0acy802.caspio.com/dp/cf3b6000f61f1e0724984cb28f5c",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/ius-the-horizon-search-and-report.md"
-  },
-  {
     "id": "jail-and-inmate-records-search-directory",
     "name": "Jail and Inmate Records Search Directory",
     "description": "Use when you have a `name` and want to locate the right US jail/inmate lookup for a state or county — returns links to official incarceration search databases.",
@@ -249844,36 +248886,59 @@
   },
   {
     "id": "maldives-sex-offender",
-    "name": "Maldives Sex Offender",
-    "description": "OSINT tool: Maldives Sex Offender.",
+    "name": "Maldives Child Sex Offenders Registry",
+    "description": "Use when you have a `name` linked to the Maldives and want to check the official child sex-offenders registry — returns name, image, dob, address, national ID and conviction details.",
     "url": "http://www.offenders.mv/offenders/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking the Maldives government child sex-offenders registry for a named individual.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "image",
+      "dob",
+      "address",
+      "document-id",
+      "physical-description"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free public registry published by the Maldives Ministry of Gender, Family & Social Services; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You are reading a public government registry (currently served as a downloadable PDF), so browsing is passive and leaks nothing about the subject. Handle the data carefully — it names convicted offenders with photos and national IDs; do not republish or misattribute.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official registry mandated by Maldives' 2009 child sexual-abuse-prevention law and published by the Ministry of Gender; authoritative but historically updated irregularly.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "mv"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "offenders.mv",
+      "Maldives sex offender registry"
+    ],
+    "tags": [
+      "sex-offender-registry",
+      "maldives",
+      "government",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/maldives-sex-offender.md"
   },
   {
@@ -256375,40 +255440,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/ohio-resident-database.md"
-  },
-  {
-    "id": "ohiovoters-us",
-    "name": "Ohiovoters.us",
-    "description": "OSINT tool: Ohiovoters.us.",
-    "url": "http://ohiovoters.us/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/ohiovoters-us.md"
   },
   {
     "id": "oklahoma-offender-search",
@@ -274824,40 +273855,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/york-city-pa-compensation.md"
-  },
-  {
-    "id": "york-county-pa-2017-write-in-report",
-    "name": "York County PA 2017 Write in Report",
-    "description": "OSINT tool: York County PA 2017 Write in Report.",
-    "url": "https://b2.caspio.com/dp/0a9210000bece9f2f50642ff9cac",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/york-county-pa-2017-write-in-report.md"
   },
   {
     "id": "york-county-va-2017-public-salaries",
@@ -322965,48 +321962,6 @@
     "_file": "library/tools/social-networks/facebook-scanner.md"
   },
   {
-    "id": "facebook-scraped-data-search",
-    "name": "Facebook Scraped Data search",
-    "description": "OSINT tool: Facebook Scraped Data search.",
-    "url": "http://4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion.pet/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "deepsearch",
-      "kilos-darknet-search-engine",
-      "raklet",
-      "ransomware-group-sites",
-      "recon",
-      "related-list"
-    ],
-    "_file": "library/tools/social-networks/facebook-scraped-data-search.md"
-  },
-  {
     "id": "facebook-search-2",
     "name": "Facebook Search (SowSearch)",
     "description": "Use when you have a `name`, `employer-org`, school or city and want to run structured people/post/photo searches on Facebook after Graph Search was killed — returns `social-profile` links and public posts.",
@@ -326979,49 +325934,6 @@
     "_file": "library/tools/social-networks/google-com-3.md"
   },
   {
-    "id": "google-com-4",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Acopainsdavant.linternaute.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "esocialmedia",
-      "European Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-4.md"
-  },
-  {
     "id": "google-com-44",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -327452,49 +326364,6 @@
     "_file": "library/tools/social-networks/google-com-59.md"
   },
   {
-    "id": "google-com-60",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?client=firefox-b-d&q=site%3Awiza.co",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "linkedin",
-      "LinkedIn & Similar Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-60.md"
-  },
-  {
     "id": "google-com-62",
     "name": "Google site-search — Bayt.com professionals",
     "description": "Use when you have a `name` of someone likely working in the Middle East and want their professional profile — a Google `site:bayt.com` dork returning social-profile and employer-org.",
@@ -327596,49 +326465,6 @@
     "lastVerified": "2026-07-15",
     "enrichment": "full",
     "_file": "library/tools/social-networks/google-com-63.md"
-  },
-  {
-    "id": "google-com-68",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Agab.com&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/google-com-68.md"
   },
   {
     "id": "google-com-70",
@@ -328203,49 +327029,6 @@
       "instagram-search"
     ],
     "_file": "library/tools/social-networks/gramfeed-com.md"
-  },
-  {
-    "id": "gramspy",
-    "name": "Gramspy",
-    "description": "OSINT tool: Gramspy.",
-    "url": "http://gramspy.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/gramspy.md"
   },
   {
     "id": "graph-tips",
@@ -331366,52 +330149,6 @@
     "_file": "library/tools/social-networks/instagram-scraper.md"
   },
   {
-    "id": "instagram-search",
-    "name": "Instagram Search",
-    "description": "OSINT tool: Instagram Search.",
-    "url": "http://www.gramfeed.com/instagram/search",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "gramfeed-com"
-    ],
-    "_file": "library/tools/social-networks/instagram-search.md"
-  },
-  {
     "id": "instagram-search-inteltechniques-method",
     "name": "Instagram Search (IntelTechniques method)",
     "description": "Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers, and hashtag searches plus third-party viewer links.",
@@ -332170,47 +330907,58 @@
   {
     "id": "intel-sw-com",
     "name": "Intel-SW.com",
-    "description": "OSINT tool: Intel-SW.com.",
+    "description": "Use when you have a `name` or `employer-org` and want to find someone's Facebook profile and mutual connections via advanced Graph-style operators — returns social-profile, image and associate links.",
     "url": "http://www.intel-sw.com/blog/facebook-search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Advanced Facebook people-search (by mutual friends / employer) from a free Chrome extension.",
     "selectorsIn": [
+      "name",
       "username",
-      "name"
+      "employer-org"
     ],
     "selectorsOut": [
       "social-profile",
       "image",
       "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "The Facebook Search Chrome extension is offered free; Intelligence Software markets it to recruiters as a sourcing aid.",
+    "opsec": "active",
+    "opsecNote": "The extension drives queries through your own logged-in Facebook session, so every search runs as YOU and is attributable to that account. Use a sock-puppet Facebook profile and a clean browser profile; never run it from an account tied to your real identity or the investigation.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party recruitment vendor (Intelligence Software), not affiliated with Meta; it re-packages Facebook Graph-style search operators, so result quality depends on Facebook's current surface.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "search-linkedin-intelligence-recruitment-software"
     ],
+    "aliases": [
+      "Intel-SW Facebook Search",
+      "Intelligence Software Facebook Search"
+    ],
+    "tags": [
+      "facebook",
+      "social-media",
+      "people-search"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/intel-sw-com.md"
   },
   {
@@ -338940,52 +337688,6 @@
     "_file": "library/tools/social-networks/ppl-contact.md"
   },
   {
-    "id": "prankshit-com",
-    "name": "prankshit.com",
-    "description": "OSINT tool: prankshit.com.",
-    "url": "https://prankshit.com/fake-story-snapchat.php",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "snapchat",
-      "Snapchat"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "prankshit-com-2"
-    ],
-    "_file": "library/tools/social-networks/prankshit-com.md"
-  },
-  {
     "id": "predicta-search",
     "name": "Predicta Search",
     "description": "Use when you have an `email`, `phone`, `username`, or `name` and want a correlated digital-footprint report of linked accounts across many platforms — returns social-profile, name and image.",
@@ -343466,47 +342168,57 @@
   },
   {
     "id": "shabbat",
-    "name": "Shabbat",
-    "description": "Jewish social networking website",
+    "name": "Shabbat.com",
+    "description": "Use when you have a `name` or `username` for someone in the Jewish community and want to find their member profile and location on this social network — returns social-profile, name and approximate geolocation.",
     "url": "http://www.shabbat.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Locating a person within the global Jewish community via a niche social network that ties members to a city.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "name",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to join and use; funded as a community/non-profit network, no paywall for member search.",
+    "opsec": "active",
+    "opsecNote": "Member profiles and the host/traveler directory are visible only after you register and log in, so browsing is attributable to your account and other members may see that you viewed them. Register a sock-puppet profile rather than using a real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Legitimate long-running Jewish community network, but a niche third-party platform whose member data is self-reported.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Shabbat.com",
+      "The Jewish Social Network"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "social-media"
+      "social-media",
+      "community"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/shabbat.md"
   },
   {
@@ -351540,49 +350252,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/tweetdeck.md"
-  },
-  {
-    "id": "tweetdelete-net",
-    "name": "tweetdelete.net",
-    "description": "OSINT tool: tweetdelete.net.",
-    "url": "https://www.tweetdelete.net/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "xtwitter",
-      "X / Twitter Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweetdelete-net.md"
   },
   {
     "id": "tweeterid",

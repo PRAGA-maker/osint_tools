@@ -28,7 +28,6 @@ kind: group-index
 - **`ailab-wondershare-com-2`** (low) — Use when you need to strip the background off a subject photo so the face/clothing is isolated before running reverse-image search or compar
 - **`ailab-wondershare-com-3`** (medium) — Use when a low-resolution photo of a subject is too small/blurry to search and you want an AI upscale to recover detail before reverse-image
 - **`ailab-wondershare-com`** (medium) — Use when you want an AI age-progression render of a face photo to imagine how a long-term missing person might look older — for generating l
-- **`airtime`** (high) — Open source platform that lets you broadcast streaming radio on the web
 - **`aiseesoft-com`** (low) — Use when a useful subject photo is obscured by a watermark/overlay and you want to clear it before reverse-image search or comparison.
 - **`aliseeks-com`** (medium) — search items by photo in AliExpress and Ebay
 - **`alos`** (medium) — "Advanced land Observer Satellite" images collection (Japan)
@@ -98,7 +97,6 @@ kind: group-index
 - **`dicom-viewer`** (medium) — view MRI or CT photo online (.DCM files)
 - **`diffchecker`** (high) — Use when you have two versions of an `image` (or document/text) and want to see exactly what changed — returns a highlighted diff exposing e
 - **`digitaldigging-org-2`** (high) — Use when you have an `image` and need to judge whether it is AI-generated/manipulated — returns detection methodology (visual-anomaly and pr
-- **`digitalpodcast`** (high) — Website related to social networking and podcasting services
 - **`discover-podcasts-here`** (high) — Use when you have a `name` and want to find a subject's own podcast or guest appearances — returns social-profile, associate.
 - **`downalbum`** (medium) — Chrome extension for downloading photo albums from social media.
 - **`downloadhelper`** (medium) — OSINT tool: DownloadHelper.
@@ -166,7 +164,6 @@ kind: group-index
 - **`gfpgan`** (high) — Use when you have a low-quality, blurry, or degraded `face`/`image` and want an AI-restored version to improve recognition and reverse-image
 - **`gijn-org-4`** (high) — Use when you have an `image`/video and need a methodology to judge whether it is AI-generated or manipulated — returns verification techniqu
 - **`giphy`** (high) — Use when you have a `username` and want to find that person's GIPHY profile, channel, and uploaded GIFs/stickers — returns a social-profile 
-- **`google-com-66`** (high) — OSINT tool: google.com.
 - **`google-lens-2`** (high) — Use when you have a photo and want to identify locations, objects, or text in it via Google's image recognition — returns identified places/
 - **`google-lens`** (high) — Use when you have a photo and want object, landmark, text, or scene recognition plus reverse image search — returns identified objects/place
 - **`google-reverse-image-fix`** (high) — Use when you have an `image` URL and want to date it and find where it appears — returns earliest/latest appearances and source pages across
@@ -219,7 +216,6 @@ kind: group-index
 - **`izitru`** (medium) — Use when you want to test whether a JPEG is an unmodified original camera file — historically returned an authenticity/"trust" score; note t
 - **`jeffreys-image-metadata-viewer`** (high) — Use when you have a photo (`image`) and want to read its embedded metadata — returns EXIF/IPTC/XMP fields including GPS `geolocation`, camer
 - **`jimpl`** (high) — Use when you have an `image` and want its hidden EXIF metadata — returns GPS `geolocation`, camera `device-id`, timestamps and other `metada
-- **`jpegcompress-com`** (high) — OSINT tool: jpegcompress.com.
 - **`jpegsnoop-2`** (high) — Use when you have an `image` (JPEG/AVI/PSD) and want to read its embedded metadata and detect editing/forgery from its compression signature
 - **`jpegsnoop-image-decoder`** (high) — Use when you have an `image` and want its embedded metadata plus signs of editing/manipulation — returns EXIF, camera/software fingerprint, 
 - **`kairos-com`** (high) — Use when you have two face images and want to verify whether they are the same person — returns a similarity/match score.
@@ -232,7 +228,6 @@ kind: group-index
 - **`labnol-org`** (high) — Use when you have an image (especially on mobile) and want to push it into Google/Bing/Yandex reverse image search in one place — returns li
 - **`landviewer`** (medium) — satellite observation imagery tool that allows for on-the-fly searching, processing and getting valuable insights from satellite data to tac
 - **`last-fm`** (medium) — Use when you have a `username` (or suspect a music handle) and want the person's public listening profile — returns social-profile, real nam
-- **`league-of-legends`** (high) — Website related to social networking and players of the computer game League of Legends
 - **`lexica`** (medium) — Download the image to find thousands Stable Diffusion AI artworks that are as similar to it as possible. You can also search by description 
 - **`librivox`** (high) — Use when you have a `name`/`username` you suspect narrates public-domain audiobooks and want their reader profile, forum activity and voice 
 - **`libsyn`** (medium) — Use when you have a `name`, `username` or podcast title and want to find a subject's podcast, its episodes and host details — returns `socia
@@ -243,7 +238,6 @@ kind: group-index
 - **`live-beaches`** (medium) — Beaches webcam only
 - **`livestream-aka-vimeo`** (high) — Use when you have a `name`/`username` or an event title and want to find a subject's live/archived video and channel — returns their social-
 - **`logobook`** (medium) — help to see which companies have a logo that looks like a certain object. You can use the suggested variants to geolocate photo.
-- **`lord-of-the-rings`** (high) — Website related to social networking and players of the computer game Lord of the Rings
 - **`lossless-cut`** (medium) — #javascript #opensource swiss army knife for audio/video editing.
 - **`lycos-image-search`** (low) — Use when you want a secondary keyword image-search index outside Google/Bing — returns image results for a text query.
 - **`lykdat-com`** (medium) — clothing reverse image search services
@@ -263,7 +257,6 @@ kind: group-index
 - **`mxface-ai`** (high) — Use when you have two photos and need a 1:1 face-match score (same person or not), or face detection/landmarks — returns a similarity score 
 - **`myheritage-photo-enhancer`** (high) — Use when a missing-person photo is blurry/low-res and you need an AI-sharpened, face-focused version for human review — returns an enhanced 
 - **`nasa-earthdata-search`** (medium) — search in 8555+ collection and photos.
-- **`netflix`** (high) — Video on demand service
 - **`neural-network-image-super-resolution-and-enhancement`** (high) — Use when a lead photo is too small/low-res and you need AI upscaling to a larger, clearer image for human review — returns an upscaled image
 - **`news-myseldon`** (medium) — from the photo looks for famous and little-known (like minor officials) people
 - **`noaa-data-access-viewer`** (medium) — satellite images of the coastal U.S.(discover, customize, and download authoritative land cover, imagery, and lidar data.)
@@ -301,11 +294,9 @@ kind: group-index
 - **`pixplot`** (low) — PixPlot is a tool that utilizes machine learning and WebGL to provide an interactive visualization of large image collections, allowing user
 - **`pixsy`** (medium) — Use when you have an `image` (ideally your own/authorised) and want to find everywhere it appears online via deep match monitoring — returns
 - **`placespotter-com`** (high) — Use when you have an `image` and want an AI's guess at where it was taken — returns approximate coordinates and location details.
-- **`planet-calypso`** (high) — Website related to social networking and players of the computer game Planet Calypso
 - **`planet-gallery`** (medium) — A collection of satellite images to compare changes in specific locations before and after any significant events (fires, military actions, 
 - **`playboard-co`** (medium) — Use when you have a YouTube channel `social-profile`/`username` and want independent analytics — returns channel stats, rankings, growth, ea
 - **`playlists-at`** (high) — OSINT tool: playlists.at.
-- **`playtech`** (high) — Website related to social networking and players of poker with gambling options
 - **`pocket`** (low) — OSINT tool: Pocket.
 - **`podbean`** (high) — Use when you have a subject's `name` or `username` and suspect they host a podcast — returns their public podcast `social-profile`, episode 
 - **`podcast-alley`** (high) — Use when you have a `name`/`username` and want to check whether a subject self-hosts a podcast here — returns a show page with bio, photo an
@@ -359,7 +350,6 @@ kind: group-index
 - **`shutterfly`** (high) — Use when you have a `name`/`username` and suspect the subject uses Shutterfly to share photos — returns `image` galleries and shared-album p
 - **`shutterstock`** (medium) — Use when you have a profile `image` and want to check if it's actually a stock photo (catfish signal) — returns whether the picture is a lic
 - **`sightengine-com`** (high) — Use when you have an `image` or video (e.g. a suspect profile photo) and want to test whether it is AI-generated/deepfaked or moderate its c
-- **`skyforge`** (high) — Website related to social networking and players of the computer game Skyforge
 - **`skyline-webcams`** (medium) — OSINT tool: Skyline Webcams.
 - **`sn-radar-vk-photo-search`** (medium) — OSINT tool: SN Radar VK Photo Search.
 - **`snap-scraper`** (high) — Use when you have a `geolocation` (lat/long) and want the public Snapchat media posted there — returns downloaded images/video from Snap Map
@@ -373,7 +363,6 @@ kind: group-index
 - **`spotify`** (low) — Use when you have a `username`/handle and want the person's public Spotify profile — returns social-profile, display name, avatar, and publi
 - **`ssstik-link`** (high) — Use when you have a TikTok `username`/`social-profile` and want the full-resolution profile picture — returns the original-size avatar image
 - **`star-wars-tor`** (high) — Website related to social networking and players of the computer game Star Wars The Old Republic
-- **`statigr-am`** (high) — OSINT tool: Statigr.am.
 - **`steam`** (medium) — Use when you have a `username`/handle and think the subject games on Steam — returns `social-profile`, `image` (avatar), `associate` (friend
 - **`stolen-camera-finder`** (high) — Use when you have a photo with EXIF and want other photos taken by the same camera — returns other `image`s and the `social-profile`s/pages 
 - **`stolencamerafinder-com`** (high) — Use when you have an original `image` (with intact EXIF) and want to find other photos taken by the same physical camera via its serial numb
@@ -420,11 +409,9 @@ kind: group-index
 - **`watannetwork-com`** (high) — OSINT tool: watannetwork.com.
 - **`watermarkremover`** (medium) — Remove watermark from image with AI
 - **`webcam-cse`** (medium) — Google Custom Search Engine for search in 10 online street webcam catalogs
-- **`webshots`** (high) — Website related to social networking with photo galleries, photo posting and sharing services
 - **`weheartit`** (high) — Use when you have a `username` or `image` and want a subject's curated image collections and tastes on this Tumblr-style gallery site — retu
 - **`who-stole-my-pictures-addons-mozilla-org`** (high) — Use when you have an `image` and want to run it through several reverse-image engines at once from a right-click menu — returns matching pag
 - **`world-cams`** (high) — Use when you have a `geolocation`/`address` and want live eyes on it — returns public live-webcam feeds (`image`/video) from that place for 
-- **`world-of-warcraft`** (high) — Website related to social networking and players of the computer game World of Warcraft
 - **`www3-lunapic-com`** (high) — Use when you have an `image` of a subject and want to crop, enhance, deskew, or isolate a face in-browser before running reverse-image/face 
 - **`y2mate-com`** (high) — Use when you have a public YouTube (or other) video URL and want to download the video/audio for offline preservation and frame analysis — r
 - **`y8`** (high) — Use when you have a gaming `username` and suspect the subject uses Y8's browser-games portal — returns a public in-site `social-profile` wit

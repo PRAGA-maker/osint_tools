@@ -124,7 +124,6 @@ kind: group-index
 - **`boatinfoworld`** (medium) — Use when you have a `name` (owner or vessel) and want US Coast Guard documented-vessel records — returns owner `name`, `address`, `document-
 - **`bookkeepers-org-uk`** (medium) — Use when you have a UK bookkeeper/business `name` or location and want to confirm ICB membership — returns the certified bookkeeper's busine
 - **`boston-police-internal-affairs-cases-2010-2020`** (medium) — OSINT tool: Boston Police Internal Affairs Cases, 2010-2020.
-- **`boursakuwait-com-kw`** (high) — OSINT tool: boursakuwait.com.kw.
 - **`bp-statistical-review-of-world-energy`** (low) — OSINT tool: BP Statistical Review of World Energy.
 - **`bps-org-uk`** (low) — Use when you have a `name` of someone claiming to be a UK psychologist and want to verify BPS membership/chartered status — returns the prac
 - **`brazillian-address-cep-search-and-report`** (medium) — OSINT tool: Brazillian Address CEP Search and Report.
@@ -291,7 +290,7 @@ kind: group-index
 - **`dsc-data-science-search-engine`** (low) — OSINT tool: DSC Data Science Search Engine.
 - **`duedil-united-kingdom`** (medium) — Business-related platform that provides information on over 40 million companies including company name search and director name search
 - **`dutchess-and-ulster-bridge-safety-ratings-2015`** (medium) — OSINT tool: Dutchess and Ulster bridge safety ratings 2015.
-- **`e-gov-kw`** (high) — OSINT tool: e.gov.kw.
+- **`e-gov-kw`** (high) — Use when you have a Kuwaiti Civil ID or a `name` and want to check official Kuwait government status records (Civil ID validity, arrest warr
 - **`e-justice-europa-eu`** (high) — Use when you have a `name` or `address` and a property question in an EU country and want the official routing to that country's land/proper
 - **`easybib-citation-generator`** (medium) — Academic-related program that generates an automatic bibliographical reference and/or citation from a website URL
 - **`easystreet`** (medium) — OSINT tool: EasyStreet.
@@ -539,7 +538,6 @@ kind: group-index
 - **`iron-march`** (low) — OSINT tool: Iron March.
 - **`ironmarch-exposed`** (low) — OSINT tool: Ironmarch.exposed.
 - **`italy`** (high) — Use when you have an Italian `employer-org` or a director's `name` and want official company data — InfoCamere's register returns the compan
-- **`ius-the-horizon-search-and-report`** (high) — OSINT tool: IUS The Horizon Search and Report.
 - **`jail-and-inmate-records-search-directory`** (high) — Use when you have a `name` and want to locate the right US jail/inmate lookup for a state or county — returns links to official incarceratio
 - **`jail-records`** (high) — Use when you have a `name` and want to check US jail/prison custody — a curated directory of official federal/state/county inmate locators r
 - **`jailbase`** (high) — Use when you have a `name` and want to check for a recent US arrest — returns booking records with mugshot, charges, booking date and county
@@ -613,7 +611,7 @@ kind: group-index
 - **`macron-campaign-emails`** (medium) — OSINT tool: Macron Campaign Emails.
 - **`maine-county-law-enforcement-discipline-chart`** (medium) — OSINT tool: Maine County Law Enforcement Discipline Chart.
 - **`maine`** (high) — Use when you have a `name` of someone possibly in Maine's corrections system and want their custody info — returns the resident's name, MDOC
-- **`maldives-sex-offender`** (high) — OSINT tool: Maldives Sex Offender.
+- **`maldives-sex-offender`** (high) — Use when you have a `name` linked to the Maldives and want to check the official child sex-offenders registry — returns name, image, dob, ad
 - **`malta`** (high) — Use when you have a Maltese company `name`/`employer-org` or a person and want official registry data — returns registered company details, 
 - **`manitoba-assessment-online`** (low) — OSINT tool: Manitoba Assessment Online.
 - **`manitoba-court-records`** (high) — Use when you have a `name` and want to check for court cases involving them in Manitoba, Canada — returns matching cases, file numbers, and 
@@ -738,7 +736,6 @@ kind: group-index
 - **`ohio-registered-voter-verification`** (medium) — Ohio registered voter verification and search
 - **`ohio-resident-database`** (high) — Use when you have a `name` in Ohio and want address/age/party from the state's public voter-registration data — returns address, dob-year an
 - **`ohio`** (high) — Use when you have a `name` and want to locate someone in Ohio state prison custody — returns incarceration status, facility, age/DOB and off
-- **`ohiovoters-us`** (high) — OSINT tool: Ohiovoters.us.
 - **`oklahoma-offender-search`** (high) — Use when you have a `name` and want to confirm someone is/was in Oklahoma state custody or supervision — returns offender records with DOB, 
 - **`oklahoma-registered-voter-verification`** (medium) — Oklahoma registered voter verification and search
 - **`oklahoma-voters-search`** (high) — Use when you have a `name` in Oklahoma and want voter-registration details — returns registration data (address/precinct) from Oklahoma vote
@@ -1112,7 +1109,6 @@ kind: group-index
 - **`yearbooks`** (high) — Use when you have a `name` and an approximate school/year and want a historical school/college/military yearbook photo and entry — returns a
 - **`yell-online-business-directory-uk`** (medium) — UK-based business directory; search engine that searches using company name
 - **`york-city-pa-compensation`** (medium) — OSINT tool: York City PA Compensation.
-- **`york-county-pa-2017-write-in-report`** (high) — OSINT tool: York County PA 2017 Write in Report.
 - **`york-county-va-2017-public-salaries`** (medium) — OSINT tool: York County VA 2017 Public Salaries.
 - **`youcontrol`** (medium) — OSINT tool: YouControl.
 - **`zendy-io`** (medium) — Discover academic journals, articles, & books on one seamless platform. Search keyword, authors, titles ISBN, ISSN etc

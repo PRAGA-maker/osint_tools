@@ -176,7 +176,6 @@ kind: group-index
 - **`facebook-profile-directory`** (high) — Use when you have a `name` and want to browse Facebook's alphabetical public directory of profiles/pages — returns public profile links you 
 - **`facebook-profile-id-grabber`** (high) — Use when you have a Facebook profile (vanity URL or open page) and want its stable numeric profile ID — returns the numeric ID that unlocks 
 - **`facebook-scanner`** (high) — Use when older guides point you to StalkScan for Facebook Graph Search — but it is defunct; returns nothing and you should route to a live w
-- **`facebook-scraped-data-search`** (high) — OSINT tool: Facebook Scraped Data search.
 - **`facebook-search-2`** (high) — Use when you have a `name`, `employer-org`, school or city and want to run structured people/post/photo searches on Facebook after Graph Sea
 - **`facebook-search-3`** (high) — Use when you have a `name`, keyword or `username` and want to search recent public Facebook posts/mentions — returns `social-profile` posts 
 - **`facebook-search-engine`** (high) — Use when you have a `name`/`username` or keyword and want to search public Facebook content via a prebuilt Google Custom Search Engine — ret
@@ -251,7 +250,6 @@ kind: group-index
 - **`google-account-finder-epieos`** (high) — Use when you have an `email` (Gmail) or `phone` and want the linked Google account's profile photo, public Maps reviews/photos, and which se
 - **`google-com-2`** (high) — Use when you have a `name` (and a German school/town) and want to find someone's StayFriends classmates profile without an account — returns
 - **`google-com-3`** (high) — Use when you have a `name` or `username` and want to find profiles on Trombi.com (French classmates network) via a Google site-search dork —
-- **`google-com-4`** (high) — OSINT tool: google.com.
 - **`google-com-44`** (high) — OSINT tool: google.com.
 - **`google-com-46`** (high) — Use when you have a `name` or `username` possibly tied to the Chinese social network Renren and want to find their profile without a Renren 
 - **`google-com-47`** (high) — OSINT tool: google.com.
@@ -261,10 +259,8 @@ kind: group-index
 - **`google-com-55`** (high) — Use when you have a `name` (or `username`, employer, or town) and want to find a person's UK LinkedIn profile without logging into LinkedIn 
 - **`google-com-58`** (high) — OSINT tool: google.com.
 - **`google-com-59`** (high) — OSINT tool: google.com.
-- **`google-com-60`** (high) — OSINT tool: google.com.
 - **`google-com-62`** (medium) — Use when you have a `name` of someone likely working in the Middle East and want their professional profile — a Google `site:bayt.com` dork 
 - **`google-com-63`** (high) — Use when you have a `name` (or employer) for someone in the German-speaking world and want their XING profile without logging into XING — re
-- **`google-com-68`** (high) — OSINT tool: google.com.
 - **`google-com-70`** (high) — Use when you have a `name` or `username` and want to surface a subject's MeWe profile/posts that Google has indexed — returns `social-profil
 - **`google-com-71`** (high) — Use when you're chasing a subject's Parler footprint and want Google's indexed/archived copies of Parler posts via a site-search dork — retu
 - **`google-com-72`** (high) — Use when you have a `name` or `username` and want their presence on Rumble — returns Rumble channels/videos via a Google `site:rumble.com` d
@@ -275,7 +271,6 @@ kind: group-index
 - **`google-to-search-profiles-on-twitter`** (high) — Use when you have a `name`, keyword, or location and want to find matching X/Twitter profiles via a Google X-ray query — returns candidate `
 - **`google-to-search-profiles-on-xing`** (medium) — Use when you have a `name`/role in the German-speaking business world and want their Xing profile — builds a Google X-ray query that returns
 - **`gramfeed-com`** (high) — Use when you have an Instagram `username` and want a web viewer with map/geo browsing — but the service has shut down, so treat as defunct.
-- **`gramspy`** (high) — OSINT tool: Gramspy.
 - **`graph-tips-fb-search`** (high) — Use when you have a `name`/`username` and want to search Facebook for a person, their photos, places and connections — returns Facebook prof
 - **`graph-tips`** (high) — Use when you have a Facebook profile (`name`/`username`/numeric ID) and want to run Graph-Search-style queries on their photos, posts, frien
 - **`graphtreon-com`** (high) — Use when you have a Patreon creator `username`/page and want their patron counts, earnings estimates, and growth history — returns financial
@@ -333,7 +328,6 @@ kind: group-index
 - **`instagram-reddit-and-snapchat`** (high) — Use when you have an Instagram `username` and want a one-page launcher of profile, ID, hashtag and geolocation lookups — returns social-prof
 - **`instagram-scraper`** (medium) — Scrape info about accounts, posts, stories and comment
 - **`instagram-search-inteltechniques-method`** (high) — Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers
-- **`instagram-search`** (high) — OSINT tool: Instagram Search.
 - **`instagram-tool-inteltechniques-com`** (high) — Use when you have an Instagram `username` and want a one-stop panel of query shortcuts (profile, media, followers, location) — returns pre-b
 - **`instagram-user-id`** (high) — Use when you have an Instagram `username` and want its stable numeric user ID plus basic account stats — returns social-profile (numeric ID)
 - **`instagramprivsniffer`** (high) — Use when you have a private Instagram `username` and want to recover posts exposed through the Collaboration feature — returns a `social-pro
@@ -347,7 +341,7 @@ kind: group-index
 - **`instasaver`** (high) — Save or download posts from Instagram
 - **`instatracker`** (medium) — Instagram tracking script that logs changes to an account (followers, following, posts, bio).
 - **`insto`** (high) — Use when you have an Instagram `username` and want a scripted, no-login dossier — posts, followers, geo-fingerprint and network intersection
-- **`intel-sw-com`** (high) — OSINT tool: Intel-SW.com.
+- **`intel-sw-com`** (high) — Use when you have a `name` or `employer-org` and want to find someone's Facebook profile and mutual connections via advanced Graph-style ope
 - **`inteltechniques-facebook`** (high) — Use when you have a Facebook `username`/`social-profile` or numeric ID and want to run structured Facebook lookups (ID resolution, friend/ph
 - **`inteltechniques-twitter`** (high) — Use when you have an X/Twitter `username` or `name` and want to run advanced searches across many operators at once — returns profile, posts
 - **`internect-info`** (high) — Use when you have a Bluesky handle, DID or AT URI and want to resolve it to the underlying AT Protocol identity — returns the stable `social
@@ -476,7 +470,6 @@ kind: group-index
 - **`pogu-live`** (medium) — Tool that allows you to watch sub only or deleted VODs for free. It works because when a streamer deletes a video, iit is not deleted from T
 - **`pokoinsta-com`** (high) — Use when you have an Instagram `username` and want the target's full-size profile picture without logging in — returns the HD profile `image
 - **`ppl-contact`** (medium) — Use when you have a `name` + `employer-org` (or company `domain`) and want a person's business `email`/`phone` — returns B2B contact details
-- **`prankshit-com`** (high) — OSINT tool: prankshit.com.
 - **`predicta-search`** (high) — Use when you have an `email`, `phone`, `username`, or `name` and want a correlated digital-footprint report of linked accounts across many p
 - **`profile-summary-for-github`** (medium) — Get detailed stats by Github username
 - **`projects-noahliebman-net-listcopy`** (medium) — copy a list made by another user to your Twitter account
@@ -570,7 +563,7 @@ kind: group-index
 - **`secjuice-com-3`** (high) — Use when you're about to investigate a subject on LinkedIn and want a methodology walkthrough — returns techniques for finding and reading `
 - **`seemutualfriendsonfacebook-com`** (high) — Use when you have two or more Facebook friend lists (scraped) and want to find the people they have in common — returns overlapping social-p
 - **`seo-resources-search-engine`** (low) — OSINT tool: SEO Resources Search Engine.
-- **`shabbat`** (high) — Jewish social networking website
+- **`shabbat`** (high) — Use when you have a `name` or `username` for someone in the Jewish community and want to find their member profile and location on this soci
 - **`shotstars`** (medium) — OSINT tool: Shotstars.
 - **`simplescraper-osint-airtable`** (low) — Twitter OSINT scraping resources collated in Airtable.
 - **`sinwindie-osint`** (high) — Use when you have a `username`/`social-profile` and need a platform-specific investigation playbook — a curated GitHub repo of per-platform 
@@ -725,7 +718,6 @@ kind: group-index
 - **`tweet-tunnel`** (medium) — tool for quick and comfortable viewing old tweet's of someone account
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
 - **`tweetdeck`** (medium) — OSINT tool: Tweetdeck.
-- **`tweetdelete-net`** (high) — OSINT tool: tweetdelete.net.
 - **`tweetfeed`** (medium) — List of IOCs shared today by the #infosec community at Twitter: domains, URLs, IPs, SHA256/MD5 hashes
 - **`tweetpaths`** (medium) — OSINT tool: Tweetpaths.
 - **`tweetreach`** (medium) — OSINT tool: Tweetreach.
