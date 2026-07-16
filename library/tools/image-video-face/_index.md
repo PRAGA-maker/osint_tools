@@ -31,7 +31,7 @@ kind: group-index
 - **`anieraser-media-io`** (low) — Use when you need to erase an unwanted object, person, or watermark from a photo to isolate the subject before reverse-image search or compa
 - **`aperislove`** (medium) — Online steganography tool: PngCheck,Strings,Foremost,Binwalk,ExifTool,Outguess,Steghide,Zsteg,Blue/Green/Red/Superimposed
 - **`aperisolve-fr`** (medium) — Deep image layers (Supperimposed, Red, Green, Blue) and properties (Zsteg, Steghide, Outguess, Exif, Binwalk, Foremost) analyze tool.
-- **`apollomapping-image-hunter`** (medium) — Select an area on the map using a special tool (square and polygon) and get a list of dozens of images obtained from satellites or by aerial
+- **`apollomapping-image-hunter`** (medium) — Use when you have a `geolocation`/area and want to find archived satellite and aerial imagery of it over time — returns a catalog of availab
 - **`app-channelcrawler-com`** (medium) — Use when you have a YouTube channel theme, language, country, or keyword and need to enumerate matching channels with creator contact/social
 - **`app-geoinfer-com`** (high) — Use when you have a photo with no GPS/EXIF and need an AI prediction of where it was taken (coordinates plus a confidence radius).
 - **`arcgis-com`** (medium) — Use when you have a place/area and want to plot geotagged public social media (Flickr, YouTube, Twitter, webcams) on a map to find imagery f
@@ -138,7 +138,6 @@ kind: group-index
 - **`fulldp`** (medium) — Download OnlyFans full-size profile pictures.
 - **`gaia`** (high) — Use when you have a `username` or `name` and want to find a Gaia Online avatar-community profile — returns the social-profile, avatar images
 - **`geograph-worldwide`** (medium) — Use when you have a `geolocation` (grid square / area) and want ground-level reference photos of it — returns geotagged `image`s to compare 
-- **`geosearch`** (medium) — OSINT tool: Geosearch.
 - **`geospy-2`** (high) — Use when you have an outdoor `image` and no location metadata and want an AI location estimate — returns predicted `geolocation` (region/coo
 - **`get-metadata-com`** (high) — Use when you have an `image` (or document/video/audio file) and want its hidden EXIF/metadata — returns `metadata-exif`, GPS `geolocation`, 
 - **`get-text-from-video`** (medium) — Transcribe uploaded video file

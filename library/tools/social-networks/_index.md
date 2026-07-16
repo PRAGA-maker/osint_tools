@@ -499,7 +499,7 @@ kind: group-index
 - **`reddit-user-extractor`** (medium) — #python script that allows you to get a complete list of comments by user name on Reddit in CSV format
 - **`reddit-visualization`** (medium) — OSINT tool: reddit visualization.
 - **`reddit`** (high) — Use when you have a `username` and want a subject's full public post/comment history — returns a `social-profile` whose activity leaks `geol
-- **`redditcommentsearch-com`** (medium) — getting a list of all comments by a Reddit user with a certain name
+- **`redditcommentsearch-com`** (medium) — Use when you have a Reddit `username` and want to keyword-filter that user's entire comment history — returns matching comments revealing lo
 - **`redditery`** (low) — Explore Reddit posts and comments by criteria.
 - **`redditle-com`** (medium) — OSINT tool: Redditle.com.
 - **`redditp-reddtip`** (low) — Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).

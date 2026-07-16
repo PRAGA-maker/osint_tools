@@ -232,7 +232,7 @@ kind: group-index
 - **`osmaps-radius`** (medium) — drawing circles with a certain radius on the map
 - **`osmbuildings-org`** (medium) — world map showing notable buildings. For each object you can find out the height, type, and purpose.
 - **`outage-map`** (low) — OSINT tool: Outage map.
-- **`overpass-api`** (medium) — This simple online tool shows Open Street Map changes over a certain date range.
+- **`overpass-api`** (medium) — Use when you have a `geolocation` and want to query OpenStreetMap features or see map edits over a date range — returns matching OSM objects
 - **`overpass-turbo`** (high) — Use when you need to find every place matching specific features (e.g., all schools/churches/diners with a feature) within an area — query O
 - **`pastvu-com`** (medium) — View historical photos taken at a particular location on a map.
 - **`peakfinder`** (high) — Use when an outdoor photo shows a mountain skyline and you want to identify peaks or confirm/narrow the camera location by matching the hori
@@ -271,7 +271,7 @@ kind: group-index
 - **`seeker`** (medium) — Accurately locate smartphones using social engineering (geolocation via crafted phishing page).
 - **`sentinel-hub`** (high) — Use when you need dated, recent satellite imagery of an area to detect change over time or confirm current ground conditions.
 - **`shademap`** (medium) — ShadeMap is a global simulation of mountain, building & tree shadows for a given date & time. Base data is free, but users can buy 30cm accu
-- **`shadow-finder`** (medium) — To analyse shadows in source imagery, Shadow Finder maps all points on the earth where a shadow of given length could occur at a given date 
+- **`shadow-finder`** (medium) — Use when you have an `image` with a measurable shadow and a known object height, date, and time — returns the set of earth locations where t
 - **`shadowmap`** (medium) — Global map of 3D buildlings and the shadows they cast at a specific time a day
 - **`site24x7-com`** (medium) — OSINT tool: site24x7.com.
 - **`skydb`** (medium) — Worldwide database of skyscrapers and tall buildings.

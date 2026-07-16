@@ -31,6 +31,14 @@ localInstall: false
 registration: false
 relatedTools:
 - get-text-from-video
+- efficientnetv2
+- hugging-face-ai-detector
+- huggingface-co
+- huggingface-co-4
+- instruct-pix2pix
+- kosmos-2
+- pix2pix-video
+- scene-edit-detection
 tags:
 - Social Media
 - YouTube

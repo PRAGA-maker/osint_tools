@@ -83,7 +83,6 @@ kind: group-index
 - **`argus`** (low) — All-in-one information gathering toolkit with many modular recon scripts.
 - **`arin-net`** (medium) — OSINT tool: arin.net.
 - **`arin`** (medium) — OSINT tool: ARIN.
-- **`arvixe-uk`** (medium) — UK based service provider for registering websites and domain addresses
 - **`assay`** (low) — URL inspection toolkit: live web requests monitor, subdomains/connected domains, scam, phishing, malware detection, WHOIS, Geo IP, SafeFrame
 - **`atsameip-intercode-ca`** (medium) — OSINT tool: atsameip.intercode.ca.
 - **`audits-website-cookies-online-tracking-and-https-usage-for-gdpr-compliance`** (low) — OSINT tool: Audits website cookies, online tracking and HTTPS usage for GDPR compliance.
@@ -287,7 +286,7 @@ kind: group-index
 - **`ipanalyzer-privacy-test`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
 - **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.
 - **`ipinfo-map`** (low) — paste up to 500,000 IPs below to see where they're located on a map
-- **`ipnet-tools`** (medium) — OSINT tool: ipnet.tools.
+- **`ipnet-tools`** (medium) — Use when you have an `ip-address` and want its geolocation, reverse-DNS hostname, and network owner — returns location, ISP/registry, and as
 - **`iptools-robot`** (low) — univsersal domain investigation Telegram bot
 - **`ipvoid`** (low) — OSINT tool: IPVoid.
 - **`iqwhois`** (low) — Search whois data by address, city, name, surname, phonenumber
@@ -394,7 +393,6 @@ kind: group-index
 - **`psn-resolver`** (low) — OSINT tool: PSN Resolver.
 - **`ptrarchive-com`** (low) — search by 230 billion DNS records retrieved from 2008 to the present.
 - **`punkspider`** (low) — OSINT tool: Punkspider.
-- **`purewhois`** (medium) — Tool that safely identifies the available registration information for a website or domain name
 - **`pydork`** (low) — Tool for automation collecting Google, Bing, DuckDuckGo, Baidu and Yahoo Japan search results (images search and suggestions). Note the huge
 - **`qualys-ssl-check`** (low) — OSINT tool: Qualys SSL Check.
 - **`quango-seo-ranks-and-monitoring`** (medium) — Search for information and statistics about any online website

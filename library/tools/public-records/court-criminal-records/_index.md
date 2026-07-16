@@ -15,7 +15,7 @@ kind: group-index
 - **`epstein-exposed`** (medium) — Epstein case document research
 - **`familywatchdog-sex-offender-search`** (medium) — Sex offender registry search
 - **`federal-inmate-locator`** (medium) — Federal inmate location and release dates
-- **`free-law-recap-archive`** (medium) — Free federal court documents
+- **`free-law-recap-archive`** (medium) — Use when you have a `name`/case tied to US federal litigation and want the actual court filings — returns dockets and PACER documents naming
 - **`google-scholar-case-law`** (medium) — Quick case law lookup
 - **`judyrecords`** (medium) — Nationwide court case search
 - **`most-wanted-criminal-pages`** (medium) — Wanted fugitive identification

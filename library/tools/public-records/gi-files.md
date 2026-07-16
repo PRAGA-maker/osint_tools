@@ -35,6 +35,11 @@ relatedTools:
 - wikileaks
 - wikileaks-search
 - leaked-cables
+- akp-email-database
+- dnc-email-database
+- ice-patrol
+- macron-campaign-emails
+- sony-archives
 tags:
 - wikileaks
 - leaks

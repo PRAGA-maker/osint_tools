@@ -108,7 +108,7 @@ kind: group-index
 - **`crackstation-net`** (low) — password hash cracker
 - **`credit-card-generator`** (low) — OSINT tool: Credit Card Generator.
 - **`crontab-guru`** (low) — Online "shedule expression" editor (for setting task times in Crontab files).
-- **`csi-linux`** (medium) — Free investigation-focused Linux distribution/VM for OSINT and forensics.
+- **`csi-linux`** (medium) — Use when you want a pre-built, isolated OSINT/forensics workstation — returns a ready-to-run Linux VM bundling investigation, dark-web, and 
 - **`cyberghost-vpn-proxy-website`** (low) — Anonymous browsing service provider
 - **`dating-profile-generator`** (low) — OSINT tool: Dating Profile Generator.
 - **`decoding-social-security-numbers`** (low) — OSINT tool: Decoding Social Security Numbers.

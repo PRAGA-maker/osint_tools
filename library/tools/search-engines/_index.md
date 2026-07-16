@@ -508,7 +508,7 @@ kind: group-index
 - **`metaosint-intelscott`** (high) — Use when you have a selector type (name, username, email, phone, image) and need to pick the right tool — a searchable, sortable, data-ranke
 - **`metaphor-systems`** (low) — A search engine with a new and unusual search method. This AI "trained to predict the next *link* (similar to the way GPT-3 predicts the nex
 - **`military-occupation-codes-canada`** (medium) — Website that identifies the occupation classification code across the country at the national level
-- **`milled`** (medium) — OSINT tool: Milled.
+- **`milled`** (low) — Use when you have a brand/`employer-org` name and want its marketing-email history — returns archived promotional emails revealing campaigns
 - **`million-short`** (medium) — OSINT tool: Million Short.
 - **`mindmap-search-engine`** (medium) — OSINT tool: Mindmap Search Engine.
 - **`mojeek-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results

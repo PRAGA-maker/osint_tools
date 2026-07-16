@@ -66174,52 +66174,6 @@
     "_file": "library/tools/domains-ip-infrastructure/arin-net.md"
   },
   {
-    "id": "arvixe-uk",
-    "name": "Arvixe (UK)",
-    "description": "UK based service provider for registering websites and domain addresses",
-    "url": "http://www.arvixe.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/arvixe-uk.md"
-  },
-  {
     "id": "aslookup-com",
     "name": "ASlookup.com",
     "description": "BGP and ASN lookup",
@@ -79163,42 +79117,50 @@
   {
     "id": "ipnet-tools",
     "name": "ipnet.tools",
-    "description": "OSINT tool: ipnet.tools.",
+    "description": "Use when you have an `ip-address` and want its geolocation, reverse-DNS hostname, and network owner — returns location, ISP/registry, and associated domains.",
     "url": "https://ipnet.tools/ip-lookup-tool",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Free IP lookup returning geolocation, reverse DNS, ISP/ASN, and network range for an IPv4/IPv6 address.",
     "selectorsIn": [
-      "domain"
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "geolocation",
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required.",
+    "opsec": "passive",
+    "opsecNote": "The lookup queries public registry/geolocation data about the IP on ipnet.tools' servers — it does not send any packet to the target IP, so the IP's owner is not notified. Passive. Avoid any built-in \"ping/traceroute\" feature if present, which would touch the target actively.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party wrapper over standard IP geolocation and WHOIS/RIR data; results are only as accurate as those upstream databases (city-level geo is approximate).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ipnet tools IP lookup"
+    ],
     "tags": [
       "domainsandips",
       "Domains & IPs"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ipnet-tools.md"
   },
   {
@@ -85873,52 +85835,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/punkspider.md"
-  },
-  {
-    "id": "purewhois",
-    "name": "PureWhois",
-    "description": "Tool that safely identifies the available registration information for a website or domain name",
-    "url": "http://www.purewhois.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/purewhois.md"
   },
   {
     "id": "pydork",
@@ -127561,42 +127477,53 @@
   {
     "id": "overpass-api",
     "name": "Overpass API",
-    "description": "This simple online tool shows Open Street Map changes over a certain date range.",
+    "description": "Use when you have a `geolocation` and want to query OpenStreetMap features or see map edits over a date range — returns matching OSM objects and change history.",
     "url": "https://overpass-api.de/achavi/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Querying OpenStreetMap's database for specific features near a point, and (via achavi) visualizing OSM changesets over a date range.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public endpoint. No account, but the shared server enforces rate/timeout limits — heavy queries are throttled.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit a public OSM mirror, not the subject; nothing is disclosed to anyone you're investigating. Passive. Your IP is visible to the Overpass server — use a VPN if you care about that, but there is no target-side exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Community-run infrastructure over authoritative OpenStreetMap data; the data is crowdsourced but transparent and widely relied upon for geolocation work.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "shadow-finder"
+    ],
+    "aliases": [
+      "Overpass Turbo",
+      "achavi",
+      "Augmented OSM Change Viewer"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/overpass-api.md"
   },
   {
@@ -129284,50 +129211,55 @@
   {
     "id": "shadow-finder",
     "name": "Shadow Finder",
-    "description": "To analyse shadows in source imagery, Shadow Finder maps all points on the earth where a shadow of given length could occur at a given date & time, IF the height of the object casting it is known.",
+    "description": "Use when you have an `image` with a measurable shadow and a known object height, date, and time — returns the set of earth locations where that shadow could occur.",
     "url": "https://github.com/bellingcat/ShadowFinder",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Chronolocation/geolocation — mapping every point on Earth where a shadow of a given length could fall at a specified date and time, given the casting object's height.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "image",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (Bellingcat, on GitHub). Runs as a Python package/CLI locally, or via the hosted Bellingcat web app; no account.",
+    "opsec": "passive",
+    "opsecNote": "Analysis runs on your own machine (or Bellingcat's hosted app) from measurements you supply — nothing is sent to the subject and no one is notified. Fully passive. If you use the hosted version, your inputs pass through Bellingcat's server; run the local package to keep everything offline.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "trusted",
+    "trustNote": "Published and maintained by Bellingcat; open-source, transparent astronomy math, and widely used in verified geolocation investigations.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "instagram-location-search",
+      "auto-archiver",
+      "bellingcat-tiktok-hashtag-analysis",
+      "telegram-phone-number-checker-github-com",
+      "wayback-google-analytics"
+    ],
+    "aliases": [
+      "ShadowFinder"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "geolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "auto-archiver",
-      "bellingcat-tiktok-hashtag-analysis",
-      "instagram-location-search",
-      "telegram-phone-number-checker-github-com",
-      "wayback-google-analytics"
-    ],
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/shadow-finder.md"
   },
   {
@@ -133853,40 +133785,50 @@
   {
     "id": "apollomapping-image-hunter",
     "name": "ApolloMapping Image Hunter",
-    "description": "Select an area on the map using a special tool (square and polygon) and get a list of dozens of images obtained from satellites or by aerial photography (from the early 2000s as well as those taken a couple of days ago).",
+    "description": "Use when you have a `geolocation`/area and want to find archived satellite and aerial imagery of it over time — returns a catalog of available images with dates and previews.",
     "url": "https://imagehunter.apollomapping.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Searching commercial satellite/aerial imagery archives for a chosen map area, browsing available captures by date (early 2000s to recent).",
     "selectorsIn": [
-      "image"
+      "geolocation"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "image",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Searching the archive and previewing available imagery (thumbnails, capture dates, metadata) is free; ordering full-resolution licensed imagery is paid via ApolloMapping.",
+    "opsec": "passive",
+    "opsecNote": "You draw an area on a map and browse an imagery catalog — nothing about a person is submitted and no one is notified. Passive. Ordering imagery requires an account/quote that identifies you; the free search does not.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by ApolloMapping, a commercial satellite-imagery reseller; the archive index (providers, dates) is authoritative for what imagery exists, even if buying it costs money.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Image Hunter",
+      "ApolloMapping"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Satellite/aerial imagery"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/apollomapping-image-hunter.md"
   },
   {
@@ -140812,42 +140754,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/geograph-worldwide.md"
-  },
-  {
-    "id": "geosearch",
-    "name": "Geosearch",
-    "description": "OSINT tool: Geosearch.",
-    "url": "http://www.geosearchtool.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "video-search-and-other-video-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/geosearch.md"
   },
   {
     "id": "geosetter",
@@ -176898,24 +176804,25 @@
   {
     "id": "csi-linux",
     "name": "CSI Linux",
-    "description": "Free investigation-focused Linux distribution/VM for OSINT and forensics.",
+    "description": "Use when you want a pre-built, isolated OSINT/forensics workstation — returns a ready-to-run Linux VM bundling investigation, dark-web, and forensics tooling.",
     "url": "https://csilinux.com/csi-linux-downloads/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling"
     ],
-    "bestFor": "A pre-built OSINT/forensics workstation VM",
+    "bestFor": "A ready-made virtual-machine investigation platform preloaded with OSINT, dark-web, and digital-forensics tools, kept separate from your host.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The base CSI Linux VM is a free download; the project also sells paid training, certifications, and some premium add-on tooling. The core platform is free to run.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Its whole point is OpSec — run investigations inside a disposable VM so browsing artifacts, cookies, and downloads never touch your real host, and route traffic through VPN/Tor. Snapshot before an op and roll back after. Downloading the ISO is passive; keep the download itself under a persona if that matters to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "desktop-app",
     "trust": "trusted",
-    "trustNote": "Established investigation-focused Linux distro.",
+    "trustNote": "An established, widely-referenced investigation-focused Linux distribution; download only from the official csilinux.com and verify checksums, as with any security VM.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -176924,7 +176831,10 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CSI Linux distro"
+    ],
     "tags": [
       "vm",
       "linux-distro",
@@ -176932,8 +176842,8 @@
       "investigator-platform"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/csi-linux.md"
   },
   {
@@ -233578,45 +233488,59 @@
   {
     "id": "free-law-recap-archive",
     "name": "Free Law RECAP Archive",
-    "description": "Free federal court documents",
+    "description": "Use when you have a `name`/case tied to US federal litigation and want the actual court filings — returns dockets and PACER documents naming parties, addresses, and associates.",
     "url": "https://www.courtlistener.com/recap/",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Free federal court documents",
-    "input": "Docket number or case name",
-    "output": "Court documents, PACER filings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free full-text search of US federal court dockets and filings crowdsourced from PACER via CourtListener.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "address",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and public (Free Law Project nonprofit). No PACER account or per-page fee for documents already in the RECAP archive; a free CourtListener account unlocks alerts and the API.",
     "opsec": "passive",
-    "opsecNote": "Crowdsourced PACER data via CourtListener",
+    "opsecNote": "Searching RECAP queries CourtListener's own archive, not PACER live — so the court/party is not alerted and no PACER charges accrue. Passive. Only documents contributed by RECAP users are present; pulling a brand-new doc from PACER itself (separate flow) is logged by the courts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Free Law Project; RECAP mirrors authentic PACER filings, so documents are genuine court records (though a docket may be incomplete vs. live PACER).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "courtlistener",
-      "courtlistener-recap",
-      "recap-court-doc-repo"
+      "recap-court-doc-repo",
+      "courtlistener-recap"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "RECAP",
+      "CourtListener RECAP"
+    ],
+    "tags": [
+      "court-records",
+      "pacer",
+      "federal"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/free-law-recap-archive.md"
   },
   {
@@ -235309,7 +235233,12 @@
     "relatedTools": [
       "wikileaks",
       "wikileaks-search",
-      "leaked-cables"
+      "leaked-cables",
+      "akp-email-database",
+      "dnc-email-database",
+      "ice-patrol",
+      "macron-campaign-emails",
+      "sony-archives"
     ],
     "tags": [
       "wikileaks",
@@ -291871,35 +291800,49 @@
   {
     "id": "milled",
     "name": "Milled",
-    "description": "OSINT tool: Milled.",
+    "description": "Use when you have a brand/`employer-org` name and want its marketing-email history — returns archived promotional emails revealing campaigns, dates, and contact details.",
     "url": "https://milled.com/search",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A search engine for companies' marketing emails/newsletters — \"Google for promotional email\" across 100,000+ brands.",
+    "selectorsIn": [
+      "employer-org",
+      "email"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier covers recent emails (roughly last 30 days) and basic search; Milled Pro (~$99/mo) unlocks the full historical archive and advanced/boolean search and alerts.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a public archive of brand marketing emails — no individual is queried and no one is notified. Passive. Milled sees your searches/IP; use browser hygiene, but there is no target-side exposure.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "An established indie-run archive (since 2012) of brands' marketing emails; the emails are authentic captures, but it indexes company newsletters, not personal correspondence.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Milled.com"
+    ],
+    "tags": [
+      "email-search",
+      "marketing-emails"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/milled.md"
   },
   {
@@ -335595,42 +335538,52 @@
   {
     "id": "redditcommentsearch-com",
     "name": "redditcommentsearch.com",
-    "description": "getting a list of all comments by a Reddit user with a certain name",
+    "description": "Use when you have a Reddit `username` and want to keyword-filter that user's entire comment history — returns matching comments revealing location, employer, and habits.",
     "url": "http://redditcommentsearch.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching one Reddit user's comment history for a keyword (e.g. a city, employer, or name) to surface self-disclosures.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free single-purpose web tool; no account. Bounded by Reddit's API limits on how many comments it can pull.",
+    "opsec": "passive",
+    "opsecNote": "The tool queries Reddit's public API for already-public comments; the target is not notified. Passive. Use a sock-puppet browser out of habit, though you're only reading public content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small third-party utility over Reddit's public API; results are only as complete as Reddit exposes (recent comments, not deleted ones).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "reddit-comment-search",
+      "search-reddit-comments-by-user"
+    ],
+    "aliases": [
+      "Reddit Comment Search"
+    ],
     "tags": [
       "Social Media",
       "Reddit"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "reddit-comment-search",
-      "search-reddit-comments-by-user"
-    ],
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/redditcommentsearch-com.md"
   },
   {
@@ -338438,7 +338391,11 @@
       "instagram-explorer",
       "osint-combine-tiktok-quick-search",
       "osint-combine-reddit-post-analyzer",
-      "osintcombine-com"
+      "osintcombine-com",
+      "facebook-geo",
+      "osint-combine-blog",
+      "osint-combine-tools",
+      "osintcombine-com-2"
     ],
     "aliases": [
       "Snapchat Multi Viewer"
@@ -352623,7 +352580,15 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "get-text-from-video"
+      "get-text-from-video",
+      "efficientnetv2",
+      "hugging-face-ai-detector",
+      "huggingface-co",
+      "huggingface-co-4",
+      "instruct-pix2pix",
+      "kosmos-2",
+      "pix2pix-video",
+      "scene-edit-detection"
     ],
     "tags": [
       "Social Media",
@@ -359301,47 +359266,52 @@
   {
     "id": "check-any-vin-free",
     "name": "Check Any VIN Free",
-    "description": "OSINT tool: Check Any VIN Free.",
+    "description": "Use when you have a `vin` (or `vehicle-plate`) and want to decode the vehicle's make/model/year, specs, recalls, and history — returns a physical-description of the vehicle.",
     "url": "https://www.vehiclehistory.com/vehicle/land.php",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Free VIN decoding and basic vehicle-history lookup (specs, recalls, market value) on VehicleHistory.com.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "vin",
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "physical-description"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "VIN decode, specs, and recall info are free; deeper \"full history\" reports (title/accident) are upsold to paid providers. No owner PII on the free tier.",
+    "opsec": "passive",
+    "opsecNote": "You submit a VIN/plate to a commercial vehicle-data site; the vehicle owner is not notified. Passive. The site sees your query and IP — use a sock-puppet browser and don't submit anything that ties the lookup back to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial consumer vehicle-history site; decoded specs are reliable (VIN is a standard), but \"history\" depth and freshness vary and full reports route to paid partners.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "vehicle"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "check-any-vin",
       "free-license-plate-search-check-any-license-plate-free"
     ],
+    "aliases": [
+      "Check Any VIN",
+      "VehicleHistory VIN decoder"
+    ],
+    "tags": [
+      "vehicle"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/transportation/check-any-vin-free.md"
   },
   {

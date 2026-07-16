@@ -48,7 +48,7 @@ kind: group-index
 - **`cars-for-sale-in-the-uk-newsnow-classifieds`** (medium) — OSINT tool: Cars for sale in the UK - NewsNow Classifieds.
 - **`casa-aircraft-search-australia`** (medium) — Aviation-related website that offers a search of the Australian database of registered aviation owners
 - **`certified-aircraft-database`** (medium) — Aviation-related website database focusing on international aircraft registration prefixes, manufactuerers, disgnators and markings
-- **`check-any-vin-free`** (medium) — OSINT tool: Check Any VIN Free.
+- **`check-any-vin-free`** (medium) — Use when you have a `vin` (or `vehicle-plate`) and want to decode the vehicle's make/model/year, specs, recalls, and history — returns a phy
 - **`check-any-vin`** (medium) — OSINT tool: Check Any VIN.
 - **`check-if-a-vehicle-is-taxed-and-has-an-mot`** (medium) — OSINT tool: Check if a vehicle is taxed and has an MOT.
 - **`check-that-vin-search`** (medium) — OSINT tool: Check That (Vin Search).
