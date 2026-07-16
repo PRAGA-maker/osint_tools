@@ -12,7 +12,7 @@ kind: group-index
 - **`fediverse-mastodon/`** — 4 skill(s) below.
 - **`instagram/`** — 2 skill(s) below.
 - **`linkedin/`** — 4 skill(s) below.
-- **`other-social-networks/`** — 11 skill(s) below.
+- **`other-social-networks/`** — 10 skill(s) below.
 - **`reddit/`** — 4 skill(s) below.
 - **`search/`** — 4 skill(s) below.
 - **`steam-discord-and-gaming-networks/`** — 1 skill(s) below.
@@ -82,7 +82,7 @@ kind: group-index
 - **`bskyfollowfinder`** (medium) — A tool that identifies which Bluesky accounts are followed by a profile’s contacts but not by that profile. Can be used for expanding networ
 - **`bskythreadreader`** (medium) — BskyThreadReader is a web-based Bluesky thread viewer that allows anyone to read and share Bluesky threads without logging in.
 - **`bskyviewer-github-io`** (high) — Use when you have a Bluesky `username`/handle and want to view a profile, posts, and threads without an account — returns social-profile con
-- **`buffer`** (high) — OSINT tool: Buffer.
+- **`buffer`** (low) — Use when you have a `username`/handle and want to check for a public Buffer Start Page link-in-bio — returns linked social-profiles; otherwi
 - **`burrrd`** (medium) — OSINT tool: burrrd..
 - **`buzz-sumo`** (low) — Use when you have a topic, `domain`, or `name` and want to find their top content, who shared it, and connected authors/journalists — return
 - **`calialec-snap-map-private-api`** (medium) — OSINT tool: CaliAlec/snap-map-private-api.
@@ -182,8 +182,6 @@ kind: group-index
 - **`facebook-search-engine`** (high) — Use when you have a `name`/`username` or keyword and want to search public Facebook content via a prebuilt Google Custom Search Engine — ret
 - **`facebook-search-tool-2`** (high) — Use when you have a Facebook profile `username`/ID or a `name` and want to run advanced Graph-style queries (photos-of, photos-by, places, c
 - **`facebook-search-tool`** (high) — Use when you have two Facebook profiles and want to see who they know in common — returns the mutual-friends list, i.e. `associate` and `soc
-- **`facebook-search`** (high) — OSINT tool: Facebook Search.
-- **`facebook-video-downloader-online`** (high) — OSINT tool: Facebook Video Downloader Online.
 - **`facebook-video-downloader`** (high) — Use when you have a public Facebook video `url` (from a target's `social-profile`) and want to save the file for offline capture and analysi
 - **`facebook-watch`** (high) — Use when you have a `name`/`username` or page and want to find video content that person or page has posted or appears in on Facebook — retu
 - **`faceparty`** (medium) — Use when you have a `name` or `username` possibly tied to an older UK internet user and want to check for a legacy FaceParty profile — retur
@@ -421,7 +419,6 @@ kind: group-index
 - **`nairaland-com-2`** (high) — Use when you have a `username` or `name` and want to surface a person's posts, profile and self-disclosed details on Nairaland (Nigeria's la
 - **`nairaland-com`** (high) — Use when you have a `name`/`username` for a Nigerian subject and want their forum presence — returns a Nairaland profile, post history, self
 - **`namemc`** (high) — Use when you have a Minecraft `username` (or account UUID) and want its name-change history, skins, and profile — returns prior usernames an
-- **`netvibes`** (high) — OSINT tool: Netvibes.
 - **`network-tool`** (low) — OSINT tool: Network Tool.
 - **`newsletter-fullstackrecruiter-net`** (high) — OSINT tool: newsletter.fullstackrecruiter.net.
 - **`nicolasconstant-github-io`** (high) — Use when you have a Mastodon/Pleroma `username` or instance handle and want a multi-account desktop/web client to read and monitor fediverse

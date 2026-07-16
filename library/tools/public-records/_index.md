@@ -68,7 +68,7 @@ kind: group-index
 - **`ancestry-family-search-engine-united-kingdom`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database at the national country level
 - **`ar-college-university-2017-salaries`** (high) — Use when you have a `name` and want to confirm they worked at an Arkansas public college/university in 2017 — returns employer-org, job titl
 - **`arabbarometer`** (medium) — database of the results of sociological surveys conducted in the Arab countries of Africa and the Middle East in 2007-2018
-- **`architecture-com`** (high) — OSINT tool: architecture.com.
+- **`architecture-com`** (medium) — Use when you have a `name` and think the person is a UK architect — returns their RIBA chartered status, practice/employer-org, and professi
 - **`archived-moe`** (low) — OSINT tool: archived.moe.
 - **`archives-com`** (high) — Use when you have a `name` (plus rough birth/death year and country) and want historical/vital records — returns biographical detail, addres
 - **`archives-library-information-center-alic`** (high) — Use when you have a `name` and want authoritative pointers to US vital/genealogy records (birth, death, marriage) — returns links toward add
@@ -670,7 +670,6 @@ kind: group-index
 - **`narcotics-control-reports`** (medium) — US Department of State Narcotics Control Strategy Reports
 - **`nation-master`** (low) — OSINT tool: Nation Master.
 - **`national-archives-and-records`** (medium) — US National Archives and Records Administration site of searchable archived federal government documents
-- **`national-association-of-investigative-specialists`** (high) — Site offering numerous links for free search online, including public records and skip trace portals and links
 - **`national-business-register-united-kingdom`** (medium) — National business register that allows for search using business or company name
 - **`national-center-for-state-courts-united-states`** (medium) — Legal-related search engine for legal court cases and documents
 - **`national-company-registers`** (medium) — OSINT tool: National Company Registers.

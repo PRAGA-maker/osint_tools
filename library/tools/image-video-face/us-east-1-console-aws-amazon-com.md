@@ -33,6 +33,12 @@ registration: true
 invitationOnly: false
 relatedTools:
 - amazon-rekognition
+- amazon
+- amazon-com
+- amazon-pay
+- amazon-registry-search
+- amazon-sns
+- aws-public-datasets
 tags:
 - facialcomparison
 - face-matching

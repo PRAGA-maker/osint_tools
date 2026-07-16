@@ -142,7 +142,6 @@ kind: group-index
 - **`fotki-image-search`** (high) — Use when you have a `username`, `name` or keyword and want to find public photo galleries hosted on Fotki — returns image, social-profile.
 - **`fotki`** (high) — Use when you have a `username` and want to find a long-running photo-sharing profile and its galleries — returns a `social-profile` and the 
 - **`fotoforensics-com`** (high) — Use when you need a fast Error Level Analysis and metadata dump on a photo to check for editing — returns ELA heatmap, EXIF/JPEG metadata, a
-- **`fotolog`** (high) — Website related to social networking with photo galleries, photo posting and sharing services
 - **`foxmonitor`** (medium) — OSINT tool: FoxMonitor.
 - **`frame-by-frame`** (medium) — OSINT tool: Frame by Frame.
 - **`free-music-search`** (low) — Use when you need to search for and identify a song or music track by name/artist online — returns links to matching audio/sources; marginal
@@ -232,7 +231,7 @@ kind: group-index
 - **`kosmos-2`** (high) — Use when you have an `image` and want an AI description that names objects, text and landmarks in it (with bounding boxes) — returns `physic
 - **`labnol-org`** (high) — Use when you have an image (especially on mobile) and want to push it into Google/Bing/Yandex reverse image search in one place — returns li
 - **`landviewer`** (medium) — satellite observation imagery tool that allows for on-the-fly searching, processing and getting valuable insights from satellite data to tac
-- **`last-fm`** (high) — Website related to social networking, music, lyrics, and artists
+- **`last-fm`** (medium) — Use when you have a `username` (or suspect a music handle) and want the person's public listening profile — returns social-profile, real nam
 - **`league-of-legends`** (high) — Website related to social networking and players of the computer game League of Legends
 - **`lexica`** (medium) — Download the image to find thousands Stable Diffusion AI artworks that are as similar to it as possible. You can also search by description 
 - **`librivox`** (high) — Use when you have a `name`/`username` you suspect narrates public-domain audiobooks and want their reader profile, forum activity and voice 
@@ -325,7 +324,7 @@ kind: group-index
 - **`ragnarok-online`** (high) — Website related to social networking and players of the computer game Ragnarok Online
 - **`remini-ai-photo-enhancer`** (high) — Use when you have a low-resolution or blurry `image`/`face` and want an AI upscale/restoration to make features more legible for a human vie
 - **`remove-background`** (high) — Use when you have an `image`/`face` and want to isolate the subject or the background for cleaner analysis — returns a cut-out `image` (subj
-- **`remove-photos`** (high) — OSINT tool: remove.photos.
+- **`remove-photos`** (medium) — Use when you have an `image`/`face` photo that's cluttered, low-res, or old and want to clean it up for reverse-image search — returns a pro
 - **`replicate-com`** (high) — Use when you have a degraded/old `image` of a face and want it restored/enhanced for identification — runs Microsoft's photo-restoration mod
 - **`reverse-image-search-chrome-google-com`** (high) — Use when you have an `image` or `face` and want a fast right-click path to Google Images and TinEye reverse searches from any webpage — retu
 - **`reverse-image-search-dmtr-addons-mozilla-org`** (high) — Use when you have an image on a web page and want to reverse-search it fast — returns a right-click menu that sends the image to multiple se
@@ -371,7 +370,7 @@ kind: group-index
 - **`sogou`** (high) — Use when you have an `image`/`face` and want a Chinese-web reverse-image and image search that indexes content Google misses — returns match
 - **`soundcloud`** (high) — Use when you have a `username` or `name` and want to find a subject's audio/podcast presence — returns a `social-profile` with avatar `image
 - **`spiderpig`** (high) — Use when you have a target `domain`/website and want to spider it, download its documents and extract embedded metadata — returns metadata-e
-- **`spotify`** (high) — Website related to music, videos, and artists
+- **`spotify`** (low) — Use when you have a `username`/handle and want the person's public Spotify profile — returns social-profile, display name, avatar, and publi
 - **`ssstik-link`** (high) — Use when you have a TikTok `username`/`social-profile` and want the full-resolution profile picture — returns the original-size avatar image
 - **`star-wars-tor`** (high) — Website related to social networking and players of the computer game Star Wars The Old Republic
 - **`statigr-am`** (high) — OSINT tool: Statigr.am.
@@ -407,7 +406,6 @@ kind: group-index
 - **`twitter-com`** (high) — Use when you have a `name`, keyword, or event and want eyewitness photos/media posted to X — returns `social-profile`s of posters and `image
 - **`undetectable-ai`** (high) — Use when you have an `image`/`face` and want to know if it is AI-generated — returns an AI-vs-human verdict with a confidence score, useful 
 - **`unscreen-com`** (medium) — remove the background from an uploaded video
-- **`unsee-cc`** (high) — OSINT tool: unsee.cc.
 - **`us-east-1-console-aws-amazon-com`** (high) — Use when you have two `face` images and want a quantified similarity score to decide if they are the same person — returns a match confidenc
 - **`usespottr-com`** (high) — Use when you have a long `image`/video and want to find a person, vehicle plate or scene inside it — returns matched moments, incl. OCR'd pl
 - **`vaughnlivetv`** (high) — Use when you have a `username`/handle or need to browse live IRL/streaming video and want to find a person's live channel and on-camera appe

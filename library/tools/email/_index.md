@@ -96,7 +96,6 @@ kind: group-index
 - **`ghintel-secrets-ninja`** (high) — Use when you have a GitHub username/email and want to surface a developer's commit-derived emails, repos, and identity intel.
 - **`gist-github-com`** (medium) — Use as a reference list of known free/webmail and disposable email-provider domains to classify an address by provider type.
 - **`gitrecon`** (high) — Use when you have a GitHub/GitLab username and want to harvest the emails, names, and linked accounts exposed in that user's commit history.
-- **`gmail-security-alert`** (high) — Website that checks to see if your Gmail account was hacked
 - **`gmail`** (high) — Use as a pivot point — confirming a Gmail address exists, reading its raw headers, and feeding it into Google-account OSINT tools.
 - **`google-analyzeheader`** (high) — Use when you have raw email headers and want Google's own tool to parse the delivery path, hop delays, and authentication results.
 - **`google-com-51`** (medium) — Use as Google's account contact/recovery support entry point when a missing person's Google account is involved and you need a lawful channe

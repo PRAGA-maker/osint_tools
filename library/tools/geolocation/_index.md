@@ -278,7 +278,6 @@ kind: group-index
 - **`skydb`** (medium) — Worldwide database of skyscrapers and tall buildings.
 - **`skyfi-com-satellite-open-data`** (high) — Use when you need to find or order higher-resolution open and commercial satellite scenes for a specific area and date.
 - **`smappen`** (medium) — Online tool to calculate the distance a person can travel from a given point in a given time (on foot, by car, by bicycle, by train, by truc
-- **`snaptrends`** (high) — Location-based social media insight tool used to monitor, analyze, and visualize publicly available social media posts
 - **`soar`** (medium) — Use when you want to browse a community digital atlas of maps and imagery layers for an area, beyond standard basemaps.
 - **`sondehub`** (medium) — Worldwide map of radiosondes with detailed info (altitude, coordinates, frequency, manufacturer, sonde-type and much more)
 - **`spot`** (medium) — A natural language interface for querying the OpenStreetMap database to find locations which meet the search criteria described by the user.

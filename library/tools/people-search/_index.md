@@ -226,7 +226,7 @@ kind: group-index
 - **`seekout`** (medium) — OSINT tool: Seekout.
 - **`shesource`** (medium) — OSINT tool: SheSource.
 - **`simplyhired`** (medium) — OSINT tool: SimplyHired.
-- **`singlehire`** (high) — Tool for search contacts by full name, location and job title. Shows phones, emails, #Linkedin, #Facebook, #Twitter and other social media p
+- **`singlehire`** (high) — Use when you have a `name` (+ `employer-org`/`geolocation`) or a work `email`/`phone` and want the person's contact details — returns email,
 - **`skip-ease`** (high) — Use when you have a `name`/`phone`/`address` and want a curated launchpad of people-search and public-record tools — a directory linking to 
 - **`skopenow-com`** (high) — Use when you have a `name` (or email/phone) and want an automated OSINT dossier on a person — returns `address`, `phone`, `email`, `social-p
 - **`slavevoyages-org`** (high) — Use when you have a historical `name` connected to the Atlantic slave trade (enslaved person or enslaver) and want biographical/voyage recor

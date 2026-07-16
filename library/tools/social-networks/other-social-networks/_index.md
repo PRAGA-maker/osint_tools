@@ -10,7 +10,6 @@ kind: group-index
 - **`ask-fm`** (high) — Use when you have an `username` and want to check for an ASKfm profile — returns the public Q&A history, likes and follower links that often
 - **`blackplanet-com-member-find`** (high) — Use when you have a `username` or `name` and want to find a profile on BlackPlanet, a large African-American social network — returns a `soc
 - **`delicious`** (high) — Use when you have a `username` and want that person's public social-bookmarking profile and saved links to infer interests and other handles
-- **`migente-latino`** (high) — Searching archived MiGente profiles
 - **`myspace`** (high) — Use when you have a `name` or `username` (often music/2000s-era) and want an old Myspace profile — returns `social-profile`, photos and soci
 - **`odnoklassniki`** (high) — Use when you have a `name`, `username` or `phone` for a Russian/CIS subject and want their social profile, photos and connections — returns 
 - **`orkut-brazil`** (high) — Use when you have a `username`/`name` for a subject active before 2014 and want their old Orkut profile via web archives — returns social-pr

@@ -102019,55 +102019,6 @@
     "_file": "library/tools/email/gmail.md"
   },
   {
-    "id": "gmail-security-alert",
-    "name": "Gmail Security Alert",
-    "description": "Website that checks to see if your Gmail account was hacked",
-    "url": "http://securityalert.knowem.com",
-    "category": "email",
-    "path": [
-      "email"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "email"
-    ],
-    "selectorsOut": [
-      "email",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "email-addresses"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "knowem",
-      "knowem-username-search"
-    ],
-    "_file": "library/tools/email/gmail-security-alert.md"
-  },
-  {
     "id": "google-analyzeheader",
     "name": "Google AnalyzeHeader",
     "description": "Use when you have raw email headers and want Google's own tool to parse the delivery path, hop delays, and authentication results.",
@@ -129750,52 +129701,6 @@
     "_file": "library/tools/geolocation/smappen.md"
   },
   {
-    "id": "snaptrends",
-    "name": "Snaptrends",
-    "description": "Location-based social media insight tool used to monitor, analyze, and visualize publicly available social media posts",
-    "url": "http://snaptrends.com",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "geo-location-mapping-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/snaptrends.md"
-  },
-  {
     "id": "soar",
     "name": "SOAR",
     "description": "Use when you want to browse a community digital atlas of maps and imagery layers for an area, beyond standard basemaps.",
@@ -141077,52 +140982,6 @@
     "_file": "library/tools/image-video-face/fotoforensics-com.md"
   },
   {
-    "id": "fotolog",
-    "name": "Fotolog",
-    "description": "Website related to social networking with photo galleries, photo posting and sharing services",
-    "url": "http://www.fotolog.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/fotolog.md"
-  },
-  {
     "id": "foxmonitor",
     "name": "FoxMonitor",
     "description": "OSINT tool: FoxMonitor.",
@@ -146668,47 +146527,53 @@
   {
     "id": "last-fm",
     "name": "Last.fm",
-    "description": "Website related to social networking, music, lyrics, and artists",
+    "description": "Use when you have a `username` (or suspect a music handle) and want the person's public listening profile — returns social-profile, real name, location, and associates.",
     "url": "http://www.last.fm",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a reused music-scrobbling `username` into a public profile with real name, country, join date, and a friends list.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "image",
-      "social-profile"
+      "social-profile",
+      "name",
+      "geolocation",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to view any public profile; a paid Pro tier adds personal stats but is irrelevant to looking up someone else.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing a public profile at last.fm/user/<handle> is a normal unauthenticated pageview — the target is not notified. Don't log in with a personal account or \"friend\"/message the target, which would leave a trace.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "Long-running music social network (CBS/Viagogo-owned); profile data is self-reported by the user, so names/locations are as reliable as what the person chose to publish.",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "last.fm",
+      "lastfm"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
+      "social-networks",
+      "username-pivot",
+      "music"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/last-fm.md"
   },
   {
@@ -152070,44 +151935,50 @@
   {
     "id": "remove-photos",
     "name": "remove.photos",
-    "description": "OSINT tool: remove.photos.",
+    "description": "Use when you have an `image`/`face` photo that's cluttered, low-res, or old and want to clean it up for reverse-image search — returns a processed image.",
     "url": "https://remove.photos/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Prepping a subject photo (background removal, upscale, cleanup, colorize) before running it through face/reverse-image search.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Core tools (background removal, cleanup, basic upscale) are free to try in-browser; higher-resolution export and batch/HD output are paid.",
+    "opsec": "active",
+    "opsecNote": "Processing uploads the subject's photo to a third-party server (Photoroom/ML backend). Do not upload sensitive imagery you wouldn't want retained; strip identifying context first and assume the file may be stored.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Commercial AI image-editing service; reliable as a utility but not an OSINT data source — it transforms images, it doesn't identify people.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "remove.photos",
+      "removephotos"
+    ],
     "tags": [
       "photosites",
-      "Photo Related Sites"
+      "Photo Related Sites",
+      "image-prep"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/remove-photos.md"
   },
   {
@@ -154818,47 +154689,53 @@
   {
     "id": "spotify",
     "name": "Spotify",
-    "description": "Website related to music, videos, and artists",
+    "description": "Use when you have a `username`/handle and want the person's public Spotify profile — returns social-profile, display name, avatar, and public playlists/followers.",
     "url": "https://play.spotify.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a reused handle maps to a Spotify account and reading its public display name, avatar, playlists, and follow graph.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
+      "social-profile",
+      "name",
       "image",
-      "social-profile"
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Viewing public profiles and playlists is free; the paid Premium tier is for listening, not lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Opening open.spotify.com/user/<id> in a browser is an ordinary pageview; the target isn't notified. Avoid logging in with a personal account or following the target, which would surface you in their follower list.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
+    "trust": "community",
+    "trustNote": "First-party Spotify pages; the account is real but display names/avatars are user-set and playlists reveal only what the user made public.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "open.spotify.com",
+      "Spotify profile"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
+      "social-networks",
+      "username-pivot",
+      "music"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/spotify.md"
   },
   {
@@ -156858,49 +156735,6 @@
     "_file": "library/tools/image-video-face/unscreen-com.md"
   },
   {
-    "id": "unsee-cc",
-    "name": "unsee.cc",
-    "description": "OSINT tool: unsee.cc.",
-    "url": "https://unsee.cc/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "photosites",
-      "Photo Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/unsee-cc.md"
-  },
-  {
     "id": "us-east-1-console-aws-amazon-com",
     "name": "AWS Rekognition Face Comparison (console)",
     "description": "Use when you have two `face` images and want a quantified similarity score to decide if they are the same person — returns a match confidence plus per-face bounding boxes (face selector).",
@@ -156939,7 +156773,13 @@
     "registration": true,
     "invitationOnly": false,
     "relatedTools": [
-      "amazon-rekognition"
+      "amazon-rekognition",
+      "amazon",
+      "amazon-com",
+      "amazon-pay",
+      "amazon-registry-search",
+      "amazon-sns",
+      "aws-public-datasets"
     ],
     "tags": [
       "facialcomparison",
@@ -210423,51 +210263,61 @@
   },
   {
     "id": "singlehire",
-    "name": "SingleHire",
-    "description": "Tool for search contacts by full name, location and job title. Shows phones, emails, #Linkedin, #Facebook, #Twitter and other social media profile",
+    "name": "SignalHire",
+    "description": "Use when you have a `name` (+ `employer-org`/`geolocation`) or a work `email`/`phone` and want the person's contact details — returns email, phone, and linked social-profiles.",
     "url": "https://www.signalhire.com/candidates/47dc037faace4abeb0727d6f4d0f3079",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a name + employer/title into direct email, phone, and social-profile links via a recruiter-grade contact database.",
     "selectorsIn": [
-      "email",
-      "face",
-      "geolocation",
-      "image",
       "name",
+      "employer-org",
+      "email",
       "phone"
     ],
     "selectorsOut": [
-      "address",
       "email",
-      "geolocation",
+      "phone",
+      "social-profile",
       "name",
-      "phone"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free plan gives ~5 contact reveals/month after signup; paid plans buy more credits and API access. No unlimited free tier.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit SignalHire's own aggregated database, not the target's infrastructure, so the subject is not alerted. But you must register and (for the extension) log in, so SignalHire knows your identity — use a dedicated research account, never a personal one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "rate-limit"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Commercial recruiting-data vendor; records are aggregated/scraped from the public web plus user contributions, so accuracy varies and entries can be stale.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "SignalHire",
+      "signalhire.com"
+    ],
     "tags": [
-      "Universal Contact Search and Leaks Search"
+      "Universal Contact Search and Leaks Search",
+      "people-search",
+      "contact-enrichment"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/people-search/singlehire.md"
   },
   {
@@ -222715,47 +222565,53 @@
   },
   {
     "id": "architecture-com",
-    "name": "architecture.com",
-    "description": "OSINT tool: architecture.com.",
+    "name": "architecture.com (RIBA Members Directory)",
+    "description": "Use when you have a `name` and think the person is a UK architect — returns their RIBA chartered status, practice/employer-org, and professional location.",
     "url": "https://members.architecture.com/directory/default.asp?dir=3",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming and locating a UK Chartered architect by surname via the official RIBA members directory.",
     "selectorsIn": [
       "name",
-      "address",
-      "employer-org"
+      "geolocation"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory of consenting RIBA Chartered Members; no account or payment required.",
+    "opsec": "passive",
+    "opsecNote": "A first-party professional-registry lookup; searching by surname raises no notice to the individual. No login needed, so the query is anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the Royal Institute of British Architects (RIBA); an authoritative membership register, though it lists only ~28,000 members who consented to appear.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RIBA Members Directory",
+      "architecture.com directory"
+    ],
     "tags": [
       "professionlicensing",
-      "Profession & Licensing Sites"
+      "Profession & Licensing Sites",
+      "professional-register"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/architecture-com.md"
   },
   {
@@ -252929,52 +252785,6 @@
       "archives-library-information-center-alic"
     ],
     "_file": "library/tools/public-records/national-archives-and-records.md"
-  },
-  {
-    "id": "national-association-of-investigative-specialists",
-    "name": "National Association of Investigative Specialists",
-    "description": "Site offering numerous links for free search online, including public records and skip trace portals and links",
-    "url": "http://www.pimall.com/nais/links.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/national-association-of-investigative-specialists.md"
   },
   {
     "id": "national-business-register-united-kingdom",
@@ -300794,25 +300604,35 @@
   {
     "id": "osint-combine-tools",
     "name": "OSINT Combine Tools",
-    "description": "OSINT Combine's free tools (NexusXplore vendor) incl. social and language utilities.",
+    "description": "Use when you have a `username`, `geolocation`, or social handle and want a vetted free toolset to expand it — returns social-profiles, geo leads, and username hits.",
     "url": "https://www.osintcombine.com/tools",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Free single-purpose tools from a commercial OSINT vendor",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A curated hub of free, single-purpose browser tools (username enumeration, social geo, TikTok/Instagram search) from a reputable OSINT vendor.",
+    "selectorsIn": [
+      "username",
+      "geolocation",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The listed tools are free to use in-browser; OSINT Combine's flagship NexusXplore platform and training are paid, but nothing on this tools page requires payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Most tools are client-side query builders or link launchers that hand you off to the target platform (TikTok, Instagram, etc.) — so the platform, not OSINT Combine, sees the eventual request. Run the actual lookups from a sock-puppet browser/session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "trusted",
-    "trustNote": "OSINT Combine is a reputable commercial OSINT training/tooling company.",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "OSINT Combine is a well-known commercial OSINT training/tooling company; these are its own maintained free utilities.",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "global"
     ],
@@ -300820,15 +300640,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "OSINT Combine free tools",
+      "osintcombine.com/tools"
+    ],
     "tags": [
       "tool-collection",
       "social-networks",
       "language"
     ],
     "source": "ultimate-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "facebook-geo",
       "instagram-explorer",
@@ -318377,37 +318200,49 @@
   {
     "id": "buffer",
     "name": "Buffer",
-    "description": "OSINT tool: Buffer.",
+    "description": "Use when you have a `username`/handle and want to check for a public Buffer Start Page link-in-bio — returns linked social-profiles; otherwise low OSINT value.",
     "url": "https://buffer.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Checking whether a handle has a public Buffer \"Start Page\" link-in-bio that aggregates the person's other social profiles.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free-forever tier (no card needed) for the publishing product and Start Page; paid plans add channels/analytics. None of it is needed to *view* a public Start Page.",
+    "opsec": "passive",
+    "opsecNote": "Viewing someone's public Start Page is an anonymous pageview. Buffer is primarily a publishing/scheduling tool, not a lookup service — you cannot search Buffer for a person, so there's little to leak.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
+    "trustNote": "Established, reputable social-media management company; included here for its public link-in-bio surface, not as an investigative database.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "buffer.com",
+      "Buffer Start Page"
+    ],
     "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
+      "real-time-search-social-media-search-and-general-social-media-tools",
+      "link-in-bio"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/buffer.md"
   },
   {
@@ -323172,46 +323007,6 @@
     "_file": "library/tools/social-networks/facebook-scraped-data-search.md"
   },
   {
-    "id": "facebook-search",
-    "name": "Facebook Search",
-    "description": "OSINT tool: Facebook Search.",
-    "url": "http://search.fb.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "about-fb-com",
-      "facebook-newsroom"
-    ],
-    "_file": "library/tools/social-networks/facebook-search.md"
-  },
-  {
     "id": "facebook-search-2",
     "name": "Facebook Search (SowSearch)",
     "description": "Use when you have a `name`, `employer-org`, school or city and want to run structured people/post/photo searches on Facebook after Graph Search was killed — returns `social-profile` links and public posts.",
@@ -323518,49 +323313,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/social-networks/facebook-video-downloader.md"
-  },
-  {
-    "id": "facebook-video-downloader-online",
-    "name": "Facebook Video Downloader Online",
-    "description": "OSINT tool: Facebook Video Downloader Online.",
-    "url": "https://www.fbdown.net/index.php",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "facebook"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/facebook-video-downloader-online.md"
   },
   {
     "id": "facebook-watch",
@@ -335120,48 +334872,6 @@
     "_file": "library/tools/social-networks/mewe.md"
   },
   {
-    "id": "migente-latino",
-    "name": "MiGente (Latino)",
-    "description": "Searching archived MiGente profiles",
-    "url": "https://migente.com/wp-login.php?redirect_to=https%3A%2F%2Fmigente.com%2Fuser_search%2Findex.html&bp-auth=1&action=bpnoaccess",
-    "category": "social-networks",
-    "path": [
-      "social-networks",
-      "other-social-networks"
-    ],
-    "bestFor": "Searching archived MiGente profiles",
-    "input": "Username or email search",
-    "output": "User profiles, photos, and social data from the MiGente platform",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Limited public access; some content requires authentication to view.",
-    "humanInLoop": true,
-    "humanInLoopReason": [
-      "account-login"
-    ],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "account",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/other-social-networks/migente-latino.md"
-  },
-  {
     "id": "minesight",
     "name": "MineSight",
     "description": "Minecraft #osint tool. By nickname, it checks the presence of users on different servers and collects information about them (date of registration, links to social networks, history of nickname changes, etc.).",
@@ -336144,42 +335854,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/namemc.md"
-  },
-  {
-    "id": "netvibes",
-    "name": "Netvibes",
-    "description": "OSINT tool: Netvibes.",
-    "url": "http://www.netvibes.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/netvibes.md"
   },
   {
     "id": "network-tool",
@@ -372695,29 +372369,36 @@
   {
     "id": "vessel-finder",
     "name": "Vessel Finder",
-    "description": "Worldwide ship tracking and port-call timeline analysis",
+    "description": "Use when you have a vessel `name`/IMO/MMSI or a sea `geolocation` and want the ship's live position, route history, and operator — returns geolocation and employer-org.",
     "url": "https://www.vesselfinder.com/",
     "category": "transportation",
     "path": [
       "transportation",
       "marine-records"
     ],
-    "bestFor": "Worldwide ship tracking and port-call timeline analysis",
-    "input": "Vessel name, IMO, MMSI, or geographic area",
-    "output": "Live vessel tracks, destination status, and historical route context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Locating a named vessel on a live AIS map and reading its recent port-call timeline, flag, and managing company.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier gives delayed/near-real-time positions, vessel search, and recent track; live real-time AIS and full historical routes are paid.",
     "opsec": "passive",
-    "opsecNote": "Passive maritime telemetry consumption through aggregated AIS feeds.",
+    "opsecNote": "You consume aggregated terrestrial/satellite AIS feeds; nothing is sent to the vessel or its crew. No account is needed to search and view, so the lookup is anonymous — but a paid/logged-in session ties queries to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Reputable commercial AIS aggregator; positions are only as good/timely as AIS coverage in the area and are delayed on the free tier.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -372725,11 +372406,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "VesselFinder",
+      "vesselfinder.com"
+    ],
+    "tags": [
+      "marine-records",
+      "ship-tracking",
+      "ais"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/transportation/marine-records/vessel-finder.md"
   },
   {

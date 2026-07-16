@@ -603,7 +603,7 @@ kind: group-index
 - **`osint-blogs-search-engine`** (low) — OSINT tool: OSINT Blogs Search Engine.
 - **`osint-bookmark`** (low) — Curated collection of investigation tools for company research, scanning, DNS, and Whois.
 - **`osint-cheat-sheet`** (medium) — OSINT cheat sheet listing tools, wikis, datasets, articles and books.
-- **`osint-combine-tools`** (medium) — OSINT Combine's free tools (NexusXplore vendor) incl. social and language utilities.
+- **`osint-combine-tools`** (high) — Use when you have a `username`, `geolocation`, or social handle and want a vetted free toolset to expand it — returns social-profiles, geo l
 - **`osint-encyclopedia-optiv-cham423`** (medium) — Optiv-published GitHub encyclopedia of OSINT resources and techniques.
 - **`osint-framework-2`** (high) — Use when you have any selector and want to discover which tools exist for it — a navigable directory tree that maps a data type (username, e
 - **`osint-framework-3`** (high) — Use when you have a selector type (`email`, `username`, `phone`, etc.) but not the right tool — returns a categorized directory tree pointin
