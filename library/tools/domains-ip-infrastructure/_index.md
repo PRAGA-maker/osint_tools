@@ -335,7 +335,7 @@ kind: group-index
 - **`moz-link-explorer`** (low) — Analyse the links of any website.
 - **`mx-toolbox-blacklist-check`** (medium) — Search tool that identifies if an IP address is on an anti-spam blacklist
 - **`mx-toolbox-email-header-analyzer`** (medium) — Process for identifying an IP address from an email header
-- **`mx-toolbox-reverse-ip-search`** (medium) — Search tool that helps identify the IP address soomeone else is using
+- **`mx-toolbox-reverse-ip-search`** (low) — Use when you have an `ip-address` and want its reverse-DNS (PTR) hostname to map it to a domain/host — returns domain and hosting leads.
 - **`mx-toolbox-whois-lookup`** (medium) — WHOIS and domain name lookup
 - **`mxtoolbox-com`** (medium) — OSINT tool: mxtoolbox.com.
 - **`my-global-ip`** (medium) — Search tool that identifies the IP address you are currently using

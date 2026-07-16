@@ -180,7 +180,7 @@ kind: group-index
 - **`country-of-grey-canada`** (medium) — County of Grey site offering Provincial Offences Act resources
 - **`credit-guru`** (medium) — Listing of credit agencies around the world
 - **`criminology-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
-- **`crossref`** (medium) — OSINT tool: Crossref.
+- **`crossref`** (medium) — Use when you have a person's `name` (or a DOI/title) and want their scholarly publications, co-authors and affiliations — returns employer-o
 - **`crown-prosecution-service-uk`** (medium) — UK's Crown Prosecution Service portal with resources for victims and witnesses
 - **`crt-certificate-search`** (medium) — OSINT tool: CRT Certificate Search.
 - **`cse-utopia`** (medium) — Custom search engine
@@ -228,7 +228,7 @@ kind: group-index
 - **`duckduckgo-bangs`** (low) — extension that add DuckDuckGo bang buttons to search results and search links in the context menu
 - **`duckduckgo-com`** (high) — Use when you have a `name`, `username` or any string and want unpersonalised search results and !bang shortcuts to pivot fast — returns `soc
 - **`ecosia-search-engine`** (medium) — Privacy-friendly search engine that donates 80% of their profit to nonprofit organizations to help plant trees; does not sell data to third 
-- **`ecosia`** (medium) — OSINT tool: Ecosia.
+- **`ecosia`** (low) — Use when you want an alternative general web search index (Bing-backed) to cross-check a `name`, `username` or `email` against Google — retu
 - **`ecured-cuba`** (low) — Use when you have a Cuban `name`/place/`employer-org` and want a Spanish-language encyclopedic profile — returns biographical, organizationa
 - **`eddy-the-eco-dog-kidswebtv`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, entertainment for children
 - **`egerin-search-engine-kurdish`** (medium) — Kurdish surface web search engine covering regional results

@@ -936,7 +936,7 @@ kind: group-index
 - **`south-dakota`** (high) — Use when you have a `name` and want to confirm someone is/was in South Dakota state custody — returns offender records with DOB, ID number, 
 - **`spain`** (high) — Use when you have a Spanish company `name`, director `name` or `address` and want official mercantile-registry records — returns employer-or
 - **`spotlight-com`** (high) — Use when you have a `name` for someone in the UK entertainment industry and want to find their professional profile or the agents/services a
-- **`spyfu`** (medium) — OSINT tool: SpyFu.
+- **`spyfu`** (low) — Use when you have a `domain` and want its SEO/PPC footprint — keywords, ad history and competitors — to profile the business behind a site; 
 - **`sra-org-uk`** (medium) — Use when you have a `name` or firm and want to verify a solicitor in England & Wales — returns regulatory status, practising history and fir
 - **`st-louis-county-salaries-fiscal-2020`** (medium) — OSINT tool: St. Louis County salaries fiscal 2020.
 - **`startup-tracker`** (medium) — OSINT tool: Startup Tracker.
@@ -1091,7 +1091,7 @@ kind: group-index
 - **`youcontrol`** (medium) — OSINT tool: YouControl.
 - **`zendy-io`** (medium) — Discover academic journals, articles, & books on one seamless platform. Search keyword, authors, titles ISBN, ISSN etc
 - **`zillow-canada`** (medium) — OSINT tool: Zillow Canada.
-- **`zillow`** (medium) — OSINT tool: Zillow.
+- **`zillow`** (medium) — Use when you have a US `address` and want property details, sale/price history and interior photos — returns geolocation, physical-descripti
 - **`zoominfo`** (medium) — Business to business company contact information
 - **`zoopla`** (medium) — OSINT tool: Zoopla.
 

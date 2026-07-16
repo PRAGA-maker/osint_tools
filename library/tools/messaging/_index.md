@@ -63,7 +63,7 @@ kind: group-index
 - **`fediverse-explorer`** (medium) — Search Mastodon users by interests
 - **`find-telegram-channels-bots-groups`** (medium) — OSINT tool: Find Telegram Channels/Bots/Groups.
 - **`findstickercreator`** (medium) — Use when you have a Telegram sticker pack (or a `social-profile` that shared one) and want to de-anonymise its creator — returns the creator
-- **`followgraph-for-mastodon`** (medium) — Enter any #Mastodon Handle and get a list of accounts followed by the people this profile follows. It helps to find connections between peop
+- **`followgraph-for-mastodon`** (medium) — Use when you have a Mastodon `username`/handle and want the accounts followed by the people they follow — returns associate and social-profi
 - **`geogramint`** (high) — Use when you have a `geolocation` (coordinates) and want to enumerate Telegram users/groups who have shared their location nearby — returns 
 - **`geomacfinder`** (high) — Use when you have a Wi-Fi access point `mac-address` (BSSID) and want its physical location via a Telegram bot — returns an approximate `geo
 - **`getairplane`** (medium) — Use when you have a `phone` and want to check for associated airline-booking / flight-history records — returns name and geolocation (route)
@@ -195,7 +195,7 @@ kind: group-index
 - **`waybien-com`** (medium) — Use when you have a topic, name, or handle and want public groups/channels a subject may belong to across Telegram, WhatsApp, Discord, Signa
 - **`web-botim-me`** (high) — Use when you have a `phone` number likely used in the UAE/Gulf and want to check whether it's on BOTIM and pull the profile photo/name — a p
 - **`wechat-com`** (high) — Use when you have a `phone` or WeChat ID (`username`) and want to confirm it maps to a WeChat account and view its public profile — returns 
-- **`what-goes-on-mastodon`** (medium) — Interactive real time visualisation which shows the number of new users and posts on Mastodon Instances in the last 6 hours, 24 hours, 72 ho
+- **`what-goes-on-mastodon`** (low) — Use when you want to gauge which Mastodon instances are most active before searching them for a subject — returns instance/domain leads, not
 - **`whatsanalyze-com`** (medium) — analyzes #WhatsApp group message statistics (world cloud, timeline, message frequency)
 - **`whatsapp-checkleaked`** (high) — Use when you have a `phone` number and want to confirm it's on WhatsApp and view its public profile photo and About — returns social-profile
 - **`whatsapp-tools-of-all-kind`** (medium) — OSINT tool: WhatsApp tools of all kind.

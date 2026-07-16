@@ -233,7 +233,7 @@ kind: group-index
 - **`github-stars-githubstars-com`** (low) — Showcase of popular GitHub repositories.
 - **`github-trending-archives`** (medium) — Github trending archive for a specific date.
 - **`github-trending-rss`** (low) — RSS feed of trending GitHub repositories.
-- **`githubcompare`** (medium) — When searching for OSINT tools on #Github, you will often come across several repositories with the same name. This service will help to vis
+- **`githubcompare`** (low) — Use when you have two or more GitHub repositories with the same or similar name and want to compare their stars, forks, age and activity — r
 - **`githubrecon`** (medium) — OSINT tool: GithubRecon.
 - **`githut`** (low) — GitHub statistics and programming language visualizations.
 - **`gitleak`** (medium) — OSINT tool: GitLeak.
@@ -505,7 +505,7 @@ kind: group-index
 - **`redditp-reddtip`** (low) — Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).
 - **`redditsave-com`** (medium) — Reddit video downloader
 - **`redditsearch-io`** (medium) — Reddit search tool
-- **`redditsfinder`** (medium) — OSINT tool: redditsfinder.
+- **`redditsfinder`** (medium) — Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile
 - **`redditvids`** (low) — Watch videos posted on Reddit.
 - **`reddloader-com`** (medium) — Reddit video downloader
 - **`redective`** (medium) — OSINT tool: Redective.
@@ -558,7 +558,6 @@ kind: group-index
 - **`sn0int-framework-module-for-pornhub`** (medium) — OSINT tool: Sn0int framework module for Pornhub.
 - **`snap-map`** (medium) — OSINT tool: Snap Map.
 - **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
-- **`snapbird`** (medium) — OSINT tool: SnapBird.
 - **`snapchat-multi-viewer-osint-combine`** (medium) — Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile
 - **`snapchat-search-enter-username-here`** (medium) — OSINT tool: SnapChat Search (ENTER-USERNAME-HERE).
 - **`snapchat-user-search`** (medium) — OSINT tool: Snapchat User Search.
@@ -713,9 +712,9 @@ kind: group-index
 - **`twitch-followage-tool`** (medium) — Enter the Twitch username and get a complete list of channels he/she follows (with start dates)
 - **`twitch-following`** (low) — OSINT tool: Twitch Following.
 - **`twitch-insights`** (medium) — Account stats; Game ranking; Extensions stats; List of all Twitch bot; Check user status by nickname or ID; List of Twitch team (history bef
-- **`twitch-overlap`** (medium) — shows the viewer and audience overlap stats between different channels on Twitch. Currently tracks all channels over 1000 concurrent viewers
+- **`twitch-overlap`** (low) — Use when you have a Twitch channel `username` and want to see which other channels share its audience — returns associate/community links to
 - **`twitch-payout-search`** (low) — OSINT tool: Twitch Payout Search.
-- **`twitch-recover`** (medium) — Twitch VOD tool which recovers all VODs including those that are sub only or deleted.
+- **`twitch-recover`** (medium) — Use when you have a Twitch channel `username` (or stream ID/timestamp) and want to recover deleted, sub-only or unlisted VODs, clips and str
 - **`twitch-stream-filter`** (medium) — Search streams and filter results by title, game, language, number of viewers.
 - **`twitch-tools-lolarchiver-com`** (high) — Use when you have a Twitch `username` and want its historical name changes and account history — returns prior usernames and profile leads, 
 - **`twitch-tools-rootonline-de`** (high) — Use when you have a Twitch `username` and want to enumerate its followers — returns the follower list with follow dates and account-age filt
