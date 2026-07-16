@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- zscaler-zulu-url-risk-analyzer
 ---
 
 # Zscaler Global Threat Map Dashboard

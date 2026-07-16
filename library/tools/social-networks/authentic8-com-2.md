@@ -39,6 +39,9 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-15'
 enrichment: full
+relatedTools:
+- authentic8-com
+- authentic8-com-3
 ---
 
 # authentic8.com

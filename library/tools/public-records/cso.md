@@ -40,6 +40,11 @@ tags:
 source: metaosint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- clicklaw
+- search-for-open-information-documents
+- search-the-open-information-catalogue
+- security-licence-status-verification
 ---
 
 # CSO

@@ -42,6 +42,8 @@ tags:
 source: gh-topic-osint-resources
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- awesome-browser-extensions-for-osint
 ---
 
 # Social-Media-OSINT-Tools-Collection

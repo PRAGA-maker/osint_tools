@@ -28,7 +28,8 @@ auth: none
 api: false
 localInstall: true
 registration: false
-relatedTools: []
+relatedTools:
+- voidaccess
 aliases: []
 tags:
 - email-search-email-check

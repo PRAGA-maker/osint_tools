@@ -33,6 +33,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- facebook-search-tool-2
+- netbootcamp-s-people-tool
 ---
 
 # netbootcamp.org/websitetool.html

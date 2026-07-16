@@ -29,6 +29,7 @@ localInstall: false
 registration: false
 relatedTools:
 - anonymailer-net
+- anonymouse-web-proxy
 aliases:
 - AnonEmail
 - Anonymouse

@@ -32,6 +32,9 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- fleetmon
+- fleetmon-vessel-search
 ---
 
 # Live vessel tracking and monitoring with FleetMon Explorer

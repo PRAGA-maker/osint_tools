@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- vancouver-sun-news
 ---
 
 # Vancouver Sun Opinions

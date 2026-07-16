@@ -35,6 +35,10 @@ registration: false
 relatedTools:
 - gro-gov-uk
 - scotlandspeople-gov-uk-2
+- gov-im
+- gov-im-3
+- gov-im-4
+- gov-im-5
 aliases:
 - Isle of Man BDM
 - gov.im certificates

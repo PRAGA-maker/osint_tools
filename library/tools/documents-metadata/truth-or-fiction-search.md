@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- truth-or-fiction
 ---
 
 # Truth Or Fiction Search

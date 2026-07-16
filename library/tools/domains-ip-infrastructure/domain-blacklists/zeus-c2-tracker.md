@@ -29,7 +29,12 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- abusech
+- malwarebazaar
+- urlhaus
+- yaraif
+- zeus-tracker
 aliases: []
 tags: []
 source: arf-seed

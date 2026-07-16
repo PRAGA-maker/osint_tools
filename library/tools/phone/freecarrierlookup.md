@@ -38,6 +38,9 @@ tags:
 source: awesome-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- carrier-lookup-2
+- free-carrier-lookup
 ---
 
 # FreeCarrierLookup

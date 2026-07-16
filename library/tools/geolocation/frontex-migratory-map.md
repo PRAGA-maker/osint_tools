@@ -33,6 +33,17 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- e-justice-europa-eu
+- eu-consolidated-corporate-registers
+- eu-sanctions-tool
+- europa-eu
+- europa-press-releases
+- european-commission-home-affairs
+- european-union-open-data-portal
+- eurostat
+- inspire-geoportal
+- vat-number-validation
 ---
 
 # Frontex Migratory Map

@@ -36,6 +36,7 @@ invitationOnly: false
 relatedTools:
 - account-live-com
 - protonmail
+- snapintel
 aliases:
 - NeutrOSINT
 - Proton Mail OSINT

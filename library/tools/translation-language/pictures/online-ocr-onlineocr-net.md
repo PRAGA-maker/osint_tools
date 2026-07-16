@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- online-ocr
+- online-ocr-converter
 aliases: []
 tags: []
 source: arf-seed

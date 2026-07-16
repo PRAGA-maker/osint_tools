@@ -35,6 +35,17 @@ registration: false
 relatedTools:
 - social-analyzer
 - whatsmyname-web
+- 1c-database-converter
+- awesome-osint-mcp-servers
+- counter-osint-guide-for-russians
+- fravia-soxoj
+- gitcolombo
+- maigret
+- mailto-analyzer
+- marple
+- osint-namecheckers-list
+- socid-extractor
+- username-generation-guide
 aliases:
 - socid_extractor
 - soxoj socid_extractor

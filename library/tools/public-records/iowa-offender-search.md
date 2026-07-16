@@ -34,6 +34,7 @@ invitationOnly: false
 relatedTools:
 - ohio
 - california
+- iowa-registered-voter-verification
 aliases:
 - Iowa DOC Offender Search
 - Iowa inmate search

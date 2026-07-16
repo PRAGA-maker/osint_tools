@@ -33,6 +33,9 @@ relatedTools:
 - whatsmyname
 - sherlock
 - namechk
+- forensic-osint
+- forensic-osint-kb-guides
+- forensicosint-com
 aliases:
 - ForensicOSINT username search
 - Forensic OSINT WhatsMyName

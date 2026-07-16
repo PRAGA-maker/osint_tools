@@ -1,6 +1,6 @@
 ---
 id: montana
-name: "Montana Correctional Offender Network (ConWeb)"
+name: Montana Correctional Offender Network (ConWeb)
 description: Use when you have a `name` (or DOC ID) and want to check Montana state incarceration/supervision records — returns offender status, facility/location and a Department of Corrections `document-id`.
 url: https://app.mt.gov/conweb
 category: public-records
@@ -33,7 +33,8 @@ api: false
 localInstall: false
 registration: false
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- montana-registered-voter-verification
 aliases:
 - ConWeb
 - Montana offender search

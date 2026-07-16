@@ -35,6 +35,9 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- rand-terrorism-research
+- terrorism-incidents-database
 ---
 
 # Reveal Image Verification Assistant

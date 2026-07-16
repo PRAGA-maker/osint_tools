@@ -30,7 +30,8 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- kahu-converter-utilities
 aliases: []
 tags: []
 source: arf-seed

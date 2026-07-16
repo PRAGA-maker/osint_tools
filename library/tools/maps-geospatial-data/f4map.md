@@ -34,6 +34,8 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- demo-4map-com
 ---
 
 # F4Map

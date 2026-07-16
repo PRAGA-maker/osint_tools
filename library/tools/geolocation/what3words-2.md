@@ -42,6 +42,8 @@ tags:
 source: toddington-resources
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- what3words
 ---
 
 # what3words

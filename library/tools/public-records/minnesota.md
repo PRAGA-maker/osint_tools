@@ -43,6 +43,8 @@ tags:
 source: metaosint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- minnesota-registered-voter-verification
 ---
 
 # Minnesota DOC Offender Locator

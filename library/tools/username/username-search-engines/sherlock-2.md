@@ -33,6 +33,7 @@ relatedTools:
 - whatsmyname-web
 - maigret
 - name-checkr
+- sherlock
 aliases:
 - sherlock-project
 tags:

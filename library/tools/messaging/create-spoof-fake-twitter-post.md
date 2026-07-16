@@ -38,6 +38,9 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- create-spoof-fake-facebook-messenger-post
+- create-spoof-fake-facebook-status-update-post
 ---
 
 # Simitator — Fake Twitter Post Generator

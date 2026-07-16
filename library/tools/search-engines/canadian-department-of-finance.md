@@ -33,6 +33,12 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- canadian-business-research
+- completed-access-to-information-requests
+- federal-corporation-search-canada
+- gov-data-canada
+- government-of-canada-open-data
 ---
 
 # Canadian Department of Finance

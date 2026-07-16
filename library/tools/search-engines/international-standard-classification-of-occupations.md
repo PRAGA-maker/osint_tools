@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ilo-world-employment-and-social-outlook-trends
+- ilostat
 ---
 
 # International Standard Classification of Occupations

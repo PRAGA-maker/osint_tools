@@ -28,7 +28,8 @@ auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- iconfinder-com
 aliases:
 - iconfinder.com
 - Icon Finder

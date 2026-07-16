@@ -36,6 +36,7 @@ relatedTools:
 - pimeyes
 - tineye
 - google-reverse-image-search
+- socialcatfish
 aliases:
 - Social Catfish
 - socialcatfish.com

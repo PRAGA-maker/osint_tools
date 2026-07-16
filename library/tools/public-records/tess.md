@@ -30,6 +30,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- patent-attorneys-agent-search
+- us-patent-office-search
 ---
 
 # TESS

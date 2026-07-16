@@ -43,6 +43,14 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: full
+relatedTools:
+- amazon
+- amazon-com
+- amazon-pay
+- amazon-registry-search
+- amazon-sns
+- aws-public-datasets
+- us-east-1-console-aws-amazon-com
 ---
 
 # Amazon Rekognition

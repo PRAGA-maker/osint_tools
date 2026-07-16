@@ -9,8 +9,15 @@ path:
 bestFor: One-box meta-search across several classifieds/marketplace sites to catch a subject's listings without visiting each site.
 input: Keywords, location, category
 output: Aggregated classified/marketplace listings with links back to the source sites
-selectorsIn: [name, phone, geolocation]
-selectorsOut: [geolocation, image, social-profile, phone]
+selectorsIn:
+- name
+- phone
+- geolocation
+selectorsOut:
+- geolocation
+- image
+- social-profile
+- phone
 status: unknown
 pricing: free
 costNote: Presents as a free meta-search front-end; no payment indicated by name/category.
@@ -22,16 +29,21 @@ bestInteractionPattern: web-manual
 trust: unverified
 trustNote: Obscure aggregator known only from its name/URL and the classifieds category; exact source coverage, liveness, and quality are not verified. Confirm it still works before relying on it.
 missingPersonsRelevance: high
-coverage: [us]
+coverage:
+- us
 auth: none
 api: false
 localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- search-all-junk
 aliases: []
-tags: [classifieds, aggregator, meta-search]
+tags:
+- classifieds
+- aggregator
+- meta-search
 source: arf-seed
 lastVerified: ''
 enrichment: full

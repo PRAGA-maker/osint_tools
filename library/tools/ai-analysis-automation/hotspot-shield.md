@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- hotspot-shield-proxy-tool-us-access
 ---
 
 # Hotspot Shield

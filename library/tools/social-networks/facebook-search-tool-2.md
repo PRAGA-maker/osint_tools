@@ -34,6 +34,8 @@ localInstall: false
 registration: false
 relatedTools:
 - find-facebook-id
+- netbootcamp-org-websitetool-html
+- netbootcamp-s-people-tool
 aliases:
 - NetBootcamp Facebook Search
 - Facebook Graph Search Tool

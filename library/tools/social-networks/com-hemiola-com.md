@@ -35,6 +35,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- expand-all-facebook-comments-bookmarklet
 ---
 
 # com.hemiola.com

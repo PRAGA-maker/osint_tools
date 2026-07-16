@@ -29,7 +29,17 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- e-justice-europa-eu
+- eu-consolidated-corporate-registers
+- eu-sanctions-tool
+- europa-eu
+- europa-press-releases
+- european-commission-home-affairs
+- european-union-open-data-portal
+- eurostat
+- frontex-migratory-map
+- inspire-geoportal
 aliases: []
 tags: []
 source: arf-seed

@@ -31,6 +31,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - twitch-username-and-user-id-addons-mozilla-org
+- twitch-followage-tool
 aliases:
 - StreamsCharts
 - streamscharts convert username

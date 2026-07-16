@@ -37,6 +37,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: full
+relatedTools:
+- canadian-legal-information-institute
 ---
 
 # CanLII Database

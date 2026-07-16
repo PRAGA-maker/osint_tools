@@ -34,6 +34,11 @@ registration: true
 relatedTools:
 - courtlistener
 - canadian-legal-information-institute
+- court-electronic-records-pacer
+- court-locator-united-states-courts
+- court-records-united-states-courts
+- pacer-2
+- pacer-case-locator
 aliases:
 - PACER
 - PACER Case Locator

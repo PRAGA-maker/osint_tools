@@ -33,6 +33,9 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- astronomy-sun-moon-eclipses
+- timeanddate
 ---
 
 # timeanddate.com

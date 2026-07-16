@@ -32,6 +32,7 @@ localInstall: false
 registration: false
 relatedTools:
 - old-maps-online
+- latlong
 aliases:
 - LatLong.net
 - lat long finder

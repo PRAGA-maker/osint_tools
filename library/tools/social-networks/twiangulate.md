@@ -34,6 +34,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- twiangulate-analyzing-the-connections-between-friends-and-followers
 ---
 
 # Twiangulate

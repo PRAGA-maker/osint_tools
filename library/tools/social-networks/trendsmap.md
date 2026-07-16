@@ -34,6 +34,9 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- trendsmap-com
+- twitter-trending-hashtags-and-topics
 ---
 
 # TrendsMap

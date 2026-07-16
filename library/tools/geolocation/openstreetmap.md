@@ -35,6 +35,11 @@ relatedTools:
 - overpass-turbo
 - openstreetcam
 - openinfrastructuremap
+- open-street-map
+- openstreetmap-2
+- openstreetmap-nominatim
+- openstreetmap-overpass-turbo-taginfo-database
+- whodidit
 aliases:
 - OSM
 tags:

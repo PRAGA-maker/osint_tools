@@ -30,6 +30,11 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- 0xdork
+- thedevilseye
+- thelordeye
+- thorndyke
 ---
 
 # Open Corporates Command Line Client (Occli)

@@ -33,6 +33,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- nperf-com-map-5g
 ---
 
 # nperf.com/map

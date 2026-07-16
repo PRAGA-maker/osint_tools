@@ -39,6 +39,8 @@ tags:
 source: inteltechniques-tools
 lastVerified: ''
 enrichment: full
+relatedTools:
+- license-plate-lookup
 ---
 
 # SearchQuarry

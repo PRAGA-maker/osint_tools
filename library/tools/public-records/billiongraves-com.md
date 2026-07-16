@@ -33,6 +33,7 @@ localInstall: false
 registration: false
 relatedTools:
 - gro-gov-uk
+- graveinfo
 aliases:
 - billiongraves.com
 tags:

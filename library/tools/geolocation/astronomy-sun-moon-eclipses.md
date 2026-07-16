@@ -32,6 +32,9 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- timeanddate
+- timeanddate-com
 ---
 
 # Astronomy - Sun - Moon - Eclipses

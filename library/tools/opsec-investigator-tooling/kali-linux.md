@@ -33,6 +33,9 @@ tags:
 source: ultimate-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- goofile
+- kali-linux-os
 ---
 
 # Kali Linux

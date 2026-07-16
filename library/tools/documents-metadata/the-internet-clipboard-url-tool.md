@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- cl1p
 ---
 
 # The Internet Clipboard URL Tool

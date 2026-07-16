@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- wolfram-alpha
+- wolfram-alpha-personal-analytics
 ---
 
 # Wolfram Alpha Facebook Report

@@ -32,6 +32,7 @@ localInstall: false
 registration: false
 relatedTools:
 - openstreetmap
+- kartaview
 aliases:
 - KartaView
 - OpenStreetCam

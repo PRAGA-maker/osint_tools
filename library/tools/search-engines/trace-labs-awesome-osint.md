@@ -37,6 +37,10 @@ registration: false
 relatedTools:
 - osint-framework
 - start-me-osint
+- gumshoe
+- h8mail-trace-labs-fork
+- the-osint-field-manual-tofm
+- trace-labs-osint-vm-tlosint-vm
 aliases:
 - awesome-osint tracelabs
 - Trace Labs OSINT list

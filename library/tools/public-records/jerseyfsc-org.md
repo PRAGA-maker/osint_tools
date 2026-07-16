@@ -42,6 +42,8 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- jersey-financial-services-commission
 ---
 
 # Jersey Financial Services Commission Registry

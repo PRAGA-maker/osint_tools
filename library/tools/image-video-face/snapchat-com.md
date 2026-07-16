@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - snap-map
 - gsmarena-com
+- snapchat
 aliases:
 - Snapchat
 - snapchat.com/add

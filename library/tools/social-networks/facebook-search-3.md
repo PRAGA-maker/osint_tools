@@ -33,6 +33,11 @@ registration: false
 invitationOnly: false
 relatedTools:
 - facebook-search-tool
+- google-social-search
+- social-mentions
+- social-profiles-finder
+- social-searcher
+- social-trends
 tags:
 - facebook
 - social-searcher

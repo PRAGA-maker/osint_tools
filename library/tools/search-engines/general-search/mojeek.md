@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- mojeek-search-engine-united-kingdom
 aliases: []
 tags: []
 source: arf-seed

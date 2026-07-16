@@ -40,6 +40,7 @@ deprecated: false
 relatedTools:
 - pimeyes
 - faceseek-face-search-engine
+- facecheckid
 aliases:
 - FaceCheck.ID
 tags:

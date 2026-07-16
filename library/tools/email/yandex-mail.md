@@ -35,6 +35,15 @@ relatedTools:
 - yandex-images
 - account-live-com
 - gmail-com
+- yandex
+- yandex-browser
+- yandex-image-search
+- yandex-maps
+- yandex-russia
+- yandex-translate
+- yandex-video-search
+- yandex-wordstat
+- yandexmaps
 aliases:
 - Yandex Mail
 - mail.yandex.com

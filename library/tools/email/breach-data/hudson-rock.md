@@ -41,6 +41,7 @@ relatedTools:
 - have-i-been-pwned
 - h8mail
 - holehe
+- hudson-rock-cavalier
 aliases:
 - Cavalier
 - Bayonet

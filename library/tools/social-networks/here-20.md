@@ -31,7 +31,16 @@ api: false
 localInstall: false
 registration: false
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- help-x-com
+- here-19
+- twitter-search
+- twitter-x-advanced-search
+- verif-cation-quiz-bot
+- x-com
+- x-com-3
+- x-com-4
+- x-com-6
 aliases:
 - Twitter user ID to username
 - x.com/i/user

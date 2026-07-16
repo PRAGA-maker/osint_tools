@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- 990-finder
 ---
 
 # Foundation Finder

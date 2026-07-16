@@ -37,6 +37,9 @@ localInstall: false
 registration: true
 relatedTools:
 - ukphonebook-com
+- address-check-1-2-united-states
+- melissa-com
+- melissadata
 aliases:
 - MelissaData
 - Melissa Lookups

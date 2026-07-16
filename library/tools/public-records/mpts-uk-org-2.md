@@ -34,6 +34,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - gmc-register
+- mpts-uk-org
 aliases:
 - MPTS
 - Medical Practitioners Tribunal Service

@@ -33,6 +33,8 @@ registration: false
 relatedTools:
 - cyndi-s-list
 - usgenweb-archives-united-states
+- fake-identity-generator
+- just-delete-me
 aliases:
 - BackgroundChecks.org genealogy resource guide
 - backgroundchecks.org

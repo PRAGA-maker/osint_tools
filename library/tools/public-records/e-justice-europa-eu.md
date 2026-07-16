@@ -41,6 +41,17 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- eu-consolidated-corporate-registers
+- eu-sanctions-tool
+- europa-eu
+- europa-press-releases
+- european-commission-home-affairs
+- european-union-open-data-portal
+- eurostat
+- frontex-migratory-map
+- inspire-geoportal
+- vat-number-validation
 ---
 
 # EU e-Justice — Land Registers

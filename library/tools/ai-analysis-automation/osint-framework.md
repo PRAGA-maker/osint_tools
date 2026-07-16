@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- osint-framework-2
+- osint-framework-3
 ---
 
 # OSINT Framework

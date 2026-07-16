@@ -44,6 +44,9 @@ tags:
 source: osint4all
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- manitoba-assessment-online
+- manitoba-court-records
 ---
 
 # Manitoba High-Risk Sex Offender Notification

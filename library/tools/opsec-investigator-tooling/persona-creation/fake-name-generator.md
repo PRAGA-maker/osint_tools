@@ -29,7 +29,13 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- aba-generator
+- credit-card-generator
+- nino-generator
+- sin-generator
+- ssn-generator
+- vin-generator
 aliases: []
 tags: []
 source: arf-seed

@@ -1,6 +1,6 @@
 ---
 id: gijn-org-4
-name: "GIJN Guide to Detecting AI-Generated Content"
+name: GIJN Guide to Detecting AI-Generated Content
 description: Use when you have an `image`/video and need a methodology to judge whether it is AI-generated or manipulated — returns verification techniques and tool pointers, not a verdict.
 url: https://gijn.org/resource/guide-detecting-ai-generated-content
 category: image-video-face
@@ -33,6 +33,9 @@ registration: false
 invitationOnly: false
 relatedTools:
 - thehackernews-com
+- gijn-online-research-tools
+- gijn-org
+- gijn-org-3
 aliases:
 - GIJN AI content guide
 - detecting AI-generated content

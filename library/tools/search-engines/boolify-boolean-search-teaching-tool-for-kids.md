@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- kidzsearch
 ---
 
 # Boolify Boolean Search Teaching Tool For Kids

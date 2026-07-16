@@ -32,6 +32,9 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- tinder-2
+- tinder-usernames
 ---
 
 # Look by username - replace @username (in this case, Mark)

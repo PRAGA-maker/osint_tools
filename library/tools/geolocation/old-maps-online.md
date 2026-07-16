@@ -30,7 +30,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- oldmapsonline
 aliases:
 - OldMapsOnline
 tags:

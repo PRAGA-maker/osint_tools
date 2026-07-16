@@ -34,6 +34,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- law-enforcement-resource-portal
 ---
 
 # forum.officer.com

@@ -25,12 +25,16 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Dailymotion is a long-established mainstream video platform; the platform itself is reliable, though uploaded content's accuracy must still be judged case by case.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: [deturl-com, dogpile]
+relatedTools:
+- deturl-com
+- dogpile
+- dailymotion
 aliases:
 - Dailymotion
 tags:

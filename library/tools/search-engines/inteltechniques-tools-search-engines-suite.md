@@ -42,6 +42,17 @@ invitationOnly: false
 relatedTools:
 - sherlock
 - account-live-com
+- email-assumptions
+- email-search-tool-by-inteltechniques
+- google-document-dorks-inteltechniques-method
+- instagram-search-inteltechniques-method
+- instagram-tool-inteltechniques-com
+- inteltechniques-business-search-tool
+- inteltechniques-facebook
+- inteltechniques-osint
+- inteltechniques-telephone
+- inteltechniques-twitter
+- user-name-search-intel-techniques
 aliases:
 - inteltechniques.com/tools
 - Bazzell tools

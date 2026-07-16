@@ -32,6 +32,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- get-pocket-news-saving-app
 ---
 
 # Pocket

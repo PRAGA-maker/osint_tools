@@ -33,6 +33,13 @@ registration: false
 relatedTools:
 - blackbookonline
 - vinelink
+- black-book-online-criminal-search
+- criminal-search-criminal-records-by-state-and
+- free-aviation-records-black-book-online
+- jail-records
+- nationwide-county-court-records-by-state-and
+- property-search-public-records-by-state
+- sex-offender-search
 aliases:
 - Black Book Online arrest warrants
 - USA arrest warrant search directory

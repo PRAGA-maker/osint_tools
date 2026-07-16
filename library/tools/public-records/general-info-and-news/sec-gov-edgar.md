@@ -29,7 +29,11 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- edgar
+- sec-company-search
+- sec-gov
+- us-securities-and-exchange-commission
 aliases: []
 tags: []
 source: arf-seed

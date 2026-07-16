@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ship-spotting
+- shipspotting-com
 ---
 
 # ShipSpotting Live AIS

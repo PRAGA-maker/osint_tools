@@ -41,6 +41,9 @@ tags:
 source: metaosint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- legacy-com
+- obituaries-from-newspapers-north-america
 ---
 
 # Legacy.com

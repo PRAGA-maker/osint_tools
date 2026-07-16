@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- narcotics-control-reports
+- terrorism-reports
 aliases: []
 tags: []
 source: arf-seed

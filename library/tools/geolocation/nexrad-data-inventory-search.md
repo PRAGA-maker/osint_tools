@@ -30,7 +30,11 @@ auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- ncei-noaa-gov
+- ngdc-bathymetry-map
+- noaa-data-access-viewer
+- noaa-fisheries-vessel-search
 aliases:
 - NEXRAD Inventory
 - NCEI Radar Inventory

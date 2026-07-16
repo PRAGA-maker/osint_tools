@@ -33,6 +33,15 @@ registration: false
 invitationOnly: false
 relatedTools:
 - dumpor-io
+- inflact
+- inflact-com
+- inflact-com-2
+- inflact-com-4
+- inflact-com-5
+- inflact-downloader
+- inflact-instagram-search
+- inflact-instagram-viewer-anonymous
+- inflact-profile-analyzer
 aliases:
 - Inflact story downloader
 tags:

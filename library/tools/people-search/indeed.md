@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- indeed-job-search-engine-canada
+- indeed-job-search-engine-worldwide
 ---
 
 # Indeed

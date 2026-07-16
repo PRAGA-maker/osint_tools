@@ -39,6 +39,14 @@ deprecated: false
 relatedTools:
 - youtube-com
 - youtube-metadata
+- google-autocomplete-scraper
+- internet-archive-wayback-machine-link-ripper
+- tools-digitalmethods-net
+- wikipedia-cross-lingual-image-analysis
+- yotube-channel-search
+- youtube-comments-analyze
+- ytdt-digitalmethods-net
+- ytdt-digitalmethods-net-2
 aliases:
 - YouTube Data Tools
 - YTDT

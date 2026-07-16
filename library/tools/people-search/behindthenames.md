@@ -29,7 +29,9 @@ api: true
 localInstall: false
 registration: false
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- behind-the-name-arabic-names
+- international-name-generator
 aliases:
 - behindthename.com
 - Behind the Surname

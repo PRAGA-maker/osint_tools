@@ -33,6 +33,17 @@ registration: false
 relatedTools:
 - vinelink
 - bop-inmate-locator
+- court-records-search-directory
+- free-public-records-directory-us
+- laws-and-codes-search-directory-by-state
+- marriage-records-search-directory
+- os-birth-records
+- os-death-records
+- os-divorce-records
+- permits-and-inspections-search-by-state
+- public-records-directory
+- sex-offender-us
+- unclaimed-and-abandoned-property-search-directory
 aliases:
 - OnlineSearches jail and inmate records
 - inmate records directory

@@ -30,7 +30,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- nerdydata-source-code-search-engine
 aliases: []
 tags: []
 source: arf-seed

@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- boolify-boolean-search-teaching-tool-for-kids
 ---
 
 # KidzSearch

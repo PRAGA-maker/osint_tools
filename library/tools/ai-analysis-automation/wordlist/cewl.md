@@ -29,7 +29,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- sitediff
 aliases: []
 tags: []
 source: arf-seed

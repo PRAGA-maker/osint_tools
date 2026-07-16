@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - michigan-state-records
 - vinelink
+- corrections-com-inmate-locaton-links
 aliases:
 - corrections.com links
 - DOC inmate locator directory

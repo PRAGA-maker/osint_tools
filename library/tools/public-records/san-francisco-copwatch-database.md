@@ -29,6 +29,9 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- buffalo-police
+- simplescraper-osint-airtable
 ---
 
 # San Francisco CopWatch Database

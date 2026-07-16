@@ -34,6 +34,7 @@ registration: false
 relatedTools:
 - who-posted-what
 - intelligence-x
+- stalkscan
 aliases:
 - StalkScan
 - stalkscan.com

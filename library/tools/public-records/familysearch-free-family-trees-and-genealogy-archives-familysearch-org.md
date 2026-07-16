@@ -35,6 +35,16 @@ registration: true
 relatedTools:
 - freebmd-org-uk
 - ancestry
+- alabama-deaths
+- colorado-statewide-marriage-index
+- family-search
+- familysearch
+- familysearch-2
+- familysearch-births-and-baptisms-1972-1981-australia
+- familysearch-deaths-and-burials-1816-1980-australia
+- familysearch-guessing-a-name-variation
+- familysearch-org
+- familysearch-research-wiki
 aliases:
 - FamilySearch
 - familysearch.org

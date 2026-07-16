@@ -35,6 +35,7 @@ deprecated: false
 relatedTools:
 - email-format
 - email-dossier
+- metric-sparrow-email-permulator
 aliases:
 - MetricSparrow Email Permutator
 tags:

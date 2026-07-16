@@ -33,6 +33,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- app-geoinfer-com
 ---
 
 # GeoInfer

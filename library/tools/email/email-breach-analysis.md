@@ -36,6 +36,8 @@ tags:
 source: osint4all
 lastVerified: ''
 enrichment: full
+relatedTools:
+- hot-sheet-news
 ---
 
 # Email Breach Analysis

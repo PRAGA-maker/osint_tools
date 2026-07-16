@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- snoop
+- snoop-2
 ---
 
 # Shotstars

@@ -39,6 +39,8 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- create-spoof-fake-text-sms-messages
 ---
 
 # Spoofbox Trash Mobile

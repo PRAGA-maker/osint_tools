@@ -35,7 +35,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- location-search
+- youtube-metadata
+- youtube-metadata-bulk
 aliases:
 - YouTube Geofind
 - mattw.io geofind

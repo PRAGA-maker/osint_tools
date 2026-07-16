@@ -31,7 +31,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- email-checker-searches-email-via-social-networks
+- manycontacts-mail-check
 aliases:
 - ManyContacts Email Checker
 tags:

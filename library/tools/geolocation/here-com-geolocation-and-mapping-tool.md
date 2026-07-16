@@ -33,6 +33,9 @@ registration: false
 relatedTools:
 - freemaptools
 - gps-visualizer
+- here-2
+- here-maps
+- here-wego
 aliases:
 - HERE Maps
 - HERE WeGo

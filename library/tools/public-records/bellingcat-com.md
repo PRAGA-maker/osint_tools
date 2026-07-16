@@ -33,6 +33,10 @@ registration: false
 relatedTools:
 - tellmescotland-gov-uk
 - companies-house
+- bellingcat
+- bellingcat-openstreetmap-search
+- these-are-the-tools-open-source-researchers-say-they-need
+- xblog-bellingcat-a-beginner-s-guide-to-flight-tracking-bellingcat
 aliases:
 - Bellingcat Council Meeting Transcript Search
 - CouncilSearcher

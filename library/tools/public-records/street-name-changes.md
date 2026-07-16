@@ -28,7 +28,16 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- brooklyn-genealogy
+- chicago-cook-county-genealogy
+- decoding-social-security-numbers
+- encoding-and-decoding-driver-s-license-numbers
+- familysearch-s-united-states-record-collections
+- new-jersey-voter-records
+- new-york-state-prison-records
+- new-york-state-voter-records
+- social-security-death-index
 aliases:
 - Steve Morse street name changes
 - One-Step street changes

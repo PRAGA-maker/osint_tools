@@ -33,6 +33,10 @@ registration: false
 relatedTools:
 - google-to-search-profiles-on-dribbble
 - the-dots
+- google-to-search-profiles-on-github
+- google-to-search-profiles-on-stack-overflow
+- google-to-search-profiles-on-twitter
+- recruitem
 aliases:
 - recruitin Xing
 - Xing X-ray search

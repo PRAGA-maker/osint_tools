@@ -41,6 +41,7 @@ tags:
 relatedTools:
 - hunter
 - holehe
+- email-verifier
 source: uk-osint
 lastVerified: ''
 enrichment: full

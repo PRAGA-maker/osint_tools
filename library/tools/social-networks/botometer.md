@@ -34,6 +34,13 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- botometer-by-osome
+- botslayer
+- covaxxy
+- network-tool
+- osome-iu-edu
+- trends-tool
 ---
 
 # Botometer

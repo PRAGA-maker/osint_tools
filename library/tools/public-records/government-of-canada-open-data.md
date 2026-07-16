@@ -30,6 +30,12 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- canadian-business-research
+- canadian-department-of-finance
+- completed-access-to-information-requests
+- federal-corporation-search-canada
+- gov-data-canada
 ---
 
 # Government of Canada Open Data

@@ -35,6 +35,8 @@ registration: false
 invitationOnly: false
 relatedTools:
 - flickr-com
+- fotki
+- fotki-image-search
 aliases:
 - fotki.com
 - Fotki profile search

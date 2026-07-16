@@ -34,6 +34,7 @@ invitationOnly: false
 relatedTools:
 - thats-them
 - peekyou
+- peoplebyname-reverse-phone-lookup
 aliases:
 - peoplebyname.com
 - People By Name

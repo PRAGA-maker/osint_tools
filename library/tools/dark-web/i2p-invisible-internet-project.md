@@ -34,6 +34,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- i2p-anonymous-network
 ---
 
 # I2P - Invisible Internet Project

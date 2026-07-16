@@ -34,7 +34,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- cc-license
+- creative-commons-attribution-sharealike-4-0-international
 aliases:
 - Openverse
 tags: []

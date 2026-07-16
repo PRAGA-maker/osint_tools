@@ -24,12 +24,16 @@ bestInteractionPattern: desktop-app
 trust: community
 trustNote: Open-source GUI wrapping the well-known DeepFace library, authored by a recognized OSINT researcher (GONZO); results are a similarity score that still needs human judgment.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: true
 registration: false
-relatedTools: [diffchecker, copyseeker-net]
+relatedTools:
+- diffchecker
+- copyseeker-net
+- geowifi
 aliases:
 - DeepFace UI
 - deepfaceui

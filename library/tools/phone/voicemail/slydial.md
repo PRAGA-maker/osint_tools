@@ -34,6 +34,7 @@ registration: true
 relatedTools:
 - nanpa-area-code-map
 - twilio-lookup
+- slydial-ringless-voicemail-messaging
 aliases:
 - slydial
 - direct to voicemail

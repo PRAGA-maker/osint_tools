@@ -37,6 +37,7 @@ relatedTools:
 - truepeoplesearch
 - fastpeoplesearch
 - beenverified-com
+- advanced-background-checks
 aliases:
 - ABC
 - AdvBackground

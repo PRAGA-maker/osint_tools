@@ -34,6 +34,7 @@ deprecated: false
 relatedTools:
 - tableau
 - zeemaps
+- the-atlas-of-economic-complexity
 aliases:
 - WorldMap
 tags:

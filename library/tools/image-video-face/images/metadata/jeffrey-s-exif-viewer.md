@@ -40,6 +40,7 @@ deprecated: false
 relatedTools:
 - jeffreys-image-metadata-viewer
 - jimpl
+- jeffrey-friedl-s-image-metadata-viewer
 aliases:
 - Jeffrey Friedl's Image Metadata Viewer
 tags:

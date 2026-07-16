@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- worldtimelapse-mapping-website
 ---
 
 # Time News

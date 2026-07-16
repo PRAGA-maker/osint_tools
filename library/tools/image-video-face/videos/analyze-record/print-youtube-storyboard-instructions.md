@@ -1,6 +1,6 @@
 ---
 id: print-youtube-storyboard-instructions
-name: "Print YouTube Storyboard (labnol bookmarklet)"
+name: Print YouTube Storyboard (labnol bookmarklet)
 description: Use when you have a YouTube video and want a single contact-sheet of its frames without downloading the whole video — returns a poster of storyboard thumbnail `image` frames to scan for faces/places.
 url: https://www.labnol.org/internet/print-youtube-video/28217
 category: image-video-face
@@ -33,7 +33,9 @@ api: false
 localInstall: false
 registration: false
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- labnol-org
+- print-storyboard-from-youtube
 aliases:
 - YouTube storyboard
 - print youtube video

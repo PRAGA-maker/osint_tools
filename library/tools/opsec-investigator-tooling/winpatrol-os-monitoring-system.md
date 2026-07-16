@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- winpatrol-monitor-and-alert-program-windows
 ---
 
 # Winpatrol OS Monitoring System

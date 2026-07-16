@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ipv4-cidr-report
 aliases: []
 tags: []
 source: arf-seed

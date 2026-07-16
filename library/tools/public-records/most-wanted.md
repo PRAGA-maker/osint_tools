@@ -32,7 +32,13 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- fbi-common-fraud-schemes-united-states
+- fbi-information-technology-united-states
+- federal-bureau-of-investigations-value
+- most-wanted-criminal-pages
+- sex-offender-registry-websites
+- vault-fbi-gov
 aliases:
 - FBI Wanted
 - fbi.gov/wanted

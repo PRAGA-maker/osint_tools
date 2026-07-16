@@ -31,6 +31,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- followerwonk
+- search-twitter-bios-and-profiles
 ---
 
 # Follower Wonk/Compare

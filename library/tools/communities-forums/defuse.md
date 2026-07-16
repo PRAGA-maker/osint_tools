@@ -30,6 +30,11 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- big-number-calculator
+- html-sanitizer-tool
+- text-and-file-hash-calculator
+- x86-and-x64-intel-assembler
 ---
 
 # Defuse

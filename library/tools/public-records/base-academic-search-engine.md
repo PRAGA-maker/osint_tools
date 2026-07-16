@@ -37,6 +37,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: full
+relatedTools:
+- base
+- bielefeld-academic-search-engine
 ---
 
 # Base Academic Search Engine

@@ -34,6 +34,9 @@ registration: false
 relatedTools:
 - spoonbill-io
 - memory-lol
+- osint-lolarchiver-com
+- osint-lolarchiver-com-2
+- twitch-tools-lolarchiver-com
 aliases:
 - lolarchiver twitter
 - twitter username history

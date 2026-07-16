@@ -32,6 +32,15 @@ registration: false
 relatedTools:
 - google-reverse-image-search
 - yahoo-image-search-2
+- efficientnetv2
+- get-text-from-video
+- hugging-face-ai-detector
+- huggingface-co-4
+- instruct-pix2pix
+- kosmos-2
+- pix2pix-video
+- scene-edit-detection
+- youtube-whisperer
 aliases:
 - BRIA RMBG
 - huggingface spaces

@@ -30,7 +30,16 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- help-x-com
+- here-20
+- twitter-search
+- twitter-x-advanced-search
+- verif-cation-quiz-bot
+- x-com
+- x-com-3
+- x-com-4
+- x-com-6
 aliases:
 - x.com intent user
 - Twitter user_id lookup

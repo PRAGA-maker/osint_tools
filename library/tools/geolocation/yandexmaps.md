@@ -33,6 +33,16 @@ registration: false
 relatedTools:
 - here-com-geolocation-and-mapping-tool
 - geograph-worldwide
+- yandex
+- yandex-browser
+- yandex-image-search
+- yandex-images
+- yandex-mail
+- yandex-maps
+- yandex-russia
+- yandex-translate
+- yandex-video-search
+- yandex-wordstat
 aliases:
 - Yandex Maps
 - maps.yandex.com

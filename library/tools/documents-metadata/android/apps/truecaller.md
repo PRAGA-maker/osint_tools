@@ -31,7 +31,9 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- true-caller
+- truecaller-com
 aliases: []
 tags: []
 source: arf-seed

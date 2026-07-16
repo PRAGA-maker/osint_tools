@@ -7,29 +7,62 @@ category: geolocation
 path:
 - geolocation
 bestFor: Scraping Google Maps/Places results at scale into structured records (address, phone, coordinates, reviews).
-selectorsIn: [name, address, geolocation, employer-org]
-selectorsOut: [address, phone, geolocation, employer-org, social-profile]
+selectorsIn:
+- name
+- address
+- geolocation
+- employer-org
+selectorsOut:
+- address
+- phone
+- geolocation
+- employer-org
+- social-profile
 status: live
 pricing: freemium
 costNote: Pay-per-result, billed roughly from ~$1.50 per 1,000 scraped places; an Apify free monthly platform credit lets you run small jobs, but large pulls and contact/email enrichment add-ons cost extra.
 opsec: active
 opsecNote: Scrapes Google Maps via Apify's infrastructure, not yours, so your IP is not exposed to Google; but it does query Google's live servers (active toward Google, not toward the person). Reviewer profiles you collect are real accounts — handle as you would any social pivot.
 humanInLoop: true
-humanInLoopReason: [account-login, payment-wall-partial, api-key]
+humanInLoopReason:
+- account-login
+- payment-wall-partial
+- api-key
 bestInteractionPattern: api
 trust: community
 trustNote: Maintained by Compass (a vetted Apify "actor" author) on the official Apify marketplace; widely used, but it scrapes Google Maps which can break when Google changes its UI.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: account
 api: true
 localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: [bing-maps, baidu-maps, batchgeo]
-aliases: [crawler-google-places, google-maps-scraper]
-tags: [scraper, google-maps, places, apify]
+relatedTools:
+- bing-maps
+- baidu-maps
+- batchgeo
+- dark-web-scraper
+- facebook-latest-comments-scraper
+- facebook-latest-posts-scraper
+- google-maps-scraper
+- google-search-scraper
+- instagram-hashtag-scraper
+- instagram-scraper
+- reddit-scraper
+- twitter-scraper
+- twitter-url-scraper
+- youtube-scraper
+aliases:
+- crawler-google-places
+- google-maps-scraper
+tags:
+- scraper
+- google-maps
+- places
+- apify
 source: awesome-osint
 lastVerified: '2026-06-13'
 enrichment: full

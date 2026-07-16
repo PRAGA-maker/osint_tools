@@ -30,7 +30,8 @@ aliases: []
 tags:
 - email
 - Email Related Sites
-relatedTools: []
+relatedTools:
+- comparitech-research-guide
 source: uk-osint
 lastVerified: ''
 enrichment: full

@@ -32,6 +32,8 @@ registration: false
 relatedTools:
 - alternate-spelling-finder
 - forebears
+- bellingcat-tiktok-date-extract
+- telegram-group-joiner
 aliases:
 - Bellingcat name variant tool
 - name-variant-search

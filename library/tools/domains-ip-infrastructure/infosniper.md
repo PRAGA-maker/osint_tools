@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- info-sniper
+- infosniper-net
 ---
 
 # Infosniper

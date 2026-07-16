@@ -35,6 +35,11 @@ registration: true
 relatedTools:
 - telegram-org
 - holehe-2
+- auto-archiver
+- bellingcat-tiktok-hashtag-analysis
+- instagram-location-search
+- shadow-finder
+- wayback-google-analytics
 aliases:
 - bellingcat telegram-phone-number-checker
 - Telegram phone checker

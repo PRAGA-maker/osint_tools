@@ -31,7 +31,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- sijilat-bh-2
 aliases:
 - Sijilat
 - Bahrain commercial registry

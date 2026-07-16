@@ -41,6 +41,12 @@ tags:
 source: osint4all
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- facebook-entity-id-parser
+- facebook-friends-list-generator
+- facebook-profile-id-grabber
+- linkedin-email-reverse-lookup
+- osint-and-socmint-tooling
 ---
 
 # Facebook Email Reverse Lookup (technique)

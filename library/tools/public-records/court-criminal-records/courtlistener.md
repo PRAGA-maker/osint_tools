@@ -29,7 +29,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- courtlistener-recap
+- free-law-recap-archive
+- recap-court-doc-repo
 aliases: []
 tags: []
 source: arf-seed

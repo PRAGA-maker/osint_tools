@@ -31,7 +31,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- pinterest
+- pinterest-trends
 aliases:
 - uk.pinterest.com
 - Pinterest UK

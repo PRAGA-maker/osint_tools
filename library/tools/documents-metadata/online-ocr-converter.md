@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- online-ocr
+- online-ocr-onlineocr-net
 ---
 
 # Online OCR Converter

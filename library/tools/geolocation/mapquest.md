@@ -33,7 +33,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- mapquest-maps-and-directions
 aliases: []
 tags:
 - geocoding

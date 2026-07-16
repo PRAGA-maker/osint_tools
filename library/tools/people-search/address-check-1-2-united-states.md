@@ -35,6 +35,9 @@ registration: false
 relatedTools:
 - usps-zip-lookup
 - truepeoplesearch
+- melissa-com
+- melissa-us-2
+- melissadata
 aliases:
 - Melissa Data AddressCheck
 - Melissa Lookups

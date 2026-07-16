@@ -24,12 +24,17 @@ bestInteractionPattern: web-manual
 trust: unverified
 trustNote: Small developer-blog utility; functionality is narrow and easy to sanity-check by comparing against the channel page source.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: [codeofaninja-com-3]
+relatedTools:
+- codeofaninja-com-3
+- codeofaninja-com
+- find-instagram-user-id
+- find-instagram-user-id-code-of-a-ninja
 aliases: []
 tags:
 - youtube

@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- campaign-finance-reports-and-data
 aliases: []
 tags: []
 source: arf-seed

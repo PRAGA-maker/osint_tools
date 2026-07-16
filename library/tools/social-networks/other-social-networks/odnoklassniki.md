@@ -38,6 +38,8 @@ registration: false
 relatedTools:
 - vk-com
 - yandex-people-search
+- odnoklassniki-russia
+- ok-ru
 aliases:
 - OK.ru
 - Odnoklassniki

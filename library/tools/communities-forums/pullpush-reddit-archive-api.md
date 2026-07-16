@@ -30,7 +30,8 @@ auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- pullpush
 aliases:
 - PullPush
 - pullpush.io

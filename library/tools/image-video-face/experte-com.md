@@ -7,8 +7,12 @@ category: image-video-face
 path:
 - image-video-face
 bestFor: Free web background remover to isolate a person/object from a photo prior to facial or reverse-image search.
-selectorsIn: [image, face]
-selectorsOut: [image, face]
+selectorsIn:
+- image
+- face
+selectorsOut:
+- image
+- face
 status: live
 pricing: free
 opsec: passive
@@ -19,16 +23,22 @@ bestInteractionPattern: web-manual
 trust: unverified
 trustNote: experte.com is a German free-tools/SEO site; the background remover is a genuine utility but not an OSINT search engine — treat its role as image pre-processing only.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
 aliases: []
-tags: [photosites, image-editing, background-removal]
+tags:
+- photosites
+- image-editing
+- background-removal
 source: uk-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- email-finder-3
 ---
 
 # experte.com (Background Remover)

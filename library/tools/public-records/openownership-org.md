@@ -30,6 +30,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- openownership
+- openownership-register
 ---
 
 # openownership.org

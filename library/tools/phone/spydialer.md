@@ -34,6 +34,10 @@ registration: false
 relatedTools:
 - truecaller-search-engine
 - moriarty-project
+- free-reverse-phone-lookup
+- spy-dialer
+- spydialer-reverse-phone-lookup
+- www-spydialer-com
 aliases:
 - Spy Dialer
 - spydialer.com

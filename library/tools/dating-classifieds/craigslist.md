@@ -37,7 +37,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- craiglist
+- craigslist-forums
 aliases: []
 tags:
 - classifieds

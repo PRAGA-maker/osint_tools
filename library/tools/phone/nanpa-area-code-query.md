@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - fcc-io
 - the-directory-area-code-listings-worldwide
+- nanpa-area-code-map
 aliases:
 - NANPA NPA query
 - nationalnanpa area code lookup

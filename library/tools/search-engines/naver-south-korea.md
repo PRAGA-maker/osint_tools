@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- naver-com
+- naver-korean
 ---
 
 # Naver (South Korea)

@@ -31,6 +31,7 @@ registration: false
 relatedTools:
 - receive-smss-com
 - sms-activate
+- receive-sms-online
 aliases:
 - receive-sms-online.com
 - temporary SMS number

@@ -31,7 +31,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- international-numbering-plans-database
+- numberingplans-com
 aliases:
 - numberingplans.com
 - number analysis tool

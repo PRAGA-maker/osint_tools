@@ -31,7 +31,9 @@ api: true
 localInstall: false
 registration: true
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- radioreference
+- radioreference-communications-wiki
 aliases:
 - RadioReference
 - radioreference.com

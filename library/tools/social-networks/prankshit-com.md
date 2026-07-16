@@ -35,6 +35,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- prankshit-com-2
 ---
 
 # prankshit.com

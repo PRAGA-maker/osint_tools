@@ -34,6 +34,9 @@ registration: false
 relatedTools:
 - vinelink
 - utah
+- federal-inmate-locator
+- sorted-by-birth-date
+- the-inmate-locator
 aliases:
 - BOP inmate locator
 - bop.gov/inmateloc

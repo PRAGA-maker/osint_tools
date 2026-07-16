@@ -37,6 +37,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: full
+relatedTools:
+- pill-identifier
 ---
 
 # WebMD Medical Sciences Search

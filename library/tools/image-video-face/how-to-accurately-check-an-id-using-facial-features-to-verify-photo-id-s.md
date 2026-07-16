@@ -37,6 +37,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- joelle-steele
 ---
 
 # How to Accurately Check An ID Using Facial Features To Verify Photo ID's

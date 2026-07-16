@@ -31,6 +31,9 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- cornell-legal-information-institute-united-states
+- lexcraft-cornell-university-legal-wiki-canada
 ---
 
 # BirdNet

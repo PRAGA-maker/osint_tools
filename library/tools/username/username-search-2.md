@@ -35,6 +35,8 @@ relatedTools:
 - sherlock
 - whatsmyname
 - clearsky-app
+- idcrawl
+- reverse-phone-lookup-2
 aliases:
 - IDCrawl username search
 - idcrawl

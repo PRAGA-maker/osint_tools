@@ -32,6 +32,8 @@ localInstall: false
 registration: false
 relatedTools:
 - freephonenum-com
+- international-numbering-plans-database
+- numbering-plans
 aliases:
 - International Numbering Plans
 - numberingplans

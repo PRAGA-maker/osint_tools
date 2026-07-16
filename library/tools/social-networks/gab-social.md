@@ -34,6 +34,7 @@ registration: false
 relatedTools:
 - mastodon
 - x-com-6
+- gab-com
 aliases:
 - Gab
 - gab.com

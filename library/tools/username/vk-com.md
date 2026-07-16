@@ -42,6 +42,15 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- community-search
+- get-user-info
+- item
+- people-search-results-vk
+- vk
+- vk-com-2
+- vk-community-search
+- vk-people-search
 ---
 
 # VK Account Recovery (existence check)

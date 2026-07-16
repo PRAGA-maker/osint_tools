@@ -41,6 +41,8 @@ tags:
 source: kimi-telegram
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- telegram-finder
 ---
 
 # Telegram Finder (telegram-finder.io)

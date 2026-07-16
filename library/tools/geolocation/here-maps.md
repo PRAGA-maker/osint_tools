@@ -35,6 +35,8 @@ relatedTools:
 - here-2
 - instant-google-street-view
 - gpsvisualizer
+- here-com-geolocation-and-mapping-tool
+- here-wego
 aliases:
 - HERE WeGo
 tags:

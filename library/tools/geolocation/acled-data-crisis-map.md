@@ -33,6 +33,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- acled-armed-conflict-location-and-event-data-project
+- us-crisis-monitor
 ---
 
 # Acled data crisis map

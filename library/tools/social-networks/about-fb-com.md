@@ -35,6 +35,9 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- facebook-newsroom
+- facebook-search
 ---
 
 # about.fb.com

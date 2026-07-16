@@ -31,7 +31,11 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- free-reverse-phone-lookup
+- spydialer
+- spydialer-reverse-phone-lookup
+- www-spydialer-com
 aliases:
 - spydialer.com
 - SpyDialer

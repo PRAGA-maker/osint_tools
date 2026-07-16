@@ -30,7 +30,16 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- help-x-com
+- here-19
+- here-20
+- twitter-search
+- twitter-x-advanced-search
+- x-com
+- x-com-3
+- x-com-4
+- x-com-6
 aliases: []
 tags: []
 source: arf-seed

@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- undps-human-development-index
 ---
 
 # Human Development Reports

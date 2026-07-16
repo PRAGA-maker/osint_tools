@@ -42,6 +42,8 @@ tags:
 source: metaosint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- ancestor-hunt
 ---
 
 # Prison Search - Free Inmate Locators (AncestorHunt)

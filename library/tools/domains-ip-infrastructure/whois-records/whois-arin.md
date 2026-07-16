@@ -29,7 +29,12 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- account-arin-net
+- arin
+- arin-net
+- search-arin-net
+- whois-arin-online
 aliases: []
 tags: []
 source: arf-seed

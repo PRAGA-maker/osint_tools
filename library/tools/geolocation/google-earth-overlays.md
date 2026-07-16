@@ -37,6 +37,8 @@ tags:
 source: arf-seed
 lastVerified: ''
 enrichment: full
+relatedTools:
+- view-in-google-earth
 ---
 
 # Google Earth Overlays

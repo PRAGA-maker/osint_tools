@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - supremecourt-uk
 - courtlistener
+- canlii-database
 aliases:
 - CanLII
 - canlii.org

@@ -32,6 +32,8 @@ invitationOnly: false
 relatedTools:
 - peep-mail-search-tool
 - account-live-com
+- a-tremendously-valuable-osint-tip-for-pinterest
+- viewing-bitmoji-changes
 aliases:
 - hatless1der Pinterest tip
 - Pinterest username to email

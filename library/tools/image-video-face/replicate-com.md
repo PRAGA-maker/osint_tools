@@ -44,6 +44,8 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-15'
 enrichment: full
+relatedTools:
+- gfpgan
 ---
 
 # replicate.com (Bringing Old Photos Back to Life)

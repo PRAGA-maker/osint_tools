@@ -33,6 +33,7 @@ localInstall: false
 registration: true
 relatedTools:
 - theharvester
+- findemails
 aliases:
 - toofr.com
 tags:

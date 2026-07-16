@@ -30,7 +30,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- virus-total
 aliases: []
 tags: []
 source: arf-seed

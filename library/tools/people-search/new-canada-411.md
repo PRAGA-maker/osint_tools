@@ -35,6 +35,10 @@ localInstall: false
 registration: false
 relatedTools:
 - oldphonebook-com
+- canada411
+- canada411-advanced-search-whitepages-ca
+- canada411-ca
+- canada411-ca-2
 aliases:
 - Canada411
 - canada411.ca

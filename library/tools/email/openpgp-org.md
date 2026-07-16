@@ -38,6 +38,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- keys-openpgp-org
 ---
 
 # openpgp.org

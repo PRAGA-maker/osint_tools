@@ -35,6 +35,7 @@ registration: true
 relatedTools:
 - checkwa
 - telegram-phone-number-checker
+- zalo-me
 aliases:
 - Zalo account
 - Zalo login

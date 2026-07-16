@@ -33,6 +33,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- localfocus
 ---
 
 # localfocus.nl/geokit

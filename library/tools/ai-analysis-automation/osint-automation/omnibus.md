@@ -30,7 +30,9 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- iocextract
+- threatingestor
 aliases: []
 tags: []
 source: arf-seed

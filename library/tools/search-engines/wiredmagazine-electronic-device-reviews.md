@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- wired-tech-news-and-trends
 ---
 
 # WiredMagazine Electronic Device Reviews

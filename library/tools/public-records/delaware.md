@@ -41,6 +41,8 @@ tags:
 source: metaosint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- state-of-delaware-professional-license-validator
 ---
 
 # Delaware Inmate Locator (via VINELink)

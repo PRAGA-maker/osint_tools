@@ -31,6 +31,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- plane-finder
+- planefinder
 ---
 
 # Planefinder Army Live Flight Tracker

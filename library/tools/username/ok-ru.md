@@ -44,6 +44,9 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-15'
 enrichment: full
+relatedTools:
+- odnoklassniki
+- odnoklassniki-russia
 ---
 
 # ok.ru (Odnoklassniki account-existence check)

@@ -28,7 +28,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- public-records
+- state-appellate-and-supreme-courts
 aliases: []
 tags: []
 source: arf-seed

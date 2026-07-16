@@ -29,7 +29,8 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- youcode
 aliases: []
 tags: []
 source: arf-seed

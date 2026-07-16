@@ -37,6 +37,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- the-perry-casta-eda-library-map-collection
+- university-of-texas-libraries-database
 ---
 
 # Perry Castaneda Library

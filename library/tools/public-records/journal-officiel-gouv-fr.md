@@ -35,6 +35,7 @@ registration: false
 relatedTools:
 - pappers-fr
 - infogreffe-fr
+- geoportail-france
 aliases:
 - Journal Officiel Associations
 - JOAFE

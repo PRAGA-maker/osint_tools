@@ -34,6 +34,7 @@ registration: false
 relatedTools:
 - state-corrections-links
 - familysearch
+- access-state-records-online-staterecords-org
 aliases:
 - Michigan StateRecords.org
 - staterecords Michigan

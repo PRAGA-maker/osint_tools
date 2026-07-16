@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ahmia-link-graph
+- ahmia-list-of-onion-domains
 aliases: []
 tags: []
 source: arf-seed

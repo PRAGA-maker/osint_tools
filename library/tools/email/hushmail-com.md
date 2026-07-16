@@ -35,6 +35,7 @@ tags:
 - Email Related Sites
 relatedTools:
 - hushmail
+- hushmail-canada
 source: uk-osint
 lastVerified: ''
 enrichment: full

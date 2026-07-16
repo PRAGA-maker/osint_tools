@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- mitre-ttps
 aliases: []
 tags: []
 source: arf-seed

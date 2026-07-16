@@ -33,6 +33,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- cert4recon
 ---
 
 # WebHackUrls

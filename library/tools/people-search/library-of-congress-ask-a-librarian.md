@@ -30,6 +30,11 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- library-of-congress-united-states
+- newspaper-navigator
+- usa-telephone-directory-collection
+- webarchive-loc-gov
 ---
 
 # Library of Congress: Ask a Librarian

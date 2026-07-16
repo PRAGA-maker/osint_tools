@@ -30,7 +30,9 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ip2location-free-email-header-tracer
+- ip2location-free-ip-location-search
 aliases: []
 tags: []
 source: arf-seed

@@ -36,6 +36,8 @@ tags:
 source: osintambition-social
 lastVerified: ''
 enrichment: full
+relatedTools:
+- ifttt
 ---
 
 # IFTTT Instagram Integrations

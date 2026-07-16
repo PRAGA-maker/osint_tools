@@ -39,6 +39,8 @@ tags:
 source: osintambition-social
 lastVerified: ''
 enrichment: full
+relatedTools:
+- osi-ig
 ---
 
 # TeleGram-Scraper (th3unkn0n)

@@ -40,6 +40,10 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- gijn-online-research-tools
+- gijn-org-3
+- gijn-org-4
 ---
 
 # GIJN Resource Centre

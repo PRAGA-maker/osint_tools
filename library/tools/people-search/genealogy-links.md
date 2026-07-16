@@ -34,6 +34,7 @@ registration: false
 relatedTools:
 - nettrace
 - court-records-directory
+- genealogy-links-us-and-other-countries
 aliases:
 - genealogylinks.net
 tags:

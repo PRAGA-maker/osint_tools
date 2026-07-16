@@ -33,7 +33,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- live-universal-awareness-map
+- map-of-syrian-civil-war
+- ukraine-liveuamap-com
 aliases:
 - Live Universal Awareness Map
 tags:

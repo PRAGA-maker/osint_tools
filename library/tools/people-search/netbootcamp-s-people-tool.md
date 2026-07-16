@@ -37,7 +37,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- facebook-search-tool-2
+- netbootcamp-org-websitetool-html
 aliases:
 - NetBootCamp People Search
 - netbootcamp.org peoplesearch

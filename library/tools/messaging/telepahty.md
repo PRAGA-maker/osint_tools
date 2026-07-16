@@ -35,6 +35,7 @@ localInstall: true
 registration: true
 relatedTools:
 - regdatebot
+- telepathy
 aliases:
 - Telepathy-Community
 - Telepathy Community

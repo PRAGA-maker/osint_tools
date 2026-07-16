@@ -32,6 +32,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- open-multiple-links-one-click
 ---
 
 # Scrapersnbots

@@ -15,7 +15,7 @@ selectorsOut:
 - geolocation
 status: live
 pricing: free
-costNote: "Free to use, unlimited queries per the site; no account required."
+costNote: Free to use, unlimited queries per the site; no account required.
 opsec: passive
 opsecNote: Reads Reddit's public comment data via the site, not through your own logged-in Reddit account, so the target sees nothing. Still use a sock-puppet browser; the tool operator can log which usernames you probe.
 humanInLoop: false
@@ -39,6 +39,8 @@ tags:
 source: awesome-osint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- find-my-facebook-id
 ---
 
 # Reddit Comment Lookup

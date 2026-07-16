@@ -29,6 +29,12 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- canadian-business-research
+- canadian-department-of-finance
+- federal-corporation-search-canada
+- gov-data-canada
+- government-of-canada-open-data
 ---
 
 # Completed Access to Information Requests

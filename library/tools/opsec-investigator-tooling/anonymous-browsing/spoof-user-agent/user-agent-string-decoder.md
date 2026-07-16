@@ -30,7 +30,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- trace-my-ip
 aliases: []
 tags: []
 source: arf-seed

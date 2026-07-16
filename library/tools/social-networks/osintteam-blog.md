@@ -35,6 +35,9 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- osintteam-blog-2
+- osintteam-blog-3
 ---
 
 # osintteam.blog

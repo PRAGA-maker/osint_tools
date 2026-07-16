@@ -42,6 +42,8 @@ tags:
 source: metaosint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- rhode-island-registered-voter-verification
 ---
 
 # Rhode Island DOC Inmate Search

@@ -30,7 +30,8 @@ api: false
 localInstall: false
 registration: false
 invitationOnly: false
-relatedTools: []
+relatedTools:
+- groupda
 aliases:
 - groupda.com
 - Group DA

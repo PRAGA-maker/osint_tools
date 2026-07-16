@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- duckduckgo-ai-chat
+- duckduckgo-com
 aliases: []
 tags: []
 source: arf-seed

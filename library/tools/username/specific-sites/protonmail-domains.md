@@ -34,6 +34,7 @@ invitationOnly: false
 relatedTools:
 - neutrosint
 - account-live-com
+- protonmail-users
 aliases:
 - ProtonMail key lookup
 - proton HKP lookup

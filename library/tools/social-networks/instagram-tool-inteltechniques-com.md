@@ -34,6 +34,17 @@ registration: false
 relatedTools:
 - inteltechniques-search-tool
 - osintgram
+- email-assumptions
+- email-search-tool-by-inteltechniques
+- google-document-dorks-inteltechniques-method
+- instagram-search-inteltechniques-method
+- inteltechniques-business-search-tool
+- inteltechniques-facebook
+- inteltechniques-osint
+- inteltechniques-telephone
+- inteltechniques-tools-search-engines-suite
+- inteltechniques-twitter
+- user-name-search-intel-techniques
 aliases:
 - IntelTechniques Instagram tool
 - Bazzell Instagram OSINT

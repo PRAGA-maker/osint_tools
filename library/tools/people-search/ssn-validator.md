@@ -32,6 +32,7 @@ localInstall: false
 registration: false
 relatedTools:
 - social-security-death-master-file
+- social-security-number-validator
 aliases:
 - SSN Validator
 - ssnvalidator.com

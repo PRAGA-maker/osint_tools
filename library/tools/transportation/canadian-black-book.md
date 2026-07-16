@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- canadian-black-book-values
 ---
 
 # Canadian Black Book

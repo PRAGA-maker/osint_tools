@@ -44,6 +44,8 @@ tags:
 source: gh-topic-osint-framework
 lastVerified: ''
 enrichment: full
+relatedTools:
+- awesome-honeypots
 ---
 
 # Recon-ng (paralax fork)

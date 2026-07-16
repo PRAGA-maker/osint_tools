@@ -32,6 +32,7 @@ registration: false
 relatedTools:
 - ytlarge-com-3
 - threadsphotodownloader-com
+- yoodownload-com
 aliases:
 - Yoodownload
 tags:

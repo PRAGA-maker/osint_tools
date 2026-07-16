@@ -43,6 +43,8 @@ tags:
 source: metaosint
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- wisconsin-registered-voter-verification
 ---
 
 # Wisconsin DOC Offender Search

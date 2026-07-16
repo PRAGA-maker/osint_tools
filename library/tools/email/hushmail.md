@@ -34,6 +34,7 @@ tags:
 - email
 relatedTools:
 - hushmail-com
+- hushmail-canada
 source: metaosint
 lastVerified: ''
 enrichment: full

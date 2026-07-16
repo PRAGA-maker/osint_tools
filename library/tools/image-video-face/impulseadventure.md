@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - jpegsnoop
 - jpegsnoop-2
+- jpegsnoop-image-decoder
 aliases:
 - JPEGsnoop home
 tags:

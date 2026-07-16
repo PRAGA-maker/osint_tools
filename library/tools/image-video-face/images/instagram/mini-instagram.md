@@ -30,7 +30,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- leapdroid-en-softonic-com
 aliases: []
 tags: []
 source: arf-seed

@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ofac-specially-designated-nationals-search-united-states
 aliases: []
 tags: []
 source: arf-seed

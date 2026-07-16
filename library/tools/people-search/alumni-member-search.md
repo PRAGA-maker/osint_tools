@@ -31,7 +31,8 @@ auth: account
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- alumni-net
 aliases:
 - Alumni.NET
 tags:

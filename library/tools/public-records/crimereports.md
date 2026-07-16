@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - spotcrime
 - nsopw
+- crimereports-com
 aliases:
 - CrimeReports
 - Community Crime Map

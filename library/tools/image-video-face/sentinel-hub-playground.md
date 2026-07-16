@@ -32,6 +32,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- sentinel-hub
+- sentinel-hub-eo-browser
 ---
 
 # Sentinel Hub Playground

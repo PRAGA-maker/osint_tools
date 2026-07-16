@@ -31,6 +31,10 @@ registration: false
 relatedTools:
 - here-19
 - pixelatomy-com
+- codeofaninja-com-2
+- codeofaninja-com-3
+- find-instagram-user-id
+- find-instagram-user-id-code-of-a-ninja
 aliases:
 - codeofaninja.com find tiktok id
 - TikTok ID finder

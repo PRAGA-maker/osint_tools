@@ -33,6 +33,9 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- plane-finder
+- planefinder-army-live-flight-tracker
 ---
 
 # PlaneFinder

@@ -29,7 +29,12 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- coveryourtracks-eff-org
+- electronic-frontier-foundation-eff-tools
+- https-everywhere
+- privacy-badger
+- surveilliance-self-defense
 aliases: []
 tags: []
 source: arf-seed

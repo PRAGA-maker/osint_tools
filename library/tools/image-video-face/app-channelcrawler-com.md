@@ -28,12 +28,14 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: Commercial creator-marketing/sponsorship-intelligence platform (channelcrawler.com); indexes 25M+ public YouTube channels. Useful for OSINT but built for influencer marketing, not investigations.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: account
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- channel-crawler
 aliases:
 - Channel Crawler
 - ChannelCrawler

@@ -34,6 +34,7 @@ localInstall: false
 registration: false
 relatedTools:
 - google-reverse-image-search
+- imgur-search
 aliases:
 - imgur.com
 tags:

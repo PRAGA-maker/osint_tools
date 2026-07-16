@@ -31,6 +31,13 @@ registration: false
 relatedTools:
 - mxtoolbox
 - multirbl
+- email-header-analyzer
+- mx-toolbox-blacklist-check
+- mx-toolbox-email-header-analyzer
+- mx-toolbox-reverse-ip-search
+- mx-toolbox-whois-lookup
+- mxtoolbox-com
+- mxtoolbox-com-2
 aliases: []
 tags:
 - email

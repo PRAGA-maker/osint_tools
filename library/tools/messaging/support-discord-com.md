@@ -35,6 +35,10 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-15'
 enrichment: full
+relatedTools:
+- discord-com
+- discord-com-2
+- support-discord-com-2
 ---
 
 # support.discord.com

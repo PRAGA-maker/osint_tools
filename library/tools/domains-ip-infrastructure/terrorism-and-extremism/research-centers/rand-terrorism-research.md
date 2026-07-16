@@ -30,7 +30,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- reveal-image-verification-assistant
+- terrorism-incidents-database
 aliases: []
 tags: []
 source: arf-seed

@@ -31,7 +31,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- anywho
+- white-pages-people-finder-anywho
 aliases:
 - AnyWho
 - anywho.com whitepages

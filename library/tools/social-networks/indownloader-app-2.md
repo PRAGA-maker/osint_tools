@@ -30,6 +30,7 @@ localInstall: false
 registration: false
 relatedTools:
 - downloader-instagram-addons-mozilla-org
+- indownloader-app
 aliases:
 - indownloader.app
 - IGDownloader

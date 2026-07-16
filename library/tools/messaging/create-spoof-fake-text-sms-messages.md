@@ -31,6 +31,7 @@ localInstall: false
 registration: true
 relatedTools:
 - zeoob-com
+- spoofbox-com
 aliases:
 - Spoofbox
 - Spoof SMS

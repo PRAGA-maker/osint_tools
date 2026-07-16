@@ -33,6 +33,8 @@ registration: false
 invitationOnly: false
 relatedTools:
 - dumpor-io
+- instagram
+- instagram-location
 aliases:
 - Instagram explore tags
 - IG hashtag search

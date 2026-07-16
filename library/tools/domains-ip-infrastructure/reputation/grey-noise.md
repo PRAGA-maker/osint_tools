@@ -30,7 +30,10 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- greynoise
+- greynoise-intelligence
+- greynoise-io
 aliases: []
 tags: []
 source: arf-seed

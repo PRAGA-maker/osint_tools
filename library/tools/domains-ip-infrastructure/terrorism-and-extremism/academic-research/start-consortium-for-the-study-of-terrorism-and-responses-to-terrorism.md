@@ -30,7 +30,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- global-terrorism-database
+- street-drug-slang
 aliases: []
 tags: []
 source: arf-seed

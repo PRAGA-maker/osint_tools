@@ -41,6 +41,8 @@ tags:
 source: metaosint
 lastVerified: '2026-07-15'
 enrichment: full
+relatedTools:
+- intel-sw-com
 ---
 
 # Search LinkedIn - Intelligence Recruitment Software

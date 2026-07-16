@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- unctad-country-fact-sheets
+- unctad-stat
 ---
 
 # UNCTAD Investment Country Profiles

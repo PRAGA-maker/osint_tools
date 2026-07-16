@@ -30,7 +30,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- peteyvid
 aliases:
 - PeteyVid
 - Petey Vid video search

@@ -34,6 +34,11 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- firms
+- nasa-earthdata-search
+- nasa-kids-club
+- nasa-worldview
 ---
 
 # NASA FIRMS

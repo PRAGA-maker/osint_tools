@@ -37,6 +37,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- moci-gov-kw
 ---
 
 # e.gov.kw

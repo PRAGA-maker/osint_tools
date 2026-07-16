@@ -32,6 +32,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- totalcraigsearch
 ---
 
 # TotalCraigSearch (Searches All Regions)

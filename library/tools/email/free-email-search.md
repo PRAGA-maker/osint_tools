@@ -36,7 +36,8 @@ aliases:
 - Spytox
 tags:
 - email
-relatedTools: []
+relatedTools:
+- spytox
 source: metaosint
 lastVerified: ''
 enrichment: full

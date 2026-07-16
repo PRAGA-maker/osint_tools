@@ -30,6 +30,8 @@ localInstall: false
 registration: false
 relatedTools:
 - discord-com
+- discordleaks
+- unicorn-riot-discord-leaks
 aliases:
 - Unicorn Riot DiscordLeaks
 - DiscordLeaks

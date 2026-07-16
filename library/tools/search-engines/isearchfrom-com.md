@@ -32,6 +32,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - lukol-com
+- i-search-from
 aliases:
 - I Search From
 - isearchfrom

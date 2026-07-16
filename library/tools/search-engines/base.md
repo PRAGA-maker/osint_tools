@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- base-academic-search-engine
+- bielefeld-academic-search-engine
 ---
 
 # Base

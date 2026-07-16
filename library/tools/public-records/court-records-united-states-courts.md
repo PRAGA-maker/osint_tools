@@ -43,6 +43,12 @@ tags:
 source: metaosint
 lastVerified: '2026-07-10'
 enrichment: full
+relatedTools:
+- court-electronic-records-pacer
+- court-locator-united-states-courts
+- pacer-2
+- pacer-case-locator
+- public-access-to-court-electronic-records
 ---
 
 # US Courts / PACER (Federal Court Records)

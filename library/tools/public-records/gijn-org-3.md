@@ -42,6 +42,10 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- gijn-online-research-tools
+- gijn-org
+- gijn-org-4
 ---
 
 # GIJN Guide — Land & Property Ownership Records

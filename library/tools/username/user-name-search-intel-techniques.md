@@ -34,6 +34,17 @@ relatedTools:
 - whatsmyname-app
 - namechk
 - sherlock
+- email-assumptions
+- email-search-tool-by-inteltechniques
+- google-document-dorks-inteltechniques-method
+- instagram-search-inteltechniques-method
+- instagram-tool-inteltechniques-com
+- inteltechniques-business-search-tool
+- inteltechniques-facebook
+- inteltechniques-osint
+- inteltechniques-telephone
+- inteltechniques-tools-search-engines-suite
+- inteltechniques-twitter
 aliases:
 - IntelTechniques Username Tool
 - Bazzell username search

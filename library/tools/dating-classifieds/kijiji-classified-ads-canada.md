@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- kijiji-canada
+- kijiji-canada-classifieds
 ---
 
 # Kijiji Classified Ads (Canada)

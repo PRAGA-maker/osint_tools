@@ -30,12 +30,21 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: WikiLeaks PlusD is a real, well-documented archive of US diplomatic cables. Marginal for routine missing-persons work; useful only when a subject intersects diplomatic/government records.
 missingPersonsRelevance: low
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- akp-email-database
+- dnc-email-database
+- gi-files
+- ice-patrol
+- macron-campaign-emails
+- sony-archives
+- wikileaks
+- wikileaks-search
 aliases:
 - WikiLeaks PlusD
 - Public Library of US Diplomacy

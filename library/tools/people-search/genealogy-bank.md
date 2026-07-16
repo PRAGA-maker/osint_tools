@@ -35,6 +35,7 @@ relatedTools:
 - legacy-com
 - obituaries-from-newspapers-north-america
 - family-search
+- genealogybank-ssdi
 aliases:
 - Genealogy Bank
 - genealogybank.com

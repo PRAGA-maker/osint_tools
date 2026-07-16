@@ -34,6 +34,7 @@ localInstall: false
 registration: false
 relatedTools:
 - numberingplans-com
+- telegram-finder-telegram-finder-io
 aliases:
 - telegram-finder.io
 tags:

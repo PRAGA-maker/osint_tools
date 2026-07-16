@@ -38,6 +38,9 @@ tags:
 source: gh-topic-footprinting
 lastVerified: ''
 enrichment: full
+relatedTools:
+- spidersuite
+- sub3-suite
 ---
 
 # OTE (OSINT Template Engine)

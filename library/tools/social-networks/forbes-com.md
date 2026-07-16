@@ -35,6 +35,9 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- forbes-global-2000
+- forbes-magazine
 ---
 
 # forbes.com

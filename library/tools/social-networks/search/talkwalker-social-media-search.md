@@ -42,6 +42,8 @@ tags:
 source: arf-seed
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- talkwalker
 ---
 
 # Talkwalker Free Social Search

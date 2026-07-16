@@ -9,8 +9,15 @@ path:
 bestFor: Nationwide/multi-city Craigslist search to find where a subject is posting and surface their listings and any included contact info.
 input: Keywords, state(s), category
 output: Aggregated Craigslist listings across selected states/cities, linking back to source posts
-selectorsIn: [name, phone, geolocation]
-selectorsOut: [geolocation, phone, image, social-profile]
+selectorsIn:
+- name
+- phone
+- geolocation
+selectorsOut:
+- geolocation
+- phone
+- image
+- social-profile
 status: unknown
 pricing: free
 costNote: Free Craigslist meta-search; no payment indicated.
@@ -22,16 +29,22 @@ bestInteractionPattern: web-manual
 trust: unverified
 trustNote: A Craigslist multi-city search front-end identified from name/URL/category; one of several such tools whose current liveness varies. Verify it still returns results before relying on it.
 missingPersonsRelevance: high
-coverage: [us]
+coverage:
+- us
 auth: none
 api: false
 localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- totalcraigsearch-searches-all-regions
 aliases: []
-tags: [classifieds, craigslist, aggregator, meta-search]
+tags:
+- classifieds
+- craigslist
+- aggregator
+- meta-search
 source: arf-seed
 lastVerified: ''
 enrichment: full

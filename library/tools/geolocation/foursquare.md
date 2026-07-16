@@ -41,6 +41,9 @@ tags:
 source: toddington-resources
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- foursquare-business-search
+- foursquare-time-machine
 ---
 
 # Foursquare

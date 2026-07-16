@@ -32,6 +32,10 @@ localInstall: false
 registration: false
 relatedTools:
 - social-searcher
+- facebook-search-3
+- social-mentions
+- social-profiles-finder
+- social-trends
 aliases:
 - Social Searcher Google Social Search
 tags:

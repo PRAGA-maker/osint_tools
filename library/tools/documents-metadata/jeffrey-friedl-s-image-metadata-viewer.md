@@ -35,6 +35,9 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- jeffrey-s-exif-viewer
+- jeffreys-image-metadata-viewer
 ---
 
 # Jeffrey Friedl's Image Metadata Viewer

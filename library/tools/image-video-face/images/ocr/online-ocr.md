@@ -36,6 +36,8 @@ localInstall: false
 registration: false
 relatedTools:
 - google-lens
+- online-ocr-converter
+- online-ocr-onlineocr-net
 aliases:
 - OnlineOCR
 - onlineocr.net

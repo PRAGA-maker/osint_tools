@@ -40,6 +40,9 @@ tags:
 source: gh-topic-osint-framework
 lastVerified: ''
 enrichment: full
+relatedTools:
+- osint-tools-yogsec
+- yogsec
 ---
 
 # One-Liner-OSINT

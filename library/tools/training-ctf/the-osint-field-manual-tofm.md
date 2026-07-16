@@ -36,6 +36,11 @@ tags:
 source: tracelabs-repos
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- gumshoe
+- h8mail-trace-labs-fork
+- trace-labs-awesome-osint
+- trace-labs-osint-vm-tlosint-vm
 ---
 
 # The OSINT Field Manual (TOFM)

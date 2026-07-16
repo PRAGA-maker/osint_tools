@@ -40,6 +40,9 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- knowlesys-com
+- knowlesys-com-2
 ---
 
 # Knowlesys WhatsApp OSINT Methods (article)

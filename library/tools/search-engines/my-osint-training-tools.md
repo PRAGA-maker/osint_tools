@@ -42,6 +42,9 @@ tags:
 source: ultimate-osint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- myosint-training
+- the-bitmoji-avatar-history-enumerator
 ---
 
 # My OSINT Training Tools

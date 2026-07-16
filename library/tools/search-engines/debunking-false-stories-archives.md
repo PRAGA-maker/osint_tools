@@ -29,6 +29,9 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- fact-check
+- scicheck
 ---
 
 # Debunking False Stories Archives

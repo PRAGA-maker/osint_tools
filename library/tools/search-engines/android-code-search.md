@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- android-studio-and-sdk-tools
 ---
 
 # Android Code Search

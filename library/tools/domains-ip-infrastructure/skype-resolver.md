@@ -29,6 +29,9 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- 2-skypeipresolver-net
+- cloudflare-resolver
 ---
 
 # Skype Resolver

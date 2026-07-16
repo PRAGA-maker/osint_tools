@@ -30,6 +30,17 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- bing
+- bing-creations
+- bing-images
+- bing-ip-search
+- bing-maps
+- bing-microsoft-translator
+- bing-translate
+- bing-videos
+- bing-webmaster-tools
+- see-it-search-it
 ---
 
 # Bing News

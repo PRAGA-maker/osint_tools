@@ -37,6 +37,8 @@ tags:
 source: bellingcat-toolkit
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- rootabout-wayback-reverse-image
 ---
 
 # RootAbout

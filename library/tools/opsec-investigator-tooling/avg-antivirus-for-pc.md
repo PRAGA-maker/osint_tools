@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- avg-antivirus-for-mac
 ---
 
 # AVG Antivirus (for PC)

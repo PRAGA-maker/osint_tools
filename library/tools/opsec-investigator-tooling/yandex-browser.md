@@ -30,6 +30,17 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- yandex
+- yandex-image-search
+- yandex-images
+- yandex-mail
+- yandex-maps
+- yandex-russia
+- yandex-translate
+- yandex-video-search
+- yandex-wordstat
+- yandexmaps
 ---
 
 # Yandex Browser

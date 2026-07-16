@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- smallseotools-backlink-checker
+- smallseotools-plagiarism-checker
 ---
 
 # SmallSEOTools

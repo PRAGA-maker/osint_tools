@@ -22,12 +22,18 @@ costNote: Searching and seeing record hits is free; viewing full record images, 
 opsec: active
 opsecNote: Viewing records and saving them to a tree happens behind an Ancestry login tied to your subscription; activity is logged to your account. Other users can sometimes see that a tree/record was viewed. Use a dedicated research account, not your personal genealogy account.
 humanInLoop: true
-humanInLoopReason: [account-login, payment-wall-partial]
+humanInLoopReason:
+- account-login
+- payment-wall-partial
 bestInteractionPattern: web-manual
 trust: trusted
 trustNote: Operated by Ancestry.com LLC; one of the largest commercial genealogy databases with billions of indexed historical records.
 missingPersonsRelevance: high
-coverage: [us, uk, ca, global]
+coverage:
+- us
+- uk
+- ca
+- global
 auth: account
 api: false
 localInstall: false
@@ -39,6 +45,10 @@ tags:
 source: awesome-osint
 lastVerified: '2026-06-13'
 enrichment: full
+relatedTools:
+- ancestry-com
+- lauderdale-county
+- yearbooks-high-school-yearbooks-ancestry
 ---
 
 # Ancestry

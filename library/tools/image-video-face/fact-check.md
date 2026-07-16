@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- debunking-false-stories-archives
+- scicheck
 ---
 
 # Fact Check

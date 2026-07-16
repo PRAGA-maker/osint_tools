@@ -38,6 +38,9 @@ tags:
 source: metaosint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- behindthenames
+- international-name-generator
 ---
 
 # Behind the Name: Arabic Names

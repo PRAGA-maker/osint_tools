@@ -31,7 +31,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- osint-framework
+- osint-framework-2
 aliases:
 - osintframework.com
 - OSINT Framework

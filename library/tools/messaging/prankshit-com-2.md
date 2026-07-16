@@ -29,7 +29,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- prankshit-com
 aliases:
 - Fake WhatsApp Chat Generator
 - prankshit

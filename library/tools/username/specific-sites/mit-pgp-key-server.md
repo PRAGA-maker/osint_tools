@@ -34,7 +34,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- mit-pgp-public-key-server
+- places2
+- tweetmap
 aliases:
 - pgp.mit.edu
 - MIT public key server

@@ -33,6 +33,7 @@ invitationOnly: false
 relatedTools:
 - epieos
 - holehe
+- email-sherlock
 aliases:
 - EmailSherlock
 - emailsherlock.com

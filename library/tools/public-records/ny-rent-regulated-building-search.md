@@ -31,6 +31,7 @@ registration: false
 invitationOnly: false
 relatedTools:
 - royalmail-com
+- new-york-state
 aliases:
 - NY HCR Building Search
 - rent stabilized building lookup

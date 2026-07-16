@@ -32,6 +32,7 @@ registration: false
 relatedTools:
 - openstreetmap
 - openinfrastructuremap
+- openrailwaymap
 aliases:
 - Open Railway Map
 - ORM

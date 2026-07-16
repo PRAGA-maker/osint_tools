@@ -33,6 +33,7 @@ registration: true
 relatedTools:
 - whatsmyname-web
 - wayback-machine
+- mixi-japan
 aliases:
 - mixi.jp
 - sns.mixi.co.jp

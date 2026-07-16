@@ -35,6 +35,7 @@ invitationOnly: false
 relatedTools:
 - sherlock
 - maigret
+- leaklooker
 aliases:
 - woj-ciech/socialpath
 tags:

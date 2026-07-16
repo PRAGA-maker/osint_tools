@@ -33,6 +33,11 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- firms
+- nasa-earthdata-search
+- nasa-firms
+- nasa-worldview
 ---
 
 # NASA Kids Club

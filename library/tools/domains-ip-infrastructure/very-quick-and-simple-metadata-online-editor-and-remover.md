@@ -33,6 +33,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- online-metadata-viewer-and-editor
 ---
 
 # VERY QUICK and SIMPLE metadata online editor and remover

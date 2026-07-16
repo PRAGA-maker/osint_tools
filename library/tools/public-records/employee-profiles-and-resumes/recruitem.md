@@ -29,7 +29,12 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- google-to-search-profiles-on-dribbble
+- google-to-search-profiles-on-github
+- google-to-search-profiles-on-stack-overflow
+- google-to-search-profiles-on-twitter
+- google-to-search-profiles-on-xing
 aliases: []
 tags: []
 source: arf-seed

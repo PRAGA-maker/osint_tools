@@ -29,7 +29,11 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- exonerator
+- exonerator-ip-address-checker
+- tor-browser
+- tor-project
 aliases: []
 tags: []
 source: arf-seed

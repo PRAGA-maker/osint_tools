@@ -39,6 +39,7 @@ relatedTools:
 - truepeoplesearch
 - fastpeoplesearch
 - whitepages
+- dob-search-death-records
 aliases:
 - DOBSearch
 - dobsearch.com

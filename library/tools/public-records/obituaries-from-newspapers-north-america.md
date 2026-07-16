@@ -34,6 +34,8 @@ localInstall: false
 registration: false
 relatedTools:
 - billiongraves-com
+- legacy
+- legacy-com
 aliases:
 - Legacy.com
 - newspaper obituaries

@@ -32,6 +32,8 @@ registration: false
 relatedTools:
 - pimeyes
 - facecheck-id
+- pictriev
+- pictriev-com
 aliases:
 - PicTriev
 - pictriev.com

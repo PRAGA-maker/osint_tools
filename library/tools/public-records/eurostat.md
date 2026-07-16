@@ -30,6 +30,17 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- e-justice-europa-eu
+- eu-consolidated-corporate-registers
+- eu-sanctions-tool
+- europa-eu
+- europa-press-releases
+- european-commission-home-affairs
+- european-union-open-data-portal
+- frontex-migratory-map
+- inspire-geoportal
+- vat-number-validation
 ---
 
 # Eurostat

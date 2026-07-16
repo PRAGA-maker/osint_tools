@@ -29,7 +29,9 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- robotsdisallowed
+- seclists
 aliases: []
 tags: []
 source: arf-seed

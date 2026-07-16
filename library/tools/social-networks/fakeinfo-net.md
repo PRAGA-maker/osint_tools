@@ -33,6 +33,13 @@ registration: false
 relatedTools:
 - zeoob-com
 - create-spoof-fake-text-sms-messages
+- fake-company-name-generator
+- fake-drivers-license-generator
+- fake-tiktok-profile-generator
+- fake-youtube-channel-generator
+- fakeinfo
+- random-face-generator
+- twitter-profile-generator
 aliases:
 - Fake Information Generator
 - fakeinfo

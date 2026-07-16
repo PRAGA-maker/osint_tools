@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- cc-search
+- creative-commons-attribution-sharealike-4-0-international
 ---
 
 # cc license

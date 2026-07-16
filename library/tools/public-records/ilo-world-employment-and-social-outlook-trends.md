@@ -30,6 +30,9 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- ilostat
+- international-standard-classification-of-occupations
 ---
 
 # ILO World Employment and Social Outlook Trends

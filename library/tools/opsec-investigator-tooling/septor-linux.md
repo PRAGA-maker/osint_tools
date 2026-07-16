@@ -30,6 +30,8 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- hugin
 ---
 
 # Septor Linux

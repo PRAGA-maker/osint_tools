@@ -26,7 +26,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- one-liner-osint
+- osint-tools-yogsec
 aliases:
 - yogsec
 - Abhinav Singwal

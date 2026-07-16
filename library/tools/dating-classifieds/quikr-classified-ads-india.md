@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- quikr-india-classifieds
 ---
 
 # Quikr Classified Ads (India)

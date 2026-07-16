@@ -33,6 +33,8 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- mcafee-internet-security-for-mac
 ---
 
 # McAfee Anti-Virus (for PC)

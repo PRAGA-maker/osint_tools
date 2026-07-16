@@ -32,6 +32,7 @@ localInstall: false
 registration: false
 relatedTools:
 - dumpor-instagram-search
+- threads-net
 aliases:
 - Threads.net
 - Meta Threads

@@ -30,6 +30,14 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- amazon
+- amazon-com
+- amazon-pay
+- amazon-registry-search
+- amazon-rekognition
+- amazon-sns
+- us-east-1-console-aws-amazon-com
 ---
 
 # AWS Public Datasets

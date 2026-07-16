@@ -30,6 +30,7 @@ localInstall: false
 registration: false
 relatedTools:
 - pixelatomy-com
+- discord-bots
 aliases:
 - discordbotlist.com
 - Discord Bot List servers

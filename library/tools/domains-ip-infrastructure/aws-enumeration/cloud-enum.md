@@ -29,7 +29,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- initstring-linkedin2username
 aliases: []
 tags: []
 source: arf-seed

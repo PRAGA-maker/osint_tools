@@ -37,6 +37,8 @@ registration: false
 relatedTools:
 - start-me
 - osint-combine
+- osint-framework
+- osint-framework-3
 aliases:
 - osintframework.com
 - lockfale/OSINT-Framework

@@ -33,6 +33,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- mksub
+- trickest-inventory
 ---
 
 # MKPATH

@@ -35,6 +35,13 @@ invitationOnly: false
 relatedTools:
 - court-cases-results
 - searchsystems-birth-records
+- arrest-warrants
+- black-book-online-criminal-search
+- free-aviation-records-black-book-online
+- jail-records
+- nationwide-county-court-records-by-state-and
+- property-search-public-records-by-state
+- sex-offender-search
 aliases:
 - Black Book Online criminal search
 - blackbookonline.info

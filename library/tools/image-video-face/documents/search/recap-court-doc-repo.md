@@ -45,6 +45,10 @@ tags:
 source: arf-seed
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- courtlistener
+- courtlistener-recap
+- free-law-recap-archive
 ---
 
 # RECAP Archive (Free Law Project)

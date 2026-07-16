@@ -40,6 +40,8 @@ tags:
 source: inteltechniques-tools
 lastVerified: ''
 enrichment: full
+relatedTools:
+- genealogy-bank
 ---
 
 # GenealogyBank SSDI

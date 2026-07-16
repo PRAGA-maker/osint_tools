@@ -30,6 +30,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- sesric-basic-social-and-economic-indicators
 ---
 
 # SESRIC Databases

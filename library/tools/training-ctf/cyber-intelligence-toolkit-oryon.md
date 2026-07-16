@@ -34,6 +34,8 @@ tags:
 source: gh-topic-osint-framework
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- oryon-querytool
 ---
 
 # Cyber Intelligence Toolkit (oryon)

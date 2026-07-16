@@ -31,6 +31,9 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- acled-data-crisis-map
+- us-crisis-monitor
 ---
 
 # ACLED (Armed Conflict Location & Event Data Project)

@@ -29,6 +29,8 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- submarine-tracker
 ---
 
 # Military Ship Tracker

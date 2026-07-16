@@ -30,6 +30,12 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- electronic-frontier-foundation-eff-tools
+- https-everywhere
+- panopticlick
+- privacy-badger
+- surveilliance-self-defense
 ---
 
 # coveryourtracks.eff.org

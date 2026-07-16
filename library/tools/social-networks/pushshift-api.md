@@ -34,6 +34,8 @@ relatedTools:
 - pullpush
 - arctic-shift-2
 - redarcs
+- files-pushshift-io-reddit
+- search-twitter-users
 aliases:
 - Pushshift
 - pushshift.io

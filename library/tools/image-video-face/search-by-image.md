@@ -40,6 +40,8 @@ tags:
 source: bellingcat-toolkit
 lastVerified: '2026-07-11'
 enrichment: full
+relatedTools:
+- opera
 ---
 
 # Search by Image (browser extension)

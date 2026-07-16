@@ -32,6 +32,7 @@ localInstall: false
 registration: false
 relatedTools:
 - familysearch
+- geneologyintime-family-tree-search-engine
 aliases:
 - GenealogyInTime Magazine
 - Genealogy Search Engine

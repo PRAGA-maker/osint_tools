@@ -33,6 +33,16 @@ registration: false
 invitationOnly: false
 relatedTools:
 - naver-com
+- yandex
+- yandex-browser
+- yandex-image-search
+- yandex-images
+- yandex-mail
+- yandex-maps
+- yandex-russia
+- yandex-translate
+- yandex-wordstat
+- yandexmaps
 aliases:
 - Yandex Video
 tags:

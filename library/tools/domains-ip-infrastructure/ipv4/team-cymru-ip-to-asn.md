@@ -29,7 +29,9 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- team-cyru-ip-to-asn-lookup
+- totalhash
 aliases: []
 tags: []
 source: arf-seed

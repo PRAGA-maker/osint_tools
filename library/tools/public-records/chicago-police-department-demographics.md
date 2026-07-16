@@ -29,6 +29,11 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- george-floyd-where-black-people-are-most-disproportionately-killed-by-police
+- iowa-cities-police-budgets
+- maine-county-law-enforcement-discipline-chart
+- pa-ppp-database
 ---
 
 # Chicago Police Department Demographics

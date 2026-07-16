@@ -30,6 +30,9 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- cosint-osint-on-cars
+- osintcurious
 ---
 
 # The OSINT Puppeteer

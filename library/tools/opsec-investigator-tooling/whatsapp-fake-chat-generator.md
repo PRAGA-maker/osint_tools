@@ -33,6 +33,8 @@ tags:
 source: osintambition-social
 lastVerified: ''
 enrichment: full
+relatedTools:
+- fake-whatsapp-chat-generator
 ---
 
 # WhatsApp Fake Chat Generator

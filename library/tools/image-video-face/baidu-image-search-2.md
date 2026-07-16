@@ -45,6 +45,16 @@ tags:
 source: toddington-resources
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- baidu
+- baidu-china
+- baidu-com
+- baidu-image-search
+- baidu-images
+- baidu-maps
+- baidu-translate
+- baiduknows-search-engine-china
+- baike-baidu-chinese-language
 ---
 
 # Baidu Image Search

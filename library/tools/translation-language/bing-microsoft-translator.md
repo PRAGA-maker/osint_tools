@@ -29,6 +29,17 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- bing
+- bing-creations
+- bing-images
+- bing-ip-search
+- bing-maps
+- bing-news
+- bing-translate
+- bing-videos
+- bing-webmaster-tools
+- see-it-search-it
 ---
 
 # Bing Microsoft Translator

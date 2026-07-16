@@ -30,7 +30,8 @@ localInstall: true
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- pdf-tools
 aliases: []
 tags: []
 source: arf-seed

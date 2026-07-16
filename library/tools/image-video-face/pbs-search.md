@@ -31,6 +31,7 @@ localInstall: false
 registration: false
 relatedTools:
 - google-reverse-image-search
+- pbs-television-united-states
 aliases:
 - pbs.org/search
 tags:

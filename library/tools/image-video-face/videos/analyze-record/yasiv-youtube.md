@@ -32,7 +32,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: true
-relatedTools: []
+relatedTools:
+- reddit-visualization
 aliases:
 - YASIV
 - Youtube Related Videos Visualization

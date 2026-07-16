@@ -7,8 +7,14 @@ category: geolocation
 path:
 - geolocation
 bestFor: Cross-checking a location with Microsoft's aerial/3D imagery, directions, and POI/business search as an independent map source.
-selectorsIn: [address, geolocation, name]
-selectorsOut: [address, geolocation, employer-org]
+selectorsIn:
+- address
+- geolocation
+- name
+selectorsOut:
+- address
+- geolocation
+- employer-org
 status: live
 pricing: free
 costNote: Free to use in the browser; the Bing Maps / Azure Maps developer APIs require an account and key for programmatic access.
@@ -20,16 +26,37 @@ bestInteractionPattern: web-manual
 trust: trusted
 trustNote: First-party Microsoft mapping service; map data now sourced from TomTom, OpenStreetMap and others. Authoritative, though note Streetside and Bird's Eye oblique imagery were removed in 2025.
 missingPersonsRelevance: medium
-coverage: [global]
+coverage:
+- global
 auth: none
 api: true
 localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: [baidu-maps, arcgis, batchgeo]
-aliases: [microsoft-maps, bing-maps-platform]
-tags: [mapping, aerial-imagery, 3d, directions, poi]
+relatedTools:
+- baidu-maps
+- arcgis
+- batchgeo
+- bing
+- bing-creations
+- bing-images
+- bing-ip-search
+- bing-microsoft-translator
+- bing-news
+- bing-translate
+- bing-videos
+- bing-webmaster-tools
+- see-it-search-it
+aliases:
+- microsoft-maps
+- bing-maps-platform
+tags:
+- mapping
+- aerial-imagery
+- 3d
+- directions
+- poi
 source: arf-seed
 lastVerified: '2026-06-13'
 enrichment: full

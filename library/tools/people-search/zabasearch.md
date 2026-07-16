@@ -35,6 +35,7 @@ relatedTools:
 - spokeo
 - familytreenow
 - thatsthem-phone-search
+- zaba-search
 aliases:
 - Zaba Search
 - zabasearch.com

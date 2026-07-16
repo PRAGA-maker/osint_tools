@@ -38,6 +38,16 @@ deprecated: false
 relatedTools:
 - google-maps
 - openstreetmap
+- yandex
+- yandex-browser
+- yandex-image-search
+- yandex-images
+- yandex-mail
+- yandex-russia
+- yandex-translate
+- yandex-video-search
+- yandex-wordstat
+- yandexmaps
 aliases:
 - Yandex Maps
 - Яндекс.Карты

@@ -30,6 +30,16 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- baidu
+- baidu-china
+- baidu-com
+- baidu-image-search
+- baidu-image-search-2
+- baidu-images
+- baidu-maps
+- baiduknows-search-engine-china
+- baike-baidu-chinese-language
 ---
 
 # Baidu Translate

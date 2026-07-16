@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - nanpa-area-code-lookup
 - twilio-lookup
+- nanpa-area-code-query
 aliases:
 - NANPA area code map
 - North American area code map

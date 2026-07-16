@@ -33,6 +33,17 @@ registration: false
 relatedTools:
 - whatsmyname-web
 - go-sherlock
+- 1c-database-converter
+- awesome-osint-mcp-servers
+- counter-osint-guide-for-russians
+- fravia-soxoj
+- gitcolombo
+- maigret
+- maigret-via-socid-extractor-soxoj-ecosystem
+- mailto-analyzer
+- osint-namecheckers-list
+- socid-extractor
+- username-generation-guide
 aliases:
 - soxoj/marple
 tags:

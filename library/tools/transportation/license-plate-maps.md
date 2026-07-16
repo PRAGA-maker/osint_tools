@@ -33,6 +33,11 @@ tags:
 source: bellingcat-toolkit
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- about-maps-and-satellites
+- bellingcat-meta-content-library
+- bellingcat-s-online-investigation-toolkit-2
+- china-related-resources
 ---
 
 # License Plate Maps

@@ -34,6 +34,8 @@ tags:
 source: uk-osint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- create-spoof-fake-twitter-posts-site
 ---
 
 # Create Spoof / Fake Facebook Chats Site

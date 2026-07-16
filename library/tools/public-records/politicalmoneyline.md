@@ -36,6 +36,8 @@ tags:
 source: inteltechniques-tools
 lastVerified: ''
 enrichment: full
+relatedTools:
+- political-moneyline-us
 ---
 
 # PoliticalMoneyLine

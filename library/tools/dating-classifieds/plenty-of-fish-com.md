@@ -9,8 +9,18 @@ path:
 bestFor: Finding a subject's dating profile (photo, age, approximate city, self-described traits) on a large free dating platform.
 input: Username, age range, location, profile filters
 output: Matching/suggested profiles with photos, age, approximate location, and bio text
-selectorsIn: [username, name, geolocation, image, dob]
-selectorsOut: [username, image, geolocation, physical-description, dob]
+selectorsIn:
+- username
+- name
+- geolocation
+- image
+- dob
+selectorsOut:
+- username
+- image
+- geolocation
+- physical-description
+- dob
 status: live
 pricing: freemium
 costNote: Free to create an account and browse/search profiles; premium (Match Group) adds messaging/visibility features not needed for basic OSINT viewing.
@@ -23,16 +33,23 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: POF is a large, real Match Group dating platform; entry reasoned from known function, not re-verified. Username-based search is limited by the platform.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: account
 api: false
 localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
-aliases: [POF, PlentyOfFish]
-tags: [dating, profiles, match-group]
+relatedTools:
+- plentyoffish
+aliases:
+- POF
+- PlentyOfFish
+tags:
+- dating
+- profiles
+- match-group
 source: arf-seed
 lastVerified: ''
 enrichment: full

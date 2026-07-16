@@ -31,6 +31,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- parler-archive-search
+- ppp-adatascienti-st
 ---
 
 # Parler archive

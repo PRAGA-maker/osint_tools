@@ -32,7 +32,9 @@ localInstall: true
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- line-me
+- line-play
 aliases: []
 tags: []
 source: arf-seed

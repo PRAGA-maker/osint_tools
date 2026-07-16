@@ -31,6 +31,17 @@ registration: false
 invitationOnly: false
 relatedTools:
 - digital-footprint-check
+- 1c-database-converter
+- awesome-osint-mcp-servers
+- counter-osint-guide-for-russians
+- fravia-soxoj
+- gitcolombo
+- maigret
+- maigret-via-socid-extractor-soxoj-ecosystem
+- mailto-analyzer
+- marple
+- socid-extractor
+- username-generation-guide
 aliases:
 - soxoj namecheckers
 - username tools list

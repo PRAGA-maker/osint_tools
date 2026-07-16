@@ -31,7 +31,18 @@ auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- here
+- r-opendirectories
+- reddit-askmeanything
+- reddit-com
+- reddit-com-2
+- reddit-darknet
+- reddit-deep-web
+- reddit-guide-to-opting-out-of-background-check-websites
+- reddit-old-reddit-search
+- reddit-onions
+- reddit-r-translator
 aliases:
 - reddit.com
 tags:

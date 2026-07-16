@@ -30,7 +30,10 @@ localInstall: false
 registration: true
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- buckets-grayhatwarfare-com
+- grayhatwarfare
+- url-shorteners-search
 aliases: []
 tags: []
 source: arf-seed

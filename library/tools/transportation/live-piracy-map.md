@@ -29,6 +29,8 @@ tags: []
 source: osint4all
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- imb-piracy-and-armed-robbery-map
 ---
 
 # Live Piracy Map

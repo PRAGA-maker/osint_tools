@@ -32,7 +32,10 @@ auth: account
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- myheritage
+- myheritage-com
+- yearbooks-myheritage
 aliases: []
 tags:
 - photo-enhance

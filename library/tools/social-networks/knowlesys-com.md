@@ -39,6 +39,9 @@ tags:
 source: uk-osint
 lastVerified: '2026-07-14'
 enrichment: full
+relatedTools:
+- knowlesys-com-2
+- knowlesys-com-4
 ---
 
 # Knowlesys Pinterest OSINT Methods (article)

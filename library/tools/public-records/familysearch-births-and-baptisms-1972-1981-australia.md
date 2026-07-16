@@ -35,6 +35,16 @@ registration: true
 relatedTools:
 - findmypast-ie
 - ancestry
+- alabama-deaths
+- colorado-statewide-marriage-index
+- family-search
+- familysearch
+- familysearch-2
+- familysearch-deaths-and-burials-1816-1980-australia
+- familysearch-free-family-trees-and-genealogy-archives-familysearch-org
+- familysearch-guessing-a-name-variation
+- familysearch-org
+- familysearch-research-wiki
 aliases:
 - Australia Births and Baptisms 1792-1981
 - FamilySearch collection 1770729

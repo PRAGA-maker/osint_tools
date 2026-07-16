@@ -29,7 +29,10 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- ip-finger-prints
+- ip-fingerprints-reverse-ip-lookup
+- ipfingerprints
 aliases: []
 tags: []
 source: arf-seed

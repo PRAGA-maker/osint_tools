@@ -22,12 +22,18 @@ bestInteractionPattern: web-manual
 trust: unverified
 trustNote: Small developer-blog utility; the thumbnail it returns is simply the public YouTube image CDN URL, easy to verify.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: [codeofaninja-com-2, copyseeker-net]
+relatedTools:
+- codeofaninja-com-2
+- copyseeker-net
+- codeofaninja-com
+- find-instagram-user-id
+- find-instagram-user-id-code-of-a-ninja
 aliases: []
 tags:
 - youtube

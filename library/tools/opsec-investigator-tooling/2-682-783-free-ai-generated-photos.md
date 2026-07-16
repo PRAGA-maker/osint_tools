@@ -30,6 +30,9 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- face-anonimyzer
+- face-generator
 ---
 
 # 2,682,783 free AI generated photos

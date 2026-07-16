@@ -32,6 +32,8 @@ tags:
 source: metaosint
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- coinatmradar-com
 ---
 
 # Bitcoin ATM map

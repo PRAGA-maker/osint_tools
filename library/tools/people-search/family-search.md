@@ -36,6 +36,16 @@ relatedTools:
 - familysearch-s-united-states-record-collections
 - findmypast
 - cyndi-s-list
+- alabama-deaths
+- colorado-statewide-marriage-index
+- familysearch
+- familysearch-2
+- familysearch-births-and-baptisms-1972-1981-australia
+- familysearch-deaths-and-burials-1816-1980-australia
+- familysearch-free-family-trees-and-genealogy-archives-familysearch-org
+- familysearch-guessing-a-name-variation
+- familysearch-org
+- familysearch-research-wiki
 aliases:
 - FamilySearch
 - familysearch.org

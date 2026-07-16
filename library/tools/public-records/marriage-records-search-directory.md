@@ -33,6 +33,16 @@ registration: false
 relatedTools:
 - jail-and-inmate-records-search-directory
 - familysearch
+- court-records-search-directory
+- free-public-records-directory-us
+- laws-and-codes-search-directory-by-state
+- os-birth-records
+- os-death-records
+- os-divorce-records
+- permits-and-inspections-search-by-state
+- public-records-directory
+- sex-offender-us
+- unclaimed-and-abandoned-property-search-directory
 aliases:
 - OnlineSearches marriage records
 - marriage records directory

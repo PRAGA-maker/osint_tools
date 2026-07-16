@@ -29,7 +29,11 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- highwire-free-online-full-text-articles
+- palladio
+- regular-expression-analyzer
+- swap-stanford-edu
 aliases: []
 tags: []
 source: arf-seed

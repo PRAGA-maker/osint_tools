@@ -37,6 +37,8 @@ relatedTools:
 - instahunt
 - toutatis-2
 - osintgram
+- instagram
+- instagram-hashtag-search
 aliases:
 - Instagram explore locations
 - Instagram location search

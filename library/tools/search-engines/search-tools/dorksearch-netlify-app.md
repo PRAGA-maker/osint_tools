@@ -29,7 +29,11 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- api-guesser
+- deaditarchive-netlify-app
+- reddit-timer
+- search-it
 aliases: []
 tags: []
 source: arf-seed

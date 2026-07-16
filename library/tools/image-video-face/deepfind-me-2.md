@@ -24,12 +24,16 @@ bestInteractionPattern: web-manual
 trust: community
 trustNote: deepfind.me is a known OSINT toolkit site aggregating mapping utilities; the imagery itself comes from established providers and is directly verifiable.
 missingPersonsRelevance: high
-coverage: [global]
+coverage:
+- global
 auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: [current-location, creepy]
+relatedTools:
+- current-location
+- creepy
+- deepfind-me
 aliases:
 - DeepFind
 tags:

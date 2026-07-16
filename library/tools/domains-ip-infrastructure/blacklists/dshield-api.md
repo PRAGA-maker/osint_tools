@@ -29,7 +29,8 @@ localInstall: false
 registration: false
 invitationOnly: false
 deprecated: false
-relatedTools: []
+relatedTools:
+- sans-internet-storm-center-diary-full-text
 aliases: []
 tags: []
 source: arf-seed

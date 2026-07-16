@@ -33,6 +33,9 @@ tags:
 source: toddington-resources
 lastVerified: ''
 enrichment: stub
+relatedTools:
+- birdnet
+- cornell-legal-information-institute-united-states
 ---
 
 # Lexcraft Cornell University Legal Wiki (Canada)

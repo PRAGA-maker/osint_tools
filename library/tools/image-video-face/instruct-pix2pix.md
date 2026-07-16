@@ -32,6 +32,16 @@ tags:
 source: cyb-detective
 lastVerified: ''
 enrichment: full
+relatedTools:
+- efficientnetv2
+- get-text-from-video
+- hugging-face-ai-detector
+- huggingface-co
+- huggingface-co-4
+- kosmos-2
+- pix2pix-video
+- scene-edit-detection
+- youtube-whisperer
 ---
 
 # Instruct Pix2pix

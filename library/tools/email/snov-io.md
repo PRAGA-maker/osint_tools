@@ -38,6 +38,8 @@ tags:
 source: awesome-osint
 lastVerified: ''
 enrichment: full
+relatedTools:
+- snov-io-technology-checker
 ---
 
 # Snov.io

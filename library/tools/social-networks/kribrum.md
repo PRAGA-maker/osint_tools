@@ -35,6 +35,7 @@ registration: true
 relatedTools:
 - vk-search
 - brand24
+- kribrum-io
 aliases:
 - Крибрум
 - Kribrum Pro

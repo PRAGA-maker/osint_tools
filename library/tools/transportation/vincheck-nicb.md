@@ -36,6 +36,10 @@ tags:
 source: inteltechniques-tools
 lastVerified: ''
 enrichment: full
+relatedTools:
+- free-car-license-plate-lookup
+- vin-check-reports
+- vincheck-info
 ---
 
 # VINCheck (NICB)
