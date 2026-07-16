@@ -190,7 +190,6 @@ kind: group-index
 - **`people-looker-us`** (high) — Use when you have a US `name`, `phone`, `email` or `address` and want a consumer background-report aggregator to pull contact history, relat
 - **`people-search-2`** (high) — Use when you have a `name`, `phone`, or `address` and want a US people-search profile — returns address history, phone, associate (relatives
 - **`people-search-engine`** (high) — Use when you have a `name` or `username` and want a Google-powered search pre-scoped to people-finder and social sites — returns web links a
-- **`people-search-find-people-over-the-internet-for-free-white-pages`** (high) — OSINT tool: People search - Find people over the internet for free - White Pages.
 - **`people-search-results-vk`** (medium) — OSINT tool: People search results | VK.
 - **`people-search-tool`** (high) — Use when you have a `name`, `username`, `email`, or `phone` and want ready-made search-engine queries across Google/Bing/Yandex/Baidu — retu
 - **`people-search`** (high) — Use when you have a `name` and want a curated jump-off directory of people-search engines to run it through — returns links to address, phon

@@ -128,7 +128,6 @@ kind: group-index
 - **`dolphin-radar`** (high) — Use when you have a public Instagram `username` and want to monitor its behaviour over time — returns tracked follows/unfollows, likes, enga
 - **`douban`** (high) — Use when you have a `name`/`username` of a likely Chinese subject and want their books/film/music and interest-group activity — returns a `s
 - **`downgit`** (medium) — Create GitHub Resource Download Link
-- **`download-and-export-twitter-followers-into-excel-for-free`** (high) — OSINT tool: Download and Export Twitter Followers into Excel for Free.
 - **`download-tiktok-videos-without-watermark-for-free-tiktok-video-downloader-online`** (medium) — OSINT tool: Download TikTok Videos Without Watermark For Free - TikTok Video Downloader online.
 - **`download-twitter-videos-to-mp4-and-mp3-online-easy-and-free`** (medium) — OSINT tool: Download Twitter Videos to MP4 & MP3! Online Easy & Free.
 - **`downloader-instagram-addons-mozilla-org`** (high) — Use when you have a subject's Instagram `social-profile`/post and want to save the original media for analysis — returns downloaded `image`/
@@ -412,7 +411,6 @@ kind: group-index
 - **`montage-meedan-com`** (medium) — Search #YouTube video by date (uploaded or recording) and by geolocation.
 - **`mostly-harmless`** (high) — Use when you have a URL/`domain` or image and want to find where it's been posted on Reddit and who submitted it — a browser extension retur
 - **`mundimago-com`** (high) — OSINT tool: Mundimago.com.
-- **`mustbepresent`** (high) — OSINT tool: MustBePresent.
 - **`mymfb-com`** (high) — OSINT tool: mymfb.com.
 - **`myosint-training`** (high) — Use when you want to build OSINT skills or grab free practitioner tools — a reputable training provider (Micah Hoffman & Griffin Glynn) offe
 - **`myspace-com`** (high) — Use when you have a `username` or `name` and want to check for a legacy Myspace profile — returns a social-profile and old photos, mostly va
@@ -436,7 +434,6 @@ kind: group-index
 - **`ny-dolls-org`** (medium) — OSINT tool: NY Dolls.org.
 - **`nzbfriends`** (medium) — usenet search engine
 - **`o365chk`** (medium) — simple #Python script to check if there is an #Office365 instance linked to a particular domain and gathering information about this instanc
-- **`obitouka`** (high) — OSINT tool: Obitouka.
 - **`oblivion`** (medium) — Use when you have an `email`, `username` or `domain` and want to monitor and aggregate credential-leak exposure across breach sources — retu
 - **`odnoklassniki-russia`** (high) — Use when you have a `name` or `username` of a Russian/CIS subject and want their social profile — returns a `social-profile` with photos, co
 - **`oh365userfinder`** (medium) — A simple tool that shows if an #Office365 account is tied to a specific email address. It's possible to check an entire list of emails from 
@@ -658,7 +655,6 @@ kind: group-index
 - **`stweet`** (medium) — Opensource Python library for scraping tweets (by user, by hashtag, by keyword). NO LOGIN OR API KEY REQUIRED.
 - **`subreddit-stats-user-overlap`** (medium) — A tool to find similar subreddits. The higher the score of a subreddit in the list, the higher the probability that users of the original su
 - **`sully-gnome`** (medium) — detailed analysis of #Twitch streamer stats
-- **`tagboard`** (high) — OSINT tool: Tagboard.
 - **`tagdef`** (low) — Use when you have a hashtag from a subject's posts and want to know what it means and who uses it — returns the crowd-sourced definition plu
 - **`tagged-com`** (medium) — Use when you have a `username` or `name` and think the subject uses the Tagged social/dating network — returns `social-profile`, `name`, pho
 - **`tailwind`** (low) — Social media scheduling tool including Pinterest.
@@ -699,7 +695,6 @@ kind: group-index
 - **`tinder-2`** (high) — Use when you have a subject's approximate location and rough identity and want to find their dating-app profile within a radius — returns so
 - **`tokimeki-blue`** (high) — Use when you have a Bluesky `username` (handle) and want a TweetDeck-style, multi-column view of that account's posts, feeds and media to mo
 - **`tokinsights-com`** (medium) — Use when you have a TikTok `username`/handle and want historical follower/engagement analytics and tracked account data — returns social-pro
-- **`tokkit`** (high) — TikTok bulk content/data scraper (CLI).
 - **`toolzu`** (low) — Instagram viewer and analytics tool.
 - **`toutatis-2`** (high) — Use when you have an Instagram `username`/ID and want the obfuscated contact data Instagram holds — returns partially-masked `email` and `ph
 - **`toutatis`** (high) — Use when you have an Instagram `username` and want to pull the account's hidden contact data — returns obfuscated email/phone, the numeric u

@@ -21,7 +21,6 @@ kind: group-index
 - **`blackbird-2`** (high) — Use when you have a `username` (or email/name) and want fast enumeration across hundreds of sites with profile metadata — returns `social-pr
 - **`blackbird`** (high) — Use when you have a `username` or `email` and want to sweep 600+ sites for accounts under that identity — returns a list of matching `social
 - **`check-usernames`** (high) — Use when you have a `username` and want to see which social networks it is registered on — returns a taken/available grid across ~150+ platf
-- **`checkuser`** (high) — OSINT tool: CheckUser.
 - **`commit-stream`** (high) — Use when you have a GitHub `username` or org and want the real name and email behind commits — returns committer names and emails harvested 
 - **`cupidcr4wl`** (high) — Use when you have a `username` or `phone` and want to check whether the subject appears on dating, hookup, fetish, cam, and adult platforms 
 - **`deleteme-digital-footprint-analyzer`** (medium) — Find and analyze your digital footprint; Sherlock-inspired, privacy-focused.
@@ -78,7 +77,6 @@ kind: group-index
 - **`sultan-username-search-tool-builder`** (high) — Use when you have a username and want to check it across many platforms at once — returns per-site profile URLs and hit/miss status for the 
 - **`thorndyke`** (high) — Use when you have a `username` and want a fast CLI account sweep — checks the handle's availability across 200+ websites and returns the `so
 - **`tookie-osint`** (high) — Use when you have a `username` and want to enumerate matching accounts across many sites from the command line — returns social-profile URLs
-- **`tools`** (high) — OSINT tool: Tools.
 - **`trace`** (high) — Use when you have a `username`, `email`, or `phone` and want a one-page sweep across 600+ sites plus breach and phone checks — returns socia
 - **`translit-net`** (high) — Use when you have a `name` or `username` in Latin letters and want its Cyrillic (or other-script) spelling to widen search — returns transli
 - **`unavatar`** (high) — Use when you have an `email`, `username`, or `domain` and want the associated avatar/profile picture pulled from across platforms — returns 
