@@ -8,7 +8,7 @@ kind: group-index
 
 ## Sub-groups
 - **`bitcoin/`** — 5 skill(s) below.
-- **`chain-analysis-platforms/`** — 5 skill(s) below.
+- **`chain-analysis-platforms/`** — 4 skill(s) below.
 - **`defi-and-dex-tracing/`** — 2 skill(s) below.
 - **`mixer-tracking/`** — 4 skill(s) below.
 - **`monero/`** — 2 skill(s) below.

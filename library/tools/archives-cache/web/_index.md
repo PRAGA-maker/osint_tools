@@ -16,7 +16,7 @@ kind: group-index
 - **`pdf-my-url`** (medium) — Generating quick PDF evidence captures of web pages
 - **`screenshots-com`** (medium) — Visual timeline checks of website appearance changes
 - **`textfiles-com`** (medium) — Researching legacy digital culture and historical text archives
-- **`uk-web-archive`** (medium) — Accessing preserved UK web content and historical domain captures
+- **`uk-web-archive`** (medium) — Use when you have a UK `domain`, site title, `name`, or keyword and want historical captures of UK web content — returns domain, metadata-ex
 - **`wayback-machine-chrome-extension`** (medium) — Fast archive lookups while browsing dead or changed pages
 - **`waybackpack`** (medium) — Batch export of historical snapshots for offline analysis
 - **`web-archive-ru`** (medium) — Supplemental archive checks when mainstream archives lack coverage

@@ -7,7 +7,6 @@ kind: group-index
 # financial-crypto/chain-analysis-platforms
 
 ## Skills here
-- **`bitcoin-abuse-database`** (medium) — Identifying Bitcoin addresses linked to scams and ransomware
 - **`blockchair`** (medium) — Cross-chain address and transaction search with privacy-friendly interface
 - **`blockscan`** (medium) — EVM-chain portfolio aggregation and cross-chain transaction tracking
 - **`etherscan`** (medium) — Ethereum and EVM transaction analysis, smart contract inspection, token tracking

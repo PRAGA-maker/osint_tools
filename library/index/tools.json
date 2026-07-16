@@ -21720,41 +21720,55 @@
   {
     "id": "uk-web-archive",
     "name": "UK Web Archive",
-    "description": "Accessing preserved UK web content and historical domain captures",
+    "description": "Use when you have a UK `domain`, site title, `name`, or keyword and want historical captures of UK web content — returns domain, metadata-exif.",
     "url": "https://www.webarchive.org.uk/ukwa/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "web"
     ],
-    "bestFor": "Accessing preserved UK web content and historical domain captures",
-    "input": "URL, title, topic, or keyword",
-    "output": "Archived UK website records and preserved snapshots",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding preserved snapshots of UK websites (including deleted/changed pages) archived under legal deposit by the British Library.",
+    "selectorsIn": [
+      "domain",
+      "name"
+    ],
+    "selectorsOut": [
+      "domain",
+      "metadata-exif"
+    ],
     "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to search and view archived pages. Some material is only viewable on-site at legal-deposit libraries, but much is openly accessible online.",
     "opsec": "passive",
-    "opsecNote": "Service availability has been unstable following cyberattack-related disruptions.",
+    "opsecNote": "Passive read of an archive — the original site owner is not notified you viewed a capture. No login. Since the archive stores a copy, it may preserve content the live site has since removed; that is the point, but note the capture is dated.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the British Library and UK legal-deposit libraries; captures are authentic, timestamped preservation copies.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "UK Web Archive",
+      "UKWA",
+      "webarchive.org.uk",
+      "British Library web archive"
+    ],
+    "tags": [
+      "archives",
+      "web-archive",
+      "uk"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/web/uk-web-archive.md"
   },
   {
@@ -23097,50 +23111,60 @@
   {
     "id": "wikileaks",
     "name": "WikiLeaks",
-    "description": "Searching high-impact leaked document collections for historical context",
+    "description": "Use when you have a `name`, org, or topic and want to find them inside WikiLeaks' published leak collections — returns document-id, name, email.",
     "url": "https://wikileaks.org/",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "data-leaks"
     ],
-    "bestFor": "Searching high-impact leaked document collections for historical context",
-    "input": "Keyword, topic, date range, or document identifier",
-    "output": "Leaked document pages, files, and related publication context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Full-text searching high-impact leaked document/email collections (diplomatic cables, email dumps) for a person or organization.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name",
+      "email"
+    ],
     "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to read and search all published material; no account. Some historical collections/search endpoints are intermittently offline.",
     "opsec": "active",
-    "opsecNote": "Platform reliability is partial and interactions may carry legal, policy, and attribution exposure.",
+    "opsecNote": "Reading is technically passive, but accessing published classified/leaked material can carry legal, employment, or policy exposure in some jurisdictions and organizations, and the site may log requests. Use Tor/a sandbox and a sock-puppet; understand your own risk before querying named individuals.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Documents are primary leaked source material (often authentic and verifiable), but WikiLeaks curates selectively and adds partisan framing — verify individual documents, treat commentary skeptically.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "akp-email-database",
-      "dnc-email-database",
-      "gi-files",
-      "ice-patrol",
       "leaked-cables",
+      "dnc-email-database",
       "macron-campaign-emails",
       "sony-archives",
-      "wikileaks-search"
+      "gi-files"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "WikiLeaks",
+      "wikileaks.org"
+    ],
+    "tags": [
+      "data-leaks",
+      "archives",
+      "leaked-documents"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/data-leaks/wikileaks.md"
   },
   {
@@ -111832,46 +111856,6 @@
     "_file": "library/tools/financial-crypto/bindb-com.md"
   },
   {
-    "id": "bitcoin-abuse-database",
-    "name": "Bitcoin Abuse Database",
-    "description": "Identifying Bitcoin addresses linked to scams and ransomware",
-    "url": "https://bitcoinabuse.com/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto",
-      "chain-analysis-platforms"
-    ],
-    "bestFor": "Identifying Bitcoin addresses linked to scams and ransomware",
-    "input": "Bitcoin address to search against abuse reports",
-    "output": "Abuse reports, report dates, reporter comments, associated crime type classifications",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Public abuse reports from community; service noted to have received 75% spam in past operations. Use with caution for investigative confidence.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/chain-analysis-platforms/bitcoin-abuse-database.md"
-  },
-  {
     "id": "bitcoin-atm-map",
     "name": "Bitcoin ATM map",
     "description": "OSINT tool: Bitcoin ATM map.",
@@ -143177,48 +143161,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/image-color-picker.md"
-  },
-  {
-    "id": "image-forensic-ghiro-online",
-    "name": "Image Forensic (Ghiro Online)",
-    "description": "OSINT tool: Image Forensic (Ghiro Online).",
-    "url": "http://www.imageforensic.org/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Image Search and Identification",
-      "Image Analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "forensic-analyzer"
-    ],
-    "_file": "library/tools/image-video-face/image-forensic-ghiro-online.md"
   },
   {
     "id": "image-google-com",
@@ -202845,29 +202787,33 @@
   {
     "id": "intelligencex-linkedin-search",
     "name": "IntelligenceX LinkedIn Search",
-    "description": "Web-based LinkedIn search tool.",
+    "description": "Use when you have a `name` (plus optional employer/location) and want to build a precise LinkedIn people search — returns social-profile, employer-org.",
     "url": "https://intelx.io/tools?tab=linkedin",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Searching LinkedIn profiles via the IntelX tooling",
+    "bestFor": "Turning partial identity fields (name + employer/title/location) into a targeted LinkedIn profile search without guessing search syntax.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "employer-org"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "The IntelX web tool itself is free (no IntelX account needed). It hands the query off to LinkedIn, where you must be logged in to see results.",
+    "opsec": "active",
+    "opsecNote": "The final search runs on LinkedIn while you are logged in, so viewing a target's profile can trigger LinkedIn's \"who viewed your profile\" and connection suggestions. Use a sock-puppet LinkedIn account in private/anonymous browsing mode; do not run this from your real professional account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Intelligence X is an established OSINT provider; this tool is a query-builder that redirects to LinkedIn/Google — it stores nothing and simply constructs the search.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -202876,8 +202822,14 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "intelligence-x",
+      "intelligence-x-person-tools",
+      "facebook-graph-searcher-intelligencex"
+    ],
     "aliases": [
-      "IntelligenceX Linkedin"
+      "IntelligenceX LinkedIn",
+      "IntelX LinkedIn search"
     ],
     "tags": [
       "linkedin",
@@ -202885,18 +202837,8 @@
       "people-search"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "facebook-graph-searcher-intelligencex",
-      "intelligence-x",
-      "intelligence-x-2",
-      "intelligence-x-person-tools",
-      "intelligence-x-telegram-search",
-      "intelligencex",
-      "intelx-io",
-      "tools"
-    ],
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/people-search/intelligencex-linkedin-search.md"
   },
   {

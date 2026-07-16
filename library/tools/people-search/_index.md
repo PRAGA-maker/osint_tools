@@ -127,7 +127,7 @@ kind: group-index
 - **`inteligator-people-trace-united-states`** (high) — Use when you have a `name` (optionally + state) and want a US background-style report — returns address, phone, email, relatives and public-
 - **`intelius-people-search-engine`** (high) — Use when you have a US `name`, `phone`, or `address` and want a consolidated background profile — returns addresses, phones, relatives, and 
 - **`intelligence-x-person-tools`** (high) — Use when you have a `name`, `email`, `phone`, or `username` and want a launchpad of prebuilt search links into many people-search services a
-- **`intelligencex-linkedin-search`** (medium) — Web-based LinkedIn search tool.
+- **`intelligencex-linkedin-search`** (medium) — Use when you have a `name` (plus optional employer/location) and want to build a precise LinkedIn people search — returns social-profile, em
 - **`inteltechniques-osint`** (high) — Use when you have a `name`, `username`, `email`, `phone` or `domain` and want automated multi-source pivots — a free toolset that fires one 
 - **`intelx-io`** (high) — Use when you have an `email`, `domain`, `ip-address`, `crypto-wallet` or `username` and want breach/dark-web/archive hits — returns leaked r
 - **`internet-experts`** (medium) — OSINT tool: Internet Experts.
