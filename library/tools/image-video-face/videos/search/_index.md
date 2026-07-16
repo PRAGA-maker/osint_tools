@@ -15,7 +15,6 @@ kind: group-index
 - **`google-videos`** (high) — Use when you want to find video clips across the web by keyword (name, place, event) — returns video results from YouTube, news sites, and o
 - **`internet-archive-videos`** (high) — Use when you need archived/historical video — old broadcasts, uploads, or footage of a place/person/event — returns hosted video items with 
 - **`liveleak`** (low) — Use when chasing older user-uploaded incident/event video — but note LiveLeak shut down in 2021; treat as a defunct/archive-only lead.
-- **`metatube`** (high) — OSINT tool: Metatube.
 - **`search-youtube-by-location`** (high) — Use when you have a `geolocation`/place or a channel/keyword and want geotagged YouTube videos on a map — returns geolocation of videos and 
 - **`vines`** (high) — OSINT tool: Vines.
 - **`yahoo-video-search`** (high) — Use when you have a `name`/phrase and want a non-Google video index to find clips featuring a subject or place — returns video results (with

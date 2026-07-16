@@ -207,7 +207,6 @@ kind: group-index
 - **`find-my-facebook-id-3`** (high) — Use when you have a Facebook profile URL/`username` and want its stable numeric user ID — returns the numeric ID that anchors the profile ag
 - **`find-my-facebook-id`** (high) — Use when you have a Facebook profile/page/group URL or vanity `username` and want its stable numeric ID — returns the numeric Facebook ID th
 - **`find-my-snap-check-if-your-snapchat-account-was-leaked-on-the-2013-hack`** (medium) — OSINT tool: Find My Snap - Check if your SnapChat account was leaked on the 2013 hack..
-- **`find-twitter-followers`** (high) — OSINT tool: Find Twitter Followers.
 - **`finddit-viralharia`** (low) — Reddit search tool (Finddit).
 - **`findface`** (medium) — OSINT tool: FindFace.
 - **`first-tweet`** (high) — Use when you want the earliest tweet mentioning a keyword/link — DEFUNCT (the ctrlq.org/first tool is offline and Twitter's API changes brok
@@ -217,7 +216,6 @@ kind: group-index
 - **`follower-wonk-compare`** (medium) — this service allows you to find out how many followers two (or three) Twitter accounts have in common.
 - **`followeraudit`** (low) — OSINT tool: FollowerAudit.
 - **`followerwonk-tools-for-twitter-analytics-bio-search-and-more`** (medium) — OSINT tool: Followerwonk: Tools for Twitter Analytics, Bio Search and More.
-- **`forbes-com`** (high) — OSINT tool: forbes.com.
 - **`forcesreunited-co-uk`** (high) — Use when you have a UK military subject's `name`, unit, or service era and want to place them via a veterans' network — returns a member `so
 - **`free-people-search-tool`** (high) — Use when you have a `name` (plus location or company) and want a one-box hub that fans a search across LinkedIn, Twitter, GitHub, and Dribbb
 - **`fubar`** (high) — Use when you have a `username` or `name` and want to check Fubar, a long-running social/dating "online bar" network — returns `social-profil
@@ -340,7 +338,6 @@ kind: group-index
 - **`instagram-online-viewer-picbear`** (high) — OSINT tool: Instagram Online Viewer | Picbear.
 - **`instagram-reddit-and-snapchat`** (high) — OSINT tool: Instagram, Reddit & Snapchat.
 - **`instagram-scraper`** (medium) — Scrape info about accounts, posts, stories and comment
-- **`instagram-search-engine`** (high) — OSINT tool: Instagram Search Engine.
 - **`instagram-search-inteltechniques-method`** (high) — Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers
 - **`instagram-search`** (high) — OSINT tool: Instagram Search.
 - **`instagram-tool-inteltechniques-com`** (high) — Use when you have an Instagram `username` and want a one-stop panel of query shortcuts (profile, media, followers, location) — returns pre-b
@@ -430,7 +427,6 @@ kind: group-index
 - **`nairaland-com-2`** (high) — Use when you have a `username` or `name` and want to surface a person's posts, profile and self-disclosed details on Nairaland (Nigeria's la
 - **`nairaland-com`** (high) — Use when you have a `name`/`username` for a Nigerian subject and want their forum presence — returns a Nairaland profile, post history, self
 - **`namemc`** (high) — Use when you have a Minecraft `username` (or account UUID) and want its name-change history, skins, and profile — returns prior usernames an
-- **`natcen-ac-uk`** (high) — OSINT tool: natcen.ac.uk.
 - **`netvibes`** (high) — OSINT tool: Netvibes.
 - **`network-tool`** (low) — OSINT tool: Network Tool.
 - **`newsletter-fullstackrecruiter-net`** (high) — OSINT tool: newsletter.fullstackrecruiter.net.
@@ -623,7 +619,6 @@ kind: group-index
 - **`social-search-engine`** (high) — Use when you have a `name` or `username` and want to sweep several social networks at once from one box — returns social-profile links.
 - **`social-stats`** (medium) — OSINT tool: Social Stats.
 - **`social-trends`** (low) — OSINT tool: Social Trends.
-- **`socialbakers`** (high) — OSINT tool: SocialBakers.
 - **`socialbearing`** (high) — Use when you have an X/Twitter `username` and want analytics on their tweets — timeline stats, top tweets, engagement, and posting patterns 
 - **`socialblade`** (high) — Use when you have a social `username`/channel and want public statistics — follower history, estimated account age, rank, and linked handles
 - **`socialdata-api`** (medium) — Unofficial Twitter/X API alternative for data access.
@@ -837,7 +832,6 @@ kind: group-index
 - **`watools`** (high) — Use when you have a `phone` number and want to confirm it's on WhatsApp, grab its profile photo, and (via WA Watcher) track online activity 
 - **`web-stagram-com`** (high) — Use when you have an Instagram `username` and want a web-based public-profile viewer — but the domain no longer resolves, so treat as defunc
 - **`webasha-com`** (high) — Use when you're investigating an Instagram account (`username`/`name`) and want a step-by-step methodology (Google dorking, reverse image, s
-- **`websta-instagram-analytics`** (high) — OSINT tool: WEBSTA - Instagram Analytics.
 - **`weibo-china`** (high) — Use when you have a Chinese-context `name`/`username` and want their microblog presence — returns the `social-profile`, posts, photos (`imag
 - **`weibo-com`** (high) — Use when you have a username or name and want to find a subject's Chinese-language social presence — returns social profiles, posts, photos 
 - **`whopostedwhat-com`** (high) — Use when you have a `name`/keyword and a date and want Facebook posts from that exact day/range — returns social-profile and post leads arou

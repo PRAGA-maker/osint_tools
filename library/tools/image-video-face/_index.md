@@ -11,10 +11,10 @@ kind: group-index
 - **`documents/`** — 12 skill(s) below.
 - **`fact-checking-tools/`** — 5 skill(s) below.
 - **`fonts/`** — 4 skill(s) below.
-- **`images/`** — 55 skill(s) below.
+- **`images/`** — 54 skill(s) below.
 - **`reverse-media-search/`** — 2 skill(s) below.
 - **`source-verification/`** — 3 skill(s) below.
-- **`videos/`** — 19 skill(s) below.
+- **`videos/`** — 18 skill(s) below.
 - **`webcams/`** — 3 skill(s) below.
 
 ## Skills here
@@ -76,7 +76,7 @@ kind: group-index
 - **`clipconverter-cc`** (low) — Use when you need to download/convert an online video for offline frame-by-frame analysis or preservation — a converter, not a search tool.
 - **`clipdrop-co`** (high) — Use when you have an `image` of poor/cluttered quality and want to clean it up before a face/reverse-image search — returns an edited `image
 - **`clipsnap-com-4`** (high) — Use when you have a blurry or low-quality photo of a missing person and want to sharpen it before reverse-image search — returns an enhanced
-- **`clipsnap-com`** (high) — OSINT tool: clipsnap.com.
+- **`clipsnap-com`** (high) — Use when you have a subject `image`/`face` and want to clean, isolate or upscale it before running face/reverse-image search — returns a pro
 - **`codeofaninja-com-2`** (high) — Use when you have a YouTube channel URL or handle for a person of interest and need its stable channel ID — returns the UC… channel ID.
 - **`codeofaninja-com-3`** (high) — Use when you have a YouTube video URL and want its full-resolution thumbnail to run through reverse-image or face search — returns the HD th
 - **`comedy-central-united-states`** (high) — Website that hosts videos from TV and movies
@@ -99,7 +99,7 @@ kind: group-index
 - **`diffchecker`** (high) — Use when you have two versions of an `image` (or document/text) and want to see exactly what changed — returns a highlighted diff exposing e
 - **`digitaldigging-org-2`** (high) — Use when you have an `image` and need to judge whether it is AI-generated/manipulated — returns detection methodology (visual-anomaly and pr
 - **`digitalpodcast`** (high) — Website related to social networking and podcasting services
-- **`discover-podcasts-here`** (high) — OSINT tool: Discover Podcasts Here!.
+- **`discover-podcasts-here`** (high) — Use when you have a `name` and want to find a subject's own podcast or guest appearances — returns social-profile, associate.
 - **`downalbum`** (medium) — Chrome extension for downloading photo albums from social media.
 - **`downloadhelper`** (medium) — OSINT tool: DownloadHelper.
 - **`dropshots-multimedia-search-sharing`** (high) — Multi-media search engine focusing on photo and video search and private sharing
@@ -139,7 +139,7 @@ kind: group-index
 - **`flexclip`** (medium) — Get video metadata
 - **`flickr-com`** (high) — Use when you want to browse geotagged Flickr photos on a map to place a person or scene — a duplicate listing pointing at Flickr's map view.
 - **`font-spring`** (medium) — OSINT tool: Font Spring.
-- **`fotki-image-search`** (high) — Multi-media search engine focusing on images from multiple databases stored by category
+- **`fotki-image-search`** (high) — Use when you have a `username`, `name` or keyword and want to find public photo galleries hosted on Fotki — returns image, social-profile.
 - **`fotki`** (high) — Use when you have a `username` and want to find a long-running photo-sharing profile and its galleries — returns a `social-profile` and the 
 - **`fotoforensics-com`** (high) — Use when you need a fast Error Level Analysis and metadata dump on a photo to check for editing — returns ELA heatmap, EXIF/JPEG metadata, a
 - **`fotolog`** (high) — Website related to social networking with photo galleries, photo posting and sharing services
@@ -220,7 +220,6 @@ kind: group-index
 - **`izitru`** (medium) — Use when you want to test whether a JPEG is an unmodified original camera file — historically returned an authenticity/"trust" score; note t
 - **`jeffreys-image-metadata-viewer`** (high) — Use when you have a photo (`image`) and want to read its embedded metadata — returns EXIF/IPTC/XMP fields including GPS `geolocation`, camer
 - **`jimpl`** (high) — Use when you have an `image` and want its hidden EXIF metadata — returns GPS `geolocation`, camera `device-id`, timestamps and other `metada
-- **`joelle-steele`** (high) — OSINT tool: Joelle Steele.
 - **`jpegcompress-com`** (high) — OSINT tool: jpegcompress.com.
 - **`jpegsnoop-2`** (high) — Use when you have an `image` (JPEG/AVI/PSD) and want to read its embedded metadata and detect editing/forgery from its compression signature
 - **`jpegsnoop-image-decoder`** (high) — Use when you have an `image` and want its embedded metadata plus signs of editing/manipulation — returns EXIF, camera/software fingerprint, 
@@ -277,8 +276,6 @@ kind: group-index
 - **`openphoto`** (high) — Website related to social networking with photo and image galleries, posting and sharing services
 - **`originality-ai`** (high) — Use when you have a block of text (a bio, review, message, article) and want to gauge whether it is AI-generated or plagiarised — returns an
 - **`osint-essentials`** (medium) — Verification-focused tool and resource site for journalists/researchers.
-- **`osint-os-surveillance-io`** (high) — OSINT tool: osint.os-surveillance.io.
-- **`pandora`** (high) — Website related to social networking, music, radio stations and radio shows
 - **`party-poker`** (high) — Website related to social networking and players of poker with gambling options
 - **`pbs-search`** (low) — Use when you have a `name` or topic and want to check if a person appears in PBS documentary/news content — returns video episodes and menti
 - **`perceptual-image-analysis`** (medium) — Chrome extension for quick access to image #forensic tools: Metadata Levels Principal Component Analysis Slopes Error Level Analysis
@@ -315,7 +312,6 @@ kind: group-index
 - **`podcast-alley`** (high) — Use when you have a `name`/`username` and want to check whether a subject self-hosts a podcast here — returns a show page with bio, photo an
 - **`podcastalley`** (high) — Website related to social networking and podcasting services
 - **`podomatic`** (high) — Use when you have a `name`/`username` and want to find a subject's podcast presence — returns a social-profile with episodes, avatar and any
-- **`pogo`** (high) — Website related to social networking and players of over 500 games on this website
 - **`poker-stars`** (high) — Website related to social networking and players of poker with gambling options
 - **`portrait-matcher`** (high) — Use when you have a `face` and want to see which historical portrait paintings it resembles — returns physical-description-style lookalikes,
 - **`portrait-search`** (high) — Use when you have a `name` of a notable/historical American and want catalogued portraits of them — returns portrait `image`s and biographic
@@ -398,7 +394,6 @@ kind: group-index
 - **`the-seint`** (high) — OSINT tool: The SEINT.
 - **`thehackernews-com`** (high) — Use when you have an `image` containing pixelated/blurred redacted text and want to attempt reconstruction — points to the Unredacter/Depix 
 - **`theinpaint`** (medium) — One of the best (and free) online photo object removal tools I've ever seen. Just highlight red on the photo and press Erase. Then do it aga
-- **`tidder-xyz`** (high) — OSINT tool: tidder.xyz.
 - **`tikfuel-com`** (high) — Use when you have a TikTok `username` and want the full-resolution profile picture (which TikTok only shows small) to reverse-image or face-
 - **`tiktok-video-downloader-ssstik`** (low) — Download TikTok videos without watermark.
 - **`tineye-com`** (high) — Use when you have an `image` and want to find where else it appears online and its earliest/other copies — returns matching pages (`social-p

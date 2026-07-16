@@ -134,7 +134,7 @@ kind: group-index
 - **`brooklyn-genealogy`** (high) — Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, direct
 - **`brownbook`** (medium) — OSINT tool: BrownBook.
 - **`buffalo-police`** (medium) — OSINT tool: Buffalo Police.
-- **`bulgaria`** (high) — OSINT tool: Bulgaria.
+- **`bulgaria`** (high) — Use when you have a `name` or `employer-org` in Bulgaria and want to confirm company officers, ownership and registered addresses — returns 
 - **`business-directory-occ`** (low) — OSINT tool: Business Directory \| OCC.
 - **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s
 - **`business-govt-nz`** (high) — Use when you have a business `name`/brand and want to see if it is registered or claimed in New Zealand — returns availability across compan
@@ -383,7 +383,7 @@ kind: group-index
 - **`gdc-uk-org`** (high) — Use when you have a `name` (or registration number) and want to confirm a UK dental professional's registration, status and area — returns c
 - **`gendatabase-com`** (high) — Use when you have a `name` of a deceased South African and want genealogy/vital records (birth, death, marriage, estate, voter roll, ID) — r
 - **`genealogical-prison-records`** (medium) — Site providing genealogical prison and insane asylum records for the US, UK and Canada
-- **`genealogy-links-us-and-other-countries`** (high) — OSINT tool: Genealogy Links us and other Countries.
+- **`genealogy-links-us-and-other-countries`** (high) — Use when you have a `name` and a region and want a curated gateway to vital-records and census sources — returns links leading to name, dob,
 - **`genealogy`** (high) — Use when you have a `name` and want to check death records / obituaries to confirm a person is deceased and surface relatives — returns `dob
 - **`genealogybank-ssdi`** (medium) — SSDI and historical newspaper/obituary search; helps determine if a person is deceased.
 - **`genealogyintime`** (high) — Use when you have a `name` and want to sweep billions of free genealogy/ancestral records at once — returns matching records with dates, rel
@@ -747,7 +747,7 @@ kind: group-index
 - **`oklahoma-offender-search`** (high) — Use when you have a `name` and want to confirm someone is/was in Oklahoma state custody or supervision — returns offender records with DOB, 
 - **`oklahoma-registered-voter-verification`** (medium) — Oklahoma registered voter verification and search
 - **`oklahoma-voters-search`** (high) — Use when you have a `name` in Oklahoma and want voter-registration details — returns registration data (address/precinct) from Oklahoma vote
-- **`oklavoters-com`** (high) — OSINT tool: Oklavoters.com.
+- **`oklavoters-com`** (high) — Use when you have a `name` in Oklahoma and want voter-registration details (address, party, precinct) — returns address, name, dob.
 - **`on-demand-court-records`** (high) — Use when you have a `name` and want Oklahoma district/tribal court case records — returns matching parties, case numbers (`document-id`), fi
 - **`online-searchable-death-indexes-and-records-united-states`** (high) — Use when you have a deceased US subject's `name` and want the right state death index — returns links to death records giving dates, place a
 - **`online-services-pei-business-corporate-registry`** (low) — OSINT tool: Online Services PEI Business / Corporate Registry.
@@ -852,7 +852,6 @@ kind: group-index
 - **`public-records`** (medium) — Unclear - requires VP clarification
 - **`punternet-com`** (high) — OSINT tool: punternet.com.
 - **`quandl`** (medium) — Database of corporate, financial, trade, and capital market data
-- **`quicksold-co-uk`** (high) — OSINT tool: quicksold.co.uk.
 - **`ratemyteachers-com`** (high) — Use when you have a teacher's `name` (and ideally their school as `employer-org`) and want to confirm where they teach/taught — returns `emp
 - **`rbo-gov-ie`** (high) — Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/y
 - **`rcmp-death-search`** (medium) — OSINT tool: RCMP Death Search.
@@ -981,7 +980,7 @@ kind: group-index
 - **`strongabogados-com`** (high) — OSINT tool: strongabogados.com.
 - **`superpages-directory-united-states`** (medium) — Search directory for local businesses and retailers
 - **`supreme-court-of-canada-cases`** (high) — Use when you have a party `name` and want to check for a Supreme Court of Canada case involving them — returns the docket, parties/counsel (
-- **`supreme-court`** (high) — OSINT tool: Supreme Court.
+- **`supreme-court`** (high) — Use when you have a `name` and want to find whether that person was a party in a Supreme Court of Canada case — returns name, document-id, a
 - **`supremecourt-uk`** (high) — Use when you have a `name` and want to check if they are a party in a UK Supreme Court case — returns case parties, document-id citations, a
 - **`sweden`** (high) — Use when you have a Swedish company `name`/`employer-org` or person and want official registry data — returns registered company details, ad
 - **`sweetsearch`** (medium) — Research search engine for students

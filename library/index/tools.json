@@ -136516,45 +136516,50 @@
   },
   {
     "id": "clipsnap-com",
-    "name": "clipsnap.com",
-    "description": "OSINT tool: clipsnap.com.",
+    "name": "ClipSnap",
+    "description": "Use when you have a subject `image`/`face` and want to clean, isolate or upscale it before running face/reverse-image search — returns a processed image.",
     "url": "https://www.clipsnap.com/background-remover/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Prepping a subject photo — background removal, upscaling, enhancement — so face-match and reverse-image tools get a cleaner input.",
     "selectorsIn": [
       "image",
       "face"
     ],
     "selectorsOut": [
-      "face",
-      "social-profile"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free AI background remover / upscaler / enhancer with no watermark; run by the FreeConvert team. No account required for basic use.",
+    "opsec": "passive",
+    "opsecNote": "You upload the subject's photo to a third-party server (FreeConvert/ClipSnap), so the image leaves your control and may be retained. Never upload sensitive case imagery you cannot risk exposing; prefer a local tool for anything confidential.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial AI image utility; it processes images but publishes no independent handling/retention guarantees, so treat uploads as leaving your control.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "clipsnap.com",
+      "ClipSnap Background Remover"
+    ],
     "tags": [
       "photosites",
       "Photo Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "clipsnap-com-4"
     ],
@@ -137936,36 +137941,50 @@
   },
   {
     "id": "discover-podcasts-here",
-    "name": "Discover Podcasts Here!",
-    "description": "OSINT tool: Discover Podcasts Here!.",
+    "name": "PodSearch",
+    "description": "Use when you have a `name` and want to find a subject's own podcast or guest appearances — returns social-profile, associate.",
     "url": "https://podsearch.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Discovering podcasts and episodes tied to a person — their own show or guest spots — as a route to voice, bio and network.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and browse the podcast directory; listeners sign up at no cost for extra features, and listing a podcast is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public podcast directory is passive and not visible to any subject. Listening to episodes leaks nothing about you; use a clean session by habit.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party podcast discovery directory; listings are self-submitted and platform-aggregated, so treat identity links as leads.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "podsearch.com",
+      "Discover Podcasts Here"
+    ],
+    "tags": [
+      "podcast",
+      "audio-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/discover-podcasts-here.md"
   },
   {
@@ -140891,30 +140910,31 @@
   {
     "id": "fotki-image-search",
     "name": "Fotki Image Search",
-    "description": "Multi-media search engine focusing on images from multiple databases stored by category",
+    "description": "Use when you have a `username`, `name` or keyword and want to find public photo galleries hosted on Fotki — returns image, social-profile.",
     "url": "http://search.fotki.com",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Surfacing a subject's public photo albums on the Fotki photo-sharing community by keyword or username.",
     "selectorsIn": [
-      "image",
-      "face"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to browse and search public galleries; Fotki accounts have paid premium tiers but searching and viewing public content is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching and viewing public albums does not notify the gallery owner. Do not create an account or leave comments from an attributable identity; browse logged-out through a sock-puppet session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Fotki is a long-running third-party photo-sharing community; content is user-uploaded, so treat any identity inference as a lead, not proof.",
     "missingPersonsRelevance": "high",
     "coverage": [
       "global"
@@ -140923,15 +140943,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "search.fotki.com",
+      "Fotki"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "image-video-multimedia-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "fotki",
       "search-fotki-com"
@@ -146025,52 +146048,6 @@
     "_file": "library/tools/image-video-face/jimpl.md"
   },
   {
-    "id": "joelle-steele",
-    "name": "Joelle Steele",
-    "description": "OSINT tool: Joelle Steele.",
-    "url": "https://joellesteele.com/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "facialcomparison",
-      "Facial Comparison Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "how-to-accurately-check-an-id-using-facial-features-to-verify-photo-id-s"
-    ],
-    "_file": "library/tools/image-video-face/joelle-steele.md"
-  },
-  {
     "id": "jpegcompress-com",
     "name": "jpegcompress.com",
     "description": "OSINT tool: jpegcompress.com.",
@@ -148063,47 +148040,6 @@
     "_file": "library/tools/image-video-face/images/metadata/metapicz.md"
   },
   {
-    "id": "metatube",
-    "name": "Metatube",
-    "description": "OSINT tool: Metatube.",
-    "url": "https://github.com/JVT038/MetaTube",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face",
-      "videos",
-      "search"
-    ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/videos/search/metatube.md"
-  },
-  {
     "id": "metatube-com",
     "name": "MetaTube",
     "description": "Use when you have a `name`/`username` or keyword and want to find videos about a subject aggregated from across platforms — returns social-profile links and video metadata.",
@@ -149338,95 +149274,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/osint-essentials.md"
-  },
-  {
-    "id": "osint-os-surveillance-io",
-    "name": "osint.os-surveillance.io",
-    "description": "OSINT tool: osint.os-surveillance.io.",
-    "url": "https://osint.os-surveillance.io/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "face",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "flickr",
-      "Flickr & Similar Linked Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/osint-os-surveillance-io.md"
-  },
-  {
-    "id": "pandora",
-    "name": "Pandora",
-    "description": "Website related to social networking, music, radio stations and radio shows",
-    "url": "http://www.pandora.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/pandora.md"
   },
   {
     "id": "party-poker",
@@ -150894,51 +150741,6 @@
     "_file": "library/tools/image-video-face/pixsy.md"
   },
   {
-    "id": "places2",
-    "name": "Places2",
-    "description": "Scene classification reference and location-context model training",
-    "url": "http://places2.csail.mit.edu/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face",
-      "images",
-      "search"
-    ],
-    "bestFor": "Scene classification reference and location-context model training",
-    "input": "Scene categories and dataset download requests",
-    "output": "Scene-labeled image datasets and related research resources",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Public academic dataset access; no direct target interaction.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "mit-pgp-key-server",
-      "mit-pgp-public-key-server",
-      "tweetmap"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/images/search/places2.md"
-  },
-  {
     "id": "placespotter-com",
     "name": "PlaceSpotter",
     "description": "Use when you have an `image` and want an AI's guess at where it was taken — returns approximate coordinates and location details.",
@@ -151463,52 +151265,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/podomatic.md"
-  },
-  {
-    "id": "pogo",
-    "name": "Pogo",
-    "description": "Website related to social networking and players of over 500 games on this website",
-    "url": "http://www.pogo.com",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image",
-      "face"
-    ],
-    "selectorsOut": [
-      "image",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "image-video-multimedia-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/pogo.md"
   },
   {
     "id": "poker-stars",
@@ -156271,40 +156027,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/image-video-face/theinpaint.md"
-  },
-  {
-    "id": "tidder-xyz",
-    "name": "tidder.xyz",
-    "description": "OSINT tool: tidder.xyz.",
-    "url": "http://tidder.xyz/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/tidder-xyz.md"
   },
   {
     "id": "tikfuel-com",
@@ -213474,47 +213196,50 @@
   },
   {
     "id": "wink",
-    "name": "Wink",
-    "description": "OSINT tool: Wink.",
+    "name": "Wink People Search (via iTools)",
+    "description": "Use when you have a `name` and want a launcher that fires a people/social search across the web from one box — returns social-profile, associate.",
     "url": "http://itools.com/tool/wink-people-search",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
+    "bestFor": "A quick one-box launcher for name-based people/social search, hosted on the iTools tool directory.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "address",
-      "phone",
-      "email",
-      "associate",
       "social-profile",
-      "dob"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use the iTools launcher; any downstream people-search site it hands off to may itself gate results behind a paywall.",
+    "opsec": "passive",
+    "opsecNote": "The launcher just builds and fires a search query; you touch the destination search engine, not the subject. Use a sock-puppet browser as the query and any resulting clicks can be logged by the destination sites.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "iTools is a long-standing third-party directory of search tools; the original standalone Wink people-search engine is defunct, so this now functions as a query launcher rather than its own database.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Wink",
+      "iTools Wink People Search"
+    ],
     "tags": [
       "people-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "people-search"
     ],
@@ -218668,45 +218393,52 @@
   },
   {
     "id": "pleasepress1-com",
-    "name": "pleasepress1.com",
-    "description": "OSINT tool: pleasepress1.com.",
+    "name": "Please Press 1",
+    "description": "Use when you have a customer-service `phone` number and want to attribute it to a company and see its call-menu structure — returns employer-org.",
     "url": "https://www.pleasepress1.com",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "",
+    "bestFor": "Attributing a UK/US customer-service phone number to the company it belongs to via a crowd-built IVR-menu directory.",
     "selectorsIn": [
-      "phone"
+      "phone",
+      "employer-org"
     ],
     "selectorsOut": [
-      "name",
-      "address",
-      "social-profile"
+      "employer-org",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public directory; no account or payment required to search company customer-service numbers and menu maps.",
+    "opsec": "passive",
+    "opsecNote": "You are searching a static third-party directory, not dialling the number — nothing is leaked to the company. Calling the number itself would be active; this lookup is not.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community/editorially maintained UK directory of company call-centre menus; numbers are user-submitted and curated, not an official carrier database.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "uk",
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "pleasepress1.com",
+      "Please Press 1"
+    ],
     "tags": [
       "mobilephone",
       "Mobile & Phone Related"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/phone/pleasepress1-com.md"
   },
   {
@@ -226515,47 +226247,54 @@
   },
   {
     "id": "bulgaria",
-    "name": "Bulgaria",
-    "description": "OSINT tool: Bulgaria.",
+    "name": "Bulgarian Commercial Register (Registry Agency)",
+    "description": "Use when you have a `name` or `employer-org` in Bulgaria and want to confirm company officers, ownership and registered addresses — returns employer-org, address, associate, name.",
     "url": "https://portal.registryagency.bg/CR/Reports/VerificationPersonOrg",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Linking a Bulgarian individual to the companies they direct or own, and pulling co-officers and registered addresses.",
     "selectorsIn": [
       "name",
-      "address",
       "employer-org"
     ],
     "selectorsOut": [
-      "address",
       "employer-org",
+      "address",
+      "associate",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public search on the state Commercial Register portal; a paid/registered account is only needed for certified extracts and e-filing, not for read-only lookups.",
+    "opsec": "passive",
+    "opsecNote": "You query a government portal; the register is public and searches are not shown to the subject. No login is needed for the verification report, so a clean browser plus a neutral IP keeps the lookup unattributable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Bulgarian Registry Agency (Агенция по вписванията) under the Ministry of Justice — the authoritative state source, not a third-party scraper.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "bg"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Registry Agency Bulgaria",
+      "registryagency.bg",
+      "Търговски регистър"
+    ],
     "tags": [
       "companysites",
       "Company Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/bulgaria.md"
   },
   {
@@ -239200,45 +238939,52 @@
   },
   {
     "id": "genealogy-links-us-and-other-countries",
-    "name": "Genealogy Links us and other Countries",
-    "description": "OSINT tool: Genealogy Links us and other Countries.",
+    "name": "GenealogyLinks.net",
+    "description": "Use when you have a `name` and a region and want a curated gateway to vital-records and census sources — returns links leading to name, dob, associate.",
     "url": "http://www.genealogylinks.net/index.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "A curated directory of 50,000+ genealogy links (births, marriages, deaths, census) organised by country and region.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "associate",
+      "name",
       "dob",
-      "name"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free directory of links; individual destination archives it points to may be free or paid (e.g. some vital-records providers charge).",
+    "opsec": "passive",
+    "opsecNote": "You browse a static link directory — nothing is sent to any subject. The genealogy archives it links to are public-record repositories; searches there are also passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running (since 1997) volunteer-curated link directory; it is a gateway, so trust rests with the destination record sources, not this index.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "genealogylinks.net",
+      "Genealogy Links"
+    ],
     "tags": [
       "genealogy",
       "family"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "relatedTools": [
       "genealogy-links"
     ],
@@ -257493,35 +257239,50 @@
   {
     "id": "oklavoters-com",
     "name": "Oklavoters.com",
-    "description": "OSINT tool: Oklavoters.com.",
+    "description": "Use when you have a `name` in Oklahoma and want voter-registration details (address, party, precinct) — returns address, name, dob.",
     "url": "http://oklavoters.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up Oklahoma voter-registration records (address, party, registration status) by name from public state data.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "name",
+      "dob"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
+    "costNote": "Oklahoma voter-registration data is public under state open-records law; third-party republishers like this may offer free name lookups and charge for bulk downloads or extra fields.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Voter records are public and searches are not disclosed to the registrant. Use a clean browser; treat any residential address returned as sensitive and handle it per your engagement's rules.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party republisher of Oklahoma voter data, not the state election board; verify anything critical against the official OK Voter Portal.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "oklavoters",
+      "Oklahoma voter search"
+    ],
+    "tags": [
+      "voter-records",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/oklavoters-com.md"
   },
   {
@@ -262598,51 +262359,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/quandl.md"
-  },
-  {
-    "id": "quicksold-co-uk",
-    "name": "quicksold.co.uk",
-    "description": "OSINT tool: quicksold.co.uk.",
-    "url": "https://quicksold.co.uk/area-information",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "address",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "address",
-      "employer-org",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "propertysites",
-      "Property Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/quicksold-co-uk.md"
   },
   {
     "id": "ratemyteachers-com",
@@ -268961,45 +268677,52 @@
   },
   {
     "id": "supreme-court",
-    "name": "Supreme Court",
-    "description": "OSINT tool: Supreme Court.",
+    "name": "Supreme Court of Canada Judgments (Lexum)",
+    "description": "Use when you have a `name` and want to find whether that person was a party in a Supreme Court of Canada case — returns name, document-id, associate.",
     "url": "https://scc-csc.lexum.com/scc-csc/fr/nav.do",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching the full free archive of Supreme Court of Canada judgments by party name to place a person in litigation.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
       "name",
-      "dob",
-      "document-id"
+      "document-id",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Fully free public access; the entire judgment archive since 1876 is open with no account or paywall.",
+    "opsec": "passive",
+    "opsecNote": "Searching published judgments is passive and anonymous — the subject is never notified. Nothing you enter is attributable to the person; still search from a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Supreme Court of Canada judgment site operated by Lexum in partnership with the Court; judgments are the authoritative legal record.",
     "missingPersonsRelevance": "high",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "SCC Cases",
+      "Lexum SCC",
+      "scc-csc.lexum.com"
+    ],
     "tags": [
       "court",
       "inmate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-16",
+    "enrichment": "full",
     "_file": "library/tools/public-records/supreme-court.md"
   },
   {
@@ -309218,48 +308941,6 @@
     "_file": "library/tools/search-engines/studentreviews-north-america.md"
   },
   {
-    "id": "stumpedia-com",
-    "name": "stumpedia.com",
-    "description": "OSINT tool: stumpedia.com.",
-    "url": "http://www.stumpedia.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "searchengines",
-      "Search Engines"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/stumpedia-com.md"
-  },
-  {
     "id": "suchmaschinen-datenbank",
     "name": "Suchmaschinen Datenbank",
     "description": "German meta search engine",
@@ -325971,40 +325652,6 @@
     "_file": "library/tools/social-networks/find-my-snap-check-if-your-snapchat-account-was-leaked-on-the-2013-hack.md"
   },
   {
-    "id": "find-twitter-followers",
-    "name": "Find Twitter Followers",
-    "description": "OSINT tool: Find Twitter Followers.",
-    "url": "http://searchfortweets1.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/find-twitter-followers.md"
-  },
-  {
     "id": "finddit-viralharia",
     "name": "Finddit (viralharia)",
     "description": "Reddit search tool (Finddit).",
@@ -326509,53 +326156,6 @@
       "moz-link-explorer"
     ],
     "_file": "library/tools/social-networks/followerwonk-tools-for-twitter-analytics-bio-search-and-more.md"
-  },
-  {
-    "id": "forbes-com",
-    "name": "forbes.com",
-    "description": "OSINT tool: forbes.com.",
-    "url": "https://www.forbes.com/sites/siladityaray/2021/01/14/the-far-right-is-flocking-to-these-alternate-social-media-apps---not-all-of-them-are-thrilled/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "forbes-global-2000",
-      "forbes-magazine"
-    ],
-    "_file": "library/tools/social-networks/forbes-com.md"
   },
   {
     "id": "forcesreunited-co-uk",
@@ -332863,49 +332463,6 @@
     "_file": "library/tools/social-networks/instagram-search.md"
   },
   {
-    "id": "instagram-search-engine",
-    "name": "Instagram Search Engine",
-    "description": "OSINT tool: Instagram Search Engine.",
-    "url": "https://mulpix.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/instagram-search-engine.md"
-  },
-  {
     "id": "instagram-search-inteltechniques-method",
     "name": "Instagram Search (IntelTechniques method)",
     "description": "Use when you have an Instagram `username` and want structured queries — a query-builder page that assembles profile, tagged-photo, followers, and hashtag searches plus third-party viewer links.",
@@ -337469,49 +337026,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/namemc.md"
-  },
-  {
-    "id": "natcen-ac-uk",
-    "name": "natcen.ac.uk",
-    "description": "OSINT tool: natcen.ac.uk.",
-    "url": "https://natcen.ac.uk/ripples-across-pond",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "name"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "rightwingsocialmediasites",
-      "Right Wing Social Media Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/natcen-ac-uk.md"
   },
   {
     "id": "netvibes",
@@ -347027,42 +346541,6 @@
       "social-searcher"
     ],
     "_file": "library/tools/social-networks/social-trends.md"
-  },
-  {
-    "id": "socialbakers",
-    "name": "SocialBakers",
-    "description": "OSINT tool: SocialBakers.",
-    "url": "http://www.socialbakers.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "real-time-search-social-media-search-and-general-social-media-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/socialbakers.md"
   },
   {
     "id": "socialbearing",
@@ -358135,52 +357613,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/social-networks/webasha-com.md"
-  },
-  {
-    "id": "websta-instagram-analytics",
-    "name": "WEBSTA - Instagram Analytics",
-    "description": "OSINT tool: WEBSTA - Instagram Analytics.",
-    "url": "https://websta.me",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "image",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "high",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "instagram"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "webstigram"
-    ],
-    "_file": "library/tools/social-networks/websta-instagram-analytics.md"
   },
   {
     "id": "weibo-china",

@@ -778,7 +778,6 @@ kind: group-index
 - **`stilltasty`** (medium) — Search engine that searches for food-related websites, material and content, primarily dealing with the duration of freshness, expiration da
 - **`storyful`** (low) — OSINT tool: Storyful.
 - **`studentreviews-north-america`** (medium) — Website related to education reviews
-- **`stumpedia-com`** (high) — OSINT tool: stumpedia.com.
 - **`suchmaschinen-datenbank`** (medium) — German meta search engine
 - **`summit-county-fiscal-office`** (medium) — Summit County Fiscal Office website with property tax and appraisal tool
 - **`sunxdcc`** (low) — XDCC file search engine

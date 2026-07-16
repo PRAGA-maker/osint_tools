@@ -12,7 +12,7 @@ kind: group-index
 - **`instagram/`** — 4 skill(s) below.
 - **`metadata/`** — 17 skill(s) below.
 - **`ocr/`** — 3 skill(s) below.
-- **`search/`** — 23 skill(s) below.
+- **`search/`** — 22 skill(s) below.
 - **`tools/`** — 1 skill(s) below.
 
 

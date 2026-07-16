@@ -100,7 +100,7 @@ kind: group-index
 - **`phoneowner`** (medium) — Reverse-phone lookup with owner identity.
 - **`phonumspy`** (high) — Use when you have a `phone` number and want carrier/location enrichment plus a web/social footprint sweep — returns geolocation, social-prof
 - **`phunter`** (high) — Use when you have a `phone` number and want a one-shot OSINT profile of it — returns country/operator, line type, location hints, reputation
-- **`pleasepress1-com`** (high) — OSINT tool: pleasepress1.com.
+- **`pleasepress1-com`** (high) — Use when you have a customer-service `phone` number and want to attribute it to a company and see its call-menu structure — returns employer
 - **`receive-sms-free-2`** (high) — Use when you have a `phone` number and want to check whether it is a public disposable/temp-SMS number (not a real person), or need a throwa
 - **`receive-sms-free-3`** (medium) — Use when you need a disposable `phone` number to receive SMS for a sock-puppet signup, or want to check whether a target's number is a known
 - **`receive-sms-free`** (high) — Use when you have a `phone` number and want to check whether it is a public disposable/temp-SMS number (so any account on it is likely throw

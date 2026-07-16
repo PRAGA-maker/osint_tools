@@ -270,7 +270,7 @@ kind: group-index
 - **`voter-records`** (high) — Use when you have a US `name` and want registered-voter data — returns `address`, approximate `dob`/age, and political-party affiliation fro
 - **`white-pages-us`** (high) — Use when you have a US `name`, `phone`, or `address` and want contact/identity details — returns current address, phone numbers, relatives/a
 - **`white-pages`** (high) — Use when you have a US `name`, `phone` or `address` and want current address, phone and relatives — returns address, phone, associate and ap
-- **`wink`** (high) — OSINT tool: Wink.
+- **`wink`** (high) — Use when you have a `name` and want a launcher that fires a people/social search across the web from one box — returns social-profile, assoc
 - **`xlek`** (high) — Use when you have a `name` (+ US location) and want free public-records data — returns `address`, `phone`, `email`, `associate` plus voter/p
 - **`yandex-people-search`** (high) — Use when you have a `name` (or `username`) and want to find matching social-media profiles across many networks in one query — returns socia
 - **`yasni-2`** (high) — Use when you have a `name` and want an aggregated web/people profile — links, mentions, and contact leads pulled from across the open web — 

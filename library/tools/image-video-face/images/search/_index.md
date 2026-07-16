@@ -23,7 +23,6 @@ kind: group-index
 - **`photobucket`** (medium) — Use when you have a username, email, or gallery name and want to surface legacy public photo albums — returns image galleries, associates, a
 - **`picarta`** (high) — Use when you have a photo with no metadata and want to estimate where it was taken — returns predicted geolocation (coordinates / place) and
 - **`pimeyes-face-search-engine`** (high) — Use when you have a `face`/`image` of someone and want to find other web pages showing that face — returns matched images and the source-pag
-- **`places2`** (high) — Scene classification reference and location-context model training
 - **`reveye-reverse-image-search`** (high) — Use when you have an `image` or `face` on a web page and want to reverse-search it across multiple engines in one click — returns image matc
 - **`saucenao`** (high) — Use when you have an `image` (especially art/anime/illustration or an avatar) and want its origin — returns the source posting, artist, and 
 - **`smugmug-search`** (medium) — Use when you have a `name`/`username` of a photographer (or an event/keyword) and want their public photo galleries — returns public albums,
