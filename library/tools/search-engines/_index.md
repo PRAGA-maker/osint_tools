@@ -501,7 +501,7 @@ kind: group-index
 - **`metaeureka-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metager-meta-search-engine`** (medium) — Meta-search engine yielding results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`metager-privacy-protected-search`** (medium) — OSINT tool: MetaGer: Privacy Protected Search.
-- **`metagoofil`** (medium) — OSINT tool: metagoofil.
+- **`metagoofil`** (medium) — Use when you have a `domain` and want the public documents it has published plus the `metadata-exif` inside them — returns usernames, emails
 - **`metaosint-intelscott`** (high) — Use when you have a selector type (name, username, email, phone, image) and need to pick the right tool — a searchable, sortable, data-ranke
 - **`metaphor-systems`** (low) — A search engine with a new and unusual search method. This AI "trained to predict the next *link* (similar to the way GPT-3 predicts the nex
 - **`military-occupation-codes-canada`** (medium) — Website that identifies the occupation classification code across the country at the national level

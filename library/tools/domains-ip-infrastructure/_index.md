@@ -149,7 +149,7 @@ kind: group-index
 - **`ditto`** (low) — Dsmall tool that accepts a domain name as input and generates all its variants for an homograph attack as output, checking which ones are av
 - **`dns-history-lookup`** (low) — OSINT tool: DNS History Lookup.
 - **`dns-history`** (low) — OSINT tool: DNS History.
-- **`dnslytics-com`** (medium) — OSINT tool: dnslytics.com.
+- **`dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find other domains sharing its Analytics/AdSense ID, IP, or nameservers — returns l
 - **`dnsquery`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`dnsreaper`** (low) — TwiSub-domain takeover tool
 - **`dnsstuff-tools`** (medium) — Includes domain tools, IP tools, networking tools, and email tools
@@ -417,7 +417,7 @@ kind: group-index
 - **`reverse-mx-record`** (low) — OSINT tool: Reverse MX Record.
 - **`reversewhois-io`** (medium) — OSINT tool: reversewhois.io.
 - **`rextract`** (low) — This extreme simple tool extracts the strings corresponding to a certain #regex from the html code of the list of URLs.
-- **`ripe`** (medium) — OSINT tool: RIPE.
+- **`ripe`** (medium) — Use when you have an `ip-address` or netblock in Europe/Middle East/Central Asia and want its registered holder — returns the organisation, 
 - **`robottester`** (low) — Simple Python script can enumerate all URLs present in robots.txt files, and test whether they can be accessed or not.
 - **`ronin-recon`** (low) — Recursive recon engine and framework for subdomains, DNS, port scanning, and TLS certs.
 - **`sameid`** (low) — OSINT tool: SameID.

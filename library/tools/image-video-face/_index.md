@@ -113,7 +113,7 @@ kind: group-index
 - **`facial-composite-identikit-maker`** (medium) — Use when you have only a witness/verbal physical description and need to build a composite face image (identikit) to use as a search or circ
 - **`fact-check`** (medium) — OSINT tool: Fact Check.
 - **`fdupes`** (low) — Github - Locating exact matches of duplicate files.
-- **`filmot`** (medium) — OSINT tool: Filmot.
+- **`filmot`** (medium) — Use when you have a `name`, phrase, or keyword and want to find the exact YouTube videos and timestamps where it is spoken — returns videos,
 - **`find-and-set-scale-from-image`** (medium) — OSINT tool: Find and Set Scale From Image.
 - **`find-any-film`** (low) — Use when you have a film or TV title and want to confirm it exists and find where it can legally be watched in the UK — returns release meta
 - **`find-youtube-video`** (medium) — OSINT tool: Find YouTube Video.

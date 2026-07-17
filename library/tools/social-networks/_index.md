@@ -35,7 +35,7 @@ kind: group-index
 - **`ameba`** (high) — Use when you have a `username` or `name` and want to find a Japanese subject's Ameba blog/social profile — returns social-profile and image 
 - **`analyze-words-twitter`** (high) — Use when you have an X/Twitter `username` and want a quick psycholinguistic read of their tweets — returns an emotional/social/thinking-styl
 - **`anonymous-ad-preview-tool`** (low) — OSINT tool: Anonymous Ad Preview Tool.
-- **`anylizer-com`** (medium) — watch frame by frame YouTube and Vimeo)
+- **`anylizer-com`** (medium) — Use when you have a YouTube/Vimeo video URL and want to inspect it frame-by-frame in slow motion — returns a precise per-frame view for read
 - **`app-fanpagekarma-com`** (high) — Use when you have a `name` or `username` and want to find and compare public Facebook (and other social) pages/profiles by keyword — returns
 - **`archive-4plebs-org`** (medium) — 4plebs is an unofficial archive of certain boards of 4chan.org, including 11 boards. It offers a large number of searchable discussions with
 - **`arctic-shift-2`** (high) — Use when you have a Reddit `username` (or subreddit/keyword) and want historical Reddit posts and comments Reddit's own search hides — retur
@@ -282,7 +282,7 @@ kind: group-index
 - **`id-zalo-me`** (high) — Use when you have a Vietnamese `phone` number and want to confirm it maps to a Zalo account — returns the linked `social-profile`, display `
 - **`ig-exporter-chrome-google-com`** (high) — Use when you have an Instagram `username` and want to export their followers/following (with bio, email and website) to CSV for associate-ne
 - **`igexport-export-instagram-chrome-google-com`** (high) — Use when you have an Instagram `social-profile` and want its full follower/following list as a spreadsheet — returns username, name, image, 
-- **`imginn`** (medium) — This service allows you to do the following without logging in to Instagram account: - search for accounts containing a keyword in the profi
+- **`imginn`** (medium) — Use when you have an Instagram `username` and want to view/download their public posts, stories and tagged photos anonymously — returns imag
 - **`imgur`** (medium) — Use when you have a `username`, keyword or an `image` lead and want to find hosted images/albums and a user's uploads — returns images, albu
 - **`improve-youtube`** (medium) — extension with dozens of different tweaks to the standard #YouTube interface
 - **`inaturalist-org`** (high) — Use when you have a `username`/`name` on iNaturalist and want their nature observations — returns geotagged, time-stamped observation photos
@@ -326,7 +326,7 @@ kind: group-index
 - **`instalooter-2`** (medium) — Use when you have an Instagram `username` and want to bulk-download a profile's media — returns saved `image`s (with any EXIF/`geolocation`)
 - **`instalooter`** (high) — Use when you have a public Instagram `username`, hashtag, or location and want to bulk-download its media without login or the API — returns
 - **`instanavigation`** (medium) — Anonymous Instagram story viewing.
-- **`instatracker`** (medium) — Instagram tracking script that logs changes to an account (followers, following, posts, bio).
+- **`instatracker`** (medium) — Use when you have an Instagram `username` and want to monitor it over time — returns a timestamped log of changes to followers, following, p
 - **`insto`** (high) — Use when you have an Instagram `username` and want a scripted, no-login dossier — posts, followers, geo-fingerprint and network intersection
 - **`intel-sw-com`** (high) — Use when you have a `name` or `employer-org` and want to find someone's Facebook profile and mutual connections via advanced Graph-style ope
 - **`inteltechniques-facebook`** (high) — Use when you have a Facebook `username`/`social-profile` or numeric ID and want to run structured Facebook lookups (ID resolution, friend/ph
@@ -532,7 +532,7 @@ kind: group-index
 - **`search-reddit`** (medium) — OSINT tool: Search Reddit.
 - **`search-twitter-bios-and-profiles`** (high) — Use when you have a `name`, keyword, employer or location and want to find matching X/Twitter and Bluesky accounts by bio text — returns soc
 - **`search-twitter-users`** (high) — Use when you follow an old Pushshift Twitter-user-search link — the endpoint is gone (404) and Pushshift no longer serves public Twitter dat
-- **`search4faces-com-ch00`** (medium) — reverse image face search by 4 millions 594 thousands #clubhouse avatars.
+- **`search4faces-com-ch00`** (medium) — Use when you have a `face`/`image` of a person and want to match it against Clubhouse profile avatars — returns candidate Clubhouse `social-
 - **`searcheddit`** (medium) — OSINT tool: Searcheddit.
 - **`searchisback`** (high) — Use when you have a `name` plus attributes (location, school, employer, interests) and want to find matching Facebook people, events and pos
 - **`searchmy-bio`** (high) — Use when you have a `name`, keyword, link or interest and want Instagram accounts whose bio contains it — returns matching Instagram profile
