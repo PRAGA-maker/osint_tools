@@ -44038,41 +44038,58 @@
   {
     "id": "onionscan",
     "name": "OnionScan",
-    "description": "Assessing exposed metadata and weak configurations on hidden services",
+    "description": "Use when you have a `domain` (.onion hidden service) and want to find operational-security leaks that can deanonymise or correlate it — returns exposed metadata, misconfigurations, and correlation indicators.",
     "url": "https://github.com/s-rah/onionscan",
     "category": "dark-web",
     "path": [
       "dark-web",
       "discovery"
     ],
-    "bestFor": "Assessing exposed metadata and weak configurations on hidden services",
-    "input": ".onion targets",
-    "output": "Scan findings and metadata leak indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
+    "bestFor": "Scanning a Tor hidden service for metadata leaks and misconfigurations that link it to a real identity or to other sites.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address",
+      "crypto-wallet",
+      "metadata-exif"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free and open source; run locally. Note the project is effectively unmaintained (last release 0.2, October 2016) — it still runs but won't detect newer service software or leak patterns.",
     "opsec": "active",
-    "opsecNote": "Direct probing of hidden services can be logged and may alert target operators.",
+    "opsecNote": "This directly probes the target hidden service over Tor. The operator can see the requests in their logs, and aggressive scanning may tip them off. Route through Tor, throttle, and treat scanning of a live adversary's service as an active, potentially attributable action.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A well-known, widely-cited open-source dark-web OSINT tool (by s-rah); reliable for what it checks, but unmaintained since 2016, so pair it with current tooling and interpret findings yourself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "onioff",
+      "torbot",
+      "hunchly-hidden-services-report"
+    ],
+    "aliases": [
+      "OnionScan",
+      "s-rah/onionscan"
+    ],
+    "tags": [
+      "dark-web",
+      "hidden-service",
+      "opsec-analysis"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/discovery/onionscan.md"
   },
   {
@@ -92971,7 +92988,8 @@
       "lookup-icann-org",
       "godaddy-whois-lookup",
       "easywhois",
-      "who-is"
+      "who-is",
+      "whois-search"
     ],
     "aliases": [
       "Verisign WHOIS",
@@ -95669,6 +95687,9 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "verisign-whois-lookup"
+    ],
     "_file": "library/tools/domains-ip-infrastructure/whois-search.md"
   },
   {
@@ -118949,43 +118970,56 @@
   },
   {
     "id": "citizen-com",
-    "name": "Citizen.com",
-    "description": "live map of incidents (mainly shooting) that happened in the last hours in major U.S. cities",
+    "name": "Citizen",
+    "description": "Use when you have a US `geolocation` and time window and want to know what safety incidents (shootings, fires, police activity, missing-person alerts) were reported there — returns dated, mapped `geolocation` incidents with user video.",
     "url": "https://citizen.com/explore",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Checking real-time and recent safety incidents at a US location, sometimes with on-scene user-submitted video.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse the incident map on the web/app; some features and full alerts require the mobile app and an account. A paid tier (Citizen Premium) adds extra features but isn't needed for the map.",
+    "opsec": "passive",
+    "opsecNote": "You read a published incident feed; nothing you do here touches a subject. Passive. If you use the app, it will ask for your location and account — use a sock-puppet setup and deny precise location if you only need to browse.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Citizen aggregates emergency-radio scanning and user reports into incident alerts; fast but unofficial and error-prone — incidents are initial reports, not confirmed facts, and user video is unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "crimemapping-com",
+      "global-incident-map",
+      "nyc-crime-map"
+    ],
+    "aliases": [
+      "Citizen",
+      "Citizen App",
+      "citizen.com"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
+      "Politics, conflicts and crisis",
+      "incident-map"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/citizen-com.md"
   },
   {
@@ -145580,43 +145614,55 @@
   {
     "id": "lingolens",
     "name": "LingoLens",
-    "description": "Simple based on Streamlit self-hosted web app to automate the download of Google Lens results for different languages and countries (results may vary greatly depending on location settings).",
+    "description": "Use when you have an `image` and want to run Google Lens across many languages/countries at once (results vary by locale) — returns a combined report of reverse-image hits you'd otherwise miss.",
     "url": "https://github.com/OSINT-mindset/lingolens",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Automating Google Lens reverse-image searches across multiple language/country settings and merging the results.",
     "selectorsIn": [
-      "geolocation",
-      "image"
-    ],
-    "selectorsOut": [
+      "image",
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT); self-hosted Streamlit app. Runs a real Chromium via Playwright — no paid API.",
+    "opsec": "active",
+    "opsecNote": "It drives a real browser against Google Lens from your machine/IP; run it behind a VPN/proxy and a sock-puppet browser profile. The image is sent to Google (as with any Lens search), so don't submit anything you can't disclose to Google.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "A tool by the OSINT-mindset project automating Google Lens; results are Google's, so quality is high, but it depends on Google Lens remaining scrape-friendly and can break if Google changes its interface.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-lens",
+      "google-reverse-image-search"
+    ],
+    "aliases": [
+      "LingoLens",
+      "OSINT-mindset/lingolens"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Reverse Image Search Engines and automation tools"
+      "Reverse Image Search Engines and automation tools",
+      "google-lens"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/lingolens.md"
   },
   {
@@ -261119,35 +261165,51 @@
   {
     "id": "secret-surveillance-catalogue",
     "name": "Secret Surveillance Catalogue",
-    "description": "OSINT tool: Secret Surveillance Catalogue.",
+    "description": "Use when you have a `device-id` / equipment name (an IMSI-catcher, cell-site simulator, or surveillance box) and want to understand its capabilities — returns a reference profile of the device and its maker.",
     "url": "https://theintercept.com/surveillance-catalogue/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Identifying and understanding law-enforcement/military surveillance devices (IMSI-catchers, cell-site simulators) by name and capability.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "device-id",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to read; published by The Intercept as an investigative reference database. No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You read a published journalism reference; nothing here queries a subject or device. Fully passive. It is a knowledge resource, not a live scanner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A reference built by The Intercept from a leaked government catalogue of cellular-surveillance equipment; well-sourced investigative journalism, though it is a point-in-time (2015) snapshot of then-known devices.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Secret Surveillance Catalogue",
+      "The Intercept Surveillance Catalogue"
+    ],
+    "tags": [
+      "surveillance-equipment",
+      "reference",
+      "imsi-catcher"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/secret-surveillance-catalogue.md"
   },
   {
@@ -270629,47 +270691,57 @@
   {
     "id": "yell-online-business-directory-uk",
     "name": "Yell Online Business Directory (UK)",
-    "description": "UK-based business directory; search engine that searches using company name",
+    "description": "Use when you have a UK business `name`/`employer-org` (or a trade + area) and want its contact details — returns `address`, `phone`, website, and category.",
     "url": "https://www.yell.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a UK business's address, phone, and website, or identifying tradespeople/firms by trade and area.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "employer-org",
+      "name"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view business listings (Yell is the online successor to the UK Yellow Pages). Businesses pay for enhanced/advertised placement, but searching is free to the public.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a public business directory, not the business owner. No subject-side footprint unless you use a \"contact this business\" form — avoid that on a target. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legitimate, well-known UK directory; listings are business-submitted and advertising-driven, so details are usually current but not authoritative — confirm against Companies House or the firm's own site.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "scoot",
+      "companies-and-orgs-search-engine"
+    ],
+    "aliases": [
+      "Yell",
+      "Yell.com",
+      "Yellow Pages UK"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "company-search"
+      "company-search",
+      "uk-business"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/yell-online-business-directory-uk.md"
   },
   {
@@ -274023,25 +274095,31 @@
   },
   {
     "id": "baiduknows-search-engine-china",
-    "name": "BaiduKnows Search Engine (China)",
-    "description": "Question and answer based website offered by Chinese search engine, Baidu",
-    "url": "http://zhidao.baidu.com",
+    "name": "Baidu Zhidao (Baidu Knows)",
+    "description": "Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns questions/answers with handles and self-disclosed detail.",
+    "url": "https://zhidao.baidu.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mining Baidu's Chinese Q&A community for user handles, self-disclosures, and topic discussion.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; posting/answering needs a Baidu account. Content is overwhelmingly in Chinese.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading Baidu Zhidao is passive, but note Baidu is a Chinese platform subject to state access and censorship. Use a clean/sock-puppet session; do not log in with an identifying account for sensitive queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A large community Q&A site; content is anonymous/pseudonymous user-generated text, often unreliable or promotional, and subject to censorship — treat everything as a lead to corroborate.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -274050,26 +274128,30 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "baidu",
       "baidu-china",
-      "baidu-com",
       "baidu-image-search",
+      "baidu-maps",
+      "baike-baidu-chinese-language",
+      "baidu-com",
       "baidu-image-search-2",
       "baidu-images",
-      "baidu-maps",
-      "baidu-translate",
-      "baike-baidu-chinese-language"
+      "baidu-translate"
     ],
+    "aliases": [
+      "Baidu Zhidao",
+      "Baidu Knows",
+      "zhidao.baidu.com"
+    ],
+    "tags": [
+      "toddington",
+      "china",
+      "qa-community"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/baiduknows-search-engine-china.md"
   },
   {
@@ -291346,35 +291428,51 @@
   {
     "id": "mac-address-lookup",
     "name": "MAC Address Lookup",
-    "description": "OSINT tool: MAC Address Lookup.",
+    "description": "Use when you have a `mac-address` (from a device, log, or capture) and want the hardware vendor/manufacturer behind it — returns the OUI-matched device maker.",
     "url": "https://maclookup.app/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Resolving a MAC address prefix (OUI) to the device manufacturer.",
+    "selectorsIn": [
+      "mac-address"
+    ],
+    "selectorsOut": [
+      "device-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search; free REST API and downloadable database (JSON/CSV/Cisco XML). Updated from the IEEE registry (last update noted July 2026).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You look up a vendor prefix in a public IEEE-derived database; nothing touches the device owner. Fully passive. The MAC itself must come from a source you were authorised to access (a log, a capture, a device you control).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maps prefixes against the authoritative IEEE OUI registry; the vendor mapping is reliable, with the standard caveat that the OUI identifies the maker, not the specific device or owner.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "MAC Address Lookup",
+      "maclookup.app",
+      "OUI lookup"
+    ],
+    "tags": [
+      "mac-address",
+      "oui",
+      "device-identification"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/mac-address-lookup.md"
   },
   {
@@ -298150,43 +298248,59 @@
   {
     "id": "pressreader-com",
     "name": "PressReader.com",
-    "description": "OSINT tool: PressReader.com.",
+    "description": "Use when you have a `name`, place, or event and want full-text hits across thousands of newspapers and magazines worldwide (including local and non-English press) — returns article mentions.",
     "url": "https://www.pressreader.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "news-search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Full-text searching a huge global catalogue of newspapers/magazines, including small local and foreign-language titles.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A subscription service, but widely free through public/university libraries (log in with a library card via the \"Library or Group\" option). Free registration lets you browse; full article access needs a subscription or library access.",
+    "opsec": "passive",
+    "opsecNote": "Searching and reading articles is passive and doesn't touch your subject. If you sign in, use a sock-puppet account or library access rather than a personally identifying subscription.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A legitimate licensed news-distribution platform carrying original publisher editions; the content is authentic press, so reliability equals that of the underlying publications.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "registration": true,
     "relatedTools": [
+      "allyoucanread-com",
+      "newspaper-map",
+      "google-news-search",
       "press-reader"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "PressReader",
+      "pressreader.com"
+    ],
+    "tags": [
+      "news-search",
+      "newspapers",
+      "foreign-press"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/news-search/pressreader-com.md"
   },
   {
@@ -325622,7 +325736,14 @@
       "inflact-instagram-search",
       "inflact-instagram-viewer-anonymous",
       "imginn",
-      "picuki"
+      "picuki",
+      "inflact",
+      "inflact-com",
+      "inflact-com-2",
+      "inflact-com-3",
+      "inflact-com-4",
+      "inflact-com-5",
+      "inflact-downloader"
     ],
     "aliases": [
       "Inflact Profile Analyzer",
@@ -341457,40 +341578,55 @@
   {
     "id": "steam-osint",
     "name": "Steam-OSINT",
-    "description": "OSINT tool: Steam-OSINT.",
+    "description": "Use when you have a Steam `username`/profile ID and want mutual-friend mapping and past-nickname/URL history — returns `associate` links and prior `social-profile` identifiers.",
     "url": "https://github.com/matiash26/steam-osint",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "steam"
+    "bestFor": "Mapping a Steam account's mutual friends and pulling its history of previous names and profile URLs.",
+    "selectorsIn": [
+      "username"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "selectorsOut": [
+      "associate",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source (Python); run locally. Uses public Steam profile data and typically a (free) Steam Web API key.",
+    "opsec": "passive",
+    "opsecNote": "It reads public Steam profile data via the API rather than interacting with the target, so there's no notification to the subject. Provide a Steam Web API key tied to a sock-puppet Steam account, not your real one.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A community Python tool over Steam's public data; results (mutual friends, name history) are only as complete as the profiles' privacy settings allow, so absence often means \"private\", not \"none\".",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": false,
     "relatedTools": [
       "steam-osint-tool"
     ],
+    "aliases": [
+      "Steam-OSINT",
+      "matiash26/steam-osint"
+    ],
+    "tags": [
+      "steam",
+      "gaming",
+      "friend-mapping"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/steam-osint.md"
   },
   {

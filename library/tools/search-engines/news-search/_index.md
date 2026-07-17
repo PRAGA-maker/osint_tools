@@ -17,7 +17,7 @@ kind: group-index
 - **`newsnow-co-uk`** (medium) — OSINT tool: NewsNow.co.uk.
 - **`newspaper-map`** (medium) — OSINT tool: Newspaper Map.
 - **`newspaperarchive-com`** (medium) — OSINT tool: NewspaperARCHIVE.com.
-- **`pressreader-com`** (medium) — OSINT tool: PressReader.com.
+- **`pressreader-com`** (medium) — Use when you have a `name`, place, or event and want full-text hits across thousands of newspapers and magazines worldwide (including local 
 - **`world-news`** (medium) — OSINT tool: World News.
 - **`yougotthenews`** (medium) — OSINT tool: YouGotTheNews.
 

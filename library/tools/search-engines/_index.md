@@ -89,7 +89,7 @@ kind: group-index
 - **`awesome-public-datasets`** (low) — OSINT tool: awesome-public-datasets.
 - **`awesome-recon-tools`** (low) — Compiled list of tools for reconnaissance and footprinting.
 - **`baidu-china`** (low) — OSINT tool: Baidu (China).
-- **`baiduknows-search-engine-china`** (medium) — Question and answer based website offered by Chinese search engine, Baidu
+- **`baiduknows-search-engine-china`** (medium) — Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns question
 - **`baike-baidu-chinese-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`ballotpedia-united-states`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on p
 - **`bank-of-canada-unclaimed-balances`** (medium) — Bank of Canada's unclaimed balance search
@@ -479,7 +479,7 @@ kind: group-index
 - **`lukol-com`** (high) — Use when you have a `name` or query and want anonymized Google-powered results without your query being profiled — returns web/image results
 - **`lycos-search-engine-uk`** (medium) — Surface web search engine
 - **`lycos`** (low) — OSINT tool: Lycos.
-- **`mac-address-lookup`** (medium) — OSINT tool: MAC Address Lookup.
+- **`mac-address-lookup`** (medium) — Use when you have a `mac-address` (from a device, log, or capture) and want the hardware vendor/manufacturer behind it — returns the OUI-mat
 - **`mac-address-search-tool`** (low) — search by full Mac adress, part of Mac adress (prefix), vendor name or brand name
 - **`magportal`** (low) — OSINT tool: MagPortal.
 - **`mailing-list-archives-search-engine`** (low) — OSINT tool: Mailing List Archives Search Engine.

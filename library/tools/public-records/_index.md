@@ -890,7 +890,7 @@ kind: group-index
 - **`searchsystems-death-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database holding a death/mortality record — re
 - **`sec-company-search`** (low) — OSINT tool: SEC Company Search.
 - **`sec-gov`** (medium) — Use when you have a `name` or `employer-org` and want US securities filings — returns officer/director names, business `address`, company af
-- **`secret-surveillance-catalogue`** (medium) — OSINT tool: Secret Surveillance Catalogue.
+- **`secret-surveillance-catalogue`** (medium) — Use when you have a `device-id` / equipment name (an IMSI-catcher, cell-site simulator, or surveillance box) and want to understand its capa
 - **`section-16-deadline-calculator`** (medium) — OSINT tool: Section 16 Deadline Calculator.
 - **`securities-administrators-ca`** (high) — Use when you have a person's or firm's `name`/`employer-org` and want to check whether they are registered to sell securities or give invest
 - **`security-licence-status-verification`** (medium) — OSINT tool: Security Licence Status Verification.
@@ -1080,7 +1080,7 @@ kind: group-index
 - **`yearbooks-high-school-yearbooks-ancestry`** (high) — Use when you have a `name` and want a historical photo, school, and approximate age for a subject — returns yearbook portraits and school/ye
 - **`yearbooks-myheritage`** (high) — Use when you have a `name` and want an older photo and school context — searches digitized US school yearbooks and returns yearbook images, 
 - **`yearbooks`** (high) — Use when you have a `name` and an approximate school/year and want a historical school/college/military yearbook photo and entry — returns a
-- **`yell-online-business-directory-uk`** (medium) — UK-based business directory; search engine that searches using company name
+- **`yell-online-business-directory-uk`** (medium) — Use when you have a UK business `name`/`employer-org` (or a trade + area) and want its contact details — returns `address`, `phone`, website
 - **`york-city-pa-compensation`** (medium) — OSINT tool: York City PA Compensation.
 - **`york-county-va-2017-public-salaries`** (medium) — OSINT tool: York County VA 2017 Public Salaries.
 - **`youcontrol`** (medium) — OSINT tool: YouControl.

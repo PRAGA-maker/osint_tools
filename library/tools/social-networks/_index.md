@@ -605,7 +605,7 @@ kind: group-index
 - **`steam-community-search`** (low) — OSINT tool: Steam Community :: Search.
 - **`steam-id-finder`** (low) — OSINT tool: Steam ID Finder.
 - **`steam-osint-tool`** (medium) — Use when you have a Steam profile `url`/`username` and want hidden connections — returns inferred "closed" friends and the user's public com
-- **`steam-osint`** (medium) — OSINT tool: Steam-OSINT.
+- **`steam-osint`** (medium) — Use when you have a Steam `username`/profile ID and want mutual-friend mapping and past-nickname/URL history — returns `associate` links and
 - **`steamdb-info-calculator`** (low) — OSINT tool: steamdb.info/calculator.
 - **`steamid-uk`** (medium) — Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) s
 - **`sterraxcyl`** (medium) — Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following coun

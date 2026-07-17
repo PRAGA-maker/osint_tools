@@ -51,7 +51,7 @@ kind: group-index
 - **`carte-ma`** (medium) — Mapping/streetview service for Morocco
 - **`cartodb`** (low) — Use when you have a sizeable spatial dataset (addresses, coordinates, geometries) and need cloud-based mapping, SQL/spatial analysis, and sh
 - **`cellular-towers-map-canada`** (medium) — Use when you have a Canadian `geolocation`/`address` and want to identify nearby licensed cellular tower sites and their operators — returns
-- **`citizen-com`** (medium) — live map of incidents (mainly shooting) that happened in the last hours in major U.S. cities
+- **`citizen-com`** (medium) — Use when you have a US `geolocation` and time window and want to know what safety incidents (shootings, fires, police activity, missing-pers
 - **`city-webcams-com`** (low) — OSINT tool: city-webcams.com.
 - **`collection-of-cadastral-maps`** (medium) — 41 countries
 - **`colorbrewer`** (low) — Use when building a thematic/choropleth map and you need a perceptually sound, colorblind-safe color palette — it outputs ready-to-use color

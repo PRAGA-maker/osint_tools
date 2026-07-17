@@ -35,6 +35,13 @@ relatedTools:
 - inflact-instagram-viewer-anonymous
 - imginn
 - picuki
+- inflact
+- inflact-com
+- inflact-com-2
+- inflact-com-3
+- inflact-com-4
+- inflact-com-5
+- inflact-downloader
 aliases:
 - Inflact Profile Analyzer
 - Profile Analyzer

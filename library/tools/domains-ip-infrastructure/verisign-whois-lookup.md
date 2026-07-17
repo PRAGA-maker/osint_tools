@@ -33,6 +33,7 @@ relatedTools:
 - godaddy-whois-lookup
 - easywhois
 - who-is
+- whois-search
 aliases:
 - Verisign WHOIS
 - webwhois.verisign.com

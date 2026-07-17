@@ -208,7 +208,7 @@ kind: group-index
 - **`libsyn`** (medium) — Use when you have a `name`, `username` or podcast title and want to find a subject's podcast, its episodes and host details — returns `socia
 - **`liftapp-ai`** (medium) — Use when a face/photo lead is too low-quality to search and you want to enhance, upscale or restore it before reverse-image work — returns a
 - **`likefont-com`** (medium) — OSINT tool: LikeFont.com.
-- **`lingolens`** (medium) — Simple based on Streamlit self-hosted web app to automate the download of Google Lens results for different languages and countries (results
+- **`lingolens`** (medium) — Use when you have an `image` and want to run Google Lens across many languages/countries at once (results vary by locale) — returns a combin
 - **`listen-notes`** (medium) — Use when you want to find a person, name or topic mentioned across podcasts — returns matching podcast episodes with show, date and audio.
 - **`live-beaches`** (medium) — Beaches webcam only
 - **`livestream-aka-vimeo`** (high) — Use when you have a `name`/`username` or an event title and want to find a subject's live/archived video and channel — returns their social-
