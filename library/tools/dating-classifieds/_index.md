@@ -112,7 +112,7 @@ kind: group-index
 - **`tinder`** (high) — Use when a subject likely uses the dominant swipe-dating app — surface a recent photo, age, approximate location, and bio via geolocation-ba
 - **`totalcraigsearch-searches-all-regions`** (medium) — OSINT tool: TotalCraigSearch (Searches All Regions).
 - **`totalcraigsearch`** (high) — Use when you want to search Craigslist across many cities/states at once for a subject's listings, alias, or distinctive item — without chec
-- **`trademe-new-zealand`** (medium) — Classified advertisements-related website that provides regional services
+- **`trademe-new-zealand`** (medium) — Use when you have a `username`/`name` tied to New Zealand and want their marketplace footprint — returns a member's listings, feedback, join
 - **`tradingpost-australia`** (medium) — Classified advertisements-related website that provides regional services
 - **`transsearcher-com`** (medium) — OSINT tool: transsearcher.com.
 - **`truedater-online-dating-reports`** (medium) — OSINT tool: TrueDater (Online Dating Reports).

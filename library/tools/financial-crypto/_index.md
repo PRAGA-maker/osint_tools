@@ -50,7 +50,7 @@ kind: group-index
 - **`china-related-resources`** (low) — Resources for research on companies in China.,
 - **`coinatmradar-com`** (low) — Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operat
 - **`coinbase-com`** (low) — OSINT tool: Coinbase.com.
-- **`coinchoose-com`** (medium) — OSINT tool: coinchoose.com.
+- **`coinchoose-com`** (low) — Use when a crypto trace surfaces an unfamiliar coin/ticker and you want quick market and mining context — returns prices, market caps and mi
 - **`coinmap`** (low) — OSINT tool: CoinMap.
 - **`coinmarketcap`** (low) — OSINT tool: CoinMarketCap.
 - **`coinwink-com`** (low) — OSINT tool: Coinwink.com.

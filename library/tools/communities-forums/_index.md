@@ -51,7 +51,7 @@ kind: group-index
 - **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
 - **`brijj`** (medium) — Networking website for business professionals from top companies and top colleges
 - **`budgettravel`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`built-with-flarum`** (medium) — OSINT tool: Built With Flarum.
+- **`built-with-flarum`** (low) — Use when you want to discover forums/communities to search — a showcase directory of live discussion boards running the Flarum software, bro
 - **`business-com`** (medium) — Business and technology-related guides and articles
 - **`buzzfeed`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`buzzsumo`** (medium) — Social Media Search Engine
@@ -241,7 +241,7 @@ kind: group-index
 - **`nationaltradesmen-co-uk`** (medium) — OSINT tool: nationaltradesmen.co.uk.
 - **`nbc-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`ndtv-s-gadgets-360`** (medium) — Online articles, news, and reviews related to business, computers, gadgets, technology, and future trends; includes an eCommerce search engi
-- **`nekobin`** (medium) — OSINT tool: nekobin.
+- **`nekobin`** (low) — Use when you have a paste `domain`/URL on nekobin and want to read the shared text — a lightweight pastebin that hosts snippets, logs and du
 - **`netflix-codes-com`** (low) — alternative way to find anything interesting on Netflix
 - **`network-nine-television-australia`** (medium) — Use when you have an Australian subject's `name` or an event and want national/local news coverage naming them — returns news articles, phot
 - **`network-ten-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
@@ -419,7 +419,7 @@ kind: group-index
 - **`yahoo-answers`** (low) — OSINT tool: Yahoo Answers.
 - **`yahoo-groups`** (medium) — OSINT tool: Yahoo Groups.
 - **`yahootech-news-and-updates`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
-- **`yelp-find-friends`** (medium) — Website related to social networking in the form of travel and tourism; allows users to leave reviews for places visited
+- **`yelp-find-friends`** (medium) — Use when you have a `name`/`email` and want a subject's Yelp presence — their public reviews reveal places frequented and rough `geolocation
 - **`zbin`** (medium) — OSINT tool: ZBin.
 - **`zdnet-technology-news-and-reviews`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`zerobin`** (medium) — OSINT tool: ZeroBin.

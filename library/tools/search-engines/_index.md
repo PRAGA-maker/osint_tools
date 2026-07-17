@@ -285,7 +285,6 @@ kind: group-index
 - **`free-economic-data`** (medium) — Database of freely available economic, demographic and financial data
 - **`freeware-web-ftp-file-search`** (low) — ftp servers search engine
 - **`freewareweb`** (medium) — FTP file search engine
-- **`freight-world`** (medium) — Index linking to various port and harbour sites
 - **`fresheye-search-japan`** (medium) — Japanese web search engine covering regional results
 - **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
@@ -302,7 +301,7 @@ kind: group-index
 - **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu
 - **`github-recon`** (medium) — Use when you have a `username`, `email`, `name`, or `domain` and want to dork GitHub for leaked identity data — returns real names, `email`s
 - **`github-with-awesome-list-search-engine`** (medium) — OSINT tool: Github with Awesome-List Search Engine.
-- **`globalleaks`** (medium) — Open source software for enabling secure and anonymous whistleblowing
+- **`globalleaks`** (low) — Use when you need to RECEIVE tips securely or recognise a whistleblowing intake site — open-source software that powers anonymous, encrypted
 - **`globalspec-engineer-search-engine`** (low) — OSINT tool: GlobalSpec Engineer Search Engine.
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
 - **`goo-japan`** (low) — OSINT tool: Goo (Japan).
@@ -582,7 +581,7 @@ kind: group-index
 - **`orange-france`** (low) — OSINT tool: Orange (France).
 - **`orion-media-indexer`** (low) — Lightning Fast Link Indexer for Torrents, Usenet, and Hosters
 - **`orion`** (low) — open-Source Search Engine for social networking websites.
-- **`oryon-querytool`** (medium) — Google-Spreadsheet-based OSINT framework for complex searches of people, emails, files.
+- **`oryon-querytool`** (medium) — Use when you have a `name`, `email`, `username`, `phone` or `domain` and want systematic dork-driven searches across dozens of engines/sites
 - **`oscobo`** (medium) — Privacy-oriented search engine that keeps searches private through SSL encryption and does not store personal information
 - **`osint-blogs-search-engine`** (low) — OSINT tool: OSINT Blogs Search Engine.
 - **`osint-bookmark`** (low) — Curated collection of investigation tools for company research, scanning, DNS, and Whois.
@@ -910,7 +909,6 @@ kind: group-index
 - **`zarebin-iran`** (low) — OSINT tool: Zarebin (Iran).
 - **`zetoc`** (low) — OSINT tool: Zetoc.
 - **`zilladog-safe-email-and-games-for-kids`** (low) — Child-oritentated email and entertainment
-- **`zillow-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`zoek-search-engine`** (medium) — Netherlands based search engine covering regional results
 - **`zoo-search`** (medium) — OSINT tool: Zoo Search.
 - **`zoomeye`** (medium) — OSINT tool: ZoomEye.

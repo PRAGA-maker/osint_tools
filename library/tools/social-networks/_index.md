@@ -812,7 +812,7 @@ kind: group-index
 - **`youtube-geo-search-tool`** (medium) — OSINT tool: Youtube Geo Search Tool.
 - **`youtube-lookup`** (medium) — Simple tool for gathering info about video: Content details, Snippet details, Statistics, Status, Thumbnails
 - **`youtube-metadata-bulk`** (medium) — Use when you have a YouTube channel/playlist (`social-profile`) and want per-video metadata at scale — returns `geolocation` geotags, upload
-- **`youtube-periscope-twitch-and-dailymotion`** (medium) — OSINT tool: Youtube, Periscope, Twitch & Dailymotion.
+- **`youtube-periscope-twitch-and-dailymotion`** (medium) — Use when you have a `username`/channel on a video platform and want the right search/analytics tools for it — a reference hub of lookups for
 - **`youtube-playlist-len`** (medium) — Find out the total time of all the videos in playlist
 - **`youtube-scraper`** (medium) — Extract and download channel name, likes, number of views, and number of subscribers. Scrape by keyword or URL.
 - **`youtube-screen-capture`** (medium) — allows you to download a stream in pieces and then merge them
