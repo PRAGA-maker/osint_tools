@@ -134,7 +134,7 @@ kind: group-index
 - **`buckets-grayhatwarfare-com`** (low) — Amazon Public Buckets Search
 - **`bugbountyhunting`** (low) — Bug bounty hunting search engine
 - **`bureau-of-justice-statistics`** (medium) — Department of Justice, Bureau of Justice Statistics website providing crime and justice data online
-- **`cachedviews-com`** (medium) — OSINT tool: CachedViews.com.
+- **`cachedviews-com`** (low) — Use when you have a `domain`/URL that's down or changed and want an archived copy — returns cached/archived snapshots aggregated from multip
 - **`campaign-finance-reports-and-data`** (medium) — US Federal Election Commissions site disclosing campaign finance reports and data
 - **`canadian-charity-search`** (medium) — Canada Revenue Agency's searchable list of registered Canadian charities
 - **`canadian-department-of-finance`** (medium) — Canada's Department of Finance site with searchable database
@@ -278,7 +278,7 @@ kind: group-index
 - **`flippity`** (medium) — OSINT tool: Flippity.
 - **`flixster`** (medium) — Movie listings website
 - **`fluther`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries
-- **`fofa`** (medium) — OSINT tool: FOFA.
+- **`fofa`** (low) — Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across 
 - **`fonetask`** (low) — OSINT tool: FONETASK.
 - **`foreign-agents-registration-act`** (medium) — Registered Foreign Agents quick search
 - **`foundation-finder`** (medium) — Foundation Centers online foundation directory

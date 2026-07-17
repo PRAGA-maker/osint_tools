@@ -217,7 +217,7 @@ kind: group-index
 - **`gettr-com`** (medium) — Use when you have a `username` or `name` and want to find the subject on GETTR (a Twitter/X alternative) — returns `social-profile`, posts, 
 - **`gettwitterid`** (medium) — OSINT tool: GetTwitterID.
 - **`ghnames`** (medium) — Use when you have a GitHub `username` and want its history — which accounts have held that handle and their user IDs — returns username/acco
-- **`ghostcodes-addmesnaps-directories`** (medium) — Public Snapchat username directories; pivot from interests/handles to accounts.
+- **`ghostcodes-addmesnaps-directories`** (medium) — Use when you have a `name`, interest, or handle and want to find someone's Snapchat account — returns public Snapchat usernames from opt-in 
 - **`ghostcodes-com`** (medium) — OSINT tool: Ghostcodes.com.
 - **`ghunt-online-version`** (high) — Use when you have an `email` (Gmail/Google account) and want to enumerate the linked Google profile — returns name, profile/cover images, Go
 - **`git-awards`** (low) — Rank GitHub users and repositories.
@@ -492,7 +492,7 @@ kind: group-index
 - **`reddit-suite`** (high) — Use when you have a Reddit `social-profile`/username and want a browser layer that speeds investigation — inline user tagging, history navig
 - **`reddit-timer`** (medium) — Get last week's hourly activity schedule for a specific subreddit
 - **`reddit-user-analyser`** (high) — Use when you have a Reddit `username` and want a fast behavioural profile — returns activity stats, top subreddits, posting-time patterns an
-- **`reddit-user-extractor`** (medium) — #python script that allows you to get a complete list of comments by user name on Reddit in CSV format
+- **`reddit-user-extractor`** (medium) — Use when you have a Reddit `username` and want their full comment/post history offline — returns a CSV of comments (id, subreddit, date, bod
 - **`reddit`** (high) — Use when you have a `username` and want a subject's full public post/comment history — returns a `social-profile` whose activity leaks `geol
 - **`redditcommentsearch-com`** (medium) — Use when you have a Reddit `username` and want to keyword-filter that user's entire comment history — returns matching comments revealing lo
 - **`redditery`** (low) — Explore Reddit posts and comments by criteria.
@@ -549,7 +549,7 @@ kind: group-index
 - **`slash-tags`** (medium) — tool for recommending YouTube tags and displaying related statistical data from search keyword(s)
 - **`small-tool-to-retreive-vk-com-vkontakte-users-hidden-metadata-state-access-dates-counts-etc-anonymously-without`** (medium) — OSINT tool: small tool to retreive vk.com (vkontakte) users hidden metadata (state, access, dates, counts, etc) anonymously (without.
 - **`sn0int-framework-module-for-pornhub`** (medium) — OSINT tool: Sn0int framework module for Pornhub.
-- **`snap-map`** (medium) — OSINT tool: Snap Map.
+- **`snap-map`** (high) — Use when you have a `geolocation` (or a place/event) and want public Snapchat videos posted there — returns a map of geotagged public Snaps 
 - **`snap-political-ads-library`** (low) — Snapchat's library of political ads on the platform.
 - **`snapchat-multi-viewer-osint-combine`** (medium) — Use when you have Snapchat `username`(s) and want to view public profiles, Bitmoji, and public stories side by side — returns social profile
 - **`snapchat-search-enter-username-here`** (medium) — OSINT tool: SnapChat Search (ENTER-USERNAME-HERE).

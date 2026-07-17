@@ -83,7 +83,7 @@ kind: group-index
 - **`onlyfam`** (medium) — OnlyFans search and model finder.
 - **`onlyfans-com`** (medium) — OSINT tool: onlyfans.com.
 - **`onlyfans-finder`** (medium) — Advanced OnlyFans search with filtering.
-- **`onlyfinder-com`** (medium) — OSINT tool: onlyfinder.com.
+- **`onlyfinder-com`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a matching OnlyFans creator — returns creator profiles, handles, a
 - **`onlyfinder`** (low) — OSINT tool: OnlyFinder.
 - **`onlyleaks-pro`** (medium) — OSINT tool: onlyleaks.pro.
 - **`onlysearch-co`** (low) — OSINT tool: Onlysearch.co.

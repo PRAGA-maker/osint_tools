@@ -201,7 +201,7 @@ kind: group-index
 - **`justfornurses-co-uk`** (medium) — OSINT tool: justfornurses.co.uk.
 - **`justpaste`** (medium) — Use when you have a JustPaste.it link (or a paste id) found in a breach, chat, or search hit and want to read the shared rich text/images be
 - **`karmadecay`** (low) — OSINT tool: Karmadecay.
-- **`katbin`** (medium) — OSINT tool: Katbin.
+- **`katbin`** (low) — Use when you have a Katbin paste URL/ID or are dorking for leaked text — returns the pasted content; a place dumps and notes may be shared.
 - **`kinja-rss-news-feed`** (medium) — Website that provides links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest
 - **`knok`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`knowledge-network-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
@@ -280,7 +280,7 @@ kind: group-index
 - **`paste-sh`** (medium) — OSINT tool: paste.sh.
 - **`paste-ubuntu`** (medium) — OSINT tool: paste.ubuntu.
 - **`pastebin-cz`** (medium) — OSINT tool: Pastebin.cz.
-- **`pastery`** (medium) — OSINT tool: Pastery.
+- **`pastery`** (low) — Use when you have a Pastery paste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may
 - **`pasteshr`** (medium) — OSINT tool: PasteShr.
 - **`pastesite-net`** (medium) — OSINT tool: PasteSite.Net.
 - **`pbs-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base

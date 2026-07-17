@@ -31639,37 +31639,51 @@
   {
     "id": "katbin",
     "name": "Katbin",
-    "description": "OSINT tool: Katbin.",
+    "description": "Use when you have a Katbin paste URL/ID or are dorking for leaked text — returns the pasted content; a place dumps and notes may be shared.",
     "url": "https://katb.in",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading a Katbin paste you've been pointed to, and recognizing it as a paste host where leaked data or notes may be posted.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source pastebin (sphericalkat/katbin); no account needed to create or view a paste.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a paste by its link is passive and anonymous — the poster isn't notified. There is no public index of pastes, so you access content only via a known URL or a search-engine hit; don't paste your own case data into it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Small open-source paste service; content is arbitrary user-submitted text with no verification — treat anything found as unverified.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pastebin",
+      "pastery"
+    ],
+    "aliases": [
+      "katb.in"
+    ],
     "tags": [
       "pastebins"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/katbin.md"
   },
   {
@@ -34905,37 +34919,51 @@
   {
     "id": "pastery",
     "name": "Pastery",
-    "description": "OSINT tool: Pastery.",
+    "description": "Use when you have a Pastery paste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be shared.",
     "url": "https://www.pastery.net/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading a Pastery paste you've been pointed to, and treating it as a paste host where leaked data or notes may surface.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free pastebin with syntax highlighting, expiry options, and an API; no account needed to create or view a paste.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a paste by its link is passive and anonymous; the poster isn't notified. No public paste index, so access is via a known URL or a search-engine hit. Don't paste your own case data into it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Established small pastebin; content is arbitrary user-submitted text with no verification.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pastebin",
+      "katbin"
+    ],
+    "aliases": [
+      "pastery.net"
+    ],
     "tags": [
       "pastebins"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/pastery.md"
   },
   {
@@ -49606,45 +49634,56 @@
   {
     "id": "onlyfinder-com",
     "name": "onlyfinder.com",
-    "description": "OSINT tool: onlyfinder.com.",
+    "description": "Use when you have a `username`, `name`, or `geolocation` and want to find a matching OnlyFans creator — returns creator profiles, handles, and an approximate-location map.",
     "url": "https://onlyfinder.com/map/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Searching for an OnlyFans creator by username/name, or browsing creators by approximate location on a map.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name",
+      "geolocation"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free search of the creator index; some features/deeper results are gated behind a paid tier.",
+    "opsec": "passive",
+    "opsecNote": "Searches a third-party index of public OnlyFans creator pages; you don't interact with the creator and they aren't notified. Passive. Given the sensitive/adult nature, keep queries in a sock-puppet browser and handle any findings with care for the subject's privacy and safety.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party search engine that indexes public OnlyFans profile data and self-reported creator locations; not affiliated with OnlyFans, and location data is approximate/self-declared.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "onlyfinder",
+      "social-searcher"
+    ],
+    "aliases": [
+      "OnlyFinder",
+      "onlyfinder map"
+    ],
     "tags": [
       "onlyfans",
-      "OnlyFans Related Sites"
+      "OnlyFans Related Sites",
+      "adult"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "onlyfinder"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlyfinder-com.md"
   },
   {
@@ -74795,47 +74834,58 @@
   {
     "id": "godaddy-com",
     "name": "godaddy.com",
-    "description": "OSINT tool: godaddy.com.",
+    "description": "Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) registrant contact.",
     "url": "https://www.godaddy.com/en-ca/whois",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quick WHOIS lookups — registrar, registration/expiry dates, name servers, and any public registrant details for a domain.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "name",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free WHOIS lookup; GoDaddy is a registrar, so the page also upsells domain purchases, but the WHOIS query itself is free.",
+    "opsec": "passive",
+    "opsecNote": "A WHOIS query reads public registry data and doesn't touch the domain's live server or notify the owner. Passive. (GoDaddy may show a CAPTCHA on repeated lookups.)",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "GoDaddy is the world's largest domain registrar; its WHOIS reflects authoritative registry data, though registrant details are often masked by privacy services.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whois",
+      "icann-lookup",
+      "whoisxmlapi"
+    ],
+    "aliases": [
+      "GoDaddy WHOIS",
+      "godaddy whois lookup"
+    ],
     "tags": [
       "domainsandips",
-      "Domains & IPs"
+      "Domains & IPs",
+      "whois"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cyclect",
-      "godaddy",
-      "godaddy-whois-lookup"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/godaddy-com.md"
   },
   {
@@ -229755,41 +229805,60 @@
   {
     "id": "docket-alarm",
     "name": "Docket Alarm",
-    "description": "Litigation docket tracking",
+    "description": "Use when you have a `name` (party) or docket/case number and want US litigation records — returns dockets, filings, and case status across federal and many state courts.",
     "url": "https://docketalarm.com",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Litigation docket tracking",
-    "input": "Case name or docket number",
-    "output": "Docket filings, case status",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching US court dockets by party name or case number to find lawsuits and filings a person is involved in.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "A few free searches and views of already-in-system documents per week; unlimited access is paid ($99/mo flat, or pay-as-you-go). Fresh PACER pulls incur per-document fees.",
     "opsec": "passive",
-    "opsecNote": "Incorporates free and paid PACER data",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching court records is passive — parties aren't notified who looked. Registration is needed for most use, so your account is tied to your searches; use a dedicated account. Court records are public but sensitive; handle party PII carefully.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Docket Alarm (a Fastcase/vLex product) aggregates authoritative court/PACER data; the records are official, the platform a commercial front-end.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [
+      "pacer",
+      "courtlistener",
+      "unicourt"
+    ],
+    "aliases": [
+      "docketalarm.com",
+      "Docket Alarm"
+    ],
+    "tags": [
+      "court-records",
+      "litigation",
+      "pacer"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/docket-alarm.md"
   },
   {
@@ -276154,35 +276223,52 @@
   {
     "id": "cachedviews-com",
     "name": "CachedViews.com",
-    "description": "OSINT tool: CachedViews.com.",
+    "description": "Use when you have a `domain`/URL that's down or changed and want an archived copy — returns cached/archived snapshots aggregated from multiple cache sources.",
     "url": "https://cachedviews.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Quickly reaching an archived copy of a web page when the live site is down, changed, or removed.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free aggregator; it just links out to third-party caches/archives.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You view archived copies via third-party archives, not the target's live server, so the site owner isn't alerted. Passive. (Opening the Wayback link routes through archive.org, which sees your IP but not the target.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Small third-party convenience wrapper that hands off to real archives; it stores nothing itself, so reliability depends on the underlying archives (and Google Cache is now discontinued).",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "wayback-machine",
+      "cachedview",
+      "archive-today"
+    ],
+    "aliases": [
+      "cachedviews.com"
+    ],
+    "tags": [
+      "cache",
+      "web-archive"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/cachedviews-com.md"
   },
   {
@@ -282541,37 +282627,58 @@
   {
     "id": "fofa",
     "name": "FOFA",
-    "description": "OSINT tool: FOFA.",
+    "description": "Use when you have a `domain`, `ip-address`, or favicon and want to map internet-facing assets — returns hosts, services, and banners across the internet (Shodan-style).",
     "url": "https://en.fofa.info/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Mapping internet-exposed hosts/services tied to a domain, IP, or favicon — infrastructure and asset discovery.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier after registration (limited results/queries per day); paid plans unlock more results, advanced operators, and API volume.",
+    "opsec": "passive",
+    "opsecNote": "FOFA queries its own pre-scanned index, so you don't touch the target's servers directly — passive toward the subject. However you must register/log in, so your account (and its email) is tied to your searches; FOFA is a China-based service, so use a dedicated account and consider that the operator sees your queries.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trustNote": "Well-known cyberspace search engine operated by Beijing Huashun Xin'an (BAIMAOHUI); reputable in the security community but a commercial third-party scanner, not an authority on ownership.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "shodan",
+      "censys",
+      "zoomeye"
+    ],
+    "aliases": [
+      "fofa.info",
+      "FOFA search"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "speciality-search-engines",
+      "attack-surface",
+      "infrastructure"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/fofa.md"
   },
   {
@@ -322123,29 +322230,31 @@
   {
     "id": "ghostcodes-addmesnaps-directories",
     "name": "GhostCodes/AddMeSnaps directories",
-    "description": "Public Snapchat username directories; pivot from interests/handles to accounts.",
+    "description": "Use when you have a `name`, interest, or handle and want to find someone's Snapchat account — returns public Snapchat usernames from opt-in \"add me\" directories.",
     "url": "https://www.addmesnaps.com",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Discovering public Snapchat handles that users self-listed, filterable by age/gender/interest.",
     "selectorsIn": [
       "username",
       "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public directory (addmesnaps.com now redirects to addmes.io); no registration required to browse.",
+    "opsec": "passive",
+    "opsecNote": "Browsing an opt-in directory of self-submitted handles is passive; the listed user chose to be public and isn't told you looked. No login. Adding/contacting a person on Snapchat would be active — stay at the directory-lookup stage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-run \"add me\" directory of self-submitted Snapchat usernames; entries are user-provided and unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -322154,13 +322263,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "snapchat",
+      "snap-map"
+    ],
+    "aliases": [
+      "AddMeSnaps",
+      "addmes.io",
+      "GhostCodes"
+    ],
     "tags": [
-      "kimi-2026"
+      "snapchat",
+      "username-directory",
+      "social-media"
     ],
     "source": "kimi-tiktok-snap",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ghostcodes-addmesnaps-directories.md"
   },
   {
@@ -336926,38 +337045,56 @@
   {
     "id": "reddit-user-extractor",
     "name": "Reddit User Extractor",
-    "description": "#python script that allows you to get a complete list of comments by user name on Reddit in CSV format",
+    "description": "Use when you have a Reddit `username` and want their full comment/post history offline — returns a CSV of comments (id, subreddit, date, body) for analysis.",
     "url": "https://github.com/mylk/reddit-user-extractor",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-exporting a Reddit user's comment history to CSV for offline keyword/timeline analysis.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free/open-source Python script; uses Reddit's public API (bounded by Reddit's ~1000-item history limit).",
+    "opsec": "passive",
+    "opsecNote": "Pulls public comments via Reddit's API — the target isn't notified. Passive. Run with an unauthenticated or throwaway API credential so the export isn't linked to your real Reddit identity.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small open-source script (mylk/reddit-user-extractor, ~20 stars); it only formats Reddit's public API data into CSV.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "search-reddit-comments-by-user",
+      "reddit-user-analyser"
+    ],
+    "aliases": [
+      "reddit-user-extractor"
+    ],
     "tags": [
       "Social Media",
-      "Reddit"
+      "Reddit",
+      "python"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-user-extractor.md"
   },
   {
@@ -339605,39 +339742,55 @@
   {
     "id": "snap-map",
     "name": "Snap Map",
-    "description": "OSINT tool: Snap Map.",
+    "description": "Use when you have a `geolocation` (or a place/event) and want public Snapchat videos posted there — returns a map of geotagged public Snaps you can view by location and time.",
     "url": "https://map.snapchat.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding public, geotagged Snapchat videos posted from a specific location — eyewitness footage of a place and time.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "image",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free; viewable in a web browser with no Snapchat account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the public Snap Map is passive — you only view content users chose to submit publicly, and posters aren't told who watched. No login needed; use a clean browser. You're not interacting with any individual.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by Snap Inc. (Snapchat); the Snaps are first-party user submissions to the public map, authoritative as to what was posted where.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "snapchat",
       "snapchat-com"
     ],
+    "aliases": [
+      "Snapchat Map",
+      "map.snapchat.com"
+    ],
+    "tags": [
+      "snapchat",
+      "geolocation",
+      "social-media"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snap-map.md"
   },
   {

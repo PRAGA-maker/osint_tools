@@ -210,7 +210,7 @@ kind: group-index
 - **`go-dork`** (low) — Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.
 - **`go3-poland`** (medium) — Poland based service provider for registering websites and domain addresses
 - **`goblyn`** (low) — tool focused to enumeration and capture of website files metadata. It will search for active directories in the website and so enumerate the
-- **`godaddy-com`** (medium) — OSINT tool: godaddy.com.
+- **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r
 - **`godaddy-whois-lookup`** (medium) — Whois lookup tool offered by GoDaddy that identifies the available registration information for a website or domain name
 - **`godaddy`** (medium) — Service provider for registering websites and domain addresses
 - **`gofindwhois`** (low) — More than 180 online tool for domain investigaions in one. What's not to be found here: reverse whois, hosting history, cloudfare resolver, 
