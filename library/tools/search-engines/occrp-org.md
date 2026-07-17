@@ -32,6 +32,9 @@ registration: false
 relatedTools:
 - occrp-aleph
 - data-occrp-org
+- organized-crime-and-corruption-reporting-project
+- the-pegasus-project-occrp
+- visual-investigative-scenarios
 aliases:
 - OCCRP databases
 - OCCRP ID research databases

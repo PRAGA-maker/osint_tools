@@ -34,6 +34,9 @@ registration: false
 relatedTools:
 - arin
 - whois-arin
+- account-arin-net
+- arin-net
+- whois-arin-online
 aliases:
 - ARIN Whois
 - ARIN RDAP

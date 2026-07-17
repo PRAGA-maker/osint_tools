@@ -31,6 +31,8 @@ registration: false
 relatedTools:
 - archive-org
 - archive-vn
+- archive-it
+- archive-it-org
 aliases:
 - Archive-It
 - Archive-It Wayback

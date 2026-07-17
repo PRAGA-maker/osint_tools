@@ -356,7 +356,6 @@ kind: group-index
 - **`twitch-tv`** (high) — Use when you have a `username` and want a person's live-streaming presence — returns their channel, VODs/clips, chat activity and voice/face
 - **`twitter-com`** (high) — Use when you have a `name`, keyword, or event and want eyewitness photos/media posted to X — returns `social-profile`s of posters and `image
 - **`undetectable-ai`** (high) — Use when you have an `image`/`face` and want to know if it is AI-generated — returns an AI-vs-human verdict with a confidence score, useful 
-- **`unscreen-com`** (medium) — remove the background from an uploaded video
 - **`us-east-1-console-aws-amazon-com`** (high) — Use when you have two `face` images and want a quantified similarity score to decide if they are the same person — returns a match confidenc
 - **`usespottr-com`** (high) — Use when you have a long `image`/video and want to find a person, vehicle plate or scene inside it — returns matched moments, incl. OCR'd pl
 - **`vaughnlivetv`** (high) — Use when you have a `username`/handle or need to browse live IRL/streaming video and want to find a person's live channel and on-camera appe

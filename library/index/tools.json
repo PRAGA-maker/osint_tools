@@ -17820,7 +17820,18 @@
     "registration": false,
     "relatedTools": [
       "wayback-archive-it-org",
-      "archive-vn"
+      "archive-vn",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
     ],
     "aliases": [
       "Wayback Machine",
@@ -21701,7 +21712,19 @@
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "aliases": [],
     "tags": [],
     "source": "arf-seed",
@@ -22224,7 +22247,9 @@
     "registration": false,
     "relatedTools": [
       "archive-org",
-      "archive-vn"
+      "archive-vn",
+      "archive-it",
+      "archive-it-org"
     ],
     "aliases": [
       "Archive-It",
@@ -22353,6 +22378,19 @@
     "source": "awesome-osint",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "_file": "library/tools/archives-cache/wayback-machine.md"
   },
   {
@@ -22405,6 +22443,19 @@
     "source": "tracelabs-repos",
     "lastVerified": "2026-07-10",
     "enrichment": "full",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "_file": "library/tools/archives-cache/wayback-machine-2.md"
   },
   {
@@ -22825,6 +22876,19 @@
     "source": "uk-osint",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org-2"
+    ],
     "_file": "library/tools/archives-cache/web-archive-org.md"
   },
   {
@@ -26587,24 +26651,31 @@
   {
     "id": "digg",
     "name": "Digg",
-    "description": "Micronews site focused on trending news stories",
-    "url": "http://digg.com",
+    "description": "Use when you have a `name`, `username` or topic and want to see what trending stories and links people have shared/submitted about it — returns aggregated news links and submitter handles.",
+    "url": "https://digg.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Scanning a curated news-aggregator feed for trending stories or links related to a person, handle, or event.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; no account needed to read. An account is only needed to submit or comment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing/searching Digg is passive and does not alert anyone. If you log in to comment or submit you create an attributable trail — read-only unless you deliberately engage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A social news aggregator; the site is legitimate but the shared content is user/editor curated, so treat linked stories as leads to their original sources.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -26613,41 +26684,50 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "diggreader",
+      "reddit"
+    ],
+    "aliases": [
+      "digg.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "aggregator",
+      "social-news"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "diggreader"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/digg.md"
   },
   {
     "id": "digitaltrends-com",
     "name": "DigitalTrends.com",
-    "description": "Online articles and news related to business, computers, gadgets, technology, and future trends",
-    "url": "http://www.digitaltrends.com",
+    "description": "Use when you have a `name` and want to find tech/gadget articles a subject wrote or was quoted in — returns bylines, expert quotes and article mentions in a tech-news archive.",
+    "url": "https://www.digitaltrends.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a large consumer-tech news archive for a person's byline, expert quote, or product mention.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; ad-supported with no paywall on articles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news site is passive and doesn't alert your subject. The site sets ad/tracking cookies; use a clean browser or a site-scoped search engine query if you want to avoid touching it directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established consumer-technology publication with editorial standards; bylines and quotes are reliable primary references.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -26656,15 +26736,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "techcrunch"
+    ],
+    "aliases": [
+      "Digital Trends",
+      "digitaltrends.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "technology",
+      "gadgets"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/digitaltrends-com.md"
   },
   {
@@ -33308,24 +33394,30 @@
   {
     "id": "national-geographic-magazine",
     "name": "National Geographic Magazine",
-    "description": "Searchable website for a worldwide major magazine with large readership and or global publishing",
-    "url": "http://ngm.nationalgeographic.com",
+    "description": "Use when you have a `name` and want to find whether a subject appears as a contributor, photographer or article subject in National Geographic — returns article mentions and bylines.",
+    "url": "https://www.nationalgeographic.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching National Geographic's article and photo archive for a person's byline, credit, or appearance as a subject.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Article search and browsing are free; some full articles sit behind a Nat Geo/Disney subscription paywall, but headlines, bylines and credits are visible.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news site is passive; nothing about your subject is submitted. The site sets tracking cookies — use a clean browser if you don't want that reading history associated with you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party site of an established, editorially-reviewed magazine; bylines and credits are reliable.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -33334,18 +33426,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "national-geographic-kids"
     ],
+    "aliases": [
+      "Nat Geo Magazine",
+      "ngm.nationalgeographic.com"
+    ],
+    "tags": [
+      "news-journalism",
+      "magazine",
+      "photography"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/national-geographic-magazine.md"
   },
   {
@@ -77002,7 +77097,8 @@
     "relatedTools": [
       "icann-lookup",
       "lookup-icann-org",
-      "rdrs-icann-org"
+      "rdrs-icann-org",
+      "icann-org"
     ],
     "aliases": [
       "ICANN WHOIS",
@@ -87957,7 +88053,10 @@
     "registration": false,
     "relatedTools": [
       "arin",
-      "whois-arin"
+      "whois-arin",
+      "account-arin-net",
+      "arin-net",
+      "whois-arin-online"
     ],
     "aliases": [
       "ARIN Whois",
@@ -109415,6 +109514,19 @@
     "source": "uk-osint",
     "lastVerified": "",
     "enrichment": "full",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org"
+    ],
     "_file": "library/tools/email/web-archive-org-2.md"
   },
   {
@@ -117344,48 +117456,6 @@
     "lastVerified": "2026-06-13",
     "enrichment": "full",
     "_file": "library/tools/geolocation/apify-s-google-maps-scraper.md"
-  },
-  {
-    "id": "apps-skylens-io",
-    "name": "Apps.skylens.io",
-    "description": "Posts with geotags from five social networks at once on one map (Twitter, YouTube, Instagram, Flickr, Vkontakte)",
-    "url": "https://app.skylens.io/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation",
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Social media and photos"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/apps-skylens-io.md"
   },
   {
     "id": "aprs-on-google-maps",
@@ -126456,49 +126526,56 @@
   },
   {
     "id": "ncei-noaa-gov",
-    "name": "ncei.noaa.gov",
-    "description": "Natural Hazards Viewer (worldwide)",
+    "name": "NCEI Natural Hazards Viewer",
+    "description": "Use when you have a `geolocation` and want historical natural-hazard events near it — returns dated earthquake, tsunami and volcano events geolocated on a map.",
     "url": "https://www.ncei.noaa.gov/maps/hazards/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Checking whether a location experienced a significant earthquake, tsunami or volcanic event on/around a given date.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free US-government service (NOAA/NCEI); no account or key needed to use the interactive viewer.",
+    "opsec": "passive",
+    "opsecNote": "You browse a public NOAA map; nothing about your subject is submitted. Standard web-log exposure only. No sock puppet required.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by NOAA's National Centers for Environmental Information — authoritative, curated global hazard event databases.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "noaa-data-access-viewer",
+      "nexrad-data-inventory-search",
+      "ngdc-bathymetry-map"
+    ],
+    "aliases": [
+      "NOAA Natural Hazards Viewer",
+      "ncei.noaa.gov hazards"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Nature"
+      "maps",
+      "geolocation",
+      "nature",
+      "hazards"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "nexrad-data-inventory-search",
-      "ngdc-bathymetry-map",
-      "noaa-data-access-viewer",
-      "noaa-fisheries-vessel-search"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/ncei-noaa-gov.md"
   },
   {
@@ -134506,7 +134583,13 @@
     "relatedTools": [
       "baidu",
       "baidu-maps",
-      "baidu-translate"
+      "baidu-translate",
+      "baidu-china",
+      "baidu-com",
+      "baidu-image-search-2",
+      "baidu-images",
+      "baiduknows-search-engine-china",
+      "baike-baidu-chinese-language"
     ],
     "aliases": [
       "Baidu reverse image",
@@ -144211,6 +144294,19 @@
     "source": "awesome-osint",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "_file": "library/tools/image-video-face/internet-archive-open-source-videos.md"
   },
   {
@@ -144256,7 +144352,19 @@
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "aliases": [],
     "tags": [
       "video-search",
@@ -154716,44 +154824,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/undetectable-ai.md"
-  },
-  {
-    "id": "unscreen-com",
-    "name": "unscreen.com",
-    "description": "remove the background from an uploaded video",
-    "url": "https://www.unscreen.com/",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Video editing and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/unscreen-com.md"
   },
   {
     "id": "us-east-1-console-aws-amazon-com",
@@ -217823,37 +217893,57 @@
   {
     "id": "academictree",
     "name": "AcademicTree",
-    "description": "A tool for finding links between scientists (including little-known ones). 150000+ people in database (in all sections combined). Select a field of science. Enter a person's name. See a tree of their teachers and students",
+    "description": "Use when you have an academic's `name` and want their mentors, students and collaborators — returns `associate` links, `employer-org` affiliations and a scholarly network.",
     "url": "https://academictree.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Mapping the mentor/student/collaborator network of a researcher or academic across 70+ disciplines.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, community-built database; no account needed to browse or search. Editing/adding nodes is also free.",
+    "opsec": "passive",
+    "opsecNote": "Read-only searching is passive and anonymous. If you create or edit a node you leave a public edit trail tied to whatever account you use — browse only unless you deliberately want to contribute.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Crowd-sourced academic genealogy (originally Neurotree). Connections are user-submitted, so a well-cited node is reliable but sparse/unverified nodes may contain errors.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-scholar",
+      "orcid"
+    ],
+    "aliases": [
+      "Academic Family Tree",
+      "Neurotree",
+      "academictree.org"
+    ],
     "tags": [
-      "Science"
+      "science",
+      "academia",
+      "genealogy",
+      "network-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/academictree.md"
   },
   {
@@ -222296,40 +222386,57 @@
   },
   {
     "id": "buffalo-police",
-    "name": "Buffalo Police",
-    "description": "OSINT tool: Buffalo Police.",
-    "url": "https://airtable.com/embed/shra4F3cAE7H2PV5m?backgroundColor=gray&amp;viewControls=on",
+    "name": "Buffalo Police Accountability Database",
+    "description": "Use when you have a Buffalo (NY) police officer `name` or badge and want accountability/misconduct records — returns officer identity and complaint/disciplinary details.",
+    "url": "https://airtable.com/embed/shra4F3cAE7H2PV5m?backgroundColor=gray&viewControls=on",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up Buffalo, NY police officers in a community-compiled accountability/misconduct Airtable.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free public Airtable embed; no account needed to view. Community-maintained, so availability depends on the volunteer host keeping the base public.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You view a public Airtable; no query about your subject is transmitted to the officer or department. Standard Airtable/web logging only. Do not attempt to edit — it is read-only for the public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Volunteer-compiled from public complaint/disciplinary records and news. Useful as a lead index; verify any specific record against the primary source (court, CCRB-equivalent, news).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "san-francisco-copwatch-database",
       "simplescraper-osint-airtable"
     ],
+    "aliases": [
+      "Buffalo Police copwatch",
+      "Buffalo PD accountability"
+    ],
+    "tags": [
+      "police",
+      "accountability",
+      "us",
+      "new-york",
+      "airtable"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/buffalo-police.md"
   },
   {
@@ -262772,6 +262879,19 @@
     "source": "osint4all",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "_file": "library/tools/public-records/snitch-list.md"
   },
   {
@@ -288225,6 +288345,19 @@
     "source": "awesome-osint",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "_file": "library/tools/search-engines/internet-archive.md"
   },
   {
@@ -295380,7 +295513,10 @@
     "registration": false,
     "relatedTools": [
       "occrp-aleph",
-      "data-occrp-org"
+      "data-occrp-org",
+      "organized-crime-and-corruption-reporting-project",
+      "the-pegasus-project-occrp",
+      "visual-investigative-scenarios"
     ],
     "aliases": [
       "OCCRP databases",
@@ -310623,7 +310759,13 @@
       "yandex-image-search",
       "yandex-images",
       "yandex-maps",
-      "yandex-translate"
+      "yandex-translate",
+      "yandex-browser",
+      "yandex-mail",
+      "yandex-russia",
+      "yandex-video-search",
+      "yandex-wordstat",
+      "yandexmaps"
     ],
     "aliases": [
       "Yandex Search",
@@ -333880,6 +334022,19 @@
     "source": "toddington-resources",
     "lastVerified": "2026-07-14",
     "enrichment": "full",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "snitch-list",
+      "the-twitter-stream-grab",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "_file": "library/tools/social-networks/parler-archives.md"
   },
   {
@@ -343463,6 +343618,19 @@
     "source": "cyb-detective",
     "lastVerified": "",
     "enrichment": "stub",
+    "relatedTools": [
+      "archive-org",
+      "internet-archive",
+      "internet-archive-open-source-videos",
+      "internet-archive-videos",
+      "parler-archives",
+      "snitch-list",
+      "tv-closed-caption-search",
+      "wayback-machine",
+      "wayback-machine-2",
+      "web-archive-org",
+      "web-archive-org-2"
+    ],
     "_file": "library/tools/social-networks/the-twitter-stream-grab.md"
   },
   {
@@ -348894,38 +349062,54 @@
   {
     "id": "twitter-money-calculator",
     "name": "Twitter Money Calculator",
-    "description": "OSINT tool: Twitter Money Calculator.",
+    "description": "Use when you have a Twitter/X `username` and want a quick read of its follower count and engagement metrics — returns account activity/engagement signals (as a byproduct of an earnings estimate).",
     "url": "https://influencermarketinghub.com/twitter-money-calculator/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Pulling a Twitter/X handle's follower count and engagement rate in one click as an account-activity signal.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Completely free, no account required; it's a marketing lead-gen tool from Influencer Marketing Hub.",
+    "opsec": "passive",
+    "opsecNote": "The tool fetches public Twitter/X profile metrics; it does not notify or interact with the account. Your query hits Influencer Marketing Hub's servers, not the subject. No sock puppet needed, but avoid entering anything but the public handle.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party marketing tool. The \"earnings\" figure is a rough heuristic and not meaningful; only the underlying follower/engagement metrics it surfaces have any investigative value.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "twitonomy",
+      "socialblade-twitter"
+    ],
+    "aliases": [
+      "X money calculator",
+      "Influencer Marketing Hub Twitter calculator"
+    ],
     "tags": [
-      "Social Media",
-      "Twitter"
+      "twitter",
+      "x",
+      "social-media",
+      "metrics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/twitter-money-calculator.md"
   },
   {
@@ -365000,35 +365184,53 @@
   {
     "id": "number-plate-check",
     "name": "Number Plate Check",
-    "description": "OSINT tool: Number Plate Check.",
+    "description": "Use when you have a UK `vehicle-plate` and want the vehicle's make/model, MOT and mileage history, tax status and keeper-change count — returns vehicle attributes plus ownership-history signals.",
     "url": "https://www.checkcardetails.co.uk/number-plate-check",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free UK registration-plate lookup returning make/model, MOT + mileage history, tax status and number of previous keepers.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "vehicle-plate"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "The core check (make/model, MOT history, tax, mileage) is free with no account. Full history bundles (finance, write-off, theft markers) are a paid upsell.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a third-party site that resells DVLA/DVSA data. The lookup is against a plate, not linked to your identity, but the operator logs your IP and the plate searched. Use a clean browser/VPN if you don't want that plate associated with your session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party aggregator that queries official DVLA and DVSA feeds. Vehicle attributes and MOT data are authoritative; the paid finance/theft markers are resold and should be corroborated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "vehicle-enquiry-service-gov-uk",
+      "total-car-check"
+    ],
+    "aliases": [
+      "Check Car Details",
+      "checkcardetails.co.uk"
+    ],
+    "tags": [
+      "vehicle",
+      "uk",
+      "dvla"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/number-plate-check.md"
   },
   {

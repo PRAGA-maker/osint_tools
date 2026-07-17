@@ -36,7 +36,7 @@ kind: group-index
 - **`8chan`** (low) — OSINT tool: 8chan.
 - **`990-finder`** (medium) — Enter the company name and select the state to get a link to download its 900 form.
 - **`aat-org-uk`** (high) — Use when you have an accountant/bookkeeper `name` or a UK location and want to verify AAT-licensed status — returns member/firm name, busine
-- **`academictree`** (medium) — A tool for finding links between scientists (including little-known ones). 150000+ people in database (in all sections combined). Select a f
+- **`academictree`** (medium) — Use when you have an academic's `name` and want their mentors, students and collaborators — returns `associate` links, `employer-org` affili
 - **`accaglobal-com`** (high) — Use when you have a `name`, firm or town and want to confirm someone is a chartered certified accountant (ACCA member) — returns membership 
 - **`access-state-records-online-staterecords-org`** (high) — Use when you have a `name` and want a US public-records starting point (criminal, court, arrest, vital records) — returns aggregated record 
 - **`acrevalue`** (low) — Land-parcel value and ownership mapping tool.
@@ -127,7 +127,7 @@ kind: group-index
 - **`brb-public-records`** (medium) — Public records source directory
 - **`brooklyn-genealogy`** (high) — Use when you have a name tied to historical Brooklyn/Kings County NY and want transcribed records — returns census, cemetery, church, direct
 - **`brownbook`** (medium) — Use when you have a business `name`/`employer-org` and want its listing — returns address, phone, and contact details from a global crowd-so
-- **`buffalo-police`** (medium) — OSINT tool: Buffalo Police.
+- **`buffalo-police`** (medium) — Use when you have a Buffalo (NY) police officer `name` or badge and want accountability/misconduct records — returns officer identity and co
 - **`bulgaria`** (high) — Use when you have a `name` or `employer-org` in Bulgaria and want to confirm company officers, ownership and registered addresses — returns 
 - **`business-directory-occ`** (low) — OSINT tool: Business Directory \| OCC.
 - **`business-gov-au`** (high) — Use when you have an Australian business `name`, ABN/ACN, or `employer-org` and want official registration data — returns entity name, ABN s

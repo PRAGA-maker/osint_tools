@@ -34,6 +34,7 @@ relatedTools:
 - icann-lookup
 - lookup-icann-org
 - rdrs-icann-org
+- icann-org
 aliases:
 - ICANN WHOIS
 - lookup.icann.org

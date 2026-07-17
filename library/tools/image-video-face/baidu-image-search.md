@@ -36,6 +36,12 @@ relatedTools:
 - baidu
 - baidu-maps
 - baidu-translate
+- baidu-china
+- baidu-com
+- baidu-image-search-2
+- baidu-images
+- baiduknows-search-engine-china
+- baike-baidu-chinese-language
 aliases:
 - Baidu reverse image
 - graph.baidu.com

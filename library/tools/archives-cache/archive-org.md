@@ -31,6 +31,17 @@ registration: false
 relatedTools:
 - wayback-archive-it-org
 - archive-vn
+- internet-archive
+- internet-archive-open-source-videos
+- internet-archive-videos
+- parler-archives
+- snitch-list
+- the-twitter-stream-grab
+- tv-closed-caption-search
+- wayback-machine
+- wayback-machine-2
+- web-archive-org
+- web-archive-org-2
 aliases:
 - Wayback Machine
 - web.archive.org

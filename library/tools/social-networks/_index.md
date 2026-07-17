@@ -729,7 +729,7 @@ kind: group-index
 - **`twitter-developer-platform`** (medium) — OSINT tool: Twitter Developer Platform.
 - **`twitter-lolarchiver-com`** (high) — Use when you have a Twitter/X `username` or user ID and want its history of handle, display-name, bio, location and website changes — return
 - **`twitter-mentions-map`** (medium) — A world map that shows the locations of users who mention you in their tweets.
-- **`twitter-money-calculator`** (medium) — OSINT tool: Twitter Money Calculator.
+- **`twitter-money-calculator`** (medium) — Use when you have a Twitter/X `username` and want a quick read of its follower count and engagement metrics — returns account activity/engag
 - **`twitter-monitoring`** (high) — Use when you have a Twitter/X `username` or a keyword/hashtag and want a quick browser-based search/monitor without logging in — returns soc
 - **`twitter-name-search-twitter-name-search`** (medium) — OSINT tool: Twitter Name Search (Twitter Name Search).
 - **`twitter-photo-search`** (high) — Use when you have a `name`/`username` or keyword and want to search Twitter/X image content via a prebuilt Google Custom Search Engine — ret

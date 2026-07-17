@@ -20,7 +20,6 @@ kind: group-index
 - **`acsdg`** (medium) — Use when you have map locations and want to measure courses/distances, draw radius circles, and export the points as coordinates — returns g
 - **`airport-webcams`** (low) — OSINT tool: Airport Webcams.
 - **`apify-s-google-maps-scraper`** (medium) — Use when you need to bulk-extract Google Maps place data (names, addresses, phone numbers, reviews, coordinates) around a location or for a 
-- **`apps-skylens-io`** (medium) — Posts with geotags from five social networks at once on one map (Twitter, YouTube, Instagram, Flickr, Vkontakte)
 - **`aprs-on-google-maps`** (high) — Use when you have an amateur-radio callsign or an area and want real-time/historic position tracks — returns map locations, movement history
 - **`aqicn`** (medium) — Air pollution gauges on the map
 - **`arcgis-mapping-platform`** (high) — Use when you have a `geolocation`/`address` and want to view or analyse published geospatial layers (parcels, imagery, infrastructure) — ret
@@ -207,7 +206,7 @@ kind: group-index
 - **`native-land-ca`** (medium) — Use when you have a `geolocation` and want the Indigenous nations, languages and treaties historically tied to that point — returns territor
 - **`natural-hazards-map-worldwide`** (medium) — Enter location and assess the risk of flooding, earthquakes and hail in this place on the map.
 - **`naver-korean`** (high) — Use when a location is in South Korea and you need accurate maps, street view (Roadview), POIs, and addresses that Google Maps covers poorly
-- **`ncei-noaa-gov`** (medium) — Natural Hazards Viewer (worldwide)
+- **`ncei-noaa-gov`** (medium) — Use when you have a `geolocation` and want historical natural-hazard events near it — returns dated earthquake, tsunami and volcano events g
 - **`nest-cam-directory`** (low) — OSINT tool: Nest Cam Directory.
 - **`nexrad-data-inventory-search`** (medium) — Use when you need to prove or check the weather at a US place and time — pull archived NWS Doppler radar for chronolocation and timeline cor
 - **`nga-geoint`** (low) — Use when you need open-source geospatial libraries/datasets (GeoServer plugins, geodata tools) from the US National Geospatial-Intelligence 

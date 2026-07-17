@@ -144,7 +144,7 @@ kind: group-index
 - **`nato-int`** (low) — Explore this interactive map to learn more about NATO, how the Alliance works and how it responds to today's security challenges.
 - **`noaa-fisheries-vessel-search`** (medium) — Maritime-related website that offers a search of a US database of naval vessel types
 - **`nomerogram-ru`** (medium) — OSINT tool: Nomerogram.ru.
-- **`number-plate-check`** (medium) — OSINT tool: Number Plate Check.
+- **`number-plate-check`** (medium) — Use when you have a UK `vehicle-plate` and want the vehicle's make/model, MOT and mileage history, tax status and keeper-change count — retu
 - **`open-data-soft-navitia`** (medium) — OSINT tool: Open Data Soft - Navitia.
 - **`opensky-network`** (low) — Community, open source flight tracking network.
 - **`openstreetmap-public-transport`** (low) — Select an area on the map (if the square around it is green, then data for that location is available) and download data (buttons on the rig

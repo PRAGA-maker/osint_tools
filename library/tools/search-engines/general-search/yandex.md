@@ -37,6 +37,12 @@ relatedTools:
 - yandex-images
 - yandex-maps
 - yandex-translate
+- yandex-browser
+- yandex-mail
+- yandex-russia
+- yandex-video-search
+- yandex-wordstat
+- yandexmaps
 aliases:
 - Yandex Search
 - yandex.ru

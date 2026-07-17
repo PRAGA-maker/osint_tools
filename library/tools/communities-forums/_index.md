@@ -87,8 +87,8 @@ kind: group-index
 - **`defencetalk-com`** (medium) — OSINT tool: defencetalk.com.
 - **`defuse`** (medium) — OSINT tool: Defuse.
 - **`deviantart`** (medium) — Online art community
-- **`digg`** (medium) — Micronews site focused on trending news stories
-- **`digitaltrends-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
+- **`digg`** (medium) — Use when you have a `name`, `username` or topic and want to see what trending stories and links people have shared/submitted about it — retu
+- **`digitaltrends-com`** (medium) — Use when you have a `name` and want to find tech/gadget articles a subject wrote or was quoted in — returns bylines, expert quotes and artic
 - **`disboards`** (medium) — Disney discussions forum
 - **`discovery-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`disqus`** (medium) — Worldide blog comment hosting service
@@ -246,7 +246,7 @@ kind: group-index
 - **`mytwinplace`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`n0paste`** (low) — Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-le
 - **`nachricht`** (medium) — OSINT tool: Nachricht.
-- **`national-geographic-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
+- **`national-geographic-magazine`** (medium) — Use when you have a `name` and want to find whether a subject appears as a contributor, photographer or article subject in National Geograph
 - **`nationaltradesmen-co-uk`** (medium) — OSINT tool: nationaltradesmen.co.uk.
 - **`nbc-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`ndtv-s-gadgets-360`** (medium) — Online articles, news, and reviews related to business, computers, gadgets, technology, and future trends; includes an eCommerce search engi
