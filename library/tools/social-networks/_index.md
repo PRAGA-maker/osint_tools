@@ -22,7 +22,7 @@ kind: group-index
 
 ## Skills here
 - **`17-imginn`** (high) — Use when you have an Instagram `username` and want to anonymously view/download that account's public posts, stories and highlights without 
-- **`4plebs`** (medium) — Searchable archive of specific 4chan boards. Makes it possible to read threads after they are purged from 4chan.
+- **`4plebs`** (medium) — Use when you have a keyword, tripcode or post ID and want to read purged 4chan threads — returns archived `social-profile` posts, `username`
 - **`4sqmap`** (high) — Use when you have a Foursquare/Swarm `username` and want to plot that account's check-ins, venues and photos on a map — returns `geolocation
 - **`a-tremendously-valuable-osint-tip-for-pinterest`** (high) — Use when you have a Pinterest `username` and want to hypothesize the subject's `email` — a documented technique exploiting Pinterest's Googl
 - **`account-analysis`** (medium) — OSINT tool: Account analysis.
@@ -49,7 +49,7 @@ kind: group-index
 - **`bayt-com`** (high) — Use when you have a `name`/`username` of a Middle East / Gulf professional and want their CV-style profile and work history — returns a `soc
 - **`bearpanther-com`** (high) — Use when you have a `geolocation` (a point or area on a map) and want to surface public Instagram posts tagged there — returns social-profil
 - **`behance`** (high) — Use when you have a `name` or `username` of a creative professional and want their portfolio profile — returns a `social-profile` with work,
-- **`bellingcat-tiktok-date-extract`** (medium) — Get the exact upload date + time for tiktok video urls
+- **`bellingcat-tiktok-date-extract`** (medium) — Use when you have a TikTok video `social-profile` URL/ID and want its exact upload time — returns the precise `metadata-exif`-style creation
 - **`best-tiktok-hashtags`** (medium) — OSINT tool: Best tiktok hashtags.
 - **`better-reddit-search`** (medium) — Reddit search tool for posts and subreddits (with boolean filters by keywords and filters by publication date).
 - **`bibliogram-art`** (high) — Use when you have an Instagram `username` and want to view their public profile/posts without an Instagram login — but this Bibliogram insta

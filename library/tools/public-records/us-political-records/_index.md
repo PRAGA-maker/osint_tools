@@ -7,7 +7,7 @@ kind: group-index
 # public-records/us-political-records
 
 ## Skills here
-- **`every-politician`** (medium) — Global politician data and positions
+- **`every-politician`** (medium) — Use when you have a politician's `name` and want their offices and affiliations — returns `employer-org`, positions and linked identifiers a
 - **`political-moneyline`** (medium) — Campaign finance and lobbying tracking
 - **`us-federal-election-commission`** (medium) — Federal campaign finance records
 

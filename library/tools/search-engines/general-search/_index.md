@@ -10,7 +10,7 @@ kind: group-index
 - **`advangle`** (medium) — Building complex search queries with multiple filters (domain, language, date published)
 - **`baidu`** (medium) — Chinese language OSINT, Chinese market research, regional search coverage
 - **`bing`** (medium) — Alternative to Google, regional results, academic content, supplementary searches
-- **`brave`** (medium) — Privacy-preserving searches, custom filtering via Goggles, enterprises needing zero data retention
+- **`brave`** (medium) — Use when you have a `name`, `username` or `domain` and want an independent web index that returns different results than Google — returns `d
 - **`duckduckgo`** (medium) — Privacy-preserving searches, tracking-free OSINT research, European results
 - **`google-advanced-search`** (medium) — Use when you have a `name`, `username` or `email` and want a form-guided way to build precise Google dork queries — returns social-profile, 
 - **`google`** (medium) — General web OSINT, historical information via cache, broad searches with operators

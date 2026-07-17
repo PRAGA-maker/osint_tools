@@ -24021,41 +24021,52 @@
   {
     "id": "arctic-shift",
     "name": "Arctic Shift",
-    "description": "Historical Reddit dataset analysis and subreddit research",
+    "description": "Use when you have a Reddit `username` or subreddit and want their full historical post/comment history — returns `social-profile` activity, timestamps and associated handles.",
     "url": "https://arctic-shift.photon-reddit.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums",
       "reddit-communities"
     ],
-    "bestFor": "Historical Reddit dataset analysis and subreddit research",
-    "input": "Search terms, dataset queries, or API-style requests",
-    "output": "Matching Reddit posts, comments, and metadata from indexed datasets",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Retrieving a Reddit user's complete comment/post history (including deleted-from-view items) from an archived dataset.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
-    "pricing": "freemium",
+    "pricing": "free",
+    "costNote": "Free web search and API; the full dumps are also downloadable. No account required.",
     "opsec": "passive",
-    "opsecNote": "Works against archived or indexed data sources without requiring direct engagement with target accounts.",
+    "opsecNote": "Queries an archived Reddit dataset, not Reddit's live site, so the target's account is not touched and gets no notification. Your queries hit a third-party host; use a clean browser for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Community-run successor to Pushshift (photon-reddit); widely used by researchers, but a third-party archive rather than Reddit itself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "arctic shift",
+      "photon-reddit arctic shift"
+    ],
+    "tags": [
+      "reddit",
+      "reddit-archive",
+      "pushshift-successor"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/reddit-communities/arctic-shift.md"
   },
   {
@@ -149082,41 +149093,51 @@
   {
     "id": "politifact",
     "name": "PolitiFact",
-    "description": "Verifying political statements and tracing source-backed ratings",
+    "description": "Use when you have a claim or a public figure's `name` and want to check whether a statement was fact-checked — returns rated fact-check articles with sourced `associate` references.",
     "url": "https://www.politifact.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "fact-checking-tools"
     ],
-    "bestFor": "Verifying political statements and tracing source-backed ratings",
-    "input": "Public claims from politicians and media figures",
-    "output": "Structured fact-check articles and truth ratings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether a viral claim or a US political/media figure's statement has an independent, source-backed rating.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; no account. Operated by the nonprofit Poynter Institute.",
     "opsec": "passive",
-    "opsecNote": "Public read-only use does not interact with targets directly.",
+    "opsecNote": "Read-only use of a published news site; the subject is not contacted and there is no query trail beyond the host's logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Pulitzer-winning, IFCN-signatory fact-checker run by the Poynter Institute; editorially accountable primary reporting.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "politifact.com",
+      "Truth-O-Meter"
+    ],
+    "tags": [
+      "fact-checking",
+      "disinformation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fact-checking-tools/politifact.md"
   },
   {
@@ -230776,45 +230797,55 @@
   },
   {
     "id": "every-politician",
-    "name": "Every Politician",
-    "description": "Global politician data and positions",
+    "name": "EveryPolitician",
+    "description": "Use when you have a politician's `name` and want their offices and affiliations — returns `employer-org`, positions and linked identifiers across 250+ countries.",
     "url": "https://everypolitician.org/",
     "category": "public-records",
     "path": [
       "public-records",
       "us-political-records"
     ],
-    "bestFor": "Global politician data and positions",
-    "input": "Politician name, country, position",
-    "output": "Bio, positions, affiliations, contact",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Looking up an office-holder's positions, party and terms from a global Wikidata-backed database.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and openly licensed (Creative Commons); data is browsable and downloadable in bulk with no account.",
     "opsec": "passive",
-    "opsecNote": "Crowdsourced open government data",
+    "opsecNote": "A static, openly published reference database; the subject is never contacted and there is no query trail beyond the host's logs. Public-figure data only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built on Wikidata and now maintained by OpenSanctions; a well-documented open-data project, though ultimately community-sourced.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "everypolitician",
       "everypolitician-org"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Every Politician",
+      "everypolitician.org"
+    ],
+    "tags": [
+      "political-records",
+      "open-data"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/us-political-records/every-politician.md"
   },
   {
@@ -233365,56 +233396,6 @@
       "fortune-magazine"
     ],
     "_file": "library/tools/public-records/fortune-500-list-of-companies-2020-fortune.md"
-  },
-  {
-    "id": "foursquare-business-search",
-    "name": "Foursquare Business Search",
-    "description": "Business-related search engine that searches using company name",
-    "url": "http://business.foursquare.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "foursquare",
-      "foursquare-time-machine"
-    ],
-    "_file": "library/tools/public-records/foursquare-business-search.md"
   },
   {
     "id": "france",
@@ -242530,47 +242511,51 @@
   {
     "id": "journalmap-geosearch",
     "name": "JournalMap Geosearch",
-    "description": "Academic-related search engine that identifies research and literature material by geographic area",
+    "description": "Use when you have a `geolocation` and want research literature tied to that place — returns geotagged article `document-id`s and author `name`s.",
     "url": "http://www.journalmap.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding scientific/field-research articles by the geographic location their study sites sit in.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "geolocation"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse; content is openly licensed (Creative Commons). No account needed for map search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A published academic search index; the subject is never contacted. Nothing here reaches any person of interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "Independent academic geosearch project indexing peer-reviewed literature; coverage is partial but the underlying articles are citable.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "JournalMap",
+      "journalmap.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "academic-scholarly-research-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/journalmap-geosearch.md"
   },
   {
@@ -255829,35 +255814,52 @@
   {
     "id": "police-body-worn-camera-footage-access-map",
     "name": "Police Body-Worn Camera Footage Access Map",
-    "description": "OSINT tool: Police Body-Worn Camera Footage Access Map.",
+    "description": "Use when you have a US `geolocation` (state) and want to know if/how police body-camera footage can be obtained — returns the state's access law status and citations.",
     "url": "https://www.rcfp.org/resources/bodycams/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking, per US state, whether the public can access police body-worn camera footage and under what law.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
+    ],
+    "selectorsOut": [
+      "image",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free reference resource published by the nonprofit Reporters Committee for Freedom of the Press; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A published legal guide; reading it contacts no one. Any actual footage request you later file with a department is a separate, active step made in your own name.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by RCFP, an established press-freedom legal organisation; the map cites the underlying bills and cases.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "RCFP bodycam map",
+      "body-worn camera access map"
+    ],
+    "tags": [
+      "public-records",
+      "police-records",
+      "foia"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/police-body-worn-camera-footage-access-map.md"
   },
   {
@@ -275351,44 +275353,55 @@
   },
   {
     "id": "brave",
-    "name": "Brave",
-    "description": "Privacy-preserving searches, custom filtering via Goggles, enterprises needing zero data retention",
+    "name": "Brave Search",
+    "description": "Use when you have a `name`, `username` or `domain` and want an independent web index that returns different results than Google — returns `domain`, `social-profile` and page links.",
     "url": "https://search.brave.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Privacy-preserving searches, custom filtering via Goggles, enterprises needing zero data retention",
-    "input": "Keywords, Goggle rules for custom filtering",
-    "output": "Ranked web results with optional custom filtering via Goggles",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A privacy-respecting general search with its own index and custom \"Goggles\" re-ranking, to catch pages Google/Bing miss.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search in the browser with no account. An independent API exists with a free tier (limited monthly queries) and paid plans for volume.",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT with zero data retention option for API; 90-day query log retention for billing purposes only",
+    "opsecNote": "You query Brave, not the subject; the subject sees nothing. Brave markets no-profile/low-retention search, but the operator still sees your query and IP — use a clean browser/VPN for sensitive queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Brave Software on its own crawler/index (not a Google/Bing reseller), so it is an independent corroborating source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "brave-browser"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Brave",
+      "search.brave.com"
+    ],
+    "tags": [
+      "general-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/brave.md"
   },
   {
@@ -310609,41 +310622,53 @@
   {
     "id": "4plebs",
     "name": "4plebs",
-    "description": "Searchable archive of specific 4chan boards. Makes it possible to read threads after they are purged from 4chan.",
+    "description": "Use when you have a keyword, tripcode or post ID and want to read purged 4chan threads — returns archived `social-profile` posts, `username`/tripcodes and `image` attachments.",
     "url": "https://4plebs.org/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Full-text searching and reading 4chan threads (esp. /pol/, /x/, /adv/) long after they are deleted from 4chan.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read; no account. Runs on the open FoolFuuka archive software.",
+    "opsec": "passive",
+    "opsecNote": "You read a static archive, not 4chan itself; posters are anonymous and are not notified. Because 4chan content can be extreme, use an isolated browser; do not post to 4chan from any account tied to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Long-running independent 4chan archive; content is user-generated and anonymous, so treat posts as unverified claims.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "other-platforms"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "archive-4plebs-org"
     ],
+    "aliases": [
+      "4plebs.org",
+      "FoolFuuka 4chan archive"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "other-platforms",
+      "4chan-archive"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/4plebs.md"
   },
   {
@@ -312061,43 +312086,54 @@
   },
   {
     "id": "bellingcat-tiktok-date-extract",
-    "name": "Bellingcat TikTok Date Extract",
-    "description": "Get the exact upload date + time for tiktok video urls",
+    "name": "Bellingcat TikTok Timestamp",
+    "description": "Use when you have a TikTok video `social-profile` URL/ID and want its exact upload time — returns the precise `metadata-exif`-style creation timestamp.",
     "url": "https://bellingcat.github.io/tiktok-timestamp",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Decoding the exact upload date and time embedded in a TikTok video ID.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source, no account; runs entirely in your browser.",
+    "opsec": "passive",
+    "opsecNote": "The timestamp is decoded locally from the numeric video ID — the tool does not query TikTok or notify anyone. You only need the ID/URL, which you likely already have.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published by Bellingcat; the technique (unix time encoded in the ID's high bits) is deterministic and independently verifiable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "tiktok"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bellingcat-name-variant-search",
       "telegram-group-joiner"
     ],
+    "aliases": [
+      "TikTok timestamp",
+      "tiktok-timestamp"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "tiktok",
+      "timestamp"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/bellingcat-tiktok-date-extract.md"
   },
   {
@@ -356292,44 +356328,54 @@
   {
     "id": "online-ocr-onlineocr-net",
     "name": "Online OCR (onlineocr.net)",
-    "description": "Quick OCR to Word, Excel, or plain text",
+    "description": "Use when you have an `image`/PDF of a document and want the text extracted — returns machine-readable text carrying `name`, `address` and other selectors.",
     "url": "https://www.onlineocr.net/",
     "category": "translation-language",
     "path": [
       "translation-language",
       "pictures"
     ],
-    "bestFor": "Quick OCR to Word, Excel, or plain text",
-    "input": "Image files and PDFs",
-    "output": "DOCX, XLSX, and plain-text conversions",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick browser OCR of a scanned page or photo into editable Word/Excel/plain text across many languages.",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "name",
+      "address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier allows a limited number of pages per session without registration; registering or paying raises the page/size limits and batch options.",
     "opsec": "active",
-    "opsecNote": "User files are uploaded for cloud-side OCR processing.",
+    "opsecNote": "Your file is uploaded to a third-party server for cloud-side OCR — do NOT send genuinely sensitive documents here. Strip anything you would not want a third party to hold, or run a local OCR tool instead when confidentiality matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Established free web OCR service; adequate for non-sensitive extraction, but a third-party processor of uploaded content.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "online-ocr",
       "online-ocr-converter"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "onlineocr.net",
+      "Online OCR"
+    ],
+    "tags": [
+      "ocr",
+      "document-extraction"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/pictures/online-ocr-onlineocr-net.md"
   },
   {

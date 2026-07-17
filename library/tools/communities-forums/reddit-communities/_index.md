@@ -7,7 +7,7 @@ kind: group-index
 # communities-forums/reddit-communities
 
 ## Skills here
-- **`arctic-shift`** (medium) — Historical Reddit dataset analysis and subreddit research
+- **`arctic-shift`** (medium) — Use when you have a Reddit `username` or subreddit and want their full historical post/comment history — returns `social-profile` activity, 
 - **`cama-s-reddit-search`** (medium) — Reddit user and subreddit content discovery
 - **`reveddit`** (medium) — Investigating deleted or removed Reddit discussions
 

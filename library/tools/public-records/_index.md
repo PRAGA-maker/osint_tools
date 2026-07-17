@@ -355,7 +355,6 @@ kind: group-index
 - **`forbes-global-2000`** (medium) — OSINT tool: Forbes Global 2000.
 - **`forceswarrecords-com`** (high) — Use when you have a `name` of someone who served in the UK/Commonwealth military and want their service history — returns military `document
 - **`fortune-500-list-of-companies-2020-fortune`** (low) — OSINT tool: Fortune 500 list of companies 2020 | Fortune.
-- **`foursquare-business-search`** (medium) — Business-related search engine that searches using company name
 - **`france`** (medium) — Use when you have a French `employer-org` or a director's `name` and want official company records — returns company registration, filings, 
 - **`freebase`** (low) — OSINT tool: Freebase.
 - **`freebmd-org-uk`** (high) — Use when you have a `name` and want English & Welsh birth, marriage, or death registrations — returns the registration event with quarter/ye
@@ -534,7 +533,7 @@ kind: group-index
 - **`jerseyfsc-org`** (high) — Use when you have an `employer-org` or `name` tied to a Jersey company/entity and want official registry data — returns entity existence, st
 - **`jisc`** (medium) — Access thousands of resources from e-books and images to journals and texts
 - **`journal-officiel-gouv-fr`** (medium) — Use when you have a French association `name`, person, or `address` and want the official register — returns declared non-profit association
-- **`journalmap-geosearch`** (medium) — Academic-related search engine that identifies research and literature material by geographic area
+- **`journalmap-geosearch`** (low) — Use when you have a `geolocation` and want research literature tied to that place — returns geotagged article `document-id`s and author `nam
 - **`junar`** (low) — OSINT tool: Junar.
 - **`jurn-academic-search`** (medium) — Academic-related search engine focused on arts, science, business, law, and medicine and includes millions of academic articles, chapters, a
 - **`justia-us-supreme-court-center-united-states`** (medium) — Legal-related search engine for legal court cases and documents
@@ -794,7 +793,7 @@ kind: group-index
 - **`planningsystemni-gov-uk`** (high) — Use when you have an `address` (or applicant/agent `name`) in Northern Ireland and want planning-application records tying a person to a pro
 - **`plunkett-research`** (medium) — OSINT tool: Plunkett Research.
 - **`poland`** (medium) — Use when you have a Polish `employer-org` and want its beneficial owners — returns the natural-person `name`s (with partial `dob`/PESEL) who
-- **`police-body-worn-camera-footage-access-map`** (medium) — OSINT tool: Police Body-Worn Camera Footage Access Map.
+- **`police-body-worn-camera-footage-access-map`** (medium) — Use when you have a US `geolocation` (state) and want to know if/how police body-camera footage can be obtained — returns the state's access
 - **`police-complaint-lookup`** (medium) — OSINT tool: Police Complaint Lookup.
 - **`police-decertifcations-search-and-report`** (medium) — OSINT tool: Police Decertifcations Search and Report.
 - **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.

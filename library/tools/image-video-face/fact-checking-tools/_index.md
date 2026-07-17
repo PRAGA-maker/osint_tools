@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`duke-reporters-lab`** (medium) — Finding and benchmarking fact-checking organizations worldwide
-- **`politifact`** (medium) — Verifying political statements and tracing source-backed ratings
+- **`politifact`** (low) — Use when you have a claim or a public figure's `name` and want to check whether a statement was fact-checked — returns rated fact-check arti
 - **`scicheck`** (medium) — Validating scientific and medical claims in public discourse
 - **`snopes`** (low) — Use when you have a viral claim, rumor, image or story (a `document-id`) and want to check whether it is true — returns a sourced verdict an
 - **`stop-fake-tools`** (medium) — Investigating Ukraine-focused propaganda and disinformation narratives
