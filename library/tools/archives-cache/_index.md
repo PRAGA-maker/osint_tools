@@ -118,7 +118,7 @@ kind: group-index
 - **`wayback-machine-2`** (high) — Use when you have a `domain`, `social-profile` or `username` URL and want to see historical snapshots — including deleted or changed pages —
 - **`wayback-machine-downloader-github-com`** (medium) — OSINT tool: wayback machine downloader (github.com).
 - **`wayback-machine`** (medium) — OSINT tool: Wayback Machine.
-- **`wayback-tweets`** (medium) — Display archived tweets retrieved from the Wayback Machine.
+- **`wayback-tweets`** (medium) — Use when you have a Twitter/X `username` and want their deleted or historical tweets — returns archived tweet captures pulled from the Wayba
 - **`waybackpdf`** (low) — Use when you have a `domain` and want every PDF the Internet Archive holds for it — returns document-id files that often carry names and met
 - **`waybackpy`** (medium) — Use when you have a `domain` or URL and want to pull its Wayback Machine capture history programmatically — returns archived snapshot URLs a
 - **`waymore`** (medium) — Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).

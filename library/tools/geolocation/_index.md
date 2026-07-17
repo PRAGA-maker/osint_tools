@@ -118,7 +118,7 @@ kind: group-index
 - **`global-incident-map`** (high) — Use when you have a `geolocation`/region and want situational context — returns a map of reported terrorism, suspicious activity, and other 
 - **`global-terriorism-database`** (medium) — Use when you have a `geolocation`/date/group and want documented terrorist-incident records — returns incident `geolocation`, dates, actors,
 - **`global-wetlands-map`** (medium) — Interactive map of open waters, mangroves, swamps, fens, riverines, floodswamps, marshs, wet meadows and floodplains (unfortunately, there a
-- **`globalfishingmap`** (medium) — click on a point on the map and get the data on the current fishing effort at that location.
+- **`globalfishingmap`** (low) — Use when you have a `geolocation` or vessel and want maritime activity there — returns fishing effort, vessel tracks, and identities from Gl
 - **`gmaps-extractor`** (low) — Use when you have a place/area and business type on Google Maps and want the listings in bulk — returns extracted business names, addresses,
 - **`google-earth-overlays`** (medium) — Use when you want to layer external map grids, charts, or KML/KMZ data over Google Earth imagery for cross-referencing a location.
 - **`google-earth-pro`** (high) — Use when you need a deep historical-imagery timeline, measurement, and high-quality exports for a location — the desktop power version of Go

@@ -583,7 +583,7 @@ kind: group-index
 - **`open-secrets`** (medium) — Use when you have a `name` and want US political-money and financial-disclosure records — returns campaign contributions, lobbying ties, and
 - **`open-source-intelligence-txuswashere`** (low) — Comprehensive list of OSINT tools and methodologies.
 - **`opendirsearch-abifog-com`** (low) — OSINT tool: Opendirsearch.abifog.com.
-- **`opentable`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
+- **`opentable`** (low) — Use when you have a `name` and want restaurant-review traces — search a diner's public reviews to place them at restaurants/cities and infer
 - **`orange-france`** (low) — OSINT tool: Orange (France).
 - **`orion-media-indexer`** (low) — Lightning Fast Link Indexer for Torrents, Usenet, and Hosters
 - **`orion`** (low) — open-Source Search Engine for social networking websites.
@@ -811,7 +811,7 @@ kind: group-index
 - **`uk-patent-search`** (medium) — UK Governments trademark, copyright, patent and intellectual property search
 - **`ukons-standard-occupational-classifications-united-kingdom`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`united-states-marine-corps-occupation-codes`** (medium) — Website that identifies the occupation classification code across the country at the national level
-- **`url-shorteners-search`** (medium) — OSINT tool: URL Shorteners Search.
+- **`url-shorteners-search`** (low) — Use when you have a `name`, keyword, or `domain` and want short-link destinations exposing it — searches billions of expanded shortener URLs
 - **`urvx-com`** (low) — File storage search engine based by Google CSE
 - **`urvx`** (low) — Based by Google Custom Search tool for searching in popular cloud storages service
 - **`us-census-bureau`** (medium) — Provides US census information and population statistics
@@ -874,7 +874,7 @@ kind: group-index
 - **`wikivoyage`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`wiley`** (low) — OSINT tool: Wiley.
 - **`wintria`** (low) — OSINT tool: Wintria.
-- **`wipo`** (medium) — OSINT tool: WIPO.
+- **`wipo`** (low) — Use when you have a `name`, brand, or `employer-org` and want trademark records — returns trademarks, their owners/applicants, and filing de
 - **`wiredmagazine-electronic-device-reviews`** (medium) — Website related to tech news and reviews
 - **`woboq-code-browser`** (medium) — Code search engine
 - **`wolfram-alpha`** (low) — OSINT tool: Wolfram Alpha.

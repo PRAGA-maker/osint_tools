@@ -199,7 +199,7 @@ kind: group-index
 - **`competeshark`** (medium) — OSINT tool: CompeteShark.
 - **`completed-access-to-information-requests`** (medium) — OSINT tool: Completed Access to Information Requests.
 - **`connectedpapers`** (medium) — A tool for gathering information about academic papers. It shows a large graph of references to other articles that are present in the text 
-- **`connecticut-registered-voter-verification`** (medium) — Connecticut voter registration verification and search
+- **`connecticut-registered-voter-verification`** (medium) — Use when you have a `name` and `dob` in Connecticut and want to confirm voter registration — returns registration status, town, and polling 
 - **`connecticut`** (high) — Use when you have a `name` or DOC number and want to locate a person currently held in Connecticut state prison/jail — returns custody statu
 - **`connvoters-com`** (high) — Use when you have a `name` (and roughly a Connecticut location) and want the subject's registered address, town, party and DOB from the stat
 - **`cop26-registered-attendees`** (low) — Use when you have a `name`/`employer-org` possibly present at the 2021 UN COP26 summit and want to confirm attendance — returns their listed

@@ -150,7 +150,7 @@ kind: group-index
 - **`telegram-scraper-th3unkn0n`** (medium) — Extract user info and media from Telegram groups.
 - **`telegram-search-channels-groups`** (high) — Use when you have a `username` or `name` and want to find the associated Telegram user, channel, or group — returns public `social-profile` 
 - **`telegram-search-engine`** (medium) — OSINT tool: Telegram Search Engine.
-- **`telegram-search-search-for-posts`** (medium) — OSINT tool: Telegram Search. Search for posts.
+- **`telegram-search-search-for-posts`** (medium) — Use when you have a `name`, `username`, or keyword and want to find Telegram channels/posts mentioning it — returns matching public channels
 - **`telegram-search`** (medium) — OSINT tool: Telegram Search.
 - **`telegram-tools`** (high) — Use when you have a Telegram user/account `device-id` (numeric ID) or bot file ID and want to decode it — returns approximate account-creati
 - **`telegram-usernames-finder`** (medium) — OSINT tool: Telegram Usernames Finder.

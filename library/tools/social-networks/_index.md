@@ -25,7 +25,6 @@ kind: group-index
 - **`4plebs`** (medium) — Use when you have a keyword, tripcode or post ID and want to read purged 4chan threads — returns archived `social-profile` posts, `username`
 - **`4sqmap`** (high) — Use when you have a Foursquare/Swarm `username` and want to plot that account's check-ins, venues and photos on a map — returns `geolocation
 - **`a-tremendously-valuable-osint-tip-for-pinterest`** (high) — Use when you have a Pinterest `username` and want to hypothesize the subject's `email` — a documented technique exploiting Pinterest's Googl
-- **`account-analysis`** (medium) — OSINT tool: Account analysis.
 - **`accountkiller-com`** (high) — Use when you have a `username` and want a reference directory of where accounts can exist plus each platform's account/URL structure — retur
 - **`advanced-downloader-for-tiktok-addons-mozilla-org`** (low) — Use when you have a TikTok video `social-profile` URL and want to save the clip for evidence — a Firefox extension returning the downloaded 
 - **`agora-pulse`** (high) — Use when you have a Facebook Page you control/administer and want to benchmark its reach/engagement against similar pages — returns comparat
@@ -558,7 +557,7 @@ kind: group-index
 - **`snapdex`** (medium) — Use when you have a `username` or `name` and want to find a Snapchat account — returns a wiki-style directory profile with the handle, snapc
 - **`snapintel`** (medium) — Python tool to gather information about a Snapchat user.
 - **`snapmap-archiver`** (medium) — OSINT tool: snapmap-archiver.
-- **`snapscraper`** (medium) — OSINT tool: SnapScraper.
+- **`snapscraper`** (high) — Use when you have a `geolocation` (lat/long) and want public Snapchat media there — downloads Snap Map "Our Story" videos and their metadata
 - **`snapthreads-net`** (high) — Use when you have a public Threads post `social-profile`/link and want to download its video for analysis — returns the MP4 (image/face fram
 - **`snaptik-app`** (high) — Use when you have a TikTok video/post URL from a target and want to download it watermark-free for evidence/analysis — returns the MP4/image
 - **`snapvip`** (medium) — OSINT tool: Snapvip.
@@ -821,7 +820,7 @@ kind: group-index
 - **`youtube-playlist-len`** (medium) — Find out the total time of all the videos in playlist
 - **`youtube-scraper`** (medium) — Extract and download channel name, likes, number of views, and number of subscribers. Scrape by keyword or URL.
 - **`youtube-screen-capture`** (medium) — allows you to download a stream in pieces and then merge them
-- **`youtube-search-tool`** (medium) — OSINT tool: YouTube search tool.
+- **`youtube-search-tool`** (medium) — Use when you have a `name`, keyword, or place and want targeted YouTube results — a query-builder that filters videos, channels, and playlis
 - **`youtube-timestamp-comments`** (medium) — extension finds all the timestamps in YouTube video comments and arranges them in chronological order.
 - **`youtube-tool`** (medium) — Use when you have a YouTube video/channel/playlist and want to bulk-extract subtitles, comments, descriptions, and video lists via CLI — ret
 - **`youtube-transcript-api`** (medium) — Get the transcript/subtitles for a given #YouTube video (by ID from adress bar). It also works for automatically generated subtitles and sup
