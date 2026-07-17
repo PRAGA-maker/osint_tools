@@ -31,6 +31,10 @@ localInstall: true
 registration: false
 relatedTools:
 - auto-archiver
+- bellingcat-tiktok-hashtag-analysis
+- instagram-location-search
+- shadow-finder
+- telegram-phone-number-checker-github-com
 aliases:
 - wayback-google-analytics
 - bellingcat GA finder

@@ -11,7 +11,7 @@ kind: group-index
 - **`baidu`** (medium) — Chinese language OSINT, Chinese market research, regional search coverage
 - **`bing`** (medium) — Use when you have any `name`, `username`, `domain`, or keyword and want a second major search index with strong operators — returns web/imag
 - **`brave`** (medium) — Use when you have a `name`, `username` or `domain` and want an independent web index that returns different results than Google — returns `d
-- **`duckduckgo`** (medium) — Privacy-preserving searches, tracking-free OSINT research, European results
+- **`duckduckgo`** (medium) — Use when you have a `name`, `username`, or `email` and want web results without a personalized filter bubble or search-history trail — retur
 - **`google-advanced-search`** (medium) — Use when you have a `name`, `username` or `email` and want a form-guided way to build precise Google dork queries — returns social-profile, 
 - **`google`** (medium) — General web OSINT, historical information via cache, broad searches with operators
 - **`hulbee`** (medium) — Corporate information only, NOT for web search OSINT

@@ -47,7 +47,6 @@ kind: group-index
 - **`business-hsbc-co-uk`** (medium) — OSINT tool: business.hsbc.co.uk.
 - **`chainabuse`** (medium) — Cross-chain crypto scam/abuse report database.
 - **`chainalysis`** (low) — OSINT tool: Chainalysis.
-- **`checkmyfile-com`** (medium) — OSINT tool: checkmyfile.com.
 - **`china-related-resources`** (low) — Resources for research on companies in China.,
 - **`coinatmradar-com`** (low) — Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operat
 - **`coinbase-com`** (low) — OSINT tool: Coinbase.com.

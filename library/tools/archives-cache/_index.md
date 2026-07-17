@@ -120,7 +120,7 @@ kind: group-index
 - **`wayback-machine`** (medium) — OSINT tool: Wayback Machine.
 - **`wayback-tweets`** (medium) — Display archived tweets retrieved from the Wayback Machine.
 - **`waybackpdf`** (low) — Use when you have a `domain` and want every PDF the Internet Archive holds for it — returns document-id files that often carry names and met
-- **`waybackpy`** (medium) — OSINT tool: waybackpy.
+- **`waybackpy`** (medium) — Use when you have a `domain` or URL and want to pull its Wayback Machine capture history programmatically — returns archived snapshot URLs a
 - **`waymore`** (medium) — Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).
 - **`web-archive-bibalex-org`** (medium) — OSINT tool: web.archive.bibalex.org.
 - **`web-archive-google-chrome-extension`** (medium) — Simple Chrome Extensions for getting information about current URL using http://archive.org CDX API

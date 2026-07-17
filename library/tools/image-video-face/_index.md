@@ -247,7 +247,7 @@ kind: group-index
 - **`photo-album-finder`** (high) — Use when you have a `name`, `username`, or `email` and want to find public photo albums/galleries hosting that person's images across photo-
 - **`photokit-com`** (low) — Use when you have a low-quality face or scene image and want to enhance, retouch, or upscale it before running reverse-image or face search 
 - **`photome-exif-metadata-viewer`** (high) — Use when you have an `image` file and want to read its full EXIF/IPTC/ICC metadata — including embedded GPS — locally without uploading — re
-- **`photoosint`** (medium) — A simple extension that checks in a couple of seconds if a web page contains images that have not had their exif data deleted.
+- **`photoosint`** (medium) — Use when you're browsing a page full of a subject's `image`s and want to know which still carry EXIF `metadata-exif` — flags images with int
 - **`photoroom-com`** (low) — Use when you need to remove or replace a background to isolate a face/subject from a cluttered photo before search — returns an edited image
 - **`phototracker-lite`** (high) — Use when you have an `image` and want to reverse-search it across Google, Yandex, Bing and TinEye at once — returns matches from multiple en
 - **`picasaweb-google-com`** (low) — Use when researching pre-2016 personal photo albums — but the original Picasa Web service is discontinued; recovery is now via Google Photos
@@ -385,7 +385,7 @@ kind: group-index
 - **`youku-chinese-language`** (high) — Use when you have a `name`/`username` and want a Chinese subject's video presence — search Youku, China's major video platform, for their up
 - **`younow`** (high) — Use when you have a `username` and want to check for a live-streaming profile with bio, photo, and broadcast history — returns a social-prof
 - **`youtube-captions-alternate-extractor`** (medium) — OSINT tool: YouTube Captions (Alternate Extractor).
-- **`youtube-metadata`** (medium) — OSINT tool: YouTube Metadata.
+- **`youtube-metadata`** (medium) — Use when you have a YouTube video, channel, or playlist URL and want its full metadata — returns upload/publish timestamps, geotags, thumbna
 - **`youtube`** (medium) — OSINT tool: YouTube.
 - **`youtubetranscript-com`** (high) — Use when you have a YouTube video (a `social-profile` URL) and want its full spoken transcript to mine for names, places and details — retur
 - **`ytdt-digitalmethods-net-2`** (high) — Use when you have a YouTube `social-profile` (channel URL/ID) or a search term and want channel/video metadata plus the network of connected

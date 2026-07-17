@@ -66,7 +66,7 @@ kind: group-index
 - **`dating-sites-search-engine`** (high) — Use when you have a `name`, `username` or `email` and want to sweep multiple dating platforms at once via a curated Google Custom Search Eng
 - **`deadtrap`** (high) — Use when you have a `phone` and want to identify its likely owner, carrier region and linked social/spam footprint — returns name, social-pr
 - **`deepfind-me`** (high) — Use when you have a `username` (or email/domain) and want to find every account it maps to — returns correlated `social-profile` links acros
-- **`dice`** (medium) — OSINT tool: Dice.
+- **`dice`** (low) — Use when you have a `name` or `username` of a US tech worker and want their professional profile — returns employer, skills, location, and c
 - **`digi-netra`** (medium) — Use when you have a `phone`, `username`, `ip-address` or `email` and want a quick multi-source CLI trace — returns carrier/geo, cross-platfo
 - **`discordleaks`** (high) — Use when you have a `name`, `username`, or keyword and want to search leaked messages from white-supremacist / neo-nazi Discord (and RocketC
 - **`dob-search-death-records`** (medium) — OSINT tool: DOB Search - Death records.

@@ -499,7 +499,6 @@ kind: group-index
 - **`redditle-com`** (medium) — OSINT tool: Redditle.com.
 - **`redditp-reddtip`** (low) — Slideshow/auto-play viewer for Reddit images (source labels it a crypto tip tool).
 - **`redditsave-com`** (medium) — Reddit video downloader
-- **`redditsearch-io`** (medium) — Reddit search tool
 - **`redditsfinder`** (medium) — Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile
 - **`redditvids`** (low) — Watch videos posted on Reddit.
 - **`reddloader-com`** (medium) — Reddit video downloader
@@ -715,7 +714,6 @@ kind: group-index
 - **`twitch-username-search`** (low) — OSINT tool: Twitch Username Search.
 - **`twitchmetrics-net`** (low) — OSINT tool: Twitchmetrics.net.
 - **`twitchtracker`** (low) — OSINT tool: TwitchTracker.
-- **`twitrss`** (medium) — OSINT tool: TwitRSS.
 - **`twitter-3d`** (medium) — 3D viewer of relationships between twitter users.
 - **`twitter-account-detector`** (medium) — A simple and fast Chrome extension that finds all Twitter accounts on a site.
 - **`twitter-archive-parser`** (low) — Use when you have a downloaded Twitter/X account archive and want it turned into readable, media-embedded tweets plus follower lists — retur

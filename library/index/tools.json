@@ -22300,7 +22300,11 @@
     "localInstall": true,
     "registration": false,
     "relatedTools": [
-      "auto-archiver"
+      "auto-archiver",
+      "bellingcat-tiktok-hashtag-analysis",
+      "instagram-location-search",
+      "shadow-finder",
+      "telegram-phone-number-checker-github-com"
     ],
     "aliases": [
       "wayback-google-analytics",
@@ -22699,37 +22703,52 @@
   {
     "id": "waybackpy",
     "name": "waybackpy",
-    "description": "OSINT tool: waybackpy.",
+    "description": "Use when you have a `domain` or URL and want to pull its Wayback Machine capture history programmatically — returns archived snapshot URLs and timestamps.",
     "url": "https://github.com/akamhy/waybackpy",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Scripting Wayback Machine snapshot lookups (oldest/newest/near-date) and bulk CDX queries from Python or the CLI.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source package (MIT); talks to the Internet Archive's public Wayback APIs, which are free and need no key.",
+    "opsec": "passive",
+    "opsecNote": "All queries hit archive.org, not the target's live server, so the subject is never touched. Your IP is visible to the Internet Archive but not to the person you're investigating. Avoid the Save API on a sensitive URL unless you want a fresh public capture to exist.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Popular open-source wrapper (~600 stars) by akamhy; it only formats requests to the Internet Archive's own APIs, so the underlying data is authoritative even though the wrapper is community-maintained.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "waybackpack",
+      "wayback-google-analytics"
+    ],
+    "aliases": [
+      "waybackpy CLI",
+      "wayback machine python"
+    ],
     "tags": [
       "web-history-and-website-capture"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/waybackpy.md"
   },
   {
@@ -112907,48 +112926,6 @@
     "_file": "library/tools/financial-crypto/chainalysis.md"
   },
   {
-    "id": "checkmyfile-com",
-    "name": "checkmyfile.com",
-    "description": "OSINT tool: checkmyfile.com.",
-    "url": "https://www.checkmyfile.com/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "creditdebt",
-      "Credit & Debtor Information"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/checkmyfile-com.md"
-  },
-  {
     "id": "china-related-resources",
     "name": "China-related resources",
     "description": "Resources for research on companies in China.,",
@@ -121843,42 +121820,52 @@
   {
     "id": "global-biodiversity-information-facility",
     "name": "Global Biodiversity Information Facility",
-    "description": "Enter the name of an animal, bird or plant to see a map of where it has been spotted.",
-    "url": "https://www.gbif.org/occurrence/map?q=cobra",
+    "description": "Use when you have a species name or a `geolocation` and want to know where a plant/animal occurs — returns mapped occurrence points that help constrain where an image or clue was captured.",
+    "url": "https://www.gbif.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Constraining the possible location of a photo/video by the geographic range of a plant, bird, or animal visible in it.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-data. No account needed to search or view maps; free registration only if you want to download bulk datasets with a citation DOI.",
+    "opsec": "passive",
+    "opsecNote": "Purely a public scientific database of species occurrences; queries reveal nothing about your target and touch no one connected to the case. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "GBIF is an intergovernmental research infrastructure funded by governments worldwide, aggregating occurrence records from museums, herbaria, and citizen-science platforms.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "inaturalist",
+      "google-earth"
+    ],
+    "aliases": [
+      "GBIF",
+      "gbif.org"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Nature"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/global-biodiversity-information-facility.md"
   },
   {
@@ -122503,42 +122490,54 @@
   {
     "id": "google-maps-timeline-exporter",
     "name": "Google Maps Timeline Exporter",
-    "description": "If your Google account has once enabled collecting data about your location (link for checking https://timeline.google.com/maps/timeline), this extension will help you analyze your movement data in depth, and export it to CSV.",
-    "url": "https://chrome.google.com/webstore/detail/timeline-exporter/afalbippddliaaomolohcbfogogbjpkk/related",
+    "description": "Use when you have access to a subject's Google `geolocation` history (their logged-in session or a Takeout export) and want to convert it into analysable CSV — returns structured location/movement rows.",
+    "url": "https://chrome.google.com/webstore/detail/timeline-exporter/afalbippddliaaomolohcbfogogbjpkk",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a Google Maps Timeline (or Takeout location export) into CSV rows of places, times, and mileage for offline analysis.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; processes data locally in the browser, no server or subscription.",
+    "opsec": "active",
+    "opsecNote": "Requires being logged into the target's own Google account (or holding their Takeout export) — this is consent/authorization-gated data, not open-source intel. Only run against an account you are lawfully authorized to access (e.g. the reporting family's own device with permission). It reads the private Timeline, so treat the output as sensitive personal data.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Open-source extension by reinzor (github.com/reinzor/timeline-exporter); community tool with no official Google affiliation. Reliability degraded since Google moved Timeline to on-device storage.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-maps"
+    ],
+    "aliases": [
+      "Timeline Exporter",
+      "Google Timeline CSV export"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/google-maps-timeline-exporter.md"
   },
   {
@@ -148197,40 +148196,50 @@
   {
     "id": "photoosint",
     "name": "PhotoOSINT",
-    "description": "A simple extension that checks in a couple of seconds if a web page contains images that have not had their exif data deleted.",
-    "url": "https://chrome.google.com/webstore/detail/photosint/gonhdjmkgfkokhkflfhkbiagbmoolhcd/related?hl=nl",
+    "description": "Use when you're browsing a page full of a subject's `image`s and want to know which still carry EXIF `metadata-exif` — flags images with intact metadata and adds reverse-image-search shortcuts.",
+    "url": "https://chromewebstore.google.com/detail/gonhdjmkgfkokhkflfhkbiagbmoolhcd",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly spotting, while browsing, which images on a web page still have EXIF metadata worth extracting.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free open-source Chrome extension; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The extension scans images already loaded in your browser as you view a page — it doesn't ping the target or the image host beyond your normal page load, and reverse-search shortcuts only fire when you click them. Passive, but note that invoking a reverse search sends the image URL to that third-party engine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source extension by developer Haris87 (~3k users); community tool with modest review count, no vendor backing.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "exiftool",
+      "jimpl",
+      "exif-viewer"
+    ],
     "tags": [
       "Image Search and Identification",
       "Image Analyze"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/photoosint.md"
   },
   {
@@ -156804,42 +156813,57 @@
   {
     "id": "youtube-metadata",
     "name": "YouTube Metadata",
-    "description": "OSINT tool: YouTube Metadata.",
+    "description": "Use when you have a YouTube video, channel, or playlist URL and want its full metadata — returns upload/publish timestamps, geotags, thumbnails, tags, and comment data.",
     "url": "https://mattw.io/youtube-metadata/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting hidden/structured metadata (exact publish time, geotag, thumbnails, tags, comment history) from a YouTube video, channel, or playlist.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "metadata-exif",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; uses the public YouTube Data API. May hit a shared quota — you can supply your own free API key via a userscript to keep going.",
+    "opsec": "passive",
+    "opsecNote": "Queries route through the YouTube Data API against public video/channel data; the uploader is not notified and cannot see who looked. No login needed. Your requests are anonymous to the channel owner.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open-source tool by Matthew Wright (mattw.io); reads directly from the official YouTube Data API, so the metadata is authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "youtube-metadata-bulk",
+      "youtube-dataviewer",
+      "search-youtube-by-location"
+    ],
+    "aliases": [
+      "mattw youtube metadata",
+      "YouTube Metadata tool"
+    ],
     "tags": [
       "video-search-and-other-video-tools"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "location-search",
-      "search-youtube-by-location",
-      "youtube-metadata-bulk"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/youtube-metadata.md"
   },
   {
@@ -198722,37 +198746,55 @@
   {
     "id": "dice",
     "name": "Dice",
-    "description": "OSINT tool: Dice.",
-    "url": "http://www.dice.com",
+    "description": "Use when you have a `name` or `username` of a US tech worker and want their professional profile — returns employer, skills, location, and career history.",
+    "url": "https://www.dice.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding a US technology professional's resume/profile — employer, skills, and metro location — via a tech-specialty job board.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to create a profile and browse jobs; recruiter-side candidate search is a paid employer product, so free reconnaissance is mostly via profiles surfaced in search engines.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public Dice job posts and any indexed candidate pages is passive. Do NOT sign up as an employer and run candidate searches against a target — that leaves a business-account trail and may notify the candidate. Stick to what's publicly indexable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Dice is a long-established, reputable US tech-recruitment marketplace (owned by DHI Group); profile data is self-reported by the professionals themselves.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "linkedin",
+      "indeed"
+    ],
+    "aliases": [
+      "dice.com",
+      "Dice Careers"
+    ],
     "tags": [
       "job-search-resources"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/people-search/dice.md"
   },
   {
@@ -274971,7 +275013,12 @@
       "bing-ip-search",
       "bing-maps",
       "bing-news",
-      "bing-videos"
+      "bing-videos",
+      "bing-creations",
+      "bing-microsoft-translator",
+      "bing-translate",
+      "bing-webmaster-tools",
+      "see-it-search-it"
     ],
     "aliases": [
       "Bing Search",
@@ -279925,44 +279972,57 @@
   {
     "id": "duckduckgo",
     "name": "DuckDuckGo",
-    "description": "Privacy-preserving searches, tracking-free OSINT research, European results",
+    "description": "Use when you have a `name`, `username`, or `email` and want web results without a personalized filter bubble or search-history trail — returns ranked web pages and social/profile links.",
     "url": "https://duckduckgo.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Privacy-preserving searches, tracking-free OSINT research, European results",
-    "input": "Keywords, basic search operators (site:, intitle:, filetype:), natural language",
-    "output": "Ranked web pages with privacy-protecting anonymous view option",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Neutral, non-personalized general web search with clean operator support and a privacy-preserving anonymous page view.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free; no account required. No paid tier gating results.",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT with enhanced privacy; proxies results to prevent tracking by destination sites; no user profiling",
+    "opsecNote": "DuckDuckGo does not build a search profile of you and proxies image/result previews, so your queries aren't tied to a personal Google account. Results are still fetched by DDG's servers and your ISP/exit IP sees the connection — use a VPN/sock-puppet browser for a sensitive investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by DuckDuckGo, an established privacy-focused search company; results are syndicated largely from Bing plus its own crawler.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "duckduckgo-ai-chat",
-      "duckduckgo-com"
+      "bing",
+      "google"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "DDG",
+      "duckduckgo.com"
+    ],
+    "tags": [
+      "search-engine",
+      "privacy"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/duckduckgo.md"
   },
   {
@@ -337016,43 +337076,6 @@
     "_file": "library/tools/social-networks/redditsave-com.md"
   },
   {
-    "id": "redditsearch-io",
-    "name": "Redditsearch.io",
-    "description": "Reddit search tool",
-    "url": "https://redditsearch.io/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Reddit"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/redditsearch-io.md"
-  },
-  {
     "id": "redditsfinder",
     "name": "redditsfinder",
     "description": "Use when you have a Reddit `username` and want to pull that account's full public post/comment history and metadata — returns social-profile activity, geolocation and name leads.",
@@ -348200,48 +348223,6 @@
     "_file": "library/tools/social-networks/twitter/analytics/profile/twitonomy.md"
   },
   {
-    "id": "twitrss",
-    "name": "TwitRSS",
-    "description": "OSINT tool: TwitRSS.",
-    "url": "https://twitrss.me",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/twitrss.md"
-  },
-  {
     "id": "twitter-3d",
     "name": "Twitter 3D",
     "description": "3D viewer of relationships between twitter users.",
@@ -358013,41 +357994,49 @@
   {
     "id": "slangit-the-slang-dictionary",
     "name": "Slangit - The Slang Dictionary",
-    "description": "Understanding current online slang and acronym usage",
+    "description": "Use when you have chat/text messages full of slang, acronyms, or emoji and want them decoded — returns plain-language definitions and usage context.",
     "url": "https://slang.net/",
     "category": "translation-language",
     "path": [
       "translation-language",
       "text"
     ],
-    "bestFor": "Understanding current online slang and acronym usage",
-    "input": "Slang term or abbreviation",
-    "output": "Definition and usage context",
+    "bestFor": "Decoding online slang, texting acronyms, and emoji meanings found in a subject's messages or social posts.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web dictionary; optional iOS/Android apps. No account required to look up terms.",
     "opsec": "passive",
-    "opsecNote": "Read-only dictionary queries routed to the provider site.",
+    "opsecNote": "You're only looking up dictionary definitions — no target data is entered and nothing is revealed to anyone connected to the case. Fully passive. (Type the term itself, not identifying context, into the search box.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Community/editorial slang dictionary (slang.net, formerly Slangit); definitions are crowd/editor-sourced reference material, not authoritative linguistics.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "urban-dictionary",
+      "emojipedia"
+    ],
+    "aliases": [
+      "Slangit",
+      "slang.net"
+    ],
+    "tags": [
+      "slang",
+      "dictionary"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/text/slangit-the-slang-dictionary.md"
   },
   {
@@ -366558,41 +366547,56 @@
   {
     "id": "ship-ais",
     "name": "Ship AIS",
-    "description": "UK maritime activity monitoring and vessel identification",
+    "description": "Use when you have a vessel name or MMSI (or a UK waterway of interest) and want its live position — returns current location, track, and vessel details from public AIS.",
     "url": "https://shipais.uk/",
     "category": "transportation",
     "path": [
       "transportation",
       "marine-records"
     ],
-    "bestFor": "UK maritime activity monitoring and vessel identification",
-    "input": "Vessel name, MMSI, or local waterway context",
-    "output": "Current position, movement track, vessel details, and nearby traffic",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Live-tracking vessels in and around UK waters by name/MMSI using community-received AIS.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free community AIS aggregator; no account or payment to view positions.",
     "opsec": "passive",
-    "opsecNote": "Reads public AIS transmissions via community infrastructure.",
+    "opsecNote": "Reads publicly broadcast AIS transponder signals relayed through volunteer receivers; the vessel and its crew get no signal that you looked. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Volunteer-run UK AIS aggregation site; coverage depends on hobbyist receiver stations, so it's a community source rather than an official authority.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "marinetraffic",
+      "vesselfinder"
+    ],
+    "aliases": [
+      "shipais.uk",
+      "Ship AIS UK"
+    ],
+    "tags": [
+      "marine",
+      "vessel-tracking",
+      "ais"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/marine-records/ship-ais.md"
   },
   {

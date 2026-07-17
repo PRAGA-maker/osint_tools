@@ -112,7 +112,7 @@ kind: group-index
 - **`geoprotests-api`** (medium) — OSINT tool: geoprotests API.
 - **`geoseer-net`** (medium) — OSINT tool: Geoseer.net.
 - **`geovisual-search`** (medium) — Use when you want to find places that look like a chosen feature in satellite imagery (visual similarity search across the globe).
-- **`global-biodiversity-information-facility`** (medium) — Enter the name of an animal, bird or plant to see a map of where it has been spotted.
+- **`global-biodiversity-information-facility`** (low) — Use when you have a species name or a `geolocation` and want to know where a plant/animal occurs — returns mapped occurrence points that hel
 - **`global-conflict-tracker`** (medium) — OSINT tool: Global Conflict Tracker.
 - **`global-flood-database-and-interactive-map`** (medium) — Detailed statistics on floods over the last 15 years (worldwide): precipitation levels, flooded area, number of people affected, dates, dura
 - **`global-incident-map`** (high) — Use when you have a `geolocation`/region and want situational context — returns a map of reported terrorism, suspicious activity, and other 
@@ -124,7 +124,7 @@ kind: group-index
 - **`google-earth-pro`** (high) — Use when you need a deep historical-imagery timeline, measurement, and high-quality exports for a location — the desktop power version of Go
 - **`google-earth`** (high) — Use when you have a location and want 3D terrain, global high-res imagery, and measurement to study a site or last-known area.
 - **`google-maps-scraper`** (medium) — Enter search terms (ex "Boston museum") and scrape adresses, phone, websites and other place info from Google Maps.
-- **`google-maps-timeline-exporter`** (medium) — If your Google account has once enabled collecting data about your location (link for checking https://timeline.google.com/maps/timeline), t
+- **`google-maps-timeline-exporter`** (medium) — Use when you have access to a subject's Google `geolocation` history (their logged-in session or a Takeout export) and want to convert it in
 - **`google-maps-update-alerts`** (high) — Use when you have a `geolocation`/`address` of interest and want to be notified when Google's satellite/aerial imagery of that spot refreshe
 - **`google-maps`** (high) — Use when you have an address or coordinate and need Street View, routing, POIs, or to ground-truth a location at street level.
 - **`google-my-maps`** (high) — Use when you have multiple `geolocation`/`address` points and want to plot, annotate, and visually correlate them on a shared custom map.

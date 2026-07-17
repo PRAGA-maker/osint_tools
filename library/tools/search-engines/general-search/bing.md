@@ -38,6 +38,11 @@ relatedTools:
 - bing-maps
 - bing-news
 - bing-videos
+- bing-creations
+- bing-microsoft-translator
+- bing-translate
+- bing-webmaster-tools
+- see-it-search-it
 aliases:
 - Bing Search
 - Microsoft Bing

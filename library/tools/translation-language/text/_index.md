@@ -14,7 +14,7 @@ kind: group-index
 - **`google-input-tools`** (low) — Use when a lead is in a non-Latin script and you need to TYPE it accurately (queries, names, addresses) — an input helper, not a subject loo
 - **`google-translate`** (medium) — Quick translation across broad language coverage
 - **`slang-dictionary-and-translator`** (medium) — Decoding internet slang and text abbreviations
-- **`slangit-the-slang-dictionary`** (medium) — Understanding current online slang and acronym usage
+- **`slangit-the-slang-dictionary`** (low) — Use when you have chat/text messages full of slang, acronyms, or emoji and want them decoded — returns plain-language definitions and usage 
 - **`urban-dictionary`** (low) — Use when you have slang, a nickname, or a coded term from a subject's posts and want its meaning — returns crowd-sourced definitions that ca
 - **`wiktionary`** (low) — Use when you hit an unfamiliar word, slang, or foreign term in evidence and want its meaning, etymology, and translations — returns definiti
 - **`word-reference`** (medium) — Word-level translation with conjugation and usage context
