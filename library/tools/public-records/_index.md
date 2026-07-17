@@ -985,7 +985,7 @@ kind: group-index
 - **`thekyb-com`** (high) — Use when you have a company `name` or `employer-org` and want verified registry data — legal name, address, officers, and beneficial owners 
 - **`thentiacloud-net`** (medium) — Use when you have a `name` and want to confirm a person's professional registration/licence on a regulator's public register — returns regis
 - **`thewebco`** (medium) — OSINT tool: TheWebCo.
-- **`tmdn-design-view`** (medium) — Search 17 684 046 products designs across the European Union and beyond
+- **`tmdn-design-view`** (medium) — Use when you have an `employer-org`/`name` or design number and want registered industrial designs and their owners across the EU and beyond
 - **`toronto-police-service`** (medium) — OSINT tool: Toronto Police Service.
 - **`toronto-star`** (low) — OSINT tool: Toronto Star.
 - **`tracxn`** (medium) — OSINT tool: Tracxn.

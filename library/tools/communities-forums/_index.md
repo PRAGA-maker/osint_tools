@@ -63,7 +63,7 @@ kind: group-index
 - **`charitable-impact`** (medium) — Network of charities in Canada
 - **`chemistry-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`christian-mingle`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`city-data-com`** (medium) — OSINT tool: city-data.com.
+- **`city-data-com`** (medium) — Use when you have a `username` or a place and want forum posts and member profiles tied to it — returns social-profile, username and local-k
 - **`citytv-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`cl1p`** (medium) — OSINT tool: cl1p.
 - **`cnet`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
@@ -244,7 +244,7 @@ kind: group-index
 - **`myfitnesspal`** (medium) — Website related to social networking in the form of health, wellness, and/or fitness
 - **`mynetworktv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`mytwinplace`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`n0paste`** (medium) — OSINT tool: n0paste.
+- **`n0paste`** (low) — Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-le
 - **`nachricht`** (medium) — OSINT tool: Nachricht.
 - **`national-geographic-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`nationaltradesmen-co-uk`** (medium) — OSINT tool: nationaltradesmen.co.uk.

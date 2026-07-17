@@ -119,7 +119,7 @@ kind: group-index
 - **`wayback-machine-downloader-github-com`** (medium) — OSINT tool: wayback machine downloader (github.com).
 - **`wayback-machine`** (medium) — OSINT tool: Wayback Machine.
 - **`wayback-tweets`** (medium) — Display archived tweets retrieved from the Wayback Machine.
-- **`waybackpdf`** (medium) — Collects a list of saved PDFs for the given domain from [http://archive.org](http://archive.org) and downloads them into a folder.
+- **`waybackpdf`** (low) — Use when you have a `domain` and want every PDF the Internet Archive holds for it — returns document-id files that often carry names and met
 - **`waybackpy`** (medium) — OSINT tool: waybackpy.
 - **`waymore`** (medium) — Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).
 - **`web-archive-bibalex-org`** (medium) — OSINT tool: web.archive.bibalex.org.

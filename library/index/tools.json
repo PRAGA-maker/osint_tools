@@ -22561,38 +22561,50 @@
   {
     "id": "waybackpdf",
     "name": "WaybackPDF",
-    "description": "Collects a list of saved PDFs for the given domain from [http://archive.org](http://archive.org) and downloads them into a folder.",
+    "description": "Use when you have a `domain` and want every PDF the Internet Archive holds for it — returns document-id files that often carry names and metadata.",
     "url": "https://github.com/Haax9/WaybackPDF",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-collecting all archived PDFs for a domain from the Wayback Machine — reports, filings and documents that may name people or carry revealing metadata.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source script; no account or key required.",
+    "opsec": "passive",
+    "opsecNote": "It queries and downloads from the Internet Archive, not the live target site, so the domain owner is not contacted or alerted. Purely archive-side collection.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A small single-author utility over the public Wayback CDX API; simple and inspectable, but coverage is bounded by what the Archive captured.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Haax9/WaybackPDF"
+    ],
     "tags": [
       "Archives",
-      "Tools for working with web archives"
+      "Tools for working with web archives",
+      "pdf"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/waybackpdf.md"
   },
   {
@@ -25492,13 +25504,13 @@
   {
     "id": "city-data-com",
     "name": "city-data.com",
-    "description": "OSINT tool: city-data.com.",
+    "description": "Use when you have a `username` or a place and want forum posts and member profiles tied to it — returns social-profile, username and local-knowledge leads.",
     "url": "http://www.city-data.com/forum/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a huge US-centric relocation/local-discussion forum (2M+ members) for a handle's posts/profile or for local knowledge about a specific city.",
     "selectorsIn": [
       "username"
     ],
@@ -25506,29 +25518,35 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and search; registration (free) is required to see some member content and to post.",
+    "opsec": "passive",
+    "opsecNote": "Reading and searching is passive. Do not register and message a subject during an investigation — that would be active contact. Use a research browser and sock-puppet account if you must register to view gated content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "User-generated forum content; posts are self-reported and unverified, and a handle here may or may not be the same person as elsewhere.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "City-Data Forum",
+      "city-data.com"
+    ],
     "tags": [
       "forums",
-      "Forums"
+      "local"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/city-data-com.md"
   },
   {
@@ -33118,37 +33136,49 @@
   {
     "id": "n0paste",
     "name": "n0paste",
-    "description": "OSINT tool: n0paste.",
+    "description": "Use when you have an `email`/`username` and want to check a pastebin for leaked text mentioning it — returns password/credential and data-leak leads.",
     "url": "https://n0paste.eu/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A pastebin-style site to check (via search-engine dorking) for pasted dumps, credentials or documents mentioning a selector.",
+    "selectorsIn": [
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "password",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public paste service; no account needed to read pastes.",
+    "opsec": "passive",
+    "opsecNote": "Reading pastes is passive. Never paste a target's data into it (that would republish/leak it), and only view leaked material for legitimate investigative purposes. Use a research browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "An anonymous paste host with no vetting; content is user-submitted and may include stolen or fabricated data — treat anything found as an unverified lead.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "n0paste.eu"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "leaks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/n0paste.md"
   },
   {
@@ -123236,48 +123266,55 @@
   {
     "id": "huntel-io",
     "name": "Huntel.io",
-    "description": "get a list of links to Facebook/Instagram locations linked to geographic coordinates",
+    "description": "Use when you have a `geolocation` and want geotagged social-media posts from that area across many platforms — returns social-profile posts tied to the location.",
     "url": "https://www.huntintel.io/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Location-first social-media OSINT — surfacing Instagram/Facebook/X/YouTube/Snapchat/VK/Flickr posts from a chosen area to track events or place a subject.",
     "selectorsIn": [
-      "face",
-      "geolocation",
-      "image"
-    ],
-    "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier available with no card required (limited searches); a paid plan (~£39.99/month) unlocks unlimited searches, priority processing and support.",
+    "opsec": "passive",
+    "opsecNote": "You query an aggregator about a location, not a person; the subject is not notified. Create a research account (not a personal one) for the free tier, and use a research browser.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial location-OSINT aggregator; coverage depends on each platform's API/access, which changes over time, so results are partial and time-sensitive.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "birdhunt-2",
+      "instahunt-2"
+    ],
+    "aliases": [
+      "Hunt Intelligence",
+      "huntintel.io"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Social media and photos"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "birdhunt-2",
-      "instahunt-2"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/huntel-io.md"
   },
   {
@@ -153366,40 +153403,49 @@
   {
     "id": "theinpaint",
     "name": "Theinpaint",
-    "description": "One of the best (and free) online photo object removal tools I've ever seen. Just highlight red on the photo and press Erase. Then do it again, and again, and again (until you get the perfect result).",
+    "description": "Use when you have an `image` with a watermark/text/overlay obscuring a detail and want a clean working copy for reverse-image search — returns a retouched image.",
     "url": "https://theinpaint.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Removing watermarks, timestamps, text overlays or obstructions from a working copy of an image so a reverse-image search can match the underlying scene.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free online version (Inpaint Online) works in-browser with size/quality limits; a paid desktop app removes limits. The free tier is enough for prep work.",
+    "opsec": "passive",
+    "opsecNote": "You upload the image to a third-party server for processing — never upload sensitive/evidentiary originals; use a non-identifying working copy. The processed image is edited, so keep it clearly separate from the untouched original.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A commercial photo-editing service, not an OSINT tool; useful only as image-prep. It alters pixels, so its output is never evidence — only a search aid.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Inpaint",
+      "Inpaint Online",
+      "theinpaint.com"
+    ],
     "tags": [
       "Image Search and Identification",
       "Image editing tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/theinpaint.md"
   },
   {
@@ -158463,13 +158509,13 @@
   {
     "id": "free-map-tools",
     "name": "Free Map Tools",
-    "description": "OSINT tool: Free Map Tools.",
+    "description": "Use when you have a `geolocation`/`address` and need radius, distance, area or coordinate math on a map — returns derived geolocation measurements.",
     "url": "https://www.freemaptools.com",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Quick map utilities — radius rings, distance/area measurement, coordinate/ZIP conversion, elevation and population-within-area — around a point or address.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -158477,32 +158523,39 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; an optional paid tier only removes ads. All tools are usable without an account.",
+    "opsec": "passive",
+    "opsecNote": "All computation is on public map data you supply; nothing is disclosed to any subject. Safe from any browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-running, widely-cited free map-utility site; measurements are as accurate as the underlying map/geocoder, so treat derived numbers as close estimates.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "maps"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "freemaptools",
       "freemaptools-com"
     ],
+    "aliases": [
+      "FreeMapTools",
+      "freemaptools.com"
+    ],
+    "tags": [
+      "maps",
+      "geospatial"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/free-map-tools.md"
   },
   {
@@ -265613,37 +265666,53 @@
   {
     "id": "tmdn-design-view",
     "name": "TMDN Design View",
-    "description": "Search 17 684 046 products designs across the European Union and beyond",
+    "description": "Use when you have an `employer-org`/`name` or design number and want registered industrial designs and their owners across the EU and beyond — returns document-id and owner.",
     "url": "https://www.tmdn.org/tmdsview-web/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Searching millions of registered/applied industrial designs across EU national offices, EUIPO and international partners, and reading each design's owner/applicant.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official consultation tool operated by the EU IP network (EUIPO + national offices); no account required.",
+    "opsec": "passive",
+    "opsecNote": "Read-only search of an official public register; the design owner is not notified. Safe from any browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official EU IP Network / EUIPO service aggregating participating offices' registers; the ownership and status data are authoritative for the offices covered.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "DesignView",
+      "EUIPO DesignView",
+      "tmdn.org DesignView"
+    ],
     "tags": [
-      "Brand/trademark information search"
+      "Brand/trademark information search",
+      "designs",
+      "intellectual-property"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/tmdn-design-view.md"
   },
   {
@@ -282751,24 +282820,30 @@
   {
     "id": "gametracker-search",
     "name": "Gametracker Search",
-    "description": "Website that offers a search engine for locating players of leading games and gaming communities",
+    "description": "Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen server leads.",
     "url": "https://www.gametracker.com/profiles",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a player's profile across tracked multiplayer game servers (CS, TF2, etc.) — aliases, servers frequented, and last-seen activity.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view player/server profiles; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a public server-tracking site, not the player; the subject is not notified. Use a research browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Community server-tracking data scraped from game servers; profiles reflect only servers that run GameTracker, so coverage is partial and aliases are unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -282777,15 +282852,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "GameTracker",
+      "gametracker.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
+      "gaming",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/gametracker-search.md"
   },
   {
@@ -288826,41 +288905,52 @@
   {
     "id": "jurispro-expert-witness-listings-united-states",
     "name": "JurisPro Expert Witness Listings (United States)",
-    "description": "People-related search of a directory of expert witnesses, searchable by category, subject matter and keywords",
+    "description": "Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and contact leads.",
     "url": "http://www.jurispro.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Locating US expert witnesses by specialty/state and reading their self-published CV, credentials and contact details.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search the directory; only experts pay/register to list themselves.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only directory browsing; the expert has published this profile themselves, but your visit is not disclosed to them. Do not use the site's contact features against a subject during an investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Profiles are self-submitted marketing CVs by the experts; credentials are as claimed, not independently verified — corroborate qualifications separately.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "JurisPro",
+      "jurispro.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
+      "expert-witness",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/jurispro-expert-witness-listings-united-states.md"
   },
   {
@@ -290317,46 +290407,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/leet.md"
-  },
-  {
-    "id": "legistorm",
-    "name": "LegiStorm",
-    "description": "Site providing information about employees of Congress, including salary and financial information",
-    "url": "http://www.legistorm.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/legistorm.md"
   },
   {
     "id": "leibniz-information-centre-for-science-and-technology-university-library",

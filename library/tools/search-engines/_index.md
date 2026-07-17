@@ -295,7 +295,7 @@ kind: group-index
 - **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
 - **`galaxy-search-directory`** (medium) — Surface web search directory covering worldwide results
 - **`game-convention-central-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
-- **`gametracker-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`gametracker-search`** (medium) — Use when you have a gamer `username` and want their game-server activity profile — returns social-profile, reused username and last-seen ser
 - **`gerdoo-iran`** (low) — OSINT tool: Gerdoo (Iran).
 - **`gexsi`** (medium) — Search engine that uses its revenues to support sustainable developmental goals.
 - **`gibiru`** (low) — OSINT tool: Gibiru.
@@ -426,7 +426,7 @@ kind: group-index
 - **`journalist-s-toolbox-investigative`** (medium) — SPJ-associated curated set of investigative research tools for journalists.
 - **`jstor`** (low) — OSINT tool: JSTOR.
 - **`jubii-search-engine-denmark`** (medium) — Denmark based web search engine covering regional results
-- **`jurispro-expert-witness-listings-united-states`** (medium) — People-related search of a directory of expert witnesses, searchable by category, subject matter and keywords
+- **`jurispro-expert-witness-listings-united-states`** (medium) — Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and cont
 - **`justia-blawgsearch`** (medium) — Website that provides a search engine that searches blogs related to the law
 - **`justice-directory`** (medium) — Exhaustive list of law enforcement agency websites
 - **`kagi-search`** (low) — OSINT tool: Kagi Search.
@@ -461,7 +461,6 @@ kind: group-index
 - **`lawyers-com`** (medium) — Legal-related search engine for locating legal representatives
 - **`leaklooker`** (medium) — Tool to find open databases/services.
 - **`leet`** (medium) — Open directory search engine.
-- **`legistorm`** (medium) — Site providing information about employees of Congress, including salary and financial information
 - **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — OSINT tool: Leibniz Information Centre For Science and Technology University Library.
 - **`leit-search-engine-iceland`** (medium) — Iceland based surface web search engine covering regional results
 - **`lendx`** (low) — OSINT tool: LENDX.

@@ -342,7 +342,7 @@ kind: group-index
 - **`the-bitmoji-avatar-history-enumerator`** (high) — Use when you have a Snapchat `username` and want to enumerate the history of Bitmoji avatars that account has used — returns `image` avatars
 - **`the-seint`** (high) — Use when you have an image `metadata-exif`/filename and want to infer the camera make/model that produced it — returns device-id.
 - **`thehackernews-com`** (high) — Use when you have an `image` containing pixelated/blurred redacted text and want to attempt reconstruction — points to the Unredacter/Depix 
-- **`theinpaint`** (medium) — One of the best (and free) online photo object removal tools I've ever seen. Just highlight red on the photo and press Erase. Then do it aga
+- **`theinpaint`** (low) — Use when you have an `image` with a watermark/text/overlay obscuring a detail and want a clean working copy for reverse-image search — retur
 - **`tikfuel-com`** (high) — Use when you have a TikTok `username` and want the full-resolution profile picture (which TikTok only shows small) to reverse-image or face-
 - **`tiktok-video-downloader-ssstik`** (low) — Download TikTok videos without watermark.
 - **`tineye-com`** (high) — Use when you have an `image` and want to find where else it appears online and its earliest/other copies — returns matching pages (`social-p
