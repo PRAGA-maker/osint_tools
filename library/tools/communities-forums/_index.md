@@ -271,7 +271,7 @@ kind: group-index
 - **`onefinestay`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`onefootballforum-co-uk`** (medium) — OSINT tool: onefootballforum.co.uk.
 - **`open-diary`** (medium) — Use when a subject may have kept a public online journal under a `username` — search/browse Open Diary entries for self-disclosed details an
-- **`organized-crime-and-corruption-reporting-project`** (medium) — Non-profit organization dedicated to reporting organized crime and corruption
+- **`organized-crime-and-corruption-reporting-project`** (medium) — Use when you have a `name` or `employer-org` possibly tied to crime/corruption and want investigative coverage and record datasets — returns
 - **`osint-communities-practitioners`** (low) — List of OSINT practitioners, blogs, and tutorials.
 - **`ownerdirect-united-states`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`paaster`** (medium) — OSINT tool: paaster.

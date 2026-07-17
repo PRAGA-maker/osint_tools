@@ -198,7 +198,7 @@ kind: group-index
 - **`measuretool-googlemaps-v3`** (medium) — Measurement tool for #GoogleMaps.
 - **`meteoblue`** (medium) — Weather stats data
 - **`mgrs-mapper`** (medium) — Build and share custom maps with standard military graphics using a simple visual interface (paod)
-- **`mindat-org`** (medium) — mineral maps for different countries
+- **`mindat-org`** (low) — Use when an `image` or sample shows a distinctive rock/mineral and you want to narrow where it came from — returns mineral locality data and
 - **`modest-maps`** (low) — Use when a developer needs a lightweight library to build a custom slippy-map viewer — not a lookup tool for finding a person.
 - **`monitor-tracking-civic-space-worldwide-map`** (medium) — Civicus (@CIVICUSalliance)
 - **`mooncalc`** (high) — Use when an outdoor photo shows the moon and you need its azimuth/elevation/phase at a date+place to confirm or break a claimed time and loc

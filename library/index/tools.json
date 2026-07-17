@@ -34363,49 +34363,67 @@
   },
   {
     "id": "organized-crime-and-corruption-reporting-project",
-    "name": "Organized Crime and Corruption Reporting Project",
-    "description": "Non-profit organization dedicated to reporting organized crime and corruption",
+    "name": "OCCRP",
+    "description": "Use when you have a `name` or `employer-org` possibly tied to crime/corruption and want investigative coverage and record datasets — returns linked persons, companies, and documented associations.",
     "url": "https://www.occrp.org/en",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Investigative reporting and the OCCRP Aleph archive of leaks, company registries, and court records for cross-border corruption research.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "News reporting is free to read; the Aleph data archive is free to search, but some datasets/document access require a free vetted account (journalists/researchers) via manual review.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reading articles and searching Aleph is read-only; subjects are not notified. Requesting elevated Aleph access reveals your identity/affiliation to OCCRP under their vetting. Use care handling data on living private individuals surfaced in leaks.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "OCCRP is a globally recognized investigative-journalism nonprofit; reporting is professionally sourced, and Aleph aggregates primary records (registries, leaks, court filings).",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
+      "aleph-occrp",
+      "opencorporates",
+      "offshoreleaks-icij",
       "data-occrp-org",
       "occrp-aleph",
       "occrp-org",
       "the-pegasus-project-occrp",
       "visual-investigative-scenarios"
     ],
+    "aliases": [
+      "OCCRP",
+      "Aleph",
+      "Organized Crime and Corruption Reporting Project"
+    ],
+    "tags": [
+      "investigative-journalism",
+      "corruption",
+      "leaks",
+      "company-information"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/organized-crime-and-corruption-reporting-project.md"
   },
   {
@@ -125935,42 +125953,52 @@
   {
     "id": "mindat-org",
     "name": "Mindat.org",
-    "description": "mineral maps for different countries",
+    "description": "Use when an `image` or sample shows a distinctive rock/mineral and you want to narrow where it came from — returns mineral locality data and maps as geolocation leads.",
     "url": "https://www.mindat.org/countrylist.php",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Locating regions/mines where a specific mineral occurs — a geology-based geolocation lead for photos or samples.",
     "selectorsIn": [
-      "geolocation"
+      "image"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse and search the full database and locality maps; a free account is optional for contributing. No paywall on core data.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public mineralogy database is read-only and unrelated to any subject; nothing is contacted or logged against a person. Standard clean-session hygiene applies to the site itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Mindat is the world's largest, long-established mineralogical reference, maintained with the Hudson Institute of Mineralogy and a large expert community.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-earth",
+      "geonames"
+    ],
+    "aliases": [
+      "mindat.org"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Nature"
+      "geolocation",
+      "geology",
+      "minerals"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/mindat-org.md"
   },
   {
@@ -228738,44 +228766,59 @@
   },
   {
     "id": "death-check",
-    "name": "Death Check",
-    "description": "Death record and obituary lookup",
+    "name": "DeathIndexes.com",
+    "description": "Use when you have a `name` (and rough US state/era) and want to check whether the person has died — returns links to state/county death indexes, obituaries, and SSDI resources.",
     "url": "https://www.deathindexes.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "death-records"
     ],
-    "bestFor": "Death record and obituary lookup",
-    "input": "Name, location, date range",
-    "output": "Obituaries, death certificates, dates",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A US-wide directory routing you to the right online death index, obituary, or probate source by state and county.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "dob",
+      "name",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "The directory is free; some linked destination sites (commercial genealogy providers) may paywall the actual records.",
     "opsec": "passive",
-    "opsecNote": "Aggregator of public death records",
+    "opsecNote": "Browsing a link directory and public death indexes is read-only and never contacts any living subject. Some linked providers may require their own free account; the deceased has no privacy interest, but surviving relatives named in obituaries are living people — handle their data carefully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Long-running, well-regarded genealogy link directory (Joe Beine); it curates links to primary sources rather than hosting records itself.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
+      "findagrave",
+      "ssdi-search",
+      "legacy-com-obituaries",
       "online-searchable-death-indexes-and-records-united-states"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "deathindexes.com",
+      "Death Indexes"
+    ],
+    "tags": [
+      "death-records",
+      "obituary",
+      "genealogy"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/death-records/death-check.md"
   },
   {
@@ -253273,40 +253316,6 @@
     "_file": "library/tools/public-records/ontario-highway-traffic-act.md"
   },
   {
-    "id": "ontario-provincial-police",
-    "name": "Ontario Provincial Police",
-    "description": "OSINT tool: Ontario Provincial Police.",
-    "url": "https://bloopbase.keybase.pub/ACAB/OPP/index.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/ontario-provincial-police.md"
-  },
-  {
     "id": "onthehouse-com-au",
     "name": "OnTheHouse (Australia Property)",
     "description": "Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated value, listing history, and property attributes.",
@@ -256243,36 +256252,57 @@
   },
   {
     "id": "police-complaint-lookup",
-    "name": "Police Complaint Lookup",
-    "description": "OSINT tool: Police Complaint Lookup.",
+    "name": "Police Complaint Lookup (CUAPB)",
+    "description": "Use when you have a Minnesota officer's `name` or badge number and want their complaint history — returns documented complaints, involved officers, and outcomes.",
     "url": "http://complaints.cuapb.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching formal complaints filed against Minnesota law-enforcement officers by name, badge, department, or case number.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public database maintained by a nonprofit (Communities United Against Police Brutality). No account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only search of a published public-records database; the officer is not notified. CUAPB may log site traffic (your IP). Subjects here are public officials acting in their official capacity, but treat the data factually and note its documented incompleteness.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Compiled by an advocacy nonprofit from public records and requests; useful and sourced, but self-described as incomplete, so treat as a lead index rather than a definitive registry.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "judyrecords",
+      "courtlistener"
+    ],
+    "aliases": [
+      "CUAPB complaints database",
+      "Communities United Against Police Brutality"
+    ],
+    "tags": [
+      "police",
+      "public-records",
+      "minnesota",
+      "accountability"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/police-complaint-lookup.md"
   },
   {
@@ -269618,52 +269648,6 @@
     "_file": "library/tools/public-records/whosarat-com.md"
   },
   {
-    "id": "whowhere-search",
-    "name": "Whowhere? Search",
-    "description": "Business-related search engine that searches global results by product, occupation, business and city name",
-    "url": "http://www.whowhere.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/whowhere-search.md"
-  },
-  {
     "id": "windeed-co-za",
     "name": "windeed.co.za",
     "description": "Use when you have a `name` or ID/registration number in South Africa and want official property, deeds, company, and directorship records — returns `address` (property ownership), `employer-org` (CIPC directorships), `associate`, `name`.",
@@ -278025,41 +278009,55 @@
   {
     "id": "crown-prosecution-service-uk",
     "name": "Crown Prosecution Service (UK)",
-    "description": "UK's Crown Prosecution Service portal with resources for victims and witnesses",
-    "url": "http://www.cps.gov.uk/",
+    "description": "Use when you have a `name` possibly involved in a UK criminal case and want official prosecution coverage — returns CPS news/press releases confirming charges, convictions, and case outcomes.",
+    "url": "https://www.cps.gov.uk/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Confirming UK prosecutions/convictions via the CPS newsroom and press releases naming defendants.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free UK government website; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public government site is read-only and never contacts the subject. As a .gov.uk site it may log traffic; use a clean session. Convictions named here are public record, but note this is official UK-government content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Official website of the Crown Prosecution Service, the principal public prosecutor for England and Wales; press releases are authoritative statements of case outcomes.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "uk"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+    "relatedTools": [
+      "courtserve-uk",
+      "the-gazette-uk"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "CPS",
+      "cps.gov.uk"
+    ],
+    "tags": [
+      "uk",
+      "criminal-records",
+      "government",
+      "prosecution"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/crown-prosecution-service-uk.md"
   },
   {
@@ -285375,41 +285373,58 @@
   {
     "id": "google-news-search",
     "name": "Google News Search",
-    "description": "OSINT tool: Google News Search.",
-    "url": "https://news.google.com/news/advanced_news_search?",
+    "description": "Use when you have a `name`, `employer-org`, or event and want news coverage across outlets and time — returns articles, dates, and named associates/locations from reporting.",
+    "url": "https://news.google.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "news-search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Aggregated news search across thousands of outlets, with date filtering to build a timeline.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "geolocation",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read the aggregator; individual linked outlets may have their own paywalls.",
+    "opsec": "passive",
+    "opsecNote": "News searching is read-only and never contacts the subject. Google logs your queries/IP; use a clean/private session and a puppet Google account if you want the searches off your main profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Google News is a first-party aggregator indexing established outlets; reliability depends on the underlying publication, not the aggregator.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "relatedTools": [
+      "google-advanced-search",
+      "google-alerts",
+      "bing-news"
+    ],
+    "aliases": [
+      "news.google.com",
+      "Google News advanced search"
+    ],
+    "tags": [
+      "news",
+      "media",
+      "search"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/news-search/google-news-search.md"
   },
   {
@@ -288083,26 +288098,33 @@
   },
   {
     "id": "internet-movie-database",
-    "name": "Internet Movie Database",
-    "description": "Online database for movies and celebrities; includes ratings and reviews",
-    "url": "http://www.imdb.com",
+    "name": "IMDb",
+    "description": "Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — returns name confirmation, associates, and biographical hints.",
+    "url": "https://www.imdb.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Profiling anyone tied to film/TV/entertainment — cast, crew, extras — with biography and collaborator links.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse and search; IMDbPro (paid) adds contact/representation details and industry data. Public profiles need no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public profiles is read-only and invisible to the subject. IMDb sees your IP; use a clean session. Nothing you view is reported to the person.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "The dominant film/TV reference database; core credits are well-verified, though user-editable bio fields can contain errors.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -288110,15 +288132,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+    "relatedTools": [
+      "google-advanced-search",
+      "wikipedia"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "imdb.com",
+      "Internet Movie Database"
+    ],
+    "tags": [
+      "entertainment",
+      "biography",
+      "film"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/internet-movie-database.md"
   },
   {
@@ -321955,7 +321984,8 @@
     "relatedTools": [
       "activetk",
       "ghunt",
-      "epieos"
+      "epieos",
+      "darkweb-archive"
     ],
     "aliases": [
       "gmail-osint.activetk.jp",

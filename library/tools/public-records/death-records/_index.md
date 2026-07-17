@@ -7,7 +7,7 @@ kind: group-index
 # public-records/death-records
 
 ## Skills here
-- **`death-check`** (medium) — Death record and obituary lookup
+- **`death-check`** (high) — Use when you have a `name` (and rough US state/era) and want to check whether the person has died — returns links to state/county death inde
 - **`find-a-grave`** (medium) — Use when you have a `name` (and rough `geolocation`/dates) and want to confirm a death and burial — returns `dob`/death dates, cemetery `add
 - **`graveinfo`** (medium) — GPS cemetery mapping
 

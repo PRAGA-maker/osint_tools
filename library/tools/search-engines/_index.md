@@ -180,7 +180,7 @@ kind: group-index
 - **`credit-guru`** (medium) — Listing of credit agencies around the world
 - **`criminology-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on c
 - **`crossref`** (medium) — Use when you have a person's `name` (or a DOI/title) and want their scholarly publications, co-authors and affiliations — returns employer-o
-- **`crown-prosecution-service-uk`** (medium) — UK's Crown Prosecution Service portal with resources for victims and witnesses
+- **`crown-prosecution-service-uk`** (low) — Use when you have a `name` possibly involved in a UK criminal case and want official prosecution coverage — returns CPS news/press releases 
 - **`crt-certificate-search`** (medium) — OSINT tool: CRT Certificate Search.
 - **`cse-utopia`** (medium) — Custom search engine
 - **`cyb-detective-osint-stuff-tool-collection`** (high) — Use when you have a selector class (username, email, phone, image, domain…) and want to discover niche tools for it — returns pointers to 10
@@ -399,7 +399,7 @@ kind: group-index
 - **`international-standard-classification-of-occupations`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`international-trademark-search`** (medium) — International trademark search tool - searchable by country
 - **`internet-archive`** (medium) — OSINT tool: Internet Archive.
-- **`internet-movie-database`** (medium) — Online database for movies and celebrities; includes ratings and reviews
+- **`internet-movie-database`** (low) — Use when you have a `name` (or username/handle) connected to film/TV work and want a biography, filmography, and linked identity details — r
 - **`inventory-raw-pm`** (low) — Search by best #cybersecurity tools, resources, #ctf and #bugbounty platforms.
 - **`ipfs-search-com`** (medium) — OSINT tool: Ipfs-search.com.
 - **`ipse-io`** (medium) — OSINT tool: Ipse.io.

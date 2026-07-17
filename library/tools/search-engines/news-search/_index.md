@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`allyoucanread-com`** (low) — Use when you have a `geolocation` (country/region) and want the local newspapers and magazines that cover it — returns news-outlet `domain` 
 - **`flipboard`** (medium) — OSINT tool: Flipboard.
-- **`google-news-search`** (medium) — OSINT tool: Google News Search.
+- **`google-news-search`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across outlets and time — returns articles, dates, and named ass
 - **`hubii`** (medium) — OSINT tool: Hubii.
 - **`inshorts`** (medium) — OSINT tool: Inshorts.
 - **`newsbot`** (medium) — OSINT tool: NewsBot.

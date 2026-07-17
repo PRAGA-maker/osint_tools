@@ -734,7 +734,6 @@ kind: group-index
 - **`onondaga-county-home-sales`** (medium) — OSINT tool: Onondaga County Home Sales.
 - **`ontario-genealogy-and-history-database-index`** (medium) — Ontario (Upper Canada) Genealogy and History Database Index - searchable marriage and death records
 - **`ontario-highway-traffic-act`** (medium) — Site providing access to Ontarios laws including the Highway Traffic Act, Provincial Offences Act, and subsequent amendments
-- **`ontario-provincial-police`** (medium) — OSINT tool: Ontario Provincial Police.
 - **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
 - **`open-data-policing`** (medium) — OSINT tool: Open Data Policing.
@@ -792,7 +791,7 @@ kind: group-index
 - **`plunkett-research`** (medium) — OSINT tool: Plunkett Research.
 - **`poland`** (medium) — Use when you have a Polish `employer-org` and want its beneficial owners — returns the natural-person `name`s (with partial `dob`/PESEL) who
 - **`police-body-worn-camera-footage-access-map`** (medium) — Use when you have a US `geolocation` (state) and want to know if/how police body-camera footage can be obtained — returns the state's access
-- **`police-complaint-lookup`** (medium) — OSINT tool: Police Complaint Lookup.
+- **`police-complaint-lookup`** (low) — Use when you have a Minnesota officer's `name` or badge number and want their complaint history — returns documented complaints, involved of
 - **`police-decertifcations-search-and-report`** (medium) — OSINT tool: Police Decertifcations Search and Report.
 - **`police-protest-videos`** (medium) — OSINT tool: Police Protest Videos.
 - **`police-surveillance-in-chicago`** (medium) — OSINT tool: Police Surveillance in Chicago.
@@ -1058,7 +1057,6 @@ kind: group-index
 - **`who-do-you-search`** (medium) — Business-related search engine; searches global results by product, occupation, business and city name
 - **`whorepresents-com`** (low) — Use when you have a celebrity/public-figure `name` and want to find who represents them — returns the agency/publicist (`employer-org`) and 
 - **`whosarat-com`** (low) — OSINT tool: WhosaRat.com.
-- **`whowhere-search`** (medium) — Business-related search engine that searches global results by product, occupation, business and city name
 - **`windeed-co-za`** (high) — Use when you have a `name` or ID/registration number in South Africa and want official property, deeds, company, and directorship records — 
 - **`wisconsin-fox-river-veterans-grave-registration-database`** (medium) — Use when you have a veteran's `name` connected to the Fox River region of Wisconsin and want burial details — returns cemetery/grave locatio
 - **`wisconsin-registered-voter-verification`** (medium) — Wisconsin registered voter verification and search
