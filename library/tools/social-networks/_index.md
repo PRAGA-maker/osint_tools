@@ -115,7 +115,7 @@ kind: group-index
 - **`discord-id-lookup`** (medium) — OSINT tool: Discord ID Lookup.
 - **`discord-me`** (medium) — OSINT tool: Discord Me.
 - **`discord-servers-portal`** (medium) — OSINT tool: Discord Servers Portal.
-- **`discord-user-search`** (medium) — OSINT tool: Discord User Search.
+- **`discord-user-search`** (medium) — Use when you have a Discord `username` or user ID and want profile context — a third-party database of millions of Discord users returning p
 - **`discordservers`** (medium) — OSINT tool: DiscordServers.
 - **`dolphin-radar`** (high) — Use when you have a public Instagram `username` and want to monitor its behaviour over time — returns tracked follows/unfollows, likes, enga
 - **`douban`** (high) — Use when you have a `name`/`username` of a likely Chinese subject and want their books/film/music and interest-group activity — returns a `s

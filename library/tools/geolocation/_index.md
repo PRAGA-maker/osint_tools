@@ -55,7 +55,7 @@ kind: group-index
 - **`colorbrewer`** (low) — Use when building a thematic/choropleth map and you need a perceptually sound, colorblind-safe color palette — it outputs ready-to-use color
 - **`copernix`** (medium) — Worldwide map of geolocated Wikipedia articles. It's possible to enter the name of a locality to see articles about local streets or attract
 - **`corona`** (low) — Use when you need declassified 1960s–70s CORONA spy-satellite imagery of a location for historical landscape analysis — returns georeference
-- **`crimemapping-com`** (medium) — pick a state, a police agency, and what crimes and where were committed in the territory under its control in the last 24 hours, a week, or 
+- **`crimemapping-com`** (medium) — Use when you have a `geolocation`/address and want recent reported crime around it — an interactive map of incidents from participating US l
 - **`crisisgroup`** (medium) — OSINT tool: Crisisgroup.
 - **`crowdmap`** (low) — Use when you want to aggregate and map crowdsourced incident/sighting reports — but note Crowdmap (Ushahidi's hosted platform) has been disc
 - **`ctlrq-address-lookup`** (high) — Use when you need to convert between a map pin/coordinates and a street address — drop a pin to get the address, or enter an address to get 

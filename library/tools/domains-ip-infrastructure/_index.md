@@ -176,7 +176,6 @@ kind: group-index
 - **`easy-dns-canada`** (medium) — Service provider for registering websites and domain addresses
 - **`ekhwan-uae`** (medium) — UAE based service provider for registering websites and domain addresses
 - **`elisa-net-finland`** (medium) — Finnish telecommunications and digital services website
-- **`enom-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`ericom-page-risk-analysis`** (low) — Get a detailed report with links to CSS, Javascript, Fonts, XHR, Images and domains web pages
 - **`etda`** (low) — OSINT tool: ETDA.
 - **`eurodns`** (low) — Free whois data search service for long lists of domains (250 can be searched at a time, total number unlimited). The results show the statu
@@ -425,7 +424,7 @@ kind: group-index
 - **`scrappy`** (low) — One of the easiest to learn web scrapers I've seen (and quite fast at that). It allows you to extract all URLs, table fields, lists and any 
 - **`search-arin-net`** (medium) — Use when you have an `ip-address` or network in the Americas and want its official registration — returns the org, contacts, address, and ne
 - **`search-censys-io`** (medium) — OSINT tool: search.censys.io.
-- **`search-dnslytics-com`** (medium) — OSINT tool: search.dnslytics.com.
+- **`search-dnslytics-com`** (medium) — Use when you have a `domain` or `ip-address` and want to find everything connected to it — reverse-IP neighbours, reverse-whois, shared AdSe
 - **`secmas-host-guatemala`** (medium) — Guatemala based service provider for registering websites and domain addresses
 - **`secretfinder`** (low) — Tool for find sensitive data (apikeys, accesstoken,jwt,..) or search anything with #regexp on #javascript files
 - **`secure-gateway-live-cyber-threat-map`** (low) — OSINT tool: Secure Gateway Live Cyber Threat Map.

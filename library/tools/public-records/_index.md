@@ -393,7 +393,7 @@ kind: group-index
 - **`glassdoor`** (medium) — OSINT tool: Glassdoor.
 - **`global-incorporation-guide-gig-a-bsi-lowtax-network-international-business-smart-tool`** (low) — OSINT tool: GLOBAL INCORPORATION GUIDE [GIG] - A BSI / LOWTAX NETWORK INTERNATIONAL BUSINESS SMART TOOL.
 - **`globaledge-database-of-international-business-statistics`** (low) — OSINT tool: globalEDGE Database of International Business Statistics.
-- **`globaledge`** (medium) — OSINT tool: globalEdge.
+- **`globaledge`** (low) — Use when you have an `employer-org`, industry or country in an investigation and want authoritative business/economic context — returns coun
 - **`gmc-uk-org`** (high) — Use when you have a doctor's `name` (or GMC number) and want to verify UK medical registration/licence — returns employer-org context, regis
 - **`gogettr`** (low) — OSINT tool: gogettr.
 - **`goldensnitches`** (low) — OSINT tool: Goldensnitches.
@@ -649,7 +649,7 @@ kind: group-index
 - **`national-archives-and-records`** (medium) — Use when you have a `name` or `employer-org` tied to US federal history and want archived government records — returns document records (`do
 - **`national-business-register-united-kingdom`** (medium) — National business register that allows for search using business or company name
 - **`national-center-for-state-courts-united-states`** (medium) — Legal-related search engine for legal court cases and documents
-- **`national-company-registers`** (medium) — OSINT tool: National Company Registers.
+- **`national-company-registers`** (medium) — Use when you have an `employer-org` (or a person's directorship) in a specific country and need the official corporate registry — a director
 - **`national-institute-on-drug-abuse`** (medium) — National Institute on Drug Abuse website offering publications with information regarding drug abuse trends and statistics
 - **`nationwide-business-directory-australia`** (medium) — Use when you have an `employer-org` or `name` linked to an Australian business and want directory details — returns `employer-org`, `address
 - **`nationwide-county-court-records-by-state-and`** (high) — Use when you have a `name` and want the right free county/state court-records portal to search — returns links to official court, criminal, 

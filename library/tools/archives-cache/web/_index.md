@@ -11,7 +11,7 @@ kind: group-index
 - **`archive-is`** (medium) — Use when you have a `domain`/URL and want a permanent, tamper-proof snapshot of a page — captures and retrieves frozen copies, including pag
 - **`cached-pages`** (medium) — Finding recent cached copies of pages that changed or disappeared
 - **`cached-view`** (medium) — Quick verification of whether a removed page still exists in cache
-- **`common-crawl`** (medium) — Large-scale historical web content mining and corpus analysis
+- **`common-crawl`** (medium) — Use when you have a `domain`/URL and want to mine web content at scale across billions of pages — a free petabyte-scale web corpus queryable
 - **`pdf-my-url`** (medium) — Generating quick PDF evidence captures of web pages
 - **`screenshots-com`** (medium) — Visual timeline checks of website appearance changes
 - **`textfiles-com`** (low) — Use when a `name`, `username` or `email` may appear in 1980s–90s BBS/hacker text-file culture — returns document-id and username leads from 
