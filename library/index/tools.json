@@ -60691,49 +60691,6 @@
     "_file": "library/tools/documents-metadata/rebelmouse.md"
   },
   {
-    "id": "recap",
-    "name": "RECAP",
-    "description": "OSINT tool: RECAP.",
-    "url": "http://archive.recapthelaw.org",
-    "category": "documents-metadata",
-    "path": [
-      "documents-metadata"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "metadata-exif",
-      "image"
-    ],
-    "selectorsOut": [
-      "metadata-exif",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "metadata",
-      "exif"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/documents-metadata/recap.md"
-  },
-  {
     "id": "recoverytoolbox",
     "name": "RecoveryToolBox",
     "description": "recovery tools for corrupted Excel, CorelDraw, Photoshop, PowerPoint, RAR, ZIP, PDF and other files",
@@ -86943,42 +86900,49 @@
   {
     "id": "reversewhois-io",
     "name": "reversewhois.io",
-    "description": "OSINT tool: reversewhois.io.",
-    "url": "https://www.reversewhois.io/?",
+    "description": "Use when you have a registrant `name` or `email` and want every domain registered with it — returns the list of `domain`s tied to that registrant.",
+    "url": "https://www.reversewhois.io/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse WHOIS — finding all domains owned by a person or company from their name or email.",
     "selectorsIn": [
-      "domain"
+      "name",
+      "email"
     ],
     "selectorsOut": [
       "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free reverse-WHOIS search in the browser; the free view shows a capped list of results, with fuller/exportable results behind a paid tier.",
+    "opsec": "passive",
+    "opsecNote": "Queries hit reversewhois.io's historical WHOIS index, not the domains or their owners — the subject is not alerted. Nothing you search is exposed to the registrant.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A third-party reverse-WHOIS service drawing on historical WHOIS records; useful but not authoritative — records predate GDPR redaction unevenly, so coverage is partial. Corroborate before attributing ownership.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "reverse whois io"
+    ],
     "tags": [
       "domainsandips",
-      "Domains & IPs"
+      "Domains & IPs",
+      "reverse-whois"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/reversewhois-io.md"
   },
   {
@@ -113855,44 +113819,52 @@
   },
   {
     "id": "ethtective-com",
-    "name": "ethtective.com",
-    "description": "OSINT tool: ethtective.com.",
+    "name": "Ethtective",
+    "description": "Use when you have an Ethereum `crypto-wallet` (or ENS name) and want to visualise its transactions and connected addresses — returns a link graph of counterparties and flows.",
     "url": "https://www.ethtective.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Visually exploring an Ethereum address's transaction graph and connected wallets, on top of Etherscan data.",
     "selectorsIn": [
       "crypto-wallet",
       "name"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "crypto-wallet",
+      "associate"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free visual explorer; core lookups need no account. Some advanced/analytics features may be gated, but the free tier is fully usable for graphing an address.",
+    "opsec": "passive",
+    "opsecNote": "You are reading the public Ethereum ledger via Ethtective's front end — nothing is written on-chain and the address owner is not notified. Reading is anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party visual explorer built on Etherscan data; the underlying chain data is authoritative, but wallet labels/heuristics are the tool's own — verify before attributing ownership.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ETHtective",
+      "ethtective visual explorer"
+    ],
     "tags": [
       "cryptosites",
-      "CryptoCurrency Related Sites"
+      "CryptoCurrency Related Sites",
+      "ethereum"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/ethtective-com.md"
   },
   {
@@ -117480,6 +117452,10 @@
     "source": "metaosint",
     "lastVerified": "2026-07-17",
     "enrichment": "full",
+    "relatedTools": [
+      "timeanddate",
+      "timeanddate-com"
+    ],
     "_file": "library/tools/geolocation/astronomy-sun-moon-eclipses.md"
   },
   {
@@ -216460,44 +216436,49 @@
   {
     "id": "whatsfoto",
     "name": "whatsfoto",
-    "description": "Download WhatsApp profile pictures.",
+    "description": "Use when you have one or more `phone` numbers and want their WhatsApp profile photos in bulk — returns downloaded profile `image`s (zipped).",
     "url": "https://github.com/zoutepopcorn/whatsfoto",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Retrieving a profile photo for a WhatsApp number",
+    "bestFor": "Bulk-downloading WhatsApp profile pictures for a list of phone numbers via a Chrome extension.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open source (MIT). No cost, but requires a logged-in WhatsApp Web session on your own WhatsApp account.",
+    "opsec": "active",
+    "opsecNote": "It drives YOUR logged-in web.whatsapp.com session to look up each number, so the checks are tied to your WhatsApp account and phone. Numbers you query may end up as contacts/known to WhatsApp. Use a dedicated sock-puppet WhatsApp account and number, never your real one, and remember that querying can be visible in your account's activity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "browser-extension",
+    "trust": "community",
+    "trustNote": "Small open-source (MIT) Chrome extension by zoutepopcorn; inspect the source before loading it, since it runs inside your authenticated WhatsApp session.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "whats foto"
+    ],
     "tags": [
       "whatsapp",
       "profile-photo"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/phone/whatsfoto.md"
   },
   {
@@ -218363,35 +218344,52 @@
   {
     "id": "allpeople",
     "name": "AllPeople",
-    "description": "OSINT tool: AllPeople.",
+    "description": "Use when you have a `name` or `employer-org` and want US business-contact details — returns work `email`, `phone`, title and company `address`.",
     "url": "https://allpeople.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a US business professional's company, title, work email and phone from a name or company.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "email",
+      "phone",
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free directory of US business contacts; browsing and basic contact details are free. Some fields/lead-export features are gated behind sign-up or paid tiers.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are querying an aggregated public business directory, not the subject; nobody is alerted. Contact details are B2B-oriented — treat them as professional, not necessarily personal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A large aggregated B2B contact directory; data is scraped/compiled from many sources and can be stale or mismatched — verify a hit before acting on it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "AllPeople.com"
+    ],
+    "tags": [
+      "people-search",
+      "business-directory",
+      "b2b"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/allpeople.md"
   },
   {
@@ -237818,48 +237816,6 @@
     "lastVerified": "2026-07-14",
     "enrichment": "full",
     "_file": "library/tools/public-records/grave-info-us.md"
-  },
-  {
-    "id": "graveinfo",
-    "name": "GraveInfo",
-    "description": "GPS cemetery mapping",
-    "url": "https://billiongraves.com/",
-    "category": "public-records",
-    "path": [
-      "public-records",
-      "death-records"
-    ],
-    "bestFor": "GPS cemetery mapping",
-    "input": "Name, cemetery, location",
-    "output": "Grave location, coordinates, photos",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Crowdsourced cemetery photographs",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "billiongraves-com"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/death-records/graveinfo.md"
   },
   {
     "id": "greataupair-com",
@@ -302710,7 +302666,7 @@
     "bestInteractionPattern": "mobile-app",
     "trust": "trusted",
     "trustNote": "Owned and operated by Apple; the audio-fingerprint match is authoritative for identifying commercially released music.",
-    "missingPersonsRelevance": "low",
+    "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
@@ -325203,40 +325159,38 @@
   {
     "id": "inflact",
     "name": "Inflact",
-    "description": "Another online tool that allows you to watch Instagram, without logging in: - search users by nickname; - view last posts; - analyze profile;",
+    "description": "Use when you have an Instagram `username` and want to view/analyse the profile without logging in — returns recent posts, profile stats and downloadable media.",
     "url": "https://inflact.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Anonymously viewing an Instagram profile's recent posts and stats, and downloading its media, without your own account.",
     "selectorsIn": [
       "username"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free anonymous profile/post viewing and single-media downloads; heavier use, bulk downloads and analytics features push a paywall/sign-up.",
+    "opsec": "passive",
+    "opsecNote": "Inflact fetches the public Instagram profile on your behalf, so your own IP/account never touches Instagram — good for anonymous viewing. But you are trusting a third-party marketing service with the query; use a clean browser and don't log in to it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial Instagram-marketing site offering free viewer/downloader front ends; it scrapes public data, is ad/upsell-heavy, and may throttle or gate results without notice.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Instagram"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "inflact-com",
       "inflact-com-2",
@@ -325248,6 +325202,17 @@
       "inflact-instagram-viewer-anonymous",
       "inflact-profile-analyzer"
     ],
+    "aliases": [
+      "Inflact Instagram viewer",
+      "Ingramer"
+    ],
+    "tags": [
+      "Social Media",
+      "Instagram"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inflact.md"
   },
   {
@@ -342397,38 +342362,47 @@
   {
     "id": "subreddit-stats-user-overlap",
     "name": "Subreddit Stats User-Overlap",
-    "description": "A tool to find similar subreddits. The higher the score of a subreddit in the list, the higher the probability that users of the original subreddit (in our case r/osint) are active in it too.",
+    "description": "Use when you have a subreddit a subject frequents and want the communities its users also inhabit — returns ranked overlapping subreddits to widen where you look for them.",
     "url": "https://subredditstats.com/subreddit-user-overlaps/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding which other subreddits overlap in membership with a given subreddit, to map a subject's likely community footprint.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free to use. The maintainer has warned it may shut down due to Reddit's API pricing changes, so treat availability as at-risk.",
+    "opsec": "passive",
+    "opsecNote": "You query aggregate community statistics, not any individual account, so nobody is alerted. It reveals nothing about a specific user — only where a community's members tend to cluster.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A hobbyist stats site computing overlap from sampled Reddit activity; the scores are heuristic and depend on Reddit API access that may lapse. Directional, not precise.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "subredditstats user overlap"
+    ],
     "tags": [
       "Social Media",
       "Reddit"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/subreddit-stats-user-overlap.md"
   },
   {

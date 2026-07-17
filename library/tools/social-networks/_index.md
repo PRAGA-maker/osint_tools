@@ -292,7 +292,7 @@ kind: group-index
 - **`inflact-com`** (high) — Use when you have an Instagram `username` and want the full-size profile picture (avatar) without logging in — returns the high-resolution `
 - **`inflact-instagram-search`** (medium) — Use when you have a partial `name`/`username`, keyword, or location and want to discover Instagram profiles matching it — returns candidate 
 - **`inflact-profile-analyzer`** (medium) — Use when you have an Instagram `username` and want a quick analytics profile — posting cadence, active hours, top hashtags/words, and top po
-- **`inflact`** (medium) — Another online tool that allows you to watch Instagram, without logging in: - search users by nickname; - view last posts; - analyze profile
+- **`inflact`** (medium) — Use when you have an Instagram `username` and want to view/analyse the profile without logging in — returns recent posts, profile stats and 
 - **`initstring-linkedin2username`** (high) — Use when you have an `employer-org` (company LinkedIn page) and want a generated list of likely employee usernames/emails and real names — r
 - **`inleo-io`** (high) — Use when you have a `username` or `name` and want to find and read someone's posts on the Hive-blockchain social network InLeo — returns the
 - **`ins-downloader-addons-mozilla-org`** (high) — Use when you are viewing an Instagram/Threads profile or post and want to download its photos/videos for offline analysis — a Firefox extens
@@ -610,7 +610,7 @@ kind: group-index
 - **`streamscharts-com`** (medium) — Use when you have a Twitch/Kick streamer `username` and want their stable numeric user ID plus channel analytics — returns the ID and public
 - **`streamweasels-com`** (high) — Use when you have a Twitch `username` and want its permanent numeric Twitch user/channel ID — returns the stable `device-id`-style ID that s
 - **`stweet`** (medium) — Opensource Python library for scraping tweets (by user, by hashtag, by keyword). NO LOGIN OR API KEY REQUIRED.
-- **`subreddit-stats-user-overlap`** (medium) — A tool to find similar subreddits. The higher the score of a subreddit in the list, the higher the probability that users of the original su
+- **`subreddit-stats-user-overlap`** (medium) — Use when you have a subreddit a subject frequents and want the communities its users also inhabit — returns ranked overlapping subreddits to
 - **`sully-gnome`** (medium) — detailed analysis of #Twitch streamer stats
 - **`tagdef`** (low) — Use when you have a hashtag from a subject's posts and want to know what it means and who uses it — returns the crowd-sourced definition plu
 - **`tagged-com`** (medium) — Use when you have a `username` or `name` and think the subject uses the Tagged social/dating network — returns `social-profile`, `name`, pho

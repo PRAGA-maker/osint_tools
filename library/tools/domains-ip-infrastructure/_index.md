@@ -413,7 +413,7 @@ kind: group-index
 - **`reverse-google-analytics`** (low) — OSINT tool: Reverse Google Analytics.
 - **`reverse-ip-lookup`** (low) — OSINT tool: Reverse IP Lookup.
 - **`reverse-mx-record`** (low) — OSINT tool: Reverse MX Record.
-- **`reversewhois-io`** (medium) — OSINT tool: reversewhois.io.
+- **`reversewhois-io`** (medium) — Use when you have a registrant `name` or `email` and want every domain registered with it — returns the list of `domain`s tied to that regis
 - **`rextract`** (low) — This extreme simple tool extracts the strings corresponding to a certain #regex from the html code of the list of URLs.
 - **`ripe`** (medium) — Use when you have an `ip-address` or netblock in Europe/Middle East/Central Asia and want its registered holder — returns the organisation, 
 - **`robottester`** (low) — Simple Python script can enumerate all URLs present in robots.txt files, and test whether they can be accessed or not.

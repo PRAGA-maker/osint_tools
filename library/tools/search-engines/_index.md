@@ -725,7 +725,7 @@ kind: group-index
 - **`shadowserver`** (low) — Use when you have an `ip-address`, ASN, or country and want threat-exposure context — returns aggregate stats on scanned, compromised, and v
 - **`sharedigger`** (low) — search files in popular file hosting services
 - **`sharkscope`** (medium) — Poker player search and stats
-- **`shazam`** (low) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con
+- **`shazam`** (medium) — Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/con
 - **`shopperapproved`** (medium) — Website related to consumer product reviews
 - **`shopzilla`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`short-url-search-engine`** (medium) — OSINT tool: Short URL Search Engine.

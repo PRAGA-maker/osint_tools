@@ -210,7 +210,6 @@ kind: group-index
 - **`pymeta`** (low) — A tool that searches (using Google, Bing etc.) for documents in the domain, analyses their metadata and generate a report in CSV format.
 - **`quackr-io`** (medium) — Use when you need a disposable phone number for SMS verification (sock-puppet creation) — or to check whether a phone number a subject used 
 - **`rebelmouse`** (low) — Creative agency and website publishing platform
-- **`recap`** (medium) — OSINT tool: RECAP.
 - **`recoverytoolbox`** (low) — recovery tools for corrupted Excel, CorelDraw, Photoshop, PowerPoint, RAR, ZIP, PDF and other files
 - **`reposearch`** (low) — OSINT tool: Reposearch.
 - **`restaurant-and-catering-industry-website-australia`** (low) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry

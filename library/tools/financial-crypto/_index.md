@@ -69,7 +69,7 @@ kind: group-index
 - **`ether-chain`** (low) — OSINT tool: Ether Chain.
 - **`etherscan-io`** (medium) — OSINT tool: etherscan.io.
 - **`ethplorer-io`** (medium) — OSINT tool: ethplorer.io.
-- **`ethtective-com`** (medium) — OSINT tool: ethtective.com.
+- **`ethtective-com`** (medium) — Use when you have an Ethereum `crypto-wallet` (or ENS name) and want to visualise its transactions and connected addresses — returns a link 
 - **`eu-consolidated-corporate-registers`** (low) — Consolidated company registers covering most of the EU, Iceland, Liechtenstein and Norway.
 - **`eu-sanctions-map`** (low) — Database of sanctions imposed by the European Union and the United Nations
 - **`europa-eu`** (medium) — OSINT tool: europa.eu.

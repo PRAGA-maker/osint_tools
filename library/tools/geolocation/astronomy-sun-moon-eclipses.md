@@ -36,6 +36,9 @@ tags:
 source: metaosint
 lastVerified: '2026-07-17'
 enrichment: full
+relatedTools:
+- timeanddate
+- timeanddate-com
 ---
 
 # Astronomy - Sun - Moon - Eclipses (timeanddate)

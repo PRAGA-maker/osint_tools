@@ -19,7 +19,7 @@ humanInLoopReason: []
 bestInteractionPattern: mobile-app
 trust: trusted
 trustNote: Owned and operated by Apple; the audio-fingerprint match is authoritative for identifying commercially released music.
-missingPersonsRelevance: low
+missingPersonsRelevance: medium
 coverage:
 - global
 auth: none
@@ -77,7 +77,7 @@ A video or recording tied to your investigation has music playing and you want t
 | selectorsIn → selectorsOut |  →  |
 | pricing / cost | free |
 | trust | trusted |
-| MP relevance | low |
+| MP relevance | medium |
 | interaction | mobile-app |
 | opsec | passive |
 | human-in-loop | no |
