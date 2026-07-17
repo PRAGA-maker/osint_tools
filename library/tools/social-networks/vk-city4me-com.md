@@ -30,7 +30,8 @@ auth: account
 api: false
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- vk5
 aliases:
 - city4me
 - vk.city4me.com

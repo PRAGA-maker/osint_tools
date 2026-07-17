@@ -204,7 +204,7 @@ kind: group-index
 - **`ukraine-liveuamap-com`** (low) — online tracking of war-related events in Ukraine.
 - **`understanding-war-map-room`** (low) — collection of maps illustrating military conflicts in different countries.
 - **`us-military-bases-interactive-worldwide-map`** (low) — Use the map to find out the number of people at the base, the approximate area, the opening date, and to get links to articles with more inf
-- **`uscg-maritime-search-investigation-reports-united-states`** (medium) — Maritime-related website that offers a search of a US database of naval vessel types
+- **`uscg-maritime-search-investigation-reports-united-states`** (medium) — Use when you have a vessel `name`, `employer-org` or keyword and want US Coast Guard marine-casualty investigation reports — returns documen
 - **`uscg-psix-vessel-search-united-states`** (medium) — Use when you have a US vessel `name`, official number, HIN, or call sign and want the documented vessel and its owner — returns name, addres
 - **`vehicle-documents`** (medium) — OSINT tool: Vehicle Documents.
 - **`vehicle-enquiry`** (medium) — OSINT tool: Vehicle Enquiry.
@@ -216,7 +216,6 @@ kind: group-index
 - **`vin-decoder`** (medium) — Use when you have a `vin` and want the vehicle's factory specification and build details — returns make/model/year/engine and manufacturing 
 - **`vin-info`** (medium) — OSINT tool: Vin-Info.
 - **`vin-lookup`** (medium) — OSINT tool: VIN Lookup.
-- **`vin-place-vehicle-registration-reports`** (medium) — OSINT tool: Vin Place (Vehicle Registration Reports).
 - **`vincheck-info`** (medium) — OSINT tool: VINCheck.info.
 - **`vincheck-nicb`** (medium) — Free VIN lookup for theft and salvage records.
 - **`vincheck`** (medium) — OSINT tool: VINCheck®.

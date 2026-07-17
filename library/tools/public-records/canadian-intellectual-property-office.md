@@ -32,6 +32,12 @@ localInstall: false
 registration: false
 relatedTools:
 - google-patent-search
+- canadian-business-research
+- canadian-department-of-finance
+- completed-access-to-information-requests
+- federal-corporation-search-canada
+- gov-data-canada
+- government-of-canada-open-data
 aliases:
 - CIPO
 - Canadian Patents Database

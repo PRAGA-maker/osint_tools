@@ -43,6 +43,7 @@ relatedTools:
 - completed-access-to-information-requests
 - gov-data-canada
 - government-of-canada-open-data
+- canadian-intellectual-property-office
 ---
 
 # Federal Corporation Search (Canada)

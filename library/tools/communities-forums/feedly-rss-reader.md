@@ -29,7 +29,8 @@ auth: account
 api: true
 localInstall: false
 registration: true
-relatedTools: []
+relatedTools:
+- feedly
 aliases:
 - Feedly
 - feedly.com

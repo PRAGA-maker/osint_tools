@@ -39,6 +39,7 @@ relatedTools:
 - federal-corporation-search-canada
 - gov-data-canada
 - government-of-canada-open-data
+- canadian-intellectual-property-office
 ---
 
 # Canadian Department of Finance

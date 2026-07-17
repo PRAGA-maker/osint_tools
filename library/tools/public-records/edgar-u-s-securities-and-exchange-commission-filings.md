@@ -31,7 +31,12 @@ auth: none
 api: true
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- edgar
+- sec-company-search
+- sec-gov
+- sec-gov-edgar
+- us-securities-and-exchange-commission
 aliases:
 - SEC EDGAR
 - EDGAR full-text search

@@ -30,7 +30,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- daum-south-korea
 aliases:
 - Daum
 - daum.net

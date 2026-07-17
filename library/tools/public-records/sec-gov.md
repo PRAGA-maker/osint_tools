@@ -48,6 +48,7 @@ relatedTools:
 - sec-company-search
 - sec-gov-edgar
 - us-securities-and-exchange-commission
+- edgar-u-s-securities-and-exchange-commission-filings
 ---
 
 # sec.gov (EDGAR)

@@ -114,7 +114,7 @@ kind: group-index
 - **`search-our-ppp-loan-database`** (low) — OSINT tool: Search Our PPP Loan Database.
 - **`secjuice-com`** (medium) — OSINT tool: secjuice.com.
 - **`sortcodes-co-uk`** (medium) — OSINT tool: sortcodes.co.uk.
-- **`start-me`** (medium) — OSINT tool: start.me.
+- **`start-me`** (medium) — Use when you have a `crypto-wallet` or a crypto-investigation goal and want a curated directory of blockchain/crypto OSINT tools — returns p
 - **`thenextweb-com`** (medium) — OSINT tool: thenextweb.com.
 - **`tmx-tsx`** (low) — OSINT tool: TMX TSX.
 - **`tmx`** (low) — OSINT tool: TMX.

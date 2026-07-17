@@ -74,7 +74,7 @@ kind: group-index
 - **`archives`** (high) — Use when you have a `name` and want US death, obituary and vital records to confirm a death, approximate DOB and relatives — returns dob, na
 - **`argo-scholar`** (medium) — A tool for analysing connections between research articles
 - **`ariadne2-isti-cnr-it`** (low) — OSINT tool: Ariadne2.isti.cnr.it.
-- **`arivify`** (medium) — OSINT tool: Arivify.
+- **`arivify`** (medium) — Use when you have a `name` or `address` and want US property assessment/ownership records for it — returns owner name, address and property 
 - **`arizona-genealogy-birth-and-death-certificates`** (medium) — Searchable database of public Arizona birth and death certificates - birth records available from 1885 to 1937 and death records available f
 - **`arizona-inmate-datasearch`** (high) — Use when you have a `name` and want to check Arizona state prison custody — returns inmate records with ADC number, DOB, status and facility
 - **`arizona-le-database-abc15`** (medium) — OSINT tool: Arizona LE Database - ABC15.

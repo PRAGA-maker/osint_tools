@@ -31,6 +31,7 @@ localInstall: false
 registration: false
 relatedTools:
 - flightairmap
+- marinetraffic
 aliases:
 - Marine Traffic
 - marinetraffic.com

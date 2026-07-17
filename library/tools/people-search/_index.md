@@ -140,7 +140,6 @@ kind: group-index
 - **`kompass`** (high) — Use when you have a company `employer-org` or a business `name` and want firmographics and business contacts — returns company address, phon
 - **`land-registry-map-enquiry`** (high) — Use when you have a property `address` in England & Wales and want to identify its registered owner — returns the title number free, then th
 - **`land-registry-property-search`** (high) — Use when you have a UK `address` and want the legal owner — returns the registered proprietor's name and title details from the official lan
-- **`lead-ferret`** (medium) — OSINT tool: Lead Ferret.
 - **`leak-lookup`** (high) — Use when you have an `email`, `username`, or `domain` and want to find which data breaches exposed it and what associated credentials/fields
 - **`leakey`** (high) — Use when you have a leaked API key/token/credential (e.g. found in a breach or paste) and want to validate whether it is still live and whic
 - **`library-of-congress-ask-a-librarian`** (medium) — OSINT tool: Library of Congress: Ask a Librarian.

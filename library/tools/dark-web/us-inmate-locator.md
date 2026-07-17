@@ -29,7 +29,8 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- inmate-locator-us
 aliases:
 - The Inmate Locator
 - theinmatelocator.com

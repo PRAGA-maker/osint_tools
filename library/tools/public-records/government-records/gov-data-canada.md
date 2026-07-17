@@ -35,6 +35,7 @@ relatedTools:
 - completed-access-to-information-requests
 - federal-corporation-search-canada
 - government-of-canada-open-data
+- canadian-intellectual-property-office
 aliases: []
 tags: []
 source: arf-seed

@@ -40,6 +40,7 @@ relatedTools:
 - sec-gov
 - sec-gov-edgar
 - us-securities-and-exchange-commission
+- edgar-u-s-securities-and-exchange-commission-filings
 ---
 
 # EDGAR

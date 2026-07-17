@@ -467,7 +467,7 @@ kind: group-index
 - **`lendx`** (low) — OSINT tool: LENDX.
 - **`lexcraft-cornell-university-legal-wiki-canada`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
 - **`libgen-rs`** (medium) — OSINT tool: Libgen.rs.
-- **`libraries-io`** (medium) — Open search tool for source packages and frameworks.
+- **`libraries-io`** (medium) — Use when you have a developer `name`/`username` or a package/project name and want to find the source repo, maintainers and contact points —
 - **`library-genesis`** (low) — "search engine for articles and books, which allows free access to content that is otherwise paywalled or not digitized elsewhere" (c)
 - **`lilo`** (medium) — Charitable search engine that supports environmental initiatives each time a user searches.
 - **`limetorrents`** (medium) — Search engine for torrents posted by other persons that contain text, audio, video or other e-content, searchable by content description
@@ -726,7 +726,7 @@ kind: group-index
 - **`searx`** (medium) — OSINT tool: Searx.
 - **`searxng-baresearch-org`** (low) — Privacy metasearch aggregator (SearXNG instance).
 - **`searxng`** (low) — OSINT tool: SearXNG.
-- **`secret-search-engine-labs`** (medium) — Alternative search engine
+- **`secret-search-engine-labs`** (medium) — Use when you have a `name`, `username` or phrase and want results from small/independent sites that mainstream engines bury — returns social
 - **`seek-job-search-engine-new-zealand`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`sensebot`** (medium) — Provides a text summary for your search query instead of a collection of links to Web pages
 - **`seosly-com-2`** (high) — Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search opera

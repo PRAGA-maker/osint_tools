@@ -204,7 +204,7 @@ kind: group-index
 - **`mooncalc`** (high) — Use when an outdoor photo shows the moon and you need its azimuth/elevation/phase at a date+place to confirm or break a claimed time and loc
 - **`mozilla-location-service`** (low) — OSINT tool: Mozilla Location Service.
 - **`murph-live`** (low) — OSINT tool: @murph\_live.
-- **`native-land-ca`** (medium) — click on the point on the map and find out: - what nation this area used to belong to; - what language was once spoken there; - a historical
+- **`native-land-ca`** (medium) — Use when you have a `geolocation` and want the Indigenous nations, languages and treaties historically tied to that point — returns territor
 - **`natural-hazards-map-worldwide`** (medium) — Enter location and assess the risk of flooding, earthquakes and hail in this place on the map.
 - **`naver-korean`** (high) — Use when a location is in South Korea and you need accurate maps, street view (Roadview), POIs, and addresses that Google Maps covers poorly
 - **`ncei-noaa-gov`** (medium) — Natural Hazards Viewer (worldwide)
@@ -279,7 +279,7 @@ kind: group-index
 - **`smappen`** (medium) — Online tool to calculate the distance a person can travel from a given point in a given time (on foot, by car, by bicycle, by train, by truc
 - **`soar`** (medium) — Use when you want to browse a community digital atlas of maps and imagery layers for an area, beyond standard basemaps.
 - **`sondehub`** (medium) — Worldwide map of radiosondes with detailed info (altitude, coordinates, frequency, manufacturer, sonde-type and much more)
-- **`spot`** (medium) — A natural language interface for querying the OpenStreetMap database to find locations which meet the search criteria described by the user.
+- **`spot`** (medium) — Use when you have a `geolocation` region plus a described scene and want candidate coordinates matching that description in OpenStreetMap — 
 - **`storymaps`** (medium) — Use when you need to build a narrative, map-driven report combining locations, imagery and text for presentation.
 - **`street-art-cities`** (medium) — Worldwide street artworks online map: 1,443 cities and counting, 51,510 artworks, 100 countries and 260 verified artists
 - **`sun-rise-noon-and-set-time-and-direction`** (medium) — OSINT tool: Sun rise, noon, and set time and direction..

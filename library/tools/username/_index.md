@@ -22,7 +22,7 @@ kind: group-index
 - **`check-usernames`** (high) — Use when you have a `username` and want to see which social networks it is registered on — returns a taken/available grid across ~150+ platf
 - **`commit-stream`** (high) — Use when you have a GitHub `username` or org and want the real name and email behind commits — returns committer names and emails harvested 
 - **`cupidcr4wl`** (high) — Use when you have a `username` or `phone` and want to check whether the subject appears on dating, hookup, fetish, cam, and adult platforms 
-- **`deleteme-digital-footprint-analyzer`** (medium) — Find and analyze your digital footprint; Sherlock-inspired, privacy-focused.
+- **`deleteme-digital-footprint-analyzer`** (medium) — Use when you have a `username` and want to enumerate matching accounts across many sites — returns social-profile hits plus GDPR deletion te
 - **`digital-footprint-check`** (high) — Use when you have a `username` (or `email`) and want to see which of 500+ platforms it exists on — returns direct `social-profile` links whe
 - **`ebay-co-uk`** (high) — Use when you have an `email` or `username` and want to confirm whether it is tied to a live eBay account — returns account existence plus ma
 - **`findme-0xsaikat`** (high) — Use when you have a `username` and want to enumerate matching accounts across the web — returns social-profile links on 400+ platforms for a

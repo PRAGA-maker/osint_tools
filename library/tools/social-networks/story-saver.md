@@ -29,7 +29,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- storysaver
+- storysaver-net
 aliases:
 - storysaver.net
 - Instagram story downloader

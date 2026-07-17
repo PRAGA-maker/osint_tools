@@ -44,7 +44,7 @@ kind: group-index
 - **`authentic8-com-2`** (high) — Use when a subject may be on Mastodon/the Fediverse and you need to understand instances and federation before searching — returns platform 
 - **`authentic8-com`** (high) — Use when you're investigating an Instagram account (`username`/`name`) and want a structured methodology — profile, network, content and met
 - **`auto-scroll-search`** (medium) — automatically scrolls the page down (and loads the ribbon) until the specified keyword appears on it.
-- **`backtweets`** (medium) — OSINT tool: Backtweets.
+- **`backtweets`** (medium) — Use when you have a `domain`/URL or `username` and want archived tweets that linked back to it — returns social-profile handles and tweet re
 - **`barkov-net`** (high) — Use when you have a VKontakte/OK/Telegram community, user list or profile criteria and want to enumerate and filter users — returns `social-
 - **`bayt-com`** (high) — Use when you have a `name`/`username` of a Middle East / Gulf professional and want their CV-style profile and work history — returns a `soc
 - **`bearpanther-com`** (high) — Use when you have a `geolocation` (a point or area on a map) and want to surface public Instagram posts tagged there — returns social-profil
@@ -455,7 +455,7 @@ kind: group-index
 - **`predicta-search`** (high) — Use when you have an `email`, `phone`, `username`, or `name` and want a correlated digital-footprint report of linked accounts across many p
 - **`profile-summary-for-github`** (medium) — Get detailed stats by Github username
 - **`projects-noahliebman-net-listcopy`** (medium) — copy a list made by another user to your Twitter account
-- **`prot1ntelligence`** (medium) — Validate ProtonMail email address, Gather info about ProtonMail user email or PGP Key, Search on the dark web target digital footprints, Che
+- **`prot1ntelligence`** (medium) — Use when you have a ProtonMail/Proton `email` or custom domain and want to confirm it uses Proton and read its PGP-key metadata — returns do
 - **`proxycurl`** (high) — Use when you have a `name`/`social-profile` and want enriched professional data (employer, role, contact) via API — but note the service has
 - **`psnprofiles`** (high) — Use when you have a PlayStation Network `username` and want a public gaming profile — returns trophy/games activity, country, avatar `image`
 - **`publer-io-2`** (medium) — Use when you have a Threads (Meta) post or profile and want to download its full-resolution photos/media for evidence or analysis — returns 
@@ -578,7 +578,7 @@ kind: group-index
 - **`social-profiles-finder`** (high) — Use when you have a `name` or `username` and want to surface a person's public social profiles across major networks in one place — returns 
 - **`social-rank-first-follower`** (medium) — OSINT tool: Social Rank First Follower.
 - **`social-search-engine`** (high) — Use when you have a `name` or `username` and want to sweep several social networks at once from one box — returns social-profile links.
-- **`social-stats`** (medium) — OSINT tool: Social Stats.
+- **`social-stats`** (medium) — Use when you have a VK community/user `username` or `name` and want engagement and activity statistics for that VKontakte page — returns soc
 - **`social-trends`** (low) — OSINT tool: Social Trends.
 - **`socialbearing`** (high) — Use when you have an X/Twitter `username` and want analytics on their tweets — timeline stats, top tweets, engagement, and posting patterns 
 - **`socialblade`** (high) — Use when you have a social `username`/channel and want public statistics — follower history, estimated account age, rank, and linked handles
@@ -757,7 +757,6 @@ kind: group-index
 - **`twstalker-com`** (high) — Use when you have a Twitter/X `username` and want to view its public profile and tweets without logging in — returns the public profile, twe
 - **`twtdata-download-twitter-data`** (low) — Download Twitter follower/following data in CSV format.
 - **`twxplorer`** (medium) — OSINT tool: twXplorer.
-- **`udemy-video-playback-speed`** (medium) — A simple extension that changes the speed of playing video courses on #Udemy.
 - **`uk-pinterest-com`** (high) — Use when you have a `username` or `name` and want a subject's Pinterest boards/pins — returns a `social-profile` whose boards leak interests
 - **`uncensor-cc`** (medium) — OSINT tool: Uncensor.cc.
 - **`unfollower-stats`** (medium) — iOS App that tracking unfollowers and show nofollowersback and unactive followers for your Twitter account

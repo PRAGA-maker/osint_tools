@@ -36,6 +36,7 @@ relatedTools:
 - completed-access-to-information-requests
 - federal-corporation-search-canada
 - gov-data-canada
+- canadian-intellectual-property-office
 ---
 
 # Government of Canada Open Data
