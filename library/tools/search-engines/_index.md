@@ -140,7 +140,7 @@ kind: group-index
 - **`canadian-department-of-finance`** (medium) — Canada's Department of Finance site with searchable database
 - **`canadian-law-list-lawyer-search-engine-canada`** (medium) — Legal-related search engine for locating legal representatives
 - **`careerbuilder-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
-- **`careerone-australia`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`careerone-australia`** (medium) — Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and
 - **`carrier-route`** (medium) — Lookup tool that provides a list of all carrier routes within a specified radius from a central location
 - **`carrot2-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`catawiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases

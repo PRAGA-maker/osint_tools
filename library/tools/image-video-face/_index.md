@@ -35,7 +35,7 @@ kind: group-index
 - **`app-channelcrawler-com`** (medium) — Use when you have a YouTube channel theme, language, country, or keyword and need to enumerate matching channels with creator contact/social
 - **`app-geoinfer-com`** (high) — Use when you have a photo with no GPS/EXIF and need an AI prediction of where it was taken (coordinates plus a confidence radius).
 - **`arcgis-com`** (medium) — Use when you have a place/area and want to plot geotagged public social media (Flickr, YouTube, Twitter, webcams) on a map to find imagery f
-- **`ascii2d-net`** (medium) — Japanese reverse image search engine for anime lovers expose image properties, EXIF data, and one-click download
+- **`ascii2d-net`** (medium) — Use when you have an `image` (especially artwork, avatars, or anime-style images) and want to find its source and higher-res copies — return
 - **`autostitch`** (low) — Autostitch is a free tool for seamlessly combining multiple photos into a single panoramic image, making it ideal for creating wide-angle ph
 - **`background-removal-tool`** (low) — Use when you need to cut the subject out of a busy photo so the face/clothing is isolated before reverse-image search or comparison.
 - **`baidu-image-search-2`** (high) — Use when you have an image or face and want matches indexed by China's dominant search engine — returns visually similar images and the Chin

@@ -271,14 +271,14 @@ kind: group-index
 - **`ip-chicken`** (medium) — Search tool that identifies the IP address you are currently using
 - **`ip-finger-prints`** (medium) — IP address geographical location finder
 - **`ip-geo-location-lookup`** (low) — OSINT tool: IP GEO Location Lookup.
-- **`ip-info-tools`** (medium) — Tooks including Privacy Check, IP Checker, Anonymous Email, and more
+- **`ip-info-tools`** (medium) — Use when you have an `ip-address` or `domain` and want a bundle of free network checks (geolocation, WHOIS, blacklist, email-header trace) —
 - **`ip-investigation-toolbox`** (low) — type ip-adress once and gather information about it with 13 tools
 - **`ip-location-io`** (low) — OSINT tool: IP Location.io.
 - **`ip-neighbors`** (low) — Find the hosting neighbors for a specific web site or hostname
 - **`ip-search-network-entity-reputation-database`** (low) — OSINT tool: IP search - Network Entity Reputation Database.
 - **`ip2geo-dev`** (low) — OSINT tool: ip2geo.dev.
 - **`ip2location-free-email-header-tracer`** (medium) — Process for identifying an IP address from an email header
-- **`ip2location-free-ip-location-search`** (medium) — Search tool that identifies the geolocation of an IP adddress on a map
+- **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
 - **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
 - **`ipaddress-tools`** (medium) — Tooks including IP Address Lookup, Reverse IP Lookup, Whois Lookup, Email Address Tracer and more
 - **`ipage-united-states`** (medium) — Service provider for registering websites and domain addresses

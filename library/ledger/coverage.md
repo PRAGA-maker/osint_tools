@@ -2,46 +2,46 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8369 total · 2819 full · 5550 stub (33% enriched)
+**Tools:** 8366 total · 2832 full · 5534 stub (33% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3273 · medium: 3152 · high: 1944
+low: 3273 · medium: 3149 · high: 1944
 
 ## Tools by trust
-unverified: 4231 · community: 3198 · trusted: 928 · personal: 6 · untrustworthy: 6
+unverified: 4221 · community: 3200 · trusted: 933 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 5/456
 - `archives-cache` — 17/143
-- `communities-forums` — 28/427
+- `communities-forums` — 30/427
 - `dark-web` — 5/121
 - `dating-classifieds` — 25/117
-- `documents-metadata` — 14/318
-- `domains-ip-infrastructure` — 26/771
+- `documents-metadata` — 15/318
+- `domains-ip-infrastructure` — 28/771
 - `email` — 241/246
 - `evidence-capture` — 2/33
-- `financial-crypto` — 13/133
+- `financial-crypto` — 14/133
 - `geolocation` — 176/355
-- `image-video-face` — 369/481
+- `image-video-face` — 370/481
 - `maps-geospatial-data` — 12/146
-- `messaging` — 137/199
+- `messaging` — 137/198
 - `opsec-investigator-tooling` — 14/566
-- `people-search` — 218/273
+- `people-search` — 218/272
 - `phone` — 131/137
-- `public-records` — 575/1133
-- `search-engines` — 124/978
+- `public-records` — 576/1132
+- `search-engines` — 127/978
 - `social-networks` — 554/883
 - `training-ctf` — 0/12
 - `translation-language` — 8/103
-- `transportation` — 30/233
+- `transportation` — 32/233
 - `username` — 95/105
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1067 leaves
+- `library/tools/public-records` — 1066 leaves
 - `library/tools/search-engines` — 909 leaves
 - `library/tools/social-networks` — 854 leaves
 - `library/tools/domains-ip-infrastructure` — 527 leaves
@@ -51,10 +51,10 @@ unverified: 4231 · community: 3198 · trusted: 928 · personal: 6 · untrustwor
 - `library/tools/image-video-face` — 384 leaves
 - `library/tools/geolocation` — 340 leaves
 - `library/tools/documents-metadata` — 265 leaves
-- `library/tools/people-search` — 263 leaves
+- `library/tools/people-search` — 262 leaves
 - `library/tools/email` — 222 leaves
 - `library/tools/transportation` — 214 leaves
-- `library/tools/messaging` — 184 leaves
+- `library/tools/messaging` — 183 leaves
 - `library/tools/maps-geospatial-data` — 146 leaves
 - `library/tools/phone` — 139 leaves
 - `library/tools/archives-cache` — 123 leaves

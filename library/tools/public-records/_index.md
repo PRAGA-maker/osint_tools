@@ -244,7 +244,6 @@ kind: group-index
 - **`czech-republic`** (medium) — Use when you have a `name` or `employer-org` linked to the Czech Republic and want registered companies, officers and addresses — returns `e
 - **`d-and-b-company-search`** (low) — OSINT tool: D&B Company Search.
 - **`darpan-ngo-search`** (medium) — OSINT tool: Darpan NGO Search.
-- **`data-com-connect`** (medium) — OSINT tool: Data.com Connect.
 - **`data-ddosecrets-search`** (low) — OSINT tool: Data \| DDoSecrets Search.
 - **`data-gov-uk`** (low) — OSINT tool: Data.gov.uk.
 - **`data-gov`** (low) — OSINT tool: Data.gov.
@@ -746,7 +745,7 @@ kind: group-index
 - **`opensanctions-org`** (low) — OSINT tool: Opensanctions.org.
 - **`opensupplyhub-org`** (high) — Use when you have a company/brand or factory `name`/`address` and want to map global production facilities and who sources from them — retur
 - **`optical-org`** (medium) — Use when you have a `name` and want to confirm a UK optician/optometrist's registration and practice — returns registrant status, registrati
-- **`oregon-dpsst-professional-standards-cases-database`** (medium) — OSINT tool: Oregon DPSST Professional Standards Cases Database.
+- **`oregon-dpsst-professional-standards-cases-database`** (medium) — Use when you have a `name` of an Oregon public-safety professional and want disciplinary/decertification records — returns document-backed `
 - **`oregon-offender-search`** (high) — Use when you have a `name` and want Oregon DOC custody/offender records — returns the offender's name, DOB, ID number, photo and status/loca
 - **`os-birth-records`** (high) — Use when you have a `name` and want a state-by-state directory of official birth/vital-record sources — returns links to `dob`, `name` and `
 - **`os-death-records`** (high) — Use when you have a `name` and want to reach the right US state/county death-record and obituary databases — returns links yielding `dob`, d

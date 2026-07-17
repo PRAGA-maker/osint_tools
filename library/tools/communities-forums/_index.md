@@ -64,7 +64,7 @@ kind: group-index
 - **`chemistry-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`christian-mingle`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`city-data-com`** (medium) — Use when you have a `username` or a place and want forum posts and member profiles tied to it — returns social-profile, username and local-k
-- **`citytv-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`citytv-television-canada`** (medium) — Use when you have a `name`, event, or place in a Canadian metro and want local TV-news coverage — returns news articles, `associate`/witness
 - **`cl1p`** (medium) — OSINT tool: cl1p.
 - **`cnet`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`cnn-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
@@ -293,7 +293,7 @@ kind: group-index
 - **`plentyoffish`** (medium) — Online dating profile site
 - **`plurk`** (medium) — Website related to social networking and micro-blogging
 - **`pokebattler-profiles`** (low) — Pokemon GO tools site with searchable user profiles. Referenced in sinwindie's PokemonGo bookmarklet tools.
-- **`police-community`** (medium) — OSINT tool: police.community.
+- **`police-community`** (medium) — Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and polici
 - **`polymeta-news`** (medium) — International news website
 - **`popsugar-australia`** (medium) — Website related to fashion trends, entertainment, beauty, and fitness
 - **`postach-io`** (medium) — Website related to social networking and blogging

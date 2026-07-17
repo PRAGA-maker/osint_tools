@@ -163,7 +163,7 @@ kind: group-index
 - **`poctra-com`** (medium) — Use when you have a `vin` or salvage-auction lot number and want a vehicle's past auction record — returns archived Copart/IAAI listing phot
 - **`ports-com`** (low) — online calculation of travel time between two ports (with optimal path). It's possible to select the speed from 5 to 40 knots. Shows a list 
 - **`ports`** (low) — OSINT tool: Ports.
-- **`radarbox`** (medium) — OSINT tool: RadarBox.
+- **`radarbox`** (medium) — Use when you have a flight number, aircraft registration, or callsign and want live/near-live position and history — returns `geolocation`, 
 - **`radarbox24-pro`** (low) — OSINT tool: radarbox24-pro.
 - **`railcabrides`** (low) — Click on a point on the railway on the world map (railways are marked in orange or red) to see a list of rail cab videos from that location.
 - **`rasp-yandex-ru-map-trains`** (low) — Live map of trains for Russia, Belarus, Ukraine, Kazahstan and Abhazia
@@ -189,7 +189,7 @@ kind: group-index
 - **`skyscanner-travel-search-engine`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, local events and entertainment,
 - **`skyscanner`** (medium) — OSINT tool: Skyscanner.
 - **`skyvector`** (low) — tool is designed for planning private flights. And you can find an incredible amount of data about the current situation in the sky on it
-- **`stolencars24`** (medium) — OSINT tool: Stolencars24.
+- **`stolencars24`** (medium) — Use when you have a vehicle `vin` (or plate) and want to check if it's reported stolen across European databases — returns theft status (no 
 - **`submarine-tracker`** (low) — OSINT tool: SUBMARINE TRACKER.
 - **`submarinecablemap-com`** (low) — submarine communications cables map
 - **`surfy`** (medium) — Travel-related search engine for locating vacation spots, destinations, flights, car rentals, accomodations, travel discounts, travel news, 

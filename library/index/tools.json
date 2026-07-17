@@ -25653,42 +25653,54 @@
   },
   {
     "id": "citytv-television-canada",
-    "name": "CityTV Television (Canada)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
-    "url": "http://www.citytv.com",
+    "name": "Citytv (Canada)",
+    "description": "Use when you have a `name`, event, or place in a Canadian metro and want local TV-news coverage — returns news articles, `associate`/witness names, and `geolocation` context.",
+    "url": "https://citytv.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching a major Canadian broadcaster's local news coverage for a person, incident, or location in its metro markets.",
+    "selectorsIn": [
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read news content online; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news site is passive and unobservable by any subject. Standard web tracking applies; a clean browser is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A major Canadian television broadcaster (Rogers Sports & Media); its news reporting is professionally edited and citable, though a secondary source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CityNews",
+      "Citytv Canada",
+      "citytv.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/citytv-television-canada.md"
   },
   {
@@ -35391,13 +35403,13 @@
   {
     "id": "police-community",
     "name": "police.community",
-    "description": "OSINT tool: police.community.",
+    "description": "Use when you have a `username` or topic tied to UK policing and want forum posts/profiles — returns `social-profile`, `username`, and policing-community context.",
     "url": "https://police.community/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a large UK policing discussion forum for member posts, handles, and community context around UK police recruitment, forces, and current issues.",
     "selectorsIn": [
       "username"
     ],
@@ -35405,29 +35417,38 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to read and register; VIP/Silver/Gold membership unlocks extra sections and downloads (optional, not needed for basic search).",
+    "opsec": "passive",
+    "opsecNote": "Reading public threads is passive; some sections are restricted to verified serving officers/staff. If you register, use a sock-puppet persona — never your real identity — and do not misrepresent yourself as a serving officer to access restricted areas.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large independent UK policing community forum; content is user-generated and includes both serving officers and members of the public, so treat posts as claims.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "police.community",
+      "UK Police Online"
+    ],
     "tags": [
       "forums",
       "Forums"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/police-community.md"
   },
   {
@@ -57454,14 +57475,14 @@
   },
   {
     "id": "irfanview",
-    "name": "Irfanview",
-    "description": "Windows-based software to extract metadata.",
-    "url": "http://irfanview.com/",
+    "name": "IrfanView",
+    "description": "Use when you have an `image` file and want to view/extract its EXIF metadata locally (including GPS) — returns `metadata-exif` and `geolocation`.",
+    "url": "https://www.irfanview.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Fast local image viewing and EXIF/IPTC metadata extraction — including embedded GPS coordinates — without uploading the file anywhere.",
     "selectorsIn": [
       "image",
       "metadata-exif"
@@ -57470,29 +57491,36 @@
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free for personal use (Windows); a small licence fee applies to commercial use. No account.",
+    "opsec": "passive",
+    "opsecNote": "Fully offline — metadata is read on your own machine, so nothing about the image or your interest reaches any subject or third party. This is the OpSec-safe way to inspect a sensitive image's EXIF (vs. uploading to a web tool).",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "A decades-old, widely-used Windows image viewer recommended in the Bellingcat toolkit; reliable and offline.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "IrfanView",
+      "irfanview.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "metadata"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/irfanview.md"
   },
   {
@@ -78281,31 +78309,32 @@
   },
   {
     "id": "ip-info-tools",
-    "name": "IP Info Tools",
-    "description": "Tooks including Privacy Check, IP Checker, Anonymous Email, and more",
-    "url": "http://ipinfo.info/index.php",
+    "name": "IP Info Tools (ipinfo.info)",
+    "description": "Use when you have an `ip-address` or `domain` and want a bundle of free network checks (geolocation, WHOIS, blacklist, email-header trace) — returns `geolocation`, `domain`, ISP leads.",
+    "url": "https://ipinfo.info/index.php",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A grab-bag of free IP/domain utilities in one place — IP location, WHOIS, reverse lookup, blacklist check, and email-header analysis.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "geolocation",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tools; no account. Ad-supported.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The utilities query databases about an IP/domain — they don't contact the target (except tools you explicitly point at a host). Reading WHOIS/geolocation is passive; avoid any \"ping\"/\"traceroute\" utility if you need to stay non-contacting.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An older ad-supported tools portal aggregating third-party data; convenient but not authoritative — verify anything important against a primary source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -78314,15 +78343,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ipinfo.info",
+      "IP Info Tools"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip-info-tools.md"
   },
   {
@@ -78779,30 +78812,31 @@
   {
     "id": "ip2location-free-ip-location-search",
     "name": "IP2Location Free IP Location Search",
-    "description": "Search tool that identifies the geolocation of an IP adddress on a map",
-    "url": "http://www.ip2location.com/free.asp",
+    "description": "Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/`employer-org`, and connection type.",
+    "url": "https://www.ip2location.com/free.asp",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Free geolocation of an IP address — country/region/city, ISP, and connection/proxy indicators from a well-known IP-intelligence vendor.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "ip-address",
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "geolocation",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web demo lookup (rate-limited); the full/commercial database and API are paid, but the free page answers single lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query IP2Location's database about an address — you do NOT contact the IP itself, so the target isn't alerted. Never ping/connect to the target IP directly if you want to stay passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "IP2Location is an established commercial IP-geolocation provider; its data is industry-standard for approximate IP location, accurate to city/ISP level, not to a person.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -78811,19 +78845,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ip2location-com",
+      "ip2location-free-email-header-tracer"
+    ],
+    "aliases": [
+      "IP2Location free lookup",
+      "ip2location.com/free"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ip2location-com",
-      "ip2location-free-email-header-tracer"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip2location-free-ip-location-search.md"
   },
   {
@@ -112132,41 +112169,47 @@
   {
     "id": "bitref",
     "name": "BitRef",
-    "description": "Bitcoin address balance lookup and transaction analysis",
+    "description": "Use when you have a Bitcoin `crypto-wallet` address and want its balance and transaction history — returns balance, tx history, and linked-address leads.",
     "url": "https://bitref.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "bitcoin"
     ],
-    "bestFor": "Bitcoin address balance lookup and transaction analysis",
-    "input": "Bitcoin address, transaction ID, or block hash",
-    "output": "Current balance, transaction history, block data, mempool status",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick Bitcoin address balance and transaction lookup, plus watch-address monitoring, from a clean web interface.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to look up any address, transaction, or block; no account needed. Optional paid/watch features exist but aren't required.",
     "opsec": "passive",
-    "opsecNote": "Public blockchain query via web interface; no account required for basic lookups.",
+    "opsecNote": "The blockchain is public; querying an address via BitRef reveals nothing to the wallet's owner. BitRef sees the address you look up and your IP — use a clean browser/VPN if you don't want the lookup linked to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-standing Bitcoin balance/explorer service; data is derived from the public blockchain and cross-checkable against any other explorer.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
+    "aliases": [
+      "BitRef",
+      "bitref.com"
+    ],
     "tags": [],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bitcoin/bitref.md"
   },
   {
@@ -134197,41 +134240,52 @@
   },
   {
     "id": "ascii2d-net",
-    "name": "Ascii2d.net",
-    "description": "Japanese reverse image search engine for anime lovers expose image properties, EXIF data, and one-click download",
-    "url": "http://ascii2d.net",
+    "name": "ascii2d.net",
+    "description": "Use when you have an `image` (especially artwork, avatars, or anime-style images) and want to find its source and higher-res copies — returns `social-profile`/`domain` source links and `metadata-exif`.",
+    "url": "https://ascii2d.net",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse image search that excels at illustrations, avatars, and anime/2D art, matching by both colour and feature (\"bag\") hashes to find the original posting.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to use; browser extensions for Chrome/Firefox/Edge. No account.",
+    "opsec": "passive",
+    "opsecNote": "You upload an image to a Japanese third-party service — the query hits ascii2d, not the image's owner, so it's passive toward the subject. Avoid uploading sensitive/case-identifying imagery to a public service; strip anything you don't want stored.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-known, long-running Japanese reverse-image service widely used in OSINT for art/avatar sourcing; results are matches to index, to be verified visually.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ascii2d",
+      "2D reverse image search"
+    ],
     "tags": [
       "Image Search and Identification",
       "Reverse Image Search Engines and automation tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/ascii2d-net.md"
   },
   {
@@ -166742,40 +166796,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/messaging/itp-infotrack.md"
-  },
-  {
-    "id": "ixgram",
-    "name": "Ixgram",
-    "description": "OSINT tool: Ixgram.",
-    "url": "https://www.telegramgroup1.com/",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/ixgram.md"
   },
   {
     "id": "jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization",
@@ -208689,51 +208709,6 @@
     "_file": "library/tools/people-search/trufflehog.md"
   },
   {
-    "id": "truthfinder",
-    "name": "TruthFinder",
-    "description": "Commercial background-report people-search; free search, paid reports.",
-    "url": "https://www.truthfinder.com/",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "Background/people search by name (paid reports; free search preview).",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "name",
-      "address",
-      "associate"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "us"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "people-search",
-      "background"
-    ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/truthfinder.md"
-  },
-  {
     "id": "ufind-name",
     "name": "uFind.name",
     "description": "Use when you have a `name` (or a `phone`/`email`) in the US and want a consolidated people-search profile — returns addresses, phone numbers, emails, relatives and social profiles.",
@@ -228122,42 +228097,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/darpan-ngo-search.md"
-  },
-  {
-    "id": "data-com-connect",
-    "name": "Data.com Connect",
-    "description": "OSINT tool: Data.com Connect.",
-    "url": "https://connect.data.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/data-com-connect.md"
   },
   {
     "id": "data-ddosecrets-search",
@@ -254009,36 +253948,48 @@
   },
   {
     "id": "oregon-dpsst-professional-standards-cases-database",
-    "name": "Oregon DPSST Professional Standards Cases Database",
-    "description": "OSINT tool: Oregon DPSST Professional Standards Cases Database.",
+    "name": "Oregon DPSST Professional Standards Cases",
+    "description": "Use when you have a `name` of an Oregon public-safety professional and want disciplinary/decertification records — returns document-backed `employer-org` and case history.",
     "url": "https://www.oregon.gov/dpsst/CJ/Pages/Cases.aspx",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking whether an Oregon police/corrections/parole/telecom public-safety professional has professional-standards (disciplinary or decertification) cases on record.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free government records; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public-records lookup on a state government site — passive, and unobservable by the individual named. These are published administrative records.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Oregon Department of Public Safety Standards and Training; case records are authoritative primary government documents.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Oregon DPSST cases",
+      "DPSST professional standards"
+    ],
     "tags": [],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/oregon-dpsst-professional-standards-cases-database.md"
   },
   {
@@ -274944,52 +274895,56 @@
   {
     "id": "bing",
     "name": "Bing",
-    "description": "Alternative to Google, regional results, academic content, supplementary searches",
+    "description": "Use when you have any `name`, `username`, `domain`, or keyword and want a second major search index with strong operators — returns web/image/news `social-profile` and `domain` leads.",
     "url": "https://www.bing.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "general-search"
     ],
-    "bestFor": "Alternative to Google, regional results, academic content, supplementary searches",
-    "input": "Keywords, search operators (site:, intitle:, filetype:, inurl:, AND, NOT, etc.)",
-    "output": "Ranked web pages, images, news, videos, answers",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A second general-purpose search index that ranks and surfaces results differently from Google, with useful operators and strong image/regional coverage.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web search. (Microsoft is retiring the paid Bing Search API in Aug 2026, but interactive web search is unaffected.)",
     "opsec": "passive",
-    "opsecNote": "Passive OSINT; Bing Search API is being retired by Microsoft on August 11, 2026; limited future API availability",
+    "opsecNote": "A web search is passive toward the subject, but Microsoft logs your queries and IP. Use a clean/sock-puppet browser and consider a VPN for sensitive queries; sign out of any Microsoft account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party Microsoft search engine — a primary, independent web index; results are authoritative as search hits, to be confirmed on the source page.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "bing-creations",
       "bing-images",
       "bing-ip-search",
       "bing-maps",
-      "bing-microsoft-translator",
       "bing-news",
-      "bing-translate",
-      "bing-videos",
-      "bing-webmaster-tools",
-      "see-it-search-it"
+      "bing-videos"
     ],
-    "aliases": [],
+    "aliases": [
+      "Bing Search",
+      "Microsoft Bing"
+    ],
     "tags": [],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/general-search/bing.md"
   },
   {
@@ -276277,41 +276232,51 @@
   {
     "id": "careerone-australia",
     "name": "CareerOne (Australia)",
-    "description": "Website that offers job search services across the country at the national and province/state level",
-    "url": "http://www.careerone.com.au",
+    "description": "Use when you have a `name`, `employer-org`, or skill set and want Australian job-market signals — returns `employer-org` hiring activity and company/role leads.",
+    "url": "https://www.careerone.com.au",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching an Australian job board for employers, roles, and hiring activity that can place a person in an industry/location or profile a company.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse job listings and company info; account only needed to apply/upload a résumé.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing job listings is passive and unobservable by any subject. Do not apply or message employers during covert research; use a persona if you register at all.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial Australian job board; listings are advertiser-supplied and time-limited, useful for current/recent hiring signals rather than a permanent record.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "careerone.com.au"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/careerone-australia.md"
   },
   {
@@ -287655,41 +287620,48 @@
   {
     "id": "inshorts",
     "name": "Inshorts",
-    "description": "OSINT tool: Inshorts.",
+    "description": "Use when you want quick 60-word summaries of (mainly Indian) news by category and want to spot/track a story — returns news items with source links; browse, not deep search.",
     "url": "https://inshorts.com/en/read",
     "category": "search-engines",
     "path": [
       "search-engines",
       "news-search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Skimming concise, categorised news summaries (India-focused) with links to full source articles, to spot or monitor breaking stories.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read on web and app; no account required to browse.",
+    "opsec": "passive",
+    "opsecNote": "Reading a public news aggregator is passive and unobservable by any subject. Standard web tracking applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An aggregator that summarises articles from 30+ partner outlets; summaries are secondary and condensed — always open the linked source before relying on a fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "in",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
+    "aliases": [
+      "Inshorts",
+      "inshorts.com"
+    ],
     "tags": [],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/news-search/inshorts.md"
   },
   {
@@ -365981,36 +365953,50 @@
   },
   {
     "id": "radarbox",
-    "name": "RadarBox",
-    "description": "OSINT tool: RadarBox.",
+    "name": "AirNav RadarBox",
+    "description": "Use when you have a flight number, aircraft registration, or callsign and want live/near-live position and history — returns `geolocation`, aircraft/operator, and route.",
     "url": "https://www.radarbox.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Live ADS-B flight tracking and flight/aircraft history — locating an aircraft or reconstructing where a given tail number has flown.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free live map and basic flight/aircraft search; historical playback and extended data are behind a paid subscription (Business plan).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying a flight-tracking site is passive — you observe public ADS-B broadcasts, not the aircraft or its occupants. No account needed for the live map.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A major commercial flight-tracking network (rebranded AirNav Radar) fed by crowdsourced ADS-B receivers; live positions are reliable, coverage depends on receiver density.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "RadarBox",
+      "AirNav Radar",
+      "airnavradar.com"
+    ],
     "tags": [],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/radarbox.md"
   },
   {
@@ -367089,43 +367075,47 @@
   {
     "id": "stolencars24",
     "name": "Stolencars24",
-    "description": "OSINT tool: Stolencars24.",
+    "description": "Use when you have a vehicle `vin` (or plate) and want to check if it's reported stolen across European databases — returns theft status (no owner data).",
     "url": "https://www.stolencars24.eu/en/main.php",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Free, anonymous check of whether a vehicle (by VIN/chassis number) is recorded as stolen in Stolencars24's own database and linked European police databases.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "vin",
+      "vehicle-plate"
     ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Query is free of charge and anonymous; no account required.",
+    "opsec": "passive",
+    "opsecNote": "Checking a VIN against a stolen-vehicle database is passive — you query a database, not any person or the current keeper. Nothing is revealed to a vehicle's owner or seller.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregates its own reports plus direct access to several European police databases (Lithuania, Slovenia, Slovakia, Czech Republic, Hungary, Romania); coverage is regional, so a clean result isn't a global all-clear.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Stolencars24",
+      "stolencars24.eu"
+    ],
     "tags": [
       "vehicle"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/stolencars24.md"
   },
   {

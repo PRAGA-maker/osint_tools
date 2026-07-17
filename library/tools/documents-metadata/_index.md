@@ -154,7 +154,7 @@ kind: group-index
 - **`instapaper`** (low) — Website related to a social networking and bookmarking app
 - **`intensedebate`** (low) — Website related to the provision of news feeds and comments from other websites
 - **`iphone-imei-checker`** (medium) — Use when you have an iPhone's IMEI/serial (`device-id`) and want its model, specs and iCloud/blacklist status — returns device metadata and 
-- **`irfanview`** (medium) — Windows-based software to extract metadata.
+- **`irfanview`** (medium) — Use when you have an `image` file and want to view/extract its EXIF metadata locally (including GPS) — returns `metadata-exif` and `geolocat
 - **`jeff-sagarin-north-america`** (low) — Website related to sports ratings
 - **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestam
 - **`joinme-screensharing-tool`** (low) — Website that provides screen sharing and online meetings

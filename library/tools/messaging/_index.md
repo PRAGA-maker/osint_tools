@@ -80,7 +80,6 @@ kind: group-index
 - **`instances-social`** (medium) — A tool for searching across full list of instances in #Mastodon. It can help you choose the right instance to register (matching your views 
 - **`intelligence-x-telegram-search`** (medium) — Google-based search engine for Telegram (includes Telegago)
 - **`itp-infotrack`** (high) — Use when you have a `name` (optionally a US `address` or `phone`) and want a free people-search preview — returns name, address, phone, age/
-- **`ixgram`** (medium) — OSINT tool: Ixgram.
 - **`jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization`** (medium) — OSINT tool: Jihadi Telegram Tutorial Channels: The Lone Wolf’s Lair - European Eye on Radicalization.
 - **`kalilinuxtutorials-com`** (high) — Use when you have a target's `phone`/WhatsApp `username` and want to monitor their online/offline pattern and pull profile metadata — return
 - **`kikusernames-com`** (medium) — Kik messenger username search

@@ -245,7 +245,6 @@ kind: group-index
 - **`trexpertwitness`** (medium) — OSINT tool: TRExpertWitness.
 - **`truepeoplesearch`** (high) — Use when you have a US `name`, `phone`, or `address` and want current/past addresses, phone numbers, and relatives — returns address, phone,
 - **`trufflehog`** (high) — Use when you have a subject's code presence (`username`/`domain` — GitHub org, repo, site) and want secrets and contact data leaked in commi
-- **`truthfinder`** (medium) — Commercial background-report people-search; free search, paid reports.
 - **`ufind-name`** (high) — Use when you have a `name` (or a `phone`/`email`) in the US and want a consolidated people-search profile — returns addresses, phone numbers
 - **`uk-guide-to-names-and-naming-practices`** (high) — Use when you have a `name` from an unfamiliar culture and need to parse it correctly (given vs family name, honorifics, variants) before sea
 - **`uk-phone-book`** (high) — Use when you have a `name` (+ UK area) or a landline `phone` and want a directory listing — returns address and phone, with reverse lookups 

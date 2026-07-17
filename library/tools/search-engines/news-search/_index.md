@@ -11,7 +11,7 @@ kind: group-index
 - **`flipboard`** (medium) — OSINT tool: Flipboard.
 - **`google-news-search`** (medium) — Use when you have a `name`, `employer-org`, or event and want news coverage across outlets and time — returns articles, dates, and named ass
 - **`hubii`** (medium) — OSINT tool: Hubii.
-- **`inshorts`** (medium) — OSINT tool: Inshorts.
+- **`inshorts`** (medium) — Use when you want quick 60-word summaries of (mainly Indian) news by category and want to spot/track a story — returns news items with sourc
 - **`newsbot`** (medium) — OSINT tool: NewsBot.
 - **`newsbrief`** (medium) — OSINT tool: NewsBrief.
 - **`newsnow-co-uk`** (medium) — Use when you have a `name`, `employer-org` or topic and want current news aggregated across many outlets — returns real-time headlines and a
