@@ -287,7 +287,7 @@ kind: group-index
 - **`tableau`** (medium) — Use when you have a spreadsheet of geocoded points (sightings, addresses, ping data) and need to plot and explore them on an interactive map
 - **`taste-atlas`** (medium) — Worldwide online map of national cuisine. There are thousands of dishes typical of countries or regions as a whole, as well as small towns.
 - **`terrafly-map-united-states`** (high) — Use when you have a `geolocation`/`address` and want aerial/satellite imagery plus overlaid local point-data for that spot — returns imagery
-- **`the-haunted-map`** (medium) — A map of haunted locations where ghost sightings have been reported around the world. Based by data from http://ghostresearchinternational.c
+- **`the-haunted-map`** (low) — Use when you have a `geolocation` and want to check whether it coincides with a catalogued "haunted"/reported-sighting location — a niche cr
 - **`the-meddin-bike-sharing-world-map`** (low) — Use when you have a `geolocation` and want to identify the bike-share system, operator, and station layout there — returns local bikeshare d
 - **`the-painted-planet`** (medium) — Click on a point on the map to get a list of landscapes by famous artists depicting the area.
 - **`the-webcam-network`** (low) — OSINT tool: The Webcam Network.

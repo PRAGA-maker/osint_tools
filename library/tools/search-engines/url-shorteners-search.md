@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - buckets-grayhatwarfare-com
 - grayhatwarfare
+- public-buckets
 aliases:
 - GrayHatWarfare shorteners
 - shorteners.grayhatwarfare.com

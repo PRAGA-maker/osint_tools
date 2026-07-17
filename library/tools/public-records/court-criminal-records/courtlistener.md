@@ -36,6 +36,8 @@ relatedTools:
 - courtlistener-recap
 - pacer
 - docket-alarm
+- free-law-recap-archive
+- recap-court-doc-repo
 aliases:
 - Free Law Project CourtListener
 - courtlistener.com

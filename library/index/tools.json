@@ -36076,41 +36076,50 @@
   {
     "id": "rebel-news",
     "name": "Rebel News",
-    "description": "A Canadian far-right political and social commentary media website",
+    "description": "Use when you have a `name` tied to Canadian right-wing politics/activism and want to search a partisan outlet's coverage for mentions, footage, or event context — returns `social-profile` / `name` corroboration.",
     "url": "https://www.rebelnews.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a subject's appearances, quotes, or event footage in Canadian right-wing/populist media coverage that mainstream outlets did not carry.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Articles and videos are free to read/watch; some content solicits donations or membership but is not hard-paywalled for viewing.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and searching the site is passive and reveals nothing to your subject. Treat the outlet's framing as partisan — verify any factual claim elsewhere before relying on it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A partisan Canadian media/activist outlet; useful only as a primary record of what it published (who appeared, when, where), not as a neutral factual source. Corroborate everything.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "RebelNews",
+      "Rebel Media"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "canada"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/rebel-news.md"
   },
   {
@@ -40646,26 +40655,35 @@
   },
   {
     "id": "wired-tech-news-and-trends",
-    "name": "Wired Tech News & Trends",
-    "description": "Monthly American magazine focusing on technology, business, and politics",
+    "name": "WIRED",
+    "description": "Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — returns `name` / `employer-org` corroboration and `social-profile` leads.",
     "url": "http://www.wired.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding a subject's presence in long-form tech/security journalism — as an interview subject, a quoted expert, or an author byline.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "A metered paywall — a limited number of articles are free per month; full access needs a subscription. Headlines, bylines, and article snippets are readable free and often enough to corroborate.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching and reading is passive; the subject is not alerted. Use a private/incognito window to sidestep the metered-paywall cookie counter for occasional free reads.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Established, edited technology-journalism publication (Condé Nast) with professional fact-checking; a reliable secondary source for what it reports.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -40673,15 +40691,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Wired",
+      "Wired Magazine"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "technology"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "relatedTools": [
       "wiredmagazine-electronic-device-reviews"
     ],
@@ -67690,94 +67711,56 @@
     "_file": "library/tools/domains-ip-infrastructure/s3-blob-storage/bucketloot.md"
   },
   {
-    "id": "built-with",
-    "name": "Built With",
-    "description": "Website search that identifies a websites mail service provider, advertising partners, tracking widgets, plugins and more",
-    "url": "http://builtwith.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "builtwith"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/built-with.md"
-  },
-  {
     "id": "builtwith",
     "name": "BuiltWith",
-    "description": "Website technology stack fingerprinting and ecosystem mapping",
+    "description": "Use when you have a `domain` and want to fingerprint the site's technology stack, trackers, and hosting/analytics IDs — returns pivotable `domain` links and infrastructure `ip-address` hints.",
     "url": "https://builtwith.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure",
       "discovery"
     ],
-    "bestFor": "Website technology stack fingerprinting and ecosystem mapping",
-    "input": "Domain or URL",
-    "output": "Detected technologies, hosting/CDN indicators, and related site intelligence",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fingerprinting a website's tech stack and, crucially, pivoting on shared analytics/ad tracking IDs to find other sites the same owner runs.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Core per-domain technology profile is free (no login). Historical data, \"Relationships\" pivots by shared tracking ID, and bulk lists sit behind paid plans; a limited free account unlocks some extras.",
     "opsec": "passive",
-    "opsecNote": "Returns platform-collected intelligence and does not require direct target probing by the user.",
+    "opsecNote": "BuiltWith serves data it already crawled — you never touch the target's server, so nothing is leaked to the site owner. Safe to run without a sock puppet. Do not log in with an attributable account if you want the lookup itself to stay anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established commercial technographics provider (20+ years) with a large, continuously updated crawl; detections are reliable, though absence of a technology is not proof it is unused.",
     "missingPersonsRelevance": "low",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "built-with"
+      "built-with",
+      "wappalyzer"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "BuiltWith Technology Lookup"
+    ],
+    "tags": [
+      "toddington",
+      "whois-ip-lookups-website-analysis",
+      "technology-profiling"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/discovery/builtwith.md"
   },
   {
@@ -74931,7 +74914,10 @@
     "relatedTools": [
       "whois",
       "icann-lookup",
-      "whoisxmlapi"
+      "whoisxmlapi",
+      "cyclect",
+      "godaddy",
+      "godaddy-whois-lookup"
     ],
     "aliases": [
       "GoDaddy WHOIS",
@@ -112591,7 +112577,9 @@
     "relatedTools": [
       "bitcoin-explorer",
       "blockchain-explorer",
-      "etherscan"
+      "etherscan",
+      "blockchair",
+      "zcash-block-explorer"
     ],
     "aliases": [
       "Blockchair",
@@ -130550,43 +130538,50 @@
   },
   {
     "id": "the-haunted-map",
-    "name": "The Haunted map",
-    "description": "A map of haunted locations where ghost sightings have been reported around the world. Based by data from http://ghostresearchinternational.com",
+    "name": "The Haunted Map",
+    "description": "Use when you have a `geolocation` and want to check whether it coincides with a catalogued \"haunted\"/reported-sighting location — a niche crowd map, not an investigative geolocation tool.",
     "url": "https://www.google.com/maps/d/viewer?mid=1PdxFMPxgBmXdjMsusb-O2k074ok&hl=en&ll=45.17177063794067%2C7.41628581553573&z=5",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Cross-referencing a coordinate/place against a global crowd-sourced index of reportedly haunted or anomalous locations.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "A free public Google My Maps layer; no account needed to view.",
+    "opsec": "passive",
+    "opsecNote": "Hosted on Google My Maps; viewing is passive and reveals nothing about your subject. Google logs the map view under your session only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A single-author crowd-sourced novelty map built on data from ghostresearchinternational.com; entries are anecdotal and unvetted. Not authoritative for any factual claim.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Haunted Map"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Anomalies and \"Lost Places\""
+      "maps-geolocation-and-transport",
+      "anomalies-lost-places",
+      "niche"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/the-haunted-map.md"
   },
   {
@@ -130881,7 +130876,8 @@
     "registration": false,
     "relatedTools": [
       "astronomy-sun-moon-eclipses",
-      "suncalc"
+      "suncalc",
+      "timeanddate"
     ],
     "aliases": [
       "timeanddate",
@@ -157024,7 +157020,8 @@
     "relatedTools": [
       "youtube-metadata-bulk",
       "youtube-dataviewer",
-      "search-youtube-by-location"
+      "search-youtube-by-location",
+      "location-search"
     ],
     "aliases": [
       "mattw youtube metadata",
@@ -226028,7 +226025,8 @@
     "registration": false,
     "relatedTools": [
       "connecticut-license-verification",
-      "voterrecords-com"
+      "voterrecords-com",
+      "state-of-connecticut-licensing"
     ],
     "aliases": [
       "CT voter lookup",
@@ -227149,7 +227147,9 @@
     "relatedTools": [
       "courtlistener-recap",
       "pacer",
-      "docket-alarm"
+      "docket-alarm",
+      "free-law-recap-archive",
+      "recap-court-doc-repo"
     ],
     "aliases": [
       "Free Law Project CourtListener",
@@ -232624,7 +232624,8 @@
     "registration": false,
     "relatedTools": [
       "federal-bureau-of-prisons-inmate-locator-us",
-      "the-inmate-locator"
+      "the-inmate-locator",
+      "sorted-by-birth-date"
     ],
     "aliases": [
       "BOP Inmate Locator",
@@ -280314,7 +280315,8 @@
     "relatedTools": [
       "duckduckgo-ai-chat",
       "bing",
-      "google"
+      "google",
+      "duckduckgo-com"
     ],
     "aliases": [
       "DDG",
@@ -287404,38 +287406,59 @@
   },
   {
     "id": "hunter-search-engine",
-    "name": "Hunter Search Engine",
-    "description": "OSINT tool: Hunter Search Engine.",
+    "name": "Hunter (hunter.how)",
+    "description": "Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — returns `ip-address`, `domain`, and infrastructure metadata.",
     "url": "https://hunter.how/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Fingerprint-based search of internet-connected hosts/IoT devices — find exposed services, banners, and certificates tied to a domain, IP, or product.",
+    "selectorsIn": [
+      "domain",
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free registered tier gives a monthly quota of web + API queries; higher volume, more filters, and data export require paid plans. An API key (free tier) is needed for programmatic use.",
+    "opsec": "active",
+    "opsecNote": "hunter.how serves results from its own internet-wide scans, so browsing results is passive. BUT the moment you connect to a discovered host/port yourself to verify it, that is active and hits the target's infrastructure — do that only from attributable-safe infrastructure and with authorization.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key",
+      "rate-limit"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trustNote": "A Shodan/Censys-class internet-asset search engine (operated by the Hunter.how team, distinct from the email tool Hunter.io); scan data is generally accurate but reflects last-scan time, not live state.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "shodan",
+      "censys"
+    ],
+    "aliases": [
+      "hunter.how",
+      "Hunter internet asset search"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "speciality-search-engines",
+      "attack-surface",
+      "iot-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/hunter-search-engine.md"
   },
   {
@@ -291165,26 +291188,31 @@
   },
   {
     "id": "lexcraft-cornell-university-legal-wiki-canada",
-    "name": "Lexcraft Cornell University Legal Wiki (Canada)",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on law",
+    "name": "LexCraft (Cornell LII Wiki)",
+    "description": "Use when you need to understand how a jurisdiction publishes its legal texts and citations — a reference wiki that documents legal-information publishing standards, not a person/records lookup.",
     "url": "https://www.law.cornell.edu/wiki/lexcraft",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Background reference on legal-citation formats, court URIs, and statute-numbering conventions when you are trying to locate or parse primary legal documents.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Fully free, public, no account. Maintained by Cornell Law School's Legal Information Institute.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Static reference wiki hosted by Cornell; reading it reveals nothing about your subject and touches no target. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Hosted by Cornell Law School's Legal Information Institute, a respected academic legal-information publisher; content is a curated best-practices notebook, deliberately sparse in places.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -291192,19 +291220,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "cornell-legal-information-institute-united-states",
+      "birdnet"
+    ],
+    "aliases": [
+      "LexCraft",
+      "Cornell LII wiki"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "legal-reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "birdnet",
-      "cornell-legal-information-institute-united-states"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/lexcraft-cornell-university-legal-wiki-canada.md"
   },
   {
@@ -302329,27 +302360,34 @@
     "_file": "library/tools/search-engines/search3.md"
   },
   {
-    "id": "searchall",
-    "name": "SearchAll",
-    "description": "Metasearch engine including major search engines and social media platforms including Google, Bing, Yahoo, DuckDuckGo, Facebook, and more.",
-    "url": "https://www.searchall.net/",
+    "id": "searchall-net",
+    "name": "searchall.net",
+    "description": "Use when you have a `name`, `username`, or `email` and want to fan one query across many search engines and platforms from a single page — returns a broad `social-profile` / mention spread to triage.",
+    "url": "https://searchall.net",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "One-box relay that pushes a single query out to dozens of search engines, social networks, marketplaces, and AI chatbots so you can quickly see which surfaces have hits.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use, no account required. Optional browser extensions and mobile apps are also free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "searchall.net itself is a launcher — it opens the underlying engine (Google, Bing, TikTok, etc.) in a new tab, so each downstream service sees your query and IP, not searchall. Use a sock-puppet browser/VPN as you would querying those engines directly. It does not notify the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A convenience meta-launcher, not a data source of its own; result quality is entirely that of the engine it hands off to. No independent index to vouch for.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -302357,58 +302395,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "meta-mega-search-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "searchall-net"
-    ],
-    "_file": "library/tools/search-engines/searchall.md"
-  },
-  {
-    "id": "searchall-net",
-    "name": "searchall.net",
-    "description": "75 fields for quick entry of queries to different search services on one page",
-    "url": "https://searchall.net",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Search engines",
-      "Universal search tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "searchall"
     ],
+    "aliases": [
+      "SearchAll",
+      "SearchAll metasearch"
+    ],
+    "tags": [
+      "meta-mega-search-tools",
+      "universal-search-tools"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/searchall-net.md"
   },
   {
@@ -306869,7 +306869,8 @@
     "registration": false,
     "relatedTools": [
       "buckets-grayhatwarfare-com",
-      "grayhatwarfare"
+      "grayhatwarfare",
+      "public-buckets"
     ],
     "aliases": [
       "GrayHatWarfare shorteners",
@@ -308541,26 +308542,32 @@
   },
   {
     "id": "wiki-search-engine",
-    "name": "Wiki Search Engine",
-    "description": "Website that provides a search engine that searches wiki-type websites",
+    "name": "Wiki.com",
+    "description": "Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile` / biographical mentions buried in community wikis.",
     "url": "http://www.wiki.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Sweeping wiki-format sites (fandom/community/reference wikis) in one query for people, handles, or niche topics that never surface on mainstream search.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "freemium",
+    "costNote": "Free to search; the site also offers paid/free wiki hosting. Some navigation links funnel to a generic contact/host page, so search depth is limited.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A search front-end — your query goes to Wiki.com and whatever wiki backends it queries. Nothing is sent to the subject. Use a clean browser if you want the lookup anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A long-running but thinly maintained wiki search/host portal; index freshness and coverage are uneven, and some links redirect to a hosting-signup page.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -308568,15 +308575,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "searchall-net"
+    ],
+    "aliases": [
+      "Wiki Search Engine"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "search-engines"
+      "search-engines",
+      "wiki-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wiki-search-engine.md"
   },
   {
@@ -334945,43 +334957,6 @@
     "_file": "library/tools/social-networks/profile-summary-for-github.md"
   },
   {
-    "id": "projects-noahliebman-net-listcopy",
-    "name": "projects.noahliebman.net/listcopy",
-    "description": "copy a list made by another user to your Twitter account",
-    "url": "http://projects.noahliebman.net/listcopy/connect.php",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/projects-noahliebman-net-listcopy.md"
-  },
-  {
     "id": "prot1ntelligence",
     "name": "Prot1ntelligence",
     "description": "Use when you have a ProtonMail/Proton `email` or custom domain and want to confirm it uses Proton and read its PGP-key metadata — returns domain mail config and account-age hints.",
@@ -338755,7 +338730,9 @@
     "registration": false,
     "relatedTools": [
       "reddit-user-analyser",
-      "redditsearch"
+      "redditsearch",
+      "reddit-comment-search",
+      "redditcommentsearch-com"
     ],
     "aliases": [
       "redditcommentsearch.com",
@@ -340151,7 +340128,8 @@
     "relatedTools": [
       "ghostcodes-addmesnaps-directories",
       "snapchat",
-      "snap-map"
+      "snap-map",
+      "snapdex-the-best-snapchat-names-index"
     ],
     "aliases": [
       "Snapdex",

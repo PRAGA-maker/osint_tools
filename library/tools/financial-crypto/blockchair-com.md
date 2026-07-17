@@ -32,6 +32,8 @@ relatedTools:
 - bitcoin-explorer
 - blockchain-explorer
 - etherscan
+- blockchair
+- zcash-block-explorer
 aliases:
 - Blockchair
 - blockchair.com

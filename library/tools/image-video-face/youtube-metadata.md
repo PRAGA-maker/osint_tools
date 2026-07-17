@@ -36,6 +36,7 @@ relatedTools:
 - youtube-metadata-bulk
 - youtube-dataviewer
 - search-youtube-by-location
+- location-search
 aliases:
 - mattw youtube metadata
 - YouTube Metadata tool

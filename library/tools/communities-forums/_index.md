@@ -306,7 +306,7 @@ kind: group-index
 - **`radio-free-europe`** (medium) — News broadcaster reporting news in 22 countries where a free press is banned by the government; inclludes uncensored news and discussion
 - **`radion-net`** (low) — view list of all radiostations near your location and search radiostations by keywords
 - **`ravelry`** (medium) — Ravelry is a community site, an organizational tool, and a yarn & pattern database for knitters and crocheters.
-- **`rebel-news`** (medium) — A Canadian far-right political and social commentary media website
+- **`rebel-news`** (low) — Use when you have a `name` tied to Canadian right-wing politics/activism and want to search a partisan outlet's coverage for mentions, foota
 - **`reddit-askmeanything`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 - **`reddit-insight`** (low) — OSINT tool: Reddit Insight.
 - **`reddit-metrics`** (low) — OSINT tool: Reddit Metrics.
@@ -414,7 +414,7 @@ kind: group-index
 - **`wikipedia-list-of-world-newspapers`** (medium) — Wikipedia's list of world newspapers categorized by continent/country
 - **`wimdu`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`win-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`wired-tech-news-and-trends`** (medium) — Monthly American magazine focusing on technology, business, and politics
+- **`wired-tech-news-and-trends`** (low) — Use when you have a `name` in tech, security, or startup circles and want to search WIRED's archive for profiles, quotes, or bylines — retur
 - **`wix`** (low) — OSINT tool: Wix.
 - **`world-channel-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`write-as`** (medium) — OSINT tool: Write.as.

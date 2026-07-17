@@ -33,6 +33,8 @@ registration: false
 relatedTools:
 - reddit-user-analyser
 - redditsearch
+- reddit-comment-search
+- redditcommentsearch-com
 aliases:
 - redditcommentsearch.com
 - Reddit comment search by user

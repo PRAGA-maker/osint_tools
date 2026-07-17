@@ -35,6 +35,7 @@ relatedTools:
 - ghostcodes-addmesnaps-directories
 - snapchat
 - snap-map
+- snapdex-the-best-snapchat-names-index
 aliases:
 - Snapdex
 - snapdex.com

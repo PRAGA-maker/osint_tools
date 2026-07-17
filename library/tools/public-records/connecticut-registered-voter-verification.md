@@ -33,6 +33,7 @@ registration: false
 relatedTools:
 - connecticut-license-verification
 - voterrecords-com
+- state-of-connecticut-licensing
 aliases:
 - CT voter lookup
 - Connecticut voter registration lookup

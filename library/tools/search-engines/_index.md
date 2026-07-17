@@ -376,7 +376,7 @@ kind: group-index
 - **`hotbot-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`hotpads-real-estate-search-engine`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`https-vulmon-com`** (medium) — OSINT tool: https://vulmon.com/.
-- **`hunter-search-engine`** (medium) — OSINT tool: Hunter Search Engine.
+- **`hunter-search-engine`** (low) — Use when you have a `domain` or `ip-address` and want to enumerate its internet-exposed hosts, open ports, services, and TLS certificates — 
 - **`i-intelligence-osint-handbook-2025`** (medium) — The widely-used i-intelligence OSINT Handbook of tools and resources.
 - **`i-search-from`** (low) — allows you to customize the country, language, device, city when searching on Google
 - **`ialeia`** (medium) — International Association of Law Enforcement Intelligence Analysts
@@ -461,7 +461,7 @@ kind: group-index
 - **`leibniz-information-centre-for-science-and-technology-university-library`** (low) — OSINT tool: Leibniz Information Centre For Science and Technology University Library.
 - **`leit-search-engine-iceland`** (medium) — Iceland based surface web search engine covering regional results
 - **`lendx`** (low) — OSINT tool: LENDX.
-- **`lexcraft-cornell-university-legal-wiki-canada`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
+- **`lexcraft-cornell-university-legal-wiki-canada`** (low) — Use when you need to understand how a jurisdiction publishes its legal texts and citations — a reference wiki that documents legal-informati
 - **`libgen-rs`** (medium) — OSINT tool: Libgen.rs.
 - **`libraries-io`** (medium) — Use when you have a developer `name`/`username` or a package/project name and want to find the source repo, maintainers and contact points —
 - **`library-genesis`** (low) — "search engine for articles and books, which allows free access to content that is otherwise paywalled or not digitized elsewhere" (c)
@@ -710,8 +710,7 @@ kind: group-index
 - **`search-patterns`** (low) — A tool that analyzes autosuggest for #Google and #YouTube search queries (questions, prepositions, comparisons, and words starting with diff
 - **`search-shared`** (medium) — File sharing and search engine
 - **`search3`** (low) — New privacy search engine (no trackers + just a little bit of ads). With NFT search tab and cryptocurrencies realtime info tab
-- **`searchall-net`** (low) — 75 fields for quick entry of queries to different search services on one page
-- **`searchall`** (medium) — Metasearch engine including major search engines and social media platforms including Google, Bing, Yahoo, DuckDuckGo, Facebook, and more.
+- **`searchall-net`** (low) — Use when you have a `name`, `username`, or `email` and want to fan one query across many search engines and platforms from a single page — r
 - **`searchboth`** (medium) — Meta-search engine that shows results from two or more other search engines, allowing users to compare results
 - **`searchdorks`** (low) — OSINT tool: SearchDorks.
 - **`searchenginejournal-com`** (high) — Use when you have a `name`/handle/domain and want the full syntax of Google advanced operators to build a precise dork — returns a reference
@@ -851,7 +850,7 @@ kind: group-index
 - **`white-house-disclosures`** (medium) — White House disclosure reports
 - **`wiby`** (medium) — Search engine for older style pages, based on a subject of interest.
 - **`wiki-for-kids`** (low) — Website that provides a search engine that searches wiki-type websites
-- **`wiki-search-engine`** (medium) — Website that provides a search engine that searches wiki-type websites
+- **`wiki-search-engine`** (low) — Use when you have a `name`, `username`, or topic keyword and want to search across many wiki-format sites at once — returns `social-profile`
 - **`wikiaentertainment`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on e
 - **`wikiawikis`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikibooks`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on b

@@ -102,7 +102,6 @@ kind: group-index
 - **`broken-link-checker`** (low) — shows which links on the page are giving out errors. It helps to find sites that have been working recently but are no longer working.
 - **`broken-link-hijacker`** (low) — Crawls the website and searches for all the broken links (in "<a href" and "<img src").
 - **`browserling`** (low) — OSINT tool: Browserling.
-- **`built-with`** (medium) — Website search that identifies a websites mail service provider, advertising partners, tracking widgets, plugins and more
 - **`bunkerweb-live-cyber-attack-threat-map`** (low) — OSINT tool: BunkerWeb Live Cyber Attack Threat Map.
 - **`carbon14`** (low) — A simple Python tool that helps you determine when (approximately) some content was published. It find the Last-Modified header of linked im
 - **`cdnstrip`** (low) — Very fast #go tool, that sorts the list of IP addresses into two lists: CDN and no CDN.

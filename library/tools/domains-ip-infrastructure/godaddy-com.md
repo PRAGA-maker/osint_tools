@@ -35,6 +35,9 @@ relatedTools:
 - whois
 - icann-lookup
 - whoisxmlapi
+- cyclect
+- godaddy
+- godaddy-whois-lookup
 aliases:
 - GoDaddy WHOIS
 - godaddy whois lookup

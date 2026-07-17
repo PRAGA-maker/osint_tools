@@ -36,6 +36,7 @@ registration: false
 relatedTools:
 - federal-bureau-of-prisons-inmate-locator-us
 - the-inmate-locator
+- sorted-by-birth-date
 aliases:
 - BOP Inmate Locator
 - Federal Bureau of Prisons inmate locator

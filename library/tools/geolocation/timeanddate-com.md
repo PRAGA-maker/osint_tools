@@ -31,6 +31,7 @@ registration: false
 relatedTools:
 - astronomy-sun-moon-eclipses
 - suncalc
+- timeanddate
 aliases:
 - timeanddate
 - Time and Date

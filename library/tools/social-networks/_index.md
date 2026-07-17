@@ -451,7 +451,6 @@ kind: group-index
 - **`ppl-contact`** (medium) — Use when you have a `name` + `employer-org` (or company `domain`) and want a person's business `email`/`phone` — returns B2B contact details
 - **`predicta-search`** (high) — Use when you have an `email`, `phone`, `username`, or `name` and want a correlated digital-footprint report of linked accounts across many p
 - **`profile-summary-for-github`** (medium) — Get detailed stats by Github username
-- **`projects-noahliebman-net-listcopy`** (medium) — copy a list made by another user to your Twitter account
 - **`prot1ntelligence`** (medium) — Use when you have a ProtonMail/Proton `email` or custom domain and want to confirm it uses Proton and read its PGP-key metadata — returns do
 - **`proxycurl`** (high) — Use when you have a `name`/`social-profile` and want enriched professional data (employer, role, contact) via API — but note the service has
 - **`psnprofiles`** (high) — Use when you have a PlayStation Network `username` and want a public gaming profile — returns trophy/games activity, country, avatar `image`

@@ -36,6 +36,7 @@ relatedTools:
 - duckduckgo-ai-chat
 - bing
 - google
+- duckduckgo-com
 aliases:
 - DDG
 - duckduckgo.com
