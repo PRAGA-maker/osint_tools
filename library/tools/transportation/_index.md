@@ -160,7 +160,7 @@ kind: group-index
 - **`planespotters-net`** (medium) — OSINT tool: Planespotters.net.
 - **`plate-recognizer`** (medium) — OSINT tool: Plate Recognizer.
 - **`plates-mania`** (medium) — Use when you have a `vehicle-plate` and want user-uploaded photos of the actual vehicle wearing it — returns image, geolocation.
-- **`poctra-com`** (medium) — OSINT tool: Poctra.com.
+- **`poctra-com`** (medium) — Use when you have a `vin` or salvage-auction lot number and want a vehicle's past auction record — returns archived Copart/IAAI listing phot
 - **`ports-com`** (low) — online calculation of travel time between two ports (with optimal path). It's possible to select the speed from 5 to 40 knots. Shows a list 
 - **`ports`** (low) — OSINT tool: Ports.
 - **`radarbox`** (medium) — OSINT tool: RadarBox.

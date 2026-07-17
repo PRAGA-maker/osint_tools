@@ -148,7 +148,7 @@ kind: group-index
 - **`walmart-store-status`** (medium) — OSINT tool: Walmart Store Status.
 - **`waze`** (medium) — OSINT tool: Waze.
 - **`what3words`** (low) — A proprietary geocode system which identifies any location on the surface of the earth to a resolution of 3 metres. The identifier is a uniq
-- **`whentaken-com`** (medium) — OSINT tool: whentaken.com.
+- **`whentaken-com`** (low) — Use when you want to practice chronolocation and geolocation — a game that shows a photo and asks you to guess where and when it was taken, 
 - **`wildeye`** (low) — Tracking tool for data on environmental and wildlife crime cases, including court cases and convictions, across the globe.
 - **`wildlife-trade-portal`** (low) — An open-source tool to search wildlife seizure data worldwide.
 - **`wildme-and-wildbook`** (low) — Open source pattern recognition software to identify unique whales, sharks, zebras, jaguars, skunks, fish and much more.

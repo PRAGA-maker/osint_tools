@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`dns-leak-test`** (low) — Use when you are behind a VPN/proxy and want to confirm your DNS isn't leaking your real ISP — returns the `ip-address`es and operators of t
-- **`dns-leak-tests`** (medium) — Secondary DNS leak verification, cross-checking VPN DNS configuration
+- **`dns-leak-tests`** (low) — Use when you want to verify your VPN/anonymized setup isn't leaking DNS — returns the DNS resolvers actually answering for you (IPs, provide
 - **`email-leak-tests`** (medium) — Verifying email IP privacy, testing anonymous email service configurations
 - **`ip-dns-leak-detection`** (medium) — Verifying VPN effectiveness, detecting IP and DNS leaks before OSINT operations
 - **`ipv6-leak-tests`** (medium) — Detecting IPv6 leaks through IPv4-only VPNs, dual-stack network verification

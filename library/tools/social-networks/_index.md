@@ -537,7 +537,7 @@ kind: group-index
 - **`searchisback`** (high) — Use when you have a `name` plus attributes (location, school, employer, interests) and want to find matching Facebook people, events and pos
 - **`searchmy-bio`** (high) — Use when you have a `name`, keyword, link or interest and want Instagram accounts whose bio contains it — returns matching Instagram profile
 - **`searchstream-live`** (low) — OSINT tool: Searchstream.live.
-- **`seart-github-search`** (medium) — Search engine for #Github with a dozen different filters. It has slightly fewer features than the standard Github advanced search, but more 
+- **`seart-github-search`** (low) — Use when you want to find GitHub repositories by metadata (language, stars, commits, contributors, activity dates) rather than by name — ret
 - **`secjuice-com-3`** (high) — Use when you're about to investigate a subject on LinkedIn and want a methodology walkthrough — returns techniques for finding and reading `
 - **`seemutualfriendsonfacebook-com`** (high) — Use when you have two or more Facebook friend lists (scraped) and want to find the people they have in common — returns overlapping social-p
 - **`seo-resources-search-engine`** (low) — OSINT tool: SEO Resources Search Engine.
@@ -566,7 +566,7 @@ kind: group-index
 - **`snaptik-app`** (high) — Use when you have a TikTok video/post URL from a target and want to download it watermark-free for evidence/analysis — returns the MP4/image
 - **`snapvip`** (medium) — OSINT tool: Snapvip.
 - **`snradar`** (medium) — OSINT tool: Snradar.
-- **`snscrape`** (medium) — Tool for search posts and gathering information about users in Twitter, Reddit, Vkontakte, Weibo, Telegram, Facebook, Instagram, Telegram an
+- **`snscrape`** (high) — Use when you have a `username`, hashtag, or keyword and want to bulk-collect a social account's public posts without an API key — returns po
 - **`social-blade`** (medium) — help you track YouTube Channel Statistics, Twitch User Stats, Instagram Stats, and much more
 - **`social-media-osint-tools-collection`** (high) — Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated ca
 - **`social-media-salary-calculator`** (medium) — for YouTube, TikTok, Instagram

@@ -165,7 +165,7 @@ kind: group-index
 - **`latitude-longitude-finder`** (high) — Use when you have an `address` or a `geolocation` and want to convert between them — returns lat/long coordinates for an address, or the add
 - **`latlong`** (high) — Use when you need to turn an address or place name into precise lat/lon coordinates (or back) — returns a geolocation.
 - **`leaflet`** (high) — Use when you need to build a custom interactive web map to plot OSINT findings — a developer library, not a lookup service.
-- **`light-pollution-world-map`** (medium) — showing the degree of light pollution in different countries. It's possible to see the data over time (since 2013)
+- **`light-pollution-world-map`** (low) — Use when you have a candidate `geolocation` and a night photo and want to test whether the sky brightness/darkness matches — returns a layer
 - **`lightingmaps`** (medium) — lightning strikes in real time and also data on thunderstorms that ended months or years ago
 - **`live-bar-and-pub-webcams`** (low) — OSINT tool: Live Bar and Pub Webcams.
 - **`live-cams-iplivecams`** (low) — OSINT tool: Live Cams \| Iplivecams.

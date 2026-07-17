@@ -393,7 +393,7 @@ kind: group-index
 - **`tom-s-hardware`** (medium) — Online articles, news, and reviews related to business, computers, gadgets, technology, and future trends
 - **`trainerdex`** (low) — Pokemon GO trainer progress/profile database; look up a trainer's public profile by username. Referenced in sinwindie's PokemonGo bookmarkle
 - **`trending-words-of-reddit`** (low) — OSINT tool: Trending Words of Reddit.
-- **`tripadvisor`** (medium) — Website related to social networking in the form of travel and tourism
+- **`tripadvisor`** (medium) — Use when you have a `username` or `name` and want to find travel reviews, photos, and location history a subject posted — returns a reviewer
 - **`tripit`** (medium) — Website related to social networking in the form of travel and tourism
 - **`trucknetuk-com`** (medium) — OSINT tool: trucknetuk.com.
 - **`tsn-sports-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
