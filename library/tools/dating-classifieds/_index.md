@@ -20,7 +20,6 @@ kind: group-index
 - **`bargaincity-classified-ads-canada`** (medium) — Classified advertisements-related website that provides regional services
 - **`beautifulpeople-com`** (low) — Use when checking a niche, member-voted dating community for a subject's profile by `username` or `image` — a small, vetting-gated platform.
 - **`bed-page`** (medium) — OSINT tool: Bed Page.
-- **`best-classified-site-in-india`** (medium) — Classified advertisements-related website that lists over 1000 websites worldwide by country
 - **`bumble`** (medium) — Use when you have an `image`, first `name`, or `geolocation` and want to check for a subject's profile on Bumble's location-based dating app
 - **`camsoda-com`** (medium) — OSINT tool: camsoda.com.
 - **`cia-foia`** (low) — Use when you have a `name`, org, or event and want declassified CIA documents about it — returns full-text-searchable declassified records f

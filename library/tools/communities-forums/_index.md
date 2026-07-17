@@ -244,7 +244,7 @@ kind: group-index
 - **`ndtv-s-gadgets-360`** (medium) — Online articles, news, and reviews related to business, computers, gadgets, technology, and future trends; includes an eCommerce search engi
 - **`nekobin`** (medium) — OSINT tool: nekobin.
 - **`netflix-codes-com`** (low) — alternative way to find anything interesting on Netflix
-- **`network-nine-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`network-nine-television-australia`** (medium) — Use when you have an Australian subject's `name` or an event and want national/local news coverage naming them — returns news articles, phot
 - **`network-ten-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`new-paste`** (medium) — OSINT tool: New Paste.
 - **`new-york-post`** (medium) — Searchable website for a major newspaper covering national and local events in the United States

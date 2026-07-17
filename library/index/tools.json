@@ -33543,41 +33543,54 @@
   {
     "id": "network-nine-television-australia",
     "name": "Network Nine Television (Australia)",
-    "description": "Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base",
+    "description": "Use when you have an Australian subject's `name` or an event and want national/local news coverage naming them — returns news articles, photos, and named associates from a major Australian broadcaster.",
     "url": "https://www.nine.com.au",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching one of Australia's major TV/news networks for coverage that names or pictures a subject.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; no account needed for news content. Some streaming (9Now) requires a free Australian account, but the news site is open.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news site is passive and reveals nothing to the subject. Use a private browser session if you don't want personalised tracking/cookies; no login is required to search or read articles.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party site of Nine Entertainment, a major established Australian broadcaster (9News, Sydney Morning Herald group); articles are edited journalism, not user content.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Nine News Australia",
+      "nine.com.au",
+      "Channel 9 Australia"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "news-journalism"
+      "news-journalism",
+      "australia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/network-nine-television-australia.md"
   },
   {
@@ -46744,46 +46757,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dating-classifieds/bed-page.md"
-  },
-  {
-    "id": "best-classified-site-in-india",
-    "name": "Best Classified Site In India",
-    "description": "Classified advertisements-related website that lists over 1000 websites worldwide by country",
-    "url": "http://bestclassifiedsiteinindia.elcraz.com",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/best-classified-site-in-india.md"
   },
   {
     "id": "bumble",
@@ -111735,43 +111708,51 @@
   {
     "id": "bincodes-com",
     "name": "bincodes.com",
-    "description": "OSINT tool: bincodes.com.",
+    "description": "Use when you have the first 6–8 digits (BIN/IIN) of a payment card and want to identify the issuing bank, card brand, type, and country — returns issuer `employer-org` and card country `geolocation`.",
     "url": "https://www.bincodes.com/creditcard-checker/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up the issuing bank, brand, level, and country behind a card's BIN/IIN prefix.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "document-id"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "employer-org",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The web BIN/card checker is free to use with no account. A separate paid API with pricing tiers exists for programmatic/bulk access.",
+    "opsec": "passive",
+    "opsecNote": "You only submit the BIN (first 6–8 digits), never a full card number, and the query goes to bincodes' own database — nothing reaches the cardholder or bank. Never enter a complete card number into any web tool. Only enter a BIN you are lawfully entitled to research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running commercial BIN-database site; the operators state the data is \"accurate but not perfect.\" Treat issuer/country as a strong lead, not proof.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "bincodes BIN checker",
+      "bincodes credit card checker"
+    ],
     "tags": [
       "banksites",
-      "Banking Related Sites"
+      "Banking Related Sites",
+      "bin-lookup"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bincodes-com.md"
   },
   {
@@ -137124,41 +137105,54 @@
   {
     "id": "deepsafe",
     "name": "DeepSafe",
-    "description": "Ensemble deepfake detection for image and video investigations",
+    "description": "Use when you have an `image`, video, or audio clip and want to test whether it is AI-generated/manipulated — returns per-model real/fake verdicts with confidence scores.",
     "url": "https://github.com/siddharthksah/DeepSafe",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "deepfake-detection"
     ],
-    "bestFor": "Ensemble deepfake detection for image and video investigations",
-    "input": "Image and video files",
-    "output": "Detection verdicts with confidence metrics",
+    "bestFor": "Running several deepfake detectors at once over one media file and comparing their verdicts.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Hosted mode uploads media externally; local Docker deployment reduces exposure.",
+    "costNote": "MIT-licensed and fully self-hosted; no fees, no account. You supply the compute (Docker) and pull model weights from Hugging Face.",
+    "opsec": "passive",
+    "opsecNote": "When you run it locally with Docker the media never leaves your machine, so analysis is passive. Only the hosted/demo deployments upload the file externally — prefer the local `make start` path for a sensitive image of a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "docker",
+    "trust": "community",
+    "trustNote": "Open-source project (MIT) by an independent developer; ~100+ stars, active commits. It orchestrates third-party detection models, so verdict quality depends on those models, not on DeepSafe itself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "deepfake-detect",
+      "deepfakebench",
+      "faceforensics-plus-plus",
+      "truthscan-deepfake-detector"
+    ],
+    "aliases": [
+      "DeepSafe deepfake detection",
+      "siddharthksah/DeepSafe"
+    ],
+    "tags": [
+      "deepfake",
+      "media-verification",
+      "Image Search and Identification"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/deepfake-detection/deepsafe.md"
   },
   {
@@ -142168,40 +142162,51 @@
   {
     "id": "goris",
     "name": "GORIS",
-    "description": "Command line tool for Google reverse image search automation. It can find links to similar pictures by URL or by file.",
+    "description": "Use when you have an `image` URL and want to script Google reverse image search at scale — returns links to matching images and web pages hosting the photo.",
     "url": "https://github.com/tanaikech/goris",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Command-line/scripted Google reverse image search over an image URL, returning up to ~100 matching links.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Go tool. No account or API key; it drives Google's public reverse-image endpoint.",
+    "opsec": "active",
+    "opsecNote": "Every run sends a query to Google from your IP. Google may rate-limit or serve CAPTCHAs on repeated automated searches — route through a sock-puppet IP/proxy if you are running many lookups, and never point it at the target's own site logs (use a neutral image host for the URL).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Actively maintained open-source project by developer tanaikech (v3.0.5, June 2025); updated to track Google's changing reverse-search spec. It is an unofficial scraper of Google, so it can break when Google changes its interface.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "goris Google reverse image search",
+      "tanaikech/goris"
+    ],
     "tags": [
+      "reverse-image-search",
       "Image Search and Identification",
       "Reverse Image Search Engines and automation tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/goris.md"
   },
   {
@@ -243436,35 +243441,48 @@
   {
     "id": "kansas-restaurant-inspections",
     "name": "Kansas Restaurant Inspections",
-    "description": "OSINT tool: Kansas Restaurant Inspections.",
+    "description": "Use when you have a Kansas food-business `name`/`address` (or an owner name) and want its state food-safety inspection history — returns inspection dates, violations, and the licensed establishment/operator.",
     "url": "https://b2.caspio.com/dp/a1a31000af3bac4c5e434987a857",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Pulling the food-safety inspection record for a licensed food establishment in Kansas.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public state record; no account or payment. Hosted as a Caspio datapage published by the Kansas Department of Agriculture program.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public-records search on a state inspection database; nothing is disclosed to the establishment or any person, and no login is required. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "State-government inspection data surfaced through a Caspio-hosted search form; the underlying records are authoritative, though the embedded datapage UI is a third-party host.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "coverage": [
+      "us"
+    ],
+    "aliases": [
+      "Kansas food establishment inspections",
+      "KDA restaurant inspection search"
+    ],
+    "tags": [
+      "public-records",
+      "food-safety",
+      "kansas",
+      "business-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/kansas-restaurant-inspections.md"
   },
   {
@@ -279204,51 +279222,6 @@
     "_file": "library/tools/search-engines/densephrase.md"
   },
   {
-    "id": "department-of-energy-patents",
-    "name": "Department of Energy Patents",
-    "description": "US Department of Energys patent search",
-    "url": "http://www.osti.gov/doepatents/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "doe-data-explorer",
-      "osti-science-cinema-search",
-      "us-dept-of-energy-office-of-science-search"
-    ],
-    "_file": "library/tools/search-engines/department-of-energy-patents.md"
-  },
-  {
     "id": "deutscheseiten-search-engine-germany",
     "name": "DeutscheSeiten Search Engine (Germany)",
     "description": "German surface web search engine covering regional results",
@@ -290404,41 +290377,46 @@
   {
     "id": "klug-suchen",
     "name": "Klug Suchen",
-    "description": "Website made for former Soviet soldiers, officers and their families.",
+    "description": "Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to run it against — returns links to topical German search resources.",
     "url": "https://www.klug-suchen.de/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding the right German specialty search engine or database for a topic before you search a German subject.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free directory; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory itself is passive and reveals nothing about your target. OpSec depends on the downstream engine you pick from it — treat each linked search on its own terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing German search-portal/directory (\"Ihr Weg zur richtigen Information\"); it is a curated index of other engines, not a data source itself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "de"
     ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "aliases": [
+      "klug-suchen.de",
+      "Klug Suchen Suchmaschinen-Verzeichnis"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "germany"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/klug-suchen.md"
   },
   {
@@ -304523,24 +304501,25 @@
   {
     "id": "stilltasty",
     "name": "StillTasty",
-    "description": "Search engine that searches for food-related websites, material and content, primarily dealing with the duration of freshness, expiration date and shelf life of foods",
+    "description": "Use when you need to check how long a food keeps or how to store it — returns shelf-life, storage, and spoilage guidance for thousands of foods.",
     "url": "http://www.stilltasty.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up the shelf life, storage method, and spoilage timeline of a specific food item.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reference site; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A general food-reference lookup with no personal input — fully passive and reveals nothing about any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent consumer food-storage reference; useful and free, but a general-knowledge resource, not an investigative data source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -304549,15 +304528,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "StillTasty food shelf life",
+      "stilltasty.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "reference"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/stilltasty.md"
   },
   {
@@ -341125,35 +341109,52 @@
   {
     "id": "socialgrep",
     "name": "SocialGrep",
-    "description": "OSINT tool: SocialGrep.",
+    "description": "Use when you have a `username`, keyword, or subreddit and want to find and export a subject's Reddit posts/comments across 2010–present — returns matching posts, comment history, and links to `social-profile`s.",
     "url": "https://www.socialgrep.com/search",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Historical, filterable Reddit search — surfacing a person's Reddit activity by author, keyword, or subreddit and exporting it.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free search with a limited sample and a free export sample (no card). Full exports/alerts/API are paid, roughly $9–$49/month depending on volume.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query SocialGrep's own aggregated index, not Reddit directly, so the subject gets no notification and your Reddit account is not exposed. Searching is passive; only creating an account for exports leaves a trace with SocialGrep.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial product by Lexyr Inc. that indexes Reddit's public firehose; data is real Reddit content, but coverage/recency depend on their crawl and paid tier.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "SocialGrep Reddit search",
+      "Lexyr SocialGrep"
+    ],
+    "tags": [
+      "reddit",
+      "social-media-search",
+      "Social Media"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/socialgrep.md"
   },
   {

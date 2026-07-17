@@ -202,7 +202,6 @@ kind: group-index
 - **`debunking-false-stories-archives`** (low) — OSINT tool: Debunking False Stories Archives.
 - **`defcad`** (medium) — Search engine for 3D printable models
 - **`densephrase`** (low) — This tool searches phrase-level answers to your questions or retrieve relevant passages in real-time in 5 million Wikipedia articles.
-- **`department-of-energy-patents`** (medium) — US Department of Energys patent search
 - **`deutscheseiten-search-engine-germany`** (medium) — German surface web search engine covering regional results
 - **`dib-dab-doo-and-dilly-too-kids-search-engine`** (low) — Search engine intended for audiences less than 15 years of age, identifies itself as kid-friendly
 - **`digle`** (low) — OSINT tool: Digle.
@@ -444,7 +443,7 @@ kind: group-index
 - **`kidtopia`** (low) — Kid-friendly search engine.
 - **`kidzsearch`** (low) — Kid-friendly search engine
 - **`kiwireviews-new-zealand`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
-- **`klug-suchen`** (medium) — Website made for former Soviet soldiers, officers and their families.
+- **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
 - **`komo`** (medium) — AI powered search engine
 - **`krugle`** (medium) — Enterprise code search tool
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
@@ -759,7 +758,7 @@ kind: group-index
 - **`startpage-parser`** (low) — Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python to
 - **`startpagina-search-netherlands`** (medium) — Netherlands based web search engine that also includes news, TV, radio, and a blog
 - **`state-of-connecticut-licensing`** (medium) — Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, lice
-- **`stilltasty`** (medium) — Search engine that searches for food-related websites, material and content, primarily dealing with the duration of freshness, expiration da
+- **`stilltasty`** (medium) — Use when you need to check how long a food keeps or how to store it — returns shelf-life, storage, and spoilage guidance for thousands of fo
 - **`storyful`** (low) — OSINT tool: Storyful.
 - **`studentreviews-north-america`** (medium) — Website related to education reviews
 - **`suchmaschinen-datenbank`** (medium) — German meta search engine

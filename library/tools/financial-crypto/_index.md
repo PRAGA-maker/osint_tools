@@ -26,7 +26,7 @@ kind: group-index
 - **`aib-gov-uk`** (medium) — OSINT tool: aib.gov.uk.
 - **`analytics-engine`** (low) — OSINT tool: analytics-engine.
 - **`binbase-com`** (medium) — OSINT tool: binbase.com.
-- **`bincodes-com`** (medium) — OSINT tool: bincodes.com.
+- **`bincodes-com`** (medium) — Use when you have the first 6–8 digits (BIN/IIN) of a payment card and want to identify the issuing bank, card brand, type, and country — re
 - **`bindb-com`** (medium) — OSINT tool: bindb.com.
 - **`bitcoin-atm-map`** (low) — OSINT tool: Bitcoin ATM map.
 - **`bitcoin-explorer`** (low) — OSINT tool: Bitcoin Explorer.

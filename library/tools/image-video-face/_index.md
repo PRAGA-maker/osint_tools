@@ -151,7 +151,7 @@ kind: group-index
 - **`google-reverse-image-search-fix`** (medium) — Google lens is not too user friendly for investigations. But this tool will help you get back to the old Google Image Search. (in case of pr
 - **`google-reverse-image-search`** (high) — Use when you have an `image` of a person or place and want to find where else it appears online — returns matching/related images, source pa
 - **`google-reverse-search`** (high) — Use when you have a photo and want to find every page that hosts the same or a similar image — returns matching pages, source sites, and soc
-- **`goris`** (medium) — Command line tool for Google reverse image search automation. It can find links to similar pictures by URL or by file.
+- **`goris`** (medium) — Use when you have an `image` URL and want to script Google reverse image search at scale — returns links to matching images and web pages ho
 - **`hatless-investigations-group`** (low) — Use when you want to reach a private investigations firm rather than run a self-service tool — this is a LinkedIn company page for an OSINT/
 - **`how-to-accurately-check-an-id-using-facial-features-to-verify-photo-id-s`** (medium) — Use when you need a human reference method for comparing a face against a photo ID — this is an instructional article on facial-feature comp
 - **`hue-tools`** (low) — Use when you need to work with colors (generate, convert, blend palettes) — a color/design utility with marginal OSINT use for matching or d

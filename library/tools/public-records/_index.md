@@ -535,7 +535,7 @@ kind: group-index
 - **`justia-us-supreme-court-center-united-states`** (medium) — Legal-related search engine for legal court cases and documents
 - **`justice-gov-uk`** (medium) — Use when you have a `name` or `employer-org` and want to verify a UK certificated bailiff/enforcement agent — returns certification status a
 - **`kaggle`** (low) — OSINT tool: Kaggle.
-- **`kansas-restaurant-inspections`** (medium) — OSINT tool: Kansas Restaurant Inspections.
+- **`kansas-restaurant-inspections`** (medium) — Use when you have a Kansas food-business `name`/`address` (or an owner name) and want its state food-safety inspection history — returns ins
 - **`kansas`** (high) — Use when you have a `name` and want to check whether a subject is in the Kansas Department of Corrections population — returns offense histo
 - **`katrina-spending-search`** (high) — Use when you have a `name` or `employer-org` and want to check Hurricane Katrina federal-aid/contract recipients — returns recipient `name`,
 - **`kmle-medical-dictionary-korean`** (medium) — Korean Medical Library Engine: academic-related search engine focusing on medicine
