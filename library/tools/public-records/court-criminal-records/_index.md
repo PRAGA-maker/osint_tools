@@ -16,7 +16,7 @@ kind: group-index
 - **`familywatchdog-sex-offender-search`** (medium) — Sex offender registry search
 - **`federal-inmate-locator`** (medium) — Federal inmate location and release dates
 - **`free-law-recap-archive`** (medium) — Use when you have a `name`/case tied to US federal litigation and want the actual court filings — returns dockets and PACER documents naming
-- **`google-scholar-case-law`** (medium) — Quick case law lookup
+- **`google-scholar-case-law`** (medium) — Use when you have a `name` or case citation and want free full-text US court opinions that may mention a person as a party, witness, or subj
 - **`judyrecords`** (high) — Use when you have a `name` and want free nationwide US court-case records — returns case filings, parties (associates), and document-id lead
 - **`most-wanted-criminal-pages`** (medium) — Wanted fugitive identification
 - **`mugshots-com`** (medium) — Arrest record and mugshot lookup

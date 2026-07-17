@@ -63,7 +63,7 @@ kind: group-index
 - **`ctlrq-address-lookup`** (high) — Use when you need to convert between a map pin/coordinates and a street address — drop a pin to get the address, or enter an address to get 
 - **`currentmillis-com`** (medium) — OSINT tool: currentmillis.com.
 - **`cybermap`** (high) — Use when you want a real-time global picture of cyberattack activity by country — Kaspersky's live threat map returns `geolocation`-tagged a
-- **`cyclocane`** (medium) — click on the hurricane on the map and get detailed information about it
+- **`cyclocane`** (low) — Use when a photo/event references a storm or you need to know what tropical cyclone was active at a place and time — returns current and rec
 - **`datacore-gn-unepgrid-ch`** (medium) — OSINT tool: Datacore-gn.unepgrid.ch.
 - **`default-router-login`** (low) — OSINT tool: Default Router Login.
 - **`degulesider-mapping-program-for-europe-denmark`** (high) — Use when you have a Danish `address` or `geolocation` and want a street-level map with business/address context and aerial/street imagery — 

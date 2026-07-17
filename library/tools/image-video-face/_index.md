@@ -207,7 +207,7 @@ kind: group-index
 - **`librivox`** (high) — Use when you have a `name`/`username` you suspect narrates public-domain audiobooks and want their reader profile, forum activity and voice 
 - **`libsyn`** (medium) — Use when you have a `name`, `username` or podcast title and want to find a subject's podcast, its episodes and host details — returns `socia
 - **`liftapp-ai`** (medium) — Use when a face/photo lead is too low-quality to search and you want to enhance, upscale or restore it before reverse-image work — returns a
-- **`likefont-com`** (medium) — OSINT tool: LikeFont.com.
+- **`likefont-com`** (low) — Use when you have an `image` containing text and want to identify the typeface used — returns candidate font names, which help verify docume
 - **`lingolens`** (medium) — Use when you have an `image` and want to run Google Lens across many languages/countries at once (results vary by locale) — returns a combin
 - **`listen-notes`** (medium) — Use when you want to find a person, name or topic mentioned across podcasts — returns matching podcast episodes with show, date and audio.
 - **`live-beaches`** (medium) — Beaches webcam only

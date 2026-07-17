@@ -583,7 +583,7 @@ kind: group-index
 - **`open-directory-search`** (low) — OSINT tool: Open Directory Search.
 - **`open-grey`** (low) — OSINT tool: Open Grey.
 - **`open-hub`** (medium) — Search engine for open source projects
-- **`open-secrets`** (medium) — Center for Responsive Politics site - includes disclosure of election costs and personal finances
+- **`open-secrets`** (medium) — Use when you have a `name` and want US political-money and financial-disclosure records — returns campaign contributions, lobbying ties, and
 - **`open-source-intelligence-txuswashere`** (low) — Comprehensive list of OSINT tools and methodologies.
 - **`opendirsearch-abifog-com`** (low) — OSINT tool: Opendirsearch.abifog.com.
 - **`opentable`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
@@ -660,7 +660,7 @@ kind: group-index
 - **`rateyourlecturer-united-kingdom`** (low) — Use when you have a `name` of a UK university lecturer and want student reviews confirming their institution and role — returns ratings tied
 - **`realtor-com-united-states`** (medium) — Real estate-related search engine for locating property, residences, rental space, or real estate representatives
 - **`recon`** (medium) — OSINT tool: Recon.
-- **`reconspider`** (medium) — OSINT framework for scanning IP addresses, emails, websites, and organizations.
+- **`reconspider`** (medium) — Use when you have an `ip-address`, `email`, `phone`, `domain`, or `username` and want a one-console recon sweep across many sources — return
 - **`recruit-net`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`reeder`** (low) — OSINT tool: Reeder.
 - **`reference-source-microsoft`** (medium) — Open source code search engine

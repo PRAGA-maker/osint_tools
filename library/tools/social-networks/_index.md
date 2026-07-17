@@ -134,7 +134,7 @@ kind: group-index
 - **`dumplt-blue`** (high) — Use when you have access to a target's `social-profile` (Facebook profile, group, or friends list) and want the connections as a structured 
 - **`dumpor-instagram-search`** (high) — Use when you have an Instagram `username`, `name` or hashtag and want to view/download the public profile anonymously — returns profile, pos
 - **`dumpor-io`** (high) — Use when you have an Instagram `username` and want to view/download that public profile's posts, stories, reels and follower lists without l
-- **`duolingosint`** (medium) — The language learning platform Duolingo has more than 570 million+ users worldwide. This tool collects information about Duolingo users by n
+- **`duolingosint`** (medium) — Use when you have a `username` or `email` and want to check for a Duolingo account — returns profile data (name, avatar, country, streak, cr
 - **`eightify`** (medium) — ChatGPT YouTube summary
 - **`ello`** (low) — Use when a historical lead points to an `ello.co` profile — returns nothing live; the network shut down in 2023 and the domain is now hijack
 - **`en-wikipedia-org-2`** (high) — Use when you need an overview of far-right online platforms/ecosystems to decide where to search for an extremist-adjacent subject — returns

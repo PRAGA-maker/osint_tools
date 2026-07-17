@@ -192,7 +192,6 @@ kind: group-index
 - **`company-information-service-gov-uk-2`** (high) — Use when you have a `name`, `employer-org` or `address` and want dissolved/closed UK companies — returns company details, registered address
 - **`company-information-service-gov-uk-3`** (high) — Use when you have a `name` and want to check whether someone is a disqualified UK company director — returns name, dob, the disqualification
 - **`company-information-service-gov-uk`** (high) — Use when you have a person `name`, company `name`/number or `address` in the UK and want official corporate records — returns directorships 
-- **`company-registration-round-the-world`** (medium) — OSINT tool: Company Registration Round the World.
 - **`company-research-resources-by-country-comparably`** (medium) — OSINT tool: Company Research Resources by Country Comparably.
 - **`company-search-tool`** (medium) — OSINT tool: Company search tool.
 - **`companycheck-co-uk`** (high) — Use when you have a UK company `name` or a person's `name` and want directorships, filings and registered addresses — returns `employer-org`

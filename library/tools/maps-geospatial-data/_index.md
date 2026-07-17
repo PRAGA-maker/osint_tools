@@ -142,7 +142,7 @@ kind: group-index
 - **`us-labor-strike-map`** (medium) — OSINT tool: US Labor Strike Map.
 - **`using-world-imagery-wayback`** (medium) — Use when you have a `geolocation`/`address` and want to see how that spot looked in past satellite imagery — returns dated historical `geolo
 - **`utm-grid-zones`** (low) — An overview of the Universal Transverse Mercator coordinate system.
-- **`virtualvacation-us`** (medium) — OSINT tool: virtualvacation.us.
+- **`virtualvacation-us`** (low) — Use when you want to train street-level geolocation skills — a free GeoGuessr-style game (City Guesser) that drops you into a random locatio
 - **`visionofbritain-org-uk`** (medium) — OSINT tool: visionofbritain.org.uk.
 - **`visitedplaces-com`** (medium) — OSINT tool: visitedplaces.com.
 - **`walmart-store-status`** (medium) — OSINT tool: Walmart Store Status.
