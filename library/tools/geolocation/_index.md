@@ -254,7 +254,6 @@ kind: group-index
 - **`radioreference`** (low) — OSINT tool: RadioReference.
 - **`rain-alarm`** (medium) — shows where it is raining on the map. You can enable notification of approaching rain (in the browser and in the mobile app)
 - **`rally-maps`** (medium) — A worldwide map showing thousands of race (regular and one-off) locations. It's possinle to find names of winners, routes, dates and other d
-- **`residential-fire-fatalities-in-indiana`** (medium) — OSINT tool: Residential Fire Fatalities in Indiana.
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.
 - **`rfsearch-com`** (low) — OSINT tool: Rfsearch.com.
 - **`riskmap`** (medium) — OSINT tool: RiskMap.

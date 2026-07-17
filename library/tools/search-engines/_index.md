@@ -302,7 +302,6 @@ kind: group-index
 - **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu
 - **`github-recon`** (medium) — Use when you have a `username`, `email`, `name`, or `domain` and want to dork GitHub for leaked identity data — returns real names, `email`s
 - **`github-with-awesome-list-search-engine`** (medium) — OSINT tool: Github with Awesome-List Search Engine.
-- **`givewater`** (medium) — Charitable search engine that supports a clean water initiative.
 - **`globalleaks`** (medium) — Open source software for enabling secure and anonymous whistleblowing
 - **`globalspec-engineer-search-engine`** (low) — OSINT tool: GlobalSpec Engineer Search Engine.
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
@@ -311,7 +310,7 @@ kind: group-index
 - **`goodgopher-com`** (low) — OSINT tool: GoodGopher.com.
 - **`goodhousekeeping`** (medium) — Housekeeping product reviews website
 - **`goodsearch`** (low) — OSINT tool: Goodsearch.
-- **`goofile`** (medium) — File search engine
+- **`goofile`** (medium) — Use when you have a `domain` and want to find public files of a given type hosted on it — returns URLs of documents (pdf, docx, xls, etc.) t
 - **`goofram`** (low) — OSINT tool: Goofram.
 - **`google-advanced-search-operators-guide`** (low) — Reference document listing Google advanced search operators.
 - **`google-adwords`** (low) — OSINT tool: Google Adwords.
@@ -885,7 +884,6 @@ kind: group-index
 - **`worldwidescience-org`** (medium) — OSINT tool: WorldWideScience.org.
 - **`wow-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results
 - **`wowjobs-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
-- **`wowwiki-world-of-warcraft-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
 - **`wpscan`** (low) — Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and 
 - **`xdcc-eu`** (low) — XDCC search engine
 - **`xen00rw-me`** (medium) — Use when you have a subject or target domain and want to build advanced search-operator (dork) queries across many engines from one interfac

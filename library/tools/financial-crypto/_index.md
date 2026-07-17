@@ -105,7 +105,6 @@ kind: group-index
 - **`radixdlt-com`** (medium) — OSINT tool: radixdlt.com.
 - **`reddit-com`** (medium) — OSINT tool: reddit.com.
 - **`researchgate-net`** (medium) — OSINT tool: researchgate.net.
-- **`robert-devere-bunn`** (medium) — OSINT tool: Robert Devere Bunn.
 - **`rupep`** (low) — Online database of politically exposed persons in Russia, Belarus, Kyrgyzstan and Kazakhstan.
 - **`sanctionsexplorer`** (low) — A comprehensive database of current and historical OFAC/UN/EU sanctions
 - **`search-for-investment-fund-documents`** (low) — OSINT tool: Search for Investment Fund Documents.

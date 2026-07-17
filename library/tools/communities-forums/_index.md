@@ -270,7 +270,6 @@ kind: group-index
 - **`parship-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`passion-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`paste-cash`** (medium) — OSINT tool: Paste.Cash.
-- **`paste-debian`** (medium) — OSINT tool: paste.debian.
 - **`paste-in-ua`** (medium) — OSINT tool: paste.in.ua.
 - **`paste-kde`** (medium) — OSINT tool: paste.kde.
 - **`paste-monster`** (medium) — OSINT tool: Paste.Monster.
@@ -317,7 +316,7 @@ kind: group-index
 - **`restaurant-news-united-states`** (medium) — Website related to news on restaurants, cafes, bars, other eating places, and the food services industry
 - **`rick-and-morty-screencaps-search`** (low) — OSINT tool: Rick and Morty screencaps search.
 - **`rss-tools-website`** (medium) — Website that provides links to tools and informatino related to RSS Feeds
-- **`saafe-info`** (medium) — OSINT tool: saafe.info.
+- **`saafe-info`** (medium) — Use when a subject is connected to UK/Ireland sex work and you want a peer-support forum whose "Warnings & Wasters" board names dangerous cl
 - **`safenote`** (medium) — OSINT tool: SafeNote.
 - **`sagadating-co-uk`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`sansar`** (medium) — Online gaming and virutual reality social community

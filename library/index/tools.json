@@ -34636,45 +34636,6 @@
     "_file": "library/tools/communities-forums/paste-cash.md"
   },
   {
-    "id": "paste-debian",
-    "name": "paste.debian",
-    "description": "OSINT tool: paste.debian.",
-    "url": "https://Paste.debian.net",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "pastebins"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "debian-code-search"
-    ],
-    "_file": "library/tools/communities-forums/paste-debian.md"
-  },
-  {
     "id": "paste-in-ua",
     "name": "paste.in.ua",
     "description": "OSINT tool: paste.in.ua.",
@@ -36680,44 +36641,58 @@
   },
   {
     "id": "saafe-info",
-    "name": "saafe.info",
-    "description": "OSINT tool: saafe.info.",
-    "url": "https://saafe.info/main/index.php?PHPSESSID=ba234d7a95aebaefddbac2910b91c17d",
+    "name": "SAAFE.info",
+    "description": "Use when a subject is connected to UK/Ireland sex work and you want a peer-support forum whose \"Warnings & Wasters\" board names dangerous clients — returns forum posts, `username`s, and warning threads.",
+    "url": "https://saafe.info/main/index.php",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Reading the SAAFE peer-support forum and its client-warnings board for leads on people tied to UK/Ireland sex work.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free community forum run by and for sex workers; reading public boards is free, some areas may require a free account.",
+    "opsec": "active",
+    "opsecNote": "This is a safety resource for a vulnerable, criminalised community. Treat it with extreme care and ethical restraint. Do NOT register or post with any traceable identity, do NOT contact members, and do NOT scrape or repost warning-board content — doing so can endanger real people. Read only what is public, minimise footprint, and use a sock-puppet browser session. Only pursue this when it genuinely serves the welfare of the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A genuine, long-running peer-support forum (Support And Advice For Escorts); content is anonymous user posts and warnings — unverified, and posted for member safety rather than as vetted fact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk",
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Support And Advice For Escorts",
+      "saafe forum"
+    ],
     "tags": [
-      "forums",
-      "Forums"
+      "forum",
+      "sex-work",
+      "safety",
+      "community"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/saafe-info.md"
   },
   {
@@ -115734,57 +115709,6 @@
     "_file": "library/tools/financial-crypto/researchgate-net.md"
   },
   {
-    "id": "robert-devere-bunn",
-    "name": "Robert Devere Bunn",
-    "description": "OSINT tool: Robert Devere Bunn.",
-    "url": "https://www.linkedin.com/in/robertdeverebunn/",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "griffin-glynn-hatless1der",
-      "hatless-investigations-group",
-      "linkedin",
-      "linkedin-advanced-search",
-      "linkedin-com",
-      "linkedin-groups",
-      "www-linkedin-com-pub-dir-people-search"
-    ],
-    "_file": "library/tools/financial-crypto/robert-devere-bunn.md"
-  },
-  {
     "id": "rupep",
     "name": "RuPEP",
     "description": "Online database of politically exposed persons in Russia, Belarus, Kyrgyzstan and Kazakhstan.",
@@ -128715,40 +128639,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/geolocation/rally-maps.md"
-  },
-  {
-    "id": "residential-fire-fatalities-in-indiana",
-    "name": "Residential Fire Fatalities in Indiana",
-    "description": "OSINT tool: Residential Fire Fatalities in Indiana.",
-    "url": "https://www.arcgis.com/apps/dashboards/4d1289ab105145a1b1f80c1ad3cf19fb",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/residential-fire-fatalities-in-indiana.md"
   },
   {
     "id": "reverseimagelocation",
@@ -219540,47 +219430,6 @@
     "_file": "library/tools/public-records/arizona-inmate-datasearch.md"
   },
   {
-    "id": "arizona-le-database-abc15",
-    "name": "Arizona LE Database - ABC15",
-    "description": "OSINT tool: Arizona LE Database - ABC15.",
-    "url": "https://datawrapper.dwcdn.net/kkg90/6/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "clearview-ai-us-taxpayer-funded-entities",
-      "cop26-registered-attendees",
-      "how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have",
-      "independent-fundamental-baptist-sexual-misconduct-database",
-      "the-philadelphia-police-misconduct-database"
-    ],
-    "_file": "library/tools/public-records/arizona-le-database-abc15.md"
-  },
-  {
     "id": "arkansas-ashley-county-ledger-search-united-states",
     "name": "Arkansas Ashley County Ledger Search (United States)",
     "description": "Geneology-related search for ancestral, family, and historical records, using a database from multiple countries",
@@ -220893,52 +220742,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/public-records/bigquery-public-datasets.md"
-  },
-  {
-    "id": "bikudo",
-    "name": "Bikudo",
-    "description": "Business directory of manufacturers and suppliers",
-    "url": "https://www.bikudo.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/bikudo.md"
   },
   {
     "id": "billiongraves-com",
@@ -225945,40 +225748,6 @@
     "lastVerified": "2026-07-16",
     "enrichment": "full",
     "_file": "library/tools/public-records/cop26-registered-attendees.md"
-  },
-  {
-    "id": "coplookup-com",
-    "name": "Coplookup.com",
-    "description": "OSINT tool: Coplookup.com.",
-    "url": "https://coplookup.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/coplookup-com.md"
   },
   {
     "id": "coraweb-birth-death-and-marriage-records-australia",
@@ -234608,47 +234377,54 @@
   {
     "id": "genealogical-prison-records",
     "name": "Genealogical Prison Records",
-    "description": "Site providing genealogical prison and insane asylum records for the US, UK and Canada",
+    "description": "Use when you have a historical `name` and want free genealogical prison, court, execution, and asylum records for the US/UK/Canada — returns indexed inmate/court entries with `dob`/`address`/institution.",
     "url": "http://www.blacksheepancestors.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a historical ancestor or subject in free prison, court, execution, and asylum record indexes.",
     "selectorsIn": [
-      "name",
-      "employer-org"
+      "name"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "dob",
+      "address",
+      "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free record indexes; no account. Some deep-linked images may sit on third-party genealogy sites that charge, but Black Sheep Ancestors' own indexes are free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing historical record indexes is passive and reveals nothing to any living person. These are historical/genealogical records, so privacy exposure is minimal, but treat any living-person detail with care.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running volunteer genealogy site aggregating transcribed historical prison/court/asylum records; transcription accuracy varies, so treat entries as leads to primary records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us",
+      "uk",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Black Sheep Ancestors",
+      "blacksheepancestors.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "genealogy",
+      "historical-records",
+      "prison-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/genealogical-prison-records.md"
   },
   {
@@ -254775,46 +254551,6 @@
     "_file": "library/tools/public-records/pa-perry-county-2017-compensation-search-and-report.md"
   },
   {
-    "id": "pa-ppp-database",
-    "name": "PA PPP Database",
-    "description": "OSINT tool: PA PPP Database.",
-    "url": "https://public.flourish.studio/visualisation/3105919/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "chicago-police-department-demographics",
-      "george-floyd-where-black-people-are-most-disproportionately-killed-by-police",
-      "iowa-cities-police-budgets",
-      "maine-county-law-enforcement-discipline-chart"
-    ],
-    "_file": "library/tools/public-records/pa-ppp-database.md"
-  },
-  {
     "id": "pa-school-districts-deeds-user-facing-web-search",
     "name": "PA School Districts Deeds user-facing web search",
     "description": "OSINT tool: PA School Districts Deeds user-facing web search.",
@@ -256836,36 +256572,54 @@
   },
   {
     "id": "postcert",
-    "name": "postcert",
-    "description": "OSINT tool: postcert.",
+    "name": "Colorado POST Officer Certification Database",
+    "description": "Use when you have a `name` and want to verify a Colorado peace officer's certification, employment status, and any decertification/misconduct — returns certification status, `employer-org` agency, and revocation actions.",
     "url": "https://post.coag.gov/s/?tabset-1eada=4b5ff",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming whether a named Colorado peace officer is certified and surfacing decertification/misconduct actions.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public government database run by the Colorado Attorney General's POST program; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public accountability database; querying it discloses nothing to the officer and needs no login. Fully passive. The data is intentionally public under Colorado transparency law.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Colorado POST (Peace Officer Standards and Training) database, maintained by the Colorado Attorney General's office and updated at least monthly — authoritative for certification status.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Colorado POST database",
+      "post.coag.gov",
+      "Peace Officer Standards and Training Colorado"
+    ],
+    "tags": [
+      "law-enforcement",
+      "accountability",
+      "public-records",
+      "colorado"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/postcert.md"
   },
   {
@@ -263087,47 +262841,55 @@
   {
     "id": "south-carolina-registered-voter-verification",
     "name": "South Carolina Registered Voter Verification",
-    "description": "South Carolina registered voter verification and search",
+    "description": "Use when you have a `name` + `dob` (and county) for a South Carolina resident and want to confirm voter registration — returns registration status, precinct/polling place, and districts.",
     "url": "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=VoterInfo",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a South Carolina resident's active voter registration and their precinct/districts.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "address",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official state election-commission tool; no account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "A query to the state voter-inquiry system discloses nothing to the person and needs no login. Passive. Voter-registration status is public record in SC, but handle any resulting address with care.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official South Carolina State Election Commission voter-inquiry tool (scvotes.sc.gov) — authoritative for registration status.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+    "registration": false,
+    "invitationOnly": false,
+    "aliases": [
+      "SC voter registration lookup",
+      "scvotes voter inquiry",
+      "MySCVotes"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "voter-records",
+      "public-records",
+      "south-carolina"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/south-carolina-registered-voter-verification.md"
   },
   {
@@ -283686,46 +283448,6 @@
     "_file": "library/tools/search-engines/code-search/gitleaks.md"
   },
   {
-    "id": "givewater",
-    "name": "giveWater",
-    "description": "Charitable search engine that supports a clean water initiative.",
-    "url": "https://www.givewater.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/givewater.md"
-  },
-  {
     "id": "globalfile",
     "name": "GlobalFile",
     "description": "Discovering publicly accessible files on FTP servers by filename or file type",
@@ -284082,41 +283804,51 @@
   {
     "id": "goofile",
     "name": "Goofile",
-    "description": "File search engine",
+    "description": "Use when you have a `domain` and want to find public files of a given type hosted on it — returns URLs of documents (pdf, docx, xls, etc.) that may carry `metadata-exif` and names.",
     "url": "https://www.kali.org/tools/goofile/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Enumerating files of a specific extension on a target domain for document/metadata recon.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free, open-source CLI packaged in Kali Linux. Reliable use benefits from a (free-tier) Google Custom Search API key/CSE ID to avoid scraping blocks.",
+    "opsec": "active",
+    "opsecNote": "It runs search-engine queries (optionally via Google CSE) from your IP to enumerate a target's files — active reconnaissance against the domain owner's exposed documents. Use a sock-puppet IP/API key; downloading the found files is a further active step.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A long-standing recon utility maintained in the Kali repositories (v1.6, updated 2025); it depends on search-engine access, so results vary with engine cooperation and any API key you supply.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+    "invitationOnly": false,
+    "aliases": [
+      "goofile kali",
+      "goofile filetype search"
     ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "document-recon",
+      "filetype-search",
+      "kali"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "relatedTools": [
       "kali-linux",
       "kali-linux-os"
@@ -309847,50 +309579,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/wowjobs-canada.md"
-  },
-  {
-    "id": "wowwiki-world-of-warcraft-wiki",
-    "name": "WoWWiki World of Warcraft Wiki",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on the World of Worldcraft game",
-    "url": "https://wowpedia.fandom.com/wiki/Wowpedia",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "criminology-wiki",
-      "wikiaentertainment"
-    ],
-    "_file": "library/tools/search-engines/wowwiki-world-of-warcraft-wiki.md"
   },
   {
     "id": "wpscan",

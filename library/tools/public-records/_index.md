@@ -77,7 +77,6 @@ kind: group-index
 - **`arivify`** (medium) — Use when you have a `name` or `address` and want US property assessment/ownership records for it — returns owner name, address and property 
 - **`arizona-genealogy-birth-and-death-certificates`** (medium) — Searchable database of public Arizona birth and death certificates - birth records available from 1885 to 1937 and death records available f
 - **`arizona-inmate-datasearch`** (high) — Use when you have a `name` and want to check Arizona state prison custody — returns inmate records with ADC number, DOB, status and facility
-- **`arizona-le-database-abc15`** (medium) — OSINT tool: Arizona LE Database - ABC15.
 - **`arkansas-ashley-county-ledger-search-united-states`** (medium) — Geneology-related search for ancestral, family, and historical records, using a database from multiple countries
 - **`arkansas-department-of-correction`** (high) — Use when you have a `name` of someone who may be incarcerated in Arkansas and want their inmate record — returns `name`, `dob`/age, ADC `doc
 - **`arrest-warrants`** (high) — Use when you have a `name` and want to find an outstanding US arrest warrant — a directory routing you to free state/county warrant searches
@@ -105,7 +104,6 @@ kind: group-index
 - **`bgafd-co-uk`** (medium) — Use when you need to identify a British adult-film performer by stage name and resolve aliases/physical description — a niche performer data
 - **`big101-obituaries-listing-north-america`** (high) — Use when you have a `name` (and a US state/Canadian region) and want to find an obituary/death notice — a meta-directory of newspaper obitua
 - **`bigquery-public-datasets`** (low) — OSINT tool: BigQuery public datasets.
-- **`bikudo`** (medium) — Business directory of manufacturers and suppliers
 - **`billiongraves-com`** (high) — Use when you have a `name` and want burial/headstone records — returns death/birth dates, GPS-tagged cemetery location and family members bu
 - **`binlist`** (low) — OSINT tool: Binlist.
 - **`birmingham-public-library-databases`** (high) — Use when you have a `name` linked to Alabama/Birmingham and want niche local-history records (coal-mine fatalities, obituaries, church regis
@@ -203,7 +201,6 @@ kind: group-index
 - **`connecticut`** (high) — Use when you have a `name` or DOC number and want to locate a person currently held in Connecticut state prison/jail — returns custody statu
 - **`connvoters-com`** (high) — Use when you have a `name` (and roughly a Connecticut location) and want the subject's registered address, town, party and DOB from the stat
 - **`cop26-registered-attendees`** (low) — Use when you have a `name`/`employer-org` possibly present at the 2021 UN COP26 summit and want to confirm attendance — returns their listed
-- **`coplookup-com`** (medium) — OSINT tool: Coplookup.com.
 - **`coraweb-birth-death-and-marriage-records-australia`** (high) — Use when you have a `name` and an Australian connection and want a curated directory of BDM/vital-record and genealogy sources to search — r
 - **`cornell-legal-information-institute-united-states`** (medium) — Use when you have a `name`, statute cite, or legal topic and want authoritative free US law and court opinions — returns document-id, name.
 - **`coronavirus-bailouts-search-every-company-approved-for-federal-loans-over-150k`** (medium) — OSINT tool: Coronavirus Bailouts: Search Every Company Approved for Federal Loans Over $150k.
@@ -366,7 +363,7 @@ kind: group-index
 - **`gazettes-africa`** (high) — Use when you have a `name`/`employer-org` and want to full-text search African government gazettes for official notices (directorships, name
 - **`gdc-uk-org`** (high) — Use when you have a `name` (or registration number) and want to confirm a UK dental professional's registration, status and area — returns c
 - **`gendatabase-com`** (high) — Use when you have a `name` of a deceased South African and want genealogy/vital records (birth, death, marriage, estate, voter roll, ID) — r
-- **`genealogical-prison-records`** (medium) — Site providing genealogical prison and insane asylum records for the US, UK and Canada
+- **`genealogical-prison-records`** (medium) — Use when you have a historical `name` and want free genealogical prison, court, execution, and asylum records for the US/UK/Canada — returns
 - **`genealogy-links-us-and-other-countries`** (high) — Use when you have a `name` and a region and want a curated gateway to vital-records and census sources — returns links leading to name, dob,
 - **`genealogy`** (high) — Use when you have a `name` and want to check death records / obituaries to confirm a person is deceased and surface relatives — returns `dob
 - **`genealogybank-ssdi`** (medium) — Use when you have a `name` (and maybe `dob`) and want to confirm a death or find an obituary — returns Social Security Death Index and obitu
@@ -757,7 +754,6 @@ kind: group-index
 - **`pa-2017-certificate-actions-education`** (medium) — OSINT tool: PA 2017 Certificate Actions (Education).
 - **`pa-forfeiture-2010-2016-search`** (medium) — OSINT tool: PA Forfeiture 2010-2016 Search.
 - **`pa-perry-county-2017-compensation-search-and-report`** (medium) — OSINT tool: PA Perry County 2017 Compensation Search and Report.
-- **`pa-ppp-database`** (medium) — OSINT tool: PA PPP Database.
 - **`pa-school-districts-deeds-user-facing-web-search`** (medium) — OSINT tool: PA School Districts Deeds user-facing web search.
 - **`pacer-2`** (high) — Use when you have a `name` (party, attorney, or business) and want to find US federal court cases and dockets involving them — returns name,
 - **`pacer-case-locator`** (high) — Use when you have a `name` and want to find any US federal court cases (civil, criminal, bankruptcy, appellate) a person is party to — retur
@@ -799,7 +795,7 @@ kind: group-index
 - **`pomanda-com`** (high) — Use when you have a company `name`, a director `name`, or an `address` in the UK and want company intelligence and officer links — returns r
 - **`population-reference-bureau-data-finder`** (low) — OSINT tool: Population Reference Bureau Data Finder.
 - **`portugal`** (high) — Use when you have a Portuguese `employer-org` or `name` and want its beneficial owners from the national UBO register — returns `name`, `ass
-- **`postcert`** (medium) — OSINT tool: postcert.
+- **`postcert`** (medium) — Use when you have a `name` and want to verify a Colorado peace officer's certification, employment status, and any decertification/misconduc
 - **`pricepaid`** (medium) — OSINT tool: PricePaid.
 - **`primelocation`** (medium) — OSINT tool: PrimeLocation.
 - **`prison-search-free-prison-inmate-locators`** (high) — Use when you have a `name` and want to find the right official US inmate locator — a state-by-state directory of free federal, state, and co
@@ -920,7 +916,7 @@ kind: group-index
 - **`solocheck-ie`** (high) — Use when you have an Irish company `name` or a director's `name` and want company profiles, directors and addresses — returns `employer-org`
 - **`sortedbybirthdate`** (high) — Use when you have a `dob` (or name) for a deceased US person and want to confirm death details — returns Death Master File entries with name
 - **`sortedbyname-com`** (high) — Use when you have a `name` and want genealogy/vital-record leads (births, marriages, deaths) indexed by surname — returns links to public re
-- **`south-carolina-registered-voter-verification`** (medium) — South Carolina registered voter verification and search
+- **`south-carolina-registered-voter-verification`** (medium) — Use when you have a `name` + `dob` (and county) for a South Carolina resident and want to confirm voter registration — returns registration 
 - **`south-dakota`** (high) — Use when you have a `name` and want to confirm someone is/was in South Dakota state custody — returns offender records with DOB, ID number, 
 - **`spain`** (high) — Use when you have a Spanish company `name`, director `name` or `address` and want official mercantile-registry records — returns employer-or
 - **`spotlight-com`** (high) — Use when you have a `name` for someone in the UK entertainment industry and want to find their professional profile or the agents/services a
