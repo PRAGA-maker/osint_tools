@@ -566,7 +566,7 @@ kind: group-index
 - **`snapvip`** (medium) — OSINT tool: Snapvip.
 - **`snradar`** (medium) — OSINT tool: Snradar.
 - **`snscrape`** (high) — Use when you have a `username`, hashtag, or keyword and want to bulk-collect a social account's public posts without an API key — returns po
-- **`social-blade`** (medium) — help you track YouTube Channel Statistics, Twitch User Stats, Instagram Stats, and much more
+- **`social-blade`** (medium) — Use when you have a `username`/channel on YouTube, Twitch, Instagram, TikTok or X and want growth stats and account history — returns `socia
 - **`social-media-osint-tools-collection`** (high) — Use when you have a `username`, `name`, `email`, or `phone` and want to find the right platform-specific SOCMINT tool — returns a curated ca
 - **`social-media-salary-calculator`** (medium) — for YouTube, TikTok, Instagram
 - **`social-mention`** (medium) — OSINT tool: Social Mention.
@@ -780,7 +780,6 @@ kind: group-index
 - **`weibo-china`** (high) — Use when you have a Chinese-context `name`/`username` and want their microblog presence — returns the `social-profile`, posts, photos (`imag
 - **`weibo-com`** (high) — Use when you have a username or name and want to find a subject's Chinese-language social presence — returns social profiles, posts, photos 
 - **`whopostedwhat-com`** (high) — Use when you have a `name`/keyword and a date and want Facebook posts from that exact day/range — returns social-profile and post leads arou
-- **`whotwi`** (medium) — OSINT tool: whotwi.
 - **`wikimedia-cloud-page-views`** (medium) — The tool shows how many times a particular page on WikiPedia has been visited within a certain period of time. It also allows you to compare
 - **`wikipedia-cross-lingual-image-analysis`** (medium) — A simple tool that allows to evaluate the content of different language versions of an #wikipedia article about the same subject or concept 
 - **`wikistalk-analyze-wikipedia-user-s-activity`** (medium) — OSINT tool: WikiStalk : Analyze Wikipedia User's Activity.
@@ -821,7 +820,7 @@ kind: group-index
 - **`youtube-dl`** (medium) — OSINT tool: youtube-dl.
 - **`youtube-geo-search-tool`** (medium) — OSINT tool: Youtube Geo Search Tool.
 - **`youtube-lookup`** (medium) — Simple tool for gathering info about video: Content details, Snippet details, Statistics, Status, Thumbnails
-- **`youtube-metadata-bulk`** (medium) — OSINT tool: YouTube Metadata Bulk.
+- **`youtube-metadata-bulk`** (medium) — Use when you have a YouTube channel/playlist (`social-profile`) and want per-video metadata at scale — returns `geolocation` geotags, upload
 - **`youtube-periscope-twitch-and-dailymotion`** (medium) — OSINT tool: Youtube, Periscope, Twitch & Dailymotion.
 - **`youtube-playlist-len`** (medium) — Find out the total time of all the videos in playlist
 - **`youtube-scraper`** (medium) — Extract and download channel name, likes, number of views, and number of subscribers. Scrape by keyword or URL.

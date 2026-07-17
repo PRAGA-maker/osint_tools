@@ -36,6 +36,7 @@ relatedTools:
 - federal-corporation-search-canada
 - government-of-canada-open-data
 - canadian-intellectual-property-office
+- canadian-trademarks-database
 aliases: []
 tags: []
 source: arf-seed

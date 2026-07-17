@@ -35,6 +35,12 @@ relatedTools:
 - mxtoolbox
 - mx-toolbox-reverse-ip-search
 - iana-whois-service
+- email-header-analyzer
+- mx-toolbox-blacklist-check
+- mx-toolbox-email-header-analyzer
+- mxtoolbox-blacklists
+- mxtoolbox-com
+- mxtoolbox-com-2
 aliases:
 - MXToolbox WHOIS
 - mxtoolbox.com/Whois.aspx

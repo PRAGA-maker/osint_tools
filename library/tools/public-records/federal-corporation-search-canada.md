@@ -44,6 +44,7 @@ relatedTools:
 - gov-data-canada
 - government-of-canada-open-data
 - canadian-intellectual-property-office
+- canadian-trademarks-database
 ---
 
 # Federal Corporation Search (Canada)

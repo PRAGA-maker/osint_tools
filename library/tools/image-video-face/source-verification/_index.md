@@ -7,7 +7,7 @@ kind: group-index
 # image-video-face/source-verification
 
 ## Skills here
-- **`fotoforensics`** (medium) — Detecting likely image manipulation and compression artifacts
+- **`fotoforensics`** (medium) — Use when you have an `image` and want to test for manipulation and read embedded metadata — returns `metadata-exif` and any `geolocation` GP
 - **`verification-handbook`** (medium) — Learning repeatable verification workflows for UGC and breaking news
 - **`verification-junkie`** (medium) — Discovering verification tools and practitioner-oriented references
 

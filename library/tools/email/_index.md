@@ -183,7 +183,7 @@ kind: group-index
 - **`reversecontact`** (high) — Use when you have an `email` (or domain) and want to resolve it to a real person and their LinkedIn/work identity — returns `name`, `social-
 - **`reversegenie`** (low) — Use when attempting a reverse-email-to-owner lookup via the legacy ReverseGenie site — an old, likely-defunct people-search aggregator.
 - **`robtex-com`** (low) — Use when you have a domain or IP (e.g. from an email's mail server or a registered domain) and want its DNS, hosting, and related-domain gra
-- **`scamsearch`** (medium) — Database of reported scammer identifiers searchable by email/phone/wallet.
+- **`scamsearch`** (medium) — Use when you have an `email`, `phone`, `username`, `image` or `crypto-wallet` and want to check it against reported-scammer records — return
 - **`scatteredsecrets-com`** (medium) — Use when you have an email and want to know which breaches it appears in and any exposed/cracked passwords — Scattered Secrets is a breached
 - **`scylla-so`** (medium) — Use when you want to search an email/username against leaked-breach records — Scylla was a breach-data search engine with intermittent avail
 - **`search-ashley-madison-leaked-data`** (high) — Use when you have an email and want to check whether it appeared in the 2015 Ashley Madison breach — returns a breach hit/miss signal.

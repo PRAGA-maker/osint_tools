@@ -7,7 +7,7 @@ kind: group-index
 # financial-crypto/bitcoin
 
 ## Skills here
-- **`bitcoin-who-s-who`** (medium) — Bitcoin address scam reports and community tagging
+- **`bitcoin-who-s-who`** (medium) — Use when you have a `crypto-wallet` (BTC address) and want owner tags, scam reports and linked websites — returns `domain`, `social-profile`
 - **`bitref`** (medium) — Bitcoin address balance lookup and transaction analysis
 - **`blockonomics`** (medium) — Bitcoin payment integration and address monitoring for developers
 - **`orbit`** (medium) — Bitcoin transaction network visualization and wallet relationship mapping

@@ -834,7 +834,7 @@ kind: group-index
 - **`regional-municipality-of-durham`** (medium) — OSINT tool: Regional Municipality of Durham.
 - **`registrant-directory`** (medium) — OSINT tool: Registrant directory.
 - **`registrant-lookup`** (low) — OSINT tool: Registrant Lookup.
-- **`rehold`** (medium) — OSINT tool: rehold.
+- **`rehold`** (medium) — Use when you have a US `address` and want current/historical residents plus their phones — returns `name`, `phone`, `associate`, property de
 - **`rejestr-sprawc-w-przest-pstw-na-tle-seksualnym`** (high) — Use when you have a `name` of a person possibly convicted of a sexual offence in Poland and want the official public sex-offender register e
 - **`related-list`** (medium) — find company-related contacts and confidential documents leaked online
 - **`rental-in-canada`** (low) — OSINT tool: Rental in Canada.
@@ -991,7 +991,7 @@ kind: group-index
 - **`trellis`** (medium) — State-court records and analytics search.
 - **`trinka`** (medium) — A partly free online tool to help you prepare a research paper for publication: AI Grammar; Checker (made especially for scientific papers);
 - **`trouver-une-d-cision`** (medium) — OSINT tool: Trouver une décision.
-- **`trulia-real-estate-listings-homes-for-sale-housing-data`** (medium) — OSINT tool: Trulia: Real Estate Listings, Homes For Sale, Housing Data.
+- **`trulia-real-estate-listings-homes-for-sale-housing-data`** (medium) — Use when you have a US `address` and want property details, listing/sale history and neighborhood data — returns `address`-level property re
 - **`trump-twitter-archive`** (low) — OSINT tool: Trump Twitter Archive.
 - **`trustmark-org-uk`** (medium) — Use when you have a UK tradesperson/business `name` or trade + location and want to confirm TrustMark registration — returns the registered 
 - **`tsa-no-fly-list`** (low) — OSINT tool: TSA No-Fly List.

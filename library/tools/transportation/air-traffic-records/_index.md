@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`ads-b-exchange`** (medium) — Unfiltered aircraft tracking and historical flight pattern analysis
 - **`ads-b-nl`** (medium) — European and military aircraft movement monitoring
-- **`flightradar24-com`** (medium) — Aircraft movement monitoring and flight status intelligence
+- **`flightradar24-com`** (medium) — Use when you have an aircraft registration (tail number), flight number or airport and want live/recent position and routing — returns `geol
 - **`openaip-world-aeronautical-database`** (medium) — Airspace and airfield intelligence with reusable open data
 - **`world-aeronautical-database`** (medium) — Aviation reference checks for airports, airlines, and aircraft
 

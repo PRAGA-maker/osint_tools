@@ -34,6 +34,13 @@ registration: false
 relatedTools:
 - opencorporates
 - uspto-trademark-search
+- canadian-business-research
+- canadian-department-of-finance
+- canadian-intellectual-property-office
+- completed-access-to-information-requests
+- federal-corporation-search-canada
+- gov-data-canada
+- government-of-canada-open-data
 aliases:
 - CIPO Trademarks
 - Canadian Trademarks Database

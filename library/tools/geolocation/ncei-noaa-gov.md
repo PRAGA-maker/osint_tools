@@ -32,6 +32,7 @@ relatedTools:
 - noaa-data-access-viewer
 - nexrad-data-inventory-search
 - ngdc-bathymetry-map
+- noaa-fisheries-vessel-search
 aliases:
 - NOAA Natural Hazards Viewer
 - ncei.noaa.gov hazards

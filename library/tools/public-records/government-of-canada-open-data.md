@@ -37,6 +37,7 @@ relatedTools:
 - federal-corporation-search-canada
 - gov-data-canada
 - canadian-intellectual-property-office
+- canadian-trademarks-database
 ---
 
 # Government of Canada Open Data

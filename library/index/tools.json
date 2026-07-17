@@ -66082,42 +66082,43 @@
   {
     "id": "arin",
     "name": "ARIN",
-    "description": "OSINT tool: ARIN.",
+    "description": "Use when you have an `ip-address` or ASN and want the North American registrant org, address and abuse contacts — returns `employer-org`, `address`, `email`, `phone`.",
     "url": "https://www.arin.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Resolving who an IPv4/IPv6 block or ASN in North America is registered to.",
     "selectorsIn": [
-      "domain"
+      "ip-address",
+      "employer-org"
     ],
     "selectorsOut": [
-      "domain"
+      "employer-org",
+      "address",
+      "email",
+      "phone",
+      "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public registry lookups via Whois-RWS and RDAP; no account needed. Bulk Whois access requires a signed AUP.",
+    "opsec": "passive",
+    "opsecNote": "A Whois/RDAP query hits ARIN's public registry, not the target's own infrastructure, so it does not touch or alert the subject. Rate limits apply per source IP; heavy automated querying can get you throttled.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "ARIN is the authoritative Regional Internet Registry for North America; registration records are first-party and definitive for allocation ownership.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "account-arin-net",
       "arin-net",
@@ -66125,6 +66126,20 @@
       "whois-arin",
       "whois-arin-online"
     ],
+    "aliases": [
+      "American Registry for Internet Numbers",
+      "ARIN Whois-RWS",
+      "ARIN RDAP"
+    ],
+    "tags": [
+      "domainsandips",
+      "Domains & IPs",
+      "whois",
+      "ip-address"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/arin.md"
   },
   {
@@ -82331,7 +82346,13 @@
     "relatedTools": [
       "mxtoolbox",
       "mx-toolbox-reverse-ip-search",
-      "iana-whois-service"
+      "iana-whois-service",
+      "email-header-analyzer",
+      "mx-toolbox-blacklist-check",
+      "mx-toolbox-email-header-analyzer",
+      "mxtoolbox-blacklists",
+      "mxtoolbox-com",
+      "mxtoolbox-com-2"
     ],
     "aliases": [
       "MXToolbox WHOIS",
@@ -107014,31 +107035,36 @@
   {
     "id": "scamsearch",
     "name": "ScamSearch",
-    "description": "Database of reported scammer identifiers searchable by email/phone/wallet.",
+    "description": "Use when you have an `email`, `phone`, `username`, `image` or `crypto-wallet` and want to check it against reported-scammer records — returns matched scammer identifiers.",
     "url": "https://scamsearch.io/",
     "category": "email",
     "path": [
       "email"
     ],
-    "bestFor": "Search scammer reports by email, phone, or crypto wallet.",
+    "bestFor": "Checking whether a contact identifier appears in a global database of reported scammers.",
     "selectorsIn": [
       "email",
       "phone",
-      "crypto-wallet"
+      "crypto-wallet",
+      "username",
+      "image"
     ],
     "selectorsOut": [
       "email",
-      "phone"
+      "phone",
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Basic search is free and needs no account; PDF reports, monitoring and live reverse-profile lookups require a paid membership.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries ScamSearch's own reported-scammer dataset; the search does not contact the identifier's owner. Do not submit a report casually — reports are public and could expose your interest.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Crowd-sourced/aggregated scam reports; entries are user-submitted and unverified, so a hit is a lead to corroborate, and an absence proves nothing.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -107047,16 +107073,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ScamSearch.io",
+      "Scam Search"
+    ],
     "tags": [
       "email",
       "phone",
       "scam",
-      "fraud"
+      "fraud",
+      "crypto"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/email/scamsearch.md"
   },
   {
@@ -111919,31 +111949,40 @@
   {
     "id": "bitcoin-who-s-who",
     "name": "Bitcoin Who's Who",
-    "description": "Bitcoin address scam reports and community tagging",
+    "description": "Use when you have a `crypto-wallet` (BTC address) and want owner tags, scam reports and linked websites — returns `domain`, `social-profile`, `associate` leads.",
     "url": "https://www.bitcoinwhoswho.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "bitcoin"
     ],
-    "bestFor": "Bitcoin address scam reports and community tagging",
-    "input": "Bitcoin address, wallet identifier, or transaction hash",
-    "output": "Address profile, transaction history, scam reports, community tags",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Attributing a Bitcoin address to reported owners, scam reports and websites where it appeared.",
+    "selectorsIn": [
+      "crypto-wallet",
+      "name",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile",
+      "associate"
+    ],
     "status": "live",
-    "pricing": "free",
+    "pricing": "freemium",
+    "costNote": "Free address lookups, scam reports and block explorer; account and API (paid tiers) unlock alerts and higher-volume queries.",
     "opsec": "passive",
-    "opsecNote": "Direct lookup of public blockchain data; no registration required for basic queries.",
+    "opsecNote": "Reads public blockchain data plus community-submitted reports; the query is not visible to the wallet owner. If you submit a report or tag, that content is public — do not disclose your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregates public chain data with crowd-sourced scam reports and tags; the crowd-sourced attribution is unverified and can be gamed, so corroborate before relying on it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
@@ -111951,11 +111990,19 @@
     "relatedTools": [
       "bitcoinwhoswho"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "BitcoinWhosWho",
+      "Bitcoin Who Is Who"
+    ],
+    "tags": [
+      "bitcoin",
+      "crypto",
+      "scam",
+      "blockchain"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/bitcoin/bitcoin-who-s-who.md"
   },
   {
@@ -126377,7 +126424,8 @@
     "relatedTools": [
       "noaa-data-access-viewer",
       "nexrad-data-inventory-search",
-      "ngdc-bathymetry-map"
+      "ngdc-bathymetry-map",
+      "noaa-fisheries-vessel-search"
     ],
     "aliases": [
       "NOAA Natural Hazards Viewer",
@@ -140253,29 +140301,35 @@
   {
     "id": "fotoforensics",
     "name": "FotoForensics",
-    "description": "Detecting likely image manipulation and compression artifacts",
+    "description": "Use when you have an `image` and want to test for manipulation and read embedded metadata — returns `metadata-exif` and any `geolocation` GPS tags.",
     "url": "https://fotoforensics.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "source-verification"
     ],
-    "bestFor": "Detecting likely image manipulation and compression artifacts",
-    "input": "Image upload or image URL",
-    "output": "Forensic visualizations and manipulation indicators",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether a photo has been edited and extracting its EXIF/metadata (including GPS).",
+    "selectorsIn": [
+      "image"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; no account required for standard analysis.",
     "opsec": "active",
-    "opsecNote": "Uploaded files are processed by a third-party online service.",
+    "opsecNote": "Uploads are sent to a third party (Hacker Factor) and are RETAINED and can appear in the public feed of recent submissions. Never upload a sensitive/private image or one that could tip off a subject. Analyse a copy, and prefer a local tool if the image must stay private.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by Neal Krawetz / Hacker Factor, a recognised authority on image forensics; ELA is an indicator, not proof — interpretation requires care.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -140285,11 +140339,19 @@
     "relatedTools": [
       "fotoforensics-com"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Foto Forensics",
+      "Hacker Factor FotoForensics"
+    ],
+    "tags": [
+      "image-forensics",
+      "ela",
+      "exif",
+      "metadata"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/source-verification/fotoforensics.md"
   },
   {
@@ -222736,7 +222798,8 @@
       "federal-corporation-search-canada",
       "gov-data-canada",
       "government-of-canada-open-data",
-      "canadian-intellectual-property-office"
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database"
     ],
     "_file": "library/tools/public-records/canadian-business-research.md"
   },
@@ -222935,7 +222998,8 @@
       "completed-access-to-information-requests",
       "federal-corporation-search-canada",
       "gov-data-canada",
-      "government-of-canada-open-data"
+      "government-of-canada-open-data",
+      "canadian-trademarks-database"
     ],
     "aliases": [
       "CIPO",
@@ -223142,7 +223206,14 @@
     "registration": false,
     "relatedTools": [
       "opencorporates",
-      "uspto-trademark-search"
+      "uspto-trademark-search",
+      "canadian-business-research",
+      "canadian-department-of-finance",
+      "canadian-intellectual-property-office",
+      "completed-access-to-information-requests",
+      "federal-corporation-search-canada",
+      "gov-data-canada",
+      "government-of-canada-open-data"
     ],
     "aliases": [
       "CIPO Trademarks",
@@ -225634,7 +225705,8 @@
       "federal-corporation-search-canada",
       "gov-data-canada",
       "government-of-canada-open-data",
-      "canadian-intellectual-property-office"
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database"
     ],
     "_file": "library/tools/public-records/completed-access-to-information-requests.md"
   },
@@ -231898,7 +231970,14 @@
     "relatedTools": [
       "family-search",
       "familysearch-research-wiki",
-      "familysearch-org"
+      "familysearch-org",
+      "alabama-deaths",
+      "colorado-statewide-marriage-index",
+      "familysearch",
+      "familysearch-2",
+      "familysearch-births-and-baptisms-1972-1981-australia",
+      "familysearch-deaths-and-burials-1816-1980-australia",
+      "familysearch-free-family-trees-and-genealogy-archives-familysearch-org"
     ],
     "aliases": [
       "Guessing a Name Variation",
@@ -232251,7 +232330,8 @@
       "completed-access-to-information-requests",
       "gov-data-canada",
       "government-of-canada-open-data",
-      "canadian-intellectual-property-office"
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database"
     ],
     "_file": "library/tools/public-records/federal-corporation-search-canada.md"
   },
@@ -236524,7 +236604,8 @@
       "completed-access-to-information-requests",
       "federal-corporation-search-canada",
       "government-of-canada-open-data",
-      "canadian-intellectual-property-office"
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database"
     ],
     "aliases": [],
     "tags": [],
@@ -237801,7 +237882,8 @@
       "completed-access-to-information-requests",
       "federal-corporation-search-canada",
       "gov-data-canada",
-      "canadian-intellectual-property-office"
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database"
     ],
     "_file": "library/tools/public-records/government-of-canada-open-data.md"
   },
@@ -258524,36 +258606,56 @@
   },
   {
     "id": "rehold",
-    "name": "rehold",
-    "description": "OSINT tool: rehold.",
+    "name": "Rehold",
+    "description": "Use when you have a US `address` and want current/historical residents plus their phones — returns `name`, `phone`, `associate`, property details.",
     "url": "https://rehold.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reverse US address lookup returning current and past residents, neighbors and phone numbers.",
+    "selectorsIn": [
+      "address",
+      "name",
+      "phone"
+    ],
+    "selectorsOut": [
+      "name",
+      "phone",
+      "associate",
+      "address"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Reverse address/phone lookups return free results; unlimited profile access and some contact details prompt a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries Rehold's aggregated public-records dataset, not the subject; no notice reaches the person. As with all people-aggregators, treat results as leads and mind local data-protection rules when acting on them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Commercial data-broker aggregation of public property and contact records; coverage is broad but records can be stale or conflated between people at the same address.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Rehold.com",
+      "Rehold Address Directory"
+    ],
+    "tags": [
+      "property",
+      "reverse-address",
+      "people-search",
+      "public-records"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/rehold.md"
   },
   {
@@ -266279,46 +266381,51 @@
   {
     "id": "trulia-real-estate-listings-homes-for-sale-housing-data",
     "name": "Trulia: Real Estate Listings, Homes For Sale, Housing Data",
-    "description": "OSINT tool: Trulia: Real Estate Listings, Homes For Sale, Housing Data.",
+    "description": "Use when you have a US `address` and want property details, listing/sale history and neighborhood data — returns `address`-level property records.",
     "url": "https://www.trulia.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up a US property's listing/sale history, photos and neighborhood profile by address.",
     "selectorsIn": [
-      "name",
       "address"
     ],
     "selectorsOut": [
-      "address",
-      "name"
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse listings and property pages; an account is only needed to save homes/searches or contact agents.",
+    "opsec": "passive",
+    "opsecNote": "Browsing property pages is passive and anonymous to the subject. Contacting a listing agent, however, is an active step that creates a record — do not do so during an investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Zillow-owned major US listing portal; listing and sale data are sourced from MLS/public records and are reliable, though not every off-market property is covered.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "property"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "trulia-united-states"
     ],
+    "aliases": [
+      "Trulia"
+    ],
+    "tags": [
+      "property",
+      "real-estate",
+      "public-records"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/trulia-real-estate-listings-homes-for-sale-housing-data.md"
   },
   {
@@ -276124,7 +276231,8 @@
       "federal-corporation-search-canada",
       "gov-data-canada",
       "government-of-canada-open-data",
-      "canadian-intellectual-property-office"
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database"
     ],
     "_file": "library/tools/search-engines/canadian-department-of-finance.md"
   },
@@ -340100,41 +340208,53 @@
   {
     "id": "social-blade",
     "name": "Social Blade",
-    "description": "help you track YouTube Channel Statistics, Twitch User Stats, Instagram Stats, and much more",
+    "description": "Use when you have a `username`/channel on YouTube, Twitch, Instagram, TikTok or X and want growth stats and account history — returns `social-profile` metadata and activity trends.",
     "url": "https://socialblade.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling public follower/subscriber history, growth rate and creation-era signals for a social account.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Core stats are free without login; historical depth, exports and API access require a paid plan or account.",
+    "opsec": "passive",
+    "opsecNote": "You query Social Blade's own aggregated dataset, not the target's account; the subject is not notified and no interaction reaches their profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Well-established third-party analytics aggregator; follower counts are accurate but growth estimates and rankings are their own calculations, not platform-official figures.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Universal"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "socialblade"
     ],
+    "aliases": [
+      "SocialBlade",
+      "Social Blade Stats"
+    ],
+    "tags": [
+      "Social Media",
+      "Universal",
+      "analytics"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/social-blade.md"
   },
   {
@@ -351527,48 +351647,6 @@
     "_file": "library/tools/social-networks/whopostedwhat-com.md"
   },
   {
-    "id": "whotwi",
-    "name": "whotwi",
-    "description": "OSINT tool: whotwi.",
-    "url": "https://en.whotwi.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/whotwi.md"
-  },
-  {
     "id": "wikimedia-cloud-page-views",
     "name": "WikiMedia Cloud Page Views",
     "description": "The tool shows how many times a particular page on WikiPedia has been visited within a certain period of time. It also allows you to compare 2 or more pages with each other. Who is more popular?",
@@ -353483,40 +353561,57 @@
   {
     "id": "youtube-metadata-bulk",
     "name": "YouTube Metadata Bulk",
-    "description": "OSINT tool: YouTube Metadata Bulk.",
+    "description": "Use when you have a YouTube channel/playlist (`social-profile`) and want per-video metadata at scale — returns `geolocation` geotags, upload patterns and `metadata-exif`-style details.",
     "url": "https://mattw.io/youtube-metadata/bulk",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Bulk-extracting metadata, geotags and upload cadence across all of a channel's or playlist's videos.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "metadata-exif",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser tool; runs on a shared YouTube Data API quota, so very large channels may hit a rate limit until quota resets (or you supply your own API key).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads public YouTube Data API metadata; the channel owner is not notified. All processing is client-side in your browser. Analysing a channel does not interact with it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Open, well-regarded independent tool by mattw.io; it surfaces exactly what the YouTube API returns, so accuracy tracks the platform data itself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "location-search",
       "search-youtube-by-location",
       "youtube-metadata"
     ],
+    "aliases": [
+      "mattw.io YouTube Metadata Bulk",
+      "YouTube Bulk Metadata"
+    ],
+    "tags": [
+      "youtube",
+      "metadata",
+      "geolocation"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-metadata-bulk.md"
   },
   {
@@ -362361,31 +362456,37 @@
   {
     "id": "flightradar24-com",
     "name": "Flightradar24.com",
-    "description": "Aircraft movement monitoring and flight status intelligence",
+    "description": "Use when you have an aircraft registration (tail number), flight number or airport and want live/recent position and routing — returns `geolocation`, operator `employer-org`.",
     "url": "https://www.flightradar24.com/",
     "category": "transportation",
     "path": [
       "transportation",
       "air-traffic-records"
     ],
-    "bestFor": "Aircraft movement monitoring and flight status intelligence",
-    "input": "Flight number, aircraft registration, or airport code",
-    "output": "Real-time position, altitude, speed, routing, and departure/arrival status",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Tracking a specific aircraft's live position and recent movements by tail number or flight number.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier gives live tracking and 24h of history; Silver/Gold subscriptions unlock 90/365 days of playback and more filters. API access is paid.",
     "opsec": "passive",
-    "opsecNote": "Passive monitoring of broadcast and aggregated flight telemetry.",
+    "opsecNote": "You read aggregated ADS-B/MLAT broadcast telemetry; nothing you do reaches the aircraft, crew or owner. Tracking a private/blocked tail may hit an ADS-B Exchange-style privacy filter (FR24 honours the FAA LADD/PIA block list).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established, widely-cited flight-tracking aggregator; used by newsrooms and Bellingcat. Coverage is best where ADS-B receiver density is high.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
@@ -362393,11 +362494,18 @@
     "relatedTools": [
       "flight-radar-24"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FR24",
+      "Flightradar24"
+    ],
+    "tags": [
+      "aviation",
+      "flight-tracking",
+      "ads-b"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/air-traffic-records/flightradar24-com.md"
   },
   {

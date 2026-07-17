@@ -38,6 +38,7 @@ relatedTools:
 - federal-corporation-search-canada
 - gov-data-canada
 - government-of-canada-open-data
+- canadian-trademarks-database
 aliases:
 - CIPO
 - Canadian Patents Database
