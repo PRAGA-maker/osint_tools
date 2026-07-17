@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`arxiv-org`** (medium) — OSINT tool: arXiv.org.
 - **`bielefeld-academic-search-engine`** (medium) — Broad academic literature search across open-access and institutional repositories
-- **`copyscape-plagiarism-checker`** (medium) — Detecting plagiarism and tracing where specific text or content has been copied or republished online
+- **`copyscape-plagiarism-checker`** (medium) — Use when you have a block of text (a bio, listing, message, or `domain` page) and want to find where else it appears online — returns matchi
 - **`google-scholar`** (medium) — Comprehensive academic literature discovery with citation tracking across all disciplines
 - **`jurn`** (medium) — Use when you have a `name` or research topic and want open-access scholarly work by/about a person — returns article links naming authors, a
 - **`lazy-scholar`** (medium) — Finding free full-text access to paywalled academic papers without institutional subscription

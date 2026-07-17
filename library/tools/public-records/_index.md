@@ -264,7 +264,7 @@ kind: group-index
 - **`denmark`** (high) — Use when you have a Danish company `name`, `address`, or CVR number (or a person's name as an owner/director) and want the official business
 - **`denver-obituary-project`** (high) — Use when you have a `name` of someone who may have died in Colorado (outside Denver) between the 1970s and 1990 and want their obituary — re
 - **`dfw1n-osint`** (medium) — Australia-focused open-source intelligence resource repository.
-- **`diagramify`** (medium) — generates flow charts from the text description. Branching and backtracking are supported
+- **`diagramify`** (medium) — Use when you have investigation findings in prose and want a quick flowchart/relationship diagram from a text description — a workflow/visua
 - **`digital-public-library-of-america`** (medium) — Academic-related search engine providing open access to digitized library resources including images, texts, videos, and sounds
 - **`diligenciagroup-com`** (high) — Use when you have a `name`, `address`, or `employer-org` linked to the Middle East or Africa and want authoritative corporate-registry data,
 - **`directaccessportal-co-uk`** (high) — Use when you have a barrister's `name` (or need to identify one in England & Wales) and want their chambers, practice areas and contact rout
@@ -574,7 +574,7 @@ kind: group-index
 - **`lexisnexis`** (medium) — Legal-related search engine for legal court cases and documents
 - **`libguides-community-search`** (medium) — Academic-related search engine for a database of 394,881 guides by 61,738 librarians at 4419 libraries worldwide
 - **`library-and-archives-canada-lac`** (medium) — OSINT tool: Library and Archives Canada (LAC).
-- **`library-journal-infodocket`** (medium) — Library information docket providing information on industry news
+- **`library-journal-infodocket`** (medium) — Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NE
 - **`library-of-congress-united-states`** (medium) — Largest library in the world allowing users to search for books, audio recordings, videos, newspapers, maps, and more
 - **`library-university-of-michigan-statistics-and-datasets`** (low) — OSINT tool: Library, University of Michigan: Statistics and Datasets.
 - **`list-of-all-criminal-offences-a-to-z`** (high) — Use when you have a charge/offence term (e.g. from a court listing) and want to understand what it means — an Australian legal reference glo

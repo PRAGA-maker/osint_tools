@@ -23060,44 +23060,56 @@
   },
   {
     "id": "webarchive-loc-gov",
-    "name": "Webarchive.loc.gov",
-    "description": "OSINT tool: Webarchive.loc.gov.",
-    "url": "http://webarchive.loc.gov/",
+    "name": "Library of Congress Web Archives",
+    "description": "Use when you have a `domain`/URL or topic and want curated, preserved historical web captures — returns archived pages and `metadata-exif`/dated snapshots.",
+    "url": "https://webarchive.loc.gov/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding preserved historical versions of websites the Library of Congress has curated into thematic web archives (elections, events, government, culture).",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public archive from the U.S. Library of Congress; no account.",
+    "opsec": "passive",
+    "opsecNote": "Reading archived captures is passive — you view stored copies at the LoC, never the live target site, so nothing reaches the original operator.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "U.S. Library of Congress — an authoritative national institution; captures are faithful, timestamped preservation copies.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Archives"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "library-of-congress-ask-a-librarian",
       "library-of-congress-united-states",
       "newspaper-navigator",
       "usa-telephone-directory-collection"
     ],
+    "aliases": [
+      "LoC Web Archives",
+      "webarchive.loc.gov"
+    ],
+    "tags": [
+      "Archives"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/webarchive-loc-gov.md"
   },
   {
@@ -49726,43 +49738,52 @@
   },
   {
     "id": "onlytop-fr",
-    "name": "onlytop.fr",
-    "description": "OSINT tool: onlytop.fr.",
+    "name": "OnlyTop (onlytop.fr)",
+    "description": "Use when you have a `username`, `name`, or location and want to find a matching OnlyFans creator profile — returns `social-profile`, location, and content-category leads.",
     "url": "https://onlytop.fr/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Searching for OnlyFans creator profiles by username, name, location, or content niche via a third-party directory/finder.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; creators can pay for extra visibility. No account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "Searching a third-party directory is passive — you don't touch OnlyFans or contact the creator. The subject matter is adult; use a sock-puppet browser and handle any findings with discretion and legal/ethical care.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "An independent, unofficial directory with no affiliation to OnlyFans; listings are self-promoted/scraped and unverified, so treat matches as leads to confirm.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "OnlyTop",
+      "onlytop.fr"
+    ],
     "tags": [
       "onlyfans",
       "OnlyFans Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/onlytop-fr.md"
   },
   {
@@ -113582,41 +113603,49 @@
   {
     "id": "dune-analytics",
     "name": "Dune Analytics",
-    "description": "Custom blockchain data analysis and dashboard creation via SQL queries",
+    "description": "Use when you have a `crypto-wallet`/contract/token and want deep on-chain analysis via SQL and community dashboards — returns wallet/flow analytics and linked-address leads.",
     "url": "https://dune.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto",
       "defi-and-dex-tracing"
     ],
-    "bestFor": "Custom blockchain data analysis and dashboard creation via SQL queries",
-    "input": "SQL queries against blockchain tables; custom dashboard specifications",
-    "output": "Query results, custom visualizations, shareable dashboards, blockchain analytics insights",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Querying indexed blockchain data with SQL and reusing thousands of community dashboards to analyse wallets, tokens, DeFi/DEX activity, and fund flows.",
+    "selectorsIn": [
+      "crypto-wallet"
+    ],
+    "selectorsOut": [
+      "crypto-wallet"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier lets you run queries, fork dashboards, and browse public dashboards; higher query limits, private queries, and API access are paid.",
     "opsec": "passive",
-    "opsecNote": "Public web platform; free tier supports publishing dashboards. Queries are indexed by Dune but individual data lookups are transparent.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You analyse public blockchain data — no target is contacted. A free account is needed to run/save your own queries; use a persona email. Dashboards you make public are visible to others, so keep sensitive investigative queries private (paid) or run them without publishing.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A widely-used, reputable crypto-analytics platform; underlying data is decoded on-chain data (verifiable), while community dashboards vary in quality and should be sanity-checked.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": true,
     "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "registration": true,
     "relatedTools": [],
-    "aliases": [],
+    "aliases": [
+      "Dune",
+      "dune.com"
+    ],
     "tags": [],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/defi-and-dex-tracing/dune-analytics.md"
   },
   {
@@ -228979,38 +229008,44 @@
   },
   {
     "id": "diagramify",
-    "name": "DIAGRAMIFY",
-    "description": "generates flow charts from the text description. Branching and backtracking are supported",
+    "name": "Diagramify",
+    "description": "Use when you have investigation findings in prose and want a quick flowchart/relationship diagram from a text description — a workflow/visualization aid (no subject selectors).",
     "url": "https://diagramify.agiliq.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a plain-text description of entities and relationships into a flowchart/diagram, with branching and backtracking, to visualise an investigation.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to generate diagrams from text on the web app; no account for basic use.",
+    "opsec": "passive",
+    "opsecNote": "You type a description into a third-party web app — the text is sent to Diagramify's servers. Do NOT paste real names, identifiers, or sensitive case detail; use neutral labels (Person A, Wallet 1) so nothing identifying leaves your machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A small third-party utility (by Agiliq); it's a diagram generator, not a data source — no OSINT data quality concerns, but treat it as an external service.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Diagramify"
+    ],
     "tags": [
       "Databases and data analyzes"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/diagramify.md"
   },
   {
@@ -244917,48 +244952,49 @@
   },
   {
     "id": "library-journal-infodocket",
-    "name": "Library Journal INFOdocket",
-    "description": "Library information docket providing information on industry news",
-    "url": "http://www.infodocket.com/",
+    "name": "LJ INFOdocket",
+    "description": "Use when you want to discover newly released databases, government reports, and research resources — a current-awareness feed for finding NEW OSINT sources (not a person lookup).",
+    "url": "https://www.infodocket.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
+    "bestFor": "Staying current on newly published databases, government/NGO reports, archives, and research tools that become new OSINT sources.",
+    "selectorsIn": [],
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; published by Library Journal (edited by Gary Price). No account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news/resource blog is passive and reveals nothing to any subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-running, professionally edited library-and-information-science news site (Library Journal / Gary Price); reliable curation of primary-source and database announcements.",
     "missingPersonsRelevance": "medium",
     "coverage": [
+      "us",
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "INFOdocket",
+      "infodocket.com",
+      "Gary Price INFOdocket"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "academic-scholarly-research-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/library-journal-infodocket.md"
   },
   {
@@ -277713,42 +277749,49 @@
   },
   {
     "id": "copyscape-plagiarism-checker",
-    "name": "Copyscape Plagiarism Checker",
-    "description": "Detecting plagiarism and tracing where specific text or content has been copied or republished online",
+    "name": "Copyscape",
+    "description": "Use when you have a block of text (a bio, listing, message, or `domain` page) and want to find where else it appears online — returns matching pages / `social-profile`/`domain` leads.",
     "url": "https://www.copyscape.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "Detecting plagiarism and tracing where specific text or content has been copied or republished online",
-    "input": "URL or pasted text",
-    "output": "List of web pages containing matching or similar text with percentage match scores",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Tracing where a specific passage of text has been copied or republished across the web — catching duplicated bios, recycled scam text, or the same listing under different names.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free basic search by URL (finds copies of a page); pasting large custom text or batch checks uses the paid Premium tier.",
     "opsec": "passive",
-    "opsecNote": "Searches are processed by Copyscape's servers; submitted text is sent to Copyscape for comparison.",
+    "opsecNote": "Submitted text/URLs are sent to Copyscape's servers for comparison — passive toward any subject, but don't paste truly sensitive case text into a third-party service.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established commercial plagiarism/duplicate-content service; matches are real web hits, though its index and free-tier limits shape what you find.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
+    "aliases": [
+      "Copyscape",
+      "copyscape.com"
+    ],
     "tags": [],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/copyscape-plagiarism-checker.md"
   },
   {
@@ -281685,49 +281728,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/filepursuit-com.md"
-  },
-  {
-    "id": "filesearch-ru",
-    "name": "FileSearch.ru",
-    "description": "File search engine; includes music, video, and video search.",
-    "url": "http://www.filesearching.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "filesearching"
-    ],
-    "_file": "library/tools/search-engines/filesearch-ru.md"
   },
   {
     "id": "filesearching",
@@ -294950,46 +294950,6 @@
     "_file": "library/tools/search-engines/niche.md"
   },
   {
-    "id": "nielsen-s-north-america",
-    "name": "Nielsen’s (North America)",
-    "description": "Data analytics company that provides insights on consumers and markets worldwide",
-    "url": "https://www.nielsen.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/nielsen-s-north-america.md"
-  },
-  {
     "id": "nmhdds-open-directory",
     "name": "NMHDDS Open Directory",
     "description": "Open directory search database.",
@@ -304226,46 +304186,57 @@
   },
   {
     "id": "state-of-connecticut-licensing",
-    "name": "State of Connecticut Licensing",
-    "description": "State of Connecticuts online professional license search tool",
+    "name": "State of Connecticut License Lookup (eLicense)",
+    "description": "Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, license status, and `document-id`.",
     "url": "https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Verifying a Connecticut professional or occupational license by name/business and pulling status, license number, and the address on file.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public state license-verification portal; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A state-government license lookup — passive and unobservable by the licensee. License records are public.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official State of Connecticut eLicense system; records are authoritative primary licensing data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "connecticut-license-verification",
+      "connecticut-registered-voter-verification"
+    ],
+    "aliases": [
+      "CT eLicense",
+      "Connecticut License Lookup"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "connecticut-license-verification",
-      "connecticut-registered-voter-verification"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/state-of-connecticut-licensing.md"
   },
   {
@@ -336079,40 +336050,6 @@
     "_file": "library/tools/social-networks/reddit-hacks-edoverflow.md"
   },
   {
-    "id": "reddit-investigator",
-    "name": "Reddit Investigator",
-    "description": "OSINT tool: Reddit Investigator.",
-    "url": "https://www.redditinvestigator.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/reddit-investigator.md"
-  },
-  {
     "id": "reddit-metis",
     "name": "Reddit Metis",
     "description": "Use when you have a Reddit `username` and want a behavioral profile of that account — returns activity stats, subreddit/topic distribution, active hours/timezone hints, and personality/interest summaries.",
@@ -353810,39 +353747,56 @@
   },
   {
     "id": "youtube-tool",
-    "name": "YouTube_Tool",
-    "description": "#Python library for: - extracting subtitles by video ID or link (in different languages); - list all the video's contained in playlist; - list all video's from a channel; - get info about video by ID; - proxy support; and more.",
+    "name": "yttool (youtube_tool)",
+    "description": "Use when you have a YouTube video/channel/playlist and want to bulk-extract subtitles, comments, descriptions, and video lists via CLI — returns `metadata-exif`, `associate` (commenters).",
     "url": "https://github.com/nlitsme/youtube_tool",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Scriptable extraction of YouTube subtitles, comments, video info, live-chat replays, and full channel/playlist listings without the official API.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "metadata-exif",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open source (MIT); `pip3 install youtube-tool`. No API key — it uses YouTube's internal web API.",
+    "opsec": "passive",
+    "opsecNote": "Requests hit YouTube's public/internal endpoints as a normal client — no contact with the channel owner. Heavy use from one IP can be throttled; the tool supports proxies, and a VPN helps for sensitive targets.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An individual's open-source project (nlitsme); auditable and using YouTube's own internal API, but unofficial and liable to break when YouTube changes.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "youtube-channel-archiver"
+    ],
+    "aliases": [
+      "yttool",
+      "youtube_tool",
+      "nlitsme youtube_tool"
+    ],
     "tags": [
       "Social Media",
       "YouTube"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-tool.md"
   },
   {
@@ -359735,42 +359689,53 @@
   },
   {
     "id": "australia-department-of-immigration-and-citizenship",
-    "name": "Australia Department of Immigration and Citizenship",
-    "description": "Australian Governments Department of Immigration and Citizenship",
+    "name": "Australia Department of Home Affairs (Immigration & Citizenship)",
+    "description": "Use when you need official Australian immigration/citizenship/visa reference or the VEVO visa-check entry point — an authoritative reference portal (consent-gated for personal lookups).",
     "url": "https://immi.homeaffairs.gov.au",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Official reference on Australian visas, citizenship, and border processes, and the entry point to VEVO visa-status checks (which require the visa holder's details/consent).",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official government portal; general information is open. VEVO visa checks require the person's passport/visa details.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reading the public portal is passive. A VEVO status check requires the visa holder's own identifiers and is intended for the holder or an authorised party (e.g. an employer with consent) — it is not a covert person-search and should only be used lawfully with proper authority.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Australian Government Department of Home Affairs; authoritative for immigration/citizenship/visa information and status.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Australia Home Affairs",
+      "immi.homeaffairs.gov.au",
+      "Department of Immigration"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/australia-department-of-immigration-and-citizenship.md"
   },
   {

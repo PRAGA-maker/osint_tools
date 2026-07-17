@@ -264,7 +264,6 @@ kind: group-index
 - **`filechef`** (low) — tool for searching different type of files (videos, application, documents, audio, images)
 - **`filephish`** (low) — OSINT tool: FilePhish.
 - **`filepursuit-com`** (low) — OSINT tool: Filepursuit.com.
-- **`filesearch-ru`** (medium) — File search engine; includes music, video, and video search.
 - **`filesearching`** (low) — old FTP servers search engine with filter by top-level domain name and filetype
 - **`filetype-search-tool`** (low) — OSINT tool: Filetype search tool.
 - **`filmaffinity-canada`** (medium) — Movie listings website
@@ -553,7 +552,6 @@ kind: group-index
 - **`newspapers-com`** (low) — OSINT tool: Newspapers.com.
 - **`newswhip`** (low) — OSINT tool: NewsWhip.
 - **`niche`** (medium) — Website related to college facility rankings
-- **`nielsen-s-north-america`** (medium) — Data analytics company that provides insights on consumers and markets worldwide
 - **`nmhdds-open-directory`** (medium) — Open directory search database.
 - **`nod`** (low) — OSINT tool: Nod.
 - **`notey`** (low) — OSINT tool: Notey.
@@ -763,7 +761,7 @@ kind: group-index
 - **`stacksearch`** (medium) — OSINT tool: Stacksearch.
 - **`startpage-parser`** (low) — Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python to
 - **`startpagina-search-netherlands`** (medium) — Netherlands based web search engine that also includes news, TV, radio, and a blog
-- **`state-of-connecticut-licensing`** (medium) — State of Connecticuts online professional license search tool
+- **`state-of-connecticut-licensing`** (medium) — Use when you have a `name` (or business) licensed in Connecticut and want to verify the credential — returns `employer-org`, `address`, lice
 - **`stilltasty`** (medium) — Search engine that searches for food-related websites, material and content, primarily dealing with the duration of freshness, expiration da
 - **`storyful`** (low) — OSINT tool: Storyful.
 - **`studentreviews-north-america`** (medium) — Website related to education reviews

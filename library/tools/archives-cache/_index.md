@@ -128,7 +128,7 @@ kind: group-index
 - **`web-archives-chrome-google-com`** (medium) — OSINT tool: web archives (chrome.google.com).
 - **`web-archives`** (low) — A browser extension to view archived and cached versions of a website on multiple archiving sites.
 - **`web-cache-viewer-chrome-google-com`** (medium) — OSINT tool: web cache viewer (chrome.google.com).
-- **`webarchive-loc-gov`** (medium) — OSINT tool: Webarchive.loc.gov.
+- **`webarchive-loc-gov`** (medium) — Use when you have a `domain`/URL or topic and want curated, preserved historical web captures — returns archived pages and `metadata-exif`/d
 - **`webreader`** (low) — OSINT tool: WebReader.
 - **`webrecorder-tools`** (medium) — Archiving various interesting sites is a noble and useful activity for society. To make it easier for posterity to analyze your web archives
 - **`website-diff`** (low) — OSINT tool: Website-Diff.

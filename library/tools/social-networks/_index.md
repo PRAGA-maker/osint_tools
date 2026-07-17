@@ -477,7 +477,6 @@ kind: group-index
 - **`reddit-enhancement-suite-chrome`** (low) — Chrome extension enhancing the Reddit browsing experience.
 - **`reddit-enhancement-suite-firefox`** (low) — Firefox add-on enhancing the Reddit browsing experience.
 - **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.
-- **`reddit-investigator`** (medium) — OSINT tool: Reddit Investigator.
 - **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
 - **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t
 - **`reddit-reditr`** (medium) — OSINT tool: Reddit - Reditr.
@@ -826,7 +825,7 @@ kind: group-index
 - **`youtube-screen-capture`** (medium) — allows you to download a stream in pieces and then merge them
 - **`youtube-search-tool`** (medium) — OSINT tool: YouTube search tool.
 - **`youtube-timestamp-comments`** (medium) — extension finds all the timestamps in YouTube video comments and arranges them in chronological order.
-- **`youtube-tool`** (medium) — #Python library for: - extracting subtitles by video ID or link (in different languages); - list all the video's contained in playlist; - li
+- **`youtube-tool`** (medium) — Use when you have a YouTube video/channel/playlist and want to bulk-extract subtitles, comments, descriptions, and video lists via CLI — ret
 - **`youtube-transcript-api`** (medium) — Get the transcript/subtitles for a given #YouTube video (by ID from adress bar). It also works for automatically generated subtitles and sup
 - **`youtube-video-upload-time`** (medium) — Use when you have a YouTube video `social-profile` URL and want its exact upload time — returns the precise `metadata-exif`-style publish ti
 - **`youtube-whisperer`** (medium) — Use when you have a YouTube video `url` tied to a subject and want a text transcript to search for names, places, and admissions — returns a

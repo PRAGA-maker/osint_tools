@@ -28,7 +28,7 @@ kind: group-index
 - **`amtrak-status-maps-archive-database`** (low) — find out the train schedule for a station on a particular day that passed many years ago (since 2008)
 - **`ancapa-sciences-intelligence-analysis`** (medium) — Company specializing in analysis, education, and training for both the government and private industries
 - **`askmid`** (medium) — OSINT tool: askMID.
-- **`australia-department-of-immigration-and-citizenship`** (medium) — Australian Governments Department of Immigration and Citizenship
+- **`australia-department-of-immigration-and-citizenship`** (medium) — Use when you need official Australian immigration/citizenship/visa reference or the VEVO visa-check entry point — an authoritative reference
 - **`australian-maritime-safety-authority-amsa`** (medium) — Maritime-related website that offers a search of an Australian database of naval vessel types
 - **`auto-bid-master-auction`** (medium) — OSINT tool: auto bid master (auction).
 - **`autocheck`** (medium) — OSINT tool: AutoCheck.
