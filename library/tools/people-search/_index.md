@@ -58,7 +58,7 @@ kind: group-index
 - **`community-search`** (medium) — OSINT tool: Поиск сообществ (Community Search).
 - **`contactout`** (high) — Use when you have a professional's `name`/LinkedIn `social-profile` and want their personal `email` and `phone` — returns contact data for 3
 - **`craiglist`** (medium) — OSINT tool: Craiglist.
-- **`crosslinked`** (medium) — LinkedIn enumeration via search engine scraping (no auth).
+- **`crosslinked`** (medium) — Use when you have an `employer-org` and want to enumerate its employees' names and likely emails from LinkedIn — returns names and format-ge
 - **`cvfox`** (medium) — OSINT tool: CVFox.
 - **`cyberbackgroundchecks`** (high) — Use when you have a `name`, `phone`, or `address` in the US and want current/past addresses, phone numbers and named relatives for free — re
 - **`cybersecstu-osint-for-finding-people`** (high) — Use when you have a `name`/`username`/`email`/`phone` and want a curated list of which tools to try next for locating a person — returns poi
@@ -111,7 +111,6 @@ kind: group-index
 - **`gravatar`** (high) — Use when you have an `email` (or its MD5 hash) or a Gravatar `username` and want the linked public avatar and profile — returns a profile ph
 - **`haro`** (medium) — OSINT tool: HARO.
 - **`hauziz`** (high) — Use when you have an `address` (or a `name`) and want the residents/owner tied to a US property plus pivot links into paid brokers — returns
-- **`headhunter`** (medium) — OSINT tool: Headhunter.
 - **`hey-press`** (high) — Use when you have a `name` or beat and want to find a journalist and what they cover — returns the journalist's outlet, recent articles, and
 - **`hiretual`** (medium) — OSINT tool: Hiretual.
 - **`hitta-se-2`** (high) — Use when you have a `name` (or `phone`/`address`) in Sweden and want official-directory people/business data — returns `address`, `phone`, a

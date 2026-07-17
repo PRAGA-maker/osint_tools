@@ -214,7 +214,6 @@ kind: group-index
 - **`vin-decoder-and-lookup`** (low) — Use when you have a `vin` and want to decode the vehicle's year, make, model and specs for free — returns a physical-description to confirm 
 - **`vin-decoder`** (medium) — Use when you have a `vin` and want the vehicle's factory specification and build details — returns make/model/year/engine and manufacturing 
 - **`vin-info`** (medium) — OSINT tool: Vin-Info.
-- **`vin-lookup`** (medium) — OSINT tool: VIN Lookup.
 - **`vincheck-info`** (medium) — OSINT tool: VINCheck.info.
 - **`vincheck-nicb`** (medium) — Free VIN lookup for theft and salvage records.
 - **`vincheck`** (medium) — OSINT tool: VINCheck®.

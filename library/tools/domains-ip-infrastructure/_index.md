@@ -225,7 +225,7 @@ kind: group-index
 - **`gtmetrix-website-performance`** (medium) — Provides details about your website's speed and performance, and allows searching for information about any website
 - **`h3x-cctv`** (low) — A simple command line tool with a Google Dorks list to find vulnerable CCTV cameras
 - **`hacker-target`** (medium) — Includes tools such as Whoislookup, IP lookup, reverse IP lookup, traceroute, dns lookup, reverse dns lookup, ping test, and more
-- **`hackertarget-com`** (medium) — OSINT tool: hackertarget.com.
+- **`hackertarget-com`** (medium) — Use when you have a `domain` (or a Google Analytics/AdSense ID) and want to find other sites run by the same owner — returns linked domains 
 - **`hackertarget`** (low) — 14 tools for gathering information about domain using Hackerarget API ([http://hackertarget.com](http://hackertarget.com))
 - **`haklistgen`** (low) — A simple tool written in #Go that allows you to generate a wordlist from any text (from a file or link).
 - **`hakrawler`** (low) — Extreme(!) fast crawler designed for easy, quick discovery of links, endpoints and assets within a web application.
@@ -472,7 +472,7 @@ kind: group-index
 - **`subdomainradar-io`** (low) — OSINT tool: SubDomainRadar.io.
 - **`subdomainsbrute`** (low) — Very(!) fast and simple tool for subdomain bruteforce. It find 53 subdomains, scanned 31160 variations in 31 seconds.
 - **`talend-api-tester-free-edition`** (low) — tool that allows to quickly test requests to different APIs directly in the browser, send requests and inspect responses, validate API behav
-- **`team-cyru-ip-to-asn-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`team-cyru-ip-to-asn-lookup`** (low) — Use when you have an `ip-address` and want to know which network (ASN) and registrant announce it — returns the owning autonomous system, al
 - **`technology-lookup`** (low) — OSINT tool: Technology Lookup.
 - **`terms-of-service-didn-t-read`** (low) — find out what interesting privacy and confidentiality clauses are in the license agreements of popular websites and apps
 - **`test-net-network-tools`** (medium) — Tools including whois lookup, reverse lookup, traceroute, ping test, proxy checker, and more
@@ -559,7 +559,7 @@ kind: group-index
 - **`whois-search`** (low) — OSINT tool: Whois Search.
 - **`whois-service`** (low) — OSINT tool: WHOIS Service.
 - **`whois-xml-api-whois-history-database`** (low) — OSINT tool: Whois XML API Whois history database.
-- **`whoisdatacenter-com`** (medium) — OSINT tool: whoisdatacenter.com.
+- **`whoisdatacenter-com`** (medium) — Use when you have a `domain`, `email`, `name`, or `phone` and want historical/reverse WHOIS across decades of records — returns linked domai
 - **`whoisds-com`** (low) — database of domains registered in the last day
 - **`whoishostingthis`** (low) — OSINT tool: WhoIsHostingThis.
 - **`whoismind`** (low) — OSINT tool: WhoisMind.

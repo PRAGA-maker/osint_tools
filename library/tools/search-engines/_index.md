@@ -760,7 +760,7 @@ kind: group-index
 - **`sploitus`** (low) — Use when you have a software/product `name` or CVE and want to find public exploits and PoC tools for it — a technical-research search engin
 - **`sports-illustrated-kids`** (low) — Kid-orientated articles and information from Sports Illustrated
 - **`springer`** (low) — OSINT tool: Springer.
-- **`stackoverflow`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
+- **`stackoverflow`** (low) — Use when you have a `username` (or developer `name`) and want to profile a programmer's public activity — returns a linked social-profile, l
 - **`stacksearch`** (medium) — OSINT tool: Stacksearch.
 - **`startpage-parser`** (low) — Startpage.com search engine produces similar (but not identical) results to Google's, but is much less likely to get banned. This #python to
 - **`startpagina-search-netherlands`** (medium) — Netherlands based web search engine that also includes news, TV, radio, and a blog

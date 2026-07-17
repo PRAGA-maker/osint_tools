@@ -10,7 +10,7 @@ kind: group-index
 - **`dorkgenerator-pages-dev`** (medium) — Quick generation of custom Google dork queries
 - **`dorksearch-com`** (medium) — Building complex Google dorks with API cross-referencing
 - **`dorksearch-netlify-app`** (medium) — Fast, simple Google dork query generation
-- **`google-alerts`** (medium) — OSINT tool: Google Alerts.
+- **`google-alerts`** (medium) — Use when you have a `name`, `username`, `email`, `phone`, or `domain` and want ongoing notification whenever new pages mentioning it are ind
 - **`google-custom-search-engine`** (medium) — OSINT tool: Google Custom Search Engine.
 - **`pagodo-passive-google-dork`** (medium) — Automated passive Google dork enumeration from GHDB
 - **`scanner-inurlbr`** (medium) — OSINT tool: Scanner-inurlbr.

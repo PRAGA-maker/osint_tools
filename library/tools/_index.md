@@ -22,14 +22,14 @@ kind: group-index
 - **`maps-geospatial-data/`** — 147 skill(s) below.
 - **`messaging/`** — 207 skill(s) below.
 - **`opsec-investigator-tooling/`** — 567 skill(s) below.
-- **`people-search/`** — 283 skill(s) below.
+- **`people-search/`** — 282 skill(s) below.
 - **`phone/`** — 142 skill(s) below.
 - **`public-records/`** — 1148 skill(s) below.
 - **`search-engines/`** — 982 skill(s) below.
 - **`social-networks/`** — 927 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 103 skill(s) below.
-- **`transportation/`** — 234 skill(s) below.
+- **`transportation/`** — 233 skill(s) below.
 - **`username/`** — 106 skill(s) below.
 
 

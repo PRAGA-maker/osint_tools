@@ -220,7 +220,7 @@ kind: group-index
 - **`ghnames`** (medium) — Use when you have a GitHub `username` and want its history — which accounts have held that handle and their user IDs — returns username/acco
 - **`ghostcodes-addmesnaps-directories`** (medium) — Public Snapchat username directories; pivot from interests/handles to accounts.
 - **`ghostcodes-com`** (medium) — OSINT tool: Ghostcodes.com.
-- **`ghunt-online-version`** (medium) — Get info about Google account by email: - name - default profile and cover pictures; - calendar events and timezone; - Google Maps reviews; 
+- **`ghunt-online-version`** (high) — Use when you have an `email` (Gmail/Google account) and want to enumerate the linked Google profile — returns name, profile/cover images, Go
 - **`git-awards`** (low) — Rank GitHub users and repositories.
 - **`gitcolombo`** (medium) — simple and fast tool that collects information (edit statistics and contacts) about repository contributors on Github
 - **`github-chart`** (medium) — it shows a visual representation of the temporal distribution of user changes in the repositories. You can visually see "productivity peaks"
