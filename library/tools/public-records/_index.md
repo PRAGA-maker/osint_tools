@@ -647,7 +647,6 @@ kind: group-index
 - **`narcotics-control-reports`** (medium) — US Department of State Narcotics Control Strategy Reports
 - **`nation-master`** (low) — OSINT tool: Nation Master.
 - **`national-archives-and-records`** (medium) — Use when you have a `name` or `employer-org` tied to US federal history and want archived government records — returns document records (`do
-- **`national-business-register-united-kingdom`** (medium) — National business register that allows for search using business or company name
 - **`national-center-for-state-courts-united-states`** (medium) — Legal-related search engine for legal court cases and documents
 - **`national-company-registers`** (medium) — Use when you have an `employer-org` (or a person's directorship) in a specific country and need the official corporate registry — a director
 - **`national-institute-on-drug-abuse`** (medium) — National Institute on Drug Abuse website offering publications with information regarding drug abuse trends and statistics

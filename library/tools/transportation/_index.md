@@ -48,7 +48,7 @@ kind: group-index
 - **`certified-aircraft-database`** (medium) — Aviation-related website database focusing on international aircraft registration prefixes, manufactuerers, disgnators and markings
 - **`check-any-vin-free`** (medium) — Use when you have a `vin` (or `vehicle-plate`) and want to decode the vehicle's make/model/year, specs, recalls, and history — returns a phy
 - **`check-any-vin`** (medium) — OSINT tool: Check Any VIN.
-- **`check-if-a-vehicle-is-taxed-and-has-an-mot`** (medium) — OSINT tool: Check if a vehicle is taxed and has an MOT.
+- **`check-if-a-vehicle-is-taxed-and-has-an-mot`** (medium) — Use when you have a UK `vehicle-plate` and want to confirm the vehicle and its status — the official DVLA lookup returns make, model, colour
 - **`check-that-vin-search`** (medium) — Use when you have a `vin` and want the vehicle's NMVTIS title history — returns titling states/dates, brands (salvage/junk/flood), odometer,
 - **`check-that-vin`** (medium) — OSINT tool: Check That Vin.
 - **`chronotrains`** (low) — Chronotrains is a free interactive map designed to explore the reach of Europe’s extensive rail network. Enter a starting point and travel t
@@ -175,7 +175,7 @@ kind: group-index
 - **`rzjets-net`** (low) — user updated online database (census) of civilian jet and turbojet aircraft
 - **`satellite-tracking`** (low) — Use when you have a satellite name/NORAD ID and want its live position and pass times — returns orbital position, altitude, and when it pass
 - **`searates-container-tracking`** (low) — tracking a shipping container by number
-- **`searchquarry`** (medium) — Plate/VIN and public-records lookup service.
+- **`searchquarry`** (medium) — Use when you have a US `vehicle-plate`, `vin` or `name` and want vehicle/public-records data — a commercial lookup whose free tier only conf
 - **`shadowbroker`** (low) — Platform tracking global intelligence signals including corporate jets, satellites, and seismic events with AI analysis.
 - **`ship-spotting`** (low) — OSINT tool: Ship Spotting.
 - **`shipais`** (low) — OSINT tool: ShipAIS.

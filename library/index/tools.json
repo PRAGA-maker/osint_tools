@@ -36057,41 +36057,57 @@
   {
     "id": "reconxplorer",
     "name": "ReconXplorer",
-    "description": "Multi-input OSINT checks from a local scriptable toolkit",
+    "description": "Use when you have an `ip-address`, `email`, `phone`, `username` or Discord ID and want quick multi-source recon from one menu-driven CLI — returns `geolocation`, breach/`social-profile` hints and Discord metadata.",
     "url": "https://github.com/root7am/ReconXplorer",
     "category": "communities-forums",
     "path": [
       "communities-forums",
       "discord-servers"
     ],
-    "bestFor": "Multi-input OSINT checks from a local scriptable toolkit",
-    "input": "IP addresses, emails, Discord tokens, and host data",
-    "output": "Recon results including geolocation, service, and account-related metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A menu-driven Python toolkit that runs IP/email/phone/username and Discord (token/server/webhook) lookups from one place.",
+    "selectorsIn": [
+      "ip-address",
+      "email",
+      "phone",
+      "username"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "email",
+      "social-profile",
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (Python). Local install; some modules call third-party APIs that may need their own keys/limits.",
     "opsec": "active",
-    "opsecNote": "Runs direct external queries from the operator environment and may trigger service-side detection or logging.",
+    "opsecNote": "Modules make direct queries from your machine to external services (IP geo, breach APIs, Discord). Those services see your IP and may log/rate-limit you; the Discord token/webhook modules touch Discord infrastructure. Run from a research VM/VPN, never feed it credentials you can't burn, and only test Discord tokens/webhooks you're authorised to.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small single-author toolkit (~50 stars); it bundles third-party lookups of varying reliability — inspect the source before running and verify every result.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "root7am/ReconXplorer"
+    ],
+    "tags": [
+      "recon",
+      "discord",
+      "multi-input",
+      "cli"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/discord-servers/reconxplorer.md"
   },
   {
@@ -48457,25 +48473,33 @@
   },
   {
     "id": "justlanded-classified-ads-worldwide",
-    "name": "JustLanded Classified Ads (Worldwide)",
-    "description": "Classified advertisements-related website that provides worldwide services",
+    "name": "Just Landed Classifieds (Worldwide)",
+    "description": "Use when your subject is an expat/mover and you have a `name`/`username` — Just Landed's per-country classifieds, housing, jobs and community can surface ads, location and contact details.",
     "url": "https://classifieds.justlanded.com/en",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding an expatriate subject's small ads, housing/job posts or community presence in a specific country.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse classifieds, housing and jobs. Posting/replying and some community features need a (free) account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing ads and listings is passive and anonymous. Replying to an ad or using the community requires an account and may reveal you to the poster — use a sock-puppet account if you must interact.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Just Landed is a real, long-running (since 2003) expat portal, but individual ads/profiles are user-posted and unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -48484,15 +48508,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "JustLanded",
+      "classifieds.justlanded.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "classifieds",
+      "expat",
+      "marketplace",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/justlanded-classified-ads-worldwide.md"
   },
   {
@@ -199292,38 +199321,53 @@
   },
   {
     "id": "expertisefinder",
-    "name": "ExpertiseFinder",
-    "description": "OSINT tool: ExpertiseFinder.",
-    "url": "http://www.expertisefinder.com",
+    "name": "Expertise Finder",
+    "description": "Use when your subject may be an academic and you have a `name` or field — a directory of university faculty experts returning their institution, discipline and public profile.",
+    "url": "https://www.expertisefinder.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying university/academic experts and confirming a person's institutional affiliation and field.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search for experts (aimed at journalists). Universities pay to list their faculty / license the underlying directory software.",
+    "opsec": "passive",
+    "opsecNote": "Public directory search — passive and anonymous; the expert is not notified you looked them up.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Established (10+ year) expert-directory service sourcing profiles from participating universities; data is institution-supplied, so accurate but limited to listed academics.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "ExpertiseFinder",
+      "expertisefinder.com"
+    ],
     "tags": [
-      "expert-search"
+      "expert-search",
+      "academics",
+      "faculty"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/people-search/expertisefinder.md"
   },
   {
@@ -221265,50 +221309,59 @@
   },
   {
     "id": "black-book-online-criminal-search",
-    "name": "Black Book Online - Criminal Search",
-    "description": "Broad public records aggregation",
+    "name": "Black Book Online — Criminal Search",
+    "description": "Use when you have a `name` + US location and want free links to official records — a portal routing you to state/county criminal, court, property and offender databases, returning `address`, court and `associate` data.",
     "url": "https://www.blackbookonline.info/",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Broad public records aggregation",
-    "input": "Name, location, record type",
-    "output": "Criminal records, property, court filings",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A free directory of official US public-records sources (criminal, court, property, offender) organised by state/county.",
+    "selectorsIn": [
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "The Black Book Online directory is free. It links to official sources, some of which charge for documents; it is not a background-check subscription itself.",
     "opsec": "passive",
-    "opsecNote": "Not FCRA compliant; accuracy not guaranteed",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Using the directory is passive. Each linked official source has its own logging; most county/court searches are anonymous, but read each site's terms. Not FCRA-compliant — do not use for employment/tenant screening.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, well-regarded free public-records portal (by Peter Weber/BRB Publications) that curates links to official government sources rather than reselling data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "arrest-warrants",
-      "criminal-search-criminal-records-by-state-and",
-      "free-aviation-records-black-book-online",
-      "jail-records",
-      "nationwide-county-court-records-by-state-and",
-      "property-search-public-records-by-state",
-      "sex-offender-search"
+      "unicourt",
+      "courtlistener"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Black Book Online",
+      "blackbookonline.info"
+    ],
+    "tags": [
+      "public-records",
+      "criminal-records",
+      "court-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/black-book-online-criminal-search.md"
   },
   {
@@ -248982,52 +249035,6 @@
     "_file": "library/tools/public-records/national-archives-and-records.md"
   },
   {
-    "id": "national-business-register-united-kingdom",
-    "name": "National Business Register (United Kingdom)",
-    "description": "National business register that allows for search using business or company name",
-    "url": "http://www.start.biz/business_names/search",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "company-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/national-business-register-united-kingdom.md"
-  },
-  {
     "id": "national-center-for-state-courts-united-states",
     "name": "National Center for State Courts (United States)",
     "description": "Legal-related search engine for legal court cases and documents",
@@ -273522,42 +273529,58 @@
   },
   {
     "id": "asic-business-name-search",
-    "name": "ASIC Business Name Search",
-    "description": "Business-related search engine that searches using company name",
+    "name": "ASIC Registry Search (Australia)",
+    "description": "Use when you have an `employer-org`/business name or a director `name` in Australia and want the official record — ASIC's registry returns company/business-name status, ABN/ACN, and registered details.",
     "url": "https://connectonline.asic.gov.au/RegistrySearch",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Authoritative Australian company/business-name lookups — status, identifiers and registration details.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Searching the register (name, status, ABN/ACN) is free. Purchasing extracts/historical documents with full officer/address detail costs a small per-document fee.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching the government register is passive and anonymous; the business is not notified. Paid document purchases require an ASIC/BizPay account that identifies you — use an investigative account for those.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "The official Australian Securities and Investments Commission registry — the authoritative source for Australian companies and registered business names.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "national-company-registers"
+    ],
+    "aliases": [
+      "ASIC Connect",
+      "connectonline.asic.gov.au"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "company-research",
+      "australia",
+      "corporate-registry",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/asic-business-name-search.md"
   },
   {
@@ -283174,46 +283197,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/gifcities-org.md"
-  },
-  {
-    "id": "gigablast",
-    "name": "Gigablast",
-    "description": "OSINT tool: Gigablast.",
-    "url": "https://www.gigablast.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "search"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/gigablast.md"
   },
   {
     "id": "gijn-online-research-tools",
@@ -322470,46 +322453,56 @@
   },
   {
     "id": "githubrecon",
-    "name": "GithubRecon",
-    "description": "OSINT tool: GithubRecon.",
+    "name": "GitHub Recon (kriztalz)",
+    "description": "Use when you have a GitHub `username` or `email` and want the account's exposed data — a free browser tool returning associated `email`s (incl. historical commit emails), account dates and public SSH keys.",
     "url": "https://kriztalz.sh/github-recon/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling a GitHub user's leaked/committed email addresses and account metadata from a username or email.",
+    "selectorsIn": [
+      "username",
+      "email"
+    ],
+    "selectorsOut": [
+      "email",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and browser-based; no account or install. Queries GitHub's public API/data.",
+    "opsec": "passive",
+    "opsecNote": "It reads GitHub's public data — the target isn't notified. The lookup runs from your browser against GitHub; the site states it doesn't store queries, but treat any third-party tool cautiously and use a research browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Part of a community OSINT toolkit (kriztalz.sh); it surfaces genuinely public GitHub data — verify the emails it returns are actually the target's.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "github-search",
+      "gravatar"
+    ],
+    "aliases": [
+      "github-recon",
+      "kriztalz github recon"
+    ],
     "tags": [
-      "github"
+      "github",
+      "email-discovery",
+      "developer-osint"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "domainrecon",
-      "faviconhash",
-      "metadata-viewer",
-      "pgpkeyanalyser",
-      "searchdorks",
-      "traceroutevisualizer"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/githubrecon.md"
   },
   {
@@ -360549,44 +360542,55 @@
   },
   {
     "id": "check-if-a-vehicle-is-taxed-and-has-an-mot",
-    "name": "Check if a vehicle is taxed and has an MOT",
-    "description": "OSINT tool: Check if a vehicle is taxed and has an MOT.",
+    "name": "Check if a Vehicle is Taxed and has an MOT (DVLA)",
+    "description": "Use when you have a UK `vehicle-plate` and want to confirm the vehicle and its status — the official DVLA lookup returns make, model, colour, tax and MOT status (not the keeper's name/address).",
     "url": "https://vehicleenquiry.service.gov.uk",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a UK number plate maps to a real vehicle and its make/model/colour, tax and MOT status.",
     "selectorsIn": [
-      "vehicle-plate",
-      "vin"
+      "vehicle-plate"
     ],
     "selectorsOut": [
-      "name",
-      "address"
+      "vehicle-plate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official UK government (DVLA) service; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "You query DVLA about a plate, not the owner; the keeper is not notified and no personal data is returned. Fully passive — though route through a research browser as good practice.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official UK government DVLA service on gov.uk — authoritative for the vehicle facts it returns.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mot-history",
+      "license-plate-lookup"
+    ],
+    "aliases": [
+      "DVLA vehicle enquiry",
+      "vehicleenquiry.service.gov.uk"
+    ],
     "tags": [
-      "vehicle"
+      "vehicle",
+      "uk",
+      "dvla",
+      "plate"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/check-if-a-vehicle-is-taxed-and-has-an-mot.md"
   },
   {
@@ -366348,32 +366352,34 @@
   {
     "id": "searchquarry",
     "name": "SearchQuarry",
-    "description": "Plate/VIN and public-records lookup service.",
+    "description": "Use when you have a US `vehicle-plate`, `vin` or `name` and want vehicle/public-records data — a commercial lookup whose free tier only confirms basics; owner/history data sits behind a paid subscription.",
     "url": "https://www.searchquarry.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "License-plate, VIN and public-records lookup.",
+    "bestFor": "US license-plate/VIN and public-records lookups — but expect a paywall for anything beyond basic confirmation.",
     "selectorsIn": [
       "vehicle-plate",
       "vin",
       "name"
     ],
     "selectorsOut": [
-      "vehicle-plate",
       "vin",
-      "name"
+      "vehicle-plate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free plate/VIN search returns only basic info. Full reports (owner, history) require a subscription: a low-cost 5-day trial ($1–3) that auto-renews to ~$20–25/month unless cancelled. Read the fine print.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Querying is passive toward the subject (no notification). BUT you must register with real payment details to see anything substantive, which ties the search to you and enrols you in recurring billing — use a dedicated card/account and cancel deliberately. Not FCRA-compliant.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A commercial data-broker-style service with mixed reviews over accuracy and auto-billing complaints; treat outputs as unverified leads and watch the subscription terms.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "us"
@@ -366382,18 +366388,21 @@
     "api": false,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "relatedTools": [
+      "license-plate-lookup"
+    ],
+    "aliases": [
+      "Search Quarry",
+      "searchquarry.com"
+    ],
     "tags": [
       "plate",
       "vin",
       "records"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "license-plate-lookup"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/searchquarry.md"
   },
   {

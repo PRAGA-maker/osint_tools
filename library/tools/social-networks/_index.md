@@ -230,7 +230,7 @@ kind: group-index
 - **`github-trending-archives`** (medium) — Github trending archive for a specific date.
 - **`github-trending-rss`** (low) — RSS feed of trending GitHub repositories.
 - **`githubcompare`** (low) — Use when you have two or more GitHub repositories with the same or similar name and want to compare their stars, forks, age and activity — r
-- **`githubrecon`** (medium) — OSINT tool: GithubRecon.
+- **`githubrecon`** (medium) — Use when you have a GitHub `username` or `email` and want the account's exposed data — a free browser tool returning associated `email`s (in
 - **`githut`** (low) — GitHub statistics and programming language visualizations.
 - **`gitleak`** (medium) — OSINT tool: GitLeak.
 - **`gitsome`** (medium) — A tool for gathering information from #Github: - extract all emails from commits of a particular user (top of the pic); - gathering info abo

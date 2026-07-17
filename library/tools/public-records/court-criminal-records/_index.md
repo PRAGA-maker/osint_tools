@@ -7,7 +7,7 @@ kind: group-index
 # public-records/court-criminal-records
 
 ## Skills here
-- **`black-book-online-criminal-search`** (medium) — Broad public records aggregation
+- **`black-book-online-criminal-search`** (medium) — Use when you have a `name` + US location and want free links to official records — a portal routing you to state/county criminal, court, pro
 - **`caselaw-access-project`** (medium) — Use when you have a `name` and want to find US court opinions that mention the person — returns case `document-id`, court/date, and `associa
 - **`courtlistener`** (medium) — Use when you have a party `name`, docket number, or judge and want free US court records — returns opinions, dockets, and filings that often
 - **`crimereports-com`** (medium) — Crime incident mapping

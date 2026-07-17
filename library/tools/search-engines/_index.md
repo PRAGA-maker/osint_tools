@@ -77,7 +77,7 @@ kind: group-index
 - **`arkansas-medical-license-search`** (medium) — Use when you have a `name` and want to verify an Arkansas physician's license — returns license `document-id`, status and practice `address`
 - **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
 - **`asian-development-bank`** (medium) — Asian Development Banks website providing statistics, data, and research publications
-- **`asic-business-name-search`** (medium) — Business-related search engine that searches using company name
+- **`asic-business-name-search`** (medium) — Use when you have an `employer-org`/business name or a director `name` in Australia and want the official record — ASIC's registry returns c
 - **`ask-metafilter`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 - **`ask`** (low) — OSINT tool: Ask.
 - **`athlinks`** (medium) — Search engine aimed at competitive endurance athletes.
@@ -295,7 +295,6 @@ kind: group-index
 - **`gexsi`** (medium) — Search engine that uses its revenues to support sustainable developmental goals.
 - **`gibiru`** (low) — OSINT tool: Gibiru.
 - **`gifcities-org`** (low) — GIF Search Engine from archive.org
-- **`gigablast`** (medium) — OSINT tool: Gigablast.
 - **`gijn-online-research-tools`** (medium) — Global Investigative Journalism Network's curated research tools page.
 - **`girlsaskguys`** (medium) — Search engine that searches for answers to questions on the subject of relationships between males and females
 - **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu

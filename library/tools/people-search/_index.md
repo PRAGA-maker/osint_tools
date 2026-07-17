@@ -78,7 +78,7 @@ kind: group-index
 - **`eurojobs`** (medium) — OSINT tool: Eurojobs.
 - **`everypolitician-org`** (low) — Use when you have a `name` of a politician/office-holder and want structured political data — returns party, terms, positions and links (`so
 - **`expertengine`** (high) — Use when you have a subject `name` or a technical discipline and want to confirm whether they are a listed expert witness/consultant — retur
-- **`expertisefinder`** (medium) — OSINT tool: ExpertiseFinder.
+- **`expertisefinder`** (low) — Use when your subject may be an academic and you have a `name` or field — a directory of university faculty experts returning their institut
 - **`expertpages`** (medium) — OSINT tool: ExpertPages.
 - **`experts-com`** (medium) — Use when you have a `name` or field and want to check if someone is a listed expert witness/consultant — returns employer-org, credentials, 
 - **`family-search`** (high) — Use when you have a `name` and want the largest free genealogy archive — returns birth/marriage/death, census, immigration records with `dob
