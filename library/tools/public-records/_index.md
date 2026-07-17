@@ -316,7 +316,7 @@ kind: group-index
 - **`familysearch-births-and-baptisms-1972-1981-australia`** (high) — Use when you have a `name` (and rough birth year/place in Australia) and want indexed birth/baptism records to confirm identity and parents 
 - **`familysearch-deaths-and-burials-1816-1980-australia`** (high) — Use when you have a `name` of a person who may have died in Australia (1816–1980) and want death/burial record details — returns death/buria
 - **`familysearch-free-family-trees-and-genealogy-archives-familysearch-org`** (high) — Use when you have a `name` and want family/genealogy records — returns relatives (`associate`), birth/marriage/death dates (`dob`) and histo
-- **`familysearch-guessing-a-name-variation`** (medium) — Genealogy website FamilySearch's wiki page for guessing name variations
+- **`familysearch-guessing-a-name-variation`** (medium) — Use when you have a `name` that isn't returning hits and want plausible spelling/nickname/transliteration variants to search — returns alter
 - **`familysearch-s-united-states-record-collections`** (high) — Use when you have a `name` and want a one-page portal into FamilySearch's US genealogy record collections (census, vital, immigration) via S
 - **`familysearch`** (high) — Use when you have a deceased US subject's `name` and want death/birth-date confirmation and last residence — returns name, DOB/death date an
 - **`fastpeoplesearch-com-reverse-address`** (high) — Use when you have a US `address`, `name`, or `phone` and want the people tied to it — returns names, relatives, phones and prior addresses.
@@ -345,7 +345,6 @@ kind: group-index
 - **`fivethirtyeight`** (low) — OSINT tool: FiveThirtyEight.
 - **`fl-energy-money-in-politics`** (medium) — OSINT tool: FL Energy Money in Politics.
 - **`florida-probation-search`** (high) — Use when you have a `name` and want to check Florida Department of Corrections inmate, probation, or supervision status — returns `name`, `d
-- **`florida-registered-voter-verification`** (medium) — Florida voter registration records and search
 - **`florida-residents-directory`** (high) — Use when you have a `name`, `phone`, `email`, or `address` in Florida and want a free people-record lookup — returns addresses, phones, rela
 - **`florida`** (high) — Use when you have a `name` (or DC number) and want to check Florida state custody, supervision or release status — returns identity confirma
 - **`flvoters-com`** (high) — Use when you have a Florida subject's `name` and want their public voter record — returns registered name, address, DOB, party and (public) 
@@ -773,7 +772,7 @@ kind: group-index
 - **`parler-capitol-videos`** (low) — OSINT tool: Parler Capitol Videos.
 - **`paul-hensel-s-general-informational-data-page`** (low) — OSINT tool: Paul Hensel’s General Informational Data Page.
 - **`penn-world-table`** (low) — OSINT tool: Penn World Table.
-- **`pennsylvania-registered-voter-verification`** (medium) — Pennsylvania registered voter verification and search
+- **`pennsylvania-registered-voter-verification`** (medium) — Use when you have a `name` (plus DOB and county) for a Pennsylvania resident and want to confirm voter registration — returns registration s
 - **`pennsylvania`** (high) — Use when you have a `name` and want to know if the subject is (or recently was) in Pennsylvania state custody — returns inmate identity, DOB
 - **`people-search-4`** (high) — Use when you have a `name` and need Philippines-focused people-finding resources — a portal of missing-persons, adoption, public-records and
 - **`peoplefinder-com-reverse-address`** (medium) — OSINT tool: PeopleFinder.com - Reverse Address.

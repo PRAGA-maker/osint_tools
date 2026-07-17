@@ -22,7 +22,7 @@ kind: group-index
 - **`bmobile-in`** (medium) — Use when you have a 10-digit Indian mobile number and need its telecom operator and circle (region) to localise the subscriber.
 - **`britishphonebook-com`** (medium) — Use when you have a UK name + town (or postcode) and want a listed residential landline number and address from a UK directory-enquiries sit
 - **`callerid-test`** (low) — Use when you want the CNAM (caller-ID name) a number transmits — but the service has shut down; use a live CNAM/carrier tool instead.
-- **`callersmart`** (medium) — Reverse-phone lookup with community caller reports.
+- **`callersmart`** (medium) — Use when you have a US `phone` number and want caller identity and community spam/scam reports — returns an associated `name`/type plus crow
 - **`canada411-ca-2`** (high) — Use when you have a Canadian street address or postal code and want the names and listed phone numbers of people at that location.
 - **`canada411-ca`** (high) — Use when you have a Canadian phone number and need the listed subscriber's name and address via Canada411 reverse phone search.
 - **`carrier-lookup`** (medium) — Use when you have a US phone number and need its carrier and line type (mobile vs landline) to qualify the number before deeper phone OSINT.

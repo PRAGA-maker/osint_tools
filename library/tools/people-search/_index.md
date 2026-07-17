@@ -67,7 +67,7 @@ kind: group-index
 - **`deadtrap`** (high) — Use when you have a `phone` and want to identify its likely owner, carrier region and linked social/spam footprint — returns name, social-pr
 - **`deepfind-me`** (high) — Use when you have a `username` (or email/domain) and want to find every account it maps to — returns correlated `social-profile` links acros
 - **`dice`** (medium) — OSINT tool: Dice.
-- **`digi-netra`** (medium) — Python toolkit for tracing phone numbers, usernames, IPs, and emails via CLI.
+- **`digi-netra`** (medium) — Use when you have a `phone`, `username`, `ip-address` or `email` and want a quick multi-source CLI trace — returns carrier/geo, cross-platfo
 - **`discordleaks`** (high) — Use when you have a `name`, `username`, or keyword and want to search leaked messages from white-supremacist / neo-nazi Discord (and RocketC
 - **`dob-search-death-records`** (medium) — OSINT tool: DOB Search - Death records.
 - **`effect-group`** (high) — Use when you have a name, email or phone and want an aggregated OSINT profile — returns linked profiles, contact data, breach hits and face/

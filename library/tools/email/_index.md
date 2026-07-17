@@ -110,7 +110,7 @@ kind: group-index
 - **`heroic-now`** (high) — Use when you want to check an email against a large aggregated breach dataset via HEROIC's consumer breach-search product.
 - **`hib-ransomed`** (high) — Use when you want to check whether an email/domain appears in ransomware-leak or breach datasets.
 - **`holehe-2`** (high) — Use when you have an `email` and want to know which sites it's registered on — returns a list of accounts (`social-profile`) tied to that ad
-- **`hudson-rock-cavalier`** (medium) — Free infostealer-infection lookup for emails and domains.
+- **`hudson-rock-cavalier`** (medium) — Use when you have an `email` or `domain` and want to know if it was compromised by infostealer malware — returns infection status plus leake
 - **`hunter-io`** (high) — Use when you have a company domain and want all known work emails for that org plus its email-address pattern (Hunter.io Domain Search).
 - **`hushmail-canada`** (high) — Use when you have an `email` on a Hush domain and want to understand what that provider choice implies — returns provider/domain context, no
 - **`hushmail-com`** (low) — Use to recognise hushmail.com, the signup site for the Hushmail encrypted-email provider — a mail service, not an OSINT lookup tool.

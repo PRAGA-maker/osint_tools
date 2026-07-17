@@ -100,7 +100,7 @@ kind: group-index
 - **`commentpicker-com-2`** (high) — Use when you have a TikTok `username` and want its permanent numeric user ID plus account stats — returns the numeric ID, account creation d
 - **`commentpicker-com`** (high) — Use when you have an Instagram/Facebook/TikTok/YouTube `username` or post and want the account's stable numeric ID or the list of commenters
 - **`commentpicker`** (medium) — Facebook profiles/posts ID finder Export Facebook like and comments YouTube Tag Extractor Instagram profile analyzer Twitter account data ex
-- **`commits-top`** (medium) — Current list of the most active @Github users by country
+- **`commits-top`** (medium) — Use when you have a country/city and want the most active GitHub developers there — returns ranked `social-profile`s (GitHub usernames) by c
 - **`copainsdavant-linternaute-com`** (high) — Use when you have a `name` and a French school/town and want to place a subject via their old-classmates profile — returns social-profile, s
 - **`covaxxy`** (low) — OSINT tool: CoVaxxy.
 - **`crowdtangle-link-checker`** (medium) — Chrome extension showing Facebook, Instagram and Twitter posts that mention a given link.
@@ -813,7 +813,7 @@ kind: group-index
 - **`youtube-channel-archiver`** (medium) — Tool for automation downloading video, thumbnails and comments text from target YouTube channel (or channels).
 - **`youtube-channel-id`** (medium) — OSINT tool: Youtube channel ID.
 - **`youtube-channel-search`** (medium) — OSINT tool: Youtube Channel Search.
-- **`youtube-comment-downloader`** (medium) — easy to install and fast tool for downloading YouTube comments in txt/json. Does NOT require authorization or API keys.
+- **`youtube-comment-downloader`** (medium) — Use when you have a YouTube video/channel and want its full comment thread as data — returns commenter `username`s, text and timestamps for 
 - **`youtube-comment-finder`** (medium) — OSINT tool: YouTube Comment Finder.
 - **`youtube-comment-search-chrome-extension`** (medium) — OSINT tool: YouTube Comment Search Chrome Extension.
 - **`youtube-comment-sorting`** (medium) — OSINT tool: YouTube comment Sorting.
