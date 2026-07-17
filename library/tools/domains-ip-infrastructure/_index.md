@@ -508,7 +508,7 @@ kind: group-index
 - **`uscrapper`** (low) — Simple #python tool for extracting different information from web pages: - email addresses - social media links - phone numbers
 - **`user-agent-parser`** (low) — User Agent String can be found, for example, in the logs of your site (or someone else's), in the source code of some CLI tools for #osint a
 - **`validin`** (low) — OSINT tool: Validin.
-- **`verisign-whois-lookup`** (medium) — Whois tool that identifies the available registration information for a website or domain name
+- **`verisign-whois-lookup`** (medium) — Use when you have a `.com`/`.net` `domain` and want the authoritative registry record — returns the registrar of record, registration/expiry
 - **`verisign`** (low) — OSINT tool: Verisign.
 - **`versionista-website-monitoring`** (medium) — Website monitoring tool that monitors webpages for changes
 - **`very-quick-and-simple-metadata-online-editor-and-remover`** (low) — OSINT tool: VERY QUICK and SIMPLE metadata online editor and remover.

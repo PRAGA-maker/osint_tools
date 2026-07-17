@@ -291,7 +291,7 @@ kind: group-index
 - **`pastesite-net`** (medium) — OSINT tool: PasteSite.Net.
 - **`pbs-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`pc-magazine`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
-- **`penzu`** (medium) — Website related to social networking and blogging; allows for private blogging
+- **`penzu`** (medium) — Use when a lead points to a Penzu journal or you are enumerating a `username` across platforms — returns a `social-profile` only when the di
 - **`pinkbike`** (medium) — Online community forum
 - **`pistonheads-com`** (medium) — OSINT tool: pistonheads.com.
 - **`playphrase`** (low) — Search across 7 million + phrase from movies and watch fragments in which this3 phrase is spoken.

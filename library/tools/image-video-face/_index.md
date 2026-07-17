@@ -83,7 +83,7 @@ kind: group-index
 - **`deepfind-me-2`** (high) — Use when you need to confirm or geolocate a place by comparing satellite and street-view imagery side by side — returns aerial/street imager
 - **`depositphotos-reverse-image-search`** (medium) — tool for reverse image search (strictly from DepositPhoto's collection of 222 million files).
 - **`deturl-com`** (medium) — Use when you have a video URL (e.g. a YouTube post tied to a subject) and want to download it locally for analysis/preservation — returns th
-- **`deturl`** (medium) — OSINT tool: Deturl.
+- **`deturl`** (medium) — Use when you have a video URL (YouTube or other site) and want to download and preserve it for offline analysis — returns a saved MP4/MP3 co
 - **`dicom-viewer`** (medium) — view MRI or CT photo online (.DCM files)
 - **`diffchecker`** (high) — Use when you have two versions of an `image` (or document/text) and want to see exactly what changed — returns a highlighted diff exposing e
 - **`digitaldigging-org-2`** (high) — Use when you have an `image` and need to judge whether it is AI-generated/manipulated — returns detection methodology (visual-anomaly and pr

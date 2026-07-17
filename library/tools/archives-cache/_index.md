@@ -24,7 +24,7 @@ kind: group-index
 - **`archive-today`** (low) — Archive any webpage, including Facebook and search for archived pages.
 - **`archive-vn`** (medium) — OSINT tool: Archive.vn.
 - **`archivebox`** (medium) — Create your own self-hosted web archive. Save pages from browser history, bookmarks, Pocket etc. Save html, js, css, media, pdf and other fi
-- **`arquivo-pt`** (medium) — OSINT tool: Arquivo.pt.
+- **`arquivo-pt`** (medium) — Use when you have a `domain`/URL or a `name` and want historical snapshots of Portuguese-web pages back to 1996 — returns archived page vers
 - **`auto-archiver`** (low) — Bellingcat's tool to automatically archive social media posts, videos, and images. Free and Open-Source.
 - **`awasu`** (low) — OSINT tool: Awasu.
 - **`bellingcat-tiktok-hashtag-analysis`** (low) — Archive content and metadata from TikTok posts that contain one or more specified hashtags

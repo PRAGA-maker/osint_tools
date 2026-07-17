@@ -438,7 +438,7 @@ kind: group-index
 - **`grammar-check`** (medium) — Online grammar, spelling, and punctuation editor
 - **`grave-info-us`** (high) — Use when you have a `name` possibly buried in a pauper's grave in the NJ/NY Snake Hill (Secaucus) area — a niche potter's-field burial index
 - **`greataupair-com`** (medium) — Use when you have a `name` and suspect the subject works or seeks work in childcare/eldercare — returns a social-profile with location, job 
-- **`greater-sacramento-area-public-salaries`** (medium) — OSINT tool: Greater Sacramento Area Public Salaries.
+- **`greater-sacramento-area-public-salaries`** (medium) — Use when you have a `name` of a public employee in the Sacramento region and want to confirm their employer and pay — returns `employer-org`
 - **`greece`** (high) — Use when you have a Greek company `name`/`employer-org` and want its beneficial owners (UBO) — returns the natural persons behind the entity
 - **`gro-gov-uk`** (high) — Use when you have a `name` and want to confirm a birth, death or parentage in England & Wales — returns index entries with dates, districts 
 - **`gtcni-org-uk`** (high) — Use when you have a `name` and want to confirm whether someone is a registered teacher in Northern Ireland — returns registration status, la

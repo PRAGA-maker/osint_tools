@@ -84,7 +84,6 @@ kind: group-index
 - **`athlinks`** (medium) — Search engine aimed at competitive endurance athletes.
 - **`atscan`** (medium) — OSINT tool: ATSCAN.
 - **`australian-bureau-of-statistics`** (medium) — Australias Bureau of Statistics - includes population and census data
-- **`australian-government`** (medium) — Government of Australia portal
 - **`auto-searcher`** (low) — One by one types words from a given list into the search bar of #Google, #Bing, or another search engine
 - **`avvo-north-america`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of lawyers
 - **`awesome-public-datasets`** (low) — OSINT tool: awesome-public-datasets.
@@ -274,7 +273,7 @@ kind: group-index
 - **`find-sort-codes`** (medium) — UK bank sort code search tool
 - **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
 - **`findhow`** (medium) — The how-to directory
-- **`findlaw`** (medium) — Legal-related search engine for locating legal representatives
+- **`findlaw`** (medium) — Use when you have a `name` or firm and want to find a US attorney's practice, firm, and contact details — returns `employer-org`, `address`,
 - **`firebounty`** (low) — Bug bounty search engine
 - **`fixya`** (medium) — Website that allows users to search for products/items that need fixing and offers information on how to fix the product being searched
 - **`flippity`** (medium) — OSINT tool: Flippity.
@@ -569,7 +568,7 @@ kind: group-index
 - **`od-search-tool`** (medium) — Open directory search tool.
 - **`odbparser`** (medium) — ODBParser is a tool to search for PII being exposed in open databases.
 - **`odin`** (medium) — OSINT tool: ODIN.
-- **`office-of-government-ethics`** (medium) — US Office of Government Ethics site
+- **`office-of-government-ethics`** (medium) — Use when you have the `name` of a senior US executive-branch official and want their public financial disclosures — returns `employer-org`, 
 - **`oh-shint-osint-web-resources`** (medium) — GitBook of OSINT web resources and methodology.
 - **`omail`** (low) — An online tool that extracts and validates emails from Google and Bing search results (by keyword or domain). Partly free (200 extracts per 
 - **`ominis-osint`** (medium) — Use when you have a `name`, `username` or `email` and want automated Google reconnaissance across many sites — returns social-profile matche
@@ -626,7 +625,7 @@ kind: group-index
 - **`pdfsearch-io`** (low) — OSINT tool: Pdfsearch.io.
 - **`perplexity`** (low) — OSINT tool: Perplexity.
 - **`peteyvid`** (low) — search engine for 70 video hosting sites
-- **`ph055a-osint-collection`** (medium) — GitHub maintained list of OSINT resources across categories.
+- **`ph055a-osint-collection`** (medium) — Use when you need more tools for a class of investigation and want a categorised, free-tools-only index to mine — returns pointers to other 
 - **`phind`** (low) — OSINT tool: Phind.
 - **`pinterest-trends`** (low) — OSINT tool: Pinterest Trends.
 - **`population-reference-bureau`** (medium) — Population Reference Bureaus US and international data search of population indicator
