@@ -7,7 +7,7 @@ kind: group-index
 # transportation/air-traffic-records
 
 ## Skills here
-- **`ads-b-exchange`** (medium) — Unfiltered aircraft tracking and historical flight pattern analysis
+- **`ads-b-exchange`** (medium) — Use when you have an aircraft identifier or a `geolocation`/time and want unfiltered live or historical flight tracks — returns positions, a
 - **`ads-b-nl`** (medium) — European and military aircraft movement monitoring
 - **`flightradar24-com`** (medium) — Use when you have an aircraft registration (tail number), flight number or airport and want live/recent position and routing — returns `geol
 - **`openaip-world-aeronautical-database`** (medium) — Airspace and airfield intelligence with reusable open data

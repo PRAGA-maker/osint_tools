@@ -433,7 +433,7 @@ kind: group-index
 - **`seekolver`** (low) — #python tool for searching and filtering subdomains using different APIs: SecurityTrails, AlienVault, VirusTotal, SpyOnWeb, Crt sh
 - **`seo-chat-tools`** (low) — OSINT tool: SEO Chat Tools.
 - **`seo-spyglass`** (medium) — Free online backlink checker and analysis tool
-- **`seomastering-domain-age-checker`** (medium) — Domain age tool provides the approximate age of a website, as well as information on how the website looked when it first started
+- **`seomastering-domain-age-checker`** (medium) — Use when you have a `domain` and want its approximate age and first-registration date — returns domain age plus a pointer to how the site fi
 - **`seotools-for-excel`** (low) — OSINT tool: SEOTools for Excel.
 - **`server-status-pwn`** (low) — Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.
 - **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.

@@ -22505,43 +22505,50 @@
   },
   {
     "id": "wayback-machine-downloader-github-com",
-    "name": "wayback machine downloader (github.com)",
-    "description": "OSINT tool: wayback machine downloader (github.com).",
+    "name": "Wayback Machine Downloader",
+    "description": "Use when you have a `domain` and want to bulk-download its entire archived history from the Internet Archive — returns the reconstructed site (every captured file) for offline review.",
     "url": "https://github.com/hartator/wayback-machine-downloader",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-downloading and reconstructing a whole website's Wayback Machine history to a local folder for offline analysis.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
+      "domain",
       "document-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT). No account or payment; you only need Ruby installed.",
+    "opsec": "passive",
+    "opsecNote": "All requests hit web.archive.org, never the target's live site, so the subject is not notified. Your IP is visible to the Internet Archive; use a VPN/sock IP if you want to keep the pull unattributable, and throttle concurrency to avoid being rate-limited.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Popular open-source Ruby gem (~6k GitHub stars, MIT-licensed) by hartator; widely used in the OSINT/archival community.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "wayback_machine_downloader",
+      "hartator wayback downloader"
+    ],
     "tags": [
       "archive",
       "Archive & Cached Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/wayback-machine-downloader-github-com.md"
   },
   {
@@ -88343,30 +88350,29 @@
   {
     "id": "seomastering-domain-age-checker",
     "name": "SEOMastering Domain Age Checker",
-    "description": "Domain age tool provides the approximate age of a website, as well as information on how the website looked when it first started",
+    "description": "Use when you have a `domain` and want its approximate age and first-registration date — returns domain age plus a pointer to how the site first looked.",
     "url": "http://www.seomastering.com/domain-age-checker.php",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quickly estimating how old a domain is (creation/first-seen date) to gauge whether a site is newly stood-up.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web tool; no account or payment. Ad-supported SEO utility.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query SEOMastering's servers, not the target domain, so the site owner is not alerted. It's a third-party SEO site, so avoid submitting anything sensitive beyond the bare domain.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Third-party SEO utility surfaced via the Toddington OSINT directory; the age figure is derived/approximate — confirm against authoritative WHOIS before relying on a date.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -88382,8 +88388,8 @@
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/seomastering-domain-age-checker.md"
   },
   {
@@ -112657,38 +112663,43 @@
   {
     "id": "chainabuse",
     "name": "Chainabuse",
-    "description": "Cross-chain crypto scam/abuse report database.",
+    "description": "Use when you have a `crypto-wallet` address (or scam URL/tx hash) and want to check whether it has been reported for fraud — returns community abuse reports plus linked wallets, domains and social handles.",
     "url": "https://www.chainabuse.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "Community reports of scam/abuse crypto addresses across chains.",
+    "bestFor": "Checking a crypto address, URL or transaction hash against a free multi-chain community scam/abuse report database.",
     "selectorsIn": [
-      "crypto-wallet"
+      "crypto-wallet",
+      "domain"
     ],
     "selectorsOut": [
-      "crypto-wallet"
+      "crypto-wallet",
+      "domain",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and report via the website. A public API (v1.2) exists and requires a free API key; bulk/commercial screening is a paid product from operator TRM Labs.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching queries Chainabuse's own database, not the target or the blockchain directly, so the subject is not alerted. If you submit a report you become part of the public record — report only when you intend to warn others.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Operated by blockchain-intelligence firm TRM Labs (launched 2022), but individual reports are user-submitted and unverified — treat a hit as a lead, not proof.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "aliases": [
-      "BitcoinAbuse"
+      "BitcoinAbuse",
+      "Chain Abuse"
     ],
     "tags": [
       "crypto",
@@ -112697,8 +112708,8 @@
       "wallet"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/chainabuse.md"
   },
   {
@@ -117427,46 +117438,48 @@
   },
   {
     "id": "astronomy-sun-moon-eclipses",
-    "name": "Astronomy - Sun - Moon - Eclipses",
-    "description": "OSINT tool: Astronomy - Sun - Moon - Eclipses.",
+    "name": "Astronomy - Sun - Moon - Eclipses (timeanddate)",
+    "description": "Use when you have a `geolocation` and a date/time and want the sun/moon position and light times — returns azimuth, elevation, sunrise/sunset and moon phase to verify or narrow when a photo was taken.",
     "url": "https://www.timeanddate.com/astronomy",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Chronolocation — checking sun/moon position, shadow direction and daylight times for a place and date against clues in a photo or video.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference site; core sun/moon tools need no account. Ad-supported, with an optional paid ad-free membership.",
+    "opsec": "passive",
+    "opsecNote": "A public reference lookup — you enter a location and date, nothing about the subject. Nobody is contacted or alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "timeanddate.com is a long-established, widely-cited astronomical/time reference; its sun and moon calculations are reliable for chronolocation work.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "timeanddate astronomy",
+      "sun and moon calculator"
+    ],
     "tags": [
       "chronolocation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "timeanddate",
-      "timeanddate-com"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/astronomy-sun-moon-eclipses.md"
   },
   {
@@ -170685,43 +170698,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/messaging/telegram-tools.md"
-  },
-  {
-    "id": "telegram-usernames-finder",
-    "name": "Telegram Usernames Finder",
-    "description": "OSINT tool: Telegram Usernames Finder.",
-    "url": "https://socialfinder.app/list/Telegram",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "social-finder"
-    ],
-    "_file": "library/tools/messaging/telegram-usernames-finder.md"
   },
   {
     "id": "telegramchannels-me",
@@ -302715,25 +302691,26 @@
   {
     "id": "shazam",
     "name": "Shazam",
-    "description": "Website related to music and finding songs",
-    "url": "http://www.shazam.com",
+    "description": "Use when you have an audio/video clip and want to identify the music playing in it — returns the song title and artist, a chronolocation/context clue.",
+    "url": "https://www.shazam.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying an unknown song heard in a video or recording, as a context/timeline clue.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free app (iOS/Android) and free web/song pages. Owned by Apple; no account needed to identify a song.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You are matching an audio fingerprint against Shazam's music database — nothing about the subject is transmitted and nobody is alerted. Analyse a downloaded copy of the media rather than streaming from the source if you want to avoid touching the target's page.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "Owned and operated by Apple; the audio-fingerprint match is authoritative for identifying commercially released music.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -302741,15 +302718,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Apple Shazam"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "audio"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/shazam.md"
   },
   {
@@ -310815,41 +310795,54 @@
   {
     "id": "zenodo",
     "name": "Zenodo",
-    "description": "OSINT tool: Zenodo.",
+    "description": "Use when you have a `name` (or research topic) and want the person's datasets, software, papers and affiliations — returns creator records with ORCID, employer/affiliation and linked outputs.",
     "url": "https://zenodo.org/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "other-search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a researcher's published datasets, code and papers — with ORCID and affiliation — in a free open-access repository.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open access, operated by CERN and OpenAIRE. No account needed to search or download; an account is only required to upload.",
+    "opsec": "passive",
+    "opsecNote": "Searching is anonymous public browsing; the subject is not notified. A REST API exists for scripted queries if you want to avoid manual browsing.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and operated by CERN and OpenAIRE — a reputable, long-running scholarly infrastructure; records include DOIs and often ORCID, making authorship verifiable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "zenodo.org"
+    ],
+    "tags": [
+      "academic",
+      "research",
+      "datasets"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/other-search/zenodo.md"
   },
   {
@@ -314026,47 +314019,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/bskyfollowfinder.md"
-  },
-  {
-    "id": "bskythreadreader",
-    "name": "BskyThreadReader",
-    "description": "BskyThreadReader is a web-based Bluesky thread viewer that allows anyone to read and share Bluesky threads without logging in.",
-    "url": "https://bskythreadreader.glitch.me/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "other-platforms"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "fedifinder",
-      "mastovue"
-    ],
-    "_file": "library/tools/social-networks/bskythreadreader.md"
   },
   {
     "id": "bskyviewer-github-io",
@@ -336159,36 +336111,51 @@
   },
   {
     "id": "reddit-search-engine",
-    "name": "Reddit Search Engine",
-    "description": "OSINT tool: Reddit Search Engine.",
+    "name": "Reddit Search Engine (Google CSE)",
+    "description": "Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thread links.",
     "url": "https://cse.google.com/cse?cx=0728740ab68a619ba",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Reddit content through a Google Custom Search Engine when Reddit's native search is too weak.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account. Powered by Google's index, so coverage is whatever Google has crawled from reddit.com.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries go to Google, not to Reddit or the subject — passive. Nothing you search alerts the account owner. Use a clean browser/VPN if you want the queries unattributable to you.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Programmable Search Engine (branded with the osintme.com logo); it's just a scoped Google search, so results are Google's, but the CSE config could change or lapse over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "reddit CSE",
+      "reddit programmable search"
+    ],
+    "tags": [
+      "reddit",
+      "social-search",
+      "custom-search-engine"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-search-engine.md"
   },
   {
@@ -358786,29 +358753,34 @@
   {
     "id": "ads-b-exchange",
     "name": "ADS-B Exchange",
-    "description": "Unfiltered aircraft tracking and historical flight pattern analysis",
+    "description": "Use when you have an aircraft identifier or a `geolocation`/time and want unfiltered live or historical flight tracks — returns positions, altitude, and traceable flight-path history.",
     "url": "https://www.adsbexchange.com/",
     "category": "transportation",
     "path": [
       "transportation",
       "air-traffic-records"
     ],
-    "bestFor": "Unfiltered aircraft tracking and historical flight pattern analysis",
-    "input": "Aircraft identifier, registration, hex code, or location",
-    "output": "Live aircraft position, altitude, speed, and historical track data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Unfiltered aircraft tracking and historical flight-pattern analysis, including flights other trackers hide.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "The live globe map at globe.adsbexchange.com is free. A Community/RapidAPI developer API and full historical archives require registration and/or paid tiers.",
     "opsec": "passive",
-    "opsecNote": "Consumes broadcast telemetry from receiver networks without active interaction.",
+    "opsecNote": "You are reading broadcast telemetry aggregated from a volunteer receiver network, not contacting any aircraft or person — fully passive. Nothing you look up is exposed to the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent, community-fed network of 25,000+ receivers; well-regarded in journalism/OSINT precisely because, unlike FlightAware/Flightradar24, it does not honour block-list requests.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -358820,11 +358792,18 @@
       "ads-b-historical-flight-viewer",
       "flight-tracker"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "ADSBexchange",
+      "adsbx"
+    ],
+    "tags": [
+      "aviation",
+      "flight-tracking",
+      "geolocation"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/air-traffic-records/ads-b-exchange.md"
   },
   {
@@ -368950,13 +368929,13 @@
   {
     "id": "arina-osint-nickname-checker",
     "name": "Arina OSINT nickname checker",
-    "description": "Tool for discovering information about historical online accounts/pages by nickname.",
+    "description": "Use when you have a `username`/nickname and want to enumerate matching accounts across 40+ platforms — returns candidate `social-profile` links to check.",
     "url": "https://github.com/AlexC-ux/Arina-OSINT-nickname-checker-",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Checking a nickname across sites, including historical pages",
+    "bestFor": "Checking one nickname across 40+ sites (GitHub, VK, Telegram, Reddit, TikTok, Steam, etc.) to find associated accounts.",
     "selectorsIn": [
       "username"
     ],
@@ -368964,15 +368943,16 @@
       "social-profile",
       "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source (MIT). Requires the .NET Core 3.1 runtime; pre-built binaries are on the releases page or you can compile the C# source.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The tool sends requests to each platform from YOUR IP to test whether the username exists — passive toward the subject, but it fans out many outbound requests. Run behind a VPN if you don't want those checks tied to you, and treat hits as unconfirmed until you open them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Small community nickname checker (22 stars).",
+    "trustNote": "Small community project (~22 stars, MIT, last release v2.3 in 2022) by AlexC-ux; low adoption and unmaintained-leaning, so expect some site checks to be stale.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -368990,8 +368970,8 @@
       "account-discovery"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/username/arina-osint-nickname-checker.md"
   },
   {

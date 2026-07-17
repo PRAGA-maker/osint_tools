@@ -75,7 +75,6 @@ kind: group-index
 - **`bsky-social-2`** (high) — Use when you have a `username`/`name` and want their Bluesky presence — returns the profile, posts, and follow graph (`social-profile`) on a
 - **`bsky-social`** (medium) — Use when you have a `username` or `name` and want to find a Bluesky presence — returns a `social-profile` with posts, handle, bio and follow
 - **`bskyfollowfinder`** (medium) — A tool that identifies which Bluesky accounts are followed by a profile’s contacts but not by that profile. Can be used for expanding networ
-- **`bskythreadreader`** (medium) — BskyThreadReader is a web-based Bluesky thread viewer that allows anyone to read and share Bluesky threads without logging in.
 - **`bskyviewer-github-io`** (high) — Use when you have a Bluesky `username`/handle and want to view a profile, posts, and threads without an account — returns social-profile con
 - **`buffer`** (low) — Use when you have a `username`/handle and want to check for a public Buffer Start Page link-in-bio — returns linked social-profiles; otherwi
 - **`burrrd`** (medium) — OSINT tool: burrrd..
@@ -480,7 +479,7 @@ kind: group-index
 - **`reddit-reditr`** (medium) — OSINT tool: Reddit - Reditr.
 - **`reddit-scraper`** (medium) — Crawl posts, comments, communities, and users without login.
 - **`reddit-search-cemulate`** (low) — Alternative Reddit search tool.
-- **`reddit-search-engine`** (medium) — OSINT tool: Reddit Search Engine.
+- **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
 - **`reddit-search-reddit-search-surge-sh`** (low) — Reddit content discovery tool.
 - **`reddit-search-tool`** (medium) — OSINT tool: Reddit Search Tool.

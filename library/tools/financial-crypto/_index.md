@@ -45,7 +45,7 @@ kind: group-index
 - **`btc-com`** (low) — OSINT tool: BTC.com.
 - **`btcbook-guarda-com`** (medium) — OSINT tool: btcbook.guarda.com.
 - **`business-hsbc-co-uk`** (medium) — OSINT tool: business.hsbc.co.uk.
-- **`chainabuse`** (medium) — Cross-chain crypto scam/abuse report database.
+- **`chainabuse`** (medium) — Use when you have a `crypto-wallet` address (or scam URL/tx hash) and want to check whether it has been reported for fraud — returns communi
 - **`chainalysis`** (low) — OSINT tool: Chainalysis.
 - **`china-related-resources`** (low) — Resources for research on companies in China.,
 - **`coinatmradar-com`** (low) — Use when you have a `geolocation` (city/country) and want the crypto ATMs and teller locations there — returns physical `address` and operat

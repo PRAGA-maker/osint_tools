@@ -115,7 +115,7 @@ kind: group-index
 - **`wayback-google-analytics`** (medium) — Use when you have a `domain` and want to link it to other sites via shared current/historical Google Analytics or AdSense IDs — returns rela
 - **`wayback-keywords-search`** (medium) — A tool that allows you to download all the pages of a particular domain from http://archive.org for a particular month or day, and quickly d
 - **`wayback-machine-2`** (high) — Use when you have a `domain`, `social-profile` or `username` URL and want to see historical snapshots — including deleted or changed pages —
-- **`wayback-machine-downloader-github-com`** (medium) — OSINT tool: wayback machine downloader (github.com).
+- **`wayback-machine-downloader-github-com`** (medium) — Use when you have a `domain` and want to bulk-download its entire archived history from the Internet Archive — returns the reconstructed sit
 - **`wayback-machine`** (medium) — OSINT tool: Wayback Machine.
 - **`wayback-tweets`** (medium) — Use when you have a Twitter/X `username` and want their deleted or historical tweets — returns archived tweet captures pulled from the Wayba
 - **`waybackpdf`** (low) — Use when you have a `domain` and want every PDF the Internet Archive holds for it — returns document-id files that often carry names and met

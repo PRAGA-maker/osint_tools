@@ -153,7 +153,6 @@ kind: group-index
 - **`telegram-search-search-for-posts`** (medium) — Use when you have a `name`, `username`, or keyword and want to find Telegram channels/posts mentioning it — returns matching public channels
 - **`telegram-search`** (medium) — OSINT tool: Telegram Search.
 - **`telegram-tools`** (high) — Use when you have a Telegram user/account `device-id` (numeric ID) or bot file ID and want to decode it — returns approximate account-creati
-- **`telegram-usernames-finder`** (medium) — OSINT tool: Telegram Usernames Finder.
 - **`telegramchannels-me`** (medium) — Use when you have a `username`, `name`, or keyword and want to discover public Telegram channels — returns `social-profile` links to matchin
 - **`telegramdb-org`** (medium) — OSINT tool: TelegramDB.org.
 - **`telegramdb`** (medium) — TelegramDB is a searchable database service that allows users to explore public Telegram groups and channels via a dedicated bot.
