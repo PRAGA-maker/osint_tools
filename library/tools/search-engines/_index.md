@@ -41,7 +41,7 @@ kind: group-index
 - **`african-development-bank`** (medium) — African Development Bank Groups statistical search site
 - **`african-journal-online`** (low) — OSINT tool: African Journal Online.
 - **`agence-france-presse-afp`** (low) — OSINT tool: Agence France-Presse (AFP).
-- **`ahmia-list-of-onion-domains`** (medium) — List of onion domains
+- **`ahmia-list-of-onion-domains`** (medium) — Use when you have a keyword, `username` or `domain` and want to find Tor hidden services (.onion) mentioning it — returns onion `domain` add
 - **`ai-search-whisper`** (low) — Enter your problem and get a list of links to Google and Bing queries (using advanced search operators) that will help you solve it.
 - **`airlines-inform`** (medium) — Aviation-related website that offers a search of the global database of airlines and airports
 - **`alabama-medical-license-search`** (medium) — Alabama Board of Medical Examiners physician license search tool
@@ -421,7 +421,7 @@ kind: group-index
 - **`jstor`** (low) — OSINT tool: JSTOR.
 - **`jubii-search-engine-denmark`** (medium) — Denmark based web search engine covering regional results
 - **`jurispro-expert-witness-listings-united-states`** (medium) — Use when you have a `name` or field and want to find a US expert witness's professional profile — returns employer-org, credentials and cont
-- **`justia-blawgsearch`** (medium) — Website that provides a search engine that searches blogs related to the law
+- **`justia-blawgsearch`** (medium) — Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an 
 - **`justice-directory`** (medium) — Exhaustive list of law enforcement agency websites
 - **`kagi-search`** (low) — OSINT tool: Kagi Search.
 - **`kartoo-visual-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)

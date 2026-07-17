@@ -100,7 +100,7 @@ kind: group-index
 - **`movebank`** (low) — Platform for animal tracking data.
 - **`nasa-firms`** (low) — Displays a world map overlaid with infra-red data from one or more satellites, some, but not all of which may represent heat from fires and 
 - **`nasa-worldview`** (low) — NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere,
-- **`neshan-org`** (medium) — OSINT tool: neshan.org.
+- **`neshan-org`** (medium) — Use when you have an Iranian `address`/`geolocation` and want local street, satellite and POI detail — returns Iran-focused maps, place name
 - **`nls-uk`** (medium) — Use when you have a `geolocation` or `address` and want to compare it against georeferenced historic maps (UK & worldwide) — returns `geoloc
 - **`oalley`** (medium) — OSINT tool: OALLEY.
 - **`one-network`** (medium) — OSINT tool: one.network.
@@ -112,7 +112,7 @@ kind: group-index
 - **`openstreetmap-nominatim`** (medium) — Use when you have an `address` (or coordinates) and want to geocode it to precise lat/long and structured location data — returns `geolocati
 - **`orbtrack`** (low) — Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for
 - **`overturemaps-org`** (medium) — OSINT tool: overturemaps.org.
-- **`peakvisor-com`** (medium) — OSINT tool: peakvisor.com.
+- **`peakvisor-com`** (medium) — Use when you have an outdoor/mountain photo with a skyline and want to identify the peaks and confirm the vantage point — returns named summ
 - **`peakvisor`** (low) — Dual window views for any global location: (1) a 2-D map & (2) a 3-D rendered terrain model, with photo fitting, shade/slope mapping, sun tr
 - **`planet-labs`** (low) — Planet Labs PBC is an American optical satellite imagery company that sells access to imagery.
 - **`police-records-access-project`** (low) — A database providing searchable access to California law enforcement records including police use-of-force incidents, shootings, and miscond

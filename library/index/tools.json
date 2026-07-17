@@ -62977,7 +62977,7 @@
   {
     "id": "truecaller",
     "name": "Truecaller",
-    "description": "Phone number verification, caller ID lookup, spam detection, contact validation",
+    "description": "Use when you have a `phone` number and want a crowd-sourced caller-ID name — returns the name/label others have saved for that number plus carrier/region and spam reports.",
     "url": "https://www.truecaller.com/",
     "category": "documents-metadata",
     "path": [
@@ -62985,24 +62985,29 @@
       "android",
       "apps"
     ],
-    "bestFor": "Phone number verification, caller ID lookup, spam detection, contact validation",
-    "input": "Phone numbers, contact names",
-    "output": "Caller name, carrier info, location data, spam reports, contact validation",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Resolving an unknown phone number to a crowd-sourced name and spam reputation.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Requires app or web access; limited free tier for bulk lookups",
+    "costNote": "Free tier (with account) allows limited lookups; heavier use, name-search, and \"who searched me\" features push Premium. Web/search access is gated behind login.",
+    "opsec": "active",
+    "opsecNote": "Truecaller is account-bound and can be intrusive - searches are tied to your Truecaller identity, the person you look up may (with some settings/premium) be able to see they were searched, and installing the app uploads your address book. Use a dedicated sock-puppet account and a burner device/number; never log in with your real identity or contacts.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "Caller-ID data is crowd-sourced from users' address books and community spam tags — often right, but the \"name\" is whatever contacts saved, so it can be a nickname, a business, or wrong. Corroborate.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": true,
@@ -63013,11 +63018,17 @@
       "true-caller",
       "truecaller-com"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "True Caller"
+    ],
+    "tags": [
+      "phone",
+      "caller-id",
+      "spam"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/truecaller.md"
   },
   {
@@ -84217,52 +84228,56 @@
   },
   {
     "id": "openlink-profiler",
-    "name": "Openlink Profiler",
-    "description": "A Free Tool to Check Backlinks to Any Site",
+    "name": "OpenLinkProfiler",
+    "description": "Use when you have a `domain` and want to see who links to it — returns backlinks and referring domains that reveal a site's network and associates.",
     "url": "https://www.openlinkprofiler.org",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Pulling a free backlink profile for a domain to map who references or is affiliated with it.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free backlink checker; viewing a domain's metrics/report requires a free sign-up with email verification. No paid tier needed for the core report.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You query OpenLinkProfiler's own crawl index, not the target site, so the domain owner is not alerted. You do have to register an email to see results — use a throwaway address, not one tied to your identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party backlink index (by SEOprofiler); coverage is its own crawl and is smaller than paid tools like Ahrefs/Majestic, so treat the link list as partial.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "openlinkprofiler",
       "openlinkprofiles"
     ],
+    "aliases": [
+      "Openlink Profiler"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "whois-ip-lookups-website-analysis",
+      "backlinks"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/openlink-profiler.md"
   },
   {
@@ -129274,14 +129289,14 @@
   },
   {
     "id": "shadowmap",
-    "name": "ShadowMap",
-    "description": "Global map of 3D buildlings and the shadows they cast at a specific time a day",
+    "name": "Shadowmap",
+    "description": "Use when you have a `geolocation`/`address` and a candidate date-time and want the sun position and building shadows in 3D — returns shadow direction/length to test or narrow when an outdoor photo was taken.",
     "url": "https://app.shadowmap.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "3D sun-and-shadow simulation over real buildings/terrain for chronolocation of urban and outdoor photos.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -129289,29 +129304,36 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web app covers interactive sun/shadow simulation at a location and time; some pro/advanced features (higher-res models, exports, saved projects) are paid, but the core chronolocation workflow is free.",
+    "opsec": "passive",
+    "opsecNote": "You enter a location and time into a public 3D map — nothing about the subject or the source image is transmitted, and no one is alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Recommended in Bellingcat's toolkit; sun geometry is astronomically accurate, and 3D building shadows are as good as the underlying city model (excellent in mapped cities, coarser elsewhere).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ShadowMap",
+      "shadowmap.org"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "geolocation"
+      "geolocation",
+      "chronolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/shadowmap.md"
   },
   {
@@ -130542,43 +130564,49 @@
   },
   {
     "id": "timestamp-converter-com",
-    "name": "timestamp-converter.com",
-    "description": "OSINT tool: timestamp-converter.com.",
+    "name": "Timestamp Converter",
+    "description": "Use when you have a raw Unix/epoch timestamp (from `metadata-exif`, logs, or a URL) and want the human date/time across timezones — returns the converted date to anchor an event.",
     "url": "https://www.timestamp-converter.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Converting Unix/epoch timestamps to human-readable dates across timezones (and back).",
     "selectorsIn": [
-      "geolocation"
+      "metadata-exif"
     ],
     "selectorsOut": [
-      "geolocation"
+      "metadata-exif"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free in-browser utility; no account, no limits. Conversion runs client-side.",
+    "opsec": "passive",
+    "opsecNote": "A pure client-side date-math utility — you paste a number, nothing is queried or logged externally and no one is alerted. Safe for sensitive values.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A simple deterministic converter; correctness is easy to sanity-check against any other epoch tool, so trust is high for the narrow job it does.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "timestamp-converter.com",
+      "epoch converter"
+    ],
     "tags": [
       "timezones",
       "Time Zones & Converters"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/timestamp-converter-com.md"
   },
   {
@@ -161003,44 +161031,51 @@
   },
   {
     "id": "neshan-org",
-    "name": "neshan.org",
-    "description": "OSINT tool: neshan.org.",
-    "url": "https://neshan.org/maps#",
+    "name": "Neshan Maps",
+    "description": "Use when you have an Iranian `address`/`geolocation` and want local street, satellite and POI detail — returns Iran-focused maps, place names and imagery that Western map providers cover poorly.",
+    "url": "https://neshan.org/maps",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Detailed street/satellite maps and place search inside Iran, where Google/Apple Maps coverage is thin.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "address",
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web maps and place search; no account needed to browse. Neshan also sells map/routing APIs to developers, but browsing is free.",
+    "opsec": "passive",
+    "opsecNote": "Browsing maps is passive and doesn't touch any subject. The interface is primarily in Persian/Farsi — use translation, and note it's an Iran-based service, so treat it as you would any query to a foreign provider.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Iran's leading local mapping/navigation service, with far better Iranian street/POI/satellite detail than Western providers; place data is crowd/commercial-sourced, so cross-check exact points.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ir"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "neshan.org",
+      "نشان"
+    ],
     "tags": [
       "mapsandlocationsites",
-      "Maps & Location Related Sites"
+      "Maps & Location Related Sites",
+      "iran"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/neshan-org.md"
   },
   {
@@ -161560,47 +161595,54 @@
   },
   {
     "id": "peakvisor-com",
-    "name": "peakvisor.com",
-    "description": "OSINT tool: peakvisor.com.",
+    "name": "PeakVisor",
+    "description": "Use when you have an outdoor/mountain photo with a skyline and want to identify the peaks and confirm the vantage point — returns named summits and a matching 3D panorama to pin the `geolocation`.",
     "url": "https://peakvisor.com/panorama.html",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying mountain peaks in a photo and matching the skyline to a viewpoint for geolocation.",
     "selectorsIn": [
       "geolocation",
-      "address"
+      "image"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web 3D panorama tool and free mobile apps (iOS/Android) cover peak identification; some advanced maps/offline features are paywalled, but the panorama/identify workflow is usable free.",
+    "opsec": "passive",
+    "opsecNote": "You work from your own copy of the image and a public terrain model — nothing about the subject or source is transmitted, and no one is alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A well-regarded outdoor mapping product built on public elevation data; peak names/positions are reliable, but the skyline match is only as good as your chosen viewpoint and orientation.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "mapsandlocationsites",
-      "Maps & Location Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "peakvisor"
     ],
+    "aliases": [
+      "peakvisor panorama"
+    ],
+    "tags": [
+      "mapsandlocationsites",
+      "Maps & Location Related Sites",
+      "geolocation",
+      "terrain"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/peakvisor-com.md"
   },
   {
@@ -269029,52 +269071,6 @@
     "_file": "library/tools/public-records/western-states-marriages-search.md"
   },
   {
-    "id": "westlaw-united-states",
-    "name": "WestLaw (United States)",
-    "description": "Legal-related search engine for legal court cases and documents",
-    "url": "http://web2.westlaw.com/signon/default.wl?newdoor=true",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/westlaw-united-states.md"
-  },
-  {
     "id": "whaleslide",
     "name": "WhaleSlide",
     "description": "OSINT tool: WhaleSlide.",
@@ -271755,25 +271751,31 @@
   },
   {
     "id": "ahmia-list-of-onion-domains",
-    "name": "AHMIA List of Onion Domains",
-    "description": "List of onion domains",
-    "url": "https://ahmia.fi/address/",
+    "name": "Ahmia (Tor onion search)",
+    "description": "Use when you have a keyword, `username` or `domain` and want to find Tor hidden services (.onion) mentioning it — returns onion `domain` addresses to investigate.",
+    "url": "https://ahmia.fi/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching the Tor network's .onion hidden services from the clearnet by keyword or selector.",
+    "selectorsIn": [
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free clearnet search engine (ahmia.fi); no account. Viewing the .onion results themselves requires the Tor Browser.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching ahmia.fi over clearnet is passive and doesn't touch the hidden services. If you then OPEN an onion result, do it only through Tor Browser (and consider a VM/Tails) — visiting hidden services directly can expose you and is where real risk begins.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running, reputable independent Tor search project that filters abuse material; its index is a crawl, so coverage is partial and results should be verified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -271782,19 +271784,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ahmia",
       "ahmia-link-graph"
     ],
+    "aliases": [
+      "ahmia.fi",
+      "Ahmia onion search"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "search-engines",
+      "tor",
+      "darkweb"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ahmia-list-of-onion-domains.md"
   },
   {
@@ -289035,24 +289042,31 @@
   {
     "id": "justia-blawgsearch",
     "name": "Justia BlawgSearch",
-    "description": "Website that provides a search engine that searches blogs related to the law",
-    "url": "http://blawgsearch.justia.com",
+    "description": "Use when you have a `name`, firm or legal topic and want law-blog coverage — returns legal blog posts and blawg authors that can surface an attorney's writing and affiliations.",
+    "url": "https://blawgsearch.justia.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching law blogs (\"blawgs\") for an attorney, firm, or legal topic.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free search, part of Justia's free legal-resource network; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public keyword search on Justia's index — nothing about the subject is exposed and no one is alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Justia, a long-established free legal-information provider; it indexes real, attributed law-blog content, so results are verifiable at the source blog.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -289061,18 +289075,22 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "justia-us-supreme-court-center-united-states"
     ],
+    "aliases": [
+      "BlawgSearch",
+      "Justia blawg search"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "legal"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/justia-blawgsearch.md"
   },
   {
@@ -361225,37 +361243,50 @@
   {
     "id": "epicvin",
     "name": "EpicVIN",
-    "description": "OSINT tool: EpicVIN.",
+    "description": "Use when you have a `vin` or US `vehicle-plate` and want to decode the vehicle and check history flags — free basic decode/specs, with a paid full history report.",
     "url": "https://epicvin.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Free VIN decoding and US plate-to-VIN lookup, with paid full vehicle-history reports.",
+    "selectorsIn": [
+      "vin",
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "vin"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free VIN decoder and US license-plate lookup give basic specs/decode. The comprehensive history report (title, odometer, accidents, theft, ownership) is paid — advertised \"from $1\" on a trial that rolls into a subscription.",
+    "opsec": "passive",
+    "opsecNote": "A public vehicle-data lookup; you query EpicVIN's databases, not any owner, so no one is alerted. Buying a full report requires payment details — use caution, and note the \"$1 trial\" converts to a recurring subscription unless cancelled.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial vehicle-history vendor aggregating ~70 databases / 350M+ VIN records (post-1981). The free decode is reliable; paid-report completeness varies by vehicle and data source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Epic VIN"
+    ],
     "tags": [
-      "vehicle-automobile-research"
+      "vehicle-automobile-research",
+      "vin"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/epicvin.md"
   },
   {

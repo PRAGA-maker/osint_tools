@@ -369,7 +369,7 @@ kind: group-index
 - **`open-multiple-links-one-click`** (low) — OSINT tool: Open Multiple Links ☷ One Click.
 - **`open-web-analytics-tool`** (medium) — Search for information and statistics about any online website using open source software
 - **`openhunting-io`** (low) — OSINT tool: OPENHUNTING.IO.
-- **`openlink-profiler`** (medium) — A Free Tool to Check Backlinks to Any Site
+- **`openlink-profiler`** (medium) — Use when you have a `domain` and want to see who links to it — returns backlinks and referring domains that reveal a site's network and asso
 - **`openlink-structured-data-sniffer`** (low) — GoogleChrome extension which reveals structured metadata (Microdata, RDFa, JSON-LD, Turtle, etc.) embedded within HTML documents.
 - **`openlinkprofiler`** (low) — OSINT tool: OpenLinkProfiler.
 - **`openlinkprofiles`** (low) — Get backlinks by website URL. Filter and sort backlinks by anchor, context, trust, LIS and industry.

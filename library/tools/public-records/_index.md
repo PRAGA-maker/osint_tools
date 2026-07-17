@@ -1040,7 +1040,6 @@ kind: group-index
 - **`webmd-medical-sciences-search`** (medium) — Academic-related search engine focusing on science, research, and medicine
 - **`west-virginia`** (high) — Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody st
 - **`western-states-marriages-search`** (low) — Use when you have a `name` and want historical marriage records from the western US — returns bride/groom names, dates, places, and spousal 
-- **`westlaw-united-states`** (medium) — Legal-related search engine for legal court cases and documents
 - **`whaleslide`** (medium) — OSINT tool: WhaleSlide.
 - **`whitepages-reverse-address-search`** (medium) — OSINT tool: Whitepages - Reverse Address Search.
 - **`who-data`** (low) — OSINT tool: WHO Data.

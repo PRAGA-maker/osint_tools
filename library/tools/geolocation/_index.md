@@ -268,7 +268,7 @@ kind: group-index
 - **`sentinel-hub`** (high) — Use when you need dated, recent satellite imagery of an area to detect change over time or confirm current ground conditions.
 - **`shademap`** (medium) — ShadeMap is a global simulation of mountain, building & tree shadows for a given date & time. Base data is free, but users can buy 30cm accu
 - **`shadow-finder`** (medium) — Use when you have an `image` with a measurable shadow and a known object height, date, and time — returns the set of earth locations where t
-- **`shadowmap`** (medium) — Global map of 3D buildlings and the shadows they cast at a specific time a day
+- **`shadowmap`** (medium) — Use when you have a `geolocation`/`address` and a candidate date-time and want the sun position and building shadows in 3D — returns shadow 
 - **`site24x7-com`** (medium) — OSINT tool: site24x7.com.
 - **`skydb`** (medium) — Worldwide database of skyscrapers and tall buildings.
 - **`skyfi-com-satellite-open-data`** (high) — Use when you need to find or order higher-resolution open and commercial satellite scenes for a specific area and date.
@@ -294,7 +294,7 @@ kind: group-index
 - **`timeanddate-com`** (medium) — Use when you have a `geolocation` and a date/time and want the exact sun/shadow, timezone, or day-length — supports chronolocation of photos
 - **`timeanddate`** (high) — Use when you need precise sunrise/sunset/twilight, timezone, or weather-history facts for a place and date to validate a photo's timestamp o
 - **`timejones-com`** (medium) — OSINT tool: timejones.com.
-- **`timestamp-converter-com`** (medium) — OSINT tool: timestamp-converter.com.
+- **`timestamp-converter-com`** (medium) — Use when you have a raw Unix/epoch timestamp (from `metadata-exif`, logs, or a URL) and want the human date/time across timezones — returns 
 - **`toronto-area-live-traffic-cams`** (low) — OSINT tool: Toronto area Live Traffic Cams.
 - **`toronto-live`** (medium) — OSINT tool: Toronto Live.
 - **`tpscalls-live`** (low) — OSINT tool: tpscalls.live.

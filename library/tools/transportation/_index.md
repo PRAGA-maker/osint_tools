@@ -67,7 +67,7 @@ kind: group-index
 - **`deciphering-number-plates`** (medium) — OSINT tool: Deciphering Number Plates.
 - **`direkht-ban-guru`** (low) — Enter the name of the station to see what cities you can get to by train without changing (+ travel time for each city).
 - **`enterprise-rental-receipts`** (medium) — OSINT tool: enterprise Rental Receipts.
-- **`epicvin`** (medium) — OSINT tool: EpicVIN.
+- **`epicvin`** (medium) — Use when you have a `vin` or US `vehicle-plate` and want to decode the vehicle and check history flags — free basic decode/specs, with a pai
 - **`equasis`** (low) — Equasis provides vessel ownership and safety records, as well as shipping company fleet information.
 - **`eships-net`** (low) — OSINT tool: eships.net.
 - **`europe-station-maps-floor-plan`** (low) — OSINT tool: Europe station maps floor plan.
