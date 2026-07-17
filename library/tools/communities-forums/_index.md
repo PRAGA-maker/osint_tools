@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`blog-search-engines/`** — 1 skill(s) below.
 - **`discord-servers/`** — 3 skill(s) below.
-- **`forum-search-engines/`** — 5 skill(s) below.
+- **`forum-search-engines/`** — 4 skill(s) below.
 - **`irc-search/`** — 3 skill(s) below.
 - **`reddit-communities/`** — 3 skill(s) below.
 
@@ -161,13 +161,11 @@ kind: group-index
 - **`google-com-25`** (medium) — OSINT tool: google.com.
 - **`google-com-26`** (medium) — OSINT tool: google.com.
 - **`google-com-27`** (medium) — OSINT tool: google.com.
-- **`google-com-28`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
 - **`google-com-30`** (medium) — OSINT tool: google.com.
 - **`google-com-31`** (medium) — OSINT tool: google.com.
 - **`google-com-32`** (medium) — OSINT tool: google.com.
 - **`google-com-33`** (medium) — OSINT tool: google.com.
-- **`google-com-34`** (medium) — OSINT tool: google.com.
 - **`google-com-35`** (medium) — OSINT tool: google.com.
 - **`google-com-36`** (medium) — OSINT tool: google.com.
 - **`google-com-37`** (medium) — OSINT tool: google.com.

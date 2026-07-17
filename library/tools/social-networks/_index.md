@@ -103,7 +103,6 @@ kind: group-index
 - **`commits-top`** (medium) — Use when you have a country/city and want the most active GitHub developers there — returns ranked `social-profile`s (GitHub usernames) by c
 - **`copainsdavant-linternaute-com`** (high) — Use when you have a `name` and a French school/town and want to place a subject via their old-classmates profile — returns social-profile, s
 - **`covaxxy`** (low) — OSINT tool: CoVaxxy.
-- **`crowdtangle-link-checker`** (medium) — Chrome extension showing Facebook, Instagram and Twitter posts that mention a given link.
 - **`crowdtangle`** (low) — Use when you want historical Facebook/Instagram public-post monitoring — but note the tool was SHUT DOWN by Meta in August 2024 and is no lo
 - **`dashboard-laterforreddit-com-analysis`** (medium) — examine popular post trends for a given subreddit
 - **`datanyze-com`** (medium) — Use when you have a `name` on LinkedIn or an `employer-org` and want business contact data — returns work `email`, direct-dial `phone` and f
@@ -114,7 +113,7 @@ kind: group-index
 - **`discord-bots`** (medium) — OSINT tool: Discord Bots.
 - **`discord-center`** (medium) — OSINT tool: Discord Center.
 - **`discord-chat-exporter`** (medium) — A tool for exporting Discord chat logs in multiple formats.
-- **`discord-history-tracker`** (medium) — OSINT tool: Discord History Tracker.
+- **`discord-history-tracker`** (medium) — Use when you have access to a Discord server/DM and want to archive its messages for offline analysis — returns a searchable local copy of c
 - **`discord-id-lookup`** (medium) — OSINT tool: Discord ID Lookup.
 - **`discord-me`** (medium) — OSINT tool: Discord Me.
 - **`discord-servers-portal`** (medium) — OSINT tool: Discord Servers Portal.
@@ -805,7 +804,7 @@ kind: group-index
 - **`yoodownload-com`** (high) — Use when you have a `social-profile` or post/video URL and want to download the media for offline analysis — returns image/video files and m
 - **`yotube-channel-search`** (medium) — Tool for searching YouTube channels by keywords in the name and creation date. The result is a table with the channel ID, name, description,
 - **`youfilter-youtube-advanced-search-filter`** (medium) — An extension that displays #YouTube search results in a table with very detailed information about each video (including quick links to the 
-- **`youglish`** (medium) — Type a random phrase in English and listen to native speakers pronounce it in YouTube videos.
+- **`youglish`** (medium) — Use when you have a `name` or phrase and want YouTube clips where it is actually spoken — returns video segments (with jump-to timing) that 
 - **`yout`** (medium) — OSINT tool: Yout.
 - **`youtube-actual-top-comments`** (medium) — The main drawback of the standard #YouTube comment display is that it does not sort comments by the number of likes, but simply shows popula
 - **`youtube-booster`** (medium) — This extension selects frames from videos and generates quick links to find them on Google and TinEye!

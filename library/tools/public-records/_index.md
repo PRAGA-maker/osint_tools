@@ -149,7 +149,7 @@ kind: group-index
 - **`canadian-legal-information-institute`** (high) — Use when you have a `name` and want Canadian court/tribunal decisions or legislation mentioning them — returns document-id case citations an
 - **`canadian-obituaries`** (high) — Use when you have a `name` and want to check whether a subject (or relative) has a Canadian death/obituary notice — returns death confirmati
 - **`canadian-patents-database`** (medium) — OSINT tool: Canadian Patents Database.
-- **`canadian-trademarks-database`** (medium) — OSINT tool: Canadian Trademarks Database.
+- **`canadian-trademarks-database`** (medium) — Use when you have a `name`, brand, or `employer-org` and want Canadian trademark filings tied to them — returns the owner's name, `address` 
 - **`cancelthesefunerals-com`** (high) — Use when you have a `name` and want to check whether a person appears in the US Social Security Death Master File — returns death record fie
 - **`canlii-database`** (medium) — Canadian Legal Information Institute searchable database of legal documents and cases
 - **`canpages-search-canada`** (medium) — Business-related search engine that searches using company name, people name, address and telephone

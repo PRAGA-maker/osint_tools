@@ -322,7 +322,6 @@ kind: group-index
 - **`webcam-nl-nl`** (medium) — OSINT tool: Webcam.nl (NL).
 - **`webcam-search-engine`** (low) — OSINT tool: Webcam Search Engine.
 - **`webcams-abroad-live-images`** (low) — OSINT tool: Webcams Abroad live images.
-- **`webcams-travel`** (medium) — OSINT tool: Webcams.travel.
 - **`webcamtaxi`** (low) — OSINT tool: Webcamtaxi.
 - **`what3words-2`** (high) — Use when you have a `geolocation`/`address` or a three-word address and want to convert between them — returns the precise 3m-square locatio
 - **`whatiswhere-com`** (medium) — OpenStreetMap based free POI (point of interest) search. 102 types of objects
