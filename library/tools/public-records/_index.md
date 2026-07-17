@@ -736,7 +736,6 @@ kind: group-index
 - **`ontario-highway-traffic-act`** (medium) — Site providing access to Ontarios laws including the Highway Traffic Act, Provincial Offences Act, and subsequent amendments
 - **`ontario-provincial-police`** (medium) — OSINT tool: Ontario Provincial Police.
 - **`onthehouse-com-au`** (medium) — Use when you have an Australian `address` and want the property's history and value context — returns past sale prices/dates, estimated valu
-- **`open-corporates-command-line-client-occli`** (medium) — Gathering detailed information about company through cli.
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
 - **`open-data-policing`** (medium) — OSINT tool: Open Data Policing.
 - **`open-data-portal-m-nchen-german`** (medium) — Munich municipal administrative data
@@ -1017,7 +1016,7 @@ kind: group-index
 - **`unc-system-employees-with-the-biggest-paychecks`** (medium) — OSINT tool: UNC System employees with the biggest paychecks.
 - **`unclaimed-and-abandoned-property-search-directory`** (medium) — OSINT tool: Unclaimed and Abandoned Property Search Directory.
 - **`unclaimed-money-us-google-search`** (medium) — OSINT tool: "unclaimed money" US - Google Search.
-- **`unclaimed-property-administrators`** (medium) — OSINT tool: Unclaimed Property Administrators.
+- **`unclaimed-property-administrators`** (medium) — Use when you have a `name` and want to search official US/Canada unclaimed-property databases for money/assets owed to that person — returns
 - **`unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa`** (medium) — OSINT tool: Unclaimed Property FREE SEARCH - Officially endorsed By The States, Provinces and Naupa.
 - **`unctad-country-fact-sheets`** (low) — OSINT tool: UNCTAD Country Fact Sheets.
 - **`unctad-investment-country-profiles`** (low) — OSINT tool: UNCTAD Investment Country Profiles.

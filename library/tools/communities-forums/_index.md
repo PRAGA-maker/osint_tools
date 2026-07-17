@@ -7,7 +7,7 @@ kind: group-index
 # communities-forums
 
 ## Sub-groups
-- **`blog-search-engines/`** — 2 skill(s) below.
+- **`blog-search-engines/`** — 1 skill(s) below.
 - **`discord-servers/`** — 3 skill(s) below.
 - **`forum-search-engines/`** — 5 skill(s) below.
 - **`irc-search/`** — 3 skill(s) below.
@@ -76,7 +76,7 @@ kind: group-index
 - **`computing`** (medium) — News and analysis for UK executives
 - **`context`** (medium) — OSINT tool: Context.
 - **`controlc-pastebin`** (medium) — Use when you have a paste ID/link or a leaked snippet and want to read or host plain-text content anonymously — a pastebin where dumped data
-- **`couchsurfing`** (medium) — Website related to social networking in the form of travel and accomodations
+- **`couchsurfing`** (medium) — Use when you have a `username` or `name` and want to check for a Couchsurfing travel/hospitality profile — returns a `social-profile` with p
 - **`council-on-foreign-relations`** (medium) — Site maintained by the Council on Foreign Relations, offering information on defense and security, including terrorist groups and US police
 - **`createtv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`crn-com-technology-news-for-solution-providers`** (medium) — Online articles, news, and analysis for solution providers and technology integrators
@@ -182,7 +182,7 @@ kind: group-index
 - **`google-groups`** (medium) — OSINT tool: Google Groups.
 - **`google-plus-directory`** (medium) — Directory of Google Plus pages
 - **`grasswire`** (medium) — Collaborative real-time news reporting database for fact-checking social media content
-- **`grindr`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
 - **`guesttoguest`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`hashbin`** (medium) — OSINT tool: HashBin.
 - **`hastebin`** (medium) — Use when you have a hastebin link (or a paste key) surfaced in a breach, chat, or search result and want to read the shared text before it e

@@ -186,7 +186,7 @@ kind: group-index
 - **`cyb-detective-osint-stuff-tool-collection`** (high) — Use when you have a selector class (username, email, phone, image, domain…) and want to discover niche tools for it — returns pointers to 10
 - **`cyber-alert`** (low) — OSINT tool: Cyber Alert.
 - **`cyber-criminals-most-wanted`** (medium) — Cyber crime awareness, prevention and internet safety information portal
-- **`cybercemetery`** (medium) — Archive of government websites that have shut down
+- **`cybercemetery`** (medium) — Use when you need content from a defunct US federal agency/commission website or its final reports — returns archived pages and documents (`
 - **`cybersec-documents-search-engine`** (low) — OSINT tool: Cybersec Documents Search Engine.
 - **`cybersecurity-osint-paulveillard`** (low) — Curated collection of OSINT tools, frameworks, and resources.
 - **`cybersleuth-kids-search-engine-north-america`** (low) — Search engine intended for kids including printables, images, and academic resources
@@ -696,7 +696,6 @@ kind: group-index
 - **`scirp`** (low) — OSINT tool: SCIRP.
 - **`sdorker`** (low) — Type the Google Dork and get the list of the pages, that came up with this query.
 - **`search-22`** (low) — access to 10+ ftp search tools from one page
-- **`search-abuseipdb`** (medium) — OSINT tool: Search Abuseipdb.
 - **`search-all`** (medium) — Chrome extension allowing you to select a search engine of your choice; quickly switch between search engines
 - **`search-atlas`** (medium) — OSINT tool: Search Atlas.
 - **`search-by-filetype`** (medium) — OSINT tool: Search by FileType.

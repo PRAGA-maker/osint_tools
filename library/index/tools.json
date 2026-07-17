@@ -24536,48 +24536,6 @@
     "_file": "library/tools/communities-forums/blackplanet.md"
   },
   {
-    "id": "blog-search-engine",
-    "name": "Blog Search Engine",
-    "description": "Blog discovery and topic-focused blog post searching",
-    "url": "https://www.blogsearchengine.org/",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums",
-      "blog-search-engines"
-    ],
-    "bestFor": "Blog discovery and topic-focused blog post searching",
-    "input": "Keywords and blog topics",
-    "output": "Matching blog posts, listings, and feed-linked results",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Aggregates publicly indexed blog data without direct user contact to target blogs; queries are logged.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [
-      "blogsearchengine"
-    ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/blog-search-engines/blog-search-engine.md"
-  },
-  {
     "id": "blogger",
     "name": "Blogger",
     "description": "Service by Google for hosting and publishing blogs",
@@ -26079,41 +26037,55 @@
   {
     "id": "couchsurfing",
     "name": "Couchsurfing",
-    "description": "Website related to social networking in the form of travel and accomodations",
+    "description": "Use when you have a `username` or `name` and want to check for a Couchsurfing travel/hospitality profile — returns a `social-profile` with photos, location, travel history, and references from other members.",
     "url": "https://www.couchsurfing.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding a subject's Couchsurfing profile to reveal travel patterns, location, and vouching relationships.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Account required to browse/search profiles; membership has a small mandatory fee/verification since 2020. A limited amount may be visible via search-engine cache without logging in.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Viewing a profile as a logged-in member can be visible to that member (Couchsurfing shows \"who viewed you\"). Use a sock-puppet account, never your real identity, and prefer cached/search-engine views for a first look to avoid tipping off the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legitimate hospitality-exchange network; profile content is self-reported, and references/vouches are member-generated, so treat travel claims and relationships as leads to corroborate.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "Couchsurfing",
+      "couchsurfing.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "travel-network"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/couchsurfing.md"
   },
   {
@@ -30588,41 +30560,58 @@
   {
     "id": "grindr",
     "name": "Grindr",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
-    "url": "http://www.grindr.com",
+    "description": "Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse proximity); handle with extreme care given severe safety and privacy risks.",
+    "url": "https://www.grindr.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "Confirming whether a subject maintains a Grindr profile and capturing its self-reported details, within strict ethical limits.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free app with paid tiers (XTRA/Unlimited). Requires creating an account to view any profiles; a web client exists alongside iOS/Android.",
+    "opsec": "active",
+    "opsecNote": "This is highly sensitive. Grindr reveals users are on an LGBTQ+ platform — exposure can endanger someone's safety, employment, or life, especially in hostile jurisdictions. Viewing profiles requires an account and can make YOU visible to others nearby. Never use real identity, never attempt to derive precise location, and weigh the serious harm of surfacing this at all.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A legitimate mainstream dating app, but profiles are pseudonymous and self-reported; presence proves little about identity, and the platform has a documented history of location-data privacy problems.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "tinder",
+      "bumble",
+      "okcupid"
+    ],
+    "aliases": [
+      "Grindr",
+      "grindr.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "online-communities-blogs",
+      "dating-app"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/grindr.md"
   },
   {
@@ -73972,52 +73961,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/subdomains/gdns.md"
-  },
-  {
-    "id": "genotec-ag-switzerland",
-    "name": "Genotec AG (Switzerland)",
-    "description": "Switzerland based service provider for registering websites and domain addresses",
-    "url": "http://www.genotec.ch",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/genotec-ag-switzerland.md"
   },
   {
     "id": "geo-data-tool",
@@ -133925,41 +133868,55 @@
   },
   {
     "id": "aperisolve-fr",
-    "name": "aperisolve.fr",
-    "description": "Deep image layers (Supperimposed, Red, Green, Blue) and properties (Zsteg, Steghide, Outguess, Exif, Binwalk, Foremost) analyze tool.",
+    "name": "Aperi'Solve",
+    "description": "Use when you have an `image` and want a fast all-in-one steganography/forensics pass (layers plus zsteg, steghide, exif, binwalk, strings) — returns hidden data, embedded files, and `metadata-exif`.",
     "url": "https://aperisolve.fr",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "One-click layered steganalysis of an image — running the standard stego/forensics toolchain in the browser.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "metadata-exif",
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web service; no account. Also open source (self-hostable) for offline/sensitive use.",
+    "opsec": "active",
+    "opsecNote": "The public site processes the image on its servers, so you disclose the picture to a third party. For sensitive imagery, self-host Aperi'Solve or run the underlying tools (zsteg, steghide, binwalk) locally instead of uploading.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "An open-source project wrapping well-known, trusted stego/forensics utilities; the tools are standard, but interpreting their output requires judgement and the hosted service sees your upload.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "fotoforensics-com",
+      "exiftool-2"
+    ],
+    "aliases": [
+      "Aperi'Solve",
+      "aperisolve.fr"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Image Analyze"
+      "Image Analyze",
+      "steganography"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/aperisolve-fr.md"
   },
   {
@@ -161437,13 +161394,13 @@
   {
     "id": "openstreetmap-nominatim",
     "name": "OpenStreetMap Nominatim",
-    "description": "Free geocoding service from OpenStreetMap that converts a street address into latitude/longitude coordinates and structured location data.",
+    "description": "Use when you have an `address` (or coordinates) and want to geocode it to precise lat/long and structured location data — returns `geolocation` and normalised `address`.",
     "url": "https://nominatim.openstreetmap.org",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "Geocoding an address obtained during an investigation into precise coordinates for mapping, distance, and area analysis.",
+    "bestFor": "Geocoding an investigative address into precise coordinates for mapping, distance, and search-radius analysis.",
     "selectorsIn": [
       "address"
     ],
@@ -161451,15 +161408,16 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open (OpenStreetMap data, ODbL). The public endpoint has a strict usage policy — max ~1 request/second, a valid User-Agent, and no heavy bulk use; self-host for volume.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You send the address string to the Nominatim server (or your own instance), not to anyone connected to the subject. No target-side footprint. For sensitive work or bulk queries, self-host Nominatim so no third party sees your lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "api",
     "trust": "trusted",
-    "trustNote": "Official OpenStreetMap geocoder; free and open. Public endpoint has a strict usage policy (max ~1 req/sec, no heavy bulk use).",
+    "trustNote": "The official OpenStreetMap geocoder; free, open, and community-maintained. Accuracy depends on OSM coverage, which is excellent in populated areas and patchy in remote ones.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -161468,6 +161426,13 @@
     "api": true,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [
+      "open-street-map",
+      "openstreetmap",
+      "openstreetmap-2",
+      "openstreetmap-overpass-turbo-taginfo-database",
+      "whodidit"
+    ],
     "aliases": [
       "Nominatim",
       "OSM geocoding",
@@ -161481,15 +161446,8 @@
       "api"
     ],
     "source": "xsint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "open-street-map",
-      "openstreetmap",
-      "openstreetmap-2",
-      "openstreetmap-overpass-turbo-taginfo-database",
-      "whodidit"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/openstreetmap-nominatim.md"
   },
   {
@@ -253317,48 +253275,6 @@
     "_file": "library/tools/public-records/onthehouse-com-au.md"
   },
   {
-    "id": "open-corporates-command-line-client-occli",
-    "name": "Open Corporates Command Line Client (Occli)",
-    "description": "Gathering detailed information about company through cli.",
-    "url": "https://github.com/rlyonheart/occli",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Company information search"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "0xdork",
-      "thedevilseye",
-      "thelordeye",
-      "thorndyke"
-    ],
-    "_file": "library/tools/public-records/open-corporates-command-line-client-occli.md"
-  },
-  {
     "id": "open-data-network",
     "name": "Open Data Network",
     "description": "OSINT tool: Open Data Network.",
@@ -267424,44 +267340,57 @@
   },
   {
     "id": "unclaimed-property-administrators",
-    "name": "Unclaimed Property Administrators",
-    "description": "OSINT tool: Unclaimed Property Administrators.",
+    "name": "Unclaimed Property Administrators (NAUPA / Unclaimed.org)",
+    "description": "Use when you have a `name` and want to search official US/Canada unclaimed-property databases for money/assets owed to that person — returns confirmations tied to `name` and `address`.",
     "url": "https://www.unclaimed.org",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person via official state unclaimed-property records — a free, authoritative name-to-location signal.",
     "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
       "name",
       "address"
     ],
-    "selectorsOut": [
-      "address",
-      "name"
-    ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Genuinely free. NAUPA (National Association of Unclaimed Property Administrators) links to every state/province's official program and to MissingMoney.com; searching costs nothing — beware paid \"finders\" who charge for the same public data.",
+    "opsec": "passive",
+    "opsecNote": "You search government databases about a name, not the person, so there is no subject-side footprint. Do not initiate a claim (that requires identity/ownership proof and is not your role) — stop at the existence/location signal.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "NAUPA is the official association of state unclaimed-property administrators; it directs you only to authoritative government programs and the NAUPA-endorsed MissingMoney.com, not to data brokers.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "unclaimed-property-free-search-officially-endorsed-by-the-states-provinces-and-naupa",
+      "unclaimed-and-abandoned-property-search-directory",
+      "unclaimed-money-us-google-search"
+    ],
+    "aliases": [
+      "NAUPA",
+      "Unclaimed.org",
+      "Unclaimed Property Administrators"
+    ],
     "tags": [
-      "property"
+      "property",
+      "public-records",
+      "unclaimed-property"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/unclaimed-property-administrators.md"
   },
   {
@@ -278228,41 +278157,56 @@
   {
     "id": "cybercemetery",
     "name": "CyberCemetery",
-    "description": "Archive of government websites that have shut down",
-    "url": "http://govinfo.library.unt.edu/",
+    "description": "Use when you need content from a defunct US federal agency/commission website or its final reports — returns archived pages and documents (`document-id`) from shut-down government bodies.",
+    "url": "https://govinfo.library.unt.edu/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Recovering websites and final reports of US government agencies and commissions that have ceased operation.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public archive; no account. A partnership of the University of North Texas Libraries and the U.S. Government Publishing Office under the Federal Depository Library Program.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You read an academic government-document archive; nothing here touches a living subject. Fully passive and unremarkable.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Maintained by UNT Libraries with the GPO as part of the FDLP; a mandated preservation archive, so its captures of defunct .gov sites are authoritative primary sources.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "archive-org",
+      "archive-today"
+    ],
+    "aliases": [
+      "CyberCemetery",
+      "UNT CyberCemetery",
+      "govinfo.library.unt.edu"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "government-archive",
+      "web-archive"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/cybercemetery.md"
   },
   {
@@ -301081,42 +301025,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/search-22.md"
-  },
-  {
-    "id": "search-abuseipdb",
-    "name": "Search Abuseipdb",
-    "description": "OSINT tool: Search Abuseipdb.",
-    "url": "https://github.com/oseasfr/search-abuseipdb",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "speciality-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/search-abuseipdb.md"
   },
   {
     "id": "search-all",

@@ -198,7 +198,6 @@ kind: group-index
 - **`free-online-network-tools`** (low) — OSINT tool: Free online network tools.
 - **`fuzzuli`** (low) — Url fuzzing tool written on #go that aims to find critical backup files by creating a dynamic wordlist based on the domain. It's using 7 dif
 - **`gandi-uk`** (medium) — UK based service provider for registering websites and domain addresses
-- **`genotec-ag-switzerland`** (medium) — Switzerland based service provider for registering websites and domain addresses
 - **`geo-data-tool`** (low) — IP geolocation service to identify the location and other technical information associated to IP addresses.
 - **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
 - **`geowifi`** (low) — Search WiFi geolocation data by BSSID and SSID on different public databases (Wigle, Apple, OpenWifi, API Mylnikov).

@@ -110,7 +110,7 @@ kind: group-index
 - **`openaerialmap`** (low) — Platform for accessing open-licensed satellite and unmanned aerial vehicle (UAV) imagery
 - **`openguessr-com`** (medium) — OSINT tool: openguessr.com.
 - **`openseamap`** (low) — Sea map of borders, special zones, shipping lanes, with overlays of MarineTraffic and other sources
-- **`openstreetmap-nominatim`** (medium) — Free geocoding service from OpenStreetMap that converts a street address into latitude/longitude coordinates and structured location data.
+- **`openstreetmap-nominatim`** (medium) — Use when you have an `address` (or coordinates) and want to geocode it to precise lat/long and structured location data — returns `geolocati
 - **`orbtrack`** (low) — Predicts & describes the position & path of >10K satellites in Earth orbit, relative to points on the earth's surface input by the user, for
 - **`overturemaps-org`** (medium) — OSINT tool: overturemaps.org.
 - **`peakvisor-com`** (medium) — OSINT tool: peakvisor.com.
