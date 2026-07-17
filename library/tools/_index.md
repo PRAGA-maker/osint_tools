@@ -26,10 +26,10 @@ kind: group-index
 - **`phone/`** — 142 skill(s) below.
 - **`public-records/`** — 1136 skill(s) below.
 - **`search-engines/`** — 970 skill(s) below.
-- **`social-networks/`** — 914 skill(s) below.
+- **`social-networks/`** — 913 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 103 skill(s) below.
-- **`transportation/`** — 233 skill(s) below.
+- **`transportation/`** — 232 skill(s) below.
 - **`username/`** — 106 skill(s) below.
 
 

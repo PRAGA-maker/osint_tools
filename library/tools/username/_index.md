@@ -58,7 +58,7 @@ kind: group-index
 - **`profilediscover`** (medium) — Username-to-profile discovery search.
 - **`pyosint`** (high) — Use when you have a `username` (or a `domain`) and want a CLI that enumerates accounts across ~326 sites plus scrapes links and subdomains —
 - **`quidam`** (high) — Use when you have an `email` or `username` and want to harvest the masked account-recovery hints that "forgot password" flows leak — returns
-- **`reccon-sammwyy`** (medium) — Web-based OSINT application to detect and gather usernames.
+- **`reccon-sammwyy`** (medium) — Use when you have a `username` and want to check it across many sites at once through a browser UI — returns candidate `social-profile` hits
 - **`searchpof-com`** (high) — Use when you have a `username`/`name` and want to find a Plenty of Fish (POF) dating profile — provides Google-CSE site searches and guidanc
 - **`seekr`** (high) — Use when you have a `username`, `name`, `email` or `phone` and want an all-in-one investigation workspace — returns account discovery, tool 
 - **`sherlockeye`** (high) — Use when you have a `username`, `email`, `phone`, `name`, `domain` or `ip-address` and want an aggregated reverse-lookup across 800+ sources

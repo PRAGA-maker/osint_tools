@@ -31,7 +31,6 @@ kind: group-index
 - **`australia-department-of-immigration-and-citizenship`** (medium) — Use when you need official Australian immigration/citizenship/visa reference or the VEVO visa-check entry point — an authoritative reference
 - **`australian-maritime-safety-authority-amsa`** (medium) — Maritime-related website that offers a search of an Australian database of naval vessel types
 - **`auto-bid-master-auction`** (medium) — OSINT tool: auto bid master (auction).
-- **`autocheck`** (medium) — OSINT tool: AutoCheck.
 - **`autogespot`** (medium) — OSINT tool: Autogespot.
 - **`autowini-vin-search-international`** (medium) — OSINT tool: Autowini (Vin Search International).
 - **`aviation-safety-network`** (low) — Aircraft incident database; can be searched by country, registration, year, etc.

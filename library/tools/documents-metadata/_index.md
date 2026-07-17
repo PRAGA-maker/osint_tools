@@ -71,7 +71,7 @@ kind: group-index
 - **`crowdspring`** (low) — Project outsourcing website
 - **`cute-pdf-writer-program`** (low) — Program that allows you to create PDF format documents
 - **`cylect-io`** (low) — An AI tool that integrates multiple databases and simplifies search capability into an easily navigable interface
-- **`datasurgeon`** (medium) — Quickly extracts emails, IPs, hashes, credit cards and other selectors from text.
+- **`datasurgeon`** (medium) — Use when you have a blob of text (breach dump, log, scraped page, document) and want to pull every selector out of it — returns `email`, `ph
 - **`de-digger`** (low) — OSINT tool: de digger.
 - **`designcrowd`** (low) — Graphic design outsourcing website
 - **`dictation-online-dictation-tool`** (low) — Tool for Chrome browser that transcribes your speech to text in real time

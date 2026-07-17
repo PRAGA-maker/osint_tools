@@ -145,7 +145,7 @@ kind: group-index
 - **`honolulu-traffic-cams`** (low) — OSINT tool: Honolulu Traffic Cams.
 - **`hungermap`** (low) — Use when you have a `geolocation` (country/region) and want live food-security, conflict and hazard context for it — returns situational `ge
 - **`huntel-io`** (medium) — Use when you have a `geolocation` and want geotagged social-media posts from that area across many platforms — returns social-profile posts 
-- **`i-see-you-iseeyou`** (medium) — Bash/JS tool to find a user's exact location during social-engineering or phishing.
+- **`i-see-you-iseeyou`** (medium) — Use when you can get a target to click a link in an AUTHORIZED engagement and want their precise `geolocation` — returns HTML5 GPS coordinat
 - **`imb-piracy-and-armed-robbery-map`** (high) — Use when you have a `geolocation` or maritime region and want reported piracy/armed-robbery incidents there — returns geolocation and incide
 - **`inspire-geoportal-eu`** (medium) — OSINT tool: Inspire-geoportal.eu.
 - **`inspire-geoportal`** (medium) — Use when you need official EU spatial datasets (boundaries, addresses, land use, transport) for a `geolocation` in a European member state.
@@ -192,7 +192,7 @@ kind: group-index
 - **`mapquest`** (high) — Use when you need geocoding, routing, or distance/ETA between locations — returns coordinates, turn-by-turn routes, and travel metrics for a
 - **`maps-app-by-apple`** (high) — Use when you have an `address` or `geolocation` and want to see and verify a location — returns satellite/3-D imagery, street-level "Look Ar
 - **`measuremaponline`** (medium) — Use when you have a `geolocation` and want to measure real-world distances, areas, and perimeters on satellite imagery — returns measurement
-- **`measuretool-googlemaps-v3`** (medium) — Measurement tool for #GoogleMaps.
+- **`measuretool-googlemaps-v3`** (low) — Use when you have a `geolocation`/map area and want to measure real distances and areas on it — click waypoints on Google Maps to get length
 - **`meteoblue`** (medium) — Weather stats data
 - **`mgrs-mapper`** (low) — Use when you have an MGRS/military grid reference or need to plot one on a map — returns an interactive map with MGRS grid overlay to transl
 - **`mindat-org`** (low) — Use when an `image` or sample shows a distinctive rock/mineral and you want to narrow where it came from — returns mineral locality data and

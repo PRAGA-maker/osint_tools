@@ -155,13 +155,13 @@ kind: group-index
 - **`melissadata`** (high) — Use when you have an `address`, `name`, `phone` or `email` and want to verify it and pull linked contact/identity data — returns current res
 - **`monster`** (medium) — OSINT tool: Monster.
 - **`mr-holmes`** (high) — Use when you have a `username`, `email`, `phone`, or `domain` and want a one-command multi-module sweep — returns `social-profile`, email/se
-- **`muckrack`** (medium) — OSINT tool: MuckRack.
+- **`muckrack`** (low) — Use when you have a `name` (or `employer-org`) for a journalist/media figure and want their beat, outlet and social presence — returns `soci
 - **`my-cse-for-search-in-48-pastebin-sites`** (high) — Use when you have a `name`, `username`, `email` or other selector and want to find it in leaked/pasted data — a Google Custom Search Engine 
 - **`my-life-people-search`** (high) — Use when you have a `name` for a US subject and want an aggregated profile with a "reputation" angle — returns age, address history, phones,
 - **`mylife-compilation-and-search-engine`** (high) — Use when you have a US `name` and want an aggregated profile with address, phone, age and relatives — returns contact and background leads, 
 - **`namecheckerr-com`** (medium) — Use when you have a `username` and want to see where that handle is already taken across social platforms (and as a domain) — returns which 
 - **`national-speakers-association`** (medium) — OSINT tool: National Speakers Association.
-- **`naukri-india`** (medium) — OSINT tool: Naukri (India).
+- **`naukri-india`** (medium) — Use when you have a `name` for an India-based subject and want employment/CV context — returns `employer-org`, skills and career history fro
 - **`netbootcamp-s-people-tool`** (high) — Use when you have a `name` (or screen name / phone / address) and want one console that fires the query into dozens of US people-search and 
 - **`neutrosint`** (high) — Use when you have an `email` or `username` and want to confirm whether it exists as a Proton Mail address (and get its PGP key-creation date
 - **`new-canada-411`** (high) — Use when you have a Canadian `name`, `phone` or `address` and want the matching listing — returns name, address, phone and (via same-address

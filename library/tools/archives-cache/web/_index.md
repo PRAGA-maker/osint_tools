@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`anna-s-archive`** (low) — Use when you have a `name` (author) or title/ISBN/DOI and want to find their published books/papers — returns publication metadata and `docu
-- **`archive-is`** (medium) — Capturing and retrieving snapshots of volatile web pages
+- **`archive-is`** (medium) — Use when you have a `domain`/URL and want a permanent, tamper-proof snapshot of a page — captures and retrieves frozen copies, including pag
 - **`cached-pages`** (medium) — Finding recent cached copies of pages that changed or disappeared
 - **`cached-view`** (medium) — Quick verification of whether a removed page still exists in cache
 - **`common-crawl`** (medium) — Large-scale historical web content mining and corpus analysis
