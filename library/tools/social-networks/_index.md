@@ -525,7 +525,7 @@ kind: group-index
 - **`search-for-a-twitch-channel`** (low) — OSINT tool: Search for a Twitch channel.
 - **`search-linkedin-intelligence-recruitment-software`** (high) — Use when you have a `name`/`employer-org` and want to find someone's LinkedIn profile past LinkedIn's search limits — a free Chrome extensio
 - **`search-noc-social`** (low) — OSINT tool: Search.noc.social.
-- **`search-reddit-comments-by-user`** (medium) — OSINT tool: Search Reddit Comments by User.
+- **`search-reddit-comments-by-user`** (medium) — Use when you have a Reddit `username` and want to search that user's comment history for keywords — returns matching comments with subreddit
 - **`search-reddit`** (medium) — OSINT tool: Search Reddit.
 - **`search-twitter-bios-and-profiles`** (high) — Use when you have a `name`, keyword, employer or location and want to find matching X/Twitter and Bluesky accounts by bio text — returns soc
 - **`search-twitter-users`** (high) — Use when you follow an old Pushshift Twitter-user-search link — the endpoint is gone (404) and Pushshift no longer serves public Twitter dat

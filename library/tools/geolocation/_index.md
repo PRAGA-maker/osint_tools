@@ -102,7 +102,7 @@ kind: group-index
 - **`geogratis-canada`** (high) — Use when you have a Canadian `geolocation` or `address`/area and want free official maps, aerial imagery, topographic data and place names —
 - **`geohints`** (medium) — GeoHints is a website that provides information about things like traffic lights, utility poles, bollards etc. for different regions of the 
 - **`geoinfer`** (medium) — Use cautiously — listed as a geolocation tool but the site returns 404 and capabilities are unconfirmed; treat as unverified.
-- **`geoint-py`** (medium) — OSINT tool: geoint-py.
+- **`geoint-py`** (low) — Use when you have a `geolocation`/region and want geospatial-intelligence workflows in Python — returns spatial grids and mapped conflict/pr
 - **`geoint-search`** (medium) — OSINT tool: GeoINT Search.
 - **`geoint`** (medium) — OSINT tool: GEOINT.
 - **`geoip-tracker-tool`** (medium) — OSINT tool: GeoIP Tracker tool.
@@ -293,7 +293,7 @@ kind: group-index
 - **`the-webcam-network`** (low) — OSINT tool: The Webcam Network.
 - **`thingful`** (low) — OSINT tool: thingful.
 - **`time-is`** (medium) — OSINT tool: time.is.
-- **`timeanddate-com`** (medium) — OSINT tool: timeanddate.com.
+- **`timeanddate-com`** (medium) — Use when you have a `geolocation` and a date/time and want the exact sun/shadow, timezone, or day-length — supports chronolocation of photos
 - **`timeanddate`** (high) — Use when you need precise sunrise/sunset/twilight, timezone, or weather-history facts for a place and date to validate a photo's timestamp o
 - **`timejones-com`** (medium) — OSINT tool: timejones.com.
 - **`timestamp-converter-com`** (medium) — OSINT tool: timestamp-converter.com.

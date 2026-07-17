@@ -46886,25 +46886,32 @@
   {
     "id": "cia-foia",
     "name": "CIA FOIA",
-    "description": "CIAs Freedom of Information Act Electronic Reading Room - provides access to declassified documents",
+    "description": "Use when you have a `name`, org, or event and want declassified CIA documents about it — returns full-text-searchable declassified records from the FOIA reading room.",
     "url": "https://www.cia.gov/library/readingroom/",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Full-text searching declassified CIA documents for a person, organization, place, or historical event.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official US government reading room; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching a public government archive is anonymous and reveals nothing about your subject to anyone. Fully passive. (The old /library/readingroom/ path now redirects to cia.gov/readingroom/.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Official US Central Intelligence Agency FOIA Electronic Reading Room; the documents are authoritative declassified government records.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -46912,18 +46919,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "cia-world-factbook",
+      "national-archives-catalog"
+    ],
+    "aliases": [
+      "CIA FOIA Reading Room",
+      "CREST"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "government-records",
+      "foia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cia-world-factbook"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/cia-foia.md"
   },
   {
@@ -121409,35 +121421,54 @@
   {
     "id": "geoint-py",
     "name": "geoint-py",
-    "description": "OSINT tool: geoint-py.",
+    "description": "Use when you have a `geolocation`/region and want geospatial-intelligence workflows in Python — returns spatial grids and mapped conflict/protest event data for an area.",
     "url": "https://github.com/gisfromscratch/geoint-py",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Scripting geospatial-intelligence workflows — spatial binning grids and mapping protest/armed-conflict events over a region.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free/open-source (uses ArcGIS API for Python plus external geoprotests/geoconflicts APIs; some ArcGIS features may need an account).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Works over aggregate event datasets and coordinates, not a named individual; nothing about a person is queried and no one is alerted. Passive.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Individual open-source project (gisfromscratch); modest activity, last release 2023, aimed at analysts building GIS workflows.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "qgis",
+      "kepler-gl"
+    ],
+    "aliases": [
+      "geoint-py"
+    ],
+    "tags": [
+      "geospatial",
+      "python",
+      "gis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/geoint-py.md"
   },
   {
@@ -130683,46 +130714,53 @@
   {
     "id": "timeanddate-com",
     "name": "timeanddate.com",
-    "description": "OSINT tool: timeanddate.com.",
+    "description": "Use when you have a `geolocation` and a date/time and want the exact sun/shadow, timezone, or day-length — supports chronolocation of photos and verifying claimed timelines.",
     "url": "https://www.timeanddate.com/time/map/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Chronolocation — computing sun position, shadow direction, and daylight times for a place and date to test when a photo was taken.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free reference site (ad-supported); core sun/time/timezone calculators need no account.",
+    "opsec": "passive",
+    "opsecNote": "Pure astronomical/time reference lookups; nothing about the target is submitted and no one is alerted. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established, widely-cited reference site; sun/moon/timezone data is astronomically computed and authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "timezones",
-      "Time Zones & Converters"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "astronomy-sun-moon-eclipses",
-      "timeanddate"
+      "suncalc"
     ],
+    "aliases": [
+      "timeanddate",
+      "Time and Date"
+    ],
+    "tags": [
+      "timezones",
+      "Time Zones & Converters",
+      "chronolocation"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/timeanddate-com.md"
   },
   {
@@ -223315,47 +223353,59 @@
   {
     "id": "canpages-search-canada",
     "name": "Canpages Search (Canada)",
-    "description": "Business-related search engine that searches using company name, people name, address and telephone",
+    "description": "Use when you have a Canadian `name`, business, `phone`, or `address` and want directory details — returns business/residential listings, phone numbers, and addresses.",
     "url": "http://www.canpages.ca",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Canadian business and reverse phone/address directory lookups.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "employer-org",
+      "phone",
+      "address"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free online directory (ad-supported); no account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public directory queries; the listed party is not notified who searched. Fully passive. Use a clean browser for tidy sessions, but there's no target-facing footprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running Canadian directory aggregator; listing accuracy varies and residential coverage is thinner than its business data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "canada411",
+      "yellowpages-ca"
+    ],
+    "aliases": [
+      "Canpages",
+      "canpages.ca"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "company-search"
+      "company-search",
+      "canada"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/canpages-search-canada.md"
   },
   {
@@ -232344,45 +232394,57 @@
   {
     "id": "federal-inmate-locator",
     "name": "Federal Inmate Locator",
-    "description": "Federal inmate location and release dates",
+    "description": "Use when you have a `name` or BOP register number and want to know if the person is in US federal prison — returns facility, custody status, and release date.",
     "url": "https://www.bop.gov/inmateloc/",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Federal inmate location and release dates",
-    "input": "Name or BOP register number",
-    "output": "Inmate location, facility, release date",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming whether a person is (or was) in US federal custody and locating the facility and release date.",
+    "selectorsIn": [
+      "name",
+      "document-id",
+      "dob"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "name",
+      "dob"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official US Bureau of Prisons service; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Official federal database, daily updates",
+    "opsecNote": "Public federal database queried anonymously; the inmate and the BOP get no signal identifying who searched. Fully passive. No login or footprint on the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by the US Federal Bureau of Prisons (bop.gov); authoritative first-party government custody data, updated daily.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "federal-bureau-of-prisons-inmate-locator-us",
-      "sorted-by-birth-date",
       "the-inmate-locator"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "BOP Inmate Locator",
+      "Federal Bureau of Prisons inmate locator"
+    ],
+    "tags": [
+      "incarceration",
+      "criminal-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/federal-inmate-locator.md"
   },
   {
@@ -260847,40 +260909,53 @@
   {
     "id": "searchable-fcc-id-database",
     "name": "Searchable FCC ID Database",
-    "description": "Electronics device certification lookup",
+    "description": "Use when you have an FCC ID from a wireless device (`device-id`) and want to identify it — returns manufacturer, model, internal photos, manuals, and test reports.",
     "url": "https://www.fcc.gov/oet/ea/fccid",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "Electronics device certification lookup",
-    "input": "FCC ID, device model, manufacturer",
-    "output": "Device specs, manuals, test reports, photos",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Identifying a radio-emitting device (phone, router, tracker, drone, IoT gadget) from the FCC ID printed on it.",
+    "selectorsIn": [
+      "device-id"
+    ],
+    "selectorsOut": [
+      "device-id",
+      "employer-org",
+      "metadata-exif"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official US FCC database; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "Official FCC database",
+    "opsecNote": "Public federal certification lookup; you query a device ID, not a person, and no one is notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Official US Federal Communications Commission equipment-authorization database; authoritative first-party certification records.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "fcc-license-search"
+    ],
+    "aliases": [
+      "FCC ID lookup",
+      "FCC OET equipment authorization"
+    ],
+    "tags": [
+      "device-identification",
+      "fcc"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/searchable-fcc-id-database.md"
   },
   {
@@ -269279,47 +269354,57 @@
   {
     "id": "western-states-marriages-search",
     "name": "Western States Marriages Search",
-    "description": "Search form that allows you to search for marriage records by the groom or bride",
+    "description": "Use when you have a `name` and want historical marriage records from the western US — returns bride/groom names, dates, places, and spousal links.",
     "url": "http://abish.byui.edu/specialCollections/westernStates/search.cfm",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding pre-1900s–mid-1900s marriage records (and spouse/family links) across western US states.",
     "selectorsIn": [
       "name",
-      "employer-org"
+      "dob"
     ],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "name",
+      "associate",
+      "dob"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free academic genealogy index hosted by BYU-Idaho; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public historical records index; queries are anonymous and no living party is notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Maintained by BYU-Idaho's McKay Library Special Collections; a curated academic index (900k+ records) extracted from primary county marriage records.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "familysearch",
+      "western-states-marriage-index"
+    ],
+    "aliases": [
+      "Western States Marriage Record Index",
+      "WSMRI"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "genealogy",
+      "marriage-records"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/western-states-marriages-search.md"
   },
   {
@@ -277272,44 +277357,54 @@
   {
     "id": "cloudscraper",
     "name": "CloudScraper",
-    "description": "Tool to enumerate targets in search of cloud resources.",
+    "description": "Use when you have a `domain` and want to find cloud storage it references — spiders the site and returns S3/Azure/DigitalOcean bucket URLs embedded in its code.",
     "url": "https://github.com/jordanpotti/CloudScraper",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering AWS S3, Azure Blob, and DigitalOcean Spaces buckets referenced in a target website's pages and source.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free/open-source (MIT); Python CLI, no account or payment.",
+    "opsec": "active",
+    "opsecNote": "It crawls the target's live website (multiple page requests), so the site's server sees your traffic. Route through a VPN/proxy and mind crawl depth. Only accessing storage that's publicly exposed is one thing; do not download or tamper with private data you weren't authorized to touch.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "Community security-recon tool by jordanpotti; MIT-licensed but low recent activity — audit before running on anything sensitive.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "awsbucketdump",
+      "lazys3"
+    ],
+    "aliases": [
+      "CloudScraper"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "cloud-recon",
+      "infrastructure"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "awsbucketdump"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/cloudscraper.md"
   },
   {
@@ -338346,39 +338441,54 @@
   {
     "id": "search-reddit-comments-by-user",
     "name": "Search Reddit Comments by User",
-    "description": "OSINT tool: Search Reddit Comments by User.",
+    "description": "Use when you have a Reddit `username` and want to search that user's comment history for keywords — returns matching comments with subreddit and timestamp.",
     "url": "https://www.redditcommentsearch.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Keyword-searching a single Reddit user's comment history to surface disclosures of location, plans, or relationships.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free web tool; no account. Uses Reddit's public API, so it's bounded by what Reddit exposes (roughly the user's most recent ~1000 comments).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads public comments via Reddit's API; the target is not notified that their history was searched. Passive. Don't log into your own Reddit account while doing it if you want zero linkage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Small third-party front-end over Reddit's public API; data is Reddit's own, the tool just filters it.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "reddit-comment-search",
-      "redditcommentsearch-com"
+      "reddit-user-analyser",
+      "redditsearch"
     ],
+    "aliases": [
+      "redditcommentsearch.com",
+      "Reddit comment search by user"
+    ],
+    "tags": [
+      "reddit",
+      "social-media"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/search-reddit-comments-by-user.md"
   },
   {
@@ -369979,13 +370089,13 @@
   {
     "id": "gitsint-rs",
     "name": "gitsint-rs",
-    "description": "Platform for uncovering connections and exposed secrets across GitHub.",
+    "description": "Use when you have a GitHub `username` (or `email`) and want to expand a developer's footprint — returns commit-leaked emails, connected accounts, and exposed secrets.",
     "url": "https://github.com/gitsint-rs/gitsint-rs",
     "category": "username",
     "path": [
       "username"
     ],
-    "bestFor": "Finding emails/identities linked to a GitHub account",
+    "bestFor": "Pivoting a GitHub account to associated emails (from commit metadata) and connected identities when a subject has a developer footprint.",
     "selectorsIn": [
       "username",
       "email"
@@ -369995,15 +370105,18 @@
       "username",
       "associate"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free/open-source; the newer hosted platform (gitsint.rs) is in beta and may gate some features behind sign-up.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Queries GitHub's public API for commit metadata and public repos — the target is not notified. Use an unauthenticated or throwaway GitHub token; heavy scanning of a person's account is public API activity but reveals only your token/IP, not the investigation.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "rate-limit"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Community GitHub-OSINT tool in Rust (33 stars).",
+    "trustNote": "Early-stage community GitHub-OSINT project in Rust; low commit count and a beta hosted platform, so treat as unaudited.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -370012,6 +370125,10 @@
     "api": true,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [
+      "gitfive",
+      "gitrecon"
+    ],
     "aliases": [
       "gitsint"
     ],
@@ -370022,8 +370139,8 @@
       "rust"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/username/gitsint-rs.md"
   },
   {

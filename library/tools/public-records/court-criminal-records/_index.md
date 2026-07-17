@@ -14,7 +14,7 @@ kind: group-index
 - **`docket-alarm`** (medium) — Litigation docket tracking
 - **`epstein-exposed`** (medium) — Epstein case document research
 - **`familywatchdog-sex-offender-search`** (medium) — Sex offender registry search
-- **`federal-inmate-locator`** (medium) — Federal inmate location and release dates
+- **`federal-inmate-locator`** (high) — Use when you have a `name` or BOP register number and want to know if the person is in US federal prison — returns facility, custody status,
 - **`free-law-recap-archive`** (medium) — Use when you have a `name`/case tied to US federal litigation and want the actual court filings — returns dockets and PACER documents naming
 - **`google-scholar-case-law`** (medium) — Use when you have a `name` or case citation and want free full-text US court opinions that may mention a person as a party, witness, or subj
 - **`judyrecords`** (high) — Use when you have a `name` and want free nationwide US court-case records — returns case filings, parties (associates), and document-id lead

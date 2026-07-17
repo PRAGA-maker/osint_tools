@@ -152,7 +152,7 @@ kind: group-index
 - **`canadian-trademarks-database`** (medium) — Use when you have a `name`, brand, or `employer-org` and want Canadian trademark filings tied to them — returns the owner's name, `address` 
 - **`cancelthesefunerals-com`** (high) — Use when you have a `name` and want to check whether a person appears in the US Social Security Death Master File — returns death record fie
 - **`canlii-database`** (medium) — Canadian Legal Information Institute searchable database of legal documents and cases
-- **`canpages-search-canada`** (medium) — Business-related search engine that searches using company name, people name, address and telephone
+- **`canpages-search-canada`** (medium) — Use when you have a Canadian `name`, business, `phone`, or `address` and want directory details — returns business/residential listings, pho
 - **`capstat-nyc`** (medium) — OSINT tool: CAPstat.nyc.
 - **`case-tracker-justice-uk`** (high) — Use when you have a UK civil-appeal case number or party `name` and want its status — the official tracker returns the case title (parties),
 - **`catalogue-of-research-databases-occrp-id`** (low) — OSINT tool: Catalogue of Research Databases | OCCRP ID.
@@ -880,7 +880,7 @@ kind: group-index
 - **`search-polk-county-ordinance`** (low) — Use when you have an address, subdivision, or property description in Polk County, FL and want the local ordinance record touching it — retu
 - **`search-systems-criminal-records`** (high) — Use when you have a `name` and need to find the right public-records database for a jurisdiction — a directory routing you to court, crimina
 - **`search-the-open-information-catalogue`** (medium) — OSINT tool: Search the Open Information Catalogue.
-- **`searchable-fcc-id-database`** (medium) — Electronics device certification lookup
+- **`searchable-fcc-id-database`** (low) — Use when you have an FCC ID from a wireless device (`device-id`) and want to identify it — returns manufacturer, model, internal photos, man
 - **`searchsystems-birth-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database that holds a birth or vital record — 
 - **`searchsystems-death-records`** (high) — Use when you have a `name` (and rough US location) and want to locate the official government database holding a death/mortality record — re
 - **`sec-company-search`** (low) — OSINT tool: SEC Company Search.
@@ -1045,7 +1045,7 @@ kind: group-index
 - **`washington`** (high) — Use when you have a `name` and want to check whether a person is incarcerated in Washington State corrections — returns inmate record, DOC n
 - **`webmd-medical-sciences-search`** (medium) — Academic-related search engine focusing on science, research, and medicine
 - **`west-virginia`** (high) — Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody st
-- **`western-states-marriages-search`** (medium) — Search form that allows you to search for marriage records by the groom or bride
+- **`western-states-marriages-search`** (low) — Use when you have a `name` and want historical marriage records from the western US — returns bride/groom names, dates, places, and spousal 
 - **`westlaw-united-states`** (medium) — Legal-related search engine for legal court cases and documents
 - **`whaleslide`** (medium) — OSINT tool: WhaleSlide.
 - **`whitepages-reverse-address-search`** (medium) — OSINT tool: Whitepages - Reverse Address Search.

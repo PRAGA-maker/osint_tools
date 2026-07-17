@@ -23,7 +23,7 @@ kind: group-index
 - **`best-classified-site-in-india`** (medium) — Classified advertisements-related website that lists over 1000 websites worldwide by country
 - **`bumble`** (medium) — Use when you have an `image`, first `name`, or `geolocation` and want to check for a subject's profile on Bumble's location-based dating app
 - **`camsoda-com`** (medium) — OSINT tool: camsoda.com.
-- **`cia-foia`** (medium) — CIAs Freedom of Information Act Electronic Reading Room - provides access to declassified documents
+- **`cia-foia`** (low) — Use when you have a `name`, org, or event and want declassified CIA documents about it — returns full-text-searchable declassified records f
 - **`classifiedads-com`** (medium) — Use when you have a `name`, `phone`, or `username` and want to find a subject's classified listings — returns a `social-profile`/ad with `ph
 - **`coomer-st`** (medium) — OSINT tool: coomer.st.
 - **`craigslist-classified-ads-worldwide`** (medium) — One of the Top 10 classified advertisements-related websites worldwide

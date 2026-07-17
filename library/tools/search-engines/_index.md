@@ -163,7 +163,7 @@ kind: group-index
 - **`cloud-bucket-search-engine`** (medium) — OSINT tool: Cloud Bucket Search Engine.
 - **`cloud-file-search-engine`** (low) — search music, books, video, programs archives in 59 file-sharing sites (#meganz, #dropark, #turbotit etc)
 - **`cloudflare-radar`** (medium) — OSINT tool: Cloudflare Radar.
-- **`cloudscraper`** (medium) — Tool to enumerate targets in search of cloud resources.
+- **`cloudscraper`** (low) — Use when you have a `domain` and want to find cloud storage it references — spiders the site and returns S3/Azure/DigitalOcean bucket URLs e
 - **`cnn`** (low) — OSINT tool: CNN.
 - **`coalition-against-insurance-fraud`** (medium) — The Coalition Against Insurance Fraud website providing numerous resource links
 - **`colorado-licensed-professional-lookup`** (medium) — Colorados licensed professional or business search tool
