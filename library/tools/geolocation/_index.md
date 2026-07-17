@@ -241,9 +241,9 @@ kind: group-index
 - **`plowto`** (low) — OSINT tool: PlowTO.
 - **`police-crime-maps-uk`** (medium) — Use when you have a UK `address`/`geolocation` and want the area's recent recorded-crime picture plus the local policing team — returns stre
 - **`polymaps`** (low) — Use when you are a developer building a custom slippy-map web visualization with SVG/vector tiles, not for ad-hoc lookups.
-- **`poweroutage`** (medium) — Map with real-time power outage statistics by country and region.
+- **`poweroutage`** (low) — Use when you have a `geolocation`/region and a time and want to confirm whether a power outage was occurring there — returns live and histor
 - **`presto-map-lead-extractor`** (medium) — Converts information about labels on Google Maps to CSV or XLSX
-- **`python-overpy`** (medium) — Old (but it's still working) and simple command line #python tool for access Overpass Turbo API.
+- **`python-overpy`** (medium) — Use when you have a `geolocation` or a described place feature and want to query OpenStreetMap data programmatically — returns matching map 
 - **`qgis`** (high) — Use when you need to overlay, measure and analyze geospatial layers (imagery, terrain, coordinates) for serious location analysis.
 - **`quickmaps`** (medium) — Use when you want a one-click Chrome extension to map highlighted text (an address or coordinates) without leaving the page.
 - **`r4ven`** (medium) — Tracks GPS location and captures device/IP information via a hosted link.

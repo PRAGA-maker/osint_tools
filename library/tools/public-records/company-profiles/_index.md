@@ -7,7 +7,7 @@ kind: group-index
 # public-records/company-profiles
 
 ## Skills here
-- **`aihit`** (medium) — Company executive discovery and B2B contact data enrichment
+- **`aihit`** (medium) — Use when you have an `employer-org` or `domain` and want the company's profile and executive contacts — returns `name`s, roles, and `associa
 - **`buzzfile`** (medium) — US business lookup by name, location, or industry classification
 - **`companies-in-the-uk`** (medium) — Quick UK company lookup with simplified Companies House data
 - **`company-data-rex-eu`** (medium) — Cross-border EU company research and registry data lookup

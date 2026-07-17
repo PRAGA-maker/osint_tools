@@ -335,7 +335,7 @@ kind: group-index
 - **`jesus-social`** (high) — Use when you have a `name` or `username` and want to check for a profile on this niche Christian social network — returns a `social-profile`
 - **`jump-cutter`** (medium) — An extension for those who watch university lectures on #YouTube and want to save their time. It identifies chunks where the lecturer writes
 - **`justlog`** (medium) — Use when you have a Twitch `username` and a channel and want their chat history there — returns the user's logged messages (with timestamps)
-- **`karma-decay`** (medium) — OSINT tool: Karma Decay.
+- **`karma-decay`** (medium) — Use when you have an `image` and want to find whether/where it was posted on Reddit — returns the Reddit submissions (subreddits, `username`
 - **`kaspr-io`** (high) — Use when you have a LinkedIn profile (`social-profile`)/`name` and want that person's direct contact details — returns `email`, `phone` and 
 - **`keepvid`** (low) — OSINT tool: KeepVid.
 - **`keyhole`** (medium) — OSINT tool: Keyhole.

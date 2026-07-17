@@ -104,7 +104,7 @@ kind: group-index
 - **`opendatauabot`** (high) — Use when you have a Ukrainian person's `name`, `phone`, vehicle `vehicle-plate` or company and want state open-data — returns registry hits 
 - **`osint-discord-resources-github-com`** (high) — Use when you have a Discord `username`, user ID or server invite and want the method to pivot on it — returns a curated toolset for Discord 
 - **`osint-github-com`** (high) — Use when you have a Discord `username` or user/server ID and want a reference map of every pivot point — returns a methodology guide, not li
-- **`osint-tool-for-tg`** (medium) — Free tool for gathering OSINT from Telegram and other platforms.
+- **`osint-tool-for-tg`** (medium) — Use when you have a Telegram `username`, `phone`, or user id and want to enumerate the account, its channels, and linked accounts — returns 
 - **`osintme-com`** (high) — Use when you have a Telegram `username`/`phone` and want a vetted methodology and toolset for investigating Telegram users, groups, and chan
 - **`osintteam-blog-3`** (high) — Use when you have a `phone` or `username` and want a curated shortlist of WhatsApp OSINT tools/techniques to try — returns a listicle pointi
 - **`pimeyes`** (high) — Use when you have a `face`/`image` of a subject and want to find other web pages showing that same face — returns matching photos and the UR

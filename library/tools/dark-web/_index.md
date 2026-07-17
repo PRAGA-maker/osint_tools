@@ -96,7 +96,6 @@ kind: group-index
 - **`riseup`** (low) — OSINT tool: RiseUp.
 - **`rooted`** (low) — OSINT tool: Rooted.
 - **`search-systems-public-records-us`** (medium) — Use when you have a `name` (and rough `geolocation`) and need to find the right official US/county public-records portal — a directory that 
-- **`social-security-number-validator`** (medium) — Site offering social security number search for validation purposes
 - **`stark-county-auditor`** (medium) — Stark County Auditors website offering a property search with map capabilities by parcel number, owner, address and intersection, with advan
 - **`state-of-delaware-professional-license-validator`** (medium) — State of Delawares professional license validator
 - **`swp-cx`** (low) — OSINT tool: swp.cx.

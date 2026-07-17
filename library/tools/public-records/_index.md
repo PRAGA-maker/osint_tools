@@ -319,7 +319,7 @@ kind: group-index
 - **`familysearch-s-united-states-record-collections`** (high) — Use when you have a `name` and want a one-page portal into FamilySearch's US genealogy record collections (census, vital, immigration) via S
 - **`familysearch`** (high) — Use when you have a deceased US subject's `name` and want death/birth-date confirmation and last residence — returns name, DOB/death date an
 - **`fastpeoplesearch-com-reverse-address`** (high) — Use when you have a US `address`, `name`, or `phone` and want the people tied to it — returns names, relatives, phones and prior addresses.
-- **`fatal-encounters`** (medium) — OSINT tool: Fatal Encounters.
+- **`fatal-encounters`** (high) — Use when you have a `name`, `geolocation`, or date and need to check whether a person died during a police interaction in the US since 2000 
 - **`fbi-most-wanted-search-engine`** (low) — OSINT tool: FBI Most Wanted Search Engine.
 - **`fca-org-uk`** (high) — Use when you have an `employer-org` or `name` tied to a UK mutual (credit union, co-op, friendly society) and want its registration and fili
 - **`federal-corporation-search-canada`** (medium) — Searches can be performed by Corporate Name, Corporation Number, or Business Number (BN)

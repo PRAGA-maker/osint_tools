@@ -199,7 +199,6 @@ kind: group-index
 - **`jsbin`** (medium) — OSINT tool: jsbin.
 - **`justfornurses-co-uk`** (medium) — OSINT tool: justfornurses.co.uk.
 - **`justpaste`** (medium) — Use when you have a JustPaste.it link (or a paste id) found in a breach, chat, or search hit and want to read the shared rich text/images be
-- **`karmadecay`** (low) — OSINT tool: Karmadecay.
 - **`katbin`** (low) — Use when you have a Katbin paste URL/ID or are dorking for leaked text — returns the pasted content; a place dumps and notes may be shared.
 - **`kinja-rss-news-feed`** (medium) — Website that provides links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest
 - **`knok`** (medium) — Website related to social networking in the form of travel and accomodations
