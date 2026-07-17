@@ -347,7 +347,7 @@ kind: group-index
 - **`gooru-search-engine-poland`** (medium) — Poland based web search engine covering regional results
 - **`goosh-org`** (low) — online google search command line tool
 - **`gopit-search-engine-home`** (medium) — OSINT tool: GoPit Search Engine - Home.
-- **`government-attic`** (medium) — Site providing electronic access to federal government documents obtained under the Freedom of Information Act
+- **`government-attic`** (medium) — Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government 
 - **`government-grants`** (medium) — Searchable database of available US government grants
 - **`government-science-portal`** (medium) — Gateway or portal to scientific government information, including research and development results
 - **`graball-search-engine`** (medium) — Surface web search engine covering worldwide results

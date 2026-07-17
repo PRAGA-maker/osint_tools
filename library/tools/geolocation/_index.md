@@ -256,7 +256,6 @@ kind: group-index
 - **`rally-maps`** (medium) — A worldwide map showing thousands of race (regular and one-off) locations. It's possinle to find names of winners, routes, dates and other d
 - **`reverseimagelocation`** (high) — Use when a photo has no EXIF GPS and you need to identify where it was taken by visual reverse-image matching.
 - **`rfsearch-com`** (low) — OSINT tool: Rfsearch.com.
-- **`riskmap`** (medium) — OSINT tool: RiskMap.
 - **`rivermap`** (medium) — Online map with the most detailed information on Europe's rivers (mostly central for the time being, but the data is being updated): directi
 - **`safe-airspace`** (medium) — (Conflict Zone & Risk Database) worldwide map showing the countries where flying over may be dangerous; detailed history of incidents and of
 - **`sas-planet`** (high) — Use when you need to download and cache high-res satellite/aerial imagery from many providers for offline geolocation work.

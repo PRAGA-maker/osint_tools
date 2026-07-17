@@ -30,7 +30,7 @@ kind: group-index
 - **`canadian-numbering-administrator`** (medium) — Canadian Numbering Administrator site providing regulatory telecommunications information and listing assigned carrier codes
 - **`cannabisuk`** (low) — OSINT tool: CannabisUK.
 - **`centre-for-investigative-journalism`** (medium) — Resource and information website for investigative journalists
-- **`charity-navigator`** (medium) — Large US-based charity evaluator
+- **`charity-navigator`** (medium) — Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — return
 - **`charlieuk`** (low) — OSINT tool: CharlieUK.
 - **`cpic-stolen-property-search`** (medium) — Canadian Police Information Centre stolen vehicle and property search
 - **`credit-card-center`** (low) — OSINT tool: Credit Card Center.

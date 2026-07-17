@@ -29,7 +29,7 @@ kind: group-index
 - **`avtocodbot`** (medium) — Use when you have a Russian vehicle plate or VIN and want an ownership/usage-history report (Avtocod) delivered via Telegram.
 - **`avtogram-bot`** (low) — Use when you want to contribute/monetize car photos to a plate-photo community — note it is an upload bot, not a lookup tool.
 - **`avtonomer`** (medium) — Use when you have a (mostly Russian/CIS) license plate and want user-submitted photos of that plate/vehicle via a Telegram search of platesm
-- **`awesome-telegram-osint`** (medium) — Curated list of Telegram OSINT tools, bots, sites and resources.
+- **`awesome-telegram-osint`** (medium) — Use when you have a Telegram `username`/`phone` and need the right tool for it — a curated catalog of Telegram OSINT search engines, bots, d
 - **`bmi-np-bot`** (high) — Use when you have a Russian `phone` number and want its current mobile operator and geographic region, accounting for number portability (MN
 - **`botim-me`** (high) — Use when you have a `phone` number (often Gulf/Middle-East) and want to check whether it has a BOTIM messaging account and see any public pr
 - **`chatbottle-telegram-bots`** (low) — Directory of Telegram bots.

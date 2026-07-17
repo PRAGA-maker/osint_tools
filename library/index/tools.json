@@ -21660,30 +21660,35 @@
   },
   {
     "id": "tv-closed-caption-search",
-    "name": "TV Closed Caption Search",
-    "description": "Finding broadcast mentions by keyword and time period",
+    "name": "TV News Archive (Closed-Caption Search)",
+    "description": "Use when you have a `name`, phrase or event and want to find when it was said on US TV news — returns matching broadcast clips with transcripts, dates and channels.",
     "url": "https://archive.org/details/tv",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "other-media"
     ],
-    "bestFor": "Finding broadcast mentions by keyword and time period",
-    "input": "Keyword, program, channel, or date range",
-    "output": "Matching TV clips, transcripts, and broadcast metadata",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Keyword-searching closed captions of US TV news to find when/where something was broadcast.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free at the Internet Archive; no account needed to search captions and view short clips. A free account helps with borrowing/embedding.",
     "opsec": "passive",
-    "opsecNote": "Queries public archived broadcasts without interacting with monitored subjects.",
+    "opsecNote": "You search an archive of already-broadcast public TV — nothing about a subject is queried live and no one is alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Internet Archive; clips are the actual recorded broadcasts with their closed captions, so results are primary-source and verifiable by watching the clip.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
@@ -21703,11 +21708,18 @@
       "web-archive-org",
       "web-archive-org-2"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Internet Archive TV News",
+      "TV News Archive"
+    ],
+    "tags": [
+      "archive",
+      "tv-news",
+      "captions"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/other-media/tv-closed-caption-search.md"
   },
   {
@@ -41813,41 +41825,52 @@
   {
     "id": "charity-navigator",
     "name": "Charity Navigator",
-    "description": "Large US-based charity evaluator",
-    "url": "http://www.charitynavigator.org/",
+    "description": "Use when you have a US nonprofit `employer-org` (or a person's charity affiliation) and want its financials, ratings and leadership — returns EIN, finances and named officers/associates.",
+    "url": "https://www.charitynavigator.org/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Researching a US nonprofit's finances, rating, EIN and leadership from IRS-sourced data.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view charity profiles, ratings, and financial summaries; no account required for lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A public nonprofit-research lookup drawing on IRS filings — nothing about any individual is queried live and no one is alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A 25+ year nonprofit evaluator rating 245,000+ charities using IRS Form 990 data; financials are sourced from public filings and are verifiable against the IRS.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "charitynavigator.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "nonprofit"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/charity-navigator.md"
   },
   {
@@ -59224,8 +59247,8 @@
   },
   {
     "id": "nox-app-player",
-    "name": "Nox App Player",
-    "description": "Android version testing, app analysis, rooted device simulation",
+    "name": "NoxPlayer (Nox App Player)",
+    "description": "Use when you need to run Android OSINT/messaging apps on a desktop to investigate a `phone`/`username` — an emulator that hosts mobile-only apps in a controllable, disposable environment.",
     "url": "https://www.bignox.com/",
     "category": "documents-metadata",
     "path": [
@@ -59233,34 +59256,49 @@
       "android",
       "emulation-tools"
     ],
-    "bestFor": "Android version testing, app analysis, rooted device simulation",
-    "input": "APK files, apps",
-    "output": "App behavior, system-level data, rooted access artifacts",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Running mobile-only Android apps (messengers, social apps) on a PC/Mac for OSINT in a sandboxed, resettable instance.",
+    "selectorsIn": [
+      "phone",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free Android emulator for Windows/macOS. No purchase; note it is ad/bundle-supported and not open source.",
     "opsec": "active",
-    "opsecNote": "Detectable via emulator checks; includes obvious emulator markers",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "opsecNote": "Running an investigative app inside an emulator is active toward the platforms you use — the app logs in and interacts as a real client, so use sock-puppet accounts and burner numbers, never your own. Emulators are also detectable (obvious device markers), and NoxPlayer's updater suffered a supply-chain compromise (NightScout, 2021), so install only from bignox.com, keep it on an isolated/disposable machine, and don't put anything real inside it.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "desktop-app",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Closed-source consumer emulator from BigNox; functional and widely used, but its update channel was compromised in a 2021 supply-chain attack, so treat it as untrusted software to sandbox rather than a tool to run on your main system.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
     "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Nox App Player",
+      "NoxPlayer",
+      "Nox"
+    ],
+    "tags": [
+      "android",
+      "emulator",
+      "mobile-osint"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/emulation-tools/nox-app-player.md"
   },
   {
@@ -128686,47 +128724,6 @@
     "_file": "library/tools/geolocation/rfsearch-com.md"
   },
   {
-    "id": "riskmap",
-    "name": "RiskMap",
-    "description": "OSINT tool: RiskMap.",
-    "url": "https://www.riskmap.com/",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Politics, conflicts and crisis"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/riskmap.md"
-  },
-  {
     "id": "rivermap",
     "name": "Rivermap",
     "description": "Online map with the most detailed information on Europe's rivers (mostly central for the time being, but the data is being updated): direction and speed, water temperature, depth, slope angle, etc.",
@@ -163948,13 +163945,13 @@
   {
     "id": "awesome-telegram-osint",
     "name": "Awesome Telegram OSINT",
-    "description": "Curated list of Telegram OSINT tools, bots, sites and resources.",
+    "description": "Use when you have a Telegram `username`/`phone` and need the right tool for it — a curated catalog of Telegram OSINT search engines, bots, directories and guides to pick from.",
     "url": "https://github.com/ItIsMeCall911/Awesome-Telegram-OSINT",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "Finding tools/bots to investigate Telegram users, groups, and channels",
+    "bestFor": "Finding the current tools, bots and channel directories to investigate Telegram users, groups and channels.",
     "selectorsIn": [
       "username",
       "phone"
@@ -163962,15 +163959,16 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free open GitHub list; the individual tools/bots it links to have their own (varying) pricing and access terms.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the list is passive. The tools and especially the bots it points to are NOT — many require you to message a bot or query a service, which exposes your account/query. Vet each linked tool's OpSec before using it, and use sock-puppet accounts for any Telegram bot.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Well-maintained curated list (2.7k+ stars).",
+    "trustNote": "Well-maintained community catalog (2.8k+ stars). It's a reliable index, but it does not vouch for the linked tools — some third-party bots are sketchy, so judge each on its own merits.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -163979,15 +163977,17 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Awesome Telegram OSINT list"
+    ],
     "tags": [
       "telegram",
       "awesome-list",
       "catalog"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/messaging/awesome-telegram-osint.md"
   },
   {
@@ -285689,41 +285689,52 @@
   {
     "id": "government-attic",
     "name": "Government Attic",
-    "description": "Site providing electronic access to federal government documents obtained under the Freedom of Information Act",
-    "url": "http://www.governmentattic.org/",
+    "description": "Use when you have a `name`, agency or topic and want FOIA-released US federal documents about it — returns declassified/released government records that can name people and events.",
+    "url": "https://www.governmentattic.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Browsing an archive of FOIA-released US government documents you won't find via normal search.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public archive; no account, no fees. Documents are PDFs you can read/download directly.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse and download static PDFs from a public archive — nothing about the subject is queried live and no one is alerted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-running archive of genuine FOIA-released records; documents are primary-source government material, verifiable by their release letters/agency provenance.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "governmentattic.org",
+      "Government Attic FOIA"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "foia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/government-attic.md"
   },
   {
@@ -326368,42 +326379,38 @@
   {
     "id": "instagram-explorer",
     "name": "Instagram Explorer",
-    "description": "Click on a point on the map. Follow the instructions on the left. Get a link to view Instagram posts made at this location on a specific date range",
+    "description": "Use when you have a `geolocation` and date range and want Instagram posts made there — builds a link to view location-tagged posts for that spot and time window.",
     "url": "https://www.osintcombine.com/instagram-explorer",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Turning a map point + date range into a link that surfaces Instagram posts tagged at that location.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
+      "social-profile",
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free browser tool from OSINT Combine. It only builds a query link; actual results depend on Instagram, whose location-search access has been heavily restricted over time.",
+    "opsec": "passive",
+    "opsecNote": "The tool itself just constructs a location/date query — no login and nothing about a subject leaves your machine. Viewing the resulting posts on Instagram is where you're interacting with the platform; use a sock-puppet account for that.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Built by OSINT Combine, a reputable OSINT training/tools company; the tool is sound, but its usefulness rides entirely on Instagram's (increasingly limited) location-search surface.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Instagram"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "facebook-geo",
       "osint-combine-blog",
@@ -326414,6 +326421,17 @@
       "osintcombine-com-2",
       "snapchat-multi-viewer-osint-combine"
     ],
+    "aliases": [
+      "OSINT Combine Instagram Explorer"
+    ],
+    "tags": [
+      "Social Media",
+      "Instagram",
+      "geolocation"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/instagram-explorer.md"
   },
   {
