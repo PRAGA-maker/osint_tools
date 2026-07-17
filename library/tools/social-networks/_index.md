@@ -662,7 +662,7 @@ kind: group-index
 - **`toutatis-2`** (high) — Use when you have an Instagram `username`/ID and want the obfuscated contact data Instagram holds — returns partially-masked `email` and `ph
 - **`toutatis`** (high) — Use when you have an Instagram `username` and want to pull the account's hidden contact data — returns obfuscated email/phone, the numeric u
 - **`treeverse-2`** (high) — Use when you have an X/Twitter thread or `username` and want to visualize a conversation as a navigable tree to map participants and replies
-- **`trendhero`** (medium) — An Instagram profile search tool with a huge number of filters and the ability to view profile statistics.
+- **`trendhero`** (medium) — Use when you have an Instagram `username` and want deep profile analytics and a fake-follower audit — returns follower quality, engagement s
 - **`trends-tool`** (low) — OSINT tool: Trends Tool.
 - **`trends24`** (low) — Use when you have a place and time and want to know what was trending on X/Twitter there — returns ranked trending topics by country/city wi
 - **`trendsmap`** (medium) — OSINT tool: TrendsMap.

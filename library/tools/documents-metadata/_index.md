@@ -156,7 +156,7 @@ kind: group-index
 - **`iphone-imei-checker`** (medium) — Use when you have an iPhone's IMEI/serial (`device-id`) and want its model, specs and iCloud/blacklist status — returns device metadata and 
 - **`irfanview`** (medium) — Windows-based software to extract metadata.
 - **`jeff-sagarin-north-america`** (low) — Website related to sports ratings
-- **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — OSINT tool: Jeffrey Friedl's Image Metadata Viewer.
+- **`jeffrey-friedl-s-image-metadata-viewer`** (medium) — Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestam
 - **`joinme-screensharing-tool`** (low) — Website that provides screen sharing and online meetings
 - **`json-to-csv`** (low) — OSINT tool: JSON to CSV.
 - **`katana`** (low) — Katana-dork scanner is a simple python tool that automates Google hacking/dorking and supports Tor.

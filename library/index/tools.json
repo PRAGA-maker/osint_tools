@@ -23889,45 +23889,55 @@
   },
   {
     "id": "alumni-net",
-    "name": "Alumni.net",
-    "description": "OSINT tool: Alumni.net.",
+    "name": "Alumni.NET",
+    "description": "Use when you have a `name` plus a school/location and want to find their alumni-directory profile — returns a `social-profile` and school/graduation-year context.",
     "url": "https://www.alumni.net",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a global school/university alumni directory for a person's profile, school, and graduation year.",
     "selectorsIn": [
       "name"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and register; ad-supported. Largely superseded by Facebook/LinkedIn, so coverage is patchy and profiles are often old.",
+    "opsec": "passive",
+    "opsecNote": "Browsing/searching is passive. Viewing full member details or messaging typically requires you to register — do so only with a sock-puppet account, as registering and interacting is attributable and may notify members.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Old-style alumni social directory; profiles are self-submitted and frequently stale, so data is lead-quality and must be corroborated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
+    "relatedTools": [
+      "alumni-member-search",
       "classmates"
     ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "alumni-member-search"
+    "aliases": [
+      "Alumni.net",
+      "alumni.net"
     ],
+    "tags": [
+      "classmates",
+      "alumni",
+      "people-search"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/alumni-net.md"
   },
   {
@@ -29572,48 +29582,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/google-com-22.md"
-  },
-  {
-    "id": "google-com-23",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Aforums.digitalspy.com/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-23.md"
   },
   {
     "id": "google-com-24",
@@ -57731,48 +57699,57 @@
   {
     "id": "jeffrey-friedl-s-image-metadata-viewer",
     "name": "Jeffrey Friedl's Image Metadata Viewer",
-    "description": "OSINT tool: Jeffrey Friedl's Image Metadata Viewer.",
+    "description": "Use when you have an `image` (file or URL) and want every scrap of embedded metadata — returns full EXIF/IPTC/XMP including camera, timestamps and GPS `geolocation`.",
     "url": "http://exif.regex.info/exif.cgi",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Reading the complete EXIF/IPTC/XMP metadata (including GPS) out of a photo by upload or URL.",
     "selectorsIn": [
-      "metadata-exif",
-      "image"
+      "image",
+      "metadata-exif"
     ],
     "selectorsOut": [
       "metadata-exif",
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, no account. A long-running hobby/reference tool by photographer-engineer Jeffrey Friedl.",
+    "opsec": "active",
+    "opsecNote": "You upload the image (or its URL) to a third-party server, which processes it. If you paste a URL, the tool's server fetches that URL — which can touch the hosting site. Use images you're authorised to analyse; for sensitive files, prefer a local exiftool so nothing leaves your machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established, widely-recommended EXIF viewer built on the industry-standard ExifTool; it reports the file's real embedded metadata without alteration.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "metadata",
-      "exif"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "jeffrey-s-exif-viewer",
-      "jeffreys-image-metadata-viewer"
+      "jeffreys-image-metadata-viewer",
+      "exiftool"
     ],
+    "aliases": [
+      "exif.regex.info",
+      "Jeffrey's EXIF viewer"
+    ],
+    "tags": [
+      "metadata",
+      "exif",
+      "gps",
+      "image-forensics"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/jeffrey-friedl-s-image-metadata-viewer.md"
   },
   {
@@ -76766,30 +76743,31 @@
   {
     "id": "iana-whois-service",
     "name": "IANA Whois Service",
-    "description": "Whois tool that identifies the available registration information for a website or domain name",
-    "url": "http://www.iana.org/whois",
+    "description": "Use when you have a `domain`, TLD, or `ip-address` block and want the authoritative registry/whois-server pointer for it — returns the sponsoring org and where to query next.",
+    "url": "https://www.iana.org/whois",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the authoritative registry, sponsoring organisation, and correct whois server for a TLD, root-level domain, or IP allocation.",
     "selectorsIn": [
       "domain",
       "ip-address"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free authoritative service run by IANA (the Internet Assigned Numbers Authority); no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying IANA hits IANA's servers, not the target domain's infrastructure, so the subject is never notified. Fully passive. Standard web logging only.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "IANA is the top-level authority for the DNS root, TLDs, and IP-block delegations; its whois is the definitive pointer to the responsible registry.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -76798,18 +76776,24 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "iana-root-zone-database",
+      "ripe",
+      "arin"
+    ],
+    "aliases": [
+      "iana.org/whois",
+      "IANA WHOIS"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois",
+      "iana",
+      "dns",
+      "registry"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "iana-root-zone-database"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/iana-whois-service.md"
   },
   {
@@ -171969,43 +171953,6 @@
     "_file": "library/tools/messaging/tgramsearch.md"
   },
   {
-    "id": "tgscanrobot",
-    "name": "@tgscanrobot",
-    "description": "telegram bot to show which telegram groups a person is member of.",
-    "url": "https://t.me/tgscanrobot",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Messengers",
-      "Telegram"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/tgscanrobot.md"
-  },
-  {
     "id": "tgspyder",
     "name": "tgspyder",
     "description": "Telegram analysis tool for social media intelligence and threat research.",
@@ -182857,47 +182804,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/ip-dns-leak-detection.md"
-  },
-  {
-    "id": "ip2proxy",
-    "name": "IP2Proxy",
-    "description": "Checking if your VPN/proxy IP is flagged, verifying anonymization infrastructure quality",
-    "url": "https://www.ip2proxy.com/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling",
-      "anonymous-browsing",
-      "proxy-tests"
-    ],
-    "bestFor": "Checking if your VPN/proxy IP is flagged, verifying anonymization infrastructure quality",
-    "input": "IP address",
-    "output": "Proxy type classification (VPN/TOR/hosting/residential), ISP, and country",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "Passive IP lookup; useful for checking if your exit node IPs are flagged in commercial proxy databases before conducting operations.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/proxy-tests/ip2proxy.md"
   },
   {
     "id": "ipcheck",
@@ -282134,24 +282040,29 @@
   {
     "id": "find-similar-sites",
     "name": "Find Similar Sites",
-    "description": "Search engine allowing users to enter a domain and find similar sites.",
+    "description": "Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead expansion.",
     "url": "https://www.findsimilarsites.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Entering a domain to discover content- or audience-similar websites for pivoting and comparison.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to use; no account required for basic similar-site lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the service's index of site relationships, not the target domain, so the site owner isn't notified. The service logs your queries; use a clean session for sensitive research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Third-party \"similar sites\" recommender based on content/traffic similarity; useful for discovery but its similarity model is a heuristic, so results are leads not proof of any relationship.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -282160,15 +282071,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "similarweb",
+      "dnslytics-com"
+    ],
+    "aliases": [
+      "findsimilarsites.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
+      "domain",
+      "similar-sites",
+      "discovery"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/find-similar-sites.md"
   },
   {
@@ -345606,38 +345523,57 @@
   {
     "id": "trendhero",
     "name": "TrendHero",
-    "description": "An Instagram profile search tool with a huge number of filters and the ability to view profile statistics.",
+    "description": "Use when you have an Instagram `username` and want deep profile analytics and a fake-follower audit — returns follower quality, engagement stats and audience/`geolocation` breakdowns.",
     "url": "https://trendhero.io/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Auditing an Instagram account's follower authenticity, engagement, and audience demographics.",
+    "selectorsIn": [
+      "username",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free registration includes a small number of free reports/checks; full audits, historical tracking, and the influencer database need a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "TrendHero analyses the public account via its own data; it does not follow or notify the target. It does require you to create an account to run reports — use a sock-puppet email/login, since your account (not the subject) is what's identified to TrendHero.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial influencer-analytics platform. Follower-authenticity and engagement estimates are modelled, so treat them as strong indicators rather than exact figures.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "socialblade-instagram",
+      "imginn"
+    ],
+    "aliases": [
+      "trendhero.io"
+    ],
     "tags": [
-      "Social Media",
-      "Instagram"
+      "instagram",
+      "analytics",
+      "influencer",
+      "fake-followers"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/trendhero.md"
   },
   {
@@ -368325,38 +368261,55 @@
   {
     "id": "vincheck",
     "name": "VINCheck®",
-    "description": "OSINT tool: VINCheck®.",
+    "description": "Use when you have a `vin` and want to know if the vehicle is recorded as stolen/unrecovered or a salvage/total-loss — returns theft and salvage-title flags from insurer data.",
     "url": "https://www.nicb.org/vincheck",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Free check of whether a US vehicle (by VIN) is flagged as stolen-and-unrecovered or a salvage/total-loss record.",
+    "selectorsIn": [
+      "vin"
+    ],
+    "selectorsOut": [
+      "vin"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public service from the National Insurance Crime Bureau (NICB). Limited to a small number of searches (about 5) per IP address per day; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query the NICB database by VIN — no vehicle owner is contacted or notified. NICB logs the query/IP and enforces a daily cap. Fully passive; use a clean session if the VIN is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the NICB, a US nonprofit backed by insurers; theft/salvage flags come directly from participating member insurance companies.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "national-insurance-crime-bureau-vin-search"
+      "national-insurance-crime-bureau-vin-search",
+      "vehicle-enquiry-service-gov-uk"
     ],
+    "aliases": [
+      "NICB VINCheck",
+      "nicb.org/vincheck"
+    ],
+    "tags": [
+      "vehicle",
+      "vin",
+      "theft",
+      "salvage",
+      "us"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vincheck.md"
   },
   {

@@ -269,7 +269,7 @@ kind: group-index
 - **`filetype-search-tool`** (low) — OSINT tool: Filetype search tool.
 - **`filmaffinity-canada`** (medium) — Movie listings website
 - **`finaid-mail-drop-search`** (medium) — Database search by address, city name, state and zip code
-- **`find-similar-sites`** (medium) — Search engine allowing users to enter a domain and find similar sites.
+- **`find-similar-sites`** (medium) — Use when you have a `domain` and want other websites like it — returns a list of related `domain`s by content/audience similarity for lead e
 - **`find-sort-codes`** (medium) — UK bank sort code search tool
 - **`find-who-events`** (low) — Google CSE for finding events by location (keywords) in #Facebook, #Eventbrite, #Xing, #Meetup, #Groupon, #Ticketmaster, #Yepl, #VK, #Evente
 - **`findhow`** (medium) — The how-to directory

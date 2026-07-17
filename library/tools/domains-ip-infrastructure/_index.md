@@ -243,7 +243,7 @@ kind: group-index
 - **`hypestat-analyzer-plugin`** (low) — Shows estimate daily website traffic, Alexa rank, average visit duration and used techhologies.
 - **`hypestat`** (low) — OSINT tool: HypeStat.
 - **`iana-root-zone-database`** (low) — OSINT tool: IANA — Root Zone Database.
-- **`iana-whois-service`** (medium) — Whois tool that identifies the available registration information for a website or domain name
+- **`iana-whois-service`** (medium) — Use when you have a `domain`, TLD, or `ip-address` block and want the authoritative registry/whois-server pointer for it — returns the spons
 - **`ibm-x-force-exchange-current-malicious-activity`** (low) — OSINT tool: IBM X-Force Exchange Current Malicious Activity.
 - **`icann-lookup`** (low) — OSINT tool: Icann Lookup.
 - **`icann-org`** (medium) — OSINT tool: icann.org.

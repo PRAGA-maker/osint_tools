@@ -175,7 +175,6 @@ kind: group-index
 - **`tginfo-me`** (high) — Use when you're trying to resolve a `phone` or `username` on Telegram and need to understand the add-by-number technique and its privacy/rat
 - **`tgram-io`** (low) — Explore and search Telegram channels, groups and bots.
 - **`tgramsearch`** (medium) — Use when you have a keyword, topic, or `username` and want to find related Telegram channels — returns a catalogue of channels with names, d
-- **`tgscanrobot`** (medium) — telegram bot to show which telegram groups a person is member of.
 - **`tgspyder`** (medium) — Telegram analysis tool for social media intelligence and threat research.
 - **`tgstat-ru`** (medium) — Use when you have a Telegram channel/`username`, `name` or keyword and want to find and analyze public Telegram channels and posts — returns
 - **`tlgrm-eu-channels`** (medium) — Search Telegram channels.

@@ -25,7 +25,7 @@ kind: group-index
 - **`airbnb`** (medium) — Website related to travel and accomodations
 - **`alltop-micronews-website`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`alt-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`alumni-net`** (medium) — OSINT tool: Alumni.net.
+- **`alumni-net`** (medium) — Use when you have a `name` plus a school/location and want to find their alumni-directory profile — returns a `social-profile` and school/gr
 - **`american-archive-of-public-broadcasting`** (low) — Discover historic programs of publicly funded radio and television across America. Watch and listen
 - **`analystforum-com`** (medium) — OSINT tool: analystforum.com.
 - **`answers-com`** (low) — OSINT tool: Answers.com.
@@ -157,7 +157,6 @@ kind: group-index
 - **`google-com-20`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-22`** (medium) — OSINT tool: google.com.
-- **`google-com-23`** (medium) — OSINT tool: google.com.
 - **`google-com-24`** (medium) — OSINT tool: google.com.
 - **`google-com-25`** (medium) — OSINT tool: google.com.
 - **`google-com-26`** (medium) — OSINT tool: google.com.

@@ -216,7 +216,7 @@ kind: group-index
 - **`vin-info`** (medium) — OSINT tool: Vin-Info.
 - **`vincheck-info`** (medium) — OSINT tool: VINCheck.info.
 - **`vincheck-nicb`** (medium) — Free VIN lookup for theft and salvage records.
-- **`vincheck`** (medium) — OSINT tool: VINCheck®.
+- **`vincheck`** (medium) — Use when you have a `vin` and want to know if the vehicle is recorded as stolen/unrecovered or a salvage/total-loss — returns theft and salv
 - **`wandermap`** (low) — hiking routes world map
 - **`websdr`** (low) — online access to a short-wave receiver located at the University of Twente. It can be used to listen to military conversations (voice or Mor
 - **`wikicars`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on v
