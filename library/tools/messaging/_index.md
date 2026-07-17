@@ -124,7 +124,6 @@ kind: group-index
 - **`sherlock-3`** (high) — Use when you have a `phone` number and want the names it is saved as in other people's contacts — a Telegram GetContact-style lookup bot tha
 - **`shtrafkzbot`** (high) — Use when you have a Kazakhstan national/business ID (`document-id`, ИИН/БИН) or a `vehicle-plate` and want to check that person's/vehicle's 
 - **`signal-org`** (high) — Use when your subject uses Signal and you need to know what data is recoverable — the page documents that Signal retains only registration d
-- **`skresolver-com`** (medium) — OSINT tool: skResolver.com.
 - **`sms-activate`** (high) — Use when you need a disposable `phone` number to receive an SMS/OTP for a sock-puppet account without exposing your own number — rents tempo
 - **`spyggbot`** (low) — Use when you have an NFT/crypto wallet address and want to track its holdings, ownership and floor prices via Telegram — returns crypto-wall
 - **`support-discord-com-2`** (high) — Use when you have a `username` and want to search Discord's public community help forum for posts, complaints, or server references tied to 

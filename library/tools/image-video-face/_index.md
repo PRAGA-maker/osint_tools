@@ -256,7 +256,7 @@ kind: group-index
 - **`pictriev-com`** (medium) — Use when you have two face photos and want a head-to-head similarity score (the PicTriev face-compare endpoint) — returns a likeness percent
 - **`pictriev`** (medium) — Use when you have a face photo and want to find visually similar faces / celebrity lookalikes or compare two faces — returns similar-face ma
 - **`picvario-metadata-editor`** (high) — Use when you have an `image` and want to read its EXIF/IPTC/XMP metadata — including GPS geolocation and camera/device — via a free browser 
-- **`pill-identifier`** (medium) — How to know which pill drug is pictured or accidentally found on the floor of your home? Use a special online identifier that suggests possi
+- **`pill-identifier`** (medium) — Use when you have a `physical-description` of a pill (colour, shape, imprint) or an `image` of one and want to identify the medication — ret
 - **`pimeyes-2`** (high) — Use when you have a clear face photo and need to find where else that face appears online — returns matched source pages you can pivot to na
 - **`pinhere`** (high) — Use when you have a `geolocation` and want to see anonymous messages, photos, and links other users have dropped at that exact spot — return
 - **`pinterest-chrome-add-on`** (high) — Use when you have an `image` or `face` and want to reverse-search it through Pinterest's visual-search engine from a right-click — returns v

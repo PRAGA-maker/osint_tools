@@ -227,7 +227,7 @@ kind: group-index
 - **`github-monitor`** (medium) — OSINT tool: github_monitor.
 - **`github-rater`** (medium) — rates GitHub profile upon data received from GitHub API
 - **`github-release-stats`** (medium) — Estimate popularity of Github repo. Tool displays the number of downloads for each project release + some additional information.
-- **`github-repository-size`** (medium) — simple google chrome extension to view Github repo size
+- **`github-repository-size`** (medium) — Use when you have a GitHub `social-profile`/repo and want its total size and per-file/folder sizes shown inline — a browsing aid, not a pers
 - **`github-stars-githubstars-com`** (low) — Showcase of popular GitHub repositories.
 - **`github-trending-archives`** (medium) — Github trending archive for a specific date.
 - **`github-trending-rss`** (low) — RSS feed of trending GitHub repositories.

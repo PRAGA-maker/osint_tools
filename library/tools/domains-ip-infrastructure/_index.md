@@ -421,7 +421,6 @@ kind: group-index
 - **`robottester`** (low) — Simple Python script can enumerate all URLs present in robots.txt files, and test whether they can be accessed or not.
 - **`ronin-recon`** (low) — Recursive recon engine and framework for subdomains, DNS, port scanning, and TLS certs.
 - **`sameid`** (low) — OSINT tool: SameID.
-- **`samy-pl`** (medium) — OSINT tool: samy.pl.
 - **`scamadvisor`** (medium) — Use when you have a domain, phone, IBAN, or crypto wallet and want a fast trust/scam assessment plus site metadata — returns a trust score a
 - **`scan4all`** (low) — 15000+PoCs; 20 kinds of application password crack; 7000+Web fingerprints; 146 protocols and 90000+ rules Port scanning; Fuzzing and many ma
 - **`scrape-api`** (low) — Proxy API for Web Scraping

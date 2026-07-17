@@ -333,7 +333,7 @@ kind: group-index
 - **`google-docs-cse`** (low) — OSINT tool: Google Docs CSE.
 - **`google-domain-hacker`** (medium) — Use when you have a `domain` or `name` and want a preset Google dork scoped to a curated site set — returns matching pages, domain and socia
 - **`google-dork-cheatsheet`** (medium) — OSINT tool: Google Dork Cheatsheet.
-- **`google-drive-folder-search-engine`** (medium) — OSINT tool: Google Drive Folder Search Engine.
+- **`google-drive-folder-search-engine`** (medium) — Use when you have a `name`, `username`, or keyword and want publicly shared Google Drive files/folders mentioning it — returns documents, `m
 - **`google-email-extractor`** (low) — Extract emails from Google Search Results
 - **`google-ftp-search`** (medium) — Google's FTP search feature
 - **`google-minus-google-search-engine`** (medium) — Search with Google without getting results from other Google services such as Blogger and Youtube
@@ -487,7 +487,7 @@ kind: group-index
 - **`maldevel-osint`** (low) — Tools, scripts and tips useful during OSINT investigations and reconnaissance.
 - **`malfrat-s-osint-map`** (high) — Use when you have a starting selector (`username`/`email`/`phone`/`image`) and need to pick the right tool — an interactive map that branche
 - **`malwarebazaar`** (medium) — Use when you have a file hash, tag, or malware family and want to pull the sample plus its indicators — returns domain, ip-address, metadata
-- **`mamma-meta-search-for-business-reviews`** (medium) — Meta-search engine for business reviews yielding results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
+- **`mamma-meta-search-for-business-reviews`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want blended results from multiple engines — returns aggregated web hits and `soc
 - **`mamont-s-open-ftp-index`** (low) — OSINT tool: Mamont's open FTP Index.
 - **`mamont`** (medium) — OSINT tool: Mamont.
 - **`meganzsearch-com`** (medium) — OSINT tool: Meganzsearch.com.
@@ -649,7 +649,7 @@ kind: group-index
 - **`quranicarabiccorpus`** (medium) — Website that offers Quranic scripture search services
 - **`qwant`** (low) — OSINT tool: Qwant.
 - **`r3mlab-datajournalism-resources`** (low) — GitHub collection of data-journalism and OSINT research resources.
-- **`radioreference-communications-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
+- **`radioreference-communications-wiki`** (medium) — Use when you have a `geolocation`/agency and want radio-communications reference data (frequencies, systems, agencies) — returns location/ag
 - **`rambler-search-engine-russia`** (medium) — Russian web search engine covering worldwide results
 - **`rapusia`** (medium) — Charitable search engine that supports environmental projects and initiatives.
 - **`ratedpeople-united-kingdom`** (medium) — Website related to tradesman ratings

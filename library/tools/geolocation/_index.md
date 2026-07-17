@@ -116,7 +116,7 @@ kind: group-index
 - **`global-conflict-tracker`** (medium) — OSINT tool: Global Conflict Tracker.
 - **`global-flood-database-and-interactive-map`** (medium) — Detailed statistics on floods over the last 15 years (worldwide): precipitation levels, flooded area, number of people affected, dates, dura
 - **`global-incident-map`** (high) — Use when you have a `geolocation`/region and want situational context — returns a map of reported terrorism, suspicious activity, and other 
-- **`global-terriorism-database`** (medium) — Info about more than 200,000 terrorist incidents from 1970 to 2020 (worldwide): - dozens of advanced search options; - statistical data for 
+- **`global-terriorism-database`** (medium) — Use when you have a `geolocation`/date/group and want documented terrorist-incident records — returns incident `geolocation`, dates, actors,
 - **`global-wetlands-map`** (medium) — Interactive map of open waters, mangroves, swamps, fens, riverines, floodswamps, marshs, wet meadows and floodplains (unfortunately, there a
 - **`globalfishingmap`** (medium) — click on a point on the map and get the data on the current fishing effort at that location.
 - **`gmaps-extractor`** (low) — Use when you have a place/area and business type on Google Maps and want the listings in bulk — returns extracted business names, addresses,

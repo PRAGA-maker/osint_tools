@@ -30444,46 +30444,6 @@
     "_file": "library/tools/communities-forums/forum-search-engines/google-groups-search.md"
   },
   {
-    "id": "google-plus-directory",
-    "name": "Google Plus Directory",
-    "description": "Directory of Google Plus pages",
-    "url": "https://www.google.ca/press/google-directory.html",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-plus-directory.md"
-  },
-  {
     "id": "grasswire",
     "name": "Grasswire",
     "description": "Collaborative real-time news reporting database for fact-checking social media content",
@@ -64053,7 +64013,7 @@
   {
     "id": "whatsapp-messenger",
     "name": "WhatsApp Messenger",
-    "description": "User verification, profile discovery, status updates, contact verification",
+    "description": "Use when you have a `phone` number and want to confirm it has an active WhatsApp account and pull its public profile — returns `image` (photo), `physical-description`, and status text.",
     "url": "https://www.whatsapp.com/",
     "category": "documents-metadata",
     "path": [
@@ -64062,36 +64022,44 @@
       "apps",
       "instant-messaging"
     ],
-    "bestFor": "User verification, profile discovery, status updates, contact verification",
-    "input": "Phone numbers, WhatsApp IDs",
-    "output": "User profiles, status messages, profile pictures, last-seen timestamps, online status",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Confirming a phone number is a live WhatsApp account and capturing its public profile photo, About text, and (sometimes) online/last-seen signals.",
+    "selectorsIn": [
+      "phone"
+    ],
+    "selectorsOut": [
+      "image",
+      "physical-description",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "No official API for OSINT; third-party tools easily detected and account-banned",
+    "costNote": "Free app; you need your own WhatsApp account (a burner SIM/number is standard tradecraft).",
+    "opsec": "active",
+    "opsecNote": "To view a number's profile you save it as a contact — that itself is silent, but do NOT message, call, or add the number to a group, which would alert the owner. Repeated viewing or a persona that gets reported risks a ban. Use a dedicated sock-puppet number/device, never your personal WhatsApp.",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "mobile-app",
+    "trust": "trusted",
+    "trustNote": "First-party Meta/WhatsApp app; the existence and public-profile signals come straight from the platform (authoritative), though privacy settings gate what's visible.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": false,
     "localInstall": true,
     "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
+    "aliases": [
+      "WhatsApp",
+      "WhatsApp number check"
+    ],
     "tags": [],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/android/apps/instant-messaging/whatsapp-messenger.md"
   },
   {
@@ -87473,52 +87441,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/sameid.md"
-  },
-  {
-    "id": "samy-pl",
-    "name": "samy.pl",
-    "description": "OSINT tool: samy.pl.",
-    "url": "http://samy.pl/androidmap/",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain"
-    ],
-    "selectorsOut": [
-      "domain"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "domainsandips",
-      "Domains & IPs"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "peep-mail-search-tool",
-      "peepmail",
-      "samy-kamkar"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/samy-pl.md"
   },
   {
     "id": "scam-database",
@@ -122025,43 +121947,50 @@
   },
   {
     "id": "global-terriorism-database",
-    "name": "Global Terriorism Database",
-    "description": "Info about more than 200,000 terrorist incidents from 1970 to 2020 (worldwide): - dozens of advanced search options; - statistical data for each group of incidents; - many details on each incident, with sources;",
+    "name": "Global Terrorism Database (GTD)",
+    "description": "Use when you have a `geolocation`/date/group and want documented terrorist-incident records — returns incident `geolocation`, dates, actors, and sourced details.",
     "url": "https://twitter.com/cyb_detective/status/1578772549919559681",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Researching documented terrorist incidents worldwide (1970–2020) by location, date, group, or attack type, with sourced per-incident detail and statistics.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and to download for non-commercial/academic use after a free registration; some access tiers/commercial use are restricted.",
+    "opsec": "passive",
+    "opsecNote": "Querying an academic incident database is passive — no target is contacted. Registration ties downloads to an email; use a research/persona email if you prefer separation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Compiled by START at the University of Maryland; a widely-cited, methodologically documented academic dataset (coverage ends 2020).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "GTD",
+      "START Global Terrorism Database"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Politics, conflicts and crisis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/global-terriorism-database.md"
   },
   {
@@ -148691,44 +148620,51 @@
   },
   {
     "id": "pill-identifier",
-    "name": "Pill Identifier",
-    "description": "How to know which pill drug is pictured or accidentally found on the floor of your home? Use a special online identifier that suggests possible variations based on colour, shape and imprint.",
+    "name": "WebMD Pill Identifier",
+    "description": "Use when you have a `physical-description` of a pill (colour, shape, imprint) or an `image` of one and want to identify the medication — returns the drug name (no person selectors).",
     "url": "https://www.webmd.com/pill-identification/default.htm",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying an unknown pill from its colour, shape, and imprint code — useful when medication is found among a subject's effects or at a scene.",
     "selectorsIn": [
+      "physical-description",
       "image"
     ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free WebMD tool; no account or payment. Ad-supported.",
+    "opsec": "passive",
+    "opsecNote": "A reference lookup — you query WebMD's drug database, not any person. Nothing reaches a subject. Do not upload identifiable case photos to a commercial site; describe the pill (colour/shape/imprint) rather than uploading scene imagery.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "WebMD's pill identifier is built on a licensed pharmaceutical database (US drug imprints); authoritative for US-marketed medications.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "webmd-medical-sciences-search"
+    ],
+    "aliases": [
+      "WebMD pill ID",
+      "pill imprint lookup"
+    ],
     "tags": [
       "Image Search and Identification",
       "Reverse Image Search Engines and automation tools"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "webmd-medical-sciences-search"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/pill-identifier.md"
   },
   {
@@ -161225,14 +161161,14 @@
   },
   {
     "id": "nls-uk",
-    "name": "nls.uk",
-    "description": "OSINT tool: nls.uk.",
+    "name": "National Library of Scotland — Historic Maps",
+    "description": "Use when you have a `geolocation` or `address` and want to compare it against georeferenced historic maps (UK & worldwide) — returns `geolocation` context across time.",
     "url": "https://maps.nls.uk/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Overlaying georeferenced historical Ordnance Survey and world maps against modern satellite imagery to identify how a location looked in the past and confirm place identity.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -161240,29 +161176,38 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public digital map collection from the National Library of Scotland; no account needed to browse.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public map archive is fully passive — no target is contacted and no query is observable by a subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "National Library of Scotland — a national institution; the maps are authentic archival cartography, authoritative for historical geography.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "maps.nls.uk",
+      "NLS maps",
+      "National Library of Scotland maps"
+    ],
     "tags": [
       "mapsandlocationsites",
       "Maps & Location Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/nls-uk.md"
   },
   {
@@ -169088,47 +169033,6 @@
       "signal-private-messenger"
     ],
     "_file": "library/tools/messaging/signal-org.md"
-  },
-  {
-    "id": "skresolver-com",
-    "name": "skResolver.com",
-    "description": "OSINT tool: skResolver.com.",
-    "url": "http://www.skresolver.com/email-to-skype.php",
-    "category": "messaging",
-    "path": [
-      "messaging"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "email"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "skype"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/messaging/skresolver-com.md"
   },
   {
     "id": "slack-intelbot",
@@ -207003,38 +206907,53 @@
   },
   {
     "id": "shesource",
-    "name": "SheSource",
-    "description": "OSINT tool: SheSource.",
-    "url": "http://www.shesource.org",
+    "name": "WMC SheSource",
+    "description": "Use when you have a `name` or an area of expertise and want to identify/verify a woman expert or media source — returns `name`, `employer-org` affiliation, and `social-profile` leads.",
+    "url": "https://www.shesource.org",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding or verifying media-experienced women experts by name, expertise, location, or language — an expert-directory pivot for identifying a public commentator or source.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and use; experts apply to be listed and journalists sign up to contact them.",
+    "opsec": "passive",
+    "opsecNote": "A public expert directory — searching it is passive and unobservable by the listed person. Contacting an expert through the site is an active step; don't do so during covert research.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Women's Media Center, an established non-profit; entries are vetted expert self-submissions, reliable for professional identity/affiliation.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "SheSource",
+      "Women's Media Center SheSource",
+      "WMC SheSource"
+    ],
     "tags": [
       "expert-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/people-search/shesource.md"
   },
   {
@@ -249318,47 +249237,52 @@
   {
     "id": "nationwide-business-directory-australia",
     "name": "Nationwide Business Directory (Australia)",
-    "description": "Australian business directory that allows search by business name, keyword, and location",
+    "description": "Use when you have an `employer-org` or `name` linked to an Australian business and want directory details — returns `employer-org`, `address`, and contact leads.",
     "url": "http://www.nationwide.com.au",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Searching an Australian business directory by business name, keyword, or location to confirm a company and pull its address and contacts.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and browse; listing/registration is free too, with optional paid promotion for businesses.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public business directory is passive and leaks nothing to any subject. Standard web tracking applies; a clean browser suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial Australian directory with largely self-submitted listings; useful for leads but not an authoritative company register.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "nationwide.com.au"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "company-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/nationwide-business-directory-australia.md"
   },
   {
@@ -260638,42 +260562,55 @@
   },
   {
     "id": "search-for-open-information-documents",
-    "name": "Search for Open Information Documents",
-    "description": "OSINT tool: Search for Open Information Documents.",
+    "name": "BC Open Information Document Search",
+    "description": "Use when you have a `name` or `employer-org` tied to the BC (Canada) government and want disclosed records — returns documents, `associate` names, and `address`/expense leads.",
     "url": "https://www2.gov.bc.ca/gov/search?id=0882CD53C45A4AE1A42D5E22D8712AD8",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching British Columbia's proactively disclosed government records — FOI releases, travel-expense records, memos, letters and reports — for named individuals or bodies.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public government portal; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying a government open-data catalogue is passive and reveals nothing to any subject. The records are proactively published; searching them is not observable by anyone named in them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Government of British Columbia open-information portal; documents are authoritative primary records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "clicklaw",
       "cso",
       "search-the-open-information-catalogue",
       "security-licence-status-verification"
     ],
+    "aliases": [
+      "BC Open Information",
+      "gov.bc.ca document search"
+    ],
+    "tags": [],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/search-for-open-information-documents.md"
   },
   {
@@ -285083,35 +285020,48 @@
   {
     "id": "google-drive-folder-search-engine",
     "name": "Google Drive Folder Search Engine",
-    "description": "OSINT tool: Google Drive Folder Search Engine.",
+    "description": "Use when you have a `name`, `username`, or keyword and want publicly shared Google Drive files/folders mentioning it — returns documents, `metadata-exif`, and leaked-file leads.",
     "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:nwzqlcysx_w",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding public/misconfigured Google Drive documents, spreadsheets and folders indexed by Google, by keyword or name.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account needed to search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a Google search over already-public Drive content — passive, with no contact to any file owner. Opening a returned file is a normal Google Drive view; use a sock-puppet Google session if you don't want the access tied to you (owners of link-shared files can't see viewers, but be cautious with sign-in-required files).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A third-party-configured Google Custom Search Engine scoped to drive.google.com; results depend on the CSE config and Google's index, which can drift over time.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Google Drive CSE",
+      "public Drive search"
+    ],
     "tags": [],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-drive-folder-search-engine.md"
   },
   {
@@ -291944,25 +291894,32 @@
   },
   {
     "id": "mamma-meta-search-for-business-reviews",
-    "name": "Mamma Meta Search for Business Reviews",
-    "description": "Meta-search engine for business reviews yielding results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)",
+    "name": "Mamma Meta-Search",
+    "description": "Use when you have a `name`, `employer-org`, or keyword and want blended results from multiple engines — returns aggregated web hits and `social-profile`/`domain` leads.",
     "url": "https://mamma.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running a query across multiple search back-ends at once to catch results a single engine ranks differently, e.g. for a person, business, or its reviews.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free ad-supported meta-search; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A web search — passive, no contact with the target. Mamma is ad-supported and logs queries like any search engine; use a clean/sock-puppet browser and avoid signing in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running commercial meta-search that aggregates other engines; result quality is only as good as its upstream sources and its ad-heavy layout, so weight results accordingly.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -291971,15 +291928,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "mamma.com",
+      "Mamma metasearch"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "meta-mega-search-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/mamma-meta-search-for-business-reviews.md"
   },
   {
@@ -299349,46 +299310,56 @@
   },
   {
     "id": "radioreference-communications-wiki",
-    "name": "Radioreference Communications Wiki",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on radio communications",
-    "url": "http://wiki.radioreference.com/index.php/Main_Page",
+    "name": "RadioReference Communications Wiki",
+    "description": "Use when you have a `geolocation`/agency and want radio-communications reference data (frequencies, systems, agencies) — returns location/agency comms context, not a person selector.",
+    "url": "https://wiki.radioreference.com/index.php/Main_Page",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up radio systems, frequencies, and agency/trunked-network details for a location to understand and monitor emergency and organisational communications.",
+    "selectorsIn": [
+      "geolocation",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "The wiki is free to read; the associated RadioReference database has some premium/subscriber features, but the wiki reference content is open.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public reference wiki is passive — no target is contacted. (Actually listening to radio traffic is a separate activity governed by local law; this entry is only about the reference data.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large crowdsourced radio-communications wiki (part of RadioReference); community-maintained, so detail quality varies by region but is broadly reliable for hobbyist/monitoring use.",
     "missingPersonsRelevance": "medium",
     "coverage": [
+      "us",
       "global"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "radioreference",
+      "radioreference-station-search"
+    ],
+    "aliases": [
+      "RadioReference wiki",
+      "wiki.radioreference.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "radioreference",
-      "radioreference-station-search"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/radioreference-communications-wiki.md"
   },
   {
@@ -322477,38 +322448,46 @@
   {
     "id": "github-repository-size",
     "name": "GitHub Repository Size",
-    "description": "simple google chrome extension to view Github repo size",
+    "description": "Use when you have a GitHub `social-profile`/repo and want its total size and per-file/folder sizes shown inline — a browsing aid, not a person lookup (no selectors out).",
     "url": "https://chrome.google.com/webstore/detail/github-repository-size/apnjnioapinblneaedefcnopcjepgkci",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Seeing a GitHub repository's total size and each file/folder's size directly on the repo page before cloning or triaging it.",
+    "selectorsIn": [
+      "social-profile"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome/Edge extension; uses the public GitHub API. Anonymous use is rate-limited; adding a token raises limits.",
+    "opsec": "passive",
+    "opsecNote": "The extension calls GitHub's public API for the repo you're viewing — the same data anyone sees. If you add a personal access token to raise rate limits, that token ties the calls to your account; use a throwaway GitHub account's token for sensitive triage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small third-party open-source browser extension; low-risk (read-only repo metadata) but unaffiliated with GitHub — review its permissions before installing.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "GitHub repo size extension"
+    ],
     "tags": [
       "Social Media",
       "Github"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/github-repository-size.md"
   },
   {

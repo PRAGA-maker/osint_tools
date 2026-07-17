@@ -101,7 +101,7 @@ kind: group-index
 - **`nasa-firms`** (low) — Displays a world map overlaid with infra-red data from one or more satellites, some, but not all of which may represent heat from fires and 
 - **`nasa-worldview`** (low) — NASA Worldview is an online tool for visualizing and downloading near real-time satellite imagery and scientific data of Earth's atmosphere,
 - **`neshan-org`** (medium) — OSINT tool: neshan.org.
-- **`nls-uk`** (medium) — OSINT tool: nls.uk.
+- **`nls-uk`** (medium) — Use when you have a `geolocation` or `address` and want to compare it against georeferenced historic maps (UK & worldwide) — returns `geoloc
 - **`oalley`** (medium) — OSINT tool: OALLEY.
 - **`one-network`** (medium) — OSINT tool: one.network.
 - **`ontario-givesendgo-donors`** (medium) — OSINT tool: Ontario GiveSendGo Donors.

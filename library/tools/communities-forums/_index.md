@@ -175,7 +175,6 @@ kind: group-index
 - **`google-com-6`** (medium) — OSINT tool: google.com.
 - **`google-com-9`** (medium) — OSINT tool: google.com.
 - **`google-groups`** (medium) — Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messa
-- **`google-plus-directory`** (medium) — Directory of Google Plus pages
 - **`grasswire`** (medium) — Collaborative real-time news reporting database for fact-checking social media content
 - **`grindr`** (medium) — Use when you have a `username`/`name` and are checking for a Grindr dating-app presence — returns a `social-profile` (photo, bio, coarse pro
 - **`guesttoguest`** (medium) — Website related to social networking in the form of travel and accomodations

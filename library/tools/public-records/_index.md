@@ -656,7 +656,7 @@ kind: group-index
 - **`national-center-for-state-courts-united-states`** (medium) — Legal-related search engine for legal court cases and documents
 - **`national-company-registers`** (medium) — OSINT tool: National Company Registers.
 - **`national-institute-on-drug-abuse`** (medium) — National Institute on Drug Abuse website offering publications with information regarding drug abuse trends and statistics
-- **`nationwide-business-directory-australia`** (medium) — Australian business directory that allows search by business name, keyword, and location
+- **`nationwide-business-directory-australia`** (medium) — Use when you have an `employer-org` or `name` linked to an Australian business and want directory details — returns `employer-org`, `address
 - **`nationwide-county-court-records-by-state-and`** (high) — Use when you have a `name` and want the right free county/state court-records portal to search — returns links to official court, criminal, 
 - **`nb-courts-public-self-serve-website`** (high) — Use when you have a `name` and a New Brunswick (Canada) connection and want to find court cases involving that person — returns case partici
 - **`nc-state-employee-overtime-2018-search-and-report`** (medium) — OSINT tool: NC State Employee Overtime 2018 Search and Report.
@@ -876,7 +876,7 @@ kind: group-index
 - **`search-datasets`** (low) — OSINT tool: Search Datasets.
 - **`search-for-a-federal-corporation`** (low) — OSINT tool: Search for a Federal Corporation.
 - **`search-for-company-documents`** (low) — OSINT tool: Search for Company Documents.
-- **`search-for-open-information-documents`** (medium) — OSINT tool: Search for Open Information Documents.
+- **`search-for-open-information-documents`** (medium) — Use when you have a `name` or `employer-org` tied to the BC (Canada) government and want disclosed records — returns documents, `associate` 
 - **`search-for-us-voters-with-custom-search-engines-osint-boolean-strings`** (high) — Use when you have a US `name` and want registered-voter public records — a Google Custom Search Engine technique over voterrecords.com that 
 - **`search-polk-county-ordinance`** (low) — Use when you have an address, subdivision, or property description in Polk County, FL and want the local ordinance record touching it — retu
 - **`search-systems-criminal-records`** (high) — Use when you have a `name` and need to find the right public-records database for a jurisdiction — a directory routing you to court, crimina
