@@ -39,7 +39,7 @@ kind: group-index
 - **`autostitch`** (low) — Autostitch is a free tool for seamlessly combining multiple photos into a single panoramic image, making it ideal for creating wide-angle ph
 - **`background-removal-tool`** (low) — Use when you need to cut the subject out of a busy photo so the face/clothing is isolated before reverse-image search or comparison.
 - **`baidu-image-search-2`** (high) — Use when you have an image or face and want matches indexed by China's dominant search engine — returns visually similar images and the Chin
-- **`baidu-image-search`** (medium) — Baidu reverse image search, useful for Chinese-language and China-hosted content. Referenced in sinwindie's Image Analysis bookmarklet tool.
+- **`baidu-image-search`** (high) — Use when you have an `image` or `face` and want reverse-image matches from Chinese-language and China-hosted sources — returns visually simi
 - **`bambuser`** (high) — Use to recognise Bambuser-powered live-shopping video embedded on a retailer's site — a B2B video-commerce platform with no public people-se
 - **`bandcamp`** (high) — Use when you have a `username`/`name` of a musician or music fan and want their public profile — returns social-profile, image, and often a 
 - **`bbc-co-uk`** (low) — Use as background reading on how reverse image search works — this is a BBC Bitesize educational article, not an operational OSINT tool.
@@ -197,7 +197,7 @@ kind: group-index
 - **`kairos-com`** (high) — Use when you have two face images and want to verify whether they are the same person — returns a similarity/match score.
 - **`kartavision`** (high) — Use when you have a street-level or scenic image and want to find visually similar locations to help geolocate where it was taken — returns 
 - **`keep-save-it`** (medium) — OSINT tool: Keep Save It.
-- **`keyhole-engelsjk`** (medium) — Experimental visualization tool for 1.3 million+ declassified spy satellite imagery (1960 to 1984 years).
+- **`keyhole-engelsjk`** (low) — Use when you have a `geolocation` and want to see how it looked in declassified 1960–1984 US spy-satellite imagery — returns historical KH/C
 - **`kongregate`** (low) — Use when you have a gamer `username` and want to check for a matching public profile on the Kongregate browser-games community — returns a s
 - **`kosmos-2`** (high) — Use when you have an `image` and want an AI description that names objects, text and landmarks in it (with bounding boxes) — returns `physic
 - **`labnol-org`** (high) — Use when you have an image (especially on mobile) and want to push it into Google/Bing/Yandex reverse image search in one place — returns li

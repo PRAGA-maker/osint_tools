@@ -561,7 +561,7 @@ kind: group-index
 - **`nrc-research-press`** (low) — OSINT tool: NRC Research Press.
 - **`numbeo`** (low) — Use when you have a `geolocation` (city/country) and want crowd-sourced living-conditions data for it — returns cost-of-living, crime, healt
 - **`oa-mg`** (low) — OSINT tool: OA.mg.
-- **`occrp-org`** (medium) — Organized Crime and Corruption Reporting Project compiled public data sources, search by Continent, Country and data type
+- **`occrp-org`** (medium) — Use when you have a subject tied to a country/region and need to find which public-record databases exist there — returns OCCRP's curated di
 - **`oceanhero`** (medium) — Charitable search engine that supports our oceans.
 - **`ocg`** (low) — Use when you want a general web `name`/keyword search from an alternate index — returns web results (via a charitable search front-end) with
 - **`octosearch-dootech-com`** (medium) — OSINT tool: Octosearch.dootech.com.

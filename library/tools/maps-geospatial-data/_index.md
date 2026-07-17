@@ -146,7 +146,7 @@ kind: group-index
 - **`visionofbritain-org-uk`** (medium) — OSINT tool: visionofbritain.org.uk.
 - **`visitedplaces-com`** (medium) — OSINT tool: visitedplaces.com.
 - **`walmart-store-status`** (medium) — OSINT tool: Walmart Store Status.
-- **`waze`** (medium) — OSINT tool: Waze.
+- **`waze`** (low) — Use when you have a `geolocation` and want real-time, crowd-sourced road conditions there — returns live traffic, incidents, and user report
 - **`what3words`** (low) — A proprietary geocode system which identifies any location on the surface of the earth to a resolution of 3 metres. The identifier is a uniq
 - **`whentaken-com`** (low) — Use when you want to practice chronolocation and geolocation — a game that shows a photo and asks you to guess where and when it was taken, 
 - **`wildeye`** (low) — Tracking tool for data on environmental and wildlife crime cases, including court cases and convictions, across the globe.

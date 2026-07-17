@@ -10,7 +10,7 @@ kind: group-index
 - **`data-leaks/`** — 3 skill(s) below.
 - **`other-media/`** — 1 skill(s) below.
 - **`public-datasets/`** — 4 skill(s) below.
-- **`web/`** — 13 skill(s) below.
+- **`web/`** — 12 skill(s) below.
 
 ## Skills here
 - **`alltop`** (low) — OSINT tool: Alltop.

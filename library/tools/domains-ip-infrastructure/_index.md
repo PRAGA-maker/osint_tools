@@ -249,7 +249,7 @@ kind: group-index
 - **`icann-org`** (medium) — OSINT tool: icann.org.
 - **`icann-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`idn-checker`** (low) — IDN Checker detects visually similar versions of a domain.
-- **`iknowwhatyoudownload`** (medium) — Tracks BitTorrent activity by IP; can suggest a device's downloads/location.
+- **`iknowwhatyoudownload`** (medium) — Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with times
 - **`imperva-live-threat-map`** (low) — OSINT tool: Imperva Live Threat Map.
 - **`infobox-russia`** (medium) — Russian service provider for registering websites and domain addresses
 - **`infosniper-net`** (medium) — OSINT tool: infosniper.net.
@@ -426,7 +426,7 @@ kind: group-index
 - **`scan4all`** (low) — 15000+PoCs; 20 kinds of application password crack; 7000+Web fingerprints; 146 protocols and 90000+ rules Port scanning; Fuzzing and many ma
 - **`scrape-api`** (low) — Proxy API for Web Scraping
 - **`scrappy`** (low) — One of the easiest to learn web scrapers I've seen (and quite fast at that). It allows you to extract all URLs, table fields, lists and any 
-- **`search-arin-net`** (medium) — OSINT tool: search.arin.net.
+- **`search-arin-net`** (medium) — Use when you have an `ip-address` or network in the Americas and want its official registration — returns the org, contacts, address, and ne
 - **`search-censys-io`** (medium) — OSINT tool: search.censys.io.
 - **`search-dnslytics-com`** (medium) — OSINT tool: search.dnslytics.com.
 - **`secmas-host-guatemala`** (medium) — Guatemala based service provider for registering websites and domain addresses

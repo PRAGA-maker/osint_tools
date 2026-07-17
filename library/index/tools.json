@@ -19790,46 +19790,6 @@
     "_file": "library/tools/archives-cache/infominder.md"
   },
   {
-    "id": "internet-archive-wayback-machine",
-    "name": "Internet Archive: Wayback Machine",
-    "description": "Historical website analysis and deleted content recovery",
-    "url": "https://web.archive.org/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache",
-      "web"
-    ],
-    "bestFor": "Historical website analysis and deleted content recovery",
-    "input": "URL or domain",
-    "output": "Archived web page snapshots with timestamps",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Queries archived data. Does not contact the target. Searches may be logged by the Internet Archive.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/web/internet-archive-wayback-machine.md"
-  },
-  {
     "id": "internet-archive-wayback-machine-link-ripper",
     "name": "Internet Archive Wayback Machine Link Ripper",
     "description": "Enter a host or URL to retrieve the links to the URL's archived versions at [http://wayback.archive.org](http://wayback.archive.org). A text file is produced which lists the archive URLs.",
@@ -30454,37 +30414,53 @@
   {
     "id": "google-groups",
     "name": "Google Groups",
-    "description": "OSINT tool: Google Groups.",
+    "description": "Use when you have a `name`, `email`, or `username` and want forum/mailing-list posts a subject made — returns Usenet and Google Groups messages, often exposing an email, real name, and decades-old activity.",
     "url": "https://groups.google.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching decades of Usenet and mailing-list archives for a person's posts and email.",
+    "selectorsIn": [
+      "name",
+      "email",
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and read public groups. A Google account is only needed to post/join, not to read archives.",
+    "opsec": "passive",
+    "opsecNote": "Reading and searching is passive; the subject isn't notified. Do NOT join a group or message anyone from an attributable account. Google logs your searches — use a sock-puppet/logged-out session for sensitive work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Google; the Usenet archive it hosts is a genuine historical record (formerly Deja News), though display names/emails in old posts are self-asserted.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Google Groups",
+      "Usenet archive",
+      "groups.google.com"
+    ],
     "tags": [
       "forums-and-discussion-boards-search"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/google-groups.md"
   },
   {
@@ -55130,44 +55106,50 @@
   {
     "id": "exifpurge",
     "name": "ExifPurge",
-    "description": "EXIF Purge is a small portable application to remove EXIF metadata from multiple images at once. With the click of a button you can remove the camera, location and other technical information from a batch of photos which is embedded by the ",
+    "description": "Use when you need to strip EXIF metadata from your OWN images before publishing — a batch tool that removes camera, GPS, and technical data so you don't leak your location or gear.",
     "url": "http://www.exifpurge.com/",
     "category": "documents-metadata",
     "path": [
       "documents-metadata"
     ],
-    "bestFor": "",
+    "bestFor": "Batch-removing EXIF (including GPS) from images before you share or publish them.",
     "selectorsIn": [
       "image",
       "metadata-exif"
     ],
     "selectorsOut": [
-      "metadata-exif",
-      "geolocation"
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, small portable application (Windows). No install/registration required — download and run.",
+    "opsec": "passive",
+    "opsecNote": "This is a defensive/OpSec tool for the INVESTIGATOR, not an extraction tool. It runs entirely locally — images are not uploaded — so it's safe for sanitizing sensitive photos. Run it on copies before you post anything that could carry your GPS/device fingerprint.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestInteractionPattern": "desktop-app",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A small third-party utility; because it processes files locally you can verify the result with any EXIF viewer, but audit/download from the official site and scan the binary.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Exif Purge",
+      "exifpurge.com"
+    ],
     "tags": [
       "bellingcat-toolkit",
       "metadata"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/exifpurge.md"
   },
   {
@@ -77079,38 +77061,41 @@
   {
     "id": "iknowwhatyoudownload",
     "name": "IKnowWhatYouDownload",
-    "description": "Tracks BitTorrent activity by IP; can suggest a device's downloads/location.",
-    "url": "http://iknowwhatyoudownload.com/",
+    "description": "Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with timestamps and a coarse geolocation for that IP.",
+    "url": "https://iknowwhatyoudownload.com/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "Show torrent download activity associated with an IP address.",
+    "bestFor": "Checking what torrents an IP address has been observed downloading, with dates and rough location.",
     "selectorsIn": [
       "ip-address"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free web lookup shows the sample of activity logged for an IP. Bulk/API and full historical access are sold as a paid product, but the basic per-IP page is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a third-party database of collected torrent-swarm data; the IP's owner is not contacted or notified. Passive. Use a VPN for your own hygiene. Remember this exposes potentially sensitive personal activity — handle findings responsibly and lawfully.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A specialist service that harvests public BitTorrent DHT/tracker announcements; the data is real observed swarm activity but is sampled, attributed by IP (shared/dynamic IPs cause error), and unverifiable by you.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
-      "Torrents"
+      "I Know What You Download",
+      "iknowwhatyoudownload.com"
     ],
     "tags": [
       "ip",
@@ -77118,8 +77103,8 @@
       "activity"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/iknowwhatyoudownload.md"
   },
   {
@@ -87932,49 +87917,56 @@
   {
     "id": "search-arin-net",
     "name": "search.arin.net",
-    "description": "OSINT tool: search.arin.net.",
+    "description": "Use when you have an `ip-address` or network in the Americas and want its official registration — returns the org, contacts, address, and netblock range from ARIN's authoritative RDAP/Whois.",
     "url": "https://search.arin.net/rdap/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative Whois/RDAP lookup of who an IP or network block in the Americas is registered to.",
     "selectorsIn": [
-      "domain"
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "employer-org",
+      "address",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public registry service run by ARIN; no account needed for lookups.",
+    "opsec": "passive",
+    "opsecNote": "You query ARIN's registry database, not the IP's host, so the target is not contacted. ARIN logs queries and rate-limits heavy use. Fully passive for the subject.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "ARIN is the official Regional Internet Registry for North America; its records are the authoritative registration source for IPs/ASNs in its region.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us",
+      "ca"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "arin",
+      "whois-arin"
+    ],
+    "aliases": [
+      "ARIN Whois",
+      "ARIN RDAP",
+      "search.arin.net"
+    ],
     "tags": [
       "domainsandips",
       "Domains & IPs"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "account-arin-net",
-      "arin",
-      "arin-net",
-      "whois-arin",
-      "whois-arin-online"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/search-arin-net.md"
   },
   {
@@ -134471,30 +134463,34 @@
   {
     "id": "baidu-image-search",
     "name": "Baidu Image Search",
-    "description": "Baidu reverse image search, useful for Chinese-language and China-hosted content. Referenced in sinwindie's Image Analysis bookmarklet tool.",
+    "description": "Use when you have an `image` or `face` and want reverse-image matches from Chinese-language and China-hosted sources — returns visually similar images and pages Western engines miss.",
     "url": "https://graph.baidu.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Reverse image lookups for Chinese sources and content not indexed by Western engines",
+    "bestFor": "Reverse image search across Chinese web content not indexed by Google/Bing/Yandex.",
     "selectorsIn": [
-      "image"
+      "image",
+      "face"
     ],
     "selectorsOut": [
       "image",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free reverse-image search; no account needed to upload and search.",
+    "opsec": "passive",
+    "opsecNote": "You upload the query image to Baidu (a Chinese company), which stores and logs it and your IP; the person in the image is not contacted. Use a sock-puppet session and VPN, and never upload an image whose exposure to a third party would harm the investigation or subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Baidu is China's dominant search engine; its reverse-image results are genuine index matches, strong specifically for China-hosted and Chinese-language content.",
+    "missingPersonsRelevance": "high",
     "coverage": [
       "china",
       "global"
@@ -134503,26 +134499,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "baidu",
+      "baidu-maps",
+      "baidu-translate"
+    ],
+    "aliases": [
+      "Baidu reverse image",
+      "graph.baidu.com"
+    ],
     "tags": [
       "reverse-image",
       "china",
       "bookmarklet"
     ],
     "source": "sinwindie-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "baidu",
-      "baidu-china",
-      "baidu-com",
-      "baidu-image-search-2",
-      "baidu-images",
-      "baidu-maps",
-      "baidu-translate",
-      "baiduknows-search-engine-china",
-      "baike-baidu-chinese-language"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/baidu-image-search.md"
   },
   {
@@ -145148,40 +145141,50 @@
   {
     "id": "keyhole-engelsjk",
     "name": "keyhole engelsjk",
-    "description": "Experimental visualization tool for 1.3 million+ declassified spy satellite imagery (1960 to 1984 years).",
+    "description": "Use when you have a `geolocation` and want to see how it looked in declassified 1960–1984 US spy-satellite imagery — returns historical KH/CORONA satellite photos for that area.",
     "url": "https://keyhole.engelsjk.com/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing declassified Cold War spy-satellite imagery of a location for historical geospatial context.",
     "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free experimental web visualization over publicly declassified USGS/CORONA imagery; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You browse historical imagery; no target is contacted. Fully passive. Use a VPN only for general hygiene.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A hobby visualization over genuinely declassified US government (KH/CORONA) imagery; the imagery is authoritative, the viewer is an experimental third-party front-end.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "keyhole",
+      "CORONA satellite viewer",
+      "keyhole.engelsjk.com"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
       "Satellite/aerial imagery"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/keyhole-engelsjk.md"
   },
   {
@@ -163111,38 +163114,51 @@
   {
     "id": "waze",
     "name": "Waze",
-    "description": "OSINT tool: Waze.",
+    "description": "Use when you have a `geolocation` and want real-time, crowd-sourced road conditions there — returns live traffic, incidents, and user reports useful for confirming a scene or planning ground movement.",
     "url": "https://www.waze.com/live-map",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Reading live crowd-sourced traffic, incidents, and hazards at a location.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free live map in the browser; the app is free too. No account needed to view the public live map.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Viewing the public live map is passive — no target is contacted. Note that if you use the Waze app while navigating, you broadcast your own presence/reports; use the browser live-map for read-only OSINT, not the app under your real identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Crowd-sourced by drivers (owned by Google); reports are real user submissions, so they are timely but unverified and can be stale or wrong.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "waze-livemap"
     ],
+    "aliases": [
+      "Waze Live Map",
+      "waze.com/live-map"
+    ],
+    "tags": [
+      "maps",
+      "traffic"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/waze.md"
   },
   {
@@ -295386,25 +295402,31 @@
   },
   {
     "id": "occrp-org",
-    "name": "OCCRP.org",
-    "description": "Organized Crime and Corruption Reporting Project compiled public data sources, search by Continent, Country and data type",
+    "name": "OCCRP.org (ID Databases Directory)",
+    "description": "Use when you have a subject tied to a country/region and need to find which public-record databases exist there — returns OCCRP's curated directory of registries and data sources by continent, country, and data type.",
     "url": "https://id.occrp.org/databases/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Discovering which official/public databases to search for a given country and record type.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, publicly browsable directory maintained by OCCRP's ID research desk; no account needed to browse the listings.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse a directory of data sources; no target is contacted here. The actual lookups happen on the databases it points you to — apply that source's OpSec. Fully passive at the directory stage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Curated by OCCRP, a leading investigative-journalism non-profit; it is a vetted signpost to primary databases rather than a data source itself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -295413,23 +295435,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "occrp-aleph",
+      "data-occrp-org"
+    ],
+    "aliases": [
+      "OCCRP databases",
+      "OCCRP ID research databases",
+      "id.occrp.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search",
-      "academic-scholarly-research-tools"
+      "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "data-occrp-org",
-      "occrp-aleph",
-      "organized-crime-and-corruption-reporting-project",
-      "the-pegasus-project-occrp",
-      "visual-investigative-scenarios"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/occrp-org.md"
   },
   {

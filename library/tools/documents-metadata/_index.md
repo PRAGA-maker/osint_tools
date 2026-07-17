@@ -99,7 +99,7 @@ kind: group-index
 - **`exif-viewer-addons-mozilla-org`** (low) — OSINT tool: exif viewer (addons.mozilla.org).
 - **`exif-viewer-classic-chrome-google-com`** (low) — OSINT tool: exif viewer classic (chrome.google.com).
 - **`exif-viewer-pro-chrome-google-com`** (low) — OSINT tool: exif viewer pro (chrome.google.com).
-- **`exifpurge`** (medium) — EXIF Purge is a small portable application to remove EXIF metadata from multiple images at once. With the click of a button you can remove t
+- **`exifpurge`** (low) — Use when you need to strip EXIF metadata from your OWN images before publishing — a batch tool that removes camera, GPS, and technical data 
 - **`exiftool-lucasgelfond-online`** (low) — OSINT tool: exiftool.lucasgelfond.online.
 - **`expatica`** (low) — Searchable guides to moving, working, and living abroad
 - **`eyedex`** (low) — OSINT tool: eyedex.

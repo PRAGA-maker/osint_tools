@@ -12,7 +12,6 @@ kind: group-index
 - **`cached-pages`** (medium) — Finding recent cached copies of pages that changed or disappeared
 - **`cached-view`** (medium) — Quick verification of whether a removed page still exists in cache
 - **`common-crawl`** (medium) — Large-scale historical web content mining and corpus analysis
-- **`internet-archive-wayback-machine`** (medium) — Historical website analysis and deleted content recovery
 - **`pdf-my-url`** (medium) — Generating quick PDF evidence captures of web pages
 - **`screenshots-com`** (medium) — Visual timeline checks of website appearance changes
 - **`textfiles-com`** (low) — Use when a `name`, `username` or `email` may appear in 1980s–90s BBS/hacker text-file culture — returns document-id and username leads from 
