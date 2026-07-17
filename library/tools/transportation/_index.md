@@ -197,7 +197,6 @@ kind: group-index
 - **`the-burnsy-vehicle-osint`** (medium) — OSINT tool: The Burnsy Vehicle OSINT.
 - **`tokyo-mou`** (low) — Ship inspection/history database (PSC Database)
 - **`track-trace`** (medium) — Package tracking and supply-chain movement checks
-- **`trade-car-checks-and-vehicle-valuation-services`** (medium) — OSINT tool: Trade Car Checks & Vehicle Valuation Services.
 - **`transit-visualisation`** (low) — ch.sbb.netzkarte,ch.sbb.netzkarte.dark\&lang=en\&layers=strassennamen,haltekanten,haltestellen,pois,p%C3%A4rke,geops.travic.live\&x=810000\&
 - **`transtats-bts-gov`** (low) — flight schedules and data on the actual departure/arrival times of flights in the U.S. for more than 30 years (!))
 - **`uk-govt-vessel-lists`** (medium) — Maritime-related website that offers a search of a UK database of naval vessel types

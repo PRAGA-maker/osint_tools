@@ -85,7 +85,7 @@ kind: group-index
 - **`locust-hub`** (low) — A repository for desert locust data with maps and other resources for tracking movements, early detection and planning locust control interv
 - **`lonny-com`** (medium) — OSINT tool: lonny.com.
 - **`manhole-co-il`** (medium) — OSINT tool: manhole.co.il.
-- **`map-of-syrian-civil-war`** (medium) — OSINT tool: Map of Syrian Civil War.
+- **`map-of-syrian-civil-war`** (medium) — Use when you have a Syrian `geolocation` and date and want to know what conflict events (strikes, clashes, control changes) were reported th
 - **`mapa-sk`** (low) — Mapping service for Slovakia
 - **`mapillary-2`** (high) — Use when you have a `geolocation`/`address` and want crowdsourced street-level imagery — especially where Google Street View has no coverage
 - **`maploco-com`** (medium) — OSINT tool: maploco.com.

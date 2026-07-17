@@ -20,7 +20,7 @@ kind: group-index
 - **`geolocation/`** — 359 skill(s) below.
 - **`image-video-face/`** — 489 skill(s) below.
 - **`maps-geospatial-data/`** — 147 skill(s) below.
-- **`messaging/`** — 208 skill(s) below.
+- **`messaging/`** — 207 skill(s) below.
 - **`opsec-investigator-tooling/`** — 567 skill(s) below.
 - **`people-search/`** — 283 skill(s) below.
 - **`phone/`** — 142 skill(s) below.
@@ -29,7 +29,7 @@ kind: group-index
 - **`social-networks/`** — 927 skill(s) below.
 - **`training-ctf/`** — 12 skill(s) below.
 - **`translation-language/`** — 103 skill(s) below.
-- **`transportation/`** — 235 skill(s) below.
+- **`transportation/`** — 234 skill(s) below.
 - **`username/`** — 106 skill(s) below.
 
 

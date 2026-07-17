@@ -615,7 +615,7 @@ kind: group-index
 - **`overload-search`** (low) — Advanced query builder in #Google with the possibilities: change the language and country of your search, disable safe search,disable person
 - **`oxford-journals`** (low) — OSINT tool: Oxford Journals.
 - **`packettotal`** (low) — .pcap files (Packet Capture of network data) search engine and analyze tool. Search by URL, IP, file hash, network indicator, view timeline 
-- **`palined-search`** (medium) — Opend directory search engine.
+- **`palined-search`** (medium) — Use when you have a filename, `name`, or keyword and want to find open web/FTP directories exposing files (documents, media, backups) — retu
 - **`paperball-news`** (low) — OSINT tool: Paperball.news.
 - **`paperboy`** (low) — OSINT tool: Paperboy.
 - **`parseek-iran`** (low) — OSINT tool: Parseek (Iran).

@@ -785,7 +785,7 @@ kind: group-index
 - **`pew-research-center`** (low) — OSINT tool: Pew Research Center.
 - **`pharmacyregulation-org`** (high) — Use when you have a `name` or registration number and want to verify a GB pharmacist/pharmacy technician — returns registration status, numb
 - **`pibuzz`** (medium) — Use when you have a `name` (or `employer-org`) and want to find where a US public-sector subject works and what they earn — returns a direct
-- **`plain-view-project`** (medium) — OSINT tool: Plain View Project.
+- **`plain-view-project`** (medium) — Use when you have the `name` of a current or former police officer in one of the covered US departments and want their public Facebook posts
 - **`planning-org-uk`** (medium) — Use when you have a UK `address`/postcode and want planning-application activity there — returns `address` (application sites), `associate` 
 - **`planningalerts-org-au`** (high) — Use when you have an Australian `address`/area and want local development/planning applications — returns addresses, applicant details, and 
 - **`planningportal-nsw-gov-au`** (high) — Use when you have an `address` in New South Wales and want the property's planning, zoning, and land context — returns geolocation, lot/parc
@@ -835,7 +835,7 @@ kind: group-index
 - **`rechercher-par-r-pondant`** (low) — OSINT tool: Rechercher par répondant.
 - **`refdesk`** (low) — Use when you have a starting `name`/`employer-org` and want a curated jump-off directory of people-finder, public-records and reference site
 - **`reference-com`** (medium) — Reference search engine and directory
-- **`refseek`** (medium) — Research directory of references, including relevant webpages and documents
+- **`refseek`** (medium) — Use when you have a `name` or `employer-org` and want academic/reference sources (papers, books, documents, institutional pages) that genera
 - **`regional-municipality-of-durham`** (medium) — OSINT tool: Regional Municipality of Durham.
 - **`registrant-directory`** (medium) — OSINT tool: Registrant directory.
 - **`registrant-lookup`** (low) — OSINT tool: Registrant Lookup.

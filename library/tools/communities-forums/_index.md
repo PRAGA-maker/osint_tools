@@ -14,7 +14,7 @@ kind: group-index
 - **`reddit-communities/`** — 3 skill(s) below.
 
 ## Skills here
-- **`4chan-search`** (medium) — OSINT tool: 4chan Search.
+- **`4chan-search`** (medium) — Use when you have a `username`, phrase, or image tied to 4chan and want to search across boards and archives for posts — returns matching th
 - **`4chan`** (medium) — Image based bulletin board where users can post comments and share images anonymously
 - **`51-com-china`** (medium) — Web game platform based in China
 - **`a-small-world`** (medium) — Private luxury travel community

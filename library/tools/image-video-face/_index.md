@@ -59,7 +59,7 @@ kind: group-index
 - **`capcut-com`** (low) — Use when you need to trim, stabilize, upscale, or extract frames from video/CCTV footage — an editor, not a search tool.
 - **`captin-fact`** (medium) — OSINT tool: Captin Fact.
 - **`carrot2`** (medium) — Use when a name or keyword returns sprawling web results and you want them auto-clustered into themes to spot relevant sub-topics fast.
-- **`check`** (medium) — OSINT tool: Check.
+- **`check`** (medium) — Use when you (as a newsroom/CSO team) have a claim, image, or video to verify collaboratively at scale — returns a shared workspace with tip
 - **`citizen-evidence-lab-toolbox`** (high) — Use when you have an `image`/video and want Amnesty International's curated list of verification tools (metadata viewers, reverse-image sear
 - **`citizen-evidence-lab`** (high) — Use when you have a video or `image` (often eyewitness/social footage) and want to verify its origin, upload time, and authenticity — return
 - **`clarify`** (low) — Use only as a legacy reference — clarify.io was a media/audio-indexing API and appears discontinued.
