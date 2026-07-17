@@ -122100,43 +122100,57 @@
   },
   {
     "id": "gmaps-extractor",
-    "name": "Gmaps Extractor",
-    "description": "Extract data from placemarks",
-    "url": "https://chrome.google.com/webstore/detail/g-map-extractor/eehgalnhbmkfalhdjkeenggnniebdpgi/related",
+    "name": "G-Map Extractor",
+    "description": "Use when you have a place/area and business type on Google Maps and want the listings in bulk — returns extracted business names, addresses, and phones from map placemarks.",
+    "url": "https://chrome.google.com/webstore/detail/g-map-extractor/eehgalnhbmkfalhdjkeenggnniebdpgi",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Bulk-extracting business listing data (name, address, phone) from Google Maps search results.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
-      "geolocation"
+      "employer-org",
+      "address",
+      "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Browser extension with a free tier (limited extraction volume); higher volume typically requires a paid plan. Free tier suffices for small, targeted pulls.",
+    "opsec": "passive",
+    "opsecNote": "It scrapes the Google Maps results your browser already loads, so no target is contacted directly. Google sees your session/IP as normal Maps browsing; heavy scraping risks rate-limiting or a Google block. Use a sock-puppet browser profile.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A third-party Google Maps scraping extension; data is only as current as Google's listings, and extension availability/behaviour can change without notice.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-maps",
+      "instant-data-scraper"
+    ],
+    "aliases": [
+      "G-Map Extractor",
+      "Google Maps extractor"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Tools"
+      "maps",
+      "geolocation",
+      "scraping",
+      "browser-extension"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/gmaps-extractor.md"
   },
   {
@@ -127594,43 +127608,55 @@
   },
   {
     "id": "osmbuildings-org",
-    "name": "Osmbuildings.org",
-    "description": "world map showing notable buildings. For each object you can find out the height, type, and purpose.",
+    "name": "OSM Buildings",
+    "description": "Use when you're verifying a `geolocation` from a photo and need building shapes/heights — returns a 3D map of buildings (footprint, height, type) to match against a skyline or structure in an image.",
     "url": "https://osmbuildings.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "3D visualization of building footprints and heights to corroborate a location from a photo's structures/skyline.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The public 3D map viewer is free to browse; OSM Buildings also offers commercial data/API products (ONEGEO), but visual verification needs no account.",
+    "opsec": "passive",
+    "opsecNote": "Browsing a public 3D map built from OpenStreetMap data contacts no subject and reveals nothing about your target. Standard clean-session hygiene applies to the site itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Built on crowdsourced OpenStreetMap building data; footprints/heights are community-contributed, so completeness and height accuracy vary by city.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-earth",
+      "openstreetmap",
+      "mapillary"
+    ],
+    "aliases": [
+      "osmbuildings.org",
+      "OSM Buildings"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Urban and industrial infrastructure"
+      "geolocation",
+      "3d-buildings",
+      "openstreetmap"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/osmbuildings-org.md"
   },
   {
@@ -227782,42 +227808,6 @@
     "_file": "library/tools/public-records/croatia.md"
   },
   {
-    "id": "cronodump",
-    "name": "Cronodump",
-    "description": "When searching for information about citizens of Ukraine, Russia and other CIS countries, often have to deal with leaked databases for the Cronos program (used in government organizations). This simple utility generates Cronos files in CSV.",
-    "url": "https://github.com/alephdata/cronodump",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Databases and data analyzes"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/cronodump.md"
-  },
-  {
     "id": "crunchbase",
     "name": "Crunchbase",
     "description": "Startup funding research, investor mapping, and executive tracking",
@@ -276841,42 +276831,61 @@
   },
   {
     "id": "citizen-audit",
-    "name": "Citizen Audit",
-    "description": "Search utility for Form 990 financial disclosure documents for nonprofit organizations in the US",
-    "url": "http://www.citizenaudit.org/",
+    "name": "CitizenAudit",
+    "description": "Use when you have a US nonprofit `employer-org` or a `name` and want to search Form 990 filings — returns officers, salaries, grants, and connections buried in nonprofit tax documents.",
+    "url": "https://www.citizenaudit.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Full-text search of US nonprofit Form 990 tax filings to surface people, pay, and grant relationships.",
+    "selectorsIn": [
+      "employer-org",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Limited free searching/preview; full-text search, document access, and exports require a paid subscription. Basic lookups can be done free.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching filed public tax documents is read-only and alerts no one. CitizenAudit sees your account/IP if you register. The data is public IRS filings, but it names living individuals (officers, top earners) — handle responsibly.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Indexes authoritative IRS Form 990 filings; the underlying documents are official public records, though OCR/extraction can occasionally misread figures.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "propublica-nonprofit-explorer",
+      "guidestar-candid",
+      "opencorporates"
+    ],
+    "aliases": [
+      "citizenaudit.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "nonprofit",
+      "form-990"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/citizen-audit.md"
   },
   {
@@ -328915,40 +328924,6 @@
     "_file": "library/tools/social-networks/kworb.md"
   },
   {
-    "id": "libredd-it",
-    "name": "Libredd.it",
-    "description": "OSINT tool: Libredd.it.",
-    "url": "https://libredd.it/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/libredd-it.md"
-  },
-  {
     "id": "line-play",
     "name": "LINE Play",
     "description": "Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — returns social-profile and image (avatar) leads.",
@@ -331780,38 +331755,55 @@
   {
     "id": "o365chk",
     "name": "o365chk",
-    "description": "simple #Python script to check if there is an #Office365 instance linked to a particular domain and gathering information about this instance.",
+    "description": "Use when you have a `domain` and want to know if it uses Microsoft 365 — returns the tenant's federation/auth details, associated domains, and validity of specific email addresses.",
     "url": "https://github.com/nixintel/o365chk",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking whether a domain runs Microsoft 365 and enumerating its tenant details and sibling domains.",
+    "selectorsIn": [
+      "domain",
+      "email"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python script. Queries Microsoft's public auth endpoints; no account or key.",
+    "opsec": "active",
+    "opsecNote": "Queries Microsoft's login/autodiscover endpoints about the target domain/tenant. These are unauthenticated public endpoints (not a login attempt), but you are touching Microsoft infrastructure regarding the target — run from a clean IP. Email-validity checks (GetCredentialType) query whether specific addresses exist; keep volume low to avoid tripping tenant defenses.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Written by nixintel, a respected OSINT practitioner; it wraps Microsoft's own public tenant endpoints, so results are as reliable as those endpoints.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "account-live-com",
+      "o365-attack-toolkit"
+    ],
+    "aliases": [
+      "nixintel/o365chk"
+    ],
     "tags": [
-      "Social Media",
-      "Office365"
+      "office365",
+      "microsoft",
+      "tenant-enumeration",
+      "python"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/o365chk.md"
   },
   {

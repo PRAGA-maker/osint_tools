@@ -237,7 +237,6 @@ kind: group-index
 - **`cro-ie-2`** (high) — Use when you have an `employer-org` or director `name` in Ireland and want company registration, officers, and addresses — returns employer-
 - **`cro-ie`** (high) — Use when you have a `name` or company (`employer-org`) in Ireland and want registration, status and directors — returns employer-org, name, 
 - **`croatia`** (medium) — Use when you have a Croatian `employer-org` (company) and want its beneficial owners — returns the natural-person `name`s who ultimately own
-- **`cronodump`** (medium) — When searching for information about citizens of Ukraine, Russia and other CIS countries, often have to deal with leaked databases for the C
 - **`cso`** (high) — Use when you have a `name` and want to check British Columbia (Canada) court records for that party — returns confirmed name, case/file numb
 - **`curious-fox-united-kingdom`** (high) — Use when you have a `name`/surname tied to a UK or Irish village and want to reach people researching that family/place — returns village-li
 - **`cyndi-s-list`** (high) — Use when you have a `name` and a research locale and want to find the right genealogy database or record collection to search next — returns

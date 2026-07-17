@@ -120,7 +120,7 @@ kind: group-index
 - **`global-terriorism-database`** (medium) — Info about more than 200,000 terrorist incidents from 1970 to 2020 (worldwide): - dozens of advanced search options; - statistical data for 
 - **`global-wetlands-map`** (medium) — Interactive map of open waters, mangroves, swamps, fens, riverines, floodswamps, marshs, wet meadows and floodplains (unfortunately, there a
 - **`globalfishingmap`** (medium) — click on a point on the map and get the data on the current fishing effort at that location.
-- **`gmaps-extractor`** (medium) — Extract data from placemarks
+- **`gmaps-extractor`** (low) — Use when you have a place/area and business type on Google Maps and want the listings in bulk — returns extracted business names, addresses,
 - **`google-earth-overlays`** (medium) — Use when you want to layer external map grids, charts, or KML/KMZ data over Google Earth imagery for cross-referencing a location.
 - **`google-earth-pro`** (high) — Use when you need a deep historical-imagery timeline, measurement, and high-quality exports for a location — the desktop power version of Go
 - **`google-earth`** (high) — Use when you have a location and want 3D terrain, global high-res imagery, and measurement to study a site or last-known area.
@@ -230,7 +230,7 @@ kind: group-index
 - **`osm-finder`** (medium) — A tool for automate work with Overpass Turbo. Upload a photo, mark a line on the map roads, railroads, power lines and get a ready-made quer
 - **`osm-smart-menu`** (medium) — Google Chrome extension to switch between dozens of different types of online maps (based on #OpenStreetMap and NOT only)
 - **`osmaps-radius`** (medium) — drawing circles with a certain radius on the map
-- **`osmbuildings-org`** (medium) — world map showing notable buildings. For each object you can find out the height, type, and purpose.
+- **`osmbuildings-org`** (low) — Use when you're verifying a `geolocation` from a photo and need building shapes/heights — returns a 3D map of buildings (footprint, height, 
 - **`outage-map`** (low) — OSINT tool: Outage map.
 - **`overpass-api`** (medium) — Use when you have a `geolocation` and want to query OpenStreetMap features or see map edits over a date range — returns matching OSM objects
 - **`overpass-turbo`** (high) — Use when you need to find every place matching specific features (e.g., all schools/churches/diners with a feature) within an area — query O

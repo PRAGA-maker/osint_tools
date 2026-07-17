@@ -351,7 +351,6 @@ kind: group-index
 - **`kribrum`** (high) — Use when you have a `name` or `username` and want to monitor and analyze mentions across Russian-language social media, forums, and Telegram
 - **`kuaishou-com`** (high) — Use when you have a username or name and want to find a subject's short-video presence on China's Kuaishou/Kwai — returns profiles, videos, 
 - **`kworb`** (medium) — A lot of different statistics on views and listens collected from #YouTube, #iTunes, #Spotify. Ratings by country, year, music type, and mor
-- **`libredd-it`** (medium) — OSINT tool: Libredd.it.
 - **`line-play`** (high) — Use when you have a `username` or `name` and want to check for a presence on LINE Play (an avatar-based social app popular in Asia) — return
 - **`linkdtime`** (medium) — Build a clean timeline of any LinkedIn activity from a single URL or a whole list of links.
 - **`linkedin-datahub`** (medium) — linkedIn's generalized metadata search & discovery tool
@@ -406,7 +405,7 @@ kind: group-index
 - **`nqntnqnqmb`** (high) — Use when you have a `name` or `employer-org` and want to enumerate LinkedIn profiles, company employees, and their contact details programma
 - **`ny-dolls-org`** (medium) — OSINT tool: NY Dolls.org.
 - **`nzbfriends`** (medium) — usenet search engine
-- **`o365chk`** (medium) — simple #Python script to check if there is an #Office365 instance linked to a particular domain and gathering information about this instanc
+- **`o365chk`** (low) — Use when you have a `domain` and want to know if it uses Microsoft 365 — returns the tenant's federation/auth details, associated domains, a
 - **`oblivion`** (medium) — Use when you have an `email`, `username` or `domain` and want to monitor and aggregate credential-leak exposure across breach sources — retu
 - **`odnoklassniki-russia`** (high) — Use when you have a `name` or `username` of a Russian/CIS subject and want their social profile — returns a `social-profile` with photos, co
 - **`oh365userfinder`** (medium) — A simple tool that shows if an #Office365 account is tied to a specific email address. It's possible to check an entire list of emails from 

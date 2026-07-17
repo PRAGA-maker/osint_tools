@@ -152,7 +152,7 @@ kind: group-index
 - **`chromium-code-search`** (medium) — Code search tool
 - **`cisco-talos-intelligence`** (medium) — OSINT tool: Cisco Talos Intelligence.
 - **`citeseerx`** (medium) — OSINT tool: CiteSeerX.
-- **`citizen-audit`** (medium) — Search utility for Form 990 financial disclosure documents for nonprofit organizations in the US
+- **`citizen-audit`** (medium) — Use when you have a US nonprofit `employer-org` or a `name` and want to search Form 990 filings — returns officers, salaries, grants, and co
 - **`citizendium`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`city-of-brampton`** (medium) — City of Brampton site, includes payment area for traffic tickets and other Provincial Offences Act violations
 - **`citysearch`** (medium) — Website related to social networking in the form of travel and accomodations
