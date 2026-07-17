@@ -191,7 +191,7 @@ kind: group-index
 - **`mapquest-maps-and-directions`** (high) — Use when you have an `address` or `geolocation` (lat/long) and want to map it, get directions/travel times, or reverse-geocode coordinates t
 - **`mapquest`** (high) — Use when you need geocoding, routing, or distance/ETA between locations — returns coordinates, turn-by-turn routes, and travel metrics for a
 - **`maps-app-by-apple`** (high) — Use when you have an `address` or `geolocation` and want to see and verify a location — returns satellite/3-D imagery, street-level "Look Ar
-- **`measuremaponline`** (medium) — tool for drawing rectangles, circles and complex polygons on a world map to measure their area and perimeter
+- **`measuremaponline`** (medium) — Use when you have a `geolocation` and want to measure real-world distances, areas, and perimeters on satellite imagery — returns measurement
 - **`measuretool-googlemaps-v3`** (medium) — Measurement tool for #GoogleMaps.
 - **`meteoblue`** (medium) — Weather stats data
 - **`mgrs-mapper`** (low) — Use when you have an MGRS/military grid reference or need to plot one on a map — returns an interactive map with MGRS grid overlay to transl

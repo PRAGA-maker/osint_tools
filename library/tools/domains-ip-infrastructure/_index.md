@@ -435,7 +435,6 @@ kind: group-index
 - **`seo-spyglass`** (medium) — Free online backlink checker and analysis tool
 - **`seomastering-domain-age-checker`** (medium) — Domain age tool provides the approximate age of a website, as well as information on how the website looked when it first started
 - **`seotools-for-excel`** (low) — OSINT tool: SEOTools for Excel.
-- **`servage-germany`** (medium) — German service provider for registering websites and domain addresses
 - **`server-status-pwn`** (low) — Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.
 - **`shadowscatcher-shodan`** (low) — Go client library for the Shodan.io internet-device search engine.
 - **`shaw-speed-test-canada`** (medium) — Analysis tool that assesses the speed of your Internet connection

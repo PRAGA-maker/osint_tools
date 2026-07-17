@@ -18521,43 +18521,6 @@
     "_file": "library/tools/archives-cache/cachedview.md"
   },
   {
-    "id": "cachedview-b4your-com",
-    "name": "cachedview.b4your.com",
-    "description": "quick search website old versions in different search engines and archives",
-    "url": "https://cachedview.b4your.com/en/",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Archives",
-      "Tools for working with web archives"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/cachedview-b4your-com.md"
-  },
-  {
     "id": "carbon-dating-the-web",
     "name": "Carbon Dating The Web",
     "description": "OSINT tool: Carbon Dating The Web.",
@@ -31502,44 +31465,56 @@
   },
   {
     "id": "justfornurses-co-uk",
-    "name": "justfornurses.co.uk",
-    "description": "OSINT tool: justfornurses.co.uk.",
+    "name": "Just for Nurses",
+    "description": "Use when you have a `username`/`name` tied to UK nursing and want a niche nursing community forum and jobs board — returns forum posts, member `social-profile`s, and career/job leads.",
     "url": "http://www.justfornurses.co.uk/forum/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a UK nursing community forum and jobs board for a subject's posts, handle, and professional context.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to read; a free account is needed to post and for some member areas.",
+    "opsec": "passive",
+    "opsecNote": "Reading public threads is passive. Registering or messaging members is active — use a sock-puppet account and never contact members from a real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A small, long-running UK nursing community site (forum + jobs board + advice); content is user-generated and unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "JFN Nursing Forums",
+      "justfornurses.co.uk"
+    ],
     "tags": [
-      "forums",
-      "Forums"
+      "forum",
+      "nursing",
+      "uk",
+      "community"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/justfornurses-co-uk.md"
   },
   {
@@ -32570,42 +32545,50 @@
   },
   {
     "id": "memeorandum-political-web",
-    "name": "Memeorandum Political Web",
-    "description": "US politics",
+    "name": "Memeorandum",
+    "description": "Use when you want to see which US political stories and commentary are being discussed right now — returns clustered news articles, the blogs/pundits reacting to them, and links to `social-profile`s.",
     "url": "http://www.memeorandum.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Tracking the current US political news conversation and who (bloggers/pundits) is reacting to a story.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading an auto-generated news aggregator is passive and reveals nothing about your target. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-running automated political news aggregator (Techmeme's sister site); it curates links algorithmically — the linked outlets vary in reliability, so judge each source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "memeorandum.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
+      "news-aggregator",
+      "politics",
+      "us"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/memeorandum-political-web.md"
   },
   {
@@ -37308,41 +37291,56 @@
   {
     "id": "skout",
     "name": "Skout",
-    "description": "Website related to social networking in the form of dating, matchmaking and adult relationships",
+    "description": "Use when you have a `username`/`name` or a face and want to check a location-based dating/social app for a matching profile — returns dating `social-profile`s with photos, bio, and approximate location.",
     "url": "http://www.skout.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestFor": "Checking whether a subject has a profile on the Skout location-based dating/social network.",
+    "selectorsIn": [
+      "username",
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to use with an account; premium features (boosts, extra visibility) are paid. Browsing profiles requires signing in.",
+    "opsec": "active",
+    "opsecNote": "Skout is proximity-based and shows who viewed you — creating an account and browsing can expose YOUR puppet profile and approximate location to others, and viewing a target may notify them. Use a dedicated sock-puppet account, spoof/limit location, and never use a real identity.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "mobile-app",
+    "trust": "community",
+    "trustNote": "A real, established dating/social app (The Meet Group); profiles are self-created and unverified, and location is user-set/approximate.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "Skout dating app",
+      "skout.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "dating",
+      "social-network",
+      "location-based"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/skout.md"
   },
   {
@@ -88425,52 +88423,6 @@
     "_file": "library/tools/domains-ip-infrastructure/seotools-for-excel.md"
   },
   {
-    "id": "servage-germany",
-    "name": "Servage (Germany)",
-    "description": "German service provider for registering websites and domain addresses",
-    "url": "http://www.servage.net",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/servage-germany.md"
-  },
-  {
     "id": "server-status-pwn",
     "name": "server-status_PWN",
     "description": "Monitors public Apache /server-status pages to harvest URLs and request data for reconnaissance.",
@@ -125584,42 +125536,52 @@
   {
     "id": "measuremaponline",
     "name": "MeasureMapOnline",
-    "description": "tool for drawing rectangles, circles and complex polygons on a world map to measure their area and perimeter",
+    "description": "Use when you have a `geolocation` and want to measure real-world distances, areas, and perimeters on satellite imagery — returns measurements from drawn points, lines, and polygons.",
     "url": "https://app.measuremaponline.com/dashboard/overview",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Drawing and measuring distances/areas/perimeters over satellite maps to test or confirm a location against known dimensions.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier (account sign-up) covers drawing and measuring on the map; advanced features and higher limits are paid.",
+    "opsec": "passive",
+    "opsecNote": "Measuring on a map is passive and reveals nothing to any subject. It runs on third-party map tiles, so avoid entering sensitive location notes into a shared/saved project; use a puppet account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A commercial web map-measurement app over standard satellite tiles; measurements are as accurate as the underlying imagery georeferencing, which is generally good but not survey-grade.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "aliases": [
+      "Measure Map Online",
+      "measuremaponline.com"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Tools"
+      "map-measurement",
+      "geolocation",
+      "satellite"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/measuremaponline.md"
   },
   {
@@ -136817,41 +136779,50 @@
   {
     "id": "deepfakedetector",
     "name": "DeepfakeDetector",
-    "description": "Rapid deepfake checks with optional self-hosted deployment",
+    "description": "Use when you have an `image` or video and want a quick real/fake classification — returns a binary verdict with a confidence score, runnable locally or via a web UI.",
     "url": "https://github.com/TRahulsingh/DeepfakeDetector",
     "category": "image-video-face",
     "path": [
       "image-video-face",
       "deepfake-detection"
     ],
-    "bestFor": "Rapid deepfake checks with optional self-hosted deployment",
-    "input": "Image/video files or media URLs",
-    "output": "Detection results with confidence scoring",
+    "bestFor": "A fast, self-hostable real/fake classifier for a single image or video.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Public web deployments may log submitted content; local hosting is safer for sensitive media.",
+    "costNote": "MIT-licensed, open-source; free to self-host. You provide the compute (Python/PyTorch).",
+    "opsec": "passive",
+    "opsecNote": "Run locally so the subject's media never leaves your machine — that keeps it passive. Any public web deployment you use may log the upload; prefer the local `classify.py`/self-hosted Gradio app for sensitive media.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "A small but real MIT open-source project (EfficientNet-B0 classifier) by student authors; single-model, so treat it as one opinion and corroborate with a second detector.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "deepsafe",
+      "deepfakebench",
+      "faceforensics-plus-plus"
+    ],
+    "aliases": [
+      "TRahulsingh/DeepfakeDetector"
+    ],
+    "tags": [
+      "deepfake",
+      "media-verification"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/deepfake-detection/deepfakedetector.md"
   },
   {
@@ -202229,38 +202200,53 @@
   },
   {
     "id": "jobs-poland",
-    "name": "Jobs (Poland)",
-    "description": "OSINT tool: Jobs (Poland).",
+    "name": "JOBS.pl (Poland)",
+    "description": "Use when you have an employer `name` or a subject's occupation in Poland and want job-market context — returns employer job postings, locations, and hiring/contact leads.",
     "url": "http://www.jobs.pl",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Polish job listings for an employer's postings or an occupation, as professional/location context on a subject.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search and view job listings; posting jobs or a CV requires a free account.",
+    "opsec": "passive",
+    "opsecNote": "Searching public job listings is passive and reveals nothing to any subject. Creating a candidate/employer account is a disclosure — use a puppet identity if needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "An established Polish job portal (~48k active listings); listings are employer-submitted, so employer/location details are generally reliable while any candidate info is self-supplied.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "pl"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "job-search-resources"
+    "invitationOnly": false,
+    "aliases": [
+      "JOBS.pl",
+      "jobs.pl Poland"
     ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "tags": [
+      "job-board",
+      "poland",
+      "employment"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/people-search/jobs-poland.md"
   },
   {
@@ -272644,42 +272630,56 @@
   },
   {
     "id": "angieslist-north-america",
-    "name": "AngiesList (North America)",
-    "description": "Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses related to homeowners.",
+    "name": "Angi (Angie's List)",
+    "description": "Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `address`/`phone`, and service history.",
     "url": "http://www.angieslist.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Finding reviews and contact/location details for a North American home-services business or tradesperson.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "address",
+      "phone",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search businesses and read reviews (redirects to angi.com); some features and quotes require a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching businesses and reading reviews is passive and reveals nothing to any subject. Requesting a quote or contacting a pro is active — use a puppet identity if you do.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Angi (formerly Angie's List) is an established home-services marketplace; reviews are user-generated and can be filtered/curated, so weigh them as leads, not proof.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Angie's List",
+      "Angi",
+      "angieslist.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "reviews",
+      "business-directory",
+      "home-services"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/angieslist-north-america.md"
   },
   {
@@ -291032,49 +291032,6 @@
     "_file": "library/tools/search-engines/live-traffic-cameras-in-europe.md"
   },
   {
-    "id": "ljseek-livejournal-blog-search",
-    "name": "LjSeek LiveJournal Blog Search",
-    "description": "Website that provides a search engine that searches blogs on LiveJournal",
-    "url": "http://www.ljseek.com",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "live-journal-seek"
-    ],
-    "_file": "library/tools/search-engines/ljseek-livejournal-blog-search.md"
-  },
-  {
     "id": "looksmart-search-engine-united-kingdom",
     "name": "LookSmart Search Engine (United Kingdom)",
     "description": "Surface web search engine covering worldwide results",
@@ -306575,48 +306532,62 @@
   },
   {
     "id": "us-securities-and-exchange-commission",
-    "name": "US Securities & Exchange Commission",
-    "description": "Website for the United States Securities and Exchange Commission",
+    "name": "US Securities & Exchange Commission (EDGAR)",
+    "description": "Use when you have a company or person `name` and want SEC filings naming them — returns officers/insiders, addresses, ownership stakes, and `employer-org` links via EDGAR full-text search.",
     "url": "http://www.sec.gov/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person or company in SEC filings — executives, directors, insiders, and beneficial owners of US public companies.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free US government system (EDGAR); no account, no limits for normal use.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching EDGAR is passive — you query the SEC's public database, nothing reaches any subject. All disclosures are legally public. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official US SEC filing system; filings are legally-mandated disclosures signed under penalty of law — authoritative primary-source records.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "SEC EDGAR",
+      "sec.gov",
+      "EDGAR full-text search"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "corporate-records",
+      "filings",
+      "financial-disclosure"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "relatedTools": [
       "edgar",
+      "edgar-u-s-securities-and-exchange-commission-filings",
       "sec-company-search",
       "sec-gov",
-      "sec-gov-edgar",
-      "edgar-u-s-securities-and-exchange-commission-filings"
+      "sec-gov-edgar"
     ],
     "_file": "library/tools/search-engines/us-securities-and-exchange-commission.md"
   },
@@ -306757,42 +306728,54 @@
   },
   {
     "id": "usps-zip-code-look-up",
-    "name": "USPS Zip Code Look Up",
-    "description": "United States Postal Service zip code look up tool - search by address, company and city",
+    "name": "USPS ZIP Code Lookup",
+    "description": "Use when you have a partial or claimed US `address` and want to verify/standardize it — returns the correct ZIP+4, standardized `address`, city/state, and whether the address is deliverable.",
     "url": "https://tools.usps.com/go/ZipLookupAction!input.action",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Verifying and standardizing a US address, or finding the ZIP for an address/city.",
+    "selectorsIn": [
+      "address"
+    ],
+    "selectorsOut": [
+      "address",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official USPS tool; no account.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "A ZIP/address lookup queries USPS's public tool and discloses nothing to any subject. Passive. It validates address format only — it does not confirm who lives there.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official US Postal Service address-matching system — authoritative for whether a US address is valid, deliverable, and correctly formatted.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "USPS Zip Code Lookup",
+      "tools.usps.com zip lookup"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "address-verification",
+      "usps",
+      "geolocation"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/usps-zip-code-look-up.md"
   },
   {
@@ -322658,29 +322641,33 @@
   {
     "id": "gitxray",
     "name": "gitxray",
-    "description": "Security tool using GitHub REST APIs for reconnaissance, forensics, and pentesting of repos/users.",
+    "description": "Use when you have a GitHub `username` or repo and want deep recon on the account — returns contributor emails, leaked keys, activity-timing patterns, and signs of tampering/fake accounts.",
     "url": "https://github.com/kulkansecurity/gitxray",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Profiling a GitHub user/contributor (emails, activity, identities)",
+    "bestFor": "X-raying a GitHub user or repository via the public API to surface identity leaks, activity patterns, and tampering.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "email",
-      "social-profile"
+      "name",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (AGPL-3.0). Runs unauthenticated, but a free GitHub API token is strongly recommended to avoid rate limits.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "It reads only public GitHub REST API data, so the target user is not notified and nothing is posted. Passive. Use a dedicated (sock-puppet) GitHub token for the rate limit, not your real account, to avoid tying the recon to you.",
     "humanInLoop": false,
-    "humanInLoopReason": [],
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Vendor-maintained (181 stars).",
+    "trustNote": "Actively maintained open-source tool by Kulkan Security (v1.0.20, Jan 2026); it surfaces genuinely public GitHub metadata, so findings are verifiable against GitHub itself.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -322689,15 +322676,19 @@
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "gitxray GitHub OSINT",
+      "kulkansecurity/gitxray"
+    ],
     "tags": [
       "github",
-      "recon",
-      "python"
+      "osint-cli",
+      "forensics"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/gitxray.md"
   },
   {
@@ -366709,25 +366700,33 @@
   },
   {
     "id": "shipspotting-live-ais",
-    "name": "ShipSpotting Live AIS",
-    "description": "Maritime-related website that provides live AIS and satellite ship tracking worldwide",
+    "name": "ShipSpotting",
+    "description": "Use when you have a vessel name/IMO or a ship photo and want vessel identification and imagery — returns ship photos, vessel details, and photographer/location metadata.",
     "url": "https://www.shipspotting.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Identifying a vessel and finding dated photographs of it, plus the photographer and location behind each shot.",
+    "selectorsIn": [
+      "name",
+      "image"
+    ],
+    "selectorsOut": [
+      "image",
+      "geolocation",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view the photo database; a free account is needed only to upload your own photos.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the public photo database is passive and reveals nothing to any subject. Uploading a photo (to seek an ID) is a disclosure — strip your own metadata and use a puppet account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A large, long-running community ship-photo database; identifications and captions are contributed by enthusiasts, so vessel IDs are usually reliable but caption details are unverified.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -366736,15 +366735,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "ShipSpotting.com",
+      "ship photo database"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "maritime",
+      "vessel-tracking",
+      "ship-photos"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "relatedTools": [
       "ship-spotting",
       "shipspotting-com"

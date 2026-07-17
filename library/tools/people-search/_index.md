@@ -131,7 +131,7 @@ kind: group-index
 - **`internet-experts`** (medium) — OSINT tool: Internet Experts.
 - **`interpol`** (high) — Use when you have a `name` and want to check INTERPOL's public Red (wanted) and Yellow (missing persons) notices — returns name, dob, image,
 - **`ioa`** (high) — Use when you have a `username` or account handle and want to know whether it belongs to a documented state-linked disinformation campaign — 
-- **`jobs-poland`** (medium) — OSINT tool: Jobs (Poland).
+- **`jobs-poland`** (medium) — Use when you have an employer `name` or a subject's occupation in Poland and want job-market context — returns employer job postings, locati
 - **`jobsite-uk`** (medium) — OSINT tool: Jobsite (UK).
 - **`jobster-job-posts-resumes`** (medium) — OSINT tool: Jobster (Job Posts / Resumes).
 - **`karus`** (medium) — Multi-purpose OSINT utility with a custom web interface.

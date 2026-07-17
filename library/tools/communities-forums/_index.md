@@ -196,7 +196,7 @@ kind: group-index
 - **`ivpaste`** (medium) — OSINT tool: ivpaste.
 - **`joomla`** (low) — OSINT tool: Joomla.
 - **`jsbin`** (medium) — OSINT tool: jsbin.
-- **`justfornurses-co-uk`** (medium) — OSINT tool: justfornurses.co.uk.
+- **`justfornurses-co-uk`** (medium) — Use when you have a `username`/`name` tied to UK nursing and want a niche nursing community forum and jobs board — returns forum posts, memb
 - **`justpaste`** (medium) — Use when you have a JustPaste.it link (or a paste id) found in a breach, chat, or search hit and want to read the shared rich text/images be
 - **`katbin`** (low) — Use when you have a Katbin paste URL/ID or are dorking for leaked text — returns the pasted content; a place dumps and notes may be shared.
 - **`kinja-rss-news-feed`** (medium) — Website that provides links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest
@@ -221,7 +221,7 @@ kind: group-index
 - **`mate1-com-website`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`medium`** (low) — OSINT tool: Medium.
 - **`meetic-com-europe`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`memeorandum-political-web`** (medium) — US politics
+- **`memeorandum-political-web`** (medium) — Use when you want to see which US political stories and commentary are being discussed right now — returns clustered news articles, the blog
 - **`metafilter`** (medium) — Communitu blogging website allowing anyone to contribute
 - **`metv-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`mghurston-list-of-fake-news-satire-and-hoax-websites`** (medium) — Listing that identifies the current leading online fake or hoax websites
@@ -332,7 +332,7 @@ kind: group-index
 - **`shaadi-com`** (high) — Use when you have a `name`, `dob`, or partial details of a South-Asian subject and want a matrimonial profile — returns a `social-profile` w
 - **`showcase-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`sina-weibo-chinese`** (medium) — Chinese website related to social networking and micro-blogging
-- **`skout`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
+- **`skout`** (medium) — Use when you have a `username`/`name` or a face and want to check a location-based dating/social app for a matching profile — returns dating
 - **`slashdot`** (medium) — Website related to social networking and bookmarking activities; includes world news stories
 - **`smat`** (low) — OSINT tool: smat.
 - **`snippet-host`** (medium) — OSINT tool: snippet.host.

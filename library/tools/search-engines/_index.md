@@ -59,7 +59,7 @@ kind: group-index
 - **`american-association-of-port-authorities`** (medium) — Site providing information on all the ports of the Western Hemisphere
 - **`american-society-of-civil-engineers`** (low) — OSINT tool: American Society of Civil Engineers.
 - **`android-code-search`** (medium) — A tool that helps developers view the Android source code.
-- **`angieslist-north-america`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses related to homeowners.
+- **`angieslist-north-america`** (medium) — Use when you have a contractor/business `name` in North America and want reviews and business details — returns customer reviews, business `
 - **`animalsearch`** (low) — Animal search directory aimed at kids
 - **`anon-scraper`** (low) — Search uploaded files to AnonFile using Google
 - **`antso-search-engine-china`** (medium) — Chinese surgace web search engine covering regional results
@@ -467,7 +467,6 @@ kind: group-index
 - **`linkosaurus-news-blog`** (low) — News blog covering topics such as science, politics, auto, and property
 - **`list-of-newspapers-com`** (low) — OSINT tool: List of Newspapers.com.
 - **`live-traffic-cameras-in-europe`** (medium) — Real-time monitoring of Europe’s 5,481 live traffic cameras
-- **`ljseek-livejournal-blog-search`** (medium) — Website that provides a search engine that searches blogs on LiveJournal
 - **`looksmart-search-engine-united-kingdom`** (medium) — Surface web search engine covering worldwide results
 - **`loopnet`** (medium) — Commercial real estate listing and research site
 - **`lotrowikia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
@@ -813,11 +812,11 @@ kind: group-index
 - **`us-dod-function-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`us-government-printing-office`** (medium) — US Government Printing Offices searchable database of publications, including various regulations
 - **`us-location-information`** (medium) — Site providing national income and poverty estimators, as well as other demographics in the US
-- **`us-securities-and-exchange-commission`** (medium) — Website for the United States Securities and Exchange Commission
+- **`us-securities-and-exchange-commission`** (medium) — Use when you have a company or person `name` and want SEC filings naming them — returns officers/insiders, addresses, ownership stakes, and 
 - **`usa-gov`** (medium) — The US governments official web portal
 - **`usarmy-occupation-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`usearchfrom-com`** (high) — Use when you have a name or term and want to see Google results as they appear from another country/language/device — returns location-local
-- **`usps-zip-code-look-up`** (medium) — United States Postal Service zip code look up tool - search by address, company and city
+- **`usps-zip-code-look-up`** (medium) — Use when you have a partial or claimed US `address` and want to verify/standardize it — returns the correct ZIP+4, standardized `address`, c
 - **`vancouver-sun-opinions`** (medium) — Read opinion articles from columnists and guest writers on various topics and controversies
 - **`vichiti`** (medium) — OSINT tool built with Node.js for gathering information across sources.
 - **`vinden-meta-search-netherlands`** (medium) — Netherlands based meta-search engine that shows results from two or more other search engines (i.e., Google, Bing, Yahoo, etc.)
