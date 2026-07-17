@@ -664,7 +664,6 @@ kind: group-index
 - **`trendhero`** (medium) — Use when you have an Instagram `username` and want deep profile analytics and a fake-follower audit — returns follower quality, engagement s
 - **`trends-tool`** (low) — OSINT tool: Trends Tool.
 - **`trends24`** (low) — Use when you have a place and time and want to know what was trending on X/Twitter there — returns ranked trending topics by country/city wi
-- **`trendsmap`** (medium) — OSINT tool: TrendsMap.
 - **`trevorfox-com-2`** (high) — Use when you have a LinkedIn post/activity URL (a `social-profile` artifact) and want its true publication timestamp — returns the exact `do
 - **`trevorfox-com`** (high) — Use when you have a Reddit post/comment `social-profile` URL and want its exact creation timestamp — returns precise UTC/local date-time met
 - **`trombi-com`** (high) — Use when you have a `name` (including a maiden name) and a French school/era and want to find the person's classmates-network profile and ph
@@ -808,7 +807,7 @@ kind: group-index
 - **`youtube-actual-top-comments`** (medium) — The main drawback of the standard #YouTube comment display is that it does not sort comments by the number of likes, but simply shows popula
 - **`youtube-booster`** (medium) — This extension selects frames from videos and generates quick links to find them on Google and TinEye!
 - **`youtube-caption-searcher`** (medium) — Well down tool for searching in #YouTube video subtitles by keyword. Use Enter to move forward and Shift+Enter to move back.
-- **`youtube-channel-archiver`** (medium) — Tool for automation downloading video, thumbnails and comments text from target YouTube channel (or channels).
+- **`youtube-channel-archiver`** (medium) — Use when you have a YouTube `social-profile` (channel URL) and want to bulk-preserve its videos, thumbnails, and comments before they vanish
 - **`youtube-channel-id`** (medium) — OSINT tool: Youtube channel ID.
 - **`youtube-channel-search`** (medium) — OSINT tool: Youtube Channel Search.
 - **`youtube-comment-downloader`** (medium) — Use when you have a YouTube video/channel and want its full comment thread as data — returns commenter `username`s, text and timestamps for 

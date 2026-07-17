@@ -113,7 +113,7 @@ kind: group-index
 - **`warcat`** (medium) — My favorite (because it's the easiest) tool for working with Warc files. It allows you to see the list of files in the archive (command "lis
 - **`wayback-archive-it-org`** (medium) — Use when you have a `domain` or URL and want to find it inside a curated institutional web-archive collection (governments, universities, NG
 - **`wayback-archive`** (medium) — OSINT tool: Wayback-Archive.
-- **`wayback-google-analytics`** (medium) — A tool that finds all Google Analytics ID in URL (including old ones from Web Archive).
+- **`wayback-google-analytics`** (medium) — Use when you have a `domain` and want to link it to other sites via shared current/historical Google Analytics or AdSense IDs — returns rela
 - **`wayback-keywords-search`** (medium) — A tool that allows you to download all the pages of a particular domain from http://archive.org for a particular month or day, and quickly d
 - **`wayback-machine-2`** (high) — Use when you have a `domain`, `social-profile` or `username` URL and want to see historical snapshots — including deleted or changed pages —
 - **`wayback-machine-downloader-github-com`** (medium) — OSINT tool: wayback machine downloader (github.com).

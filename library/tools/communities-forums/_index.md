@@ -89,7 +89,7 @@ kind: group-index
 - **`deviantart`** (medium) — Use when you have a `username` or `name` and want their DeviantArt art profile — returns a `social-profile`, posted images, bio and communit
 - **`digg`** (medium) — Use when you have a `name`, `username` or topic and want to see what trending stories and links people have shared/submitted about it — retu
 - **`digitaltrends-com`** (medium) — Use when you have a `name` and want to find tech/gadget articles a subject wrote or was quoted in — returns bylines, expert quotes and artic
-- **`disboards`** (medium) — Disney discussions forum
+- **`disboards`** (medium) — Use when you have a `username` or `name` you suspect posts on this Disney-fan forum and want their post history — returns `social-profile`, 
 - **`discovery-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`disqus`** (medium) — Worldide blog comment hosting service
 - **`doesthedogdie`** (low) — This is an ingenious site that lets you find out if a movie (video game) has scenes that might upset someone (death of dogs, cats and horses

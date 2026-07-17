@@ -24,7 +24,6 @@ kind: group-index
 - **`aicontentfy-com`** (low) — Use when you need to learn Google-dork techniques for surfacing public WhatsApp group invite links — this is a how-to article, not a tool.
 - **`alphr-com`** (low) — Use when you need a how-to reference for finding WhatsApp groups, group IDs, admins, and members — this is an instructional article, not a t
 - **`apowersoft-com`** (low) — Use when you have lawful physical access to a device and need to mirror an Android/iPhone screen to a PC to review on-device messaging apps.
-- **`astraahome`** (medium) — 14 #Discord tools (including a RAT, a Raid Tool, a Token Grabber, a Crash Video Maker, etc) in one #python tool.
 - **`authentic8-com-3`** (medium) — Use when you need a tradecraft reference for investigating Telegram users, channels, and groups (usernames, IDs, profile photos, EXIF, dorks
 - **`avinfobot`** (medium) — Use when you have a Russian license plate, VIN, body number, or seller phone and need used-car history via Telegram.
 - **`avtocodbot`** (medium) — Use when you have a Russian vehicle plate or VIN and want an ownership/usage-history report (Avtocod) delivered via Telegram.

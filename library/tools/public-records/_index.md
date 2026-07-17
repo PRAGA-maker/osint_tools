@@ -54,12 +54,12 @@ kind: group-index
 - **`alberta-police-misconduct-database`** (medium) — OSINT tool: Alberta Police Misconduct Database.
 - **`alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj`** (low) — OSINT tool: Alcool - Régie des alcools, des courses et des jeux (RACJ).
 - **`alibaba-china`** (medium) — China's largest e-commerce company hosting millions of merchents and businesses
-- **`allbusiness`** (medium) — News, articles, and guides related to business, technology, finance, marketing, and more
+- **`allbusiness`** (low) — Use when you have an `employer-org` or `name` and want a US business directory profile — returns `employer-org`, `address`, and business-con
 - **`allmyfaves`** (medium) — Ultimate homepage of everything from social media platforms, video search sites, search engines, shopping pages and more
 - **`allpeople`** (medium) — OSINT tool: AllPeople.
 - **`allstockslinks`** (medium) — OSINT tool: AllStocksLinks.
 - **`ama-assn-org`** (high) — Use when you have a physician `name` and a US city/state/ZIP and want to verify they are a real, licensed doctor — returns specialty, practi
-- **`amazon-asin-finder`** (medium) — OSINT tool: Amazon ASIN Finder.
+- **`amazon-asin-finder`** (low) — Use when you have an Amazon `document-id` (ASIN) or product URL tied to a seller and want product/seller intelligence — returns `employer-or
 - **`amazon-co-uk`** (medium) — Use when you have a `name` and want to find their public Amazon wedding/gift registry — returns partner/associate names, approximate locatio
 - **`amazon-com`** (medium) — OSINT tool: Amazon.com.
 - **`amazon-scraper`** (medium) — scraped detail information about list of items

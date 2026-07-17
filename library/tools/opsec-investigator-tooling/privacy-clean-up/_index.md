@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`awesome-opt-out-guide-2026`** (medium) — Data broker removal, comprehensive opt-out across multiple platforms and services
 - **`fake-us-identities`** (medium) — Generating synthetic US identity data for persona creation and testing
-- **`just-delete-me`** (medium) — Removing digital footprint, deleting OSINT research accounts, cleaning up persona accounts
+- **`just-delete-me`** (low) — Use when you have a service `username`/account and want the direct account-deletion link and difficulty rating — supports investigator OpSec
 - **`optout-credit-prescreen`** (medium) — Reducing data broker exposure, removing from credit prescreening lists
 - **`panopticlick`** (low) — Use when you want to test your investigative browser's fingerprint and tracker-blocking before an op — returns a uniqueness score and detail
 - **`privacy-guides`** (medium) — Selecting privacy tools, building an OSINT operational security toolkit

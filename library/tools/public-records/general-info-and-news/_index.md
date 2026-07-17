@@ -7,7 +7,7 @@ kind: group-index
 # public-records/general-info-and-news
 
 ## Skills here
-- **`commercial-register-worldwide`** (medium) — Searching Swiss corporate registry for businesses registered in St. Gallen
+- **`commercial-register-worldwide`** (medium) — Use when you have an `employer-org` or `name` tied to a business in canton St. Gallen and want its registration details — returns `address`,
 - **`global-edge-resource-directory`** (medium) — Finding international business intelligence resources and databases by topic
 - **`google-finance`** (medium) — Quick financial overview, stock data, and news for public companies
 - **`international-white-pages`** (medium) — International business and personal contact lookups by country

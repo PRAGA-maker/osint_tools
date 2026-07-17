@@ -315,7 +315,7 @@ kind: group-index
 - **`lookup-icann-org`** (medium) — OSINT tool: lookup.icann.org.
 - **`lookyloo`** (low) — Webapp allowing to scrape a website and then displays a tree of domains calling each other (redirects, frames, javascript, css, fonts, image
 - **`majestic`** (low) — OSINT tool: Majestic.
-- **`majordomo-russia`** (medium) — Service provider for registering websites and domain addresses; Russia-based
+- **`majordomo-russia`** (low) — Use when you have a `.ru`/`.рф` `domain` and want registrar/WHOIS and availability data from a major Russian host — returns `domain` registr
 - **`matika`** (medium) — Browser extension for searching IP, domain, URL, hash, etc. via the context menu
 - **`maxmind`** (low) — OSINT tool: MaxMind.
 - **`mayorsecdnsscan`** (low) — Identify DNS records for target domains, check for zone transfers and conduct subdomain enumeration.

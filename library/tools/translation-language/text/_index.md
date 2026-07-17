@@ -11,7 +11,7 @@ kind: group-index
 - **`cambridge-dictionary`** (low) — Use when you have a foreign-language word/phrase from a subject's posts or documents and want an authoritative definition and bilingual tran
 - **`deepl-translator`** (medium) — Use when you have a foreign-language record, message, or document and want an accurate English (or other) rendering — returns translated tex
 - **`free-translation`** (medium) — Fast multi-language text translation in a browser
-- **`google-input-tools`** (medium) — Typing non-Latin scripts and transliterated input
+- **`google-input-tools`** (low) — Use when a lead is in a non-Latin script and you need to TYPE it accurately (queries, names, addresses) — an input helper, not a subject loo
 - **`google-translate`** (medium) — Quick translation across broad language coverage
 - **`slang-dictionary-and-translator`** (medium) — Decoding internet slang and text abbreviations
 - **`slangit-the-slang-dictionary`** (medium) — Understanding current online slang and acronym usage
