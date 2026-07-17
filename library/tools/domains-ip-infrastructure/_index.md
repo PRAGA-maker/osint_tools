@@ -247,7 +247,7 @@ kind: group-index
 - **`ibm-x-force-exchange-current-malicious-activity`** (low) — OSINT tool: IBM X-Force Exchange Current Malicious Activity.
 - **`icann-lookup`** (low) — OSINT tool: Icann Lookup.
 - **`icann-org`** (medium) — OSINT tool: icann.org.
-- **`icann-whois-lookup`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`icann-whois-lookup`** (medium) — Use when you have a `domain` and want its registration record — returns registrar, registration/expiry dates, name servers, and any public r
 - **`idn-checker`** (low) — IDN Checker detects visually similar versions of a domain.
 - **`iknowwhatyoudownload`** (medium) — Use when you have an `ip-address` and want any BitTorrent download activity publicly logged against it — returns torrented titles with times
 - **`imperva-live-threat-map`** (low) — OSINT tool: Imperva Live Threat Map.

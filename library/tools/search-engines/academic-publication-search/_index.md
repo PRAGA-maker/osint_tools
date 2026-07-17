@@ -17,7 +17,7 @@ kind: group-index
 - **`microsoft-academic`** (medium) — Academic paper discovery with author disambiguation and citation graph analysis
 - **`open-access-scholarly-journals`** (medium) — Accessing open-access peer-reviewed research in biomedical and natural sciences
 - **`open-library`** (medium) — Finding and borrowing digitized books, especially out-of-print or historical publications
-- **`opendoar`** (medium) — Finding open-access repositories by institution, country, or subject discipline
+- **`opendoar`** (low) — Use when you want to find academic open-access repositories for an institution, country, or subject — returns a directory of repositories (w
 - **`pubmed-national-center-for-biotechnology-information`** (medium) — Biomedical, clinical, and life sciences literature research with high-quality metadata
 - **`pubpeer`** (medium) — Verifying scientific publication credibility and finding post-publication corrections or retractions
 - **`science-direct`** (medium) — Scientific and technical literature search across Elsevier's extensive journal catalog

@@ -84,7 +84,7 @@ kind: group-index
 - **`flight-status-info`** (low) — - get a list of airports by city name; - view the flight schedule of a particular airport; - view the flight schedule of a particular airlin
 - **`flight-tracker`** (low) — OSINT tool: Flight Tracker.
 - **`flightairmap`** (low) — Use when you have an aircraft/vessel `vehicle-plate` registration or callsign and want live position and history — returns `geolocation` tra
-- **`flightaware`** (medium) — Flight tracking and history.
+- **`flightaware`** (medium) — Use when you have a flight number, tail number (aircraft registration), or airport and want live and historical flight tracking — returns ro
 - **`flightconnections`** (low) — OSINT tool: FlightConnections.
 - **`flightwise`** (low) — OSINT tool: Flightwise.
 - **`free-aviation-records-black-book-online`** (low) — OSINT tool: Free Aviation Records | Black Book Online.

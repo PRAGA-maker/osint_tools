@@ -8,7 +8,7 @@ kind: group-index
 
 ## Sub-groups
 - **`academic-publication-search/`** — 17 skill(s) below.
-- **`code-search/`** — 6 skill(s) below.
+- **`code-search/`** — 5 skill(s) below.
 - **`ftp-search/`** — 3 skill(s) below.
 - **`general-search/`** — 16 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
@@ -32,7 +32,7 @@ kind: group-index
 - **`abilogic`** (low) — Business web directory
 - **`aboutus`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
 - **`abusech`** (medium) — OSINT tool: Abusech.
-- **`abuseipdb`** (medium) — OSINT tool: Abuseipdb.
+- **`abuseipdb`** (low) — Use when you have an `ip-address` and want its abuse reputation — returns crowd-reported malicious activity, a confidence-of-abuse score, an
 - **`abyznewslinks`** (low) — OSINT tool: ABYZNewsLinks.
 - **`academic-journals`** (low) — OSINT tool: Academic Journals.
 - **`access-to-archival-databases`** (medium) — The National Archives database of archival databases
@@ -322,7 +322,6 @@ kind: group-index
 - **`google-autocomplete-scraper`** (low) — One of the best ways to learn more about a person, company, or subject is to see what people are more likely to type in a search engine alon
 - **`google-blog-directory`** (medium) — Website that provides a search engine that searches blogs; search by topoc, language, region, or type
 - **`google-books-ngram-viewer`** (low) — OSINT tool: Google Books Ngram Viewer.
-- **`google-code`** (medium) — Google code search engine
 - **`google-com-77`** (high) — Use when you have a name, username or phrase and want precise, operator-controlled web results — returns web pages, social profiles and docu
 - **`google-com-81`** (high) — Use when you have a `name` (or any selector) and want to construct precise Google dorks to surface a person's footprint — returns refined pa
 - **`google-com-82`** (high) — Use when you have a `name` or topic and want to find published datasets that may list people — Google Dataset Search indexes datasets across

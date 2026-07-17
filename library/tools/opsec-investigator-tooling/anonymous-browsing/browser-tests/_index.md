@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`browser-statistics`** (medium) — Selecting realistic browser user agents, understanding browser fingerprint believability
-- **`what-browser-am-i-using-co`** (medium) — Quick browser identification check during anonymization setup
+- **`what-browser-am-i-using-co`** (low) — Use when you want a quick check of what your browser reveals — returns the browser name, version, OS, and user-agent a website sees, so you 
 - **`what-browser`** (medium) — Browser version verification, fingerprint audit during OSINT setup
 - **`whatsmybrowser-org`** (medium) — Verifying browser fingerprint, checking what browser version appears to websites
 
