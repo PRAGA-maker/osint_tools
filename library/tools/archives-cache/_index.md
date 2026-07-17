@@ -18,11 +18,11 @@ kind: group-index
 - **`archive-it`** (low) — Website that provides cached page recovery services of a specific URL link
 - **`archive-md`** (medium) — Use when you have a `domain`/URL and want a frozen, tamper-proof snapshot of a page — returns a permanent archived capture with a citable `d
 - **`archive-org-downloader`** (medium) — A simple #python script for downloading books from [http://archive.org](http://archive.org) in PDF format. You can adjust image resolution t
-- **`archive-org`** (medium) — OSINT tool: archive.org.
+- **`archive-org`** (high) — Use when you have a `domain` or URL and want to retrieve historical snapshots of a page as it looked in the past — returns archived captures
 - **`archive-page-addons-mozilla-org`** (medium) — OSINT tool: archive page (addons.mozilla.org).
 - **`archive-page-chrome-google-com`** (medium) — OSINT tool: archive page (chrome.google.com).
 - **`archive-today`** (low) — Archive any webpage, including Facebook and search for archived pages.
-- **`archive-vn`** (medium) — OSINT tool: Archive.vn.
+- **`archive-vn`** (high) — Use when you have a `domain` or URL and want an on-demand, permanent snapshot of a page (including JS-heavy or short-lived content) — return
 - **`archivebox`** (medium) — Create your own self-hosted web archive. Save pages from browser history, bookmarks, Pocket etc. Save html, js, css, media, pdf and other fi
 - **`arquivo-pt`** (medium) — Use when you have a `domain`/URL or a `name` and want historical snapshots of Portuguese-web pages back to 1996 — returns archived page vers
 - **`auto-archiver`** (low) — Bellingcat's tool to automatically archive social media posts, videos, and images. Free and Open-Source.
@@ -111,7 +111,7 @@ kind: group-index
 - **`view-page-archive-addons-mozilla-org`** (medium) — OSINT tool: view page archive (addons.mozilla.org).
 - **`vislibri`** (medium) — World’s largest search engine for old, rare & second-hand books. Search across 140+ websites worldwide.(Ebay, Amazone, Booklooker, Catawiki,
 - **`warcat`** (medium) — My favorite (because it's the easiest) tool for working with Warc files. It allows you to see the list of files in the archive (command "lis
-- **`wayback-archive-it-org`** (medium) — OSINT tool: Wayback.archive-it.org.
+- **`wayback-archive-it-org`** (medium) — Use when you have a `domain` or URL and want to find it inside a curated institutional web-archive collection (governments, universities, NG
 - **`wayback-archive`** (medium) — OSINT tool: Wayback-Archive.
 - **`wayback-google-analytics`** (medium) — A tool that finds all Google Analytics ID in URL (including old ones from Web Archive).
 - **`wayback-keywords-search`** (medium) — A tool that allows you to download all the pages of a particular domain from http://archive.org for a particular month or day, and quickly d

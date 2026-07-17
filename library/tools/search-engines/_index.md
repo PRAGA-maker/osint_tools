@@ -865,7 +865,7 @@ kind: group-index
 - **`wikiindex`** (medium) — Website that provides a listing of wiki-type websites
 - **`wikimatrix`** (medium) — Website that provides a comparison of wiki-type websites
 - **`wikimedia-meta-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
-- **`wikipedia`** (medium) — Website related to social networking in the form of the world's most popular crowdsourced encyclopedia and information database with close t
+- **`wikipedia`** (low) — Use when you have a `name`, `employer-org`, or place and want a sourced biographical/background reference — returns structured facts, associ
 - **`wikiquote`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on q
 - **`wikirecipes`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on r
 - **`wikishire-united-kingdom`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; Gazeteer of 

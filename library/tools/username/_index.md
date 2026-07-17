@@ -29,7 +29,7 @@ kind: group-index
 - **`gaddr`** (high) — Use when you have a `username` and want to find every social platform where that handle is registered, aggregated under one profile view — r
 - **`gebruikersnamen-snapchat`** (low) — Website for finding Snapchat usernames.
 - **`github-username-search-engine-githubnotes`** (medium) — Advanced GitHub username search.
-- **`github-username-search-engine-jonnygovish`** (medium) — Search GitHub usernames with filters.
+- **`github-username-search-engine-jonnygovish`** (medium) — Use when you have a `username` and want to check whether it exists on GitHub and view its public repositories — returns the matching GitHub 
 - **`gitsint-rs`** (medium) — Platform for uncovering connections and exposed secrets across GitHub.
 - **`go-sherlock`** (high) — Use when you have a `username` and want a fast local enumeration across ~1000 sites — returns the sites where the handle exists, as a Go por
 - **`gosearch`** (high) — Use when you have a `username` and want fast enumeration across 300+ sites plus breach/infostealer hits — returns `social-profile` links and

@@ -364,7 +364,7 @@ kind: group-index
 - **`location-search`** (medium) — OSINT tool: Location Search.
 - **`lotus-vn`** (high) — Use when you have a `username` or `name` and think the subject uses Lotus, a Vietnamese social network — returns `social-profile`, `name`, p
 - **`mail-ru-social-network-search`** (high) — Use when you have a `name` or `username` for a RU/CIS subject and want to surface Russian-language social and web results — returns social-p
-- **`map-of-github`** (medium) — Enter the name of the repository, see its links to other projects, and its place on the map of all Github repositories. Notice how small 133
+- **`map-of-github`** (low) — Use when you have a GitHub repository or topic and want to see related projects clustered by similarity — returns a visual map of neighborin
 - **`map-of-reddit`** (medium) — OSINT tool: Map of Reddit.
 - **`mastodon-github-com`** (medium) — Use when you have a known Mastodon `username`/handle on a specific instance and want to resolve it to a stable account ID and profile metada
 - **`mastodon-search-engine`** (low) — OSINT tool: Mastodon Search Engine.
@@ -495,7 +495,6 @@ kind: group-index
 - **`reddit-timer`** (medium) — Get last week's hourly activity schedule for a specific subreddit
 - **`reddit-user-analyser`** (high) — Use when you have a Reddit `username` and want a fast behavioural profile — returns activity stats, top subreddits, posting-time patterns an
 - **`reddit-user-extractor`** (medium) — #python script that allows you to get a complete list of comments by user name on Reddit in CSV format
-- **`reddit-visualization`** (medium) — OSINT tool: reddit visualization.
 - **`reddit`** (high) — Use when you have a `username` and want a subject's full public post/comment history — returns a `social-profile` whose activity leaks `geol
 - **`redditcommentsearch-com`** (medium) — Use when you have a Reddit `username` and want to keyword-filter that user's entire comment history — returns matching comments revealing lo
 - **`redditery`** (low) — Explore Reddit posts and comments by criteria.

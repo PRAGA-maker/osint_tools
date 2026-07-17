@@ -90,7 +90,7 @@ kind: group-index
 - **`free-aviation-records-black-book-online`** (low) — OSINT tool: Free Aviation Records | Black Book Online.
 - **`free-car-license-plate-lookup`** (medium) — OSINT tool: Free Car License Plate Lookup.
 - **`free-license-plate-search-check-any-license-plate-free`** (medium) — OSINT tool: FREE License Plate Search | Check Any License Plate FREE.
-- **`free-vin-decoder-vindecoderz`** (medium) — OSINT tool: Free VIN decoder - Vindecoderz.
+- **`free-vin-decoder-vindecoderz`** (medium) — Use when you have a `vin` and want to decode it into vehicle specifications (make, model, year, engine, equipment) to corroborate or charact
 - **`freecarcheck-co-uk`** (medium) — OSINT tool: Freecarcheck.co.uk.
 - **`freedar`** (low) — OSINT tool: Freedar.
 - **`ginfo-civil-aviation-authority-aircraft-search-united-kingdom`** (medium) — Aviation-related website that offers a search of the UK database of registered aviation owners
