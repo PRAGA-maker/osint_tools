@@ -869,7 +869,6 @@ kind: group-index
 - **`samhsa`** (medium) — Substance Abuse and Mental Health Services Administration; an agency of the U.S. Department of Health and Human Services, website providing 
 - **`san-francisco-copwatch-database`** (medium) — OSINT tool: San Francisco CopWatch Database.
 - **`scholarcy`** (medium) — AI papers summarizer. Upload the file or copy the access URL to the article to get: Key concepts; Abstract; Synopsis; Highlights; Summary; L
-- **`sciencehack-video-search`** (medium) — Multi-media search engine focusing on videos related to science
 - **`scinapse-io`** (medium) — Academic Search Engine. Search by 48000 journals
 - **`scite-ai`** (medium) — Enter the article title or DOI to get a list of publications that cite it. Results can be filtered by type (book, review, article), year, au
 - **`scoot`** (medium) — OSINT tool: Scoot.

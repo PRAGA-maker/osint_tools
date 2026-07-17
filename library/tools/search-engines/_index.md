@@ -257,7 +257,7 @@ kind: group-index
 - **`familypedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on f
 - **`familysearch-research-wiki`** (medium) — Use when you have a `name` and a place/era and want to know which genealogical records exist and where to find them — returns pointers to re
 - **`fatfingers`** (medium) — eBay search using misspelled words and typos
-- **`fbi-tools`** (medium) — Curated collection of OSINT tools for gathering information and digital forensics.
+- **`fbi-tools`** (medium) — Use when you have a case type but not the right tool and want a categorised index of OSINT/forensics utilities to mine — returns pointers to
 - **`federal-register`** (medium) — Daily journal of the United States government - includes information on regulations, codes and policy
 - **`fefoo-mega-search`** (medium) — Mega-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`felo`** (medium) — Free multilingual AI Search and Answer engine
@@ -510,7 +510,7 @@ kind: group-index
 - **`milled`** (low) — Use when you have a brand/`employer-org` name and want its marketing-email history — returns archived promotional emails revealing campaigns
 - **`million-short`** (low) — Use when you have a `name` or `username` and want obscure results that mainstream search buries — returns long-tail `domain` and `social-pro
 - **`mindmap-search-engine`** (medium) — OSINT tool: Mindmap Search Engine.
-- **`mojeek-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results
+- **`mojeek-search-engine-united-kingdom`** (medium) — Use when you have a `name`, `username`, `email`, or `phone` and want results from an independent, non-Google/Bing index that surfaces pages 
 - **`monster-crawler-search`** (medium) — OSINT tool: Monster Crawler Search.
 - **`monstercrawler-com`** (high) — Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns pag
 - **`monstercrawler-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)

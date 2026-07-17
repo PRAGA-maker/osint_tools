@@ -309,7 +309,7 @@ kind: group-index
 - **`unixtime-org`** (medium) — OSINT tool: unixtime.org.
 - **`unixtimestamp-com`** (medium) — OSINT tool: unixtimestamp.com.
 - **`urbex-database-map`** (medium) — Europe lost places map based by Urbex database
-- **`us-crisis-monitor`** (medium) — OSINT tool: US Crisis Monitor.
+- **`us-crisis-monitor`** (medium) — Use when you have a `geolocation` or `address` in the US and want to know what protests, political violence, or armed-group activity was rec
 - **`us-nav-guide-zip-code-data`** (medium) — Use when you have a US ZIP code or coordinates and need to resolve it to county/FIPS, lat-long, area code, and nearby-ZIP radius context.
 - **`usa-fishermap`** (medium) — when you click on a freshwater body of water, its detailed map opens, on which the depth at different points is marked
 - **`vdot-traffic-cams`** (low) — OSINT tool: VDOT Traffic Cams.

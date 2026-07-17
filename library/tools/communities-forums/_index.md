@@ -185,7 +185,7 @@ kind: group-index
 - **`grindr`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`guesttoguest`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`hashbin`** (medium) — OSINT tool: HashBin.
-- **`hastebin`** (medium) — OSINT tool: hastebin.
+- **`hastebin`** (medium) — Use when you have a hastebin link (or a paste key) surfaced in a breach, chat, or search result and want to read the shared text before it e
 - **`hgtv-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`history-channel-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`homeaway`** (medium) — Website related to social networking in the form of travel and accomodations
@@ -205,7 +205,7 @@ kind: group-index
 - **`joomla`** (low) — OSINT tool: Joomla.
 - **`jsbin`** (medium) — OSINT tool: jsbin.
 - **`justfornurses-co-uk`** (medium) — OSINT tool: justfornurses.co.uk.
-- **`justpaste`** (medium) — OSINT tool: justpaste.
+- **`justpaste`** (medium) — Use when you have a JustPaste.it link (or a paste id) found in a breach, chat, or search hit and want to read the shared rich text/images be
 - **`karmadecay`** (low) — OSINT tool: Karmadecay.
 - **`katbin`** (medium) — OSINT tool: Katbin.
 - **`kinja-rss-news-feed`** (medium) — Website that provides links to leading Rich Site Summary (RSS) feeds related to news and other topics of interest

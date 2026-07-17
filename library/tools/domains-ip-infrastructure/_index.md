@@ -200,7 +200,7 @@ kind: group-index
 - **`gandi-uk`** (medium) — UK based service provider for registering websites and domain addresses
 - **`genotec-ag-switzerland`** (medium) — Switzerland based service provider for registering websites and domain addresses
 - **`geo-data-tool`** (low) — IP geolocation service to identify the location and other technical information associated to IP addresses.
-- **`geobytes-ip-locator`** (medium) — Search tool that identifies the geolocation of an IP adddress on a map
+- **`geobytes-ip-locator`** (medium) — Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate
 - **`geowifi`** (low) — Search WiFi geolocation data by BSSID and SSID on different public databases (Wigle, Apple, OpenWifi, API Mylnikov).
 - **`get-link-info`** (low) — OSINT tool: Get Link Info.
 - **`getlinkinfo`** (low) — URL expander/unshortener that reveals the destination and metadata behind shortened links. Referenced in sinwindie's MISC URL Expander bookm
@@ -234,7 +234,7 @@ kind: group-index
 - **`headlines-sharethrough-com`** (low) — analyzes headlines according to four indicators (strenghts, suggestions, engagement, impression) and gives a score from 1 to 100
 - **`heartbleed-check`** (low) — OSINT tool: Heartbleed Check.
 - **`hexometer-stack-checker`** (low) — OSINT tool: Hexometer stack checker.
-- **`host-on-net-singapore`** (medium) — Singapore based service provider for registering websites and domain addresses
+- **`host-on-net-singapore`** (medium) — Use when you have a `domain` and want to check whether it is registered or hosted through this provider — returns the registrar/host relatio
 - **`hostgator-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques
 - **`httparchive-org`** (low) — Use when you have a `domain` and want its historical tech stack and third-party dependencies — returns detected technologies, request `domai

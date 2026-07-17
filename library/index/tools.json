@@ -30668,37 +30668,55 @@
   {
     "id": "hastebin",
     "name": "hastebin",
-    "description": "OSINT tool: hastebin.",
+    "description": "Use when you have a hastebin link (or a paste key) surfaced in a breach, chat, or search result and want to read the shared text before it expires — returns raw pasted `document-id` content.",
     "url": "https://www.toptal.com/developers/hastebin/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading or capturing plaintext shared via a hastebin paste link found during an investigation.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and post; no account required. Hosted by Toptal after adopting the original open-source haste-server project.",
+    "opsec": "passive",
+    "opsecNote": "Reading a paste by its URL is passive and anonymous. If you POST a paste, note that content is public to anyone with the key and effectively permanent within its retention — never paste target data or your own notes here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A well-known open-source pastebin (haste-server) hosted by Toptal; the platform is legitimate, but paste *content* is user-generated and unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "justpaste",
+      "rentry",
+      "controlc-pastebin",
+      "dpaste"
+    ],
+    "aliases": [
+      "hastebin.com",
+      "toptal hastebin",
+      "haste-server"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "paste-sites"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/hastebin.md"
   },
   {
@@ -31528,38 +31546,57 @@
   },
   {
     "id": "justpaste",
-    "name": "justpaste",
-    "description": "OSINT tool: justpaste.",
-    "url": "https://Justpaste.it",
+    "name": "JustPaste.it",
+    "description": "Use when you have a JustPaste.it link (or a paste id) found in a breach, chat, or search hit and want to read the shared rich text/images before it is deleted — returns pasted `document-id` content.",
+    "url": "https://justpaste.it",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading or capturing anonymous rich-text/image pastes shared via a JustPaste.it link.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to read and to publish; no account required to post. Launched 2009; supports anonymous pastes with rich text, code, and inline images.",
+    "opsec": "passive",
+    "opsecNote": "Reading a paste by URL is passive and anonymous. If you publish a paste you get a private edit key, but content is public to anyone with the link and is not truly private — never post target data or your own notes here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A long-established, legitimate paste/text-sharing platform; the site is trustworthy but paste *content* is user-generated and unverified, and it has historically hosted extremist and leaked material.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "hastebin",
+      "rentry",
+      "controlc-pastebin",
+      "dpaste"
+    ],
+    "aliases": [
+      "JustPaste.it",
+      "justpaste.it",
+      "Just Paste"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "paste-sites"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/justpaste.md"
   },
   {
@@ -73982,48 +74019,56 @@
   },
   {
     "id": "geobytes-ip-locator",
-    "name": "Geobytes Ip Locator",
-    "description": "Search tool that identifies the geolocation of an IP adddress on a map",
-    "url": "http://www.geobytes.com/IpLocator",
+    "name": "Geobytes IP Locator",
+    "description": "Use when you have an `ip-address` and want a fast, no-signup estimate of its city/region/country and lat-long on a map — returns approximate `geolocation`.",
+    "url": "https://www.geobytes.com/iplocator/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quick, free IP-to-city geolocation with generous rate limits and no account.",
     "selectorsIn": [
-      "domain",
       "ip-address"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free with no registration, CAPTCHA, or API key; the vendor advertises ~16,384 free lookups per hour. Bulk/commercial databases are the paid upsell.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You submit an IP (infrastructure), not personal data, and the query goes to Geobytes, not to the IP's owner. The target is not notified. Avoid entering an IP you obtained through an intrusive method you would not want logged.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A long-standing commercial IP-geolocation vendor; city-level results are estimates from its database and can be wrong, especially for mobile/VPN/CGNAT ranges.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "maxmind",
+      "ipinfo-map",
+      "ip2location-free-ip-location-search",
+      "whatismyipaddress"
+    ],
+    "aliases": [
+      "Geobytes IP Locator",
+      "geobytes.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
+      "ip-geolocation",
       "whois-ip-lookups-website-analysis"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/geobytes-ip-locator.md"
   },
   {
@@ -75995,31 +76040,30 @@
   },
   {
     "id": "host-on-net-singapore",
-    "name": "Host On Net (Singapore)",
-    "description": "Singapore based service provider for registering websites and domain addresses",
-    "url": "http://www.hostonnet.com",
+    "name": "Host On Net",
+    "description": "Use when you have a `domain` and want to check whether it is registered or hosted through this provider — returns the registrar/host relationship, not a standalone lookup.",
+    "url": "https://www.hostonnet.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Recognising HostOnNet as the registrar/host behind a domain surfaced in a WHOIS or DNS lookup.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Hosting and domain-registration plans are paid (shared hosting from ~$10/month), but the public site and its knowledge-base articles are free to read; there is no free lookup service here.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading the provider's site is passive and leaks nothing about your subject. Do not open a support ticket or use a contact form about a specific domain — that would put your interest on record with the host.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial hosting/registrar company operating since 2001; it is a service provider, not an investigative data source, so treat it only as infrastructure context.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -76028,15 +76072,23 @@
     "api": false,
     "localInstall": false,
     "registration": true,
-    "aliases": [],
+    "relatedTools": [
+      "maxmind",
+      "ipinfo-map"
+    ],
+    "aliases": [
+      "HostOnNet",
+      "Host On Net Singapore",
+      "hostonnet.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "hosting-provider",
+      "domain-registrar",
+      "whois-context"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/host-on-net-singapore.md"
   },
   {
@@ -130964,39 +131016,57 @@
   {
     "id": "us-crisis-monitor",
     "name": "US Crisis Monitor",
-    "description": "OSINT tool: US Crisis Monitor.",
+    "description": "Use when you have a `geolocation` or `address` in the US and want to know what protests, political violence, or armed-group activity was recorded there and when — returns dated, mapped `geolocation` events.",
     "url": "https://acleddata.com/special-projects/us-crisis-monitor/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "acled-armed-conflict-location-and-event-data-project",
-      "acled-data-crisis-map"
+    "bestFor": "Establishing whether civil unrest or political violence occurred at a US location on or around a given date.",
+    "selectorsIn": [
+      "geolocation",
+      "address"
     ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The interactive map and headline curation are free to browse; the full underlying event dataset (Data Export Tool / API) requires a free registered ACLED account, and some deeper analysis pages sit behind an access level.",
+    "opsec": "passive",
+    "opsecNote": "You are reading ACLED's published data, not querying anything about your subject, so there is no target-side footprint. Register the export account under a research identity if you prefer not to tie downloads to your real name.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "web-manual",
+    "trust": "trusted",
+    "trustNote": "Run by ACLED (Armed Conflict Location & Event Data Project) with the Bridging Divides Initiative; a peer-recognised academic conflict-event dataset with published sourcing and coding methodology.",
+    "missingPersonsRelevance": "medium",
+    "coverage": [
+      "us"
+    ],
+    "auth": "account",
+    "api": true,
+    "localInstall": false,
+    "registration": true,
+    "relatedTools": [
+      "acled-data-crisis-map",
+      "global-conflict-tracker",
+      "acled-armed-conflict-location-and-event-data-project"
+    ],
+    "aliases": [
+      "ACLED US Monitor",
+      "US Crisis Monitor ACLED"
+    ],
+    "tags": [
+      "conflict-events",
+      "protests",
+      "situational-context"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/us-crisis-monitor.md"
   },
   {
@@ -146927,40 +146997,59 @@
   {
     "id": "news-myseldon",
     "name": "News Myseldon",
-    "description": "from the photo looks for famous and little-known (like minor officials) people",
+    "description": "Use when you have an `image` of a face and want to identify a public or semi-public figure (officials, politicians, local media figures) and pull their news mentions — returns a `name` plus biography and recent events.",
     "url": "https://news.myseldon.com/en/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Naming lesser-known officials, politicians, or media figures from a photo and surfacing their news coverage.",
     "selectorsIn": [
-      "image"
+      "image",
+      "face"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "name",
+      "social-profile"
+    ],
+    "status": "degraded",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to run a photo search; the platform is a Russian news-aggregation/monitoring service (Seldon) whose deeper media-monitoring features are commercial. Site availability is intermittent.",
+    "opsec": "active",
+    "opsecNote": "You upload the subject's face to a third-party Russian service, which processes and may retain it. Use a sock-puppet session, strip metadata from the image first, and never upload a photo you are not willing to disclose to that operator.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Operated by Seldon (a Russian news/analytics company); matches are best for people already covered in (largely Russian-language) news, and results skew to that media sphere, so verify any identification independently.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "search4faces",
+      "pimeyes",
+      "yandex-russia"
+    ],
+    "aliases": [
+      "Myseldon",
+      "MySeldon News",
+      "Seldon News face search"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Reverse Image Search Engines and automation tools"
+      "Reverse Image Search Engines and automation tools",
+      "face-recognition"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/news-myseldon.md"
   },
   {
@@ -151577,40 +151666,58 @@
   {
     "id": "sherloq",
     "name": "Sherloq",
-    "description": "open source image #forensic toolset made by profesional photograph Guido Bartoli",
-    "url": "http://github.com/GuidoBartoli/sherloq",
+    "description": "Use when you have an `image` and want to test whether it was edited, staged, or re-saved and pull its embedded metadata — returns `metadata-exif` plus tampering/forensic signals.",
+    "url": "https://github.com/GuidoBartoli/sherloq",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Local, offline forensic analysis of a suspect photo — EXIF, ELA, clone/splice detection, and compression history.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "costNote": "Free and open source (GPL-3.0). No account or payment; runs locally after you clone and install its Python dependencies.",
+    "opsec": "passive",
+    "opsecNote": "Analysis is fully local — the image never leaves your machine and no third party sees it. This makes Sherloq the safest option for sensitive imagery you must not upload to a web forensics service.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "manual-review"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "An open-source research toolset by photographer/developer Guido Bartoli implementing published forensic algorithms; the code is transparent, but outputs are indicators requiring expert interpretation, not verdicts.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "fotoforensics-com",
+      "jimpl",
+      "verexif",
+      "exiftool-2"
+    ],
+    "aliases": [
+      "Sherloq",
+      "GuidoBartoli/sherloq"
+    ],
     "tags": [
       "Image Search and Identification",
-      "Image Analyze"
+      "Image Analyze",
+      "image-forensics"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/sherloq.md"
   },
   {
@@ -259886,52 +259993,6 @@
     "_file": "library/tools/public-records/scholarcy.md"
   },
   {
-    "id": "sciencehack-video-search",
-    "name": "ScienceHack Video Search",
-    "description": "Multi-media search engine focusing on videos related to science",
-    "url": "http://sciencehack.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "academic-scholarly-research-tools"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/sciencehack-video-search.md"
-  },
-  {
     "id": "scinapse-io",
     "name": "Scinapse.io",
     "description": "Academic Search Engine. Search by 48000 journals",
@@ -281179,24 +281240,25 @@
   {
     "id": "fbi-tools",
     "name": "FBI-tools",
-    "description": "Curated collection of OSINT tools for gathering information and digital forensics.",
+    "description": "Use when you have a case type but not the right tool and want a categorised index of OSINT/forensics utilities to mine — returns pointers to other tools, not data on a person.",
     "url": "https://github.com/danieldurnea/FBI-tools",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Discovering additional OSINT/forensics tools organized by use case.",
+    "bestFor": "Discovering additional OSINT/forensics tools organised by investigation type.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open GitHub README; no account, install, or payment. (Despite the name, it has no connection to the FBI — it is a community-maintained \"awesome\" list.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public GitHub README leaks nothing about your subject. The tools it links to have their own OpSec profiles — read each tool's own page before pointing it at a target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "Awesome-style aggregator list, not a single tool.",
+    "trustNote": "A community-maintained awesome-style aggregator (danieldurnea/FBI-tools); it is a directory of links, not a vetted or first-party toolset, and inclusion is not endorsement.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -281205,6 +281267,7 @@
     "api": false,
     "localInstall": false,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
       "danieldurnea/FBI-tools"
     ],
@@ -281214,8 +281277,8 @@
       "forensics"
     ],
     "source": "gh-topic-reconnaissance",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/fbi-tools.md"
   },
   {
@@ -292515,45 +292578,60 @@
   },
   {
     "id": "mojeek-search-engine-united-kingdom",
-    "name": "Mojeek Search Engine (United Kingdom)",
-    "description": "Surface web search engine covering regional results",
+    "name": "Mojeek Search Engine",
+    "description": "Use when you have a `name`, `username`, `email`, or `phone` and want results from an independent, non-Google/Bing index that surfaces pages the majors drop — returns `social-profile` and web mentions.",
     "url": "https://www.mojeek.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Running a subject's selector through a genuinely independent crawler to find pages the big engines bury or omit.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "email",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web/image/news search with no account. Mojeek runs its own crawler and index (not a Google/Bing reseller) and offers a paid search API, but interactive search is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Mojeek's core claim is that it does not track users or build behavioural profiles, so searching leaks less about you than the majors. It is still a third party; use a clean session for sensitive queries and remember your searches touch Mojeek's servers.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "A long-running UK-based independent search engine with its own crawler and index and a stated no-tracking policy; results are its own, not scraped from Google/Bing.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "mojeek",
+      "searx",
+      "searxng"
+    ],
+    "aliases": [
+      "Mojeek",
+      "Mojeek UK",
+      "mojeek.com"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "search-engines"
+      "search-engines",
+      "independent-index"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "mojeek"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/mojeek-search-engine-united-kingdom.md"
   },
   {
@@ -325428,13 +325506,13 @@
   {
     "id": "inflact-profile-analyzer",
     "name": "Inflact Profile Analyzer",
-    "description": "Free Instagram profile analysis tool.",
+    "description": "Use when you have an Instagram `username` and want a quick analytics profile — posting cadence, active hours, top hashtags/words, and top posts — returns `social-profile` behavioural signals.",
     "url": "https://inflact.com/tools/profile-analyzer/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Analyzing public Instagram profile stats and content",
+    "bestFor": "Profiling a public Instagram account's posting patterns, active times, and content themes from the handle alone.",
     "selectorsIn": [
       "username"
     ],
@@ -325442,24 +325520,34 @@
       "social-profile",
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier allows a limited number of analyses (roughly one profile/day within a short trial window); unlimited analysis and tracking require a paid plan (~$8/month). Requires signing in to run the tool.",
+    "opsec": "active",
+    "opsecNote": "Inflact queries Instagram through its own proxy servers, so the target's account is not touched by your IP. But you must create/sign in to an Inflact account, disclosing your interest to that third party — use a sock-puppet account and email.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial Instagram-growth vendor; its analytics are derived, not authoritative, and the same company sells engagement services, so treat figures as estimates.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
+    "relatedTools": [
+      "inflact-instagram-search",
+      "inflact-instagram-viewer-anonymous",
+      "imginn",
+      "picuki"
+    ],
     "aliases": [
+      "Inflact Profile Analyzer",
       "Profile Analyzer"
     ],
     "tags": [
@@ -325467,19 +325555,8 @@
       "profile-analysis"
     ],
     "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "inflact",
-      "inflact-com",
-      "inflact-com-2",
-      "inflact-com-3",
-      "inflact-com-4",
-      "inflact-com-5",
-      "inflact-downloader",
-      "inflact-instagram-search",
-      "inflact-instagram-viewer-anonymous"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/inflact-profile-analyzer.md"
   },
   {

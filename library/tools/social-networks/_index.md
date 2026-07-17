@@ -294,7 +294,7 @@ kind: group-index
 - **`inflact-com-5`** (high) — Use when you have a public Instagram post/reel/profile URL and want to download its video/media without logging in — returns downloadable vi
 - **`inflact-com`** (high) — Use when you have an Instagram `username` and want the full-size profile picture (avatar) without logging in — returns the high-resolution `
 - **`inflact-instagram-search`** (medium) — Use when you have a partial `name`/`username`, keyword, or location and want to discover Instagram profiles matching it — returns candidate 
-- **`inflact-profile-analyzer`** (medium) — Free Instagram profile analysis tool.
+- **`inflact-profile-analyzer`** (medium) — Use when you have an Instagram `username` and want a quick analytics profile — posting cadence, active hours, top hashtags/words, and top po
 - **`inflact`** (medium) — Another online tool that allows you to watch Instagram, without logging in: - search users by nickname; - view last posts; - analyze profile
 - **`initstring-linkedin2username`** (high) — Use when you have an `employer-org` (company LinkedIn page) and want a generated list of likely employee usernames/emails and real names — r
 - **`inleo-io`** (high) — Use when you have a `username` or `name` and want to find and read someone's posts on the Hive-blockchain social network InLeo — returns the

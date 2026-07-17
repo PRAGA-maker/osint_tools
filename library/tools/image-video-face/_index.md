@@ -233,7 +233,7 @@ kind: group-index
 - **`myheritage-photo-enhancer`** (high) — Use when a missing-person photo is blurry/low-res and you need an AI-sharpened, face-focused version for human review — returns an enhanced 
 - **`nasa-earthdata-search`** (medium) — search in 8555+ collection and photos.
 - **`neural-network-image-super-resolution-and-enhancement`** (high) — Use when a lead photo is too small/low-res and you need AI upscaling to a larger, clearer image for human review — returns an upscaled image
-- **`news-myseldon`** (medium) — from the photo looks for famous and little-known (like minor officials) people
+- **`news-myseldon`** (medium) — Use when you have an `image` of a face and want to identify a public or semi-public figure (officials, politicians, local media figures) and
 - **`noaa-data-access-viewer`** (medium) — satellite images of the coastal U.S.(discover, customize, and download authoritative land cover, imagery, and lidar data.)
 - **`numlookup-reverse-image-search`** (medium) — The results are very different from Yandex Images and Google Lens search results, as the service only searches for links to exact matches wi
 - **`observer`** (medium) — service allows you to watch data from different orbiting satellites in the record. The data is available in 15-30 minutes after recording.
@@ -309,7 +309,7 @@ kind: group-index
 - **`seintpl-github-io`** (high) — Use when you have a YouTube video URL and want its data and thumbnails — returns the video's metadata (title, channel, dates) and downloadab
 - **`sentinel-hub-eo-browser`** (medium) — complete archive of Sentinel-1, Sentinel-2, Sentinel-3, Sentinel-5P, ESA's archive of Landsat 5, 7 and 8, global coverage of Landsat 8, Envi
 - **`sentinel-hub-playground`** (medium) — tool for viewing satellite images with different effects and rendering.
-- **`sherloq`** (medium) — open source image #forensic toolset made by profesional photograph Guido Bartoli
+- **`sherloq`** (medium) — Use when you have an `image` and want to test whether it was edited, staged, or re-saved and pull its embedded metadata — returns `metadata-
 - **`show-my-street`** (medium) — simple tool that simplifies and speeds up your research work with Google Street View. Just click on the map and see street panoramas
 - **`shutterfly`** (high) — Use when you have a `name`/`username` and suspect the subject uses Shutterfly to share photos — returns `image` galleries and shared-album p
 - **`shutterstock`** (medium) — Use when you have a profile `image` and want to check if it's actually a stock photo (catfish signal) — returns whether the picture is a lic
