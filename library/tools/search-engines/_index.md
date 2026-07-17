@@ -226,7 +226,7 @@ kind: group-index
 - **`drivesearch-kwebpia-net`** (low) — OSINT tool: Drivesearch.kwebpia.net.
 - **`duckduckgo-bangs`** (low) — extension that add DuckDuckGo bang buttons to search results and search links in the context menu
 - **`duckduckgo-com`** (high) — Use when you have a `name`, `username` or any string and want unpersonalised search results and !bang shortcuts to pivot fast — returns `soc
-- **`ecosia-search-engine`** (medium) — Privacy-friendly search engine that donates 80% of their profit to nonprofit organizations to help plant trees; does not sell data to third 
+- **`ecosia-search-engine`** (medium) — Use when you want a privacy-respecting general web search from a different index than Google — returns web results (name/username/domain men
 - **`ecosia`** (low) — Use when you want an alternative general web search index (Bing-backed) to cross-check a `name`, `username` or `email` against Google — retu
 - **`ecured-cuba`** (low) — Use when you have a Cuban `name`/place/`employer-org` and want a Spanish-language encyclopedic profile — returns biographical, organizationa
 - **`eddy-the-eco-dog-kidswebtv`** (low) — Website intended for audiences under 15 years of age, identifies itself as kid-friendly, entertainment for children
@@ -303,7 +303,7 @@ kind: group-index
 - **`gijn-online-research-tools`** (medium) — Global Investigative Journalism Network's curated research tools page.
 - **`girlsaskguys`** (medium) — Search engine that searches for answers to questions on the subject of relationships between males and females
 - **`github-io-2`** (high) — Use when you have a name, org or domain and want to surface publicly exposed documents (PDFs, spreadsheets, configs, backups) — returns docu
-- **`github-recon`** (medium) — Methodology and reference for reconnaissance and dorking against GitHub to surface leaked data.
+- **`github-recon`** (medium) — Use when you have a `username`, `email`, `name`, or `domain` and want to dork GitHub for leaked identity data — returns real names, `email`s
 - **`github-with-awesome-list-search-engine`** (medium) — OSINT tool: Github with Awesome-List Search Engine.
 - **`givewater`** (medium) — Charitable search engine that supports a clean water initiative.
 - **`globalleaks`** (medium) — Open source software for enabling secure and anonymous whistleblowing

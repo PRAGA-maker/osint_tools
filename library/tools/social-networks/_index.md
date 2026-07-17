@@ -335,7 +335,7 @@ kind: group-index
 - **`izuum`** (high) — Use when you have an Instagram `username` and want to view/enlarge their (public) profile picture — returns image, social-profile. Now large
 - **`jesus-social`** (high) — Use when you have a `name` or `username` and want to check for a profile on this niche Christian social network — returns a `social-profile`
 - **`jump-cutter`** (medium) — An extension for those who watch university lectures on #YouTube and want to save their time. It identifies chunks where the lecturer writes
-- **`justlog`** (medium) — Enter the username and the name of the channel to see all of the user's messages in that channel. The results can be downloaded as TXT
+- **`justlog`** (medium) — Use when you have a Twitch `username` and a channel and want their chat history there — returns the user's logged messages (with timestamps)
 - **`karma-decay`** (medium) — OSINT tool: Karma Decay.
 - **`kaspr-io`** (high) — Use when you have a LinkedIn profile (`social-profile`)/`name` and want that person's direct contact details — returns `email`, `phone` and 
 - **`keepvid`** (low) — OSINT tool: KeepVid.

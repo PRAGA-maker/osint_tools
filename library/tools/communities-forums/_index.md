@@ -86,7 +86,7 @@ kind: group-index
 - **`deck-for-reddit`** (low) — OSINT tool: Deck for Reddit.
 - **`defencetalk-com`** (medium) — OSINT tool: defencetalk.com.
 - **`defuse`** (medium) — OSINT tool: Defuse.
-- **`deviantart`** (medium) — Online art community
+- **`deviantart`** (medium) — Use when you have a `username` or `name` and want their DeviantArt art profile — returns a `social-profile`, posted images, bio and communit
 - **`digg`** (medium) — Use when you have a `name`, `username` or topic and want to see what trending stories and links people have shared/submitted about it — retu
 - **`digitaltrends-com`** (medium) — Use when you have a `name` and want to find tech/gadget articles a subject wrote or was quoted in — returns bylines, expert quotes and artic
 - **`disboards`** (medium) — Disney discussions forum

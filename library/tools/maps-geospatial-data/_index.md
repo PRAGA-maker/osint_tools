@@ -60,7 +60,6 @@ kind: group-index
 - **`global-monitoring-system-ecosolve`** (low) — Illicit online wildlife markets data from Brazil, South Africa and Thailand.
 - **`go-kml-maps`** (medium) — OSINT tool: Go KML Maps.
 - **`google-co-uk`** (medium) — OSINT tool: google.co.uk.
-- **`google-com-65`** (medium) — OSINT tool: google.com.
 - **`google-earth-engine`** (low) — Google Earth Engine is a platform for environmental monitoring and analysis through satellite imagery and geospatial data.
 - **`google-flood-hub`** (low) — A visual tool to monitor river levels and forecast floods based on AI models developed by Google Research.
 - **`google-map-search-engine`** (medium) — OSINT tool: Google Map Search Engine.

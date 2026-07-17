@@ -146,7 +146,6 @@ kind: group-index
 - **`honolulu-traffic-cams`** (low) — OSINT tool: Honolulu Traffic Cams.
 - **`hungermap`** (low) — Use when you have a `geolocation` (country/region) and want live food-security, conflict and hazard context for it — returns situational `ge
 - **`huntel-io`** (medium) — Use when you have a `geolocation` and want geotagged social-media posts from that area across many platforms — returns social-profile posts 
-- **`i-know-where-your-cat-lives`** (medium) — geottaged photo from Instagram with #cat hashtag
 - **`i-see-you-iseeyou`** (medium) — Bash/JS tool to find a user's exact location during social-engineering or phishing.
 - **`imb-piracy-and-armed-robbery-map`** (high) — Use when you have a `geolocation` or maritime region and want reported piracy/armed-robbery incidents there — returns geolocation and incide
 - **`inspire-geoportal-eu`** (medium) — OSINT tool: Inspire-geoportal.eu.

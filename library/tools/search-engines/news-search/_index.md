@@ -14,7 +14,7 @@ kind: group-index
 - **`inshorts`** (medium) — OSINT tool: Inshorts.
 - **`newsbot`** (medium) — OSINT tool: NewsBot.
 - **`newsbrief`** (medium) — OSINT tool: NewsBrief.
-- **`newsnow-co-uk`** (medium) — OSINT tool: NewsNow.co.uk.
+- **`newsnow-co-uk`** (medium) — Use when you have a `name`, `employer-org` or topic and want current news aggregated across many outlets — returns real-time headlines and a
 - **`newspaper-map`** (medium) — OSINT tool: Newspaper Map.
 - **`newspaperarchive-com`** (medium) — OSINT tool: NewspaperARCHIVE.com.
 - **`pressreader-com`** (medium) — Use when you have a `name`, place, or event and want full-text hits across thousands of newspapers and magazines worldwide (including local 

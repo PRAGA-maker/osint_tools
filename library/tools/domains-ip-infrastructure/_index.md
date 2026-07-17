@@ -515,7 +515,7 @@ kind: group-index
 - **`view-rendered-source`** (low) — The standard browser source code view did not display the actual source code. View Rendered Source extension solve this problem. It shows th
 - **`vincos-it`** (low) — world social media popularity map
 - **`virus-total`** (low) — OSINT tool: Virus Total.
-- **`visual-ping-website-monitoring`** (medium) — Website monitoring tool that monitors webpages for changes
+- **`visual-ping-website-monitoring`** (medium) — Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you ca
 - **`vmaker-host-pakistan`** (medium) — Service provider for registering websites and domain addresses
 - **`vstat-info`** (low) — Getting detailed info about website traffic (sources, keywords, linked sites etc)
 - **`w3snoop`** (low) — OSINT tool: w3snoop.

@@ -26637,24 +26637,32 @@
   {
     "id": "deviantart",
     "name": "DeviantArt",
-    "description": "Online art community",
-    "url": "http://www.deviantart.com",
+    "description": "Use when you have a `username` or `name` and want their DeviantArt art profile — returns a `social-profile`, posted images, bio and community `associate` links.",
+    "url": "https://www.deviantart.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's DeviantArt profile, artwork, bio, and community connections from a username or name.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "image",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse public profiles and art without an account; an account (now Eclipse/owned by Wix) is only needed to interact, follow, or see mature-filtered content.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing public profiles/art is passive and doesn't notify the user. Logging in to view gated content, follow, or comment is attributable — use a sock-puppet account, and note that \"faving\"/watching leaves a trace on the target.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large, legitimate art community. Profiles are self-created, so bios/links are self-asserted; the artwork and posting activity are genuine and directly viewable.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -26663,15 +26671,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "artstation",
+      "pinterest",
+      "namechk"
+    ],
+    "aliases": [
+      "deviantart.com",
+      "DeviantArt"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "art-community",
+      "social-media",
+      "username-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/deviantart.md"
   },
   {
@@ -93340,50 +93356,53 @@
   {
     "id": "visual-ping-website-monitoring",
     "name": "Visual Ping Website Monitoring",
-    "description": "Website monitoring tool that monitors webpages for changes",
-    "url": "http://visualping.io",
+    "description": "Use when you have a `domain`/webpage tied to a subject and want to be alerted when it changes — returns before/after change alerts so you catch edits, additions and takedowns.",
+    "url": "https://visualping.io",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Monitoring a target webpage for content/visual changes and getting alerted when it updates.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier monitors a limited number of pages at low check frequency; more pages, faster checks, and advanced options need paid plans.",
+    "opsec": "active",
+    "opsecNote": "VisualPing fetches the target page on a schedule from ITS servers (not yours), so repeated visits come from VisualPing's infrastructure, not your IP — mildly protective. But it is polling the target's live page, so the site's logs show recurring automated visits. Don't monitor a page where even VisualPing-sourced traffic patterns could tip off the owner.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established, widely-used website-change-monitoring service (millions of users). It reliably reports what changed on a page; it's a monitoring utility, not a data source about people.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "visualping",
+      "wayback-machine"
+    ],
+    "aliases": [
+      "VisualPing",
+      "visualping.io"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "monitoring",
+      "change-detection",
+      "website"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "visualping"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/visual-ping-website-monitoring.md"
   },
   {
@@ -123515,48 +123534,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/geolocation/map-reporting-tools/hyperlapse.md"
-  },
-  {
-    "id": "i-know-where-your-cat-lives",
-    "name": "I know where your cat lives",
-    "description": "geottaged photo from Instagram with #cat hashtag",
-    "url": "https://iknowwhereyourcatlives.com/cat/99638e1fe0",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "image"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Social media and photos"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/geolocation/i-know-where-your-cat-lives.md"
   },
   {
     "id": "i-see-you-iseeyou",
@@ -159456,48 +159433,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/maps-geospatial-data/google-co-uk.md"
-  },
-  {
-    "id": "google-com-65",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://support.google.com/mymaps/answer/3024454?co=GENIE.Platform%3DDesktop&hl=en",
-    "category": "maps-geospatial-data",
-    "path": [
-      "maps-geospatial-data"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation",
-      "address"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "mapsandlocationsites",
-      "Maps & Location Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/maps-geospatial-data/google-com-65.md"
   },
   {
     "id": "google-earth-engine",
@@ -280102,24 +280037,33 @@
   {
     "id": "ecosia-search-engine",
     "name": "Ecosia Search Engine",
-    "description": "Privacy-friendly search engine that donates 80% of their profit to nonprofit organizations to help plant trees; does not sell data to third parties",
-    "url": "https://www.ecosia.org/?c=en",
+    "description": "Use when you want a privacy-respecting general web search from a different index than Google — returns web results (name/username/domain mentions) with less personalisation/tracking.",
+    "url": "https://www.ecosia.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Privacy-friendly general web search as an alternate index/lens to Google for name and keyword lookups.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "domain"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free general search engine; no account needed. Funded by ads (proceeds fund tree-planting).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Ecosia does not sell personal data and applies less tracking/personalisation than mainstream engines, which reduces filter-bubble bias in results. Your queries still leave your IP; for sensitive searching use a VPN/clean browser regardless of engine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established privacy-oriented search engine (results drawn largely from Bing plus its own signals). A legitimate alternate index; result quality is comparable to mainstream engines.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -280128,18 +280072,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "ecosia",
+      "duckduckgo",
+      "google-com"
+    ],
+    "aliases": [
+      "Ecosia",
+      "ecosia.org"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
+      "search-engine",
+      "privacy",
+      "web-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "ecosia"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ecosia-search-engine.md"
   },
   {
@@ -283479,13 +283428,13 @@
   {
     "id": "github-recon",
     "name": "GitHub-Recon",
-    "description": "Methodology and reference for reconnaissance and dorking against GitHub to surface leaked data.",
+    "description": "Use when you have a `username`, `email`, `name`, or `domain` and want to dork GitHub for leaked identity data — returns real names, `email`s and profiles from commits, code and configs.",
     "url": "https://github.com/TheBinitGhimire/GitHub-Recon",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Finding secrets, emails, and identity leads in public GitHub repos via dorks",
+    "bestFor": "A dorking methodology/reference for surfacing secrets, emails, and real-identity leads from public GitHub activity.",
     "selectorsIn": [
       "name",
       "username",
@@ -283497,15 +283446,18 @@
       "username",
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free reference repository of GitHub dorks/techniques; GitHub search itself is free (some code-search features want a logged-in account).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Searching public GitHub is passive — the target isn't notified. Running code-search often needs you to be logged in, which ties queries to that GitHub account; use a sock-puppet account, not your real one. You are reading published data, not accessing anything private.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "124 stars; reference/methodology repo rather than an executable tool.",
+    "trustNote": "A community reference (methodology, ~124 stars), not an executable tool. The techniques are sound; the data you find is real public GitHub content, verifiable in-repo.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -283514,7 +283466,15 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "gitrob",
+      "trufflehog",
+      "github-search"
+    ],
+    "aliases": [
+      "GitHub Recon",
+      "GitHub-Recon"
+    ],
     "tags": [
       "github-dorking",
       "code-search",
@@ -283522,8 +283482,8 @@
       "methodology"
     ],
     "source": "gh-topic-intelligence-gathering",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/github-recon.md"
   },
   {
@@ -294609,41 +294569,58 @@
   {
     "id": "newsnow-co-uk",
     "name": "NewsNow.co.uk",
-    "description": "OSINT tool: NewsNow.co.uk.",
+    "description": "Use when you have a `name`, `employer-org` or topic and want current news aggregated across many outlets — returns real-time headlines and article links mentioning the subject.",
     "url": "https://www.newsnow.co.uk/h/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "news-search"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Real-time UK-focused news aggregation to track headlines and coverage mentioning a person, company, or topic.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "name",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to browse aggregated headlines and search; deep archive access and pro features are paid. No account needed for basic use.",
+    "opsec": "passive",
+    "opsecNote": "You read an aggregator that links out to news sites; the subject isn't notified and nothing about them is submitted beyond your search terms. NewsNow logs queries; open linked articles logged-out for sensitive topics.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A long-established, reputable news aggregator. It doesn't produce journalism itself — it links to third-party outlets, so trust the underlying source, not the aggregator.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk",
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-news",
+      "boardreader"
+    ],
+    "aliases": [
+      "NewsNow",
+      "newsnow.co.uk"
+    ],
+    "tags": [
+      "news",
+      "aggregator",
+      "uk",
+      "media-monitoring"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/news-search/newsnow-co-uk.md"
   },
   {
@@ -328204,40 +328181,55 @@
   {
     "id": "justlog",
     "name": "Justlog",
-    "description": "Enter the username and the name of the channel to see all of the user's messages in that channel. The results can be downloaded as TXT",
+    "description": "Use when you have a Twitch `username` and a channel and want their chat history there — returns the user's logged messages (with timestamps), downloadable as text.",
     "url": "https://logs.ivr.fi/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Retrieving a Twitch user's full chat-message history in a specific logged channel.",
     "selectorsIn": [
       "username"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "username",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public logs instance (the open-source Justlog by gempir). No account needed; results downloadable as TXT/JSON.",
+    "opsec": "passive",
+    "opsecNote": "You read an already-collected public chat log; the target isn't notified and you don't join the channel. Only channels the instance actively logs are available, and users can request opt-out. Passive; use a clean session for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A public instance of the open-source Justlog logger. Logs are genuine captured Twitch chat, but coverage is limited to channels this instance logs and users can opt out, leaving gaps.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "twitch-tools",
+      "sullygnome"
+    ],
+    "aliases": [
+      "logs.ivr.fi",
+      "ivr logs",
+      "gempir justlog"
+    ],
     "tags": [
-      "Social Media",
-      "Twitch"
+      "twitch",
+      "chat-logs",
+      "messaging"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/justlog.md"
   },
   {
@@ -360140,44 +360132,50 @@
   {
     "id": "canadian-black-book",
     "name": "Canadian Black Book",
-    "description": "Canada's used car value and pricing search",
-    "url": "http://www.canadianblackbook.com/",
+    "description": "Use when you have a vehicle's make/model/year and want its Canadian market value — returns used-car trade-in/retail pricing to sanity-check a subject's claimed or listed vehicle.",
+    "url": "https://www.canadianblackbook.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Estimating the Canadian used-car value of a make/model/year/trim to corroborate or challenge a vehicle claim.",
     "selectorsIn": [],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free consumer value estimates (enter make/model/year/mileage); dealer/professional-grade valuation data is a paid product.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You look up a generic vehicle valuation — no VIN owner or individual is queried, and nothing is submitted about a person. Fully passive. The site logs your query/IP like any website.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Canadian Black Book is the recognised Canadian vehicle-valuation authority (the Canadian counterpart to US Black Book/KBB); its price data is industry-standard.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "canadian-black-book-values",
+      "vincheck"
+    ],
+    "aliases": [
+      "CanadianBlackBook",
+      "canadianblackbook.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "vehicle",
+      "valuation",
+      "canada",
+      "pricing"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "canadian-black-book-values"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/canadian-black-book.md"
   },
   {
