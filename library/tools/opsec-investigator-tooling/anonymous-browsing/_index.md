@@ -13,7 +13,7 @@ kind: group-index
 - **`vpn-tests/`** — 10 skill(s) below.
 
 ## Skills here
-- **`browser-leaks`** (medium) — Deep browser fingerprint analysis, identifying all data leak vectors before OSINT operations
+- **`browser-leaks`** (medium) — Use when you (the investigator) want to check your own OpSec before an operation — returns what your browser leaks (real IP, WebRTC, DNS, ca
 - **`browserspy-dk`** (medium) — Detailed browser fingerprint inventory, identifying what data is visible to websites
 - **`firefox-debloat`** (medium) — Hardening Firefox for OSINT operations, reducing browser telemetry and tracking
 - **`locabrowser-com`** (medium) — Testing browser geolocation exposure, verifying location permission settings

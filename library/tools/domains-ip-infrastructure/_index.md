@@ -541,7 +541,7 @@ kind: group-index
 - **`website-search-tool`** (low) — OSINT tool: Website search tool.
 - **`websiteiq`** (medium) — Free website traffic estimates & analytics
 - **`websitetechminer-py`** (low) — OSINT tool: WebsiteTechMiner.py.
-- **`webstatsdomain-website-analysis`** (medium) — Search for information and statistics about any online website
+- **`webstatsdomain-website-analysis`** (low) — Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shar
 - **`weebly`** (medium) — Service provider for hosting webpages and websites, specifically oriented towards online shopping
 - **`well-known-dev`** (medium) — OSINT tool: well-known.dev.
 - **`what-cms`** (low) — A tool that you can use to identify the technologies used to power a website.

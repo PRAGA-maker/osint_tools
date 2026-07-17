@@ -22414,42 +22414,57 @@
   },
   {
     "id": "wayback-machine-chrome-extension",
-    "name": "Wayback Machine Chrome Extension",
-    "description": "Fast archive lookups while browsing dead or changed pages",
-    "url": "https://chrome.google.com/webstore/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak",
+    "name": "Wayback Machine (Chrome Extension)",
+    "description": "Use when you hit a dead/changed page (a `domain` or URL) and want its archived version fast — returns the Internet Archive's saved snapshots for the page you're viewing, in one click.",
+    "url": "https://chromewebstore.google.com/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak",
     "category": "archives-cache",
     "path": [
       "archives-cache",
       "web"
     ],
-    "bestFor": "Fast archive lookups while browsing dead or changed pages",
-    "input": "Current tab URL or missing page request",
-    "output": "Direct Wayback snapshot links from browser context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "One-click access to Internet Archive snapshots (and one-click saving) of the page you're currently on.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official extension from the Internet Archive; no account needed to view or save snapshots.",
     "opsec": "passive",
-    "opsecNote": "Extension requests archive data through Internet Archive endpoints and may log usage telemetry.",
+    "opsecNote": "Fetching an archived snapshot hits the Internet Archive, not the target's live server, so the site owner isn't alerted. Note that clicking \"Save Page Now\" DOES fetch the live URL through the Archive and creates a public, permanent snapshot — use it deliberately, not on sensitive/private URLs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "browser-extension",
+    "trust": "trusted",
+    "trustNote": "Published by the Internet Archive, the operator of the Wayback Machine; snapshots are authentic captures with recorded timestamps.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": true,
+    "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "wayback-machine",
+      "archive-today",
+      "google-cache"
+    ],
+    "aliases": [
+      "Wayback Machine extension",
+      "Internet Archive Chrome extension"
+    ],
+    "tags": [
+      "archive",
+      "cache",
+      "wayback",
+      "browser-extension"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/web/wayback-machine-chrome-extension.md"
   },
   {
@@ -94903,32 +94918,32 @@
   },
   {
     "id": "webstatsdomain-website-analysis",
-    "name": "WebStatsDomain Website Analysis",
-    "description": "Search for information and statistics about any online website",
+    "name": "WebStatsDomain",
+    "description": "Use when you have a `domain` and want an at-a-glance profile — returns traffic estimates, hosting/IP and WHOIS summary, tech stack, and shared-analytics/owner hints.",
     "url": "http://webstatsdomain.org",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "A quick aggregated profile of a website — traffic, hosting/IP, WHOIS, and technology signals.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free website-statistics aggregator; no account required. Data is estimated/aggregated from third-party sources.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Pulls from the aggregator's own cached/estimated data, not the target's live server, so the site owner isn't alerted. The aggregator sees your IP; use a clean session. Estimates are approximate, not measured from the site itself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A third-party stats aggregator; traffic and value figures are rough estimates, so treat outputs as leads to corroborate rather than measured facts.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -94936,15 +94951,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "similarweb",
+      "builtwith",
+      "viewdns-info"
+    ],
+    "aliases": [
+      "webstatsdomain.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois-ip-lookups-website-analysis",
+      "website-stats"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/webstatsdomain-website-analysis.md"
   },
   {
@@ -125852,44 +125875,53 @@
   {
     "id": "mgrs-mapper",
     "name": "MGRS Mapper",
-    "description": "Build and share custom maps with standard military graphics using a simple visual interface (paod)",
+    "description": "Use when you have an MGRS/military grid reference or need to plot one on a map — returns an interactive map with MGRS grid overlay to translate grid coordinates to a real-world location.",
     "url": "https://mgrs-mapper.com/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Viewing an MGRS grid overlay on a map and plotting military-grid coordinates to a location.",
     "selectorsIn": [
-      "face",
-      "geolocation",
-      "image"
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tier gives a basic map with the MGRS grid overlay and a limited symbol set; premium ($5/mo or $40/yr) adds address/MGRS zoom-search, more map types, drawing, and the full military symbol library.",
+    "opsec": "passive",
+    "opsecNote": "A client-side mapping/annotation tool; your work is saved locally in the browser and no subject is contacted. Standard clean-session hygiene applies. Sharing an exported map link publishes whatever you plotted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A well-regarded tool built by a military officer for tactical map overlays; the MGRS grid math is standard, but it is a single-maintainer project rather than an official service.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-earth",
+      "what3words"
+    ],
+    "aliases": [
+      "mgrs-mapper.com"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Military visualisation"
+      "geolocation",
+      "mgrs",
+      "military-grid",
+      "mapping"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/mgrs-mapper.md"
   },
   {
@@ -175782,42 +175814,56 @@
   },
   {
     "id": "browser-leaks",
-    "name": "Browser Leaks",
-    "description": "Deep browser fingerprint analysis, identifying all data leak vectors before OSINT operations",
+    "name": "BrowserLeaks",
+    "description": "Use when you (the investigator) want to check your own OpSec before an operation — returns what your browser leaks (real IP, WebRTC, DNS, canvas/WebGL/font fingerprint) so you can plug the gaps.",
     "url": "https://browserleaks.com/",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "anonymous-browsing"
     ],
-    "bestFor": "Deep browser fingerprint analysis, identifying all data leak vectors before OSINT operations",
-    "input": "No input required (automatic browser analysis)",
-    "output": "Detailed reports on WebRTC, canvas, WebGL, fonts, plugins, and all other browser identifiers",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Auditing your own browser/VPN setup for IP and fingerprint leaks before doing active OSINT.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address",
+      "device-id"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Completely free; no account required.",
     "opsec": "active",
-    "opsecNote": "Sends comprehensive fingerprint data to their servers; use to audit your anonymization setup but not during live operations.",
+    "opsecNote": "This tests YOUR machine, not a target — run it on the sock-puppet browser you will investigate from. It reveals whether your real IP leaks past a VPN (WebRTC/DNS) and how identifiable your fingerprint is. Do not run it while logged into personal accounts; the point is to confirm your investigative profile is clean.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established, widely-cited privacy-testing suite used across the security community; results reflect your own browser and are directly reproducible.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "webrtc-leak-test",
+      "dnsleaktest"
+    ],
+    "aliases": [
+      "browserleaks.com"
+    ],
+    "tags": [
+      "opsec",
+      "fingerprint",
+      "webrtc",
+      "privacy"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browser-leaks.md"
   },
   {
@@ -194359,45 +194405,57 @@
   },
   {
     "id": "webrtc-leak-test",
-    "name": "WebRTC Leak Test",
-    "description": "Detecting WebRTC IP leaks in browsers, verifying WebRTC disable effectiveness",
-    "url": "https://www.perfect-privacy.com/webrtc-leaktest/",
+    "name": "WebRTC Leak Test (Perfect Privacy)",
+    "description": "Use when you want to confirm your VPN isn't leaking your real IP via WebRTC — returns the IP addresses WebRTC exposes to any website, so you can verify your OpSec.",
+    "url": "https://www.perfect-privacy.com/en/tests/webrtc-leaktest",
     "category": "opsec-investigator-tooling",
     "path": [
       "opsec-investigator-tooling",
       "anonymous-browsing",
       "vpn-tests"
     ],
-    "bestFor": "Detecting WebRTC IP leaks in browsers, verifying WebRTC disable effectiveness",
-    "input": "No input required (automatic browser WebRTC detection)",
-    "output": "Local IP, public IP via WebRTC, and VPN IP with leak assessment",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "A focused check that WebRTC doesn't bypass your VPN and reveal your true IP address.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public test page from VPN provider Perfect Privacy; no account needed.",
     "opsec": "active",
-    "opsecNote": "Uses WebRTC in your browser to detect leaks; revealing your real IPs to the testing service is expected during this test.",
+    "opsecNote": "Tests YOUR browser, not a target. Run it from the sock-puppet/VPN profile you investigate from. A leak here means any site you visit — including a target's server — could log your real IP; fix before doing active recon.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Provided by an established VPN vendor as a free diagnostic; the result is your browser's actual WebRTC behaviour, directly verifiable.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "perfect-privacy"
+      "browser-leaks",
+      "perfect-privacy",
+      "dnsleaktest"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Perfect Privacy WebRTC leak test"
+    ],
+    "tags": [
+      "opsec",
+      "webrtc",
+      "vpn",
+      "privacy"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/webrtc-leak-test.md"
   },
   {
@@ -302768,41 +302826,55 @@
   },
   {
     "id": "shadowserver",
-    "name": "Shadowserver",
-    "description": "OSINT tool: Shadowserver.",
+    "name": "Shadowserver Dashboard",
+    "description": "Use when you have an `ip-address`, ASN, or country and want threat-exposure context — returns aggregate stats on scanned, compromised, and vulnerable devices (per-network detail requires owning the network).",
     "url": "https://dashboard.shadowserver.org/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Network-level threat intelligence — exposure/compromise statistics by country and ASN.",
+    "selectorsIn": [
+      "ip-address"
+    ],
+    "selectorsOut": [
+      "ip-address"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public dashboard for aggregate statistics; free per-network daily reports are available only to verified network owners/CERTs (the granular per-IP data is not an open lookup).",
+    "opsec": "passive",
+    "opsecNote": "The public dashboard shows aggregate scan/honeypot data and never contacts a target host. Detailed per-network reports require Shadowserver to verify you own/administer that netblock, which identifies you to them. Reading the dashboard is anonymous.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Shadowserver is a respected nonprofit security foundation whose internet-wide scanning data is used by CERTs and network operators worldwide.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "shadowserver-foundation",
+      "shodan",
+      "greynoise"
+    ],
+    "aliases": [
+      "Shadowserver",
+      "dashboard.shadowserver.org"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "threat-intel",
+      "infrastructure",
+      "scanning"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "shadowserver-foundation"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/shadowserver.md"
   },
   {
@@ -303362,35 +303434,54 @@
   {
     "id": "slack-discord-zoom-invites-search",
     "name": "Slack/Discord/Zoom Invites Search",
-    "description": "OSINT tool: Slack/Discord/Zoom Invites Search.",
+    "description": "Use when you want to find public community invite links tied to a topic, org, or `username` — returns indexed Slack/Discord/Zoom invite pages to discover and join relevant communities.",
     "url": "https://cse.google.com/cse?cx=8e26eca532ec2cba3",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Discovering public Slack workspaces, Discord servers, and Zoom links via a targeted Google Custom Search.",
+    "selectorsIn": [
+      "employer-org",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine (CSE); no account to search. Joining any community found is a separate, active step.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The search itself is passive (a Google query) and doesn't touch any target. But ACTUALLY JOINING a found Slack/Discord/Zoom is active infiltration — it exposes your sock-puppet identity to that community and may alert admins/members. Decide deliberately before clicking an invite; never join from a personal account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A prebuilt Google CSE scoped to invite domains; results are real Google index hits, but invite links expire quickly so many will be dead.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-advanced-search",
+      "disboard"
+    ],
+    "aliases": [
+      "Slack Discord Zoom invite search"
+    ],
+    "tags": [
+      "slack",
+      "discord",
+      "communities",
+      "custom-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/slack-discord-zoom-invites-search.md"
   },
   {
@@ -336048,41 +336139,57 @@
   {
     "id": "reddit-post-scraping-tool",
     "name": "Reddit Post Scraping Tool",
-    "description": "Simple #python script for scraping post from #Reddit (by keywords and subreddit name)",
+    "description": "Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, text, timestamps) for offline analysis.",
     "url": "https://github.com/rly0nheart/reddit-post-scraping-tool",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-scraping Reddit posts by keyword, subreddit, or user for offline review and archiving.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free, open-source Python script. Uses Reddit's API, so you supply free Reddit API credentials.",
+    "opsec": "passive",
+    "opsecNote": "Reads public Reddit content via the API; users are not notified. Your Reddit API credentials/IP are visible to Reddit. Keep the account read-only — never comment/vote from it — to stay passive, and store scraped data securely as it may contain third parties' personal details.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Small open-source project (rly0nheart); it only collects public Reddit data, and every extracted post is verifiable against the live thread.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
     "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "reddit-persona",
+      "rug",
+      "reddit-user-analyser"
+    ],
+    "aliases": [
+      "rly0nheart/reddit-post-scraping-tool",
+      "rpst"
+    ],
     "tags": [
-      "Social Media",
-      "Reddit"
+      "reddit",
+      "scraping",
+      "python"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "rug"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-post-scraping-tool.md"
   },
   {
@@ -355123,53 +355230,64 @@
   },
   {
     "id": "bing-translate",
-    "name": "Bing Translate",
-    "description": "Quick translation of text and webpages",
-    "url": "https://translator.bing.com/",
+    "name": "Bing Translator",
+    "description": "Use when foreign-language text (a `name`, post, or document) blocks an investigation and you want it translated — returns the English (or target-language) rendering plus auto-detected source language.",
+    "url": "https://www.bing.com/translator",
     "category": "translation-language",
     "path": [
       "translation-language",
       "text"
     ],
-    "bestFor": "Quick translation of text and webpages",
-    "input": "Text or website URL",
-    "output": "Translated text or translated webpage content",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Fast free translation and source-language auto-detection for foreign-language OSINT material.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web translator (Microsoft); no account required. Programmatic use is via the paid Azure Translator API.",
     "opsec": "active",
-    "opsecNote": "Submitted text is processed on Microsoft servers.",
+    "opsecNote": "Text you paste is sent to Microsoft's servers and may be logged — do NOT paste sensitive raw evidence, credentials, or identifying private data. Use a clean session; treat it like any cloud service. It does not contact the subject, but it does exfiltrate your input to a third party.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Microsoft's translation service; reliable for gist and language detection, though machine translation can distort names, idioms, and legal/nuanced text.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
+      "bing-microsoft-translator",
+      "google-translate",
+      "deepl",
       "bing",
       "bing-creations",
       "bing-images",
       "bing-ip-search",
       "bing-maps",
-      "bing-microsoft-translator",
       "bing-news",
       "bing-videos",
       "bing-webmaster-tools",
       "see-it-search-it"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Bing Translator",
+      "Microsoft Translator web"
+    ],
+    "tags": [
+      "translation",
+      "language"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/text/bing-translate.md"
   },
   {

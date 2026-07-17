@@ -731,7 +731,7 @@ kind: group-index
 - **`seqe-search-engines-query-engine`** (medium) — OSINT tool: SEQE - Search Engines Query Engine.
 - **`seznam-cz`** (high) — Use when you have a `name`/handle for a Czech subject and want Czech-web results Google under-indexes — returns `name`, `social-profile`, an
 - **`seznam-czech-republic`** (low) — OSINT tool: Seznam(Czech Republic).
-- **`shadowserver`** (medium) — OSINT tool: Shadowserver.
+- **`shadowserver`** (low) — Use when you have an `ip-address`, ASN, or country and want threat-exposure context — returns aggregate stats on scanned, compromised, and v
 - **`sharedigger`** (low) — search files in popular file hosting services
 - **`sharkscope`** (medium) — Poker player search and stats
 - **`shazam`** (medium) — Website related to music and finding songs
@@ -746,7 +746,7 @@ kind: group-index
 - **`sitejabber`** (low) — Use when you have a business `domain` or company name and want consumer reviews and reviewer profiles for it — returns review content and `s
 - **`sitelike`** (medium) — Website allowing users to search for related or similar sites.
 - **`siteslike`** (low) — OSINT tool: SitesLike.
-- **`slack-discord-zoom-invites-search`** (medium) — OSINT tool: Slack/Discord/Zoom Invites Search.
+- **`slack-discord-zoom-invites-search`** (low) — Use when you want to find public community invite links tied to a topic, org, or `username` — returns indexed Slack/Discord/Zoom invite page
 - **`slideshare-search-engine`** (low) — OSINT tool: SlideShare Search Engine.
 - **`snipplr`** (medium) — Code snippet search engine
 - **`snowfl-com`** (low) — torrent aggregator which searches various public torrent indexes in real-time

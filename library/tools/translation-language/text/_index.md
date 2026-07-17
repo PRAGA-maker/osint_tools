@@ -7,7 +7,7 @@ kind: group-index
 # translation-language/text
 
 ## Skills here
-- **`bing-translate`** (medium) — Quick translation of text and webpages
+- **`bing-translate`** (low) — Use when foreign-language text (a `name`, post, or document) blocks an investigation and you want it translated — returns the English (or ta
 - **`cambridge-dictionary`** (low) — Use when you have a foreign-language word/phrase from a subject's posts or documents and want an authoritative definition and bilingual tran
 - **`deepl-translator`** (medium) — Use when you have a foreign-language record, message, or document and want an accurate English (or other) rendering — returns translated tex
 - **`free-translation`** (medium) — Fast multi-language text translation in a browser

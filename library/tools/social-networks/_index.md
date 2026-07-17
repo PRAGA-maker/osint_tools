@@ -481,7 +481,7 @@ kind: group-index
 - **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.
 - **`reddit-investigator`** (medium) — OSINT tool: Reddit Investigator.
 - **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
-- **`reddit-post-scraping-tool`** (medium) — Simple #python script for scraping post from #Reddit (by keywords and subreddit name)
+- **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t
 - **`reddit-reditr`** (medium) — OSINT tool: Reddit - Reditr.
 - **`reddit-scraper`** (medium) — Crawl posts, comments, communities, and users without login.
 - **`reddit-search-cemulate`** (low) — Alternative Reddit search tool.

@@ -17,7 +17,7 @@ kind: group-index
 - **`screenshots-com`** (medium) — Visual timeline checks of website appearance changes
 - **`textfiles-com`** (low) — Use when a `name`, `username` or `email` may appear in 1980s–90s BBS/hacker text-file culture — returns document-id and username leads from 
 - **`uk-web-archive`** (medium) — Use when you have a UK `domain`, site title, `name`, or keyword and want historical captures of UK web content — returns domain, metadata-ex
-- **`wayback-machine-chrome-extension`** (medium) — Fast archive lookups while browsing dead or changed pages
+- **`wayback-machine-chrome-extension`** (medium) — Use when you hit a dead/changed page (a `domain` or URL) and want its archived version fast — returns the Internet Archive's saved snapshots
 - **`waybackpack`** (medium) — Batch export of historical snapshots for offline analysis
 - **`web-archive-ru`** (medium) — Supplemental archive checks when mainstream archives lack coverage
 
