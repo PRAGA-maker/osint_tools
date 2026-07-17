@@ -93,7 +93,6 @@ kind: group-index
 - **`live-coin-watch`** (low) — OSINT tool: Live Coin Watch.
 - **`matbea`** (low) — OSINT tool: Matbea.
 - **`medium-com`** (medium) — OSINT tool: medium.com.
-- **`merklescience-com`** (medium) — OSINT tool: merklescience.com.
 - **`mixero-io`** (medium) — OSINT tool: mixero.io.
 - **`mylostaccount-org-uk`** (medium) — OSINT tool: mylostaccount.org.uk.
 - **`nonfungible-com`** (low) — help to analyze the NFT market, find out which tokens were sold most actively (week, month, year, all time)

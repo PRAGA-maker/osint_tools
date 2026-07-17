@@ -55,7 +55,7 @@ kind: group-index
 - **`21-domain-japan`** (medium) — Japanese service provider for registering websites and domain addresses
 - **`876-solutions-jamaica`** (medium) — Jamaican service provider for registering websites and domain addresses
 - **`aa419-fake-sites-database`** (low) — OSINT tool: aa419 Fake Sites Database.
-- **`about-rdap-org`** (medium) — OSINT tool: about.rdap.org.
+- **`about-rdap-org`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface an
 - **`account-arin-net`** (medium) — OSINT tool: account.arin.net.
 - **`accuranker`** (low) — OSINT tool: Accuranker.
 - **`afrinic`** (medium) — OSINT tool: AFRINIC.
@@ -118,7 +118,7 @@ kind: group-index
 - **`check-point-live-cyber-threat-map`** (low) — OSINT tool: Check Point Live Cyber Threat Map.
 - **`checkphishai`** (low) — An online tool that finds registered domain typosquats and analyzes them for suspicious activity.
 - **`chismodon`** (low) — Command line #osint toolkit for domain information gathering. Search by domain name, Google Play Store ID, CIDR/ASN, email/username/password
-- **`cira-whois-canada`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`cira-whois-canada`** (low) — Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redact
 - **`cloakquest3r`** (low) — Tool to uncover the IP address hidden by Cloudflare (or alternatives): - IP address History, - SSL Certificate Analysis, - Subdomain Scannin
 - **`cloudbrute`** (low) — Tool to find target infrastructure, files, and apps on the popular cloud providers
 - **`cloudflare-resolver-tool`** (low) — OSINT tool: Cloudflare Resolver Tool.

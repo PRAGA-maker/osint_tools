@@ -708,7 +708,7 @@ kind: group-index
 - **`oanda`** (medium) — Currency converter, view historial and live exchange rates
 - **`obituaries-from-newspapers-north-america`** (high) — Use when you have a `name` and want obituary/death notices — returns death dates, hometowns and named surviving relatives from North America
 - **`obsidian-cli`** (medium) — Very simple #go tool that let to interact with the Obsidian using the terminal. Open, search, create and edit files. Can be combined with an
-- **`oec-world`** (medium) — A tool for detailed analysis of international trade. It will show clearly which country sells which products, to which countries these produ
+- **`oec-world`** (low) — Use when you have an `employer-org` (a company or trade entity) or a country/product and want international trade-flow context — returns imp
 - **`oecd-aid-database`** (low) — OSINT tool: OECD Aid Database.
 - **`oecd-data`** (low) — OSINT tool: OECD Data.
 - **`oecd-factbook`** (low) — OSINT tool: OECD Factbook.

@@ -480,7 +480,7 @@ kind: group-index
 - **`reddit-enhancement-suite-firefox`** (low) — Firefox add-on enhancing the Reddit browsing experience.
 - **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.
 - **`reddit-investigator`** (medium) — OSINT tool: Reddit Investigator.
-- **`reddit-persona`** (medium) — OSINT tool: Reddit\_Persona.
+- **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
 - **`reddit-post-scraping-tool`** (medium) — Simple #python script for scraping post from #Reddit (by keywords and subreddit name)
 - **`reddit-reditr`** (medium) — OSINT tool: Reddit - Reditr.
 - **`reddit-scraper`** (medium) — Crawl posts, comments, communities, and users without login.
@@ -699,7 +699,6 @@ kind: group-index
 - **`tweeview`** (medium) — Twitter conversation visualization (beta)
 - **`twemex`** (medium) — Twitter sidebar with: quick commands for searching your own tweets, lists, users tweets and replies; quick links to quotes of current tweet,
 - **`twiangulate-analyzing-the-connections-between-friends-and-followers`** (high) — Use when you have two or more Twitter/X `username`s and want to find their mutual friends/followers and shared network — returns associate, 
-- **`twiangulate`** (medium) — OSINT tool: Twiangulate.
 - **`twicsy-com`** (medium) — OSINT tool: Twicsy.com.
 - **`twiiter-trending-archive`** (medium) — A wide range of options for analyzing #Twitter trending history: 1. See what was popular on a particular day in a particular country or in t
 - **`twint-2`** (low) — Use when an old workflow references Twint for Twitter scraping — returns little now; it's archived and broken since the X API changes, so us

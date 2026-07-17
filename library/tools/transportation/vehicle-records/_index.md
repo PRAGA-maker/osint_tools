@@ -11,7 +11,7 @@ kind: group-index
 - **`autoref-eu`** (medium) — EU vehicle specification lookup and plate-to-VIN workflows
 - **`carnet-ai`** (medium) — Use when you have an `image` of a car and want to identify its make, model and generation — returns a physical-description of the vehicle to
 - **`findbyplate`** (medium) — Use when you have a US `vehicle-plate` + state and want to decode the vehicle and probe for ownership hints — returns vin and vehicle specs 
-- **`finnik-nl`** (medium) — Netherlands plate investigations and inspection history checks
+- **`finnik-nl`** (medium) — Use when you have a Dutch `vehicle-plate` and want its full vehicle record — returns specs, APK (inspection) history, tax/insurance status, 
 - **`myaccident-traffic-accident-map`** (medium) — US accident history verification and claims investigations
 - **`nhtsa-vehicle-api`** (medium) — VIN decoding and US vehicle specification checks
 - **`vindecodr`** (medium) — Rapid vehicle specification lookup from VIN values

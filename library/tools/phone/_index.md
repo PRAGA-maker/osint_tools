@@ -77,7 +77,7 @@ kind: group-index
 - **`numverify-api`** (high) — Use when you have a `phone` number and want to validate it and learn its country, carrier, and line type — returns validity, country/region,
 - **`nuwber`** (high) — Use when you have a US `name`, `phone` or `address` and want a person's contact profile — returns addresses, phone numbers, emails and relat
 - **`ofcom-org-uk`** (medium) — Use when you have a UK `address`/postcode (or a `geolocation`) and want to know which mobile networks cover it — returns per-operator signal
-- **`okcaller`** (medium) — Free reverse-phone lookup.
+- **`okcaller`** (medium) — Use when you have a US `phone` number and want caller-ID / reverse-lookup context — returns an associated name and community-reported caller
 - **`oldphonebook-com`** (high) — Use when you have a `name` or `phone` and want a historical US listing (back to ~1994) — returns the archived name, address and phone from o
 - **`open-cnam`** (high) — Use when you have a US `phone` and want the registered caller-ID name (CNAM) for the line — returns the CNAM string (a name), now via Neusta
 - **`osint-forensics-mobile`** (medium) — Collection of mobile OSINT and forensics tools.

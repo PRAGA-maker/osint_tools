@@ -64674,42 +64674,57 @@
   {
     "id": "about-rdap-org",
     "name": "about.rdap.org",
-    "description": "OSINT tool: about.rdap.org.",
+    "description": "Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface and the standardized JSON registration record.",
     "url": "https://about.rdap.org/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Querying RDAP (the modern, structured successor to WHOIS) for domains, IPs, and ASNs.",
     "selectorsIn": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
     "selectorsOut": [
-      "domain"
+      "domain",
+      "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free informational hub and hosted RDAP client; RDAP itself is a free open protocol run by registries/RIRs. No account or key.",
+    "opsec": "passive",
+    "opsecNote": "RDAP queries hit the registry/RIR, not the target's server, so the domain/IP owner is not alerted. The query goes through the hosted client or the bootstrap service, which sees your IP; use a clean IP for sensitive lookups. Results are the same public data WHOIS exposed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "RDAP is the IETF/ICANN-standardized registration-data protocol; about.rdap.org is a community reference hub pointing to authoritative registry endpoints.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "viewdns-info",
+      "whoxy",
+      "team-cyru-ip-to-asn-lookup"
+    ],
+    "aliases": [
+      "RDAP",
+      "rdap.org"
+    ],
     "tags": [
       "domainsandips",
-      "Domains & IPs"
+      "Domains & IPs",
+      "rdap",
+      "whois"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/about-rdap-org.md"
   },
   {
@@ -68730,48 +68745,60 @@
   },
   {
     "id": "cira-whois-canada",
-    "name": "CIRA Whois (Canada)",
-    "description": "Tool that identifies the available registration information for a website or domain name",
+    "name": "CIRA WHOIS (Canada)",
+    "description": "Use when you have a `.ca` `domain` and want its authoritative registration record — returns registrar, status, and (where not privacy-redacted) registrant details from Canada's official registry.",
     "url": "https://cira.ca/ca-domains/whois",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Authoritative WHOIS for Canadian .ca domains, direct from the registry (CIRA).",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "name",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free public WHOIS run by CIRA, the .ca registry. No account or key; a CAPTCHA gates each lookup.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "The query goes to CIRA's registry, not the target's website, so the domain owner is not alerted. CIRA sees your IP and rate-limits/CAPTCHAs abusive use. Individual .ca registrant contact info is redacted by default under CIRA privacy; organization registrants may still be shown.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "CIRA is the official registry operator for the .ca TLD; this is the authoritative source for .ca registration data.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "team-cyru-ip-to-asn-lookup",
+      "viewdns-info",
+      "whoxy"
+    ],
+    "aliases": [
+      "CIRA WHOIS",
+      ".ca whois"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois-ip-lookups-website-analysis",
+      "canada"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/cira-whois-canada.md"
   },
   {
@@ -114898,48 +114925,6 @@
     "_file": "library/tools/financial-crypto/medium-com.md"
   },
   {
-    "id": "merklescience-com",
-    "name": "merklescience.com",
-    "description": "OSINT tool: merklescience.com.",
-    "url": "https://blog.merklescience.com/general/how-to-become-a-certified-crypto-investigator",
-    "category": "financial-crypto",
-    "path": [
-      "financial-crypto"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "crypto-wallet",
-      "name"
-    ],
-    "selectorsOut": [
-      "crypto-wallet"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/financial-crypto/merklescience-com.md"
-  },
-  {
     "id": "metasleuth",
     "name": "MetaSleuth",
     "description": "Use when you have a `crypto-wallet` address or tx hash and want to trace fund flows across chains — returns linked `crypto-wallet`s, exchange endpoints and `associate` clusters.",
@@ -129228,13 +129213,13 @@
   {
     "id": "seeker",
     "name": "Seeker",
-    "description": "Accurately locate smartphones using social engineering (geolocation via crafted phishing page).",
+    "description": "Use when you can get a subject to click a link (with authorization) and want their precise location — returns GPS geolocation plus ip-address and device-id from the clicked page.",
     "url": "https://github.com/thewhiteh4t/seeker",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "Obtaining precise GPS coordinates and device info from a cooperating/target device click.",
+    "bestFor": "Capturing precise GPS coordinates, IP, and device details when a target clicks a hosted consent-prompt link — authorized use only.",
     "selectorsIn": [
       "social-profile"
     ],
@@ -129243,15 +129228,18 @@
       "ip-address",
       "device-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source (Python). No account or key; you supply your own hosting/tunnel (e.g. ngrok) for the capture page.",
     "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "This is an ACTIVE social-engineering tool — you host a page that prompts the target for location permission and capture GPS/IP/device data when they click and consent. It directly interacts with and deceives the subject, is highly intrusive, and is unlawful without authorization (consent, or a law-enforcement/legal order). Never deploy against a person without a clear legal basis; the link and hosting also expose YOUR infrastructure.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Popular but it is an active social-engineering/phishing tool; use only with authorization.",
+    "trustNote": "Widely-known open-source tool (thewhiteh4t); it works as described, but it is an offensive social-engineering utility, so the \"trust\" is in the code, not in any claim of lawful safety.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -129260,6 +129248,10 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "relatedTools": [
+      "finalrecon",
+      "nexfil"
+    ],
     "aliases": [
       "thewhiteh4t/seeker"
     ],
@@ -129270,12 +129262,8 @@
       "gps"
     ],
     "source": "gh-topic-reconnaissance",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "finalrecon",
-      "nexfil"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/seeker.md"
   },
   {
@@ -213607,13 +213595,13 @@
   {
     "id": "okcaller",
     "name": "OKCaller",
-    "description": "Free reverse-phone lookup.",
+    "description": "Use when you have a US `phone` number and want caller-ID / reverse-lookup context — returns an associated name and community-reported caller reputation.",
     "url": "https://www.okcaller.com/",
     "category": "phone",
     "path": [
       "phone"
     ],
-    "bestFor": "Free reverse phone lookup with caller information.",
+    "bestFor": "Free reverse phone lookup with caller name ID and crowd-sourced spam/scam reports.",
     "selectorsIn": [
       "phone"
     ],
@@ -213621,31 +213609,42 @@
       "name",
       "phone"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to look up; a Google sign-in is now required to view real-time Caller Name ID at no charge.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reverse-lookup queries are read-only and the number's owner is not notified. Signing in with Google ties the lookup to that account; use a sock-puppet Google account. OKCaller also lets people opt out / manage how their number appears, so absence of data can be an opt-out, not a dead number.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established free caller-ID service with a user-contributed database; name matches and spam labels are community/aggregated data and should be corroborated.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "us"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "truecaller",
+      "thatsthem-phone-search",
+      "sync-me"
+    ],
+    "aliases": [
+      "okcaller.com"
+    ],
     "tags": [
       "phone",
-      "reverse-phone"
+      "reverse-phone",
+      "caller-id"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/phone/okcaller.md"
   },
   {
@@ -252006,38 +252005,58 @@
   },
   {
     "id": "oec-world",
-    "name": "Oec World",
-    "description": "A tool for detailed analysis of international trade. It will show clearly which country sells which products, to which countries these products are sold and in what trade value (in $)",
+    "name": "OEC World",
+    "description": "Use when you have an `employer-org` (a company or trade entity) or a country/product and want international trade-flow context — returns import/export relationships and named trading companies.",
     "url": "https://oec.world/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mapping international trade flows and identifying companies importing/exporting specific products.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Core visualizations and country/product trade data are free; company-level trade records (\"Company Data\" / trade shipments) and bulk data sit behind paid Pro tiers.",
+    "opsec": "passive",
+    "opsecNote": "Browsing macro trade data and profiles is read-only and anonymous to any subject. OEC (the vendor) sees your account/IP if you register for Pro; the free visualizations need no login.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Long-running MIT Media Lab spin-off (Datawheel) using official UN Comtrade / national customs data; macro figures are authoritative, company-level records are third-party aggregated.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "import-yeti",
+      "panjiva",
+      "opencorporates"
+    ],
+    "aliases": [
+      "Observatory of Economic Complexity",
+      "oec.world"
+    ],
     "tags": [
-      "Company information search"
+      "Company information search",
+      "trade",
+      "import-export"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/oec-world.md"
   },
   {
@@ -295254,26 +295273,33 @@
   },
   {
     "id": "ocg",
-    "name": "OCG",
-    "description": "Charitable search engine that supports our oceans.",
+    "name": "OCG (Ocean Cleanup Search)",
+    "description": "Use when you want a general web `name`/keyword search from an alternate index — returns web results (via a charitable search front-end) with a different result mix than Google.",
     "url": "https://ocg.org",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A general-purpose alternate search front-end; useful only as an extra index to cross-check mainstream results.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free consumer search engine; funds ocean-cleanup work from ad revenue. No account needed; a browser extension is offered.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Standard web-search queries are read-only and never touch the subject. Like any search engine, OCG (and its upstream index provider) logs your queries/IP; use a clean session for sensitive searches and prefer a private window.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A charitable search front-end that proxies a mainstream search index; it offers no OSINT-specific data, so its value is only as an alternate result set to cross-check.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -295281,15 +295307,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google-advanced-search",
+      "bing",
+      "duckduckgo"
+    ],
+    "aliases": [
+      "Ocean Cleanup Group search",
+      "ocg.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "search-engines"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ocg.md"
   },
   {
@@ -335928,36 +335962,57 @@
   },
   {
     "id": "reddit-persona",
-    "name": "Reddit\\_Persona",
-    "description": "OSINT tool: Reddit\\_Persona.",
+    "name": "Reddit Persona",
+    "description": "Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolocation/timezone hints built from that user's post/comment history.",
     "url": "https://github.com/n2itn/reddit_persona",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Building a persona (interests, communities, activity patterns) from a Reddit user's public history.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, open-source Python script. Uses Reddit's API (PRAW), so you supply free Reddit API credentials (client id/secret).",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Reads the target's public Reddit posts/comments via the API; the user is not notified and cannot see who queried them. Your Reddit API credentials/IP are visible to Reddit. Do not upvote/comment/DM from the account you use — keep it read-only to stay passive.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Small open-source project; the value is in aggregating public Reddit data, and every inference should be verified against the raw posts it cites.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "reddit-user-analyser",
+      "redective",
+      "reddit-investigator"
+    ],
+    "aliases": [
+      "n2itn/reddit_persona"
+    ],
+    "tags": [
+      "reddit",
+      "persona",
+      "python"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/reddit-persona.md"
   },
   {
@@ -346948,51 +347003,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/social-networks/twemex.md"
-  },
-  {
-    "id": "twiangulate",
-    "name": "Twiangulate",
-    "description": "OSINT tool: Twiangulate.",
-    "url": "https://twiangulate.com/search",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "twiangulate-analyzing-the-connections-between-friends-and-followers"
-    ],
-    "_file": "library/tools/social-networks/twiangulate.md"
   },
   {
     "id": "twiangulate-analyzing-the-connections-between-friends-and-followers",
@@ -361675,43 +361685,57 @@
   {
     "id": "finnik-nl",
     "name": "Finnik (NL)",
-    "description": "Netherlands plate investigations and inspection history checks",
+    "description": "Use when you have a Dutch `vehicle-plate` and want its full vehicle record — returns specs, APK (inspection) history, tax/insurance status, and ownership-count history.",
     "url": "https://finnik.nl/en",
     "category": "transportation",
     "path": [
       "transportation",
       "vehicle-records"
     ],
-    "bestFor": "Netherlands plate investigations and inspection history checks",
-    "input": "Dutch license plate number",
-    "output": "Vehicle specs, APK timeline, and related ownership/tax data",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Dutch (Netherlands) license-plate lookups — specs, inspection timeline, and ownership history.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "vehicle-plate",
+      "vin"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier shows a substantial vehicle summary (specs, APK dates, ownership count); full history/valuation reports and some fields require a paid Finnik report.",
     "opsec": "passive",
-    "opsecNote": "Uses public/government-linked datasets with user-initiated lookups.",
+    "opsecNote": "Draws on the Dutch RDW open vehicle register; lookups are user-initiated and the plate owner is not notified. Finnik sees your IP/account; a full report requires registration/payment. No owner name is exposed (Dutch privacy law), so this profiles the vehicle, not the person.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "payment-wall-partial"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built on the official RDW (Netherlands vehicle authority) open dataset; the underlying registration data is authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "account",
+    "coverage": [
+      "nl"
+    ],
+    "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "registration": false,
+    "relatedTools": [
+      "rdw-open-data",
+      "ovi-rdw"
+    ],
+    "aliases": [
+      "finnik.nl"
+    ],
+    "tags": [
+      "vehicle",
+      "license-plate",
+      "netherlands",
+      "rdw"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vehicle-records/finnik-nl.md"
   },
   {

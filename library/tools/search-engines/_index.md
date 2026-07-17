@@ -563,7 +563,7 @@ kind: group-index
 - **`oa-mg`** (low) — OSINT tool: OA.mg.
 - **`occrp-org`** (medium) — Organized Crime and Corruption Reporting Project compiled public data sources, search by Continent, Country and data type
 - **`oceanhero`** (medium) — Charitable search engine that supports our oceans.
-- **`ocg`** (medium) — Charitable search engine that supports our oceans.
+- **`ocg`** (low) — Use when you want a general web `name`/keyword search from an alternate index — returns web results (via a charitable search front-end) with
 - **`octosearch-dootech-com`** (medium) — OSINT tool: Octosearch.dootech.com.
 - **`od-search-tool`** (medium) — Open directory search tool.
 - **`odbparser`** (medium) — ODBParser is a tool to search for PII being exposed in open databases.
