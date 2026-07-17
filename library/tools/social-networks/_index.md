@@ -332,7 +332,7 @@ kind: group-index
 - **`inteltechniques-facebook`** (high) — Use when you have a Facebook `username`/`social-profile` or numeric ID and want to run structured Facebook lookups (ID resolution, friend/ph
 - **`inteltechniques-twitter`** (high) — Use when you have an X/Twitter `username` or `name` and want to run advanced searches across many operators at once — returns profile, posts
 - **`internect-info`** (high) — Use when you have a Bluesky handle, DID or AT URI and want to resolve it to the underlying AT Protocol identity — returns the stable `social
-- **`invidious-instances`** (medium) — OSINT tool: Invidious Instances.
+- **`invidious-instances`** (low) — Use when you have a YouTube `social-profile`/video and want to view it privately without an account — returns the same `social-profile` cont
 - **`izuum`** (high) — Use when you have an Instagram `username` and want to view/enlarge their (public) profile picture — returns image, social-profile. Now large
 - **`jesus-social`** (high) — Use when you have a `name` or `username` and want to check for a profile on this niche Christian social network — returns a `social-profile`
 - **`jump-cutter`** (medium) — An extension for those who watch university lectures on #YouTube and want to save their time. It identifies chunks where the lecturer writes

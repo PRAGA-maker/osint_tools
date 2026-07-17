@@ -145,7 +145,7 @@ kind: group-index
 - **`canadian-importers-database`** (medium) — OSINT tool: Canadian Importers Database.
 - **`canadian-industrial-designs-database`** (medium) — OSINT tool: Canadian Industrial Designs Database.
 - **`canadian-institute-for-health-information`** (medium) — OSINT tool: Canadian Institute for Health Information.
-- **`canadian-intellectual-property-office`** (medium) — OSINT tool: Canadian Intellectual Property Office.
+- **`canadian-intellectual-property-office`** (medium) — Use when you have a `name` or `employer-org` and want their Canadian patents/trademarks — returns filing `document-id`s, owner/inventor `nam
 - **`canadian-legal-information-institute`** (high) — Use when you have a `name` and want Canadian court/tribunal decisions or legislation mentioning them — returns document-id case citations an
 - **`canadian-obituaries`** (high) — Use when you have a `name` and want to check whether a subject (or relative) has a Canadian death/obituary notice — returns death confirmati
 - **`canadian-patents-database`** (medium) — OSINT tool: Canadian Patents Database.

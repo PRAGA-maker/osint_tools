@@ -16,7 +16,7 @@ kind: group-index
 - **`alltop`** (low) — OSINT tool: Alltop.
 - **`archivarix-com`** (medium) — OSINT tool: archivarix.com.
 - **`archive-it`** (low) — Website that provides cached page recovery services of a specific URL link
-- **`archive-md`** (medium) — OSINT tool: Archive.md.
+- **`archive-md`** (medium) — Use when you have a `domain`/URL and want a frozen, tamper-proof snapshot of a page — returns a permanent archived capture with a citable `d
 - **`archive-org-downloader`** (medium) — A simple #python script for downloading books from [http://archive.org](http://archive.org) in PDF format. You can adjust image resolution t
 - **`archive-org`** (medium) — OSINT tool: archive.org.
 - **`archive-page-addons-mozilla-org`** (medium) — OSINT tool: archive page (addons.mozilla.org).

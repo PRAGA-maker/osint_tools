@@ -386,7 +386,7 @@ kind: group-index
 - **`ibj-criminal-defense-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on l
 - **`iconfinder-com`** (low) — Icons Search Engine
 - **`impersonal-me`** (medium) — Use when you have a `name`, `username`, or keyword and want to see Google results as they appear in another country/language — returns local
-- **`incruit-job-search-engine-south-korea`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`incruit-job-search-engine-south-korea`** (medium) — Use when you have a `name` or `employer-org` and want Korean employment/recruitment traces — returns company profiles, job postings and `emp
 - **`indeed-job-search-engine-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`indeed-job-search-engine-worldwide`** (medium) — Website that offers job search services for multiple countries worldwide
 - **`info-com-meta-search-engine-united-kingdom`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
@@ -451,7 +451,7 @@ kind: group-index
 - **`klug-suchen`** (medium) — Website made for former Soviet soldiers, officers and their families.
 - **`komo`** (medium) — AI powered search engine
 - **`krugle`** (medium) — Enterprise code search tool
-- **`kvasir-search-engine-norway`** (medium) — Norway-based web search engine covering regional results
+- **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
 - **`laiesken-search-engine-spain`** (medium) — Spanish web search engine covering regional results
 - **`lapozz-search-engine-hungary`** (medium) — Hungarian surface web search engine covering regional results
 - **`law-enforcement-resource-portal`** (medium) — Resources for law enforcement officers, agencies and associations around the world

@@ -216,7 +216,7 @@ kind: group-index
 - **`ocearch-shark-tracker`** (medium) — Click on a shark on the world map and find out its name, size and travel log.
 - **`old-maps-online`** (high) — Use when you have a `geolocation` or place `address` and want historical maps of that spot across time — returns historical map imagery and 
 - **`oldmapsonline`** (medium) — World aggregator of old maps from various sources (498,908 maps)
-- **`open-benches`** (medium) — Worldwide map of 22,756 memorial benches (added by users).
+- **`open-benches`** (medium) — Use when you have a `name` from a memorial-bench inscription and want its location — returns the bench `geolocation`, photo and full inscrip
 - **`open-street-map`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its features, POIs, and tags — without vendor
 - **`openinfrastructuremap`** (medium) — Use when an image or area shows power lines, pylons, substations, or telecom masts and you want to identify/confirm a location by its infras
 - **`openlayers`** (low) — Use when you are building a custom geospatial web app and need a powerful JS map library to display layers, imagery, and analysis results — 

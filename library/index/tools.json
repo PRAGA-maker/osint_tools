@@ -17733,38 +17733,55 @@
   },
   {
     "id": "archive-md",
-    "name": "Archive.md",
-    "description": "OSINT tool: Archive.md.",
+    "name": "Archive.today (archive.md)",
+    "description": "Use when you have a `domain`/URL and want a frozen, tamper-proof snapshot of a page — returns a permanent archived capture with a citable `document-id`.",
     "url": "https://archive.md/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "Capturing an on-demand permanent snapshot of a specific web page (incl. JS-heavy/social pages) and retrieving existing snapshots.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "document-id"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free, no account. archive.md is one of several interchangeable domains for Archive.today (also archive.ph, archive.today, archive.is).",
+    "opsec": "passive",
+    "opsecNote": "The archive fetches the page from ITS servers, so the target site sees Archive.today, not you — a low-footprint way to preserve evidence. Note that submitting a URL makes the capture public; don't archive a private link you don't want exposed.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running, widely-cited independent web archive; captures are immutable snapshots suitable as evidence.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "archive.today",
+      "archive.ph",
+      "archive.is",
+      "archive.md"
+    ],
     "tags": [
-      "Archives"
+      "Archives",
+      "web-archive",
+      "evidence-preservation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/archive-md.md"
   },
   {
@@ -48086,41 +48103,53 @@
   {
     "id": "gumtree-classified-ads-australia",
     "name": "Gumtree Classified Ads (Australia)",
-    "description": "One of the Top 10 classified advertisements-related websites worldwide",
+    "description": "Use when you have a `name`, `username` or `phone` and want Australian classified-ad activity — returns seller `social-profile`, item photos and rough `geolocation`.",
     "url": "http://www.gumtree.com.au",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a person's buy/sell/rental listings and seller profile on Australia's dominant classifieds site.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and view listings and seller profiles; posting/some features need a free account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listings is passive and doesn't alert the seller. If you MESSAGE a seller you become active and identifiable — use a sock-puppet account and never contact from a personal one during an investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Major, long-running Australian classifieds platform; listing content is user-generated, so treat details as unverified claims.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "au"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Gumtree Australia",
+      "gumtree.com.au"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "classifieds",
+      "australia"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/gumtree-classified-ads-australia.md"
   },
   {
@@ -126533,43 +126562,51 @@
   },
   {
     "id": "open-benches",
-    "name": "Open Benches",
-    "description": "Worldwide map of 22,756 memorial benches (added by users).",
+    "name": "OpenBenches",
+    "description": "Use when you have a `name` from a memorial-bench inscription and want its location — returns the bench `geolocation`, photo and full inscription text.",
     "url": "https://openbenches.org/",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Searching a worldwide crowdsourced map of memorial-bench inscriptions to place a name at a physical location.",
     "selectorsIn": [
-      "geolocation"
+      "name"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to search and browse; open data (photos CC-licensed). No account needed to search.",
+    "opsec": "passive",
+    "opsecNote": "A public crowdsourced memorial database; searching contacts no one. Records commemorate (often deceased) individuals — handle with sensitivity, especially in bereavement/missing-persons contexts.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Volunteer-contributed inscriptions and photos; content is user-submitted, so accuracy and completeness vary.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Open Benches",
+      "openbenches.org"
+    ],
     "tags": [
       "Maps, Geolocation and Transport",
-      "Urban and industrial infrastructure"
+      "memorials",
+      "crowdsourced"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/open-benches.md"
   },
   {
@@ -222607,36 +222644,57 @@
   },
   {
     "id": "canadian-intellectual-property-office",
-    "name": "Canadian Intellectual Property Office",
-    "description": "OSINT tool: Canadian Intellectual Property Office.",
-    "url": "https://www.ic.gc.ca/eic/site/cipointernet-internetopic.nsf/eng/Home",
+    "name": "Canadian Intellectual Property Office (CIPO)",
+    "description": "Use when you have a `name` or `employer-org` and want their Canadian patents/trademarks — returns filing `document-id`s, owner/inventor `name`s and `address`es.",
+    "url": "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Canada's official patent, trademark, copyright and industrial-design registers by owner/inventor name.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public search of the Canadian Patents, Trademarks, Copyright and Industrial Design databases; no account. (Formal certified copies cost money; searching does not.)",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query official government IP registers; the applicant/owner is not contacted and the records are public. Standard web hygiene applies for sensitive queries.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by CIPO (part of Innovation, Science and Economic Development Canada); the authoritative primary source for Canadian IP records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "google-patent-search"
+    ],
+    "aliases": [
+      "CIPO",
+      "Canadian Patents Database",
+      "Canadian Trademarks Database"
+    ],
+    "tags": [
+      "patent-records",
+      "trademark-records",
+      "public-records",
+      "canada"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/canadian-intellectual-property-office.md"
   },
   {
@@ -235984,42 +236042,55 @@
   },
   {
     "id": "google-patent-search",
-    "name": "Google Patent Search",
-    "description": "International patent research",
+    "name": "Google Patents",
+    "description": "Use when you have an inventor `name` or `employer-org` and want their patents — returns patent `document-id`s, co-inventor `associate`s and assignee `employer-org`s.",
     "url": "https://patents.google.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "patent-records"
     ],
-    "bestFor": "International patent research",
-    "input": "Patent number, inventor, keyword, CPC",
-    "output": "Patent docs, citations, families",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching worldwide patents and applications by inventor name, assignee, keyword or number.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "associate",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search full patent text and PDFs across many national offices; no account.",
     "opsec": "passive",
-    "opsecNote": "Google service tracks searches",
+    "opsecNote": "You search Google's public patent index; the inventor/company is not contacted. Google logs your query as usual — use a clean browser for sensitive research, but the patent data itself is public record.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Aggregates official patent-office data (USPTO, EPO, WIPO and many more); the underlying grants/applications are authoritative public records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "aliases": [
+      "Google Patents",
+      "patents.google.com"
+    ],
+    "tags": [
+      "patent-records",
+      "inventor-search",
+      "public-records"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/patent-records/google-patent-search.md"
   },
   {
@@ -286901,41 +286972,52 @@
   {
     "id": "incruit-job-search-engine-south-korea",
     "name": "Incruit Job Search Engine (South Korea)",
-    "description": "Website that offers job search services across the country at the national and province/state level",
+    "description": "Use when you have a `name` or `employer-org` and want Korean employment/recruitment traces — returns company profiles, job postings and `employer-org` links.",
     "url": "http://www.incruit.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching South Korean job listings and company profiles to tie a person or employer to the Korean job market.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse job postings and company pages; a Korean account (and often KR phone verification) is needed to apply or see some employer detail.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listings and company pages is passive and reaches no individual. Creating an account/applying is active and typically requires Korean identity verification — avoid unless you have a legitimate, lawful basis.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Major established Korean recruitment portal; company/job data is employer-supplied, so treat postings as claims.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "kr"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Incruit",
+      "incruit.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "job-search",
+      "korea"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/incruit-job-search-engine-south-korea.md"
   },
   {
@@ -289755,24 +289837,31 @@
   {
     "id": "kvasir-search-engine-norway",
     "name": "Kvasir Search Engine (Norway)",
-    "description": "Norway-based web search engine covering regional results",
+    "description": "Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and news pages.",
     "url": "http://www.kvasir.no",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching the Norwegian web with a local portal interface for names, businesses and Norwegian-language content.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to search in the browser; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query a Norwegian search portal, not the subject; nothing reaches them. The operator sees your query/IP — use a clean browser/VPN (a Norwegian IP can improve local ranking) for sensitive terms.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-established Norwegian portal (Schibsted); its results are backed by a major search provider, so quality is reliable.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -289781,15 +289870,20 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Kvasir",
+      "kvasir.no"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "search-engines",
+      "norway"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/kvasir-search-engine-norway.md"
   },
   {
@@ -327279,35 +327373,50 @@
   {
     "id": "invidious-instances",
     "name": "Invidious Instances",
-    "description": "OSINT tool: Invidious Instances.",
+    "description": "Use when you have a YouTube `social-profile`/video and want to view it privately without an account — returns the same `social-profile` content via a tracker-free proxy.",
     "url": "https://docs.invidious.io/instances/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Watching and downloading YouTube content anonymously (no Google account, no tracking) through an open-source proxy front-end.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "degraded",
+    "pricing": "free",
+    "costNote": "Free and open source; a community-maintained list of public instances (you can also self-host).",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "An Invidious instance fetches YouTube on your behalf, so Google sees the instance rather than your IP/account — useful for viewing a subject's channel/videos without leaving a Google-side footprint. Note the instance operator can see your requests; prefer a reputable instance or self-host.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Reputable open-source project, but public instances come and go and are sometimes rate-limited/blocked by YouTube; verify an instance works before relying on it.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
-    "localInstall": false,
+    "api": true,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "Invidious",
+      "invidious.io"
+    ],
+    "tags": [
+      "youtube",
+      "privacy-frontend",
+      "opsec"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/invidious-instances.md"
   },
   {
