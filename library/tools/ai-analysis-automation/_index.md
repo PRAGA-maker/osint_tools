@@ -92,7 +92,7 @@ kind: group-index
 - **`crossfilter`** (low) — OSINT tool: Crossfilter.
 - **`crowdsec`** (low) — OSINT tool: CrowdSec.
 - **`csvkit`** (low) — OSINT tool: csvkit.
-- **`curl-for-osint`** (medium) — Reference/cheat-sheet collection of cURL command recipes for OSINT data collection from web sources.
+- **`curl-for-osint`** (low) — Use when you have a `username`, `email`, `domain`, or `ip-address` and want copy-paste cURL+grep recipes to query OSINT endpoints from the s
 - **`cyberbro`** (low) — OSINT tool: Cyberbro.
 - **`cyberchef`** (low) — Building and replaying multi-step decode and transform recipes
 - **`cybergordon`** (low) — OSINT tool: CyberGordon.

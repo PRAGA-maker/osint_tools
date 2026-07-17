@@ -13,7 +13,6 @@ kind: group-index
 - **`mobile-coverage/`** — 4 skill(s) below.
 
 ## Skills here
-- **`123cam`** (medium) — OSINT tool: 123Cam.
 - **`24timezones-com`** (medium) — OSINT tool: 24timezones.com.
 - **`511on-ca`** (low) — OSINT tool: 511on.ca.
 - **`acled-data-crisis-map`** (medium) — OSINT tool: Acled data crisis map.

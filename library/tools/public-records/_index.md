@@ -263,7 +263,7 @@ kind: group-index
 - **`delaware`** (high) — Use when you have a `name` and want to check Delaware custody status — the Delaware DOC directs offender lookups to VINELink, returning cust
 - **`denmark`** (high) — Use when you have a Danish company `name`, `address`, or CVR number (or a person's name as an owner/director) and want the official business
 - **`denver-obituary-project`** (high) — Use when you have a `name` of someone who may have died in Colorado (outside Denver) between the 1970s and 1990 and want their obituary — re
-- **`dfw1n-osint`** (medium) — Australia-focused open-source intelligence resource repository.
+- **`dfw1n-osint`** (medium) — Use when you have an Australian `name`, `address`, or `domain` and need the right AU registry/people resource — a curated, missing-persons-o
 - **`diagramify`** (medium) — Use when you have investigation findings in prose and want a quick flowchart/relationship diagram from a text description — a workflow/visua
 - **`digital-public-library-of-america`** (medium) — Academic-related search engine providing open access to digitized library resources including images, texts, videos, and sounds
 - **`diligenciagroup-com`** (high) — Use when you have a `name`, `address`, or `employer-org` linked to the Middle East or Africa and want authoritative corporate-registry data,
@@ -611,7 +611,6 @@ kind: group-index
 - **`medicalcouncil-ie`** (high) — Use when you have a doctor's `name` and want to verify Irish medical registration — returns registration status, specialty/qualifications an
 - **`melissadata-campaign-contributions`** (medium) — OSINT tool: MelissaData (Campaign Contributions).
 - **`mellssa-data`** (medium) — OSINT tool: Mellssa Data.
-- **`mergent-intellect`** (medium) — OSINT tool: Mergent Intellect.
 - **`mergent-online`** (medium) — OSINT tool: Mergent Online.
 - **`michigan-resident-database`** (high) — Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and
 - **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres

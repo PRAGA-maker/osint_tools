@@ -50,7 +50,6 @@ kind: group-index
 - **`all-io-net`** (high) — Use when you have a `name`/handle/phrase and want to fire the same query across many engines at once — returns a launcher that runs your sea
 - **`alleba-philippines`** (low) — OSINT tool: Alleba (Philippines).
 - **`alleba`** (medium) — OSINT tool: Alleba.
-- **`allgamesearch`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
 - **`alltheinternet`** (low) — OSINT tool: AllTheInternet.
 - **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
@@ -64,7 +63,7 @@ kind: group-index
 - **`animalsearch`** (low) — Animal search directory aimed at kids
 - **`anon-scraper`** (low) — Search uploaded files to AnonFile using Google
 - **`antso-search-engine-china`** (medium) — Chinese surgace web search engine covering regional results
-- **`aol-search-databse`** (medium) — Search logs of 650,000 AOL users and an analysis of their personality
+- **`aol-search-databse`** (low) — Use when you have an AOL-era `username`/anonymised user-id or a distinctive `name`/place and want to mine the leaked 2006 AOL search logs — 
 - **`aol`** (low) — OSINT tool: Aol.
 - **`ap`** (low) — OSINT tool: AP.
 - **`app-store-and-itunes-search-engine`** (medium) — OSINT tool: App Store and iTunes search engine.
@@ -734,7 +733,6 @@ kind: group-index
 - **`shopperapproved`** (medium) — Website related to consumer product reviews
 - **`shopzilla`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
 - **`short-url-search-engine`** (medium) — OSINT tool: Short URL Search Engine.
-- **`sikkerapi`** (medium) — OSINT tool: SikkerAPI.
 - **`silobreaker`** (low) — OSINT tool: Silobreaker.
 - **`similar-site-search`** (medium) — Search engine that searches for websites and webages similar to the original entry made by the user
 - **`similarsites-com`** (medium) — Discover websites that are similar to each other

@@ -84,7 +84,7 @@ kind: group-index
 - **`castrick`** (high) — Use when you have an `email`, `username` or `phone` and want a trace-free reverse lookup into linked accounts — Castrick returned `social-pr
 - **`channel-crawler`** (low) — OSINT tool: Channel Crawler.
 - **`chartmasters-org-spotify-streaming-numbers-tool`** (low) — Use when you have an artist `name` and want their Spotify streaming totals per track — returns a public activity/popularity profile for that
-- **`chat-downloader`** (medium) — download chats messages in JSON from #YouTube, #Twitch, #Reddit and #Facebook.
+- **`chat-downloader`** (medium) — Use when you have a `social-profile` / livestream or VOD URL and want the full chat log — returns commenter `username`s, `name`s, and timest
 - **`chatter`** (high) — Use when you want automated keyword/phrase monitoring across Twitter, Reddit, and 4chan with alerts to Telegram — returns matching public po
 - **`chearch`** (medium) — OSINT tool: Chearch.
 - **`check-channel-badges`** (low) — OSINT tool: Check channel badges.
@@ -620,7 +620,6 @@ kind: group-index
 - **`taringa-latin-america`** (high) — Use when you have a `name`/`username` tied to Latin America and want historical posts/profiles from the defunct Taringa network — returns ar
 - **`teddit`** (medium) — OSINT tool: teddit.
 - **`tenai`** (medium) — Simple tool that uncover some followers of a private #Instagram account
-- **`terra`** (medium) — Collect information about twitter and Instagram accounts
 - **`the-bitmoji-avatar-history-enumerator-2`** (high) — Use when you have a Snapchat user's Bitmoji ID and want their historical avatar/outfit changes — returns image snapshots and physical-descri
 - **`the-dots`** (high) — Use when you have a `name` or `username` for someone in the creative/media industries and want their professional profile — returns a `socia
 - **`the-endorser`** (medium) — Use when you have LinkedIn `social-profile` URLs and want a relationship graph built from shared skill endorsements — returns `associate` li

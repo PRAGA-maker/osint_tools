@@ -160,7 +160,7 @@ kind: group-index
 - **`hugin`** (low) — Hugin is a free and open-source panorama photo stitching and HDR (High Dynamic Range imaging) merging software that helps users create seaml
 - **`hypem-music-search`** (high) — Use when you have an artist/DJ `name` or `username` and want to find their tracks, blog write-ups and linked profiles across music blogs — r
 - **`icon-finder`** (high) — Use when you have a small graphic/logo/icon `image` and want to identify or source a matching stock icon — a graphic-asset marketplace, not 
-- **`identifont-com`** (medium) — OSINT tool: Identifont.com.
+- **`identifont-com`** (low) — Use when you have an `image` of text/lettering (a logo, document, sign, or tattoo) and want to identify the exact font — returns the typefac
 - **`idgettr-com`** (medium) — Use when you have a Flickr username or profile URL and need the account's numeric NSID to anchor it for API/feed lookups.
 - **`image-color-picker`** (medium) — pick color (HEX or RGB) from image or website screenshot
 - **`image-google-com`** (high) — Use when you have a photo of a missing person, location, or object and want to find where else it appears online or what it depicts — return
@@ -215,7 +215,7 @@ kind: group-index
 - **`logobook`** (medium) — help to see which companies have a logo that looks like a certain object. You can use the suggested variants to geolocate photo.
 - **`lossless-cut`** (low) — Use when you have an `image`/video file and want to trim, split or inspect it without re-encoding — returns clipped segments and preserved `
 - **`lycos-image-search`** (low) — Use when you want a secondary keyword image-search index outside Google/Bing — returns image results for a text query.
-- **`lykdat-com`** (medium) — clothing reverse image search services
+- **`lykdat-com`** (medium) — Use when you have an `image` showing clothing and want to identify the garments and find visually matching retail products — returns clothin
 - **`lyrics-net`** (low) — Use when you have a fragment of song lyrics or an artist `name` and want to identify the track/artist or find a contributor profile — return
 - **`mangolinkworld`** (medium) — OSINT tool: MangolinkWorld.
 - **`maps-video`** (medium) — Google street view alternative. Online YouTube video driving map for different routes. Worldwide, but most videos in the USA and Europe.
