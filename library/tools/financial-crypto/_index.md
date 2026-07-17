@@ -38,7 +38,7 @@ kind: group-index
 - **`blockchain-com`** (low) — OSINT tool: Blockchain.com.
 - **`blockchain-explorer`** (low) — OSINT tool: Blockchain Explorer.
 - **`blockchain-info`** (low) — OSINT tool: Blockchain.info.
-- **`blockchair-com`** (medium) — OSINT tool: blockchair.com.
+- **`blockchair-com`** (low) — Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and counterpar
 - **`blockcypher`** (low) — OSINT tool: Blockcypher.
 - **`blockexplorer`** (low) — Following a bitcoin trail or following a bitcoin account?
 - **`bpfi-ie`** (medium) — OSINT tool: bpfi.ie.

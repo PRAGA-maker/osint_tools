@@ -355,7 +355,7 @@ kind: group-index
 - **`nibbler-website-test`** (medium) — Search for information and statistics about any online website
 - **`nibbler`** (low) — Free tool for comprehensive website analysis on more than ten different parameters.
 - **`nindo-host-morocco`** (medium) — Moroccan service provider for registering websites and domain addresses
-- **`nirsoft-whois-servers-list`** (medium) — Listing of over 200 active servers worldwide for conducting whois searches
+- **`nirsoft-whois-servers-list`** (low) — Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry dire
 - **`nmap-checker-tool`** (low) — OSINT tool: Nmap Checker Tool.
 - **`nmap-formatter`** (low) — A tool to convert NMAP scan results into different formats: html, csv, Markdown, json, svg (Graphviz), sqlite
 - **`nmap-online`** (low) — OSINT tool: NMAP Online.

@@ -174,7 +174,7 @@ kind: group-index
 - **`runmap`** (low) — running routes world map
 - **`russia-ukraine-monitor-map`** (low) — represent open source material such as videos, photos and imagery that have been cross-referenced with satellite imagery to determine precis
 - **`rzjets-net`** (low) — user updated online database (census) of civilian jet and turbojet aircraft
-- **`satellite-tracking`** (medium) — Space object and satellite movement monitoring
+- **`satellite-tracking`** (low) — Use when you have a satellite name/NORAD ID and want its live position and pass times — returns orbital position, altitude, and when it pass
 - **`searates-container-tracking`** (low) — tracking a shipping container by number
 - **`searchquarry`** (medium) — Plate/VIN and public-records lookup service.
 - **`shadowbroker`** (low) — Platform tracking global intelligence signals including corporate jets, satellites, and seismic events with AI analysis.

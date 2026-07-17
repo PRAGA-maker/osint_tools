@@ -48,7 +48,7 @@ kind: group-index
 - **`bodybuilding-com`** (medium) — Forum related to health, wellness, and/or fitness
 - **`boingboing-bbs`** (medium) — Mediafeed and comments website
 - **`bootsnall`** (medium) — Website related to social networking in the form of travel and accomodations
-- **`bpaste`** (medium) — OSINT tool: bpaste.
+- **`bpaste`** (low) — Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be sha
 - **`brijj`** (medium) — Networking website for business professionals from top companies and top colleges
 - **`budgettravel`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`built-with-flarum`** (medium) — OSINT tool: Built With Flarum.
@@ -187,7 +187,7 @@ kind: group-index
 - **`hot-or-not`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`hot-sheet-news`** (medium) — Website providing a list of links to leading TV, sports and news websites for current news and information
 - **`huffington-post-online-news`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
-- **`ideone`** (medium) — OSINT tool: ideone.
+- **`ideone`** (low) — Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host w
 - **`imcdb`** (low) — Internet Movie Cars Database
 - **`information-week-news`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`inkdrop-international-newspapers`** (medium) — English online news outlets from around the world

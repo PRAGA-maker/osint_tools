@@ -555,7 +555,7 @@ kind: group-index
 - **`snapchat-search-enter-username-here`** (medium) — OSINT tool: SnapChat Search (ENTER-USERNAME-HERE).
 - **`snapchat-user-search`** (medium) — OSINT tool: Snapchat User Search.
 - **`snapdex-the-best-snapchat-names-index`** (medium) — OSINT tool: Snapdex: The Best Snapchat Names Index.
-- **`snapdex`** (medium) — OSINT tool: Snapdex.
+- **`snapdex`** (medium) — Use when you have a `username` or `name` and want to find a Snapchat account — returns a wiki-style directory profile with the handle, snapc
 - **`snapintel`** (medium) — Python tool to gather information about a Snapchat user.
 - **`snapmap-archiver`** (medium) — OSINT tool: snapmap-archiver.
 - **`snapscraper`** (medium) — OSINT tool: SnapScraper.

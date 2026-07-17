@@ -19448,42 +19448,56 @@
   {
     "id": "firecrawl-dev",
     "name": "firecrawl.dev",
-    "description": "OSINT tool: firecrawl.dev.",
+    "description": "Use when you have a `domain`/URL and want its content as clean structured data — crawls and converts pages to markdown/JSON for archiving or bulk extraction.",
     "url": "https://www.firecrawl.dev/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
+    "bestFor": "Programmatically scraping/crawling a site into clean markdown or JSON (JS-rendered pages included) for capture and analysis.",
     "selectorsIn": [
       "domain"
     ],
     "selectorsOut": [
       "document-id"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free tier of ~1,000 pages/month; paid Hobby/Standard/Growth plans for higher volume. Open-source self-host option available.",
+    "opsec": "active",
+    "opsecNote": "Firecrawl fetches the target site's live pages (its servers, or yours if self-hosted, hit the target) — so the site's logs see that traffic, not you directly if using the cloud API. Treat as active toward the target; throttle, respect robots where appropriate, and avoid hammering a small site.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
+    "trust": "trusted",
+    "trustNote": "Widely-adopted open-source scraping platform (150k+ GitHub stars, used by many companies); it's tooling, so output fidelity depends on the target site.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [
+      "httrack",
+      "waybackpy",
+      "scrapy"
+    ],
+    "aliases": [
+      "Firecrawl",
+      "firecrawl.dev"
+    ],
     "tags": [
       "archive",
-      "Archive & Cached Related Sites"
+      "Archive & Cached Related Sites",
+      "scraping"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/firecrawl-dev.md"
   },
   {
@@ -25005,37 +25019,53 @@
   {
     "id": "bpaste",
     "name": "bpaste",
-    "description": "OSINT tool: bpaste.",
+    "description": "Use when you have a bpaste URL/ID or are dorking for leaked text — returns the pasted content; a paste host where dumps and notes may be shared.",
     "url": "https://bpa.st/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading a bpaste paste you've been pointed to, and treating it as a paste host where leaked data may surface.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free open-source pastebin (the Python community's paste service); no account to create or view a paste.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a paste by its link is passive and anonymous; the poster isn't notified. No public paste index, so access is via a known URL or a search-engine hit. Don't paste your own case data into it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Long-running community paste service (bpa.st, associated with the Python community); content is arbitrary user-submitted text with no verification.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pastebin",
+      "katbin",
+      "pastery"
+    ],
+    "aliases": [
+      "bpa.st",
+      "bpaste.net"
+    ],
     "tags": [
       "pastebins"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/bpaste.md"
   },
   {
@@ -30999,37 +31029,53 @@
   {
     "id": "ideone",
     "name": "ideone",
-    "description": "OSINT tool: ideone.",
-    "url": "https://Ideone.com",
+    "description": "Use when you have an Ideone paste/snippet URL or are dorking for shared code — returns the pasted source and its output; a code-paste host where leaks may appear.",
+    "url": "https://ideone.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading an Ideone code snippet you've been pointed to, and treating it as a code-paste host where credentials or notes may leak.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "email",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free online compiler/paste service; no account needed to view public snippets.",
+    "opsec": "passive",
+    "opsecNote": "Viewing a public snippet by link is passive and anonymous; the author isn't notified. Snippets can be public or private — you only reach public ones via URL or a search-engine hit. Don't paste your own case data into it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Established online compiler/paste service (Sphere Research); shared code is arbitrary user content with no verification.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "pastebin",
+      "bpaste",
+      "katbin"
+    ],
+    "aliases": [
+      "ideone.com"
+    ],
     "tags": [
-      "pastebins"
+      "pastebins",
+      "code-paste"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/ideone.md"
   },
   {
@@ -83489,31 +83535,30 @@
   {
     "id": "nirsoft-whois-servers-list",
     "name": "NirSoft Whois Servers List",
-    "description": "Listing of over 200 active servers worldwide for conducting whois searches",
+    "description": "Use when you need the authoritative WHOIS server for a TLD — returns a reference list of 200+ WHOIS servers to query the right registry directly.",
     "url": "http://www.nirsoft.net/whois_servers_list.html",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Looking up which WHOIS server to query for a given TLD when doing direct/CLI WHOIS lookups.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free static reference page from NirSoft; no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "The page itself is just a reference list — reading it reveals nothing about any target. (The actual WHOIS queries you then run touch registry servers, not the domain owner, and are passive.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "trusted",
+    "trustNote": "Published by NirSoft, a long-established and reputable freeware/utilities author; the server list is a stable technical reference.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -83521,15 +83566,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "whois",
+      "iana-whois",
+      "icann-lookup"
+    ],
+    "aliases": [
+      "NirSoft whois servers",
+      "whois_servers_list"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "whois"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/nirsoft-whois-servers-list.md"
   },
   {
@@ -112491,48 +112544,54 @@
   {
     "id": "blockchair-com",
     "name": "blockchair.com",
-    "description": "OSINT tool: blockchair.com.",
-    "url": "https://blockchair.com/ethereum",
+    "description": "Use when you have a `crypto-wallet` address or transaction hash and want to trace it — returns balances, transaction history, and counterparties across 15+ blockchains.",
+    "url": "https://blockchair.com/",
     "category": "financial-crypto",
     "path": [
       "financial-crypto"
     ],
-    "bestFor": "",
+    "bestFor": "Multi-blockchain explorer — look up a wallet's balance and transaction history across Bitcoin, Ethereum, and many other chains from one search box.",
     "selectorsIn": [
-      "crypto-wallet",
-      "name"
+      "crypto-wallet"
     ],
     "selectorsOut": [
       "crypto-wallet"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free web explorer and search; a paid API/data-dumps tier exists for bulk/programmatic use, but interactive lookups are free.",
+    "opsec": "passive",
+    "opsecNote": "Blockchain data is public and Blockchair reads its own indexed copy — you don't touch the wallet owner and no one is alerted. Passive. (Blockchair sees your queries; use a clean browser for sensitive tracing.)",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Well-established multi-chain blockchain explorer widely used in crypto research; data comes directly from the public blockchains it indexes.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "cryptosites",
-      "CryptoCurrency Related Sites"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "bitcoin-explorer",
-      "blockchair",
-      "zcash-block-explorer"
+      "blockchain-explorer",
+      "etherscan"
     ],
+    "aliases": [
+      "Blockchair",
+      "blockchair.com"
+    ],
+    "tags": [
+      "cryptosites",
+      "CryptoCurrency Related Sites",
+      "blockchain-explorer"
+    ],
+    "source": "uk-osint",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/financial-crypto/blockchair-com.md"
   },
   {
@@ -227001,45 +227060,58 @@
   {
     "id": "courtlistener",
     "name": "CourtListener",
-    "description": "Federal court opinion and docket search",
+    "description": "Use when you have a party `name`, docket number, or judge and want free US court records — returns opinions, dockets, and filings that often expose addresses and associates.",
     "url": "https://courtlistener.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Federal court opinion and docket search",
-    "input": "Case name, docket number, judge",
-    "output": "Opinions, dockets, documents",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Free full-text search of US federal (and growing state) court opinions and PACER dockets by party name or case number.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and nonprofit (Free Law Project); the RECAP archive and API are free. Some documents not yet in RECAP require a (paid) PACER pull done elsewhere.",
     "opsec": "passive",
-    "opsecNote": "Nonprofit legal research platform",
+    "opsecNote": "Searching is anonymous and parties aren't notified. No account needed to search (an optional free account enables alerts). Court records are public but contain sensitive PII — handle responsibly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by the Free Law Project, a respected nonprofit; data is sourced from official court opinions and the RECAP archive of PACER filings.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "courtlistener-recap",
-      "free-law-recap-archive",
-      "recap-court-doc-repo"
+      "pacer",
+      "docket-alarm"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Free Law Project CourtListener",
+      "courtlistener.com"
+    ],
+    "tags": [
+      "court-records",
+      "litigation",
+      "recap"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/courtlistener.md"
   },
   {
@@ -285332,25 +285404,31 @@
   {
     "id": "google-ftp-search",
     "name": "Google FTP Search",
-    "description": "Google's FTP search feature",
+    "description": "Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable files and listings.",
     "url": "https://cse.google.com/cse/home?cx=014863114814409449623:jc-vjhl_c5g",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding files exposed on open FTP servers and public \"index of\" directories via a scoped Google Custom Search.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching is passive (you query Google's index, not the servers). Actually downloading a file connects you to that FTP/host, which logs your IP — use a VPN/sock puppet before opening or downloading anything you find.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A third-party-configured Google Custom Search Engine, not an official Google product; results depend on Google still indexing open-directory/FTP content, which has declined over time.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -285358,15 +285436,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "google",
+      "filepursuit",
+      "opendirectory-search"
+    ],
+    "aliases": [
+      "Google FTP search CSE",
+      "open directory search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "file-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-ftp-search.md"
   },
   {
@@ -339972,38 +340058,57 @@
   {
     "id": "snapdex",
     "name": "Snapdex",
-    "description": "OSINT tool: Snapdex.",
+    "description": "Use when you have a `username` or `name` and want to find a Snapchat account — returns a wiki-style directory profile with the handle, snapcode, snaps, and related accounts.",
     "url": "https://snapdex.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Discovering and confirming a Snapchat handle via a user-built, wiki-style directory of Snapchat profiles.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to browse/search; content is user-generated, no account needed to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a public directory of self/community-listed handles is passive; the listed person isn't told you looked. No login to view. Adding someone on Snapchat would be active — stay at the lookup stage.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Wiki-like, 100% user-generated directory (by Boot Ventures, Brussels); not affiliated with Snapchat and entries are unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "snapdex-the-best-snapchat-names-index"
+      "ghostcodes-addmesnaps-directories",
+      "snapchat",
+      "snap-map"
     ],
+    "aliases": [
+      "Snapdex",
+      "snapdex.com"
+    ],
+    "tags": [
+      "snapchat",
+      "username-directory",
+      "social-media"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snapdex.md"
   },
   {
@@ -366639,40 +366744,53 @@
   {
     "id": "satellite-tracking",
     "name": "Satellite Tracking",
-    "description": "Space object and satellite movement monitoring",
+    "description": "Use when you have a satellite name/NORAD ID and want its live position and pass times — returns orbital position, altitude, and when it passes over a `geolocation`.",
     "url": "https://www.n2yo.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "Space object and satellite movement monitoring",
-    "input": "Satellite name, NORAD ID, or orbital element query",
-    "output": "Orbital position, pass timing, altitude, and trajectory context",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Real-time satellite position and overhead-pass prediction for a given location.",
+    "selectorsIn": [
+      "geolocation",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free live-tracking site (N2YO); optional free account/API key for the REST API.",
     "opsec": "passive",
-    "opsecNote": "Uses public orbital datasets and tracking visualizations without active targeting.",
+    "opsecNote": "Uses public orbital element (TLE) data; nothing about a person is queried and no one is alerted. Fully passive. Entering a location only computes passes locally against public orbits.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Long-standing, widely-used satellite-tracking site built on public NORAD/Celestrak orbital data; positions are computed from authoritative TLEs.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "celestrak",
+      "heavens-above"
+    ],
+    "aliases": [
+      "N2YO",
+      "n2yo.com"
+    ],
+    "tags": [
+      "satellite",
+      "orbital-tracking"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/satellite-tracking.md"
   },
   {
@@ -368590,41 +368708,51 @@
   {
     "id": "vindecodr",
     "name": "VinDecodr",
-    "description": "Rapid vehicle specification lookup from VIN values",
+    "description": "Use when you have a 17-character `vin` and want the vehicle's specs — returns make, model, year, engine, body, and recall details.",
     "url": "https://vindecodr.com/",
     "category": "transportation",
     "path": [
       "transportation",
       "vehicle-records"
     ],
-    "bestFor": "Rapid vehicle specification lookup from VIN values",
-    "input": "17-character VIN",
-    "output": "Vehicle make, model, year, engine, and recall-related details",
-    "selectorsIn": [],
+    "bestFor": "Quickly decoding a VIN into make/model/year/engine and recall info.",
+    "selectorsIn": [
+      "vin"
+    ],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free VIN decoder; built on public NHTSA vehicle data, no account needed.",
     "opsec": "passive",
-    "opsecNote": "Simple public decoder workflow with no active probing against external systems.",
+    "opsecNote": "Decodes the VIN's embedded manufacturing data (and public recall records); it doesn't query registration/owner data and no one is notified. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "Third-party decoder front-end over public NHTSA data; spec output is standardized (VIN-encoded), so reliable for make/model/year.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "nhtsa-vin-decoder",
+      "vindecoderz"
+    ],
+    "aliases": [
+      "VinDecodr",
+      "vindecodr.com"
+    ],
+    "tags": [
+      "vin",
+      "vehicle-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vehicle-records/vindecodr.md"
   },
   {

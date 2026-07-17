@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`black-book-online-criminal-search`** (medium) — Broad public records aggregation
 - **`caselaw-access-project`** (medium) — Use when you have a `name` and want to find US court opinions that mention the person — returns case `document-id`, court/date, and `associa
-- **`courtlistener`** (medium) — Federal court opinion and docket search
+- **`courtlistener`** (medium) — Use when you have a party `name`, docket number, or judge and want free US court records — returns opinions, dockets, and filings that often
 - **`crimereports-com`** (medium) — Crime incident mapping
 - **`docket-alarm`** (medium) — Use when you have a `name` (party) or docket/case number and want US litigation records — returns dockets, filings, and case status across f
 - **`epstein-exposed`** (medium) — Epstein case document research

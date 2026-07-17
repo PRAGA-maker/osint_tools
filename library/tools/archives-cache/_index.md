@@ -53,7 +53,7 @@ kind: group-index
 - **`feedly`** (low) — OSINT tool: Feedly.
 - **`feedreader`** (low) — OSINT tool: FeedReader.
 - **`fetchrss`** (low) — OSINT tool: FetchRSS.
-- **`firecrawl-dev`** (medium) — OSINT tool: firecrawl.dev.
+- **`firecrawl-dev`** (low) — Use when you have a `domain`/URL and want its content as clean structured data — crawls and converts pages to markdown/JSON for archiving or
 - **`followthatpage`** (low) — OSINT tool: FollowThatPage.
 - **`gau`** (medium) — Simple #golang tool to fetch all known website URLs from: WayBackMachine, AlienVault's Open Threat Exchange, Common Crawl, URLScan
 - **`gh-archive`** (low) — Public dataset of GitHub activity events.

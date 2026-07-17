@@ -334,7 +334,7 @@ kind: group-index
 - **`google-dork-cheatsheet`** (medium) — OSINT tool: Google Dork Cheatsheet.
 - **`google-drive-folder-search-engine`** (medium) — Use when you have a `name`, `username`, or keyword and want publicly shared Google Drive files/folders mentioning it — returns documents, `m
 - **`google-email-extractor`** (low) — Extract emails from Google Search Results
-- **`google-ftp-search`** (medium) — Google's FTP search feature
+- **`google-ftp-search`** (low) — Use when you want to find files on open FTP/index servers — a Google Custom Search Engine scoped to open directories, returning downloadable
 - **`google-minus-google-search-engine`** (medium) — Search with Google without getting results from other Google services such as Blogger and Youtube
 - **`google-news-print-archive`** (low) — OSINT tool: Google News Print Archive.
 - **`google-news`** (low) — OSINT tool: Google News.
