@@ -75,7 +75,7 @@ kind: group-index
 - **`archive-it-org`** (low) — OSINT tool: Archive-it.org.
 - **`argumentsearch-com`** (medium) — OSINT tool: Argumentsearch.com.
 - **`aristotele-search-engine-italy`** (medium) — Italy based surface web search engine covering regional results
-- **`arkansas-medical-license-search`** (medium) — Arkansas State Medical Boards medical license search tool
+- **`arkansas-medical-license-search`** (medium) — Use when you have a `name` and want to verify an Arkansas physician's license — returns license `document-id`, status and practice `address`
 - **`ary-recon`** (low) — Web-based directory of passive reconnaissance tools.
 - **`asian-development-bank`** (medium) — Asian Development Banks website providing statistics, data, and research publications
 - **`asic-business-name-search`** (medium) — Business-related search engine that searches using company name
@@ -195,7 +195,7 @@ kind: group-index
 - **`dailyearth`** (low) — OSINT tool: DailyEarth.
 - **`dakkadakka-wargame-player-finder`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`datasploit-fogsec-mirror`** (medium) — OSINT framework to perform reconnaissance on companies, people, emails, domains, and phone numbers.
-- **`daum-search-engine-south-korea`** (medium) — South Korean web search engine covering regional results
+- **`daum-search-engine-south-korea`** (medium) — Use when you have a `name`, `username` or Korean-language term and want South-Korean web/forum results Google misses — returns `domain`, `so
 - **`daum-south-korea`** (low) — OSINT tool: Daum (South Korea).
 - **`ddgr`** (low) — Search in DuckDuckGo via the command line: - export the results to JSON; - bangs support - location setting
 - **`ddl-search`** (low) — search engine for Rapidshare, Megaupload, Filefactory, Depositfile, Fileserve and a lot of other file sharing sites

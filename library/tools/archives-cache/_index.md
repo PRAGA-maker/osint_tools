@@ -73,7 +73,7 @@ kind: group-index
 - **`metawarc`** (medium) — Allows you to quickly analyze the structure of the warc file and collect metadata from all the files in the archive
 - **`microsystools-com`** (low) — Use when you have a `domain` you need to preserve and want a full offline copy — returns a locally-saved, browsable snapshot of the entire s
 - **`national-center-for-biotechnology`** (medium) — unique tool to search 39 scientific databases (Pubmed, SRA, OMIN, MedGen etc) from one page
-- **`nationalarchives-gov-uk`** (medium) — OSINT tool: nationalarchives.gov.uk.
+- **`nationalarchives-gov-uk`** (low) — Use when you have a UK government `domain`/URL and want archived snapshots of it — returns historical page captures and `document-id` refere
 - **`newsblur`** (low) — OSINT tool: Newsblur.
 - **`newspaper-navigator`** (medium) — Keyword search of a database of 1.5 million newspaper clippings with photos from the Library of Congress database. It's possible to filter r
 - **`omeareader`** (low) — OSINT tool: OmeaReader.

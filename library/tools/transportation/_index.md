@@ -128,7 +128,7 @@ kind: group-index
 - **`llyoyd-list-intelligence-maritime-search`** (medium) — Maritime-related website focusing on Lloyds of London and their maritime vessel registration search, including associated vessel information
 - **`lucas-county-ohio-areis-online`** (medium) — Lucas County Auditor's Real Estate Information System - includes parcel, ownership, valuation, and tax information
 - **`maersk-tracking`** (low) — OSINT tool: Maersk Tracking.
-- **`marine-traffic-geolocation-search`** (medium) — Maritime-related website focusing on worldwide vessels and real-time shipping geolocation tracking on a live map database
+- **`marine-traffic-geolocation-search`** (medium) — Use when you have a vessel name, IMO or MMSI (`vehicle-plate`) and want its live position and history — returns `geolocation` track, port ca
 - **`marinetraffic`** (low) — Live AIS vessel tracking and ship details.
 - **`maritime-awareness-project`** (low) — OSINT tool: Maritime Awareness Project.
 - **`maritime-connector-com-ships`** (low) — OSINT tool: Maritime-connector.com/ships.

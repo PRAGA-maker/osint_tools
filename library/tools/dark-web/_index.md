@@ -114,7 +114,7 @@ kind: group-index
 - **`tweepi`** (medium) — Twitter monitor and search tool
 - **`uk-guns-and-ammo`** (low) — OSINT tool: UK Guns & Ammo.
 - **`ukons-standard-industrial-classifications-united-kingdom`** (medium) — Website that identifies the industrial sector classification across the country at the national level
-- **`us-inmate-locator`** (medium) — Inmate locator for US states
+- **`us-inmate-locator`** (medium) — Use when you have a `name` and think the person may be incarcerated — returns a directory of state/federal DOC search links leading to facil
 - **`vocalink`** (medium) — UKs national payment infrastructure operator - provides industry research and white papers
 - **`vorm-web`** (low) — OSINT tool: Vorm Web.
 - **`western-union-agent-locator`** (medium) — Search tool for locating Western Union agent locations worldwide

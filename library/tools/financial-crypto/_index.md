@@ -84,7 +84,7 @@ kind: group-index
 - **`global-suppliers-online`** (low) — A site dedicated to connect suppliers and buyers of goods from all over the world.
 - **`greylist-trace`** (low) — OSINT tool: Greylist Trace.
 - **`iban-com`** (low) — Check the validity of the IBAN (International Bank Account Number) of the company and see the information about the bank where it is service
-- **`ibancalculator-com`** (medium) — OSINT tool: ibancalculator.com.
+- **`ibancalculator-com`** (low) — Use when you have an IBAN or national bank code (`document-id`) and want to identify the bank — returns the `employer-org` institution name 
 - **`importyeti`** (low) — Search 60 million US customs sea shipment records, find company suppliers.
 - **`insolvency-govt-nz`** (medium) — OSINT tool: insolvency.govt.nz.
 - **`insolvencydirect-bis-gov-uk`** (medium) — OSINT tool: insolvencydirect.bis.gov.uk.

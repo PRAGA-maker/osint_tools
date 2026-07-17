@@ -107,7 +107,7 @@ kind: group-index
 - **`fark-com`** (medium) — Online community allowing members to comment on daily news articles
 - **`feedburner`** (medium) — RSS feed management website
 - **`feeddemon-rss-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
-- **`feedly-rss-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
+- **`feedly-rss-reader`** (low) — Use when you have a target `domain`/blog/news source and want to monitor its new posts over time — returns a chronological feed of `social-p
 - **`files-pushshift-io-reddit`** (low) — OSINT tool: Files.pushshift.io/reddit.
 - **`financial-post`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
 - **`flickmetrix-com`** (low) — alternative way to find anything interesting on Netflix

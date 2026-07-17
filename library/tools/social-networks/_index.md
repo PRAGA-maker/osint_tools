@@ -611,7 +611,7 @@ kind: group-index
 - **`steamid-uk`** (medium) — Lookup player names, view (more) previously used names, and when accounts befriended eachother (Free). View screenshots of account, (bulk) s
 - **`sterraxcyl`** (medium) — Tool for export to excel someone's #Instagram followers and/or following with details (Username, FullName, Bio, Followers and Following coun
 - **`storiesig`** (high) — Use when you have a public Instagram `username` and want to view/download their stories, highlights, reels and posts anonymously — returns s
-- **`story-saver`** (medium) — Download public Instagram Stories, Highlights and Videos.
+- **`story-saver`** (medium) — Use when you have a public Instagram `username` and want to grab its Stories/Highlights before they expire — returns downloadable `image`/vi
 - **`storydownloader-app`** (high) — Use when you have an Instagram `username` and want to view/download that public account's stories anonymously — returns image/video story co
 - **`storylooker`** (medium) — View public Snapchat/Instagram stories anonymously.
 - **`storysaver-net`** (high) — Use when you have a public Instagram post/story/reel `url` (from a target's `social-profile`) and want to download the media for offline cap
@@ -836,7 +836,7 @@ kind: group-index
 - **`youtube-timestamp-comments`** (medium) — extension finds all the timestamps in YouTube video comments and arranges them in chronological order.
 - **`youtube-tool`** (medium) — #Python library for: - extracting subtitles by video ID or link (in different languages); - list all the video's contained in playlist; - li
 - **`youtube-transcript-api`** (medium) — Get the transcript/subtitles for a given #YouTube video (by ID from adress bar). It also works for automatically generated subtitles and sup
-- **`youtube-video-upload-time`** (medium) — OSINT tool: YouTube video upload time.
+- **`youtube-video-upload-time`** (medium) — Use when you have a YouTube video `social-profile` URL and want its exact upload time — returns the precise `metadata-exif`-style publish ti
 - **`youtube-whisperer`** (medium) — Use when you have a YouTube video `url` tied to a subject and want a text transcript to search for names, places, and admissions — returns a
 - **`youtube-word-search`** (medium) — An extension that helps you find at what second in the video a certain word is heard. It's possible to search not only by one word, but by t
 - **`ytcomments-klostermann-ca`** (low) — OSINT tool: Ytcomments.klostermann.ca.
