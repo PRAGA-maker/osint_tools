@@ -7,7 +7,7 @@ kind: group-index
 # opsec-investigator-tooling/anonymous-browsing/vpn-tests
 
 ## Skills here
-- **`dns-leak-test`** (medium) — Verifying DNS query routing through VPN, detecting ISP DNS exposure
+- **`dns-leak-test`** (low) — Use when you are behind a VPN/proxy and want to confirm your DNS isn't leaking your real ISP — returns the `ip-address`es and operators of t
 - **`dns-leak-tests`** (medium) — Secondary DNS leak verification, cross-checking VPN DNS configuration
 - **`email-leak-tests`** (medium) — Verifying email IP privacy, testing anonymous email service configurations
 - **`ip-dns-leak-detection`** (medium) — Verifying VPN effectiveness, detecting IP and DNS leaks before OSINT operations

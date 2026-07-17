@@ -237,7 +237,7 @@ kind: group-index
 - **`host-on-net-singapore`** (medium) — Singapore based service provider for registering websites and domain addresses
 - **`hostgator-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`hosthunter`** (low) — Tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques
-- **`httparchive-org`** (medium) — Search for information and statistics about any online website
+- **`httparchive-org`** (low) — Use when you have a `domain` and want its historical tech stack and third-party dependencies — returns detected technologies, request `domai
 - **`httpfy`** (low) — A fast #nodejs tool for gathering information about a domain or a list of domains. Response time, main page word count, content type, redire
 - **`hurricane-electric-internet-services`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`hussh`** (low) — shell script for domain analyzing

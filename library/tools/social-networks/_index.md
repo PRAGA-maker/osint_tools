@@ -771,7 +771,7 @@ kind: group-index
 - **`uvrx`** (high) — Use when you have a person `name` or `username` and want to search across many social networks at once through one Google-custom-search fron
 - **`vidnice`** (medium) — OSINT tool: Vidnice.
 - **`vimeo-search-tool`** (medium) — Use when you have a `username`, `name`, or keyword and want to build advanced Vimeo searches for people and videos — returns `social-profile
-- **`vk-city4me-com`** (medium) — tracking user online time
+- **`vk-city4me-com`** (medium) — Use when you have a VK `social-profile`/`username` and want their activity patterns — returns online/offline timelines and profile-change hi
 - **`vk-com-2`** (high) — Use when you have a `name` or `username` (especially for a Russian/CIS-linked subject) and want to find their VKontakte profile — returns `s
 - **`vk-community-search`** (high) — Use when you have a keyword, place or interest (`name`) and want to find VKontakte groups/communities a subject may belong to — returns soci
 - **`vk-people-search`** (high) — Use when you have a `name` (plus city/school/employer) for a Russian/CIS subject and want their VKontakte profile — returns profiles filtera

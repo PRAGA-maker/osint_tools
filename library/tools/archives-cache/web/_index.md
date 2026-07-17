@@ -7,7 +7,7 @@ kind: group-index
 # archives-cache/web
 
 ## Skills here
-- **`anna-s-archive`** (medium) — Locating mirrored copies of books and papers from multiple sources
+- **`anna-s-archive`** (low) — Use when you have a `name` (author) or title/ISBN/DOI and want to find their published books/papers — returns publication metadata and `docu
 - **`archive-is`** (medium) — Capturing and retrieving snapshots of volatile web pages
 - **`cached-pages`** (medium) — Finding recent cached copies of pages that changed or disappeared
 - **`cached-view`** (medium) — Quick verification of whether a removed page still exists in cache

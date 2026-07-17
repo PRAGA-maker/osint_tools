@@ -291,7 +291,6 @@ kind: group-index
 - **`personal-security-checklist`** (low) — OSINT tool: personal-security-checklist.
 - **`perspective`** (low) — OSINT tool: Perspective.
 - **`pgpkeyanalyser`** (low) — OSINT tool: PGPKeyAnalyser.
-- **`phantom-buster`** (medium) — Automation suite with data extraction across LinkedIn, Reddit and other platforms.
 - **`phantom-tide`** (low) — OSINT tool: Phantom Tide.
 - **`phantomtrace`** (medium) — Python OSINT tool aggregating public data from 35+ platforms.
 - **`pharos-ai`** (low) — OSINT tool: Pharos AI.

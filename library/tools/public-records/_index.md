@@ -289,7 +289,7 @@ kind: group-index
 - **`easystreet`** (medium) — OSINT tool: EasyStreet.
 - **`ebra-be`** (high) — Use when you have an `employer-org` or `name` and need the official company register for a given country — returns a directory link toward e
 - **`eca-co-uk`** (medium) — Use when you have a company `name`, `address`/area, or trade and want to confirm a UK electrical contractor is an ECA member — returns the m
-- **`edgar-u-s-securities-and-exchange-commission-filings`** (medium) — OSINT tool: EDGAR U.S. Securities and Exchange Commission Filings.
+- **`edgar-u-s-securities-and-exchange-commission-filings`** (medium) — Use when you have a `name` or `employer-org` and want SEC filings that mention them — returns officer/insider `name`s, `employer-org` links 
 - **`eff-atlas-of-surveillance`** (medium) — OSINT tool: EFF Atlas of Surveillance.
 - **`egafd-com`** (high) — Use when you have a `name`/stage name or `image` of a European female adult-film performer and want to identify or cross-reference them — re
 - **`eircode-ie`** (high) — Use when you have an Irish `address` and want its unique Eircode (postcode), or an Eircode and want the matching address — returns a precise
