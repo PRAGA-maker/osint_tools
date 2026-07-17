@@ -827,7 +827,6 @@ kind: group-index
 - **`rechercher-par-r-gion-ou-type-de-travaux`** (low) — OSINT tool: Rechercher par région ou type de travaux.
 - **`rechercher-par-r-pondant`** (low) — OSINT tool: Rechercher par répondant.
 - **`refdesk`** (low) — Use when you have a starting `name`/`employer-org` and want a curated jump-off directory of people-finder, public-records and reference site
-- **`reference-com`** (medium) — Reference search engine and directory
 - **`refseek`** (medium) — Use when you have a `name` or `employer-org` and want academic/reference sources (papers, books, documents, institutional pages) that genera
 - **`regional-municipality-of-durham`** (medium) — OSINT tool: Regional Municipality of Durham.
 - **`registrant-directory`** (medium) — OSINT tool: Registrant directory.

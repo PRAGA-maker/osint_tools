@@ -28288,43 +28288,55 @@
   {
     "id": "forum-irishmilitaryonline-com",
     "name": "forum.irishmilitaryonline.com",
-    "description": "OSINT tool: forum.irishmilitaryonline.com.",
+    "description": "Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profiles — returns forum posts, member `social-profile`s, and named `associate`s.",
     "url": "http://forum.irishmilitaryonline.com/forum.php?s=52cb61ecc40d31ed3a74680567d6ce04",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Searching an active Irish military-interest community forum for a subject's posts, handle, and connections.",
     "selectorsIn": [
-      "username"
+      "username",
+      "name"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free to read public posts; a free account is needed to view some sections or to post. Not affiliated with the Irish Defence Forces.",
+    "opsec": "passive",
+    "opsecNote": "Reading public threads is passive. Registering an account or messaging members is active and may expose your interest — use a sock-puppet account and never contact members from a real identity. Avoid the stale session token in the harvested URL; go to the clean domain.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "A community-run, actively-maintained hobbyist forum (independent of the Irish Defence Forces); content is user-generated and unverified.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ie"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "Irish Military Online forum",
+      "IMO Discussion Board"
+    ],
     "tags": [
-      "forums",
-      "Forums"
+      "forum",
+      "ireland",
+      "military",
+      "community"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/forum-irishmilitaryonline-com.md"
   },
   {
@@ -29235,48 +29247,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/google-com-10.md"
-  },
-  {
-    "id": "google-com-11",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Amoneyforums.citywire.co.uk/&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-11.md"
   },
   {
     "id": "google-com-12",
@@ -43823,46 +43793,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dark-web/discovery/onioff.md"
-  },
-  {
-    "id": "onion-cab",
-    "name": "Onion Cab",
-    "description": "Supplemental onion discovery when primary search tools miss coverage",
-    "url": "https://onion.cab/",
-    "category": "dark-web",
-    "path": [
-      "dark-web",
-      "tor-search"
-    ],
-    "bestFor": "Supplemental onion discovery when primary search tools miss coverage",
-    "input": "Keywords and category browsing",
-    "output": "Directory-style onion link listings",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "degraded",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Directory browsing is generally passive, but gateway logging policies are often opaque.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dark-web/tor-search/onion-cab.md"
   },
   {
     "id": "onion-engine",
@@ -64823,42 +64753,55 @@
   {
     "id": "afrinic",
     "name": "AFRINIC",
-    "description": "OSINT tool: AFRINIC.",
+    "description": "Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — returns WHOIS org/`address`/`associate` contact records for African IP space.",
     "url": "https://www.afrinic.net/",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "WHOIS lookups for African IP address ranges and ASNs — who holds a network and their registered/abuse contacts.",
     "selectorsIn": [
+      "ip-address",
       "domain"
     ],
     "selectorsOut": [
-      "domain"
+      "employer-org",
+      "address",
+      "associate",
+      "email"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free public WHOIS/registry lookups; no account needed. AFRINIC is the non-profit Regional Internet Registry for Africa.",
+    "opsec": "passive",
+    "opsecNote": "A WHOIS query hits AFRINIC's registry, not the target's server, so it is passive and the subject is not notified. Bulk/automated queries are rate-limited by AFRINIC; throttle to avoid blocks.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "AFRINIC is the official Regional Internet Registry for Africa — the authoritative source for who holds African IP allocations and ASNs.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "African Network Information Centre",
+      "afrinic.net WHOIS"
+    ],
     "tags": [
-      "domainsandips",
-      "Domains & IPs"
+      "whois",
+      "rir",
+      "ip-lookup",
+      "africa"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/afrinic.md"
   },
   {
@@ -74513,52 +74456,6 @@
       "apkleaks"
     ],
     "_file": "library/tools/domains-ip-infrastructure/go-dork.md"
-  },
-  {
-    "id": "go3-poland",
-    "name": "Go3 (Poland)",
-    "description": "Poland based service provider for registering websites and domain addresses",
-    "url": "http://www.go3.pl",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/go3-poland.md"
   },
   {
     "id": "goblob",
@@ -127353,50 +127250,60 @@
   },
   {
     "id": "openstreetmap-overpass-turbo-taginfo-database",
-    "name": "OpenStreetMap (OverPass Turbo) TagInfo database",
-    "description": "694 tags for different objects (buildings, trees, streams etc), 5684 keys, 45 relations (routes, streets etc)",
+    "name": "OpenStreetMap (Overpass Turbo) TagInfo database",
+    "description": "Use when you have a `geolocation` clue (a described object — kiosk, pylon, bench type) and want the exact OSM tag/key to query in Overpass Turbo — returns tag names, usage stats, and value distributions.",
     "url": "https://taginfo.openstreetmap.org/tags",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding the correct OpenStreetMap tag/key for an object so you can build an accurate Overpass Turbo query.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official OSM project; no account. Open data (ODbL).",
+    "opsec": "passive",
+    "opsecNote": "You are browsing OSM tag statistics, not querying anything about a subject — fully passive and leaks nothing about your investigation.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official OpenStreetMap project (taginfo) maintained by the OSM community; the authoritative reference for how tags are actually used across the OSM database.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
+      "overpass-turbo",
       "open-street-map",
       "openstreetmap",
       "openstreetmap-2",
       "openstreetmap-nominatim",
       "whodidit"
     ],
+    "aliases": [
+      "OSM taginfo",
+      "taginfo.openstreetmap.org"
+    ],
+    "tags": [
+      "openstreetmap",
+      "overpass",
+      "geolocation",
+      "map-tags"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/openstreetmap-overpass-turbo-taginfo-database.md"
   },
   {
@@ -130125,41 +130032,51 @@
   {
     "id": "sunearthtools-com",
     "name": "SunEarthTools.com",
-    "description": "OSINT tool: SunEarthTools.com.",
+    "description": "Use when you have a photo's `geolocation` and want to verify or estimate the date/time from sun position and shadow direction — returns sun azimuth/elevation and shadow-length data for chronolocation.",
     "url": "https://www.sunearthtools.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Sun-position and shadow calculations for chronolocating outdoor photos (what time/date matches the shadows).",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web calculators; no account. Optional login only saves settings.",
+    "opsec": "passive",
+    "opsecNote": "All computation is astronomical math on coordinates and dates you enter — nothing about the subject is transmitted anywhere and the target learns nothing. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Sun position is deterministic astronomy; SunEarthTools' outputs are reproducible against other ephemeris tools (SunCalc, NOAA), which is what makes it reliable for verification.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "SunEarthTools sun position",
+      "sunearthtools shadow calculator"
+    ],
     "tags": [
-      "chronolocation"
+      "chronolocation",
+      "sun-position",
+      "shadow-analysis",
+      "geolocation"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/sunearthtools-com.md"
   },
   {
@@ -149036,55 +148953,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/image-video-face/pinterest-chrome-add-on.md"
-  },
-  {
-    "id": "pix2pix-video",
-    "name": "Pix2Pix-Video",
-    "description": "Edit video by prompt",
-    "url": "https://huggingface.co/spaces/fffiloni/Pix2Pix-Video",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "image"
-    ],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Video editing and analyze"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "efficientnetv2",
-      "get-text-from-video",
-      "hugging-face-ai-detector",
-      "huggingface-co",
-      "huggingface-co-4",
-      "instruct-pix2pix",
-      "kosmos-2",
-      "scene-edit-detection",
-      "youtube-whisperer"
-    ],
-    "_file": "library/tools/image-video-face/pix2pix-video.md"
   },
   {
     "id": "pixabay",
@@ -258503,55 +258371,6 @@
     "_file": "library/tools/public-records/refdesk.md"
   },
   {
-    "id": "reference-com",
-    "name": "Reference.com",
-    "description": "Reference search engine and directory",
-    "url": "https://www.reference.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
-    "selectorsOut": [
-      "employer-org",
-      "address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "reference-sites"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "dictionary-com-translation"
-    ],
-    "_file": "library/tools/public-records/reference-com.md"
-  },
-  {
     "id": "refseek",
     "name": "RefSeek",
     "description": "Use when you have a `name` or `employer-org` and want academic/reference sources (papers, books, documents, institutional pages) that general search buries — returns scholarly mentions and documents.",
@@ -293354,46 +293173,6 @@
     "_file": "library/tools/search-engines/moody-s.md"
   },
   {
-    "id": "moreofit",
-    "name": "Moreofit",
-    "description": "Search engine for locating similar websites",
-    "url": "http://www.moreofit.com/",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/moreofit.md"
-  },
-  {
     "id": "mouthshut-north-america",
     "name": "Mouthshut (North America)",
     "description": "Website related to product reviews",
@@ -299171,41 +298950,53 @@
   {
     "id": "pubpeer",
     "name": "PubPeer",
-    "description": "Verifying scientific publication credibility and finding post-publication corrections or retractions",
+    "description": "Use when you have a `name`, DOI, or paper title and want post-publication peer critique — returns comment threads flagging errors, image manipulation, corrections, and retractions on that author's work.",
     "url": "https://pubpeer.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "Verifying scientific publication credibility and finding post-publication corrections or retractions",
-    "input": "DOI, paper title, or author name",
-    "output": "Peer comments, flags, and discussion threads attached to the publication",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether a researcher's or paper's credibility has been publicly challenged — flags, corrections, retractions.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "employer-org"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free to search and read; no account needed. An account (and often verified authorship) is required only to post comments.",
     "opsec": "passive",
-    "opsecNote": "Queries PubPeer's public database; searches are not disclosed to paper authors.",
+    "opsecNote": "Searching and reading PubPeer is passive and not disclosed to paper authors. The browser extension, if installed, sends the DOIs of pages you visit to PubPeer to check for comments — use the website directly if you don't want that.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Run by the non-profit PubPeer Foundation; comments are crowd-sourced (often anonymous) critique, so individual claims range from rigorous to speculative — read the evidence, not just the flag.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "PubPeer post-publication review",
+      "pubpeer.com"
+    ],
+    "tags": [
+      "academic",
+      "publication-verification",
+      "credibility"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/academic-publication-search/pubpeer.md"
   },
   {
@@ -300876,41 +300667,53 @@
   {
     "id": "rpx-corp",
     "name": "RPX Corp",
-    "description": "New searchable database of patents, litigation cases and entities",
+    "description": "Use when you have a company/inventor `name` or patent number and want US patents, applications, and district-court patent litigation tied to an entity — returns patents, cases, and party `employer-org` records.",
     "url": "http://www.rpxcorp.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Free search of US patents, applications, and all district-court patent litigation since 2000, linked to owning/litigating entities.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "document-id",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "RPX Search (patents.rpxcorp.com / search.rpxcorp.com) is free with no login for public patent/litigation/entity data. Only RPX's premium client products (Empower, member portal) are paid — you do not need them for the public search.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Searching the public patent/litigation index reveals nothing to any subject and needs no account. Passive. Note that patents and court filings are inherently public records.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "RPX Corporation is an established patent-risk firm; RPX Search draws on US patent office and PACER-style district-court records, so the underlying data is authoritative public information.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "RPX Search",
+      "rpxcorp patent search"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "patents",
+      "litigation",
+      "entity-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/rpx-corp.md"
   },
   {
@@ -302015,35 +301818,50 @@
   {
     "id": "search-engines-index",
     "name": "Search Engines Index",
-    "description": "OSINT tool: Search Engines Index.",
+    "description": "Use when you have a subject tied to a specific country and want that country's local search engines to query — returns a directory of national/regional search engines by location.",
     "url": "https://www.searchenginesindex.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding the right country-specific search engine before searching a subject in a non-English-speaking region.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free directory; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory is passive and reveals nothing about your target. OpSec depends on the downstream national engine you then use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community-maintained directory (same operator as newspaperindex.com); it catalogs other engines rather than holding data itself, and listings can go stale.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "aliases": [
+      "searchenginesindex.com",
+      "search engines by country"
+    ],
+    "tags": [
+      "curated-directory",
+      "specialty-search",
+      "country-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-engines-index.md"
   },
   {
@@ -308108,29 +307926,31 @@
   {
     "id": "webhound-anoncatalyst",
     "name": "WebHound (AnonCatalyst)",
-    "description": "Python command-line assistant for web searches.",
+    "description": "Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggregated, categorized web results.",
     "url": "https://github.com/AnonCatalyst/WebHound",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Command-line search assistant",
+    "bestFor": "One command that queries Google, Bing, DuckDuckGo and StartPage together and highlights social/forum/news results for a name or handle.",
     "selectorsIn": [
       "name",
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free, open-source Python CLI. No account or API key; it scrapes public search-engine results.",
+    "opsec": "active",
+    "opsecNote": "Runs live searches against Google/Bing/DuckDuckGo/StartPage from your IP and multithreads them, so you generate a burst of traffic that can trip CAPTCHAs or rate-limits. Use a sock-puppet IP/proxy and throttle for anything sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Small CLI search tool (13 stars).",
+    "trustNote": "Independent open-source project (AnonCatalyst) with modest adoption; it aggregates public search results, so quality equals the engines it scrapes and it can break when they change markup.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -308139,14 +307959,19 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "aliases": [
+      "WebHound OSINT",
+      "AnonCatalyst/WebHound"
+    ],
     "tags": [
-      "search",
-      "cli"
+      "search-aggregator",
+      "osint-cli",
+      "username-search"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "relatedTools": [
       "coeus-osint-toolbox",
       "ominis-osint"

@@ -260,7 +260,6 @@ kind: group-index
 - **`pimeyes-2`** (high) — Use when you have a clear face photo and need to find where else that face appears online — returns matched source pages you can pivot to na
 - **`pinhere`** (high) — Use when you have a `geolocation` and want to see anonymous messages, photos, and links other users have dropped at that exact spot — return
 - **`pinterest-chrome-add-on`** (high) — Use when you have an `image` or `face` and want to reverse-search it through Pinterest's visual-search engine from a right-click — returns v
-- **`pix2pix-video`** (medium) — Edit video by prompt
 - **`pixabay`** (high) — Use when you have a suspect profile `image` and want to check whether it is a royalty-free stock photo — a match here flags a likely fake/so
 - **`pixlr-com`** (high) — Use when you have an `image` and want to enhance, crop, or dissect it in-browser — returns a cleaned/zoomed/adjusted `image` you can then pu
 - **`pixplot`** (low) — PixPlot is a tool that utilizes machine learning and WebGL to provide an interactive visualization of large image collections, allowing user

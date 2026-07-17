@@ -122,7 +122,7 @@ kind: group-index
 - **`forbes-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`fortune-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`forum-cyclinguk-org`** (medium) — OSINT tool: forum.cyclinguk.org.
-- **`forum-irishmilitaryonline-com`** (medium) — OSINT tool: forum.irishmilitaryonline.com.
+- **`forum-irishmilitaryonline-com`** (medium) — Use when you have a `username` or a military-interest lead and want an active Irish-military community forum's public posts and member profi
 - **`forum-officer-com`** (medium) — OSINT tool: forum.officer.com.
 - **`forums-digitalspy-com`** (medium) — OSINT tool: forums.digitalspy.com.
 - **`forums-golf-monthly-co-uk`** (medium) — OSINT tool: forums.golf-monthly.co.uk.
@@ -145,7 +145,6 @@ kind: group-index
 - **`gizmodo-com`** (medium) — Online articles, news, and reviews related to science, business, computers, gadgets, technology, and future trends
 - **`global-television-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`google-com-10`** (medium) — OSINT tool: google.com.
-- **`google-com-11`** (medium) — OSINT tool: google.com.
 - **`google-com-12`** (medium) — OSINT tool: google.com.
 - **`google-com-14`** (medium) — OSINT tool: google.com.
 - **`google-com-15`** (medium) — OSINT tool: google.com.

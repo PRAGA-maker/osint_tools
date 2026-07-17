@@ -220,7 +220,7 @@ kind: group-index
 - **`openrailwaymap-2`** (medium) — Use when a photo or area shows railway tracks, stations, signals, or catenary and you want to identify/confirm a location by its rail infras
 - **`openstreetcam`** (high) — Use when Google/Bing Street View lacks coverage and you need crowdsourced street-level imagery to confirm a scene, sign, or building at a lo
 - **`openstreetmap-2`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry. (Dup
-- **`openstreetmap-overpass-turbo-taginfo-database`** (medium) — 694 tags for different objects (buildings, trees, streams etc), 5684 keys, 45 relations (routes, streets etc)
+- **`openstreetmap-overpass-turbo-taginfo-database`** (medium) — Use when you have a `geolocation` clue (a described object — kiosk, pylon, bench type) and want the exact OSM tag/key to query in Overpass T
 - **`openstreetmap`** (high) — Use when you need a free, detailed, query-able world basemap to identify or confirm a place by its tagged features, POIs, and geometry.
 - **`openswitchmapsweb`** (medium) — One of the most powerful map switches I've ever seen. It allows you to see data for the same location in 160+ different services (some of th
 - **`opentopia`** (low) — OSINT tool: Opentopia.
@@ -280,7 +280,7 @@ kind: group-index
 - **`storymaps`** (medium) — Use when you need to build a narrative, map-driven report combining locations, imagery and text for presentation.
 - **`street-art-cities`** (medium) — Worldwide street artworks online map: 1,443 cities and counting, 51,510 artworks, 100 countries and 260 verified artists
 - **`sun-rise-noon-and-set-time-and-direction`** (medium) — OSINT tool: Sun rise, noon, and set time and direction..
-- **`sunearthtools-com`** (medium) — OSINT tool: SunEarthTools.com.
+- **`sunearthtools-com`** (medium) — Use when you have a photo's `geolocation` and want to verify or estimate the date/time from sun position and shadow direction — returns sun 
 - **`surging-seas-risk-zone-map`** (medium) — Map of points where there is a risk of significant sea level rise in the event of melting glaciers.
 - **`surveillance-under-surveillance`** (low) — OSINT tool: Surveillance under Surveillance.
 - **`tableau`** (medium) — Use when you have a spreadsheet of geocoded points (sightings, addresses, ping data) and need to plot and explore them on an interactive map

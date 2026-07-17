@@ -510,7 +510,6 @@ kind: group-index
 - **`monstercrawler-com`** (high) — Use when you have a name, username or domain and want a second, non-Google index to surface web pages, images, videos and news — returns pag
 - **`monstercrawler-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`moody-s`** (medium) — Website related to credit ratings
-- **`moreofit`** (medium) — Search engine for locating similar websites
 - **`mouthshut-north-america`** (medium) — Website related to product reviews
 - **`my-osint-training-tools`** (high) — Use when you have any starting selector and want a curated, categorized launcher of vetted OSINT web tools to pick the right one — returns p
 - **`myallsearch-com`** (medium) — Use when you have a `name` and want a privacy-oriented web search that differs from Google — returns web results (and thus `social-profile`/
@@ -676,7 +675,7 @@ kind: group-index
 - **`roger-ebert`** (medium) — Website related to movie reviews
 - **`rootdig`** (medium) — Genealogy blog providing links to genealogical resources
 - **`rotten-tomatoes`** (medium) — Website related to movie and TV reviews
-- **`rpx-corp`** (medium) — New searchable database of patents, litigation cases and entities
+- **`rpx-corp`** (medium) — Use when you have a company/inventor `name` or patent number and want US patents, applications, and district-court patent litigation tied to
 - **`s`** (low) — Search from command line in 106 different sources
 - **`safesearchkids`** (low) — Kid-friendly website offering safe search, safe image, safe wiki, and safe video features
 - **`sage-journals`** (low) — OSINT tool: SAGE Journals.
@@ -702,7 +701,7 @@ kind: group-index
 - **`search-encrypt`** (medium) — Private search engine that encrypts searches
 - **`search-engine-colossus`** (low) — International directory of search engines
 - **`search-engine-finder`** (low) — Use when a mainstream engine isn't surfacing a `name`/`username` and you want a curated custom-search across niche search engines — returns 
-- **`search-engines-index`** (medium) — OSINT tool: Search Engines Index.
+- **`search-engines-index`** (medium) — Use when you have a subject tied to a specific country and want that country's local search engines to query — returns a directory of nation
 - **`search-engines-scraper`** (low) — Collects search results in text files. It's possible to search Google, Bing, DuckDuckGo, AOL and other search engines.
 - **`search-it`** (medium) — Search engine with popular website applications on its interface; includes Google, Bing, DuckDuckGo, Reddit, Twitter, and more.
 - **`search-patterns`** (low) — A tool that analyzes autosuggest for #Google and #YouTube search queries (questions, prepositions, comparisons, and words starting with diff
@@ -840,7 +839,7 @@ kind: group-index
 - **`webcrawler-com`** (high) — Use when you have a `name` or other search string and want blended results from several major search engines at once — returns web links and
 - **`webcrawler-meta-search`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
 - **`webdork`** (medium) — OSINT tool: webdork.
-- **`webhound-anoncatalyst`** (medium) — Python command-line assistant for web searches.
+- **`webhound-anoncatalyst`** (medium) — Use when you have a `name` or `username` and want to sweep multiple search engines at once, flagging social/forum/news hits — returns aggreg
 - **`webkams`** (medium) — Search live webcams around the world
 - **`webwombat-search-engine-australia`** (medium) — Australian based web search engine covering worldwide results
 - **`welcome-to-dealstrap`** (low) — OSINT tool: Welcome to Dealstrap!.

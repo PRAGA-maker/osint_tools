@@ -58,7 +58,7 @@ kind: group-index
 - **`about-rdap-org`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface an
 - **`account-arin-net`** (medium) — OSINT tool: account.arin.net.
 - **`accuranker`** (low) — OSINT tool: Accuranker.
-- **`afrinic`** (medium) — OSINT tool: AFRINIC.
+- **`afrinic`** (medium) — Use when you have an `ip-address` or `domain` allocated in Africa and want the registered network holder, allocation, and abuse contacts — r
 - **`ahrefs-backlink-checker`** (medium) — Free online website backlink checker tool
 - **`ahrefs`** (low) — OSINT tool: ahrefs.
 - **`aiodnsbrute`** (low) — Python asynchronous DNS brute-force utility.
@@ -207,7 +207,6 @@ kind: group-index
 - **`gitgraber`** (low) — Search and clone sensitive information from GitHub.
 - **`glesys-sweden`** (medium) — Sweden based service provider for registering websites and domain addresses, including cloud hosting services
 - **`go-dork`** (low) — Fast (like most #osint scripts written in #golang) tool for automation work with Google Dorks.
-- **`go3-poland`** (medium) — Poland based service provider for registering websites and domain addresses
 - **`goblyn`** (low) — tool focused to enumeration and capture of website files metadata. It will search for active directories in the website and so enumerate the
 - **`godaddy-com`** (low) — Use when you have a `domain` and want its WHOIS registration and availability — returns registrar, dates, name servers, and (where public) r
 - **`godaddy-whois-lookup`** (medium) — Whois lookup tool offered by GoDaddy that identifies the available registration information for a website or domain name

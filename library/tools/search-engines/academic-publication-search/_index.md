@@ -19,7 +19,7 @@ kind: group-index
 - **`open-library`** (medium) — Finding and borrowing digitized books, especially out-of-print or historical publications
 - **`opendoar`** (low) — Use when you want to find academic open-access repositories for an institution, country, or subject — returns a directory of repositories (w
 - **`pubmed-national-center-for-biotechnology-information`** (medium) — Biomedical, clinical, and life sciences literature research with high-quality metadata
-- **`pubpeer`** (medium) — Verifying scientific publication credibility and finding post-publication corrections or retractions
+- **`pubpeer`** (medium) — Use when you have a `name`, DOI, or paper title and want post-publication peer critique — returns comment threads flagging errors, image man
 - **`science-direct`** (medium) — Scientific and technical literature search across Elsevier's extensive journal catalog
 - **`science-publications`** (medium) — OSINT tool: Science Publications.
 - **`the-open-syllabus-project`** (medium) — OSINT tool: The Open Syllabus Project.

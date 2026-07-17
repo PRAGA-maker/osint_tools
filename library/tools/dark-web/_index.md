@@ -10,7 +10,7 @@ kind: group-index
 - **`clients/`** — 3 skill(s) below.
 - **`discovery/`** — 4 skill(s) below.
 - **`general-info/`** — 3 skill(s) below.
-- **`tor-search/`** — 2 skill(s) below.
+- **`tor-search/`** — 1 skill(s) below.
 
 ## Skills here
 - **`200-plus-dark-web-links`** (low) — OSINT tool: 200+ Dark Web Links.
