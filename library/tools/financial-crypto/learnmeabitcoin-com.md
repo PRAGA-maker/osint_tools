@@ -30,6 +30,7 @@ localInstall: false
 registration: false
 relatedTools:
 - bitcoinpaths-com
+- tool-path
 aliases:
 - Learn Me A Bitcoin
 - learnmeabitcoin explorer

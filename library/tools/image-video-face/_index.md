@@ -213,7 +213,7 @@ kind: group-index
 - **`live-beaches`** (medium) — Beaches webcam only
 - **`livestream-aka-vimeo`** (high) — Use when you have a `name`/`username` or an event title and want to find a subject's live/archived video and channel — returns their social-
 - **`logobook`** (medium) — help to see which companies have a logo that looks like a certain object. You can use the suggested variants to geolocate photo.
-- **`lossless-cut`** (medium) — #javascript #opensource swiss army knife for audio/video editing.
+- **`lossless-cut`** (low) — Use when you have an `image`/video file and want to trim, split or inspect it without re-encoding — returns clipped segments and preserved `
 - **`lycos-image-search`** (low) — Use when you want a secondary keyword image-search index outside Google/Bing — returns image results for a text query.
 - **`lykdat-com`** (medium) — clothing reverse image search services
 - **`lyrics-net`** (low) — Use when you have a fragment of song lyrics or an artist `name` and want to identify the track/artist or find a contributor profile — return

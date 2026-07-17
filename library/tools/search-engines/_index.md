@@ -292,7 +292,7 @@ kind: group-index
 - **`freight-world`** (medium) — Index linking to various port and harbour sites
 - **`fresheye-search-japan`** (medium) — Japanese web search engine covering regional results
 - **`full-text-reports`** (medium) — Selection of hand picked academic, corporate, government and research reports
-- **`fullhunt`** (medium) — OSINT tool: FullHunt.
+- **`fullhunt`** (low) — Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.
 - **`galaxy-search-directory`** (medium) — Surface web search directory covering worldwide results
 - **`game-convention-central-player-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`gametracker-search`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
@@ -509,7 +509,7 @@ kind: group-index
 - **`metaphor-systems`** (low) — A search engine with a new and unusual search method. This AI "trained to predict the next *link* (similar to the way GPT-3 predicts the nex
 - **`military-occupation-codes-canada`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`milled`** (low) — Use when you have a brand/`employer-org` name and want its marketing-email history — returns archived promotional emails revealing campaigns
-- **`million-short`** (medium) — OSINT tool: Million Short.
+- **`million-short`** (low) — Use when you have a `name` or `username` and want obscure results that mainstream search buries — returns long-tail `domain` and `social-pro
 - **`mindmap-search-engine`** (medium) — OSINT tool: Mindmap Search Engine.
 - **`mojeek-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results
 - **`monster-crawler-search`** (medium) — OSINT tool: Monster Crawler Search.
@@ -897,7 +897,7 @@ kind: group-index
 - **`wow-search-engine-united-kingdom`** (medium) — Surface web search engine covering regional results
 - **`wowjobs-canada`** (medium) — Website that offers job search services across the country at the national and province/state level
 - **`wowwiki-world-of-warcraft-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on t
-- **`wpscan`** (medium) — OSINT tool: Wpscan.
+- **`wpscan`** (low) — Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and 
 - **`xdcc-eu`** (low) — XDCC search engine
 - **`xen00rw-me`** (medium) — Use when you have a subject or target domain and want to build advanced search-operator (dork) queries across many engines from one interfac
 - **`xgs`** (low) — allows you to search for links to onion sites using Google Dorks (site:[http://onion.cab](http://onion.cab), site:[http://onion.city](http:/

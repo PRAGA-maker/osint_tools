@@ -83,7 +83,7 @@ kind: group-index
 - **`flight-stats`** (medium) — Aviation-related website that offers a listing of over 13,000 worldwide airports and associated information
 - **`flight-status-info`** (low) — - get a list of airports by city name; - view the flight schedule of a particular airport; - view the flight schedule of a particular airlin
 - **`flight-tracker`** (low) — OSINT tool: Flight Tracker.
-- **`flightairmap`** (medium) — OSINT tool: FlightAirMap.
+- **`flightairmap`** (low) — Use when you have an aircraft/vessel `vehicle-plate` registration or callsign and want live position and history — returns `geolocation` tra
 - **`flightaware`** (medium) — Flight tracking and history.
 - **`flightconnections`** (low) — OSINT tool: FlightConnections.
 - **`flightwise`** (low) — OSINT tool: Flightwise.

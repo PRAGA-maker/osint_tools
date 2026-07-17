@@ -47,7 +47,7 @@ kind: group-index
 - **`calcmaps`** (medium) — Simple online map tools: Calculate area (triangles, quadrilaterals and complex polygons), Calculate distance (for complex routes), Measure r
 - **`calls-node-status`** (low) — OSINT tool: Calls Node Status.
 - **`camhacker-com`** (low) — OSINT tool: Camhacker.com.
-- **`camvista`** (medium) — OSINT tool: CamVista.
+- **`camvista`** (medium) — Use when you have a `geolocation` or `address` in a covered city and want a live public webcam of that spot — returns street-level `image` v
 - **`carte-ma`** (medium) — Mapping/streetview service for Morocco
 - **`cartodb`** (low) — Use when you have a sizeable spatial dataset (addresses, coordinates, geometries) and need cloud-based mapping, SQL/spatial analysis, and sh
 - **`cellular-towers-map-canada`** (medium) — Use when you have a Canadian `geolocation`/`address` and want to identify nearby licensed cellular tower sites and their operators — returns

@@ -57416,41 +57416,52 @@
   {
     "id": "jadx",
     "name": "JADX",
-    "description": "Java source code recovery, app logic analysis, vulnerability assessment, code review",
+    "description": "Use when you have an Android `document-id` app package (APK/DEX) and want to read its logic and extract embedded strings — returns `domain`, `email` and hard-coded identifiers.",
     "url": "https://github.com/skylot/jadx",
     "category": "documents-metadata",
     "path": [
       "documents-metadata",
       "app-analysis"
     ],
-    "bestFor": "Java source code recovery, app logic analysis, vulnerability assessment, code review",
-    "input": "APK files, DEX files, class files",
-    "output": "Java source code, code structure, method signatures, data flow",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Decompiling an APK to readable Java to recover hard-coded URLs, endpoints, API keys and developer contact strings.",
+    "selectorsIn": [
+      "document-id"
+    ],
+    "selectorsOut": [
+      "domain",
+      "email"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open source under Apache 2.0; no account, no network calls.",
     "opsec": "passive",
-    "opsecNote": "Local analysis tool; no network communication",
+    "opsecNote": "Fully offline once you have the APK file — decompilation happens on your own machine and touches nothing belonging to the target. Obtaining the APK (from a store or device) is the only step with a footprint; do that with a clean account.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Widely used, actively maintained open-source decompiler by Skylot; ~40k GitHub stars, mirrored in Homebrew/Arch/Flathub.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "jadx-gui",
+      "Dex to Java decompiler"
+    ],
+    "tags": [
+      "app-analysis",
+      "reverse-engineering",
+      "apk"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/documents-metadata/app-analysis/jadx.md"
   },
   {
@@ -114556,7 +114567,8 @@
     "localInstall": false,
     "registration": false,
     "relatedTools": [
-      "bitcoinpaths-com"
+      "bitcoinpaths-com",
+      "tool-path"
     ],
     "aliases": [
       "Learn Me A Bitcoin",
@@ -118564,13 +118576,13 @@
   {
     "id": "camvista",
     "name": "CamVista",
-    "description": "OSINT tool: CamVista.",
+    "description": "Use when you have a `geolocation` or `address` in a covered city and want a live public webcam of that spot — returns street-level `image` views.",
     "url": "http://www.camvista.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Finding live public webcams of landmarks and streets in UK, US and European cities.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -118578,29 +118590,35 @@
     "selectorsOut": [
       "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to view all listed webcams in the browser; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You are viewing a public webcam directory; nothing you do reaches the subject and there is no query tied to any target. Standard web hygiene (clean browser/VPN) is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent webcam directory; feeds are third-party cameras, so timeliness and uptime vary per camera.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "camvista.com"
+    ],
     "tags": [
       "cctv",
       "webcam"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/camvista.md"
   },
   {
@@ -145577,40 +145595,51 @@
   },
   {
     "id": "lossless-cut",
-    "name": "Lossless Cut",
-    "description": "#javascript #opensource swiss army knife for audio/video editing.",
+    "name": "LosslessCut",
+    "description": "Use when you have an `image`/video file and want to trim, split or inspect it without re-encoding — returns clipped segments and preserved `metadata-exif`.",
     "url": "https://github.com/mifi/lossless-cut",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
+    "bestFor": "Fast lossless trimming, splitting and frame extraction from video/audio while keeping original quality and metadata.",
     "selectorsIn": [
       "image"
     ],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT); cross-platform desktop app for Windows/macOS/Linux. No account, no cloud upload.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely offline on your own machine; nothing is uploaded and the subject cannot see that you handled the file. Because it is lossless, embedded metadata (timestamps, GPS, device) is preserved — mind that when you export clips you may intend to share.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "trusted",
+    "trustNote": "Popular, actively maintained open-source project (mifi/LosslessCut) built on ffmpeg; widely used and auditable.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "LosslessCut",
+      "lossless-cut"
+    ],
     "tags": [
-      "Video editing and analyze"
+      "Video editing and analyze",
+      "video",
+      "ffmpeg"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/lossless-cut.md"
   },
   {
@@ -221201,40 +221230,6 @@
     "_file": "library/tools/public-records/bloomberg-public-companies-search.md"
   },
   {
-    "id": "blueleaks",
-    "name": "BlueLeaks",
-    "description": "OSINT tool: BlueLeaks.",
-    "url": "https://blueleaks.io/index.html",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/blueleaks.md"
-  },
-  {
     "id": "bmi-com",
     "name": "BMI / Songview Repertoire Search",
     "description": "Use when you have a `name` (songwriter, performer, or publisher) or a song title and want to link a person to musical works, co-writers, and publishing companies — returns songwriter names, publishers, and co-writer associates.",
@@ -223024,41 +223019,54 @@
   {
     "id": "caselaw-access-project",
     "name": "Caselaw Access Project",
-    "description": "Historical legal opinion research",
+    "description": "Use when you have a `name` and want to find US court opinions that mention the person — returns case `document-id`, court/date, and `associate` parties.",
     "url": "https://case.law/",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Historical legal opinion research",
-    "input": "Case name, court, year range",
-    "output": "Full text opinions, citations",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Full-text searching 360 years of digitized US published court opinions for a person's name.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "associate",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Fully free and open. As of 2024 all use restrictions were lifted; the complete dataset (6.9M cases) is downloadable in bulk and via free viewers with no account.",
     "opsec": "passive",
-    "opsecNote": "Academic/nonprofit source",
+    "opsecNote": "You search a static public archive of historical court opinions; the subject is never contacted and there is nothing for them to see. No login means no query trail tied to you beyond the host's server logs.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Digitized by Harvard Law School Library's Library Innovation Lab from official reporters; a primary, authoritative legal source.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "CAP",
+      "case.law",
+      "Harvard Caselaw Access Project"
+    ],
+    "tags": [
+      "court-records",
+      "legal",
+      "public-records"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/caselaw-access-project.md"
   },
   {
@@ -282450,37 +282458,52 @@
   {
     "id": "fullhunt",
     "name": "FullHunt",
-    "description": "OSINT tool: FullHunt.",
+    "description": "Use when you have a `domain` and want to map its external attack surface — returns subdomains, `ip-address`es and hosted assets.",
     "url": "https://fullhunt.io/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "bestFor": "Enumerating a domain's subdomains and internet-facing assets from a passive attack-surface database.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain",
+      "ip-address"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free \"Console\" account gives API access to the attack-surface database with a monthly query quota; larger volume and the enterprise platform are paid.",
+    "opsec": "passive",
+    "opsecNote": "Queries FullHunt's pre-collected database rather than scanning the target live, so the subject's servers see nothing from you. Your query is logged by FullHunt against your account; use a dedicated research account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "api",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
+    "trustNote": "Established commercial attack-surface-management vendor; a reputable third-party aggregator, not a primary registry.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "fullhunt.io"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "speciality-search-engines",
+      "attack-surface",
+      "subdomain-enumeration"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/fullhunt.md"
   },
   {
@@ -292107,37 +292130,49 @@
   {
     "id": "million-short",
     "name": "Million Short",
-    "description": "OSINT tool: Million Short.",
+    "description": "Use when you have a `name` or `username` and want obscure results that mainstream search buries — returns long-tail `domain` and `social-profile` links.",
     "url": "https://millionshort.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Surfacing low-traffic, long-tail pages by removing the most popular sites from the result set.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to use in the browser; no account required for basic searching.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party search engine, not the subject; the subject sees nothing. Standard search-engine hygiene applies — the operator sees your query and IP, so use a clean browser/VPN if the query itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Independent Toronto search engine (Exponential Labs); an established, well-documented tool but a small third party, not a primary source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "millionshort"
+    ],
     "tags": [
       "speciality-search-engines"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/million-short.md"
   },
   {
@@ -308980,38 +309015,53 @@
   },
   {
     "id": "wpscan",
-    "name": "Wpscan",
-    "description": "OSINT tool: Wpscan.",
+    "name": "WPScan",
+    "description": "Use when you have a `domain` running WordPress and want to enumerate its author users, plugins and version — returns `username` handles and site fingerprint.",
     "url": "https://wpscan.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "bestFor": "Enumerating WordPress author usernames and the plugin/theme stack of a target site.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "username",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "The CLI scanner is free and open source (GPL). The vulnerability-database API has a free tier of 25 requests/day; higher volume is paid. You do not need the API to enumerate users.",
+    "opsec": "active",
+    "opsecNote": "Scanning sends many HTTP requests directly to the target's web server from your IP; it appears in their access logs and can trip WAF/rate limits. Only scan sites you are authorised to test, or route through a VPN/sock-puppet host. User enumeration alone is lightweight but still logged.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "cli",
+    "trust": "trusted",
+    "trustNote": "Maintained by Automattic (owners of WordPress.com); the scanner is widely used and open source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "api-key",
+    "api": true,
+    "localInstall": true,
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "wpscan cli",
+      "WordPress security scanner"
+    ],
     "tags": [
-      "speciality-search-engines"
+      "speciality-search-engines",
+      "wordpress"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/wpscan.md"
   },
   {
@@ -352349,36 +352399,52 @@
   },
   {
     "id": "youtube-comments-downloader",
-    "name": "Youtube Comments Downloader",
-    "description": "OSINT tool: Youtube Comments Downloader.",
+    "name": "YouTube Comments Downloader",
+    "description": "Use when you have a YouTube `social-profile` (video/channel) and want its full comment history exported — returns commenter `username`, `name` and timestamps.",
     "url": "https://youtubecommentsdownloader.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Bulk-exporting all public comments (and replies) from a YouTube video, channel or playlist for analysis.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "username",
+      "name"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free signup grants starter credits (no card); large exports consume credits (roughly 1 credit/comment plus a per-item fee), with paid top-ups for bulk work.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You export public comment data via a third-party service; the video owner and commenters are not notified. The service sees which video you scrape and requires an account, so use a research-only login. Comments are public, but bulk-collecting them still aggregates personal data — handle accordingly.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Independent commercial scraper; convenient but a third party — the authoritative source is the public YouTube page itself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "relatedTools": [],
+    "aliases": [
+      "youtubecommentsdownloader.com"
+    ],
+    "tags": [
+      "youtube",
+      "comment-analysis"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-comments-downloader.md"
   },
   {
@@ -361165,35 +361231,51 @@
   {
     "id": "flightairmap",
     "name": "FlightAirMap",
-    "description": "OSINT tool: FlightAirMap.",
+    "description": "Use when you have an aircraft/vessel `vehicle-plate` registration or callsign and want live position and history — returns `geolocation` track and route.",
     "url": "https://www.flightairmap.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Live 2D/3D map of aircraft, ships and trackers with searchable history by registration, airline or airport.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free and open source (AGPLv3). The public demo site is free to browse; you can also self-host your own instance from ADS-B/AIS feeds at no cost.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing tracks is passive and reveals nothing to the aircraft/vessel operator. If you self-host from your own receiver, that receiver is local and offline-capable. Standard web hygiene for the public site.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "Established open-source tracking platform (Ysurac/FlightAirMap); data quality depends on the ADS-B/AIS feeds behind a given instance.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "flight air map",
+      "Ysurac FlightAirMap"
+    ],
+    "tags": [
+      "flight-tracking",
+      "ship-tracking",
+      "ads-b",
+      "ais"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/transportation/flightairmap.md"
   },
   {

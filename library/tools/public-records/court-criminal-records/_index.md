@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`black-book-online-criminal-search`** (medium) — Broad public records aggregation
-- **`caselaw-access-project`** (medium) — Historical legal opinion research
+- **`caselaw-access-project`** (medium) — Use when you have a `name` and want to find US court opinions that mention the person — returns case `document-id`, court/date, and `associa
 - **`courtlistener`** (medium) — Federal court opinion and docket search
 - **`crimereports-com`** (medium) — Crime incident mapping
 - **`docket-alarm`** (medium) — Litigation docket tracking
