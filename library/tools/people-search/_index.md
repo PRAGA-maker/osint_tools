@@ -42,7 +42,7 @@ kind: group-index
 - **`british-phone-book`** (high) — Use when you have a UK `name` and want a residential landline listing with address — returns address and phone (landline).
 - **`buscapaginasblancas`** (high) — Use when you have Spanish surnames and want listed name/phone/address records — a Python scraper of Spain's Páginas Blancas, now defunct bec
 - **`california-justice-watch`** (high) — Use when you have a `name` for a California DA, judge, or police officer and want documented misconduct/accountability records — returns cas
-- **`campuscareercenter`** (medium) — OSINT tool: CampusCareerCenter.
+- **`campuscareercenter`** (medium) — Use when you have a `name` and want to check an entry-level/campus recruiting network for a candidate profile or employment link — returns e
 - **`canada-post-find-a-postal-code`** (high) — Use when you have a Canadian street `address` and want its exact postal code (or to validate/standardize the address) — returns the canonica
 - **`canada411-advanced-search-whitepages-ca`** (high) — Use when you have a `name`, `phone`, or `address` in Canada and want the matching residential/business listing — returns name, address and p
 - **`canada411`** (high) — Use when you have a Canadian `phone`, `name`, or `address` and want free white-pages data — returns listed `name`, `address`, and `phone` fr

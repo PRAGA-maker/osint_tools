@@ -159473,24 +159473,29 @@
   {
     "id": "heavy-ai-tweetmap",
     "name": "Heavy.ai Tweetmap",
-    "description": "Instantly visualize hundreds of millions of tweets in real time",
+    "description": "Use when you have a keyword or `geolocation` and want to see the geographic distribution of geotagged tweets — returns location patterns from a large tweet archive.",
     "url": "https://www.heavy.ai/demos/tweetmap",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Visualizing hundreds of millions of geotagged tweets on a zoomable map, filtered by keyword/hashtag, to see where a term was tweeted.",
+    "selectorsIn": [
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free public demo of HEAVY.AI's GPU database; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You browse an aggregate tweet visualization, not the subject; nothing is disclosed to any target. Safe from any browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A vendor demo, not a maintained OSINT dataset. Twitter/X closed its free API in July 2023, so the feed is effectively a frozen historical archive, not live real-time data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -159499,16 +159504,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "HEAVY.AI Tweetmap",
+      "MapD Tweetmap"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "useful-websites-tools-documents",
-      "specialty-search"
+      "geospatial",
+      "twitter"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/heavy-ai-tweetmap.md"
   },
   {
@@ -197223,37 +197231,51 @@
   {
     "id": "campuscareercenter",
     "name": "CampusCareerCenter",
-    "description": "OSINT tool: CampusCareerCenter.",
+    "description": "Use when you have a `name` and want to check an entry-level/campus recruiting network for a candidate profile or employment link — returns employer-org and profile hints.",
     "url": "http://www.campuscareercenter.com",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "bestFor": "A niche entry-level/campus job-board network (with sister sites CampusRN, CampusGov) where a student/early-career subject may have a jobseeker profile or application trail.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free for job seekers to browse and create a profile; searching candidate profiles is an employer feature behind a paid HireMagnet recruiter plan.",
+    "opsec": "passive",
+    "opsecNote": "Browsing listings is passive. Do not create an employer account or contact a subject through the platform during an investigation — that would be active and could tip them off.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A commercial recruiting network (powered by HireMagnet); candidate data is self-submitted and access to profiles is largely gated, so investigative yield is limited.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Campus Career Center",
+      "campuscareercenter.com"
+    ],
     "tags": [
-      "job-search-resources"
+      "job-search-resources",
+      "recruiting"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/people-search/campuscareercenter.md"
   },
   {
@@ -246749,40 +246771,6 @@
     "_file": "library/tools/public-records/michigan.md"
   },
   {
-    "id": "michigan-ppp-loans",
-    "name": "Michigan PPP loans",
-    "description": "OSINT tool: Michigan PPP loans.",
-    "url": "https://c0eib122.caspio.com/dp/74321000d4c16abc2baf480b8934",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/michigan-ppp-loans.md"
-  },
-  {
     "id": "michigan-resident-database",
     "name": "Michigan Resident Database",
     "description": "Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and associate leads.",
@@ -281020,24 +281008,30 @@
   {
     "id": "familysearch-research-wiki",
     "name": "Familysearch Research Wiki",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on family research",
-    "url": "https://www.familysearch.org/wiki/en/Main_Page",
+    "description": "Use when you have a `name` and a place/era and want to know which genealogical records exist and where to find them — returns pointers to record sets and relatives leads.",
+    "url": "https://www.familysearch.org/en/wiki/Main_Page",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "A free how-to guide (156k+ articles) that tells you what birth/marriage/death/census records exist for a given place and how to access them.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Completely free; content is Creative Commons (CC BY-SA). A free FamilySearch account is optional and only needed to reach some linked record images.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Read-only reference reading; nothing is disclosed to any subject. Safe from any browser. The optional account is tied to FamilySearch (LDS) if you register.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Maintained by FamilySearch (a reputable genealogy non-profit) but community-edited; it's a research guide, so verify against the actual record sets it points to.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -281046,27 +281040,31 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "alabama-deaths",
-      "colorado-statewide-marriage-index",
       "family-search",
       "familysearch",
+      "familysearch-org",
+      "alabama-deaths",
+      "colorado-statewide-marriage-index",
       "familysearch-2",
       "familysearch-births-and-baptisms-1972-1981-australia",
       "familysearch-deaths-and-burials-1816-1980-australia",
       "familysearch-free-family-trees-and-genealogy-archives-familysearch-org",
-      "familysearch-guessing-a-name-variation",
-      "familysearch-org"
+      "familysearch-guessing-a-name-variation"
     ],
+    "aliases": [
+      "FamilySearch Research Wiki",
+      "FamilySearch Wiki"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "genealogy",
+      "specialty-search"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/familysearch-research-wiki.md"
   },
   {
@@ -284653,35 +284651,50 @@
   {
     "id": "google-domain-hacker",
     "name": "Google Domain Hacker",
-    "description": "OSINT tool: Google Domain Hacker.",
+    "description": "Use when you have a `domain` or `name` and want a preset Google dork scoped to a curated site set — returns matching pages, domain and social-profile leads.",
     "url": "https://cse.google.com/cse/publicurl?cx=005797772976587943970:ca2hiy6hmri",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Running Google-quality queries through a curator-built Programmable Search Engine focused on domain/host discovery, without setting up your own dorks.",
+    "selectorsIn": [
+      "domain",
+      "name"
+    ],
+    "selectorsOut": [
+      "domain",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Programmable Search Engine (CSE); no account needed to run a query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A standard Google-backed search; the query goes to Google, not the subject. Use a private/sock-puppet session for sensitive terms, as with any search engine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "unverified",
+    "trustNote": "A third-party-configured Google CSE — its scope is defined by an unknown curator and can drift or be edited, so treat coverage as opaque and Google-dependent.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Google CSE domain hacker"
+    ],
+    "tags": [
+      "google-cse",
+      "dorking",
+      "specialty-search"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/google-domain-hacker.md"
   },
   {
@@ -295240,13 +295253,13 @@
   {
     "id": "ominis-osint",
     "name": "Ominis-OSINT",
-    "description": "Python tool performing online information gathering via search engine queries.",
+    "description": "Use when you have a `name`, `username` or `email` and want automated Google reconnaissance across many sites — returns social-profile matches and web mentions.",
     "url": "https://github.com/AnonCatalyst/Ominis-OSINT",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "Automated search-engine reconnaissance on a name/term",
+    "bestFor": "Scripted search-engine reconnaissance — running a name/handle/email through Google and multi-site username checks to collect mentions and profile matches.",
     "selectorsIn": [
       "name",
       "username",
@@ -295255,15 +295268,18 @@
     "selectorsOut": [
       "social-profile"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free and open-source (pip-installable); no account or API key required.",
+    "opsec": "active",
+    "opsecNote": "The tool scrapes Google and probes many site URLs directly, so requests hit search engines and target platforms (not the subject's own accounts). It ships proxy support and user-agent randomization for a reason — run behind a VPN/proxy to avoid IP blocks.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "captcha"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Active project (578 stars).",
+    "trustNote": "Active, reasonably popular open-source project (~500+ stars); results depend on Google scraping, which is brittle and captcha-prone — verify hits manually.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -295272,19 +295288,22 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "coeus-osint-toolbox",
+      "webhound-anoncatalyst"
+    ],
+    "aliases": [
+      "Ominis",
+      "AnonCatalyst Ominis-OSINT"
+    ],
     "tags": [
       "search-engine",
       "python",
       "footprint"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "coeus-osint-toolbox",
-      "webhound-anoncatalyst"
-    ],
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/ominis-osint.md"
   },
   {
@@ -306857,41 +306876,50 @@
   {
     "id": "wayparam",
     "name": "wayparam",
-    "description": "OSINT tool: wayparam.",
+    "description": "Use when you have a `domain` and want its historical URLs and parameterized endpoints from the Wayback Machine — returns domain endpoints for recon.",
     "url": "https://github.com/aleff-github/wayparam",
     "category": "search-engines",
     "path": [
       "search-engines",
       "search-tools"
     ],
-    "bestFor": "",
-    "input": "",
-    "output": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Mining the Internet Archive's Wayback CDX index for a domain's historical URLs and query parameters (a modern ParamSpider-style endpoint harvester).",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open-source; pip-installable, no account or key required.",
+    "opsec": "passive",
+    "opsecNote": "It queries the Internet Archive's public Wayback CDX API, not the target site, so the domain owner is not contacted or alerted. Purely archive-side reconnaissance.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "bestInteractionPattern": "cli",
+    "trust": "community",
+    "trustNote": "A focused open-source recon utility; data comes straight from the Wayback CDX API, so results are only as complete as the Archive's crawl of that domain.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "aleff-github/wayparam"
+    ],
+    "tags": [
+      "wayback",
+      "web-recon",
+      "parameters"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-tools/wayparam.md"
   },
   {
@@ -314086,38 +314114,48 @@
   {
     "id": "chartmasters-org-spotify-streaming-numbers-tool",
     "name": "chartmasters.org/spotify-streaming-numbers-tool/",
-    "description": "report of the number of streams of a particular artist's tracks on Spotify",
-    "url": "http://chartmasters.org/spotify-streaming-numbers-tool/",
+    "description": "Use when you have an artist `name` and want their Spotify streaming totals per track — returns a public activity/popularity profile for that artist.",
+    "url": "https://chartmasters.org/spotify-streaming-numbers-tool/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Pulling per-track and total Spotify stream counts for a named artist to gauge reach, activity and catalog over time.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free tool for looking up an artist's Spotify stream numbers; the wider ChartMasters site has premium/subscriber content but the streaming-numbers lookup is free.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party analytics site about a public Spotify artist, not the person; nothing is disclosed to the subject. Safe from any browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A respected independent music-stats site, but stream figures are ChartMasters' own estimates/aggregations, not official Spotify data — treat as indicative.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ChartMasters Spotify Streaming Numbers"
+    ],
     "tags": [
       "Social Media",
-      "Spotify"
+      "Spotify",
+      "music"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/chartmasters-org-spotify-streaming-numbers-tool.md"
   },
   {
@@ -321350,37 +321388,48 @@
   {
     "id": "ghnames",
     "name": "GHNames",
-    "description": "OSINT tool: GHNames.",
+    "description": "Use when you have a GitHub `username` and want its history — which accounts have held that handle and their user IDs — returns username/account reuse leads.",
     "url": "https://ghnames.com/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Resolving GitHub username history — spotting when a handle was renamed, reused, or held by multiple accounts, via stable numeric user IDs.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "username",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search; in open-alpha. No account required to query.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party dataset of historical GitHub handles, not GitHub or the subject live; nothing is disclosed to the target. Use a research browser.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Community project (open alpha) built on scraped GitHub username/ID history; useful as a lead source but coverage and freshness are unproven — confirm against GitHub itself.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ghnames.com"
+    ],
     "tags": [
-      "github"
+      "github",
+      "username"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/ghnames.md"
   },
   {
@@ -331008,38 +331057,51 @@
   {
     "id": "noxinluencer",
     "name": "Noxinluencer",
-    "description": "youtube channels comparing",
+    "description": "Use when you have a YouTube channel (`social-profile`/`username`) and want its audience, growth and engagement analytics — returns channel activity metrics and rankings.",
     "url": "https://noxinfluencer.com/youtube/channel-compare",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Profiling a YouTube channel's subscriber growth, upload cadence and engagement, and comparing channels side by side.",
+    "selectorsIn": [
+      "social-profile",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier shows headline stats and live sub-count; deeper history, full reports and the 5-dimension comparison prompt a paid NoxInfluencer membership.",
+    "opsec": "passive",
+    "opsecNote": "You query a third-party analytics platform about a public channel, not the creator; nothing is disclosed to the subject. Use a research browser.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Commercial influencer-marketing analytics; numbers are third-party estimates (NoxScore, projected earnings) — treat as indicative, not exact.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "NoxInfluencer",
+      "noxinfluencer.com"
+    ],
     "tags": [
       "Social Media",
       "YouTube"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-17",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/noxinluencer.md"
   },
   {
@@ -336730,42 +336792,6 @@
     "lastVerified": "2026-07-11",
     "enrichment": "full",
     "_file": "library/tools/social-networks/regvk-com.md"
-  },
-  {
-    "id": "related-repos",
-    "name": "Related Repos",
-    "description": "OSINT tool: Related Repos.",
-    "url": "https://relatedrepos.com/",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "github"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/related-repos.md"
   },
   {
     "id": "removetweets",

@@ -255,7 +255,7 @@ kind: group-index
 - **`faganfinder`** (low) — OSINT tool: FaganFinder.
 - **`falla`** (medium) — A search engine command line scraper for more than 15 search engines, including Google, Duckduckgo, Bing, Ask, and more.
 - **`familypedia`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on f
-- **`familysearch-research-wiki`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on f
+- **`familysearch-research-wiki`** (medium) — Use when you have a `name` and a place/era and want to know which genealogical records exist and where to find them — returns pointers to re
 - **`fatfingers`** (medium) — eBay search using misspelled words and typos
 - **`fbi-tools`** (medium) — Curated collection of OSINT tools for gathering information and digital forensics.
 - **`federal-register`** (medium) — Daily journal of the United States government - includes information on regulations, codes and policy
@@ -333,7 +333,7 @@ kind: group-index
 - **`google-cse-instances-search-engine`** (medium) — OSINT tool: Google CSE instances Search Engine.
 - **`google-custom-search`** (medium) — OSINT tool: Google Custom Search.
 - **`google-docs-cse`** (low) — OSINT tool: Google Docs CSE.
-- **`google-domain-hacker`** (medium) — OSINT tool: Google Domain Hacker.
+- **`google-domain-hacker`** (medium) — Use when you have a `domain` or `name` and want a preset Google dork scoped to a curated site set — returns matching pages, domain and socia
 - **`google-dork-cheatsheet`** (medium) — OSINT tool: Google Dork Cheatsheet.
 - **`google-drive-folder-search-engine`** (medium) — OSINT tool: Google Drive Folder Search Engine.
 - **`google-email-extractor`** (low) — Extract emails from Google Search Results
@@ -573,7 +573,7 @@ kind: group-index
 - **`office-of-government-ethics`** (medium) — US Office of Government Ethics site
 - **`oh-shint-osint-web-resources`** (medium) — GitBook of OSINT web resources and methodology.
 - **`omail`** (low) — An online tool that extracts and validates emails from Google and Bing search results (by keyword or domain). Partly free (200 extracts per 
-- **`ominis-osint`** (medium) — Python tool performing online information gathering via search engine queries.
+- **`ominis-osint`** (medium) — Use when you have a `name`, `username` or `email` and want automated Google reconnaissance across many sites — returns social-profile matche
 - **`one-liner-osint`** (low) — Collection of powerful one-liner commands for OSINT gathering.
 - **`one-look-reverse-dictionary`** (low) — OSINT tool: One Look Reverse Dictionary.
 - **`onet-pl-poland`** (low) — OSINT tool: Onet.pl (Poland).

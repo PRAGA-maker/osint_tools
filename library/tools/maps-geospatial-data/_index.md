@@ -69,7 +69,7 @@ kind: group-index
 - **`gps-latitude-longitude-com`** (medium) — OSINT tool: gps-latitude-longitude.com.
 - **`gpx-file-editor`** (medium) — OSINT tool: Gpx File Editor.
 - **`gridreferencefinder-com`** (medium) — OSINT tool: gridreferencefinder.com.
-- **`heavy-ai-tweetmap`** (medium) — Instantly visualize hundreds of millions of tweets in real time
+- **`heavy-ai-tweetmap`** (medium) — Use when you have a keyword or `geolocation` and want to see the geographic distribution of geotagged tweets — returns location patterns fro
 - **`here-wego`** (low) — Mapping service that can serve as an alternative to Google Maps or Apple Maps.
 - **`hitta-se`** (low) — Mapping service for Sweden
 - **`howtogeek-com`** (medium) — OSINT tool: howtogeek.com.

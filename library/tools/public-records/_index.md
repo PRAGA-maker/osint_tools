@@ -617,7 +617,6 @@ kind: group-index
 - **`mellssa-data`** (medium) — OSINT tool: Mellssa Data.
 - **`mergent-intellect`** (medium) — OSINT tool: Mergent Intellect.
 - **`mergent-online`** (medium) — OSINT tool: Mergent Online.
-- **`michigan-ppp-loans`** (medium) — OSINT tool: Michigan PPP loans.
 - **`michigan-resident-database`** (high) — Use when you have a `name` and want a Michigan resident's address, DOB, and neighbors from state-sourced records — returns address, dob, and
 - **`michigan-state-records`** (high) — Use when you have a `name` and a Michigan connection and want aggregated public records (court, criminal, inmate, property) — returns addres
 - **`michigan`** (high) — Use when you have a `name` and want to check whether someone is or was recently under Michigan corrections supervision — returns name, dob, 

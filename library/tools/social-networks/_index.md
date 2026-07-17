@@ -84,7 +84,7 @@ kind: group-index
 - **`calialec-snap-map-private-api`** (medium) — OSINT tool: CaliAlec/snap-map-private-api.
 - **`castrick`** (high) — Use when you have an `email`, `username` or `phone` and want a trace-free reverse lookup into linked accounts — Castrick returned `social-pr
 - **`channel-crawler`** (low) — OSINT tool: Channel Crawler.
-- **`chartmasters-org-spotify-streaming-numbers-tool`** (medium) — report of the number of streams of a particular artist's tracks on Spotify
+- **`chartmasters-org-spotify-streaming-numbers-tool`** (low) — Use when you have an artist `name` and want their Spotify streaming totals per track — returns a public activity/popularity profile for that
 - **`chat-downloader`** (medium) — download chats messages in JSON from #YouTube, #Twitch, #Reddit and #Facebook.
 - **`chatter`** (high) — Use when you want automated keyword/phrase monitoring across Twitter, Reddit, and 4chan with alerts to Telegram — returns matching public po
 - **`chearch`** (medium) — OSINT tool: Chearch.
@@ -217,7 +217,7 @@ kind: group-index
 - **`getdaytrends`** (low) — Use when you have a place and time and want the historical Twitter/X trending topics there — returns trend/hashtag context to anchor an even
 - **`gettr-com`** (medium) — Use when you have a `username` or `name` and want to find the subject on GETTR (a Twitter/X alternative) — returns `social-profile`, posts, 
 - **`gettwitterid`** (medium) — OSINT tool: GetTwitterID.
-- **`ghnames`** (medium) — OSINT tool: GHNames.
+- **`ghnames`** (medium) — Use when you have a GitHub `username` and want its history — which accounts have held that handle and their user IDs — returns username/acco
 - **`ghostcodes-addmesnaps-directories`** (medium) — Public Snapchat username directories; pivot from interests/handles to accounts.
 - **`ghostcodes-com`** (medium) — OSINT tool: Ghostcodes.com.
 - **`ghunt-online-version`** (medium) — Get info about Google account by email: - name - default profile and cover pictures; - calendar events and timezone; - Google Maps reviews; 
@@ -402,7 +402,7 @@ kind: group-index
 - **`nitter-ca`** (high) — Use when you have a Twitter/X `username` and want to read the timeline without an X login — returns public tweets/profile via a lightweight,
 - **`nitter-it`** (high) — Use when you have a Twitter/X `username` and want to read their tweets/media without an X account or login — a Nitter privacy front-end retu
 - **`nitter`** (medium) — OSINT tool: Nitter.
-- **`noxinluencer`** (medium) — youtube channels comparing
+- **`noxinluencer`** (medium) — Use when you have a YouTube channel (`social-profile`/`username`) and want its audience, growth and engagement analytics — returns channel a
 - **`nqntnqnqmb`** (high) — Use when you have a `name` or `employer-org` and want to enumerate LinkedIn profiles, company employees, and their contact details programma
 - **`ny-dolls-org`** (medium) — OSINT tool: NY Dolls.org.
 - **`nzbfriends`** (medium) — usenet search engine
@@ -511,7 +511,6 @@ kind: group-index
 - **`redlinecybersecurity-com`** (high) — Use when you have a LinkedIn post URL (a `social-profile` activity) and want its exact publish timestamp for a timeline — returns a precise 
 - **`reeddit`** (low) — Simplified Reddit web interface.
 - **`regvk-com`** (high) — Use when you have a VKontakte profile or group URL (a vanity `username`) and want its stable numeric ID — returns the VK id you need for dee
-- **`related-repos`** (medium) — OSINT tool: Related Repos.
 - **`removetweets`** (medium) — In recent weeks, I have been seeing more and more accounts deleting their tweets in whole or in part. You can automate this process with thi
 - **`renren-com`** (high) — Use when you have a Chinese subject's `name` or `username` and want to check for a Renren social-network profile (esp. older student-era acc
 - **`report-tree`** (medium) — OSINT tool: Report Tree.
