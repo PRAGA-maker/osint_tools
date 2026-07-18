@@ -475,7 +475,6 @@ kind: group-index
 - **`reddit-persona`** (medium) — Use when you have a Reddit `username` and want an at-a-glance behavioural profile — returns inferred interests, active subreddits, and geolo
 - **`reddit-post-scraping-tool`** (medium) — Use when you have a Reddit `username`, subreddit, or keyword and want to bulk-collect matching posts — returns exported post data (author, t
 - **`reddit-reditr`** (medium) — OSINT tool: Reddit - Reditr.
-- **`reddit-scraper`** (medium) — Crawl posts, comments, communities, and users without login.
 - **`reddit-search-cemulate`** (low) — Alternative Reddit search tool.
 - **`reddit-search-engine`** (medium) — Use when you have a `username`, `name` or keyword and want Reddit posts/comments indexed by Google — returns Reddit `social-profile` and thr
 - **`reddit-search-realsrikar`** (low) — Reddit content search tool.
@@ -818,7 +817,7 @@ kind: group-index
 - **`youtube-transcript-api`** (medium) — Get the transcript/subtitles for a given #YouTube video (by ID from adress bar). It also works for automatically generated subtitles and sup
 - **`youtube-video-upload-time`** (medium) — Use when you have a YouTube video `social-profile` URL and want its exact upload time — returns the precise `metadata-exif`-style publish ti
 - **`youtube-whisperer`** (medium) — Use when you have a YouTube video `url` tied to a subject and want a text transcript to search for names, places, and admissions — returns a
-- **`youtube-word-search`** (medium) — An extension that helps you find at what second in the video a certain word is heard. It's possible to search not only by one word, but by t
+- **`youtube-word-search`** (medium) — Use when you have a YouTube video and a keyword/`name` and want to know exactly when it is spoken — jumps to the timestamp(s) where the word
 - **`ytcomments-klostermann-ca`** (low) — OSINT tool: Ytcomments.klostermann.ca.
 - **`ytcs`** (medium) — google chrome extension to search YouTube comments without leaving the site (link to source code)
 - **`ytgrep`** (medium) — A tool for quick text search of subtitles in YouTube videos. Supports regular expressions and searching across multiple videos.

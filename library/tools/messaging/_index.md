@@ -154,7 +154,7 @@ kind: group-index
 - **`telegram-tools`** (high) — Use when you have a Telegram user/account `device-id` (numeric ID) or bot file ID and want to decode it — returns approximate account-creati
 - **`telegramchannels-me`** (medium) — Use when you have a `username`, `name`, or keyword and want to discover public Telegram channels — returns `social-profile` links to matchin
 - **`telegramdb-org`** (medium) — OSINT tool: TelegramDB.org.
-- **`telegramdb`** (medium) — TelegramDB is a searchable database service that allows users to explore public Telegram groups and channels via a dedicated bot.
+- **`telegramdb`** (medium) — Use when you have a Telegram `username`, keyword, or group name and want to explore public Telegram — returns matching `social-profile` grou
 - **`telemetr-io`** (high) — Use when you have a Telegram channel/`username` or a keyword and want channel analytics, post search and mention monitoring across millions 
 - **`telemetr-me`** (high) — Use when you have a Telegram channel `username` or keyword and want channel analytics — returns subscriber stats, post history, growth, ad t
 - **`telemetrio`** (medium) — Telemetr.io offers a range of Telegram-related services based on a catalog of Telegram channels: country and category-specific rankings, cur

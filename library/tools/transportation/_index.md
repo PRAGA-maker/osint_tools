@@ -38,7 +38,7 @@ kind: group-index
 - **`boatnerd-great-lakes-shipping`** (medium) — Maritime-related website focusing on Great Lakes and seaway shipping, including vessel information, photos, facts, and figures
 - **`canadian-black-book-values`** (medium) — Use when you have a Canadian vehicle's year/make/model or VIN and want its market value — returns physical-description and a valuation to co
 - **`canadian-black-book`** (medium) — Use when you have a vehicle's make/model/year and want its Canadian market value — returns used-car trade-in/retail pricing to sanity-check 
-- **`canadian-civil-aircraft-register-search-canada`** (medium) — Transport Canada's registered civil aircraft registration search
+- **`canadian-civil-aircraft-register-search-canada`** (medium) — Use when you have a Canadian tail number (`vehicle-plate`) or owner `name` and want registration details — returns registered owner `name`/`
 - **`canadian-vessel-registration-query-system`** (medium) — Maritime-related website that offers a search of a Canadian database of naval vessel types
 - **`car-vehicle-model-recognition-online`** (medium) — OSINT tool: Car/Vehicle Model Recognition Online.
 - **`caranalytics-co-uk`** (medium) — OSINT tool: Caranalytics.co.uk.

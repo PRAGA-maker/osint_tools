@@ -135,7 +135,7 @@ kind: group-index
 - **`fulldp-co-3`** (high) — Use when you have a VK (VKontakte) profile and need the full-resolution profile picture rather than the cropped thumbnail — returns a downlo
 - **`fulldp-co-4`** (high) — Use when you have a social username/profile and need the full-resolution profile picture (Instagram/TikTok/VK/YouTube etc.) — the fulldp.co 
 - **`fulldp-co-5`** (high) — Use when you have a YouTube channel/handle and need the full-resolution channel profile picture rather than the small thumbnail — returns a 
-- **`fulldp`** (medium) — Download OnlyFans full-size profile pictures.
+- **`fulldp`** (medium) — Use when you have an OnlyFans `username` and want the full-resolution profile picture normally shown as a thumbnail — returns the full-size 
 - **`gaia`** (high) — Use when you have a `username` or `name` and want to find a Gaia Online avatar-community profile — returns the social-profile, avatar images
 - **`geograph-worldwide`** (medium) — Use when you have a `geolocation` (grid square / area) and want ground-level reference photos of it — returns geotagged `image`s to compare 
 - **`geospy-2`** (high) — Use when you have an outdoor `image` and no location metadata and want an AI location estimate — returns predicted `geolocation` (region/coo

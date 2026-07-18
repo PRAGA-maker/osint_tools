@@ -680,8 +680,7 @@ kind: group-index
 - **`search-all`** (medium) — Chrome extension allowing you to select a search engine of your choice; quickly switch between search engines
 - **`search-atlas`** (medium) — OSINT tool: Search Atlas.
 - **`search-by-filetype`** (medium) — OSINT tool: Search by FileType.
-- **`search-ch-switzerland`** (low) — OSINT tool: Search.ch (Switzerland).
-- **`search-ch`** (medium) — OSINT tool: Search.ch.
+- **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na
 - **`search-com`** (low) — OSINT tool: Search.com.
 - **`search-commands`** (low) — Google Chrome extension provides a Swiss-knife style commands tool inside your browser's address bar to enhance your search experience
 - **`search-craigslist`** (medium) — OSINT tool: Search craigslist.

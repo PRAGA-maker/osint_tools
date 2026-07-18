@@ -82093,56 +82093,6 @@
     "_file": "library/tools/domains-ip-infrastructure/moartls-analyzer.md"
   },
   {
-    "id": "moz-analytics-open-site-explorer",
-    "name": "MOZ Analytics Open Site Explorer",
-    "description": "Tool that identifies the available registration information for a website or domain name",
-    "url": "https://moz.com/researchtools/ose",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "followerwonk-tools-for-twitter-analytics-bio-search-and-more",
-      "moz-link-explorer"
-    ],
-    "_file": "library/tools/domains-ip-infrastructure/moz-analytics-open-site-explorer.md"
-  },
-  {
     "id": "moz-link-explorer",
     "name": "Moz Link Explorer",
     "description": "Analyse the links of any website.",
@@ -140773,29 +140723,31 @@
   },
   {
     "id": "fulldp",
-    "name": "Fulldp",
-    "description": "Download OnlyFans full-size profile pictures.",
+    "name": "fulldp.co (OnlyFans Full-Size DP Viewer)",
+    "description": "Use when you have an OnlyFans `username` and want the full-resolution profile picture normally shown as a thumbnail — returns the full-size DP `image` to download for reverse/face search.",
     "url": "https://fulldp.co/onlyfans-full-size-profile-picture/",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "Getting full-resolution OnlyFans profile photos for reverse image search",
+    "bestFor": "Fetching a public OnlyFans account's full-resolution profile photo from just the username, for reverse image search.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "image"
+      "image",
+      "social-profile"
     ],
-    "status": "unknown",
+    "status": "degraded",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, ad-supported web tool; no account or payment needed.",
+    "opsec": "passive",
+    "opsecNote": "You send the target's username to a third-party site, not to OnlyFans, so the account owner is not notified and it never touches an OnlyFans session. Use a sock-puppet browser; these ad-supported sites push aggressive ads/fake download buttons — take only the profile image.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "One of the interchangeable fulldp.co profile-picture fetchers, unaffiliated with OnlyFans; reliability fluctuates as the source platform changes access.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -140804,15 +140756,6 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "profile-photo",
-      "adult"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "fulldp-co",
       "fulldp-co-2",
@@ -140820,6 +140763,18 @@
       "fulldp-co-4",
       "fulldp-co-5"
     ],
+    "aliases": [
+      "fulldp onlyfans",
+      "onlyfans full size profile picture"
+    ],
+    "tags": [
+      "onlyfans",
+      "profile-photo",
+      "adult"
+    ],
+    "source": "osintambition-social",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/fulldp.md"
   },
   {
@@ -171080,41 +171035,56 @@
   {
     "id": "telegramdb",
     "name": "TelegramDB",
-    "description": "TelegramDB is a searchable database service that allows users to explore public Telegram groups and channels via a dedicated bot.",
+    "description": "Use when you have a Telegram `username`, keyword, or group name and want to explore public Telegram — returns matching `social-profile` groups/channels and, via its bot, a user's public group footprint.",
     "url": "https://www.telegramdb.org/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching an index of public Telegram groups/channels and mapping which public groups a user appears in via its bot.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier via the website and Telegram bot with limited queries; heavier use / deeper lookups require a paid plan.",
+    "opsec": "passive",
+    "opsecNote": "You query TelegramDB's own index (and its bot), not the target directly, so the person is not notified and you never join their groups. The bot requires a Telegram account — use a sock-puppet Telegram identity, never your real one, since interacting with the bot ties activity to that account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Third-party Telegram indexing service listed in Bellingcat's toolkit; coverage of public groups is partial and membership data can be stale, so treat results as leads to confirm in Telegram.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "bellingcat-toolkit",
-      "telegram"
-    ],
-    "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "registration": true,
     "relatedTools": [
       "telegramdb-org"
     ],
+    "aliases": [
+      "telegramdb.org",
+      "TGDB"
+    ],
+    "tags": [
+      "bellingcat-toolkit",
+      "telegram",
+      "group-search"
+    ],
+    "source": "bellingcat-toolkit",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/telegramdb.md"
   },
   {
@@ -301801,85 +301771,55 @@
   {
     "id": "search-ch",
     "name": "Search.ch",
-    "description": "OSINT tool: Search.ch.",
+    "description": "Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss national directory (2M+ entries).",
     "url": "https://www.search.ch",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
+    "bestFor": "Swiss phone book and business directory lookups — resolve a name to phone/address across Switzerland.",
     "selectorsIn": [
-      "name"
+      "name",
+      "phone"
     ],
     "selectorsOut": [
-      "social-profile"
+      "phone",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search the directory, maps, and timetables; a login (email/Google/Apple/etc.) is optional and only needed for personalised features, not for lookups.",
+    "opsec": "passive",
+    "opsecNote": "A public directory lookup — you query search.ch, not the person, so no notification is sent. Standard passive collection; a login is not required for searches, so stay logged out to avoid attributing yourself.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "A long-established mainstream Swiss portal (operates the tel.search.ch / local.ch directory data); directory entries are authoritative for listed numbers, though unlisted/mobile-only people won't appear.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "ch"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "search.ch",
+      "tel.search.ch",
+      "Die Schweizer Suchmaschine"
+    ],
     "tags": [
-      "search",
+      "switzerland",
+      "phone-book",
+      "directory",
       "international"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "search-ch-switzerland"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-ch.md"
-  },
-  {
-    "id": "search-ch-switzerland",
-    "name": "Search.ch (Switzerland)",
-    "description": "OSINT tool: Search.ch (Switzerland).",
-    "url": "http://www.search.ch",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "low",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "main-national-search-engines"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "search-ch"
-    ],
-    "_file": "library/tools/search-engines/search-ch-switzerland.md"
   },
   {
     "id": "search-com",
@@ -336780,56 +336720,6 @@
     "_file": "library/tools/social-networks/reddit-reditr.md"
   },
   {
-    "id": "reddit-scraper",
-    "name": "Reddit Scraper",
-    "description": "Crawl posts, comments, communities, and users without login.",
-    "url": "https://apify.com/trudax/reddit-scraper",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Reddit"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "apify-s-google-maps-scraper",
-      "dark-web-scraper",
-      "facebook-latest-comments-scraper",
-      "facebook-latest-posts-scraper",
-      "google-maps-scraper",
-      "google-search-scraper",
-      "instagram-hashtag-scraper",
-      "instagram-scraper",
-      "twitter-scraper",
-      "twitter-url-scraper",
-      "youtube-scraper"
-    ],
-    "_file": "library/tools/social-networks/reddit-scraper.md"
-  },
-  {
     "id": "reddit-search",
     "name": "Reddit Search",
     "description": "OSINT tool: Reddit Search.",
@@ -354516,39 +354406,50 @@
   },
   {
     "id": "youtube-word-search",
-    "name": "YouTube word search",
-    "description": "An extension that helps you find at what second in the video a certain word is heard. It's possible to search not only by one word, but by the loaded list of words (!).",
-    "url": "https://chrome.google.com/webstore/detail/youtube-word-searcher/jichoejagacnbcinlgncghhdegdlhbcj/related",
+    "name": "YouTube Word Search",
+    "description": "Use when you have a YouTube video and a keyword/`name` and want to know exactly when it is spoken — jumps to the timestamp(s) where the word appears in the captions.",
+    "url": "https://chromewebstore.google.com/detail/youtube-word-searcher/jichoejagacnbcinlgncghhdegdlhbcj",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Finding the exact second a word or phrase is spoken in a YouTube video via its captions, with optional watch-list auto-alerting.",
+    "selectorsIn": [
+      "name"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension, no account.",
+    "opsec": "passive",
+    "opsecNote": "Works on captions already delivered with the video in your browser — no extra request to the uploader or any target, so nothing is leaked to them. Watch the video logged out / in a sock-puppet browser if the collection is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent third-party browser extension; it relies on the video having captions (manual or auto-generated), so accuracy depends on caption quality.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "YouTube Word Searcher",
+      "YWS"
+    ],
     "tags": [
-      "Social Media",
-      "YouTube"
+      "YouTube",
+      "transcript-search",
+      "browser-extension",
+      "Social Media"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-word-search.md"
   },
   {
@@ -360832,41 +360733,55 @@
   {
     "id": "canadian-civil-aircraft-register-search-canada",
     "name": "Canadian Civil Aircraft Register Search (Canada)",
-    "description": "Transport Canada's registered civil aircraft registration search",
-    "url": "http://wwwapps.tc.gc.ca/saf-sec-sur/2/ccarcs-riacc/RchSimp.aspx",
+    "description": "Use when you have a Canadian tail number (`vehicle-plate`) or owner `name` and want registration details — returns registered owner `name`/`address` and aircraft make/model/serial.",
+    "url": "https://wwwapps.tc.gc.ca/saf-sec-sur/2/ccarcs-riacc/RchSimp.aspx",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up the registered owner and details of a Canadian civil aircraft by registration mark, name, model, or serial.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "name"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public government search; no account or payment. Results capped at 1000 records per query.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "An official Transport Canada public-record search — you query a government database, not the owner, so nobody is notified. Purely passive; only your own IP touches the tc.gc.ca site. Use a VPN if the collection itself is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official Transport Canada Civil Aircraft Register (CCARCS) — first-party, authoritative registration data for Canadian civil aircraft.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "relatedTools": [],
+    "aliases": [
+      "CCARCS",
+      "Transport Canada aircraft registry",
+      "Canadian Civil Aircraft Register"
+    ],
     "tags": [
       "toddington",
-      "curated-directory",
-      "specialty-search"
+      "aviation",
+      "aircraft-registry",
+      "government"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/canadian-civil-aircraft-register-search-canada.md"
   },
   {

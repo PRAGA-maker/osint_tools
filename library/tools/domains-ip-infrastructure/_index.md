@@ -327,7 +327,6 @@ kind: group-index
 - **`mksub`** (low) — A simple #go tool that generates multi-level subdomain names based on wordlists. Used in combination with subdomain brute-force tools (Subli
 - **`mmhdan`** (low) — Calculate a fingerprint of a website (HTML, Favicon, Certificate in SHA1, SHA256, MD5, MMH3) and create the quick links to search it in IOT 
 - **`moartls-analyzer`** (low) — addon which check all links on the webpage and show list of non-secure links
-- **`moz-analytics-open-site-explorer`** (medium) — Tool that identifies the available registration information for a website or domain name
 - **`moz-link-explorer`** (low) — Analyse the links of any website.
 - **`mx-toolbox-blacklist-check`** (medium) — Use when you have a `domain` or `ip-address` and want to know if it's on spam/abuse blacklists — returns which DNSBLs list it, a reputation 
 - **`mx-toolbox-email-header-analyzer`** (medium) — Process for identifying an IP address from an email header
