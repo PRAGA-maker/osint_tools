@@ -52,7 +52,6 @@ kind: group-index
 ## Skills here
 - **`0xdork`** (low) — Very light and simple #Python tool for Google Dorking
 - **`1-and-1-ionos-united-states`** (medium) — Service provider for registering websites and domain addresses
-- **`21-domain-japan`** (medium) — Japanese service provider for registering websites and domain addresses
 - **`876-solutions-jamaica`** (medium) — Jamaican service provider for registering websites and domain addresses
 - **`aa419-fake-sites-database`** (low) — OSINT tool: aa419 Fake Sites Database.
 - **`about-rdap-org`** (low) — Use when you have a `domain`, `ip-address`, or ASN and want structured registration data via RDAP — returns a hosted RDAP query interface an

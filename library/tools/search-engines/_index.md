@@ -392,7 +392,7 @@ kind: group-index
 - **`ivmachiavelli-osint-team-links`** (medium) — GitHub-hosted curated list of OSINT links/tools.
 - **`ivyjoy-list-of-kids-related-websites`** (low) — Search engine resources for kids
 - **`ixigo`** (medium) — India travel information site
-- **`jayde-b2b-business-search`** (medium) — Business-related search engine that searches using company name and includes various categories of topics
+- **`jayde-b2b-business-search`** (low) — Use when you have a company `name` and want a legacy web-directory listing that may carry an older business URL or contact — returns `employ
 - **`jersey-financial-services-commission`** (medium) — Website for the Jersey Financial Services Commission with registered company search
 - **`jewish-virtual-library-online`** (medium) — Website that offers Jewish scripture search services
 - **`jobactive-job-search-engine-australia`** (medium) — Website that offers job search services across the country at the national and province/state level

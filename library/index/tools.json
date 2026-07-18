@@ -25348,42 +25348,54 @@
   },
   {
     "id": "cbc-news-worldwide-canada",
-    "name": "CBC News Worldwide (Canada)",
-    "description": "Searchable website for a major television network covering global events and having large reader/fan base",
-    "url": "http://www.cbc.ca/news/world",
+    "name": "CBC News (Canada)",
+    "description": "Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `employer-org`, `geolocation`.",
+    "url": "https://www.cbc.ca/news",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching Canada's public broadcaster archive for coverage naming a person, place, or organization.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read and search; no account or paywall for news articles.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading and searching articles is passive and anonymous; the subject is not notified and you disclose nothing about your interest to them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "CBC/Radio-Canada is Canada's national public broadcaster with editorial standards; reliable journalism, though it is reporting, not a records database.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "CBC News",
+      "CBC.ca"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/cbc-news-worldwide-canada.md"
   },
   {
@@ -27351,46 +27363,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/eweek-technology-news.md"
-  },
-  {
-    "id": "expedia",
-    "name": "Expedia",
-    "description": "Website related to social networking in the form of travel and accomodations",
-    "url": "https://www.expedia.ca",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/expedia.md"
   },
   {
     "id": "extremetech",
@@ -29417,48 +29389,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/communities-forums/google-com-25.md"
-  },
-  {
-    "id": "google-com-26",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Amumsnet.com/Talk&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-26.md"
   },
   {
     "id": "google-com-27",
@@ -42761,33 +42691,37 @@
   {
     "id": "hunchly-hidden-services-report",
     "name": "Hunchly Hidden Services Report",
-    "description": "Monitoring new hidden-service discovery trends",
+    "description": "Use when you want a daily-updated feed of newly-discovered Tor hidden services to find or monitor onion sites relevant to an investigation — returns `domain` (onion addresses), `associate`.",
     "url": "https://darkweb.hunch.ly/",
     "category": "dark-web",
     "path": [
       "dark-web",
       "discovery"
     ],
-    "bestFor": "Monitoring new hidden-service discovery trends",
-    "input": "Feed queries and subscription requests",
-    "output": "Hidden service report data and update feeds",
+    "bestFor": "A free daily email/list of newly-seen Tor onion services for dark-web discovery and monitoring.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "domain",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free — you subscribe with an email and receive a daily report of new hidden services; no paid tier required for the report.",
     "opsec": "passive",
-    "opsecNote": "Primarily consumes third-party aggregated reporting rather than probing targets directly.",
+    "opsecNote": "Receiving the report is passive intelligence — Hunchly crawls and aggregates, so you don't touch onion sites yourself until you choose to. Actually visiting any listed .onion requires Tor and its own strict OpSec (isolated VM, no logins, no downloads).",
     "humanInLoop": true,
     "humanInLoopReason": [
       "account-login"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Produced by Hunchly, a well-known investigator tooling vendor; the report is a curated crawl output widely used by OSINT/dark-web researchers.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": true,
     "invitationOnly": false,
@@ -42795,11 +42729,19 @@
     "relatedTools": [
       "hunchly"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Hunchly Daily Dark Web Report",
+      "Darkweb.hunch.ly"
+    ],
+    "tags": [
+      "dark-web",
+      "tor",
+      "hidden-services",
+      "monitoring"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/discovery/hunchly-hidden-services-report.md"
   },
   {
@@ -64109,52 +64051,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/domains-ip-infrastructure/1-and-1-ionos-united-states.md"
-  },
-  {
-    "id": "21-domain-japan",
-    "name": "21 Domain (Japan)",
-    "description": "Japanese service provider for registering websites and domain addresses",
-    "url": "http://www.21-domain.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/21-domain-japan.md"
   },
   {
     "id": "876-solutions-jamaica",
@@ -166795,42 +166691,52 @@
   {
     "id": "mastovue",
     "name": "MastoVue",
-    "description": "More and more #osint and #infosec bloggers are creating Mastodon profiles these days. This tool will help you find accounts that match your interests by hashtag.",
+    "description": "Use when you have a hashtag or topic and want to browse matching Mastodon accounts/posts across the fediverse without an account — returns `social-profile`, `username`.",
     "url": "https://mastovue.glitch.me/#/",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Discovering Mastodon accounts and posts by hashtag/interest across fediverse instances.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free browser-based viewer; no account or login required.",
+    "opsec": "passive",
+    "opsecNote": "It reads public Mastodon timelines/hashtags via public APIs, so browsing is passive and anonymous. You are not logged in, so nothing ties the viewing to you — but the instances you query see the requests.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A small community-built viewer hosted on Glitch; it surfaces authentic public Mastodon data but is a hobby tool that could go offline.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Mastodon"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
-      "bskythreadreader",
       "fedifinder"
     ],
+    "aliases": [
+      "Masto Vue"
+    ],
+    "tags": [
+      "Social Media",
+      "Mastodon",
+      "fediverse"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/mastovue.md"
   },
   {
@@ -217575,31 +217481,28 @@
   {
     "id": "allmyfaves",
     "name": "AllMyFaves",
-    "description": "Ultimate homepage of everything from social media platforms, video search sites, search engines, shopping pages and more",
+    "description": "Use when you need to discover categorized links to popular sites (social, search, video, shopping) as a visual start-page directory — returns pointers to other sites/tools.",
     "url": "https://www.allmyfaves.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "name",
-      "employer-org"
-    ],
+    "bestFor": "A visual categorized directory of popular websites, useful for discovering platforms to check.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "employer-org",
-      "address"
+      "domain"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free visual bookmark/start-page directory; no account needed to browse.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing a link directory is passive and reveals nothing about any subject. The sites it points to each carry their own OpSec cost when you actually use them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A consumer visual bookmark/start-page site, not an OSINT tool; it only curates links to popular websites and does no lookups itself.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -217607,15 +217510,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "All My Faves"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "reference-sites"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/allmyfaves.md"
   },
   {
@@ -222166,43 +222072,56 @@
   {
     "id": "canadian-patents-database",
     "name": "Canadian Patents Database",
-    "description": "OSINT tool: Canadian Patents Database.",
+    "description": "Use when you have an inventor/applicant `name` (or a company) and want their Canadian patents, filing dates, and listed addresses — returns `name`, `address`, `employer-org`.",
     "url": "https://www.ic.gc.ca/opic-cipo/cpd/eng/search/basic.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a person's or company's Canadian patents, with inventor names, addresses, and assignees.",
     "selectorsIn": [
       "name",
-      "address"
+      "employer-org"
     ],
     "selectorsOut": [
+      "name",
       "address",
-      "name"
+      "employer-org"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free official CIPO database; full patent documents and bibliographic data are viewable at no cost.",
+    "opsec": "passive",
+    "opsecNote": "Searching CIPO does not notify the inventor or assignee; queries are anonymous and no account is needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Canadian Intellectual Property Office (CIPO) — the authoritative source for Canadian patent records.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "ca"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database"
+    ],
+    "aliases": [
+      "CIPO Patents Database",
+      "Canadian Patent Database"
+    ],
     "tags": [
-      "property"
+      "patents",
+      "intellectual-property",
+      "company-search"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/canadian-patents-database.md"
   },
   {
@@ -231401,58 +231320,64 @@
   {
     "id": "federal-corporation-search-canada",
     "name": "Federal Corporation Search (Canada)",
-    "description": "Searches can be performed by Corporate Name, Corporation Number, or Business Number (BN)",
+    "description": "Use when you have a Canadian company/business `name` or a person's `name` and want federally-incorporated company records and directors — returns `employer-org`, `address`, `associate`.",
     "url": "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpSrch.html",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Confirming a Canadian federal corporation and pulling its directors, status, and registered office.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free government search — corporation profiles, director names, and registered office are viewable at no cost.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying Corporations Canada does not notify the company or its directors; searches are anonymous and no account is needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Innovation, Science and Economic Development Canada (Corporations Canada) — the official federal corporate registry.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "canadian-intellectual-property-office",
+      "canadian-trademarks-database",
+      "canadian-business-research",
+      "canadian-copyrights-database",
+      "canadian-department-of-finance",
+      "canadian-importers-database",
+      "completed-access-to-information-requests",
+      "gov-data-canada",
+      "government-of-canada-open-data"
+    ],
+    "aliases": [
+      "Corporations Canada",
+      "Federal Corporation Search"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "company-search"
+      "company-search",
+      "corporate-registry"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "canadian-business-research",
-      "canadian-department-of-finance",
-      "completed-access-to-information-requests",
-      "gov-data-canada",
-      "government-of-canada-open-data",
-      "canadian-intellectual-property-office",
-      "canadian-trademarks-database",
-      "canadian-importers-database",
-      "canadian-copyrights-database"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/federal-corporation-search-canada.md"
   },
   {
@@ -262641,35 +262566,53 @@
   {
     "id": "startup-tracker",
     "name": "Startup Tracker",
-    "description": "OSINT tool: Startup Tracker.",
-    "url": "https://startuptracker.io/home",
+    "description": "Use when you have a startup/company `name`, `domain`, or founder `name` and want an aggregated company profile with links, funding signals, and socials — returns `employer-org`, `social-profile`, `domain`.",
+    "url": "https://startuptracker.io/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Discovering and profiling emerging startups by name/domain, aggregating data from Crunchbase, Product Hunt, and more.",
+    "selectorsIn": [
+      "name",
+      "employer-org",
+      "domain"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "social-profile",
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free — full access to discovery, radars, lists, and the Chrome extension at $0, no tiers or credit card per the vendor.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Querying company profiles is passive and doesn't notify anyone. It aggregates public sources; creating an account (optional, for saved lists/radars) is attributable, so use a sock-puppet email if you do.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A lightweight aggregation layer over Crunchbase, Product Hunt, BetaList, Fedger, and crowdsourced submissions; convenient but derivative — verify facts at the underlying source.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [],
+    "aliases": [
+      "StartupTracker.io"
+    ],
+    "tags": [
+      "startups",
+      "company-search",
+      "discovery"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/startup-tracker.md"
   },
   {
@@ -287798,25 +287741,32 @@
   {
     "id": "jayde-b2b-business-search",
     "name": "Jayde B2B Business Search",
-    "description": "Business-related search engine that searches using company name and includes various categories of topics",
+    "description": "Use when you have a company `name` and want a legacy web-directory listing that may carry an older business URL or contact — returns `employer-org`, `domain`.",
     "url": "http://www.jayde.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Checking a legacy B2B directory for an older business listing, URL, or category placement.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "domain"
+    ],
+    "status": "degraded",
     "pricing": "free",
+    "costNote": "Free to browse/search; ad-supported legacy directory, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing the directory is passive and anonymous; the listed business is not notified you looked it up.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A legacy 1990s-2000s web directory (iEntry, Inc.), largely superseded by modern search; listings are self-submitted, dated, and unvetted.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -287824,15 +287774,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "Jayde"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "search-engines"
+      "business-directory"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/jayde-b2b-business-search.md"
   },
   {
@@ -352766,38 +352719,47 @@
   {
     "id": "youtube-timestamp-comments",
     "name": "YouTube Timestamp Comments",
-    "description": "extension finds all the timestamps in YouTube video comments and arranges them in chronological order.",
-    "url": "https://chrome.google.com/webstore/detail/youtube-timestamp-comment/khngjoedfeicfbjlcfmiigbokbnlibei/related",
+    "description": "Use when analysing a YouTube video and want every timestamp mentioned in its comments collected and sorted chronologically to navigate key moments — returns `social-profile` (commenter-flagged moments).",
+    "url": "https://chromewebstore.google.com/detail/youtube-timestamp-comment/khngjoedfeicfbjlcfmiigbokbnlibei",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Surfacing and time-ordering the moments a video's commenters flagged, to jump to what viewers found notable.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Chrome extension; no account or payment.",
+    "opsec": "passive",
+    "opsecNote": "The extension only parses the public comments already loaded on a YouTube page in your browser; it makes no query about a person and reveals nothing to the video owner or commenters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "browser-extension",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A small third-party Chrome extension (~700 users, actively updated); it only reorders public comment data, so risk is low, but it's a hobby tool that could be delisted.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "YT Timestamp Comments"
+    ],
     "tags": [
       "Social Media",
-      "YouTube"
+      "YouTube",
+      "video-analysis"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-timestamp-comments.md"
   },
   {

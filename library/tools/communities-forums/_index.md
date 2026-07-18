@@ -56,7 +56,7 @@ kind: group-index
 - **`buzzsumo`** (medium) — Use when you have a `name`, `domain`, or topic and want to find the most-shared content and the authors/influencers behind it — returns arti
 - **`care2`** (medium) — Wellness welfare and rights networking website
 - **`catster`** (medium) — Networking website for cat lovers
-- **`cbc-news-worldwide-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
+- **`cbc-news-worldwide-canada`** (medium) — Use when you have a `name` connected to Canada and want news coverage placing them in an event, role, or community — returns `associate`, `e
 - **`centos-pastebin-service`** (medium) — OSINT tool: CentOS Pastebin Service.
 - **`charitable-impact`** (medium) — Network of charities in Canada
 - **`chemistry-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
@@ -100,7 +100,6 @@ kind: group-index
 - **`eveonline-forum`** (medium) — Use when you have a gaming `username`/handle and want to tie it to EVE Online activity and posts — returns social-profile and associate.
 - **`everplaces`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`eweek-technology-news`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
-- **`expedia`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`extremetech`** (medium) — Use when you have a `name` tied to the tech/hardware industry and want news mentions, bylines or product coverage — returns social-profile a
 - **`fark-com`** (medium) — Online community allowing members to comment on daily news articles
 - **`feeddemon-rss-reader`** (medium) — Website that provides an online bookmarking application for managing RSS feeds
@@ -149,7 +148,6 @@ kind: group-index
 - **`google-com-22`** (medium) — OSINT tool: google.com.
 - **`google-com-24`** (medium) — OSINT tool: google.com.
 - **`google-com-25`** (medium) — OSINT tool: google.com.
-- **`google-com-26`** (medium) — OSINT tool: google.com.
 - **`google-com-27`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
 - **`google-com-31`** (medium) — OSINT tool: google.com.

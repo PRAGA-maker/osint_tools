@@ -55,7 +55,7 @@ kind: group-index
 - **`alcool-r-gie-des-alcools-des-courses-et-des-jeux-racj`** (low) — OSINT tool: Alcool - Régie des alcools, des courses et des jeux (RACJ).
 - **`alibaba-china`** (medium) — China's largest e-commerce company hosting millions of merchents and businesses
 - **`allbusiness`** (low) — Use when you have an `employer-org` or `name` and want a US business directory profile — returns `employer-org`, `address`, and business-con
-- **`allmyfaves`** (medium) — Ultimate homepage of everything from social media platforms, video search sites, search engines, shopping pages and more
+- **`allmyfaves`** (low) — Use when you need to discover categorized links to popular sites (social, search, video, shopping) as a visual start-page directory — return
 - **`allpeople`** (medium) — Use when you have a `name` or `employer-org` and want US business-contact details — returns work `email`, `phone`, title and company `addres
 - **`allstockslinks`** (medium) — OSINT tool: AllStocksLinks.
 - **`ama-assn-org`** (high) — Use when you have a physician `name` and a US city/state/ZIP and want to verify they are a real, licensed doctor — returns specialty, practi
@@ -144,7 +144,7 @@ kind: group-index
 - **`canadian-intellectual-property-office`** (medium) — Use when you have a `name` or `employer-org` and want their Canadian patents/trademarks — returns filing `document-id`s, owner/inventor `nam
 - **`canadian-legal-information-institute`** (high) — Use when you have a `name` and want Canadian court/tribunal decisions or legislation mentioning them — returns document-id case citations an
 - **`canadian-obituaries`** (high) — Use when you have a `name` and want to check whether a subject (or relative) has a Canadian death/obituary notice — returns death confirmati
-- **`canadian-patents-database`** (medium) — OSINT tool: Canadian Patents Database.
+- **`canadian-patents-database`** (medium) — Use when you have an inventor/applicant `name` (or a company) and want their Canadian patents, filing dates, and listed addresses — returns 
 - **`canadian-trademarks-database`** (medium) — Use when you have a `name`, brand, or `employer-org` and want Canadian trademark filings tied to them — returns the owner's name, `address` 
 - **`cancelthesefunerals-com`** (high) — Use when you have a `name` and want to check whether a person appears in the US Social Security Death Master File — returns death record fie
 - **`canlii-database`** (medium) — Canadian Legal Information Institute searchable database of legal documents and cases
@@ -315,7 +315,7 @@ kind: group-index
 - **`fatal-encounters`** (high) — Use when you have a `name`, `geolocation`, or date and need to check whether a person died during a police interaction in the US since 2000 
 - **`fbi-most-wanted-search-engine`** (low) — OSINT tool: FBI Most Wanted Search Engine.
 - **`fca-org-uk`** (high) — Use when you have an `employer-org` or `name` tied to a UK mutual (credit union, co-op, friendly society) and want its registration and fili
-- **`federal-corporation-search-canada`** (medium) — Searches can be performed by Corporate Name, Corporation Number, or Business Number (BN)
+- **`federal-corporation-search-canada`** (medium) — Use when you have a Canadian company/business `name` or a person's `name` and want federally-incorporated company records and directors — re
 - **`federal-court`** (high) — Use when you have a `name` and want to find Federal Court of Canada judgments and orders naming that party — returns case decisions, docket/
 - **`federalcorporation`** (low) — OSINT tool: FederalCorporation.
 - **`felon-spy`** (low) — Do NOT use — a documented hoax that returns randomly-generated fake "criminal neighbor" data; it identifies no real person and has no OSINT 
@@ -910,7 +910,7 @@ kind: group-index
 - **`spyfu`** (low) — Use when you have a `domain` and want its SEO/PPC footprint — keywords, ad history and competitors — to profile the business behind a site; 
 - **`sra-org-uk`** (medium) — Use when you have a `name` or firm and want to verify a solicitor in England & Wales — returns regulatory status, practising history and fir
 - **`st-louis-county-salaries-fiscal-2020`** (medium) — OSINT tool: St. Louis County salaries fiscal 2020.
-- **`startup-tracker`** (medium) — OSINT tool: Startup Tracker.
+- **`startup-tracker`** (low) — Use when you have a startup/company `name`, `domain`, or founder `name` and want an aggregated company profile with links, funding signals, 
 - **`state-adoption-resources`** (high) — Use when a missing-persons/family case involves adoption and you need each US state's rules for accessing (largely sealed) adoption records 
 - **`state-and-county-jail-inmate-locators`** (high) — Use when you have a `name` and want to check whether a subject is currently or was recently incarcerated in a US state prison or county jail
 - **`state-appellate-and-supreme-courts`** (high) — Use when you have a name and a US state and want the official free court-record search for that jurisdiction — returns links to state appell

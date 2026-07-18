@@ -93,7 +93,7 @@ kind: group-index
 - **`lyzem-blog`** (medium) — OSINT tool: Lyzem Blog.
 - **`maigret-osint-bot`** (high) — Use when you have a `username` and want to check thousands of sites for accounts without installing anything — a Telegram bot wrapper for Ma
 - **`maltego-telegram`** (high) — Use when you have a `phone`, Telegram `username`, or channel and want to map users, groups, admins, and forwards in Maltego — returns social
-- **`mastovue`** (medium) — More and more #osint and #infosec bloggers are creating Mastodon profiles these days. This tool will help you find accounts that match your 
+- **`mastovue`** (low) — Use when you have a hashtag or topic and want to browse matching Mastodon accounts/posts across the fediverse without an account — returns `
 - **`mnp-bot`** (high) — Use when you have a `phone` number and want its geographic region and mobile carrier via a Telegram bot — returns region/operator context on
 - **`mothersearchbot`** (high) — Use when you have a `username`, `name` or keyword and want to search across Telegram for channels, groups and messages mentioning it — retur
 - **`movetodon`** (medium) — Get a list of your Twitter followings in Mastodon. With the ability to sort by date of registration, date of last activity, and buttons for 

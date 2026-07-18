@@ -7,7 +7,7 @@ kind: group-index
 # dark-web/discovery
 
 ## Skills here
-- **`hunchly-hidden-services-report`** (medium) — Monitoring new hidden-service discovery trends
+- **`hunchly-hidden-services-report`** (low) — Use when you want a daily-updated feed of newly-discovered Tor hidden services to find or monitor onion sites relevant to an investigation —
 - **`onioff`** (medium) — Quick inspection of onion links and service metadata
 - **`onionscan`** (medium) — Use when you have a `domain` (.onion hidden service) and want to find operational-security leaks that can deanonymise or correlate it — retu
 - **`torbot`** (medium) — Automated dark web crawling and onion link collection

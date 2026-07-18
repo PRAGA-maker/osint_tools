@@ -801,7 +801,7 @@ kind: group-index
 - **`youtube-playlist-len`** (medium) — Find out the total time of all the videos in playlist
 - **`youtube-scraper`** (medium) — Extract and download channel name, likes, number of views, and number of subscribers. Scrape by keyword or URL.
 - **`youtube-search-tool`** (medium) — Use when you have a `name`, keyword, or place and want targeted YouTube results — a query-builder that filters videos, channels, and playlis
-- **`youtube-timestamp-comments`** (medium) — extension finds all the timestamps in YouTube video comments and arranges them in chronological order.
+- **`youtube-timestamp-comments`** (low) — Use when analysing a YouTube video and want every timestamp mentioned in its comments collected and sorted chronologically to navigate key m
 - **`youtube-tool`** (medium) — Use when you have a YouTube video/channel/playlist and want to bulk-extract subtitles, comments, descriptions, and video lists via CLI — ret
 - **`youtube-transcript-api`** (medium) — Use when you have a YouTube video ID and want its spoken content as text — returns the transcript/subtitles, including auto-generated and tr
 - **`youtube-video-upload-time`** (medium) — Use when you have a YouTube video `social-profile` URL and want its exact upload time — returns the precise `metadata-exif`-style publish ti
