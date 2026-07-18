@@ -268,7 +268,7 @@ kind: group-index
 - **`directorwho-co-uk`** (high) — Use when you have a `name` and want the UK companies they are/were a director of, plus co-directors and DOB/address hints — returns employer
 - **`dirt-diggers-digest-guide-united-states`** (medium) — Dirt Diggers digest guide to strategic corporate research.
 - **`disputesregister-org`** (high) — Use when you have an `employer-org` or `name` and want a global directory of official company registries plus a searchable register of publi
-- **`dlook-local-business-directory-australia`** (medium) — Australia based business search engine that searches using keyword, suburb, or postcode
+- **`dlook-local-business-directory-australia`** (low) — Use when you have a business `name` or `employer-org` in Australia and want its listing — returns the business `address`, `phone`, and categ
 - **`dnb-co-uk`** (high) — Use when you have a company `name` (or `employer-org`/`address`) and want to confirm the entity and its D-U-N-S number — returns `employer-o
 - **`dnc-email-database`** (medium) — OSINT tool: DNC email database.
 - **`dobsearch`** (high) — Use when you have a `name` and want date of birth, addresses, phone and relatives — returns an aggregated US people-search profile including

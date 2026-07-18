@@ -9,7 +9,7 @@ kind: group-index
 ## Skills here
 - **`bitcoin-who-s-who`** (medium) — Use when you have a `crypto-wallet` (BTC address) and want owner tags, scam reports and linked websites — returns `domain`, `social-profile`
 - **`bitref`** (medium) — Use when you have a Bitcoin `crypto-wallet` address and want its balance and transaction history — returns balance, tx history, and linked-a
-- **`blockonomics`** (medium) — Bitcoin payment integration and address monitoring for developers
+- **`blockonomics`** (medium) — Use when you have a Bitcoin `crypto-wallet` address and want its balance and transaction history — returns balance, transactions, and counte
 - **`orbit`** (medium) — Bitcoin transaction network visualization and wallet relationship mapping
 - **`wallet-explorer`** (medium) — Use when you have a Bitcoin `crypto-wallet` address or txid and want to cluster it into a single owner-wallet and see if it belongs to a kno
 

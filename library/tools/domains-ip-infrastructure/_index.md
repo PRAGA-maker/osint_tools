@@ -112,7 +112,7 @@ kind: group-index
 - **`cert4recon`** (low) — Very quick and simple subdomain enumeration using [http://crt.sh](http://crt.sh).
 - **`certificate-search`** (low) — OSINT tool: Certificate Search.
 - **`check-any-website-to-see-in-real-time-if-it-is-blocked-in-china`** (low) — OSINT tool: Check any website to see in real time if it is blocked in China.
-- **`check-domains-website-analyzer`** (medium) — Search for information and statistics about any online website
+- **`check-domains-website-analyzer`** (low) — Use when you have a `domain` and want a quick stats/tech snapshot of the site — returns hosting `ip-address`, traffic estimates, and site me
 - **`check-my-links`** (low) — Old and large lists of tutorials or tools often have many inactive links. This extension will help mark inactive links in red and save you t
 - **`check-point-live-cyber-threat-map`** (low) — OSINT tool: Check Point Live Cyber Threat Map.
 - **`checkphishai`** (low) — An online tool that finds registered domain typosquats and analyzes them for suspicious activity.

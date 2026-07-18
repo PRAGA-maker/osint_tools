@@ -25,7 +25,7 @@ kind: group-index
 - **`2lingual-search`** (medium) — OSINT tool: 2lingual Search.
 - **`2lingual`** (medium) — Use when you have a `name`/`username` and want to search the web in two languages at once — returns bilingual `social-profile` and mention r
 - **`3dfindit`** (low) — tool for searching 3D models by 3560 3D CAD (computer aided design) and BIM (Building Information Model) catalogs.
-- **`4shared`** (medium) — Website that allows users to search, store, and share files.
+- **`4shared`** (low) — Use when you have a `name`/`username`/keyword and want to find files publicly shared under it — returns shared file links and uploader `soci
 - **`aaroncti-s-online-resources`** (medium) — Public Google Sheet of OSINT/CTI online resources curated by AaronCTI.
 - **`abc-search-engine`** (medium) — Surface web search engine covering worldwide results, including various categories to choose from
 - **`abebooks-search-engine`** (low) — Use when you have a `name`/title tied to a book, seller, or inscribed copy and want listings — returns marketplace entries with seller and p

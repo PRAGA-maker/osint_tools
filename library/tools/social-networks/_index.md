@@ -468,7 +468,7 @@ kind: group-index
 - **`redarcs`** (high) — Use when you have a subreddit or Reddit `username` and want bulk downloadable archives of its submissions and comments — including removed/b
 - **`reddit-comment-lookup`** (high) — Use when you have a Reddit `username` and want to search that account's comment history (by keyword or in bulk) to profile interests, locati
 - **`reddit-comment-search`** (high) — Use when you have a Reddit `username` and want to keyword-search that user's entire comment history — returns matching comments (social-prof
-- **`reddit-downloader`** (medium) — OSINT tool: Reddit Downloader.
+- **`reddit-downloader`** (medium) — Use when you have a Reddit `username` or subreddit and want to bulk-archive its media/posts — returns downloaded `image`s/videos and post `s
 - **`reddit-enhancement-suite-chrome`** (low) — Chrome extension enhancing the Reddit browsing experience.
 - **`reddit-enhancement-suite-firefox`** (low) — Firefox add-on enhancing the Reddit browsing experience.
 - **`reddit-hacks-edoverflow`** (low) — Collection of Reddit tricks and hacks.

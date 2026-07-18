@@ -82,7 +82,7 @@ kind: group-index
 - **`itp-infotrack`** (high) — Use when you have a `name` (optionally a US `address` or `phone`) and want a free people-search preview — returns name, address, phone, age/
 - **`jihadi-telegram-tutorial-channels-the-lone-wolf-s-lair-european-eye-on-radicalization`** (medium) — OSINT tool: Jihadi Telegram Tutorial Channels: The Lone Wolf’s Lair - European Eye on Radicalization.
 - **`kalilinuxtutorials-com`** (high) — Use when you have a target's `phone`/WhatsApp `username` and want to monitor their online/offline pattern and pull profile metadata — return
-- **`kikusernames-com`** (medium) — Kik messenger username search
+- **`kikusernames-com`** (medium) — Use when you have a Kik `username`/`name` and want to find a matching self-listed Kik profile — returns the profile `social-profile` and sta
 - **`kirbstr-s-mastodon-search`** (medium) — Google CSE for some of the most popular and open mastodon instances.
 - **`knowlesys-com-2`** (high) — Use when you have a Telegram `username` and want the stable numeric user ID (which survives username/name changes) — returns a how-to for th
 - **`knowlesys-com-4`** (high) — Use when you have a `phone` or `username` tied to WhatsApp and want a methodology — a how-to guide for extracting profile pictures and findi
