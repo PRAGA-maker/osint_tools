@@ -122,7 +122,7 @@ kind: group-index
 - **`fix-picture-image-conversion-tool`** (high) — Use when you have an `image` in an awkward format (HEIC, RAW, TIFF, WebP) and want a clean JPG/PNG at a controlled size — returns a converte
 - **`flexclip`** (medium) — Get video metadata
 - **`flickr-com`** (high) — Use when you want to browse geotagged Flickr photos on a map to place a person or scene — a duplicate listing pointing at Flickr's map view.
-- **`font-spring`** (medium) — OSINT tool: Font Spring.
+- **`font-spring`** (medium) — Use when you have an `image` containing text/lettering and want to identify the typeface used — returns image-analysis leads (font identity)
 - **`fotki-image-search`** (high) — Use when you have a `username`, `name` or keyword and want to find public photo galleries hosted on Fotki — returns image, social-profile.
 - **`fotki`** (high) — Use when you have a `username` and want to find a long-running photo-sharing profile and its galleries — returns a `social-profile` and the 
 - **`fotoforensics-com`** (high) — Use when you need a fast Error Level Analysis and metadata dump on a photo to check for editing — returns ELA heatmap, EXIF/JPEG metadata, a

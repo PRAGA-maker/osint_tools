@@ -291,7 +291,7 @@ kind: group-index
 - **`employee-contact-directory-search-novascotia-ca`** (medium) — OSINT tool: Employee Contact Directory Search \| novascotia.ca.
 - **`en-52wmb-com`** (medium) — Search information about worldwide buyers and suppliers by product name, company name or HS code.
 - **`enotes-academic-search`** (medium) — Academic-related search engine that searches literature and provides expert summaries and analyses
-- **`eric-institute-of-education-sciences`** (medium) — Education Resources Information Center
+- **`eric-institute-of-education-sciences`** (medium) — Use when you have a `name` in education/academia and want their papers, dissertations and affiliations — returns employer-org, associate and
 - **`estonia`** (medium) — Use when you have a `name` or `employer-org` linked to Estonia and want registered companies, board members, beneficial owners and registere
 - **`europages-business-search-europe`** (medium) — Database of over 3 million company listings in Europe
 - **`european-union-open-data-portal`** (low) — OSINT tool: European Union Open Data Portal.

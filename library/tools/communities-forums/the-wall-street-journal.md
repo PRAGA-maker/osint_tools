@@ -30,7 +30,9 @@ auth: none
 api: false
 localInstall: false
 registration: false
-relatedTools: []
+relatedTools:
+- tweet-metadata
+- wsj-technology-news
 aliases:
 - WSJ
 - wsj.com

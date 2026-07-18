@@ -277,7 +277,6 @@ kind: group-index
 - **`ip2location-free-email-header-tracer`** (medium) — Use when you have a raw email header and want the sender's originating `ip-address` and its geolocation — returns the trace of relay hops, s
 - **`ip2location-free-ip-location-search`** (medium) — Use when you have an `ip-address` (or `domain`) and want its approximate geolocation, ISP, and network details — returns `geolocation`, ISP/
 - **`ipaddress-com`** (low) — IP/DNS lookup with geolocation.
-- **`ipaddress-tools`** (medium) — Tooks including IP Address Lookup, Reverse IP Lookup, Whois Lookup, Email Address Tracer and more
 - **`ipage-united-states`** (medium) — Service provider for registering websites and domain addresses
 - **`ipanalyzer-privacy-test`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
 - **`ipfingerprints`** (low) — OSINT tool: IPFingerprints.

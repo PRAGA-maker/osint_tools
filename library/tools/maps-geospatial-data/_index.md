@@ -30,7 +30,6 @@ kind: group-index
 - **`copernicus-browser-formerly-sentinel-hub-playground-eo-browser`** (low) — A free web-based platform for viewing, analyzing, and downloading satellite imagery from the European Space Agency's Sentinel missions, with
 - **`covid-19-map`** (medium) — OSINT tool: COVID-19 Map.
 - **`cryo-tools`** (low) — Scientific tools for investigating the cryosphere (areas with snow & ice)
-- **`demo-geoguess-games`** (medium) — OSINT tool: demo.geoguess.games.
 - **`digitaldigging-org`** (medium) — OSINT tool: digitaldigging.org.
 - **`digitalglobe`** (medium) — OSINT tool: DigitalGlobe.
 - **`disputed-territories`** (medium) — OSINT tool: Disputed Territories.
@@ -41,7 +40,6 @@ kind: group-index
 - **`emily-bz`** (medium) — OSINT tool: emily.bz.
 - **`environmental-justice-atlas`** (low) — Map of environmental-related conflict globally
 - **`f4map`** (low) — F4Map is an interactive 3D map visualization tool that provides detailed rendering of urban landscapes and geographical features.
-- **`fgdc-gp-demos-s-public-fiddles`** (medium) — OSINT tool: fgdc\_gp\_demos's public fiddles.
 - **`findlatitudeandlongitude-com`** (medium) — OSINT tool: findlatitudeandlongitude.com.
 - **`firms`** (low) — Use when you have a `geolocation`/date and want to know if a fire or thermal anomaly was detected there — returns satellite-detected active-
 - **`free-map-tools`** (medium) — Use when you have a `geolocation`/`address` and need radius, distance, area or coordinate math on a map — returns derived geolocation measur

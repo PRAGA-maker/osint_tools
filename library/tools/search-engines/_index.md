@@ -302,7 +302,7 @@ kind: group-index
 - **`goldenowl-ai`** (high) — Use when you have a `name`/`email`/`username` or target term and want a ready-made advanced Google search — an AI dork generator that output
 - **`goo-japan`** (low) — OSINT tool: Goo (Japan).
 - **`goodgopher-com`** (low) — OSINT tool: GoodGopher.com.
-- **`goodhousekeeping`** (medium) — Housekeeping product reviews website
+- **`goodhousekeeping`** (medium) — Use when you have a `name` featured or quoted in lifestyle/consumer media and want that mention — returns social-profile.
 - **`goodsearch`** (low) — OSINT tool: Goodsearch.
 - **`goofile`** (medium) — Use when you have a `domain` and want to find public files of a given type hosted on it — returns URLs of documents (pdf, docx, xls, etc.) t
 - **`goofram`** (low) — OSINT tool: Goofram.

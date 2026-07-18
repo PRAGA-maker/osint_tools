@@ -250,7 +250,7 @@ kind: group-index
 - **`newsnow-united-kingdom`** (medium) — Searchable website for a major online news/media publisher covering global events, including sections on business, science, sports, and ente
 - **`newspapermap`** (medium) — View and translate all newspapers from around the world on a visual map
 - **`ning`** (medium) — OSINT tool: Ning.
-- **`nitv-television-australia`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`nitv-television-australia`** (medium) — Use when you have a `name` linked to Aboriginal/Torres Strait Islander communities or events and want news coverage — returns social-profile
 - **`nopaste-net`** (medium) — OSINT tool: nopaste.net.
 - **`nopaste`** (medium) — OSINT tool: NoPaste.
 - **`notes`** (medium) — OSINT tool: Notes.
@@ -361,7 +361,7 @@ kind: group-index
 - **`the-comedy-network-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`the-cw-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
 - **`the-economist-world-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom
-- **`the-globe-and-mail`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
+- **`the-globe-and-mail`** (medium) — Use when you have a `name` connected to Canada and want national/local news coverage, quotes or obituaries — returns social-profile and asso
 - **`the-guardian-united-kingdom`** (medium) — The Guardian's UK politics section
 - **`the-guardian-world`** (medium) — Searchable website for a major online news/media publisher covering global events and having large reader/fan base
 - **`the-independent-news-united-kingdom`** (medium) — Searchable website for a major newspaper covering national and local events in the United Kingdom
