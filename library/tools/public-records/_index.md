@@ -333,7 +333,6 @@ kind: group-index
 - **`findmypast`** (high) — Use when you have a `name` and want genealogy/vital records — returns census, birth/marriage/death, military and newspaper matches exposing 
 - **`finland`** (medium) — Use when you have a `name` or `employer-org` linked to Finland and want registered companies, officers and addresses — returns `employer-org
 - **`first-philadelphia-preparatory-charter-school-staff-public-release-2017`** (medium) — OSINT tool: First Philadelphia Preparatory Charter School Staff Public Release 2017.
-- **`first-search`** (medium) — OSINT tool: First Search.
 - **`fivethirtyeight`** (low) — OSINT tool: FiveThirtyEight.
 - **`fl-energy-money-in-politics`** (medium) — OSINT tool: FL Energy Money in Politics.
 - **`florida-probation-search`** (high) — Use when you have a `name` and want to check Florida Department of Corrections inmate, probation, or supervision status — returns `name`, `d
@@ -807,7 +806,7 @@ kind: group-index
 - **`rbo-gov-ie`** (high) — Use when you have an Irish `employer-org` and want its beneficial owners — the Register of Beneficial Ownership returns owner names, month/y
 - **`rcmp-death-search`** (medium) — OSINT tool: RCMP Death Search.
 - **`rcvs-org-uk`** (high) — Use when you have a `name` and want to confirm/locate a UK veterinary surgeon or nurse — returns registration status, qualifications, and th
-- **`realtor`** (medium) — OSINT tool: Realtor.
+- **`realtor`** (medium) — Use when you have an `address` (or an agent `name`) and want property details, listing history, and the listing agent — returns `address`, `
 - **`rechercher-par-entreprise`** (low) — OSINT tool: Rechercher par entreprise.
 - **`rechercher-par-r-gion-ou-type-de-travaux`** (low) — OSINT tool: Rechercher par région ou type de travaux.
 - **`rechercher-par-r-pondant`** (low) — OSINT tool: Rechercher par répondant.

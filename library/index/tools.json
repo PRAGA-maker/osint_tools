@@ -24464,43 +24464,50 @@
   {
     "id": "bigsoccer-com",
     "name": "bigsoccer.com",
-    "description": "OSINT tool: bigsoccer.com.",
+    "description": "Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — returns `social-profile`, `associate`, `geolocation`.",
     "url": "http://www.bigsoccer.com/forums/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's posts and affiliations on a large, long-running soccer discussion forum.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "associate",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse; a free account is needed only to post.",
+    "opsec": "passive",
+    "opsecNote": "Reading public threads is passive. Do not register or contact members from an attributable account — use a sock puppet if you need members-only visibility.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A general-interest fan forum, not a vetted OSINT source; posts are self-reported and must be corroborated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "BigSoccer Forum"
+    ],
     "tags": [
       "forums",
+      "soccer",
       "Forums"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/bigsoccer-com.md"
   },
   {
@@ -32304,43 +32311,50 @@
   {
     "id": "militaryforums-co-uk",
     "name": "militaryforums.co.uk",
-    "description": "OSINT tool: militaryforums.co.uk.",
+    "description": "Use when you have a `username` you suspect is tied to UK/military interests and want to find their forum posts and profile — returns `social-profile`, `associate`, `physical-description`.",
     "url": "https://www.militaryforums.co.uk/forums/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
+    "bestFor": "Finding a subject's posts, service history hints, and connections on a UK military discussion forum.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
       "social-profile",
-      "username"
+      "associate",
+      "physical-description"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse and search; a free account is needed only to post.",
+    "opsec": "passive",
+    "opsecNote": "Reading public threads is passive. Do not register or message members from an attributable account — create a sock-puppet if you need to see members-only areas or contact a poster.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A general-interest UK military community forum, not a vetted OSINT source; posts are self-reported and should be corroborated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "gb"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Military Forums UK"
+    ],
     "tags": [
       "forums",
+      "military",
       "Forums"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/militaryforums-co-uk.md"
   },
   {
@@ -50846,41 +50860,53 @@
   {
     "id": "vivastreet-classified-ads-united-kingdom",
     "name": "Vivastreet Classified Ads (United Kingdom)",
-    "description": "Classified advertisements-related website that provides regional services",
+    "description": "Use when you have a `phone`, `name`, or region and want to find a subject's UK classified ads (jobs, personals, services, vehicles for sale) — returns `phone`, `geolocation`, `social-profile`.",
     "url": "http://www.vivastreet.co.uk",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching UK local classified ads to surface a subject's postings, contact number, and rough location.",
+    "selectorsIn": [
+      "phone",
+      "name",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "phone",
+      "geolocation",
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; posting is free in most categories though some charge a fee.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and searching ads is passive. Replying to an ad or using its contact form is active and attributable — use a sock-puppet identity and never send your real number.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A commercial UK classifieds marketplace, not an OSINT tool; ad content is user-submitted and unvetted.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "gb"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Vivastreet UK"
+    ],
     "tags": [
+      "classifieds",
       "toddington",
       "curated-directory",
       "specialty-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/vivastreet-classified-ads-united-kingdom.md"
   },
   {
@@ -121366,60 +121392,6 @@
     "lastVerified": "",
     "enrichment": "full",
     "_file": "library/tools/geolocation/google-maps.md"
-  },
-  {
-    "id": "google-maps-scraper",
-    "name": "Google Maps Scraper",
-    "description": "Enter search terms (ex \"Boston museum\") and scrape adresses, phone, websites and other place info from Google Maps.",
-    "url": "https://console.apify.com/actors/nwua9Gu5YrADL7ZDj",
-    "category": "geolocation",
-    "path": [
-      "geolocation"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Tools"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "apify-s-google-maps-scraper",
-      "dark-web-scraper",
-      "facebook-latest-comments-scraper",
-      "facebook-latest-posts-scraper",
-      "google-search-scraper",
-      "instagram-hashtag-scraper",
-      "instagram-scraper",
-      "reddit-scraper",
-      "twitter-scraper",
-      "twitter-url-scraper",
-      "youtube-scraper"
-    ],
-    "_file": "library/tools/geolocation/google-maps-scraper.md"
   },
   {
     "id": "google-maps-streetview-player",
@@ -201582,33 +201554,35 @@
   {
     "id": "karus",
     "name": "karus",
-    "description": "Multi-purpose OSINT utility with a custom web interface.",
+    "description": "Use when you have a gaming/dev `username` (Roblox, Steam, Minecraft, GitHub) and want to pull profile data across those platforms from one web UI — returns `social-profile`, `email`, `associate`.",
     "url": "https://github.com/phishontop/karus",
     "category": "people-search",
     "path": [
       "people-search"
     ],
-    "bestFor": "Web-UI multi-selector OSINT lookups",
+    "bestFor": "Self-hosted web-UI SOCMINT lookups across gaming and developer platforms from a single interface.",
     "selectorsIn": [
       "username",
       "email",
-      "phone",
       "domain"
     ],
     "selectorsOut": [
       "social-profile",
       "email",
-      "phone"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
+    "costNote": "Free and open-source (MIT-style GitHub project); you host it yourself, so the only cost is your own compute.",
+    "opsec": "active",
+    "opsecNote": "Runs on your machine and queries each target platform directly, so those platforms see YOUR IP. Route through a VPN/sock-puppet infrastructure; some modules may hit third-party APIs whose terms you should check.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "api-key"
+    ],
+    "bestInteractionPattern": "python-lib",
     "trust": "community",
-    "trustNote": "Small community OSINT utility (18 stars).",
+    "trustNote": "Small single-author GitHub project (~tens of stars); functional but unaudited — verify each module and pin the commit you run.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -201617,14 +201591,19 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "phishontop/karus"
+    ],
     "tags": [
       "web-ui",
-      "multi-tool"
+      "multi-tool",
+      "socmint",
+      "self-hosted"
     ],
     "source": "gh-topic-osint-framework",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/people-search/karus.md"
   },
   {
@@ -232368,40 +232347,6 @@
     "_file": "library/tools/public-records/first-philadelphia-preparatory-charter-school-staff-public-release-2017.md"
   },
   {
-    "id": "first-search",
-    "name": "First Search",
-    "description": "OSINT tool: First Search.",
-    "url": "https://search.firstround.com/",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/first-search.md"
-  },
-  {
     "id": "fivethirtyeight",
     "name": "FiveThirtyEight",
     "description": "OSINT tool: FiveThirtyEight.",
@@ -257211,38 +257156,53 @@
   {
     "id": "realtor",
     "name": "Realtor",
-    "description": "OSINT tool: Realtor.",
+    "description": "Use when you have an `address` (or an agent `name`) and want property details, listing history, and the listing agent — returns `address`, `name`, `geolocation`.",
     "url": "https://www.realtor.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Looking up a US property's listing/sale history, features, and associated agent from an address.",
+    "selectorsIn": [
+      "address",
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "name",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to browse listings, property pages, and agent profiles; no account required for the core lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing listing pages is passive and reveals nothing to the property's occupant. Avoid using the \"contact agent\" / tour-request forms, which send your details to a real agent and create a record.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Move, Inc. (News Corp) and powered by MLS data; listing facts are authoritative, though owner identity is inferred, not stated.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "realtor-com-united-states"
     ],
+    "aliases": [
+      "realtor.com"
+    ],
+    "tags": [
+      "real-estate",
+      "property-records"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/realtor.md"
   },
   {
@@ -302540,25 +302500,32 @@
   {
     "id": "snipplr",
     "name": "Snipplr",
-    "description": "Code snippet search engine",
+    "description": "Use when you have a developer `username` and want their shared code snippets and reused code fragments — returns `social-profile`, `associate`, `document-id`.",
     "url": "https://snipplr.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a coder's public snippet history and reused code fragments by username or keyword.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate",
+      "document-id"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search; a free account (or Google/Facebook/GitHub login) is needed only to post snippets.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing and searching are passive and anonymous. Only creating an account or commenting is attributable — use a sock puppet if you do.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trustNote": "A long-running community code-snippet repository; content is user-submitted and unvetted, useful as a username/code-fragment pivot rather than an authoritative source.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -302566,15 +302533,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Snipplr code snippets"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "specialty-search",
+      "code-search"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/snipplr.md"
   },
   {
@@ -360371,39 +360341,58 @@
   {
     "id": "cosint-osint-on-cars",
     "name": "COSINT – OSINT on Cars",
-    "description": "OSINT tool: COSINT – OSINT on Cars.",
+    "description": "Use when you have a `vehicle-plate`, `vin`, or a photo of a car and want a method for pivoting to an owner or location — returns `name`, `address`, `social-profile`.",
     "url": "https://osintcurio.us/2021/02/17/cosint-osint-on-cars/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "A methodology reference for turning a license plate, VIN, or car photo into leads on the owner.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "vin",
+      "image",
+      "mac-address"
+    ],
+    "selectorsOut": [
+      "name",
+      "address",
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free to read; it is a published OSINTCurious blog guide, not a paid tool.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is a reading resource, so reading it leaks nothing. The techniques it describes (reverse-image, social-media, and paid-lookup pivots) each carry their own OpSec cost — apply those on the downstream tools, not here.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Published on OSINTCurious, a well-regarded community education blog; the methodology is sound but availability of the individual data sources it cites varies by country.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "osintcurious",
       "the-osint-puppeteer"
     ],
+    "aliases": [
+      "OSINT on Cars",
+      "Car OSINT guide"
+    ],
+    "tags": [
+      "vehicle-osint",
+      "methodology",
+      "guide"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/cosint-osint-on-cars.md"
   },
   {
@@ -362254,35 +362243,60 @@
   {
     "id": "icarus-flights",
     "name": "Icarus.flights",
-    "description": "OSINT tool: Icarus.flights.",
+    "description": "Use when you have an aircraft tail number (`vehicle-plate`) or an owner `name`/`employer-org` and want live and historical flight tracking with unfiltered ownership data — returns `geolocation`, `associate`, `employer-org`.",
     "url": "https://icarus.flights/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Tracking an aircraft's live and historical movements and ownership when commercial trackers hide it.",
+    "selectorsIn": [
+      "vehicle-plate",
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "geolocation",
+      "associate",
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free service, but access is not open — you must contact C4ADS and be approved for an account before you can use it.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Queries run against C4ADS's platform, not the aircraft owner, so the subject sees nothing. You are, however, identifiable to C4ADS under the account you register — use it for legitimate investigative work only, consistent with their terms.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "manual-review"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Built and operated by C4ADS, an established non-profit investigative organization; data is transponder/ADS-B feeds plus curated ownership records, not a random scraper.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
+    "registration": true,
+    "invitationOnly": true,
+    "relatedTools": [
+      "osintcurious"
+    ],
+    "aliases": [
+      "Icarus Flights",
+      "C4ADS Icarus"
+    ],
+    "tags": [
+      "flight-tracking",
+      "aviation",
+      "Maps, Geolocation and Transport"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/icarus-flights.md"
   },
   {

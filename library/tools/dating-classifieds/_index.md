@@ -116,7 +116,7 @@ kind: group-index
 - **`truedater-online-dating-reports`** (medium) — OSINT tool: TrueDater (Online Dating Reports).
 - **`ukclassifieds`** (medium) — Classified advertisements-related website that provides regional services
 - **`used-ca`** (medium) — One of the Top 10 classified advertisements-related websites in Canada
-- **`vivastreet-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
+- **`vivastreet-classified-ads-united-kingdom`** (medium) — Use when you have a `phone`, `name`, or region and want to find a subject's UK classified ads (jobs, personals, services, vehicles for sale)
 - **`x-ray-contact`** (medium) — OSINT tool: x-ray.contact.
 - **`yakaz-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
 - **`yourclassifieds-ca-canada`** (medium) — Classified advertisements-related website that provides regional services

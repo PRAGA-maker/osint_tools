@@ -130,7 +130,7 @@ kind: group-index
 - **`jobs-poland`** (medium) — Use when you have an employer `name` or a subject's occupation in Poland and want job-market context — returns employer job postings, locati
 - **`jobsite-uk`** (low) — Use when you have a `name` or `employer-org` and want UK job-market context — returns job listings and, for logged-in recruiters, candidate 
 - **`jobster-job-posts-resumes`** (medium) — OSINT tool: Jobster (Job Posts / Resumes).
-- **`karus`** (medium) — Multi-purpose OSINT utility with a custom web interface.
+- **`karus`** (medium) — Use when you have a gaming/dev `username` (Roblox, Steam, Minecraft, GitHub) and want to pull profile data across those platforms from one w
 - **`knowem-username-search`** (high) — Use when you have a `username` and want to see which of 500+ social networks (and domains) it's registered on — returns a grid of taken/avai
 - **`kompass`** (high) — Use when you have a company `employer-org` or a business `name` and want firmographics and business contacts — returns company address, phon
 - **`land-registry-map-enquiry`** (high) — Use when you have a property `address` in England & Wales and want to identify its registered owner — returns the title number free, then th

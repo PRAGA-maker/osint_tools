@@ -58,7 +58,7 @@ kind: group-index
 - **`container-tracking-cargo`** (low) — OSINT tool: container-tracking (Cargo).
 - **`container-tracking`** (low) — OSINT tool: Container Tracking.
 - **`copart-auction`** (medium) — Use when you have a `vin` (or Copart lot number) and want the salvage-auction record for that vehicle — returns image, geolocation.
-- **`cosint-osint-on-cars`** (medium) — OSINT tool: COSINT – OSINT on Cars.
+- **`cosint-osint-on-cars`** (medium) — Use when you have a `vehicle-plate`, `vin`, or a photo of a car and want a method for pivoting to an owner or location — returns `name`, `ad
 - **`crewlist-org-uk`** (low) — OSINT tool: Crewlist.org.uk.
 - **`cruise-mapper`** (low) — OSINT tool: Cruise Mapper.
 - **`cyclevin`** (low) — Motorcycle-specific VIN history.
@@ -96,7 +96,7 @@ kind: group-index
 - **`hertz-rent-receipt`** (medium) — Use when you have a Hertz rental's agreement number (or the renter's driver's-license number + surname) and want the rental record — returns
 - **`how-s-my-driving-ny`** (medium) — Use when you have a `vehicle-plate` (and state) and want its NYC traffic/parking/camera violation history — returns a location-and-time patt
 - **`icao-civil-and-military-airspace-suashp`** (medium) — OSINT tool: ICAO Civil and Military airspace SUASHP.
-- **`icarus-flights`** (medium) — OSINT tool: Icarus.flights.
+- **`icarus-flights`** (medium) — Use when you have an aircraft tail number (`vehicle-plate`) or an owner `name`/`employer-org` and want live and historical flight tracking w
 - **`illegal-unreported-unregular-fishing-vessels-list`** (low) — A combined list of known illegal, unreported, unregular fishing vessels
 - **`imo-registry`** (low) — Ship/shipping-related information from the IMO
 - **`inmarsat-ships-directory`** (medium) — Maritime-related website that provides a searchable directory of contact numbers for vessels fitted with Inmarsat equipment

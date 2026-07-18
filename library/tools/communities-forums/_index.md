@@ -38,7 +38,7 @@ kind: group-index
 - **`beanpaste`** (medium) — OSINT tool: BeanPaste.
 - **`before-reddit-optimize-a-post`** (low) — OSINT tool: before reddit | optimize a post.
 - **`biggerpockets`** (medium) — Real estate investors networking platform
-- **`bigsoccer-com`** (medium) — OSINT tool: bigsoccer.com.
+- **`bigsoccer-com`** (medium) — Use when you have a `username` you suspect belongs to a soccer fan and want their forum posts, club/region affiliation, and connections — re
 - **`bing-creations`** (medium) — News, articles, and guides related to technology, business, health, and entertainment
 - **`blackplanet`** (medium) — Community networking website
 - **`blogger`** (medium) — Service by Google for hosting and publishing blogs
@@ -214,7 +214,7 @@ kind: group-index
 - **`metafilter`** (medium) — Communitu blogging website allowing anyone to contribute
 - **`metv-united-states`** (medium) — Use when verifying a US classic-TV broadcast, schedule or affiliate — a broadcast-reference site with low direct people-search value.
 - **`mghurston-list-of-fake-news-satire-and-hoax-websites`** (medium) — Listing that identifies the current leading online fake or hoax websites
-- **`militaryforums-co-uk`** (medium) — OSINT tool: militaryforums.co.uk.
+- **`militaryforums-co-uk`** (medium) — Use when you have a `username` you suspect is tied to UK/military interests and want to find their forum posts and profile — returns `social
 - **`money-talk-org`** (medium) — OSINT tool: money-talk.org.
 - **`moneyforums-citywire-co-uk`** (medium) — OSINT tool: moneyforums.citywire.co.uk.
 - **`montreal-gazette`** (medium) — Searchable website for a major newspaper covering national and local events in Canada

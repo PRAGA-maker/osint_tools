@@ -122,7 +122,6 @@ kind: group-index
 - **`google-earth-overlays`** (medium) — Use when you want to layer external map grids, charts, or KML/KMZ data over Google Earth imagery for cross-referencing a location.
 - **`google-earth-pro`** (high) — Use when you need a deep historical-imagery timeline, measurement, and high-quality exports for a location — the desktop power version of Go
 - **`google-earth`** (high) — Use when you have a location and want 3D terrain, global high-res imagery, and measurement to study a site or last-known area.
-- **`google-maps-scraper`** (medium) — Enter search terms (ex "Boston museum") and scrape adresses, phone, websites and other place info from Google Maps.
 - **`google-maps-timeline-exporter`** (medium) — Use when you have access to a subject's Google `geolocation` history (their logged-in session or a Takeout export) and want to convert it in
 - **`google-maps-update-alerts`** (high) — Use when you have a `geolocation`/`address` of interest and want to be notified when Google's satellite/aerial imagery of that spot refreshe
 - **`google-maps`** (high) — Use when you have an address or coordinate and need Street View, routing, POIs, or to ground-truth a location at street level.

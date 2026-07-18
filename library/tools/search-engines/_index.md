@@ -716,7 +716,7 @@ kind: group-index
 - **`siteslike`** (low) — OSINT tool: SitesLike.
 - **`slack-discord-zoom-invites-search`** (low) — Use when you want to find public community invite links tied to a topic, org, or `username` — returns indexed Slack/Discord/Zoom invite page
 - **`slideshare-search-engine`** (low) — OSINT tool: SlideShare Search Engine.
-- **`snipplr`** (medium) — Code snippet search engine
+- **`snipplr`** (low) — Use when you have a developer `username` and want their shared code snippets and reused code fragments — returns `social-profile`, `associat
 - **`snowfl-com`** (low) — torrent aggregator which searches various public torrent indexes in real-time
 - **`sogou-china`** (low) — OSINT tool: SoGou (China).
 - **`somalia-conflict`** (medium) — List of individuals reported missing in connection with the conflict in Somalia
