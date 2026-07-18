@@ -7,7 +7,7 @@ kind: group-index
 # opsec-investigator-tooling/anonymous-browsing
 
 ## Sub-groups
-- **`browser-tests/`** — 4 skill(s) below.
+- **`browser-tests/`** — 3 skill(s) below.
 - **`proxy-tests/`** — 1 skill(s) below.
 - **`spoof-user-agent/`** — 3 skill(s) below.
 - **`vpn-tests/`** — 10 skill(s) below.

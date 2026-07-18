@@ -810,7 +810,7 @@ kind: group-index
 - **`youtube-search-tool`** (medium) — Use when you have a `name`, keyword, or place and want targeted YouTube results — a query-builder that filters videos, channels, and playlis
 - **`youtube-timestamp-comments`** (medium) — extension finds all the timestamps in YouTube video comments and arranges them in chronological order.
 - **`youtube-tool`** (medium) — Use when you have a YouTube video/channel/playlist and want to bulk-extract subtitles, comments, descriptions, and video lists via CLI — ret
-- **`youtube-transcript-api`** (medium) — Get the transcript/subtitles for a given #YouTube video (by ID from adress bar). It also works for automatically generated subtitles and sup
+- **`youtube-transcript-api`** (medium) — Use when you have a YouTube video ID and want its spoken content as text — returns the transcript/subtitles, including auto-generated and tr
 - **`youtube-video-upload-time`** (medium) — Use when you have a YouTube video `social-profile` URL and want its exact upload time — returns the precise `metadata-exif`-style publish ti
 - **`youtube-whisperer`** (medium) — Use when you have a YouTube video `url` tied to a subject and want a text transcript to search for names, places, and admissions — returns a
 - **`youtube-word-search`** (medium) — Use when you have a YouTube video and a keyword/`name` and want to know exactly when it is spoken — jumps to the timestamp(s) where the word

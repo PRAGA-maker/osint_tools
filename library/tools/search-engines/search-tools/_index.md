@@ -7,7 +7,6 @@ kind: group-index
 # search-engines/search-tools
 
 ## Skills here
-- **`dorkgenerator-pages-dev`** (medium) — Quick generation of custom Google dork queries
 - **`dorksearch-com`** (medium) — Use when you have a `domain`, `name`, or keyword and want to build advanced Google search operators ("dorks") without memorizing syntax — re
 - **`dorksearch-netlify-app`** (medium) — Fast, simple Google dork query generation
 - **`google-alerts`** (medium) — Use when you have a `name`, `username`, `email`, `phone`, or `domain` and want ongoing notification whenever new pages mentioning it are ind

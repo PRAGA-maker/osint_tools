@@ -68,7 +68,7 @@ kind: group-index
 - **`lux-leaks`** (medium) — — the name of a financial scandal revealed in November 2014 by a journalistic investigation. On this site you will find documents related to
 - **`memento-timetravel`** (low) — Meta-archive search across multiple web-archive providers.
 - **`mention`** (low) — OSINT tool: Mention.
-- **`metawarc`** (medium) — Allows you to quickly analyze the structure of the warc file and collect metadata from all the files in the archive
+- **`metawarc`** (medium) — Use when you have a WARC web-archive file and want the metadata inside it — returns embedded document metadata (authors, software, timestamp
 - **`microsystools-com`** (low) — Use when you have a `domain` you need to preserve and want a full offline copy — returns a locally-saved, browsable snapshot of the entire s
 - **`national-center-for-biotechnology`** (medium) — unique tool to search 39 scientific databases (Pubmed, SRA, OMIN, MedGen etc) from one page
 - **`nationalarchives-gov-uk`** (low) — Use when you have a UK government `domain`/URL and want archived snapshots of it — returns historical page captures and `document-id` refere
@@ -98,7 +98,7 @@ kind: group-index
 - **`talkwalker`** (low) — OSINT tool: Talkwalker.
 - **`the-old-reader`** (low) — OSINT tool: The Old Reader.
 - **`the-time-machine`** (medium) — Tool for gathering domain info from WayBackMachine: - fetches subdomains from waybackurl; - search for /api/JSON/Configuration endpoints and
-- **`theoldnet-com`** (medium) — OSINT tool: TheOldNet.com.
+- **`theoldnet-com`** (low) — Use when you have a `domain` and want to browse its historical versions rendered for old browsers — returns archived page content via a Wayb
 - **`time-travel-for-web-chromewebstore-google-com`** (medium) — OSINT tool: time travel for web (chromewebstore.google.com).
 - **`trove`** (medium) — Use when you have a `name`, place, or event with an Australian angle and want historical records — returns digitised newspapers, gazettes, p
 - **`ukwa`** (medium) — archive of more than half a billion saved English-language web pages (data from 2013)

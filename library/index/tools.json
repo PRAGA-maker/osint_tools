@@ -20134,39 +20134,52 @@
   },
   {
     "id": "metawarc",
-    "name": "Metawarc",
-    "description": "Allows you to quickly analyze the structure of the warc file and collect metadata from all the files in the archive",
+    "name": "metawarc",
+    "description": "Use when you have a WARC web-archive file and want the metadata inside it — returns embedded document metadata (authors, software, timestamps) from archived files.",
     "url": "https://github.com/datacoon/metawarc",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Extracting document/file metadata (author names, software, dates) from every file bundled inside a WARC web archive.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "name",
+      "metadata-exif",
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source; install via pip. No account.",
+    "opsec": "passive",
+    "opsecNote": "Runs entirely locally against a WARC file you already have — no network calls to any target, nothing leaks. Fully passive; the analysis happens on your machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source utility from the datacoon project; it reads standard WARC/embedded-file metadata, so results are as reliable as the archived files' own metadata.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "datacoon metawarc"
+    ],
     "tags": [
       "Archives",
-      "Tools for working with WARC (WebARChive) files"
+      "warc",
+      "metadata"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/metawarc.md"
   },
   {
@@ -21491,37 +21504,51 @@
   {
     "id": "theoldnet-com",
     "name": "TheOldNet.com",
-    "description": "OSINT tool: TheOldNet.com.",
+    "description": "Use when you have a `domain` and want to browse its historical versions rendered for old browsers — returns archived page content via a Wayback proxy.",
     "url": "https://theoldnet.com/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Viewing old/archived versions of a website through a simplified proxy over the Wayback Machine, handy when the original archived page won't render.",
+    "selectorsIn": [
+      "domain"
+    ],
+    "selectorsOut": [
+      "domain"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public service; no account. Built on the Internet Archive Wayback Machine API.",
+    "opsec": "passive",
+    "opsecNote": "You request archived snapshots via TheOldNet's proxy, not the live target site — the target's current server is never touched, so the subject sees nothing. Passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "community",
+    "trustNote": "A hobbyist proxy over the Internet Archive; the underlying content is the Wayback Machine's, but the proxy strips scripts and may alter rendering, and it is subject to Archive rate limits.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "wayback-machine",
+      "web-archive-org"
+    ],
+    "aliases": [
+      "TheOldNet"
+    ],
     "tags": [
-      "Archives"
+      "Archives",
+      "wayback"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/theoldnet-com.md"
   },
   {
@@ -29485,48 +29512,6 @@
     "_file": "library/tools/communities-forums/google-com-18.md"
   },
   {
-    "id": "google-com-19",
-    "name": "google.com",
-    "description": "OSINT tool: google.com.",
-    "url": "https://www.google.com/search?q=site%3Auberpeople.net&ie=utf-8&oe=utf-8&client=firefox-b-ab",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "username"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "forums",
-      "Forums"
-    ],
-    "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/google-com-19.md"
-  },
-  {
     "id": "google-com-20",
     "name": "google.com",
     "description": "OSINT tool: google.com.",
@@ -32039,41 +32024,52 @@
   {
     "id": "london-free-press",
     "name": "London Free Press",
-    "description": "Searchable website for a major newspaper covering national and local events in Canada",
+    "description": "Use when you have a `name` and want news coverage from London, Ontario — returns articles, obituaries and local reporting that can place or corroborate a subject.",
     "url": "http://www.lfpress.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Searching the London Free Press (London/southwestern Ontario) archive for a person, event, obituary or local incident.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and read headlines/many articles; some content sits behind a Postmedia metered paywall. Search itself is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news site is passive; the subject is not notified. Standard clean-session hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established Postmedia daily newspaper (London Free Press); reporting is professionally edited and citable, though article availability varies by paywall and archive depth.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "LFP",
+      "lfpress.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/london-free-press.md"
   },
   {
@@ -40059,44 +40055,53 @@
   {
     "id": "vancouver-sun-news",
     "name": "Vancouver Sun News",
-    "description": "Searchable website for a major newspaper covering national and local events in Canada",
+    "description": "Use when you have a `name` and want news coverage from British Columbia — returns articles, obituaries and local reporting that can place or corroborate a subject.",
     "url": "http://www.vancouversun.com/index.html",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
+    "bestFor": "Searching a major Vancouver/BC newspaper's archive for a person, event, obituary or local incident.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "associate",
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to search and read headlines/many articles; some content sits behind a Postmedia metered paywall. Search itself is free.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading a public news site is passive; the subject is not notified. Standard clean-session hygiene is enough.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Established Postmedia daily newspaper (Vancouver Sun); reporting is professionally edited and citable, though article availability varies by paywall and archive depth.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "vancouver-sun-opinions"
+    ],
+    "aliases": [
+      "Vancouver Sun"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "news-journalism"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "vancouver-sun-opinions"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/vancouver-sun-news.md"
   },
   {
@@ -194466,47 +194471,6 @@
     "_file": "library/tools/opsec-investigator-tooling/wevideo-video-editor-app-mobile-android.md"
   },
   {
-    "id": "what-browser",
-    "name": "What Browser?",
-    "description": "Browser version verification, fingerprint audit during OSINT setup",
-    "url": "https://whatbrowser.org/",
-    "category": "opsec-investigator-tooling",
-    "path": [
-      "opsec-investigator-tooling",
-      "anonymous-browsing",
-      "browser-tests"
-    ],
-    "bestFor": "Browser version verification, fingerprint audit during OSINT setup",
-    "input": "No input required",
-    "output": "Current browser name, version, and update status",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "active",
-    "opsecNote": "Basic browser detection page; use to verify what browser identity is visible before OSINT operations.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/browser-tests/what-browser.md"
-  },
-  {
     "id": "what-browser-am-i-using-co",
     "name": "What browser am I using.co",
     "description": "Use when you want a quick check of what your browser reveals — returns the browser name, version, OS, and user-agent a website sees, so you can confirm your investigation browser presents as intended.",
@@ -269475,47 +269439,58 @@
   {
     "id": "whitepages-reverse-address-search",
     "name": "Whitepages - Reverse Address Search",
-    "description": "OSINT tool: Whitepages - Reverse Address Search.",
+    "description": "Use when you have an `address` and want to know who is associated with it — returns resident names, phone numbers and likely associates.",
     "url": "https://www.411.com",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Reverse-address lookup on a U.S. address to surface current/past residents, their phones and associated people.",
     "selectorsIn": [
-      "name",
-      "address"
-    ],
-    "selectorsOut": [
       "address",
+      "phone",
       "name"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "selectorsOut": [
+      "name",
+      "phone",
+      "address",
+      "associate"
+    ],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free basic results (names, partial phones, associates) from 411.com's aggregated public records; deeper reports and full contact details are upsold to paid.",
+    "opsec": "passive",
+    "opsecNote": "411.com aggregates public records; the person you look up is NOT notified (unlike a credit-style check). Searching is passive, but avoid entering the \"is this you / claim your listing\" flows, which can tie the query to you. Use a clean session.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Data-broker aggregator (411.com, Whitepages lineage); coverage is broad for the U.S. but records are frequently stale or conflated — treat every hit as a lead to verify.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "property"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "411",
       "411-us"
     ],
+    "aliases": [
+      "411.com reverse address",
+      "Whitepages reverse address"
+    ],
+    "tags": [
+      "property",
+      "reverse-address",
+      "people-search"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/whitepages-reverse-address-search.md"
   },
   {
@@ -280006,46 +279981,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/dorkeye.md"
-  },
-  {
-    "id": "dorkgenerator-pages-dev",
-    "name": "dorkgenerator.pages.dev",
-    "description": "Quick generation of custom Google dork queries",
-    "url": "https://dorkgenerator.pages.dev/",
-    "category": "search-engines",
-    "path": [
-      "search-engines",
-      "search-tools"
-    ],
-    "bestFor": "Quick generation of custom Google dork queries",
-    "input": "Target, search parameters, dork type",
-    "output": "Constructed Google dork search URL",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "live",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "Generates query strings locally; executing the dork in Google is passive public search.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/search-tools/dorkgenerator-pages-dev.md"
   },
   {
     "id": "dorkgenius",
@@ -354007,39 +353942,55 @@
   },
   {
     "id": "youtube-transcript-api",
-    "name": "YouTube Transcript API",
-    "description": "Get the transcript/subtitles for a given #YouTube video (by ID from adress bar). It also works for automatically generated subtitles and supports translating subtitles.",
+    "name": "youtube-transcript-api",
+    "description": "Use when you have a YouTube video ID and want its spoken content as text — returns the transcript/subtitles, including auto-generated and translated.",
     "url": "https://github.com/jdepoix/youtube-transcript-api",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Programmatically pulling a YouTube video's transcript (manual or auto-generated, any language) for keyword search and analysis.",
+    "selectorsIn": [
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "name",
+      "associate",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free and open source (MIT); install via pip. No API key or Google account required for public videos.",
+    "opsec": "passive",
+    "opsecNote": "Fetches publicly available captions from YouTube from your machine — requests come from your IP, so use a VPN for volume. It does not require logging in and touches only public transcript endpoints; the uploader is not notified.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "python-lib",
+    "trust": "community",
+    "trustNote": "Widely used, well-maintained open-source Python library; it reads YouTube's own caption data, so transcript accuracy is YouTube's (auto-captions can misspell names/places).",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "get-text-from-video",
+      "eightify"
+    ],
+    "aliases": [
+      "jdepoix youtube-transcript-api"
+    ],
     "tags": [
       "Social Media",
-      "YouTube"
+      "YouTube",
+      "transcript"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/youtube-transcript-api.md"
   },
   {

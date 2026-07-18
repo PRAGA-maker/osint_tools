@@ -150,7 +150,6 @@ kind: group-index
 - **`google-com-16`** (medium) — OSINT tool: google.com.
 - **`google-com-17`** (medium) — OSINT tool: google.com.
 - **`google-com-18`** (medium) — OSINT tool: google.com.
-- **`google-com-19`** (medium) — OSINT tool: google.com.
 - **`google-com-20`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-22`** (medium) — OSINT tool: google.com.
@@ -207,7 +206,7 @@ kind: group-index
 - **`linkode-alpha`** (medium) — OSINT tool: Linkode(alpha).
 - **`livejournal`** (low) — OSINT tool: LiveJournal.
 - **`logpasta`** (medium) — OSINT tool: Logpasta.
-- **`london-free-press`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
+- **`london-free-press`** (medium) — Use when you have a `name` and want news coverage from London, Ontario — returns articles, obituaries and local reporting that can place or 
 - **`lonely-planet`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`loveaholics`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`macleans-magazine-canada`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
@@ -393,7 +392,7 @@ kind: group-index
 - **`unogs-com`** (low) — Netflix search without registration
 - **`upforit-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`usa-today-news`** (medium) — Searchable website for a major newspaper covering national and local events in the United States; free public use; no account required; may 
-- **`vancouver-sun-news`** (medium) — Searchable website for a major newspaper covering national and local events in Canada
+- **`vancouver-sun-news`** (medium) — Use when you have a `name` and want news coverage from British Columbia — returns articles, obituaries and local reporting that can place or
 - **`vaultbin`** (medium) — OSINT tool: vaultbin.
 - **`verybin`** (medium) — OSINT tool: Verybin.
 - **`vizit-visual-reddit-browse-the-front-page-of-the-internet`** (low) — OSINT tool: Vizit | Visual Reddit | browse the front page of the internet.

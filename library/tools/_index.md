@@ -9,7 +9,7 @@ kind: group-index
 ## Sub-groups
 - **`ai-analysis-automation/`** — 456 skill(s) below.
 - **`archives-cache/`** — 139 skill(s) below.
-- **`communities-forums/`** — 419 skill(s) below.
+- **`communities-forums/`** — 418 skill(s) below.
 - **`dark-web/`** — 118 skill(s) below.
 - **`dating-classifieds/`** — 114 skill(s) below.
 - **`documents-metadata/`** — 317 skill(s) below.
@@ -21,7 +21,7 @@ kind: group-index
 - **`image-video-face/`** — 484 skill(s) below.
 - **`maps-geospatial-data/`** — 143 skill(s) below.
 - **`messaging/`** — 199 skill(s) below.
-- **`opsec-investigator-tooling/`** — 567 skill(s) below.
+- **`opsec-investigator-tooling/`** — 566 skill(s) below.
 - **`people-search/`** — 278 skill(s) below.
 - **`phone/`** — 142 skill(s) below.
 - **`public-records/`** — 1126 skill(s) below.

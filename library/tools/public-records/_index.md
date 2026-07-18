@@ -1031,7 +1031,7 @@ kind: group-index
 - **`west-virginia`** (high) — Use when you have a `name` and want to check whether a subject is or was incarcerated in West Virginia jails or prisons — returns custody st
 - **`western-states-marriages-search`** (low) — Use when you have a `name` and want historical marriage records from the western US — returns bride/groom names, dates, places, and spousal 
 - **`whaleslide`** (medium) — OSINT tool: WhaleSlide.
-- **`whitepages-reverse-address-search`** (medium) — OSINT tool: Whitepages - Reverse Address Search.
+- **`whitepages-reverse-address-search`** (medium) — Use when you have an `address` and want to know who is associated with it — returns resident names, phone numbers and likely associates.
 - **`who-data`** (low) — OSINT tool: WHO Data.
 - **`who-do-you-search`** (medium) — Business-related search engine; searches global results by product, occupation, business and city name
 - **`whorepresents-com`** (low) — Use when you have a celebrity/public-figure `name` and want to find who represents them — returns the agency/publicist (`employer-org`) and 
