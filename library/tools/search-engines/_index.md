@@ -500,7 +500,7 @@ kind: group-index
 - **`najdi-slovenia`** (low) — OSINT tool: Najdi (Slovenia).
 - **`najdsi-slovenia`** (medium) — OSINT tool: Najdsi (Slovenia).
 - **`nasa-kids-club`** (low) — Space-themed entertainment and information about NASA for kids
-- **`nate-search-engine-south-korea`** (medium) — South Korean web search engine covering regional results
+- **`nate-search-engine-south-korea`** (medium) — Use when you have a `name`, `username`, or `phone` on a South Korean subject and want Korean-language web/news results Google misses — retur
 - **`national-criminal-justice-service`** (medium) — National Criminal Justice Reference Service site providing research, publications and statistics
 - **`national-geographic-kids`** (low) — National Geographic's website intended for kids
 - **`naver-com`** (high) — Use when you have a Korean `name`, `username` or keyword and want Korean-language web coverage Google misses — returns blogs, cafés, news, Q
@@ -871,7 +871,7 @@ kind: group-index
 - **`yahoo-com`** (high) — Use when you have a `name`/handle/phrase and want a second general search engine whose index and ranking differ from Google — returns web re
 - **`yahoo-news`** (low) — OSINT tool: Yahoo News.
 - **`yahoo-search`** (low) — OSINT tool: Yahoo! Search.
-- **`yam-search-engine-taiwan`** (medium) — Taiwan based surface web search engine covering regional results
+- **`yam-search-engine-taiwan`** (medium) — Use when you have a `name` or `username` on a Taiwan-linked subject and want Traditional-Chinese web/news/blog results — returns `social-pro
 - **`yamli-arabic`** (medium) — Arabic search engine and smart Arabic keyboard
 - **`yandex-russia`** (low) — OSINT tool: Yandex (Russia).
 - **`yandex-wordstat`** (low) — OSINT tool: Yandex Wordstat.

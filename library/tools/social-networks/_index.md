@@ -372,7 +372,7 @@ kind: group-index
 - **`mentionmapp-analytics`** (low) — OSINT tool: Mentionmapp Analytics.
 - **`meta-content-library`** (medium) — Use when you have a `name`, `username`, or keyword and (as an approved researcher) want to search all public Facebook/Instagram/Threads post
 - **`mewe`** (high) — Use when you have a `name` or `username` and want to check for a MeWe profile (a privacy-focused social network that draws communities pushe
-- **`minesight`** (medium) — Minecraft #osint tool. By nickname, it checks the presence of users on different servers and collects information about them (date of regist
+- **`minesight`** (medium) — Use when you have a Minecraft `username` (or UUID) and want to see where that player has been active — returns servers seen, past usernames,
 - **`mixi-japan`** (high) — Use when you have a Japanese `name`/`username` and want a Mixi social-networking profile — returns profile, community memberships and diary/
 - **`mixi`** (high) — Use when you have a Japanese `username` or `name` and want to check for a mixi social profile — returns a social-profile, but most content i
 - **`mocospace`** (high) — Use when you have a `name` or `username` and want to check for a profile on the MocoSpace/Moco mobile social network — returns the matching 
@@ -668,9 +668,7 @@ kind: group-index
 - **`tweet-sentiment-visualization`** (medium) — OSINT tool: Tweet Sentiment Visualization.
 - **`tweet-topic-explorer`** (high) — Use when you have an X/Twitter `username` and want to see what they tweet about and who they mention most — returns a topic word-cloud and f
 - **`tweet-topic`** (medium) — OSINT tool: Tweet Topic.
-- **`tweet-tunnel`** (medium) — tool for quick and comfortable viewing old tweet's of someone account
 - **`tweetbeaver`** (high) — Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated s
-- **`tweetdeck`** (medium) — OSINT tool: Tweetdeck.
 - **`tweetfeed`** (low) — Use when you have a suspicious domain, URL, or IP and want to check whether the infosec community has flagged it as a live IOC — returns mat
 - **`tweetpaths`** (medium) — OSINT tool: Tweetpaths.
 - **`tweetreach`** (medium) — OSINT tool: Tweetreach.

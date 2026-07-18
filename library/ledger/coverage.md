@@ -2,15 +2,15 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8183 total · 3435 full · 4748 stub (41% enriched)
+**Tools:** 8179 total · 3445 full · 4734 stub (42% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3388 · medium: 2838 · high: 1957
+low: 3389 · medium: 2832 · high: 1958
 
 ## Tools by trust
-unverified: 3685 · community: 3326 · trusted: 1160 · personal: 6 · untrustworthy: 6
+unverified: 3674 · community: 3331 · trusted: 1162 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
@@ -24,36 +24,36 @@ unverified: 3685 · community: 3326 · trusted: 1160 · personal: 6 · untrustwo
 - `email` — 242/246
 - `evidence-capture` — 4/32
 - `financial-crypto` — 29/128
-- `geolocation` — 214/351
-- `image-video-face` — 395/476
+- `geolocation` — 215/351
+- `image-video-face` — 395/475
 - `maps-geospatial-data` — 28/143
 - `messaging` — 154/194
-- `opsec-investigator-tooling` — 23/562
+- `opsec-investigator-tooling` — 25/562
 - `people-search` — 230/266
 - `phone` — 134/137
-- `public-records` — 679/1106
-- `search-engines` — 249/940
-- `social-networks` — 615/859
+- `public-records` — 683/1106
+- `search-engines` — 251/940
+- `social-networks` — 616/857
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
-- `transportation` — 61/230
+- `transportation` — 61/229
 - `username` — 100/104
 
 ## Folders needing a split (>12 leaves — go deeper)
 
 - `library/tools/public-records` — 1043 leaves
 - `library/tools/search-engines` — 876 leaves
-- `library/tools/social-networks` — 831 leaves
+- `library/tools/social-networks` — 829 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
 - `library/tools/domains-ip-infrastructure` — 511 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
 - `library/tools/communities-forums` — 393 leaves
-- `library/tools/image-video-face` — 380 leaves
+- `library/tools/image-video-face` — 379 leaves
 - `library/tools/geolocation` — 336 leaves
 - `library/tools/documents-metadata` — 263 leaves
 - `library/tools/people-search` — 256 leaves
 - `library/tools/email` — 222 leaves
-- `library/tools/transportation` — 211 leaves
+- `library/tools/transportation` — 210 leaves
 - `library/tools/messaging` — 179 leaves
 - `library/tools/maps-geospatial-data` — 143 leaves
 - `library/tools/phone` — 139 leaves

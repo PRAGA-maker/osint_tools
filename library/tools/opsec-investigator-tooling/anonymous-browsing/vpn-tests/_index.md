@@ -11,7 +11,7 @@ kind: group-index
 - **`dns-leak-tests`** (low) — Use when you want to verify your VPN/anonymized setup isn't leaking DNS — returns the DNS resolvers actually answering for you (IPs, provide
 - **`email-leak-tests`** (medium) — Use when you want to confirm your own sock-puppet email doesn't expose your `ip-address` — send a test message and it reports whether your r
 - **`ip-dns-leak-detection`** (medium) — Use when you want to verify your own VPN/anonymization before an operation — returns your visible IP, DNS resolvers, WebRTC leaks, and geolo
-- **`ipv6-leak-tests`** (medium) — Detecting IPv6 leaks through IPv4-only VPNs, dual-stack network verification
+- **`ipv6-leak-tests`** (medium) — Use when you are on a VPN and want to confirm your real IPv6 `ip-address` isn't leaking past it — returns your exposed IPv6 (or a clean pass
 - **`jondonym`** (low) — Use when you want to audit your investigative connection's anonymity — returns your exposed IP, headers, cookies, and fingerprint with an an
 - **`perfect-privacy`** (medium) — Pre-operation anonymization verification, IP and DNS leak check
 - **`trace-my-ip`** (medium) — Verifying visible IP and geolocation before OSINT operations

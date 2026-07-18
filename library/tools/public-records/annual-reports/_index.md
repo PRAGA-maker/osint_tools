@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`annualreports-com`** (medium) — Locating and downloading public company annual reports
-- **`international-registries`** (medium) — Finding official company registry links for foreign jurisdictions
+- **`international-registries`** (medium) — Use when you have an `employer-org` in a foreign jurisdiction and want the official company registry to verify it — returns `employer-org`, 
 - **`public-register-online`** (medium) — Use when you have a company name and want its published annual reports — returns employer-org financial/annual reports to read directors, ad
 - **`public-register-s-annual-report-service`** (medium) — Browsing annual reports for US public companies alphabetically
 

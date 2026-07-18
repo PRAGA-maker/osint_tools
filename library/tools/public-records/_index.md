@@ -297,7 +297,7 @@ kind: group-index
 - **`europol-most-wanted-search-engine`** (low) — OSINT tool: Europol Most Wanted Search Engine.
 - **`eurostat`** (low) — OSINT tool: Eurostat.
 - **`exa-ai`** (high) — Use when you have a company `name` or website `domain` and want an AI-compiled dossier — people, funding, competitors, news — returns `emplo
-- **`explainpaper`** (medium) — AI is a tool to make reading scientific articles easier. Highlight a phrase, sentence or whole paragraph to get its simple and detailed expl
+- **`explainpaper`** (low) — Use when you have a dense academic/technical `document-id` (a paper) and want plain-language explanations of it — returns simplified explana
 - **`explee-com`** (high) — Use when you have a `name` or `employer-org` and want B2B contact enrichment from a large people/company database — returns email, employer-
 - **`explore-canada-s-real-estate-market`** (medium) — OSINT tool: Explore Canada's Real Estate Market.
 - **`extremist-groups`** (low) — OSINT tool: Extremist Groups.
@@ -790,7 +790,7 @@ kind: group-index
 - **`probaterecords-co-uk`** (medium) — Use when you have a deceased person's `name` and want an official sealed copy of their England & Wales will or grant of probate — returns `a
 - **`project-whispers`** (low) — OSINT tool: Project Whispers.
 - **`proper-ie`** (high) — Use when you have an Irish `address`/area and want sale-price history from Ireland's public Residential Property Price Register — returns tr
-- **`property-records-public-records-by-state`** (medium) — OSINT tool: Property Records - Public Records by State.
+- **`property-records-public-records-by-state`** (high) — Use when you have a `name` or `address` and want official county property/deed records — returns a directory of free government sources to p
 - **`property-search-public-records-by-state`** (medium) — OSINT tool: Property Search - Public Records by State.
 - **`propertypriceregister-ie`** (medium) — Use when you have an Irish `address` (or area) and want to confirm a residential sale, its date and price — returns the sale date, price and
 - **`propertypriceregisterireland-com`** (high) — Use when you have an Irish `address` (or area) and want to confirm a residential sale — date and price — at that property — returns address 

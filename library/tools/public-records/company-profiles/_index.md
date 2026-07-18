@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`aihit`** (medium) — Use when you have an `employer-org` or `domain` and want the company's profile and executive contacts — returns `name`s, roles, and `associa
-- **`buzzfile`** (medium) — US business lookup by name, location, or industry classification
+- **`buzzfile`** (medium) — Use when you have an `employer-org` or a person's `name` tied to a US business and want its profile — returns `employer-org` details, `addre
 - **`companies-in-the-uk`** (medium) — Quick UK company lookup with simplified Companies House data
 - **`company-data-rex-eu`** (medium) — Cross-border EU company research and registry data lookup
 - **`crunchbase`** (medium) — Use when you have a company or person name and want funding history, investors, acquisitions, and named executives — returns employer-org, a

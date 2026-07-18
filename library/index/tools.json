@@ -127400,13 +127400,13 @@
   {
     "id": "r4ven",
     "name": "r4ven",
-    "description": "Tracks GPS location and captures device/IP information via a hosted link.",
+    "description": "Use when a subject will open a link you control and you want their precise `geolocation`, real `ip-address`, and `device-id` — returns those plus optional front-camera capture.",
     "url": "https://github.com/spyboy-productions/r4ven",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "Capturing precise geolocation and device fingerprint when a target opens a link.",
+    "bestFor": "Capturing GPS-grade location and device fingerprint the moment a target opens a hosted link (with consent/authorization).",
     "selectorsIn": [
       "social-profile"
     ],
@@ -127415,15 +127415,18 @@
       "ip-address",
       "device-id"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, open-source; self-hosted Python. A tunnel service (ngrok/Cloudflare/Serveo) is needed to reach mobile targets — free tiers exist.",
     "opsec": "active",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Highly intrusive and active. It social-engineers the target into granting browser permissions; the target directly interacts with infrastructure you run, and browser permission prompts are visible to them. Only use with explicit authorization or the subject's consent (e.g. a cooperating family member locating a missing relative's device). Serving this to a non-consenting third party can be unlawful.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "legal-gate"
+    ],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Active social-engineering geolocation tool; authorization required.",
+    "trustNote": "Open-source demonstration/pentest tool by spyboy-productions; author explicitly restricts it to education, research, and authorized testing.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -127432,6 +127435,10 @@
     "api": false,
     "localInstall": true,
     "registration": false,
+    "invitationOnly": false,
+    "relatedTools": [
+      "cloakquest3r"
+    ],
     "aliases": [
       "spyboy-productions/r4ven"
     ],
@@ -127439,15 +127446,12 @@
       "geolocation",
       "phishing",
       "device-info",
-      "gps"
+      "gps",
+      "active"
     ],
     "source": "gh-topic-reconnaissance",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "cloakquest3r",
-      "https-github-com-spyboy-productions-valid8proxy"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/r4ven.md"
   },
   {
@@ -136923,42 +136927,6 @@
       "scene-detection"
     ],
     "_file": "library/tools/image-video-face/efficientnetv2.md"
-  },
-  {
-    "id": "emergent",
-    "name": "Emergent",
-    "description": "OSINT tool: Emergent.",
-    "url": "http://www.emergent.info",
-    "category": "image-video-face",
-    "path": [
-      "image-video-face"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "fact-checking"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/image-video-face/emergent.md"
   },
   {
     "id": "everypixel",
@@ -181848,7 +181816,7 @@
   {
     "id": "ipv6-leak-tests",
     "name": "IPv6 Leak Tests",
-    "description": "Detecting IPv6 leaks through IPv4-only VPNs, dual-stack network verification",
+    "description": "Use when you are on a VPN and want to confirm your real IPv6 `ip-address` isn't leaking past it — returns your exposed IPv6 (or a clean pass).",
     "url": "https://ipv6leak.com/",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -181856,34 +181824,47 @@
       "anonymous-browsing",
       "vpn-tests"
     ],
-    "bestFor": "Detecting IPv6 leaks through IPv4-only VPNs, dual-stack network verification",
-    "input": "No input required (automatic IPv6 detection)",
-    "output": "IPv6 address if leaking, confirmation of leak status, and remediation guidance",
+    "bestFor": "Verifying an IPv4-only VPN isn't leaking your real IPv6 address on a dual-stack connection.",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "ip-address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free public test run by Private Internet Access (PIA); no account or payment to run it.",
     "opsec": "active",
-    "opsecNote": "May expose your real IPv6 address to the testing service; use before OSINT operations on dual-stack networks.",
+    "opsecNote": "The test deliberately probes your own connection and will surface your real IPv6 if it leaks — that's the point. Run it on YOUR machine before any collection, never as a step against a target. It is a PIA-branded page and pushes their VPN.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Operated by Private Internet Access, an established VPN vendor; the leak check is genuine but the page is also marketing for their product.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "useragentstring-com"
+    ],
+    "aliases": [
+      "ipv6leak.com",
+      "IPv6 leak test"
+    ],
+    "tags": [
+      "opsec",
+      "vpn",
+      "ipv6",
+      "leak-test",
+      "anonymity"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/vpn-tests/ipv6-leak-tests.md"
   },
   {
@@ -192542,7 +192523,7 @@
   {
     "id": "useragentstring-com",
     "name": "UserAgentString.com",
-    "description": "Identifying user agent strings, finding UA strings to use for spoofing",
+    "description": "Use when you need a believable browser `user-agent` string to spoof, or to decode one you captured — returns parsed browser/OS/device details.",
     "url": "https://www.useragentstring.com/pages/useragentstring.php",
     "category": "opsec-investigator-tooling",
     "path": [
@@ -192550,34 +192531,42 @@
       "anonymous-browsing",
       "spoof-user-agent"
     ],
-    "bestFor": "Identifying user agent strings, finding UA strings to use for spoofing",
-    "input": "User agent string for parsing",
-    "output": "Browser type, OS, version, and device details extracted from UA string",
+    "bestFor": "Picking a plausible real-world user-agent string to blend in, and parsing captured UA strings.",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free reference directory; no account, key, or payment (© 2005–2025, actively maintained).",
     "opsec": "passive",
-    "opsecNote": "Reference lookup only; useful for selecting believable user agents for browser spoofing during OSINT operations.",
+    "opsecNote": "This is your own tooling — you look up strings to configure your investigative browser. It never touches the target. Copy a current, common UA (not a rare/old one that stands out in the target's logs).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent reference catalogue of UA strings; widely cited, not a first-party vendor source, so treat its parsing as best-effort.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "useragentstring.com",
+      "UAS parser"
+    ],
+    "tags": [
+      "opsec",
+      "user-agent",
+      "browser-fingerprint",
+      "anonymity"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/opsec-investigator-tooling/anonymous-browsing/spoof-user-agent/useragentstring-com.md"
   },
   {
@@ -221328,41 +221317,58 @@
   {
     "id": "buzzfile",
     "name": "Buzzfile",
-    "description": "US business lookup by name, location, or industry classification",
+    "description": "Use when you have an `employer-org` or a person's `name` tied to a US business and want its profile — returns `employer-org` details, `address`, and executive `name`s.",
     "url": "https://www.buzzfile.com/Home/Basic",
     "category": "public-records",
     "path": [
       "public-records",
       "company-profiles"
     ],
-    "bestFor": "US business lookup by name, location, or industry classification",
-    "input": "Company name, location, or SIC code",
-    "output": "Business profiles with contacts, employee count, and revenue estimates",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Quick US business lookup by company name, location, or executive to get address, size, and key people.",
+    "selectorsIn": [
+      "employer-org",
+      "name",
+      "address"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address",
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Basic company search and core profile fields are free/no-login; deeper features (industry lists, list-builder, some contact detail) require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "Queries processed through Buzzfile servers; aggregates from public records.",
+    "opsecNote": "Queries run through Buzzfile's servers against aggregated public/business data; the target isn't contacted. No login needed for basic lookups, so no account of yours is tied to the search.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Commercial business-data aggregator compiling public records and firmographics; useful as a lead but figures (revenue/employee estimates) are modelled, not filed, so verify against a primary registry.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "international-registries"
+    ],
+    "aliases": [
+      "buzzfile.com"
+    ],
+    "tags": [
+      "company",
+      "corporate",
+      "employer",
+      "business-directory"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-profiles/buzzfile.md"
   },
   {
@@ -230356,37 +230362,51 @@
   {
     "id": "explainpaper",
     "name": "ExplainPaper",
-    "description": "AI is a tool to make reading scientific articles easier. Highlight a phrase, sentence or whole paragraph to get its simple and detailed explanation with #AI.",
+    "description": "Use when you have a dense academic/technical `document-id` (a paper) and want plain-language explanations of it — returns simplified explanations, not new selectors.",
     "url": "https://www.explainpaper.com/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
+    "bestFor": "Making a research paper or technical PDF readable — highlight text, get a plain-English explanation.",
+    "selectorsIn": [
+      "document-id"
+    ],
     "selectorsOut": [],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "costNote": "Free tier gives unlimited highlight explanations and follow-ups on basic AI models; Pro is ~$16/mo for advanced models, full-paper summaries, and saved highlights. Account required (no card for free).",
+    "opsec": "passive",
+    "opsecNote": "You upload a document to a third-party AI service — do NOT feed it anything sensitive, non-public, or case-confidential. It's for public papers you want explained, not for processing investigative material.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "trust": "community",
+    "trustNote": "Legitimate, widely used AI paper-explainer (400k+ users), but it's an LLM summarizer — treat its explanations as study aids, not authoritative facts.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "explainpaper.com"
+    ],
     "tags": [
-      "Science"
+      "Science",
+      "research",
+      "ai",
+      "reading-aid"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/explainpaper.md"
   },
   {
@@ -240681,41 +240701,55 @@
   {
     "id": "international-registries",
     "name": "International Registries",
-    "description": "Finding official company registry links for foreign jurisdictions",
+    "description": "Use when you have an `employer-org` in a foreign jurisdiction and want the official company registry to verify it — returns `employer-org`, `domain`.",
     "url": "https://www.gov.uk/government/publications/overseas-registries/overseas-registries",
     "category": "public-records",
     "path": [
       "public-records",
       "annual-reports"
     ],
-    "bestFor": "Finding official company registry links for foreign jurisdictions",
-    "input": "Country name (browsed from list)",
-    "output": "Links to official company registration authorities by country",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Finding the official government company-registration authority for a given country before searching it.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free UK-government reference page; no account, key, or payment.",
     "opsec": "passive",
-    "opsecNote": "Static reference page on gov.uk; no target interaction.",
+    "opsecNote": "You are reading a static gov.uk publication, not touching the target's registry. No target interaction and nothing logged against your subject. OpSec matters only at the downstream registry you are routed to.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Published and maintained by Companies House (UK government) as guidance for verifying overseas companies; the links point to official national registries.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
     "invitationOnly": false,
-    "deprecated": false,
-    "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "relatedTools": [
+      "buzzfile"
+    ],
+    "aliases": [
+      "Overseas Registries",
+      "Companies House overseas registries list"
+    ],
+    "tags": [
+      "company",
+      "registry",
+      "corporate"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/annual-reports/international-registries.md"
   },
   {
@@ -256179,13 +256213,13 @@
   {
     "id": "property-records-public-records-by-state",
     "name": "Property Records - Public Records by State",
-    "description": "OSINT tool: Property Records - Public Records by State.",
-    "url": "http://publicrecords.searchsystems.net/free_public_records_by_type_of_record/property_records",
+    "description": "Use when you have a `name` or `address` and want official county property/deed records — returns a directory of free government sources to pull owner `name`, `address`.",
+    "url": "https://www.searchsystems.net/us",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Locating the correct official (.gov) county property/deed search for a US address, with no data-broker middleman.",
     "selectorsIn": [
       "name",
       "address"
@@ -256194,28 +256228,25 @@
       "address",
       "name"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Directory itself is free (\"no paywall, no email, no account\"); individual county sites may charge for certified copies.",
+    "opsec": "passive",
+    "opsecNote": "SearchSystems only routes you to official sources; your actual search happens on a county assessor/recorder site. Those can log lookups, so treat the downstream government search as the point where OpSec matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Long-standing directory that links exclusively to official .gov/.us government record sources and explicitly excludes data brokers and resellers.",
+    "missingPersonsRelevance": "high",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "property"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
     "relatedTools": [
       "county-clerks-recorded-doc-s-by-state",
       "court-records-directory",
@@ -256225,6 +256256,19 @@
       "searchsystems-death-records",
       "texas-public-records-search"
     ],
+    "aliases": [
+      "SearchSystems property records",
+      "Public Records by State"
+    ],
+    "tags": [
+      "property",
+      "deeds",
+      "public-records",
+      "real-estate"
+    ],
+    "source": "metaosint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/property-records-public-records-by-state.md"
   },
   {
@@ -292538,41 +292582,57 @@
   {
     "id": "nate-search-engine-south-korea",
     "name": "Nate Search Engine (South Korea)",
-    "description": "South Korean web search engine covering regional results",
-    "url": "http://www.nate.com",
+    "description": "Use when you have a `name`, `username`, or `phone` on a South Korean subject and want Korean-language web/news results Google misses — returns `social-profile`, news mentions.",
+    "url": "https://www.nate.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Regional Korean-language search (web, news, community) for subjects with a Korea footprint.",
+    "selectorsIn": [
+      "name",
+      "username",
+      "phone"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free portal search; no account needed to run queries.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A standard portal search; the subject isn't contacted. Nate logs queries server-side like any search engine, so use a sock-puppet/clean session and avoid logging into Nate services while investigating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Nate is a major, established South Korean web portal (operated by SK Communications); the portal is legitimate though its integrated search partly draws on third-party indexes.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "kr"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "yam-search-engine-taiwan"
+    ],
+    "aliases": [
+      "Nate",
+      "nate.com",
+      "네이트"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
+      "search-engines",
+      "korea",
+      "regional",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/nate-search-engine-south-korea.md"
   },
   {
@@ -309528,41 +309588,56 @@
   {
     "id": "yam-search-engine-taiwan",
     "name": "Yam Search Engine (Taiwan)",
-    "description": "Taiwan based surface web search engine covering regional results",
-    "url": "http://search.yam.com",
+    "description": "Use when you have a `name` or `username` on a Taiwan-linked subject and want Traditional-Chinese web/news/blog results — returns `social-profile`, news and blog mentions.",
+    "url": "https://www.yam.com/",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Regional Traditional-Chinese (Taiwan) search across news, blogs, and web content.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free portal/search; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Ordinary portal search; the subject isn't contacted. Query logging applies as with any search engine — use a clean/sock-puppet session and don't sign into Yam services while investigating.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Yam (蕃薯藤) is a long-established Taiwanese media/content portal (operated by Tian Kong Media); legitimate, though now more media hub than pure search and its search leans on partner indexes.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "tw"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [
+      "nate-search-engine-south-korea"
+    ],
+    "aliases": [
+      "Yam",
+      "yam.com",
+      "蕃薯藤"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
+      "search-engines",
+      "taiwan",
+      "regional",
+      "toddington"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/yam-search-engine-taiwan.md"
   },
   {
@@ -329668,42 +329743,52 @@
   {
     "id": "minesight",
     "name": "MineSight",
-    "description": "Minecraft #osint tool. By nickname, it checks the presence of users on different servers and collects information about them (date of registration, links to social networks, history of nickname changes, etc.).",
+    "description": "Use when you have a Minecraft `username` (or UUID) and want to see where that player has been active — returns servers seen, past usernames, and any linked `social-profile`.",
     "url": "https://github.com/Gobutsu/MineSight",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
+    "bestFor": "Pivoting a Minecraft nickname into server history, old nicknames, and self-disclosed social links.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "username"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free, open-source (AGPL-3.0); install locally via pip/pipx, no account.",
+    "opsec": "passive",
+    "opsecNote": "Queries public server-side player data, not the target's own machine or Mojang login. It does not notify the player. Run from a sock-puppet environment as normal hygiene, but this does not touch the subject directly.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Open-source project (~50+ stars) by an independent developer; verify against the current repo, as it relies on third-party server data sources that can change or break.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "relatedTools": [],
+    "aliases": [
+      "Gobutsu/MineSight"
+    ],
     "tags": [
       "Social Media",
-      "Minecraft"
+      "Minecraft",
+      "username",
+      "gaming-osint"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/minesight.md"
   },
   {
@@ -345797,43 +345882,6 @@
     "_file": "library/tools/social-networks/tweet-topic-explorer.md"
   },
   {
-    "id": "tweet-tunnel",
-    "name": "Tweet Tunnel",
-    "description": "tool for quick and comfortable viewing old tweet's of someone account",
-    "url": "https://tweettunnel.com/reverse.php",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Social Media",
-      "Twitter"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweet-tunnel.md"
-  },
-  {
     "id": "tweetbeaver",
     "name": "TweetBeaver",
     "description": "Use when you want Twitter/X account tools (username↔ID, common followers, timeline dumps) — but the domain is now hijacked to an unrelated site, so treat it as down.",
@@ -345881,48 +345929,6 @@
       "tweet-beaver-friends-following"
     ],
     "_file": "library/tools/social-networks/tweetbeaver.md"
-  },
-  {
-    "id": "tweetdeck",
-    "name": "Tweetdeck",
-    "description": "OSINT tool: Tweetdeck.",
-    "url": "https://tweetdeck.twitter.com",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "username",
-      "name"
-    ],
-    "selectorsOut": [
-      "social-profile",
-      "geolocation"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "twitter"
-    ],
-    "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/social-networks/tweetdeck.md"
   },
   {
     "id": "tweeterid",
@@ -367557,57 +367563,6 @@
       "vincheck-nicb"
     ],
     "_file": "library/tools/transportation/vincheck-info.md"
-  },
-  {
-    "id": "vincheck-nicb",
-    "name": "VINCheck (NICB)",
-    "description": "Free VIN lookup for theft and salvage records.",
-    "url": "https://vincheck.info/",
-    "category": "transportation",
-    "path": [
-      "transportation"
-    ],
-    "bestFor": "Free VIN check for theft/total-loss records.",
-    "selectorsIn": [
-      "vin"
-    ],
-    "selectorsOut": [
-      "vin"
-    ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "us"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [
-      "VINCheck"
-    ],
-    "tags": [
-      "vin",
-      "vehicle",
-      "theft"
-    ],
-    "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "free-car-license-plate-lookup",
-      "vin-check-reports",
-      "vincheck-info"
-    ],
-    "_file": "library/tools/transportation/vincheck-nicb.md"
   },
   {
     "id": "vindecodr",

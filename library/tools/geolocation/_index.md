@@ -245,7 +245,7 @@ kind: group-index
 - **`python-overpy`** (medium) — Use when you have a `geolocation` or a described place feature and want to query OpenStreetMap data programmatically — returns matching map 
 - **`qgis`** (high) — Use when you need to overlay, measure and analyze geospatial layers (imagery, terrain, coordinates) for serious location analysis.
 - **`quickmaps`** (medium) — Use when you want a one-click Chrome extension to map highlighted text (an address or coordinates) without leaving the page.
-- **`r4ven`** (medium) — Tracks GPS location and captures device/IP information via a hosted link.
+- **`r4ven`** (medium) — Use when a subject will open a link you control and you want their precise `geolocation`, real `ip-address`, and `device-id` — returns those
 - **`radio-locator`** (low) — OSINT tool: Radio-Locator.
 - **`radio-sherlock`** (low) — OSINT tool: Radio-Sherlock.
 - **`radiocells-org`** (low) — OSINT tool: Radiocells.org.
