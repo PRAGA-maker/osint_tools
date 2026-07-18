@@ -98,7 +98,7 @@ kind: group-index
 - **`engadget-com`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`etusivu`** (medium) — OSINT tool: Etusivu.
 - **`eumom-ie`** (medium) — OSINT tool: eumom.ie.
-- **`eveonline-forum`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
+- **`eveonline-forum`** (medium) — Use when you have a gaming `username`/handle and want to tie it to EVE Online activity and posts — returns social-profile and associate.
 - **`everplaces`** (medium) — Website related to social networking in the form of travel and accomodations
 - **`eweek-technology-news`** (medium) — Online website that provides information about computers and IT, plus associated hardware, software, and concepts
 - **`expedia`** (medium) — Website related to social networking in the form of travel and accomodations
@@ -130,7 +130,7 @@ kind: group-index
 - **`forums-plentyoffish-com`** (medium) — OSINT tool: forums.plentyoffish.com.
 - **`fox-news-united-states`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`freeview-television-new-zealand`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`freeview-television-united-kingdom`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
+- **`freeview-television-united-kingdom`** (medium) — Use when you need to verify UK free-to-air TV channels/programmes or regional availability — a broadcast-reference site, low direct people-s
 - **`frg-org-uk`** (medium) — OSINT tool: frg.org.uk.
 - **`friendfinder`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`friendpaste`** (medium) — OSINT tool: Friendpaste.

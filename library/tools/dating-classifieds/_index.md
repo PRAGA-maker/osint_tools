@@ -95,7 +95,7 @@ kind: group-index
 - **`quikr-classified-ads-india`** (medium) — Classified advertisements-related website that provides regional services
 - **`quikr-india-classifieds`** (high) — Use when an India-based subject may buy/sell locally — pivot from name/phone/city to classified listings, a seller profile, and a contact nu
 - **`recycler-classified-ads-united-states`** (medium) — Classified advertisements-related website that provides regional services
-- **`sales-spider`** (medium) — OSINT tool: Sales Spider.
+- **`sales-spider`** (medium) — Use when you have a `name` or `employer-org` in North American SMB circles and want business-directory and profile detail — returns employer
 - **`salespider-north-america`** (medium) — Classified advertisements-related website that provides regional services
 - **`search-all-junk`** (medium) — OSINT tool: Search All Junk.
 - **`search-onlyfans-profiles`** (low) — OSINT tool: Search OnlyFans profiles.

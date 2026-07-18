@@ -723,7 +723,7 @@ kind: group-index
 - **`twitter-shadowban-test`** (medium) — OSINT tool: Twitter Shadowban Test.
 - **`twitter-trending-hashtags-and-topics`** (high) — Use when you have a `geolocation` (place/time) tied to an event and want the X/Twitter hashtags, topics and accounts trending there — return
 - **`twitter-url-scraper`** (medium) — A simple tool for analyzing twitter conversations (and other pages). Get profile pictures, user names and the text of the conversation's twe
-- **`twitter-video-downloader`** (medium) — Download videos from X (formerly Twitter) by converting tweet URLs into downloadable video links.
+- **`twitter-video-downloader`** (medium) — Use when you have a tweet/X `social-profile` URL with video and want to save the MP4 for evidence — returns the downloaded media and image f
 - **`twitter-x-advanced-search`** (medium) — Twitter/X Advanced Search is X's own tool to help users find more precise information on the platform by filtering posts according to criter
 - **`twitter-x-location-search`** (medium) — Search for geocoded tweets by their distance from some coordinates.
 - **`twitterfall`** (medium) — OSINT tool: Twitterfall.

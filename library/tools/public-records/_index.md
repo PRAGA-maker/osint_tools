@@ -192,7 +192,7 @@ kind: group-index
 - **`company-research-resources-by-country-comparably`** (medium) — OSINT tool: Company Research Resources by Country Comparably.
 - **`company-search-tool`** (medium) — OSINT tool: Company search tool.
 - **`companycheck-co-uk`** (high) — Use when you have a UK company `name` or a person's `name` and want directorships, filings and registered addresses — returns `employer-org`
-- **`comparitech-research-guide`** (medium) — Research guide from Comparitech on using deep web search engines for academic and scholarly research
+- **`comparitech-research-guide`** (medium) — Use when you need where to search academic/deep-web sources — a curated guide pointing to scholarly databases and archives (a reading resour
 - **`competeshark`** (medium) — OSINT tool: CompeteShark.
 - **`completed-access-to-information-requests`** (medium) — OSINT tool: Completed Access to Information Requests.
 - **`connectedpapers`** (medium) — A tool for gathering information about academic papers. It shows a large graph of references to other articles that are present in the text 
@@ -880,7 +880,7 @@ kind: group-index
 - **`seethroughny-pensions`** (medium) — OSINT tool: SeeThroughNY :: Pensions.
 - **`selective-service-online-registration`** (medium) — Use when you have a US man's `name`, `dob`, and SSN and want to confirm draft registration — returns registration status and number.
 - **`sellerapp-com-amazon-reverse-asin-search`** (medium) — OSINT tool: Sellerapp.com. Amazon Reverse ASIN search.
-- **`semantic-scholar`** (medium) — Searchable database of peer-reviewed research and liteature
+- **`semantic-scholar`** (medium) — Use when you have a `name` in academia and want their papers, co-authors and affiliations as a free citation graph — returns employer-org, a
 - **`serpstat`** (medium) — OSINT tool: Serpstat.
 - **`service-gov-uk`** (high) — Use when you have a `name` and want to confirm a death and find the will/grant of probate in England & Wales — returns death date, probate r
 - **`services-en-ligne`** (low) — OSINT tool: Services en ligne.

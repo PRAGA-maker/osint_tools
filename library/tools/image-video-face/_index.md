@@ -161,7 +161,7 @@ kind: group-index
 - **`icon-finder`** (high) — Use when you have a small graphic/logo/icon `image` and want to identify or source a matching stock icon — a graphic-asset marketplace, not 
 - **`identifont-com`** (low) — Use when you have an `image` of text/lettering (a logo, document, sign, or tattoo) and want to identify the exact font — returns the typefac
 - **`idgettr-com`** (medium) — Use when you have a Flickr username or profile URL and need the account's numeric NSID to anchor it for API/feed lookups.
-- **`image-color-picker`** (medium) — pick color (HEX or RGB) from image or website screenshot
+- **`image-color-picker`** (medium) — Use when you have an `image` and want exact HEX/RGB colour values from it — returns colour values as image-analysis leads.
 - **`image-google-com`** (high) — Use when you have a photo of a missing person, location, or object and want to find where else it appears online or what it depicts — return
 - **`image-raider-2`** (high) — Use when you have a photo and want Infringement Report's multi-engine reverse-image search (the current home of ImageRaider) to find every p
 - **`image-raider`** (high) — Use when you have a photo and want to run it across multiple reverse-image engines at once to find every page reusing it — returns matching 
