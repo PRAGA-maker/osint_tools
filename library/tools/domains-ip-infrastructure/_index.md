@@ -172,7 +172,7 @@ kind: group-index
 - **`drishti`** (low) — Nodejs toolkit for OSINT
 - **`dsl-reports-ping-test`** (medium) — Analysis tool that assesses the privacy vulnerabilities of your system
 - **`dumpsterdiver`** (low) — Tool can analyze big volumes of data and find some "secrets" in the files (passwords and hardcoded password, SSH, Azure and AWS keys etc)
-- **`dwhois-net-whois-service`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`dwhois-net-whois-service`** (medium) — Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, an
 - **`easy-dns-canada`** (medium) — Service provider for registering websites and domain addresses
 - **`ekhwan-uae`** (medium) — UAE based service provider for registering websites and domain addresses
 - **`elisa-net-finland`** (medium) — Finnish telecommunications and digital services website

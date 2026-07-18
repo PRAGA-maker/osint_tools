@@ -36,6 +36,8 @@ relatedTools:
 - vk-com
 - get-user-info
 - community-search
+- vk
+- vk-com-2
 aliases:
 - VK People
 - VKontakte people search

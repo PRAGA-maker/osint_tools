@@ -11,7 +11,7 @@ kind: group-index
 - **`buzzfile`** (medium) — US business lookup by name, location, or industry classification
 - **`companies-in-the-uk`** (medium) — Quick UK company lookup with simplified Companies House data
 - **`company-data-rex-eu`** (medium) — Cross-border EU company research and registry data lookup
-- **`crunchbase`** (medium) — Startup funding research, investor mapping, and executive tracking
+- **`crunchbase`** (medium) — Use when you have a company or person name and want funding history, investors, acquisitions, and named executives — returns employer-org, a
 - **`europages`** (low) — Use when you have a company `name`, product, or `employer-org` and want European B2B company listings — returns employer-org contact details
 - **`littlesis`** (medium) — Use when you have a `name`/`employer-org` of a public figure or company and want their power network — returns board seats, donations, and r
 - **`opencorporates`** (medium) — Use when you have a `name` (person or company) and want corporate records across jurisdictions — returns companies, officers/directorships, 

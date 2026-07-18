@@ -41,6 +41,11 @@ relatedTools:
 - twitter-scraper
 - reddit-scraper
 - youtube-scraper
+- apify-s-google-maps-scraper
+- dark-web-scraper
+- google-maps-scraper
+- google-search-scraper
+- twitter-url-scraper
 aliases:
 - jaroslavhejlek/instagram-scraper
 - Apify Instagram Scraper

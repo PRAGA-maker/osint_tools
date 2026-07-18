@@ -320,7 +320,7 @@ kind: group-index
 - **`webcams-abroad-live-images`** (low) — OSINT tool: Webcams Abroad live images.
 - **`webcamtaxi`** (low) — OSINT tool: Webcamtaxi.
 - **`what3words-2`** (high) — Use when you have a `geolocation`/`address` or a three-word address and want to convert between them — returns the precise 3m-square locatio
-- **`whatiswhere-com`** (medium) — OpenStreetMap based free POI (point of interest) search. 102 types of objects
+- **`whatiswhere-com`** (medium) — Use when you have an approximate geolocation and want every nearby point-of-interest of a given type — returns candidate addresses and geolo
 - **`whatiswhere`** (high) — Use when you have a `geolocation` or `address` and want to enumerate every nearby point-of-interest by type/keyword — returns `geolocation` 
 - **`wheelmap-org`** (medium) — map shows public places that are accessible and partially accessible to #wheelchair users
 - **`whereis-com-maps-of-australia`** (medium) — Use when you have an Australian `address` or place and want to map, verify, and geolocate it (coordinates, directions, nearby context) — ret

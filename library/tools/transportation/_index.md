@@ -195,7 +195,7 @@ kind: group-index
 - **`thatsthem-vin-search`** (medium) — Use when you have a `vin` and want to identify the vehicle and any linked owner records — returns vehicle make/model/year plus, where matche
 - **`the-burnsy-vehicle-osint`** (medium) — OSINT tool: The Burnsy Vehicle OSINT.
 - **`tokyo-mou`** (low) — Ship inspection/history database (PSC Database)
-- **`track-trace`** (medium) — Package tracking and supply-chain movement checks
+- **`track-trace`** (medium) — Use when you have a parcel/container/air-cargo tracking number and want to trace its route and destination — returns geolocation and deliver
 - **`transit-visualisation`** (low) — ch.sbb.netzkarte,ch.sbb.netzkarte.dark\&lang=en\&layers=strassennamen,haltekanten,haltestellen,pois,p%C3%A4rke,geops.travic.live\&x=810000\&
 - **`transtats-bts-gov`** (low) — flight schedules and data on the actual departure/arrival times of flights in the U.S. for more than 30 years (!))
 - **`uk-govt-vessel-lists`** (medium) — Maritime-related website that offers a search of a UK database of naval vessel types
@@ -205,7 +205,7 @@ kind: group-index
 - **`uscg-maritime-search-investigation-reports-united-states`** (medium) — Use when you have a vessel `name`, `employer-org` or keyword and want US Coast Guard marine-casualty investigation reports — returns documen
 - **`uscg-psix-vessel-search-united-states`** (medium) — Use when you have a US vessel `name`, official number, HIN, or call sign and want the documented vessel and its owner — returns name, addres
 - **`vehicle-documents`** (medium) — OSINT tool: Vehicle Documents.
-- **`vehicle-enquiry`** (medium) — OSINT tool: Vehicle Enquiry.
+- **`vehicle-enquiry`** (medium) — Use when you have a UK vehicle registration (number plate) and want to confirm the make, colour, and tax/MOT status of that vehicle — return
 - **`vehicle-history-reports-get-a-carfax-report`** (medium) — OSINT tool: Vehicle History Reports – Get a CARFAX Report.
 - **`venicle-number-search-toolbox`** (low) — search information about car by venicle numbers (14 different countries from one page) - #GreatBritain, #Norway, #Denmark, #Russian and othe
 - **`vin-check-and-get-vehicle-history-report`** (medium) — Use when you have a `vin` (or plate to look up a VIN) and want to decode the vehicle and screen for theft/salvage flags — returns vehicle ph

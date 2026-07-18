@@ -442,7 +442,7 @@ kind: group-index
 - **`gun-dealer-inspections-the-trace`** (medium) — OSINT tool: Gun Dealer Inspections \| The Trace.
 - **`gutneberg-project`** (medium) — Database of over 59,000 free eBooks, including Kindle eBooks
 - **`guttr`** (low) — OSINT tool: GUTTR.
-- **`hathitrust-digital-library`** (medium) — Collaboration of academic and research institutions, offering a collection of millions of digitized titles from libraries
+- **`hathitrust-digital-library`** (medium) — Use when you have a name or organization and want full-text hits inside millions of digitized books, directories, and yearbooks — returns em
 - **`hcpc-uk-org`** (high) — Use when you have a `name` of a UK health/care professional and want to confirm their registration and status — returns name, profession/reg
 - **`healthcare-education-providers`** (medium) — OSINT tool: HEALTHCARE EDUCATION PROVIDERS.
 - **`heraldsun-com-au`** (high) — Use when you have a `name` of someone who may have died in Victoria, Australia and want the death/funeral notice — returns published tribute

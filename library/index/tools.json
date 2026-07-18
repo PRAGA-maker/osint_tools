@@ -18075,39 +18075,55 @@
   },
   {
     "id": "archivebox",
-    "name": "Archivebox",
-    "description": "Create your own self-hosted web archive. Save pages from browser history, bookmarks, Pocket etc. Save html, js, css, media, pdf and other files",
+    "name": "ArchiveBox",
+    "description": "Use when you need to preserve web pages, profiles, or posts before they change or vanish — self-hosted, it captures HTML/PDF/WARC/screenshots and any metadata-exif inside saved media.",
     "url": "https://archivebox.io",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Self-hosted, court-defensible archiving of URLs (social posts, listings, articles) into multiple durable formats you fully control.",
+    "selectorsIn": [
+      "domain",
+      "social-profile"
+    ],
+    "selectorsOut": [
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "MIT-licensed and free/open-source; you supply your own hardware/hosting. No account or subscription.",
+    "opsec": "active",
+    "opsecNote": "ArchiveBox fetches each target URL directly from your infrastructure, so the capture hits the site from your IP and can appear in the site's logs. Run it behind a VPN/proxy or a dedicated egress IP when archiving a target who might notice repeated fetches.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "bestInteractionPattern": "docker",
+    "trust": "trusted",
+    "trustNote": "Mature, widely used open-source project (nonprofit-supported, source on GitHub); you can audit exactly what it does.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "archivebox.io",
+      "ArchiveBox self-hosted"
+    ],
     "tags": [
-      "Archives",
-      "Tools for working with web archives"
+      "archives-cache",
+      "web-archiving",
+      "self-hosted",
+      "evidence-preservation"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/archivebox.md"
   },
   {
@@ -35944,41 +35960,58 @@
   {
     "id": "ravelry",
     "name": "Ravelry",
-    "description": "Ravelry is a community site, an organizational tool, and a yarn & pattern database for knitters and crocheters.",
+    "description": "Use when you have a username or name and suspect the subject is a knitter/crocheter — returns a member social-profile, project photos, and location/associate leads.",
     "url": "https://www.ravelry.com",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a fiber-arts hobbyist's member profile, project history, forum activity, and stated location.",
+    "selectorsIn": [
+      "username",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "username",
+      "geolocation",
+      "image"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to join and use; a free account is required to search members and view most profiles and forum content.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Viewing profiles is passive, but you must be logged in — so use a sock-puppet account, not a personal one. Ravelry does not tell a member who viewed them, though favoriting/messaging/friending would expose your account.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Established, well-run niche community (millions of members); profile content is user-supplied, so treat stated details as self-reported.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
-    "auth": "none",
-    "api": false,
+    "auth": "account",
+    "api": true,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "ravelry.com"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
+      "communities-forums",
+      "hobby",
+      "username-search",
+      "knitting"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/ravelry.md"
   },
   {
@@ -72537,30 +72570,32 @@
   {
     "id": "dwhois-net-whois-service",
     "name": "Dwhois.net Whois Service",
-    "description": "Tool that identifies the available registration information for a website or domain name",
+    "description": "Use when you have a domain and want its registration/ownership record across many TLDs — returns registrant contacts, associated domains, and name-server infrastructure.",
     "url": "http://dwhois.net",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
+    "bestFor": "Quick, no-CAPTCHA WHOIS lookups across a wide range of gTLDs and ccTLDs.",
     "selectorsIn": [
-      "domain",
-      "ip-address"
+      "domain"
     ],
     "selectorsOut": [
       "domain",
-      "ip-address"
+      "email",
+      "name",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free web WHOIS lookup; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "WHOIS queries go through Dwhois's servers to the relevant registry; the domain owner is not notified. As with any third-party WHOIS front-end, the operator can log what you look up — use a clean browser for sensitive targets.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "Small independent WHOIS front-end; it relays registry data but is not an authoritative registrar. Confirm anything critical against the registry or an official RDAP/WHOIS source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -72569,15 +72604,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "dwhois",
+      "dwhois.net"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "domains-ip-infrastructure",
+      "whois",
+      "domain-registration"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/dwhois-net-whois-service.md"
   },
   {
@@ -131966,45 +132007,56 @@
   {
     "id": "whatiswhere-com",
     "name": "Whatiswhere.com",
-    "description": "OpenStreetMap based free POI (point of interest) search. 102 types of objects",
+    "description": "Use when you have an approximate geolocation and want every nearby point-of-interest of a given type — returns candidate addresses and geolocations to match against a photo or clue.",
     "url": "http://whatiswhere.com",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Multi-criteria POI search over global OpenStreetMap data — list all objects of a type within an area and export the results.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
-      "geolocation"
+      "geolocation",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tool; no account required for basic POI search and map browsing.",
+    "opsec": "passive",
+    "opsecNote": "Searches run against OpenStreetMap-derived data on Whatiswhere's servers; no target is contacted and nothing is queried about a person. Standard web-log exposure only — use a clean browser if the area of interest is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Independent front-end over OpenStreetMap data; POI accuracy and freshness are only as good as OSM's crowd-sourced entries.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Other"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "whatiswhere"
     ],
+    "aliases": [
+      "whatiswhere",
+      "whatiswhere.com"
+    ],
+    "tags": [
+      "geolocation",
+      "openstreetmap",
+      "poi-search",
+      "Maps, Geolocation and Transport"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/whatiswhere-com.md"
   },
   {
@@ -205427,7 +205479,9 @@
       "vk-community-search",
       "vk-com",
       "get-user-info",
-      "community-search"
+      "community-search",
+      "vk",
+      "vk-com-2"
     ],
     "aliases": [
       "VK People",
@@ -224977,7 +225031,12 @@
       "familysearch",
       "familysearch-org",
       "familysearch-2",
-      "familysearch-research-wiki"
+      "familysearch-research-wiki",
+      "alabama-deaths",
+      "familysearch-births-and-baptisms-1972-1981-australia",
+      "familysearch-deaths-and-burials-1816-1980-australia",
+      "familysearch-free-family-trees-and-genealogy-archives-familysearch-org",
+      "familysearch-guessing-a-name-variation"
     ],
     "aliases": [
       "Colorado Marriage Index 1953-2006"
@@ -227869,31 +227928,42 @@
   {
     "id": "crunchbase",
     "name": "Crunchbase",
-    "description": "Startup funding research, investor mapping, and executive tracking",
-    "url": "https://www.crunchbase.com/#/home/index",
+    "description": "Use when you have a company or person name and want funding history, investors, acquisitions, and named executives — returns employer-org, associates, and social profiles.",
+    "url": "https://www.crunchbase.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "company-profiles"
     ],
-    "bestFor": "Startup funding research, investor mapping, and executive tracking",
+    "bestFor": "Mapping a startup's funding, investors, and leadership team, and tying a person to the companies and boards they are involved with.",
     "input": "Company name, person name, or investor name",
     "output": "Funding history, investors, acquisitions, team profiles, and news",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "social-profile"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free registered account gives limited profile views and search; full financial/contact data and advanced search require a paid Pro/Enterprise plan or the free trial.",
     "opsec": "passive",
-    "opsecNote": "Queries processed through Crunchbase servers; aggregates from public and submitted data.",
+    "opsecNote": "Queries run on Crunchbase servers behind a login, so your account (email/IP) is tied to what you view; profiles you visit may surface in your activity. Targets are not notified. Use a dedicated research account, not a personal one.",
     "humanInLoop": true,
     "humanInLoopReason": [
-      "account-login"
+      "account-login",
+      "payment-wall-partial"
     ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Well-known, widely cited private-market database; data is community- and company-submitted plus editorial, so individual fields can be stale or self-reported.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "account",
     "api": true,
     "localInstall": false,
@@ -227901,11 +227971,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "crunchbase.com"
+    ],
+    "tags": [
+      "public-records",
+      "company-profiles",
+      "funding",
+      "business-intelligence"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/company-profiles/crunchbase.md"
   },
   {
@@ -238880,30 +238957,32 @@
   {
     "id": "hathitrust-digital-library",
     "name": "HathiTrust Digital Library",
-    "description": "Collaboration of academic and research institutions, offering a collection of millions of digitized titles from libraries",
+    "description": "Use when you have a name or organization and want full-text hits inside millions of digitized books, directories, and yearbooks — returns employer-org, address, and associate leads.",
     "url": "https://www.hathitrust.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Full-text searching digitized historical books, city directories, yearbooks, and institutional records for a person or organization.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "address",
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free full-text search and public-domain reading for anyone; some in-copyright volumes are search-only (\"snippet\") unless you are at a member institution.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Public catalog and search; no login needed to search or read public-domain works. Searches are not tied to a target and no one is notified. A member-institution login is only needed for extended in-copyright access.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Nonprofit collaboration of major academic and research libraries (partner of Google Books, Internet Archive); the scans are authentic digitized originals.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -238912,15 +238991,23 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "HathiTrust",
+      "hathitrust.org",
+      "Hathi Trust"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "reference-sites"
+      "public-records",
+      "digitized-books",
+      "genealogy",
+      "archives"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/hathitrust-digital-library.md"
   },
   {
@@ -249980,29 +250067,39 @@
   {
     "id": "netr-online",
     "name": "NETR Online",
-    "description": "County property records aggregation",
+    "description": "Use when you have a US address or property-owner name and want county deeds, tax-assessor records, and parcel data — returns address, associates, and ownership history.",
     "url": "https://publicrecords.netronline.com/",
     "category": "public-records",
     "path": [
       "public-records",
       "financial-tax-resources"
     ],
-    "bestFor": "County property records aggregation",
+    "bestFor": "Finding the right county assessor/recorder site and jumping straight to property, deed, and tax records for a US parcel or owner.",
     "input": "Address, county name, owner name",
     "output": "Property deeds, tax records, assessments",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "address",
+      "name"
+    ],
+    "selectorsOut": [
+      "address",
+      "associate",
+      "name"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free, ad-supported portal; an optional paid tier removes ads. The county records it links to are free to browse, though some counties charge for full document images.",
     "opsec": "passive",
-    "opsecNote": "Links to county systems; coverage varies",
+    "opsecNote": "NETR is a directory; searches happen on the destination county site. County record systems commonly log lookups and some require accepting a disclaimer. No target is notified. Use a clean browser for sensitive parcels.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-established, widely cited portal maintained by NETROnline; the actual records are first-party county/government data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -250010,11 +250107,20 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "NETROnline",
+      "NETR Public Records Online",
+      "publicrecords.netronline.com"
+    ],
+    "tags": [
+      "public-records",
+      "property",
+      "real-estate",
+      "us-counties"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/financial-tax-resources/netr-online.md"
   },
   {
@@ -281219,46 +281325,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/search-engines/eventful.md"
-  },
-  {
-    "id": "exalead-search-engine",
-    "name": "Exalead Search Engine",
-    "description": "One of the top ten surface web search engines covering worldwide results",
-    "url": "https://www.exalead.com/search",
-    "category": "search-engines",
-    "path": [
-      "search-engines"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "search-engines"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/search-engines/exalead-search-engine.md"
   },
   {
     "id": "excite",
@@ -327192,7 +327258,12 @@
       "facebook-latest-comments-scraper",
       "twitter-scraper",
       "reddit-scraper",
-      "youtube-scraper"
+      "youtube-scraper",
+      "apify-s-google-maps-scraper",
+      "dark-web-scraper",
+      "google-maps-scraper",
+      "google-search-scraper",
+      "twitter-url-scraper"
     ],
     "aliases": [
       "jaroslavhejlek/instagram-scraper",
@@ -367641,28 +367712,34 @@
   {
     "id": "track-trace",
     "name": "Track-Trace",
-    "description": "Package tracking and supply-chain movement checks",
+    "description": "Use when you have a parcel/container/air-cargo tracking number and want to trace its route and destination — returns geolocation and delivery address hints.",
     "url": "https://www.track-trace.com/",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "Package tracking and supply-chain movement checks",
+    "bestFor": "One-stop lookup that routes any tracking number to the right carrier's live tracking page (parcels, post/EMS, containers, air cargo, bill of lading).",
     "input": "Tracking number and optional carrier selection",
     "output": "Shipment milestones, current location, route progress, and delivery status",
     "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsOut": [
+      "geolocation",
+      "address"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free directory service; no account or payment required. It links out to each carrier's own free tracking portal.",
     "opsec": "passive",
-    "opsecNote": "Reads carrier-provided tracking records via public lookup interfaces.",
+    "opsecNote": "Reading a tracking record is passive on Track-Trace itself, but the carrier page it forwards you to may log the lookup. Nothing is sent to the parcel's sender or recipient. Use a clean browser if the tracking number is sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running independent aggregator that only forwards to official carrier tracking pages; the underlying data quality is the carrier's, not Track-Trace's.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -367670,11 +367747,18 @@
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "track-trace.com",
+      "Track Trace parcel"
+    ],
+    "tags": [
+      "transportation",
+      "package-tracking",
+      "logistics"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/track-trace.md"
   },
   {
@@ -368068,35 +368152,54 @@
   {
     "id": "vehicle-enquiry",
     "name": "Vehicle Enquiry",
-    "description": "OSINT tool: Vehicle Enquiry.",
+    "description": "Use when you have a UK vehicle registration (number plate) and want to confirm the make, colour, and tax/MOT status of that vehicle — returns vehicle attributes that corroborate an identity.",
     "url": "https://vehicleenquiry.service.gov.uk/?locale=en",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Confirming basic factory details and tax/MOT status of a UK-registered vehicle from its plate.",
+    "selectorsIn": [
+      "vehicle-plate"
+    ],
+    "selectorsOut": [
+      "physical-description"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official GOV.UK / DVLA service; no account or payment needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "An anonymous public GOV.UK lookup. No login, and the registered keeper is never notified. DVLA does not return owner name or address here, so nothing links the query back to a person on their side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "First-party UK Government (DVLA) service; the data is authoritative for UK-registered vehicles.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "uk"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "DVLA vehicle enquiry",
+      "Check if a vehicle is taxed",
+      "vehicleenquiry.service.gov.uk"
+    ],
+    "tags": [
+      "transportation",
+      "vehicle",
+      "uk",
+      "dvla"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/vehicle-enquiry.md"
   },
   {

@@ -301,7 +301,7 @@ kind: group-index
 - **`r-opendirectories`** (medium) — Reddit directory of pictures, videos, music, software, and other files.
 - **`radio-free-europe`** (medium) — News broadcaster reporting news in 22 countries where a free press is banned by the government; inclludes uncensored news and discussion
 - **`radion-net`** (low) — view list of all radiostations near your location and search radiostations by keywords
-- **`ravelry`** (medium) — Ravelry is a community site, an organizational tool, and a yarn & pattern database for knitters and crocheters.
+- **`ravelry`** (medium) — Use when you have a username or name and suspect the subject is a knitter/crocheter — returns a member social-profile, project photos, and l
 - **`rebel-news`** (low) — Use when you have a `name` tied to Canadian right-wing politics/activism and want to search a partisan outlet's coverage for mentions, foota
 - **`reddit-askmeanything`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to general queries
 - **`reddit-insight`** (low) — OSINT tool: Reddit Insight.

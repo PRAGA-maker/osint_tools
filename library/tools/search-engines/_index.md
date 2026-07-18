@@ -243,7 +243,6 @@ kind: group-index
 - **`european-search-engines-directories-and-lists`** (medium) — List of European search engines, directories, and lists
 - **`european-trademark-search`** (medium) — Search tool for trademarks filed in Europe
 - **`eventful`** (medium) — Movie theater and event search engine
-- **`exalead-search-engine`** (medium) — One of the top ten surface web search engines covering worldwide results
 - **`excite-search-engine`** (medium) — Surface web search engine covering worldwide results including news and information on topics such as tech, finance, sports, and entertainme
 - **`excite`** (medium) — OSINT tool: Excite.
 - **`exploitalert`** (low) — One of the largest searchable databases of information on exploits (from October 2005 to October 2022). Updated daily.

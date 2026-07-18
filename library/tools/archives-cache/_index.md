@@ -23,7 +23,7 @@ kind: group-index
 - **`archive-page-chrome-google-com`** (medium) — OSINT tool: archive page (chrome.google.com).
 - **`archive-today`** (low) — Archive any webpage, including Facebook and search for archived pages.
 - **`archive-vn`** (high) — Use when you have a `domain` or URL and want an on-demand, permanent snapshot of a page (including JS-heavy or short-lived content) — return
-- **`archivebox`** (medium) — Create your own self-hosted web archive. Save pages from browser history, bookmarks, Pocket etc. Save html, js, css, media, pdf and other fi
+- **`archivebox`** (medium) — Use when you need to preserve web pages, profiles, or posts before they change or vanish — self-hosted, it captures HTML/PDF/WARC/screenshot
 - **`arquivo-pt`** (medium) — Use when you have a `domain`/URL or a `name` and want historical snapshots of Portuguese-web pages back to 1996 — returns archived page vers
 - **`auto-archiver`** (low) — Bellingcat's tool to automatically archive social media posts, videos, and images. Free and Open-Source.
 - **`awasu`** (low) — OSINT tool: Awasu.
