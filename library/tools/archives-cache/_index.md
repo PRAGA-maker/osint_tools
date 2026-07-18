@@ -53,11 +53,11 @@ kind: group-index
 - **`fetchrss`** (low) — OSINT tool: FetchRSS.
 - **`firecrawl-dev`** (low) — Use when you have a `domain`/URL and want its content as clean structured data — crawls and converts pages to markdown/JSON for archiving or
 - **`followthatpage`** (low) — OSINT tool: FollowThatPage.
-- **`gau`** (medium) — Simple #golang tool to fetch all known website URLs from: WayBackMachine, AlienVault's Open Threat Exchange, Common Crawl, URLScan
+- **`gau`** (medium) — Use when you have a `domain` and want every URL ever seen for it across web archives — returns a bulk list of historical URLs (`document-id`
 - **`gh-archive`** (low) — Public dataset of GitHub activity events.
 - **`grab-site`** (medium) — Af you need to make a Warc archive out of a huge site with a lot of different content, then it is better to use this #python script with doz
 - **`har2warc`** (low) — Use when you have a browser-captured HAR of a `domain` and want a preservable web archive — returns a standards-compliant WARC file of the c
-- **`index-commoncrawl-org`** (medium) — OSINT tool: index.commoncrawl.org.
+- **`index-commoncrawl-org`** (medium) — Use when you have a `domain` and want every URL Common Crawl captured for it — returns archived URLs (`document-id`s) with pointers to the s
 - **`industrydocuments-ucsf-edu`** (medium) — digital archive of documents created by industries which influence public health (tobacco, chemical, drug, fossil fuel)
 - **`infominder`** (low) — OSINT tool: InfoMinder.
 - **`kiwix-org`** (low) — Use when you need offline, censorship-proof access to a whole website/wiki (a `domain`) — returns a locally-served snapshot whose articles y
@@ -92,7 +92,6 @@ kind: group-index
 - **`send-to-internet-archive-addons-mozilla-org`** (medium) — OSINT tool: send to internet archive (addons.mozilla.org).
 - **`send-to-internet-archive-chrome-google-com`** (medium) — OSINT tool: send to internet archive (chrome.google.com).
 - **`sourceforge-net`** (medium) — OSINT tool: sourceforge.net.
-- **`stored-website`** (medium) — OSINT tool: stored.website.
 - **`swap-stanford-edu`** (medium) — OSINT tool: Swap.stanford.edu.
 - **`talkwalker`** (low) — OSINT tool: Talkwalker.
 - **`the-old-reader`** (low) — OSINT tool: The Old Reader.

@@ -692,7 +692,7 @@ kind: group-index
 - **`searxng-baresearch-org`** (low) — Privacy metasearch aggregator (SearXNG instance).
 - **`searxng`** (low) — OSINT tool: SearXNG.
 - **`secret-search-engine-labs`** (medium) — Use when you have a `name`, `username` or phrase and want results from small/independent sites that mainstream engines bury — returns social
-- **`seek-job-search-engine-new-zealand`** (medium) — Website that offers job search services across the country at the national and province/state level
+- **`seek-job-search-engine-new-zealand`** (medium) — Use when you have a `name` or `employer-org` and want a subject's NZ job/employment footprint — returns employer, role, and location leads f
 - **`sensebot`** (medium) — Provides a text summary for your search query instead of a collection of links to Web pages
 - **`seosly-com-2`** (high) — Use when you're dorking Bing for a `name` and want the full operator syntax to narrow results — a reference cheat-sheet of Bing search opera
 - **`seosly-com`** (medium) — Use when you have a `name` or other selector and want to build precise Google dork queries to find it — returns a reference of 50+ working s
@@ -787,7 +787,6 @@ kind: group-index
 - **`us-department-of-housing-and-urban-development`** (medium) — US Department of Housing and Urban Development - includes research, publications and data sets
 - **`us-dod-function-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level
 - **`us-government-printing-office`** (medium) — US Government Printing Offices searchable database of publications, including various regulations
-- **`us-location-information`** (medium) — Site providing national income and poverty estimators, as well as other demographics in the US
 - **`us-securities-and-exchange-commission`** (medium) — Use when you have a company or person `name` and want SEC filings naming them — returns officers/insiders, addresses, ownership stakes, and 
 - **`usa-gov`** (medium) — The US governments official web portal
 - **`usarmy-occupation-codes-united-states`** (medium) — Website that identifies the occupation classification code across the country at the national level

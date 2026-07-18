@@ -134,7 +134,7 @@ kind: group-index
 - **`gettechmedia`** (medium) — Online articles, news, and reviews related to technology, computers, gadgets, and future trends
 - **`gettr-search`** (low) — Structured Gettr user search.
 - **`ghost`** (low) — OSINT tool: Ghost.
-- **`github-gist`** (medium) — OSINT tool: GitHub gist.
+- **`github-gist`** (medium) — Use when you have a `username`, `email`, or keyword and want code/text snippets a person shared — returns gists that can leak `email`, crede
 - **`gizmag-technology-news`** (medium) — Use when you have a `name` in tech/science/startups and want product or coverage mentions — returns social-profile and employer-org.
 - **`gizmodo-com`** (medium) — Online articles, news, and reviews related to science, business, computers, gadgets, technology, and future trends
 - **`global-television-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
@@ -283,7 +283,7 @@ kind: group-index
 - **`proboards`** (low) — OSINT tool: ProBoards.
 - **`pullpush-reddit-archive-api`** (high) — Use when you have a Reddit `username` (or keyword/subreddit) and want their full comment/post history including deleted/removed content — re
 - **`quora`** (low) — OSINT tool: Quora.
-- **`r-opendirectories`** (medium) — Reddit directory of pictures, videos, music, software, and other files.
+- **`r-opendirectories`** (low) — Use when you want to find publicly-exposed open web directories (files, media, dumps) — returns links to open directories others have discov
 - **`radio-free-europe`** (medium) — News broadcaster reporting news in 22 countries where a free press is banned by the government; inclludes uncensored news and discussion
 - **`radion-net`** (low) — view list of all radiostations near your location and search radiostations by keywords
 - **`ravelry`** (medium) — Use when you have a username or name and suspect the subject is a knitter/crocheter — returns a member social-profile, project photos, and l

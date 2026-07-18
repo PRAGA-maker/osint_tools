@@ -299,7 +299,6 @@ kind: group-index
 - **`search-by-image`** (high) — Use when you have an `image` and want to reverse-search it across many engines at once from a right-click menu — returns matching image copi
 - **`search-fotki-com`** (high) — Use when you have a `username` or `name` and want to find a profile on Fotki, a long-running photo-sharing community — returns social-profil
 - **`search4faces`** (high) — Use when you have a `face`/`image` and want to find matching profiles on VK, Odnoklassniki, TikTok or Clubhouse — returns links to social pr
-- **`searchbyimage-app`** (medium) — search clothes in online shops
 - **`second-life`** (high) — Use when you have a `username` (Second Life resident name) or `name` and want to find a subject's virtual-world avatar profile — returns soc
 - **`see-it-search-it`** (high) — Use when you have an `image` (a face, object, place, or logo) and want to find matching or similar images across the web via Bing's reverse/
 - **`seintpl-github-io`** (high) — Use when you have a YouTube video URL and want its data and thumbnails — returns the video's metadata (title, channel, dates) and downloadab

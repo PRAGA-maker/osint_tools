@@ -43,7 +43,6 @@ kind: group-index
 - **`create-spoof-fake-whatsapp-facebook-twitter-skype-messenger`** (high) — Use when a WhatsApp/Facebook/Twitter/Skype chat screenshot is offered as evidence and you need to gauge how forgeable it is — this GeekPrank
 - **`creationdatebot`** (medium) — Use when you have a Telegram `username`/account and want to estimate when it was created — returns an approximate account age to judge if it
 - **`datxpert`** (medium) — Use when you have an email, username, or domain and want to check whether it appears in leaked ULP (URL:login:password) / stealer-log databa
-- **`debirdify`** (medium) — This tool automatically finds Fediverse/Mastodon accounts of people you follow on Twitter
 - **`disboard-org`** (medium) — Use when you have a keyword, community name, or `username` and want to find public Discord servers around it — returns listed servers with i
 - **`discadia-com`** (high) — Use when you have a community `name`/keyword or `username` and want to find the public Discord server(s) tied to it — returns `social-profil
 - **`discord-com-2`** (high) — Use when you have a `username` on Discord and need to know what data Discord retains and how law-enforcement/legal process can obtain it — r

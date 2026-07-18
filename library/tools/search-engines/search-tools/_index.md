@@ -11,7 +11,7 @@ kind: group-index
 - **`dorksearch-netlify-app`** (medium) — Fast, simple Google dork query generation
 - **`google-alerts`** (medium) — Use when you have a `name`, `username`, `email`, `phone`, or `domain` and want ongoing notification whenever new pages mentioning it are ind
 - **`google-custom-search-engine`** (medium) — OSINT tool: Google Custom Search Engine.
-- **`pagodo-passive-google-dork`** (medium) — Automated passive Google dork enumeration from GHDB
+- **`pagodo-passive-google-dork`** (medium) — Use when you have a `domain` and want to automate Google Hacking Database dorks against it — returns exposed/sensitive URLs (`document-id`s)
 - **`scanner-inurlbr`** (medium) — OSINT tool: Scanner-inurlbr.
 - **`searchdiggity`** (medium) — OSINT tool: SearchDiggity.
 - **`wayparam`** (low) — Use when you have a `domain` and want its historical URLs and parameterized endpoints from the Wayback Machine — returns domain endpoints fo

@@ -415,7 +415,7 @@ kind: group-index
 - **`osint-combine-reddit-post-analyzer`** (medium) — Analyze Reddit posts for OSINT signals.
 - **`osint-combine-tiktok-quick-search`** (high) — Use when you have a `username`, `name`, or keyword/hashtag and want to jump straight into the right TikTok search views — returns social-pro
 - **`osint-github-com-2`** (high) — Use when you are on a TikTok video page and want its embedded metadata, or need a quick Yandex reverse-image jump — returns extracted page m
-- **`osint-steam`** (medium) — OSINT tool: OSINT-Steam.
+- **`osint-steam`** (medium) — Use when you have a Steam `username`/SteamID and want the account's social graph and clues — returns close friends, a probable `geolocation`
 - **`osint-tactical`** (high) — Use when you have a `username`, Mastodon handle, or domain and want purpose-built recon tools — returns the developer's OSINT toolset (usern
 - **`osintcombine-com-2`** (high) — Use when you have a `username`/`name` and need a method for finding and investigating a subject on Mastodon/the Fediverse — a reputable how-
 - **`osintcombine-com`** (high) — Use when you need a vetted free OSINT tool or methodology guide (alt-tech search, TikTok/username checkers, maps, platform how-tos like Blue

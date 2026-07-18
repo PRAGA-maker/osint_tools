@@ -349,7 +349,6 @@ kind: group-index
 - **`nominet-uk`** (medium) — Use when you have a `.uk` `domain` and want the authoritative registry WHOIS — registrar, registration/expiry dates and (for orgs) registran
 - **`nperf-com-map-5g`** (low) — 5G coverage #map worldwide
 - **`nperf-com-map`** (low) — view the coverage area of different #cellular operators in different countries
-- **`online-domain-tools-blacklist-checker`** (medium) — Search tool that identifies if an IP addressis on an anti-spam blacklist
 - **`ookla-speedtest`** (medium) — Analysis tool that assesses the speed of your Internet connection
 - **`ooni-explorer`** (low) — World biggest open data resource on internet censorship around the world. 1.6+ million measurements in 241 countries since 2012.
 - **`open-host-new-zealand`** (medium) — New Zealand based service provider for registering websites and domain addresses
@@ -533,7 +532,7 @@ kind: group-index
 - **`whois-domain-search-tool`** (low) — A tool that allows you to query whois data for a site name in several domain zones at once.
 - **`whois-freaks`** (low) — API which allows you to search Whois-database (430M+ domains since 1986) by keyword, company name or owner name
 - **`whois-history`** (low) — OSINT tool: Whois History.
-- **`whois-lookup-service`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`whois-lookup-service`** (medium) — Use when you have a `domain` and want its public registration record — returns registrant/registrar details, dates, and nameservers (or a pr
 - **`whois-request`** (medium) — Use when you have a `domain` or `ip-address` and want its WHOIS registration — returns registrant/contact details, registrar, dates and name
 - **`whois-search-com`** (medium) — Use when you have a `domain` or `ip-address` and want its registration record — returns registrant/contact details, registrar, creation/expi
 - **`whois-search`** (low) — OSINT tool: Whois Search.
