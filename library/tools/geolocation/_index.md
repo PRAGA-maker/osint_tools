@@ -343,7 +343,7 @@ kind: group-index
 - **`worldwebcams`** (medium) — OSINT tool: WorldWebcams.
 - **`worldwide-detention-centres-map`** (medium) — This service will help in investigations related to illegal emigration, human trafficking, missing refugees and tourists.
 - **`worldwide-osint-tools-map`** (medium) — Use when you need to discover country-specific OSINT resources (registries, directories, search sites) for the country where a case is locat
-- **`wunderground`** (medium) — weather history data
+- **`wunderground`** (medium) — Use when you have a `geolocation` and a date and want the weather that day — returns historical temperature, precipitation, wind, and condit
 - **`yahoo-maps`** (low) — Use only as a legacy fallback map; the standalone Yahoo Maps product was discontinued and the URL now redirects to a partner/search experien
 - **`yandex-maps`** (high) — Use when you have a `geolocation`/`address` (especially in Russia/CIS) and want imagery, panoramas and POI context western maps lack — retur
 - **`yandexmaps`** (high) — Use when you have an `address` or coordinates (especially Russia/Eastern Europe/Central Asia) and want maps, satellite, and street panoramas

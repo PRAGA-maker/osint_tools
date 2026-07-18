@@ -413,7 +413,7 @@ kind: group-index
 - **`justice-directory`** (medium) — Exhaustive list of law enforcement agency websites
 - **`kagi-search`** (low) — OSINT tool: Kagi Search.
 - **`kartoo-visual-meta-search-engine`** (medium) — Meta-search engine that shows results from two or more other search engines (I.e. Google, Bing, Yahoo, etc.)
-- **`kelkoo-shopping-search-engine-europe`** (medium) — Website that offers a search engine for locating fashion items, manufactured products and other online shopping items
+- **`kelkoo-shopping-search-engine-europe`** (low) — Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what pri
 - **`keys-openpgp-org`** (medium) — OSINT tool: keys.openpgp.org.
 - **`keyword-discovery`** (low) — OSINT tool: Keyword Discovery.
 - **`keyword-spy`** (low) — OSINT tool: Keyword Spy.
@@ -674,7 +674,7 @@ kind: group-index
 - **`search-22`** (low) — access to 10+ ftp search tools from one page
 - **`search-all`** (medium) — Chrome extension allowing you to select a search engine of your choice; quickly switch between search engines
 - **`search-atlas`** (medium) — OSINT tool: Search Atlas.
-- **`search-by-filetype`** (medium) — OSINT tool: Search by FileType.
+- **`search-by-filetype`** (medium) — Use when you have a `name`, `employer-org`, or keyword and want documents — returns indexed files (PDF/DOC/XLS/PPT) matching the term via a 
 - **`search-ch`** (high) — Use when you have a `name` in Switzerland and want their phone/address — returns `phone`, `address`, and business listings from the Swiss na
 - **`search-com`** (low) — OSINT tool: Search.com.
 - **`search-commands`** (low) — Google Chrome extension provides a Swiss-knife style commands tool inside your browser's address bar to enhance your search experience

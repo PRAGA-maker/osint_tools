@@ -263,7 +263,7 @@ kind: group-index
 - **`passion-com`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
 - **`paste-cash`** (medium) — OSINT tool: Paste.Cash.
 - **`paste-in-ua`** (medium) — OSINT tool: paste.in.ua.
-- **`paste-kde`** (medium) — OSINT tool: paste.kde.
+- **`paste-kde`** (low) — Use when you're hunting leaked code/text or a `username`'s public snippets — returns public paste/snippet content hosted on KDE's infrastruc
 - **`paste-monster`** (medium) — OSINT tool: Paste.Monster.
 - **`paste-sh`** (medium) — OSINT tool: paste.sh.
 - **`paste-ubuntu`** (medium) — OSINT tool: paste.ubuntu.
@@ -311,7 +311,7 @@ kind: group-index
 - **`saafe-info`** (medium) — Use when a subject is connected to UK/Ireland sex work and you want a peer-support forum whose "Warnings & Wasters" board names dangerous cl
 - **`safenote`** (medium) — OSINT tool: SafeNote.
 - **`sagadating-co-uk`** (medium) — Website related to social networking in the form of dating, matchmaking and adult relationships
-- **`sansar`** (medium) — Online gaming and virutual reality social community
+- **`sansar`** (low) — Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent
 - **`sbs-television-australia`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
 - **`sciencedaily-com`** (medium) — Searchable website for the latest news on research, specifically focusing on science and health research
 - **`scrt-link`** (medium) — OSINT tool: scrt.link.

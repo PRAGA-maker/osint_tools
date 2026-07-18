@@ -445,7 +445,7 @@ kind: group-index
 - **`highly-cited-researchers`** (medium) — List of highly cited researchers, including search by name and affiliation
 - **`his-piers`** (low) — OSINT tool: HIS Piers.
 - **`hmcpl-obituary-index`** (high) — Use when you have a `name` of someone likely connected to the Huntsville/Madison County, Alabama area and want to find their obituary — retu
-- **`home-comptroller-texas-gov`** (medium) — OSINT tool: Home Comptroller.Texas.Gov.
+- **`home-comptroller-texas-gov`** (medium) — Use when you have a `name` or business and want Texas state financial records — returns entity/franchise-tax status, sales-tax permits, and 
 - **`homefacts-us`** (medium) — Use when you have a US `address` and want neighborhood/property intelligence — returns property details plus nearby registered offenders, ha
 - **`houseprices-io`** (high) — Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns
 - **`how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have`** (medium) — OSINT tool: How many untested rape kits does your city police department or county sheriff's office have?.
@@ -969,7 +969,7 @@ kind: group-index
 - **`traderegistry-ae`** (high) — Use when you have a UAE `employer-org`, `name`, or `address` and want official-style trade-register company reports — returns `employer-org`
 - **`trading-economics`** (low) — OSINT tool: Trading Economics.
 - **`transparency-org-corruption-perception-index`** (low) — OSINT tool: Transparency.org Corruption Perception Index.
-- **`trellis`** (medium) — State-court records and analytics search.
+- **`trellis`** (medium) — Use when you have a `name` and want US state-court litigation — returns cases a person/entity is party to, with docket, court, and analytics
 - **`trinka`** (medium) — A partly free online tool to help you prepare a research paper for publication: AI Grammar; Checker (made especially for scientific papers);
 - **`trouver-une-d-cision`** (medium) — OSINT tool: Trouver une décision.
 - **`trulia-real-estate-listings-homes-for-sale-housing-data`** (medium) — Use when you have a US `address` and want property details, listing/sale history and neighborhood data — returns `address`-level property re

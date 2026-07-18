@@ -23401,38 +23401,52 @@
   },
   {
     "id": "world-cat",
-    "name": "World Cat",
-    "description": "Enter the name of the paper book and find out which public libraries near you can find it. Works for the USA, Australia and most European countries.",
+    "name": "WorldCat",
+    "description": "Use when you have a book/publication title or author `name` and want to locate it — returns which libraries hold it and full bibliographic details.",
     "url": "https://worldcat.org/",
     "category": "archives-cache",
     "path": [
       "archives-cache"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Finding which libraries hold a specific book/publication, and confirming an author's published works and editions.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "geolocation"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public catalog search operated by OCLC; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You search a global library catalog — no subject is contacted and nothing is signalled. Purely bibliographic.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trust": "trusted",
+    "trustNote": "Operated by OCLC, the global library cooperative; authoritative bibliographic and holdings data aggregated from member libraries.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "WorldCat",
+      "worldcat.org",
+      "OCLC WorldCat"
+    ],
     "tags": [
-      "Archives of documents/newspapers"
+      "library",
+      "books",
+      "bibliographic"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/archives-cache/world-cat.md"
   },
   {
@@ -34494,38 +34508,52 @@
   },
   {
     "id": "paste-kde",
-    "name": "paste.kde",
-    "description": "OSINT tool: paste.kde.",
-    "url": "https://Paste.kde.org",
+    "name": "KDE Paste / Snippets",
+    "description": "Use when you're hunting leaked code/text or a `username`'s public snippets — returns public paste/snippet content hosted on KDE's infrastructure.",
+    "url": "https://invent.kde.org/explore/snippets",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding public code/text snippets on KDE's paste/snippet service (where leaked data or a subject's code may sit).",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "password"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free; part of KDE's open GitLab (invent.kde.org). The old paste.kde.org now redirects to KDE's GitLab snippets.",
+    "opsec": "passive",
+    "opsecNote": "Browsing public snippets touches KDE's servers, not any target — nothing is signalled. Anything you find is public; if it contains real credentials, note the exposure, don't use them.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "KDE's genuine paste/snippet host; content is user-posted, so treat found snippets as unverified until corroborated.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "paste.kde.org",
+      "KDE snippets",
+      "invent.kde.org snippets"
+    ],
     "tags": [
-      "pastebins"
+      "pastebin",
+      "code",
+      "leaks"
     ],
     "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/paste-kde.md"
   },
   {
@@ -36653,41 +36681,53 @@
   {
     "id": "sansar",
     "name": "Sansar",
-    "description": "Online gaming and virutual reality social community",
+    "description": "Use when you have a `username` tied to social VR and want their Sansar presence — returns the avatar/profile and events/worlds they frequent.",
     "url": "https://www.sansar.com/",
     "category": "communities-forums",
     "path": [
       "communities-forums"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding a subject's persona in the Sansar social-VR world — avatar, profile, and community activity.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "associate"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "costNote": "Free to download, sign up, and use; an in-world store sells optional avatar items.",
+    "opsec": "active",
+    "opsecNote": "Investigating inside a social-VR world means entering it — your avatar is visible to others, and interacting can reveal your presence to the subject. Use a sock-puppet Sansar account, don't voice-chat or engage, and observe rather than participate.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
+    "bestInteractionPattern": "desktop-app",
+    "trust": "community",
+    "trustNote": "Sansar is the genuine platform; profiles are self-created personas, so any real-world identity link is inferential and must be corroborated.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
-    "auth": "none",
+    "auth": "account",
     "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "localInstall": true,
+    "registration": true,
+    "aliases": [
+      "Sansar VR",
+      "sansar.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "online-communities-blogs"
+      "virtual-reality",
+      "gaming"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/communities-forums/sansar.md"
   },
   {
@@ -77860,31 +77900,28 @@
   {
     "id": "ip-chicken",
     "name": "IP Chicken",
-    "description": "Search tool that identifies the IP address you are currently using",
-    "url": "http://www.ipchicken.com",
+    "description": "Use when you need to confirm your own exit `ip-address` — returns the public IP and hostname your traffic currently presents.",
+    "url": "https://www.ipchicken.com",
     "category": "domains-ip-infrastructure",
     "path": [
       "domains-ip-infrastructure"
     ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
+    "bestFor": "A quick \"what is my public IP\" self-check to verify your VPN/proxy exit before an operation.",
+    "selectorsIn": [],
     "selectorsOut": [
-      "domain",
       "ip-address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free, no account.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "This is an OpSec self-check, not a lookup on any target — it reports YOUR current public IP/hostname. Use it to confirm your VPN/proxy/Tor exit is what you expect before doing attributable work; the site sees your IP (that's the point).",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A long-standing simple \"what's my IP\" page; it accurately reports the requesting IP, which is trivially verifiable.",
+    "missingPersonsRelevance": "low",
     "coverage": [
       "global"
     ],
@@ -77892,15 +77929,19 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ipchicken.com",
+      "what is my IP"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "whois-ip-lookups-website-analysis"
+      "opsec",
+      "ip-check"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/domains-ip-infrastructure/ip-chicken.md"
   },
   {
@@ -132635,43 +132676,50 @@
   },
   {
     "id": "wunderground",
-    "name": "Wunderground",
-    "description": "weather history data",
+    "name": "Weather Underground (History)",
+    "description": "Use when you have a `geolocation` and a date and want the weather that day — returns historical temperature, precipitation, wind, and conditions for that place/time.",
     "url": "https://www.wunderground.com/history",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Retrieving historical weather for a specific location and date to corroborate or challenge a timeline/photo.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to browse historical daily observations by station; bulk/API access to historical data is paid.",
+    "opsec": "passive",
+    "opsecNote": "You query a weather archive by place and date — no subject is involved and nothing is signalled. Purely environmental data.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Observations come from official and personal weather stations aggregated by Weather Underground (IBM); station data is reliable, though the nearest station may be some distance from your exact point.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Wunderground",
+      "Weather Underground history"
+    ],
     "tags": [
-      "Maps, Geolocation and Transport",
-      "Nature"
+      "weather",
+      "geolocation",
+      "timeline"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/wunderground.md"
   },
   {
@@ -238806,36 +238854,53 @@
   },
   {
     "id": "home-comptroller-texas-gov",
-    "name": "Home Comptroller.Texas.Gov",
-    "description": "OSINT tool: Home Comptroller.Texas.Gov.",
+    "name": "Texas Comptroller",
+    "description": "Use when you have a `name` or business and want Texas state financial records — returns entity/franchise-tax status, sales-tax permits, and unclaimed property.",
     "url": "https://comptroller.texas.gov/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Searching Texas Comptroller records — business franchise-tax/entity status, sales-tax permit holders, and unclaimed-property claims by name.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "address"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free official Texas state government search tools; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You query official Texas state databases, not the subject — nothing is signalled. Standard government-site logging applies.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by the Texas Comptroller of Public Accounts; authoritative for Texas tax-entity status and state unclaimed property.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "comptroller.texas.gov",
+      "Texas Comptroller of Public Accounts"
+    ],
+    "tags": [
+      "texas",
+      "public-records",
+      "business",
+      "unclaimed-property"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/home-comptroller-texas-gov.md"
   },
   {
@@ -265990,46 +266055,54 @@
   {
     "id": "trellis",
     "name": "Trellis",
-    "description": "State-court records and analytics search.",
+    "description": "Use when you have a `name` and want US state-court litigation — returns cases a person/entity is party to, with docket, court, and analytics.",
     "url": "https://trellis.law/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "State trial-court records search.",
+    "bestFor": "Searching US state trial-court records by party name to find lawsuits, dockets, and judges.",
     "selectorsIn": [
-      "name"
+      "name",
+      "employer-org"
     ],
     "selectorsOut": [
-      "name",
-      "document-id"
+      "associate",
+      "address"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
+    "costNote": "Free search surfaces case existence and basic docket info; full documents, alerts, and analytics require a paid subscription.",
     "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "You search a court-records aggregator, not the subject — no party is notified. Registering exposes an email to a commercial service; use a sock-puppet account for sensitive research.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A commercial aggregator of state-court records (a layer many state courts don't expose well); case data mirrors official dockets, but coverage varies by state/county and lags the source.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "us"
     ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
-    "registration": true,
-    "aliases": [],
+    "registration": false,
+    "aliases": [
+      "trellis.law",
+      "Trellis Research"
+    ],
     "tags": [
-      "court",
-      "state",
-      "records"
+      "court-records",
+      "litigation",
+      "public-records",
+      "us"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/trellis.md"
   },
   {
@@ -274808,45 +274881,58 @@
   },
   {
     "id": "bielefeld-academic-search-engine",
-    "name": "Bielefeld Academic Search Engine",
-    "description": "Broad academic literature search across open-access and institutional repositories",
+    "name": "BASE (Bielefeld Academic Search Engine)",
+    "description": "Use when you have a researcher `name` or topic and want open-access scholarship across repositories — returns papers, theses, and datasets with affiliations.",
     "url": "https://www.base-search.net/Search/Advanced",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "Broad academic literature search across open-access and institutional repositories",
-    "input": "Author, title, keyword, DOI, or subject",
-    "output": "Academic papers, theses, and research documents with metadata and links",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Broad multidisciplinary search across open-access and institutional repositories to find an author's work.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free academic search engine operated by Bielefeld University Library; no account required.",
     "opsec": "passive",
-    "opsecNote": "Searches BASE's aggregated index; no direct contact with source institutions.",
+    "opsecNote": "You search a repository index — no subject is contacted and nothing is signalled. Standard web logging; a clean session suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by Bielefeld University Library, indexing tens of thousands of vetted repositories; authoritative as an aggregator, with quality tracking the source repositories.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "BASE",
+      "base-search.net",
+      "Bielefeld Academic Search Engine"
+    ],
+    "tags": [
+      "academic",
+      "open-access",
+      "repositories",
+      "literature"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "relatedTools": [
       "base",
       "base-academic-search-engine"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/search-engines/academic-publication-search/bielefeld-academic-search-engine.md"
   },
   {
@@ -289236,42 +289322,51 @@
   },
   {
     "id": "kelkoo-shopping-search-engine-europe",
-    "name": "Kelkoo Shopping Search Engine (Europe)",
-    "description": "Website that offers a search engine for locating fashion items, manufactured products and other online shopping items",
-    "url": "http://www.kelkoo.com",
+    "name": "Kelkoo (Shopping Search, Europe)",
+    "description": "Use when you have a product or seller and want European retail listings — returns where an item is sold, by which merchants, and at what price.",
+    "url": "https://www.kelkoo.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Finding which European merchants sell a given product, and comparing sellers/prices for a listing.",
+    "selectorsIn": [
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free shopping comparison engine; funded by merchant affiliate links.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search a product-comparison index — no subject is involved and nothing is signalled. A retail tool with only incidental OSINT use.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
+    "trust": "community",
+    "trustNote": "A commercial shopping-comparison engine; listings are merchant-supplied affiliate feeds, accurate for products but not an investigative data source.",
+    "missingPersonsRelevance": "low",
     "coverage": [
-      "global"
+      "eu"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Kelkoo",
+      "kelkoo.com"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
-      "specialty-search"
+      "shopping",
+      "europe"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/kelkoo-shopping-search-engine-europe.md"
   },
   {
@@ -300726,44 +300821,56 @@
   },
   {
     "id": "science-direct",
-    "name": "Science Direct",
-    "description": "Scientific and technical literature search across Elsevier's extensive journal catalog",
+    "name": "ScienceDirect",
+    "description": "Use when you have a researcher `name` and want their science/engineering publications — returns authored articles with affiliations, co-authors, and abstracts.",
     "url": "https://www.sciencedirect.com/",
     "category": "search-engines",
     "path": [
       "search-engines",
       "academic-publication-search"
     ],
-    "bestFor": "Scientific and technical literature search across Elsevier's extensive journal catalog",
-    "input": "Author, title, keyword, DOI, or journal name",
-    "output": "Article records with abstracts; full text requires subscription or per-article purchase",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching Elsevier's science/technical/medical journal catalog to profile an author's publications and affiliations.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free to search and read abstracts/metadata; full-text of most articles requires a subscription or institutional access (some are open access).",
     "opsec": "passive",
-    "opsecNote": "Searches are logged by Elsevier; institutional access requires login which creates an activity record.",
+    "opsecNote": "You search a publisher's literature index — no subject is contacted and nothing is signalled. Standard web logging; a clean session suffices.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Elsevier's official platform; bibliographic metadata (authors, affiliations, dates) is authoritative for the journals it hosts.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": false,
+    "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
+    "aliases": [
+      "ScienceDirect",
+      "Elsevier ScienceDirect"
+    ],
+    "tags": [
+      "academic",
+      "science",
+      "literature",
+      "elsevier"
+    ],
+    "source": "arf-seed",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "relatedTools": [
       "sciencedirect"
     ],
-    "aliases": [],
-    "tags": [],
-    "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
     "_file": "library/tools/search-engines/academic-publication-search/science-direct.md"
   },
   {
@@ -301068,35 +301175,52 @@
   {
     "id": "search-by-filetype",
     "name": "Search by FileType",
-    "description": "OSINT tool: Search by FileType.",
+    "description": "Use when you have a `name`, `employer-org`, or keyword and want documents — returns indexed files (PDF/DOC/XLS/PPT) matching the term via a Google Custom Search Engine.",
     "url": "https://cse.google.com/cse/publicurl?cx=013991603413798772546:mu-oio3a980",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Finding documents (PDF, Office files) tied to a person, org, or keyword using a filetype-scoped Google CSE.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "metadata-exif"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Google Custom Search Engine; no account needed.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You search Google's index of already-public documents — no target is queried. Opening a found file is passive; the file's own metadata (author, software, GPS) may reveal more than its contents, which is often the point.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "A community CSE that applies filetype scoping to Google's index; results are genuine index entries, but the preset's scope depends on its anonymous maintainer.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "filetype search CSE",
+      "document search engine"
+    ],
+    "tags": [
+      "documents",
+      "google-cse",
+      "filetype",
+      "metadata"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/search-by-filetype.md"
   },
   {

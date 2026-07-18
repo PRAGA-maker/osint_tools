@@ -8,7 +8,7 @@ kind: group-index
 
 ## Skills here
 - **`arxiv-org`** (medium) — OSINT tool: arXiv.org.
-- **`bielefeld-academic-search-engine`** (medium) — Broad academic literature search across open-access and institutional repositories
+- **`bielefeld-academic-search-engine`** (medium) — Use when you have a researcher `name` or topic and want open-access scholarship across repositories — returns papers, theses, and datasets w
 - **`copyscape-plagiarism-checker`** (medium) — Use when you have a block of text (a bio, listing, message, or `domain` page) and want to find where else it appears online — returns matchi
 - **`google-scholar`** (medium) — Comprehensive academic literature discovery with citation tracking across all disciplines
 - **`jurn`** (medium) — Use when you have a `name` or research topic and want open-access scholarly work by/about a person — returns article links naming authors, a
@@ -20,7 +20,7 @@ kind: group-index
 - **`opendoar`** (low) — Use when you want to find academic open-access repositories for an institution, country, or subject — returns a directory of repositories (w
 - **`pubmed-national-center-for-biotechnology-information`** (medium) — Use when you have a researcher/clinician `name` and want their biomedical publications — returns authored papers with affiliations, co-autho
 - **`pubpeer`** (medium) — Use when you have a `name`, DOI, or paper title and want post-publication peer critique — returns comment threads flagging errors, image man
-- **`science-direct`** (medium) — Scientific and technical literature search across Elsevier's extensive journal catalog
+- **`science-direct`** (medium) — Use when you have a researcher `name` and want their science/engineering publications — returns authored articles with affiliations, co-auth
 - **`science-publications`** (medium) — OSINT tool: Science Publications.
 - **`the-open-syllabus-project`** (medium) — OSINT tool: The Open Syllabus Project.
 - **`uk-national-archives`** (medium) — Use when you have a `name`, place, or record reference and want UK government/historical records — returns catalogue entries (military, will
