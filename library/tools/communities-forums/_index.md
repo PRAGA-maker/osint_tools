@@ -54,7 +54,6 @@ kind: group-index
 - **`business-com`** (medium) — Business and technology-related guides and articles
 - **`buzzfeed`** (medium) — Website related to social networking micronews feeds and postings from around the world
 - **`buzzsumo`** (medium) — Use when you have a `name`, `domain`, or topic and want to find the most-shared content and the authors/influencers behind it — returns arti
-- **`cafemom`** (medium) — Pregnant women networking website
 - **`care2`** (medium) — Wellness welfare and rights networking website
 - **`catster`** (medium) — Networking website for cat lovers
 - **`cbc-news-worldwide-canada`** (medium) — Searchable website for a major television network covering global events and having large reader/fan base
@@ -361,7 +360,6 @@ kind: group-index
 - **`the-wall-street-journal`** (medium) — Use when you have a `name` tied to business/finance and want reported coverage, quotes or bylines — returns employer-org and associate.
 - **`theaustralian-national-news`** (medium) — Searchable website for a major newspaper covering national and local events in Australia
 - **`thebigproject`** (medium) — Online news portal focusing on UK newspapers, as well as International newspapers (english versions available)
-- **`thenextweb`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`thepaperboy`** (medium) — Searchable website for a directory of leading US and worldwide online newspapers
 - **`thestudentroom-co-uk`** (medium) — Use when you have a `username` (or school/uni/topic) and want a UK student's forum presence — returns their profile, posts and interests, ex
 - **`theverge-tech-news`** (medium) — Online articles, news, and reviews related to technology, science, gadgets, future trends, and more

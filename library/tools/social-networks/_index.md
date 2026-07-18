@@ -247,7 +247,6 @@ kind: group-index
 - **`google-com-71`** (high) — Use when you're chasing a subject's Parler footprint and want Google's indexed/archived copies of Parler posts via a site-search dork — retu
 - **`google-com-72`** (high) — Use when you have a `name` or `username` and want their presence on Rumble — returns Rumble channels/videos via a Google `site:rumble.com` d
 - **`google-com-88`** (high) — Use when you have a `username` or `name` and want to find a subject's public Snapchat Spotlight content via a Google site-search dork — retu
-- **`google-plus-and-linkedin`** (medium) — OSINT tool: Google+ & LinkedIn.
 - **`google-plus-photo-custom-search`** (medium) — OSINT tool: Google+ Photo Custom Search.
 - **`google-to-search-profiles-on-dribbble`** (high) — Use when you have a skill/keyword (and optionally a `name` or `username`) and want to find Dribbble creative profiles via a Google site-sear
 - **`google-to-search-profiles-on-twitter`** (high) — Use when you have a `name`, keyword, or location and want to find matching X/Twitter profiles via a Google X-ray query — returns candidate `

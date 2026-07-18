@@ -119,7 +119,6 @@ kind: group-index
 - **`waybackpy`** (medium) — Use when you have a `domain` or URL and want to pull its Wayback Machine capture history programmatically — returns archived snapshot URLs a
 - **`waymore`** (medium) — Search archived links to domain in Wayback Machine and Common Crawl (+ Urlscan and Alien Vault OTX).
 - **`web-archive-bibalex-org`** (medium) — OSINT tool: web.archive.bibalex.org.
-- **`web-archive-google-chrome-extension`** (medium) — Simple Chrome Extensions for getting information about current URL using http://archive.org CDX API
 - **`web-archive-org`** (medium) — OSINT tool: web.archive.org.
 - **`web-archives-chrome-google-com`** (medium) — OSINT tool: web archives (chrome.google.com).
 - **`web-archives`** (low) — A browser extension to view archived and cached versions of a website on multiple archiving sites.

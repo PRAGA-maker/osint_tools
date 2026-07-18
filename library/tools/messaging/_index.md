@@ -189,7 +189,7 @@ kind: group-index
 - **`what-goes-on-mastodon`** (low) — Use when you want to gauge which Mastodon instances are most active before searching them for a subject — returns instance/domain leads, not
 - **`whatsanalyze-com`** (medium) — analyzes #WhatsApp group message statistics (world cloud, timeline, message frequency)
 - **`whatsapp-checkleaked`** (high) — Use when you have a `phone` number and want to confirm it's on WhatsApp and view its public profile photo and About — returns social-profile
-- **`whatsapp-tools-of-all-kind`** (medium) — OSINT tool: WhatsApp tools of all kind.
+- **`whatsapp-tools-of-all-kind`** (medium) — Use when you have a `phone` and want its WhatsApp footprint — a suite of tools to check if a number is on WhatsApp, view its public profile 
 - **`whatsthat-github-com`** (medium) — Use when you have access to a WhatsApp Web group chat and want to map member relationship dynamics — returns per-member influence, reply/rea
 - **`whoisdombot`** (high) — Use when you have a `domain` or `ip-address` and want registration and DNS data from inside Telegram — returns WHOIS records plus dig/tracer
 - **`ytranslatebot`** (medium) — type text or resend messages to Telegram bot for translate it.

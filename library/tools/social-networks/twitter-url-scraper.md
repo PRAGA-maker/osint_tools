@@ -38,6 +38,12 @@ relatedTools:
 - instagram-scraper
 - facebook-latest-posts-scraper
 - youtube-scraper
+- apify-s-google-maps-scraper
+- dark-web-scraper
+- facebook-latest-comments-scraper
+- google-maps-scraper
+- google-search-scraper
+- instagram-hashtag-scraper
 aliases:
 - Apify Twitter URL Scraper
 - zuzka twitter-url-scraper

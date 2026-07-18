@@ -721,7 +721,7 @@ kind: group-index
 - **`open-data-network`** (low) — OSINT tool: Open Data Network.
 - **`open-data-policing`** (medium) — OSINT tool: Open Data Policing.
 - **`open-data-portal-m-nchen-german`** (medium) — Munich municipal administrative data
-- **`open-knowledge-maps`** (medium) — Visual research engine of publications
+- **`open-knowledge-maps`** (medium) — Use when you have an academic's `name` or a topic and want a visual map of the field — returns clustered publications and, via them, an auth
 - **`opendata-by-socrata`** (low) — OSINT tool: OpenData by Socrata.
 - **`opengazettes`** (low) — OSINT tool: OpenGazettes.
 - **`openleis-com`** (high) — Use when you have a company `name` or partial identifier and want its Legal Entity Identifier, registered legal name, and headquarters `addr

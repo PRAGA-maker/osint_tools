@@ -125,7 +125,6 @@ kind: group-index
 - **`intelligencex-linkedin-search`** (medium) — Use when you have a `name` (plus optional employer/location) and want to build a precise LinkedIn people search — returns social-profile, em
 - **`inteltechniques-osint`** (high) — Use when you have a `name`, `username`, `email`, `phone` or `domain` and want automated multi-source pivots — a free toolset that fires one 
 - **`intelx-io`** (high) — Use when you have an `email`, `domain`, `ip-address`, `crypto-wallet` or `username` and want breach/dark-web/archive hits — returns leaked r
-- **`internet-experts`** (medium) — OSINT tool: Internet Experts.
 - **`interpol`** (high) — Use when you have a `name` and want to check INTERPOL's public Red (wanted) and Yellow (missing persons) notices — returns name, dob, image,
 - **`ioa`** (high) — Use when you have a `username` or account handle and want to know whether it belongs to a documented state-linked disinformation campaign — 
 - **`jobs-poland`** (medium) — Use when you have an employer `name` or a subject's occupation in Poland and want job-market context — returns employer job postings, locati

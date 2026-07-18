@@ -22729,43 +22729,6 @@
     "_file": "library/tools/archives-cache/web-archive-bibalex-org.md"
   },
   {
-    "id": "web-archive-google-chrome-extension",
-    "name": "Web Archive Google Chrome Extension",
-    "description": "Simple Chrome Extensions for getting information about current URL using http://archive.org CDX API",
-    "url": "https://github.com/husseinphp/web-archive",
-    "category": "archives-cache",
-    "path": [
-      "archives-cache"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "cli",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": true,
-    "localInstall": true,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "Archives",
-      "Tools for working with web archives"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/archives-cache/web-archive-google-chrome-extension.md"
-  },
-  {
     "id": "web-archive-org",
     "name": "web.archive.org",
     "description": "OSINT tool: web.archive.org.",
@@ -25238,46 +25201,6 @@
     "lastVerified": "2026-07-18",
     "enrichment": "full",
     "_file": "library/tools/communities-forums/buzzsumo.md"
-  },
-  {
-    "id": "cafemom",
-    "name": "CafeMom",
-    "description": "Pregnant women networking website",
-    "url": "http://www.cafemom.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "online-communities-blogs"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/communities-forums/cafemom.md"
   },
   {
     "id": "cama-s-reddit-search",
@@ -38665,49 +38588,6 @@
     "_file": "library/tools/communities-forums/thebigproject.md"
   },
   {
-    "id": "thenextweb",
-    "name": "TheNextWeb",
-    "description": "Online articles and news related to business, computers, gadgets, technology, and future trends",
-    "url": "http://thenextweb.com",
-    "category": "communities-forums",
-    "path": [
-      "communities-forums"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "news-journalism"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "thenextweb-com"
-    ],
-    "_file": "library/tools/communities-forums/thenextweb.md"
-  },
-  {
     "id": "thepaperboy",
     "name": "ThePaperboy",
     "description": "Searchable website for a directory of leading US and worldwide online newspapers",
@@ -40963,44 +40843,57 @@
   {
     "id": "ahmia",
     "name": "Ahmia",
-    "description": "Primary onion search and service discovery",
+    "description": "Use when you have a `name`, `username`, `email` or keyword and want to find it on the dark web — returns indexed Tor onion services and pages matching your search, from the clearnet.",
     "url": "https://ahmia.fi/",
     "category": "dark-web",
     "path": [
       "dark-web",
       "tor-search"
     ],
-    "bestFor": "Primary onion search and service discovery",
-    "input": "Search keywords",
-    "output": "Indexed onion search results",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Searching indexed Tor onion services by keyword from a normal browser.",
+    "selectorsIn": [
+      "username",
+      "email",
+      "name"
+    ],
+    "selectorsOut": [
+      "social-profile",
+      "domain"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source; no account, with a public search API.",
     "opsec": "passive",
-    "opsecNote": "Query activity is mediated by Ahmia rather than direct probing of each destination.",
+    "opsecNote": "Searching Ahmia's clearnet site queries its own index, not each onion directly, so you don't touch hidden services yet. Do the searching on ahmia.fi (or its .onion) via Tor, and NEVER open a resulting onion outside the Tor Browser. Ahmia filters CSAM but results are otherwise unvetted — expect illegal/hostile content.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Long-running project by Juha Nurmi developed with Tor Project support; open-source and the standard clearnet gateway for onion search, though it indexes only what it can crawl.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": true,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
       "ahmia-link-graph",
       "ahmia-list-of-onion-domains"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Ahmia.fi",
+      "Ahmia search"
+    ],
+    "tags": [
+      "dark-web",
+      "tor",
+      "onion-search"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/tor-search/ahmia.md"
   },
   {
@@ -87378,52 +87271,6 @@
     "_file": "library/tools/domains-ip-infrastructure/subdomains/seclists-dns-subdomains.md"
   },
   {
-    "id": "secmas-host-guatemala",
-    "name": "Secmas Host (Guatemala)",
-    "description": "Guatemala based service provider for registering websites and domain addresses",
-    "url": "http://www.secmashost.com",
-    "category": "domains-ip-infrastructure",
-    "path": [
-      "domains-ip-infrastructure"
-    ],
-    "bestFor": "",
-    "selectorsIn": [
-      "domain",
-      "ip-address"
-    ],
-    "selectorsOut": [
-      "domain",
-      "ip-address"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": true,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "whois-ip-lookups-website-analysis"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/domains-ip-infrastructure/secmas-host-guatemala.md"
-  },
-  {
     "id": "secretfinder",
     "name": "SecretFinder",
     "description": "Tool for find sensitive data (apikeys, accesstoken,jwt,..) or search anything with #regexp on #javascript files",
@@ -128613,13 +128460,13 @@
   {
     "id": "shademap",
     "name": "ShadeMap",
-    "description": "ShadeMap is a global simulation of mountain, building & tree shadows for a given date & time. Base data is free, but users can buy 30cm accurate data per sq km for areas of special focus.",
+    "description": "Use when you have a `geolocation` and an image with shadows and want to verify or find the time — simulates terrain/building/tree shadows for any date & time to support chronolocation.",
     "url": "https://shademap.app",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Chronolocation — matching the sun/shadow position in a photo to a date and time at a known place.",
     "selectorsIn": [
       "geolocation",
       "address"
@@ -128627,29 +128474,36 @@
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Base global shadow simulation is free in-browser; users can optionally buy high-resolution (30cm) elevation data per sq km for areas of special focus.",
+    "opsec": "passive",
+    "opsecNote": "A client-side simulation over public map/elevation data; you enter a location and time, nothing is sent to any subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Featured in Bellingcat's investigation toolkit; a well-regarded shadow-simulation tool built on public elevation and sun-position models.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "ShadeMap",
+      "shademap.app"
+    ],
     "tags": [
       "bellingcat-toolkit",
-      "geolocation"
+      "geolocation",
+      "chronolocation"
     ],
     "source": "bellingcat-toolkit",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/shademap.md"
   },
   {
@@ -172471,42 +172325,52 @@
   },
   {
     "id": "whatsapp-tools-of-all-kind",
-    "name": "WhatsApp tools of all kind",
-    "description": "OSINT tool: WhatsApp tools of all kind.",
+    "name": "Wassame WhatsApp Tools",
+    "description": "Use when you have a `phone` and want its WhatsApp footprint — a suite of tools to check if a number is on WhatsApp, view its public profile picture, and read its online/last-seen status.",
     "url": "http://wassame.com/tools",
     "category": "messaging",
     "path": [
       "messaging"
     ],
-    "bestFor": "",
+    "bestFor": "Checking WhatsApp existence, public profile picture and online status for a phone number.",
     "selectorsIn": [
       "phone"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free web tools; no account required.",
+    "opsec": "active",
+    "opsecNote": "Checking existence or public DP is low-touch, but repeated online-status polling of a number can be intrusive and, depending on the tool's method, may register interactions. Never send a message via the site's messaging tool during an investigation, and prefer a sock-puppet context.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "unverified",
-    "trustNote": "",
+    "trustNote": "A third-party WhatsApp-utility site (not WhatsApp/Meta); it can only surface data WhatsApp already exposes publicly, and such tools' methods and reliability vary.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Wassame",
+      "wassame.com tools",
+      "WhatsApp tools"
+    ],
     "tags": [
-      "whatsapp"
+      "whatsapp",
+      "messaging",
+      "phone"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/messaging/whatsapp-tools-of-all-kind.md"
   },
   {
@@ -201486,42 +201350,6 @@
     "lastVerified": "2026-07-10",
     "enrichment": "full",
     "_file": "library/tools/people-search/intelx-io.md"
-  },
-  {
-    "id": "internet-experts",
-    "name": "Internet Experts",
-    "description": "OSINT tool: Internet Experts.",
-    "url": "http://www.internetexperts.info",
-    "category": "people-search",
-    "path": [
-      "people-search"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "expert-search"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/people-search/internet-experts.md"
   },
   {
     "id": "interpol",
@@ -247311,49 +247139,65 @@
   },
   {
     "id": "most-wanted-criminal-pages",
-    "name": "Most Wanted Criminal Pages",
-    "description": "Wanted fugitive identification",
+    "name": "FBI Most Wanted / Fugitives",
+    "description": "Use when you have a `name`, `image` or `physical-description` and want to check the FBI's wanted lists — returns fugitive profiles with photos, aliases, physical details and known associates.",
     "url": "https://www.fbi.gov/wanted/fugitives",
     "category": "public-records",
     "path": [
       "public-records",
       "court-criminal-records"
     ],
-    "bestFor": "Wanted fugitive identification",
-    "input": "Name, photo description",
-    "output": "Fugitive profiles, photos, rewards",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "bestFor": "Checking whether a person appears on the FBI's wanted/fugitive lists and pulling their profile.",
+    "selectorsIn": [
+      "name",
+      "physical-description"
+    ],
+    "selectorsOut": [
+      "name",
+      "image",
+      "physical-description",
+      "associate"
+    ],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free official U.S. government resource; no account.",
     "opsec": "passive",
-    "opsecNote": "Official FBI resource",
+    "opsecNote": "Browsing the FBI's public wanted pages is passive and anonymous; nothing is sent to any subject. If you recognize a fugitive, use the official tip channels rather than approaching anyone.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official FBI publication; profiles are authoritative U.S. law-enforcement records, though wanted status changes as cases resolve.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "invitationOnly": false,
-    "deprecated": false,
     "relatedTools": [
-      "fbi-common-fraud-schemes-united-states",
-      "fbi-information-technology-united-states",
-      "federal-bureau-of-investigations-value",
       "most-wanted",
       "sex-offender-registry-websites",
-      "vault-fbi-gov"
+      "vault-fbi-gov",
+      "fbi-common-fraud-schemes-united-states",
+      "fbi-information-technology-united-states",
+      "federal-bureau-of-investigations-value"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "FBI Most Wanted",
+      "FBI Fugitives",
+      "FBI Ten Most Wanted"
+    ],
+    "tags": [
+      "fbi",
+      "wanted",
+      "fugitives",
+      "law-enforcement"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/court-criminal-records/most-wanted-criminal-pages.md"
   },
   {
@@ -252792,30 +252636,31 @@
   {
     "id": "open-knowledge-maps",
     "name": "Open Knowledge Maps",
-    "description": "Visual research engine of publications",
+    "description": "Use when you have an academic's `name` or a topic and want a visual map of the field — returns clustered publications and, via them, an author's works and affiliations (`employer-org`).",
     "url": "https://openknowledgemaps.org/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
+    "bestFor": "Visually mapping the publications and sub-topics around a researcher or research area.",
     "selectorsIn": [
       "name",
       "employer-org"
     ],
     "selectorsOut": [
       "employer-org",
-      "address"
+      "associate"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free and open-source non-profit service (built on BASE/PubMed); no account required to run a map.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Generating a knowledge map is passive and anonymous; you query open bibliographic indexes, not any individual. No sock puppet needed.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Run by the Open Knowledge Maps non-profit over authoritative open indexes (BASE, PubMed); a transparent, well-regarded scholarly discovery tool.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -252824,15 +252669,18 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "aliases": [
+      "Open Knowledge Maps",
+      "openknowledgemaps.org"
+    ],
     "tags": [
       "toddington",
       "curated-directory",
       "academic-scholarly-research-tools"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/open-knowledge-maps.md"
   },
   {
@@ -323082,50 +322930,6 @@
     "_file": "library/tools/social-networks/google-com-88.md"
   },
   {
-    "id": "google-plus-and-linkedin",
-    "name": "Google+ & LinkedIn",
-    "description": "OSINT tool: Google+ & LinkedIn.",
-    "url": "https://one-plus.github.io/G+Link",
-    "category": "social-networks",
-    "path": [
-      "social-networks"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "passive",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "bookmarks",
-      "document-search",
-      "google-and-bing",
-      "instagram-reddit-and-snapchat",
-      "osint-toolkit",
-      "twitter-monitoring",
-      "website-information",
-      "youtube-periscope-twitch-and-dailymotion"
-    ],
-    "_file": "library/tools/social-networks/google-plus-and-linkedin.md"
-  },
-  {
     "id": "google-plus-photo-custom-search",
     "name": "Google+ Photo Custom Search",
     "description": "OSINT tool: Google+ Photo Custom Search.",
@@ -348820,7 +348624,13 @@
       "reddit-scraper",
       "instagram-scraper",
       "facebook-latest-posts-scraper",
-      "youtube-scraper"
+      "youtube-scraper",
+      "apify-s-google-maps-scraper",
+      "dark-web-scraper",
+      "facebook-latest-comments-scraper",
+      "google-maps-scraper",
+      "google-search-scraper",
+      "instagram-hashtag-scraper"
     ],
     "aliases": [
       "Apify Twitter URL Scraper",
@@ -359555,45 +359365,54 @@
   },
   {
     "id": "boatnerd-great-lakes-shipping",
-    "name": "BoatNerd Great Lakes Shipping",
-    "description": "Maritime-related website focusing on Great Lakes and seaway shipping, including vessel information, photos, facts, and figures",
-    "url": "http://boatnerd.com",
+    "name": "BoatNerd (Great Lakes Shipping)",
+    "description": "Use when you have a Great Lakes vessel name and want to identify and track it — returns vessel details, photos, history and AIS-based positions for lake and seaway ships.",
+    "url": "https://boatnerd.com",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Identifying and tracking Great Lakes / St. Lawrence Seaway vessels and reading their history.",
     "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "selectorsOut": [
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free enthusiast resource; no account required.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reading vessel info and public AIS feeds is passive; you query a shipping-enthusiast site and public AIS data, not any individual. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-running Great Lakes shipping enthusiast community; vessel data and photos are hobbyist-maintained but detailed and well-regarded for the region.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us",
+      "ca"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "ais-boatnerd-com"
     ],
+    "aliases": [
+      "BoatNerd",
+      "boatnerd.com"
+    ],
+    "tags": [
+      "toddington",
+      "curated-directory",
+      "specialty-search",
+      "maritime",
+      "shipping"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/boatnerd-great-lakes-shipping.md"
   },
   {

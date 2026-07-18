@@ -265,7 +265,7 @@ kind: group-index
 - **`scribble-maps`** (high) — Use when you need to draw markers, shapes and notes on a map and share or export an annotated investigative map.
 - **`seeker`** (medium) — Use when you can get a subject to click a link (with authorization) and want their precise location — returns GPS geolocation plus ip-addres
 - **`sentinel-hub`** (high) — Use when you need dated, recent satellite imagery of an area to detect change over time or confirm current ground conditions.
-- **`shademap`** (medium) — ShadeMap is a global simulation of mountain, building & tree shadows for a given date & time. Base data is free, but users can buy 30cm accu
+- **`shademap`** (medium) — Use when you have a `geolocation` and an image with shadows and want to verify or find the time — simulates terrain/building/tree shadows fo
 - **`shadow-finder`** (medium) — Use when you have an `image` with a measurable shadow and a known object height, date, and time — returns the set of earth locations where t
 - **`shadowmap`** (medium) — Use when you have a `geolocation`/`address` and a candidate date-time and want the sun position and building shadows in 3D — returns shadow 
 - **`site24x7-com`** (medium) — OSINT tool: site24x7.com.
