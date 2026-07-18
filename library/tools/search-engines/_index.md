@@ -89,7 +89,7 @@ kind: group-index
 - **`awesome-recon-tools`** (low) — Compiled list of tools for reconnaissance and footprinting.
 - **`baidu-china`** (low) — OSINT tool: Baidu (China).
 - **`baiduknows-search-engine-china`** (medium) — Use when you have a `username`, `name`, or topic tied to China and want user-generated Q&A content from Baidu's community — returns question
-- **`baike-baidu-chinese-language`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases
+- **`baike-baidu-chinese-language`** (medium) — Use when you have a Chinese name, company, or place and want the Chinese-language encyclopedia entry — returns biographical detail, associat
 - **`ballotpedia-united-states`** (medium) — Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases; focused on p
 - **`bank-of-canada-unclaimed-balances`** (medium) — Bank of Canada's unclaimed balance search
 - **`bank-of-canada`** (medium) — Offering general information about the Bank of Canada, its actions and services

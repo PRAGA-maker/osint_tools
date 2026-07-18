@@ -10,7 +10,7 @@ kind: group-index
 - **`bing-translate`** (low) — Use when foreign-language text (a `name`, post, or document) blocks an investigation and you want it translated — returns the English (or ta
 - **`cambridge-dictionary`** (low) — Use when you have a foreign-language word/phrase from a subject's posts or documents and want an authoritative definition and bilingual tran
 - **`deepl-translator`** (medium) — Use when you have a foreign-language record, message, or document and want an accurate English (or other) rendering — returns translated tex
-- **`free-translation`** (medium) — Fast multi-language text translation in a browser
+- **`free-translation`** (medium) — Use when you have foreign-language text from a profile, message, or document and want it in your language — returns translated text so you c
 - **`google-input-tools`** (low) — Use when a lead is in a non-Latin script and you need to TYPE it accurately (queries, names, addresses) — an input helper, not a subject loo
 - **`google-translate`** (medium) — Use when you have foreign-language text, a document, or a webpage in an investigation and want it in your language — returns translated text
 - **`slang-dictionary-and-translator`** (medium) — Decoding internet slang and text abbreviations

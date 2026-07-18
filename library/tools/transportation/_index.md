@@ -70,7 +70,7 @@ kind: group-index
 - **`equasis`** (low) — Equasis provides vessel ownership and safety records, as well as shipping company fleet information.
 - **`eships-net`** (low) — OSINT tool: eships.net.
 - **`europe-station-maps-floor-plan`** (low) — OSINT tool: Europe station maps floor plan.
-- **`european-database-of-stolen-vehicles`** (medium) — OSINT tool: European Database of Stolen Vehicles.
+- **`european-database-of-stolen-vehicles`** (medium) — Use when you have a VIN and want to check whether the vehicle is reported stolen across European registers — returns a stolen/not-found stat
 - **`europlates-eu`** (medium) — OSINT tool: Europlates.eu.
 - **`exotic-cars-the-largest-photo-collection`** (medium) — OSINT tool: Exotic Cars | The Largest Photo Collection.
 - **`faa-registry`** (low) — OSINT tool: FAA Registry.

@@ -45157,44 +45157,58 @@
   {
     "id": "state-of-delaware-professional-license-validator",
     "name": "State of Delaware Professional License Validator",
-    "description": "State of Delawares professional license validator",
-    "url": "https://dpronline.delaware.gov/mylicense%20weblookup/Search.aspx",
+    "description": "Use when you have a name or license number and want to verify a Delaware professional license — returns employer-org, license status/type, and disciplinary history.",
+    "url": "https://delpros.delaware.gov/",
     "category": "dark-web",
     "path": [
       "dark-web"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Verifying a Delaware occupational/professional license (status, type, discipline) by name or license number via the state DELPROS system.",
+    "selectorsIn": [
+      "name",
+      "document-id"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free official State of Delaware verification (DELPROS); results are considered primary-source verifications at no charge.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads already-public state licensing records; no login, no notification to the licensee. Standard web logging only. Use a clean browser for sensitive subjects.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Official State of Delaware Division of Professional Regulation system (DELPROS); primary-source licensure data.",
     "missingPersonsRelevance": "medium",
     "coverage": [
-      "global"
+      "us"
     ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "delaware"
     ],
+    "aliases": [
+      "DELPROS license lookup",
+      "Delaware professional license verification",
+      "delpros.delaware.gov"
+    ],
+    "tags": [
+      "public-records",
+      "professional-license",
+      "delaware",
+      "verification"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dark-web/state-of-delaware-professional-license-validator.md"
   },
   {
@@ -48812,24 +48826,32 @@
   {
     "id": "locanto-free-classified-ads-worldwide",
     "name": "Locanto Free Classified Ads (Worldwide)",
-    "description": "One of the Top 10 classified advertisements-related websites worldwide",
+    "description": "Use when you have a username, phone, or location and want to find a subject's classified ads (jobs, personals, sales) — returns social-profile, phone, and geolocation leads.",
     "url": "http://www.locanto.info",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching worldwide free classified ads (personals, services, jobs, for-sale) for a person's postings, contact details, and location.",
+    "selectorsIn": [
+      "username",
+      "geolocation"
+    ],
+    "selectorsOut": [
+      "phone",
+      "social-profile",
+      "geolocation"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to browse and search ads; posting is free with an optional paid promotion tier.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Browsing ads is passive and needs no login. Do NOT reply to or contact an advertiser from an attributable account — that would alert the subject. Use a sock-puppet browser; classifieds (especially personals) are sensitive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Large, established global classifieds network; content is user-posted and unverified, so treat ad details as claims, not facts.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -48838,15 +48860,21 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Locanto",
+      "locanto.info"
+    ],
     "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
+      "classifieds",
+      "personals",
+      "dating-classifieds"
     ],
     "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/locanto-free-classified-ads-worldwide.md"
   },
   {
@@ -132511,45 +132539,55 @@
   {
     "id": "wikinearby",
     "name": "WikiNearby",
-    "description": "Enter geographic coordinates, language, and get a list of Wikipedia articles about streets, towns, stations and other notable places nearby.",
+    "description": "Use when you have coordinates and want Wikipedia-documented places around them — returns nearby notable geolocation/landmarks to identify or corroborate a location from a photo.",
     "url": "https://wikinearby.toolforge.org/?lang=en&q=55.333056%2C+27.248889",
     "category": "geolocation",
     "path": [
       "geolocation"
     ],
-    "bestFor": "",
+    "bestFor": "Listing Wikipedia-documented landmarks, towns, stations, and features near a set of coordinates, in many languages.",
     "selectorsIn": [
       "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free Wikimedia Toolforge tool; no account, no payment.",
+    "opsec": "passive",
+    "opsecNote": "Runs on Wikimedia Toolforge and reads public Wikipedia geodata; you submit coordinates, not anything about a person. Standard web logging only. Safe for routine geolocation work.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hosted on Wikimedia's official Toolforge platform and backed by Wikipedia's geotagged-article data; the underlying data is community-maintained Wikipedia.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "Maps, Geolocation and Transport",
-      "Social media and photos"
-    ],
-    "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "wikishootme"
     ],
+    "aliases": [
+      "wikinearby.toolforge.org",
+      "Wiki Nearby"
+    ],
+    "tags": [
+      "geolocation",
+      "wikipedia",
+      "landmarks",
+      "Maps, Geolocation and Transport"
+    ],
+    "source": "cyb-detective",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/geolocation/wikinearby.md"
   },
   {
@@ -160798,43 +160836,53 @@
   {
     "id": "maploco-com",
     "name": "maploco.com",
-    "description": "OSINT tool: maploco.com.",
+    "description": "Use when a subject has shared a \"places I've visited\" map graphic and you want to read their claimed travel — a widget generator you use to decode/recreate the geolocation set.",
     "url": "https://map1.maploco.com/visited-countries/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "",
+    "bestFor": "Generating and decoding \"visited countries / US states / provinces\" map graphics that people share on social profiles.",
     "selectorsIn": [
-      "geolocation",
-      "address"
+      "geolocation"
     ],
     "selectorsOut": [
       "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free map-image/widget generator; no account required.",
+    "opsec": "passive",
+    "opsecNote": "This is a creation tool, not a lookup — you select locations to build a map image. Nothing is queried about a person; recreating a subject's map from what they publicly shared is passive analysis on your side.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Simple, functional map-graphic generator; it holds no personal data — its OSINT value is only in interpreting maps people voluntarily publish.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "maploco",
+      "maploco.com",
+      "visited countries map"
+    ],
     "tags": [
-      "mapsandlocationsites",
+      "maps-geospatial-data",
+      "travel",
       "Maps & Location Related Sites"
     ],
     "source": "uk-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/maploco-com.md"
   },
   {
@@ -243917,35 +243965,55 @@
   {
     "id": "ky-state-salary-2019",
     "name": "KY State Salary 2019",
-    "description": "OSINT tool: KY State Salary 2019.",
+    "description": "Use when you have a surname and suspect a Kentucky state-government job — returns employer-org (cabinet/department) and 2019 salary to confirm an employment history.",
     "url": "https://c0ect130.caspio.com/dp/c8521000065e102da08c40e696ad",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Looking up a Kentucky state-government employee's 2019 salary and department by last name, cabinet, or department.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "name"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free searchable public-salary datapage; no account or payment.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Reads a public salary-transparency dataset; no login and no notification to the subject. It's a third-party-hosted (Caspio) datapage, so treat as normal web logging; use a clean browser for sensitive lookups.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Republished public-records salary data on a Caspio datapage; sourced from Kentucky open-records but a single 2019 snapshot by a third party, so verify against the official state source for current data.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "Kentucky state salary 2019",
+      "KY employee salary"
+    ],
+    "tags": [
+      "public-records",
+      "salary",
+      "kentucky",
+      "government-employees"
+    ],
     "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/ky-state-salary-2019.md"
   },
   {
@@ -274531,24 +274599,32 @@
   {
     "id": "baike-baidu-chinese-language",
     "name": "Baike Baidu (Chinese language)",
-    "description": "Website related to social networking in the form of crowdsourced encyclopedias and/or subject-orientated information databases",
+    "description": "Use when you have a Chinese name, company, or place and want the Chinese-language encyclopedia entry — returns biographical detail, associates, and employer-org from Baidu's crowd encyclopedia.",
     "url": "http://baike.baidu.com",
     "category": "search-engines",
     "path": [
       "search-engines"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Reading Baidu's Chinese-language crowdsourced encyclopedia for people, companies, places, and events under-covered by English Wikipedia.",
+    "selectorsIn": [
+      "name",
+      "employer-org"
+    ],
+    "selectorsOut": [
+      "employer-org",
+      "associate",
+      "dob"
+    ],
+    "status": "live",
     "pricing": "free",
+    "costNote": "Free to read; no account needed to view entries.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "Passive reading of a public Chinese encyclopedia, but it is Baidu (PRC jurisdiction) — assume queries and IPs are logged. Use a sock-puppet browser for China-sensitive subjects; do not log in.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Baidu's crowd-edited encyclopedia; entries can be authoritative for mainstream Chinese topics but are user-edited and subject to PRC censorship, so verify claims.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -274557,15 +274633,8 @@
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "toddington",
-      "curated-directory",
-      "specialty-search"
-    ],
-    "source": "toddington-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "invitationOnly": false,
+    "deprecated": false,
     "relatedTools": [
       "baidu",
       "baidu-china",
@@ -274577,6 +274646,20 @@
       "baidu-translate",
       "baiduknows-search-engine-china"
     ],
+    "aliases": [
+      "百度百科",
+      "Baidu Baike",
+      "baike.baidu.com"
+    ],
+    "tags": [
+      "search-engines",
+      "china",
+      "encyclopedia",
+      "chinese-language"
+    ],
+    "source": "toddington-resources",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/search-engines/baike-baidu-chinese-language.md"
   },
   {
@@ -356275,29 +356358,32 @@
   {
     "id": "free-translation",
     "name": "Free Translation",
-    "description": "Fast multi-language text translation in a browser",
+    "description": "Use when you have foreign-language text from a profile, message, or document and want it in your language — returns translated text so you can read and pivot on non-English content.",
     "url": "https://translation2.paralink.com/",
     "category": "translation-language",
     "path": [
       "translation-language",
       "text"
     ],
-    "bestFor": "Fast multi-language text translation in a browser",
+    "bestFor": "Fast, no-login browser translation of pasted text across many language pairs.",
     "input": "Text",
     "output": "Translated text",
     "selectorsIn": [],
     "selectorsOut": [],
     "status": "live",
     "pricing": "free",
+    "costNote": "Free web translator (Paralink); no account required.",
     "opsec": "active",
-    "opsecNote": "Text is sent to backend translation providers for processing.",
+    "opsecNote": "Pasted text is sent to Paralink's backend translation providers — do NOT paste sensitive case content, credentials, or PII you must protect. For confidential material use offline translation. No target is contacted.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Long-standing free online translator; adequate for gisting, but machine translation is imperfect — verify critical wording with a second engine and a human speaker.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
@@ -356307,11 +356393,18 @@
     "relatedTools": [
       "paralink-translation-tool"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Paralink translation",
+      "translation2.paralink.com"
+    ],
+    "tags": [
+      "translation",
+      "language",
+      "text"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/text/free-translation.md"
   },
   {
@@ -357566,43 +357659,61 @@
   {
     "id": "online-ocr-sodapdf",
     "name": "Online OCR (SodaPDF)",
-    "description": "OCR conversion of scanned PDFs for editing",
+    "description": "Use when you have a scanned PDF or image and need the text extracted and searchable — returns machine-readable text (and any embedded document-id) from non-selectable documents.",
     "url": "https://www.sodapdf.com/pdf-tools/ocr-pdf/",
     "category": "translation-language",
     "path": [
       "translation-language",
       "pictures"
     ],
-    "bestFor": "OCR conversion of scanned PDFs for editing",
+    "bestFor": "Quick browser-based OCR of scanned PDFs/images into searchable, copyable text.",
     "input": "PDF and image files",
     "output": "Searchable PDF and extracted text",
-    "selectorsIn": [],
-    "selectorsOut": [],
+    "selectorsIn": [
+      "metadata-exif"
+    ],
+    "selectorsOut": [
+      "document-id",
+      "name"
+    ],
     "status": "live",
     "pricing": "freemium",
+    "costNote": "Free tier requires account verification and is capped (~3 MB/file, ~2 files per day); heavier use needs a paid Soda PDF plan.",
     "opsec": "active",
-    "opsecNote": "Document files are uploaded to SodaPDF infrastructure for OCR conversion.",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "opsecNote": "Your document is UPLOADED to Soda PDF's servers for processing — do not send sensitive case material to a third party. The site says files are deleted within 24h, but for anything confidential use an offline OCR tool (Tesseract) instead.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login",
+      "payment-wall-partial"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Soda PDF is an established commercial PDF vendor (LULU Software); the OCR is reliable, but it is a cloud service you must trust with your upload.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
+    "registration": true,
     "invitationOnly": false,
     "deprecated": false,
     "relatedTools": [
       "1-free-online-ocr"
     ],
-    "aliases": [],
-    "tags": [],
+    "aliases": [
+      "Soda PDF OCR",
+      "sodapdf.com OCR"
+    ],
+    "tags": [
+      "ocr",
+      "documents",
+      "text-extraction"
+    ],
     "source": "arf-seed",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/translation-language/pictures/online-ocr-sodapdf.md"
   },
   {
@@ -361939,43 +362050,51 @@
   {
     "id": "european-database-of-stolen-vehicles",
     "name": "European Database of Stolen Vehicles",
-    "description": "OSINT tool: European Database of Stolen Vehicles.",
+    "description": "Use when you have a VIN and want to check whether the vehicle is reported stolen across European registers — returns a stolen/not-found status to flag illicit vehicles.",
     "url": "http://www.stolencars.eu/en",
     "category": "transportation",
     "path": [
       "transportation"
     ],
-    "bestFor": "",
+    "bestFor": "Free public VIN check against a European stolen-vehicle database aggregating police and insurer reports.",
     "selectorsIn": [
-      "vehicle-plate",
       "vin"
     ],
-    "selectorsOut": [
-      "name",
-      "address"
-    ],
-    "status": "unknown",
+    "selectorsOut": [],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "The site states the service is completely free; no account required.",
+    "opsec": "passive",
+    "opsecNote": "You enter a VIN, not personal data, and no owner is notified. As with any third-party checker, the operator can log what you look up — use a clean browser for sensitive checks. It returns only theft status, not owner identity.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "community",
+    "trustNote": "Aggregates ~140k stolen-vehicle records from police statistics and insurance reports; coverage is partial and it is not an official government register, so a clean result is not authoritative.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "eu"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "invitationOnly": false,
+    "deprecated": false,
+    "relatedTools": [],
+    "aliases": [
+      "stolencars.eu",
+      "Stolen Cars EU"
+    ],
     "tags": [
-      "vehicle"
+      "transportation",
+      "stolen-vehicles",
+      "vin-check",
+      "europe"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/transportation/european-database-of-stolen-vehicles.md"
   },
   {
