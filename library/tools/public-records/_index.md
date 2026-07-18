@@ -341,7 +341,7 @@ kind: group-index
 - **`florida`** (high) — Use when you have a `name` (or DC number) and want to check Florida state custody, supervision or release status — returns identity confirma
 - **`flvoters-com`** (high) — Use when you have a Florida subject's `name` and want their public voter record — returns registered name, address, DOB, party and (public) 
 - **`foia-gov-search`** (low) — US federal FOIA records search/request portal.
-- **`forbes-global-2000`** (medium) — OSINT tool: Forbes Global 2000.
+- **`forbes-global-2000`** (medium) — Use when you have an `employer-org` and want to verify and size it — returns whether a company is among the world's 2000 largest public firm
 - **`forceswarrecords-com`** (high) — Use when you have a `name` of someone who served in the UK/Commonwealth military and want their service history — returns military `document
 - **`fortune-500-list-of-companies-2020-fortune`** (low) — OSINT tool: Fortune 500 list of companies 2020 | Fortune.
 - **`france`** (medium) — Use when you have a French `employer-org` or a director's `name` and want official company records — returns company registration, filings, 
@@ -961,7 +961,6 @@ kind: group-index
 - **`thentiacloud-net`** (medium) — Use when you have a `name` and want to confirm a person's professional registration/licence on a regulator's public register — returns regis
 - **`thewebco`** (medium) — OSINT tool: TheWebCo.
 - **`tmdn-design-view`** (medium) — Use when you have an `employer-org`/`name` or design number and want registered industrial designs and their owners across the EU and beyond
-- **`toronto-police-service`** (medium) — OSINT tool: Toronto Police Service.
 - **`toronto-star`** (low) — OSINT tool: Toronto Star.
 - **`tracxn`** (medium) — OSINT tool: Tracxn.
 - **`tradeint`** (medium) — Quick access for more than 85 tools for gathering information about company and company website, location and sector

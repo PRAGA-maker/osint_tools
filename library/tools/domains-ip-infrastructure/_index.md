@@ -437,7 +437,7 @@ kind: group-index
 - **`site-analyzer`** (medium) — Online website analyzing tool
 - **`sitebroker`** (low) — Domain investigation #python tool
 - **`skype-resolver`** (low) — OSINT tool: Skype Resolver.
-- **`smallseotools-backlink-checker`** (medium) — Tool that identifies the available information about backlinks that link back to a particular website
+- **`smallseotools-backlink-checker`** (medium) — Use when you have a `domain` and want to see which other sites link to it — returns backlinking URLs, anchor text and the linking domains, e
 - **`smallseotools`** (low) — OSINT tool: SmallSEOTools.
 - **`smart-ruler`** (low) — Simple #GoogleChrome extension (200 000 users) for those who like to explore the design of different sites
 - **`snov-io-technology-checker`** (low) — type name of #webdev technology (jquery, django, wordpress etc) and get the list of websites, which used it.

@@ -18,7 +18,7 @@ kind: group-index
 - **`instya`** (medium) — Product research, shopping comparisons, eCommerce OSINT only
 - **`izito`** (medium) — Multi-type searches (web, video, news, products in one overview), quick result aggregation
 - **`mojeek`** (medium) — Use when you have a `name`, `username` or keyword and want results from a truly independent, non-Google/Bing crawler — returns web pages, `s
-- **`startpage`** (medium) — Privacy-preserving Google searches, anonymous browsing through proxy
+- **`startpage`** (medium) — Use when you have a `name`/`username`/keyword and want Google-quality results without a personal search footprint — returns web results anon
 - **`stract`** (medium) — Use when you have a `name`, `username` or keyword and want an independent, non-Google index with custom-rankable results — returns web pages
 - **`swisscows`** (medium) — Use when you have a `name`, `username` or keyword and want an alternative, privacy-preserving web/image search index — returns web results, 
 - **`yahoo-advanced-web-search`** (medium) — Use when a Google/Bing search for a `name`, `username` or `email` is incomplete and you want an alternate index with operators — returns soc

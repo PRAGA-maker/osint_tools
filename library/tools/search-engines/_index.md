@@ -53,7 +53,6 @@ kind: group-index
 - **`alltheinternet-com`** (high) — Use when you have a `name`, `username` or query and want broad web coverage in one shot — returns aggregated results from multiple search en
 - **`alltheinternet`** (low) — OSINT tool: AllTheInternet.
 - **`allyoucanread`** (low) — OSINT tool: AllYouCanRead.
-- **`almonit`** (medium) — A decentralized search engine made with ENS and IPFS.
 - **`amazon-cloud-search-engine`** (medium) — OSINT tool: Amazon Cloud Search Engine.
 - **`amazon`** (medium) — Technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence
 - **`american-association-of-port-authorities`** (medium) — Site providing information on all the ports of the Western Hemisphere
@@ -188,7 +187,6 @@ kind: group-index
 - **`cybersec-documents-search-engine`** (low) — OSINT tool: Cybersec Documents Search Engine.
 - **`cybersecurity-osint-paulveillard`** (low) — Curated collection of OSINT tools, frameworks, and resources.
 - **`cybersleuth-kids-search-engine-north-america`** (low) — Search engine intended for kids including printables, images, and academic resources
-- **`dadgogo`** (medium) — Metasearch engine including a range of popular websites on a single platform; includes Google, Amazon, Ebay, YouTube, Pexels, and more.
 - **`dailyearth`** (low) — OSINT tool: DailyEarth.
 - **`dakkadakka-wargame-player-finder`** (medium) — Website that offers a search engine for locating players of leading games and gaming communities
 - **`datasploit-fogsec-mirror`** (medium) — OSINT framework to perform reconnaissance on companies, people, emails, domains, and phone numbers.
@@ -269,7 +267,7 @@ kind: group-index
 - **`findhow`** (medium) — The how-to directory
 - **`findlaw`** (medium) — Use when you have a `name` or firm and want to find a US attorney's practice, firm, and contact details — returns `employer-org`, `address`,
 - **`firebounty`** (low) — Bug bounty search engine
-- **`fixya`** (medium) — Website that allows users to search for products/items that need fixing and offers information on how to fix the product being searched
+- **`fixya`** (medium) — Use when you have a `username` or a product/model and want a subject's repair-Q&A footprint — returns their questions, answers and expert pr
 - **`flippity`** (medium) — OSINT tool: Flippity.
 - **`flixster`** (medium) — Movie listings website
 - **`fluther`** (medium) — Website related to social networking and crowdsourcing with thousands of online responses to legal queries

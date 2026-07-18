@@ -792,7 +792,6 @@ kind: group-index
 - **`youtube-caption-searcher`** (medium) — Well down tool for searching in #YouTube video subtitles by keyword. Use Enter to move forward and Shift+Enter to move back.
 - **`youtube-channel-archiver`** (medium) — Use when you have a YouTube `social-profile` (channel URL) and want to bulk-preserve its videos, thumbnails, and comments before they vanish
 - **`youtube-channel-id`** (medium) — OSINT tool: Youtube channel ID.
-- **`youtube-channel-search`** (medium) — OSINT tool: Youtube Channel Search.
 - **`youtube-comment-downloader`** (medium) — Use when you have a YouTube video/channel and want its full comment thread as data — returns commenter `username`s, text and timestamps for 
 - **`youtube-comment-finder`** (medium) — Use when you have a YouTube video plus a keyword or `username` and want to find matching comments — returns the comment text, author `userna
 - **`youtube-comment-search-chrome-extension`** (medium) — OSINT tool: YouTube Comment Search Chrome Extension.

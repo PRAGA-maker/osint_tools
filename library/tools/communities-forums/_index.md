@@ -115,7 +115,7 @@ kind: group-index
 - **`flixboss-com`** (low) — alternative way to find anything interesting on Netflix
 - **`flixwatch-co`** (low) — alternative way to find anything interesting on Netflix
 - **`food-network-canada`** (medium) — Website related to social networking focusing on restaurants, cafes, bars, other eating places, and the food services industry
-- **`footballforums-net`** (medium) — OSINT tool: footballforums.net.
+- **`footballforums-net`** (medium) — Use when you have a `username` tied to football fandom and want their forum presence — returns their profile, posts and club allegiance, exp
 - **`forbes-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`fortune-magazine`** (medium) — Searchable website for a worldwide major magazine with large readership and or global publishing
 - **`forum-cyclinguk-org`** (medium) — OSINT tool: forum.cyclinguk.org.
@@ -146,7 +146,6 @@ kind: group-index
 - **`google-com-15`** (medium) — OSINT tool: google.com.
 - **`google-com-16`** (medium) — OSINT tool: google.com.
 - **`google-com-17`** (medium) — OSINT tool: google.com.
-- **`google-com-18`** (medium) — OSINT tool: google.com.
 - **`google-com-21`** (medium) — OSINT tool: google.com.
 - **`google-com-22`** (medium) — OSINT tool: google.com.
 - **`google-com-24`** (medium) — OSINT tool: google.com.
@@ -364,7 +363,7 @@ kind: group-index
 - **`thebigproject`** (medium) — Online news portal focusing on UK newspapers, as well as International newspapers (english versions available)
 - **`thenextweb`** (medium) — Online articles and news related to business, computers, gadgets, technology, and future trends
 - **`thepaperboy`** (medium) — Searchable website for a directory of leading US and worldwide online newspapers
-- **`thestudentroom-co-uk`** (medium) — OSINT tool: thestudentroom.co.uk.
+- **`thestudentroom-co-uk`** (medium) — Use when you have a `username` (or school/uni/topic) and want a UK student's forum presence — returns their profile, posts and interests, ex
 - **`theverge-tech-news`** (medium) — Online articles, news, and reviews related to technology, science, gadgets, future trends, and more
 - **`tiktok-search-inteltechniques-method`** (high) — Use when you have a TikTok `username` or `name` and want a structured search workflow — profile, hashtag, and video queries plus third-party
 - **`tilersforums-co-uk`** (medium) — OSINT tool: tilersforums.co.uk.
