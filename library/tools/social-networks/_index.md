@@ -293,7 +293,7 @@ kind: group-index
 - **`ins-downloader-addons-mozilla-org`** (high) — Use when you are viewing an Instagram/Threads profile or post and want to download its photos/videos for offline analysis — a Firefox extens
 - **`insexport-get-instagram-f-chrome-google-com`** (high) — Use when you have an Instagram `username` and want to export that account's followers/following list to CSV/Excel for network mapping — retu
 - **`insfo-ig-follower-export-chrome-google-com`** (high) — Use when you have an Instagram `username` and want to export and map their followers/following/commenters as an associate graph — returns so
-- **`insfo`** (medium) — The ultimate simple tool for saving followers/following an Instagram account to a table.
+- **`insfo`** (medium) — Use when you have an Instagram `username` and want its social graph — a Chrome extension that exports an account's followers/following (and 
 - **`insta-timestamp-github-com`** (high) — Use when you have an Instagram post/reel/story open and want its exact upload date and time — a bookmarklet that returns the post's timestam
 - **`instadp-search-profile-pictures`** (high) — Use when you have an Instagram `username` and want the full-size profile picture (and stories) anonymously — returns the high-res `image` fo
 - **`instafreeview`** (high) — Use when you have an Instagram `username` and want to view a public profile, posts, or stories without logging in or appearing in the viewer

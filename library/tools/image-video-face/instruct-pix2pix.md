@@ -42,6 +42,7 @@ relatedTools:
 - pix2pix-video
 - scene-edit-detection
 - youtube-whisperer
+- scene-detection
 ---
 
 # Instruct Pix2pix

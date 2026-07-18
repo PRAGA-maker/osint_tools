@@ -38,6 +38,7 @@ relatedTools:
 - pix2pix-video
 - scene-edit-detection
 - youtube-whisperer
+- scene-detection
 aliases: []
 tags: []
 source: arf-seed

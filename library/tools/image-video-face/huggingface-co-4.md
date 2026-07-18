@@ -50,6 +50,7 @@ relatedTools:
 - pix2pix-video
 - scene-edit-detection
 - youtube-whisperer
+- scene-detection
 ---
 
 # Whisper Word-Level Timestamps (Hugging Face Space)

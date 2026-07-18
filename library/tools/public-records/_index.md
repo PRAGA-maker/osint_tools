@@ -963,7 +963,6 @@ kind: group-index
 - **`tmdn-design-view`** (medium) — Use when you have an `employer-org`/`name` or design number and want registered industrial designs and their owners across the EU and beyond
 - **`toronto-star`** (low) — OSINT tool: Toronto Star.
 - **`tracxn`** (medium) — OSINT tool: Tracxn.
-- **`tradeint`** (medium) — Quick access for more than 85 tools for gathering information about company and company website, location and sector
 - **`traderegistry-ae-2`** (high) — Use when you have a UAE company (`employer-org`) or a director's `name` and want official corporate records — returns the directors (name), 
 - **`traderegistry-ae`** (high) — Use when you have a UAE `employer-org`, `name`, or `address` and want official-style trade-register company reports — returns `employer-org`
 - **`trading-economics`** (low) — OSINT tool: Trading Economics.

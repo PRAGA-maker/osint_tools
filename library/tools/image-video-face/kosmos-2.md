@@ -42,6 +42,7 @@ relatedTools:
 - pix2pix-video
 - scene-edit-detection
 - youtube-whisperer
+- scene-detection
 aliases:
 - Kosmos-2
 - Kosmos 2 grounding

@@ -13,7 +13,7 @@ kind: group-index
 - **`general-search/`** — 16 skill(s) below.
 - **`meta-search/`** — 1 skill(s) below.
 - **`news-search/`** — 13 skill(s) below.
-- **`other-search/`** — 4 skill(s) below.
+- **`other-search/`** — 3 skill(s) below.
 - **`search-engine-guides/`** — 3 skill(s) below.
 - **`search-tools/`** — 9 skill(s) below.
 
@@ -428,7 +428,6 @@ kind: group-index
 - **`kidzsearch`** (low) — Kid-friendly search engine
 - **`kiwireviews-new-zealand`** (medium) — Website related to social networking and crowdsourcing with online ratings and/or reviews of businesses
 - **`klug-suchen`** (medium) — Use when you have a German-language `name`, term, or topic and want a curated directory of German specialty search engines and databases to 
-- **`krugle`** (medium) — Enterprise code search tool
 - **`kvasir-search-engine-norway`** (medium) — Use when you have a `name`, `username` or Norwegian term and want Norway-focused web results — returns local `domain`, `social-profile` and 
 - **`laiesken-search-engine-spain`** (medium) — Spanish web search engine covering regional results
 - **`lapozz-search-engine-hungary`** (medium) — Hungarian surface web search engine covering regional results
@@ -537,7 +536,7 @@ kind: group-index
 - **`occrp-org`** (medium) — Use when you have a subject tied to a country/region and need to find which public-record databases exist there — returns OCCRP's curated di
 - **`oceanhero`** (medium) — Charitable search engine that supports our oceans.
 - **`ocg`** (low) — Use when you want a general web `name`/keyword search from an alternate index — returns web results (via a charitable search front-end) with
-- **`octosearch-dootech-com`** (medium) — OSINT tool: Octosearch.dootech.com.
+- **`octosearch-dootech-com`** (medium) — Use when you want to search GitHub repositories starred by people you follow — a personal discovery tool over your own GitHub network's cura
 - **`od-search-tool`** (medium) — Open directory search tool.
 - **`odbparser`** (medium) — ODBParser is a tool to search for PII being exposed in open databases.
 - **`odin`** (medium) — OSINT tool: ODIN.

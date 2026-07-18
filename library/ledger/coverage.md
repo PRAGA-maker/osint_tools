@@ -2,38 +2,38 @@
 
 _"full" = authored (has a `## When to use` body); the enrichment field is derived from that signal, not self-reported._
 
-**Tools:** 8199 total · 3392 full · 4807 stub (41% enriched)
+**Tools:** 8194 total · 3399 full · 4795 stub (41% enriched)
 
 **Strategies:** 92 total
 
 ## Tools by MP relevance
-low: 3367 · medium: 2875 · high: 1957
+low: 3367 · medium: 2870 · high: 1957
 
 ## Tools by trust
-unverified: 3722 · community: 3323 · trusted: 1142 · personal: 6 · untrustworthy: 6
+unverified: 3712 · community: 3326 · trusted: 1144 · personal: 6 · untrustworthy: 6
 
 ## Tools by category (full/total)
 
 - `ai-analysis-automation` — 6/455
-- `archives-cache` — 37/136
-- `communities-forums` — 71/409
-- `dark-web` — 12/118
+- `archives-cache` — 38/136
+- `communities-forums` — 72/408
+- `dark-web` — 13/118
 - `dating-classifieds` — 42/114
 - `documents-metadata` — 22/314
-- `domains-ip-infrastructure` — 63/755
+- `domains-ip-infrastructure` — 64/754
 - `email` — 242/246
 - `evidence-capture` — 4/32
 - `financial-crypto` — 27/128
 - `geolocation` — 213/352
-- `image-video-face` — 394/476
+- `image-video-face` — 395/476
 - `maps-geospatial-data` — 26/143
 - `messaging` — 153/194
 - `opsec-investigator-tooling` — 22/562
 - `people-search` — 229/266
 - `phone` — 134/137
-- `public-records` — 672/1109
-- `search-engines` — 239/943
-- `social-networks` — 612/861
+- `public-records` — 672/1108
+- `search-engines` — 240/941
+- `social-networks` — 613/861
 - `training-ctf` — 0/12
 - `translation-language` — 13/103
 - `transportation` — 59/230
@@ -41,13 +41,13 @@ unverified: 3722 · community: 3323 · trusted: 1142 · personal: 6 · untrustwo
 
 ## Folders needing a split (>12 leaves — go deeper)
 
-- `library/tools/public-records` — 1046 leaves
-- `library/tools/search-engines` — 878 leaves
+- `library/tools/public-records` — 1045 leaves
+- `library/tools/search-engines` — 877 leaves
 - `library/tools/social-networks` — 833 leaves
 - `library/tools/opsec-investigator-tooling` — 527 leaves
-- `library/tools/domains-ip-infrastructure` — 514 leaves
+- `library/tools/domains-ip-infrastructure` — 513 leaves
 - `library/tools/ai-analysis-automation` — 419 leaves
-- `library/tools/communities-forums` — 396 leaves
+- `library/tools/communities-forums` — 395 leaves
 - `library/tools/image-video-face` — 380 leaves
 - `library/tools/geolocation` — 337 leaves
 - `library/tools/documents-metadata` — 263 leaves

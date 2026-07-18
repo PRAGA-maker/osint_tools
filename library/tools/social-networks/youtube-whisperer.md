@@ -39,6 +39,7 @@ relatedTools:
 - kosmos-2
 - pix2pix-video
 - scene-edit-detection
+- scene-detection
 tags:
 - Social Media
 - YouTube

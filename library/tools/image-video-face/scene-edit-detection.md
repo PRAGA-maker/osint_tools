@@ -41,6 +41,7 @@ relatedTools:
 - kosmos-2
 - pix2pix-video
 - youtube-whisperer
+- scene-detection
 ---
 
 # Scene Edit Detection

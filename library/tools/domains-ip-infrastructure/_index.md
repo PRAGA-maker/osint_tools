@@ -159,7 +159,6 @@ kind: group-index
 - **`domaintracker`** (low) — webapp and mobile app, which helps you keep track of payment deadlines (expired dates) for domains (sends push notifications and notificatio
 - **`domainwatch`** (low) — OSINT tool: DomainWatch.
 - **`dome`** (low) — Fast and reliable #python script that makes active and/or passive scan to obtain subdomains and search for open ports. Used 21 different #OS
-- **`domeneshop-norway`** (medium) — Service provider for registering websites and domain addresses
 - **`dork-dump`** (low) — Looks for Google-indexed files with doc, docx, ppt, pptx, csv, pdf, xls, xlsx extensions on a particular domain and downloads them.
 - **`dork-scanner`** (low) — NOT support Google. Only Bing, ASK and [http://WoW.com](http://WoW.com) (AOL) search engines. Can work with very long lists of queries/docum
 - **`dorks-faisalahmed-me`** (low) — online constructor of google dorks for searching "sensitive" wesite pages
@@ -254,7 +253,7 @@ kind: group-index
 - **`internet-access-providers-meta-list`** (medium) — Website that provides a list of internet access providers in the US, Canada, and worldwide
 - **`internet-census-2012`** (low) — OSINT tool: Internet Census 2012.
 - **`internetdb-shodan-io`** (low) — OSINT tool: Internetdb.shodan.io.
-- **`internic-whois-search`** (medium) — Tool that identifies the available registration information for a website or domain name
+- **`internic-whois-search`** (medium) — Use when you have a `domain` and want the authoritative registry record — returns the sponsoring registrar, registration/expiry dates and na
 - **`intezer-analyzer`** (low) — Online tool for finding code injections, malware, unrecognized code and suspicious artifacts in: Files (up to 150 mb), URL, Memory dumps, En
 - **`intodns-ai`** (low) — OSINT tool: IntoDNS.ai.
 - **`investigator-recon-tool`** (low) — web based handy-#recon tool that uses different #GoogleDorking techniques and some open sources service to find juicy information about targ

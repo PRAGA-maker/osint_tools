@@ -152,7 +152,6 @@ kind: group-index
 - **`google-com-26`** (medium) — OSINT tool: google.com.
 - **`google-com-27`** (medium) — OSINT tool: google.com.
 - **`google-com-29`** (medium) — OSINT tool: google.com.
-- **`google-com-30`** (medium) — OSINT tool: google.com.
 - **`google-com-31`** (medium) — OSINT tool: google.com.
 - **`google-com-32`** (medium) — OSINT tool: google.com.
 - **`google-com-33`** (medium) — OSINT tool: google.com.
@@ -345,7 +344,7 @@ kind: group-index
 - **`techradar`** (medium) — Online articles, news, and reviews related to technology, gadgets, devices, photography equipment, and more
 - **`techrepublic`** (medium) — Online articles and news related to computers, gadgets, technology, and future trends
 - **`telemundo-network-television-united-states`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base
-- **`tencent-com`** (medium) — Tencent.com is an internet media platform integrating news information, regional vertical life services, social media information and produc
+- **`tencent-com`** (medium) — Use when you have a Chinese-language `name`/keyword and want mainland coverage — Tencent's QQ.com news portal and gateway to the QQ/Qzone ec
 - **`textbin-code`** (medium) — OSINT tool: Textbin-Code.
 - **`textbin`** (medium) — OSINT tool: TextBin.
 - **`the-comedy-network-television-canada`** (medium) — Searchable website for a major television network offering information and/or entertainment programs and having large reader/fan base

@@ -41,6 +41,7 @@ relatedTools:
 - pix2pix-video
 - scene-edit-detection
 - youtube-whisperer
+- scene-detection
 ---
 
 # EfficientNetV2
