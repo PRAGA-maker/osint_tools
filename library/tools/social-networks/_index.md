@@ -220,7 +220,7 @@ kind: group-index
 - **`github-chart`** (medium) — it shows a visual representation of the temporal distribution of user changes in the repositories. You can visually see "productivity peaks"
 - **`github-hovercard`** (medium) — Displays a block of detailed information about the repository or user when the mouse pointer is placed over it. Save time for those who look
 - **`github-monitor`** (medium) — OSINT tool: github_monitor.
-- **`github-rater`** (medium) — rates GitHub profile upon data received from GitHub API
+- **`github-rater`** (low) — Use when you have a GitHub `username` and want a quick aggregated view of that profile's public activity — returns a summarised stats snapsh
 - **`github-release-stats`** (medium) — Estimate popularity of Github repo. Tool displays the number of downloads for each project release + some additional information.
 - **`github-repository-size`** (medium) — Use when you have a GitHub `social-profile`/repo and want its total size and per-file/folder sizes shown inline — a browsing aid, not a pers
 - **`github-stars-githubstars-com`** (low) — Showcase of popular GitHub repositories.
@@ -547,7 +547,7 @@ kind: group-index
 - **`snapchat-user-search`** (medium) — OSINT tool: Snapchat User Search.
 - **`snapdex-the-best-snapchat-names-index`** (medium) — OSINT tool: Snapdex: The Best Snapchat Names Index.
 - **`snapdex`** (medium) — Use when you have a `username` or `name` and want to find a Snapchat account — returns a wiki-style directory profile with the handle, snapc
-- **`snapintel`** (medium) — Python tool to gather information about a Snapchat user.
+- **`snapintel`** (medium) — Use when you have a Snapchat `username` and want that account's public content — returns stories, spotlights, lenses, bitmoji and an upload-
 - **`snapmap-archiver`** (medium) — OSINT tool: snapmap-archiver.
 - **`snapscraper`** (high) — Use when you have a `geolocation` (lat/long) and want public Snapchat media there — downloads Snap Map "Our Story" videos and their metadata
 - **`snapthreads-net`** (high) — Use when you have a public Threads post `social-profile`/link and want to download its video for analysis — returns the MP4 (image/face fram

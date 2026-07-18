@@ -449,7 +449,6 @@ kind: group-index
 - **`hmcpl-obituary-index`** (high) — Use when you have a `name` of someone likely connected to the Huntsville/Madison County, Alabama area and want to find their obituary — retu
 - **`home-comptroller-texas-gov`** (medium) — OSINT tool: Home Comptroller.Texas.Gov.
 - **`homefacts-us`** (medium) — OSINT tool: HomeFacts (US).
-- **`hoovers`** (medium) — OSINT tool: Hoovers.
 - **`houseprices-io`** (high) — Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns
 - **`how-many-untested-rape-kits-does-your-city-police-department-or-county-sheriff-s-office-have`** (medium) — OSINT tool: How many untested rape kits does your city police department or county sheriff's office have?.
 - **`human-development-reports`** (low) — OSINT tool: Human Development Reports.
@@ -588,7 +587,7 @@ kind: group-index
 - **`luxembourg`** (high) — Use when you have a `name` or `employer-org` and want official Luxembourg company records — returns directors/officers (name, associate), th
 - **`ma-middlesex-county-city-employee-salary-2019`** (medium) — OSINT tool: MA Middlesex County City employee salary 2019.
 - **`macron-campaign-emails`** (medium) — OSINT tool: Macron Campaign Emails.
-- **`maine-county-law-enforcement-discipline-chart`** (medium) — OSINT tool: Maine County Law Enforcement Discipline Chart.
+- **`maine-county-law-enforcement-discipline-chart`** (low) — Use when you have a `name` of a Maine law-enforcement officer and want any recorded discipline — returns officer, agency and disciplinary de
 - **`maine`** (high) — Use when you have a `name` of someone possibly in Maine's corrections system and want their custody info — returns the resident's name, MDOC
 - **`maldives-sex-offender`** (high) — Use when you have a `name` linked to the Maldives and want to check the official child sex-offenders registry — returns name, image, dob, ad
 - **`malta`** (high) — Use when you have a Maltese company `name`/`employer-org` or a person and want official registry data — returns registered company details, 

@@ -52,7 +52,7 @@ kind: group-index
 - **`geonarra-com`** (medium) — OSINT tool: Geonarra.com.
 - **`georgia-licensed-healthcare-provider-search`** (medium) — Georgia Composite Medical Boards licensed health care provider lookup
 - **`getlostgame-app`** (medium) — OSINT tool: getlostgame.app.
-- **`gisgraphy-gps-convert`** (medium) — Geocoding/reverse-geocoding service to convert addresses to coordinates.
+- **`gisgraphy-gps-convert`** (medium) — Use when you have an `address` or `geolocation` and want to convert between the two — returns coordinates from an address or an address from
 - **`gjirafa`** (low) — Mapping service for Albania (specially Kosovo)
 - **`global-forest-watch`** (low) — Explore tree cover loss and gain data, recent deforestation and fire alerts, land use designations, carbon emissions, biodiversity metrics a
 - **`global-monitoring-system-ecosolve`** (low) — Illicit online wildlife markets data from Brazil, South Africa and Thailand.

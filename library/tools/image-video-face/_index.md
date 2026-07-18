@@ -180,7 +180,7 @@ kind: group-index
 - **`in20years-co`** (high) — Use when you have a face photo and want to visualize an aged-up version of the same person — returns an AI age-progressed face image.
 - **`inpe-image-catalog`** (medium) — free satellite images catalogue.
 - **`instruct-pix2pix`** (medium) — Image editing with prompt
-- **`internet-archive-open-source-videos`** (medium) — OSINT tool: Internet Archive: Open Source Videos.
+- **`internet-archive-open-source-videos`** (medium) — Use when you have a `name`, `username` or keyword and want user-uploaded video that may show or reference a subject — returns free, download
 - **`invid-verification-plugin`** (low) — A toolkit that supports the verification of videos and images.
 - **`ios-gadgethacks-com`** (low) — Use when you need awareness that blacked-out / redacted regions in images can sometimes be recovered — this is a how-to article, not an inte
 - **`ipvm-calculator`** (low) — Tool for simulating camera views (for geolocations).

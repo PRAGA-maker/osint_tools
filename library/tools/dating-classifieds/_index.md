@@ -66,7 +66,7 @@ kind: group-index
 - **`look-by-username-replace-username-in-this-case-mark`** (medium) — OSINT tool: Look by username - replace @username (in this case, Mark).
 - **`loot-com-classified-ads-united-kingdom`** (medium) — Classified advertisements-related website that provides regional services
 - **`lovingcreators-com`** (medium) — OSINT tool: lovingcreators.com.
-- **`match-com`** (medium) — OSINT tool: Match.com.
+- **`match-com`** (medium) — Use when you have a `username`, photo or profile detail and want to confirm a subject's dating presence — returns dating profile, photos and
 - **`meetup`** (high) — Use when a subject's hobbies/interests are known — find the groups and in-person events they attend, plus public member profiles and RSVP hi
 - **`merchant-circle-classified-ads-united-states`** (medium) — Use when you have a business `name` or `address`/locality and want the local-merchant listing behind it — returns address, phone and busines
 - **`modelsearcher-com`** (medium) — OSINT tool: modelsearcher.com.
@@ -80,7 +80,6 @@ kind: group-index
 - **`onlyespana-es`** (medium) — OSINT tool: onlyespana.es.
 - **`onlyfam`** (medium) — OnlyFans search and model finder.
 - **`onlyfans-com`** (medium) — OSINT tool: onlyfans.com.
-- **`onlyfans-finder`** (medium) — Advanced OnlyFans search with filtering.
 - **`onlyfinder-com`** (medium) — Use when you have a `username`, `name`, or `geolocation` and want to find a matching OnlyFans creator — returns creator profiles, handles, a
 - **`onlyfinder`** (low) — OSINT tool: OnlyFinder.
 - **`onlyleaks-pro`** (medium) — OSINT tool: onlyleaks.pro.

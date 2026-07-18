@@ -48845,45 +48845,57 @@
   {
     "id": "match-com",
     "name": "Match.com",
-    "description": "OSINT tool: Match.com.",
+    "description": "Use when you have a `username`, photo or profile detail and want to confirm a subject's dating presence — returns dating profile, photos and self-reported details.",
     "url": "https://match.com",
     "category": "dating-classifieds",
     "path": [
       "dating-classifieds"
     ],
-    "bestFor": "",
+    "bestFor": "Locating or confirming a subject's Match.com dating profile and its photos, location and self-described details.",
     "selectorsIn": [
+      "username",
       "name",
-      "username"
+      "image"
     ],
     "selectorsOut": [
-      "social-profile"
+      "social-profile",
+      "image",
+      "physical-description",
+      "geolocation"
     ],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free to register and browse/search profiles; messaging and some filters require a paid subscription. Profile discovery is doable on a free account.",
+    "opsec": "active",
+    "opsecNote": "Searching requires a logged-in account, and Match shows profiles you view to its matching engine — never use your real identity. Create a dedicated sock-puppet account with a burner email and neutral photos. Viewing a profile can surface you in the target's \"who viewed you\" style signals, so tread carefully and never message the subject.",
+    "humanInLoop": true,
+    "humanInLoopReason": [
+      "account-login"
+    ],
     "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Operated by Match Group, a major established dating platform; profiles are self-reported and often embellished, so treat content as claims, not verified facts.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
+    "coverage": [
+      "global"
+    ],
+    "auth": "account",
     "api": false,
     "localInstall": false,
-    "registration": false,
-    "aliases": [],
+    "registration": true,
+    "relatedTools": [
+      "match"
+    ],
+    "aliases": [
+      "Match",
+      "Match.com dating"
+    ],
     "tags": [
       "dating"
     ],
     "source": "metaosint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "match"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/dating-classifieds/match-com.md"
   },
   {
@@ -49489,52 +49501,6 @@
     "lastVerified": "",
     "enrichment": "stub",
     "_file": "library/tools/dating-classifieds/onlyfans-com.md"
-  },
-  {
-    "id": "onlyfans-finder",
-    "name": "OnlyFans Finder",
-    "description": "Advanced OnlyFans search with filtering.",
-    "url": "https://onlyfansfinder.co/",
-    "category": "dating-classifieds",
-    "path": [
-      "dating-classifieds"
-    ],
-    "bestFor": "Finding OnlyFans creator accounts by name/location",
-    "selectorsIn": [
-      "name",
-      "username",
-      "geolocation"
-    ],
-    "selectorsOut": [
-      "social-profile"
-    ],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [
-      "global"
-    ],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "onlyfans",
-      "creator-search",
-      "adult"
-    ],
-    "source": "osintambition-social",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/dating-classifieds/onlyfans-finder.md"
   },
   {
     "id": "onlyfinder",
@@ -144063,50 +144029,57 @@
   {
     "id": "internet-archive-open-source-videos",
     "name": "Internet Archive: Open Source Videos",
-    "description": "OSINT tool: Internet Archive: Open Source Videos.",
+    "description": "Use when you have a `name`, `username` or keyword and want user-uploaded video that may show or reference a subject — returns free, downloadable videos.",
     "url": "https://archive.org/details/opensource_movies",
     "category": "image-video-face",
     "path": [
       "image-video-face"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
+    "bestFor": "Searching the Internet Archive's community-uploaded video collection for footage tied to a person, event, or place.",
+    "selectorsIn": [
+      "name",
+      "username"
+    ],
+    "selectorsOut": [
+      "image",
+      "social-profile",
+      "metadata-exif"
+    ],
+    "status": "live",
     "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "costNote": "Free to search, stream and download; an archive.org account is optional and only needed to upload, not to view.",
+    "opsec": "passive",
+    "opsecNote": "Read-only searching and downloading from a public library. Nothing is submitted about your target. Downloading is logged by archive.org against your IP like any web request; use a clean session if that matters.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
+    "trust": "trusted",
+    "trustNote": "Hosted by the Internet Archive, a stable non-profit digital library; the videos themselves are user-uploaded so individual clips vary in provenance.",
     "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [
-      "video-search-and-other-video-tools"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "archive-org",
       "internet-archive",
       "internet-archive-videos",
-      "parler-archives",
-      "snitch-list",
-      "the-twitter-stream-grab",
-      "tv-closed-caption-search",
       "wayback-machine",
-      "wayback-machine-2",
-      "web-archive-org",
-      "web-archive-org-2"
+      "web-archive-org"
     ],
+    "aliases": [
+      "archive.org Community Video",
+      "Open Source Movies"
+    ],
+    "tags": [
+      "video-search-and-other-video-tools"
+    ],
+    "source": "awesome-osint",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/image-video-face/internet-archive-open-source-videos.md"
   },
   {
@@ -159133,13 +159106,13 @@
   {
     "id": "gisgraphy-gps-convert",
     "name": "Gisgraphy GPS Convert",
-    "description": "Geocoding/reverse-geocoding service to convert addresses to coordinates.",
+    "description": "Use when you have an `address` or `geolocation` and want to convert between the two — returns coordinates from an address or an address from coordinates.",
     "url": "https://services.gisgraphy.com/",
     "category": "maps-geospatial-data",
     "path": [
       "maps-geospatial-data"
     ],
-    "bestFor": "Geocode an address to coordinates (and reverse) for mapping workflows.",
+    "bestFor": "Free open-data geocoding and reverse-geocoding — turning an address into lat/long or coordinates into a street address.",
     "selectorsIn": [
       "address",
       "geolocation"
@@ -159148,26 +159121,28 @@
       "geolocation",
       "address"
     ],
-    "status": "unknown",
-    "pricing": "free",
+    "status": "live",
+    "pricing": "freemium",
+    "costNote": "Free public demo server and open-source software (install locally for unlimited use); the hosted production plan is paid. The demo is fine for one-off lookups.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "You submit an address or coordinates to Gisgraphy's server, not to the target. Nothing reaches the subject. For sensitive locations, run the open-source build locally so the query never leaves your machine.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
+    "trustNote": "Established open-source geocoder built purely on open data (OpenStreetMap, GeoNames); accuracy is good in well-mapped regions, weaker in sparsely mapped ones.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
     ],
     "auth": "none",
     "api": true,
-    "localInstall": false,
+    "localInstall": true,
     "registration": false,
+    "relatedTools": [],
     "aliases": [
-      "GPS",
-      "Convert"
+      "Gisgraphy",
+      "Gisgraphy geocoder"
     ],
     "tags": [
       "geocoding",
@@ -159175,8 +159150,8 @@
       "coordinates"
     ],
     "source": "inteltechniques-tools",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/maps-geospatial-data/gisgraphy-gps-convert.md"
   },
   {
@@ -239236,42 +239211,6 @@
     "_file": "library/tools/public-records/homefacts-us.md"
   },
   {
-    "id": "hoovers",
-    "name": "Hoovers",
-    "description": "OSINT tool: Hoovers.",
-    "url": "http://www.hoovers.com",
-    "category": "public-records",
-    "path": [
-      "public-records"
-    ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "free",
-    "opsec": "unknown",
-    "opsecNote": "",
-    "humanInLoop": false,
-    "humanInLoopReason": [],
-    "bestInteractionPattern": "web-manual",
-    "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
-    "auth": "none",
-    "api": false,
-    "localInstall": false,
-    "registration": false,
-    "aliases": [],
-    "tags": [
-      "company-research"
-    ],
-    "source": "awesome-osint",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "_file": "library/tools/public-records/hoovers.md"
-  },
-  {
     "id": "houseprices-io",
     "name": "houseprices.io",
     "description": "Use when you have a UK `address`/postcode and want the property's sold-price history and transaction dates from Land Registry data — returns address, sale history (no owner names).",
@@ -246283,41 +246222,52 @@
   {
     "id": "maine-county-law-enforcement-discipline-chart",
     "name": "Maine County Law Enforcement Discipline Chart",
-    "description": "OSINT tool: Maine County Law Enforcement Discipline Chart.",
-    "url": "https://public.flourish.studio/visualisation/4443849/?utm_source=showcase&utm_campaign=visualisation/4443849",
+    "description": "Use when you have a `name` of a Maine law-enforcement officer and want any recorded discipline — returns officer, agency and disciplinary detail.",
+    "url": "https://public.flourish.studio/visualisation/4443849/",
     "category": "public-records",
     "path": [
       "public-records"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
+    "bestFor": "Checking whether a named Maine law-enforcement officer appears in a compiled discipline record, with their agency.",
+    "selectorsIn": [
+      "name"
+    ],
+    "selectorsOut": [
+      "employer-org"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free public data visualisation; no account needed to view.",
     "opsec": "passive",
-    "opsecNote": "",
+    "opsecNote": "A static, publicly published chart. Viewing it sends nothing to any subject. Fully passive.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "web-manual",
     "trust": "community",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "trustNote": "A journalist-compiled Flourish visualisation (2020), not an official state registry; treat entries as a reporting artifact to corroborate against primary agency records.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "us"
+    ],
     "auth": "none",
     "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
-    "tags": [],
-    "source": "osint4all",
-    "lastVerified": "",
-    "enrichment": "stub",
     "relatedTools": [
       "chicago-police-department-demographics",
-      "george-floyd-where-black-people-are-most-disproportionately-killed-by-police",
-      "iowa-cities-police-budgets",
-      "pa-ppp-database"
+      "iowa-cities-police-budgets"
     ],
+    "aliases": [
+      "Maine LE Discipline Chart"
+    ],
+    "tags": [
+      "public-records",
+      "law-enforcement",
+      "maine"
+    ],
+    "source": "osint4all",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/public-records/maine-county-law-enforcement-discipline-chart.md"
   },
   {
@@ -322495,38 +322445,48 @@
   {
     "id": "github-rater",
     "name": "Github Rater",
-    "description": "rates GitHub profile upon data received from GitHub API",
+    "description": "Use when you have a GitHub `username` and want a quick aggregated view of that profile's public activity — returns a summarised stats snapshot.",
     "url": "https://aykutsarac.github.io/github-rater/",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "",
-    "selectorsIn": [],
-    "selectorsOut": [],
-    "status": "unknown",
-    "pricing": "freemium",
-    "opsec": "unknown",
-    "opsecNote": "",
+    "bestFor": "Getting a fast, aggregated snapshot of a GitHub account's public stats (repos, followers, languages, activity) from a username.",
+    "selectorsIn": [
+      "username"
+    ],
+    "selectorsOut": [
+      "social-profile"
+    ],
+    "status": "live",
+    "pricing": "free",
+    "costNote": "Free client-side web app; no login. It reads the public GitHub REST API in your browser.",
+    "opsec": "passive",
+    "opsecNote": "The lookup runs in your browser against GitHub's public API; the target is not notified. Unauthenticated GitHub API calls are rate-limited by IP, so heavy use may temporarily block you — use a clean session if concerned.",
     "humanInLoop": false,
     "humanInLoopReason": [],
-    "bestInteractionPattern": "api",
-    "trust": "unverified",
-    "trustNote": "",
-    "missingPersonsRelevance": "medium",
-    "coverage": [],
+    "bestInteractionPattern": "web-manual",
+    "trust": "community",
+    "trustNote": "A small third-party front-end over GitHub's public API; it only reformats data GitHub already exposes, so the underlying facts are as reliable as GitHub itself.",
+    "missingPersonsRelevance": "low",
+    "coverage": [
+      "global"
+    ],
     "auth": "none",
-    "api": true,
+    "api": false,
     "localInstall": false,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [],
+    "aliases": [
+      "GitHub Profile Rater"
+    ],
     "tags": [
       "Social Media",
       "Github"
     ],
     "source": "cyb-detective",
-    "lastVerified": "",
-    "enrichment": "stub",
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/github-rater.md"
   },
   {
@@ -340057,28 +340017,31 @@
   {
     "id": "snapintel",
     "name": "SnapIntel",
-    "description": "Python tool to gather information about a Snapchat user.",
+    "description": "Use when you have a Snapchat `username` and want that account's public content — returns stories, spotlights, lenses, bitmoji and an upload-time heatmap.",
     "url": "https://github.com/Kr0wZ/SnapIntel",
     "category": "social-networks",
     "path": [
       "social-networks"
     ],
-    "bestFor": "Profiling a Snapchat username",
+    "bestFor": "Pulling and archiving a Snapchat user's public stories, spotlights, highlights, lenses and bitmoji from just their username.",
     "selectorsIn": [
       "username"
     ],
     "selectorsOut": [
-      "social-profile"
+      "image",
+      "social-profile",
+      "geolocation"
     ],
-    "status": "unknown",
+    "status": "live",
     "pricing": "free",
-    "opsec": "passive",
-    "opsecNote": "",
+    "costNote": "Free and open source (AGPL-3.0); install locally with pip. No account, no API key.",
+    "opsec": "active",
+    "opsecNote": "The tool fetches public Snapchat endpoints for the target username from your machine — requests originate from your IP, so run it from a VPN/sock-puppet environment. It pulls only public content and does not require logging in as anyone, but downloading media is a footprint against Snapchat's servers; do not hammer it.",
     "humanInLoop": false,
     "humanInLoopReason": [],
     "bestInteractionPattern": "cli",
     "trust": "community",
-    "trustNote": "Listed in the Social-Media-OSINT collection.",
+    "trustNote": "Community open-source project (~325 stars) actively maintained into 2025; verify the code before running and pin to a reviewed commit.",
     "missingPersonsRelevance": "medium",
     "coverage": [
       "global"
@@ -340087,17 +340050,19 @@
     "api": false,
     "localInstall": true,
     "registration": false,
-    "aliases": [],
+    "relatedTools": [
+      "neutrosint"
+    ],
+    "aliases": [
+      "Kr0wZ SnapIntel"
+    ],
     "tags": [
       "snapchat",
       "python"
     ],
     "source": "gh-topic-osint-resources",
-    "lastVerified": "",
-    "enrichment": "stub",
-    "relatedTools": [
-      "neutrosint"
-    ],
+    "lastVerified": "2026-07-18",
+    "enrichment": "full",
     "_file": "library/tools/social-networks/snapintel.md"
   },
   {
